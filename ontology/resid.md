@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: resid
 contact: 
   email: john.garavelli@ebi.ac.uk

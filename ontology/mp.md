@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: mp
 title: Mammalian phenotype
 description: The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data.

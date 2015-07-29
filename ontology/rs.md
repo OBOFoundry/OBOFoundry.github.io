@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: rs
 contact: 
   email: rnigam@mcw.edu

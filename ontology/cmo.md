@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: cmo
 contact: 
   email: shimoyama@mcw.edu

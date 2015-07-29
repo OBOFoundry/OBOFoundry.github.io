@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: omrse
 contact: 
   email: hoganwr@gmail.com

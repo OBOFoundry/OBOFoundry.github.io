@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: aeo
 contact: 
   email: J.Bard@ed.ac.uk

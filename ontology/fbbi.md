@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: fbbi
 contact: 
   email: dorloff@ncmir.ucsd.edu

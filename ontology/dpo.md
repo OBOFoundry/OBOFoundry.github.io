@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: dpo
 title: Drosophila Phenotype Ontology
 preferredPrefix: FBcv

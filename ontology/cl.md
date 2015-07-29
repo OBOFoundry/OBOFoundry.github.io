@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: cl
 label: Cell Ontology
 title: Cell Ontology

@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: mo
 contact: 
   email: stoeckrt@pcbi.upenn.edu

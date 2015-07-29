@@ -1,0 +1,64 @@
+<table class="table">
+  <tbody>
+    {% for ont in site.ontologies offset: 0 limit: 50 %}
+    {% if include.foundry == false %}
+    <tr>
+      <td>
+         <a href="ontology/{{ ont.id }}.html" > {{ont.id}} </a>
+      </td>
+      <td>
+        {{ ont.title }}
+      </td>
+      <td>
+        {{ ont.description }}
+      </td>
+      <td>
+        
+        <a href="{{ont.homepage}}">
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+          </button>
+        </a>
+      </td>
+      <td>
+        {% if ont.tracker %}
+        <a href="{{ont.tracker}}">
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+          </button>
+        </a>
+        {% endif %}
+      </td>
+
+      <td>
+        <a href="mailto:{{ont.contact.id}}">
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+          </button>
+        </a>
+      </td>
+
+      <td>
+        <a href="http://purl.obolibrary.org/obo/{{ont.id}}.owl">
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+          </button>
+        </a>
+      </td>
+
+      <td>
+        {% if ont.in_foundry %}
+        <a href="link-to-foundry-principles">
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+          </button>
+        </a>
+        {% endif %}
+      </td>
+
+    </tr>
+    {% endif %}
+
+    {% endfor %}
+  </tbody>
+</table>

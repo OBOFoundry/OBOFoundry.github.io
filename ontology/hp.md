@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: hp
 alternativePrefix: HPO
 description: The Human Phenotype Ontology is being developed to provide a structured and controlled vocabulary for the phenotypic features encountered in human hereditary and other disease. Our goal is to provide resource for the computational analysis of the human phenome, with a current focus on monogenic diseases listed in the Online Mendelian Inheritance in Man (OMIM) database, for which annotations are also provided.

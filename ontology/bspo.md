@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: bspo
 contact: 
   email: cjmungall@lbl.gov

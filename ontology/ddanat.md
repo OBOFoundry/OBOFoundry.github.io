@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: ddanat
 contact: 
   email: r-chisholm@northwestern.edu

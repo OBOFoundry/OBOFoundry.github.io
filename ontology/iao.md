@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: iao
 contact: 
   email: alanruttenberg@gmail.com
@@ -20,4 +20,4 @@ title: Information Artifact Ontology
 tracker: http://code.google.com/p/information-artifact-ontology/issues/list
 ---
 
-An ontology based on a theory of document acts describing what people can do with documents
+The Information Artifact Ontology (IAO) is a new ontology of information entities, originally driven by work by the OBI digital entity and realizable information entity branch. 

@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: sep
 contact: 
   email: psidev-gps-dev@lists.sourceforge.net

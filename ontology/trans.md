@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: trans
 contact: 
   email: diseaseontology-discussion@lists.sourceforge.net

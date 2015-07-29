@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: mfo
 contact: 
   email: Thorsten.Henrich@embl-heidelberg.de

@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: cvdo
 contact: 
   email: adrien.barton@gmail.com

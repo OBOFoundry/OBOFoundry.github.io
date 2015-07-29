@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: eco
 description: A rich ontology for experimental and other evidence statements.
 domain: experiments

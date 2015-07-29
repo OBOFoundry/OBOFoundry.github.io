@@ -7,21 +7,33 @@ layout: default
 
 
   <div>	
-    <div >
-      <h1>{{ page.title }}</h1>
+    <div class="page-header">
+      <h1>
+        {{ page.title }}
+        <small>{{ page.short_description }}</small>
+      </h1>      
+    <p>
+      {{page.description}}
+    </p>
     </div>
+    Source for this entry:
+    <div class="btn-group" role="group" aria-label="Source">
+      <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/master/ontology/{{page.id}}.md">
+        <button type="button" class="btn btn-default">View</button>
+      </a>
+      <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md">
+        <button type="button" class="btn btn-default">Edit</button>
+      </a>
+      <button type="button" class="btn btn-default">Help</button>
+    </div>
+    <button>
+      
+    </button>
 
-    <div >
-      {{ page.summary }}
-    </div>
-    <div>
-      <img class="listImage img-rounded" border="0" src="{{ page.image }}" alt="{{ page.title }} image">
-      <br/>
-      <br/>
-    </div>
   </div>
 
   <div class="col-md-12">
+
     <div class="row">
       <div class="col-md-3">
         <dl class="dl-horizontal">
@@ -37,6 +49,16 @@ layout: default
           <dt>
               <a href="http://purl.obolibrary.org/obo/{{page.id}}.owl">http://purl.obolibrary.org/obo/{{page.id}}.owl</a>
           </dt>
+
+          <dt>Homepage</dt>
+          <dt>
+            <a href="{{page.homepage}}">{{page.homepage}}</a>
+          </dt>
+          {% for p in page.page %}
+          <dt>
+            <a href="{{p}}">{{p}}</a>
+          </dt>
+          {% endfor %}
 
           <dt>Contact</dt>
           <dt>
@@ -60,16 +82,74 @@ layout: default
           </dt>
           {% endif %}
 
+          {% if page.taxon %}
+          <dt>Taxon</dt>
+          <dt>
+            <a href="http://amigo.geneontology.org/amigo/term/{{page.taxon.id}}">{{page.taxon.label}}</a>
+          </dt>
+          {% endif %}
+
+          {% if page.exampleClass %}
+          <dt>Example</dt>
+          <dt>
+            <a href="http://purl.obolibrary.org/obo/{{page.exampleClass}}">{{page.exampleClass}}</a>
+          </dt>
+          {% endif %}
+
+          {% if page.publications %}
+          <dt>Publications</dt>
+          {% for p in page.publications %}
+          <dt>
+            <a href="{{p.id}}">{{p.title}}</a>
+          </dt>
+          {% endfor %}
+          {% endif %}
+
 
         </dl>
       </div>
       <div class="col-md-9">
         {{ content }}
+
+        <div>
+          <h2>Products</h2>
+          <table class="table">
+            <tbody>
+
+              {% for p in page.products %}
+              <tr>
+                <td>
+                  <a href="http://purl.obolibrary.org/obo/{{p.id}}">{{p.id}}</a>
+                </td>
+                <td>
+                  {{p.title}}
+                </td>
+                <td>
+                  {{p.description}}
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        
       </div>
-      <div>
-        Edit the metadata for this page: <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md">{{page.id}}.md</a> (remember to make a fork and pull request!)
-      </div>
+
+
+
+      <div class="row">
+
+      <footer class="footer">
+        <div class="container">
+          <p class="text-muted">
+            Edit the metadata for this page: <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md">{{page.id}}.md</a> (remember to make a fork and pull request!)
+
+Place sticky footer content here.
+          </p>
+        </div>
+      </footer>
     </div>
+
   </div>
 
   {% if page.comments %}

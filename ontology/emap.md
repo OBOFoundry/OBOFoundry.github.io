@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: emap
 contact: 
   email: Terry.Hayamizu@jax.org

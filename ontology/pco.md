@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: pco
 contact: 
   email: rwalls2008@gmail.com

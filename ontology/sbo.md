@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: sbo
 contact: 
   email: lenov@ebi.ac.uk

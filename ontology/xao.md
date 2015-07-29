@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: xao
 description: A structured controlled vocabulary of the anatomy and development of the African clawed frog (<i>Xenopus laevis</i>).
 domain: anatomy

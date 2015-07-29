@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: mirnao
 contact: 
   email: vdritsou@imbb.forth.gr

@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: zfa
 contact: 
   email: zfinadmin@zfin.org

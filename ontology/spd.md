@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: spd
 contact: 
   email: ramirez@macn.gov.ar

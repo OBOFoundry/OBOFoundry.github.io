@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: aero
 contact: 
   email: mcourtot@gmail.com

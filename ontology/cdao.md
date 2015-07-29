@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: cdao
 contact: 
   email: balhoff@nescent.org

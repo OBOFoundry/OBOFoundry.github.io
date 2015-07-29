@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: envo
 contact: 
   email: p.buttigieg@googlemail.com

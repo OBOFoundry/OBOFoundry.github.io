@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: wbbt
 contact: 
   email: raymond@caltech.edu

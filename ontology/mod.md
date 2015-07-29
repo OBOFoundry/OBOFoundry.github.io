@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: mod
 contact: 
   email: hhe@ebi.ac.uk

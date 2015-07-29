@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: wbls
 contact: 
   email: wchen@its.caltech.edu

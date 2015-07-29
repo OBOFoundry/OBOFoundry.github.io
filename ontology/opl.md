@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: opl
 contact: 
   email: preets79@gmail.com

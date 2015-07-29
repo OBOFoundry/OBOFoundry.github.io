@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: nmr
 contact: 
   email: schober@imbi.uni-freiburg.de

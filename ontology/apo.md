@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: apo
 contact: 
   email: maria@genome.stanford.edu

@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: mfoem
 contact: 
   email: hastings@ebi.ac.uk

@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: hom
 contact: 
   email: julien.roux@unil.ch

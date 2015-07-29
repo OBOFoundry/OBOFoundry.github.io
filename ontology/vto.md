@@ -1,9 +1,8 @@
 ---
-layout: ont
+layout: ontology_detail
 id: vto
 products: 
   - id: vto.owl
 tracker: http://purl.obolibrary.org/obo/vto/tracker
 ---
 
-A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).

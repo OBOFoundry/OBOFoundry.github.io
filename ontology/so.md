@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: so
 contact: 
   email: song-devel@lists.sourceforge.net

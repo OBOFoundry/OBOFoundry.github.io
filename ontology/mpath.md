@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: mpath
 contact: 
   email: PS@mole.bio.cam.ac.uk

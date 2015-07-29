@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: bila
 contact: 
   email: henrich@embl.de
@@ -14,4 +14,3 @@ taxon:
 title: Bilateria anatomy
 ---
 
-Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa

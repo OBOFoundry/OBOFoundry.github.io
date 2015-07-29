@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: fma
 contact: 
   email: mejino@comcast.net

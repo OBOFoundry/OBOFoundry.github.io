@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: mi
 contact: 
   email: Henning.Hermjakob@ebi.ac.uk

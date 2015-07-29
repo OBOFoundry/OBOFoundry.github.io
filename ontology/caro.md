@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: caro
 contact: 
   email: haendel@ohsu.edu

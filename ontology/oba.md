@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: oba
 contact: 
   email: cjmungall@lbl.gov

@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: chebi
 alternatePrefix: ChEBI
 title: Chemical entities of biological interest

@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: po
 contact: 
   email: jaiswalp@science.oregonstate.edu

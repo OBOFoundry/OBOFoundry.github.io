@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: ovae
 contact: 
   email: yongqunh@med.umich.edu

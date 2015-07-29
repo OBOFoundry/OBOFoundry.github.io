@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: pr
 contact: 
   email: dan5@georgetown.edu

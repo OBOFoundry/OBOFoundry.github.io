@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: rex
 contact: 
   email: hastings@ebi.ac.uk

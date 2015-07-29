@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: geo
 contact: 
   email: MBrochhausen@uams.edu

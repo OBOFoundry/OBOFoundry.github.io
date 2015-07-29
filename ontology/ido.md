@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: ido
 contact: 
   email: Lindsay.Cowell@utsouthwestern.edu
@@ -15,4 +15,3 @@ title: Infectious disease
 tracker: http://code.google.com/p/infectious-disease-ontology/issues/list
 ---
 
-The Porifera Ontology (PORO) is an ontology covering the anatomy of the taxon Porifera (sponges)

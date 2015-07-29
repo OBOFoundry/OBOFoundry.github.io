@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: chmo
 contact: 
   email: batchelorc@rsc.org

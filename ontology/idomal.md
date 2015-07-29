@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: idomal
 contact: 
   email: topalis@imbb.forth.gr

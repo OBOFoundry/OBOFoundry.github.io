@@ -1,5 +1,5 @@
 ---
-layout: ont
+layout: ontology_detail
 id: bfo
 contact: 
   email: phismith@buffalo.edu
