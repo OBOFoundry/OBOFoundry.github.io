@@ -1,0 +1,52 @@
+;; Object _includes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "_includes/"
+  :tables (list 
+   (semanticdb-table "navbar.html"
+    :major-mode 'html-mode
+    :tags '(("Home" section nil nil [481 617]) ("About <b class=\"caret\">" section nil nil [617 1510]) ("Explore <b class=\"caret\">" section nil nil [1510 3217]) ("Download <b class=\"caret\">" section nil nil [3217 4041]) ("Documentation <b class=\"caret\">" section nil nil [4041 5264]) ("Project <b class=\"caret\">" section nil nil [5264 5267]))
+    :file "navbar.html"
+    :pointmax 5801
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "footer.html"
+    :major-mode 'html-mode
+    :tags '(("!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=\"//platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");" section (:members (("Contact us" section nil nil [447 527]) ("Google+" section nil nil [527 621]))) nil [127 621]) ("/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = '{{ site.comments.disqus.short_name }}';
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());" section nil nil [621 1162]) ("var _gaq = _gaq || [];
+  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', '{{ site.analytics.google.tracking_id }}']);
+  _gaq.push(['_setDomainName', '{{ site.analytics.google.domain }}']);
+  _gaq.push(['_setAllowLinker', true]);
+  
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();" section nil nil [1162 1170]))
+    :file "footer.html"
+    :pointmax 1908
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "aboutme.html"
+    :major-mode 'html-mode
+    :tags '(("about" section nil nil [285 481]) ("github.com/obophenotype/uberon" section (:members (("Follow @{{ site.project.twitter }}" section nil nil [1124 1311]) ("Google+" section nil nil [1311 1437]) ("" section nil nil [1437 1618]) ("" section nil nil [1618 1799]) ("" section nil nil [1799 1802]))) nil [481 484]))
+    :file "aboutme.html"
+    :pointmax 2012
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )

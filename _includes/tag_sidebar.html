@@ -1,0 +1,1 @@
+<i class="icon-tags"></i> Tags :<br>{% for tag in site.tags %} <a href="/tags/{{ tag[0] }}" rel="tooltip" title="View posts tagged with &quot;{{ tag[0] }}&quot;"><span class="label label-info">{{ tag[0] }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %}
