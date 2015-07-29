@@ -83,6 +83,10 @@ ontologies:
   layout: ontology_detail
   products:
   - {id: bspo.owl}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/25140222', title: 'Nose to tail, roots
+      to shoots: spatial descriptors for phenotypic diversity in the Biological Spatial
+      Ontology.'}
   title: Biological Spatial Ontology
   tracker: https://github.com/obophenotype/biological-spatial-ontology/issues
 - contact: {email: a.chang@tu-bs.de, label: Antje Chang}
@@ -253,10 +257,8 @@ ontologies:
   - {id: dpo.owl}
   title: Drosophila Phenotype Ontology
 - contact: {email: hoganwr@gmail.com, label: William Hogan}
-  description: We built this ontology primarily to support comparative effectiveness
-    researchers studying claims data. They need to be able to query U.S. National
-    Drug Codes (NDCs) by ingredient, mechanism of action (beta-adrenergic blockade),
-    physiological effect (diuresis), and therapeutic intent (anti-hypertensive).
+  description: An ontology to support comparative effectiveness researchers studying
+    claims data.
   domain: health
   homepage: http://code.google.com/p/dr-on
   id: dron
@@ -1062,6 +1064,7 @@ ontologies:
   title: RNA ontology
 - canonical: ro.owl
   domain: relations
+  homepage: https://code.google.com/p/obo-relations/issues
   id: ro
   jobs:
   - {id: 'http://build.berkeleybop.org/job/build-ro', type: DryRunBuild}
@@ -1072,7 +1075,7 @@ ontologies:
   - {id: ro.obo}
   - {id: ro/ro-interaction.owl}
   title: Relations Ontology
-  tracker: https://code.google.com/p/obo-relations/issues/list
+  tracker: https://github.com/oborel/obo-relations/issues
 - contact: {email: rnigam@mcw.edu, label: Rajni Nigam}
   description: Ontology of rat strains
   homepage: http://rgd.mcw.edu/
@@ -1121,18 +1124,21 @@ ontologies:
   title: Social Insect Behavior Ontology
   tracker: https://github.com/obophenotype/sibo/issues
 - contact: {email: song-devel@lists.sourceforge.net, label: SONG developers}
-  description: The Sequence Ontology provides a structured controlled vocabulary for
-    sequence annotation, for the exchange of annotation data and for the description
-    of sequence objects in databases. <a href="http://obo.cvs.sourceforge.net/*checkout*/song/ontology/sofa.obo">SOFA</a>
-    is a minimal version of SO for use in data exchange.
+  description: A structured controlled vocabulary for sequence annotation, for the
+    exchange of annotation data and for the description of sequence objects in databases.
   domain: biological sequence
-  homepage: http://song.sourceforge.net/
+  homepage: https://github.com/The-Sequence-Ontology/SO-Ontologies
   id: so
   layout: ontology_detail
   products:
   - {id: so.owl}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/20226267', title: Evolution of the Sequence
+      Ontology terms and relationships.}
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/15892872', title: 'The Sequence Ontology:
+      a tool for the unification of genome annotations.'}
   title: Sequence types and features
-  tracker: http://sourceforge.net/tracker/?group_id=72703&atid=810408
+  tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
 - contact: {email: ramirez@macn.gov.ar, label: Martin Ramirez}
   description: An ontology for spider comparative biology including anatomical parts
     (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk,
@@ -1185,12 +1191,14 @@ ontologies:
   domain: anatomy
   homepage: https://www.nescent.org/phenoscape/Main_Page
   id: tao
+  is_obsolete: true
   layout: ontology_detail
   products:
   - {id: tao.owl}
+  replaced_by: uberon
   taxon: {id: 'NCBITaxon:32443', label: Teleostei}
   title: Teleost Anatomy Ontology
-  tracker: http://sourceforge.net/tracker/?group_id=76834&atid=994764
+  tracker: https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3ATAO
 - contact: {email: peteremidford@yahoo.com, label: Peter Midford}
   description: A vocabulary of taxonomic ranks intended to replace the sets of rank
     terms found in the Teleost Taxonomy Ontology, the OBO translation of the NCBI
@@ -1356,17 +1364,19 @@ ontologies:
   title: Vaccine ontology
   tracker: http://sourceforge.net/tracker/?atid=1127137&group_id=255029&func=browse
 - contact: {email: wasila.dahdul@usd.edu, label: Wasila Dahdul}
-  description: 'Vertebrate skeletal anatomy ontology. '
+  description: Vertebrate skeletal anatomy ontology.
   domain: anatomy
   homepage: https://www.nescent.org/phenoscape/Main_Page
   id: vsao
+  is_obsolete: true
   layout: ontology_detail
   page: https://www.phenoscape.org/wiki/Skeletal_Anatomy_Jamboree
   products:
   - {id: vsao.owl}
+  replaced_by: uberon
   taxon: {id: 'NCBITaxon:7742', label: Vertebrata}
-  title: Vertebrate Skeletal Anatomy Ontology
-  tracker: https://sourceforge.net/tracker/?group_id=76834&atid=2257941
+  title: Vertebrate Skeletal Anatomy Ontology-
+  tracker: https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3AVSAO
 - id: vto
   layout: ontology_detail
   products:

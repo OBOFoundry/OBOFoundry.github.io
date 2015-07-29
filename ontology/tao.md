@@ -13,7 +13,9 @@ taxon:
   id: NCBITaxon:32443
   label: Teleostei
 title: Teleost Anatomy Ontology
-tracker: http://sourceforge.net/tracker/?group_id=76834&atid=994764
+tracker: https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3ATAO
+is_obsolete: true
+replaced_by: uberon
 ---
 
 Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa

@@ -16,22 +16,22 @@ layout: default
       {{page.description}}
     </p>
     </div>
-    Source for this entry:
-    <div class="btn-group" role="group" aria-label="Source">
-      <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/master/ontology/{{page.id}}.md">
-        <button type="button" class="btn btn-default">View</button>
-      </a>
-      <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md">
-        <button type="button" class="btn btn-default">Edit</button>
-      </a>
-      <button type="button" class="btn btn-default">Help</button>
-    </div>
-    <button>
-      
-    </button>
 
   </div>
 
+  {% if page.is_obsolete %}
+  <div>
+    <div class="alert alert-danger" role="alert">
+      This ontology is deprecated!
+    </div>
+    {% for repl in page.replaced_by %}
+    <div class="alert alert-info" role="alert">
+      Consider using: <a href="{{repl}}.html">{{repl}}</a>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+   
   <div class="col-md-12">
 
     <div class="row">
@@ -107,8 +107,24 @@ layout: default
 
 
         </dl>
+        
+
+        <div class="btn-group" role="group" aria-label="Source">
+          <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/{{page.id}}.md">
+            <button type="button" class="btn btn-default">View</button>
+          </a>
+          <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md">
+            <button type="button" class="btn btn-default">Edit</button>
+          </a>
+          <!-- <button type="button" class="btn btn-default">Help</button> -->
+        </div>
       </div>
       <div class="col-md-9">
+        <!-- TODO: each ontology should configure which browsers to be exposed in -->
+        <a href="http://www.ontobee.org/browser/index.php?o={{page.id}}">
+          <button type="button" class="btn btn-default">OntoBee</button>
+        </a>
+
         {{ content }}
 
         <div>

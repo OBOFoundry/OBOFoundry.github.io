@@ -34,17 +34,27 @@
       </td>
 
       <td>
+        {% if ont.contact %}
         <a href="mailto:{{ont.contact.id}}">
           <button type="button" class="btn btn-default" aria-label="Left Align">
             <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
           </button>
         </a>
+        {% endif %}
       </td>
 
       <td>
         <a href="http://purl.obolibrary.org/obo/{{ont.id}}.owl">
           <button type="button" class="btn btn-default" aria-label="Left Align">
             <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+          </button>
+        </a>
+      </td>
+
+      <td>
+        <a href="http://www.ontobee.org/browser/index.php?o={{ont.id}}">
+          <button type="button" class="btn btn-default" aria-label="Left Align">
+            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
           </button>
         </a>
       </td>

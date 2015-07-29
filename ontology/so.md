@@ -4,13 +4,18 @@ id: so
 contact: 
   email: song-devel@lists.sourceforge.net
   label: SONG developers
-description: The Sequence Ontology provides a structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases. <a href="http://obo.cvs.sourceforge.net/*checkout*/song/ontology/sofa.obo">SOFA</a> is a minimal version of SO for use in data exchange.
+description: A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.
 domain: biological sequence
-homepage: http://song.sourceforge.net/
+homepage: https://github.com/The-Sequence-Ontology/SO-Ontologies
 products: 
   - id: so.owl
 title: Sequence types and features
-tracker: http://sourceforge.net/tracker/?group_id=72703&atid=810408
+tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
+publications:
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/20226267
+    title: Evolution of the Sequence Ontology terms and relationships.
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/15892872
+    title: "The Sequence Ontology: a tool for the unification of genome annotations."
 ---
 
 The Sequence Ontology provides a structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases. <a href="http://obo.cvs.sourceforge.net/*checkout*/song/ontology/sofa.obo">SOFA</a> is a minimal version of SO for use in data exchange.
