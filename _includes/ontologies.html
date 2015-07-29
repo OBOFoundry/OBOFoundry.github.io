@@ -1,21 +1,20 @@
-{% for ont in site.ontologies offset: 0 limit: 50 %}
-<div class="row">
-  <div class="span7">    
-    <div class="row">
-      <div class="span2 hidden-phone hidden-tablet">
-        <a href="ontology/{{ ont.id }}.html" >
-            <img class="listImage img-rounded" border="0" src="{{ ont.image }}" alt="{{ ont.title }} image">
-        </a>
-      </div>
-      <div class="span5">
-	<h4><strong><a href="{{ ont.url }}">{{ ont.title }}</a></strong></h4>      
-        <p>
-          {{ ont.description }}
-        </p>
-        <p><a href="{{ ont.url }}">Read more</a></p>
-      </div>
-    </div>    
-    <hr>
-  </div>
-</div>
-{% endfor %}
+<table class="table">
+  <tbody>
+    {% for ont in site.ontologies offset: 0 limit: 50 %}
+    {% if include.foundry == false %}
+    <tr>
+      <td>
+         <a href="ontology/{{ ont.id }}.html" > {{ont.id}} </a>
+      </td>
+      <td>
+        {{ ont.title }}
+      </td>
+      <td>
+        {{ ont.description }}
+      </td>
+    </tr>
+    {% endif %}
+
+    {% endfor %}
+  </tbody>
+</table>

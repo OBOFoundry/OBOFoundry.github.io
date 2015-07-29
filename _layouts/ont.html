@@ -1,43 +1,77 @@
 ---
 layout: default
 ---
-
+{{ }}
+{% include navbar.html %}
 <div class="content">    
-    <div class="row">	
-        <div class="span7 column">
-            <h1>{{ page.title }}</h1>
-        </div>
 
-        <div class="span7 columns">
-            {{ page.summary }}
-            </br>
-        </div>
-        <div>
-          <img class="listImage img-rounded" border="0" src="{{ page.image }}" alt="{{ page.title }} image">
-        </div>
-    </div>
-    
-    <div class="row">	
-        <div class="span7 columns">
-            {{ content }}
-        </div>
-    </div>
-        
-    <div class="row">	
-        <div class="span7 column">
-            <p>
-              <i>{{ page.author}}</i>
-              <i class="icon-calendar"></i> {{ page.date | date: "%B %e, %Y" }}
-              | <i class="icon-comment"></i> <a href="{{ page.url }}#disqus_thread""></a>     
-              <br />
-              <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ site.project.twitter }}">Tweet</a> <g:plusone size="medium"></g:plusone></h5>
-            </p>
-        </div>
+
+  <div>	
+    <div >
+      <h1>{{ page.title }}</h1>
     </div>
 
-    {% if page.comments %}
-    <div class="row">	
-        <div class="span7 columns">    
+    <div >
+      {{ page.summary }}
+    </div>
+    <div>
+      <img class="listImage img-rounded" border="0" src="{{ page.image }}" alt="{{ page.title }} image">
+      <br/>
+      <br/>
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-3">
+        <dl class="dl-horizontal">
+
+          {% if page.depicted_by %}
+          <dt>Logo</dt>
+          <dt>
+            <img alt="logo for {{page.id}}" src="{{page.depicted_by}}"/></li>
+          </dt>
+          {% endif %}
+
+          <dt>PURL</dt>
+          <dt>
+              <a href="http://purl.obolibrary.org/obo/{{page.id}}.owl">http://purl.obolibrary.org/obo/{{page.id}}.owl</a>
+          </dt>
+
+          <dt>Contact</dt>
+          <dt>
+            <a href="mailto:{{page.contact.email}}">{{page.contact.label}}</a> 
+          </dt>
+
+          <dt>Trackers</dt>
+          <dt>
+            <a href="{{page.tracker}}">{{page.tracker}}</a>
+          </dt>
+
+          <dt>Domain</dt>
+          <dt>
+            <a href="{{page.domain}}">{{page.domain}}</a>
+          </dt>
+
+          {% if page.termgenie %}
+          <dt>Trackers</dt>
+          <dt>
+            <a href="{{page.termgenie}}">{{page.termgenie}}</a>
+          </dt>
+          {% endif %}
+
+
+        </dl>
+      </div>
+      <div class="col-md-9">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+  {% if page.comments %}
+  <div>	
+        <div >    
             <h2>Comments Section</h2>
             <p>Feel free to comment on the post but keep it clean and on topic.</p>	
             <div id="disqus_thread"></div>
@@ -55,19 +89,11 @@ layout: default
             <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
         </div>
-    </div>
-    {% endif %}
+  </div>
+  {% endif %}
     
-    <!-- Twitter -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <!-- Twitter -->
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-    <!-- Google + -->
-    <script type="text/javascript">
-      (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-      })();
-    </script>
 </div>
     
