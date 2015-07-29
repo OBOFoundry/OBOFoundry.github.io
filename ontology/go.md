@@ -31,4 +31,4 @@ products:
 depicted_by: http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png
 ---
 
-Bridging axioms between nifstd and go
+The Gene Ontology is ...

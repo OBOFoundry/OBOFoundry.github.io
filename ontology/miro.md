@@ -7,7 +7,7 @@ contact:
 description: Application ontology for entities related to insecticide resistance in mosquitos
 domain: environment
 homepage: http://anobase.vectorbase.org
-    products: 
+products: 
   - id: miro.owl
 taxon: 
   id: NCBITaxon:44484

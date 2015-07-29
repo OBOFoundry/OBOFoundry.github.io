@@ -7,7 +7,7 @@ contact:
 description: ERO models research resources such instruments. protocols, reagents, animal models and biospecimens. It has been developed in the context of the eagle-i project  (http://eagle-i.net/).
 domain: resources
 homepage: http://code.google.com/p/eagle-i/
-ttp://code.google.com/p/eagle-i/wiki/Documentation
+documentation: http://code.google.com/p/eagle-i/wiki/Documentation
 products: 
   - id: ero.owl
 title: eagle-i resource ontology

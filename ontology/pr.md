@@ -7,7 +7,7 @@ contact:
 description: PRotein Ontology (PRO) has been designed to describe the relationships of proteins and protein evolutionary classes (ontology for ProEvo), to delineate the multiple protein forms of a gene locus (ontology for protein forms), and to interconnect existing ontologies
 domain: proteins
 homepage: http://proconsortium.org
-p://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
+documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
 products: 
   - id: pr.owl
 title: PRotein Ontology (PRO)
