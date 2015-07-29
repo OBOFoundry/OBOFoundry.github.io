@@ -7,7 +7,7 @@ contact:
   label: David Osumi-Sutherland
 description: A structured controlled vocabulary of the anatomy of Drosophila melanogaster
 domain: anatomy
-homepage: " http://purl.obolibrary.org/obo/fbbt"
+homepage: http://purl.obolibrary.org/obo/fbbt
 products: 
   - id: fbbt.owl
 taxon: 

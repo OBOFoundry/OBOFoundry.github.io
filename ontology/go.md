@@ -2,14 +2,16 @@
 layout: ontology_detail
 id: go
 label: GO
+description: An ontology for describing the function of genes and gene products
 title: Gene Ontology
 twitter: news4go
-tracker: http://sourceforge.net/p/geneontology/ontology-requests/
+tracker: https://github.com/geneontology/go-ontology/issues/
 termgenie: http://go.termgenie.org
 taxon: 
   id: NCBITaxon:1
   label: All life
 domain: biology
+integration_server: http://build.berkeleybop.org/view/GO
 dependencies:
  - id: uberon
    subset: go/extensions/uberon_import.owl
@@ -23,12 +25,18 @@ dependencies:
    type: BridgeOntology
    title: GO bridge to NIFSTD
    description: Bridging axioms between nifstd and go
+   publications:
+     - id: http://www.ncbi.nlm.nih.gov/pubmed/24093723
+       title: "The Gene Ontology (GO) Cellular Component Ontology: integration with SAO (Subcellular Anatomy Ontology) and other recent developments."
    connects:
      - id: nifstd
      - id: go
 products:
  - id: go.owl
+ - id: go/extensions/go-plus.owl
+   title: GO-Plus
 depicted_by: http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png
 ---
 
-The Gene Ontology is ...
+The goal of the GeneOntology (GO) project is to provide a uniformway to describe the functions of gene products from organisms across all kingdoms of life and thereby enable analysis of genomic data
+

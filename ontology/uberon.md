@@ -23,7 +23,7 @@ contact:
   label: Chris Mungall
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22293552
-  - title: Uberon, an integrative multi-species anatomy ontology
+    title: Uberon, an integrative multi-species anatomy ontology
 depicted_by: http://uberon.github.io/images/u-logo.jpg
 exampleClass: UBERON_0002046
 redirects:
