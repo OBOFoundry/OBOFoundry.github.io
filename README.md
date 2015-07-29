@@ -17,9 +17,20 @@ Each md file consists of
  * YAML metadata
  * Markdown text to be shown on the page for that ontology
 
+### Community Contributions
+
 Note that general OBO users are free to edit via the github web interface and make a pull request
 
+For example:
+
+ * [ontology/uberon.md](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/uberon.md) on github
+ * [ontology/uberon.md](https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/uberon.md) edit link
+
 TODO: derive [registry/ontologies.yml](registry/ontologies.yml) from ontology directory
+
+## Adding news
+
+Simply add a post to the [_posts/](_posts/) directory - copy an exiting one if you like
 
 ## Instructions for WebSite developers
 
