@@ -29,6 +29,12 @@ def main():
     parser_n.set_defaults(function=validate)
     parser_n.add_argument('files',nargs='*')
 
+    # SUBCOMMAND
+    parser_n = subparsers.add_parser('concat', help='concat ontology yamls')
+    parser_n.add_argument('-i', '--include', help='yml file to include for header')
+    parser_n.add_argument('-o', '--output', help='output yaml')
+    parser_n.set_defaults(function=concat_yaml)
+    parser_n.add_argument('files',nargs='*')
 
     args = parser.parse_args()
 
@@ -36,20 +42,33 @@ def main():
     func(args)
 
 
-    ##data = load(stream, Loader=Loader)
-
-
 def validate(args):
     for fn in args.files:
+        print("VALIDATING:"+fn)
+        # we don't do anything with the results; an
+        # error is thrown 
         load_md(fn)
+        print("OK:"+fn)
+
+def concat_yaml(args):
+    objs = []
+    cfg = {}
+    if (args.include):
+        f = open(args.include, 'r') 
+        cfg = yaml.load(f.read())
+    for fn in args.files:
+        (obj, md) = load_md(fn)
+        objs.append(obj)
+    cfg['ontologies'] = objs
+    f = open(args.output, 'w') 
+    f.write(yaml.dump(cfg))
+    return cfg
 
 def load_md(fn):
-    print("VALIDATING:"+fn)
     f = open(fn, 'r') 
     text = f.read() 
-    (obj, md) = extract(text)
-    ##print(str(obj))
-    print("OK:"+fn)
+    return extract(text)
+    
 
 def extract(mdtext):
     lines = mdtext.split("\n")

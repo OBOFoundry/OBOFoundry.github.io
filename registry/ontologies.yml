@@ -1,1591 +1,1411 @@
-  
-id: http://obolibrary.org
-title: OBO Library VERY EXPERIMENTAL BROWSER
-description: "A set of ontology libraries for doing useful stuff. This is a demo, DO NOT TRUST ANY INFO YOU SEE HERE"
-
+{'description': 'AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology', 'contact': {'email': 'J.Bard@ed.ac.uk', 'label': 'Jonathan Bard'}, 'homepage': 'http://www.obofoundry.org/wiki/index.php/AEO:Main_Page', 'domain': 'anatomy', 'products': [{'id': 'aeo.owl'}], 'layout': 'ontology_detail', 'id': 'aeo', 'title': 'Anatomical Entity Ontology'}
+{'description': 'The Adverse Event Reporting Ontology (AERO) is an ontology aimed at supporting clinicians at the time of data entry, increasing quality and accuracy of reported adverse events', 'contact': {'email': 'mcourtot@gmail.com', 'label': 'Melanie Courtot'}, 'homepage': 'http://purl.obolibrary.org/obo/aero', 'domain': 'health', 'products': [{'id': 'aero.owl'}], 'layout': 'ontology_detail', 'id': 'aero', 'title': 'Adverse Event Reporting Ontology'}
+{'description': 'A structured controlled vocabulary for the phenotypes of Ascomycete fungi', 'contact': {'email': 'maria@genome.stanford.edu', 'label': 'Maria Costanza'}, 'taxon': {'id': 'NCBITaxon:4890', 'label': 'Ascomycota'}, 'homepage': 'http://www.yeastgenome.org/ ', 'domain': 'phenotype', 'products': [{'id': 'apo.owl'}], 'layout': 'ontology_detail', 'id': 'apo', 'title': 'Ascomycete phenotype ontology'}
+{'description': 'The Beta Cell Genomics Ontology (BCGO) is an application ontology built for the beta cell genomics studies aiming to support database annotation, complicated semantic queries, and automated cell type classification.', 'products': [{'id': 'bcgo.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://code.google.com/p/bcgo-ontology/issues/list', 'homepage': 'http://code.google.com/p/bcgo-ontology/', 'id': 'bcgo', 'title': 'Beta Cell Genomics Ontology'}
+{'description': 'The upper level ontology upon which OBO Foundry ontologies are built.', 'contact': {'email': 'phismith@buffalo.edu', 'label': 'Barry Smith'}, 'homepage': 'http://ifomis.org/bfo/', 'domain': 'upper', 'products': [{'id': 'bfo.owl'}], 'page': 'http://ifomis.org/bfo/', 'layout': 'ontology_detail', 'id': 'bfo', 'title': 'Basic Formal Ontology'}
+{'contact': {'email': 'henrich@embl.de', 'label': 'Thorsten Heinrich'}, 'taxon': {'id': 'NCBITaxon:33213', 'label': 'Bilateria'}, 'homepage': 'http://4dx.embl.de/4DXpress', 'domain': 'anatomy', 'products': [{'id': 'bila.owl'}], 'layout': 'ontology_detail', 'id': 'bila', 'title': 'Bilateria anatomy'}
+{'description': 'An ontology for respresenting spatial concepts, anatomical axes, gradients, regions, planes, sides, and surfaces. These concepts can be used at multiple biological scales and in a diversity of taxa, including plants, animals and fungi. The BSPO is used to provide a source of anatomical location descriptors for logically defining anatomical entity classes in anatomy ontologies. ', 'contact': {'email': 'cjmungall@lbl.gov', 'label': 'Chris Mungall'}, 'homepage': 'https://biological-spatial-ontology.googlecode.com', 'domain': 'anatomy', 'products': [{'id': 'bspo.owl'}], 'layout': 'ontology_detail', 'tracker': 'https://code.google.com/p/biological-spatial-ontology/issues/list', 'id': 'bspo', 'title': 'Biological Spatial Ontology'}
+{'description': 'A structured controlled vocabulary for the source of an enzyme. It comprises terms for tissues, cell lines, cell types and cell cultures from uni- and multicellular organisms.', 'contact': {'email': 'a.chang@tu-bs.de', 'label': 'Antje Chang'}, 'homepage': 'http://www.brenda-enzymes.info', 'domain': 'anatomy', 'products': [{'id': 'bto.owl'}], 'page': 'http://www.brenda-enzymes.info', 'layout': 'ontology_detail', 'id': 'bto', 'title': 'BRENDA tissue / enzyme source'}
+{'description': 'The Common Anatomy Reference Ontology (CARO) is being developed to facilitate interoperability between existing anatomy ontologies for different species, and will provide a template for building new anatomy ontologies. CARO will be described in Anatomy Ontologies for Bioinformatics: Principles and Practice Albert Burger, Duncan Davidson and Richard Baldock (Editors)', 'contact': {'email': 'haendel@ohsu.edu', 'label': 'Melissa Haendel'}, 'homepage': 'http://www.bioontology.org/wiki/index.php/CARO:Main_Page', 'domain': 'anatomy', 'products': [{'id': 'caro.owl'}], 'layout': 'ontology_detail', 'tracker': 'https://sourceforge.net/p/obo/common-anatomy-reference-ontology-caro-requests/', 'id': 'caro', 'title': 'Common Anatomy Reference Ontology'}
+{'description': 'a formalization of concepts and relations relevant to evolutionary comparative analysis, such as phylogenetic trees, OTUs (operational taxonomic units) and compared characters (including molecular characters as well as other types). CDAO is being developed by scientists in biology, evolution, and computer science', 'products': [{'id': 'cdao.owl'}], 'layout': 'ontology_detail', 'contact': {'email': 'balhoff@nescent.org', 'label': 'Jim Balhoff'}, 'homepage': 'http://sourceforge.net/apps/mediawiki/cdao/index.php?title=Main_Page', 'id': 'cdao', 'title': 'Comparative Data Analysis Ontology'}
+{'description': 'A structured classification of chemical compounds of biological relevance.', 'contact': {'email': 'hastings@ebi.ac.uk', 'label': 'Janna Hastings'}, 'homepage': 'http://www.ebi.ac.uk/chebi', 'domain': 'biochemistry', 'alternatePrefix': 'ChEBI', 'products': [{'id': 'chebi.owl'}, {'id': 'chebi.obo'}], 'title': 'Chemical entities of biological interest', 'tracker': 'https://sourceforge.net/p/chebi/curator-requests/', 'id': 'chebi', 'layout': 'ontology_detail', 'page': 'http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual'}
+{'description': 'Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them.', 'contact': {'email': 'hastings@ebi.ac.uk', 'label': 'Janna Hastings'}, 'homepage': 'http://code.google.com/p/semanticchemistry/', 'domain': 'biochemistry', 'products': [{'id': 'cheminf.owl'}], 'layout': 'ontology_detail', 'id': 'cheminf', 'title': 'Chemical Information Ontology'}
+{'description': 'CHMO, the chemical methods ontology, describes methods used to', 'contact': {'email': 'batchelorc@rsc.org', 'label': 'Colin Batchelor'}, 'homepage': 'http://code.google.com/p/rsc-cmo/', 'domain': 'health', 'products': [{'id': 'chmo.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://code.google.com/p/rsc-cmo/issues/list', 'id': 'chmo', 'title': 'Chemical Methods Ontology'}
+{'mailing_list': 'https://lists.sourceforge.net/lists/listinfo/obo-cell-type', 'description': 'The Cell Ontology is a structured controlled vocabulary for cell types in animals.', 'taxon': {'id': 'NCBITaxon:33208', 'label': 'Metazoa'}, 'domain': 'cells', 'termgenie': 'http://cl.termgenie.org', 'title': 'Cell Ontology', 'tracker': 'https://code.google.com/p/cell-ontology/issues/list', 'layout': 'ontology_detail', 'products': [{'id': 'cl.owl'}, {'id': 'cl.obo'}, {'id': 'cl/cl-basic.obo'}], 'dependencies': [{'id': 'uberon'}, {'id': 'go'}], 'id': 'cl', 'canonical': 'cl.owl', 'label': 'Cell Ontology'}
+{'description': 'The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX) and the Signs, Symptoms, and Findings Workshop(Milan, Italy). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology. See http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf', 'taxon': {'id': 'NCBITaxon:9606', 'label': 'Homo sapiens'}, 'contact': {'email': 'albertgoldfain@gmail.com', 'label': 'Albert Goldfain'}, 'homepage': 'http://code.google.com/p/ogms/', 'domain': 'medicine', 'products': [{'id': 'ogms.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://code.google.com/p/ogms/issues/list', 'id': 'ogms', 'title': 'Ontology for General Medical Science', 'page': 'http://code.google.com/p/ogms/'}
+{'description': 'The Clinical Measurement Ontology is designed to be used to standardize morphological and physiological measurement records generated from clinical and model organism research and health programs.', 'products': [{'id': 'cmo.owl'}], 'layout': 'ontology_detail', 'contact': {'email': 'shimoyama@mcw.edu', 'label': 'Mary Shimoyama'}, 'id': 'cmo', 'domain': 'clinical', 'title': 'Clinical measurement ontology'}
+{'description': 'CVDO is an ontology based on the OGMS model of disease, designed to describe entities related to cardiovascular diseases (including the diseases themselves, the underlying disorders, and the related pathological processes). It is being developed at the INSERM research institute (Institut National de la Santé et de la Recherche Médicale).', 'contact': {'email': 'adrien.barton@gmail.com', 'label': 'Adrien Barton'}, 'homepage': 'https://code.google.com/p/cvdo/', 'domain': 'health', 'products': [{'id': 'cvdo.owl'}], 'layout': 'ontology_detail', 'tracker': 'https://code.google.com/p/cvdo/issues/list', 'id': 'cvdo', 'title': 'Cardiovascular Disease Ontology'}
+{'description': 'A structured controlled vocabulary of the anatomy of the slime-mould <i>Dictyostelium discoideum</i>.', 'contact': {'email': 'r-chisholm@northwestern.edu', 'label': 'Rex Chisholm'}, 'taxon': {'id': 'NCBITaxon:44689', 'label': 'Dictyostelium discoideum'}, 'homepage': 'http://dictybase.org/', 'domain': 'anatomy', 'products': [{'id': 'ddanat.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://sourceforge.net/tracker/?group_id=76834&atid=974664', 'id': 'ddanat', 'title': 'Dictyostelium discoideum anatomy'}
+{'description': 'Creating a comprehensive hierarchical controlled vocabulary for human disease representation.', 'taxon': {'id': 'NCBITaxon:9606', 'label': 'Homo sapiens'}, 'contact': {'email': 'lynn.schriml@gmail.com', 'label': 'Lynn Schriml'}, 'homepage': 'http://diseaseontology.sourceforge.net/', 'domain': 'health', 'products': [{'id': 'doid.owl'}], 'page': 'http://diseaseontology.sourceforge.net/', 'tracker': 'http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739', 'layout': 'ontology_detail', 'id': 'doid', 'title': 'Human disease ontology'}
+{'description': 'An ontology of commonly encountered and/or high level Drosophila phenotypes.  It has significant formalisation - utilising terms from GO, CL, PATO and the Drosophila anatomy ontology.  It has been used by FlyBase for > 159000 annotations of phenotype', 'contact': {'email': 'djs93@gen.cam.ac.uk', 'label': 'David Osumi-Sutherland'}, 'homepage': 'http://www.flybase.org/', 'products': [{'id': 'dpo.owl'}], 'title': 'Drosophila Phenotype Ontology', 'preferredPrefix': 'FBcv', 'id': 'dpo', 'layout': 'ontology_detail'}
+{'description': 'We built this ontology primarily to support comparative effectiveness researchers studying claims data. They need to be able to query U.S. National Drug Codes (NDCs) by ingredient, mechanism of action (beta-adrenergic blockade), physiological effect (diuresis), and therapeutic intent (anti-hypertensive).', 'contact': {'email': 'hoganwr@gmail.com', 'label': 'William Hogan'}, 'homepage': 'http://code.google.com/p/dr-on', 'domain': 'health', 'products': [{'id': 'dron.owl'}], 'layout': 'ontology_detail', 'tracker': 'https://code.google.com/p/dr-on/issues/list', 'id': 'dron', 'title': 'The Drug Ontology'}
+{'description': 'A rich ontology for experimental and other evidence statements.', 'products': [{'id': 'eco.owl'}], 'layout': 'ontology_detail', 'id': 'eco', 'domain': 'experiments', 'title': 'Evidence codes'}
+{'description': 'A structured controlled vocabulary of stage-specific anatomical structures of the human. It has been designed to mesh with the mouse anatomy and incorporates each Carnegie stage of development (CS1-20). The abstract version of the human developmental anatomy ontology compresses all the tissues present over Carnegie stages 1-20 into a single hierarchy. The heart, for example, is present from Carnegie Stage 9 onwards and is thus represented by 12 EHDA IDs (one for each stage). In the abstract mouse, it has a single ID so that the abstract term given as just <i>heart</i> really means <i>heart (CS 9-20)</i>. Timing details will be added to the abstract version of the ontology in a future release.', 'contact': {'email': 'J.Bard@ed.ac.uk', 'label': 'Jonathan Bard'}, 'taxon': {'id': 'NCBITaxon:9606', 'label': 'Homo sapiens'}, 'homepage': 'http://genex.hgu.mrc.ac.uk/', 'domain': 'anatomy', 'products': [{'id': 'ehdaa2.owl'}, {'id': 'ehdaa2.obo'}], 'layout': 'ontology_detail', 'id': 'ehdaa2', 'title': 'Human developmental anatomy, abstract version, v2'}
+{'description': 'A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).', 'taxon': {'id': 'NCBITaxon:10088', 'label': 'Mus'}, 'contact': {'email': 'Terry.Hayamizu@jax.org', 'label': 'Terry Hayamizu'}, 'homepage': 'http://emouseatlas.org', 'domain': 'anatomy', 'products': [{'id': 'emap.owl'}], 'page': 'http://www.obofoundry.org/wiki/index.php/EMAPA:Main_Page', 'layout': 'ontology_detail', 'id': 'emap', 'title': 'Mouse gross anatomy and development, timed'}
+{'description': 'Ontology of environmental features and habitats', 'contact': {'email': 'p.buttigieg@googlemail.com', 'label': 'Pier Luigi Buttigieg'}, 'homepage': 'http://environmentontology.org/', 'domain': 'environment', 'products': [{'id': 'envo.owl'}], 'page': 'http://environmentontology.org/', 'tracker': 'http://code.google.com/p/envo/issues/', 'layout': 'ontology_detail', 'id': 'envo', 'title': 'Environment Ontology'}
+{'description': 'ERO models research resources such instruments. protocols, reagents, animal models and biospecimens. It has been developed in the context of the eagle-i project  (http://eagle-i.net/).', 'contact': {'email': 'carlotorniai@gmail.com', 'label': 'Carlo Torniai'}, 'homepage': 'http://code.google.com/p/eagle-i/', 'domain': 'resources', 'documentation': 'http://code.google.com/p/eagle-i/wiki/Documentation', 'layout': 'ontology_detail', 'tracker': 'http://code.google.com/p/eagle-i/issues/list', 'products': [{'id': 'ero.owl'}], 'id': 'ero', 'title': 'eagle-i resource ontology'}
+{'description': 'Significant progress has been made over the last several years in collecting and improving access to genomic, toxicology, and health data to promote understanding about environmental influences on human health.  The resulting information resources, however, lack extensive and reliable exposure data, which are required to translate molecular insights, elucidate environmental contributions to diseases, and assess human health risks at the individual and population levels.  We report our development of an Exposure Ontology, ExO, designed to address this information gap by facilitating centralization and integration of exposure data to inform understanding of environmental health. Like other widely used ontologies, ExO is intended to bridge the gap between exposure science and diverse environmental health disciplines including toxicology, epidemiology, disease surveillance, and epigenetics', 'homepage': 'http://ctdbase.org/downloads/#exposures', 'domain': 'health', 'products': [{'id': 'exo.owl'}], 'page': 'http://ctdbase.org/downloads/#exposures', 'layout': 'ontology_detail', 'id': 'exo', 'title': 'Exposure ontology'}
+{'layout': 'ont', 'title': 'Uberon', 'tags': ['announce']}
+{'description': 'A structured controlled vocabulary for the anatomy of fungi.', 'taxon': {'id': 'NCBITaxon:4751', 'label': 'Fungal'}, 'contact': {'email': 'maria@genome.stanford.edu', 'label': 'Maria Costanzo'}, 'homepage': 'http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/', 'domain': 'anatomy', 'products': [{'id': 'fao.owl'}], 'page': 'http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/#description', 'layout': 'ontology_detail', 'id': 'fao', 'title': 'Fungal gross anatomy'}
+{'description': 'A structured controlled vocabulary of sample preparation, visualization and imaging methods used in biomedical research.', 'contact': {'email': 'dorloff@ncmir.ucsd.edu', 'label': 'David Orloff'}, 'homepage': 'http://cellimagelibrary.org/', 'domain': 'experiments', 'products': [{'id': 'fbbi.owl'}], 'layout': 'ontology_detail', 'id': 'fbbi', 'title': 'Biological imaging methods'}
+{'description': 'A structured controlled vocabulary of the anatomy of Drosophila melanogaster', 'contact': {'email': 'djs93@gen.cam.ac.uk', 'label': 'David Osumi-Sutherland'}, 'taxon': {'id': 'NCBITaxon:7227', 'label': 'Drosophila'}, 'homepage': ' http://purl.obolibrary.org/obo/fbbt', 'domain': 'anatomy', 'products': [{'id': 'fbbt.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://purl.obolibrary.org/obo/fbbt/tracker', 'preferredPrefix': 'FBbt', 'id': 'fbbt', 'title': 'Drosophila gross anatomy'}
+{'description': 'The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase.', 'contact': {'email': 'ma11@gen.cam.ac.uk', 'label': 'Michael Ashburner'}, 'taxon': {'id': 'NCBITaxon:7227', 'label': 'Drosophila'}, 'homepage': 'http://www.flybase.org/', 'domain': 'taxonomy', 'products': [{'id': 'fbsp.owl'}], 'layout': 'ontology_detail', 'tracker': 'https://cedar.bio.indiana.edu/trac/env/ontologies/wiki/PublicWikiStart', 'id': 'fbsp', 'title': 'Fly taxonomy'}
+{'publications': [{'id': 'http://www.ncbi.nlm.nih.gov/pubmed/18688289'}, {'id': 'http://www.ncbi.nlm.nih.gov/pubmed/18360535'}, {'id': 'http://www.ncbi.nlm.nih.gov/pubmed/16779026'}], 'contact': {'email': 'mejino@comcast.net', 'label': 'Onard Mejino'}, 'taxon': {'id': 'NCBITaxon:9606', 'label': 'Homo sapiens'}, 'homepage': 'http://sig.biostr.washington.edu/projects/fm/index.html', 'domain': 'anatomy', 'description': 'Obo format translation of the FMA, omitting all relationships other than is_a, part_of and has_part. Future versions of fma_obo will include more relationships', 'products': [{'id': 'fma.owl'}], 'page': 'http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy', 'tracker': 'https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/', 'title': 'Foundational Model of Anatomy (subset)', 'id': 'fma', 'layout': 'ontology_detail'}
+{'products': [{'id': 'gaz.owl'}], 'layout': 'ontology_detail', 'contact': {'email': 'ma11@gen.cam.ac.uk', 'label': 'Michael Ashburner'}, 'tracker': 'http://sourceforge.net/tracker/?func=browse&group_id=76834&atid=1014856', 'homepage': 'http://gensc.org/gc_wiki/index.php/GAZ_Project', 'id': 'gaz', 'title': 'Gazetteer'}
+{'description': 'An ontology of geographical entities implemented in Web Ontology Language 2 (OWL2) and based on Basic Formal Ontology (BFO). The developers aim to adhere to the OBO Foundry principles.', 'contact': {'email': 'MBrochhausen@uams.edu', 'label': 'Mathias Brochhausen'}, 'homepage': 'https://code.google.com/p/ge-ontology/', 'products': [{'id': 'geo.owl'}], 'layout': 'ontology_detail', 'tracker': 'https://ontology.atlassian.net/browse/GEO#selectedTab=com.atlassian.jira.plugin.system.project%3Aissues-panel', 'id': 'geo', 'title': 'Geographical Entity Ontology'}
+{'depicted_by': 'http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png', 'taxon': {'id': 'NCBITaxon:1', 'label': 'All life'}, 'twitter': 'news4go', 'domain': 'biology', 'termgenie': 'http://go.termgenie.org', 'layout': 'ontology_detail', 'tracker': 'http://sourceforge.net/p/geneontology/ontology-requests/', 'products': [{'id': 'go.owl'}], 'dependencies': [{'subset': 'go/extensions/uberon_import.owl', 'id': 'uberon'}, {'subset': 'go/extensions/cl_import.owl', 'id': 'cl'}, {'subset': 'go/extensions/ncbitaxon_import.owl', 'id': 'ncbitaxon'}, {'subset': 'go/extensions/ro_import.owl', 'id': 'ro'}, {'type': 'BridgeOntology', 'connects': [{'id': 'nifstd'}, {'id': 'go'}], 'id': 'go/extensions/go-bridge-to-nifstd.owl', 'title': 'GO bridge to NIFSTD', 'description': 'Bridging axioms between nifstd and go'}], 'id': 'go', 'title': 'Gene Ontology', 'label': 'GO'}
+{'s': [{'id': 'hao.owl'}], 'description': 'A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)', 'contact': {'email': 'diapriid@gmail.com', 'label': 'Matt Yoder'}, 'taxon': {'id': 'NCBITaxon:7399', 'label': 'Hymenoptera'}, 'homepage': 'http://hymao.org', 'domain': 'anatomy', 'layout': 'ontology_detail', 'id': 'hao', 'title': 'Hymenoptera Anatomy Ontology'}
+{'description': 'This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology.', 'products': [{'id': 'hom.owl'}], 'layout': 'ontology_detail', 'contact': {'email': 'julien.roux@unil.ch', 'label': ''}, 'homepage': 'http://bioinfo.unil.ch', 'id': 'hom', 'title': 'homology_ontology'}
+{'alternativePrefix': 'HPO', 'taxon': {'id': 'NCBITaxon:9606', 'label': 'Homo sapiens'}, 'contact': {'email': 'peter.robinson@charite.de', 'label': 'Peter Robinson'}, 'homepage': 'http://www.human-phenotype-ontology.org/', 'domain': 'phenotype', 'description': 'The Human Phenotype Ontology is being developed to provide a structured and controlled vocabulary for the phenotypic features encountered in human hereditary and other disease. Our goal is to provide resource for the computational analysis of the human phenome, with a current focus on monogenic diseases listed in the Online Mendelian Inheritance in Man (OMIM) database, for which annotations are also provided.', 'products': [{'id': 'hp.owl'}, {'id': 'hp.obo'}], 'title': 'human phenotype ontology', 'tracker': 'https://sourceforge.net/p/obo/human-phenotype-requests/', 'termgenie': 'http://hp.termgenie,org', 'id': 'hp', 'layout': 'ontology_detail'}
+{'description': 'The Information Artifact Ontology (IAO) is a new ontology of information entities, originally driven by work by the OBI digital entity and realizable information entity branch. ', 'contact': {'email': 'alanruttenberg@gmail.com', 'label': 'Alan Ruttenberg'}, 'homepage': 'http://purl.obolibrary.org/obo/iao', 'domain': 'information', 'products': [{'id': 'iao.owl'}, {'id': 'iao/d-acts.owl', 'title': 'ontology of document acts', 'contact': {'email': 'mbrochhausen@gmail.com', 'label': 'Mathias Brochhausen'}, 'description': 'An ontology based on a theory of document acts describing what people can do with documents'}], 'page': 'http://code.google.com/p/information-artifact-ontology/', 'tracker': 'http://code.google.com/p/information-artifact-ontology/issues/list', 'layout': 'ontology_detail', 'id': 'iao', 'title': 'Information Artifact Ontology'}
+{'contact': {'email': 'Lindsay.Cowell@utsouthwestern.edu', 'label': 'Lindsay Cowell'}, 'taxon': {'id': 'NCBITaxon:9606', 'label': 'Homo sapiens'}, 'homepage': 'http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology', 'domain': 'health', 'products': [{'id': 'ido.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://code.google.com/p/infectious-disease-ontology/issues/list', 'id': 'ido', 'title': 'Infectious disease'}
+{'description': 'An application ontology to cover all aspects of malaria (clinical, epidemiological, biological, etc) as well as the intervention attempts to control it.', 'contact': {'email': 'topalis@imbb.forth.gr', 'label': 'Pantelis Topalis'}, 'homepage': 'http://anobase.vectorbase.org', 'domain': 'health', 'products': [{'id': 'idomal.owl'}], 'layout': 'ontology_detail', 'id': 'idomal', 'title': 'Malaria Ontology'}
+{'description': 'The Kinetic Simulation Algorithm Ontology (KiSAO) classifies algorithms available for the simulation of models in biology, and their characteristics and the parameters required for their use.', 'contact': {'email': 'lenov@ebi.ac.uk', 'label': 'Nicolas Le Novere'}, 'homepage': 'http://biomodels.net/kisao', 'domain': 'algorithms', 'products': [{'id': 'kisao.owl'}], 'layout': 'ontology_detail', 'tracker': 'https://sourceforge.net/tracker/?group_id=293617', 'id': 'kisao', 'title': 'Kinetic Simulation Algorithm Ontology'}
+{'description': 'The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features.', 'contact': {'email': 'n.lenovere@gmail.com', 'label': 'Nicolas Le Novere'}, 'homepage': 'http://sourceforge.net/projects/mamo-ontology/', 'products': [{'id': 'mamo.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://sourceforge.net/p/mamo-ontology/tickets/', 'id': 'mamo', 'title': 'Mathematical modeling ontology'}
+{'products': [{'id': 'mf.owl'}], 'layout': 'ontology_detail', 'contact': {'email': 'hastings@ebi.ac.uk', 'label': 'Janna Hastings'}, 'tracker': 'https://code.google.com/p/mental-functioning-ontology/issues/list', 'homepage': 'https://code.google.com/p/mental-functioning-ontology/', 'id': 'mf', 'title': 'Mental Functioning Ontology'}
+{'description': 'A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.', 'contact': {'email': 'Thorsten.Henrich@embl-heidelberg.de', 'label': 'Thorsten Henrich'}, 'taxon': {'id': 'NCBITaxon:8089', 'label': 'Oryzias'}, 'domain': 'anatomy', 'products': [{'id': 'mfo.owl'}], 'layout': 'ontology_detail', 'id': 'mfo', 'title': 'Medaka fish anatomy and development'}
+{'description': 'An ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings, designed to support interdisciplinary research by providing unified annotations.', 'contact': {'email': 'hastings@ebi.ac.uk', 'label': 'Janna Hastings'}, 'homepage': 'https://code.google.com/p/emotion-ontology/', 'domain': 'health', 'products': [{'id': 'mfoem.owl'}], 'layout': 'ontology_detail', 'tracker': 'https://code.google.com/p/emotion-ontology/issues/list', 'id': 'mfoem', 'title': 'Emotion Ontology'}
+{'description': 'A structured controlled vocabulary for the annotation of experiments concerned with protein-protein interactions. Developed by the HUPO Proteomics Standards Initiative.', 'contact': {'email': 'Henning.Hermjakob@ebi.ac.uk', 'label': 'Henning Hermjakob'}, 'homepage': 'http://psidev.sf.net', 'domain': 'experiments', 'products': [{'id': 'mi.owl'}], 'page': 'http://psidev.sourceforge.net/mi/xml/doc/user/index.html', 'layout': 'ontology_detail', 'id': 'mi', 'title': 'Protein-protein interaction'}
+{'s': [{'id': 'miapa.owl'}], 'description': 'The MIAPA ontology is an application ontology to formalize annotation of phylogenetic data according to the emerging Minimum Information About a Phylogenetic Analysis (MIAPA) metadata reporting standard.', 'contact': {'email': 'hlapp@drycafe.net', 'label': 'Hilamr Lapp'}, 'homepage': 'http://www.evoio.org/wiki/MIAPA', 'layout': 'ontology_detail', 'tracker': 'https://github.com/miapa/miapa/issues', 'id': 'miapa', 'title': 'MIAPA Ontology'}
+{'description': 'microRNA Ontology (miRNAO) is an application ontology and it has been developed in order to drive miRNA databases.', 'products': [{'id': 'mirnao.owl'}], 'layout': 'ontology_detail', 'contact': {'email': 'vdritsou@imbb.forth.gr', 'label': 'Vicky Dritsou'}, 'homepage': 'http://code.google.com/p/mirna-ontology/', 'id': 'mirnao', 'title': 'microRNA Ontology'}
+{'description': 'Application ontology for entities related to insecticide resistance in mosquitos', 'contact': {'email': 'louis@imbb.forth.gr', 'label': 'C. Louis'}, 'taxon': {'id': 'NCBITaxon:44484', 'label': 'Anopheles'}, 'homepage': 'http://anobase.vectorbase.org', 'domain': 'environment', 'products': [{'id': 'miro.owl'}], 'layout': 'ontology_detail', 'id': 'miro', 'title': 'Mosquito insecticide resistance'}
+{'description': 'The Epidemiology Ontology is an ontology designed to support the semantic annotation of epidemiology resources. It is being developed under the EU-funded EPIWORK project, a multidisciplinary research effort which aims at increasing the amount of epidemiological data available, improving disease surveillance systems, and promoting the collaboration among epidemiological researchers. The EO is integrated into NERO (Network of Epidemiology Related Ontologies), a collection of existing ontologies that supports the semantic annotation of epidemiology resources contained in the Epidemic Marketplace (EM), a platform for sharing resources and knowledge within the Epidemiology community. NERO currently includes thirteen external ontologies (the majority are OBO or OBO candidate ontologies) which already provide a high coverage of most epidemiology related areas. As such, the EPO focuses on neglected/highly specific areas of epidemiology and will articulate with other OBO ontologies as needed.', 'contact': {'email': 'shimoyama@mcw.edu', 'label': 'Mary Shimoyama'}, 'homepage': 'https://code.google.com/p/epidemiology-ontology/', 'domain': 'clinical', 'products': [{'id': 'epo.owl'}], 'layout': 'ontology_detail', 'id': 'epo', 'title': 'Epidemiology Ontology'}
+{'description': 'Concepts, definitions, terms, and resources for standardized description of a microarray experiment in support of MAGE v.1. The MGED ontology is divided into the MGED Core ontology which is intended to be stable and in synch with MAGE v.1; and the MGED Extended ontology which adds further associations and classes not found in MAGE v.1.', 'contact': {'email': 'stoeckrt@pcbi.upenn.edu', 'label': 'Chris Stoeckert'}, 'homepage': 'http://mged.sourceforge.net/ontologies/MGEDontology.php', 'domain': 'experiments', 'products': [{'id': 'mo.owl'}], 'page': 'http://mged.sourceforge.net/software/downloads.php', 'layout': 'ontology_detail', 'id': 'mo', 'title': 'Microarray experimental conditions'}
+{'description': 'PSI-MOD is an ontology consisting of terms that describe protein chemical modifications, logically linked by an is_a relationship in such a way as to form a direct acyclic graph (DAG). The PSI-MOD ontology has more than 45 top-level nodes, and provides alternative hierarchical paths for classifying protein modifications either by the molecular structure of the modification, or by the amino acid residue that is modified.', 'contact': {'email': 'hhe@ebi.ac.uk', 'label': 'Henning Hermjakob'}, 'homepage': 'http://psidev.info/index.php?q=node/104', 'domain': 'proteins', 'products': [{'id': 'mod.owl'}], 'layout': 'ontology_detail', 'id': 'mod', 'title': 'Protein modification'}
+{'description': 'The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data.', 'taxon': {'id': 'NCBITaxon:10088', 'label': 'Mus'}, 'contact': {'email': 'pheno@jax.org', 'label': 'JAX phenotype list'}, 'homepage': 'http://www.informatics.jax.org/searches/MP_form.shtml', 'domain': 'phenotype', 'products': [{'id': 'mp.owl'}, {'id': 'mp.obo'}], 'title': 'Mammalian phenotype', 'tracker': 'https://sourceforge.net/p/obo/mammalian-phenotype-requests/', 'termgenie': 'http://mp.termgenie.org', 'id': 'mp', 'layout': 'ontology_detail'}
+{'description': 'A structured controlled vocabulary of mutant and transgenic mouse pathology phenotypes', 'contact': {'email': 'PS@mole.bio.cam.ac.uk', 'label': 'Paul Schofield'}, 'taxon': {'id': 'NCBITaxon:10088', 'label': 'Mus'}, 'homepage': 'http://www.pathbase.net', 'domain': 'health', 'products': [{'id': 'mpath.owl'}], 'layout': 'ontology_detail', 'id': 'mpath', 'title': 'Mouse pathology'}
+{'description': 'A structured controlled vocabulary for the annotation of experiments concerned with proteomics mass spectrometry. Developed by the HUPO Proteomics Standards Initiative.', 'contact': {'email': 'luisa@ebi.ac.uk', 'label': 'Luisa Montecchi'}, 'homepage': 'http://www.psidev.info/index.php?q=node/257', 'domain': 'experiments', 'products': [{'id': 'ms.owl'}], 'page': 'http://www.psidev.info/index.php?q=node/257', 'layout': 'ontology_detail', 'id': 'ms', 'title': 'Mass spectrometry'}
+{'contact': {'email': 'geg18@aber.ac.uk', 'label': 'George Gkoutos'}, 'homepage': 'http://code.google.com/p/behavior-ontology', 'domain': 'behavior', 'products': [{'id': 'nbo.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://code.google.com/p/behavior-ontology/issues/list', 'id': 'nbo', 'title': 'Neuro Behavior Ontology'}
+{'description': 'The NCBITaxon ontology is an automatic translation of the NCBI taxonomy (a taxonomic classification of living organisms and associated artifacts) database into obo/owl.', 'contact': {'email': 'obo-taxonomy@lists.sourceforge.net', 'label': 'obo-taxonomy-list'}, 'homepage': 'http://www.obofoundry.org/wiki/index.php/NCBITaxon:Main_Page', 'wasDerivedFrom': 'ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat', 'domain': 'taxonomy', 'source': 'http://www.ncbi.nlm.nih.gov/taxonomy', 'createdWith': 'http://owltools.googlecode.com/', 'products': [{'id': 'ncbitaxon.owl'}, {'id': 'ncbitaxon/subsets/taxslim.owl'}], 'layout': 'ontology_detail', 'jobs': [{'type': 'ReleaseBuild', 'id': 'http://build.berkeleybop.org/job/build-ncbitaxon/'}], 'preferredPrefix': 'NCBITaxon', 'id': 'ncbitaxon', 'title': 'NCBI organismal classification', 'page': 'http://www.ncbi.nlm.nih.gov/taxonomy'}
+{'description': 'Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation.', 'contact': {'email': 'schober@imbi.uni-freiburg.de', 'label': 'Schober Daniel'}, 'homepage': 'http://msi-ontology.sourceforge.net/', 'domain': 'experiments', 'products': [{'id': 'nmr.owl'}], 'page': 'http://msi-ontology.sourceforge.net/ontology/NMR.owlDocument.doc', 'layout': 'ontology_detail', 'id': 'nmr', 'title': 'NMR-instrument specific component of metabolomics investigations'}
+{'description': 'The Ontology of Adverse Events (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles. ', 'contact': {'email': 'yongqunh@med.umich.edu', 'label': 'Yongqunh He'}, 'homepage': 'http://www.oae-ontology.org', 'domain': 'adverse events, health', 'products': [{'id': 'oae.owl'}], 'layout': 'ontology_detail', 'id': 'oae', 'title': 'Ontology of Adverse Events'}
+{'description': 'A collection of biological attributes (traits) covering all kingdoms of life. Incorporates VT (vertebrate trait ontology) and TO (plant trait ontology). Extends PATO.', 'contact': {'email': 'cjmungall@lbl.gov', 'label': 'Chris Mungall'}, 'homepage': 'http://wiki.geneontology.org/index.php/Extensions/x-attribute', 'domain': 'phenotype', 'products': [{'id': 'oba.owl'}], 'page': 'http://wiki.geneontology.org/index.php/Extensions/x-attribute', 'layout': 'ontology_detail', 'id': 'oba', 'title': 'Ontology of Biological Attributes'}
+{'description': 'The Ontology for Biomedical Investigations (OBI) project is developing an integrated ontology for the description of life-science and clinical investigations', 'contact': {'email': 'bpeters@liai.org', 'label': 'Bjoern Peters'}, 'homepage': 'http://purl.obofoundry.org/obo/obi', 'domain': 'experiments', 'license': 'https://creativecommons.org/licenses/by/3.0/', 'products': [{'id': 'obi.owl'}], 'title': 'Ontology for Biomedical Investigations', 'tracker': 'http://sourceforge.net/p/obi/obi-terms/', 'id': 'obi', 'layout': 'ontology_detail', 'page': 'http://obi-ontology.org/page/Technical_Reports'}
+{'description': 'Using BFO as its framwork, OGI formalized the genomic element by defining an upper class \'genetic interval\'. The definition of \'genetic interval\' is "the spatial continuous physical entity which contains ordered genomic sets(DNA, RNA, Allele, Marker,etc.) between and including two points (Nucleic_Acid_Base_Residue) on a chromosome or RNA molecule which must have a liner primary sequence structure.', 'products': [{'id': 'ogi.owl'}], 'layout': 'ontology_detail', 'tracker': 'https://code.google.com/p/ontology-for-genetic-interval/issues/list', 'homepage': 'https://code.google.com/p/ontology-for-genetic-interval/', 'id': 'ogi', 'title': 'Ontology for genetic interval'}
+{'description': "Ontology for Genetic Susceptibility Factor (OGSF) is an application ontology to model/represent the notion of genetic susceptibility to a specific disease or an adverse event or a pathological biological process. It is developed using BFO2.0's framwork. The ontology is under the domain of genetic epidemiology.", 'products': [{'id': 'ogsf.owl'}], 'layout': 'ontology_detail', 'tracker': 'https://code.google.com/p/ogsf/issues/list', 'homepage': 'https://code.google.com/p/ogsf/', 'id': 'ogsf', 'title': 'Ontology of Genetic Susceptibility Factor'}
+{'description': 'This ontology covers the domain of social entities that are related to health care, such as demographic information (social entities for recording gender (but not sex) and marital status, for example) and the roles of various individuals and organizations (patient, hospital,etc.)', 'taxon': {'id': 'NCBITaxon:9606', 'label': 'Homo sapiens'}, 'contact': {'email': 'hoganwr@gmail.com', 'label': 'Bill Hogan'}, 'domain': 'medicine', 'products': [{'id': 'omrse.owl'}], 'page': 'http://code.google.com/p/omrse/', 'layout': 'ontology_detail', 'id': 'omrse', 'title': 'Ontology of Medically Related Social Entities'}
+{'description': 'The Ontology for Parasite LifeCycle (OPL) is designed to serve as a reference ontology for parasite life cycle stages. It models the life cycle stage details of various parasites, including Trypanosoma sp., Leishmania major, and Plasmodium sp., etc. In addition to life cycle stages, the ontology also models necessary contextual details, such as host information, vector information, and anatomical location', 'contact': {'email': 'preets79@gmail.com', 'label': 'Priti Parikh'}, 'homepage': 'http://code.google.com/p/opl-ontology/', 'ts': [{'id': 'opl.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://code.google.com/p/opl-ontology/issues/list', 'id': 'opl', 'title': 'Ontology for Parasite LifeCycle'}
+{'description': 'A biomedical ontology in the domain of vaccine adverse events. OVAE is an extension of the Ontology of Adverse Event (OAE) and uses the vaccine information imported from the Vaccine Ontology (VO)', 'products': [{'id': 'ovae.owl'}], 'layout': 'ontology_detail', 'contact': {'email': 'yongqunh@med.umich.edu', 'label': 'Yongqunh He'}, 'homepage': 'http://www.violinet.org/ovae/', 'id': 'ovae', 'title': 'Ontology of Vaccine Adverse Events'}
+{'id': 'ovao', 'products': [{'id': 'ovao.owl'}], 'layout': 'ontology_detail', 'tracker': 'https://code.google.com/p/ovae/issues/list'}
+{'description': 'Phenotypic qualities (properties). This ontology can be used in conjunction with other ontologies such as GO or anatomical ontologies to refer to phenotypes. Examples of qualities are red, ectopic, high temperature, fused, small, edematous and arrested.', 'contact': {'email': 'geg18@aber.ac.uk', 'label': 'George Gkoutos'}, 'homepage': 'http://obofoundry.org/wiki/index.php/PATO:Main_Page', 'tracker': 'https://github.com/gkoutos/pato/issues', 'domain': 'phenotype', 'products': [{'id': 'pato.owl'}, {'id': 'pato.obo'}], 'title': 'Phenotypic quality', 'jobs': [{'type': 'DryRunBuild', 'id': 'http://build.berkeleybop.org/job/build-pato'}], 'id': 'pato', 'layout': 'ontology_detail', 'repository': 'https://github.com/gkoutos/pato'}
+{'description': 'The Population and Community Ontology (PCO) describes material entities, qualities, and processes related to collections of interacting organisms such as populations and communities. It is taxon neutral, and can be used for any species, including humans.', 'contact': {'email': 'rwalls2008@gmail.com', 'label': 'Ramona Walls'}, 'homepage': 'http://code.google.com/p/popcomm-ontology/', 'products': [{'id': 'pco.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://code.google.com/p/popcomm-ontology/issues/list', 'id': 'pco', 'title': 'Population and Community Ontology'}
+{'description': 'The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data. The PO is under active development to expand to encompass terms and annotations from all plants. ', 'taxon': {'id': 'NCBITaxon:33090', 'label': 'Viridiplantae'}, 'contact': {'email': 'jaiswalp@science.oregonstate.edu', 'label': 'Pankaj Jaiswal'}, 'homepage': 'http://www.plantontology.org', 'domain': 'anatomy and development', 'products': [{'id': 'po.owl'}], 'page': 'http://www.plantontology.org/docs/docs.html', 'layout': 'ontology_detail', 'id': 'po', 'title': 'Plant Ontology'}
+{'description': 'The Porifera Ontology (PORO) is an ontology covering the anatomy of the taxon Porifera (sponges)', 'contact': {'email': 'thacker@uab.edu', 'label': 'Bob Thacker'}, 'taxon': {'id': 'NCBITaxon:6040', 'label': 'Porifera'}, 'homepage': 'http://purl.obolibrary.org/obo/poro', 'domain': 'anatomy', 'products': [{'id': 'poro.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://code.google.com/p/porifera-ontology/issues/list', 'id': 'poro', 'title': 'Porifera Ontology'}
+{'description': 'PRotein Ontology (PRO) has been designed to describe the relationships of proteins and protein evolutionary classes (ontology for ProEvo), to delineate the multiple protein forms of a gene locus (ontology for protein forms), and to interconnect existing ontologies', 'contact': {'email': 'dan5@georgetown.edu', 'label': 'Darren Natale'}, 'homepage': 'http://proconsortium.org', 'domain': 'proteins', 'documentation': 'ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt', 'layout': 'ontology_detail', 'tracker': 'http://sourceforge.net/tracker/?group_id=266825&atid=1135711', 'products': [{'id': 'pr.owl'}], 'id': 'pr', 'title': 'PRotein Ontology (PRO)'}
+{'description': 'The Pathway Ontology is a controlled vocabulary for pathways that provides standard terms for the annotation of gene products. The Pathway Ontology is under development at <a href="http://rgd.mcw.edu">Rat Genome Database</a>.', 'contact': {'email': 'vpetri@mcw.edu', 'label': 'Victoria Petri'}, 'homepage': 'http://rgd.mcw.edu/tools/ontology/ont_search.cgi', 'domain': 'biological process', 'products': [{'id': 'pw.owl'}], 'page': 'ftp://rgd.mcw.edu/pub/data_release/PW_Introduction.doc', 'layout': 'ontology_detail', 'id': 'pw', 'title': 'Pathway ontology'}
+{'description': 'For the description of covalent bonds in proteins.', 'contact': {'email': 'john.garavelli@ebi.ac.uk', 'label': 'John Garavelli'}, 'homepage': 'http://www.ebi.ac.uk/RESID/', 'domain': 'proteins', 'products': [{'id': 'resid.owl'}], 'layout': 'ontology_detail', 'id': 'resid', 'title': 'Protein covalent bond'}
+{'description': 'REX is an ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time. REX includes both microscopic processes (involving molecular entities or subatomic particles) and macroscopic processes. Some biochemical processes from Gene Ontology (GO Biological process) can be described as instances of REX.', 'products': [{'id': 'rex.owl'}], 'layout': 'ontology_detail', 'contact': {'email': 'hastings@ebi.ac.uk', 'label': 'Janna Hastings'}, 'id': 'rex', 'title': 'Physico-chemical process'}
+{'products': [{'id': 'rnao.owl'}], 'layout': 'ontology_detail', 'contact': {'email': 'BatchelorC@rsc.org', 'label': 'Colin Batchelor'}, 'homepage': 'http://code.google.com/p/rnao/', 'id': 'rnao', 'domain': 'molecular structure', 'title': 'RNA ontology'}
+{'mailing_list': 'https://lists.sourceforge.net/lists/listinfo/obo-relations', 'jobs': [{'type': 'DryRunBuild', 'id': 'http://build.berkeleybop.org/job/build-ro'}], 'domain': 'relations', 'canonical': 'ro.owl', 'products': [{'id': 'ro.owl'}, {'id': 'ro.obo'}, {'id': 'ro/ro-interaction.owl'}], 'title': 'Relations Ontology', 'tracker': 'https://code.google.com/p/obo-relations/issues/list', 'id': 'ro', 'layout': 'ontology_detail'}
+{'description': 'Ontology of rat strains', 'contact': {'email': 'rnigam@mcw.edu', 'label': 'Rajni Nigam'}, 'homepage': 'http://rgd.mcw.edu/', 'publications': [{'id': 'http://www.ncbi.nlm.nih.gov/pubmed/24267899'}], 'products': [{'id': 'rs.owl'}], 'layout': 'ontology_detail', 'id': 'rs', 'title': 'Rat Strain Ontology'}
+{'description': 'The Systems Biology Ontology is a set of controlled, relational vocabularies of terms commonly used in Systems Biology, and in particular in computational modeling.', 'contact': {'email': 'lenov@ebi.ac.uk', 'label': 'Nicolas Le Novere'}, 'homepage': 'http://www.ebi.ac.uk/sbo/', 'domain': 'biochemistry', 'products': [{'id': 'sbo.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://sourceforge.net/tracker/?group_id=174625&atid=871591', 'id': 'sbo', 'title': 'Systems Biology'}
+{'description': 'A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments, such as, and including, gel electrophoresis, column chromatography, capillary electrophoresis, centrifugation and so on. Developed jointly by the HUPO Proteomics Standards Initiative and The Metabolomics Standards Initiative.', 'contact': {'email': 'psidev-gps-dev@lists.sourceforge.net', 'label': 'SEP developers via the PSI and MSI mailing lists'}, 'homepage': 'http://psidev.info/index.php?q=node/312', 'domain': 'provenance', 'products': [{'id': 'sep.owl'}], 'page': 'http://psidev.info/index.php?q=node/312', 'layout': 'ontology_detail', 'id': 'sep', 'title': 'Sample processing and separation techniques'}
+{'description': 'The Sequence Ontology provides a structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases. <a href="http://obo.cvs.sourceforge.net/*checkout*/song/ontology/sofa.obo">SOFA</a> is a minimal version of SO for use in data exchange.', 'contact': {'email': 'song-devel@lists.sourceforge.net', 'label': 'SONG developers'}, 'homepage': 'http://song.sourceforge.net/', 'domain': 'biological sequence', 'products': [{'id': 'so.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://sourceforge.net/tracker/?group_id=72703&atid=810408', 'id': 'so', 'title': 'Sequence types and features'}
+{'description': 'An ontology for spider comparative biology including anatomical parts (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web, borrow).', 'contact': {'email': 'ramirez@macn.gov.ar', 'label': 'Martin Ramirez'}, 'taxon': {'id': 'NCBITaxon:6893', 'label': 'spiders'}, 'homepage': 'http://research.amnh.org/atol/files/', 'domain': 'anatomy', 'products': [{'id': 'spd.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://sourceforge.net/tracker/?group_id=76834&atid=977401', 'id': 'spd', 'title': 'Spider Ontology'}
+{'products': [{'id': 'swo.owl'}], 'layout': 'ontology_detail', 'contact': {'email': 'malone@ebi.ac.uk', 'label': 'James Malone'}, 'homepage': 'www.ebi.ac.uk/efo/swo', 'id': 'swo', 'title': 'Software ontology'}
+{'description': 'The symptom ontology was designed around the guiding concept of a symptom being: "A perceived change in function, sensation or appearance reported by a patient indicative of a disease". Understanding the close relationship of Signs and Symptoms, where Signs are the objective observation of an illness, the Symptom Ontology will work to broaden it\'s scope to capture and document in a more robust manor these two sets of terms. Understanding that at times, the same term may be both a Sign and a Symptom', 'contact': {'email': 'lynn.schriml@gmail.com', 'label': 'Lynn Schriml'}, 'taxon': {'id': 'NCBITaxon:9606', 'label': 'Homo sapiens'}, 'homepage': 'http://symptomontologywiki.igs.umaryland.edu/mediawiki/index.php/Main_Page', 'domain': 'health', 'products': [{'id': 'symp.owl'}], 'layout': 'ontology_detail', 'id': 'symp', 'title': 'Symptom Ontology'}
+{'description': 'The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>', 'contact': {'email': 'dsonensh@odu.edu', 'label': 'Daniel Sonenshine'}, 'taxon': {'id': 'NCBITaxon:6939', 'label': 'Ixodidae'}, 'homepage': 'http://anobase.vectorbase.org', 'domain': 'anatomy', 'ts': [{'id': 'tads.owl'}], 'layout': 'ontology_detail', 'id': 'tads', 'title': 'Tick gross anatomy'}
+{'description': 'Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa', 'contact': {'email': 'wasila.dahdul@usd.edu', 'label': 'Wasila Dahdul'}, 'taxon': {'id': 'NCBITaxon:32443', 'label': 'Teleostei'}, 'homepage': 'https://www.nescent.org/phenoscape/Main_Page', 'domain': 'anatomy', 'products': [{'id': 'tao.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://sourceforge.net/tracker/?group_id=76834&atid=994764', 'id': 'tao', 'title': 'Teleost Anatomy Ontology'}
+{'description': 'A vocabulary of taxonomic ranks intended to replace the sets of rank terms found in the Teleost Taxonomy Ontology, the OBO translation of the NCBI taxonomy and similar OBO taxonomy ontologies.  It provides terms for taxonomic ranks drawn from both the NCBI taxonomy database and from a rank vocabulary developed for the TDWG biodiversity information standards group.  Cross references to appearances of each term in each source are provided.  Consistent with its intended use as a vocabulary of labels, there is no relation specifying an ordering of the rank terms.', 'contact': {'email': 'peteremidford@yahoo.com', 'label': 'Peter Midford'}, 'homepage': 'https://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary', 'domain': 'taxonomy', 'products': [{'id': 'taxrank.owl'}], 'layout': 'ontology_detail', 'id': 'taxrank', 'title': 'Taxonomic rank vocabulary'}
+{'description': 'A structured controlled vocabulary of the anatomy of mosquitoes.', 'contact': {'email': 'louis@imbb.forth.gr', 'label': 'C. Louis'}, 'taxon': {'id': 'NCBITaxon:44484', 'label': 'Anopheles'}, 'homepage': 'http://anobase.vectorbase.org', 'domain': 'anatomy', 'products': [{'id': 'tgma.owl'}], 'layout': 'ontology_detail', 'id': 'tgma', 'title': 'Mosquito gross anatomy'}
+{'description': 'A controlled vocabulary of describe phenotypic traits in plants. Each trait is a distinguishable feature, characteristic, quality or phenotypic feature of a developing or mature plant.', 'taxon': {'id': 'NCBITaxon:33090', 'label': 'Viridiplantae'}, 'contact': {'email': 'jaiswalp@science.oregonstate.edu', 'label': 'Pankaj Jaiswal'}, 'homepage': 'http://www.gramene.org/plant_ontology/', 'domain': 'phenotype', 'products': [{'id': 'to.owl'}], 'page': 'http://www.gramene.org/plant_ontology/index.html#to', 'tracker': 'https://github.com/Planteome/plant-trait-ontology/issues', 'layout': 'ontology_detail', 'id': 'to', 'title': 'Plant Trait Ontology'}
+{'description': 'This vocabulary describes a process that is the means of how a pathogen is transmitted from one host, reservoir, or source to another host. This transmission may occur either directly or indirectly and may involve animate vectors or inanimate vehicles.  ', 'contact': {'email': 'diseaseontology-discussion@lists.sourceforge.net', 'label': 'Lynn Schriml'}, 'taxon': {'id': 'NCBITaxon:9606', 'label': 'Homo sapiens'}, 'homepage': 'http://diseaseontology.sourceforge.net/', 'domain': 'health', 'products': [{'id': 'trans.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://sourceforge.net/tracker/?&group_id=76834&atid=1037853', 'id': 'trans', 'title': 'Pathogen transmission'}
+{'description': "The Teleost taxonomy ontology is being used to facilitate annotation of phenotypes, particularly for taxa that are not covered by NCBI because no submissions of molecular data have been made. Taxonomy ontologies can also be valuable in annotating legacy data, where authors make phenotype or ecological assertions (e.g., host-parasite associations) that refer to groups that are reorganized or no longer recognized. The taxonomy ontology serves as the source of taxa for our project's use for identifying evolutionary changes that match the phenotype of a zebrafish mutant.", 'contact': {'email': 'peteremidford@yahoo.com', 'label': 'Peter Midford'}, 'taxon': {'id': 'NCBITaxon:32443', 'label': 'Teleostei'}, 'homepage': 'https://www.nescent.org/phenoscape/Main_Page', 'domain': 'taxonomy', 'products': [{'id': 'tto.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://sourceforge.net/tracker/?group_id=76834&atid=1046550', 'id': 'tto', 'title': 'Teleost taxonomy'}
+{'mailing_list': 'https://lists.sourceforge.net/lists/listinfo/obo-anatomy', 'depicted_by': 'http://uberon.github.io/images/u-logo.jpg', 'contact': {'email': 'cjmungall@lbl.gov', 'label': 'Chris Mungall'}, 'homepage': 'http://uberon.org', 'twitter': 'uberanat', 'domain': 'anatomy', 'publications': [{'id': 'http://www.ncbi.nlm.nih.gov/pubmed/22293552'}, {'title': 'Uberon, an integrative multi-species anatomy ontology'}], 'products': [{'type': 'owl:Ontology', 'id': 'uberon.owl', 'title': 'Uberon', 'is_canonical': True}, {'type': 'owl:Ontology', 'id': 'uberon/ext.owl', 'description': 'Uberon extended', 'title': 'Uberon edition that includes subsets of other ontologies', 'mireots_from': 'ncbitaxon'}, {'type': 'obo-basic-ontology', 'id': 'uberon/basic.obo', 'title': 'Uberon basic', 'format': 'obo', 'description': 'Uberon edition that excludes external ontologies and most relations'}, {'connects': [{'id': 'uberon'}, {'id': 'zfa'}], 'description': 'Taxonomic equivalence axioms connecting zebrafish-specific classes to generic uberon counterparts', 'page': 'https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies', 'type': 'BridgeOntology', 'id': 'uberon/bridge/uberon-bridge-to-zfa.owl', 'title': 'Uberon bridge to ZFA'}, {'connects': [{'id': 'uberon'}, {'id': 'ma'}], 'description': 'Taxonomic equivalence axioms connecting adult mouse specific classes to generic uberon counterparts', 'page': 'https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies', 'type': 'BridgeOntology', 'id': 'uberon/bridge/uberon-bridge-to-ma.owl', 'title': 'Uberon bridge to MA'}, {'mireots_from': 'ehdaa2', 'page': 'https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies', 'taxon': 'Metazoa', 'type': 'MergedOntology', 'id': 'uberon/composite-metazoan.owl', 'title': 'Uberon composite metazoan ontology'}, {'mireots_from': 'ehdaa2', 'page': 'https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies', 'taxon': 'Metazoa', 'type': 'MergedOntology', 'id': 'uberon/composite-vertebrate.owl', 'title': 'Uberon composite vertebrate ontology'}], 'page': 'http://en.wikipedia.org/wiki/Uberon', 'tracker': 'https://github.com/obophenotype/uberon/issues', 'id': 'uberon', 'layout': 'ontology_detail', 'repository': 'https://github.com/obophenotype/uberon', 'releases': 'http://purl.obolibrary.org/obo/uberon/releases/', 'description': 'Uberon is an integrated cross-species anatomy ontology representing a variety of entities classified according to traditional anatomical criteria such as structure, function and developmental lineage. The ontology includes comprehensive relationships to taxon-specific anatomical ontologies, allowing integration of functional, phenotype and expression data', 'google_plus': '+UberonOrg', 'taxon': {'id': 'NCBITaxon:33208', 'label': 'Metazoa'}, 'redirects': [{'match': 'releases/', 'url': 'http://svn.code.sf.net/p/obo/svn/uberon/releases/'}, {'match': '', 'url': 'http://berkeleybop.org/ontologies/uberon/'}], 'exampleClass': 'UBERON_0002046', 'canonical': 'uberon.owl', 'type': 'owl:Ontology', 'dependencies': [{'subset': 'uberon/go_import.owl', 'id': 'go'}, {'subset': 'uberon/cl_import.owl', 'id': 'cl'}, {'subset': 'uberon/chebi_import.owl', 'id': 'chebi'}, {'subset': 'uberon/pr_import.owl', 'id': 'pr'}], 'label': 'Uberon', 'title': 'Uberon multi-species anatomy ontology'}
+{'description': 'Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations.', 'products': [{'id': 'vario.owl'}], 'layout': 'ontology_detail', 'homepage': 'http://variationontology.org', 'id': 'vario', 'title': 'Variation Ontology'}
+{'id': 'vhog', 'products': [{'id': 'vhog.owl'}], 'layout': 'ontology_detail'}
+{'description': 'Vertebrate skeletal anatomy ontology. ', 'taxon': {'id': 'NCBITaxon:7742', 'label': 'Vertebrata'}, 'contact': {'email': 'wasila.dahdul@usd.edu', 'label': 'Wasila Dahdul'}, 'homepage': 'https://www.nescent.org/phenoscape/Main_Page', 'domain': 'anatomy', 'products': [{'id': 'vsao.owl'}], 'page': 'https://www.phenoscape.org/wiki/Skeletal_Anatomy_Jamboree', 'tracker': 'https://sourceforge.net/tracker/?group_id=76834&atid=2257941', 'layout': 'ontology_detail', 'id': 'vsao', 'title': 'Vertebrate Skeletal Anatomy Ontology'}
+{'id': 'vto', 'products': [{'id': 'vto.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://purl.obolibrary.org/obo/vto/tracker'}
+{'description': 'A structured controlled vocabulary of the anatomy of <i>Caenorhabditis elegans</i>.', 'contact': {'email': 'raymond@caltech.edu', 'label': 'Raymond Lee'}, 'taxon': {'id': 'NCBITaxon:6237', 'label': 'Caenorhabditis'}, 'homepage': 'http://www.wormbase.org/', 'domain': 'anatomy', 'products': [{'id': 'wbbt.owl'}], 'layout': 'ontology_detail', 'tracker': 'https://sourceforge.net/tracker/?group_id=76834&atid=1069773', 'id': 'wbbt', 'title': 'C. elegans gross anatomy'}
+{'description': 'A structured controlled vocabulary of the development of <i>Caenorhabditis elegans</i>.', 'contact': {'email': 'wchen@its.caltech.edu', 'label': 'Wen J. Chen'}, 'taxon': {'id': 'NCBITaxon:6237', 'label': 'Caenorhabditis'}, 'homepage': 'http://www.wormbase.org/', 'domain': 'anatomy', 'products': [{'id': 'wbls.owl'}], 'layout': 'ontology_detail', 'id': 'wbls', 'title': 'C. elegans development'}
+{'description': 'A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes', 'contact': {'email': 'garys@caltech.edu', 'label': 'Gary Schindelman'}, 'taxon': {'id': 'NCBITaxon:6237', 'label': 'Caenorhabditis'}, 'homepage': 'http://www.wormbase.org/', 'domain': 'phenotype', 'products': [{'id': 'wbphenotype.owl'}], 'layout': 'ontology_detail', 'id': 'wbphenotype', 'title': 'C. elegans phenotype'}
+{'description': 'A structured controlled vocabulary of the anatomy and development of the African clawed frog (<i>Xenopus laevis</i>).', 'taxon': {'id': 'NCBITaxon:8353', 'label': 'Xenopus'}, 'in_foundry': True, 'homepage': 'http://www.xenbase.org/anatomy/xao.do?method=display', 'domain': 'anatomy', 'products': [{'id': 'xao.owl'}], 'layout': 'ontology_detail', 'tracker': 'https://sourceforge.net/p/obo/xenopus-anatomy-xao-term-requests/', 'id': 'xao', 'title': 'Xenopus anatomy and development'}
+{'id': 'xso', 'products': [{'id': 'xso.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://sourceforge.net/tracker/?group_id=76834&atid=1127722'}
+{'description': 'A structured controlled vocabulary of the anatomy and development of the Zebrafish', 'contact': {'email': 'zfinadmin@zfin.org', 'label': 'ZFIN administrators'}, 'taxon': {'id': 'NCBITaxon:7954', 'label': 'Danio'}, 'in_foundry': True, 'homepage': 'http://zfin.org/zf_info/anatomy/dict/sum.html', 'domain': 'anatomy', 'products': [{'id': 'zfa.owl'}], 'layout': 'ontology_detail', 'tracker': 'http://sourceforge.net/tracker/?group_id=76834&atid=994726', 'id': 'zfa', 'title': 'Zebrafish anatomy and development'}
+{}
 ontologies:
+- contact: {email: J.Bard@ed.ac.uk, label: Jonathan Bard}
+  description: AEO is an ontology of anatomical structures that expands CARO, the
+    Common Anatomy Reference Ontology
+  domain: anatomy
+  homepage: http://www.obofoundry.org/wiki/index.php/AEO:Main_Page
+  id: aeo
+  layout: ontology_detail
+  products:
+  - {id: aeo.owl}
+  title: Anatomical Entity Ontology
+- contact: {email: mcourtot@gmail.com, label: Melanie Courtot}
+  description: The Adverse Event Reporting Ontology (AERO) is an ontology aimed at
+    supporting clinicians at the time of data entry, increasing quality and accuracy
+    of reported adverse events
+  domain: health
+  homepage: http://purl.obolibrary.org/obo/aero
+  id: aero
+  layout: ontology_detail
+  products:
+  - {id: aero.owl}
+  title: Adverse Event Reporting Ontology
+- contact: {email: maria@genome.stanford.edu, label: Maria Costanza}
+  description: A structured controlled vocabulary for the phenotypes of Ascomycete
+    fungi
+  domain: phenotype
+  homepage: 'http://www.yeastgenome.org/ '
+  id: apo
+  layout: ontology_detail
+  products:
+  - {id: apo.owl}
+  taxon: {id: 'NCBITaxon:4890', label: Ascomycota}
+  title: Ascomycete phenotype ontology
+- description: The Beta Cell Genomics Ontology (BCGO) is an application ontology built
+    for the beta cell genomics studies aiming to support database annotation, complicated
+    semantic queries, and automated cell type classification.
+  homepage: http://code.google.com/p/bcgo-ontology/
+  id: bcgo
+  layout: ontology_detail
+  products:
+  - {id: bcgo.owl}
+  title: Beta Cell Genomics Ontology
+  tracker: http://code.google.com/p/bcgo-ontology/issues/list
+- contact: {email: phismith@buffalo.edu, label: Barry Smith}
+  description: The upper level ontology upon which OBO Foundry ontologies are built.
+  domain: upper
+  homepage: http://ifomis.org/bfo/
+  id: bfo
+  layout: ontology_detail
+  page: http://ifomis.org/bfo/
+  products:
+  - {id: bfo.owl}
+  title: Basic Formal Ontology
+- contact: {email: henrich@embl.de, label: Thorsten Heinrich}
+  domain: anatomy
+  homepage: http://4dx.embl.de/4DXpress
+  id: bila
+  layout: ontology_detail
+  products:
+  - {id: bila.owl}
+  taxon: {id: 'NCBITaxon:33213', label: Bilateria}
+  title: Bilateria anatomy
+- contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
+  description: 'An ontology for respresenting spatial concepts, anatomical axes, gradients,
+    regions, planes, sides, and surfaces. These concepts can be used at multiple biological
+    scales and in a diversity of taxa, including plants, animals and fungi. The BSPO
+    is used to provide a source of anatomical location descriptors for logically defining
+    anatomical entity classes in anatomy ontologies. '
+  domain: anatomy
+  homepage: https://biological-spatial-ontology.googlecode.com
+  id: bspo
+  layout: ontology_detail
+  products:
+  - {id: bspo.owl}
+  title: Biological Spatial Ontology
+  tracker: https://code.google.com/p/biological-spatial-ontology/issues/list
+- contact: {email: a.chang@tu-bs.de, label: Antje Chang}
+  description: A structured controlled vocabulary for the source of an enzyme. It
+    comprises terms for tissues, cell lines, cell types and cell cultures from uni-
+    and multicellular organisms.
+  domain: anatomy
+  homepage: http://www.brenda-enzymes.info
+  id: bto
+  layout: ontology_detail
+  page: http://www.brenda-enzymes.info
+  products:
+  - {id: bto.owl}
+  title: BRENDA tissue / enzyme source
+- contact: {email: haendel@ohsu.edu, label: Melissa Haendel}
+  description: 'The Common Anatomy Reference Ontology (CARO) is being developed to
+    facilitate interoperability between existing anatomy ontologies for different
+    species, and will provide a template for building new anatomy ontologies. CARO
+    will be described in Anatomy Ontologies for Bioinformatics: Principles and Practice
+    Albert Burger, Duncan Davidson and Richard Baldock (Editors)'
+  domain: anatomy
+  homepage: http://www.bioontology.org/wiki/index.php/CARO:Main_Page
+  id: caro
+  layout: ontology_detail
+  products:
+  - {id: caro.owl}
+  title: Common Anatomy Reference Ontology
+  tracker: https://sourceforge.net/p/obo/common-anatomy-reference-ontology-caro-requests/
+- contact: {email: balhoff@nescent.org, label: Jim Balhoff}
+  description: a formalization of concepts and relations relevant to evolutionary
+    comparative analysis, such as phylogenetic trees, OTUs (operational taxonomic
+    units) and compared characters (including molecular characters as well as other
+    types). CDAO is being developed by scientists in biology, evolution, and computer
+    science
+  homepage: http://sourceforge.net/apps/mediawiki/cdao/index.php?title=Main_Page
+  id: cdao
+  layout: ontology_detail
+  products:
+  - {id: cdao.owl}
+  title: Comparative Data Analysis Ontology
+- alternatePrefix: ChEBI
+  contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
+  description: A structured classification of chemical compounds of biological relevance.
+  domain: biochemistry
+  homepage: http://www.ebi.ac.uk/chebi
+  id: chebi
+  layout: ontology_detail
+  page: http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual
+  products:
+  - {id: chebi.owl}
+  - {id: chebi.obo}
+  title: Chemical entities of biological interest
+  tracker: https://sourceforge.net/p/chebi/curator-requests/
+- contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
+  description: Includes terms for the descriptors commonly used in cheminformatics
+    software applications and the algorithms which generate them.
+  domain: biochemistry
+  homepage: http://code.google.com/p/semanticchemistry/
+  id: cheminf
+  layout: ontology_detail
+  products:
+  - {id: cheminf.owl}
+  title: Chemical Information Ontology
+- contact: {email: batchelorc@rsc.org, label: Colin Batchelor}
+  description: CHMO, the chemical methods ontology, describes methods used to
+  domain: health
+  homepage: http://code.google.com/p/rsc-cmo/
+  id: chmo
+  layout: ontology_detail
+  products:
+  - {id: chmo.owl}
+  title: Chemical Methods Ontology
+  tracker: http://code.google.com/p/rsc-cmo/issues/list
+- canonical: cl.owl
+  dependencies:
+  - {id: uberon}
+  - {id: go}
+  description: The Cell Ontology is a structured controlled vocabulary for cell types
+    in animals.
+  domain: cells
+  id: cl
+  label: Cell Ontology
+  layout: ontology_detail
+  mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
+  products:
+  - {id: cl.owl}
+  - {id: cl.obo}
+  - {id: cl/cl-basic.obo}
+  taxon: {id: 'NCBITaxon:33208', label: Metazoa}
+  termgenie: http://cl.termgenie.org
+  title: Cell Ontology
+  tracker: https://code.google.com/p/cell-ontology/issues/list
+- contact: {email: albertgoldfain@gmail.com, label: Albert Goldfain}
+  description: The Ontology for General Medical Science (OGMS) is based on the papers
+    Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and
+    Other Pathological Entities. The ontology attempts to address some of the issues
+    raised at the Workshop on Ontology of Diseases (Dallas, TX) and the Signs, Symptoms,
+    and Findings Workshop(Milan, Italy). OGMS was formerly called the clinical phenotype
+    ontology. Terms from OGMS hang from the Basic Formal Ontology. See http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf
+  domain: medicine
+  homepage: http://code.google.com/p/ogms/
+  id: ogms
+  layout: ontology_detail
+  page: http://code.google.com/p/ogms/
+  products:
+  - {id: ogms.owl}
+  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+  title: Ontology for General Medical Science
+  tracker: http://code.google.com/p/ogms/issues/list
+- contact: {email: shimoyama@mcw.edu, label: Mary Shimoyama}
+  description: The Clinical Measurement Ontology is designed to be used to standardize
+    morphological and physiological measurement records generated from clinical and
+    model organism research and health programs.
+  domain: clinical
+  id: cmo
+  layout: ontology_detail
+  products:
+  - {id: cmo.owl}
+  title: Clinical measurement ontology
+- contact: {email: adrien.barton@gmail.com, label: Adrien Barton}
+  description: "CVDO is an ontology based on the OGMS model of disease, designed to\
+    \ describe entities related to cardiovascular diseases (including the diseases\
+    \ themselves, the underlying disorders, and the related pathological processes).\
+    \ It is being developed at the INSERM research institute (Institut National de\
+    \ la Sant\xE9 et de la Recherche M\xE9dicale)."
+  domain: health
+  homepage: https://code.google.com/p/cvdo/
+  id: cvdo
+  layout: ontology_detail
+  products:
+  - {id: cvdo.owl}
+  title: Cardiovascular Disease Ontology
+  tracker: https://code.google.com/p/cvdo/issues/list
+- contact: {email: r-chisholm@northwestern.edu, label: Rex Chisholm}
+  description: A structured controlled vocabulary of the anatomy of the slime-mould
+    <i>Dictyostelium discoideum</i>.
+  domain: anatomy
+  homepage: http://dictybase.org/
+  id: ddanat
+  layout: ontology_detail
+  products:
+  - {id: ddanat.owl}
+  taxon: {id: 'NCBITaxon:44689', label: Dictyostelium discoideum}
+  title: Dictyostelium discoideum anatomy
+  tracker: http://sourceforge.net/tracker/?group_id=76834&atid=974664
+- contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
+  description: Creating a comprehensive hierarchical controlled vocabulary for human
+    disease representation.
+  domain: health
+  homepage: http://diseaseontology.sourceforge.net/
+  id: doid
+  layout: ontology_detail
+  page: http://diseaseontology.sourceforge.net/
+  products:
+  - {id: doid.owl}
+  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+  title: Human disease ontology
+  tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
+- contact: {email: djs93@gen.cam.ac.uk, label: David Osumi-Sutherland}
+  description: An ontology of commonly encountered and/or high level Drosophila phenotypes.  It
+    has significant formalisation - utilising terms from GO, CL, PATO and the Drosophila
+    anatomy ontology.  It has been used by FlyBase for > 159000 annotations of phenotype
+  homepage: http://www.flybase.org/
+  id: dpo
+  layout: ontology_detail
+  preferredPrefix: FBcv
+  products:
+  - {id: dpo.owl}
+  title: Drosophila Phenotype Ontology
+- contact: {email: hoganwr@gmail.com, label: William Hogan}
+  description: We built this ontology primarily to support comparative effectiveness
+    researchers studying claims data. They need to be able to query U.S. National
+    Drug Codes (NDCs) by ingredient, mechanism of action (beta-adrenergic blockade),
+    physiological effect (diuresis), and therapeutic intent (anti-hypertensive).
+  domain: health
+  homepage: http://code.google.com/p/dr-on
+  id: dron
+  layout: ontology_detail
+  products:
+  - {id: dron.owl}
+  title: The Drug Ontology
+  tracker: https://code.google.com/p/dr-on/issues/list
+- description: A rich ontology for experimental and other evidence statements.
+  domain: experiments
+  id: eco
+  layout: ontology_detail
+  products:
+  - {id: eco.owl}
+  title: Evidence codes
+- contact: {email: J.Bard@ed.ac.uk, label: Jonathan Bard}
+  description: A structured controlled vocabulary of stage-specific anatomical structures
+    of the human. It has been designed to mesh with the mouse anatomy and incorporates
+    each Carnegie stage of development (CS1-20). The abstract version of the human
+    developmental anatomy ontology compresses all the tissues present over Carnegie
+    stages 1-20 into a single hierarchy. The heart, for example, is present from Carnegie
+    Stage 9 onwards and is thus represented by 12 EHDA IDs (one for each stage). In
+    the abstract mouse, it has a single ID so that the abstract term given as just
+    <i>heart</i> really means <i>heart (CS 9-20)</i>. Timing details will be added
+    to the abstract version of the ontology in a future release.
+  domain: anatomy
+  homepage: http://genex.hgu.mrc.ac.uk/
+  id: ehdaa2
+  layout: ontology_detail
+  products:
+  - {id: ehdaa2.owl}
+  - {id: ehdaa2.obo}
+  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+  title: Human developmental anatomy, abstract version, v2
+- contact: {email: Terry.Hayamizu@jax.org, label: Terry Hayamizu}
+  description: A structured controlled vocabulary of stage-specific anatomical structures
+    of the mouse (Mus).
+  domain: anatomy
+  homepage: http://emouseatlas.org
+  id: emap
+  layout: ontology_detail
+  page: http://www.obofoundry.org/wiki/index.php/EMAPA:Main_Page
+  products:
+  - {id: emap.owl}
+  taxon: {id: 'NCBITaxon:10088', label: Mus}
+  title: Mouse gross anatomy and development, timed
+- contact: {email: p.buttigieg@googlemail.com, label: Pier Luigi Buttigieg}
+  description: Ontology of environmental features and habitats
+  domain: environment
+  homepage: http://environmentontology.org/
+  id: envo
+  layout: ontology_detail
+  page: http://environmentontology.org/
+  products:
+  - {id: envo.owl}
+  title: Environment Ontology
+  tracker: http://code.google.com/p/envo/issues/
+- contact: {email: carlotorniai@gmail.com, label: Carlo Torniai}
+  description: ERO models research resources such instruments. protocols, reagents,
+    animal models and biospecimens. It has been developed in the context of the eagle-i
+    project  (http://eagle-i.net/).
+  documentation: http://code.google.com/p/eagle-i/wiki/Documentation
+  domain: resources
+  homepage: http://code.google.com/p/eagle-i/
+  id: ero
+  layout: ontology_detail
+  products:
+  - {id: ero.owl}
+  title: eagle-i resource ontology
+  tracker: http://code.google.com/p/eagle-i/issues/list
+- description: Significant progress has been made over the last several years in collecting
+    and improving access to genomic, toxicology, and health data to promote understanding
+    about environmental influences on human health.  The resulting information resources,
+    however, lack extensive and reliable exposure data, which are required to translate
+    molecular insights, elucidate environmental contributions to diseases, and assess
+    human health risks at the individual and population levels.  We report our development
+    of an Exposure Ontology, ExO, designed to address this information gap by facilitating
+    centralization and integration of exposure data to inform understanding of environmental
+    health. Like other widely used ontologies, ExO is intended to bridge the gap between
+    exposure science and diverse environmental health disciplines including toxicology,
+    epidemiology, disease surveillance, and epigenetics
+  domain: health
+  homepage: http://ctdbase.org/downloads/#exposures
+  id: exo
+  layout: ontology_detail
+  page: http://ctdbase.org/downloads/#exposures
+  products:
+  - {id: exo.owl}
+  title: Exposure ontology
+- layout: ont
+  tags: [announce]
+  title: Uberon
+- contact: {email: maria@genome.stanford.edu, label: Maria Costanzo}
+  description: A structured controlled vocabulary for the anatomy of fungi.
+  domain: anatomy
+  homepage: http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/
+  id: fao
+  layout: ontology_detail
+  page: http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/#description
+  products:
+  - {id: fao.owl}
+  taxon: {id: 'NCBITaxon:4751', label: Fungal}
+  title: Fungal gross anatomy
+- contact: {email: dorloff@ncmir.ucsd.edu, label: David Orloff}
+  description: A structured controlled vocabulary of sample preparation, visualization
+    and imaging methods used in biomedical research.
+  domain: experiments
+  homepage: http://cellimagelibrary.org/
+  id: fbbi
+  layout: ontology_detail
+  products:
+  - {id: fbbi.owl}
+  title: Biological imaging methods
+- contact: {email: djs93@gen.cam.ac.uk, label: David Osumi-Sutherland}
+  description: A structured controlled vocabulary of the anatomy of Drosophila melanogaster
+  domain: anatomy
+  homepage: ' http://purl.obolibrary.org/obo/fbbt'
+  id: fbbt
+  layout: ontology_detail
+  preferredPrefix: FBbt
+  products:
+  - {id: fbbt.owl}
+  taxon: {id: 'NCBITaxon:7227', label: Drosophila}
+  title: Drosophila gross anatomy
+  tracker: http://purl.obolibrary.org/obo/fbbt/tracker
+- contact: {email: ma11@gen.cam.ac.uk, label: Michael Ashburner}
+  description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli)
+    and of other taxa referred to in FlyBase.
+  domain: taxonomy
+  homepage: http://www.flybase.org/
+  id: fbsp
+  layout: ontology_detail
+  products:
+  - {id: fbsp.owl}
+  taxon: {id: 'NCBITaxon:7227', label: Drosophila}
+  title: Fly taxonomy
+  tracker: https://cedar.bio.indiana.edu/trac/env/ontologies/wiki/PublicWikiStart
+- contact: {email: mejino@comcast.net, label: Onard Mejino}
+  description: Obo format translation of the FMA, omitting all relationships other
+    than is_a, part_of and has_part. Future versions of fma_obo will include more
+    relationships
+  domain: anatomy
+  homepage: http://sig.biostr.washington.edu/projects/fm/index.html
+  id: fma
+  layout: ontology_detail
+  page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
+  products:
+  - {id: fma.owl}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/18688289'}
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/18360535'}
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/16779026'}
+  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+  title: Foundational Model of Anatomy (subset)
+  tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
+- contact: {email: ma11@gen.cam.ac.uk, label: Michael Ashburner}
+  homepage: http://gensc.org/gc_wiki/index.php/GAZ_Project
+  id: gaz
+  layout: ontology_detail
+  products:
+  - {id: gaz.owl}
+  title: Gazetteer
+  tracker: http://sourceforge.net/tracker/?func=browse&group_id=76834&atid=1014856
+- contact: {email: MBrochhausen@uams.edu, label: Mathias Brochhausen}
+  description: An ontology of geographical entities implemented in Web Ontology Language
+    2 (OWL2) and based on Basic Formal Ontology (BFO). The developers aim to adhere
+    to the OBO Foundry principles.
+  homepage: https://code.google.com/p/ge-ontology/
+  id: geo
+  layout: ontology_detail
+  products:
+  - {id: geo.owl}
+  title: Geographical Entity Ontology
+  tracker: https://ontology.atlassian.net/browse/GEO#selectedTab=com.atlassian.jira.plugin.system.project%3Aissues-panel
+- dependencies:
+  - {id: uberon, subset: go/extensions/uberon_import.owl}
+  - {id: cl, subset: go/extensions/cl_import.owl}
+  - {id: ncbitaxon, subset: go/extensions/ncbitaxon_import.owl}
+  - {id: ro, subset: go/extensions/ro_import.owl}
+  - connects:
+    - {id: nifstd}
+    - {id: go}
+    description: Bridging axioms between nifstd and go
+    id: go/extensions/go-bridge-to-nifstd.owl
+    title: GO bridge to NIFSTD
+    type: BridgeOntology
+  depicted_by: http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png
+  domain: biology
+  id: go
+  label: GO
+  layout: ontology_detail
+  products:
+  - {id: go.owl}
+  taxon: {id: 'NCBITaxon:1', label: All life}
+  termgenie: http://go.termgenie.org
+  title: Gene Ontology
+  tracker: http://sourceforge.net/p/geneontology/ontology-requests/
+  twitter: news4go
+- contact: {email: diapriid@gmail.com, label: Matt Yoder}
+  description: A structured controlled vocabulary of the anatomy of the Hymenoptera
+    (bees, wasps, and ants)
+  domain: anatomy
+  homepage: http://hymao.org
+  id: hao
+  layout: ontology_detail
+  s:
+  - {id: hao.owl}
+  taxon: {id: 'NCBITaxon:7399', label: Hymenoptera}
+  title: Hymenoptera Anatomy Ontology
+- contact: {email: julien.roux@unil.ch, label: ''}
+  description: This ontology represents concepts related to homology, as well as other
+    concepts used to describe similarity and non-homology.
+  homepage: http://bioinfo.unil.ch
+  id: hom
+  layout: ontology_detail
+  products:
+  - {id: hom.owl}
+  title: homology_ontology
+- alternativePrefix: HPO
+  contact: {email: peter.robinson@charite.de, label: Peter Robinson}
+  description: The Human Phenotype Ontology is being developed to provide a structured
+    and controlled vocabulary for the phenotypic features encountered in human hereditary
+    and other disease. Our goal is to provide resource for the computational analysis
+    of the human phenome, with a current focus on monogenic diseases listed in the
+    Online Mendelian Inheritance in Man (OMIM) database, for which annotations are
+    also provided.
+  domain: phenotype
+  homepage: http://www.human-phenotype-ontology.org/
+  id: hp
+  layout: ontology_detail
+  products:
+  - {id: hp.owl}
+  - {id: hp.obo}
+  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+  termgenie: http://hp.termgenie,org
+  title: human phenotype ontology
+  tracker: https://sourceforge.net/p/obo/human-phenotype-requests/
+- contact: {email: alanruttenberg@gmail.com, label: Alan Ruttenberg}
+  description: 'The Information Artifact Ontology (IAO) is a new ontology of information
+    entities, originally driven by work by the OBI digital entity and realizable information
+    entity branch. '
+  domain: information
+  homepage: http://purl.obolibrary.org/obo/iao
+  id: iao
+  layout: ontology_detail
+  page: http://code.google.com/p/information-artifact-ontology/
+  products:
+  - {id: iao.owl}
+  - contact: {email: mbrochhausen@gmail.com, label: Mathias Brochhausen}
+    description: An ontology based on a theory of document acts describing what people
+      can do with documents
+    id: iao/d-acts.owl
+    title: ontology of document acts
+  title: Information Artifact Ontology
+  tracker: http://code.google.com/p/information-artifact-ontology/issues/list
+- contact: {email: Lindsay.Cowell@utsouthwestern.edu, label: Lindsay Cowell}
+  domain: health
+  homepage: http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology
+  id: ido
+  layout: ontology_detail
+  products:
+  - {id: ido.owl}
+  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+  title: Infectious disease
+  tracker: http://code.google.com/p/infectious-disease-ontology/issues/list
+- contact: {email: topalis@imbb.forth.gr, label: Pantelis Topalis}
+  description: An application ontology to cover all aspects of malaria (clinical,
+    epidemiological, biological, etc) as well as the intervention attempts to control
+    it.
+  domain: health
+  homepage: http://anobase.vectorbase.org
+  id: idomal
+  layout: ontology_detail
+  products:
+  - {id: idomal.owl}
+  title: Malaria Ontology
+- contact: {email: lenov@ebi.ac.uk, label: Nicolas Le Novere}
+  description: The Kinetic Simulation Algorithm Ontology (KiSAO) classifies algorithms
+    available for the simulation of models in biology, and their characteristics and
+    the parameters required for their use.
+  domain: algorithms
+  homepage: http://biomodels.net/kisao
+  id: kisao
+  layout: ontology_detail
+  products:
+  - {id: kisao.owl}
+  title: Kinetic Simulation Algorithm Ontology
+  tracker: https://sourceforge.net/tracker/?group_id=293617
+- contact: {email: n.lenovere@gmail.com, label: Nicolas Le Novere}
+  description: The Mathematical Modelling Ontology (MAMO) is a classification of the
+    types of mathematical models used mostly in the life sciences, their variables,
+    relationships and other relevant features.
+  homepage: http://sourceforge.net/projects/mamo-ontology/
+  id: mamo
+  layout: ontology_detail
+  products:
+  - {id: mamo.owl}
+  title: Mathematical modeling ontology
+  tracker: http://sourceforge.net/p/mamo-ontology/tickets/
+- contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
+  homepage: https://code.google.com/p/mental-functioning-ontology/
+  id: mf
+  layout: ontology_detail
+  products:
+  - {id: mf.owl}
+  title: Mental Functioning Ontology
+  tracker: https://code.google.com/p/mental-functioning-ontology/issues/list
+- contact: {email: Thorsten.Henrich@embl-heidelberg.de, label: Thorsten Henrich}
+  description: A structured controlled vocabulary of the anatomy and development of
+    the Japanese medaka fish, <i>Oryzias latipes</i>.
+  domain: anatomy
+  id: mfo
+  layout: ontology_detail
+  products:
+  - {id: mfo.owl}
+  taxon: {id: 'NCBITaxon:8089', label: Oryzias}
+  title: Medaka fish anatomy and development
+- contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
+  description: An ontology of affective phenomena such as emotions, moods, appraisals
+    and subjective feelings, designed to support interdisciplinary research by providing
+    unified annotations.
+  domain: health
+  homepage: https://code.google.com/p/emotion-ontology/
+  id: mfoem
+  layout: ontology_detail
+  products:
+  - {id: mfoem.owl}
+  title: Emotion Ontology
+  tracker: https://code.google.com/p/emotion-ontology/issues/list
+- contact: {email: Henning.Hermjakob@ebi.ac.uk, label: Henning Hermjakob}
+  description: A structured controlled vocabulary for the annotation of experiments
+    concerned with protein-protein interactions. Developed by the HUPO Proteomics
+    Standards Initiative.
+  domain: experiments
+  homepage: http://psidev.sf.net
+  id: mi
+  layout: ontology_detail
+  page: http://psidev.sourceforge.net/mi/xml/doc/user/index.html
+  products:
+  - {id: mi.owl}
+  title: Protein-protein interaction
+- contact: {email: hlapp@drycafe.net, label: Hilamr Lapp}
+  description: The MIAPA ontology is an application ontology to formalize annotation
+    of phylogenetic data according to the emerging Minimum Information About a Phylogenetic
+    Analysis (MIAPA) metadata reporting standard.
+  homepage: http://www.evoio.org/wiki/MIAPA
+  id: miapa
+  layout: ontology_detail
+  s:
+  - {id: miapa.owl}
+  title: MIAPA Ontology
+  tracker: https://github.com/miapa/miapa/issues
+- contact: {email: vdritsou@imbb.forth.gr, label: Vicky Dritsou}
+  description: microRNA Ontology (miRNAO) is an application ontology and it has been
+    developed in order to drive miRNA databases.
+  homepage: http://code.google.com/p/mirna-ontology/
+  id: mirnao
+  layout: ontology_detail
+  products:
+  - {id: mirnao.owl}
+  title: microRNA Ontology
+- contact: {email: louis@imbb.forth.gr, label: C. Louis}
+  description: Application ontology for entities related to insecticide resistance
+    in mosquitos
+  domain: environment
+  homepage: http://anobase.vectorbase.org
+  id: miro
+  layout: ontology_detail
+  products:
+  - {id: miro.owl}
+  taxon: {id: 'NCBITaxon:44484', label: Anopheles}
+  title: Mosquito insecticide resistance
+- contact: {email: shimoyama@mcw.edu, label: Mary Shimoyama}
+  description: The Epidemiology Ontology is an ontology designed to support the semantic
+    annotation of epidemiology resources. It is being developed under the EU-funded
+    EPIWORK project, a multidisciplinary research effort which aims at increasing
+    the amount of epidemiological data available, improving disease surveillance systems,
+    and promoting the collaboration among epidemiological researchers. The EO is integrated
+    into NERO (Network of Epidemiology Related Ontologies), a collection of existing
+    ontologies that supports the semantic annotation of epidemiology resources contained
+    in the Epidemic Marketplace (EM), a platform for sharing resources and knowledge
+    within the Epidemiology community. NERO currently includes thirteen external ontologies
+    (the majority are OBO or OBO candidate ontologies) which already provide a high
+    coverage of most epidemiology related areas. As such, the EPO focuses on neglected/highly
+    specific areas of epidemiology and will articulate with other OBO ontologies as
+    needed.
+  domain: clinical
+  homepage: https://code.google.com/p/epidemiology-ontology/
+  id: epo
+  layout: ontology_detail
+  products:
+  - {id: epo.owl}
+  title: Epidemiology Ontology
+- contact: {email: stoeckrt@pcbi.upenn.edu, label: Chris Stoeckert}
+  description: Concepts, definitions, terms, and resources for standardized description
+    of a microarray experiment in support of MAGE v.1. The MGED ontology is divided
+    into the MGED Core ontology which is intended to be stable and in synch with MAGE
+    v.1; and the MGED Extended ontology which adds further associations and classes
+    not found in MAGE v.1.
+  domain: experiments
+  homepage: http://mged.sourceforge.net/ontologies/MGEDontology.php
+  id: mo
+  layout: ontology_detail
+  page: http://mged.sourceforge.net/software/downloads.php
+  products:
+  - {id: mo.owl}
+  title: Microarray experimental conditions
+- contact: {email: hhe@ebi.ac.uk, label: Henning Hermjakob}
+  description: PSI-MOD is an ontology consisting of terms that describe protein chemical
+    modifications, logically linked by an is_a relationship in such a way as to form
+    a direct acyclic graph (DAG). The PSI-MOD ontology has more than 45 top-level
+    nodes, and provides alternative hierarchical paths for classifying protein modifications
+    either by the molecular structure of the modification, or by the amino acid residue
+    that is modified.
+  domain: proteins
+  homepage: http://psidev.info/index.php?q=node/104
+  id: mod
+  layout: ontology_detail
+  products:
+  - {id: mod.owl}
+  title: Protein modification
+- contact: {email: pheno@jax.org, label: JAX phenotype list}
+  description: The Mammalian Phenotype Ontology is under development as a community
+    effort to provide standard terms for annotating mammalian phenotypic data.
+  domain: phenotype
+  homepage: http://www.informatics.jax.org/searches/MP_form.shtml
+  id: mp
+  layout: ontology_detail
+  products:
+  - {id: mp.owl}
+  - {id: mp.obo}
+  taxon: {id: 'NCBITaxon:10088', label: Mus}
+  termgenie: http://mp.termgenie.org
+  title: Mammalian phenotype
+  tracker: https://sourceforge.net/p/obo/mammalian-phenotype-requests/
+- contact: {email: PS@mole.bio.cam.ac.uk, label: Paul Schofield}
+  description: A structured controlled vocabulary of mutant and transgenic mouse pathology
+    phenotypes
+  domain: health
+  homepage: http://www.pathbase.net
+  id: mpath
+  layout: ontology_detail
+  products:
+  - {id: mpath.owl}
+  taxon: {id: 'NCBITaxon:10088', label: Mus}
+  title: Mouse pathology
+- contact: {email: luisa@ebi.ac.uk, label: Luisa Montecchi}
+  description: A structured controlled vocabulary for the annotation of experiments
+    concerned with proteomics mass spectrometry. Developed by the HUPO Proteomics
+    Standards Initiative.
+  domain: experiments
+  homepage: http://www.psidev.info/index.php?q=node/257
+  id: ms
+  layout: ontology_detail
+  page: http://www.psidev.info/index.php?q=node/257
+  products:
+  - {id: ms.owl}
+  title: Mass spectrometry
+- contact: {email: geg18@aber.ac.uk, label: George Gkoutos}
+  domain: behavior
+  homepage: http://code.google.com/p/behavior-ontology
+  id: nbo
+  layout: ontology_detail
+  products:
+  - {id: nbo.owl}
+  title: Neuro Behavior Ontology
+  tracker: http://code.google.com/p/behavior-ontology/issues/list
+- contact: {email: obo-taxonomy@lists.sourceforge.net, label: obo-taxonomy-list}
+  createdWith: http://owltools.googlecode.com/
+  description: The NCBITaxon ontology is an automatic translation of the NCBI taxonomy
+    (a taxonomic classification of living organisms and associated artifacts) database
+    into obo/owl.
+  domain: taxonomy
+  homepage: http://www.obofoundry.org/wiki/index.php/NCBITaxon:Main_Page
+  id: ncbitaxon
+  jobs:
+  - {id: 'http://build.berkeleybop.org/job/build-ncbitaxon/', type: ReleaseBuild}
+  layout: ontology_detail
+  page: http://www.ncbi.nlm.nih.gov/taxonomy
+  preferredPrefix: NCBITaxon
+  products:
+  - {id: ncbitaxon.owl}
+  - {id: ncbitaxon/subsets/taxslim.owl}
+  source: http://www.ncbi.nlm.nih.gov/taxonomy
+  title: NCBI organismal classification
+  wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
+- contact: {email: schober@imbi.uni-freiburg.de, label: Schober Daniel}
+  description: Descriptors relevant to the experimental conditions of the Nuclear
+    Magnetic Resonance (NMR) component in a metabolomics investigation.
+  domain: experiments
+  homepage: http://msi-ontology.sourceforge.net/
+  id: nmr
+  layout: ontology_detail
+  page: http://msi-ontology.sourceforge.net/ontology/NMR.owlDocument.doc
+  products:
+  - {id: nmr.owl}
+  title: NMR-instrument specific component of metabolomics investigations
+- contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
+  description: 'The Ontology of Adverse Events (OAE) is a biomedical ontology in the
+    domain of adverse events. OAE aims to standardize adverse event annotation, integrate
+    various adverse event data, and support computer-assisted reasoning.  OAE is a
+    community-based ontology. Its development follows the OBO Foundry principles. '
+  domain: adverse events, health
+  homepage: http://www.oae-ontology.org
+  id: oae
+  layout: ontology_detail
+  products:
+  - {id: oae.owl}
+  title: Ontology of Adverse Events
+- contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
+  description: A collection of biological attributes (traits) covering all kingdoms
+    of life. Incorporates VT (vertebrate trait ontology) and TO (plant trait ontology).
+    Extends PATO.
+  domain: phenotype
+  homepage: http://wiki.geneontology.org/index.php/Extensions/x-attribute
+  id: oba
+  layout: ontology_detail
+  page: http://wiki.geneontology.org/index.php/Extensions/x-attribute
+  products:
+  - {id: oba.owl}
+  title: Ontology of Biological Attributes
+- contact: {email: bpeters@liai.org, label: Bjoern Peters}
+  description: The Ontology for Biomedical Investigations (OBI) project is developing
+    an integrated ontology for the description of life-science and clinical investigations
+  domain: experiments
+  homepage: http://purl.obofoundry.org/obo/obi
+  id: obi
+  layout: ontology_detail
+  license: https://creativecommons.org/licenses/by/3.0/
+  page: http://obi-ontology.org/page/Technical_Reports
+  products:
+  - {id: obi.owl}
+  title: Ontology for Biomedical Investigations
+  tracker: http://sourceforge.net/p/obi/obi-terms/
+- description: Using BFO as its framwork, OGI formalized the genomic element by defining
+    an upper class 'genetic interval'. The definition of 'genetic interval' is "the
+    spatial continuous physical entity which contains ordered genomic sets(DNA, RNA,
+    Allele, Marker,etc.) between and including two points (Nucleic_Acid_Base_Residue)
+    on a chromosome or RNA molecule which must have a liner primary sequence structure.
+  homepage: https://code.google.com/p/ontology-for-genetic-interval/
+  id: ogi
+  layout: ontology_detail
+  products:
+  - {id: ogi.owl}
+  title: Ontology for genetic interval
+  tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list
+- description: Ontology for Genetic Susceptibility Factor (OGSF) is an application
+    ontology to model/represent the notion of genetic susceptibility to a specific
+    disease or an adverse event or a pathological biological process. It is developed
+    using BFO2.0's framwork. The ontology is under the domain of genetic epidemiology.
+  homepage: https://code.google.com/p/ogsf/
+  id: ogsf
+  layout: ontology_detail
+  products:
+  - {id: ogsf.owl}
+  title: Ontology of Genetic Susceptibility Factor
+  tracker: https://code.google.com/p/ogsf/issues/list
+- contact: {email: hoganwr@gmail.com, label: Bill Hogan}
+  description: This ontology covers the domain of social entities that are related
+    to health care, such as demographic information (social entities for recording
+    gender (but not sex) and marital status, for example) and the roles of various
+    individuals and organizations (patient, hospital,etc.)
+  domain: medicine
+  id: omrse
+  layout: ontology_detail
+  page: http://code.google.com/p/omrse/
+  products:
+  - {id: omrse.owl}
+  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+  title: Ontology of Medically Related Social Entities
+- contact: {email: preets79@gmail.com, label: Priti Parikh}
+  description: The Ontology for Parasite LifeCycle (OPL) is designed to serve as a
+    reference ontology for parasite life cycle stages. It models the life cycle stage
+    details of various parasites, including Trypanosoma sp., Leishmania major, and
+    Plasmodium sp., etc. In addition to life cycle stages, the ontology also models
+    necessary contextual details, such as host information, vector information, and
+    anatomical location
+  homepage: http://code.google.com/p/opl-ontology/
+  id: opl
+  layout: ontology_detail
+  title: Ontology for Parasite LifeCycle
+  tracker: http://code.google.com/p/opl-ontology/issues/list
+  ts:
+  - {id: opl.owl}
+- contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
+  description: A biomedical ontology in the domain of vaccine adverse events. OVAE
+    is an extension of the Ontology of Adverse Event (OAE) and uses the vaccine information
+    imported from the Vaccine Ontology (VO)
+  homepage: http://www.violinet.org/ovae/
+  id: ovae
+  layout: ontology_detail
+  products:
+  - {id: ovae.owl}
+  title: Ontology of Vaccine Adverse Events
+- id: ovao
+  layout: ontology_detail
+  products:
+  - {id: ovao.owl}
+  tracker: https://code.google.com/p/ovae/issues/list
+- contact: {email: geg18@aber.ac.uk, label: George Gkoutos}
+  description: Phenotypic qualities (properties). This ontology can be used in conjunction
+    with other ontologies such as GO or anatomical ontologies to refer to phenotypes.
+    Examples of qualities are red, ectopic, high temperature, fused, small, edematous
+    and arrested.
+  domain: phenotype
+  homepage: http://obofoundry.org/wiki/index.php/PATO:Main_Page
+  id: pato
+  jobs:
+  - {id: 'http://build.berkeleybop.org/job/build-pato', type: DryRunBuild}
+  layout: ontology_detail
+  products:
+  - {id: pato.owl}
+  - {id: pato.obo}
+  repository: https://github.com/gkoutos/pato
+  title: Phenotypic quality
+  tracker: https://github.com/gkoutos/pato/issues
+- contact: {email: rwalls2008@gmail.com, label: Ramona Walls}
+  description: The Population and Community Ontology (PCO) describes material entities,
+    qualities, and processes related to collections of interacting organisms such
+    as populations and communities. It is taxon neutral, and can be used for any species,
+    including humans.
+  homepage: http://code.google.com/p/popcomm-ontology/
+  id: pco
+  layout: ontology_detail
+  products:
+  - {id: pco.owl}
+  title: Population and Community Ontology
+  tracker: http://code.google.com/p/popcomm-ontology/issues/list
+- contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
+  description: 'The Plant Ontology is a structured vocabulary and database resource
+    that links plant anatomy, morphology and growth and development to plant genomics
+    data. The PO is under active development to expand to encompass terms and annotations
+    from all plants. '
+  domain: anatomy and development
+  homepage: http://www.plantontology.org
+  id: po
+  layout: ontology_detail
+  page: http://www.plantontology.org/docs/docs.html
+  products:
+  - {id: po.owl}
+  taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
+  title: Plant Ontology
+- contact: {email: thacker@uab.edu, label: Bob Thacker}
+  description: The Porifera Ontology (PORO) is an ontology covering the anatomy of
+    the taxon Porifera (sponges)
+  domain: anatomy
+  homepage: http://purl.obolibrary.org/obo/poro
+  id: poro
+  layout: ontology_detail
+  products:
+  - {id: poro.owl}
+  taxon: {id: 'NCBITaxon:6040', label: Porifera}
+  title: Porifera Ontology
+  tracker: http://code.google.com/p/porifera-ontology/issues/list
+- contact: {email: dan5@georgetown.edu, label: Darren Natale}
+  description: PRotein Ontology (PRO) has been designed to describe the relationships
+    of proteins and protein evolutionary classes (ontology for ProEvo), to delineate
+    the multiple protein forms of a gene locus (ontology for protein forms), and to
+    interconnect existing ontologies
+  documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
+  domain: proteins
+  homepage: http://proconsortium.org
+  id: pr
+  layout: ontology_detail
+  products:
+  - {id: pr.owl}
+  title: PRotein Ontology (PRO)
+  tracker: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
+- contact: {email: vpetri@mcw.edu, label: Victoria Petri}
+  description: The Pathway Ontology is a controlled vocabulary for pathways that provides
+    standard terms for the annotation of gene products. The Pathway Ontology is under
+    development at <a href="http://rgd.mcw.edu">Rat Genome Database</a>.
+  domain: biological process
+  homepage: http://rgd.mcw.edu/tools/ontology/ont_search.cgi
+  id: pw
+  layout: ontology_detail
+  page: ftp://rgd.mcw.edu/pub/data_release/PW_Introduction.doc
+  products:
+  - {id: pw.owl}
+  title: Pathway ontology
+- contact: {email: john.garavelli@ebi.ac.uk, label: John Garavelli}
+  description: For the description of covalent bonds in proteins.
+  domain: proteins
+  homepage: http://www.ebi.ac.uk/RESID/
+  id: resid
+  layout: ontology_detail
+  products:
+  - {id: resid.owl}
+  title: Protein covalent bond
+- contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
+  description: REX is an ontology of physico-chemical processes, i.e. physico-chemical
+    changes occurring in course of time. REX includes both microscopic processes (involving
+    molecular entities or subatomic particles) and macroscopic processes. Some biochemical
+    processes from Gene Ontology (GO Biological process) can be described as instances
+    of REX.
+  id: rex
+  layout: ontology_detail
+  products:
+  - {id: rex.owl}
+  title: Physico-chemical process
+- contact: {email: BatchelorC@rsc.org, label: Colin Batchelor}
+  domain: molecular structure
+  homepage: http://code.google.com/p/rnao/
+  id: rnao
+  layout: ontology_detail
+  products:
+  - {id: rnao.owl}
+  title: RNA ontology
+- canonical: ro.owl
+  domain: relations
+  id: ro
+  jobs:
+  - {id: 'http://build.berkeleybop.org/job/build-ro', type: DryRunBuild}
+  layout: ontology_detail
+  mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-relations
+  products:
+  - {id: ro.owl}
+  - {id: ro.obo}
+  - {id: ro/ro-interaction.owl}
+  title: Relations Ontology
+  tracker: https://code.google.com/p/obo-relations/issues/list
+- contact: {email: rnigam@mcw.edu, label: Rajni Nigam}
+  description: Ontology of rat strains
+  homepage: http://rgd.mcw.edu/
+  id: rs
+  layout: ontology_detail
+  products:
+  - {id: rs.owl}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/24267899'}
+  title: Rat Strain Ontology
+- contact: {email: lenov@ebi.ac.uk, label: Nicolas Le Novere}
+  description: The Systems Biology Ontology is a set of controlled, relational vocabularies
+    of terms commonly used in Systems Biology, and in particular in computational
+    modeling.
+  domain: biochemistry
+  homepage: http://www.ebi.ac.uk/sbo/
+  id: sbo
+  layout: ontology_detail
+  products:
+  - {id: sbo.owl}
+  title: Systems Biology
+  tracker: http://sourceforge.net/tracker/?group_id=174625&atid=871591
+- contact: {email: psidev-gps-dev@lists.sourceforge.net, label: SEP developers via
+      the PSI and MSI mailing lists}
+  description: A structured controlled vocabulary for the annotation of sample processing
+    and separation techniques in scientific experiments, such as, and including, gel
+    electrophoresis, column chromatography, capillary electrophoresis, centrifugation
+    and so on. Developed jointly by the HUPO Proteomics Standards Initiative and The
+    Metabolomics Standards Initiative.
+  domain: provenance
+  homepage: http://psidev.info/index.php?q=node/312
+  id: sep
+  layout: ontology_detail
+  page: http://psidev.info/index.php?q=node/312
+  products:
+  - {id: sep.owl}
+  title: Sample processing and separation techniques
+- contact: {email: song-devel@lists.sourceforge.net, label: SONG developers}
+  description: The Sequence Ontology provides a structured controlled vocabulary for
+    sequence annotation, for the exchange of annotation data and for the description
+    of sequence objects in databases. <a href="http://obo.cvs.sourceforge.net/*checkout*/song/ontology/sofa.obo">SOFA</a>
+    is a minimal version of SO for use in data exchange.
+  domain: biological sequence
+  homepage: http://song.sourceforge.net/
+  id: so
+  layout: ontology_detail
+  products:
+  - {id: so.owl}
+  title: Sequence types and features
+  tracker: http://sourceforge.net/tracker/?group_id=72703&atid=810408
+- contact: {email: ramirez@macn.gov.ar, label: Martin Ramirez}
+  description: An ontology for spider comparative biology including anatomical parts
+    (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk,
+    web, borrow).
+  domain: anatomy
+  homepage: http://research.amnh.org/atol/files/
+  id: spd
+  layout: ontology_detail
+  products:
+  - {id: spd.owl}
+  taxon: {id: 'NCBITaxon:6893', label: spiders}
+  title: Spider Ontology
+  tracker: http://sourceforge.net/tracker/?group_id=76834&atid=977401
+- contact: {email: malone@ebi.ac.uk, label: James Malone}
+  homepage: www.ebi.ac.uk/efo/swo
+  id: swo
+  layout: ontology_detail
+  products:
+  - {id: swo.owl}
+  title: Software ontology
+- contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
+  description: 'The symptom ontology was designed around the guiding concept of a
+    symptom being: "A perceived change in function, sensation or appearance reported
+    by a patient indicative of a disease". Understanding the close relationship of
+    Signs and Symptoms, where Signs are the objective observation of an illness, the
+    Symptom Ontology will work to broaden it''s scope to capture and document in a
+    more robust manor these two sets of terms. Understanding that at times, the same
+    term may be both a Sign and a Symptom'
+  domain: health
+  homepage: http://symptomontologywiki.igs.umaryland.edu/mediawiki/index.php/Main_Page
+  id: symp
+  layout: ontology_detail
+  products:
+  - {id: symp.owl}
+  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+  title: Symptom Ontology
+- contact: {email: dsonensh@odu.edu, label: Daniel Sonenshine}
+  description: 'The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>'
+  domain: anatomy
+  homepage: http://anobase.vectorbase.org
+  id: tads
+  layout: ontology_detail
+  taxon: {id: 'NCBITaxon:6939', label: Ixodidae}
+  title: Tick gross anatomy
+  ts:
+  - {id: tads.owl}
+- contact: {email: wasila.dahdul@usd.edu, label: Wasila Dahdul}
+  description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but
+    intended to cover terms relevant to other taxa
+  domain: anatomy
+  homepage: https://www.nescent.org/phenoscape/Main_Page
+  id: tao
+  layout: ontology_detail
+  products:
+  - {id: tao.owl}
+  taxon: {id: 'NCBITaxon:32443', label: Teleostei}
+  title: Teleost Anatomy Ontology
+  tracker: http://sourceforge.net/tracker/?group_id=76834&atid=994764
+- contact: {email: peteremidford@yahoo.com, label: Peter Midford}
+  description: A vocabulary of taxonomic ranks intended to replace the sets of rank
+    terms found in the Teleost Taxonomy Ontology, the OBO translation of the NCBI
+    taxonomy and similar OBO taxonomy ontologies.  It provides terms for taxonomic
+    ranks drawn from both the NCBI taxonomy database and from a rank vocabulary developed
+    for the TDWG biodiversity information standards group.  Cross references to appearances
+    of each term in each source are provided.  Consistent with its intended use as
+    a vocabulary of labels, there is no relation specifying an ordering of the rank
+    terms.
+  domain: taxonomy
+  homepage: https://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary
+  id: taxrank
+  layout: ontology_detail
+  products:
+  - {id: taxrank.owl}
+  title: Taxonomic rank vocabulary
+- contact: {email: louis@imbb.forth.gr, label: C. Louis}
+  description: A structured controlled vocabulary of the anatomy of mosquitoes.
+  domain: anatomy
+  homepage: http://anobase.vectorbase.org
+  id: tgma
+  layout: ontology_detail
+  products:
+  - {id: tgma.owl}
+  taxon: {id: 'NCBITaxon:44484', label: Anopheles}
+  title: Mosquito gross anatomy
+- contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
+  description: A controlled vocabulary of describe phenotypic traits in plants. Each
+    trait is a distinguishable feature, characteristic, quality or phenotypic feature
+    of a developing or mature plant.
+  domain: phenotype
+  homepage: http://www.gramene.org/plant_ontology/
+  id: to
+  layout: ontology_detail
+  page: http://www.gramene.org/plant_ontology/index.html#to
+  products:
+  - {id: to.owl}
+  taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
+  title: Plant Trait Ontology
+  tracker: https://github.com/Planteome/plant-trait-ontology/issues
+- contact: {email: diseaseontology-discussion@lists.sourceforge.net, label: Lynn Schriml}
+  description: 'This vocabulary describes a process that is the means of how a pathogen
+    is transmitted from one host, reservoir, or source to another host. This transmission
+    may occur either directly or indirectly and may involve animate vectors or inanimate
+    vehicles.  '
+  domain: health
+  homepage: http://diseaseontology.sourceforge.net/
+  id: trans
+  layout: ontology_detail
+  products:
+  - {id: trans.owl}
+  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+  title: Pathogen transmission
+  tracker: http://sourceforge.net/tracker/?&group_id=76834&atid=1037853
+- contact: {email: peteremidford@yahoo.com, label: Peter Midford}
+  description: The Teleost taxonomy ontology is being used to facilitate annotation
+    of phenotypes, particularly for taxa that are not covered by NCBI because no submissions
+    of molecular data have been made. Taxonomy ontologies can also be valuable in
+    annotating legacy data, where authors make phenotype or ecological assertions
+    (e.g., host-parasite associations) that refer to groups that are reorganized or
+    no longer recognized. The taxonomy ontology serves as the source of taxa for our
+    project's use for identifying evolutionary changes that match the phenotype of
+    a zebrafish mutant.
+  domain: taxonomy
+  homepage: https://www.nescent.org/phenoscape/Main_Page
+  id: tto
+  layout: ontology_detail
+  products:
+  - {id: tto.owl}
+  taxon: {id: 'NCBITaxon:32443', label: Teleostei}
+  title: Teleost taxonomy
+  tracker: http://sourceforge.net/tracker/?group_id=76834&atid=1046550
+- canonical: uberon.owl
+  contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
+  dependencies:
+  - {id: go, subset: uberon/go_import.owl}
+  - {id: cl, subset: uberon/cl_import.owl}
+  - {id: chebi, subset: uberon/chebi_import.owl}
+  - {id: pr, subset: uberon/pr_import.owl}
+  depicted_by: http://uberon.github.io/images/u-logo.jpg
+  description: Uberon is an integrated cross-species anatomy ontology representing
+    a variety of entities classified according to traditional anatomical criteria
+    such as structure, function and developmental lineage. The ontology includes comprehensive
+    relationships to taxon-specific anatomical ontologies, allowing integration of
+    functional, phenotype and expression data
+  domain: anatomy
+  exampleClass: UBERON_0002046
+  google_plus: +UberonOrg
+  homepage: http://uberon.org
+  id: uberon
+  label: Uberon
+  layout: ontology_detail
+  mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
+  page: http://en.wikipedia.org/wiki/Uberon
+  products:
+  - {id: uberon.owl, is_canonical: true, title: Uberon, type: 'owl:Ontology'}
+  - {description: Uberon extended, id: uberon/ext.owl, mireots_from: ncbitaxon, title: Uberon
+      edition that includes subsets of other ontologies, type: 'owl:Ontology'}
+  - {description: Uberon edition that excludes external ontologies and most relations,
+    format: obo, id: uberon/basic.obo, title: Uberon basic, type: obo-basic-ontology}
+  - connects:
+    - {id: uberon}
+    - {id: zfa}
+    description: Taxonomic equivalence axioms connecting zebrafish-specific classes
+      to generic uberon counterparts
+    id: uberon/bridge/uberon-bridge-to-zfa.owl
+    page: https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies
+    title: Uberon bridge to ZFA
+    type: BridgeOntology
+  - connects:
+    - {id: uberon}
+    - {id: ma}
+    description: Taxonomic equivalence axioms connecting adult mouse specific classes
+      to generic uberon counterparts
+    id: uberon/bridge/uberon-bridge-to-ma.owl
+    page: https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies
+    title: Uberon bridge to MA
+    type: BridgeOntology
+  - {id: uberon/composite-metazoan.owl, mireots_from: ehdaa2, page: 'https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies',
+    taxon: Metazoa, title: Uberon composite metazoan ontology, type: MergedOntology}
+  - {id: uberon/composite-vertebrate.owl, mireots_from: ehdaa2, page: 'https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies',
+    taxon: Metazoa, title: Uberon composite vertebrate ontology, type: MergedOntology}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/22293552'}
+  - {title: 'Uberon, an integrative multi-species anatomy ontology'}
+  redirects:
+  - {match: releases/, url: 'http://svn.code.sf.net/p/obo/svn/uberon/releases/'}
+  - {match: '', url: 'http://berkeleybop.org/ontologies/uberon/'}
+  releases: http://purl.obolibrary.org/obo/uberon/releases/
+  repository: https://github.com/obophenotype/uberon
+  taxon: {id: 'NCBITaxon:33208', label: Metazoa}
+  title: Uberon multi-species anatomy ontology
+  tracker: https://github.com/obophenotype/uberon/issues
+  twitter: uberanat
+  type: owl:Ontology
+- description: Variation Ontology, VariO, is an ontology for standardized, systematic
+    description of effects, consequences and mechanisms of variations.
+  homepage: http://variationontology.org
+  id: vario
+  layout: ontology_detail
+  products:
+  - {id: vario.owl}
+  title: Variation Ontology
+- id: vhog
+  layout: ontology_detail
+  products:
+  - {id: vhog.owl}
+- contact: {email: wasila.dahdul@usd.edu, label: Wasila Dahdul}
+  description: 'Vertebrate skeletal anatomy ontology. '
+  domain: anatomy
+  homepage: https://www.nescent.org/phenoscape/Main_Page
+  id: vsao
+  layout: ontology_detail
+  page: https://www.phenoscape.org/wiki/Skeletal_Anatomy_Jamboree
+  products:
+  - {id: vsao.owl}
+  taxon: {id: 'NCBITaxon:7742', label: Vertebrata}
+  title: Vertebrate Skeletal Anatomy Ontology
+  tracker: https://sourceforge.net/tracker/?group_id=76834&atid=2257941
+- id: vto
+  layout: ontology_detail
+  products:
+  - {id: vto.owl}
+  tracker: http://purl.obolibrary.org/obo/vto/tracker
+- contact: {email: raymond@caltech.edu, label: Raymond Lee}
+  description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis
+    elegans</i>.
+  domain: anatomy
+  homepage: http://www.wormbase.org/
+  id: wbbt
+  layout: ontology_detail
+  products:
+  - {id: wbbt.owl}
+  taxon: {id: 'NCBITaxon:6237', label: Caenorhabditis}
+  title: C. elegans gross anatomy
+  tracker: https://sourceforge.net/tracker/?group_id=76834&atid=1069773
+- contact: {email: wchen@its.caltech.edu, label: Wen J. Chen}
+  description: A structured controlled vocabulary of the development of <i>Caenorhabditis
+    elegans</i>.
+  domain: anatomy
+  homepage: http://www.wormbase.org/
+  id: wbls
+  layout: ontology_detail
+  products:
+  - {id: wbls.owl}
+  taxon: {id: 'NCBITaxon:6237', label: Caenorhabditis}
+  title: C. elegans development
+- contact: {email: garys@caltech.edu, label: Gary Schindelman}
+  description: A structured controlled vocabulary of <i>Caenorhabditis elegans</i>
+    phenotypes
+  domain: phenotype
+  homepage: http://www.wormbase.org/
+  id: wbphenotype
+  layout: ontology_detail
+  products:
+  - {id: wbphenotype.owl}
+  taxon: {id: 'NCBITaxon:6237', label: Caenorhabditis}
+  title: C. elegans phenotype
+- description: A structured controlled vocabulary of the anatomy and development of
+    the African clawed frog (<i>Xenopus laevis</i>).
+  domain: anatomy
+  homepage: http://www.xenbase.org/anatomy/xao.do?method=display
+  id: xao
+  in_foundry: true
+  layout: ontology_detail
+  products:
+  - {id: xao.owl}
+  taxon: {id: 'NCBITaxon:8353', label: Xenopus}
+  title: Xenopus anatomy and development
+  tracker: https://sourceforge.net/p/obo/xenopus-anatomy-xao-term-requests/
+- id: xso
+  layout: ontology_detail
+  products:
+  - {id: xso.owl}
+  tracker: http://sourceforge.net/tracker/?group_id=76834&atid=1127722
+- contact: {email: zfinadmin@zfin.org, label: ZFIN administrators}
+  description: A structured controlled vocabulary of the anatomy and development of
+    the Zebrafish
+  domain: anatomy
+  homepage: http://zfin.org/zf_info/anatomy/dict/sum.html
+  id: zfa
+  in_foundry: true
+  layout: ontology_detail
+  products:
+  - {id: zfa.owl}
+  taxon: {id: 'NCBITaxon:7954', label: Danio}
+  title: Zebrafish anatomy and development
+  tracker: http://sourceforge.net/tracker/?group_id=76834&atid=994726
 
-## UBERON
-
-  - id: uberon
-    type: owl:Ontology
-    label: Uberon
-    title: Uberon multi-species anatomy ontology
-    description: Uberon is an integrated cross-species anatomy ontology representing a variety of entities classified according to traditional anatomical criteria such as structure, function and developmental lineage. The ontology includes comprehensive relationships to taxon-specific anatomical ontologies, allowing integration of functional, phenotype and expression data
-    homepage: http://uberon.org
-    page: http://en.wikipedia.org/wiki/Uberon
-    twitter: uberanat
-    google_plus: "+UberonOrg"
-    mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
-    canonical: uberon.owl
-    taxon: 
-      id: NCBITaxon:33208
-      label: Metazoa
-    domain: anatomy
-    repository: https://github.com/obophenotype/uberon
-    tracker: https://github.com/obophenotype/uberon/issues
-    releases: http://purl.obolibrary.org/obo/uberon/releases/
-    contact: 
-      email: cjmungall@lbl.gov
-      label: Chris Mungall
-    publications:
-      - id: http://www.ncbi.nlm.nih.gov/pubmed/22293552
-    depicted_by: http://uberon.github.io/images/u-logo.jpg
-    exampleClass: UBERON_0002046
-    redirects:
-      - match: "releases/"
-        url: "http://svn.code.sf.net/p/obo/svn/uberon/releases/"
-      - match: ""
-        url: "http://berkeleybop.org/ontologies/uberon/"
-    dependencies:
-     - id: go
-       subset: uberon/go_import.owl
-     - id: cl
-       subset: uberon/cl_import.owl
-     - id: chebi
-       subset: uberon/chebi_import.owl
-     - id: pr
-       subset: uberon/pr_import.owl
-    products:
-     - id: uberon.owl
-       type: owl:Ontology
-       title: Uberon
-       is_canonical: true
-     - id: uberon/ext.owl
-       type: owl:Ontology
-       description: Uberon extended
-       title: Uberon edition that includes subsets of other ontologies
-       mireots_from: cl
-       mireots_from: pr
-       mireots_from: envo
-       mireots_from: go
-       mireots_from: pato
-       mireots_from: ncbitaxon
-     - id: uberon/basic.obo
-       title: Uberon basic
-       description: Uberon edition that excludes external ontologies and most relations
-       format: obo
-       type: obo-basic-ontology
-     - id: uberon/bridge/uberon-bridge-to-zfa.owl
-       type: BridgeOntology
-       page: https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies
-       title: Uberon bridge to ZFA
-       description: Taxonomic equivalence axioms connecting zebrafish-specific classes to generic uberon counterparts
-       connects:
-         - id: uberon
-         - id: zfa
-     - id: uberon/bridge/uberon-bridge-to-ma.owl
-       type: BridgeOntology
-       page: https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies
-       title: Uberon bridge to MA
-       description: Taxonomic equivalence axioms connecting adult mouse specific classes to generic uberon counterparts
-       connects:
-         - id: uberon
-         - id: ma
-     - id: uberon/composite-metazoan.owl
-       type: MergedOntology
-       title: Uberon composite metazoan ontology
-       page: https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies
-       taxon: Metazoa
-       mireots_from: zfa
-       mireots_from: xao
-       mireots_from: fbbt
-       mireots_from: wbbt
-       mireots_from: ma
-       mireots_from: fma
-       mireots_from: emapa
-       mireots_from: ehdaa2
-     - id: uberon/composite-vertebrate.owl
-       type: MergedOntology
-       title: Uberon composite vertebrate ontology
-       page: https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies
-       taxon: Metazoa
-       mireots_from: zfa
-       mireots_from: xao
-       mireots_from: fbbt
-       mireots_from: wbbt
-       mireots_from: ma
-       mireots_from: fma
-       mireots_from: emapa
-       mireots_from: ehdaa2
-
-## GO
- 
-  - id: go
-    label: GO
-    title: Gene Ontology
-    twitter: news4go
-    tracker: http://sourceforge.net/p/geneontology/ontology-requests/
-    termgenie: http://go.termgenie.org
-    taxon: 
-      id: NCBITaxon:1
-      label: All life
-    domain: biology
-    dependencies:
-     - id: uberon
-       subset: go/extensions/uberon_import.owl
-     - id: cl
-       subset: go/extensions/cl_import.owl
-     - id: ncbitaxon
-       subset: go/extensions/ncbitaxon_import.owl
-     - id: ro
-       subset: go/extensions/ro_import.owl
-     - id: go/extensions/go-bridge-to-nifstd.owl
-       type: BridgeOntology
-       title: GO bridge to NIFSTD
-       description: Bridging axioms between nifstd and go
-       connects:
-         - id: nifstd
-         - id: go
-    products:
-     - id: go.owl
-    depicted_by: http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png
-
-## CL
- 
-  - id: cl
-    label: Cell Ontology
-    title: Cell Ontology
-    description: The Cell Ontology is designed as a structured controlled vocabulary for cell types. This ontology was constructed for use by the model organism and other bioinformatics databases, where there is a need for a controlled vocabulary of cell types. This ontology is not organism specific it covers cell types from prokaryotes to mammals. However, it excludes plant cell types, which are covered by PO.
-    taxon: 
-      id: NCBITaxon:33208
-      label: Metazoa
-    domain: cells
-    tracker: https://code.google.com/p/cell-ontology/issues/list
-    termgenie: http://cl.termgenie.org
-    mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
-    dependencies:
-     - id: uberon
-     - id: go
-    canonical: cl.owl
-    products:
-     - id: cl.owl
-     - id: cl.obo
-     - id: cl/cl-basic.obo
-
-## RO
- 
-  - id: ro
-    title: Relations Ontology
-    canonical: ro.owl
-    tracker: https://code.google.com/p/obo-relations/issues/list
-    mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-relations
-    domain: relations
-    jobs:
-      - id: http://build.berkeleybop.org/job/build-ro
-        type: DryRunBuild
-    products:
-     - id: ro.owl
-     - id: ro.obo
-     - id: ro/ro-interaction.owl
-
-## CHEBI
-
-  - id: chebi
-    alternatePrefix: ChEBI
-    title: Chemical entities of biological interest
-    description: A structured classification of chemical compounds of biological relevance.
-    contact: 
-      email: hastings@ebi.ac.uk
-      label: Janna Hastings
-    domain: biochemistry
-    homepage: http://www.ebi.ac.uk/chebi
-    page: http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual
-    products: 
-      - id: chebi.owl
-      - id: chebi.obo
-    tracker: https://sourceforge.net/p/chebi/curator-requests/
-
-## OBA
-
-  - id: oba
-    title: Ontology of Biological Attributes
-    description: A collection of biological attributes (traits) covering all kingdoms of life. Incorporates VT (vertebrate trait ontology) and TO (plant trait ontology). Extends PATO.
-    contact: 
-      email: cjmungall@lbl.gov
-      label: Chris Mungall
-    jobs:
-      - id: http://build.berkeleybop.org/job/build-bio-attributes
-        type: DryRunBuild
-    termgenie: http://oba.termgenie.org
-    domain: phenotype
-    homepage: http://wiki.geneontology.org/index.php/Extensions/x-attribute
-    page: http://wiki.geneontology.org/index.php/Extensions/x-attribute
-    products: 
-      - 
-        id: oba.owl
-        id: oba.obo
-
-## HP
-
-  - id: hp
-    alternativePrefix: HPO
-    description: The Human Phenotype Ontology is being developed to provide a structured and controlled vocabulary for the phenotypic features encountered in human hereditary and other disease. Our goal is to provide resource for the computational analysis of the human phenome, with a current focus on monogenic diseases listed in the Online Mendelian Inheritance in Man (OMIM) database, for which annotations are also provided.
-    domain: phenotype
-    homepage: http://www.human-phenotype-ontology.org/
-    contact: 
-      email: peter.robinson@charite.de
-      label: Peter Robinson
-    products: 
-      - id: hp.owl
-      - id: hp.obo
-    taxon: 
-      id: NCBITaxon:9606
-      label: Homo sapiens
-    title: human phenotype ontology
-    tracker: https://sourceforge.net/p/obo/human-phenotype-requests/
-    termgenie: http://hp.termgenie,org
-
-## MP
-
-  - id: mp
-    title: Mammalian phenotype
-    description: The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data.
-    homepage: http://www.informatics.jax.org/searches/MP_form.shtml
-    contact: 
-      email: pheno@jax.org
-      label: JAX phenotype list
-    domain: phenotype
-    products: 
-      - id: mp.owl
-      - id: mp.obo
-    taxon: 
-      id: NCBITaxon:10088
-      label: Mus
-    tracker: https://sourceforge.net/p/obo/mammalian-phenotype-requests/
-    termgenie: http://mp.termgenie.org
-
-## FBbt
-
-  - id: fbbt
-    preferredPrefix: FBbt
-    contact: 
-      email: djs93@gen.cam.ac.uk
-      label: David Osumi-Sutherland
-    description: A structured controlled vocabulary of the anatomy of Drosophila melanogaster
-    domain: anatomy
-    homepage: " http://purl.obolibrary.org/obo/fbbt"
-    products: 
-      - id: fbbt.owl
-    taxon: 
-      id: NCBITaxon:7227
-      label: Drosophila
-    title: Drosophila gross anatomy
-    tracker: http://purl.obolibrary.org/obo/fbbt/tracker
-
-## NCBITaxon
-
-  - id: ncbitaxon
-    preferredPrefix: NCBITaxon
-    title: NCBI organismal classification
-    contact: 
-      email: obo-taxonomy@lists.sourceforge.net
-      label: obo-taxonomy-list
-    description: The NCBITaxon ontology is an automatic translation of the NCBI taxonomy (a taxonomic classification of living organisms and associated artifacts) database into obo/owl.
-    source: http://www.ncbi.nlm.nih.gov/taxonomy
-    wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
-    createdWith: http://owltools.googlecode.com/
-    domain: taxonomy
-    homepage: http://www.obofoundry.org/wiki/index.php/NCBITaxon:Main_Page
-    page: http://www.ncbi.nlm.nih.gov/taxonomy
-    jobs:
-      - id: http://build.berkeleybop.org/job/build-ncbitaxon/
-        type: ReleaseBuild
-    products: 
-      - id: ncbitaxon.owl
-      - id: ncbitaxon/subsets/taxslim.owl
-
-
-## FMA
-
-  - id: fma
-    contact: 
-      email: mejino@comcast.net
-      label: Onard Mejino
-    description: Obo format translation of the FMA, omitting all relationships other than is_a, part_of and has_part. Future versions of fma_obo will include more relationships
-    domain: anatomy
-    homepage: http://sig.biostr.washington.edu/projects/fm/index.html
-    page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
-    publications:
-      - id: http://www.ncbi.nlm.nih.gov/pubmed/18688289
-      - id: http://www.ncbi.nlm.nih.gov/pubmed/18360535
-      - id: http://www.ncbi.nlm.nih.gov/pubmed/16779026
-    products: 
-     - id: fma.owl
-    taxon: 
-      id: NCBITaxon:9606
-      label: Homo sapiens
-    title: Foundational Model of Anatomy (subset)
-    tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
-
-## IAO
-
-  - id: iao
-    contact: 
-      email: alanruttenberg@gmail.com
-      label: Alan Ruttenberg
-    description: "The Information Artifact Ontology (IAO) is a new ontology of information entities, originally driven by work by the OBI digital entity and realizable information entity branch. "
-    domain: information
-    homepage: http://purl.obolibrary.org/obo/iao
-    page: http://code.google.com/p/information-artifact-ontology/
-    products: 
-      - id: iao.owl
-
-      - id: iao/d-acts.owl
-        title: ontology of document acts
-        description: "An ontology based on a theory of document acts describing what people can do with documents"
-        contact: 
-          email: mbrochhausen@gmail.com
-          label: Mathias Brochhausen
-
-    title: Information Artifact Ontology
-    tracker: http://code.google.com/p/information-artifact-ontology/issues/list
-
-## RS
-
-  - id: rs
-    contact: 
-      email: rnigam@mcw.edu
-      label: Rajni Nigam
-    description: Ontology of rat strains
-    homepage: http://rgd.mcw.edu/
-    publications:
-      - id: http://www.ncbi.nlm.nih.gov/pubmed/24267899
-    products: 
-      - id: rs.owl
-    title: Rat Strain Ontology
-
-## DPO
-
-  - id: dpo
-    title: Drosophila Phenotype Ontology
-    preferredPrefix: FBcv
-    products: 
-      - id: dpo.owl
-    contact: 
-      email: djs93@gen.cam.ac.uk
-      label: David Osumi-Sutherland
-    description: "An ontology of commonly encountered and/or high level Drosophila phenotypes.  It has significant formalisation - utilising terms from GO, CL, PATO and the Drosophila anatomy ontology.  It has been used by FlyBase for > 159000 annotations of phenotype"
-    homepage: http://www.flybase.org/
-
-## PATO
-
-  - id: pato
-    title: Phenotypic quality
-    description: Phenotypic qualities (properties). This ontology can be used in conjunction with other ontologies such as GO or anatomical ontologies to refer to phenotypes. Examples of qualities are red, ectopic, high temperature, fused, small, edematous and arrested.
-    contact: 
-      email: geg18@aber.ac.uk
-      label: George Gkoutos
-    domain: phenotype
-    homepage: http://obofoundry.org/wiki/index.php/PATO:Main_Page
-    repository: https://github.com/gkoutos/pato
-    tracker: https://github.com/gkoutos/pato/issues
-    jobs:
-      - id: http://build.berkeleybop.org/job/build-pato
-        type: DryRunBuild
-    products: 
-      - id: pato.owl
-      - id: pato.obo
-
-## OBI
-
-  - id: obi
-    title: Ontology for Biomedical Investigations
-    description: The Ontology for Biomedical Investigations (OBI) project is developing an integrated ontology for the description of life-science and clinical investigations
-    contact: 
-      email: bpeters@liai.org
-      label: Bjoern Peters
-    domain: experiments
-    homepage: http://purl.obofoundry.org/obo/obi
-    page: http://obi-ontology.org/page/Technical_Reports
-    products: 
-      - id: obi.owl
-    license: https://creativecommons.org/licenses/by/3.0/
-    tracker: http://sourceforge.net/p/obi/obi-terms/
-
-## PASTE OTHERS HERE
-  - id: cdao
-    contact: 
-      email: balhoff@nescent.org
-      label: Jim Balhoff
-    description: a formalization of concepts and relations relevant to evolutionary comparative analysis, such as phylogenetic trees, OTUs (operational taxonomic units) and compared characters (including molecular characters as well as other types). CDAO is being developed by scientists in biology, evolution, and computer science
-    homepage: http://sourceforge.net/apps/mediawiki/cdao/index.php?title=Main_Page
-    products: 
-      - id: cdao.owl
-    title: Comparative Data Analysis Ontology
-  - id: poro
-    contact: 
-      email: thacker@uab.edu
-      label: Bob Thacker
-    description: The Porifera Ontology (PORO) is an ontology covering the anatomy of the taxon Porifera (sponges)
-    domain: anatomy
-    homepage: http://purl.obolibrary.org/obo/poro
-    products: 
-      - id: poro.owl
-    taxon: 
-      id: NCBITaxon:6040
-      label: Porifera
-    title: Porifera Ontology
-    tracker: http://code.google.com/p/porifera-ontology/issues/list
-  - id: ido
-    contact: 
-      email: Lindsay.Cowell@utsouthwestern.edu
-      label: Lindsay Cowell
-    domain: health
-    homepage: http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology
-    products: 
-      - id: ido.owl
-    taxon: 
-      id: NCBITaxon:9606
-      label: Homo sapiens
-    title: Infectious disease
-    tracker: http://code.google.com/p/infectious-disease-ontology/issues/list
-  - id: mmo
-    contact: 
-      email: shimoyama@mcw.edu
-      label: Mary Shimoyama
-    description: "The Measurement Method Ontology is designed to represent the variety of methods used to make qualitative and quantitative clinical and phenotype measurements both in the clinic and with model organisms. "
-    domain: clinical
-    products: 
-      - id: mmo.owl
-    title: Measurement method ontology
-  - 
-    description: The Epidemiology Ontology is an ontology designed to support the semantic annotation of epidemiology resources. It is being developed under the EU-funded EPIWORK project, a multidisciplinary research effort which aims at increasing the amount of epidemiological data available, improving disease surveillance systems, and promoting the collaboration among epidemiological researchers. The EO is integrated into NERO (Network of Epidemiology Related Ontologies), a collection of existing ontologies that supports the semantic annotation of epidemiology resources contained in the Epidemic Marketplace (EM), a platform for sharing resources and knowledge within the Epidemiology community. NERO currently includes thirteen external ontologies (the majority are OBO or OBO candidate ontologies) which already provide a high coverage of most epidemiology related areas. As such, the EPO focuses on neglected/highly specific areas of epidemiology and will articulate with other OBO ontologies as needed.
-    homepage: https://code.google.com/p/epidemiology-ontology/
-    id: epo
-    products: 
-      - id: epo.owl
-    title: Epidemiology Ontology
-  - id: gaz
-    contact: 
-      email: ma11@gen.cam.ac.uk
-      label: Michael Ashburner
-    homepage: http://gensc.org/gc_wiki/index.php/GAZ_Project
-    products: 
-      - id: gaz.owl
-    title: Gazetteer
-    tracker: http://sourceforge.net/tracker/?func=browse&group_id=76834&atid=1014856
-  - id: trans
-    contact: 
-      email: diseaseontology-discussion@lists.sourceforge.net
-      label: Lynn Schriml
-    description: "This vocabulary describes a process that is the means of how a pathogen is transmitted from one host, reservoir, or source to another host. This transmission may occur either directly or indirectly and may involve animate vectors or inanimate vehicles.  "
-    domain: health
-    homepage: http://diseaseontology.sourceforge.net/
-    products: 
-      - id: trans.owl
-    taxon: 
-      id: NCBITaxon:9606
-      label: Homo sapiens
-    title: Pathogen transmission
-    tracker: http://sourceforge.net/tracker/?&group_id=76834&atid=1037853
-  - id: cheminf
-    contact: 
-      email: hastings@ebi.ac.uk
-      label: Janna Hastings
-    description: Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them.
-    domain: biochemistry
-    homepage: http://code.google.com/p/semanticchemistry/
-    products: 
-      - id: cheminf.owl
-    title: Chemical Information Ontology
-  - id: pco
-    contact: 
-      email: rwalls2008@gmail.com
-      label: Ramona Walls
-    description: The Population and Community Ontology (PCO) describes material entities, qualities, and processes related to collections of interacting organisms such as populations and communities. It is taxon neutral, and can be used for any species, including humans.
-    homepage: http://code.google.com/p/popcomm-ontology/
-    products: 
-      - id: pco.owl
-    title: Population and Community Ontology
-    tracker: http://code.google.com/p/popcomm-ontology/issues/list
-  - id: ogi
-    description: Using BFO as its framwork, OGI formalized the genomic element by defining an upper class 'genetic interval'. The definition of 'genetic interval' is "the spatial continuous physical entity which contains ordered genomic sets(DNA, RNA, Allele, Marker,etc.) between and including two points (Nucleic_Acid_Base_Residue) on a chromosome or RNA molecule which must have a liner primary sequence structure.
-    homepage: https://code.google.com/p/ontology-for-genetic-interval/
-    products: 
-      - id: ogi.owl
-    title: Ontology for genetic interval
-    tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list
-  - id: geo
-    contact: 
-      email: MBrochhausen@uams.edu
-      label: Mathias Brochhausen
-    homepage: https://code.google.com/p/ge-ontology/
-    description: An ontology of geographical entities implemented in Web Ontology Language 2 (OWL2) and based on Basic Formal Ontology (BFO). The developers aim to adhere to the OBO Foundry principles.
-    products: 
-      - id: geo.owl
-    title: Geographical Entity Ontology
-    tracker: https://ontology.atlassian.net/browse/GEO#selectedTab=com.atlassian.jira.plugin.system.project%3Aissues-panel
-  - id: sbo
-    contact: 
-      email: lenov@ebi.ac.uk
-      label: Nicolas Le Novere
-    description: "The Systems Biology Ontology is a set of controlled, relational vocabularies of terms commonly used in Systems Biology, and in particular in computational modeling. The ontology consists of six orthogonal vocabularies defining: the roles of reaction participants (eg. \"substrate\"), quantitative parameters (eg. \"Michaelis constant\"), a precise classification of mathematical expressions that describe the system (eg. \"mass action rate law\"), the modeling framework used (eg. \"logical framework\"), and a branch each to describe entity (eg. \"macromolecule\") and interaction (eg. \"process\") types. SBO terms can be used to introduce a layer of semantic information into the standard description of a model, or to annotate the results of biochemical experiments in order to facilitate their efficient reuse. SBO is an Open Biomedical Ontologies (OBO) candidate ontology, and is free for use. More information about SBO can be found from the project FAQ, at http://www.ebi.ac.uk/sbo/ SBO is a project of the BioModels.net effort and is developed through community collaboration"
-    domain: biochemistry
-    homepage: http://www.ebi.ac.uk/sbo/
-    products: 
-      - id: sbo.owl
-    title: Systems Biology
-    tracker: http://sourceforge.net/tracker/?group_id=174625&atid=871591
-  - id: emap
-    contact: 
-      email: Terry.Hayamizu@jax.org
-      label: Terry Hayamizu
-    description: A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).
-    domain: anatomy
-    homepage: http://emouseatlas.org
-    page: http://www.obofoundry.org/wiki/index.php/EMAPA:Main_Page
-    products: 
-      - id: emap.owl
-    taxon: 
-      id: NCBITaxon:10088
-      label: Mus
-    title: Mouse gross anatomy and development, timed
-  - id: vto
-    products: 
-      - id: vto.owl
-    tracker: http://purl.obolibrary.org/obo/vto/tracker
-  - id: tao
-    contact: 
-      email: wasila.dahdul@usd.edu
-      label: Wasila Dahdul
-    description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa
-    domain: anatomy
-    homepage: https://www.nescent.org/phenoscape/Main_Page
-    products: 
-      - id: tao.owl
-    taxon: 
-      id: NCBITaxon:32443
-      label: Teleostei
-    title: Teleost Anatomy Ontology
-    tracker: http://sourceforge.net/tracker/?group_id=76834&atid=994764
-  - id: bila
-    contact: 
-      email: henrich@embl.de
-      label: Thorsten Heinrich
-    domain: anatomy
-    homepage: http://4dx.embl.de/4DXpress
-    products: 
-      - id: bila.owl
-    taxon: 
-      id: NCBITaxon:33213
-      label: Bilateria
-    title: Bilateria anatomy
-  - id: oba
-    contact: 
-      email: cjmungall@lbl.gov
-      label: Chris Mungall
-    description: A collection of biological attributes (traits) covering all kingdoms of life. Incorporates VT (vertebrate trait ontology) and TO (plant trait ontology). Extends PATO.
-    domain: phenotype
-    homepage: http://wiki.geneontology.org/index.php/Extensions/x-attribute
-    page: http://wiki.geneontology.org/index.php/Extensions/x-attribute
-    products: 
-      - id: oba.owl
-    title: Ontology of Biological Attributes
-  - id: mo
-    contact: 
-      email: stoeckrt@pcbi.upenn.edu
-      label: Chris Stoeckert
-    description: Concepts, definitions, terms, and resources for standardized description of a microarray experiment in support of MAGE v.1. The MGED ontology is divided into the MGED Core ontology which is intended to be stable and in synch with MAGE v.1; and the MGED Extended ontology which adds further associations and classes not found in MAGE v.1.
-    domain: experiments
-    homepage: http://mged.sourceforge.net/ontologies/MGEDontology.php
-    page: http://mged.sourceforge.net/software/downloads.php
-    products: 
-      - id: mo.owl
-    title: Microarray experimental conditions
-  - id: aero
-    contact: 
-      email: mcourtot@gmail.com
-      label: Melanie Courtot
-    description: The Adverse Event Reporting Ontology (AERO) is an ontology aimed at supporting clinicians at the time of data entry, increasing quality and accuracy of reported adverse events
-    domain: health
-    homepage: http://purl.obolibrary.org/obo/aero
-    products: 
-      - id: aero.owl
-    title: Adverse Event Reporting Ontology
-  - id: apo
-    contact: 
-      email: maria@genome.stanford.edu
-      label: Maria Costanza
-    description: A structured controlled vocabulary for the phenotypes of Ascomycete fungi
-    domain: phenotype
-    homepage: "http://www.yeastgenome.org/ "
-    products: 
-      - id: apo.owl
-    taxon: 
-      id: NCBITaxon:4890
-      label: Ascomycota
-    title: Ascomycete phenotype ontology
-  - id: bspo
-    contact: 
-      email: cjmungall@lbl.gov
-      label: Chris Mungall
-    description: "An ontology for respresenting spatial concepts, anatomical axes, gradients, regions, planes, sides, and surfaces. These concepts can be used at multiple biological scales and in a diversity of taxa, including plants, animals and fungi. The BSPO is used to provide a source of anatomical location descriptors for logically defining anatomical entity classes in anatomy ontologies. "
-    domain: anatomy
-    homepage: https://biological-spatial-ontology.googlecode.com
-    products: 
-      - id: bspo.owl
-    title: Biological Spatial Ontology
-    tracker: https://code.google.com/p/biological-spatial-ontology/issues/list
-  - id: bto
-    contact: 
-      email: a.chang@tu-bs.de
-      label: Antje Chang
-    description: A structured controlled vocabulary for the source of an enzyme. It comprises terms for tissues, cell lines, cell types and cell cultures from uni- and multicellular organisms.
-    domain: anatomy
-    homepage: http://www.brenda-enzymes.info
-    page: http://www.brenda-enzymes.info
-    products: 
-      - id: bto.owl
-    title: BRENDA tissue / enzyme source
-  - id: vario
-    description: Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations.
-    homepage: http://variationontology.org
-    products: 
-      - id: vario.owl
-    title: Variation Ontology
-  - id: rex
-    contact: 
-      email: hastings@ebi.ac.uk
-      label: Janna Hastings
-    description: REX is an ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time. REX includes both microscopic processes (involving molecular entities or subatomic particles) and macroscopic processes. Some biochemical processes from Gene Ontology (GO Biological process) can be described as instances of REX.
-    products: 
-      - id: rex.owl
-    title: Physico-chemical process
-
-  - id: ms
-    contact: 
-      email: luisa@ebi.ac.uk
-      label: Luisa Montecchi
-    description: A structured controlled vocabulary for the annotation of experiments concerned with proteomics mass spectrometry. Developed by the HUPO Proteomics Standards Initiative.
-    domain: experiments
-    homepage: http://www.psidev.info/index.php?q=node/257
-    page: http://www.psidev.info/index.php?q=node/257
-    products: 
-      - id: ms.owl
-    title: Mass spectrometry
-
-  - id: wbphenotype
-    contact: 
-      email: garys@caltech.edu
-      label: Gary Schindelman
-    description: A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes
-    domain: phenotype
-    homepage: http://www.wormbase.org/
-    products: 
-      - id: wbphenotype.owl
-    taxon: 
-      id: NCBITaxon:6237
-      label: Caenorhabditis
-    title: C. elegans phenotype
-  - id: chmo
-    contact: 
-      email: batchelorc@rsc.org
-      label: Colin Batchelor
-    description: CHMO, the chemical methods ontology, describes methods used to
-    domain: health
-    homepage: http://code.google.com/p/rsc-cmo/
-    products: 
-      - id: chmo.owl
-    title: Chemical Methods Ontology
-    tracker: http://code.google.com/p/rsc-cmo/issues/list
-  - id: mi
-    contact: 
-      email: Henning.Hermjakob@ebi.ac.uk
-      label: Henning Hermjakob
-    description: A structured controlled vocabulary for the annotation of experiments concerned with protein-protein interactions. Developed by the HUPO Proteomics Standards Initiative.
-    domain: experiments
-    homepage: http://psidev.sf.net
-    page: http://psidev.sourceforge.net/mi/xml/doc/user/index.html
-    products: 
-      - id: mi.owl
-    title: Protein-protein interaction
-
-
-  - id: ovae
-    contact: 
-      email: yongqunh@med.umich.edu
-      label: Yongqunh He
-    description: A biomedical ontology in the domain of vaccine adverse events. OVAE is an extension of the Ontology of Adverse Event (OAE) and uses the vaccine information imported from the Vaccine Ontology (VO)
-    homepage: http://www.violinet.org/ovae/
-    products: 
-      - id: ovae.owl
-    title: Ontology of Vaccine Adverse Events
-  - id: cmo
-    contact: 
-      email: shimoyama@mcw.edu
-      label: Mary Shimoyama
-    description: The Clinical Measurement Ontology is designed to be used to standardize morphological and physiological measurement records generated from clinical and model organism research and health programs.
-    domain: clinical
-    products: 
-      - id: cmo.owl
-    title: Clinical measurement ontology
-  - id: kisao
-    contact: 
-      email: lenov@ebi.ac.uk
-      label: Nicolas Le Novere
-    description: The Kinetic Simulation Algorithm Ontology (KiSAO) classifies algorithms available for the simulation of models in biology, and their characteristics and the parameters required for their use.
-    domain: algorithms
-    homepage: http://biomodels.net/kisao
-    
-    products: 
-      - id: kisao.owl
-    title: Kinetic Simulation Algorithm Ontology
-    tracker: https://sourceforge.net/tracker/?group_id=293617
-  - id: clo
-    contact: 
-      email: Sirarat.Sarntivijai@fda.hhs.gov
-      label: Sirarat Sarntivijai
-    description: The Cell Line Ontology (CLO) is a community-driven ontology that is developed to standardize and integrate cell line information and support computer-assisted reasoning.
-    homepage: http://www.clo-ontology.org
-    products: 
-      - id: clo.owl
-    title: Cell Line Ontology
-  - 
-    contact: 
-      email: huang@southalabama.edu
-      label: Huang, Jingshan
-    homepage: http://omit.cis.usouthal.edu/
-    id: omit
-    page: http://omit.cis.usouthal.edu/
-    products: 
-      - id: omit.owl
-    title: Ontology for MIRNA Target Prediction
-  - 
-    contact: 
-      email: Terry.Hayamizu@jax.org
-      label: Terry Hayamizu
-    description: A structured controlled vocabulary of the adult anatomy of the mouse (Mus).
-    domain: anatomy
-    homepage: http://www.informatics.jax.org/searches/AMA_form.shtml
-    id: ma
-    products: 
-      - id: ma.owl
-    taxon: 
-      id: NCBITaxon:10088
-      label: Mus
-    title: Mouse adult gross anatomy
-    tracker: https://sourceforge.net/tracker/?group_id=76834&atid=1205376
-  - 
-    contact: 
-      email: burkesquires@gmail.com
-      label: Burke Squires
-    domain: health
-    homepage: http://purl.obolibrary.org/obo/flu/
-    id: flu
-    products: 
-      - id: flu.owl
-    title: Influenza Ontology
-    tracker: http://purl.obolibrary.org/obo/flu/tracker
-  - 
-    contact: 
-      email: Terry.Hayamizu@jax.org
-      label: Terry Hayamizu
-    description: A structured controlled vocabulary of abstract (i.e. non-stage specific) stage-specific anatomical structures of the mouse (Mus).
-    domain: anatomy
-    homepage: http://emouseatlas.org
-    id: emapa
-    page: http://www.obofoundry.org/wiki/index.php/EMAPA:Main_Page
-    products: 
-      - id: emapa.owl
-    taxon: 
-      id: NCBITaxon:10088
-      label: Mus
-    title: Mouse gross anatomy and development, abstract
-  - 
-    contact: 
-      email: yongqunh@med.umich.edu
-      label: Yongqunh He
-    description: To ensure consistent representation of vaccine knowledge and to support automated reasoning, a community-based effort to develop the Vaccine Ontology (VO) has been initiated. This international collaborative VO development effort has been joined by many institutes and disciplines around the world. The Vaccine Ontology is also being used in a variety of applications by many user groups in academia and industry.
-    domain: health
-    homepage: http://www.violinet.org/vaccineontology
-    id: vo
-    products: 
-      - id: vo.owl
-    title: Vaccine ontology
-    tracker: http://sourceforge.net/tracker/?atid=1127137&group_id=255029&func=browse
-  - 
-    contact: 
-      email: hastings@ebi.ac.uk
-      label: Janna Hastings
-    description: "FIX consists of two ontologies: methods and properties (but not objects, which are subject of the chemical ontology). The methods are applied to study the properties."
-    id: fix
-    products: 
-      - id: fix.owl
-    title: Physico-chemical methods and properties
-  - 
-    contact: 
-      email: djs93@gen.cam.ac.uk
-      label: David Osumi-Sutherland
-    description: A structured controlled vocabulary of the development of <i>Drosophila melanogaster</i>.
-    domain: anatomy
-    homepage: http://www.flybase.org/
-    id: fbdv
-    products: 
-      - id: fbdv.owl
-    taxon: 
-      id: NCBITaxon:7227
-      label: Drosophila
-    title: Drosophila development
-    tracker: https://cedar.bio.indiana.edu/trac/env/ontologies/wiki/PublicWikiStart
-  - 
-    contact: 
-      email: yongqunh@med.umich.edu
-      label: Yongqun Oliver He
-    description: "The OGG (Ontology of Genes and Genomes) is a formal ontology of genes and genomes of biological organisms. OGG is developed by following OBO Foundry principles and aligning with the BFO top ontology. "
-    homepage: http://ogg.googlecode.com/
-    id: ogg
-    products: 
-      - id: ogg.owl
-    title: The Ontology of Genes and Genomes
-    tracker: https://code.google.com/p/ogg/issues/list
-  - 
-    contact: 
-      email: geg18@aber.ac.uk
-      label: George Gkoutos
-    description: Metrical units for use in conjunction with PATO
-    domain: phenotype
-    homepage: http://code.google.com/p/unit-ontology/
-    id: uo
-    products: 
-      - id: uo.owl
-    title: Units of measurement
-    tracker: http://sourceforge.net/tracker/?group_id=76834&atid=595654
-  - 
-    contact: 
-      email: bakerc@unb.ca
-      label: Christipher Baker
-    description: "Lipid research is increasingly integrated within systems level biology such as lipidomics where lipid classification is required before appropriate annotation of chemical functions can be applied. The ontology describes the LIPIDMAPS nomenclature classification explicitly using description logics (OWL-DL). Lipid classes are organized hierarchically with the super-classes restricted by generic necessary conditions. More specific necessary conditions are used to define membership requirements for sub classes of lipid according to appropriate functional groups. "
-    domain: lipids
-    id: lipro
-    products: 
-      - id: lipro.owl
-    title: Lipid Ontology
-  - 
-    contact: 
-      email: rwalls2008@gmail.com
-      label: Ramona Walls
-    description: The Biological Collections Ontology (BCO) is a being developed as an application ontology as part of the Biocode Commons project, within the OBO Foundry framework. The goal of the BCO is to support the interoperability of biodiversity data, including data on museum collections, environmental/metagenomic samples, and ecological surveys.
-    homepage: http://code.google.com/p/bco/
-    id: bco
-    products: 
-      - id: bco.owl
-    title: Biological Collections Ontology
-    tracker: http://code.google.com/p/bco/issues/list
-  - 
-    contact: 
-      email: zfinadmin@zfin.org
-      label: ZFIN administrators
-    description: A developmental stages of the Zebrafish (<i>Danio rerio</i>). Note that ZFA includes the leaf nodes of this ontology
-    domain: anatomy
-    homepage: http://zfin.org/zf_info/anatomy/dict/sum.html
-    id: zfs
-    page: http://code.google.com/p/developmental-stage-ontologies
-    products: 
-      - id: zfs.owl
-    taxon: 
-      id: NCBITaxon:7954
-      label: Danio
-    title: Zebrafish developmental stages
-  - 
-    contact: 
-      email: mah79@cam.ac.uk
-      label: Midori Harris
-    description: FYPO is a formal ontology of phenotypes observed in fission yeast. FYPO is being developed to support the comprehensive and detailed representation of phenotypes in PomBase, the new online fission yeast resource (www.pombase.org). Its scope is similar to that of the Ascomycete Phenotype Ontology (APO), but FYPO includes more detailed pre-composed terms as well as computable definitions.
-    domain: phenotype
-    homepage: https://sourceforge.net/apps/trac/pombase/wiki/FissionYeastPhenotypeOntology
-    id: fypo
-    products: 
-      - id: fypo.owl
-    taxon: 
-      id: NCBITaxon:4896
-      label: S Pombe
-    title: Fission Yeast Phenotype Ontology
-    tracker: http://sourceforge.net/tracker/?group_id=65526&atid=2096431
-  - 
-    contact: 
-      email: jaiswalp@science.oregonstate.edu
-      label: Pankaj Jaiswal
-    description: A structured, controlled vocabulary for the representation of plant environmental conditions.
-    domain: environment
-    homepage: http://www.gramene.org
-    id: eo
-    page: http://www.gramene.org/plant_ontology/index.html#eo
-    products: 
-      - id: eo.owl
-    title: Plant Environmental Conditions
-  - 
-    contact: 
-      email: shimoyama@mcw.edu
-      label: Mary Shimoyama
-    description: The Experimental Conditions Ontology is designed to represent the conditions under which physiological and morphological measurements are made both in the clinic and in studies involving humans or model organisms.
-    domain: clinical
-    id: xco
-    products: 
-      - id: xco.owl
-    title: Experimental condition ontology
-  - 
-    contact: 
-      email: albertgoldfain@gmail.com
-      label: Albert Goldfain
-    description: The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX) and the Signs, Symptoms, and Findings Workshop(Milan, Italy). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology. See http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf
-    domain: medicine
-    homepage: http://code.google.com/p/ogms/
-    id: ogms
-    page: http://code.google.com/p/ogms/
-    products: 
-      - id: ogms.owl
-    taxon: 
-      id: NCBITaxon:9606
-      label: Homo sapiens
-    title: Ontology for General Medical Science
-    tracker: http://code.google.com/p/ogms/issues/list
-  - id: swo
-    contact: 
-      email: malone@ebi.ac.uk
-      label: James Malone
-    homepage: www.ebi.ac.uk/efo/swo
-    products: 
-      - id: swo.owl
-    title: Software ontology
-
-  - id: ehdaa2
-    contact: 
-      email: J.Bard@ed.ac.uk
-      label: Jonathan Bard
-    description: A structured controlled vocabulary of stage-specific anatomical structures of the human. It has been designed to mesh with the mouse anatomy and incorporates each Carnegie stage of development (CS1-20). The abstract version of the human developmental anatomy ontology compresses all the tissues present over Carnegie stages 1-20 into a single hierarchy. The heart, for example, is present from Carnegie Stage 9 onwards and is thus represented by 12 EHDA IDs (one for each stage). In the abstract mouse, it has a single ID so that the abstract term given as just <i>heart</i> really means <i>heart (CS 9-20)</i>. Timing details will be added to the abstract version of the ontology in a future release.
-    domain: anatomy
-    homepage: http://genex.hgu.mrc.ac.uk/
-    products: 
-      - id: ehdaa2.owl
-      - id: ehdaa2.obo
-    taxon: 
-      id: NCBITaxon:9606
-      label: Homo sapiens
-    title: Human developmental anatomy, abstract version, v2
-
-  - id: miro
-    contact: 
-      email: louis@imbb.forth.gr
-      label: C. Louis
-    description: Application ontology for entities related to insecticide resistance in mosquitos
-    domain: environment
-    homepage: http://anobase.vectorbase.org
-        products: 
-      - id: miro.owl
-    taxon: 
-      id: NCBITaxon:44484
-      label: Anopheles
-    title: Mosquito insecticide resistance
-  - id: caro
-    contact: 
-      email: haendel@ohsu.edu
-      label: Melissa Haendel
-    description: "The Common Anatomy Reference Ontology (CARO) is being developed to facilitate interoperability between existing anatomy ontologies for different species, and will provide a template for building new anatomy ontologies. CARO will be described in Anatomy Ontologies for Bioinformatics: Principles and Practice Albert Burger, Duncan Davidson and Richard Baldock (Editors)"
-    domain: anatomy
-    homepage: http://www.bioontology.org/wiki/index.php/CARO:Main_Page
-    products: 
-      - id: caro.owl
-    title: Common Anatomy Reference Ontology
-    tracker: https://sourceforge.net/p/obo/common-anatomy-reference-ontology-caro-requests/
-  - id: xao
-    description: A structured controlled vocabulary of the anatomy and development of the African clawed frog (<i>Xenopus laevis</i>).
-    domain: anatomy
-    homepage: http://www.xenbase.org/anatomy/xao.do?method=display
-    products: 
-      - id: xao.owl
-    taxon: 
-      id: NCBITaxon:8353
-      label: Xenopus
-    title: Xenopus anatomy and development
-    tracker: https://sourceforge.net/p/obo/xenopus-anatomy-xao-term-requests/
-  - id: po
-    contact: 
-      email: jaiswalp@science.oregonstate.edu
-      label: Pankaj Jaiswal
-    description: "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data. The PO is under active development to expand to encompass terms and annotations from all plants. "
-    domain: anatomy and development
-    homepage: http://www.plantontology.org
-    page: http://www.plantontology.org/docs/docs.html
-    products: 
-      - id: po.owl
-    taxon: 
-      id: NCBITaxon:33090
-      label: Viridiplantae
-    title: Plant Ontology
-  - id: taxrank
-    contact: 
-      email: peteremidford@yahoo.com
-      label: Peter Midford
-    description: A vocabulary of taxonomic ranks intended to replace the sets of rank terms found in the Teleost Taxonomy Ontology, the OBO translation of the NCBI taxonomy and similar OBO taxonomy ontologies.  It provides terms for taxonomic ranks drawn from both the NCBI taxonomy database and from a rank vocabulary developed for the TDWG biodiversity information standards group.  Cross references to appearances of each term in each source are provided.  Consistent with its intended use as a vocabulary of labels, there is no relation specifying an ordering of the rank terms.
-    domain: taxonomy
-    homepage: https://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary
-    products: 
-      - id: taxrank.owl
-    title: Taxonomic rank vocabulary
-  - id: symp
-    contact: 
-      email: lynn.schriml@gmail.com
-      label: Lynn Schriml
-    description: "The symptom ontology was designed around the guiding concept of a symptom being: \"A perceived change in function, sensation or appearance reported by a patient indicative of a disease\". Understanding the close relationship of Signs and Symptoms, where Signs are the objective observation of an illness, the Symptom Ontology will work to broaden it's scope to capture and document in a more robust manor these two sets of terms. Understanding that at times, the same term may be both a Sign and a Symptom"
-    domain: health
-    homepage: http://symptomontologywiki.igs.umaryland.edu/mediawiki/index.php/Main_Page
-    products: 
-      - id: symp.owl
-    taxon: 
-      id: NCBITaxon:9606
-      label: Homo sapiens
-    title: Symptom Ontology
-  - id: mf
-    contact: 
-      email: hastings@ebi.ac.uk
-      label: Janna Hastings
-    homepage: https://code.google.com/p/mental-functioning-ontology/
-    products: 
-      - id: mf.owl
-    title: Mental Functioning Ontology
-    tracker: https://code.google.com/p/mental-functioning-ontology/issues/list
-  - id: opl
-    contact: 
-      email: preets79@gmail.com
-      label: Priti Parikh
-    description: The Ontology for Parasite LifeCycle (OPL) is designed to serve as a reference ontology for parasite life cycle stages. It models the life cycle stage details of various parasites, including Trypanosoma sp., Leishmania major, and Plasmodium sp., etc. In addition to life cycle stages, the ontology also models necessary contextual details, such as host information, vector information, and anatomical location
-    homepage: http://code.google.com/p/opl-ontology/
-    ts: 
-      - id: opl.owl
-    title: Ontology for Parasite LifeCycle
-    tracker: http://code.google.com/p/opl-ontology/issues/list
-  - id: rnao
-    contact: 
-      email: BatchelorC@rsc.org
-      label: Colin Batchelor
-    domain: molecular structure
-    homepage: http://code.google.com/p/rnao/
-    products: 
-      - id: rnao.owl
-    title: RNA ontology
-  - id: pr
-    contact: 
-      email: dan5@georgetown.edu
-      label: Darren Natale
-    description: PRotein Ontology (PRO) has been designed to describe the relationships of proteins and protein evolutionary classes (ontology for ProEvo), to delineate the multiple protein forms of a gene locus (ontology for protein forms), and to interconnect existing ontologies
-    domain: proteins
-    homepage: http://proconsortium.org
-    p://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
-    products: 
-      - id: pr.owl
-    title: PRotein Ontology (PRO)
-    tracker: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
-  - id: doid
-    contact: 
-      email: lynn.schriml@gmail.com
-      label: Lynn Schriml
-    description: Creating a comprehensive hierarchical controlled vocabulary for human disease representation.
-    domain: health
-    homepage: http://diseaseontology.sourceforge.net/
-    page: http://diseaseontology.sourceforge.net/
-    products: 
-      - id: doid.owl
-    taxon: 
-      id: NCBITaxon:9606
-      label: Homo sapiens
-    title: Human disease ontology
-    tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
-  - id: ovao
-    products: 
-      - id: ovao.owl
-    tracker: https://code.google.com/p/ovae/issues/list
-  - id: wbls
-    contact: 
-      email: wchen@its.caltech.edu
-      label: Wen J. Chen
-    description: A structured controlled vocabulary of the development of <i>Caenorhabditis elegans</i>.
-    domain: anatomy
-    homepage: http://www.wormbase.org/
-    products: 
-      - id: wbls.owl
-    taxon: 
-      id: NCBITaxon:6237
-      label: Caenorhabditis
-    title: C. elegans development
-  - id: mpath
-    contact: 
-      email: PS@mole.bio.cam.ac.uk
-      label: Paul Schofield
-    description: A structured controlled vocabulary of mutant and transgenic mouse pathology phenotypes
-    domain: health
-    homepage: http://www.pathbase.net
-    products: 
-      - id: mpath.owl
-    taxon: 
-      id: NCBITaxon:10088
-      label: Mus
-    title: Mouse pathology
-  - id: bfo
-    contact: 
-      email: phismith@buffalo.edu
-      label: Barry Smith
-    description: BFO grows out of a philosophical orientation which overlaps with that of DOLCE and SUMO. Unlike these, however, it is narrowly focused on the task of providing a genuine upper ontology which can be used in support of domain ontologies developed for scientific research, as for example in biomedicine within the framework of the OBO Foundry. Thus BFO does not contain physical, chemical, biological or other terms which would properly fall within the special sciences domains. BFO is the upper level ontology upon which OBO Foundry ontologies are built.
-    domain: upper
-    homepage: http://ifomis.org/bfo/
-    page: http://ifomis.org/bfo/
-    products: 
-      - id: bfo.owl
-    title: Basic Formal Ontology
-  - id: vsao
-    contact: 
-      email: wasila.dahdul@usd.edu
-      label: Wasila Dahdul
-    description: "Vertebrate skeletal anatomy ontology. "
-    domain: anatomy
-    homepage: https://www.nescent.org/phenoscape/Main_Page
-    page: https://www.phenoscape.org/wiki/Skeletal_Anatomy_Jamboree
-    products: 
-      - id: vsao.owl
-    taxon: 
-      id: NCBITaxon:7742
-      label: Vertebrata
-    title: Vertebrate Skeletal Anatomy Ontology
-    tracker: https://sourceforge.net/tracker/?group_id=76834&atid=2257941
-  - id: to
-    contact: 
-      email: jaiswalp@science.oregonstate.edu
-      label: Pankaj Jaiswal
-    description: A controlled vocabulary of describe phenotypic traits in plants. Each trait is a distinguishable feature, characteristic, quality or phenotypic feature of a developing or mature plant.
-    domain: phenotype
-    homepage: http://www.gramene.org/plant_ontology/
-        page: http://www.gramene.org/plant_ontology/index.html#to
-    products: 
-      - id: to.owl
-    taxon: 
-      id: NCBITaxon:33090
-      label: Viridiplantae
-    title: Plant Trait Ontology
-    tracker: http://sourceforge.net/tracker/?group_id=76834&atid=835557
-  - id: nbo
-    contact: 
-      email: geg18@aber.ac.uk
-      label: George Gkoutos
-    domain: behavior
-    homepage: http://code.google.com/p/behavior-ontology
-    products: 
-      - id: nbo.owl
-    title: Neuro Behavior Ontology
-    tracker: http://code.google.com/p/behavior-ontology/issues/list
-  - id: hao
-    contact: 
-      email: diapriid@gmail.com
-      label: Matt Yoder
-    description: A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)
-    domain: anatomy
-    homepage: http://hymao.org
-    s: 
-      - id: hao.owl
-    taxon: 
-      id: NCBITaxon:7399
-      label: Hymenoptera
-    title: Hymenoptera Anatomy Ontology
-  - id: pw
-    contact: 
-      email: vpetri@mcw.edu
-      label: Victoria Petri
-    description: The Pathway Ontology is a controlled vocabulary for pathways that provides standard terms for the annotation of gene products. The Pathway Ontology is under development at <a href="http://rgd.mcw.edu">Rat Genome Database</a>.
-    domain: biological process
-    homepage: http://rgd.mcw.edu/tools/ontology/ont_search.cgi
-    page: ftp://rgd.mcw.edu/pub/data_release/PW_Introduction.doc
-    products: 
-      - id: pw.owl
-    title: Pathway ontology
-  - id: tads
-    contact: 
-      email: dsonensh@odu.edu
-      label: Daniel Sonenshine
-    description: "The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>"
-    domain: anatomy
-    homepage: http://anobase.vectorbase.org
-    ts: 
-      - id: tads.owl
-    taxon: 
-      id: NCBITaxon:6939
-      label: Ixodidae
-    title: Tick gross anatomy
-  - id: nmr
-    contact: 
-      email: schober@imbi.uni-freiburg.de
-      label: Schober Daniel
-    description: Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation.
-    domain: experiments
-    homepage: http://msi-ontology.sourceforge.net/
-    page: http://msi-ontology.sourceforge.net/ontology/NMR.owlDocument.doc
-    products: 
-      - id: nmr.owl
-    title: NMR-instrument specific component of metabolomics investigations
-  - id: mod
-    contact: 
-      email: hhe@ebi.ac.uk
-      label: Henning Hermjakob
-    description: PSI-MOD is an ontology consisting of terms that describe protein chemical modifications, logically linked by an is_a relationship in such a way as to form a direct acyclic graph (DAG). The PSI-MOD ontology has more than 45 top-level nodes, and provides alternative hierarchical paths for classifying protein modifications either by the molecular structure of the modification, or by the amino acid residue that is modified.
-    domain: proteins
-    homepage: http://psidev.info/index.php?q=node/104
-    ttp://psidev.info/index.php?q=node/104
-    products: 
-      - id: mod.owl
-    title: Protein modification
-  - id: fbbi
-    contact: 
-      email: dorloff@ncmir.ucsd.edu
-      label: David Orloff
-    description: A structured controlled vocabulary of sample preparation, visualization and imaging methods used in biomedical research.
-    domain: experiments
-    homepage: http://cellimagelibrary.org/
-    products: 
-      - id: fbbi.owl
-    title: Biological imaging methods
-  - id: mirnao
-    contact: 
-      email: vdritsou@imbb.forth.gr
-      label: Vicky Dritsou
-    description: microRNA Ontology (miRNAO) is an application ontology and it has been developed in order to drive miRNA databases.
-    homepage: http://code.google.com/p/mirna-ontology/
-    products: 
-      - id: mirnao.owl
-    title: microRNA Ontology
-  - id: xso
-    products: 
-      - id: xso.owl
-    tracker: http://sourceforge.net/tracker/?group_id=76834&atid=1127722
-  - id: eco
-    description: A rich ontology for experimental and other evidence statements.
-    domain: experiments
-    products: 
-      - id: eco.owl
-    title: Evidence codes
-  - id: ero
-    contact: 
-      email: carlotorniai@gmail.com
-      label: Carlo Torniai
-    description: ERO models research resources such instruments. protocols, reagents, animal models and biospecimens. It has been developed in the context of the eagle-i project  (http://eagle-i.net/).
-    domain: resources
-    homepage: http://code.google.com/p/eagle-i/
-    ttp://code.google.com/p/eagle-i/wiki/Documentation
-    products: 
-      - id: ero.owl
-    title: eagle-i resource ontology
-    tracker: http://code.google.com/p/eagle-i/issues/list
-  - id: envo
-    contact: 
-      email: p.buttigieg@googlemail.com
-      label: Pier Luigi Buttigieg
-    description: Ontology of environmental features and habitats
-    domain: environment
-    homepage: http://environmentontology.org/
-    page: http://environmentontology.org/
-    products: 
-      - id: envo.owl
-    title: Environment Ontology
-    tracker: http://code.google.com/p/envo/issues/
-  - id: dron
-    contact: 
-      email: hoganwr@gmail.com
-      label: William Hogan
-    description: We built this ontology primarily to support comparative effectiveness researchers studying claims data. They need to be able to query U.S. National Drug Codes (NDCs) by ingredient, mechanism of action (beta-adrenergic blockade), physiological effect (diuresis), and therapeutic intent (anti-hypertensive).
-    domain: health
-    homepage: http://code.google.com/p/dr-on
-    products: 
-      - id: dron.owl
-    title: The Drug Ontology
-    tracker: https://code.google.com/p/dr-on/issues/list
-  - id: omrse
-    contact: 
-      email: hoganwr@gmail.com
-      label: Bill Hogan
-    description: This ontology covers the domain of social entities that are related to health care, such as demographic information (social entities for recording gender (but not sex) and marital status, for example) and the roles of various individuals and organizations (patient, hospital,etc.)
-    domain: medicine
-    page: http://code.google.com/p/omrse/
-    products: 
-      - id: omrse.owl
-    taxon: 
-      id: NCBITaxon:9606
-      label: Homo sapiens
-    title: Ontology of Medically Related Social Entities
-  - id: oae
-    contact: 
-      email: yongqunh@med.umich.edu
-      label: Yongqunh He
-    description: "The Ontology of Adverse Events (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles. "
-    domain: adverse events, health
-    homepage: http://www.oae-ontology.org
-    products: 
-      - id: oae.owl
-    title: Ontology of Adverse Events
-  - id: so
-    contact: 
-      email: song-devel@lists.sourceforge.net
-      label: SONG developers
-    description: The Sequence Ontology provides a structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases. <a href="http://obo.cvs.sourceforge.net/*checkout*/song/ontology/sofa.obo">SOFA</a> is a minimal version of SO for use in data exchange.
-    domain: biological sequence
-    homepage: http://song.sourceforge.net/
-    products: 
-      - id: so.owl
-    title: Sequence types and features
-    tracker: http://sourceforge.net/tracker/?group_id=72703&atid=810408
-  - id: exo
-    description: Significant progress has been made over the last several years in collecting and improving access to genomic, toxicology, and health data to promote understanding about environmental influences on human health.  The resulting information resources, however, lack extensive and reliable exposure data, which are required to translate molecular insights, elucidate environmental contributions to diseases, and assess human health risks at the individual and population levels.  We report our development of an Exposure Ontology, ExO, designed to address this information gap by facilitating centralization and integration of exposure data to inform understanding of environmental health. Like other widely used ontologies, ExO is intended to bridge the gap between exposure science and diverse environmental health disciplines including toxicology, epidemiology, disease surveillance, and epigenetics
-    domain: health
-    homepage: http://ctdbase.org/downloads/#exposures
-    page: http://ctdbase.org/downloads/#exposures
-    products: 
-      - id: exo.owl
-    title: Exposure ontology
-  - id: hom
-    contact: 
-      email: julien.roux@unil.ch
-      label: ''
-    description: This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology.
-    homepage: http://bioinfo.unil.ch
-    products: 
-      - id: hom.owl
-    title: homology_ontology
-  - id: fao
-    contact: 
-      email: maria@genome.stanford.edu
-      label: Maria Costanzo
-    description: A structured controlled vocabulary for the anatomy of fungi.
-    domain: anatomy
-    homepage: http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/
-    page: http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/#description
-    products: 
-      - id: fao.owl
-    taxon: 
-      id: NCBITaxon:4751
-      label: Fungal
-    title: Fungal gross anatomy
-  - id: ogsf
-    description: Ontology for Genetic Susceptibility Factor (OGSF) is an application ontology to model/represent the notion of genetic susceptibility to a specific disease or an adverse event or a pathological biological process. It is developed using BFO2.0's framwork. The ontology is under the domain of genetic epidemiology.
-    homepage: https://code.google.com/p/ogsf/
-    products: 
-      - id: ogsf.owl
-    title: Ontology of Genetic Susceptibility Factor
-    tracker: https://code.google.com/p/ogsf/issues/list
-  - id: mfoem
-    contact: 
-      email: hastings@ebi.ac.uk
-      label: Janna Hastings
-    description: An ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings, designed to support interdisciplinary research by providing unified annotations.
-    domain: health
-    homepage: https://code.google.com/p/emotion-ontology/
-    products: 
-      - id: mfoem.owl
-    title: Emotion Ontology
-    tracker: https://code.google.com/p/emotion-ontology/issues/list
-  - id: aeo
-    contact: 
-      email: J.Bard@ed.ac.uk
-      label: Jonathan Bard
-    description: AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology, to about 200 classes using the is_a relationship; it thus provides a detailed type classification for tissues. The new classes were chosen for their use in categorizing the major vertebrate and invertebrate anatomy ontologies at a granularity adequate for tissues of a single cell type. The ontology should be useful in increasing the amount of knowledge in anatomy ontologies, facilitating annotation and enabling interoperability across anatomy ontologies
-    domain: anatomy
-    homepage: http://www.obofoundry.org/wiki/index.php/AEO:Main_Page
-    products: 
-      - id: aeo.owl
-    title: Anatomical Entity Ontology
-  - id: tgma
-    contact: 
-      email: louis@imbb.forth.gr
-      label: C. Louis
-    description: A structured controlled vocabulary of the anatomy of mosquitoes.
-    domain: anatomy
-    homepage: http://anobase.vectorbase.org
-    products: 
-      - id: tgma.owl
-    taxon: 
-      id: NCBITaxon:44484
-      label: Anopheles
-    title: Mosquito gross anatomy
-  - id: ddanat
-    contact: 
-      email: r-chisholm@northwestern.edu
-      label: Rex Chisholm
-    description: A structured controlled vocabulary of the anatomy of the slime-mould <i>Dictyostelium discoideum</i>.
-    domain: anatomy
-    homepage: http://dictybase.org/
-    products: 
-      - id: ddanat.owl
-    taxon: 
-      id: NCBITaxon:44689
-      label: Dictyostelium discoideum
-    title: Dictyostelium discoideum anatomy
-    tracker: http://sourceforge.net/tracker/?group_id=76834&atid=974664
-  - id: vhog
-    products: 
-      - id: vhog.owl
-  - id: zfa
-    contact: 
-      email: zfinadmin@zfin.org
-      label: ZFIN administrators
-    description: A structured controlled vocabulary of the anatomy and development of the Zebrafish (<i>Danio rerio</i>).
-    domain: anatomy
-    homepage: http://zfin.org/zf_info/anatomy/dict/sum.html
-    products: 
-      - id: zfa.owl
-    taxon: 
-      id: NCBITaxon:7954
-      label: Danio
-    title: Zebrafish anatomy and development
-    tracker: http://sourceforge.net/tracker/?group_id=76834&atid=994726
-  - id: resid
-    contact: 
-      email: john.garavelli@ebi.ac.uk
-      label: John Garavelli
-    description: For the description of covalent bonds in proteins.
-    domain: proteins
-    homepage: http://www.ebi.ac.uk/RESID/
-    products: 
-      - id: resid.owl
-    title: Protein covalent bond
-  - id: wbbt
-    contact: 
-      email: raymond@caltech.edu
-      label: Raymond Lee
-    description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis elegans</i>.
-    domain: anatomy
-    homepage: http://www.wormbase.org/
-    products: 
-      - id: wbbt.owl
-    taxon: 
-      id: NCBITaxon:6237
-      label: Caenorhabditis
-    title: C. elegans gross anatomy
-    tracker: https://sourceforge.net/tracker/?group_id=76834&atid=1069773
-  - id: mamo
-    contact: 
-      email: n.lenovere@gmail.com
-      label: Nicolas Le Novere
-    description: The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features.
-    homepage: http://sourceforge.net/projects/mamo-ontology/
-    products: 
-      - id: mamo.owl
-    title: Mathematical modeling ontology
-    tracker: http://sourceforge.net/p/mamo-ontology/tickets/
-  - id: spd
-    contact: 
-      email: ramirez@macn.gov.ar
-      label: Martin Ramirez
-    description: An ontology for spider comparative biology including anatomical parts (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web, borrow).
-    domain: anatomy
-    homepage: http://research.amnh.org/atol/files/
-    products: 
-      - id: spd.owl
-    taxon: 
-      id: NCBITaxon:6893
-      label: spiders
-    title: Spider Ontology
-    tracker: http://sourceforge.net/tracker/?group_id=76834&atid=977401
-  - id: idomal
-    contact: 
-      email: topalis@imbb.forth.gr
-      label: Pantelis Topalis
-    description: An application ontology to cover all aspects of malaria (clinical, epidemiological, biological, etc) as well as the intervention attempts to control it.
-    domain: health
-    homepage: http://anobase.vectorbase.org
-    products: 
-      - id: idomal.owl
-    title: Malaria Ontology
-  - id: mfo
-    contact: 
-      email: Thorsten.Henrich@embl-heidelberg.de
-      label: Thorsten Henrich
-    description: A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.
-    domain: anatomy
-    products: 
-      - id: mfo.owl
-    taxon: 
-      id: NCBITaxon:8089
-      label: Oryzias
-    title: Medaka fish anatomy and development
-  - id: bcgo
-    description: "The Beta Cell Genomics Ontology (BCGO) is an application ontology built for the beta cell genomics studies aiming to support database annotation, complicated semantic queries, and automated cell type classification."
-    homepage: http://code.google.com/p/bcgo-ontology/
-    ttp://code.google.com/p/bcgo-ontology/
-    products: 
-      - id: bcgo.owl
-    title: Beta Cell Genomics Ontology
-    tracker: http://code.google.com/p/bcgo-ontology/issues/list
-  - id: sep
-    contact: 
-      email: psidev-gps-dev@lists.sourceforge.net
-      label: SEP developers via the PSI and MSI mailing lists
-    description: A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments, such as, and including, gel electrophoresis, column chromatography, capillary electrophoresis, centrifugation and so on. Developed jointly by the HUPO Proteomics Standards Initiative and The Metabolomics Standards Initiative.
-    domain: provenance
-    homepage: http://psidev.info/index.php?q=node/312
-    page: http://psidev.info/index.php?q=node/312
-    products: 
-      - id: sep.owl
-    title: Sample processing and separation techniques
-  - id: miapa
-    contact: 
-      email: hlapp@drycafe.net
-      label: Hilamr Lapp
-    description: The MIAPA ontology is an application ontology to formalize annotation of phylogenetic data according to the emerging Minimum Information About a Phylogenetic Analysis (MIAPA) metadata reporting standard.
-    homepage: http://www.evoio.org/wiki/MIAPA
-    s: 
-      - id: miapa.owl
-    title: MIAPA Ontology
-    tracker: https://github.com/miapa/miapa/issues
-  - id: fbsp
-    contact: 
-      email: ma11@gen.cam.ac.uk
-      label: Michael Ashburner
-    description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase.
-    domain: taxonomy
-    homepage: http://www.flybase.org/
-    products: 
-      - id: fbsp.owl
-    taxon: 
-      id: NCBITaxon:7227
-      label: Drosophila
-    title: Fly taxonomy
-    tracker: https://cedar.bio.indiana.edu/trac/env/ontologies/wiki/PublicWikiStart
-  - id: cvdo
-    contact: 
-      email: adrien.barton@gmail.com
-      label: Adrien Barton
-    description: CVDO is an ontology based on the OGMS model of disease, designed to describe entities related to cardiovascular diseases (including the diseases themselves, the underlying disorders, and the related pathological processes). It is being developed at the INSERM research institute (Institut National de la Santé et de la Recherche Médicale).
-    domain: health
-    homepage: https://code.google.com/p/cvdo/
-    products: 
-      - id: cvdo.owl
-    title: Cardiovascular Disease Ontology
-    tracker: https://code.google.com/p/cvdo/issues/list
-  - id: tto
-    contact: 
-      email: peteremidford@yahoo.com
-      label: Peter Midford
-    description: The Teleost taxonomy ontology is being used to facilitate annotation of phenotypes, particularly for taxa that are not covered by NCBI because no submissions of molecular data have been made. Taxonomy ontologies can also be valuable in annotating legacy data, where authors make phenotype or ecological assertions (e.g., host-parasite associations) that refer to groups that are reorganized or no longer recognized. The taxonomy ontology serves as the source of taxa for our project's use for identifying evolutionary changes that match the phenotype of a zebrafish mutant.
-    domain: taxonomy
-    homepage: https://www.nescent.org/phenoscape/Main_Page
-    products: 
-      - id: tto.owl
-    taxon: 
-      id: NCBITaxon:32443
-      label: Teleostei
-    title: Teleost taxonomy
-    tracker: http://sourceforge.net/tracker/?group_id=76834&atid=1046550
-
-######################
-##  OTHER METADATA  ##
-######################
- 
-mailing-lists:
- 
-  - id: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
-    labe: OBO Anatomy Mailing List
- 
-organizations:
- 
-  - id: http://geneontology.org
- 
-persons:
- 
-  - id: http://orcid.org/0000-0002-6601-2165
-    label: Chris Mungall
- 
