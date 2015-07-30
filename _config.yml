@@ -116,8 +116,7 @@ ontologies:
   description: a formalization of concepts and relations relevant to evolutionary
     comparative analysis, such as phylogenetic trees, OTUs (operational taxonomic
     units) and compared characters (including molecular characters as well as other
-    types). CDAO is being developed by scientists in biology, evolution, and computer
-    science
+    types).
   homepage: http://sourceforge.net/apps/mediawiki/cdao/index.php?title=Main_Page
   id: cdao
   layout: ontology_detail
@@ -130,6 +129,7 @@ ontologies:
   domain: biochemistry
   homepage: http://www.ebi.ac.uk/chebi
   id: chebi
+  in_foundry: true
   layout: ontology_detail
   page: http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual
   products:
@@ -325,6 +325,13 @@ ontologies:
   products:
   - {id: eo.owl}
   title: Plant Environmental Conditions
+- description: An ontology designed to support the semantic annotation of epidemiology
+    resources
+  homepage: https://code.google.com/p/epidemiology-ontology/
+  id: epo
+  products:
+  - {id: epo.owl}
+  title: Epidemiology Ontology
 - contact: {email: carlotorniai@gmail.com, label: Carlo Torniai}
   description: ERO models research resources such instruments. protocols, reagents,
     animal models and biospecimens. It has been developed in the context of the eagle-i
@@ -348,9 +355,6 @@ ontologies:
   products:
   - {id: exo.owl}
   title: Exposure ontology
-- layout: ont
-  tags: [announce]
-  title: Uberon
 - contact: {email: maria@genome.stanford.edu, label: Maria Costanzo}
   description: A structured controlled vocabulary for the anatomy of fungi.
   domain: anatomy
@@ -490,6 +494,7 @@ ontologies:
   description: An ontology for describing the function of genes and gene products
   domain: biology
   id: go
+  in_foundry: true
   integration_server: http://build.berkeleybop.org/view/GO
   label: GO
   layout: ontology_detail
@@ -700,26 +705,15 @@ ontologies:
   taxon: {id: 'NCBITaxon:44484', label: Anopheles}
   title: Mosquito insecticide resistance
 - contact: {email: shimoyama@mcw.edu, label: Mary Shimoyama}
-  description: The Epidemiology Ontology is an ontology designed to support the semantic
-    annotation of epidemiology resources. It is being developed under the EU-funded
-    EPIWORK project, a multidisciplinary research effort which aims at increasing
-    the amount of epidemiological data available, improving disease surveillance systems,
-    and promoting the collaboration among epidemiological researchers. The EO is integrated
-    into NERO (Network of Epidemiology Related Ontologies), a collection of existing
-    ontologies that supports the semantic annotation of epidemiology resources contained
-    in the Epidemic Marketplace (EM), a platform for sharing resources and knowledge
-    within the Epidemiology community. NERO currently includes thirteen external ontologies
-    (the majority are OBO or OBO candidate ontologies) which already provide a high
-    coverage of most epidemiology related areas. As such, the EPO focuses on neglected/highly
-    specific areas of epidemiology and will articulate with other OBO ontologies as
-    needed.
+  description: 'The Measurement Method Ontology is designed to represent the variety
+    of methods used to make qualitative and quantitative clinical and phenotype measurements
+    both in the clinic and with model organisms. '
   domain: clinical
-  homepage: https://code.google.com/p/epidemiology-ontology/
-  id: epo
+  id: mmo
   layout: ontology_detail
   products:
-  - {id: epo.owl}
-  title: Epidemiology Ontology
+  - {id: mmo.owl}
+  title: Measurement method ontology
 - contact: {email: stoeckrt@pcbi.upenn.edu, label: Chris Stoeckert}
   description: Concepts, definitions, terms, and resources for standardized description
     of a microarray experiment in support of MAGE v.1. The MGED ontology is divided
@@ -729,18 +723,16 @@ ontologies:
   domain: experiments
   homepage: http://mged.sourceforge.net/ontologies/MGEDontology.php
   id: mo
+  is_obsolete: true
   layout: ontology_detail
   page: http://mged.sourceforge.net/software/downloads.php
   products:
   - {id: mo.owl}
+  replaced_by: obi
   title: Microarray experimental conditions
 - contact: {email: hhe@ebi.ac.uk, label: Henning Hermjakob}
   description: PSI-MOD is an ontology consisting of terms that describe protein chemical
-    modifications, logically linked by an is_a relationship in such a way as to form
-    a direct acyclic graph (DAG). The PSI-MOD ontology has more than 45 top-level
-    nodes, and provides alternative hierarchical paths for classifying protein modifications
-    either by the molecular structure of the modification, or by the amino acid residue
-    that is modified.
+    modifications
   domain: proteins
   homepage: http://psidev.info/index.php?q=node/104
   id: mod
@@ -775,8 +767,7 @@ ontologies:
   title: Mouse pathology
 - contact: {email: luisa@ebi.ac.uk, label: Luisa Montecchi}
   description: A structured controlled vocabulary for the annotation of experiments
-    concerned with proteomics mass spectrometry. Developed by the HUPO Proteomics
-    Standards Initiative.
+    concerned with proteomics mass spectrometry.
   domain: experiments
   homepage: http://www.psidev.info/index.php?q=node/257
   id: ms
@@ -825,10 +816,7 @@ ontologies:
   - {id: nmr.owl}
   title: NMR-instrument specific component of metabolomics investigations
 - contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
-  description: 'The Ontology of Adverse Events (OAE) is a biomedical ontology in the
-    domain of adverse events. OAE aims to standardize adverse event annotation, integrate
-    various adverse event data, and support computer-assisted reasoning.  OAE is a
-    community-based ontology. Its development follows the OBO Foundry principles. '
+  description: A biomedical ontology in the domain of adverse events
   domain: adverse events, health
   homepage: http://www.oae-ontology.org
   id: oae
@@ -849,11 +837,12 @@ ontologies:
   title: Ontology of Biological Attributes
   tracker: https://github.com/obophenotype/bio-attribute-ontology/issues
 - contact: {email: bpeters@liai.org, label: Bjoern Peters}
-  description: The Ontology for Biomedical Investigations (OBI) project is developing
-    an integrated ontology for the description of life-science and clinical investigations
+  description: An integrated ontology for the description of life-science and clinical
+    investigations
   domain: experiments
   homepage: http://purl.obofoundry.org/obo/obi
   id: obi
+  in_foundry: true
   layout: ontology_detail
   license: https://creativecommons.org/licenses/by/3.0/
   page: http://obi-ontology.org/page/Technical_Reports
@@ -871,11 +860,8 @@ ontologies:
   - {id: ogg.owl}
   title: The Ontology of Genes and Genomes
   tracker: https://code.google.com/p/ogg/issues/list
-- description: Using BFO as its framwork, OGI formalized the genomic element by defining
-    an upper class 'genetic interval'. The definition of 'genetic interval' is "the
-    spatial continuous physical entity which contains ordered genomic sets(DNA, RNA,
-    Allele, Marker,etc.) between and including two points (Nucleic_Acid_Base_Residue)
-    on a chromosome or RNA molecule which must have a liner primary sequence structure.
+- description: An ontology that formalizes the genomic element by defining an upper
+    class genetic interval
   homepage: https://code.google.com/p/ontology-for-genetic-interval/
   id: ogi
   layout: ontology_detail
@@ -897,8 +883,7 @@ ontologies:
   tracker: http://code.google.com/p/ogms/issues/list
 - description: Ontology for Genetic Susceptibility Factor (OGSF) is an application
     ontology to model/represent the notion of genetic susceptibility to a specific
-    disease or an adverse event or a pathological biological process. It is developed
-    using BFO2.0's framwork. The ontology is under the domain of genetic epidemiology.
+    disease or an adverse event or a pathological biological process.
   homepage: https://code.google.com/p/ogsf/
   id: ogsf
   layout: ontology_detail
@@ -927,12 +912,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Ontology of Medically Related Social Entities
 - contact: {email: preets79@gmail.com, label: Priti Parikh}
-  description: The Ontology for Parasite LifeCycle (OPL) is designed to serve as a
-    reference ontology for parasite life cycle stages. It models the life cycle stage
-    details of various parasites, including Trypanosoma sp., Leishmania major, and
-    Plasmodium sp., etc. In addition to life cycle stages, the ontology also models
-    necessary contextual details, such as host information, vector information, and
-    anatomical location
+  description: A reference ontology for parasite life cycle stages.
   homepage: http://code.google.com/p/opl-ontology/
   id: opl
   layout: ontology_detail
@@ -956,22 +936,20 @@ ontologies:
   - {id: ovao.owl}
   tracker: https://code.google.com/p/ovae/issues/list
 - contact: {email: geg18@aber.ac.uk, label: George Gkoutos}
-  description: Phenotypic qualities (properties). This ontology can be used in conjunction
-    with other ontologies such as GO or anatomical ontologies to refer to phenotypes.
-    Examples of qualities are red, ectopic, high temperature, fused, small, edematous
-    and arrested.
+  description: An ontology of phenotypic qualities (properties, attributes or characteristics)
   domain: phenotype
-  homepage: http://obofoundry.org/wiki/index.php/PATO:Main_Page
+  homepage: https://github.com/pato-ontology/pato/
   id: pato
+  in_foundry: true
   jobs:
   - {id: 'http://build.berkeleybop.org/job/build-pato', type: DryRunBuild}
   layout: ontology_detail
   products:
   - {id: pato.owl}
   - {id: pato.obo}
-  repository: https://github.com/gkoutos/pato
+  repository: https://github.com/pato-ontology/pato/
   title: Phenotypic quality
-  tracker: https://github.com/gkoutos/pato/issues
+  tracker: https://github.com/pato-ontology/pato/issues
 - contact: {email: rwalls2008@gmail.com, label: Ramona Walls}
   description: The Population and Community Ontology (PCO) describes material entities,
     qualities, and processes related to collections of interacting organisms such
@@ -992,6 +970,7 @@ ontologies:
   domain: anatomy and development
   homepage: http://www.plantontology.org
   id: po
+  in_foundry: true
   layout: ontology_detail
   page: http://www.plantontology.org/docs/docs.html
   products:
@@ -1020,6 +999,7 @@ ontologies:
   domain: proteins
   homepage: http://proconsortium.org
   id: pr
+  in_foundry: true
   layout: ontology_detail
   products:
   - {id: pr.owl}
@@ -1027,8 +1007,7 @@ ontologies:
   tracker: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
 - contact: {email: vpetri@mcw.edu, label: Victoria Petri}
   description: The Pathway Ontology is a controlled vocabulary for pathways that provides
-    standard terms for the annotation of gene products. The Pathway Ontology is under
-    development at <a href="http://rgd.mcw.edu">Rat Genome Database</a>.
+    standard terms for the annotation of gene products.
   domain: biological process
   homepage: http://rgd.mcw.edu/tools/ontology/ont_search.cgi
   id: pw
@@ -1047,11 +1026,8 @@ ontologies:
   - {id: resid.owl}
   title: Protein covalent bond
 - contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
-  description: REX is an ontology of physico-chemical processes, i.e. physico-chemical
-    changes occurring in course of time. REX includes both microscopic processes (involving
-    molecular entities or subatomic particles) and macroscopic processes. Some biochemical
-    processes from Gene Ontology (GO Biological process) can be described as instances
-    of REX.
+  description: An ontology of physico-chemical processes, i.e. physico-chemical changes
+    occurring in course of time.
   id: rex
   layout: ontology_detail
   products:
@@ -1104,10 +1080,7 @@ ontologies:
 - contact: {email: psidev-gps-dev@lists.sourceforge.net, label: SEP developers via
       the PSI and MSI mailing lists}
   description: A structured controlled vocabulary for the annotation of sample processing
-    and separation techniques in scientific experiments, such as, and including, gel
-    electrophoresis, column chromatography, capillary electrophoresis, centrifugation
-    and so on. Developed jointly by the HUPO Proteomics Standards Initiative and The
-    Metabolomics Standards Initiative.
+    and separation techniques in scientific experiments.
   domain: provenance
   homepage: http://psidev.info/index.php?q=node/312
   id: sep
@@ -1127,6 +1100,7 @@ ontologies:
   title: Social Insect Behavior Ontology
   tracker: https://github.com/obophenotype/sibo/issues
 - contact: {email: song-devel@lists.sourceforge.net, label: SONG developers}
+  depicted_by: http://sequenceontology.org/img/so_icon.png
   description: A structured controlled vocabulary for sequence annotation, for the
     exchange of annotation data and for the description of sequence objects in databases.
   domain: biological sequence
@@ -1136,10 +1110,10 @@ ontologies:
   products:
   - {id: so.owl}
   publications:
-  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/20226267', title: Evolution of the Sequence
-      Ontology terms and relationships.}
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/15892872', title: 'The Sequence Ontology:
       a tool for the unification of genome annotations.'}
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/20226267', title: Evolution of the Sequence
+      Ontology terms and relationships.}
   title: Sequence types and features
   tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
 - contact: {email: ramirez@macn.gov.ar, label: Martin Ramirez}
@@ -1163,13 +1137,8 @@ ontologies:
   - {id: swo.owl}
   title: Software ontology
 - contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
-  description: 'The symptom ontology was designed around the guiding concept of a
-    symptom being: "A perceived change in function, sensation or appearance reported
-    by a patient indicative of a disease". Understanding the close relationship of
-    Signs and Symptoms, where Signs are the objective observation of an illness, the
-    Symptom Ontology will work to broaden it''s scope to capture and document in a
-    more robust manor these two sets of terms. Understanding that at times, the same
-    term may be both a Sign and a Symptom'
+  description: An ontologu of symptoms, being a perceived change in function, sensation
+    or appearance reported by a patient indicative of a disease
   domain: health
   homepage: http://symptomontologywiki.igs.umaryland.edu/mediawiki/index.php/Main_Page
   id: symp
@@ -1205,12 +1174,7 @@ ontologies:
 - contact: {email: peteremidford@yahoo.com, label: Peter Midford}
   description: A vocabulary of taxonomic ranks intended to replace the sets of rank
     terms found in the Teleost Taxonomy Ontology, the OBO translation of the NCBI
-    taxonomy and similar OBO taxonomy ontologies.  It provides terms for taxonomic
-    ranks drawn from both the NCBI taxonomy database and from a rank vocabulary developed
-    for the TDWG biodiversity information standards group.  Cross references to appearances
-    of each term in each source are provided.  Consistent with its intended use as
-    a vocabulary of labels, there is no relation specifying an ordering of the rank
-    terms.
+    taxonomy and similar OBO taxonomy ontologies.
   domain: taxonomy
   homepage: https://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary
   id: taxrank
@@ -1257,14 +1221,7 @@ ontologies:
   title: Pathogen transmission
   tracker: http://sourceforge.net/tracker/?&group_id=76834&atid=1037853
 - contact: {email: peteremidford@yahoo.com, label: Peter Midford}
-  description: The Teleost taxonomy ontology is being used to facilitate annotation
-    of phenotypes, particularly for taxa that are not covered by NCBI because no submissions
-    of molecular data have been made. Taxonomy ontologies can also be valuable in
-    annotating legacy data, where authors make phenotype or ecological assertions
-    (e.g., host-parasite associations) that refer to groups that are reorganized or
-    no longer recognized. The taxonomy ontology serves as the source of taxa for our
-    project's use for identifying evolutionary changes that match the phenotype of
-    a zebrafish mutant.
+  description: An ontology covering the taxonomy of teleosts (bony fish)
   domain: taxonomy
   homepage: https://www.nescent.org/phenoscape/Main_Page
   id: tto
@@ -1282,11 +1239,8 @@ ontologies:
   - {id: chebi, subset: uberon/chebi_import.owl}
   - {id: pr, subset: uberon/pr_import.owl}
   depicted_by: http://uberon.github.io/images/u-logo.jpg
-  description: Uberon is an integrated cross-species anatomy ontology representing
-    a variety of entities classified according to traditional anatomical criteria
-    such as structure, function and developmental lineage. The ontology includes comprehensive
-    relationships to taxon-specific anatomical ontologies, allowing integration of
-    functional, phenotype and expression data
+  description: An integrated cross-species anatomy ontology covering animals and bridging
+    multiple species-specific ontologies
   domain: anatomy
   exampleClass: UBERON_0002046
   google_plus: +UberonOrg
