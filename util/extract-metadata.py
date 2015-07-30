@@ -26,7 +26,7 @@ def main():
     # SUBCOMMAND
     parser_n = subparsers.add_parser('validate', help='validate yml inside md')
     ##parser_n.add_argument('-d', '--depth', type=int, help='number of hops')
-    parser_n.set_defaults(function=validate)
+    parser_n.set_defaults(function=validate_markdown)
     parser_n.add_argument('files',nargs='*')
 
     # SUBCOMMAND
@@ -42,7 +42,10 @@ def main():
     func(args)
 
 
-def validate(args):
+def validate_markdown(args):
+    """
+    ensure the yaml encoded inside a YAML file is syntactically valid
+    """
     for fn in args.files:
         print("VALIDATING:"+fn)
         # we don't do anything with the results; an
@@ -87,6 +90,25 @@ def extract(mdtext):
     yamltext = "\n".join(ylines)
     obj = yaml.load(yamltext)
     return (obj, "\n".join(mlines))
+
+def write_legacy_metadata_objects(onts, stream):
+    """
+    write to the old ontologies.txt format
+    """
+    for ont in onts:
+        write_legacy_metadata_object(ont, stream)
+
+def write_legacy_metadata_object(ont, stream):
+    """
+    write to the old ontologies.txt format (single object) - TODO
+    """
+    write_pv('id', ont['id'], stream)
+    write_pv('title', ont['title'], stream)
+    write_pv('namespace', ont['id'].upper, stream)
+    write_pv('foundry', ont['is_foundry'], stream)
+
+def write_pv(k,v,s):
+    s.write(p + "\t" + v)
 
 if __name__ == "__main__":
     main()

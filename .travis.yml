@@ -1,0 +1,23 @@
+language: python
+python:
+  - "3.4"
+
+# command to install dependencies
+install:
+  - "pip install -r requirements.txt"
+  - "pip install ."
+
+# command to run tests
+script: make test
+
+after_success:
+  coveralls
+
+# whitelist
+branches:
+  only:
+    - master
+
+notifications:
+  email:
+    - cjmungall@lbl.gov

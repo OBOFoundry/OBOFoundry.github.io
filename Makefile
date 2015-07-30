@@ -2,6 +2,8 @@ ONTS := $(wildcard ontology/*md)
 
 all: _config.yml
 
+test: validate all
+
 t:
 	echo $(ONTS)
 

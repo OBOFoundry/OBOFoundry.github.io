@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/monarch-initiative/dipper.svg?branch=master)](https://travis-ci.org/monarch-initiative/dipper)
+
 ## OBO Foundry website ALPHA
 
 ### What is this?
