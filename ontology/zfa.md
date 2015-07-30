@@ -14,7 +14,7 @@ taxon:
   id: NCBITaxon:7954
   label: Danio
 title: Zebrafish anatomy and development
-tracker:https://github.com/cerivs/zebrafish-anatomical-ontology/issues
+tracker: https://github.com/cerivs/zebrafish-anatomical-ontology/issues
 ---
 
 A structured controlled vocabulary of the anatomy and development of the Zebrafish (<i>Danio rerio</i>).
