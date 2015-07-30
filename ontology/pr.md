@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: pr
+in_foundry: true
 contact: 
   email: dan5@georgetown.edu
   label: Darren Natale

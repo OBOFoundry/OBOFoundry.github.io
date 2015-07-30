@@ -1,8 +1,9 @@
 ---
 layout: ontology_detail
 id: obi
+in_foundry: true
 title: Ontology for Biomedical Investigations
-description: The Ontology for Biomedical Investigations (OBI) project is developing an integrated ontology for the description of life-science and clinical investigations
+description: An integrated ontology for the description of life-science and clinical investigations
 contact: 
   email: bpeters@liai.org
   label: Bjoern Peters

@@ -4,7 +4,7 @@ id: uberon
 type: owl:Ontology
 label: Uberon
 title: Uberon multi-species anatomy ontology
-description: Uberon is an integrated cross-species anatomy ontology representing a variety of entities classified according to traditional anatomical criteria such as structure, function and developmental lineage. The ontology includes comprehensive relationships to taxon-specific anatomical ontologies, allowing integration of functional, phenotype and expression data
+description: An integrated cross-species anatomy ontology covering animals and bridging multiple species-specific ontologies
 homepage: http://uberon.org
 page: http://en.wikipedia.org/wiki/Uberon
 twitter: uberanat

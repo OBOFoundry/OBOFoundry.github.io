@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: chebi
+in_foundry: true
 alternatePrefix: ChEBI
 title: Chemical entities of biological interest
 description: A structured classification of chemical compounds of biological relevance.

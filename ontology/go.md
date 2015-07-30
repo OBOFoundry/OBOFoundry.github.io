@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: go
+in_foundry: true
 label: GO
 description: An ontology for describing the function of genes and gene products
 title: Gene Ontology
