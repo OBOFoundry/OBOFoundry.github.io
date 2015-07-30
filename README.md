@@ -22,7 +22,7 @@ which means that the entire site can be seen on
 http://obofoundry.github.io (no need to run a dedicated webserver)
 
 At the same time, we are not dependent on github - we could do our own
-static generation, e.g. with a Jenkins bob
+static generation, e.g. with a Jenkins job
 
 ### I have some comments
 
