@@ -3,6 +3,7 @@ layout: ontology_detail
 id: ro
 title: Relations Ontology
 canonical: ro.owl
+descriptions: Relationship types shared across multiple ontologies
 homepage: https://code.google.com/p/obo-relations/issues
 tracker: https://github.com/oborel/obo-relations/issues
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-relations

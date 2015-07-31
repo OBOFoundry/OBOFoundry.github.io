@@ -45,6 +45,11 @@ layout: default
           </dt>
           {% endif %}
 
+          <dt>ID Space</dt>
+          <dt>
+              <a href="http://purl.obolibrary.org/obo/{{page.id}}/">{{page.id}}</a>
+          </dt>
+
           <dt>PURL</dt>
           <dt>
               <a href="http://purl.obolibrary.org/obo/{{page.id}}.owl">http://purl.obolibrary.org/obo/{{page.id}}.owl</a>
@@ -72,7 +77,7 @@ layout: default
 
           <dt>Domain</dt>
           <dt>
-            <a href="{{page.domain}}">{{page.domain}}</a>
+            <a href="/domain/{{page.domain}}.html">{{page.domain}}</a>
           </dt>
 
           {% if page.termgenie %}
@@ -101,6 +106,15 @@ layout: default
           {% for p in page.publications %}
           <dt>
             <a href="{{p.id}}">{{p.title}}</a>
+          </dt>
+          {% endfor %}
+          {% endif %}
+
+          {% if page.jobs %}
+          <dt>Jobs</dt>
+          {% for p in page.jobs %}
+          <dt>
+            <a href="{{p.id}}">{{p.type}}</a>
           </dt>
           {% endfor %}
           {% endif %}
