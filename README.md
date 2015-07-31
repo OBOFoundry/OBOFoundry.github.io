@@ -38,14 +38,18 @@ Please do! Fork and make PR, but beware things are not yet stable
 
  * [registry/](registry)   `<-- DERIVED yaml, json and RDF. DO NOT EDIT`
     * [registry/ontologies.yaml](registry/ontologies.yaml)  `<-- READONLY`
- * [ontology/](ontology/)  `<-- source for ontology metadata. EDIT THIS`
-    * [ontology/obi.md](ontology/obi.md)
+    * `registry/ontologies.rdf  <-- TODO`
+    * `registry/ontologies.jsonld  <-- TODO`
+ * [ontology/](ontology/)  `<-- source for ontology metadata. EDIT IN HERE`
+    * [ontology/obi.md](ontology/obi.md)  `<-- metadata (yml) and markdown for display. EDIT THIS`
     * [ontology/uberon.md](ontology/uberon.md)
     * ...
- * [Makefile](Makefile) `<-- For compiling derived artefacts`
+ * [Makefile](Makefile) `<-- For compiling derived artefacts and running tests`
+ * [.travis.yml](.travis.ml) `<-- continuous integration config`
  * [_layouts/](_layouts) `<-- Jekyll layouts`
  * [_includes/](_includes) `<-- Jekyll includes`
- * [_util/](util/) `<-- useful python`
+ * [_util/](util/) `<-- scripts etc`
+    * [_util/extract-metadata.py](util/extract-metadata.py) `<-- tool for working with .md files`
 
 ## Instructions for Registry Curators
 
@@ -113,6 +117,13 @@ For example:
 
 Note that joe randoms cannot just come in and update things. Anyone with a github ID can make [pull request](https://help.github.com/articles/using-pull-requests/)
 (aka PR). It is up to the OBO team whether the PR may be merged or rejected.
+
+Note that if you make a syntax error whilst editing, then the travis
+check will fail. Your PR will have a big red X next to it, in which
+case the OBO team will not merge your PR. Don't worry, all you have to
+do is make further edits to fix the syntax error.
+
+TODO: add a quick guide to yaml, and the tags we use.
 
 ## Adding news
 
