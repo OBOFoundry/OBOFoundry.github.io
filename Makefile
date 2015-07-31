@@ -13,13 +13,13 @@ _config.yml: _config_header.yml $(ONTS)
 registry/ontologies.yml: $(ONTS)
 	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
-# TODO
+# TODO: add @context
 registry/ontologies.jsonld: registry/ontologies.yml
 	./util/yaml2json.py $< > $@.tmp && mv $@.tmp $@
 
 # TODO
 registry/ontologies.ttl: registry/ontologies.jsonld
-	riot $< > $@.tmp && mv $@.tmp $@
+	riot registry/context.jsonld $< > $@.tmp && mv $@.tmp $@
 
 
 validate: $(ONTS)

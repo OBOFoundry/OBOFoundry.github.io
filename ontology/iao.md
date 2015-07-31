@@ -18,6 +18,7 @@ products:
       label: Mathias Brochhausen
 title: Information Artifact Ontology
 tracker: http://code.google.com/p/information-artifact-ontology/issues/list
+depicted_by: https://avatars0.githubusercontent.com/u/13591168?v=3&s=200
 ---
 
 The Information Artifact Ontology (IAO) is a new ontology of information entities, originally driven by work by the OBI digital entity and realizable information entity branch. 
