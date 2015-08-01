@@ -11,7 +11,7 @@ homepage: http://www.gramene.org
 page: http://www.gramene.org/plant_ontology/index.html#eo
 products: 
   - id: eo.owl
-tracker: https://sourceforge.net/p/obo/plant-environment-ontology-eo/
+tracker: https://github.com/Planteome/plant-environment-ontology/issues
 ---
 
 A structured, controlled vocabulary for the representation of plant environmental conditions.
