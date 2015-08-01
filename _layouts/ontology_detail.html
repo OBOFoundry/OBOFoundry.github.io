@@ -45,7 +45,13 @@ layout: default
           </dt>
           {% endif %}
 
-          <dt>ID Space</dt>
+          <dt>
+            ID Space
+            <span data-toggle="tooltip" 
+                  title="ID prefix" 
+                  html="true">
+            </span>
+          </dt>
           <dt>
               <a href="http://purl.obolibrary.org/obo/{{page.id}}/">{{page.id}}</a>
           </dt>
@@ -125,10 +131,22 @@ layout: default
 
         <div class="btn-group" role="group" aria-label="Source">
           <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/{{page.id}}.md">
-            <button type="button" class="btn btn-default">View</button>
+            <button type="button" 
+                    data-toggle="tooltip" 
+                    title="See FAQ entry: How is metadata stored?" 
+                    html="true"
+                    class="btn btn-default">
+              View
+            </button>
           </a>
           <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md">
-            <button type="button" class="btn btn-default">Edit</button>
+
+            <button type="button" 
+                    data-toggle="tooltip" 
+                    title="See FAQ entry: How I do edit my metadata?" 
+                    html="true"
+                    class="btn btn-default">
+              Edit</button>
           </a>
           <!-- <button type="button" class="btn btn-default">Help</button> -->
         </div>
