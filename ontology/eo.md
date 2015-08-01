@@ -2,6 +2,8 @@
 layout: ontology_detail
 id: eo
 title: Plant Environmental Conditions
+DELIBERATE TYPO!
+*FOR DEMO PURPOSES*
 contact: 
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
