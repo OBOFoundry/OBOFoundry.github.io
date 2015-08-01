@@ -38,8 +38,8 @@ Please do! Fork and make PR, but beware things are not yet stable
 
  * [registry/](registry)   `<-- DERIVED yaml, json and RDF. DO NOT EDIT`
     * [registry/ontologies.yaml](registry/ontologies.yaml)  `<-- READONLY`
-    * `registry/ontologies.rdf  <-- TODO`
-    * `registry/ontologies.jsonld  <-- TODO`
+    * [registry/ontologies.jsonld](registry/ontologies.jsonld)  `<-- generated from yaml`
+    * `registry/ontologies.rdf  <-- TODO generated from jsonld`
  * [ontology/](ontology/)  `<-- source for ontology metadata. EDIT IN HERE`
     * [ontology/obi.md](ontology/obi.md)  `<-- metadata (yml) and markdown for display. EDIT THIS`
     * [ontology/uberon.md](ontology/uberon.md)
