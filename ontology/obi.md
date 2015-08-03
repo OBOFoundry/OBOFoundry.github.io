@@ -12,7 +12,9 @@ homepage: http://purl.obofoundry.org/obo/obi
 page: http://obi-ontology.org/page/Technical_Reports
 products: 
   - id: obi.owl
-license: https://creativecommons.org/licenses/by/3.0/
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 tracker: http://sourceforge.net/p/obi/obi-terms/
 ---
 

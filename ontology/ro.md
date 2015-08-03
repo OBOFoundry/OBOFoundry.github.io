@@ -15,6 +15,9 @@ products:
  - id: ro.owl
  - id: ro.obo
  - id: ro/ro-interaction.owl
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 ---
 
 # Summary

@@ -12,6 +12,9 @@ products:
 taxon: 
   id: NCBITaxon:6040
   label: Porifera
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 title: Porifera Ontology
 integration_server: http://build.berkeleybop.org/job/build-poro/
 tracker: https://github.com/obophenotype/porifera-ontology/issues

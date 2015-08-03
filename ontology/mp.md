@@ -11,6 +11,13 @@ domain: phenotype
 products: 
   - id: mp.owl
   - id: mp.obo
+browsers:
+  - label: MGI
+    title: MGI MP Browser
+    url: http://www.informatics.jax.org/searches/MP_form.shtml
+  - label: Monarch
+    title: Monarch Phenotype Page
+    url: http://monarchinitiative.org/phenotype/MP:0000001
 taxon: 
   id: NCBITaxon:10088
   label: Mus

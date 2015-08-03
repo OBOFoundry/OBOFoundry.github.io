@@ -9,8 +9,12 @@ homepage: http://uberon.org
 page: http://en.wikipedia.org/wiki/Uberon
 twitter: uberanat
 google_plus: "+UberonOrg"
+wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
 canonical: uberon.owl
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 taxon: 
   id: NCBITaxon:33208
   label: Metazoa
@@ -23,7 +27,9 @@ contact:
   label: Chris Mungall
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22293552
-    title: Uberon, an integrative multi-species anatomy ontology
+    title: "Uberon, an integrative multi-species anatomy ontology"
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/25009735
+    title: "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon"
 depicted_by: http://uberon.github.io/images/u-logo.jpg
 exampleClass: UBERON_0002046
 redirects:
@@ -40,6 +46,13 @@ dependencies:
    subset: uberon/chebi_import.owl
  - id: pr
    subset: uberon/pr_import.owl
+browsers:
+  - label: RGD
+    title: Gene Ontology AmiGO 2 Browser
+    url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=UBERON:0001062
+  - label: AmiGO (SUBSET)
+    title: Gene Ontology AmiGO 2 Browser
+    url: http://amigo.geneontology.org/amigo/term/UBERON:0001062#display-lineage-tab
 products:
  - id: uberon.owl
    type: owl:Ontology

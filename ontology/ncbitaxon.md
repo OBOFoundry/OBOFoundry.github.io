@@ -13,6 +13,10 @@ createdWith: http://owltools.googlecode.com/
 domain: taxonomy
 homepage: http://www.obofoundry.org/wiki/index.php/NCBITaxon:Main_Page
 page: http://www.ncbi.nlm.nih.gov/taxonomy
+browsers:
+  - label: NCBI
+    title: NCBI Taxonomy Browser
+    url: http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi
 jobs:
   - id: http://build.berkeleybop.org/job/build-ncbitaxon/
     type: ReleaseBuild
@@ -22,11 +26,11 @@ products:
     title: taxslim
 ---
 
-The NCBITaxon ontology is an automatic translation of the NCBI taxonomy database into obo/owl.
+The NCBITaxon ontology is an automatic translation of the [NCBI taxonomy database](http://www.ncbi.nlm.nih.gov/taxonomy) into obo/owl.
 
 The translation treats each taxon as an obo/owl class whose instances (for most branches of the ontology) would be individual organisms. For example:
 
-  'Craig Venter' instance_of NCBITaxon_9606 (Homo sapiens)
+    'Craig Venter' instance_of NCBITaxon_9606 (Homo sapiens)
 
 The translation faithfully reproduces all of the content of the source database, even where this contravenes OBO guidelines. For example:
 
@@ -39,14 +43,28 @@ The translation faithfully reproduces all of the content of the source database,
 
 The purls for this ontology are:
 
- * http://purl.obolibrary.org/obo/ncbitaxon.owl (official purl)
+ * http://purl.obolibrary.org/obo/ncbitaxon.owl (official purl for *ontology*)
  * http://purl.obolibrary.org/obo/ncbitaxon.obo (obo-format version)
 
 The PURLs should be resolvable in OntoBee. E.g.
 
- * http://purl.obolibrary.org/obo/NCBITaxon_9606 (Homo sapiens)
+ * [http://purl.obolibrary.org/obo/NCBITaxon_9606](http://purl.obolibrary.org/obo/NCBITaxon_9606) (Homo sapiens)
  * http://purl.obolibrary.org/obo/NCBITaxon_7711 (Chordates)
  * http://purl.obolibrary.org/obo/NCBITaxon_7227 (Danio rerio)
+
+## Releases
+
+Releases of the obo/owl happen when the [Continuous Integration
+Job](http://build.berkeleybop.org/job/build-ncbitaxon/) is manually
+triggered. Currently this must be done by an OBO administrator. There
+is currently no fixed cycle, and this is generally done on demand. The
+team that informally handles this are:
+
+ * James Overton, IEBD/OBO
+ * Heiko Dietze, LBNL/GO
+ * Frederic Bastian, BgeeDb/Uberon
+ * Chris Mungall, LBNL/GO/Monarch/Uberon/OBO
+ * Peter Midford, Phenoscape
 
 ## Extensions
 
@@ -60,27 +78,38 @@ this ontology includes new classes in the NCBITaxon_Union namespace. These class
 
 One of the main uses for the NCBITaxon ontology is to define taxon constraints in a multi-species ontology. For details, see:
 
- * Waclaw Kusnierczyk (2008) [http://dx.doi.org/10.1016/j.jbi.2007.07.007 Taxonomy-based partitioning of the Gene Ontology], ''Journal of Biomedical Informatics''
- * Deegan Née Clark, J. I., Dimmer, E. C., and Mungall, C. J. (2010). [http://www.biomedcentral.com/1471-2105/11/530 Formalization of taxon-based constraints to detect inconsistencies in annotation and ontology development]. ''BMC Bioinformatics 11, 530''
- * [http://douroucouli.wordpress.com/2012/04/24/taxon-constraints-in-owl/ Taxon constraints in OWL]
-
+ * Waclaw Kusnierczyk (2008) [Taxonomy-based partitioning of the Gene Ontology](http://dx.doi.org/10.1016/j.jbi.2007.07.007), *Journal of Biomedical Informatics*
+ * Deegan Née Clark, J. I., Dimmer, E. C., and Mungall, C. J. (2010). [Formalization of taxon-based constraints to detect inconsistencies in annotation and ontology development](http://www.biomedcentral.com/1471-2105/11/530). *BMC Bioinformatics 11, 530**
+ * [Taxon constraints in OWL](http://douroucouli.wordpress.com/2012/04/24/taxon-constraints-in-owl) (blog post)
+ * [Taxon constraints in Uberon](https://github.com/obophenotype/uberon/wiki/Taxon-constraints)
+ * [A Taxonomy for Immunologists](http://ceur-ws.org/Vol-1060/icbo2013_submission_76.pdf) **ICBO 2013**
 
 ## Mailing Lists
 
  * https://lists.sourceforge.net/lists/listinfo/obo-taxonomy
  * http://groups.google.com/group/obo-taxonomy
 
-## Citing the NCBITaxon ontology ==
+## Tracker
+
+Note that this differs from other OBO ontologies in that it is a
+translation of a database produced external to OBO. If you wish to
+suggest actual taxonomy changes to the database, contact NCBI.
+
+The NCBI staff are very responsive and helpful, [as this post from the Bgee team shows](https://bgeedb.wordpress.com/2013/05/29/new-taxon-dipnotetrapodomorpha-in-ncbi-taxonomy/)
+
+If you wish to suggest changes to the *translation* then contact the
+maintainer or the mail list above.
+
+## Citing the NCBITaxon ontology
 
 before citing, ask yourself what the artefact you wish to cite is:
 
- * The NCBI taxonomy ''database''
+ * The NCBI taxonomy **database**
  * The OBO/OWL rendering of the NCBI taxonomy database
 
-The latter is a fairly trivial translation of the former. If you are in any way citing the ''contents'' then '''you should cite the database'''. Currently the most up to date reference is:
+The latter is a fairly trivial translation of the former. If you are in any way citing the *contents* then **you should cite the database**. Currently the most up to date reference is:
 
-Federhen, Scott. '''The NCBI taxonomy database.''' ''Nucleic acids research 40.D1 (2012): D136-D143.''
-http://nar.oxfordjournals.org/content/40/D1/D136.short
+ * Federhen, Scott. **The NCBI taxonomy database.** *Nucleic acids research 40.D1 (2012): D136-D143.* [http://nar.oxfordjournals.org/content/40/D1/D136.short](http://nar.oxfordjournals.org/content/40/D1/D136.short)
 
 If you specifically wish to cite the OBO/OWL translation, use the URL for this page
 

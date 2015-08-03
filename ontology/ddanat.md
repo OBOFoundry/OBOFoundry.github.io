@@ -7,6 +7,7 @@ contact:
 description: A structured controlled vocabulary of the anatomy of the slime-mould <i>Dictyostelium discoideum</i>.
 domain: anatomy
 homepage: http://dictybase.org/
+twitter: dictybase
 products: 
   - id: ddanat.owl
 taxon: 

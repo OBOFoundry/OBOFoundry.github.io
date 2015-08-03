@@ -32,10 +32,21 @@ dependencies:
    connects:
      - id: nifstd
      - id: go
+browsers:
+  - label: AmiGO
+    title: Gene Ontology AmiGO 2 Browser
+    url: http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab
 products:
  - id: go.owl
  - id: go/extensions/go-plus.owl
    title: GO-Plus
+   description: The core ontology plus axioms connecting to select external ontologies
+ - id: go/extensions/go-taxon-groupings.owl
+   title: GO Taxon Groupings
+   description: Classes added to ncbitaxon for groupings such as prokaryotes
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 depicted_by: http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png
 ---
 

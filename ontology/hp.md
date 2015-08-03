@@ -4,6 +4,7 @@ id: hp
 alternativePrefix: HPO
 description: A structured and controlled vocabulary for the phenotypic features encountered in human hereditary and other disease.
 domain: phenotype
+twitter: hp_ontology
 homepage: http://www.human-phenotype-ontology.org/
 contact: 
   email: peter.robinson@charite.de
@@ -16,7 +17,14 @@ taxon:
   label: Homo sapiens
 title: human phenotype ontology
 tracker: https://sourceforge.net/p/obo/human-phenotype-requests/
-termgenie: http://hp.termgenie,org
+termgenie: http://hp.termgenie.org
+browsers:
+  - label: HPO
+    title: Charite HPO Browser
+    url: http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118
+  - label: Monarch
+    title: Monarch Phenotype Page
+    url: http://monarchinitiative.org/phenotype/HP:0000118
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/18950739
     title: "The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease."
