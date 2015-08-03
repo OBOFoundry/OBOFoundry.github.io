@@ -9,12 +9,26 @@ layout: default
   <div>	
     <div class="page-header">
       <h1>
+        {% if page.depicted_by %}
+        <img alt="logo" src="{{page.depicted_by}}"/>
+        {% endif %}
         {{ page.title }}
-        <small>{{ page.short_description }}</small>
+        <small>{{ page.tagline }}</small>
       </h1>      
     <p>
       {{page.description}}
     </p>
+    {% if page.twitter %}
+    <iframe style="position: static; visibility: visible; width: 190px; height: 20px;" 
+            data-twttr-rendered="true" title="Twitter Follow Button" 
+            class="twitter-follow-button twitter-follow-button" 
+            src="http://platform.twitter.com/widgets/follow_button.a64cf823bcb784855b86e2970134bd2a.en.html#_=1438577078419&amp;dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name={{page.twitter}}&amp;show_count=true&amp;show_screen_name=true&amp;size=m" 
+            allowtransparency="true" scrolling="no" id="twitter-widget-0" frameborder="0">
+    </iframe>
+    {% endif %}
+    {% if page.google_plus %}
+    <a href="https://plus.google.com/{{page.google_plus}}">G+</a>
+    {% endif %}
     </div>
 
   </div>
@@ -38,13 +52,6 @@ layout: default
       <div class="col-md-3">
         <dl class="dl-horizontal">
 
-          {% if page.depicted_by %}
-          <dt>Logo</dt>
-          <dt>
-            <img alt="logo for {{page.id}}" src="{{page.depicted_by}}"/></li>
-          </dt>
-          {% endif %}
-
           <dt>
             ID Space
             <span data-toggle="tooltip" 
@@ -60,6 +67,27 @@ layout: default
           <dt>
               <a href="http://purl.obolibrary.org/obo/{{page.id}}.owl">http://purl.obolibrary.org/obo/{{page.id}}.owl</a>
           </dt>
+
+          <dt>License</dt>
+          <dt>
+          {% if page.license %}
+              <a href="{{page.license.url}}">{{page.license.label}}</a>
+              {% if page.license.alert %}
+              <div class="alert alert-danger" role="alert">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Warning:</span>
+                {{page.license.alert}}
+              </div>
+              {% endif %}
+          {% else %}
+              <div class="alert alert-danger" role="alert">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Warning:</span>
+                Not entered
+              </div>
+          {% endif %}
+          </dt>
+
 
           <dt>Homepage</dt>
           <dt>
@@ -87,7 +115,7 @@ layout: default
           </dt>
 
           {% if page.termgenie %}
-          <dt>Trackers</dt>
+          <dt>TermGenie</dt>
           <dt>
             <a href="{{page.termgenie}}">{{page.termgenie}}</a>
           </dt>
@@ -156,6 +184,11 @@ layout: default
         <a href="http://www.ontobee.org/browser/index.php?o={{page.id}}">
           <button type="button" class="btn btn-default">OntoBee</button>
         </a>
+        {% for b in page.browsers %}
+        <a href="{{b.url}}">
+          <button type="button" class="btn btn-default">{{b.label}}</button>
+        </a>
+        {% endfor %}
 
         {{ content }}
 
