@@ -35,16 +35,18 @@ ontologies:
   - {id: apo.owl}
   taxon: {id: 'NCBITaxon:4890', label: Ascomycota}
   title: Ascomycete phenotype ontology
-- description: The Beta Cell Genomics Ontology (BCGO) is an application ontology built
+- contact: {email: jiezheng@upenn.edu, label: Jie Zheng}
+  description: The Beta Cell Genomics Ontology (BCGO) is an application ontology built
     for the beta cell genomics studies aiming to support database annotation, complicated
     semantic queries, and automated cell type classification.
-  homepage: http://code.google.com/p/bcgo-ontology/
+  homepage: https://github.com/obi-bcgo/bcgo
   id: bcgo
+  in_foundry: false
   layout: ontology_detail
   products:
   - {id: bcgo.owl}
   title: Beta Cell Genomics Ontology
-  tracker: http://code.google.com/p/bcgo-ontology/issues/list
+  tracker: https://github.com/obi-bcgo/bcgo/issues
 - contact: {email: rwalls2008@gmail.com, label: Ramona Walls}
   description: An ontology to support the interoperability of biodiversity data, including
     data on museum collections, environmental/metagenomic samples, and ecological
@@ -56,6 +58,7 @@ ontologies:
   title: Biological Collections Ontology
   tracker: https://github.com/tucotuco/bco/issues
 - contact: {email: phismith@buffalo.edu, label: Barry Smith}
+  depicted_by: https://code.google.com/p/bfo/logo?cct=1426583016
   description: The upper level ontology upon which OBO Foundry ontologies are built.
   domain: upper
   homepage: http://ifomis.org/bfo/
@@ -97,9 +100,14 @@ ontologies:
   homepage: http://www.brenda-enzymes.info
   id: bto
   layout: ontology_detail
-  page: http://www.brenda-enzymes.info
+  license: {alert: Restricted, label: BRENDA license, url: 'http://www.brenda-enzymes.org/copy.php'}
+  page: https://en.wikipedia.org/wiki/BRENDA_tissue_ontology
   products:
   - {id: bto.owl}
+  publications:
+  - {id: 'https://www.ncbi.nlm.nih.gov/pubmed/21030441', title: 'The BRENDA Tissue
+      Ontology (BTO): the first all-integrating ontology of all organisms for enzyme
+      sources'}
   title: BRENDA tissue / enzyme source
 - contact: {email: haendel@ohsu.edu, label: Melissa Haendel}
   description: An upper level ontology to facilitate interoperability between existing
@@ -203,6 +211,7 @@ ontologies:
   homepage: https://github.com/obophenotype/ctenophore-ontology
   id: cteno
   layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   products:
   - {id: cteno.owl}
   taxon: {id: 'NCBITaxon:10197', label: Ctenophore}
@@ -232,7 +241,11 @@ ontologies:
   taxon: {id: 'NCBITaxon:44689', label: Dictyostelium discoideum}
   title: Dictyostelium discoideum anatomy
   tracker: http://sourceforge.net/tracker/?group_id=76834&atid=974664
-- contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
+  twitter: dictybase
+- browsers:
+  - {label: DO, title: DO Browser, url: 'http://www.disease-ontology.org/'}
+  - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/DOID:4'}
+  contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
   description: Creating a comprehensive hierarchical controlled vocabulary for human
     disease representation.
   domain: health
@@ -245,6 +258,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Human disease ontology
   tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
+  twitter: diseaseontology
 - contact: {email: djs93@gen.cam.ac.uk, label: David Osumi-Sutherland}
   description: An ontology of commonly encountered and/or high level Drosophila phenotypes.  It
     has significant formalisation - utilising terms from GO, CL, PATO and the Drosophila
@@ -321,10 +335,12 @@ ontologies:
   domain: environment
   homepage: http://www.gramene.org
   id: eo
+  layout: ontology_detail
   page: http://www.gramene.org/plant_ontology/index.html#eo
   products:
   - {id: eo.owl}
   title: Plant Environmental Conditions
+  tracker: https://github.com/Planteome/plant-environment-ontology/issues
 - description: An ontology designed to support the semantic annotation of epidemiology
     resources
   homepage: https://code.google.com/p/epidemiology-ontology/
@@ -474,7 +490,9 @@ ontologies:
   - {id: geo.owl}
   title: Geographical Entity Ontology
   tracker: https://ontology.atlassian.net/browse/GEO#selectedTab=com.atlassian.jira.plugin.system.project%3Aissues-panel
-- dependencies:
+- browsers:
+  - {label: AmiGO, title: Gene Ontology AmiGO 2 Browser, url: 'http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab'}
+  dependencies:
   - {id: uberon, subset: go/extensions/uberon_import.owl}
   - {id: cl, subset: go/extensions/cl_import.owl}
   - {id: ncbitaxon, subset: go/extensions/ncbitaxon_import.owl}
@@ -498,9 +516,13 @@ ontologies:
   integration_server: http://build.berkeleybop.org/view/GO
   label: GO
   layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   products:
   - {id: go.owl}
-  - {id: go/extensions/go-plus.owl, title: GO-Plus}
+  - {description: The core ontology plus axioms connecting to select external ontologies,
+    id: go/extensions/go-plus.owl, title: GO-Plus}
+  - {description: Classes added to ncbitaxon for groupings such as prokaryotes, id: go/extensions/go-taxon-groupings.owl,
+    title: GO Taxon Groupings}
   taxon: {id: 'NCBITaxon:1', label: All life}
   termgenie: http://go.termgenie.org
   title: Gene Ontology
@@ -527,6 +549,9 @@ ontologies:
   - {id: hom.owl}
   title: homology_ontology
 - alternativePrefix: HPO
+  browsers:
+  - {label: HPO, title: Charite HPO Browser, url: 'http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118'}
+  - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/HP:0000118'}
   contact: {email: peter.robinson@charite.de, label: Peter Robinson}
   description: A structured and controlled vocabulary for the phenotypic features
     encountered in human hereditary and other disease.
@@ -545,10 +570,12 @@ ontologies:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/24217912', title: 'The Human Phenotype
       Ontology project: linking molecular biology and disease through phenotype data.'}
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
-  termgenie: http://hp.termgenie,org
+  termgenie: http://hp.termgenie.org
   title: human phenotype ontology
   tracker: https://sourceforge.net/p/obo/human-phenotype-requests/
+  twitter: hp_ontology
 - contact: {email: alanruttenberg@gmail.com, label: Alan Ruttenberg}
+  depicted_by: https://avatars0.githubusercontent.com/u/13591168?v=3&s=200
   description: 'The Information Artifact Ontology (IAO) is a new ontology of information
     entities, originally driven by work by the OBI digital entity and realizable information
     entity branch. '
@@ -740,7 +767,10 @@ ontologies:
   products:
   - {id: mod.owl}
   title: Protein modification
-- contact: {email: pheno@jax.org, label: JAX phenotype list}
+- browsers:
+  - {label: MGI, title: MGI MP Browser, url: 'http://www.informatics.jax.org/searches/MP_form.shtml'}
+  - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/MP:0000001'}
+  contact: {email: pheno@jax.org, label: JAX phenotype list}
   description: The Mammalian Phenotype Ontology is under development as a community
     effort to provide standard terms for annotating mammalian phenotypic data.
   domain: phenotype
@@ -785,7 +815,9 @@ ontologies:
   - {id: nbo.owl}
   title: Neuro Behavior Ontology
   tracker: http://code.google.com/p/behavior-ontology/issues/list
-- contact: {email: obo-taxonomy@lists.sourceforge.net, label: obo-taxonomy-list}
+- browsers:
+  - {label: NCBI, title: NCBI Taxonomy Browser, url: 'http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi'}
+  contact: {email: obo-taxonomy@lists.sourceforge.net, label: obo-taxonomy-list}
   createdWith: http://owltools.googlecode.com/
   description: The NCBITaxon ontology is an automatic translation of the NCBI taxonomy
     (a taxonomic classification of living organisms and associated artifacts) database
@@ -836,6 +868,20 @@ ontologies:
   - {id: oba.owl}
   title: Ontology of Biological Attributes
   tracker: https://github.com/obophenotype/bio-attribute-ontology/issues
+- contact: {email: jiezheng@upenn.edu, label: Jie Zheng}
+  description: The Ontology of Biological and Clinical Statistics (OBCS) is a biomedical
+    ontology in the domain of biological and clinical statistics. OBCS is primarily
+    targeted for statistical term representation in the fields in biological, biomedical,
+    and clinical domains.
+  domain: statistics
+  homepage: https://github.com/obcs/obcs
+  id: obcs
+  in_foundry: false
+  layout: ontology_detail
+  products:
+  - {id: obcs.owl}
+  title: Ontology of Biological and Clinical Statistics
+  tracker: https://github.com/obcs/obcs/issues
 - contact: {email: bpeters@liai.org, label: Bjoern Peters}
   description: An integrated ontology for the description of life-science and clinical
     investigations
@@ -844,7 +890,7 @@ ontologies:
   id: obi
   in_foundry: true
   layout: ontology_detail
-  license: https://creativecommons.org/licenses/by/3.0/
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   page: http://obi-ontology.org/page/Technical_Reports
   products:
   - {id: obi.owl}
@@ -913,11 +959,11 @@ ontologies:
   title: Ontology of Medically Related Social Entities
 - contact: {email: preets79@gmail.com, label: Priti Parikh}
   description: A reference ontology for parasite life cycle stages.
-  homepage: http://code.google.com/p/opl-ontology/
+  homepage: https://github.com/OPL-ontology/OPL
   id: opl
   layout: ontology_detail
   title: Ontology for Parasite LifeCycle
-  tracker: http://code.google.com/p/opl-ontology/issues/list
+  tracker: https://github.com/OPL-ontology/OPL/issues
   ts:
   - {id: opl.owl}
 - contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
@@ -985,6 +1031,7 @@ ontologies:
   id: poro
   integration_server: http://build.berkeleybop.org/job/build-poro/
   layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   products:
   - {id: poro.owl}
   taxon: {id: 'NCBITaxon:6040', label: Porifera}
@@ -1042,12 +1089,14 @@ ontologies:
   - {id: rnao.owl}
   title: RNA ontology
 - canonical: ro.owl
+  descriptions: Relationship types shared across multiple ontologies
   domain: relations
   homepage: https://code.google.com/p/obo-relations/issues
   id: ro
   jobs:
   - {id: 'http://build.berkeleybop.org/job/build-ro', type: DryRunBuild}
   layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-relations
   products:
   - {id: ro.owl}
@@ -1231,7 +1280,10 @@ ontologies:
   taxon: {id: 'NCBITaxon:32443', label: Teleostei}
   title: Teleost taxonomy
   tracker: http://sourceforge.net/tracker/?group_id=76834&atid=1046550
-- canonical: uberon.owl
+- browsers:
+  - {label: RGD, title: Gene Ontology AmiGO 2 Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=UBERON:0001062'}
+  - {label: AmiGO (SUBSET), title: Gene Ontology AmiGO 2 Browser, url: 'http://amigo.geneontology.org/amigo/term/UBERON:0001062#display-lineage-tab'}
+  canonical: uberon.owl
   contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
   dependencies:
   - {id: go, subset: uberon/go_import.owl}
@@ -1248,6 +1300,7 @@ ontologies:
   id: uberon
   label: Uberon
   layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
   page: http://en.wikipedia.org/wiki/Uberon
   products:
@@ -1281,6 +1334,8 @@ ontologies:
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/22293552', title: 'Uberon, an integrative
       multi-species anatomy ontology'}
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/25009735', title: Unification of multi-species
+      vertebrate anatomy ontologies for comparative biology in Uberon}
   redirects:
   - {match: releases/, url: 'http://svn.code.sf.net/p/obo/svn/uberon/releases/'}
   - {match: '', url: 'http://berkeleybop.org/ontologies/uberon/'}
@@ -1291,6 +1346,7 @@ ontologies:
   tracker: https://github.com/obophenotype/uberon/issues
   twitter: uberanat
   type: owl:Ontology
+  wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 - contact: {email: geg18@aber.ac.uk, label: George Gkoutos}
   description: Metrical units for use in conjunction with PATO
   domain: phenotype
@@ -1309,9 +1365,11 @@ ontologies:
   - {id: vario.owl}
   title: Variation Ontology
 - id: vhog
+  is_obsolete: true
   layout: ontology_detail
   products:
   - {id: vhog.owl}
+  replaced_by: uberon
 - contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
   domain: health
   homepage: http://www.violinet.org/vaccineontology
@@ -1423,4 +1481,3 @@ ontologies:
   taxon: {id: 'NCBITaxon:7954', label: Danio}
   title: Zebrafish developmental stages
 pygments: true
-speciesAOs: [xao, zfa]
