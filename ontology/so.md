@@ -7,6 +7,8 @@ contact:
 description: A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.
 domain: biological sequence
 homepage: https://github.com/The-Sequence-Ontology/SO-Ontologies
+page:
+  https://en.wikipedia.org/wiki/Sequence_Ontology
 products: 
   - id: so.owl
 title: Sequence types and features
