@@ -1,0 +1,12 @@
+# Ontology Review Criteria #
+
+This page deals with policies and guidelines for the criteria by which an ontology should be reviewed. [ReviewProcessGuidelines](http://code.google.com/p/obo-foundry-operations-committee/wiki/ReviewProcessGuidelines) covers guidelines and policies for the operational aspects of ontology review.
+
+
+# Draft criteria/policies #
+
+OBO Foundry ontologies are reviewed primarily by how well they apply the [currently accepted OBO Foundry Principles](http://www.obofoundry.org/wiki/index.php/Category:Accepted).
+
+Unfortunately, the principles themselves are sometime ambiguous or lack clear guidance on how they should be implemented. The Editorial WG is working with the OBO Foundry Coordinators to make it easier to follow the principles.
+
+More information and links will be provided here as this effort moves forward.

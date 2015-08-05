@@ -57,11 +57,12 @@ products:
  - id: uberon.owl
    type: owl:Ontology
    title: Uberon
+   description: "core ontology"
    is_canonical: true
  - id: uberon/ext.owl
    type: owl:Ontology
    description: Uberon extended
-   title: Uberon edition that includes subsets of other ontologies
+   title: "Uberon edition that includes subsets of other ontologies and axioms connecting to them"
    mireots_from: cl
    mireots_from: pr
    mireots_from: envo
@@ -92,6 +93,7 @@ products:
  - id: uberon/composite-metazoan.owl
    type: MergedOntology
    title: Uberon composite metazoan ontology
+   description: Extended uberon plus all metazoan ontologies
    page: https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies
    taxon: Metazoa
    mireots_from: zfa
