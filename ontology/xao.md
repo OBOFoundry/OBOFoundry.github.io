@@ -4,7 +4,7 @@ id: xao
 description: A structured controlled vocabulary of the anatomy and development of the African clawed frog (<i>Xenopus laevis</i>).
 domain: anatomy
 homepage: http://www.xenbase.org/anatomy/xao.do?method=display
-in_foundry: true
+in_foundry_order: 1
 products: 
   - id: xao.owl
 taxon: 

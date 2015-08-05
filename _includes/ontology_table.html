@@ -1,6 +1,6 @@
 <table class="table">
   <tbody>
-    {% assign sorted_ontologies = site.ontologies %}
+    {% assign sorted_ontologies = site.ontologies | sort: 'id' | sort: 'in_foundry_order', 'last'  %}
     {% for ont in sorted_ontologies %}
     <tr>
       <td>
@@ -76,7 +76,7 @@
       </td>
 
       <td>
-        {% if ont.in_foundry %}
+        {% if ont.in_foundry_order %}
         <a href="link-to-foundry-principles">
           <button type="button" class="btn btn-default" aria-label="Left Align">
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>

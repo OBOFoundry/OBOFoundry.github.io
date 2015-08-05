@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: po
-in_foundry: true
+in_foundry_order: 1
 contact: 
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal

@@ -139,7 +139,7 @@ ontologies:
   domain: biochemistry
   homepage: http://www.ebi.ac.uk/chebi
   id: chebi
-  in_foundry: true
+  in_foundry_order: 1
   layout: ontology_detail
   page: http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual
   products:
@@ -518,7 +518,7 @@ ontologies:
   description: An ontology for describing the function of genes and gene products
   domain: biology
   id: go
-  in_foundry: true
+  in_foundry_order: 1
   integration_server: http://build.berkeleybop.org/view/GO
   label: GO
   layout: ontology_detail
@@ -894,7 +894,7 @@ ontologies:
   domain: experiments
   homepage: http://purl.obofoundry.org/obo/obi
   id: obi
-  in_foundry: true
+  in_foundry_order: 1
   layout: ontology_detail
   license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   page: http://obi-ontology.org/page/Technical_Reports
@@ -992,7 +992,7 @@ ontologies:
   domain: phenotype
   homepage: https://github.com/pato-ontology/pato/
   id: pato
-  in_foundry: true
+  in_foundry_order: 1
   jobs:
   - {id: 'http://build.berkeleybop.org/job/build-pato', type: DryRunBuild}
   layout: ontology_detail
@@ -1022,7 +1022,7 @@ ontologies:
   domain: anatomy and development
   homepage: http://www.plantontology.org
   id: po
-  in_foundry: true
+  in_foundry_order: 1
   layout: ontology_detail
   page: http://www.plantontology.org/docs/docs.html
   products:
@@ -1052,7 +1052,7 @@ ontologies:
   domain: proteins
   homepage: http://proconsortium.org
   id: pr
-  in_foundry: true
+  in_foundry_order: 1
   layout: ontology_detail
   products:
   - {id: pr.owl}
@@ -1446,7 +1446,7 @@ ontologies:
   domain: anatomy
   homepage: http://www.xenbase.org/anatomy/xao.do?method=display
   id: xao
-  in_foundry: true
+  in_foundry_order: 1
   layout: ontology_detail
   products:
   - {id: xao.owl}
@@ -1473,7 +1473,7 @@ ontologies:
   domain: anatomy
   homepage: http://zfin.org/zf_info/anatomy/dict/sum.html
   id: zfa
-  in_foundry: true
+  in_foundry_order: 1
   layout: ontology_detail
   products:
   - {id: zfa.owl}

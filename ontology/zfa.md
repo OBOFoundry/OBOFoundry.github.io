@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: zfa
-in_foundry: true
+in_foundry_order: 1
 contact: 
   email: zfinadmin@zfin.org
   label: ZFIN administrators

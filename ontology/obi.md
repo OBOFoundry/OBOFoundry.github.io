@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: obi
-in_foundry: true
+in_foundry_order: 1
 title: Ontology for Biomedical Investigations
 description: An integrated ontology for the description of life-science and clinical investigations
 contact: 

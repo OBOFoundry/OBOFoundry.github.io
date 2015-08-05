@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: pato
-in_foundry: true
+in_foundry_order: 1
 title: Phenotypic quality
 description: An ontology of phenotypic qualities (properties, attributes or characteristics)
 contact: 
