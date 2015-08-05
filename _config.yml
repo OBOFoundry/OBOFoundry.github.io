@@ -289,6 +289,9 @@ ontologies:
   layout: ontology_detail
   products:
   - {id: eco.owl}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/25052702', title: Standardized description
+      of scientific evidence using the Evidence Ontology (ECO)}
   title: Evidence codes
   tracker: https://github.com/evidenceontology/evidenceontology/issues
 - contact: {email: J.Bard@ed.ac.uk, label: Jonathan Bard}
@@ -1476,6 +1479,9 @@ ontologies:
   layout: ontology_detail
   products:
   - {id: zfa.owl}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/24568621', title: 'The zebrafish anatomy
+      and stage ontologies: representing the anatomy and development of Danio rerio.'}
   taxon: {id: 'NCBITaxon:7954', label: Danio}
   title: Zebrafish anatomy and development
   tracker: https://github.com/cerivs/zebrafish-anatomical-ontology/issues
