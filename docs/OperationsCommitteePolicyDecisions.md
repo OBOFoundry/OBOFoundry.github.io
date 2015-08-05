@@ -1,3 +1,8 @@
+---
+layout: doc
+title: OperationsCommitteePolicyDecisions
+---
+
 **This policy has been formally adopted on October 16th 2013. Do not edit this page without consulting with the OBO Foundry Operations Committee.** Comments should be added to the [tracker](http://code.google.com/p/obo-foundry-operations-committee/issues/list).
 
 # How to add a new policy #

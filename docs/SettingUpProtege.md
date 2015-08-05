@@ -1,3 +1,8 @@
+---
+layout: doc
+title: SettingUpProtege
+---
+
 # Introduction #
 
 This page explains how to set up Protege 4.3 to comply with the OBO Foundry [ID policy](http://obofoundry.org/id-policy.shtml)

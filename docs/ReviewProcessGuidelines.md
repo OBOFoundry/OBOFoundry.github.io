@@ -1,3 +1,8 @@
+---
+layout: doc
+title: ReviewProcessGuidelines
+---
+
 This page deals with policies and guidelines for the process of ontology review, particularly operational aspects such as:
 
   * which ontologies should be reviewed, and in what order?

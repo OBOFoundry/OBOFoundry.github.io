@@ -1,3 +1,8 @@
+---
+layout: doc
+title: MailingLists
+---
+
 # Introduction #
 
 A page listing the current mailing-lists in use by the group. Access to content and/or posting may be restricted as mentioned below.

@@ -1,3 +1,8 @@
+---
+layout: doc
+title: OBOCalendar
+---
+
 # Introduction #
 
 Information about the OBO Foundry shared calendar

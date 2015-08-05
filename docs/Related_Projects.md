@@ -1,3 +1,8 @@
+---
+layout: doc
+title: Related_Projects
+---
+
 #Projects related to the OBO Foundry
 
 Under Construction

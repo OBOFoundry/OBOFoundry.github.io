@@ -1,3 +1,8 @@
+---
+layout: doc
+title: TechnicalWG
+---
+
 # Introduction #
 
 This page describes members and activities of the OBOFOC Technical WG.

@@ -1,7 +1,3 @@
----
-layout: doc
-title: TableOfContents
----
 
 
 Operations committee

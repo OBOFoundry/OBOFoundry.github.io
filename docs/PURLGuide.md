@@ -1,3 +1,8 @@
+---
+layout: doc
+title: PURLGuide
+---
+
 # Introduction #
 
 This guide is a collection of rules and tips to work with PURLs. If you maintain PURLs for your project, we expect you to be familiar with those. Note that as we don't manage the PURL server (rather this is done by OCLC), we don't have access to the software/database to correct things.

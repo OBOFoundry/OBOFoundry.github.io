@@ -1,3 +1,8 @@
+---
+layout: doc
+title: TechnicalWGMeetings
+---
+
 # Technical working group meetings #
 
   * 20130607 - OBOFOC-TWG meeting - chair Philippe Rocca-Serra

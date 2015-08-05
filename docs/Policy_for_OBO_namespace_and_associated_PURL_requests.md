@@ -1,3 +1,8 @@
+---
+layout: doc
+title: Policy_for_OBO_namespace_and_associated_PURL_requests
+---
+
 **This policy has been formally adopted on April 19th 2013. Do not edit this page without consulting with the OBO Technical group.** Comments to [obo-discuss@lists.sourceforge.net](mailto:obo-discuss@lists.sourceforge.net)
 
 # Background #

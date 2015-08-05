@@ -1,3 +1,8 @@
+---
+layout: doc
+title: Membership
+---
+
 # Introduction #
 
 Initial members of the OBO Foundry Operations Committee were invited by the OBO coordinators. Additional experts were later also invited by the individual working groups. In order to consolidate our memberships across the whole group, and it was adopted on July 30th 2014 that anyone who is active in a working group (active being based on both attendance at WG meetings and actual work done for working groups) be considered a member of the operations committee.

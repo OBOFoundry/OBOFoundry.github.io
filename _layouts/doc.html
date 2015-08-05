@@ -1,0 +1,64 @@
+---
+layout: default
+---
+{{ }}
+{% include navbar.html %}
+<div class="content">    
+
+
+  <div>	
+    <div class="page-header">
+      <h1>
+        {{ page.title }}
+      </h1>      
+    </p>
+
+  </div>
+   
+  <div class="col-md-12">
+
+    <div class="row">
+      <div class="col-md-3">
+        <p>
+          TOC GOES HERE
+        </p>
+        {% capture my_include %}{% include docs_toc.md %}{% endcapture %}
+        {{ my_include | markdownify }}
+
+        <div class="btn-group" role="group" aria-label="Source">
+          <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/docs/{{page.id}}.md">
+            <button type="button" 
+                    data-toggle="tooltip" 
+                    title="See FAQ entry: How is metadata stored?" 
+                    html="true"
+                    class="btn btn-default">
+              View
+            </button>
+          </a>
+          <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/docs/{{page.id}}.md">
+
+            <button type="button" 
+                    data-toggle="tooltip" 
+                    title="See FAQ entry: How I do edit my metadata?" 
+                    html="true"
+                    class="btn btn-default">
+              Edit</button>
+          </a>
+          <!-- <button type="button" class="btn btn-default">Help</button> -->
+        </div>
+      </div>
+
+      <div class="col-md-9">
+
+        {{ content }}
+        
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+</div>
+    

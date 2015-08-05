@@ -1,3 +1,8 @@
+---
+layout: doc
+title: OutreachWG
+---
+
 # Introduction #
 
 This page describes members and activities of the OBO Foundry Outreach Working Group.

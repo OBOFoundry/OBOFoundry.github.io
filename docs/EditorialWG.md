@@ -1,3 +1,8 @@
+---
+layout: doc
+title: EditorialWG
+---
+
 # Introduction #
 
 This page describes members and activities of the OBO Foundry Editorial Working Group.

@@ -1,3 +1,8 @@
+---
+layout: doc
+title: OBOPURLDomain
+---
+
 # Introduction #
 
 To enable URI dereferencing while allowing users to keep control over their resources, a resolution system in multiple steps has been implemented.
