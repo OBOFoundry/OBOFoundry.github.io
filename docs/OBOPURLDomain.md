@@ -25,7 +25,7 @@ Create a group with the name obo-IDSPACE (e.g., obo-IAO), and add the OBO group 
 
   * Create the top-level PURL
 
-Please check the [PURLGuide](http://code.google.com/p/obo-foundry-operations-committee/wiki/PURLGuide) beforehand if you are not familiar with the PURL software/interface.
+Please check the [PURLGuide](/docs/PURLGuide.html) beforehand if you are not familiar with the PURL software/interface.
 
 Go to [http://purl.org](http://purl.org) and register the new domain as a subdomain of /obo/. Once logged in, go to the tab "Domains", option "create a new domain", and create the domain /obo/prefix (where prefix is the prefix chosen by the resource, e.g., IAO). Note that you need to have writing permission on the OBO domain to create subdomains.
 

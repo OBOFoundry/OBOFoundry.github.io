@@ -7,7 +7,7 @@ title: SettingUpProtege
 
 This page explains how to set up Protege 4.3 to comply with the OBO Foundry [ID policy](http://obofoundry.org/id-policy.shtml)
 
-In the following, the example of the Epidemiology Ontology, EPO, will be used (with permission from Catia Pesquita). It is assumed that you requested and obtained a PURL and prefix from the OBO Foundry administrators. Instructions to do so are available [here](http://code.google.com/p/obo-foundry-operations-committee/wiki/Policy_for_OBO_namespace_and_associated_PURL_requests)
+In the following, the example of the Epidemiology Ontology, EPO, will be used (with permission from Catia Pesquita). It is assumed that you requested and obtained a PURL and prefix from the OBO Foundry administrators. Instructions to do so are available [here](/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html)
 
 In summary, following the policy entails that:
   * your main file is available at http://purl.obolibrary.org/obo/epo.owl (and this is your Ontology IRI)

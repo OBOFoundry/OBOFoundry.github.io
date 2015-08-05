@@ -10,7 +10,7 @@ This page deals with policies and guidelines for the process of ontology review,
   * what is the workflow for conducting a review?
   * how will conflicts be resolved?
 
-[ReviewCriteriaPolicies](http://code.google.com/p/obo-foundry-operations-committee/wiki/ReviewCriteriaPolicies) covers guidelines and policies for the criteria by which an ontology should be reviewed.
+[ReviewCriteriaPolicies](/docs/ReviewCriteriaPolicies.html) covers guidelines and policies for the criteria by which an ontology should be reviewed.
 
 # How to request an ontology review #
 

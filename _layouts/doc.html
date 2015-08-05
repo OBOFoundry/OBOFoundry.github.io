@@ -19,9 +19,6 @@ layout: default
 
     <div class="row">
       <div class="col-md-3">
-        <p>
-          TOC GOES HERE
-        </p>
         {% capture my_include %}{% include docs_toc.md %}{% endcapture %}
         {{ my_include | markdownify }}
 

@@ -5,7 +5,7 @@ title: ReviewCriteriaPolicies
 
 # Ontology Review Criteria #
 
-This page deals with policies and guidelines for the criteria by which an ontology should be reviewed. [ReviewProcessGuidelines](http://code.google.com/p/obo-foundry-operations-committee/wiki/ReviewProcessGuidelines) covers guidelines and policies for the operational aspects of ontology review.
+This page deals with policies and guidelines for the criteria by which an ontology should be reviewed. [ReviewProcessGuidelines](/docs/ReviewProcessGuidelines.html) covers guidelines and policies for the operational aspects of ontology review.
 
 
 # Draft criteria/policies #

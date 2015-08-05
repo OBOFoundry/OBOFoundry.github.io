@@ -10,7 +10,7 @@ This page describes members and activities of the OBO Foundry Editorial Working 
 
 # Details #
 
-From the [MissionStatement](http://code.google.com/p/obo-foundry-operations-committee/wiki/MissionStatement): OBO Foundry Editorial WG is involved in reviewing OBO Foundry ontologies and policy setting. Primary tasks are to conduct reviews, but also include all activities that enable that process, such as tool building for automated validation, website maintenance of the review results, or leading calls and taking notes.
+From the [MissionStatement](/docs/MissionStatement.html): OBO Foundry Editorial WG is involved in reviewing OBO Foundry ontologies and policy setting. Primary tasks are to conduct reviews, but also include all activities that enable that process, such as tool building for automated validation, website maintenance of the review results, or leading calls and taking notes.
 
 ## Scope ##
 The OBO Foundry Editorial WG will:
@@ -22,11 +22,11 @@ Current activities are focused on creating guidelines for reviews. Once those gu
 
 ## Draft guidelines and policies ##
 
-[Ontology review process guidelines](http://code.google.com/p/obo-foundry-operations-committee/wiki/ReviewProcessGuidelines)
+[Ontology review process guidelines](/docs/ReviewProcessGuidelines.html)
 
-[Ontology review criteria policies](http://code.google.com/p/obo-foundry-operations-committee/wiki/ReviewCriteriaPolicies)
+[Ontology review criteria policies](/docs/ReviewCriteriaPolicies.html)
 
-[Ontology review management guidelines](http://code.google.com/p/obo-foundry-operations-committee/wiki/ReviewManagementGuidelines)
+[Ontology review management guidelines](/docs/ReviewManagementGuidelines.html)
 
 # Members #
 (in alphabetical order)<br>

@@ -21,7 +21,7 @@ The technical working group reserves the right to make decisions based on their 
 
 ## Requestor ##
 
-  1. You will get a PURL for your main file under the OBO PURL domain as well as a PURL domain. You will be part of the administrator group for those resources. Please familiarize yourself with the PURL guide at http://code.google.com/p/obo-foundry-operations-committee/wiki/PURLGuide .
+  1. You will get a PURL for your main file under the OBO PURL domain as well as a PURL domain. You will be part of the administrator group for those resources. Please familiarize yourself with the PURL guide at [PULRGuide](PURLGuide.html) .
   1. As of today (April 7th, 2013), when your prefix is registered it is automatically included for display on the OBO Foundry site. This may change in the future as we modify our registration system.
   1. Once your domain is created under OBO you will automatically benefit from our dereferencing tool [Ontobee](http://www.ontobee.org). If preferred you can, of course, redirect your pages towards your own web pages.
   1. Please keep the OBO PURL group (group ID: OBO) to the maintainers/members of your PURL group
@@ -68,4 +68,4 @@ If you don't hear back from us after 2 weeks, please send a note to the [obo-fou
 
 # For more information #
 
-For instructions on how to create the prefix/domain at purl.org, or to understand how the OBO PURL domain/redirection works, see http://code.google.com/p/obo-foundry-operations-committee/wiki/OBOPURLDomain
+For instructions on how to create the prefix/domain at purl.org, or to understand how the OBO PURL domain/redirection works, see [OBOPURLDomain](OBOPURLDomain.html)

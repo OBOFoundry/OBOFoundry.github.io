@@ -26,7 +26,7 @@ Carlo Torniai (on leave)<br>
 <br>
 <h1>Meetings</h1>
 
-See <a href='http://code.google.com/p/obo-foundry-operations-committee/wiki/TechnicalWGMeetings'>here</a>
+See <a href='TechnicalWGMeetings.html'>here</a>
 
 <h1>HOWTOs</h1>
 
