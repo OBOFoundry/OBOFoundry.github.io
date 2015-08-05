@@ -1,7 +1,9 @@
+author: {name: OBO Technical WG}
 baseurl: /
+highlighter: true
 imgurl: /images
 markdown: redcarpet
-name: Uberon
+name: OBO Foundry
 ontologies:
 - contact: {email: J.Bard@ed.ac.uk, label: Jonathan Bard}
   description: AEO is an ontology of anatomical structures that expands CARO, the
@@ -300,6 +302,10 @@ ontologies:
   products:
   - {id: ehdaa2.owl}
   - {id: ehdaa2.obo}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/22973865', title: A new ontology (structured
+      hierarchy) of human developmental anatomy for the first 7 weeks (Carnegie stages
+      1-20).}
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Human developmental anatomy, abstract
   tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
@@ -1156,6 +1162,7 @@ ontologies:
   homepage: https://github.com/The-Sequence-Ontology/SO-Ontologies
   id: so
   layout: ontology_detail
+  page: https://en.wikipedia.org/wiki/Sequence_Ontology
   products:
   - {id: so.owl}
   publications:
@@ -1304,9 +1311,11 @@ ontologies:
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
   page: http://en.wikipedia.org/wiki/Uberon
   products:
-  - {id: uberon.owl, is_canonical: true, title: Uberon, type: 'owl:Ontology'}
+  - {description: core ontology, id: uberon.owl, is_canonical: true, title: Uberon,
+    type: 'owl:Ontology'}
   - {description: Uberon extended, id: uberon/ext.owl, mireots_from: ncbitaxon, title: Uberon
-      edition that includes subsets of other ontologies, type: 'owl:Ontology'}
+      edition that includes subsets of other ontologies and axioms connecting to them,
+    type: 'owl:Ontology'}
   - {description: Uberon edition that excludes external ontologies and most relations,
     format: obo, id: uberon/basic.obo, title: Uberon basic, type: obo-basic-ontology}
   - connects:
@@ -1327,7 +1336,8 @@ ontologies:
     page: https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies
     title: Uberon bridge to MA
     type: BridgeOntology
-  - {id: uberon/composite-metazoan.owl, mireots_from: ehdaa2, page: 'https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies',
+  - {description: Extended uberon plus all metazoan ontologies, id: uberon/composite-metazoan.owl,
+    mireots_from: ehdaa2, page: 'https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies',
     taxon: Metazoa, title: Uberon composite metazoan ontology, type: MergedOntology}
   - {id: uberon/composite-vertebrate.owl, mireots_from: ehdaa2, page: 'https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies',
     taxon: Metazoa, title: Uberon composite vertebrate ontology, type: MergedOntology}
@@ -1480,4 +1490,4 @@ ontologies:
   - {id: zfs.owl}
   taxon: {id: 'NCBITaxon:7954', label: Danio}
   title: Zebrafish developmental stages
-pygments: true
+title: The OBO Foundry
