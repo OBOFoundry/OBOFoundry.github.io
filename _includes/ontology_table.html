@@ -1,6 +1,6 @@
 <table class="table">
   <tbody>
-    {% assign sorted_ontologies = site.ontologies | sort: 'id' | sort: 'in_foundry_order', 'last'  %}
+    {% assign sorted_ontologies = site.ontologies | sort: 'in_foundry_order', 'last'  %}
     {% for ont in sorted_ontologies %}
     <tr>
       <td>
