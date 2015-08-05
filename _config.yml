@@ -1,6 +1,5 @@
 author: {name: OBO Technical WG}
 baseurl: /
-highlighter: true
 imgurl: /images
 markdown: redcarpet
 name: OBO Foundry
@@ -1418,7 +1417,7 @@ ontologies:
   - {id: wbbt.owl}
   taxon: {id: 'NCBITaxon:6237', label: Caenorhabditis}
   title: C. elegans gross anatomy
-  tracker: https://sourceforge.net/tracker/?group_id=76834&atid=1069773
+  tracker: https://github.com/obophenotype/Wao/issues
 - contact: {email: wchen@its.caltech.edu, label: Wen J. Chen}
   description: A structured controlled vocabulary of the development of <i>Caenorhabditis
     elegans</i>.
@@ -1490,4 +1489,5 @@ ontologies:
   - {id: zfs.owl}
   taxon: {id: 'NCBITaxon:7954', label: Danio}
   title: Zebrafish developmental stages
+pygments: true
 title: The OBO Foundry
