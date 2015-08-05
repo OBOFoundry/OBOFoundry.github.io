@@ -21,6 +21,8 @@
     <!-- Custom styles -->
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -63,12 +65,14 @@
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
           </ul>
+          <!--
           <form class="navbar-form navbar-right" role="search">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Search">
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
           </form>
+          -->
         </div><!-- /.navbar-collapse -->
       </nav>
 
@@ -81,8 +85,8 @@
     <div id="footer">
       <div class="container">
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>,
+          <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> and <a href="http://glyphicons.com/">glyphicons</a>
         </p>
       </div>
     </div>
