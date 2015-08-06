@@ -15,11 +15,6 @@ def main():
                                                  'Helper utils for OBO',
                                      formatter_class=argparse.RawTextHelpFormatter)
 
-    parser.add_argument('-u', '--url', type=str, required=False,
-                        help='A base URL for SciGraph')
-    parser.add_argument('-t', '--to', type=str, required=False,
-                        help='Renderer')
-
 
     subparsers = parser.add_subparsers(dest='subcommand', help='sub-command help')
     
