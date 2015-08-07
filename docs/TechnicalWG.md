@@ -1,5 +1,6 @@
 ---
 layout: doc
+id: TechnicalWG
 title: TechnicalWG
 ---
 

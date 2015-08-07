@@ -1,5 +1,6 @@
 ---
 layout: doc
+id: EditorialWG
 title: EditorialWG
 ---
 

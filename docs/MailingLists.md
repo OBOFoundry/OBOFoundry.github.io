@@ -1,5 +1,6 @@
 ---
 layout: doc
+id: MailingLists
 title: MailingLists
 ---
 

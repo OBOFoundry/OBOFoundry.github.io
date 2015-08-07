@@ -1,5 +1,6 @@
 ---
 layout: doc
+id: SettingUpProtege
 title: SettingUpProtege
 ---
 

@@ -1,5 +1,6 @@
 ---
 layout: doc
+id: MissionStatement
 title: MissionStatement
 ---
 
