@@ -7,6 +7,8 @@ contact:
 description: A vocabulary of taxonomic ranks intended to replace the sets of rank terms found in the Teleost Taxonomy Ontology, the OBO translation of the NCBI taxonomy and similar OBO taxonomy ontologies.
 domain: taxonomy
 homepage: https://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary
+source:
+  url: https://raw.github.com/obophenotype/taxonomic-rank-ontology/master/src/ontology/taxrank.obo
 products: 
   - id: taxrank.owl
 title: Taxonomic rank vocabulary
