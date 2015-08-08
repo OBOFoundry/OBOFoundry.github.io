@@ -413,6 +413,17 @@ ontologies:
   title: Drosophila gross anatomy
   tracker: http://purl.obolibrary.org/obo/fbbt/tracker
 - contact: {email: djs93@gen.cam.ac.uk, label: David Osumi-Sutherland}
+  description: A structured controlled vocabulary used for various aspects of annotation
+    by FlyBase.
+  homepage: http://www.flybase.org/
+  id: fbcv
+  is_obsolete: true
+  layout: ontology_detail
+  preferredPrefix: FBcv
+  products:
+  - {id: fbcv.owl}
+  title: FlyBase Controlled Vocabulary
+- contact: {email: djs93@gen.cam.ac.uk, label: David Osumi-Sutherland}
   description: A structured controlled vocabulary of the development of Drosophila
     melanogaster
   domain: anatomy
@@ -1017,10 +1028,9 @@ ontologies:
   title: Population and Community Ontology
   tracker: http://code.google.com/p/popcomm-ontology/issues/list
 - contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
-  description: 'The Plant Ontology is a structured vocabulary and database resource
+  description: The Plant Ontology is a structured vocabulary and database resource
     that links plant anatomy, morphology and growth and development to plant genomics
-    data. The PO is under active development to expand to encompass terms and annotations
-    from all plants. '
+    data.
   domain: anatomy and development
   homepage: http://www.plantontology.org
   id: po
@@ -1031,6 +1041,7 @@ ontologies:
   - {id: po.owl}
   taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
   title: Plant Ontology
+  tracker: https://github.com/Planteome/plant-ontology/issues
 - contact: {email: thacker@uab.edu, label: Bob Thacker}
   description: The Porifera Ontology (PORO) is an ontology covering the anatomy of
     the taxon Porifera (sponges)
@@ -1239,6 +1250,7 @@ ontologies:
   layout: ontology_detail
   products:
   - {id: taxrank.owl}
+  source: {url: 'https://raw.github.com/obophenotype/taxonomic-rank-ontology/master/src/ontology/taxrank.obo'}
   title: Taxonomic rank vocabulary
 - contact: {email: louis@imbb.forth.gr, label: C. Louis}
   description: A structured controlled vocabulary of the anatomy of mosquitoes.
