@@ -2,6 +2,7 @@
 layout: ontology_detail
 id: po
 in_foundry_order: 1
+title: Plant Ontology
 contact: 
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
@@ -15,7 +16,9 @@ products:
 taxon: 
   id: NCBITaxon:33090
   label: Viridiplantae
-title: Plant Ontology
 ---
 
 The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data. The PO is under active development to expand to encompass terms and annotations from all plants. 
+
+<img alt="Planteome logo" src="http://planteome.org/sites/default/files/garland_logo.PNG"/>
+
