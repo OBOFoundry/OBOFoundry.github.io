@@ -5,10 +5,11 @@ in_foundry_order: 1
 contact: 
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
-description: "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data. The PO is under active development to expand to encompass terms and annotations from all plants. "
+description: "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data."
 domain: anatomy and development
 homepage: http://www.plantontology.org
 page: http://www.plantontology.org/docs/docs.html
+tracker: https://github.com/Planteome/plant-ontology/issues
 products: 
   - id: po.owl
 taxon: 
