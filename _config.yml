@@ -37,9 +37,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:4890', label: Ascomycota}
   title: Ascomycete phenotype ontology
 - contact: {email: jiezheng@upenn.edu, label: Jie Zheng}
-  description: The Beta Cell Genomics Ontology (BCGO) is an application ontology built
-    for the beta cell genomics studies aiming to support database annotation, complicated
-    semantic queries, and automated cell type classification.
+  description: An application ontology built for beta cell genomics studies.
   homepage: https://github.com/obi-bcgo/bcgo
   id: bcgo
   in_foundry: false
@@ -94,9 +92,8 @@ ontologies:
   title: Biological Spatial Ontology
   tracker: https://github.com/obophenotype/biological-spatial-ontology/issues
 - contact: {email: a.chang@tu-bs.de, label: Antje Chang}
-  description: A structured controlled vocabulary for the source of an enzyme. It
-    comprises terms for tissues, cell lines, cell types and cell cultures from uni-
-    and multicellular organisms.
+  description: A structured controlled vocabulary for the source of an enzyme comprising
+    tissues, cell lines, cell types and cell cultures.
   domain: anatomy
   homepage: http://www.brenda-enzymes.info
   id: bto
@@ -123,9 +120,7 @@ ontologies:
   tracker: https://github.com/obophenotype/caro/issues
 - contact: {email: balhoff@nescent.org, label: Jim Balhoff}
   description: a formalization of concepts and relations relevant to evolutionary
-    comparative analysis, such as phylogenetic trees, OTUs (operational taxonomic
-    units) and compared characters (including molecular characters as well as other
-    types).
+    comparative analysis
   homepage: http://sourceforge.net/apps/mediawiki/cdao/index.php?title=Main_Page
   id: cdao
   layout: ontology_detail
@@ -187,9 +182,8 @@ ontologies:
   title: Cell Ontology
   tracker: https://code.google.com/p/cell-ontology/issues/list
 - contact: {email: Sirarat.Sarntivijai@fda.hhs.gov, label: Sirarat Sarntivijai}
-  description: The Cell Line Ontology (CLO) is a community-driven ontology that is
-    developed to standardize and integrate cell line information and support computer-assisted
-    reasoning.
+  description: An ontology to standardize and integrate cell line information and
+    to support computer-assisted reasoning.
   homepage: http://www.clo-ontology.org
   id: clo
   layout: ontology_detail
@@ -220,8 +214,6 @@ ontologies:
   tracker: https://github.com/obophenotype/ctenophore-ontology/issues
 - contact: {email: adrien.barton@gmail.com, label: Adrien Barton}
   description: An ontology to describe entities related to cardiovascular diseases
-    (including the diseases themselves, the underlying disorders, and the related
-    pathological processes)
   domain: health
   homepage: https://code.google.com/p/cvdo/
   id: cvdo
@@ -261,9 +253,7 @@ ontologies:
   tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
   twitter: diseaseontology
 - contact: {email: djs93@gen.cam.ac.uk, label: David Osumi-Sutherland}
-  description: An ontology of commonly encountered and/or high level Drosophila phenotypes.  It
-    has significant formalisation - utilising terms from GO, CL, PATO and the Drosophila
-    anatomy ontology.  It has been used by FlyBase for > 159000 annotations of phenotype
+  description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
   homepage: http://www.flybase.org/
   id: dpo
   layout: ontology_detail
@@ -357,9 +347,8 @@ ontologies:
   - {id: epo.owl}
   title: Epidemiology Ontology
 - contact: {email: carlotorniai@gmail.com, label: Carlo Torniai}
-  description: ERO models research resources such instruments. protocols, reagents,
-    animal models and biospecimens. It has been developed in the context of the eagle-i
-    project  (http://eagle-i.net/).
+  description: An ontology of research resources such as instruments. protocols, reagents,
+    animal models and biospecimens.
   documentation: http://code.google.com/p/eagle-i/wiki/Documentation
   domain: resources
   homepage: http://code.google.com/p/eagle-i/
@@ -447,9 +436,7 @@ ontologies:
   title: Fly taxonomy
   tracker: https://cedar.bio.indiana.edu/trac/env/ontologies/wiki/PublicWikiStart
 - contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
-  description: 'FIX consists of two ontologies: methods and properties (but not objects,
-    which are subject of the chemical ontology). The methods are applied to study
-    the properties.'
+  description: An ontology of physico-chemical methods and properties.
   id: fix
   products:
   - {id: fix.owl}
@@ -463,9 +450,7 @@ ontologies:
   title: Influenza Ontology
   tracker: http://purl.obolibrary.org/obo/flu/tracker
 - contact: {email: mejino@comcast.net, label: Onard Mejino}
-  description: Obo format translation of the FMA, omitting all relationships other
-    than is_a, part_of and has_part. Future versions of fma_obo will include more
-    relationships
+  description: This is currently a slimmed down version of FMA
   domain: anatomy
   homepage: http://sig.biostr.washington.edu/projects/fm/index.html
   id: fma
@@ -595,9 +580,7 @@ ontologies:
   twitter: hp_ontology
 - contact: {email: alanruttenberg@gmail.com, label: Alan Ruttenberg}
   depicted_by: https://avatars0.githubusercontent.com/u/13591168?v=3&s=200
-  description: 'The Information Artifact Ontology (IAO) is a new ontology of information
-    entities, originally driven by work by the OBI digital entity and realizable information
-    entity branch. '
+  description: An ontology of information entities.
   domain: information
   homepage: http://purl.obolibrary.org/obo/iao
   id: iao
@@ -623,9 +606,8 @@ ontologies:
   title: Infectious disease
   tracker: http://code.google.com/p/infectious-disease-ontology/issues/list
 - contact: {email: topalis@imbb.forth.gr, label: Pantelis Topalis}
-  description: An application ontology to cover all aspects of malaria (clinical,
-    epidemiological, biological, etc) as well as the intervention attempts to control
-    it.
+  description: An application ontology to cover all aspects of malaria as well as
+    the intervention attempts to control it.
   domain: health
   homepage: http://anobase.vectorbase.org
   id: idomal
@@ -634,9 +616,8 @@ ontologies:
   - {id: idomal.owl}
   title: Malaria Ontology
 - contact: {email: lenov@ebi.ac.uk, label: Nicolas Le Novere}
-  description: The Kinetic Simulation Algorithm Ontology (KiSAO) classifies algorithms
-    available for the simulation of models in biology, and their characteristics and
-    the parameters required for their use.
+  description: A classification of algorithms available for the simulation of models
+    in biology.
   domain: algorithms
   homepage: http://biomodels.net/kisao
   id: kisao
@@ -646,8 +627,7 @@ ontologies:
   title: Kinetic Simulation Algorithm Ontology
   tracker: https://sourceforge.net/tracker/?group_id=293617
 - contact: {email: bakerc@unb.ca, label: Christipher Baker}
-  description: This ontology describes the LIPIDMAPS nomenclature classification explicitly
-    using description logics (OWL-DL)
+  description: An ontology representation of the LIPIDMAPS nomenclature classification.
   domain: lipids
   id: lipro
   products:
@@ -697,8 +677,7 @@ ontologies:
   title: Medaka fish anatomy and development
 - contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
   description: An ontology of affective phenomena such as emotions, moods, appraisals
-    and subjective feelings, designed to support interdisciplinary research by providing
-    unified annotations.
+    and subjective feelings.
   domain: health
   homepage: https://code.google.com/p/emotion-ontology/
   id: mfoem
@@ -709,8 +688,7 @@ ontologies:
   tracker: https://code.google.com/p/emotion-ontology/issues/list
 - contact: {email: Henning.Hermjakob@ebi.ac.uk, label: Henning Hermjakob}
   description: A structured controlled vocabulary for the annotation of experiments
-    concerned with protein-protein interactions. Developed by the HUPO Proteomics
-    Standards Initiative.
+    concerned with protein-protein interactions.
   domain: experiments
   homepage: http://psidev.sf.net
   id: mi
@@ -720,9 +698,7 @@ ontologies:
   - {id: mi.owl}
   title: Protein-protein interaction
 - contact: {email: hlapp@drycafe.net, label: Hilamr Lapp}
-  description: The MIAPA ontology is an application ontology to formalize annotation
-    of phylogenetic data according to the emerging Minimum Information About a Phylogenetic
-    Analysis (MIAPA) metadata reporting standard.
+  description: An application ontology to formalize annotation of phylogenetic data.
   homepage: http://www.evoio.org/wiki/MIAPA
   id: miapa
   layout: ontology_detail
@@ -731,8 +707,7 @@ ontologies:
   title: MIAPA Ontology
   tracker: https://github.com/miapa/miapa/issues
 - contact: {email: vdritsou@imbb.forth.gr, label: Vicky Dritsou}
-  description: microRNA Ontology (miRNAO) is an application ontology and it has been
-    developed in order to drive miRNA databases.
+  description: An application ontology for use with miRNA databases.
   homepage: http://code.google.com/p/mirna-ontology/
   id: mirnao
   layout: ontology_detail
@@ -751,9 +726,8 @@ ontologies:
   taxon: {id: 'NCBITaxon:44484', label: Anopheles}
   title: Mosquito insecticide resistance
 - contact: {email: shimoyama@mcw.edu, label: Mary Shimoyama}
-  description: 'The Measurement Method Ontology is designed to represent the variety
-    of methods used to make qualitative and quantitative clinical and phenotype measurements
-    both in the clinic and with model organisms. '
+  description: 'A representation of the variety of methods used to make clinical and
+    phenotype measurements. '
   domain: clinical
   id: mmo
   layout: ontology_detail
@@ -761,11 +735,8 @@ ontologies:
   - {id: mmo.owl}
   title: Measurement method ontology
 - contact: {email: stoeckrt@pcbi.upenn.edu, label: Chris Stoeckert}
-  description: Concepts, definitions, terms, and resources for standardized description
-    of a microarray experiment in support of MAGE v.1. The MGED ontology is divided
-    into the MGED Core ontology which is intended to be stable and in synch with MAGE
-    v.1; and the MGED Extended ontology which adds further associations and classes
-    not found in MAGE v.1.
+  description: A standardized description of a microarray experiment in support of
+    MAGE v.1.
   domain: experiments
   homepage: http://mged.sourceforge.net/ontologies/MGEDontology.php
   id: mo
@@ -790,8 +761,7 @@ ontologies:
   - {label: MGI, title: MGI MP Browser, url: 'http://www.informatics.jax.org/searches/MP_form.shtml'}
   - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/MP:0000001'}
   contact: {email: pheno@jax.org, label: JAX phenotype list}
-  description: The Mammalian Phenotype Ontology is under development as a community
-    effort to provide standard terms for annotating mammalian phenotypic data.
+  description: Standard terms for annotating mammalian phenotypic data.
   domain: phenotype
   homepage: http://www.informatics.jax.org/searches/MP_form.shtml
   id: mp
@@ -838,9 +808,7 @@ ontologies:
   - {label: NCBI, title: NCBI Taxonomy Browser, url: 'http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi'}
   contact: {email: obo-taxonomy@lists.sourceforge.net, label: obo-taxonomy-list}
   createdWith: http://owltools.googlecode.com/
-  description: The NCBITaxon ontology is an automatic translation of the NCBI taxonomy
-    (a taxonomic classification of living organisms and associated artifacts) database
-    into an ontology
+  description: An ontology representation of the NCBI organismal taxonomy
   domain: taxonomy
   homepage: http://www.obofoundry.org/wiki/index.php/NCBITaxon:Main_Page
   id: ncbitaxon
@@ -888,10 +856,7 @@ ontologies:
   title: Ontology of Biological Attributes
   tracker: https://github.com/obophenotype/bio-attribute-ontology/issues
 - contact: {email: jiezheng@upenn.edu, label: Jie Zheng}
-  description: The Ontology of Biological and Clinical Statistics (OBCS) is a biomedical
-    ontology in the domain of biological and clinical statistics. OBCS is primarily
-    targeted for statistical term representation in the fields in biological, biomedical,
-    and clinical domains.
+  description: A biomedical ontology in the domain of biological and clinical statistics.
   domain: statistics
   homepage: https://github.com/obcs/obcs
   id: obcs
@@ -916,9 +881,7 @@ ontologies:
   title: Ontology for Biomedical Investigations
   tracker: http://sourceforge.net/p/obi/obi-terms/
 - contact: {email: yongqunh@med.umich.edu, label: Yongqun Oliver He}
-  description: 'The OGG (Ontology of Genes and Genomes) is a formal ontology of genes
-    and genomes of biological organisms. OGG is developed by following OBO Foundry
-    principles and aligning with the BFO top ontology. '
+  description: A formal ontology of genes and genomes of biological organisms.
   homepage: http://ogg.googlecode.com/
   id: ogg
   products:
@@ -946,9 +909,8 @@ ontologies:
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Ontology for General Medical Science
   tracker: http://code.google.com/p/ogms/issues/list
-- description: Ontology for Genetic Susceptibility Factor (OGSF) is an application
-    ontology to model/represent the notion of genetic susceptibility to a specific
-    disease or an adverse event or a pathological biological process.
+- description: An application ontology to represent genetic susceptibility to a specific
+    disease, adverse event, or a pathological process.
   homepage: https://code.google.com/p/ogsf/
   id: ogsf
   layout: ontology_detail
@@ -965,9 +927,8 @@ ontologies:
   title: Ontology for MIRNA Target Prediction
 - contact: {email: hoganwr@gmail.com, label: Bill Hogan}
   description: This ontology covers the domain of social entities that are related
-    to health care, such as demographic information (social entities for recording
-    gender (but not sex) and marital status, for example) and the roles of various
-    individuals and organizations (patient, hospital,etc.)
+    to health care, such as demographic information and the roles of various individuals
+    and organizations.
   domain: medicine
   id: omrse
   layout: ontology_detail
@@ -1016,10 +977,8 @@ ontologies:
   title: Phenotypic quality
   tracker: https://github.com/pato-ontology/pato/issues
 - contact: {email: rwalls2008@gmail.com, label: Ramona Walls}
-  description: The Population and Community Ontology (PCO) describes material entities,
-    qualities, and processes related to collections of interacting organisms such
-    as populations and communities. It is taxon neutral, and can be used for any species,
-    including humans.
+  description: A taxon-neutral ontology of material entities, qualities, and processes
+    related to collections of interacting organisms such as populations and communities.
   homepage: http://code.google.com/p/popcomm-ontology/
   id: pco
   layout: ontology_detail
@@ -1043,8 +1002,7 @@ ontologies:
   title: Plant Ontology
   tracker: https://github.com/Planteome/plant-ontology/issues
 - contact: {email: thacker@uab.edu, label: Bob Thacker}
-  description: The Porifera Ontology (PORO) is an ontology covering the anatomy of
-    the taxon Porifera (sponges)
+  description: An ontology covering the anatomy of the taxon Porifera (sponges)
   domain: anatomy
   homepage: https://github.com/obophenotype/porifera-ontology
   id: poro
@@ -1057,10 +1015,7 @@ ontologies:
   title: Porifera Ontology
   tracker: https://github.com/obophenotype/porifera-ontology/issues
 - contact: {email: dan5@georgetown.edu, label: Darren Natale}
-  description: PRotein Ontology (PRO) has been designed to describe the relationships
-    of proteins and protein evolutionary classes (ontology for ProEvo), to delineate
-    the multiple protein forms of a gene locus (ontology for protein forms), and to
-    interconnect existing ontologies
+  description: an ontological representation of protein-related entities
   documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
   domain: proteins
   homepage: http://proconsortium.org
@@ -1072,8 +1027,7 @@ ontologies:
   title: PRotein Ontology (PRO)
   tracker: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
 - contact: {email: vpetri@mcw.edu, label: Victoria Petri}
-  description: The Pathway Ontology is a controlled vocabulary for pathways that provides
-    standard terms for the annotation of gene products.
+  description: A controlled vocabulary for annotating gene products to pathways.
   domain: biological process
   homepage: http://rgd.mcw.edu/tools/ontology/ont_search.cgi
   id: pw
@@ -1134,8 +1088,7 @@ ontologies:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/24267899'}
   title: Rat Strain Ontology
 - contact: {email: lenov@ebi.ac.uk, label: Nicolas Le Novere}
-  description: The Systems Biology Ontology is a set of controlled, relational vocabularies
-    of terms commonly used in Systems Biology, and in particular in computational
+  description: Terms commonly used in Systems Biology, and in particular in computational
     modeling.
   domain: biochemistry
   homepage: http://www.ebi.ac.uk/sbo/
@@ -1241,9 +1194,7 @@ ontologies:
   title: Teleost Anatomy Ontology
   tracker: https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3ATAO
 - contact: {email: peteremidford@yahoo.com, label: Peter Midford}
-  description: A vocabulary of taxonomic ranks intended to replace the sets of rank
-    terms found in the Teleost Taxonomy Ontology, the OBO translation of the NCBI
-    taxonomy and similar OBO taxonomy ontologies.
+  description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
   domain: taxonomy
   homepage: https://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary
   id: taxrank
@@ -1263,9 +1214,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:44484', label: Anopheles}
   title: Mosquito gross anatomy
 - contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
-  description: A controlled vocabulary of describe phenotypic traits in plants. Each
-    trait is a distinguishable feature, characteristic, quality or phenotypic feature
-    of a developing or mature plant.
+  description: A controlled vocabulary of describe phenotypic traits in plants.
   domain: phenotype
   homepage: http://www.gramene.org/plant_ontology/
   id: to
@@ -1277,10 +1226,8 @@ ontologies:
   title: Plant Trait Ontology
   tracker: https://github.com/Planteome/plant-trait-ontology/issues
 - contact: {email: diseaseontology-discussion@lists.sourceforge.net, label: Lynn Schriml}
-  description: 'This vocabulary describes a process that is the means of how a pathogen
-    is transmitted from one host, reservoir, or source to another host. This transmission
-    may occur either directly or indirectly and may involve animate vectors or inanimate
-    vehicles.  '
+  description: A representation of processes in which a pathogen is transmitted from
+    one host, reservoir, or source to another host.
   domain: health
   homepage: http://diseaseontology.sourceforge.net/
   id: trans
@@ -1468,9 +1415,8 @@ ontologies:
   title: Xenopus anatomy and development
   tracker: https://sourceforge.net/p/obo/xenopus-anatomy-xao-term-requests/
 - contact: {email: shimoyama@mcw.edu, label: Mary Shimoyama}
-  description: The Experimental Conditions Ontology is designed to represent the conditions
-    under which physiological and morphological measurements are made both in the
-    clinic and in studies involving humans or model organisms.
+  description: Conditions under which physiological and morphological measurements
+    are made both in the clinic and in studies involving humans or model organisms.
   domain: clinical
   id: xco
   products:
