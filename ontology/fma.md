@@ -4,7 +4,7 @@ id: fma
 contact: 
   email: mejino@comcast.net
   label: Onard Mejino
-description: Obo format translation of the FMA, omitting all relationships other than is_a, part_of and has_part. Future versions of fma_obo will include more relationships
+description: This is currently a slimmed down version of FMA
 domain: anatomy
 homepage: http://sig.biostr.washington.edu/projects/fm/index.html
 page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy

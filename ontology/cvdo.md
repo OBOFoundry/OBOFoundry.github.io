@@ -4,7 +4,7 @@ id: cvdo
 contact: 
   email: adrien.barton@gmail.com
   label: Adrien Barton
-description: An ontology to describe entities related to cardiovascular diseases (including the diseases themselves, the underlying disorders, and the related pathological processes)
+description: An ontology to describe entities related to cardiovascular diseases
 domain: health
 homepage: https://code.google.com/p/cvdo/
 products: 

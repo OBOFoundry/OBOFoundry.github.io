@@ -4,7 +4,7 @@ id: taxrank
 contact: 
   email: peteremidford@yahoo.com
   label: Peter Midford
-description: A vocabulary of taxonomic ranks intended to replace the sets of rank terms found in the Teleost Taxonomy Ontology, the OBO translation of the NCBI taxonomy and similar OBO taxonomy ontologies.
+description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
 domain: taxonomy
 homepage: https://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary
 source:

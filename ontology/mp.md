@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: mp
 title: Mammalian phenotype
-description: The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data.
+description: Standard terms for annotating mammalian phenotypic data.
 homepage: http://www.informatics.jax.org/searches/MP_form.shtml
 contact: 
   email: pheno@jax.org

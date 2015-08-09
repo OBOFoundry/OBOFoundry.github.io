@@ -6,7 +6,7 @@ title: NCBI organismal classification
 contact: 
   email: obo-taxonomy@lists.sourceforge.net
   label: obo-taxonomy-list
-description: The NCBITaxon ontology is an automatic translation of the NCBI taxonomy (a taxonomic classification of living organisms and associated artifacts) database into an ontology
+description: An ontology representation of the NCBI organismal taxonomy
 source: http://www.ncbi.nlm.nih.gov/taxonomy
 wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
 createdWith: http://owltools.googlecode.com/

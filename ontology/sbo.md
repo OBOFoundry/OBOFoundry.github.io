@@ -4,7 +4,7 @@ id: sbo
 contact: 
   email: lenov@ebi.ac.uk
   label: Nicolas Le Novere
-description: The Systems Biology Ontology is a set of controlled, relational vocabularies of terms commonly used in Systems Biology, and in particular in computational modeling.
+description: Terms commonly used in Systems Biology, and in particular in computational modeling.
 domain: biochemistry
 homepage: http://www.ebi.ac.uk/sbo/
 products: 

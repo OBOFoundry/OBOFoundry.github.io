@@ -4,7 +4,7 @@ id: bto
 contact: 
   email: a.chang@tu-bs.de
   label: Antje Chang
-description: A structured controlled vocabulary for the source of an enzyme. It comprises terms for tissues, cell lines, cell types and cell cultures from uni- and multicellular organisms.
+description: A structured controlled vocabulary for the source of an enzyme comprising tissues, cell lines, cell types and cell cultures.
 domain: anatomy
 homepage: http://www.brenda-enzymes.info
 page: https://en.wikipedia.org/wiki/BRENDA_tissue_ontology

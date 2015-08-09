@@ -4,7 +4,7 @@ id: trans
 contact: 
   email: diseaseontology-discussion@lists.sourceforge.net
   label: Lynn Schriml
-description: "This vocabulary describes a process that is the means of how a pathogen is transmitted from one host, reservoir, or source to another host. This transmission may occur either directly or indirectly and may involve animate vectors or inanimate vehicles.  "
+description: "A representation of processes in which a pathogen is transmitted from one host, reservoir, or source to another host."
 domain: health
 homepage: http://diseaseontology.sourceforge.net/
 products: 

@@ -2,7 +2,7 @@
 contact: 
   email: bakerc@unb.ca
   label: Christipher Baker
-description: This ontology describes the LIPIDMAPS nomenclature classification explicitly using description logics (OWL-DL)
+description: An ontology representation of the LIPIDMAPS nomenclature classification.
 domain: lipids
 id: lipro
 products: 

@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: ogsf
-description: Ontology for Genetic Susceptibility Factor (OGSF) is an application ontology to model/represent the notion of genetic susceptibility to a specific disease or an adverse event or a pathological biological process.
+description: An application ontology to represent genetic susceptibility to a specific disease, adverse event, or a pathological process.
 homepage: https://code.google.com/p/ogsf/
 products: 
   - id: ogsf.owl

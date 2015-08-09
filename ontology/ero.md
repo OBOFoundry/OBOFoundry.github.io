@@ -4,7 +4,7 @@ id: ero
 contact: 
   email: carlotorniai@gmail.com
   label: Carlo Torniai
-description: ERO models research resources such instruments. protocols, reagents, animal models and biospecimens. It has been developed in the context of the eagle-i project  (http://eagle-i.net/).
+description: An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens.
 domain: resources
 homepage: http://code.google.com/p/eagle-i/
 documentation: http://code.google.com/p/eagle-i/wiki/Documentation

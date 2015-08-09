@@ -4,7 +4,7 @@ id: miapa
 contact: 
   email: hlapp@drycafe.net
   label: Hilamr Lapp
-description: The MIAPA ontology is an application ontology to formalize annotation of phylogenetic data according to the emerging Minimum Information About a Phylogenetic Analysis (MIAPA) metadata reporting standard.
+description: An application ontology to formalize annotation of phylogenetic data.
 homepage: http://www.evoio.org/wiki/MIAPA
 s: 
   - id: miapa.owl

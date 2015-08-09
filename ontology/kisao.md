@@ -4,7 +4,7 @@ id: kisao
 contact: 
   email: lenov@ebi.ac.uk
   label: Nicolas Le Novere
-description: The Kinetic Simulation Algorithm Ontology (KiSAO) classifies algorithms available for the simulation of models in biology, and their characteristics and the parameters required for their use.
+description: A classification of algorithms available for the simulation of models in biology.
 domain: algorithms
 homepage: http://biomodels.net/kisao
 

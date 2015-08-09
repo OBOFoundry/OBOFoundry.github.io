@@ -4,7 +4,7 @@ id: to
 contact: 
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
-description: A controlled vocabulary of describe phenotypic traits in plants. Each trait is a distinguishable feature, characteristic, quality or phenotypic feature of a developing or mature plant.
+description: A controlled vocabulary of describe phenotypic traits in plants.
 domain: phenotype
 homepage: http://www.gramene.org/plant_ontology/
 page: http://www.gramene.org/plant_ontology/index.html#to

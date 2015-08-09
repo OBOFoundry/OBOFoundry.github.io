@@ -4,7 +4,7 @@ id: iao
 contact: 
   email: alanruttenberg@gmail.com
   label: Alan Ruttenberg
-description: "The Information Artifact Ontology (IAO) is a new ontology of information entities, originally driven by work by the OBI digital entity and realizable information entity branch. "
+description: "An ontology of information entities."
 domain: information
 homepage: http://purl.obolibrary.org/obo/iao
 page: http://code.google.com/p/information-artifact-ontology/

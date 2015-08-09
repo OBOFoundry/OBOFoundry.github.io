@@ -2,7 +2,7 @@
 contact: 
   email: yongqunh@med.umich.edu
   label: Yongqun Oliver He
-description: "The OGG (Ontology of Genes and Genomes) is a formal ontology of genes and genomes of biological organisms. OGG is developed by following OBO Foundry principles and aligning with the BFO top ontology. "
+description: A formal ontology of genes and genomes of biological organisms.
 homepage: http://ogg.googlecode.com/
 id: ogg
 products: 

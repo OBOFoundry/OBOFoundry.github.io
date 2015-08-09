@@ -3,7 +3,7 @@ layout: ontology_detail
 id: bcgo
 in_foundry: false
 title: Beta Cell Genomics Ontology
-description: The Beta Cell Genomics Ontology (BCGO) is an application ontology built for the beta cell genomics studies aiming to support database annotation, complicated semantic queries, and automated cell type classification.
+description: An application ontology built for beta cell genomics studies.
 homepage: https://github.com/obi-bcgo/bcgo
 contact: 
   email: jiezheng@upenn.edu
