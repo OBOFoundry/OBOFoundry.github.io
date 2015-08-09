@@ -14,11 +14,11 @@ same principles and YAML/RDF structures
 
 The source can be found on https://github.com/OBOFoundry/OBOFoundry.github.io
 
-It uses [Jekyll](https://en.wikipedia.org/wiki/Jekyll_%28software%29),
-a very nice static site generator. I already use this for
+It uses GitHub Pages/[Jekyll](https://en.wikipedia.org/wiki/Jekyll_%28software%29),
+a popular static site generator. I already use this for
 http://uberon.org
 
-It also [integrates nicely with
+It [integrates nicely with
 github](https://help.github.com/articles/using-jekyll-with-pages/)
 which means that the entire site can be seen on
 http://obofoundry.github.io (no need to run a dedicated webserver)
@@ -48,12 +48,15 @@ Please do! Fork and make PR, but beware things are not yet stable
     * ...
  * [Makefile](Makefile) `<-- For compiling derived artefacts and running tests`
  * [.travis.yml](.travis.ml) `<-- continuous integration config`
+ * [_posts/](_posts) `<-- Blog posts/news`
  * [_layouts/](_layouts) `<-- Jekyll layouts`
  * [_includes/](_includes) `<-- Jekyll includes`
  * [_util/](util/) `<-- scripts etc`
     * [_util/extract-metadata.py](util/extract-metadata.py) `<-- tool for working with .md files`
 
 ## Instructions for Registry Curators
+
+**NEW!**: See [this FAQ entry](http://obofoundry.github.io/faq/how-do-i-edit-metadata.html) for simple web-based editing of metadata
 
 Please edit the *source* files in the [ontology/](ontology/) directory only.
 
@@ -102,6 +105,10 @@ script in the util/ directory.
 
 The one piece of visual info in the md is the `layout` field, which is necessary for Jekyll.
 
+
+
+#### RDF
+
 The yaml is all "YAML-LD" and can compile down to RDF/OWL using a generic translator (eg JENA) plus our context file.
 
 ### Community Contributions
@@ -131,13 +138,17 @@ TODO: add a quick guide to yaml, and the tags we use.
 
 Simply add a post to the [_posts/](_posts/) directory - copy an exiting one if you like
 
-TODO
+Posts can also be edited via the GH web interface, all posts are here:
+
+https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/_posts
 
 ## Instructions for WebSite developers
 
 Consult online Jekyll docs for details. Basically you just do
 
    gem install jekyll
+
+(I am currently using Jekyll 2.5.3)
 
 You can run a local test install from the top level directory
 
@@ -149,9 +160,7 @@ Every commit is visible within a few minutes on: http://obofoundry.github.io
 
 You may want to work on a branch to avoid disrupting the live
 site. Exact procedures for accepting changes back into master have yet
-to be determined. For example, we may have a voting mechanism. As an
-example of how this might work see
-https://github.com/ga4gh/schemas/blob/master/CONTRIBUTING.md
+to be determined. See [CONTRIBUTING.md](CONTRIBUTING.md) for a draft.
 
 The setup is fairly standard for Jekyll. We use Jekyll bootstrap
 (bootstrap 3). We try and keep things minimal so that the site will
@@ -165,7 +174,9 @@ Basics:
  * Different styles of pages go in _layouts
  * ...
 
-## FAQ
+## Site FAQ
+
+See also the main FAQ on the website: this FAQ is for OBO internal people
 
 ### It's missing feature X from the old site
 

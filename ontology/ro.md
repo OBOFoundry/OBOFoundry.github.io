@@ -3,22 +3,37 @@ layout: ontology_detail
 id: ro
 title: Relations Ontology
 canonical: ro.owl
-descriptions: Relationship types shared across multiple ontologies
-homepage: https://code.google.com/p/obo-relations/issues
+description: Relationship types shared across multiple ontologies
+homepage: https://github.com/oborel/obo-relations/
 tracker: https://github.com/oborel/obo-relations/issues
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-relations
 domain: relations
+contact: 
+  email: cjmungall@lbl.gov
+  label: Chris Mungall
 jobs:
   - id: http://build.berkeleybop.org/job/build-ro
     type: DryRunBuild
 products:
  - id: ro.owl
+   title: Relation Ontology
  - id: ro.obo
- - id: ro/ro-interaction.owl
+   title: Relation Ontology in obo format
+ - id: ro/core.owl
+   title: Core relations
+   description: Minimal subset intended to work with BFO-classes
+ - id: ro/subsets/ro-interaction.owl
+   title: Interaction relations
+ - id: ro/subsets/ro-eco.owl
+   title: Ecology subset
+ - id: ro/subsets/ro-neuro.owl
+   title: Neuroscience subset
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 ---
+
+![logo](/images/ro_logo.png)
 
 # Summary
 
