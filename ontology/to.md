@@ -15,6 +15,9 @@ taxon:
   label: Viridiplantae
 title: Plant Trait Ontology
 tracker: https://github.com/Planteome/plant-trait-ontology/issues
+publications:
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/22847540
+    title: "Ontologies as integrative tools for plant science."
 ---
 
 A controlled vocabulary of describe phenotypic traits in plants. Each trait is a distinguishable feature, characteristic, quality or phenotypic feature of a developing or mature plant.

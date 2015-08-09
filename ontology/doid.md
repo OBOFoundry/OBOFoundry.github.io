@@ -23,6 +23,9 @@ taxon:
   label: Homo sapiens
 title: Human disease ontology
 tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
+publications:
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/25348409
+    title: "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data."
 ---
 
 Creating a comprehensive hierarchical controlled vocabulary for human disease representation.

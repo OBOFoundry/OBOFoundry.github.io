@@ -12,6 +12,9 @@ page: http://www.gramene.org/plant_ontology/index.html#eo
 products: 
   - id: eo.owl
 tracker: https://github.com/Planteome/plant-environment-ontology/issues
+publications:
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/22847540
+    title: "Ontologies as integrative tools for plant science."
 ---
 
 A structured, controlled vocabulary for the representation of plant environmental conditions.
