@@ -17,14 +17,14 @@
       </td>
       <td>
         <a href="ontology/{{ont.id}}.html">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+          <button type="button" class="btn btn-default" aria-label="Left Align" title="More details">
             <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
           </button>
         </a>
       </td>
       <td>
         <a href="{{ont.homepage}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+          <button type="button" class="btn btn-default" aria-label="Left Align" title="Project home">
             <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
           </button>
         </a>
@@ -32,7 +32,7 @@
       <td>
         {% if ont.tracker %}
         <a href="{{ont.tracker}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+          <button type="button" class="btn btn-default" aria-label="Left Align" title="Tracker">
             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
           </button>
         </a>
@@ -42,7 +42,7 @@
       <td>
         {% if ont.contact %}
         <a href="mailto:{{ont.contact.email}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+          <button type="button" class="btn btn-default" aria-label="Left Align" title="Email ontology devs">
             <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
           </button>
         </a>
@@ -51,7 +51,7 @@
 
       <td>
         <a href="http://purl.obolibrary.org/obo/{{ont.id}}.owl">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+          <button type="button" class="btn btn-default" aria-label="Left Align" title="Download file">
             <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
           </button>
         </a>
@@ -59,7 +59,7 @@
 
       <td>
         <a href="http://www.ontobee.org/browser/index.php?o={{ont.id}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+          <button type="button" class="btn btn-default" aria-label="Left Align" title="Browse on Ontobee">
             <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
           </button>
         </a>
@@ -68,7 +68,7 @@
       <td>
         {% if ont.publications %}
         <a href="{{ont.publications.first.id}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+          <button type="button" class="btn btn-default" aria-label="Left Align" title="Publications list">
             <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
           </button>
         </a>
