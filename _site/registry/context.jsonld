@@ -1,0 +1,68 @@
+{
+ "@context": {
+  "@base": "http://purl.obolibrary.org/obo/",
+  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "owl": "http://www.w3.org/2002/07/owl#",
+  "xsd": "http://www.w3.org/2001/XMLSchema#",
+  "dc": "http://purl.org/dc/terms/",
+  "dce": "http://purl.org/dc/elements/1.1/",
+  "dcterms": "http://purl.org/dc/terms/1.1/",
+  "faldo": "http://biohackathon.org/resource/faldo#",
+  "foaf": "http://xmlns.com/foaf/0.1/",
+  "oa": "http://www.w3.org/ns/oa#",
+  "idot": "http://identifiers.org/",
+  "void": "http://rdfs.org/ns/void#",
+  "doap": "http://usefulinc.com/ns/doap#",
+  "pav": "http://purl.org/pav/",
+  "id": "@id",
+  "label": "rdfs:label",
+  "comment": "rdfs:comment",
+  "description": "dce:description",
+  "source": "dce:source",
+  "publisher": "dce:publisher",
+  "mailing_list": "doap:mailing-list",
+  "createdWith": "pav:createdWith",
+  "wasDerivedFrom": "pav:wasDerivedFrom",
+  "preferredPrefix": "idot:preferredPrefix",
+  "alternatePrefix": "idot:alternatePrefix",
+  "identifierPattern": "idot:identifierPattern",
+  "exampleIdentifier": "idot:exampleIdentifier",
+  "license": "dct:license",
+  "domain": "dct:theme",
+  "products": "void:subset",
+  "Class": "owl:Class",
+  "type": {
+   "@id": "rdf:type",
+   "@type": "@id"
+  },
+  "created": {
+   "@id": "dcterms:created",
+   "@type": "xsd:dateTime"
+  },
+  "creator": {
+   "@id": "dcterms:creator",
+   "@type": "@id"
+  },
+  "depiction": {
+   "@id": "foaf:depiction",
+   "@type": "@id"
+  },
+  "publications": "dcterms:publication",
+  "subClassOf": "owl:subClassOf",
+  "title": "dce:title",
+  "homepage": {
+   "@id": "foaf:homepage",
+   "@type": "@id"
+  },
+  "page": {
+   "@id": "foaf:page",
+   "@type": "@id"
+  },
+  "ontologies": "dcterms:hasPart",
+  "exampleClass": {
+   "@id": "void:exampleResource",
+   "@type": "@id"
+  }
+ }
+}
