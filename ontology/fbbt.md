@@ -15,6 +15,16 @@ taxon:
   label: Drosophila
 title: Drosophila gross anatomy
 tracker: http://purl.obolibrary.org/obo/fbbt/tracker
+browsers:
+  - label: FB
+    title: FlyBase Browser
+    url: http://flybase.org/.bin/cvreport.html?cvterm=FBbt:10000000
+  - label: VFB
+    title: Virtual Fly Brain
+    url: http://www.virtualflybrain.org/site/tools/anatomy_finder/index.htm?id=FBbt:00005106
+  - label: BioPortal
+    title: BioPortal Browser
+    url: http://bioportal.bioontology.org/ontologies/FB-BT?p=classes
 ---
 
 A structured controlled vocabulary of the anatomy of Drosophila melanogaster
