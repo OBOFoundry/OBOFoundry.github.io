@@ -3,13 +3,15 @@ layout: ontology_detail
 id: fbbt
 preferredPrefix: FBbt
 contact: 
-  email: djs93@gen.cam.ac.uk
-  label: David Osumi-Sutherland
-description: A structured controlled vocabulary of the anatomy of Drosophila melanogaster
+  email: mmc46@gen.cam.ac.uk
+  label: Marta Costa
+description: An ontology representing the anatomy of Drosophila melanogaster
 domain: anatomy
 homepage: http://purl.obolibrary.org/obo/fbbt
 products: 
   - id: fbbt.owl
+  - id: fbbt/fbbt-simple.owl
+  - id: fbbt/fbbt-simple.obo
 taxon: 
   id: NCBITaxon:7227
   label: Drosophila
@@ -21,10 +23,10 @@ browsers:
     url: http://flybase.org/.bin/cvreport.html?cvterm=FBbt:10000000
   - label: VFB
     title: Virtual Fly Brain
-    url: http://www.virtualflybrain.org/site/tools/anatomy_finder/index.htm?id=FBbt:00005106
+    url: http://www.virtualflybrain.org/site/stacks/index.htm?add=FBbt:00007401
   - label: BioPortal
     title: BioPortal Browser
     url: http://bioportal.bioontology.org/ontologies/FB-BT?p=classes
 ---
 
-A structured controlled vocabulary of the anatomy of Drosophila melanogaster
+An ontology representing the anatomy of Drosophila melanogaster
