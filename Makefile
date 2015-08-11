@@ -1,6 +1,6 @@
 ONTS := $(wildcard ontology/*md)
 
-all: _config.yml
+all: _config.yml registry/ontologies.yml
 
 test: validate all
 
