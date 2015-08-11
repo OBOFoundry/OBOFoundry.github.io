@@ -248,6 +248,10 @@ ontologies:
   page: http://diseaseontology.sourceforge.net/
   products:
   - {id: doid.owl}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/25348409', title: 'Disease Ontology 2015
+      update: an expanded and updated database of human diseases for linking biomedical
+      knowledge through disease data.'}
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Human disease ontology
   tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
@@ -337,6 +341,9 @@ ontologies:
   page: http://www.gramene.org/plant_ontology/index.html#eo
   products:
   - {id: eo.owl}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/22847540', title: Ontologies as integrative
+      tools for plant science.}
   title: Plant Environmental Conditions
   tracker: https://github.com/Planteome/plant-environment-ontology/issues
 - description: An ontology designed to support the semantic annotation of epidemiology
@@ -389,8 +396,12 @@ ontologies:
   products:
   - {id: fbbi.owl}
   title: Biological imaging methods
-- contact: {email: djs93@gen.cam.ac.uk, label: David Osumi-Sutherland}
-  description: A structured controlled vocabulary of the anatomy of Drosophila melanogaster
+- browsers:
+  - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBbt:10000000'}
+  - {label: VFB, title: Virtual Fly Brain, url: 'http://www.virtualflybrain.org/site/stacks/index.htm?add=FBbt:00007401'}
+  - {label: BioPortal, title: BioPortal Browser, url: 'http://bioportal.bioontology.org/ontologies/FB-BT?p=classes'}
+  contact: {email: mmc46@gen.cam.ac.uk, label: Marta Costa}
+  description: An ontology representing the anatomy of Drosophila melanogaster
   domain: anatomy
   homepage: http://purl.obolibrary.org/obo/fbbt
   id: fbbt
@@ -398,6 +409,8 @@ ontologies:
   preferredPrefix: FBbt
   products:
   - {id: fbbt.owl}
+  - {id: fbbt/fbbt-simple.owl}
+  - {id: fbbt/fbbt-simple.obo}
   taxon: {id: 'NCBITaxon:7227', label: Drosophila}
   title: Drosophila gross anatomy
   tracker: http://purl.obolibrary.org/obo/fbbt/tracker
@@ -665,6 +678,19 @@ ontologies:
   - {id: mf.owl}
   title: Mental Functioning Ontology
   tracker: https://code.google.com/p/mental-functioning-ontology/issues/list
+- contact: {email: druzinsk@uic.edu, label: Robert Druzinsky}
+  dependencies:
+  - {id: uberon}
+  description: TO BE PROVIDED
+  domain: anatomy
+  homepage: http://feedexp.org
+  id: mfmo
+  layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  repository: https://github.com/RDruzinsky/feedontology
+  taxon: {id: 'NCBITaxon:40674', label: Mammalian}
+  title: Mammalian Feeding Muscle Ontology
+  tracker: https://github.com/RDruzinsky/feedontology/issues
 - contact: {email: Thorsten.Henrich@embl-heidelberg.de, label: Thorsten Henrich}
   description: A structured controlled vocabulary of the anatomy and development of
     the Japanese medaka fish, <i>Oryzias latipes</i>.
@@ -979,13 +1005,13 @@ ontologies:
 - contact: {email: rwalls2008@gmail.com, label: Ramona Walls}
   description: A taxon-neutral ontology of material entities, qualities, and processes
     related to collections of interacting organisms such as populations and communities.
-  homepage: http://code.google.com/p/popcomm-ontology/
+  homepage: https://github.com/PopulationAndCommunityOntology/pco
   id: pco
   layout: ontology_detail
   products:
   - {id: pco.owl}
   title: Population and Community Ontology
-  tracker: http://code.google.com/p/popcomm-ontology/issues/list
+  tracker: https://github.com/PopulationAndCommunityOntology/pco/issues
 - contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
   description: The Plant Ontology is a structured vocabulary and database resource
     that links plant anatomy, morphology and growth and development to plant genomics
@@ -998,6 +1024,11 @@ ontologies:
   page: http://www.plantontology.org/docs/docs.html
   products:
   - {id: po.owl}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/23220694', title: The plant ontology
+      as a tool for comparative plant anatomy and genomic analyses.}
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/22847540', title: Ontologies as integrative
+      tools for plant science.}
   taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
   title: Plant Ontology
   tracker: https://github.com/Planteome/plant-ontology/issues
@@ -1062,9 +1093,10 @@ ontologies:
   - {id: rnao.owl}
   title: RNA ontology
 - canonical: ro.owl
-  descriptions: Relationship types shared across multiple ontologies
+  contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
+  description: Relationship types shared across multiple ontologies
   domain: relations
-  homepage: https://code.google.com/p/obo-relations/issues
+  homepage: https://github.com/oborel/obo-relations/
   id: ro
   jobs:
   - {id: 'http://build.berkeleybop.org/job/build-ro', type: DryRunBuild}
@@ -1072,9 +1104,13 @@ ontologies:
   license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-relations
   products:
-  - {id: ro.owl}
-  - {id: ro.obo}
-  - {id: ro/ro-interaction.owl}
+  - {id: ro.owl, title: Relation Ontology}
+  - {id: ro.obo, title: Relation Ontology in obo format}
+  - {description: Minimal subset intended to work with BFO-classes, id: ro/core.owl,
+    title: Core relations}
+  - {id: ro/subsets/ro-interaction.owl, title: Interaction relations}
+  - {id: ro/subsets/ro-eco.owl, title: Ecology subset}
+  - {id: ro/subsets/ro-neuro.owl, title: Neuroscience subset}
   title: Relations Ontology
   tracker: https://github.com/oborel/obo-relations/issues
 - contact: {email: rnigam@mcw.edu, label: Rajni Nigam}
@@ -1222,6 +1258,9 @@ ontologies:
   page: http://www.gramene.org/plant_ontology/index.html#to
   products:
   - {id: to.owl}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/22847540', title: Ontologies as integrative
+      tools for plant science.}
   taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
   title: Plant Trait Ontology
   tracker: https://github.com/Planteome/plant-trait-ontology/issues
