@@ -12,5 +12,7 @@ taxon:
   id: NCBITaxon:33213
   label: Bilateria
 title: Bilateria anatomy
+is_obsolete: true
+replaced_by: uberon
 ---
 
