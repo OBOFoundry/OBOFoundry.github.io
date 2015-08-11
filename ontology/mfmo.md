@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: mfmo
 title: Mammalian Feeding Muscle Ontology
-description: TO BE PROVIDED
+description: The Mammalian Feeding Muscle Ontology is an antomy ontology for the muscles of the head and neck that participate in feeding, swallowing, and other oral-pharyngeal behaviors. 
 homepage: http://feedexp.org
 license:
   url: https://creativecommons.org/licenses/by/3.0/
