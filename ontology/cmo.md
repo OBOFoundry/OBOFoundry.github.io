@@ -8,6 +8,7 @@ description: The Clinical Measurement Ontology is designed to be used to standar
 domain: clinical
 products: 
   - id: cmo.owl
+  - id: cmo.obo
 title: Clinical measurement ontology
 ---
 
