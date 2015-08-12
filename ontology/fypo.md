@@ -1,17 +1,18 @@
 ---
+layout: ontology_detail
+id: fypo
+title: Fission Yeast Phenotype Ontology
 contact: 
   email: mah79@cam.ac.uk
   label: Midori Harris
 description: FYPO is a formal ontology of phenotypes observed in fission yeast. 
 domain: phenotype
-homepage: https://github.com/pombase/fypo/issues
-id: fypo
+homepage: https://github.com/pombase/fypo
 products: 
   - id: fypo.owl
 taxon: 
   id: NCBITaxon:4896
-  label: S Pombe
-title: Fission Yeast Phenotype Ontology
+  label: S. pombe
 tracker: https://github.com/pombase/fypo/issues
 ---
 
