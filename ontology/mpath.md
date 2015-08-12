@@ -13,6 +13,9 @@ taxon:
   id: NCBITaxon:10088
   label: Mus
 title: Mouse pathology
+build:
+  source_url: http://mpath.googlecode.com/svn/trunk/mpath.obo
+  method: obo2owl
 ---
 
 A structured controlled vocabulary of mutant and transgenic mouse pathology phenotypes

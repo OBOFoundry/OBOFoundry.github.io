@@ -10,6 +10,12 @@ homepage: https://github.com/obophenotype/biological-spatial-ontology
 products: 
   - id: bspo.owl
 title: Biological Spatial Ontology
+build:
+  checkout: git clone https://github.com/obophenotype/biological-spatial-ontology.git
+  system: git
+  path: src/ontology
+  method: vcs
+  infallible: 1
 tracker: https://github.com/obophenotype/biological-spatial-ontology/issues
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/25140222

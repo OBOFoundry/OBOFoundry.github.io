@@ -18,6 +18,10 @@ taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: Foundational Model of Anatomy (subset)
+build:
+  source_url: http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo
+  method: obo2owl
+  infallible: 1
 tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
 ---
 

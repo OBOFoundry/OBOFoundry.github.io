@@ -9,6 +9,9 @@ domain: clinical
 products: 
   - id: mmo.owl
 title: Measurement method ontology
+build:
+  source_url: ftp://rgd.mcw.edu/pub/ontology/measurement_method/measurement_method.obo
+  method: obo2owl
 ---
 
 The Measurement Method Ontology is designed to represent the variety of methods used to make qualitative and quantitative clinical and phenotype measurements both in the clinic and with model organisms. 

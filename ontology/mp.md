@@ -2,6 +2,10 @@
 layout: ontology_detail
 id: mp
 title: Mammalian phenotype
+build:
+  source_url: ftp://ftp.informatics.jax.org/pub/reports/MPheno_OBO.ontology
+  method: obo2owl
+  infallible: 1
 description: Standard terms for annotating mammalian phenotypic data.
 homepage: http://www.informatics.jax.org/searches/MP_form.shtml
 contact: 

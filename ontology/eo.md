@@ -2,6 +2,9 @@
 layout: ontology_detail
 id: eo
 title: Plant Environmental Conditions
+build:
+  source_url: http://palea.cgrb.oregonstate.edu/viewsvn/Poc/trunk/ontology/collaborators_ontology/plant_environment/environment_ontology.obo
+  method: obo2owl
 contact: 
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal

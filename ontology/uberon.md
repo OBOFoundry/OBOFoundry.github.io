@@ -4,6 +4,12 @@ id: uberon
 type: owl:Ontology
 label: Uberon
 title: Uberon multi-species anatomy ontology
+build:
+  checkout: svn --ignore-externals co http://svn.code.sf.net/p/obo/svn/uberon/trunk
+  email_cc: cjmungall@lbl.gov
+  system: svn
+  method: vcs
+  infallible: 1
 description: An integrated cross-species anatomy ontology covering animals and bridging multiple species-specific ontologies
 homepage: http://uberon.org
 page: http://en.wikipedia.org/wiki/Uberon

@@ -14,6 +14,11 @@ taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
 title: Plant Trait Ontology
+build:
+  comment: switch to jenkins/archive
+  source_url: http://palea.cgrb.oregonstate.edu/viewsvn/Poc/trunk/ontology/collaborators_ontology/gramene/traits/trait.obo?view=co
+  method: obo2owl
+  infallible: 1
 tracker: https://github.com/Planteome/plant-trait-ontology/issues
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22847540

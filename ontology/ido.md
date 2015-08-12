@@ -12,6 +12,9 @@ taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: Infectious disease
+build:
+  source_url:  http://purl.obolibrary.org/obo/ido.owl
+  method: owl2obo
 tracker: http://code.google.com/p/infectious-disease-ontology/issues/list
 ---
 

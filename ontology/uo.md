@@ -9,5 +9,8 @@ id: uo
 products: 
   - id: uo.owl
 title: Units of measurement
+build:
+  source_url: http://unit-ontology.googlecode.com/svn/trunk/unit.obo
+  method: obo2owl
 tracker: http://sourceforge.net/tracker/?group_id=76834&atid=595654
 ---

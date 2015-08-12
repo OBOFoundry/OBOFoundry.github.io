@@ -9,6 +9,10 @@ homepage: http://code.google.com/p/behavior-ontology
 products: 
   - id: nbo.owl
 title: Neuro Behavior Ontology
+build:
+  checkout: svn co http://behavior-ontology.googlecode.com/svn/trunk
+  system: svn
+  method: vcs
 tracker: http://code.google.com/p/behavior-ontology/issues/list
 ---
 

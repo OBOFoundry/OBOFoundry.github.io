@@ -13,6 +13,9 @@ taxon:
   id: NCBITaxon:7227
   label: Drosophila
 title: Fly taxonomy
+build:
+  source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/fly_taxonomy.obo
+  method: obo2owl
 tracker: https://cedar.bio.indiana.edu/trac/env/ontologies/wiki/PublicWikiStart
 ---
 

@@ -14,6 +14,9 @@ taxon:
   id: NCBITaxon:4751
   label: Fungal
 title: Fungal gross anatomy
+build:
+  source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/microbial_gross_anatomy/fungi/fungal_anatomy.obo
+  method: obo2owl
 ---
 
 A structured controlled vocabulary for the anatomy of fungi.

@@ -12,6 +12,11 @@ documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readm
 products: 
   - id: pr.owl
 title: PRotein Ontology (PRO)
+build:
+  oort_args: --no-reasoner
+  source_url: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.obo
+  method: obo2owl
+  infallible: 0
 tracker: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
 ---
 

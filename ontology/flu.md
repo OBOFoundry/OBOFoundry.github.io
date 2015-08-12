@@ -8,5 +8,8 @@ id: flu
 products: 
   - id: flu.owl
 title: Influenza Ontology
+build:
+  source_url:  http://purl.obolibrary.org/obo/flu.owl
+  method: owl2obo
 tracker: http://purl.obolibrary.org/obo/flu/tracker
 ---

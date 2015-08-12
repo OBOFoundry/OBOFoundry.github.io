@@ -10,6 +10,9 @@ products:
   - id: cmo.owl
   - id: cmo.obo
 title: Clinical measurement ontology
+build:
+  source_url: ftp://rgd.mcw.edu/pub/ontology/clinical_measurement/clinical_measurement.obo
+  method: obo2owl
 ---
 
 <img src="http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif"/>

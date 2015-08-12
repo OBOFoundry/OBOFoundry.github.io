@@ -13,6 +13,9 @@ taxon:
   id: NCBITaxon:32443
   label: Teleostei
 title: Teleost Anatomy Ontology
+build:
+  source_url: http://purl.obolibrary.org/obo/tao.obo
+  method: obo2owl
 tracker: https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3ATAO
 is_obsolete: true
 replaced_by: uberon

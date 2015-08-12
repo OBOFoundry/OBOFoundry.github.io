@@ -22,6 +22,10 @@ taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: Human disease ontology
+build:
+  source_url: http://sourceforge.net/p/diseaseontology/code/HEAD/tree/trunk/HumanDO.obo?format=raw
+  method: obo2owl
+  infallible: 1
 tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/25348409

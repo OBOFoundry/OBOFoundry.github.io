@@ -16,6 +16,10 @@ taxon:
   id: NCBITaxon:7227
   label: Drosophila
 title: Drosophila gross anatomy
+build:
+  source_url: http://svn.code.sf.net/p/fbbtdv/code/fbbt/releases/fbbt.owl
+  method: owl2obo
+  infallible: 1
 tracker: http://purl.obolibrary.org/obo/fbbt/tracker
 browsers:
   - label: FB

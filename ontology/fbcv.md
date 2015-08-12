@@ -2,6 +2,9 @@
 layout: ontology_detail
 id: fbcv
 title: FlyBase Controlled Vocabulary
+build:
+  source_url: http://sourceforge.net/p/fbcv/code-0/HEAD/tree/src/trunk/ontologies/fbcv-edit.obo?format=raw
+  method: obo2owl
 preferredPrefix: FBcv
 products: 
   - id: fbcv.owl

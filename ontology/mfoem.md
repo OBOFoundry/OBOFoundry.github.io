@@ -10,6 +10,9 @@ homepage: https://code.google.com/p/emotion-ontology/
 products: 
   - id: mfoem.owl
 title: Emotion Ontology
+build:
+  source_url: http://purl.obolibrary.org/obo/mfoem.owl
+  method: owl2obo
 tracker: https://code.google.com/p/emotion-ontology/issues/list
 ---
 

@@ -17,6 +17,9 @@ products:
       email: mbrochhausen@gmail.com
       label: Mathias Brochhausen
 title: Information Artifact Ontology
+build:
+  source_url: http://purl.obolibrary.org/obo/iao.owl
+  method: owl2obo
 tracker: http://code.google.com/p/information-artifact-ontology/issues/list
 depicted_by: https://avatars0.githubusercontent.com/u/13591168?v=3&s=200
 ---

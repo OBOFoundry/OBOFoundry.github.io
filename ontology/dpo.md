@@ -2,6 +2,10 @@
 layout: ontology_detail
 id: dpo
 title: Drosophila Phenotype Ontology
+build:
+  source_url: http://purl.obolibrary.org/obo/fbcv/dpo.owl
+  method: owl2obo
+  infallible: 0
 preferredPrefix: FBcv
 products: 
   - id: dpo.owl

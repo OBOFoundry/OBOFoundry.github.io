@@ -10,6 +10,9 @@ homepage: http://code.google.com/p/dr-on
 products: 
   - id: dron.owl
 title: The Drug Ontology
+build:
+  source_url: http://purl.obolibrary.org/obo/dron.owl
+  method: owl2obo
 tracker: https://code.google.com/p/dr-on/issues/list
 ---
 

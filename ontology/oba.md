@@ -12,6 +12,11 @@ page: http://wiki.geneontology.org/index.php/Extensions/x-attribute
 products: 
   - id: oba.owl
 title: Ontology of Biological Attributes
+build:
+  source_url: http://build.berkeleybop.org/job/build-oba/lastSuccessfulBuild/artifact/*zip*/archive.zip
+  path: archive/src/ontology
+  method: archive
+  infallible: 0
 ---
 
 A collection of biological attributes (traits) covering all kingdoms of life. Incorporates VT (vertebrate trait ontology) and TO (plant trait ontology). Extends PATO.

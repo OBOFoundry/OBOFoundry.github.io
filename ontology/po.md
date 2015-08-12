@@ -3,6 +3,11 @@ layout: ontology_detail
 id: po
 in_foundry_order: 1
 title: Plant Ontology
+build:
+  notes: switch to vcs method
+  source_url: http://palea.cgrb.oregonstate.edu/viewsvn/Poc/tags/live/plant_ontology.obo?view=co
+  method: obo2owl
+  infallible: 1
 contact: 
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal

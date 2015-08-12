@@ -2,6 +2,11 @@
 layout: ontology_detail
 id: cteno
 title: Ctenophore Ontology
+build:
+  checkout: git clone https://github.com/obophenotype/ctenophore-ontology.git
+  system: git
+  path: src/ontology
+  method: vcs
 contact: 
   email: cjmungall@lbl.gov
   label: Chris Mungall

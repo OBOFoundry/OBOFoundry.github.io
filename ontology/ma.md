@@ -14,6 +14,10 @@ taxon:
   id: NCBITaxon:10088
   label: Mus
 title: Mouse adult gross anatomy
+build:
+  source_url: ftp://ftp.informatics.jax.org/pub/reports/adult_mouse_anatomy.obo
+  method: obo2owl
+  infallible: 1
 tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
 ---
 

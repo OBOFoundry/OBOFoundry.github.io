@@ -2,6 +2,10 @@
 layout: ontology_detail
 id: fypo
 title: Fission Yeast Phenotype Ontology
+build:
+  source_url: https://sourceforge.net/p/pombase/code/HEAD/tree/phenotype_ontology/releases/latest/fypo.obo?format=raw
+  method: obo2owl
+  infallible: 1
 contact: 
   email: mah79@cam.ac.uk
   label: Midori Harris

@@ -10,6 +10,10 @@ homepage: https://github.com/obophenotype/caro/
 products: 
   - id: caro.owl
 title: Common Anatomy Reference Ontology
+build:
+  notes: moving to owl soon
+  source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/caro/caro.obo
+  method: obo2owl
 tracker: https://github.com/obophenotype/caro/issues
 ---
 
