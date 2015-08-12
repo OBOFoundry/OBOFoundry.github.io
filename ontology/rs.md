@@ -11,6 +11,12 @@ publications:
 products: 
   - id: rs.owl
 title: Rat Strain Ontology
+taxon:
+  id: NCBITaxon:10114
+  label: Rattus
 ---
 
+<img src="http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif"/>
+
 Ontology of rat strains
+
