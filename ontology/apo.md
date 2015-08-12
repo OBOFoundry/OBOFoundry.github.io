@@ -13,6 +13,9 @@ taxon:
   id: NCBITaxon:4890
   label: Ascomycota
 title: Ascomycete phenotype ontology
+build:
+  source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/phenotype/ascomycete_phenotype.obo
+  method: obo2owl
 ---
 
 A structured controlled vocabulary for the phenotypes of Ascomycete fungi

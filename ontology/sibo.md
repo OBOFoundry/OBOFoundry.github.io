@@ -11,6 +11,10 @@ tracker: https://github.com/obophenotype/sibo/issues
 products: 
   - id: sibo.owl
 title: Social Insect Behavior Ontology
+build:
+  checkout: git clone https://github.com/obophenotype/sibo.git
+  system: git
+  method: vcs
 ---
 
 The Social Insect Behavior Ontology (SIBO), created by Chris Smith of the BDGP/SFSU. It was been adopted by Chris Mungall, but I am currently looking to hand it over or to merge it into the <a href="nbo.html">NBO</a>

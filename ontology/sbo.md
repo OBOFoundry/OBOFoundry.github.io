@@ -10,6 +10,9 @@ homepage: http://www.ebi.ac.uk/sbo/
 products: 
   - id: sbo.owl
 title: Systems Biology
+build:
+  source_url: http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo
+  method: obo2owl
 tracker: http://sourceforge.net/tracker/?group_id=174625&atid=871591
 ---
 

@@ -13,6 +13,9 @@ taxon:
   id: NCBITaxon:32443
   label: Teleostei
 title: Teleost taxonomy
+build:
+  source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/teleost_taxonomy.obo
+  method: obo2owl
 tracker: http://sourceforge.net/tracker/?group_id=76834&atid=1046550
 ---
 

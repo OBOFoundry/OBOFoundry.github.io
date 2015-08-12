@@ -11,6 +11,9 @@ publications:
 products: 
   - id: rs.owl
 title: Rat Strain Ontology
+build:
+  source_url: ftp://rgd.mcw.edu/pub/ontology/rat_strain/rat_strain.obo
+  method: obo2owl
 taxon:
   id: NCBITaxon:10114
   label: Rattus

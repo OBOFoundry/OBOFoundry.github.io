@@ -13,6 +13,10 @@ taxon:
   id: NCBITaxon:7954
   label: Danio
 title: Zebrafish developmental stages
+build:
+  source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/zfs/zfs.obo
+  method: obo2owl
+  infallible: 1
 ---
 
 An ontology of developmental stages of the Zebrafish (<i>Danio rerio</i>). Note that ZFA includes the leaf nodes of this ontology

@@ -13,6 +13,9 @@ taxon:
   id: NCBITaxon:6939
   label: Ixodidae
 title: Tick gross anatomy
+build:
+  source_url: http://anobase.vectorbase.org/anatomy/tick_anatomy.obo
+  method: obo2owl
 ---
 
 The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>

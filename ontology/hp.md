@@ -16,6 +16,9 @@ taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: human phenotype ontology
+build:
+  source_url: http://compbio.charite.de/svn/hpo/trunk/src/ontology/human-phenotype-ontology.obo
+  method: obo2owl
 tracker: https://sourceforge.net/p/obo/human-phenotype-requests/
 termgenie: http://hp.termgenie.org
 browsers:

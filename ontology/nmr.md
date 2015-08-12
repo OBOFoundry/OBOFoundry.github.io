@@ -11,6 +11,9 @@ page: http://msi-ontology.sourceforge.net/ontology/NMR.owlDocument.doc
 products: 
   - id: nmr.owl
 title: NMR-instrument specific component of metabolomics investigations
+build:
+  source_url: https://msi-workgroups.svn.sourceforge.net/svnroot/msi-workgroups/ontology/NMR.owl
+  method: owl2obo
 ---
 
 Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation.

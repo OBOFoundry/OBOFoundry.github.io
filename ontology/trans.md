@@ -13,6 +13,9 @@ taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: Pathogen transmission
+build:
+  source_url: http://gemina.cvs.sourceforge.net/*checkout*/gemina/Gemina/ontologies/transmission_process.obo
+  method: obo2owl
 tracker: http://sourceforge.net/tracker/?&group_id=76834&atid=1037853
 ---
 

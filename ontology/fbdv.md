@@ -12,6 +12,10 @@ taxon:
   id: NCBITaxon:7227
   label: Drosophila
 title: Drosophila development
+build:
+  source_url: http://svn.code.sf.net/p/fbbtdv/code/fbdv/releases/latest/fbdv.obo
+  method: obo2owl
+  infallible: 0
 tracker: https://cedar.bio.indiana.edu/trac/env/ontologies/wiki/PublicWikiStart
 ---
 

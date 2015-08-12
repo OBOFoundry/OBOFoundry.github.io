@@ -13,6 +13,9 @@ taxon:
   id: NCBITaxon:44484
   label: Anopheles
 title: Mosquito gross anatomy
+build:
+  source_url: http://anobase.vectorbase.org/anatomy/mosquito_anatomy.obo
+  method: obo2owl
 ---
 
 A structured controlled vocabulary of the anatomy of mosquitoes.

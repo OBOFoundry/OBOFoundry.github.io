@@ -9,6 +9,10 @@ homepage: https://github.com/PopulationAndCommunityOntology/pco
 products: 
   - id: pco.owl
 title: Population and Community Ontology
+build:
+  oort_args: --no-subsets --reasoner hermit
+  source_url: http://purl.obolibrary.org/obo/pco.owl
+  method: owl2obo
 tracker: https://github.com/PopulationAndCommunityOntology/pco/issues
 ---
 

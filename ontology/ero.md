@@ -11,6 +11,9 @@ documentation: http://code.google.com/p/eagle-i/wiki/Documentation
 products: 
   - id: ero.owl
 title: eagle-i resource ontology
+build:
+  source_url:  http://purl.obolibrary.org/obo/ero.owl
+  method: owl2obo
 tracker: http://code.google.com/p/eagle-i/issues/list
 ---
 

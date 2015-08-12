@@ -3,6 +3,11 @@ layout: ontology_detail
 id: ncbitaxon
 preferredPrefix: NCBITaxon
 title: NCBI organismal classification
+build:
+  source_url: http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip
+  path: archive/src/ontology
+  method: archive
+  infallible: 0
 contact: 
   email: obo-taxonomy@lists.sourceforge.net
   label: obo-taxonomy-list

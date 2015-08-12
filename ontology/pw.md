@@ -11,6 +11,9 @@ page: ftp://rgd.mcw.edu/pub/data_release/PW_Introduction.doc
 products: 
   - id: pw.owl
 title: Pathway ontology
+build:
+  source_url: ftp://rgd.mcw.edu/pub/data_release/ontology_obo_files/pathway/pathway.obo
+  method: obo2owl
 ---
 
 <img src="http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif"/>

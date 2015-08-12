@@ -3,6 +3,12 @@ layout: ontology_detail
 id: cl
 label: Cell Ontology
 title: Cell Ontology
+build:
+  checkout: git clone https://github.com/obophenotype/cell-ontology.git
+  email_cc: cl_edit@googlegroups.com
+  system: git
+  method: vcs
+  infallible: 1
 description: The Cell Ontology is a structured controlled vocabulary for cell types in animals.
 integration_server: http://build.berkeleybop.org/job/build-cl/
 taxon: 

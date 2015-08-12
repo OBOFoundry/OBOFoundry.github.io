@@ -18,6 +18,9 @@ license:
   label: BRENDA license
   alert: Restricted
 title: BRENDA tissue / enzyme source
+build:
+  source_url: http://www.brenda-enzymes.info/ontology/tissue/tree/update/update_files/BrendaTissueOBO
+  method: obo2owl
 ---
 
 A structured controlled vocabulary for the source of an enzyme. It comprises terms for tissues, cell lines, cell types and cell cultures from uni- and multicellular organisms.

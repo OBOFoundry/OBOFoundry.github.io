@@ -13,6 +13,9 @@ taxon:
   id: NCBITaxon:44484
   label: Anopheles
 title: Mosquito insecticide resistance
+build:
+  source_url: http://anobase.vectorbase.org/miro/miro_release.obo
+  method: obo2owl
 ---
 
 Application ontology for entities related to insecticide resistance in mosquitos

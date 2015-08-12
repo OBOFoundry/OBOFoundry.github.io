@@ -12,6 +12,10 @@ page:
 products: 
   - id: so.owl
 title: Sequence types and features
+build:
+  notes: SWITCH
+  source_url: https://svn.code.sf.net/p/song/svn/trunk/so-xp.obo
+  method: obo2owl
 tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/15892872

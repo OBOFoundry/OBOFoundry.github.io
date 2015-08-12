@@ -14,6 +14,13 @@ publications:
 products: 
   - id: envo.owl
 title: Environment Ontology
+build:
+  checkout: git clone https://github.com/EnvironmentOntology/envo.git
+  email_cc: cjmungall@lbl.gov
+  system: git
+  path: src/envo
+  method: vcs
+  infallible: 1
 tracker: https://github.com/EnvironmentOntology/envo/issues/
 
 ---

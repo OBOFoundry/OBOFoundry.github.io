@@ -2,6 +2,11 @@
 layout: ontology_detail
 id: ro
 title: Relations Ontology
+build:
+  checkout: svn co http://obo-relations.googlecode.com/svn/trunk/src/ontology
+  system: svn
+  method: vcs
+  infallible: 1
 canonical: ro.owl
 description: Relationship types shared across multiple ontologies
 homepage: https://github.com/oborel/obo-relations/

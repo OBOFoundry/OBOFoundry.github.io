@@ -15,6 +15,11 @@ taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: Human developmental anatomy, abstract
+build:
+  checkout: git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git
+  system: git
+  path: src/ontology
+  method: vcs
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22973865
     title: "A new ontology (structured hierarchy) of human developmental anatomy for the first 7 weeks (Carnegie stages 1-20)."

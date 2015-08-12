@@ -3,6 +3,9 @@ layout: ontology_detail
 id: obi
 in_foundry_order: 1
 title: Ontology for Biomedical Investigations
+build:
+  source_url: http://purl.obofoundry.org/obo/obi.owl
+  method: owl2obo
 description: An integrated ontology for the description of life-science and clinical investigations
 contact: 
   email: bpeters@liai.org

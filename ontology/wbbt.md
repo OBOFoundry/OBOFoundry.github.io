@@ -13,6 +13,10 @@ taxon:
   id: NCBITaxon:6237
   label: Caenorhabditis
 title: C. elegans gross anatomy
+build:
+  source_url: http://github.com/raymond91125/Wao/raw/master/WBbt.obo
+  method: obo2owl
+  infallible: 1
 tracker: https://github.com/obophenotype/Wao/issues
 ---
 

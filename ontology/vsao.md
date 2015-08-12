@@ -14,6 +14,9 @@ taxon:
   id: NCBITaxon:7742
   label: Vertebrata
 title: Vertebrate Skeletal Anatomy Ontology-
+build:
+  source_url: http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/tags/vocab-releases/VSAO/vsao.obo
+  method: obo2owl
 tracker: https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3AVSAO
 is_obsolete: true
 replaced_by: uberon

@@ -10,6 +10,9 @@ homepage: https://code.google.com/p/cvdo/
 products: 
   - id: cvdo.owl
 title: Cardiovascular Disease Ontology
+build:
+  source_url: http://purl.obolibrary.org/obo/cvdo.owl
+  method: owl2obo
 tracker: https://code.google.com/p/cvdo/issues/list
 ---
 
