@@ -8,6 +8,7 @@ description: Morphological and physiological measurement records generated from 
 domain: clinical
 products: 
   - id: cmo.owl
+  - id: cmo.obo
 title: Clinical measurement ontology
 ---
 
