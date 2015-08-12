@@ -18,6 +18,9 @@ browsers:
   - label: Monarch
     title: Monarch Phenotype Page
     url: http://monarchinitiative.org/phenotype/MP:0000001
+jobs:
+  - id: http://build.berkeleybop.org/job/build-mp-edit
+    type: DryRunBuild
 taxon: 
   id: NCBITaxon:10088
   label: Mus
