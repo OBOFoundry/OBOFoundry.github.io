@@ -6,10 +6,11 @@ contact:
   label: Victoria Petri
 description: A controlled vocabulary for annotating gene products to pathways.
 domain: biological process
-homepage: http://rgd.mcw.edu/tools/ontology/ont_search.cgi
+homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
 page: ftp://rgd.mcw.edu/pub/data_release/PW_Introduction.doc
 products: 
   - id: pw.owl
+  - id: pw.obo
 title: Pathway ontology
 build:
   source_url: ftp://rgd.mcw.edu/pub/data_release/ontology_obo_files/pathway/pathway.obo
