@@ -28,6 +28,30 @@ layout: default
         </li>
         {% endfor %}
         </ul>
+
+        <div class="btn-group" role="group" aria-label="Source">
+          <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/principles/{{page.id}}.md">
+            <button type="button" 
+                    data-toggle="tooltip" 
+                    title="See FAQ entry: How is metadata stored?" 
+                    html="true"
+                    class="btn btn-default">
+              View
+            </button>
+          </a>
+          <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/principles/{{page.id}}.md">
+
+            <button type="button" 
+                    data-toggle="tooltip" 
+                    title="See FAQ entry: How I do edit my metadata?" 
+                    html="true"
+                    class="btn btn-default">
+              Edit</button>
+          </a>
+          <!-- <button type="button" class="btn btn-default">Help</button> -->
+        </div>
+
+
       </div>
       <div class="col-md-9">
         {{ content }}
