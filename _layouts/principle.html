@@ -9,7 +9,7 @@ layout: default
   <div>	
     <div class="page-header">
       <h1>
-        {{ page.title }}
+        Principle: {{ page.title }}
       </h1>      
     <p>
       {{page.summary}}
@@ -19,7 +19,21 @@ layout: default
   </div>
    
   <div class="col-md-12">
-    {{ content }}
+    <div class="row">
+      <div class="col-md-3">
+        <ul>
+        {% for p in site.principles %}
+        <li>
+          <a href="{{p.id}}.html">{{p.title}}</a>
+        </li>
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="col-md-9">
+        {{ content }}
+      </div>
+    </div>
+
     
   </div>
 

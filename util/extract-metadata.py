@@ -28,7 +28,14 @@ def main():
     parser_n = subparsers.add_parser('concat', help='concat ontology yamls')
     parser_n.add_argument('-i', '--include', help='yml file to include for header')
     parser_n.add_argument('-o', '--output', help='output yaml')
-    parser_n.set_defaults(function=concat_yaml)
+    parser_n.set_defaults(function=concat_ont_yaml)
+    parser_n.add_argument('files',nargs='*')
+
+    # SUBCOMMAND
+    parser_n = subparsers.add_parser('concat-principles', help='concat principles yamls')
+    parser_n.add_argument('-i', '--include', help='yml file to include for header')
+    parser_n.add_argument('-o', '--output', help='output yaml')
+    parser_n.set_defaults(function=concat_principles_yaml)
     parser_n.add_argument('files',nargs='*')
 
     args = parser.parse_args()
@@ -48,7 +55,7 @@ def validate_markdown(args):
         load_md(fn)
         print("OK:"+fn)
 
-def concat_yaml(args):
+def concat_ont_yaml(args):
     objs = []
     cfg = {}
     if (args.include):
@@ -58,6 +65,20 @@ def concat_yaml(args):
         (obj, md) = load_md(fn)
         objs.append(obj)
     cfg['ontologies'] = objs
+    f = open(args.output, 'w') 
+    f.write(yaml.dump(cfg))
+    return cfg
+
+def concat_principles_yaml(args):
+    objs = []
+    cfg = {}
+    if (args.include):
+        f = open(args.include, 'r') 
+        cfg = yaml.load(f.read())
+    for fn in args.files:
+        (obj, md) = load_md(fn)
+        objs.append(obj)
+    cfg['principles'] = objs
     f = open(args.output, 'w') 
     f.write(yaml.dump(cfg))
     return cfg
@@ -74,7 +95,7 @@ def extract(mdtext):
     ylines = []
     mlines = []
     for line in lines:
-        if (line.startswith("---")):
+        if (line == "---"):
             n=n+1
             hlines = []
         else:

@@ -1,8 +1,11 @@
-author: {name: OBO Technical WG}
+name: OBO Foundry
+title: The OBO Foundry
+markdown: redcarpet
+pygments: true
 baseurl: /
 imgurl: /images
-markdown: redcarpet
-name: OBO Foundry
+author:
+  name: OBO Technical WG
 ontologies:
 - build: {checkout: 'git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git',
     method: vcs, path: src/ontology, system: git}
@@ -1223,12 +1226,13 @@ ontologies:
   contact: {email: vpetri@mcw.edu, label: Victoria Petri}
   description: A controlled vocabulary for annotating gene products to pathways.
   domain: biological process
-  homepage: http://rgd.mcw.edu/tools/ontology/ont_search.cgi
+  homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
   id: pw
   layout: ontology_detail
   page: ftp://rgd.mcw.edu/pub/data_release/PW_Introduction.doc
   products:
   - {id: pw.owl}
+  - {id: pw.obo}
   title: Pathway ontology
 - contact: {email: john.garavelli@ebi.ac.uk, label: John Garavelli}
   description: For the description of covalent bonds in proteins.
@@ -1700,5 +1704,17 @@ ontologies:
   - {id: zfs.owl}
   taxon: {id: 'NCBITaxon:7954', label: Danio}
   title: Zebrafish developmental stages
-pygments: true
-title: The OBO Foundry
+principles:
+- {id: fp-001-open, layout: principle, title: open}
+- {id: fp-002-format, layout: principle, title: format}
+- {id: fp-003-uris, layout: principle, title: uris}
+- {id: fp-004-versioning, layout: principle, title: versioning}
+- {id: fp-005-delineated-content, layout: principle, title: delineated content}
+- {id: fp-006-textual-definitions, layout: principle, title: textual definitions}
+- {id: fp-007-relations, layout: principle, title: relations}
+- {id: fp-008-documented, layout: principle, title: documented}
+- {id: fp-009-users, layout: principle, title: users}
+- {id: fp-010-collaboration, layout: principle, title: collaboration}
+- {id: fp-011-locus-of-authority, layout: principle, title: locus of authority}
+- {id: fp-012-naming-conventions, layout: principle, title: naming conventions}
+- {id: fp-016-maintenance, layout: principle, title: maintenance}
