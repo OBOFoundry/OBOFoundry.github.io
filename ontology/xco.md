@@ -1,4 +1,5 @@
 ---
+layout: ontology_detail
 contact: 
   email: shimoyama@mcw.edu
   label: Mary Shimoyama
