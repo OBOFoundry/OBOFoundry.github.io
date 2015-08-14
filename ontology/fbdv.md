@@ -1,11 +1,12 @@
 ---
+layout: ontology_detail
+id: fbdv
 contact: 
   email: djs93@gen.cam.ac.uk
   label: David Osumi-Sutherland
-description: A structured controlled vocabulary of the development of Drosophila melanogaster
+description: A structured here controlled vocabulary of the development of Drosophila melanogaster here
 domain: anatomy
 homepage: http://www.flybase.org/
-id: fbdv
 products: 
   - id: fbdv.owl
 taxon: 
