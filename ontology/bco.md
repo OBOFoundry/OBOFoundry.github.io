@@ -1,10 +1,12 @@
 ---
+layout: ontology_detail
+id: bco
+in_foundry: false
 contact: 
   email: rwalls2008@gmail.com
   label: Ramona Walls
 description: An ontology to support the interoperability of biodiversity data, including data on museum collections, environmental/metagenomic samples, and ecological surveys.
 homepage: https://github.com/tucotuco/bco
-id: bco
 products: 
   - id: bco.owl
 title: Biological Collections Ontology

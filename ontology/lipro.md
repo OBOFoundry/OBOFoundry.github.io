@@ -1,10 +1,12 @@
 ---
+layout: ontology_detail
+id: lipro
+in_foundry: false
 contact: 
   email: bakerc@unb.ca
   label: Christipher Baker
 description: An ontology representation of the LIPIDMAPS nomenclature classification.
 domain: lipids
-id: lipro
 products: 
   - id: lipro.owl
 title: Lipid Ontology

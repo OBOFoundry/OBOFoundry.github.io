@@ -1,10 +1,12 @@
 ---
+layout: ontology_detail
+id: flu
+in_foundry: false
 contact: 
   email: burkesquires@gmail.com
   label: Burke Squires
 domain: health
 homepage: http://purl.obolibrary.org/obo/flu/
-id: flu
 products: 
   - id: flu.owl
 title: Influenza Ontology

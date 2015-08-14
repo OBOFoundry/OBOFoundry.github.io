@@ -1,11 +1,13 @@
 ---
+layout: ontology_detail
+id: zfs
+in_foundry: false
 contact: 
   email: zfinadmin@zfin.org
   label: ZFIN administrators
 description: Developmental stages of the Zebrafish
 domain: anatomy
 homepage: http://zfin.org/zf_info/anatomy/dict/sum.html
-id: zfs
 page: http://code.google.com/p/developmental-stage-ontologies
 products: 
   - id: zfs.owl

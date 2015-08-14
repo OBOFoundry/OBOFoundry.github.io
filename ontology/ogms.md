@@ -1,4 +1,5 @@
 ---
+layout: ontology_detail
 id: ogms
 contact: 
   email: albertgoldfain@gmail.com
