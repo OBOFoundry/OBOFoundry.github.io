@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: fbdv
+preferredPrefix: FBdv
 contact: 
   email: mmc46@gen.cam.ac.uk
   label: Marta Costa
@@ -20,6 +21,7 @@ build:
   method: obo2owl
   infallible: 0
 tracker: http://purl.obolibrary.org/obo/fbdv/tracker
+browsers:
 - label: FB
     title: FlyBase Browser
     url: http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008
