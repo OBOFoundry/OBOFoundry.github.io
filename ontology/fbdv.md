@@ -22,7 +22,7 @@ build:
   infallible: 0
 tracker: http://purl.obolibrary.org/obo/fbdv/tracker
 browsers:
-- label: FB
+  - label: FB
     title: FlyBase Browser
     url: http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008
 ---
