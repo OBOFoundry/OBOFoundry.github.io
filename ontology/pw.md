@@ -15,6 +15,15 @@ title: Pathway ontology
 build:
   source_url: ftp://rgd.mcw.edu/pub/data_release/ontology_obo_files/pathway/pathway.obo
   method: obo2owl
+publications:		
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/21478484
+    title: "The Rat Genome Database pathway portal."
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/24499703
+    title: "The pathway ontology - updates and applications."
+browsers:
+  - label: RGD
+    title: RGD Ontology Browser
+    url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=PW:0000001
 ---
 
 <img src="http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif"/>
