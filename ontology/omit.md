@@ -9,5 +9,5 @@ homepage: http://omit.cis.usouthal.edu/
 page: http://omit.cis.usouthal.edu/
 products:
   - id: omit.owl
-title: Ontology for MIRNA Target Prediction
+title: Ontology for MIRNA Target
 ---

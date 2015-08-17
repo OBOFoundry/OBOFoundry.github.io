@@ -7,8 +7,8 @@ domain: phenotype
 twitter: hp_ontology
 homepage: http://www.human-phenotype-ontology.org/
 contact:
-  email: peter.robinson@charite.de
-  label: Peter Robinson
+  email: sebastian.koehler@charite.de
+  label: Sebastian Koehler
 products:
   - id: hp.owl
   - id: hp.obo
