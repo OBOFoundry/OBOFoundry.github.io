@@ -5,7 +5,7 @@ contact:
   label: Mary Shimoyama
 description: Conditions under which physiological and morphological measurements are made both in the clinic and in studies involving humans or model organisms.
 domain: clinical
-homepage: 
+homepage:
   - http://rgd.mcw.edu/rgdweb/ontology/search.html
   - ftp://rgd.mcw.edu/pub/ontology/experimental_condition/
 id: xco
@@ -16,7 +16,7 @@ title: Experimental condition ontology
 build:
   source_url: ftp://rgd.mcw.edu/pub/ontology/experimental_condition/experimental_condition.obo
   method: obo2owl
-publications:		
+publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22654893
     title: "Three ontologies to define phenotype measurement data."
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24103152
