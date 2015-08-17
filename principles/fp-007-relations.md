@@ -31,9 +31,11 @@ History
 
 ### Original Formulation
 
-\<blockquote\> The ontology uses relations which are unambiguously
+```
+ The ontology uses relations which are unambiguously
 defined following the pattern of definitions laid down in the OBO
-Relation Ontology. \</blockquote\>
+Relation Ontology. 
+```
 
 Examples
 --------

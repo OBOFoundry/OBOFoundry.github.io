@@ -20,7 +20,9 @@ History
 
 ### Original Formulation
 
-\<blockquote\> The ontology is well documented. \</blockquote\>
+```
+ The ontology is well documented. 
+```
 
 Examples
 --------

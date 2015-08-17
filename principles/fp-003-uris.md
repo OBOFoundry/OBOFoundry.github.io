@@ -41,12 +41,14 @@ History
 
 ### Original Formulation
 
-\<blockquote\> The ontologies possesses a unique identifier space within
+```
+ The ontologies possesses a unique identifier space within
 the OBO Foundry.
 
 The source of a term (i.e. class) from any ontology can be immediately
 identified by the prefix of the identifier of each term. It is,
-therefore, important that this prefix be unique. \</blockquote\>
+therefore, important that this prefix be unique. 
+```
 
 Examples
 --------

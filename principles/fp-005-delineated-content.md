@@ -25,7 +25,8 @@ History
 
 ### Original Formulation
 
-\<blockquote\> The ontology has a clearly specified and clearly
+```
+ The ontology has a clearly specified and clearly
 delineated content.
 
 The ontology must be orthogonal to other ontologies already lodged
@@ -42,7 +43,8 @@ As a corollary to this, we would strive for community acceptance of a
 single ontology for one domain, rather than encouraging rivalry between
 ontologies.
 
-\</blockquote\>
+
+```
 
 Examples
 --------

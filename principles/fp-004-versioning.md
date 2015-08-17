@@ -24,8 +24,10 @@ History
 
 ### Original Formulation
 
-\<blockquote\> The ontology provider has procedures for identifying
-distinct successive versions. \</blockquote\>
+```
+ The ontology provider has procedures for identifying
+distinct successive versions. 
+```
 
 Examples
 --------

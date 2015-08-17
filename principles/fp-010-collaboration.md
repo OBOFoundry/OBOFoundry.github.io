@@ -34,8 +34,10 @@ History
 
 ### Original Formulation
 
-\<blockquote\> The ontology will be developed collaboratively with other
-OBO Foundry members. \</blockquote\>
+```
+ The ontology will be developed collaboratively with other
+OBO Foundry members. 
+```
 
 Examples
 --------

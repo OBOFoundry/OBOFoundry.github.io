@@ -41,13 +41,15 @@ History
 
 ### Original Formulation
 
-\<blockquote\> The ontologies include textual definitions for all terms.
+```
+ The ontologies include textual definitions for all terms.
 
 Many biological and medical terms may be ambiguous, so terms should be
 defined so that their precise meaning within the context of a particular
 ontology is clear to a human reader.
 
-\</blockquote\>
+
+```
 
 Examples
 --------
