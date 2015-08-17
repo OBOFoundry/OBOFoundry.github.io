@@ -3,7 +3,7 @@ layout: ontology_detail
 id: ms
 label: Mass spectrometry ontology
 title: Mass spectrometry ontology
-contact: 
+contact:
   email: gerhard.mayer@rub.de
   label: Gerhard Mayer
 description: A structured controlled vocabulary for the annotation of experiments concerned with proteomics mass spectrometry.
@@ -15,7 +15,7 @@ page: http://www.psidev.info/groups/controlled-vocabularies
 dependencies:
  - id: pato
  - id: uo
-products: 
+products:
   - id: ms.obo
   - id: ms.owl
 ---
