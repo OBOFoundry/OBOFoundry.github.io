@@ -10,6 +10,7 @@ homepage: https://github.com/obophenotype/sibo
 tracker: https://github.com/obophenotype/sibo/issues
 products:
   - id: sibo.owl
+  - id: sibo.obo
 title: Social Insect Behavior Ontology
 build:
   checkout: git clone https://github.com/obophenotype/sibo.git
