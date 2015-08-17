@@ -7,7 +7,7 @@ contact:
 description: A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)
 domain: anatomy
 homepage: http://hymao.org
-s:
+products:
   - id: hao.owl
 taxon:
   id: NCBITaxon:7399

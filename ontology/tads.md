@@ -7,7 +7,7 @@ contact:
 description: "The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>"
 domain: anatomy
 homepage: http://anobase.vectorbase.org
-ts:
+products:
   - id: tads.owl
 taxon:
   id: NCBITaxon:6939

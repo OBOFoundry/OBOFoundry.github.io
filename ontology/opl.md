@@ -6,7 +6,7 @@ contact:
   label: Priti Parikh
 description: A reference ontology for parasite life cycle stages.
 homepage: https://github.com/OPL-ontology/OPL
-ts:
+products:
   - id: opl.owl
 title: Ontology for Parasite LifeCycle
 tracker: https://github.com/OPL-ontology/OPL/issues
