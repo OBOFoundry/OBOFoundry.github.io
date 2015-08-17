@@ -7,6 +7,7 @@ contact:
 description: Morphological and physiological measurement records generated from clinical and model organism research and health programs.
 domain: clinical
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
+page: ftp://rgd.mcw.edu/pub/ontology/clinical_measurement/
 products:
   - id: cmo.owl
   - id: cmo.obo
@@ -14,6 +15,15 @@ title: Clinical measurement ontology
 build:
   source_url: ftp://rgd.mcw.edu/pub/ontology/clinical_measurement/clinical_measurement.obo
   method: obo2owl
+publications:		
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/22654893
+    title: "Three ontologies to define phenotype measurement data."
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/24103152
+    title: "The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications."
+browsers:
+  - label: RGD
+    title: RGD Ontology Browser
+    url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=CMO:0000000
 ---
 
 <img src="http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif"/>
