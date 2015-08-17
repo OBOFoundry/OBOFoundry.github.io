@@ -19,7 +19,6 @@ browsers:
   - label: FB
     title: FlyBase Browser
     url: http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000013
-is_obsolete: true
 ---
 A structured controlled vocabulary used for various aspects of annotation by FlyBase. It includes the Drosophila Phenotype Ontology (dpo) which is also released separately.
 
