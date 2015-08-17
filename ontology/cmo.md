@@ -15,7 +15,7 @@ title: Clinical measurement ontology
 build:
   source_url: ftp://rgd.mcw.edu/pub/ontology/clinical_measurement/clinical_measurement.obo
   method: obo2owl
-publications:		
+publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22654893
     title: "Three ontologies to define phenotype measurement data."
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24103152
