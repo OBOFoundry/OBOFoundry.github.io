@@ -207,7 +207,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:33208', label: Metazoa}
   termgenie: http://cl.termgenie.org
   title: Cell Ontology
-  tracker: https://code.google.com/p/cell-ontology/issues/list
+  tracker: https://github.com/obophenotype/cell-ontology/issues
 - build: {checkout: 'svn --ignore-externals co http://clo-ontology.googlecode.com/svn/trunk/src/ontology',
     method: vcs, post_processing_command: owltools --use-catalog clo.owl --merge-imports-closure
       --ni -o -f obo --no-check clo.obo, system: svn}
@@ -529,7 +529,6 @@ ontologies:
   domain: null
   homepage: http://purl.obolibrary.org/obo/fbcv
   id: fbcv
-  is_obsolete: true
   layout: ontology_detail
   preferredPrefix: FBcv
   products:
@@ -689,7 +688,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:7399', label: Hymenoptera}
   title: Hymenoptera Anatomy Ontology
 - build: {checkout: 'git clone https://github.com/BgeeDB/homology-ontology.git', method: vcs,
-    system: git}
+    path: src/ontology, system: git}
   contact: {email: julien.roux@unil.ch, label: ''}
   description: This ontology represents concepts related to homology, as well as other
     concepts used to describe similarity and non-homology.
@@ -699,12 +698,13 @@ ontologies:
   products:
   - {id: hom.owl}
   title: homology_ontology
+  tracker: https://github.com/BgeeDB/homology-ontology/issues
 - alternativePrefix: HPO
   browsers:
   - {label: HPO, title: Charite HPO Browser, url: 'http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118'}
   - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/HP:0000118'}
   build: {method: obo2owl, source_url: 'http://compbio.charite.de/svn/hpo/trunk/src/ontology/human-phenotype-ontology.obo'}
-  contact: {email: peter.robinson@charite.de, label: Peter Robinson}
+  contact: {email: sebastian.koehler@charite.de, label: Sebastian Koehler}
   description: A structured and controlled vocabulary for the phenotypic features
     encountered in human hereditary and other disease.
   domain: phenotype
@@ -867,6 +867,13 @@ ontologies:
   - {id: mfoem.owl}
   title: Emotion Ontology
   tracker: https://code.google.com/p/emotion-ontology/issues/list
+- contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
+  description: An ontology to describe and classify mental diseases
+  domain: health
+  homepage: http://mental-functioning-ontology.googlecode.com
+  id: mfomd
+  products:
+  - {id: mfomd.owl, title: Mental Disease Ontology}
 - build: {method: obo2owl, source_url: 'http://psidev.cvs.sourceforge.net/viewvc/*checkout*/psidev/psi/mi/rel25/data/psi-mi25.obo'}
   contact: {email: Henning.Hermjakob@ebi.ac.uk, label: Henning Hermjakob}
   description: A structured controlled vocabulary for the annotation of experiments
@@ -960,6 +967,12 @@ ontologies:
   products:
   - {id: mod.owl}
   title: Protein modification
+- contact: {email: batchelorc@rsc.org, label: Colin Batchelor}
+  description: Processes at the molecular level
+  homepage: https://code.google.com/p/rxno/
+  id: mop
+  products:
+  - {id: mop.owl, title: Molecular Process Ontology}
 - browsers:
   - {label: MGI, title: MGI MP Browser, url: 'http://www.informatics.jax.org/searches/MP_form.shtml'}
   - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/MP:0000001'}
@@ -1132,7 +1145,7 @@ ontologies:
   - {id: ogms.owl}
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Ontology for General Medical Science
-  tracker: http://code.google.com/p/ogms/issues/list
+  tracker: https://github.com/OGMS/ogms
 - description: An application ontology to represent genetic susceptibility to a specific
     disease, adverse event, or a pathological process.
   homepage: https://code.google.com/p/ogsf/
@@ -1157,7 +1170,7 @@ ontologies:
   page: http://omit.cis.usouthal.edu/
   products:
   - {id: omit.owl}
-  title: Ontology for MIRNA Target Prediction
+  title: Ontology for MIRNA Target
 - build: {method: obo2owl, source_url: 'https://sourceforge.net/p/microphenotypes/code/HEAD/tree/trunk/omp-edit.obo?format=raw'}
   domain: phenotype
   id: omp
@@ -1370,6 +1383,13 @@ ontologies:
       at RGD.'}
   taxon: {id: 'NCBITaxon:10114', label: Rattus}
   title: Rat Strain Ontology
+- contact: {email: batchelorc@rsc.org, label: Colin Batchelor}
+  description: Connects organic name reactions to their roles in an organic synthesis
+    and to processes in MOP
+  homepage: https://code.google.com/p/rxno/
+  id: rxno
+  products:
+  - {id: rxno.owl, title: Name Reaction Ontology}
 - build: {method: obo2owl, source_url: 'http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo'}
   contact: {email: lenov@ebi.ac.uk, label: Nicolas Le Novere}
   description: Terms commonly used in Systems Biology, and in particular in computational
@@ -1745,8 +1765,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:6237', label: Caenorhabditis}
   title: C. elegans phenotype
 - build: {infallible: 0, method: obo2owl, source_url: 'https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo'}
-  description: A structured controlled vocabulary of the anatomy and development of
-    the African clawed frog (<i>Xenopus laevis</i>).
+  description: Anatomy and development of the African clawed frog (<i>Xenopus laevis</i>).
   domain: anatomy
   homepage: http://www.xenbase.org/anatomy/xao.do?method=display
   id: xao
@@ -1754,9 +1773,15 @@ ontologies:
   layout: ontology_detail
   products:
   - {id: xao.owl}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/18817563', title: An ontology for Xenopus
+      anatomy and development.}
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/24139024', title: 'Enhanced XAO: the
+      ontology of Xenopus anatomy and development underpins more accurate annotation
+      of gene expression and queries on Xenbase.'}
   taxon: {id: 'NCBITaxon:8353', label: Xenopus}
   title: Xenopus anatomy and development
-  tracker: https://sourceforge.net/p/obo/xenopus-anatomy-xao-term-requests/
+  tracker: https://github.com/xenopus-anatomy/xao/issues
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000'}
   build: {method: obo2owl, source_url: 'ftp://rgd.mcw.edu/pub/ontology/experimental_condition/experimental_condition.obo'}
