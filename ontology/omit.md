@@ -2,12 +2,12 @@
 layout: ontology_detail
 id: omit
 in_foundry: false
-contact: 
+contact:
   email: huang@southalabama.edu
   label: Huang, Jingshan
 homepage: http://omit.cis.usouthal.edu/
 page: http://omit.cis.usouthal.edu/
-products: 
+products:
   - id: omit.owl
 title: Ontology for MIRNA Target Prediction
 ---

@@ -1,14 +1,14 @@
 ---
 layout: ontology_detail
 id: bfo
-contact: 
+contact:
   email: phismith@buffalo.edu
   label: Barry Smith
 description: The upper level ontology upon which OBO Foundry ontologies are built.
 domain: upper
 homepage: http://ifomis.org/bfo/
 page: http://ifomis.org/bfo/
-products: 
+products:
   - id: bfo.owl
 title: Basic Formal Ontology
 depicted_by: https://code.google.com/p/bfo/logo?cct=1426583016

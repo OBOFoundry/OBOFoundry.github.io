@@ -1,16 +1,16 @@
 ---
 layout: ontology_detail
 id: ogms
-contact: 
+contact:
   email: albertgoldfain@gmail.com
   label: Albert Goldfain
 description: An ontology for representing treatment of disease and diagnosis and on carcinomas and other pathological entities
 domain: medicine
 homepage: http://code.google.com/p/ogms/
 page: http://code.google.com/p/ogms/
-products: 
+products:
   - id: ogms.owl
-taxon: 
+taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: Ontology for General Medical Science

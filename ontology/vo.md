@@ -2,12 +2,12 @@
 layout: ontology_detail
 id: vo
 in_foundry: false
-contact: 
+contact:
   email: yongqunh@med.umich.edu
   label: Yongqunh He
 domain: health
 homepage: http://www.violinet.org/vaccineontology
-products: 
+products:
   - id: vo.owl
 title: Vaccine ontology
 build:

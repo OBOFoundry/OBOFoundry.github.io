@@ -8,7 +8,7 @@ build:
   method: obo2owl
   infallible: 1
 description: An ontology of phenotypic qualities (properties, attributes or characteristics)
-contact: 
+contact:
   email: geg18@aber.ac.uk
   label: George Gkoutos
 domain: phenotype
@@ -18,7 +18,7 @@ tracker: https://github.com/pato-ontology/pato/issues
 jobs:
   - id: http://build.berkeleybop.org/job/build-pato
     type: DryRunBuild
-products: 
+products:
   - id: pato.owl
   - id: pato.obo
 ---

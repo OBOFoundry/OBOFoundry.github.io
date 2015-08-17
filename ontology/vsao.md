@@ -1,16 +1,16 @@
 ---
 layout: ontology_detail
 id: vsao
-contact: 
+contact:
   email: wasila.dahdul@usd.edu
   label: Wasila Dahdul
 description: Vertebrate skeletal anatomy ontology.
 domain: anatomy
 homepage: https://www.nescent.org/phenoscape/Main_Page
 page: https://www.phenoscape.org/wiki/Skeletal_Anatomy_Jamboree
-products: 
+products:
   - id: vsao.owl
-taxon: 
+taxon:
   id: NCBITaxon:7742
   label: Vertebrata
 title: Vertebrate Skeletal Anatomy Ontology-
@@ -22,4 +22,4 @@ is_obsolete: true
 replaced_by: uberon
 ---
 
-Vertebrate skeletal anatomy ontology. 
+Vertebrate skeletal anatomy ontology.

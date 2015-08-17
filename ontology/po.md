@@ -8,7 +8,7 @@ build:
   source_url: http://palea.cgrb.oregonstate.edu/viewsvn/Poc/tags/live/plant_ontology.obo?view=co
   method: obo2owl
   infallible: 1
-contact: 
+contact:
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
 description: "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data."
@@ -21,14 +21,14 @@ publications:
     title: "The plant ontology as a tool for comparative plant anatomy and genomic analyses."
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22847540
     title: "Ontologies as integrative tools for plant science."
-products: 
+products:
   - id: po.owl
-taxon: 
+taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
 ---
 
-The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data. The PO is under active development to expand to encompass terms and annotations from all plants. 
+The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data. The PO is under active development to expand to encompass terms and annotations from all plants.
 
 <img alt="Planteome logo" src="http://planteome.org/sites/default/files/garland_logo.PNG"/>
 

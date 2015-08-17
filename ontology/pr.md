@@ -2,14 +2,14 @@
 layout: ontology_detail
 id: pr
 in_foundry_order: 1
-contact: 
+contact:
   email: dan5@georgetown.edu
   label: Darren Natale
 description: an ontological representation of protein-related entities
 domain: proteins
 homepage: http://proconsortium.org
 documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
-products: 
+products:
   - id: pr.owl
 title: PRotein Ontology (PRO)
 build:

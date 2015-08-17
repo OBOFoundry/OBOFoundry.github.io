@@ -10,13 +10,13 @@ build:
   method: archive
   infallible: 1
 description: A structured classification of chemical compounds of biological relevance.
-contact: 
+contact:
   email: hastings@ebi.ac.uk
   label: Janna Hastings
 domain: biochemistry
 homepage: http://www.ebi.ac.uk/chebi
 page: http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual
-products: 
+products:
   - id: chebi.owl
   - id: chebi.obo
 tracker: https://sourceforge.net/p/chebi/curator-requests/

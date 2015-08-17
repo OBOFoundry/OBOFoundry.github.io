@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: doid
-contact: 
+contact:
   email: lynn.schriml@gmail.com
   label: Lynn Schriml
 description: Creating a comprehensive hierarchical controlled vocabulary for human disease representation.
@@ -9,7 +9,7 @@ twitter: diseaseontology
 domain: health
 homepage: http://diseaseontology.sourceforge.net/
 page: http://diseaseontology.sourceforge.net/
-products: 
+products:
   - id: doid.owl
 browsers:
   - label: DO
@@ -18,7 +18,7 @@ browsers:
   - label: Monarch
     title: Monarch Phenotype Page
     url: http://monarchinitiative.org/phenotype/DOID:4
-taxon: 
+taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: Human disease ontology

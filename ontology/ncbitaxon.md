@@ -8,7 +8,7 @@ build:
   path: archive/src/ontology
   method: archive
   infallible: 0
-contact: 
+contact:
   email: obo-taxonomy@lists.sourceforge.net
   label: obo-taxonomy-list
 description: An ontology representation of the NCBI organismal taxonomy
@@ -25,7 +25,7 @@ browsers:
 jobs:
   - id: http://build.berkeleybop.org/job/build-ncbitaxon/
     type: ReleaseBuild
-products: 
+products:
   - id: ncbitaxon.owl
   - id: ncbitaxon/subsets/taxslim.owl
     title: taxslim

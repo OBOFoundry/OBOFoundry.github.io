@@ -1,15 +1,15 @@
 ---
 layout: ontology_detail
 id: hao
-contact: 
+contact:
   email: diapriid@gmail.com
   label: Matt Yoder
 description: A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)
 domain: anatomy
 homepage: http://hymao.org
-s: 
+s:
   - id: hao.owl
-taxon: 
+taxon:
   id: NCBITaxon:7399
   label: Hymenoptera
 title: Hymenoptera Anatomy Ontology

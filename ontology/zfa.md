@@ -2,15 +2,15 @@
 layout: ontology_detail
 id: zfa
 in_foundry_order: 1
-contact: 
+contact:
   email: zfinadmin@zfin.org
   label: ZFIN administrators
 description: A structured controlled vocabulary of the anatomy and development of the Zebrafish
 domain: anatomy
 homepage: http://zfin.org/zf_info/anatomy/dict/sum.html
-products: 
+products:
   - id: zfa.owl
-taxon: 
+taxon:
   id: NCBITaxon:7954
   label: Danio
 title: Zebrafish anatomy and development

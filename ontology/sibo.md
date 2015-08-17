@@ -1,14 +1,14 @@
 ---
 layout: ontology_detail
 id: sibo
-contact: 
+contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
 description: Social Behavior in insects
 domain: behavior
 homepage: https://github.com/obophenotype/sibo
 tracker: https://github.com/obophenotype/sibo/issues
-products: 
+products:
   - id: sibo.owl
 title: Social Insect Behavior Ontology
 build:

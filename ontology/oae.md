@@ -1,13 +1,13 @@
 ---
 layout: ontology_detail
 id: oae
-contact: 
+contact:
   email: yongqunh@med.umich.edu
   label: Yongqunh He
 description: A biomedical ontology in the domain of adverse events
 domain: adverse events, health
 homepage: http://www.oae-ontology.org
-products: 
+products:
   - id: oae.owl
 title: Ontology of Adverse Events
 build:
@@ -15,4 +15,4 @@ build:
   method: owl2obo
 ---
 
-The Ontology of Adverse Events (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles. 
+The Ontology of Adverse Events (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles.

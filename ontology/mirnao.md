@@ -1,12 +1,12 @@
 ---
 layout: ontology_detail
 id: mirnao
-contact: 
+contact:
   email: vdritsou@imbb.forth.gr
   label: Vicky Dritsou
 description: An application ontology for use with miRNA databases.
 homepage: http://code.google.com/p/mirna-ontology/
-products: 
+products:
   - id: mirnao.owl
 title: microRNA Ontology
 ---

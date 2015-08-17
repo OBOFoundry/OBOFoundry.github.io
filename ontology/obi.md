@@ -7,13 +7,13 @@ build:
   source_url: http://purl.obofoundry.org/obo/obi.owl
   method: owl2obo
 description: An integrated ontology for the description of life-science and clinical investigations
-contact: 
+contact:
   email: bpeters@liai.org
   label: Bjoern Peters
 domain: experiments
 homepage: http://purl.obofoundry.org/obo/obi
 page: http://obi-ontology.org/page/Technical_Reports
-products: 
+products:
   - id: obi.owl
 license:
   url: https://creativecommons.org/licenses/by/3.0/

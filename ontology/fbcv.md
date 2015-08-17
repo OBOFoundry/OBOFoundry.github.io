@@ -2,13 +2,13 @@
 layout: ontology_detail
 id: fbcv
 preferredPrefix: FBcv
-contact: 
+contact:
   email: mmc46@gen.cam.ac.uk
   label: Marta Costa
 description: A structured controlled vocabulary used for various aspects of annotation by FlyBase.
 domain:
 homepage: http://purl.obolibrary.org/obo/fbcv
-products: 
+products:
   - id: fbcv.owl
 title: FlyBase Controlled Vocabulary
 build:

@@ -6,13 +6,13 @@ description: A structured and controlled vocabulary for the phenotypic features 
 domain: phenotype
 twitter: hp_ontology
 homepage: http://www.human-phenotype-ontology.org/
-contact: 
+contact:
   email: peter.robinson@charite.de
   label: Peter Robinson
-products: 
+products:
   - id: hp.owl
   - id: hp.obo
-taxon: 
+taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: human phenotype ontology

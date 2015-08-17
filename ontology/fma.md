@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: fma
-contact: 
+contact:
   email: mejino@comcast.net
   label: Onard Mejino
 description: This is currently a slimmed down version of FMA
@@ -12,9 +12,9 @@ publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/18688289
   - id: http://www.ncbi.nlm.nih.gov/pubmed/18360535
   - id: http://www.ncbi.nlm.nih.gov/pubmed/16779026
-products: 
+products:
  - id: fma.owl
-taxon: 
+taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: Foundational Model of Anatomy (subset)

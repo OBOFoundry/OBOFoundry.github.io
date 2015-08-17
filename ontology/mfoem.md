@@ -1,13 +1,13 @@
 ---
 layout: ontology_detail
 id: mfoem
-contact: 
+contact:
   email: hastings@ebi.ac.uk
   label: Janna Hastings
 description: An ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings.
 domain: health
 homepage: https://code.google.com/p/emotion-ontology/
-products: 
+products:
   - id: mfoem.owl
 title: Emotion Ontology
 build:

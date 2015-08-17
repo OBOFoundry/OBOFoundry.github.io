@@ -1,11 +1,11 @@
 ---
 layout: ontology_detail
 id: gaz
-contact: 
+contact:
   email: ma11@gen.cam.ac.uk
   label: Michael Ashburner
 homepage: http://gensc.org/gc_wiki/index.php/GAZ_Project
-products: 
+products:
   - id: gaz.owl
 title: Gazetteer
 build:

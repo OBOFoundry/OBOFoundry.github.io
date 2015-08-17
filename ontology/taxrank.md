@@ -1,13 +1,13 @@
 ---
 layout: ontology_detail
 id: taxrank
-contact: 
+contact:
   email: peteremidford@yahoo.com
   label: Peter Midford
 description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
 domain: taxonomy
 homepage: https://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary
-products: 
+products:
   - id: taxrank.owl
 title: Taxonomic rank vocabulary
 build:

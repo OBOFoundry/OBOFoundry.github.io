@@ -5,7 +5,7 @@ description: ExO is designed to facilitate centralization and integration of exp
 domain: health
 homepage: http://ctdbase.org/downloads/#exposures
 page: http://ctdbase.org/downloads/#exposures
-products: 
+products:
   - id: exo.owl
 title: Exposure ontology
 build:

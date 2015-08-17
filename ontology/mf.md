@@ -1,11 +1,11 @@
 ---
 layout: ontology_detail
 id: mf
-contact: 
+contact:
   email: hastings@ebi.ac.uk
   label: Janna Hastings
 homepage: https://code.google.com/p/mental-functioning-ontology/
-products: 
+products:
   - id: mf.owl
 title: Mental Functioning Ontology
 build:

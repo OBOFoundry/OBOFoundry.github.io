@@ -1,15 +1,15 @@
 ---
 layout: ontology_detail
 id: tto
-contact: 
+contact:
   email: peteremidford@yahoo.com
   label: Peter Midford
 description: An ontology covering the taxonomy of teleosts (bony fish)
 domain: taxonomy
 homepage: https://www.nescent.org/phenoscape/Main_Page
-products: 
+products:
   - id: tto.owl
-taxon: 
+taxon:
   id: NCBITaxon:32443
   label: Teleostei
 title: Teleost taxonomy

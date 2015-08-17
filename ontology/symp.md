@@ -1,15 +1,15 @@
 ---
 layout: ontology_detail
 id: symp
-contact: 
+contact:
   email: lynn.schriml@gmail.com
   label: Lynn Schriml
 description: An ontologu of symptoms, being a perceived change in function, sensation or appearance reported by a patient indicative of a disease
 domain: health
 homepage: http://symptomontologywiki.igs.umaryland.edu/mediawiki/index.php/Main_Page
-products: 
+products:
   - id: symp.owl
-taxon: 
+taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: Symptom Ontology

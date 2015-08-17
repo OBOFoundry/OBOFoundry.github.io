@@ -1,14 +1,14 @@
 ---
 layout: ontology_detail
 id: rs
-contact: 
+contact:
   email: rnigam@mcw.edu
   label: Rajni Nigam
 description: Ontology of rat strains
 homepage: http://rgd.mcw.edu/rgdweb/search/strains.html
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24267899
-products: 
+products:
   - id: rs.owl
   - id: rs.obo
 title: Rat Strain Ontology

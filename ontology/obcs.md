@@ -4,12 +4,12 @@ id: obcs
 in_foundry: false
 title: Ontology of Biological and Clinical Statistics
 description: A biomedical ontology in the domain of biological and clinical statistics.
-contact: 
+contact:
   email: jiezheng@upenn.edu
   label: Jie Zheng
 domain: statistics
 homepage: https://github.com/obcs/obcs
-products: 
+products:
   - id: obcs.owl
 tracker: https://github.com/obcs/obcs/issues
 ---

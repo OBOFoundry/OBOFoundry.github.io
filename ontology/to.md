@@ -1,16 +1,16 @@
 ---
 layout: ontology_detail
 id: to
-contact: 
+contact:
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
 description: A controlled vocabulary of describe phenotypic traits in plants.
 domain: phenotype
 homepage: http://www.gramene.org/plant_ontology/
 page: http://www.gramene.org/plant_ontology/index.html#to
-products: 
+products:
   - id: to.owl
-taxon: 
+taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
 title: Plant Trait Ontology

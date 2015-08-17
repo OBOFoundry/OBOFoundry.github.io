@@ -1,14 +1,14 @@
 ---
 layout: ontology_detail
 id: ido
-contact: 
+contact:
   email: Lindsay.Cowell@utsouthwestern.edu
   label: Lindsay Cowell
 domain: health
 homepage: http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology
-products: 
+products:
   - id: ido.owl
-taxon: 
+taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: Infectious disease

@@ -2,17 +2,17 @@
 layout: ontology_detail
 id: fbbt
 preferredPrefix: FBbt
-contact: 
+contact:
   email: mmc46@gen.cam.ac.uk
   label: Marta Costa
 description: An ontology representing the gross anatomy of Drosophila melanogaster.
 domain: anatomy
 homepage: http://purl.obolibrary.org/obo/fbbt
-products: 
+products:
   - id: fbbt.owl
   - id: fbbt/fbbt-simple.owl
   - id: fbbt/fbbt-simple.obo
-taxon: 
+taxon:
   id: NCBITaxon:7227
   label: Drosophila
 title: Drosophila gross anatomy

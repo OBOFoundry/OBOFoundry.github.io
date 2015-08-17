@@ -1,12 +1,12 @@
 ---
 layout: ontology_detail
 id: nbo
-contact: 
+contact:
   email: geg18@aber.ac.uk
   label: George Gkoutos
 domain: behavior
 homepage: http://code.google.com/p/behavior-ontology
-products: 
+products:
   - id: nbo.owl
 title: Neuro Behavior Ontology
 build:

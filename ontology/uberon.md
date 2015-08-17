@@ -21,14 +21,14 @@ canonical: uberon.owl
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC-BY
-taxon: 
+taxon:
   id: NCBITaxon:33208
   label: Metazoa
 domain: anatomy
 repository: https://github.com/obophenotype/uberon
 tracker: https://github.com/obophenotype/uberon/issues
 releases: http://purl.obolibrary.org/obo/uberon/releases/
-contact: 
+contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
 publications:

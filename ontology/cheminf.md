@@ -1,13 +1,13 @@
 ---
 layout: ontology_detail
 id: cheminf
-contact: 
+contact:
   email: hastings@ebi.ac.uk
   label: Janna Hastings
 description: Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them.
 domain: biochemistry
 homepage: http://code.google.com/p/semanticchemistry/
-products: 
+products:
   - id: cheminf.owl
 title: Chemical Information Ontology
 build:

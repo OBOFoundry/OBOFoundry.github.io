@@ -11,7 +11,7 @@ build:
   infallible: 1
 description: The Cell Ontology is a structured controlled vocabulary for cell types in animals.
 integration_server: http://build.berkeleybop.org/job/build-cl/
-taxon: 
+taxon:
   id: NCBITaxon:33208
   label: Metazoa
 domain: cells

@@ -1,14 +1,14 @@
 ---
 layout: ontology_detail
 id: bila
-contact: 
+contact:
   email: henrich@embl.de
   label: Thorsten Heinrich
 domain: anatomy
 homepage: http://4dx.embl.de/4DXpress
-products: 
+products:
   - id: bila.owl
-taxon: 
+taxon:
   id: NCBITaxon:33213
   label: Bilateria
 title: Bilateria anatomy

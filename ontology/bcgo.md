@@ -5,10 +5,10 @@ in_foundry: false
 title: Beta Cell Genomics Ontology
 description: An application ontology built for beta cell genomics studies.
 homepage: https://github.com/obi-bcgo/bcgo
-contact: 
+contact:
   email: jiezheng@upenn.edu
   label: Jie Zheng
-products: 
+products:
   - id: bcgo.owl
 
 tracker: https://github.com/obi-bcgo/bcgo/issues

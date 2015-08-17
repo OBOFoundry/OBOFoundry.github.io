@@ -1,13 +1,13 @@
 ---
 layout: ontology_detail
 id: sbo
-contact: 
+contact:
   email: lenov@ebi.ac.uk
   label: Nicolas Le Novere
 description: Terms commonly used in Systems Biology, and in particular in computational modeling.
 domain: biochemistry
 homepage: http://www.ebi.ac.uk/sbo/
-products: 
+products:
   - id: sbo.owl
 title: Systems Biology
 build:

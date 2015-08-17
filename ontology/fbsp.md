@@ -1,15 +1,15 @@
 ---
 layout: ontology_detail
 id: fbsp
-contact: 
+contact:
   email: ma11@gen.cam.ac.uk
   label: Michael Ashburner
 description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase.
 domain: taxonomy
 homepage: http://www.flybase.org/
-products: 
+products:
   - id: fbsp.owl
-taxon: 
+taxon:
   id: NCBITaxon:7227
   label: Drosophila
 title: Fly taxonomy

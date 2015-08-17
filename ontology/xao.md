@@ -5,9 +5,9 @@ description: A structured controlled vocabulary of the anatomy and development o
 domain: anatomy
 homepage: http://www.xenbase.org/anatomy/xao.do?method=display
 in_foundry_order: 1
-products: 
+products:
   - id: xao.owl
-taxon: 
+taxon:
   id: NCBITaxon:8353
   label: Xenopus
 title: Xenopus anatomy and development

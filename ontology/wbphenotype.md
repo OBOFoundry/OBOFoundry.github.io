@@ -1,15 +1,15 @@
 ---
 layout: ontology_detail
 id: wbphenotype
-contact: 
+contact:
   email: garys@caltech.edu
   label: Gary Schindelman
 description: A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes
 domain: phenotype
 homepage: http://www.wormbase.org/
-products: 
+products:
   - id: wbphenotype.owl
-taxon: 
+taxon:
   id: NCBITaxon:6237
   label: Caenorhabditis
 title: C. elegans phenotype

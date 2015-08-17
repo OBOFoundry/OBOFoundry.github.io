@@ -1,13 +1,13 @@
 ---
 layout: ontology_detail
 id: cmo
-contact: 
+contact:
   email: shimoyama@mcw.edu
   label: Mary Shimoyama
 description: Morphological and physiological measurement records generated from clinical and model organism research and health programs.
 domain: clinical
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
-products: 
+products:
   - id: cmo.owl
   - id: cmo.obo
 title: Clinical measurement ontology

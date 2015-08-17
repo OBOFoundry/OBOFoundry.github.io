@@ -2,17 +2,17 @@
 layout: ontology_detail
 id: fbdv
 preferredPrefix: FBdv
-contact: 
+contact:
   email: mmc46@gen.cam.ac.uk
   label: Marta Costa
 description: A structured controlled vocabulary of the development of Drosophila melanogaster.
 domain: development
 homepage: http://purl.obolibrary.org/obo/fbdv
-products: 
+products:
   - id: fbdv.owl
   - id: fbdv/fbdv-simple.owl
   - id: fbdv/fbbt-simple.obo
-taxon: 
+taxon:
   id: NCBITaxon:7227
   label: Drosophila
 title: Drosophila development

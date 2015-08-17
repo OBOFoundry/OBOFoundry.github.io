@@ -13,7 +13,7 @@ build:
 twitter: news4go
 tracker: https://github.com/geneontology/go-ontology/issues/
 termgenie: http://go.termgenie.org
-taxon: 
+taxon:
   id: NCBITaxon:1
   label: All life
 domain: biology

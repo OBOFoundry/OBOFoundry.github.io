@@ -1,15 +1,15 @@
 ---
 layout: ontology_detail
 id: spd
-contact: 
+contact:
   email: ramirez@macn.gov.ar
   label: Martin Ramirez
 description: An ontology for spider comparative biology including anatomical parts (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web, borrow).
 domain: anatomy
 homepage: http://research.amnh.org/atol/files/
-products: 
+products:
   - id: spd.owl
-taxon: 
+taxon:
   id: NCBITaxon:6893
   label: spiders
 title: Spider Ontology

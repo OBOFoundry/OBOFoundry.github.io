@@ -5,7 +5,7 @@ description: An ontology for experimental and other evidence statements.
 domain: experiments
 homepage: https://github.com/evidenceontology/evidenceontology/
 tracker: https://github.com/evidenceontology/evidenceontology/issues
-products: 
+products:
   - id: eco.owl
 title: Evidence codes
 build:

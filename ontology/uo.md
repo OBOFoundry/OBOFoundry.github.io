@@ -2,13 +2,13 @@
 layout: ontology_detail
 id: uo
 in_foundry: false
-contact: 
+contact:
   email: geg18@aber.ac.uk
   label: George Gkoutos
 description: Metrical units for use in conjunction with PATO
 domain: phenotype
 homepage: http://code.google.com/p/unit-ontology/
-products: 
+products:
   - id: uo.owl
 title: Units of measurement
 build:

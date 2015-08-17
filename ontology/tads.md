@@ -1,15 +1,15 @@
 ---
 layout: ontology_detail
 id: tads
-contact: 
+contact:
   email: dsonensh@odu.edu
   label: Daniel Sonenshine
 description: "The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>"
 domain: anatomy
 homepage: http://anobase.vectorbase.org
-ts: 
+ts:
   - id: tads.owl
-taxon: 
+taxon:
   id: NCBITaxon:6939
   label: Ixodidae
 title: Tick gross anatomy

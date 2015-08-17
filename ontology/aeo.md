@@ -1,13 +1,13 @@
 ---
 layout: ontology_detail
 id: aeo
-contact: 
+contact:
   email: J.Bard@ed.ac.uk
   label: Jonathan Bard
 description: AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology
 domain: anatomy
 homepage: http://www.obofoundry.org/wiki/index.php/AEO:Main_Page
-products: 
+products:
   - id: aeo.owl
 title: Anatomical Entity Ontology
 build:

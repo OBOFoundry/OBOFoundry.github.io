@@ -1,13 +1,13 @@
 ---
 layout: ontology_detail
 id: dron
-contact: 
+contact:
   email: hoganwr@gmail.com
   label: William Hogan
 description: An ontology to support comparative effectiveness researchers studying claims data.
 domain: health
 homepage: http://code.google.com/p/dr-on
-products: 
+products:
   - id: dron.owl
 title: The Drug Ontology
 build:

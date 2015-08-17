@@ -1,17 +1,17 @@
 ---
 layout: ontology_detail
 id: ehdaa2
-contact: 
+contact:
   email: J.Bard@ed.ac.uk
   label: Jonathan Bard
 description: A structured controlled vocabulary of stage-specific anatomical structures of the developing human.
 tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
 domain: anatomy
 homepage: http://genex.hgu.mrc.ac.uk/
-products: 
+products:
   - id: ehdaa2.owl
   - id: ehdaa2.obo
-taxon: 
+taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: Human developmental anatomy, abstract

@@ -1,12 +1,12 @@
 ---
 layout: ontology_detail
 id: pco
-contact: 
+contact:
   email: rwalls2008@gmail.com
   label: Ramona Walls
 description: A taxon-neutral ontology of material entities, qualities, and processes related to collections of interacting organisms such as populations and communities.
 homepage: https://github.com/PopulationAndCommunityOntology/pco
-products: 
+products:
   - id: pco.owl
 title: Population and Community Ontology
 build:

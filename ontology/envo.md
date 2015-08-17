@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: envo
-contact: 
+contact:
   email: p.buttigieg@googlemail.com
   label: Pier Luigi Buttigieg
 description: Ontology of environmental features and habitats
@@ -11,7 +11,7 @@ page: https://github.com/EnvironmentOntology/envo
 publications:
   - id: http://www.dx.doi.org/10.1186/2041-1480-4-43
     title: "The environment ontology: contextualising biological and biomedical entities"
-products: 
+products:
   - id: envo.owl
 title: Environment Ontology
 build:

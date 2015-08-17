@@ -7,15 +7,15 @@ build:
   system: git
   path: src/ontology
   method: vcs
-contact: 
+contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
 description: An anatomical and developmental ontology for ctenophores (Comb Jellies)
 domain: anatomy
 homepage: https://github.com/obophenotype/ctenophore-ontology
-products: 
+products:
   - id: cteno.owl
-taxon: 
+taxon:
   id: NCBITaxon:10197
   label: Ctenophore
 tracker: https://github.com/obophenotype/ctenophore-ontology/issues

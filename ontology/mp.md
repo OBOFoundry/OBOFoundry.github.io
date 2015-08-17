@@ -8,11 +8,11 @@ build:
   infallible: 1
 description: Standard terms for annotating mammalian phenotypic data.
 homepage: http://www.informatics.jax.org/searches/MP_form.shtml
-contact: 
+contact:
   email: pheno@jax.org
   label: JAX phenotype list
 domain: phenotype
-products: 
+products:
   - id: mp.owl
   - id: mp.obo
 browsers:
@@ -25,7 +25,7 @@ browsers:
 jobs:
   - id: http://build.berkeleybop.org/job/build-mp-edit
     type: DryRunBuild
-taxon: 
+taxon:
   id: NCBITaxon:10088
   label: Mus
 tracker: https://sourceforge.net/p/obo/mammalian-phenotype-requests/

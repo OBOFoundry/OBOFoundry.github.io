@@ -6,15 +6,15 @@ build:
   source_url: https://sourceforge.net/p/pombase/code/HEAD/tree/phenotype_ontology/releases/latest/fypo.obo?format=raw
   method: obo2owl
   infallible: 1
-contact: 
+contact:
   email: mah79@cam.ac.uk
   label: Midori Harris
-description: FYPO is a formal ontology of phenotypes observed in fission yeast. 
+description: FYPO is a formal ontology of phenotypes observed in fission yeast.
 domain: phenotype
 homepage: https://github.com/pombase/fypo
-products: 
+products:
   - id: fypo.owl
-taxon: 
+taxon:
   id: NCBITaxon:4896
   label: S. pombe
 tracker: https://github.com/pombase/fypo/issues

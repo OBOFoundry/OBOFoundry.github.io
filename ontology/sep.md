@@ -1,14 +1,14 @@
 ---
 layout: ontology_detail
 id: sep
-contact: 
+contact:
   email: psidev-gps-dev@lists.sourceforge.net
   label: SEP developers via the PSI and MSI mailing lists
 description: A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments.
 domain: provenance
 homepage: http://psidev.info/index.php?q=node/312
 page: http://psidev.info/index.php?q=node/312
-products: 
+products:
   - id: sep.owl
 title: Sample processing and separation techniques
 build:

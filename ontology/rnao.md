@@ -1,12 +1,12 @@
 ---
 layout: ontology_detail
 id: rnao
-contact: 
+contact:
   email: BatchelorC@rsc.org
   label: Colin Batchelor
 domain: molecular structure
 homepage: http://code.google.com/p/rnao/
-products: 
+products:
   - id: rnao.owl
 title: RNA ontology
 build:

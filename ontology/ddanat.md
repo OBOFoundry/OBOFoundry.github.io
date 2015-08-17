@@ -1,16 +1,16 @@
 ---
 layout: ontology_detail
 id: ddanat
-contact: 
+contact:
   email: r-chisholm@northwestern.edu
   label: Rex Chisholm
 description: A structured controlled vocabulary of the anatomy of the slime-mould <i>Dictyostelium discoideum</i>.
 domain: anatomy
 homepage: http://dictybase.org/
 twitter: dictybase
-products: 
+products:
   - id: ddanat.owl
-taxon: 
+taxon:
   id: NCBITaxon:44689
   label: Dictyostelium discoideum
 title: Dictyostelium discoideum anatomy
