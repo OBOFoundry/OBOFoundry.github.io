@@ -10,8 +10,6 @@ domain: health
 homepage: https://github.com/biobanking/biobanking
 products:
   - id: obib.owl
-build:
-  source_url: http://purl.obofoundry.org/obo/obib.owl
 tracker: https://github.com/biobanking/biobanking/issues
 license:
   url: https://creativecommons.org/licenses/by/3.0/
