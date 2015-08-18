@@ -93,8 +93,8 @@ AEO is an ontology of anatomical structures that expands CARO, the Common Anatom
 The [aeo page](http://obofoundry.github.io/ontology/aeo.html) shows the structured info on the right and the formatted text on the right. (THIS IS A BAD EXAMPLE IT HAS NO FORMATTING)
 
 The YAML data is strictly vetted by OBO team. The Makefile takes care
-of syntactic validation. The OBO team ensures the content is correct,
-up to date and accurate.
+of syntactic validation (the travis job runs `make test`). The OBO
+team ensures the content is correct, up to date and accurate.
 
 You can put any HTML or Markdown in the lower section - customize each ontology page!
 
@@ -105,6 +105,23 @@ script in the util/ directory.
 
 The one piece of visual info in the md is the `layout` field, which is necessary for Jekyll.
 
+
+### Generation of downstream artefacts
+
+OBO admins should periodically
+
+    git pull
+    make
+    jekyll server
+    ## open 127.0.0.1:4000 in a web browser and spot-check changes
+    git commit -m 'regenerated derived files' -a
+    git push origin master
+
+See the Makefile for details. This will have the effect of
+regenerating the main ontologies yaml (used by external consumers such
+as OLS, as well as the central OBO library build), as well as the
+GitHub pages _config.yml file. This last step is necessary to update
+the front page.
 
 
 #### RDF
