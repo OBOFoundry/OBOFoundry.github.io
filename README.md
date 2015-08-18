@@ -117,10 +117,10 @@ OBO admins should periodically
     git commit -m 'regenerated derived files' -a
     git push origin master
 
-See the Makefile for details. This will have the effect of
+See the `Makefile` for details. This will have the effect of
 regenerating the main ontologies yaml (used by external consumers such
 as OLS, as well as the central OBO library build), as well as the
-GitHub pages _config.yml file. This last step is necessary to update
+GitHub pages `_config.yml` file. This last step is necessary to update
 the front page.
 
 
@@ -150,6 +150,28 @@ case the OBO team will not merge your PR. Don't worry, all you have to
 do is make further edits to fix the syntax error.
 
 TODO: add a quick guide to yaml, and the tags we use.
+
+## Central OBO library build
+
+The central OBO build runs here:
+
+ * http://build.berkeleybop.org/job/simple-build-obo-all/
+
+It takes as metadata input the yml file from this repository. It makes
+use of the `build` object.
+
+The output of this job is a set of obo and owl files deposited in
+
+ * http://berkeleybop.org/ontologies/
+
+Depending on the build configuration, this may also make additional files. See for example:
+
+ * http://berkeleybop.org/ontologies/uberon/
+
+A  http://berkeleybop.org/ontologies/ URL should never be handed out directly. This service exists so that:
+
+ * Un PURL-registered ontologies will have a fall-through
+ * Registered PURL ontologies that do not want to take charge of either OBO or OWL generation will have a place to 302-redirect to
 
 ## Adding news
 
