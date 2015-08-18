@@ -13,6 +13,9 @@ build:
   source_url: https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.obo
   method: obo2owl
   infallible: 1
+contact:
+  email: MChibucos@som.umaryland.edu
+  label: "Chibucos, Marcus" 
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/25052702
     title: "Standardized description of scientific evidence using the Evidence Ontology (ECO)"
