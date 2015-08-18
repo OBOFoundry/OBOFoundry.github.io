@@ -9,7 +9,7 @@ description: An ontology of commonly encountered and/or high level Drosophila ph
 domain: phenotype
 homepage: http://purl.obolibrary.org/obo/fbcv
 products:
-  - id: dpo.owl
+  - id: fbcv/dpo.owl
 taxon:
   id: NCBITaxon:7227
   label: Drosophila
