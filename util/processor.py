@@ -5,6 +5,7 @@ __author__ = 'cjm'
 import argparse
 import logging
 import requests
+import sys
 
 #from yaml import load, dump
 #from yaml import Loader, Dumper
@@ -46,6 +47,7 @@ def check_urls(ontologies, args):
     ensure PURLs resolve
     """
     print(len(ontologies))
+    failed_ids = []
     for ont in ontologies:
         id = ont['id']
         print("Checking:"+id)
@@ -58,6 +60,17 @@ def check_urls(ontologies, args):
             # TODO: redirects
             ok = resp.status_code == 200
             print("IS_OK " + id + " " + pid  + " "+str(ok))
+            sys.stdout.flush()
+            if (not ok):
+                failed_ids.append(pid)
+    if (len(failed_ids) > 0):
+        print("FAILURES:")
+        for pid in failed_ids:
+            print(pid)
+        exit(1)
+    else:
+        print("SUCCESS")
+
 
 def get_obo_purl(fragment):
     """
@@ -67,6 +80,8 @@ def get_obo_purl(fragment):
 
 def build_from_source(obj):
     """
+    NOT IMPLEMENTED - use perl for now
+
     Given a metadata object describing a build/clone process,
     build the ontology.
     Replaces build-obo-ontologies.pl in owltools

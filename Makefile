@@ -5,6 +5,8 @@ all: _config.yml registry/ontologies.yml
 
 test: validate all
 
+integration-test: test valid-purl-report.txt
+
 t:
 	echo $(ONTS)
 
@@ -31,3 +33,9 @@ registry/ontologies.ttl: registry/ontologies.jsonld
 validate: $(ONTS)
 	./util/extract-metadata.py validate $^
 
+# Note this should *not* be run as part of general travis jobs, it is expensive
+# and may be prone to false positives as it is inherently network-based
+#
+# See: https://github.com/OBOFoundry/OBOFoundry.github.io/issues/18
+valid-purl-report.txt: registry/ontologies.yml
+	./util/processor.py -i $< check-urls > $@.tmp && mv $@.tmp $@
