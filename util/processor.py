@@ -6,6 +6,7 @@ import argparse
 import logging
 import requests
 import sys
+import os
 
 #from yaml import load, dump
 #from yaml import Loader, Dumper
@@ -70,6 +71,21 @@ def check_urls(ontologies, args):
         exit(1)
     else:
         print("SUCCESS")
+
+
+def mirror(ontologies, args):
+    """
+    Mirror all PURLs locally
+    """
+    for ont in ontologies:
+        id = ont['id']
+        for p in ont['products']:
+            pid = p['id']
+            url = get_obo_purl(pid)
+            # we use -r to force directory structure mirroring
+            status = os.system("wget -r "+url)
+            if (status):
+                print("FAILED: "+url)
 
 
 def get_obo_purl(fragment):
