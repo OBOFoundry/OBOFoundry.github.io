@@ -18,6 +18,9 @@ dependencies:
 products:
   - id: ms.obo
   - id: ms.owl
+build:
+  source_url: http://psidev.cvs.sourceforge.net/viewvc/psidev/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo
+  method: obo2owl
 ---
 
 A structured controlled vocabulary for the annotation of experiments concerned with proteomics mass spectrometry. Developed by the HUPO Proteomics Standards Initiative (PSI).
