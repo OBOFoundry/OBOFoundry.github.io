@@ -326,7 +326,7 @@ ontologies:
   layout: ontology_detail
   preferredPrefix: FBcv
   products:
-  - {id: dpo.owl}
+  - {id: fbcv/dpo.owl}
   publications:
   - {id: 'http://dx.doi.org/10.1186/2041-1480-4-30', title: The Drosophila phenotype
       ontology.}
@@ -346,6 +346,7 @@ ontologies:
   title: The Drug Ontology
   tracker: https://code.google.com/p/dr-on/issues/list
 - build: {infallible: 1, method: obo2owl, notes: switch to vcs, source_url: 'https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.obo'}
+  contact: {email: MChibucos@som.umaryland.edu, label: 'Chibucos, Marcus'}
   description: An ontology for experimental and other evidence statements.
   domain: experiments
   homepage: https://github.com/evidenceontology/evidenceontology/
@@ -683,7 +684,7 @@ ontologies:
   homepage: http://hymao.org
   id: hao
   layout: ontology_detail
-  s:
+  products:
   - {id: hao.owl}
   taxon: {id: 'NCBITaxon:7399', label: Hymenoptera}
   title: Hymenoptera Anatomy Ontology
@@ -773,7 +774,7 @@ ontologies:
   products:
   - {id: idomal.owl}
   title: Malaria Ontology
-- build: {method: obo2owl, source_url: 'http://biomodels.net/kisao/KISAO'}
+- build: {method: owl2obo, source_url: 'http://biomodels.net/kisao/KISAO'}
   contact: {email: lenov@ebi.ac.uk, label: Nicolas Le Novere}
   description: A classification of algorithms available for the simulation of models
     in biology.
@@ -784,13 +785,13 @@ ontologies:
   products:
   - {id: kisao.owl}
   title: Kinetic Simulation Algorithm Ontology
-  tracker: https://sourceforge.net/tracker/?group_id=293617
 - build: {method: owl2obo, source_url: 'http://www.lipidprofiles.com/LipidOntology'}
   contact: {email: bakerc@unb.ca, label: Christipher Baker}
   description: An ontology representation of the LIPIDMAPS nomenclature classification.
   domain: lipids
   id: lipro
   in_foundry: false
+  is_obsolete: true
   layout: ontology_detail
   products:
   - {id: lipro.owl}
@@ -891,7 +892,7 @@ ontologies:
   homepage: http://www.evoio.org/wiki/MIAPA
   id: miapa
   layout: ontology_detail
-  s:
+  products:
   - {id: miapa.owl}
   title: MIAPA Ontology
   tracker: https://github.com/miapa/miapa/issues
@@ -1004,7 +1005,8 @@ ontologies:
   - {id: mpath.owl}
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse pathology
-- contact: {email: gerhard.mayer@rub.de, label: Gerhard Mayer}
+- build: {method: obo2owl, source_url: 'http://psidev.cvs.sourceforge.net/viewvc/psidev/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo'}
+  contact: {email: gerhard.mayer@rub.de, label: Gerhard Mayer}
   dependencies:
   - {id: pato}
   - {id: uo}
@@ -1060,6 +1062,7 @@ ontologies:
   domain: experiments
   homepage: http://msi-ontology.sourceforge.net/
   id: nmr
+  is_obsolete: true
   layout: ontology_detail
   page: http://msi-ontology.sourceforge.net/ontology/NMR.owlDocument.doc
   products:
@@ -1099,21 +1102,38 @@ ontologies:
   - {id: obcs.owl}
   title: Ontology of Biological and Clinical Statistics
   tracker: https://github.com/obcs/obcs/issues
-- build: {method: owl2obo, source_url: 'http://purl.obofoundry.org/obo/obi.owl'}
+- browsers:
+  - {label: BioPortal, title: BioPortal Browser, url: 'http://bioportal.bioontology.org/ontologies/OBI?p=classes'}
+  build: {source_url: 'http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/'}
   contact: {email: bpeters@liai.org, label: Bjoern Peters}
+  depicted_by: https://svn.code.sf.net/p/obi/code/trunk/web/htdocs/images/obi-lotext.png
   description: An integrated ontology for the description of life-science and clinical
     investigations
   domain: experiments
-  homepage: http://purl.obofoundry.org/obo/obi
+  homepage: http://obi-ontology.org
   id: obi
   in_foundry_order: 1
+  integration_server: http://build.berkeleybop.org/job/build-obi/
   layout: ontology_detail
   license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
-  page: http://obi-ontology.org/page/Technical_Reports
+  mailing_list: http://groups.google.com/group/obi-users
   products:
-  - {id: obi.owl}
+  - {id: obi.owl, title: OBI}
+  - {id: obi/obi_core.owl, title: OBI Core}
   title: Ontology for Biomedical Investigations
-  tracker: http://sourceforge.net/p/obi/obi-terms/
+  tracker: http://purl.obofoundry.org/obo/obi/tracker
+- contact: {email: jiezheng@upenn.edu, label: Jie Zheng}
+  description: An ontology built for annotation and modeling of biobank repository
+    and biobanking administration
+  domain: health
+  homepage: https://github.com/biobanking/biobanking
+  id: obib
+  layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  products:
+  - {id: obib.owl}
+  title: Ontology for Biobanking
+  tracker: https://github.com/biobanking/biobanking/issues
 - contact: {email: yongqunh@med.umich.edu, label: Yongqun Oliver He}
   description: A formal ontology of genes and genomes of biological organisms.
   homepage: http://ogg.googlecode.com/
@@ -1194,20 +1214,10 @@ ontologies:
   homepage: https://github.com/OPL-ontology/OPL
   id: opl
   layout: ontology_detail
+  products:
+  - {id: opl.owl}
   title: Ontology for Parasite LifeCycle
   tracker: https://github.com/OPL-ontology/OPL/issues
-  ts:
-  - {id: opl.owl}
-- contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
-  description: A biomedical ontology in the domain of vaccine adverse events. OVAE
-    is an extension of the Ontology of Adverse Event (OAE) and uses the vaccine information
-    imported from the Vaccine Ontology (VO)
-  homepage: http://www.violinet.org/ovae/
-  id: ovae
-  layout: ontology_detail
-  products:
-  - {id: ovae.owl}
-  title: Ontology of Vaccine Adverse Events
 - id: ovao
   layout: ontology_detail
   products:
@@ -1320,9 +1330,8 @@ ontologies:
   domain: proteins
   homepage: http://www.ebi.ac.uk/RESID/
   id: resid
+  is_obsolete: true
   layout: ontology_detail
-  products:
-  - {id: resid.owl}
   title: Protein covalent bond
 - build: {method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo'}
   contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
@@ -1333,14 +1342,16 @@ ontologies:
   products:
   - {id: rex.owl}
   title: Physico-chemical process
-- build: {method: obo2owl, source_url: 'http://rnao.googlecode.com/svn/trunk/rnao.obo'}
+- build: {checkout: 'git clone https://github.com/BGSU-RNA/rnao.git', method: vcs,
+    system: git}
   contact: {email: BatchelorC@rsc.org, label: Colin Batchelor}
   domain: molecular structure
-  homepage: http://code.google.com/p/rnao/
+  homepage: https://github.com/bgsu-rna/rnao
   id: rnao
   layout: ontology_detail
   products:
   - {id: rnao.owl}
+  - {id: rnao.obo}
   title: RNA ontology
 - build: {checkout: 'svn co http://obo-relations.googlecode.com/svn/trunk/src/ontology',
     infallible: 1, method: vcs, system: svn}
@@ -1425,6 +1436,7 @@ ontologies:
   layout: ontology_detail
   products:
   - {id: sibo.owl}
+  - {id: sibo.obo}
   title: Social Insect Behavior Ontology
   tracker: https://github.com/obophenotype/sibo/issues
 - build: {method: obo2owl, notes: SWITCH, source_url: 'https://svn.code.sf.net/p/song/svn/trunk/so-xp.obo'}
@@ -1461,6 +1473,7 @@ ontologies:
   title: Spider Ontology
   tracker: http://sourceforge.net/tracker/?group_id=76834&atid=977401
 - contact: {email: alejandra.gonzalez.beltran@gmail.com, label: Alejandra Gonzalez-Beltran}
+  depicted_by: https://raw.githubusercontent.com/ISA-tools/stato/dev/images/stato-logo-1.png
   description: STATO is a general-purpose STATistics Ontology. Its aim is to provide
     coverage for processes such as statistical tests, their conditions of application,
     and information needed or resulting from statistical methods, such as probability
@@ -1505,10 +1518,10 @@ ontologies:
   homepage: http://anobase.vectorbase.org
   id: tads
   layout: ontology_detail
+  products:
+  - {id: tads.owl}
   taxon: {id: 'NCBITaxon:6939', label: Ixodidae}
   title: Tick gross anatomy
-  ts:
-  - {id: tads.owl}
 - build: {method: obo2owl, source_url: 'http://purl.obolibrary.org/obo/tao.obo'}
   contact: {email: wasila.dahdul@usd.edu, label: Wasila Dahdul}
   description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but
@@ -1802,11 +1815,6 @@ ontologies:
       measurement method and experimental condition ontologies: expansion, improvements
       and new applications.'}
   title: Experimental condition ontology
-- id: xso
-  layout: ontology_detail
-  products:
-  - {id: xso.owl}
-  tracker: http://sourceforge.net/tracker/?group_id=76834&atid=1127722
 - build: {infallible: 1, method: obo2owl, notes: may be ready to switch to vcs soon,
     source_url: 'https://zebrafish-anatomical-ontology.googlecode.com/svn/trunk/src/preversion.zfish.obo'}
   contact: {email: zfinadmin@zfin.org, label: ZFIN administrators}
