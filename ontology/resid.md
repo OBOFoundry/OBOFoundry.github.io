@@ -7,9 +7,8 @@ contact:
 description: For the description of covalent bonds in proteins.
 domain: proteins
 homepage: http://www.ebi.ac.uk/RESID/
-products:
-  - id: resid.owl
 title: Protein covalent bond
+is_obsolete: true
 ---
 
 For the description of covalent bonds in proteins.
