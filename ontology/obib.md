@@ -18,4 +18,4 @@ license:
   label: CC-BY  
 ---
 
-The ontology for biobanking is an ontology built for annotation and modeling of biobank repository and biobanking administration. It is developed based on subset of Ontology for Biomedical Investigation (OBI) using Basic Formal Ontology (BFO) and following OBO Foundry principles. The first version of the ontology is merged of two existing biobank related ontologies, OMIABIS and biobank ontology.
+The Ontology for Biobanking (OBIB) is an ontology for the annotation and modeling of the activities, contents, and administration of a biobank. Biobanks are facilities that store specimens, such as bodily fluids and tissues, typically along with specimen annotation and clinical data. OBIB is based on a subset of the Ontology for Biomedical Investigation (OBI), has the Basic Formal Ontology (BFO) as its upper ontology, and is developed following OBO Foundry principles. The first version of OBIB resulted from the merging of two existing biobank-related ontologies, OMIABIS and biobank ontology.
