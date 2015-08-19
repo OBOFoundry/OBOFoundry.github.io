@@ -7,7 +7,7 @@ contact:
 description: "An ontology of information entities."
 domain: information
 homepage: http://purl.obolibrary.org/obo/iao
-page: http://code.google.com/p/information-artifact-ontology/
+page: https://github.com/information-artifact-ontology/IAO
 products:
   - id: iao.owl
   - id: iao/d-acts.owl
@@ -20,7 +20,7 @@ title: Information Artifact Ontology
 build:
   source_url: http://purl.obolibrary.org/obo/iao.owl
   method: owl2obo
-tracker: http://code.google.com/p/information-artifact-ontology/issues/list
+tracker: https://github.com/information-artifact-ontology/IAO/issues
 depicted_by: https://avatars0.githubusercontent.com/u/13591168?v=3&s=200
 ---
 
