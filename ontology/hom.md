@@ -2,8 +2,8 @@
 layout: ontology_detail
 id: hom
 contact:
-  email: bgee@isb-sib.chh
-  label: ''
+  email: bgee@isb-sib.ch
+  label: 'BgeeDB'
 description: This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology.
 homepage: http://bioinfo.unil.ch
 products:
