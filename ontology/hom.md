@@ -8,7 +8,7 @@ description: This ontology represents concepts related to homology, as well as o
 homepage: http://bioinfo.unil.ch
 products:
   - id: hom.owl
-title: homology_ontology
+title: Homology Ontology
 tracker: https://github.com/BgeeDB/homology-ontology/issues
 build:
   checkout: git clone https://github.com/BgeeDB/homology-ontology.git
