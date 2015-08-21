@@ -4,8 +4,8 @@ id: dideo
 title: Drug Interaction and Evidence Ontology
 description: The Potential Drug-drug Interaction and Potential Drug-drug Interaction Evidence Ontology
 contact:
-  email: Mathias Brochhausen	
-  label: mbrochhausen@gmail.com
+  email: mbrochhausen@gmail.com
+  label: Mathias Brochhausen
 homepage: https://github.com/DIDEO/DIDEO
 tracker: https://github.com/DIDEO/DIDEO/issues
 ---
