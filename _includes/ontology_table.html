@@ -4,13 +4,34 @@
     {% for ont in sorted_ontologies %}
     <tr>
       <td>
-         <a href="ontology/{{ ont.id }}.html" > {{ont.id}} </a>
+         <a href="ontology/{{ ont.id }}.html" >
+           {% if ont.is_obsolete %}
+           <s>
+             {{ ont.id }}
+           </s>
+           {% else %}
+           {{ ont.id }}
+           {% endif %}
+         </a>
       </td>
       <td>
+        {% if ont.is_obsolete %}
+        <s>
+          {{ ont.title }}
+        </s>
+        {% else %}
         {{ ont.title }}
+        {% endif %}
       </td>
       <td>
-        {{ ont.description }} 
+        {% if ont.is_obsolete %}
+        <s>
+          {{ ont.description }}
+        </s>
+        <mark>obsolete</mark>
+        {% else %}
+        {{ ont.description }}
+        {% endif %}
         <small>
           <a href="ontology/{{ ont.id }}.html" > Detail </a>
         </small>

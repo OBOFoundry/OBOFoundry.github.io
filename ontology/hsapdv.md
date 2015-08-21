@@ -1,0 +1,19 @@
+---
+layout: ontology_detail
+id: hsapdv
+title: Human Developmental Stages
+build:
+  source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/hsapdv/hsapdv.obo
+  method: obo2owl
+  infallible: 1
+description: Life cycle stages for Human
+homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv
+page: https://github.com/obophenotype/developmental-stage-ontologies
+---
+
+HsapDv was developed by the Bgee group with assistance from the core Uberon developers and the Human developmental anatomy ontology (EHDAA2) developers.
+
+Currently it includes both embryonic (Carnegie) stages and adult stages.
+
+
+

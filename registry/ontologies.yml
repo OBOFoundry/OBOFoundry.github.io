@@ -1,4 +1,18 @@
 ontologies:
+- contact: {email: David Blackburn, label: david.c.blackburn@gmail.com}
+  homepage: http://github.com/seger/aao
+  id: aao
+  is_obsolete: true
+  layout: ontology_detail
+  replaced_by: uberon
+  taxon: {id: 'NCBITaxon:8292', label: Amphibia}
+  title: Amphibian gross anatomy
+- contact: {email: Animal Diversity Web technical staff, label: adw_geeks@umich.edu}
+  homepage: http://www.animaldiversity.org
+  id: adw
+  is_obsolete: true
+  layout: ontology_detail
+  title: Animal natural history and life history
 - build: {checkout: 'git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git',
     method: vcs, path: src/ontology, system: git}
   contact: {email: J.Bard@ed.ac.uk, label: Jonathan Bard}
@@ -35,6 +49,13 @@ ontologies:
   - {id: apo.owl}
   taxon: {id: 'NCBITaxon:4890', label: Ascomycota}
   title: Ascomycete phenotype ontology
+- contact: {email: David Blackburn, label: david.c.blackburn@gmail.com}
+  homepage: http://www.amphibanat.org
+  id: ato
+  is_obsolete: true
+  layout: ontology_detail
+  taxon: {id: 'NCBITaxon:8292', label: Amphibia}
+  title: Amphibian taxonomy
 - contact: {email: jiezheng@upenn.edu, label: Jie Zheng}
   description: An application ontology built for beta cell genomics studies.
   homepage: https://github.com/obi-bcgo/bcgo
@@ -80,6 +101,13 @@ ontologies:
   replaced_by: uberon
   taxon: {id: 'NCBITaxon:33213', label: Bilateria}
   title: Bilateria anatomy
+- contact: {email: Vivian Lee, label: vlee@ebi.ac.uk}
+  homepage: http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html
+  id: bootstrep
+  is_obsolete: true
+  layout: ontology_detail
+  replaced_by: molecular_function
+  title: Gene Regulation Ontology
 - build: {checkout: 'git clone https://github.com/obophenotype/biological-spatial-ontology.git',
     infallible: 1, method: vcs, path: src/ontology, system: git}
   contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
@@ -220,6 +248,11 @@ ontologies:
   products:
   - {id: clo.owl}
   title: Cell Line Ontology
+- contact: {email: Michael Grove, label: grovmi@ohsu.edu}
+  homepage: https://code.google.com/p/craniomaxillofacial-ontology/
+  id: cmf
+  layout: ontology_detail
+  title: CranioMaxilloFacial ontology
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=CMO:0000000'}
   build: {method: obo2owl, source_url: 'ftp://rgd.mcw.edu/pub/ontology/clinical_measurement/clinical_measurement.obo'}
@@ -266,6 +299,14 @@ ontologies:
   - {id: cvdo.owl}
   title: Cardiovascular Disease Ontology
   tracker: https://code.google.com/p/cvdo/issues/list
+- contact: {email: Lindsay Cowell, label: Lindsay.Cowell@utsouthwestern.edu}
+  homepage: http://www.dukeontologygroup.org/Projects.html
+  id: dc_cl
+  is_obsolete: true
+  layout: ontology_detail
+  replaced_by: cl
+  taxon: {id: all, label: null}
+  title: Dendritic cell
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_anatomy.obo'}
   contact: {email: r-chisholm@northwestern.edu, label: Rex Chisholm}
   description: A structured controlled vocabulary of the anatomy of the slime-mould
@@ -293,6 +334,11 @@ ontologies:
   taxon: {id: 'NCBITaxon:44689', label: Dictyostelium discoideum}
   title: Dictyostelium discoideum phenotype
   twitter: dictybase
+- contact: {email: Maria Herrero, label: mhzazo@pa.uc3m.es}
+  homepage: https://code.google.com/p/dinto/
+  id: dinto
+  layout: ontology_detail
+  title: The Drug-drug Interaction Ontology
 - browsers:
   - {label: DO, title: DO Browser, url: 'http://www.disease-ontology.org/'}
   - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/DOID:4'}
@@ -338,13 +384,13 @@ ontologies:
   description: An ontology to support comparative effectiveness researchers studying
     claims data.
   domain: health
-  homepage: http://code.google.com/p/dr-on
+  homepage: https://bitbucket.org/uamsdbmi/dron.git
   id: dron
   layout: ontology_detail
   products:
   - {id: dron.owl}
   title: The Drug Ontology
-  tracker: https://code.google.com/p/dr-on/issues/list
+  tracker: https://ontology.atlassian.net/browse/DRON
 - build: {infallible: 1, method: obo2owl, notes: switch to vcs, source_url: 'https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.obo'}
   contact: {email: MChibucos@som.umaryland.edu, label: 'Chibucos, Marcus'}
   description: An ontology for experimental and other evidence statements.
@@ -359,6 +405,22 @@ ontologies:
       of scientific evidence using the Evidence Ontology (ECO)}
   title: Evidence codes
   tracker: https://github.com/evidenceontology/evidenceontology/issues
+- contact: {email: Jonathan Bard, label: J.Bard@ed.ac.uk}
+  homepage: http://genex.hgu.mrc.ac.uk/
+  id: ehda
+  is_obsolete: true
+  layout: ontology_detail
+  replaced_by: human-dev-anat-abstract2
+  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+  title: Human developmental anatomy, timed version
+- contact: {email: Jonathan Bard, label: J.Bard@ed.ac.uk}
+  homepage: null
+  id: ehdaa
+  is_obsolete: true
+  layout: ontology_detail
+  replaced_by: human-dev-anat-abstract2
+  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+  title: Human developmental anatomy, abstract version
 - build: {checkout: 'git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git',
     method: vcs, path: src/ontology, system: git}
   contact: {email: J.Bard@ed.ac.uk, label: Jonathan Bard}
@@ -459,6 +521,12 @@ ontologies:
   - {id: ero.owl}
   title: eagle-i resource ontology
   tracker: http://code.google.com/p/eagle-i/issues/list
+- contact: {email: eVOC mailing list, label: evoc@sanbi.ac.za}
+  homepage: http://www.evocontology.org/
+  id: ev
+  is_obsolete: true
+  layout: ontology_detail
+  title: eVOC (Expressed Sequence Annotation for Humans)
 - build: {method: obo2owl, source_url: 'http://ctdbase.org/reports/CTD_exposure_ontology.obo'}
   description: ExO is designed to facilitate centralization and integration of exposure
     data to inform understanding of environmental health.
@@ -675,6 +743,18 @@ ontologies:
   title: Gene Ontology
   tracker: https://github.com/geneontology/go-ontology/issues/
   twitter: news4go
+- contact: {email: Plant Ontology Administrators, label: po-discuss@plantontology.org}
+  homepage: http://www.gramene.org/plant_ontology/
+  id: gro
+  is_obsolete: true
+  layout: ontology_detail
+  title: Cereal Plant Gross Anatomy
+- contact: {email: Peter Midford, label: peteremidford@yahoo.com}
+  homepage: http://www.mesquiteproject.org/ontology/Habronattus/index.html
+  id: habronattus
+  is_obsolete: true
+  layout: ontology_detail
+  title: Habronattus courtship
 - build: {checkout: 'svn co http://obo.svn.sourceforge.net/svnroot/obo/ontologies/trunk/HAO',
     method: vcs, system: svn}
   contact: {email: diapriid@gmail.com, label: Matt Yoder}
@@ -742,7 +822,7 @@ ontologies:
   homepage: http://purl.obolibrary.org/obo/iao
   id: iao
   layout: ontology_detail
-  page: http://code.google.com/p/information-artifact-ontology/
+  page: https://github.com/information-artifact-ontology/IAO
   products:
   - {id: iao.owl}
   - contact: {email: mbrochhausen@gmail.com, label: Mathias Brochhausen}
@@ -751,7 +831,12 @@ ontologies:
     id: iao/d-acts.owl
     title: ontology of document acts
   title: Information Artifact Ontology
-  tracker: http://code.google.com/p/information-artifact-ontology/issues/list
+  tracker: https://github.com/information-artifact-ontology/IAO/issues
+- contact: {email: Yongqun Oliver He, label: yongqunh@med.umich.edu}
+  homepage: https://code.google.com/p/ico-ontology/
+  id: ico
+  layout: ontology_detail
+  title: Informed Consent Ontology
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/ido.owl'}
   contact: {email: Lindsay.Cowell@utsouthwestern.edu, label: Lindsay Cowell}
   domain: health
@@ -774,6 +859,20 @@ ontologies:
   products:
   - {id: idomal.owl}
   title: Malaria Ontology
+- {homepage: 'http://www.inoh.org', id: iev, is_obsolete: true, layout: ontology_detail,
+  title: Event (INOH pathway ontology)}
+- contact: {email: INOH curators, label: curator@inoh.org}
+  homepage: http://www.inoh.org
+  id: imr
+  is_obsolete: true
+  layout: ontology_detail
+  title: Molecule role (INOH Protein name/family name ontology)
+- contact: {email: InterPro Help, label: interhelp@ebi.ac.uk}
+  homepage: http://www.ebi.ac.uk/interpro/index.html
+  id: ipr
+  is_obsolete: true
+  layout: ontology_detail
+  title: Protein Domains
 - build: {method: owl2obo, source_url: 'http://biomodels.net/kisao/KISAO'}
   contact: {email: lenov@ebi.ac.uk, label: Nicolas Le Novere}
   description: A classification of algorithms available for the simulation of models
@@ -796,6 +895,12 @@ ontologies:
   products:
   - {id: lipro.owl}
   title: Lipid Ontology
+- contact: {email: Peter Midford, label: peteremidford@yahoo.com}
+  homepage: http://www.mesquiteproject.org/ontology/Loggerhead/index.html
+  id: loggerhead
+  is_obsolete: true
+  layout: ontology_detail
+  title: Loggerhead nesting
 - build: {infallible: 1, method: obo2owl, source_url: 'ftp://ftp.informatics.jax.org/pub/reports/adult_mouse_anatomy.obo'}
   contact: {email: Terry.Hayamizu@jax.org, label: Terry Hayamizu}
   description: A structured controlled vocabulary of the adult anatomy of the mouse
@@ -821,6 +926,18 @@ ontologies:
   - {id: mamo.owl}
   title: Mathematical modeling ontology
   tracker: http://sourceforge.net/p/mamo-ontology/tickets/
+- contact: {email: Julie Thompson, label: julie@igbmc.u-strasbg.fr}
+  homepage: http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html
+  id: mao
+  is_obsolete: true
+  layout: ontology_detail
+  title: Multiple alignment
+- contact: {email: Jonathan Bard, label: j.bard@ed.ac.uk}
+  homepage: null
+  id: mat
+  is_obsolete: true
+  layout: ontology_detail
+  title: Minimal anatomical terminology
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/mf.owl'}
   contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
   homepage: https://code.google.com/p/mental-functioning-ontology/
@@ -1055,6 +1172,28 @@ ontologies:
   source: http://www.ncbi.nlm.nih.gov/taxonomy
   title: NCBI organismal classification
   wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
+- contact: {email: NCICB Support, label: ncicb@pop.nci.nih.gov}
+  homepage: https://cabig.nci.nih.gov/concepts/EVS/
+  id: ncithesaurus
+  layout: ontology_detail
+  title: NCI Thesaurus
+- contact: {email: Fahim Imam, label: smtifahim@gmail.com}
+  homepage: http://neuinfo.org/
+  id: nif_cell
+  layout: ontology_detail
+  title: NIF Cell
+- contact: {email: Fahim Imam, label: smtifahim@gmail.com}
+  homepage: http://neuinfo.org/
+  id: nif_dysfunction
+  layout: ontology_detail
+  title: NIF Dysfunction
+- contact: {email: Fahim Imam, label: smtifahim@gmail.com}
+  homepage: http://neuinfo.org/
+  id: nif_grossanatomy
+  is_obsolete: true
+  layout: ontology_detail
+  replaced_by: uberon
+  title: NIF Gross Anatomy
 - build: {method: owl2obo, source_url: 'https://msi-workgroups.svn.sourceforge.net/svnroot/msi-workgroups/ontology/NMR.owl'}
   contact: {email: schober@imbi.uni-freiburg.de, label: Schober Daniel}
   description: Descriptors relevant to the experimental conditions of the Nuclear
@@ -1134,6 +1273,12 @@ ontologies:
   - {id: obib.owl}
   title: Ontology for Biobanking
   tracker: https://github.com/biobanking/biobanking/issues
+- contact: {email: Chris Mungall, label: cjmungall@lbl.gov}
+  homepage: http://www.obofoundry.org/ro
+  id: obo_rel
+  layout: ontology_detail
+  taxon: {id: all, label: null}
+  title: OBO relationship types (legacy)
 - contact: {email: yongqunh@med.umich.edu, label: Yongqun Oliver He}
   description: A formal ontology of genes and genomes of biological organisms.
   homepage: http://ogg.googlecode.com/
@@ -1218,11 +1363,23 @@ ontologies:
   - {id: opl.owl}
   title: Ontology for Parasite LifeCycle
   tracker: https://github.com/OPL-ontology/OPL/issues
+- contact: {email: Yongqunh He, label: yongqunh@med.umich.edu}
+  homepage: http://www.violinet.org/ovae/
+  id: ovae
+  layout: ontology_detail
+  title: Ontology of Vaccine Adverse Events
 - id: ovao
   layout: ontology_detail
   products:
   - {id: ovao.owl}
   tracker: https://code.google.com/p/ovae/issues/list
+- contact: {email: Pankaj Jaiswal, label: jaiswalp@science.oregonstate.edu}
+  homepage: http://www.plantontology.org
+  id: pao
+  is_obsolete: true
+  layout: ontology_detail
+  taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
+  title: Plant Anatomy Ontology
 - build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo'}
   contact: {email: geg18@aber.ac.uk, label: George Gkoutos}
   description: An ontology of phenotypic qualities (properties, attributes or characteristics)
@@ -1250,6 +1407,12 @@ ontologies:
   - {id: pco.owl}
   title: Population and Community Ontology
   tracker: https://github.com/PopulationAndCommunityOntology/pco/issues
+- contact: {email: Thorsten Heinrich, label: henrich@embl.de}
+  homepage: http://4dx.embl.de/platy
+  id: pd_st
+  layout: ontology_detail
+  taxon: {id: 'NCBITaxon:6358', label: Platynereis}
+  title: Platynereis stage ontology
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/pdumdv/pdumdv.obo'}
   description: Life cycle stages for Mus Musculus
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv
@@ -1257,6 +1420,19 @@ ontologies:
   layout: ontology_detail
   page: https://github.com/obophenotype/developmental-stage-ontologies
   title: Platynereis Developmental Stages
+- contact: {email: Plant Ontology Administrators, label: po-discuss@plantontology.org}
+  homepage: http://www.plantontology.org
+  id: pgdso
+  is_obsolete: true
+  layout: ontology_detail
+  taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
+  title: Plant Growth and Development Stage
+- contact: {email: Matt Berriman, label: mb4@sanger.ac.uk}
+  homepage: http://www.sanger.ac.uk/Users/mb4/PLO/
+  id: plo
+  is_obsolete: true
+  layout: ontology_detail
+  title: Plasmodium life cycle
 - build: {infallible: 1, method: obo2owl, notes: switch to vcs method, source_url: 'http://palea.cgrb.oregonstate.edu/viewsvn/Poc/tags/live/plant_ontology.obo?view=co'}
   contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
   description: The Plant Ontology is a structured vocabulary and database resource
@@ -1306,6 +1482,12 @@ ontologies:
   - {id: pr.owl}
   title: PRotein Ontology (PRO)
   tracker: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
+- contact: {email: Satya S. Sahoo, label: satya30@uga.edu}
+  homepage: http://lsdis.cs.uga.edu/projects/glycomics/propreo/
+  id: propreo
+  is_obsolete: true
+  layout: ontology_detail
+  title: Proteomics data and process provenance
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=PW:0000001'}
   build: {method: obo2owl, source_url: 'ftp://rgd.mcw.edu/pub/data_release/ontology_obo_files/pathway/pathway.obo'}
@@ -1401,6 +1583,14 @@ ontologies:
   id: rxno
   products:
   - {id: rxno.owl, title: Name Reaction Ontology}
+- contact: {email: Stephen Larson, label: slarson@ncmir.ucsd.edu}
+  homepage: http://ccdb.ucsd.edu/CCDBWebSite/sao.html
+  id: sao
+  is_obsolete: true
+  layout: ontology_detail
+  replaced_by: go
+  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+  title: Subcellular anatomy ontology
 - build: {method: obo2owl, source_url: 'http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo'}
   contact: {email: lenov@ebi.ac.uk, label: Nicolas Le Novere}
   description: Terms commonly used in Systems Biology, and in particular in computational
@@ -1458,6 +1648,13 @@ ontologies:
       Ontology terms and relationships.}
   title: Sequence types and features
   tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
+- contact: {email: Adrien Coulet, label: Adrien.Coulet@loria.fr}
+  homepage: http://www.loria.fr/~coulet/sopharm2.0_description.php
+  id: sopharm
+  is_obsolete: true
+  layout: ontology_detail
+  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+  title: Suggested Ontology for Pharmacogenomics
 - build: {method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/animal_gross_anatomy/spider/spider_comparative_biology.obo'}
   contact: {email: ramirez@macn.gov.ar, label: Martin Ramirez}
   description: An ontology for spider comparative biology including anatomical parts
@@ -1522,6 +1719,20 @@ ontologies:
   - {id: tads.owl}
   taxon: {id: 'NCBITaxon:6939', label: Ixodidae}
   title: Tick gross anatomy
+- contact: {email: Pierre Sprumont, label: pierre.sprumont@unifr.ch}
+  homepage: null
+  id: tahe
+  is_obsolete: true
+  layout: ontology_detail
+  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+  title: Terminology of Anatomy of Human Embryology
+- contact: {email: Pierre Sprumont, label: pierre.sprumont@unifr.ch}
+  homepage: null
+  id: tahh
+  is_obsolete: true
+  layout: ontology_detail
+  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
+  title: Terminology of Anatomy of Human Histology
 - build: {method: obo2owl, source_url: 'http://purl.obolibrary.org/obo/tao.obo'}
   contact: {email: wasila.dahdul@usd.edu, label: Wasila Dahdul}
   description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but
@@ -1671,18 +1882,18 @@ ontologies:
   twitter: uberanat
   type: owl:Ontology
   wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
-- build: {method: obo2owl, source_url: 'http://unit-ontology.googlecode.com/svn/trunk/unit.obo'}
+- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo'}
   contact: {email: geg18@aber.ac.uk, label: George Gkoutos}
   description: Metrical units for use in conjunction with PATO
   domain: phenotype
-  homepage: http://code.google.com/p/unit-ontology/
+  homepage: https://github.com/bio-ontology-research-group/unit-ontology
   id: uo
   in_foundry: false
   layout: ontology_detail
   products:
   - {id: uo.owl}
   title: Units of measurement
-  tracker: http://sourceforge.net/tracker/?group_id=76834&atid=595654
+  tracker: https://github.com/bio-ontology-research-group/unit-ontology/issues
 - build: {method: archive, path: archive/ontology, source_url: 'http://build.berkeleybop.org/job/build-pheno-ontologies/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
   id: upheno
   layout: ontology_detail
@@ -1815,6 +2026,21 @@ ontologies:
       measurement method and experimental condition ontologies: expansion, improvements
       and new applications.'}
   title: Experimental condition ontology
+- contact: {email: Mike Cherry, label: cherry@genome.stanford.edu}
+  homepage: http://www.yeastgenome.org/
+  id: ypo
+  is_obsolete: true
+  layout: ontology_detail
+  replaced_by: ascomycete_phenotype
+  taxon: {id: 'NCBITaxon:4932', label: Saccharomyces cerevisiae}
+  title: Yeast phenotypes
+- contact: {email: Leszek Vincent, label: Leszek@missouri.edu}
+  homepage: http://www.maizemap.org/
+  id: zea
+  is_obsolete: true
+  layout: ontology_detail
+  taxon: {id: 'NCBITaxon:4575', label: Zea}
+  title: Maize gross anatomy
 - build: {infallible: 1, method: obo2owl, notes: may be ready to switch to vcs soon,
     source_url: 'https://zebrafish-anatomical-ontology.googlecode.com/svn/trunk/src/preversion.zfish.obo'}
   contact: {email: zfinadmin@zfin.org, label: ZFIN administrators}
@@ -1841,7 +2067,7 @@ ontologies:
   id: zfs
   in_foundry: false
   layout: ontology_detail
-  page: http://code.google.com/p/developmental-stage-ontologies
+  page: https://github.com/obophenotype/developmental-stage-ontologies/wiki/ZFS
   products:
   - {id: zfs.owl}
   taxon: {id: 'NCBITaxon:7954', label: Danio}
