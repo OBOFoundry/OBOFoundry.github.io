@@ -3,8 +3,9 @@ layout: ontology_detail
 id: mp
 title: Mammalian phenotype
 build:
-  source_url: ftp://ftp.informatics.jax.org/pub/reports/MPheno_OBO.ontology
-  method: obo2owl
+  source_url: http://build.berkeleybop.org/job/build-mp-edit/lastSuccessfulBuild/artifact/*zip*/archive.zip
+  path: archive/src/ontology
+  method: archive
   infallible: 1
 description: Standard terms for annotating mammalian phenotypic data.
 homepage: http://www.informatics.jax.org/searches/MP_form.shtml
