@@ -8,6 +8,7 @@ build:
   infallible: 1
 description: Standard terms for annotating mammalian phenotypic data.
 homepage: http://www.informatics.jax.org/searches/MP_form.shtml
+page: https://github.com/obophenotype/mammalian-phenotype-ontology
 contact:
   email: pheno@jax.org
   label: JAX phenotype list
@@ -28,7 +29,7 @@ jobs:
 taxon:
   id: NCBITaxon:10088
   label: Mus
-tracker: https://sourceforge.net/p/obo/mammalian-phenotype-requests/
+tracker: https://github.com/obophenotype/mammalian-phenotype-ontology/issues
 termgenie: http://mp.termgenie.org
 ---
 
