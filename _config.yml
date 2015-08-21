@@ -418,7 +418,7 @@ ontologies:
   id: ehda
   is_obsolete: true
   layout: ontology_detail
-  replaced_by: human-dev-anat-abstract2
+  replaced_by: ehdaa2
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Human developmental anatomy, timed version
 - contact: {email: Jonathan Bard, label: J.Bard@ed.ac.uk}
@@ -426,7 +426,7 @@ ontologies:
   id: ehdaa
   is_obsolete: true
   layout: ontology_detail
-  replaced_by: human-dev-anat-abstract2
+  replaced_by: ehdaa2
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Human developmental anatomy, abstract version
 - build: {checkout: 'git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git',
@@ -536,8 +536,8 @@ ontologies:
   layout: ontology_detail
   title: eVOC (Expressed Sequence Annotation for Humans)
 - build: {method: obo2owl, source_url: 'http://ctdbase.org/reports/CTD_exposure_ontology.obo'}
-  description: ExO is designed to facilitate centralization and integration of exposure
-    data to inform understanding of environmental health.
+  description: Vocabularies for describing exposure data to inform understanding of
+    environmental health.
   domain: health
   homepage: http://ctdbase.org/downloads/#exposures
   id: exo
@@ -701,9 +701,7 @@ ontologies:
   title: Gazetteer
   tracker: http://sourceforge.net/tracker/?func=browse&group_id=76834&atid=1014856
 - contact: {email: MBrochhausen@uams.edu, label: Mathias Brochhausen}
-  description: An ontology of geographical entities implemented in Web Ontology Language
-    2 (OWL2) and based on Basic Formal Ontology (BFO). The developers aim to adhere
-    to the OBO Foundry principles.
+  description: An ontology of geographical entities
   homepage: https://code.google.com/p/ge-ontology/
   id: geo
   layout: ontology_detail
@@ -778,15 +776,16 @@ ontologies:
   title: Hymenoptera Anatomy Ontology
 - build: {checkout: 'git clone https://github.com/BgeeDB/homology-ontology.git', method: vcs,
     path: src/ontology, system: git}
-  contact: {email: julien.roux@unil.ch, label: ''}
+  contact: {email: bgee@isb-sib.ch, label: BgeeDB}
   description: This ontology represents concepts related to homology, as well as other
     concepts used to describe similarity and non-homology.
   homepage: http://bioinfo.unil.ch
   id: hom
   layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   products:
   - {id: hom.owl}
-  title: homology_ontology
+  title: Homology Ontology
   tracker: https://github.com/BgeeDB/homology-ontology/issues
 - alternativePrefix: HPO
   browsers:
@@ -1111,13 +1110,14 @@ ontologies:
   jobs:
   - {id: 'http://build.berkeleybop.org/job/build-mp-edit', type: DryRunBuild}
   layout: ontology_detail
+  page: https://github.com/obophenotype/mammalian-phenotype-ontology
   products:
   - {id: mp.owl}
   - {id: mp.obo}
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   termgenie: http://mp.termgenie.org
   title: Mammalian phenotype
-  tracker: https://sourceforge.net/p/obo/mammalian-phenotype-requests/
+  tracker: https://github.com/obophenotype/mammalian-phenotype-ontology/issues
 - build: {method: obo2owl, source_url: 'http://mpath.googlecode.com/svn/trunk/mpath.obo'}
   contact: {email: PS@mole.bio.cam.ac.uk, label: Paul Schofield}
   description: A structured controlled vocabulary of mutant and transgenic mouse pathology
@@ -1186,14 +1186,19 @@ ontologies:
   layout: ontology_detail
   title: NCI Thesaurus
 - contact: {email: Fahim Imam, label: smtifahim@gmail.com}
+  description: Neuronal cell types
   homepage: http://neuinfo.org/
   id: nif_cell
+  is_obsolete: true
   layout: ontology_detail
+  replaced_by: cl
   title: NIF Cell
 - contact: {email: Fahim Imam, label: smtifahim@gmail.com}
   homepage: http://neuinfo.org/
   id: nif_dysfunction
+  is_obsolete: true
   layout: ontology_detail
+  replaced_by: doid
   title: NIF Dysfunction
 - contact: {email: Fahim Imam, label: smtifahim@gmail.com}
   homepage: http://neuinfo.org/
@@ -1284,8 +1289,9 @@ ontologies:
 - contact: {email: Chris Mungall, label: cjmungall@lbl.gov}
   homepage: http://www.obofoundry.org/ro
   id: obo_rel
+  is_obsolete: true
   layout: ontology_detail
-  taxon: {id: all, label: null}
+  replaced_by: ro
   title: OBO relationship types (legacy)
 - contact: {email: yongqunh@med.umich.edu, label: Yongqun Oliver He}
   description: A formal ontology of genes and genomes of biological organisms.
@@ -1418,7 +1424,9 @@ ontologies:
 - contact: {email: Thorsten Heinrich, label: henrich@embl.de}
   homepage: http://4dx.embl.de/platy
   id: pd_st
+  is_obsolete: true
   layout: ontology_detail
+  replaced_by: pdumdv
   taxon: {id: 'NCBITaxon:6358', label: Platynereis}
   title: Platynereis stage ontology
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/pdumdv/pdumdv.obo'}

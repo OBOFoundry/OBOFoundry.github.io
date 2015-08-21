@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: exo
-description: ExO is designed to facilitate centralization and integration of exposure data to inform understanding of environmental health.
+description: Vocabularies for describing exposure data to inform understanding of environmental health.
 domain: health
 homepage: http://ctdbase.org/downloads/#exposures
 page: http://ctdbase.org/downloads/#exposures

@@ -9,6 +9,8 @@ taxon:
   id: NCBITaxon:6358
   label: Platynereis
 homepage: http://4dx.embl.de/platy
+is_obsolete: true
+replaced_by: pdumdv
 ---
 
 
