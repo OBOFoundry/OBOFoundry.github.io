@@ -19,7 +19,7 @@ title: human phenotype ontology
 build:
   source_url: http://compbio.charite.de/svn/hpo/trunk/src/ontology/human-phenotype-ontology.obo
   method: obo2owl
-tracker: https://sourceforge.net/p/obo/human-phenotype-requests/
+tracker: https://github.com/obophenotype/human-phenotype-ontology/issues/
 termgenie: http://hp.termgenie.org
 browsers:
   - label: HPO
