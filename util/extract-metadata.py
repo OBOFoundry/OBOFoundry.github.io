@@ -65,9 +65,35 @@ def concat_ont_yaml(args):
         (obj, md) = load_md(fn)
         objs.append(obj)
     cfg['ontologies'] = objs
+    decorate_metadata(objs)
     f = open(args.output, 'w') 
     f.write(yaml.dump(cfg))
     return cfg
+
+def decorate_metadata(objs):
+    """
+    See:
+    https://github.com/OBOFoundry/OBOFoundry.github.io/issues/82
+    """
+    for obj in objs:
+        decorate_entry(obj, ".owl")
+        if ('products' in obj):
+            for product in obj['products']:
+                decorate_entry(product)
+
+def decorate_entry(obj, suffix=""):
+    """
+    Decorates either an ontology metadata object or a product object with a purl.
+    
+    Each object has an identifier which either identifies the ontology sensu grouping
+    project (e.g. 'go') or a specific product (e.g. 'go.obo' or 'go.owl').
+
+    By default each id is prefixed with the OBO prefix (unless is has an alternate prefix,
+    in which case it is effectively ignored).
+    """
+    id = obj['id']
+    if (not('uri_prefix' in obj)):
+        obj['ontology_purl'] = "http://purl.obolibrary.org/obo/" + id + suffix
 
 def concat_principles_yaml(args):
     objs = []
