@@ -92,7 +92,7 @@ def decorate_entry(obj, suffix=""):
     in which case it is effectively ignored).
     """
     id = obj['id']
-    if (not('uri_prefix' in obj)):
+    if (not('uri_prefix' in obj) and not('is_obsolete' in obj)):
         obj['ontology_purl'] = "http://purl.obolibrary.org/obo/" + id + suffix
 
 def concat_principles_yaml(args):

@@ -12,7 +12,6 @@ ontologies:
   id: aao
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/aao.owl
   replaced_by: uberon
   taxon: {id: 'NCBITaxon:8292', label: Amphibia}
   title: Amphibian gross anatomy
@@ -21,7 +20,6 @@ ontologies:
   id: adw
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/adw.owl
   title: Animal natural history and life history
 - build: {checkout: 'git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git',
     method: vcs, path: src/ontology, system: git}
@@ -67,7 +65,6 @@ ontologies:
   id: ato
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/ato.owl
   taxon: {id: 'NCBITaxon:8292', label: Amphibia}
   title: Amphibian taxonomy
 - contact: {email: jiezheng@upenn.edu, label: Jie Zheng}
@@ -113,7 +110,6 @@ ontologies:
   id: bila
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/bila.owl
   products:
   - {id: bila.owl, ontology_purl: 'http://purl.obolibrary.org/obo/bila.owl'}
   replaced_by: uberon
@@ -124,7 +120,6 @@ ontologies:
   id: bootstrep
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/bootstrep.owl
   replaced_by: molecular_function
   title: Gene Regulation Ontology
 - build: {checkout: 'git clone https://github.com/obophenotype/biological-spatial-ontology.git',
@@ -337,7 +332,6 @@ ontologies:
   id: dc_cl
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/dc_cl.owl
   replaced_by: cl
   taxon: {id: all, label: null}
   title: Dendritic cell
@@ -460,7 +454,6 @@ ontologies:
   id: ehda
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/ehda.owl
   replaced_by: ehdaa2
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Human developmental anatomy, timed version
@@ -469,7 +462,6 @@ ontologies:
   id: ehdaa
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/ehdaa.owl
   replaced_by: ehdaa2
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Human developmental anatomy, abstract version
@@ -585,7 +577,6 @@ ontologies:
   id: ev
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/ev.owl
   title: eVOC (Expressed Sequence Annotation for Humans)
 - build: {method: obo2owl, source_url: 'http://ctdbase.org/reports/CTD_exposure_ontology.obo'}
   description: Vocabularies for describing exposure data to inform understanding of
@@ -822,14 +813,12 @@ ontologies:
   id: gro
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/gro.owl
   title: Cereal Plant Gross Anatomy
 - contact: {email: Peter Midford, label: peteremidford@yahoo.com}
   homepage: http://www.mesquiteproject.org/ontology/Habronattus/index.html
   id: habronattus
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/habronattus.owl
   title: Habronattus courtship
 - build: {checkout: 'svn co http://obo.svn.sourceforge.net/svnroot/obo/ontologies/trunk/HAO',
     method: vcs, system: svn}
@@ -946,21 +935,18 @@ ontologies:
   - {id: idomal.owl, ontology_purl: 'http://purl.obolibrary.org/obo/idomal.owl'}
   title: Malaria Ontology
 - {homepage: 'http://www.inoh.org', id: iev, is_obsolete: true, layout: ontology_detail,
-  ontology_purl: 'http://purl.obolibrary.org/obo/iev.owl', title: Event (INOH pathway
-    ontology)}
+  title: Event (INOH pathway ontology)}
 - contact: {email: INOH curators, label: curator@inoh.org}
   homepage: http://www.inoh.org
   id: imr
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/imr.owl
   title: Molecule role (INOH Protein name/family name ontology)
 - contact: {email: InterPro Help, label: interhelp@ebi.ac.uk}
   homepage: http://www.ebi.ac.uk/interpro/index.html
   id: ipr
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/ipr.owl
   title: Protein Domains
 - build: {method: owl2obo, source_url: 'http://biomodels.net/kisao/KISAO'}
   contact: {email: lenov@ebi.ac.uk, label: Nicolas Le Novere}
@@ -982,7 +968,6 @@ ontologies:
   in_foundry: false
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/lipro.owl
   products:
   - {id: lipro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/lipro.owl'}
   title: Lipid Ontology
@@ -991,7 +976,6 @@ ontologies:
   id: loggerhead
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/loggerhead.owl
   title: Loggerhead nesting
 - build: {infallible: 1, method: obo2owl, source_url: 'ftp://ftp.informatics.jax.org/pub/reports/adult_mouse_anatomy.obo'}
   contact: {email: Terry.Hayamizu@jax.org, label: Terry Hayamizu}
@@ -1025,14 +1009,12 @@ ontologies:
   id: mao
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/mao.owl
   title: Multiple alignment
 - contact: {email: Jonathan Bard, label: j.bard@ed.ac.uk}
   homepage: null
   id: mat
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/mat.owl
   title: Minimal anatomical terminology
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/mf.owl'}
   contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
@@ -1177,7 +1159,6 @@ ontologies:
   id: mo
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/mo.owl
   page: http://mged.sourceforge.net/software/downloads.php
   products:
   - {id: mo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mo.owl'}
@@ -1303,7 +1284,6 @@ ontologies:
   id: nif_cell
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/nif_cell.owl
   replaced_by: cl
   title: NIF Cell
 - contact: {email: Fahim Imam, label: smtifahim@gmail.com}
@@ -1311,7 +1291,6 @@ ontologies:
   id: nif_dysfunction
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/nif_dysfunction.owl
   replaced_by: doid
   title: NIF Dysfunction
 - contact: {email: Fahim Imam, label: smtifahim@gmail.com}
@@ -1319,7 +1298,6 @@ ontologies:
   id: nif_grossanatomy
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/nif_grossanatomy.owl
   replaced_by: uberon
   title: NIF Gross Anatomy
 - build: {method: owl2obo, source_url: 'https://msi-workgroups.svn.sourceforge.net/svnroot/msi-workgroups/ontology/NMR.owl'}
@@ -1331,7 +1309,6 @@ ontologies:
   id: nmr
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/nmr.owl
   page: http://msi-ontology.sourceforge.net/ontology/NMR.owlDocument.doc
   products:
   - {id: nmr.owl, ontology_purl: 'http://purl.obolibrary.org/obo/nmr.owl'}
@@ -1413,7 +1390,6 @@ ontologies:
   id: obo_rel
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/obo_rel.owl
   replaced_by: ro
   title: OBO relationship types (legacy)
 - contact: {email: yongqunh@med.umich.edu, label: Yongqun Oliver He}
@@ -1526,7 +1502,6 @@ ontologies:
   id: pao
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/pao.owl
   taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
   title: Plant Anatomy Ontology
 - build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo'}
@@ -1563,7 +1538,6 @@ ontologies:
   id: pd_st
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/pd_st.owl
   replaced_by: pdumdv
   taxon: {id: 'NCBITaxon:6358', label: Platynereis}
   title: Platynereis stage ontology
@@ -1580,7 +1554,6 @@ ontologies:
   id: pgdso
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/pgdso.owl
   taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
   title: Plant Growth and Development Stage
 - contact: {email: Matt Berriman, label: mb4@sanger.ac.uk}
@@ -1588,7 +1561,6 @@ ontologies:
   id: plo
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/plo.owl
   title: Plasmodium life cycle
 - build: {infallible: 1, method: obo2owl, notes: switch to vcs method, source_url: 'http://palea.cgrb.oregonstate.edu/viewsvn/Poc/tags/live/plant_ontology.obo?view=co'}
   contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
@@ -1647,7 +1619,6 @@ ontologies:
   id: propreo
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/propreo.owl
   title: Proteomics data and process provenance
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=PW:0000001'}
@@ -1676,7 +1647,6 @@ ontologies:
   id: resid
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/resid.owl
   title: Protein covalent bond
 - build: {method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo'}
   contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
@@ -1762,7 +1732,6 @@ ontologies:
   id: sao
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/sao.owl
   replaced_by: go
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Subcellular anatomy ontology
@@ -1832,7 +1801,6 @@ ontologies:
   id: sopharm
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/sopharm.owl
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Suggested Ontology for Pharmacogenomics
 - build: {method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/animal_gross_anatomy/spider/spider_comparative_biology.obo'}
@@ -1909,7 +1877,6 @@ ontologies:
   id: tahe
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/tahe.owl
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Terminology of Anatomy of Human Embryology
 - contact: {email: Pierre Sprumont, label: pierre.sprumont@unifr.ch}
@@ -1917,7 +1884,6 @@ ontologies:
   id: tahh
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/tahh.owl
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Terminology of Anatomy of Human Histology
 - build: {method: obo2owl, source_url: 'http://purl.obolibrary.org/obo/tao.obo'}
@@ -1929,7 +1895,6 @@ ontologies:
   id: tao
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/tao.owl
   products:
   - {id: tao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/tao.owl'}
   replaced_by: uberon
@@ -2112,7 +2077,6 @@ ontologies:
 - id: vhog
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/vhog.owl
   products:
   - {id: vhog.owl, ontology_purl: 'http://purl.obolibrary.org/obo/vhog.owl'}
   replaced_by: uberon
@@ -2136,7 +2100,6 @@ ontologies:
   id: vsao
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/vsao.owl
   page: https://www.phenoscape.org/wiki/Skeletal_Anatomy_Jamboree
   products:
   - {id: vsao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/vsao.owl'}
@@ -2243,7 +2206,6 @@ ontologies:
   id: ypo
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/ypo.owl
   replaced_by: ascomycete_phenotype
   taxon: {id: 'NCBITaxon:4932', label: Saccharomyces cerevisiae}
   title: Yeast phenotypes
@@ -2252,7 +2214,6 @@ ontologies:
   id: zea
   is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/zea.owl
   taxon: {id: 'NCBITaxon:4575', label: Zea}
   title: Maize gross anatomy
 - build: {infallible: 1, method: obo2owl, notes: may be ready to switch to vcs soon,
