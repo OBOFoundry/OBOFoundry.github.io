@@ -10,7 +10,7 @@ taxon:
   label: Saccharomyces cerevisiae
 homepage: http://www.yeastgenome.org/ 
 is_obsolete: true
-replaced_by: ascomycete_phenotype
+replaced_by: apo
 ---
 
 A structured controlled vocabulary for the phenotypes of budding yeast.
