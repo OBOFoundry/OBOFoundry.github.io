@@ -15,6 +15,7 @@ description: "The Plant Ontology is a structured vocabulary and database resourc
 domain: anatomy and development
 homepage: http://www.plantontology.org
 page: http://www.plantontology.org/docs/docs.html
+twitter: planteome
 tracker: https://github.com/Planteome/plant-ontology/issues
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/23220694

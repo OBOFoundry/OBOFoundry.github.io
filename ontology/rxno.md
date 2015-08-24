@@ -1,4 +1,5 @@
 ---
+layout: ontology_detail
 id: rxno
 contact: 
   email: batchelorc@rsc.org
