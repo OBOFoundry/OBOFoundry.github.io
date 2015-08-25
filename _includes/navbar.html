@@ -31,6 +31,17 @@
         </li>
 
         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Principles <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% for p in site.principles %}
+            <li>
+              <a href="/principles/{{p.id}}.html">{{p.title}}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+
+        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ontologies <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/">Ontology Table</a></li>
