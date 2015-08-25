@@ -48,6 +48,9 @@ validate: $(ONTS)
 # Note this should *not* be run as part of general travis jobs, it is expensive
 # and may be prone to false positives as it is inherently network-based
 #
+# TODO: Other non-travis CI job. Nightly?
+# TODO: Integrate this with some kind of OCLC query check
+#
 # See: https://github.com/OBOFoundry/OBOFoundry.github.io/issues/18
 valid-purl-report.txt: registry/ontologies.yml
 	./util/processor.py -i $< check-urls > $@.tmp && mv $@.tmp $@
