@@ -10,6 +10,7 @@ build:
   method: archive
   infallible: 1
 description: A structured classification of chemical compounds of biological relevance.
+twitter: chebit
 contact:
   email: hastings@ebi.ac.uk
   label: Janna Hastings
