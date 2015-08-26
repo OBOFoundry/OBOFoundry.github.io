@@ -8,6 +8,9 @@ build:
 description: Life cycle stages for Medaka
 homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv
 page: https://github.com/obophenotype/developmental-stage-ontologies
+products:
+  - id: olatdv.obo
+  - id: olatdv.owl
 ---
 
 

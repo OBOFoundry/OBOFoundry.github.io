@@ -17,6 +17,10 @@ contact:
 domain: biochemistry
 homepage: http://www.ebi.ac.uk/chebi
 page: http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual
+browsers:
+  - label: CHEBI
+    title: EBI CHEBI Browser
+    url: http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView
 products:
   - id: chebi.owl
   - id: chebi.obo

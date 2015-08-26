@@ -6,7 +6,7 @@ title: Policy_for_OBO_namespace_and_associated_PURL_requests
 
 **This policy has been formally adopted on April 19th 2013. Do not edit this page without consulting with the OBO Technical group.** Comments to [obo-discuss@lists.sourceforge.net](mailto:obo-discuss@lists.sourceforge.net)
 
-# Background #
+# Background
 
 Identifiers are managed by giving requesting projects a series of numerical ids that have a common prefix, sometimes known as a _namespace_. For example, a project might request and obtain the prefix "MOBO". The ontology would then use ids of the form http://purl.obolibrary.org/obo/MOBO_0000001 , http://purl.obolibrary.org/obo/MOBO_0000002 ...
 
@@ -53,14 +53,15 @@ The requests proceeds in 2 steps:
 
   1. First send an email to [obo-discuss](mailto:obo-discuss@lists.sourceforge.net) with your request to allow community feedback (you may need to [register](https://lists.sourceforge.net/lists/listinfo/obo-discuss) first)
 
-  1. Submit your request to our tracker at http://code.google.com/p/obo-foundry-operations-committee/issues/entry?template=Prefix/Domain%20creation
+  1. Submit your request to [our tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues)
 
 We expect general discussion to take place on the obo-discuss list, while technical follow-up will take place on the tracker.
 
 Example of such request:
-  * CHMO
-    * obo-discuss at http://sourceforge.net/mailarchive/message.php?msg_id=30557802
-    * tracker at http://code.google.com/p/obo-foundry-operations-committee/issues/detail?id=61
+
+ * CHMO
+    * [obo-discuss message](http://sourceforge.net/mailarchive/message.php?msg_id=30557802)
+    * [tracker message](http://code.google.com/p/obo-foundry-operations-committee/issues/detail?id=61) *TODO: update with example from new tracker*
 
 ## Response ##
 
