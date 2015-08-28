@@ -11,7 +11,8 @@ products:
 title: Mathematical modeling ontology
 tracker: http://sourceforge.net/p/mamo-ontology/tickets/
 build:
-  source_url:  https://sourceforge.net/p/mamo-ontology/code/HEAD/tree/tags/latest/mamo-xml.owl?format=raw
+  source_url: https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl
+  method: owl2obo
 license:
   url: http://opensource.org/licenses/Artistic-2.0
   label: Artistic License 2.0
