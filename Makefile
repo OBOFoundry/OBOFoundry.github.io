@@ -4,6 +4,9 @@ ONTS := $(wildcard ontology/*md)
 # All principles .md file
 PRINCIPLES := $(wildcard principles/*md)
 
+# All people .md file
+PEOPLE := $(wildcard people/*md)
+
 all: _config.yml registry/ontologies.yml
 
 test: validate all
@@ -21,7 +24,7 @@ t:
 # `sites` object - think of it like the global database
 #
 # (this is somewhat hacky, but concatenating these yamls is safe)
-_config.yml: _config_header.yml registry/ontologies.yml principles/all.yml
+_config.yml: _config_header.yml registry/ontologies.yml principles/all.yml people/people.yml
 	cat $^ > $@.tmp && mv $@.tmp $@
 
 # Extract metadata from each ontology .md file and combine into single yaml
@@ -32,6 +35,13 @@ registry/ontologies.yml: $(ONTS)
 # into a single yaml file in that directory
 principles/all.yml: $(PRINCIPLES)
 	./util/extract-metadata.py concat-principles -o $@.tmp $^  && mv $@.tmp $@
+
+	# Extract the metadata from each principle in the principles/ directory, and concatenate
+# into a single yaml file in that directory
+people/people.yml: $(PEOPLE)
+	./util/extract-metadata.py concat-people -o $@.tmp $^  && mv $@.tmp $@
+
+
 
 # TODO: add @context
 registry/ontologies.jsonld: registry/ontologies.yml

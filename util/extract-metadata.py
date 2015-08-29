@@ -38,6 +38,13 @@ def main():
     parser_n.set_defaults(function=concat_principles_yaml)
     parser_n.add_argument('files',nargs='*')
 
+    # SUBCOMMAND
+    parser_n = subparsers.add_parser('concat-people', help='concat people yamls')
+    parser_n.add_argument('-i', '--include', help='yml file to include for header')
+    parser_n.add_argument('-o', '--output', help='output yaml')
+    parser_n.set_defaults(function=concat_people_yaml)
+    parser_n.add_argument('files',nargs='*')
+
     args = parser.parse_args()
 
     func = args.function
@@ -108,6 +115,23 @@ def concat_principles_yaml(args):
     f = open(args.output, 'w') 
     f.write(yaml.dump(cfg))
     return cfg
+
+
+def concat_people_yaml(args):
+    objs = []
+    cfg = {}
+    if (args.include):
+        f = open(args.include, 'r') 
+        cfg = yaml.load(f.read())
+    for fn in args.files:
+        (obj, md) = load_md(fn)
+        objs.append(obj)
+    cfg['people'] = objs
+    f = open(args.output, 'w') 
+    f.write(yaml.dump(cfg))
+    return cfg
+
+
 
 def load_md(fn):
     f = open(fn, 'r') 

@@ -1,0 +1,22 @@
+<table class="table">
+	<tbody>
+		{% for people in site.people %}
+		<tr>
+			<td>
+				{% if people.lastname %}
+				<a href="mailto:{{people.email}}">{{people.firstname}} {{people.lastname}}</a> 
+				<a href="people/{{people.lastname}}.html">
+					<button type="button" class="btn btn-default" aria-label="Left Align" title="More details">
+						<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+					</button>
+				</a>
+				{% endif %}
+			</td>
+
+
+
+		</tr>
+
+		{% endfor %}
+	</tbody>
+</table>
