@@ -190,6 +190,8 @@ ontologies:
   title: Cephalopod Ontology
   tracker: https://github.com/obophenotype/cephalopod-ontology/issues
 - alternatePrefix: ChEBI
+  browsers:
+  - {label: CHEBI, title: EBI CHEBI Browser, url: 'http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView'}
   build: {infallible: 1, method: archive, path: archive/main, source_url: 'http://build.berkeleybop.org/job/build-chebi/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
   contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
   description: A structured classification of chemical compounds of biological relevance.
@@ -205,6 +207,7 @@ ontologies:
   - {id: chebi.obo, ontology_purl: 'http://purl.obolibrary.org/obo/chebi.obo'}
   title: Chemical entities of biological interest
   tracker: https://sourceforge.net/p/chebi/curator-requests/
+  twitter: chebit
 - build: {method: owl2obo, source_url: 'http://semanticchemistry.googlecode.com/svn/trunk/ontology/cheminf.owl'}
   contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
   description: Includes terms for the descriptors commonly used in cheminformatics
@@ -672,19 +675,18 @@ ontologies:
   title: Drosophila development
   tracker: http://purl.obolibrary.org/obo/fbdv/tracker
 - build: {method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/fly_taxonomy.obo'}
-  contact: {email: ma11@gen.cam.ac.uk, label: Michael Ashburner}
+  contact: {email: mmc46@gen.cam.ac.uk, label: Marta Costa}
   description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli)
     and of other taxa referred to in FlyBase.
   domain: taxonomy
   homepage: http://www.flybase.org/
   id: fbsp
+  is_obsolete: true
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/fbsp.owl
   products:
   - {id: fbsp.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fbsp.owl'}
   taxon: {id: 'NCBITaxon:7227', label: Drosophila}
   title: Fly taxonomy
-  tracker: https://cedar.bio.indiana.edu/trac/env/ontologies/wiki/PublicWikiStart
 - contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
   description: An ontology of physico-chemical methods and properties.
   id: fix
@@ -706,7 +708,7 @@ ontologies:
   - {id: flu.owl, ontology_purl: 'http://purl.obolibrary.org/obo/flu.owl'}
   title: Influenza Ontology
   tracker: http://purl.obolibrary.org/obo/flu/tracker
-- build: {infallible: 1, method: obo2owl, source_url: 'http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo'}
+- build: {method: obo2owl, source_url: 'http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo'}
   contact: {email: mejino@comcast.net, label: Onard Mejino}
   description: This is currently a slimmed down version of FMA
   domain: anatomy
@@ -940,7 +942,7 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   title: Protein Domains
-- build: {method: owl2obo, source_url: 'http://biomodels.net/kisao/KISAO'}
+- build: {method: owl2obo, source_url: 'http://svn.code.sf.net/p/kisao/code/tags/kisao-owl-latest/kisao.owl'}
   contact: {email: lenov@ebi.ac.uk, label: Nicolas Le Novere}
   description: A classification of algorithms available for the simulation of models
     in biology.
@@ -948,6 +950,7 @@ ontologies:
   homepage: http://biomodels.net/kisao
   id: kisao
   layout: ontology_detail
+  license: {label: Artistic License 2.0, url: 'http://opensource.org/licenses/Artistic-2.0'}
   ontology_purl: http://purl.obolibrary.org/obo/kisao.owl
   products:
   - {id: kisao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/kisao.owl'}
@@ -984,13 +987,15 @@ ontologies:
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse adult gross anatomy
   tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
-- contact: {email: n.lenovere@gmail.com, label: Nicolas Le Novere}
+- build: {method: owl2obo, source_url: 'https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl'}
+  contact: {email: n.lenovere@gmail.com, label: Nicolas Le Novere}
   description: The Mathematical Modelling Ontology (MAMO) is a classification of the
     types of mathematical models used mostly in the life sciences, their variables,
     relationships and other relevant features.
-  homepage: http://sourceforge.net/projects/mamo-ontology/
+  homepage: http://sourceforge.net/p/mamo-ontology/wiki/Home/
   id: mamo
   layout: ontology_detail
+  license: {label: Artistic License 2.0, url: 'http://opensource.org/licenses/Artistic-2.0'}
   ontology_purl: http://purl.obolibrary.org/obo/mamo.owl
   products:
   - {id: mamo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mamo.owl'}
@@ -1436,6 +1441,9 @@ ontologies:
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/olatdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
+  products:
+  - {id: olatdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/olatdv.obo'}
+  - {id: olatdv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/olatdv.owl'}
   title: Medaka Developmental Stages
 - contact: {email: huang@southalabama.edu, label: 'Huang, Jingshan'}
   homepage: http://omit.cis.usouthal.edu/
@@ -1576,6 +1584,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
   title: Plant Ontology
   tracker: https://github.com/Planteome/plant-ontology/issues
+  twitter: planteome
 - build: {checkout: 'git clone https://github.com/obophenotype/porifera-ontology.git',
     infallible: 1, method: vcs, path: ., system: git}
   contact: {email: robert.thacker@stonybrook.edu, label: Bob Thacker}
@@ -1715,6 +1724,7 @@ ontologies:
     and to processes in MOP
   homepage: https://code.google.com/p/rxno/
   id: rxno
+  layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/rxno.owl
   products:
   - {id: rxno.owl, ontology_purl: 'http://purl.obolibrary.org/obo/rxno.owl', title: Name
@@ -1728,18 +1738,19 @@ ontologies:
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Subcellular anatomy ontology
 - build: {method: obo2owl, source_url: 'http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo'}
-  contact: {email: lenov@ebi.ac.uk, label: Nicolas Le Novere}
+  contact: {email: n.lenovere@gmail.com, label: Nicolas Le Novere}
   description: Terms commonly used in Systems Biology, and in particular in computational
     modeling.
   domain: biochemistry
   homepage: http://www.ebi.ac.uk/sbo/
   id: sbo
   layout: ontology_detail
+  license: {label: Artistic License 2.0, url: 'http://opensource.org/licenses/Artistic-2.0'}
   ontology_purl: http://purl.obolibrary.org/obo/sbo.owl
   products:
   - {id: sbo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/sbo.owl'}
   title: Systems Biology
-  tracker: http://sourceforge.net/tracker/?group_id=174625&atid=871591
+  tracker: https://sourceforge.net/p/sbo/term-request/
 - build: {method: obo2owl, source_url: 'http://gelml.googlecode.com/svn/trunk/CV/sep.obo'}
   contact: {email: psidev-gps-dev@lists.sourceforge.net, label: SEP developers via
       the PSI and MSI mailing lists}
@@ -1831,7 +1842,7 @@ ontologies:
   title: STATistics Ontology
   tracker: https://github.com/ISA-tools/stato/issues
 - build: {method: owl2obo, source_url: 'http://theswo.svn.sourceforge.net/viewvc/theswo/trunk/src/release/swoinowl/swo_merged/swo_merged.owl'}
-  contact: {email: malone@ebi.ac.uk, label: James Malone}
+  contact: {email: parkinson@ebi.ac.uk, label: Helen Parkinson}
   homepage: www.ebi.ac.uk/efo/swo
   id: swo
   layout: ontology_detail
@@ -2198,7 +2209,7 @@ ontologies:
   id: ypo
   is_obsolete: true
   layout: ontology_detail
-  replaced_by: ascomycete_phenotype
+  replaced_by: apo
   taxon: {id: 'NCBITaxon:4932', label: Saccharomyces cerevisiae}
   title: Yeast phenotypes
 - contact: {email: Leszek Vincent, label: Leszek@missouri.edu}
