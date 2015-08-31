@@ -6,7 +6,7 @@ contact:
   label: Wasila Dahdul
 description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa
 domain: anatomy
-homepage: https://www.nescent.org/phenoscape/Main_Page
+homepage: http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology
 products:
   - id: tao.owl
 taxon:
