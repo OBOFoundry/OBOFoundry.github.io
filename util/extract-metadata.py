@@ -46,7 +46,15 @@ def main():
 
 def validate_markdown(args):
     """
-    ensure the yaml encoded inside a YAML file is syntactically valid
+    Ensure the yaml encoded inside a YAML file is syntactically valid.
+
+    First attempt to strip the yaml from the .md file, second use the standard python yaml parser
+    to parse the embedded yaml. If it can't be passed then an error will be thrown and a stack
+    trace shown. In future we may try and catch this error and provide a user-friendly report).
+    
+    In future we also perform additional structural validation on the yaml - check certain fields
+    are present etc. This could be done in various ways, e.g. jsonschema, programmatic checks. We
+    should also check translation -> jsonld -> rdf works as expected.
     """
     for fn in args.files:
         print("VALIDATING:"+fn)
@@ -109,13 +117,24 @@ def concat_principles_yaml(args):
     f.write(yaml.dump(cfg))
     return cfg
 
+
 def load_md(fn):
+    """
+    Load a yaml text blob from a markdown file and parse the blob.
+
+    Returns a tuple (yaml_obj, markdown_text)
+    """
     f = open(fn, 'r') 
     text = f.read() 
     return extract(text)
     
 
 def extract(mdtext):
+    """
+    Extract a yaml text blob from markdown text and parse the blob.
+
+    Returns a tuple (yaml_obj, markdown_text)
+    """
     lines = mdtext.split("\n")
     n = 0
     ylines = []
