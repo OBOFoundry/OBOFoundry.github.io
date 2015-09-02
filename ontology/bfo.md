@@ -7,7 +7,8 @@ contact:
 description: The upper level ontology upon which OBO Foundry ontologies are built.
 domain: upper
 homepage: http://ifomis.org/bfo/
-page: http://ifomis.org/bfo/
+mailing_list: https://groups.google.com/forum/#!forum/bfo-discuss
+tracker: https://github.com/BFO-ontology/BFO/issues
 products:
   - id: bfo.owl
   - id: bfo.obo
