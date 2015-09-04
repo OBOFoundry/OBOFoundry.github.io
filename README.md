@@ -173,6 +173,12 @@ A  http://berkeleybop.org/ontologies/ URL should never be handed out directly. T
  * Un PURL-registered ontologies will have a fall-through
  * Registered PURL ontologies that do not want to take charge of either OBO or OWL generation will have a place to 302-redirect to
 
+This job will fail if ontologies marked as `infallible` fail. To debug, the full log of the last build can be examined:
+
+ * https://build.berkeleybop.org/job/simple-build-obo-all/lastBuild/consoleFull
+
+(Look for the text "should not fail")
+
 ## Adding news
 
 Simply add a post to the [_posts/](_posts/) directory - copy an exiting one if you like

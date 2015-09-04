@@ -6,6 +6,9 @@ contact:
   label: Colin Batchelor
 description: Connects organic name reactions to their roles in an organic synthesis and to processes in MOP
 homepage: https://github.com/rsc-ontologies/rxno
+build:
+  source_url: https://raw.githubusercontent.com/rsc-ontologies/rxno/master/rxno.owl
+  method: owl2obo
 products: 
   - id: rxno.owl
     title: Name Reaction Ontology
