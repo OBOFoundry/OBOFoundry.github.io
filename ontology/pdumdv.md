@@ -8,6 +8,9 @@ build:
 description: Life cycle stages for Mus Musculus
 homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv
 page: https://github.com/obophenotype/developmental-stage-ontologies
+products:
+  - id: pdumdv.owl
+  - id: pdumdv.obo
 ---
 
 

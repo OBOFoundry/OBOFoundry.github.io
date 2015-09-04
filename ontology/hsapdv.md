@@ -9,6 +9,9 @@ build:
 description: Life cycle stages for Human
 homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv
 page: https://github.com/obophenotype/developmental-stage-ontologies
+products:
+  - id: hsapdv.owl
+  - id: hsapdv.obo
 ---
 
 HsapDv was developed by the Bgee group with assistance from the core Uberon developers and the Human developmental anatomy ontology (EHDAA2) developers.

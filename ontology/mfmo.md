@@ -18,6 +18,8 @@ contact:
   label: Robert Druzinsky
 dependencies:
  - id: uberon
+products:
+  - id: mfmo.owl
 ---
 
 ADD DESCRIPTION HERE

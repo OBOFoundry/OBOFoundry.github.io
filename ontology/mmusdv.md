@@ -8,6 +8,9 @@ build:
 description: Life cycle stages for Mus Musculus
 homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/MmusDv
 page: https://github.com/obophenotype/developmental-stage-ontologies
+products:
+  - id: mmusdv.owl
+  - id: mmusdv.obo
 ---
 
 MmusDv was developed by the Bgee group with assistance from the core Uberon developers and the Mouse anatomy ontology developers.
