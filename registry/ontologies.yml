@@ -525,7 +525,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse gross anatomy and development, timed
 - build: {checkout: 'git clone https://github.com/EnvironmentOntology/envo.git', email_cc: cjmungall@lbl.gov,
-    infallible: 1, method: vcs, path: src/envo, system: git}
+    infallible: 1, method: vcs, path: ., system: git}
   contact: {email: p.buttigieg@googlemail.com, label: Pier Luigi Buttigieg}
   description: Ontology of environmental features and habitats
   domain: environment
@@ -1196,7 +1196,8 @@ ontologies:
   products:
   - {id: mod.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mod.owl'}
   title: Protein modification
-- contact: {email: batchelorc@rsc.org, label: Colin Batchelor}
+- build: {method: owl2obo, source_url: 'https://raw.githubusercontent.com/rsc-ontologies/rxno/master/mop.owl'}
+  contact: {email: batchelorc@rsc.org, label: Colin Batchelor}
   description: Processes at the molecular level
   homepage: https://github.com/rsc-ontologies/rxno
   id: mop
@@ -1746,7 +1747,8 @@ ontologies:
       at RGD.'}
   taxon: {id: 'NCBITaxon:10114', label: Rattus}
   title: Rat Strain Ontology
-- contact: {email: batchelorc@rsc.org, label: Colin Batchelor}
+- build: {method: owl2obo, source_url: 'https://raw.githubusercontent.com/rsc-ontologies/rxno/master/rxno.owl'}
+  contact: {email: batchelorc@rsc.org, label: Colin Batchelor}
   description: Connects organic name reactions to their roles in an organic synthesis
     and to processes in MOP
   homepage: https://github.com/rsc-ontologies/rxno
