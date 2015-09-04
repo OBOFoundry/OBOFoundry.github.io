@@ -84,17 +84,20 @@ ontologies:
   title: Biological Collections Ontology
   tracker: https://github.com/tucotuco/bco/issues
 - contact: {email: phismith@buffalo.edu, label: Barry Smith}
-  depicted_by: https://code.google.com/p/bfo/logo?cct=1426583016
+  depicted_by: https://avatars2.githubusercontent.com/u/12972134?v=3&s=200
   description: The upper level ontology upon which OBO Foundry ontologies are built.
   domain: upper
   homepage: http://ifomis.org/bfo/
   id: bfo
   layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  mailing_list: https://groups.google.com/forum/#!forum/bfo-discuss
   ontology_purl: http://purl.obolibrary.org/obo/bfo.owl
-  page: http://ifomis.org/bfo/
   products:
   - {id: bfo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/bfo.owl'}
+  - {id: bfo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/bfo.obo'}
   title: Basic Formal Ontology
+  tracker: https://github.com/BFO-ontology/BFO/issues
 - build: {method: obo2owl, source_url: 'http://4dx.embl.de/4DXpress_4d/edocs/bilateria_mrca.obo'}
   contact: {email: henrich@embl.de, label: Thorsten Heinrich}
   domain: anatomy
@@ -247,9 +250,19 @@ ontologies:
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
   ontology_purl: http://purl.obolibrary.org/obo/cl.owl
   products:
-  - {id: cl.owl, ontology_purl: 'http://purl.obolibrary.org/obo/cl.owl'}
-  - {id: cl.obo, ontology_purl: 'http://purl.obolibrary.org/obo/cl.obo'}
-  - {id: cl/cl-basic.obo, ontology_purl: 'http://purl.obolibrary.org/obo/cl/cl-basic.obo'}
+  - description: Complete ontology, plus inter-ontology axioms, and imports modules
+    format: owl-rdf/xml
+    id: cl.owl
+    is_canonical: true
+    ontology_purl: http://purl.obolibrary.org/obo/cl.owl
+    title: Main CL OWL edition
+    uses: [uberon, chebi, go, pr, pato]
+  - {derived_from: cl.owl, description: 'Complete ontology, plus inter-ontology axioms,
+      and imports modules merged in', format: obo, id: cl.obo, ontology_purl: 'http://purl.obolibrary.org/obo/cl.obo',
+    title: CL obo format edition}
+  - {description: 'Basic version, no inter-ontology axioms', format: obo, id: cl/cl-basic.obo,
+    ontology_purl: 'http://purl.obolibrary.org/obo/cl/cl-basic.obo', title: Basic
+      CL}
   taxon: {id: 'NCBITaxon:33208', label: Metazoa}
   termgenie: http://cl.termgenie.org
   title: Cell Ontology
@@ -271,7 +284,6 @@ ontologies:
   homepage: https://code.google.com/p/craniomaxillofacial-ontology/
   id: cmf
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/cmf.owl
   title: CranioMaxilloFacial ontology
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=CMO:0000000'}
@@ -366,6 +378,8 @@ ontologies:
   id: dideo
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/dideo.owl
+  products:
+  - {id: dideo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/dideo.owl'}
   title: Drug Interaction and Evidence Ontology
   tracker: https://github.com/DIDEO/DIDEO/issues
 - contact: {email: Maria Herrero, label: mhzazo@pa.uc3m.es}
@@ -373,6 +387,8 @@ ontologies:
   id: dinto
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/dinto.owl
+  products:
+  - {id: dinto.owl, ontology_purl: 'http://purl.obolibrary.org/obo/dinto.owl'}
   title: The Drug-drug Interaction Ontology
 - browsers:
   - {label: DO, title: DO Browser, url: 'http://www.disease-ontology.org/'}
@@ -877,6 +893,9 @@ ontologies:
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/hsapdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
+  products:
+  - {id: hsapdv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/hsapdv.owl'}
+  - {id: hsapdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/hsapdv.obo'}
   title: Human Developmental Stages
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/iao.owl'}
   contact: {email: alanruttenberg@gmail.com, label: Alan Ruttenberg}
@@ -902,7 +921,6 @@ ontologies:
   homepage: https://code.google.com/p/ico-ontology/
   id: ico
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/ico.owl
   title: Informed Consent Ontology
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/ido.owl'}
   contact: {email: Lindsay.Cowell@utsouthwestern.edu, label: Lindsay Cowell}
@@ -1035,6 +1053,8 @@ ontologies:
   layout: ontology_detail
   license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/mfmo.owl
+  products:
+  - {id: mfmo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mfmo.owl'}
   repository: https://github.com/RDruzinsky/feedontology
   taxon: {id: 'NCBITaxon:40674', label: Mammalian}
   title: Mammalian Feeding Muscle Ontology
@@ -1147,6 +1167,9 @@ ontologies:
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mmusdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
+  products:
+  - {id: mmusdv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mmusdv.owl'}
+  - {id: mmusdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/mmusdv.obo'}
   title: Mouse Developmental Stages
 - contact: {email: stoeckrt@pcbi.upenn.edu, label: Chris Stoeckert}
   description: A standardized description of a microarray experiment in support of
@@ -1175,7 +1198,7 @@ ontologies:
   title: Protein modification
 - contact: {email: batchelorc@rsc.org, label: Colin Batchelor}
   description: Processes at the molecular level
-  homepage: https://code.google.com/p/rxno/
+  homepage: https://github.com/rsc-ontologies/rxno
   id: mop
   ontology_purl: http://purl.obolibrary.org/obo/mop.owl
   products:
@@ -1459,7 +1482,6 @@ ontologies:
   domain: phenotype
   id: omp
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/omp.owl
   title: Ontology of Microbial Phenotypes
 - build: {method: owl2obo, source_url: 'http://omrse.googlecode.com/svn/trunk/omrse/omrse.owl'}
   contact: {email: hoganwr@gmail.com, label: Bill Hogan}
@@ -1490,6 +1512,8 @@ ontologies:
   id: ovae
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/ovae.owl
+  products:
+  - {id: ovae.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ovae.owl'}
   title: Ontology of Vaccine Adverse Events
 - id: ovao
   layout: ontology_detail
@@ -1548,6 +1572,9 @@ ontologies:
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/pdumdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
+  products:
+  - {id: pdumdv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/pdumdv.owl'}
+  - {id: pdumdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/pdumdv.obo'}
   title: Platynereis Developmental Stages
 - contact: {email: Plant Ontology Administrators, label: po-discuss@plantontology.org}
   homepage: http://www.plantontology.org
@@ -1722,7 +1749,7 @@ ontologies:
 - contact: {email: batchelorc@rsc.org, label: Colin Batchelor}
   description: Connects organic name reactions to their roles in an organic synthesis
     and to processes in MOP
-  homepage: https://code.google.com/p/rxno/
+  homepage: https://github.com/rsc-ontologies/rxno
   id: rxno
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/rxno.owl
@@ -1894,7 +1921,7 @@ ontologies:
   description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but
     intended to cover terms relevant to other taxa
   domain: anatomy
-  homepage: https://www.nescent.org/phenoscape/Main_Page
+  homepage: http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology
   id: tao
   is_obsolete: true
   layout: ontology_detail
@@ -2065,7 +2092,6 @@ ontologies:
 - build: {method: archive, path: archive/ontology, source_url: 'http://build.berkeleybop.org/job/build-pheno-ontologies/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
   id: upheno
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/upheno.owl
   title: Combined phenotype ontology
 - build: {method: obo2owl, source_url: 'http://variationontology.org/vario_download/vario.obo'}
   description: Variation Ontology, VariO, is an ontology for standardized, systematic
