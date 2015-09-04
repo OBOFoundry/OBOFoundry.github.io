@@ -42,6 +42,14 @@ def main():
     func = args.function
     func(ontologies, args)
 
+def test_url(url):
+    print("Checking: "+url)
+    resp = requests.get(url)
+    # TODO: redirects
+    ok = resp.status_code == 200
+    print("IS_OK " + url  + " "+str(ok))
+    sys.stdout.flush()
+    return ok
 
 def check_urls(ontologies, args):
     """
@@ -52,18 +60,12 @@ def check_urls(ontologies, args):
     for ont in ontologies:
         id = ont['id']
         print("Checking:"+id)
-        # TODO: always check canonical purl?
-        for p in ont['products']:
-            pid = p['id']
-            url = get_obo_purl(pid)
-            print("Checking: "+url)
-            resp = requests.get(url)
-            # TODO: redirects
-            ok = resp.status_code == 200
-            print("IS_OK " + id + " " + pid  + " "+str(ok))
-            sys.stdout.flush()
-            if (not ok):
-                failed_ids.append(pid)
+        if 'products' in ont:
+            for p in ont['products']:
+                pid = p['id']
+                if 'ontology_purl' in p:
+                    if not test_url(p['ontology_purl']):
+                        failed_ids.append(pid)
     if (len(failed_ids) > 0):
         print("FAILURES:")
         for pid in failed_ids:
