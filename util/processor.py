@@ -7,6 +7,7 @@ import logging
 import requests
 import sys
 import os
+from contextlib import closing
 
 #from yaml import load, dump
 #from yaml import Loader, Dumper
@@ -44,10 +45,11 @@ def main():
 
 def test_url(url):
     print("Checking: "+url)
-    resp = requests.get(url)
-    # TODO: redirects
-    ok = resp.status_code == 200
-    print("IS_OK " + url  + " "+str(ok))
+    with closing(requests.get(url, stream=False)) as resp:
+        print("  Got response for: "+url)
+        # TODO: redirects
+        ok = resp.status_code == 200
+        print("IS_OK " + url  + " "+str(ok))
     sys.stdout.flush()
     return ok
 
