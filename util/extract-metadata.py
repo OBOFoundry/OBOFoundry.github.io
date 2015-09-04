@@ -84,14 +84,15 @@ def decorate_metadata(objs):
     https://github.com/OBOFoundry/OBOFoundry.github.io/issues/82
     """
     for obj in objs:
-        decorate_entry(obj, ".owl")
         if ('products' in obj):
+            # decorate top-level ontology; but only if it has at least one product
+            decorate_entry(obj, ".owl")
             for product in obj['products']:
                 decorate_entry(product)
 
 def decorate_entry(obj, suffix=""):
     """
-    Decorates either an ontology metadata object or a product object with a purl.
+    Decorates EITHER an ontology metadata object OR a product object with a purl.
     
     Each object has an identifier which either identifies the ontology sensu grouping
     project (e.g. 'go') or a specific product (e.g. 'go.obo' or 'go.owl').
@@ -100,8 +101,16 @@ def decorate_entry(obj, suffix=""):
     in which case it is effectively ignored).
     """
     id = obj['id']
-    if (not('uri_prefix' in obj) and not('is_obsolete' in obj)):
-        obj['ontology_purl'] = "http://purl.obolibrary.org/obo/" + id + suffix
+    if not('is_obsolete' in obj):
+        if has_obo_prefix(obj):
+            obj['ontology_purl'] = "http://purl.obolibrary.org/obo/" + id + suffix
+
+
+def has_obo_prefix(obj):
+    return ('uri_prefix' not in obj) or (obj['uri_prefix'] == 'http://purl.obolibrary.org/obo/')
+
+def has_a_product(obj):
+    return 'products' in obj and len(obj['products']) > 0
 
 def concat_principles_yaml(args):
     objs = []
