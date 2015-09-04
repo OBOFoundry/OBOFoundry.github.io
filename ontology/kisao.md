@@ -2,8 +2,8 @@
 layout: ontology_detail
 id: kisao
 contact:
-  email: lenov@ebi.ac.uk
-  label: Nicolas Le Novere
+  email: biomodels-net-support@lists.sf.net
+  label: The Biomodels.net team
 description: A classification of algorithms available for the simulation of models in biology.
 domain: algorithms
 homepage: http://biomodels.net/kisao
