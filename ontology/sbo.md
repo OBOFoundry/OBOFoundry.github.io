@@ -2,8 +2,8 @@
 layout: ontology_detail
 id: sbo
 contact:
-  email: n.lenovere@gmail.com
-  label: Nicolas Le Novere
+  email: biomodels-net-support@lists.sf.net
+  label: The Biomodels.net team
 description: Terms commonly used in Systems Biology, and in particular in computational modeling.
 domain: biochemistry
 homepage: http://www.ebi.ac.uk/sbo/
