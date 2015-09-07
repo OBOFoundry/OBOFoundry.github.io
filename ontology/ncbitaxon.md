@@ -5,9 +5,9 @@ preferredPrefix: NCBITaxon
 title: NCBI organismal classification
 build:
   source_url: http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip
-  path: archive/src/ontology
+  path: archive
   method: archive
-  infallible: 0
+  infallible: 1
 contact:
   email: obo-taxonomy@lists.sourceforge.net
   label: obo-taxonomy-list
