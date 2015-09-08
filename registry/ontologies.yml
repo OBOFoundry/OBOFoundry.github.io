@@ -83,7 +83,9 @@ ontologies:
   - {id: bco.owl, ontology_purl: 'http://purl.obolibrary.org/obo/bco.owl'}
   title: Biological Collections Ontology
   tracker: https://github.com/tucotuco/bco/issues
-- contact: {email: phismith@buffalo.edu, label: Barry Smith}
+- browsers:
+  - {label: BioPortal, title: BioPortal Browser, url: 'http://bioportal.bioontology.org/ontologies/BFO?p=classes'}
+  contact: {email: phismith@buffalo.edu, label: Barry Smith}
   depicted_by: https://avatars2.githubusercontent.com/u/12972134?v=3&s=200
   description: The upper level ontology upon which OBO Foundry ontologies are built.
   domain: upper
@@ -400,6 +402,7 @@ ontologies:
   domain: health
   homepage: http://diseaseontology.sourceforge.net/
   id: doid
+  in_foundry_order: 1
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/doid.owl
   page: http://diseaseontology.sourceforge.net/
@@ -961,7 +964,7 @@ ontologies:
   layout: ontology_detail
   title: Protein Domains
 - build: {method: owl2obo, source_url: 'http://svn.code.sf.net/p/kisao/code/tags/kisao-owl-latest/kisao.owl'}
-  contact: {email: lenov@ebi.ac.uk, label: Nicolas Le Novere}
+  contact: {email: biomodels-net-support@lists.sf.net, label: The Biomodels.net team}
   description: A classification of algorithms available for the simulation of models
     in biology.
   domain: algorithms
@@ -1006,7 +1009,7 @@ ontologies:
   title: Mouse adult gross anatomy
   tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
 - build: {method: owl2obo, source_url: 'https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl'}
-  contact: {email: n.lenovere@gmail.com, label: Nicolas Le Novere}
+  contact: {email: biomodels-net-support@lists.sf.net, label: The Biomodels.net team}
   description: The Mathematical Modelling Ontology (MAMO) is a classification of the
     types of mathematical models used mostly in the life sciences, their variables,
     relationships and other relevant features.
@@ -1273,7 +1276,7 @@ ontologies:
   tracker: http://code.google.com/p/behavior-ontology/issues/list
 - browsers:
   - {label: NCBI, title: NCBI Taxonomy Browser, url: 'http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi'}
-  build: {infallible: 0, method: archive, path: archive/src/ontology, source_url: 'http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
+  build: {infallible: 1, method: archive, path: archive, source_url: 'http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
   contact: {email: obo-taxonomy@lists.sourceforge.net, label: obo-taxonomy-list}
   createdWith: http://owltools.googlecode.com/
   description: An ontology representation of the NCBI organismal taxonomy
@@ -1767,7 +1770,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Subcellular anatomy ontology
 - build: {method: obo2owl, source_url: 'http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo'}
-  contact: {email: n.lenovere@gmail.com, label: Nicolas Le Novere}
+  contact: {email: biomodels-net-support@lists.sf.net, label: The Biomodels.net team}
   description: Terms commonly used in Systems Biology, and in particular in computational
     modeling.
   domain: biochemistry
