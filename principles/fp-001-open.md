@@ -156,7 +156,7 @@ considered valid ontology axioms.
 
 ```
  \<dc:license
-rdf:resource="[http://creativecommons.org/licenses/by/4.0/"/\>](http://creativecommons.org/licenses/by/4.0/"/>)
+rdf:resource="http://creativecommons.org/licenses/by/4.0/"/> 
 
 \<rdfs:comment xml:lang="en"\>"Ontology name" by "developer groups" is
 licensed under CC BY 4.0
