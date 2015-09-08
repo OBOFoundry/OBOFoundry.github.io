@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: doid
+in_foundry_order: 1
 contact:
   email: lynn.schriml@gmail.com
   label: Lynn Schriml

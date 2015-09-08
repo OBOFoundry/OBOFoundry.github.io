@@ -45,6 +45,9 @@ def main():
 
 def test_url(url):
     print("Checking: "+url)
+    if (url.startswith("ftp:")):
+        # TODO: requests lib doesn't handle ftp
+        return True
     with closing(requests.get(url, stream=False)) as resp:
         print("  Got response for: "+url)
         # TODO: redirects
