@@ -27,6 +27,9 @@ jobs:
     type: ReleaseBuild
 products:
   - id: ncbitaxon.owl
+    title: Main release
+  - id: ncbitaxon.obo
+    title: OBO Format version of Main release
   - id: ncbitaxon/subsets/taxslim.owl
     title: taxslim
 ---
