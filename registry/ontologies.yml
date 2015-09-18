@@ -249,6 +249,7 @@ ontologies:
   integration_server: http://build.berkeleybop.org/job/build-cl/
   label: Cell Ontology
   layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
   ontology_purl: http://purl.obolibrary.org/obo/cl.owl
   products:
@@ -544,22 +545,23 @@ ontologies:
       contextualising biological and biomedical entities'}
   title: Environment Ontology
   tracker: https://github.com/EnvironmentOntology/envo/issues/
-- build: {method: obo2owl, source_url: 'http://palea.cgrb.oregonstate.edu/viewsvn/Poc/trunk/ontology/collaborators_ontology/plant_environment/environment_ontology.obo'}
+- build: {method: obo2owl, source_url: 'https://github.com/Planteome/plant-environment-ontology/blob/master/plant-environment-ontology.obo.owl'}
   contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
-  description: A structured, controlled vocabulary for the representation of plant
-    environmental conditions.
+  description: "A structured, controlled vocabulary which \u2260\u2260describes the\
+    \ treatments, growing conditions, and/or study types used in various types of\
+    \ plant biology experiments."
   domain: environment
-  homepage: http://www.gramene.org
+  homepage: http://planteome.org/
   id: eo
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/eo.owl
-  page: http://www.gramene.org/plant_ontology/index.html#eo
+  page: http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=EO:0007359&session_id=815amigo1442021959
   products:
   - {id: eo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/eo.owl'}
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/22847540', title: Ontologies as integrative
       tools for plant science.}
-  title: Plant Environmental Conditions
+  title: Plant Environment Ontology
   tracker: https://github.com/Planteome/plant-environment-ontology/issues
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/epo.owl'}
   description: An ontology designed to support the semantic annotation of epidemiology
@@ -1290,7 +1292,10 @@ ontologies:
   page: http://www.ncbi.nlm.nih.gov/taxonomy
   preferredPrefix: NCBITaxon
   products:
-  - {id: ncbitaxon.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ncbitaxon.owl'}
+  - {id: ncbitaxon.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ncbitaxon.owl',
+    title: Main release}
+  - {id: ncbitaxon.obo, ontology_purl: 'http://purl.obolibrary.org/obo/ncbitaxon.obo',
+    title: OBO Format version of Main release}
   - {id: ncbitaxon/subsets/taxslim.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl',
     title: taxslim}
   source: http://www.ncbi.nlm.nih.gov/taxonomy
@@ -1593,7 +1598,7 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   title: Plasmodium life cycle
-- build: {infallible: 1, method: obo2owl, notes: switch to vcs method, source_url: 'http://palea.cgrb.oregonstate.edu/viewsvn/Poc/tags/live/plant_ontology.obo?view=co'}
+- build: {infallible: 1, method: obo2owl, notes: switch to vcs method, source_url: 'https://github.com/Planteome/plant-ontology/blob/master/po-release-files/plant_ontology.owl'}
   contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
   description: The Plant Ontology is a structured vocabulary and database resource
     that links plant anatomy, morphology and growth and development to plant genomics
@@ -1604,7 +1609,7 @@ ontologies:
   in_foundry_order: 1
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/po.owl
-  page: http://www.plantontology.org/docs/docs.html
+  page: http://www.plantontology.org/amigo/go.cgi
   products:
   - {id: po.owl, ontology_purl: 'http://purl.obolibrary.org/obo/po.owl'}
   publications:
@@ -1959,15 +1964,15 @@ ontologies:
   - {id: tgma.owl, ontology_purl: 'http://purl.obolibrary.org/obo/tgma.owl'}
   taxon: {id: 'NCBITaxon:44484', label: Anopheles}
   title: Mosquito gross anatomy
-- build: {comment: switch to jenkins/archive, infallible: 1, method: obo2owl, source_url: 'http://palea.cgrb.oregonstate.edu/viewsvn/Poc/trunk/ontology/collaborators_ontology/gramene/traits/trait.obo?view=co'}
+- build: {comment: switch to jenkins/archive, infallible: 1, method: obo2owl, source_url: 'https://github.com/Planteome/plant-trait-ontology/blob/master/plant-trait-ontology.obo.owl'}
   contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
   description: A controlled vocabulary of describe phenotypic traits in plants.
   domain: phenotype
-  homepage: http://www.gramene.org/plant_ontology/
+  homepage: http://planteome.org
   id: to
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/to.owl
-  page: http://www.gramene.org/plant_ontology/index.html#to
+  page: http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=TO:0000387&session_id=815amigo1442021959
   products:
   - {id: to.owl, ontology_purl: 'http://purl.obolibrary.org/obo/to.owl'}
   publications:
@@ -2251,7 +2256,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:4575', label: Zea}
   title: Maize gross anatomy
 - build: {infallible: 1, method: obo2owl, notes: may be ready to switch to vcs soon,
-    source_url: 'https://zebrafish-anatomical-ontology.googlecode.com/svn/trunk/src/preversion.zfish.obo'}
+    source_url: 'https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/src/zebrafish_anatomy.obo'}
   contact: {email: zfinadmin@zfin.org, label: ZFIN administrators}
   description: A structured controlled vocabulary of the anatomy and development of
     the Zebrafish
