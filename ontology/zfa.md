@@ -16,7 +16,7 @@ taxon:
 title: Zebrafish anatomy and development
 build:
   notes: may be ready to switch to vcs soon
-  source_url:https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/src/zebrafish_anatomy.obo
+  source_url: https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/src/zebrafish_anatomy.obo
   method: obo2owl
   infallible: 1
 tracker: https://github.com/cerivs/zebrafish-anatomical-ontology/issues
