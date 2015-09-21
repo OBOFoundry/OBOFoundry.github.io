@@ -15,8 +15,7 @@ taxon:
   label: Viridiplantae
 title: Plant Trait Ontology
 build:
-  comment: switch to jenkins/archive
-  source_url: https://github.com/Planteome/plant-trait-ontology/blob/master/plant-trait-ontology.obo.owl
+  source_url: https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/to-release-files/plant-trait-ontology.obo
   method: obo2owl
   infallible: 1
 tracker: https://github.com/Planteome/plant-trait-ontology/issues

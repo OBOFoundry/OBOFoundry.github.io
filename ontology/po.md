@@ -5,7 +5,7 @@ in_foundry_order: 1
 title: Plant Ontology
 build:
   notes: switch to vcs method
-  source_url: https://github.com/Planteome/plant-ontology/blob/master/po-release-files/plant_ontology.owl
+  source_url: https://raw.githubusercontent.com/Planteome/plant-ontology/master/po-release-files/plant_ontology.obo
   method: obo2owl
   infallible: 1
 contact:
