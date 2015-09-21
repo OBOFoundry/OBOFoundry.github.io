@@ -1606,7 +1606,7 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   title: Plasmodium life cycle
-- build: {infallible: 1, method: obo2owl, notes: switch to vcs method, source_url: 'https://github.com/Planteome/plant-ontology/blob/master/po-release-files/plant_ontology.owl'}
+- build: {infallible: 1, method: obo2owl, notes: switch to vcs method, source_url: 'https://raw.githubusercontent.com/Planteome/plant-ontology/master/po-release-files/plant_ontology.obo'}
   contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
   description: The Plant Ontology is a structured vocabulary and database resource
     that links plant anatomy, morphology and growth and development to plant genomics
@@ -1972,7 +1972,7 @@ ontologies:
   - {id: tgma.owl, ontology_purl: 'http://purl.obolibrary.org/obo/tgma.owl'}
   taxon: {id: 'NCBITaxon:44484', label: Anopheles}
   title: Mosquito gross anatomy
-- build: {comment: switch to jenkins/archive, infallible: 1, method: obo2owl, source_url: 'https://github.com/Planteome/plant-trait-ontology/blob/master/plant-trait-ontology.obo.owl'}
+- build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/to-release-files/plant-trait-ontology.obo'}
   contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
   description: A controlled vocabulary of describe phenotypic traits in plants.
   domain: phenotype
