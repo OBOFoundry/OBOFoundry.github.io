@@ -86,10 +86,16 @@ def mirror(ontologies, args):
     """
     for ont in ontologies:
         id = ont['id']
+        if 'is_obsolete' in ont:
+            print("SKIPPING OBSOLETE: "+id)
+            continue
         for p in ont['products']:
             pid = p['id']
             url = get_obo_purl(pid)
             # we use -r to force directory structure mirroring
+            if url.startswith("ftp"):
+                print("Cannot check FTP: "+url)
+                continue
             status = os.system("wget -r "+url)
             if (status):
                 print("FAILED: "+url)
