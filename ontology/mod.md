@@ -6,7 +6,7 @@ contact:
   label: Henning Hermjakob
 description: PSI-MOD is an ontology consisting of terms that describe protein chemical modifications
 domain: proteins
-homepage: http://psidev.info/index.php?q=node/104
+homepage: http://www.psidev.info/MOD
 products:
   - id: mod.owl
 title: Protein modification
