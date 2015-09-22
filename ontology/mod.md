@@ -11,7 +11,7 @@ products:
   - id: mod.owl
 title: Protein modification
 build:
-  source_url: http://psidev.cvs.sourceforge.net/viewvc/psidev/psi/mod/data/PSI-MOD.obo
+  source_url: https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mod/data/PSI-MOD.obo
   method: obo2owl
 ---
 
