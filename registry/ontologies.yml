@@ -19,7 +19,7 @@ ontologies:
   description: AEO is an ontology of anatomical structures that expands CARO, the
     Common Anatomy Reference Ontology
   domain: anatomy
-  homepage: http://www.obofoundry.org/wiki/index.php/AEO:Main_Page
+  homepage: https://github.com/obophenotype/human-developmental-anatomy-ontology/
   id: aeo
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/aeo.owl
@@ -483,6 +483,10 @@ ontologies:
 - build: {checkout: 'git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git',
     method: vcs, path: src/ontology, system: git}
   contact: {email: J.Bard@ed.ac.uk, label: Jonathan Bard}
+  dependencies:
+  - {id: aeo}
+  - {id: caro}
+  - {id: cl}
   description: A structured controlled vocabulary of stage-specific anatomical structures
     of the developing human.
   domain: anatomy
@@ -986,8 +990,6 @@ ontologies:
   in_foundry: false
   is_obsolete: true
   layout: ontology_detail
-  products:
-  - {id: lipro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/lipro.owl'}
   title: Lipid Ontology
 - contact: {email: Peter Midford, label: peteremidford@yahoo.com}
   homepage: http://www.mesquiteproject.org/ontology/Loggerhead/index.html
