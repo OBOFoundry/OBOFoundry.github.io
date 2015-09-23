@@ -54,3 +54,7 @@ validate: $(ONTS)
 # See: https://github.com/OBOFoundry/OBOFoundry.github.io/issues/18
 valid-purl-report.txt: registry/ontologies.yml
 	./util/processor.py -i $< check-urls > $@.tmp && mv $@.tmp $@
+
+# output of central OBO build
+jenkins-output.txt:
+	wget http://build.berkeleybop.org/job/simple-build-obo-all/lastBuild/consoleFull -O $@
