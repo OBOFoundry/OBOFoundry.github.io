@@ -56,12 +56,26 @@ def validate_markdown(args):
     are present etc. This could be done in various ways, e.g. jsonschema, programmatic checks. We
     should also check translation -> jsonld -> rdf works as expected.
     """
+    errs = []
     for fn in args.files:
         print("VALIDATING:"+fn)
         # we don't do anything with the results; an
         # error is thrown 
-        load_md(fn)
+        (obj, md) = load_md(fn)
         print("OK:"+fn)
+        errs += validate_structure(obj,md)
+    if len(errs) > 0:
+        print("FAILURES:")
+        for e in errs:
+            print("ERROR:"+e)
+        exit(1)
+
+def validate_structure(obj,md):
+    errs = []
+    id = obj['id']
+    if 'title' not in obj:
+        errs.append("No title: "+id)
+    return errs
 
 def concat_ont_yaml(args):
     objs = []
