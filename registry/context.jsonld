@@ -8,6 +8,7 @@
   "dc": "http://purl.org/dc/terms/",
   "dce": "http://purl.org/dc/elements/1.1/",
   "dcterms": "http://purl.org/dc/terms/1.1/",
+  "dcat":"http://www.w3.org/ns/dcat#",
   "faldo": "http://biohackathon.org/resource/faldo#",
   "foaf": "http://xmlns.com/foaf/0.1/",
   "oa": "http://www.w3.org/ns/oa#",
@@ -16,6 +17,7 @@
   "doap": "http://usefulinc.com/ns/doap#",
   "pav": "http://purl.org/pav/",
   "id": "@id",
+  "url": "@id",
   "label": "rdfs:label",
   "comment": "rdfs:comment",
   "description": "dce:description",
@@ -59,6 +61,7 @@
    "@id": "foaf:page",
    "@type": "@id"
   },
+  "ontology_purl": "dcat:accessURL",
   "ontologies": "dcterms:hasPart",
   "exampleClass": {
    "@id": "void:exampleResource",
