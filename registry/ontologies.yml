@@ -44,7 +44,7 @@ ontologies:
   description: A structured controlled vocabulary for the phenotypes of Ascomycete
     fungi
   domain: phenotype
-  homepage: 'http://www.yeastgenome.org/ '
+  homepage: http://www.yeastgenome.org/
   id: apo
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/apo.owl
@@ -766,14 +766,16 @@ ontologies:
   tracker: https://github.com/pombase/fypo/issues
 - build: {method: archive, path: archive, source_url: 'http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
   contact: {email: ma11@gen.cam.ac.uk, label: Michael Ashburner}
+  description: A gazetteer constructed on ontological principles
   homepage: http://gensc.org/gc_wiki/index.php/GAZ_Project
   id: gaz
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/gaz.owl
   products:
   - {id: gaz.owl, ontology_purl: 'http://purl.obolibrary.org/obo/gaz.owl'}
+  - {id: gaz.obo, ontology_purl: 'http://purl.obolibrary.org/obo/gaz.obo'}
   title: Gazetteer
-  tracker: http://sourceforge.net/tracker/?func=browse&group_id=76834&atid=1014856
+  tracker: https://github.com/EnvironmentOntology/envo/issues/
 - contact: {email: MBrochhausen@uams.edu, label: Mathias Brochhausen}
   description: An ontology of geographical entities
   homepage: https://code.google.com/p/ge-ontology/
@@ -1096,10 +1098,12 @@ ontologies:
   domain: health
   homepage: http://mental-functioning-ontology.googlecode.com
   id: mfomd
+  layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mfomd.owl
   products:
   - {id: mfomd.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mfomd.owl', title: Mental
       Disease Ontology}
+  title: MFO Mental Disease Ontology
 - build: {method: obo2owl, source_url: 'http://psidev.cvs.sourceforge.net/viewvc/*checkout*/psidev/psi/mi/rel25/data/psi-mi25.obo'}
   contact: {email: Henning.Hermjakob@ebi.ac.uk, label: Henning Hermjakob}
   description: A structured controlled vocabulary for the annotation of experiments
@@ -1208,10 +1212,12 @@ ontologies:
   description: Processes at the molecular level
   homepage: https://github.com/rsc-ontologies/rxno
   id: mop
+  layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mop.owl
   products:
   - {id: mop.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mop.owl', title: Molecular
       Process Ontology}
+  title: Molecular Process Ontology
 - browsers:
   - {label: MGI, title: MGI MP Browser, url: 'http://www.informatics.jax.org/searches/MP_form.shtml'}
   - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/MP:0000001'}
@@ -1304,6 +1310,8 @@ ontologies:
   title: NCBI organismal classification
   wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
 - contact: {email: NCICB Support, label: ncicb@pop.nci.nih.gov}
+  description: an ontology-like vocabulary that includes broad coverage of the cancer
+    domain, including cancer related diseases, findings and abnormalities
   homepage: https://cabig.nci.nih.gov/concepts/EVS/
   id: ncithesaurus
   layout: ontology_detail
@@ -1490,6 +1498,7 @@ ontologies:
   - {id: omit.owl, ontology_purl: 'http://purl.obolibrary.org/obo/omit.owl'}
   title: Ontology for MIRNA Target
 - build: {method: obo2owl, source_url: 'https://sourceforge.net/p/microphenotypes/code/HEAD/tree/trunk/omp-edit.obo?format=raw'}
+  description: An ontology of phenotypes covering microbes
   domain: phenotype
   id: omp
   layout: ontology_detail
@@ -1526,12 +1535,6 @@ ontologies:
   products:
   - {id: ovae.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ovae.owl'}
   title: Ontology of Vaccine Adverse Events
-- id: ovao
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/ovao.owl
-  products:
-  - {id: ovao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ovao.owl'}
-  tracker: https://code.google.com/p/ovae/issues/list
 - contact: {email: Pankaj Jaiswal, label: jaiswalp@science.oregonstate.edu}
   homepage: http://www.plantontology.org
   id: pao
@@ -1768,6 +1771,7 @@ ontologies:
   products:
   - {id: rxno.owl, ontology_purl: 'http://purl.obolibrary.org/obo/rxno.owl', title: Name
       Reaction Ontology}
+  title: Name Reaction Ontology
 - contact: {email: Stephen Larson, label: slarson@ncmir.ucsd.edu}
   homepage: http://ccdb.ucsd.edu/CCDBWebSite/sao.html
   id: sao
@@ -2121,6 +2125,7 @@ ontologies:
   products:
   - {id: vhog.owl, ontology_purl: 'http://purl.obolibrary.org/obo/vhog.owl'}
   replaced_by: uberon
+  title: Vertebrate Homologous Ontology Group Ontology
 - build: {method: obo2owl, source_url: 'http://www.violinet.org/vo'}
   contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
   domain: health
@@ -2150,6 +2155,7 @@ ontologies:
   tracker: https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3AVSAO
 - build: {checkout: 'svn co http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/vt',
     method: vcs, system: svn}
+  description: An ontology of traits covering vertebrates
   id: vt
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/vt.owl
@@ -2161,6 +2167,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/vto.owl
   products:
   - {id: vto.owl, ontology_purl: 'http://purl.obolibrary.org/obo/vto.owl'}
+  title: Vertebrate Taxonomy Ontology
   tracker: http://purl.obolibrary.org/obo/vto/tracker
 - build: {infallible: 1, method: obo2owl, source_url: 'http://github.com/raymond91125/Wao/raw/master/WBbt.obo'}
   contact: {email: raymond@caltech.edu, label: Raymond Lee}

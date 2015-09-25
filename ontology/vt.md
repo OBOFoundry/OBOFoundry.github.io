@@ -8,4 +8,5 @@ build:
   checkout: svn co http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/vt
   system: svn
   method: vcs
+description: An ontology of traits covering vertebrates
 ---

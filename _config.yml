@@ -27,7 +27,7 @@ ontologies:
   description: AEO is an ontology of anatomical structures that expands CARO, the
     Common Anatomy Reference Ontology
   domain: anatomy
-  homepage: http://www.obofoundry.org/wiki/index.php/AEO:Main_Page
+  homepage: https://github.com/obophenotype/human-developmental-anatomy-ontology/
   id: aeo
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/aeo.owl
@@ -491,6 +491,10 @@ ontologies:
 - build: {checkout: 'git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git',
     method: vcs, path: src/ontology, system: git}
   contact: {email: J.Bard@ed.ac.uk, label: Jonathan Bard}
+  dependencies:
+  - {id: aeo}
+  - {id: caro}
+  - {id: cl}
   description: A structured controlled vocabulary of stage-specific anatomical structures
     of the developing human.
   domain: anatomy
@@ -994,8 +998,6 @@ ontologies:
   in_foundry: false
   is_obsolete: true
   layout: ontology_detail
-  products:
-  - {id: lipro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/lipro.owl'}
   title: Lipid Ontology
 - contact: {email: Peter Midford, label: peteremidford@yahoo.com}
   homepage: http://www.mesquiteproject.org/ontology/Loggerhead/index.html
@@ -1102,10 +1104,12 @@ ontologies:
   domain: health
   homepage: http://mental-functioning-ontology.googlecode.com
   id: mfomd
+  layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mfomd.owl
   products:
   - {id: mfomd.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mfomd.owl', title: Mental
       Disease Ontology}
+  title: MFO Mental Disease Ontology
 - build: {method: obo2owl, source_url: 'http://psidev.cvs.sourceforge.net/viewvc/*checkout*/psidev/psi/mi/rel25/data/psi-mi25.obo'}
   contact: {email: Henning.Hermjakob@ebi.ac.uk, label: Henning Hermjakob}
   description: A structured controlled vocabulary for the annotation of experiments
@@ -1214,10 +1218,12 @@ ontologies:
   description: Processes at the molecular level
   homepage: https://github.com/rsc-ontologies/rxno
   id: mop
+  layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mop.owl
   products:
   - {id: mop.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mop.owl', title: Molecular
       Process Ontology}
+  title: Molecular Process Ontology
 - browsers:
   - {label: MGI, title: MGI MP Browser, url: 'http://www.informatics.jax.org/searches/MP_form.shtml'}
   - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/MP:0000001'}
@@ -1532,12 +1538,6 @@ ontologies:
   products:
   - {id: ovae.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ovae.owl'}
   title: Ontology of Vaccine Adverse Events
-- id: ovao
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/ovao.owl
-  products:
-  - {id: ovao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ovao.owl'}
-  tracker: https://code.google.com/p/ovae/issues/list
 - contact: {email: Pankaj Jaiswal, label: jaiswalp@science.oregonstate.edu}
   homepage: http://www.plantontology.org
   id: pao
@@ -1774,6 +1774,7 @@ ontologies:
   products:
   - {id: rxno.owl, ontology_purl: 'http://purl.obolibrary.org/obo/rxno.owl', title: Name
       Reaction Ontology}
+  title: Name Reaction Ontology
 - contact: {email: Stephen Larson, label: slarson@ncmir.ucsd.edu}
   homepage: http://ccdb.ucsd.edu/CCDBWebSite/sao.html
   id: sao
@@ -2127,6 +2128,7 @@ ontologies:
   products:
   - {id: vhog.owl, ontology_purl: 'http://purl.obolibrary.org/obo/vhog.owl'}
   replaced_by: uberon
+  title: Vertebrate Homologous Ontology Group Ontology
 - build: {method: obo2owl, source_url: 'http://www.violinet.org/vo'}
   contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
   domain: health
@@ -2167,6 +2169,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/vto.owl
   products:
   - {id: vto.owl, ontology_purl: 'http://purl.obolibrary.org/obo/vto.owl'}
+  title: Vertebrate Taxonomy Ontology
   tracker: http://purl.obolibrary.org/obo/vto/tracker
 - build: {infallible: 1, method: obo2owl, source_url: 'http://github.com/raymond91125/Wao/raw/master/WBbt.obo'}
   contact: {email: raymond@caltech.edu, label: Raymond Lee}

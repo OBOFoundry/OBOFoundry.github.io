@@ -33,13 +33,19 @@ registry/ontologies.yml: $(ONTS)
 principles/all.yml: $(PRINCIPLES)
 	./util/extract-metadata.py concat-principles -o $@.tmp $^  && mv $@.tmp $@
 
-# TODO: add @context
+# Use a generic yaml->json conversion, but adding a @content
 registry/ontologies.jsonld: registry/ontologies.yml
 	./util/yaml2json.py $< > $@.tmp && mv $@.tmp $@
 
-# TODO
-registry/ontologies.ttl: registry/ontologies.jsonld
-	riot registry/context.jsonld $< > $@.tmp && mv $@.tmp $@
+# Use Apache-Jena RIOT to convert jsonld to n-triples
+# NOTE: UGLY HACK. If there is a problem then Jena will write WARN message (to stdout!!!), there appears to
+#  be no way to get it to flag this even with strict and check options, so we do a check with grep, ugh.
+# see: http://stackoverflow.com/questions/20860222/why-do-i-have-these-warnings-with-jena-2-11-0
+registry/ontologies.nt: registry/ontologies.jsonld
+	riot --strict --check -q registry/context.jsonld $< > $@.tmp && mv $@.tmp $@ && grep WARN $@ && exit 1 || echo ok
+
+registry/ontologies.ttl: registry/ontologies.nt
+	rdfcat -out ttl $< > $@.tmp && mv $@.tmp $@
 
 
 validate: $(ONTS)
