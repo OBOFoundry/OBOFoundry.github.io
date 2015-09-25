@@ -72,9 +72,13 @@ def validate_markdown(args):
 
 def validate_structure(obj,md):
     errs = []
+    if 'id' not in obj:
+        errs.append("No id: ")
     id = obj['id']
     if 'title' not in obj:
         errs.append("No title: "+id)
+    if 'layout' not in obj:
+        errs.append("No layout tag: "+id+" -- this is required for proper rendering")
     return errs
 
 def concat_ont_yaml(args):
