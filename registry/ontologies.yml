@@ -2014,7 +2014,8 @@ ontologies:
   taxon: {id: 'NCBITaxon:32443', label: Teleostei}
   title: Teleost taxonomy
   tracker: http://sourceforge.net/tracker/?group_id=76834&atid=1046550
-- browsers:
+- biosharing: https://www.biosharing.org/bsg-000016
+  browsers:
   - {label: RGD, title: Gene Ontology AmiGO 2 Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=UBERON:0001062'}
   - {label: AmiGO (SUBSET), title: Gene Ontology AmiGO 2 Browser, url: 'http://amigo.geneontology.org/amigo/term/UBERON:0001062#display-lineage-tab'}
   build: {checkout: 'svn --ignore-externals co http://svn.code.sf.net/p/obo/svn/uberon/trunk',
@@ -2091,6 +2092,7 @@ ontologies:
   tracker: https://github.com/obophenotype/uberon/issues
   twitter: uberanat
   type: owl:Ontology
+  used_by: ['http://bgeedb.org']
   wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo'}
   contact: {email: geg18@aber.ac.uk, label: George Gkoutos}

@@ -17,6 +17,9 @@ twitter: uberanat
 google_plus: "+UberonOrg"
 wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
+biosharing: https://www.biosharing.org/bsg-000016
+used_by:
+ - http://bgeedb.org
 canonical: uberon.owl
 license:
   url: https://creativecommons.org/licenses/by/3.0/
