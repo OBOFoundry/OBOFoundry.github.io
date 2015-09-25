@@ -99,6 +99,12 @@ layout: default
           </dt>
           {% endfor %}
 
+          {% if page.biosharing %}
+          <dt>
+            <a href="{{page.biosharing}}">{{page.biosharing}}</a>
+          </dt>
+          {% endif %}
+
           <dt>Contact</dt>
           <dt>
             <a href="mailto:{{page.contact.email}}">{{page.contact.label}}</a> 
