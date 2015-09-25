@@ -17,6 +17,7 @@
   "doap": "http://usefulinc.com/ns/doap#",
   "pav": "http://purl.org/pav/",
   "schemaorg": "http://schema.org/",
+  "disco": "http://rdf-vocabulary.ddialliance.org/discovery#",
 
   "obofmd": "http://obofoundry.github.io/vocabulary/",
 
@@ -26,6 +27,7 @@
   "RO": "obo:RO_",
   "BFO": "obo:BFO_",
 
+  "ontologies": "@graph",
   "id": "@id",
   "url": "@id",
   "label": "rdfs:label",
@@ -39,6 +41,7 @@
       "@id": "doap:bug-database",
       "notes": "consider using a different vocabulary, bug database does not describe well an ontology tracker"
   },
+  "funded_by": "disco:fundedBy",
   "createdWith": "pav:createdWith",
   "wasDerivedFrom": "pav:wasDerivedFrom",
   "preferredPrefix": "idot:preferredPrefix",
@@ -119,7 +122,6 @@
      "@type": "owl:Class"
   },
   "ontology_purl": "dcat:accessURL",
-  "ontologies": "@graph",
   "exampleClass": {
    "@id": "void:exampleResource",
    "@type": "@id"
