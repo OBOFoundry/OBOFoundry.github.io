@@ -16,6 +16,10 @@
   "void": "http://rdfs.org/ns/void#",
   "doap": "http://usefulinc.com/ns/doap#",
   "pav": "http://purl.org/pav/",
+
+  "obo": "http://purl.obolibrary.org/obo/",
+  "IAO": "obo:IAO_",
+
   "id": "@id",
   "url": "@id",
   "label": "rdfs:label",
@@ -50,6 +54,10 @@
    "@id": "foaf:depiction",
    "@type": "@id"
   },
+  "contact": {
+   "@id": "dcat:contactPoint",
+   "@type": "@id"
+  },
   "publications": "dcterms:publication",
   "subClassOf": "owl:subClassOf",
   "title": "dce:title",
@@ -60,6 +68,11 @@
   "page": {
    "@id": "foaf:page",
    "@type": "@id"
+  },
+  "is_about" : "IAO:0000136",
+  "taxon" : {
+     "@id": "IAO:0000136",
+     "@type": "owl:Class"
   },
   "ontology_purl": "dcat:accessURL",
   "ontologies": "dcterms:hasPart",
