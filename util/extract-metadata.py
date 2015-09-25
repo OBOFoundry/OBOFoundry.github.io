@@ -72,11 +72,16 @@ def validate_markdown(args):
 
 def validate_structure(obj,md):
     errs = []
+    is_obs = False
     if 'id' not in obj:
         errs.append("No id: ")
+    if 'is_obsolete' in obj:
+        is_obs = True
     id = obj['id']
     if 'title' not in obj:
         errs.append("No title: "+id)
+    #if 'description' not in obj:
+    #    errs.append("No description: "+id+" " + ("OBS" if is_obs else ""))
     if 'layout' not in obj:
         errs.append("No layout tag: "+id+" -- this is required for proper rendering")
     return errs
