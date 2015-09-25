@@ -42,7 +42,7 @@ registry/ontologies.jsonld: registry/ontologies.yml
 #  be no way to get it to flag this even with strict and check options, so we do a check with grep, ugh.
 # see: http://stackoverflow.com/questions/20860222/why-do-i-have-these-warnings-with-jena-2-11-0
 registry/ontologies.nt: registry/ontologies.jsonld
-	riot --strict --check -q registry/context.jsonld $< > $@.tmp && mv $@.tmp $@ && grep WARN $@ && exit 1 || echo ok
+	riot --base=http://purl.obolibrary.org/obo/ --strict --check -q registry/context.jsonld $< > $@.tmp && mv $@.tmp $@ && grep WARN $@ && exit 1 || echo ok
 
 registry/ontologies.ttl: registry/ontologies.nt
 	rdfcat -out ttl $< > $@.tmp && mv $@.tmp $@
