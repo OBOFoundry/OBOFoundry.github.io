@@ -1,4 +1,5 @@
 ---
+layout: ontology_detail
 id: mop
 contact: 
   email: batchelorc@rsc.org

@@ -1,4 +1,5 @@
 ---
+layout: ontology_detail
 id: mfomd
 contact: 
   email: hastings@ebi.ac.uk
