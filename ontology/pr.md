@@ -18,6 +18,8 @@ build:
   method: obo2owl
   infallible: 0
 tracker: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
+development:
+  id_policy: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+URI+policy
 ---
 
 PRotein Ontology (PRO) has been designed to describe the relationships of proteins and protein evolutionary classes (ontology for ProEvo), to delineate the multiple protein forms of a gene locus (ontology for protein forms), and to interconnect existing ontologies
