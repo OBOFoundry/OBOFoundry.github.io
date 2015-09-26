@@ -4,9 +4,10 @@ ONTS := $(wildcard ontology/*md)
 # All principles .md file
 PRINCIPLES := $(wildcard principles/*md)
 
-all: _config.yml registry/ontologies.yml registry/ontologies.ttl
+all: yml registry/ontologies.ttl
+yml: _config.yml registry/ontologies.yml
 
-test: validate all
+test: validate yml
 
 integration-test: test valid-purl-report.txt
 
