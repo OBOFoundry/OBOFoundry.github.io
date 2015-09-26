@@ -12,7 +12,7 @@ contact:
   label: Bjoern Peters
   email: bpeters@liai.org
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 depicted_by: https://svn.code.sf.net/p/obi/code/trunk/web/htdocs/images/obi-lotext.png
 build:
@@ -38,4 +38,4 @@ The Ontology for Biomedical Investigations (OBI) project is developing an integr
 - [OBI mailing list](http://groups.google.com/group/obi-users)
 - To cite a journal article for OBI please use the following: [Brinkman et al, J Biomed Semantics, 2010](http://www.ncbi.nlm.nih.gov/pubmed/20626927)
 - To refer to the most current information on the OBI project, please use the following: The OBI Consortium [http://purl.obolibrary.org/obo/obi](http://purl.obolibrary.org/obo/obi)
-- To use OBI, remember the licensing terms: OBI is released under [CC-by 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/)
+- To use OBI, remember the licensing terms: OBI is released under [CC-by 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/)

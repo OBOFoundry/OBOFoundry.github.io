@@ -9,7 +9,7 @@ domain: environment
 homepage: http://environmentontology.org/
 page: https://github.com/EnvironmentOntology/envo
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 publications:
   - id: http://www.dx.doi.org/10.1186/2041-1480-4-43

@@ -50,7 +50,7 @@ products:
    title: GO Taxon Groupings
    description: Classes added to ncbitaxon for groupings such as prokaryotes
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 depicted_by: http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png
 ---

@@ -13,7 +13,7 @@ taxon:
   id: NCBITaxon:6040
   label: Porifera
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 title: Porifera Ontology
 build:

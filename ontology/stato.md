@@ -15,7 +15,7 @@ homepage: http://stato-ontology.org/
 products:
   - id: stato.owl
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 depicted_by:  https://raw.githubusercontent.com/ISA-tools/stato/dev/images/stato-logo-1.png
 tracker: https://github.com/ISA-tools/stato/issues
@@ -25,4 +25,4 @@ The STATistics Ontology (STATO) project started in early 2012, as part of the re
 
  * To refer to the most current  information on the STATO project, please visit [STATO website](http://stato-ontology.org/)
  * The latest version of the ontology file (.owl) will always be available from [STATO Github repository]()
- * To use STATO, remember the licensing terms: STATO is released under [CC-by 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/)
+ * To use STATO, remember the licensing terms: STATO is released under [CC-by 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/)

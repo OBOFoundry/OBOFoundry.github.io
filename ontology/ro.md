@@ -34,7 +34,7 @@ products:
  - id: ro/subsets/ro-neuro.owl
    title: Neuroscience subset
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 ---
 
