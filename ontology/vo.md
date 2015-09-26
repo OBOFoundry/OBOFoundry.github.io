@@ -9,7 +9,7 @@ domain: health
 homepage: http://www.violinet.org/vaccineontology
 products:
   - id: vo.owl
-title: Vaccine ontology
+title: Vaccine Ontology
 build:
   source_url: http://www.violinet.org/vo
   method: obo2owl
