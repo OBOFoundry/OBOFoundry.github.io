@@ -10,6 +10,9 @@ homepage: http://planteome.org
 page: http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=TO:0000387&session_id=815amigo1442021959
 products:
   - id: to.owl
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae

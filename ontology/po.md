@@ -24,6 +24,9 @@ publications:
     title: "Ontologies as integrative tools for plant science."
 products:
   - id: po.owl
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae

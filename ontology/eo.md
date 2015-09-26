@@ -15,6 +15,9 @@ page: http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=EO:0007359
 products:
   - id: eo.owl
 tracker: https://github.com/Planteome/plant-environment-ontology/issues
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22847540
     title: "Ontologies as integrative tools for plant science."
