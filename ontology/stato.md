@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: stato
 in_foundry: false
-title: STATistics Ontology
+title: The Statistical Methods Ontology
 description: STATO is a general-purpose STATistics Ontology. Its aim is to provide coverage for processes such as statistical tests, their conditions of application, and information needed or resulting from statistical methods, such as probability distributions, variables, spread and variation metrics. STATO also covers aspects of experimental design and description of plots and graphical representations commonly used to provide visual cues of data distribution or layout and to assist review of the results.
 contact:
   email: proccaserra@gmail.com

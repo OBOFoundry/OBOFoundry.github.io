@@ -23,6 +23,9 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/reg
         {% else %}
         {{ ont.title }}
         {% endif %}
+        {% if ont.license %}
+        <a href="{{ont.license.url}}"><img width="100px" src="{{ont.license.logo}}" alt="{{ont.license.label}}"/></a>
+        {% endif %}
       </td>
       <td>
         {% if ont.is_obsolete %}

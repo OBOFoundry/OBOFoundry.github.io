@@ -100,7 +100,8 @@ ontologies:
   homepage: http://ifomis.org/bfo/
   id: bfo
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   mailing_list: https://groups.google.com/forum/#!forum/bfo-discuss
   ontology_purl: http://purl.obolibrary.org/obo/bfo.owl
   products:
@@ -136,6 +137,8 @@ ontologies:
   homepage: https://github.com/obophenotype/biological-spatial-ontology
   id: bspo
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/bspo.owl
   products:
   - {id: bspo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/bspo.owl'}
@@ -195,7 +198,8 @@ ontologies:
   homepage: https://github.com/obophenotype/cephalopod-ontology
   id: ceph
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/ceph.owl
   products:
   - {id: ceph.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ceph.owl'}
@@ -257,7 +261,8 @@ ontologies:
   integration_server: http://build.berkeleybop.org/job/build-cl/
   label: Cell Ontology
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
   ontology_purl: http://purl.obolibrary.org/obo/cl.owl
   products:
@@ -326,7 +331,8 @@ ontologies:
   homepage: https://github.com/obophenotype/ctenophore-ontology
   id: cteno
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/cteno.owl
   products:
   - {id: cteno.owl, ontology_purl: 'http://purl.obolibrary.org/obo/cteno.owl'}
@@ -461,6 +467,7 @@ ontologies:
   contact: {email: MChibucos@som.umaryland.edu, label: 'Chibucos, Marcus'}
   description: An ontology for experimental and other evidence statements.
   domain: experiments
+  funded_by: ['http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400']
   homepage: https://github.com/evidenceontology/evidenceontology/
   id: eco
   layout: ontology_detail
@@ -548,6 +555,8 @@ ontologies:
   homepage: http://environmentontology.org/
   id: envo
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/envo.owl
   page: https://github.com/EnvironmentOntology/envo
   products:
@@ -822,7 +831,8 @@ ontologies:
   integration_server: http://build.berkeleybop.org/view/GO
   label: GO
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/go.owl
   products:
   - {id: go.owl, ontology_purl: 'http://purl.obolibrary.org/obo/go.owl'}
@@ -871,7 +881,8 @@ ontologies:
   homepage: http://bioinfo.unil.ch
   id: hom
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/hom.owl
   products:
   - {id: hom.owl, ontology_purl: 'http://purl.obolibrary.org/obo/hom.owl'}
@@ -1068,7 +1079,8 @@ ontologies:
   homepage: http://feedexp.org
   id: mfmo
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/mfmo.owl
   products:
   - {id: mfmo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mfmo.owl'}
@@ -1410,7 +1422,8 @@ ontologies:
   in_foundry_order: 1
   integration_server: http://build.berkeleybop.org/job/build-obi/
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   mailing_list: http://groups.google.com/group/obi-users
   ontology_purl: http://purl.obolibrary.org/obo/obi.owl
   products:
@@ -1426,7 +1439,8 @@ ontologies:
   homepage: https://github.com/biobanking/biobanking
   id: obib
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/obib.owl
   products:
   - {id: obib.owl, ontology_purl: 'http://purl.obolibrary.org/obo/obib.owl'}
@@ -1643,7 +1657,8 @@ ontologies:
   id: poro
   integration_server: http://build.berkeleybop.org/job/build-poro/
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/poro.owl
   products:
   - {id: poro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/poro.owl'}
@@ -1653,6 +1668,7 @@ ontologies:
 - build: {infallible: 0, method: obo2owl, oort_args: --no-reasoner, source_url: 'ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.obo'}
   contact: {email: dan5@georgetown.edu, label: Darren Natale}
   description: an ontological representation of protein-related entities
+  development: {id_policy: 'https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+URI+policy'}
   documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
   domain: proteins
   homepage: http://proconsortium.org
@@ -1731,7 +1747,8 @@ ontologies:
   jobs:
   - {id: 'http://build.berkeleybop.org/job/build-ro', type: DryRunBuild}
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-relations
   ontology_purl: http://purl.obolibrary.org/obo/ro.owl
   products:
@@ -1886,11 +1903,12 @@ ontologies:
   id: stato
   in_foundry: false
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/stato.owl
   products:
   - {id: stato.owl, ontology_purl: 'http://purl.obolibrary.org/obo/stato.owl'}
-  title: STATistics Ontology
+  title: The Statistical Methods Ontology
   tracker: https://github.com/ISA-tools/stato/issues
 - build: {method: owl2obo, source_url: 'http://theswo.svn.sourceforge.net/viewvc/theswo/trunk/src/release/swoinowl/swo_merged/swo_merged.owl'}
   contact: {email: parkinson@ebi.ac.uk, label: Helen Parkinson}
@@ -2022,7 +2040,8 @@ ontologies:
   taxon: {id: 'NCBITaxon:32443', label: Teleostei}
   title: Teleost taxonomy
   tracker: http://sourceforge.net/tracker/?group_id=76834&atid=1046550
-- browsers:
+- biosharing: https://www.biosharing.org/bsg-000016
+  browsers:
   - {label: RGD, title: Gene Ontology AmiGO 2 Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=UBERON:0001062'}
   - {label: AmiGO (SUBSET), title: Gene Ontology AmiGO 2 Browser, url: 'http://amigo.geneontology.org/amigo/term/UBERON:0001062#display-lineage-tab'}
   build: {checkout: 'svn --ignore-externals co http://svn.code.sf.net/p/obo/svn/uberon/trunk',
@@ -2039,12 +2058,14 @@ ontologies:
     multiple species-specific ontologies
   domain: anatomy
   exampleClass: UBERON_0002046
+  funded_by: [NIH R24OD011883, NIH R01HG004838, NIH P41HG002273, NSF DEB-0956049]
   google_plus: +UberonOrg
   homepage: http://uberon.org
   id: uberon
   label: Uberon
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
   ontology_purl: http://purl.obolibrary.org/obo/uberon.owl
   page: http://en.wikipedia.org/wiki/Uberon
@@ -2099,6 +2120,13 @@ ontologies:
   tracker: https://github.com/obophenotype/uberon/issues
   twitter: uberanat
   type: owl:Ontology
+  used_by:
+  - {label: bgee, seeAlso: 'https://www.biosharing.org/biodbcore-000228', type: Database,
+    url: 'http://bgee.org/'}
+  - {label: ENCODE, seeAlso: 'https://www.biosharing.org/biodbcore-000034', type: Database,
+    url: 'https://www.encodeproject.org/'}
+  - {label: Monarch, type: Database, url: 'https://monarchinitiative.org/'}
+  - {label: GO Database, type: Database, url: 'https://geneontology.org/'}
   wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo'}
   contact: {email: geg18@aber.ac.uk, label: George Gkoutos}
@@ -2144,7 +2172,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/vo.owl
   products:
   - {id: vo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/vo.owl'}
-  title: Vaccine ontology
+  title: Vaccine Ontology
   tracker: http://sourceforge.net/tracker/?atid=1127137&group_id=255029&func=browse
 - build: {method: obo2owl, source_url: 'http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/tags/vocab-releases/VSAO/vsao.obo'}
   contact: {email: wasila.dahdul@usd.edu, label: Wasila Dahdul}

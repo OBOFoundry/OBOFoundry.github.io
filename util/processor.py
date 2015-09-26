@@ -147,13 +147,20 @@ def sparql_compare_ont(obj):
         return
     purl = obj['ontology_purl']
     id = obj['id']
+    # this could be made more declarative, or driven by the context.jsonld mapping;
+    # however, for now this is relatively simple and easy to understand:
     if 'license' in obj:
-        msg = run_sparql(obj, obj['license']['url'], "SELECT DISTINCT ?license WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/license> ?license}")
+        msg = run_sparql(obj, 'license', obj['license']['url'], "SELECT DISTINCT ?license WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/license> ?license}")
+        print(id + " " + msg)
+    if 'title' in obj:
+        msg = run_sparql(obj, 'title', obj['title'], "SELECT DISTINCT ?title WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/title> ?title}")
+        print(id + " " + msg)
+    if 'description' in obj:
+        msg = run_sparql(obj, 'description', obj['description'], "SELECT DISTINCT ?description WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/description> ?description}")
         print(id + " " + msg)
 
-def run_sparql(obj, expected_value, q):
+def run_sparql(obj, p, expected_value, q):
     sparql = SPARQLWrapper("http://sparql.hegroup.org/sparql")
-    print(q)
     sparql.setQuery(q)
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
@@ -164,7 +171,7 @@ def run_sparql(obj, expected_value, q):
 
     for result in results["results"]["bindings"]:
         got_value = True
-        v = result["license"]["value"]
+        v = result[p]["value"]
         vs.append(str(v))
         if v == expected_value:
             is_match = True
@@ -172,10 +179,10 @@ def run_sparql(obj, expected_value, q):
     if got_value and is_match:
         msg = 'CONSISTENT'
     elif got_value and not is_match:
-        msg = 'INCONSISTENT: ' + ",".join(vs)+" != "+expected_value
+        msg = 'INCONSISTENT: REMOTE:' + ",".join(vs)+" != LOCAL:"+expected_value
     else:
         msg = 'UNDECLARED'
-    return msg
+    return p +" " +msg
             
 
         
