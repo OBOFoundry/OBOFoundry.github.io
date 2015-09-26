@@ -4,7 +4,7 @@ ONTS := $(wildcard ontology/*md)
 # All principles .md file
 PRINCIPLES := $(wildcard principles/*md)
 
-all: _config.yml registry/ontologies.yml
+all: _config.yml registry/ontologies.yml registry/ontologies.ttl
 
 test: validate all
 
@@ -61,6 +61,12 @@ validate: $(ONTS)
 valid-purl-report.txt: registry/ontologies.yml
 	./util/processor.py -i $< check-urls > $@.tmp && mv $@.tmp $@
 
+sparql-consistency-report.txt: registry/ontologies.yml
+	./util/processor.py -i $< sparql-compare > $@.tmp && mv $@.tmp $@
+
 # output of central OBO build
 jenkins-output.txt:
 	wget http://build.berkeleybop.org/job/simple-build-obo-all/lastBuild/consoleFull -O $@
+
+reports/%.csv: registry/ontologies.ttl sparql/%.sparql
+	arq --data $< --query sparql/$*.sparql --results csv > $@.tmp && mv $@.tmp $@

@@ -8,6 +8,7 @@ import requests
 import sys
 import os
 from contextlib import closing
+from SPARQLWrapper import SPARQLWrapper, JSON
 
 #from yaml import load, dump
 #from yaml import Loader, Dumper
@@ -31,6 +32,9 @@ def main():
     parser_n = subparsers.add_parser('check-urls', help='Checks URLs')
     parser_n.set_defaults(function=check_urls)
     #parser_n.add_argument('files',nargs='*')
+
+    parser_n = subparsers.add_parser('sparql-compare', help='Checks URLs')
+    parser_n.set_defaults(function=sparql_compare_all)
 
     args = parser.parse_args()
 
@@ -125,6 +129,56 @@ def build_from_source(obj):
         print("TODO: run svn")
     else:
         print("UNKNOWN METHOD:"+obj.method)
+
+def sparql_compare_all(ontologies, args):
+    for obj in ontologies:
+        sparql_compare_ont(obj)
+
+def sparql_compare_ont(obj):
+    """
+    Some ontologies will directly declare some subset of the OBO metadata
+    directly in the ontology header. In the majority of cases we should
+    yield to the provider. However, we reserve the right to override. For
+    example, OBO may have particular guidelines about the length of the title,
+    required for coherency within the registry. All differences should be
+    discussed with the provider and an accomodation reached
+    """
+    if not 'ontology_purl' in obj:
+        return
+    purl = obj['ontology_purl']
+    id = obj['id']
+    if 'license' in obj:
+        msg = run_sparql(obj, obj['license']['url'], "SELECT DISTINCT ?license WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/license> ?license}")
+        print(id + " " + msg)
+
+def run_sparql(obj, expected_value, q):
+    sparql = SPARQLWrapper("http://sparql.hegroup.org/sparql")
+    print(q)
+    sparql.setQuery(q)
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+
+    got_value = False
+    is_match = False
+    vs = []
+
+    for result in results["results"]["bindings"]:
+        got_value = True
+        v = result["license"]["value"]
+        vs.append(str(v))
+        if v == expected_value:
+            is_match = True
+    msg = ''
+    if got_value and is_match:
+        msg = 'CONSISTENT'
+    elif got_value and not is_match:
+        msg = 'INCONSISTENT: ' + ",".join(vs)+" != "+expected_value
+    else:
+        msg = 'UNDECLARED'
+    return msg
+            
+
+        
 
 if __name__ == "__main__":
     main()
