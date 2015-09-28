@@ -205,6 +205,15 @@ layout: default
           {% endfor %}
           {% endif %}
 
+          {% if page.dependencies %}
+          <dt>Dependencies</dt>
+          {% for x in page.dependencies %}
+          <dd>
+            <a href="{{x.id}}">{{x.id}}</a>
+          </dd>
+          {% endfor %}
+          {% endif %}
+
           {% if page.jobs %}
           <dt>Jobs</dt>
           {% for p in page.jobs %}

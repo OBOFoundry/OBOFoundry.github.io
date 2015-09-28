@@ -3,6 +3,8 @@
                 "http://purl.obolibrary.org/obo/mod.owl" .
 
 <http://purl.obolibrary.org/obo/cteno>
+        <http://obofoundry.github.io/vocabulary/depends_on>
+                <http://purl.obolibrary.org/obo/uberon> , <http://purl.obolibrary.org/obo/ro> ;
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/checkout>
                           "git clone https://github.com/obophenotype/ctenophore-ontology.git" ;
@@ -761,6 +763,10 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ogms.owl" .
 
+<https://creativecommons.org/licenses/by/3.0/>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "CC-BY" .
+
 <http://amigo.geneontology.org/amigo/term/UBERON:0001062#display-lineage-tab>
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "AmiGO (SUBSET)" ;
@@ -1273,6 +1279,8 @@
                 "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data." ;
         <http://purl.org/dc/elements/1.1/title>
                 "Plant Ontology" ;
+        <http://purl.org/dc/terms/1.1/license>
+                <https://creativecommons.org/licenses/by/3.0/> ;
         <http://purl.org/dc/terms/1.1/publication>
                 <http://www.ncbi.nlm.nih.gov/pubmed/23220694> , <http://www.ncbi.nlm.nih.gov/pubmed/22847540> ;
         <http://purl.org/dc/terms/1.1/theme>
@@ -1351,6 +1359,8 @@
                 "A structured, controlled vocabulary which ≠≠describes the treatments, growing conditions, and/or study types used in various types of plant biology experiments." ;
         <http://purl.org/dc/elements/1.1/title>
                 "Plant Environment Ontology" ;
+        <http://purl.org/dc/terms/1.1/license>
+                <https://creativecommons.org/licenses/by/3.0/> ;
         <http://purl.org/dc/terms/1.1/publication>
                 <http://www.ncbi.nlm.nih.gov/pubmed/22847540> ;
         <http://purl.org/dc/terms/1.1/theme>
@@ -1498,6 +1508,12 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ogi.owl" .
 
+<http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=RS:0000457>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "RGD" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "RGD Ontology Browser" .
+
 <http://purl.obolibrary.org/obo/ro/core.owl>
         <http://purl.org/dc/elements/1.1/description>
                 "Minimal subset intended to work with BFO-classes" ;
@@ -1505,12 +1521,6 @@
                 "Core relations" ;
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ro/core.owl" .
-
-<http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=RS:0000457>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "RGD" ;
-        <http://purl.org/dc/elements/1.1/title>
-                "RGD Ontology Browser" .
 
 <http://www.disease-ontology.org/>
         <http://www.w3.org/2000/01/rdf-schema#label>
@@ -1784,6 +1794,12 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <https://github.com/obophenotype/cephalopod-ontology> .
 
+<http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "FB" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "FlyBase Browser" .
+
 <http://purl.obolibrary.org/obo/to>
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/method>
@@ -1797,6 +1813,8 @@
                 "A controlled vocabulary of describe phenotypic traits in plants." ;
         <http://purl.org/dc/elements/1.1/title>
                 "Plant Trait Ontology" ;
+        <http://purl.org/dc/terms/1.1/license>
+                <https://creativecommons.org/licenses/by/3.0/> ;
         <http://purl.org/dc/terms/1.1/publication>
                 <http://www.ncbi.nlm.nih.gov/pubmed/22847540> ;
         <http://purl.org/dc/terms/1.1/theme>
@@ -1817,12 +1835,6 @@
                 <http://planteome.org> ;
         <http://xmlns.com/foaf/0.1/page>
                 <http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=TO:0000387&session_id=815amigo1442021959> .
-
-<http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "FB" ;
-        <http://purl.org/dc/elements/1.1/title>
-                "FlyBase Browser" .
 
 <http://purl.obolibrary.org/obo/nmr>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -2544,6 +2556,8 @@
                 "http://purl.obolibrary.org/obo/mp.owl" .
 
 <http://purl.obolibrary.org/obo/clo>
+        <http://obofoundry.github.io/vocabulary/depends_on>
+                <http://purl.obolibrary.org/obo/ncbitaxon> , <http://purl.obolibrary.org/obo/uberon> , <http://purl.obolibrary.org/obo/doid> , <http://purl.obolibrary.org/obo/cl> ;
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/checkout>
                           "svn --ignore-externals co http://clo-ontology.googlecode.com/svn/trunk/src/ontology" ;
@@ -3679,6 +3693,8 @@
 <http://purl.obolibrary.org/obo/poro>
         <http://obofoundry.github.io/vocabulary/continuous_integration_server>
                 "http://build.berkeleybop.org/job/build-poro/" ;
+        <http://obofoundry.github.io/vocabulary/depends_on>
+                <http://purl.obolibrary.org/obo/ro> , <http://purl.obolibrary.org/obo/uberon> ;
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/checkout>
                           "git clone https://github.com/obophenotype/porifera-ontology.git" ;
@@ -4012,10 +4028,6 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/pato.owl" .
 
-<http://purl.obolibrary.org/obo/fbsp.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/fbsp.owl" .
-
 <http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl>
         a       <http://purl.obolibrary.org/obo/MergedOntology> ;
         <http://purl.obolibrary.org/obo/IAO_0000136>
@@ -4026,6 +4038,10 @@
                 "http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl" ;
         <http://xmlns.com/foaf/0.1/page>
                 <https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies> .
+
+<http://purl.obolibrary.org/obo/fbsp.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/fbsp.owl" .
 
 <http://purl.obolibrary.org/obo/nmr.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -4634,10 +4650,6 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/bfo.owl" .
 
-<http://www.ncbi.nlm.nih.gov/pubmed/18950739>
-        <http://purl.org/dc/elements/1.1/title>
-                "The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease." .
-
 <http://purl.obolibrary.org/obo/omrse>
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/method>
@@ -4665,6 +4677,10 @@
                 <http://purl.obolibrary.org/obo/omrse.owl> ;
         <http://xmlns.com/foaf/0.1/page>
                 <http://code.google.com/p/omrse/> .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/18950739>
+        <http://purl.org/dc/elements/1.1/title>
+                "The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease." .
 
 <http://purl.obolibrary.org/obo/omit>
         <http://purl.org/dc/elements/1.1/title>
@@ -5059,7 +5075,7 @@
         <http://obofoundry.github.io/vocabulary/continuous_integration_server>
                 "http://build.berkeleybop.org/job/build-cl/" ;
         <http://obofoundry.github.io/vocabulary/depends_on>
-                <http://purl.obolibrary.org/obo/uberon> , <http://purl.obolibrary.org/obo/go> ;
+                <http://purl.obolibrary.org/obo/pato> , <http://purl.obolibrary.org/obo/uberon> , <http://purl.obolibrary.org/obo/go> , <http://purl.obolibrary.org/obo/ro> , <http://purl.obolibrary.org/obo/chebi> ;
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/checkout>
                           "git clone https://github.com/obophenotype/cell-ontology.git" ;
@@ -5326,6 +5342,8 @@
                 <http://feedexp.org> .
 
 <http://purl.obolibrary.org/obo/envo>
+        <http://obofoundry.github.io/vocabulary/depends_on>
+                <http://purl.obolibrary.org/obo/uberon> , <http://purl.obolibrary.org/obo/ncbitaxon> , <http://purl.obolibrary.org/obo/pco> , <http://purl.obolibrary.org/obo/chebi> , <http://purl.obolibrary.org/obo/ro> ;
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/checkout>
                           "git clone https://github.com/EnvironmentOntology/envo.git" ;

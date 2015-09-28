@@ -246,6 +246,9 @@ ontologies:
   dependencies:
   - {id: uberon}
   - {id: go}
+  - {id: ro}
+  - {id: chebi}
+  - {id: pato}
   description: The Cell Ontology is a structured controlled vocabulary for cell types
     in animals.
   domain: cells
@@ -279,6 +282,11 @@ ontologies:
     method: vcs, post_processing_command: owltools --use-catalog clo.owl --merge-imports-closure
       --ni -o -f obo --no-check clo.obo, system: svn}
   contact: {email: Sirarat.Sarntivijai@fda.hhs.gov, label: Sirarat Sarntivijai}
+  dependencies:
+  - {id: uberon}
+  - {id: cl}
+  - {id: doid}
+  - {id: ncbitaxon}
   description: An ontology to standardize and integrate cell line information and
     to support computer-assisted reasoning.
   homepage: http://www.clo-ontology.org
@@ -318,6 +326,9 @@ ontologies:
 - build: {checkout: 'git clone https://github.com/obophenotype/ctenophore-ontology.git',
     method: vcs, path: src/ontology, system: git}
   contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
+  dependencies:
+  - {id: uberon}
+  - {id: ro}
   description: An anatomical and developmental ontology for ctenophores (Comb Jellies)
   domain: anatomy
   homepage: https://github.com/obophenotype/ctenophore-ontology
@@ -542,6 +553,12 @@ ontologies:
 - build: {checkout: 'git clone https://github.com/EnvironmentOntology/envo.git', email_cc: cjmungall@lbl.gov,
     infallible: 1, method: vcs, path: ., system: git}
   contact: {email: p.buttigieg@googlemail.com, label: Pier Luigi Buttigieg}
+  dependencies:
+  - {id: uberon}
+  - {id: pco}
+  - {id: ro}
+  - {id: chebi}
+  - {id: ncbitaxon}
   description: Ontology of environmental features and habitats
   domain: environment
   homepage: http://environmentontology.org/
@@ -567,6 +584,7 @@ ontologies:
   homepage: http://planteome.org/
   id: eo
   layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/eo.owl
   page: http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=EO:0007359&session_id=815amigo1442021959
   products:
@@ -818,6 +836,7 @@ ontologies:
   depicted_by: http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png
   description: An ontology for describing the function of genes and gene products
   domain: biology
+  facebook: https://www.facebook.com/Gene-Ontology-305908656519/
   id: go
   in_foundry_order: 1
   integration_server: http://build.berkeleybop.org/view/GO
@@ -1627,6 +1646,7 @@ ontologies:
   id: po
   in_foundry_order: 1
   layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/po.owl
   page: http://www.plantontology.org/amigo/go.cgi
   products:
@@ -1643,6 +1663,9 @@ ontologies:
 - build: {checkout: 'git clone https://github.com/obophenotype/porifera-ontology.git',
     infallible: 1, method: vcs, path: ., system: git}
   contact: {email: robert.thacker@stonybrook.edu, label: Bob Thacker}
+  dependencies:
+  - {id: uberon}
+  - {id: ro}
   description: An ontology covering the anatomy of the taxon Porifera (sponges)
   domain: anatomy
   homepage: https://github.com/obophenotype/porifera-ontology
@@ -1995,6 +2018,7 @@ ontologies:
   homepage: http://planteome.org
   id: to
   layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/to.owl
   page: http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=TO:0000387&session_id=815amigo1442021959
   products:
