@@ -9,6 +9,11 @@ homepage: http://www.clo-ontology.org
 products:
   - id: clo.owl
 title: Cell Line Ontology
+dependencies:
+ - id: uberon
+ - id: cl
+ - id: doid
+ - id: ncbitaxon
 build:
   checkout: svn --ignore-externals co http://clo-ontology.googlecode.com/svn/trunk/src/ontology
   system: svn
