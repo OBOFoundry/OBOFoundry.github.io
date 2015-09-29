@@ -1084,7 +1084,13 @@
                 "id": "NCBITaxon:10088",
                 "label": "Mus"
             },
-            "title": "Mouse gross anatomy and development, timed"
+            "title": "Mouse gross anatomy and development, timed",
+            "used_by": [
+                {
+                    "label": "GXD",
+                    "url": "https://www.biosharing.org/biodbcore-000659"
+                }
+            ]
         },
         {
             "build": {
@@ -1113,7 +1119,13 @@
                 "id": "NCBITaxon:10088",
                 "label": "Mus"
             },
-            "title": "Mouse gross anatomy and development, timed"
+            "title": "Mouse gross anatomy and development, timed",
+            "used_by": [
+                {
+                    "label": "GXD",
+                    "url": "https://www.biosharing.org/biodbcore-000659"
+                }
+            ]
         },
         {
             "build": {
@@ -1914,6 +1926,11 @@
             "homepage": "https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv",
             "id": "hsapdv",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/hsapdv.owl",
             "page": "https://github.com/obophenotype/developmental-stage-ontologies",
             "products": [
@@ -1940,15 +1957,30 @@
             "depicted_by": "https://avatars0.githubusercontent.com/u/13591168?v=3&s=200",
             "description": "An ontology of information entities.",
             "domain": "information",
-            "homepage": "http://purl.obolibrary.org/obo/iao",
+            "homepage": "https://github.com/information-artifact-ontology/IAO/",
             "id": "iao",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/iao.owl",
-            "page": "https://github.com/information-artifact-ontology/IAO",
             "products": [
                 {
                     "id": "iao.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/iao.owl"
+                },
+                {
+                    "id": "iao/ontology-metadata.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/iao/ontology-metadata.owl",
+                    "page": "https://github.com/information-artifact-ontology/IAO/wiki/OntologyMetadata",
+                    "title": "IAO ontology metadata"
+                },
+                {
+                    "id": "iao/dev/iao.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/iao/dev/iao.owl",
+                    "title": "IAO dev"
                 },
                 {
                     "contact": {
@@ -2136,7 +2168,13 @@
                 "label": "Mus"
             },
             "title": "Mouse adult gross anatomy",
-            "tracker": "https://github.com/obophenotype/mouse-anatomy-ontology/issues"
+            "tracker": "https://github.com/obophenotype/mouse-anatomy-ontology/issues",
+            "used_by": [
+                {
+                    "label": "GXD",
+                    "url": "https://www.biosharing.org/biodbcore-000659"
+                }
+            ]
         },
         {
             "build": {
@@ -2456,6 +2494,11 @@
             "homepage": "https://github.com/obophenotype/developmental-stage-ontologies/wiki/MmusDv",
             "id": "mmusdv",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/mmusdv.owl",
             "page": "https://github.com/obophenotype/developmental-stage-ontologies",
             "products": [
@@ -3045,6 +3088,11 @@
             "homepage": "https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv",
             "id": "olatdv",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/olatdv.owl",
             "page": "https://github.com/obophenotype/developmental-stage-ontologies",
             "products": [
@@ -3253,6 +3301,11 @@
             "homepage": "https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv",
             "id": "pdumdv",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/pdumdv.owl",
             "page": "https://github.com/obophenotype/developmental-stage-ontologies",
             "products": [

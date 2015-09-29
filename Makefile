@@ -4,16 +4,15 @@ ONTS := $(wildcard ontology/*md)
 # All principles .md file
 PRINCIPLES := $(wildcard principles/*md)
 
-all: yml registry/ontologies.ttl
+all: pull yml registry/ontologies.ttl
 yml: _config.yml registry/ontologies.yml
 
 test: validate yml
 
 integration-test: test valid-purl-report.txt
 
-t:
-	echo $(ONTS)
-
+pull:
+	git pull
 
 # Create the site-wide config file by combining all metadata on ontologies + principles
 #  and combining with site-wide metadata.

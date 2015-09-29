@@ -536,6 +536,8 @@ ontologies:
   - {id: emap.owl, ontology_purl: 'http://purl.obolibrary.org/obo/emap.owl'}
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse gross anatomy and development, timed
+  used_by:
+  - {label: GXD, url: 'https://www.biosharing.org/biodbcore-000659'}
 - build: {method: obo2owl, notes: new url soon, source_url: 'ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAPA.obo'}
   contact: {email: Terry.Hayamizu@jax.org, label: Terry Hayamizu}
   description: Abstract (i.e. non-stage specific) stage-specific anatomical structures
@@ -550,6 +552,8 @@ ontologies:
   - {id: emap.owl, ontology_purl: 'http://purl.obolibrary.org/obo/emap.owl'}
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse gross anatomy and development, timed
+  used_by:
+  - {label: GXD, url: 'https://www.biosharing.org/biodbcore-000659'}
 - build: {checkout: 'git clone https://github.com/EnvironmentOntology/envo.git', email_cc: cjmungall@lbl.gov,
     infallible: 1, method: vcs, path: ., system: git}
   contact: {email: p.buttigieg@googlemail.com, label: Pier Luigi Buttigieg}
@@ -932,6 +936,8 @@ ontologies:
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv
   id: hsapdv
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/hsapdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
   products:
@@ -943,13 +949,19 @@ ontologies:
   depicted_by: https://avatars0.githubusercontent.com/u/13591168?v=3&s=200
   description: An ontology of information entities.
   domain: information
-  homepage: http://purl.obolibrary.org/obo/iao
+  homepage: https://github.com/information-artifact-ontology/IAO/
   id: iao
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/iao.owl
-  page: https://github.com/information-artifact-ontology/IAO
   products:
   - {id: iao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/iao.owl'}
+  - {id: iao/ontology-metadata.owl, ontology_purl: 'http://purl.obolibrary.org/obo/iao/ontology-metadata.owl',
+    page: 'https://github.com/information-artifact-ontology/IAO/wiki/OntologyMetadata',
+    title: IAO ontology metadata}
+  - {id: iao/dev/iao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/iao/dev/iao.owl',
+    title: IAO dev}
   - contact: {email: mbrochhausen@gmail.com, label: Mathias Brochhausen}
     description: An ontology based on a theory of document acts describing what people
       can do with documents
@@ -1044,6 +1056,8 @@ ontologies:
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse adult gross anatomy
   tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
+  used_by:
+  - {label: GXD, url: 'https://www.biosharing.org/biodbcore-000659'}
 - build: {method: owl2obo, source_url: 'https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl'}
   contact: {email: biomodels-net-support@lists.sf.net, label: The Biomodels.net team}
   description: The Mathematical Modelling Ontology (MAMO) is a classification of the
@@ -1207,6 +1221,8 @@ ontologies:
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/MmusDv
   id: mmusdv
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/mmusdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
   products:
@@ -1514,6 +1530,8 @@ ontologies:
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv
   id: olatdv
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/olatdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
   products:
@@ -1617,6 +1635,8 @@ ontologies:
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv
   id: pdumdv
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/pdumdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
   products:
