@@ -11,6 +11,9 @@ page: https://github.com/obophenotype/developmental-stage-ontologies
 products:
   - id: olatdv.obo
   - id: olatdv.owl
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 ---
 
 
