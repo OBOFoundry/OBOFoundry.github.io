@@ -1,11 +1,11 @@
 ---
 layout: ontology_detail
-id: doid
+id: DOID
 in_foundry_order: 1
 contact:
   email: lynn.schriml@gmail.com
   label: Lynn Schriml
-description: Creating a comprehensive hierarchical controlled vocabulary for human disease representation.
+description: Creating a comprehensive classification of human diseases organized by etiology.
 twitter: diseaseontology
 domain: health
 homepage: http://diseaseontology.sourceforge.net/
@@ -22,7 +22,7 @@ browsers:
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
-title: Human disease ontology
+title: Human Disease Ontology
 build:
   source_url: http://sourceforge.net/p/diseaseontology/code/HEAD/tree/trunk/HumanDO.obo?format=raw
   method: obo2owl
@@ -33,6 +33,6 @@ publications:
     title: "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data."
 ---
 
-Creating a comprehensive hierarchical controlled vocabulary for human disease representation.
+Creating a comprehensive classification of human diseases organized by etiology.
 
 <img src="http://www.disease-ontology.org/media/images/DO_logo.jpg"/>
