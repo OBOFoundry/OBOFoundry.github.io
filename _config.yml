@@ -73,6 +73,8 @@ ontologies:
   id: bcgo
   in_foundry: false
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/bcgo.owl
   products:
   - {id: bcgo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/bcgo.owl'}
@@ -469,6 +471,8 @@ ontologies:
   homepage: https://bitbucket.org/uamsdbmi/dron.git
   id: dron
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/dron.owl
   products:
   - {id: dron.owl, ontology_purl: 'http://purl.obolibrary.org/obo/dron.owl'}
@@ -1157,7 +1161,7 @@ ontologies:
   - {id: mfomd.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mfomd.owl', title: Mental
       Disease Ontology}
   title: MFO Mental Disease Ontology
-- build: {method: obo2owl, source_url: 'http://psidev.cvs.sourceforge.net/viewvc/*checkout*/psidev/psi/mi/rel25/data/psi-mi25.obo'}
+- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mi/rel25/data/psi-mi25.obo'}
   contact: {email: Henning.Hermjakob@ebi.ac.uk, label: Henning Hermjakob}
   description: A structured controlled vocabulary for the annotation of experiments
     concerned with protein-protein interactions.
@@ -1166,7 +1170,7 @@ ontologies:
   id: mi
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mi.owl
-  page: http://psidev.sourceforge.net/mi/xml/doc/user/index.html
+  page: https://rawgit.com/MICommunity/psidev/master/psi/mi/xml/doc/user/index.html
   products:
   - {id: mi.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mi.owl'}
   title: Protein-protein interaction
@@ -1250,12 +1254,12 @@ ontologies:
   - {id: mo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mo.owl'}
   replaced_by: obi
   title: Microarray experimental conditions
-- build: {method: obo2owl, source_url: 'http://psidev.cvs.sourceforge.net/viewvc/psidev/psi/mod/data/PSI-MOD.obo'}
+- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mod/data/PSI-MOD.obo'}
   contact: {email: hhe@ebi.ac.uk, label: Henning Hermjakob}
   description: PSI-MOD is an ontology consisting of terms that describe protein chemical
     modifications
   domain: proteins
-  homepage: http://psidev.info/index.php?q=node/104
+  homepage: http://www.psidev.info/MOD
   id: mod
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mod.owl
@@ -1307,7 +1311,7 @@ ontologies:
   - {id: mpath.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mpath.owl'}
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse pathology
-- build: {method: obo2owl, source_url: 'http://psidev.cvs.sourceforge.net/viewvc/psidev/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo'}
+- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo'}
   contact: {email: gerhard.mayer@rub.de, label: Gerhard Mayer}
   dependencies:
   - {id: pato}
@@ -1317,7 +1321,7 @@ ontologies:
   domain: MS experiments
   homepage: http://www.psidev.info/groups/controlled-vocabularies
   id: ms
-  integration_server: http://psidev.cvs.sourceforge.net/viewvc/psidev/psi/psi-ms/mzML/controlledVocabulary/
+  integration_server: https://raw.githubusercontent.com/MICommunity/psidev/master/psi/psi-ms/mzML/controlledVocabulary/
   label: Mass spectrometry ontology
   layout: ontology_detail
   mailing_list: psidev-ms-vocab@lists.sourceforge.net
@@ -1414,6 +1418,8 @@ ontologies:
   homepage: http://www.oae-ontology.org
   id: oae
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/oae.owl
   products:
   - {id: oae.owl, ontology_purl: 'http://purl.obolibrary.org/obo/oae.owl'}
@@ -1439,6 +1445,8 @@ ontologies:
   id: obcs
   in_foundry: false
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/obcs.owl
   products:
   - {id: obcs.owl, ontology_purl: 'http://purl.obolibrary.org/obo/obcs.owl'}
@@ -1494,6 +1502,8 @@ ontologies:
   id: ogg
   in_foundry: false
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/ogg.owl
   products:
   - {id: ogg.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ogg.owl'}
@@ -1590,6 +1600,8 @@ ontologies:
   homepage: http://www.violinet.org/ovae/
   id: ovae
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/ovae.owl
   products:
   - {id: ovae.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ovae.owl'}
@@ -2213,6 +2225,8 @@ ontologies:
   id: vo
   in_foundry: false
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/vo.owl
   products:
   - {id: vo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/vo.owl'}
@@ -2296,6 +2310,8 @@ ontologies:
   id: xao
   in_foundry_order: 1
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/xao.owl
   products:
   - {id: xao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/xao.owl'}

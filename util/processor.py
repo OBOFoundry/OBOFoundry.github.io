@@ -149,15 +149,10 @@ def sparql_compare_ont(obj):
     id = obj['id']
     # this could be made more declarative, or driven by the context.jsonld mapping;
     # however, for now this is relatively simple and easy to understand:
-    if 'license' in obj:
-        msg = run_sparql(obj, 'license', obj['license']['url'], "SELECT DISTINCT ?license WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/license> ?license}")
-        print(id + " " + msg)
-    if 'title' in obj:
-        msg = run_sparql(obj, 'title', obj['title'], "SELECT DISTINCT ?title WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/title> ?title}")
-        print(id + " " + msg)
-    if 'description' in obj:
-        msg = run_sparql(obj, 'description', obj['description'], "SELECT DISTINCT ?description WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/description> ?description}")
-        print(id + " " + msg)
+    license = obj['license']['url'] if 'license' in obj else ''
+    run_sparql(obj, 'license', license, "SELECT DISTINCT ?license WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/license> ?license}")
+    run_sparql(obj, 'title', obj['title'] if 'title' in obj else '', "SELECT DISTINCT ?title WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/title> ?title}")
+    run_sparql(obj, 'description', obj['description'] if 'description' in obj else '', "SELECT DISTINCT ?description WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/description> ?description}")
 
 def run_sparql(obj, p, expected_value, q):
     sparql = SPARQLWrapper("http://sparql.hegroup.org/sparql")
@@ -165,6 +160,7 @@ def run_sparql(obj, p, expected_value, q):
     sparql.setReturnFormat(JSON)
     results = sparql.query().convert()
 
+    id = obj['id']
     got_value = False
     is_match = False
     vs = []
@@ -179,10 +175,14 @@ def run_sparql(obj, p, expected_value, q):
     if got_value and is_match:
         msg = 'CONSISTENT'
     elif got_value and not is_match:
-        msg = 'INCONSISTENT: REMOTE:' + ",".join(vs)+" != LOCAL:"+expected_value
+        if expected_value == '':
+            msg = 'UNDECLARED_LOCAL: REMOTE:' + ",".join(vs)
+        else:
+            msg = 'INCONSISTENT: REMOTE:' + ",".join(vs)+" != LOCAL:"+expected_value
     else:
-        msg = 'UNDECLARED'
-    return p +" " +msg
+        msg = 'UNDECLARED_REMOTE'
+    print(id + " " + p + " " + msg)
+
             
 
         

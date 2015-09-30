@@ -128,6 +128,11 @@
             "id": "bcgo",
             "in_foundry": false,
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/bcgo.owl",
             "products": [
                 {
@@ -929,6 +934,11 @@
             "homepage": "https://bitbucket.org/uamsdbmi/dron.git",
             "id": "dron",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/dron.owl",
             "products": [
                 {
@@ -2355,7 +2365,7 @@
         {
             "build": {
                 "method": "obo2owl",
-                "source_url": "http://psidev.cvs.sourceforge.net/viewvc/*checkout*/psidev/psi/mi/rel25/data/psi-mi25.obo"
+                "source_url": "https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mi/rel25/data/psi-mi25.obo"
             },
             "contact": {
                 "email": "Henning.Hermjakob@ebi.ac.uk",
@@ -2367,7 +2377,7 @@
             "id": "mi",
             "layout": "ontology_detail",
             "ontology_purl": "http://purl.obolibrary.org/obo/mi.owl",
-            "page": "http://psidev.sourceforge.net/mi/xml/doc/user/index.html",
+            "page": "https://rawgit.com/MICommunity/psidev/master/psi/mi/xml/doc/user/index.html",
             "products": [
                 {
                     "id": "mi.owl",
@@ -2537,7 +2547,7 @@
         {
             "build": {
                 "method": "obo2owl",
-                "source_url": "http://psidev.cvs.sourceforge.net/viewvc/psidev/psi/mod/data/PSI-MOD.obo"
+                "source_url": "https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mod/data/PSI-MOD.obo"
             },
             "contact": {
                 "email": "hhe@ebi.ac.uk",
@@ -2545,7 +2555,7 @@
             },
             "description": "PSI-MOD is an ontology consisting of terms that describe protein chemical modifications",
             "domain": "proteins",
-            "homepage": "http://psidev.info/index.php?q=node/104",
+            "homepage": "http://www.psidev.info/MOD",
             "id": "mod",
             "layout": "ontology_detail",
             "ontology_purl": "http://purl.obolibrary.org/obo/mod.owl",
@@ -2664,7 +2674,7 @@
         {
             "build": {
                 "method": "obo2owl",
-                "source_url": "http://psidev.cvs.sourceforge.net/viewvc/psidev/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo"
+                "source_url": "https://raw.githubusercontent.com/MICommunity/psidev/master/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo"
             },
             "contact": {
                 "email": "gerhard.mayer@rub.de",
@@ -2682,7 +2692,7 @@
             "domain": "MS experiments",
             "homepage": "http://www.psidev.info/groups/controlled-vocabularies",
             "id": "ms",
-            "integration_server": "http://psidev.cvs.sourceforge.net/viewvc/psidev/psi/psi-ms/mzML/controlledVocabulary/",
+            "integration_server": "https://raw.githubusercontent.com/MICommunity/psidev/master/psi/psi-ms/mzML/controlledVocabulary/",
             "label": "Mass spectrometry ontology",
             "layout": "ontology_detail",
             "mailing_list": "psidev-ms-vocab@lists.sourceforge.net",
@@ -2865,6 +2875,11 @@
             "homepage": "http://www.oae-ontology.org",
             "id": "oae",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/oae.owl",
             "products": [
                 {
@@ -2912,6 +2927,11 @@
             "id": "obcs",
             "in_foundry": false,
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/obcs.owl",
             "products": [
                 {
@@ -3014,6 +3034,11 @@
             "id": "ogg",
             "in_foundry": false,
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/ogg.owl",
             "products": [
                 {
@@ -3191,6 +3216,11 @@
             "homepage": "http://www.violinet.org/ovae/",
             "id": "ovae",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/ovae.owl",
             "products": [
                 {
@@ -4483,6 +4513,11 @@
             "id": "vo",
             "in_foundry": false,
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/vo.owl",
             "products": [
                 {
@@ -4651,6 +4686,11 @@
             "id": "xao",
             "in_foundry_order": 1,
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/xao.owl",
             "products": [
                 {
