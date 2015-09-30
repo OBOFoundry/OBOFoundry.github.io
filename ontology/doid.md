@@ -22,7 +22,7 @@ browsers:
     title: Monarch Phenotype Page
     url: http://monarchinitiative.org/phenotype/DOID:4
 taxon:
-  id: NCBITaxon:9606
+  id: NCBITaxon:9606 
   label: Homo sapiens
 title: Human Disease Ontology
 build:
