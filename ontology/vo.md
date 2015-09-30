@@ -14,5 +14,8 @@ build:
   source_url: http://www.violinet.org/vo
   method: obo2owl
 tracker: http://sourceforge.net/tracker/?atid=1127137&group_id=255029&func=browse
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 ---
 To ensure consistent representation of vaccine knowledge and to support automated reasoning, a community-based effort to develop the Vaccine Ontology (VO) has been initiated. This international collaborative VO development effort has been joined by many institutes and disciplines around the world. The Vaccine Ontology is also being used in a variety of applications by many user groups in academia and industry.
