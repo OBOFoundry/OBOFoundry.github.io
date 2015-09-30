@@ -153,6 +153,8 @@ TODO: add a quick guide to yaml, and the tags we use.
 
 ## Central OBO library build
 
+(see also the FAQ entry on this)
+
 The central OBO build runs here:
 
  * http://build.berkeleybop.org/job/simple-build-obo-all/
