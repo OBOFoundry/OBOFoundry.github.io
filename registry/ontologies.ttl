@@ -1017,6 +1017,15 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://www.psidev.info/MOD> .
 
+<http://purl.obolibrary.org/obo/uberon/ext.owl>
+        a       <http://www.w3.org/2002/07/owl#Ontology> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "Uberon extended" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Uberon edition that includes subsets of other ontologies and axioms connecting to them" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/uberon/ext.owl" .
+
 <http://purl.obolibrary.org/obo/gaz.obo>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/gaz.obo" .
@@ -1026,15 +1035,6 @@
                 "OBO Format version of Main release" ;
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ncbitaxon.obo" .
-
-<http://purl.obolibrary.org/obo/uberon/ext.owl>
-        a       <http://www.w3.org/2002/07/owl#Ontology> ;
-        <http://purl.org/dc/elements/1.1/description>
-                "Uberon extended" ;
-        <http://purl.org/dc/elements/1.1/title>
-                "Uberon edition that includes subsets of other ontologies and axioms connecting to them" ;
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/uberon/ext.owl" .
 
 <http://purl.obolibrary.org/obo/xco>
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>
@@ -1640,13 +1640,13 @@
         <http://www.w3.org/ns/dcat#distribution>
                 <http://purl.obolibrary.org/obo/fix.owl> .
 
-<http://purl.obolibrary.org/obo/NCBITaxon_4890>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Ascomycota" .
-
 <http://purl.obolibrary.org/obo/ms.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ms.owl" .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_4890>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Ascomycota" .
 
 <http://purl.obolibrary.org/obo/iao.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -2296,12 +2296,6 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl" .
 
-<http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=UBERON:0001062>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "RGD" ;
-        <http://purl.org/dc/elements/1.1/title>
-                "Gene Ontology AmiGO 2 Browser" .
-
 <http://purl.obolibrary.org/obo/epo>
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/method>
@@ -2319,6 +2313,12 @@
                 <http://purl.obolibrary.org/obo/epo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <https://code.google.com/p/epidemiology-ontology/> .
+
+<http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=UBERON:0001062>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "RGD" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Gene Ontology AmiGO 2 Browser" .
 
 <http://purl.obolibrary.org/obo/opl.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -3110,6 +3110,8 @@
                 "FYPO is a formal ontology of phenotypes observed in fission yeast." ;
         <http://purl.org/dc/elements/1.1/title>
                 "Fission Yeast Phenotype Ontology" ;
+        <http://purl.org/dc/terms/1.1/license>
+                <http://creativecommons.org/licenses/by/3.0/> ;
         <http://purl.org/dc/terms/1.1/theme>
                 "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>
@@ -3130,20 +3132,6 @@
 <http://www.ncbi.nlm.nih.gov/pubmed/24499703>
         <http://purl.org/dc/elements/1.1/title>
                 "The pathway ontology - updates and applications." .
-
-<http://purl.obolibrary.org/obo/aao>
-        <http://purl.obolibrary.org/obo/IAO_0000136>
-                <http://purl.obolibrary.org/obo/NCBITaxon_8292> ;
-        <http://purl.org/dc/elements/1.1/title>
-                "Amphibian gross anatomy" ;
-        <http://www.w3.org/ns/dcat#contactPoint>
-                [ <http://www.w3.org/2000/01/rdf-schema#label>
-                          "david.c.blackburn@gmail.com" ;
-                  <http://xmlns.com/foaf/0.1/mbox>
-                          "David Blackburn"
-                ] ;
-        <http://xmlns.com/foaf/0.1/homepage>
-                <http://github.com/seger/aao> .
 
 <http://purl.obolibrary.org/obo/exo>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -3166,6 +3154,20 @@
                 <http://ctdbase.org/downloads/#exposures> ;
         <http://xmlns.com/foaf/0.1/page>
                 <http://ctdbase.org/downloads/#exposures> .
+
+<http://purl.obolibrary.org/obo/aao>
+        <http://purl.obolibrary.org/obo/IAO_0000136>
+                <http://purl.obolibrary.org/obo/NCBITaxon_8292> ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Amphibian gross anatomy" ;
+        <http://www.w3.org/ns/dcat#contactPoint>
+                [ <http://www.w3.org/2000/01/rdf-schema#label>
+                          "david.c.blackburn@gmail.com" ;
+                  <http://xmlns.com/foaf/0.1/mbox>
+                          "David Blackburn"
+                ] ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <http://github.com/seger/aao> .
 
 <http://purl.obolibrary.org/obo/bcgo>
         <http://purl.org/dc/elements/1.1/description>
@@ -5013,10 +5015,6 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/bfo.obo" .
 
-<http://purl.obolibrary.org/obo/caro.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/caro.owl" .
-
 <http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118>
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "HPO" ;
@@ -5074,6 +5072,10 @@
                 ] ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://neuinfo.org/> .
+
+<http://purl.obolibrary.org/obo/caro.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/caro.owl" .
 
 <http://purl.obolibrary.org/obo/dc_cl>
         <http://purl.obolibrary.org/obo/IAO_0000136>
