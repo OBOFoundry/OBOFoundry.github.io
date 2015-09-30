@@ -18,6 +18,10 @@ taxon:
   id: NCBITaxon:4896
   label: S. pombe
 tracker: https://github.com/pombase/fypo/issues
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
+depicted_by: http://www.pombase.org/sites/pombase.org/files/images/fypo_logo_tiny.png
 ---
 
 FYPO is being developed to support the comprehensive and detailed representation of phenotypes in PomBase, the new online fission yeast resource (www.pombase.org). Its scope is similar to that of the Ascomycete Phenotype Ontology (APO), but FYPO includes more detailed pre-composed terms as well as computable definitions.
