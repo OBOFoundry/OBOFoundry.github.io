@@ -1,17 +1,19 @@
 ---
 layout: ontology_detail
-id: DOID
+id: doid
 in_foundry_order: 1
 contact:
   email: lynn.schriml@gmail.com
   label: Lynn Schriml
-description: Creating a comprehensive classification of human diseases organized by etiology.
+description: An ontology for describing the classification of human diseases organized by etiology.
 twitter: diseaseontology
-domain: health
+facebook: https://www.facebook.com/diseaseontology
+domain: disease
 homepage: http://diseaseontology.sourceforge.net/
 page: http://diseaseontology.sourceforge.net/
 products:
   - id: doid.owl
+  - id: doid.obo
 browsers:
   - label: DO
     title: DO Browser
@@ -29,8 +31,11 @@ build:
   infallible: 1
 tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/25348409
-    title: "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data."
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409
+    title: "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 ---
 
 Creating a comprehensive classification of human diseases organized by etiology.
