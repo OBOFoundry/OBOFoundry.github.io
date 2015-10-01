@@ -1895,6 +1895,7 @@
                 }
             ],
             "build": {
+                "infallible": 1,
                 "method": "archive",
                 "path": "archive/hp",
                 "source_url": "http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip"
@@ -2686,6 +2687,29 @@
                 "label": "Mus"
             },
             "title": "Mouse pathology"
+        },
+        {
+            "contact": {
+                "email": "bpeters@liai.org",
+                "label": "Bjoern Peters"
+            },
+            "description": "Represents MHC restrictions",
+            "homepage": "https://github.com/IEDB/MRO",
+            "id": "mro",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "url": "https://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/mro.owl",
+            "products": [
+                {
+                    "id": "mro.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mro.owl"
+                }
+            ],
+            "title": "MHC restriction ontology",
+            "tracker": "https://github.com/IEDB/MRO/issues"
         },
         {
             "build": {

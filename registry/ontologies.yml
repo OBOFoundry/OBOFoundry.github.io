@@ -918,7 +918,7 @@ ontologies:
   browsers:
   - {label: HPO, title: Charite HPO Browser, url: 'http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118'}
   - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/HP:0000118'}
-  build: {method: archive, path: archive/hp, source_url: 'http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
+  build: {infallible: 1, method: archive, path: archive/hp, source_url: 'http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
   contact: {email: sebastian.koehler@charite.de, label: Sebastian Koehler}
   description: A structured and controlled vocabulary for the phenotypic features
     encountered in human hereditary and other disease.
@@ -1310,6 +1310,17 @@ ontologies:
   - {id: mpath.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mpath.owl'}
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse pathology
+- contact: {email: bpeters@liai.org, label: Bjoern Peters}
+  description: Represents MHC restrictions
+  homepage: https://github.com/IEDB/MRO
+  id: mro
+  layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/mro.owl
+  products:
+  - {id: mro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mro.owl'}
+  title: MHC restriction ontology
+  tracker: https://github.com/IEDB/MRO/issues
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo'}
   contact: {email: gerhard.mayer@rub.de, label: Gerhard Mayer}
   dependencies:

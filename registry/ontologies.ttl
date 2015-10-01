@@ -36,34 +36,6 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <https://github.com/obophenotype/ctenophore-ontology> .
 
-<http://purl.obolibrary.org/obo/ero>
-        <http://obofoundry.github.io/vocabulary/has_build_information>
-                [ <http://obofoundry.github.io/vocabulary/method>
-                          "owl2obo" ;
-                  <http://obofoundry.github.io/vocabulary/source_url>
-                          "http://purl.obolibrary.org/obo/ero.owl"
-                ] ;
-        <http://purl.org/dc/elements/1.1/description>
-                "An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens." ;
-        <http://purl.org/dc/elements/1.1/title>
-                "eagle-i resource ontology" ;
-        <http://purl.org/dc/terms/1.1/theme>
-                "resources" ;
-        <http://usefulinc.com/ns/doap#bug-database>
-                "http://code.google.com/p/eagle-i/issues/list" ;
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/ero.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>
-                [ <http://www.w3.org/2000/01/rdf-schema#label>
-                          "Carlo Torniai" ;
-                  <http://xmlns.com/foaf/0.1/mbox>
-                          "carlotorniai@gmail.com"
-                ] ;
-        <http://www.w3.org/ns/dcat#distribution>
-                <http://purl.obolibrary.org/obo/ero.owl> ;
-        <http://xmlns.com/foaf/0.1/homepage>
-                <http://code.google.com/p/eagle-i/> .
-
 <http://purl.obolibrary.org/obo/pr>
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/method>
@@ -91,6 +63,34 @@
                 <http://purl.obolibrary.org/obo/pr.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://proconsortium.org> .
+
+<http://purl.obolibrary.org/obo/ero>
+        <http://obofoundry.github.io/vocabulary/has_build_information>
+                [ <http://obofoundry.github.io/vocabulary/method>
+                          "owl2obo" ;
+                  <http://obofoundry.github.io/vocabulary/source_url>
+                          "http://purl.obolibrary.org/obo/ero.owl"
+                ] ;
+        <http://purl.org/dc/elements/1.1/description>
+                "An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens." ;
+        <http://purl.org/dc/elements/1.1/title>
+                "eagle-i resource ontology" ;
+        <http://purl.org/dc/terms/1.1/theme>
+                "resources" ;
+        <http://usefulinc.com/ns/doap#bug-database>
+                "http://code.google.com/p/eagle-i/issues/list" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/ero.owl" ;
+        <http://www.w3.org/ns/dcat#contactPoint>
+                [ <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Carlo Torniai" ;
+                  <http://xmlns.com/foaf/0.1/mbox>
+                          "carlotorniai@gmail.com"
+                ] ;
+        <http://www.w3.org/ns/dcat#distribution>
+                <http://purl.obolibrary.org/obo/ero.owl> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <http://code.google.com/p/eagle-i/> .
 
 <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi>
         <http://www.w3.org/2000/01/rdf-schema#label>
@@ -318,6 +318,10 @@
 <http://purl.obolibrary.org/obo/NCBITaxon_6893>
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "spiders" .
+
+<http://purl.obolibrary.org/obo/mro.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/mro.owl" .
 
 <http://purl.obolibrary.org/obo/bspo>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -672,13 +676,13 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ncbitaxon.owl" .
 
-<http://purl.obolibrary.org/obo/gaz.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/gaz.owl" .
-
 <http://purl.obolibrary.org/obo/NCBITaxon_10114>
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Rattus" .
+
+<http://purl.obolibrary.org/obo/gaz.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/gaz.owl" .
 
 <http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl>
         a       <http://purl.obolibrary.org/obo/MergedOntology> ;
@@ -1062,7 +1066,7 @@
                           "shimoyama@mcw.edu"
                 ] ;
         <http://www.w3.org/ns/dcat#distribution>
-                <http://purl.obolibrary.org/obo/xco.owl> , <http://purl.obolibrary.org/obo/xco.obo> ;
+                <http://purl.obolibrary.org/obo/xco.obo> , <http://purl.obolibrary.org/obo/xco.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://rgd.mcw.edu/rgdweb/ontology/search.html> , <ftp://rgd.mcw.edu/pub/ontology/experimental_condition/> .
 
@@ -1450,6 +1454,10 @@
         <http://xmlns.com/foaf/0.1/page>
                 <https://github.com/obophenotype/developmental-stage-ontologies> .
 
+<http://purl.obolibrary.org/obo/fbdv/fbbt-simple.obo>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/fbdv/fbbt-simple.obo" .
+
 <http://purl.obolibrary.org/obo/mpath>
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/method>
@@ -1477,10 +1485,6 @@
                 <http://purl.obolibrary.org/obo/mpath.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://www.pathbase.net> .
-
-<http://purl.obolibrary.org/obo/fbdv/fbbt-simple.obo>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/fbdv/fbbt-simple.obo" .
 
 <http://purl.obolibrary.org/obo/mop>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -1796,12 +1800,6 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <https://github.com/obophenotype/cephalopod-ontology> .
 
-<http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "FB" ;
-        <http://purl.org/dc/elements/1.1/title>
-                "FlyBase Browser" .
-
 <http://purl.obolibrary.org/obo/to>
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/method>
@@ -1837,6 +1835,12 @@
                 <http://planteome.org> ;
         <http://xmlns.com/foaf/0.1/page>
                 <http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=TO:0000387&session_id=815amigo1442021959> .
+
+<http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "FB" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "FlyBase Browser" .
 
 <http://purl.obolibrary.org/obo/nmr>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -2534,6 +2538,28 @@
 <http://purl.obolibrary.org/obo/kisao.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/kisao.owl" .
+
+<http://purl.obolibrary.org/obo/mro>
+        <http://purl.org/dc/elements/1.1/description>
+                "Represents MHC restrictions" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "MHC restriction ontology" ;
+        <http://purl.org/dc/terms/1.1/license>
+                <https://creativecommons.org/licenses/by/3.0/> ;
+        <http://usefulinc.com/ns/doap#bug-database>
+                "https://github.com/IEDB/MRO/issues" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/mro.owl" ;
+        <http://www.w3.org/ns/dcat#contactPoint>
+                [ <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Bjoern Peters" ;
+                  <http://xmlns.com/foaf/0.1/mbox>
+                          "bpeters@liai.org"
+                ] ;
+        <http://www.w3.org/ns/dcat#distribution>
+                <http://purl.obolibrary.org/obo/mro.owl> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <https://github.com/IEDB/MRO> .
 
 <http://purl.obolibrary.org/obo/hp.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -4684,13 +4710,13 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ehdaa2.owl" .
 
-<http://purl.obolibrary.org/obo/bfo.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/bfo.owl" .
-
 <http://www.ncbi.nlm.nih.gov/pubmed/18950739>
         <http://purl.org/dc/elements/1.1/title>
                 "The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease." .
+
+<http://purl.obolibrary.org/obo/bfo.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/bfo.owl" .
 
 <http://purl.obolibrary.org/obo/omrse>
         <http://obofoundry.github.io/vocabulary/has_build_information>
