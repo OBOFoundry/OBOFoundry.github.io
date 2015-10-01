@@ -20,6 +20,7 @@ build:
   source_url: http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip
   path: archive/hp
   method: archive
+  infallible: 1
 tracker: https://github.com/obophenotype/human-phenotype-ontology/issues/
 termgenie: http://hp.termgenie.org
 browsers:
