@@ -12,7 +12,7 @@
       <!-- TODO: copy source -->
       <!-- see also: http://stackoverflow.com/questions/18474564/bootstrap-3-navbar-with-logo -->
       <a class="navbar-brand" href="/">
-        <img style="max-width:50px; margin-top: -7px;" src="http://obofoundry.org/images/foundrylogo.gif"/>
+        <img style="max-width:50px; margin-top: -7px;" src="/images/foundrylogo.png"/>
       </a>
     </div>
 
@@ -46,17 +46,21 @@
           <ul class="dropdown-menu">
             <li><a href="/">Ontology Table</a></li>
             <li><a href="/id-policy.html">ID Policy</a></li>
+            <li role="separator" class="divider"></li>
             <li><a href="https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology">Ontologies Metadata Source</a></li>
-            <li><a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/registry/ontologies.yml">Ontology YAML</a></li>
+            <li><a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/registry/">Combined Metadata</a></li>
+            <li><a href="https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.yml">Ontology YAML</a></li>
+            <li><a href="https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.jsonld">Ontology JSON-LD <i>alpha</i></a></li>
+            <li><a href="https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.ttl">Ontology RDF/Turtle <i>alpha</i></a></li>
           </ul>
         </li>
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Participate <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="allnews.html">OBO Foundry News</a></li>
+            <li><a href="/allnews.html">OBO Foundry News</a></li>
             <li>Twitter Feed (coming soon)</li>
-            <li>Mailing lists (TODO)</li>
+            <li><a href="https://lists.sourceforge.net/lists/listinfo/obo-discuss">OBO-Discuss Mail List</a></li>
           </ul>
         </li>
 
@@ -65,12 +69,15 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FAQ <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <!-- in theory we could auto-generate this part of the navbar -->
-            <li><a href="/faq/who-is-the-foundry.html">Who is the OBO Foundry?</a></li>
+            <!-- <li><a href="/faq/who-is-the-foundry.html">Who is the OBO Foundry?</a></li> -->
             <li role="separator" class="divider"></li>
             <li><a href="/faq/how-do-i-register-my-ontology.html">How do I register my ontology?</a></li>
             <li><a href="/faq/how-do-i-edit-metadata.html">How do I edit the metadata for my ontology?</a></li>
-            <li><a href="/faq/adding-custom-browsers">How do I add a custom browser for my ontology?</a></li>
+            <li><a href="/faq/how-do-i-add-browser.html">How do I add a custom browser for my ontology?</a></li>
+            <li><a href="/faq/what-is-the-build-field.html">What is the <code>build</code> object in the ontology metadata?</a></li>
             <li role="separator" class="divider"></li>
+            <li><i>Website</i></li>
+            <li><a href="/faq/how-do-i-modify-website.html">How do I modify the OBO website?</a></li>
           </ul>
         </li>
 
@@ -83,7 +90,7 @@
             <li><a href="/legacy/relatedprojects.html">Related</a></li>
             <li><a href="/legacy/crit.html">Criteria</a></li>
             <li><a href="/publications.html">Publications</a></li>
-            <li><a href="http://wiki.obofoundry.org">Old Wiki</a></li>
+            <li><a href="http://wiki.obofoundry.org/wiki/index.php/Main_Page">Old Wiki</a></li>
             <li><a href="https://code.google.com/p/obo-foundry-operations-committee/wiki/">Old Operation Wiki</a></li>
           </ul>
         </li>

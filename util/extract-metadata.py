@@ -56,12 +56,35 @@ def validate_markdown(args):
     are present etc. This could be done in various ways, e.g. jsonschema, programmatic checks. We
     should also check translation -> jsonld -> rdf works as expected.
     """
+    errs = []
     for fn in args.files:
         print("VALIDATING:"+fn)
         # we don't do anything with the results; an
         # error is thrown 
-        load_md(fn)
+        (obj, md) = load_md(fn)
         print("OK:"+fn)
+        errs += validate_structure(obj,md)
+    if len(errs) > 0:
+        print("FAILURES:")
+        for e in errs:
+            print("ERROR:"+e)
+        exit(1)
+
+def validate_structure(obj,md):
+    errs = []
+    is_obs = False
+    if 'id' not in obj:
+        errs.append("No id: ")
+    if 'is_obsolete' in obj:
+        is_obs = True
+    id = obj['id']
+    if 'title' not in obj:
+        errs.append("No title: "+id)
+    #if 'description' not in obj:
+    #    errs.append("No description: "+id+" " + ("OBS" if is_obs else ""))
+    if 'layout' not in obj:
+        errs.append("No layout tag: "+id+" -- this is required for proper rendering")
+    return errs
 
 def concat_ont_yaml(args):
     objs = []
@@ -84,7 +107,18 @@ def decorate_metadata(objs):
     https://github.com/OBOFoundry/OBOFoundry.github.io/issues/82
     """
     for obj in objs:
-        if ('products' in obj):
+        if 'license' in obj:
+            # https://creativecommons.org/about/downloads
+            license = obj['license']
+            lurl = license['url']
+            logo = ''
+            if lurl.startswith('http://creativecommons.org/licenses/by/'):
+                logo = 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png'
+            if lurl.startswith('http://creativecommons.org/publicdomain/zero/'):
+                logo = 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png'
+            if not logo == '':
+                license['logo'] = logo
+        if 'products' in obj:
             # decorate top-level ontology; but only if it has at least one product
             decorate_entry(obj, ".owl")
             for product in obj['products']:

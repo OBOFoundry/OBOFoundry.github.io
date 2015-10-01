@@ -5,7 +5,7 @@ in_foundry_order: 1
 title: Plant Ontology
 build:
   notes: switch to vcs method
-  source_url: http://palea.cgrb.oregonstate.edu/viewsvn/Poc/tags/live/plant_ontology.obo?view=co
+  source_url: https://raw.githubusercontent.com/Planteome/plant-ontology/master/po-release-files/plant_ontology.obo
   method: obo2owl
   infallible: 1
 contact:
@@ -14,7 +14,7 @@ contact:
 description: "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data."
 domain: anatomy and development
 homepage: http://www.plantontology.org
-page: http://www.plantontology.org/docs/docs.html
+page: http://www.plantontology.org/amigo/go.cgi
 twitter: planteome
 tracker: https://github.com/Planteome/plant-ontology/issues
 publications:
@@ -24,6 +24,9 @@ publications:
     title: "Ontologies as integrative tools for plant science."
 products:
   - id: po.owl
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae

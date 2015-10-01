@@ -27,7 +27,7 @@ ontologies:
   description: AEO is an ontology of anatomical structures that expands CARO, the
     Common Anatomy Reference Ontology
   domain: anatomy
-  homepage: http://www.obofoundry.org/wiki/index.php/AEO:Main_Page
+  homepage: https://github.com/obophenotype/human-developmental-anatomy-ontology/
   id: aeo
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/aeo.owl
@@ -52,7 +52,7 @@ ontologies:
   description: A structured controlled vocabulary for the phenotypes of Ascomycete
     fungi
   domain: phenotype
-  homepage: 'http://www.yeastgenome.org/ '
+  homepage: http://www.yeastgenome.org/
   id: apo
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/apo.owl
@@ -73,6 +73,8 @@ ontologies:
   id: bcgo
   in_foundry: false
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/bcgo.owl
   products:
   - {id: bcgo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/bcgo.owl'}
@@ -100,7 +102,8 @@ ontologies:
   homepage: http://ifomis.org/bfo/
   id: bfo
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   mailing_list: https://groups.google.com/forum/#!forum/bfo-discuss
   ontology_purl: http://purl.obolibrary.org/obo/bfo.owl
   products:
@@ -136,6 +139,8 @@ ontologies:
   homepage: https://github.com/obophenotype/biological-spatial-ontology
   id: bspo
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/bspo.owl
   products:
   - {id: bspo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/bspo.owl'}
@@ -195,7 +200,8 @@ ontologies:
   homepage: https://github.com/obophenotype/cephalopod-ontology
   id: ceph
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/ceph.owl
   products:
   - {id: ceph.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ceph.owl'}
@@ -250,6 +256,9 @@ ontologies:
   dependencies:
   - {id: uberon}
   - {id: go}
+  - {id: ro}
+  - {id: chebi}
+  - {id: pato}
   description: The Cell Ontology is a structured controlled vocabulary for cell types
     in animals.
   domain: cells
@@ -257,6 +266,8 @@ ontologies:
   integration_server: http://build.berkeleybop.org/job/build-cl/
   label: Cell Ontology
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
   ontology_purl: http://purl.obolibrary.org/obo/cl.owl
   products:
@@ -281,6 +292,11 @@ ontologies:
     method: vcs, post_processing_command: owltools --use-catalog clo.owl --merge-imports-closure
       --ni -o -f obo --no-check clo.obo, system: svn}
   contact: {email: Sirarat.Sarntivijai@fda.hhs.gov, label: Sirarat Sarntivijai}
+  dependencies:
+  - {id: uberon}
+  - {id: cl}
+  - {id: doid}
+  - {id: ncbitaxon}
   description: An ontology to standardize and integrate cell line information and
     to support computer-assisted reasoning.
   homepage: http://www.clo-ontology.org
@@ -320,12 +336,16 @@ ontologies:
 - build: {checkout: 'git clone https://github.com/obophenotype/ctenophore-ontology.git',
     method: vcs, path: src/ontology, system: git}
   contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
+  dependencies:
+  - {id: uberon}
+  - {id: ro}
   description: An anatomical and developmental ontology for ctenophores (Comb Jellies)
   domain: anatomy
   homepage: https://github.com/obophenotype/ctenophore-ontology
   id: cteno
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/cteno.owl
   products:
   - {id: cteno.owl, ontology_purl: 'http://purl.obolibrary.org/obo/cteno.owl'}
@@ -405,23 +425,27 @@ ontologies:
   - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/DOID:4'}
   build: {infallible: 1, method: obo2owl, source_url: 'http://sourceforge.net/p/diseaseontology/code/HEAD/tree/trunk/HumanDO.obo?format=raw'}
   contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
-  description: Creating a comprehensive hierarchical controlled vocabulary for human
-    disease representation.
-  domain: health
+  description: An ontology for describing the classification of human diseases organized
+    by etiology.
+  domain: disease
+  facebook: https://www.facebook.com/diseaseontology
   homepage: http://diseaseontology.sourceforge.net/
   id: doid
   in_foundry_order: 1
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/doid.owl
   page: http://diseaseontology.sourceforge.net/
   products:
   - {id: doid.owl, ontology_purl: 'http://purl.obolibrary.org/obo/doid.owl'}
+  - {id: doid.obo, ontology_purl: 'http://purl.obolibrary.org/obo/doid.obo'}
   publications:
-  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/25348409', title: 'Disease Ontology 2015
-      update: an expanded and updated database of human diseases for linking biomedical
-      knowledge through disease data.'}
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409', title: 'Disease Ontology
+      2015 update: an expanded and updated database of human diseases for linking
+      biomedical knowledge through disease data'}
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
-  title: Human disease ontology
+  title: Human Disease Ontology
   tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
   twitter: diseaseontology
 - browsers:
@@ -451,6 +475,8 @@ ontologies:
   homepage: https://bitbucket.org/uamsdbmi/dron.git
   id: dron
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/dron.owl
   products:
   - {id: dron.owl, ontology_purl: 'http://purl.obolibrary.org/obo/dron.owl'}
@@ -460,6 +486,7 @@ ontologies:
   contact: {email: MChibucos@som.umaryland.edu, label: 'Chibucos, Marcus'}
   description: An ontology for experimental and other evidence statements.
   domain: experiments
+  funded_by: ['http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400']
   homepage: https://github.com/evidenceontology/evidenceontology/
   id: eco
   layout: ontology_detail
@@ -490,6 +517,10 @@ ontologies:
 - build: {checkout: 'git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git',
     method: vcs, path: src/ontology, system: git}
   contact: {email: J.Bard@ed.ac.uk, label: Jonathan Bard}
+  dependencies:
+  - {id: aeo}
+  - {id: caro}
+  - {id: cl}
   description: A structured controlled vocabulary of stage-specific anatomical structures
     of the developing human.
   domain: anatomy
@@ -521,6 +552,8 @@ ontologies:
   - {id: emap.owl, ontology_purl: 'http://purl.obolibrary.org/obo/emap.owl'}
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse gross anatomy and development, timed
+  used_by:
+  - {label: GXD, url: 'https://www.biosharing.org/biodbcore-000659'}
 - build: {method: obo2owl, notes: new url soon, source_url: 'ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAPA.obo'}
   contact: {email: Terry.Hayamizu@jax.org, label: Terry Hayamizu}
   description: Abstract (i.e. non-stage specific) stage-specific anatomical structures
@@ -535,14 +568,24 @@ ontologies:
   - {id: emap.owl, ontology_purl: 'http://purl.obolibrary.org/obo/emap.owl'}
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse gross anatomy and development, timed
+  used_by:
+  - {label: GXD, url: 'https://www.biosharing.org/biodbcore-000659'}
 - build: {checkout: 'git clone https://github.com/EnvironmentOntology/envo.git', email_cc: cjmungall@lbl.gov,
     infallible: 1, method: vcs, path: ., system: git}
   contact: {email: p.buttigieg@googlemail.com, label: Pier Luigi Buttigieg}
+  dependencies:
+  - {id: uberon}
+  - {id: pco}
+  - {id: ro}
+  - {id: chebi}
+  - {id: ncbitaxon}
   description: Ontology of environmental features and habitats
   domain: environment
   homepage: http://environmentontology.org/
   id: envo
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/envo.owl
   page: https://github.com/EnvironmentOntology/envo
   products:
@@ -552,22 +595,24 @@ ontologies:
       contextualising biological and biomedical entities'}
   title: Environment Ontology
   tracker: https://github.com/EnvironmentOntology/envo/issues/
-- build: {method: obo2owl, source_url: 'http://palea.cgrb.oregonstate.edu/viewsvn/Poc/trunk/ontology/collaborators_ontology/plant_environment/environment_ontology.obo'}
+- build: {method: obo2owl, source_url: 'https://github.com/Planteome/plant-environment-ontology/blob/master/plant-environment-ontology.obo.owl'}
   contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
-  description: A structured, controlled vocabulary for the representation of plant
-    environmental conditions.
+  description: "A structured, controlled vocabulary which \u2260\u2260describes the\
+    \ treatments, growing conditions, and/or study types used in various types of\
+    \ plant biology experiments."
   domain: environment
-  homepage: http://www.gramene.org
+  homepage: http://planteome.org/
   id: eo
   layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/eo.owl
-  page: http://www.gramene.org/plant_ontology/index.html#eo
+  page: http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=EO:0007359&session_id=815amigo1442021959
   products:
   - {id: eo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/eo.owl'}
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/22847540', title: Ontologies as integrative
       tools for plant science.}
-  title: Plant Environmental Conditions
+  title: Plant Environment Ontology
   tracker: https://github.com/Planteome/plant-environment-ontology/issues
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/epo.owl'}
   description: An ontology designed to support the semantic annotation of epidemiology
@@ -755,11 +800,14 @@ ontologies:
   tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
 - build: {infallible: 1, method: obo2owl, source_url: 'https://sourceforge.net/p/pombase/code/HEAD/tree/phenotype_ontology/releases/latest/fypo.obo?format=raw'}
   contact: {email: mah79@cam.ac.uk, label: Midori Harris}
+  depicted_by: http://www.pombase.org/sites/pombase.org/files/images/fypo_logo_tiny.png
   description: FYPO is a formal ontology of phenotypes observed in fission yeast.
   domain: phenotype
   homepage: https://github.com/pombase/fypo
   id: fypo
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/fypo.owl
   products:
   - {id: fypo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fypo.owl'}
@@ -768,14 +816,16 @@ ontologies:
   tracker: https://github.com/pombase/fypo/issues
 - build: {method: archive, path: archive, source_url: 'http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
   contact: {email: ma11@gen.cam.ac.uk, label: Michael Ashburner}
+  description: A gazetteer constructed on ontological principles
   homepage: http://gensc.org/gc_wiki/index.php/GAZ_Project
   id: gaz
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/gaz.owl
   products:
   - {id: gaz.owl, ontology_purl: 'http://purl.obolibrary.org/obo/gaz.owl'}
+  - {id: gaz.obo, ontology_purl: 'http://purl.obolibrary.org/obo/gaz.obo'}
   title: Gazetteer
-  tracker: http://sourceforge.net/tracker/?func=browse&group_id=76834&atid=1014856
+  tracker: https://github.com/EnvironmentOntology/envo/issues/
 - contact: {email: MBrochhausen@uams.edu, label: Mathias Brochhausen}
   description: An ontology of geographical entities
   homepage: https://code.google.com/p/ge-ontology/
@@ -809,12 +859,14 @@ ontologies:
   depicted_by: http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png
   description: An ontology for describing the function of genes and gene products
   domain: biology
+  facebook: https://www.facebook.com/Gene-Ontology-305908656519/
   id: go
   in_foundry_order: 1
   integration_server: http://build.berkeleybop.org/view/GO
   label: GO
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/go.owl
   products:
   - {id: go.owl, ontology_purl: 'http://purl.obolibrary.org/obo/go.owl'}
@@ -863,7 +915,8 @@ ontologies:
   homepage: http://bioinfo.unil.ch
   id: hom
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/hom.owl
   products:
   - {id: hom.owl, ontology_purl: 'http://purl.obolibrary.org/obo/hom.owl'}
@@ -873,7 +926,7 @@ ontologies:
   browsers:
   - {label: HPO, title: Charite HPO Browser, url: 'http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118'}
   - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/HP:0000118'}
-  build: {method: obo2owl, path: archive/hp, source_url: 'http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
+  build: {method: archive, path: archive/hp, source_url: 'http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
   contact: {email: sebastian.koehler@charite.de, label: Sebastian Koehler}
   description: A structured and controlled vocabulary for the phenotypic features
     encountered in human hereditary and other disease.
@@ -902,6 +955,8 @@ ontologies:
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv
   id: hsapdv
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/hsapdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
   products:
@@ -913,13 +968,19 @@ ontologies:
   depicted_by: https://avatars0.githubusercontent.com/u/13591168?v=3&s=200
   description: An ontology of information entities.
   domain: information
-  homepage: http://purl.obolibrary.org/obo/iao
+  homepage: https://github.com/information-artifact-ontology/IAO/
   id: iao
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/iao.owl
-  page: https://github.com/information-artifact-ontology/IAO
   products:
   - {id: iao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/iao.owl'}
+  - {id: iao/ontology-metadata.owl, ontology_purl: 'http://purl.obolibrary.org/obo/iao/ontology-metadata.owl',
+    page: 'https://github.com/information-artifact-ontology/IAO/wiki/OntologyMetadata',
+    title: IAO ontology metadata}
+  - {id: iao/dev/iao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/iao/dev/iao.owl',
+    title: IAO dev}
   - contact: {email: mbrochhausen@gmail.com, label: Mathias Brochhausen}
     description: An ontology based on a theory of document acts describing what people
       can do with documents
@@ -992,8 +1053,6 @@ ontologies:
   in_foundry: false
   is_obsolete: true
   layout: ontology_detail
-  products:
-  - {id: lipro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/lipro.owl'}
   title: Lipid Ontology
 - contact: {email: Peter Midford, label: peteremidford@yahoo.com}
   homepage: http://www.mesquiteproject.org/ontology/Loggerhead/index.html
@@ -1016,6 +1075,8 @@ ontologies:
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse adult gross anatomy
   tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
+  used_by:
+  - {label: GXD, url: 'https://www.biosharing.org/biodbcore-000659'}
 - build: {method: owl2obo, source_url: 'https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl'}
   contact: {email: biomodels-net-support@lists.sf.net, label: The Biomodels.net team}
   description: The Mathematical Modelling Ontology (MAMO) is a classification of the
@@ -1062,7 +1123,8 @@ ontologies:
   homepage: http://feedexp.org
   id: mfmo
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/mfmo.owl
   products:
   - {id: mfmo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mfmo.owl'}
@@ -1100,11 +1162,13 @@ ontologies:
   domain: health
   homepage: http://mental-functioning-ontology.googlecode.com
   id: mfomd
+  layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mfomd.owl
   products:
   - {id: mfomd.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mfomd.owl', title: Mental
       Disease Ontology}
-- build: {method: obo2owl, source_url: 'http://psidev.cvs.sourceforge.net/viewvc/*checkout*/psidev/psi/mi/rel25/data/psi-mi25.obo'}
+  title: MFO Mental Disease Ontology
+- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mi/rel25/data/psi-mi25.obo'}
   contact: {email: Henning.Hermjakob@ebi.ac.uk, label: Henning Hermjakob}
   description: A structured controlled vocabulary for the annotation of experiments
     concerned with protein-protein interactions.
@@ -1113,7 +1177,7 @@ ontologies:
   id: mi
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mi.owl
-  page: http://psidev.sourceforge.net/mi/xml/doc/user/index.html
+  page: https://rawgit.com/MICommunity/psidev/master/psi/mi/xml/doc/user/index.html
   products:
   - {id: mi.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mi.owl'}
   title: Protein-protein interaction
@@ -1176,6 +1240,8 @@ ontologies:
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/MmusDv
   id: mmusdv
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/mmusdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
   products:
@@ -1195,12 +1261,12 @@ ontologies:
   - {id: mo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mo.owl'}
   replaced_by: obi
   title: Microarray experimental conditions
-- build: {method: obo2owl, source_url: 'http://psidev.cvs.sourceforge.net/viewvc/psidev/psi/mod/data/PSI-MOD.obo'}
+- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mod/data/PSI-MOD.obo'}
   contact: {email: hhe@ebi.ac.uk, label: Henning Hermjakob}
   description: PSI-MOD is an ontology consisting of terms that describe protein chemical
     modifications
   domain: proteins
-  homepage: http://psidev.info/index.php?q=node/104
+  homepage: http://www.psidev.info/MOD
   id: mod
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mod.owl
@@ -1212,10 +1278,12 @@ ontologies:
   description: Processes at the molecular level
   homepage: https://github.com/rsc-ontologies/rxno
   id: mop
+  layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mop.owl
   products:
   - {id: mop.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mop.owl', title: Molecular
       Process Ontology}
+  title: Molecular Process Ontology
 - browsers:
   - {label: MGI, title: MGI MP Browser, url: 'http://www.informatics.jax.org/searches/MP_form.shtml'}
   - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/MP:0000001'}
@@ -1250,7 +1318,7 @@ ontologies:
   - {id: mpath.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mpath.owl'}
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse pathology
-- build: {method: obo2owl, source_url: 'http://psidev.cvs.sourceforge.net/viewvc/psidev/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo'}
+- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo'}
   contact: {email: gerhard.mayer@rub.de, label: Gerhard Mayer}
   dependencies:
   - {id: pato}
@@ -1260,7 +1328,7 @@ ontologies:
   domain: MS experiments
   homepage: http://www.psidev.info/groups/controlled-vocabularies
   id: ms
-  integration_server: http://psidev.cvs.sourceforge.net/viewvc/psidev/psi/psi-ms/mzML/controlledVocabulary/
+  integration_server: https://raw.githubusercontent.com/MICommunity/psidev/master/psi/psi-ms/mzML/controlledVocabulary/
   label: Mass spectrometry ontology
   layout: ontology_detail
   mailing_list: psidev-ms-vocab@lists.sourceforge.net
@@ -1298,13 +1366,18 @@ ontologies:
   page: http://www.ncbi.nlm.nih.gov/taxonomy
   preferredPrefix: NCBITaxon
   products:
-  - {id: ncbitaxon.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ncbitaxon.owl'}
+  - {id: ncbitaxon.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ncbitaxon.owl',
+    title: Main release}
+  - {id: ncbitaxon.obo, ontology_purl: 'http://purl.obolibrary.org/obo/ncbitaxon.obo',
+    title: OBO Format version of Main release}
   - {id: ncbitaxon/subsets/taxslim.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl',
     title: taxslim}
   source: http://www.ncbi.nlm.nih.gov/taxonomy
   title: NCBI organismal classification
   wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
 - contact: {email: NCICB Support, label: ncicb@pop.nci.nih.gov}
+  description: an ontology-like vocabulary that includes broad coverage of the cancer
+    domain, including cancer related diseases, findings and abnormalities
   homepage: https://cabig.nci.nih.gov/concepts/EVS/
   id: ncithesaurus
   layout: ontology_detail
@@ -1352,6 +1425,8 @@ ontologies:
   homepage: http://www.oae-ontology.org
   id: oae
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/oae.owl
   products:
   - {id: oae.owl, ontology_purl: 'http://purl.obolibrary.org/obo/oae.owl'}
@@ -1377,6 +1452,8 @@ ontologies:
   id: obcs
   in_foundry: false
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/obcs.owl
   products:
   - {id: obcs.owl, ontology_purl: 'http://purl.obolibrary.org/obo/obcs.owl'}
@@ -1395,7 +1472,8 @@ ontologies:
   in_foundry_order: 1
   integration_server: http://build.berkeleybop.org/job/build-obi/
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   mailing_list: http://groups.google.com/group/obi-users
   ontology_purl: http://purl.obolibrary.org/obo/obi.owl
   products:
@@ -1411,7 +1489,8 @@ ontologies:
   homepage: https://github.com/biobanking/biobanking
   id: obib
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/obib.owl
   products:
   - {id: obib.owl, ontology_purl: 'http://purl.obolibrary.org/obo/obib.owl'}
@@ -1430,6 +1509,8 @@ ontologies:
   id: ogg
   in_foundry: false
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/ogg.owl
   products:
   - {id: ogg.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ogg.owl'}
@@ -1474,6 +1555,8 @@ ontologies:
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv
   id: olatdv
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/olatdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
   products:
@@ -1491,6 +1574,7 @@ ontologies:
   - {id: omit.owl, ontology_purl: 'http://purl.obolibrary.org/obo/omit.owl'}
   title: Ontology for MIRNA Target
 - build: {method: obo2owl, source_url: 'https://sourceforge.net/p/microphenotypes/code/HEAD/tree/trunk/omp-edit.obo?format=raw'}
+  description: An ontology of phenotypes covering microbes
   domain: phenotype
   id: omp
   layout: ontology_detail
@@ -1520,19 +1604,16 @@ ontologies:
   title: Ontology for Parasite LifeCycle
   tracker: https://github.com/OPL-ontology/OPL/issues
 - contact: {email: Yongqunh He, label: yongqunh@med.umich.edu}
+  description: A biomedical ontology in the domain of vaccine adverse events.
   homepage: http://www.violinet.org/ovae/
   id: ovae
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/ovae.owl
   products:
   - {id: ovae.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ovae.owl'}
   title: Ontology of Vaccine Adverse Events
-- id: ovao
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/ovao.owl
-  products:
-  - {id: ovao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ovao.owl'}
-  tracker: https://code.google.com/p/ovae/issues/list
 - contact: {email: Pankaj Jaiswal, label: jaiswalp@science.oregonstate.edu}
   homepage: http://www.plantontology.org
   id: pao
@@ -1582,6 +1663,8 @@ ontologies:
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv
   id: pdumdv
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/pdumdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
   products:
@@ -1601,7 +1684,7 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   title: Plasmodium life cycle
-- build: {infallible: 1, method: obo2owl, notes: switch to vcs method, source_url: 'http://palea.cgrb.oregonstate.edu/viewsvn/Poc/tags/live/plant_ontology.obo?view=co'}
+- build: {infallible: 1, method: obo2owl, notes: switch to vcs method, source_url: 'https://raw.githubusercontent.com/Planteome/plant-ontology/master/po-release-files/plant_ontology.obo'}
   contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
   description: The Plant Ontology is a structured vocabulary and database resource
     that links plant anatomy, morphology and growth and development to plant genomics
@@ -1611,8 +1694,9 @@ ontologies:
   id: po
   in_foundry_order: 1
   layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/po.owl
-  page: http://www.plantontology.org/docs/docs.html
+  page: http://www.plantontology.org/amigo/go.cgi
   products:
   - {id: po.owl, ontology_purl: 'http://purl.obolibrary.org/obo/po.owl'}
   publications:
@@ -1627,13 +1711,17 @@ ontologies:
 - build: {checkout: 'git clone https://github.com/obophenotype/porifera-ontology.git',
     infallible: 1, method: vcs, path: ., system: git}
   contact: {email: robert.thacker@stonybrook.edu, label: Bob Thacker}
+  dependencies:
+  - {id: uberon}
+  - {id: ro}
   description: An ontology covering the anatomy of the taxon Porifera (sponges)
   domain: anatomy
   homepage: https://github.com/obophenotype/porifera-ontology
   id: poro
   integration_server: http://build.berkeleybop.org/job/build-poro/
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/poro.owl
   products:
   - {id: poro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/poro.owl'}
@@ -1643,6 +1731,7 @@ ontologies:
 - build: {infallible: 0, method: obo2owl, oort_args: --no-reasoner, source_url: 'ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.obo'}
   contact: {email: dan5@georgetown.edu, label: Darren Natale}
   description: an ontological representation of protein-related entities
+  development: {id_policy: 'https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+URI+policy'}
   documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
   domain: proteins
   homepage: http://proconsortium.org
@@ -1721,7 +1810,8 @@ ontologies:
   jobs:
   - {id: 'http://build.berkeleybop.org/job/build-ro', type: DryRunBuild}
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-relations
   ontology_purl: http://purl.obolibrary.org/obo/ro.owl
   products:
@@ -1769,6 +1859,7 @@ ontologies:
   products:
   - {id: rxno.owl, ontology_purl: 'http://purl.obolibrary.org/obo/rxno.owl', title: Name
       Reaction Ontology}
+  title: Name Reaction Ontology
 - contact: {email: Stephen Larson, label: slarson@ncmir.ucsd.edu}
   homepage: http://ccdb.ucsd.edu/CCDBWebSite/sao.html
   id: sao
@@ -1813,6 +1904,8 @@ ontologies:
   homepage: https://github.com/obophenotype/sibo
   id: sibo
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/sibo.owl
   products:
   - {id: sibo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/sibo.owl'}
@@ -1875,11 +1968,12 @@ ontologies:
   id: stato
   in_foundry: false
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/stato.owl
   products:
   - {id: stato.owl, ontology_purl: 'http://purl.obolibrary.org/obo/stato.owl'}
-  title: STATistics Ontology
+  title: The Statistical Methods Ontology
   tracker: https://github.com/ISA-tools/stato/issues
 - build: {method: owl2obo, source_url: 'http://theswo.svn.sourceforge.net/viewvc/theswo/trunk/src/release/swoinowl/swo_merged/swo_merged.owl'}
   contact: {email: parkinson@ebi.ac.uk, label: Helen Parkinson}
@@ -1967,15 +2061,16 @@ ontologies:
   - {id: tgma.owl, ontology_purl: 'http://purl.obolibrary.org/obo/tgma.owl'}
   taxon: {id: 'NCBITaxon:44484', label: Anopheles}
   title: Mosquito gross anatomy
-- build: {comment: switch to jenkins/archive, infallible: 1, method: obo2owl, source_url: 'http://palea.cgrb.oregonstate.edu/viewsvn/Poc/trunk/ontology/collaborators_ontology/gramene/traits/trait.obo?view=co'}
+- build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/to-release-files/plant-trait-ontology.obo'}
   contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
   description: A controlled vocabulary of describe phenotypic traits in plants.
   domain: phenotype
-  homepage: http://www.gramene.org/plant_ontology/
+  homepage: http://planteome.org
   id: to
   layout: ontology_detail
+  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/to.owl
-  page: http://www.gramene.org/plant_ontology/index.html#to
+  page: http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=TO:0000387&session_id=815amigo1442021959
   products:
   - {id: to.owl, ontology_purl: 'http://purl.obolibrary.org/obo/to.owl'}
   publications:
@@ -2011,7 +2106,8 @@ ontologies:
   taxon: {id: 'NCBITaxon:32443', label: Teleostei}
   title: Teleost taxonomy
   tracker: http://sourceforge.net/tracker/?group_id=76834&atid=1046550
-- browsers:
+- biosharing: https://www.biosharing.org/bsg-000016
+  browsers:
   - {label: RGD, title: Gene Ontology AmiGO 2 Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=UBERON:0001062'}
   - {label: AmiGO (SUBSET), title: Gene Ontology AmiGO 2 Browser, url: 'http://amigo.geneontology.org/amigo/term/UBERON:0001062#display-lineage-tab'}
   build: {checkout: 'svn --ignore-externals co http://svn.code.sf.net/p/obo/svn/uberon/trunk',
@@ -2028,12 +2124,14 @@ ontologies:
     multiple species-specific ontologies
   domain: anatomy
   exampleClass: UBERON_0002046
+  funded_by: [NIH R24OD011883, NIH R01HG004838, NIH P41HG002273, NSF DEB-0956049]
   google_plus: +UberonOrg
   homepage: http://uberon.org
   id: uberon
   label: Uberon
   layout: ontology_detail
-  license: {label: CC-BY, url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
   ontology_purl: http://purl.obolibrary.org/obo/uberon.owl
   page: http://en.wikipedia.org/wiki/Uberon
@@ -2088,6 +2186,13 @@ ontologies:
   tracker: https://github.com/obophenotype/uberon/issues
   twitter: uberanat
   type: owl:Ontology
+  used_by:
+  - {label: bgee, seeAlso: 'https://www.biosharing.org/biodbcore-000228', type: Database,
+    url: 'http://bgee.org/'}
+  - {label: ENCODE, seeAlso: 'https://www.biosharing.org/biodbcore-000034', type: Database,
+    url: 'https://www.encodeproject.org/'}
+  - {label: Monarch, type: Database, url: 'https://monarchinitiative.org/'}
+  - {label: GO Database, type: Database, url: 'https://geneontology.org/'}
   wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo'}
   contact: {email: geg18@aber.ac.uk, label: George Gkoutos}
@@ -2122,17 +2227,21 @@ ontologies:
   products:
   - {id: vhog.owl, ontology_purl: 'http://purl.obolibrary.org/obo/vhog.owl'}
   replaced_by: uberon
+  title: Vertebrate Homologous Ontology Group Ontology
 - build: {method: obo2owl, source_url: 'http://www.violinet.org/vo'}
   contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
+  description: a biomedical ontology in the domain of vaccine and vaccination
   domain: health
   homepage: http://www.violinet.org/vaccineontology
   id: vo
   in_foundry: false
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/vo.owl
   products:
   - {id: vo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/vo.owl'}
-  title: Vaccine ontology
+  title: Vaccine Ontology
   tracker: http://sourceforge.net/tracker/?atid=1127137&group_id=255029&func=browse
 - build: {method: obo2owl, source_url: 'http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/tags/vocab-releases/VSAO/vsao.obo'}
   contact: {email: wasila.dahdul@usd.edu, label: Wasila Dahdul}
@@ -2151,6 +2260,7 @@ ontologies:
   tracker: https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3AVSAO
 - build: {checkout: 'svn co http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/vt',
     method: vcs, system: svn}
+  description: An ontology of traits covering vertebrates
   id: vt
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/vt.owl
@@ -2162,6 +2272,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/vto.owl
   products:
   - {id: vto.owl, ontology_purl: 'http://purl.obolibrary.org/obo/vto.owl'}
+  title: Vertebrate Taxonomy Ontology
   tracker: http://purl.obolibrary.org/obo/vto/tracker
 - build: {infallible: 1, method: obo2owl, source_url: 'http://github.com/raymond91125/Wao/raw/master/WBbt.obo'}
   contact: {email: raymond@caltech.edu, label: Raymond Lee}
@@ -2210,6 +2321,8 @@ ontologies:
   id: xao
   in_foundry_order: 1
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/xao.owl
   products:
   - {id: xao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/xao.owl'}
@@ -2259,7 +2372,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:4575', label: Zea}
   title: Maize gross anatomy
 - build: {infallible: 1, method: obo2owl, notes: may be ready to switch to vcs soon,
-    source_url: 'https://zebrafish-anatomical-ontology.googlecode.com/svn/trunk/src/preversion.zfish.obo'}
+    source_url: 'https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/src/zebrafish_anatomy.obo'}
   contact: {email: zfinadmin@zfin.org, label: ZFIN administrators}
   description: A structured controlled vocabulary of the anatomy and development of
     the Zebrafish

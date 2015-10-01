@@ -13,7 +13,7 @@ products:
   - id: bfo.owl
   - id: bfo.obo
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 title: Basic Formal Ontology
 depicted_by: https://avatars2.githubusercontent.com/u/12972134?v=3&s=200
@@ -28,6 +28,6 @@ BFO grows out of a philosophical orientation which overlaps with that of DOLCE a
 
 - [BFO homepage](http://ifomis.org/bfo/)
 - [BFO mailing list](https://groups.google.com/forum/#!forum/bfo-discuss)
-- BFO is released under [CC-by 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/)
+- BFO is released under [CC-by 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/)
 
 

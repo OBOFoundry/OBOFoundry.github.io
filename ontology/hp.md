@@ -19,7 +19,7 @@ title: human phenotype ontology
 build:
   source_url: http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip
   path: archive/hp
-  method: obo2owl
+  method: archive
 tracker: https://github.com/obophenotype/human-phenotype-ontology/issues/
 termgenie: http://hp.termgenie.org
 browsers:

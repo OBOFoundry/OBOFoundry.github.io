@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: stato
 in_foundry: false
-title: STATistics Ontology
+title: The Statistical Methods Ontology
 description: STATO is a general-purpose STATistics Ontology. Its aim is to provide coverage for processes such as statistical tests, their conditions of application, and information needed or resulting from statistical methods, such as probability distributions, variables, spread and variation metrics. STATO also covers aspects of experimental design and description of plots and graphical representations commonly used to provide visual cues of data distribution or layout and to assist review of the results.
 contact:
   email: proccaserra@gmail.com
@@ -15,7 +15,7 @@ homepage: http://stato-ontology.org/
 products:
   - id: stato.owl
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 depicted_by:  https://raw.githubusercontent.com/ISA-tools/stato/dev/images/stato-logo-1.png
 tracker: https://github.com/ISA-tools/stato/issues
@@ -25,4 +25,4 @@ The STATistics Ontology (STATO) project started in early 2012, as part of the re
 
  * To refer to the most current  information on the STATO project, please visit [STATO website](http://stato-ontology.org/)
  * The latest version of the ontology file (.owl) will always be available from [STATO Github repository]()
- * To use STATO, remember the licensing terms: STATO is released under [CC-by 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/)
+ * To use STATO, remember the licensing terms: STATO is released under [CC-by 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/)

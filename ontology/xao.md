@@ -21,6 +21,9 @@ publications:
     title: "An ontology for Xenopus anatomy and development."
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24139024
     title: "Enhanced XAO: the ontology of Xenopus anatomy and development underpins more accurate annotation of gene expression and queries on Xenbase."
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 ---
 
 A structured controlled vocabulary of the anatomy and development of the African clawed frog (<i>Xenopus laevis</i>).

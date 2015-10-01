@@ -6,7 +6,7 @@ contact:
   label: Maria Costanza
 description: A structured controlled vocabulary for the phenotypes of Ascomycete fungi
 domain: phenotype
-homepage: "http://www.yeastgenome.org/ "
+homepage: http://www.yeastgenome.org/
 products:
   - id: apo.owl
 taxon:

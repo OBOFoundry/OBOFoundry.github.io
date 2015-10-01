@@ -4,6 +4,7 @@ id: rxno
 contact: 
   email: batchelorc@rsc.org
   label: Colin Batchelor
+title: Name Reaction Ontology
 description: Connects organic name reactions to their roles in an organic synthesis and to processes in MOP
 homepage: https://github.com/rsc-ontologies/rxno
 build:

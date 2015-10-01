@@ -8,12 +8,21 @@ description: Ontology of environmental features and habitats
 domain: environment
 homepage: http://environmentontology.org/
 page: https://github.com/EnvironmentOntology/envo
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 publications:
   - id: http://www.dx.doi.org/10.1186/2041-1480-4-43
     title: "The environment ontology: contextualising biological and biomedical entities"
 products:
   - id: envo.owl
 title: Environment Ontology
+dependencies:
+ - id: uberon
+ - id: pco
+ - id: ro
+ - id: chebi
+ - id: ncbitaxon
 build:
   checkout: git clone https://github.com/EnvironmentOntology/envo.git
   email_cc: cjmungall@lbl.gov

@@ -4,15 +4,15 @@ ONTS := $(wildcard ontology/*md)
 # All principles .md file
 PRINCIPLES := $(wildcard principles/*md)
 
-all: _config.yml registry/ontologies.yml
+all: pull yml registry/ontologies.ttl
+yml: _config.yml registry/ontologies.yml
 
-test: validate all
+test: validate yml
 
 integration-test: test valid-purl-report.txt
 
-t:
-	echo $(ONTS)
-
+pull:
+	git pull
 
 # Create the site-wide config file by combining all metadata on ontologies + principles
 #  and combining with site-wide metadata.
@@ -33,13 +33,19 @@ registry/ontologies.yml: $(ONTS)
 principles/all.yml: $(PRINCIPLES)
 	./util/extract-metadata.py concat-principles -o $@.tmp $^  && mv $@.tmp $@
 
-# TODO: add @context
+# Use a generic yaml->json conversion, but adding a @content
 registry/ontologies.jsonld: registry/ontologies.yml
 	./util/yaml2json.py $< > $@.tmp && mv $@.tmp $@
 
-# TODO
-registry/ontologies.ttl: registry/ontologies.jsonld
-	riot registry/context.jsonld $< > $@.tmp && mv $@.tmp $@
+# Use Apache-Jena RIOT to convert jsonld to n-triples
+# NOTE: UGLY HACK. If there is a problem then Jena will write WARN message (to stdout!!!), there appears to
+#  be no way to get it to flag this even with strict and check options, so we do a check with grep, ugh.
+# see: http://stackoverflow.com/questions/20860222/why-do-i-have-these-warnings-with-jena-2-11-0
+registry/ontologies.nt: registry/ontologies.jsonld
+	riot --base=http://purl.obolibrary.org/obo/ --strict --check -q registry/context.jsonld $< > $@.tmp && mv $@.tmp $@ && egrep '(WARN|ERROR)' $@ && exit 1 || echo ok
+
+registry/ontologies.ttl: registry/ontologies.nt
+	rdfcat -out ttl $< > $@.tmp && mv $@.tmp $@
 
 
 validate: $(ONTS)
@@ -54,3 +60,14 @@ validate: $(ONTS)
 # See: https://github.com/OBOFoundry/OBOFoundry.github.io/issues/18
 valid-purl-report.txt: registry/ontologies.yml
 	./util/processor.py -i $< check-urls > $@.tmp && mv $@.tmp $@
+
+sparql-consistency-report.txt: registry/ontologies.yml
+	./util/processor.py -i $< sparql-compare > $@.tmp && mv $@.tmp $@
+
+# output of central OBO build
+# See FAQ for more details, and also README.md
+jenkins-output.txt:
+	wget http://build.berkeleybop.org/job/simple-build-obo-all/lastBuild/consoleFull -O $@
+
+reports/%.csv: registry/ontologies.ttl sparql/%.sparql
+	arq --data $< --query sparql/$*.sparql --results csv > $@.tmp && mv $@.tmp $@

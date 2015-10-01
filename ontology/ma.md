@@ -19,6 +19,9 @@ build:
   method: obo2owl
   infallible: 1
 tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
+used_by:
+ - url: https://www.biosharing.org/biodbcore-000659
+   label: GXD
 ---
 
 A structured controlled vocabulary of the adult anatomy of the mouse (Mus).

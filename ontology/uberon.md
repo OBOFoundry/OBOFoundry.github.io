@@ -17,9 +17,30 @@ twitter: uberanat
 google_plus: "+UberonOrg"
 wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
+biosharing: https://www.biosharing.org/bsg-000016
+used_by:
+ - url: http://bgee.org/
+   seeAlso: https://www.biosharing.org/biodbcore-000228
+   label: bgee
+   type: Database
+ - url: https://www.encodeproject.org/
+   seeAlso: https://www.biosharing.org/biodbcore-000034
+   label: ENCODE
+   type: Database
+ - url: https://monarchinitiative.org/
+   label: Monarch
+   type: Database
+ - url: https://geneontology.org/
+   label: GO Database
+   type: Database
+funded_by:
+ - "NIH R24OD011883"
+ - "NIH R01HG004838"
+ - "NIH P41HG002273"
+ - "NSF DEB-0956049"
 canonical: uberon.owl
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 taxon:
   id: NCBITaxon:33208

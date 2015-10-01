@@ -11,4 +11,7 @@ products:
   - id: ogg.owl
 title: The Ontology of Genes and Genomes
 tracker: https://code.google.com/p/ogg/issues/list
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 ---

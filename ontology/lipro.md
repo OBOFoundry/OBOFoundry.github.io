@@ -7,8 +7,6 @@ contact:
   label: Christipher Baker
 description: An ontology representation of the LIPIDMAPS nomenclature classification.
 domain: lipids
-products:
-  - id: lipro.owl
 title: Lipid Ontology
 build:
   source_url: http://www.lipidprofiles.com/LipidOntology

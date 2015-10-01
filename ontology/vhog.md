@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: vhog
+title: Vertebrate Homologous Ontology Group Ontology
 products:
   - id: vhog.owl
 is_obsolete: true

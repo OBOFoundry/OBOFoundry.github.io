@@ -8,6 +8,7 @@ import requests
 import sys
 import os
 from contextlib import closing
+from SPARQLWrapper import SPARQLWrapper, JSON
 
 #from yaml import load, dump
 #from yaml import Loader, Dumper
@@ -31,6 +32,9 @@ def main():
     parser_n = subparsers.add_parser('check-urls', help='Checks URLs')
     parser_n.set_defaults(function=check_urls)
     #parser_n.add_argument('files',nargs='*')
+
+    parser_n = subparsers.add_parser('sparql-compare', help='Checks URLs')
+    parser_n.set_defaults(function=sparql_compare_all)
 
     args = parser.parse_args()
 
@@ -86,10 +90,16 @@ def mirror(ontologies, args):
     """
     for ont in ontologies:
         id = ont['id']
+        if 'is_obsolete' in ont:
+            print("SKIPPING OBSOLETE: "+id)
+            continue
         for p in ont['products']:
             pid = p['id']
             url = get_obo_purl(pid)
             # we use -r to force directory structure mirroring
+            if url.startswith("ftp"):
+                print("Cannot check FTP: "+url)
+                continue
             status = os.system("wget -r "+url)
             if (status):
                 print("FAILED: "+url)
@@ -119,6 +129,63 @@ def build_from_source(obj):
         print("TODO: run svn")
     else:
         print("UNKNOWN METHOD:"+obj.method)
+
+def sparql_compare_all(ontologies, args):
+    for obj in ontologies:
+        sparql_compare_ont(obj)
+
+def sparql_compare_ont(obj):
+    """
+    Some ontologies will directly declare some subset of the OBO metadata
+    directly in the ontology header. In the majority of cases we should
+    yield to the provider. However, we reserve the right to override. For
+    example, OBO may have particular guidelines about the length of the title,
+    required for coherency within the registry. All differences should be
+    discussed with the provider and an accomodation reached
+    """
+    if not 'ontology_purl' in obj:
+        return
+    purl = obj['ontology_purl']
+    id = obj['id']
+    # this could be made more declarative, or driven by the context.jsonld mapping;
+    # however, for now this is relatively simple and easy to understand:
+    license = obj['license']['url'] if 'license' in obj else ''
+    run_sparql(obj, 'license', license, "SELECT DISTINCT ?license WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/license> ?license}")
+    run_sparql(obj, 'title', obj['title'] if 'title' in obj else '', "SELECT DISTINCT ?title WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/title> ?title}")
+    run_sparql(obj, 'description', obj['description'] if 'description' in obj else '', "SELECT DISTINCT ?description WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/description> ?description}")
+
+def run_sparql(obj, p, expected_value, q):
+    sparql = SPARQLWrapper("http://sparql.hegroup.org/sparql")
+    sparql.setQuery(q)
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+
+    id = obj['id']
+    got_value = False
+    is_match = False
+    vs = []
+
+    for result in results["results"]["bindings"]:
+        got_value = True
+        v = result[p]["value"]
+        vs.append(str(v))
+        if v == expected_value:
+            is_match = True
+    msg = ''
+    if got_value and is_match:
+        msg = 'CONSISTENT'
+    elif got_value and not is_match:
+        if expected_value == '':
+            msg = 'UNDECLARED_LOCAL: REMOTE:' + ",".join(vs)
+        else:
+            msg = 'INCONSISTENT: REMOTE:' + ",".join(vs)+" != LOCAL:"+expected_value
+    else:
+        msg = 'UNDECLARED_REMOTE'
+    print(id + " " + p + " " + msg)
+
+            
+
+        
 
 if __name__ == "__main__":
     main()

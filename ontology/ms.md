@@ -7,7 +7,7 @@ contact:
   email: gerhard.mayer@rub.de
   label: Gerhard Mayer
 description: A structured controlled vocabulary for the annotation of experiments concerned with proteomics mass spectrometry.
-integration_server: http://psidev.cvs.sourceforge.net/viewvc/psidev/psi/psi-ms/mzML/controlledVocabulary/
+integration_server: https://raw.githubusercontent.com/MICommunity/psidev/master/psi/psi-ms/mzML/controlledVocabulary/
 domain: MS experiments
 mailing_list: psidev-ms-vocab@lists.sourceforge.net
 homepage: http://www.psidev.info/groups/controlled-vocabularies
@@ -19,7 +19,7 @@ products:
   - id: ms.obo
   - id: ms.owl
 build:
-  source_url: http://psidev.cvs.sourceforge.net/viewvc/psidev/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo
+  source_url: https://raw.githubusercontent.com/MICommunity/psidev/master/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo
   method: obo2owl
 ---
 

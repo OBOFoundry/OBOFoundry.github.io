@@ -16,7 +16,7 @@ build:
   method: vcs
   path: src/ontology
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 ---
 

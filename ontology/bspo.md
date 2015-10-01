@@ -10,6 +10,9 @@ homepage: https://github.com/obophenotype/biological-spatial-ontology
 products:
   - id: bspo.owl
 title: Biological Spatial Ontology
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 build:
   checkout: git clone https://github.com/obophenotype/biological-spatial-ontology.git
   system: git

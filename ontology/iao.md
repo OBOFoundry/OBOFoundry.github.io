@@ -6,10 +6,17 @@ contact:
   label: Alan Ruttenberg
 description: "An ontology of information entities."
 domain: information
-homepage: http://purl.obolibrary.org/obo/iao
-page: https://github.com/information-artifact-ontology/IAO
+homepage: https://github.com/information-artifact-ontology/IAO/
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 products:
   - id: iao.owl
+  - id: iao/ontology-metadata.owl
+    title: IAO ontology metadata
+    page: https://github.com/information-artifact-ontology/IAO/wiki/OntologyMetadata
+  - id: iao/dev/iao.owl
+    title: IAO dev
   - id: iao/d-acts.owl
     title: ontology of document acts
     description: "An ontology based on a theory of document acts describing what people can do with documents"

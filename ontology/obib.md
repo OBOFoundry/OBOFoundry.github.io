@@ -12,7 +12,7 @@ products:
   - id: obib.owl
 tracker: https://github.com/biobanking/biobanking/issues
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY  
 ---
 

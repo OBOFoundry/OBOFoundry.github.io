@@ -6,17 +6,19 @@ contact:
   label: Pankaj Jaiswal
 description: A controlled vocabulary of describe phenotypic traits in plants.
 domain: phenotype
-homepage: http://www.gramene.org/plant_ontology/
-page: http://www.gramene.org/plant_ontology/index.html#to
+homepage: http://planteome.org
+page: http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=TO:0000387&session_id=815amigo1442021959
 products:
   - id: to.owl
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
 title: Plant Trait Ontology
 build:
-  comment: switch to jenkins/archive
-  source_url: http://palea.cgrb.oregonstate.edu/viewsvn/Poc/trunk/ontology/collaborators_ontology/gramene/traits/trait.obo?view=co
+  source_url: https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/to-release-files/plant-trait-ontology.obo
   method: obo2owl
   infallible: 1
 tracker: https://github.com/Planteome/plant-trait-ontology/issues
