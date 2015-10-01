@@ -672,13 +672,13 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ncbitaxon.owl" .
 
-<http://purl.obolibrary.org/obo/NCBITaxon_10114>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Rattus" .
-
 <http://purl.obolibrary.org/obo/gaz.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/gaz.owl" .
+
+<http://purl.obolibrary.org/obo/NCBITaxon_10114>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Rattus" .
 
 <http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl>
         a       <http://purl.obolibrary.org/obo/MergedOntology> ;
@@ -1017,15 +1017,6 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://www.psidev.info/MOD> .
 
-<http://purl.obolibrary.org/obo/uberon/ext.owl>
-        a       <http://www.w3.org/2002/07/owl#Ontology> ;
-        <http://purl.org/dc/elements/1.1/description>
-                "Uberon extended" ;
-        <http://purl.org/dc/elements/1.1/title>
-                "Uberon edition that includes subsets of other ontologies and axioms connecting to them" ;
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/uberon/ext.owl" .
-
 <http://purl.obolibrary.org/obo/gaz.obo>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/gaz.obo" .
@@ -1035,6 +1026,15 @@
                 "OBO Format version of Main release" ;
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ncbitaxon.obo" .
+
+<http://purl.obolibrary.org/obo/uberon/ext.owl>
+        a       <http://www.w3.org/2002/07/owl#Ontology> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "Uberon extended" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Uberon edition that includes subsets of other ontologies and axioms connecting to them" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/uberon/ext.owl" .
 
 <http://purl.obolibrary.org/obo/xco>
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>
@@ -1062,7 +1062,7 @@
                           "shimoyama@mcw.edu"
                 ] ;
         <http://www.w3.org/ns/dcat#distribution>
-                <http://purl.obolibrary.org/obo/xco.obo> , <http://purl.obolibrary.org/obo/xco.owl> ;
+                <http://purl.obolibrary.org/obo/xco.owl> , <http://purl.obolibrary.org/obo/xco.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://rgd.mcw.edu/rgdweb/ontology/search.html> , <ftp://rgd.mcw.edu/pub/ontology/experimental_condition/> .
 
@@ -1796,6 +1796,12 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <https://github.com/obophenotype/cephalopod-ontology> .
 
+<http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "FB" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "FlyBase Browser" .
+
 <http://purl.obolibrary.org/obo/to>
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/method>
@@ -1831,12 +1837,6 @@
                 <http://planteome.org> ;
         <http://xmlns.com/foaf/0.1/page>
                 <http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=TO:0000387&session_id=815amigo1442021959> .
-
-<http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "FB" ;
-        <http://purl.org/dc/elements/1.1/title>
-                "FlyBase Browser" .
 
 <http://purl.obolibrary.org/obo/nmr>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -1953,6 +1953,10 @@
 <http://purl.obolibrary.org/obo/tads.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/tads.owl" .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409>
+        <http://purl.org/dc/elements/1.1/title>
+                "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data" .
 
 <http://purl.obolibrary.org/obo/ms.obo>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -2133,6 +2137,10 @@
                 "RGD" ;
         <http://purl.org/dc/elements/1.1/title>
                 "RGD Ontology Browser" .
+
+<http://purl.obolibrary.org/obo/doid.obo>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/doid.obo" .
 
 <http://purl.obolibrary.org/obo/emap>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -3286,7 +3294,7 @@
                 <http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118> , <http://monarchinitiative.org/phenotype/HP:0000118> ;
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/method>
-                          "obo2owl" ;
+                          "archive" ;
                   <http://obofoundry.github.io/vocabulary/source_url>
                           "http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip"
                 ] ;
@@ -3869,10 +3877,6 @@
                 "GO-Plus" ;
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/go/extensions/go-plus.owl" .
-
-<http://www.ncbi.nlm.nih.gov/pubmed/25348409>
-        <http://purl.org/dc/elements/1.1/title>
-                "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data." .
 
 <http://purl.obolibrary.org/obo/zfa.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -4904,13 +4908,15 @@
         <http://purl.obolibrary.org/obo/IAO_0000136>
                 <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
         <http://purl.org/dc/elements/1.1/description>
-                "Creating a comprehensive hierarchical controlled vocabulary for human disease representation." ;
+                "An ontology for describing the classification of human diseases organized by etiology." ;
         <http://purl.org/dc/elements/1.1/title>
-                "Human disease ontology" ;
+                "Human Disease Ontology" ;
+        <http://purl.org/dc/terms/1.1/license>
+                <http://creativecommons.org/licenses/by/3.0/> ;
         <http://purl.org/dc/terms/1.1/publication>
-                <http://www.ncbi.nlm.nih.gov/pubmed/25348409> ;
+                <http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409> ;
         <http://purl.org/dc/terms/1.1/theme>
-                "health" ;
+                "disease" ;
         <http://usefulinc.com/ns/doap#bug-database>
                 "http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739" ;
         <http://www.w3.org/ns/dcat#accessURL>
@@ -4922,9 +4928,9 @@
                           "lynn.schriml@gmail.com"
                 ] ;
         <http://www.w3.org/ns/dcat#distribution>
-                <http://purl.obolibrary.org/obo/doid.owl> ;
+                <http://purl.obolibrary.org/obo/doid.owl> , <http://purl.obolibrary.org/obo/doid.obo> ;
         <http://xmlns.com/foaf/0.1/account>
-                <http://purl.obolibrary.org/obo/diseaseontology> ;
+                <https://www.facebook.com/diseaseontology> , <http://purl.obolibrary.org/obo/diseaseontology> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://diseaseontology.sourceforge.net/> ;
         <http://xmlns.com/foaf/0.1/page>

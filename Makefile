@@ -65,6 +65,7 @@ sparql-consistency-report.txt: registry/ontologies.yml
 	./util/processor.py -i $< sparql-compare > $@.tmp && mv $@.tmp $@
 
 # output of central OBO build
+# See FAQ for more details, and also README.md
 jenkins-output.txt:
 	wget http://build.berkeleybop.org/job/simple-build-obo-all/lastBuild/consoleFull -O $@
 

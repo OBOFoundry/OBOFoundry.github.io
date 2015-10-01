@@ -417,23 +417,27 @@ ontologies:
   - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/DOID:4'}
   build: {infallible: 1, method: obo2owl, source_url: 'http://sourceforge.net/p/diseaseontology/code/HEAD/tree/trunk/HumanDO.obo?format=raw'}
   contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
-  description: Creating a comprehensive hierarchical controlled vocabulary for human
-    disease representation.
-  domain: health
+  description: An ontology for describing the classification of human diseases organized
+    by etiology.
+  domain: disease
+  facebook: https://www.facebook.com/diseaseontology
   homepage: http://diseaseontology.sourceforge.net/
   id: doid
   in_foundry_order: 1
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/doid.owl
   page: http://diseaseontology.sourceforge.net/
   products:
   - {id: doid.owl, ontology_purl: 'http://purl.obolibrary.org/obo/doid.owl'}
+  - {id: doid.obo, ontology_purl: 'http://purl.obolibrary.org/obo/doid.obo'}
   publications:
-  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/25348409', title: 'Disease Ontology 2015
-      update: an expanded and updated database of human diseases for linking biomedical
-      knowledge through disease data.'}
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409', title: 'Disease Ontology
+      2015 update: an expanded and updated database of human diseases for linking
+      biomedical knowledge through disease data'}
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
-  title: Human disease ontology
+  title: Human Disease Ontology
   tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
   twitter: diseaseontology
 - browsers:
@@ -914,7 +918,7 @@ ontologies:
   browsers:
   - {label: HPO, title: Charite HPO Browser, url: 'http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118'}
   - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/HP:0000118'}
-  build: {method: obo2owl, path: archive/hp, source_url: 'http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
+  build: {method: archive, path: archive/hp, source_url: 'http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
   contact: {email: sebastian.koehler@charite.de, label: Sebastian Koehler}
   description: A structured and controlled vocabulary for the phenotypic features
     encountered in human hereditary and other disease.
