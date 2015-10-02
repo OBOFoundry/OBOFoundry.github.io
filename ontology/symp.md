@@ -9,7 +9,7 @@ domain: disease
 homepage: http://symptomontologywiki.igs.umaryland.edu/mediawiki/index.php/Main_Page
 products:
   - id: symp.owl
-  - id:symp.obo
+  - id: symp.obo
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
