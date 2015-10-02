@@ -422,7 +422,6 @@ ontologies:
   title: The Drug-drug Interaction Ontology
 - browsers:
   - {label: DO, title: DO Browser, url: 'http://www.disease-ontology.org/'}
-  - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/DOID:4'}
   build: {infallible: 1, method: obo2owl, source_url: 'http://sourceforge.net/p/diseaseontology/code/HEAD/tree/trunk/HumanDO.obo?format=raw'}
   contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
   description: An ontology for describing the classification of human diseases organized
@@ -1584,11 +1583,17 @@ ontologies:
   products:
   - {id: omit.owl, ontology_purl: 'http://purl.obolibrary.org/obo/omit.owl'}
   title: Ontology for MIRNA Target
-- build: {method: obo2owl, source_url: 'https://sourceforge.net/p/microphenotypes/code/HEAD/tree/trunk/omp-edit.obo?format=raw'}
+- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/microbialphenotypes/OMP-ontology-files/master/omp.obo'}
+  contact: {email: jimhu@tamu.edu, label: James C. Hu}
   description: An ontology of phenotypes covering microbes
   domain: phenotype
+  homepage: http://microbialphenotypes.org
   id: omp
   layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/omp.owl
+  products:
+  - {id: omp.owl, ontology_purl: 'http://purl.obolibrary.org/obo/omp.owl'}
+  - {id: omp.obo, ontology_purl: 'http://purl.obolibrary.org/obo/omp.obo'}
   title: Ontology of Microbial Phenotypes
 - build: {method: owl2obo, source_url: 'http://omrse.googlecode.com/svn/trunk/omrse/omrse.owl'}
   contact: {email: hoganwr@gmail.com, label: Bill Hogan}
@@ -1997,15 +2002,19 @@ ontologies:
   title: Software ontology
 - build: {method: obo2owl, source_url: 'http://gemina.svn.sourceforge.net/viewvc/gemina/trunk/Gemina/ontologies/gemina_symptom.obo'}
   contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
-  description: An ontologu of symptoms, being a perceived change in function, sensation
-    or appearance reported by a patient indicative of a disease
-  domain: health
+  description: An ontology of disease symptoms, with symptoms encompasing perceived
+    changes in function, sensations or appearance reported by a patient indicative
+    of a disease.
+  domain: disease
   homepage: http://symptomontologywiki.igs.umaryland.edu/mediawiki/index.php/Main_Page
   id: symp
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/symp.owl
   products:
   - {id: symp.owl, ontology_purl: 'http://purl.obolibrary.org/obo/symp.owl'}
+  - {id: symp.obo, ontology_purl: 'http://purl.obolibrary.org/obo/symp.obo'}
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Symptom Ontology
 - build: {method: obo2owl, source_url: 'http://anobase.vectorbase.org/anatomy/tick_anatomy.obo'}
@@ -2091,18 +2100,21 @@ ontologies:
   title: Plant Trait Ontology
   tracker: https://github.com/Planteome/plant-trait-ontology/issues
 - build: {method: obo2owl, source_url: 'http://gemina.cvs.sourceforge.net/*checkout*/gemina/Gemina/ontologies/transmission_process.obo'}
-  contact: {email: diseaseontology-discussion@lists.sourceforge.net, label: Lynn Schriml}
-  description: A representation of processes in which a pathogen is transmitted from
-    one host, reservoir, or source to another host.
-  domain: health
+  contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
+  description: An ontology representing the disease transmission process during which
+    the pathogen is transmitted directly or indirectly from its natural reservoir,
+    a susceptible host or source to a new host.
+  domain: disease
   homepage: http://diseaseontology.sourceforge.net/
   id: trans
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/trans.owl
   products:
   - {id: trans.owl, ontology_purl: 'http://purl.obolibrary.org/obo/trans.owl'}
-  taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
-  title: Pathogen transmission
+  - {id: trans.obo, ontology_purl: 'http://purl.obolibrary.org/obo/trans.obo'}
+  title: Pathogen Transmission Ontology
   tracker: http://sourceforge.net/tracker/?&group_id=76834&atid=1037853
 - build: {method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/teleost_taxonomy.obo'}
   contact: {email: peteremidford@yahoo.com, label: Peter Midford}
