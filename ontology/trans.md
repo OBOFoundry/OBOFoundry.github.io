@@ -11,10 +11,12 @@ products:
   - id: trans.owl
   - id: trans.obo
 title: Pathogen Transmission Ontology
+
 build:
-  source_url: http://gemina.cvs.sourceforge.net/*checkout*/gemina/Gemina/ontologies/transmission_process.obo
+  source_url: https://sourceforge.net/p/diseaseontology/code/HEAD/tree/Transmission_Process_Ontology/transmission_process_ontology.obo
   method: obo2owl
-tracker: http://sourceforge.net/tracker/?&group_id=76834&atid=1037853
+  infallible: 1
+tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
