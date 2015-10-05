@@ -15,8 +15,10 @@ taxon:
   label: Homo sapiens
 title: Symptom Ontology
 build:
-  source_url: http://gemina.svn.sourceforge.net/viewvc/gemina/trunk/Gemina/ontologies/gemina_symptom.obo
+  source_url: https://sourceforge.net/p/diseaseontology/code/HEAD/tree/Symptom_Ontology/symptom_ontology.obo
   method: obo2owl
+  infallible: 1
+tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
