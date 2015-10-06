@@ -25,7 +25,7 @@ publications:
 products:
   - id: po.owl
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 taxon:
   id: NCBITaxon:33090
