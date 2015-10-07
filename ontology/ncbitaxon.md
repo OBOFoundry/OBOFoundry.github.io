@@ -16,8 +16,9 @@ source: http://www.ncbi.nlm.nih.gov/taxonomy
 wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
 createdWith: http://owltools.googlecode.com/
 domain: taxonomy
-homepage: http://www.obofoundry.org/wiki/index.php/NCBITaxon:Main_Page
+homepage: https://github.com/obophenotype/ncbitaxon
 page: http://www.ncbi.nlm.nih.gov/taxonomy
+tracker: https://github.com/obophenotype/ncbitaxon/issues
 browsers:
   - label: NCBI
     title: NCBI Taxonomy Browser
@@ -32,6 +33,7 @@ products:
     title: OBO Format version of Main release
   - id: ncbitaxon/subsets/taxslim.owl
     title: taxslim
+    page: https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md
 ---
 
 The NCBITaxon ontology is an automatic translation of the [NCBI taxonomy database](http://www.ncbi.nlm.nih.gov/taxonomy) into obo/owl.
