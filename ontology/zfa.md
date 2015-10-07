@@ -14,6 +14,9 @@ taxon:
   id: NCBITaxon:7954
   label: Danio
 title: Zebrafish anatomy and development
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 build:
   notes: may be ready to switch to vcs soon
   source_url: https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/src/zebrafish_anatomy.obo

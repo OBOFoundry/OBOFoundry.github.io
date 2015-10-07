@@ -15,6 +15,9 @@ taxon:
   id: NCBITaxon:7954
   label: Danio
 title: Zebrafish developmental stages
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 build:
   source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/zfs/zfs.obo
   method: obo2owl
