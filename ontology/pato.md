@@ -9,7 +9,7 @@ build:
   infallible: 1
 description: An ontology of phenotypic qualities (properties, attributes or characteristics)
 contact:
-  email: geg18@aber.ac.uk
+  email: g.gkoutos@gmail.com
   label: George Gkoutos
 domain: phenotype
 homepage: https://github.com/pato-ontology/pato/
