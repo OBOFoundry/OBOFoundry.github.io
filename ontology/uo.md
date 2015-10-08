@@ -3,7 +3,7 @@ layout: ontology_detail
 id: uo
 in_foundry: false
 contact:
-  email: geg18@aber.ac.uk
+  email: g.gkoutos@gmail.com
   label: George Gkoutos
 description: Metrical units for use in conjunction with PATO
 domain: phenotype
