@@ -2,17 +2,18 @@
 layout: ontology_detail
 id: nbo
 contact:
-  email: geg18@aber.ac.uk
+  email: g.gkoutos@gmail.com
   label: George Gkoutos
 domain: behavior
-homepage: http://code.google.com/p/behavior-ontology
+homepage: https://github.com/bio-ontology-research-group/behavior-ontology/wiki
 products:
   - id: nbo.owl
 title: Neuro Behavior Ontology
 build:
-  checkout: svn co http://behavior-ontology.googlecode.com/svn/trunk
-  system: svn
+  checkout: git clone https://github.com/bio-ontology-research-group/behavior-ontology.git
+  system: git
+  path: .
   method: vcs
-tracker: http://code.google.com/p/behavior-ontology/issues/list
+tracker: https://github.com/bio-ontology-research-group/behavior-ontology/issues
 ---
 
