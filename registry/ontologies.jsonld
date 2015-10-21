@@ -411,10 +411,10 @@
                 "source_url": "http://build.berkeleybop.org/job/build-chebi/lastSuccessfulBuild/artifact/*zip*/archive.zip"
             },
             "contact": {
-                "email": "hastings@ebi.ac.uk",
-                "label": "Janna Hastings"
+                "email": "gowen@ebi.ac.uk",
+                "label": "Gareth Owen"
             },
-            "description": "A structured classification of chemical compounds of biological relevance.",
+            "description": "A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds.",
             "domain": "biochemistry",
             "homepage": "http://www.ebi.ac.uk/chebi",
             "id": "chebi",
@@ -432,7 +432,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/chebi.obo"
                 }
             ],
-            "title": "Chemical entities of biological interest",
+            "title": "Chemical Entities of Biological Interest",
             "tracker": "https://sourceforge.net/p/chebi/curator-requests/",
             "twitter": "chebit"
         },
@@ -1215,6 +1215,7 @@
             "layout": "ontology_detail",
             "license": {
                 "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/eo.owl",
@@ -2419,6 +2420,24 @@
         },
         {
             "contact": {
+                "email": "carrine.blank@umontana.edu",
+                "label": "Carrine Blank"
+            },
+            "description": "An ontology of prokaryotic phenotypic and metabolic characters",
+            "domain": "phenotype",
+            "homepage": "https://github.com/carrineblank/MicrO",
+            "id": "micro",
+            "issue": "https://github.com/carrineblank/MicrO/issues",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/2.0/"
+            },
+            "title": "prokaryotic phenotypic and metabolic characters"
+        },
+        {
+            "contact": {
                 "email": "vdritsou@imbb.forth.gr",
                 "label": "Vicky Dritsou"
             },
@@ -2657,12 +2676,19 @@
             "tracker": "https://github.com/obophenotype/mammalian-phenotype-ontology/issues"
         },
         {
+            "browsers": [
+                {
+                    "label": "Aber-OWL",
+                    "title": "Aber-OWL Ontology Repository",
+                    "url": "http://aber-owl.net/ontology/MPATH"
+                }
+            ],
             "build": {
                 "method": "obo2owl",
-                "source_url": "http://mpath.googlecode.com/svn/trunk/mpath.obo"
+                "source_url": "https://raw.githubusercontent.com/PaulNSchofield/mpath/master/mpath.obo"
             },
             "contact": {
-                "email": "PS@mole.bio.cam.ac.uk",
+                "email": "pns12@cam.ac.uk",
                 "label": "Paul Schofield"
             },
             "description": "A structured controlled vocabulary of mutant and transgenic mouse pathology phenotypes",
@@ -2670,6 +2696,11 @@
             "homepage": "http://www.pathbase.net",
             "id": "mpath",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/mpath.owl",
             "products": [
                 {
@@ -2681,7 +2712,8 @@
                 "id": "NCBITaxon:10088",
                 "label": "Mus"
             },
-            "title": "Mouse pathology"
+            "title": "Mouse pathology",
+            "tracker": "https://github.com/PaulNSchofield/mpath/issues"
         },
         {
             "contact": {
@@ -2694,6 +2726,7 @@
             "layout": "ontology_detail",
             "license": {
                 "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/mro.owl",
@@ -2746,19 +2779,42 @@
             "title": "Mass spectrometry ontology"
         },
         {
+            "browsers": [
+                {
+                    "label": "Aber-OWL",
+                    "title": "Aber-OWL Ontology Browser",
+                    "url": "http://aber-owl.net/ontology/NBO"
+                },
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal Ontology Browser",
+                    "url": "https://bioportal.bioontology.org/ontologies/NBO"
+                },
+                {
+                    "label": "OntoBee",
+                    "title": "OntoBee Ontology Browser",
+                    "url": "http://www.ontobee.org/browser/index.php?o=NBO"
+                }
+            ],
             "build": {
-                "checkout": "svn co http://behavior-ontology.googlecode.com/svn/trunk",
+                "checkout": "git clone https://github.com/bio-ontology-research-group/behavior-ontology.git",
                 "method": "vcs",
-                "system": "svn"
+                "path": ".",
+                "system": "git"
             },
             "contact": {
-                "email": "geg18@aber.ac.uk",
+                "email": "g.gkoutos@gmail.com",
                 "label": "George Gkoutos"
             },
             "domain": "behavior",
-            "homepage": "http://code.google.com/p/behavior-ontology",
+            "homepage": "https://github.com/bio-ontology-research-group/behavior-ontology/wiki",
             "id": "nbo",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/nbo.owl",
             "products": [
                 {
@@ -2767,7 +2823,7 @@
                 }
             ],
             "title": "Neuro Behavior Ontology",
-            "tracker": "http://code.google.com/p/behavior-ontology/issues/list"
+            "tracker": "https://github.com/bio-ontology-research-group/behavior-ontology/issues"
         },
         {
             "browsers": [
@@ -2790,7 +2846,7 @@
             "createdWith": "http://owltools.googlecode.com/",
             "description": "An ontology representation of the NCBI organismal taxonomy",
             "domain": "taxonomy",
-            "homepage": "http://www.obofoundry.org/wiki/index.php/NCBITaxon:Main_Page",
+            "homepage": "https://github.com/obophenotype/ncbitaxon",
             "id": "ncbitaxon",
             "jobs": [
                 {
@@ -2816,11 +2872,13 @@
                 {
                     "id": "ncbitaxon/subsets/taxslim.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl",
+                    "page": "https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md",
                     "title": "taxslim"
                 }
             ],
             "source": "http://www.ncbi.nlm.nih.gov/taxonomy",
             "title": "NCBI organismal classification",
+            "tracker": "https://github.com/obophenotype/ncbitaxon/issues",
             "wasDerivedFrom": "ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat"
         },
         {
@@ -3298,13 +3356,30 @@
             "title": "Plant Anatomy Ontology"
         },
         {
+            "browsers": [
+                {
+                    "label": "Aber-OWL",
+                    "title": "Aber-OWL Ontology Browser",
+                    "url": "http://aber-owl.net/ontology/PATO"
+                },
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal Ontology Browser",
+                    "url": "https://bioportal.bioontology.org/ontologies/PATO"
+                },
+                {
+                    "label": "OntoBee",
+                    "title": "OntoBee Browser",
+                    "url": "http://www.ontobee.org/browser/index.php?o=PATO"
+                }
+            ],
             "build": {
                 "infallible": 1,
                 "method": "obo2owl",
                 "source_url": "https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo"
             },
             "contact": {
-                "email": "geg18@aber.ac.uk",
+                "email": "g.gkoutos@gmail.com",
                 "label": "George Gkoutos"
             },
             "description": "An ontology of phenotypic qualities (properties, attributes or characteristics)",
@@ -3319,6 +3394,11 @@
                 }
             ],
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/pato.owl",
             "products": [
                 {
@@ -3447,7 +3527,8 @@
             "layout": "ontology_detail",
             "license": {
                 "label": "CC-BY",
-                "url": "https://creativecommons.org/licenses/by/3.0/"
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/po.owl",
             "page": "http://www.plantontology.org/amigo/go.cgi",
@@ -4033,8 +4114,9 @@
         },
         {
             "build": {
+                "infallible": 1,
                 "method": "obo2owl",
-                "source_url": "http://gemina.svn.sourceforge.net/viewvc/gemina/trunk/Gemina/ontologies/gemina_symptom.obo"
+                "source_url": "https://sourceforge.net/p/diseaseontology/code/HEAD/tree/Symptom_Ontology/symptom_ontology.obo"
             },
             "contact": {
                 "email": "lynn.schriml@gmail.com",
@@ -4065,7 +4147,8 @@
                 "id": "NCBITaxon:9606",
                 "label": "Homo sapiens"
             },
-            "title": "Symptom Ontology"
+            "title": "Symptom Ontology",
+            "tracker": "http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739"
         },
         {
             "build": {
@@ -4220,6 +4303,7 @@
             "layout": "ontology_detail",
             "license": {
                 "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/to.owl",
@@ -4245,8 +4329,9 @@
         },
         {
             "build": {
+                "infallible": 1,
                 "method": "obo2owl",
-                "source_url": "http://gemina.cvs.sourceforge.net/*checkout*/gemina/Gemina/ontologies/transmission_process.obo"
+                "source_url": "https://sourceforge.net/p/diseaseontology/code/HEAD/tree/Transmission_Process_Ontology/transmission_process_ontology.obo"
             },
             "contact": {
                 "email": "lynn.schriml@gmail.com",
@@ -4274,7 +4359,7 @@
                 }
             ],
             "title": "Pathogen Transmission Ontology",
-            "tracker": "http://sourceforge.net/tracker/?&group_id=76834&atid=1037853"
+            "tracker": "http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739"
         },
         {
             "build": {
@@ -4510,7 +4595,7 @@
                 "source_url": "https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo"
             },
             "contact": {
-                "email": "geg18@aber.ac.uk",
+                "email": "g.gkoutos@gmail.com",
                 "label": "George Gkoutos"
             },
             "description": "Metrical units for use in conjunction with PATO",
@@ -4519,6 +4604,11 @@
             "id": "uo",
             "in_foundry": false,
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/uo.owl",
             "products": [
                 {
@@ -4882,6 +4972,11 @@
             "id": "zfa",
             "in_foundry_order": 1,
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/zfa.owl",
             "products": [
                 {
@@ -4918,6 +5013,11 @@
             "id": "zfs",
             "in_foundry": false,
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/zfs.owl",
             "page": "https://github.com/obophenotype/developmental-stage-ontologies/wiki/ZFS",
             "products": [

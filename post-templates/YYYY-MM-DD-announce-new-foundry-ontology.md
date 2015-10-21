@@ -3,8 +3,8 @@ layout: post
 title:  "$OntologyName is the newest member of the OBO Foundry"
 date:   YYYY-MM-DD
 categories: update
-summary: The OBO Foundry Operations Committee is pleased to announce the inclusion of the $OntologyName ($IDSPACE) as a full member of the the OBO Foundry.
-image: '$OPTIONAL_IMAGE_URL$
+summary: "The OBO Foundry Operations Committee is pleased to announce the inclusion of the $OntologyName ($IDSPACE) as a full member of the the OBO Foundry."
+image: "OPTIONAL-IMAGE-URL"
 tags:
  - announce
  - foundry
