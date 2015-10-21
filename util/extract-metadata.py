@@ -112,9 +112,13 @@ def decorate_metadata(objs):
             license = obj['license']
             lurl = license['url']
             logo = ''
-            if lurl.startswith('http://creativecommons.org/licenses/by/'):
+            # TODO: decide on canonical URI to use for CC licenses;
+            #  ultimately this should all be specified in RDF/JSON-LD.
+            #  e.g. <http://creativecommons.org/licenses/by/3.0> foaf:depictedBy < ... > .
+            #  e.g. <http://creativecommons.org/licenses/by/3.0> owl:sameAs <https://creativecommons.org/licenses/by/3.0> .
+            if lurl.find('creativecommons.org/licenses/by/') > 0:
                 logo = 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png'
-            if lurl.startswith('http://creativecommons.org/publicdomain/zero/'):
+            if lurl.find('creativecommons.org/publicdomain/zero/') > 0:
                 logo = 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png'
             if not logo == '':
                 license['logo'] = logo
