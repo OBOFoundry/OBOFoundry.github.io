@@ -24,6 +24,7 @@ publications:
     title: "Ontologies as integrative tools for plant science."
 products:
   - id: po.owl
+  - id: po.obo
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY

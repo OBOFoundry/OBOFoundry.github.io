@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: faq
 title: Register an ontology
 ---
 
