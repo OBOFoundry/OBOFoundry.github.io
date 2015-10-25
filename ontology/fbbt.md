@@ -16,6 +16,9 @@ taxon:
   id: NCBITaxon:7227
   label: Drosophila
 title: Drosophila gross anatomy
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 build:
   source_url: http://svn.code.sf.net/p/fbbtdv/code/fbbt/releases/fbbt.owl
   method: owl2obo
