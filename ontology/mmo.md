@@ -7,13 +7,13 @@ contact:
 description: "A representation of the variety of methods used to make clinical and phenotype measurements. "
 domain: clinical
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
-page: ftp://rgd.mcw.edu/pub/ontology/measurement_method/
+page: ftp://ftp.rgd.mcw.edu/pub/ontology/measurement_method/
 products:
   - id: mmo.owl
   - id: mmo.obo
 title: Measurement method ontology
 build:
-  source_url: ftp://rgd.mcw.edu/pub/ontology/measurement_method/measurement_method.obo
+  source_url: ftp://ftp.rgd.mcw.edu/pub/ontology/measurement_method/measurement_method.obo
   method: obo2owl
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22654893
