@@ -7,14 +7,14 @@ description: Conditions under which physiological and morphological measurements
 domain: clinical
 homepage:
   - http://rgd.mcw.edu/rgdweb/ontology/search.html
-  - ftp://rgd.mcw.edu/pub/ontology/experimental_condition/
+  - ftp://ftp.rgd.mcw.edu/pub/ontology/experimental_condition/
 id: xco
 products:
   - id: xco.owl
   - id: xco.obo
 title: Experimental condition ontology
 build:
-  source_url: ftp://rgd.mcw.edu/pub/ontology/experimental_condition/experimental_condition.obo
+  source_url: ftp://ftp.rgd.mcw.edu/pub/ontology/experimental_condition/experimental_condition.obo
   method: obo2owl
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22654893
