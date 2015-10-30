@@ -9,6 +9,7 @@ import sys
 import os
 from contextlib import closing
 from SPARQLWrapper import SPARQLWrapper, JSON
+from json import dumps
 
 #from yaml import load, dump
 #from yaml import Loader, Dumper
@@ -36,14 +37,17 @@ def main():
     parser_n = subparsers.add_parser('sparql-compare', help='Checks URLs')
     parser_n.set_defaults(function=sparql_compare_all)
 
+    parser_n = subparsers.add_parser('extract-context', help='Extracts JSON-LD context')
+    parser_n.set_defaults(function=extract_context)
+
     args = parser.parse_args()
 
-    print("Loading "+args.input)
+    #print("Loading "+args.input)
     f = open(args.input, 'r') 
     obj = yaml.load(f)
     ontologies = obj['ontologies']
-    print(len(ontologies))
-
+    #print(len(ontologies))
+    
     func = args.function
     func(ontologies, args)
 
@@ -129,6 +133,29 @@ def build_from_source(obj):
         print("TODO: run svn")
     else:
         print("UNKNOWN METHOD:"+obj.method)
+
+def extract_context(ontologies, args):
+    prefix_map = {}
+    for obj in ontologies:
+        id = obj['id']
+        if not('is_obsolete' in obj):
+            if has_obo_prefix(obj):
+                prefix = id.upper()
+                if 'preferredPrefix' in obj:
+                    prefix = obj['preferredPrefix']
+                #if prefix in prefix_map:
+                #    print("ERROR: prefix present twice:"+prefix)
+                #    exit(1)
+                prefix_map[prefix] = "http://purl.obolibrary.org/obo/" + prefix + "_"
+    ctxt = {}
+    ctxt['@context'] = prefix_map
+    print(dumps(ctxt, sort_keys=True, indent=4, separators=(',', ': ')))
+
+            
+
+# TODO: put this in common lib        
+def has_obo_prefix(obj):
+    return ('uri_prefix' not in obj) or (obj['uri_prefix'] == 'http://purl.obolibrary.org/obo/')
 
 def sparql_compare_all(ontologies, args):
     for obj in ontologies:

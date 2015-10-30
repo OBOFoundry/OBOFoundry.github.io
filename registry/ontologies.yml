@@ -672,6 +672,7 @@ ontologies:
   id: fbbi
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/fbbi.owl
+  preferredPrefix: FBbi
   products:
   - {id: fbbi.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fbbi.owl'}
   title: Biological imaging methods
@@ -1740,6 +1741,7 @@ ontologies:
   page: http://www.plantontology.org/amigo/go.cgi
   products:
   - {id: po.owl, ontology_purl: 'http://purl.obolibrary.org/obo/po.owl'}
+  - {id: po.obo, ontology_purl: 'http://purl.obolibrary.org/obo/po.obo'}
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/23220694', title: The plant ontology
       as a tool for comparative plant anatomy and genomic analyses.}

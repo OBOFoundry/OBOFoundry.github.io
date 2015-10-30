@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: fbbi
+preferredPrefix: FBbi
 contact:
   email: dorloff@ncmir.ucsd.edu
   label: David Orloff
