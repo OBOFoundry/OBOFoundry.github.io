@@ -7,13 +7,13 @@ contact:
 description: A controlled vocabulary for annotating gene products to pathways.
 domain: biological process
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
-page: ftp://rgd.mcw.edu/pub/data_release/PW_Introduction.doc
+page: ftp://ftp.rgd.mcw.edu/pub/data_release/PW_Introduction.doc
 products:
   - id: pw.owl
   - id: pw.obo
 title: Pathway ontology
 build:
-  source_url: ftp://rgd.mcw.edu/pub/data_release/ontology_obo_files/pathway/pathway.obo
+  source_url: ftp://ftp.rgd.mcw.edu/pub/data_release/ontology_obo_files/pathway/pathway.obo
   method: obo2owl
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/21478484

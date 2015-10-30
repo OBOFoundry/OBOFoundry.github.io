@@ -11,6 +11,9 @@ homepage: http://purl.obolibrary.org/obo/fbcv
 products:
   - id: fbcv.owl
 title: FlyBase Controlled Vocabulary
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 build:
   source_url: http://sourceforge.net/p/fbcv/code-0/HEAD/tree/src/trunk/ontologies/fbcv-edit.obo?format=raw
   method: obo2owl
