@@ -67,6 +67,11 @@
             "homepage": "http://purl.obolibrary.org/obo/aero",
             "id": "aero",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/aero.owl",
             "products": [
                 {
@@ -616,7 +621,7 @@
             ],
             "build": {
                 "method": "obo2owl",
-                "source_url": "ftp://rgd.mcw.edu/pub/ontology/clinical_measurement/clinical_measurement.obo"
+                "source_url": "ftp://ftp.rgd.mcw.edu/pub/ontology/clinical_measurement/clinical_measurement.obo"
             },
             "contact": {
                 "email": "shimoyama@mcw.edu",
@@ -628,7 +633,7 @@
             "id": "cmo",
             "layout": "ontology_detail",
             "ontology_purl": "http://purl.obolibrary.org/obo/cmo.owl",
-            "page": "ftp://rgd.mcw.edu/pub/ontology/clinical_measurement/",
+            "page": "ftp://ftp.rgd.mcw.edu/pub/ontology/clinical_measurement/",
             "products": [
                 {
                     "id": "cmo.owl",
@@ -986,7 +991,7 @@
                     "title": "Standardized description of scientific evidence using the Evidence Ontology (ECO)"
                 }
             ],
-            "title": "Evidence codes",
+            "title": "Evidence ontology",
             "tracker": "https://github.com/evidenceontology/evidenceontology/issues"
         },
         {
@@ -1353,6 +1358,7 @@
             "id": "fbbi",
             "layout": "ontology_detail",
             "ontology_purl": "http://purl.obolibrary.org/obo/fbbi.owl",
+            "preferredPrefix": "FBbi",
             "products": [
                 {
                     "id": "fbbi.owl",
@@ -1393,6 +1399,11 @@
             "homepage": "http://purl.obolibrary.org/obo/fbbt",
             "id": "fbbt",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/fbbt.owl",
             "preferredPrefix": "FBbt",
             "products": [
@@ -1455,6 +1466,11 @@
             "homepage": "http://purl.obolibrary.org/obo/fbcv",
             "id": "fbcv",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/fbcv.owl",
             "preferredPrefix": "FBcv",
             "products": [
@@ -1488,6 +1504,11 @@
             "homepage": "http://purl.obolibrary.org/obo/fbdv",
             "id": "fbdv",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/fbdv.owl",
             "preferredPrefix": "FBdv",
             "products": [
@@ -2491,7 +2512,7 @@
             ],
             "build": {
                 "method": "obo2owl",
-                "source_url": "ftp://rgd.mcw.edu/pub/ontology/measurement_method/measurement_method.obo"
+                "source_url": "ftp://ftp.rgd.mcw.edu/pub/ontology/measurement_method/measurement_method.obo"
             },
             "contact": {
                 "email": "shimoyama@mcw.edu",
@@ -2503,7 +2524,7 @@
             "id": "mmo",
             "layout": "ontology_detail",
             "ontology_purl": "http://purl.obolibrary.org/obo/mmo.owl",
-            "page": "ftp://rgd.mcw.edu/pub/ontology/measurement_method/",
+            "page": "ftp://ftp.rgd.mcw.edu/pub/ontology/measurement_method/",
             "products": [
                 {
                     "id": "mmo.owl",
@@ -3536,6 +3557,10 @@
                 {
                     "id": "po.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/po.owl"
+                },
+                {
+                    "id": "po.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/po.obo"
                 }
             ],
             "publications": [
@@ -3653,7 +3678,7 @@
             ],
             "build": {
                 "method": "obo2owl",
-                "source_url": "ftp://rgd.mcw.edu/pub/data_release/ontology_obo_files/pathway/pathway.obo"
+                "source_url": "ftp://ftp.rgd.mcw.edu/pub/data_release/ontology_obo_files/pathway/pathway.obo"
             },
             "contact": {
                 "email": "vpetri@mcw.edu",
@@ -3665,7 +3690,7 @@
             "id": "pw",
             "layout": "ontology_detail",
             "ontology_purl": "http://purl.obolibrary.org/obo/pw.owl",
-            "page": "ftp://rgd.mcw.edu/pub/data_release/PW_Introduction.doc",
+            "page": "ftp://ftp.rgd.mcw.edu/pub/data_release/PW_Introduction.doc",
             "products": [
                 {
                     "id": "pw.owl",
@@ -3825,7 +3850,7 @@
             ],
             "build": {
                 "method": "obo2owl",
-                "source_url": "ftp://rgd.mcw.edu/pub/ontology/rat_strain/rat_strain.obo"
+                "source_url": "ftp://ftp.rgd.mcw.edu/pub/ontology/rat_strain/rat_strain.obo"
             },
             "contact": {
                 "email": "rnigam@mcw.edu",
@@ -3836,7 +3861,7 @@
             "id": "rs",
             "layout": "ontology_detail",
             "ontology_purl": "http://purl.obolibrary.org/obo/rs.owl",
-            "page": "ftp://rgd.mcw.edu/pub/ontology/rat_strain/",
+            "page": "ftp://ftp.rgd.mcw.edu/pub/ontology/rat_strain/",
             "products": [
                 {
                     "id": "rs.owl",
@@ -4887,7 +4912,7 @@
             ],
             "build": {
                 "method": "obo2owl",
-                "source_url": "ftp://rgd.mcw.edu/pub/ontology/experimental_condition/experimental_condition.obo"
+                "source_url": "ftp://ftp.rgd.mcw.edu/pub/ontology/experimental_condition/experimental_condition.obo"
             },
             "contact": {
                 "email": "shimoyama@mcw.edu",
@@ -4897,7 +4922,7 @@
             "domain": "clinical",
             "homepage": [
                 "http://rgd.mcw.edu/rgdweb/ontology/search.html",
-                "ftp://rgd.mcw.edu/pub/ontology/experimental_condition/"
+                "ftp://ftp.rgd.mcw.edu/pub/ontology/experimental_condition/"
             ],
             "id": "xco",
             "layout": "ontology_detail",

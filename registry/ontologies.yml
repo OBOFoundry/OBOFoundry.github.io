@@ -35,6 +35,8 @@ ontologies:
   homepage: http://purl.obolibrary.org/obo/aero
   id: aero
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/aero.owl
   products:
   - {id: aero.owl, ontology_purl: 'http://purl.obolibrary.org/obo/aero.owl'}
@@ -306,7 +308,7 @@ ontologies:
   title: CranioMaxilloFacial ontology
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=CMO:0000000'}
-  build: {method: obo2owl, source_url: 'ftp://rgd.mcw.edu/pub/ontology/clinical_measurement/clinical_measurement.obo'}
+  build: {method: obo2owl, source_url: 'ftp://ftp.rgd.mcw.edu/pub/ontology/clinical_measurement/clinical_measurement.obo'}
   contact: {email: shimoyama@mcw.edu, label: Mary Shimoyama}
   description: Morphological and physiological measurement records generated from
     clinical and model organism research and health programs.
@@ -315,7 +317,7 @@ ontologies:
   id: cmo
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/cmo.owl
-  page: ftp://rgd.mcw.edu/pub/ontology/clinical_measurement/
+  page: ftp://ftp.rgd.mcw.edu/pub/ontology/clinical_measurement/
   products:
   - {id: cmo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/cmo.owl'}
   - {id: cmo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/cmo.obo'}
@@ -488,7 +490,7 @@ ontologies:
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/25052702', title: Standardized description
       of scientific evidence using the Evidence Ontology (ECO)}
-  title: Evidence codes
+  title: Evidence ontology
   tracker: https://github.com/evidenceontology/evidenceontology/issues
 - contact: {email: Jonathan Bard, label: J.Bard@ed.ac.uk}
   homepage: http://genex.hgu.mrc.ac.uk/
@@ -687,6 +689,8 @@ ontologies:
   homepage: http://purl.obolibrary.org/obo/fbbt
   id: fbbt
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/fbbt.owl
   preferredPrefix: FBbt
   products:
@@ -715,6 +719,8 @@ ontologies:
   homepage: http://purl.obolibrary.org/obo/fbcv
   id: fbcv
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/fbcv.owl
   preferredPrefix: FBcv
   products:
@@ -731,6 +737,8 @@ ontologies:
   homepage: http://purl.obolibrary.org/obo/fbdv
   id: fbdv
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/fbdv.owl
   preferredPrefix: FBdv
   products:
@@ -1219,7 +1227,7 @@ ontologies:
   title: Mosquito insecticide resistance
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000'}
-  build: {method: obo2owl, source_url: 'ftp://rgd.mcw.edu/pub/ontology/measurement_method/measurement_method.obo'}
+  build: {method: obo2owl, source_url: 'ftp://ftp.rgd.mcw.edu/pub/ontology/measurement_method/measurement_method.obo'}
   contact: {email: shimoyama@mcw.edu, label: Mary Shimoyama}
   description: 'A representation of the variety of methods used to make clinical and
     phenotype measurements. '
@@ -1228,7 +1236,7 @@ ontologies:
   id: mmo
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mmo.owl
-  page: ftp://rgd.mcw.edu/pub/ontology/measurement_method/
+  page: ftp://ftp.rgd.mcw.edu/pub/ontology/measurement_method/
   products:
   - {id: mmo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mmo.owl'}
   - {id: mmo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/mmo.obo'}
@@ -1794,7 +1802,7 @@ ontologies:
   title: Proteomics data and process provenance
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=PW:0000001'}
-  build: {method: obo2owl, source_url: 'ftp://rgd.mcw.edu/pub/data_release/ontology_obo_files/pathway/pathway.obo'}
+  build: {method: obo2owl, source_url: 'ftp://ftp.rgd.mcw.edu/pub/data_release/ontology_obo_files/pathway/pathway.obo'}
   contact: {email: vpetri@mcw.edu, label: Victoria Petri}
   description: A controlled vocabulary for annotating gene products to pathways.
   domain: biological process
@@ -1802,7 +1810,7 @@ ontologies:
   id: pw
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/pw.owl
-  page: ftp://rgd.mcw.edu/pub/data_release/PW_Introduction.doc
+  page: ftp://ftp.rgd.mcw.edu/pub/data_release/PW_Introduction.doc
   products:
   - {id: pw.owl, ontology_purl: 'http://purl.obolibrary.org/obo/pw.owl'}
   - {id: pw.obo, ontology_purl: 'http://purl.obolibrary.org/obo/pw.obo'}
@@ -1874,14 +1882,14 @@ ontologies:
   tracker: https://github.com/oborel/obo-relations/issues
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=RS:0000457'}
-  build: {method: obo2owl, source_url: 'ftp://rgd.mcw.edu/pub/ontology/rat_strain/rat_strain.obo'}
+  build: {method: obo2owl, source_url: 'ftp://ftp.rgd.mcw.edu/pub/ontology/rat_strain/rat_strain.obo'}
   contact: {email: rnigam@mcw.edu, label: Rajni Nigam}
   description: Ontology of rat strains
   homepage: http://rgd.mcw.edu/rgdweb/search/strains.html
   id: rs
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/rs.owl
-  page: ftp://rgd.mcw.edu/pub/ontology/rat_strain/
+  page: ftp://ftp.rgd.mcw.edu/pub/ontology/rat_strain/
   products:
   - {id: rs.owl, ontology_purl: 'http://purl.obolibrary.org/obo/rs.owl'}
   - {id: rs.obo, ontology_purl: 'http://purl.obolibrary.org/obo/rs.obo'}
@@ -2391,12 +2399,12 @@ ontologies:
   tracker: https://github.com/xenopus-anatomy/xao/issues
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000'}
-  build: {method: obo2owl, source_url: 'ftp://rgd.mcw.edu/pub/ontology/experimental_condition/experimental_condition.obo'}
+  build: {method: obo2owl, source_url: 'ftp://ftp.rgd.mcw.edu/pub/ontology/experimental_condition/experimental_condition.obo'}
   contact: {email: shimoyama@mcw.edu, label: Mary Shimoyama}
   description: Conditions under which physiological and morphological measurements
     are made both in the clinic and in studies involving humans or model organisms.
   domain: clinical
-  homepage: ['http://rgd.mcw.edu/rgdweb/ontology/search.html', 'ftp://rgd.mcw.edu/pub/ontology/experimental_condition/']
+  homepage: ['http://rgd.mcw.edu/rgdweb/ontology/search.html', 'ftp://ftp.rgd.mcw.edu/pub/ontology/experimental_condition/']
   id: xco
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/xco.owl
