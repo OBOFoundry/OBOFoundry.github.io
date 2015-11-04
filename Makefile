@@ -1,10 +1,43 @@
+# Makefile for OBOFoundry.github.io
+#
+# This file contains commands for validating and generating
+# configuration files for the OBO Foundry website.
+# The `util/` directory contains additional scripts
+# called from this Makefile.
+# It is intended to be run on a Unix system (Linux, Mac OS X)
+# **before** the site is built using
+# [Jekyll](http://jekyllrb.com).
+#
+# Software requirements:
+#
+# - [GNU Make](http://www.gnu.org/software/make/)
+# - [Apache Jena](https://jena.apache.org/download/)
+# - [Python 3](https://www.python.org/downloads/)
+# - [PyYAML](http://pyyaml.org/wiki/PyYAML)
+# - [SPARQLWrapper](https://pypi.python.org/pypi/SPARQLWrapper)
+#
+# Run `make` in this directory to update all generated files
+# (i.e. the default `all` task).
+# Make does its best to detect changes and run only the required tasks,
+# but sometimes it helps to delete the target files first.
+#
+# WARNING: Makefiles contain significant tab characters!
+# Ensure that your editor shows tab characters before editing this file.
+
+
+### Configuration
+
 # All ontology .md files
 ONTS := $(wildcard ontology/*md)
 
 # All principles .md file
 PRINCIPLES := $(wildcard principles/*md)
 
+
+### Main Tasks
+
 all: pull yml registry/ontologies.ttl
+
 yml: _config.yml registry/ontologies.yml
 
 test: validate yml
@@ -13,6 +46,9 @@ integration-test: test valid-purl-report.txt
 
 pull:
 	git pull
+
+
+### Build Configuration Files
 
 # Create the site-wide config file by combining all metadata on ontologies + principles
 #  and combining with site-wide metadata.
@@ -50,6 +86,8 @@ registry/ontologies.nt: registry/ontologies.jsonld
 registry/ontologies.ttl: registry/ontologies.nt
 	rdfcat -out ttl $< > $@.tmp && mv $@.tmp $@
 
+
+### Validate Configuration Files
 
 validate: $(ONTS)
 	./util/extract-metadata.py validate $^
