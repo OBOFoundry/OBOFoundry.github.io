@@ -103,7 +103,7 @@ def concat_ont_yaml(args):
         cfg = yaml.load(f.read())
     for fn in args.files:
         (obj, md) = load_md(fn)
-        if 'is_obsolete' in obj:
+        if 'is_obsolete' in obj and obj['is_obsolete'] == True:
           obsolete.append(obj)
         elif 'in_foundry_order' in obj:
           foundry.append(obj)
