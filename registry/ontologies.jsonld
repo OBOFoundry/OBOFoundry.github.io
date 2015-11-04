@@ -2,31 +2,464 @@
     "@context": "http://obofoundry.github.io/registry/context.jsonld",
     "ontologies": [
         {
+            "alternatePrefix": "ChEBI",
+            "browsers": [
+                {
+                    "label": "CHEBI",
+                    "title": "EBI CHEBI Browser",
+                    "url": "http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView"
+                }
+            ],
+            "build": {
+                "infallible": 1,
+                "method": "archive",
+                "path": "archive/main",
+                "source_url": "http://build.berkeleybop.org/job/build-chebi/lastSuccessfulBuild/artifact/*zip*/archive.zip"
+            },
             "contact": {
-                "email": "David Blackburn",
-                "label": "david.c.blackburn@gmail.com"
+                "email": "gowen@ebi.ac.uk",
+                "label": "Gareth Owen"
             },
-            "homepage": "http://github.com/seger/aao",
-            "id": "aao",
-            "is_obsolete": true,
+            "description": "A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds.",
+            "domain": "biochemistry",
+            "homepage": "http://www.ebi.ac.uk/chebi",
+            "id": "chebi",
+            "in_foundry_order": 1,
             "layout": "ontology_detail",
-            "replaced_by": "uberon",
-            "taxon": {
-                "id": "NCBITaxon:8292",
-                "label": "Amphibia"
-            },
-            "title": "Amphibian gross anatomy"
+            "ontology_purl": "http://purl.obolibrary.org/obo/chebi.owl",
+            "page": "http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual",
+            "products": [
+                {
+                    "id": "chebi.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/chebi.owl"
+                },
+                {
+                    "id": "chebi.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/chebi.obo"
+                }
+            ],
+            "title": "Chemical Entities of Biological Interest",
+            "tracker": "https://sourceforge.net/p/chebi/curator-requests/",
+            "twitter": "chebit"
         },
         {
-            "contact": {
-                "email": "Animal Diversity Web technical staff",
-                "label": "adw_geeks@umich.edu"
+            "browsers": [
+                {
+                    "label": "DO",
+                    "title": "DO Browser",
+                    "url": "http://www.disease-ontology.org/"
+                }
+            ],
+            "build": {
+                "infallible": 1,
+                "method": "obo2owl",
+                "source_url": "http://sourceforge.net/p/diseaseontology/code/HEAD/tree/trunk/HumanDO.obo?format=raw"
             },
-            "homepage": "http://www.animaldiversity.org",
-            "id": "adw",
-            "is_obsolete": true,
+            "contact": {
+                "email": "lynn.schriml@gmail.com",
+                "label": "Lynn Schriml"
+            },
+            "description": "An ontology for describing the classification of human diseases organized by etiology.",
+            "domain": "disease",
+            "facebook": "https://www.facebook.com/diseaseontology",
+            "homepage": "http://diseaseontology.sourceforge.net/",
+            "id": "doid",
+            "in_foundry_order": 1,
             "layout": "ontology_detail",
-            "title": "Animal natural history and life history"
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/doid.owl",
+            "page": "http://diseaseontology.sourceforge.net/",
+            "products": [
+                {
+                    "id": "doid.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/doid.owl"
+                },
+                {
+                    "id": "doid.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/doid.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409",
+                    "title": "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:9606",
+                "label": "Homo sapiens"
+            },
+            "title": "Human Disease Ontology",
+            "tracker": "http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739",
+            "twitter": "diseaseontology"
+        },
+        {
+            "browsers": [
+                {
+                    "label": "AmiGO",
+                    "title": "Gene Ontology AmiGO 2 Browser",
+                    "url": "http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab"
+                }
+            ],
+            "build": {
+                "checkout": "svn --ignore-externals co svn://ext.geneontology.org/trunk/ontology",
+                "infallible": 1,
+                "method": "vcs",
+                "system": "svn"
+            },
+            "dependencies": [
+                {
+                    "id": "uberon",
+                    "subset": "go/extensions/uberon_import.owl"
+                },
+                {
+                    "id": "cl",
+                    "subset": "go/extensions/cl_import.owl"
+                },
+                {
+                    "id": "ncbitaxon",
+                    "subset": "go/extensions/ncbitaxon_import.owl"
+                },
+                {
+                    "id": "ro",
+                    "subset": "go/extensions/ro_import.owl"
+                },
+                {
+                    "connects": [
+                        {
+                            "id": "nifstd"
+                        },
+                        {
+                            "id": "go"
+                        }
+                    ],
+                    "description": "Bridging axioms between nifstd and go",
+                    "id": "go/extensions/go-bridge-to-nifstd.owl",
+                    "publications": [
+                        {
+                            "id": "http://www.ncbi.nlm.nih.gov/pubmed/24093723",
+                            "title": "The Gene Ontology (GO) Cellular Component Ontology: integration with SAO (Subcellular Anatomy Ontology) and other recent developments."
+                        }
+                    ],
+                    "title": "GO bridge to NIFSTD",
+                    "type": "BridgeOntology"
+                }
+            ],
+            "depicted_by": "http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png",
+            "description": "An ontology for describing the function of genes and gene products",
+            "domain": "biology",
+            "facebook": "https://www.facebook.com/Gene-Ontology-305908656519/",
+            "id": "go",
+            "in_foundry_order": 1,
+            "integration_server": "http://build.berkeleybop.org/view/GO",
+            "label": "GO",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/go.owl",
+            "products": [
+                {
+                    "id": "go.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/go.owl"
+                },
+                {
+                    "description": "The core ontology plus axioms connecting to select external ontologies",
+                    "id": "go/extensions/go-plus.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/go/extensions/go-plus.owl",
+                    "title": "GO-Plus"
+                },
+                {
+                    "description": "Classes added to ncbitaxon for groupings such as prokaryotes",
+                    "id": "go/extensions/go-taxon-groupings.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl",
+                    "title": "GO Taxon Groupings"
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:1",
+                "label": "All life"
+            },
+            "termgenie": "http://go.termgenie.org",
+            "title": "Gene Ontology",
+            "tracker": "https://github.com/geneontology/go-ontology/issues/",
+            "twitter": "news4go"
+        },
+        {
+            "browsers": [
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal Browser",
+                    "url": "http://bioportal.bioontology.org/ontologies/OBI?p=classes"
+                }
+            ],
+            "build": {
+                "source_url": "http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/"
+            },
+            "contact": {
+                "email": "bpeters@liai.org",
+                "label": "Bjoern Peters"
+            },
+            "depicted_by": "https://svn.code.sf.net/p/obi/code/trunk/web/htdocs/images/obi-lotext.png",
+            "description": "An integrated ontology for the description of life-science and clinical investigations",
+            "domain": "experiments",
+            "homepage": "http://obi-ontology.org",
+            "id": "obi",
+            "in_foundry_order": 1,
+            "integration_server": "http://build.berkeleybop.org/job/build-obi/",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "mailing_list": "http://groups.google.com/group/obi-users",
+            "ontology_purl": "http://purl.obolibrary.org/obo/obi.owl",
+            "products": [
+                {
+                    "id": "obi.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/obi.owl",
+                    "title": "OBI"
+                },
+                {
+                    "id": "obi/obi_core.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/obi/obi_core.owl",
+                    "title": "OBI Core"
+                }
+            ],
+            "title": "Ontology for Biomedical Investigations",
+            "tracker": "http://purl.obofoundry.org/obo/obi/tracker"
+        },
+        {
+            "browsers": [
+                {
+                    "label": "Aber-OWL",
+                    "title": "Aber-OWL Ontology Browser",
+                    "url": "http://aber-owl.net/ontology/PATO"
+                },
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal Ontology Browser",
+                    "url": "https://bioportal.bioontology.org/ontologies/PATO"
+                },
+                {
+                    "label": "OntoBee",
+                    "title": "OntoBee Browser",
+                    "url": "http://www.ontobee.org/browser/index.php?o=PATO"
+                }
+            ],
+            "build": {
+                "infallible": 1,
+                "method": "obo2owl",
+                "source_url": "https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo"
+            },
+            "contact": {
+                "email": "g.gkoutos@gmail.com",
+                "label": "George Gkoutos"
+            },
+            "description": "An ontology of phenotypic qualities (properties, attributes or characteristics)",
+            "domain": "phenotype",
+            "homepage": "https://github.com/pato-ontology/pato/",
+            "id": "pato",
+            "in_foundry_order": 1,
+            "jobs": [
+                {
+                    "id": "http://build.berkeleybop.org/job/build-pato",
+                    "type": "DryRunBuild"
+                }
+            ],
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/pato.owl",
+            "products": [
+                {
+                    "id": "pato.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pato.owl"
+                },
+                {
+                    "id": "pato.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pato.obo"
+                }
+            ],
+            "repository": "https://github.com/pato-ontology/pato/",
+            "title": "Phenotypic quality",
+            "tracker": "https://github.com/pato-ontology/pato/issues"
+        },
+        {
+            "build": {
+                "infallible": 1,
+                "method": "obo2owl",
+                "notes": "switch to vcs method",
+                "source_url": "https://raw.githubusercontent.com/Planteome/plant-ontology/master/po-release-files/plant_ontology.obo"
+            },
+            "contact": {
+                "email": "jaiswalp@science.oregonstate.edu",
+                "label": "Pankaj Jaiswal"
+            },
+            "description": "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.",
+            "domain": "anatomy and development",
+            "homepage": "http://www.plantontology.org",
+            "id": "po",
+            "in_foundry_order": 1,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/po.owl",
+            "page": "http://www.plantontology.org/amigo/go.cgi",
+            "products": [
+                {
+                    "id": "po.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/po.owl"
+                },
+                {
+                    "id": "po.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/po.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/23220694",
+                    "title": "The plant ontology as a tool for comparative plant anatomy and genomic analyses."
+                },
+                {
+                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/22847540",
+                    "title": "Ontologies as integrative tools for plant science."
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:33090",
+                "label": "Viridiplantae"
+            },
+            "title": "Plant Ontology",
+            "tracker": "https://github.com/Planteome/plant-ontology/issues",
+            "twitter": "planteome"
+        },
+        {
+            "build": {
+                "infallible": 0,
+                "method": "obo2owl",
+                "oort_args": "--no-reasoner",
+                "source_url": "ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.obo"
+            },
+            "contact": {
+                "email": "dan5@georgetown.edu",
+                "label": "Darren Natale"
+            },
+            "description": "an ontological representation of protein-related entities",
+            "development": {
+                "id_policy": "https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+URI+policy"
+            },
+            "documentation": "ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt",
+            "domain": "proteins",
+            "homepage": "http://proconsortium.org",
+            "id": "pr",
+            "in_foundry_order": 1,
+            "layout": "ontology_detail",
+            "ontology_purl": "http://purl.obolibrary.org/obo/pr.owl",
+            "products": [
+                {
+                    "id": "pr.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pr.owl"
+                }
+            ],
+            "title": "PRotein Ontology (PRO)",
+            "tracker": "http://sourceforge.net/tracker/?group_id=266825&atid=1135711"
+        },
+        {
+            "build": {
+                "infallible": 0,
+                "method": "obo2owl",
+                "source_url": "https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo"
+            },
+            "description": "Anatomy and development of the African clawed frog (<i>Xenopus laevis</i>).",
+            "domain": "anatomy",
+            "homepage": "http://www.xenbase.org/anatomy/xao.do?method=display",
+            "id": "xao",
+            "in_foundry_order": 1,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/xao.owl",
+            "products": [
+                {
+                    "id": "xao.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/xao.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/18817563",
+                    "title": "An ontology for Xenopus anatomy and development."
+                },
+                {
+                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/24139024",
+                    "title": "Enhanced XAO: the ontology of Xenopus anatomy and development underpins more accurate annotation of gene expression and queries on Xenbase."
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:8353",
+                "label": "Xenopus"
+            },
+            "title": "Xenopus anatomy and development",
+            "tracker": "https://github.com/xenopus-anatomy/xao/issues"
+        },
+        {
+            "build": {
+                "infallible": 1,
+                "method": "obo2owl",
+                "notes": "may be ready to switch to vcs soon",
+                "source_url": "https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/src/zebrafish_anatomy.obo"
+            },
+            "contact": {
+                "email": "zfinadmin@zfin.org",
+                "label": "ZFIN administrators"
+            },
+            "description": "A structured controlled vocabulary of the anatomy and development of the Zebrafish",
+            "domain": "anatomy",
+            "homepage": "http://zfin.org/zf_info/anatomy/dict/sum.html",
+            "id": "zfa",
+            "in_foundry_order": 1,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/zfa.owl",
+            "products": [
+                {
+                    "id": "zfa.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/zfa.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/24568621",
+                    "title": "The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio."
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:7954",
+                "label": "Danio"
+            },
+            "title": "Zebrafish anatomy and development",
+            "tracker": "https://github.com/cerivs/zebrafish-anatomical-ontology/issues"
         },
         {
             "build": {
@@ -110,21 +543,6 @@
         },
         {
             "contact": {
-                "email": "David Blackburn",
-                "label": "david.c.blackburn@gmail.com"
-            },
-            "homepage": "http://www.amphibanat.org",
-            "id": "ato",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "taxon": {
-                "id": "NCBITaxon:8292",
-                "label": "Amphibia"
-            },
-            "title": "Amphibian taxonomy"
-        },
-        {
-            "contact": {
                 "email": "jiezheng@upenn.edu",
                 "label": "Jie Zheng"
             },
@@ -205,45 +623,6 @@
             ],
             "title": "Basic Formal Ontology",
             "tracker": "https://github.com/BFO-ontology/BFO/issues"
-        },
-        {
-            "build": {
-                "method": "obo2owl",
-                "source_url": "http://4dx.embl.de/4DXpress_4d/edocs/bilateria_mrca.obo"
-            },
-            "contact": {
-                "email": "henrich@embl.de",
-                "label": "Thorsten Heinrich"
-            },
-            "domain": "anatomy",
-            "homepage": "http://4dx.embl.de/4DXpress",
-            "id": "bila",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "products": [
-                {
-                    "id": "bila.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/bila.owl"
-                }
-            ],
-            "replaced_by": "uberon",
-            "taxon": {
-                "id": "NCBITaxon:33213",
-                "label": "Bilateria"
-            },
-            "title": "Bilateria anatomy"
-        },
-        {
-            "contact": {
-                "email": "Vivian Lee",
-                "label": "vlee@ebi.ac.uk"
-            },
-            "homepage": "http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html",
-            "id": "bootstrep",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "replaced_by": "molecular_function",
-            "title": "Gene Regulation Ontology"
         },
         {
             "build": {
@@ -399,47 +778,6 @@
             },
             "title": "Cephalopod Ontology",
             "tracker": "https://github.com/obophenotype/cephalopod-ontology/issues"
-        },
-        {
-            "alternatePrefix": "ChEBI",
-            "browsers": [
-                {
-                    "label": "CHEBI",
-                    "title": "EBI CHEBI Browser",
-                    "url": "http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView"
-                }
-            ],
-            "build": {
-                "infallible": 1,
-                "method": "archive",
-                "path": "archive/main",
-                "source_url": "http://build.berkeleybop.org/job/build-chebi/lastSuccessfulBuild/artifact/*zip*/archive.zip"
-            },
-            "contact": {
-                "email": "gowen@ebi.ac.uk",
-                "label": "Gareth Owen"
-            },
-            "description": "A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds.",
-            "domain": "biochemistry",
-            "homepage": "http://www.ebi.ac.uk/chebi",
-            "id": "chebi",
-            "in_foundry_order": 1,
-            "layout": "ontology_detail",
-            "ontology_purl": "http://purl.obolibrary.org/obo/chebi.owl",
-            "page": "http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual",
-            "products": [
-                {
-                    "id": "chebi.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/chebi.owl"
-                },
-                {
-                    "id": "chebi.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/chebi.obo"
-                }
-            ],
-            "title": "Chemical Entities of Biological Interest",
-            "tracker": "https://sourceforge.net/p/chebi/curator-requests/",
-            "twitter": "chebit"
         },
         {
             "build": {
@@ -724,22 +1062,6 @@
             "tracker": "https://code.google.com/p/cvdo/issues/list"
         },
         {
-            "contact": {
-                "email": "Lindsay Cowell",
-                "label": "Lindsay.Cowell@utsouthwestern.edu"
-            },
-            "homepage": "http://www.dukeontologygroup.org/Projects.html",
-            "id": "dc_cl",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "replaced_by": "cl",
-            "taxon": {
-                "id": "all",
-                "label": null
-            },
-            "title": "Dendritic cell"
-        },
-        {
             "build": {
                 "method": "obo2owl",
                 "source_url": "https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_anatomy.obo"
@@ -831,61 +1153,6 @@
                 }
             ],
             "title": "The Drug-drug Interaction Ontology"
-        },
-        {
-            "browsers": [
-                {
-                    "label": "DO",
-                    "title": "DO Browser",
-                    "url": "http://www.disease-ontology.org/"
-                }
-            ],
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "http://sourceforge.net/p/diseaseontology/code/HEAD/tree/trunk/HumanDO.obo?format=raw"
-            },
-            "contact": {
-                "email": "lynn.schriml@gmail.com",
-                "label": "Lynn Schriml"
-            },
-            "description": "An ontology for describing the classification of human diseases organized by etiology.",
-            "domain": "disease",
-            "facebook": "https://www.facebook.com/diseaseontology",
-            "homepage": "http://diseaseontology.sourceforge.net/",
-            "id": "doid",
-            "in_foundry_order": 1,
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-BY",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/doid.owl",
-            "page": "http://diseaseontology.sourceforge.net/",
-            "products": [
-                {
-                    "id": "doid.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/doid.owl"
-                },
-                {
-                    "id": "doid.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/doid.obo"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409",
-                    "title": "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"
-                }
-            ],
-            "taxon": {
-                "id": "NCBITaxon:9606",
-                "label": "Homo sapiens"
-            },
-            "title": "Human Disease Ontology",
-            "tracker": "http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739",
-            "twitter": "diseaseontology"
         },
         {
             "browsers": [
@@ -993,38 +1260,6 @@
             ],
             "title": "Evidence ontology",
             "tracker": "https://github.com/evidenceontology/evidenceontology/issues"
-        },
-        {
-            "contact": {
-                "email": "Jonathan Bard",
-                "label": "J.Bard@ed.ac.uk"
-            },
-            "homepage": "http://genex.hgu.mrc.ac.uk/",
-            "id": "ehda",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "replaced_by": "ehdaa2",
-            "taxon": {
-                "id": "NCBITaxon:9606",
-                "label": "Homo sapiens"
-            },
-            "title": "Human developmental anatomy, timed version"
-        },
-        {
-            "contact": {
-                "email": "Jonathan Bard",
-                "label": "J.Bard@ed.ac.uk"
-            },
-            "homepage": null,
-            "id": "ehdaa",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "replaced_by": "ehdaa2",
-            "taxon": {
-                "id": "NCBITaxon:9606",
-                "label": "Homo sapiens"
-            },
-            "title": "Human developmental anatomy, abstract version"
         },
         {
             "build": {
@@ -1285,17 +1520,6 @@
             "tracker": "http://code.google.com/p/eagle-i/issues/list"
         },
         {
-            "contact": {
-                "email": "eVOC mailing list",
-                "label": "evoc@sanbi.ac.za"
-            },
-            "homepage": "http://www.evocontology.org/",
-            "id": "ev",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "title": "eVOC (Expressed Sequence Annotation for Humans)"
-        },
-        {
             "build": {
                 "method": "obo2owl",
                 "source_url": "http://ctdbase.org/reports/CTD_exposure_ontology.obo"
@@ -1533,33 +1757,6 @@
             "tracker": "http://purl.obolibrary.org/obo/fbdv/tracker"
         },
         {
-            "build": {
-                "method": "obo2owl",
-                "source_url": "http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/fly_taxonomy.obo"
-            },
-            "contact": {
-                "email": "mmc46@gen.cam.ac.uk",
-                "label": "Marta Costa"
-            },
-            "description": "The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase.",
-            "domain": "taxonomy",
-            "homepage": "http://www.flybase.org/",
-            "id": "fbsp",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "products": [
-                {
-                    "id": "fbsp.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/fbsp.owl"
-                }
-            ],
-            "taxon": {
-                "id": "NCBITaxon:7227",
-                "label": "Drosophila"
-            },
-            "title": "Fly taxonomy"
-        },
-        {
             "contact": {
                 "email": "hastings@ebi.ac.uk",
                 "label": "Janna Hastings"
@@ -1722,122 +1919,6 @@
             ],
             "title": "Geographical Entity Ontology",
             "tracker": "https://ontology.atlassian.net/browse/GEO#selectedTab=com.atlassian.jira.plugin.system.project%3Aissues-panel"
-        },
-        {
-            "browsers": [
-                {
-                    "label": "AmiGO",
-                    "title": "Gene Ontology AmiGO 2 Browser",
-                    "url": "http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab"
-                }
-            ],
-            "build": {
-                "checkout": "svn --ignore-externals co svn://ext.geneontology.org/trunk/ontology",
-                "infallible": 1,
-                "method": "vcs",
-                "system": "svn"
-            },
-            "dependencies": [
-                {
-                    "id": "uberon",
-                    "subset": "go/extensions/uberon_import.owl"
-                },
-                {
-                    "id": "cl",
-                    "subset": "go/extensions/cl_import.owl"
-                },
-                {
-                    "id": "ncbitaxon",
-                    "subset": "go/extensions/ncbitaxon_import.owl"
-                },
-                {
-                    "id": "ro",
-                    "subset": "go/extensions/ro_import.owl"
-                },
-                {
-                    "connects": [
-                        {
-                            "id": "nifstd"
-                        },
-                        {
-                            "id": "go"
-                        }
-                    ],
-                    "description": "Bridging axioms between nifstd and go",
-                    "id": "go/extensions/go-bridge-to-nifstd.owl",
-                    "publications": [
-                        {
-                            "id": "http://www.ncbi.nlm.nih.gov/pubmed/24093723",
-                            "title": "The Gene Ontology (GO) Cellular Component Ontology: integration with SAO (Subcellular Anatomy Ontology) and other recent developments."
-                        }
-                    ],
-                    "title": "GO bridge to NIFSTD",
-                    "type": "BridgeOntology"
-                }
-            ],
-            "depicted_by": "http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png",
-            "description": "An ontology for describing the function of genes and gene products",
-            "domain": "biology",
-            "facebook": "https://www.facebook.com/Gene-Ontology-305908656519/",
-            "id": "go",
-            "in_foundry_order": 1,
-            "integration_server": "http://build.berkeleybop.org/view/GO",
-            "label": "GO",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-BY",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/go.owl",
-            "products": [
-                {
-                    "id": "go.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/go.owl"
-                },
-                {
-                    "description": "The core ontology plus axioms connecting to select external ontologies",
-                    "id": "go/extensions/go-plus.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/go/extensions/go-plus.owl",
-                    "title": "GO-Plus"
-                },
-                {
-                    "description": "Classes added to ncbitaxon for groupings such as prokaryotes",
-                    "id": "go/extensions/go-taxon-groupings.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl",
-                    "title": "GO Taxon Groupings"
-                }
-            ],
-            "taxon": {
-                "id": "NCBITaxon:1",
-                "label": "All life"
-            },
-            "termgenie": "http://go.termgenie.org",
-            "title": "Gene Ontology",
-            "tracker": "https://github.com/geneontology/go-ontology/issues/",
-            "twitter": "news4go"
-        },
-        {
-            "contact": {
-                "email": "Plant Ontology Administrators",
-                "label": "po-discuss@plantontology.org"
-            },
-            "homepage": "http://www.gramene.org/plant_ontology/",
-            "id": "gro",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "title": "Cereal Plant Gross Anatomy"
-        },
-        {
-            "contact": {
-                "email": "Peter Midford",
-                "label": "peteremidford@yahoo.com"
-            },
-            "homepage": "http://www.mesquiteproject.org/ontology/Habronattus/index.html",
-            "id": "habronattus",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "title": "Habronattus courtship"
         },
         {
             "build": {
@@ -2101,35 +2182,6 @@
             "title": "Malaria Ontology"
         },
         {
-            "homepage": "http://www.inoh.org",
-            "id": "iev",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "title": "Event (INOH pathway ontology)"
-        },
-        {
-            "contact": {
-                "email": "INOH curators",
-                "label": "curator@inoh.org"
-            },
-            "homepage": "http://www.inoh.org",
-            "id": "imr",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "title": "Molecule role (INOH Protein name/family name ontology)"
-        },
-        {
-            "contact": {
-                "email": "InterPro Help",
-                "label": "interhelp@ebi.ac.uk"
-            },
-            "homepage": "http://www.ebi.ac.uk/interpro/index.html",
-            "id": "ipr",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "title": "Protein Domains"
-        },
-        {
             "build": {
                 "method": "owl2obo",
                 "source_url": "http://svn.code.sf.net/p/kisao/code/tags/kisao-owl-latest/kisao.owl"
@@ -2155,34 +2207,6 @@
                 }
             ],
             "title": "Kinetic Simulation Algorithm Ontology"
-        },
-        {
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://www.lipidprofiles.com/LipidOntology"
-            },
-            "contact": {
-                "email": "bakerc@unb.ca",
-                "label": "Christipher Baker"
-            },
-            "description": "An ontology representation of the LIPIDMAPS nomenclature classification.",
-            "domain": "lipids",
-            "id": "lipro",
-            "in_foundry": false,
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "title": "Lipid Ontology"
-        },
-        {
-            "contact": {
-                "email": "Peter Midford",
-                "label": "peteremidford@yahoo.com"
-            },
-            "homepage": "http://www.mesquiteproject.org/ontology/Loggerhead/index.html",
-            "id": "loggerhead",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "title": "Loggerhead nesting"
         },
         {
             "build": {
@@ -2246,28 +2270,6 @@
             ],
             "title": "Mathematical modeling ontology",
             "tracker": "http://sourceforge.net/p/mamo-ontology/tickets/"
-        },
-        {
-            "contact": {
-                "email": "Julie Thompson",
-                "label": "julie@igbmc.u-strasbg.fr"
-            },
-            "homepage": "http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html",
-            "id": "mao",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "title": "Multiple alignment"
-        },
-        {
-            "contact": {
-                "email": "Jonathan Bard",
-                "label": "j.bard@ed.ac.uk"
-            },
-            "homepage": null,
-            "id": "mat",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "title": "Minimal anatomical terminology"
         },
         {
             "build": {
@@ -2574,27 +2576,6 @@
                 }
             ],
             "title": "Mouse Developmental Stages"
-        },
-        {
-            "contact": {
-                "email": "stoeckrt@pcbi.upenn.edu",
-                "label": "Chris Stoeckert"
-            },
-            "description": "A standardized description of a microarray experiment in support of MAGE v.1.",
-            "domain": "experiments",
-            "homepage": "http://mged.sourceforge.net/ontologies/MGEDontology.php",
-            "id": "mo",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "page": "http://mged.sourceforge.net/software/downloads.php",
-            "products": [
-                {
-                    "id": "mo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/mo.owl"
-                }
-            ],
-            "replaced_by": "obi",
-            "title": "Microarray experimental conditions"
         },
         {
             "build": {
@@ -2915,67 +2896,6 @@
             "uri_prefix": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
         },
         {
-            "contact": {
-                "email": "Fahim Imam",
-                "label": "smtifahim@gmail.com"
-            },
-            "description": "Neuronal cell types",
-            "homepage": "http://neuinfo.org/",
-            "id": "nif_cell",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "replaced_by": "cl",
-            "title": "NIF Cell"
-        },
-        {
-            "contact": {
-                "email": "Fahim Imam",
-                "label": "smtifahim@gmail.com"
-            },
-            "homepage": "http://neuinfo.org/",
-            "id": "nif_dysfunction",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "replaced_by": "doid",
-            "title": "NIF Dysfunction"
-        },
-        {
-            "contact": {
-                "email": "Fahim Imam",
-                "label": "smtifahim@gmail.com"
-            },
-            "homepage": "http://neuinfo.org/",
-            "id": "nif_grossanatomy",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "replaced_by": "uberon",
-            "title": "NIF Gross Anatomy"
-        },
-        {
-            "build": {
-                "method": "owl2obo",
-                "source_url": "https://msi-workgroups.svn.sourceforge.net/svnroot/msi-workgroups/ontology/NMR.owl"
-            },
-            "contact": {
-                "email": "schober@imbi.uni-freiburg.de",
-                "label": "Schober Daniel"
-            },
-            "description": "Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation.",
-            "domain": "experiments",
-            "homepage": "http://msi-ontology.sourceforge.net/",
-            "id": "nmr",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "page": "http://msi-ontology.sourceforge.net/ontology/NMR.owlDocument.doc",
-            "products": [
-                {
-                    "id": "nmr.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/nmr.owl"
-                }
-            ],
-            "title": "NMR-instrument specific component of metabolomics investigations"
-        },
-        {
             "build": {
                 "method": "owl2obo",
                 "source_url": "http://svn.code.sf.net/p/oae/code/trunk/src/ontology/oae.owl"
@@ -3057,51 +2977,6 @@
             "tracker": "https://github.com/obcs/obcs/issues"
         },
         {
-            "browsers": [
-                {
-                    "label": "BioPortal",
-                    "title": "BioPortal Browser",
-                    "url": "http://bioportal.bioontology.org/ontologies/OBI?p=classes"
-                }
-            ],
-            "build": {
-                "source_url": "http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/"
-            },
-            "contact": {
-                "email": "bpeters@liai.org",
-                "label": "Bjoern Peters"
-            },
-            "depicted_by": "https://svn.code.sf.net/p/obi/code/trunk/web/htdocs/images/obi-lotext.png",
-            "description": "An integrated ontology for the description of life-science and clinical investigations",
-            "domain": "experiments",
-            "homepage": "http://obi-ontology.org",
-            "id": "obi",
-            "in_foundry_order": 1,
-            "integration_server": "http://build.berkeleybop.org/job/build-obi/",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-BY",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "mailing_list": "http://groups.google.com/group/obi-users",
-            "ontology_purl": "http://purl.obolibrary.org/obo/obi.owl",
-            "products": [
-                {
-                    "id": "obi.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/obi.owl",
-                    "title": "OBI"
-                },
-                {
-                    "id": "obi/obi_core.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/obi/obi_core.owl",
-                    "title": "OBI Core"
-                }
-            ],
-            "title": "Ontology for Biomedical Investigations",
-            "tracker": "http://purl.obofoundry.org/obo/obi/tracker"
-        },
-        {
             "contact": {
                 "email": "jiezheng@upenn.edu",
                 "label": "Jie Zheng"
@@ -3125,18 +3000,6 @@
             ],
             "title": "Ontology for Biobanking",
             "tracker": "https://github.com/biobanking/biobanking/issues"
-        },
-        {
-            "contact": {
-                "email": "Chris Mungall",
-                "label": "cjmungall@lbl.gov"
-            },
-            "homepage": "http://www.obofoundry.org/ro",
-            "id": "obo_rel",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "replaced_by": "ro",
-            "title": "OBO relationship types (legacy)"
         },
         {
             "contact": {
@@ -3362,80 +3225,6 @@
             "title": "Ontology of Vaccine Adverse Events"
         },
         {
-            "contact": {
-                "email": "Pankaj Jaiswal",
-                "label": "jaiswalp@science.oregonstate.edu"
-            },
-            "homepage": "http://www.plantontology.org",
-            "id": "pao",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "taxon": {
-                "id": "NCBITaxon:33090",
-                "label": "Viridiplantae"
-            },
-            "title": "Plant Anatomy Ontology"
-        },
-        {
-            "browsers": [
-                {
-                    "label": "Aber-OWL",
-                    "title": "Aber-OWL Ontology Browser",
-                    "url": "http://aber-owl.net/ontology/PATO"
-                },
-                {
-                    "label": "BioPortal",
-                    "title": "BioPortal Ontology Browser",
-                    "url": "https://bioportal.bioontology.org/ontologies/PATO"
-                },
-                {
-                    "label": "OntoBee",
-                    "title": "OntoBee Browser",
-                    "url": "http://www.ontobee.org/browser/index.php?o=PATO"
-                }
-            ],
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo"
-            },
-            "contact": {
-                "email": "g.gkoutos@gmail.com",
-                "label": "George Gkoutos"
-            },
-            "description": "An ontology of phenotypic qualities (properties, attributes or characteristics)",
-            "domain": "phenotype",
-            "homepage": "https://github.com/pato-ontology/pato/",
-            "id": "pato",
-            "in_foundry_order": 1,
-            "jobs": [
-                {
-                    "id": "http://build.berkeleybop.org/job/build-pato",
-                    "type": "DryRunBuild"
-                }
-            ],
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-BY",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/pato.owl",
-            "products": [
-                {
-                    "id": "pato.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/pato.owl"
-                },
-                {
-                    "id": "pato.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/pato.obo"
-                }
-            ],
-            "repository": "https://github.com/pato-ontology/pato/",
-            "title": "Phenotypic quality",
-            "tracker": "https://github.com/pato-ontology/pato/issues"
-        },
-        {
             "build": {
                 "method": "owl2obo",
                 "oort_args": "--no-subsets --reasoner hermit",
@@ -3458,22 +3247,6 @@
             ],
             "title": "Population and Community Ontology",
             "tracker": "https://github.com/PopulationAndCommunityOntology/pco/issues"
-        },
-        {
-            "contact": {
-                "email": "Thorsten Heinrich",
-                "label": "henrich@embl.de"
-            },
-            "homepage": "http://4dx.embl.de/platy",
-            "id": "pd_st",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "replaced_by": "pdumdv",
-            "taxon": {
-                "id": "NCBITaxon:6358",
-                "label": "Platynereis"
-            },
-            "title": "Platynereis stage ontology"
         },
         {
             "build": {
@@ -3502,84 +3275,6 @@
                 }
             ],
             "title": "Platynereis Developmental Stages"
-        },
-        {
-            "contact": {
-                "email": "Plant Ontology Administrators",
-                "label": "po-discuss@plantontology.org"
-            },
-            "homepage": "http://www.plantontology.org",
-            "id": "pgdso",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "taxon": {
-                "id": "NCBITaxon:33090",
-                "label": "Viridiplantae"
-            },
-            "title": "Plant Growth and Development Stage"
-        },
-        {
-            "contact": {
-                "email": "Matt Berriman",
-                "label": "mb4@sanger.ac.uk"
-            },
-            "homepage": "http://www.sanger.ac.uk/Users/mb4/PLO/",
-            "id": "plo",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "title": "Plasmodium life cycle"
-        },
-        {
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "notes": "switch to vcs method",
-                "source_url": "https://raw.githubusercontent.com/Planteome/plant-ontology/master/po-release-files/plant_ontology.obo"
-            },
-            "contact": {
-                "email": "jaiswalp@science.oregonstate.edu",
-                "label": "Pankaj Jaiswal"
-            },
-            "description": "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.",
-            "domain": "anatomy and development",
-            "homepage": "http://www.plantontology.org",
-            "id": "po",
-            "in_foundry_order": 1,
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-BY",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/po.owl",
-            "page": "http://www.plantontology.org/amigo/go.cgi",
-            "products": [
-                {
-                    "id": "po.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/po.owl"
-                },
-                {
-                    "id": "po.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/po.obo"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/23220694",
-                    "title": "The plant ontology as a tool for comparative plant anatomy and genomic analyses."
-                },
-                {
-                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/22847540",
-                    "title": "Ontologies as integrative tools for plant science."
-                }
-            ],
-            "taxon": {
-                "id": "NCBITaxon:33090",
-                "label": "Viridiplantae"
-            },
-            "title": "Plant Ontology",
-            "tracker": "https://github.com/Planteome/plant-ontology/issues",
-            "twitter": "planteome"
         },
         {
             "build": {
@@ -3627,48 +3322,6 @@
             "tracker": "https://github.com/obophenotype/porifera-ontology/issues"
         },
         {
-            "build": {
-                "infallible": 0,
-                "method": "obo2owl",
-                "oort_args": "--no-reasoner",
-                "source_url": "ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.obo"
-            },
-            "contact": {
-                "email": "dan5@georgetown.edu",
-                "label": "Darren Natale"
-            },
-            "description": "an ontological representation of protein-related entities",
-            "development": {
-                "id_policy": "https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+URI+policy"
-            },
-            "documentation": "ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt",
-            "domain": "proteins",
-            "homepage": "http://proconsortium.org",
-            "id": "pr",
-            "in_foundry_order": 1,
-            "layout": "ontology_detail",
-            "ontology_purl": "http://purl.obolibrary.org/obo/pr.owl",
-            "products": [
-                {
-                    "id": "pr.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/pr.owl"
-                }
-            ],
-            "title": "PRotein Ontology (PRO)",
-            "tracker": "http://sourceforge.net/tracker/?group_id=266825&atid=1135711"
-        },
-        {
-            "contact": {
-                "email": "Satya S. Sahoo",
-                "label": "satya30@uga.edu"
-            },
-            "homepage": "http://lsdis.cs.uga.edu/projects/glycomics/propreo/",
-            "id": "propreo",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "title": "Proteomics data and process provenance"
-        },
-        {
             "browsers": [
                 {
                     "label": "RGD",
@@ -3712,19 +3365,6 @@
                 }
             ],
             "title": "Pathway ontology"
-        },
-        {
-            "contact": {
-                "email": "john.garavelli@ebi.ac.uk",
-                "label": "John Garavelli"
-            },
-            "description": "For the description of covalent bonds in proteins.",
-            "domain": "proteins",
-            "homepage": "http://www.ebi.ac.uk/RESID/",
-            "id": "resid",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "title": "Protein covalent bond"
         },
         {
             "build": {
@@ -3908,22 +3548,6 @@
             "title": "Name Reaction Ontology"
         },
         {
-            "contact": {
-                "email": "Stephen Larson",
-                "label": "slarson@ncmir.ucsd.edu"
-            },
-            "homepage": "http://ccdb.ucsd.edu/CCDBWebSite/sao.html",
-            "id": "sao",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "replaced_by": "go",
-            "taxon": {
-                "id": "NCBITaxon:9606",
-                "label": "Homo sapiens"
-            },
-            "title": "Subcellular anatomy ontology"
-        },
-        {
             "build": {
                 "method": "obo2owl",
                 "source_url": "http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo"
@@ -4045,21 +3669,6 @@
             ],
             "title": "Sequence types and features",
             "tracker": "https://github.com/The-Sequence-Ontology/SO-Ontologies/issues"
-        },
-        {
-            "contact": {
-                "email": "Adrien Coulet",
-                "label": "Adrien.Coulet@loria.fr"
-            },
-            "homepage": "http://www.loria.fr/~coulet/sopharm2.0_description.php",
-            "id": "sopharm",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "taxon": {
-                "id": "NCBITaxon:9606",
-                "label": "Homo sapiens"
-            },
-            "title": "Suggested Ontology for Pharmacogenomics"
         },
         {
             "build": {
@@ -4201,65 +3810,6 @@
                 "label": "Ixodidae"
             },
             "title": "Tick gross anatomy"
-        },
-        {
-            "contact": {
-                "email": "Pierre Sprumont",
-                "label": "pierre.sprumont@unifr.ch"
-            },
-            "homepage": null,
-            "id": "tahe",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "taxon": {
-                "id": "NCBITaxon:9606",
-                "label": "Homo sapiens"
-            },
-            "title": "Terminology of Anatomy of Human Embryology"
-        },
-        {
-            "contact": {
-                "email": "Pierre Sprumont",
-                "label": "pierre.sprumont@unifr.ch"
-            },
-            "homepage": null,
-            "id": "tahh",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "taxon": {
-                "id": "NCBITaxon:9606",
-                "label": "Homo sapiens"
-            },
-            "title": "Terminology of Anatomy of Human Histology"
-        },
-        {
-            "build": {
-                "method": "obo2owl",
-                "source_url": "http://purl.obolibrary.org/obo/tao.obo"
-            },
-            "contact": {
-                "email": "wasila.dahdul@usd.edu",
-                "label": "Wasila Dahdul"
-            },
-            "description": "Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa",
-            "domain": "anatomy",
-            "homepage": "http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology",
-            "id": "tao",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "products": [
-                {
-                    "id": "tao.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/tao.owl"
-                }
-            ],
-            "replaced_by": "uberon",
-            "taxon": {
-                "id": "NCBITaxon:32443",
-                "label": "Teleostei"
-            },
-            "title": "Teleost Anatomy Ontology",
-            "tracker": "https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3ATAO"
         },
         {
             "build": {
@@ -4673,19 +4223,6 @@
             "title": "Variation Ontology"
         },
         {
-            "id": "vhog",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "products": [
-                {
-                    "id": "vhog.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/vhog.owl"
-                }
-            ],
-            "replaced_by": "uberon",
-            "title": "Vertebrate Homologous Ontology Group Ontology"
-        },
-        {
             "build": {
                 "method": "obo2owl",
                 "source_url": "http://www.violinet.org/vo"
@@ -4714,36 +4251,6 @@
             ],
             "title": "Vaccine Ontology",
             "tracker": "http://sourceforge.net/tracker/?atid=1127137&group_id=255029&func=browse"
-        },
-        {
-            "build": {
-                "method": "obo2owl",
-                "source_url": "http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/tags/vocab-releases/VSAO/vsao.obo"
-            },
-            "contact": {
-                "email": "wasila.dahdul@usd.edu",
-                "label": "Wasila Dahdul"
-            },
-            "description": "Vertebrate skeletal anatomy ontology.",
-            "domain": "anatomy",
-            "homepage": "https://www.nescent.org/phenoscape/Main_Page",
-            "id": "vsao",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "page": "https://www.phenoscape.org/wiki/Skeletal_Anatomy_Jamboree",
-            "products": [
-                {
-                    "id": "vsao.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/vsao.owl"
-                }
-            ],
-            "replaced_by": "uberon",
-            "taxon": {
-                "id": "NCBITaxon:7742",
-                "label": "Vertebrata"
-            },
-            "title": "Vertebrate Skeletal Anatomy Ontology-",
-            "tracker": "https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3AVSAO"
         },
         {
             "build": {
@@ -4862,47 +4369,6 @@
             "title": "C. elegans phenotype"
         },
         {
-            "build": {
-                "infallible": 0,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo"
-            },
-            "description": "Anatomy and development of the African clawed frog (<i>Xenopus laevis</i>).",
-            "domain": "anatomy",
-            "homepage": "http://www.xenbase.org/anatomy/xao.do?method=display",
-            "id": "xao",
-            "in_foundry_order": 1,
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-BY",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/xao.owl",
-            "products": [
-                {
-                    "id": "xao.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/xao.owl"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/18817563",
-                    "title": "An ontology for Xenopus anatomy and development."
-                },
-                {
-                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/24139024",
-                    "title": "Enhanced XAO: the ontology of Xenopus anatomy and development underpins more accurate annotation of gene expression and queries on Xenbase."
-                }
-            ],
-            "taxon": {
-                "id": "NCBITaxon:8353",
-                "label": "Xenopus"
-            },
-            "title": "Xenopus anatomy and development",
-            "tracker": "https://github.com/xenopus-anatomy/xao/issues"
-        },
-        {
             "browsers": [
                 {
                     "label": "RGD",
@@ -4950,79 +4416,6 @@
             "title": "Experimental condition ontology"
         },
         {
-            "contact": {
-                "email": "Mike Cherry",
-                "label": "cherry@genome.stanford.edu"
-            },
-            "homepage": "http://www.yeastgenome.org/",
-            "id": "ypo",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "replaced_by": "apo",
-            "taxon": {
-                "id": "NCBITaxon:4932",
-                "label": "Saccharomyces cerevisiae"
-            },
-            "title": "Yeast phenotypes"
-        },
-        {
-            "contact": {
-                "email": "Leszek Vincent",
-                "label": "Leszek@missouri.edu"
-            },
-            "homepage": "http://www.maizemap.org/",
-            "id": "zea",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "taxon": {
-                "id": "NCBITaxon:4575",
-                "label": "Zea"
-            },
-            "title": "Maize gross anatomy"
-        },
-        {
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "notes": "may be ready to switch to vcs soon",
-                "source_url": "https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/src/zebrafish_anatomy.obo"
-            },
-            "contact": {
-                "email": "zfinadmin@zfin.org",
-                "label": "ZFIN administrators"
-            },
-            "description": "A structured controlled vocabulary of the anatomy and development of the Zebrafish",
-            "domain": "anatomy",
-            "homepage": "http://zfin.org/zf_info/anatomy/dict/sum.html",
-            "id": "zfa",
-            "in_foundry_order": 1,
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-BY",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/zfa.owl",
-            "products": [
-                {
-                    "id": "zfa.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/zfa.owl"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/24568621",
-                    "title": "The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio."
-                }
-            ],
-            "taxon": {
-                "id": "NCBITaxon:7954",
-                "label": "Danio"
-            },
-            "title": "Zebrafish anatomy and development",
-            "tracker": "https://github.com/cerivs/zebrafish-anatomical-ontology/issues"
-        },
-        {
             "build": {
                 "infallible": 1,
                 "method": "obo2owl",
@@ -5056,6 +4449,613 @@
                 "label": "Danio"
             },
             "title": "Zebrafish developmental stages"
+        },
+        {
+            "contact": {
+                "email": "David Blackburn",
+                "label": "david.c.blackburn@gmail.com"
+            },
+            "homepage": "http://github.com/seger/aao",
+            "id": "aao",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "replaced_by": "uberon",
+            "taxon": {
+                "id": "NCBITaxon:8292",
+                "label": "Amphibia"
+            },
+            "title": "Amphibian gross anatomy"
+        },
+        {
+            "contact": {
+                "email": "Animal Diversity Web technical staff",
+                "label": "adw_geeks@umich.edu"
+            },
+            "homepage": "http://www.animaldiversity.org",
+            "id": "adw",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "Animal natural history and life history"
+        },
+        {
+            "contact": {
+                "email": "David Blackburn",
+                "label": "david.c.blackburn@gmail.com"
+            },
+            "homepage": "http://www.amphibanat.org",
+            "id": "ato",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "taxon": {
+                "id": "NCBITaxon:8292",
+                "label": "Amphibia"
+            },
+            "title": "Amphibian taxonomy"
+        },
+        {
+            "build": {
+                "method": "obo2owl",
+                "source_url": "http://4dx.embl.de/4DXpress_4d/edocs/bilateria_mrca.obo"
+            },
+            "contact": {
+                "email": "henrich@embl.de",
+                "label": "Thorsten Heinrich"
+            },
+            "domain": "anatomy",
+            "homepage": "http://4dx.embl.de/4DXpress",
+            "id": "bila",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "products": [
+                {
+                    "id": "bila.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/bila.owl"
+                }
+            ],
+            "replaced_by": "uberon",
+            "taxon": {
+                "id": "NCBITaxon:33213",
+                "label": "Bilateria"
+            },
+            "title": "Bilateria anatomy"
+        },
+        {
+            "contact": {
+                "email": "Vivian Lee",
+                "label": "vlee@ebi.ac.uk"
+            },
+            "homepage": "http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html",
+            "id": "bootstrep",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "replaced_by": "molecular_function",
+            "title": "Gene Regulation Ontology"
+        },
+        {
+            "contact": {
+                "email": "Lindsay Cowell",
+                "label": "Lindsay.Cowell@utsouthwestern.edu"
+            },
+            "homepage": "http://www.dukeontologygroup.org/Projects.html",
+            "id": "dc_cl",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "replaced_by": "cl",
+            "taxon": {
+                "id": "all",
+                "label": null
+            },
+            "title": "Dendritic cell"
+        },
+        {
+            "contact": {
+                "email": "Jonathan Bard",
+                "label": "J.Bard@ed.ac.uk"
+            },
+            "homepage": "http://genex.hgu.mrc.ac.uk/",
+            "id": "ehda",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "replaced_by": "ehdaa2",
+            "taxon": {
+                "id": "NCBITaxon:9606",
+                "label": "Homo sapiens"
+            },
+            "title": "Human developmental anatomy, timed version"
+        },
+        {
+            "contact": {
+                "email": "Jonathan Bard",
+                "label": "J.Bard@ed.ac.uk"
+            },
+            "homepage": null,
+            "id": "ehdaa",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "replaced_by": "ehdaa2",
+            "taxon": {
+                "id": "NCBITaxon:9606",
+                "label": "Homo sapiens"
+            },
+            "title": "Human developmental anatomy, abstract version"
+        },
+        {
+            "contact": {
+                "email": "eVOC mailing list",
+                "label": "evoc@sanbi.ac.za"
+            },
+            "homepage": "http://www.evocontology.org/",
+            "id": "ev",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "eVOC (Expressed Sequence Annotation for Humans)"
+        },
+        {
+            "build": {
+                "method": "obo2owl",
+                "source_url": "http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/fly_taxonomy.obo"
+            },
+            "contact": {
+                "email": "mmc46@gen.cam.ac.uk",
+                "label": "Marta Costa"
+            },
+            "description": "The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase.",
+            "domain": "taxonomy",
+            "homepage": "http://www.flybase.org/",
+            "id": "fbsp",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "products": [
+                {
+                    "id": "fbsp.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbsp.owl"
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:7227",
+                "label": "Drosophila"
+            },
+            "title": "Fly taxonomy"
+        },
+        {
+            "contact": {
+                "email": "Plant Ontology Administrators",
+                "label": "po-discuss@plantontology.org"
+            },
+            "homepage": "http://www.gramene.org/plant_ontology/",
+            "id": "gro",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "Cereal Plant Gross Anatomy"
+        },
+        {
+            "contact": {
+                "email": "Peter Midford",
+                "label": "peteremidford@yahoo.com"
+            },
+            "homepage": "http://www.mesquiteproject.org/ontology/Habronattus/index.html",
+            "id": "habronattus",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "Habronattus courtship"
+        },
+        {
+            "homepage": "http://www.inoh.org",
+            "id": "iev",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "Event (INOH pathway ontology)"
+        },
+        {
+            "contact": {
+                "email": "INOH curators",
+                "label": "curator@inoh.org"
+            },
+            "homepage": "http://www.inoh.org",
+            "id": "imr",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "Molecule role (INOH Protein name/family name ontology)"
+        },
+        {
+            "contact": {
+                "email": "InterPro Help",
+                "label": "interhelp@ebi.ac.uk"
+            },
+            "homepage": "http://www.ebi.ac.uk/interpro/index.html",
+            "id": "ipr",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "Protein Domains"
+        },
+        {
+            "build": {
+                "method": "owl2obo",
+                "source_url": "http://www.lipidprofiles.com/LipidOntology"
+            },
+            "contact": {
+                "email": "bakerc@unb.ca",
+                "label": "Christipher Baker"
+            },
+            "description": "An ontology representation of the LIPIDMAPS nomenclature classification.",
+            "domain": "lipids",
+            "id": "lipro",
+            "in_foundry": false,
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "Lipid Ontology"
+        },
+        {
+            "contact": {
+                "email": "Peter Midford",
+                "label": "peteremidford@yahoo.com"
+            },
+            "homepage": "http://www.mesquiteproject.org/ontology/Loggerhead/index.html",
+            "id": "loggerhead",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "Loggerhead nesting"
+        },
+        {
+            "contact": {
+                "email": "Julie Thompson",
+                "label": "julie@igbmc.u-strasbg.fr"
+            },
+            "homepage": "http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html",
+            "id": "mao",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "Multiple alignment"
+        },
+        {
+            "contact": {
+                "email": "Jonathan Bard",
+                "label": "j.bard@ed.ac.uk"
+            },
+            "homepage": null,
+            "id": "mat",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "Minimal anatomical terminology"
+        },
+        {
+            "contact": {
+                "email": "stoeckrt@pcbi.upenn.edu",
+                "label": "Chris Stoeckert"
+            },
+            "description": "A standardized description of a microarray experiment in support of MAGE v.1.",
+            "domain": "experiments",
+            "homepage": "http://mged.sourceforge.net/ontologies/MGEDontology.php",
+            "id": "mo",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "page": "http://mged.sourceforge.net/software/downloads.php",
+            "products": [
+                {
+                    "id": "mo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mo.owl"
+                }
+            ],
+            "replaced_by": "obi",
+            "title": "Microarray experimental conditions"
+        },
+        {
+            "contact": {
+                "email": "Fahim Imam",
+                "label": "smtifahim@gmail.com"
+            },
+            "description": "Neuronal cell types",
+            "homepage": "http://neuinfo.org/",
+            "id": "nif_cell",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "replaced_by": "cl",
+            "title": "NIF Cell"
+        },
+        {
+            "contact": {
+                "email": "Fahim Imam",
+                "label": "smtifahim@gmail.com"
+            },
+            "homepage": "http://neuinfo.org/",
+            "id": "nif_dysfunction",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "replaced_by": "doid",
+            "title": "NIF Dysfunction"
+        },
+        {
+            "contact": {
+                "email": "Fahim Imam",
+                "label": "smtifahim@gmail.com"
+            },
+            "homepage": "http://neuinfo.org/",
+            "id": "nif_grossanatomy",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "replaced_by": "uberon",
+            "title": "NIF Gross Anatomy"
+        },
+        {
+            "build": {
+                "method": "owl2obo",
+                "source_url": "https://msi-workgroups.svn.sourceforge.net/svnroot/msi-workgroups/ontology/NMR.owl"
+            },
+            "contact": {
+                "email": "schober@imbi.uni-freiburg.de",
+                "label": "Schober Daniel"
+            },
+            "description": "Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation.",
+            "domain": "experiments",
+            "homepage": "http://msi-ontology.sourceforge.net/",
+            "id": "nmr",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "page": "http://msi-ontology.sourceforge.net/ontology/NMR.owlDocument.doc",
+            "products": [
+                {
+                    "id": "nmr.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/nmr.owl"
+                }
+            ],
+            "title": "NMR-instrument specific component of metabolomics investigations"
+        },
+        {
+            "contact": {
+                "email": "Chris Mungall",
+                "label": "cjmungall@lbl.gov"
+            },
+            "homepage": "http://www.obofoundry.org/ro",
+            "id": "obo_rel",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "replaced_by": "ro",
+            "title": "OBO relationship types (legacy)"
+        },
+        {
+            "contact": {
+                "email": "Pankaj Jaiswal",
+                "label": "jaiswalp@science.oregonstate.edu"
+            },
+            "homepage": "http://www.plantontology.org",
+            "id": "pao",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "taxon": {
+                "id": "NCBITaxon:33090",
+                "label": "Viridiplantae"
+            },
+            "title": "Plant Anatomy Ontology"
+        },
+        {
+            "contact": {
+                "email": "Thorsten Heinrich",
+                "label": "henrich@embl.de"
+            },
+            "homepage": "http://4dx.embl.de/platy",
+            "id": "pd_st",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "replaced_by": "pdumdv",
+            "taxon": {
+                "id": "NCBITaxon:6358",
+                "label": "Platynereis"
+            },
+            "title": "Platynereis stage ontology"
+        },
+        {
+            "contact": {
+                "email": "Plant Ontology Administrators",
+                "label": "po-discuss@plantontology.org"
+            },
+            "homepage": "http://www.plantontology.org",
+            "id": "pgdso",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "taxon": {
+                "id": "NCBITaxon:33090",
+                "label": "Viridiplantae"
+            },
+            "title": "Plant Growth and Development Stage"
+        },
+        {
+            "contact": {
+                "email": "Matt Berriman",
+                "label": "mb4@sanger.ac.uk"
+            },
+            "homepage": "http://www.sanger.ac.uk/Users/mb4/PLO/",
+            "id": "plo",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "Plasmodium life cycle"
+        },
+        {
+            "contact": {
+                "email": "Satya S. Sahoo",
+                "label": "satya30@uga.edu"
+            },
+            "homepage": "http://lsdis.cs.uga.edu/projects/glycomics/propreo/",
+            "id": "propreo",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "Proteomics data and process provenance"
+        },
+        {
+            "contact": {
+                "email": "john.garavelli@ebi.ac.uk",
+                "label": "John Garavelli"
+            },
+            "description": "For the description of covalent bonds in proteins.",
+            "domain": "proteins",
+            "homepage": "http://www.ebi.ac.uk/RESID/",
+            "id": "resid",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "Protein covalent bond"
+        },
+        {
+            "contact": {
+                "email": "Stephen Larson",
+                "label": "slarson@ncmir.ucsd.edu"
+            },
+            "homepage": "http://ccdb.ucsd.edu/CCDBWebSite/sao.html",
+            "id": "sao",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "replaced_by": "go",
+            "taxon": {
+                "id": "NCBITaxon:9606",
+                "label": "Homo sapiens"
+            },
+            "title": "Subcellular anatomy ontology"
+        },
+        {
+            "contact": {
+                "email": "Adrien Coulet",
+                "label": "Adrien.Coulet@loria.fr"
+            },
+            "homepage": "http://www.loria.fr/~coulet/sopharm2.0_description.php",
+            "id": "sopharm",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "taxon": {
+                "id": "NCBITaxon:9606",
+                "label": "Homo sapiens"
+            },
+            "title": "Suggested Ontology for Pharmacogenomics"
+        },
+        {
+            "contact": {
+                "email": "Pierre Sprumont",
+                "label": "pierre.sprumont@unifr.ch"
+            },
+            "homepage": null,
+            "id": "tahe",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "taxon": {
+                "id": "NCBITaxon:9606",
+                "label": "Homo sapiens"
+            },
+            "title": "Terminology of Anatomy of Human Embryology"
+        },
+        {
+            "contact": {
+                "email": "Pierre Sprumont",
+                "label": "pierre.sprumont@unifr.ch"
+            },
+            "homepage": null,
+            "id": "tahh",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "taxon": {
+                "id": "NCBITaxon:9606",
+                "label": "Homo sapiens"
+            },
+            "title": "Terminology of Anatomy of Human Histology"
+        },
+        {
+            "build": {
+                "method": "obo2owl",
+                "source_url": "http://purl.obolibrary.org/obo/tao.obo"
+            },
+            "contact": {
+                "email": "wasila.dahdul@usd.edu",
+                "label": "Wasila Dahdul"
+            },
+            "description": "Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa",
+            "domain": "anatomy",
+            "homepage": "http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology",
+            "id": "tao",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "products": [
+                {
+                    "id": "tao.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/tao.owl"
+                }
+            ],
+            "replaced_by": "uberon",
+            "taxon": {
+                "id": "NCBITaxon:32443",
+                "label": "Teleostei"
+            },
+            "title": "Teleost Anatomy Ontology",
+            "tracker": "https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3ATAO"
+        },
+        {
+            "id": "vhog",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "products": [
+                {
+                    "id": "vhog.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vhog.owl"
+                }
+            ],
+            "replaced_by": "uberon",
+            "title": "Vertebrate Homologous Ontology Group Ontology"
+        },
+        {
+            "build": {
+                "method": "obo2owl",
+                "source_url": "http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/tags/vocab-releases/VSAO/vsao.obo"
+            },
+            "contact": {
+                "email": "wasila.dahdul@usd.edu",
+                "label": "Wasila Dahdul"
+            },
+            "description": "Vertebrate skeletal anatomy ontology.",
+            "domain": "anatomy",
+            "homepage": "https://www.nescent.org/phenoscape/Main_Page",
+            "id": "vsao",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "page": "https://www.phenoscape.org/wiki/Skeletal_Anatomy_Jamboree",
+            "products": [
+                {
+                    "id": "vsao.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vsao.owl"
+                }
+            ],
+            "replaced_by": "uberon",
+            "taxon": {
+                "id": "NCBITaxon:7742",
+                "label": "Vertebrata"
+            },
+            "title": "Vertebrate Skeletal Anatomy Ontology-",
+            "tracker": "https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3AVSAO"
+        },
+        {
+            "contact": {
+                "email": "Mike Cherry",
+                "label": "cherry@genome.stanford.edu"
+            },
+            "homepage": "http://www.yeastgenome.org/",
+            "id": "ypo",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "replaced_by": "apo",
+            "taxon": {
+                "id": "NCBITaxon:4932",
+                "label": "Saccharomyces cerevisiae"
+            },
+            "title": "Yeast phenotypes"
+        },
+        {
+            "contact": {
+                "email": "Leszek Vincent",
+                "label": "Leszek@missouri.edu"
+            },
+            "homepage": "http://www.maizemap.org/",
+            "id": "zea",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "taxon": {
+                "id": "NCBITaxon:4575",
+                "label": "Zea"
+            },
+            "title": "Maize gross anatomy"
         }
     ]
 }

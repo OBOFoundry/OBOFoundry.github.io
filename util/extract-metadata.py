@@ -87,17 +87,32 @@ def validate_structure(obj,md):
     return errs
 
 def concat_ont_yaml(args):
+    """
+    Given arguments with files and ouput,
+    read YAML files into an array, decorate the objects, and write an output YAML file.
+    Output will be Foundry ontologies first, Library ontologies second, and obsolete last.
+    Assumes that args.files is already sorted alphabetically.
+    """
     objs = []
+    foundry = []
+    library = []
+    obsolete = []
     cfg = {}
     if (args.include):
-        f = open(args.include, 'r') 
+        f = open(args.include, 'r')
         cfg = yaml.load(f.read())
     for fn in args.files:
         (obj, md) = load_md(fn)
-        objs.append(obj)
+        if 'is_obsolete' in obj and obj['is_obsolete'] == True:
+          obsolete.append(obj)
+        elif 'in_foundry_order' in obj:
+          foundry.append(obj)
+        else:
+          library.append(obj)
+    objs = foundry + library + obsolete
     cfg['ontologies'] = objs
     decorate_metadata(objs)
-    f = open(args.output, 'w') 
+    f = open(args.output, 'w')
     f.write(yaml.dump(cfg))
     return cfg
 
