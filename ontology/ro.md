@@ -19,6 +19,8 @@ contact:
 jobs:
   - id: http://build.berkeleybop.org/job/build-ro
     type: DryRunBuild
+  - id: https://travis-ci.org/oborel/obo-relations
+    type: travis-ci
 products:
  - id: ro.owl
    title: Relation Ontology

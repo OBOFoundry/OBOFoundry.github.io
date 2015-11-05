@@ -227,7 +227,13 @@ layout: default
           <dt>Jobs</dt>
           {% for p in page.jobs %}
           <dd>
+            {% if p.type == "travis-cl" or p.id contains "travis" %}
+            <a href="{{p.id}}">
+              <img alt="Build Status" src="{{p.id}}.svg?branch=master"/>
+            </a>
+            {% else %}
             <a href="{{p.id}}">{{p.type}}</a>
+            {% endif %}
           </dd>
           {% endfor %}
           {% endif %}
