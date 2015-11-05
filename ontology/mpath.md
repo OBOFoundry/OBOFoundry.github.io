@@ -17,10 +17,6 @@ title: Mouse pathology
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
-browsers:
-  - label: Aber-OWL
-    title: Aber-OWL Ontology Repository
-    url: http://aber-owl.net/ontology/MPATH
 build:
   source_url: https://raw.githubusercontent.com/PaulNSchofield/mpath/master/mpath.obo
   method: obo2owl

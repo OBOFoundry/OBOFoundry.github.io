@@ -15,15 +15,9 @@ domain: phenotype
 homepage: https://github.com/pato-ontology/pato/
 repository: https://github.com/pato-ontology/pato/
 browsers:
-  - label: Aber-OWL
-    title: Aber-OWL Ontology Browser
-    url: http://aber-owl.net/ontology/PATO
   - label: BioPortal
     title: BioPortal Ontology Browser
     url: https://bioportal.bioontology.org/ontologies/PATO
-  - label: OntoBee
-    title: OntoBee Browser
-    url: http://www.ontobee.org/browser/index.php?o=PATO
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
