@@ -9,12 +9,13 @@ domain: phenotype
 homepage: http://www.yeastgenome.org/
 products:
   - id: apo.owl
+  - id: apo.obo
 taxon:
   id: NCBITaxon:4890
   label: Ascomycota
 title: Ascomycete phenotype ontology
 build:
-  source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/phenotype/ascomycete_phenotype.obo
+  source_url: https://raw.githubusercontent.com/obophenotype/ascomycete-phenotype-ontology/master/apo.obo
   method: obo2owl
 ---
 
