@@ -17,6 +17,10 @@ taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
 title: Plant Trait Ontology
+browsers:
+ - label: Planteome
+   title: Planteome browser
+   url: http://dev.planteome.org/amigo/term/TO:0000387
 build:
   checkout: git clone https://github.com/Planteome/plant-trait-ontology.git
   system: git
