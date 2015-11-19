@@ -68,6 +68,7 @@ layout: default
 
         {{ content }}
 
+
         <div>
           <h2>Products</h2>
           <table class="table">
@@ -93,9 +94,18 @@ layout: default
           </table>
         </div>
         
+        <div>
+          {% if page.repository and page.repository contains "github" %}
+          {% assign tokens = page.repository | split: '/' %}
+          <iframe allowtransparency="true" frameborder="0" scrolling="no" seamless="seamless" src="http://colmdoyle.github.io/gh-activity/gh-activity.html?user=" +tokens[2]+ "&repo=" + tokens[3] + "&type=repo" width="600" height="400"></iframe>
+          {% endif %}
+        </div>
 
       </div>
       <div class="col-md-4">
+
+
+
         <dl class="dl-horizontal" style="dd { margin-left: 0 }">
 
           <dt>
@@ -240,7 +250,7 @@ layout: default
 
 
         </dl>
-        
+
 
         <div class="btn-group" role="group" aria-label="Source">
           <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/{{page.id}}.md">
