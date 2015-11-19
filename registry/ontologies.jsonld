@@ -239,19 +239,9 @@
         {
             "browsers": [
                 {
-                    "label": "Aber-OWL",
-                    "title": "Aber-OWL Ontology Browser",
-                    "url": "http://aber-owl.net/ontology/PATO"
-                },
-                {
                     "label": "BioPortal",
                     "title": "BioPortal Ontology Browser",
                     "url": "https://bioportal.bioontology.org/ontologies/PATO"
-                },
-                {
-                    "label": "OntoBee",
-                    "title": "OntoBee Browser",
-                    "url": "http://www.ontobee.org/browser/index.php?o=PATO"
                 }
             ],
             "build": {
@@ -517,7 +507,7 @@
         {
             "build": {
                 "method": "obo2owl",
-                "source_url": "http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/phenotype/ascomycete_phenotype.obo"
+                "source_url": "https://raw.githubusercontent.com/obophenotype/ascomycete-phenotype-ontology/master/apo.obo"
             },
             "contact": {
                 "email": "maria@genome.stanford.edu",
@@ -533,6 +523,10 @@
                 {
                     "id": "apo.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/apo.owl"
+                },
+                {
+                    "id": "apo.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/apo.obo"
                 }
             ],
             "taxon": {
@@ -2678,13 +2672,6 @@
             "tracker": "https://github.com/obophenotype/mammalian-phenotype-ontology/issues"
         },
         {
-            "browsers": [
-                {
-                    "label": "Aber-OWL",
-                    "title": "Aber-OWL Ontology Repository",
-                    "url": "http://aber-owl.net/ontology/MPATH"
-                }
-            ],
             "build": {
                 "method": "obo2owl",
                 "source_url": "https://raw.githubusercontent.com/PaulNSchofield/mpath/master/mpath.obo"
@@ -2783,19 +2770,9 @@
         {
             "browsers": [
                 {
-                    "label": "Aber-OWL",
-                    "title": "Aber-OWL Ontology Browser",
-                    "url": "http://aber-owl.net/ontology/NBO"
-                },
-                {
                     "label": "BioPortal",
                     "title": "BioPortal Ontology Browser",
                     "url": "https://bioportal.bioontology.org/ontologies/NBO"
-                },
-                {
-                    "label": "OntoBee",
-                    "title": "OntoBee Ontology Browser",
-                    "url": "http://www.ontobee.org/browser/index.php?o=NBO"
                 }
             ],
             "build": {
@@ -2894,6 +2871,34 @@
             "layout": "ontology_detail",
             "title": "NCI Thesaurus",
             "uri_prefix": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#"
+        },
+        {
+            "browsers": null,
+            "contact": {
+                "email": "huang@southalabama.edu",
+                "label": "Jingshan Huang"
+            },
+            "description": "An ontology for non-coding RNA, both of biological origin, and engineered.",
+            "domain": "experiments",
+            "homepage": "http://omnisearch.soc.southalabama.edu/OntologyFile.aspx",
+            "id": "ncro",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/4.0/"
+            },
+            "mailing_list": "ncro-devel@googlegroups.com",
+            "ontology_purl": "http://purl.obolibrary.org/obo/ncro.owl",
+            "products": [
+                {
+                    "id": "ncro/dev/ncro.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ncro/dev/ncro.owl",
+                    "title": "NCRO development version"
+                }
+            ],
+            "title": "non-coding RNA Ontology",
+            "tracker": "https://github.com/OmniSearch/NCRO-Ontology-Files/issues"
         },
         {
             "build": {
@@ -3416,10 +3421,10 @@
         },
         {
             "build": {
-                "checkout": "svn co http://obo-relations.googlecode.com/svn/trunk/src/ontology",
+                "checkout": "git clone https://github.com/oborel/obo-relations.git",
                 "infallible": 1,
                 "method": "vcs",
-                "system": "svn"
+                "system": "git"
             },
             "canonical": "ro.owl",
             "contact": {
@@ -3434,6 +3439,10 @@
                 {
                     "id": "http://build.berkeleybop.org/job/build-ro",
                     "type": "DryRunBuild"
+                },
+                {
+                    "id": "https://travis-ci.org/oborel/obo-relations",
+                    "type": "travis-ci"
                 }
             ],
             "layout": "ontology_detail",
@@ -3862,10 +3871,19 @@
             "title": "Mosquito gross anatomy"
         },
         {
+            "browsers": [
+                {
+                    "label": "Planteome",
+                    "title": "Planteome browser",
+                    "url": "http://dev.planteome.org/amigo/term/TO:0000387"
+                }
+            ],
             "build": {
+                "checkout": "git clone https://github.com/Planteome/plant-trait-ontology.git",
                 "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/to-release-files/plant-trait-ontology.obo"
+                "method": "vcs",
+                "path": ".",
+                "system": "git"
             },
             "contact": {
                 "email": "jaiswalp@science.oregonstate.edu",
@@ -3887,6 +3905,10 @@
                 {
                     "id": "to.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/to.owl"
+                },
+                {
+                    "id": "to.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/to.obo"
                 }
             ],
             "publications": [

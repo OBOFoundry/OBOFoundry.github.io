@@ -123,9 +123,7 @@ ontologies:
   title: Ontology for Biomedical Investigations
   tracker: http://purl.obofoundry.org/obo/obi/tracker
 - browsers:
-  - {label: Aber-OWL, title: Aber-OWL Ontology Browser, url: 'http://aber-owl.net/ontology/PATO'}
   - {label: BioPortal, title: BioPortal Ontology Browser, url: 'https://bioportal.bioontology.org/ontologies/PATO'}
-  - {label: OntoBee, title: OntoBee Browser, url: 'http://www.ontobee.org/browser/index.php?o=PATO'}
   build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo'}
   contact: {email: g.gkoutos@gmail.com, label: George Gkoutos}
   description: An ontology of phenotypic qualities (properties, attributes or characteristics)
@@ -256,7 +254,7 @@ ontologies:
   products:
   - {id: aero.owl, ontology_purl: 'http://purl.obolibrary.org/obo/aero.owl'}
   title: Adverse Event Reporting Ontology
-- build: {method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/phenotype/ascomycete_phenotype.obo'}
+- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/obophenotype/ascomycete-phenotype-ontology/master/apo.obo'}
   contact: {email: maria@genome.stanford.edu, label: Maria Costanza}
   description: A structured controlled vocabulary for the phenotypes of Ascomycete
     fungi
@@ -267,6 +265,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/apo.owl
   products:
   - {id: apo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/apo.owl'}
+  - {id: apo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/apo.obo'}
   taxon: {id: 'NCBITaxon:4890', label: Ascomycota}
   title: Ascomycete phenotype ontology
 - contact: {email: jiezheng@upenn.edu, label: Jie Zheng}
@@ -1305,9 +1304,7 @@ ontologies:
   termgenie: http://mp.termgenie.org
   title: Mammalian phenotype
   tracker: https://github.com/obophenotype/mammalian-phenotype-ontology/issues
-- browsers:
-  - {label: Aber-OWL, title: Aber-OWL Ontology Repository, url: 'http://aber-owl.net/ontology/MPATH'}
-  build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/PaulNSchofield/mpath/master/mpath.obo'}
+- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/PaulNSchofield/mpath/master/mpath.obo'}
   contact: {email: pns12@cam.ac.uk, label: Paul Schofield}
   description: A structured controlled vocabulary of mutant and transgenic mouse pathology
     phenotypes
@@ -1356,9 +1353,7 @@ ontologies:
   - {id: ms.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ms.owl'}
   title: Mass spectrometry ontology
 - browsers:
-  - {label: Aber-OWL, title: Aber-OWL Ontology Browser, url: 'http://aber-owl.net/ontology/NBO'}
   - {label: BioPortal, title: BioPortal Ontology Browser, url: 'https://bioportal.bioontology.org/ontologies/NBO'}
-  - {label: OntoBee, title: OntoBee Ontology Browser, url: 'http://www.ontobee.org/browser/index.php?o=NBO'}
   build: {checkout: 'git clone https://github.com/bio-ontology-research-group/behavior-ontology.git',
     method: vcs, path: ., system: git}
   contact: {email: g.gkoutos@gmail.com, label: George Gkoutos}
@@ -1408,6 +1403,22 @@ ontologies:
   layout: ontology_detail
   title: NCI Thesaurus
   uri_prefix: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#
+- browsers: null
+  contact: {email: huang@southalabama.edu, label: Jingshan Huang}
+  description: An ontology for non-coding RNA, both of biological origin, and engineered.
+  domain: experiments
+  homepage: http://omnisearch.soc.southalabama.edu/OntologyFile.aspx
+  id: ncro
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/4.0/'}
+  mailing_list: ncro-devel@googlegroups.com
+  ontology_purl: http://purl.obolibrary.org/obo/ncro.owl
+  products:
+  - {id: ncro/dev/ncro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ncro/dev/ncro.owl',
+    title: NCRO development version}
+  title: non-coding RNA Ontology
+  tracker: https://github.com/OmniSearch/NCRO-Ontology-Files/issues
 - build: {method: owl2obo, source_url: 'http://svn.code.sf.net/p/oae/code/trunk/src/ontology/oae.owl'}
   contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
   description: A biomedical ontology in the domain of adverse events
@@ -1667,8 +1678,8 @@ ontologies:
   - {id: rnao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/rnao.owl'}
   - {id: rnao.obo, ontology_purl: 'http://purl.obolibrary.org/obo/rnao.obo'}
   title: RNA ontology
-- build: {checkout: 'svn co http://obo-relations.googlecode.com/svn/trunk/src/ontology',
-    infallible: 1, method: vcs, system: svn}
+- build: {checkout: 'git clone https://github.com/oborel/obo-relations.git', infallible: 1,
+    method: vcs, system: git}
   canonical: ro.owl
   contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
   description: Relationship types shared across multiple ontologies
@@ -1677,6 +1688,7 @@ ontologies:
   id: ro
   jobs:
   - {id: 'http://build.berkeleybop.org/job/build-ro', type: DryRunBuild}
+  - {id: 'https://travis-ci.org/oborel/obo-relations', type: travis-ci}
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
@@ -1890,7 +1902,10 @@ ontologies:
   - {id: tgma.owl, ontology_purl: 'http://purl.obolibrary.org/obo/tgma.owl'}
   taxon: {id: 'NCBITaxon:44484', label: Anopheles}
   title: Mosquito gross anatomy
-- build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/to-release-files/plant-trait-ontology.obo'}
+- browsers:
+  - {label: Planteome, title: Planteome browser, url: 'http://dev.planteome.org/amigo/term/TO:0000387'}
+  build: {checkout: 'git clone https://github.com/Planteome/plant-trait-ontology.git',
+    infallible: 1, method: vcs, path: ., system: git}
   contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
   description: A controlled vocabulary of describe phenotypic traits in plants.
   domain: phenotype
@@ -1903,6 +1918,7 @@ ontologies:
   page: http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=TO:0000387&session_id=815amigo1442021959
   products:
   - {id: to.owl, ontology_purl: 'http://purl.obolibrary.org/obo/to.owl'}
+  - {id: to.obo, ontology_purl: 'http://purl.obolibrary.org/obo/to.obo'}
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/22847540', title: Ontologies as integrative
       tools for plant science.}

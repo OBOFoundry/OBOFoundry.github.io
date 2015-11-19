@@ -180,6 +180,7 @@ def sparql_compare_ont(obj):
     run_sparql(obj, 'license', license, "SELECT DISTINCT ?license WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/license> ?license}")
     run_sparql(obj, 'title', obj['title'] if 'title' in obj else '', "SELECT DISTINCT ?title WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/title> ?title}")
     run_sparql(obj, 'description', obj['description'] if 'description' in obj else '', "SELECT DISTINCT ?description WHERE {<"+purl+"> <http://purl.org/dc/elements/1.1/description> ?description}")
+    run_sparql(obj, 'homepage', obj['homepage'] if 'homepage' in obj else '', "SELECT DISTINCT ?homepage WHERE {<"+purl+"> <http://xmlns.com/foaf/0.1/homepage> ?homepage}")
 
 def run_sparql(obj, p, expected_value, q):
     sparql = SPARQLWrapper("http://sparql.hegroup.org/sparql")
