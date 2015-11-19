@@ -97,7 +97,7 @@ layout: default
         <div>
           {% if page.repository and page.repository contains "github" %}
           {% assign tokens = page.repository | split: '/' %}
-          <iframe allowtransparency="true" frameborder="0" scrolling="no" seamless="seamless" src="http://colmdoyle.github.io/gh-activity/gh-activity.html?user=" +tokens[2]+ "&repo=" + tokens[3] + "&type=repo" width="600" height="400"></iframe>
+          <iframe allowtransparency="true" frameborder="0" scrolling="no" seamless="seamless" src="http://colmdoyle.github.io/gh-activity/gh-activity.html?user={{tokens[3]}}&repo={{tokens[4]}}&type=repo" width="600" height="400"></iframe>
           {% endif %}
         </div>
 
