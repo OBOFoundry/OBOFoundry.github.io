@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: ncro
-title: non-coding RNA Ontology
+title: Non-Coding RNA Ontology
 description: An ontology for non-coding RNA, both of biological origin, and engineered.
 domain: experiments
 homepage: http://omnisearch.soc.southalabama.edu/OntologyFile.aspx
