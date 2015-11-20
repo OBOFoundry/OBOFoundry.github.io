@@ -3,7 +3,7 @@ layout: ontology_detail
 id: dpo
 preferredPrefix: FBcv
 contact:
-  email: mmc46@gen.cam.ac.uk
+  email: mmc46@cam.ac.uk
   label: Marta Costa
 description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
 domain: phenotype
@@ -14,6 +14,9 @@ taxon:
   id: NCBITaxon:7227
   label: Drosophila
 title: Drosophila Phenotype Ontology
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 build:
   source_url: http://purl.obolibrary.org/obo/fbcv/dpo.owl
   method: owl2obo
