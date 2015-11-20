@@ -3,7 +3,7 @@ layout: ontology_detail
 id: fbcv
 preferredPrefix: FBcv
 contact:
-  email: mmc46@gen.cam.ac.uk
+  email: mmc46@cam.ac.uk
   label: Marta Costa
 description: A structured controlled vocabulary used for various aspects of annotation by FlyBase.
 domain:
