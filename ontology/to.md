@@ -21,7 +21,10 @@ title: Plant Trait Ontology
 browsers:
  - label: Planteome
    title: Planteome browser
-   url: http://dev.planteome.org/amigo/term/TO:0000387
+   url: http://dev.planteome.org/amigo/term/TO:0000387b
+jobs:
+  - id: https://travis-ci.org/Planteome/plant-trait-ontology
+    type: travis-ci
 build:
   checkout: git clone https://github.com/Planteome/plant-trait-ontology.git
   system: git

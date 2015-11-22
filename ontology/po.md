@@ -3,6 +3,9 @@ layout: ontology_detail
 id: po
 in_foundry_order: 1
 title: Plant Ontology
+jobs:
+  - id: https://travis-ci.org/Planteome/plant-ontology
+    type: travis-ci
 build:
   notes: switch to vcs method
   source_url: https://raw.githubusercontent.com/Planteome/plant-ontology/master/po-release-files/plant_ontology.obo
