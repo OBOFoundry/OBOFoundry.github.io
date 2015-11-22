@@ -23,8 +23,8 @@ license:
   label: CC-BY
 tracker: https://github.com/pato-ontology/pato/issues
 jobs:
-  - id: http://build.berkeleybop.org/job/build-pato
-    type: DryRunBuild
+  - id: https://travis-ci.org/pato-ontology/pato
+    type: travis-ci
 products:
   - id: pato.owl
   - id: pato.obo
