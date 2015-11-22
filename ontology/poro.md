@@ -19,13 +19,15 @@ title: Porifera Ontology
 dependencies:
  - id: uberon
  - id: ro
+jobs:
+  - id: https://travis-ci.org/obophenotype/porifera-ontology
+    type: travis-ci
 build:
   checkout: git clone https://github.com/obophenotype/porifera-ontology.git
   system: git
   path: .
   infallible: 1
   method: vcs
-integration_server: http://build.berkeleybop.org/job/build-poro/
 tracker: https://github.com/obophenotype/porifera-ontology/issues
 ---
 
