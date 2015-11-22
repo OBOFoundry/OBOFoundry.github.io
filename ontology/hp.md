@@ -16,6 +16,9 @@ taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: human phenotype ontology
+jobs:
+  - id: https://travis-ci.org/obophenotype/human-phenotype-ontology
+    type: travis-ci
 build:
   source_url: http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip
   path: archive/hp
