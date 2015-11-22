@@ -7,7 +7,11 @@ homepage: https://github.com/evidenceontology/evidenceontology/
 tracker: https://github.com/evidenceontology/evidenceontology/issues
 products:
   - id: eco.owl
+  - id: eco.obo
 title: Evidence ontology
+jobs:
+  - id: https://travis-ci.org/evidenceontology/evidenceontology
+    type: travis-ci
 build:
   notes: switch to vcs
   source_url: https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.obo
