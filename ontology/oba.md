@@ -12,6 +12,9 @@ page: http://wiki.geneontology.org/index.php/Extensions/x-attribute
 products:
   - id: oba.owl
 title: Ontology of Biological Attributes
+jobs:
+  - id: https://travis-ci.org/obophenotype/bio-attribute-ontology
+    type: travis-ci
 build:
   source_url: http://build.berkeleybop.org/job/build-oba/lastSuccessfulBuild/artifact/*zip*/archive.zip
   path: archive/src/ontology
