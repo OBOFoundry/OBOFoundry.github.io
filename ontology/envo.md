@@ -23,6 +23,9 @@ dependencies:
  - id: ro
  - id: chebi
  - id: ncbitaxon
+jobs:
+  - id: https://travis-ci.org/EnvironmentOntology/envo
+    type: travis-ci
 build:
   checkout: git clone https://github.com/EnvironmentOntology/envo.git
   email_cc: cjmungall@lbl.gov

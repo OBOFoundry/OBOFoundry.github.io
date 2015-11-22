@@ -2,6 +2,9 @@
 layout: ontology_detail
 id: cteno
 title: Ctenophore Ontology
+jobs:
+  - id: https://travis-ci.org/obophenotype/ctenophore-ontology
+    type: travis-ci
 build:
   checkout: git clone https://github.com/obophenotype/ctenophore-ontology.git
   system: git

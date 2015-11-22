@@ -4,9 +4,9 @@
   :tables (list 
    (semanticdb-table "navbar.html"
     :major-mode 'html-mode
-    :tags '(("Home" section nil nil [481 617]) ("About <b class=\"caret\">" section nil nil [617 1510]) ("Explore <b class=\"caret\">" section nil nil [1510 3217]) ("Download <b class=\"caret\">" section nil nil [3217 4041]) ("Documentation <b class=\"caret\">" section nil nil [4041 5264]) ("Project <b class=\"caret\">" section nil nil [5264 5267]))
+    :tags '(("About <span class=\"caret\">" section nil nil [1015 1222]) ("Documentation" section nil nil [1222 1294]) ("Citation" section nil nil [1294 1398]) ("GitHub Organization" section nil nil [1398 1483]) ("GitHub project" section nil nil [1483 1639]) ("Principles <span class=\"caret\">" section nil nil [1639 1909]) ("{{p.title}}" section nil nil [1909 2075]) ("Ontologies <span class=\"caret\">" section nil nil [2075 2287]) ("Ontology Table" section nil nil [2287 2339]) ("ID Policy" section nil nil [2339 2455]) ("Ontologies Metadata Source" section nil nil [2455 2589]) ("Combined Metadata" section nil nil [2589 2715]) ("Ontology YAML" section nil nil [2715 2861]) ("Ontology JSON-LD <i>alpha" section nil nil [2861 3026]) ("Ontology RDF/Turtle <i>alpha" section nil nil [3026 3246]) ("Participate <span class=\"caret\">" section nil nil [3246 3459]) ("OBO Foundry News" section nil nil [3459 3573]) ("OBO-Discuss Mail List" section nil nil [3573 3743]) ("FAQ <span class=\"caret\">" section nil nil [3743 4031]) ("Who is the OBO Foundry?" section nil nil [4031 4325]) ("What are the OBO Foundry Principles?" section nil nil [4325 4429]) ("What is the OBO ID Policy?" section nil nil [4429 4599]) ("How do I register my ontology?" section nil nil [4599 4705]) ("How do I edit the metadata for my ontology?" section nil nil [4705 4817]) ("How do I add a custom browser for my ontology?" section nil nil [4817 4930]) ("What is the <code>build" section nil nil [4930 5063]) ("Why is there no OBO-Format file listed for my ontology?" section nil nil [5063 5276]) ("How should I manage my ontology using version control?" section nil nil [5276 5532]) ("Can I help improve the OBO portal?" section nil nil [5532 5691]) ("Legacy <span class=\"caret\">" section nil nil [5691 5899]) ("Literature" section nil nil [5899 5969]) ("Participate" section nil nil [5969 6041]) ("Coordination" section nil nil [6041 6115]) ("Related" section nil nil [6115 6187]) ("Criteria" section nil nil [6187 6249]) ("Publications" section nil nil [6249 6316]) ("Old Wiki" section nil nil [6316 6412]) ("Old Operation Wiki" section nil nil [6412 6415]))
     :file "navbar.html"
-    :pointmax 5801
+    :pointmax 6990
     :unmatched-syntax 'nil
     )
    (semanticdb-table "footer.html"
@@ -43,6 +43,34 @@ var disqus_shortname = '{{ site.comments.disqus.short_name }}';
     :tags '(("about" section nil nil [285 481]) ("github.com/obophenotype/uberon" section (:members (("Follow @{{ site.project.twitter }}" section nil nil [1124 1311]) ("Google+" section nil nil [1311 1437]) ("" section nil nil [1437 1618]) ("" section nil nil [1618 1799]) ("" section nil nil [1799 1802]))) nil [481 484]))
     :file "aboutme.html"
     :pointmax 2012
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ontology_table.html"
+    :major-mode 'html-mode
+    :tags '(("YAML" section nil nil [22 68]) ("JSON-LD" section nil nil [68 120]) ("RDF/Turtle" section nil nil [120 362]) ("{% if ont.is_obsolete %}
+           <s>
+             {{ ont.id }}" section nil nil [362 784]) ("{% endif %}" section nil nil [784 1152]) ("Detail" section nil nil [1152 1251]) ("{% if ont.tracker %}
+        <a href=\"{{ont.tracker}}\">
+          <button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" title=\"Tracker\">
+            <span class=\"glyphicon glyphicon-comment\" aria-hidden=\"true\">" section nil nil [1251 1536]) ("{% if ont.tracker %}
+        <a href=\"{{ont.tracker}}\">
+          <button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" title=\"Tracker\">
+            <span class=\"glyphicon glyphicon-comment\" aria-hidden=\"true\">" section nil nil [1536 1837]) ("{% endif %}" section nil nil [1837 2156]) ("{% endif %}" section nil nil [2156 2472]) ("{% if ont.publications %}
+        <a href=\"{{ont.publications.first.id}}\">
+          <button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" title=\"Publications list\">
+            <span class=\"glyphicon glyphicon-book\" aria-hidden=\"true\">" section nil nil [2472 2779]) ("{% if ont.publications %}
+        <a href=\"{{ont.publications.first.id}}\">
+          <button type=\"button\" class=\"btn btn-default\" aria-label=\"Left Align\" title=\"Publications list\">
+            <span class=\"glyphicon glyphicon-book\" aria-hidden=\"true\">" section nil nil [2779 3132]) ("{% endif %}" section nil nil [3132 3481]) ("{% endif %}" section nil nil [3481 3484]))
+    :file "ontology_table.html"
+    :pointmax 3797
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "news.html"
+    :major-mode 'html-mode
+    :tags '(("{{ post.title }}" section nil nil [177 369]) ("{{ post.title }}" section (:members (("{{ post.title }}" section nil nil [381 624]) ("Read more" section nil nil [624 784]) ("{{ tag }}" section nil nil [784 1026]) ("Read more" section nil nil [1026 1029]))) nil [369 372]))
+    :file "news.html"
+    :pointmax 1132
     :unmatched-syntax 'nil
     )
    )
