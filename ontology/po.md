@@ -7,9 +7,9 @@ jobs:
   - id: https://travis-ci.org/Planteome/plant-ontology
     type: travis-ci
 build:
-  notes: switch to vcs method
-  source_url: https://raw.githubusercontent.com/Planteome/plant-ontology/master/po-release-files/plant_ontology.obo
-  method: obo2owl
+  checkout: git clone https://github.com/Planteome/plant-ontology.git
+  system: git
+  method: vcs
   infallible: 1
 contact:
   email: jaiswalp@science.oregonstate.edu
