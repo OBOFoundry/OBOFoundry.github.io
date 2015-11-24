@@ -132,7 +132,7 @@ ontologies:
   id: pato
   in_foundry_order: 1
   jobs:
-  - {id: 'http://build.berkeleybop.org/job/build-pato', type: DryRunBuild}
+  - {id: 'https://travis-ci.org/pato-ontology/pato', type: travis-ci}
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
@@ -143,7 +143,8 @@ ontologies:
   repository: https://github.com/pato-ontology/pato/
   title: Phenotypic quality
   tracker: https://github.com/pato-ontology/pato/issues
-- build: {infallible: 1, method: obo2owl, notes: switch to vcs method, source_url: 'https://raw.githubusercontent.com/Planteome/plant-ontology/master/po-release-files/plant_ontology.obo'}
+- build: {checkout: 'git clone https://github.com/Planteome/plant-ontology.git', infallible: 1,
+    method: vcs, system: git}
   contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
   description: The Plant Ontology is a structured vocabulary and database resource
     that links plant anatomy, morphology and growth and development to plant genomics
@@ -152,6 +153,8 @@ ontologies:
   homepage: http://www.plantontology.org
   id: po
   in_foundry_order: 1
+  jobs:
+  - {id: 'https://travis-ci.org/Planteome/plant-ontology', type: travis-ci}
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
@@ -427,6 +430,8 @@ ontologies:
   domain: cells
   id: cl
   integration_server: http://build.berkeleybop.org/job/build-cl/
+  jobs:
+  - {id: 'https://travis-ci.org/obophenotype/cell-ontology', type: travis-ci}
   label: Cell Ontology
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
@@ -506,6 +511,8 @@ ontologies:
   domain: anatomy
   homepage: https://github.com/obophenotype/ctenophore-ontology
   id: cteno
+  jobs:
+  - {id: 'https://travis-ci.org/obophenotype/ctenophore-ontology', type: travis-ci}
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
@@ -578,12 +585,14 @@ ontologies:
 - browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000347'}
   build: {infallible: 0, method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/fbcv/dpo.owl'}
-  contact: {email: mmc46@gen.cam.ac.uk, label: Marta Costa}
+  contact: {email: mmc46@cam.ac.uk, label: Marta Costa}
   description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
   domain: phenotype
   homepage: http://purl.obolibrary.org/obo/fbcv
   id: dpo
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/dpo.owl
   preferredPrefix: FBcv
   products:
@@ -616,10 +625,13 @@ ontologies:
   funded_by: ['http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400']
   homepage: https://github.com/evidenceontology/evidenceontology/
   id: eco
+  jobs:
+  - {id: 'https://travis-ci.org/evidenceontology/evidenceontology', type: travis-ci}
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/eco.owl
   products:
   - {id: eco.owl, ontology_purl: 'http://purl.obolibrary.org/obo/eco.owl'}
+  - {id: eco.obo, ontology_purl: 'http://purl.obolibrary.org/obo/eco.obo'}
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/25052702', title: Standardized description
       of scientific evidence using the Evidence Ontology (ECO)}
@@ -694,6 +706,8 @@ ontologies:
   domain: environment
   homepage: http://environmentontology.org/
   id: envo
+  jobs:
+  - {id: 'https://travis-ci.org/EnvironmentOntology/envo', type: travis-ci}
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
@@ -794,7 +808,7 @@ ontologies:
   - {label: VFB, title: Virtual Fly Brain, url: 'http://www.virtualflybrain.org/site/stacks/index.htm?add=FBbt:00007401'}
   - {label: BioPortal, title: BioPortal Browser, url: 'http://bioportal.bioontology.org/ontologies/FB-BT?p=classes'}
   build: {infallible: 1, method: owl2obo, source_url: 'http://svn.code.sf.net/p/fbbtdv/code/fbbt/releases/fbbt.owl'}
-  contact: {email: mmc46@gen.cam.ac.uk, label: Marta Costa}
+  contact: {email: mmc46@cam.ac.uk, label: Marta Costa}
   description: An ontology representing the gross anatomy of Drosophila melanogaster.
   domain: anatomy
   homepage: http://purl.obolibrary.org/obo/fbbt
@@ -823,7 +837,7 @@ ontologies:
 - browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000013'}
   build: {method: obo2owl, source_url: 'http://sourceforge.net/p/fbcv/code-0/HEAD/tree/src/trunk/ontologies/fbcv-edit.obo?format=raw'}
-  contact: {email: mmc46@gen.cam.ac.uk, label: Marta Costa}
+  contact: {email: mmc46@cam.ac.uk, label: Marta Costa}
   description: A structured controlled vocabulary used for various aspects of annotation
     by FlyBase.
   domain: null
@@ -841,7 +855,7 @@ ontologies:
 - browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008'}
   build: {infallible: 0, method: obo2owl, source_url: 'http://svn.code.sf.net/p/fbbtdv/code/fbdv/releases/fbdv.obo'}
-  contact: {email: mmc46@gen.cam.ac.uk, label: Marta Costa}
+  contact: {email: mmc46@cam.ac.uk, label: Marta Costa}
   description: A structured controlled vocabulary of the development of Drosophila
     melanogaster.
   domain: development
@@ -976,6 +990,8 @@ ontologies:
   domain: phenotype
   homepage: http://www.human-phenotype-ontology.org/
   id: hp
+  jobs:
+  - {id: 'https://travis-ci.org/obophenotype/human-phenotype-ontology', type: travis-ci}
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/hp.owl
   products:
@@ -1417,7 +1433,7 @@ ontologies:
   products:
   - {id: ncro/dev/ncro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ncro/dev/ncro.owl',
     title: NCRO development version}
-  title: non-coding RNA Ontology
+  title: Non-Coding RNA Ontology
   tracker: https://github.com/OmniSearch/NCRO-Ontology-Files/issues
 - build: {method: owl2obo, source_url: 'http://svn.code.sf.net/p/oae/code/trunk/src/ontology/oae.owl'}
   contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
@@ -1439,6 +1455,8 @@ ontologies:
   domain: phenotype
   homepage: https://github.com/obophenotype/bio-attribute-ontology
   id: oba
+  jobs:
+  - {id: 'https://travis-ci.org/obophenotype/bio-attribute-ontology', type: travis-ci}
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/oba.owl
   page: http://wiki.geneontology.org/index.php/Extensions/x-attribute
@@ -1626,7 +1644,8 @@ ontologies:
   domain: anatomy
   homepage: https://github.com/obophenotype/porifera-ontology
   id: poro
-  integration_server: http://build.berkeleybop.org/job/build-poro/
+  jobs:
+  - {id: 'https://travis-ci.org/obophenotype/porifera-ontology', type: travis-ci}
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
@@ -1903,7 +1922,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:44484', label: Anopheles}
   title: Mosquito gross anatomy
 - browsers:
-  - {label: Planteome, title: Planteome browser, url: 'http://dev.planteome.org/amigo/term/TO:0000387'}
+  - {label: Planteome, title: Planteome browser, url: 'http://dev.planteome.org/amigo/term/TO:0000387b'}
   build: {checkout: 'git clone https://github.com/Planteome/plant-trait-ontology.git',
     infallible: 1, method: vcs, path: ., system: git}
   contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
@@ -1911,6 +1930,8 @@ ontologies:
   domain: phenotype
   homepage: http://planteome.org
   id: to
+  jobs:
+  - {id: 'https://travis-ci.org/Planteome/plant-trait-ontology', type: travis-ci}
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'https://creativecommons.org/licenses/by/3.0/'}
@@ -2060,6 +2081,8 @@ ontologies:
   tracker: https://github.com/bio-ontology-research-group/unit-ontology/issues
 - build: {method: archive, path: archive/ontology, source_url: 'http://build.berkeleybop.org/job/build-pheno-ontologies/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
   id: upheno
+  jobs:
+  - {id: 'https://travis-ci.org/obophenotype/upheno', type: travis-ci}
   layout: ontology_detail
   title: Combined phenotype ontology
 - build: {method: obo2owl, source_url: 'http://variationontology.org/vario_download/vario.obo'}
