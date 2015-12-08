@@ -1,5 +1,5 @@
 ---
-layout: principle
+layout: doc
 id: fp-000-summary
 title: Overview
 ---
