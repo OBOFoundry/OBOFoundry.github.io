@@ -35,7 +35,6 @@ To pass review, the ontology developers must document their attempts at an open 
 
 
 ## History
--------
 
 ### Original Formulation
 
