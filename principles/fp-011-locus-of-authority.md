@@ -29,7 +29,7 @@ designation of a single contact person is not to be interpreted as a designation
 The name and email address of this person should be provided when requesting to include 
 an ontology in the OBO Foundry (or, better yet, when requesting inclusion in the OBO 
 Library), and should be listed in the [OBO Registry] 
-(http://obo.cvs.sourceforge.net/viewvc/obo/obo/website/cgi-bin/ontologies.txt). 
+(http://obofoundry.org). 
 This person must be subscribed to 
 obo-discuss in order to be kept abreast of community developments of relevance to 
 participating ontology projects. The email address of the person who is the locus of the 
@@ -39,10 +39,22 @@ for the project, they should identify a replacement and update the metadata acco
 these responsibilities as necessary.
 
 ### Examples: 
+
 For ChEBI, the primary contact person is Janna Hastings (hastings@ebi.ac.uk). 
 
+This can be seen in the [chebi.md](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/chebi.md) file
+
+```
+contact:
+  email: hastings@ebi.ac.uk
+  label: Janna Hastings
+```
+
 ### Counterexamples: 
-Mailing list; for ChEBI, chebi-help@ebi.ac.uk
+
+Do not use a mailing list
+
+for ChEBI, chebi-help@ebi.ac.uk
 
 ## History
 
