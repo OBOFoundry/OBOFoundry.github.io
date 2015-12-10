@@ -43,8 +43,5 @@ To pass review, the ontology developers must document their attempts at an open 
 OBO Foundry members. 
 ```
 
-### Examples
-
-### Counter-Examples
 
 <Category:Principles> <Category:Accepted>
