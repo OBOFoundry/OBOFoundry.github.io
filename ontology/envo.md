@@ -16,6 +16,12 @@ publications:
     title: "The environment ontology: contextualising biological and biomedical entities"
 products:
   - id: envo.owl
+  - id: envo.obo
+  - id: subsets/envo-basic.obo
+    title: OBO-Basic edition of ENVO
+  - id: subsets/EnvO-Lite-GSC.obo
+    title: GSC Lite subset of ENVO
+    homepage: http://environmentontology.org/downloads
 title: Environment Ontology
 dependencies:
  - id: uberon
