@@ -1151,12 +1151,19 @@
         },
         {
             "contact": {
-                "email": "Maria Herrero",
-                "label": "mhzazo@pa.uc3m.es"
+                "email": "mhzazo@pa.uc3m.es",
+                "label": "Maria Herrero"
             },
-            "homepage": "https://code.google.com/p/dinto/",
+            "description": "A formal represention for drug-drug interactions knowledge.",
+            "domain": "health",
+            "homepage": "https://github.com/labda/DINTO",
             "id": "dinto",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/dinto.owl",
             "products": [
                 {
@@ -1164,7 +1171,14 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/dinto.owl"
                 }
             ],
-            "title": "The Drug-drug Interaction Ontology"
+            "publications": [
+                {
+                    "id": "http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119",
+                    "title": "DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug\u2013Drug Interactions and Their Mechanisms."
+                }
+            ],
+            "title": "The Drug-drug Interaction Ontology",
+            "tracker": "https://github.com/labda/DINTO/issues"
         },
         {
             "browsers": [
@@ -1461,6 +1475,21 @@
                 {
                     "id": "envo.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/envo.owl"
+                },
+                {
+                    "id": "envo.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/envo.obo"
+                },
+                {
+                    "id": "subsets/envo-basic.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/subsets/envo-basic.obo",
+                    "title": "OBO-Basic edition of ENVO"
+                },
+                {
+                    "homepage": "http://environmentontology.org/downloads",
+                    "id": "subsets/EnvO-Lite-GSC.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/subsets/EnvO-Lite-GSC.obo",
+                    "title": "GSC Lite subset of ENVO"
                 }
             ],
             "publications": [
@@ -1806,6 +1835,33 @@
                 }
             ],
             "title": "Physico-chemical methods and properties"
+        },
+        {
+            "contact": {
+                "email": "robert.hoehndorf@kaust.edu.sa",
+                "label": "Robert Hoehndorf"
+            },
+            "description": "phenotypes occurring in flora files",
+            "domain": "phenotype",
+            "homepage": "https://github.com/flora-phenotype-ontology/flopoontology",
+            "id": "to",
+            "layout": "ontology_detail",
+            "license": {
+                "url": "https://creativecommons.org/about/cc0"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/to.owl",
+            "products": [
+                {
+                    "id": "flopo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/flopo.owl"
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:33090",
+                "label": "Viridiplantae"
+            },
+            "title": "FLOPO phenotype ontology",
+            "tracker": "https://github.com/flora-phenotype-ontology/flopoontology/issues"
         },
         {
             "build": {
@@ -2919,6 +2975,10 @@
         },
         {
             "browsers": null,
+            "build": {
+                "method": "owl2obo",
+                "source_url": "http://purl.obolibrary.org/obo/ncro/prebuild/ncro.owl"
+            },
             "contact": {
                 "email": "huang@southalabama.edu",
                 "label": "Jingshan Huang"
@@ -2933,7 +2993,7 @@
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
-            "mailing_list": "ncro-devel@googlegroups.com",
+            "mailing_list": "ncro-devel@googlegroups.com, ncro-discuss@googlegroups.com",
             "ontology_purl": "http://purl.obolibrary.org/obo/ncro.owl",
             "products": [
                 {
@@ -2975,10 +3035,10 @@
         },
         {
             "build": {
-                "infallible": 0,
-                "method": "archive",
-                "path": "archive/src/ontology",
-                "source_url": "http://build.berkeleybop.org/job/build-oba/lastSuccessfulBuild/artifact/*zip*/archive.zip"
+                "checkout": "git clone https://github.com/obophenotype/bio-attribute-ontology.git",
+                "method": "vcs",
+                "path": ".",
+                "system": "git"
             },
             "contact": {
                 "email": "cjmungall@lbl.gov",
@@ -3001,6 +3061,14 @@
                 {
                     "id": "oba.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/oba.owl"
+                },
+                {
+                    "id": "oba.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/oba.obo"
+                },
+                {
+                    "id": "oba/subsets/oba-basic.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo"
                 }
             ],
             "title": "Ontology of Biological Attributes",
@@ -3309,7 +3377,7 @@
                 "method": "obo2owl",
                 "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/pdumdv/pdumdv.obo"
             },
-            "description": "Life cycle stages for Mus Musculus",
+            "description": "Life cycle stages for Platynereis dumerilii",
             "homepage": "https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv",
             "id": "pdumdv",
             "layout": "ontology_detail",

@@ -24,4 +24,5 @@ build:
   method: vcs
 ---
 
-A collection of biological attributes (traits) covering all kingdoms of life. Interoperable with VT (vertebrate trait ontology) and TO (plant trait ontology). Extends PATO.
+A collection of biological attributes (traits) covering all kingdoms of life. Interoperable with
+VT (vertebrate trait ontology) and TO (plant trait ontology). Extends PATO.

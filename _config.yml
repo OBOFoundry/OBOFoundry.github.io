@@ -574,14 +574,23 @@ ontologies:
   - {id: dideo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/dideo.owl'}
   title: Drug Interaction and Evidence Ontology
   tracker: https://github.com/DIDEO/DIDEO/issues
-- contact: {email: Maria Herrero, label: mhzazo@pa.uc3m.es}
-  homepage: https://code.google.com/p/dinto/
+- contact: {email: mhzazo@pa.uc3m.es, label: Maria Herrero}
+  description: A formal represention for drug-drug interactions knowledge.
+  domain: health
+  homepage: https://github.com/labda/DINTO
   id: dinto
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/dinto.owl
   products:
   - {id: dinto.owl, ontology_purl: 'http://purl.obolibrary.org/obo/dinto.owl'}
+  publications:
+  - {id: 'http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119', title: "DINTO: Using\
+      \ OWL Ontologies and SWRL Rules to Infer Drug\u2013Drug Interactions and Their\
+      \ Mechanisms."}
   title: The Drug-drug Interaction Ontology
+  tracker: https://github.com/labda/DINTO/issues
 - browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000347'}
   build: {infallible: 0, method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/fbcv/dpo.owl'}
@@ -715,6 +724,12 @@ ontologies:
   page: https://github.com/EnvironmentOntology/envo
   products:
   - {id: envo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/envo.owl'}
+  - {id: envo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/envo.obo'}
+  - {id: subsets/envo-basic.obo, ontology_purl: 'http://purl.obolibrary.org/obo/subsets/envo-basic.obo',
+    title: OBO-Basic edition of ENVO}
+  - {homepage: 'http://environmentontology.org/downloads', id: subsets/EnvO-Lite-GSC.obo,
+    ontology_purl: 'http://purl.obolibrary.org/obo/subsets/EnvO-Lite-GSC.obo', title: GSC
+      Lite subset of ENVO}
   publications:
   - {id: 'http://www.dx.doi.org/10.1186/2041-1480-4-43', title: 'The environment ontology:
       contextualising biological and biomedical entities'}
@@ -882,6 +897,19 @@ ontologies:
   products:
   - {id: fix.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fix.owl'}
   title: Physico-chemical methods and properties
+- contact: {email: robert.hoehndorf@kaust.edu.sa, label: Robert Hoehndorf}
+  description: phenotypes occurring in flora files
+  domain: phenotype
+  homepage: https://github.com/flora-phenotype-ontology/flopoontology
+  id: to
+  layout: ontology_detail
+  license: {url: 'https://creativecommons.org/about/cc0'}
+  ontology_purl: http://purl.obolibrary.org/obo/to.owl
+  products:
+  - {id: flopo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/flopo.owl'}
+  taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
+  title: FLOPO phenotype ontology
+  tracker: https://github.com/flora-phenotype-ontology/flopoontology/issues
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/flu.owl'}
   contact: {email: burkesquires@gmail.com, label: Burke Squires}
   domain: health
@@ -1420,6 +1448,7 @@ ontologies:
   title: NCI Thesaurus
   uri_prefix: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#
 - browsers: null
+  build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/ncro/prebuild/ncro.owl'}
   contact: {email: huang@southalabama.edu, label: Jingshan Huang}
   description: An ontology for non-coding RNA, both of biological origin, and engineered.
   domain: experiments
@@ -1428,7 +1457,7 @@ ontologies:
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/4.0/'}
-  mailing_list: ncro-devel@googlegroups.com
+  mailing_list: ncro-devel@googlegroups.com, ncro-discuss@googlegroups.com
   ontology_purl: http://purl.obolibrary.org/obo/ncro.owl
   products:
   - {id: ncro/dev/ncro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ncro/dev/ncro.owl',
@@ -1448,7 +1477,8 @@ ontologies:
   products:
   - {id: oae.owl, ontology_purl: 'http://purl.obolibrary.org/obo/oae.owl'}
   title: Ontology of Adverse Events
-- build: {infallible: 0, method: archive, path: archive/src/ontology, source_url: 'http://build.berkeleybop.org/job/build-oba/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
+- build: {checkout: 'git clone https://github.com/obophenotype/bio-attribute-ontology.git',
+    method: vcs, path: ., system: git}
   contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
   description: A collection of biological attributes (traits) covering all kingdoms
     of life.
@@ -1462,6 +1492,8 @@ ontologies:
   page: http://wiki.geneontology.org/index.php/Extensions/x-attribute
   products:
   - {id: oba.owl, ontology_purl: 'http://purl.obolibrary.org/obo/oba.owl'}
+  - {id: oba.obo, ontology_purl: 'http://purl.obolibrary.org/obo/oba.obo'}
+  - {id: oba/subsets/oba-basic.obo, ontology_purl: 'http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo'}
   title: Ontology of Biological Attributes
   tracker: https://github.com/obophenotype/bio-attribute-ontology/issues
 - contact: {email: jiezheng@upenn.edu, label: Jie Zheng}
@@ -1622,7 +1654,7 @@ ontologies:
   title: Population and Community Ontology
   tracker: https://github.com/PopulationAndCommunityOntology/pco/issues
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/pdumdv/pdumdv.obo'}
-  description: Life cycle stages for Mus Musculus
+  description: Life cycle stages for Platynereis dumerilii
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv
   id: pdumdv
   layout: ontology_detail
@@ -2518,7 +2550,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:4575', label: Zea}
   title: Maize gross anatomy
 principles:
-- {id: fp-000-summary, layout: principle, title: summary}
+- {id: fp-000-summary, layout: principle, title: Overview}
 - {id: fp-001-open, layout: principle, title: open}
 - {id: fp-002-format, layout: principle, title: format}
 - {id: fp-003-uris, layout: principle, title: uris}
@@ -2529,6 +2561,7 @@ principles:
 - {id: fp-008-documented, layout: principle, title: documented}
 - {id: fp-009-users, layout: principle, title: users}
 - {id: fp-010-collaboration, layout: principle, title: collaboration}
-- {id: fp-011-locus-of-authority, layout: principle, title: locus of authority}
+- {id: fp-011-locus-of-authority, layout: principle, title: locus of authority / contact
+    person}
 - {id: fp-012-naming-conventions, layout: principle, title: naming conventions}
 - {id: fp-016-maintenance, layout: principle, title: maintenance}
