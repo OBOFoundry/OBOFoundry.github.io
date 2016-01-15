@@ -1,8 +1,8 @@
 ---
 layout: ontology_detail
 id: mro
-title: MHC restriction ontology
-description: Represents MHC restrictions
+title: MHC Restriction Ontology
+description: An ontology for Major Histocompatibility Complex (MHC) restriction in experiments
 tracker:  https://github.com/IEDB/MRO/issues
 homepage:  https://github.com/IEDB/MRO
 contact:
@@ -15,4 +15,4 @@ products:
   - id: mro.owl
 ---
 
-An application ontology capturing how MHC restriction is defined in experiments, spanning exact protein complexes, individual protein chains, serotypes, haplotypes and mutant molecules, as well as evidence for MHC restrictions
+The MHC Restriction Ontology (MRO) is an application ontology capturing how Major Histocompatibility Complex (MHC) restriction is defined in experiments, spanning exact protein complexes, individual protein chains, serotypes, haplotypes and mutant molecules, as well as evidence for MHC restrictions.

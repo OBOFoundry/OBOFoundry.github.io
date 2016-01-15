@@ -15,6 +15,9 @@ domain: anatomy
 homepage: https://github.com/obophenotype/cephalopod-ontology
 products:
   - id: ceph.owl
+    title: main version
+  - id: ceph.obo
+    title: oboformat edition
 taxon:
   id: NCBITaxon:6605
   label: Cephalopod
@@ -23,4 +26,15 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 ---
+
+Welcome to the Cephalopod Ontology
+
+```
+<コ:彡 An ontology of cephalopod anatomy and traits Ｃ:。ミ
+```
+
+To browse the ontology, try [CEPH on the OLS](http://www.ebi.ac.uk/ols/beta/ontologies/ceph), for example, see the page for
+[tentacle](http://www.ebi.ac.uk/ols/beta/ontologies/ceph/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCEPH_0000256)
+
+For full details on the project, please head over to the [GitHub Project Page](https://github.com/obophenotype/cephalopod-ontology)
 
