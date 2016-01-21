@@ -2,12 +2,12 @@
 layout: ontology_detail
 id: mfomd
 contact: 
-  email: hastings@ebi.ac.uk
+  email: janna.hastings@gmail.com
   label: Janna Hastings
 title: MFO Mental Disease Ontology
 description: An ontology to describe and classify mental diseases
 domain: health
-homepage: http://mental-functioning-ontology.googlecode.com
+homepage: https://github.com/jannahastings/mental-functioning-ontology
 products: 
   - id: mfomd.owl
     title: Mental Disease Ontology
