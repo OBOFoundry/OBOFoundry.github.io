@@ -2,11 +2,11 @@
 layout: ontology_detail
 id: cheminf
 contact:
-  email: hastings@ebi.ac.uk
-  label: Janna Hastings
+  email: egon.willighagen@gmail.com 
+  label: Egon Willighagen
 description: Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them.
 domain: biochemistry
-homepage: http://code.google.com/p/semanticchemistry/
+homepage: https://github.com/egonw/semanticchemistry
 products:
   - id: cheminf.owl
 title: Chemical Information Ontology
