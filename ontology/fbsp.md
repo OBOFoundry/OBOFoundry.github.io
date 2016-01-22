@@ -16,7 +16,7 @@ title: Fly taxonomy
 build:
   source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/fly_taxonomy.obo
   method: obo2owl
-
+  insert_ontology_id: true
 is_obsolete: true
 ---
 

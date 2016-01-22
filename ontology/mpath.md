@@ -19,6 +19,7 @@ license:
   label: CC-BY
 build:
   source_url: https://raw.githubusercontent.com/PaulNSchofield/mpath/master/mpath.obo
+  insert_ontology_id: true
   method: obo2owl
 ---
 

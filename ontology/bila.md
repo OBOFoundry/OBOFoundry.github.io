@@ -15,6 +15,7 @@ title: Bilateria anatomy
 build:
   source_url: http://4dx.embl.de/4DXpress_4d/edocs/bilateria_mrca.obo
   method: obo2owl
+  insert_ontology_id: true
 is_obsolete: true
 replaced_by: uberon
 ---

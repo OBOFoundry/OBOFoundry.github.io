@@ -16,6 +16,7 @@ taxon:
 title: Dictyostelium discoideum phenotype
 build:
   source_url: https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_phenotypes.obo
+  insert_ontology_id: true
   method: obo2owl
 ---
 

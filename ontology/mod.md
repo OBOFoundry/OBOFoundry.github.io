@@ -12,6 +12,7 @@ products:
 title: Protein modification
 build:
   source_url: https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mod/data/PSI-MOD.obo
+  insert_ontology_id: true
   method: obo2owl
 ---
 

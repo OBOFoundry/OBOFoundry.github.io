@@ -10,6 +10,7 @@ products:
 title: Physico-chemical process
 build:
   source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo
+  insert_ontology_id: true
   method: obo2owl
 ---
 

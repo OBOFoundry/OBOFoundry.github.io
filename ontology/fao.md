@@ -16,6 +16,7 @@ taxon:
 title: Fungal gross anatomy
 build:
   source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/microbial_gross_anatomy/fungi/fungal_anatomy.obo
+  insert_ontology_id: true
   method: obo2owl
 ---
 

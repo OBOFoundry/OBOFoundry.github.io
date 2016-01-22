@@ -20,6 +20,7 @@ license:
 title: BRENDA tissue / enzyme source
 build:
   source_url: http://www.brenda-enzymes.info/ontology/tissue/tree/update/update_files/BrendaTissueOBO
+  insert_ontology_id: true
   method: obo2owl
 ---
 

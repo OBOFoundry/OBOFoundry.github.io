@@ -16,6 +16,7 @@ title: Spider Ontology
 build:
   source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/animal_gross_anatomy/spider/spider_comparative_biology.obo
   method: obo2owl
+  insert_ontology_id: true
 tracker: http://sourceforge.net/tracker/?group_id=76834&atid=977401
 ---
 

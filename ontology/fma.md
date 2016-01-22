@@ -20,6 +20,7 @@ taxon:
 title: Foundational Model of Anatomy (subset)
 build:
   source_url: http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo
+  insert_ontology_id: true
   method: obo2owl
 tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
 ---
