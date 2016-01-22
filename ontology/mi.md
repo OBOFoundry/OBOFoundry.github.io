@@ -13,6 +13,7 @@ products:
 title: Protein-protein interaction
 build:
   source_url: https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mi/rel25/data/psi-mi25.obo
+  insert_ontology_id: true
   method: obo2owl
 ---
 
