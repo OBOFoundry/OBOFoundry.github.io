@@ -57,20 +57,18 @@
                 "eagle-i resource ontology" ;
         <http://purl.org/dc/terms/1.1/theme>
                 "resources" ;
-        <http://usefulinc.com/ns/doap#bug-database>
-                "http://code.google.com/p/eagle-i/issues/list" ;
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ero.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>
                 [ <http://www.w3.org/2000/01/rdf-schema#label>
-                          "Carlo Torniai" ;
+                          "Tenille Johnson" ;
                   <http://xmlns.com/foaf/0.1/mbox>
-                          "carlotorniai@gmail.com"
+                          "tenille_johnson@hms.harvard.edu"
                 ] ;
         <http://www.w3.org/ns/dcat#distribution>
                 <http://purl.obolibrary.org/obo/ero.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
-                <http://code.google.com/p/eagle-i/> .
+                <https://open.med.harvard.edu/wiki/display/eaglei/Ontology> .
 
 <http://purl.obolibrary.org/obo/pr>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -587,19 +585,19 @@
         <http://purl.org/dc/elements/1.1/title>
                 "Mental Functioning Ontology" ;
         <http://usefulinc.com/ns/doap#bug-database>
-                "https://code.google.com/p/mental-functioning-ontology/issues/list" ;
+                "https://github.com/jannahastings/mental-functioning-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/mf.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>
                 [ <http://www.w3.org/2000/01/rdf-schema#label>
                           "Janna Hastings" ;
                   <http://xmlns.com/foaf/0.1/mbox>
-                          "hastings@ebi.ac.uk"
+                          "janna.hastings@gmail.com"
                 ] ;
         <http://www.w3.org/ns/dcat#distribution>
                 <http://purl.obolibrary.org/obo/mf.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
-                <https://code.google.com/p/mental-functioning-ontology/> .
+                <https://github.com/jannahastings/mental-functioning-ontology> .
 
 <http://purl.obolibrary.org/obo/iao>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -838,17 +836,13 @@
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Caenorhabditis" .
 
-<http://purl.obolibrary.org/obo/fbbi.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/fbbi.owl" .
-
 <http://purl.obolibrary.org/obo/envo.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/envo.owl" .
 
-<http://purl.obolibrary.org/obo/pr.owl>
+<http://purl.obolibrary.org/obo/fbbi.owl>
         <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/pr.owl" .
+                "http://purl.obolibrary.org/obo/fbbi.owl" .
 
 <http://purl.obolibrary.org/obo/ypo>
         <http://purl.obolibrary.org/obo/IAO_0000136>
@@ -863,6 +857,10 @@
                 ] ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://www.yeastgenome.org/> .
+
+<http://purl.obolibrary.org/obo/pr.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/pr.owl" .
 
 <http://purl.obolibrary.org/obo/pao>
         <http://purl.obolibrary.org/obo/IAO_0000136>
@@ -955,12 +953,12 @@
                 [ <http://www.w3.org/2000/01/rdf-schema#label>
                           "Janna Hastings" ;
                   <http://xmlns.com/foaf/0.1/mbox>
-                          "hastings@ebi.ac.uk"
+                          "janna.hastings@gmail.com"
                 ] ;
         <http://www.w3.org/ns/dcat#distribution>
                 <http://purl.obolibrary.org/obo/mfomd.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
-                <http://mental-functioning-ontology.googlecode.com> .
+                <https://github.com/jannahastings/mental-functioning-ontology> .
 
 <http://purl.obolibrary.org/obo/upheno>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -1698,14 +1696,14 @@
                 "http://purl.obolibrary.org/obo/cheminf.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>
                 [ <http://www.w3.org/2000/01/rdf-schema#label>
-                          "Janna Hastings" ;
+                          "Egon Willighagen" ;
                   <http://xmlns.com/foaf/0.1/mbox>
-                          "hastings@ebi.ac.uk"
+                          "egon.willighagen@gmail.com"
                 ] ;
         <http://www.w3.org/ns/dcat#distribution>
                 <http://purl.obolibrary.org/obo/cheminf.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
-                <http://code.google.com/p/semanticchemistry/> .
+                <https://github.com/egonw/semanticchemistry> .
 
 <http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl>
         <http://purl.org/dc/elements/1.1/description>
@@ -1797,31 +1795,31 @@
         <http://purl.org/dc/terms/1.1/theme>
                 "health" ;
         <http://usefulinc.com/ns/doap#bug-database>
-                "https://code.google.com/p/emotion-ontology/issues/list" ;
+                "https://github.com/jannahastings/emotion-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/mfoem.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>
                 [ <http://www.w3.org/2000/01/rdf-schema#label>
                           "Janna Hastings" ;
                   <http://xmlns.com/foaf/0.1/mbox>
-                          "hastings@ebi.ac.uk"
+                          "janna.hastings@gmail.com"
                 ] ;
         <http://www.w3.org/ns/dcat#distribution>
                 <http://purl.obolibrary.org/obo/mfoem.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
-                <https://code.google.com/p/emotion-ontology/> .
+                <https://github.com/jannahastings/emotion-ontology> .
 
 <http://purl.obolibrary.org/obo/obib.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/obib.owl" .
 
-<http://www.ncbi.nlm.nih.gov/pubmed/23220694>
-        <http://purl.org/dc/elements/1.1/title>
-                "The plant ontology as a tool for comparative plant anatomy and genomic analyses." .
-
 <http://purl.obolibrary.org/obo/chebi.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/chebi.owl" .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/23220694>
+        <http://purl.org/dc/elements/1.1/title>
+                "The plant ontology as a tool for comparative plant anatomy and genomic analyses." .
 
 <http://purl.obolibrary.org/obo/hom>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -1883,7 +1881,7 @@
                           "cjmungall@lbl.gov"
                 ] ;
         <http://www.w3.org/ns/dcat#distribution>
-                <http://purl.obolibrary.org/obo/ceph.owl> ;
+                <http://purl.obolibrary.org/obo/ceph.owl> , <http://purl.obolibrary.org/obo/ceph.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <https://github.com/obophenotype/cephalopod-ontology> .
 
@@ -2009,6 +2007,10 @@
         <http://xmlns.com/foaf/0.1/page>
                 <https://github.com/obophenotype/developmental-stage-ontologies> .
 
+<http://purl.obolibrary.org/obo/bco.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/bco.owl" .
+
 <http://purl.obolibrary.org/obo/flu>
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/method>
@@ -2034,10 +2036,6 @@
                 <http://purl.obolibrary.org/obo/flu.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://purl.obolibrary.org/obo/flu/> .
-
-<http://purl.obolibrary.org/obo/bco.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/bco.owl" .
 
 <http://purl.obolibrary.org/obo/to.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -2658,9 +2656,9 @@
 
 <http://purl.obolibrary.org/obo/mro>
         <http://purl.org/dc/elements/1.1/description>
-                "Represents MHC restrictions" ;
+                "An ontology for Major Histocompatibility Complex (MHC) restriction in experiments" ;
         <http://purl.org/dc/elements/1.1/title>
-                "MHC restriction ontology" ;
+                "MHC Restriction Ontology" ;
         <http://purl.org/dc/terms/1.1/license>
                 <https://creativecommons.org/licenses/by/3.0/> ;
         <http://usefulinc.com/ns/doap#bug-database>
@@ -2794,10 +2792,6 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/idomal.owl" .
 
-<http://www.dx.doi.org/10.1186/2041-1480-4-43>
-        <http://purl.org/dc/elements/1.1/title>
-                "The environment ontology: contextualising biological and biomedical entities" .
-
 <http://purl.obolibrary.org/obo/ncro>
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/method>
@@ -2829,6 +2823,10 @@
                 <http://purl.obolibrary.org/obo/ncro/dev/ncro.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://omnisearch.soc.southalabama.edu/OntologyFile.aspx> .
+
+<http://www.dx.doi.org/10.1186/2041-1480-4-43>
+        <http://purl.org/dc/elements/1.1/title>
+                "The environment ontology: contextualising biological and biomedical entities" .
 
 <http://purl.obolibrary.org/obo/wbbt>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -3060,6 +3058,12 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <https://code.google.com/p/cvdo/> .
 
+<http://flybase.org/.bin/cvreport.html?cvterm=FBbt:10000000>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "FB" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "FlyBase Browser" .
+
 <http://purl.obolibrary.org/obo/omp>
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/method>
@@ -3086,13 +3090,9 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://microbialphenotypes.org> .
 
-<http://flybase.org/.bin/cvreport.html?cvterm=FBbt:10000000>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "FB" ;
-        <http://purl.org/dc/elements/1.1/title>
-                "FlyBase Browser" .
-
 <http://purl.obolibrary.org/obo/ceph.owl>
+        <http://purl.org/dc/elements/1.1/title>
+                "main version" ;
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ceph.owl" .
 
@@ -3413,6 +3413,12 @@
 <http://purl.obolibrary.org/obo/hom.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/hom.owl" .
+
+<http://purl.obolibrary.org/obo/ceph.obo>
+        <http://purl.org/dc/elements/1.1/title>
+                "oboformat edition" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/ceph.obo" .
 
 <http://purl.obolibrary.org/obo/tgma.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -4223,6 +4229,38 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://diseaseontology.sourceforge.net/> .
 
+<http://bioportal.bioontology.org/ontologies/OBI?p=classes>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "BioPortal" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "BioPortal Browser" .
+
+<http://purl.obolibrary.org/obo/flopo>
+        <http://purl.obolibrary.org/obo/IAO_0000136>
+                <http://purl.obolibrary.org/obo/NCBITaxon_33090> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "Traits and phenotypes of flowering plants occurring in digitized Floras" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Flora Phenotype Ontology" ;
+        <http://purl.org/dc/terms/1.1/license>
+                <https://creativecommons.org/about/cc0> ;
+        <http://purl.org/dc/terms/1.1/theme>
+                "phenotype" ;
+        <http://usefulinc.com/ns/doap#bug-database>
+                "https://github.com/flora-phenotype-ontology/flopoontology/issues" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/flopo.owl" ;
+        <http://www.w3.org/ns/dcat#contactPoint>
+                [ <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Robert Hoehndorf" ;
+                  <http://xmlns.com/foaf/0.1/mbox>
+                          "robert.hoehndorf@kaust.edu.sa"
+                ] ;
+        <http://www.w3.org/ns/dcat#distribution>
+                <http://purl.obolibrary.org/obo/flopo.owl> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <https://github.com/flora-phenotype-ontology/flopoontology> .
+
 <http://purl.obolibrary.org/obo/ehdaa2>
         <http://obofoundry.github.io/vocabulary/depends_on>
                 <http://purl.obolibrary.org/obo/aeo> , <http://purl.obolibrary.org/obo/cl> , <http://purl.obolibrary.org/obo/caro> ;
@@ -4256,38 +4294,6 @@
                 <http://purl.obolibrary.org/obo/ehdaa2.owl> , <http://purl.obolibrary.org/obo/ehdaa2.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://genex.hgu.mrc.ac.uk/> .
-
-<http://bioportal.bioontology.org/ontologies/OBI?p=classes>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "BioPortal" ;
-        <http://purl.org/dc/elements/1.1/title>
-                "BioPortal Browser" .
-
-<http://purl.obolibrary.org/obo/flopo>
-        <http://purl.obolibrary.org/obo/IAO_0000136>
-                <http://purl.obolibrary.org/obo/NCBITaxon_33090> ;
-        <http://purl.org/dc/elements/1.1/description>
-                "Traits and phenotypes of flowering plants occurring in digitized Floras" ;
-        <http://purl.org/dc/elements/1.1/title>
-                "Flora Phenotype Ontology" ;
-        <http://purl.org/dc/terms/1.1/license>
-                <https://creativecommons.org/about/cc0> ;
-        <http://purl.org/dc/terms/1.1/theme>
-                "phenotype" ;
-        <http://usefulinc.com/ns/doap#bug-database>
-                "https://github.com/flora-phenotype-ontology/flopoontology/issues" ;
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/flopo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>
-                [ <http://www.w3.org/2000/01/rdf-schema#label>
-                          "Robert Hoehndorf" ;
-                  <http://xmlns.com/foaf/0.1/mbox>
-                          "robert.hoehndorf@kaust.edu.sa"
-                ] ;
-        <http://www.w3.org/ns/dcat#distribution>
-                <http://purl.obolibrary.org/obo/flopo.owl> ;
-        <http://xmlns.com/foaf/0.1/homepage>
-                <https://github.com/flora-phenotype-ontology/flopoontology> .
 
 <http://purl.obolibrary.org/obo/omit.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -4501,10 +4507,6 @@
         <http://purl.org/dc/elements/1.1/title>
                 "The Drosophila anatomy ontology. [Journal of Biomedical Semantics" .
 
-<http://www.ncbi.nlm.nih.gov/pubmed/24267899>
-        <http://purl.org/dc/elements/1.1/title>
-                "Rat Strain Ontology: structured controlled vocabulary designed to facilitate access to strain data at RGD." .
-
 <http://purl.obolibrary.org/obo/iao/d-acts.owl>
         <http://purl.org/dc/elements/1.1/description>
                 "An ontology based on a theory of document acts describing what people can do with documents" ;
@@ -4518,6 +4520,10 @@
                   <http://xmlns.com/foaf/0.1/mbox>
                           "mbrochhausen@gmail.com"
                 ] .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/24267899>
+        <http://purl.org/dc/elements/1.1/title>
+                "Rat Strain Ontology: structured controlled vocabulary designed to facilitate access to strain data at RGD." .
 
 <http://purl.obolibrary.org/obo/go>
         <http://www.w3.org/2000/01/rdf-schema#label>
@@ -4921,17 +4927,17 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html> .
 
-<http://www.ncbi.nlm.nih.gov/pubmed/18950739>
-        <http://purl.org/dc/elements/1.1/title>
-                "The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease." .
+<http://purl.obolibrary.org/obo/ehdaa2.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/ehdaa2.owl" .
 
 <http://purl.obolibrary.org/obo/bfo.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/bfo.owl" .
 
-<http://purl.obolibrary.org/obo/ehdaa2.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/ehdaa2.owl" .
+<http://www.ncbi.nlm.nih.gov/pubmed/18950739>
+        <http://purl.org/dc/elements/1.1/title>
+                "The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease." .
 
 <http://purl.obolibrary.org/obo/omrse>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -5177,6 +5183,15 @@
         <http://xmlns.com/foaf/0.1/page>
                 <http://diseaseontology.sourceforge.net/> .
 
+<http://purl.obolibrary.org/obo/uberon.owl>
+        a       <http://www.w3.org/2002/07/owl#Ontology> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "core ontology" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Uberon" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/uberon.owl" .
+
 <http://purl.obolibrary.org/obo/taxrank>
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/method>
@@ -5202,15 +5217,6 @@
                 <http://purl.obolibrary.org/obo/taxrank.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <https://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary> .
-
-<http://purl.obolibrary.org/obo/uberon.owl>
-        a       <http://www.w3.org/2002/07/owl#Ontology> ;
-        <http://purl.org/dc/elements/1.1/description>
-                "core ontology" ;
-        <http://purl.org/dc/elements/1.1/title>
-                "Uberon" ;
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/uberon.owl" .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_6605>
         <http://www.w3.org/2000/01/rdf-schema#label>

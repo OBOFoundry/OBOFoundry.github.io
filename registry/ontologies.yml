@@ -381,16 +381,19 @@ ontologies:
     url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/ceph.owl
   products:
-  - {id: ceph.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ceph.owl'}
+  - {id: ceph.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ceph.owl', title: main
+      version}
+  - {id: ceph.obo, ontology_purl: 'http://purl.obolibrary.org/obo/ceph.obo', title: oboformat
+      edition}
   taxon: {id: 'NCBITaxon:6605', label: Cephalopod}
   title: Cephalopod Ontology
   tracker: https://github.com/obophenotype/cephalopod-ontology/issues
 - build: {method: owl2obo, source_url: 'http://semanticchemistry.googlecode.com/svn/trunk/ontology/cheminf.owl'}
-  contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
+  contact: {email: egon.willighagen@gmail.com, label: Egon Willighagen}
   description: Includes terms for the descriptors commonly used in cheminformatics
     software applications and the algorithms which generate them.
   domain: biochemistry
-  homepage: http://code.google.com/p/semanticchemistry/
+  homepage: https://github.com/egonw/semanticchemistry
   id: cheminf
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/cheminf.owl
@@ -759,19 +762,19 @@ ontologies:
   - {id: epo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/epo.owl'}
   title: Epidemiology Ontology
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/ero.owl'}
-  contact: {email: carlotorniai@gmail.com, label: Carlo Torniai}
+  contact: {email: tenille_johnson@hms.harvard.edu, label: Tenille Johnson}
   description: An ontology of research resources such as instruments. protocols, reagents,
     animal models and biospecimens.
-  documentation: http://code.google.com/p/eagle-i/wiki/Documentation
+  documentation: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
   domain: resources
-  homepage: http://code.google.com/p/eagle-i/
+  homepage: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
   id: ero
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/ero.owl
   products:
   - {id: ero.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ero.owl'}
   title: eagle-i resource ontology
-  tracker: http://code.google.com/p/eagle-i/issues/list
+  tracker: null
 - build: {method: obo2owl, source_url: 'http://ctdbase.org/reports/CTD_exposure_ontology.obo'}
   description: Vocabularies for describing exposure data to inform understanding of
     environmental health.
@@ -1142,15 +1145,15 @@ ontologies:
   title: Mathematical modeling ontology
   tracker: http://sourceforge.net/p/mamo-ontology/tickets/
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/mf.owl'}
-  contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
-  homepage: https://code.google.com/p/mental-functioning-ontology/
+  contact: {email: janna.hastings@gmail.com, label: Janna Hastings}
+  homepage: https://github.com/jannahastings/mental-functioning-ontology
   id: mf
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mf.owl
   products:
   - {id: mf.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mf.owl'}
   title: Mental Functioning Ontology
-  tracker: https://code.google.com/p/mental-functioning-ontology/issues/list
+  tracker: https://github.com/jannahastings/mental-functioning-ontology/issues
 - contact: {email: druzinsk@uic.edu, label: Robert Druzinsky}
   dependencies:
   - {id: uberon}
@@ -1183,22 +1186,22 @@ ontologies:
   taxon: {id: 'NCBITaxon:8089', label: Oryzias}
   title: Medaka fish anatomy and development
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/mfoem.owl'}
-  contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
+  contact: {email: janna.hastings@gmail.com, label: Janna Hastings}
   description: An ontology of affective phenomena such as emotions, moods, appraisals
     and subjective feelings.
   domain: health
-  homepage: https://code.google.com/p/emotion-ontology/
+  homepage: https://github.com/jannahastings/emotion-ontology
   id: mfoem
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mfoem.owl
   products:
   - {id: mfoem.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mfoem.owl'}
   title: Emotion Ontology
-  tracker: https://code.google.com/p/emotion-ontology/issues/list
-- contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
+  tracker: https://github.com/jannahastings/emotion-ontology/issues
+- contact: {email: janna.hastings@gmail.com, label: Janna Hastings}
   description: An ontology to describe and classify mental diseases
   domain: health
-  homepage: http://mental-functioning-ontology.googlecode.com
+  homepage: https://github.com/jannahastings/mental-functioning-ontology
   id: mfomd
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mfomd.owl
@@ -1206,7 +1209,7 @@ ontologies:
   - {id: mfomd.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mfomd.owl', title: Mental
       Disease Ontology}
   title: MFO Mental Disease Ontology
-- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mi/rel25/data/psi-mi25.obo'}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mi/rel25/data/psi-mi25.obo'}
   contact: {email: Henning.Hermjakob@ebi.ac.uk, label: Henning Hermjakob}
   description: A structured controlled vocabulary for the annotation of experiments
     concerned with protein-protein interactions.
@@ -1357,7 +1360,8 @@ ontologies:
   title: Mouse pathology
   tracker: https://github.com/PaulNSchofield/mpath/issues
 - contact: {email: bpeters@liai.org, label: Bjoern Peters}
-  description: Represents MHC restrictions
+  description: An ontology for Major Histocompatibility Complex (MHC) restriction
+    in experiments
   homepage: https://github.com/IEDB/MRO
   id: mro
   layout: ontology_detail
@@ -1366,7 +1370,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/mro.owl
   products:
   - {id: mro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mro.owl'}
-  title: MHC restriction ontology
+  title: MHC Restriction Ontology
   tracker: https://github.com/IEDB/MRO/issues
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo'}
   contact: {email: gerhard.mayer@rub.de, label: Gerhard Mayer}
