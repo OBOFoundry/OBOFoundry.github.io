@@ -327,7 +327,7 @@ ontologies:
       Ontology.'}
   title: Biological Spatial Ontology
   tracker: https://github.com/obophenotype/biological-spatial-ontology/issues
-- build: {method: obo2owl, source_url: 'http://www.brenda-enzymes.info/ontology/tissue/tree/update/update_files/BrendaTissueOBO'}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://www.brenda-enzymes.info/ontology/tissue/tree/update/update_files/BrendaTissueOBO'}
   contact: {email: a.chang@tu-bs.de, label: Antje Chang}
   description: A structured controlled vocabulary for the source of an enzyme comprising
     tissues, cell lines, cell types and cell cultures.
@@ -544,7 +544,7 @@ ontologies:
   title: Dictyostelium discoideum anatomy
   tracker: http://sourceforge.net/tracker/?group_id=76834&atid=974664
   twitter: dictybase
-- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_phenotypes.obo'}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_phenotypes.obo'}
   contact: {email: r-chisholm@northwestern.edu, label: Rex Chisholm}
   description: A structured controlled vocabulary of phenotypes of the slime-mould
     <i>Dictyostelium discoideum</i>.
@@ -665,7 +665,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Human developmental anatomy, abstract
   tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
-- build: {method: obo2owl, notes: new url soon, source_url: 'ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAP_combined.obo'}
+- build: {insert_ontology_id: true, method: obo2owl, notes: new url soon, source_url: 'ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAP_combined.obo'}
   contact: {email: Terry.Hayamizu@jax.org, label: Terry Hayamizu}
   description: A structured controlled vocabulary of stage-specific anatomical structures
     of the mouse (Mus).
@@ -787,7 +787,7 @@ ontologies:
   products:
   - {id: exo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/exo.owl'}
   title: Exposure ontology
-- build: {method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/microbial_gross_anatomy/fungi/fungal_anatomy.obo'}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/microbial_gross_anatomy/fungi/fungal_anatomy.obo'}
   contact: {email: maria@genome.stanford.edu, label: Maria Costanzo}
   description: A structured controlled vocabulary for the anatomy of fungi.
   domain: anatomy
@@ -917,7 +917,7 @@ ontologies:
   - {id: flu.owl, ontology_purl: 'http://purl.obolibrary.org/obo/flu.owl'}
   title: Influenza Ontology
   tracker: http://purl.obolibrary.org/obo/flu/tracker
-- build: {method: obo2owl, source_url: 'http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo'}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo'}
   contact: {email: mejino@comcast.net, label: Onard Mejino}
   description: This is currently a slimmed down version of FMA
   domain: anatomy
@@ -1173,7 +1173,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:40674', label: Mammalian}
   title: Mammalian Feeding Muscle Ontology
   tracker: https://github.com/RDruzinsky/feedontology/issues
-- build: {method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/animal_gross_anatomy/fish/medaka_ontology.obo'}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/animal_gross_anatomy/fish/medaka_ontology.obo'}
   contact: {email: Thorsten.Henrich@embl-heidelberg.de, label: Thorsten Henrich}
   description: A structured controlled vocabulary of the anatomy and development of
     the Japanese medaka fish, <i>Oryzias latipes</i>.
@@ -1299,7 +1299,7 @@ ontologies:
   - {id: mmusdv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mmusdv.owl'}
   - {id: mmusdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/mmusdv.obo'}
   title: Mouse Developmental Stages
-- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mod/data/PSI-MOD.obo'}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mod/data/PSI-MOD.obo'}
   contact: {email: hhe@ebi.ac.uk, label: Henning Hermjakob}
   description: PSI-MOD is an ontology consisting of terms that describe protein chemical
     modifications
@@ -1343,7 +1343,7 @@ ontologies:
   termgenie: http://mp.termgenie.org
   title: Mammalian phenotype
   tracker: https://github.com/obophenotype/mammalian-phenotype-ontology/issues
-- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/PaulNSchofield/mpath/master/mpath.obo'}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/PaulNSchofield/mpath/master/mpath.obo'}
   contact: {email: pns12@cam.ac.uk, label: Paul Schofield}
   description: A structured controlled vocabulary of mutant and transgenic mouse pathology
     phenotypes
@@ -1703,7 +1703,7 @@ ontologies:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/24499703', title: The pathway ontology
       - updates and applications.}
   title: Pathway ontology
-- build: {method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo'}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo'}
   contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
   description: An ontology of physico-chemical processes, i.e. physico-chemical changes
     occurring in course of time.
@@ -1851,7 +1851,7 @@ ontologies:
       Ontology terms and relationships.}
   title: Sequence types and features
   tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
-- build: {method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/animal_gross_anatomy/spider/spider_comparative_biology.obo'}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/animal_gross_anatomy/spider/spider_comparative_biology.obo'}
   contact: {email: ramirez@macn.gov.ar, label: Martin Ramirez}
   description: An ontology for spider comparative biology including anatomical parts
     (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk,
@@ -2252,7 +2252,7 @@ ontologies:
   layout: ontology_detail
   taxon: {id: 'NCBITaxon:8292', label: Amphibia}
   title: Amphibian taxonomy
-- build: {method: obo2owl, source_url: 'http://4dx.embl.de/4DXpress_4d/edocs/bilateria_mrca.obo'}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://4dx.embl.de/4DXpress_4d/edocs/bilateria_mrca.obo'}
   contact: {email: henrich@embl.de, label: Thorsten Heinrich}
   domain: anatomy
   homepage: http://4dx.embl.de/4DXpress
@@ -2301,7 +2301,7 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   title: eVOC (Expressed Sequence Annotation for Humans)
-- build: {method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/fly_taxonomy.obo'}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/fly_taxonomy.obo'}
   contact: {email: mmc46@gen.cam.ac.uk, label: Marta Costa}
   description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli)
     and of other taxa referred to in FlyBase.
