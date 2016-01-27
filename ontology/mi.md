@@ -2,15 +2,15 @@
 layout: ontology_detail
 id: mi
 contact:
-  email: Henning.Hermjakob@ebi.ac.uk
-  label: Henning Hermjakob
+  email: pporras@ebi.ac.uk, orchard@ebi.ac.uk
+  label: Pablo Porras, Sandra Orchard
 description: A structured controlled vocabulary for the annotation of experiments concerned with protein-protein interactions.
 domain: experiments
 homepage: http://psidev.sf.net
 page: https://rawgit.com/MICommunity/psidev/master/psi/mi/xml/doc/user/index.html
 products:
   - id: mi.owl
-title: Protein-protein interaction
+title: Molecular interactions
 build:
   source_url: https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mi/rel25/data/psi-mi25.obo
   insert_ontology_id: true
