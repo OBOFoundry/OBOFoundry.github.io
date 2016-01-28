@@ -14,6 +14,10 @@ title: Ontology of Microbial Phenotypes
 build:
   source_url: https://raw.githubusercontent.com/microbialphenotypes/OMP-ontology-files/master/omp.obo
   method: obo2owl
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
+tracker: https://github.com/microbialphenotypes/OMP-ontology/issues
 
 
 ---
