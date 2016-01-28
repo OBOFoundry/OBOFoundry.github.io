@@ -19,7 +19,7 @@ Current members of the OBO Foundry Operations Committee are: (in alphabetical or
  * [Melissa Haendel](http://www.ohsu.edu/xd/education/library/about/staff-directory/melissa-haendel.cfm) (O), Oregon Health & Science University, Portland, OR (OBO coordinator)
  * Janna Hastings (E, O)
  * Suzi Lewis (OBO coordinator)
- * [Chris Mungall](https://github.com/cmungall/), Lawrence Berkeley Laboratory, Berkeley, USA (OBO coordinator)
+ * [Chris Mungall](https://github.com/cmungall/), Lawrence Berkeley Laboratory, Berkeley, USA (OBO coordinator) (T)
  * Darren Natale (E)
  * [James A. Overton](http://james.overton.ca) (T), Knocean.com, Toronto, Canada
  * Bjoern Peters (E)
