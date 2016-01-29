@@ -1,23 +1,23 @@
 
 
-Operations committee
+[Operations Committee](/docs/OperationsCommittee.html)
 
-  * [Mission statement](/docs/MissionStatement.html)
+  * [Mission Statement](/docs/MissionStatement.html)
   * [Membership](/docs/Membership.html)
   * [Meetings](/docs/CommitteeMeetings.html)
-  * [Policy decisions](/docs/OperationsCommitteePolicyDecisions.html)
-  * [Mailing-lists](/docs/MailingLists.html)
-  * [OBO calendar](/docs/OBOCalendar.html)
+  * [Policy Decisions](/docs/OperationsCommitteePolicyDecisions.html)
+  * [Mailing Lists](/docs/MailingLists.html)
+  * [OBO Calendar](/docs/OBOCalendar.html)
 
-[Outreach group](/docs/OutreachWG.html)
+[Editorial Working Group](/docs/EditorialWG.html)
 
-[Editorial group](/docs/EditorialWG.html)
+  * [Review Process](/docs/ReviewProcessGuidelines.html)
+  * [Review Criteria](/docs/ReviewCriteriaPolicies.html)
 
-  * [Review process](/docs/ReviewProcessGuidelines.html)
-  * [Review criteria](/docs/ReviewCriteriaPolicies.html)
+[Technical Working Group](/docs/TechnicalWG.html)
 
-[Technical group](/docs/TechnicalWG.html)
+  * [PURL Requests](/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html)
+  * [OBO PURL Configuration](/docs/OBOPURLDomain.html)
+  * [Setting Up Protege 4.3](/docs/SettingUpProtege.html)
 
-  * [PURL requests](/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html)
-  * [OBO PURL configuration](/docs/OBOPURLDomain.html)
-  * [Setting up Protege 4.3](/docs/SettingUpProtege.html)
+[Outreach Working Group](/docs/OutreachWG.html)
