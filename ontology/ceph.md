@@ -33,6 +33,8 @@ Welcome to the Cephalopod Ontology
 <コ:彡 An ontology of cephalopod anatomy and traits Ｃ:。ミ
 ```
 
+<img alt="Haeckel_Gamochonia" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Haeckel_Gamochonia.jpg"/>
+
 To browse the ontology, try [CEPH on the OLS](http://www.ebi.ac.uk/ols/beta/ontologies/ceph), for example, see the page for
 [tentacle](http://www.ebi.ac.uk/ols/beta/ontologies/ceph/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCEPH_0000256)
 
