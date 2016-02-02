@@ -17,6 +17,8 @@ products:
   - id: hsapdv.obo
 ---
 
+<img alt="HumanEmbryogenesis" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/HumanEmbryogenesis.svg/500px-HumanEmbryogenesis.svg.png"/>
+
 HsapDv was developed by the Bgee group with assistance from the core Uberon developers and the Human developmental anatomy ontology (EHDAA2) developers.
 
 Currently it includes both embryonic (Carnegie) stages and adult stages.
