@@ -15,7 +15,7 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 build:
-  source_url: http://sourceforge.net/p/fbcv/code-0/HEAD/tree/src/trunk/ontologies/fbcv-edit.obo?format=raw
+  source_url: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/fbcv.owl
   method: obo2owl
 tracker: http://purl.obolibrary.org/obo/fbbt/tracker
 browsers:
