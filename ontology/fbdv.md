@@ -20,7 +20,7 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 build:
-  source_url: http://svn.code.sf.net/p/fbbtdv/code/fbdv/releases/fbdv.obo
+  source_url: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv/releases/fbdv.owl
   method: obo2owl
   infallible: 0
 tracker: http://purl.obolibrary.org/obo/fbdv/tracker
