@@ -1684,7 +1684,7 @@
             "build": {
                 "infallible": 1,
                 "method": "owl2obo",
-                "source_url": "http://svn.code.sf.net/p/fbbtdv/code/fbbt/releases/fbbt.owl"
+                "source_url": "https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.owl"
             },
             "contact": {
                 "email": "mmc46@cam.ac.uk",
@@ -1751,7 +1751,7 @@
             ],
             "build": {
                 "method": "obo2owl",
-                "source_url": "http://sourceforge.net/p/fbcv/code-0/HEAD/tree/src/trunk/ontologies/fbcv-edit.obo?format=raw"
+                "source_url": "https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/fbcv.owl"
             },
             "contact": {
                 "email": "mmc46@cam.ac.uk",
@@ -1789,7 +1789,7 @@
             "build": {
                 "infallible": 0,
                 "method": "obo2owl",
-                "source_url": "http://svn.code.sf.net/p/fbbtdv/code/fbdv/releases/fbdv.obo"
+                "source_url": "https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv/releases/fbdv.owl"
             },
             "contact": {
                 "email": "mmc46@cam.ac.uk",
@@ -2232,10 +2232,17 @@
                 "email": "Yongqun Oliver He",
                 "label": "yongqunh@med.umich.edu"
             },
-            "homepage": "https://code.google.com/p/ico-ontology/",
+            "description": "An ontology of clinical informed consents",
+            "homepage": "https://github.com/ICO-ontology/ICO",
             "id": "ico",
             "layout": "ontology_detail",
-            "title": "Informed Consent Ontology"
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "title": "Informed Consent Ontology",
+            "tracker": "https://github.com/ICO-ontology/ICO/issues"
         },
         {
             "build": {
@@ -2436,33 +2443,6 @@
         },
         {
             "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/animal_gross_anatomy/fish/medaka_ontology.obo"
-            },
-            "contact": {
-                "email": "Thorsten.Henrich@embl-heidelberg.de",
-                "label": "Thorsten Henrich"
-            },
-            "description": "A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.",
-            "domain": "anatomy",
-            "id": "mfo",
-            "layout": "ontology_detail",
-            "ontology_purl": "http://purl.obolibrary.org/obo/mfo.owl",
-            "products": [
-                {
-                    "id": "mfo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/mfo.owl"
-                }
-            ],
-            "taxon": {
-                "id": "NCBITaxon:8089",
-                "label": "Oryzias"
-            },
-            "title": "Medaka fish anatomy and development"
-        },
-        {
-            "build": {
                 "method": "owl2obo",
                 "source_url": "http://purl.obolibrary.org/obo/mfoem.owl"
             },
@@ -2495,14 +2475,6 @@
             "homepage": "https://github.com/jannahastings/mental-functioning-ontology",
             "id": "mfomd",
             "layout": "ontology_detail",
-            "ontology_purl": "http://purl.obolibrary.org/obo/mfomd.owl",
-            "products": [
-                {
-                    "id": "mfomd.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/mfomd.owl",
-                    "title": "Mental Disease Ontology"
-                }
-            ],
             "title": "MFO Mental Disease Ontology"
         },
         {
@@ -2512,8 +2484,8 @@
                 "source_url": "https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mi/rel25/data/psi-mi25.obo"
             },
             "contact": {
-                "email": "Henning.Hermjakob@ebi.ac.uk",
-                "label": "Henning Hermjakob"
+                "email": "pporras@ebi.ac.uk, orchard@ebi.ac.uk",
+                "label": "Pablo Porras, Sandra Orchard"
             },
             "description": "A structured controlled vocabulary for the annotation of experiments concerned with protein-protein interactions.",
             "domain": "experiments",
@@ -2528,7 +2500,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/mi.owl"
                 }
             ],
-            "title": "Protein-protein interaction"
+            "title": "Molecular interactions"
         },
         {
             "contact": {
@@ -3281,6 +3253,11 @@
             "homepage": "http://microbialphenotypes.org",
             "id": "omp",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/omp.owl",
             "products": [
                 {
@@ -3292,7 +3269,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/omp.obo"
                 }
             ],
-            "title": "Ontology of Microbial Phenotypes"
+            "title": "Ontology of Microbial Phenotypes",
+            "tracker": "https://github.com/microbialphenotypes/OMP-ontology/issues"
         },
         {
             "build": {
@@ -4894,6 +4872,29 @@
             "is_obsolete": true,
             "layout": "ontology_detail",
             "title": "Minimal anatomical terminology"
+        },
+        {
+            "contact": {
+                "email": "Thorsten.Henrich@embl-heidelberg.de",
+                "label": "Thorsten Henrich"
+            },
+            "description": "A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.",
+            "domain": "anatomy",
+            "id": "mfo",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "products": [
+                {
+                    "id": "mfo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mfo.owl"
+                }
+            ],
+            "replaced_by": "olatdv",
+            "taxon": {
+                "id": "NCBITaxon:8089",
+                "label": "Oryzias"
+            },
+            "title": "Medaka fish anatomy and development"
         },
         {
             "contact": {

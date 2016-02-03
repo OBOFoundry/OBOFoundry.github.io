@@ -817,7 +817,7 @@ ontologies:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBbt:10000000'}
   - {label: VFB, title: Virtual Fly Brain, url: 'http://www.virtualflybrain.org/site/stacks/index.htm?add=FBbt:00007401'}
   - {label: BioPortal, title: BioPortal Browser, url: 'http://bioportal.bioontology.org/ontologies/FB-BT?p=classes'}
-  build: {infallible: 1, method: owl2obo, source_url: 'http://svn.code.sf.net/p/fbbtdv/code/fbbt/releases/fbbt.owl'}
+  build: {infallible: 1, method: owl2obo, source_url: 'https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.owl'}
   contact: {email: mmc46@cam.ac.uk, label: Marta Costa}
   description: An ontology representing the gross anatomy of Drosophila melanogaster.
   domain: anatomy
@@ -846,7 +846,7 @@ ontologies:
   tracker: http://purl.obolibrary.org/obo/fbbt/tracker
 - browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000013'}
-  build: {method: obo2owl, source_url: 'http://sourceforge.net/p/fbcv/code-0/HEAD/tree/src/trunk/ontologies/fbcv-edit.obo?format=raw'}
+  build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/fbcv.owl'}
   contact: {email: mmc46@cam.ac.uk, label: Marta Costa}
   description: A structured controlled vocabulary used for various aspects of annotation
     by FlyBase.
@@ -864,7 +864,7 @@ ontologies:
   tracker: http://purl.obolibrary.org/obo/fbbt/tracker
 - browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008'}
-  build: {infallible: 0, method: obo2owl, source_url: 'http://svn.code.sf.net/p/fbbtdv/code/fbdv/releases/fbdv.obo'}
+  build: {infallible: 0, method: obo2owl, source_url: 'https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv/releases/fbdv.owl'}
   contact: {email: mmc46@cam.ac.uk, label: Marta Costa}
   description: A structured controlled vocabulary of the development of Drosophila
     melanogaster.
@@ -1072,10 +1072,14 @@ ontologies:
   title: Information Artifact Ontology
   tracker: https://github.com/information-artifact-ontology/IAO/issues
 - contact: {email: Yongqun Oliver He, label: yongqunh@med.umich.edu}
-  homepage: https://code.google.com/p/ico-ontology/
+  description: An ontology of clinical informed consents
+  homepage: https://github.com/ICO-ontology/ICO
   id: ico
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   title: Informed Consent Ontology
+  tracker: https://github.com/ICO-ontology/ICO/issues
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/ido.owl'}
   contact: {email: Lindsay.Cowell@utsouthwestern.edu, label: Lindsay Cowell}
   domain: health
@@ -1173,18 +1177,6 @@ ontologies:
   taxon: {id: 'NCBITaxon:40674', label: Mammalian}
   title: Mammalian Feeding Muscle Ontology
   tracker: https://github.com/RDruzinsky/feedontology/issues
-- build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/animal_gross_anatomy/fish/medaka_ontology.obo'}
-  contact: {email: Thorsten.Henrich@embl-heidelberg.de, label: Thorsten Henrich}
-  description: A structured controlled vocabulary of the anatomy and development of
-    the Japanese medaka fish, <i>Oryzias latipes</i>.
-  domain: anatomy
-  id: mfo
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/mfo.owl
-  products:
-  - {id: mfo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mfo.owl'}
-  taxon: {id: 'NCBITaxon:8089', label: Oryzias}
-  title: Medaka fish anatomy and development
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/mfoem.owl'}
   contact: {email: janna.hastings@gmail.com, label: Janna Hastings}
   description: An ontology of affective phenomena such as emotions, moods, appraisals
@@ -1204,13 +1196,10 @@ ontologies:
   homepage: https://github.com/jannahastings/mental-functioning-ontology
   id: mfomd
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/mfomd.owl
-  products:
-  - {id: mfomd.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mfomd.owl', title: Mental
-      Disease Ontology}
   title: MFO Mental Disease Ontology
 - build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mi/rel25/data/psi-mi25.obo'}
-  contact: {email: Henning.Hermjakob@ebi.ac.uk, label: Henning Hermjakob}
+  contact: {email: 'pporras@ebi.ac.uk, orchard@ebi.ac.uk', label: 'Pablo Porras, Sandra
+      Orchard'}
   description: A structured controlled vocabulary for the annotation of experiments
     concerned with protein-protein interactions.
   domain: experiments
@@ -1221,7 +1210,7 @@ ontologies:
   page: https://rawgit.com/MICommunity/psidev/master/psi/mi/xml/doc/user/index.html
   products:
   - {id: mi.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mi.owl'}
-  title: Protein-protein interaction
+  title: Molecular interactions
 - contact: {email: hlapp@drycafe.net, label: Hilamr Lapp}
   description: An application ontology to formalize annotation of phylogenetic data.
   homepage: http://www.evoio.org/wiki/MIAPA
@@ -1597,11 +1586,14 @@ ontologies:
   homepage: http://microbialphenotypes.org
   id: omp
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/omp.owl
   products:
   - {id: omp.owl, ontology_purl: 'http://purl.obolibrary.org/obo/omp.owl'}
   - {id: omp.obo, ontology_purl: 'http://purl.obolibrary.org/obo/omp.obo'}
   title: Ontology of Microbial Phenotypes
+  tracker: https://github.com/microbialphenotypes/OMP-ontology/issues
 - build: {method: owl2obo, source_url: 'http://omrse.googlecode.com/svn/trunk/omrse/omrse.owl'}
   contact: {email: hoganwr@gmail.com, label: Bill Hogan}
   description: This ontology covers the domain of social entities that are related
@@ -2367,6 +2359,18 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   title: Minimal anatomical terminology
+- contact: {email: Thorsten.Henrich@embl-heidelberg.de, label: Thorsten Henrich}
+  description: A structured controlled vocabulary of the anatomy and development of
+    the Japanese medaka fish, <i>Oryzias latipes</i>.
+  domain: anatomy
+  id: mfo
+  is_obsolete: true
+  layout: ontology_detail
+  products:
+  - {id: mfo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mfo.owl'}
+  replaced_by: olatdv
+  taxon: {id: 'NCBITaxon:8089', label: Oryzias}
+  title: Medaka fish anatomy and development
 - contact: {email: stoeckrt@pcbi.upenn.edu, label: Chris Stoeckert}
   description: A standardized description of a microarray experiment in support of
     MAGE v.1.
