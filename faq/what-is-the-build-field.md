@@ -3,7 +3,7 @@ layout: faq
 title: OBO central builds
 ---
 
-## What does the build object do in my YAML configuration
+## What does the build object do in my YAML configuration?
 
 Most ontology metadata files contain a `build` field (see other FAQ
 entries for how to view and edit metadata files).
@@ -68,6 +68,56 @@ For more details, ask a question on the tracker or see the script:
 
  * https://github.com/owlcollab/owltools/blob/master/OWLTools-Oort/bin/build-obo-ontologies.pl
 
+## Assumptions
+
+### Ontology URI
+
+If you are using the obo2owl or owl2obo method, you should make sure
+that the ontology URI is set correctly. This should be set to whatever
+is intended as the final URI for the ontology.
+
+Assume we have an ontology with ID space `FOO`. For the owl2obo method, the file will contain:
+
+```
+   <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/foo.owl">
+```
+
+For obo2owl, the file should contain:
+
+```
+ontology: foo
+```
+
+(the obo2owl method builds in assumptions about the ID policy for ontology URIs).
+
+Note that some legacy `.obo` files do not include an ontology
+header. For those, we add an extra line in the `build` object in the
+metadata file:
+
+```
+build:
+  source_url: http://some.old.url.org/my/foo.obo
+  method: obo2owl
+  insert_ontology_id: true
+```
+
+This will use the `id` field to set the ontology ID/URI correctly.
+
+This currently only works for owl2obo. If you are going from OWL, you
+should use the final URI for your ontology - this assumption is built in.
+
+Note that if the id/uri is not set correctly and you don't auto-insert
+the id using the directive above, then the build for your ontology will fail!
+
+## How do I tell if the build for my ontology failed?
+
+Note that the jenkins job will still succeed even if your ontology
+build fails (unless the `is_infallible` field is set). Currently the
+only way around this is to download the jenkins report and examine it.
+
+If that does not sound ideal, remember the central build is a fallback
+system, and includes many legacy/grandfathered ontologies.
+
 ## How do I take control of my own builds
 
 You do not need to rely on the OBO central builds!
@@ -80,3 +130,5 @@ You would make your own releases (I recommend using the github release mechanism
 
 You can then configure your ontology entries in OCLC to point to the
 location in your repository (or to where you choose to release them, e.g. S3)
+
+Another option is to use a CI system to build your ontology.
