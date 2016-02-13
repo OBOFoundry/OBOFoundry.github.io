@@ -1569,6 +1569,20 @@ ontologies:
   - {id: olatdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/olatdv.obo'}
   - {id: olatdv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/olatdv.owl'}
   title: Medaka Developmental Stages
+- contact: {email: mbrochhausen@gmail.com, label: Mathias Brochhausen}
+  description: An ontological version of MIABIS (Minimum Information About BIobank
+    data Sharing)
+  domain: health
+  homepage: https://github.com/OMIABIS/omiabis-dev
+  id: omiabis
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/omiabis.owl
+  products:
+  - {id: omiabis.owl, ontology_purl: 'http://purl.obolibrary.org/obo/omiabis.owl'}
+  title: Ontologized MIABIS
+  tracker: https://github.com/OMIABIS/omiabis-dev/issues
 - contact: {email: huang@southalabama.edu, label: 'Huang, Jingshan'}
   homepage: http://omit.cis.usouthal.edu/
   id: omit
