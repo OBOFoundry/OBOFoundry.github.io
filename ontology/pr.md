@@ -12,6 +12,9 @@ documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readm
 products:
   - id: pr.owl
 title: PRotein Ontology (PRO)
+license:
+  url: http://creativecommons.org/licenses/by/4.0/
+  label: CC-BY
 build:
   oort_args: --no-reasoner
   source_url: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.obo
