@@ -15,7 +15,7 @@ title: PRotein Ontology (PRO)
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
-depicted_by: 
+depicted_by: https://avatars3.githubusercontent.com/u/13786296?v=3&u=eb64f0704c2c089036918b9604fce4db7e72132c&s=140
 build:
   oort_args: --no-reasoner
   source_url: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.obo
