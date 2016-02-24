@@ -11,7 +11,7 @@ homepage: http://proconsortium.org
 documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
 products:
   - id: pr.owl
-title: PRotein Ontology (PRO)<br> hhh
+title: PRotein Ontology (PRO)<br> hhhd
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
