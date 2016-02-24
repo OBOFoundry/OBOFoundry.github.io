@@ -26,7 +26,7 @@ development:
   id_policy: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+URI+policy
 ---
 
-The PRotein Ontology (PRO) formally defines protein entities ranging from those produced by varied post-translational modification (proteoforms) to those produced by varied gene classes to those that are multi-component complexes.
+The PRotein Ontology (PRO) formally defines taxon-specific and taxon-neutral protein-related entities in three major areas: proteins related by evolution; proteins produced from a given gene; and protein-containing complexes.
 
 Licensing and use: The PRotein Ontology is licensed under CC BY 4.0. You are free to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material) for any purpose, even commercially. You must give appropriate credit (by using the original ontology IRI for the whole ontology or original term IRIs for individual terms), provide a link to the license, and indicate if any changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
