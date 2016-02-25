@@ -32,11 +32,11 @@ If you intend to use your ontology for semantic web applications, it should be i
 
 ### Examples
 
-- The Gene Ontology is maintained as OBO-Format. It is automatically converted to OWL and is available in both OBO and OWL via the OBO Foundry.
+- The [Gene Ontology](http://geneontology.org) is maintained as OBO-Format. It is automatically converted to OWL and is available in both OBO and OWL via the OBO Foundry.
 
-- The ChEBI ontology is maintained in a relational database using a custom schema, but makes an OBO-Format file available that is automatically converted to OWL. It is available in both OBO and OWL via the OBO Foundry.
+- The [ChEBI ontology](https://www.ebi.ac.uk/chebi/) is maintained in a relational database using a custom schema, but makes an OBO-Format file available that is automatically converted to OWL. It is available in both OBO and OWL via the OBO Foundry.
 
-OBI is maintained as an OWL ontology.
+- [OBI](http://obi-ontology.org) is maintained as an OWL ontology.
 
 ### Counter-examples
 
