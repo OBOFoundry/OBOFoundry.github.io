@@ -17,7 +17,7 @@ or the CURIE and the label:
 In the context of reproducibility, it is important that the version of each ontology be recorded. 
 The version IRI can be found in the OWL file header, for example:
 
-<owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/uberon/releases/2016-01-26/uberon.owl"/>
+```<owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/uberon/releases/2016-01-26/uberon.owl"/>```
 
 In citing a specific version in a manuscript, one should use the IRI: http://purl.obolibrary.org/obo/uberon/releases/2016-01-26/uberon.owl
 
@@ -26,7 +26,8 @@ In some circumstances when referring more generally to an ontology, it is approp
 For journal citations, we can utilize the new data citation extension to JATS, see https://peerj.com/articles/cs-1/ for more info. 
 Essentially this allows the citation of any identifier outside the paywall of the journal. In this way, either a specific version IRI or base URI can be referenced with the creators of the ontology listed as authors. 
 Note that these are seen in the ontology file directly:
-<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Mungall - http://orcid.org/0000-0002-6601-2165</dc:creator>
+
+```<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Mungall - http://orcid.org/0000-0002-6601-2165</dc:creator>```
 
 The order of authors is not important, though you can use the primary contact listed on the OBO site as the first author as a default.
 Here is an example citation:
