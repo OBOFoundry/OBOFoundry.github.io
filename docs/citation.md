@@ -4,7 +4,7 @@ This policy pertains to ontologies that have been submitted to the OBO - the Ope
 The policies that are recommended here are intended to be normative for OBO Foundry ontologies and suggested for all OBO Library ontologies. 
 
 As OBO Ontologies are intended to meet the requirements of the OBO [Open principle](/principles/fp-001-open.html), they tend to be utilized in a diversity of ways by a diversity of people.
-We want this to continue to occur, but we simultaneously would like to promote proper attribution to the creators and contributors and reproducibility where relevant.
+We want this to continue to occur, but we simultaneously would like to promote proper attribution to the creators and contributors where relevant, as well as reproducibility in informatics applications.
 
 ## Referencing a single class or property ##
 
