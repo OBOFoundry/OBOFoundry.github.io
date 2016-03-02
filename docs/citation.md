@@ -32,7 +32,7 @@ When referring to an ontology in general (not a specific version) you can use it
 
 > http://purl.obolibrary.org/obo/uberon.owl
 
-The ontology IRI should be accompanied by a citation of the ontology, in any context where citations are appropriate.
+The ontology IRI or ontology version IRI should be accompanied by a citation of the ontology, in any context where citations are appropriate.
 
 
 ## Citing an ontology
