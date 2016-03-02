@@ -28,9 +28,11 @@ To facilitate reproducibility, be specific about the version of the ontology tha
 
 The ontology version IRI is indicated by the [owl:versionIRI](https://www.w3.org/2002/07/owl#versionIRI) property.
 
-When referring to an ontology in general, you can use its ontology IRI:
+When referring to an ontology in general (not a specific version) you can use its ontology IRI:
 
 > http://purl.obolibrary.org/obo/uberon.owl
+
+The ontology IRI should be accompanied by a citation of the ontology, in any context where citations are appropriate.
 
 
 ## Citing an ontology
