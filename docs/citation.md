@@ -9,15 +9,15 @@ When referring to a single ontology term, use the full [Internationalized Resour
 
 > http://purl.obolibrary.org/obo/UBERON_0000948
 
-When it is clear from the context which ontology is being used, you can use a shorter [Compact URI (CURIE)](https://www.w3.org/TR/2009/CR-curie-20090116/) with a prefix rather than a full IRI:
+You can use a shorter [Compact URI (CURIE)](https://www.w3.org/TR/curie/) by defining a prefix that abbreviates the first part of the IRI. For example, the prefix "UBERON" can abbreviate "http://purl.obolibrary.org/obo/UBERON_", then "http://purl.obolibrary.org/obo/UBERON_0000948" can be shortened to "[UBERON:0000948](http://purl.obolibrary.org/obo/UBERON_0000948)". A footnote like this one should be included with the first use of the prefix:
 
-> UBERON:0000948
+> [UBERON:0000948](http://purl.obolibrary.org/obo/UBERON_0000948) is a Compact URI (CURIE). Here and subsequently the prefix "UBERON" expands to "http://purl.obolibrary.org/obo/UBERON_". The full identifier for the term is then <http://purl.obolibrary.org/obo/UBERON_0000948>. Browsing to this address gives further information about the term.
 
-We also recommend including the primary label of the term, in quotation marks, before or after the term identifier:
+In situations that allow the use of hyperlinks, every CURIE should be a hyperlink with its full IRI as its target, as in these examples.
 
-> 'heart' UBERON:0000948
+We also recommend including the primary label of the term in quotation marks before the IRI or CURIE:
 
-> UBERON:0000948 'heart'
+> 'heart' ([UBERON:0000948](http://purl.obolibrary.org/obo/UBERON_0000948))
 
 
 ## Referring to an ontology
