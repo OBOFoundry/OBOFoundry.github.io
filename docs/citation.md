@@ -39,7 +39,7 @@ The ontology IRI or ontology version IRI should be accompanied by a citation of 
 
 Some ontologies recommend citation of specific publications. Please see their respective homepages for this information. For example, [Uberon](http://obofoundry.org/ontology/uberon.html) lists two publications under "Cite."
 
-When no specific publication is recommended, use the [new data citation extension to JATS](https://peerj.com/articles/cs-1/). Our ontology files list authors using the [dc:creator](http://purl.org/dc/elements/1.1/creator) property. The order of authors is not important, but you can use the primary contact for the ontology listed on the [OBO site](http://obofoundry.org) as the first author. Here is an example citation:
+Even when a specific publication is recommended, we recommend use of the [new data citation extension to JATS](https://peerj.com/articles/cs-1/) to cite the ontology directly. Our ontology files list authors using the [dc:creator](http://purl.org/dc/elements/1.1/creator) property. The order of authors is not important, but you can use the primary contact for the ontology listed on the [OBO site](http://obofoundry.org) as the first author. Here is an example citation:
 
 > Mungall, C., Haendel, M., Dahdul, W., Ibrahim, N., Segerdell, E., Blackburn, D., Comte, A., Niknejad, A., and Decechi, A. (2016), Uberon Ontology, http://purl.obolibrary.org/obo/uberon/releases/2016-01-26/uberon.owl
 
