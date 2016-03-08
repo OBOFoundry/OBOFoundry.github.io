@@ -37,10 +37,10 @@ The ontology IRI or ontology version IRI should be accompanied by a citation of 
 
 ## Citing an ontology
 
-Some ontologies recommend citation of specific publications. Please see their respective homepages for this information. For example, [Uberon](http://obofoundry.org/ontology/uberon.html) lists two publications under "Cite."
+Some ontologies recommend citation of specific publications. Please see their respective homepages for this information. For example, [Uberon](http://obofoundry.org/ontology/uberon.html) lists two publications under "Cite." 
 
-When no specific publication is recommended, use the [new data citation extension to JATS](https://peerj.com/articles/cs-1/). Our ontology files list authors using the [dc:creator](http://purl.org/dc/elements/1.1/creator) property. The order of authors is not important, but you can use the primary contact for the ontology listed on the [OBO site](http://obofoundry.org) as the first author. Here is an example citation:
+In addition to the recommended publication, you should also cite the ontology using its IRI and the [new data citation extension to JATS](https://peerj.com/articles/cs-1/). When no specific publication is recommended, you must cite the ontology by its IRI. Here is an example citation:
 
 > Mungall, C., Haendel, M., Dahdul, W., Ibrahim, N., Segerdell, E., Blackburn, D., Comte, A., Niknejad, A., and Decechi, A. (2016), Uberon Ontology, http://purl.obolibrary.org/obo/uberon/releases/2016-01-26/uberon.owl
 
-Note that this does not necessarily include all those who have contributed directly to the ontology, via its issue tracker or on its mailing lists, for example. However, these can be readily retrieved if the proper IRI is referenced in the citation.
+Our ontology files list authors using the [dc:creator](http://purl.org/dc/elements/1.1/creator) property. The order of authors is not important, but you can use the primary contact for the ontology listed on the [OBO site](http://obofoundry.org) as the first author. Note that this does not necessarily include all those who have contributed directly to the ontology, via its issue tracker or on its mailing lists, for example. However, these can be readily retrieved if the proper IRI is referenced in the citation.
