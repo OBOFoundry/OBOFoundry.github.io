@@ -26,12 +26,21 @@ used_by:
  - url: https://www.encodeproject.org/
    seeAlso: https://www.biosharing.org/biodbcore-000034
    label: ENCODE
-   type: Database
+ - url: http://fantom5-collaboration.gsc.riken.jp/
+   label: FANTOM5
  - url: https://monarchinitiative.org/
    label: Monarch
    type: Database
  - url: https://geneontology.org/
    label: GO Database
+   type: Database
+ - url: http://phenoscape.org
+   label: Phenoscape
+ - url: https://neuinfo.org/
+   label: Neuroscience Information Framework
+   type: Database
+ - url: https://scicrunch.org/
+   label: SciCrunch
    type: Database
 funded_by:
  - "NIH R24OD011883"
