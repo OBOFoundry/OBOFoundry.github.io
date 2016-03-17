@@ -9,8 +9,8 @@ description: An ontology for describing the classification of human diseases org
 twitter: diseaseontology
 facebook: https://www.facebook.com/diseaseontology
 domain: disease
-homepage: http://diseaseontology.sourceforge.net/
-page: http://diseaseontology.sourceforge.net/
+homepage: http://www.disease-ontology.org
+DO wiki: http://diseaseontology.sourceforge.net/
 products:
   - id: doid.owl
   - id: doid.obo
@@ -23,10 +23,10 @@ taxon:
   label: Homo sapiens
 title: Human Disease Ontology
 build:
-  source_url: http://sourceforge.net/p/diseaseontology/code/HEAD/tree/trunk/HumanDO.obo?format=raw
+  source_url: https://github.com/DiseaseOntology/HumanDiseaseOntology/blob/master/src/ontology/doid-non-classified.obo
   method: obo2owl
   infallible: 1
-tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
+tracker: https://github.com/DiseaseOntology/HumanDiseaseOntology/issues
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409
     title: "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"

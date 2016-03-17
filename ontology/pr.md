@@ -5,13 +5,17 @@ in_foundry_order: 1
 contact:
   email: dan5@georgetown.edu
   label: Darren Natale
-description: an ontological representation of protein-related entities
+description: An ontological representation of protein-related entities
 domain: proteins
 homepage: http://proconsortium.org
 documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
 products:
   - id: pr.owl
 title: PRotein Ontology (PRO)
+license:
+  url: http://creativecommons.org/licenses/by/4.0/
+  label: CC-BY
+depicted_by: https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png
 build:
   oort_args: --no-reasoner
   source_url: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.obo
@@ -22,4 +26,7 @@ development:
   id_policy: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+URI+policy
 ---
 
-PRotein Ontology (PRO) has been designed to describe the relationships of proteins and protein evolutionary classes (ontology for ProEvo), to delineate the multiple protein forms of a gene locus (ontology for protein forms), and to interconnect existing ontologies
+The PRotein Ontology (PRO) formally defines taxon-specific and taxon-neutral protein-related entities in three major areas: proteins related by evolution; proteins produced from a given gene; and protein-containing complexes.
+
+Licensing and use: The PRotein Ontology is licensed under CC BY 4.0. You are free to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material) for any purpose, even commercially. You must give appropriate credit (by using the original ontology IRI for the whole ontology or original term IRIs for individual terms), provide a link to the license, and indicate if any changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
