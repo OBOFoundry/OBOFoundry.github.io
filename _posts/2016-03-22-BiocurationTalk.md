@@ -5,6 +5,4 @@ date:   2016-03-15
 categories: update
 summary: The OBO Foundry in 2016 talk in Geneva, April 11th. Session 2: Biocuration 2016 meeting. 
 ---
-
-
 http://www.isb-sib.ch/events/biocuration2016/agenda
