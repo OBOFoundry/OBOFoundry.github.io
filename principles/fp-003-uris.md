@@ -24,7 +24,7 @@ advance. Email obo-admin AT obofoundry DOT org
 Notes
 -----
 
-See <http://www.obofoundry.org/id-policy.shtml>
+See <http://www.obofoundry.org/id-policy.html>
 
 ### OBO-Format Ontologies
 
