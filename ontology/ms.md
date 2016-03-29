@@ -8,7 +8,7 @@ createdWith: http://oboedit.org
 contact:
   email: gerhard.mayer@rub.de
   label: Gerhard Mayer
-integration_server: https://github.com/HUPO-PSI/psi-ms-CV/
+integration_server: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master
 domain: MS experiments
 mailing_list: psidev-ms-vocab@lists.sourceforge.net
 homepage: http://www.psidev.info/groups/controlled-vocabularies
@@ -26,7 +26,7 @@ license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 build:
-  source_url: https://github.com/HUPO-PSI/psi-ms-CV/blob/master/psi-ms.obo
+  source_url: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master/psi-ms.obo
   method: obo2owl
 ---
 
