@@ -24,17 +24,23 @@ jobs:
 products:
  - id: ro.owl
    title: Relation Ontology
+   description: Canonical edition
  - id: ro.obo
    title: Relation Ontology in obo format
+   description: Has imports merged in
  - id: ro/core.owl
    title: Core relations
    description: Minimal subset intended to work with BFO-classes
+   page: https://github.com/oborel/obo-relations/wiki/ROCore
  - id: ro/subsets/ro-interaction.owl
    title: Interaction relations
+   description: For use in ecology and environmental science
  - id: ro/subsets/ro-eco.owl
    title: Ecology subset
  - id: ro/subsets/ro-neuro.owl
    title: Neuroscience subset
+   description: For use in neuroscience
+   page: http://bioinformatics.oxfordjournals.org/content/28/9/1262.long
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
