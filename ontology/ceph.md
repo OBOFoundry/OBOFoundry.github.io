@@ -22,6 +22,9 @@ taxon:
   id: NCBITaxon:6605
   label: Cephalopod
 tracker: https://github.com/obophenotype/cephalopod-ontology/issues
+jobs:
+  - id: https://travis-ci.org/obophenotype/cephalopod-ontology
+    type: travis-ci
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
