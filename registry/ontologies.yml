@@ -19,22 +19,22 @@ ontologies:
   title: Chemical Entities of Biological Interest
   tracker: https://sourceforge.net/p/chebi/curator-requests/
   twitter: chebit
-- browsers:
+- DO wiki: http://diseaseontology.sourceforge.net/
+  browsers:
   - {label: DO, title: DO Browser, url: 'http://www.disease-ontology.org/'}
-  build: {infallible: 1, method: obo2owl, source_url: 'http://sourceforge.net/p/diseaseontology/code/HEAD/tree/trunk/HumanDO.obo?format=raw'}
+  build: {infallible: 1, method: obo2owl, source_url: 'https://github.com/DiseaseOntology/HumanDiseaseOntology/blob/master/src/ontology/doid-non-classified.obo'}
   contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
   description: An ontology for describing the classification of human diseases organized
     by etiology.
   domain: disease
   facebook: https://www.facebook.com/diseaseontology
-  homepage: http://diseaseontology.sourceforge.net/
+  homepage: http://www.disease-ontology.org
   id: doid
   in_foundry_order: 1
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/doid.owl
-  page: http://diseaseontology.sourceforge.net/
   products:
   - {id: doid.owl, ontology_purl: 'http://purl.obolibrary.org/obo/doid.owl'}
   - {id: doid.obo, ontology_purl: 'http://purl.obolibrary.org/obo/doid.obo'}
@@ -44,7 +44,7 @@ ontologies:
       biomedical knowledge through disease data'}
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Human Disease Ontology
-  tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
+  tracker: https://github.com/DiseaseOntology/HumanDiseaseOntology/issues
   twitter: diseaseontology
 - browsers:
   - {label: AmiGO, title: Gene Ontology AmiGO 2 Browser, url: 'http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab'}
@@ -166,7 +166,8 @@ ontologies:
   twitter: planteome
 - build: {infallible: 0, method: obo2owl, oort_args: --no-reasoner, source_url: 'ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.obo'}
   contact: {email: dan5@georgetown.edu, label: Darren Natale}
-  description: an ontological representation of protein-related entities
+  depicted_by: https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png
+  description: An ontological representation of protein-related entities
   development: {id_policy: 'https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+URI+policy'}
   documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
   domain: proteins
@@ -174,6 +175,8 @@ ontologies:
   id: pr
   in_foundry_order: 1
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/pr.owl
   products:
   - {id: pr.owl, ontology_purl: 'http://purl.obolibrary.org/obo/pr.owl'}
@@ -376,6 +379,8 @@ ontologies:
   domain: anatomy
   homepage: https://github.com/obophenotype/cephalopod-ontology
   id: ceph
+  jobs:
+  - {id: 'https://travis-ci.org/obophenotype/cephalopod-ontology', type: travis-ci}
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
@@ -403,14 +408,16 @@ ontologies:
 - contact: {email: batchelorc@rsc.org, label: Colin Batchelor}
   description: CHMO, the chemical methods ontology, describes methods used to
   domain: health
-  homepage: http://code.google.com/p/rsc-cmo/
+  homepage: https://github.com/rsc-ontologies/rsc-cmo
   id: chmo
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/4.0'}
   ontology_purl: http://purl.obolibrary.org/obo/chmo.owl
   products:
   - {id: chmo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/chmo.owl'}
   title: Chemical Methods Ontology
-  tracker: http://code.google.com/p/rsc-cmo/issues/list
+  tracker: https://github.com/rsc-ontologies/rsc-cmo/issues
 - build: {checkout: 'git clone https://github.com/obophenotype/cell-ontology.git',
     email_cc: cl_edit@googlegroups.com, infallible: 1, method: vcs, system: git}
   canonical: cl.owl
@@ -569,10 +576,10 @@ ontologies:
   - {id: dideo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/dideo.owl'}
   title: Drug Interaction and Evidence Ontology
   tracker: https://github.com/DIDEO/DIDEO/issues
-- contact: {email: mhzazo@pa.uc3m.es, label: Maria Herrero}
+- contact: {email: maria.herrero@kcl.ac.uk, label: Maria Herrero}
   description: A formal represention for drug-drug interactions knowledge.
   domain: health
-  homepage: https://github.com/labda/DINTO
+  homepage: http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto
   id: dinto
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
@@ -584,7 +591,7 @@ ontologies:
   - {id: 'http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119', title: "DINTO: Using\
       \ OWL Ontologies and SWRL Rules to Infer Drug\u2013Drug Interactions and Their\
       \ Mechanisms."}
-  title: The Drug-drug Interaction Ontology
+  title: The Drug-Drug Interactions Ontology
   tracker: https://github.com/labda/DINTO/issues
 - browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000347'}
@@ -1748,18 +1755,21 @@ ontologies:
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-relations
   ontology_purl: http://purl.obolibrary.org/obo/ro.owl
   products:
-  - {id: ro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ro.owl', title: Relation
-      Ontology}
-  - {id: ro.obo, ontology_purl: 'http://purl.obolibrary.org/obo/ro.obo', title: Relation
-      Ontology in obo format}
+  - {description: Canonical edition, id: ro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ro.owl',
+    title: Relation Ontology}
+  - {description: Has imports merged in, id: ro.obo, ontology_purl: 'http://purl.obolibrary.org/obo/ro.obo',
+    title: Relation Ontology in obo format}
   - {description: Minimal subset intended to work with BFO-classes, id: ro/core.owl,
-    ontology_purl: 'http://purl.obolibrary.org/obo/ro/core.owl', title: Core relations}
-  - {id: ro/subsets/ro-interaction.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl',
+    ontology_purl: 'http://purl.obolibrary.org/obo/ro/core.owl', page: 'https://github.com/oborel/obo-relations/wiki/ROCore',
+    title: Core relations}
+  - {description: For use in ecology and environmental science, id: ro/subsets/ro-interaction.owl,
+    ontology_purl: 'http://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl',
     title: Interaction relations}
   - {id: ro/subsets/ro-eco.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ro/subsets/ro-eco.owl',
     title: Ecology subset}
-  - {id: ro/subsets/ro-neuro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ro/subsets/ro-neuro.owl',
-    title: Neuroscience subset}
+  - {description: For use in neuroscience, id: ro/subsets/ro-neuro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ro/subsets/ro-neuro.owl',
+    page: 'http://bioinformatics.oxfordjournals.org/content/28/9/1262.long', title: Neuroscience
+      subset}
   title: Relations Ontology
   tracker: https://github.com/oborel/obo-relations/issues
 - browsers:
@@ -1932,17 +1942,24 @@ ontologies:
   - {id: tads.owl, ontology_purl: 'http://purl.obolibrary.org/obo/tads.owl'}
   taxon: {id: 'NCBITaxon:6939', label: Ixodidae}
   title: Tick gross anatomy
-- build: {method: obo2owl, source_url: 'https://raw.github.com/obophenotype/taxonomic-rank-ontology/master/src/ontology/taxrank.obo'}
+- build: {checkout: 'git clone https://github.com/phenoscape/taxrank.git', path: .,
+    system: git}
   contact: {email: peteremidford@yahoo.com, label: Peter Midford}
   description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
   domain: taxonomy
   homepage: https://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary
   id: taxrank
+  jobs:
+  - {id: 'https://travis-ci.org/phenoscape/taxrank', type: travis-ci}
   layout: ontology_detail
+  license: {label: CC-0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'http://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/taxrank.owl
   products:
   - {id: taxrank.owl, ontology_purl: 'http://purl.obolibrary.org/obo/taxrank.owl'}
+  - {id: taxrank.obo, ontology_purl: 'http://purl.obolibrary.org/obo/taxrank.obo'}
   title: Taxonomic rank vocabulary
+  tracker: https://github.com/phenoscape/taxrank/issues
 - build: {method: obo2owl, source_url: 'http://anobase.vectorbase.org/anatomy/mosquito_anatomy.obo'}
   contact: {email: louis@imbb.forth.gr, label: C. Louis}
   description: A structured controlled vocabulary of the anatomy of mosquitoes.
@@ -2093,10 +2110,13 @@ ontologies:
   used_by:
   - {label: bgee, seeAlso: 'https://www.biosharing.org/biodbcore-000228', type: Database,
     url: 'http://bgee.org/'}
-  - {label: ENCODE, seeAlso: 'https://www.biosharing.org/biodbcore-000034', type: Database,
-    url: 'https://www.encodeproject.org/'}
+  - {label: ENCODE, seeAlso: 'https://www.biosharing.org/biodbcore-000034', url: 'https://www.encodeproject.org/'}
+  - {label: FANTOM5, url: 'http://fantom5-collaboration.gsc.riken.jp/'}
   - {label: Monarch, type: Database, url: 'https://monarchinitiative.org/'}
   - {label: GO Database, type: Database, url: 'https://geneontology.org/'}
+  - {label: Phenoscape, url: 'http://phenoscape.org'}
+  - {label: Neuroscience Information Framework, type: Database, url: 'https://neuinfo.org/'}
+  - {label: SciCrunch, type: Database, url: 'https://scicrunch.org/'}
   wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo'}
   contact: {email: g.gkoutos@gmail.com, label: George Gkoutos}
