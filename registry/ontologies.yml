@@ -1629,6 +1629,20 @@ ontologies:
   - {id: omrse.owl, ontology_purl: 'http://purl.obolibrary.org/obo/omrse.owl'}
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Ontology of Medically Related Social Entities
+- contact: {email: mbrochhausen@uams.edu, label: Mathias Brochhausen}
+  description: An ontology built for representating the organizational components
+    of trauma centers and trauma systems.
+  domain: health
+  homepage: https://github.com/OOSTT/OOSTT
+  id: oostt
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/4.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/oostt.owl
+  products:
+  - {id: oostt.owl, ontology_purl: 'http://purl.obolibrary.org/obo/oostt.owl'}
+  title: Ontology of Organizational Structures of Trauma centers and Trauma systems
+  tracker: https://github.com/OOSTT/OOSTT/issues
 - contact: {email: preets79@gmail.com, label: Priti Parikh}
   description: A reference ontology for parasite life cycle stages.
   homepage: https://github.com/OPL-ontology/OPL
