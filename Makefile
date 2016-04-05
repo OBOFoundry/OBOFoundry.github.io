@@ -36,7 +36,7 @@ PRINCIPLES := $(wildcard principles/*md)
 
 ### Main Tasks
 
-all: pull yml registry/ontologies.ttl
+all: pull yml registry/ontologies.ttl registry/publications.md
 
 yml: _config.yml registry/ontologies.yml
 
@@ -86,6 +86,9 @@ registry/ontologies.nt: registry/ontologies.jsonld
 registry/ontologies.ttl: registry/ontologies.nt
 	rdfcat -out ttl $< > $@.tmp && mv $@.tmp $@
 
+# Generate a list of primary publications
+registry/publications.md: util/extract-publications.py registry/ontologies.yml
+	$^ $@
 
 ### Validate Configuration Files
 
