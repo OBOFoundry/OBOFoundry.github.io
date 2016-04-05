@@ -13,8 +13,7 @@ layout: doc
 title: Publications Related to the OBO Foundry
 ---
 
-[The OBO Foundry: coordinated evolution of ontologies to support biomedical data integration]
-(http://www.nature.com/nbt/journal/v25/n11/abs/nbt1346.html)
+[The OBO Foundry: coordinated evolution of ontologies to support biomedical data integration](http://www.nature.com/nbt/journal/v25/n11/abs/nbt1346.html)
 
 Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Werner Ceusters, Louis J Goldberg, Karen Eilbeck, Amelia Ireland, Christopher J Mungall, The OBI Consortium, Neocles Leontis, Philippe Rocca-Serra, Alan Ruttenberg, Susanna-Assunta Sansone, Richard H Scheuermann, Nigam Shah, Patricia L Whetzel, and Suzanna Lewis
 

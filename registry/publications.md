@@ -3,8 +3,7 @@ layout: doc
 title: Publications Related to the OBO Foundry
 ---
 
-[The OBO Foundry: coordinated evolution of ontologies to support biomedical data integration]
-(http://www.nature.com/nbt/journal/v25/n11/abs/nbt1346.html)
+[The OBO Foundry: coordinated evolution of ontologies to support biomedical data integration](http://www.nature.com/nbt/journal/v25/n11/abs/nbt1346.html)
 
 Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Werner Ceusters, Louis J Goldberg, Karen Eilbeck, Amelia Ireland, Christopher J Mungall, The OBI Consortium, Neocles Leontis, Philippe Rocca-Serra, Alan Ruttenberg, Susanna-Assunta Sansone, Richard H Scheuermann, Nigam Shah, Patricia L Whetzel, and Suzanna Lewis
 
@@ -31,7 +30,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Plant Trait Ontology (to): [Ontologies as integrative tools for plant science.](http://www.ncbi.nlm.nih.gov/pubmed/22847540)
 - Rat Strain Ontology (rs): [Rat Strain Ontology: structured controlled vocabulary designed to facilitate access to strain data at RGD.](http://www.ncbi.nlm.nih.gov/pubmed/24267899)
 - Sequence types and features (so): [The Sequence Ontology: a tool for the unification of genome annotations.](http://www.ncbi.nlm.nih.gov/pubmed/15892872)
-- The Drug-drug Interaction Ontology (dinto): [DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug–Drug Interactions and Their Mechanisms.](http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119)
+- The Drug-Drug Interactions Ontology (dinto): [DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug–Drug Interactions and Their Mechanisms.](http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119)
 - Uberon multi-species anatomy ontology (uberon): [Uberon, an integrative multi-species anatomy ontology](http://www.ncbi.nlm.nih.gov/pubmed/22293552)
 - Xenopus anatomy and development (xao): [An ontology for Xenopus anatomy and development.](http://www.ncbi.nlm.nih.gov/pubmed/18817563)
 - Zebrafish anatomy and development (zfa): [The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio.](http://www.ncbi.nlm.nih.gov/pubmed/24568621)
