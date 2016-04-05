@@ -8,6 +8,24 @@ __author__ = 'James A. Overton'
 
 import argparse, yaml
 
+header = '''---
+layout: doc
+title: Publications Related to the OBO Foundry
+---
+
+[The OBO Foundry: coordinated evolution of ontologies to support biomedical data integration]
+(http://www.nature.com/nbt/journal/v25/n11/abs/nbt1346.html)
+
+Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Werner Ceusters, Louis J Goldberg, Karen Eilbeck, Amelia Ireland, Christopher J Mungall, The OBI Consortium, Neocles Leontis, Philippe Rocca-Serra, Alan Ruttenberg, Susanna-Assunta Sansone, Richard H Scheuermann, Nigam Shah, Patricia L Whetzel, and Suzanna Lewis
+
+*Nature Biotechnology* **25**, 1251 - 1255 (2007)
+
+[Google Scholar list of papers citing The OBO Foundry.](https://scholar.google.ca/scholar?cites=13806088078865650870&as_sdt=2005&sciodt=0,5&hl=en)
+
+### Ontology Project Publications
+
+'''
+
 template = '- {ontology} ({id}): [{title}]({link})\n'
 
 def main():
@@ -41,7 +59,7 @@ def main():
 
     publications = sorted(publications, key=lambda k: k['ontology'])
     with open(args.publications_path, 'w') as output:
-      output.write('---\nlayout: default\ntitle: OBO-Related Publications\n---\n\n')
+      output.write(header)
       for publication in publications:
         output.write(template.format(**publication))
 
