@@ -16,6 +16,9 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 title: Porifera Ontology
+publications:
+  - id: http://dx.doi.org/10.1186/2041-1480-5-39
+    title: "The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy ontology"
 dependencies:
  - id: uberon
  - id: ro
