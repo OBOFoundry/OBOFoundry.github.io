@@ -32,7 +32,6 @@ Note that the source ontology is a merged OWL file.
 # Browsing
 
 * Default browsing in Ontobee: [http://www.ontobee.org/ontology/ovae](http://www.ontobee.org/ontology/ovae)
-* Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/OVAE](https://bioportal.bioontology.org/ontologies/OVAE)
-* 
+* Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/OVAE](https://bioportal.bioontology.org/ontologies/OVAE)  
 
 
