@@ -1,22 +1,21 @@
 [![Build Status](https://travis-ci.org/OBOFoundry/OBOFoundry.github.io.svg?branch=master)](https://travis-ci.org/OBOFoundry/OBOFoundry.github.io)
 
-Try it out: http://obofoundry.github.io/
-
-## OBO Foundry website BETA
+## OBO Foundry Registry and Website
 
 ### What is this?
 
-This is a proposed new website for the OBO Foundry. It replaces the
-[previous proposal](https://github.com/OBOFoundry/omb), but uses the
-same principles and YAML/RDF structures
+This is the registry and website for the OBO Foundry.
+
+It uses GitHub pages and can be visible here: http://obofoundry.github.io/
+
+We map http:/oobofoundry.org to this address.
 
 ### How does it work?
 
 The source can be found on https://github.com/OBOFoundry/OBOFoundry.github.io
 
 It uses GitHub Pages/[Jekyll](https://en.wikipedia.org/wiki/Jekyll_%28software%29),
-a popular static site generator. I already use this for
-http://uberon.org
+a popular static site generator.
 
 It [integrates nicely with
 github](https://help.github.com/articles/using-jekyll-with-pages/)
@@ -25,6 +24,8 @@ http://obofoundry.github.io (no need to run a dedicated webserver)
 
 At the same time, we are not dependent on github - we could do our own
 static generation, e.g. with a Jenkins job
+
+For more details see: [README-sitedev.md](README-sitedev.md)
 
 ### I have some comments
 
@@ -56,7 +57,7 @@ Please do! Fork and make PR, but beware things are not yet stable
 
 ## Instructions for Registry Curators
 
-**NEW!**: See [this FAQ entry](http://obofoundry.github.io/faq/how-do-i-edit-metadata.html) for simple web-based editing of metadata
+See [this FAQ entry](http://obofoundry.github.io/faq/how-do-i-edit-metadata.html) for simple web-based editing of metadata
 
 Please edit the *source* files in the [ontology/](ontology/) directory only.
 
