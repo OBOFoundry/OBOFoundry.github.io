@@ -39,6 +39,6 @@ See <a href='TechnicalWGMeetings.html'>here</a>
 
 <h1>Contact Us</h1>
 
-The best way to contact the OBO Foundry Technical Working Group is through the <a href='http://code.google.com/p/obo-foundry-operations-committee/issues/list'>issue tracker</a>. Select the Technical group template or the Prefix/domain request template.<br>
+The best way to contact the OBO Foundry Technical Working Group is through the <a href='https://github.com/OBOFoundry/OBOFoundry.github.io/issues'>issue tracker</a>. Select the Technical group template or the Prefix/domain request template.<br>
 <br>
-The mailing list for the OBO Foundry Technical Working Group is <a href='mailto:obo-foundry-editorial-working-group@googlegroups.com'>obo-foundry-editorial-working-group@googlegroups.com</a>. This is currently a closed list, but non-members can post to the list.
+The mailing list for the OBO Foundry Technical Working Group is <a href='mailto:obo-foundry-technical-working-group@googlegroups.com'>obo-foundry-technical-working-group@googlegroups.com</a>. This is currently a closed list, but non-members can post to the list.
