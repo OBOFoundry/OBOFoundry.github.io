@@ -10,6 +10,7 @@ homepage: http://psidev.sf.net
 page: https://rawgit.com/MICommunity/psidev/master/psi/mi/xml/doc/user/index.html
 products:
   - id: mi.owl
+  - id: mi.obo
 title: Molecular interactions
 build:
   source_url: https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mi/rel25/data/psi-mi25.obo
