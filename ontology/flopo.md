@@ -11,6 +11,9 @@ license:
   url: https://creativecommons.org/about/cc0
 products:
   - id: flopo.owl
+build:
+  source_url: https://github.com/flora-phenotype-ontology/flopoontology/raw/master/ontology/flopo.owl
+  method: owl2obo
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
