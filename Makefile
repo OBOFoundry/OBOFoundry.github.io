@@ -108,6 +108,7 @@ valid-purl-report.txt: registry/ontologies.yml
 sparql-consistency-report.txt: registry/ontologies.yml
 	./util/processor.py -i $< sparql-compare > $@.tmp && mv $@.tmp $@
 
+
 # output of central OBO build
 # See FAQ for more details, and also README.md
 jenkins-output.txt:

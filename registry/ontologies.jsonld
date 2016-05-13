@@ -932,12 +932,6 @@
             "tracker": "https://github.com/obophenotype/cell-ontology/issues"
         },
         {
-            "build": {
-                "checkout": "svn --ignore-externals co http://clo-ontology.googlecode.com/svn/trunk/src/ontology",
-                "method": "vcs",
-                "post_processing_command": "owltools --use-catalog clo.owl --merge-imports-closure --ni -o -f obo --no-check clo.obo",
-                "system": "svn"
-            },
             "contact": {
                 "email": "Sirarat.Sarntivijai@fda.hhs.gov",
                 "label": "Sirarat Sarntivijai"
@@ -960,6 +954,11 @@
             "homepage": "http://www.clo-ontology.org",
             "id": "clo",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/clo.owl",
             "products": [
                 {
@@ -1623,6 +1622,10 @@
                 {
                     "id": "exo.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/exo.owl"
+                },
+                {
+                    "id": "exo.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/exo.obo"
                 }
             ],
             "title": "Exposure ontology"
@@ -1864,6 +1867,10 @@
             "title": "Physico-chemical methods and properties"
         },
         {
+            "build": {
+                "method": "owl2obo",
+                "source_url": "https://github.com/flora-phenotype-ontology/flopoontology/raw/master/ontology/flopo.owl"
+            },
             "contact": {
                 "email": "robert.hoehndorf@kaust.edu.sa",
                 "label": "Robert Hoehndorf"
@@ -2515,6 +2522,10 @@
                 {
                     "id": "mi.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/mi.owl"
+                },
+                {
+                    "id": "mi.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mi.obo"
                 }
             ],
             "title": "Molecular interactions"
@@ -2836,12 +2847,13 @@
         {
             "build": {
                 "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/MICommunity/psidev/master/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo"
+                "source_url": "https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master/psi-ms.obo"
             },
             "contact": {
                 "email": "gerhard.mayer@rub.de",
                 "label": "Gerhard Mayer"
             },
+            "createdWith": "http://oboedit.org",
             "dependencies": [
                 {
                     "id": "pato"
@@ -2854,9 +2866,14 @@
             "domain": "MS experiments",
             "homepage": "http://www.psidev.info/groups/controlled-vocabularies",
             "id": "ms",
-            "integration_server": "https://raw.githubusercontent.com/MICommunity/psidev/master/psi/psi-ms/mzML/controlledVocabulary/",
-            "label": "Mass spectrometry ontology",
+            "integration_server": "https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master",
+            "label": "MS",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/3.0/"
+            },
             "mailing_list": "psidev-ms-vocab@lists.sourceforge.net",
             "ontology_purl": "http://purl.obolibrary.org/obo/ms.owl",
             "page": "http://www.psidev.info/groups/controlled-vocabularies",
@@ -2868,6 +2885,12 @@
                 {
                     "id": "ms.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/ms.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/23482073",
+                    "title": "The HUPO proteomics standards initiative- mass spectrometry controlled vocabulary."
                 }
             ],
             "title": "Mass spectrometry ontology"
@@ -3501,6 +3524,12 @@
                 {
                     "id": "poro.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/poro.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "http://dx.doi.org/10.1186/2041-1480-5-39",
+                    "title": "The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy ontology"
                 }
             ],
             "taxon": {

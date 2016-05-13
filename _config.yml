@@ -468,10 +468,7 @@ ontologies:
   termgenie: http://cl.termgenie.org
   title: Cell Ontology
   tracker: https://github.com/obophenotype/cell-ontology/issues
-- build: {checkout: 'svn --ignore-externals co http://clo-ontology.googlecode.com/svn/trunk/src/ontology',
-    method: vcs, post_processing_command: owltools --use-catalog clo.owl --merge-imports-closure
-      --ni -o -f obo --no-check clo.obo, system: svn}
-  contact: {email: Sirarat.Sarntivijai@fda.hhs.gov, label: Sirarat Sarntivijai}
+- contact: {email: Sirarat.Sarntivijai@fda.hhs.gov, label: Sirarat Sarntivijai}
   dependencies:
   - {id: uberon}
   - {id: cl}
@@ -482,6 +479,8 @@ ontologies:
   homepage: http://www.clo-ontology.org
   id: clo
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/clo.owl
   products:
   - {id: clo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/clo.owl'}
@@ -803,6 +802,7 @@ ontologies:
   page: http://ctdbase.org/downloads/#exposures
   products:
   - {id: exo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/exo.owl'}
+  - {id: exo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/exo.obo'}
   title: Exposure ontology
 - build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/microbial_gross_anatomy/fungi/fungal_anatomy.obo'}
   contact: {email: maria@genome.stanford.edu, label: Maria Costanzo}
@@ -909,7 +909,8 @@ ontologies:
   products:
   - {id: fix.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fix.owl'}
   title: Physico-chemical methods and properties
-- contact: {email: robert.hoehndorf@kaust.edu.sa, label: Robert Hoehndorf}
+- build: {method: owl2obo, source_url: 'https://github.com/flora-phenotype-ontology/flopoontology/raw/master/ontology/flopo.owl'}
+  contact: {email: robert.hoehndorf@kaust.edu.sa, label: Robert Hoehndorf}
   description: Traits and phenotypes of flowering plants occurring in digitized Floras
   domain: phenotype
   homepage: https://github.com/flora-phenotype-ontology/flopoontology
@@ -1227,6 +1228,7 @@ ontologies:
   page: https://rawgit.com/MICommunity/psidev/master/psi/mi/xml/doc/user/index.html
   products:
   - {id: mi.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mi.owl'}
+  - {id: mi.obo, ontology_purl: 'http://purl.obolibrary.org/obo/mi.obo'}
   title: Molecular interactions
 - contact: {email: hlapp@drycafe.net, label: Hilamr Lapp}
   description: An application ontology to formalize annotation of phylogenetic data.
@@ -1378,8 +1380,9 @@ ontologies:
   - {id: mro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mro.owl'}
   title: MHC Restriction Ontology
   tracker: https://github.com/IEDB/MRO/issues
-- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/psi-ms/mzML/controlledVocabulary/psi-ms.obo'}
+- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master/psi-ms.obo'}
   contact: {email: gerhard.mayer@rub.de, label: Gerhard Mayer}
+  createdWith: http://oboedit.org
   dependencies:
   - {id: pato}
   - {id: uo}
@@ -1388,15 +1391,20 @@ ontologies:
   domain: MS experiments
   homepage: http://www.psidev.info/groups/controlled-vocabularies
   id: ms
-  integration_server: https://raw.githubusercontent.com/MICommunity/psidev/master/psi/psi-ms/mzML/controlledVocabulary/
-  label: Mass spectrometry ontology
+  integration_server: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master
+  label: MS
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/3.0/'}
   mailing_list: psidev-ms-vocab@lists.sourceforge.net
   ontology_purl: http://purl.obolibrary.org/obo/ms.owl
   page: http://www.psidev.info/groups/controlled-vocabularies
   products:
   - {id: ms.obo, ontology_purl: 'http://purl.obolibrary.org/obo/ms.obo'}
   - {id: ms.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ms.owl'}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/23482073', title: The HUPO proteomics
+      standards initiative- mass spectrometry controlled vocabulary.}
   title: Mass spectrometry ontology
 - browsers:
   - {label: BioPortal, title: BioPortal Ontology Browser, url: 'https://bioportal.bioontology.org/ontologies/NBO'}
@@ -1717,6 +1725,9 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/poro.owl
   products:
   - {id: poro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/poro.owl'}
+  publications:
+  - {id: 'http://dx.doi.org/10.1186/2041-1480-5-39', title: 'The Porifera Ontology
+      (PORO): enhancing sponge systematics with an anatomy ontology'}
   taxon: {id: 'NCBITaxon:6040', label: Porifera}
   title: Porifera Ontology
   tracker: https://github.com/obophenotype/porifera-ontology/issues
