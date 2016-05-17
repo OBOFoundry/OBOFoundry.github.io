@@ -21,7 +21,7 @@ Our meeting minutes are shared on Google Docs. Access is restricted to OFOC memb
 ### 2016
 
 - 2016-05-31 Bjoern
-- 2016-05-17 Simon
+- [2016-05-17 Simon] (https://docs.google.com/document/d/19fwUILqGtrsWq4FnwR03oExIq8m28SCSXE02tpvUi5Q/edit)
 - [2016-05-03 Jie](https://docs.google.com/document/d/1Xu6VejRMuEEfXW8f6vo8r5Nbvllq7M3_6XrSe2lA034/edit#)
 - [2016-04-19 Lynn](https://docs.google.com/document/d/1SvAJFY44HbqvMLNwiK77bo8jc0xU5HPJyLuXHKRpZFg/edit)
 - [2016-04-05 Chris Stoeckert](https://docs.google.com/document/d/1vQxLiHaGjaa_DoOlpsBcT9HNqqJTBpYyRmyFJ0j27pw/edit)
