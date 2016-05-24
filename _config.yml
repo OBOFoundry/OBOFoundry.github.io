@@ -1,7 +1,7 @@
 name: OBO Foundry
 title: The OBO Foundry
 markdown: kramdown
-highlighter: rouge
+pygments: true
 baseurl: /
 imgurl: /images
 author:
@@ -428,19 +428,6 @@ ontologies:
   - {id: chmo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/chmo.owl'}
   title: Chemical Methods Ontology
   tracker: https://github.com/rsc-ontologies/rsc-cmo/issues
-- browsers: null
-  contact: {email: frederic.bastian@unil.ch, label: Frederic Bastian}
-  description: An ontology to capture confidence information about annotations.
-  homepage: https://github.com/BgeeDB/confidence-information-ontology
-  id: cio
-  layout: ontology_detail
-  mailing_list: null
-  ontology_purl: http://purl.obolibrary.org/obo/cio.owl
-  products:
-  - {id: cio.owl, ontology_purl: 'http://purl.obolibrary.org/obo/cio.owl'}
-  - {id: cio.obo, ontology_purl: 'http://purl.obolibrary.org/obo/cio.obo'}
-  title: Confidence Information Ontology
-  tracker: https://github.com/BgeeDB/confidence-information-ontology
 - build: {checkout: 'git clone https://github.com/obophenotype/cell-ontology.git',
     email_cc: cl_edit@googlegroups.com, infallible: 1, method: vcs, system: git}
   canonical: cl.owl
@@ -1004,7 +991,8 @@ ontologies:
   - {id: geo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/geo.owl'}
   title: Geographical Entity Ontology
   tracker: https://ontology.atlassian.net/browse/GEO#selectedTab=com.atlassian.jira.plugin.system.project%3Aissues-panel
-- build: {checkout: 'git clone https://github.com/hymao/hao.git', system: git}
+- build: {checkout: 'svn co http://obo.svn.sourceforge.net/svnroot/obo/ontologies/trunk/HAO',
+    method: vcs, system: svn}
   contact: {email: diapriid@gmail.com, label: Matt Yoder}
   description: A structured controlled vocabulary of the anatomy of the Hymenoptera
     (bees, wasps, and ants)
@@ -1015,8 +1003,6 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/hao.owl
   products:
   - {id: hao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/hao.owl'}
-  - {id: hao.obo, ontology_purl: 'http://purl.obolibrary.org/obo/hao.obo'}
-  - {id: depictions.owl, ontology_purl: 'http://purl.obolibrary.org/obo/depictions.owl'}
   taxon: {id: 'NCBITaxon:7399', label: Hymenoptera}
   title: Hymenoptera Anatomy Ontology
 - build: {checkout: 'git clone https://github.com/BgeeDB/homology-ontology.git', method: vcs,
@@ -2222,21 +2208,13 @@ ontologies:
   products:
   - {id: vt.owl, ontology_purl: 'http://purl.obolibrary.org/obo/vt.owl'}
   title: Vertebrate trait
-- description: Comprehensive hierarchy of extinct and extant vertebrate taxa.
-  id: vto
+- id: vto
   layout: ontology_detail
-  license: {label: CC-0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
-    url: 'http://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/vto.owl
   products:
   - {id: vto.owl, ontology_purl: 'http://purl.obolibrary.org/obo/vto.owl'}
-  - {id: vto.obo, ontology_purl: 'http://purl.obolibrary.org/obo/vto.obo'}
-  redirects:
-  - {match: '', url: 'http://vertebrate-taxonomy-ontology.s3-website-us-west-2.amazonaws.com/releases/'}
   title: Vertebrate Taxonomy Ontology
-  tracker: https://github.com/phenoscape/vertebrate-taxonomy-ontology/issues
-  used_by:
-  - {label: Phenoscape, url: 'http://phenoscape.org'}
+  tracker: http://purl.obolibrary.org/obo/vto/tracker
 - build: {infallible: 1, method: obo2owl, source_url: 'http://github.com/raymond91125/Wao/raw/master/WBbt.obo'}
   contact: {email: raymond@caltech.edu, label: Raymond Lee}
   description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis
