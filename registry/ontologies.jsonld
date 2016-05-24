@@ -847,6 +847,31 @@
             "tracker": "https://github.com/rsc-ontologies/rsc-cmo/issues"
         },
         {
+            "browsers": null,
+            "contact": {
+                "email": "frederic.bastian@unil.ch",
+                "label": "Frederic Bastian"
+            },
+            "description": "An ontology to capture confidence information about annotations.",
+            "homepage": "https://github.com/BgeeDB/confidence-information-ontology",
+            "id": "cio",
+            "layout": "ontology_detail",
+            "mailing_list": null,
+            "ontology_purl": "http://purl.obolibrary.org/obo/cio.owl",
+            "products": [
+                {
+                    "id": "cio.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/cio.owl"
+                },
+                {
+                    "id": "cio.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/cio.obo"
+                }
+            ],
+            "title": "Confidence Information Ontology",
+            "tracker": "https://github.com/BgeeDB/confidence-information-ontology"
+        },
+        {
             "build": {
                 "checkout": "git clone https://github.com/obophenotype/cell-ontology.git",
                 "email_cc": "cl_edit@googlegroups.com",
@@ -2046,9 +2071,8 @@
         },
         {
             "build": {
-                "checkout": "svn co http://obo.svn.sourceforge.net/svnroot/obo/ontologies/trunk/HAO",
-                "method": "vcs",
-                "system": "svn"
+                "checkout": "git clone https://github.com/hymao/hao.git",
+                "system": "git"
             },
             "contact": {
                 "email": "diapriid@gmail.com",
@@ -2064,6 +2088,14 @@
                 {
                     "id": "hao.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/hao.owl"
+                },
+                {
+                    "id": "hao.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/hao.obo"
+                },
+                {
+                    "id": "depictions.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/depictions.owl"
                 }
             ],
             "taxon": {
@@ -4560,17 +4592,39 @@
             "title": "Vertebrate trait"
         },
         {
+            "description": "Comprehensive hierarchy of extinct and extant vertebrate taxa.",
             "id": "vto",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "http://creativecommons.org/publicdomain/zero/1.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/vto.owl",
             "products": [
                 {
                     "id": "vto.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/vto.owl"
+                },
+                {
+                    "id": "vto.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vto.obo"
+                }
+            ],
+            "redirects": [
+                {
+                    "match": "",
+                    "url": "http://vertebrate-taxonomy-ontology.s3-website-us-west-2.amazonaws.com/releases/"
                 }
             ],
             "title": "Vertebrate Taxonomy Ontology",
-            "tracker": "http://purl.obolibrary.org/obo/vto/tracker"
+            "tracker": "https://github.com/phenoscape/vertebrate-taxonomy-ontology/issues",
+            "used_by": [
+                {
+                    "label": "Phenoscape",
+                    "url": "http://phenoscape.org"
+                }
+            ]
         },
         {
             "build": {
