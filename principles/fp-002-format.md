@@ -1,7 +1,7 @@
 ---
 layout: principle
 id: fp-002-format
-title: Format
+title: common format
 ---
 
 ## Principle name
