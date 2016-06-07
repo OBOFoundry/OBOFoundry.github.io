@@ -24,7 +24,7 @@ browsers:
 products:
   - id: chebi.owl
   - id: chebi.obo
-tracker: https://sourceforge.net/p/chebi/curator-requests/
+tracker: https://github.com/ebi-chebi/ChEBI/issues
 ---
 
 A structured classification of chemical compounds of biological relevance.
