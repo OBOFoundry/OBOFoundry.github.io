@@ -1,7 +1,7 @@
 ---
 layout: principle
 id: fp-003-uris
-title: URIs/identifier space
+title: URI/identifier space
 ---
 
 Principle Name
