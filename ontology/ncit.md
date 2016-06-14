@@ -1,6 +1,6 @@
 ---
 layout: ontology_detail
-id: ncithesaurus
+id: ncit
 title: NCI Thesaurus
 contact:
   email: NCICB Support

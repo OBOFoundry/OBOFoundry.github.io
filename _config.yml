@@ -1467,7 +1467,7 @@ ontologies:
   description: an ontology-like vocabulary that includes broad coverage of the cancer
     domain, including cancer related diseases, findings and abnormalities
   homepage: https://cabig.nci.nih.gov/concepts/EVS/
-  id: ncithesaurus
+  id: ncit
   layout: ontology_detail
   title: NCI Thesaurus
   uri_prefix: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#
@@ -2642,9 +2642,9 @@ ontologies:
   title: Maize gross anatomy
 principles:
 - {id: fp-000-summary, layout: principle, title: Overview}
-- {id: fp-001-open, layout: principle, title: Open}
-- {id: fp-002-format, layout: principle, title: Format}
-- {id: fp-003-uris, layout: principle, title: uris}
+- {id: fp-001-open, layout: principle, title: open}
+- {id: fp-002-format, layout: principle, title: common format}
+- {id: fp-003-uris, layout: principle, title: URI/identifier space}
 - {id: fp-004-versioning, layout: principle, title: versioning}
 - {id: fp-005-delineated-content, layout: principle, title: delineated content}
 - {id: fp-006-textual-definitions, layout: principle, title: textual definitions}
