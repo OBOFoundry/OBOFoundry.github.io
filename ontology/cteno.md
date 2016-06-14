@@ -8,7 +8,7 @@ jobs:
 build:
   checkout: git clone https://github.com/obophenotype/ctenophore-ontology.git
   system: git
-  path: src/ontology
+  path: .
   method: vcs
 contact:
   email: cjmungall@lbl.gov
