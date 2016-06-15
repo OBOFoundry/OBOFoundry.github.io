@@ -89,6 +89,9 @@ browsers:
   - label: AmiGO (SUBSET)
     title: Gene Ontology AmiGO 2 Browser
     url: http://amigo.geneontology.org/amigo/term/UBERON:0001062#display-lineage-tab
+  - label: Bgee (gene expression)
+    title: Bgee gene expression queries
+    url: http://bgee.org/?page=gene
 products:
  - id: uberon.owl
    type: owl:Ontology
