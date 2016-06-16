@@ -23,7 +23,7 @@ taxon:
   label: Homo sapiens
 title: Human Disease Ontology
 build:
-  source_url: https://github.com/DiseaseOntology/HumanDiseaseOntology/blob/master/src/ontology/doid-non-classified.obo
+  source_url: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-non-classified.obo
   method: obo2owl
   infallible: 1
 tracker: https://github.com/DiseaseOntology/HumanDiseaseOntology/issues
