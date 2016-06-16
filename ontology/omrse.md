@@ -14,7 +14,7 @@ taxon:
   label: Homo sapiens
 title: Ontology of Medically Related Social Entities
 build:
-  source_url: http://omrse.googlecode.com/svn/trunk/omrse/omrse.owl
+  source_url: https://github.com/ufbmi/OMRSE
   method: owl2obo
 ---
 
