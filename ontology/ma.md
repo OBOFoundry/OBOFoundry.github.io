@@ -18,6 +18,7 @@ build:
   source_url: ftp://ftp.informatics.jax.org/pub/reports/adult_mouse_anatomy.obo
   method: obo2owl
   infallible: 1
+  insert_ontology_id: true
 tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
 used_by:
  - url: https://www.biosharing.org/biodbcore-000659
