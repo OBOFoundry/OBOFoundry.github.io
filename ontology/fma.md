@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: fma
 contact:
-  email: mejino@comcast.net
+  email:mejino@u.washington.edu
   label: Onard Mejino
 description: This is currently a slimmed down version of FMA
 domain: anatomy
