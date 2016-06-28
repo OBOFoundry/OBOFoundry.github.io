@@ -20,8 +20,7 @@ Our meeting minutes are shared on Google Docs. Access is restricted to OFOC memb
 
 ### 2016
 - 2016-07-12 Bjoern
-- 2016-06-28 philippe
-- 2016-06-14 Jie
+- 2016-06-28 Jie
 - [2016-05-31 Bjoern](https://docs.google.com/document/d/143CHoY6iUI5oLRanOS9H9P5pYD30w5XHC7JA-YaN8OI/edit)
 - [2016-05-17 Simon](https://docs.google.com/document/d/19fwUILqGtrsWq4FnwR03oExIq8m28SCSXE02tpvUi5Q/edit)
 - [2016-05-03 Jie](https://docs.google.com/document/d/1Xu6VejRMuEEfXW8f6vo8r5Nbvllq7M3_6XrSe2lA034/edit)
