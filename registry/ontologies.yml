@@ -22,7 +22,7 @@ ontologies:
 - DO wiki: http://diseaseontology.sourceforge.net/
   browsers:
   - {label: DO, title: DO Browser, url: 'http://www.disease-ontology.org/'}
-  build: {infallible: 1, method: obo2owl, source_url: 'https://github.com/DiseaseOntology/HumanDiseaseOntology/blob/master/src/ontology/doid-non-classified.obo'}
+  build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-non-classified.obo'}
   contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
   description: An ontology for describing the classification of human diseases organized
     by etiology.
@@ -252,6 +252,32 @@ ontologies:
   products:
   - {id: aero.owl, ontology_purl: 'http://purl.obolibrary.org/obo/aero.owl'}
   title: Adverse Event Reporting Ontology
+- build: {checkout: 'git clone  https://github.com/AgriculturalSemantics/agro.git',
+    infallible: 1, method: vcs, path: ., system: git}
+  contact: {email: c.aubert@cgiar.org, github: celineaubert, label: Celine Aubert}
+  dependencies:
+  - {id: envo}
+  - {id: uo}
+  - {id: ro}
+  - {id: pato}
+  - {id: chebi}
+  - {id: iao}
+  description: Ontology of agronomic practices, agronomic techniques, and agronomic
+    variables used in agronomic experiments
+  domain: agronomy
+  homepage: https://github.com/AgriculturalSemantics/agro
+  id: agro
+  jobs:
+  - {id: 'https://travis-ci.org/AgriculturalSemantics/agro', type: travis-ci}
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  mailing_list: https://groups.google.com/group/agronomyOntology
+  ontology_purl: http://purl.obolibrary.org/obo/agro.owl
+  products:
+  - {id: agro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/agro.owl'}
+  title: Agronomy Ontology
+  tracker: https://github.com/AgriculturalSemantics/agro/issues/
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/obophenotype/ascomycete-phenotype-ontology/master/apo.obo'}
   contact: {email: maria@genome.stanford.edu, label: Maria Costanza}
   description: A structured controlled vocabulary for the phenotypes of Ascomycete
@@ -516,7 +542,7 @@ ontologies:
       and new applications.'}
   title: Clinical measurement ontology
 - build: {checkout: 'git clone https://github.com/obophenotype/ctenophore-ontology.git',
-    method: vcs, path: src/ontology, system: git}
+    method: vcs, path: ., system: git}
   contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
   dependencies:
   - {id: uberon}
@@ -939,7 +965,7 @@ ontologies:
   title: Influenza Ontology
   tracker: http://purl.obolibrary.org/obo/flu/tracker
 - build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo'}
-  contact: {email: mejino@comcast.net, label: Onard Mejino}
+  contact: {email: mejino@u.washington.edu, label: Onard Mejino}
   description: This is currently a slimmed down version of FMA
   domain: anatomy
   homepage: http://sig.biostr.washington.edu/projects/fm/index.html
@@ -1139,7 +1165,7 @@ ontologies:
   products:
   - {id: kisao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/kisao.owl'}
   title: Kinetic Simulation Algorithm Ontology
-- build: {infallible: 1, method: obo2owl, source_url: 'ftp://ftp.informatics.jax.org/pub/reports/adult_mouse_anatomy.obo'}
+- build: {infallible: 1, insert_ontology_id: true, method: obo2owl, source_url: 'ftp://ftp.informatics.jax.org/pub/reports/adult_mouse_anatomy.obo'}
   contact: {email: Terry.Hayamizu@jax.org, label: Terry Hayamizu}
   description: A structured controlled vocabulary of the adult anatomy of the mouse
     (Mus).
@@ -2070,6 +2096,7 @@ ontologies:
   browsers:
   - {label: RGD, title: Gene Ontology AmiGO 2 Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=UBERON:0001062'}
   - {label: AmiGO (SUBSET), title: Gene Ontology AmiGO 2 Browser, url: 'http://amigo.geneontology.org/amigo/term/UBERON:0001062#display-lineage-tab'}
+  - {label: Bgee (gene expression), title: Bgee gene expression queries, url: 'http://bgee.org/?page=gene'}
   build: {checkout: 'svn --ignore-externals co http://svn.code.sf.net/p/obo/svn/uberon/trunk',
     email_cc: cjmungall@lbl.gov, infallible: 1, method: vcs, system: svn}
   canonical: uberon.owl
