@@ -8,7 +8,7 @@ description: Traits and phenotypes of flowering plants occurring in digitized Fl
 domain: phenotype
 homepage: https://github.com/flora-phenotype-ontology/flopoontology
 license:
-  url: https://creativecommons.org/about/cc0
+  url: https://creativecommons.org/publicdomain/zero/1.0/
 products:
   - id: flopo.owl
 build:
