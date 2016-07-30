@@ -1034,6 +1034,10 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <https://github.com/pato-ontology/pato/> .
 
+<http://purl.obolibrary.org/obo/cmo.obo>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/cmo.obo" .
+
 <http://purl.obolibrary.org/obo/mod>
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/method>
@@ -1060,9 +1064,14 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://www.psidev.info/MOD> .
 
-<http://purl.obolibrary.org/obo/cmo.obo>
+<http://purl.obolibrary.org/obo/uberon/ext.owl>
+        a       <http://www.w3.org/2002/07/owl#Ontology> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "Uberon extended" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Uberon edition that includes subsets of other ontologies and axioms connecting to them" ;
         <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/cmo.obo" .
+                "http://purl.obolibrary.org/obo/uberon/ext.owl" .
 
 <http://purl.obolibrary.org/obo/gaz.obo>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -1073,15 +1082,6 @@
                 "OBO Format version of Main release" ;
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ncbitaxon.obo" .
-
-<http://purl.obolibrary.org/obo/uberon/ext.owl>
-        a       <http://www.w3.org/2002/07/owl#Ontology> ;
-        <http://purl.org/dc/elements/1.1/description>
-                "Uberon extended" ;
-        <http://purl.org/dc/elements/1.1/title>
-                "Uberon edition that includes subsets of other ontologies and axioms connecting to them" ;
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/uberon/ext.owl" .
 
 <http://creativecommons.org/publicdomain/zero/1.0/>
         <http://www.w3.org/2000/01/rdf-schema#label>
@@ -2020,10 +2020,6 @@
         <http://xmlns.com/foaf/0.1/page>
                 <https://github.com/obophenotype/developmental-stage-ontologies> .
 
-<http://purl.obolibrary.org/obo/bco.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/bco.owl" .
-
 <http://purl.obolibrary.org/obo/flu>
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/method>
@@ -2049,6 +2045,10 @@
                 <http://purl.obolibrary.org/obo/flu.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://purl.obolibrary.org/obo/flu/> .
+
+<http://purl.obolibrary.org/obo/bco.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/bco.owl" .
 
 <http://purl.obolibrary.org/obo/to.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -2470,6 +2470,10 @@
         <http://purl.org/dc/elements/1.1/title>
                 "Gene Ontology AmiGO 2 Browser" .
 
+<http://purl.obolibrary.org/obo/foodon.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/foodon.owl" .
+
 <http://purl.obolibrary.org/obo/opl.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/opl.owl" .
@@ -2758,6 +2762,12 @@
 <http://www.ncbi.nlm.nih.gov/pubmed/24103152>
         <http://purl.org/dc/elements/1.1/title>
                 "The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications." .
+
+<http://purl.obolibrary.org/obo/foodon.obo>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/foodon.obo" ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <http://foodontology.github.io/foodon/> .
 
 <http://purl.obolibrary.org/obo/oba.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -3906,7 +3916,7 @@
                           "cjmungall@lbl.gov"
                 ] ;
         <http://www.w3.org/ns/dcat#distribution>
-                <http://purl.obolibrary.org/obo/uberon/ext.owl> , <http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl> , <http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-zfa.owl> , <http://purl.obolibrary.org/obo/uberon.owl> , <http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl> , <http://purl.obolibrary.org/obo/uberon/basic.obo> , <http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-ma.owl> ;
+                <http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-ma.owl> , <http://purl.obolibrary.org/obo/uberon/ext.owl> , <http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl> , <http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-zfa.owl> , <http://purl.obolibrary.org/obo/uberon.owl> , <http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl> , <http://purl.obolibrary.org/obo/uberon/basic.obo> ;
         <http://xmlns.com/foaf/0.1/account>
                 <http://purl.obolibrary.org/obo/+UberonOrg> , <http://purl.obolibrary.org/obo/uberanat> ;
         <http://xmlns.com/foaf/0.1/homepage>
@@ -4004,13 +4014,13 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <https://github.com/obophenotype/human-developmental-anatomy-ontology/> .
 
-<http://www.ncbi.nlm.nih.gov/pubmed/24568621>
-        <http://purl.org/dc/elements/1.1/title>
-                "The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio." .
-
 <http://purl.obolibrary.org/obo/NCBITaxon_6358>
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Platynereis" .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/24568621>
+        <http://purl.org/dc/elements/1.1/title>
+                "The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio." .
 
 <http://purl.obolibrary.org/obo/vto.obo>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -4342,7 +4352,7 @@
         <http://purl.org/dc/elements/1.1/title>
                 "Flora Phenotype Ontology" ;
         <http://purl.org/dc/terms/1.1/license>
-                <https://creativecommons.org/about/cc0> ;
+                <https://creativecommons.org/publicdomain/zero/1.0/> ;
         <http://purl.org/dc/terms/1.1/theme>
                 "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>
@@ -4402,10 +4412,6 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/pato.owl" .
 
-<http://purl.obolibrary.org/obo/fbsp.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/fbsp.owl" .
-
 <http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl>
         a       <http://purl.obolibrary.org/obo/MergedOntology> ;
         <http://purl.obolibrary.org/obo/IAO_0000136>
@@ -4416,6 +4422,38 @@
                 "http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl" ;
         <http://xmlns.com/foaf/0.1/page>
                 <https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies> .
+
+<http://purl.obolibrary.org/obo/fbsp.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/fbsp.owl" .
+
+<http://purl.obolibrary.org/obo/foodon>
+        <http://obofoundry.github.io/vocabulary/depends_on>
+                <http://purl.obolibrary.org/obo/uberon> , <http://purl.obolibrary.org/obo/chebi> , <http://purl.obolibrary.org/obo/bfo> , <http://purl.obolibrary.org/obo/ro> , <http://purl.obolibrary.org/obo/envo> , <http://purl.obolibrary.org/obo/ncbitaxon> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "A broadly scoped ontology representing entities which bear a “food role”.  It encompasses materials in natural ecosystems and food webs as well as human-centric categorization and handling of food." ;
+        <http://purl.org/dc/elements/1.1/title>
+                "FOODON" ;
+        <http://purl.org/dc/terms/1.1/license>
+                <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/theme>
+                "food" ;
+        <http://usefulinc.com/ns/doap#bug-database>
+                "https://github.com/FoodOntology/foodon/issues/" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/foodon.owl" ;
+        <http://www.w3.org/ns/dcat#contactPoint>
+                [ <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Damion Dooley" ;
+                  <http://xmlns.com/foaf/0.1/mbox>
+                          "damion.dooley@bccdc.ca"
+                ] ;
+        <http://www.w3.org/ns/dcat#distribution>
+                <http://purl.obolibrary.org/obo/foodon.obo> , <http://purl.obolibrary.org/obo/foodon.owl> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <http://foodontology.github.io/foodon/> ;
+        <http://xmlns.com/foaf/0.1/page>
+                <https://github.com/FoodOntology/foodon/> .
 
 <http://purl.obolibrary.org/obo/nmr.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -4710,16 +4748,6 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://sourceforge.net/p/mamo-ontology/wiki/Home/> .
 
-<http://purl.obolibrary.org/obo/mat>
-        <http://purl.org/dc/elements/1.1/title>
-                "Minimal anatomical terminology" ;
-        <http://www.w3.org/ns/dcat#contactPoint>
-                [ <http://www.w3.org/2000/01/rdf-schema#label>
-                          "j.bard@ed.ac.uk" ;
-                  <http://xmlns.com/foaf/0.1/mbox>
-                          "Jonathan Bard"
-                ] .
-
 <http://purl.obolibrary.org/obo/ato>
         <http://purl.obolibrary.org/obo/IAO_0000136>
                 <http://purl.obolibrary.org/obo/NCBITaxon_8292> ;
@@ -4733,6 +4761,16 @@
                 ] ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://www.amphibanat.org> .
+
+<http://purl.obolibrary.org/obo/mat>
+        <http://purl.org/dc/elements/1.1/title>
+                "Minimal anatomical terminology" ;
+        <http://www.w3.org/ns/dcat#contactPoint>
+                [ <http://www.w3.org/2000/01/rdf-schema#label>
+                          "j.bard@ed.ac.uk" ;
+                  <http://xmlns.com/foaf/0.1/mbox>
+                          "Jonathan Bard"
+                ] .
 
 <http://purl.obolibrary.org/obo/vario>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -4977,6 +5015,9 @@
 <http://purl.obolibrary.org/obo/fma.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/fma.owl" .
+
+<https://creativecommons.org/publicdomain/zero/1.0/>
+        <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png> .
 
 <http://purl.obolibrary.org/obo/ro.owl>
         <http://purl.org/dc/elements/1.1/description>
@@ -5354,6 +5395,10 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://www.disease-ontology.org> .
 
+<http://purl.obolibrary.org/obo/fbdv.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/fbdv.owl" .
+
 <http://purl.obolibrary.org/obo/taxrank>
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/checkout>
@@ -5381,6 +5426,10 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <https://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary> .
 
+<http://purl.obolibrary.org/obo/NCBITaxon_6605>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Cephalopod" .
+
 <http://purl.obolibrary.org/obo/uberon.owl>
         a       <http://www.w3.org/2002/07/owl#Ontology> ;
         <http://purl.org/dc/elements/1.1/description>
@@ -5389,10 +5438,6 @@
                 "Uberon" ;
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/uberon.owl" .
-
-<http://purl.obolibrary.org/obo/NCBITaxon_6605>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Cephalopod" .
 
 <http://purl.obolibrary.org/obo/tao>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -5407,6 +5452,8 @@
                 "Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa" ;
         <http://purl.org/dc/elements/1.1/title>
                 "Teleost Anatomy Ontology" ;
+        <http://purl.org/dc/terms/1.1/license>
+                <http://creativecommons.org/publicdomain/zero/1.0/> ;
         <http://purl.org/dc/terms/1.1/theme>
                 "anatomy" ;
         <http://usefulinc.com/ns/doap#bug-database>
@@ -5421,10 +5468,6 @@
                 <http://purl.obolibrary.org/obo/tao.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology> .
-
-<http://purl.obolibrary.org/obo/fbdv.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/fbdv.owl" .
 
 <http://purl.obolibrary.org/obo/ro.obo>
         <http://purl.org/dc/elements/1.1/description>

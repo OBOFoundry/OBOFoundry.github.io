@@ -1609,7 +1609,41 @@
                 }
             ],
             "title": "Environment Ontology",
-            "tracker": "https://github.com/EnvironmentOntology/envo/issues/"
+            "tracker": "https://github.com/EnvironmentOntology/envo/issues/",
+            "usages": [
+                {
+                    "description": "describing species habitats",
+                    "examples": {
+                        "url": "http://eol.org/pages/211700/data"
+                    },
+                    "resources": {
+                        "label": "EOL",
+                        "url": "http://eol.org"
+                    },
+                    "type": "data-annotation"
+                },
+                {
+                    "datasets": {
+                        "url": "https://s3.amazonaws.com/globi/snapshot/target/data/taxa/interactions.csv.gz"
+                    },
+                    "description": "describing stomach contents",
+                    "resources": {
+                        "label": "GloBI",
+                        "url": "http://globalbioticinteractions.org"
+                    },
+                    "type": "data-annotation"
+                },
+                {
+                    "description": "annotating datasets in data repositories",
+                    "resources": {
+                        "label": "Nature Scientific Data",
+                        "url": "http://www.nature.com/sdata/"
+                    },
+                    "search": "http://scientificdata.isa-explorer.org/",
+                    "seeAlso": "http://blogs.nature.com/scientificdata/2015/12/17/isa-explorer/",
+                    "type": "dataset-description"
+                }
+            ]
         },
         {
             "build": {
@@ -1966,7 +2000,8 @@
             "id": "flopo",
             "layout": "ontology_detail",
             "license": {
-                "url": "https://creativecommons.org/about/cc0"
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/flopo.owl",
             "products": [
@@ -2046,6 +2081,57 @@
             },
             "title": "Foundational Model of Anatomy (subset)",
             "tracker": "https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/"
+        },
+        {
+            "contact": {
+                "email": "damion.dooley@bccdc.ca",
+                "label": "Damion Dooley"
+            },
+            "dependencies": [
+                {
+                    "id": "uberon"
+                },
+                {
+                    "id": "ro"
+                },
+                {
+                    "id": "chebi"
+                },
+                {
+                    "id": "ncbitaxon"
+                },
+                {
+                    "id": "bfo"
+                },
+                {
+                    "id": "envo"
+                }
+            ],
+            "description": "A broadly scoped ontology representing entities which bear a \u201cfood role\u201d.  It encompasses materials in natural ecosystems and food webs as well as human-centric categorization and handling of food.",
+            "domain": "food",
+            "homepage": "http://foodontology.github.io/foodon/",
+            "id": "foodon",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/foodon.owl",
+            "page": "https://github.com/FoodOntology/foodon/",
+            "products": [
+                {
+                    "id": "foodon.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/foodon.owl"
+                },
+                {
+                    "homepage": "http://foodontology.github.io/foodon/",
+                    "id": "foodon.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/foodon.obo"
+                }
+            ],
+            "title": "FOODON",
+            "tracker": "https://github.com/FoodOntology/foodon/issues/"
         },
         {
             "build": {
@@ -5403,6 +5489,11 @@
             "id": "tao",
             "is_obsolete": true,
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "http://creativecommons.org/publicdomain/zero/1.0/"
+            },
             "products": [
                 {
                     "id": "tao.owl",
