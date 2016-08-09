@@ -13,6 +13,7 @@ title: Systems Biology
 build:
   source_url: http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo
   method: obo2owl
+  insert_ontology_id: true
 tracker: https://sourceforge.net/p/sbo/term-request/
 license:
   url: http://opensource.org/licenses/Artistic-2.0
