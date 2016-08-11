@@ -2198,6 +2198,50 @@
         },
         {
             "contact": {
+                "email": "damion.dooley@bccdc.ca",
+                "label": "Damion Dooley"
+            },
+            "dependencies": [
+                {
+                    "id": "uberon"
+                },
+                {
+                    "id": "pco"
+                },
+                {
+                    "id": "ro"
+                },
+                {
+                    "id": "chebi"
+                },
+                {
+                    "id": "ncbitaxon"
+                }
+            ],
+            "description": "The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary to identify, document and research foodborne pathogens and associated outbreaks.",
+            "domain": "health",
+            "homepage": "http://genepio.github.io/genepio/",
+            "id": "genepio",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/genepio.owl",
+            "page": "https://github.com/GenEpiO/genepio",
+            "products": [
+                {
+                    "homepage": "http://genepio.github.io/genepio/",
+                    "id": "genepio.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/genepio.owl"
+                }
+            ],
+            "title": "Genomic Epidemiology Ontology",
+            "tracker": "https://github.com/GenEpiO/genepio/issues/"
+        },
+        {
+            "contact": {
                 "email": "MBrochhausen@uams.edu",
                 "label": "Mathias Brochhausen"
             },
@@ -3957,6 +4001,7 @@
         },
         {
             "build": {
+                "insert_ontology_id": true,
                 "method": "obo2owl",
                 "source_url": "http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo"
             },
