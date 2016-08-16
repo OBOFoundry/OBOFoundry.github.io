@@ -4957,6 +4957,43 @@
         },
         {
             "build": {
+                "method": "obo2owl",
+                "source_url": "https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.obo"
+            },
+            "contact": {
+                "email": "ybradford@zfin.org",
+                "label": "Yvonne Bradford"
+            },
+            "description": "Experimental conditions applied to zebrafish, developed to facilitate experiment condition annotation at ZFIN",
+            "domain": "environment",
+            "homepage": "https://github.com/ybradford/zebrafish-experimental-conditions-ontology",
+            "id": "zeco",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/zeco.owl",
+            "products": [
+                {
+                    "id": "zeco.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/zeco.obo"
+                },
+                {
+                    "id": "zeco.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/zeco.owl"
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:7954",
+                "label": "Danio"
+            },
+            "title": "Zebrafish Experimental Conditions Ontology",
+            "tracker": "https://github.com/ybradford/zebrafish-experimental-conditions-ontology/issues"
+        },
+        {
+            "build": {
                 "infallible": 1,
                 "method": "obo2owl",
                 "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/zfs/zfs.obo"
