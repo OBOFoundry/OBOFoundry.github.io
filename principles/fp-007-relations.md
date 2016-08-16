@@ -1,13 +1,8 @@
 ---
 layout: principle
 id: fp-007-relations
-title: relations
+title: Relations
 ---
-
-Principle Name
---------------
-
-relations
 
 Details
 -------

@@ -1,13 +1,8 @@
 ---
 layout: principle
 id: fp-005-delineated-content
-title: delineated content
+title: Clearly Delineated Content
 ---
-
-Principle Name
---------------
-
-clearly delineated content
 
 Details
 -------

@@ -1,13 +1,8 @@
 ---
 layout: principle
 id: fp-016-maintenance
-title: maintenance
+title: Maintenance
 ---
-
-Principle Name
---------------
-
-maintenance in light of scientific advance
 
 Details
 -------

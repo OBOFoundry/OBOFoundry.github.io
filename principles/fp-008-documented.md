@@ -1,13 +1,8 @@
 ---
 layout: principle
 id: fp-008-documented
-title: documented
+title: Documented
 ---
-
-Principle Name
---------------
-
-documented
 
 Details
 -------
@@ -32,7 +27,7 @@ documentation for individual representational unit annotation
 documentation about the textual definition: is it manually created or generated with software assistance by relying on patterns and class axioms.	
 
 * _User documentation:_
-A documentation detailing the ontology’s raison d'etre, its coverage, the use cases and query cases (including translation into  SPARQL queries) it is intended to support
+A documentation detailing the ontology's raison d'etre, its coverage, the use cases and query cases (including translation into  SPARQL queries) it is intended to support
 documentation about how to access the resource
 documentation about how to produce semantic web document compatible with the representation intended by the developers (OWL examples, OWL coding patterns)
  * availability of peer-reviewed publication about the resource

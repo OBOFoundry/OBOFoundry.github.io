@@ -1,13 +1,8 @@
 ---
 layout: principle
 id: fp-012-naming-conventions
-title: naming conventions
+title: Naming Conventions
 ---
-
-Principle Name
---------------
-
-naming conventions
 
 Details
 -------

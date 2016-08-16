@@ -1,13 +1,8 @@
 ---
 layout: principle
 id: fp-004-versioning
-title: versioning
+title: Versioning
 ---
-
-Principle Name
---------------
-
-versioning
 
 Details
 -------

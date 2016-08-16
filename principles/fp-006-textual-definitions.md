@@ -1,13 +1,8 @@
 ---
 layout: principle
 id: fp-006-textual-definitions
-title: textual definitions
+title: Textual Definitions
 ---
-
-Principle Name
---------------
-
-textual definitions
 
 Details
 -------

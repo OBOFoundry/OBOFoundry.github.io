@@ -1,12 +1,8 @@
 ---
 layout: principle
 id: fp-011-locus-of-authority
-title: locus of authority / contact person
+title: Locus of Authority
 ---
-
-## Principle Name
-
-contact person
 
 ## Summary
 There should be a single person who is responsible for communications between the 
