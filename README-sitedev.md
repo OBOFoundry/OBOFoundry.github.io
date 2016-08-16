@@ -42,7 +42,7 @@ should never touch).
 Jekyll uses a templating system called liquid. The basic idea is
 simple, templating commands are contained within braces '{ }'.
 
-Pages can have different layouts - see the [_layout/](_layout/)
+Pages can have different layouts - see the [_layouts/](_layouts/)
 directory. They can also include templates from the
 [_includes/](_includes/) directory.
 
