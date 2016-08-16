@@ -32,7 +32,6 @@ Current activities are focused on creating guidelines for reviews. Once those gu
 
 # Members #
 (in alphabetical order)<br>
-members, please fill in names and links<br>
 <br>
 Melissa Haendel<br>
 <br>
@@ -44,9 +43,11 @@ Philippe Rocca-Serra<br>
 <br>
 Alan Ruttenberg<br>
 <br>
+Lynn Schriml<br>
+<br>
 Chris Stoeckert<br>
 <br>
-<a href='http://www.nybg.org/science/scientist_profile.php?id_scientist=119'>Ramona Walls</a>, New York Botanical Garden, Bronx, NY, USA<br>
+Ramona Walls<br>
 
 Membership in the OBO Foundry Editorial WG is open to all members of the OBO Foundry Operations Committee who are willing to actively participate. If you are interested in joining the working group, send an email to the mailing list.<br>
 <br>
