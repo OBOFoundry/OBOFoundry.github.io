@@ -4,10 +4,6 @@ id: fp-001-open
 title: open
 ---
 
-## Principle Name
-
-open
-
 ## Summary
 
 The ontology MUST be openly available to be used by all without any constraint other than (a) its origin must be acknowledged and (b) it is not to be altered and subsequently redistributed in altered form under the original name or with the same identifiers.
