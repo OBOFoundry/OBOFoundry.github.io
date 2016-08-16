@@ -11,13 +11,13 @@ This page describes members and activities of the OBO Foundry Editorial Working 
 
 # Details #
 
-From the [MissionStatement](/docs/MissionStatement.html): OBO Foundry Editorial WG is involved in reviewing OBO Foundry ontologies and policy setting. Primary tasks are to conduct reviews, but also include all activities that enable that process, such as tool building for automated validation, website maintenance of the review results, or leading calls and taking notes.
+The primary task of the Editorial WG is to facilitate the review of candidate OBO Foundry ontologies. This includes developing the principles against which ontologies are reviewed, developing the review process itself, conducting the reviews, and setting policies governing the process.
 
 ## Scope ##
 The OBO Foundry Editorial WG will:
-  * create guidelines for ontology review process (how we do reviews, operationally)
-  * create policies for ontology review criteria (what aspects of an ontology and which ontologies we should review)
-  * manage the ontology review process
+  <li> create guidelines for ontology review process (how we do reviews, operationally)
+  <li> create policies for ontology review criteria (what aspects of an ontology and which ontologies we should review)
+  <li> manage the ontology review process
 
 Current activities are focused on creating guidelines for reviews. Once those guidelines are in place, the working group will shift its focus to carrying out the review process, with an aim of reducing the backlog of ontologies awaiting review.
 
