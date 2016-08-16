@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{{ }}
+
 {% include navbar.html %}
 <div class="content">    
 
@@ -33,7 +33,7 @@ layout: default
           <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/principles/{{page.id}}.md">
             <button type="button" 
                     data-toggle="tooltip" 
-                    title="See FAQ entry: How is metadata stored?" 
+                    title="See FAQ entry: How I do propose edits to principles?" 
                     html="true"
                     class="btn btn-default">
               View
@@ -43,14 +43,16 @@ layout: default
 
             <button type="button" 
                     data-toggle="tooltip" 
-                    title="See FAQ entry: How I do edit my metadata?" 
+                    title="See FAQ entry: How I do propose edits to principles?" 
                     html="true"
                     class="btn btn-default">
               Edit</button>
           </a>
           <!-- <button type="button" class="btn btn-default">Help</button> -->
         </div>
-
+        <div>
+          This page is generated via <a href="{{site.repo_src}}_layouts/principle.html">_layouts/principle.html</a>. See <a href="{{site.baseurl}}faq/how-do-i-edit-content.html">edit guide</a>
+        </div>
 
       </div>
       <div class="col-md-9">

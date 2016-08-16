@@ -8,7 +8,7 @@ This is the registry and website for the OBO Foundry.
 
 It uses GitHub pages and can be visible here: http://obofoundry.github.io/
 
-We map http:/oobofoundry.org to this address.
+We map http://obofoundry.org to this address.
 
 ### How does it work?
 
