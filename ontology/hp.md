@@ -7,7 +7,7 @@ domain: phenotype
 twitter: hp_ontology
 homepage: http://www.human-phenotype-ontology.org/
 contact:
-  email: sebastian.koehler@charite.de
+  email: dr.sebastian.koehler@gmail.com
   label: Sebastian Koehler
 products:
   - id: hp.owl
@@ -42,10 +42,11 @@ publications:
     title: "The Human Phenotype Ontology project: linking molecular biology and disease through phenotype data."
 ---
 
-<img src="http://www.human-phenotype-ontology.org/contao/tl_files/simplifyblue/images/HPO-logo.png"/>
+<img src="http://human-phenotype-ontology.github.io/img/placeholder.jpg"/>
 
 The Human Phenotype Ontology is being developed to provide a structured and controlled vocabulary for the phenotypic features encountered in human hereditary and other disease. Our goal is to provide resource for the computational analysis of the human phenome, with a current focus on monogenic diseases listed in the Online Mendelian Inheritance in Man (OMIM) database, for which annotations are also provided.
 
 The HPO can be browsed using:
 
  * [HPO Browser](http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118)
+ * [Monarch Browser](https://monarchinitiative.org/phenotype/HP:0000118)
