@@ -29,8 +29,8 @@ products:
   - id: po.owl
   - id: po.obo
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4.0
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
