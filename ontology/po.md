@@ -16,8 +16,8 @@ contact:
   label: Pankaj Jaiswal
 description: "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data."
 domain: anatomy and development
-homepage: http://www.plantontology.org
-page: http://www.plantontology.org/amigo/go.cgi
+homepage: http://www.planteome.org
+page: https://github.com/Planteome/plant-ontology
 twitter: planteome
 tracker: https://github.com/Planteome/plant-ontology/issues
 publications:
