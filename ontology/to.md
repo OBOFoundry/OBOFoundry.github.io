@@ -7,7 +7,7 @@ contact:
 description: A controlled vocabulary of describe phenotypic traits in plants.
 domain: phenotype
 homepage: http://planteome.org
-page: http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=TO:0000387&session_id=815amigo1442021959
+page: http://browser.planteome.org/amigo/term/TO:0000387#display-lineage-tab
 products:
   - id: to.owl
   - id: to.obo
@@ -21,7 +21,7 @@ title: Plant Trait Ontology
 browsers:
  - label: Planteome
    title: Planteome browser
-   url: http://dev.planteome.org/amigo/term/TO:0000387b
+   url: http://planteome.org/amigo/term/TO:0000387
 jobs:
   - id: https://travis-ci.org/Planteome/plant-trait-ontology
     type: travis-ci
