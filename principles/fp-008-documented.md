@@ -1,12 +1,19 @@
 ---
 layout: principle
 id: fp-008-documented
-title: Documented
+title: Documentation
 ---
 
-Details
+
+NOTE
 -------
-The owners of the ontology should strive to provide as much documentation as possible. The documentation should detail the different processes specific to an ontology life cycle and target various audiences (users or developers). Central to the issue of ontology documentation is ensuring transparency and traceability of artefact development. For each of the development steps, clear procedures should be made available. Documentation availability will be used to assess the quality of the resource. The following itemized list provides a core checklist, distinguishing  general ontology documentation (general information about the resource) and local ontology documentation (documentation at artefact level itself and representational unit level (class and relations)). Documentation assessment with the purpose of assessing Ontology soundness, will cover updates and revision to the documentation. As ontology evolve, so should the documentation, for example by including a release documentation file.
+The wording of this principle is still in progress, with some issues still to be addressed (see Issues To Be Addressed below).
+
+Summary
+-------
+The owners of the ontology should strive to provide as much documentation as possible. The documentation should detail the different processes specific to an ontology life cycle and target various audiences (users or developers).
+
+Purpose: Central to the issue of ontology documentation is ensuring transparency and traceability of artefact development. For each of the development steps, clear procedures should be made available. Documentation availability will be used to assess the quality of the resource. The following itemized list provides a core checklist, distinguishing  general ontology documentation (general information about the resource) and local ontology documentation (documentation at artefact level itself and representational unit level (class and relations)). Documentation assessment with the purpose of assessing Ontology soundness, will cover updates and revision to the documentation. As ontology evolve, so should the documentation, for example by including a release documentation file.
 
 
 Examples
@@ -52,6 +59,16 @@ documentation about how to produce semantic web document compatible with the rep
  * documentation about conflict resolution
  * a documentation detailing the use of software agent devised or exploited to develop, maintain, enhance, perform quality control and ensure high availability of the resource
  * documentation about how the ontology is being used
+
+
+Issues To Be Addressed (partial list):
+-------
+1. What minimal metadata is needed?
+
+2. What minimal documentation is needed?
+
+3. Clarification of the role of publications
+
 
 
 the ontology is well-documented (e.g. in a published paper describing the ontology or in manuals for developers and users)
