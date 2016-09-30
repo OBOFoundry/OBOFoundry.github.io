@@ -4,7 +4,7 @@ id: swo
 contact:
   email: parkinson@ebi.ac.uk
   label: Helen Parkinson
-homepage: www.ebi.ac.uk/efo/swo
+homepage: http://www.ebi.ac.uk/efo/swo
 products:
   - id: swo.owl
 title: Software ontology
