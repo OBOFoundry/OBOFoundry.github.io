@@ -154,16 +154,16 @@ ontologies:
     that links plant anatomy, morphology and growth and development to plant genomics
     data.
   domain: anatomy and development
-  homepage: http://www.plantontology.org
+  homepage: http://www.planteome.org
   id: po
   in_foundry_order: 1
   jobs:
   - {id: 'https://travis-ci.org/Planteome/plant-ontology', type: travis-ci}
   layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/po.owl
-  page: http://www.plantontology.org/amigo/go.cgi
+  page: https://github.com/Planteome/plant-ontology
   products:
   - {id: po.owl, ontology_purl: 'http://purl.obolibrary.org/obo/po.owl'}
   - {id: po.obo, ontology_purl: 'http://purl.obolibrary.org/obo/po.obo'}
@@ -191,7 +191,10 @@ ontologies:
     url: 'http://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/pr.owl
   products:
-  - {id: pr.owl, ontology_purl: 'http://purl.obolibrary.org/obo/pr.owl'}
+  - {description: 'PRO after reasoning has been applied, OWL format.', id: pr.owl,
+    ontology_purl: 'http://purl.obolibrary.org/obo/pr.owl', title: pro_reasoned.owl}
+  - {description: 'PRO after reasoning has been applied, OBO format.', id: pr.obo,
+    ontology_purl: 'http://purl.obolibrary.org/obo/pr.obo', title: pro_reasoned.obo}
   title: PRotein Ontology (PRO)
   tracker: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
 - build: {infallible: 0, method: obo2owl, source_url: 'https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo'}
@@ -291,7 +294,7 @@ ontologies:
   title: Agronomy Ontology
   tracker: https://github.com/AgriculturalSemantics/agro/issues/
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/obophenotype/ascomycete-phenotype-ontology/master/apo.obo'}
-  contact: {email: maria@genome.stanford.edu, label: Maria Costanza}
+  contact: {email: sgd-helpdesk@lists.stanford.edu, label: sgd-helpdesk}
   description: A structured controlled vocabulary for the phenotypes of Ascomycete
     fungi
   domain: phenotype
@@ -810,8 +813,8 @@ ontologies:
   homepage: http://planteome.org/
   id: eo
   layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/eo.owl
   page: http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=EO:0007359&session_id=815amigo1442021959
   products:
@@ -859,8 +862,9 @@ ontologies:
   - {id: exo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/exo.owl'}
   - {id: exo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/exo.obo'}
   title: Exposure ontology
-- build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/microbial_gross_anatomy/fungi/fungal_anatomy.obo'}
-  contact: {email: maria@genome.stanford.edu, label: Maria Costanzo}
+- build: {checkout: 'git clone https://github.com/obophenotype/fungal-anatomy-ontology.git',
+    infallible: 1, method: vcs, system: git}
+  contact: {email: dinglis@stanford.edu, label: Diane Inglis}
   description: A structured controlled vocabulary for the anatomy of fungi.
   domain: anatomy
   homepage: http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/
@@ -870,8 +874,10 @@ ontologies:
   page: http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/#description
   products:
   - {id: fao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fao.owl'}
+  - {id: fao.obo, ontology_purl: 'http://purl.obolibrary.org/obo/fao.obo'}
   taxon: {id: 'NCBITaxon:4751', label: Fungal}
   title: Fungal gross anatomy
+  tracker: https://github.com/obophenotype/fungal-anatomy-ontology/issues
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/dosumis/fbbi/master/src/ontology/fbbi.obo'}
   contact: {email: dorloff@ncmir.ucsd.edu, label: David Orloff}
   description: A structured controlled vocabulary of sample preparation, visualization
@@ -1127,7 +1133,7 @@ ontologies:
   - {label: HPO, title: Charite HPO Browser, url: 'http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118'}
   - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/HP:0000118'}
   build: {infallible: 1, method: archive, path: archive/hp, source_url: 'http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
-  contact: {email: sebastian.koehler@charite.de, label: Sebastian Koehler}
+  contact: {email: dr.sebastian.koehler@gmail.com, label: Sebastian Koehler}
   description: A structured and controlled vocabulary for the phenotypic features
     encountered in human hereditary and other disease.
   domain: phenotype
@@ -1735,7 +1741,7 @@ ontologies:
   - {id: omp.obo, ontology_purl: 'http://purl.obolibrary.org/obo/omp.obo'}
   title: Ontology of Microbial Phenotypes
   tracker: https://github.com/microbialphenotypes/OMP-ontology/issues
-- build: {method: owl2obo, source_url: 'http://omrse.googlecode.com/svn/trunk/omrse/omrse.owl'}
+- build: {method: owl2obo, source_url: 'https://github.com/ufbmi/OMRSE'}
   contact: {email: hoganwr@gmail.com, label: Bill Hogan}
   description: This ontology covers the domain of social entities that are related
     to health care, such as demographic information and the roles of various individuals
@@ -1984,7 +1990,7 @@ ontologies:
   - {id: sibo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/sibo.obo'}
   title: Social Insect Behavior Ontology
   tracker: https://github.com/obophenotype/sibo/issues
-- build: {method: obo2owl, notes: SWITCH, source_url: 'https://svn.code.sf.net/p/song/svn/trunk/so-xp.obo'}
+- build: {insert_ontology_id: 1, method: obo2owl, notes: SWITCH, source_url: 'https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so-xp.obo'}
   contact: {email: song-devel@lists.sourceforge.net, label: SONG developers}
   depicted_by: http://sequenceontology.org/img/so_icon.png
   description: A structured controlled vocabulary for sequence annotation, for the
@@ -1997,6 +2003,7 @@ ontologies:
   page: https://en.wikipedia.org/wiki/Sequence_Ontology
   products:
   - {id: so.owl, ontology_purl: 'http://purl.obolibrary.org/obo/so.owl'}
+  - {id: so.obo, ontology_purl: 'http://purl.obolibrary.org/obo/so.obo'}
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/15892872', title: 'The Sequence Ontology:
       a tool for the unification of genome annotations.'}
@@ -2042,7 +2049,7 @@ ontologies:
   tracker: https://github.com/ISA-tools/stato/issues
 - build: {method: owl2obo, source_url: 'http://theswo.svn.sourceforge.net/viewvc/theswo/trunk/src/release/swoinowl/swo_merged/swo_merged.owl'}
   contact: {email: parkinson@ebi.ac.uk, label: Helen Parkinson}
-  homepage: www.ebi.ac.uk/efo/swo
+  homepage: http://www.ebi.ac.uk/efo/swo
   id: swo
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/swo.owl
@@ -2110,7 +2117,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:44484', label: Anopheles}
   title: Mosquito gross anatomy
 - browsers:
-  - {label: Planteome, title: Planteome browser, url: 'http://dev.planteome.org/amigo/term/TO:0000387b'}
+  - {label: Planteome, title: Planteome browser, url: 'http://planteome.org/amigo/term/TO:0000387'}
   build: {checkout: 'git clone https://github.com/Planteome/plant-trait-ontology.git',
     infallible: 1, method: vcs, path: ., system: git}
   contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
@@ -2121,10 +2128,10 @@ ontologies:
   jobs:
   - {id: 'https://travis-ci.org/Planteome/plant-trait-ontology', type: travis-ci}
   layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'https://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/to.owl
-  page: http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=TO:0000387&session_id=815amigo1442021959
+  page: http://browser.planteome.org/amigo/term/TO:0000387#display-lineage-tab
   products:
   - {id: to.owl, ontology_purl: 'http://purl.obolibrary.org/obo/to.owl'}
   - {id: to.obo, ontology_purl: 'http://purl.obolibrary.org/obo/to.obo'}
@@ -2387,6 +2394,26 @@ ontologies:
       measurement method and experimental condition ontologies: expansion, improvements
       and new applications.'}
   title: Experimental condition ontology
+- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/HUPO-PSI/mzIdentML/master/cv/XLMOD.obo'}
+  contact: {email: gerhard.mayer@rub.de, label: Gerhard Mayer}
+  createdWith: http://oboedit.org
+  description: A structured controlled vocabulary for cross-linking reagents used
+    with proteomics mass spectrometry.
+  domain: MS cross-linker reagents
+  homepage: http://www.psidev.info/groups/controlled-vocabularies
+  id: xl
+  integration_server: https://raw.githubusercontent.com/HUPO-PSI/mzIdentML/tree/master/cv
+  label: XL
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/3.0/'}
+  mailing_list: psidev-ms-vocab@lists.sourceforge.net
+  ontology_purl: http://purl.obolibrary.org/obo/xl.owl
+  page: http://www.psidev.info/groups/controlled-vocabularies
+  products:
+  - {id: xl.obo, ontology_purl: 'http://purl.obolibrary.org/obo/xl.obo'}
+  - {id: xl.owl, ontology_purl: 'http://purl.obolibrary.org/obo/xl.owl'}
+  title: Cross-linker reagents ontology
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.obo'}
   contact: {email: ybradford@zfin.org, label: Yvonne Bradford}
   description: Experimental conditions applied to zebrafish, developed to facilitate
@@ -2754,13 +2781,12 @@ principles:
 - {id: fp-002-format, layout: principle, title: Common Format}
 - {id: fp-003-uris, layout: principle, title: URI/Identifier Space}
 - {id: fp-004-versioning, layout: principle, title: Versioning}
-- {id: fp-005-delineated-content, layout: principle, title: Clearly Delineated Content}
+- {id: fp-005-delineated-content, layout: principle, title: Scope}
 - {id: fp-006-textual-definitions, layout: principle, title: Textual Definitions}
 - {id: fp-007-relations, layout: principle, title: Relations}
-- {id: fp-008-documented, layout: principle, title: Documented}
+- {id: fp-008-documented, layout: principle, title: Documentation}
 - {id: fp-009-users, layout: principle, title: Documented Plurality of Users}
 - {id: fp-010-collaboration, layout: principle, title: Commitment To Collaboration}
-- {id: fp-011-locus-of-authority, layout: principle, title: Locus of Authority / Contact
-    Person}
+- {id: fp-011-locus-of-authority, layout: principle, title: Locus of Authority}
 - {id: fp-012-naming-conventions, layout: principle, title: Naming Conventions}
 - {id: fp-016-maintenance, layout: principle, title: Maintenance}
