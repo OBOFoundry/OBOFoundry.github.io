@@ -28,6 +28,10 @@ publications:
 products:
   - id: po.owl
   - id: po.obo
+browsers:
+  - label: Planteome
+    title: Planteome browser
+    url: http://browser.planteome.org/amigo
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4.0
