@@ -21,7 +21,7 @@ title: Plant Trait Ontology
 browsers:
  - label: Planteome
    title: Planteome browser
-   url: http://planteome.org/amigo/term/TO:0000387
+   url: http://browser.planteome.org/amigo/term/TO:0000387#display-lineage-tab
 jobs:
   - id: https://travis-ci.org/Planteome/plant-trait-ontology
     type: travis-ci
