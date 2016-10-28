@@ -286,6 +286,13 @@
             "tracker": "https://github.com/pato-ontology/pato/issues"
         },
         {
+            "browsers": [
+                {
+                    "label": "Planteome",
+                    "title": "Planteome browser",
+                    "url": "http://browser.planteome.org/amigo"
+                }
+            ],
             "build": {
                 "checkout": "git clone https://github.com/Planteome/plant-ontology.git",
                 "infallible": 1,
@@ -298,7 +305,7 @@
             },
             "description": "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.",
             "domain": "anatomy and development",
-            "homepage": "http://www.planteome.org",
+            "homepage": "http://browser.planteome.org/amigo",
             "id": "po",
             "in_foundry_order": 1,
             "jobs": [
@@ -1662,7 +1669,7 @@
                 "email": "jaiswalp@science.oregonstate.edu",
                 "label": "Pankaj Jaiswal"
             },
-            "description": "A structured, controlled vocabulary which \u2260\u2260describes the treatments, growing conditions, and/or study types used in various types of plant biology experiments.",
+            "description": "A structured, controlled vocabulary which describes the treatments, growing conditions, and/or study types used in plant biology experiments.",
             "domain": "environment",
             "homepage": "http://planteome.org/",
             "id": "eo",
@@ -1673,11 +1680,15 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/eo.owl",
-            "page": "http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=EO:0007359&session_id=815amigo1442021959",
+            "page": "http://browser.planteome.org/amigo/term/EO:0007359",
             "products": [
                 {
                     "id": "eo.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/eo.owl"
+                },
+                {
+                    "id": "eo.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/eo.obo"
                 }
             ],
             "publications": [
@@ -4356,7 +4367,7 @@
                 {
                     "label": "Planteome",
                     "title": "Planteome browser",
-                    "url": "http://planteome.org/amigo/term/TO:0000387"
+                    "url": "http://browser.planteome.org/amigo/term/TO:0000387#display-lineage-tab"
                 }
             ],
             "build": {
