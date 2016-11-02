@@ -92,6 +92,9 @@ browsers:
   - label: Bgee (gene expression)
     title: Bgee gene expression queries
     url: http://bgee.org/?page=gene
+  - label: FANTOM5
+    title: FANTOM5 Data Portal
+    url: http://fantom.gsc.riken.jp/5/sstar/UBERON:0001890
 products:
  - id: uberon.owl
    type: owl:Ontology
