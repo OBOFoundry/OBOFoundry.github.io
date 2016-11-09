@@ -18,6 +18,9 @@ taxon:
   id: NCBITaxon:4896
   label: S. pombe
 tracker: https://github.com/pombase/fypo/issues
+publications:
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/23658422
+    title: "FYPO: The Fission Yeast Phenotype Ontology."
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
