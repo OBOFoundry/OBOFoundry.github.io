@@ -95,6 +95,9 @@ browsers:
   - label: FANTOM5
     title: FANTOM5 Data Portal
     url: http://fantom.gsc.riken.jp/5/sstar/UBERON:0001890
+  - label: KnowledgeSpace
+    title: INCF KnowledgeSpace Portal
+    url: https://knowledge-space.org/index.php/pages/view/UBERON:0000061
 products:
  - id: uberon.owl
    type: owl:Ontology
