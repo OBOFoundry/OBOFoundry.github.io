@@ -1,4 +1,5 @@
 ---
+layout: ontology_detail
 id: ontoneo
 title: Obstetric and Neonatal Ontology
 contact: 
