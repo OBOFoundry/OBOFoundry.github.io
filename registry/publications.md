@@ -21,6 +21,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Environment Ontology (envo): [The environment ontology: contextualising biological and biomedical entities](http://www.dx.doi.org/10.1186/2041-1480-4-43)
 - Evidence ontology (eco): [Standardized description of scientific evidence using the Evidence Ontology (ECO)](http://www.ncbi.nlm.nih.gov/pubmed/25052702)
 - Experimental condition ontology (xco): [Three ontologies to define phenotype measurement data.](http://www.ncbi.nlm.nih.gov/pubmed/22654893)
+- Fission Yeast Phenotype Ontology (fypo): [FYPO: The Fission Yeast Phenotype Ontology.](http://www.ncbi.nlm.nih.gov/pubmed/23658422)
 - Human Disease Ontology (doid): [Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data](http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409)
 - Human developmental anatomy, abstract (ehdaa2): [A new ontology (structured hierarchy) of human developmental anatomy for the first 7 weeks (Carnegie stages 1-20).](http://www.ncbi.nlm.nih.gov/pubmed/22973865)
 - Mass spectrometry ontology (ms): [The HUPO proteomics standards initiative- mass spectrometry controlled vocabulary.](http://www.ncbi.nlm.nih.gov/pubmed/23482073)

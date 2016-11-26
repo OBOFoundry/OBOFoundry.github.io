@@ -1183,7 +1183,7 @@
             },
             "description": "An ontology to describe entities related to cardiovascular diseases",
             "domain": "health",
-            "homepage": "https://code.google.com/p/cvdo/",
+            "homepage": "https://github.com/OpenLHS/CVDO",
             "id": "cvdo",
             "layout": "ontology_detail",
             "ontology_purl": "http://purl.obolibrary.org/obo/cvdo.owl",
@@ -1194,7 +1194,7 @@
                 }
             ],
             "title": "Cardiovascular Disease Ontology",
-            "tracker": "https://code.google.com/p/cvdo/issues/list"
+            "tracker": "https://github.com/OpenLHS/CVDO/issues"
         },
         {
             "build": {
@@ -1621,6 +1621,10 @@
                 {
                     "id": "http://www.dx.doi.org/10.1186/2041-1480-4-43",
                     "title": "The environment ontology: contextualising biological and biomedical entities"
+                },
+                {
+                    "id": "http://doi.org/10.1186/s13326-016-0097-6",
+                    "title": "The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation"
                 }
             ],
             "title": "Environment Ontology",
@@ -2184,6 +2188,12 @@
                 {
                     "id": "fypo.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/fypo.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/23658422",
+                    "title": "FYPO: The Fission Yeast Phenotype Ontology."
                 }
             ],
             "taxon": {
@@ -3613,6 +3623,43 @@
             "title": "Ontology of Medically Related Social Entities"
         },
         {
+            "browsers": [
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal Browser",
+                    "url": "https://bioportal.bioontology.org/ontologies/ONTONEO"
+                }
+            ],
+            "build": {
+                "method": "owl2obo",
+                "source_url": null
+            },
+            "contact": {
+                "email": "fernanda.farinelli@gmail.com",
+                "label": "Fernanda Farinelli"
+            },
+            "description": "The Obstetric and Neonatal Ontology is a structured controlled vocabulary to provide a representation of the data from electronic health records (EHRs) involved in the care of the pregnant woman, and of her baby.",
+            "domain": "biomedical, health",
+            "homepage": "ontoneo.com",
+            "id": "ontoneo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "mailing_list": "http://groups.google.com/group/ontoneo-discuss",
+            "ontology_purl": "http://purl.obolibrary.org/obo/ontoneo.owl",
+            "products": [
+                {
+                    "id": "ontoneo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ontoneo.owl"
+                }
+            ],
+            "title": "Obstetric and Neonatal Ontology",
+            "tracker": "https://github.com/ontoneo-project/Ontoneo/issues"
+        },
+        {
             "contact": {
                 "email": "mbrochhausen@uams.edu",
                 "label": "Mathias Brochhausen"
@@ -3702,6 +3749,30 @@
             ],
             "title": "Population and Community Ontology",
             "tracker": "https://github.com/PopulationAndCommunityOntology/pco/issues"
+        },
+        {
+            "build": {
+                "method": "owl2obo",
+                "source_url": "http://purl.obolibrary.org/obo/pdro.owl"
+            },
+            "contact": {
+                "email": "ryeyan.taseen@gmail.com",
+                "label": "Ryeyan Taseen"
+            },
+            "description": "An ontology to describe entities related to prescription of drugs",
+            "domain": "health",
+            "homepage": "https://github.com/OpenLHS/PDRO",
+            "id": "pdro",
+            "layout": "ontology_detail",
+            "ontology_purl": "http://purl.obolibrary.org/obo/pdro.owl",
+            "products": [
+                {
+                    "id": "pdro.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pdro.owl"
+                }
+            ],
+            "title": "The Prescription of Drugs Ontology",
+            "tracker": "https://github.com/OpenLHS/PDRO/issues"
         },
         {
             "build": {
@@ -4501,6 +4572,16 @@
                     "label": "Bgee (gene expression)",
                     "title": "Bgee gene expression queries",
                     "url": "http://bgee.org/?page=gene"
+                },
+                {
+                    "label": "FANTOM5",
+                    "title": "FANTOM5 Data Portal",
+                    "url": "http://fantom.gsc.riken.jp/5/sstar/UBERON:0001890"
+                },
+                {
+                    "label": "KnowledgeSpace",
+                    "title": "INCF KnowledgeSpace Portal",
+                    "url": "https://knowledge-space.org/index.php/pages/view/UBERON:0000061"
                 }
             ],
             "build": {

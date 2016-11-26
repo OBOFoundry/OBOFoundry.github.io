@@ -583,14 +583,14 @@ ontologies:
   contact: {email: adrien.barton@gmail.com, label: Adrien Barton}
   description: An ontology to describe entities related to cardiovascular diseases
   domain: health
-  homepage: https://code.google.com/p/cvdo/
+  homepage: https://github.com/OpenLHS/CVDO
   id: cvdo
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/cvdo.owl
   products:
   - {id: cvdo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/cvdo.owl'}
   title: Cardiovascular Disease Ontology
-  tracker: https://code.google.com/p/cvdo/issues/list
+  tracker: https://github.com/OpenLHS/CVDO/issues
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_anatomy.obo'}
   contact: {email: r-chisholm@northwestern.edu, label: Rex Chisholm}
   description: A structured controlled vocabulary of the anatomy of the slime-mould
@@ -790,6 +790,8 @@ ontologies:
   publications:
   - {id: 'http://www.dx.doi.org/10.1186/2041-1480-4-43', title: 'The environment ontology:
       contextualising biological and biomedical entities'}
+  - {id: 'http://doi.org/10.1186/s13326-016-0097-6', title: 'The environment ontology
+      in 2016: bridging domains with increased scope, semantic density, and interoperation'}
   title: Environment Ontology
   tracker: https://github.com/EnvironmentOntology/envo/issues/
   usages:
@@ -1054,6 +1056,9 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/fypo.owl
   products:
   - {id: fypo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fypo.owl'}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/23658422', title: 'FYPO: The Fission
+      Yeast Phenotype Ontology.'}
   taxon: {id: 'NCBITaxon:4896', label: S. pombe}
   title: Fission Yeast Phenotype Ontology
   tracker: https://github.com/pombase/fypo/issues
@@ -1757,6 +1762,25 @@ ontologies:
   - {id: omrse.owl, ontology_purl: 'http://purl.obolibrary.org/obo/omrse.owl'}
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Ontology of Medically Related Social Entities
+- browsers:
+  - {label: BioPortal, title: BioPortal Browser, url: 'https://bioportal.bioontology.org/ontologies/ONTONEO'}
+  build: {method: owl2obo, source_url: null}
+  contact: {email: fernanda.farinelli@gmail.com, label: Fernanda Farinelli}
+  description: The Obstetric and Neonatal Ontology is a structured controlled vocabulary
+    to provide a representation of the data from electronic health records (EHRs)
+    involved in the care of the pregnant woman, and of her baby.
+  domain: biomedical, health
+  homepage: ontoneo.com
+  id: ontoneo
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  mailing_list: http://groups.google.com/group/ontoneo-discuss
+  ontology_purl: http://purl.obolibrary.org/obo/ontoneo.owl
+  products:
+  - {id: ontoneo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ontoneo.owl'}
+  title: Obstetric and Neonatal Ontology
+  tracker: https://github.com/ontoneo-project/Ontoneo/issues
 - contact: {email: mbrochhausen@uams.edu, label: Mathias Brochhausen}
   description: An ontology built for representating the organizational components
     of trauma centers and trauma systems.
@@ -1804,6 +1828,18 @@ ontologies:
   - {id: pco.owl, ontology_purl: 'http://purl.obolibrary.org/obo/pco.owl'}
   title: Population and Community Ontology
   tracker: https://github.com/PopulationAndCommunityOntology/pco/issues
+- build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/pdro.owl'}
+  contact: {email: ryeyan.taseen@gmail.com, label: Ryeyan Taseen}
+  description: An ontology to describe entities related to prescription of drugs
+  domain: health
+  homepage: https://github.com/OpenLHS/PDRO
+  id: pdro
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/pdro.owl
+  products:
+  - {id: pdro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/pdro.owl'}
+  title: The Prescription of Drugs Ontology
+  tracker: https://github.com/OpenLHS/PDRO/issues
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/pdumdv/pdumdv.obo'}
   description: Life cycle stages for Platynereis dumerilii
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv
@@ -2178,6 +2214,8 @@ ontologies:
   - {label: RGD, title: Gene Ontology AmiGO 2 Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=UBERON:0001062'}
   - {label: AmiGO (SUBSET), title: Gene Ontology AmiGO 2 Browser, url: 'http://amigo.geneontology.org/amigo/term/UBERON:0001062#display-lineage-tab'}
   - {label: Bgee (gene expression), title: Bgee gene expression queries, url: 'http://bgee.org/?page=gene'}
+  - {label: FANTOM5, title: FANTOM5 Data Portal, url: 'http://fantom.gsc.riken.jp/5/sstar/UBERON:0001890'}
+  - {label: KnowledgeSpace, title: INCF KnowledgeSpace Portal, url: 'https://knowledge-space.org/index.php/pages/view/UBERON:0000061'}
   build: {checkout: 'svn --ignore-externals co http://svn.code.sf.net/p/obo/svn/uberon/trunk',
     email_cc: cjmungall@lbl.gov, infallible: 1, method: vcs, system: svn}
   canonical: uberon.owl
