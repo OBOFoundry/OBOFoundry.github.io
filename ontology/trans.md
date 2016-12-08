@@ -13,10 +13,10 @@ products:
 title: Pathogen Transmission Ontology
 
 build:
-  source_url: https://sourceforge.net/p/diseaseontology/code/HEAD/tree/Transmission_Process_Ontology/transmission_process_ontology.obo
+  source_url: https://github.com/DiseaseOntology/PathogenTransmissionOntology/blob/master/src/ontology/transmission_process.obo
   method: obo2owl
   infallible: 1
-tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
+tracker: https://github.com/DiseaseOntology/PathogenTransmissionOntology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
