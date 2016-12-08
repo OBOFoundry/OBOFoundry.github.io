@@ -15,10 +15,10 @@ taxon:
   label: Homo sapiens
 title: Symptom Ontology
 build:
-  source_url: https://sourceforge.net/p/diseaseontology/code/HEAD/tree/Symptom_Ontology/symptom_ontology.obo
+  source_url: https://github.com/DiseaseOntology/SymptomOntology/blob/master/symp.obo
   method: obo2owl
   infallible: 1
-tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
+tracker: https://github.com/DiseaseOntology/SymptomOntology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
