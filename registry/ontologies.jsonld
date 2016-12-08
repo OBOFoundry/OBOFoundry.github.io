@@ -3492,6 +3492,40 @@
         },
         {
             "build": {
+                "method": "owl2obo",
+                "source_url": "http://purl.obolibrary.org/obo/ohd.owl"
+            },
+            "contact": {
+                "email": "alanruttenberg@gmail.com",
+                "label": "Alan Ruttenberg"
+            },
+            "description": "The Oral Health and Disease Ontology was created, initially, to represent the content of dental practice health records.",
+            "domain": "health",
+            "homepage": "https://purl.obolibrary.org/obo/ohd/home",
+            "id": "ohd",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/ohd.owl",
+            "products": [
+                {
+                    "id": "ohd.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ohd.owl"
+                },
+                {
+                    "id": "ohd/dev/ohd.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ohd/dev/ohd.owl",
+                    "title": "OHD dev"
+                }
+            ],
+            "title": "The Oral Health and Disease Ontology",
+            "tracker": "https://purl.obolibrary.org/obo/ohd/issues"
+        },
+        {
+            "build": {
                 "method": "obo2owl",
                 "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.obo"
             },
