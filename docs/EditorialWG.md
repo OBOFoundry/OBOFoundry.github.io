@@ -53,6 +53,6 @@ Membership in the OBO Foundry Editorial WG is open to all members of the OBO Fou
 <br>
 <h1>Contact Us</h1>
 
-The best way to contact the OBO Foundry Editorial Working Group is through the <a href='http://code.google.com/p/obo-foundry-operations-committee/issues/list'>issue tracker</a>. Select the Editorial group template or the Request review template.<br>
+The best way to contact the OBO Foundry Editorial Working Group is through the <a href='https://github.com/OBOFoundry/OBOFoundry.github.io/issues/'>issue tracker</a>.<br>
 <br>
 The mailing list for the OBO Foundry Editorial Working Group is <a href='mailto:obo-foundry-editorial-working-group@googlegroups.com'>obo-foundry-editorial-working-group@googlegroups.com</a>. This is currently a closed list, but non-members can post to the list.
