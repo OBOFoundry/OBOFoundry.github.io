@@ -4,7 +4,8 @@ id: fp-016-maintenance
 title: Maintenance
 ---
 
-NOTE-------
+NOTE
+-------
 The wording of this principle is still in progress.
 
 Summary and Purpose
