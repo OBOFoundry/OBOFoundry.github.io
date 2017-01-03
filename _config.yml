@@ -1651,9 +1651,8 @@ ontologies:
   tracker: https://github.com/biobanking/biobanking/issues
 - contact: {email: yongqunh@med.umich.edu, label: Yongqun Oliver He}
   description: A formal ontology of genes and genomes of biological organisms.
-  homepage: http://ogg.googlecode.com/
+  homepage: https://bitbucket.org/hegroup/ogg
   id: ogg
-  in_foundry: false
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
@@ -1661,7 +1660,7 @@ ontologies:
   products:
   - {id: ogg.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ogg.owl'}
   title: The Ontology of Genes and Genomes
-  tracker: https://code.google.com/p/ogg/issues/list
+  tracker: https://bitbucket.org/hegroup/ogg/issues/
 - description: An ontology that formalizes the genomic element by defining an upper
     class genetic interval
   homepage: https://code.google.com/p/ontology-for-genetic-interval/
@@ -1696,6 +1695,23 @@ ontologies:
   - {id: ogsf.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ogsf.owl'}
   title: Ontology of Genetic Susceptibility Factor
   tracker: https://code.google.com/p/ogsf/issues/list
+- build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/ohd.owl'}
+  contact: {email: alanruttenberg@gmail.com, label: Alan Ruttenberg}
+  description: The Oral Health and Disease Ontology was created, initially, to represent
+    the content of dental practice health records.
+  domain: health
+  homepage: https://purl.obolibrary.org/obo/ohd/home
+  id: ohd
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/4.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/ohd.owl
+  products:
+  - {id: ohd.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ohd.owl'}
+  - {id: ohd/dev/ohd.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ohd/dev/ohd.owl',
+    title: OHD dev}
+  title: The Oral Health and Disease Ontology
+  tracker: https://purl.obolibrary.org/obo/ohd/issues
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.obo'}
   description: Life cycle stages for Medaka
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv
@@ -1877,6 +1893,22 @@ ontologies:
   taxon: {id: 'NCBITaxon:6040', label: Porifera}
   title: Porifera Ontology
   tracker: https://github.com/obophenotype/porifera-ontology/issues
+- contact: {email: rlwalls2008@gmail.com, label: Ramona Walls}
+  description: An ontology for integrating plant phenological data across sources
+    and scales.
+  domain: plant phenotypes
+  homepage: https://github.com/PlantPhenoOntology/PPO
+  id: ppo
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  mailing_list: ppo-discuss@googlegroups.com
+  ontology_purl: http://purl.obolibrary.org/obo/ppo.owl
+  products:
+  - {id: ppo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ppo.owl'}
+  taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
+  title: Plant Phenology Ontology
+  tracker: https://github.com/PlantPhenoOntology/PPO/issues
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=PW:0000001'}
   build: {method: obo2owl, source_url: 'ftp://ftp.rgd.mcw.edu/pub/data_release/ontology_obo_files/pathway/pathway.obo'}
@@ -2094,7 +2126,7 @@ ontologies:
   products:
   - {id: swo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/swo.owl'}
   title: Software ontology
-- build: {infallible: 1, method: obo2owl, source_url: 'https://sourceforge.net/p/diseaseontology/code/HEAD/tree/Symptom_Ontology/symptom_ontology.obo'}
+- build: {infallible: 1, method: obo2owl, source_url: 'https://github.com/DiseaseOntology/SymptomOntology/blob/master/symp.obo'}
   contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
   description: An ontology of disease symptoms, with symptoms encompasing perceived
     changes in function, sensations or appearance reported by a patient indicative
@@ -2111,7 +2143,7 @@ ontologies:
   - {id: symp.obo, ontology_purl: 'http://purl.obolibrary.org/obo/symp.obo'}
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Symptom Ontology
-  tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
+  tracker: https://github.com/DiseaseOntology/SymptomOntology/issues
 - build: {method: obo2owl, source_url: 'http://anobase.vectorbase.org/anatomy/tick_anatomy.obo'}
   contact: {email: dsonensh@odu.edu, label: Daniel Sonenshine}
   description: 'The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>'
@@ -2179,7 +2211,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
   title: Plant Trait Ontology
   tracker: https://github.com/Planteome/plant-trait-ontology/issues
-- build: {infallible: 1, method: obo2owl, source_url: 'https://sourceforge.net/p/diseaseontology/code/HEAD/tree/Transmission_Process_Ontology/transmission_process_ontology.obo'}
+- build: {infallible: 1, method: obo2owl, source_url: 'https://github.com/DiseaseOntology/PathogenTransmissionOntology/blob/master/src/ontology/transmission_process.obo'}
   contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
   description: An ontology representing the disease transmission process during which
     the pathogen is transmitted directly or indirectly from its natural reservoir,
@@ -2195,7 +2227,7 @@ ontologies:
   - {id: trans.owl, ontology_purl: 'http://purl.obolibrary.org/obo/trans.owl'}
   - {id: trans.obo, ontology_purl: 'http://purl.obolibrary.org/obo/trans.obo'}
   title: Pathogen Transmission Ontology
-  tracker: http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739
+  tracker: https://github.com/DiseaseOntology/PathogenTransmissionOntology/issues
 - build: {method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/teleost_taxonomy.obo'}
   contact: {email: peteremidford@yahoo.com, label: Peter Midford}
   description: An ontology covering the taxonomy of teleosts (bony fish)

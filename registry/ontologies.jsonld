@@ -3416,9 +3416,8 @@
                 "label": "Yongqun Oliver He"
             },
             "description": "A formal ontology of genes and genomes of biological organisms.",
-            "homepage": "http://ogg.googlecode.com/",
+            "homepage": "https://bitbucket.org/hegroup/ogg",
             "id": "ogg",
-            "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC-BY",
@@ -3433,7 +3432,7 @@
                 }
             ],
             "title": "The Ontology of Genes and Genomes",
-            "tracker": "https://code.google.com/p/ogg/issues/list"
+            "tracker": "https://bitbucket.org/hegroup/ogg/issues/"
         },
         {
             "description": "An ontology that formalizes the genomic element by defining an upper class genetic interval",
@@ -3489,6 +3488,40 @@
             ],
             "title": "Ontology of Genetic Susceptibility Factor",
             "tracker": "https://code.google.com/p/ogsf/issues/list"
+        },
+        {
+            "build": {
+                "method": "owl2obo",
+                "source_url": "http://purl.obolibrary.org/obo/ohd.owl"
+            },
+            "contact": {
+                "email": "alanruttenberg@gmail.com",
+                "label": "Alan Ruttenberg"
+            },
+            "description": "The Oral Health and Disease Ontology was created, initially, to represent the content of dental practice health records.",
+            "domain": "health",
+            "homepage": "https://purl.obolibrary.org/obo/ohd/home",
+            "id": "ohd",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/ohd.owl",
+            "products": [
+                {
+                    "id": "ohd.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ohd.owl"
+                },
+                {
+                    "id": "ohd/dev/ohd.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ohd/dev/ohd.owl",
+                    "title": "OHD dev"
+                }
+            ],
+            "title": "The Oral Health and Disease Ontology",
+            "tracker": "https://purl.obolibrary.org/obo/ohd/issues"
         },
         {
             "build": {
@@ -3857,6 +3890,36 @@
             },
             "title": "Porifera Ontology",
             "tracker": "https://github.com/obophenotype/porifera-ontology/issues"
+        },
+        {
+            "contact": {
+                "email": "rlwalls2008@gmail.com",
+                "label": "Ramona Walls"
+            },
+            "description": "An ontology for integrating plant phenological data across sources and scales.",
+            "domain": "plant phenotypes",
+            "homepage": "https://github.com/PlantPhenoOntology/PPO",
+            "id": "ppo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "mailing_list": "ppo-discuss@googlegroups.com",
+            "ontology_purl": "http://purl.obolibrary.org/obo/ppo.owl",
+            "products": [
+                {
+                    "id": "ppo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ppo.owl"
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:33090",
+                "label": "Viridiplantae"
+            },
+            "title": "Plant Phenology Ontology",
+            "tracker": "https://github.com/PlantPhenoOntology/PPO/issues"
         },
         {
             "browsers": [
@@ -4305,7 +4368,7 @@
             "build": {
                 "infallible": 1,
                 "method": "obo2owl",
-                "source_url": "https://sourceforge.net/p/diseaseontology/code/HEAD/tree/Symptom_Ontology/symptom_ontology.obo"
+                "source_url": "https://github.com/DiseaseOntology/SymptomOntology/blob/master/symp.obo"
             },
             "contact": {
                 "email": "lynn.schriml@gmail.com",
@@ -4337,7 +4400,7 @@
                 "label": "Homo sapiens"
             },
             "title": "Symptom Ontology",
-            "tracker": "http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739"
+            "tracker": "https://github.com/DiseaseOntology/SymptomOntology/issues"
         },
         {
             "build": {
@@ -4497,7 +4560,7 @@
             "build": {
                 "infallible": 1,
                 "method": "obo2owl",
-                "source_url": "https://sourceforge.net/p/diseaseontology/code/HEAD/tree/Transmission_Process_Ontology/transmission_process_ontology.obo"
+                "source_url": "https://github.com/DiseaseOntology/PathogenTransmissionOntology/blob/master/src/ontology/transmission_process.obo"
             },
             "contact": {
                 "email": "lynn.schriml@gmail.com",
@@ -4525,7 +4588,7 @@
                 }
             ],
             "title": "Pathogen Transmission Ontology",
-            "tracker": "http://sourceforge.net/tracker/?func=add&group_id=79168&atid=555739"
+            "tracker": "https://github.com/DiseaseOntology/PathogenTransmissionOntology/issues"
         },
         {
             "build": {
