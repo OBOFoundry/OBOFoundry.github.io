@@ -16,15 +16,11 @@ A common format allows the maximum number of people to access and reuse an ontol
 
 ### Recommendations
 
-The ontology should be available in at least one of the following formats:
+We make a distinction between how an ontology is developed and how it is presented for release. Developers are free to use whatever combination of technologies and formats is appropriate for development. However, the official owl PURL for the ontology must resolve to a syntactically valid OWL file in an [RDF](https://www.w3.org/TR/rdf11-concepts/) syntax: either RDF-XML or RDF-Turtle format
 
-- OBO Format
-- OWL or OWL2 concrete syntax
-    - RDF/XML
-    - OWL2-XML
-    - OWL2-Manchester Syntax
+Note: some groups publish an .obo version, and the OBO Foundry pipeline takes care of making the valid .owl file. See the FAQ for details. You may also submit the ontology for review as OBO, see 'criteria for review' below.
 
-If you intend to use your ontology for semantic web applications, it should be in OWL. OWL is part of the W3C's Semantic Web technology stack, which includes RDF ([RDF Concepts](https://www.w3.org/TR/rdf11-concepts/)) and [SPARQL](https://www.w3.org/TR/sparql11-overview/).
+Note also that previously we recommended that ontologies may be available in Manchester syntax or OWL-XML, but we have revised this in order to make the official OWL release consumable by a wider variety of tools.
 
 ### Examples
 
