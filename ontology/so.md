@@ -15,9 +15,8 @@ products:
 title: Sequence types and features
 build:
   notes: SWITCH
-  source_url: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so-xp.obo
+  source_url: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so.obo
   method: obo2owl
-  insert_ontology_id: 1
 tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/15892872
