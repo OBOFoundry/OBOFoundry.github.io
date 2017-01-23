@@ -1095,6 +1095,21 @@ ontologies:
   - {homepage: 'http://genepio.github.io/genepio/', id: genepio.owl, ontology_purl: 'http://purl.obolibrary.org/obo/genepio.owl'}
   title: Genomic Epidemiology Ontology
   tracker: https://github.com/GenEpiO/genepio/issues/
+- build: {checkout: 'git clone https://github.com/monarch-initiative/GENO-ontology.git',
+    path: src/ontology, system: git}
+  contact: {email: brushm@ohsu.edu, label: Matthew Brush}
+  description: An integrated ontology for representing the genetic variations described
+    in genotypes, and their causal relationships to phenotype and diseases.
+  domain: genotype-to-phenotype associations
+  homepage: https://github.com/monarch-initiative/GENO-ontology/
+  id: geno
+  layout: ontology_detail
+  license: {label: CC-BY-SA, url: 'https://creativecommons.org/licenses/by-sa/2.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/geno.owl
+  products:
+  - {id: geno.owl, ontology_purl: 'http://purl.obolibrary.org/obo/geno.owl', title: GENO}
+  title: Genotype Ontology
+  tracker: https://github.com/monarch-initiative/GENO-ontology/issues
 - contact: {email: MBrochhausen@uams.edu, label: Mathias Brochhausen}
   description: An ontology of geographical entities
   homepage: https://code.google.com/p/ge-ontology/
@@ -2060,7 +2075,7 @@ ontologies:
   - {id: sibo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/sibo.obo'}
   title: Social Insect Behavior Ontology
   tracker: https://github.com/obophenotype/sibo/issues
-- build: {insert_ontology_id: 1, method: obo2owl, notes: SWITCH, source_url: 'https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so-xp.obo'}
+- build: {method: obo2owl, notes: SWITCH, source_url: 'https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so.obo'}
   contact: {email: song-devel@lists.sourceforge.net, label: SONG developers}
   depicted_by: http://sequenceontology.org/img/so_icon.png
   description: A structured controlled vocabulary for sequence annotation, for the
@@ -2081,7 +2096,7 @@ ontologies:
       Ontology terms and relationships.}
   title: Sequence types and features
   tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
-- build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/animal_gross_anatomy/spider/spider_comparative_biology.obo'}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/obophenotype/spider-ontology/master/spider_comparative_biology.obo'}
   contact: {email: ramirez@macn.gov.ar, label: Martin Ramirez}
   description: An ontology for spider comparative biology including anatomical parts
     (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk,
@@ -2095,7 +2110,7 @@ ontologies:
   - {id: spd.owl, ontology_purl: 'http://purl.obolibrary.org/obo/spd.owl'}
   taxon: {id: 'NCBITaxon:6893', label: spiders}
   title: Spider Ontology
-  tracker: http://sourceforge.net/tracker/?group_id=76834&atid=977401
+  tracker: https://github.com/obophenotype/spider-ontology/issues
 - contact: {email: alejandra.gonzalez.beltran@gmail.com, label: Alejandra Gonzalez-Beltran}
   depicted_by: https://raw.githubusercontent.com/ISA-tools/stato/dev/images/stato-logo-1.png
   description: STATO is a general-purpose STATistics Ontology. Its aim is to provide
@@ -2228,15 +2243,17 @@ ontologies:
   - {id: trans.obo, ontology_purl: 'http://purl.obolibrary.org/obo/trans.obo'}
   title: Pathogen Transmission Ontology
   tracker: https://github.com/DiseaseOntology/PathogenTransmissionOntology/issues
-- build: {method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/teleost_taxonomy.obo'}
-  contact: {email: peteremidford@yahoo.com, label: Peter Midford}
+- contact: {email: peteremidford@yahoo.com, label: Peter Midford}
   description: An ontology covering the taxonomy of teleosts (bony fish)
   domain: taxonomy
   homepage: https://www.nescent.org/phenoscape/Main_Page
   id: tto
   layout: ontology_detail
+  license: {label: CC-0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'http://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/tto.owl
   products:
+  - {id: tto.obo, ontology_purl: 'http://purl.obolibrary.org/obo/tto.obo'}
   - {id: tto.owl, ontology_purl: 'http://purl.obolibrary.org/obo/tto.owl'}
   taxon: {id: 'NCBITaxon:32443', label: Teleostei}
   title: Teleost taxonomy
