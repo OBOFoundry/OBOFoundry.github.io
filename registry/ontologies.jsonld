@@ -1383,6 +1383,53 @@
         },
         {
             "build": {
+                "checkout": "git clone https://github.com/EBISPOT/duo.git",
+                "path": ".",
+                "system": "git"
+            },
+            "contact": {
+                "email": "mcourtot@ebi.ac.uk",
+                "label": "Melanie Courtot"
+            },
+            "dependencies": [
+                {
+                    "id": "iao"
+                },
+                {
+                    "id": "bfo"
+                }
+            ],
+            "description": "DUO is an ontology which represent data use conditions.",
+            "homepage": "https://github.com/EBISPOT/duo",
+            "id": "duo",
+            "jobs": [
+                {
+                    "id": "https://travis-ci.org/EBISPOT/duo",
+                    "type": "travis-ci"
+                }
+            ],
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/duo.owl",
+            "products": [
+                {
+                    "id": "duo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/duo.owl"
+                },
+                {
+                    "id": "duo.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/duo.obo"
+                }
+            ],
+            "title": "DUO",
+            "tracker": "https://github.com/EBISPOT/duo/issues"
+        },
+        {
+            "build": {
                 "infallible": 1,
                 "method": "obo2owl",
                 "notes": "switch to vcs",
