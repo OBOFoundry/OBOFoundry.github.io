@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: duo
-title: DUO
+title: The Data Use Ontology
 jobs:
   - id: https://travis-ci.org/EBISPOT/duo
     type: travis-ci
