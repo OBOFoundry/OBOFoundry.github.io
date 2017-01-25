@@ -3,7 +3,7 @@ layout: ontology_detail
 id: duo
 title: The Data Use Ontology
 jobs:
-  - id: https://travis-ci.org/EBISPOT/duo
+  - id: https://travis-ci.org/EBISPOT/DUO
     type: travis-ci
 build:
   checkout: git clone https://github.com/EBISPOT/duo.git
@@ -13,14 +13,14 @@ contact:
   email: mcourtot@ebi.ac.uk
   label: Melanie Courtot
 description: DUO is an ontology which represent data use conditions.
-homepage: https://github.com/EBISPOT/duo
+homepage: https://github.com/EBISPOT/DUO
 products:
   - id: duo.owl
   - id: duo.obo
 dependencies:
  - id: iao
  - id: bfo
-tracker: https://github.com/EBISPOT/duo/issues
+tracker: https://github.com/EBISPOT/DUO/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
