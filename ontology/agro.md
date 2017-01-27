@@ -3,14 +3,14 @@ layout: ontology_detail
 id: agro
 title: Agronomy Ontology
 contact:
-  email: c.aubert@cgiar.org
-  label: Celine Aubert
-  github: celineaubert
+  email: m.a.laporte@cgiar.org
+  label: Marie-Angélique Laporte
+  github: marieALaporte
 description: Ontology of agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments
 domain: agronomy
 homepage: https://github.com/AgriculturalSemantics/agro
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
+  url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY
 mailing_list: https://groups.google.com/group/agronomyOntology
 products:
