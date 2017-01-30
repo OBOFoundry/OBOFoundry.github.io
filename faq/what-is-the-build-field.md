@@ -24,7 +24,7 @@ each ontology.
 
 The output goes here:
 
- * http://berkeleybop.org/ontologies/
+ * http://ontologies.berkeleybop.org/
 
 You can choose to entirely ignore the output of this pipeline for your
 ontology. However, it provides a convenient fall-through for groups
@@ -50,7 +50,7 @@ This job will fail if ontologies marked as `infallible` fail. To debug, the full
 
 ## Warning
 
-A  http://berkeleybop.org/ontologies/ URL should never be handed out directly. This service exists so that:
+A  http://ontologies.berkeleybop.org/ URL should never be handed out directly. This service exists so that:
 
  * Un PURL-registered ontologies will have a fall-through
  * Registered PURL ontologies that do not want to take charge of either OBO or OWL generation will have a place to 302-redirect to
