@@ -9,6 +9,7 @@ domain: phenotype
 homepage: http://www.wormbase.org/
 products:
   - id: wbphenotype.owl
+  - id: wbphenotype.obo
 taxon:
   id: NCBITaxon:6237
   label: Caenorhabditis
