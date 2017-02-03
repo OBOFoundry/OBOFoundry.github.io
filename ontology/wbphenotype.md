@@ -18,6 +18,9 @@ build:
   source_url: http://tazendra.caltech.edu/~azurebrd/cgi-bin/forms/phenotype_ontology_obo.cgi
   method: obo2owl
   infallible: 0
+  publications:
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995
+  title: "Worm Phenotype Ontology: integrating phenotype data within and beyond the C. elegans community."
 ---
 
 A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes
