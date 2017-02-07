@@ -10,8 +10,8 @@ build:
   system: git
   path: "."
 contact:
-  email: cjmungall@lbl.gov
-  label: Chris Mungall
+  email: smr@stowers.org
+  label: Sofia Robb
 description: planaria-ontology is an ontology for planarian anatomy and developmental stages of S.med
 domain: stuff
 homepage: https://github.com/obophenotype/planaria-ontology
