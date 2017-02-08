@@ -14,7 +14,7 @@ ontologies:
 - alternatePrefix: ChEBI
   browsers:
   - {label: CHEBI, title: EBI CHEBI Browser, url: 'http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView'}
-  build: {infallible: 1, method: archive, path: archive/main, source_url: 'http://build.berkeleybop.org/job/build-chebi/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
+  build: {infallible: 1, method: obo2owl, source_url: 'ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo'}
   contact: {email: gowen@ebi.ac.uk, label: Gareth Owen}
   description: A structured classification of molecular entities of biological interest
     focusing on 'small' chemical compounds.
@@ -271,7 +271,8 @@ ontologies:
   title: Adverse Event Reporting Ontology
 - build: {checkout: 'git clone  https://github.com/AgriculturalSemantics/agro.git',
     infallible: 1, method: vcs, path: ., system: git}
-  contact: {email: c.aubert@cgiar.org, github: celineaubert, label: Celine Aubert}
+  contact: {email: m.a.laporte@cgiar.org, github: marieALaporte, label: "Marie-Ang\xE9\
+      lique Laporte"}
   dependencies:
   - {id: envo}
   - {id: uo}
@@ -288,7 +289,7 @@ ontologies:
   - {id: 'https://travis-ci.org/AgriculturalSemantics/agro', type: travis-ci}
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/3.0/'}
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   mailing_list: https://groups.google.com/group/agronomyOntology
   ontology_purl: http://purl.obolibrary.org/obo/agro.owl
   products:
@@ -690,10 +691,10 @@ ontologies:
   - {id: iao}
   - {id: bfo}
   description: DUO is an ontology which represent data use conditions.
-  homepage: https://github.com/EBISPOT/duo
+  homepage: https://github.com/EBISPOT/DUO
   id: duo
   jobs:
-  - {id: 'https://travis-ci.org/EBISPOT/duo', type: travis-ci}
+  - {id: 'https://travis-ci.org/EBISPOT/DUO', type: travis-ci}
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
@@ -701,8 +702,8 @@ ontologies:
   products:
   - {id: duo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/duo.owl'}
   - {id: duo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/duo.obo'}
-  title: DUO
-  tracker: https://github.com/EBISPOT/duo/issues
+  title: The Data Use Ontology
+  tracker: https://github.com/EBISPOT/DUO/issues
 - build: {infallible: 1, method: obo2owl, notes: switch to vcs, source_url: 'https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.obo'}
   contact: {email: MChibucos@som.umaryland.edu, label: 'Chibucos, Marcus'}
   description: An ontology for experimental and other evidence statements.
@@ -2151,9 +2152,9 @@ ontologies:
   - {id: stato.owl, ontology_purl: 'http://purl.obolibrary.org/obo/stato.owl'}
   title: The Statistical Methods Ontology
   tracker: https://github.com/ISA-tools/stato/issues
-- build: {method: owl2obo, source_url: 'http://theswo.svn.sourceforge.net/viewvc/theswo/trunk/src/release/swoinowl/swo_merged/swo_merged.owl'}
-  contact: {email: parkinson@ebi.ac.uk, label: Helen Parkinson}
-  homepage: http://www.ebi.ac.uk/efo/swo
+- build: {method: owl2obo, source_url: 'https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl'}
+  contact: {email: allyson.lister@oerc.ox.ac.uk, label: Allyson Lister}
+  homepage: http://theswo.sourceforge.net
   id: swo
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/swo.owl
@@ -2479,6 +2480,10 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/wbphenotype.owl
   products:
   - {id: wbphenotype.owl, ontology_purl: 'http://purl.obolibrary.org/obo/wbphenotype.owl'}
+  - {id: wbphenotype.obo, ontology_purl: 'http://purl.obolibrary.org/obo/wbphenotype.obo'}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995', title: 'Worm Phenotype
+      Ontology: integrating phenotype data within and beyond the C. elegans community.'}
   taxon: {id: 'NCBITaxon:6237', label: Caenorhabditis}
   title: C. elegans phenotype
 - browsers:

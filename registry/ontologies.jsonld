@@ -12,9 +12,8 @@
             ],
             "build": {
                 "infallible": 1,
-                "method": "archive",
-                "path": "archive/main",
-                "source_url": "http://build.berkeleybop.org/job/build-chebi/lastSuccessfulBuild/artifact/*zip*/archive.zip"
+                "method": "obo2owl",
+                "source_url": "ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo"
             },
             "contact": {
                 "email": "gowen@ebi.ac.uk",
@@ -540,9 +539,9 @@
                 "system": "git"
             },
             "contact": {
-                "email": "c.aubert@cgiar.org",
-                "github": "celineaubert",
-                "label": "Celine Aubert"
+                "email": "m.a.laporte@cgiar.org",
+                "github": "marieALaporte",
+                "label": "Marie-Ang\u00e9lique Laporte"
             },
             "dependencies": [
                 {
@@ -578,7 +577,7 @@
             "license": {
                 "label": "CC-BY",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "mailing_list": "https://groups.google.com/group/agronomyOntology",
             "ontology_purl": "http://purl.obolibrary.org/obo/agro.owl",
@@ -1400,11 +1399,11 @@
                 }
             ],
             "description": "DUO is an ontology which represent data use conditions.",
-            "homepage": "https://github.com/EBISPOT/duo",
+            "homepage": "https://github.com/EBISPOT/DUO",
             "id": "duo",
             "jobs": [
                 {
-                    "id": "https://travis-ci.org/EBISPOT/duo",
+                    "id": "https://travis-ci.org/EBISPOT/DUO",
                     "type": "travis-ci"
                 }
             ],
@@ -1425,8 +1424,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/duo.obo"
                 }
             ],
-            "title": "DUO",
-            "tracker": "https://github.com/EBISPOT/duo/issues"
+            "title": "The Data Use Ontology",
+            "tracker": "https://github.com/EBISPOT/DUO/issues"
         },
         {
             "build": {
@@ -4422,13 +4421,13 @@
         {
             "build": {
                 "method": "owl2obo",
-                "source_url": "http://theswo.svn.sourceforge.net/viewvc/theswo/trunk/src/release/swoinowl/swo_merged/swo_merged.owl"
+                "source_url": "https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl"
             },
             "contact": {
-                "email": "parkinson@ebi.ac.uk",
-                "label": "Helen Parkinson"
+                "email": "allyson.lister@oerc.ox.ac.uk",
+                "label": "Allyson Lister"
             },
-            "homepage": "http://www.ebi.ac.uk/efo/swo",
+            "homepage": "http://theswo.sourceforge.net",
             "id": "swo",
             "layout": "ontology_detail",
             "ontology_purl": "http://purl.obolibrary.org/obo/swo.owl",
@@ -5155,6 +5154,16 @@
                 {
                     "id": "wbphenotype.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/wbphenotype.owl"
+                },
+                {
+                    "id": "wbphenotype.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/wbphenotype.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995",
+                    "title": "Worm Phenotype Ontology: integrating phenotype data within and beyond the C. elegans community."
                 }
             ],
             "taxon": {

@@ -15,6 +15,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 
 - BRENDA tissue / enzyme source (bto): [The BRENDA Tissue Ontology (BTO): the first all-integrating ontology of all organisms for enzyme sources](https://www.ncbi.nlm.nih.gov/pubmed/21030441)
 - Biological Spatial Ontology (bspo): [Nose to tail, roots to shoots: spatial descriptors for phenotypic diversity in the Biological Spatial Ontology.](http://www.ncbi.nlm.nih.gov/pubmed/25140222)
+- C. elegans phenotype (wbphenotype): [Worm Phenotype Ontology: integrating phenotype data within and beyond the C. elegans community.](http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995)
 - Clinical measurement ontology (cmo): [Three ontologies to define phenotype measurement data.](http://www.ncbi.nlm.nih.gov/pubmed/22654893)
 - Drosophila Phenotype Ontology (dpo): [The Drosophila phenotype ontology.](http://dx.doi.org/10.1186/2041-1480-4-30)
 - Drosophila gross anatomy (fbbt): [The Drosophila anatomy ontology. [Journal of Biomedical Semantics](http://dx.doi.org/10.1186/2041-1480-4-32)
