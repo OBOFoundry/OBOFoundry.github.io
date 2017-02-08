@@ -13,7 +13,7 @@ contact:
   email: smr@stowers.org
   label: Sofia Robb
 description: planaria-ontology is an ontology for planarian anatomy and developmental stages of S.med
-domain: stuff
+domain: anatomy
 homepage: https://github.com/obophenotype/planaria-ontology
 products:
   - id: plana.owl
