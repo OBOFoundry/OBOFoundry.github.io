@@ -19,7 +19,7 @@ build:
   source_url: https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_anatomy.obo
   method: obo2owl
   insert_ontology_id: true
-tracker: http://sourceforge.net/tracker/?group_id=76834&atid=974664
+tracker: https://github.com/dictyBase/migration-data/issues
 ---
 
 A structured controlled vocabulary of the anatomy of the slime-mould <i>Dictyostelium discoideum</i>.
