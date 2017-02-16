@@ -16,7 +16,6 @@ description: DUO is an ontology which represent data use conditions.
 homepage: https://github.com/EBISPOT/DUO
 products:
   - id: duo.owl
-  - id: duo.obo
 dependencies:
  - id: iao
  - id: bfo
