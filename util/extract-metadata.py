@@ -84,6 +84,9 @@ def validate_structure(obj,md):
     #    errs.append("No description: "+id+" " + ("OBS" if is_obs else ""))
     if 'layout' not in obj:
         errs.append("No layout tag: "+id+" -- this is required for proper rendering")
+    # if no products the resource won't be loaded on OLS
+    if 'products' not in obj:
+        errs.append("No product tag: "+id+" -- a product is required for loading on OLS")
     return errs
 
 def concat_ont_yaml(args):
