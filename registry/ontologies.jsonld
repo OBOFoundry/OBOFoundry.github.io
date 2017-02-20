@@ -875,7 +875,7 @@
         {
             "build": {
                 "method": "owl2obo",
-                "source_url": "http://semanticchemistry.googlecode.com/svn/trunk/ontology/cheminf.owl"
+                "source_url": "https://raw.githubusercontent.com/egonw/semanticchemistry/master/ontology/cheminf.owl"
             },
             "contact": {
                 "email": "egon.willighagen@gmail.com",
@@ -1197,6 +1197,7 @@
         },
         {
             "build": {
+                "insert_ontology_id": true,
                 "method": "obo2owl",
                 "source_url": "https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_anatomy.obo"
             },
@@ -1214,6 +1215,10 @@
                 {
                     "id": "ddanat.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/ddanat.owl"
+                },
+                {
+                    "id": "ddanat.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ddanat.obo"
                 }
             ],
             "taxon": {
@@ -1221,7 +1226,7 @@
                 "label": "Dictyostelium discoideum"
             },
             "title": "Dictyostelium discoideum anatomy",
-            "tracker": "http://sourceforge.net/tracker/?group_id=76834&atid=974664",
+            "tracker": "https://github.com/dictyBase/migration-data/issues",
             "twitter": "dictybase"
         },
         {
@@ -1418,10 +1423,6 @@
                 {
                     "id": "duo.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/duo.owl"
-                },
-                {
-                    "id": "duo.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/duo.obo"
                 }
             ],
             "title": "The Data Use Ontology",
@@ -2598,6 +2599,13 @@
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
+            "ontology_purl": "http://purl.obolibrary.org/obo/ico.owl",
+            "products": [
+                {
+                    "id": "ico.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ico.owl"
+                }
+            ],
             "title": "Informed Consent Ontology",
             "tracker": "https://github.com/ICO-ontology/ICO/issues"
         },

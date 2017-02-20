@@ -425,7 +425,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:6605', label: Cephalopod}
   title: Cephalopod Ontology
   tracker: https://github.com/obophenotype/cephalopod-ontology/issues
-- build: {method: owl2obo, source_url: 'http://semanticchemistry.googlecode.com/svn/trunk/ontology/cheminf.owl'}
+- build: {method: owl2obo, source_url: 'https://raw.githubusercontent.com/egonw/semanticchemistry/master/ontology/cheminf.owl'}
   contact: {email: egon.willighagen@gmail.com, label: Egon Willighagen}
   description: Includes terms for the descriptors commonly used in cheminformatics
     software applications and the algorithms which generate them.
@@ -580,7 +580,7 @@ ontologies:
   - {id: cvdo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/cvdo.owl'}
   title: Cardiovascular Disease Ontology
   tracker: https://github.com/OpenLHS/CVDO/issues
-- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_anatomy.obo'}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_anatomy.obo'}
   contact: {email: r-chisholm@northwestern.edu, label: Rex Chisholm}
   description: A structured controlled vocabulary of the anatomy of the slime-mould
     <i>Dictyostelium discoideum</i>.
@@ -591,9 +591,10 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/ddanat.owl
   products:
   - {id: ddanat.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ddanat.owl'}
+  - {id: ddanat.obo, ontology_purl: 'http://purl.obolibrary.org/obo/ddanat.obo'}
   taxon: {id: 'NCBITaxon:44689', label: Dictyostelium discoideum}
   title: Dictyostelium discoideum anatomy
-  tracker: http://sourceforge.net/tracker/?group_id=76834&atid=974664
+  tracker: https://github.com/dictyBase/migration-data/issues
   twitter: dictybase
 - build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_phenotypes.obo'}
   contact: {email: r-chisholm@northwestern.edu, label: Rex Chisholm}
@@ -689,7 +690,6 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/duo.owl
   products:
   - {id: duo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/duo.owl'}
-  - {id: duo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/duo.obo'}
   title: The Data Use Ontology
   tracker: https://github.com/EBISPOT/DUO/issues
 - build: {infallible: 1, method: obo2owl, notes: switch to vcs, source_url: 'https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.obo'}
@@ -1234,6 +1234,9 @@ ontologies:
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/ico.owl
+  products:
+  - {id: ico.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ico.owl'}
   title: Informed Consent Ontology
   tracker: https://github.com/ICO-ontology/ICO/issues
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/ido.owl'}
