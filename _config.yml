@@ -619,6 +619,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/ddpheno.owl
   products:
   - {id: ddpheno.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ddpheno.owl'}
+  - {id: ddpheno.obo, ontology_purl: 'http://purl.obolibrary.org/obo/ddpheno.obo'}
   taxon: {id: 'NCBITaxon:44689', label: Dictyostelium discoideum}
   title: Dictyostelium discoideum phenotype
   twitter: dictybase
@@ -1907,6 +1908,28 @@ ontologies:
   - {id: pdumdv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/pdumdv.owl'}
   - {id: pdumdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/pdumdv.obo'}
   title: Platynereis Developmental Stages
+- build: {checkout: 'git clone https://github.com/obophenotype/planaria-ontology.git',
+    path: ., system: git}
+  contact: {email: smr@stowers.org, label: Sofia Robb}
+  dependencies:
+  - {id: ro}
+  - {id: uberon}
+  description: planaria-ontology is an ontology for planarian anatomy and developmental
+    stages of S.med
+  domain: anatomy
+  homepage: https://github.com/obophenotype/planaria-ontology
+  id: plana
+  jobs:
+  - {id: 'https://travis-ci.org/obophenotype/planaria-ontology', type: travis-ci}
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/plana.owl
+  products:
+  - {id: plana.owl, ontology_purl: 'http://purl.obolibrary.org/obo/plana.owl'}
+  - {id: plana.obo, ontology_purl: 'http://purl.obolibrary.org/obo/plana.obo'}
+  title: planaria-ontology
+  tracker: https://github.com/obophenotype/planaria-ontology/issues
 - build: {checkout: 'git clone https://github.com/obophenotype/porifera-ontology.git',
     infallible: 1, method: vcs, path: ., system: git}
   contact: {email: robert.thacker@stonybrook.edu, label: Bob Thacker}
