@@ -10,6 +10,7 @@ homepage: http://dictybase.org/
 twitter: dictybase
 products:
   - id: ddpheno.owl
+  - id: ddpheno.obo
 taxon:
   id: NCBITaxon:44689
   label: Dictyostelium discoideum
