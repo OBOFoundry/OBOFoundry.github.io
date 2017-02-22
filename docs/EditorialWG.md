@@ -34,19 +34,12 @@ Current activities are focused on creating guidelines for reviews. Once those gu
 (in alphabetical order)<br>
 <br>
 Melissa Haendel<br>
-<br>
 Darren Natale<br>
-<br>
 Bjoern Peters<br>
-<br>
 Philippe Rocca-Serra<br>
-<br>
 Alan Ruttenberg<br>
-<br>
 Lynn Schriml<br>
-<br>
 Chris Stoeckert<br>
-<br>
 Ramona Walls<br>
 
 Membership in the OBO Foundry Editorial WG is open to all members of the OBO Foundry Operations Committee who are willing to actively participate. If you are interested in joining the working group, send an email to the mailing list.<br>
