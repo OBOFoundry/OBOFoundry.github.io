@@ -7,6 +7,7 @@ homepage: http://www.xenbase.org/anatomy/xao.do?method=display
 in_foundry_order: 1
 products:
   - id: xao.owl
+  - id: xao.obo
 taxon:
   id: NCBITaxon:8353
   label: Xenopus
