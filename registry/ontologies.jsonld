@@ -416,6 +416,10 @@
                 {
                     "id": "xao.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/xao.owl"
+                },
+                {
+                    "id": "xao.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/xao.obo"
                 }
             ],
             "publications": [
@@ -3405,6 +3409,32 @@
                 }
             ],
             "title": "Ontology of Adverse Events"
+        },
+        {
+            "contact": {
+                "email": "mjyoder@illinois.edu",
+                "label": "Matt Yoder"
+            },
+            "description": "OArCS is an ontology describing the Arthropod ciruclatory system.",
+            "domain": "anatomy",
+            "homepage": null,
+            "id": "oarcs",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/oarcs.owl",
+            "products": [
+                {
+                    "id": "oarcs.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/oarcs.owl"
+                }
+            ],
+            "repository": "http://http://oarcs.speciesfilegroup.org",
+            "title": "Ontology of Arthropod Circulatory Systems",
+            "tracker": "https://github.com/aszool/oarcs/issues"
         },
         {
             "build": {
