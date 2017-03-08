@@ -5,7 +5,7 @@ contact:
   email: g.gkoutos@gmail.com
   label: George Gkoutos
 domain: behavior
-homepage: https://github.com/bio-ontology-research-group/behavior-ontology/wiki
+homepage: https://github.com/obo-behavior/behavior-ontology
 products:
   - id: nbo.owl
 title: Neuro Behavior Ontology
@@ -17,10 +17,8 @@ browsers:
     title: BioPortal Ontology Browser
     url: https://bioportal.bioontology.org/ontologies/NBO
 build:
-  checkout: git clone https://github.com/bio-ontology-research-group/behavior-ontology.git
-  system: git
-  path: .
-  method: vcs
-tracker: https://github.com/bio-ontology-research-group/behavior-ontology/issues
+  source_url: https://raw.githubusercontent.com/obo-behavior/behavior-ontology/master/nbo-edit.owl
+  method: owl2obo
+tracker: https://github.com/obo-behavior/behavior-ontology/issues
 ---
 
