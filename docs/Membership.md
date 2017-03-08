@@ -30,5 +30,5 @@ Current members of the OBO Foundry Operations Committee are: (in alphabetical or
  * Lynn Schriml (E,O) (OBO coordinator)
  * Barry Smith (OBO coordinator) (O)
  * Chris Stoeckert (O), University of Pennsylvania, Philadelphia, PA, USA
- * [Ramona Walls](http://www.iplantcollaborative.org/about-iplant/science/science-team) (E, O), The iPlant Collaborative, University of Arizona, Tucson, AZ, USA
+ * [Ramona Walls](http://www.cyverse.org/ramona-walls) (E, T), CyVerse, University of Arizona, Tucson, AZ, USA
  * [Jie Zheng](http://cbil.upenn.edu/profile-staff_bio/39) (T), University of Pennsylvania, Philadelphia, USA
