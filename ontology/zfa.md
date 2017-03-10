@@ -10,6 +10,7 @@ domain: anatomy
 homepage: http://zfin.org/zf_info/anatomy/dict/sum.html
 products:
   - id: zfa.owl
+  - id: zfa.obo
 taxon:
   id: NCBITaxon:7954
   label: Danio
