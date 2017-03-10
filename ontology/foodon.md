@@ -13,16 +13,17 @@ license:
   label: CC-BY
 products:
   - id: foodon.owl
-  - id: foodon.obo
-    homepage: http://foodontology.github.io/foodon/
+  - id: foodon_core.owl
 title: FOODON
 dependencies:
  - id: uberon
  - id: ro
+ - id: eo
  - id: chebi
  - id: ncbitaxon
  - id: bfo
  - id: envo
+ - id: obi
 tracker: https://github.com/FoodOntology/foodon/issues/
 ---
 
