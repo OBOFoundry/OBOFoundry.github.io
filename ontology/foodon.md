@@ -13,7 +13,11 @@ license:
   label: CC-BY
 products:
   - id: foodon.owl
+    title: FoodOn full ontology including 9000 SIREN indexed food products
+    format: owl-rdf/xml
   - id: foodon_core.owl
+    title: FoodOn core ontology (without SIREN)
+    format: owl-rdf/xml
 title: FOODON
 dependencies:
  - id: uberon
