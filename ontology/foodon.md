@@ -13,16 +13,21 @@ license:
   label: CC-BY
 products:
   - id: foodon.owl
-  - id: foodon.obo
-    homepage: http://foodontology.github.io/foodon/
+    title: FoodOn full ontology including 9000 SIREN indexed food products
+    format: owl-rdf/xml
+  - id: foodon_core.owl
+    title: FoodOn core ontology (without SIREN)
+    format: owl-rdf/xml
 title: FOODON
 dependencies:
  - id: uberon
  - id: ro
+ - id: eo
  - id: chebi
  - id: ncbitaxon
  - id: bfo
  - id: envo
+ - id: obi
 tracker: https://github.com/FoodOntology/foodon/issues/
 ---
 
