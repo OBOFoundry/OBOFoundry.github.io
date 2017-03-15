@@ -24,7 +24,8 @@ Our meeting minutes are shared on Google Docs. Access is restricted to OFOC memb
 - 2017-03-21 Darren 
 - 2017-03-07 Ramona
 - 2017-02-21 Lynn
-- [2017-02-07](https://docs.google.com/document/d/1gxbh5Csuh7GxCx0EKzjkvZZ88jLdAyMW7ez0V2eKc-M/edit)
+
+[Meeting Notes](https://docs.google.com/document/d/1gxbh5Csuh7GxCx0EKzjkvZZ88jLdAyMW7ez0V2eKc-M/edit)
 
 ### 2016
 - 2016-07-26 Bjoern
