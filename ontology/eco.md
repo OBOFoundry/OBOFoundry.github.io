@@ -8,6 +8,9 @@ tracker: https://github.com/evidenceontology/evidenceontology/issues
 products:
   - id: eco.owl
   - id: eco.obo
+  - id: eco/gaf-eco-mapping.txt
+    type: Mapping
+    title: Mapping between ECO classes and Gene Ontology codes
 title: Evidence ontology
 jobs:
   - id: https://travis-ci.org/evidenceontology/evidenceontology
