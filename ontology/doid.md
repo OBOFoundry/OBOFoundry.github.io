@@ -13,11 +13,7 @@ homepage: http://www.disease-ontology.org
 DO wiki: http://diseaseontology.sourceforge.net/
 products:
   - id: doid.owl  
-    type: owl:Ontology
-    title:"Disease Ontology inferred hierarchy that includes anatomy, cell of origin, infectious agent and phenotype axioms" 
   - id: doid.obo  
-    type:obo:Ontology
-    title:"Disease Ontology asserted is_a hierarchy" 
 browsers:
   - label: DO
     title: DO Browser
