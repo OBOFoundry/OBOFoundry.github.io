@@ -12,8 +12,8 @@ domain: disease
 homepage: http://www.disease-ontology.org
 DO wiki: http://diseaseontology.sourceforge.net/
 products:
-  - id: doid.owl
-  - id: doid.obo
+  - id: doid.owl  -Disease Ontology inferred hierarchy 
+  - id: doid.obo  -Disease Ontology asserted is_a hierarchy 
 browsers:
   - label: DO
     title: DO Browser
