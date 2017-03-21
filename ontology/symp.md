@@ -15,7 +15,7 @@ taxon:
   label: Homo sapiens
 title: Symptom Ontology
 build:
-  source_url: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/blob/master/symp.obo
+  source_url: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/master/symp.obo
   method: obo2owl
   infallible: 1
 tracker: https://github.com/DiseaseOntology/SymptomOntology/issues
