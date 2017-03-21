@@ -13,7 +13,7 @@ products:
 title: Pathogen Transmission Ontology
 
 build:
-  source_url: https://github.com/DiseaseOntology/PathogenTransmissionOntology/blob/master/src/ontology/transmission_process.obo
+  source_url: https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/blob/master/src/ontology/transmission_process.obo
   method: obo2owl
   infallible: 1
 tracker: https://github.com/DiseaseOntology/PathogenTransmissionOntology/issues
