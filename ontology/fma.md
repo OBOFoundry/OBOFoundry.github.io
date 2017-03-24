@@ -6,7 +6,7 @@ contact:
   label: Onard Mejino
 description: This is currently a slimmed down version of FMA
 domain: anatomy
-homepage: http://sig.biostr.washington.edu/projects/fm/index.html
+homepage: http://si.washington.edu/projects/fma
 page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/18688289
