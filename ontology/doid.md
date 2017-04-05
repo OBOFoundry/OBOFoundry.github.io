@@ -33,8 +33,8 @@ publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409
     title: "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0 Universal
 ---
 
 Creating a comprehensive classification of human diseases organized by etiology.
