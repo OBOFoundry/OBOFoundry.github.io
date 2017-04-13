@@ -60,7 +60,7 @@ The PURLs should be resolvable in OntoBee. E.g.
 
  * [http://purl.obolibrary.org/obo/NCBITaxon_9606](http://purl.obolibrary.org/obo/NCBITaxon_9606) (Homo sapiens)
  * http://purl.obolibrary.org/obo/NCBITaxon_7711 (Chordates)
- * http://purl.obolibrary.org/obo/NCBITaxon_7227 (Danio rerio)
+ * http://purl.obolibrary.org/obo/NCBITaxon_7955 (Danio rerio)
 
 ## Releases
 
