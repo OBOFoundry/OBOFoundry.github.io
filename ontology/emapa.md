@@ -9,7 +9,8 @@ domain: anatomy
 homepage: http://emouseatlas.org
 page: http://www.obofoundry.org/wiki/index.php/EMAPA:Main_Page
 products:
-  - id: emap.owl
+  - id: emapa.owl
+  - id: emapa.obo
 taxon:
   id: NCBITaxon:10088
   label: Mus
