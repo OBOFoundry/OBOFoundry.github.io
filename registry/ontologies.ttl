@@ -126,6 +126,34 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/aero.owl" .
 
+<http://purl.obolibrary.org/obo/aero>
+        <http://obofoundry.github.io/vocabulary/has_build_information>
+                [ <http://obofoundry.github.io/vocabulary/method>
+                          "owl2obo" ;
+                  <http://obofoundry.github.io/vocabulary/source_url>
+                          "http://purl.obolibrary.org/obo/aero.owl"
+                ] ;
+        <http://purl.org/dc/elements/1.1/description>
+                "The Adverse Event Reporting Ontology (AERO) is an ontology aimed at supporting clinicians at the time of data entry, increasing quality and accuracy of reported adverse events" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Adverse Event Reporting Ontology" ;
+        <http://purl.org/dc/terms/1.1/license>
+                <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/theme>
+                "health" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/aero.owl" ;
+        <http://www.w3.org/ns/dcat#contactPoint>
+                [ <http://www.w3.org/2000/01/rdf-schema#label>
+                          "Melanie Courtot" ;
+                  <http://xmlns.com/foaf/0.1/mbox>
+                          "mcourtot@gmail.com"
+                ] ;
+        <http://www.w3.org/ns/dcat#distribution>
+                <http://purl.obolibrary.org/obo/aero.owl> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <http://purl.obolibrary.org/obo/aero> .
+
 <http://purl.obolibrary.org/obo/mp>
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>
                 <http://www.informatics.jax.org/searches/MP_form.shtml> , <http://monarchinitiative.org/phenotype/MP:0000001> ;
@@ -159,34 +187,6 @@
                 <http://www.informatics.jax.org/searches/MP_form.shtml> ;
         <http://xmlns.com/foaf/0.1/page>
                 <https://github.com/obophenotype/mammalian-phenotype-ontology> .
-
-<http://purl.obolibrary.org/obo/aero>
-        <http://obofoundry.github.io/vocabulary/has_build_information>
-                [ <http://obofoundry.github.io/vocabulary/method>
-                          "owl2obo" ;
-                  <http://obofoundry.github.io/vocabulary/source_url>
-                          "http://purl.obolibrary.org/obo/aero.owl"
-                ] ;
-        <http://purl.org/dc/elements/1.1/description>
-                "The Adverse Event Reporting Ontology (AERO) is an ontology aimed at supporting clinicians at the time of data entry, increasing quality and accuracy of reported adverse events" ;
-        <http://purl.org/dc/elements/1.1/title>
-                "Adverse Event Reporting Ontology" ;
-        <http://purl.org/dc/terms/1.1/license>
-                <http://creativecommons.org/licenses/by/3.0/> ;
-        <http://purl.org/dc/terms/1.1/theme>
-                "health" ;
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/aero.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>
-                [ <http://www.w3.org/2000/01/rdf-schema#label>
-                          "Melanie Courtot" ;
-                  <http://xmlns.com/foaf/0.1/mbox>
-                          "mcourtot@gmail.com"
-                ] ;
-        <http://www.w3.org/ns/dcat#distribution>
-                <http://purl.obolibrary.org/obo/aero.owl> ;
-        <http://xmlns.com/foaf/0.1/homepage>
-                <http://purl.obolibrary.org/obo/aero> .
 
 <http://purl.obolibrary.org/obo/olatdv.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -1134,13 +1134,13 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <https://github.com/pato-ontology/pato/> .
 
-<http://purl.obolibrary.org/obo/zeco.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/zeco.owl" .
-
 <http://purl.obolibrary.org/obo/cmo.obo>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/cmo.obo" .
+
+<http://purl.obolibrary.org/obo/zeco.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/zeco.owl" .
 
 <http://purl.obolibrary.org/obo/mod>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -1233,6 +1233,26 @@
         <http://purl.org/dc/elements/1.1/title>
                 "RGD Ontology Browser" .
 
+<http://purl.obolibrary.org/obo/mondo>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "MonDO" ;
+        <http://purl.obolibrary.org/obo/IAO_0000136>
+                <http://purl.obolibrary.org/obo/NCBITaxon_33208> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Monarch Disease Ontology" ;
+        <http://purl.org/dc/terms/1.1/license>
+                <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/theme>
+                "disease" ;
+        <http://usefulinc.com/ns/doap#bug-database>
+                "https://github.com/monarch-initiative/monarch-disease-ontology/issues" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/mondo.owl" ;
+        <http://www.w3.org/ns/dcat#distribution>
+                <http://purl.obolibrary.org/obo/mondo.obo> , <http://purl.obolibrary.org/obo/mondo.owl> .
+
 <http://purl.obolibrary.org/obo/fbcv>
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>
                 <http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000013> ;
@@ -1270,7 +1290,7 @@
                 [ <http://obofoundry.github.io/vocabulary/method>
                           "obo2owl" ;
                   <http://obofoundry.github.io/vocabulary/source_url>
-                          "https://github.com/DiseaseOntology/SymptomOntology/blob/master/symp.obo"
+                          "https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/master/symp.obo"
                 ] ;
         <http://purl.obolibrary.org/obo/IAO_0000136>
                 <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
@@ -2346,10 +2366,6 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://4dx.embl.de/4DXpress> .
 
-<http://purl.obolibrary.org/obo/NCBITaxon_4751>
-        <http://www.w3.org/2000/01/rdf-schema#label>
-                "Fungal" .
-
 <http://purl.obolibrary.org/obo/stato>
         <http://purl.org/dc/elements/1.1/description>
                 "STATO is a general-purpose STATistics Ontology. Its aim is to provide coverage for processes such as statistical tests, their conditions of application, and information needed or resulting from statistical methods, such as probability distributions, variables, spread and variation metrics. STATO also covers aspects of experimental design and description of plots and graphical representations commonly used to provide visual cues of data distribution or layout and to assist review of the results." ;
@@ -2374,7 +2390,13 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://stato-ontology.org/> .
 
+<http://purl.obolibrary.org/obo/NCBITaxon_4751>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Fungal" .
+
 <http://purl.obolibrary.org/obo/doid.owl>
+        <http://purl.org/dc/elements/1.1/title>
+                "Disease Ontology inferred hierarchy that includes anatomy, cell of origin, infectious agent and phenotype axioms" ;
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/doid.owl" .
 
@@ -2516,6 +2538,8 @@
                 "Planteome browser" .
 
 <http://purl.obolibrary.org/obo/doid.obo>
+        <http://purl.org/dc/elements/1.1/title>
+                "Disease Ontology asserted is_a hierarchy (this file is equivalent to DO's previous HumanDO.obo file)" ;
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/doid.obo" .
 
@@ -2736,6 +2760,10 @@
                 "Gene Ontology AmiGO 2 Browser" .
 
 <http://purl.obolibrary.org/obo/foodon.owl>
+        <http://purl.org/dc/elements/1.1/title>
+                "FoodOn full ontology including 9000 SIREN indexed food products" ;
+        <http://purl.org/dc/terms/1.1/format>
+                "owl-rdf/xml" ;
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/foodon.owl" .
 
@@ -2990,13 +3018,13 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/pdumdv.owl" .
 
-<http://purl.obolibrary.org/obo/mirnao.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/mirnao.owl" .
-
 <http://purl.obolibrary.org/obo/bcgo.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/bcgo.owl" .
+
+<http://purl.obolibrary.org/obo/mirnao.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/mirnao.owl" .
 
 <http://purl.obolibrary.org/obo/nbo.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -3042,12 +3070,6 @@
         <http://purl.org/dc/elements/1.1/title>
                 "The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications." .
 
-<http://purl.obolibrary.org/obo/foodon.obo>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/foodon.obo" ;
-        <http://xmlns.com/foaf/0.1/homepage>
-                <http://foodontology.github.io/foodon/> .
-
 <http://purl.obolibrary.org/obo/oba.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/oba.owl" .
@@ -3065,10 +3087,6 @@
                 "Vertebrate Homologous Ontology Group Ontology" ;
         <http://www.w3.org/ns/dcat#distribution>
                 <http://purl.obolibrary.org/obo/vhog.owl> .
-
-<http://purl.obolibrary.org/obo/xl.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/xl.owl" .
 
 <http://purl.obolibrary.org/obo/ddanat>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -3101,6 +3119,10 @@
                 <http://purl.obolibrary.org/obo/dictybase> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://dictybase.org/> .
+
+<http://purl.obolibrary.org/obo/xl.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/xl.owl" .
 
 <http://purl.obolibrary.org/obo/idomal.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -3274,10 +3296,10 @@
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>
                 <https://bioportal.bioontology.org/ontologies/NBO> ;
         <http://obofoundry.github.io/vocabulary/has_build_information>
-                [ <http://obofoundry.github.io/vocabulary/checkout>
-                          "git clone https://github.com/bio-ontology-research-group/behavior-ontology.git" ;
-                  <http://obofoundry.github.io/vocabulary/method>
-                          "vcs"
+                [ <http://obofoundry.github.io/vocabulary/method>
+                          "owl2obo" ;
+                  <http://obofoundry.github.io/vocabulary/source_url>
+                          "https://raw.githubusercontent.com/obo-behavior/behavior-ontology/master/nbo.owl"
                 ] ;
         <http://purl.org/dc/elements/1.1/title>
                 "Neuro Behavior Ontology" ;
@@ -3286,7 +3308,7 @@
         <http://purl.org/dc/terms/1.1/theme>
                 "behavior" ;
         <http://usefulinc.com/ns/doap#bug-database>
-                "https://github.com/bio-ontology-research-group/behavior-ontology/issues" ;
+                "https://github.com/obo-behavior/behavior-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/nbo.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>
@@ -3298,7 +3320,7 @@
         <http://www.w3.org/ns/dcat#distribution>
                 <http://purl.obolibrary.org/obo/nbo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
-                <https://github.com/bio-ontology-research-group/behavior-ontology/wiki> .
+                <https://github.com/obo-behavior/behavior-ontology/> .
 
 <http://purl.obolibrary.org/obo/depictions.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -3538,10 +3560,6 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/fbbt/fbbt-simple.obo" .
 
-<http://purl.obolibrary.org/obo/wbls.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/wbls.owl" .
-
 <http://www.ncbi.nlm.nih.gov/pubmed/24139024>
         <http://purl.org/dc/elements/1.1/title>
                 "Enhanced XAO: the ontology of Xenopus anatomy and development underpins more accurate annotation of gene expression and queries on Xenbase." .
@@ -3553,6 +3571,10 @@
 <http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl" .
+
+<http://purl.obolibrary.org/obo/wbls.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/wbls.owl" .
 
 <http://purl.obolibrary.org/obo/ppo.owl>
         <http://www.w3.org/ns/dcat#accessURL>
@@ -3638,7 +3660,7 @@
                           "zfinadmin@zfin.org"
                 ] ;
         <http://www.w3.org/ns/dcat#distribution>
-                <http://purl.obolibrary.org/obo/zfa.owl> ;
+                <http://purl.obolibrary.org/obo/zfa.obo> , <http://purl.obolibrary.org/obo/zfa.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://zfin.org/zf_info/anatomy/dict/sum.html> .
 
@@ -3831,34 +3853,6 @@
         <http://xmlns.com/foaf/0.1/page>
                 <http://www.psidev.info/groups/controlled-vocabularies> .
 
-<http://purl.obolibrary.org/obo/xao>
-        <http://obofoundry.github.io/vocabulary/has_build_information>
-                [ <http://obofoundry.github.io/vocabulary/method>
-                          "obo2owl" ;
-                  <http://obofoundry.github.io/vocabulary/source_url>
-                          "https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo"
-                ] ;
-        <http://purl.obolibrary.org/obo/IAO_0000136>
-                <http://purl.obolibrary.org/obo/NCBITaxon_8353> ;
-        <http://purl.org/dc/elements/1.1/description>
-                "Anatomy and development of the African clawed frog (<i>Xenopus laevis</i>)." ;
-        <http://purl.org/dc/elements/1.1/title>
-                "Xenopus anatomy and development" ;
-        <http://purl.org/dc/terms/1.1/license>
-                <http://creativecommons.org/licenses/by/3.0/> ;
-        <http://purl.org/dc/terms/1.1/publication>
-                <http://www.ncbi.nlm.nih.gov/pubmed/24139024> , <http://www.ncbi.nlm.nih.gov/pubmed/18817563> ;
-        <http://purl.org/dc/terms/1.1/theme>
-                "anatomy" ;
-        <http://usefulinc.com/ns/doap#bug-database>
-                "https://github.com/xenopus-anatomy/xao/issues" ;
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/xao.owl" ;
-        <http://www.w3.org/ns/dcat#distribution>
-                <http://purl.obolibrary.org/obo/xao.obo> , <http://purl.obolibrary.org/obo/xao.owl> ;
-        <http://xmlns.com/foaf/0.1/homepage>
-                <http://www.xenbase.org/anatomy/xao.do?method=display> .
-
 <http://purl.obolibrary.org/obo/miro>
         <http://obofoundry.github.io/vocabulary/has_build_information>
                 [ <http://obofoundry.github.io/vocabulary/method>
@@ -3886,6 +3880,34 @@
                 <http://purl.obolibrary.org/obo/miro.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://anobase.vectorbase.org> .
+
+<http://purl.obolibrary.org/obo/xao>
+        <http://obofoundry.github.io/vocabulary/has_build_information>
+                [ <http://obofoundry.github.io/vocabulary/method>
+                          "obo2owl" ;
+                  <http://obofoundry.github.io/vocabulary/source_url>
+                          "https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo"
+                ] ;
+        <http://purl.obolibrary.org/obo/IAO_0000136>
+                <http://purl.obolibrary.org/obo/NCBITaxon_8353> ;
+        <http://purl.org/dc/elements/1.1/description>
+                "Anatomy and development of the African clawed frog (<i>Xenopus laevis</i>)." ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Xenopus anatomy and development" ;
+        <http://purl.org/dc/terms/1.1/license>
+                <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>
+                <http://www.ncbi.nlm.nih.gov/pubmed/24139024> , <http://www.ncbi.nlm.nih.gov/pubmed/18817563> ;
+        <http://purl.org/dc/terms/1.1/theme>
+                "anatomy" ;
+        <http://usefulinc.com/ns/doap#bug-database>
+                "https://github.com/xenopus-anatomy/xao/issues" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/xao.owl" ;
+        <http://www.w3.org/ns/dcat#distribution>
+                <http://purl.obolibrary.org/obo/xao.obo> , <http://purl.obolibrary.org/obo/xao.owl> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <http://www.xenbase.org/anatomy/xao.do?method=display> .
 
 <http://purl.obolibrary.org/obo/ogg>
         <http://purl.org/dc/elements/1.1/description>
@@ -4070,6 +4092,14 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/cvdo.owl" .
 
+<http://purl.obolibrary.org/obo/foodon_core.owl>
+        <http://purl.org/dc/elements/1.1/title>
+                "FoodOn core ontology (without SIREN)" ;
+        <http://purl.org/dc/terms/1.1/format>
+                "owl-rdf/xml" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/foodon_core.owl" .
+
 <http://purl.obolibrary.org/obo/clo.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/clo.owl" .
@@ -4103,6 +4133,13 @@
 <http://purl.obolibrary.org/obo/ddpheno.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ddpheno.owl" .
+
+<http://purl.obolibrary.org/obo/eco/gaf-eco-mapping.txt>
+        a       <http://purl.obolibrary.org/obo/Mapping> ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Mapping between ECO classes and Gene Ontology codes" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/eco/gaf-eco-mapping.txt" .
 
 <http://purl.obolibrary.org/obo/iao/dev/iao.owl>
         <http://purl.org/dc/elements/1.1/title>
@@ -4216,6 +4253,16 @@
                 <http://purl.obolibrary.org/obo/omiabis.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <https://github.com/OMIABIS/omiabis-dev> .
+
+<http://purl.obolibrary.org/obo/mondo.owl>
+        <http://purl.org/dc/elements/1.1/description>
+                "Complete ontology, plus inter-ontology equivalence axioms" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Main OWL edition" ;
+        <http://purl.org/dc/terms/1.1/format>
+                "owl-rdf/xml" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/mondo.owl" .
 
 <http://purl.obolibrary.org/obo/pco>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -4683,7 +4730,7 @@
                 [ <http://obofoundry.github.io/vocabulary/method>
                           "obo2owl" ;
                   <http://obofoundry.github.io/vocabulary/source_url>
-                          "https://github.com/DiseaseOntology/PathogenTransmissionOntology/blob/master/src/ontology/transmission_process.obo"
+                          "https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/transmission_process.obo"
                 ] ;
         <http://purl.org/dc/elements/1.1/description>
                 "An ontology representing the disease transmission process during which the pathogen is transmitted directly or indirectly from its natural reservoir, a susceptible host or source to a new host." ;
@@ -4788,6 +4835,16 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://genex.hgu.mrc.ac.uk/> .
 
+<http://purl.obolibrary.org/obo/mondo.obo>
+        <http://purl.org/dc/elements/1.1/description>
+                "As OWL, but omits equivalence axioms" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "obo-format edition" ;
+        <http://purl.org/dc/terms/1.1/format>
+                "obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/mondo.obo" .
+
 <http://purl.obolibrary.org/obo/fbsp.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/fbsp.owl" .
@@ -4805,7 +4862,7 @@
 
 <http://purl.obolibrary.org/obo/foodon>
         <http://obofoundry.github.io/vocabulary/depends_on>
-                <http://purl.obolibrary.org/obo/uberon> , <http://purl.obolibrary.org/obo/chebi> , <http://purl.obolibrary.org/obo/bfo> , <http://purl.obolibrary.org/obo/ro> , <http://purl.obolibrary.org/obo/envo> , <http://purl.obolibrary.org/obo/ncbitaxon> ;
+                <http://purl.obolibrary.org/obo/eo> , <http://purl.obolibrary.org/obo/uberon> , <http://purl.obolibrary.org/obo/chebi> , <http://purl.obolibrary.org/obo/bfo> , <http://purl.obolibrary.org/obo/obi> , <http://purl.obolibrary.org/obo/ro> , <http://purl.obolibrary.org/obo/envo> , <http://purl.obolibrary.org/obo/ncbitaxon> ;
         <http://purl.org/dc/elements/1.1/description>
                 "A broadly scoped ontology representing entities which bear a “food role”.  It encompasses materials in natural ecosystems and food webs as well as human-centric categorization and handling of food." ;
         <http://purl.org/dc/elements/1.1/title>
@@ -4825,7 +4882,7 @@
                           "damion.dooley@bccdc.ca"
                 ] ;
         <http://www.w3.org/ns/dcat#distribution>
-                <http://purl.obolibrary.org/obo/foodon.obo> , <http://purl.obolibrary.org/obo/foodon.owl> ;
+                <http://purl.obolibrary.org/obo/foodon_core.owl> , <http://purl.obolibrary.org/obo/foodon.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://foodontology.github.io/foodon/> ;
         <http://xmlns.com/foaf/0.1/page>
@@ -5100,6 +5157,10 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://www.plantontology.org> .
 
+<http://purl.obolibrary.org/obo/zfa.obo>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/zfa.obo" .
+
 <http://purl.obolibrary.org/obo/vhog.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/vhog.owl" .
@@ -5312,7 +5373,7 @@
         <http://www.w3.org/ns/dcat#distribution>
                 <http://purl.obolibrary.org/obo/fma.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
-                <http://sig.biostr.washington.edu/projects/fm/index.html> ;
+                <http://si.washington.edu/projects/fma> ;
         <http://xmlns.com/foaf/0.1/page>
                 <http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy> .
 
@@ -5402,6 +5463,11 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/fma.owl" .
 
+<https://creativecommons.org/publicdomain/zero/1.0/>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "CC0 1.0 Universal" ;
+        <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png> .
+
 <http://purl.obolibrary.org/obo/ro.owl>
         <http://purl.org/dc/elements/1.1/description>
                 "Canonical edition" ;
@@ -5409,9 +5475,6 @@
                 "Relation Ontology" ;
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ro.owl" .
-
-<https://creativecommons.org/publicdomain/zero/1.0/>
-        <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png> .
 
 <http://purl.obolibrary.org/obo/lipro>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -5489,10 +5552,6 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html> .
 
-<http://www.ncbi.nlm.nih.gov/pubmed/18950739>
-        <http://purl.org/dc/elements/1.1/title>
-                "The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease." .
-
 <http://purl.obolibrary.org/obo/ehdaa2.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/ehdaa2.owl" .
@@ -5500,6 +5559,10 @@
 <http://purl.obolibrary.org/obo/bfo.owl>
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/bfo.owl" .
+
+<http://www.ncbi.nlm.nih.gov/pubmed/18950739>
+        <http://purl.org/dc/elements/1.1/title>
+                "The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease." .
 
 <http://purl.obolibrary.org/obo/omrse>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -5770,13 +5833,13 @@
         <http://www.w3.org/ns/dcat#accessURL>
                 "http://purl.obolibrary.org/obo/so.owl" .
 
-<http://purl.obolibrary.org/obo/eo.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/eo.owl" .
-
 <http://opensource.org/licenses/Artistic-2.0>
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Artistic License 2.0" .
+
+<http://purl.obolibrary.org/obo/eo.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/eo.owl" .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_7399>
         <http://www.w3.org/2000/01/rdf-schema#label>
@@ -5808,7 +5871,7 @@
         <http://purl.org/dc/elements/1.1/title>
                 "Human Disease Ontology" ;
         <http://purl.org/dc/terms/1.1/license>
-                <http://creativecommons.org/licenses/by/3.0/> ;
+                <https://creativecommons.org/publicdomain/zero/1.0/> ;
         <http://purl.org/dc/terms/1.1/publication>
                 <http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409> ;
         <http://purl.org/dc/terms/1.1/theme>
@@ -5829,10 +5892,6 @@
                 <https://www.facebook.com/diseaseontology> , <http://purl.obolibrary.org/obo/diseaseontology> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://www.disease-ontology.org> .
-
-<http://purl.obolibrary.org/obo/fbdv.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/fbdv.owl" .
 
 <http://purl.obolibrary.org/obo/taxrank>
         <http://obofoundry.github.io/vocabulary/has_build_information>
@@ -5904,6 +5963,10 @@
         <http://xmlns.com/foaf/0.1/homepage>
                 <http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology> .
 
+<http://purl.obolibrary.org/obo/fbdv.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/fbdv.owl" .
+
 <http://purl.obolibrary.org/obo/ro.obo>
         <http://purl.org/dc/elements/1.1/description>
                 "Has imports merged in" ;
@@ -5964,7 +6027,7 @@
                           "MChibucos@som.umaryland.edu"
                 ] ;
         <http://www.w3.org/ns/dcat#distribution>
-                <http://purl.obolibrary.org/obo/eco.obo> , <http://purl.obolibrary.org/obo/eco.owl> ;
+                <http://purl.obolibrary.org/obo/eco.obo> , <http://purl.obolibrary.org/obo/eco/gaf-eco-mapping.txt> , <http://purl.obolibrary.org/obo/eco.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>
                 <https://github.com/evidenceontology/evidenceontology/> .
 
@@ -6244,6 +6307,12 @@
         <http://www.w3.org/2000/01/rdf-schema#label>
                 "Mus" .
 
+<http://purl.obolibrary.org/obo/genepio.owl>
+        <http://www.w3.org/ns/dcat#accessURL>
+                "http://purl.obolibrary.org/obo/genepio.owl" ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <http://genepio.github.io/genepio/> .
+
 <http://purl.obolibrary.org/obo/ro/subsets/ro-neuro.owl>
         <http://purl.org/dc/elements/1.1/description>
                 "For use in neuroscience" ;
@@ -6253,12 +6322,6 @@
                 "http://purl.obolibrary.org/obo/ro/subsets/ro-neuro.owl" ;
         <http://xmlns.com/foaf/0.1/page>
                 <http://bioinformatics.oxfordjournals.org/content/28/9/1262.long> .
-
-<http://purl.obolibrary.org/obo/genepio.owl>
-        <http://www.w3.org/ns/dcat#accessURL>
-                "http://purl.obolibrary.org/obo/genepio.owl" ;
-        <http://xmlns.com/foaf/0.1/homepage>
-                <http://genepio.github.io/genepio/> .
 
 <http://purl.obolibrary.org/obo/vsao.owl>
         <http://www.w3.org/ns/dcat#accessURL>

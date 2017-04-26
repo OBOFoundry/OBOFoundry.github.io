@@ -5,11 +5,6 @@ in_foundry_order: 1
 label: GO
 description: An ontology for describing the function of genes and gene products
 title: Gene Ontology
-build:
-  checkout: svn --ignore-externals co svn://ext.geneontology.org/trunk/ontology
-  system: svn
-  method: vcs
-  infallible: 1
 twitter: news4go
 facebook: https://www.facebook.com/Gene-Ontology-305908656519/ 
 tracker: https://github.com/geneontology/go-ontology/issues/

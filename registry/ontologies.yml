@@ -32,12 +32,16 @@ ontologies:
   id: doid
   in_foundry_order: 1
   layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC0 1.0 Universal, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/doid.owl
   products:
-  - {id: doid.owl, ontology_purl: 'http://purl.obolibrary.org/obo/doid.owl'}
-  - {id: doid.obo, ontology_purl: 'http://purl.obolibrary.org/obo/doid.obo'}
+  - {id: doid.owl, ontology_purl: 'http://purl.obolibrary.org/obo/doid.owl', title: 'Disease
+      Ontology inferred hierarchy that includes anatomy, cell of origin, infectious
+      agent and phenotype axioms'}
+  - {id: doid.obo, ontology_purl: 'http://purl.obolibrary.org/obo/doid.obo', title: Disease
+      Ontology asserted is_a hierarchy (this file is equivalent to DO's previous HumanDO.obo
+      file)}
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409', title: 'Disease Ontology
       2015 update: an expanded and updated database of human diseases for linking
@@ -224,6 +228,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/zfa.owl
   products:
   - {id: zfa.owl, ontology_purl: 'http://purl.obolibrary.org/obo/zfa.owl'}
+  - {id: zfa.obo, ontology_purl: 'http://purl.obolibrary.org/obo/zfa.obo'}
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/24568621', title: 'The zebrafish anatomy
       and stage ontologies: representing the anatomy and development of Danio rerio.'}
@@ -708,6 +713,8 @@ ontologies:
   products:
   - {id: eco.owl, ontology_purl: 'http://purl.obolibrary.org/obo/eco.owl'}
   - {id: eco.obo, ontology_purl: 'http://purl.obolibrary.org/obo/eco.obo'}
+  - {id: eco/gaf-eco-mapping.txt, ontology_purl: 'http://purl.obolibrary.org/obo/eco/gaf-eco-mapping.txt',
+    title: Mapping between ECO classes and Gene Ontology codes, type: Mapping}
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/25052702', title: Standardized description
       of scientific evidence using the Evidence Ontology (ECO)}
@@ -1015,7 +1022,7 @@ ontologies:
   contact: {email: mejino@u.washington.edu, label: Onard Mejino}
   description: This is currently a slimmed down version of FMA
   domain: anatomy
-  homepage: http://sig.biostr.washington.edu/projects/fm/index.html
+  homepage: http://si.washington.edu/projects/fma
   id: fma
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/fma.owl
@@ -1033,10 +1040,12 @@ ontologies:
   dependencies:
   - {id: uberon}
   - {id: ro}
+  - {id: eo}
   - {id: chebi}
   - {id: ncbitaxon}
   - {id: bfo}
   - {id: envo}
+  - {id: obi}
   description: "A broadly scoped ontology representing entities which bear a \u201C\
     food role\u201D.  It encompasses materials in natural ecosystems and food webs\
     \ as well as human-centric categorization and handling of food."
@@ -1049,8 +1058,10 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/foodon.owl
   page: https://github.com/FoodOntology/foodon/
   products:
-  - {id: foodon.owl, ontology_purl: 'http://purl.obolibrary.org/obo/foodon.owl'}
-  - {homepage: 'http://foodontology.github.io/foodon/', id: foodon.obo, ontology_purl: 'http://purl.obolibrary.org/obo/foodon.obo'}
+  - {format: owl-rdf/xml, id: foodon.owl, ontology_purl: 'http://purl.obolibrary.org/obo/foodon.owl',
+    title: FoodOn full ontology including 9000 SIREN indexed food products}
+  - {format: owl-rdf/xml, id: foodon_core.owl, ontology_purl: 'http://purl.obolibrary.org/obo/foodon_core.owl',
+    title: FoodOn core ontology (without SIREN)}
   title: FOODON
   tracker: https://github.com/FoodOntology/foodon/issues/
 - build: {infallible: 1, method: obo2owl, source_url: 'https://sourceforge.net/p/pombase/code/HEAD/tree/phenotype_ontology/releases/latest/fypo.obo?format=raw'}
@@ -1462,6 +1473,26 @@ ontologies:
   products:
   - {id: mod.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mod.owl'}
   title: Protein modification
+- canonical: mondo.owl
+  description: a semi-automatically constructed ontology that merges in multiple disease
+    resources to yield a coherent merged ontology
+  domain: disease
+  id: mondo
+  label: MonDO
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/mondo.owl
+  products:
+  - {description: 'Complete ontology, plus inter-ontology equivalence axioms', format: owl-rdf/xml,
+    id: mondo.owl, is_canonical: true, ontology_purl: 'http://purl.obolibrary.org/obo/mondo.owl',
+    title: Main OWL edition}
+  - {derived_from: mondo.owl, description: 'As OWL, but omits equivalence axioms',
+    format: obo, id: mondo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/mondo.obo',
+    title: obo-format edition}
+  taxon: {id: 'NCBITaxon:33208', label: Metazoa}
+  title: Monarch Disease Ontology
+  tracker: https://github.com/monarch-initiative/monarch-disease-ontology/issues
 - build: {method: owl2obo, source_url: 'https://raw.githubusercontent.com/rsc-ontologies/rxno/master/mop.owl'}
   contact: {email: batchelorc@rsc.org, label: Colin Batchelor}
   description: Processes at the molecular level
@@ -1551,11 +1582,10 @@ ontologies:
   title: Mass spectrometry ontology
 - browsers:
   - {label: BioPortal, title: BioPortal Ontology Browser, url: 'https://bioportal.bioontology.org/ontologies/NBO'}
-  build: {checkout: 'git clone https://github.com/bio-ontology-research-group/behavior-ontology.git',
-    method: vcs, path: ., system: git}
+  build: {method: owl2obo, source_url: 'https://raw.githubusercontent.com/obo-behavior/behavior-ontology/master/nbo.owl'}
   contact: {email: g.gkoutos@gmail.com, label: George Gkoutos}
   domain: behavior
-  homepage: https://github.com/bio-ontology-research-group/behavior-ontology/wiki
+  homepage: https://github.com/obo-behavior/behavior-ontology/
   id: nbo
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
@@ -1564,7 +1594,7 @@ ontologies:
   products:
   - {id: nbo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/nbo.owl'}
   title: Neuro Behavior Ontology
-  tracker: https://github.com/bio-ontology-research-group/behavior-ontology/issues
+  tracker: https://github.com/obo-behavior/behavior-ontology/issues
 - browsers:
   - {label: NCBI, title: NCBI Taxonomy Browser, url: 'http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi'}
   build: {infallible: 1, method: archive, path: archive, source_url: 'http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
@@ -2190,7 +2220,7 @@ ontologies:
   products:
   - {id: swo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/swo.owl'}
   title: Software ontology
-- build: {infallible: 1, method: obo2owl, source_url: 'https://github.com/DiseaseOntology/SymptomOntology/blob/master/symp.obo'}
+- build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/master/symp.obo'}
   contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
   description: An ontology of disease symptoms, with symptoms encompasing perceived
     changes in function, sensations or appearance reported by a patient indicative
@@ -2275,7 +2305,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
   title: Plant Trait Ontology
   tracker: https://github.com/Planteome/plant-trait-ontology/issues
-- build: {infallible: 1, method: obo2owl, source_url: 'https://github.com/DiseaseOntology/PathogenTransmissionOntology/blob/master/src/ontology/transmission_process.obo'}
+- build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/transmission_process.obo'}
   contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
   description: An ontology representing the disease transmission process during which
     the pathogen is transmitted directly or indirectly from its natural reservoir,
