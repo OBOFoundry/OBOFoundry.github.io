@@ -52,8 +52,6 @@ ontologies:
   twitter: diseaseontology
 - browsers:
   - {label: AmiGO, title: Gene Ontology AmiGO 2 Browser, url: 'http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab'}
-  build: {checkout: 'svn --ignore-externals co svn://ext.geneontology.org/trunk/ontology',
-    infallible: 1, method: vcs, system: svn}
   dependencies:
   - {id: uberon, subset: go/extensions/uberon_import.owl}
   - {id: cl, subset: go/extensions/cl_import.owl}
@@ -406,6 +404,8 @@ ontologies:
   homepage: http://sourceforge.net/apps/mediawiki/cdao/index.php?title=Main_Page
   id: cdao
   layout: ontology_detail
+  license: {label: CC0 1.0 Universal, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/cdao.owl
   products:
   - {id: cdao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/cdao.owl'}
@@ -771,7 +771,8 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/emapa.owl
   page: http://www.obofoundry.org/wiki/index.php/EMAPA:Main_Page
   products:
-  - {id: emap.owl, ontology_purl: 'http://purl.obolibrary.org/obo/emap.owl'}
+  - {id: emapa.owl, ontology_purl: 'http://purl.obolibrary.org/obo/emapa.owl'}
+  - {id: emapa.obo, ontology_purl: 'http://purl.obolibrary.org/obo/emapa.obo'}
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse gross anatomy and development, timed
   used_by:
@@ -1384,7 +1385,7 @@ ontologies:
   - {id: mi.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mi.owl'}
   - {id: mi.obo, ontology_purl: 'http://purl.obolibrary.org/obo/mi.obo'}
   title: Molecular interactions
-- contact: {email: hlapp@drycafe.net, label: Hilamr Lapp}
+- contact: {email: hlapp@drycafe.net, label: Hilmar Lapp}
   description: An application ontology to formalize annotation of phylogenetic data.
   homepage: http://www.evoio.org/wiki/MIAPA
   id: miapa
@@ -1784,6 +1785,22 @@ ontologies:
     title: OHD dev}
   title: The Oral Health and Disease Ontology
   tracker: https://purl.obolibrary.org/obo/ohd/issues
+- contact: {email: yongqunh@med.umich.edu, label: Yongqun Oliver He}
+  description: The Ontology of Host-Microbe Interactions is aiming to ontologically
+    represent and standardize various entities and relations related to microbiomes,
+    microbiome host organisms (e.g., human and mouse), and the interactions between
+    the hosts and microbiomes at different conditions.
+  homepage: https://github.com/ohmi-ontology/ohmi
+  id: ohmi
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/4.0/'}
+  mailing_list: http://groups.google.com/group/ohmi-discuss
+  ontology_purl: http://purl.obolibrary.org/obo/ohmi.owl
+  products:
+  - {id: ohmi.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ohmi.owl'}
+  title: Ontology of Host-Microbe Interactions
+  tracker: https://github.com/ohmi-ontology/ohmi/issues
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.obo'}
   description: Life cycle stages for Medaka
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv
@@ -1988,8 +2005,8 @@ ontologies:
   title: Porifera Ontology
   tracker: https://github.com/obophenotype/porifera-ontology/issues
 - contact: {email: rlwalls2008@gmail.com, label: Ramona Walls}
-  description: An ontology for integrating plant phenological data across sources
-    and scales.
+  description: An ontology for describing the phenology of individual plants and populations
+    of plants, and for integrating plant phenological data across sources and scales.
   domain: plant phenotypes
   homepage: https://github.com/PlantPhenoOntology/PPO
   id: ppo
