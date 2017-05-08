@@ -14,4 +14,5 @@ build:
   source_url:  http://purl.obolibrary.org/obo/flu.owl
   method: owl2obo
 tracker: http://purl.obolibrary.org/obo/flu/tracker
+is_obsolete: true
 ---
