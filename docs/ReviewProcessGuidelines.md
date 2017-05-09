@@ -1,4 +1,5 @@
-Detail---
+Detail
+---
 layout: doc
 id: ReviewProcessGuidelines
 title: ReviewProcessGuidelines
@@ -27,6 +28,6 @@ Any ontology group wanting a review by the Editorial WG must submit a request on
 
 # Ontology review workflow #
 
-After requesting a review, a link will be provided to perform a self-review. The self-review is then assessed by the Editorial Working Group to determine if the ontology is ready for full review. Full reviews are conducted by community experts, who provide feedback to the submitter and make recommendations for acceptance to the OBO Foundry Operations Committee. OBO Foundry ontologies are reviewed primarily by how well they apply the currently accepted <a href="http://obofoundry.github.io/principles/fp-000-summary.html">OBO Foundry Principles</a>.
+After requesting a review, a link will be provided to perform a self-review. The self-review is then assessed by the Editorial Working Group to determine if the ontology is ready for full review. Full reviews are conducted by community experts, who provide feedback to the submitter and make recommendations for acceptance to the OBO Foundry Operations Committee. OBO Foundry ontologies are reviewed primarily by how well they apply the currently accepted [OBO Foundry Principles](http://obofoundry.github.io/principles/fp-000-summary.html).
 
 
