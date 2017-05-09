@@ -1,4 +1,3 @@
-Detail
 ---
 layout: doc
 id: ReviewProcessGuidelines
