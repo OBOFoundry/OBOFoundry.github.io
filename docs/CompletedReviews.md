@@ -1,5 +1,5 @@
 
-This page lists OBO ontologies which underwent the current <a href="http://obofoundry.org/docs/EditorialWG.html">OBO Foundry review process</a>.
+This page lists OBO ontologies which underwent the current <a href="http://obofoundry.org/docs/ReviewProcessGuidelines.html">OBO Foundry review process</a>.
 
 
 | Ontology Name | Date of Review | Reviews |
