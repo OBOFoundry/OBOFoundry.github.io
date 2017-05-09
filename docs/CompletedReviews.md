@@ -6,6 +6,5 @@ This page lists OBO ontologies which underwent the current [OBO Foundry review p
 |---------------|:--------------:|--------:|
 | BFO           |      2016      |      -- |
 | DO            |      2015      |      -- |
-| DINTO         |      2015      |      -- |
-| OBI           |      2013      |      -- |
+| OBI           |      2013      |      [pdf](https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc) |
 | PO            |      2013      |      -- |
