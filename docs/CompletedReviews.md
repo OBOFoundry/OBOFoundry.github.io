@@ -4,7 +4,7 @@ This page lists OBO ontologies which underwent the current [OBO Foundry review p
 
 | Ontology Name | Date | Review |
 |---------------|:--------------:|--------:|
-| Basic Formal Ontology           |      2016      |      [PDF](https://drive.google.com/open?id=0B81h9ah4tAM_RnNTRUZnVGRyWXM) |
-| Human Disease Ontology            |      2015      |      [PDF](https://drive.google.com/open?id=0B8vqEgF1N0NIZ082U2JETHlSTGs) |
-| Ontology of Biomedical Investigations           |      2013      |      [PDF](https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc) |
-| Plant Ontology            |      2013      |      [PDF](https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc) |
+| [Basic Formal Ontology](http://www.obofoundry.org/ontology/bfo.html)           |      2016      |      [PDF](https://drive.google.com/open?id=0B81h9ah4tAM_RnNTRUZnVGRyWXM) |
+| [Human Disease Ontology](http://www.obofoundry.org/ontology/doid.html)            |      2015      |      [PDF](https://drive.google.com/open?id=0B8vqEgF1N0NIZ082U2JETHlSTGs) |
+| [Ontology of Biomedical Investigations](http://obofoundry.org/ontology/obi.html)           |      2013      |      [PDF](https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc) |
+| [Plant Ontology](http://obofoundry.org/ontology/po.html)            |      2013      |      [PDF](https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc) |
