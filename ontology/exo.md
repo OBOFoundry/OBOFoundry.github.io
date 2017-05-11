@@ -10,7 +10,7 @@ products:
   - id: exo.obo
 title: Exposure ontology
 build:
-  source_url: http://ctdbase.org/reports/CTD_exposure_ontology.obo
+  source_url: https://raw.githubusercontent.com/CTDbase/exposure-ontology/master/src/ontology/exo.obo
   method: obo2owl
 ---
 
