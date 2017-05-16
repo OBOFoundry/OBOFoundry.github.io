@@ -19,7 +19,12 @@ Chairs are assigned on a rotating basis. The chair should create agenda, host ca
 Our meeting minutes are shared on Google Docs. Access is restricted to OFOC members.
 
 ### 2017
-- 2017-04-18 James
+- 2017-06-27 Chris M.
+- 2017-06-13 Bjoern
+- 2017-05-30 Lynn
+- [2017-05-16 Jie](https://docs.google.com/document/d/1PJvEDYoI5X7FUoLS_l6wP3QDbhoVQgEAYeN6ftIN_pg/edit?pli=1#)
+- 2017-05-02 Darren (Cancelled due to low attendance)
+- [2017-04-18 James](https://docs.google.com/document/d/1_5zjIBcRw4SliACiJ-0wOT286_AghyC_rI5wgRyZBV4/edit#)
 - 2017-04-04 Cancelled
 - [2017-03-21 Darren](https://docs.google.com/document/d/1XPV4RyVKa2RdPtcwek9kBEdZTLZjGWRJhCXBcpvJA3A/edit#heading=h.sgf6as8e4yz) 
 - 2017-03-07 Ramona
