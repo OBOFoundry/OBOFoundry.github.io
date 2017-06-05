@@ -7,7 +7,7 @@ description: An integrated ontology for the description of life-science and clin
 domain: experiments
 homepage: http://obi-ontology.org
 mailing_list: http://groups.google.com/group/obi-users
-tracker: http://purl.obofoundry.org/obo/obi/tracker
+tracker: http://purl.obolibrary.org/obo/obi/tracker
 contact:
   label: Bjoern Peters
   email: bpeters@liai.org
