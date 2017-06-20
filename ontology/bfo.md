@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: bfo
+in_foundry_order: 1
 contact:
   email: phismith@buffalo.edu
   label: Barry Smith
