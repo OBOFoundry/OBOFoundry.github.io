@@ -13,7 +13,7 @@ products:
   - id: mi.obo
 title: Molecular interactions
 build:
-  source_url: https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mi/rel25/data/psi-mi25.obo
+  source_url: https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo
   insert_ontology_id: true
   method: obo2owl
 ---
