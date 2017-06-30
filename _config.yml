@@ -11,6 +11,25 @@ author:
 ## --Anything above this line can be edited in _config_header.yml --
 ## --Everything below this line automatically generated in _config.yml --
 ontologies:
+- browsers:
+  - {label: BioPortal, title: BioPortal Browser, url: 'http://bioportal.bioontology.org/ontologies/BFO?p=classes'}
+  contact: {email: phismith@buffalo.edu, label: Barry Smith}
+  depicted_by: https://avatars2.githubusercontent.com/u/12972134?v=3&s=200
+  description: The upper level ontology upon which OBO Foundry ontologies are built.
+  domain: upper
+  homepage: http://ifomis.org/bfo/
+  id: bfo
+  in_foundry_order: 1
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  mailing_list: https://groups.google.com/forum/#!forum/bfo-discuss
+  ontology_purl: http://purl.obolibrary.org/obo/bfo.owl
+  products:
+  - {id: bfo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/bfo.owl'}
+  - {id: bfo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/bfo.obo'}
+  title: Basic Formal Ontology
+  tracker: https://github.com/BFO-ontology/BFO/issues
 - alternatePrefix: ChEBI
   browsers:
   - {label: CHEBI, title: EBI CHEBI Browser, url: 'http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView'}
@@ -340,24 +359,6 @@ ontologies:
   - {id: bco.owl, ontology_purl: 'http://purl.obolibrary.org/obo/bco.owl'}
   title: Biological Collections Ontology
   tracker: https://github.com/tucotuco/bco/issues
-- browsers:
-  - {label: BioPortal, title: BioPortal Browser, url: 'http://bioportal.bioontology.org/ontologies/BFO?p=classes'}
-  contact: {email: phismith@buffalo.edu, label: Barry Smith}
-  depicted_by: https://avatars2.githubusercontent.com/u/12972134?v=3&s=200
-  description: The upper level ontology upon which OBO Foundry ontologies are built.
-  domain: upper
-  homepage: http://ifomis.org/bfo/
-  id: bfo
-  layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/3.0/'}
-  mailing_list: https://groups.google.com/forum/#!forum/bfo-discuss
-  ontology_purl: http://purl.obolibrary.org/obo/bfo.owl
-  products:
-  - {id: bfo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/bfo.owl'}
-  - {id: bfo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/bfo.obo'}
-  title: Basic Formal Ontology
-  tracker: https://github.com/BFO-ontology/BFO/issues
 - build: {checkout: 'git clone https://github.com/obophenotype/biological-spatial-ontology.git',
     infallible: 1, method: vcs, path: src/ontology, system: git}
   contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
@@ -1138,7 +1139,8 @@ ontologies:
   homepage: https://github.com/monarch-initiative/GENO-ontology/
   id: geno
   layout: ontology_detail
-  license: {label: CC-BY-SA, url: 'https://creativecommons.org/licenses/by-sa/2.0/'}
+  license: {label: CC-BY-SA, logo: 'https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png',
+    url: 'https://creativecommons.org/licenses/by-sa/2.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/geno.owl
   products:
   - {id: geno.owl, ontology_purl: 'http://purl.obolibrary.org/obo/geno.owl', title: GENO}
@@ -1382,7 +1384,7 @@ ontologies:
   id: mfomd
   layout: ontology_detail
   title: MFO Mental Disease Ontology
-- build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mi/rel25/data/psi-mi25.obo'}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo'}
   contact: {email: 'pporras@ebi.ac.uk, orchard@ebi.ac.uk', label: 'Pablo Porras, Sandra
       Orchard'}
   description: A structured controlled vocabulary for the annotation of experiments
@@ -1798,7 +1800,7 @@ ontologies:
   title: The Oral Health and Disease Ontology
   tracker: https://purl.obolibrary.org/obo/ohd/issues
 - contact: {email: yongqunh@med.umich.edu, label: Yongqun Oliver He}
-  description: The Ontology of Host-Microbe Interactions is aiming to ontologically
+  description: The Ontology of Host-Microbiome Interactions aims to ontologically
     represent and standardize various entities and relations related to microbiomes,
     microbiome host organisms (e.g., human and mouse), and the interactions between
     the hosts and microbiomes at different conditions.
@@ -1811,7 +1813,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/ohmi.owl
   products:
   - {id: ohmi.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ohmi.owl'}
-  title: Ontology of Host-Microbe Interactions
+  title: Ontology of Host-Microbiome Interactions
   tracker: https://github.com/ohmi-ontology/ohmi/issues
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.obo'}
   description: Life cycle stages for Medaka
