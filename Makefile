@@ -86,7 +86,7 @@ registry/ontologies.nt: registry/ontologies.jsonld
 	riot --base=http://purl.obolibrary.org/obo/ --strict --check -q registry/context.jsonld $< > $@.tmp && mv $@.tmp $@ && egrep '(WARN|ERROR)' $@ && exit 1 || echo ok
 
 registry/ontologies.ttl: registry/ontologies.nt
-	rdfcat -out ttl $< > $@.tmp && mv $@.tmp $@
+	riot --base=http://purl.obolibrary.org/obo/ --out=ttl $< > $@.tmp && mv $@.tmp $@
 
 # Generate a list of primary publications
 registry/publications.md: util/extract-publications.py registry/ontologies.yml
