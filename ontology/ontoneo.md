@@ -15,8 +15,7 @@ mailing_list: http://groups.google.com/group/ontoneo-discuss
 products: 
   - id: ontoneo.owl
 build:
-  source_url: 
-  method: owl2obo
+  source_url: http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl
 tracker: https://github.com/ontoneo-project/Ontoneo/issues
 browsers:
   - label: BioPortal
