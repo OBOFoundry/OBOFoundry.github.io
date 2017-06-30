@@ -4,7 +4,9 @@ id: Policy_for_OBO_namespace_and_associated_PURL_requests
 title: Policy_for_OBO_namespace_and_associated_PURL_requests
 ---
 
-**This policy has been formally adopted on April 19th 2013. Do not edit this page without consulting with the OBO Technical group.** Comments to [obo-discuss@lists.sourceforge.net](mailto:obo-discuss@lists.sourceforge.net)
+**This policy has been formally adopted on April 19th 2013. Do not edit this page without consulting with the OBO Technical group.**
+**Change adopted March 2017 to add obsolete metadata to non-maintained PURLs. See issue #344.**
+Comments to [obo-discuss@lists.sourceforge.net](mailto:obo-discuss@lists.sourceforge.net)
 
 # Background
 
@@ -59,14 +61,18 @@ We expect general discussion to take place on the obo-discuss list, while techni
 
 Example of such request:
 
- * CHMO
-    * [obo-discuss message](http://sourceforge.net/mailarchive/message.php?msg_id=30557802)
-    * [tracker message](http://code.google.com/p/obo-foundry-operations-committee/issues/detail?id=61) *TODO: update with example from new tracker*
+ * OHMI
+    * [obo-discuss message](https://sourceforge.net/p/obo/mailman/message/35692927/)
+    * [tracker message](hhttps://github.com/OBOFoundry/OBOFoundry.github.io/issues/397)
 
 ## Response ##
 
 Allocate 2 weeks to give members of the community time to provide feedback and for the operations committee to act on the request. We will usually respond on the tracker ticket and acknowledge your request/provide a tentative creation date.
 If you don't hear back from us after 2 weeks, please send a note to the [obo-foundry-technical-working-group@googlegroups.com](mailto:obo-foundry-technical-working-group@googlegroups.com) or request follow-up via the tracker ticket.
+
+# PURL Maintenance Obligations #
+
+Ontology editors are responsible for maintaining their own PURLs. Help is available from the OBO Foundry Technical WG by filing an issue in the [tracker] (https://github.com/OBOFoundry/OBOFoundry.github.io/issues) associated with this repository. Any PURL that does not work (or never worked) is considered abandoned and will be obsoleted after an initial warning period. If you find that a PURL you maintain was obsoleted when it should not have been, please file an issue in the [tracker] (https://github.com/OBOFoundry/OBOFoundry.github.io/issues) to have it restored.
 
 # For more information #
 
