@@ -4,6 +4,7 @@ id: mop
 contact: 
   email: batchelorc@rsc.org
   label: Colin Batchelor
+mailing_list: "chemistry-ontologies@googlegroups.com"
 title: Molecular Process Ontology
 description: Processes at the molecular level
 homepage: https://github.com/rsc-ontologies/rxno
