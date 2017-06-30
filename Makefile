@@ -36,7 +36,9 @@ PRINCIPLES := $(wildcard principles/*md)
 
 ### Main Tasks
 
-all: pull yml registry/ontologies.ttl registry/publications.md
+all: yml registry/ontologies.ttl registry/publications.md
+
+pull_and_build: pull all
 
 yml: _config.yml registry/ontologies.yml
 
