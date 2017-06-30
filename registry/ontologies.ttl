@@ -1,27 +1,58 @@
+<http://purl.obolibrary.org/obo/bfo>
+        <http://purl.org/dc/elements/1.1/description>  "The upper level ontology upon which OBO Foundry ontologies are built." ;
+        <http://purl.org/dc/elements/1.1/title>  "Basic Formal Ontology" ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/theme>  "upper" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/BFO-ontology/BFO/issues" ;
+        <http://usefulinc.com/ns/doap#mailing-list>  "https://groups.google.com/forum/#!forum/bfo-discuss" ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://bioportal.bioontology.org/ontologies/BFO?p=classes> ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/bfo.owl" ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b0 ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/bfo.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/bfo.obo> ;
+        <http://xmlns.com/foaf/0.1/homepage>  <http://ifomis.org/bfo/> .
+
+<http://creativecommons.org/licenses/by/3.0/>
+        <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>  "CC-BY" .
+
+<http://bioportal.bioontology.org/ontologies/BFO?p=classes>
+        <http://purl.org/dc/elements/1.1/title>  "BioPortal Browser" ;
+        <http://www.w3.org/2000/01/rdf-schema#label>  "BioPortal" .
+
+_:b0    <http://www.w3.org/2000/01/rdf-schema#label>  "Barry Smith" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "phismith@buffalo.edu" .
+
+<http://purl.obolibrary.org/obo/bfo.owl>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/bfo.owl" .
+
+<http://purl.obolibrary.org/obo/bfo.obo>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/bfo.obo" .
+
 <http://purl.obolibrary.org/obo/chebi>
         <http://identifiers.org/alternatePrefix>  "ChEBI" ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b0 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b1 ;
         <http://purl.org/dc/elements/1.1/description>  "A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds." ;
         <http://purl.org/dc/elements/1.1/title>  "Chemical Entities of Biological Interest" ;
         <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/ebi-chebi/ChEBI/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/chebi.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b1 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b2 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/chebi.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/chebi.obo> ;
         <http://xmlns.com/foaf/0.1/account>  <http://purl.obolibrary.org/obo/chebit> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.ebi.ac.uk/chebi> ;
         <http://xmlns.com/foaf/0.1/page>  <http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual> .
 
-_:b0    <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+_:b1    <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo" .
 
 <http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView>
         <http://purl.org/dc/elements/1.1/title>  "EBI CHEBI Browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CHEBI" .
 
-_:b1    <http://www.w3.org/2000/01/rdf-schema#label>  "Gareth Owen" ;
+_:b2    <http://www.w3.org/2000/01/rdf-schema#label>  "Gareth Owen" ;
         <http://xmlns.com/foaf/0.1/mbox>  "gowen@ebi.ac.uk" .
 
 <http://purl.obolibrary.org/obo/chebi.owl>
@@ -31,7 +62,7 @@ _:b1    <http://www.w3.org/2000/01/rdf-schema#label>  "Gareth Owen" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/chebi.obo" .
 
 <http://purl.obolibrary.org/obo/doid>
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b2 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b3 ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology for describing the classification of human diseases organized by etiology." ;
         <http://purl.org/dc/elements/1.1/title>  "Human Disease Ontology" ;
@@ -41,14 +72,14 @@ _:b1    <http://www.w3.org/2000/01/rdf-schema#label>  "Gareth Owen" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/DiseaseOntology/HumanDiseaseOntology/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://www.disease-ontology.org/> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/doid.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b3 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b4 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/doid.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/doid.obo> ;
         <http://xmlns.com/foaf/0.1/account>  <https://www.facebook.com/diseaseontology> ;
         <http://xmlns.com/foaf/0.1/account>  <http://purl.obolibrary.org/obo/diseaseontology> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.disease-ontology.org> .
 
-_:b2    <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+_:b3    <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-non-classified.obo" .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_9606>
@@ -65,7 +96,7 @@ _:b2    <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://purl.org/dc/elements/1.1/title>  "DO Browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "DO" .
 
-_:b3    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
+_:b4    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://xmlns.com/foaf/0.1/mbox>  "lynn.schriml@gmail.com" .
 
 <http://purl.obolibrary.org/obo/doid.owl>
@@ -103,7 +134,7 @@ _:b3    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/cl> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/chebi> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/pr> ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b4 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b5 ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_33208> ;
         <http://purl.org/dc/elements/1.1/description>  "An integrated cross-species anatomy ontology covering animals and bridging multiple species-specific ontologies" ;
         <http://purl.org/dc/elements/1.1/title>  "Uberon multi-species anatomy ontology" ;
@@ -127,7 +158,7 @@ _:b3    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://fantom.gsc.riken.jp/5/sstar/UBERON:0001890> ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://knowledge-space.org/index.php/pages/view/UBERON:0000061> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uberon.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b5 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b6 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uberon.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uberon/ext.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uberon/basic.obo> ;
@@ -147,7 +178,7 @@ _:b3    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/ro> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/chebi> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/pato> ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b6 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b7 ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_33208> ;
         <http://purl.org/dc/elements/1.1/description>  "The Cell Ontology is a structured controlled vocabulary for cell types in animals." ;
         <http://purl.org/dc/elements/1.1/title>  "Cell Ontology" ;
@@ -163,7 +194,7 @@ _:b3    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
 
 <http://purl.obolibrary.org/obo/ncbitaxon>
         <http://identifiers.org/preferredPrefix>  "NCBITaxon" ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b7 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b8 ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology representation of the NCBI organismal taxonomy" ;
         <http://purl.org/dc/elements/1.1/source>  "http://www.ncbi.nlm.nih.gov/taxonomy" ;
         <http://purl.org/dc/elements/1.1/title>  "NCBI organismal classification" ;
@@ -173,7 +204,7 @@ _:b3    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/ncbitaxon/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ncbitaxon.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b8 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b9 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ncbitaxon.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl> ;
@@ -181,7 +212,7 @@ _:b3    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://xmlns.com/foaf/0.1/page>  <http://www.ncbi.nlm.nih.gov/taxonomy> .
 
 <http://purl.obolibrary.org/obo/ro>
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b9 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b10 ;
         <http://purl.org/dc/elements/1.1/description>  "Relationship types shared across multiple ontologies" ;
         <http://purl.org/dc/elements/1.1/title>  "Relations Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
@@ -189,7 +220,7 @@ _:b3    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/oborel/obo-relations/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "https://lists.sourceforge.net/lists/listinfo/obo-relations" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ro.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b10 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b11 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ro.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ro.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ro/core.owl> ;
@@ -210,10 +241,6 @@ _:b3    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
 <http://purl.obolibrary.org/obo/NCBITaxon_1>
         <http://www.w3.org/2000/01/rdf-schema#label>  "All life" .
 
-<http://creativecommons.org/licenses/by/3.0/>
-        <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png> ;
-        <http://www.w3.org/2000/01/rdf-schema#label>  "CC-BY" .
-
 <http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab>
         <http://purl.org/dc/elements/1.1/title>  "Gene Ontology AmiGO 2 Browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "AmiGO" .
@@ -233,7 +260,7 @@ _:b3    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
 
 <http://purl.obolibrary.org/obo/obi>
         <http://obofoundry.github.io/vocabulary/continuous_integration_server>  "http://build.berkeleybop.org/job/build-obi/" ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b11 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b12 ;
         <http://purl.org/dc/elements/1.1/description>  "An integrated ontology for the description of life-science and clinical investigations" ;
         <http://purl.org/dc/elements/1.1/title>  "Ontology for Biomedical Investigations" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
@@ -242,18 +269,18 @@ _:b3    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "http://groups.google.com/group/obi-users" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://bioportal.bioontology.org/ontologies/OBI?p=classes> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/obi.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b12 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b13 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/obi.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/obi/obi_core.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://obi-ontology.org> .
 
-_:b11   <http://obofoundry.github.io/vocabulary/source_url>  "http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/" .
+_:b12   <http://obofoundry.github.io/vocabulary/source_url>  "http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/" .
 
 <http://bioportal.bioontology.org/ontologies/OBI?p=classes>
         <http://purl.org/dc/elements/1.1/title>  "BioPortal Browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "BioPortal" .
 
-_:b12   <http://www.w3.org/2000/01/rdf-schema#label>  "Bjoern Peters" ;
+_:b13   <http://www.w3.org/2000/01/rdf-schema#label>  "Bjoern Peters" ;
         <http://xmlns.com/foaf/0.1/mbox>  "bpeters@liai.org" .
 
 <http://purl.obolibrary.org/obo/obi.owl>
@@ -265,7 +292,7 @@ _:b12   <http://www.w3.org/2000/01/rdf-schema#label>  "Bjoern Peters" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/obi/obi_core.owl" .
 
 <http://purl.obolibrary.org/obo/pato>
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b13 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b14 ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of phenotypic qualities (properties, attributes or characteristics)" ;
         <http://purl.org/dc/elements/1.1/title>  "Phenotypic quality" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
@@ -273,19 +300,19 @@ _:b12   <http://www.w3.org/2000/01/rdf-schema#label>  "Bjoern Peters" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/pato-ontology/pato/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://bioportal.bioontology.org/ontologies/PATO> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pato.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b14 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b15 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pato.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pato.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/pato-ontology/pato/> .
 
-_:b13   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+_:b14   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo" .
 
 <https://bioportal.bioontology.org/ontologies/PATO>
         <http://purl.org/dc/elements/1.1/title>  "BioPortal Ontology Browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "BioPortal" .
 
-_:b14   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
+_:b15   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
         <http://xmlns.com/foaf/0.1/mbox>  "g.gkoutos@gmail.com" .
 
 <http://purl.obolibrary.org/obo/pato.owl>
@@ -295,7 +322,7 @@ _:b14   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pato.obo" .
 
 <http://purl.obolibrary.org/obo/po>
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b15 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b16 ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_33090> ;
         <http://purl.org/dc/elements/1.1/description>  "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data." ;
         <http://purl.org/dc/elements/1.1/title>  "Plant Ontology" ;
@@ -306,14 +333,14 @@ _:b14   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/Planteome/plant-ontology/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://browser.planteome.org/amigo> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/po.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b16 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b17 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/po.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/po.obo> ;
         <http://xmlns.com/foaf/0.1/account>  <http://purl.obolibrary.org/obo/planteome> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://browser.planteome.org/amigo> ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/Planteome/plant-ontology> .
 
-_:b15   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/Planteome/plant-ontology.git" ;
+_:b16   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/Planteome/plant-ontology.git" ;
         <http://obofoundry.github.io/vocabulary/method>  "vcs" .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_33090>
@@ -334,7 +361,7 @@ _:b15   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://gi
         <http://purl.org/dc/elements/1.1/title>  "Planteome browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "Planteome" .
 
-_:b16   <http://www.w3.org/2000/01/rdf-schema#label>  "Pankaj Jaiswal" ;
+_:b17   <http://www.w3.org/2000/01/rdf-schema#label>  "Pankaj Jaiswal" ;
         <http://xmlns.com/foaf/0.1/mbox>  "jaiswalp@science.oregonstate.edu" .
 
 <http://purl.obolibrary.org/obo/po.owl>
@@ -344,26 +371,26 @@ _:b16   <http://www.w3.org/2000/01/rdf-schema#label>  "Pankaj Jaiswal" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/po.obo" .
 
 <http://purl.obolibrary.org/obo/pr>
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b17 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b18 ;
         <http://purl.org/dc/elements/1.1/description>  "An ontological representation of protein-related entities" ;
         <http://purl.org/dc/elements/1.1/title>  "PRotein Ontology (PRO)" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "proteins" ;
         <http://usefulinc.com/ns/doap#bug-database>  "http://sourceforge.net/tracker/?group_id=266825&atid=1135711" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pr.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b18 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b19 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pr.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pr.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://proconsortium.org> .
 
-_:b17   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+_:b18   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.obo" .
 
 <http://creativecommons.org/licenses/by/4.0/>
         <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png> ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CC-BY" .
 
-_:b18   <http://www.w3.org/2000/01/rdf-schema#label>  "Darren Natale" ;
+_:b19   <http://www.w3.org/2000/01/rdf-schema#label>  "Darren Natale" ;
         <http://xmlns.com/foaf/0.1/mbox>  "dan5@georgetown.edu" .
 
 <http://purl.obolibrary.org/obo/pr.owl>
@@ -377,7 +404,7 @@ _:b18   <http://www.w3.org/2000/01/rdf-schema#label>  "Darren Natale" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pr.obo" .
 
 <http://purl.obolibrary.org/obo/xao>
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b19 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b20 ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_8353> ;
         <http://purl.org/dc/elements/1.1/description>  "Anatomy and development of the African clawed frog (<i>Xenopus laevis</i>)." ;
         <http://purl.org/dc/elements/1.1/title>  "Xenopus anatomy and development" ;
@@ -391,7 +418,7 @@ _:b18   <http://www.w3.org/2000/01/rdf-schema#label>  "Darren Natale" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/xao.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.xenbase.org/anatomy/xao.do?method=display> .
 
-_:b19   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+_:b20   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo" .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_8353>
@@ -410,7 +437,7 @@ _:b19   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/xao.obo" .
 
 <http://purl.obolibrary.org/obo/zfa>
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b20 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b21 ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_7954> ;
         <http://purl.org/dc/elements/1.1/description>  "A structured controlled vocabulary of the anatomy and development of the Zebrafish" ;
         <http://purl.org/dc/elements/1.1/title>  "Zebrafish anatomy and development" ;
@@ -419,12 +446,12 @@ _:b19   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/cerivs/zebrafish-anatomical-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/zfa.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b21 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b22 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/zfa.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/zfa.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://zfin.org/zf_info/anatomy/dict/sum.html> .
 
-_:b20   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+_:b21   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/src/zebrafish_anatomy.obo" .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_7954>
@@ -433,7 +460,7 @@ _:b20   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
 <http://www.ncbi.nlm.nih.gov/pubmed/24568621>
         <http://purl.org/dc/elements/1.1/title>  "The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio." .
 
-_:b21   <http://www.w3.org/2000/01/rdf-schema#label>  "ZFIN administrators" ;
+_:b22   <http://www.w3.org/2000/01/rdf-schema#label>  "ZFIN administrators" ;
         <http://xmlns.com/foaf/0.1/mbox>  "zfinadmin@zfin.org" .
 
 <http://purl.obolibrary.org/obo/zfa.owl>
@@ -443,39 +470,39 @@ _:b21   <http://www.w3.org/2000/01/rdf-schema#label>  "ZFIN administrators" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/zfa.obo" .
 
 <http://purl.obolibrary.org/obo/aeo>
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b22 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b23 ;
         <http://purl.org/dc/elements/1.1/description>  "AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology" ;
         <http://purl.org/dc/elements/1.1/title>  "Anatomical Entity Ontology" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/aeo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b23 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b24 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/aeo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/human-developmental-anatomy-ontology/> .
 
-_:b22   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git" ;
+_:b23   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git" ;
         <http://obofoundry.github.io/vocabulary/method>  "vcs" .
 
-_:b23   <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
+_:b24   <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
         <http://xmlns.com/foaf/0.1/mbox>  "J.Bard@ed.ac.uk" .
 
 <http://purl.obolibrary.org/obo/aeo.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/aeo.owl" .
 
 <http://purl.obolibrary.org/obo/aero>
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b24 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b25 ;
         <http://purl.org/dc/elements/1.1/description>  "The Adverse Event Reporting Ontology (AERO) is an ontology aimed at supporting clinicians at the time of data entry, increasing quality and accuracy of reported adverse events" ;
         <http://purl.org/dc/elements/1.1/title>  "Adverse Event Reporting Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/aero.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b25 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b26 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/aero.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://purl.obolibrary.org/obo/aero> .
 
-_:b24   <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
+_:b25   <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "http://purl.obolibrary.org/obo/aero.owl" .
 
-_:b25   <http://www.w3.org/2000/01/rdf-schema#label>  "Melanie Courtot" ;
+_:b26   <http://www.w3.org/2000/01/rdf-schema#label>  "Melanie Courtot" ;
         <http://xmlns.com/foaf/0.1/mbox>  "mcourtot@gmail.com" .
 
 <http://purl.obolibrary.org/obo/aero.owl>
@@ -488,7 +515,7 @@ _:b25   <http://www.w3.org/2000/01/rdf-schema#label>  "Melanie Courtot" ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/pato> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/chebi> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/iao> ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b26 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b27 ;
         <http://purl.org/dc/elements/1.1/description>  "Ontology of agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments" ;
         <http://purl.org/dc/elements/1.1/title>  "Agronomy Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
@@ -496,7 +523,7 @@ _:b25   <http://www.w3.org/2000/01/rdf-schema#label>  "Melanie Courtot" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/AgriculturalSemantics/agro/issues/" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "https://groups.google.com/group/agronomyOntology" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/agro.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b27 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b28 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/agro.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/AgriculturalSemantics/agro> .
 
@@ -506,7 +533,7 @@ _:b25   <http://www.w3.org/2000/01/rdf-schema#label>  "Melanie Courtot" ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/ro> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/chebi> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/ncbitaxon> ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b28 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b29 ;
         <http://purl.org/dc/elements/1.1/description>  "Ontology of environmental features and habitats" ;
         <http://purl.org/dc/elements/1.1/title>  "Environment Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
@@ -515,7 +542,7 @@ _:b25   <http://www.w3.org/2000/01/rdf-schema#label>  "Melanie Courtot" ;
         <http://purl.org/dc/terms/1.1/theme>  "environment" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/EnvironmentOntology/envo/issues/" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/envo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b29 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b30 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/envo.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/envo.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/subsets/envo-basic.obo> ;
@@ -524,60 +551,60 @@ _:b25   <http://www.w3.org/2000/01/rdf-schema#label>  "Melanie Courtot" ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/EnvironmentOntology/envo> .
 
 <http://purl.obolibrary.org/obo/uo>
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b30 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b31 ;
         <http://purl.org/dc/elements/1.1/description>  "Metrical units for use in conjunction with PATO" ;
         <http://purl.org/dc/elements/1.1/title>  "Units of measurement" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/bio-ontology-research-group/unit-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b31 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b32 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/bio-ontology-research-group/unit-ontology> .
 
 <http://purl.obolibrary.org/obo/iao>
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b32 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b33 ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of information entities." ;
         <http://purl.org/dc/elements/1.1/title>  "Information Artifact Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "information" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/information-artifact-ontology/IAO/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/iao.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b33 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b34 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/iao.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/iao/ontology-metadata.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/iao/dev/iao.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/iao/d-acts.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/information-artifact-ontology/IAO/> .
 
-_:b26   <http://obofoundry.github.io/vocabulary/checkout>  "git clone  https://github.com/AgriculturalSemantics/agro.git" ;
+_:b27   <http://obofoundry.github.io/vocabulary/checkout>  "git clone  https://github.com/AgriculturalSemantics/agro.git" ;
         <http://obofoundry.github.io/vocabulary/method>  "vcs" .
 
-_:b27   <http://www.w3.org/2000/01/rdf-schema#label>  "Marie-Angélique Laporte" ;
+_:b28   <http://www.w3.org/2000/01/rdf-schema#label>  "Marie-Angélique Laporte" ;
         <http://xmlns.com/foaf/0.1/mbox>  "m.a.laporte@cgiar.org" .
 
 <http://purl.obolibrary.org/obo/agro.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/agro.owl" .
 
 <http://purl.obolibrary.org/obo/apo>
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b34 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b35 ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_4890> ;
         <http://purl.org/dc/elements/1.1/description>  "A structured controlled vocabulary for the phenotypes of Ascomycete fungi" ;
         <http://purl.org/dc/elements/1.1/title>  "Ascomycete phenotype ontology" ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/apo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b35 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b36 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/apo.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/apo.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.yeastgenome.org/> .
 
-_:b34   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+_:b35   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/obophenotype/ascomycete-phenotype-ontology/master/apo.obo" .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_4890>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Ascomycota" .
 
-_:b35   <http://www.w3.org/2000/01/rdf-schema#label>  "sgd-helpdesk" ;
+_:b36   <http://www.w3.org/2000/01/rdf-schema#label>  "sgd-helpdesk" ;
         <http://xmlns.com/foaf/0.1/mbox>  "sgd-helpdesk@lists.stanford.edu" .
 
 <http://purl.obolibrary.org/obo/apo.owl>
@@ -592,11 +619,11 @@ _:b35   <http://www.w3.org/2000/01/rdf-schema#label>  "sgd-helpdesk" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obi-bcgo/bcgo/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/bcgo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b36 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b37 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/bcgo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obi-bcgo/bcgo> .
 
-_:b36   <http://www.w3.org/2000/01/rdf-schema#label>  "Jie Zheng" ;
+_:b37   <http://www.w3.org/2000/01/rdf-schema#label>  "Jie Zheng" ;
         <http://xmlns.com/foaf/0.1/mbox>  "jiezheng@upenn.edu" .
 
 <http://purl.obolibrary.org/obo/bcgo.owl>
@@ -607,42 +634,15 @@ _:b36   <http://www.w3.org/2000/01/rdf-schema#label>  "Jie Zheng" ;
         <http://purl.org/dc/elements/1.1/title>  "Biological Collections Ontology" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/tucotuco/bco/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/bco.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b37 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b38 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/bco.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/tucotuco/bco> .
 
-_:b37   <http://www.w3.org/2000/01/rdf-schema#label>  "Ramona Walls" ;
+_:b38   <http://www.w3.org/2000/01/rdf-schema#label>  "Ramona Walls" ;
         <http://xmlns.com/foaf/0.1/mbox>  "rwalls2008@gmail.com" .
 
 <http://purl.obolibrary.org/obo/bco.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/bco.owl" .
-
-<http://purl.obolibrary.org/obo/bfo>
-        <http://purl.org/dc/elements/1.1/description>  "The upper level ontology upon which OBO Foundry ontologies are built." ;
-        <http://purl.org/dc/elements/1.1/title>  "Basic Formal Ontology" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
-        <http://purl.org/dc/terms/1.1/theme>  "upper" ;
-        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/BFO-ontology/BFO/issues" ;
-        <http://usefulinc.com/ns/doap#mailing-list>  "https://groups.google.com/forum/#!forum/bfo-discuss" ;
-        <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://bioportal.bioontology.org/ontologies/BFO?p=classes> ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/bfo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b38 ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/bfo.owl> ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/bfo.obo> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <http://ifomis.org/bfo/> .
-
-<http://bioportal.bioontology.org/ontologies/BFO?p=classes>
-        <http://purl.org/dc/elements/1.1/title>  "BioPortal Browser" ;
-        <http://www.w3.org/2000/01/rdf-schema#label>  "BioPortal" .
-
-_:b38   <http://www.w3.org/2000/01/rdf-schema#label>  "Barry Smith" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "phismith@buffalo.edu" .
-
-<http://purl.obolibrary.org/obo/bfo.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/bfo.owl" .
-
-<http://purl.obolibrary.org/obo/bfo.obo>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/bfo.obo" .
 
 <http://purl.obolibrary.org/obo/bspo>
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b39 ;
@@ -826,7 +826,7 @@ _:b52   <http://www.w3.org/2000/01/rdf-schema#label>  "Frederic Bastian" ;
 <http://purl.obolibrary.org/obo/cio.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/cio.obo" .
 
-_:b6    <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/cell-ontology.git" ;
+_:b7    <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/cell-ontology.git" ;
         <http://obofoundry.github.io/vocabulary/method>  "vcs" .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_33208>
@@ -1271,7 +1271,7 @@ _:b82   <http://www.w3.org/2000/01/rdf-schema#label>  "Terry Hayamizu" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pco.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/PopulationAndCommunityOntology/pco> .
 
-_:b28   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/EnvironmentOntology/envo.git" ;
+_:b29   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/EnvironmentOntology/envo.git" ;
         <http://obofoundry.github.io/vocabulary/method>  "vcs" .
 
 <http://www.dx.doi.org/10.1186/2041-1480-4-43>
@@ -1280,7 +1280,7 @@ _:b28   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://gi
 <http://doi.org/10.1186/s13326-016-0097-6>
         <http://purl.org/dc/elements/1.1/title>  "The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation" .
 
-_:b29   <http://www.w3.org/2000/01/rdf-schema#label>  "Pier Luigi Buttigieg" ;
+_:b30   <http://www.w3.org/2000/01/rdf-schema#label>  "Pier Luigi Buttigieg" ;
         <http://xmlns.com/foaf/0.1/mbox>  "p.buttigieg@googlemail.com" .
 
 <http://purl.obolibrary.org/obo/envo.owl>
@@ -1884,10 +1884,10 @@ _:b121  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
 <http://purl.obolibrary.org/obo/hsapdv.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hsapdv.obo" .
 
-_:b32   <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
+_:b33   <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "http://purl.obolibrary.org/obo/iao.owl" .
 
-_:b33   <http://www.w3.org/2000/01/rdf-schema#label>  "Alan Ruttenberg" ;
+_:b34   <http://www.w3.org/2000/01/rdf-schema#label>  "Alan Ruttenberg" ;
         <http://xmlns.com/foaf/0.1/mbox>  "alanruttenberg@gmail.com" .
 
 <http://purl.obolibrary.org/obo/iao.owl>
@@ -2114,7 +2114,7 @@ _:b139  <http://www.w3.org/2000/01/rdf-schema#label>  "Janna Hastings" ;
         <http://xmlns.com/foaf/0.1/page>  <https://rawgit.com/MICommunity/psidev/master/psi/mi/xml/doc/user/index.html> .
 
 _:b140  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
-        <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mi/rel25/data/psi-mi25.obo" .
+        <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo" .
 
 _:b141  <http://www.w3.org/2000/01/rdf-schema#label>  "Pablo Porras, Sandra Orchard" ;
         <http://xmlns.com/foaf/0.1/mbox>  "pporras@ebi.ac.uk, orchard@ebi.ac.uk" .
@@ -2439,14 +2439,14 @@ _:b162  <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
 <http://purl.obolibrary.org/obo/nbo.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/nbo.owl" .
 
-_:b7    <http://obofoundry.github.io/vocabulary/method>  "archive" ;
+_:b8    <http://obofoundry.github.io/vocabulary/method>  "archive" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip" .
 
 <http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi>
         <http://purl.org/dc/elements/1.1/title>  "NCBI Taxonomy Browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "NCBI" .
 
-_:b8    <http://www.w3.org/2000/01/rdf-schema#label>  "obo-taxonomy-list" ;
+_:b9    <http://www.w3.org/2000/01/rdf-schema#label>  "obo-taxonomy-list" ;
         <http://xmlns.com/foaf/0.1/mbox>  "obo-taxonomy@lists.sourceforge.net" .
 
 <http://purl.obolibrary.org/obo/ncbitaxon.owl>
@@ -2676,8 +2676,8 @@ _:b176  <http://www.w3.org/2000/01/rdf-schema#label>  "Alan Ruttenberg" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ohd/dev/ohd.owl" .
 
 <http://purl.obolibrary.org/obo/ohmi>
-        <http://purl.org/dc/elements/1.1/description>  "The Ontology of Host-Microbe Interactions is aiming to ontologically represent and standardize various entities and relations related to microbiomes, microbiome host organisms (e.g., human and mouse), and the interactions between the hosts and microbiomes at different conditions." ;
-        <http://purl.org/dc/elements/1.1/title>  "Ontology of Host-Microbe Interactions" ;
+        <http://purl.org/dc/elements/1.1/description>  "The Ontology of Host-Microbiome Interactions aims to ontologically represent and standardize various entities and relations related to microbiomes, microbiome host organisms (e.g., human and mouse), and the interactions between the hosts and microbiomes at different conditions." ;
+        <http://purl.org/dc/elements/1.1/title>  "Ontology of Host-Microbiome Interactions" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/ohmi-ontology/ohmi/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "http://groups.google.com/group/ohmi-discuss" ;
@@ -3062,10 +3062,10 @@ _:b203  <http://www.w3.org/2000/01/rdf-schema#label>  "Colin Batchelor" ;
 <http://purl.obolibrary.org/obo/rnao.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/rnao.obo" .
 
-_:b9    <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/oborel/obo-relations.git" ;
+_:b10   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/oborel/obo-relations.git" ;
         <http://obofoundry.github.io/vocabulary/method>  "vcs" .
 
-_:b10   <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
+_:b11   <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://xmlns.com/foaf/0.1/mbox>  "cjmungall@lbl.gov" .
 
 <http://purl.obolibrary.org/obo/ro.owl>
@@ -3491,7 +3491,7 @@ _:b233  <http://www.w3.org/2000/01/rdf-schema#label>  "Peter Midford" ;
 <http://purl.obolibrary.org/obo/tto.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/tto.owl" .
 
-_:b4    <http://obofoundry.github.io/vocabulary/checkout>  "svn --ignore-externals co http://svn.code.sf.net/p/obo/svn/uberon/trunk" ;
+_:b5    <http://obofoundry.github.io/vocabulary/checkout>  "svn --ignore-externals co http://svn.code.sf.net/p/obo/svn/uberon/trunk" ;
         <http://obofoundry.github.io/vocabulary/method>  "vcs" .
 
 <http://www.ncbi.nlm.nih.gov/pubmed/22293552>
@@ -3520,7 +3520,7 @@ _:b4    <http://obofoundry.github.io/vocabulary/checkout>  "svn --ignore-externa
         <http://purl.org/dc/elements/1.1/title>  "INCF KnowledgeSpace Portal" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "KnowledgeSpace" .
 
-_:b5    <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
+_:b6    <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://xmlns.com/foaf/0.1/mbox>  "cjmungall@lbl.gov" .
 
 <http://purl.obolibrary.org/obo/uberon.owl>
@@ -3571,10 +3571,10 @@ _:b5    <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl" ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies> .
 
-_:b30   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+_:b31   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo" .
 
-_:b31   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
+_:b32   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
         <http://xmlns.com/foaf/0.1/mbox>  "g.gkoutos@gmail.com" .
 
 <http://purl.obolibrary.org/obo/uo.owl>

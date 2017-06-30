@@ -2,6 +2,45 @@
     "@context": "http://obofoundry.github.io/registry/context.jsonld",
     "ontologies": [
         {
+            "browsers": [
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal Browser",
+                    "url": "http://bioportal.bioontology.org/ontologies/BFO?p=classes"
+                }
+            ],
+            "contact": {
+                "email": "phismith@buffalo.edu",
+                "label": "Barry Smith"
+            },
+            "depicted_by": "https://avatars2.githubusercontent.com/u/12972134?v=3&s=200",
+            "description": "The upper level ontology upon which OBO Foundry ontologies are built.",
+            "domain": "upper",
+            "homepage": "http://ifomis.org/bfo/",
+            "id": "bfo",
+            "in_foundry_order": 1,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "mailing_list": "https://groups.google.com/forum/#!forum/bfo-discuss",
+            "ontology_purl": "http://purl.obolibrary.org/obo/bfo.owl",
+            "products": [
+                {
+                    "id": "bfo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/bfo.owl"
+                },
+                {
+                    "id": "bfo.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/bfo.obo"
+                }
+            ],
+            "title": "Basic Formal Ontology",
+            "tracker": "https://github.com/BFO-ontology/BFO/issues"
+        },
+        {
             "alternatePrefix": "ChEBI",
             "browsers": [
                 {
@@ -669,44 +708,6 @@
             ],
             "title": "Biological Collections Ontology",
             "tracker": "https://github.com/tucotuco/bco/issues"
-        },
-        {
-            "browsers": [
-                {
-                    "label": "BioPortal",
-                    "title": "BioPortal Browser",
-                    "url": "http://bioportal.bioontology.org/ontologies/BFO?p=classes"
-                }
-            ],
-            "contact": {
-                "email": "phismith@buffalo.edu",
-                "label": "Barry Smith"
-            },
-            "depicted_by": "https://avatars2.githubusercontent.com/u/12972134?v=3&s=200",
-            "description": "The upper level ontology upon which OBO Foundry ontologies are built.",
-            "domain": "upper",
-            "homepage": "http://ifomis.org/bfo/",
-            "id": "bfo",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-BY",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "mailing_list": "https://groups.google.com/forum/#!forum/bfo-discuss",
-            "ontology_purl": "http://purl.obolibrary.org/obo/bfo.owl",
-            "products": [
-                {
-                    "id": "bfo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/bfo.owl"
-                },
-                {
-                    "id": "bfo.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/bfo.obo"
-                }
-            ],
-            "title": "Basic Formal Ontology",
-            "tracker": "https://github.com/BFO-ontology/BFO/issues"
         },
         {
             "build": {
@@ -2879,7 +2880,7 @@
             "build": {
                 "insert_ontology_id": true,
                 "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mi/rel25/data/psi-mi25.obo"
+                "source_url": "https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo"
             },
             "contact": {
                 "email": "pporras@ebi.ac.uk, orchard@ebi.ac.uk",
@@ -3706,7 +3707,7 @@
                 "email": "yongqunh@med.umich.edu",
                 "label": "Yongqun Oliver He"
             },
-            "description": "The Ontology of Host-Microbe Interactions is aiming to ontologically represent and standardize various entities and relations related to microbiomes, microbiome host organisms (e.g., human and mouse), and the interactions between the hosts and microbiomes at different conditions.",
+            "description": "The Ontology of Host-Microbiome Interactions aims to ontologically represent and standardize various entities and relations related to microbiomes, microbiome host organisms (e.g., human and mouse), and the interactions between the hosts and microbiomes at different conditions.",
             "homepage": "https://github.com/ohmi-ontology/ohmi",
             "id": "ohmi",
             "layout": "ontology_detail",
@@ -3723,7 +3724,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/ohmi.owl"
                 }
             ],
-            "title": "Ontology of Host-Microbe Interactions",
+            "title": "Ontology of Host-Microbiome Interactions",
             "tracker": "https://github.com/ohmi-ontology/ohmi/issues"
         },
         {

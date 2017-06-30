@@ -131,9 +131,11 @@ def decorate_metadata(objs):
             #  ultimately this should all be specified in RDF/JSON-LD.
             #  e.g. <http://creativecommons.org/licenses/by/3.0> foaf:depictedBy < ... > .
             #  e.g. <http://creativecommons.org/licenses/by/3.0> owl:sameAs <https://creativecommons.org/licenses/by/3.0> .
-            if lurl.find('creativecommons.org/licenses/by/') > 0:
+            if lurl.find('creativecommons.org/licenses/by-sa') > 0:
+                logo = 'https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png'
+            elif lurl.find('creativecommons.org/licenses/by/') > 0:
                 logo = 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png'
-            if lurl.find('creativecommons.org/publicdomain/zero/') > 0:
+            elif lurl.find('creativecommons.org/publicdomain/zero/') > 0:
                 logo = 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png'
             if not logo == '':
                 license['logo'] = logo
