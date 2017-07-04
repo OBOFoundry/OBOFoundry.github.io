@@ -7,7 +7,7 @@ domain: genotype-to-phenotype associations
 homepage: https://github.com/monarch-initiative/GENO-ontology/
 tracker: https://github.com/monarch-initiative/GENO-ontology/issues
 contact:
-  email: brushm@ohsu.edu
+  email: mhb120@gmail.com
   label: Matthew Brush
 license:
   url: https://creativecommons.org/licenses/by-sa/2.0/
