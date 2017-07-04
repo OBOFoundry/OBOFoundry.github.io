@@ -920,6 +920,7 @@
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0"
             },
+            "mailing_list": "chemistry-ontologies@googlegroups.com",
             "ontology_purl": "http://purl.obolibrary.org/obo/chmo.owl",
             "products": [
                 {
@@ -1822,7 +1823,7 @@
         {
             "build": {
                 "method": "obo2owl",
-                "source_url": "http://ctdbase.org/reports/CTD_exposure_ontology.obo"
+                "source_url": "https://raw.githubusercontent.com/CTDbase/exposure-ontology/master/src/ontology/exo.obo"
             },
             "description": "Vocabularies for describing exposure data to inform understanding of environmental health.",
             "domain": "health",
@@ -2119,30 +2120,6 @@
         },
         {
             "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/flu.owl"
-            },
-            "contact": {
-                "email": "burkesquires@gmail.com",
-                "label": "Burke Squires"
-            },
-            "domain": "health",
-            "homepage": "http://purl.obolibrary.org/obo/flu/",
-            "id": "flu",
-            "in_foundry": false,
-            "layout": "ontology_detail",
-            "ontology_purl": "http://purl.obolibrary.org/obo/flu.owl",
-            "products": [
-                {
-                    "id": "flu.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/flu.owl"
-                }
-            ],
-            "title": "Influenza Ontology",
-            "tracker": "http://purl.obolibrary.org/obo/flu/tracker"
-        },
-        {
-            "build": {
                 "insert_ontology_id": true,
                 "method": "obo2owl",
                 "source_url": "http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo"
@@ -2362,7 +2339,7 @@
                 "system": "git"
             },
             "contact": {
-                "email": "brushm@ohsu.edu",
+                "email": "mhb120@gmail.com",
                 "label": "Matthew Brush"
             },
             "description": "An integrated ontology for representing the genetic variations described in genotypes, and their causal relationships to phenotype and diseases.",
@@ -2372,6 +2349,7 @@
             "layout": "ontology_detail",
             "license": {
                 "label": "CC-BY-SA",
+                "logo": "https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png",
                 "url": "https://creativecommons.org/licenses/by-sa/2.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/geno.owl",
@@ -2892,7 +2870,7 @@
             "id": "mi",
             "layout": "ontology_detail",
             "ontology_purl": "http://purl.obolibrary.org/obo/mi.owl",
-            "page": "https://rawgit.com/MICommunity/psidev/master/psi/mi/xml/doc/user/index.html",
+            "page": "https://github.com/HUPO-PSI/psi-mi-CV",
             "products": [
                 {
                     "id": "mi.owl",
@@ -3135,6 +3113,7 @@
             "homepage": "https://github.com/rsc-ontologies/rxno",
             "id": "mop",
             "layout": "ontology_detail",
+            "mailing_list": "chemistry-ontologies@googlegroups.com",
             "ontology_purl": "http://purl.obolibrary.org/obo/mop.owl",
             "products": [
                 {
@@ -3868,8 +3847,7 @@
                 }
             ],
             "build": {
-                "method": "owl2obo",
-                "source_url": null
+                "source_url": "http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl"
             },
             "contact": {
                 "email": "fernanda.farinelli@gmail.com",
@@ -4400,6 +4378,7 @@
             "homepage": "https://github.com/rsc-ontologies/rxno",
             "id": "rxno",
             "layout": "ontology_detail",
+            "mailing_list": "chemistry-ontologies@googlegroups.com",
             "ontology_purl": "http://purl.obolibrary.org/obo/rxno.owl",
             "products": [
                 {
@@ -4462,6 +4441,37 @@
                 }
             ],
             "title": "Sample processing and separation techniques"
+        },
+        {
+            "build": {
+                "checkout": "git clone https://github.com/monarch-initiative/SEPIO-ontology.git",
+                "path": "src/ontology",
+                "system": "git"
+            },
+            "contact": {
+                "email": "mhb120@gmail.com",
+                "label": "Matthew Brush"
+            },
+            "description": "An ontology for representing the provenance of scientific claims and the evidence that supports them.",
+            "domain": "scientific claims, evidence",
+            "homepage": "https://github.com/monarch-initiative/SEPIO-ontology",
+            "id": "sepio",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY-SA",
+                "logo": "https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png",
+                "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/sepio.owl",
+            "products": [
+                {
+                    "id": "sepio.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/sepio.owl",
+                    "title": "SEPIO"
+                }
+            ],
+            "title": "Scientific Evidence and Provenance Information Ontology",
+            "tracker": "https://github.com/monarch-initiative/SEPIO-ontology/issues"
         },
         {
             "build": {
@@ -4811,7 +4821,7 @@
             "build": {
                 "infallible": 1,
                 "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/transmission_process.obo"
+                "source_url": "https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/trans.obo"
             },
             "contact": {
                 "email": "lynn.schriml@gmail.com",
@@ -5672,6 +5682,30 @@
                 "label": "Drosophila"
             },
             "title": "Fly taxonomy"
+        },
+        {
+            "build": {
+                "method": "owl2obo",
+                "source_url": "http://purl.obolibrary.org/obo/flu.owl"
+            },
+            "contact": {
+                "email": "burkesquires@gmail.com",
+                "label": "Burke Squires"
+            },
+            "domain": "health",
+            "homepage": "http://purl.obolibrary.org/obo/flu/",
+            "id": "flu",
+            "in_foundry": false,
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "products": [
+                {
+                    "id": "flu.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/flu.owl"
+                }
+            ],
+            "title": "Influenza Ontology",
+            "tracker": "http://purl.obolibrary.org/obo/flu/tracker"
         },
         {
             "contact": {

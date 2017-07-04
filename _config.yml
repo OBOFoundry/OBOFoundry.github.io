@@ -464,6 +464,7 @@ ontologies:
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/4.0'}
+  mailing_list: chemistry-ontologies@googlegroups.com
   ontology_purl: http://purl.obolibrary.org/obo/chmo.owl
   products:
   - {id: chmo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/chmo.owl'}
@@ -884,7 +885,7 @@ ontologies:
   - {id: ero.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ero.owl'}
   title: eagle-i resource ontology
   tracker: null
-- build: {method: obo2owl, source_url: 'http://ctdbase.org/reports/CTD_exposure_ontology.obo'}
+- build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/CTDbase/exposure-ontology/master/src/ontology/exo.obo'}
   description: Vocabularies for describing exposure data to inform understanding of
     environmental health.
   domain: health
@@ -1020,18 +1021,6 @@ ontologies:
   taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
   title: Flora Phenotype Ontology
   tracker: https://github.com/flora-phenotype-ontology/flopoontology/issues
-- build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/flu.owl'}
-  contact: {email: burkesquires@gmail.com, label: Burke Squires}
-  domain: health
-  homepage: http://purl.obolibrary.org/obo/flu/
-  id: flu
-  in_foundry: false
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/flu.owl
-  products:
-  - {id: flu.owl, ontology_purl: 'http://purl.obolibrary.org/obo/flu.owl'}
-  title: Influenza Ontology
-  tracker: http://purl.obolibrary.org/obo/flu/tracker
 - build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo'}
   contact: {email: mejino@u.washington.edu, label: Onard Mejino}
   description: This is currently a slimmed down version of FMA
@@ -1132,7 +1121,7 @@ ontologies:
   tracker: https://github.com/GenEpiO/genepio/issues/
 - build: {checkout: 'git clone https://github.com/monarch-initiative/GENO-ontology.git',
     path: src/ontology, system: git}
-  contact: {email: brushm@ohsu.edu, label: Matthew Brush}
+  contact: {email: mhb120@gmail.com, label: Matthew Brush}
   description: An integrated ontology for representing the genetic variations described
     in genotypes, and their causal relationships to phenotype and diseases.
   domain: genotype-to-phenotype associations
@@ -1394,7 +1383,7 @@ ontologies:
   id: mi
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/mi.owl
-  page: https://rawgit.com/MICommunity/psidev/master/psi/mi/xml/doc/user/index.html
+  page: https://github.com/HUPO-PSI/psi-mi-CV
   products:
   - {id: mi.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mi.owl'}
   - {id: mi.obo, ontology_purl: 'http://purl.obolibrary.org/obo/mi.obo'}
@@ -1514,6 +1503,7 @@ ontologies:
   homepage: https://github.com/rsc-ontologies/rxno
   id: mop
   layout: ontology_detail
+  mailing_list: chemistry-ontologies@googlegroups.com
   ontology_purl: http://purl.obolibrary.org/obo/mop.owl
   products:
   - {id: mop.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mop.owl', title: Molecular
@@ -1883,7 +1873,7 @@ ontologies:
   title: Ontology of Medically Related Social Entities
 - browsers:
   - {label: BioPortal, title: BioPortal Browser, url: 'https://bioportal.bioontology.org/ontologies/ONTONEO'}
-  build: {method: owl2obo, source_url: null}
+  build: {source_url: 'http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl'}
   contact: {email: fernanda.farinelli@gmail.com, label: Fernanda Farinelli}
   description: The Obstetric and Neonatal Ontology is a structured controlled vocabulary
     to provide a representation of the data from electronic health records (EHRs)
@@ -2136,6 +2126,7 @@ ontologies:
   homepage: https://github.com/rsc-ontologies/rxno
   id: rxno
   layout: ontology_detail
+  mailing_list: chemistry-ontologies@googlegroups.com
   ontology_purl: http://purl.obolibrary.org/obo/rxno.owl
   products:
   - {id: rxno.owl, ontology_purl: 'http://purl.obolibrary.org/obo/rxno.owl', title: Name
@@ -2169,6 +2160,22 @@ ontologies:
   products:
   - {id: sep.owl, ontology_purl: 'http://purl.obolibrary.org/obo/sep.owl'}
   title: Sample processing and separation techniques
+- build: {checkout: 'git clone https://github.com/monarch-initiative/SEPIO-ontology.git',
+    path: src/ontology, system: git}
+  contact: {email: mhb120@gmail.com, label: Matthew Brush}
+  description: An ontology for representing the provenance of scientific claims and
+    the evidence that supports them.
+  domain: scientific claims, evidence
+  homepage: https://github.com/monarch-initiative/SEPIO-ontology
+  id: sepio
+  layout: ontology_detail
+  license: {label: CC-BY-SA, logo: 'https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png',
+    url: 'https://creativecommons.org/licenses/by-sa/2.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/sepio.owl
+  products:
+  - {id: sepio.owl, ontology_purl: 'http://purl.obolibrary.org/obo/sepio.owl', title: SEPIO}
+  title: Scientific Evidence and Provenance Information Ontology
+  tracker: https://github.com/monarch-initiative/SEPIO-ontology/issues
 - build: {checkout: 'git clone https://github.com/obophenotype/sibo.git', method: vcs,
     system: git}
   contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
@@ -2336,7 +2343,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
   title: Plant Trait Ontology
   tracker: https://github.com/Planteome/plant-trait-ontology/issues
-- build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/transmission_process.obo'}
+- build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/trans.obo'}
   contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
   description: An ontology representing the disease transmission process during which
     the pathogen is transmitted directly or indirectly from its natural reservoir,
@@ -2733,6 +2740,18 @@ ontologies:
   - {id: fbsp.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fbsp.owl'}
   taxon: {id: 'NCBITaxon:7227', label: Drosophila}
   title: Fly taxonomy
+- build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/flu.owl'}
+  contact: {email: burkesquires@gmail.com, label: Burke Squires}
+  domain: health
+  homepage: http://purl.obolibrary.org/obo/flu/
+  id: flu
+  in_foundry: false
+  is_obsolete: true
+  layout: ontology_detail
+  products:
+  - {id: flu.owl, ontology_purl: 'http://purl.obolibrary.org/obo/flu.owl'}
+  title: Influenza Ontology
+  tracker: http://purl.obolibrary.org/obo/flu/tracker
 - contact: {email: Plant Ontology Administrators, label: po-discuss@plantontology.org}
   homepage: http://www.gramene.org/plant_ontology/
   id: gro
