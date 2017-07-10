@@ -3,8 +3,8 @@ layout: ontology_detail
 id: dpo
 preferredPrefix: FBcv
 contact:
-  email: mmc46@cam.ac.uk
-  label: Marta Costa
+  email: temj2@cam.ac.uk
+  label: Tamsin Jones
 description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
 domain: phenotype
 homepage: http://purl.obolibrary.org/obo/fbcv
