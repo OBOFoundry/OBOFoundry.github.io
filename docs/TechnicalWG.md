@@ -31,11 +31,11 @@ See <a href='TechnicalWGMeetings.html'>here</a>
 
 <h1>HOWTOs</h1>
 
-<ul><li><a href='PrefixDomain.md'>Creating a prefix and domain for a resource</a></li></ul>
+<ul><li><a href='Policy_for_OBO_namespace_and_associated_PURL_requests.html'>Creating a prefix and domain for a resource</a></li></ul>
 
 <h1>DOCs</h1>
 
-<ul><li><a href='OBOPURLDomain.md'>How is the OBO PURL configured</a></li></ul>
+<ul><li><a href='OBOPURLDomain.html'>How is the OBO PURL configured</a></li></ul>
 
 <h1>Contact Us</h1>
 
