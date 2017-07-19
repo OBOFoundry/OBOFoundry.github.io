@@ -63,7 +63,7 @@ Example of such request:
 
  * OHMI
     * [obo-discuss message](https://sourceforge.net/p/obo/mailman/message/35692927/)
-    * [tracker message](hhttps://github.com/OBOFoundry/OBOFoundry.github.io/issues/397)
+    * [tracker message](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/397)
 
 ## Response ##
 
