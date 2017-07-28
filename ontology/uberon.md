@@ -25,7 +25,7 @@ usages:
    description: Bgee is a database to retrieve and compare gene expression patterns between animal species. Bgee in using Uberon to annotate the site of expression, and Bgee curators one the major contributors to the ontology.
    examples:
     - url: http://bgee.org/?page=gene&gene_id=ENSG00000244734
-      description: Uberon terms used to annotate expression of human	hemoglobin subunit beta
+      description: "Uberon terms used to annotate expression of human hemoglobin subunit beta"
  - user: https://www.encodeproject.org/
    seeAlso: https://www.biosharing.org/biodbcore-000034
    type: annotation
