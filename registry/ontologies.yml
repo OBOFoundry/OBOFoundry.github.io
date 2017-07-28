@@ -134,7 +134,7 @@ ontologies:
   - {id: obi/obi_core.owl, ontology_purl: 'http://purl.obolibrary.org/obo/obi/obi_core.owl',
     title: OBI Core}
   title: Ontology for Biomedical Investigations
-  tracker: http://purl.obofoundry.org/obo/obi/tracker
+  tracker: http://purl.obolibrary.org/obo/obi/tracker
 - browsers:
   - {label: BioPortal, title: BioPortal Ontology Browser, url: 'https://bioportal.bioontology.org/ontologies/PATO'}
   build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo'}
@@ -555,6 +555,24 @@ ontologies:
       measurement method and experimental condition ontologies: expansion, improvements
       and new applications.'}
   title: Clinical measurement ontology
+- build: {checkout: 'git clone https://github.com/openrif/contributor-role-ontology.git',
+    path: src/ontology, system: git}
+  contact: {email: whimar@ohsu.edu, label: Marijane White}
+  description: A classification of the diverse roles performed in the work leading
+    to a published research output in the sciences. Its purpose to provide transparency
+    in contributions to scholarly published work, to enable improved systems of attribution,
+    credit, and accountability.
+  domain: scholarly contribution roles
+  homepage: https://github.com/openrif/contributor-role-ontology
+  id: cro
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/2.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/cro.owl
+  products:
+  - {id: cro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/cro.owl', title: CRO}
+  title: Contributor Role Ontology
+  tracker: https://github.com/openrif/contributor-role-ontology/issues
 - build: {checkout: 'git clone https://github.com/obophenotype/ctenophore-ontology.git',
     method: vcs, path: ., system: git}
   contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
@@ -650,7 +668,7 @@ ontologies:
 - browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000347'}
   build: {infallible: 0, method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/fbcv/dpo.owl'}
-  contact: {email: mmc46@cam.ac.uk, label: Marta Costa}
+  contact: {email: temj2@cam.ac.uk, label: Tamsin Jones}
   description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
   domain: phenotype
   homepage: http://purl.obolibrary.org/obo/fbcv
@@ -711,6 +729,8 @@ ontologies:
   jobs:
   - {id: 'https://travis-ci.org/evidenceontology/evidenceontology', type: travis-ci}
   layout: ontology_detail
+  license: {label: CC0 1.0 Universal, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/eco.owl
   products:
   - {id: eco.owl, ontology_purl: 'http://purl.obolibrary.org/obo/eco.owl'}
@@ -920,7 +940,7 @@ ontologies:
   - {label: VFB, title: Virtual Fly Brain, url: 'http://www.virtualflybrain.org/site/stacks/index.htm?add=FBbt:00007401'}
   - {label: BioPortal, title: BioPortal Browser, url: 'http://bioportal.bioontology.org/ontologies/FB-BT?p=classes'}
   build: {infallible: 1, method: owl2obo, source_url: 'https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.owl'}
-  contact: {email: mmc46@cam.ac.uk, label: Marta Costa}
+  contact: {email: temj2@cam.ac.uk, label: Tamsin Jones}
   description: An ontology representing the gross anatomy of Drosophila melanogaster.
   domain: anatomy
   homepage: http://purl.obolibrary.org/obo/fbbt
@@ -949,7 +969,7 @@ ontologies:
 - browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000013'}
   build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/fbcv.owl'}
-  contact: {email: mmc46@cam.ac.uk, label: Marta Costa}
+  contact: {email: temj2@cam.ac.uk, label: Tamsin Jones}
   description: A structured controlled vocabulary used for various aspects of annotation
     by FlyBase.
   domain: null
@@ -967,7 +987,7 @@ ontologies:
 - browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008'}
   build: {infallible: 0, method: obo2owl, source_url: 'https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv/releases/fbdv.owl'}
-  contact: {email: mmc46@cam.ac.uk, label: Marta Costa}
+  contact: {email: temj2@cam.ac.uk, label: Tamsin Jones}
   description: A structured controlled vocabulary of the development of Drosophila
     melanogaster.
   domain: development
