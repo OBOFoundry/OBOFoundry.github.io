@@ -35,6 +35,12 @@ publications:
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0 Universal
+usages:
+ - user: http://www.informatics.jax.org/disease
+   description: MGI disease model annotations use DO
+   examples:
+    - url: http://www.informatics.jax.org/disease/DOID:4123
+      description: Human genes and mouse homology associated with nail diseases
 ---
 
 Creating a comprehensive classification of human diseases organized by etiology.
