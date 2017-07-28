@@ -20,9 +20,10 @@ build:
   infallible: 1
   insert_ontology_id: true
 tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
-used_by:
- - url: https://www.biosharing.org/biodbcore-000659
-   label: GXD
+usages:
+ - user: http://www.informatics.jax.org/expression.shtml
+   seeAlso: https://www.biosharing.org/biodbcore-000659
+   description: GXD
 ---
 
 A structured controlled vocabulary of the adult anatomy of the mouse (Mus).
