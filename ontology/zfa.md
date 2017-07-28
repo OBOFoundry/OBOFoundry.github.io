@@ -27,6 +27,12 @@ tracker: https://github.com/cerivs/zebrafish-anatomical-ontology/issues
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24568621
     title: "The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio."
+usages:
+  - user: http://zfin.org
+    description: ZFIN uses ZFA to annotate gene expression and phenotype
+    examples:
+      - http://zfin.org/ZFA:0000029
+        description: zebrafish genes expressed in hindbrain and genotypes with hindbrain phenotype
 ---
 
 A structured controlled vocabulary of the anatomy and development of the Zebrafish (<i>Danio rerio</i>).

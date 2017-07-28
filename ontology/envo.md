@@ -64,7 +64,12 @@ build:
   method: vcs
   infallible: 1
 tracker: https://github.com/EnvironmentOntology/envo/issues/
-
+usages:
+  - user: http://oceans.taraexpeditions.org/en/
+    description: Samples collected during Tara Oceans expedition are annotated with ENVO
+    example:
+      - url: https://www.ebi.ac.uk/metagenomics/projects/ERP001736/samples/ERS487899
+        description: "Sample collected during the Tara Oceans expedition (2009-2013) at station TARA_004 (latitudeN=36.5533, longitudeE=-6.5669)"
 ---
 
 EnvO is a community ontology for the concise, controlled description of environments.
