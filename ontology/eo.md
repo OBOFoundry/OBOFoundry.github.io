@@ -22,6 +22,17 @@ license:
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22847540
     title: "Ontologies as integrative tools for plant science."
+usages:
+  - user: http://planteome.org/
+    description: Planteome uses EO to describe traits for genes and germplasm
+    examples:
+      - url: http://browser.planteome.org/amigo/term/EO:0007174
+        description: Genes and proteins annotated to cold temperature regiment
+  - user: http://gramene.org/
+    description: Gramene uses EO for the annotation of plant genes and QTLs
+    examples:
+      - url: http://archive.gramene.org/db/ontology/search?id=EO:0007174
+        description: Gramene annotations to cold temperature regiment
 ---
 
 A structured, controlled vocabulary for the representation of plant environmental conditions.

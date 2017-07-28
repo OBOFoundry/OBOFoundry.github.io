@@ -38,6 +38,25 @@ license:
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
+usages:
+  - user: http://planteome.org/
+    description: Planteome uses PO to describe location of tissue expression for genes in viridiplantae
+    examples:
+      - url: http://browser.planteome.org/amigo/term/PO:0025034
+        description: Genes and proteins annotate to leaf
+  - user: http://maize.jcvi.org/
+    description: Maize CELL genomics DB uses PO to annotate images
+    examples:
+      - url: http://maize.jcvi.org/cellgenomics/geneDB_list.php?filter=3
+  - user: http://maizegdb.org/
+    description: MaizeGDB uses PO for annotation of genes
+    examples:
+      - url: http://maizegdb.org/gene_center/gene/GRMZM5G863962
+  - user: http://gramene.org/
+    description: Gramene uses PO for the annotation of plant genes
+    examples:
+      - url: http://archive.gramene.org/db/ontology/search?id=PO:0025034
+        description: Gramene annotations to leaf from Arabidopsis
 ---
 
 The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data. The PO is under active development to expand to encompass terms and annotations from all plants.
