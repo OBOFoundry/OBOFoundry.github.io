@@ -49,6 +49,13 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 depicted_by: http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png
+usages:
+ - user: http://geneontology.org
+   type: annotation
+   description: The GO ontology is used by the GO consortium for functional annotation of genes
+   examples:
+    - url: http://amigo.geneontology.org/amigo/term/GO:0055085
+      description: annotations to transmembrane transport
 ---
 
 The goal of the GeneOntology (GO) project is to provide a uniformway to describe the functions of gene products from organisms across all kingdoms of life and thereby enable analysis of genomic data

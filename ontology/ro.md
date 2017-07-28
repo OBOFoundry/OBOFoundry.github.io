@@ -44,6 +44,16 @@ products:
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+usages:
+ - user: http://geneontology.org
+   type: annotation
+   description: RO is used for annotation extensions in the GO
+   reference: http://dx.doi.org/10.1186/1471-2105-15-155
+ - user: http://geneontology.org
+   type: annotation
+   description: RO is used for GO Causal Activity Models
+   examples:
+    - http://model.geneontology.org/56d1143000003402
 ---
 
 ![logo](/images/ro_logo.png)
