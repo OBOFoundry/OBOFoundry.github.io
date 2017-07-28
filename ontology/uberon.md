@@ -18,30 +18,38 @@ google_plus: "+UberonOrg"
 wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
 biosharing: https://www.biosharing.org/bsg-000016
-used_by:
- - url: http://bgee.org/
+usages:
+ - user: http://bgee.org/
    seeAlso: https://www.biosharing.org/biodbcore-000228
-   label: bgee
-   type: Database
- - url: https://www.encodeproject.org/
+   type: annotation
+   description: Bgee is a database to retrieve and compare gene expression patterns between animal species. Bgee in using Uberon to annotate the site of expression, and Bgee curators one the major contributors to the ontology.
+   examples:
+    - url: http://bgee.org/?page=gene&gene_id=ENSG00000244734
+      description: Uberon terms used to annotate expression of human	hemoglobin subunit beta
+ - user: https://www.encodeproject.org/
    seeAlso: https://www.biosharing.org/biodbcore-000034
-   label: ENCODE
- - url: http://fantom5-collaboration.gsc.riken.jp/
-   label: FANTOM5
- - url: https://monarchinitiative.org/
-   label: Monarch
-   type: Database
- - url: https://geneontology.org/
+   type: annotation
+   description: The National Human Genome Research Institute (NHGRI) launched a public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September 2003, to carry out a project to identify all functional elements in the human genome sequence. The ENCODE DCC users Uberon to annotate samples
+   reference: http://dx.doi.org/10.1093/database/bav010
+ - user: http://fantom5-collaboration.gsc.riken.jp/
+   type: annotation
+   description: FANTOM5 is using Uberon and CL to annotate samples allowing for transcriptome analyses with cell-type and tissue-level specificity.
+   examples:
+    - url: http://fantom.gsc.riken.jp/5/sstar/UBERON:0001893
+      description: FANTOM5 samples annotated to telencephalon or its parts
+ - user: https://monarchinitiative.org/
+   type: query
+   description: Querying expression and phenotype data
+ - user: https://geneontology.org/
    label: GO Database
-   type: Database
- - url: http://phenoscape.org
+   type: query
+   description: Querying for functional annotations relevant to a tissue
+   examples:
+    - url: http://amigo.geneontology.org/amigo/term/UBERON:0000955
+      description: GO annotations relevant to the uberon class for brain
+ - user: http://phenoscape.org
    label: Phenoscape
- - url: https://neuinfo.org/
-   label: Neuroscience Information Framework
-   type: Database
- - url: https://scicrunch.org/
-   label: SciCrunch
-   type: Database
+   description: The Phenoscape project is both a major driver of and contributor to Uberon, contibuting thousands of terms. The teleost (bony fishes) component of Uberon was derived from the Teleost Anatomy Ontology, developed by the Phenoscape group. Most of the high level design of the skeletal system comes from the Vertebrate Skeletal Anatomy Ontology (VSAO), also created by the Phenoscape group. Phenoscape curators continue to extend the ontology, covering a wide variety of tetrapod structures, with an emphasis on the appendicular system.
 funded_by:
  - "NIH R24OD011883"
  - "NIH R01HG004838"
