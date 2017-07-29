@@ -52,6 +52,8 @@ usages:
     example:
       - url: http://www.virtualflybrain.org/do/gene_list.html?action=geneex&id=FBbt:00003651
         description: "genes expressed in ring neuron R2 in VFB"
+  - user: http://flybase.org
+    description: VFB uses FBbt for expression and phenotype data annotation in Drosophila
 ---
 
 An ontology representing the gross anatomy of Drosophila melanogaster.
