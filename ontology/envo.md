@@ -70,6 +70,11 @@ usages:
     example:
       - url: https://www.ebi.ac.uk/metagenomics/projects/ERP001736/samples/ERS487899
         description: "Sample collected during the Tara Oceans expedition (2009-2013) at station TARA_004 (latitudeN=36.5533, longitudeE=-6.5669)"
+  - user: https://www.ncbi.nlm.nih.gov/
+    description: Annotation of habitats of microbes
+    example:
+      - url: https://www.ncbi.nlm.nih.gov/nuccore/NC_016642
+        description: "Annotation of habitat of Pseudovibrio sp. FO-BEG1 to marine environment"
 ---
 
 EnvO is a community ontology for the concise, controlled description of environments.
