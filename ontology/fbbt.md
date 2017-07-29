@@ -43,6 +43,12 @@ publications:
     title: "The Virtual Fly Brain Browser and Query Interface"
   - id: http://dx.doi.org/10.1093/nar/gkj068
     title: "FlyBase: anatomical data, images and queries"
+usages:
+  - user: http://www.virtualflybrain.org/
+    description: VFB uses FBbt to annotate brain images
+    example:
+      - url: http://www.virtualflybrain.org/site/stacks/index.htm?id=FBbt_00003651
+        description: "Ring neuron R2 in VFB"
 ---
 
 An ontology representing the gross anatomy of Drosophila melanogaster.
