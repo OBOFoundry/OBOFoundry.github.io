@@ -49,6 +49,9 @@ usages:
     example:
       - url: http://www.virtualflybrain.org/site/stacks/index.htm?id=FBbt_00003651
         description: "Ring neuron R2 in VFB"
+    example:
+      - url: http://www.virtualflybrain.org/do/gene_list.html?action=geneex&id=FBbt:00003651
+        description: "genes expressed in ring neuron R2 in VFB"
 ---
 
 An ontology representing the gross anatomy of Drosophila melanogaster.
