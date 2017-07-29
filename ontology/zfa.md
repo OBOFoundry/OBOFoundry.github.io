@@ -31,7 +31,7 @@ usages:
   - user: http://zfin.org
     description: ZFIN uses ZFA to annotate gene expression and phenotype
     examples:
-      - http://zfin.org/ZFA:0000029
+      - url: http://zfin.org/ZFA:0000029
         description: zebrafish genes expressed in hindbrain and genotypes with hindbrain phenotype
 ---
 
