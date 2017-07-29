@@ -31,6 +31,13 @@ license:
   label: CC0 1.0 Universal
 funded_by:
   - "http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400"
+usages:
+ - user: http://geneontology.org
+   type: annotation
+   description: ECO is used by the GO consortium for evidence on GO associations
+   examples:
+    - url: http://amigo.geneontology.org/amigo/term/GO:0055085
+      description: annotations to transmembrane transport
 ---
 
 <img src="https://avatars1.githubusercontent.com/u/12802432" alt="ECO logo"/>
