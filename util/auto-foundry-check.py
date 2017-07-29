@@ -61,6 +61,7 @@ def main():
 
 FAIL_LICENSE = 'license not CC-BY or CC-0'
 FAIL_TRACKER = 'No tracker for community requests'
+FAIL_USERS = 'No real users'
 def review_ontology(ont):
     inject(ont)
     fails = []
@@ -74,6 +75,8 @@ def review_ontology(ont):
         fails.append(FAIL_LICENSE)
     if 'tracker' not in ont:
         fails.append(FAIL_TRACKER)
+    if 'usages' not in ont:
+        fails.append(FAIL_USERS)
     conflict = is_foundry and len(fails)>0
     return dict(id=ont['id'], fails=fails, conflict=conflict)
 
