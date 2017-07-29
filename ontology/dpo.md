@@ -29,6 +29,12 @@ browsers:
 publications:
   - id: http://dx.doi.org/10.1186/2041-1480-4-30
     title: "The Drosophila phenotype ontology."
+usages:
+  - user: http://flybase.org
+    description: FlyBase uses dpo for phenotype data annotation in Drosophila
+    example:
+      - url: "http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBcv:0002030"
+        description: "alleles and constructs annotated to pupal lethal in FlyBase"
 ---
 
 An ontology of commonly encountered and/or high level Drosophila phenotypes.  It has significant formalisation - utilising terms from GO, CL, PATO and the Drosophila anatomy ontology.  It has been used by FlyBase for > 159000 annotations of phenotype.
