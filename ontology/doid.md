@@ -16,10 +16,6 @@ products:
     title: Disease Ontology inferred hierarchy that includes anatomy, cell of origin, infectious agent and phenotype axioms
   - id: doid.obo  
     title: Disease Ontology asserted is_a hierarchy (this file is equivalent to DO's previous HumanDO.obo file)
-browsers:
-  - label: DO
-    title: DO Browser
-    url: http://www.disease-ontology.org/
 taxon:
   id: NCBITaxon:9606 
   label: Homo sapiens
