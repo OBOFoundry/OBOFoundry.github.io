@@ -1497,7 +1497,9 @@ ontologies:
   products:
   - {id: mod.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mod.owl'}
   title: Protein modification
-- canonical: mondo.owl
+- browsers:
+  - {label: Monarch, title: Monarch Initiative Disease Browser, url: 'https://monarchinitiative.org/disease/DOID:14330'}
+  canonical: mondo.owl
   description: a semi-automatically constructed ontology that merges in multiple disease
     resources to yield a coherent merged ontology
   domain: disease
@@ -1648,13 +1650,18 @@ ontologies:
   tracker: https://github.com/obophenotype/ncbitaxon/issues
   wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
 - contact: {email: NCICB Support, label: ncicb@pop.nci.nih.gov}
-  description: an ontology-like vocabulary that includes broad coverage of the cancer
-    domain, including cancer related diseases, findings and abnormalities
-  homepage: https://cabig.nci.nih.gov/concepts/EVS/
+  description: NCI Thesaurus (NCIt) provides reference terminology that includes broad
+    coverage of the cancer domain, including cancer related diseases, findings and
+    abnormalities.
+  homepage: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
   id: ncit
   layout: ontology_detail
-  title: NCI Thesaurus
-  uri_prefix: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#
+  ontology_purl: http://purl.obolibrary.org/obo/ncit.owl
+  products:
+  - {id: ncit.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ncit.owl'}
+  - {id: ncit.obo, ontology_purl: 'http://purl.obolibrary.org/obo/ncit.obo'}
+  title: NCI Thesaurus OBO Edition
+  tracker: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
 - browsers: null
   build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/ncro/prebuild/ncro.owl'}
   contact: {email: huang@southalabama.edu, label: Jingshan Huang}
@@ -2287,8 +2294,8 @@ ontologies:
   homepage: http://symptomontologywiki.igs.umaryland.edu/mediawiki/index.php/Main_Page
   id: symp
   layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/symp.owl
   products:
   - {id: symp.owl, ontology_purl: 'http://purl.obolibrary.org/obo/symp.owl'}
@@ -2372,8 +2379,8 @@ ontologies:
   homepage: http://diseaseontology.sourceforge.net/
   id: trans
   layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/trans.owl
   products:
   - {id: trans.owl, ontology_purl: 'http://purl.obolibrary.org/obo/trans.owl'}

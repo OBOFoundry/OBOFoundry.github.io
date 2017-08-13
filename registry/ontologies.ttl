@@ -87,7 +87,8 @@ _:b3    <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
 
 <https://creativecommons.org/publicdomain/zero/1.0/>
         <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png> ;
-        <http://www.w3.org/2000/01/rdf-schema#label>  "CC0 1.0 Universal" .
+        <http://www.w3.org/2000/01/rdf-schema#label>  "CC0 1.0 Universal" ;
+        <http://www.w3.org/2000/01/rdf-schema#label>  "CC0" .
 
 <http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409>
         <http://purl.org/dc/elements/1.1/title>  "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data" .
@@ -2279,9 +2280,14 @@ _:b151  <http://www.w3.org/2000/01/rdf-schema#label>  "Henning Hermjakob" ;
         <http://purl.org/dc/terms/1.1/theme>  "disease" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/monarch-initiative/monarch-disease-ontology/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "MonDO" ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://monarchinitiative.org/disease/DOID:14330> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mondo.owl" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo.obo> .
+
+<https://monarchinitiative.org/disease/DOID:14330>
+        <http://purl.org/dc/elements/1.1/title>  "Monarch Initiative Disease Browser" ;
+        <http://www.w3.org/2000/01/rdf-schema#label>  "Monarch" .
 
 <http://purl.obolibrary.org/obo/mondo.owl>
         <http://purl.org/dc/elements/1.1/description>  "Complete ontology, plus inter-ontology equivalence axioms" ;
@@ -2473,13 +2479,23 @@ _:b9    <http://www.w3.org/2000/01/rdf-schema#label>  "obo-taxonomy-list" ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md> .
 
 <http://purl.obolibrary.org/obo/ncit>
-        <http://purl.org/dc/elements/1.1/description>  "an ontology-like vocabulary that includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities" ;
-        <http://purl.org/dc/elements/1.1/title>  "NCI Thesaurus" ;
+        <http://purl.org/dc/elements/1.1/description>  "NCI Thesaurus (NCIt) provides reference terminology that includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities." ;
+        <http://purl.org/dc/elements/1.1/title>  "NCI Thesaurus OBO Edition" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ncit.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b163 ;
-        <http://xmlns.com/foaf/0.1/homepage>  <https://cabig.nci.nih.gov/concepts/EVS/> .
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ncit.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ncit.obo> ;
+        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/NCI-Thesaurus/thesaurus-obo-edition> .
 
 _:b163  <http://www.w3.org/2000/01/rdf-schema#label>  "ncicb@pop.nci.nih.gov" ;
         <http://xmlns.com/foaf/0.1/mbox>  "NCICB Support" .
+
+<http://purl.obolibrary.org/obo/ncit.owl>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ncit.owl" .
+
+<http://purl.obolibrary.org/obo/ncit.obo>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ncit.obo" .
 
 <http://purl.obolibrary.org/obo/ncro>
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b164 ;
@@ -3348,7 +3364,7 @@ _:b222  <http://www.w3.org/2000/01/rdf-schema#label>  "Allyson Lister" ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of disease symptoms, with symptoms encompasing perceived changes in function, sensations or appearance reported by a patient indicative of a disease." ;
         <http://purl.org/dc/elements/1.1/title>  "Symptom Ontology" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "disease" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/DiseaseOntology/SymptomOntology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/symp.owl" ;
@@ -3477,7 +3493,7 @@ _:b232  <http://www.w3.org/2000/01/rdf-schema#label>  "Pankaj Jaiswal" ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b233 ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology representing the disease transmission process during which the pathogen is transmitted directly or indirectly from its natural reservoir, a susceptible host or source to a new host." ;
         <http://purl.org/dc/elements/1.1/title>  "Pathogen Transmission Ontology" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "disease" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/DiseaseOntology/PathogenTransmissionOntology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/trans.owl" ;
