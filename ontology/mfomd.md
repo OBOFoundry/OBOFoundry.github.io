@@ -10,8 +10,6 @@ domain: health
 homepage: https://github.com/jannahastings/mental-functioning-ontology
 products: 
   - id: mfomd.owl
-   source_url: http://purl.obolibrary.org/obo/mfomd.owl
-   method: owl2obo
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
