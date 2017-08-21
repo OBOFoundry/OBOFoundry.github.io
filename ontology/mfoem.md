@@ -14,6 +14,9 @@ build:
   source_url: http://purl.obolibrary.org/obo/mfoem.owl
   method: owl2obo
 tracker: https://github.com/jannahastings/emotion-ontology/issues
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 ---
 
 An ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings, designed to support interdisciplinary research by providing unified annotations.
