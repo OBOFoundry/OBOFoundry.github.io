@@ -4,7 +4,7 @@ id: mf
 contact:
   email: janna.hastings@gmail.com
   label: Janna Hastings
-description: The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning, founded on the Basic Formal Ontology (BFO) and related to the Ontology for General Medical Science (OGMS).
+description: The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning.
 domain: health
 homepage: https://github.com/jannahastings/mental-functioning-ontology
 products:
@@ -18,4 +18,4 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 ---
-
+The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning, founded on the Basic Formal Ontology (BFO) and related to the Ontology for General Medical Science (OGMS).
