@@ -24,6 +24,8 @@ OBO Foundry ontologies are resources for the entire biological and biomedical co
 
 2. We recommend that new ontologies carefully consider the choice of license. For example, [Creative Commons](https://creativecommons.org/) licenses like [CC0](https://creativecommons.org/publicdomain/zero/1.0/) and [CC-BY](https://creativecommons.org/licenses/by/4.0/) are popular open and understandable licenses. Many pros and cons of each license are laid out in [this discussion](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/285).
 
+Regardless of which license is chosen, it should be clearly stated in the ontology file.
+
 ### For ontology re-use
 
 1. The original source of an ontology must be credited according to the terms specified in the comment annotation of the ontology.
