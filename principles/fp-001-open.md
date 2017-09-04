@@ -58,7 +58,7 @@ In general, copyright legislation says that facts that are not copyrightable are
 
 1. OBO Foundry Ontologies must specify the reuse constraints using the following annotations in any publically released OBO version of the ontology:
   1. the license in a separate annotation, which can be converted to a dc:license statement if the ontology is converted to OWL - see Examples (below)
-  2. the reuse constraints using a comment <http://www.geneontology.org/GO.format.obo-1_4.shtml#S.2.1> in the official OBO version of the ontology - see Examples (below)
+  2. the reuse constraints using a comment in the official OBO version of the ontology - see Examples (below)
 
 ### For ontology re-use
 
