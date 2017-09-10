@@ -754,6 +754,35 @@ ontologies:
       of scientific evidence using the Evidence Ontology (ECO)}
   title: Evidence ontology
   tracker: https://github.com/evidenceontology/evidenceontology/issues
+- build: {checkout: 'git clone https://github.com/EcologicalSemantics/ecocore.git',
+    path: ., system: git}
+  contact: {email: p.buttigieg@gmail.com, label: Pier Luigi Buttigieg}
+  dependencies:
+  - {id: pco}
+  - {id: ro}
+  - {id: bfo}
+  - {id: pato}
+  - {id: envo}
+  - {id: chebi}
+  - {id: go}
+  - {id: uberon}
+  - {id: po}
+  - {id: iao}
+  description: An ontology to provide core semantics for ecological entities.
+  domain: ecological functions, ecological interactions
+  homepage: https://github.com/EcologicalSemantics/ecocore
+  id: ecocore
+  jobs:
+  - {id: 'https://travis-ci.org/EcologicalSemantics/ecocore', type: travis-ci}
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/ecocore.owl
+  products:
+  - {id: ecocore.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ecocore.owl'}
+  - {id: ecocore.obo, ontology_purl: 'http://purl.obolibrary.org/obo/ecocore.obo'}
+  title: An ontology of core ecological entities
+  tracker: https://github.com/EcologicalSemantics/ecocore/issues
 - build: {checkout: 'git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git',
     method: vcs, path: src/ontology, system: git}
   contact: {email: J.Bard@ed.ac.uk, label: Jonathan Bard}
@@ -1017,7 +1046,8 @@ ontologies:
   taxon: {id: 'NCBITaxon:7227', label: Drosophila}
   title: Drosophila development
   tracker: http://purl.obolibrary.org/obo/fbdv/tracker
-- contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
+- build: {infallible: 1, insert_ontology_id: true, method: obo2owl, source_url: 'ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'}
+  contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
   description: An ontology of physico-chemical methods and properties.
   id: fix
   in_foundry: false
@@ -1025,6 +1055,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/fix.owl
   products:
   - {id: fix.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fix.owl'}
+  - {id: fix.obo, ontology_purl: 'http://purl.obolibrary.org/obo/fix.obo'}
   title: Physico-chemical methods and properties
 - build: {method: owl2obo, source_url: 'https://github.com/flora-phenotype-ontology/flopoontology/raw/master/ontology/flopo.owl'}
   contact: {email: robert.hoehndorf@kaust.edu.sa, label: Robert Hoehndorf}
@@ -1346,9 +1377,14 @@ ontologies:
   tracker: http://sourceforge.net/p/mamo-ontology/tickets/
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/mf.owl'}
   contact: {email: janna.hastings@gmail.com, label: Janna Hastings}
+  description: The Mental Functioning Ontology is an overarching ontology for all
+    aspects of mental functioning.
+  domain: health
   homepage: https://github.com/jannahastings/mental-functioning-ontology
   id: mf
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/mf.owl
   products:
   - {id: mf.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mf.owl'}
@@ -1381,17 +1417,25 @@ ontologies:
   homepage: https://github.com/jannahastings/emotion-ontology
   id: mfoem
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/mfoem.owl
   products:
   - {id: mfoem.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mfoem.owl'}
   title: Emotion Ontology
   tracker: https://github.com/jannahastings/emotion-ontology/issues
 - contact: {email: janna.hastings@gmail.com, label: Janna Hastings}
-  description: An ontology to describe and classify mental diseases
+  description: An ontology to describe and classify mental diseases such as schizophrenia,
+    annotated with DSM-IV and ICD codes where applicable
   domain: health
   homepage: https://github.com/jannahastings/mental-functioning-ontology
   id: mfomd
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/mfomd.owl
+  products:
+  - {id: mfomd.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mfomd.owl'}
   title: MFO Mental Disease Ontology
 - build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo'}
   contact: {email: 'pporras@ebi.ac.uk, orchard@ebi.ac.uk', label: 'Pablo Porras, Sandra
@@ -1649,10 +1693,11 @@ ontologies:
   title: NCBI organismal classification
   tracker: https://github.com/obophenotype/ncbitaxon/issues
   wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
-- contact: {email: NCICB Support, label: ncicb@pop.nci.nih.gov}
-  description: NCI Thesaurus (NCIt) provides reference terminology that includes broad
-    coverage of the cancer domain, including cancer related diseases, findings and
-    abnormalities.
+- contact: {email: haendel@ohsu.edu, label: Melissa Haendel}
+  description: The NCI Thesaurus (NCIt) OBO Edition project aims to increase integration
+    of the NCIt with OBO Library ontologies. NCIt is a reference terminology that
+    includes broad coverage of the cancer domain, including cancer related diseases,
+    findings and abnormalities. NCIt OBO Edition releases should be considered experimental.
   homepage: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
   id: ncit
   layout: ontology_detail
@@ -1952,13 +1997,29 @@ ontologies:
   products:
   - {id: ovae.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ovae.owl'}
   title: Ontology of Vaccine Adverse Events
-- build: {method: owl2obo, oort_args: --no-subsets --reasoner hermit, source_url: 'http://purl.obolibrary.org/obo/pco.owl'}
-  contact: {email: rwalls2008@gmail.com, label: Ramona Walls}
-  description: A taxon-neutral ontology of material entities, qualities, and processes
-    related to collections of interacting organisms such as populations and communities.
+- build: {checkout: 'git clone https://github.com/PopulationAndCommunityOntology/pco.git',
+    path: ., system: git}
+  contact: {email: rlwalls2008@gmail.com, label: Ramona Walls}
+  dependencies:
+  - {id: ro}
+  - {id: bfo}
+  - {id: pato}
+  - {id: envo}
+  - {id: go}
+  - {id: iao}
+  - {id: bfo}
+  - {id: ncbi_taxon}
+  - {id: caro}
+  description: An ontology about groups of interacting organisms such as populations
+    and communities
+  domain: collections of organisms
   homepage: https://github.com/PopulationAndCommunityOntology/pco
   id: pco
+  jobs:
+  - {id: 'https://travis-ci.org/PopulationAndCommunityOntology/pco', type: travis-ci}
   layout: ontology_detail
+  license: {label: CC-0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'http://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/pco.owl
   products:
   - {id: pco.owl, ontology_purl: 'http://purl.obolibrary.org/obo/pco.owl'}
@@ -2791,9 +2852,14 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   title: Habronattus courtship
-- {homepage: 'http://www.inoh.org', id: iev, is_obsolete: true, layout: ontology_detail,
-  title: Event (INOH pathway ontology)}
-- contact: {email: INOH curators, label: curator@inoh.org}
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://download.baderlab.org/INOH/ontologies/EventOntology_172.obo'}
+  homepage: http://www.inoh.org
+  id: iev
+  is_obsolete: true
+  layout: ontology_detail
+  title: Event (INOH pathway ontology)
+- build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://web.archive.org/web/20131127090937/http://www.inoh.org/ontologies/MoleculeRoleOntology.obo'}
+  contact: {email: INOH curators, label: curator@inoh.org}
   homepage: http://www.inoh.org
   id: imr
   is_obsolete: true
