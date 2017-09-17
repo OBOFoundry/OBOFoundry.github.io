@@ -13,6 +13,10 @@ taxon:
 domain: disease
 tracker: https://github.com/monarch-initiative/monarch-disease-ontology/issues
 canonical: mondo.owl
+browsers:
+  - label: Monarch
+    title: Monarch Initiative Disease Browser
+    url: https://monarchinitiative.org/disease/DOID:14330
 products:
  - id: mondo.owl
    title: Main OWL edition

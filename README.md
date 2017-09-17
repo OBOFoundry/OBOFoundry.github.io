@@ -17,13 +17,10 @@ The source can be found on https://github.com/OBOFoundry/OBOFoundry.github.io
 It uses GitHub Pages/[Jekyll](https://en.wikipedia.org/wiki/Jekyll_%28software%29),
 a popular static site generator.
 
-It [integrates nicely with
+GitHub pages [are integrated with
 github](https://help.github.com/articles/using-jekyll-with-pages/)
 which means that the entire site can be seen on
-http://obofoundry.github.io (no need to run a dedicated webserver)
-
-At the same time, we are not dependent on github - we could do our own
-static generation, e.g. with a Jenkins job
+http://obofoundry.github.io (we don't run a dedicated webserver)
 
 For more details see: [README-sitedev.md](README-sitedev.md)
 
@@ -35,9 +32,13 @@ but you may want to hold off til things are more stable
 
 ### I want to contribute
 
-Please do! Fork and make PR, but beware things are not yet stable
+Please do! Anyone can fork and make PR, or [create an issue in the tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues).
 
-## Organization
+Note that most members of the community will do this via the [obofoundry.org website](http://obofoundry.org) - each ontology page has links for editing the metadata.
+
+See [CONTRIBUTING.md](contributing.md)
+
+## Repo Organization
 
  * [registry/](registry)   `<-- DERIVED yaml, json and RDF. DO NOT EDIT`
     * [registry/ontologies.yaml](registry/ontologies.yaml)  `<-- READONLY`

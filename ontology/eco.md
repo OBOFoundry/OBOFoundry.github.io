@@ -26,6 +26,9 @@ contact:
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/25052702
     title: "Standardized description of scientific evidence using the Evidence Ontology (ECO)"
+license:
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0 Universal
 funded_by:
   - "http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400"
 ---
