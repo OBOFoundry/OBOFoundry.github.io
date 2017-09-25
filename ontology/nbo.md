@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: nbo
 contact:
-  email: g.gkoutos@gmail.com
+  email: g.gkoutos@bham.ac.uk 
   label: George Gkoutos
 description: An ontology of human and animal behaviours and behavioural phenotypes
 domain: behavior
