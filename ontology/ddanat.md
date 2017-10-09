@@ -2,15 +2,12 @@
 layout: ontology_detail
 id: ddanat
 contact:
-  email: pfey@northwestern.edu
-  label: Petra Fey
-description: "A structured controlled vocabulary of the anatomy of the slime-mould Dictyostelium discoideum"
+  email: r-chisholm@northwestern.edu
+  label: Rex Chisholm
+description: A structured controlled vocabulary of the anatomy of the slime-mould <i>Dictyostelium discoideum</i>.
 domain: anatomy
 homepage: http://dictybase.org/
 twitter: dictybase
-license:
-  url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0 Universal
 products:
   - id: ddanat.owl
   - id: ddanat.obo
