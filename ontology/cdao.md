@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: cdao
 contact:
-  email: balhoff@nescent.org
+  email: balhoff@renci.org
   label: Jim Balhoff
 description: a formalization of concepts and relations relevant to evolutionary comparative analysis
 homepage: http://sourceforge.net/apps/mediawiki/cdao/index.php?title=Main_Page
