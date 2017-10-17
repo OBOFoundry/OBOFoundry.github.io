@@ -14,7 +14,7 @@ products:
   - id: bfo.owl
   - id: bfo.obo
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
 title: Basic Formal Ontology
 depicted_by: https://avatars2.githubusercontent.com/u/12972134?v=3&s=200
