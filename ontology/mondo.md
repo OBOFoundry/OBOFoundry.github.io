@@ -20,14 +20,22 @@ browsers:
 products:
  - id: mondo.owl
    title: Main OWL edition
-   description: Complete ontology, plus inter-ontology equivalence axioms
+   description: Complete ontology, plus inter-ontology equivalence axioms. Uses identifiers of contributing ontologies.
    format: owl-rdf/xml
    is_canonical: true
  - id: mondo.obo
    title: obo-format edition
-   description: As OWL, but omits equivalence axioms
+   description: As OWL, but omits equivalence axioms. xrefs can be used as proxy for equivalence. Uses identifiers of contributing ontologies.
    format: obo
    derived_from: mondo.owl
+ - id: pre/mondo.owl
+   title: Preview of new OWL edition
+   description: Complete ontology, plus inter-ontology equivalence axioms. Uses MONDO identifiers.
+   format: owl-rdf/xml
+ - id: pre/mondo.obo
+   title: Preview of new OBO edition
+   description: Complete ontology, but omits inter-ontology equivalence axioms. Uses MONDO identifiers.
+   format: obo
 ---
 
 MonDO (Monarch Disease Ontology) is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology.
