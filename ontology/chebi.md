@@ -23,6 +23,12 @@ browsers:
 products:
   - id: chebi.owl
   - id: chebi.obo
+  - id: chebi.owl.gz
+    title: "chebi, compressed owl"
+  - id: chebi/chebi_lite.obo
+    title: "chebi_lite, no syns or xrefs"
+  - id: chebi/chebi_core.obo
+    title: "chebi_core, no xrefs"
 tracker: https://github.com/ebi-chebi/ChEBI/issues
 ---
 

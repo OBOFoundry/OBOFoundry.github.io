@@ -1,19 +1,36 @@
 ---
 layout: ontology_detail
 id: pco
+title: Population and Community Ontology
+jobs:
+  - id: https://travis-ci.org/PopulationAndCommunityOntology/pco
+    type: travis-ci
+build:
+  checkout: git clone https://github.com/PopulationAndCommunityOntology/pco.git
+  system: git
+  path: "."
 contact:
-  email: rwalls2008@gmail.com
+  email: rlwalls2008@gmail.com
   label: Ramona Walls
-description: A taxon-neutral ontology of material entities, qualities, and processes related to collections of interacting organisms such as populations and communities.
+description: An ontology about groups of interacting organisms such as populations and communities
+domain: collections of organisms
 homepage: https://github.com/PopulationAndCommunityOntology/pco
 products:
   - id: pco.owl
-title: Population and Community Ontology
-build:
-  oort_args: --no-subsets --reasoner hermit
-  source_url: http://purl.obolibrary.org/obo/pco.owl
-  method: owl2obo
+dependencies:
+ - id: ro
+ - id: bfo
+ - id: pato
+ - id: envo
+ - id: go
+ - id: iao
+ - id: bfo
+ - id: ncbi_taxon
+ - id: caro
 tracker: https://github.com/PopulationAndCommunityOntology/pco/issues
+license:
+  url: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC-0
 ---
 
 The Population and Community Ontology (PCO) describes material entities, qualities, and processes related to collections of interacting organisms such as populations and communities. It is taxon neutral, and can be used for any species, including humans.

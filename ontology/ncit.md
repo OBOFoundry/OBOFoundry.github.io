@@ -1,13 +1,16 @@
 ---
 layout: ontology_detail
 id: ncit
-title: NCI Thesaurus
+title: NCI Thesaurus OBO Edition
 contact:
-  email: NCICB Support
-  label: ncicb@pop.nci.nih.gov
-homepage: https://cabig.nci.nih.gov/concepts/EVS/
-uri_prefix: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#
-description: an ontology-like vocabulary that includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities
+  email: haendel@ohsu.edu
+  label: Melissa Haendel
+homepage: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
+tracker: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
+description: The NCI Thesaurus (NCIt) OBO Edition project aims to increase integration of the NCIt with OBO Library ontologies. NCIt is a reference terminology that includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities. NCIt OBO Edition releases should be considered experimental.
+products:
+  - id: ncit.owl
+  - id: ncit.obo
 ---
 
 The NCI Thesaurus is an ontology-like vocabulary that includes broad

@@ -2,12 +2,12 @@
 layout: ontology_detail
 id: ogms
 contact:
-  email: albertgoldfain@gmail.com
-  label: Albert Goldfain
+  email: baeverma@jcvi.org
+  label: Brian Aevermann
 description: An ontology for representing treatment of disease and diagnosis and on carcinomas and other pathological entities
 domain: medicine
-homepage: http://code.google.com/p/ogms/
-page: http://code.google.com/p/ogms/
+homepage: https://github.com/OGMS/ogms
+page: https://github.com/OGMS/ogms
 products:
   - id: ogms.owl
 taxon:
