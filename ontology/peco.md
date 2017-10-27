@@ -12,7 +12,7 @@ page: http://browser.planteome.org/amigo/term/PECO:0007359
 products:
   - id: peco.owl
   - id: peco.obo
-tracker: https://github.com/Planteome/plant-environment-ontology/issues
+tracker: https://github.com/Planteome/plant-experimental-conditions-ontology/issues
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4.0
