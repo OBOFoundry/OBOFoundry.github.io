@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: peco
 title: Plant Environment Conditions Ontology
-build:
-  source_url: https://github.com/Planteome/plant-environment-ontology/blob/master/eo.obo
-  method: obo2owl
 contact:
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
