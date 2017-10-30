@@ -28,6 +28,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Mass spectrometry ontology (ms): [The HUPO proteomics standards initiative- mass spectrometry controlled vocabulary.](http://www.ncbi.nlm.nih.gov/pubmed/23482073)
 - Measurement method ontology (mmo): [Three ontologies to define phenotype measurement data.](http://www.ncbi.nlm.nih.gov/pubmed/22654893)
 - Pathway ontology (pw): [The Rat Genome Database pathway portal.](http://www.ncbi.nlm.nih.gov/pubmed/21478484)
+- Plant Environment Conditions Ontology (peco): [Ontologies as integrative tools for plant science.](http://www.ncbi.nlm.nih.gov/pubmed/22847540)
 - Plant Environment Ontology (eo): [Ontologies as integrative tools for plant science.](http://www.ncbi.nlm.nih.gov/pubmed/22847540)
 - Plant Ontology (po): [The plant ontology as a tool for comparative plant anatomy and genomic analyses.](http://www.ncbi.nlm.nih.gov/pubmed/23220694)
 - Plant Trait Ontology (to): [Ontologies as integrative tools for plant science.](http://www.ncbi.nlm.nih.gov/pubmed/22847540)

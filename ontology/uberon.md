@@ -42,6 +42,10 @@ used_by:
  - url: https://scicrunch.org/
    label: SciCrunch
    type: Database
+ - url: http://single-cell.clst.riken.jp/
+   label: SCPortalen
+   reference: https://doi.org/10.1093/nar/gkx949
+   type: Database
 funded_by:
  - "NIH R24OD011883"
  - "NIH R01HG004838"
