@@ -1,12 +1,12 @@
 ---
 layout: ontology_detail
 id: peco
-title: Plant Environment Conditions Ontology
+title: Plant Experimental Conditions Ontology
 contact:
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
 description: A structured, controlled vocabulary which describes the treatments, growing conditions, and/or study types used in plant biology experiments.
-domain: environment
+domain: experimental conditions
 homepage: http://planteome.org/
 page: http://browser.planteome.org/amigo/term/PECO:0007359
 products:
@@ -21,6 +21,6 @@ publications:
     title: "Ontologies as integrative tools for plant science."
 ---
 
-A structured, controlled vocabulary for the representation of plant environmental conditions.
+A structured, controlled vocabulary for the representation of plant experimental conditions ontology.
 
 <img alt="Planteome logo" src="http://planteome.org/sites/default/files/garland_logo.PNG"/>
