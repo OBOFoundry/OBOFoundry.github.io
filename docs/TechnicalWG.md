@@ -18,13 +18,16 @@ The OBOFOC Technical WG is involved in maintaining the technical infrastructure 
 (in alphabetical order of surname)<br />
 Colin Batchelor, Royal Society of Chemistry, UK
 <br>
-<a href='http://purl.org/net/mcourtot'>Melanie Courtot</a>, Simon Fraser University, Vancouver, Canada<br>
+<a href='http://purl.org/net/mcourtot'>Melanie Courtot</a>, EMBL-EBI, Cambridge, UK<br>
+<a href='http://www.factbio.com/about.html'>James Malone</a>, FactBio, Cambridge, UK<br>
 <a href='http://berkeleybop.org/person/chris-mungall'>Chris Mungall</a>, Lawrence Berkeley Laboratory, Berkeley, USA<br>
 <a href='http://james.overton.ca'>James A. Overton</a>, Knocean.com, Toronto, Canada<br>
 <a href='http://sciencecommons.org/about/whoweare/ruttenberg/'>Alan Ruttenberg</a>, University at Buffalo, Buffalo, USA<br>
-Carlo Torniai (on leave)<br>
 <a href='http://cbil.upenn.edu/profile-staff_bio/39'>Jie Zheng</a>, University of Pennsylvania, Philadelphia, USA<br>
 <br>
+<h1>Alumni</h1>
+Carlo Torniai<br>
+
 <h1>Meetings</h1>
 
 See <a href='TechnicalWGMeetings.html'>here</a>
