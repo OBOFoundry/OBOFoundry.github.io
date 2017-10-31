@@ -21,6 +21,6 @@ publications:
     title: "Ontologies as integrative tools for plant science."
 ---
 
-A structured, controlled vocabulary for the representation of plant experimental conditions ontology.
+A structured, controlled vocabulary for the representation of plant experimental conditions.
 
 <img alt="Planteome logo" src="http://planteome.org/sites/default/files/garland_logo.PNG"/>
