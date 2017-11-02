@@ -5,7 +5,7 @@ title: Minimum PDDI Information Ontology
 contact:
   email: mbrochhausen@uams.edu
   label: Mathias Brochhausen
-description: An ontology of minimum information regarding potential drug-drug interaction information. It is based on and meant to be use in alignment with DIDEO or DINTO..
+description: An ontology of minimum information regarding potential drug-drug interaction information.
 domain: health
 homepage: https://github.com/MPIO-Developers/MPIO
 products:
