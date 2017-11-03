@@ -9,7 +9,7 @@ description: An ontology of minimum information regarding potential drug-drug in
 domain: health
 homepage: https://github.com/MPIO-Developers/MPIO
 products:
-  - id: oostt.owl
+  - id: mpio.owl
 tracker: https://github.com/MPIO-Developers/MPIO/issues
 license:
   url: http://creativecommons.org/licenses/by/4.0/
