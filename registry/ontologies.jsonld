@@ -3350,6 +3350,31 @@
         },
         {
             "contact": {
+                "email": "mbrochhausen@uams.edu",
+                "label": "Mathias Brochhausen"
+            },
+            "description": "An ontology of minimum information regarding potential drug-drug interaction information.",
+            "domain": "health",
+            "homepage": "https://github.com/MPIO-Developers/MPIO",
+            "id": "mpio",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/mpio.owl",
+            "products": [
+                {
+                    "id": "mpio.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mpio.owl"
+                }
+            ],
+            "title": "Minimum PDDI Information Ontology",
+            "tracker": "https://github.com/MPIO-Developers/MPIO/issues"
+        },
+        {
+            "contact": {
                 "email": "bpeters@liai.org",
                 "label": "Bjoern Peters"
             },
@@ -4212,7 +4237,7 @@
                 "label": "Pankaj Jaiswal"
             },
             "description": "A structured, controlled vocabulary which describes the treatments, growing conditions, and/or study types used in plant biology experiments.",
-            "domain": "environment",
+            "domain": "experimental conditions",
             "homepage": "http://planteome.org/",
             "id": "peco",
             "layout": "ontology_detail",
@@ -4239,7 +4264,7 @@
                     "title": "Ontologies as integrative tools for plant science."
                 }
             ],
-            "title": "Plant Environment Conditions Ontology",
+            "title": "Plant Experimental Conditions Ontology",
             "tracker": "https://github.com/Planteome/plant-experimental-conditions-ontology/issues"
         },
         {
