@@ -3,8 +3,8 @@ layout: ontology_detail
 id: ovae
 title: Ontology of Vaccine Adverse Events
 contact:
-  email: Yongqunh He
-  label: yongqunh@med.umich.edu
+  email: yongqunh@med.umich.edu
+  label: Yongqunh He
 homepage: http://www.violinet.org/ovae/
 description: "A biomedical ontology in the domain of vaccine adverse events."
 products:
