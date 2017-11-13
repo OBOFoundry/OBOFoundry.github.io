@@ -15,11 +15,12 @@ Current members of the OBO Foundry Operations Committee are: (in alphabetical or
 
  * Colin Batchelor (E), Royal Society of Chemistry, UK
  * Mathias Brochhausen (O)
- * [Melanie Courtot](http://purl.org/net/mcourtot) (O, T),  Simon Fraser University, Vancouver, Canada
+ * [Melanie Courtot](http://purl.org/net/mcourtot) (O, T),  EMBL-EBI, Cambridge, UK 
  * [Melissa Haendel](http://www.ohsu.edu/xd/education/library/about/staff-directory/melissa-haendel.cfm) (O), Oregon Health & Science University, Portland, OR (OBO coordinator)
  * Janna Hastings (E, O)
  * [Simon Jupp](http://www.ebi.ac.uk/about/people/simon-jupp) (T), European Bioinformatics Institute, Cambridge, UK 
  * Suzi Lewis (OBO coordinator)
+ * James Malone, FactBio, Cambridge, UK
  * [Chris Mungall](https://github.com/cmungall/), Lawrence Berkeley Laboratory, Berkeley, USA (OBO coordinator) (T)
  * Darren Natale (E)
  * [James A. Overton](http://james.overton.ca) (T), Knocean.com, Toronto, Canada
