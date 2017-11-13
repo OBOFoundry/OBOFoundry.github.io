@@ -25,7 +25,7 @@ Current members of the OBO Foundry Operations Committee are: (in alphabetical or
  * Darren Natale (E)
  * [James A. Overton](http://james.overton.ca) (T), Knocean.com, Toronto, Canada
  * Bjoern Peters (E)
- * Philippe Rocca-Serra (E, O)
+ * [Philippe Rocca-Serra](https://www.oerc.ox.ac.uk/people/philippe-rocca-serra) (E, O), University of Oxford e-Research Centre, Department of Engineering Science, Oxford, UK.
  * [Alan Ruttenberg](http://sciencecommons.org/about/whoweare/ruttenberg/) (O, T), University at Buffalo, Buffalo, USA (OBO coordinator)
  * [Richard Scheuermann](http://www.jcvi.org/cms/about/bios/rscheuermann/) (OBO coordinator) (O), J. Craig Venter Institute, La Jolla, CA, USA
  * Lynn Schriml (E,O) (OBO coordinator)
