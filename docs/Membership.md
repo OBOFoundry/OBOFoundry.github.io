@@ -14,7 +14,7 @@ Membership in working groups: T=technical working group, O=outreach working grou
 Current members of the OBO Foundry Operations Committee are: (in alphabetical order of surname)
 
  * Colin Batchelor (E), Royal Society of Chemistry, UK
- * Mathias Brochhausen (O)
+ * Mathias Brochhausen (O), Department of Biomedical Informatics, University of Arkansas for Medical Sciences, Little Rock, AR, USA
  * [Melanie Courtot](http://purl.org/net/mcourtot) (O, T),  EMBL-EBI, Cambridge, UK 
  * [Melissa Haendel](http://www.ohsu.edu/xd/education/library/about/staff-directory/melissa-haendel.cfm) (O), Oregon Health & Science University, Portland, OR (OBO coordinator)
  * Janna Hastings (E, O)
