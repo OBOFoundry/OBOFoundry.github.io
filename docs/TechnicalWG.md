@@ -19,6 +19,7 @@ The OBOFOC Technical WG is involved in maintaining the technical infrastructure 
 Colin Batchelor, Royal Society of Chemistry, UK
 <br>
 <a href='http://purl.org/net/mcourtot'>Melanie Courtot</a>, EMBL-EBI, Cambridge, UK<br>
+<a href='https://github.com/selewis'>Suzi Lewis</a>, Lawrence Berkeley Laboratory, Berkeley, USA<br>
 <a href='http://www.factbio.com/about.html'>James Malone</a>, FactBio, Cambridge, UK<br>
 <a href='http://berkeleybop.org/person/chris-mungall'>Chris Mungall</a>, Lawrence Berkeley Laboratory, Berkeley, USA<br>
 <a href='http://james.overton.ca'>James A. Overton</a>, Knocean.com, Toronto, Canada<br>
