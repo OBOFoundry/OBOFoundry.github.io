@@ -23,7 +23,7 @@ Current members of the OBO Foundry Operations Committee are: (in alphabetical or
  * James Malone, FactBio, Cambridge, UK
  * [Chris Mungall](https://github.com/cmungall/), Lawrence Berkeley Laboratory, Berkeley, USA (OBO coordinator) (T)
  * Darren Natale (E)
- * [James A. Overton](http://james.overton.ca) (T), Knocean.com, Toronto, Canada
+ * [James A. Overton](http://james.overton.ca) (T), [Knocean Inc.](http://knocean.com), Toronto, Canada
  * Bjoern Peters (E)
  * [Philippe Rocca-Serra](https://www.oerc.ox.ac.uk/people/philippe-rocca-serra) (E, O), University of Oxford e-Research Centre, Department of Engineering Science, Oxford, UK.
  * [Alan Ruttenberg](http://sciencecommons.org/about/whoweare/ruttenberg/) (O, T), University at Buffalo, Buffalo, USA (OBO coordinator)
