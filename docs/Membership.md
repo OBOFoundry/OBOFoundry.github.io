@@ -30,6 +30,6 @@ Current members of the OBO Foundry Operations Committee are: (in alphabetical or
  * [Richard Scheuermann](http://www.jcvi.org/cms/about/bios/rscheuermann/) (OBO coordinator) (O), J. Craig Venter Institute, La Jolla, CA, USA
  * Lynn Schriml (E,O) (OBO coordinator)
  * Barry Smith (OBO coordinator) (O)
- * Chris Stoeckert (O), University of Pennsylvania, Philadelphia, PA, USA
+ * Chris Stoeckert (E,O), University of Pennsylvania, Philadelphia, PA, USA
  * [Ramona Walls](http://www.cyverse.org/ramona-walls) (E, T), CyVerse, University of Arizona, Tucson, AZ, USA
  * [Jie Zheng](http://cbil.upenn.edu/profile-staff_bio/39) (T), University of Pennsylvania, Philadelphia, USA
