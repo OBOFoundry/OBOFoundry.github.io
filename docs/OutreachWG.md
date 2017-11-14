@@ -22,7 +22,8 @@ Mathias Brochhausen<br>
 <a href='http://purl.org/net/mcourtot'>Melanie Courtot</a>, Simon Fraser University, Vancouver, Canada<br>
 <a href='http://www.ohsu.edu/xd/education/library/about/staff-directory/melissa-haendel.cfm'>Melissa Haendel</a>, Oregon Health & Science University, Portland, OR<br>
 Janna Hastings<br>
-Chris Mungall<br>
+<a href='https://github.com/selewis'>Suzi Lewis</a> Lawrence Berkeley National Laboratory, Berkeley CA<br>
+<a href='https://github.com/cmungall/'>Chris Mungall</a>  Lawrence Berkeley National Laboratory, Berkeley CA<br>
 <a href='http://alan.ruttenbergs.com/'>Alan Ruttenberg</a><br>
 Richard Scheuermann<br>
 Chris Stoeckert, University of Pennsylvania, Philadelphia, PA, USA<br>

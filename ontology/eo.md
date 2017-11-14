@@ -38,3 +38,5 @@ usages:
 A structured, controlled vocabulary for the representation of plant environmental conditions.
 
 <img alt="Planteome logo" src="http://planteome.org/sites/default/files/garland_logo.PNG"/>
+
+Note this ontology is being replaced by [PECO](peco.html)

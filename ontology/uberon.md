@@ -50,6 +50,16 @@ usages:
  - user: http://phenoscape.org
    label: Phenoscape
    description: The Phenoscape project is both a major driver of and contributor to Uberon, contibuting thousands of terms. The teleost (bony fishes) component of Uberon was derived from the Teleost Anatomy Ontology, developed by the Phenoscape group. Most of the high level design of the skeletal system comes from the Vertebrate Skeletal Anatomy Ontology (VSAO), also created by the Phenoscape group. Phenoscape curators continue to extend the ontology, covering a wide variety of tetrapod structures, with an emphasis on the appendicular system.
+ - url: https://neuinfo.org/
+   label: Neuroscience Information Framework
+   type: Database
+ - url: https://scicrunch.org/
+   label: SciCrunch
+   type: Database
+ - url: http://single-cell.clst.riken.jp/
+   label: SCPortalen
+   reference: https://doi.org/10.1093/nar/gkx949
+   type: Database
 funded_by:
  - "NIH R24OD011883"
  - "NIH R01HG004838"

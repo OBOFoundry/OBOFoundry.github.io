@@ -20,34 +20,37 @@ browsers:
 products:
  - id: mondo.owl
    title: Main OWL edition
-   description: Complete ontology, plus inter-ontology equivalence axioms. Uses identifiers of contributing ontologies.
+   description: Complete ontology, plus inter-ontology equivalence axioms. Uses MONDO IDs.
    format: owl-rdf/xml
    is_canonical: true
  - id: mondo.obo
    title: obo-format edition
-   description: As OWL, but omits equivalence axioms. xrefs can be used as proxy for equivalence. Uses identifiers of contributing ontologies.
+   description: As OWL, but omits equivalence axioms. xrefs can be used as proxy for equivalence. Uses MONDO IDs
+   format: obo
+   derived_from: mondo.owl
+ - id: mondo.json
+   title: json edition
+   description: Equivalent to the OWL edition
    format: obo
    derived_from: mondo.owl
  - id: pre/mondo.owl
-   title: Preview of new OWL edition
-   description: Complete ontology, plus inter-ontology equivalence axioms. Uses MONDO identifiers.
+   title: "(DEPRECATED) Preview of new OWL edition"
+   description: Now identical to main release
    format: owl-rdf/xml
  - id: pre/mondo.obo
-   title: Preview of new OBO edition
-   description: Complete ontology, but omits inter-ontology equivalence axioms. Uses MONDO identifiers.
+   title: "(DEPRECATED) Preview of new OBO edition"
+   description: Now identical to main release
    format: obo
 ---
 
-MonDO (Monarch Disease Ontology) is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology. Original versions of MonDO were constructed entirely automatically. Later additional manually curated cross-ontology axioms were added. Currently construction also involves a significant amount of manual curation on merged classes.
+MonDO (Monarch Disease Ontology) is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology. Original versions of MonDO were constructed entirely automatically and used the IDs of source databases and ontologies. Later, additional manually curated cross-ontology axioms were added, and a native MONDO ID system was used to avoid confusion with source databases.
 
-There are currently 4 versions available, a combination of two criteria:
+One feature of MONDO is that it goes beyond loose xrefs. It curated precise 1:1 equivalence axioms connecting to other resources, validated by OWL reasoning. This means it is safe to propagate across these from OMIM, Orphanet, EFO, DOID (soon NCIT).
 
- - the `pre` version uses MONDO IDs as primary. This will likely be the shape of future versions
- - the main version uses clique leaders from source ontologies as primary
- - the .owl version of the main version uses equivalence axioms to connect clique leaders to equivalent classes in other ontologies/sources
- - the .owl version of the pre version uses equivalence axioms to connect MONDO classes to equivalent classes in other ontologies/sources.
-  - the owl versions also have additional axiomatization following standard design patterns
-  - the .obo versions are simpler, lack full axiomatization, and lack equivalence axioms to other diseases; instead xrefs are used as the linking mechanism.
+These precise mappings are available in two ways depending on the format
+
+ - the .owl edition uses OWL equivalence axioms directly in the ontology. Note this makes it harder to browse in some portals, but this edition may be preferable for computational use. The owl edition also includes axiomatization using CL, Uberon, GO, HP, RO, NCBITaxon.
+ - the .obo versions are simpler, lacks inter-ontology axiomatization, and lack equivalence axioms to other databases; instead xrefs are used as the linking mechanism. If the ID is one of Orphanet, OMIM, DOID or EFO then the xref precisely shadows the equivalence axiom.
   
 Trackers
 

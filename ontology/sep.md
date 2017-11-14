@@ -12,8 +12,9 @@ products:
   - id: sep.owl
 title: Sample processing and separation techniques
 build:
-  source_url: http://gelml.googlecode.com/svn/trunk/CV/sep.obo
+  source_url: https://raw.githubusercontent.com/HUPO-PSI/gelml/master/CV/sep.obo
   method: obo2owl
+  insert_ontology_id: true
 ---
 
 A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments, such as, and including, gel electrophoresis, column chromatography, capillary electrophoresis, centrifugation and so on. Developed jointly by the HUPO Proteomics Standards Initiative and The Metabolomics Standards Initiative.
