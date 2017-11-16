@@ -8,7 +8,7 @@ title: OBO central builds
 Most ontology metadata files contain a `build` field (see other FAQ
 entries for how to view and edit metadata files).
 
-For example, the [mouse anatomy](/ontology/ma.html) yaml file `ma.md` has the following:
+For example, the [mouse anatomy](../ontology/ma.md) yaml file `ma.md` has the following:
 
 ```
 ...
