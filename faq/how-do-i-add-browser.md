@@ -10,11 +10,10 @@ automatically provide a link to OntoBee.
 
 You can add links to other browsers by adding entires in the
 `browsers` section of your metadata file. Please see the
-[how-do-i-edit-metadata entry in the FAQ](how-do-i-edit-metadata.html)
+[how-do-i-edit-metadata entry in the FAQ](how-do-i-edit-metadata.md)
 for details of editing your metadata.
 
-For example, see the metadata for the [/ontology/hp.html](HP
-ontology) (click on "View" in the left panel to see the metadata).
+For example, see the metadata for the [HP ontology](/ontology/hp.md).
 
 It will contain an entry something like this:
 
