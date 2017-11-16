@@ -5,13 +5,13 @@ title: Edit content
 
 This FAQ is about editing the narrative content of the OBO site
 
- * To edit ontology metadata, see the FAQ <a href="{{site.baseurl}}faq/how-do-i-edit-metadata.html">How do I edit metadata</a>
- * For general contributions, see the FAQ <a href="{{site.baseurl}}faq/how-do-i-modify-website.html">How do I modify the web portal</a>
+ * To edit ontology metadata, see the FAQ [How do I edit metadata](how-do-i-edit-metadata.md)
+ * For general contributions, see the FAQ [How do I modify the web portal](how-do-i-modify-website.md)
 
 ## How do I edit the content of the OBO site?
 
 The procedure for editing content of the website is similar to that
-for [editing metadata files](how-do-i-edit-metadata.md]):
+for [editing metadata files](how-do-i-edit-metadata.md):
 
  * Click the Edit button. This takes you to the GitHub page for editing content
  * Make your proposed edits
@@ -40,7 +40,7 @@ It is important that editors conform to the style guide for each page type
 
 ## Principles Styleguide
 
-Jekyll template: <a href="{{site.repo_src}}_layouts/principle.html">_layouts/principle.html</a>
+Jekyll template: [_layouts/principle.html](../_layouts/principle.html)
 
 The md file should have a a yaml header like the following:
 
@@ -82,7 +82,7 @@ Note that no title is necessary, as this is generated from the yaml header block
 
 ## FAQ Styleguide
 
-Jekyll template: <a href="{{site.repo_src}}_layouts/faq.html">_layouts/faq.html</a>
+Jekyll template:  [_layouts/faq.html](../_layouts/faq.html)
 
 The md file should have a a yaml header like the following:
 
