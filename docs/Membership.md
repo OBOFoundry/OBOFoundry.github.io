@@ -15,7 +15,7 @@ Current members of the OBO Foundry Operations Committee are: (in alphabetical or
 
   * Mathias Brochhausen (O), Department of Biomedical Informatics, University of Arkansas for Medical Sciences, Little Rock, AR, USA
  * [Melanie Courtot](http://purl.org/net/mcourtot) (O, T), EMBL-EBI, Cambridge, UK 
- * [Melissa Haendel](http://www.ohsu.edu/xd/education/library/about/staff-directory/melissa-haendel.cfm) (O, OBO coordinator), Oregon Health & Science University, Portland, OR
+ * [Melissa Haendel](http://www.ohsu.edu/xd/education/library/about/staff-directory/melissa-haendel.cfm) (O), Oregon Health & Science University, Portland, OR
  * [Simon Jupp](http://www.ebi.ac.uk/about/people/simon-jupp) (T), European Bioinformatics Institute, Cambridge, UK 
  * [Suzi Lewis](https://github.com/selewis), (O, T) Lawrence Berkeley Laboratory, Berkeley, USA
  * James Malone, FactBio, Cambridge, UK
