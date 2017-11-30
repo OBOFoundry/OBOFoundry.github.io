@@ -7,7 +7,7 @@ contact:
 description: A broadly scoped ontology representing entities which bear a “food role”.  It encompasses materials in natural ecosystems and food webs as well as human-centric categorization and handling of food.
 domain: food
 homepage: http://foodontology.github.io/foodon/
-page: https://github.com/FoodOntology/foodon/
+page: http://foodon.org/
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
