@@ -10,6 +10,10 @@ This page lists the various meetings held by the OBO Foundry Operations Committe
 
 See the [OBOCalendar](OBOCalendar.md) for scheduled meetings.
 
+# This page is deprecated
+
+Meeting minutes and rotas are now managed in the OBO Operations google drive, in [obo-operations-meeting folder](https://drive.google.com/drive/u/0/folders/0B968UM0a5noaUmxPWEJESi1oRzg)
+
 # Details
 
 ## OFOC meetings
