@@ -3,7 +3,7 @@ layout: ontology_detail
 id: obib
 title: Ontology for Biobanking
 contact:
-  email: jiezheng@upenn.edu
+  email: jiezheng@pennmedicine.upenn.edu
   label: Jie Zheng
 description: An ontology built for annotation and modeling of biobank repository and biobanking administration
 domain: health
