@@ -6,7 +6,7 @@ title: Beta Cell Genomics Ontology
 description: An application ontology built for beta cell genomics studies.
 homepage: https://github.com/obi-bcgo/bcgo
 contact:
-  email: jiezheng@upenn.edu
+  email: jiezheng@pennmedicine.upenn.edu
   label: Jie Zheng
 products:
   - id: bcgo.owl
