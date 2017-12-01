@@ -19,6 +19,8 @@ tracker: https://github.com/Planteome/plant-environment-ontology/issues
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4.0
+is_obolete: true
+replaced_by: peco
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22847540
     title: "Ontologies as integrative tools for plant science."
