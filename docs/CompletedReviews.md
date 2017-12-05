@@ -14,3 +14,5 @@ This page lists OBO Foundry ontologies that have gone through the current [revie
 | [Human Disease Ontology](http://www.obofoundry.org/ontology/doid.html)            |      2015      |      [PDF](https://drive.google.com/open?id=0B8vqEgF1N0NIZ082U2JETHlSTGs) |
 | [Ontology of Biomedical Investigations](http://obofoundry.org/ontology/obi.html)           |      2013      |      [PDF](https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc) |
 | [Plant Ontology](http://obofoundry.org/ontology/po.html)            |      2013      |      [PDF](https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc) |
+| [Gene Ontology](http://www.obofoundry.org/ontology/go.html)           |      2010      |      na      |
+| [Protein Ontology](http://www.obofoundry.org/ontology/pr.html)           |      2010      |      na      |
