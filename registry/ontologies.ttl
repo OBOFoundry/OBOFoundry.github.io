@@ -630,7 +630,7 @@ _:b34   <http://www.w3.org/2000/01/rdf-schema#label>  "sgd-helpdesk" ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obi-bcgo/bcgo> .
 
 _:b35   <http://www.w3.org/2000/01/rdf-schema#label>  "Jie Zheng" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "jiezheng@upenn.edu" .
+        <http://xmlns.com/foaf/0.1/mbox>  "jiezheng@pennmedicine.upenn.edu" .
 
 <http://purl.obolibrary.org/obo/bcgo.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/bcgo.owl" .
@@ -679,7 +679,7 @@ _:b38   <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b39 ;
         <http://purl.org/dc/elements/1.1/description>  "A structured controlled vocabulary for the source of an enzyme comprising tissues, cell lines, cell types and cell cultures." ;
         <http://purl.org/dc/elements/1.1/title>  "BRENDA tissue / enzyme source" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://www.brenda-enzymes.org/copy.php> ;
+        <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/21030441> ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/bto.owl" ;
@@ -690,9 +690,6 @@ _:b38   <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
 
 _:b39   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "http://www.brenda-enzymes.info/ontology/tissue/tree/update/update_files/BrendaTissueOBO" .
-
-<http://www.brenda-enzymes.org/copy.php>
-        <http://www.w3.org/2000/01/rdf-schema#label>  "BRENDA license" .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/21030441>
         <http://purl.org/dc/elements/1.1/title>  "The BRENDA Tissue Ontology (BTO): the first all-integrating ontology of all organisms for enzyme sources" .
@@ -781,10 +778,10 @@ _:b46   <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/cheminf.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b48 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cheminf.owl> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/egonw/semanticchemistry> .
+        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/semanticchemistry/semanticchemistry> .
 
 _:b47   <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
-        <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/egonw/semanticchemistry/master/ontology/cheminf.owl" .
+        <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/semanticchemistry/semanticchemistry/master/ontology/cheminf.owl" .
 
 _:b48   <http://www.w3.org/2000/01/rdf-schema#label>  "Egon Willighagen" ;
         <http://xmlns.com/foaf/0.1/mbox>  "egon.willighagen@gmail.com" .
@@ -1682,7 +1679,7 @@ _:b104  <http://www.w3.org/2000/01/rdf-schema#label>  "Onard Mejino" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/foodon.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/foodon_core.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://foodontology.github.io/foodon/> ;
-        <http://xmlns.com/foaf/0.1/page>  <https://github.com/FoodOntology/foodon/> .
+        <http://xmlns.com/foaf/0.1/page>  <http://foodon.org/> .
 
 _:b105  <http://www.w3.org/2000/01/rdf-schema#label>  "Damion Dooley" ;
         <http://xmlns.com/foaf/0.1/mbox>  "damion.dooley@bccdc.ca" .
@@ -1763,7 +1760,7 @@ _:b109  <http://www.w3.org/2000/01/rdf-schema#label>  "Michael Ashburner" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/genepio.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b110 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/genepio.owl> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <http://genepio.github.io/genepio/> ;
+        <http://xmlns.com/foaf/0.1/homepage>  <http://genepio.org/> ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/GenEpiO/genepio> .
 
 _:b110  <http://www.w3.org/2000/01/rdf-schema#label>  "Damion Dooley" ;
@@ -2332,6 +2329,7 @@ _:b150  <http://www.w3.org/2000/01/rdf-schema#label>  "Henning Hermjakob" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mondo.owl" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo.json> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pre/mondo.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pre/mondo.obo> .
 
@@ -2340,26 +2338,32 @@ _:b150  <http://www.w3.org/2000/01/rdf-schema#label>  "Henning Hermjakob" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "Monarch" .
 
 <http://purl.obolibrary.org/obo/mondo.owl>
-        <http://purl.org/dc/elements/1.1/description>  "Complete ontology, plus inter-ontology equivalence axioms. Uses identifiers of contributing ontologies." ;
+        <http://purl.org/dc/elements/1.1/description>  "Complete ontology, plus inter-ontology equivalence axioms. Uses MONDO IDs." ;
         <http://purl.org/dc/elements/1.1/title>  "Main OWL edition" ;
         <http://purl.org/dc/terms/1.1/format>  "owl-rdf/xml" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mondo.owl" .
 
 <http://purl.obolibrary.org/obo/mondo.obo>
-        <http://purl.org/dc/elements/1.1/description>  "As OWL, but omits equivalence axioms. xrefs can be used as proxy for equivalence. Uses identifiers of contributing ontologies." ;
+        <http://purl.org/dc/elements/1.1/description>  "As OWL, but omits equivalence axioms. xrefs can be used as proxy for equivalence. Uses MONDO IDs" ;
         <http://purl.org/dc/elements/1.1/title>  "obo-format edition" ;
         <http://purl.org/dc/terms/1.1/format>  "obo" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mondo.obo" .
 
+<http://purl.obolibrary.org/obo/mondo.json>
+        <http://purl.org/dc/elements/1.1/description>  "Equivalent to the OWL edition" ;
+        <http://purl.org/dc/elements/1.1/title>  "json edition" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mondo.json" .
+
 <http://purl.obolibrary.org/obo/pre/mondo.owl>
-        <http://purl.org/dc/elements/1.1/description>  "Complete ontology, plus inter-ontology equivalence axioms. Uses MONDO identifiers." ;
-        <http://purl.org/dc/elements/1.1/title>  "Preview of new OWL edition" ;
+        <http://purl.org/dc/elements/1.1/description>  "Now identical to main release" ;
+        <http://purl.org/dc/elements/1.1/title>  "(DEPRECATED) Preview of new OWL edition" ;
         <http://purl.org/dc/terms/1.1/format>  "owl-rdf/xml" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pre/mondo.owl" .
 
 <http://purl.obolibrary.org/obo/pre/mondo.obo>
-        <http://purl.org/dc/elements/1.1/description>  "Complete ontology, but omits inter-ontology equivalence axioms. Uses MONDO identifiers." ;
-        <http://purl.org/dc/elements/1.1/title>  "Preview of new OBO edition" ;
+        <http://purl.org/dc/elements/1.1/description>  "Now identical to main release" ;
+        <http://purl.org/dc/elements/1.1/title>  "(DEPRECATED) Preview of new OBO edition" ;
         <http://purl.org/dc/terms/1.1/format>  "obo" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pre/mondo.obo" .
 
@@ -2676,7 +2680,7 @@ _:b170  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obcs/obcs> .
 
 _:b171  <http://www.w3.org/2000/01/rdf-schema#label>  "Jie Zheng" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "jiezheng@upenn.edu" .
+        <http://xmlns.com/foaf/0.1/mbox>  "jiezheng@pennmedicine.upenn.edu" .
 
 <http://purl.obolibrary.org/obo/obcs.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/obcs.owl" .
@@ -2693,7 +2697,7 @@ _:b171  <http://www.w3.org/2000/01/rdf-schema#label>  "Jie Zheng" ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/biobanking/biobanking> .
 
 _:b172  <http://www.w3.org/2000/01/rdf-schema#label>  "Jie Zheng" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "jiezheng@upenn.edu" .
+        <http://xmlns.com/foaf/0.1/mbox>  "jiezheng@pennmedicine.upenn.edu" .
 
 <http://purl.obolibrary.org/obo/obib.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/obib.owl" .
@@ -2729,13 +2733,13 @@ _:b173  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology for representing treatment of disease and diagnosis and on carcinomas and other pathological entities" ;
         <http://purl.org/dc/elements/1.1/title>  "Ontology for General Medical Science" ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "medicine" ;
-        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/OGMS/ogms" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/OGMS/ogms/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ogms.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b174 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ogms.owl> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/OGMS/ogms> ;
-        <http://xmlns.com/foaf/0.1/page>  <https://github.com/OGMS/ogms> .
+        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/OGMS/ogms> .
 
 _:b174  <http://www.w3.org/2000/01/rdf-schema#label>  "Brian Aevermann" ;
         <http://xmlns.com/foaf/0.1/mbox>  "baeverma@jcvi.org" .
@@ -2961,8 +2965,8 @@ _:b188  <http://www.w3.org/2000/01/rdf-schema#label>  "Priti Parikh" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ovae.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.violinet.org/ovae/> .
 
-_:b189  <http://www.w3.org/2000/01/rdf-schema#label>  "yongqunh@med.umich.edu" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "Yongqunh He" .
+_:b189  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqunh He" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "yongqunh@med.umich.edu" .
 
 <http://purl.obolibrary.org/obo/ovae.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ovae.owl" .
