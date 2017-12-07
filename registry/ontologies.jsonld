@@ -665,7 +665,7 @@
         },
         {
             "contact": {
-                "email": "jiezheng@upenn.edu",
+                "email": "jiezheng@pennmedicine.upenn.edu",
                 "label": "Jie Zheng"
             },
             "description": "An application ontology built for beta cell genomics studies.",
@@ -762,9 +762,9 @@
             "id": "bto",
             "layout": "ontology_detail",
             "license": {
-                "alert": "Restricted",
-                "label": "BRENDA license",
-                "url": "http://www.brenda-enzymes.org/copy.php"
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/bto.owl",
             "page": "https://en.wikipedia.org/wiki/BRENDA_tissue_ontology",
@@ -884,7 +884,7 @@
         {
             "build": {
                 "method": "owl2obo",
-                "source_url": "https://raw.githubusercontent.com/egonw/semanticchemistry/master/ontology/cheminf.owl"
+                "source_url": "https://raw.githubusercontent.com/semanticchemistry/semanticchemistry/master/ontology/cheminf.owl"
             },
             "contact": {
                 "email": "egon.willighagen@gmail.com",
@@ -892,7 +892,7 @@
             },
             "description": "Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them.",
             "domain": "biochemistry",
-            "homepage": "https://github.com/egonw/semanticchemistry",
+            "homepage": "https://github.com/semanticchemistry/semanticchemistry",
             "id": "cheminf",
             "layout": "ontology_detail",
             "ontology_purl": "http://purl.obolibrary.org/obo/cheminf.owl",
@@ -1825,6 +1825,7 @@
             "domain": "environment",
             "homepage": "http://planteome.org/",
             "id": "eo",
+            "is_obolete": true,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC-BY 4.0",
@@ -1849,6 +1850,7 @@
                     "title": "Ontologies as integrative tools for plant science."
                 }
             ],
+            "replaced_by": "peco",
             "title": "Plant Environment Ontology",
             "tracker": "https://github.com/Planteome/plant-environment-ontology/issues"
         },
@@ -2287,7 +2289,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/foodon.owl",
-            "page": "https://github.com/FoodOntology/foodon/",
+            "page": "http://foodon.org/",
             "products": [
                 {
                     "format": "owl-rdf/xml",
@@ -2398,7 +2400,7 @@
             ],
             "description": "The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary to identify, document and research foodborne pathogens and associated outbreaks.",
             "domain": "health",
-            "homepage": "http://genepio.github.io/genepio/",
+            "homepage": "http://genepio.org/",
             "id": "genepio",
             "layout": "ontology_detail",
             "license": {
@@ -3199,7 +3201,7 @@
             "ontology_purl": "http://purl.obolibrary.org/obo/mondo.owl",
             "products": [
                 {
-                    "description": "Complete ontology, plus inter-ontology equivalence axioms. Uses identifiers of contributing ontologies.",
+                    "description": "Complete ontology, plus inter-ontology equivalence axioms. Uses MONDO IDs.",
                     "format": "owl-rdf/xml",
                     "id": "mondo.owl",
                     "is_canonical": true,
@@ -3208,25 +3210,33 @@
                 },
                 {
                     "derived_from": "mondo.owl",
-                    "description": "As OWL, but omits equivalence axioms. xrefs can be used as proxy for equivalence. Uses identifiers of contributing ontologies.",
+                    "description": "As OWL, but omits equivalence axioms. xrefs can be used as proxy for equivalence. Uses MONDO IDs",
                     "format": "obo",
                     "id": "mondo.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/mondo.obo",
                     "title": "obo-format edition"
                 },
                 {
-                    "description": "Complete ontology, plus inter-ontology equivalence axioms. Uses MONDO identifiers.",
+                    "derived_from": "mondo.owl",
+                    "description": "Equivalent to the OWL edition",
+                    "format": "obo",
+                    "id": "mondo.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mondo.json",
+                    "title": "json edition"
+                },
+                {
+                    "description": "Now identical to main release",
                     "format": "owl-rdf/xml",
                     "id": "pre/mondo.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/pre/mondo.owl",
-                    "title": "Preview of new OWL edition"
+                    "title": "(DEPRECATED) Preview of new OWL edition"
                 },
                 {
-                    "description": "Complete ontology, but omits inter-ontology equivalence axioms. Uses MONDO identifiers.",
+                    "description": "Now identical to main release",
                     "format": "obo",
                     "id": "pre/mondo.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/pre/mondo.obo",
-                    "title": "Preview of new OBO edition"
+                    "title": "(DEPRECATED) Preview of new OBO edition"
                 }
             ],
             "taxon": {
@@ -3691,7 +3701,7 @@
         },
         {
             "contact": {
-                "email": "jiezheng@upenn.edu",
+                "email": "jiezheng@pennmedicine.upenn.edu",
                 "label": "Jie Zheng"
             },
             "description": "A biomedical ontology in the domain of biological and clinical statistics.",
@@ -3717,7 +3727,7 @@
         },
         {
             "contact": {
-                "email": "jiezheng@upenn.edu",
+                "email": "jiezheng@pennmedicine.upenn.edu",
                 "label": "Jie Zheng"
             },
             "description": "An ontology built for annotation and modeling of biobank repository and biobanking administration",
@@ -3784,13 +3794,18 @@
                 "email": "baeverma@jcvi.org",
                 "label": "Brian Aevermann"
             },
+            "depicted_by": "https://avatars2.githubusercontent.com/u/12973154?s=200&v=4",
             "description": "An ontology for representing treatment of disease and diagnosis and on carcinomas and other pathological entities",
             "domain": "medicine",
             "homepage": "https://github.com/OGMS/ogms",
             "id": "ogms",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/4.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/ogms.owl",
-            "page": "https://github.com/OGMS/ogms",
             "products": [
                 {
                     "id": "ogms.owl",
@@ -3802,7 +3817,7 @@
                 "label": "Homo sapiens"
             },
             "title": "Ontology for General Medical Science",
-            "tracker": "https://github.com/OGMS/ogms"
+            "tracker": "https://github.com/OGMS/ogms/issues"
         },
         {
             "description": "An application ontology to represent genetic susceptibility to a specific disease, adverse event, or a pathological process.",
@@ -4093,8 +4108,8 @@
         },
         {
             "contact": {
-                "email": "Yongqunh He",
-                "label": "yongqunh@med.umich.edu"
+                "email": "yongqunh@med.umich.edu",
+                "label": "Yongqunh He"
             },
             "description": "A biomedical ontology in the domain of vaccine adverse events.",
             "homepage": "http://www.violinet.org/ovae/",
