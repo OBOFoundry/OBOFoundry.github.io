@@ -12,6 +12,7 @@ taxon:
   label: Metazoa
 domain: disease
 tracker: https://github.com/monarch-initiative/monarch-disease-ontology/issues
+mailing_list: https://groups.google.com/group/mondo-users
 canonical: mondo.owl
 browsers:
   - label: Monarch
