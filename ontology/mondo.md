@@ -3,7 +3,7 @@ layout: ontology_detail
 id: mondo
 label: MonDO
 title: Monarch Disease Ontology
-description: a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology
+description: An ontology that harmonizes multiple disease resources.
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
