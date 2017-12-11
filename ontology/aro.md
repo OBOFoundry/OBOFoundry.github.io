@@ -3,6 +3,7 @@ layout: ontology_detail
 id: aro
 contact:
   email: card@mcmaster.ca
+  label: CARD
 description: Antibiotic resistance genes and mutations
 homepage: https://github.com/arpcard/aro
 title: Antibiotic Resistance Ontology
