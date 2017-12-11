@@ -8,7 +8,8 @@ homepage: https://github.com/arpcard/aro
 title: Antibiotic Resistance Ontology
 tracker: https://github.com/arpcard/aro/issues
 mailing_list: https://mailman.mcmaster.ca/mailman/listinfo/card-l
-ontology_purl: http://purl.obolibrary.org/obo/aro.owl
+products:
+  - id: aro.owl
 ---
 
 The Antibiotic Resistance Ontology
