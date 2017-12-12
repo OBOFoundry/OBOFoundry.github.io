@@ -16,7 +16,7 @@ This page lists OBO Foundry ontologies that have gone through the current [revie
 | [Plant Ontology](http://obofoundry.org/ontology/po.html)            |      2013      |      [PDF](https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc) |
 | [Chemical Entities of Biological Interest](http://www.obofoundry.org/ontology/chebi.html)   |      2010      |    n/a    |
 | [Gene Ontology](http://www.obofoundry.org/ontology/go.html)           |      2010      |      n/a      |
-| [Phenotypic quality](http://www.obofoundry.org/ontology/pato.html)           |      2010      |      n/a      |
+| [Phenotype And Trait Ontology](http://www.obofoundry.org/ontology/pato.html)           |      2010      |      n/a      |
 | [Protein Ontology](http://www.obofoundry.org/ontology/pr.html)           |      2010      |      n/a      |
 | [Xenopus anatomy and development](http://www.obofoundry.org/ontology/xao.html)   |      2010      |    n/a    |
 | [Zebrafish anatomy and development](http://www.obofoundry.org/ontology/zfa.html)           |      2010      |      n/a      |
