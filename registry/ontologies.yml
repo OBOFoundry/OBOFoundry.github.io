@@ -315,6 +315,17 @@ ontologies:
   - {id: apo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/apo.obo'}
   taxon: {id: 'NCBITaxon:4890', label: Ascomycota}
   title: Ascomycete phenotype ontology
+- contact: {email: card@mcmaster.ca, label: CARD}
+  description: Antibiotic resistance genes and mutations
+  homepage: https://github.com/arpcard/aro
+  id: aro
+  layout: ontology_detail
+  mailing_list: https://mailman.mcmaster.ca/mailman/listinfo/card-l
+  ontology_purl: http://purl.obolibrary.org/obo/aro.owl
+  products:
+  - {id: aro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/aro.owl'}
+  title: Antibiotic Resistance Ontology
+  tracker: https://github.com/arpcard/aro/issues
 - contact: {email: jiezheng@pennmedicine.upenn.edu, label: Jie Zheng}
   description: An application ontology built for beta cell genomics studies.
   homepage: https://github.com/obi-bcgo/bcgo
@@ -397,7 +408,7 @@ ontologies:
   contact: {email: balhoff@renci.org, label: Jim Balhoff}
   description: a formalization of concepts and relations relevant to evolutionary
     comparative analysis
-  homepage: http://sourceforge.net/apps/mediawiki/cdao/index.php?title=Main_Page
+  homepage: https://github.com/evoinfo/cdao
   id: cdao
   layout: ontology_detail
   license: {label: CC0 1.0 Universal, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
@@ -905,6 +916,20 @@ ontologies:
   - {id: ero.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ero.owl'}
   title: eagle-i resource ontology
   tracker: null
+- contact: {email: stoeckrt@pennmedicine.upenn.edu, label: Chris Stoeckert}
+  depicted_by: http://meetings.embo.org/files/2017-06/eupath.jpg
+  description: An ontology is developed to support Eukaryotic Pathogen Database Bioinformatics
+    Resource Center sites (EuPathDB; http://eupathdb.org).
+  homepage: https://github.com/EuPath-ontology/EuPath-ontology
+  id: eupath
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/4.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/eupath.owl
+  products:
+  - {id: eupath.owl, ontology_purl: 'http://purl.obolibrary.org/obo/eupath.owl'}
+  title: EuPath ontology
+  tracker: https://github.com/EuPath-ontology/EuPath-ontology/issues
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/CTDbase/exposure-ontology/master/src/ontology/exo.obo'}
   description: Vocabularies for describing exposure data to inform understanding of
     environmental health.
@@ -1089,7 +1114,7 @@ ontologies:
     title: FoodOn core ontology (without SIREN)}
   title: FOODON
   tracker: https://github.com/FoodOntology/foodon/issues/
-- build: {infallible: 1, method: obo2owl, source_url: 'https://sourceforge.net/p/pombase/code/HEAD/tree/phenotype_ontology/releases/latest/fypo.obo?format=raw'}
+- build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/pombase/fypo/master/release/fypo.owl'}
   contact: {email: mah79@cam.ac.uk, label: Midori Harris}
   depicted_by: http://www.pombase.org/sites/pombase.org/files/images/fypo_logo_tiny.png
   description: FYPO is a formal ontology of phenotypes observed in fission yeast.
@@ -1517,14 +1542,14 @@ ontologies:
 - browsers:
   - {label: Monarch, title: Monarch Initiative Disease Browser, url: 'https://monarchinitiative.org/disease/DOID:14330'}
   canonical: mondo.owl
-  description: a semi-automatically constructed ontology that merges in multiple disease
-    resources to yield a coherent merged ontology
+  description: An ontology that harmonizes multiple disease resources.
   domain: disease
   id: mondo
   label: MonDO
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
+  mailing_list: https://groups.google.com/group/mondo-users
   ontology_purl: http://purl.obolibrary.org/obo/mondo.owl
   products:
   - {description: 'Complete ontology, plus inter-ontology equivalence axioms. Uses
@@ -1649,7 +1674,8 @@ ontologies:
 - browsers:
   - {label: BioPortal, title: BioPortal Ontology Browser, url: 'https://bioportal.bioontology.org/ontologies/NBO'}
   build: {method: owl2obo, source_url: 'https://raw.githubusercontent.com/obo-behavior/behavior-ontology/master/nbo.owl'}
-  contact: {email: g.gkoutos@gmail.com, label: George Gkoutos}
+  contact: {email: g.gkoutos@bham.ac.uk, label: George Gkoutos}
+  description: An ontology of human and animal behaviours and behavioural phenotypes
   domain: behavior
   homepage: https://github.com/obo-behavior/behavior-ontology/
   id: nbo
