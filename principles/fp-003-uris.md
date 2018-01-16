@@ -7,7 +7,7 @@ title: URI/Identifier Space
 Note
 -----
 
-The original wording and content of this principle (given below) is scheduled to be reviewed. Improved wording will be posted as it becomes available.
+The original wording of this principle (given below) and content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.
 
 Details
 -------
