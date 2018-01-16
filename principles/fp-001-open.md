@@ -113,7 +113,7 @@ The above comment for reuse conditions is for example only. Ontologies may use d
 ```
 property_value: http://purl.org/dc/elements/1.1/license http://creativecommons.org/licenses/by/4.0/
 
-remark: "Ontology name" by *developer group(s)* is licensed under CC BY 4.0. You
+remark: *Ontology name* by *developer group(s)* is licensed under CC BY 4.0. You
     are free to share (copy and redistribute the material in any medium
     or format) and adapt (remix, transform, and build upon the material)
     for any purpose, even commercially. You must give appropriate credit
