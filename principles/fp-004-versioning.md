@@ -4,7 +4,7 @@ id: fp-004-versioning
 title: Versioning
 ---
 
-NOTE:
+NOTE
 -------
 
 The original wording of this principle (given below) and content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.
