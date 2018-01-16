@@ -4,6 +4,11 @@ id: fp-003-uris
 title: URI/Identifier Space
 ---
 
+Note
+-----
+
+The original wording and content of this principle (given below) is scheduled to be reviewed. Improved wording will be posted as it becomes available.
+
 Details
 -------
 
@@ -11,15 +16,10 @@ Each class and relation (property) in the ontology must have a unique
 URI identifier. The URI should be constructed from a base URI, a prefix
 that is unique within the Foundry (e.g. GO, CHEBI, CL) and a local
 identifier (e.g. 0000001). The local identifier should not consist of
-labels or mnemonics meaningful to humans.
+labels or mnemonics meaningful to humans. Additional information is available at 
+<http://www.obofoundry.org/id-policy.html>
 
-The ID-space / prefix must be registered with the OBO library in
-advance. Email obo-admin AT obofoundry DOT org
-
-Notes
------
-
-See <http://www.obofoundry.org/id-policy.html>
+The ID-space / prefix must be registered with the OBO library in advance. Please see the relevant [documentation](http://obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html).
 
 ### OBO-Format Ontologies
 
