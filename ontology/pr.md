@@ -35,6 +35,9 @@ build:
   method: obo2owl
   infallible: 0
 tracker: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
+publications:
+  - id: http://pir.georgetown.edu/pro/pro_dsmnt.shtml#publication
+  - title: "How to cite PRO"
 development:
   id_policy: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+URI+policy
 ---
