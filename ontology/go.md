@@ -39,12 +39,23 @@ browsers:
     url: http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab
 products:
  - id: go.owl
+   title: "GO (OWL edition)"
+   page: http://geneontology.org/page/download-ontology
+ - id: go.obo
+   title: "GO (OBO Format edition)"
+   page: http://geneontology.org/page/download-ontology
  - id: go/extensions/go-plus.owl
    title: GO-Plus
+   description: "The core ontology plus axioms connecting to select external ontologies"
+   page: http://geneontology.org/page/download-ontology
+ - id: go/go-basic.obo
+   title: "GO-Basic, Filtered, for use with legacy tools"
    description: The core ontology plus axioms connecting to select external ontologies
+   page: http://geneontology.org/page/download-ontology
  - id: go/extensions/go-taxon-groupings.owl
    title: GO Taxon Groupings
    description: Classes added to ncbitaxon for groupings such as prokaryotes
+   page: http://geneontology.org/page/download-ontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
