@@ -15,7 +15,9 @@ products:
   - id: doid.owl  
     title: Disease Ontology inferred hierarchy that includes anatomy, cell of origin, infectious agent and phenotype axioms
   - id: doid.obo  
-    title: Disease Ontology asserted is_a hierarchy (this file is equivalent to DO's previous HumanDO.obo file)
+    title: Disease Ontology inferred hierarchy that includes anatomy, cell of origin, infectious agent and phenotype axioms 
+  - id: HumanDO.obo 
+    title: Disease Ontology asserted is_a hierarchy (equivalent to doid-non-classified.obo)
 browsers:
   - label: DO
     title: DO Browser
@@ -25,7 +27,7 @@ taxon:
   label: Homo sapiens
 title: Human Disease Ontology
 build:
-  source_url: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-non-classified.obo
+  source_url: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.obo
   method: obo2owl
   infallible: 1
 tracker: https://github.com/DiseaseOntology/HumanDiseaseOntology/issues
