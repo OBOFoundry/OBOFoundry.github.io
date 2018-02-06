@@ -16,8 +16,7 @@ products:
     title: Disease Ontology inferred hierarchy that includes anatomy, cell of origin, infectious agent and phenotype axioms
   - id: doid.obo  
     title: Disease Ontology inferred hierarchy that includes anatomy, cell of origin, infectious agent and phenotype axioms 
-  - id: HumanDO.obo 
-    title: Disease Ontology asserted is_a hierarchy (equivalent to doid-non-classified.obo)
+ 
 browsers:
   - label: DO
     title: DO Browser
@@ -40,5 +39,8 @@ license:
 ---
 
 Creating a comprehensive classification of human diseases organized by etiology.
+
+- Download DO's asserted is_a OBO file: [https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/HumanDO.obo](https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/HumanDO.obo)
+HumanDO.obo is equivalent to doid-non-classified.obo.
 
 <img src="http://www.disease-ontology.org/media/images/DO_logo.jpg"/>
