@@ -40,7 +40,8 @@ license:
 
 Creating a comprehensive classification of human diseases organized by etiology.
 
-- Download DO's asserted is_a OBO file: [https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/HumanDO.obo] (HumanDO.obo)
+ 
+- Download DO's asserted is_a OBO file, [HumanDO.obo] (https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/HumanDO.obo)
 is equivalent to doid-non-classified.obo.
 
 <img src="http://www.disease-ontology.org/media/images/DO_logo.jpg"/>
