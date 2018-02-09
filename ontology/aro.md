@@ -6,6 +6,9 @@ contact:
   label: CARD
 description: Antibiotic resistance genes and mutations
 homepage: https://github.com/arpcard/aro
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY
 title: Antibiotic Resistance Ontology
 tracker: https://github.com/arpcard/aro/issues
 mailing_list: https://mailman.mcmaster.ca/mailman/listinfo/card-l
