@@ -7,17 +7,20 @@ description: An ontology that harmonizes multiple disease resources.
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+contact:
+  email: vasilevs@ohsu.edu
+  label: Nicole Vasilevsky
 taxon:
   id: NCBITaxon:33208
   label: Metazoa
 domain: disease
-tracker: https://github.com/monarch-initiative/monarch-disease-ontology/issues
+tracker: https://github.com/monarch-initiative/mondo-build/issues
 mailing_list: https://groups.google.com/group/mondo-users
 canonical: mondo.owl
 browsers:
   - label: Monarch
     title: Monarch Initiative Disease Browser
-    url: https://monarchinitiative.org/disease/DOID:14330
+    url: https://monarchinitiative.org/disease/MONDO:0019609
 products:
  - id: mondo.owl
    title: Main OWL edition
