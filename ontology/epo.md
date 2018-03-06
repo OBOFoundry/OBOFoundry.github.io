@@ -1,8 +1,10 @@
 ---
+layout: ontology_detail
+id: epo
+in_foundry: false
 description: An ontology designed to support the semantic annotation of epidemiology resources
 homepage: https://code.google.com/p/epidemiology-ontology/
-id: epo
-products: 
+products:
   - id: epo.owl
 title: Epidemiology Ontology
 build:

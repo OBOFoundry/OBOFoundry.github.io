@@ -7,7 +7,8 @@
   "xsd": "http://www.w3.org/2001/XMLSchema#",
   "dc": "http://purl.org/dc/terms/",
   "dce": "http://purl.org/dc/elements/1.1/",
-  "dcterms": "http://purl.org/dc/terms/1.1/",
+  "dct": "http://purl.org/dc/terms/1.1/",
+  "dcat":"http://www.w3.org/ns/dcat#",
   "faldo": "http://biohackathon.org/resource/faldo#",
   "foaf": "http://xmlns.com/foaf/0.1/",
   "oa": "http://www.w3.org/ns/oa#",
@@ -15,40 +16,88 @@
   "void": "http://rdfs.org/ns/void#",
   "doap": "http://usefulinc.com/ns/doap#",
   "pav": "http://purl.org/pav/",
+  "schemaorg": "http://schema.org/",
+  "disco": "http://rdf-vocabulary.ddialliance.org/discovery#",
+
+  "obofmd": "http://obofoundry.github.io/vocabulary/",
+
+  "obo": "http://purl.obolibrary.org/obo/",
+  "IAO": "obo:IAO_",
+  "NCBITaxon": "obo:NCBITaxon_",
+  "RO": "obo:RO_",
+  "BFO": "obo:BFO_",
+
+  "ontologies": "@graph",
   "id": "@id",
+  "url": "@id",
   "label": "rdfs:label",
+  "seeAlso": "rdfs:seeAlso",
   "comment": "rdfs:comment",
   "description": "dce:description",
   "source": "dce:source",
   "publisher": "dce:publisher",
   "mailing_list": "doap:mailing-list",
+  "tracker": {
+      "@id": "doap:bug-database",
+      "notes": "consider using a different vocabulary, bug database does not describe well an ontology tracker"
+  },
+  "funded_by": "disco:fundedBy",
   "createdWith": "pav:createdWith",
   "wasDerivedFrom": "pav:wasDerivedFrom",
   "preferredPrefix": "idot:preferredPrefix",
   "alternatePrefix": "idot:alternatePrefix",
   "identifierPattern": "idot:identifierPattern",
   "exampleIdentifier": "idot:exampleIdentifier",
+  "language": "dct:language",
   "license": "dct:license",
   "domain": "dct:theme",
-  "products": "void:subset",
+  "format": "dct:format",
+  "products": "dcat:distribution",
   "Class": "owl:Class",
+  "biosharing": "rdfs:seeAlso",
+  "browsers": "rdfs:seeAlso",
+
   "type": {
    "@id": "rdf:type",
    "@type": "@id"
   },
   "created": {
-   "@id": "dcterms:created",
+   "@id": "dct:created",
    "@type": "xsd:dateTime"
   },
   "creator": {
-   "@id": "dcterms:creator",
+   "@id": "dct:creator",
    "@type": "@id"
   },
   "depiction": {
    "@id": "foaf:depiction",
    "@type": "@id"
   },
-  "publications": "dcterms:publication",
+  "logo": {
+   "@id": "schemaorg:logo",
+   "@type": "@id"
+  },  
+  "audience": {
+   "@id": "schemaorg:audience",
+   "@type": "schemaorg:Audience"
+  },  
+  "contact": {
+   "@id": "dcat:contactPoint",
+   "@type": "foaf:Person"
+  },
+  "email": "foaf:mbox",
+  "build": {
+   "@id": "obofmd:has_build_information",
+   "@type": "obofmd:Build"
+  },
+  "checkout": "obofmd:checkout",
+  "method": "obofmd:method",
+  "source_url": "obofmd:source_url",
+  "dependencies": "obofmd:depends_on",
+  "integration_server": "obofmd:continuous_integration_server",
+
+  "publications": "dct:publication",
+  "publisher": "dct:publisher",
   "subClassOf": "owl:subClassOf",
   "title": "dce:title",
   "homepage": {
@@ -59,7 +108,24 @@
    "@id": "foaf:page",
    "@type": "@id"
   },
-  "ontologies": "dcterms:hasPart",
+  "twitter": {
+   "@id": "foaf:account",
+   "@type": "@id"
+  },
+  "facebook": {
+   "@id": "foaf:account",
+   "@type": "@id"
+  },
+  "google_plus": {
+   "@id": "foaf:account",
+   "@type": "@id"
+  },
+  "is_about" : "IAO:0000136",
+  "taxon" : {
+     "@id": "IAO:0000136",
+     "@type": "owl:Class"
+  },
+  "ontology_purl": "dcat:accessURL",
   "exampleClass": {
    "@id": "void:exampleResource",
    "@type": "@id"

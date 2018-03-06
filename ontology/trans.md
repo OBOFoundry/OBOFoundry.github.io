@@ -1,22 +1,25 @@
 ---
 layout: ontology_detail
 id: trans
-contact: 
-  email: diseaseontology-discussion@lists.sourceforge.net
+contact:
+  email: lynn.schriml@gmail.com
   label: Lynn Schriml
-description: "A representation of processes in which a pathogen is transmitted from one host, reservoir, or source to another host."
-domain: health
+description: "An ontology representing the disease transmission process during which the pathogen is transmitted directly or indirectly from its natural reservoir, a susceptible host or source to a new host."
+domain: disease
 homepage: http://diseaseontology.sourceforge.net/
-products: 
+products:
   - id: trans.owl
-taxon: 
-  id: NCBITaxon:9606
-  label: Homo sapiens
-title: Pathogen transmission
+  - id: trans.obo
+title: Pathogen Transmission Ontology
+
 build:
-  source_url: http://gemina.cvs.sourceforge.net/*checkout*/gemina/Gemina/ontologies/transmission_process.obo
+  source_url: https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/trans.obo
   method: obo2owl
-tracker: http://sourceforge.net/tracker/?&group_id=76834&atid=1037853
+  infallible: 1
+tracker: https://github.com/DiseaseOntology/PathogenTransmissionOntology/issues
+license:
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0
 ---
 
-This vocabulary describes a process that is the means of how a pathogen is transmitted from one host, reservoir, or source to another host. This transmission may occur either directly or indirectly and may involve animate vectors or inanimate vehicles.  
+The Pathogen Transmission Ontology describes the tranmission methods of human disease pathogens describing how a pathogen is transmitted from one host, reservoir, or source to another host. The pathogen transmission may occur either directly or indirectly and may involve animate vectors or inanimate vehicles.

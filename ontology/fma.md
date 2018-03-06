@@ -1,27 +1,27 @@
 ---
 layout: ontology_detail
 id: fma
-contact: 
-  email: mejino@comcast.net
+contact:
+  email: mejino@u.washington.edu
   label: Onard Mejino
 description: This is currently a slimmed down version of FMA
 domain: anatomy
-homepage: http://sig.biostr.washington.edu/projects/fm/index.html
+homepage: http://si.washington.edu/projects/fma
 page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/18688289
   - id: http://www.ncbi.nlm.nih.gov/pubmed/18360535
   - id: http://www.ncbi.nlm.nih.gov/pubmed/16779026
-products: 
+products:
  - id: fma.owl
-taxon: 
+taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: Foundational Model of Anatomy (subset)
 build:
   source_url: http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo
+  insert_ontology_id: true
   method: obo2owl
-  infallible: 1
 tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
 ---
 

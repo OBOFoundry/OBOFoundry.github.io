@@ -1,22 +1,33 @@
 ---
-contact: 
-  email: djs93@gen.cam.ac.uk
-  label: David Osumi-Sutherland
-description: A structured controlled vocabulary of the development of Drosophila melanogaster
-domain: anatomy
-homepage: http://www.flybase.org/
+layout: ontology_detail
 id: fbdv
-products: 
+preferredPrefix: FBdv
+contact:
+  email: temj2@cam.ac.uk
+  label: Tamsin Jones
+description: A structured controlled vocabulary of the development of Drosophila melanogaster.
+domain: development
+homepage: http://purl.obolibrary.org/obo/fbdv
+products:
   - id: fbdv.owl
-taxon: 
+  - id: fbdv/fbdv-simple.owl
+  - id: fbdv/fbbt-simple.obo
+taxon:
   id: NCBITaxon:7227
   label: Drosophila
 title: Drosophila development
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 build:
-  source_url: http://svn.code.sf.net/p/fbbtdv/code/fbdv/releases/latest/fbdv.obo
+  source_url: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv/releases/fbdv.owl
   method: obo2owl
   infallible: 0
-tracker: https://cedar.bio.indiana.edu/trac/env/ontologies/wiki/PublicWikiStart
+tracker: http://purl.obolibrary.org/obo/fbdv/tracker
+browsers:
+  - label: FB
+    title: FlyBase Browser
+    url: http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008
 ---
 
 A structured controlled vocabulary of the development of <i>Drosophila melanogaster</i>.

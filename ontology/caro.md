@@ -1,13 +1,13 @@
 ---
 layout: ontology_detail
 id: caro
-contact: 
+contact:
   email: haendel@ohsu.edu
   label: Melissa Haendel
 description: An upper level ontology to facilitate interoperability between existing anatomy ontologies for different species
 domain: anatomy
 homepage: https://github.com/obophenotype/caro/
-products: 
+products:
   - id: caro.owl
 title: Common Anatomy Reference Ontology
 build:

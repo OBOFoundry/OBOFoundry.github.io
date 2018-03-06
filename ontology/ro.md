@@ -3,8 +3,8 @@ layout: ontology_detail
 id: ro
 title: Relations Ontology
 build:
-  checkout: svn co http://obo-relations.googlecode.com/svn/trunk/src/ontology
-  system: svn
+  checkout:  git clone https://github.com/oborel/obo-relations.git
+  system: git
   method: vcs
   infallible: 1
 canonical: ro.owl
@@ -13,28 +13,36 @@ homepage: https://github.com/oborel/obo-relations/
 tracker: https://github.com/oborel/obo-relations/issues
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-relations
 domain: relations
-contact: 
+contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
 jobs:
   - id: http://build.berkeleybop.org/job/build-ro
     type: DryRunBuild
+  - id: https://travis-ci.org/oborel/obo-relations
+    type: travis-ci
 products:
  - id: ro.owl
    title: Relation Ontology
+   description: Canonical edition
  - id: ro.obo
    title: Relation Ontology in obo format
+   description: Has imports merged in
  - id: ro/core.owl
    title: Core relations
    description: Minimal subset intended to work with BFO-classes
+   page: https://github.com/oborel/obo-relations/wiki/ROCore
  - id: ro/subsets/ro-interaction.owl
    title: Interaction relations
+   description: For use in ecology and environmental science
  - id: ro/subsets/ro-eco.owl
    title: Ecology subset
  - id: ro/subsets/ro-neuro.owl
    title: Neuroscience subset
+   description: For use in neuroscience
+   page: http://bioinformatics.oxfordjournals.org/content/28/9/1262.long
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 ---
 

@@ -5,15 +5,11 @@ in_foundry_order: 1
 label: GO
 description: An ontology for describing the function of genes and gene products
 title: Gene Ontology
-build:
-  checkout: svn --ignore-externals co svn://ext.geneontology.org/trunk/ontology
-  system: svn
-  method: vcs
-  infallible: 1
 twitter: news4go
+facebook: https://www.facebook.com/Gene-Ontology-305908656519/ 
 tracker: https://github.com/geneontology/go-ontology/issues/
 termgenie: http://go.termgenie.org
-taxon: 
+taxon:
   id: NCBITaxon:1
   label: All life
 domain: biology
@@ -43,14 +39,25 @@ browsers:
     url: http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab
 products:
  - id: go.owl
+   title: "GO (OWL edition)"
+   page: http://geneontology.org/page/download-ontology
+ - id: go.obo
+   title: "GO (OBO Format edition)"
+   page: http://geneontology.org/page/download-ontology
  - id: go/extensions/go-plus.owl
    title: GO-Plus
+   description: "The core ontology plus axioms connecting to select external ontologies"
+   page: http://geneontology.org/page/download-ontology
+ - id: go/go-basic.obo
+   title: "GO-Basic, Filtered, for use with legacy tools"
    description: The core ontology plus axioms connecting to select external ontologies
+   page: http://geneontology.org/page/download-ontology
  - id: go/extensions/go-taxon-groupings.owl
    title: GO Taxon Groupings
    description: Classes added to ncbitaxon for groupings such as prokaryotes
+   page: http://geneontology.org/page/download-ontology
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 depicted_by: http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png
 ---

@@ -1,20 +1,20 @@
 ---
 layout: ontology_detail
 id: omrse
-contact: 
+contact:
   email: hoganwr@gmail.com
   label: Bill Hogan
 description: This ontology covers the domain of social entities that are related to health care, such as demographic information and the roles of various individuals and organizations.
 domain: medicine
 page: http://code.google.com/p/omrse/
-products: 
+products:
   - id: omrse.owl
-taxon: 
+taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: Ontology of Medically Related Social Entities
 build:
-  source_url: http://omrse.googlecode.com/svn/trunk/omrse/omrse.owl
+  source_url: https://github.com/ufbmi/OMRSE
   method: owl2obo
 ---
 

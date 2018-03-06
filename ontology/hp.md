@@ -6,20 +6,25 @@ description: A structured and controlled vocabulary for the phenotypic features 
 domain: phenotype
 twitter: hp_ontology
 homepage: http://www.human-phenotype-ontology.org/
-contact: 
-  email: peter.robinson@charite.de
-  label: Peter Robinson
-products: 
+contact:
+  email: dr.sebastian.koehler@gmail.com
+  label: Sebastian Koehler
+products:
   - id: hp.owl
   - id: hp.obo
-taxon: 
+taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: human phenotype ontology
+jobs:
+  - id: https://travis-ci.org/obophenotype/human-phenotype-ontology
+    type: travis-ci
 build:
-  source_url: http://compbio.charite.de/svn/hpo/trunk/src/ontology/human-phenotype-ontology.obo
-  method: obo2owl
-tracker: https://sourceforge.net/p/obo/human-phenotype-requests/
+  source_url: http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip
+  path: archive/hp
+  method: archive
+  infallible: 1
+tracker: https://github.com/obophenotype/human-phenotype-ontology/issues/
 termgenie: http://hp.termgenie.org
 browsers:
   - label: HPO
@@ -37,10 +42,11 @@ publications:
     title: "The Human Phenotype Ontology project: linking molecular biology and disease through phenotype data."
 ---
 
-<img src="http://www.human-phenotype-ontology.org/contao/tl_files/simplifyblue/images/HPO-logo.png"/>
+<img src="http://human-phenotype-ontology.github.io/img/placeholder.jpg"/>
 
 The Human Phenotype Ontology is being developed to provide a structured and controlled vocabulary for the phenotypic features encountered in human hereditary and other disease. Our goal is to provide resource for the computational analysis of the human phenome, with a current focus on monogenic diseases listed in the Online Mendelian Inheritance in Man (OMIM) database, for which annotations are also provided.
 
 The HPO can be browsed using:
 
  * [HPO Browser](http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118)
+ * [Monarch Browser](https://monarchinitiative.org/phenotype/HP:0000118)

@@ -1,22 +1,32 @@
 ---
 layout: ontology_detail
 id: fao
-contact: 
-  email: maria@genome.stanford.edu
-  label: Maria Costanzo
+contact:
+  email: dinglis@stanford.edu
+  label: Diane Inglis
 description: A structured controlled vocabulary for the anatomy of fungi.
 domain: anatomy
+tracker: https://github.com/obophenotype/fungal-anatomy-ontology/issues
 homepage: http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/
 page: http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/#description
-products: 
+products:
   - id: fao.owl
-taxon: 
+  - id: fao.obo
+taxon:
   id: NCBITaxon:4751
   label: Fungal
 title: Fungal gross anatomy
 build:
-  source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/microbial_gross_anatomy/fungi/fungal_anatomy.obo
-  method: obo2owl
+  checkout: git clone https://github.com/obophenotype/fungal-anatomy-ontology.git
+  system: git
+  method: vcs
+  infallible: 1
 ---
 
+![FAO image](http://www.yeastgenome.org/images/fao.color.png)
+
 A structured controlled vocabulary for the anatomy of fungi.
+
+The project aims to develop a controlled vocabulary to describe the 'anatomy' of fungi and other microbes, called the fungal anatomy ontology (FAO). The FAO ontology is orthogonal to those developed by the GO Consortium and the others listed at the OBO. Thus, the FAO may be used alone or in conjunction with the ontologies at GO and OBO to make robust functional annotations. Researchers are encouraged to help develop and to use the FAO in their work.
+
+The FAO is being developed by researchers in diverse fungal research communities. The ontology is still small; all help is welcome! 

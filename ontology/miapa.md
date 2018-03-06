@@ -1,12 +1,12 @@
 ---
 layout: ontology_detail
 id: miapa
-contact: 
+contact:
   email: hlapp@drycafe.net
-  label: Hilamr Lapp
+  label: Hilmar Lapp
 description: An application ontology to formalize annotation of phylogenetic data.
 homepage: http://www.evoio.org/wiki/MIAPA
-s: 
+products:
   - id: miapa.owl
 title: MIAPA Ontology
 tracker: https://github.com/miapa/miapa/issues

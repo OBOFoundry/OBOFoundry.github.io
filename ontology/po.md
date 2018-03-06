@@ -3,32 +3,44 @@ layout: ontology_detail
 id: po
 in_foundry_order: 1
 title: Plant Ontology
+jobs:
+  - id: https://travis-ci.org/Planteome/plant-ontology
+    type: travis-ci
 build:
-  notes: switch to vcs method
-  source_url: http://palea.cgrb.oregonstate.edu/viewsvn/Poc/tags/live/plant_ontology.obo?view=co
-  method: obo2owl
+  checkout: git clone https://github.com/Planteome/plant-ontology.git
+  system: git
+  method: vcs
   infallible: 1
-contact: 
+contact:
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
 description: "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data."
 domain: anatomy and development
-homepage: http://www.plantontology.org
-page: http://www.plantontology.org/docs/docs.html
+homepage: http://browser.planteome.org/amigo
+page: https://github.com/Planteome/plant-ontology
+twitter: planteome
 tracker: https://github.com/Planteome/plant-ontology/issues
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/23220694
     title: "The plant ontology as a tool for comparative plant anatomy and genomic analyses."
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22847540
     title: "Ontologies as integrative tools for plant science."
-products: 
+products:
   - id: po.owl
-taxon: 
+  - id: po.obo
+browsers:
+  - label: Planteome
+    title: Planteome browser
+    url: http://browser.planteome.org/amigo
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4.0
+taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
 ---
 
-The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data. The PO is under active development to expand to encompass terms and annotations from all plants. 
+The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data. The PO is under active development to expand to encompass terms and annotations from all plants.
 
 <img alt="Planteome logo" src="http://planteome.org/sites/default/files/garland_logo.PNG"/>
 

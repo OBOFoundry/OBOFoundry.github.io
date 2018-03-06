@@ -17,18 +17,52 @@ twitter: uberanat
 google_plus: "+UberonOrg"
 wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
+biosharing: https://www.biosharing.org/bsg-000016
+used_by:
+ - url: http://bgee.org/
+   seeAlso: https://www.biosharing.org/biodbcore-000228
+   label: bgee
+   type: Database
+ - url: https://www.encodeproject.org/
+   seeAlso: https://www.biosharing.org/biodbcore-000034
+   label: ENCODE
+ - url: http://fantom5-collaboration.gsc.riken.jp/
+   label: FANTOM5
+ - url: https://monarchinitiative.org/
+   label: Monarch
+   type: Database
+ - url: https://geneontology.org/
+   label: GO Database
+   type: Database
+ - url: http://phenoscape.org
+   label: Phenoscape
+ - url: https://neuinfo.org/
+   label: Neuroscience Information Framework
+   type: Database
+ - url: https://scicrunch.org/
+   label: SciCrunch
+   type: Database
+ - url: http://single-cell.clst.riken.jp/
+   label: SCPortalen
+   reference: https://doi.org/10.1093/nar/gkx949
+   type: Database
+funded_by:
+ - "NIH R24OD011883"
+ - "NIH R01HG004838"
+ - "NIH P41HG002273"
+ - "NSF DEB-0956049"
 canonical: uberon.owl
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
-taxon: 
+taxon:
   id: NCBITaxon:33208
   label: Metazoa
 domain: anatomy
 repository: https://github.com/obophenotype/uberon
 tracker: https://github.com/obophenotype/uberon/issues
 releases: http://purl.obolibrary.org/obo/uberon/releases/
-contact: 
+contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
 publications:
@@ -59,6 +93,15 @@ browsers:
   - label: AmiGO (SUBSET)
     title: Gene Ontology AmiGO 2 Browser
     url: http://amigo.geneontology.org/amigo/term/UBERON:0001062#display-lineage-tab
+  - label: Bgee (gene expression)
+    title: Bgee gene expression queries
+    url: http://bgee.org/?page=gene
+  - label: FANTOM5
+    title: FANTOM5 Data Portal
+    url: http://fantom.gsc.riken.jp/5/sstar/UBERON:0001890
+  - label: KnowledgeSpace
+    title: INCF KnowledgeSpace Portal
+    url: https://knowledge-space.org/index.php/pages/view/UBERON:0000061
 products:
  - id: uberon.owl
    type: owl:Ontology

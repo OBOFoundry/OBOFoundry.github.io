@@ -1,18 +1,21 @@
 ---
 layout: ontology_detail
 id: tao
-contact: 
+contact:
   email: wasila.dahdul@usd.edu
   label: Wasila Dahdul
 description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa
 domain: anatomy
-homepage: https://www.nescent.org/phenoscape/Main_Page
-products: 
+homepage: http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology
+products:
   - id: tao.owl
-taxon: 
+taxon:
   id: NCBITaxon:32443
   label: Teleostei
 title: Teleost Anatomy Ontology
+license:
+  url: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC-0
 build:
   source_url: http://purl.obolibrary.org/obo/tao.obo
   method: obo2owl

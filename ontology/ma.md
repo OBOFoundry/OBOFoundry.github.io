@@ -1,16 +1,16 @@
 ---
 layout: ontology_detail
 id: ma
-contact: 
+contact:
   email: Terry.Hayamizu@jax.org
   label: Terry Hayamizu
 description: A structured controlled vocabulary of the adult anatomy of the mouse (Mus).
 domain: anatomy
 homepage: https://github.com/obophenotype/mouse-anatomy-ontology
 page: http://www.informatics.jax.org/searches/AMA_form.shtml
-products: 
+products:
   - id: ma.owl
-taxon: 
+taxon:
   id: NCBITaxon:10088
   label: Mus
 title: Mouse adult gross anatomy
@@ -18,7 +18,15 @@ build:
   source_url: ftp://ftp.informatics.jax.org/pub/reports/adult_mouse_anatomy.obo
   method: obo2owl
   infallible: 1
+  insert_ontology_id: true
 tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
+used_by:
+ - url: https://www.biosharing.org/biodbcore-000659
+   label: GXD
 ---
 
 A structured controlled vocabulary of the adult anatomy of the mouse (Mus).
+
+
+
+ 2328479213

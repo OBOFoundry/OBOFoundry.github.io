@@ -1,21 +1,28 @@
 ---
 layout: ontology_detail
 id: fbcv
-title: FlyBase Controlled Vocabulary
-build:
-  source_url: http://sourceforge.net/p/fbcv/code-0/HEAD/tree/src/trunk/ontologies/fbcv-edit.obo?format=raw
-  method: obo2owl
 preferredPrefix: FBcv
-products: 
+contact:
+  email: temj2@cam.ac.uk
+  label: Tamsin Jones
+description: A structured controlled vocabulary used for various aspects of annotation by FlyBase.
+domain:
+homepage: http://purl.obolibrary.org/obo/fbcv
+products:
   - id: fbcv.owl
-contact: 
-  email: djs93@gen.cam.ac.uk
-  label: David Osumi-Sutherland
-description: "A structured controlled vocabulary used for various aspects of annotation by FlyBase."
-homepage: http://www.flybase.org/
-is_obsolete: true
+title: FlyBase Controlled Vocabulary
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
+build:
+  source_url: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/fbcv.owl
+  method: obo2owl
+tracker: http://purl.obolibrary.org/obo/fbbt/tracker
+browsers:
+  - label: FB
+    title: FlyBase Browser
+    url: http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000013
 ---
-
-A structured controlled vocabulary used for various aspects of annotation by FlyBase.
+A structured controlled vocabulary used for various aspects of annotation by FlyBase. It includes the Drosophila Phenotype Ontology (dpo) which is also released separately.
 
 This ontology is maintained by FlyBase for various aspects of annotation not covered, or not yet covered, by other OBO ontologies.  If and when community ontologies are available for the domains here covered FlyBase will use them.

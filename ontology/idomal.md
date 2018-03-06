@@ -1,13 +1,13 @@
 ---
 layout: ontology_detail
 id: idomal
-contact: 
+contact:
   email: topalis@imbb.forth.gr
   label: Pantelis Topalis
 description: An application ontology to cover all aspects of malaria as well as the intervention attempts to control it.
 domain: health
 homepage: http://anobase.vectorbase.org
-products: 
+products:
   - id: idomal.owl
 title: Malaria Ontology
 build:

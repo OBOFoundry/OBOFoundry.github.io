@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: bto
-contact: 
+contact:
   email: a.chang@tu-bs.de
   label: Antje Chang
 description: A structured controlled vocabulary for the source of an enzyme comprising tissues, cell lines, cell types and cell cultures.
@@ -11,15 +11,15 @@ page: https://en.wikipedia.org/wiki/BRENDA_tissue_ontology
 publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/21030441
     title: "The BRENDA Tissue Ontology (BTO): the first all-integrating ontology of all organisms for enzyme sources"
-products: 
+products:
   - id: bto.owl
 license:
-  url: http://www.brenda-enzymes.org/copy.php
-  label: BRENDA license
-  alert: Restricted
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY
 title: BRENDA tissue / enzyme source
 build:
   source_url: http://www.brenda-enzymes.info/ontology/tissue/tree/update/update_files/BrendaTissueOBO
+  insert_ontology_id: true
   method: obo2owl
 ---
 

@@ -1,15 +1,15 @@
 ---
 layout: ontology_detail
 id: wbls
-contact: 
+contact:
   email: wchen@its.caltech.edu
   label: Wen J. Chen
 description: A structured controlled vocabulary of the development of <i>Caenorhabditis elegans</i>.
 domain: anatomy
 homepage: http://www.wormbase.org/
-products: 
+products:
   - id: wbls.owl
-taxon: 
+taxon:
   id: NCBITaxon:6237
   label: Caenorhabditis
 title: C. elegans development

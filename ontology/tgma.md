@@ -1,15 +1,15 @@
 ---
 layout: ontology_detail
 id: tgma
-contact: 
+contact:
   email: louis@imbb.forth.gr
   label: C. Louis
 description: A structured controlled vocabulary of the anatomy of mosquitoes.
 domain: anatomy
 homepage: http://anobase.vectorbase.org
-products: 
+products:
   - id: tgma.owl
-taxon: 
+taxon:
   id: NCBITaxon:44484
   label: Anopheles
 title: Mosquito gross anatomy

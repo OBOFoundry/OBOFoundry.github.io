@@ -3,7 +3,7 @@ layout: ontology_detail
 id: ogi
 description: An ontology that formalizes the genomic element by defining an upper class genetic interval
 homepage: https://code.google.com/p/ontology-for-genetic-interval/
-products: 
+products:
   - id: ogi.owl
 title: Ontology for genetic interval
 tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list

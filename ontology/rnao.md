@@ -1,16 +1,18 @@
 ---
 layout: ontology_detail
 id: rnao
-contact: 
+contact:
   email: BatchelorC@rsc.org
   label: Colin Batchelor
 domain: molecular structure
-homepage: http://code.google.com/p/rnao/
-products: 
+homepage: https://github.com/bgsu-rna/rnao
+products:
   - id: rnao.owl
+  - id: rnao.obo
 title: RNA ontology
 build:
-  source_url: http://rnao.googlecode.com/svn/trunk/rnao.obo
-  method: obo2owl
+  checkout: git clone https://github.com/BGSU-RNA/rnao.git
+  system: git
+  method: vcs
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: ontology_detail
 id: vhog
-products: 
+title: Vertebrate Homologous Ontology Group Ontology
+products:
   - id: vhog.owl
 is_obsolete: true
 replaced_by: uberon

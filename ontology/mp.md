@@ -3,16 +3,18 @@ layout: ontology_detail
 id: mp
 title: Mammalian phenotype
 build:
-  source_url: ftp://ftp.informatics.jax.org/pub/reports/MPheno_OBO.ontology
-  method: obo2owl
+  source_url: http://build.berkeleybop.org/job/build-mp-edit/lastSuccessfulBuild/artifact/*zip*/archive.zip
+  path: archive/src/ontology
+  method: archive
   infallible: 1
 description: Standard terms for annotating mammalian phenotypic data.
 homepage: http://www.informatics.jax.org/searches/MP_form.shtml
-contact: 
+page: https://github.com/obophenotype/mammalian-phenotype-ontology
+contact:
   email: pheno@jax.org
   label: JAX phenotype list
 domain: phenotype
-products: 
+products:
   - id: mp.owl
   - id: mp.obo
 browsers:
@@ -25,10 +27,10 @@ browsers:
 jobs:
   - id: http://build.berkeleybop.org/job/build-mp-edit
     type: DryRunBuild
-taxon: 
+taxon:
   id: NCBITaxon:10088
   label: Mus
-tracker: https://sourceforge.net/p/obo/mammalian-phenotype-requests/
+tracker: https://github.com/obophenotype/mammalian-phenotype-ontology/issues
 termgenie: http://mp.termgenie.org
 ---
 

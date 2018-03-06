@@ -1,18 +1,23 @@
 ---
-contact: 
+layout: ontology_detail
+id: zfs
+in_foundry: false
+contact:
   email: zfinadmin@zfin.org
   label: ZFIN administrators
 description: Developmental stages of the Zebrafish
 domain: anatomy
 homepage: http://zfin.org/zf_info/anatomy/dict/sum.html
-id: zfs
-page: http://code.google.com/p/developmental-stage-ontologies
-products: 
+page: https://github.com/obophenotype/developmental-stage-ontologies/wiki/ZFS
+products:
   - id: zfs.owl
-taxon: 
+taxon:
   id: NCBITaxon:7954
   label: Danio
 title: Zebrafish developmental stages
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 build:
   source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/zfs/zfs.obo
   method: obo2owl

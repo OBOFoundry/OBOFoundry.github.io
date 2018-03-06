@@ -1,30 +1,28 @@
 [![Build Status](https://travis-ci.org/OBOFoundry/OBOFoundry.github.io.svg?branch=master)](https://travis-ci.org/OBOFoundry/OBOFoundry.github.io)
 
-Try it out: http://obofoundry.github.io/
-
-## OBO Foundry website BETA
+## OBO Foundry Registry and Website
 
 ### What is this?
 
-This is a proposed new website for the OBO Foundry. It replaces the
-[previous proposal](https://github.com/OBOFoundry/omb), but uses the
-same principles and YAML/RDF structures
+This is the registry and website for the OBO Foundry.
+
+It uses GitHub pages and can be visible here: http://obofoundry.github.io/
+
+We map http://obofoundry.org to this address.
 
 ### How does it work?
 
 The source can be found on https://github.com/OBOFoundry/OBOFoundry.github.io
 
 It uses GitHub Pages/[Jekyll](https://en.wikipedia.org/wiki/Jekyll_%28software%29),
-a popular static site generator. I already use this for
-http://uberon.org
+a popular static site generator.
 
-It [integrates nicely with
+GitHub pages [are integrated with
 github](https://help.github.com/articles/using-jekyll-with-pages/)
 which means that the entire site can be seen on
-http://obofoundry.github.io (no need to run a dedicated webserver)
+http://obofoundry.github.io (we don't run a dedicated webserver)
 
-At the same time, we are not dependent on github - we could do our own
-static generation, e.g. with a Jenkins job
+For more details see: [README-sitedev.md](README-sitedev.md)
 
 ### I have some comments
 
@@ -34,9 +32,13 @@ but you may want to hold off til things are more stable
 
 ### I want to contribute
 
-Please do! Fork and make PR, but beware things are not yet stable
+Please do! Anyone can fork and make PR, or [create an issue in the tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues).
 
-## Organization
+Note that most members of the community will do this via the [obofoundry.org website](http://obofoundry.org) - each ontology page has links for editing the metadata.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## Repo Organization
 
  * [registry/](registry)   `<-- DERIVED yaml, json and RDF. DO NOT EDIT`
     * [registry/ontologies.yaml](registry/ontologies.yaml)  `<-- READONLY`
@@ -56,7 +58,7 @@ Please do! Fork and make PR, but beware things are not yet stable
 
 ## Instructions for Registry Curators
 
-**NEW!**: See [this FAQ entry](http://obofoundry.github.io/faq/how-do-i-edit-metadata.html) for simple web-based editing of metadata
+See [this FAQ entry](http://obofoundry.github.io/faq/how-do-i-edit-metadata.html) for simple web-based editing of metadata
 
 Please edit the *source* files in the [ontology/](ontology/) directory only.
 
@@ -93,8 +95,8 @@ AEO is an ontology of anatomical structures that expands CARO, the Common Anatom
 The [aeo page](http://obofoundry.github.io/ontology/aeo.html) shows the structured info on the right and the formatted text on the right. (THIS IS A BAD EXAMPLE IT HAS NO FORMATTING)
 
 The YAML data is strictly vetted by OBO team. The Makefile takes care
-of syntactic validation. The OBO team ensures the content is correct,
-up to date and accurate.
+of syntactic validation (the travis job runs `make test`). The OBO
+team ensures the content is correct, up to date and accurate.
 
 You can put any HTML or Markdown in the lower section - customize each ontology page!
 
@@ -105,6 +107,23 @@ script in the util/ directory.
 
 The one piece of visual info in the md is the `layout` field, which is necessary for Jekyll.
 
+
+### Generation of downstream artefacts
+
+OBO admins should periodically
+
+    git pull
+    make
+    jekyll server
+    ## open 127.0.0.1:4000 in a web browser and spot-check changes
+    git commit -m 'regenerated derived files' -a
+    git push origin master
+
+See the `Makefile` for details. This will have the effect of
+regenerating the main ontologies yaml (used by external consumers such
+as OLS, as well as the central OBO library build), as well as the
+GitHub pages `_config.yml` file. This last step is necessary to update
+the front page.
 
 
 #### RDF
@@ -133,6 +152,36 @@ case the OBO team will not merge your PR. Don't worry, all you have to
 do is make further edits to fix the syntax error.
 
 TODO: add a quick guide to yaml, and the tags we use.
+
+## Central OBO library build
+
+(see also the FAQ entry on this)
+
+The central OBO build runs here:
+
+ * http://build.berkeleybop.org/job/simple-build-obo-all/
+
+It takes as metadata input the yml file from this repository. It makes
+use of the `build` object.
+
+The output of this job is a set of obo and owl files deposited in
+
+ * http://berkeleybop.org/ontologies/
+
+Depending on the build configuration, this may also make additional files. See for example:
+
+ * http://berkeleybop.org/ontologies/uberon/
+
+A  http://berkeleybop.org/ontologies/ URL should never be handed out directly. This service exists so that:
+
+ * Un PURL-registered ontologies will have a fall-through
+ * Registered PURL ontologies that do not want to take charge of either OBO or OWL generation will have a place to 302-redirect to
+
+This job will fail if ontologies marked as `infallible` fail. To debug, the full log of the last build can be examined:
+
+ * https://build.berkeleybop.org/job/simple-build-obo-all/lastBuild/consoleFull
+
+(Look for the text "should not fail")
 
 ## Adding news
 

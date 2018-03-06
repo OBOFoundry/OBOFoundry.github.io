@@ -1,16 +1,40 @@
+Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/registry/ontologies.jsonld">JSON-LD</a> | <a href="/registry/ontologies.ttl">RDF/Turtle</a>  ]
 <table class="table">
   <tbody>
-    {% assign sorted_ontologies = site.ontologies | sort: 'in_foundry_order', 'last'  %}
-    {% for ont in sorted_ontologies %}
-    <tr>
+    {% for ont in site.ontologies %}
+    <tr class="{% if ont.in_foundry_order %}foundry{% elsif ont.is_obsolete %}obsolete{% endif %}">
       <td>
-         <a href="ontology/{{ ont.id }}.html" > {{ont.id}} </a>
+         <a href="ontology/{{ ont.id }}.html" >
+           {% if ont.is_obsolete %}
+           <s>
+             {{ ont.id }}
+           </s>
+           {% else %}
+           {{ ont.id }}
+           {% endif %}
+         </a>
       </td>
       <td>
+        {% if ont.is_obsolete %}
+        <s>
+          {{ ont.title }}
+        </s>
+        {% else %}
         {{ ont.title }}
+        {% endif %}
+        {% if ont.license %}
+        <a href="{{ont.license.url}}"><img width="100px" src="{{ont.license.logo}}" alt="{{ont.license.label}}"/></a>
+        {% endif %}
       </td>
       <td>
-        {{ ont.description }} 
+        {% if ont.is_obsolete %}
+        <s>
+          {{ ont.description }}
+        </s>
+        <mark>obsolete</mark>
+        {% else %}
+        {{ ont.description }}
+        {% endif %}
         <small>
           <a href="ontology/{{ ont.id }}.html" > Detail </a>
         </small>
@@ -77,7 +101,7 @@
 
       <td>
         {% if ont.in_foundry_order %}
-        <a href="link-to-foundry-principles">
+        <a href="/principles/fp-000-summary.html">
           <button type="button" class="btn btn-default" aria-label="Left Align">
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           </button>

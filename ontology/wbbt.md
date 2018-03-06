@@ -1,15 +1,15 @@
 ---
 layout: ontology_detail
 id: wbbt
-contact: 
+contact:
   email: raymond@caltech.edu
   label: Raymond Lee
 description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis elegans</i>.
 domain: anatomy
 homepage: http://www.wormbase.org/
-products: 
+products:
   - id: wbbt.owl
-taxon: 
+taxon:
   id: NCBITaxon:6237
   label: Caenorhabditis
 title: C. elegans gross anatomy

@@ -1,16 +1,21 @@
 ---
-contact: 
-  email: geg18@aber.ac.uk
+layout: ontology_detail
+id: uo
+in_foundry: false
+contact:
+  email: g.gkoutos@gmail.com
   label: George Gkoutos
 description: Metrical units for use in conjunction with PATO
 domain: phenotype
-homepage: http://code.google.com/p/unit-ontology/
-id: uo
-products: 
+homepage: https://github.com/bio-ontology-research-group/unit-ontology
+products:
   - id: uo.owl
 title: Units of measurement
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 build:
-  source_url: http://unit-ontology.googlecode.com/svn/trunk/unit.obo
+  source_url: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo
   method: obo2owl
-tracker: http://sourceforge.net/tracker/?group_id=76834&atid=595654
+tracker: https://github.com/bio-ontology-research-group/unit-ontology/issues
 ---
