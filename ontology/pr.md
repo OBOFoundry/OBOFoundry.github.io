@@ -7,7 +7,9 @@ contact:
   label: Darren Natale
 description: An ontological representation of protein-related entities
 domain: proteins
-homepage: http://proconsortium.org
+homepage:
+  url: http://purl.obolibrary.org/pr
+  label: PRO Consortium
 documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
 products:
   - id: pr.owl
@@ -34,12 +36,14 @@ build:
   source_url: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.obo
   method: obo2owl
   infallible: 0
-tracker: http://purl.obolibrary.org/obo/pr/tracker
+tracker:
+  url: http://purl.obolibrary.org/obo/pr/tracker
+  label: PRO Tracker
 publications:
   - id: http://pir.georgetown.edu/pro/pro_dsmnt.shtml#publication
     title: "Publications & Dissemination"
 development:
-  id_policy: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+URI+policy
+  id_policy: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+PURLs
 ---
 
 The PRotein Ontology (PRO) formally defines taxon-specific and taxon-neutral protein-related entities in three major areas: proteins related by evolution; proteins produced from a given gene; and protein-containing complexes.
