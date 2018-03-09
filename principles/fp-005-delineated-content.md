@@ -11,7 +11,7 @@ The wording of this principle is still in progress, with some issues still to be
 
 Summary
 -------
-The ontology has a clearly specified scope and content that adheres to that scope.
+The scope of an ontology is the extent of the domain or subject matter it intends to cover. The ontology must have a clearly specified scope and content that adheres to that scope.
 
 Purpose
 -------

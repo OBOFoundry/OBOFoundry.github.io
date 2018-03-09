@@ -3,7 +3,7 @@ layout: ontology_detail
 id: fypo
 title: Fission Yeast Phenotype Ontology
 build:
-  source_url: https://raw.githubusercontent.com/pombase/fypo/master/release/fypo.obo
+  source_url: https://raw.githubusercontent.com/pombase/fypo/master/release/fypo.owl
   method: obo2owl
   infallible: 1
 contact:

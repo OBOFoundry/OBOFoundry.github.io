@@ -57,8 +57,8 @@ In general, copyright legislation says that facts that are not copyrightable are
 #### `.obo` files
 
 1. OBO Foundry Ontologies must specify the reuse constraints using the following annotations in any publically released OBO version of the ontology:
-  1. the license in a separate annotation, which can be converted to a dc:license statement if the ontology is converted to OWL - see Examples (below)
-  2. the reuse constraints using a comment in the official OBO version of the ontology - see Examples (below)
+  1. the license in a separate property annotation, which can be converted to a dc:license statement if the ontology is converted to OWL - see Example 2 (below)
+  2. the reuse constraints using a comment in the official OBO version of the ontology - see Example 2 (below)
 
 ### For ontology re-use
 
@@ -111,9 +111,9 @@ The above comment for reuse conditions is for example only. Ontologies may use d
 ### Example 2: Example of OBO code for the license annotation:
 
 ```
-<license annotation>
+property_value: http://purl.org/dc/elements/1.1/license http://creativecommons.org/licenses/by/4.0/
 
-1.  "Ontology name" by developer groups is licensed under CC BY 4.0. You
+remark: *Ontology name* by *developer group(s)* is licensed under CC BY 4.0. You
     are free to share (copy and redistribute the material in any medium
     or format) and adapt (remix, transform, and build upon the material)
     for any purpose, even commercially. You must give appropriate credit

@@ -17,7 +17,7 @@ products:
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
-depicted_by:  https://raw.githubusercontent.com/ISA-tools/stato/dev/images/stato-logo-1.png
+depicted_by:  https://raw.githubusercontent.com/ISA-tools/stato/dev/images/stato-logo-3.png
 tracker: https://github.com/ISA-tools/stato/issues
 ---
 

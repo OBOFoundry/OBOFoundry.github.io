@@ -13,9 +13,10 @@ homepage: http://www.disease-ontology.org
 DO wiki: http://diseaseontology.sourceforge.net/
 products:
   - id: doid.owl  
-    title: Disease Ontology inferred hierarchy that includes anatomy, cell of origin, infectious agent and phenotype axioms
+    title: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy plus equivalent axioms to other OBO Foundry ontologies. 
   - id: doid.obo  
-    title: Disease Ontology asserted is_a hierarchy (this file is equivalent to DO's previous HumanDO.obo file)
+    title: Disease Ontology, OBO format. This file omits the equivalent axioms. 
+ 
 browsers:
   - label: DO
     title: DO Browser
@@ -25,7 +26,7 @@ taxon:
   label: Homo sapiens
 title: Human Disease Ontology
 build:
-  source_url: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-non-classified.obo
+  source_url: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.obo
   method: obo2owl
   infallible: 1
 tracker: https://github.com/DiseaseOntology/HumanDiseaseOntology/issues
@@ -44,5 +45,12 @@ usages:
 ---
 
 Creating a comprehensive classification of human diseases organized by etiology.
+
+<u>Additional OBO formatted DO files</u>
+- Download DO's asserted is_a OBO file [HumanDO.obo](https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/HumanDO.obo). 
+This file is equivalent to doid-non-classified.obo.
+
+- DO provides an additional OBO file, [doid-merged.obo](https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-merged.obo). 
+ for the [AGR](http://www.alliancegenome.org) that includes [OMIM](http://omim.org) to DO associations as xrefs plus defined  relationships between OMIM susceptibility IDs and DO terms.  
 
 <img src="http://www.disease-ontology.org/media/images/DO_logo.jpg"/>

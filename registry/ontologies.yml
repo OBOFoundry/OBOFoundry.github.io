@@ -315,7 +315,18 @@ ontologies:
   - {id: apo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/apo.obo'}
   taxon: {id: 'NCBITaxon:4890', label: Ascomycota}
   title: Ascomycete phenotype ontology
-- contact: {email: jiezheng@upenn.edu, label: Jie Zheng}
+- contact: {email: card@mcmaster.ca, label: CARD}
+  description: Antibiotic resistance genes and mutations
+  homepage: https://github.com/arpcard/aro
+  id: aro
+  layout: ontology_detail
+  mailing_list: https://mailman.mcmaster.ca/mailman/listinfo/card-l
+  ontology_purl: http://purl.obolibrary.org/obo/aro.owl
+  products:
+  - {id: aro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/aro.owl'}
+  title: Antibiotic Resistance Ontology
+  tracker: https://github.com/arpcard/aro/issues
+- contact: {email: jiezheng@pennmedicine.upenn.edu, label: Jie Zheng}
   description: An application ontology built for beta cell genomics studies.
   homepage: https://github.com/obi-bcgo/bcgo
   id: bcgo
@@ -369,7 +380,8 @@ ontologies:
   homepage: http://www.brenda-enzymes.info
   id: bto
   layout: ontology_detail
-  license: {alert: Restricted, label: BRENDA license, url: 'http://www.brenda-enzymes.org/copy.php'}
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/bto.owl
   page: https://en.wikipedia.org/wiki/BRENDA_tissue_ontology
   products:
@@ -396,7 +408,7 @@ ontologies:
   contact: {email: balhoff@renci.org, label: Jim Balhoff}
   description: a formalization of concepts and relations relevant to evolutionary
     comparative analysis
-  homepage: http://sourceforge.net/apps/mediawiki/cdao/index.php?title=Main_Page
+  homepage: https://github.com/evoinfo/cdao
   id: cdao
   layout: ontology_detail
   license: {label: CC0 1.0 Universal, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
@@ -426,12 +438,12 @@ ontologies:
   taxon: {id: 'NCBITaxon:6605', label: Cephalopod}
   title: Cephalopod Ontology
   tracker: https://github.com/obophenotype/cephalopod-ontology/issues
-- build: {method: owl2obo, source_url: 'https://raw.githubusercontent.com/egonw/semanticchemistry/master/ontology/cheminf.owl'}
+- build: {method: owl2obo, source_url: 'https://raw.githubusercontent.com/semanticchemistry/semanticchemistry/master/ontology/cheminf.owl'}
   contact: {email: egon.willighagen@gmail.com, label: Egon Willighagen}
   description: Includes terms for the descriptors commonly used in cheminformatics
     software applications and the algorithms which generate them.
   domain: biochemistry
-  homepage: https://github.com/egonw/semanticchemistry
+  homepage: https://github.com/semanticchemistry/semanticchemistry
   id: cheminf
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/cheminf.owl
@@ -864,6 +876,7 @@ ontologies:
   domain: environment
   homepage: http://planteome.org/
   id: eo
+  is_obolete: true
   layout: ontology_detail
   license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'https://creativecommons.org/licenses/by/4.0/'}
@@ -875,6 +888,7 @@ ontologies:
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/22847540', title: Ontologies as integrative
       tools for plant science.}
+  replaced_by: peco
   title: Plant Environment Ontology
   tracker: https://github.com/Planteome/plant-environment-ontology/issues
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/epo.owl'}
@@ -902,6 +916,20 @@ ontologies:
   - {id: ero.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ero.owl'}
   title: eagle-i resource ontology
   tracker: null
+- contact: {email: stoeckrt@pennmedicine.upenn.edu, label: Chris Stoeckert}
+  depicted_by: http://meetings.embo.org/files/2017-06/eupath.jpg
+  description: An ontology is developed to support Eukaryotic Pathogen Database Bioinformatics
+    Resource Center sites (EuPathDB; http://eupathdb.org).
+  homepage: https://github.com/EuPath-ontology/EuPath-ontology
+  id: eupath
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/4.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/eupath.owl
+  products:
+  - {id: eupath.owl, ontology_purl: 'http://purl.obolibrary.org/obo/eupath.owl'}
+  title: EuPath ontology
+  tracker: https://github.com/EuPath-ontology/EuPath-ontology/issues
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/CTDbase/exposure-ontology/master/src/ontology/exo.obo'}
   description: Vocabularies for describing exposure data to inform understanding of
     environmental health.
@@ -1078,7 +1106,7 @@ ontologies:
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/foodon.owl
-  page: https://github.com/FoodOntology/foodon/
+  page: http://foodon.org/
   products:
   - {format: owl-rdf/xml, id: foodon.owl, ontology_purl: 'http://purl.obolibrary.org/obo/foodon.owl',
     title: FoodOn full ontology including 9000 SIREN indexed food products}
@@ -1086,7 +1114,7 @@ ontologies:
     title: FoodOn core ontology (without SIREN)}
   title: FOODON
   tracker: https://github.com/FoodOntology/foodon/issues/
-- build: {infallible: 1, method: obo2owl, source_url: 'https://sourceforge.net/p/pombase/code/HEAD/tree/phenotype_ontology/releases/latest/fypo.obo?format=raw'}
+- build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/pombase/fypo/master/release/fypo.owl'}
   contact: {email: mah79@cam.ac.uk, label: Midori Harris}
   depicted_by: http://www.pombase.org/sites/pombase.org/files/images/fypo_logo_tiny.png
   description: FYPO is a formal ontology of phenotypes observed in fission yeast.
@@ -1127,7 +1155,7 @@ ontologies:
   description: The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary
     to identify, document and research foodborne pathogens and associated outbreaks.
   domain: health
-  homepage: http://genepio.github.io/genepio/
+  homepage: http://genepio.org/
   id: genepio
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
@@ -1514,30 +1542,30 @@ ontologies:
 - browsers:
   - {label: Monarch, title: Monarch Initiative Disease Browser, url: 'https://monarchinitiative.org/disease/DOID:14330'}
   canonical: mondo.owl
-  description: a semi-automatically constructed ontology that merges in multiple disease
-    resources to yield a coherent merged ontology
+  description: An ontology that harmonizes multiple disease resources.
   domain: disease
   id: mondo
   label: MonDO
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
+  mailing_list: https://groups.google.com/group/mondo-users
   ontology_purl: http://purl.obolibrary.org/obo/mondo.owl
   products:
   - {description: 'Complete ontology, plus inter-ontology equivalence axioms. Uses
-      identifiers of contributing ontologies.', format: owl-rdf/xml, id: mondo.owl,
-    is_canonical: true, ontology_purl: 'http://purl.obolibrary.org/obo/mondo.owl',
+      MONDO IDs.', format: owl-rdf/xml, id: mondo.owl, is_canonical: true, ontology_purl: 'http://purl.obolibrary.org/obo/mondo.owl',
     title: Main OWL edition}
   - {derived_from: mondo.owl, description: 'As OWL, but omits equivalence axioms.
-      xrefs can be used as proxy for equivalence. Uses identifiers of contributing
-      ontologies.', format: obo, id: mondo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/mondo.obo',
-    title: obo-format edition}
-  - {description: 'Complete ontology, plus inter-ontology equivalence axioms. Uses
-      MONDO identifiers.', format: owl-rdf/xml, id: pre/mondo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/pre/mondo.owl',
-    title: Preview of new OWL edition}
-  - {description: 'Complete ontology, but omits inter-ontology equivalence axioms.
-      Uses MONDO identifiers.', format: obo, id: pre/mondo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/pre/mondo.obo',
-    title: Preview of new OBO edition}
+      xrefs can be used as proxy for equivalence. Uses MONDO IDs', format: obo, id: mondo.obo,
+    ontology_purl: 'http://purl.obolibrary.org/obo/mondo.obo', title: obo-format edition}
+  - {derived_from: mondo.owl, description: Equivalent to the OWL edition, format: obo,
+    id: mondo.json, ontology_purl: 'http://purl.obolibrary.org/obo/mondo.json', title: json
+      edition}
+  - {description: Now identical to main release, format: owl-rdf/xml, id: pre/mondo.owl,
+    ontology_purl: 'http://purl.obolibrary.org/obo/pre/mondo.owl', title: (DEPRECATED)
+      Preview of new OWL edition}
+  - {description: Now identical to main release, format: obo, id: pre/mondo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/pre/mondo.obo',
+    title: (DEPRECATED) Preview of new OBO edition}
   taxon: {id: 'NCBITaxon:33208', label: Metazoa}
   title: Monarch Disease Ontology
   tracker: https://github.com/monarch-initiative/monarch-disease-ontology/issues
@@ -1646,7 +1674,8 @@ ontologies:
 - browsers:
   - {label: BioPortal, title: BioPortal Ontology Browser, url: 'https://bioportal.bioontology.org/ontologies/NBO'}
   build: {method: owl2obo, source_url: 'https://raw.githubusercontent.com/obo-behavior/behavior-ontology/master/nbo.owl'}
-  contact: {email: g.gkoutos@gmail.com, label: George Gkoutos}
+  contact: {email: g.gkoutos@bham.ac.uk, label: George Gkoutos}
+  description: An ontology of human and animal behaviours and behavioural phenotypes
   domain: behavior
   homepage: https://github.com/obo-behavior/behavior-ontology/
   id: nbo
@@ -1762,7 +1791,7 @@ ontologies:
   - {id: oba/subsets/oba-basic.obo, ontology_purl: 'http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo'}
   title: Ontology of Biological Attributes
   tracker: https://github.com/obophenotype/bio-attribute-ontology/issues
-- contact: {email: jiezheng@upenn.edu, label: Jie Zheng}
+- contact: {email: jiezheng@pennmedicine.upenn.edu, label: Jie Zheng}
   description: A biomedical ontology in the domain of biological and clinical statistics.
   domain: statistics
   homepage: https://github.com/obcs/obcs
@@ -1776,7 +1805,7 @@ ontologies:
   - {id: obcs.owl, ontology_purl: 'http://purl.obolibrary.org/obo/obcs.owl'}
   title: Ontology of Biological and Clinical Statistics
   tracker: https://github.com/obcs/obcs/issues
-- contact: {email: jiezheng@upenn.edu, label: Jie Zheng}
+- contact: {email: jiezheng@pennmedicine.upenn.edu, label: Jie Zheng}
   description: An ontology built for annotation and modeling of biobank repository
     and biobanking administration
   domain: health
@@ -1813,19 +1842,21 @@ ontologies:
   title: Ontology for genetic interval
   tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list
 - contact: {email: baeverma@jcvi.org, label: Brian Aevermann}
+  depicted_by: https://avatars2.githubusercontent.com/u/12973154?s=200&v=4
   description: An ontology for representing treatment of disease and diagnosis and
     on carcinomas and other pathological entities
   domain: medicine
   homepage: https://github.com/OGMS/ogms
   id: ogms
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/ogms.owl
-  page: https://github.com/OGMS/ogms
   products:
   - {id: ogms.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ogms.owl'}
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Ontology for General Medical Science
-  tracker: https://github.com/OGMS/ogms
+  tracker: https://github.com/OGMS/ogms/issues
 - description: An application ontology to represent genetic susceptibility to a specific
     disease, adverse event, or a pathological process.
   homepage: https://code.google.com/p/ogsf/
@@ -1980,7 +2011,7 @@ ontologies:
   - {id: opl.owl, ontology_purl: 'http://purl.obolibrary.org/obo/opl.owl'}
   title: Ontology for Parasite LifeCycle
   tracker: https://github.com/OPL-ontology/OPL/issues
-- contact: {email: Yongqunh He, label: yongqunh@med.umich.edu}
+- contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
   description: A biomedical ontology in the domain of vaccine adverse events.
   homepage: http://www.violinet.org/ovae/
   id: ovae
