@@ -34,9 +34,7 @@ build:
   source_url: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.obo
   method: obo2owl
   infallible: 0
-tracker: 
-  - id: http://purl.obolibrary.org/obo/pr/tracker
-    title: PRO Tracker
+tracker: http://purl.obolibrary.org/obo/pr/tracker
 publications:
   - id: http://pir.georgetown.edu/pro/pro_dsmnt.shtml#publication
     title: "Publications & Dissemination"
