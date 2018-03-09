@@ -42,9 +42,11 @@ publications:
     title: "The Human Phenotype Ontology project: linking molecular biology and disease through phenotype data."
 ---
 
-<img src="http://human-phenotype-ontology.github.io/img/placeholder.jpg"/>
+<img src="http://human-phenotype-ontology.github.io/img/HPO-logo-stacked-black.png"/>
 
-The Human Phenotype Ontology is being developed to provide a structured and controlled vocabulary for the phenotypic features encountered in human hereditary and other disease. Our goal is to provide resource for the computational analysis of the human phenome, with a current focus on monogenic diseases listed in the Online Mendelian Inheritance in Man (OMIM) database, for which annotations are also provided.
+An ontology is a computational representation of a domain of knowledge based upon a controlled, standardized vocabulary for describing entities and the semantic relationships between them.
+
+The Human Phenotype Ontology (HPO) aims to provide a standardized vocabulary of phenotypic abnormalities encountered in human disease. Each term in the HPO describes a phenotypic abnormality, such as atrial septal defect. The HPO is currently being developed using the medical literature, Orphanet, DECIPHER, and OMIM.
 
 The HPO can be browsed using:
 
