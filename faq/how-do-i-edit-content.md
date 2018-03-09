@@ -11,7 +11,7 @@ This FAQ is about editing the narrative content of the OBO site
 ## How do I edit the content of the OBO site?
 
 The procedure for editing content of the website is similar to that
-for [editing metadata files](how-do-i-edit-metadata.md]):
+for [editing metadata files](how-do-i-edit-metadata.md):
 
  * Click the Edit button. This takes you to the GitHub page for editing content
  * Make your proposed edits
@@ -108,11 +108,3 @@ Every ontology in the registry is automatically in [OntoBee](http://ontobee.org)
 automatically provide a link to OntoBee.
 ...
 ```
-
-
-
-
-
-
-
-
