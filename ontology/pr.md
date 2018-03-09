@@ -36,7 +36,7 @@ build:
   infallible: 0
 tracker:
   url: http://purl.obolibrary.org/obo/pr/tracker
-  label: PRO Tracker
+  title: PRO Tracker
 publications:
   - id: http://pir.georgetown.edu/pro/pro_dsmnt.shtml#publication
     title: "Publications & Dissemination"
