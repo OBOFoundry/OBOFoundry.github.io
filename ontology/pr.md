@@ -35,8 +35,8 @@ build:
   method: obo2owl
   infallible: 0
 tracker: 
-  id: http://purl.obolibrary.org/obo/pr/tracker
-  title: PRO Tracker
+  - id: http://purl.obolibrary.org/obo/pr/tracker
+    title: PRO Tracker
 publications:
   - id: http://pir.georgetown.edu/pro/pro_dsmnt.shtml#publication
     title: "Publications & Dissemination"
