@@ -27,6 +27,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Human developmental anatomy, abstract (ehdaa2): [A new ontology (structured hierarchy) of human developmental anatomy for the first 7 weeks (Carnegie stages 1-20).](http://www.ncbi.nlm.nih.gov/pubmed/22973865)
 - Mass spectrometry ontology (ms): [The HUPO proteomics standards initiative- mass spectrometry controlled vocabulary.](http://www.ncbi.nlm.nih.gov/pubmed/23482073)
 - Measurement method ontology (mmo): [Three ontologies to define phenotype measurement data.](http://www.ncbi.nlm.nih.gov/pubmed/22654893)
+- PRotein Ontology (PRO) (pr): [Publications & Dissemination](http://pir.georgetown.edu/pro/pro_dsmnt.shtml#publication)
 - Pathway ontology (pw): [The Rat Genome Database pathway portal.](http://www.ncbi.nlm.nih.gov/pubmed/21478484)
 - Plant Environment Ontology (eo): [Ontologies as integrative tools for plant science.](http://www.ncbi.nlm.nih.gov/pubmed/22847540)
 - Plant Experimental Conditions Ontology (peco): [Ontologies as integrative tools for plant science.](http://www.ncbi.nlm.nih.gov/pubmed/22847540)

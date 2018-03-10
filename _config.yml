@@ -59,7 +59,7 @@ ontologies:
 - DO wiki: http://diseaseontology.sourceforge.net/
   browsers:
   - {label: DO, title: DO Browser, url: 'http://www.disease-ontology.org/'}
-  build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-non-classified.obo'}
+  build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.obo'}
   contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
   description: An ontology for describing the classification of human diseases organized
     by etiology.
@@ -74,11 +74,10 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/doid.owl
   products:
   - {id: doid.owl, ontology_purl: 'http://purl.obolibrary.org/obo/doid.owl', title: 'Disease
-      Ontology inferred hierarchy that includes anatomy, cell of origin, infectious
-      agent and phenotype axioms'}
-  - {id: doid.obo, ontology_purl: 'http://purl.obolibrary.org/obo/doid.obo', title: Disease
-      Ontology asserted is_a hierarchy (this file is equivalent to DO's previous HumanDO.obo
-      file)}
+      Ontology, OWL format. This file contains DO''s is_a asserted hierarchy plus
+      equivalent axioms to other OBO Foundry ontologies.'}
+  - {id: doid.obo, ontology_purl: 'http://purl.obolibrary.org/obo/doid.obo', title: 'Disease
+      Ontology, OBO format. This file omits the equivalent axioms.'}
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409', title: 'Disease Ontology
       2015 update: an expanded and updated database of human diseases for linking
@@ -118,13 +117,20 @@ ontologies:
     url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/go.owl
   products:
-  - {id: go.owl, ontology_purl: 'http://purl.obolibrary.org/obo/go.owl'}
+  - {id: go.owl, ontology_purl: 'http://purl.obolibrary.org/obo/go.owl', page: 'http://geneontology.org/page/download-ontology',
+    title: GO (OWL edition)}
+  - {id: go.obo, ontology_purl: 'http://purl.obolibrary.org/obo/go.obo', page: 'http://geneontology.org/page/download-ontology',
+    title: GO (OBO Format edition)}
   - {description: The core ontology plus axioms connecting to select external ontologies,
     id: go/extensions/go-plus.owl, ontology_purl: 'http://purl.obolibrary.org/obo/go/extensions/go-plus.owl',
-    title: GO-Plus}
+    page: 'http://geneontology.org/page/download-ontology', title: GO-Plus}
+  - {description: The core ontology plus axioms connecting to select external ontologies,
+    id: go/go-basic.obo, ontology_purl: 'http://purl.obolibrary.org/obo/go/go-basic.obo',
+    page: 'http://geneontology.org/page/download-ontology', title: 'GO-Basic, Filtered,
+      for use with legacy tools'}
   - {description: Classes added to ncbitaxon for groupings such as prokaryotes, id: go/extensions/go-taxon-groupings.owl,
     ontology_purl: 'http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl',
-    title: GO Taxon Groupings}
+    page: 'http://geneontology.org/page/download-ontology', title: GO Taxon Groupings}
   taxon: {id: 'NCBITaxon:1', label: All life}
   termgenie: http://go.termgenie.org
   title: Gene Ontology
@@ -212,7 +218,7 @@ ontologies:
   contact: {email: dan5@georgetown.edu, label: Darren Natale}
   depicted_by: https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png
   description: An ontological representation of protein-related entities
-  development: {id_policy: 'https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+URI+policy'}
+  development: {id_policy: 'https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+PURLs'}
   documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
   domain: proteins
   homepage: http://proconsortium.org
@@ -227,8 +233,11 @@ ontologies:
     ontology_purl: 'http://purl.obolibrary.org/obo/pr.owl', title: pro_reasoned.owl}
   - {description: 'PRO after reasoning has been applied, OBO format.', id: pr.obo,
     ontology_purl: 'http://purl.obolibrary.org/obo/pr.obo', title: pro_reasoned.obo}
+  publications:
+  - {id: 'http://pir.georgetown.edu/pro/pro_dsmnt.shtml#publication', title: Publications
+      & Dissemination}
   title: PRotein Ontology (PRO)
-  tracker: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
+  tracker: http://purl.obolibrary.org/obo/pr/tracker
 - build: {infallible: 0, method: obo2owl, source_url: 'https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo'}
   description: Anatomy and development of the African clawed frog (<i>Xenopus laevis</i>).
   domain: anatomy
@@ -332,6 +341,8 @@ ontologies:
   homepage: https://github.com/arpcard/aro
   id: aro
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   mailing_list: https://mailman.mcmaster.ca/mailman/listinfo/card-l
   ontology_purl: http://purl.obolibrary.org/obo/aro.owl
   products:
@@ -1552,8 +1563,9 @@ ontologies:
   - {id: mod.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mod.owl'}
   title: Protein modification
 - browsers:
-  - {label: Monarch, title: Monarch Initiative Disease Browser, url: 'https://monarchinitiative.org/disease/DOID:14330'}
+  - {label: Monarch, title: Monarch Initiative Disease Browser, url: 'https://monarchinitiative.org/disease/MONDO:0019609'}
   canonical: mondo.owl
+  contact: {email: vasilevs@ohsu.edu, label: Nicole Vasilevsky}
   description: An ontology that harmonizes multiple disease resources.
   domain: disease
   id: mondo
@@ -1580,7 +1592,7 @@ ontologies:
     title: (DEPRECATED) Preview of new OBO edition}
   taxon: {id: 'NCBITaxon:33208', label: Metazoa}
   title: Monarch Disease Ontology
-  tracker: https://github.com/monarch-initiative/monarch-disease-ontology/issues
+  tracker: https://github.com/monarch-initiative/mondo-build/issues
 - build: {method: owl2obo, source_url: 'https://raw.githubusercontent.com/rsc-ontologies/rxno/master/mop.owl'}
   contact: {email: batchelorc@rsc.org, label: Colin Batchelor}
   description: Processes at the molecular level
@@ -1736,8 +1748,21 @@ ontologies:
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/ncit.owl
   products:
-  - {id: ncit.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ncit.owl'}
-  - {id: ncit.obo, ontology_purl: 'http://purl.obolibrary.org/obo/ncit.obo'}
+  - {description: A direct transformation of the standard NCIt content using OBO-style
+      term and ontology IRIs and annotation properties., id: ncit.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ncit.owl',
+    title: NCIt OBO Edition OWL format}
+  - {id: ncit.obo, ontology_purl: 'http://purl.obolibrary.org/obo/ncit.obo', title: NCIt
+      OBO Edition OBO format}
+  - {description: 'This version replaces NCIt terms with direct references to terms
+      from other domain-specific OBO Library ontologies (e.g. cell types, cellular
+      components, anatomy), supporting cross-ontology reasoning. The current release
+      incorporates CL (cell types) and Uberon (anatomy).', id: ncit/ncit-plus.owl,
+    mireots_from: uberon, ontology_purl: 'http://purl.obolibrary.org/obo/ncit/ncit-plus.owl',
+    title: NCIt Plus}
+  - {description: 'This is a subset extracted from NCIt Plus, based on the [NCIt Neoplasm
+      Core value set](https://evs.nci.nih.gov/ftp1/NCI_Thesaurus/Neoplasm/About_Core.html)
+      as a starting point.', id: ncit/neoplasm-core.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ncit/neoplasm-core.owl',
+    title: NCIt Plus Neoplasm Core}
   title: NCI Thesaurus OBO Edition
   tracker: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
 - browsers: null
@@ -2373,7 +2398,7 @@ ontologies:
   title: Spider Ontology
   tracker: https://github.com/obophenotype/spider-ontology/issues
 - contact: {email: alejandra.gonzalez.beltran@gmail.com, label: Alejandra Gonzalez-Beltran}
-  depicted_by: https://raw.githubusercontent.com/ISA-tools/stato/dev/images/stato-logo-1.png
+  depicted_by: https://raw.githubusercontent.com/ISA-tools/stato/dev/images/stato-logo-3.png
   description: STATO is a general-purpose STATistics Ontology. Its aim is to provide
     coverage for processes such as statistical tests, their conditions of application,
     and information needed or resulting from statistical methods, such as probability
