@@ -19,9 +19,10 @@ build:
   notes: new url soon
   source_url: ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAPA.obo
   method: obo2owl
-used_by:
- - url: https://www.biosharing.org/biodbcore-000659
-   label: GXD
+usages:
+ - user: http://www.informatics.jax.org/expression.shtml
+   seeAlso: https://www.biosharing.org/biodbcore-000659
+   description: GXD
 ---
 
 

@@ -47,6 +47,18 @@ products:
    title: Basic CL
    description: Basic version, no inter-ontology axioms
    format: obo
+usages:
+ - user: https://www.encodeproject.org/
+   seeAlso: https://www.biosharing.org/biodbcore-000034
+   type: annotation
+   description: The National Human Genome Research Institute (NHGRI) launched a public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September 2003, to carry out a project to identify all functional elements in the human genome sequence. The ENCODE DCC users Uberon to annotate samples
+   reference: http://dx.doi.org/10.1093/database/bav010
+ - user: http://fantom5-collaboration.gsc.riken.jp/
+   type: annotation
+   description: FANTOM5 is using Uberon and CL to annotate samples allowing for transcriptome analyses with cell-type and tissue-level specificity.
+   examples:
+    - url: http://fantom.gsc.riken.jp/5/sstar/CL:0000540
+      description: FANTOM5 samples annotated to neuron
 ---
 
 ![neuron](https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Derived_Neuron_schema_with_no_labels.svg/320px-Derived_Neuron_schema_with_no_labels.svg.png)

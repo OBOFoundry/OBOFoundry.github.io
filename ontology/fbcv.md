@@ -22,6 +22,12 @@ browsers:
   - label: FB
     title: FlyBase Browser
     url: http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000013
+usages:
+  - user: http://flybase.org
+    description: FlyBase uses FBcv for phenotype data annotation in Drosophila
+    example:
+      - url: "http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBcv:0000391"
+        description: "alleles and constructs annotated to bang sensitive in FlyBase"
 ---
 A structured controlled vocabulary used for various aspects of annotation by FlyBase. It includes the Drosophila Phenotype Ontology (dpo) which is also released separately.
 

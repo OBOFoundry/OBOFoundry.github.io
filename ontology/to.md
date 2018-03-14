@@ -35,6 +35,17 @@ tracker: https://github.com/Planteome/plant-trait-ontology/issues
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22847540
     title: "Ontologies as integrative tools for plant science."
+usages:
+  - user: http://planteome.org/
+    description: Planteome uses TO to describe traits for genes and germplasm
+    examples:
+      - url: http://browser.planteome.org/amigo/term/TO:0000286
+        description: Genes and proteins annotated to submergence tolerance, including SUB1
+  - user: http://gramene.org/
+    description: Gramene uses PO for the annotation of plant genes and QTLs
+    examples:
+      - url: http://archive.gramene.org/db/ontology/search?id=TO:0000286
+        description: Gramene annotations to submergence tolerance
 ---
 
 A controlled vocabulary of describe phenotypic traits in plants. Each trait is a distinguishable feature, characteristic, quality or phenotypic feature of a developing or mature plant.
