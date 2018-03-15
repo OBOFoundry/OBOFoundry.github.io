@@ -7,7 +7,7 @@ contact:
 description: A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).
 domain: anatomy
 homepage: http://emouseatlas.org
-page: http://www.obofoundry.org/wiki/index.php/EMAPA:Main_Page
+page: https://www.emouseatlas.org/emap/about/what_is_emap.html
 products:
   - id: emap.owl
 taxon:
