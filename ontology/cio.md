@@ -2,8 +2,11 @@
 layout: ontology_detail
 id: cio
 contact: 
-  email: frederic.bastian@unil.ch
+  email: bgee@sib.swiss
   label: Frederic Bastian
+license:
+  url: https://www.gnu.org/licenses/gpl-3.0.en.html
+  label: GNU GPL 3.0
 title: Confidence Information Ontology
 description: An ontology to capture confidence information about annotations.
 homepage: https://github.com/BgeeDB/confidence-information-ontology
