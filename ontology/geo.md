@@ -2,9 +2,12 @@
 layout: ontology_detail
 id: geo
 contact:
-  email: MBrochhausen@uams.edu
-  label: Mathias Brochhausen
-homepage: https://code.google.com/p/ge-ontology/
+  email: hoganwr@gmail.com
+  label: Bill Hogan
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4.0
+homepage: https://github.com/ufbmi/geographical-entity-ontology/wiki
 description: An ontology of geographical entities
 products:
   - id: geo.owl
