@@ -4,6 +4,9 @@ id: mop
 contact: 
   email: batchelorc@rsc.org
   label: Colin Batchelor
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4.0
 mailing_list: "chemistry-ontologies@googlegroups.com"
 title: Molecular Process Ontology
 description: Processes at the molecular level
