@@ -13,6 +13,9 @@ twitter: chebit
 contact:
   email: gowen@ebi.ac.uk
   label: Gareth Owen
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4.0
 domain: biochemistry
 homepage: http://www.ebi.ac.uk/chebi
 page: http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual
