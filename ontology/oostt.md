@@ -3,7 +3,7 @@ layout: ontology_detail
 id: oostt
 title: Ontology of Organizational Structures of Trauma centers and Trauma systems
 contact:
-  email: mbrochhausen@uams.edu
+  email: mbrochhausen@gmail.com
   label: Mathias Brochhausen
 description: An ontology built for representating the organizational components of trauma centers and trauma systems.
 domain: health
