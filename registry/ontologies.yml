@@ -18,6 +18,9 @@ ontologies:
   - {id: bfo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/bfo.obo'}
   title: Basic Formal Ontology
   tracker: https://github.com/BFO-ontology/BFO/issues
+  usages:
+  - {description: BFO is imported by multiple OBO ontologies to standardize upper
+      level structure, type: owl_import, user: 'http://obofoundry.org'}
 - alternatePrefix: ChEBI
   browsers:
   - {label: CHEBI, title: EBI CHEBI Browser, url: 'http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView'}
@@ -30,6 +33,8 @@ ontologies:
   id: chebi
   in_foundry_order: 1
   layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/chebi.owl
   page: http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual
   products:
@@ -74,6 +79,12 @@ ontologies:
   title: Human Disease Ontology
   tracker: https://github.com/DiseaseOntology/HumanDiseaseOntology/issues
   twitter: diseaseontology
+  usages:
+  - description: MGI disease model annotations use DO
+    examples:
+    - {description: Human genes and mouse homology associated with nail diseases,
+      url: 'http://www.informatics.jax.org/disease/DOID:4123'}
+    user: http://www.informatics.jax.org/disease
 - browsers:
   - {label: AmiGO, title: Gene Ontology AmiGO 2 Browser, url: 'http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab'}
   dependencies:
@@ -124,10 +135,17 @@ ontologies:
   title: Gene Ontology
   tracker: https://github.com/geneontology/go-ontology/issues/
   twitter: news4go
+  usages:
+  - description: The GO ontology is used by the GO consortium for functional annotation
+      of genes
+    examples:
+    - {description: annotations to transmembrane transport, url: 'http://amigo.geneontology.org/amigo/term/GO:0055085'}
+    type: annotation
+    user: http://geneontology.org
 - browsers:
   - {label: BioPortal, title: BioPortal Browser, url: 'http://bioportal.bioontology.org/ontologies/OBI?p=classes'}
   build: {source_url: 'http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/'}
-  contact: {email: bpeters@liai.org, label: Bjoern Peters}
+  contact: {email: "bpeters@lji.org\_", label: Bjoern Peters}
   depicted_by: https://svn.code.sf.net/p/obi/code/trunk/web/htdocs/images/obi-lotext.png
   description: An integrated ontology for the description of life-science and clinical
     investigations
@@ -137,8 +155,8 @@ ontologies:
   in_foundry_order: 1
   integration_server: http://build.berkeleybop.org/job/build-obi/
   layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY 3.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/3.0/'}
   mailing_list: http://groups.google.com/group/obi-users
   ontology_purl: http://purl.obolibrary.org/obo/obi.owl
   products:
@@ -166,7 +184,7 @@ ontologies:
   - {id: pato.owl, ontology_purl: 'http://purl.obolibrary.org/obo/pato.owl'}
   - {id: pato.obo, ontology_purl: 'http://purl.obolibrary.org/obo/pato.obo'}
   repository: https://github.com/pato-ontology/pato/
-  title: Phenotypic quality
+  title: Phenotype And Trait Ontology
   tracker: https://github.com/pato-ontology/pato/issues
 - browsers:
   - {label: Planteome, title: Planteome browser, url: 'http://browser.planteome.org/amigo'}
@@ -199,6 +217,24 @@ ontologies:
   title: Plant Ontology
   tracker: https://github.com/Planteome/plant-ontology/issues
   twitter: planteome
+  usages:
+  - description: Planteome uses PO to describe location of tissue expression for genes
+      in viridiplantae
+    examples:
+    - {description: Genes and proteins annotate to leaf, url: 'http://browser.planteome.org/amigo/term/PO:0025034'}
+    user: http://planteome.org/
+  - description: Maize CELL genomics DB uses PO to annotate images
+    examples:
+    - {url: 'http://maize.jcvi.org/cellgenomics/geneDB_list.php?filter=3'}
+    user: http://maize.jcvi.org/
+  - description: MaizeGDB uses PO for annotation of genes
+    examples:
+    - {url: 'http://maizegdb.org/gene_center/gene/GRMZM5G863962'}
+    user: http://maizegdb.org/
+  - description: Gramene uses PO for the annotation of plant genes
+    examples:
+    - {description: Gramene annotations to leaf from Arabidopsis, url: 'http://archive.gramene.org/db/ontology/search?id=PO:0025034'}
+    user: http://gramene.org/
 - browsers:
   - {label: BioPortal, title: BioPortal Browser, url: 'http://bioportal.bioontology.org/ontologies/PR?p=classes&conceptid=http://purl.obolibrary.org/obo/PR_000000001'}
   - {label: PRO, title: PRO Home, url: 'http://proconsortium.org'}
@@ -270,6 +306,12 @@ ontologies:
   taxon: {id: 'NCBITaxon:7954', label: Danio}
   title: Zebrafish anatomy and development
   tracker: https://github.com/cerivs/zebrafish-anatomical-ontology/issues
+  usages:
+  - description: ZFIN uses ZFA to annotate gene expression and phenotype
+    examples:
+    - {description: zebrafish genes expressed in hindbrain and genotypes with hindbrain
+        phenotype, url: 'http://zfin.org/ZFA:0000029'}
+    user: http://zfin.org
 - build: {checkout: 'git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git',
     method: vcs, path: src/ontology, system: git}
   contact: {email: J.Bard@ed.ac.uk, label: Jonathan Bard}
@@ -350,7 +392,7 @@ ontologies:
   - {id: bcgo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/bcgo.owl'}
   title: Beta Cell Genomics Ontology
   tracker: https://github.com/obi-bcgo/bcgo/issues
-- contact: {email: rwalls2008@gmail.com, label: Ramona Walls}
+- contact: {email: rlwalls2008@gmail.com, label: Ramona Walls}
   description: An ontology to support the interoperability of biodiversity data, including
     data on museum collections, environmental/metagenomic samples, and ecological
     surveys.
@@ -358,6 +400,8 @@ ontologies:
   id: bco
   in_foundry: false
   layout: ontology_detail
+  license: {label: CC-BY 1.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/bco.owl
   products:
   - {id: bco.owl, ontology_purl: 'http://purl.obolibrary.org/obo/bco.owl'}
@@ -476,11 +520,12 @@ ontologies:
   title: Chemical Methods Ontology
   tracker: https://github.com/rsc-ontologies/rsc-cmo/issues
 - browsers: null
-  contact: {email: frederic.bastian@unil.ch, label: Frederic Bastian}
+  contact: {email: bgee@sib.swiss, label: Frederic Bastian}
   description: An ontology to capture confidence information about annotations.
   homepage: https://github.com/BgeeDB/confidence-information-ontology
   id: cio
   layout: ontology_detail
+  license: {label: GNU GPL 3.0, url: 'https://www.gnu.org/licenses/gpl-3.0.en.html'}
   mailing_list: null
   ontology_purl: http://purl.obolibrary.org/obo/cio.owl
   products:
@@ -528,6 +573,19 @@ ontologies:
   termgenie: http://cl.termgenie.org
   title: Cell Ontology
   tracker: https://github.com/obophenotype/cell-ontology/issues
+  usages:
+  - {description: 'The National Human Genome Research Institute (NHGRI) launched a
+      public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in
+      September 2003, to carry out a project to identify all functional elements in
+      the human genome sequence. The ENCODE DCC users Uberon to annotate samples',
+    reference: 'http://dx.doi.org/10.1093/database/bav010', seeAlso: 'https://www.biosharing.org/biodbcore-000034',
+    type: annotation, user: 'https://www.encodeproject.org/'}
+  - description: FANTOM5 is using Uberon and CL to annotate samples allowing for transcriptome
+      analyses with cell-type and tissue-level specificity.
+    examples:
+    - {description: FANTOM5 samples annotated to neuron, url: 'http://fantom.gsc.riken.jp/5/sstar/CL:0000540'}
+    type: annotation
+    user: http://fantom5-collaboration.gsc.riken.jp/
 - contact: {email: Sirarat.Sarntivijai@fda.hhs.gov, label: Sirarat Sarntivijai}
   dependencies:
   - {id: uberon}
@@ -662,10 +720,12 @@ ontologies:
   homepage: https://github.com/DIDEO/DIDEO
   id: dideo
   layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/dideo.owl
   products:
   - {id: dideo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/dideo.owl'}
-  title: Drug Interaction and Evidence Ontology
+  title: Drug-drug Interaction and Drug-drug Interaction Evidence Ontology
   tracker: https://github.com/DIDEO/DIDEO/issues
 - contact: {email: maria.herrero@kcl.ac.uk, label: Maria Herrero}
   description: A formal represention for drug-drug interactions knowledge.
@@ -705,6 +765,11 @@ ontologies:
   taxon: {id: 'NCBITaxon:7227', label: Drosophila}
   title: Drosophila Phenotype Ontology
   tracker: http://purl.obolibrary.org/obo/fbcv/tracker
+  usages:
+  - description: FlyBase uses dpo for phenotype data annotation in Drosophila
+    example:
+    - {description: alleles and constructs annotated to pupal lethal in FlyBase, url: 'http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBcv:0002030'}
+    user: http://flybase.org
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/dron.owl'}
   contact: {email: hoganwr@gmail.com, label: William Hogan}
   description: An ontology to support comparative effectiveness researchers studying
@@ -721,7 +786,7 @@ ontologies:
   title: The Drug Ontology
   tracker: https://ontology.atlassian.net/browse/DRON
 - build: {checkout: 'git clone https://github.com/EBISPOT/duo.git', path: ., system: git}
-  contact: {email: mcourtot@ebi.ac.uk, label: Melanie Courtot}
+  contact: {email: mcourtot@gmail.com, label: Melanie Courtot}
   dependencies:
   - {id: iao}
   - {id: bfo}
@@ -761,6 +826,12 @@ ontologies:
       of scientific evidence using the Evidence Ontology (ECO)}
   title: Evidence ontology
   tracker: https://github.com/evidenceontology/evidenceontology/issues
+  usages:
+  - description: ECO is used by the GO consortium for evidence on GO associations
+    examples:
+    - {description: annotations to transmembrane transport, url: 'http://amigo.geneontology.org/amigo/term/GO:0055085'}
+    type: annotation
+    user: http://geneontology.org
 - build: {checkout: 'git clone https://github.com/EcologicalSemantics/ecocore.git',
     path: ., system: git}
   contact: {email: p.buttigieg@gmail.com, label: Pier Luigi Buttigieg}
@@ -829,8 +900,8 @@ ontologies:
   - {id: emapa.obo, ontology_purl: 'http://purl.obolibrary.org/obo/emapa.obo'}
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse gross anatomy and development, timed
-  used_by:
-  - {label: GXD, url: 'https://www.biosharing.org/biodbcore-000659'}
+  usages:
+  - {description: GXD, seeAlso: 'https://www.biosharing.org/biodbcore-000659', user: 'http://www.informatics.jax.org/expression.shtml'}
 - build: {checkout: 'git clone https://github.com/EnvironmentOntology/envo.git', email_cc: cjmungall@lbl.gov,
     infallible: 1, method: vcs, path: ., system: git}
   contact: {email: p.buttigieg@googlemail.com, label: Pier Luigi Buttigieg}
@@ -867,41 +938,17 @@ ontologies:
   title: Environment Ontology
   tracker: https://github.com/EnvironmentOntology/envo/issues/
   usages:
-  - description: describing species habitats
-    examples: {url: 'http://eol.org/pages/211700/data'}
-    resources: {label: EOL, url: 'http://eol.org'}
-    type: data-annotation
-  - datasets: {url: 'https://s3.amazonaws.com/globi/snapshot/target/data/taxa/interactions.csv.gz'}
-    description: describing stomach contents
-    resources: {label: GloBI, url: 'http://globalbioticinteractions.org'}
-    type: data-annotation
-  - description: annotating datasets in data repositories
-    resources: {label: Nature Scientific Data, url: 'http://www.nature.com/sdata/'}
-    search: http://scientificdata.isa-explorer.org/
-    seeAlso: http://blogs.nature.com/scientificdata/2015/12/17/isa-explorer/
-    type: dataset-description
-- build: {method: obo2owl, source_url: 'https://github.com/Planteome/plant-environment-ontology/blob/master/plant-environment-ontology.obo.owl'}
-  contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
-  description: A structured, controlled vocabulary which describes the treatments,
-    growing conditions, and/or study types used in plant biology experiments.
-  domain: environment
-  homepage: http://planteome.org/
-  id: eo
-  is_obolete: true
-  layout: ontology_detail
-  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'https://creativecommons.org/licenses/by/4.0/'}
-  ontology_purl: http://purl.obolibrary.org/obo/eo.owl
-  page: http://browser.planteome.org/amigo/term/EO:0007359
-  products:
-  - {id: eo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/eo.owl'}
-  - {id: eo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/eo.obo'}
-  publications:
-  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/22847540', title: Ontologies as integrative
-      tools for plant science.}
-  replaced_by: peco
-  title: Plant Environment Ontology
-  tracker: https://github.com/Planteome/plant-environment-ontology/issues
+  - description: Samples collected during Tara Oceans expedition are annotated with
+      ENVO
+    example:
+    - {description: 'Sample collected during the Tara Oceans expedition (2009-2013)
+        at station TARA_004 (latitudeN=36.5533, longitudeE=-6.5669)', url: 'https://www.ebi.ac.uk/metagenomics/projects/ERP001736/samples/ERS487899'}
+    user: http://oceans.taraexpeditions.org/en/
+  - description: Annotation of habitats of microbes
+    example:
+    - {description: Annotation of habitat of Pseudovibrio sp. FO-BEG1 to marine environment,
+      url: 'https://www.ncbi.nlm.nih.gov/nuccore/NC_016642'}
+    user: https://www.ncbi.nlm.nih.gov/
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/epo.owl'}
   description: An ontology designed to support the semantic annotation of epidemiology
     resources
@@ -1014,6 +1061,17 @@ ontologies:
   taxon: {id: 'NCBITaxon:7227', label: Drosophila}
   title: Drosophila gross anatomy
   tracker: http://purl.obolibrary.org/obo/fbbt/tracker
+  usages:
+  - description: VFB uses FBbt to annotate brain images
+    example:
+    - {description: genes expressed in ring neuron R2 in VFB, url: 'http://www.virtualflybrain.org/do/gene_list.html?action=geneex&id=FBbt:00003651'}
+    user: http://www.virtualflybrain.org/
+  - description: Flybase uses FBbt for expression and phenotype data annotation in
+      Drosophila
+    example:
+    - {description: 'alleles, constructs and insertions annotated to neuron in FlyBase',
+      url: 'http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBbt:00005106'}
+    user: http://flybase.org
 - browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000013'}
   build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/fbcv.owl'}
@@ -1032,6 +1090,12 @@ ontologies:
   - {id: fbcv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fbcv.owl'}
   title: FlyBase Controlled Vocabulary
   tracker: http://purl.obolibrary.org/obo/fbbt/tracker
+  usages:
+  - description: FlyBase uses FBcv for phenotype data annotation in Drosophila
+    example:
+    - {description: alleles and constructs annotated to bang sensitive in FlyBase,
+      url: 'http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBcv:0000391'}
+    user: http://flybase.org
 - browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008'}
   build: {infallible: 0, method: obo2owl, source_url: 'https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv/releases/fbdv.owl'}
@@ -1144,6 +1208,12 @@ ontologies:
   taxon: {id: 'NCBITaxon:4896', label: S. pombe}
   title: Fission Yeast Phenotype Ontology
   tracker: https://github.com/pombase/fypo/issues
+  usages:
+  - description: Pombase uses fypo for phenotype data annotation in fission yeast
+    example:
+    - {description: genotypes annotated to abnormal mitotic cell cycle in fission
+        yeast, url: 'https://www.pombase.org/term/FYPO:0000059'}
+    user: https://www.pombase.org
 - build: {method: archive, path: archive, source_url: 'http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
   contact: {email: ma11@gen.cam.ac.uk, label: Michael Ashburner}
   description: A gazetteer constructed on ontological principles
@@ -1193,11 +1263,13 @@ ontologies:
   - {id: geno.owl, ontology_purl: 'http://purl.obolibrary.org/obo/geno.owl', title: GENO}
   title: Genotype Ontology
   tracker: https://github.com/monarch-initiative/GENO-ontology/issues
-- contact: {email: MBrochhausen@uams.edu, label: Mathias Brochhausen}
+- contact: {email: hoganwr@gmail.com, label: Bill Hogan}
   description: An ontology of geographical entities
-  homepage: https://code.google.com/p/ge-ontology/
+  homepage: https://github.com/ufbmi/geographical-entity-ontology/wiki
   id: geo
   layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/geo.owl
   products:
   - {id: geo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/geo.owl'}
@@ -1220,10 +1292,10 @@ ontologies:
   title: Hymenoptera Anatomy Ontology
 - build: {checkout: 'git clone https://github.com/BgeeDB/homology-ontology.git', method: vcs,
     path: src/ontology, system: git}
-  contact: {email: bgee@isb-sib.ch, label: BgeeDB}
+  contact: {email: bgee@sib.swiss, label: BgeeDB}
   description: This ontology represents concepts related to homology, as well as other
     concepts used to describe similarity and non-homology.
-  homepage: http://bioinfo.unil.ch
+  homepage: https://github.com/BgeeDB/homology-ontology
   id: hom
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
@@ -1316,17 +1388,21 @@ ontologies:
   tracker: https://github.com/ICO-ontology/ICO/issues
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/ido.owl'}
   contact: {email: Lindsay.Cowell@utsouthwestern.edu, label: Lindsay Cowell}
+  description: A set of interoperable ontologies that will together provide coverage
+    of the infectious disease domain. IDO core is the upper-level ontology that hosts
+    terms of general relevance across the domain, while extension ontologies host
+    terms to specific to a particular part of the domain.
   domain: health
   homepage: http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology
   id: ido
   layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY 3.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/ido.owl
   products:
   - {id: ido.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ido.owl'}
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
-  title: Infectious disease
+  title: Infectious Disease Ontology
   tracker: https://github.com/infectious-disease-ontology/infectious-disease-ontology/issues
 - build: {method: obo2owl, source_url: 'http://anobase.vectorbase.org/idomal/IDOMAL.obo'}
   contact: {email: topalis@imbb.forth.gr, label: Pantelis Topalis}
@@ -1345,7 +1421,7 @@ ontologies:
   description: A classification of algorithms available for the simulation of models
     in biology.
   domain: algorithms
-  homepage: http://biomodels.net/kisao
+  homepage: http://co.mbine.org/standards/kisao
   id: kisao
   layout: ontology_detail
   license: {label: Artistic License 2.0, url: 'http://opensource.org/licenses/Artistic-2.0'}
@@ -1368,8 +1444,8 @@ ontologies:
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse adult gross anatomy
   tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
-  used_by:
-  - {label: GXD, url: 'https://www.biosharing.org/biodbcore-000659'}
+  usages:
+  - {description: GXD, seeAlso: 'https://www.biosharing.org/biodbcore-000659', user: 'http://www.informatics.jax.org/expression.shtml'}
 - build: {method: owl2obo, source_url: 'https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl'}
   contact: {email: biomodels-net-support@lists.sf.net, label: The Biomodels.net team}
   description: The Mathematical Modelling Ontology (MAMO) is a classification of the
@@ -1406,7 +1482,7 @@ ontologies:
     muscles of the head and neck that participate in feeding, swallowing, and other
     oral-pharyngeal behaviors.
   domain: anatomy
-  homepage: http://feedexp.org
+  homepage: https://github.com/rdruzinsky/feedontology
   id: mfmo
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
@@ -1587,6 +1663,8 @@ ontologies:
   homepage: https://github.com/rsc-ontologies/rxno
   id: mop
   layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   mailing_list: chemistry-ontologies@googlegroups.com
   ontology_purl: http://purl.obolibrary.org/obo/mop.owl
   products:
@@ -1644,7 +1722,7 @@ ontologies:
   - {id: mpio.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mpio.owl'}
   title: Minimum PDDI Information Ontology
   tracker: https://github.com/MPIO-Developers/MPIO/issues
-- contact: {email: bpeters@liai.org, label: Bjoern Peters}
+- contact: {email: bpeters@lji.org, label: Bjoern Peters}
   description: An ontology for Major Histocompatibility Complex (MHC) restriction
     in experiments
   homepage: https://github.com/IEDB/MRO
@@ -1758,11 +1836,11 @@ ontologies:
   contact: {email: huang@southalabama.edu, label: Jingshan Huang}
   description: An ontology for non-coding RNA, both of biological origin, and engineered.
   domain: experiments
-  homepage: http://omnisearch.soc.southalabama.edu/OntologyFile.aspx
+  homepage: http://omnisearch.soc.southalabama.edu/w/index.php/Ontology
   id: ncro
   layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/4.0/'}
+  license: {label: CC-BY 4, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   mailing_list: ncro-devel@googlegroups.com, ncro-discuss@googlegroups.com
   ontology_purl: http://purl.obolibrary.org/obo/ncro.owl
   products:
@@ -1985,10 +2063,12 @@ ontologies:
     to health care, such as demographic information and the roles of various individuals
     and organizations.
   domain: medicine
+  homepage: https://github.com/ufbmi/OMRSE/wiki/OMRSE-Overview
   id: omrse
   layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/omrse.owl
-  page: http://code.google.com/p/omrse/
   products:
   - {id: omrse.owl, ontology_purl: 'http://purl.obolibrary.org/obo/omrse.owl'}
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
@@ -2012,7 +2092,7 @@ ontologies:
   - {id: ontoneo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ontoneo.owl'}
   title: Obstetric and Neonatal Ontology
   tracker: https://github.com/ontoneo-project/Ontoneo/issues
-- contact: {email: mbrochhausen@uams.edu, label: Mathias Brochhausen}
+- contact: {email: mbrochhausen@gmail.com, label: Mathias Brochhausen}
   description: An ontology built for representating the organizational components
     of trauma centers and trauma systems.
   domain: health
@@ -2214,10 +2294,14 @@ ontologies:
 - build: {checkout: 'git clone https://github.com/BGSU-RNA/rnao.git', method: vcs,
     system: git}
   contact: {email: BatchelorC@rsc.org, label: Colin Batchelor}
+  description: Controlled vocabulary pertaining to RNA function and based on RNA sequences,
+    secondary and three-dimensional structures.
   domain: molecular structure
   homepage: https://github.com/bgsu-rna/rnao
   id: rnao
   layout: ontology_detail
+  license: {label: CC-BY 1.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/rnao.owl
   products:
   - {id: rnao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/rnao.owl'}
@@ -2257,6 +2341,13 @@ ontologies:
       subset}
   title: Relations Ontology
   tracker: https://github.com/oborel/obo-relations/issues
+  usages:
+  - {description: RO is used for annotation extensions in the GO, reference: 'http://dx.doi.org/10.1186/1471-2105-15-155',
+    type: annotation, user: 'http://geneontology.org'}
+  - description: RO is used for GO Causal Activity Models
+    examples: ['http://model.geneontology.org/56d1143000003402']
+    type: annotation
+    user: http://geneontology.org
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=RS:0000457'}
   build: {method: obo2owl, source_url: 'ftp://ftp.rgd.mcw.edu/pub/ontology/rat_strain/rat_strain.obo'}
@@ -2283,6 +2374,8 @@ ontologies:
   homepage: https://github.com/rsc-ontologies/rxno
   id: rxno
   layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   mailing_list: chemistry-ontologies@googlegroups.com
   ontology_purl: http://purl.obolibrary.org/obo/rxno.owl
   products:
@@ -2379,6 +2472,8 @@ ontologies:
   homepage: http://research.amnh.org/atol/files/
   id: spd
   layout: ontology_detail
+  license: {label: CC-BY 3.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/spd.owl
   products:
   - {id: spd.owl, ontology_purl: 'http://purl.obolibrary.org/obo/spd.owl'}
@@ -2440,11 +2535,13 @@ ontologies:
   homepage: http://anobase.vectorbase.org
   id: tads
   layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/tads.owl
   products:
   - {id: tads.owl, ontology_purl: 'http://purl.obolibrary.org/obo/tads.owl'}
   taxon: {id: 'NCBITaxon:6939', label: Ixodidae}
-  title: Tick gross anatomy
+  title: Tick Anatomy Ontology
 - build: {checkout: 'git clone https://github.com/phenoscape/taxrank.git', path: .,
     system: git}
   contact: {email: peteremidford@yahoo.com, label: Peter Midford}
@@ -2482,7 +2579,7 @@ ontologies:
   contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
   description: A controlled vocabulary of describe phenotypic traits in plants.
   domain: phenotype
-  homepage: http://planteome.org
+  homepage: http://browser.planteome.org/amigo
   id: to
   jobs:
   - {id: 'https://travis-ci.org/Planteome/plant-trait-ontology', type: travis-ci}
@@ -2500,6 +2597,16 @@ ontologies:
   taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
   title: Plant Trait Ontology
   tracker: https://github.com/Planteome/plant-trait-ontology/issues
+  usages:
+  - description: Planteome uses TO to describe traits for genes and germplasm
+    examples:
+    - {description: 'Genes and proteins annotated to submergence tolerance, including
+        SUB1', url: 'http://browser.planteome.org/amigo/term/TO:0000286'}
+    user: http://planteome.org/
+  - description: Gramene uses PO for the annotation of plant genes and QTLs
+    examples:
+    - {description: Gramene annotations to submergence tolerance, url: 'http://archive.gramene.org/db/ontology/search?id=TO:0000286'}
+    user: http://gramene.org/
 - build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/trans.obo'}
   contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
   description: An ontology representing the disease transmission process during which
@@ -2615,14 +2722,43 @@ ontologies:
   tracker: https://github.com/obophenotype/uberon/issues
   twitter: uberanat
   type: owl:Ontology
-  used_by:
-  - {label: bgee, seeAlso: 'https://www.biosharing.org/biodbcore-000228', type: Database,
-    url: 'http://bgee.org/'}
-  - {label: ENCODE, seeAlso: 'https://www.biosharing.org/biodbcore-000034', url: 'https://www.encodeproject.org/'}
-  - {label: FANTOM5, url: 'http://fantom5-collaboration.gsc.riken.jp/'}
-  - {label: Monarch, type: Database, url: 'https://monarchinitiative.org/'}
-  - {label: GO Database, type: Database, url: 'https://geneontology.org/'}
-  - {label: Phenoscape, url: 'http://phenoscape.org'}
+  usages:
+  - description: Bgee is a database to retrieve and compare gene expression patterns
+      between animal species. Bgee in using Uberon to annotate the site of expression,
+      and Bgee curators one the major contributors to the ontology.
+    examples:
+    - {description: Uberon terms used to annotate expression of human hemoglobin subunit
+        beta, url: 'http://bgee.org/?page=gene&gene_id=ENSG00000244734'}
+    seeAlso: https://www.biosharing.org/biodbcore-000228
+    type: annotation
+    user: http://bgee.org/
+  - {description: 'The National Human Genome Research Institute (NHGRI) launched a
+      public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in
+      September 2003, to carry out a project to identify all functional elements in
+      the human genome sequence. The ENCODE DCC users Uberon to annotate samples',
+    reference: 'http://dx.doi.org/10.1093/database/bav010', seeAlso: 'https://www.biosharing.org/biodbcore-000034',
+    type: annotation, user: 'https://www.encodeproject.org/'}
+  - description: FANTOM5 is using Uberon and CL to annotate samples allowing for transcriptome
+      analyses with cell-type and tissue-level specificity.
+    examples:
+    - {description: FANTOM5 samples annotated to telencephalon or its parts, url: 'http://fantom.gsc.riken.jp/5/sstar/UBERON:0001893'}
+    type: annotation
+    user: http://fantom5-collaboration.gsc.riken.jp/
+  - {description: Querying expression and phenotype data, type: query, user: 'https://monarchinitiative.org/'}
+  - description: Querying for functional annotations relevant to a tissue
+    examples:
+    - {description: GO annotations relevant to the uberon class for brain, url: 'http://amigo.geneontology.org/amigo/term/UBERON:0000955'}
+    label: GO Database
+    type: query
+    user: https://geneontology.org/
+  - {description: 'The Phenoscape project is both a major driver of and contributor
+      to Uberon, contibuting thousands of terms. The teleost (bony fishes) component
+      of Uberon was derived from the Teleost Anatomy Ontology, developed by the Phenoscape
+      group. Most of the high level design of the skeletal system comes from the Vertebrate
+      Skeletal Anatomy Ontology (VSAO), also created by the Phenoscape group. Phenoscape
+      curators continue to extend the ontology, covering a wide variety of tetrapod
+      structures, with an emphasis on the appendicular system.', label: Phenoscape,
+    user: 'http://phenoscape.org'}
   - {label: Neuroscience Information Framework, type: Database, url: 'https://neuinfo.org/'}
   - {label: SciCrunch, type: Database, url: 'https://scicrunch.org/'}
   - {label: SCPortalen, reference: 'https://doi.org/10.1093/nar/gkx949', type: Database,
@@ -2700,8 +2836,8 @@ ontologies:
   - {match: '', url: 'http://vertebrate-taxonomy-ontology.s3-website-us-west-2.amazonaws.com/releases/'}
   title: Vertebrate Taxonomy Ontology
   tracker: https://github.com/phenoscape/vertebrate-taxonomy-ontology/issues
-  used_by:
-  - {label: Phenoscape, url: 'http://phenoscape.org'}
+  usages:
+  - {description: Phenoscape uses VTO to annotate systematics data, user: 'http://phenoscape.org'}
 - build: {infallible: 1, method: obo2owl, source_url: 'http://github.com/raymond91125/Wao/raw/master/WBbt.obo'}
   contact: {email: raymond@caltech.edu, label: Raymond Lee}
   description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis
@@ -2710,11 +2846,13 @@ ontologies:
   homepage: http://www.wormbase.org/
   id: wbbt
   layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/wbbt.owl
   products:
   - {id: wbbt.owl, ontology_purl: 'http://purl.obolibrary.org/obo/wbbt.owl'}
   taxon: {id: 'NCBITaxon:6237', label: Caenorhabditis}
-  title: C. elegans gross anatomy
+  title: C. elegans Gross Anatomy Ontology
   tracker: https://github.com/obophenotype/Wao/issues
 - build: {method: obo2owl, notes: 'switch to vcs in dev repo?', source_url: 'https://raw.github.com/draciti/Life-stage-obo/master/worm_development.obo'}
   contact: {email: wchen@its.caltech.edu, label: Wen J. Chen}
@@ -2908,7 +3046,7 @@ ontologies:
   id: emap
   is_obsolete: true
   layout: ontology_detail
-  page: http://www.obofoundry.org/wiki/index.php/EMAPA:Main_Page
+  page: https://www.emouseatlas.org/emap/about/what_is_emap.html
   products:
   - {id: emap.owl, ontology_purl: 'http://purl.obolibrary.org/obo/emap.owl'}
   replaced_by: emapa
@@ -2916,6 +3054,36 @@ ontologies:
   title: Mouse gross anatomy and development, timed
   used_by:
   - {label: GXD, url: 'https://www.biosharing.org/biodbcore-000659'}
+- build: {method: obo2owl, source_url: 'https://github.com/Planteome/plant-environment-ontology/blob/master/plant-environment-ontology.obo.owl'}
+  contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
+  description: A structured, controlled vocabulary which describes the treatments,
+    growing conditions, and/or study types used in plant biology experiments.
+  domain: environment
+  homepage: http://planteome.org/
+  id: eo
+  is_obsolete: true
+  layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
+  page: http://browser.planteome.org/amigo/term/EO:0007359
+  products:
+  - {id: eo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/eo.owl'}
+  - {id: eo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/eo.obo'}
+  publications:
+  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/22847540', title: Ontologies as integrative
+      tools for plant science.}
+  replaced_by: peco
+  title: Plant Environment Ontology
+  tracker: https://github.com/Planteome/plant-environment-ontology/issues
+  usages:
+  - description: Planteome uses EO to describe traits for genes and germplasm
+    examples:
+    - {description: Genes and proteins annotated to cold temperature regiment, url: 'http://browser.planteome.org/amigo/term/EO:0007174'}
+    user: http://planteome.org/
+  - description: Gramene uses EO for the annotation of plant genes and QTLs
+    examples:
+    - {description: Gramene annotations to cold temperature regiment, url: 'http://archive.gramene.org/db/ontology/search?id=EO:0007174'}
+    user: http://gramene.org/
 - contact: {email: eVOC mailing list, label: evoc@sanbi.ac.za}
   homepage: http://www.evocontology.org/
   id: ev
