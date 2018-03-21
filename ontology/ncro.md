@@ -4,15 +4,15 @@ id: ncro
 title: Non-Coding RNA Ontology
 description: An ontology for non-coding RNA, both of biological origin, and engineered.
 domain: experiments
-homepage: http://omnisearch.soc.southalabama.edu/OntologyFile.aspx
+homepage: http://omnisearch.soc.southalabama.edu/w/index.php/Ontology
 mailing_list: ncro-devel@googlegroups.com, ncro-discuss@googlegroups.com
 tracker: https://github.com/OmniSearch/NCRO-Ontology-Files/issues
 contact: 
   label: Jingshan Huang
   email: huang@southalabama.edu
 license:
-  url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4
 # depicted_by: 
 #build:
 #  source_url: http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/
