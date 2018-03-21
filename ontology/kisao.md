@@ -6,7 +6,7 @@ contact:
   label: The Biomodels.net team
 description: A classification of algorithms available for the simulation of models in biology.
 domain: algorithms
-homepage: http://biomodels.net/kisao
+homepage: http://co.mbine.org/standards/kisao
 products:
   - id: kisao.owl
 title: Kinetic Simulation Algorithm Ontology
