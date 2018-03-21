@@ -6,7 +6,7 @@ contact:
   label: Pankaj Jaiswal
 description: A controlled vocabulary of describe phenotypic traits in plants.
 domain: phenotype
-homepage: http://planteome.org
+homepage:  http://browser.planteome.org/amigo
 page: http://browser.planteome.org/amigo/term/TO:0000387#display-lineage-tab
 products:
   - id: to.owl
