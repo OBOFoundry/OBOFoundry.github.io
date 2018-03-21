@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: pato
 in_foundry_order: 1
-title: Phenotypic quality
+title: Phenotype And Trait Ontology
 build:
   source_url: https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo
   method: obo2owl
