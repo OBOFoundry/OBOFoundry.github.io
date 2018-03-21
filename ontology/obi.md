@@ -10,10 +10,10 @@ mailing_list: http://groups.google.com/group/obi-users
 tracker: http://purl.obolibrary.org/obo/obi/tracker
 contact:
   label: Bjoern Peters
-  email: bpeters@liai.org
+  email: bpeters@lji.org 
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY 3.0
 depicted_by: https://svn.code.sf.net/p/obi/code/trunk/web/htdocs/images/obi-lotext.png
 build:
   source_url: http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/
