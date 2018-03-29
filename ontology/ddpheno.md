@@ -2,8 +2,8 @@
 layout: ontology_detail
 id: ddpheno
 contact:
-  email: r-chisholm@northwestern.edu
-  label: Rex Chisholm
+  email: pfey@northwestern.edu
+  label: Petra Fey
 description: A structured controlled vocabulary of phenotypes of the slime-mould <i>Dictyostelium discoideum</i>.
 domain: anatomy
 homepage: http://dictybase.org/
