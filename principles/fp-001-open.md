@@ -47,7 +47,7 @@ In general, copyright legislation says that facts that are not copyrightable are
 #### `.owl` files
 
 1. OBO Foundry Ontologies MUST specify the reuse constraints using the following annotations in any publically released OWL version of the ontology:
-  1. dc:license - specifies the license - see Example 1 (below)
+  1. dcterms:license - specifies the license - see Example 1 (below)
   2. rdfs:comment - specifies terms of reuse - see Example 1 (below)
 
 2. OBO Foundry Ontologies that host terms developed by an external group (but which are not part of an existing ontology) must credit the external group - see Examples (below)
@@ -88,7 +88,7 @@ NOTE: All examples are for illustration purposes and should not be considered va
 ### Example 1: RDF-XML code for the license annotations:
 
 ```
-<dc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+<dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
 
 <rdfs:comment xml:lang="en">"Ontology name" by "developer groups" is licensed
 under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).</rdfs:comment>
@@ -111,7 +111,7 @@ The above comment for reuse conditions is for example only. Ontologies may use d
 ### Example 2: Example of OBO code for the license annotation:
 
 ```
-property_value: http://purl.org/dc/elements/1.1/license http://creativecommons.org/licenses/by/4.0/
+property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
 
 remark: *Ontology name* by *developer group(s)* is licensed under CC BY 4.0. You
     are free to share (copy and redistribute the material in any medium
