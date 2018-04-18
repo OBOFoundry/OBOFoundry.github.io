@@ -41,4 +41,14 @@ A structured, controlled vocabulary for the representation of plant environmenta
 
 <img alt="Planteome logo" src="http://planteome.org/sites/default/files/garland_logo.PNG"/>
 
-Note this ontology is being replaced by [PECO](peco.html)
+Note this ontology is  replaced by [PECO](peco.html).
+
+## Migration Guide from EO to PECO
+
+If you are using classes like EO:nnnnnn then you should be able to substitute this for PECO:nnnnnn, as all of the numeric parts of the ID are preserved.
+
+For a more robust mechanism, peco.obo contains alt_ids, and peco.owl contains the equivalent replaced_by assertions, which point from an obsoleted EO class to the corresponding PECO class.
+
+If you have any issues you can report them here:
+
+https://github.com/Planteome/plant-experimental-conditions-ontology/issues/95
