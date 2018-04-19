@@ -138,15 +138,14 @@ def extract_context(ontologies, args):
     prefix_map = {}
     for obj in ontologies:
         id = obj['id']
-        if not('is_obsolete' in obj):
-            if has_obo_prefix(obj):
-                prefix = id.upper()
-                if 'preferredPrefix' in obj:
-                    prefix = obj['preferredPrefix']
-                #if prefix in prefix_map:
-                #    print("ERROR: prefix present twice:"+prefix)
-                #    exit(1)
-                prefix_map[prefix] = "http://purl.obolibrary.org/obo/" + prefix + "_"
+        if has_obo_prefix(obj):
+            prefix = id.upper()
+            if 'preferredPrefix' in obj:
+                prefix = obj['preferredPrefix']
+            #if prefix in prefix_map:
+            #    print("ERROR: prefix present twice:"+prefix)
+            #    exit(1)
+            prefix_map[prefix] = "http://purl.obolibrary.org/obo/" + prefix + "_"
     ctxt = {}
     ctxt['@context'] = prefix_map
     print(dumps(ctxt, sort_keys=True, indent=4, separators=(',', ': ')))
