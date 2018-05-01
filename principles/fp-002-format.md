@@ -16,7 +16,7 @@ A common format allows the maximum number of people to access and reuse an ontol
 
 ### Recommendations
 
-We make a distinction between how an ontology is developed and how it is presented for release. Developers are free to use whatever combination of technologies and formats is appropriate for development. However, the official owl PURL for the ontology must resolve to a syntactically valid OWL file in an [RDF](https://www.w3.org/TR/rdf11-concepts/) syntax: either RDF-XML or RDF-Turtle format
+We make a distinction between how an ontology is developed and how it is presented for release. Developers are free to use whatever combination of technologies and formats is appropriate for development. However, the official owl PURL for the ontology must resolve to a syntactically valid OWL file in an [RDF](https://www.w3.org/TR/rdf11-concepts/) in RDF-XML syntax.
 
 Note: some groups publish an .obo version, and the OBO Foundry pipeline takes care of making the valid .owl file. See the FAQ for details. You may also submit the ontology for review as OBO, see 'criteria for review' below.
 
