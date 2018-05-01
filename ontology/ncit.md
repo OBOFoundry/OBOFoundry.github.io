@@ -22,6 +22,9 @@ products:
   - id: ncit/neoplasm-core.owl
     title: NCIt Plus Neoplasm Core
     description: "This is a subset extracted from NCIt Plus, based on the [NCIt Neoplasm Core value set](https://evs.nci.nih.gov/ftp1/NCI_Thesaurus/Neoplasm/About_Core.html) as a starting point."
+license:
+  url: ftp://ftp1.nci.nih.gov/pub/cacore/EVS/NCI_Thesaurus/ThesaurusTermsofUse.pdf
+  label: See document
 ---
 
 The NCI Thesaurus is an ontology-like vocabulary that includes broad
