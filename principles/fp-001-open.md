@@ -18,7 +18,7 @@ OBO Foundry ontologies are resources for the entire biological and biomedical co
 
 1. OBO Foundry Ontologies must
 
-    EITHER be copyrighted under a Creative Commons [CC-BY license version 4.0](https://creativecommons.org/licenses/by/4.0/) or later, which lets others distribute, remix, tweak, and build upon the work, even commercially, as long as they credit the creators for the original creation
+    EITHER be copyrighted under a Creative Commons [CC-BY license version 3.0](https://creativecommons.org/licenses/by/3.0/) or later, which lets others distribute, remix, tweak, and build upon the work, even commercially, as long as they credit the creators for the original creation
 
     OR released into the public domain under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) (which is not a license). Note that CC0 specifies that the creators of an ontology waive, to the extent that they legally can be, all rights and place the ontology in the public domain. It does not prevent them from requesting that the ontology be properly credited and cited, but prevents any legal recourse if it is not credited.
 
