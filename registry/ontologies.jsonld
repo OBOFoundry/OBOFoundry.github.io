@@ -1448,8 +1448,8 @@
                 "source_url": "https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_phenotypes.obo"
             },
             "contact": {
-                "email": "r-chisholm@northwestern.edu",
-                "label": "Rex Chisholm"
+                "email": "pfey@northwestern.edu",
+                "label": "Petra Fey"
             },
             "description": "A structured controlled vocabulary of phenotypes of the slime-mould <i>Dictyostelium discoideum</i>.",
             "domain": "anatomy",
@@ -2063,7 +2063,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/eupath.owl"
                 }
             ],
-            "title": "EuPath ontology",
+            "title": "EuPathDB ontology",
             "tracker": "https://github.com/EuPath-ontology/EuPath-ontology/issues"
         },
         {
@@ -2194,6 +2194,10 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/fbbt.owl"
                 },
                 {
+                    "id": "fbbt.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbt.obo"
+                },
+                {
                     "id": "fbbt/fbbt-simple.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl"
                 },
@@ -2281,6 +2285,10 @@
                 {
                     "id": "fbcv.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/fbcv.owl"
+                },
+                {
+                    "id": "fbcv.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbcv.obo"
                 }
             ],
             "title": "FlyBase Controlled Vocabulary",
@@ -3252,11 +3260,18 @@
             "issue": "https://github.com/carrineblank/MicrO/issues",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC-BY 2.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/2.0/"
+                "url": "https://creativecommons.org/licenses/by/2.0/"
             },
-            "title": "prokaryotic phenotypic and metabolic characters"
+            "ontology_purl": "http://purl.obolibrary.org/obo/micro.owl",
+            "products": [
+                {
+                    "id": "micro.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/micro.owl"
+                }
+            ],
+            "title": "Ontology of Prokaryotic Phenotypic and Metabolic Characters"
         },
         {
             "contact": {
@@ -3449,20 +3464,6 @@
                     "id": "mondo.json",
                     "ontology_purl": "http://purl.obolibrary.org/obo/mondo.json",
                     "title": "json edition"
-                },
-                {
-                    "description": "Now identical to main release",
-                    "format": "owl-rdf/xml",
-                    "id": "pre/mondo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/pre/mondo.owl",
-                    "title": "(DEPRECATED) Preview of new OWL edition"
-                },
-                {
-                    "description": "Now identical to main release",
-                    "format": "obo",
-                    "id": "pre/mondo.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/pre/mondo.obo",
-                    "title": "(DEPRECATED) Preview of new OBO edition"
                 }
             ],
             "taxon": {
@@ -5436,7 +5437,7 @@
             },
             "description": "An ontology covering the taxonomy of teleosts (bony fish)",
             "domain": "taxonomy",
-            "homepage": "https://www.nescent.org/phenoscape/Main_Page",
+            "homepage": "http://phenoscape.org/wiki/Teleost_Taxonomy_Ontology",
             "id": "tto",
             "layout": "ontology_detail",
             "license": {
@@ -5460,7 +5461,7 @@
                 "label": "Teleostei"
             },
             "title": "Teleost taxonomy",
-            "tracker": "http://sourceforge.net/tracker/?group_id=76834&atid=1046550"
+            "tracker": "https://github.com/phenoscape/teleost-taxonomy-ontology/issues"
         },
         {
             "biosharing": "https://www.biosharing.org/bsg-000016",
@@ -5906,6 +5907,10 @@
                 {
                     "id": "wbbt.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/wbbt.owl"
+                },
+                {
+                    "id": "wbbt.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/wbbt.obo"
                 }
             ],
             "taxon": {
@@ -5935,6 +5940,10 @@
                 {
                     "id": "wbls.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/wbls.owl"
+                },
+                {
+                    "id": "wbls.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/wbls.obo"
                 }
             ],
             "taxon": {
@@ -6129,6 +6138,10 @@
                 {
                     "id": "zfs.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/zfs.owl"
+                },
+                {
+                    "id": "zfs.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/zfs.obo"
                 }
             ],
             "taxon": {

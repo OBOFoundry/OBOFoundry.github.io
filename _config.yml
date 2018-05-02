@@ -712,7 +712,7 @@ ontologies:
   tracker: https://github.com/dictyBase/migration-data/issues
   twitter: dictybase
 - build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_phenotypes.obo'}
-  contact: {email: r-chisholm@northwestern.edu, label: Rex Chisholm}
+  contact: {email: pfey@northwestern.edu, label: Petra Fey}
   description: A structured controlled vocabulary of phenotypes of the slime-mould
     <i>Dictyostelium discoideum</i>.
   domain: anatomy
@@ -998,7 +998,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/eupath.owl
   products:
   - {id: eupath.owl, ontology_purl: 'http://purl.obolibrary.org/obo/eupath.owl'}
-  title: EuPath ontology
+  title: EuPathDB ontology
   tracker: https://github.com/EuPath-ontology/EuPath-ontology/issues
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/CTDbase/exposure-ontology/master/src/ontology/exo.obo'}
   description: Vocabularies for describing exposure data to inform understanding of
@@ -1059,6 +1059,7 @@ ontologies:
   preferredPrefix: FBbt
   products:
   - {id: fbbt.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fbbt.owl'}
+  - {id: fbbt.obo, ontology_purl: 'http://purl.obolibrary.org/obo/fbbt.obo'}
   - {id: fbbt/fbbt-simple.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl'}
   - {id: fbbt/fbbt-simple.obo, ontology_purl: 'http://purl.obolibrary.org/obo/fbbt/fbbt-simple.obo'}
   publications:
@@ -1100,6 +1101,7 @@ ontologies:
   preferredPrefix: FBcv
   products:
   - {id: fbcv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fbcv.owl'}
+  - {id: fbcv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/fbcv.obo'}
   title: FlyBase Controlled Vocabulary
   tracker: http://purl.obolibrary.org/obo/fbbt/tracker
   usages:
@@ -1566,9 +1568,12 @@ ontologies:
   id: micro
   issue: https://github.com/carrineblank/MicrO/issues
   layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/2.0/'}
-  title: prokaryotic phenotypic and metabolic characters
+  license: {label: CC-BY 2.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/2.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/micro.owl
+  products:
+  - {id: micro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/micro.owl'}
+  title: Ontology of Prokaryotic Phenotypic and Metabolic Characters
 - contact: {email: vdritsou@imbb.forth.gr, label: Vicky Dritsou}
   description: An application ontology for use with miRNA databases.
   homepage: http://code.google.com/p/mirna-ontology/
@@ -1661,11 +1666,6 @@ ontologies:
   - {derived_from: mondo.owl, description: Equivalent to the OWL edition, format: obo,
     id: mondo.json, ontology_purl: 'http://purl.obolibrary.org/obo/mondo.json', title: json
       edition}
-  - {description: Now identical to main release, format: owl-rdf/xml, id: pre/mondo.owl,
-    ontology_purl: 'http://purl.obolibrary.org/obo/pre/mondo.owl', title: (DEPRECATED)
-      Preview of new OWL edition}
-  - {description: Now identical to main release, format: obo, id: pre/mondo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/pre/mondo.obo',
-    title: (DEPRECATED) Preview of new OBO edition}
   taxon: {id: 'NCBITaxon:33208', label: Metazoa}
   title: Monarch Disease Ontology
   tracker: https://github.com/monarch-initiative/mondo-build/issues
@@ -2639,7 +2639,7 @@ ontologies:
 - contact: {email: peteremidford@yahoo.com, label: Peter Midford}
   description: An ontology covering the taxonomy of teleosts (bony fish)
   domain: taxonomy
-  homepage: https://www.nescent.org/phenoscape/Main_Page
+  homepage: http://phenoscape.org/wiki/Teleost_Taxonomy_Ontology
   id: tto
   layout: ontology_detail
   license: {label: CC-0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
@@ -2650,7 +2650,7 @@ ontologies:
   - {id: tto.owl, ontology_purl: 'http://purl.obolibrary.org/obo/tto.owl'}
   taxon: {id: 'NCBITaxon:32443', label: Teleostei}
   title: Teleost taxonomy
-  tracker: http://sourceforge.net/tracker/?group_id=76834&atid=1046550
+  tracker: https://github.com/phenoscape/teleost-taxonomy-ontology/issues
 - biosharing: https://www.biosharing.org/bsg-000016
   browsers:
   - {label: RGD, title: Gene Ontology AmiGO 2 Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=UBERON:0001062'}
@@ -2863,6 +2863,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/wbbt.owl
   products:
   - {id: wbbt.owl, ontology_purl: 'http://purl.obolibrary.org/obo/wbbt.owl'}
+  - {id: wbbt.obo, ontology_purl: 'http://purl.obolibrary.org/obo/wbbt.obo'}
   taxon: {id: 'NCBITaxon:6237', label: Caenorhabditis}
   title: C. elegans Gross Anatomy Ontology
   tracker: https://github.com/obophenotype/Wao/issues
@@ -2877,6 +2878,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/wbls.owl
   products:
   - {id: wbls.owl, ontology_purl: 'http://purl.obolibrary.org/obo/wbls.owl'}
+  - {id: wbls.obo, ontology_purl: 'http://purl.obolibrary.org/obo/wbls.obo'}
   taxon: {id: 'NCBITaxon:6237', label: Caenorhabditis}
   title: C. elegans development
 - build: {infallible: 0, method: obo2owl, source_url: 'http://tazendra.caltech.edu/~azurebrd/cgi-bin/forms/phenotype_ontology_obo.cgi'}
@@ -2968,6 +2970,7 @@ ontologies:
   page: https://github.com/obophenotype/developmental-stage-ontologies/wiki/ZFS
   products:
   - {id: zfs.owl, ontology_purl: 'http://purl.obolibrary.org/obo/zfs.owl'}
+  - {id: zfs.obo, ontology_purl: 'http://purl.obolibrary.org/obo/zfs.obo'}
   taxon: {id: 'NCBITaxon:7954', label: Danio}
   title: Zebrafish developmental stages
 - contact: {email: David Blackburn, label: david.c.blackburn@gmail.com}
