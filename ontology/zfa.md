@@ -3,11 +3,11 @@ layout: ontology_detail
 id: zfa
 in_foundry_order: 1
 contact:
-  email: zfinadmin@zfin.org
+  email: zfinadmin@zfin.org, van_slyke@zfin.org, ybradford@zfin.org
   label: ZFIN administrators
 description: A structured controlled vocabulary of the anatomy and development of the Zebrafish
 domain: anatomy
-homepage: http://zfin.org/zf_info/anatomy/dict/sum.html
+homepage:https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
 products:
   - id: zfa.owl
   - id: zfa.obo
