@@ -37,14 +37,6 @@ products:
    description: Equivalent to the OWL edition
    format: obo
    derived_from: mondo.owl
- - id: pre/mondo.owl
-   title: "(DEPRECATED) Preview of new OWL edition"
-   description: Now identical to main release
-   format: owl-rdf/xml
- - id: pre/mondo.obo
-   title: "(DEPRECATED) Preview of new OBO edition"
-   description: Now identical to main release
-   format: obo
 ---
 
 MonDO (Monarch Disease Ontology) is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology. Original versions of MonDO were constructed entirely automatically and used the IDs of source databases and ontologies. Later, additional manually curated cross-ontology axioms were added, and a native MONDO ID system was used to avoid confusion with source databases.

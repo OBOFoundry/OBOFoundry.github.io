@@ -11,6 +11,7 @@ homepage: http://zfin.org/zf_info/anatomy/dict/sum.html
 page: https://github.com/obophenotype/developmental-stage-ontologies/wiki/ZFS
 products:
   - id: zfs.owl
+  - id: zfs.obo
 taxon:
   id: NCBITaxon:7954
   label: Danio

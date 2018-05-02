@@ -10,6 +10,7 @@ domain:
 homepage: http://purl.obolibrary.org/obo/fbcv
 products:
   - id: fbcv.owl
+  - id: fbcv.obo
 title: FlyBase Controlled Vocabulary
 license:
   url: http://creativecommons.org/licenses/by/3.0/
