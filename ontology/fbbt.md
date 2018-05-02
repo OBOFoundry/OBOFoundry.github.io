@@ -10,6 +10,7 @@ domain: anatomy
 homepage: http://purl.obolibrary.org/obo/fbbt
 products:
   - id: fbbt.owl
+  - id: fbbt.obo
   - id: fbbt/fbbt-simple.owl
   - id: fbbt/fbbt-simple.obo
 taxon:

@@ -9,6 +9,7 @@ domain: anatomy
 homepage: http://www.wormbase.org/
 products:
   - id: wbls.owl
+  - id: wbls.obo
 taxon:
   id: NCBITaxon:6237
   label: Caenorhabditis
