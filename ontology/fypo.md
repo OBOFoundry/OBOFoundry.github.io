@@ -14,6 +14,7 @@ domain: phenotype
 homepage: https://github.com/pombase/fypo
 products:
   - id: fypo.owl
+  - id: fypo.obo
 taxon:
   id: NCBITaxon:4896
   label: S. pombe
