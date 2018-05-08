@@ -1204,6 +1204,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/fypo.owl
   products:
   - {id: fypo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fypo.owl'}
+  - {id: fypo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/fypo.obo'}
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/23658422', title: 'FYPO: The Fission
       Yeast Phenotype Ontology.'}
@@ -2878,6 +2879,7 @@ ontologies:
   id: wbphenotype
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/wbphenotype.owl
+  preferredPrefix: WBPhenotype
   products:
   - {id: wbphenotype.owl, ontology_purl: 'http://purl.obolibrary.org/obo/wbphenotype.owl'}
   - {id: wbphenotype.obo, ontology_purl: 'http://purl.obolibrary.org/obo/wbphenotype.obo'}
