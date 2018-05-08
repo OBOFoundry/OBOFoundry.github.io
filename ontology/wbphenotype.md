@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: wbphenotype
+preferredPrefix: WBPhenotype
 contact:
   email: garys@caltech.edu
   label: Gary Schindelman

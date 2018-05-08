@@ -44,6 +44,15 @@ layout: default
     {% endfor %}
   </div>
   {% endif %}
+
+  {% if page.preferredPrefix %}
+  <div>
+    <div class="alert alert-info" role="alert">
+      This ontology uses a mixed-case prefix. Identifiers and URIs
+      should use "{{page.preferredPrefix}}"
+    </div>
+  </div>
+  {% endif %}
   
   <div class="col-md-12">
 
