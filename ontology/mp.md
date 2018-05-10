@@ -2,6 +2,9 @@
 layout: ontology_detail
 id: mp
 title: Mammalian phenotype
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 build:
   source_url: http://build.berkeleybop.org/job/build-mp-edit/lastSuccessfulBuild/artifact/*zip*/archive.zip
   path: archive/src/ontology
