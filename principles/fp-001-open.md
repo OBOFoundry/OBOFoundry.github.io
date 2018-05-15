@@ -30,7 +30,7 @@ Regardless of which license is chosen, it should be clearly stated in the ontolo
 
 1. The original source of an ontology must be credited according to the terms specified in the comment annotation of the ontology.
 
-2. After any external alterations to an ontology, the ontology must not be redistributed under the same name or with the same ontology IRI.
+2. Altered versions of an ontology that are not part of an official release (that is, by the ontology developers) must not be redistributed under the same name or with the same ontology IRI.
 
 3. If an individual term is reused without change to the definition, the original term IRI should be used. If the definition of a term (either text or logical) is changed, the original term IRI should not be reused. Suggestions for changes or improvements to term definitions should be submitted to the appropriate ontology issue tracker.
 
