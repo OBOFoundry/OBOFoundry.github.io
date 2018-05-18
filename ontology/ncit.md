@@ -5,6 +5,9 @@ title: NCI Thesaurus OBO Edition
 contact:
   email: haendel@ohsu.edu
   label: Melissa Haendel
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY 3.0
 homepage: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
 tracker: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
 description: The NCI Thesaurus (NCIt) OBO Edition project aims to increase integration of the NCIt with OBO Library ontologies. NCIt is a reference terminology that includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities. NCIt OBO Edition releases should be considered experimental.
