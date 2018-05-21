@@ -4,6 +4,9 @@ id: opl
 contact:
   email: preets79@gmail.com
   label: Priti Parikh
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY 4.0
 description: A reference ontology for parasite life cycle stages.
 homepage: https://github.com/OPL-ontology/OPL
 products:
