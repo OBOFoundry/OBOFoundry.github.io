@@ -40,21 +40,35 @@ browsers:
 products:
  - id: go.owl
    title: "GO (OWL edition)"
+   description: "The main ontology in OWL. This is self contained and does not have connections to other OBO ontologies"
    page: http://geneontology.org/page/download-ontology
  - id: go.obo
    title: "GO (OBO Format edition)"
+   description: "Equivalent to go.owl, in obo format"
    page: http://geneontology.org/page/download-ontology
+ - id: go.json
+   title: "GO (JSON edition)"
+   description: "Equivalent to go.owl, in obograph json format"
+   page: https://github.com/geneontology/obographs/
  - id: go/extensions/go-plus.owl
    title: GO-Plus
-   description: "The core ontology plus axioms connecting to select external ontologies"
+   description: "The main ontology plus axioms connecting to select external ontologies"
    page: http://geneontology.org/page/download-ontology
+ - id: go/extensions/go-plus.json
+   title: GO-Plus
+   description: "As go-plus.owl, in obographs json format"
+   page: https://github.com/geneontology/obographs/
  - id: go/go-basic.obo
    title: "GO-Basic, Filtered, for use with legacy tools"
-   description: The core ontology plus axioms connecting to select external ontologies
+   description: "The main ontology plus axioms connecting to select external ontologies"
+   page: http://geneontology.org/page/download-ontology
+ - id: go/go-basic.json
+   title: "GO-Basic, Filtered, for use with legacy tools (JSON)"
+   description: "As go-basic.obo, in json format"
    page: http://geneontology.org/page/download-ontology
  - id: go/extensions/go-taxon-groupings.owl
    title: GO Taxon Groupings
-   description: Classes added to ncbitaxon for groupings such as prokaryotes
+   description: "Classes added to ncbitaxon for groupings such as prokaryotes"
    page: http://geneontology.org/page/download-ontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/
