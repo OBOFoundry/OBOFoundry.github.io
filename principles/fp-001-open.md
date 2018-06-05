@@ -18,7 +18,7 @@ OBO Foundry ontologies are resources for the entire biological and biomedical co
 
 1. OBO Foundry Ontologies must
 
-    EITHER be copyrighted under a Creative Commons [CC-BY license version 4.0](https://creativecommons.org/licenses/by/4.0/) or later, which lets others distribute, remix, tweak, and build upon the work, even commercially, as long as they credit the creators for the original creation
+    EITHER be copyrighted under a Creative Commons [CC-BY license version 3.0](https://creativecommons.org/licenses/by/3.0/) or later, which lets others distribute, remix, tweak, and build upon the work, even commercially, as long as they credit the creators for the original creation
 
     OR released into the public domain under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) (which is not a license). Note that CC0 specifies that the creators of an ontology waive, to the extent that they legally can be, all rights and place the ontology in the public domain. It does not prevent them from requesting that the ontology be properly credited and cited, but prevents any legal recourse if it is not credited.
 
@@ -30,7 +30,7 @@ Regardless of which license is chosen, it should be clearly stated in the ontolo
 
 1. The original source of an ontology must be credited according to the terms specified in the comment annotation of the ontology.
 
-2. After any external alterations to an ontology, the ontology must not be redistributed under the same name or with the same ontology IRI.
+2. Altered versions of an ontology that are not part of an official release (that is, by the ontology developers) must not be redistributed under the same name or with the same ontology IRI.
 
 3. If an individual term is reused without change to the definition, the original term IRI should be used. If the definition of a term (either text or logical) is changed, the original term IRI should not be reused. Suggestions for changes or improvements to term definitions should be submitted to the appropriate ontology issue tracker.
 
