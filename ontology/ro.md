@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: ro
-title: Relations Ontology
+title: Relation Ontology
 build:
   checkout:  git clone https://github.com/oborel/obo-relations.git
   system: git
