@@ -37,6 +37,22 @@ products:
    description: Equivalent to the OWL edition
    format: obo
    derived_from: mondo.owl
+ - id: subsets/mondo-minimal.owl
+   title: Minimal OWL edition.
+   description: Complete logical axioms, no textual definitions, subsets
+   format: owl-rdf/xml
+   license: https://creativecommons.org/publicdomain/zero/1.0/
+ - id: subsets/mondo-minimal.obo
+   title: Minimal OBO edition.
+   description: Identical to Minimal OWL edition, in OBO Format
+   format: obo
+   license: https://creativecommons.org/publicdomain/zero/1.0/
+ - id: subsets/mondo-minimal.json
+   title: Minimal JSON edition.
+   description: Identical to Minimal OWL edition, in OBO Graph JSON Format
+   format: json
+   license: https://creativecommons.org/publicdomain/zero/1.0/
+
 ---
 
 MonDO (Monarch Disease Ontology) is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology. Original versions of MonDO were constructed entirely automatically and used the IDs of source databases and ontologies. Later, additional manually curated cross-ontology axioms were added, and a native MONDO ID system was used to avoid confusion with source databases.
