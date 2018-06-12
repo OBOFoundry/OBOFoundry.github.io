@@ -32,17 +32,14 @@ Note also that previously we recommended that ontologies may be available in Man
 
 ### Counter-examples
 
-An ontology that is in Frames format.
+An ontology that is in Frames format, OWL/XML, or OWL Manchester Syntax.
 
 ## Criteria for review
 
 The ontology is available in at least one of the following formats:
 
 - OBO Format
-- OWL or OWL2 concrete syntax
-    - RDF/XML
-    - OWL2-XML
-    - OWL2-Manchester Syntax
+- OWL or OWL2 RDF/XML
 
 ## History
 
