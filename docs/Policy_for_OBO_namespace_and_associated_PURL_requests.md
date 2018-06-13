@@ -47,7 +47,7 @@ The technical working group reserves the right to make decisions based on their 
   * point person contact email
   * ontology discussion mailing-list
   * ontology issue tracker link
-  * purl.org user ID - please register [there](http://purl.org) if you don't have one
+
 
 ## Requesting the prefix ##
 
