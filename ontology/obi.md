@@ -10,7 +10,7 @@ mailing_list: http://groups.google.com/group/obi-users
 tracker: http://purl.obolibrary.org/obo/obi/tracker
 contact:
   label: Bjoern Peters
-  email: bpeters@lji.org 
+  email: bpeters@lji.org
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC-BY 3.0
