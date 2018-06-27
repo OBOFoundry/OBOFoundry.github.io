@@ -10,7 +10,7 @@ domain: phenotype
 homepage: https://github.com/bio-ontology-research-group/unit-ontology
 products:
   - id: uo.owl
-title: Units of measurement
+title: Units of measurement ontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
