@@ -2,8 +2,11 @@
 layout: ontology_detail
 id: apo
 contact:
-  email: sgd-helpdesk@lists.stanford.edu
-  label: sgd-helpdesk
+  email: sstacia@stanford.edu
+  label: Stacia R Engel
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 description: A structured controlled vocabulary for the phenotypes of Ascomycete fungi
 domain: phenotype
 homepage: http://www.yeastgenome.org/
