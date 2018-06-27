@@ -7,7 +7,7 @@ contact:
   label: ZFIN administrators
 description: A structured controlled vocabulary of the anatomy and development of the Zebrafish
 domain: anatomy
-homepage: http://zfin.org/zf_info/anatomy/dict/sum.html
+homepage:https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
 products:
   - id: zfa.owl
   - id: zfa.obo
