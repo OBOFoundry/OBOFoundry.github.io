@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: mpath
 contact:
-  email: pns12@cam.ac.uk
+  email: pns12@hermes.cam.ac.uk
   label: Paul Schofield
 description: A structured controlled vocabulary of mutant and transgenic mouse pathology phenotypes
 domain: health
@@ -13,7 +13,7 @@ products:
 taxon:
   id: NCBITaxon:10088
   label: Mus
-title: Mouse pathology
+title: Mouse pathology ontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
