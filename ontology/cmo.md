@@ -4,6 +4,9 @@ id: cmo
 contact:
   email: shimoyama@mcw.edu
   label: Mary Shimoyama
+license:
+  url: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC-0
 description: Morphological and physiological measurement records generated from clinical and model organism research and health programs.
 domain: clinical
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
