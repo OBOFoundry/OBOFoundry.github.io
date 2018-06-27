@@ -2,14 +2,14 @@
 layout: ontology_detail
 id: sbo
 contact:
-  email: biomodels-net-support@lists.sf.net
-  label: The Biomodels.net team
+  email: sheriff@ebi.ac.uk
+  label: Rahuman Sheriff
 description: Terms commonly used in Systems Biology, and in particular in computational modeling.
 domain: biochemistry
 homepage: http://www.ebi.ac.uk/sbo/
 products:
   - id: sbo.owl
-title: Systems Biology
+title: Systems Biology Ontology
 build:
   source_url: http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo
   method: obo2owl
