@@ -5,6 +5,9 @@ preferredPrefix: WBPhenotype
 contact:
   email: garys@caltech.edu
   label: Gary Schindelman
+license:
+  url: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 description: A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes
 domain: phenotype
 homepage: http://www.wormbase.org/
