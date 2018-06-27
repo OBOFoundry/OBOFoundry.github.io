@@ -2,11 +2,11 @@
 layout: ontology_detail
 id: taxrank
 contact:
-  email: peteremidford@yahoo.com
-  label: Peter Midford
+  email: balhoff@renci.org
+  label: Jim Balhoff
 description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
 domain: taxonomy
-homepage: https://www.phenoscape.org/wiki/Taxonomic_Rank_Vocabulary
+homepage: https://github.com/phenoscape/taxrank
 products:
   - id: taxrank.owl
   - id: taxrank.obo
