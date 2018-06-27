@@ -1,4 +1,4 @@
---
+---
 layout: ontology_detail
 id: ino
 title: Interaction Network Ontology
@@ -13,7 +13,7 @@ homepage: https://github.com/INO-ontology/ino
 tracker: https://github.com/INO-ontology/ino/issues
 products:
   - id: ino.owl
---
+---
 
 # Summary
 
