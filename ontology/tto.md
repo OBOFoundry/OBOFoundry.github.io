@@ -2,18 +2,18 @@
 layout: ontology_detail
 id: tto
 contact:
-  email: peteremidford@yahoo.com
-  label: Peter Midford
+  email: balhoff@renci.org
+  label: Jim Balhoff
 description: An ontology covering the taxonomy of teleosts (bony fish)
 domain: taxonomy
-homepage: http://phenoscape.org/wiki/Teleost_Taxonomy_Ontology
+homepage: https://github.com/phenoscape/teleost-taxonomy-ontology
 products:
   - id: tto.obo
   - id: tto.owl
 taxon:
   id: NCBITaxon:32443
   label: Teleostei
-title: Teleost taxonomy
+title: Teleost taxonomy ontology
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC-0
