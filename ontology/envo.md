@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: envo
 contact:
-  email: p.buttigieg@googlemail.com
+  email: p.buttigieg@gmail.com
   label: Pier Luigi Buttigieg
 description: Ontology of environmental features and habitats
 domain: environment
