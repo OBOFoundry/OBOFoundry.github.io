@@ -21,8 +21,8 @@ build:
   method: obo2owl
   infallible: 1
 contact:
-  email: MChibucos@som.umaryland.edu
-  label: "Chibucos, Marcus" 
+  email: mgiglio@som.umaryland.edu
+  label: Michelle Giglio 
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/25052702
     title: "Standardized description of scientific evidence using the Evidence Ontology (ECO)"
