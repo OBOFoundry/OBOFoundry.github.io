@@ -2,7 +2,13 @@
 layout: ontology_detail
 id: ogsf
 description: An application ontology to represent genetic susceptibility to a specific disease, adverse event, or a pathological process.
-homepage: https://code.google.com/p/ogsf/
+homepage: none
+contact:
+  label: Asiyah Yu Lin
+  email: linikujp@gmail.com
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY 3.0
 products:
   - id: ogsf.owl
 title: Ontology of Genetic Susceptibility Factor
