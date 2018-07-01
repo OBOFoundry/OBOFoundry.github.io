@@ -4,6 +4,9 @@ id: fma
 contact:
   email: mejino@u.washington.edu
   label: Onard Mejino
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY 3.0
 description: This is currently a slimmed down version of FMA
 domain: anatomy
 homepage: http://si.washington.edu/projects/fma
@@ -17,7 +20,7 @@ products:
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
-title: Foundational Model of Anatomy (subset)
+title: Foundational Model of Anatomy Ontology (subset)
 build:
   source_url: http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo
   insert_ontology_id: true
