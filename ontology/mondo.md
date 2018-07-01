@@ -4,9 +4,10 @@ id: mondo
 label: MonDO
 title: Monarch Disease Ontology
 description: An ontology that harmonizes multiple disease resources.
+homepage: https://github.com/monarch-initiative/mondo
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0Y
 contact:
   email: vasilevs@ohsu.edu
   label: Nicole Vasilevsky
