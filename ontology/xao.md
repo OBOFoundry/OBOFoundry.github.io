@@ -4,6 +4,9 @@ id: xao
 description: Anatomy and development of the African clawed frog (<i>Xenopus laevis</i>).
 domain: anatomy
 homepage: http://www.xenbase.org/anatomy/xao.do?method=display
+contact:
+  label: Erik Segerdell
+  email: segerdell.erik@gmail.com
 in_foundry_order: 1
 products:
   - id: xao.owl
@@ -11,7 +14,7 @@ products:
 taxon:
   id: NCBITaxon:8353
   label: Xenopus
-title: Xenopus anatomy and development
+title: Xenopus Anatomy Ontology
 build:
   source_url: https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo
   method: obo2owl
