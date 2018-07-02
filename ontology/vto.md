@@ -7,10 +7,14 @@ products:
   - id: vto.owl
   - id: vto.obo
 title: Vertebrate Taxonomy Ontology
+homepage: https://github.com/phenoscape/vertebrate-taxonomy-ontology
 tracker: https://github.com/phenoscape/vertebrate-taxonomy-ontology/issues
 redirects:
   - match: ""
     url: "http://vertebrate-taxonomy-ontology.s3-website-us-west-2.amazonaws.com/releases/"
+contact:
+  label: Jim Balhoff
+  email: balhoff@renci.org
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC-0
