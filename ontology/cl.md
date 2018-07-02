@@ -3,6 +3,7 @@ layout: ontology_detail
 id: cl
 label: Cell Ontology
 title: Cell Ontology
+homepage: https://github.com/obophenotype/cell-ontology
 jobs:
   - id: https://travis-ci.org/obophenotype/cell-ontology
     type: travis-ci
@@ -14,6 +15,9 @@ build:
   infallible: 1
 description: The Cell Ontology is a structured controlled vocabulary for cell types in animals.
 integration_server: http://build.berkeleybop.org/job/build-cl/
+contact:
+  label: Alexander Diehl
+  email: addiehl@buffalo.edu
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
