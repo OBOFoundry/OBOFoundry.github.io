@@ -3,8 +3,8 @@ layout: ontology_detail
 id: fbbt
 preferredPrefix: FBbt
 contact:
-  email: temj2@cam.ac.uk
-  label: Tamsin Jones
+  email: cp390@cam.ac.uk
+  label: Clare Pilgrim
 description: An ontology representing the gross anatomy of Drosophila melanogaster.
 domain: anatomy
 homepage: http://purl.obolibrary.org/obo/fbbt
