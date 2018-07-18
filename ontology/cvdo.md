@@ -4,6 +4,9 @@ id: cvdo
 contact:
   email: adrien.barton@gmail.com
   label: Adrien Barton
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 description: An ontology to describe entities related to cardiovascular diseases
 domain: health
 homepage: https://github.com/OpenLHS/CVDO
