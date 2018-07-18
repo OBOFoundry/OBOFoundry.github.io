@@ -14,8 +14,8 @@ publications:
 products:
   - id: bto.owl
 license:
-  url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  url: https://creativecommons.org/licenses/by-nd/4.0/
+  label: CC BY-ND 4.0
 title: BRENDA tissue / enzyme source
 build:
   source_url: http://www.brenda-enzymes.info/ontology/tissue/tree/update/update_files/BrendaTissueOBO
