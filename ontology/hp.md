@@ -9,6 +9,9 @@ homepage: http://www.human-phenotype-ontology.org/
 contact:
   email: dr.sebastian.koehler@gmail.com
   label: Sebastian Koehler
+license:
+  url: https://hpo.jax.org/app/license
+  label: hpo
 products:
   - id: hp.owl
   - id: hp.obo
