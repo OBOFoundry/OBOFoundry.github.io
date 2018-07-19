@@ -47,8 +47,8 @@ In general, copyright legislation says that facts that are not copyrightable are
 #### `.owl` files
 
 1. OBO Foundry Ontologies MUST specify the reuse constraints using the following annotations in any publically released OWL version of the ontology:
-  1. dcterms:license - specifies the license - see Example 1 (below)
-  2. rdfs:comment - specifies terms of reuse - see Example 1 (below)
+    1. dcterms:license - specifies the license - see Example 1 (below)
+    2. rdfs:comment - specifies terms of reuse - see Example 1 (below)
 
 2. OBO Foundry Ontologies that host terms developed by an external group (but which are not part of an existing ontology) must credit the external group - see Examples (below)
 
@@ -57,8 +57,8 @@ In general, copyright legislation says that facts that are not copyrightable are
 #### `.obo` files
 
 1. OBO Foundry Ontologies must specify the reuse constraints using the following annotations in any publically released OBO version of the ontology:
-  1. the license in a separate property annotation, which can be converted to a dc:license statement if the ontology is converted to OWL - see Example 2 (below)
-  2. the reuse constraints using a comment in the official OBO version of the ontology - see Example 2 (below)
+    1. the license in a separate property annotation, which can be converted to a dc:license statement if the ontology is converted to OWL - see Example 2 (below)
+    2. the reuse constraints using a comment in the official OBO version of the ontology - see Example 2 (below)
 
 ### For ontology re-use
 
@@ -67,13 +67,13 @@ In general, copyright legislation says that facts that are not copyrightable are
 The attribution method for individual terms reused in another ontology (e.g., by MIREOT) is via use of their original IRI or ID - see Examples (below).
 
 1. **In OWL** - Any ontology re-using individual terms from another ontology should:
-  1. re-use the original term IRI (which for OBO Foundry ontologies is generally in the form of an OBO Foundry PURL)
-  2. use an IAO:imported from annotation <http://purl.obolibrary.org/obo/IAO_0000412> on each imported term to link back to the group (i.e. ontology) maintaining it, where more information would be available about the license
-  3. include any annotations for term or definition editors from the original ontology
+    1. re-use the original term IRI (which for OBO Foundry ontologies is generally in the form of an OBO Foundry PURL)
+    2. use an IAO:imported from annotation <http://purl.obolibrary.org/obo/IAO_0000412> on each imported term to link back to the group (i.e. ontology) maintaining it, where more information would be available about the license
+    3. include any annotations for term or definition editors from the original ontology
 
 2. **In OBO** - Any ontology re-using individual terms from another ontology should:
-  1. re-use the original term ID (of the form <GO:0000001>)
-  2. include any XREFs to the original term editor(s) from the original ontology
+    1. re-use the original term ID (of the form <GO:0000001>)
+    2. include any XREFs to the original term editor(s) from the original ontology
 
 #### Full ontologies
 
