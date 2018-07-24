@@ -1,6 +1,6 @@
 ---
 layout: ontology_detail
-id: dpo
+id: fbcv/dpo
 preferredPrefix: FBcv
 contact:
   email: temj2@cam.ac.uk
