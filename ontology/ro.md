@@ -29,9 +29,13 @@ products:
    title: Relation Ontology in obo format
    description: Has imports merged in
  - id: ro/core.owl
-   title: Core relations
+   title: RO Core relations
    description: Minimal subset intended to work with BFO-classes
    page: https://github.com/oborel/obo-relations/wiki/ROCore
+ - id: ro/ro-base.owl
+   title: RO base ontology
+   description: Axioms defined within RO and to be used in imports for other ontologies
+   page: https://github.com/INCATools/ontology-development-kit/issues/50
  - id: ro/subsets/ro-interaction.owl
    title: Interaction relations
    description: For use in ecology and environmental science
