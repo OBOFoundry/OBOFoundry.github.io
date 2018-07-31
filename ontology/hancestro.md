@@ -10,8 +10,8 @@ products:
   - id: hancestro.owl
 title: Human Ancestry Ontology
 license:
-  url: https://www.apache.org/licenses/LICENSE-2.0
-  label: Apache License, version 2.0
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: Creative Commons CC-BY, version 4.0
 
 ---
 
