@@ -1321,6 +1321,19 @@ ontologies:
   - {id: geo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/geo.owl'}
   title: Geographical Entity Ontology
   tracker: https://ontology.atlassian.net/browse/GEO#selectedTab=com.atlassian.jira.plugin.system.project%3Aissues-panel
+- contact: {email: dwelter@ebi.ac.uk, label: Danielle Welter}
+  description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description
+    of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide
+    association studies.
+  homepage: https://github.com/EBISPOT/ancestro
+  id: hancestro
+  layout: ontology_detail
+  license: {label: 'Creative Commons CC-BY, version 4.0', logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/hancestro.owl
+  products:
+  - {id: hancestro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/hancestro.owl'}
+  title: Human Ancestry Ontology
 - build: {checkout: 'git clone https://github.com/hymao/hao.git', system: git}
   contact: {email: diapriid@gmail.com, label: Matt Yoder}
   description: A structured controlled vocabulary of the anatomy of the Hymenoptera
@@ -2421,7 +2434,11 @@ ontologies:
     title: Relation Ontology in obo format}
   - {description: Minimal subset intended to work with BFO-classes, id: ro/core.owl,
     ontology_purl: 'http://purl.obolibrary.org/obo/ro/core.owl', page: 'https://github.com/oborel/obo-relations/wiki/ROCore',
-    title: Core relations}
+    title: RO Core relations}
+  - {description: Axioms defined within RO and to be used in imports for other ontologies,
+    id: ro/ro-base.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ro/ro-base.owl',
+    page: 'https://github.com/INCATools/ontology-development-kit/issues/50', title: RO
+      base ontology}
   - {description: For use in ecology and environmental science, id: ro/subsets/ro-interaction.owl,
     ontology_purl: 'http://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl',
     title: Interaction relations}
