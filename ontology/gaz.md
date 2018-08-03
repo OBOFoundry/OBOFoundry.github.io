@@ -1,8 +1,8 @@
 ---
 layout: ontology_detail
 id: gaz
-contact:
-  email: ma11@gen.cam.ac.uk
+contact: Lynn Schriml 
+  email: lschriml@som.umaryland.edu
   label: Michael Ashburner
 homepage: http://gensc.org/gc_wiki/index.php/GAZ_Project
 description: A gazetteer constructed on ontological principles
