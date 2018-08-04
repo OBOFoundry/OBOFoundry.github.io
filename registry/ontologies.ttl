@@ -280,6 +280,7 @@ _:b4    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
 <http://creativecommons.org/licenses/by/3.0/>
         <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png> ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CC-BY" ;
+        <http://www.w3.org/2000/01/rdf-schema#label>  "CC BY 3.0" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CC-BY 3.0" .
 
 <http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab>
@@ -963,7 +964,7 @@ _:b8    <http://www.w3.org/2000/01/rdf-schema#label>  "Alexander Diehl" ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.clo-ontology.org> .
 
 _:b54   <http://www.w3.org/2000/01/rdf-schema#label>  "Sirarat Sarntivijai" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "Sirarat.Sarntivijai@fda.hhs.gov" .
+        <http://xmlns.com/foaf/0.1/mbox>  "siiraa@umich.edu" .
 
 <http://purl.obolibrary.org/obo/clo.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/clo.owl" .
@@ -1859,8 +1860,8 @@ _:b112  <http://www.w3.org/2000/01/rdf-schema#label>  "Midori Harris" ;
 _:b113  <http://obofoundry.github.io/vocabulary/method>  "archive" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip" .
 
-_:b114  <http://www.w3.org/2000/01/rdf-schema#label>  "Michael Ashburner" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "ma11@gen.cam.ac.uk" .
+_:b114  <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "lschriml@som.umaryland.edu" .
 
 <http://purl.obolibrary.org/obo/gaz.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/gaz.owl" .
@@ -2496,7 +2497,8 @@ _:b157  <http://www.w3.org/2000/01/rdf-schema#label>  "Henning Hermjakob" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo.json> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo/subsets/mondo-minimal.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo/subsets/mondo-minimal.obo> ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo/subsets/mondo-minimal.json> .
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo/subsets/mondo-minimal.json> ;
+        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/monarch-initiative/mondo> .
 
 <https://monarchinitiative.org/disease/MONDO:0019609>
         <http://purl.org/dc/elements/1.1/title>  "Monarch Initiative Disease Browser" ;
@@ -2830,7 +2832,8 @@ _:b175  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqunh He" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/aszool/oarcs/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/oarcs.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b176 ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/oarcs.owl> .
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/oarcs.owl> ;
+        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/aszool/oarcs> .
 
 _:b176  <http://www.w3.org/2000/01/rdf-schema#label>  "Matt Yoder" ;
         <http://xmlns.com/foaf/0.1/mbox>  "mjyoder@illinois.edu" .
@@ -3330,6 +3333,7 @@ _:b207  <http://www.w3.org/2000/01/rdf-schema#label>  "Ramona Walls" ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b208 ;
         <http://purl.org/dc/elements/1.1/description>  "A controlled vocabulary for annotating gene products to pathways." ;
         <http://purl.org/dc/elements/1.1/title>  "Pathway ontology" ;
+        <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <http://www.ncbi.nlm.nih.gov/pubmed/21478484> ;
         <http://purl.org/dc/terms/1.1/publication>  <http://www.ncbi.nlm.nih.gov/pubmed/24499703> ;
         <http://purl.org/dc/terms/1.1/theme>  "biological process" ;
@@ -3354,8 +3358,8 @@ _:b208  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://purl.org/dc/elements/1.1/title>  "RGD Ontology Browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "RGD" .
 
-_:b209  <http://www.w3.org/2000/01/rdf-schema#label>  "Victoria Petri" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "vpetri@mcw.edu" .
+_:b209  <http://www.w3.org/2000/01/rdf-schema#label>  "G. Thomas Hayman" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "gthayman@mcw.edu" .
 
 <http://purl.obolibrary.org/obo/pw.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pw.owl" .

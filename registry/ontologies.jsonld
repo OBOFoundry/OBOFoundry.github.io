@@ -1254,7 +1254,7 @@
         },
         {
             "contact": {
-                "email": "Sirarat.Sarntivijai@fda.hhs.gov",
+                "email": "siiraa@umich.edu",
                 "label": "Sirarat Sarntivijai"
             },
             "dependencies": [
@@ -2662,8 +2662,8 @@
                 "source_url": "http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip"
             },
             "contact": {
-                "email": "ma11@gen.cam.ac.uk",
-                "label": "Michael Ashburner"
+                "email": "lschriml@som.umaryland.edu",
+                "label": "Lynn Schriml"
             },
             "description": "A gazetteer constructed on ontological principles",
             "homepage": "http://gensc.org/gc_wiki/index.php/GAZ_Project",
@@ -3586,11 +3586,12 @@
             },
             "description": "An ontology that harmonizes multiple disease resources.",
             "domain": "disease",
+            "homepage": "https://github.com/monarch-initiative/mondo",
             "id": "mondo",
             "label": "MonDO",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -4077,11 +4078,11 @@
             },
             "description": "OArCS is an ontology describing the Arthropod ciruclatory system.",
             "domain": "anatomy",
-            "homepage": null,
+            "homepage": "https://github.com/aszool/oarcs",
             "id": "oarcs",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -4896,14 +4897,19 @@
                 "source_url": "ftp://ftp.rgd.mcw.edu/pub/data_release/ontology_obo_files/pathway/pathway.obo"
             },
             "contact": {
-                "email": "vpetri@mcw.edu",
-                "label": "Victoria Petri"
+                "email": "gthayman@mcw.edu",
+                "label": "G. Thomas Hayman"
             },
             "description": "A controlled vocabulary for annotating gene products to pathways.",
             "domain": "biological process",
             "homepage": "http://rgd.mcw.edu/rgdweb/ontology/search.html",
             "id": "pw",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/pw.owl",
             "page": "ftp://ftp.rgd.mcw.edu/pub/data_release/PW_Introduction.doc",
             "products": [

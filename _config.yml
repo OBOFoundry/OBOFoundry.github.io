@@ -616,7 +616,7 @@ ontologies:
     - {description: FANTOM5 samples annotated to neuron, url: 'http://fantom.gsc.riken.jp/5/sstar/CL:0000540'}
     type: annotation
     user: http://fantom5-collaboration.gsc.riken.jp/
-- contact: {email: Sirarat.Sarntivijai@fda.hhs.gov, label: Sirarat Sarntivijai}
+- contact: {email: siiraa@umich.edu, label: Sirarat Sarntivijai}
   dependencies:
   - {id: uberon}
   - {id: cl}
@@ -1261,7 +1261,7 @@ ontologies:
         yeast, url: 'https://www.pombase.org/term/FYPO:0000059'}
     user: https://www.pombase.org
 - build: {method: archive, path: archive, source_url: 'http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
-  contact: {email: ma11@gen.cam.ac.uk, label: Michael Ashburner}
+  contact: {email: lschriml@som.umaryland.edu, label: Lynn Schriml}
   description: A gazetteer constructed on ontological principles
   homepage: http://gensc.org/gc_wiki/index.php/GAZ_Project
   id: gaz
@@ -1717,10 +1717,11 @@ ontologies:
   contact: {email: vasilevs@ohsu.edu, label: Nicole Vasilevsky}
   description: An ontology that harmonizes multiple disease resources.
   domain: disease
+  homepage: https://github.com/monarch-initiative/mondo
   id: mondo
   label: MonDO
   layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+  license: {label: CC BY 3.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
   mailing_list: https://groups.google.com/group/mondo-users
   ontology_purl: http://purl.obolibrary.org/obo/mondo.owl
@@ -1959,10 +1960,10 @@ ontologies:
 - contact: {email: mjyoder@illinois.edu, label: Matt Yoder}
   description: OArCS is an ontology describing the Arthropod ciruclatory system.
   domain: anatomy
-  homepage: null
+  homepage: https://github.com/aszool/oarcs
   id: oarcs
   layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+  license: {label: CC BY 3.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/oarcs.owl
   products:
@@ -2368,12 +2369,14 @@ ontologies:
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=PW:0000001'}
   build: {method: obo2owl, source_url: 'ftp://ftp.rgd.mcw.edu/pub/data_release/ontology_obo_files/pathway/pathway.obo'}
-  contact: {email: vpetri@mcw.edu, label: Victoria Petri}
+  contact: {email: gthayman@mcw.edu, label: G. Thomas Hayman}
   description: A controlled vocabulary for annotating gene products to pathways.
   domain: biological process
   homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
   id: pw
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/pw.owl
   page: ftp://ftp.rgd.mcw.edu/pub/data_release/PW_Introduction.doc
   products:
