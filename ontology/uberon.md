@@ -122,6 +122,10 @@ products:
    title: Uberon
    description: "core ontology"
    is_canonical: true
+ - id: uberon/uberon-base.owl
+   title: Uberon base ontology
+   description: Axioms defined within Uberon and to be used in imports for other ontologies
+   page: https://github.com/INCATools/ontology-development-kit/issues/50
  - id: uberon/ext.owl
    type: owl:Ontology
    description: Uberon extended
