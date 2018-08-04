@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: clo
 contact:
-  email: Sirarat.Sarntivijai@fda.hhs.gov
+  email: siiraa@umich.edu
   label: Sirarat Sarntivijai
 description: An ontology to standardize and integrate cell line information and to support computer-assisted reasoning.
 homepage: http://www.clo-ontology.org
