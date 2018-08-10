@@ -11,7 +11,7 @@ canonical: ro.owl
 description: Relationship types shared across multiple ontologies
 homepage: https://github.com/oborel/obo-relations/
 tracker: https://github.com/oborel/obo-relations/issues
-mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-relations
+mailing_list: "https://groups.google.com/forum/#!forum/obo-relations"
 domain: relations
 contact:
   email: cjmungall@lbl.gov
