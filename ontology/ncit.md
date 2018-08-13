@@ -6,11 +6,11 @@ contact:
   email: haendel@ohsu.edu
   label: Melissa Haendel
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY 3.0
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4.0
 homepage: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
 tracker: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
-description: The NCI Thesaurus (NCIt) OBO Edition project aims to increase integration of the NCIt with OBO Library ontologies. NCIt is a reference terminology that includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities. NCIt OBO Edition releases should be considered experimental.
+description: The NCI Thesaurus (NCIt) OBO Edition project aims to increase integration of the NCIt with OBO Library ontologies. NCIt is a reference terminology that includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities. NCIt OBO Edition releases should be considered experimental. The NCI Thesaurus is released under the Creative Commons Attribution 4.0 International license (CC BY 4.0). The NCI Thesaurus is produced by the Enterprise Vocabulary Services group of the Center for Biomedical Informatics and Information Technology, National Cancer Institute, Maryland, USA. The name "NCI Thesaurus" is trademarked. Only the NCI Thesaurus published by the NCI can be released under this name (see ftp://ftp1.nci.nih.gov/pub/cacore/EVS/NCI_Thesaurus/ThesaurusTermsofUse.htm).
 products:
   - id: ncit.owl
     title: NCIt OBO Edition OWL format
@@ -25,9 +25,6 @@ products:
   - id: ncit/neoplasm-core.owl
     title: NCIt Plus Neoplasm Core
     description: "This is a subset extracted from NCIt Plus, based on the [NCIt Neoplasm Core value set](https://evs.nci.nih.gov/ftp1/NCI_Thesaurus/Neoplasm/About_Core.html) as a starting point."
-license:
-  url: ftp://ftp1.nci.nih.gov/pub/cacore/EVS/NCI_Thesaurus/ThesaurusTermsofUse.pdf
-  label: See document
 ---
 
 The NCI Thesaurus is an ontology-like vocabulary that includes broad
