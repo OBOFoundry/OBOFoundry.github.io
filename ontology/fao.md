@@ -2,8 +2,8 @@
 layout: ontology_detail
 id: fao
 contact:
-  email: dinglis@stanford.edu
-  label: Diane Inglis
+  email: mah79@cam.ac.uk
+  label: Midori Harris
 description: A structured controlled vocabulary for the anatomy of fungi.
 domain: anatomy
 tracker: https://github.com/obophenotype/fungal-anatomy-ontology/issues
