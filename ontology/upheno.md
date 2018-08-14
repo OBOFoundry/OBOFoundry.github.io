@@ -2,6 +2,7 @@
 layout: ontology_detail
 id: upheno
 title: Combined phenotype ontology
+mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
 jobs:
   - id: https://travis-ci.org/obophenotype/upheno
     type: travis-ci
