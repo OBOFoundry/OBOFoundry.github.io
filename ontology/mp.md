@@ -35,6 +35,7 @@ taxon:
   label: Mus
 tracker: https://github.com/obophenotype/mammalian-phenotype-ontology/issues
 termgenie: http://mp.termgenie.org
+mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
 ---
 
 The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data.
