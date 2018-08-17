@@ -1,6 +1,6 @@
 ---
 layout: ontology_detail
-id: MP
+id: mp
 title: Mammalian Phenotype
 license:
   url: http://creativecommons.org/licenses/by/4.0/
