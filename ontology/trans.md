@@ -6,7 +6,7 @@ contact:
   label: Lynn Schriml
 description: "An ontology representing the disease transmission process during which the pathogen is transmitted directly or indirectly from its natural reservoir, a susceptible host or source to a new host."
 domain: disease
-homepage: http://diseaseontology.sourceforge.net/
+homepage: https://github.com/DiseaseOntology/PathogenTransmissionOntology
 products:
   - id: trans.owl
   - id: trans.obo
