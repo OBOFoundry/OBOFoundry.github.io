@@ -2,8 +2,11 @@
 layout: ontology_detail
 id: mirnao
 contact:
-  email: vdritsou@imbb.forth.gr
-  label: Vicky Dritsou
+  email: topalis@imbb.forth.gr
+  label: Pantelis Topalis
+license:
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC-BY
 description: An application ontology for use with miRNA databases.
 homepage: http://code.google.com/p/mirna-ontology/
 products:
