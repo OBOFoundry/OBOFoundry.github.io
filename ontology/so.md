@@ -2,8 +2,8 @@
 layout: ontology_detail
 id: so
 contact:
-  email: song-devel@lists.sourceforge.net
-  label: SONG developers
+  email: keilbeck@genetics.utah.edu
+  label: Karen Eilbeck
 description: A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.
 domain: biological sequence
 homepage: https://github.com/The-Sequence-Ontology/SO-Ontologies
