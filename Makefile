@@ -95,7 +95,9 @@ registry/publications.md: util/extract-publications.py registry/ontologies.yml
 ### Validate Configuration Files
 
 validate: $(ONTS)
-	./util/extract-metadata.py validate $^
+	./util/extract-metadata.py validate $^ && \
+	cd util && \
+	./validate-metadata.py
 
 # Note this should *not* be run as part of general travis jobs, it is expensive
 # and may be prone to false positives as it is inherently network-based
