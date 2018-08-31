@@ -77,9 +77,12 @@ def format_list_msg(substr, ve):
 	"""
 	l = json.loads(substr.replace('\'', '"'))
 	# use the full message to find the violating property
-	prop_find = re.search('On instance\\[u(\'.+?\')\\]', str(ve))
-	prop = prop_find.group(1)
-	return '{0} expects one value, got {1}'.format(prop, len(l))
+	prop_find = re.search('On instance\\[(\'.+?\')\\]', str(ve))
+	if prop_find:
+		prop = prop_find.group(1)
+		return '{0} expects one value, got {1}'.format(prop, len(l))
+	else:
+		return substr
 
 def load_schema():
 	"""
