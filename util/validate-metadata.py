@@ -21,6 +21,7 @@ def validate():
 	"""
 	Validate registry metadata.
 	"""
+	print("--- validating metadata against {0} ---".format(schema_file))
 	data = load_data()
 	schema = load_schema()
 	# validate each object
@@ -30,11 +31,12 @@ def validate():
 		try:
 			jsonschema.validate(item, schema)
 		except jsonschema.exceptions.ValidationError as ve:
+			print("ERROR in {0}".format(ont_id))
 			errors[ont_id] = format_msg(ve)
 	if errors:
 		write_errors(errors)
 	else:
-		sys.stout.write("SUCCESS - no errors found in metadata")
+		print("SUCCESS - no errors found in metadata")
 		sys.exit(0)
 
 def format_msg(ve):
@@ -110,8 +112,8 @@ def write_errors(errors):
 		f.write("ID,ERROR\n")
 		for ont_id, msg in errors.items():
 			f.write('"' + ont_id + '","' + msg + '"\n')
-	sys.stderr.write(
-		"VALIDATION FAILED: {0} errors - see {1} for details\n".format(
+	print(
+		"VALIDATION FAILED: {0} errors - see {1} for details".format(
 			len(errors), report_file))
 	sys.exit(1)
 
