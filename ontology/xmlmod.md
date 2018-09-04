@@ -1,9 +1,9 @@
 ---
 layout: ontology_detail
-id: xl
-label: XL
+id: xlmod
+label: xlmod
 description: A structured controlled vocabulary for cross-linking reagents used with proteomics mass spectrometry.
-title: Cross-linker reagents ontology
+title: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
 createdWith: http://oboedit.org
 contact:
   email: gerhard.mayer@rub.de
