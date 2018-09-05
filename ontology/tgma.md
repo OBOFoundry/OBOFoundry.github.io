@@ -2,8 +2,11 @@
 layout: ontology_detail
 id: tgma
 contact:
-  email: louis@imbb.forth.gr
-  label: C. Louis
+  email: topalis@imbb.forth.gr
+  label: Pantelis Topalis
+license:
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC-BY
 description: A structured controlled vocabulary of the anatomy of mosquitoes.
 domain: anatomy
 homepage: http://anobase.vectorbase.org
