@@ -4,6 +4,9 @@ id: fao
 contact:
   email: mah79@cam.ac.uk
   label: Midori Harris
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY 3.0
 description: A structured controlled vocabulary for the anatomy of fungi.
 domain: anatomy
 tracker: https://github.com/obophenotype/fungal-anatomy-ontology/issues
