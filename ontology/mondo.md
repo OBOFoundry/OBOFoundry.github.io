@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: mondo
-label: MonDO
+label: MONDO
 title: Monarch Disease Ontology
 description: An ontology that harmonizes multiple disease resources.
 homepage: https://github.com/monarch-initiative/mondo
@@ -56,7 +56,7 @@ products:
 
 ---
 
-MonDO (Monarch Disease Ontology) is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology. Original versions of MonDO were constructed entirely automatically and used the IDs of source databases and ontologies. Later, additional manually curated cross-ontology axioms were added, and a native MONDO ID system was used to avoid confusion with source databases.
+MONDO (Monarch Disease Ontology) is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology. Original versions of MonDO were constructed entirely automatically and used the IDs of source databases and ontologies. Later, additional manually curated cross-ontology axioms were added, and a native MONDO ID system was used to avoid confusion with source databases.
 
 One feature of MONDO is that it goes beyond loose xrefs. It curated precise 1:1 equivalence axioms connecting to other resources, validated by OWL reasoning. This means it is safe to propagate across these from OMIM, Orphanet, EFO, DOID (soon NCIT).
 
@@ -68,4 +68,4 @@ These precise mappings are available in two ways depending on the format
 Trackers
 
  - https://github.com/monarch-initiative/monarch-disease-ontology/issues - original tracker, primarily for examining kboom output and for feeding back changes to sources
- - https://github.com/monarch-initiative/mondo-build/issues - new tracker primarily for curating the grouped classes
+ - https://github.com/monarch-initiative/mondo/issues - new tracker primarily for curating the grouped classes

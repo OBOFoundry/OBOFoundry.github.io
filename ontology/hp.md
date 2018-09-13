@@ -26,6 +26,7 @@ build:
   infallible: 1
 tracker: https://github.com/obophenotype/human-phenotype-ontology/issues/
 termgenie: http://hp.termgenie.org
+mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
 browsers:
   - label: HPO
     title: Charite HPO Browser
