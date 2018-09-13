@@ -4,6 +4,7 @@
 		"contact": {
 			"type": "object",
 			"properties": {
+				"github": { "type": "string", "pattern": "^[^@]+$"},
 				"email": { "type": "string", "format": "email" },
 				"label": { "type": "string", "pattern": "^[^@]+$" }
 			},
