@@ -2,19 +2,25 @@
 
 __author__ = 'cjm'
 
-from github import Github
+from cachier import cachier
 import argparse
 import logging
 import requests
 import sys
 import os
+import time
+import datetime
 from contextlib import closing
 from SPARQLWrapper import SPARQLWrapper, JSON
 from json import dumps
+#from functools import lru_cache
 
 #from yaml import load, dump
 #from yaml import Loader, Dumper
 import yaml
+
+SHELF_LIFE = datetime.timedelta(days=7)
+#cache = lru_cache(maxsize=None)
 
 
 
@@ -163,42 +169,61 @@ def extract_context(ontologies, args):
     print(dumps(ctxt, sort_keys=True, indent=4, separators=(',', ': ')))
 
 def write_all_contributors(ontologies, args):
+    """
+    query github API for all contributors to an ontology,
+    write results as json
+    """
     results = []
-    for obj in ontologies:
-        contribs = list(get_ontology_contributors(obj, args))
-        print('CONTRIBS={}'.format(contribs))
-        id = obj['id']
-        results.append(dict(id=id, contributors=contribs))
+    for ont_obj in ontologies:
+        id = ont_obj['id']
+        logging.info("Getting info for {}".format(id))
+        repo_path = get_repo_path(ont_obj, args)
+        if repo_path is not None:
+            contribs = list(get_ontology_contributors(repo_path))
+            print('CONTRIBS({})=={}'.format(id, contribs))
+            for c in contribs:
+                print('#{}\t{}\n'.format(id, c['login']))
+            results.append(dict(id=id, contributors=contribs))
+        else:
+            logging.warn("No repo_path declared for {}".format(id))
     print(dumps(results, sort_keys=True, indent=4, separators=(',', ': ')))
 
-def get_ontology_contributors(ont_obj, args):
-    repo = get_repo(ont_obj, args)
-    if repo is not None:
-        return repo.get_contributors()
-    else:
-        return []
+@cachier(stale_after=SHELF_LIFE)
+def get_ontology_contributors(repo_path):
+    """
+    Get individual contributors to a org/repo_path
+    repo_path is a string "org/repo"
+    """
+    url = 'https://api.github.com/repos/{}/contributors'.format(repo_path)
+    # TODO: allow use of oath token;
+    # GH has a quota for non-logged in API calls
+    time.sleep(3)
+    with closing(requests.get(url, stream=False)) as resp:
+        ok = resp.status_code == 200
+        if ok:
+            results = resp.json()
+            logging.info("RESP={}".format(results))
+            return results
+        else:
+            logging.error("Failed: {}".format(url))
+            return []
     
-def get_repo(ont_obj, args):
+def get_repo_path(ont_obj, args):
+    repo_path = None
     if 'repository' in ont_obj:
-        repo = ont_obj['repository']
+        repo_path = ont_obj['repository']
     elif 'tracker' in ont_obj:
         tracker = ont_obj['tracker']
-        if 'github' in tracker:
-            repo = tracker.replace("/issues","")
-    if repo is not None:
-        logging.info("Getting repo object for: {}".format(repo))
-        parts = repo.split("/")
-        org = parts[-2]
-        repo_name = parts[-1]
-        return get_gh_obj(args).get_organization(org).get_repo(repo_name)
+        if tracker is not None and 'github' in tracker:
+            repo_path = tracker.replace("/issues","")
+    if repo_path is not None:
+        repo_path = repo_path.replace("https://github.com/","")
+        if repo_path.endswith("/"):
+            repo_path = repo_path[:-1]
+        return repo_path
     else:
+        logging.warn("Could not get gh repo_path for ".format(ont_obj))
         return None
-        
-def get_gh_obj(args, token=None):
-    if token == None:
-        with open('.token') as f:
-            token = f.read().rstrip().lstrip()
-    return Github(token)
 
 
 # TODO: put this in common lib        
