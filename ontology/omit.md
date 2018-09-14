@@ -5,6 +5,9 @@ in_foundry: false
 contact:
   email: huang@southalabama.edu
   label: Huang, Jingshan
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY 3.0
 description: Ontology to establish data exchange standards and common data elements in the microRNA (miR) domain
 homepage: http://omit.cis.usouthal.edu/
 page: http://omit.cis.usouthal.edu/

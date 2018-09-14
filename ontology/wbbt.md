@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: wbbt
+preferredPrefix: WBbt
 contact:
   email: raymond@caltech.edu
   label: Raymond Lee
