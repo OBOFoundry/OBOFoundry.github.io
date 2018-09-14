@@ -12,6 +12,7 @@ contact:
 license:
   url: https://creativecommons.org/licenses/by/2.0/
   label: CC-BY
+  github: marijane
 build:
   checkout: git clone https://github.com/openrif/contributor-role-ontology.git
   system: git

@@ -3,7 +3,8 @@ layout: ontology_detail
 id: hom
 contact:
   email: bgee@sib.swiss
-  label: 'BgeeDB'
+  label: Frederic Bastian
+  github: fbastian
 description: This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology.
 homepage: https://github.com/BgeeDB/homology-ontology
 products:

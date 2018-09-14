@@ -7,6 +7,7 @@ license:
 contact:
   email: batchelorc@rsc.org
   label: Colin Batchelor
+  github: batchelorc
 mailing_list: "chemistry-ontologies@googlegroups.com"
 description: CHMO, the chemical methods ontology, describes methods used to
 domain: health

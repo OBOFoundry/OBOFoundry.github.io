@@ -4,6 +4,7 @@ id: ddanat
 contact:
   email: pfey@northwestern.edu
   label: Petra Fey
+  github: pfey03
 description: A structured controlled vocabulary of the anatomy of the slime-mold Dictyostelium discoideum
 domain: anatomy
 homepage: http://dictybase.org/
