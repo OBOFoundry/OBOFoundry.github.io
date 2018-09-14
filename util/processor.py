@@ -2,6 +2,7 @@
 
 __author__ = 'cjm'
 
+from github import Github
 import argparse
 import logging
 import requests
@@ -25,7 +26,8 @@ def main():
 
     parser.add_argument('-i', '--input', type=str, required=False,
                         help='Input metadata file')
-
+    parser.add_argument('-v', '--verbosity', default=0, action='count',
+                        help='Increase output verbosity')
 
     subparsers = parser.add_subparsers(dest='subcommand', help='sub-command help')
     
@@ -40,8 +42,18 @@ def main():
     parser_n = subparsers.add_parser('extract-context', help='Extracts JSON-LD context')
     parser_n.set_defaults(function=extract_context)
 
+    parser_n = subparsers.add_parser('extract-contributors', help='Queries github API for metadata about contributors')
+    parser_n.set_defaults(function=write_all_contributors)
+
     args = parser.parse_args()
 
+    if args.verbosity >= 2:
+        logging.basicConfig(level=logging.DEBUG)
+    elif args.verbosity == 1:
+        logging.basicConfig(level=logging.INFO)
+    else:
+        logging.basicConfig(level=logging.WARNING)
+    
     #print("Loading "+args.input)
     f = open(args.input, 'r') 
     obj = yaml.load(f)
@@ -150,7 +162,44 @@ def extract_context(ontologies, args):
     ctxt['@context'] = prefix_map
     print(dumps(ctxt, sort_keys=True, indent=4, separators=(',', ': ')))
 
-            
+def write_all_contributors(ontologies, args):
+    results = []
+    for obj in ontologies:
+        contribs = list(get_ontology_contributors(obj, args))
+        print('CONTRIBS={}'.format(contribs))
+        id = obj['id']
+        results.append(dict(id=id, contributors=contribs))
+    print(dumps(results, sort_keys=True, indent=4, separators=(',', ': ')))
+
+def get_ontology_contributors(ont_obj, args):
+    repo = get_repo(ont_obj, args)
+    if repo is not None:
+        return repo.get_contributors()
+    else:
+        return []
+    
+def get_repo(ont_obj, args):
+    if 'repository' in ont_obj:
+        repo = ont_obj['repository']
+    elif 'tracker' in ont_obj:
+        tracker = ont_obj['tracker']
+        if 'github' in tracker:
+            repo = tracker.replace("/issues","")
+    if repo is not None:
+        logging.info("Getting repo object for: {}".format(repo))
+        parts = repo.split("/")
+        org = parts[-2]
+        repo_name = parts[-1]
+        return get_gh_obj(args).get_organization(org).get_repo(repo_name)
+    else:
+        return None
+        
+def get_gh_obj(args, token=None):
+    if token == None:
+        with open('.token') as f:
+            token = f.read().rstrip().lstrip()
+    return Github(token)
+
 
 # TODO: put this in common lib        
 def has_obo_prefix(obj):
