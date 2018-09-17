@@ -5,6 +5,7 @@ in_foundry_order: 1
 contact:
   email: lynn.schriml@gmail.com
   label: Lynn Schriml
+  github: lschriml
 description: An ontology for describing the classification of human diseases organized by etiology.
 twitter: diseaseontology
 facebook: https://www.facebook.com/diseaseontology

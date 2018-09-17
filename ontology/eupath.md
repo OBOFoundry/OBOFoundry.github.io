@@ -4,6 +4,7 @@ id: eupath
 contact:
   email: stoeckrt@pennmedicine.upenn.edu
   label: Chris Stoeckert
+  github: cstoeckert
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY

@@ -11,6 +11,7 @@ license:
 contact:
   email: vasilevs@ohsu.edu
   label: Nicole Vasilevsky
+  github: nicolevasilevsky
 taxon:
   id: NCBITaxon:33208
   label: Metazoa

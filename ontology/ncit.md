@@ -5,6 +5,7 @@ title: NCI Thesaurus OBO Edition
 contact:
   email: haendel@ohsu.edu
   label: Melissa Haendel
+  contact: mellybelly
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4.0

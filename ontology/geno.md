@@ -9,6 +9,7 @@ tracker: https://github.com/monarch-initiative/GENO-ontology/issues
 contact:
   email: mhb120@gmail.com
   label: Matthew Brush
+  github: mbrush
 license:
   url: https://creativecommons.org/licenses/by-sa/2.0/
   label: CC-BY-SA

@@ -2,6 +2,10 @@
 layout: ontology_detail
 id: go
 in_foundry_order: 1
+contact:
+  email: david.hill@jax.org
+  label: David Hill
+  github: ukemi
 label: GO
 description: An ontology for describing the function of genes and gene products
 title: Gene Ontology

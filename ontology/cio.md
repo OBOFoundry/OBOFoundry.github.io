@@ -4,6 +4,7 @@ id: cio
 contact: 
   email: bgee@sib.swiss
   label: Frederic Bastian
+  github: fbastian
 license:
   url: https://www.gnu.org/licenses/gpl-3.0.en.html
   label: GNU GPL 3.0

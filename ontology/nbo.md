@@ -4,6 +4,7 @@ id: nbo
 contact:
   email: g.gkoutos@bham.ac.uk 
   label: George Gkoutos
+  github: gkoutos
 description: An ontology of human and animal behaviours and behavioural phenotypes
 domain: behavior
 homepage: https://github.com/obo-behavior/behavior-ontology/

@@ -9,6 +9,7 @@ build:
 contact:
   email: mah79@cam.ac.uk
   label: Midori Harris
+  github: mah11
 description: FYPO is a formal ontology of phenotypes observed in fission yeast.
 domain: phenotype
 homepage: https://github.com/pombase/fypo

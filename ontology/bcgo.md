@@ -8,6 +8,7 @@ homepage: https://github.com/obi-bcgo/bcgo
 contact:
   email: jiezheng@pennmedicine.upenn.edu
   label: Jie Zheng
+  github: zhengj2007
 products:
   - id: bcgo.owl
 tracker: https://github.com/obi-bcgo/bcgo/issues
