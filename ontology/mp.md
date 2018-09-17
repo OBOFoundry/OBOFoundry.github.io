@@ -37,7 +37,7 @@ taxon:
   id: NCBITaxon:40674
   label: Mammalia
 tracker: https://github.com/obophenotype/mammalian-phenotype-ontology/issues
-mailing_list: Phenotype editors mailing list: [https://groups.google.com/forum/#!forum/phenotype-ontologies-editors](https://groups.google.com/forum/#!forum/phenotype-ontologies-editors)
+mailing_list: Phenotype editors mailing list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
 ---
 
 The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data.
