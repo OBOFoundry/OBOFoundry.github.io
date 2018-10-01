@@ -16,5 +16,8 @@ build:
   path: archive
   method: archive
 tracker: https://github.com/EnvironmentOntology/envo/issues/
+license:
+url:https://creativecommons.org/licenses/by/4.0/
+label:CC-BY
 ---
 
