@@ -1,9 +1,15 @@
 ---
 layout: default
-title: OBO Tools
+title: Ontology Tools
 ---
 
-# OBO Tools
+# Ontology Tools
+
+This page includes links to various software and tools that have been helpful to ontology developers and users in our community. They are not directly supported or endorsed by OBO -- please contact those projects for support and bug reports.
+
+## Get Involved
+
+Join the [mailing list](https://groups.google.com/d/forum/obo-tools) for tool updates and discussion.
 
 ## Development Tools
 
@@ -40,7 +46,3 @@ BioPortal contains over 700 biomedical ontologies, including the OBO Foundry ont
 ### [AberOWL](http://aber-owl.net/)
 
 AberOWL is a repository of biological ontologies and access to reasoned versions of those ontologies. Ontolgies can be browsed by term labels or queried by Manchester OWL syntax statements.
-
-## Get Involved
-
-Join the [mailing list](https://groups.google.com/d/forum/obo-tools) for tool updates and discussion.
