@@ -5,8 +5,8 @@ contact:
   email: topalis@imbb.forth.gr
   label: Pantelis Topalis
 license:
-  url: https://www.gnu.org/licenses/gpl-3.0.en.html
-  label: GPLv3
+   url: https://creativecommons.org/publicdomain/zero/1.0/
+   label: CC0
 description: An application ontology to cover all aspects of malaria as well as the intervention attempts to control it.
 domain: health
 homepage: https://www.vectorbase.org/ontology-browser
