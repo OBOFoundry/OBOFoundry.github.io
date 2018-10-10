@@ -1,13 +1,14 @@
 ---
 layout: ontology_detail
 contact:
-  email: shimoyama@mcw.edu
-  label: Mary Shimoyama
+  email: jrsmith@mcw.edu
+  label: Jennifer Smith
+license:
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC-0
 description: Conditions under which physiological and morphological measurements are made both in the clinic and in studies involving humans or model organisms.
 domain: clinical
-homepage:
-  - http://rgd.mcw.edu/rgdweb/ontology/search.html
-  - ftp://ftp.rgd.mcw.edu/pub/ontology/experimental_condition/
+homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000
 id: xco
 products:
   - id: xco.owl
@@ -30,3 +31,6 @@ browsers:
 <img src="http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif"/>
 
 Conditions under which physiological and morphological measurements are made both in the clinic and in studies involving humans or model organisms.
+
+- [Homepage](https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000)
+- [FTP site](ftp://ftp.rgd.mcw.edu/pub/ontology/experimental_condition/)
