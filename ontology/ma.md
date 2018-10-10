@@ -4,6 +4,10 @@ id: ma
 contact:
   email: Terry.Hayamizu@jax.org
   label: Terry Hayamizu
+  github: tfhayamizu
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4.0
 description: A structured controlled vocabulary of the adult anatomy of the mouse (Mus).
 domain: anatomy
 homepage: https://github.com/obophenotype/mouse-anatomy-ontology

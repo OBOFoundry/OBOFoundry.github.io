@@ -4,6 +4,7 @@ id: fao
 contact:
   email: mah79@cam.ac.uk
   label: Midori Harris
+  github: mah11
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC-0

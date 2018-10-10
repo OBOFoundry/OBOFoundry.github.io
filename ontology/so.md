@@ -4,6 +4,9 @@ id: so
 contact:
   email: keilbeck@genetics.utah.edu
   label: Karen Eilbeck
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4.0
 description: A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.
 domain: biological sequence
 homepage: https://github.com/The-Sequence-Ontology/SO-Ontologies
@@ -12,7 +15,7 @@ page:
 products:
   - id: so.owl
   - id: so.obo
-title: Sequence types and features
+title: Sequence types and features ontology
 build:
   notes: SWITCH
   source_url: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so.obo

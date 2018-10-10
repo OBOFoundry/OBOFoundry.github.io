@@ -7,7 +7,7 @@ contact:
   label: Darren Natale
 description: An ontological representation of protein-related entities
 domain: proteins
-homepage: http://proconsortium.org
+homepage: http://proconsortium.org/pro
 documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
 products:
   - id: pr.owl

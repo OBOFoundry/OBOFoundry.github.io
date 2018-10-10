@@ -9,6 +9,7 @@ homepage: http://www.human-phenotype-ontology.org/
 contact:
   email: dr.sebastian.koehler@gmail.com
   label: Sebastian Koehler
+  github: drseb
 products:
   - id: hp.owl
   - id: hp.obo

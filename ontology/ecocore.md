@@ -12,6 +12,7 @@ build:
 contact:
   email: p.buttigieg@gmail.com 
   label: Pier Luigi Buttigieg
+  github: pbuttigieg
 description: An ontology to provide core semantics for ecological entities.
 domain: ecological functions, ecological interactions
 homepage: https://github.com/EcologicalSemantics/ecocore

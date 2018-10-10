@@ -4,6 +4,7 @@ id: ddpheno
 contact:
   email: pfey@northwestern.edu
   label: Petra Fey
+  github: pfey03
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC-0

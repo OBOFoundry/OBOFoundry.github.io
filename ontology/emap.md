@@ -4,6 +4,7 @@ id: emap
 contact:
   email: Terry.Hayamizu@jax.org
   label: Terry Hayamizu
+  github: tfhayamizu
 description: A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).
 domain: anatomy
 homepage: http://emouseatlas.org
