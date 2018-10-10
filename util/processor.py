@@ -2,18 +2,25 @@
 
 __author__ = 'cjm'
 
+from cachier import cachier
 import argparse
 import logging
 import requests
 import sys
 import os
+import time
+import datetime
 from contextlib import closing
 from SPARQLWrapper import SPARQLWrapper, JSON
 from json import dumps
+#from functools import lru_cache
 
 #from yaml import load, dump
 #from yaml import Loader, Dumper
 import yaml
+
+SHELF_LIFE = datetime.timedelta(days=7)
+#cache = lru_cache(maxsize=None)
 
 
 
@@ -25,7 +32,8 @@ def main():
 
     parser.add_argument('-i', '--input', type=str, required=False,
                         help='Input metadata file')
-
+    parser.add_argument('-v', '--verbosity', default=0, action='count',
+                        help='Increase output verbosity')
 
     subparsers = parser.add_subparsers(dest='subcommand', help='sub-command help')
     
@@ -40,8 +48,18 @@ def main():
     parser_n = subparsers.add_parser('extract-context', help='Extracts JSON-LD context')
     parser_n.set_defaults(function=extract_context)
 
+    parser_n = subparsers.add_parser('extract-contributors', help='Queries github API for metadata about contributors')
+    parser_n.set_defaults(function=write_all_contributors)
+
     args = parser.parse_args()
 
+    if args.verbosity >= 2:
+        logging.basicConfig(level=logging.DEBUG)
+    elif args.verbosity == 1:
+        logging.basicConfig(level=logging.INFO)
+    else:
+        logging.basicConfig(level=logging.WARNING)
+    
     #print("Loading "+args.input)
     f = open(args.input, 'r') 
     obj = yaml.load(f)
@@ -150,7 +168,63 @@ def extract_context(ontologies, args):
     ctxt['@context'] = prefix_map
     print(dumps(ctxt, sort_keys=True, indent=4, separators=(',', ': ')))
 
-            
+def write_all_contributors(ontologies, args):
+    """
+    query github API for all contributors to an ontology,
+    write results as json
+    """
+    results = []
+    for ont_obj in ontologies:
+        id = ont_obj['id']
+        logging.info("Getting info for {}".format(id))
+        repo_path = get_repo_path(ont_obj, args)
+        if repo_path is not None:
+            contribs = list(get_ontology_contributors(repo_path))
+            print('CONTRIBS({})=={}'.format(id, contribs))
+            for c in contribs:
+                print('#{}\t{}\n'.format(id, c['login']))
+            results.append(dict(id=id, contributors=contribs))
+        else:
+            logging.warn("No repo_path declared for {}".format(id))
+    print(dumps(results, sort_keys=True, indent=4, separators=(',', ': ')))
+
+@cachier(stale_after=SHELF_LIFE)
+def get_ontology_contributors(repo_path):
+    """
+    Get individual contributors to a org/repo_path
+    repo_path is a string "org/repo"
+    """
+    url = 'https://api.github.com/repos/{}/contributors'.format(repo_path)
+    # TODO: allow use of oath token;
+    # GH has a quota for non-logged in API calls
+    time.sleep(3)
+    with closing(requests.get(url, stream=False)) as resp:
+        ok = resp.status_code == 200
+        if ok:
+            results = resp.json()
+            logging.info("RESP={}".format(results))
+            return results
+        else:
+            logging.error("Failed: {}".format(url))
+            return []
+    
+def get_repo_path(ont_obj, args):
+    repo_path = None
+    if 'repository' in ont_obj:
+        repo_path = ont_obj['repository']
+    elif 'tracker' in ont_obj:
+        tracker = ont_obj['tracker']
+        if tracker is not None and 'github' in tracker:
+            repo_path = tracker.replace("/issues","")
+    if repo_path is not None:
+        repo_path = repo_path.replace("https://github.com/","")
+        if repo_path.endswith("/"):
+            repo_path = repo_path[:-1]
+        return repo_path
+    else:
+        logging.warn("Could not get gh repo_path for ".format(ont_obj))
+        return None
+
 
 # TODO: put this in common lib        
 def has_obo_prefix(obj):

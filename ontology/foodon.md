@@ -4,6 +4,7 @@ id: foodon
 contact:
   email: damion.dooley@bccdc.ca
   label: Damion Dooley
+  github: Public-Health-Bioinformatics
 description: A broadly scoped ontology representing entities which bear a “food role”.  It encompasses materials in natural ecosystems and food webs as well as human-centric categorization and handling of food.
 domain: food
 homepage: http://foodontology.github.io/foodon/

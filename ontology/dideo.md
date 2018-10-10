@@ -6,6 +6,7 @@ description: The Potential Drug-drug Interaction and Potential Drug-drug Interac
 contact:
   email: mbrochhausen@gmail.com
   label: Mathias Brochhausen
+  github: mbrochhausen
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4.0

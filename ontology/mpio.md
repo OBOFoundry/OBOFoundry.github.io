@@ -5,6 +5,7 @@ title: Minimum PDDI Information Ontology
 contact:
   email: mbrochhausen@uams.edu
   label: Mathias Brochhausen
+  github: mbrochhausen
 description: An ontology of minimum information regarding potential drug-drug interaction information.
 domain: health
 homepage: https://github.com/MPIO-Developers/MPIO

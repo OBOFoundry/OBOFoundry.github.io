@@ -4,7 +4,8 @@ id: gaz
 contact:
   email: lschriml@som.umaryland.edu
   label: Lynn Schriml
-homepage: http://gensc.org/gc_wiki/index.php/GAZ_Project
+  github: lschriml
+homepage: http://environmentontology.github.io/gaz/
 description: A gazetteer constructed on ontological principles
 products:
   - id: gaz.owl
@@ -15,5 +16,8 @@ build:
   path: archive
   method: archive
 tracker: https://github.com/EnvironmentOntology/envo/issues/
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY
 ---
 

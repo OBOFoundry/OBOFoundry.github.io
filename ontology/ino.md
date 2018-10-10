@@ -7,8 +7,8 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 contact:
-  email: Yongqun Oliver He
-  label: yongqunh@med.umich.edu
+  email: yongqunh@med.umich.edu
+  label: Yongqun Oliver He
 homepage: https://github.com/INO-ontology/ino
 tracker: https://github.com/INO-ontology/ino/issues
 products:

@@ -5,12 +5,13 @@ title: NCI Thesaurus OBO Edition
 contact:
   email: haendel@ohsu.edu
   label: Melissa Haendel
+  contact: mellybelly
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY 3.0
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4.0
 homepage: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
 tracker: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
-description: The NCI Thesaurus (NCIt) OBO Edition project aims to increase integration of the NCIt with OBO Library ontologies. NCIt is a reference terminology that includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities. NCIt OBO Edition releases should be considered experimental.
+description: NCI Thesaurus (NCIt)is a reference terminology that includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities. The NCIt OBO Edition aims to increase integration of the NCIt with OBO Library ontologies. NCIt OBO Edition releases should be considered experimental.
 products:
   - id: ncit.owl
     title: NCIt OBO Edition OWL format
@@ -25,12 +26,9 @@ products:
   - id: ncit/neoplasm-core.owl
     title: NCIt Plus Neoplasm Core
     description: "This is a subset extracted from NCIt Plus, based on the [NCIt Neoplasm Core value set](https://evs.nci.nih.gov/ftp1/NCI_Thesaurus/Neoplasm/About_Core.html) as a starting point."
-license:
-  url: ftp://ftp1.nci.nih.gov/pub/cacore/EVS/NCI_Thesaurus/ThesaurusTermsofUse.pdf
-  label: See document
 ---
 
-The NCI Thesaurus is an ontology-like vocabulary that includes broad
+The NCI Thesaurus is a reference terminology that includes broad
 coverage of the cancer domain, including cancer related diseases,
 findings and abnormalities; anatomy; agents, drugs and chemicals;
 genes and gene products and so on. In certain areas, like cancer
@@ -49,6 +47,12 @@ href="http://cancer.gov/">http://cancer.gov</a>, numerous portals
 supporting consortia and other communities of researchers, and is used
 in the caCORE as the semantic base for metadata and objects that form
 the infrastructure upon which the NCICB portals are built (see <a
-href="http://ncicb.nci.nih.gov/">http://ncicb.nci.nih.gov</a>). It is
-published under an open content license in a number of formats
-including OWL.
+href="http://ncicb.nci.nih.gov/">http://ncicb.nci.nih.gov</a>).
+
+The NCI Thesaurus is released under the Creative Commons Attribution 4.0 
+International license (CC BY 4.0). The NCI Thesaurus is produced by the 
+Enterprise Vocabulary Services group of the Center for Biomedical 
+Informatics and Information Technology, National Cancer Institute, Maryland,
+USA. The name "NCI Thesaurus" is trademarked. Only the NCI Thesaurus 
+published by the NCI can be released under this name (see
+ftp://ftp1.nci.nih.gov/pub/cacore/EVS/NCI_Thesaurus/ThesaurusTermsofUse.htm).

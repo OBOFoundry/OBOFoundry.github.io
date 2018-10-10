@@ -4,6 +4,7 @@ id: fao
 contact:
   email: mah79@cam.ac.uk
   label: Midori Harris
+  github: mah11
 description: A structured controlled vocabulary for the anatomy of fungi.
 domain: anatomy
 tracker: https://github.com/obophenotype/fungal-anatomy-ontology/issues

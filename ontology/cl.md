@@ -18,6 +18,7 @@ integration_server: http://build.berkeleybop.org/job/build-cl/
 contact:
   label: Alexander Diehl
   email: addiehl@buffalo.edu
+  github: addiehl
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY

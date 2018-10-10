@@ -10,6 +10,7 @@ tracker: https://github.com/OmniSearch/NCRO-Ontology-Files/issues
 contact: 
   label: Jingshan Huang
   email: huang@southalabama.edu
+  github: Huang-OMIT
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4

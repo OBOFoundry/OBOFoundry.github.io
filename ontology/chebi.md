@@ -13,6 +13,7 @@ twitter: chebit
 contact:
   email: gowen@ebi.ac.uk
   label: Gareth Owen
+  github: "G-Owen"
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4.0

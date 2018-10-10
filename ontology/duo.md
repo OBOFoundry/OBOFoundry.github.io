@@ -12,6 +12,7 @@ build:
 contact:
   email: mcourtot@gmail.com
   label: Melanie Courtot
+  github: mcourtot
 description: DUO is an ontology which represent data use conditions.
 homepage: https://github.com/EBISPOT/DUO
 products:

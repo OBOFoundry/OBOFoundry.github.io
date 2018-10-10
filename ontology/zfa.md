@@ -5,6 +5,7 @@ in_foundry_order: 1
 contact:
   email: van_slyke@zfin.org
   label: Ceri Van Slyke
+  github: cerivs
 description: A structured controlled vocabulary of the anatomy and development of the Zebrafish
 domain: anatomy
 homepage: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources

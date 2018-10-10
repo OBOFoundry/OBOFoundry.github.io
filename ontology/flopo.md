@@ -4,6 +4,7 @@ id: flopo
 contact:
   email: robert.hoehndorf@kaust.edu.sa
   label: Robert Hoehndorf
+  github: leechuck
 description: Traits and phenotypes of flowering plants occurring in digitized Floras
 domain: phenotype
 homepage: https://github.com/flora-phenotype-ontology/flopoontology

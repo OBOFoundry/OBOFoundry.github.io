@@ -9,6 +9,7 @@ license:
 contact:
   email: yongqunh@med.umich.edu
   label: Yongqun Oliver He
+  github: yongqunh
 homepage: https://github.com/ICO-ontology/ICO
 tracker: https://github.com/ICO-ontology/ICO/issues 
 products:

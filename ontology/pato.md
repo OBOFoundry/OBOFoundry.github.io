@@ -11,6 +11,7 @@ description: An ontology of phenotypic qualities (properties, attributes or char
 contact:
   email: g.gkoutos@gmail.com
   label: George Gkoutos
+  github: gkoutos
 domain: phenotype
 homepage: https://github.com/pato-ontology/pato/
 repository: https://github.com/pato-ontology/pato/

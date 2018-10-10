@@ -5,6 +5,7 @@ in_foundry: false
 contact:
   email: rlwalls2008@gmail.com
   label: Ramona Walls
+  github: ramonawalls
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC-BY 1.0
