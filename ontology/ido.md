@@ -4,6 +4,7 @@ id: ido
 contact:
   email: Lindsay.Cowell@utsouthwestern.edu
   label: Lindsay Cowell
+  github: lgcowell
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC-BY 3.0 

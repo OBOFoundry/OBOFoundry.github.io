@@ -10,6 +10,7 @@ build:
 contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
+  github: cmungall
 description: An anatomical and developmental ontology for cephalopods
 domain: anatomy
 homepage: https://github.com/obophenotype/cephalopod-ontology

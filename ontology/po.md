@@ -14,6 +14,7 @@ build:
 contact:
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
+  github: jaiswalp
 description: "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data."
 domain: anatomy and development
 homepage: http://browser.planteome.org/amigo

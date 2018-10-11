@@ -16,6 +16,7 @@ tracker: https://github.com/RDruzinsky/feedontology/issues
 contact:
   email: druzinsk@uic.edu
   label: Robert Druzinsky
+  github: RDruzinsky
 dependencies:
  - id: uberon
 products:

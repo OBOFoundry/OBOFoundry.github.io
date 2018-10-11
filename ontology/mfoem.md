@@ -4,6 +4,7 @@ id: mfoem
 contact:
   email: janna.hastings@gmail.com
   label: Janna Hastings
+  github: jannahastings
 description: An ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings.
 domain: health
 homepage: https://github.com/jannahastings/emotion-ontology

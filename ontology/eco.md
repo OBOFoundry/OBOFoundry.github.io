@@ -23,6 +23,7 @@ build:
 contact:
   email: mgiglio@som.umaryland.edu
   label: Michelle Giglio 
+  github: mgiglio99
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/25052702
     title: "Standardized description of scientific evidence using the Evidence Ontology (ECO)"
