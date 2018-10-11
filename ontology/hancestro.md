@@ -11,7 +11,7 @@ products:
 title: Human Ancestry Ontology
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: Creative Commons CC-BY, version 4.0
+  label: CC-BY 4.0
 
 ---
 
