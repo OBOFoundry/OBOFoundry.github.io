@@ -35,7 +35,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Plant Trait Ontology (to): [Ontologies as integrative tools for plant science.](http://www.ncbi.nlm.nih.gov/pubmed/22847540)
 - Porifera Ontology (poro): [The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy ontology](http://dx.doi.org/10.1186/2041-1480-5-39)
 - Rat Strain Ontology (rs): [Rat Strain Ontology: structured controlled vocabulary designed to facilitate access to strain data at RGD.](http://www.ncbi.nlm.nih.gov/pubmed/24267899)
-- Sequence types and features (so): [The Sequence Ontology: a tool for the unification of genome annotations.](http://www.ncbi.nlm.nih.gov/pubmed/15892872)
+- Sequence types and features ontology (so): [The Sequence Ontology: a tool for the unification of genome annotations.](http://www.ncbi.nlm.nih.gov/pubmed/15892872)
 - The Drug-Drug Interactions Ontology (dinto): [DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug–Drug Interactions and Their Mechanisms.](http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119)
 - Uberon multi-species anatomy ontology (uberon): [Uberon, an integrative multi-species anatomy ontology](http://www.ncbi.nlm.nih.gov/pubmed/22293552)
 - Xenopus Anatomy Ontology (xao): [An ontology for Xenopus anatomy and development.](http://www.ncbi.nlm.nih.gov/pubmed/18817563)

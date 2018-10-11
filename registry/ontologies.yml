@@ -1,7 +1,7 @@
 ontologies:
 - browsers:
   - {label: BioPortal, title: BioPortal Browser, url: 'http://bioportal.bioontology.org/ontologies/BFO?p=classes'}
-  contact: {email: phismith@buffalo.edu, label: Barry Smith}
+  contact: {email: phismith@buffalo.edu, github: phismith, label: Barry Smith}
   depicted_by: https://avatars2.githubusercontent.com/u/12972134?v=3&s=200
   description: The upper level ontology upon which OBO Foundry ontologies are built.
   domain: upper
@@ -25,7 +25,7 @@ ontologies:
   browsers:
   - {label: CHEBI, title: EBI CHEBI Browser, url: 'http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView'}
   build: {infallible: 1, method: obo2owl, source_url: 'ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo'}
-  contact: {email: gowen@ebi.ac.uk, label: Gareth Owen}
+  contact: {email: gowen@ebi.ac.uk, github: G-Owen, label: Gareth Owen}
   description: A structured classification of molecular entities of biological interest
     focusing on 'small' chemical compounds.
   domain: biochemistry
@@ -53,7 +53,7 @@ ontologies:
   browsers:
   - {label: DO, title: DO Browser, url: 'http://www.disease-ontology.org/'}
   build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.obo'}
-  contact: {email: lynn.schriml@gmail.com, label: Lynn Schriml}
+  contact: {email: lynn.schriml@gmail.com, github: lschriml, label: Lynn Schriml}
   description: An ontology for describing the classification of human diseases organized
     by etiology.
   domain: disease
@@ -87,6 +87,7 @@ ontologies:
     user: http://www.informatics.jax.org/disease
 - browsers:
   - {label: AmiGO, title: Gene Ontology AmiGO 2 Browser, url: 'http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab'}
+  contact: {email: david.hill@jax.org, github: ukemi, label: David Hill}
   dependencies:
   - {id: uberon, subset: go/extensions/uberon_import.owl}
   - {id: cl, subset: go/extensions/cl_import.owl}
@@ -140,6 +141,14 @@ ontologies:
   - {description: Classes added to ncbitaxon for groupings such as prokaryotes, id: go/extensions/go-taxon-groupings.owl,
     ontology_purl: 'http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl',
     page: 'http://geneontology.org/page/download-ontology', title: GO Taxon Groupings}
+  - {description: 'Equivalent to go.owl, but released daily. Note the snapshot release
+      is not archived.', id: snapshot/go.owl, ontology_purl: 'http://purl.obolibrary.org/obo/snapshot/go.owl',
+    page: 'http://geneontology.org/page/download-ontology', title: 'GO (OWL edition),
+      daily snapshot release'}
+  - {description: 'Equivalent to go.owl, but released daily. Note the snapshot release
+      is not archived.', id: snapshot/go.obo, ontology_purl: 'http://purl.obolibrary.org/obo/snapshot/go.obo',
+    page: 'http://geneontology.org/page/download-ontology', title: 'GO (OBO Format
+      edition), daily snapshot release'}
   taxon: {id: 'NCBITaxon:1', label: All life}
   termgenie: http://go.termgenie.org
   title: Gene Ontology
@@ -178,7 +187,7 @@ ontologies:
 - browsers:
   - {label: BioPortal, title: BioPortal Ontology Browser, url: 'https://bioportal.bioontology.org/ontologies/PATO'}
   build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo'}
-  contact: {email: g.gkoutos@gmail.com, label: George Gkoutos}
+  contact: {email: g.gkoutos@gmail.com, github: gkoutos, label: George Gkoutos}
   description: An ontology of phenotypic qualities (properties, attributes or characteristics)
   domain: phenotype
   homepage: https://github.com/pato-ontology/pato/
@@ -200,7 +209,8 @@ ontologies:
   - {label: Planteome, title: Planteome browser, url: 'http://browser.planteome.org/amigo'}
   build: {checkout: 'git clone https://github.com/Planteome/plant-ontology.git', infallible: 1,
     method: vcs, system: git}
-  contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
+  contact: {email: jaiswalp@science.oregonstate.edu, github: jaiswalp, label: Pankaj
+      Jaiswal}
   description: The Plant Ontology is a structured vocabulary and database resource
     that links plant anatomy, morphology and growth and development to plant genomics
     data.
@@ -255,7 +265,7 @@ ontologies:
   development: {id_policy: 'https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+PURLs'}
   documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
   domain: proteins
-  homepage: http://proconsortium.org
+  homepage: http://proconsortium.org/pro
   id: pr
   in_foundry_order: 1
   layout: ontology_detail
@@ -273,7 +283,7 @@ ontologies:
   title: PRotein Ontology (PRO)
   tracker: http://purl.obolibrary.org/obo/pr/tracker
 - build: {infallible: 0, method: obo2owl, source_url: 'https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo'}
-  contact: {email: segerdell.erik@gmail.com, label: Erik Segerdell}
+  contact: {email: segerdell.erik@gmail.com, github: seger, label: Erik Segerdell}
   description: Anatomy and development of the African clawed frog (<i>Xenopus laevis</i>).
   domain: anatomy
   homepage: http://www.xenbase.org/anatomy/xao.do?method=display
@@ -297,7 +307,7 @@ ontologies:
   tracker: https://github.com/xenopus-anatomy/xao/issues
 - build: {infallible: 1, method: obo2owl, notes: may be ready to switch to vcs soon,
     source_url: 'https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/src/zebrafish_anatomy.obo'}
-  contact: {email: van_slyke@zfin.org, label: Ceri Van Slyke}
+  contact: {email: van_slyke@zfin.org, github: cerivs, label: Ceri Van Slyke}
   description: A structured controlled vocabulary of the anatomy and development of
     the Zebrafish
   domain: anatomy
@@ -379,7 +389,7 @@ ontologies:
   - {id: apo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/apo.obo'}
   taxon: {id: 'NCBITaxon:4890', label: Ascomycota}
   title: Ascomycete phenotype ontology
-- contact: {email: card@mcmaster.ca, label: CARD}
+- contact: {email: card@mcmaster.ca, github: raphenya, label: CARD}
   description: Antibiotic resistance genes and mutations
   homepage: https://github.com/arpcard/aro
   id: aro
@@ -392,7 +402,8 @@ ontologies:
   - {id: aro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/aro.owl'}
   title: Antibiotic Resistance Ontology
   tracker: https://github.com/arpcard/aro/issues
-- contact: {email: jiezheng@pennmedicine.upenn.edu, label: Jie Zheng}
+- contact: {email: jiezheng@pennmedicine.upenn.edu, github: zhengj2007, label: Jie
+      Zheng}
   description: An application ontology built for beta cell genomics studies.
   homepage: https://github.com/obi-bcgo/bcgo
   id: bcgo
@@ -405,7 +416,7 @@ ontologies:
   - {id: bcgo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/bcgo.owl'}
   title: Beta Cell Genomics Ontology
   tracker: https://github.com/obi-bcgo/bcgo/issues
-- contact: {email: rlwalls2008@gmail.com, label: Ramona Walls}
+- contact: {email: rlwalls2008@gmail.com, github: ramonawalls, label: Ramona Walls}
   description: An ontology to support the interoperability of biodiversity data, including
     data on museum collections, environmental/metagenomic samples, and ecological
     surveys.
@@ -422,7 +433,7 @@ ontologies:
   tracker: https://github.com/tucotuco/bco/issues
 - build: {checkout: 'git clone https://github.com/obophenotype/biological-spatial-ontology.git',
     infallible: 1, method: vcs, path: src/ontology, system: git}
-  contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
+  contact: {email: cjmungall@lbl.gov, github: cmungall, label: Chris Mungall}
   description: An ontology for respresenting spatial concepts, anatomical axes, gradients,
     regions, planes, sides, and surfaces
   domain: anatomy
@@ -459,7 +470,7 @@ ontologies:
       sources'}
   title: BRENDA tissue / enzyme source
 - build: {method: obo2owl, notes: moving to owl soon, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/caro/caro.obo'}
-  contact: {email: haendel@ohsu.edu, label: Melissa Haendel}
+  contact: {email: haendel@ohsu.edu, github: mellybelly, label: Melissa Haendel}
   description: An upper level ontology to facilitate interoperability between existing
     anatomy ontologies for different species
   domain: anatomy
@@ -488,7 +499,7 @@ ontologies:
   title: Comparative Data Analysis Ontology
 - build: {checkout: 'git clone https://github.com/obophenotype/cephalopod-ontology.git',
     method: vcs, path: src/ontology, system: git}
-  contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
+  contact: {email: cjmungall@lbl.gov, github: cmungall, label: Chris Mungall}
   description: An anatomical and developmental ontology for cephalopods
   domain: anatomy
   homepage: https://github.com/obophenotype/cephalopod-ontology
@@ -521,7 +532,7 @@ ontologies:
   products:
   - {id: cheminf.owl, ontology_purl: 'http://purl.obolibrary.org/obo/cheminf.owl'}
   title: Chemical Information Ontology
-- contact: {email: batchelorc@rsc.org, label: Colin Batchelor}
+- contact: {email: batchelorc@rsc.org, github: batchelorc, label: Colin Batchelor}
   description: CHMO, the chemical methods ontology, describes methods used to
   domain: health
   homepage: https://github.com/rsc-ontologies/rsc-cmo
@@ -536,7 +547,7 @@ ontologies:
   title: Chemical Methods Ontology
   tracker: https://github.com/rsc-ontologies/rsc-cmo/issues
 - browsers: null
-  contact: {email: bgee@sib.swiss, label: Frederic Bastian}
+  contact: {email: bgee@sib.swiss, github: fbastian, label: Frederic Bastian}
   description: An ontology to capture confidence information about annotations.
   homepage: https://github.com/BgeeDB/confidence-information-ontology
   id: cio
@@ -552,7 +563,7 @@ ontologies:
 - build: {checkout: 'git clone https://github.com/obophenotype/cell-ontology.git',
     email_cc: cl_edit@googlegroups.com, infallible: 1, method: vcs, system: git}
   canonical: cl.owl
-  contact: {email: addiehl@buffalo.edu, label: Alexander Diehl}
+  contact: {email: addiehl@buffalo.edu, github: addiehl, label: Alexander Diehl}
   dependencies:
   - {id: uberon}
   - {id: go}
@@ -650,15 +661,15 @@ ontologies:
       measurement method and experimental condition ontologies: expansion, improvements
       and new applications.'}
   title: Clinical measurement ontology
-- build: {checkout: 'git clone https://github.com/openrif/contributor-role-ontology.git',
+- build: {checkout: 'git clone https://github.com/data2health/contributor-role-ontology.git',
     path: src/ontology, system: git}
-  contact: {email: whimar@ohsu.edu, label: Marijane White}
+  contact: {email: whimar@ohsu.edu, github: marijane, label: Marijane White}
   description: A classification of the diverse roles performed in the work leading
     to a published research output in the sciences. Its purpose to provide transparency
     in contributions to scholarly published work, to enable improved systems of attribution,
     credit, and accountability.
   domain: scholarly contribution roles
-  homepage: https://github.com/openrif/contributor-role-ontology
+  homepage: https://github.com/data2health/contributor-role-ontology
   id: cro
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
@@ -667,10 +678,10 @@ ontologies:
   products:
   - {id: cro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/cro.owl', title: CRO}
   title: Contributor Role Ontology
-  tracker: https://github.com/openrif/contributor-role-ontology/issues
+  tracker: https://github.com/data2health/contributor-role-ontology/issues
 - build: {checkout: 'git clone https://github.com/obophenotype/ctenophore-ontology.git',
     method: vcs, path: ., system: git}
-  contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
+  contact: {email: cjmungall@lbl.gov, github: cmungall, label: Chris Mungall}
   dependencies:
   - {id: uberon}
   - {id: ro}
@@ -704,7 +715,7 @@ ontologies:
   title: Cardiovascular Disease Ontology
   tracker: https://github.com/OpenLHS/CVDO/issues
 - build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_anatomy.obo'}
-  contact: {email: pfey@northwestern.edu, label: Petra Fey}
+  contact: {email: pfey@northwestern.edu, github: pfey03, label: Petra Fey}
   description: A structured controlled vocabulary of the anatomy of the slime-mold
     Dictyostelium discoideum
   domain: anatomy
@@ -722,7 +733,7 @@ ontologies:
   tracker: https://github.com/dictyBase/migration-data/issues
   twitter: dictybase
 - build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_phenotypes.obo'}
-  contact: {email: pfey@northwestern.edu, label: Petra Fey}
+  contact: {email: pfey@northwestern.edu, github: pfey03, label: Petra Fey}
   description: A structured controlled vocabulary of phenotypes of the slime-mould
     <i>Dictyostelium discoideum</i>.
   domain: anatomy
@@ -738,7 +749,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:44689', label: Dictyostelium discoideum}
   title: Dictyostelium discoideum phenotype ontology
   twitter: dictybase
-- contact: {email: mbrochhausen@gmail.com, label: Mathias Brochhausen}
+- contact: {email: mbrochhausen@gmail.com, github: mbrochhausen, label: Mathias Brochhausen}
   description: The Potential Drug-drug Interaction and Potential Drug-drug Interaction
     Evidence Ontology
   homepage: https://github.com/DIDEO/DIDEO
@@ -771,7 +782,7 @@ ontologies:
 - browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000347'}
   build: {infallible: 0, method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/fbcv/dpo.owl'}
-  contact: {email: temj2@cam.ac.uk, label: Tamsin Jones}
+  contact: {email: cp390@cam.ac.uk, label: Clare Pilgrim}
   description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
   domain: phenotype
   homepage: http://purl.obolibrary.org/obo/fbcv
@@ -810,7 +821,7 @@ ontologies:
   title: The Drug Ontology
   tracker: https://ontology.atlassian.net/browse/DRON
 - build: {checkout: 'git clone https://github.com/EBISPOT/duo.git', path: ., system: git}
-  contact: {email: mcourtot@gmail.com, label: Melanie Courtot}
+  contact: {email: mcourtot@gmail.com, github: mcourtot, label: Melanie Courtot}
   dependencies:
   - {id: iao}
   - {id: bfo}
@@ -828,7 +839,7 @@ ontologies:
   title: The Data Use Ontology
   tracker: https://github.com/EBISPOT/DUO/issues
 - build: {infallible: 1, method: obo2owl, notes: switch to vcs, source_url: 'https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.obo'}
-  contact: {email: mgiglio@som.umaryland.edu, label: Michelle Giglio}
+  contact: {email: mgiglio@som.umaryland.edu, github: mgiglio99, label: Michelle Giglio}
   description: An ontology for experimental and other evidence statements.
   domain: experiments
   funded_by: ['http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400']
@@ -858,7 +869,7 @@ ontologies:
     user: http://geneontology.org
 - build: {checkout: 'git clone https://github.com/EcologicalSemantics/ecocore.git',
     path: ., system: git}
-  contact: {email: p.buttigieg@gmail.com, label: Pier Luigi Buttigieg}
+  contact: {email: p.buttigieg@gmail.com, github: pbuttigieg, label: Pier Luigi Buttigieg}
   dependencies:
   - {id: pco}
   - {id: ro}
@@ -910,13 +921,15 @@ ontologies:
   title: Human developmental anatomy, abstract
   tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
 - build: {method: obo2owl, notes: new url soon, source_url: 'ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAPA.obo'}
-  contact: {email: Terry.Hayamizu@jax.org, label: Terry Hayamizu}
+  contact: {email: Terry.Hayamizu@jax.org, github: tfhayamizu, label: Terry Hayamizu}
   description: Abstract (i.e. non-stage specific) stage-specific anatomical structures
     of the mouse.
   domain: anatomy
   homepage: http://emouseatlas.org
   id: emapa
   layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/emapa.owl
   page: http://www.obofoundry.org/wiki/index.php/EMAPA:Main_Page
   products:
@@ -928,7 +941,7 @@ ontologies:
   - {description: GXD, seeAlso: 'https://www.biosharing.org/biodbcore-000659', user: 'http://www.informatics.jax.org/expression.shtml'}
 - build: {checkout: 'git clone https://github.com/EnvironmentOntology/envo.git', email_cc: cjmungall@lbl.gov,
     infallible: 1, method: vcs, path: ., system: git}
-  contact: {email: p.buttigieg@gmail.com, label: Pier Luigi Buttigieg}
+  contact: {email: p.buttigieg@gmail.com, github: pbuttigieg, label: Pier Luigi Buttigieg}
   dependencies:
   - {id: uberon}
   - {id: pco}
@@ -998,7 +1011,8 @@ ontologies:
   - {id: ero.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ero.owl'}
   title: eagle-i resource ontology
   tracker: null
-- contact: {email: stoeckrt@pennmedicine.upenn.edu, label: Chris Stoeckert}
+- contact: {email: stoeckrt@pennmedicine.upenn.edu, github: cstoeckert, label: Chris
+      Stoeckert}
   depicted_by: http://meetings.embo.org/files/2017-06/eupath.jpg
   description: An ontology is developed to support Eukaryotic Pathogen Database Bioinformatics
     Resource Center sites (EuPathDB; http://eupathdb.org).
@@ -1030,12 +1044,14 @@ ontologies:
   title: Exposure ontology
 - build: {checkout: 'git clone https://github.com/obophenotype/fungal-anatomy-ontology.git',
     infallible: 1, method: vcs, system: git}
-  contact: {email: dinglis@stanford.edu, label: Diane Inglis}
+  contact: {email: mah79@cam.ac.uk, github: mah11, label: Midori Harris}
   description: A structured controlled vocabulary for the anatomy of fungi.
   domain: anatomy
   homepage: http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/
   id: fao
   layout: ontology_detail
+  license: {label: CC-0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'http://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/fao.owl
   page: http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/#description
   products:
@@ -1105,7 +1121,7 @@ ontologies:
 - browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000013'}
   build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/fbcv.owl'}
-  contact: {email: temj2@cam.ac.uk, label: Tamsin Jones}
+  contact: {email: cp390@cam.ac.uk, label: Clare Pilgrim}
   description: A structured controlled vocabulary used for various aspects of annotation
     by FlyBase.
   domain: null
@@ -1130,7 +1146,7 @@ ontologies:
 - browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008'}
   build: {infallible: 0, method: obo2owl, source_url: 'https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv/releases/fbdv.owl'}
-  contact: {email: temj2@cam.ac.uk, label: Tamsin Jones}
+  contact: {email: cp390@cam.ac.uk, label: Clare Pilgrim}
   description: A structured controlled vocabulary of the development of Drosophila
     melanogaster.
   domain: development
@@ -1160,7 +1176,8 @@ ontologies:
   - {id: fix.obo, ontology_purl: 'http://purl.obolibrary.org/obo/fix.obo'}
   title: Physico-chemical methods and properties
 - build: {method: owl2obo, source_url: 'https://github.com/flora-phenotype-ontology/flopoontology/raw/master/ontology/flopo.owl'}
-  contact: {email: robert.hoehndorf@kaust.edu.sa, label: Robert Hoehndorf}
+  contact: {email: robert.hoehndorf@kaust.edu.sa, github: leechuck, label: Robert
+      Hoehndorf}
   description: Traits and phenotypes of flowering plants occurring in digitized Floras
   domain: phenotype
   homepage: https://github.com/flora-phenotype-ontology/flopoontology
@@ -1194,7 +1211,8 @@ ontologies:
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Foundational Model of Anatomy Ontology (subset)
   tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
-- contact: {email: damion.dooley@bccdc.ca, label: Damion Dooley}
+- contact: {email: damion.dooley@bccdc.ca, github: Public-Health-Bioinformatics, label: Damion
+      Dooley}
   dependencies:
   - {id: uberon}
   - {id: ro}
@@ -1223,7 +1241,7 @@ ontologies:
   title: FOODON
   tracker: https://github.com/FoodOntology/foodon/issues/
 - build: {infallible: 1, method: obo2owl, source_url: 'https://raw.githubusercontent.com/pombase/fypo/master/release/fypo.owl'}
-  contact: {email: mah79@cam.ac.uk, label: Midori Harris}
+  contact: {email: mah79@cam.ac.uk, github: mah11, label: Midori Harris}
   depicted_by: http://www.pombase.org/sites/pombase.org/files/images/fypo_logo_tiny.png
   description: FYPO is a formal ontology of phenotypes observed in fission yeast.
   domain: phenotype
@@ -1249,11 +1267,13 @@ ontologies:
         yeast, url: 'https://www.pombase.org/term/FYPO:0000059'}
     user: https://www.pombase.org
 - build: {method: archive, path: archive, source_url: 'http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
-  contact: {email: lschriml@som.umaryland.edu, label: Lynn Schriml}
+  contact: {email: lschriml@som.umaryland.edu, github: lschriml, label: Lynn Schriml}
   description: A gazetteer constructed on ontological principles
-  homepage: http://gensc.org/gc_wiki/index.php/GAZ_Project
+  homepage: http://environmentontology.github.io/gaz/
   id: gaz
   layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/gaz.owl
   products:
   - {id: gaz.owl, ontology_purl: 'http://purl.obolibrary.org/obo/gaz.owl'}
@@ -1283,7 +1303,7 @@ ontologies:
   tracker: https://github.com/GenEpiO/genepio/issues/
 - build: {checkout: 'git clone https://github.com/monarch-initiative/GENO-ontology.git',
     path: src/ontology, system: git}
-  contact: {email: mhb120@gmail.com, label: Matthew Brush}
+  contact: {email: mhb120@gmail.com, github: mbrush, label: Matthew Brush}
   description: An integrated ontology for representing the genetic variations described
     in genotypes, and their causal relationships to phenotype and diseases.
   domain: genotype-to-phenotype associations
@@ -1341,7 +1361,7 @@ ontologies:
   title: Hymenoptera Anatomy Ontology
 - build: {checkout: 'git clone https://github.com/BgeeDB/homology-ontology.git', method: vcs,
     path: src/ontology, system: git}
-  contact: {email: bgee@sib.swiss, label: BgeeDB}
+  contact: {email: bgee@sib.swiss, github: fbastian, label: Frederic Bastian}
   description: This ontology represents concepts related to homology, as well as other
     concepts used to describe similarity and non-homology.
   homepage: https://github.com/BgeeDB/homology-ontology
@@ -1359,7 +1379,8 @@ ontologies:
   - {label: HPO, title: Charite HPO Browser, url: 'http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118'}
   - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/HP:0000118'}
   build: {infallible: 1, method: archive, path: archive/hp, source_url: 'http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
-  contact: {email: dr.sebastian.koehler@gmail.com, label: Sebastian Koehler}
+  contact: {email: dr.sebastian.koehler@gmail.com, github: drseb, label: Sebastian
+      Koehler}
   description: A structured and controlled vocabulary for the phenotypic features
     encountered in human hereditary and other disease.
   domain: phenotype
@@ -1368,6 +1389,7 @@ ontologies:
   jobs:
   - {id: 'https://travis-ci.org/obophenotype/human-phenotype-ontology', type: travis-ci}
   layout: ontology_detail
+  mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
   ontology_purl: http://purl.obolibrary.org/obo/hp.owl
   products:
   - {id: hp.owl, ontology_purl: 'http://purl.obolibrary.org/obo/hp.owl'}
@@ -1398,7 +1420,8 @@ ontologies:
   - {id: hsapdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/hsapdv.obo'}
   title: Human Developmental Stages
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/iao.owl'}
-  contact: {email: alanruttenberg@gmail.com, label: Alan Ruttenberg}
+  contact: {email: jiezheng@pennmedicine.upenn.edu, github: zhengj2007, label: Jie
+      Zheng}
   depicted_by: https://avatars0.githubusercontent.com/u/13591168?v=3&s=200
   description: An ontology of information entities.
   domain: information
@@ -1423,7 +1446,7 @@ ontologies:
     title: ontology of document acts
   title: Information Artifact Ontology
   tracker: https://github.com/information-artifact-ontology/IAO/issues
-- contact: {email: Yongqun Oliver He, label: yongqunh@med.umich.edu}
+- contact: {email: Yongqun Oliver He, github: yongqunh, label: yongqunh@med.umich.edu}
   description: An ontology of clinical informed consents
   homepage: https://github.com/ICO-ontology/ICO
   id: ico
@@ -1436,7 +1459,8 @@ ontologies:
   title: Informed Consent Ontology
   tracker: https://github.com/ICO-ontology/ICO/issues
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/ido.owl'}
-  contact: {email: Lindsay.Cowell@utsouthwestern.edu, label: Lindsay Cowell}
+  contact: {email: Lindsay.Cowell@utsouthwestern.edu, github: lgcowell, label: Lindsay
+      Cowell}
   description: A set of interoperable ontologies that will together provide coverage
     of the infectious disease domain. IDO core is the upper-level ontology that hosts
     terms of general relevance across the domain, while extension ontologies host
@@ -1461,11 +1485,13 @@ ontologies:
   homepage: https://www.vectorbase.org/ontology-browser
   id: idomal
   layout: ontology_detail
+  license: {label: CC0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/idomal.owl
   products:
   - {id: idomal.owl, ontology_purl: 'http://purl.obolibrary.org/obo/idomal.owl'}
   title: Malaria Ontology
-- contact: {email: Yongqun Oliver He, label: yongqunh@med.umich.edu}
+- contact: {email: yongqunh@med.umich.edu, label: Yongqun Oliver He}
   description: An ontology of interactions and interaction networks
   homepage: https://github.com/INO-ontology/ino
   id: ino
@@ -1491,13 +1517,15 @@ ontologies:
   - {id: kisao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/kisao.owl'}
   title: Kinetic Simulation Algorithm Ontology
 - build: {infallible: 1, insert_ontology_id: true, method: obo2owl, source_url: 'ftp://ftp.informatics.jax.org/pub/reports/adult_mouse_anatomy.obo'}
-  contact: {email: Terry.Hayamizu@jax.org, label: Terry Hayamizu}
+  contact: {email: Terry.Hayamizu@jax.org, github: tfhayamizu, label: Terry Hayamizu}
   description: A structured controlled vocabulary of the adult anatomy of the mouse
     (Mus).
   domain: anatomy
   homepage: https://github.com/obophenotype/mouse-anatomy-ontology
   id: ma
   layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/ma.owl
   page: http://www.informatics.jax.org/searches/AMA_form.shtml
   products:
@@ -1522,7 +1550,7 @@ ontologies:
   title: Mathematical modeling ontology
   tracker: http://sourceforge.net/p/mamo-ontology/tickets/
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/mf.owl'}
-  contact: {email: janna.hastings@gmail.com, label: Janna Hastings}
+  contact: {email: janna.hastings@gmail.com, github: jannahastings, label: Janna Hastings}
   description: The Mental Functioning Ontology is an overarching ontology for all
     aspects of mental functioning.
   domain: health
@@ -1536,7 +1564,7 @@ ontologies:
   - {id: mf.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mf.owl'}
   title: Mental Functioning Ontology
   tracker: https://github.com/jannahastings/mental-functioning-ontology/issues
-- contact: {email: druzinsk@uic.edu, label: Robert Druzinsky}
+- contact: {email: druzinsk@uic.edu, github: RDruzinsky, label: Robert Druzinsky}
   dependencies:
   - {id: uberon}
   description: The Mammalian Feeding Muscle Ontology is an antomy ontology for the
@@ -1556,7 +1584,7 @@ ontologies:
   title: Mammalian Feeding Muscle Ontology
   tracker: https://github.com/RDruzinsky/feedontology/issues
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/mfoem.owl'}
-  contact: {email: janna.hastings@gmail.com, label: Janna Hastings}
+  contact: {email: janna.hastings@gmail.com, github: jannahastings, label: Janna Hastings}
   description: An ontology of affective phenomena such as emotions, moods, appraisals
     and subjective feelings.
   domain: health
@@ -1600,7 +1628,7 @@ ontologies:
   - {id: mi.obo, ontology_purl: 'http://purl.obolibrary.org/obo/mi.obo'}
   title: Molecular Interactions Controlled Vocabulary
 - biosharing: https://fairsharing.org/FAIRsharing.ca48xs
-  contact: {email: hilmar.lapp@duke.edu, label: Hilmar Lapp}
+  contact: {email: hilmar.lapp@duke.edu, github: hlapp, label: Hilmar Lapp}
   description: An application ontology to formalize annotation of phylogenetic data.
   homepage: http://www.evoio.org/wiki/MIAPA
   id: miapa
@@ -1628,11 +1656,13 @@ ontologies:
   products:
   - {id: micro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/micro.owl'}
   title: Ontology of Prokaryotic Phenotypic and Metabolic Characters
-- contact: {email: vdritsou@imbb.forth.gr, label: Vicky Dritsou}
+- contact: {email: topalis@imbb.forth.gr, label: Pantelis Topalis}
   description: An application ontology for use with miRNA databases.
   homepage: http://code.google.com/p/mirna-ontology/
   id: mirnao
   layout: ontology_detail
+  license: {label: CC0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/mirnao.owl
   products:
   - {id: mirnao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mirnao.owl'}
@@ -1702,12 +1732,12 @@ ontologies:
 - browsers:
   - {label: Monarch, title: Monarch Initiative Disease Browser, url: 'https://monarchinitiative.org/disease/MONDO:0019609'}
   canonical: mondo.owl
-  contact: {email: vasilevs@ohsu.edu, label: Nicole Vasilevsky}
+  contact: {email: vasilevs@ohsu.edu, github: nicolevasilevsky, label: Nicole Vasilevsky}
   description: An ontology that harmonizes multiple disease resources.
   domain: disease
   homepage: https://github.com/monarch-initiative/mondo
   id: mondo
-  label: MonDO
+  label: MONDO
   layout: ontology_detail
   license: {label: CC BY 3.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
@@ -1754,6 +1784,7 @@ ontologies:
   title: Molecular Process Ontology
 - browsers:
   - {label: MGI, title: MGI MP Browser, url: 'http://www.informatics.jax.org/searches/MP_form.shtml'}
+  - {label: RGD, title: RGD MP Browser, url: 'https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MP:0000001'}
   - {label: Monarch, title: Monarch Phenotype Page, url: 'http://monarchinitiative.org/phenotype/MP:0000001'}
   build: {infallible: 1, method: archive, path: archive/src/ontology, source_url: 'http://build.berkeleybop.org/job/build-mp-edit/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
   contact: {email: pheno@jax.org, label: JAX phenotype list}
@@ -1764,16 +1795,16 @@ ontologies:
   jobs:
   - {id: 'http://build.berkeleybop.org/job/build-mp-edit', type: DryRunBuild}
   layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/4.0/'}
+  mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
   ontology_purl: http://purl.obolibrary.org/obo/mp.owl
   page: https://github.com/obophenotype/mammalian-phenotype-ontology
   products:
   - {id: mp.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mp.owl'}
   - {id: mp.obo, ontology_purl: 'http://purl.obolibrary.org/obo/mp.obo'}
-  taxon: {id: 'NCBITaxon:10088', label: Mus}
-  termgenie: http://mp.termgenie.org
-  title: Mammalian phenotype
+  taxon: {id: 'NCBITaxon:40674', label: Mammalia}
+  title: Mammalian Phenotype
   tracker: https://github.com/obophenotype/mammalian-phenotype-ontology/issues
 - build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/PaulNSchofield/mpath/master/mpath.obo'}
   contact: {email: pns12@hermes.cam.ac.uk, label: Paul Schofield}
@@ -1791,7 +1822,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:10088', label: Mus}
   title: Mouse pathology ontology
   tracker: https://github.com/PaulNSchofield/mpath/issues
-- contact: {email: mbrochhausen@uams.edu, label: Mathias Brochhausen}
+- contact: {email: mbrochhausen@uams.edu, github: mbrochhausen, label: Mathias Brochhausen}
   description: An ontology of minimum information regarding potential drug-drug interaction
     information.
   domain: health
@@ -1805,7 +1836,7 @@ ontologies:
   - {id: mpio.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mpio.owl'}
   title: Minimum PDDI Information Ontology
   tracker: https://github.com/MPIO-Developers/MPIO/issues
-- contact: {email: bpeters@lji.org, label: Bjoern Peters}
+- contact: {email: bpeters@lji.org, github: bpeters42, label: Bjoern Peters}
   description: An ontology for Major Histocompatibility Complex (MHC) restriction
     in experiments
   homepage: https://github.com/IEDB/MRO
@@ -1847,7 +1878,7 @@ ontologies:
 - browsers:
   - {label: BioPortal, title: BioPortal Ontology Browser, url: 'https://bioportal.bioontology.org/ontologies/NBO'}
   build: {method: owl2obo, source_url: 'https://raw.githubusercontent.com/obo-behavior/behavior-ontology/master/nbo.owl'}
-  contact: {email: g.gkoutos@bham.ac.uk, label: George Gkoutos}
+  contact: {email: g.gkoutos@bham.ac.uk, github: gkoutos, label: George Gkoutos}
   description: An ontology of human and animal behaviours and behavioural phenotypes
   domain: behavior
   homepage: https://github.com/obo-behavior/behavior-ontology/
@@ -1883,19 +1914,23 @@ ontologies:
   - {id: ncbitaxon/subsets/taxslim.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl',
     page: 'https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md',
     title: taxslim}
+  - {id: ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl',
+    page: 'https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md',
+    title: taxslim disjointness axioms}
   source: http://www.ncbi.nlm.nih.gov/taxonomy
   title: NCBI organismal classification
   tracker: https://github.com/obophenotype/ncbitaxon/issues
   wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
-- contact: {email: haendel@ohsu.edu, label: Melissa Haendel}
-  description: The NCI Thesaurus (NCIt) OBO Edition project aims to increase integration
-    of the NCIt with OBO Library ontologies. NCIt is a reference terminology that
-    includes broad coverage of the cancer domain, including cancer related diseases,
-    findings and abnormalities. NCIt OBO Edition releases should be considered experimental.
+- contact: {contact: mellybelly, email: haendel@ohsu.edu, label: Melissa Haendel}
+  description: NCI Thesaurus (NCIt)is a reference terminology that includes broad
+    coverage of the cancer domain, including cancer related diseases, findings and
+    abnormalities. The NCIt OBO Edition aims to increase integration of the NCIt with
+    OBO Library ontologies. NCIt OBO Edition releases should be considered experimental.
   homepage: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
   id: ncit
   layout: ontology_detail
-  license: {label: See document, url: 'ftp://ftp1.nci.nih.gov/pub/cacore/EVS/NCI_Thesaurus/ThesaurusTermsofUse.pdf'}
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/ncit.owl
   products:
   - {description: A direct transformation of the standard NCIt content using OBO-style
@@ -1917,7 +1952,7 @@ ontologies:
   tracker: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
 - browsers: null
   build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/ncro/prebuild/ncro.owl'}
-  contact: {email: huang@southalabama.edu, label: Jingshan Huang}
+  contact: {email: huang@southalabama.edu, github: Huang-OMIT, label: Jingshan Huang}
   description: An ontology for non-coding RNA, both of biological origin, and engineered.
   domain: experiments
   homepage: http://omnisearch.soc.southalabama.edu/w/index.php/Ontology
@@ -1932,11 +1967,11 @@ ontologies:
     title: NCRO development version}
   title: Non-Coding RNA Ontology
   tracker: https://github.com/OmniSearch/NCRO-Ontology-Files/issues
-- build: {method: owl2obo, source_url: 'http://svn.code.sf.net/p/oae/code/trunk/src/ontology/oae.owl'}
+- build: {method: owl2obo, source_url: 'https://raw.githubusercontent.com/OAE-ontology/OAE/master/src/oae_merged.owl'}
   contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
   description: A biomedical ontology in the domain of adverse events
   domain: adverse events, health
-  homepage: http://www.oae-ontology.org
+  homepage: https://github.com/OAE-ontology/OAE/
   id: oae
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
@@ -2126,6 +2161,8 @@ ontologies:
   id: omit
   in_foundry: false
   layout: ontology_detail
+  license: {label: CC-BY 3.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/3.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/omit.owl
   page: http://omit.cis.usouthal.edu/
   products:
@@ -2416,7 +2453,7 @@ ontologies:
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
-  mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-relations
+  mailing_list: https://groups.google.com/forum/#!forum/obo-relations
   ontology_purl: http://purl.obolibrary.org/obo/ro.owl
   products:
   - {description: Canonical edition, id: ro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ro.owl',
@@ -2450,11 +2487,13 @@ ontologies:
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=RS:0000457'}
   build: {method: obo2owl, source_url: 'ftp://ftp.rgd.mcw.edu/pub/ontology/rat_strain/rat_strain.obo'}
-  contact: {email: rnigam@mcw.edu, label: Rajni Nigam}
+  contact: {email: sjwang@mcw.edu, label: Shur-Jen Wang}
   description: Ontology of rat strains
   homepage: http://rgd.mcw.edu/rgdweb/search/strains.html
   id: rs
   layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/rs.owl
   page: ftp://ftp.rgd.mcw.edu/pub/ontology/rat_strain/
   products:
@@ -2542,7 +2581,7 @@ ontologies:
   title: Social Insect Behavior Ontology
   tracker: https://github.com/obophenotype/sibo/issues
 - build: {method: obo2owl, notes: SWITCH, source_url: 'https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so.obo'}
-  contact: {email: song-devel@lists.sourceforge.net, label: SONG developers}
+  contact: {email: keilbeck@genetics.utah.edu, label: Karen Eilbeck}
   depicted_by: http://sequenceontology.org/img/so_icon.png
   description: A structured controlled vocabulary for sequence annotation, for the
     exchange of annotation data and for the description of sequence objects in databases.
@@ -2550,6 +2589,8 @@ ontologies:
   homepage: https://github.com/The-Sequence-Ontology/SO-Ontologies
   id: so
   layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/so.owl
   page: https://en.wikipedia.org/wiki/Sequence_Ontology
   products:
@@ -2560,7 +2601,7 @@ ontologies:
       a tool for the unification of genome annotations.'}
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/20226267', title: Evolution of the Sequence
       Ontology terms and relationships.}
-  title: Sequence types and features
+  title: Sequence types and features ontology
   tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
 - build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/obophenotype/spider-ontology/master/spider_comparative_biology.obo'}
   contact: {email: ramirez@macn.gov.ar, label: Martin Ramirez}
@@ -2666,17 +2707,19 @@ ontologies:
   title: Taxonomic rank vocabulary
   tracker: https://github.com/phenoscape/taxrank/issues
 - build: {method: obo2owl, source_url: 'http://anobase.vectorbase.org/anatomy/mosquito_anatomy.obo'}
-  contact: {email: louis@imbb.forth.gr, label: C. Louis}
+  contact: {email: topalis@imbb.forth.gr, label: Pantelis Topalis}
   description: A structured controlled vocabulary of the anatomy of mosquitoes.
   domain: anatomy
   homepage: http://anobase.vectorbase.org
   id: tgma
   layout: ontology_detail
+  license: {label: CC0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/tgma.owl
   products:
   - {id: tgma.owl, ontology_purl: 'http://purl.obolibrary.org/obo/tgma.owl'}
   taxon: {id: 'NCBITaxon:44484', label: Anopheles}
-  title: Mosquito gross anatomy
+  title: Mosquito gross anatomy ontology
 - browsers:
   - {label: Planteome, title: Planteome browser, url: 'http://browser.planteome.org/amigo/term/TO:0000387#display-lineage-tab'}
   build: {checkout: 'git clone https://github.com/Planteome/plant-trait-ontology.git',
@@ -2718,7 +2761,7 @@ ontologies:
     the pathogen is transmitted directly or indirectly from its natural reservoir,
     a susceptible host or source to a new host.
   domain: disease
-  homepage: http://diseaseontology.sourceforge.net/
+  homepage: https://github.com/DiseaseOntology/PathogenTransmissionOntology
   id: trans
   layout: ontology_detail
   license: {label: CC0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
@@ -2779,6 +2822,10 @@ ontologies:
   products:
   - {description: core ontology, id: uberon.owl, is_canonical: true, ontology_purl: 'http://purl.obolibrary.org/obo/uberon.owl',
     title: Uberon, type: 'owl:Ontology'}
+  - {description: Axioms defined within Uberon and to be used in imports for other
+      ontologies, id: uberon/uberon-base.owl, ontology_purl: 'http://purl.obolibrary.org/obo/uberon/uberon-base.owl',
+    page: 'https://github.com/INCATools/ontology-development-kit/issues/50', title: Uberon
+      base ontology}
   - {description: Uberon extended, id: uberon/ext.owl, mireots_from: ncbitaxon, ontology_purl: 'http://purl.obolibrary.org/obo/uberon/ext.owl',
     title: Uberon edition that includes subsets of other ontologies and axioms connecting
       to them, type: 'owl:Ontology'}
@@ -2885,10 +2932,17 @@ ontologies:
   title: Units of measurement ontology
   tracker: https://github.com/bio-ontology-research-group/unit-ontology/issues
 - build: {method: archive, path: archive/ontology, source_url: 'http://build.berkeleybop.org/job/build-pheno-ontologies/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
+  contact: {email: vasilevs@ohsu.edu, github: nicolevasilevsky, label: Nicole Vasilevsky}
+  description: The Uberpheno ontology integrates multiple phenotype ontologies into
+    a unified cross-species phenotype ontology.
+  homepage: https://github.com/obophenotype/upheno
   id: upheno
   jobs:
   - {id: 'https://travis-ci.org/obophenotype/upheno', type: travis-ci}
   layout: ontology_detail
+  license: {label: CC0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
+  mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
   ontology_purl: http://purl.obolibrary.org/obo/upheno.owl
   products:
   - {id: upheno.owl, ontology_purl: 'http://purl.obolibrary.org/obo/upheno.owl'}
@@ -2959,6 +3013,7 @@ ontologies:
   license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/wbbt.owl
+  preferredPrefix: WBbt
   products:
   - {id: wbbt.owl, ontology_purl: 'http://purl.obolibrary.org/obo/wbbt.owl'}
   - {id: wbbt.obo, ontology_purl: 'http://purl.obolibrary.org/obo/wbbt.obo'}
@@ -3004,13 +3059,15 @@ ontologies:
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000'}
   build: {method: obo2owl, source_url: 'ftp://ftp.rgd.mcw.edu/pub/ontology/experimental_condition/experimental_condition.obo'}
-  contact: {email: shimoyama@mcw.edu, label: Mary Shimoyama}
+  contact: {email: jrsmith@mcw.edu, label: Jennifer Smith}
   description: Conditions under which physiological and morphological measurements
     are made both in the clinic and in studies involving humans or model organisms.
   domain: clinical
-  homepage: ['http://rgd.mcw.edu/rgdweb/ontology/search.html', 'ftp://ftp.rgd.mcw.edu/pub/ontology/experimental_condition/']
+  homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000
   id: xco
   layout: ontology_detail
+  license: {label: CC-0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/xco.owl
   products:
   - {id: xco.owl, ontology_purl: 'http://purl.obolibrary.org/obo/xco.owl'}
@@ -3029,19 +3086,19 @@ ontologies:
     with proteomics mass spectrometry.
   domain: MS cross-linker reagents
   homepage: http://www.psidev.info/groups/controlled-vocabularies
-  id: xl
+  id: xlmod
   integration_server: https://raw.githubusercontent.com/HUPO-PSI/mzIdentML/tree/master/cv
-  label: XL
+  label: xlmod
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'https://creativecommons.org/licenses/by/3.0/'}
   mailing_list: psidev-ms-vocab@lists.sourceforge.net
-  ontology_purl: http://purl.obolibrary.org/obo/xl.owl
+  ontology_purl: http://purl.obolibrary.org/obo/xlmod.owl
   page: http://www.psidev.info/groups/controlled-vocabularies
   products:
   - {id: xl.obo, ontology_purl: 'http://purl.obolibrary.org/obo/xl.obo'}
   - {id: xl.owl, ontology_purl: 'http://purl.obolibrary.org/obo/xl.owl'}
-  title: Cross-linker reagents ontology
+  title: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.obo'}
   contact: {email: ybradford@zfin.org, label: Yvonne Bradford}
   description: Experimental conditions applied to zebrafish, developed to facilitate
@@ -3156,7 +3213,7 @@ ontologies:
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Human developmental anatomy, abstract version
 - build: {insert_ontology_id: true, method: obo2owl, notes: new url soon, source_url: 'ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAP_combined.obo'}
-  contact: {email: Terry.Hayamizu@jax.org, label: Terry Hayamizu}
+  contact: {email: Terry.Hayamizu@jax.org, github: tfhayamizu, label: Terry Hayamizu}
   description: A structured controlled vocabulary of stage-specific anatomical structures
     of the mouse (Mus).
   domain: anatomy
