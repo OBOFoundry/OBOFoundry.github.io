@@ -9,10 +9,10 @@ tracker: https://github.com/data2health/contributor-role-ontology/issues
 contact:
   email: whimar@ohsu.edu
   label: Marijane White
+  github: marijane
 license:
   url: https://creativecommons.org/licenses/by/2.0/
   label: CC-BY
-  github: marijane
 build:
   checkout: git clone https://github.com/data2health/contributor-role-ontology.git
   system: git
