@@ -897,7 +897,7 @@
             "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 1.0",
+                "label": "CC-0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -1133,7 +1133,7 @@
             "license": {
                 "label": "CC-BY",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/4.0"
+                "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "mailing_list": "chemistry-ontologies@googlegroups.com",
             "ontology_purl": "http://purl.obolibrary.org/obo/chmo.owl",
@@ -1326,13 +1326,14 @@
         },
         {
             "contact": {
-                "email": "Michael Grove",
-                "label": "grovmi@ohsu.edu"
+                "email": "grovmi@ohsu.edu",
+                "label": "Michael Grove"
             },
             "homepage": "https://code.google.com/p/craniomaxillofacial-ontology/",
             "id": "cmf",
             "layout": "ontology_detail",
-            "title": "CranioMaxilloFacial ontology"
+            "title": "CranioMaxilloFacial ontology",
+            "validate": false
         },
         {
             "browsers": [
@@ -1803,12 +1804,6 @@
                 {
                     "id": "eco.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/eco.obo"
-                },
-                {
-                    "id": "eco/gaf-eco-mapping.txt",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/eco/gaf-eco-mapping.txt",
-                    "title": "Mapping between ECO classes and Gene Ontology codes",
-                    "type": "Mapping"
                 }
             ],
             "publications": [
@@ -2125,7 +2120,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/epo.owl"
                 }
             ],
-            "title": "Epidemiology Ontology"
+            "title": "Epidemiology Ontology",
+            "validate": false
         },
         {
             "build": {
@@ -2859,7 +2855,7 @@
             "id": "hancestro",
             "layout": "ontology_detail",
             "license": {
-                "label": "Creative Commons CC-BY, version 4.0",
+                "label": "CC-BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -3041,7 +3037,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/hsapdv.obo"
                 }
             ],
-            "title": "Human Developmental Stages"
+            "title": "Human Developmental Stages",
+            "validate": false
         },
         {
             "build": {
@@ -3097,9 +3094,9 @@
         },
         {
             "contact": {
-                "email": "Yongqun Oliver He",
+                "email": "yongqunh@med.umich.edu",
                 "github": "yongqunh",
-                "label": "yongqunh@med.umich.edu"
+                "label": "Yongqun Oliver He"
             },
             "description": "An ontology of clinical informed consents",
             "homepage": "https://github.com/ICO-ontology/ICO",
@@ -3638,7 +3635,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/mmusdv.obo"
                 }
             ],
-            "title": "Mouse Developmental Stages"
+            "title": "Mouse Developmental Stages",
+            "validate": false
         },
         {
             "build": {
@@ -4138,7 +4136,7 @@
             "id": "ncro",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4",
+                "label": "CC-BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -4342,7 +4340,8 @@
                 }
             ],
             "title": "Ontology for genetic interval",
-            "tracker": "https://code.google.com/p/ontology-for-genetic-interval/issues/list"
+            "tracker": "https://code.google.com/p/ontology-for-genetic-interval/issues/list",
+            "validate": false
         },
         {
             "contact": {
@@ -4483,7 +4482,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/olatdv.owl"
                 }
             ],
-            "title": "Medaka Developmental Stages"
+            "title": "Medaka Developmental Stages",
+            "validate": false
         },
         {
             "contact": {
@@ -4828,7 +4828,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/pdumdv.obo"
                 }
             ],
-            "title": "Platynereis Developmental Stages"
+            "title": "Platynereis Developmental Stages",
+            "validate": false
         },
         {
             "contact": {
@@ -5088,7 +5089,7 @@
             "id": "rnao",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 1.0",
+                "label": "CC-0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -6180,7 +6181,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/vario.owl"
                 }
             ],
-            "title": "Variation Ontology"
+            "title": "Variation Ontology",
+            "validate": false
         },
         {
             "build": {

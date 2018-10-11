@@ -58,9 +58,7 @@ _:b1    <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png> ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CC-BY 4.0" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CC-BY" ;
-        <http://www.w3.org/2000/01/rdf-schema#label>  "CC BY 4.0" ;
-        <http://www.w3.org/2000/01/rdf-schema#label>  "Creative Commons CC-BY, version 4.0" ;
-        <http://www.w3.org/2000/01/rdf-schema#label>  "CC-BY 4" .
+        <http://www.w3.org/2000/01/rdf-schema#label>  "CC BY 4.0" .
 
 <http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView>
         <http://purl.org/dc/elements/1.1/title>  "EBI CHEBI Browser" ;
@@ -114,7 +112,6 @@ _:b3    <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
 <https://creativecommons.org/publicdomain/zero/1.0/>
         <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png> ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CC0 1.0 Universal" ;
-        <http://www.w3.org/2000/01/rdf-schema#label>  "CC-BY 1.0" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CC-0" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CC0" .
 
@@ -902,7 +899,7 @@ _:b52   <http://www.w3.org/2000/01/rdf-schema#label>  "Egon Willighagen" ;
 <http://purl.obolibrary.org/obo/chmo>
         <http://purl.org/dc/elements/1.1/description>  "CHMO, the chemical methods ontology, describes methods used to" ;
         <http://purl.org/dc/elements/1.1/title>  "Chemical Methods Ontology" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0> ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/rsc-ontologies/rsc-cmo/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "chemistry-ontologies@googlegroups.com" ;
@@ -910,10 +907,6 @@ _:b52   <http://www.w3.org/2000/01/rdf-schema#label>  "Egon Willighagen" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b53 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/chmo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/rsc-ontologies/rsc-cmo> .
-
-<http://creativecommons.org/licenses/by/4.0>
-        <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png> ;
-        <http://www.w3.org/2000/01/rdf-schema#label>  "CC-BY" .
 
 _:b53   <http://www.w3.org/2000/01/rdf-schema#label>  "Colin Batchelor" ;
         <http://xmlns.com/foaf/0.1/mbox>  "batchelorc@rsc.org" .
@@ -995,8 +988,8 @@ _:b55   <http://www.w3.org/2000/01/rdf-schema#label>  "Sirarat Sarntivijai" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b56 ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://code.google.com/p/craniomaxillofacial-ontology/> .
 
-_:b56   <http://www.w3.org/2000/01/rdf-schema#label>  "grovmi@ohsu.edu" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "Michael Grove" .
+_:b56   <http://www.w3.org/2000/01/rdf-schema#label>  "Michael Grove" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "grovmi@ohsu.edu" .
 
 <http://purl.obolibrary.org/obo/cmo>
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b57 ;
@@ -1311,7 +1304,6 @@ _:b78   <http://www.w3.org/2000/01/rdf-schema#label>  "Melanie Courtot" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b80 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/eco.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/eco.obo> ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/eco/gaf-eco-mapping.txt> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/evidenceontology/evidenceontology/> .
 
 _:b79   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
@@ -1328,11 +1320,6 @@ _:b80   <http://www.w3.org/2000/01/rdf-schema#label>  "Michelle Giglio" ;
 
 <http://purl.obolibrary.org/obo/eco.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/eco.obo" .
-
-<http://purl.obolibrary.org/obo/eco/gaf-eco-mapping.txt>
-        <http://purl.org/dc/elements/1.1/title>  "Mapping between ECO classes and Gene Ontology codes" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://purl.obolibrary.org/obo/Mapping> ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/eco/gaf-eco-mapping.txt" .
 
 <http://purl.obolibrary.org/obo/ecocore>
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/pco> ;
@@ -2130,8 +2117,8 @@ _:b128  <http://www.w3.org/2000/01/rdf-schema#label>  "Mathias Brochhausen" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ico.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/ICO-ontology/ICO> .
 
-_:b129  <http://www.w3.org/2000/01/rdf-schema#label>  "yongqunh@med.umich.edu" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "Yongqun Oliver He" .
+_:b129  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "yongqunh@med.umich.edu" .
 
 <http://purl.obolibrary.org/obo/ico.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ico.owl" .

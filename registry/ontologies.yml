@@ -424,7 +424,7 @@ ontologies:
   id: bco
   in_foundry: false
   layout: ontology_detail
-  license: {label: CC-BY 1.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+  license: {label: CC-0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
     url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/bco.owl
   products:
@@ -539,7 +539,7 @@ ontologies:
   id: chmo
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/4.0'}
+    url: 'http://creativecommons.org/licenses/by/4.0/'}
   mailing_list: chemistry-ontologies@googlegroups.com
   ontology_purl: http://purl.obolibrary.org/obo/chmo.owl
   products:
@@ -632,11 +632,12 @@ ontologies:
   products:
   - {id: clo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/clo.owl'}
   title: Cell Line Ontology
-- contact: {email: Michael Grove, label: grovmi@ohsu.edu}
+- contact: {email: grovmi@ohsu.edu, label: Michael Grove}
   homepage: https://code.google.com/p/craniomaxillofacial-ontology/
   id: cmf
   layout: ontology_detail
   title: CranioMaxilloFacial ontology
+  validate: false
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=CMO:0000000'}
   build: {method: obo2owl, source_url: 'ftp://ftp.rgd.mcw.edu/pub/ontology/clinical_measurement/clinical_measurement.obo'}
@@ -854,8 +855,6 @@ ontologies:
   products:
   - {id: eco.owl, ontology_purl: 'http://purl.obolibrary.org/obo/eco.owl'}
   - {id: eco.obo, ontology_purl: 'http://purl.obolibrary.org/obo/eco.obo'}
-  - {id: eco/gaf-eco-mapping.txt, ontology_purl: 'http://purl.obolibrary.org/obo/eco/gaf-eco-mapping.txt',
-    title: Mapping between ECO classes and Gene Ontology codes, type: Mapping}
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/25052702', title: Standardized description
       of scientific evidence using the Evidence Ontology (ECO)}
@@ -997,6 +996,7 @@ ontologies:
   products:
   - {id: epo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/epo.owl'}
   title: Epidemiology Ontology
+  validate: false
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/ero.owl'}
   contact: {email: tenille_johnson@hms.harvard.edu, label: Tenille Johnson}
   description: An ontology of research resources such as instruments. protocols, reagents,
@@ -1336,7 +1336,7 @@ ontologies:
   homepage: https://github.com/EBISPOT/ancestro
   id: hancestro
   layout: ontology_detail
-  license: {label: 'Creative Commons CC-BY, version 4.0', logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/hancestro.owl
   products:
@@ -1419,6 +1419,7 @@ ontologies:
   - {id: hsapdv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/hsapdv.owl'}
   - {id: hsapdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/hsapdv.obo'}
   title: Human Developmental Stages
+  validate: false
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/iao.owl'}
   contact: {email: jiezheng@pennmedicine.upenn.edu, github: zhengj2007, label: Jie
       Zheng}
@@ -1446,7 +1447,8 @@ ontologies:
     title: ontology of document acts
   title: Information Artifact Ontology
   tracker: https://github.com/information-artifact-ontology/IAO/issues
-- contact: {email: Yongqun Oliver He, github: yongqunh, label: yongqunh@med.umich.edu}
+- contact: {email: yongqunh@med.umich.edu, github: yongqunh, label: Yongqun Oliver
+      He}
   description: An ontology of clinical informed consents
   homepage: https://github.com/ICO-ontology/ICO
   id: ico
@@ -1717,6 +1719,7 @@ ontologies:
   - {id: mmusdv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mmusdv.owl'}
   - {id: mmusdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/mmusdv.obo'}
   title: Mouse Developmental Stages
+  validate: false
 - build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mod/data/PSI-MOD.obo'}
   contact: {email: hhe@ebi.ac.uk, label: Henning Hermjakob}
   description: PSI-MOD is an ontology consisting of terms that describe protein chemical
@@ -1958,7 +1961,7 @@ ontologies:
   homepage: http://omnisearch.soc.southalabama.edu/w/index.php/Ontology
   id: ncro
   layout: ontology_detail
-  license: {label: CC-BY 4, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'https://creativecommons.org/licenses/by/4.0/'}
   mailing_list: ncro-devel@googlegroups.com, ncro-discuss@googlegroups.com
   ontology_purl: http://purl.obolibrary.org/obo/ncro.owl
@@ -2065,6 +2068,7 @@ ontologies:
   - {id: ogi.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ogi.owl'}
   title: Ontology for genetic interval
   tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list
+  validate: false
 - contact: {email: baeverma@jcvi.org, label: Brian Aevermann}
   depicted_by: https://avatars2.githubusercontent.com/u/12973154?s=200&v=4
   description: An ontology for representing treatment of disease and diagnosis and
@@ -2140,6 +2144,7 @@ ontologies:
   - {id: olatdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/olatdv.obo'}
   - {id: olatdv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/olatdv.owl'}
   title: Medaka Developmental Stages
+  validate: false
 - contact: {email: mbrochhausen@gmail.com, label: Mathias Brochhausen}
   description: An ontological version of MIABIS (Minimum Information About BIobank
     data Sharing)
@@ -2310,6 +2315,7 @@ ontologies:
   - {id: pdumdv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/pdumdv.owl'}
   - {id: pdumdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/pdumdv.obo'}
   title: Platynereis Developmental Stages
+  validate: false
 - contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
   description: A structured, controlled vocabulary which describes the treatments,
     growing conditions, and/or study types used in plant biology experiments.
@@ -2432,7 +2438,7 @@ ontologies:
   homepage: https://github.com/bgsu-rna/rnao
   id: rnao
   layout: ontology_detail
-  license: {label: CC-BY 1.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+  license: {label: CC-0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
     url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/rnao.owl
   products:
@@ -2958,6 +2964,7 @@ ontologies:
   products:
   - {id: vario.owl, ontology_purl: 'http://purl.obolibrary.org/obo/vario.owl'}
   title: Variation Ontology
+  validate: false
 - build: {source_url: 'https://raw.githubusercontent.com/vaccineontology/VO/master/src/VO_merged.owl'}
   contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
   description: VO is a biomedical ontology in the domain of vaccine and vaccination.
