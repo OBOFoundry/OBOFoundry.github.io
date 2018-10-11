@@ -1,0 +1,86 @@
+{
+	"properties": {
+		"id": { "type": "string", "pattern": "^[0-9a-z_]+$" },
+		"contact": {
+			"type": "object",
+			"properties": {
+				"github": { "type": "string", "pattern": "^[^@]+$"},
+				"email": { "type": "string", "format": "email" },
+				"label": { "type": "string", "pattern": "^[^@]+$" }
+			},
+			"required": ["email", "label"]
+		},
+		"description": { "type": "string" },
+		"homepage": { "type": "string", "format": "uri" },
+		"products": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"id": { "type": "string", "pattern": "^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$" }
+				},
+				"required": ["id"]
+			}
+		},
+		"license": {
+			"type": "object",
+			"properties": {
+				"url": { "type": "string", "format": "uri" },
+				"label": { "type": "string" }
+			},
+			"required": ["url", "label"],
+			"oneOf": [
+				{
+					"properties": {
+						"url": { "enum": ["http://creativecommons.org/licenses/by/4.0/", "https://creativecommons.org/licenses/by/4.0/"] },
+						"label": { "enum": ["CC-BY", "CC BY 4.0", "CC-BY 4.0"] }
+					}
+				},
+				{
+					"properties": {
+						"url": { "enum": ["http://creativecommons.org/publicdomain/zero/1.0/", "https://creativecommons.org/publicdomain/zero/1.0/"] },
+						"label": { "enum": ["CC-0", "CC0", "CC0 1.0 Universal", "CC0 1.0"] }
+					}	
+				},
+				{
+					"properties": {
+						"url": { "enum": ["http://creativecommons.org/licenses/by/3.0/", "https://creativecommons.org/licenses/by/3.0/"] },
+						"label": { "enum": ["CC-BY", "CC-BY 3.0", "CC BY 3.0"] }	
+					}
+				},
+				{
+					"properties": {
+						"url": { "enum": ["http://creativecommons.org/licenses/by-nd/4.0/", "https://creativecommons.org/licenses/by-nd/4.0/"] },
+						"label": { "enum": ["CC BY-ND 4.0"] }	
+					}
+				},
+				{
+					"properties": {
+						"url": { "enum": ["http://www.gnu.org/licenses/gpl-3.0.en.html", "https://www.gnu.org/licenses/gpl-3.0.en.html"] },
+						"label": { "enum": ["GNU GPL 3.0"] }
+					}
+				},
+				{
+					"properties": {
+						"url": { "enum": ["http://creativecommons.org/licenses/by-sa/2.0/", "https://creativecommons.org/licenses/by-sa/2.0/"] },
+						"label": { "enum": ["CC-BY-SA", "CC BY-SA 2.0"] }
+					}
+				},
+				{
+					"properties": {
+						"url": { "enum": ["http://creativecommons.org/licenses/by/2.0/", "https://creativecommons.org/licenses/by/2.0/"] },
+						"label": { "enum": ["CC-BY", "CC BY 2.0", "CC-BY 2.0"] }
+					}
+				},
+				{
+					"properties": {
+						"url": { "enum": ["http://opensource.org/licenses/Artistic-2.0", "https://opensource.org/licenses/Artistic-2.0"] },
+						"label": { "enum": ["Artistic License 2.0"] }
+					}
+				}
+			]
+		},
+		"title": { "type": "string" }
+	},
+	"required": ["id", "contact", "title", "description"]
+}
