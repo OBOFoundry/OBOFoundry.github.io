@@ -10,6 +10,7 @@ build:
 canonical: ro.owl
 description: Relationship types shared across multiple ontologies
 homepage: https://github.com/oborel/obo-relations/
+documentation: https://github.com/oborel/obo-relations/wiki/ROGuide
 tracker: https://github.com/oborel/obo-relations/issues
 mailing_list: "https://groups.google.com/forum/#!forum/obo-relations"
 domain: relations
