@@ -33,8 +33,8 @@ build:
   infallible: 1
 tracker: https://github.com/Planteome/plant-trait-ontology/issues
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/22847540
-    title: "Ontologies as integrative tools for plant science."
+  - id: https://doi.org/10.1093/nar/gkx1152
+    title: "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics."
 usages:
   - user: http://planteome.org/
     description: Planteome uses TO to describe traits for genes and germplasm
