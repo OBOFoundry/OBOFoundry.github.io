@@ -2,8 +2,11 @@
 layout: ontology_detail
 id: rs
 contact:
-  email: rnigam@mcw.edu
-  label: Rajni Nigam
+  email: sjwang@mcw.edu
+  label: Shur-Jen Wang
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4.0
 description: Ontology of rat strains
 homepage: http://rgd.mcw.edu/rgdweb/search/strains.html
 page: ftp://ftp.rgd.mcw.edu/pub/ontology/rat_strain/

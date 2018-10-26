@@ -5,12 +5,15 @@ preferredPrefix: FBbi
 contact:
   email: dorloff@ncmir.ucsd.edu
   label: David Orloff
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 description: A structured controlled vocabulary of sample preparation, visualization and imaging methods used in biomedical research.
 domain: experiments
 homepage: http://cellimagelibrary.org/
 products:
   - id: fbbi.owl
-title: Biological imaging methods
+title: Biological Imaging Methods Ontology
 build:
   source_url: https://raw.githubusercontent.com/dosumis/fbbi/master/src/ontology/fbbi.obo
   method: obo2owl

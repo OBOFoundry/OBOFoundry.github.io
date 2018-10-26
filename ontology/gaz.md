@@ -2,9 +2,10 @@
 layout: ontology_detail
 id: gaz
 contact:
-  email: ma11@gen.cam.ac.uk
-  label: Michael Ashburner
-homepage: http://gensc.org/gc_wiki/index.php/GAZ_Project
+  email: lschriml@som.umaryland.edu
+  label: Lynn Schriml
+  github: lschriml
+homepage: http://environmentontology.github.io/gaz/
 description: A gazetteer constructed on ontological principles
 products:
   - id: gaz.owl
@@ -15,5 +16,8 @@ build:
   path: archive
   method: archive
 tracker: https://github.com/EnvironmentOntology/envo/issues/
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY
 ---
 

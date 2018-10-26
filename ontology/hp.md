@@ -9,6 +9,7 @@ homepage: http://www.human-phenotype-ontology.org/
 contact:
   email: dr.sebastian.koehler@gmail.com
   label: Sebastian Koehler
+  github: drseb
 license:
   url: https://hpo.jax.org/app/license
   label: hpo
@@ -29,6 +30,7 @@ build:
   infallible: 1
 tracker: https://github.com/obophenotype/human-phenotype-ontology/issues/
 termgenie: http://hp.termgenie.org
+mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
 browsers:
   - label: HPO
     title: Charite HPO Browser

@@ -2,8 +2,11 @@
 layout: ontology_detail
 id: pw
 contact:
-  email: vpetri@mcw.edu
-  label: Victoria Petri
+  email: gthayman@mcw.edu
+  label: G. Thomas Hayman
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY
 description: A controlled vocabulary for annotating gene products to pathways.
 domain: biological process
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html

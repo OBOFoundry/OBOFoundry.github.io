@@ -7,8 +7,9 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 contact:
-  email: Yongqun Oliver He
-  label: yongqunh@med.umich.edu
+  email: yongqunh@med.umich.edu
+  label: Yongqun Oliver He
+  github: yongqunh
 homepage: https://github.com/ICO-ontology/ICO
 tracker: https://github.com/ICO-ontology/ICO/issues 
 products:

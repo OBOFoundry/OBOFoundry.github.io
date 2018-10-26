@@ -4,6 +4,7 @@ id: aro
 contact:
   email: card@mcmaster.ca
   label: CARD
+  github: raphenya
 description: Antibiotic resistance genes and mutations
 homepage: https://github.com/arpcard/aro
 license:

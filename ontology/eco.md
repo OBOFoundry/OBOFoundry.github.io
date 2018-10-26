@@ -8,9 +8,6 @@ tracker: https://github.com/evidenceontology/evidenceontology/issues
 products:
   - id: eco.owl
   - id: eco.obo
-  - id: eco/gaf-eco-mapping.txt
-    type: Mapping
-    title: Mapping between ECO classes and Gene Ontology codes
 title: Evidence ontology
 jobs:
   - id: https://travis-ci.org/evidenceontology/evidenceontology
@@ -23,6 +20,7 @@ build:
 contact:
   email: mgiglio@som.umaryland.edu
   label: Michelle Giglio 
+  github: mgiglio99
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/25052702
     title: "Standardized description of scientific evidence using the Evidence Ontology (ECO)"

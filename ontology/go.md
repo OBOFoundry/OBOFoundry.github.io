@@ -2,6 +2,10 @@
 layout: ontology_detail
 id: go
 in_foundry_order: 1
+contact:
+  email: david.hill@jax.org
+  label: David Hill
+  github: ukemi
 label: GO
 description: An ontology for describing the function of genes and gene products
 title: Gene Ontology
@@ -69,6 +73,14 @@ products:
  - id: go/extensions/go-taxon-groupings.owl
    title: GO Taxon Groupings
    description: "Classes added to ncbitaxon for groupings such as prokaryotes"
+   page: http://geneontology.org/page/download-ontology
+ - id: snapshot/go.owl
+   title: "GO (OWL edition), daily snapshot release"
+   description: "Equivalent to go.owl, but released daily. Note the snapshot release is not archived."
+   page: http://geneontology.org/page/download-ontology
+ - id: snapshot/go.obo
+   title: "GO (OBO Format edition), daily snapshot release"
+   description: "Equivalent to go.owl, but released daily. Note the snapshot release is not archived."
    page: http://geneontology.org/page/download-ontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/

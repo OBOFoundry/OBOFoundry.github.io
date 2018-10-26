@@ -3,8 +3,8 @@ layout: ontology_detail
 id: fbdv
 preferredPrefix: FBdv
 contact:
-  email: temj2@cam.ac.uk
-  label: Tamsin Jones
+  email: cp390@cam.ac.uk
+  label: Clare Pilgrim
 description: A structured controlled vocabulary of the development of Drosophila melanogaster.
 domain: development
 homepage: http://purl.obolibrary.org/obo/fbdv

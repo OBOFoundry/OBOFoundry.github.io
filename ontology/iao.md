@@ -2,8 +2,9 @@
 layout: ontology_detail
 id: iao
 contact:
-  email: alanruttenberg@gmail.com
-  label: Alan Ruttenberg
+  email: jiezheng@pennmedicine.upenn.edu
+  label: Jie Zheng
+  github: zhengj2007
 description: "An ontology of information entities."
 domain: information
 homepage: https://github.com/information-artifact-ontology/IAO/

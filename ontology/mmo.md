@@ -2,11 +2,14 @@
 layout: ontology_detail
 id: mmo
 contact:
-  email: shimoyama@mcw.edu
-  label: Mary Shimoyama
+  email: jrsmith@mcw.edu
+  label: Jennifer Smith
+license:
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC-0
 description: "A representation of the variety of methods used to make clinical and phenotype measurements. "
 domain: clinical
-homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
+homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000
 page: ftp://ftp.rgd.mcw.edu/pub/ontology/measurement_method/
 products:
   - id: mmo.owl
