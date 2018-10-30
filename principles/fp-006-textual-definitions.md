@@ -28,14 +28,14 @@ For terms lacking textual definitions, there should be evidence of implementatio
 
 Terms often benefit from examples of usage, as well as editor notes about edge cases and the history of the term, but these should be included as separate annotations and not in the definition.
 
+Instances, such as organizations or geographical locations, can benefit from definitions although it is understood that definitions for instances are not required. It is recognized that OBO format (e.g., versions 1.2 and 1.4) does not allow this as an option
+
 Implementation
 --------------
 
 Logical definitions should agree with textual definitions. In fact, logical definitions can be programmatically used to generate textual definitions (see http://oro.open.ac.uk/21501/1/)
 
 Textual definitions should be identified using the annotation property: ‘definition’ http://purl.obolibrary.org/obo/IAO_0000115. The source of the definition should be provided using the annotation property ‘definition source’ http://purl.obolibrary.org/obo/IAO_0000119, or as an axiom annotation on the definition assertion.
-
-Instances, such as organizations or geographical locations, can benefit from definitions although it is understood that definitions for instances are not required. It is recognized that OBO format (e.g., versions 1.2 and 1.4) does not allow this as an option
 
 Examples
 --------
