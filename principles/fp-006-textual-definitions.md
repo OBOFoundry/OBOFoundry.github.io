@@ -37,6 +37,30 @@ Logical definitions should agree with textual definitions. In fact, logical defi
 
 Textual definitions should be identified using the annotation property: ‘definition’ http://purl.obolibrary.org/obo/IAO_0000115. The source of the definition should be provided using the annotation property ‘definition source’ http://purl.obolibrary.org/obo/IAO_0000119, or as an axiom annotation on the definition assertion.
 
+An example of providing source in an axiom annotation:
+
+```
+<http://purl.obolibrary.org/obo/GO_0000109> rdf:type owl:Class ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "Any complex formed of proteins that act in nucleotide-excision repair."@en ;
+                                            rdfs:label "nucleotide-excision repair complex"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/GO_0000109> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Any complex formed of proteins that act in nucleotide-excision repair."@en ;
+   <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:10915862"^^xsd:string
+ ] .
+
+```
+
+this corresponds to the obo format:
+
+```
+id: GO:0000109
+name: nucleotide-excision repair complex
+def: "Any complex formed of proteins that act in nucleotide-excision repair." [PMID:10915862]
+```
+
 Examples
 --------
 
