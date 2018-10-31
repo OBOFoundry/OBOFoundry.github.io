@@ -243,8 +243,8 @@ ontologies:
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/23220694', title: The plant ontology
       as a tool for comparative plant anatomy and genomic analyses.}
-  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/22847540', title: Ontologies as integrative
-      tools for plant science.}
+  - {id: 'https://doi.org/10.1093/nar/gkx1152', title: 'The Planteome database: an
+      integrated resource for reference ontologies, plant genomics and phenomics.'}
   taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
   title: Plant Ontology
   tracker: https://github.com/Planteome/plant-ontology/issues
@@ -295,7 +295,7 @@ ontologies:
   title: PRotein Ontology (PRO)
   tracker: http://purl.obolibrary.org/obo/pr/tracker
 - build: {infallible: 0, method: obo2owl, source_url: 'https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo'}
-  contact: {email: segerdell.erik@gmail.com, github: seger, label: Erik Segerdell}
+  contact: {email: esegerd3@gmail.com, github: seger, label: Erik Segerdell}
   description: Anatomy and development of the African clawed frog (<i>Xenopus laevis</i>).
   domain: anatomy
   homepage: http://www.xenbase.org/anatomy/xao.do?method=display
@@ -436,7 +436,7 @@ ontologies:
   id: bco
   in_foundry: false
   layout: ontology_detail
-  license: {label: CC-BY 1.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+  license: {label: CC-0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
     url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/bco.owl
   products:
@@ -551,7 +551,7 @@ ontologies:
   id: chmo
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/4.0'}
+    url: 'http://creativecommons.org/licenses/by/4.0/'}
   mailing_list: chemistry-ontologies@googlegroups.com
   ontology_purl: http://purl.obolibrary.org/obo/chmo.owl
   products:
@@ -644,11 +644,12 @@ ontologies:
   products:
   - {id: clo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/clo.owl'}
   title: Cell Line Ontology
-- contact: {email: Michael Grove, label: grovmi@ohsu.edu}
+- contact: {email: grovmi@ohsu.edu, label: Michael Grove}
   homepage: https://code.google.com/p/craniomaxillofacial-ontology/
   id: cmf
   layout: ontology_detail
   title: CranioMaxilloFacial ontology
+  validate: false
 - browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=CMO:0000000'}
   build: {method: obo2owl, source_url: 'ftp://ftp.rgd.mcw.edu/pub/ontology/clinical_measurement/clinical_measurement.obo'}
@@ -866,8 +867,6 @@ ontologies:
   products:
   - {id: eco.owl, ontology_purl: 'http://purl.obolibrary.org/obo/eco.owl'}
   - {id: eco.obo, ontology_purl: 'http://purl.obolibrary.org/obo/eco.obo'}
-  - {id: eco/gaf-eco-mapping.txt, ontology_purl: 'http://purl.obolibrary.org/obo/eco/gaf-eco-mapping.txt',
-    title: Mapping between ECO classes and Gene Ontology codes, type: Mapping}
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/25052702', title: Standardized description
       of scientific evidence using the Evidence Ontology (ECO)}
@@ -1009,6 +1008,7 @@ ontologies:
   products:
   - {id: epo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/epo.owl'}
   title: Epidemiology Ontology
+  validate: false
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/ero.owl'}
   contact: {email: tenille_johnson@hms.harvard.edu, label: Tenille Johnson}
   description: An ontology of research resources such as instruments. protocols, reagents,
@@ -1348,7 +1348,7 @@ ontologies:
   homepage: https://github.com/EBISPOT/ancestro
   id: hancestro
   layout: ontology_detail
-  license: {label: 'Creative Commons CC-BY, version 4.0', logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/hancestro.owl
   products:
@@ -1431,6 +1431,7 @@ ontologies:
   - {id: hsapdv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/hsapdv.owl'}
   - {id: hsapdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/hsapdv.obo'}
   title: Human Developmental Stages
+  validate: false
 - build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/iao.owl'}
   contact: {email: jiezheng@pennmedicine.upenn.edu, github: zhengj2007, label: Jie
       Zheng}
@@ -1458,7 +1459,8 @@ ontologies:
     title: ontology of document acts
   title: Information Artifact Ontology
   tracker: https://github.com/information-artifact-ontology/IAO/issues
-- contact: {email: Yongqun Oliver He, github: yongqunh, label: yongqunh@med.umich.edu}
+- contact: {email: yongqunh@med.umich.edu, github: yongqunh, label: Yongqun Oliver
+      He}
   description: An ontology of clinical informed consents
   homepage: https://github.com/ICO-ontology/ICO
   id: ico
@@ -1729,6 +1731,7 @@ ontologies:
   - {id: mmusdv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/mmusdv.owl'}
   - {id: mmusdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/mmusdv.obo'}
   title: Mouse Developmental Stages
+  validate: false
 - build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mod/data/PSI-MOD.obo'}
   contact: {email: hhe@ebi.ac.uk, label: Henning Hermjakob}
   description: PSI-MOD is an ontology consisting of terms that describe protein chemical
@@ -1970,7 +1973,7 @@ ontologies:
   homepage: http://omnisearch.soc.southalabama.edu/w/index.php/Ontology
   id: ncro
   layout: ontology_detail
-  license: {label: CC-BY 4, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'https://creativecommons.org/licenses/by/4.0/'}
   mailing_list: ncro-devel@googlegroups.com, ncro-discuss@googlegroups.com
   ontology_purl: http://purl.obolibrary.org/obo/ncro.owl
@@ -2077,6 +2080,7 @@ ontologies:
   - {id: ogi.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ogi.owl'}
   title: Ontology for genetic interval
   tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list
+  validate: false
 - contact: {email: baeverma@jcvi.org, label: Brian Aevermann}
   depicted_by: https://avatars2.githubusercontent.com/u/12973154?s=200&v=4
   description: An ontology for representing treatment of disease and diagnosis and
@@ -2152,6 +2156,7 @@ ontologies:
   - {id: olatdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/olatdv.obo'}
   - {id: olatdv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/olatdv.owl'}
   title: Medaka Developmental Stages
+  validate: false
 - contact: {email: mbrochhausen@gmail.com, label: Mathias Brochhausen}
   description: An ontological version of MIABIS (Minimum Information About BIobank
     data Sharing)
@@ -2322,6 +2327,7 @@ ontologies:
   - {id: pdumdv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/pdumdv.owl'}
   - {id: pdumdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/pdumdv.obo'}
   title: Platynereis Developmental Stages
+  validate: false
 - contact: {email: jaiswalp@science.oregonstate.edu, label: Pankaj Jaiswal}
   description: A structured, controlled vocabulary which describes the treatments,
     growing conditions, and/or study types used in plant biology experiments.
@@ -2337,10 +2343,30 @@ ontologies:
   - {id: peco.owl, ontology_purl: 'http://purl.obolibrary.org/obo/peco.owl'}
   - {id: peco.obo, ontology_purl: 'http://purl.obolibrary.org/obo/peco.obo'}
   publications:
-  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/22847540', title: Ontologies as integrative
-      tools for plant science.}
+  - {id: 'https://doi.org/10.1093/nar/gkx1152', title: 'The Planteome database: an
+      integrated resource for reference ontologies, plant genomics and phenomics.'}
   title: Plant Experimental Conditions Ontology
   tracker: https://github.com/Planteome/plant-experimental-conditions-ontology/issues
+- build: {checkout: 'git clone https://github.com/PHI-base/phipo.git', path: ., system: git}
+  contact: {email: alayne.cuzick@rothamsted.ac.uk, label: Alayne Cuzick}
+  dependencies:
+  - {id: pato}
+  description: PHIPO is a formal ontology of species-neutral phenotypes observed in
+    pathogen-host interactions.
+  domain: phenotype
+  homepage: https://github.com/PHI-base/phipo
+  id: phipo
+  jobs:
+  - {id: 'https://travis-ci.org/PHI-base/phipo', type: travis-ci}
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/phipo.owl
+  products:
+  - {id: phipo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/phipo.owl'}
+  - {id: phipo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/phipo.obo'}
+  title: Pathogen Host Interaction Phenotype Ontology
+  tracker: https://github.com/PHI-base/phipo/issues
 - build: {checkout: 'git clone https://github.com/obophenotype/planaria-ontology.git',
     path: ., system: git}
   contact: {email: smr@stowers.org, label: Sofia Robb}
@@ -2444,7 +2470,7 @@ ontologies:
   homepage: https://github.com/bgsu-rna/rnao
   id: rnao
   layout: ontology_detail
-  license: {label: CC-BY 1.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+  license: {label: CC-0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
     url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/rnao.owl
   products:
@@ -2456,6 +2482,7 @@ ontologies:
   canonical: ro.owl
   contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
   description: Relationship types shared across multiple ontologies
+  documentation: https://github.com/oborel/obo-relations/wiki/ROGuide
   domain: relations
   homepage: https://github.com/oborel/obo-relations/
   id: ro
@@ -2752,8 +2779,8 @@ ontologies:
   - {id: to.owl, ontology_purl: 'http://purl.obolibrary.org/obo/to.owl'}
   - {id: to.obo, ontology_purl: 'http://purl.obolibrary.org/obo/to.obo'}
   publications:
-  - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/22847540', title: Ontologies as integrative
-      tools for plant science.}
+  - {id: 'https://doi.org/10.1093/nar/gkx1152', title: 'The Planteome database: an
+      integrated resource for reference ontologies, plant genomics and phenomics.'}
   taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
   title: Plant Trait Ontology
   tracker: https://github.com/Planteome/plant-trait-ontology/issues
@@ -2970,6 +2997,7 @@ ontologies:
   products:
   - {id: vario.owl, ontology_purl: 'http://purl.obolibrary.org/obo/vario.owl'}
   title: Variation Ontology
+  validate: false
 - build: {source_url: 'https://raw.githubusercontent.com/vaccineontology/VO/master/src/VO_merged.owl'}
   contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
   description: VO is a biomedical ontology in the domain of vaccine and vaccination.

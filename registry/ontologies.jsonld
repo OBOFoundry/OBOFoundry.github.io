@@ -488,8 +488,8 @@
                     "title": "The plant ontology as a tool for comparative plant anatomy and genomic analyses."
                 },
                 {
-                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/22847540",
-                    "title": "Ontologies as integrative tools for plant science."
+                    "id": "https://doi.org/10.1093/nar/gkx1152",
+                    "title": "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics."
                 }
             ],
             "taxon": {
@@ -610,7 +610,7 @@
                 "source_url": "https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo"
             },
             "contact": {
-                "email": "segerdell.erik@gmail.com",
+                "email": "esegerd3@gmail.com",
                 "github": "seger",
                 "label": "Erik Segerdell"
             },
@@ -4860,12 +4860,57 @@
             ],
             "publications": [
                 {
-                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/22847540",
-                    "title": "Ontologies as integrative tools for plant science."
+                    "id": "https://doi.org/10.1093/nar/gkx1152",
+                    "title": "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics."
                 }
             ],
             "title": "Plant Experimental Conditions Ontology",
             "tracker": "https://github.com/Planteome/plant-experimental-conditions-ontology/issues"
+        },
+        {
+            "build": {
+                "checkout": "git clone https://github.com/PHI-base/phipo.git",
+                "path": ".",
+                "system": "git"
+            },
+            "contact": {
+                "email": "alayne.cuzick@rothamsted.ac.uk",
+                "label": "Alayne Cuzick"
+            },
+            "dependencies": [
+                {
+                    "id": "pato"
+                }
+            ],
+            "description": "PHIPO is a formal ontology of species-neutral phenotypes observed in pathogen-host interactions.",
+            "domain": "phenotype",
+            "homepage": "https://github.com/PHI-base/phipo",
+            "id": "phipo",
+            "jobs": [
+                {
+                    "id": "https://travis-ci.org/PHI-base/phipo",
+                    "type": "travis-ci"
+                }
+            ],
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/phipo.owl",
+            "products": [
+                {
+                    "id": "phipo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/phipo.owl"
+                },
+                {
+                    "id": "phipo.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/phipo.obo"
+                }
+            ],
+            "title": "Pathogen Host Interaction Phenotype Ontology",
+            "tracker": "https://github.com/PHI-base/phipo/issues"
         },
         {
             "build": {
@@ -5119,6 +5164,7 @@
                 "label": "Chris Mungall"
             },
             "description": "Relationship types shared across multiple ontologies",
+            "documentation": "https://github.com/oborel/obo-relations/wiki/ROGuide",
             "domain": "relations",
             "homepage": "https://github.com/oborel/obo-relations/",
             "id": "ro",
@@ -5727,8 +5773,8 @@
             ],
             "publications": [
                 {
-                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/22847540",
-                    "title": "Ontologies as integrative tools for plant science."
+                    "id": "https://doi.org/10.1093/nar/gkx1152",
+                    "title": "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics."
                 }
             ],
             "taxon": {
