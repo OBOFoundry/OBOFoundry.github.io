@@ -16,15 +16,9 @@ OBO Foundry ontologies are resources for the entire biological and biomedical co
 
 ### For ontology providers
 
-1. OBO Foundry Ontologies must
+OBO Foundry Ontologies MUST EITHER be copyrighted under a [Creative Commons](https://creativecommons.org/) [CC-BY license version 3.0](https://creativecommons.org/licenses/by/3.0/) or later, OR released into the public domain under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) (which is not a license). Regardless of which is chosen, it should be clearly stated in the ontology file.
 
-    EITHER be copyrighted under a Creative Commons [CC-BY license version 3.0](https://creativecommons.org/licenses/by/3.0/) or later, which lets others distribute, remix, tweak, and build upon the work, even commercially, as long as they credit the creators for the original creation
-
-    OR released into the public domain under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) (which is not a license). Note that CC0 specifies that the creators of an ontology waive, to the extent that they legally can be, all rights and place the ontology in the public domain. It does not prevent them from requesting that the ontology be properly credited and cited, but prevents any legal recourse if it is not credited.
-
-2. We recommend that new ontologies carefully consider the choice of license. For example, [Creative Commons](https://creativecommons.org/) licenses like [CC0](https://creativecommons.org/publicdomain/zero/1.0/) and [CC-BY](https://creativecommons.org/licenses/by/4.0/) are popular open and understandable licenses. Many pros and cons of each license are laid out in [this discussion](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/285).
-
-Regardless of which license is chosen, it should be clearly stated in the ontology file.
+Note: CC-BY licenses allow others to distribute, remix, tweak, and build upon the work, even commercially, as long as they credit the creators for the original creation. CC0 specifies that the creators of an ontology waive, to the extent that they legally can be, all rights and place the ontology in the public domain. It does not prevent them from requesting that the ontology be properly credited and cited, but prevents any legal recourse if it is not credited. Many pros and cons of CC-BY versus CC0 are laid out in [this discussion](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/285). It is important to note that one can move from CC-BY to CC0 but not the other way around.
 
 ### For ontology re-use
 
