@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: apo
 contact:
-  email: sstacia@stanford.edu
+  email: stacia@stanford.edu
   label: Stacia R Engel
 license:
   url: https://creativecommons.org/licenses/by/4.0/
