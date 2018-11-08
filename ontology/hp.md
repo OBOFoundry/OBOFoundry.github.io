@@ -10,6 +10,9 @@ contact:
   email: dr.sebastian.koehler@gmail.com
   label: Sebastian Koehler
   github: drseb
+license:
+  url: https://hpo.jax.org/app/license
+  label: hpo
 products:
   - id: hp.owl
   - id: hp.obo
