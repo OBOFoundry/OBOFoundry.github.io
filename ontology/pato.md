@@ -29,6 +29,9 @@ jobs:
 products:
   - id: pato.owl
   - id: pato.obo
+  - id: pato.json
+  - id: pato-base.owl
+    description: "Includes axioms linking to other ontologies, but no imports of those ontologies"
 ---
 
 Phenotypic qualities (properties). This ontology can be used in conjunction with other ontologies such as GO or anatomical ontologies to refer to phenotypes. Examples of qualities are red, ectopic, high temperature, fused, small, edematous and arrested.
