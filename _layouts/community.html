@@ -100,10 +100,12 @@ layout: default
           </dd>
           {% endif %}
 
-          <dt>Trackers</dt>
+          <dt>Members</dt>
+          {% for member in page.members %}
           <dd>
-            <a href="{{page.tracker}}">{{page.tracker}}</a>
+            <a href="https://github.com/{{member}}">@{{member}}</a>
           </dd>
+          {% endfor %}
 
           {% if page.taxon %}
           <dt>Taxon</dt>
