@@ -60,6 +60,11 @@ usages:
    label: SCPortalen
    reference: https://doi.org/10.1093/nar/gkx949
    type: Database
+ - url: https://www.ebi.ac.uk/chembl/
+   label: ChEMBL
+   description: "ChEMBL uses Uberon to describe organ/tissue information in assays"
+   reference: https://doi.org/10.1093/nar/gky1075
+   type: Database
 funded_by:
  - "NIH R24OD011883"
  - "NIH R01HG004838"
