@@ -22,6 +22,8 @@ products:
   - id: envo.obo
   - id: subsets/envo-basic.obo
     title: OBO-Basic edition of ENVO
+  - id: subsets/envoEmpo.owl
+    title: Earth Microbiome Project subset
   - id: subsets/EnvO-Lite-GSC.obo
     title: GSC Lite subset of ENVO
     homepage: http://environmentontology.org/downloads
