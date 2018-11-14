@@ -7,19 +7,36 @@ members:
  - mellybelly
  - dosumis
  - balhoff
+ - ANiknejad
+ - fbastian
+ - jaiswalp
 ontologies:
  - id: uberon
+   description: "covers all animals. Can bridge species-specific AOs"
  - id: po
+   description: "covers all plants"
  - id: fao
+   description: "covers all multicellular fungi"
  - id: ma
- - id: ddanat
- - id: plana
+   description: "mouse (adult)"
  - id: emapa
+   description: "mouse (embryonic)"
+ - id: ddanat
+   description: "dicty (slime mold)"
+ - id: plana
+   description: "planaria"
+ - id: fma
+   description: "human"
  - id: ehdaa2
+   description: "human (developmental)"
  - id: zfa
+   description: "zebrafish"
  - id: xao
+   description: "xenopus"
  - id: fbbt
+   description: "Drosophila"
  - id: wbbt
+   description: "C elegans"
 ---
 
 Welcome to the OBO Foundry Anatomy Portal!
@@ -99,3 +116,9 @@ Species or taxon-specific anatomy ontologies
         * Sponges: [poro](/ontology/poro.html)
         * Ctenophores: [cteno](/ontology/cteno.html)
         * Cephalopods: [cteno](/ontology/cteno.html)
+        
+ ## Stage Ontologies
+ 
+ We have a separate github repo:
+ 
+ * https://github.com/obophenotype/developmental-stage-ontologies
