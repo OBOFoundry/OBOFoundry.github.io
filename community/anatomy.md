@@ -115,8 +115,8 @@ Species or taxon-specific anatomy ontologies
      * non-model organism
         * Sponges: [poro](/ontology/poro.html)
         * Ctenophores: [cteno](/ontology/cteno.html)
-        * Cephalopods: [cteno](/ontology/cteno.html)
-        
+        * Cephalopods: [ceph](/ontology/ceph.html)
+ 
  ## Stage Ontologies
  
  We have a separate github repo:
