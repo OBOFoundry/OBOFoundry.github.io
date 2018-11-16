@@ -39,6 +39,8 @@ Current activities are focused on creating guidelines for reviews. Once those gu
 # Current Members #
 (in alphabetical order)<br>
 <br>
+Melissa Haendel<br>
+Suzanna Lewis<br>
 Darren Natale<br>
 Bjoern Peters<br>
 Philippe Rocca-Serra<br>

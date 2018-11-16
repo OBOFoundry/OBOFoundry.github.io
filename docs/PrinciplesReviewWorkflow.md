@@ -7,17 +7,29 @@ title: PrincipleReviewProcess
 This page describes the process for reviewing and updating existing [OBO Foundry Principles](http://obofoundry.github.io/principles/fp-000-summary.html) and creating new ones.
 
 
-# Reviewing and rewriting existing principles #
+# Reviewing and updating existing principles #
 
-  * Discuss among those on the call
-  * Write up proposed revision on github as a ticket (not PR)
-  * Inform the EWG via email that the ticket needs discussion (if it doesn’t happen automatically)
-  * Two-week commenting period on Issue Tracker
-  * Make public any incremental improvements
-  * When the EWG final version is ready, discuss with Operations Committee
-  * Make PR
-  * Two-week commenting period on the PR
-  * Final public upload.
+  * Discuss changes on working group call
+  * Write up proposed revisions as a GitHub issue (not a pull request)
+  * Inform the Editorial WG via email that the ticket needs discussion (if it doesn’t happen automatically)
+  * Two-week commenting period on GitHub issue tracker
+  * Make any incremental improvements on the tracker
+  * When the Editorial WG agrees on a final version, discuss on an Operations Committee call or via the issue  tracke
+  * Make a pull request
+  * Two-week commenting period on the pull request
+  * Upload final changes to OBO Foundry web site for public viewing.
 
 # Writing New Principles #
+
+The need for a new principle can arise when existing an existing principle tries to cover too much and requires splitting, or as new needs arise within the community. The procedure is similar to revision of existing principles.
+
+  * Discuss new principle on working group call
+  * Write up proposed principle as a GitHub issue (not a pull request)
+  * Inform the Editorial WG via email that the ticket needs discussion (if it doesn’t happen automatically)
+  * Two-week commenting period on GitHub issue tracker
+  * Make any incremental improvements on the tracker
+  * When the Editorial WG agrees on a final version, discuss on an Operations Committee call or via the issue tracker
+  * Make a pull request
+  * Two-week commenting period on the pull request
+  * Upload final changes to OBO Foundry web site for public viewing.
 
