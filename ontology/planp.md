@@ -1,4 +1,4 @@
---- 
+---
 layout: ontology_detail
 id: planp
 title: Planarian Phenotype Ontology
@@ -12,7 +12,7 @@ build:
 contact:
   email: smr@stowers.org
   label: Sofia Robb
-description: Planarian Phenotype Ontology is an ontology...
+description: Planarian Phenotype Ontology is an ontology of phenotypes
 domain: stuff
 homepage: https://github.com/srobb1/planarian-phenotype-ontology
 products:
