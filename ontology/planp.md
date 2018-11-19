@@ -12,8 +12,8 @@ build:
 contact:
   email: smr@stowers.org
   label: Sofia Robb
-description: Planarian Phenotype Ontology is an ontology of phenotypes
-domain: stuff
+description: Planarian Phenotype Ontology is an ontology of phenotypes observed in the planarian Schmidtea mediterranea.
+domain: phenotype
 homepage: https://github.com/srobb1/planarian-phenotype-ontology
 products:
   - id: planp.owl
@@ -29,4 +29,4 @@ license:
   label: CC-BY
 ---
 
-Planarian phenotype ontology.
+Planarian Phenotype Ontology is an ontology of phenotypes observed in the planarian Schmidtea mediterranea. Many of the phenotypes were seen durning RNAi experiments.
