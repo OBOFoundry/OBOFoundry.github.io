@@ -607,7 +607,7 @@ ontologies:
       public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in
       September 2003, to carry out a project to identify all functional elements in
       the human genome sequence. The ENCODE DCC users Uberon to annotate samples',
-    reference: 'http://dx.doi.org/10.1093/database/bav010', seeAlso: 'https://www.biosharing.org/biodbcore-000034',
+    reference: 'https://doi.org/10.1093/database/bav010', seeAlso: 'https://www.biosharing.org/biodbcore-000034',
     type: annotation, user: 'https://www.encodeproject.org/'}
   - description: FANTOM5 is using Uberon and CL to annotate samples allowing for transcriptome
       analyses with cell-type and tissue-level specificity.
@@ -796,7 +796,7 @@ ontologies:
   products:
   - {id: fbcv/dpo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fbcv/dpo.owl'}
   publications:
-  - {id: 'http://dx.doi.org/10.1186/2041-1480-4-30', title: The Drosophila phenotype
+  - {id: 'https://doi.org/10.1186/2041-1480-4-30', title: The Drosophila phenotype
       ontology.}
   taxon: {id: 'NCBITaxon:7227', label: Drosophila}
   title: Drosophila Phenotype Ontology
@@ -969,7 +969,7 @@ ontologies:
   publications:
   - {id: 'http://www.dx.doi.org/10.1186/2041-1480-4-43', title: 'The environment ontology:
       contextualising biological and biomedical entities'}
-  - {id: 'http://doi.org/10.1186/s13326-016-0097-6', title: 'The environment ontology
+  - {id: 'https://doi.org/10.1186/s13326-016-0097-6', title: 'The environment ontology
       in 2016: bridging domains with increased scope, semantic density, and interoperation'}
   title: Environment Ontology
   tracker: https://github.com/EnvironmentOntology/envo/issues/
@@ -1096,13 +1096,13 @@ ontologies:
   - {id: fbbt/fbbt-simple.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl'}
   - {id: fbbt/fbbt-simple.obo, ontology_purl: 'http://purl.obolibrary.org/obo/fbbt/fbbt-simple.obo'}
   publications:
-  - {id: 'http://dx.doi.org/10.1186/2041-1480-4-32', title: 'The Drosophila anatomy
+  - {id: 'https://doi.org/10.1186/2041-1480-4-32', title: 'The Drosophila anatomy
       ontology. [Journal of Biomedical Semantics'}
-  - {id: 'http://dx.doi.org/10.1093/bioinformatics/bts113', title: A strategy for
+  - {id: 'https://doi.org/10.1093/bioinformatics/bts113', title: A strategy for
       building neuroanatomy ontologies}
-  - {id: 'http://dx.doi.org/10.1093/bioinformatics/btr677', title: The Virtual Fly
+  - {id: 'https://doi.org/10.1093/bioinformatics/btr677', title: The Virtual Fly
       Brain Browser and Query Interface}
-  - {id: 'http://dx.doi.org/10.1093/nar/gkj068', title: 'FlyBase: anatomical data,
+  - {id: 'https://doi.org/10.1093/nar/gkj068', title: 'FlyBase: anatomical data,
       images and queries'}
   taxon: {id: 'NCBITaxon:7227', label: Drosophila}
   title: Drosophila gross anatomy
@@ -2396,7 +2396,7 @@ ontologies:
   products:
   - {id: poro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/poro.owl'}
   publications:
-  - {id: 'http://dx.doi.org/10.1186/2041-1480-5-39', title: 'The Porifera Ontology
+  - {id: 'https://doi.org/10.1186/2041-1480-5-39', title: 'The Porifera Ontology
       (PORO): enhancing sponge systematics with an anatomy ontology'}
   taxon: {id: 'NCBITaxon:6040', label: Porifera}
   title: Porifera Ontology
@@ -2505,7 +2505,7 @@ ontologies:
   title: Relation Ontology
   tracker: https://github.com/oborel/obo-relations/issues
   usages:
-  - {description: RO is used for annotation extensions in the GO, reference: 'http://dx.doi.org/10.1186/1471-2105-15-155',
+  - {description: RO is used for annotation extensions in the GO, reference: 'https://doi.org/10.1186/1471-2105-15-155',
     type: annotation, user: 'http://geneontology.org'}
   - description: RO is used for GO Causal Activity Models
     examples: ['http://model.geneontology.org/56d1143000003402']
@@ -2915,7 +2915,7 @@ ontologies:
       public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in
       September 2003, to carry out a project to identify all functional elements in
       the human genome sequence. The ENCODE DCC users Uberon to annotate samples',
-    reference: 'http://dx.doi.org/10.1093/database/bav010', seeAlso: 'https://www.biosharing.org/biodbcore-000034',
+    reference: 'https://doi.org/10.1093/database/bav010', seeAlso: 'https://www.biosharing.org/biodbcore-000034',
     type: annotation, user: 'https://www.encodeproject.org/'}
   - description: FANTOM5 is using Uberon and CL to annotate samples allowing for transcriptome
       analyses with cell-type and tissue-level specificity.
