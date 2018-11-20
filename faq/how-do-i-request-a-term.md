@@ -5,7 +5,7 @@ title: Request an ontology term
 
 ## How do I request an ontology term?
 
-Every ontology project has an issue tracker that the developers use to keep track of terms to add and problems to fix. Look for "Trackers" on the right side of the page for each ontology on this site. For example, on the [Gene Ontology page](http://obofoundry.org/ontology/go.html) you'll see the tracker is <https://github.com/geneontology/go-ontology/issues/>. 
+Every ontology project has an issue tracker that the developers use to keep track of terms to add and problems to fix. Look for "Trackers" on the right side of the page for each ontology on this site. For example, on the [Gene Ontology page](http://obofoundry.org/ontology/go) you'll see the tracker is <https://github.com/geneontology/go-ontology/issues/>. 
 
 Before you request a new term, please search [OntoBee](http://www.ontobee.org) or [BioPortal](http://bioportal.bioontology.org) for the term you want and its synonyms. An OBO ontology might already include the term you want under a different name. Check the [OBO home page](http://obofoundry.org) to find appropriate ontologies. 
 

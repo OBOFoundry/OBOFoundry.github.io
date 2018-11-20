@@ -5,7 +5,7 @@ title: CompletedReviews
 ---
 ## Introduction ##
 
-This page lists OBO Foundry ontologies that have gone through the current [review process](http://obofoundry.org/docs/ReviewProcessGuidelines.html). OBO Foundry ontologies added in 2010 were reviewed using a similar but non-identical process.
+This page lists OBO Foundry ontologies that have gone through the current [review process](http://obofoundry.org/docs/ReviewProcessGuidelines). OBO Foundry ontologies added in 2010 were reviewed using a similar but non-identical process.
 
 
 <style type="text/css">
@@ -22,52 +22,52 @@ This page lists OBO Foundry ontologies that have gone through the current [revie
     <th class="tg-lbaf">Review</th>
   </tr>
   <tr>
-    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/bfo.html">Basic Formal Ontology</a></td>
+    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/bfo">Basic Formal Ontology</a></td>
     <td class="tg-yp4a">2016</td>
     <td class="tg-yp4a"><a href="https://drive.google.com/open?id=0B81h9ah4tAM_RnNTRUZnVGRyWXM">PDF</a></td>
   </tr>
   <tr>
-    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/doid.html">Human Disease Ontology</a></td>
+    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/doid">Human Disease Ontology</a></td>
     <td class="tg-yp4a">2015</td>
     <td class="tg-yp4a"><a href="https://drive.google.com/open?id=0B8vqEgF1N0NIZ082U2JETHlSTGs">PDF</a></td>
   </tr>
   <tr>
-    <td class="tg-yp4a"><a href="http://obofoundry.org/ontology/obi.html">Ontology of Biomedical Investigations</a></td>
+    <td class="tg-yp4a"><a href="http://obofoundry.org/ontology/obi">Ontology of Biomedical Investigations</a></td>
     <td class="tg-yp4a">2013</td>
     <td class="tg-yp4a"><a href="https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc">PDF</a></td>
   </tr>
   <tr>
-    <td class="tg-yp4a"><a href="http://obofoundry.org/ontology/po.html">Plant Ontology</a></td>
+    <td class="tg-yp4a"><a href="http://obofoundry.org/ontology/po">Plant Ontology</a></td>
     <td class="tg-yp4a">2013</td>
     <td class="tg-yp4a"><a href="https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc">PDF</a></td>
   </tr>
   <tr>
-    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/chebi.html">Chemical Entities of Biological Interest</a></td>
+    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/chebi">Chemical Entities of Biological Interest</a></td>
     <td class="tg-yp4a">2010</td>
     <td class="tg-yp4a">n/a</td>
   </tr>
   <tr>
-    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/go.html">Gene Ontology</a></td>
+    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/go">Gene Ontology</a></td>
     <td class="tg-yp4a">2010</td>
     <td class="tg-yp4a">n/a</td>
   </tr>
   <tr>
-    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/pato.html">Phenotype And Trait Ontology</a></td>
+    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/pato">Phenotype And Trait Ontology</a></td>
     <td class="tg-yp4a">2010</td>
     <td class="tg-yp4a">n/a</td>
   </tr>
   <tr>
-    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/pr.html">Protein Ontology</a></td>
+    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/pr">Protein Ontology</a></td>
     <td class="tg-yp4a">2010</td>
     <td class="tg-yp4a">n/a</td>
   </tr>
   <tr>
-    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/xao.html">Xenopus anatomy and development</a></td>
+    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/xao">Xenopus anatomy and development</a></td>
     <td class="tg-yp4a">2010</td>
     <td class="tg-yp4a">n/a</td>
   </tr>
   <tr>
-    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/zfa.html">Zebrafish anatomy and development</a></td>
+    <td class="tg-yp4a"><a href="http://www.obofoundry.org/ontology/zfa">Zebrafish anatomy and development</a></td>
     <td class="tg-yp4a">2010</td>
     <td class="tg-yp4a">n/a</td>
   </tr>
