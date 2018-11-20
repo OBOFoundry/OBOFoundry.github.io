@@ -627,7 +627,7 @@ _:b27   <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
         <http://purl.org/dc/elements/1.1/title>  "Environment Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <http://www.dx.doi.org/10.1186/2041-1480-4-43> ;
-        <http://purl.org/dc/terms/1.1/publication>  <http://doi.org/10.1186/s13326-016-0097-6> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1186/s13326-016-0097-6> ;
         <http://purl.org/dc/terms/1.1/theme>  "environment" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/EnvironmentOntology/envo/issues/" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/envo.owl" ;
@@ -1207,7 +1207,7 @@ _:b70   <http://www.w3.org/2000/01/rdf-schema#label>  "Maria Herrero" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of commonly encountered and/or high level Drosophila phenotypes." ;
         <http://purl.org/dc/elements/1.1/title>  "Drosophila Phenotype Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
-        <http://purl.org/dc/terms/1.1/publication>  <http://dx.doi.org/10.1186/2041-1480-4-30> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1186/2041-1480-4-30> ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>  "http://purl.obolibrary.org/obo/fbcv/tracker" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000347> ;
@@ -1222,7 +1222,7 @@ _:b71   <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
 <http://purl.obolibrary.org/obo/NCBITaxon_7227>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Drosophila" .
 
-<http://dx.doi.org/10.1186/2041-1480-4-30>
+<https://doi.org/10.1186/2041-1480-4-30>
         <http://purl.org/dc/elements/1.1/title>  "The Drosophila phenotype ontology." .
 
 <http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000347>
@@ -1442,7 +1442,7 @@ _:b30   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://gi
 <http://www.dx.doi.org/10.1186/2041-1480-4-43>
         <http://purl.org/dc/elements/1.1/title>  "The environment ontology: contextualising biological and biomedical entities" .
 
-<http://doi.org/10.1186/s13326-016-0097-6>
+<https://doi.org/10.1186/s13326-016-0097-6>
         <http://purl.org/dc/elements/1.1/title>  "The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation" .
 
 _:b31   <http://www.w3.org/2000/01/rdf-schema#label>  "Pier Luigi Buttigieg" ;
@@ -1595,10 +1595,10 @@ _:b98   <http://www.w3.org/2000/01/rdf-schema#label>  "David Orloff" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology representing the gross anatomy of Drosophila melanogaster." ;
         <http://purl.org/dc/elements/1.1/title>  "Drosophila gross anatomy" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
-        <http://purl.org/dc/terms/1.1/publication>  <http://dx.doi.org/10.1186/2041-1480-4-32> ;
-        <http://purl.org/dc/terms/1.1/publication>  <http://dx.doi.org/10.1093/bioinformatics/bts113> ;
-        <http://purl.org/dc/terms/1.1/publication>  <http://dx.doi.org/10.1093/bioinformatics/btr677> ;
-        <http://purl.org/dc/terms/1.1/publication>  <http://dx.doi.org/10.1093/nar/gkj068> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1186/2041-1480-4-32> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1093/bioinformatics/bts113> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1093/bioinformatics/btr677> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1093/nar/gkj068> ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy" ;
         <http://usefulinc.com/ns/doap#bug-database>  "http://purl.obolibrary.org/obo/fbbt/tracker" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://flybase.org/.bin/cvreport.html?cvterm=FBbt:10000000> ;
@@ -1615,16 +1615,16 @@ _:b98   <http://www.w3.org/2000/01/rdf-schema#label>  "David Orloff" ;
 _:b99   <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.owl" .
 
-<http://dx.doi.org/10.1186/2041-1480-4-32>
+<https://doi.org/10.1186/2041-1480-4-32>
         <http://purl.org/dc/elements/1.1/title>  "The Drosophila anatomy ontology. [Journal of Biomedical Semantics" .
 
-<http://dx.doi.org/10.1093/bioinformatics/bts113>
+<https://doi.org/10.1093/bioinformatics/bts113>
         <http://purl.org/dc/elements/1.1/title>  "A strategy for building neuroanatomy ontologies" .
 
-<http://dx.doi.org/10.1093/bioinformatics/btr677>
+<https://doi.org/10.1093/bioinformatics/btr677>
         <http://purl.org/dc/elements/1.1/title>  "The Virtual Fly Brain Browser and Query Interface" .
 
-<http://dx.doi.org/10.1093/nar/gkj068>
+<https://doi.org/10.1093/nar/gkj068>
         <http://purl.org/dc/elements/1.1/title>  "FlyBase: anatomical data, images and queries" .
 
 <http://flybase.org/.bin/cvreport.html?cvterm=FBbt:10000000>
@@ -3338,7 +3338,7 @@ _:b207  <http://www.w3.org/2000/01/rdf-schema#label>  "Sofia Robb" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology covering the anatomy of the taxon Porifera (sponges)" ;
         <http://purl.org/dc/elements/1.1/title>  "Porifera Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
-        <http://purl.org/dc/terms/1.1/publication>  <http://dx.doi.org/10.1186/2041-1480-5-39> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1186/2041-1480-5-39> ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/porifera-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/poro.owl" ;
@@ -3352,7 +3352,7 @@ _:b208  <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://gi
 <http://purl.obolibrary.org/obo/NCBITaxon_6040>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Porifera" .
 
-<http://dx.doi.org/10.1186/2041-1480-5-39>
+<https://doi.org/10.1186/2041-1480-5-39>
         <http://purl.org/dc/elements/1.1/title>  "The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy ontology" .
 
 _:b209  <http://www.w3.org/2000/01/rdf-schema#label>  "Bob Thacker" ;
