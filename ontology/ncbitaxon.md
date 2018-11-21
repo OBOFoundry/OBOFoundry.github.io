@@ -14,7 +14,7 @@ contact:
 description: An ontology representation of the NCBI organismal taxonomy
 source: http://www.ncbi.nlm.nih.gov/taxonomy
 wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
-createdWith: http://owltools.googlecode.com/
+createdWith: https://github.com/owlcollab/owltools/
 domain: taxonomy
 homepage: https://github.com/obophenotype/ncbitaxon
 page: http://www.ncbi.nlm.nih.gov/taxonomy
@@ -74,10 +74,11 @@ is currently no fixed cycle, and this is generally done on demand. The
 team that informally handles this are:
 
  * James Overton, IEBD/OBO
- * Heiko Dietze, LBNL/GO
  * Frederic Bastian, BgeeDb/Uberon
  * Chris Mungall, LBNL/GO/Monarch/Uberon/OBO
  * Peter Midford, Phenoscape
+
+Contact the mail list (see below) for comments on this.
 
 ## Extensions
 
