@@ -3,25 +3,27 @@ layout: ontology_detail
 id: wbphenotype
 preferredPrefix: WBPhenotype
 contact:
-  email: garys@caltech.edu
-  label: Gary Schindelman
+  email: cgrove@caltech.edu
+  label: Chris Grove
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 description: A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes
 domain: phenotype
-homepage: http://www.wormbase.org/
+homepage: https://github.com/obophenotype/c-elegans-phenotype-ontology
 products:
   - id: wbphenotype.owl
   - id: wbphenotype.obo
+  - id: wbphenotype-base.owl
+  - id: wbphenotype-merged.owl
 taxon:
   id: NCBITaxon:6237
   label: Caenorhabditis
 title: C. elegans phenotype
 build:
-  source_url: http://tazendra.caltech.edu/~azurebrd/cgi-bin/forms/phenotype_ontology_obo.cgi
-  method: obo2owl
-  infallible: 0
+  checkout: git clone https://github.com/obophenotype/c-elegans-phenotype-ontology.git
+  system: git
+  path: "."
 publications:
 - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995
   title: "Worm Phenotype Ontology: integrating phenotype data within and beyond the C. elegans community."
