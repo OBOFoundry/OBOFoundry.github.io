@@ -15,7 +15,7 @@ A few things to note:
 - The funding is very much limited, and much of it is committed to upgrade the OBO 'plumbing' to protect us from potential disasters going forward. Which by definition means there won't be immediate visible improvements. But in the longer term, this should free up volunteer developer time that is now being spent on putting out fires to instead work on new capabilities. 
 - As we are implementing new checks on ontologies (both in the OBO registry and on the ontology files themselves), there will be an increase in notifications to ontology developers of areas for improvement in their ontologies. Please don't take those as criticisms on your work. We are trying to ensure that the agreed upon standards in OBO can and are being enforced. In several cases, such as ensuring that the ontology is released under an open license, there are many possible way to do this which are all perfectly fine. But agreeing on a single convention will make it easy to automate checking if an ontology confirms with the convention. We will rely on feedback from the OBO community what is a useful degree of stringency, and what is overreach. We plan to announce our activities here, and constructive feedback is very much welcome. 
 - If you want to be engaged and contribute to this process, consider joining one of the groups in the OBO operations committee, described at 
-http://www.obofoundry.org/docs/OperationsCommittee.html . Membership means work, and there is lots of it, so volunteers are always welcome. 
+http://www.obofoundry.org/docs/OperationsCommittee . Membership means work, and there is lots of it, so volunteers are always welcome. 
 
 
 Best,

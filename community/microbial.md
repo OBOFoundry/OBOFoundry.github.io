@@ -3,7 +3,7 @@ layout: community
 id: microbial
 title: OBO Microbial Community
 description: Coordination of OBO efforts for annotating microbes and the microbiome
-homepage: http://obofoundry.org/community/microbial.html
+homepage: http://obofoundry.org/community/microbial
 # mailist TODO
 members:
  - cmungall

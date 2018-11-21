@@ -9,7 +9,7 @@ title: PURLGuide
 This guide is a collection of rules and tips to work with PURLs. If you maintain PURLs for your project, we expect you to be familiar with those. Note that as we don't manage the PURL server (rather this is done by OCLC), we don't have access to the software/database to correct things.
 The PURL support mailing-list is available at persistenturls@googlegroups.com
 
-You should be familiar with the [OBO ID Policy](http://www.obofoundry.org/id-policy.html)
+You should be familiar with the [OBO ID Policy](http://www.obofoundry.org/id-policy)
 
 
 # Details #
