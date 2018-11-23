@@ -28,9 +28,9 @@ The Human Ancestry Ontology (HANCESTRO) provides a systematic description of the
 Use the following URI to download this ontology
 
 * [http://purl.obolibrary.org/obo/hancestro.owl](http://purl.obolibrary.org/obo/hancestro.owl)
-* This should point to: [https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro.owl](https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro.owl) 
+* This should point to: [https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro_inferred.owl](https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro_inferred.owl) 
 
-A pre-reasoned version of the ontology is available at [https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro_inferred.owl](https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro_inferred.owl)
+A non-reasoned version of the ontology is available at [https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro.owl](https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro.owl)
 
 A version of HANCESTRO with BFO upper classes is available at [https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro_bfo.owl](https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro_bfo.owl)
 
