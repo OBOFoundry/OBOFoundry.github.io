@@ -25,6 +25,7 @@ tracker: https://github.com/obophenotype/planaria-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+activity_status: active
 ---
 
 Anatomy ontology for planaria and terms specific to the developmental stages of the planarian __Schmidtea mediterranea__

@@ -25,6 +25,7 @@ build:
   system: git
   method: vcs
   infallible: 1
+activity_status: active
 ---
 
 ![FAO image](http://www.yeastgenome.org/images/fao.color.png)

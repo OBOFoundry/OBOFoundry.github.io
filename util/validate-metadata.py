@@ -1,15 +1,11 @@
 #!/usr/bin/env python3
 
-import ast
-import sys
-import json
-import jsonschema
-import re
+import ast, json, jsonschema, os, re, sys
 
 # file paths
-data_file = "../registry/ontologies.jsonld"
-schema_file = "metadata-schema.json"
-schema_lite_file = "metadata-schema-lite.json"
+data_file = "registry/ontologies.jsonld"
+schema_file = "util/metadata-schema.json"
+schema_file_lite = "util/metadata-schema-lite.json"
 report_file = "reports/metadata-violations.csv"
 
 # ultra-escaped regex strings
@@ -22,7 +18,7 @@ def validate():
 	"""
 	Validate registry metadata.
 	"""
-	print("--- validating metadata against {0} ---".format(schema_file))
+	print("--- validating metadata against {0} ---".format(schema_file_lite))
 	data = load_data()
 	schema = load_schema()
 	# validate each object
@@ -97,7 +93,7 @@ def load_schema():
 	Load the schema to validate against.
 	"""
 	# read the schema
-	with open(schema_file) as f:
+	with open(schema_file_lite) as f:
 		schema = json.load(f)
 	return schema
 
@@ -114,6 +110,7 @@ def write_errors(errors):
 	"""
 	Write validation errors to a user-friendly report.
 	"""
+	os.makedirs('reports', exist_ok=True)
 	with open(report_file, 'w+') as f:
 		f.write("ID,ERROR\n")
 		for ont_id, msg in errors.items():

@@ -55,6 +55,7 @@ products:
    format: json
    license: https://creativecommons.org/publicdomain/zero/1.0/
 
+activity_status: active
 ---
 
 MONDO (Monarch Disease Ontology) is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology. Original versions of MONDO were constructed entirely automatically and used the IDs of source databases and ontologies. Later, additional manually curated cross-ontology axioms were added, and a native MONDO ID system was used to avoid confusion with source databases.

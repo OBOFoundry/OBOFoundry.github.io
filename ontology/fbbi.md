@@ -17,6 +17,7 @@ title: Biological Imaging Methods Ontology
 build:
   source_url: https://raw.githubusercontent.com/dosumis/fbbi/master/src/ontology/fbbi.obo
   method: obo2owl
+activity_status: active
 ---
 
 A structured controlled vocabulary of sample preparation, visualization and imaging methods used in biomedical research.

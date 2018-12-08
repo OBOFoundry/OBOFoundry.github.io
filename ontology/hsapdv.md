@@ -16,6 +16,7 @@ products:
   - id: hsapdv.owl
   - id: hsapdv.obo
 validate: false
+activity_status: active
 ---
 
 <img alt="HumanEmbryogenesis" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/HumanEmbryogenesis.svg/500px-HumanEmbryogenesis.svg.png"/>

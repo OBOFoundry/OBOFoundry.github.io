@@ -21,6 +21,7 @@ build:
   source_url: http://www.brenda-enzymes.info/ontology/tissue/tree/update/update_files/BrendaTissueOBO
   insert_ontology_id: true
   method: obo2owl
+activity_status: active
 ---
 
 A structured controlled vocabulary for the source of an enzyme. It comprises terms for tissues, cell lines, cell types and cell cultures from uni- and multicellular organisms.

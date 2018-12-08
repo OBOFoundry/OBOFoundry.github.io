@@ -15,6 +15,7 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 validate: false
+activity_status: active
 ---
 
 

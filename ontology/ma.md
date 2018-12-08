@@ -28,6 +28,7 @@ usages:
  - user: http://www.informatics.jax.org/expression.shtml
    seeAlso: https://www.biosharing.org/biodbcore-000659
    description: GXD
+activity_status: active
 ---
 
 A structured controlled vocabulary of the adult anatomy of the mouse (Mus).

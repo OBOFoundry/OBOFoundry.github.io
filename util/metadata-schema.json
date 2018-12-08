@@ -80,7 +80,8 @@
 				}
 			]
 		},
-		"title": { "type": "string" }
+		"title": { "type": "string" },
+		"activity_status": { "enum": ["active", "inactive", "orphaned"] }
 	},
-	"required": ["id", "contact", "title", "description"]
+	"required": ["id", "contact", "title", "description", "activity_status"]
 }

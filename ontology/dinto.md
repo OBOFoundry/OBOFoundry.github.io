@@ -17,6 +17,7 @@ license:
 publications:
   - id: http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119
     title: "DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug–Drug Interactions and Their Mechanisms."
+activity_status: active
 ---
 
 DINTO is an ontology that describes and categorizes drug-drug interactions (DDIs) - a significant risk group for adverse effects associated with pharmaceutical treatment - as well as all the possible mechanisms that can lead to them (including both pharmacodynamic and pharmacokinetic DDI mechanisms).

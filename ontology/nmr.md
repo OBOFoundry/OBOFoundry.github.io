@@ -15,6 +15,7 @@ build:
   source_url: https://msi-workgroups.svn.sourceforge.net/svnroot/msi-workgroups/ontology/NMR.owl
   method: owl2obo
 is_obsolete: true
+activity_status: inactive
 ---
 
 Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation.

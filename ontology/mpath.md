@@ -21,6 +21,7 @@ build:
   source_url: https://raw.githubusercontent.com/PaulNSchofield/mpath/master/mpath.obo
   insert_ontology_id: true
   method: obo2owl
+activity_status: active
 ---
 
 A structured controlled vocabulary of mutant and transgenic mouse pathology phenotypes
