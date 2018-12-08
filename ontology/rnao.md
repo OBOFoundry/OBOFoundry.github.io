@@ -6,7 +6,7 @@ contact:
   label: Colin Batchelor
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-BY 1.0
+  label: CC-0
 domain: molecular structure
 homepage: https://github.com/bgsu-rna/rnao
 products:

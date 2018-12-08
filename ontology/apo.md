@@ -2,8 +2,9 @@
 layout: ontology_detail
 id: apo
 contact:
-  email: sstacia@stanford.edu
+  email: stacia@stanford.edu
   label: Stacia R Engel
+  github: srengel
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

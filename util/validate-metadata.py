@@ -9,6 +9,7 @@ import re
 # file paths
 data_file = "../registry/ontologies.jsonld"
 schema_file = "metadata-schema.json"
+schema_lite_file = "metadata-schema-lite.json"
 report_file = "reports/metadata-violations.csv"
 
 # ultra-escaped regex strings
@@ -27,6 +28,11 @@ def validate():
 	# validate each object
 	errors = {}
 	for item in data["ontologies"]:
+		if 'is_obsolete' in item and item["is_obsolete"] is True:
+			continue
+		# skip any 'validate: false' ontologies
+		if 'validate' in item and item["validate"] is False:
+			continue
 		ont_id = item["id"]
 		try:
 			jsonschema.validate(item, schema)

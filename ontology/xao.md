@@ -6,7 +6,7 @@ domain: anatomy
 homepage: http://www.xenbase.org/anatomy/xao.do?method=display
 contact:
   label: Erik Segerdell
-  email: segerdell.erik@gmail.com
+  email: esegerd3@gmail.com
   github: seger
 in_foundry_order: 1
 products:

@@ -22,9 +22,9 @@ A textual definition provides a human-readable understanding about what is a mem
 Recommendation
 --------------
 
-Textual definitions MUST be unique within an ontology (i.e. no two terms should share a definition). Aristotelian definitions (“A is a B that Cs” or simply “a B that Cs” where B is the parent and C is the differentia) enable meeting this requirement.
+Textual definitions MUST be unique within an ontology (i.e. no two terms should share a definition). Textual definitions SHOULD follow Aristotelian form (e.g. “a B that Cs” where B is the parent and C is the differentia), where this is practical.
 
-Most terms that have children should have definitions. For terms lacking textual definitions, there should be evidence of implementation of a strategy to provide definitions for all remaining undefined terms. In lieu of textual definitions, there can be elucidations when the term can not be rigorously defined.
+For terms lacking textual definitions, there should be evidence of implementation of a strategy to provide definitions for all remaining undefined terms. In lieu of textual definitions, there can be elucidations when the term can not be rigorously defined.
 
 Terms often benefit from examples of usage, as well as editor notes about edge cases and the history of the term, but these should be included as separate annotations and not in the definition.
 
@@ -35,7 +35,31 @@ Implementation
 
 Logical definitions should agree with textual definitions. In fact, logical definitions can be programmatically used to generate textual definitions (see http://oro.open.ac.uk/21501/1/)
 
-Textual definitions should be identified using the annotation property: ‘definition’ http://purl.obolibrary.org/obo/IAO_0000115. The source of the definition should be provided using the annotation property ‘definition source’ http://purl.obolibrary.org/obo/IAO_0000119.
+Textual definitions should be identified using the annotation property: ‘definition’ http://purl.obolibrary.org/obo/IAO_0000115. The source of the definition should be provided using the annotation property ‘definition source’ http://purl.obolibrary.org/obo/IAO_0000119, or as an axiom annotation on the definition assertion.
+
+An example of providing source in an axiom annotation:
+
+```
+<http://purl.obolibrary.org/obo/GO_0000109> rdf:type owl:Class ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "Any complex formed of proteins that act in nucleotide-excision repair."@en ;
+                                            rdfs:label "nucleotide-excision repair complex"^^xsd:string .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/GO_0000109> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "Any complex formed of proteins that act in nucleotide-excision repair."@en ;
+   <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:10915862"^^xsd:string
+ ] .
+
+```
+
+this corresponds to the obo format:
+
+```
+id: GO:0000109
+name: nucleotide-excision repair complex
+def: "Any complex formed of proteins that act in nucleotide-excision repair." [PMID:10915862]
+```
 
 Examples
 --------

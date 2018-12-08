@@ -15,13 +15,15 @@ license:
 publications:
   - id: http://www.dx.doi.org/10.1186/2041-1480-4-43
     title: "The environment ontology: contextualising biological and biomedical entities"
-  - id: http://doi.org/10.1186/s13326-016-0097-6
+  - id: https://doi.org/10.1186/s13326-016-0097-6
     title: "The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation"
 products:
   - id: envo.owl
   - id: envo.obo
   - id: subsets/envo-basic.obo
     title: OBO-Basic edition of ENVO
+  - id: subsets/envoEmpo.owl
+    title: Earth Microbiome Project subset
   - id: subsets/EnvO-Lite-GSC.obo
     title: GSC Lite subset of ENVO
     homepage: http://environmentontology.org/downloads
@@ -88,6 +90,6 @@ Buttigieg, P. L., Morrison, N., Smith, B., Mungall, C. J., & Lewis, S. E. (2013)
 
 Or for latest developments:
 
-Buttigieg, P. L., Pafilis, E., Lewis, S. E., Schildhauer, M. P., Walls, R. L., & Mungall, C. J. (2016). <b>The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation</b>. <i>Journal of Biomedical Semantics</i>, 7(1), 57. <a href="http://doi.org/10.1186/s13326-016-0097-6">doi:10.1186/s13326-016-0097-6</a>
+Buttigieg, P. L., Pafilis, E., Lewis, S. E., Schildhauer, M. P., Walls, R. L., & Mungall, C. J. (2016). <b>The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation</b>. <i>Journal of Biomedical Semantics</i>, 7(1), 57. <a href="https://doi.org/10.1186/s13326-016-0097-6">doi:10.1186/s13326-016-0097-6</a>
 
 

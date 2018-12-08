@@ -36,13 +36,13 @@ browsers:
     title: BioPortal Browser
     url: http://bioportal.bioontology.org/ontologies/FB-BT?p=classes
 publications:
-  - id: http://dx.doi.org/10.1186/2041-1480-4-32
+  - id: https://doi.org/10.1186/2041-1480-4-32
     title: "The Drosophila anatomy ontology. [Journal of Biomedical Semantics"
-  - id: http://dx.doi.org/10.1093/bioinformatics/bts113
+  - id: https://doi.org/10.1093/bioinformatics/bts113
     title: "A strategy for building neuroanatomy ontologies"
-  - id: http://dx.doi.org/10.1093/bioinformatics/btr677
+  - id: https://doi.org/10.1093/bioinformatics/btr677
     title: "The Virtual Fly Brain Browser and Query Interface"
-  - id: http://dx.doi.org/10.1093/nar/gkj068
+  - id: https://doi.org/10.1093/nar/gkj068
     title: "FlyBase: anatomical data, images and queries"
 usages:
   - user: http://www.virtualflybrain.org/
@@ -63,5 +63,5 @@ usages:
 An ontology representing the gross anatomy of Drosophila melanogaster.
 
 FBbt can be cited as:
-_Costa M., Reeve S., Grumbling G., Osumi-Sutherland D._ (2013) The Drosophila anatomy ontology. [Journal of Biomedical Semantics __4__(32).](http://dx.doi.org/10.1186/2041-1480-4-32)
+_Costa M., Reeve S., Grumbling G., Osumi-Sutherland D._ (2013) The Drosophila anatomy ontology. [Journal of Biomedical Semantics __4__(32).](https://doi.org/10.1186/2041-1480-4-32)
 

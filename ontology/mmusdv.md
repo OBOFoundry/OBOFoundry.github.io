@@ -14,6 +14,7 @@ license:
 products:
   - id: mmusdv.owl
   - id: mmusdv.obo
+validate: false
 ---
 
 MmusDv was developed by the Bgee group with assistance from the core Uberon developers and the Mouse anatomy ontology developers.

@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: chmo
 license:
-  url: http://creativecommons.org/licenses/by/4.0
+  url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
 contact:
   email: batchelorc@rsc.org

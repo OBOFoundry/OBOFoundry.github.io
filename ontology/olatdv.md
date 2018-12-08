@@ -14,6 +14,7 @@ products:
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+validate: false
 ---
 
 

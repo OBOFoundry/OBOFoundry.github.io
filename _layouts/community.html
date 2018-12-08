@@ -45,49 +45,24 @@ layout: default
   </div>
   {% endif %}
 
-  {% if page.preferredPrefix %}
-  <div>
-    <div class="alert alert-info" role="alert">
-      This ontology uses a mixed-case prefix. Identifiers and URIs
-      should use "{{page.preferredPrefix}}"
-    </div>
-  </div>
-  {% endif %}
-  
   <div class="col-md-12">
 
     <div class="row">
       <div class="col-md-8">
-        <!-- TODO: each ontology should configure which browsers to be exposed in -->
-        <a href="http://www.ontobee.org/browser/index.php?o={{page.id}}">
-          <button type="button" class="btn btn-default">OntoBee</button>
-        </a>
-        <a href="http://aber-owl.net/ontology/{{page.id | upcase}}">
-          <button type="button" class="btn btn-default">AberOWL</button>
-        </a>
-        <a href="http://www.ebi.ac.uk/ols/ontologies/{{page.id}}">
-          <button type="button" class="btn btn-default">OLS</button>
-        </a>
-        {% for b in page.browsers %}
-        <a href="{{b.url}}">
-          <button type="button" class="btn btn-default">{{b.label}}</button>
-        </a>
-        {% endfor %}
 
-        {{ content }}
 
         <div>
-          <h2>Products</h2>
+          <h2>Ontologies</h2>
           <table class="table">
             <tbody>
 
-              {% for p in page.products %}
+              {% for p in page.ontologies %}
               <tr>
                 <td>
-                  <a href="http://purl.obolibrary.org/obo/{{p.id}}">{{p.id}}</a>
+                  <a href="http://obofoundry.org/ontology/{{p.id}}">{{p.id}}</a>
                 </td>
                 <td>
-                  {{p.title}}
+                  {{p.role}}
                 </td>
                 <td>
                   {{p.description}}
@@ -100,47 +75,13 @@ layout: default
             </tbody>
           </table>
         </div>
+
+        {{ content }}
         
 
       </div>
       <div class="col-md-4">
         <dl class="dl-horizontal" style="dd { margin-left: 0 }">
-
-          <dt>
-            ID Space
-            <span data-toggle="tooltip" 
-                  title="ID prefix" 
-                  html="true">
-            </span>
-          </dt>
-          <dd>
-            <a href="http://purl.obolibrary.org/obo/{{page.id}}/">{{page.id}}</a>
-          </dd>
-
-          <dt>PURL</dt>
-          <dd>
-            <a href="http://purl.obolibrary.org/obo/{{page.id}}.owl">http://purl.obolibrary.org/obo/{{page.id}}.owl</a>
-          </dd>
-
-          <dt>License</dt>
-          <dd>
-            {% if page.license %}
-            <a href="{{page.license.url}}">{{page.license.label}}</a>
-            {% if page.license.alert %}
-            <div class="alert alert-danger" role="alert">
-              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-              <span class="sr-only">Warning:</span>
-              {{page.license.alert}}
-            </div>
-            {% endif %}
-            {% else %}
-            <div class="alert alert-danger" role="alert">
-              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-              <span class="sr-only">Warning:</span>
-              Not entered
-            </div>
-            {% endif %}
-          </dd>
 
 
           <dt>Homepage</dt>
@@ -159,27 +100,12 @@ layout: default
           </dd>
           {% endif %}
 
-          <dt>Contact</dt>
+          <dt>Members</dt>
+          {% for member in page.members %}
           <dd>
-            <a href="mailto:{{page.contact.email}}">{{page.contact.label}}</a> 
+            <a href="https://github.com/{{member}}">@{{member}}</a>
           </dd>
-
-          <dt>Trackers</dt>
-          <dd>
-            <a href="{{page.tracker}}">{{page.tracker}}</a>
-          </dd>
-
-          <dt>Domain</dt>
-          <dd>
-            <a href="/domain/{{page.domain}}.html">{{page.domain}}</a>
-          </dd>
-
-          {% if page.termgenie %}
-          <dt>TermGenie</dt>
-          <dd>
-            <a href="{{page.termgenie}}">{{page.termgenie}}</a>
-          </dd>
-          {% endif %}
+          {% endfor %}
 
           {% if page.taxon %}
           <dt>Taxon</dt>
@@ -231,27 +157,13 @@ layout: default
           {% endfor %}
           {% endif %}
 
-          {% if page.jobs %}
-          <dt>Jobs</dt>
-          {% for p in page.jobs %}
-          <dd>
-            {% if p.type == "travis-cl" or p.id contains "travis" %}
-            <a href="{{p.id}}">
-              <img alt="Build Status" src="{{p.id}}.svg?branch=master"/>
-            </a>
-            {% else %}
-            <a href="{{p.id}}">{{p.type}}</a>
-            {% endif %}
-          </dd>
-          {% endfor %}
-          {% endif %}
 
 
         </dl>
         
 
         <div class="btn-group" role="group" aria-label="Source">
-          <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/{{page.id}}.md">
+          <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/community/{{page.id}}.md">
             <button type="button" 
                     data-toggle="tooltip" 
                     title="See FAQ entry: How is metadata stored?" 
@@ -260,7 +172,7 @@ layout: default
               View
             </button>
           </a>
-          <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md">
+          <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/community/{{page.id}}.md">
 
             <button type="button" 
                     data-toggle="tooltip" 
@@ -278,9 +190,6 @@ layout: default
                     class="btn btn-default">
               PURL</button>
           </a>
-          <div>
-            Generated by: <a href="{{site.repo_src}}_layouts/ontology_detail.html">_layouts/ontology_detail.html</a><br/> See <a href="/faq/how-do-i-edit-metadata.html">metadata guide</a>
-          </div>
           <!-- <button type="button" class="btn btn-default">Help</button> -->
         </div>
       </div>
@@ -292,7 +201,7 @@ layout: default
         <footer class="footer">
           <div class="container">
             <p class="text-muted">
-              Edit the metadata for this page: <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md">{{page.id}}.md</a> (GitHub will help you create a fork and pull request.)
+              Edit the metadata for this page: <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/community/{{page.id}}.md">{{page.id}}.md</a> (GitHub will help you create a fork and pull request.)
 
             </p>
           </div>

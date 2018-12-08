@@ -488,8 +488,8 @@
                     "title": "The plant ontology as a tool for comparative plant anatomy and genomic analyses."
                 },
                 {
-                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/22847540",
-                    "title": "Ontologies as integrative tools for plant science."
+                    "id": "https://doi.org/10.1093/nar/gkx1152",
+                    "title": "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics."
                 }
             ],
             "taxon": {
@@ -610,7 +610,7 @@
                 "source_url": "https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo"
             },
             "contact": {
-                "email": "segerdell.erik@gmail.com",
+                "email": "esegerd3@gmail.com",
                 "github": "seger",
                 "label": "Erik Segerdell"
             },
@@ -897,7 +897,7 @@
             "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 1.0",
+                "label": "CC-0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -1133,7 +1133,7 @@
             "license": {
                 "label": "CC-BY",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/4.0"
+                "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "mailing_list": "chemistry-ontologies@googlegroups.com",
             "ontology_purl": "http://purl.obolibrary.org/obo/chmo.owl",
@@ -1269,7 +1269,7 @@
             "usages": [
                 {
                     "description": "The National Human Genome Research Institute (NHGRI) launched a public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September 2003, to carry out a project to identify all functional elements in the human genome sequence. The ENCODE DCC users Uberon to annotate samples",
-                    "reference": "http://dx.doi.org/10.1093/database/bav010",
+                    "reference": "https://doi.org/10.1093/database/bav010",
                     "seeAlso": "https://www.biosharing.org/biodbcore-000034",
                     "type": "annotation",
                     "user": "https://www.encodeproject.org/"
@@ -1326,13 +1326,14 @@
         },
         {
             "contact": {
-                "email": "Michael Grove",
-                "label": "grovmi@ohsu.edu"
+                "email": "grovmi@ohsu.edu",
+                "label": "Michael Grove"
             },
             "homepage": "https://code.google.com/p/craniomaxillofacial-ontology/",
             "id": "cmf",
             "layout": "ontology_detail",
-            "title": "CranioMaxilloFacial ontology"
+            "title": "CranioMaxilloFacial ontology",
+            "validate": false
         },
         {
             "browsers": [
@@ -1667,7 +1668,7 @@
             ],
             "publications": [
                 {
-                    "id": "http://dx.doi.org/10.1186/2041-1480-4-30",
+                    "id": "https://doi.org/10.1186/2041-1480-4-30",
                     "title": "The Drosophila phenotype ontology."
                 }
             ],
@@ -1803,12 +1804,6 @@
                 {
                     "id": "eco.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/eco.obo"
-                },
-                {
-                    "id": "eco/gaf-eco-mapping.txt",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/eco/gaf-eco-mapping.txt",
-                    "title": "Mapping between ECO classes and Gene Ontology codes",
-                    "type": "Mapping"
                 }
             ],
             "publications": [
@@ -2079,7 +2074,7 @@
                     "title": "The environment ontology: contextualising biological and biomedical entities"
                 },
                 {
-                    "id": "http://doi.org/10.1186/s13326-016-0097-6",
+                    "id": "https://doi.org/10.1186/s13326-016-0097-6",
                     "title": "The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation"
                 }
             ],
@@ -2125,7 +2120,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/epo.owl"
                 }
             ],
-            "title": "Epidemiology Ontology"
+            "title": "Epidemiology Ontology",
+            "validate": false
         },
         {
             "build": {
@@ -2340,19 +2336,19 @@
             ],
             "publications": [
                 {
-                    "id": "http://dx.doi.org/10.1186/2041-1480-4-32",
+                    "id": "https://doi.org/10.1186/2041-1480-4-32",
                     "title": "The Drosophila anatomy ontology. [Journal of Biomedical Semantics"
                 },
                 {
-                    "id": "http://dx.doi.org/10.1093/bioinformatics/bts113",
+                    "id": "https://doi.org/10.1093/bioinformatics/bts113",
                     "title": "A strategy for building neuroanatomy ontologies"
                 },
                 {
-                    "id": "http://dx.doi.org/10.1093/bioinformatics/btr677",
+                    "id": "https://doi.org/10.1093/bioinformatics/btr677",
                     "title": "The Virtual Fly Brain Browser and Query Interface"
                 },
                 {
-                    "id": "http://dx.doi.org/10.1093/nar/gkj068",
+                    "id": "https://doi.org/10.1093/nar/gkj068",
                     "title": "FlyBase: anatomical data, images and queries"
                 }
             ],
@@ -2859,7 +2855,7 @@
             "id": "hancestro",
             "layout": "ontology_detail",
             "license": {
-                "label": "Creative Commons CC-BY, version 4.0",
+                "label": "CC-BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -3041,7 +3037,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/hsapdv.obo"
                 }
             ],
-            "title": "Human Developmental Stages"
+            "title": "Human Developmental Stages",
+            "validate": false
         },
         {
             "build": {
@@ -3097,9 +3094,9 @@
         },
         {
             "contact": {
-                "email": "Yongqun Oliver He",
+                "email": "yongqunh@med.umich.edu",
                 "github": "yongqunh",
-                "label": "yongqunh@med.umich.edu"
+                "label": "Yongqun Oliver He"
             },
             "description": "An ontology of clinical informed consents",
             "homepage": "https://github.com/ICO-ontology/ICO",
@@ -3638,7 +3635,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/mmusdv.obo"
                 }
             ],
-            "title": "Mouse Developmental Stages"
+            "title": "Mouse Developmental Stages",
+            "validate": false
         },
         {
             "build": {
@@ -4138,7 +4136,7 @@
             "id": "ncro",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4",
+                "label": "CC-BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -4342,7 +4340,8 @@
                 }
             ],
             "title": "Ontology for genetic interval",
-            "tracker": "https://code.google.com/p/ontology-for-genetic-interval/issues/list"
+            "tracker": "https://code.google.com/p/ontology-for-genetic-interval/issues/list",
+            "validate": false
         },
         {
             "contact": {
@@ -4483,7 +4482,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/olatdv.owl"
                 }
             ],
-            "title": "Medaka Developmental Stages"
+            "title": "Medaka Developmental Stages",
+            "validate": false
         },
         {
             "contact": {
@@ -4828,7 +4828,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/pdumdv.obo"
                 }
             ],
-            "title": "Platynereis Developmental Stages"
+            "title": "Platynereis Developmental Stages",
+            "validate": false
         },
         {
             "contact": {
@@ -4859,12 +4860,57 @@
             ],
             "publications": [
                 {
-                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/22847540",
-                    "title": "Ontologies as integrative tools for plant science."
+                    "id": "https://doi.org/10.1093/nar/gkx1152",
+                    "title": "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics."
                 }
             ],
             "title": "Plant Experimental Conditions Ontology",
             "tracker": "https://github.com/Planteome/plant-experimental-conditions-ontology/issues"
+        },
+        {
+            "build": {
+                "checkout": "git clone https://github.com/PHI-base/phipo.git",
+                "path": ".",
+                "system": "git"
+            },
+            "contact": {
+                "email": "alayne.cuzick@rothamsted.ac.uk",
+                "label": "Alayne Cuzick"
+            },
+            "dependencies": [
+                {
+                    "id": "pato"
+                }
+            ],
+            "description": "PHIPO is a formal ontology of species-neutral phenotypes observed in pathogen-host interactions.",
+            "domain": "phenotype",
+            "homepage": "https://github.com/PHI-base/phipo",
+            "id": "phipo",
+            "jobs": [
+                {
+                    "id": "https://travis-ci.org/PHI-base/phipo",
+                    "type": "travis-ci"
+                }
+            ],
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/phipo.owl",
+            "products": [
+                {
+                    "id": "phipo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/phipo.owl"
+                },
+                {
+                    "id": "phipo.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/phipo.obo"
+                }
+            ],
+            "title": "Pathogen Host Interaction Phenotype Ontology",
+            "tracker": "https://github.com/PHI-base/phipo/issues"
         },
         {
             "build": {
@@ -4959,7 +5005,7 @@
             ],
             "publications": [
                 {
-                    "id": "http://dx.doi.org/10.1186/2041-1480-5-39",
+                    "id": "https://doi.org/10.1186/2041-1480-5-39",
                     "title": "The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy ontology"
                 }
             ],
@@ -5088,7 +5134,7 @@
             "id": "rnao",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 1.0",
+                "label": "CC-0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -5118,6 +5164,7 @@
                 "label": "Chris Mungall"
             },
             "description": "Relationship types shared across multiple ontologies",
+            "documentation": "https://github.com/oborel/obo-relations/wiki/ROGuide",
             "domain": "relations",
             "homepage": "https://github.com/oborel/obo-relations/",
             "id": "ro",
@@ -5190,7 +5237,7 @@
             "usages": [
                 {
                     "description": "RO is used for annotation extensions in the GO",
-                    "reference": "http://dx.doi.org/10.1186/1471-2105-15-155",
+                    "reference": "https://doi.org/10.1186/1471-2105-15-155",
                     "type": "annotation",
                     "user": "http://geneontology.org"
                 },
@@ -5726,8 +5773,8 @@
             ],
             "publications": [
                 {
-                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/22847540",
-                    "title": "Ontologies as integrative tools for plant science."
+                    "id": "https://doi.org/10.1093/nar/gkx1152",
+                    "title": "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics."
                 }
             ],
             "taxon": {
@@ -6037,7 +6084,7 @@
                 },
                 {
                     "description": "The National Human Genome Research Institute (NHGRI) launched a public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September 2003, to carry out a project to identify all functional elements in the human genome sequence. The ENCODE DCC users Uberon to annotate samples",
-                    "reference": "http://dx.doi.org/10.1093/database/bav010",
+                    "reference": "https://doi.org/10.1093/database/bav010",
                     "seeAlso": "https://www.biosharing.org/biodbcore-000034",
                     "type": "annotation",
                     "user": "https://www.encodeproject.org/"
@@ -6180,7 +6227,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/vario.owl"
                 }
             ],
-            "title": "Variation Ontology"
+            "title": "Variation Ontology",
+            "validate": false
         },
         {
             "build": {

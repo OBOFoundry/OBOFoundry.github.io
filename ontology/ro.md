@@ -10,6 +10,7 @@ build:
 canonical: ro.owl
 description: Relationship types shared across multiple ontologies
 homepage: https://github.com/oborel/obo-relations/
+documentation: https://github.com/oborel/obo-relations/wiki/ROGuide
 tracker: https://github.com/oborel/obo-relations/issues
 mailing_list: "https://groups.google.com/forum/#!forum/obo-relations"
 domain: relations
@@ -52,7 +53,7 @@ usages:
  - user: http://geneontology.org
    type: annotation
    description: RO is used for annotation extensions in the GO
-   reference: http://dx.doi.org/10.1186/1471-2105-15-155
+   reference: https://doi.org/10.1186/1471-2105-15-155
  - user: http://geneontology.org
    type: annotation
    description: RO is used for GO Causal Activity Models

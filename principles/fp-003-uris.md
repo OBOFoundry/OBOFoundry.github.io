@@ -17,9 +17,9 @@ URI identifier. The URI should be constructed from a base URI, a prefix
 that is unique within the Foundry (e.g. GO, CHEBI, CL) and a local
 identifier (e.g. 0000001). The local identifier should not consist of
 labels or mnemonics meaningful to humans. Additional information is available at 
-<http://www.obofoundry.org/id-policy.html>
+<http://www.obofoundry.org/id-policy>
 
-The ID-space / prefix must be registered with the OBO library in advance. Please see the relevant [documentation](http://obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html).
+The ID-space / prefix must be registered with the OBO library in advance. Please see the relevant [documentation](http://obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests).
 
 ### OBO-Format Ontologies
 
