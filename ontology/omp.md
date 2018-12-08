@@ -18,8 +18,6 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 tracker: https://github.com/microbialphenotypes/OMP-ontology/issues
-
-
 activity_status: active
 ---
 

@@ -54,7 +54,6 @@ products:
    description: Identical to Minimal OWL edition, in OBO Graph JSON Format
    format: json
    license: https://creativecommons.org/publicdomain/zero/1.0/
-
 activity_status: active
 ---
 
