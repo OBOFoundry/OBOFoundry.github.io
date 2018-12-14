@@ -3,8 +3,8 @@ layout: ontology_detail
 id: fix
 in_foundry: false
 contact:
-  email: hastings@ebi.ac.uk
-  label: Janna Hastings
+  email: 
+  label: chEBI
 description: "An ontology of physico-chemical methods and properties."
 build:
   source_url: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo
