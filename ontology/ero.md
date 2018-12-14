@@ -2,8 +2,11 @@
 layout: ontology_detail
 id: ero
 contact:
-  email: tenille_johnson@hms.harvard.edu
-  label: Tenille Johnson
+  email: Juliane_Schneider@hms.harvard.edu
+  label: Juliane Schneider
+license:
+  url:
+  label:
 description: An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens.
 domain: resources
 homepage: https://open.med.harvard.edu/wiki/display/eaglei/Ontology           
