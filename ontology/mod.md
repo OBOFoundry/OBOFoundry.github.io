@@ -2,8 +2,11 @@
 layout: ontology_detail
 id: mod
 contact:
-  email: hhe@ebi.ac.uk
-  label: Henning Hermjakob
+  email: pierre-alain.binz@chuv.ch
+  label: Pierre-Alain Binz
+license:
+  url:
+  label:
 description: PSI-MOD is an ontology consisting of terms that describe protein chemical modifications
 domain: proteins
 homepage: http://www.psidev.info/MOD
