@@ -2,8 +2,8 @@
 layout: ontology_detail
 id: rex
 contact:
-  email: hastings@ebi.ac.uk
-  label: Janna Hastings
+  email: 
+  label: ChEBI
 description: An ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time.
 products:
   - id: rex.owl
