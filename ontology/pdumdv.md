@@ -11,6 +11,9 @@ page: https://github.com/obophenotype/developmental-stage-ontologies
 products:
   - id: pdumdv.owl
   - id: pdumdv.obo
+contact:
+  label: bgee
+  email: bgee@sib.swiss
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
