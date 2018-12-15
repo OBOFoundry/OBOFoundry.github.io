@@ -10,7 +10,7 @@ license:
 description: A structured controlled vocabulary of stage-specific anatomical structures of the developing human.
 tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
 domain: anatomy
-homepage: none
+homepage: https://github.com/obophenotype/human-developmental-anatomy-ontology
 products:
   - id: ehdaa2.owl
   - id: ehdaa2.obo
