@@ -16,7 +16,7 @@ For example:
 * <http://purl.obolibrary.org/obo/UBERON_0000955> UBERON class PURL for 'brain'
 * <http://purl.obolibrary.org/obo/obi.owl> ontology PURL for OBI
 
-Note that legacy formats such as obo-format and many bioinformatics databases require the use of short-form identifiers (e.g GO:0008150) to identify ontology terms. In this document we provide a well-defined mapping between these short prefixed identifiers and PURLs by considering the identifiers to be [CURIE](https://en.wikipedia.org/wiki/CURIE)s.
+Note that legacy formats such as obo-format and many bioinformatics databases require the use of short-form identifiers (e.g. GO:0008150) to identify ontology terms. In this document we provide a well-defined mapping between these short prefixed identifiers and PURLs by considering the identifiers to be [CURIE](https://en.wikipedia.org/wiki/CURIE)s.
 
 This document addresses identifiers *only* for ontology terms, and not for Dbxrefs.
 
@@ -32,7 +32,7 @@ This document addresses identifiers *only* for ontology terms, and not for Dbxre
 
 See [OBO syntax](http://owlcollab.github.io/oboformat/doc/obo-syntax.html) for details.
 
-All OBO term IDs are CURIEs (prefixed identifiers) of the form `IDSpace:LocalId`.
+All OBO term IDs are CURIEs (prefixed identifiers) of the form `IDSPACE:LOCALID`.
 
 Note that internally within an OBO Format document, relation IDs may be short form such as `part_of`, but these are mapped to CURIEs via the xref field.
 
@@ -44,7 +44,7 @@ Note that internally within an OBO Format document, relation IDs may be short fo
 
 The recommended way is to use the [OBO JSON LD context](https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/context.jsonld)
 
-This provides mappings between the OBO prefix and a base URL. See the [JSON-LD spec](https://json-ld.org/spec/latest/json-ld/) for a full specification of the expansion/contraction mechanism.
+This provides mappings between the OBO prefix and a base URI. See the [JSON-LD spec](https://json-ld.org/spec/latest/json-ld/) for a full specification of the expansion/contraction mechanism.
 
 CURIE to URI:
 
@@ -58,7 +58,7 @@ Using these rules the OBO ID **GO:0050918** is mapped to the Foundry-compliant U
 
 ## Policy for OBO Foundry ontologies
 
-All OBO ontologies should use PURLs that have a base URL within their allocated space (in CURIE form these would be prefixed with their ID space)
+All OBO ontologies should use PURLs that have a base URL within their allocated space (in CURIE form these would be prefixed with their IDSPACE).
 
 ## Response to Web requests for OBO URIs
 
@@ -82,17 +82,17 @@ Individual ontology projects may, at their discretion, choose to manage these re
 
 ## Policy for OBO Library ontologies
 
-OBO Library ontologies are not constrained by this policy, however, we recommend that they follow it nonetheless, for three reasons. First, it provides a uniform experience and sets expectations for ontology clients. Second, by doing so library ontologies will be able to take advantage of shared infrastructure. Third, ontologies that eventually join the foundry would have to disrupt their ids if they had to change to follow this policy.
+OBO Library ontologies are not constrained by this policy, however, we recommend that they follow it nonetheless, for three reasons. First, it provides a uniform experience and sets expectations for ontology clients. Second, by doing so library ontologies will be able to take advantage of shared infrastructure. Third, ontologies that eventually join the foundry would have to disrupt their IDs if they had to change to follow this policy.
 
 ### Allocating IDSPACEs
 
 IDSPACEs within the OBO library are unique for a given project and are chosen not to conflict with prefix for xrefs. Although IDSPACEs are case-sensitive, there will never be more than one IDSPACEs that are the same when compared in a case-insensitive manner. Therefore,although "GO" and "go", "Go" and "gO" are different IDSPACEs, the IDSPACE "go", "Go" and "gO" will not be used as "GO" has already been allocated.
 
-A registry of allocated IDSPACEs will be maintained. Requests for an IDSPACE should be made by sending mail to obo-discuss@lists.sourceforge.net, cc obo-admin@fruitfly.org. A request should include information about the ontology, such as scope and maintainer and a confirmation that the ontology is open access.
+A registry of allocated IDSPACEs will be maintained. Requests for an IDSPACE should be made by sending mail to <obo-discuss@lists.sourceforge.net>, cc <obo-admin@fruitfly.org>. A request should include information about the ontology, such as scope and maintainer and a confirmation that the ontology is open access.
 
 ### Current ontology document
 
-The most current version of an ontology will be at the following URL, where "IDSPACE" is replaced with the IDSPACE of the given ontology in lower case.
+The most current version of an ontology will be at the following URL, where "idspace" is replaced with the IDSPACE of the given ontology in lower case.
 
 * Current OWL: http://purl.obolibrary.org/obo/idspace.owl
 * Current OBO: http://purl.obolibrary.org/obo/idspace.obo
@@ -108,7 +108,7 @@ Versions are named by a date in the following format: YYYY-MM-DD. For a given ve
 - OWL: http://purl.obolibrary.org/obo/*idspace*/YYYY-MM-DD/*idspace*.owl
 - OBO: http://purl.obolibrary.org/obo/*idspace*/YYYY-MM-DD/*idspace*.obo
 
-For example, for the version of OBI released 2009-11-06, the OWL document is accessible <http://purl.obolibrary.org/obo/obi/2009-11-06/obi.owl>.
+For example, for the version of OBI released 2009-11-06, the OWL document is accessible at <http://purl.obolibrary.org/obo/obi/2009-11-06/obi.owl>.
 
 ## Home page
 
