@@ -7,9 +7,9 @@ import jsonschema
 import re
 
 # file paths
-data_file = "../registry/ontologies.jsonld"
-schema_file = "metadata-schema.json"
-schema_lite_file = "metadata-schema-lite.json"
+data_file = "registry/ontologies.jsonld"
+schema_file = "util/metadata-schema.json"
+schema_lite_file = "util/metadata-schema-lite.json"
 report_file = "reports/metadata-violations.csv"
 
 # ultra-escaped regex strings

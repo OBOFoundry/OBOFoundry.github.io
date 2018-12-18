@@ -8,6 +8,9 @@ build:
 description: Life cycle stages for Mus Musculus
 homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/MmusDv
 page: https://github.com/obophenotype/developmental-stage-ontologies
+contact:
+  label: bgee
+  email: bgee@sib.swiss
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY

@@ -4,10 +4,13 @@ id: ehdaa2
 contact:
   email: J.Bard@ed.ac.uk
   label: Jonathan Bard
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4.0
 description: A structured controlled vocabulary of stage-specific anatomical structures of the developing human.
 tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
 domain: anatomy
-homepage: http://genex.hgu.mrc.ac.uk/
+homepage: https://github.com/obophenotype/human-developmental-anatomy-ontology
 products:
   - id: ehdaa2.owl
   - id: ehdaa2.obo
