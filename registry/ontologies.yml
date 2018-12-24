@@ -202,6 +202,9 @@ ontologies:
   products:
   - {id: pato.owl, ontology_purl: 'http://purl.obolibrary.org/obo/pato.owl'}
   - {id: pato.obo, ontology_purl: 'http://purl.obolibrary.org/obo/pato.obo'}
+  - {id: pato.json, ontology_purl: 'http://purl.obolibrary.org/obo/pato.json'}
+  - {description: 'Includes axioms linking to other ontologies, but no imports of
+      those ontologies', id: pato-base.owl, ontology_purl: 'http://purl.obolibrary.org/obo/pato-base.owl'}
   repository: https://github.com/pato-ontology/pato/
   title: Phenotype And Trait Ontology
   tracker: https://github.com/pato-ontology/pato/issues
@@ -374,7 +377,7 @@ ontologies:
   title: Agronomy Ontology
   tracker: https://github.com/AgriculturalSemantics/agro/issues/
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/obophenotype/ascomycete-phenotype-ontology/master/apo.obo'}
-  contact: {email: sstacia@stanford.edu, label: Stacia R Engel}
+  contact: {email: stacia@stanford.edu, github: srengel, label: Stacia R Engel}
   description: A structured controlled vocabulary for the phenotypes of Ascomycete
     fungi
   domain: phenotype
@@ -963,6 +966,8 @@ ontologies:
   - {id: envo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/envo.obo'}
   - {id: subsets/envo-basic.obo, ontology_purl: 'http://purl.obolibrary.org/obo/subsets/envo-basic.obo',
     title: OBO-Basic edition of ENVO}
+  - {id: subsets/envoEmpo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/subsets/envoEmpo.owl',
+    title: Earth Microbiome Project subset}
   - {homepage: 'http://environmentontology.org/downloads', id: subsets/EnvO-Lite-GSC.obo,
     ontology_purl: 'http://purl.obolibrary.org/obo/subsets/EnvO-Lite-GSC.obo', title: GSC
       Lite subset of ENVO}
@@ -1098,12 +1103,12 @@ ontologies:
   publications:
   - {id: 'https://doi.org/10.1186/2041-1480-4-32', title: 'The Drosophila anatomy
       ontology. [Journal of Biomedical Semantics'}
-  - {id: 'https://doi.org/10.1093/bioinformatics/bts113', title: A strategy for
-      building neuroanatomy ontologies}
-  - {id: 'https://doi.org/10.1093/bioinformatics/btr677', title: The Virtual Fly
-      Brain Browser and Query Interface}
-  - {id: 'https://doi.org/10.1093/nar/gkj068', title: 'FlyBase: anatomical data,
-      images and queries'}
+  - {id: 'https://doi.org/10.1093/bioinformatics/bts113', title: A strategy for building
+      neuroanatomy ontologies}
+  - {id: 'https://doi.org/10.1093/bioinformatics/btr677', title: The Virtual Fly Brain
+      Browser and Query Interface}
+  - {id: 'https://doi.org/10.1093/nar/gkj068', title: 'FlyBase: anatomical data, images
+      and queries'}
   taxon: {id: 'NCBITaxon:7227', label: Drosophila}
   title: Drosophila gross anatomy
   tracker: http://purl.obolibrary.org/obo/fbbt/tracker
@@ -1333,6 +1338,7 @@ ontologies:
   description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description
     of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide
     association studies.
+  domain: ancestry
   homepage: https://github.com/EBISPOT/ancestro
   id: hancestro
   layout: ontology_detail
@@ -1342,6 +1348,7 @@ ontologies:
   products:
   - {id: hancestro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/hancestro.owl'}
   title: Human Ancestry Ontology
+  tracker: https://github.com/EBISPOT/ancestro/issues
 - build: {checkout: 'git clone https://github.com/hymao/hao.git', system: git}
   contact: {email: diapriid@gmail.com, label: Matt Yoder}
   description: A structured controlled vocabulary of the anatomy of the Hymenoptera
@@ -1389,6 +1396,7 @@ ontologies:
   jobs:
   - {id: 'https://travis-ci.org/obophenotype/human-phenotype-ontology', type: travis-ci}
   layout: ontology_detail
+  license: {label: hpo, url: 'https://hpo.jax.org/app/license'}
   mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
   ontology_purl: http://purl.obolibrary.org/obo/hp.owl
   products:
@@ -1898,7 +1906,7 @@ ontologies:
   - {label: NCBI, title: NCBI Taxonomy Browser, url: 'http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi'}
   build: {infallible: 1, method: archive, path: archive, source_url: 'http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip'}
   contact: {email: obo-taxonomy@lists.sourceforge.net, label: obo-taxonomy-list}
-  createdWith: http://owltools.googlecode.com/
+  createdWith: https://github.com/owlcollab/owltools/
   description: An ontology representation of the NCBI organismal taxonomy
   domain: taxonomy
   homepage: https://github.com/obophenotype/ncbitaxon
@@ -2249,6 +2257,21 @@ ontologies:
   - {id: opl.owl, ontology_purl: 'http://purl.obolibrary.org/obo/opl.owl'}
   title: Ontology for Parasite LifeCycle
   tracker: https://github.com/OPL-ontology/OPL/issues
+- contact: {email: yongqunh@med.umich.edu, label: Yongqun Oliver He}
+  description: The Ontology of Precision Medicine and Investigation (OPMI) aims to
+    ontologically represent and standardize various entities and relations associated
+    with precision medicine and related investigations at different conditions.
+  homepage: https://github.com/OPMI/opmi
+  id: opmi
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/4.0/'}
+  mailing_list: http://groups.google.com/group/opmi-discuss
+  ontology_purl: http://purl.obolibrary.org/obo/opmi.owl
+  products:
+  - {id: opmi.owl, ontology_purl: 'http://purl.obolibrary.org/obo/opmi.owl'}
+  title: Ontology of Precision Medicine and Investigation
+  tracker: https://github.com/OPMI/opmi/issues
 - contact: {email: yongqunh@med.umich.edu, label: Yongqunh He}
   description: A biomedical ontology in the domain of vaccine adverse events.
   homepage: http://www.violinet.org/ovae/
@@ -2377,6 +2400,30 @@ ontologies:
   - {id: plana.obo, ontology_purl: 'http://purl.obolibrary.org/obo/plana.obo'}
   title: planaria-ontology
   tracker: https://github.com/obophenotype/planaria-ontology/issues
+- build: {checkout: 'git clone https://github.com/obophenotype/planarian-phenotype-ontology.git',
+    path: ., system: git}
+  contact: {email: smr@stowers.org, label: Sofia Robb}
+  dependencies:
+  - {id: ro}
+  - {id: pato}
+  - {id: plana}
+  - {id: go}
+  description: Planarian Phenotype Ontology is an ontology of phenotypes observed
+    in the planarian Schmidtea mediterranea.
+  domain: phenotype
+  homepage: https://github.com/obophenotype/planarian-phenotype-ontology
+  id: planp
+  jobs:
+  - {id: 'https://travis-ci.org/obophenotype/planarian-phenotype-ontology', type: travis-ci}
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/planp.owl
+  products:
+  - {id: planp.owl, ontology_purl: 'http://purl.obolibrary.org/obo/planp.owl'}
+  - {id: planp.obo, ontology_purl: 'http://purl.obolibrary.org/obo/planp.obo'}
+  title: Planarian Phenotype Ontology
+  tracker: https://github.com/obophenotype/planarian-phenotype-ontology/issues
 - build: {checkout: 'git clone https://github.com/obophenotype/porifera-ontology.git',
     infallible: 1, method: vcs, path: ., system: git}
   contact: {email: robert.thacker@stonybrook.edu, label: Bob Thacker}
@@ -2396,8 +2443,8 @@ ontologies:
   products:
   - {id: poro.owl, ontology_purl: 'http://purl.obolibrary.org/obo/poro.owl'}
   publications:
-  - {id: 'https://doi.org/10.1186/2041-1480-5-39', title: 'The Porifera Ontology
-      (PORO): enhancing sponge systematics with an anatomy ontology'}
+  - {id: 'https://doi.org/10.1186/2041-1480-5-39', title: 'The Porifera Ontology (PORO):
+      enhancing sponge systematics with an anatomy ontology'}
   taxon: {id: 'NCBITaxon:6040', label: Porifera}
   title: Porifera Ontology
   tracker: https://github.com/obophenotype/porifera-ontology/issues
@@ -2942,6 +2989,9 @@ ontologies:
   - {label: SciCrunch, type: Database, url: 'https://scicrunch.org/'}
   - {label: SCPortalen, reference: 'https://doi.org/10.1093/nar/gkx949', type: Database,
     url: 'http://single-cell.clst.riken.jp/'}
+  - {description: ChEMBL uses Uberon to describe organ/tissue information in assays,
+    label: ChEMBL, reference: 'https://doi.org/10.1093/nar/gky1075', type: Database,
+    url: 'https://www.ebi.ac.uk/chembl/'}
   wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo'}
   contact: {email: g.gkoutos@gmail.com, label: George Gkoutos}
@@ -3064,12 +3114,13 @@ ontologies:
   - {id: wbls.obo, ontology_purl: 'http://purl.obolibrary.org/obo/wbls.obo'}
   taxon: {id: 'NCBITaxon:6237', label: Caenorhabditis}
   title: C. elegans development ontology
-- build: {infallible: 0, method: obo2owl, source_url: 'http://tazendra.caltech.edu/~azurebrd/cgi-bin/forms/phenotype_ontology_obo.cgi'}
-  contact: {email: garys@caltech.edu, label: Gary Schindelman}
+- build: {checkout: 'git clone https://github.com/obophenotype/c-elegans-phenotype-ontology.git',
+    path: ., system: git}
+  contact: {email: cgrove@caltech.edu, label: Chris Grove}
   description: A structured controlled vocabulary of <i>Caenorhabditis elegans</i>
     phenotypes
   domain: phenotype
-  homepage: http://www.wormbase.org/
+  homepage: https://github.com/obophenotype/c-elegans-phenotype-ontology
   id: wbphenotype
   layout: ontology_detail
   license: {label: CC BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
@@ -3079,6 +3130,8 @@ ontologies:
   products:
   - {id: wbphenotype.owl, ontology_purl: 'http://purl.obolibrary.org/obo/wbphenotype.owl'}
   - {id: wbphenotype.obo, ontology_purl: 'http://purl.obolibrary.org/obo/wbphenotype.obo'}
+  - {id: wbphenotype-base.owl, ontology_purl: 'http://purl.obolibrary.org/obo/wbphenotype-base.owl'}
+  - {id: wbphenotype-merged.owl, ontology_purl: 'http://purl.obolibrary.org/obo/wbphenotype-merged.owl'}
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995', title: 'Worm Phenotype
       Ontology: integrating phenotype data within and beyond the C. elegans community.'}
@@ -3127,6 +3180,34 @@ ontologies:
   - {id: xl.obo, ontology_purl: 'http://purl.obolibrary.org/obo/xl.obo'}
   - {id: xl.owl, ontology_purl: 'http://purl.obolibrary.org/obo/xl.owl'}
   title: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
+- build: {checkout: 'git clone https://github.com/obophenotype/xenopus-phenotype-ontology.git',
+    path: ., system: git}
+  contact: {email: esegerd3@gmail.com, label: Erik Segerdell}
+  dependencies:
+  - {id: iao}
+  - {id: go}
+  - {id: ro}
+  - {id: pato}
+  - {id: bfo}
+  - {id: chebi}
+  - {id: cl}
+  - {id: xao}
+  description: An ontology of anatomical, cellular, and gene function phenotypes in
+    Xenopus, the African clawed frogs.
+  domain: phenotype
+  homepage: https://github.com/obophenotype/xenopus-phenotype-ontology
+  id: xpo
+  jobs:
+  - {id: 'https://travis-ci.org/obophenotype/xenopus-phenotype-ontology', type: travis-ci}
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/xpo.owl
+  products:
+  - {id: xpo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/xpo.owl'}
+  - {id: xpo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/xpo.obo'}
+  title: Xenopus Phenotype Ontology
+  tracker: https://github.com/obophenotype/xenopus-phenotype-ontology/issues
 - build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.obo'}
   contact: {email: ybradford@zfin.org, label: Yvonne Bradford}
   description: Experimental conditions applied to zebrafish, developed to facilitate

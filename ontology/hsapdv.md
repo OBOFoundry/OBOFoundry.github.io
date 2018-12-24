@@ -9,6 +9,9 @@ build:
 description: Life cycle stages for Human
 homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv
 page: https://github.com/obophenotype/developmental-stage-ontologies
+contact:
+  label: bgee
+  email: bgee@sib.swiss
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
