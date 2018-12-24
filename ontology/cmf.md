@@ -7,7 +7,7 @@ contact:
   label: Mark Engelstad
 homepage: https://code.google.com/p/craniomaxillofacial-ontology/
 validate: false
-activity_status: active
+activity_status: inactive
 ---
 
 Ontology for oral & maxillofacial surgical procedures.
