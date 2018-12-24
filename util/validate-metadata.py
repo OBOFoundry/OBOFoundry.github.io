@@ -3,7 +3,6 @@
 import ast, json, jsonschema, os, re, sys
 
 # file paths
-data_file = "registry/ontologies.jsonld"
 schema_file = "util/metadata-schema.json"
 schema_file_lite = "util/metadata-schema-lite.json"
 report_file = "reports/metadata-violations.csv"
@@ -14,12 +13,13 @@ fmt_sub = ('does not match \'\\^\\[0\\-9A\\-Za\\-z\\-_\\\\\\\\/\\]\\+'
           '\\\\\\\\.\\(owl\\|obo\\|json\\|omn\\|ofn\\|owx\\|ttl\\|owl'
           '\\\\\\\\.gz\\)\\$\'')
 
-def validate():
+def validate(args):
 	"""
 	Validate registry metadata.
 	"""
+	data_file = args[1]
 	print("--- validating metadata against {0} ---".format(schema_file_lite))
-	data = load_data()
+	data = load_data(data_file)
 	schema = load_schema()
 	# validate each object
 	errors = {}
@@ -97,7 +97,7 @@ def load_schema():
 		schema = json.load(f)
 	return schema
 
-def load_data():
+def load_data(data_file):
 	"""
 	Load the data to validate.
 	"""
@@ -122,4 +122,4 @@ def write_errors(errors):
 
 # run the process!
 if __name__ == '__main__':
-	validate()
+	validate(sys.argv)
