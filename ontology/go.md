@@ -2,10 +2,13 @@
 layout: ontology_detail
 id: go
 in_foundry_order: 1
+homepage: geneontology.org
 contact:
-  email: david.hill@jax.org
-  label: David Hill
-  github: ukemi
+  email: suzia@stanford.edu
+  label: Suzi Aleksander
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0 
 label: GO
 description: An ontology for describing the function of genes and gene products
 title: Gene Ontology
@@ -82,9 +85,6 @@ products:
    title: "GO (OBO Format edition), daily snapshot release"
    description: "Equivalent to go.owl, but released daily. Note the snapshot release is not archived."
    page: http://geneontology.org/page/download-ontology
-license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
 depicted_by: http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png
 usages:
  - user: http://geneontology.org
