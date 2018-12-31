@@ -84,6 +84,7 @@ releases: http://purl.obolibrary.org/obo/uberon/releases/
 contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
+  label: Test Test
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22293552
     title: "Uberon, an integrative multi-species anatomy ontology"
