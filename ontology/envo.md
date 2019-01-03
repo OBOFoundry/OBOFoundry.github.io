@@ -78,6 +78,7 @@ usages:
     example:
       - url: https://www.ncbi.nlm.nih.gov/nuccore/NC_016642
         description: "Annotation of habitat of Pseudovibrio sp. FO-BEG1 to marine environment"
+activity_status: active
 ---
 
 EnvO is a community ontology for the concise, controlled description of environments.

@@ -23,6 +23,7 @@ build:
   method: obo2owl
   infallible: 1
 tracker: https://github.com/obophenotype/Wao/issues
+activity_status: active
 ---
 
 A structured controlled vocabulary of the anatomy of <i>Caenorhabditis elegans</i>.

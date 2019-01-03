@@ -7,6 +7,7 @@ contact:
   label: satya30@uga.edu
 homepage: http://lsdis.cs.uga.edu/projects/glycomics/propreo/
 is_obsolete: true
+activity_status: inactive
 ---
 
 A comprehensive proteomics data and process provenance ontology.

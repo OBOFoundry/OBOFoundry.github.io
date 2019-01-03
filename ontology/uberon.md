@@ -189,6 +189,7 @@ products:
    mireots_from: fma
    mireots_from: emapa
    mireots_from: ehdaa2
+activity_status: active
 ---
 
 Uberon is an integrated cross-species ontology covering anatomical structures in animals. See the <a href="http://uberon.org">Uberon website</a> for more info, or read the <a

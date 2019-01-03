@@ -24,6 +24,7 @@ tracker: https://github.com/EBISPOT/DUO/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+activity_status: active
 ---
 
 An ontology based on the consent codes decsription from the Dyke et al. paper at https://doi.org/10.1371/journal.pgen.1005772. It allows to semantically tag datasets with restriction about their usage, making them discoverable automatically based on the authorization level of users, or intended usage.

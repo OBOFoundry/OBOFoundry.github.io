@@ -22,5 +22,6 @@ build:
   source_url: https://raw.githubusercontent.com/obo-behavior/behavior-ontology/master/nbo.owl
   method: owl2obo
 tracker: https://github.com/obo-behavior/behavior-ontology/issues
+activity_status: active
 ---
 

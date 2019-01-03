@@ -7,6 +7,7 @@ contact:
   label: j.bard@ed.ac.uk
 homepage: 
 is_obsolete: true
+activity_status: inactive
 ---
 
 Minimal set of terms for anatomy

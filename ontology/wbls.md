@@ -21,6 +21,7 @@ build:
   notes: switch to vcs in dev repo?
   source_url: https://raw.github.com/draciti/Life-stage-obo/master/worm_development.obo
   method: obo2owl
+activity_status: active
 ---
 
 A structured controlled vocabulary of the development of <i>Caenorhabditis elegans</i>.

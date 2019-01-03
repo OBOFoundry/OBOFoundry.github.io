@@ -28,6 +28,7 @@ browsers:
   - label: BioPortal
     title: BioPortal Browser
     url: http://bioportal.bioontology.org/ontologies/OBI?p=classes
+activity_status: active
 ---
 
 The Ontology for Biomedical Investigations (OBI) project is developing an integrated ontology for the description of life-science and clinical investigations.

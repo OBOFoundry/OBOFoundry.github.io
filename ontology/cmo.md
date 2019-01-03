@@ -27,6 +27,7 @@ browsers:
   - label: RGD
     title: RGD Ontology Browser
     url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=CMO:0000000
+activity_status: active
 ---
 
 <img src="http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif"/>
