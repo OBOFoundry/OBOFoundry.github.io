@@ -1,0 +1,37 @@
+{
+	"properties": {
+		"id": { "type": "string", "pattern": "^[0-9a-z_]+$" },
+		"contact": {
+			"type": "object",
+			"properties": {
+				"github": { "type": "string", "pattern": "^[^@]+$"},
+				"email": { "type": "string", "format": "email" },
+				"label": { "type": "string", "pattern": "^[^@]+$" }
+			},
+			"required": ["email", "label"]
+		},
+		"description": { "type": "string" },
+		"homepage": { "type": "string", "format": "uri" },
+		"products": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"id": { "type": "string", "pattern": "^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$" }
+				},
+				"required": ["id"]
+			}
+		},
+		"license": {
+			"type": "object",
+			"properties": {
+				"url": { "type": "string", "format": "uri" },
+				"label": { "type": "string" }
+			},
+			"required": ["url", "label"]
+		},
+		"title": { "type": "string" },
+		"activity_status": { "enum": ["active", "inactive", "orphaned"] }
+	},
+	"required": ["id", "contact", "title", "description", "activity_status"]
+}

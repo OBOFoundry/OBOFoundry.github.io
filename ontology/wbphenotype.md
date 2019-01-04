@@ -27,6 +27,7 @@ build:
 publications:
 - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995
   title: "Worm Phenotype Ontology: integrating phenotype data within and beyond the C. elegans community."
+activity_status: active
 ---
 
 A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes

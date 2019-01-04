@@ -18,5 +18,6 @@ build:
   checkout: git clone https://github.com/BGSU-RNA/rnao.git
   system: git
   method: vcs
+activity_status: active
 ---
 

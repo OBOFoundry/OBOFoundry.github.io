@@ -58,6 +58,7 @@ usages:
     example:
       - url: "http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBbt:00005106"
         description: "alleles, constructs and insertions annotated to neuron in FlyBase"
+activity_status: active
 ---
 
 An ontology representing the gross anatomy of Drosophila melanogaster.

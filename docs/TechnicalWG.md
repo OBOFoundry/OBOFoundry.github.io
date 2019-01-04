@@ -21,7 +21,7 @@ Colin Batchelor, Royal Society of Chemistry, UK
 <a href='http://purl.org/net/mcourtot'>Melanie Courtot</a>, EMBL-EBI, Cambridge, UK<br>
 <a href='https://github.com/selewis'>Suzi Lewis</a>, Lawrence Berkeley Laboratory, Berkeley, USA<br>
 <a href='http://www.factbio.com/about.html'>James Malone</a>, FactBio, Cambridge, UK<br>
-<a href='http://berkeleybop.org/person/chris-mungall'>Chris Mungall</a>, Lawrence Berkeley Laboratory, Berkeley, USA<br>
+<a href='http://www.berkeleybop.org/people/chris-mungall'>Chris Mungall</a>, Lawrence Berkeley Laboratory, Berkeley, USA<br>
 <a href='http://james.overton.ca'>James A. Overton</a>, Knocean.com, Toronto, Canada<br>
 <a href='http://sciencecommons.org/about/whoweare/ruttenberg/'>Alan Ruttenberg</a>, University at Buffalo, Buffalo, USA<br>
 <a href='http://cbil.upenn.edu/profile-staff_bio/39'>Jie Zheng</a>, University of Pennsylvania, Philadelphia, USA<br>

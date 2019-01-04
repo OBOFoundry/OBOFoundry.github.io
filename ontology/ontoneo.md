@@ -21,6 +21,7 @@ browsers:
   - label: BioPortal
     title: BioPortal Browser
     url: https://bioportal.bioontology.org/ontologies/ONTONEO
+activity_status: active
 ---
 
 

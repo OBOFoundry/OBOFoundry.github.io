@@ -45,6 +45,7 @@ publications:
     title: "The Human Phenotype Ontology: Semantic Unification of Common and Rare Disease."
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24217912
     title: "The Human Phenotype Ontology project: linking molecular biology and disease through phenotype data."
+activity_status: active
 ---
 
 <img src="http://human-phenotype-ontology.github.io/img/HPO-logo-stacked-black.png"/>

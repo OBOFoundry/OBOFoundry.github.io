@@ -15,7 +15,7 @@ Current members of the OBO Foundry Operations Committee are: (in alphabetical or
 
   * Mathias Brochhausen (O), Department of Biomedical Informatics, University of Arkansas for Medical Sciences, Little Rock, AR, USA
  * [Melanie Courtot](http://purl.org/net/mcourtot) (O, T), EMBL-EBI, Cambridge, UK 
- * [Melissa Haendel](http://www.ohsu.edu/xd/education/library/about/staff-directory/melissa-haendel.cfm) (O), Oregon Health & Science University, Portland, OR
+ * [Melissa Haendel](https://www.ohsu.edu/people/melissa-haendel/AFE044BDE8046E5D6FBDA51F448BDE2A) (O), Oregon Health & Science University, Portland, OR
  * [Simon Jupp](http://www.ebi.ac.uk/about/people/simon-jupp) (T), European Bioinformatics Institute, Cambridge, UK 
  * [Suzi Lewis](https://github.com/selewis), (O, T) Lawrence Berkeley Laboratory, Berkeley, USA
  * James Malone, FactBio, Cambridge, UK
@@ -25,7 +25,7 @@ Current members of the OBO Foundry Operations Committee are: (in alphabetical or
  * Bjoern Peters (E)
  * [Philippe Rocca-Serra](https://www.oerc.ox.ac.uk/people/philippe-rocca-serra) (E, O), University of Oxford e-Research Centre, Department of Engineering Science, Oxford, UK.
  * [Alan Ruttenberg](http://sciencecommons.org/about/whoweare/ruttenberg/) (O, T), University at Buffalo, Buffalo, USA
- * [Richard Scheuermann](http://www.jcvi.org/cms/about/bios/rscheuermann/) (O), J. Craig Venter Institute, La Jolla, CA, USA
+ * [Richard Scheuermann](https://www.jcvi.org/about/rscheuermann) (O), J. Craig Venter Institute, La Jolla, CA, USA
  * [Lynn Schriml](http://www.medschool.umaryland.edu/profiles/Schriml-Lynn/) (E, O), University of Maryland School of Medicine
  * Barry Smith (O)
  * Chris Stoeckert (E, O), University of Pennsylvania, Philadelphia, PA, USA

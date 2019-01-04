@@ -33,6 +33,7 @@ usages:
     example:
       - url: https://www.pombase.org/term/FYPO:0000059
         description: "genotypes annotated to abnormal mitotic cell cycle in fission yeast"
+activity_status: active
 ---
 
 FYPO is being developed to support the comprehensive and detailed representation of phenotypes in PomBase, the new online fission yeast resource (www.pombase.org). Its scope is similar to that of the Ascomycete Phenotype Ontology (APO), but FYPO includes more detailed pre-composed terms as well as computable definitions.
