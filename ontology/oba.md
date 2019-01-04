@@ -25,6 +25,7 @@ build:
   system: git
   path: "."
   method: vcs
+activity_status: active
 ---
 
 A collection of biological attributes (traits) covering all kingdoms of life. Interoperable with

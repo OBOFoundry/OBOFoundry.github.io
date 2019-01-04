@@ -52,7 +52,7 @@ When resolving IRIs, there is an ambiguity between what non-hash IRIs denote in 
 Our architecture follows the recommendation of the TAG, and all requests to access IRIs result in an HTTP response status code 303. We add an extra step to the above by using a Canonical Name Record (CNAME)  for purl.obolibrary.org, which is an alias for http://www.berkeleybop.org/ontologies/. This allows us to leverage existing infrastructure - the PURL resolver - while allowing for immediate redirection should it fail.
 Ultimately, the server responds with a 200 and sends back the RDF/XML document that describes the resource, thereby identified as an information resource as per the httpRange-14.
 
-The [OBO ID Policy](https://obofoundry.org/id_policy.shtml) describes the general schema for which purls are then create, and what the format of individual purls are.
+The [OBO ID Policy](http://obofoundry.org/id-policy) describes the general schema for which purls are then create, and what the format of individual purls are.
 
 ## Practical examples ##
 

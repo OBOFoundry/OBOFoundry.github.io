@@ -16,6 +16,7 @@ title: Mosquito insecticide resistance
 build:
   source_url: http://anobase.vectorbase.org/miro/miro_release.obo
   method: obo2owl
+activity_status: active
 ---
 
 Application ontology for entities related to insecticide resistance in mosquitos

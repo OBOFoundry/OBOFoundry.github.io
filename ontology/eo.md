@@ -35,6 +35,7 @@ usages:
     examples:
       - url: http://archive.gramene.org/db/ontology/search?id=EO:0007174
         description: Gramene annotations to cold temperature regiment
+activity_status: inactive
 ---
 
 A structured, controlled vocabulary for the representation of plant environmental conditions.

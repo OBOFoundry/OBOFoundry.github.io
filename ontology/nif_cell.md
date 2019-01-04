@@ -9,6 +9,7 @@ contact:
 homepage: http://neuinfo.org/
 is_obsolete: true
 replaced_by: cl
+activity_status: inactive
 ---
 
 Cell types from NIFSTD

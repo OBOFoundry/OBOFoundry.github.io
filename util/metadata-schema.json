@@ -77,10 +77,17 @@
 						"url": { "enum": ["http://opensource.org/licenses/Artistic-2.0", "https://opensource.org/licenses/Artistic-2.0"] },
 						"label": { "enum": ["Artistic License 2.0"] }
 					}
+				},
+				{
+					"properties": {
+						"url": { "enum": ["https://hpo.jax.org/app/license"] },
+						"label": { "enum": ["hpo"] }
+					}
 				}
 			]
 		},
-		"title": { "type": "string" }
+		"title": { "type": "string" },
+		"activity_status": { "enum": ["active", "inactive", "orphaned"] }
 	},
-	"required": ["id", "contact", "title", "description"]
+	"required": ["id", "contact", "title", "description", "activity_status"]
 }

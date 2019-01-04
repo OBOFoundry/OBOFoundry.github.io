@@ -6,6 +6,7 @@ products:
   - id: vhog.owl
 is_obsolete: true
 replaced_by: uberon
+activity_status: inactive
 ---
 
 vHOG has been rolled into Uberon, with homology assertions available on a [separate project on github](https://github.com/BgeeDB/anatomical-similarity-annotations)

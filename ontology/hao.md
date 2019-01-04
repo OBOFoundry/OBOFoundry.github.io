@@ -21,6 +21,7 @@ title: Hymenoptera Anatomy Ontology
 build:
   checkout: git clone https://github.com/hymao/hao.git
   system: git
+activity_status: active
 ---
 
 A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)

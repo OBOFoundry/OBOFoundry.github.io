@@ -18,6 +18,7 @@ products:
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
+activity_status: active
 ---
 
 Plant phenology — the timing of plant life-cycle events, such as flowering or leafing-out — has cascading effects on multiple levels of biological organization, from individuals to ecosystems, and is crucial for understanding the links between climate and biological communities. Plant phenology data are collected and used by many different types of researchers, from plant breeders to ecosystem ecologists. Today, thanks to data digitization and aggregation initiatives, phenology monitoring networks, and the efforts of citizen scientists, more phenologically relevant data is available than ever before.  Unfortunately, combining these data in large-scale analyses remains prohibitively difficult, mostly because the individuals and organizations producing the data are using non-standardized terminologies and metrics during data collection and processing.  Lack of standardization remains particularly problematic for historical datasets, which are crucial for time-based analyses. 
