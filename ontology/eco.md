@@ -36,6 +36,7 @@ usages:
    examples:
     - url: http://amigo.geneontology.org/amigo/term/GO:0055085
       description: annotations to transmembrane transport
+activity_status: active
 ---
 
 <img src="https://avatars1.githubusercontent.com/u/12802432" alt="ECO logo"/>

@@ -18,6 +18,7 @@ tracker: https://github.com/jannahastings/emotion-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+activity_status: active
 ---
 
 An ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings, designed to support interdisciplinary research by providing unified annotations.

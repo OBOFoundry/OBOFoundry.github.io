@@ -27,6 +27,7 @@ browsers:
   - label: RGD
     title: RGD Ontology Browser
     url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000
+activity_status: active
 ---
 
 The Measurement Method Ontology is designed to represent the variety of methods used to make qualitative and quantitative clinical and phenotype measurements both in the clinic and with model organisms.

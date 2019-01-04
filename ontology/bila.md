@@ -18,5 +18,6 @@ build:
   insert_ontology_id: true
 is_obsolete: true
 replaced_by: uberon
+activity_status: inactive
 ---
 

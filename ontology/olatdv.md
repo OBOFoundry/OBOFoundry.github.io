@@ -11,10 +11,14 @@ page: https://github.com/obophenotype/developmental-stage-ontologies
 products:
   - id: olatdv.obo
   - id: olatdv.owl
+contact:
+  label: bgee
+  email: bgee@sib.swiss
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 validate: false
+activity_status: active
 ---
 
 

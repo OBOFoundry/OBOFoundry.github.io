@@ -16,4 +16,5 @@ build:
   system: svn
   method: vcs
 description: An ontology of traits covering vertebrates
+activity_status: active
 ---
