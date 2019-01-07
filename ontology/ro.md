@@ -59,6 +59,7 @@ usages:
    description: RO is used for GO Causal Activity Models
    examples:
     - http://model.geneontology.org/56d1143000003402
+activity_status: active
 ---
 
 ![logo](/images/ro_logo.png)

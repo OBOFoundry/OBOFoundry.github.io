@@ -16,10 +16,9 @@ It is important that there is a person responsible for communication rather than
 ## Implementation
     
 ### Recommendation: 
-The name and email address of this person should be provided when requesting to include 
-an ontology in the OBO Foundry (or, better yet, when requesting inclusion in the OBO 
-Library), and should be listed in the [OBO Registry] 
-(http://obo.cvs.sourceforge.net/viewvc/obo/obo/website/cgi-bin/ontologies.txt). 
+
+The name, email address and github username of this person should be provided when requesting to register with [OBO] 
+(http://obofoundry.org). 
 This person must be subscribed to 
 obo-discuss in order to be kept abreast of community developments of relevance to 
 participating ontology projects. The email address of the person who is the locus of the 
