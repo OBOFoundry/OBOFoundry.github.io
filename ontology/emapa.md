@@ -27,6 +27,7 @@ usages:
  - user: http://www.informatics.jax.org/expression.shtml
    seeAlso: https://www.biosharing.org/biodbcore-000659
    description: GXD
+activity_status: active
 ---
 
 

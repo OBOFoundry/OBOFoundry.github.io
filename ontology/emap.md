@@ -25,6 +25,7 @@ used_by:
    label: GXD
 is_obsolete: true
 replaced_by: emapa
+activity_status: inactive
 ---
 
 

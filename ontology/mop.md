@@ -17,4 +17,5 @@ build:
 products: 
   - id: mop.owl
     title: Molecular Process Ontology
+activity_status: active
 ---

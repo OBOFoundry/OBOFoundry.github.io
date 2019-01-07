@@ -19,6 +19,7 @@ title: Tick Anatomy Ontology
 build:
   source_url: http://anobase.vectorbase.org/anatomy/tick_anatomy.obo
   method: obo2owl
+activity_status: active
 ---
 
 The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>

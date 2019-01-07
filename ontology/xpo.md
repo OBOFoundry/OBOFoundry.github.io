@@ -31,6 +31,7 @@ tracker: https://github.com/obophenotype/xenopus-phenotype-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+activity_status: active
 ---
 
 The Xenopus Phenotype Ontology represents and standardizes anatomical, cellular, and gene function phenotypes in Xenopus, the African clawed frogs. The XPO is being designed primarily to support phenotype curation in Xenbase, the model organism database for Xenopus, and to facilitate mappings between frog phenotypes and human disease.

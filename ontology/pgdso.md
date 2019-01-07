@@ -10,6 +10,7 @@ taxon:
   label: Viridiplantae
 homepage: http://www.plantontology.org
 is_obsolete: true
+activity_status: inactive
 ---
 
 REPLACED BY: PO. A controlled vocabulary of growth and developmental stages in various plants. Note that this has been subsumed into the PO

@@ -19,6 +19,7 @@ build:
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+activity_status: active
 ---
 
 This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology. The ontology can be cited as:

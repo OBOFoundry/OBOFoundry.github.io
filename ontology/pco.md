@@ -31,6 +31,7 @@ tracker: https://github.com/PopulationAndCommunityOntology/pco/issues
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC-0
+activity_status: active
 ---
 
 The Population and Community Ontology (PCO) describes material entities, qualities, and processes related to collections of interacting organisms such as populations and communities. It is taxon neutral, and can be used for any species, including humans.

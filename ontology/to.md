@@ -46,6 +46,7 @@ usages:
     examples:
       - url: http://archive.gramene.org/db/ontology/search?id=TO:0000286
         description: Gramene annotations to submergence tolerance
+activity_status: active
 ---
 
 A controlled vocabulary of describe phenotypic traits in plants. Each trait is a distinguishable feature, characteristic, quality or phenotypic feature of a developing or mature plant.

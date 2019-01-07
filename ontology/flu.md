@@ -15,4 +15,5 @@ build:
   method: owl2obo
 tracker: http://purl.obolibrary.org/obo/flu/tracker
 is_obsolete: true
+activity_status: inactive
 ---

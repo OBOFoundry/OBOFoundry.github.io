@@ -22,6 +22,7 @@ build:
 tracker: https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3ATAO
 is_obsolete: true
 replaced_by: uberon
+activity_status: inactive
 ---
 
 Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa

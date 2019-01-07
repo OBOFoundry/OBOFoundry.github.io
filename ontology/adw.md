@@ -7,6 +7,7 @@ contact:
   label: adw_geeks@umich.edu
 homepage: http://www.animaldiversity.org
 is_obsolete: true
+activity_status: inactive
 ---
 
 An ontology for animal life history and natural history characteristics suitable for populations and higher taxonomic entities.
