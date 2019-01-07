@@ -10,6 +10,7 @@ taxon:
   label: Amphibia
 homepage: http://www.amphibanat.org
 is_obsolete: true
+activity_status: inactive
 ---
 
 A taxonomy of Amphibia

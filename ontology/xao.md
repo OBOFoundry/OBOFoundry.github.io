@@ -29,6 +29,7 @@ publications:
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+activity_status: active
 ---
 
 A structured controlled vocabulary of the anatomy and development of the African clawed frog (<i>Xenopus laevis</i>).

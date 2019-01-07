@@ -94,9 +94,22 @@ registry/publications.md: util/extract-publications.py registry/ontologies.yml
 
 ### Validate Configuration Files
 
-validate: $(ONTS)
+validate: $(ONTS) | tmp/ontologies.jsonld
 	./util/extract-metadata.py validate $^ && \
-	cd util && python validate-metadata.py
+	./util/validate-metadata.py $| && \
+	rm -rf tmp
+
+# Uses temporary directory to store builds
+# Without overwriting the actual build files
+
+tmp:
+	mkdir -p $@
+
+tmp/ontologies.yml: $(ONTS) | tmp
+	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
+
+tmp/ontologies.jsonld: tmp/ontologies.yml
+	./util/yaml2json.py $< > $@.tmp && mv $@.tmp $@
 
 # Note this should *not* be run as part of general travis jobs, it is expensive
 # and may be prone to false positives as it is inherently network-based

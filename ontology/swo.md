@@ -15,5 +15,6 @@ description: The Software Ontology (SWO) is a resource for describing software t
 build:
   source_url: https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl
   method: owl2obo
+activity_status: active
 ---
 

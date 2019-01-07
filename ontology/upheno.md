@@ -1,8 +1,8 @@
 ---
 layout: ontology_detail
 id: upheno
-title: Combined phenotype ontology
-description: The Uberpheno ontology integrates multiple phenotype ontologies into a unified cross-species phenotype ontology. 
+title: Unified phenotype ontology (uPheno)
+description: The uPheno ontology integrates multiple phenotype ontologies into a unified cross-species phenotype ontology. 
 homepage: https://github.com/obophenotype/upheno
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
@@ -22,4 +22,5 @@ build:
   source_url: http://build.berkeleybop.org/job/build-pheno-ontologies/lastSuccessfulBuild/artifact/*zip*/archive.zip
   path: archive/ontology
   method: archive
+activity_status: active
 ---

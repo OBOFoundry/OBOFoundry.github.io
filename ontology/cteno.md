@@ -32,6 +32,7 @@ jobs:
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+activity_status: active
 ---
 
 An anatomical and developmental ontology for ctenophores (Comb Jellies).

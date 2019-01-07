@@ -8,6 +8,7 @@ contact:
 homepage: http://neuinfo.org/
 is_obsolete: true
 replaced_by: uberon
+activity_status: inactive
 ---
 
 NIF-GrossAnatomy: anatomical entities of relevance to neuroscience. Contains most classes from BIRNLex-Anatomy
