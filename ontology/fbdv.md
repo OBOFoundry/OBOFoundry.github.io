@@ -28,6 +28,7 @@ browsers:
   - label: FB
     title: FlyBase Browser
     url: http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008
+activity_status: active
 ---
 
 A structured controlled vocabulary of the development of <i>Drosophila melanogaster</i>.

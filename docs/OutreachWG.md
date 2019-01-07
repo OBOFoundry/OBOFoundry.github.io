@@ -20,7 +20,7 @@ members, please fill in names and links<br>
 <br>
 Mathias Brochhausen<br>
 <a href='http://purl.org/net/mcourtot'>Melanie Courtot</a>, Simon Fraser University, Vancouver, Canada<br>
-<a href='http://www.ohsu.edu/xd/education/library/about/staff-directory/melissa-haendel.cfm'>Melissa Haendel</a>, Oregon Health & Science University, Portland, OR<br>
+<a href='https://www.ohsu.edu/people/melissa-haendel/AFE044BDE8046E5D6FBDA51F448BDE2A'>Melissa Haendel</a>, Oregon Health & Science University, Portland, OR<br>
 Janna Hastings<br>
 <a href='https://github.com/selewis'>Suzi Lewis</a> Lawrence Berkeley National Laboratory, Berkeley CA<br>
 <a href='https://github.com/cmungall/'>Chris Mungall</a>  Lawrence Berkeley National Laboratory, Berkeley CA<br>

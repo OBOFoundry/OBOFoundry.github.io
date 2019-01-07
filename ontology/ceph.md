@@ -29,6 +29,7 @@ jobs:
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+activity_status: inactive
 ---
 
 Welcome to the Cephalopod Ontology

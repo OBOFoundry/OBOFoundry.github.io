@@ -21,6 +21,7 @@ dependencies:
  - id: uberon
 products:
   - id: mfmo.owl
+activity_status: active
 ---
 
 ADD DESCRIPTION HERE

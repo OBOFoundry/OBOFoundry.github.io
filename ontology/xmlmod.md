@@ -22,6 +22,7 @@ license:
 build:
   source_url: https://raw.githubusercontent.com/HUPO-PSI/mzIdentML/master/cv/XLMOD.obo
   method: obo2owl
+activity_status: active
 ---
 
 A structured controlled vocabulary for cross-linker reagents used in cross-linking mass spectrometry experiments. Developed by the HUPO Proteomics Standards Initiative (PSI).

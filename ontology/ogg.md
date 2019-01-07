@@ -13,6 +13,7 @@ tracker: https://bitbucket.org/hegroup/ogg/issues/
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+activity_status: active
 ---
 
 # Summary

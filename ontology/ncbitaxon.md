@@ -37,6 +37,7 @@ products:
   - id: ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl
     title: taxslim disjointness axioms
     page: https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md
+activity_status: active
 ---
 
 The NCBITaxon ontology is an automatic translation of the [NCBI taxonomy database](http://www.ncbi.nlm.nih.gov/taxonomy) into obo/owl.

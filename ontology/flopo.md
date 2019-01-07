@@ -21,4 +21,5 @@ taxon:
   label: Viridiplantae
 title: Flora Phenotype Ontology
 tracker: https://github.com/flora-phenotype-ontology/flopoontology/issues
+activity_status: active
 ---

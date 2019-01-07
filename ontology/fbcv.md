@@ -29,6 +29,7 @@ usages:
     example:
       - url: "http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBcv:0000391"
         description: "alleles and constructs annotated to bang sensitive in FlyBase"
+activity_status: active
 ---
 A structured controlled vocabulary used for various aspects of annotation by FlyBase. It includes the Drosophila Phenotype Ontology (dpo) which is also released separately.
 
