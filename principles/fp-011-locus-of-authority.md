@@ -17,8 +17,7 @@ It is important that there is a person responsible for communication rather than
     
 ### Recommendation: 
 
-The name, email address and github username of this person should be provided when requesting to register with [OBO]
-(http://obofoundry.org). 
+The name, email address and github username of this person should be provided when requesting to register with [OBO](http://obofoundry.org). 
 This person must be subscribed to 
 obo-discuss in order to be kept abreast of community developments of relevance to 
 participating ontology projects. The email address of the person who is the locus of the 
