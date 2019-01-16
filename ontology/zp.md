@@ -30,4 +30,5 @@ tracker: https://github.com/obophenotype/zebrafish-phenotype-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+activity_status: active
 ---
