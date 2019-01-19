@@ -10,8 +10,8 @@ contact:
   email: mhb120@gmail.com
   label: Matthew Brush
 license:
-  url: https://creativecommons.org/licenses/by-sa/2.0/
-  label: CC-BY-SA
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
 build:
   checkout: git clone https://github.com/monarch-initiative/SEPIO-ontology.git
   system: git
