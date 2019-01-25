@@ -30,6 +30,7 @@ build:
   method: owl2obo
 tracker: https://github.com/information-artifact-ontology/IAO/issues
 depicted_by: https://avatars0.githubusercontent.com/u/13591168?v=3&s=200
+activity_status: active
 ---
 
 The Information Artifact Ontology (IAO) is a new ontology of information entities, originally driven by work by the OBI digital entity and realizable information entity branch.

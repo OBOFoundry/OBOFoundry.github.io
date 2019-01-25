@@ -64,6 +64,7 @@ usages:
    examples:
     - url: http://fantom.gsc.riken.jp/5/sstar/CL:0000540
       description: FANTOM5 samples annotated to neuron
+activity_status: active
 ---
 
 ![neuron](https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Derived_Neuron_schema_with_no_labels.svg/320px-Derived_Neuron_schema_with_no_labels.svg.png)

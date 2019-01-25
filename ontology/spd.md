@@ -21,6 +21,7 @@ build:
   method: obo2owl
   insert_ontology_id: true
 tracker: https://github.com/obophenotype/spider-ontology/issues
+activity_status: active
 ---
 
 An ontology for spider comparative biology including anatomical parts (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web, borrow).

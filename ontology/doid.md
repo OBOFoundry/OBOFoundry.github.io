@@ -43,6 +43,7 @@ usages:
    examples:
     - url: http://www.informatics.jax.org/disease/DOID:4123
       description: Human genes and mouse homology associated with nail diseases
+activity_status: active
 ---
 
 Creating a comprehensive classification of human diseases organized by etiology.
