@@ -5,10 +5,10 @@ title: OBO Microbial Community
 description: Coordination of OBO efforts for annotating microbes and the microbiome
 homepage: http://obofoundry.org/community/microbial
 # mailist TODO
-members:
- - cmungall
- - pbuttigieg
- - todo
+#members:
+# - cmungall
+# - pbuttigieg
+# - todo
 ontologies:
  - id: envo
    description: "For annotating microbial habitats"
@@ -41,3 +41,5 @@ Microbiology and microbiome science is generating huge amounts of data, includin
 There are a number of ontologies for describing microbial phenotypes, such as [MICRO](https://obofoundry.org/ontology/micro) and [OMP](https://obofoundry.org/ontology/omp)
 
 For functional annotation of microbial genes, the [GO](https://obofoundry.org/ontology/go) is the recommended OBO ontology.
+
+The [Genome Standards Consortium](http://gensc.org/) (GSC) coordinates the usage of many of these ontologies through minimal information standards such as the [MIxS](http://gensc.org/mixs/) 
