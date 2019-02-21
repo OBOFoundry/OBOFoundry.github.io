@@ -18,7 +18,6 @@ license:
 products:
   - id: hsapdv.owl
   - id: hsapdv.obo
-validate: false
 activity_status: active
 ---
 

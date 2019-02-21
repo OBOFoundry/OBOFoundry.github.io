@@ -7,7 +7,6 @@ products:
   - id: ogi.owl
 title: Ontology for genetic interval
 tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list
-validate: false
 activity_status: orphaned
 ---
 

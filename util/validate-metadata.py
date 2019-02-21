@@ -20,8 +20,6 @@ def validate(args):
 			continue
 		if 'activity_status' in item and item['activity_status'] == 'inactive':
 			continue
-		if 'validate' in item and item['validate'] is False:
-			continue
 		add = validate_metadata(item, schemas)
 		results = update_results(results, add)
 	print_results(results)
@@ -88,10 +86,13 @@ def validate_metadata(item, schemas):
 	infos = []
 	ont_id = item['id']
 	for s in schemas:
+		title = s['title']
+		if 'activity_status' in item and item['activity_status'] == 'orphaned':
+			if title == 'contact' or title == 'license':
+				continue
 		try:
 			jsonschema.validate(item, s)
 		except jsonschema.exceptions.ValidationError as ve:
-			title = s['title']
 			level = s['level']
 
 			msg = ve.message

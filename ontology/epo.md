@@ -10,7 +10,6 @@ title: Epidemiology Ontology
 build:
   source_url: http://purl.obolibrary.org/obo/epo.owl
   method: owl2obo
-validate: false
 is_obsolete: true
 activity_status: inactive
 ---
