@@ -1,0 +1,11 @@
+{
+	"title": "activity_status",
+	"level": "error",
+	"properties": {
+		"activity_status": { "enum": ["active", "inactive", "orphaned"] },
+		"errors": {
+			"activity_status": "${data} is not one of ${schema}."
+		}
+	},
+	"required": ["activity_status"]
+}

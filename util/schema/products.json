@@ -1,0 +1,17 @@
+{
+	"title": "products",
+	"level": "info",
+	"properties": {
+		"products": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"id": { "type": "string", "pattern": "^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$" }
+				},
+				"required": ["id"]
+			}
+		}
+	},
+	"required": ["products"]
+}
