@@ -37,6 +37,9 @@ products:
   - id: ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl
     title: taxslim disjointness axioms
     page: https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md
+license:
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0 Universal
 activity_status: active
 ---
 
