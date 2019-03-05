@@ -5,8 +5,8 @@ contact:
   email: Juliane_Schneider@hms.harvard.edu
   label: Juliane Schneider
 license:
-  url:
-  label:
+  url: https://creativecommons.org/licenses/by/2.0/
+  label: CC-BY 2.0
 description: An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens.
 domain: resources
 homepage: https://open.med.harvard.edu/wiki/display/eaglei/Ontology           
@@ -19,9 +19,7 @@ build:
   method: owl2obo
 tracker: 
 activity_status: active
-license:
-  url: https://creativecommons.org/licenses/by/2.0/
-  label: CC-BY 2.0
+
 ---
 
 ERO models research resources such instruments. protocols, reagents, animal models and biospecimens. It has been developed in the context of the eagle-i project  (http://eagle-i.net/).
