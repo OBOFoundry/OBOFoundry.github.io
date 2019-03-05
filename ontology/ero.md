@@ -21,7 +21,7 @@ tracker:
 activity_status: active
 license:
   url: https://creativecommons.org/licenses/by/2.0/
-  label: CC-By 2.0
+  label: CC-BY 2.0
 ---
 
 ERO models research resources such instruments. protocols, reagents, animal models and biospecimens. It has been developed in the context of the eagle-i project  (http://eagle-i.net/).
