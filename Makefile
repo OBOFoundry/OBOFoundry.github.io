@@ -33,6 +33,9 @@ ONTS := $(wildcard ontology/*md)
 # All principles .md file
 PRINCIPLES := $(wildcard principles/*md)
 
+# metadata validation full result file
+GRID = reports/metadata-grid.csv
+
 
 ### Main Tasks
 
@@ -103,7 +106,7 @@ extract-metadata: $(ONTS)
 validate: reports/metadata-violations.tsv
 .PHONY: reports/metadata-violations.tsv
 reports/metadata-violations.tsv: tmp/ontologies.jsonld | extract-metadata reports
-	./util/validate-metadata.py $^ $@ && rm -rf tmp
+	./util/validate-metadata.py $^ $@ $(GRID) && rm -rf tmp
 
 # Uses temporary directory to store builds
 # Without overwriting the actual build files
