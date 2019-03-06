@@ -16,6 +16,8 @@ def validate(args):
 	# validate each object
 	results = {'error': [], 'warn': [], 'info': []}
 	for item in data["ontologies"]:
+		if 'validate' in item and item['validate'] is False:
+			continue
 		if 'is_obsolete' in item and item["is_obsolete"] is True:
 			continue
 		if 'activity_status' in item and item['activity_status'] == 'inactive':
@@ -25,7 +27,8 @@ def validate(args):
 	print_results(results)
 	save_results(results, output_file)
 	if results['error']:
-		print('\nMetadata validation failed with %d errors - see %s for details' % (len(results['error']), output_file))
+		print('\nMetadata validation failed with %d errors - see %s for details'\
+		      % (len(results['error']), output_file))
 		sys.exit(1)
 	else:
 		print('\nMetadata validation passed - see %s for details' % output_file)
@@ -81,6 +84,7 @@ def get_schemas():
 def validate_metadata(item, schemas):
 	"""
 	"""
+	# these lists will be displayed on the console
 	errors = []
 	warnings = []
 	infos = []
@@ -94,19 +98,27 @@ def validate_metadata(item, schemas):
 			jsonschema.validate(item, s)
 		except jsonschema.exceptions.ValidationError as ve:
 			level = s['level']
-
 			msg = ve.message
-			is_license = re.search('({\'label\'.+?\'url\'.+?}) is not valid', msg)
-			if is_license:
-				msg = format_license_msg(is_license.group(1))
-			is_license = re.search('({\'url\'.+?\'label\'.+?}) is not valide', msg)
-			if is_license:
-				msg = format_license_msg(is_license.group(1))
-
+			if title == 'license':
+				# license error message can show up in a few different ways
+				search = re.search('\'(.+?)\' is not one of', msg)
+				if search:
+					msg = '\'%s\' is not a recommended license' % search.group(1)
+				search = re.search('({\'label\'.+?\'url\'.+?}) is not valid', msg)
+				if search:
+					format_license_msg(search.group(1))
+				search = re.search('({\'url\'.+?\'label\'.+?}) is not valid', msg)
+				if search:
+					format_license_msg(search.group(1))
+			# format the message with the ontology ID
 			msg = '%s %s: %s' % (ont_id.upper(), title, msg)
+			# append to correct set of warnings
 			if level == 'error':
 				errors.append(msg)
 			elif level == 'warning':
+				# warnings are recommended fixes, not required
+				if 'required' in msg:
+					msg = msg.replace('required', 'recommended')
 				warnings.append(msg)
 			elif level == 'info':
 				infos.append(msg)
