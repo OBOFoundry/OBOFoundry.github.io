@@ -16,6 +16,7 @@ build:
   method: obo2owl
   insert_ontology_id: true
 activity_status: active
+validate: false
 ---
 
 A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments, such as, and including, gel electrophoresis, column chromatography, capillary electrophoresis, centrifugation and so on. Developed jointly by the HUPO Proteomics Standards Initiative and The Metabolomics Standards Initiative.

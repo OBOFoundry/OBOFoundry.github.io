@@ -3,67 +3,127 @@
 import ast, json, jsonschema, os, re, sys
 
 # file paths
-schema_file = "util/metadata-schema.json"
-schema_file_lite = "util/metadata-schema-lite.json"
-report_file = "reports/metadata-violations.csv"
-
-# ultra-escaped regex strings
-email_sub = 'does not match \'\\^\\[\\^@\\]\\+\\$\''
-fmt_sub = ('does not match \'\\^\\[0\\-9A\\-Za\\-z\\-_\\\\\\\\/\\]\\+'
-          '\\\\\\\\.\\(owl\\|obo\\|json\\|omn\\|ofn\\|owx\\|ttl\\|owl'
-          '\\\\\\\\.gz\\)\\$\'')
+schema_dir = 'util/schema'
 
 def validate(args):
 	"""
 	Validate registry metadata.
 	"""
 	data_file = args[1]
-	print("--- validating metadata against {0} ---".format(schema_file_lite))
+	output_file = args[2]
 	data = load_data(data_file)
-	schema = load_schema()
+	schemas = get_schemas()
 	# validate each object
-	errors = {}
+	results = {'error': [], 'warn': [], 'info': []}
 	for item in data["ontologies"]:
+		if 'validate' in item and item['validate'] is False:
+			continue
 		if 'is_obsolete' in item and item["is_obsolete"] is True:
 			continue
-		# skip any 'validate: false' ontologies
-		if 'validate' in item and item["validate"] is False:
+		if 'activity_status' in item and item['activity_status'] == 'inactive':
 			continue
-		ont_id = item["id"]
-		try:
-			jsonschema.validate(item, schema)
-		except jsonschema.exceptions.ValidationError as ve:
-			print("ERROR in {0}".format(ont_id))
-			errors[ont_id] = format_msg(ve)
-	if errors:
-		write_errors(errors)
+		add = validate_metadata(item, schemas)
+		results = update_results(results, add)
+	print_results(results)
+	save_results(results, output_file)
+	if results['error']:
+		print('\nMetadata validation failed with %d errors - see %s for details'\
+		      % (len(results['error']), output_file))
+		sys.exit(1)
 	else:
-		print("SUCCESS - no errors found in metadata")
+		print('\nMetadata validation passed - see %s for details' % output_file)
 		sys.exit(0)
 
-def format_msg(ve):
+def update_results(results, add):
+	""""""
+	res_errors = results['error']
+	res_warns = results['warn']
+	res_infos = results['info']
+	results['error'] = res_errors + add['error']
+	results['warn'] = res_warns + add['warn']
+	results['info'] = res_infos + add['info']
+	return results
+
+def print_results(results):
+	""""""
+	for level, messages in results.items():
+		for m in messages:
+			print('%s\t%s' % (level.upper(), m))
+
+def save_results(results, output_file):
+	""""""
+	if '.csv' in output_file:
+		separator = ','
+	elif '.tsv' or '.txt' in output_file:
+		separator = '\t'
+	else:
+		print('Output file must be CSV, TSV, or TXT')
+		return
+	with open(output_file, 'w') as f:
+		f.write('Level%sMessage\n' % separator)
+		for level, messages in results.items():
+			for m in messages:
+				f.write('%s%s%s\n' % (level.upper(), separator, m))
+
+def get_schemas():
 	"""
-	Format exception message from jsonchema.validate(...).
 	"""
-	# replace u characters
-	replace_u = re.sub('u\'', '\'', ve.message)
-	# replace scary regex strings
-	replace_email = re.sub(
-		email_sub, 'is not valid for \'contact.label\'', replace_u)
-	msg = re.sub(fmt_sub, 'is not valid for \'products.id\'', replace_email)
+	schemas = []
+	for f in os.listdir(schema_dir):
+		if '.json' not in f:
+			continue
+		try:
+			file = '%s/%s' % (schema_dir, f)
+			with open(file, 'r') as s:
+				schema = json.load(s)
+				schemas.append(schema)
+		except Exception as e:
+			print('Unable to load %s: %s' % (f, str(e)))
+	return schemas
 
-	# check if output is for license error
-	is_license = re.search('({\'url\'.+?\'label\'.+?})', msg)
-	if is_license:
-		return format_license_msg(is_license.group(1))
+def validate_metadata(item, schemas):
+	"""
+	"""
+	# these lists will be displayed on the console
+	errors = []
+	warnings = []
+	infos = []
+	ont_id = item['id']
+	for s in schemas:
+		title = s['title']
+		if 'activity_status' in item and item['activity_status'] == 'orphaned':
+			if title == 'contact' or title == 'license':
+				continue
+		try:
+			jsonschema.validate(item, s)
+		except jsonschema.exceptions.ValidationError as ve:
+			level = s['level']
+			msg = ve.message
+			if title == 'license':
+				# license error message can show up in a few different ways
+				search = re.search('\'(.+?)\' is not one of', msg)
+				if search:
+					msg = '\'%s\' is not a recommended license' % search.group(1)
+				search = re.search('({\'label\'.+?\'url\'.+?}) is not valid', msg)
+				if search:
+					format_license_msg(search.group(1))
+				search = re.search('({\'url\'.+?\'label\'.+?}) is not valid', msg)
+				if search:
+					format_license_msg(search.group(1))
+			# format the message with the ontology ID
+			msg = '%s %s: %s' % (ont_id.upper(), title, msg)
+			# append to correct set of warnings
+			if level == 'error':
+				errors.append(msg)
+			elif level == 'warning':
+				# warnings are recommended fixes, not required
+				if 'required' in msg:
+					msg = msg.replace('required', 'recommended')
+				warnings.append(msg)
+			elif level == 'info':
+				infos.append(msg)
 
-	# check if output is for list error
-	is_list = re.search('(\\[.+?\\]) is not of type \'string\'', msg)
-	if is_list:
-		return format_list_msg(is_list.group(1), ve)
-
-	# otherwise return the message
-	return msg
+	return {'error': errors, 'warn': warnings, 'info': infos}
 
 def format_license_msg(substr):
 	"""
@@ -73,29 +133,7 @@ def format_license_msg(substr):
 	d = json.loads(substr.replace('\'', '"'))
 	url = d['url']
 	label = d['label']
-	return '\'{0}\' <{1}> is not valid for \'license\''.format(label, url)
-
-def format_list_msg(substr, ve):
-	"""
-	Format an exception for an unexpected list.
-	"""
-	l = json.loads(substr.replace('\'', '"'))
-	# use the full message to find the violating property
-	prop_find = re.search('On instance\\[(\'.+?\')\\]', str(ve))
-	if prop_find:
-		prop = prop_find.group(1)
-		return '{0} expects one value, got {1}'.format(prop, len(l))
-	else:
-		return substr
-
-def load_schema():
-	"""
-	Load the schema to validate against.
-	"""
-	# read the schema
-	with open(schema_file_lite) as f:
-		schema = json.load(f)
-	return schema
+	return '\'{0}\' <{1}> is not a recommended license'.format(label, url)
 
 def load_data(data_file):
 	"""
@@ -105,20 +143,6 @@ def load_data(data_file):
 	with open(data_file) as f:
 		data = json.load(f)
 	return data
-
-def write_errors(errors):
-	"""
-	Write validation errors to a user-friendly report.
-	"""
-	os.makedirs('reports', exist_ok=True)
-	with open(report_file, 'w+') as f:
-		f.write("ID,ERROR\n")
-		for ont_id, msg in errors.items():
-			f.write('"' + ont_id + '","' + msg + '"\n')
-	print(
-		"VALIDATION FAILED: {0} errors - see {1} for details".format(
-			len(errors), report_file))
-	sys.exit(1)
 
 # run the process!
 if __name__ == '__main__':

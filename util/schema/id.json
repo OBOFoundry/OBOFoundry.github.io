@@ -1,0 +1,8 @@
+{
+	"title": "id",
+	"level": "error",
+	"properties": {
+		"id": { "type": "string", "pattern": "^[0-9a-z_]+$" }
+	},
+	"required": ["id"]
+}

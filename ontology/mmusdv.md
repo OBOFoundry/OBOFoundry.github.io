@@ -17,7 +17,6 @@ license:
 products:
   - id: mmusdv.owl
   - id: mmusdv.obo
-validate: false
 activity_status: active
 ---
 

@@ -1,0 +1,15 @@
+{
+	"title": "license",
+	"level": "error",
+	"properties": {
+		"license": {
+			"type": "object",
+			"properties": {
+				"url": { "type": "string", "format": "uri" },
+				"label": { "type": "string" }
+			},
+			"required": ["url", "label"]
+		}
+	},
+	"required": ["license"]
+}

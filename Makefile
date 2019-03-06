@@ -94,10 +94,16 @@ registry/publications.md: util/extract-publications.py registry/ontologies.yml
 
 ### Validate Configuration Files
 
-validate: $(ONTS) | tmp/ontologies.jsonld
-	./util/extract-metadata.py validate $^ && \
-	./util/validate-metadata.py $| && \
-	rm -rf tmp
+reports:
+	mkdir -p $@
+
+extract-metadata: $(ONTS)
+	./util/extract-metadata.py validate $^
+
+validate: reports/metadata-violations.tsv
+.PHONY: reports/metadata-violations.tsv
+reports/metadata-violations.tsv: tmp/ontologies.jsonld | extract-metadata reports
+	./util/validate-metadata.py $^ $@ && rm -rf tmp
 
 # Uses temporary directory to store builds
 # Without overwriting the actual build files
