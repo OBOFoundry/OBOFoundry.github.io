@@ -16,6 +16,9 @@ ontologies:
  - id: micro
    description: "traits and phenotypes"
    role: ""
+ - id: mco
+   description: "microbial conditions"
+   role: ""
  - id: ohmi
    description: "host-microbiome interactions"
    role: ""

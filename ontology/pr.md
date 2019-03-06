@@ -36,7 +36,7 @@ build:
   infallible: 0
 tracker: http://purl.obolibrary.org/obo/pr/tracker
 publications:
-  - id: http://pir.georgetown.edu/pro/pro_dsmnt.shtml#publication
+  - id: https://proconsortium.org/pro/pro_dsmnt.shtml#publication
     title: "Publications & Dissemination"
 development:
   id_policy: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+PURLs
