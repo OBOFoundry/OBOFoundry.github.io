@@ -34,7 +34,7 @@ def validate(args):
 		      % (len(results['error']), output_file))
 		sys.exit(1)
 	else:
-		print('Metadata validation passed - see %s for details' % output_file)
+		print('Metadata validation passed - see %s for warnings' % output_file)
 		sys.exit(0)
 
 def update_results(results, add):
@@ -266,10 +266,11 @@ def validate_metadata(item, schemas):
 			# - inactive ontology
 			# - obsolete ontology
 			# - ontology annotated with `validate: false`
-			if (('activity_status' in item \
-			    and item['activity_status'] == 'orphaned') \
-			and (title == 'contact' or title == 'license')) \
-			and ('is_obsolete' in item and item['is_obsolete'] is True) \
+			if 'activity_status' in item \
+			    and item['activity_status'] == 'orphaned':
+			    if title == 'contact' or title == 'license':
+			    	continue
+			if ('is_obsolete' in item and item['is_obsolete'] is True) \
 			or ('activity_status' in item \
 				and item['activity_status'] == 'inactive') \
 			or ('validate' in item and item['validate'] is False):
