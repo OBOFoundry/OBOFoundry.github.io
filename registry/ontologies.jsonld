@@ -109,77 +109,6 @@
             ]
         },
         {
-            "DO wiki": "http://diseaseontology.sourceforge.net/",
-            "activity_status": "active",
-            "browsers": [
-                {
-                    "label": "DO",
-                    "title": "DO Browser",
-                    "url": "http://www.disease-ontology.org/"
-                }
-            ],
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.obo"
-            },
-            "contact": {
-                "email": "lynn.schriml@gmail.com",
-                "github": "lschriml",
-                "label": "Lynn Schriml"
-            },
-            "description": "An ontology for describing the classification of human diseases organized by etiology.",
-            "domain": "disease",
-            "facebook": "https://www.facebook.com/diseaseontology",
-            "homepage": "http://www.disease-ontology.org",
-            "id": "doid",
-            "in_foundry_order": 1,
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC0 1.0 Universal",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/doid.owl",
-            "products": [
-                {
-                    "id": "doid.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/doid.owl",
-                    "title": "Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy plus equivalent axioms to other OBO Foundry ontologies."
-                },
-                {
-                    "id": "doid.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/doid.obo",
-                    "title": "Disease Ontology, OBO format. This file omits the equivalent axioms."
-                }
-            ],
-            "publications": [
-                {
-                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409",
-                    "title": "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"
-                }
-            ],
-            "taxon": {
-                "id": "NCBITaxon:9606",
-                "label": "Homo sapiens"
-            },
-            "title": "Human Disease Ontology",
-            "tracker": "https://github.com/DiseaseOntology/HumanDiseaseOntology/issues",
-            "twitter": "diseaseontology",
-            "usages": [
-                {
-                    "description": "MGI disease model annotations use DO",
-                    "examples": [
-                        {
-                            "description": "Human genes and mouse homology associated with nail diseases",
-                            "url": "http://www.informatics.jax.org/disease/DOID:4123"
-                        }
-                    ],
-                    "user": "http://www.informatics.jax.org/disease"
-                }
-            ]
-        },
-        {
             "activity_status": "active",
             "build": {
                 "infallible": 0,
@@ -606,6 +535,77 @@
             "tracker": "https://github.com/pato-ontology/pato/issues"
         },
         {
+            "DO wiki": "http://diseaseontology.sourceforge.net/",
+            "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "DO",
+                    "title": "DO Browser",
+                    "url": "http://www.disease-ontology.org/"
+                }
+            ],
+            "build": {
+                "infallible": 1,
+                "method": "obo2owl",
+                "source_url": "https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.obo"
+            },
+            "contact": {
+                "email": "lynn.schriml@gmail.com",
+                "github": "lschriml",
+                "label": "Lynn Schriml"
+            },
+            "description": "An ontology for describing the classification of human diseases organized by etiology.",
+            "domain": "disease",
+            "facebook": "https://www.facebook.com/diseaseontology",
+            "homepage": "http://www.disease-ontology.org",
+            "id": "doid",
+            "in_foundry_order": 1,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC0 1.0 Universal",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/doid.owl",
+            "products": [
+                {
+                    "id": "doid.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/doid.owl",
+                    "title": "Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy plus equivalent axioms to other OBO Foundry ontologies."
+                },
+                {
+                    "id": "doid.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/doid.obo",
+                    "title": "Disease Ontology, OBO format. This file omits the equivalent axioms."
+                }
+            ],
+            "publications": [
+                {
+                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409",
+                    "title": "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:9606",
+                "label": "Homo sapiens"
+            },
+            "title": "Human Disease Ontology",
+            "tracker": "https://github.com/DiseaseOntology/HumanDiseaseOntology/issues",
+            "twitter": "diseaseontology",
+            "usages": [
+                {
+                    "description": "MGI disease model annotations use DO",
+                    "examples": [
+                        {
+                            "description": "Human genes and mouse homology associated with nail diseases",
+                            "url": "http://www.informatics.jax.org/disease/DOID:4123"
+                        }
+                    ],
+                    "user": "http://www.informatics.jax.org/disease"
+                }
+            ]
+        },
+        {
             "activity_status": "active",
             "alternatePrefix": "ChEBI",
             "browsers": [
@@ -724,7 +724,7 @@
             ],
             "publications": [
                 {
-                    "id": "http://pir.georgetown.edu/pro/pro_dsmnt.shtml#publication",
+                    "id": "https://proconsortium.org/pro/pro_dsmnt.shtml#publication",
                     "title": "Publications & Dissemination"
                 }
             ],
@@ -1113,8 +1113,8 @@
                 "source_url": "http://purl.obolibrary.org/obo/ero.owl"
             },
             "contact": {
-                "email": "tenille_johnson@hms.harvard.edu",
-                "label": "Tenille Johnson"
+                "email": "Juliane_Schneider@hms.harvard.edu",
+                "label": "Juliane Schneider"
             },
             "description": "An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens.",
             "documentation": "https://open.med.harvard.edu/wiki/display/eaglei/Ontology",
@@ -1122,6 +1122,11 @@
             "homepage": "https://open.med.harvard.edu/wiki/display/eaglei/Ontology",
             "id": "ero",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY 2.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/2.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/ero.owl",
             "products": [
                 {
@@ -1603,6 +1608,107 @@
         {
             "activity_status": "active",
             "build": {
+                "checkout": "git clone https://github.com/oborel/obo-relations.git",
+                "infallible": 1,
+                "method": "vcs",
+                "system": "git"
+            },
+            "canonical": "ro.owl",
+            "contact": {
+                "email": "cjmungall@lbl.gov",
+                "label": "Chris Mungall"
+            },
+            "description": "Relationship types shared across multiple ontologies",
+            "documentation": "https://github.com/oborel/obo-relations/wiki/ROGuide",
+            "domain": "relations",
+            "homepage": "https://github.com/oborel/obo-relations/",
+            "id": "ro",
+            "jobs": [
+                {
+                    "id": "http://build.berkeleybop.org/job/build-ro",
+                    "type": "DryRunBuild"
+                },
+                {
+                    "id": "https://travis-ci.org/oborel/obo-relations",
+                    "type": "travis-ci"
+                }
+            ],
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "mailing_list": "https://groups.google.com/forum/#!forum/obo-relations",
+            "ontology_purl": "http://purl.obolibrary.org/obo/ro.owl",
+            "products": [
+                {
+                    "description": "Canonical edition",
+                    "id": "ro.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ro.owl",
+                    "title": "Relation Ontology"
+                },
+                {
+                    "description": "Has imports merged in",
+                    "id": "ro.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ro.obo",
+                    "title": "Relation Ontology in obo format"
+                },
+                {
+                    "description": "Minimal subset intended to work with BFO-classes",
+                    "id": "ro/core.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ro/core.owl",
+                    "page": "https://github.com/oborel/obo-relations/wiki/ROCore",
+                    "title": "RO Core relations"
+                },
+                {
+                    "description": "Axioms defined within RO and to be used in imports for other ontologies",
+                    "id": "ro/ro-base.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ro/ro-base.owl",
+                    "page": "https://github.com/INCATools/ontology-development-kit/issues/50",
+                    "title": "RO base ontology"
+                },
+                {
+                    "description": "For use in ecology and environmental science",
+                    "id": "ro/subsets/ro-interaction.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl",
+                    "title": "Interaction relations"
+                },
+                {
+                    "id": "ro/subsets/ro-eco.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ro/subsets/ro-eco.owl",
+                    "title": "Ecology subset"
+                },
+                {
+                    "description": "For use in neuroscience",
+                    "id": "ro/subsets/ro-neuro.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ro/subsets/ro-neuro.owl",
+                    "page": "http://bioinformatics.oxfordjournals.org/content/28/9/1262.long",
+                    "title": "Neuroscience subset"
+                }
+            ],
+            "title": "Relation Ontology",
+            "tracker": "https://github.com/oborel/obo-relations/issues",
+            "usages": [
+                {
+                    "description": "RO is used for annotation extensions in the GO",
+                    "reference": "https://doi.org/10.1186/1471-2105-15-155",
+                    "type": "annotation",
+                    "user": "http://geneontology.org"
+                },
+                {
+                    "description": "RO is used for GO Causal Activity Models",
+                    "examples": [
+                        "http://model.geneontology.org/56d1143000003402"
+                    ],
+                    "type": "annotation",
+                    "user": "http://geneontology.org"
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
+            "build": {
                 "insert_ontology_id": true,
                 "method": "obo2owl",
                 "source_url": "https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_anatomy.obo"
@@ -1888,8 +1994,7 @@
                 }
             ],
             "title": "Ontology for genetic interval",
-            "tracker": "https://code.google.com/p/ontology-for-genetic-interval/issues/list",
-            "validate": false
+            "tracker": "https://code.google.com/p/ontology-for-genetic-interval/issues/list"
         },
         {
             "activity_status": "active",
@@ -2070,107 +2175,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/oborel/obo-relations.git",
-                "infallible": 1,
-                "method": "vcs",
-                "system": "git"
-            },
-            "canonical": "ro.owl",
-            "contact": {
-                "email": "cjmungall@lbl.gov",
-                "label": "Chris Mungall"
-            },
-            "description": "Relationship types shared across multiple ontologies",
-            "documentation": "https://github.com/oborel/obo-relations/wiki/ROGuide",
-            "domain": "relations",
-            "homepage": "https://github.com/oborel/obo-relations/",
-            "id": "ro",
-            "jobs": [
-                {
-                    "id": "http://build.berkeleybop.org/job/build-ro",
-                    "type": "DryRunBuild"
-                },
-                {
-                    "id": "https://travis-ci.org/oborel/obo-relations",
-                    "type": "travis-ci"
-                }
-            ],
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-BY",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "mailing_list": "https://groups.google.com/forum/#!forum/obo-relations",
-            "ontology_purl": "http://purl.obolibrary.org/obo/ro.owl",
-            "products": [
-                {
-                    "description": "Canonical edition",
-                    "id": "ro.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ro.owl",
-                    "title": "Relation Ontology"
-                },
-                {
-                    "description": "Has imports merged in",
-                    "id": "ro.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ro.obo",
-                    "title": "Relation Ontology in obo format"
-                },
-                {
-                    "description": "Minimal subset intended to work with BFO-classes",
-                    "id": "ro/core.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ro/core.owl",
-                    "page": "https://github.com/oborel/obo-relations/wiki/ROCore",
-                    "title": "RO Core relations"
-                },
-                {
-                    "description": "Axioms defined within RO and to be used in imports for other ontologies",
-                    "id": "ro/ro-base.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ro/ro-base.owl",
-                    "page": "https://github.com/INCATools/ontology-development-kit/issues/50",
-                    "title": "RO base ontology"
-                },
-                {
-                    "description": "For use in ecology and environmental science",
-                    "id": "ro/subsets/ro-interaction.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ro/subsets/ro-interaction.owl",
-                    "title": "Interaction relations"
-                },
-                {
-                    "id": "ro/subsets/ro-eco.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ro/subsets/ro-eco.owl",
-                    "title": "Ecology subset"
-                },
-                {
-                    "description": "For use in neuroscience",
-                    "id": "ro/subsets/ro-neuro.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ro/subsets/ro-neuro.owl",
-                    "page": "http://bioinformatics.oxfordjournals.org/content/28/9/1262.long",
-                    "title": "Neuroscience subset"
-                }
-            ],
-            "title": "Relation Ontology",
-            "tracker": "https://github.com/oborel/obo-relations/issues",
-            "usages": [
-                {
-                    "description": "RO is used for annotation extensions in the GO",
-                    "reference": "https://doi.org/10.1186/1471-2105-15-155",
-                    "type": "annotation",
-                    "user": "http://geneontology.org"
-                },
-                {
-                    "description": "RO is used for GO Causal Activity Models",
-                    "examples": [
-                        "http://model.geneontology.org/56d1143000003402"
-                    ],
-                    "type": "annotation",
-                    "user": "http://geneontology.org"
-                }
-            ]
-        },
-        {
-            "activity_status": "active",
             "biosharing": "https://fairsharing.org/FAIRsharing.ca48xs",
             "contact": {
                 "email": "hilmar.lapp@duke.edu",
@@ -2201,108 +2205,34 @@
         },
         {
             "activity_status": "active",
-            "browsers": [
-                {
-                    "label": "FB",
-                    "title": "FlyBase Browser",
-                    "url": "http://flybase.org/.bin/cvreport.html?cvterm=FBbt:10000000"
-                },
-                {
-                    "label": "VFB",
-                    "title": "Virtual Fly Brain",
-                    "url": "http://www.virtualflybrain.org/site/stacks/index.htm?add=FBbt:00007401"
-                },
-                {
-                    "label": "BioPortal",
-                    "title": "BioPortal Browser",
-                    "url": "http://bioportal.bioontology.org/ontologies/FB-BT?p=classes"
-                }
-            ],
             "build": {
-                "infallible": 1,
                 "method": "owl2obo",
-                "source_url": "https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.owl"
+                "source_url": "http://purl.obolibrary.org/obo/mf.owl"
             },
             "contact": {
-                "email": "cp390@cam.ac.uk",
-                "label": "Clare Pilgrim"
+                "email": "janna.hastings@gmail.com",
+                "github": "jannahastings",
+                "label": "Janna Hastings"
             },
-            "description": "An ontology representing the gross anatomy of Drosophila melanogaster.",
-            "domain": "anatomy",
-            "homepage": "http://purl.obolibrary.org/obo/fbbt",
-            "id": "fbbt",
+            "description": "The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning.",
+            "domain": "health",
+            "homepage": "https://github.com/jannahastings/mental-functioning-ontology",
+            "id": "mf",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC-BY",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
-            "ontology_purl": "http://purl.obolibrary.org/obo/fbbt.owl",
-            "preferredPrefix": "FBbt",
+            "ontology_purl": "http://purl.obolibrary.org/obo/mf.owl",
             "products": [
                 {
-                    "id": "fbbt.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbt.owl"
-                },
-                {
-                    "id": "fbbt.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbt.obo"
-                },
-                {
-                    "id": "fbbt/fbbt-simple.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl"
-                },
-                {
-                    "id": "fbbt/fbbt-simple.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbt/fbbt-simple.obo"
+                    "id": "mf.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mf.owl"
                 }
             ],
-            "publications": [
-                {
-                    "id": "https://doi.org/10.1186/2041-1480-4-32",
-                    "title": "The Drosophila anatomy ontology. [Journal of Biomedical Semantics"
-                },
-                {
-                    "id": "https://doi.org/10.1093/bioinformatics/bts113",
-                    "title": "A strategy for building neuroanatomy ontologies"
-                },
-                {
-                    "id": "https://doi.org/10.1093/bioinformatics/btr677",
-                    "title": "The Virtual Fly Brain Browser and Query Interface"
-                },
-                {
-                    "id": "https://doi.org/10.1093/nar/gkj068",
-                    "title": "FlyBase: anatomical data, images and queries"
-                }
-            ],
-            "taxon": {
-                "id": "NCBITaxon:7227",
-                "label": "Drosophila"
-            },
-            "title": "Drosophila gross anatomy",
-            "tracker": "http://purl.obolibrary.org/obo/fbbt/tracker",
-            "usages": [
-                {
-                    "description": "VFB uses FBbt to annotate brain images",
-                    "example": [
-                        {
-                            "description": "genes expressed in ring neuron R2 in VFB",
-                            "url": "http://www.virtualflybrain.org/do/gene_list.html?action=geneex&id=FBbt:00003651"
-                        }
-                    ],
-                    "user": "http://www.virtualflybrain.org/"
-                },
-                {
-                    "description": "Flybase uses FBbt for expression and phenotype data annotation in Drosophila",
-                    "example": [
-                        {
-                            "description": "alleles, constructs and insertions annotated to neuron in FlyBase",
-                            "url": "http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBbt:00005106"
-                        }
-                    ],
-                    "user": "http://flybase.org"
-                }
-            ]
+            "title": "Mental Functioning Ontology",
+            "tracker": "https://github.com/jannahastings/mental-functioning-ontology/issues"
         },
         {
             "activity_status": "active",
@@ -2343,6 +2273,122 @@
                 "label": "Danio"
             },
             "title": "Zebrafish developmental stages ontology"
+        },
+        {
+            "activity_status": "active",
+            "build": {
+                "checkout": "git clone https://github.com/microbial-conditions-ontology/microbial-conditions-ontology.git",
+                "path": ".",
+                "system": "git"
+            },
+            "contact": {
+                "email": "citlalli.mejiaalmonte@gmail.com",
+                "label": "Citlalli Mej\u00eda-Almonte"
+            },
+            "dependencies": [
+                {
+                    "id": "bfo"
+                },
+                {
+                    "id": "chebi"
+                },
+                {
+                    "id": "cl"
+                },
+                {
+                    "id": "clo"
+                },
+                {
+                    "id": "micro"
+                },
+                {
+                    "id": "ncbitaxon"
+                },
+                {
+                    "id": "peco"
+                },
+                {
+                    "id": "ncit"
+                },
+                {
+                    "id": "obi"
+                },
+                {
+                    "id": "omit"
+                },
+                {
+                    "id": "omp"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "uberon"
+                },
+                {
+                    "id": "zeco"
+                }
+            ],
+            "description": "Microbial Conditions Ontology is an ontology...",
+            "domain": "experimental conditions",
+            "homepage": "https://github.com/microbial-conditions-ontology/microbial-conditions-ontology",
+            "id": "mco",
+            "jobs": [
+                {
+                    "id": "https://travis-ci.org/microbial-conditions-ontology/microbial-conditions-ontology",
+                    "type": "travis-ci"
+                }
+            ],
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/mco.owl",
+            "products": [
+                {
+                    "id": "mco.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mco.owl"
+                },
+                {
+                    "id": "mco.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mco.obo"
+                }
+            ],
+            "title": "Microbial Conditions Ontology",
+            "tracker": "https://github.com/microbial-conditions-ontology/microbial-conditions-ontology/issues"
+        },
+        {
+            "activity_status": "active",
+            "build": {
+                "checkout": "git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git",
+                "method": "vcs",
+                "path": "src/ontology",
+                "system": "git"
+            },
+            "contact": {
+                "email": "J.Bard@ed.ac.uk",
+                "label": "Jonathan Bard"
+            },
+            "description": "AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology",
+            "domain": "anatomy",
+            "homepage": "https://github.com/obophenotype/human-developmental-anatomy-ontology/",
+            "id": "aeo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/aeo.owl",
+            "products": [
+                {
+                    "id": "aeo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/aeo.owl"
+                }
+            ],
+            "title": "Anatomical Entity Ontology"
         },
         {
             "activity_status": "active",
@@ -2516,33 +2562,32 @@
         {
             "activity_status": "active",
             "build": {
-                "checkout": "git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git",
-                "method": "vcs",
-                "path": "src/ontology",
-                "system": "git"
+                "method": "owl2obo",
+                "source_url": "http://purl.obolibrary.org/obo/cvdo.owl"
             },
             "contact": {
-                "email": "J.Bard@ed.ac.uk",
-                "label": "Jonathan Bard"
+                "email": "adrien.barton@gmail.com",
+                "label": "Adrien Barton"
             },
-            "description": "AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology",
-            "domain": "anatomy",
-            "homepage": "https://github.com/obophenotype/human-developmental-anatomy-ontology/",
-            "id": "aeo",
+            "description": "An ontology to describe entities related to cardiovascular diseases",
+            "domain": "health",
+            "homepage": "https://github.com/OpenLHS/CVDO",
+            "id": "cvdo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
-            "ontology_purl": "http://purl.obolibrary.org/obo/aeo.owl",
+            "ontology_purl": "http://purl.obolibrary.org/obo/cvdo.owl",
             "products": [
                 {
-                    "id": "aeo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/aeo.owl"
+                    "id": "cvdo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/cvdo.owl"
                 }
             ],
-            "title": "Anatomical Entity Ontology"
+            "title": "Cardiovascular Disease Ontology",
+            "tracker": "https://github.com/OpenLHS/CVDO/issues"
         },
         {
             "activity_status": "active",
@@ -3147,7 +3192,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/sep.owl"
                 }
             ],
-            "title": "Sample processing and separation techniques"
+            "title": "Sample processing and separation techniques",
+            "validate": false
         },
         {
             "activity_status": "active",
@@ -3435,8 +3481,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/olatdv.owl"
                 }
             ],
-            "title": "Medaka Developmental Stages",
-            "validate": false
+            "title": "Medaka Developmental Stages"
         },
         {
             "activity_status": "active",
@@ -3603,33 +3648,108 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/cvdo.owl"
-            },
-            "contact": {
-                "email": "adrien.barton@gmail.com",
-                "label": "Adrien Barton"
-            },
-            "description": "An ontology to describe entities related to cardiovascular diseases",
-            "domain": "health",
-            "homepage": "https://github.com/OpenLHS/CVDO",
-            "id": "cvdo",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/cvdo.owl",
-            "products": [
+            "browsers": [
                 {
-                    "id": "cvdo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/cvdo.owl"
+                    "label": "FB",
+                    "title": "FlyBase Browser",
+                    "url": "http://flybase.org/.bin/cvreport.html?cvterm=FBbt:10000000"
+                },
+                {
+                    "label": "VFB",
+                    "title": "Virtual Fly Brain",
+                    "url": "http://www.virtualflybrain.org/site/stacks/index.htm?add=FBbt:00007401"
+                },
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal Browser",
+                    "url": "http://bioportal.bioontology.org/ontologies/FB-BT?p=classes"
                 }
             ],
-            "title": "Cardiovascular Disease Ontology",
-            "tracker": "https://github.com/OpenLHS/CVDO/issues"
+            "build": {
+                "infallible": 1,
+                "method": "owl2obo",
+                "source_url": "https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.owl"
+            },
+            "contact": {
+                "email": "cp390@cam.ac.uk",
+                "label": "Clare Pilgrim"
+            },
+            "description": "An ontology representing the gross anatomy of Drosophila melanogaster.",
+            "domain": "anatomy",
+            "homepage": "http://purl.obolibrary.org/obo/fbbt",
+            "id": "fbbt",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/fbbt.owl",
+            "preferredPrefix": "FBbt",
+            "products": [
+                {
+                    "id": "fbbt.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbt.owl"
+                },
+                {
+                    "id": "fbbt.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbt.obo"
+                },
+                {
+                    "id": "fbbt/fbbt-simple.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl"
+                },
+                {
+                    "id": "fbbt/fbbt-simple.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbt/fbbt-simple.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1186/2041-1480-4-32",
+                    "title": "The Drosophila anatomy ontology. [Journal of Biomedical Semantics"
+                },
+                {
+                    "id": "https://doi.org/10.1093/bioinformatics/bts113",
+                    "title": "A strategy for building neuroanatomy ontologies"
+                },
+                {
+                    "id": "https://doi.org/10.1093/bioinformatics/btr677",
+                    "title": "The Virtual Fly Brain Browser and Query Interface"
+                },
+                {
+                    "id": "https://doi.org/10.1093/nar/gkj068",
+                    "title": "FlyBase: anatomical data, images and queries"
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:7227",
+                "label": "Drosophila"
+            },
+            "title": "Drosophila gross anatomy",
+            "tracker": "http://purl.obolibrary.org/obo/fbbt/tracker",
+            "usages": [
+                {
+                    "description": "VFB uses FBbt to annotate brain images",
+                    "example": [
+                        {
+                            "description": "genes expressed in ring neuron R2 in VFB",
+                            "url": "http://www.virtualflybrain.org/do/gene_list.html?action=geneex&id=FBbt:00003651"
+                        }
+                    ],
+                    "user": "http://www.virtualflybrain.org/"
+                },
+                {
+                    "description": "Flybase uses FBbt for expression and phenotype data annotation in Drosophila",
+                    "example": [
+                        {
+                            "description": "alleles, constructs and insertions annotated to neuron in FlyBase",
+                            "url": "http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBbt:00005106"
+                        }
+                    ],
+                    "user": "http://flybase.org"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -3724,8 +3844,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/pdumdv.obo"
                 }
             ],
-            "title": "Platynereis Developmental Stages",
-            "validate": false
+            "title": "Platynereis Developmental Stages"
         },
         {
             "activity_status": "active",
@@ -3882,8 +4001,7 @@
             "homepage": "https://code.google.com/p/craniomaxillofacial-ontology/",
             "id": "cmf",
             "layout": "ontology_detail",
-            "title": "CranioMaxilloFacial ontology",
-            "validate": false
+            "title": "CranioMaxilloFacial ontology"
         },
         {
             "activity_status": "active",
@@ -4020,32 +4138,31 @@
             "activity_status": "active",
             "build": {
                 "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/mf.owl"
+                "source_url": "http://purl.obolibrary.org/obo/pdro.owl"
             },
             "contact": {
-                "email": "janna.hastings@gmail.com",
-                "github": "jannahastings",
-                "label": "Janna Hastings"
+                "email": "info@griis.ca",
+                "label": "Ryeyan Taseen"
             },
-            "description": "The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning.",
+            "description": "An ontology to describe entities related to prescription of drugs",
             "domain": "health",
-            "homepage": "https://github.com/jannahastings/mental-functioning-ontology",
-            "id": "mf",
+            "homepage": "https://github.com/OpenLHS/PDRO",
+            "id": "pdro",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "url": "https://creativecommons.org/licenses/by/4.0/"
             },
-            "ontology_purl": "http://purl.obolibrary.org/obo/mf.owl",
+            "ontology_purl": "http://purl.obolibrary.org/obo/pdro.owl",
             "products": [
                 {
-                    "id": "mf.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/mf.owl"
+                    "id": "pdro.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pdro.owl"
                 }
             ],
-            "title": "Mental Functioning Ontology",
-            "tracker": "https://github.com/jannahastings/mental-functioning-ontology/issues"
+            "title": "The Prescription of Drugs Ontology",
+            "tracker": "https://github.com/OpenLHS/PDRO/issues"
         },
         {
             "activity_status": "active",
@@ -4072,44 +4189,6 @@
             ],
             "title": "Ontology for Biobanking",
             "tracker": "https://github.com/biobanking/biobanking/issues"
-        },
-        {
-            "activity_status": "active",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/obophenotype/ascomycete-phenotype-ontology/master/apo.obo"
-            },
-            "contact": {
-                "email": "stacia@stanford.edu",
-                "github": "srengel",
-                "label": "Stacia R Engel"
-            },
-            "description": "A structured controlled vocabulary for the phenotypes of Ascomycete fungi",
-            "domain": "phenotype",
-            "homepage": "http://www.yeastgenome.org/",
-            "id": "apo",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/apo.owl",
-            "products": [
-                {
-                    "id": "apo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/apo.owl"
-                },
-                {
-                    "id": "apo.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/apo.obo"
-                }
-            ],
-            "taxon": {
-                "id": "NCBITaxon:4890",
-                "label": "Ascomycota"
-            },
-            "title": "Ascomycete phenotype ontology"
         },
         {
             "activity_status": "active",
@@ -4529,8 +4608,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/vario.owl"
                 }
             ],
-            "title": "Variation Ontology",
-            "validate": false
+            "title": "Variation Ontology"
         },
         {
             "activity_status": "active",
@@ -4590,6 +4668,11 @@
                 }
             ],
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC0 1.0 Universal",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/ncbitaxon.owl",
             "page": "http://www.ncbi.nlm.nih.gov/taxonomy",
             "preferredPrefix": "NCBITaxon",
@@ -4745,8 +4828,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/mmusdv.obo"
                 }
             ],
-            "title": "Mouse Developmental Stages",
-            "validate": false
+            "title": "Mouse Developmental Stages"
         },
         {
             "activity_status": "active",
@@ -4809,28 +4891,67 @@
         },
         {
             "activity_status": "active",
-            "contact": {
-                "email": "yongqunh@med.umich.edu",
-                "label": "Yongqun Oliver He"
+            "build": {
+                "checkout": "git clone https://github.com/obophenotype/zebrafish-phenotype-ontology.git",
+                "path": ".",
+                "system": "git"
             },
-            "description": "A formal ontology of genes and genomes of biological organisms.",
-            "homepage": "https://bitbucket.org/hegroup/ogg",
-            "id": "ogg",
+            "contact": {
+                "email": "ybradford@zfin.org",
+                "label": "Yvonne Bradford"
+            },
+            "dependencies": [
+                {
+                    "id": "go"
+                },
+                {
+                    "id": "ro"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "bspo"
+                },
+                {
+                    "id": "zfa"
+                },
+                {
+                    "id": "bfo"
+                },
+                {
+                    "id": "uberon"
+                }
+            ],
+            "description": "The Zebrafish Phenotype Ontology formally defines all phenotypes of the Zebrafish model organism.",
+            "domain": "phenotype",
+            "homepage": "https://github.com/obophenotype/zebrafish-phenotype-ontology",
+            "id": "zp",
+            "jobs": [
+                {
+                    "id": "https://travis-ci.org/obophenotype/zebrafish-phenotype-ontology",
+                    "type": "travis-ci"
+                }
+            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC-BY",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
-            "ontology_purl": "http://purl.obolibrary.org/obo/ogg.owl",
+            "ontology_purl": "http://purl.obolibrary.org/obo/zp.owl",
             "products": [
                 {
-                    "id": "ogg.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ogg.owl"
+                    "id": "zp.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/zp.owl"
+                },
+                {
+                    "id": "zp.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/zp.obo"
                 }
             ],
-            "title": "The Ontology of Genes and Genomes",
-            "tracker": "https://bitbucket.org/hegroup/ogg/issues/"
+            "title": "Zebrafish Phenotype Ontology",
+            "tracker": "https://github.com/obophenotype/zebrafish-phenotype-ontology/issues"
         },
         {
             "activity_status": "active",
@@ -4924,8 +5045,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/hsapdv.obo"
                 }
             ],
-            "title": "Human Developmental Stages",
-            "validate": false
+            "title": "Human Developmental Stages"
         },
         {
             "activity_status": "active",
@@ -5148,6 +5268,44 @@
         {
             "activity_status": "active",
             "build": {
+                "method": "obo2owl",
+                "source_url": "https://raw.githubusercontent.com/obophenotype/ascomycete-phenotype-ontology/master/apo.obo"
+            },
+            "contact": {
+                "email": "stacia@stanford.edu",
+                "github": "srengel",
+                "label": "Stacia R Engel"
+            },
+            "description": "A structured controlled vocabulary for the phenotypes of Ascomycete fungi",
+            "domain": "phenotype",
+            "homepage": "http://www.yeastgenome.org/",
+            "id": "apo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/apo.owl",
+            "products": [
+                {
+                    "id": "apo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/apo.owl"
+                },
+                {
+                    "id": "apo.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/apo.obo"
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:4890",
+                "label": "Ascomycota"
+            },
+            "title": "Ascomycete phenotype ontology"
+        },
+        {
+            "activity_status": "active",
+            "build": {
                 "checkout": "git clone https://github.com/data2health/contributor-role-ontology.git",
                 "path": "src/ontology",
                 "system": "git"
@@ -5258,36 +5416,6 @@
                 }
             ],
             "title": "microRNA Ontology"
-        },
-        {
-            "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/pdro.owl"
-            },
-            "contact": {
-                "email": "info@griis.ca",
-                "label": "Ryeyan Taseen"
-            },
-            "description": "An ontology to describe entities related to prescription of drugs",
-            "domain": "health",
-            "homepage": "https://github.com/OpenLHS/PDRO",
-            "id": "pdro",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/pdro.owl",
-            "products": [
-                {
-                    "id": "pdro.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/pdro.owl"
-                }
-            ],
-            "title": "The Prescription of Drugs Ontology",
-            "tracker": "https://github.com/OpenLHS/PDRO/issues"
         },
         {
             "activity_status": "active",
@@ -5453,40 +5581,6 @@
                 }
             ],
             "title": "Ontology of Prokaryotic Phenotypic and Metabolic Characters"
-        },
-        {
-            "activity_status": "active",
-            "contact": {
-                "email": "balhoff@renci.org",
-                "label": "Jim Balhoff"
-            },
-            "description": "An ontology covering the taxonomy of teleosts (bony fish)",
-            "domain": "taxonomy",
-            "homepage": "https://github.com/phenoscape/teleost-taxonomy-ontology",
-            "id": "tto",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/tto.owl",
-            "products": [
-                {
-                    "id": "tto.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/tto.obo"
-                },
-                {
-                    "id": "tto.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/tto.owl"
-                }
-            ],
-            "taxon": {
-                "id": "NCBITaxon:32443",
-                "label": "Teleostei"
-            },
-            "title": "Teleost taxonomy ontology",
-            "tracker": "https://github.com/phenoscape/teleost-taxonomy-ontology/issues"
         },
         {
             "activity_status": "active",
@@ -5671,7 +5765,8 @@
                 "id": "NCBITaxon:44484",
                 "label": "Anopheles"
             },
-            "title": "Mosquito insecticide resistance"
+            "title": "Mosquito insecticide resistance",
+            "validate": false
         },
         {
             "activity_status": "active",
@@ -6220,6 +6315,90 @@
             },
             "title": "Ctenophore Ontology",
             "tracker": "https://github.com/obophenotype/ctenophore-ontology/issues"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "balhoff@renci.org",
+                "label": "Jim Balhoff"
+            },
+            "description": "An ontology covering the taxonomy of teleosts (bony fish)",
+            "domain": "taxonomy",
+            "homepage": "https://github.com/phenoscape/teleost-taxonomy-ontology",
+            "id": "tto",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/tto.owl",
+            "products": [
+                {
+                    "id": "tto.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/tto.obo"
+                },
+                {
+                    "id": "tto.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/tto.owl"
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:32443",
+                "label": "Teleostei"
+            },
+            "title": "Teleost taxonomy ontology",
+            "tracker": "https://github.com/phenoscape/teleost-taxonomy-ontology/issues"
+        },
+        {
+            "activity_status": "active",
+            "build": {
+                "checkout": "git clone https://github.com/SpeciesFileGroup/nomen.git",
+                "system": "git"
+            },
+            "canonical": "nomen.owl",
+            "contact": {
+                "email": "diapriid@gmail.com",
+                "label": "Matt Yoder"
+            },
+            "description": "NOMEN is a nomenclatural ontology for biological names (not concepts).  It encodes the goverened rules of nomenclature.",
+            "domain": "biological nomenclature",
+            "funded_by": [
+                "NSF-ABI-1356381",
+                "Species File Group"
+            ],
+            "homepage": "https://github.com/SpeciesFileGroup/nomen",
+            "id": "nomen",
+            "label": "NOMEN",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            "mailing_list": "https://groups.google.com/forum/#!forum/nomen-discuss",
+            "ontology_purl": "http://purl.obolibrary.org/obo/nomen.owl",
+            "products": [
+                {
+                    "description": "core ontology",
+                    "id": "nomen.owl",
+                    "is_canonical": true,
+                    "ontology_purl": "http://purl.obolibrary.org/obo/nomen.owl",
+                    "title": "NOMEN",
+                    "type": "owl:Ontology"
+                }
+            ],
+            "title": "NOMEN - A nomenclatural ontology for biological names",
+            "tracker": "https://github.com/SpeciesFileGroup/nomen/issues",
+            "type": "owl:Ontology",
+            "usages": [
+                {
+                    "label": "TaxonWorks",
+                    "seeAlso": "https://github.com/SpeciesFileGroup/taxonworks",
+                    "type": "application",
+                    "user": "https://taxonworks.org"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -6852,9 +7031,9 @@
             "id": "sepio",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY-SA",
-                "logo": "https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png",
-                "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/sepio.owl",
             "products": [
@@ -6866,6 +7045,31 @@
             ],
             "title": "Scientific Evidence and Provenance Information Ontology",
             "tracker": "https://github.com/monarch-initiative/SEPIO-ontology/issues"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "yongqunh@med.umich.edu",
+                "label": "Yongqun Oliver He"
+            },
+            "description": "A formal ontology of genes and genomes of biological organisms.",
+            "homepage": "https://bitbucket.org/hegroup/ogg",
+            "id": "ogg",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/ogg.owl",
+            "products": [
+                {
+                    "id": "ogg.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ogg.owl"
+                }
+            ],
+            "title": "The Ontology of Genes and Genomes",
+            "tracker": "https://bitbucket.org/hegroup/ogg/issues/"
         },
         {
             "activity_status": "active",
@@ -7125,14 +7329,14 @@
         {
             "activity_status": "inactive",
             "contact": {
-                "email": "Julie Thompson",
-                "label": "julie@igbmc.u-strasbg.fr"
+                "email": "Matt Berriman",
+                "label": "mb4@sanger.ac.uk"
             },
-            "homepage": "http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html",
-            "id": "mao",
+            "homepage": "http://www.sanger.ac.uk/Users/mb4/PLO/",
+            "id": "plo",
             "is_obsolete": true,
             "layout": "ontology_detail",
-            "title": "Multiple alignment"
+            "title": "Plasmodium life cycle"
         },
         {
             "activity_status": "inactive",
@@ -7387,6 +7591,18 @@
         {
             "activity_status": "inactive",
             "contact": {
+                "email": "Julie Thompson",
+                "label": "julie@igbmc.u-strasbg.fr"
+            },
+            "homepage": "http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html",
+            "id": "mao",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "Multiple alignment"
+        },
+        {
+            "activity_status": "inactive",
+            "contact": {
                 "email": "Pierre Sprumont",
                 "label": "pierre.sprumont@unifr.ch"
             },
@@ -7416,26 +7632,24 @@
         {
             "activity_status": "inactive",
             "contact": {
-                "email": "Thorsten.Henrich@embl-heidelberg.de",
-                "label": "Thorsten Henrich"
+                "email": "stoeckrt@pcbi.upenn.edu",
+                "label": "Chris Stoeckert"
             },
-            "description": "A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.",
-            "domain": "anatomy",
-            "id": "mfo",
+            "description": "A standardized description of a microarray experiment in support of MAGE v.1.",
+            "domain": "experiments",
+            "homepage": "http://mged.sourceforge.net/ontologies/MGEDontology.php",
+            "id": "mo",
             "is_obsolete": true,
             "layout": "ontology_detail",
+            "page": "http://mged.sourceforge.net/software/downloads.php",
             "products": [
                 {
-                    "id": "mfo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/mfo.owl"
+                    "id": "mo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mo.owl"
                 }
             ],
-            "replaced_by": "olatdv",
-            "taxon": {
-                "id": "NCBITaxon:8089",
-                "label": "Oryzias"
-            },
-            "title": "Medaka fish anatomy and development"
+            "replaced_by": "obi",
+            "title": "Microarray experimental conditions"
         },
         {
             "activity_status": "inactive",
@@ -7455,8 +7669,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/epo.owl"
                 }
             ],
-            "title": "Epidemiology Ontology",
-            "validate": false
+            "title": "Epidemiology Ontology"
         },
         {
             "activity_status": "inactive",
@@ -7571,6 +7784,30 @@
             "layout": "ontology_detail",
             "replaced_by": "cl",
             "title": "NIF Cell"
+        },
+        {
+            "activity_status": "inactive",
+            "contact": {
+                "email": "Thorsten.Henrich@embl-heidelberg.de",
+                "label": "Thorsten Henrich"
+            },
+            "description": "A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.",
+            "domain": "anatomy",
+            "id": "mfo",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "products": [
+                {
+                    "id": "mfo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mfo.owl"
+                }
+            ],
+            "replaced_by": "olatdv",
+            "taxon": {
+                "id": "NCBITaxon:8089",
+                "label": "Oryzias"
+            },
+            "title": "Medaka fish anatomy and development"
         },
         {
             "activity_status": "inactive",
@@ -7701,28 +7938,6 @@
         },
         {
             "activity_status": "inactive",
-            "contact": {
-                "email": "stoeckrt@pcbi.upenn.edu",
-                "label": "Chris Stoeckert"
-            },
-            "description": "A standardized description of a microarray experiment in support of MAGE v.1.",
-            "domain": "experiments",
-            "homepage": "http://mged.sourceforge.net/ontologies/MGEDontology.php",
-            "id": "mo",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "page": "http://mged.sourceforge.net/software/downloads.php",
-            "products": [
-                {
-                    "id": "mo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/mo.owl"
-                }
-            ],
-            "replaced_by": "obi",
-            "title": "Microarray experimental conditions"
-        },
-        {
-            "activity_status": "inactive",
             "build": {
                 "method": "owl2obo",
                 "source_url": "https://msi-workgroups.svn.sourceforge.net/svnroot/msi-workgroups/ontology/NMR.owl"
@@ -7815,18 +8030,6 @@
             "is_obsolete": true,
             "layout": "ontology_detail",
             "title": "Protein Domains"
-        },
-        {
-            "activity_status": "inactive",
-            "contact": {
-                "email": "Matt Berriman",
-                "label": "mb4@sanger.ac.uk"
-            },
-            "homepage": "http://www.sanger.ac.uk/Users/mb4/PLO/",
-            "id": "plo",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "title": "Plasmodium life cycle"
         }
     ]
 }
