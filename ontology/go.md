@@ -9,6 +9,7 @@ contact:
 label: GO
 description: An ontology for describing the function of genes and gene products
 title: Gene Ontology
+homepage: http://geneontology.org/
 twitter: news4go
 facebook: https://www.facebook.com/Gene-Ontology-305908656519/ 
 tracker: https://github.com/geneontology/go-ontology/issues/
