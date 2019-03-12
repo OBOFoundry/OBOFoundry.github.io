@@ -129,7 +129,7 @@ def validate_metadata(item, schemas):
 			# - ontology annotated with `validate: false`
 			if 'activity_status' in item \
 			    and item['activity_status'] == 'orphaned':
-			    if title == 'contact' or title == 'license':
+			    if title == 'contact' or title == 'license' or title == 'license-lite':
 			    	continue
 			if ('is_obsolete' in item and item['is_obsolete'] is True) \
 			or ('activity_status' in item \
@@ -139,7 +139,7 @@ def validate_metadata(item, schemas):
 
 			# get a message for displaying on terminal
 			msg = ve.message
-			if title == 'license':
+			if title == 'license' or title == 'license-lite':
 				# license error message can show up in a few different ways
 				search = re.search('\'(.+?)\' is not one of', msg)
 				if search:
@@ -327,6 +327,7 @@ def save_grid(metadata_grid, headers, grid_file):
 	# First three help to see overall details
 	header = 'Ontology{0}Activity Status{0}Validation Status'.format(separator)
 	# After that, we show the results of each check
+	headers.remove('license-lite')
 	for h in headers:
 		header += separator + h
 	header += '\n'
@@ -340,7 +341,23 @@ def save_grid(metadata_grid, headers, grid_file):
 				ont_id, 
 				results['ontology_status'], 
 				results['validation_status'])
+			if ont_id == 'vario':
+				print(headers)
+				print(results)
 			for h in headers:
+				if h == 'license':
+					# license has two checks
+					# so the license entry will be the more severe violation
+					all_res = [results['license'], results['license-lite']]
+					if 'error' in all_res:
+						s += separator + 'error'
+					elif 'warning' in all_res:
+						s += separator + 'warning'
+					elif 'info' in all_res:
+						s += separator + 'info'
+					else:
+						s += separator + 'pass'
+					continue
 				s += separator + results[h]
 			s += '\n'
 			f.write(s)
