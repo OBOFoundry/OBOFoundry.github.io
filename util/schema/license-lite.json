@@ -1,6 +1,8 @@
 {
 	"title": "license",
 	"level": "error",
+	"principle": "http://obofoundry.org/principles/fp-001-open.html",
+	"description": "'license' is a required property. The value is an object with a 'url' and 'label' field. The 'url' must be the full URL of the license, and the 'label' is the name of the license.",
 	"properties": {
 		"license": {
 			"type": "object",
