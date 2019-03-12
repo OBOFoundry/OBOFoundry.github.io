@@ -11,15 +11,14 @@ The OBO Foundry Operations Committee discusses, oversees, and ensures the comple
 # Details #
 Membership in working groups: T=technical working group, O=outreach working group, E=editorial working group
 
-Current members of the OBO Foundry Operations Committee are: (in alphabetical order of surname)
+Current members of the OBO Foundry Operations Committee are (in alphabetical order of surname):
 
-  * Mathias Brochhausen (O), Department of Biomedical Informatics, University of Arkansas for Medical Sciences, Little Rock, AR, USA
+ * Mathias Brochhausen (O), Department of Biomedical Informatics, University of Arkansas for Medical Sciences, Little Rock, AR, USA
  * [Melanie Courtot](http://purl.org/net/mcourtot) (O, T), EMBL-EBI, Cambridge, UK 
- * [Melissa Haendel](https://www.ohsu.edu/people/melissa-haendel/AFE044BDE8046E5D6FBDA51F448BDE2A) (O), Oregon Health & Science University, Portland, OR
+ * [Melissa Haendel](https://www.ohsu.edu/people/melissa-haendel/AFE044BDE8046E5D6FBDA51F448BDE2A) (O), Oregon State University, Corvallis, OR
  * [Simon Jupp](http://www.ebi.ac.uk/about/people/simon-jupp) (T), European Bioinformatics Institute, Cambridge, UK 
- * [Suzi Lewis](https://github.com/selewis), (O, T) Lawrence Berkeley Laboratory, Berkeley, USA
  * James Malone, FactBio, Cambridge, UK
- * [Chris Mungall](https://github.com/cmungall/), (T) Lawrence Berkeley Laboratory, Berkeley, USA
+ * [Chris Mungall](https://github.com/cmungall/), (T) Lawrence Berkeley National Laboratory, Berkeley, USA
  * [Darren Natale](http://pir.georgetown.edu/pirwww/aboutpir/natalebio.shtml) (E) Georgetown University Medical Center, Washington DC, USA
  * [James A. Overton](http://james.overton.ca) (T), [Knocean Inc.](http://knocean.com), Toronto, Canada
  * Bjoern Peters (E)
@@ -38,4 +37,5 @@ Alumni:
  * Michael Ashburner
  * Colin Batchelor (E), Royal Society of Chemistry, UK
  * Janna Hastings (E, O)
+ * [Suzi Lewis](https://github.com/selewis), (O, T) Lawrence Berkeley National Laboratory, Berkeley, USA
  * Susanna-Assunta Sansone
