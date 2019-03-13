@@ -26,7 +26,7 @@ publications:
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
-depicted_by: http://www.pombase.org/sites/pombase.org/files/images/fypo_logo_tiny.png
+depicted_by: https://github.com/pombase/website/blob/master/src/assets/FYPO_logo_tiny.png
 usages:
   - user: https://www.pombase.org
     description: Pombase uses fypo for phenotype data annotation in fission yeast
