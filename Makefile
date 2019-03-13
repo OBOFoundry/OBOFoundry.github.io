@@ -62,9 +62,9 @@ pull:
 _config.yml: _config_header.yml registry/ontologies.yml principles/all.yml
 	cat $^ > $@.tmp && mv $@.tmp $@
 
-# Extract metadata from each ontology .md file and combine into single yaml
-registry/ontologies.yml: $(ONTS)
-	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
+# Sort ontologies based on the validation (metadata-grid)
+registry/ontologies.yml: tmp/unsorted-ontologies.yml reports/metadata-grid.csv
+	./util/sort-ontologies.py $^ $@ && rm -rf tmp
 
 # Extract the metadata from each principle in the principles/ directory, and concatenate
 # into a single yaml file in that directory
@@ -94,28 +94,31 @@ registry/publications.md: util/extract-publications.py registry/ontologies.yml
 
 ### Validate Configuration Files
 
+# generate both a report of the violations and a grid of all results
+# the grid is later used to sort the ontologies on the home page
+validate: reports/metadata-grid.csv reports/metadata-grid.html
+
+RESULTS = reports/metadata-violations.tsv reports/metadata-grid.csv
+reports/metadata-grid.csv: tmp/unsorted-ontologies.yml | extract-metadata reports
+	./util/validate-metadata.py $< $(RESULTS)
+
+# generate an HTML output of the metadata grid
+# TODO: determine where this output belongs
+reports/metadata-grid.html: reports/metadata-grid.csv
+	./util/create-html-grid.py $< $@
+
+# Extract metadata from each ontology .md file and combine into single yaml
+tmp/unsorted-ontologies.yml: $(ONTS) | tmp
+	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
+
+tmp:
+	mkdir -p $@
+
 reports:
 	mkdir -p $@
 
 extract-metadata: $(ONTS)
 	./util/extract-metadata.py validate $^
-
-validate: reports/metadata-violations.tsv
-.PHONY: reports/metadata-violations.tsv
-reports/metadata-violations.tsv: tmp/ontologies.jsonld | extract-metadata reports
-	./util/validate-metadata.py $^ $@ && rm -rf tmp
-
-# Uses temporary directory to store builds
-# Without overwriting the actual build files
-
-tmp:
-	mkdir -p $@
-
-tmp/ontologies.yml: $(ONTS) | tmp
-	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
-
-tmp/ontologies.jsonld: tmp/ontologies.yml
-	./util/yaml2json.py $< > $@.tmp && mv $@.tmp $@
 
 # Note this should *not* be run as part of general travis jobs, it is expensive
 # and may be prone to false positives as it is inherently network-based
