@@ -38,13 +38,11 @@ PRINCIPLES := $(wildcard principles/*.md)
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
 
-all: yml registry/ontologies.ttl registry/publications.md registry/obo_context.jsonld
+all: _config.yml registry/ontologies.ttl registry/publications.md registry/obo_context.jsonld
 
 pull_and_build: pull all
 
-yml: _config.yml registry/ontologies.yml
-
-test: validate yml
+test: validate _config.yml
 
 integration-test: test valid-purl-report.txt
 
