@@ -40,14 +40,14 @@ PRINCIPLES := $(wildcard principles/*.md)
 
 all: _config.yml registry/ontologies.ttl registry/publications.md registry/obo_context.jsonld
 
+pull:
+	git pull
+
 pull_and_build: pull all
 
 test: reports/metadata-grid.html _config.yml
 
 integration-test: test valid-purl-report.txt
-
-pull:
-	git pull
 
 clean:
 	rm -Rf _config.yml registry/ontologies.jsonld registry/ontologies.nt registry/ontologies.ttl registry/ontologies.yml registry/publications.md _site/
@@ -66,7 +66,8 @@ _config.yml: _config_header.yml registry/ontologies.yml principles/all.yml
 
 # Sort ontologies based on the validation (metadata-grid)
 registry/ontologies.yml: reports/metadata-grid.csv
-	./util/sort-ontologies.py $^ $@ && rm -rf tmp
+	./util/sort-ontologies.py tmp/unsorted-ontologies.yml reports/metadata-grid.csv $@ \
+	&& rm -rf tmp
 
 # Extract the metadata from each principle in the principles/ directory, and concatenate
 # into a single yaml file in that directory
