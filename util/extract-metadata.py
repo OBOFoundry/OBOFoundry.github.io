@@ -1,42 +1,37 @@
 #!/usr/bin/env python3
 
-__author__ = 'cjm'
-
 import argparse
 import logging
-
-#from yaml import load, dump
-#from yaml import Loader, Dumper
+import sys
 import yaml
 
+__author__ = 'cjm'
+
+
 def main():
-
-    parser = argparse.ArgumentParser(description='OBO'
-                                                 'Helper utils for OBO',
+    parser = argparse.ArgumentParser(description='Helper utils for OBO',
                                      formatter_class=argparse.RawTextHelpFormatter)
-
-
     subparsers = parser.add_subparsers(dest='subcommand', help='sub-command help')
-    
+
     # SUBCOMMAND
     parser_n = subparsers.add_parser('validate', help='validate yml inside md')
-    ##parser_n.add_argument('-d', '--depth', type=int, help='number of hops')
+    # parser_n.add_argument('-d', '--depth', type=int, help='number of hops')
     parser_n.set_defaults(function=validate_markdown)
-    parser_n.add_argument('files',nargs='*')
+    parser_n.add_argument('files', nargs='*')
 
     # SUBCOMMAND
     parser_n = subparsers.add_parser('concat', help='concat ontology yamls')
     parser_n.add_argument('-i', '--include', help='yml file to include for header')
     parser_n.add_argument('-o', '--output', help='output yaml')
     parser_n.set_defaults(function=concat_ont_yaml)
-    parser_n.add_argument('files',nargs='*')
+    parser_n.add_argument('files', nargs='*')
 
     # SUBCOMMAND
     parser_n = subparsers.add_parser('concat-principles', help='concat principles yamls')
     parser_n.add_argument('-i', '--include', help='yml file to include for header')
     parser_n.add_argument('-o', '--output', help='output yaml')
     parser_n.set_defaults(function=concat_principles_yaml)
-    parser_n.add_argument('files',nargs='*')
+    parser_n.add_argument('files', nargs='*')
 
     args = parser.parse_args()
 
@@ -51,40 +46,39 @@ def validate_markdown(args):
     First attempt to strip the yaml from the .md file, second use the standard python yaml parser
     to parse the embedded yaml. If it can't be passed then an error will be thrown and a stack
     trace shown. In future we may try and catch this error and provide a user-friendly report).
-    
+
     In future we also perform additional structural validation on the yaml - check certain fields
     are present etc. This could be done in various ways, e.g. jsonschema, programmatic checks. We
     should also check translation -> jsonld -> rdf works as expected.
     """
     errs = []
     for fn in args.files:
-        print("VALIDATING:"+fn)
         # we don't do anything with the results; an
-        # error is thrown 
+        # error is thrown
         (obj, md) = load_md(fn)
-        print("OK:"+fn)
-        errs += validate_structure(obj,md)
+        errs += validate_structure(obj, md)
     if len(errs) > 0:
-        print("FAILURES:")
+        print("FAILURES:", file=sys.stderr)
         for e in errs:
-            print("ERROR:"+e)
-        exit(1)
+            print("ERROR:" + e, file=sys.stderr)
+        sys.exit(1)
 
-def validate_structure(obj,md):
+
+def validate_structure(obj, md):
     errs = []
-    is_obs = False
-    if 'id' not in obj:
+    is_obsolete = False
+    id = obj.get('id') or ''
+    if not id:
         errs.append("No id: ")
-    if 'is_obsolete' in obj:
-        is_obs = True
-    id = obj['id']
     if 'title' not in obj:
-        errs.append("No title: "+id)
-    #if 'description' not in obj:
-    #    errs.append("No description: "+id+" " + ("OBS" if is_obs else ""))
+        errs.append("No title: " + id)
     if 'layout' not in obj:
-        errs.append("No layout tag: "+id+" -- this is required for proper rendering")
+        errs.append("No layout tag: " + id + " -- this is required for proper rendering")
+    # is_obsolete = ('is_obsolete' in obj)
+    # if 'description' not in obj:
+    #     errs.append("No description: " + id + " " + ("OBS" if is_obsolete else ""))
     return errs
+
 
 def concat_ont_yaml(args):
     """
@@ -99,27 +93,29 @@ def concat_ont_yaml(args):
     obsolete = []
     cfg = {}
     if (args.include):
-        f = open(args.include, 'r')
-        cfg = yaml.load(f.read())
+        with open(args.include, 'r') as f:
+            cfg = yaml.load(f.read(), Loader=yaml.SafeLoader)
     for fn in args.files:
         (obj, md) = load_md(fn)
-        if 'is_obsolete' in obj and obj['is_obsolete'] == True:
-          obsolete.append(obj)
+        if obj.get('is_obsolete'):
+            obsolete.append(obj)
         elif 'in_foundry_order' in obj:
-          foundry.append(obj)
+            foundry.append(obj)
         else:
-          library.append(obj)
+            library.append(obj)
     objs = foundry + library + obsolete
     cfg['ontologies'] = objs
     decorate_metadata(objs)
-    f = open(args.output, 'w')
-    f.write(yaml.dump(cfg))
+    with open(args.output, 'w') as f:
+        f.write(yaml.dump(cfg))
     return cfg
+
 
 def decorate_metadata(objs):
     """
-    See:
-    https://github.com/OBOFoundry/OBOFoundry.github.io/issues/82
+    Add the logo corresponding to the given object's license (if it has one), and decorate
+    it with PURLs it has any products.
+    See: https://github.com/OBOFoundry/OBOFoundry.github.io/issues/82
     """
     for obj in objs:
         if 'license' in obj:
@@ -137,48 +133,50 @@ def decorate_metadata(objs):
                 logo = 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png'
             elif lurl.find('creativecommons.org/publicdomain/zero/') > 0:
                 logo = 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png'
-            if not logo == '':
+            if logo:
                 license['logo'] = logo
-        if 'products' in obj:
+        if has_a_product(obj):
             # decorate top-level ontology; but only if it has at least one product
             decorate_entry(obj, ".owl")
             for product in obj['products']:
                 decorate_entry(product)
 
+
 def decorate_entry(obj, suffix=""):
     """
     Decorates EITHER an ontology metadata object OR a product object with a purl.
-    
+
     Each object has an identifier which either identifies the ontology sensu grouping
     project (e.g. 'go') or a specific product (e.g. 'go.obo' or 'go.owl').
 
     By default each id is prefixed with the OBO prefix (unless is has an alternate prefix,
     in which case it is effectively ignored).
     """
-    id = obj['id']
-    if not('is_obsolete' in obj):
-        if has_obo_prefix(obj):
-            obj['ontology_purl'] = "http://purl.obolibrary.org/obo/" + id + suffix
+    id = obj.get('id') or 'None'
+    if 'is_obsolete' not in obj and has_obo_prefix(obj):
+        obj['ontology_purl'] = "http://purl.obolibrary.org/obo/" + id + suffix
 
 
 def has_obo_prefix(obj):
     return ('uri_prefix' not in obj) or (obj['uri_prefix'] == 'http://purl.obolibrary.org/obo/')
 
+
 def has_a_product(obj):
     return 'products' in obj and len(obj['products']) > 0
+
 
 def concat_principles_yaml(args):
     objs = []
     cfg = {}
     if (args.include):
-        f = open(args.include, 'r') 
-        cfg = yaml.load(f.read())
+        with open(args.include, 'r') as f:
+            cfg = yaml.load(f.read(), Loader=yaml.SafeLoader)
     for fn in args.files:
         (obj, md) = load_md(fn)
         objs.append(obj)
     cfg['principles'] = objs
-    f = open(args.output, 'w') 
-    f.write(yaml.dump(cfg))
+    with open(args.output, 'w') as f:
+        f.write(yaml.dump(cfg))
     return cfg
 
 
@@ -188,10 +186,10 @@ def load_md(fn):
 
     Returns a tuple (yaml_obj, markdown_text)
     """
-    f = open(fn, 'r') 
-    text = f.read() 
+    with open(fn, 'r') as f:
+        text = f.read()
     return extract(text)
-    
+
 
 def extract(mdtext):
     """
@@ -205,16 +203,17 @@ def extract(mdtext):
     mlines = []
     for line in lines:
         if (line == "---"):
-            n=n+1
+            n = n + 1
             hlines = []
         else:
-            if (n == 1):
-               ylines.append(line)
+            if n == 1:
+                ylines.append(line)
             else:
                 mlines.append(line)
     yamltext = "\n".join(ylines)
     obj = yaml.load(yamltext)
     return (obj, "\n".join(mlines))
+
 
 def write_legacy_metadata_objects(onts, stream):
     """
@@ -222,6 +221,7 @@ def write_legacy_metadata_objects(onts, stream):
     """
     for ont in onts:
         write_legacy_metadata_object(ont, stream)
+
 
 def write_legacy_metadata_object(ont, stream):
     """
@@ -232,11 +232,10 @@ def write_legacy_metadata_object(ont, stream):
     write_pv('namespace', ont['id'].upper, stream)
     write_pv('foundry', ont['is_foundry'], stream)
 
-def write_pv(k,v,s):
+
+def write_pv(k, v, s):
     s.write(p + "\t" + v)
+
 
 if __name__ == "__main__":
     main()
-
-    
-    
