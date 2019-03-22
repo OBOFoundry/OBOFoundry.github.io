@@ -42,7 +42,7 @@ all: _config.yml registry/ontologies.ttl registry/publications.md registry/obo_c
 
 pull_and_build: pull all
 
-test: validate _config.yml
+test: reports/metadata-grid.html _config.yml
 
 integration-test: test valid-purl-report.txt
 
@@ -98,10 +98,6 @@ registry/publications.md: util/extract-publications.py registry/ontologies.yml
 
 # generate both a report of the violations and a grid of all results
 # the grid is later used to sort the ontologies on the home page
-.PHONY: validate
-
-validate: reports/metadata-grid.html
-
 RESULTS = reports/metadata-violations.tsv reports/metadata-grid.csv
 reports/metadata-grid.csv: tmp/unsorted-ontologies.yml | extract-metadata reports
 	./util/validate-metadata.py $< $(RESULTS)
