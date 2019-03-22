@@ -19,22 +19,24 @@
 # Run `make` in this directory to update all generated files
 # (i.e. the default `all` task).
 # Make does its best to detect changes and run only the required tasks,
-# but sometimes it helps to delete the target files first.
+# but sometimes it helps to delete the target files first by running `make clean`
 #
 # WARNING: Makefiles contain significant tab characters!
-# Ensure that your editor shows tab characters before editing this file.
+# Before editing this file, ensure that your editor is not set up to convert tabs
+# to spaces, and then use tabs to indent recipe lines.
 
 
 ### Configuration
 
 # All ontology .md files
-ONTS := $(wildcard ontology/*md)
+ONTS := $(wildcard ontology/*.md)
 
-# All principles .md file
-PRINCIPLES := $(wildcard principles/*md)
+# All principles .md files
+PRINCIPLES := $(wildcard principles/*.md)
 
 
 ### Main Tasks
+.PHONY: all pull_and_build test pull clean
 
 all: yml registry/ontologies.ttl registry/publications.md registry/obo_context.jsonld
 
@@ -49,6 +51,8 @@ integration-test: test valid-purl-report.txt
 pull:
 	git pull
 
+clean:
+	rm -Rf _config.yml registry/ontologies.jsonld registry/ontologies.nt registry/ontologies.ttl registry/ontologies.yml registry/publications.md _site/
 
 ### Build Configuration Files
 
@@ -96,6 +100,8 @@ registry/publications.md: util/extract-publications.py registry/ontologies.yml
 
 # generate both a report of the violations and a grid of all results
 # the grid is later used to sort the ontologies on the home page
+.PHONY: validate
+
 validate: reports/metadata-grid.csv reports/metadata-grid.html
 
 RESULTS = reports/metadata-violations.tsv reports/metadata-grid.csv
