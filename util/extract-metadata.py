@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import argparse
-import logging
 import sys
 import yaml
 
@@ -57,7 +56,6 @@ def validate_markdown(args):
     missing, collect them in a list of errors which is then returned.
     """
     errs = []
-    is_obsolete = False
     id = obj.get('id') or ''
     if not id:
       errs.append("No id: ")
@@ -215,7 +213,6 @@ def extract(mdtext):
   for line in lines:
     if (line == "---"):
       n = n + 1
-      hlines = []
     else:
       if n == 1:
         ylines.append(line)
@@ -224,26 +221,6 @@ def extract(mdtext):
   yamltext = "\n".join(ylines)
   obj = yaml.load(yamltext)
   return (obj, "\n".join(mlines))
-
-
-def write_legacy_metadata_objects(onts, stream):
-  """
-  Write to the old ontologies.txt format - TODO
-  """
-  def write_legacy_metadata_object(ont, stream):
-    """
-    write to the old ontologies.txt format (single object)
-    """
-    def write_pv(k, v, s):
-      s.write(p + "\t" + v)
-
-    write_pv('id', ont['id'], stream)
-    write_pv('title', ont['title'], stream)
-    write_pv('namespace', ont['id'].upper, stream)
-    write_pv('foundry', ont['is_foundry'], stream)
-
-  for ont in onts:
-    write_legacy_metadata_object(ont, stream)
 
 
 if __name__ == "__main__":
