@@ -100,7 +100,7 @@ registry/publications.md: util/extract-publications.py registry/ontologies.yml
 # the grid is later used to sort the ontologies on the home page
 .PHONY: validate
 
-validate: reports/metadata-grid.csv reports/metadata-grid.html
+validate: reports/metadata-grid.html
 
 RESULTS = reports/metadata-violations.tsv reports/metadata-grid.csv
 reports/metadata-grid.csv: tmp/unsorted-ontologies.yml | extract-metadata reports
