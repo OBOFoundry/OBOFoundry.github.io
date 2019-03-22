@@ -54,7 +54,7 @@ def get_sort_order(grid):
 def load_data(data_file):
   '''Given a YAML file, load the data into a dictionary.'''
   stream = open(data_file, 'r')
-  data = yaml.load(stream)
+  data = yaml.load(stream, Loader=yaml.SafeLoader)
   return data
 
 
