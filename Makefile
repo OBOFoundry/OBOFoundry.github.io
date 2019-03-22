@@ -66,8 +66,7 @@ _config.yml: _config_header.yml registry/ontologies.yml principles/all.yml
 
 # Sort ontologies based on the validation (metadata-grid)
 registry/ontologies.yml: reports/metadata-grid.csv
-	./util/sort-ontologies.py tmp/unsorted-ontologies.yml reports/metadata-grid.csv $@ \
-	&& rm -rf tmp
+	./util/sort-ontologies.py tmp/unsorted-ontologies.yml $< $@ && rm -rf tmp
 
 # Extract the metadata from each principle in the principles/ directory, and concatenate
 # into a single yaml file in that directory
