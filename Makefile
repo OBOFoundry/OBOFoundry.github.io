@@ -52,6 +52,16 @@ integration-test: test valid-purl-report.txt
 clean:
 	rm -Rf _config.yml registry/ontologies.jsonld registry/ontologies.nt registry/ontologies.ttl registry/ontologies.yml registry/publications.md _site/ tmp/
 
+
+### Directories:
+
+tmp:
+	mkdir -p $@
+
+reports:
+	mkdir -p $@
+
+
 ### Build Configuration Files
 
 # Create the site-wide config file by combining all metadata on ontologies + principles
@@ -91,8 +101,8 @@ registry/ontologies.ttl: registry/ontologies.nt
 	riot --base=http://purl.obolibrary.org/obo/ --out=ttl $< > $@.tmp && mv $@.tmp $@
 
 # Generate a list of primary publications
-registry/publications.md: util/extract-publications.py registry/ontologies.yml
-	$^ $@
+registry/publications.md: registry/ontologies.yml
+	util/extract-publications.py $< $@
 
 ### Validate Configuration Files
 
@@ -111,12 +121,6 @@ reports/metadata-grid.html: reports/metadata-grid.csv
 tmp/unsorted-ontologies.yml: $(ONTS) | tmp
 	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
-tmp:
-	mkdir -p $@
-
-reports:
-	mkdir -p $@
-
 extract-metadata: $(ONTS)
 	./util/extract-metadata.py validate $^
 
@@ -132,7 +136,6 @@ valid-purl-report.txt: registry/ontologies.yml
 
 sparql-consistency-report.txt: registry/ontologies.yml
 	./util/processor.py -i $< sparql-compare > $@.tmp && mv $@.tmp $@
-
 
 # output of central OBO build
 # See FAQ for more details, and also README.md
