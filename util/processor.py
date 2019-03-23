@@ -16,9 +16,6 @@ from json import dumps
 __author__ = 'cjm'
 
 
-SHELF_LIFE = datetime.timedelta(days=7)
-
-
 def main():
   parser = argparse.ArgumentParser(description='Helper utils for OBO',
                                    formatter_class=argparse.RawTextHelpFormatter)
@@ -118,7 +115,7 @@ def write_all_contributors(ontologies, args):
   print(dumps(results, sort_keys=True, indent=4, separators=(',', ': ')))
 
 
-@cachier(stale_after=SHELF_LIFE)
+@cachier(stale_after=datetime.timedelta(days=7))
 def get_ontology_contributors(repo_path):
   """
   Get individual contributors to a org/repo_path
