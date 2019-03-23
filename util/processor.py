@@ -47,7 +47,7 @@ def main():
     logging.basicConfig(level=logging.WARNING)
 
   with open(args.input, 'r') as f:
-    obj = yaml.load(f)
+    obj = yaml.load(f, Loader=yaml.SafeLoader)
     ontologies = obj['ontologies']
 
   func = args.function

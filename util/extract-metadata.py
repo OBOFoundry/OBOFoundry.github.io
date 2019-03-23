@@ -219,7 +219,7 @@ def extract(mdtext):
       else:
         mlines.append(line)
   yamltext = "\n".join(ylines)
-  obj = yaml.load(yamltext)
+  obj = yaml.load(yamltext, Loader=yaml.SafeLoader)
   return (obj, "\n".join(mlines))
 
 

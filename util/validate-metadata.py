@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import ast
 import json
 import jsonschema
 import os
@@ -8,27 +7,40 @@ import re
 import sys
 import yaml
 
-# file paths
-schema_dir = 'util/schema'
+from argparse import ArgumentParser
 
-def validate(args):
-  '''
-  Validate registry metadata.
-  Usage: ./validate-metadata.py <data file> <output file> <grid file>
-  '''
+
+# Path to JSON schemas:
+SCHEMA_DIR = 'util/schema'
+
+# The metadata grid to be generated:
+metadata_grid = {}
+
+
+def main(args):
   global metadata_grid
+  parser = ArgumentParser(description='''
+  Validate registry metadata in the given YAML file yaml_infile and produce two output files:
+  1) violations_outfile: a CSV, TSV, or TXT file which contain all metadata violations, and
+  2) grid_outfile: a CSV, TSV, or TXT file which will contain a custom sorted metadata grid''')
+  parser.add_argument('yaml_infile', type=str, help='YAML file containing registry data')
+  parser.add_argument('violations_outfile', type=str,
+                      help='Output file (CSV, TSV, or TXT) to contain metadata violations')
+  parser.add_argument('grid_outfile', type=str,
+                      help='Output file (CSV, TSV, or TXT) to contain custom sorted metadata grid')
+  args = parser.parse_args()
 
-  data_file = args[1]
-  output_file = args[2]
-  grid_file = args[3]
+  yaml_infile = args.yaml_infile
+  violations_outfile = args.violations_outfile
+  grid_outfile = args.grid_outfile
 
-  data = load_data(data_file)
+  # Load in the YAML and the JSON schemas that we will need:
+  data = load_data(yaml_infile)
   schemas = get_schemas()
-  
-  results = {'error': [], 'warn': [], 'info': []}
-  metadata_grid = {}
 
-  # validate each object
+  results = {'error': [], 'warn': [], 'info': []}
+
+  # Validate each object
   for item in data["ontologies"]:
     add = validate_metadata(item, schemas)
     results = update_results(results, add)
@@ -37,33 +49,35 @@ def validate(args):
   headers = []
   for s in schemas:
     headers.append(s['title'])
-  save_grid(metadata_grid, headers, grid_file)
+  save_grid(metadata_grid, headers, grid_outfile)
 
   # print and save the results that did not pass
   print_results(results)
-  save_results(results, output_file)
+  save_results(results, violations_outfile)
   if results['error']:
-    print('Metadata validation failed with %d errors - see %s for details'\
-          % (len(results['error']), output_file))
+    print('Metadata validation failed with %d errors - see %s for details'
+          % (len(results['error']), violations_outfile))
     sys.exit(1)
   else:
-    print('Metadata validation passed - see %s for warnings' % output_file)
+    print('Metadata validation passed - see %s for warnings' % violations_outfile)
     sys.exit(0)
 
-def load_data(data_file):
+
+def load_data(yaml_infile):
   '''Given a YAML data file, load the data to validate.'''
-  stream = open(data_file, 'r')
-  data = yaml.load(stream)
+  with open(yaml_infile, 'r') as stream:
+    data = yaml.load(stream, Loader=yaml.SafeLoader)
   return data
+
 
 def get_schemas():
   '''Return a set of schemas from the master schema directory.'''
   schemas = []
-  for f in os.listdir(schema_dir):
-    if '.json' not in f:
+  for f in os.listdir(SCHEMA_DIR):
+    if not f.endswith('.json'):
       continue
     try:
-      file = '%s/%s' % (schema_dir, f)
+      file = '%s/%s' % (SCHEMA_DIR, f)
       with open(file, 'r') as s:
         schema = json.load(s)
         schemas.append(schema)
@@ -71,38 +85,26 @@ def get_schemas():
       print('Unable to load %s: %s' % (f, str(e)))
   return schemas
 
+
 def validate_metadata(item, schemas):
-  '''Given an item and a set of schemas, validate the item against the 
-  schemas. Add the full results to the metadata_grid and return a map of 
+  '''Given an item and a set of schemas, validate the item against the
+  schemas. Add the full results to the metadata_grid and return a map of
   errors, warnings, and infos for any active ontologies.'''
   global metadata_grid
 
   ont_id = item['id']
-
-  # these lists will be displayed on the console
+  # these lists will be displayed on the console:
   errors = []
   warnings = []
   infos = []
-  
-  # results are put into the metadata grid
+  # these results are put into the metadata grid:
   results = {}
 
-  # determine how to sort this item in the grid
-  if 'in_foundry_order' in item and item['in_foundry_order'] == 1:
-    results['foundry'] = True
-  else:
-    results['foundry'] = False
-
-  if 'is_obsolete' in item and item['is_obsolete'] == True:
-    results['obsolete'] = True
-  else:
-    results['obsolete'] = False
-
-  if 'activity_status' in item:
-    results['ontology_status'] = item['activity_status']
-  else:
-    # if there is no status, put them at the bottom with inactive
-    results['ontology_status'] = 'inactive'
+  # determine how to sort this item in the grid:
+  results['foundry'] = True if item.get('in_foundry_order') == 1 else False
+  results['obsolete'] = True if item.get('is_obsolete') is True else False
+  # if there is no status, put them at the bottom with inactive:
+  results['ontology_status'] = item['activity_status'] if 'activity_status' in item else 'inactive'
 
   has_error = False
   has_warn = False
@@ -129,33 +131,32 @@ def validate_metadata(item, schemas):
 
       # these cases will not cause test failure and will not be logged
       # the results are just added to the metadata grid:
-      # - orphaned ontology on contact or license chekck
+      # - orphaned ontology on contact or license check
       # - inactive ontology
       # - obsolete ontology
       # - ontology annotated with `validate: false`
-      if 'activity_status' in item \
-          and item['activity_status'] == 'orphaned':
-          if title == 'contact' or title == 'license' or title == 'license-lite':
-            continue
-      if ('is_obsolete' in item and item['is_obsolete'] is True) \
-      or ('activity_status' in item \
-        and item['activity_status'] == 'inactive') \
-      or ('validate' in item and item['validate'] is False):
+      if item.get('activity_status') == 'orphaned' and \
+         title in ['contact', 'license', 'license-lite']:
+        continue
+      if item.get('is_obsolete') is True or item.get('activity_status') == 'inactive' \
+         or item.get('validate') is False:
         continue
 
       # get a message for displaying on terminal
       msg = ve.message
-      if title == 'license' or title == 'license-lite':
+      if title in ['license', 'license-lite']:
         # license error message can show up in a few different ways
         search = re.search('\'(.+?)\' is not one of', msg)
         if search:
           msg = '\'%s\' is not a recommended license' % search.group(1)
-        search = re.search('({\'label\'.+?\'url\'.+?}) is not valid', msg)
-        if search:
-          format_license_msg(search.group(1))
-        search = re.search('({\'url\'.+?\'label\'.+?}) is not valid', msg)
-        if search:
-          format_license_msg(search.group(1))
+        else:
+          search = re.search('({\'label\'.+?\'url\'.+?}) is not valid', msg)
+          if search:
+            msg = format_license_msg(search.group(1))
+          else:
+            search = re.search('({\'url\'.+?\'label\'.+?}) is not valid', msg)
+            if search:
+              msg = format_license_msg(search.group(1))
 
       # format the message with the ontology ID
       msg = '%s %s: %s' % (ont_id.upper(), title, msg)
@@ -184,6 +185,7 @@ def validate_metadata(item, schemas):
 
   return {'error': errors, 'warn': warnings, 'info': infos}
 
+
 def format_license_msg(substr):
   '''Format an exception message for a license issue.'''
   # process to dict
@@ -192,139 +194,81 @@ def format_license_msg(substr):
   label = d['label']
   return '\'{0}\' <{1}> is not a recommended license'.format(label, url)
 
+
 def update_results(results, add):
-  '''Given a map of results for all ontologies and a map of results to add, 
+  '''Given a map of results for all ontologies and a map of results to add,
   append the results to the lists in the map.'''
-  res_errors = results['error']
-  res_warns = results['warn']
-  res_infos = results['info']
-  results['error'] = res_errors + add['error']
-  results['warn'] = res_warns + add['warn']
-  results['info'] = res_infos + add['info']
+  results['error'] = results['error'] + add['error']
+  results['warn'] = results['warn'] + add['warn']
+  results['info'] = results['info'] + add['info']
   return results
 
+
 def sort_grid(metadata_grid):
-  '''Given a metadata grid as a map, sort the grid based on:
-     1. Foundry status
-     2. Ontology activity status
-     3. Validation status
-     4. Alphabetical
-  Return a sorted list of IDs.'''
-  pass_foundry = []
-  info_foundry = []
-  warn_foundry = []
-  fail_foundry = []
-  pass_active = []
-  info_active = []
-  warn_active = []
-  fail_active = []
-  pass_orphaned = []
-  info_orphaned = []
-  warn_orphaned = []
-  fail_orphaned = []
-  pass_inactive = []
-  info_inactive = []
-  warn_inactive = []
-  fail_inactive = []
-  pass_obsolete = []
-  info_obsolete = []
-  warn_obsolete = []
-  fail_obsolete = []
+  """
+  Given a metadata grid as a map, sort the grid based on:
+  1. Foundry status
+  2. Ontology activity status
+  3. Validation status
+  4. Alphabetical
+  Return a sorted list of IDs.
+  """
+  foundry = {'PASS': [], 'INFO': [], 'WARN': [], 'FAIL': []}
+  active = {'PASS': [], 'INFO': [], 'WARN': [], 'FAIL': []}
+  orphaned = {'PASS': [], 'INFO': [], 'WARN': [], 'FAIL': []}
+  inactive = {'PASS': [], 'INFO': [], 'WARN': [], 'FAIL': []}
+  obsolete = {'PASS': [], 'INFO': [], 'WARN': [], 'FAIL': []}
 
   for ont_id, results in metadata_grid.items():
     # get the info about the ontology to sort on
-    foundry = results['foundry']
-    obsolete = results['obsolete']
     ontology_status = results['ontology_status']
     validation_status = results['validation_status']
 
     # foundry ontologies are displayed first
     # they must be active
-    if foundry:
-      if validation_status == 'PASS':
-        pass_foundry.append(ont_id)
-      elif validation_status == 'INFO':
-        info_foundry.append(ont_id)
-      elif validation_status == 'WARN':
-        warn_foundry.append(ont_id)
-      elif validation_status == 'FAIL':
-        fail_foundry.append(ont_id)
+    if results['foundry']:
+      foundry[validation_status].append(ont_id)
       continue
 
     # obsolete ontologies are displayed last
     # they are always inactive
     # (inactive does not mean obsolete)
-    if obsolete:
-      if validation_status == 'PASS':
-        pass_obsolete.append(ont_id)
-      elif validation_status == 'INFO':
-        info_obsolete.append(ont_id)
-      elif validation_status == 'WARN':
-        warn_obsolete.append(ont_id)
-      elif validation_status == 'FAIL':
-        fail_obsolete.append(ont_id)
+    if results['obsolete']:
+      obsolete[validation_status].append(ont_id)
       continue
 
     # finally, sort by: active, orphaned, inactive
     if ontology_status == 'active':
-      if validation_status == 'PASS':
-        pass_active.append(ont_id)
-      elif validation_status == 'INFO':
-        info_active.append(ont_id)
-      elif validation_status == 'WARN':
-        warn_active.append(ont_id)
-      elif validation_status == 'FAIL':
-        fail_active.append(ont_id)
+      active[validation_status].append(ont_id)
     elif ontology_status == 'orphaned':
-      if validation_status == 'PASS':
-        pass_orphaned.append(ont_id)
-      elif validation_status == 'INFO':
-        info_orphaned.append(ont_id)
-      elif validation_status == 'WARN':
-        warn_orphaned.append(ont_id)
-      elif validation_status == 'FAIL':
-        fail_orphaned.append(ont_id)
+      orphaned[validation_status].append(ont_id)
     elif ontology_status == 'inactive':
-      if validation_status == 'PASS':
-        pass_inactive.append(ont_id)
-      elif validation_status == 'INFO':
-        info_inactive.append(ont_id)
-      elif validation_status == 'WARN':
-        warn_inactive.append(ont_id)
-      elif validation_status == 'FAIL':
-        fail_inactive.append(ont_id)
+      inactive[validation_status].append(ont_id)
 
-  # concat a sorted list
-  sort = sort_list(pass_foundry) + sort_list(info_foundry) \
-         + sort_list(warn_foundry) + sort_list(fail_foundry) \
-         + sort_list(pass_active) + sort_list(info_active) \
-         + sort_list(warn_active) + sort_list(fail_active) \
-         + sort_list(pass_orphaned) + sort_list(info_orphaned) \
-         + sort_list(warn_orphaned) + sort_list(fail_orphaned) \
-         + sort_list(pass_inactive) + sort_list(info_inactive) \
-         + sort_list(warn_inactive) + sort_list(fail_inactive) \
-         + sort_list(pass_obsolete) + sort_list(info_obsolete) \
-         + sort_list(warn_obsolete) + sort_list(fail_obsolete)
+  # concatenate everything to a sorted list:
+  def sort_list(arr):
+    arr.sort(key=str.lower)
+    if not arr:
+      return []
+    return arr
+
+  sort = []
+  for ont_type in [foundry, active, orphaned, inactive, obsolete]:
+    for v_status in ['PASS', 'INFO', 'WARN', 'FAIL']:
+      sort = sort + sort_list(ont_type[v_status])
 
   return sort
 
-def sort_list(arr):
-  '''Given an array, sort the list. If the list is empty, return an empty list 
-  (instead of None).'''
-  arr.sort(key=str.lower)
-  if not arr:
-    return []
-  return arr
 
-def save_grid(metadata_grid, headers, grid_file):
-  '''Given a metadata grid of all results and a grid file to write to, create 
+def save_grid(metadata_grid, headers, grid_outfile):
+  '''Given a metadata grid of all results and a grid file to write to, create
   a sorted table of the full results.'''
-  if '.csv' in grid_file:
+  if '.csv' in grid_outfile:
     separator = ','
-  elif '.tsv' or '.txt' in grid_file:
+  elif '.tsv' or '.txt' in grid_outfile:
     separator = '\t'
   else:
-    print('Grid file must be CSV, TSV, or TXT')
+    print('Grid file must be CSV, TSV, or TXT', file=sys.stderr)
     return
 
   # Determine order of ontologies based on statuses
@@ -338,15 +282,12 @@ def save_grid(metadata_grid, headers, grid_file):
     header += separator + h
   header += '\n'
 
-  with open(grid_file, 'w') as f:
+  with open(grid_outfile, 'w') as f:
     f.write(header)
     for ont_id in sort_order:
       results = metadata_grid[ont_id]
-      s = '{1}{0}{2}{0}{3}'.format(
-        separator, 
-        ont_id, 
-        results['ontology_status'], 
-        results['validation_status'])
+      s = '{1}{0}{2}{0}{3}'.format(separator, ont_id, results['ontology_status'],
+                                   results['validation_status'])
       if ont_id == 'vario':
         print(headers)
         print(results)
@@ -368,7 +309,8 @@ def save_grid(metadata_grid, headers, grid_file):
       s += '\n'
       f.write(s)
 
-  print('Full validation results written to %s' % grid_file)
+  print('Full validation results written to %s' % grid_outfile)
+
 
 def print_results(results):
   '''Given a map of results, log results on the console.'''
@@ -376,22 +318,23 @@ def print_results(results):
     for m in messages:
       print('%s\t%s' % (level.upper(), m))
 
-def save_results(results, output_file):
-  '''Given a map of results and an output file to write to, write each result 
+
+def save_results(results, violations_outfile):
+  '''Given a map of results and an output file to write to, write each result
   on a line.'''
-  if '.csv' in output_file:
+  if '.csv' in violations_outfile:
     separator = ','
-  elif '.tsv' or '.txt' in output_file:
+  elif '.tsv' or '.txt' in violations_outfile:
     separator = '\t'
   else:
-    print('Output file must be CSV, TSV, or TXT')
+    print('Output file must be CSV, TSV, or TXT', file=sys.stderr)
     return
-  with open(output_file, 'w') as f:
+  with open(violations_outfile, 'w') as f:
     f.write('Level%sMessage\n' % separator)
     for level, messages in results.items():
       for m in messages:
         f.write('%s%s%s\n' % (level.upper(), separator, m))
 
-# run the process!
+
 if __name__ == '__main__':
-  validate(sys.argv)
+  main(sys.argv)
