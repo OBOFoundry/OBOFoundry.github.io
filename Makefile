@@ -50,7 +50,7 @@ test: reports/metadata-grid.html _config.yml
 integration-test: test valid-purl-report.txt
 
 clean:
-	rm -Rf _config.yml registry/ontologies.jsonld registry/ontologies.nt registry/ontologies.ttl registry/ontologies.yml registry/publications.md _site/ tmp/
+	rm -Rf _config.yml registry/ontologies.jsonld registry/ontologies.nt registry/ontologies.ttl registry/ontologies.yml registry/publications.md sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
 
 
 ### Directories:

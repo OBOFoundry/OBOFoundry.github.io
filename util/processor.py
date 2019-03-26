@@ -28,7 +28,8 @@ def main():
   parser_n = subparsers.add_parser('check-urls', help='Ensure PURLs resolve')
   parser_n.set_defaults(function=check_urls)
 
-  parser_n = subparsers.add_parser('sparql-compare', help='WRITE SOMETHING HERE')
+  parser_n = subparsers.add_parser('sparql-compare', help='Run SPARQL commands against the db to generate a '
+                                   'consistency report')
   parser_n.set_defaults(function=sparql_compare_all)
 
   parser_n = subparsers.add_parser('extract-context', help='Extracts JSON-LD context')
@@ -59,17 +60,20 @@ def check_urls(ontologies, args):
   Ensure PURLs resolve
   """
   def test_url(url):
-    if (url.startswith("ftp:")):
-      # TODO: requests lib doesn't handle ftp
+    try:
+      with closing(requests.get(url, stream=False)) as resp:
+        return resp.status_code == 200
+    except requests.exceptions.InvalidSchema as e:
+      # TODO: requests lib doesn't handle ftp. For now simply return True in that case.
+      if not format(e).startswith("No connection adapters were found for 'ftp:"):
+        raise
       return True
-    with closing(requests.get(url, stream=False)) as resp:
-      return resp.status_code == 200
 
   failed_ids = []
   for ont in ontologies:
     for p in ont.get('products', []):
       pid = p['id']
-      if 'ontology_purl' in p and not test_url(p['ontology_purl']):
+      if not test_url(p.get('ontology_purl')):
         failed_ids.append(pid)
   if len(failed_ids) > 0:
     print("FAILURES:")
@@ -222,6 +226,12 @@ def sparql_compare_ont(obj):
 
 
 def sparql_compare_all(ontologies, args):
+  """
+  Run sparql_compare_ont() on all the given ontologies.
+  """
+  # The `args` parameter is not used here but it is convenient to have it in our definition, since
+  # whether this function or one of the other main `subcommands` of this script is called is
+  # determine dynamically, and we want all of the subcommands to have a consistent signature.
   for obj in ontologies:
     sparql_compare_ont(obj)
 

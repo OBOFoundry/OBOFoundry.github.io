@@ -35,7 +35,7 @@ def parse_table(input_grid):
   elif '.csv' in input_grid:
     delim = ','
   else:
-    print("Invalid file format: %s" % input_grid, file=sys.stderr)
+    print("Invalid file extension: %s" % input_grid, file=sys.stderr)
     sys.exit(1)
   reader = csv.reader(open(input_grid), delimiter=delim)
   headers = next(reader)

@@ -13,21 +13,21 @@ def main():
   subparsers = parser.add_subparsers(dest='subcommand', help='sub-command help')
 
   # SUBCOMMAND
-  parser_n = subparsers.add_parser('validate', help='validate yml inside md')
+  parser_n = subparsers.add_parser('validate', help='validate yaml inside md')
   # parser_n.add_argument('-d', '--depth', type=int, help='number of hops')
   parser_n.set_defaults(function=validate_markdown)
   parser_n.add_argument('files', nargs='*')
 
   # SUBCOMMAND
   parser_n = subparsers.add_parser('concat', help='concat ontology yamls')
-  parser_n.add_argument('-i', '--include', help='yml file to include for header')
-  parser_n.add_argument('-o', '--output', help='output yaml')
+  parser_n.add_argument('-i', '--include', help='yaml file to include for header')
+  parser_n.add_argument('-o', '--output', help='output yaml file')
   parser_n.set_defaults(function=concat_ont_yaml)
   parser_n.add_argument('files', nargs='*')
 
   # SUBCOMMAND
   parser_n = subparsers.add_parser('concat-principles', help='concat principles yamls')
-  parser_n.add_argument('-i', '--include', help='yml file to include for header')
+  parser_n.add_argument('-i', '--include', help='yaml file to include for header')
   parser_n.add_argument('-o', '--output', help='output yaml')
   parser_n.set_defaults(function=concat_principles_yaml)
   parser_n.add_argument('files', nargs='*')
