@@ -15,7 +15,7 @@ build:
   source_url: http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip
   path: archive
   method: archive
-tracker: https://github.com/EnvironmentOntology/envo/issues/
+tracker: https://github.com/EnvironmentOntology/gaz/issues
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY
