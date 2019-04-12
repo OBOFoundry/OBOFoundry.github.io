@@ -16,6 +16,7 @@ build:
   path: archive
   method: archive
 tracker: https://github.com/EnvironmentOntology/gaz/issues
+mailing_list: "https://groups.google.com/forum/#!forum/obo-gazetteer"
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY
