@@ -10,8 +10,9 @@ domain: development
 homepage: http://purl.obolibrary.org/obo/fbdv
 products:
   - id: fbdv.owl
+  - id: fbdv.obo
   - id: fbdv/fbdv-simple.owl
-  - id: fbdv/fbbt-simple.obo
+  - id: fbdv/fbdv-simple.obo
 taxon:
   id: NCBITaxon:7227
   label: Drosophila

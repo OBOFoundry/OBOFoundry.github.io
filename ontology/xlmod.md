@@ -14,8 +14,7 @@ mailing_list: psidev-ms-vocab@lists.sourceforge.net
 homepage: http://www.psidev.info/groups/controlled-vocabularies
 page: http://www.psidev.info/groups/controlled-vocabularies
 products:
-  - id: xl.obo
-  - id: xl.owl
+  - id: xlmod.obo
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC-BY
