@@ -575,7 +575,7 @@
                 "infallible": 0,
                 "method": "obo2owl",
                 "oort_args": "--no-reasoner",
-                "source_url": "ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.obo"
+                "source_url": "https://proconsortium.org/download/current/pro_nonreasoned.obo"
             },
             "contact": {
                 "email": "dan5@georgetown.edu",
@@ -586,9 +586,9 @@
             "development": {
                 "id_policy": "https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+PURLs"
             },
-            "documentation": "ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt",
+            "documentation": "https://proconsortium.org/download/current/pro_readme.txt",
             "domain": "proteins",
-            "homepage": "http://proconsortium.org/pro",
+            "homepage": "http://proconsortium.org",
             "id": "pr",
             "in_foundry_order": 1,
             "layout": "ontology_detail",
@@ -614,7 +614,7 @@
             ],
             "publications": [
                 {
-                    "id": "https://proconsortium.org/pro/pro_dsmnt.shtml#publication",
+                    "id": "https://proconsortium.org/pro_dsmnt.shtml#publication",
                     "title": "Publications & Dissemination"
                 }
             ],
@@ -998,6 +998,10 @@
                 {
                     "id": "bspo.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/bspo.owl"
+                },
+                {
+                    "id": "bspo.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/bspo.obo"
                 }
             ],
             "publications": [
@@ -1244,6 +1248,12 @@
                     "id": "cl/cl-basic.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/cl/cl-basic.obo",
                     "title": "Basic CL"
+                },
+                {
+                    "description": "complete CL but with no imports or external axioms",
+                    "id": "cl/cl-base.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/cl/cl-base.owl",
+                    "title": "CL base module"
                 }
             ],
             "taxon": {
@@ -2408,12 +2418,16 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/fbdv.owl"
                 },
                 {
+                    "id": "fbdv.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbdv.obo"
+                },
+                {
                     "id": "fbdv/fbdv-simple.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl"
                 },
                 {
-                    "id": "fbdv/fbbt-simple.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/fbdv/fbbt-simple.obo"
+                    "id": "fbdv/fbdv-simple.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo"
                 }
             ],
             "taxon": {
@@ -2647,6 +2661,7 @@
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
+            "mailing_list": "https://groups.google.com/forum/#!forum/obo-gazetteer",
             "ontology_purl": "http://purl.obolibrary.org/obo/gaz.owl",
             "products": [
                 {
@@ -2659,7 +2674,7 @@
                 }
             ],
             "title": "Gazetteer",
-            "tracker": "https://github.com/EnvironmentOntology/envo/issues/"
+            "tracker": "https://github.com/EnvironmentOntology/gaz/issues"
         },
         {
             "activity_status": "active",
@@ -5149,6 +5164,13 @@
         },
         {
             "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "RNAO",
+                    "title": "RNA Ontology jOWL Browser",
+                    "url": "http://bgsu-rna.github.io/rnao/"
+                }
+            ],
             "build": {
                 "checkout": "git clone https://github.com/BGSU-RNA/rnao.git",
                 "method": "vcs",
@@ -5179,7 +5201,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/rnao.obo"
                 }
             ],
-            "title": "RNA ontology"
+            "title": "RNA ontology",
+            "tracker": "https://github.com/BGSU-RNA/rnao/issues"
         },
         {
             "activity_status": "active",
@@ -5451,6 +5474,7 @@
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
+            "mailing_list": "https://sourceforge.net/p/song/mailman/song-devel/",
             "ontology_purl": "http://purl.obolibrary.org/obo/so.owl",
             "page": "https://en.wikipedia.org/wiki/Sequence_Ontology",
             "products": [
@@ -6521,12 +6545,8 @@
             "page": "http://www.psidev.info/groups/controlled-vocabularies",
             "products": [
                 {
-                    "id": "xl.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/xl.obo"
-                },
-                {
-                    "id": "xl.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/xl.owl"
+                    "id": "xlmod.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/xlmod.obo"
                 }
             ],
             "title": "HUPO-PSI cross-linking and derivatization reagents controlled vocabulary"
@@ -6964,33 +6984,6 @@
                 "label": "Anopheles"
             },
             "title": "Mosquito insecticide resistance",
-            "validate": false
-        },
-        {
-            "activity_status": "active",
-            "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/HUPO-PSI/gelml/master/CV/sep.obo"
-            },
-            "contact": {
-                "email": "psidev-gps-dev@lists.sourceforge.net",
-                "label": "SEP developers via the PSI and MSI mailing lists"
-            },
-            "description": "A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments.",
-            "domain": "provenance",
-            "homepage": "http://psidev.info/index.php?q=node/312",
-            "id": "sep",
-            "layout": "ontology_detail",
-            "ontology_purl": "http://purl.obolibrary.org/obo/sep.owl",
-            "page": "http://psidev.info/index.php?q=node/312",
-            "products": [
-                {
-                    "id": "sep.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/sep.owl"
-                }
-            ],
-            "title": "Sample processing and separation techniques",
             "validate": false
         },
         {
@@ -7941,6 +7934,32 @@
                 "label": "Homo sapiens"
             },
             "title": "Subcellular anatomy ontology"
+        },
+        {
+            "activity_status": "inactive",
+            "build": {
+                "insert_ontology_id": true,
+                "method": "obo2owl",
+                "source_url": "https://raw.githubusercontent.com/HUPO-PSI/gelml/master/CV/sep.obo"
+            },
+            "contact": {
+                "email": "psidev-gps-dev@lists.sourceforge.net",
+                "label": "SEP developers via the PSI and MSI mailing lists"
+            },
+            "description": "A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments.",
+            "domain": "provenance",
+            "homepage": "http://psidev.info/index.php?q=node/312",
+            "id": "sep",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "page": "http://psidev.info/index.php?q=node/312",
+            "products": [
+                {
+                    "id": "sep.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/sep.owl"
+                }
+            ],
+            "title": "Sample processing and separation techniques"
         },
         {
             "activity_status": "inactive",
