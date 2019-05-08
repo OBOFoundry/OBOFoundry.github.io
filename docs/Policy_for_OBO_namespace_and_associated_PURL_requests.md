@@ -47,7 +47,7 @@ Note that we recommend you set up an ontology repository in GitHub using the [On
 
 The requests proceeds in 2 steps:
 
-  1. First send an email to [obo-discuss](mailto:obo-discuss@lists.sourceforge.net) with your request to allow community feedback (you may need to [register](https://lists.sourceforge.net/lists/listinfo/obo-discuss) first)
+  1. First send an email to [obo-discuss](mailto:obo-discuss@googlegroups.com) with your request to allow community feedback (you may need to [register](https://lists.sourceforge.net/lists/listinfo/obo-discuss) first)
 
   1. Submit your request to [our tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues)
 
