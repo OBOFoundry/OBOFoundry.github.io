@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: mondo
 label: MONDO
-title: Monarch Disease Ontology
+title: Mondo Disease Ontology
 description: An ontology that harmonizes multiple disease resources.
 homepage: https://github.com/monarch-initiative/mondo
 license:
@@ -31,7 +31,7 @@ products:
    is_canonical: true
  - id: mondo.obo
    title: obo-format edition
-   description: As OWL, but omits equivalence axioms. xrefs can be used as proxy for equivalence. Uses MONDO IDs
+   description: As OWL, but omits equivalence axioms. xrefs can be used as proxy for equivalence. Uses Mondo IDs
    format: obo
    derived_from: mondo.owl
  - id: mondo.json
@@ -57,9 +57,9 @@ products:
 activity_status: active
 ---
 
-MONDO (Monarch Disease Ontology) is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology. Original versions of MONDO were constructed entirely automatically and used the IDs of source databases and ontologies. Later, additional manually curated cross-ontology axioms were added, and a native MONDO ID system was used to avoid confusion with source databases.
+The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. It is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology. Original versions of Mondo were constructed entirely automatically and used the IDs of source databases and ontologies. Later, additional manually curated cross-ontology axioms were added, and a native Mondo ID system was used to avoid confusion with source databases.
 
-One feature of MONDO is that it goes beyond loose xrefs. It curated precise 1:1 equivalence axioms connecting to other resources, validated by OWL reasoning. This means it is safe to propagate across these from OMIM, Orphanet, EFO, DOID (soon NCIT).
+One feature of Mondo is that it goes beyond loose xrefs. It curated precise 1:1 equivalence axioms connecting to other resources, validated by OWL reasoning. This means it is safe to propagate across these from OMIM, Orphanet, EFO, DOID (soon NCIT).
 
 These precise mappings are available in two ways depending on the format
 
