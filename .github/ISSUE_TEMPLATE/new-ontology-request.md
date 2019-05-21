@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-Please fill in the values here to the best of your abilities:
+Use this form for registering a new ontology with OBO. Consult the FAQ on http://obofoundry.org with any questions. Please fill in the values here to the best of your abilities:
 
 ```
 ---
@@ -18,6 +18,8 @@ homepage: URL
 license:
   url: http://creativecommons.org/licenses/by/4.0/
 tracker: GITHUB TRACKER URL
+source_url: URL THAT RESOLVES TO OWL FOR YOUR ONTOLOGY
+notes: ANY ADDITIONAL NOTES
 ---
 
 ENTER A DETAILED DESCRIPTION OF YOUR ONTOLOGY HERE
