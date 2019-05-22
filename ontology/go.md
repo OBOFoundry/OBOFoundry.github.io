@@ -8,7 +8,7 @@ contact:
   label: Suzi Aleksander
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0 
+  label: CC BY 4.0
 label: GO
 description: An ontology for describing the function of genes and gene products
 title: Gene Ontology
