@@ -103,7 +103,7 @@ ontologies:
 - activity_status: active
   browsers:
   - {label: AmiGO, title: Gene Ontology AmiGO 2 Browser, url: 'http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab'}
-  contact: {email: david.hill@jax.org, github: ukemi, label: David Hill}
+  contact: {email: suzia@stanford.edu, label: Suzi Aleksander}
   dependencies:
   - {id: uberon, subset: go/extensions/uberon_import.owl}
   - {id: cl, subset: go/extensions/cl_import.owl}
@@ -130,8 +130,8 @@ ontologies:
   integration_server: http://build.berkeleybop.org/view/GO
   label: GO
   layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  license: {label: CC BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/go.owl
   products:
   - {description: The main ontology in OWL. This is self contained and does not have
@@ -1278,8 +1278,8 @@ ontologies:
   homepage: http://environmentontology.github.io/gaz/
   id: gaz
   layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'https://creativecommons.org/licenses/by/4.0/'}
+  license: {label: CC0 1.0 Universal, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
+    url: 'https://creativecommons.org/publicdomain/zero/1.0/'}
   mailing_list: https://groups.google.com/forum/#!forum/obo-gazetteer
   ontology_purl: http://purl.obolibrary.org/obo/gaz.owl
   products:
@@ -1750,7 +1750,7 @@ ontologies:
       MONDO IDs.', format: owl-rdf/xml, id: mondo.owl, is_canonical: true, ontology_purl: 'http://purl.obolibrary.org/obo/mondo.owl',
     title: Main OWL edition}
   - {derived_from: mondo.owl, description: 'As OWL, but omits equivalence axioms.
-      xrefs can be used as proxy for equivalence. Uses MONDO IDs', format: obo, id: mondo.obo,
+      xrefs can be used as proxy for equivalence. Uses Mondo IDs', format: obo, id: mondo.obo,
     ontology_purl: 'http://purl.obolibrary.org/obo/mondo.obo', title: obo-format edition}
   - {derived_from: mondo.owl, description: Equivalent to the OWL edition, format: obo,
     id: mondo.json, ontology_purl: 'http://purl.obolibrary.org/obo/mondo.json', title: json
@@ -1768,7 +1768,7 @@ ontologies:
     ontology_purl: 'http://purl.obolibrary.org/obo/mondo/subsets/mondo-minimal.json',
     title: Minimal JSON edition.}
   taxon: {id: 'NCBITaxon:33208', label: Metazoa}
-  title: Monarch Disease Ontology
+  title: Mondo Disease Ontology
   tracker: https://github.com/monarch-initiative/mondo-build/issues
 - activity_status: active
   build: {method: owl2obo, source_url: 'https://raw.githubusercontent.com/rsc-ontologies/rxno/master/mop.owl'}
@@ -2510,6 +2510,26 @@ ontologies:
   taxon: {id: 'NCBITaxon:33090', label: Viridiplantae}
   title: Plant Phenology Ontology
   tracker: https://github.com/PlantPhenoOntology/PPO/issues
+- activity_status: active
+  build: {checkout: 'https://github.com/Display-Lab/psdo.git', path: ., system: git}
+  contact: {email: zachll@umich.edu, label: Zach Landis-Lewis}
+  dependencies:
+  - {id: stato}
+  - {id: iao}
+  - {id: bfo}
+  - {id: ro}
+  description: Ontology to reproducibly study visualizations of clinical performance
+  domain: learning systems
+  homepage: https://github.com/Display-Lab/psdo
+  id: psdo
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/psdo.owl
+  products:
+  - {id: psdo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/psdo.owl'}
+  title: Performance Summary Display Ontology
+  tracker: https://github.com/Display-Lab/psdo/issues
 - activity_status: active
   browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=PW:0000001'}

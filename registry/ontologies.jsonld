@@ -192,9 +192,8 @@
                 }
             ],
             "contact": {
-                "email": "david.hill@jax.org",
-                "github": "ukemi",
-                "label": "David Hill"
+                "email": "suzia@stanford.edu",
+                "label": "Suzi Aleksander"
             },
             "dependencies": [
                 {
@@ -245,9 +244,9 @@
             "label": "GO",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/go.owl",
             "products": [
@@ -2657,9 +2656,9 @@
             "id": "gaz",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
+                "label": "CC0 1.0 Universal",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "mailing_list": "https://groups.google.com/forum/#!forum/obo-gazetteer",
             "ontology_purl": "http://purl.obolibrary.org/obo/gaz.owl",
@@ -3602,7 +3601,7 @@
                 },
                 {
                     "derived_from": "mondo.owl",
-                    "description": "As OWL, but omits equivalence axioms. xrefs can be used as proxy for equivalence. Uses MONDO IDs",
+                    "description": "As OWL, but omits equivalence axioms. xrefs can be used as proxy for equivalence. Uses Mondo IDs",
                     "format": "obo",
                     "id": "mondo.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/mondo.obo",
@@ -3645,7 +3644,7 @@
                 "id": "NCBITaxon:33208",
                 "label": "Metazoa"
             },
-            "title": "Monarch Disease Ontology",
+            "title": "Mondo Disease Ontology",
             "tracker": "https://github.com/monarch-initiative/mondo-build/issues"
         },
         {
@@ -5110,6 +5109,51 @@
             },
             "title": "Plant Phenology Ontology",
             "tracker": "https://github.com/PlantPhenoOntology/PPO/issues"
+        },
+        {
+            "activity_status": "active",
+            "build": {
+                "checkout": "https://github.com/Display-Lab/psdo.git",
+                "path": ".",
+                "system": "git"
+            },
+            "contact": {
+                "email": "zachll@umich.edu",
+                "label": "Zach Landis-Lewis"
+            },
+            "dependencies": [
+                {
+                    "id": "stato"
+                },
+                {
+                    "id": "iao"
+                },
+                {
+                    "id": "bfo"
+                },
+                {
+                    "id": "ro"
+                }
+            ],
+            "description": "Ontology to reproducibly study visualizations of clinical performance",
+            "domain": "learning systems",
+            "homepage": "https://github.com/Display-Lab/psdo",
+            "id": "psdo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/psdo.owl",
+            "products": [
+                {
+                    "id": "psdo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/psdo.owl"
+                }
+            ],
+            "title": "Performance Summary Display Ontology",
+            "tracker": "https://github.com/Display-Lab/psdo/issues"
         },
         {
             "activity_status": "active",
