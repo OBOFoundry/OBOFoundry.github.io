@@ -6,7 +6,7 @@ title: Policy_for_OBO_namespace_and_associated_PURL_requests
 
 **This policy has been formally adopted on April 19th 2013. Do not edit this page without consulting with the OBO Technical group.**
 **Change adopted March 2017 to add obsolete metadata to non-maintained PURLs. See issue https://github.com/OBOFoundry/OBOFoundry.github.io/issues/344.**
-Comments to [obo-discuss@lists.sourceforge.net](mailto:obo-discuss@lists.sourceforge.net)
+Comments to [obo-discuss@googlegroups.com](mailto:obo-discuss@googlegroups.com)
 
 # Background
 
@@ -47,7 +47,7 @@ Note that we recommend you set up an ontology repository in GitHub using the [On
 
 The requests proceeds in 2 steps:
 
-  1. First send an email to [obo-discuss](mailto:obo-discuss@lists.sourceforge.net) with your request to allow community feedback (you may need to [register](https://lists.sourceforge.net/lists/listinfo/obo-discuss) first)
+  1. First send an email to [obo-discuss](mailto:obo-discuss@googlegroups.com) with your request to allow community feedback (you may need to [apply to join group](https://groups.google.com/forum/#!forum/obo-discuss) first.)
 
   1. Submit your request to [our tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues)
 
