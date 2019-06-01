@@ -34,6 +34,8 @@
 
 [Karma Data Integration](http://usc-isi-i2.github.io/karma/): A data integration tool.
 
+[Ontofox](http://ontofox.hegroup.org/): An ontology term and relation extraction and reuse tool.
+
 ## Relevant Publications/blogs
 MIRO: guidelines for minimum information for the reporting of an ontology by Nicolas Matentzoglu, James Malone, Chris Mungall and Robert Stevens, Journal of Biomedical Semantics20189:6, https://doi.org/10.1186/s13326-017-0172-7
 
