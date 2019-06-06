@@ -65,24 +65,32 @@ Another other significant information that you'd like to let us know.
 
 
 
+```
 ---
-id: ONTOLOGY ID SPACE E.g. obi
+layout: ontology_detail
+id: ONTOLOGY IDSPACE (LOWERCASE) E.g. obi
 title: FULL NAME E.g. Ontology of Biomedical Investigations
 description: BRIEF ONE SENTENCE DESCRIPTION OF YOUR ONTOLOGY
 homepage: URL
+contact:
+  label: CONTACT NAME
+  email: CONTACT EMAIL
 license:
+  label: CC-BY 4.0
   url: http://creativecommons.org/licenses/by/4.0/
-tracker: GITHUB TRACKER URL
+tracker: TRACKER URL
 source_url: URL THAT RESOLVES TO OWL FOR YOUR ONTOLOGY
-formats: Note that OWL-RDF/XML is the only required format.
-domain: E.g. the GO covers the processes, functions and cellular locations of gene products
+products:
+  - id: IDSPACE.owl
+    title: IDSPACE
+domain: E.g. OBI is an integrated ontology for the description of life-science and clinical investigations
 related: I.e. what other ontologies are you aware of that intersect with your domain, if any?
 use: Is your ontology serving the need of one or more specific projects? If so, please describe them.
-upstreams: Which resources, if any, were used to generate the ontology (e.g., NCBITaxon was created from the NCBI taxonomy resource: the Protein Ontology uses, in part, UniProtKB).
+upstreams: Which resources, if any, were used to generate the ontology (e.g., NCBITaxon was created from the NCBI taxonomy resource; the Protein Ontology uses, in part, UniProtKB).
 notes: ANY ADDITIONAL NOTES
+activity_status: active
 ---
 
 ENTER A DETAILED DESCRIPTION OF YOUR ONTOLOGY HERE
-You can use markdown format
-
+You can use Markdown format
 ```
