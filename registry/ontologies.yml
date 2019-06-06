@@ -1393,6 +1393,21 @@ ontologies:
   - {id: hsapdv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/hsapdv.obo'}
   title: Human Developmental Stages
 - activity_status: active
+  contact: {email: aellenhicks@gmail.com, label: Amanda Hicks}
+  description: An ontology for representing clinical data about hypertension, intended
+    to support classification of patients according to various diagnostic guidelines
+  homepage: https://github.com/aellenhicks/htn_owl
+  id: htn
+  layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/4.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/htn.owl
+  products:
+  - {id: htn.owl, ontology_purl: 'http://purl.obolibrary.org/obo/htn.owl', title: HTN}
+  source_url: https://raw.githubusercontent.com/aellenhicks/htn_owl/master/htn.owl
+  title: Hypertension Ontology
+  tracker: https://github.com/aellenhicks/htn_owl/issues
+- activity_status: active
   build: {method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/iao.owl'}
   contact: {email: jiezheng@pennmedicine.upenn.edu, github: zhengj2007, label: Jie
       Zheng}
