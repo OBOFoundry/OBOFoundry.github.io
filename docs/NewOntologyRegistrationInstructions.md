@@ -4,7 +4,7 @@ id: NewOntologyRegistrationInstructions
 title: NewOntologyRegistrationInstructions
 ---
 
-This page provides guidance for filling out the tracker item to register a new ontology with the OBO Foundry (found [here](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new/choose)).
+This page provides guidance for filling out the tracker item to register a new ontology with the OBO Foundry (found [here](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new/choose)). With the exception of the "Additional comments" question, all fields are required.
 
 Note that joining the OBO Foundry includes a commitment to follow Foundry principles. In addition to obtaining basic information about your ontology, the questions are meant to highlight these principles, provide our expectations, and assess commitment for joining the OBO Foundry. The answers also help us identify the right person to review your PURL request.
 
