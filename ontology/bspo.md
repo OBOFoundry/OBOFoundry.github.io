@@ -10,6 +10,7 @@ domain: anatomy
 homepage: https://github.com/obophenotype/biological-spatial-ontology
 products:
   - id: bspo.owl
+  - id: bspo.obo
 title: Biological Spatial Ontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/

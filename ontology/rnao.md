@@ -9,6 +9,10 @@ license:
   label: CC-0
 domain: molecular structure
 homepage: https://github.com/bgsu-rna/rnao
+browsers:
+  - label: RNAO
+    title: RNA Ontology jOWL Browser
+    url: http://bgsu-rna.github.io/rnao/
 products:
   - id: rnao.owl
   - id: rnao.obo
@@ -18,6 +22,7 @@ build:
   checkout: git clone https://github.com/BGSU-RNA/rnao.git
   system: git
   method: vcs
+tracker: https://github.com/BGSU-RNA/rnao/issues
 activity_status: active
 ---
 

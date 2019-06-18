@@ -52,6 +52,9 @@ products:
    title: Basic CL
    description: Basic version, no inter-ontology axioms
    format: obo
+ - id: cl/cl-base.owl
+   title: CL base module
+   description: complete CL but with no imports or external axioms
 usages:
  - user: https://www.encodeproject.org/
    seeAlso: https://www.biosharing.org/biodbcore-000034
