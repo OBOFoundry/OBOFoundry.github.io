@@ -19,35 +19,49 @@
 # Run `make` in this directory to update all generated files
 # (i.e. the default `all` task).
 # Make does its best to detect changes and run only the required tasks,
-# but sometimes it helps to delete the target files first.
+# but sometimes it helps to delete the target files first by running `make clean`
 #
 # WARNING: Makefiles contain significant tab characters!
-# Ensure that your editor shows tab characters before editing this file.
+# Before editing this file, ensure that your editor is not set up to convert tabs
+# to spaces, and then use tabs to indent recipe lines.
 
 
 ### Configuration
 
 # All ontology .md files
-ONTS := $(wildcard ontology/*md)
+ONTS := $(wildcard ontology/*.md)
 
-# All principles .md file
-PRINCIPLES := $(wildcard principles/*md)
+# All principles .md files
+PRINCIPLES := $(wildcard principles/*.md)
 
 
 ### Main Tasks
+.PHONY: all pull_and_build test pull clean
 
-all: yml registry/ontologies.ttl registry/publications.md registry/obo_context.jsonld
-
-pull_and_build: pull all
-
-yml: _config.yml registry/ontologies.yml
-
-test: validate yml
-
-integration-test: test valid-purl-report.txt
+all: _config.yml registry/ontologies.ttl registry/publications.md registry/obo_context.jsonld
 
 pull:
 	git pull
+
+pull_and_build: pull all
+
+test: reports/metadata-grid.html _config.yml
+
+integration-test: test valid-purl-report.txt
+
+# Remove and/or revert all targets to their repository versions:
+clean:
+	rm -Rf registry/ontologies.nt registry/ontologies.ttl registry/ontologies.yml registry/publications.md sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
+	git checkout _config.yml registry/ontologies.jsonld registry/ontologies.ttl registry/ontologies.yml registry/publications.md
+
+
+### Directories:
+
+tmp:
+	mkdir -p $@
+
+reports:
+	mkdir -p $@
 
 
 ### Build Configuration Files
@@ -63,8 +77,8 @@ _config.yml: _config_header.yml registry/ontologies.yml principles/all.yml
 	cat $^ > $@.tmp && mv $@.tmp $@
 
 # Sort ontologies based on the validation (metadata-grid)
-registry/ontologies.yml: tmp/unsorted-ontologies.yml reports/metadata-grid.csv
-	./util/sort-ontologies.py $^ $@ && rm -rf tmp
+registry/ontologies.yml: reports/metadata-grid.csv
+	./util/sort-ontologies.py tmp/unsorted-ontologies.yml $< $@ && rm -rf tmp
 
 # Extract the metadata from each principle in the principles/ directory, and concatenate
 # into a single yaml file in that directory
@@ -89,15 +103,13 @@ registry/ontologies.ttl: registry/ontologies.nt
 	riot --base=http://purl.obolibrary.org/obo/ --out=ttl $< > $@.tmp && mv $@.tmp $@
 
 # Generate a list of primary publications
-registry/publications.md: util/extract-publications.py registry/ontologies.yml
-	$^ $@
+registry/publications.md: registry/ontologies.yml
+	util/extract-publications.py $< $@
 
 ### Validate Configuration Files
 
 # generate both a report of the violations and a grid of all results
 # the grid is later used to sort the ontologies on the home page
-validate: reports/metadata-grid.csv reports/metadata-grid.html
-
 RESULTS = reports/metadata-violations.tsv reports/metadata-grid.csv
 reports/metadata-grid.csv: tmp/unsorted-ontologies.yml | extract-metadata reports
 	./util/validate-metadata.py $< $(RESULTS)
@@ -110,12 +122,6 @@ reports/metadata-grid.html: reports/metadata-grid.csv
 # Extract metadata from each ontology .md file and combine into single yaml
 tmp/unsorted-ontologies.yml: $(ONTS) | tmp
 	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
-
-tmp:
-	mkdir -p $@
-
-reports:
-	mkdir -p $@
 
 extract-metadata: $(ONTS)
 	./util/extract-metadata.py validate $^
@@ -132,7 +138,6 @@ valid-purl-report.txt: registry/ontologies.yml
 
 sparql-consistency-report.txt: registry/ontologies.yml
 	./util/processor.py -i $< sparql-compare > $@.tmp && mv $@.tmp $@
-
 
 # output of central OBO build
 # See FAQ for more details, and also README.md

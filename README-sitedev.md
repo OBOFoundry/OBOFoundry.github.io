@@ -63,7 +63,7 @@ In the top level. Note you will need python3 and the yaml library, as well as je
 
     pip3 install yaml
     
-jena is at https://archive.apache.org/dist/jena/binaries/apache-jena-3.1.1.tar.gz. Uncompress and then add the bin directory to your PATH
+jena is at https://archive.apache.org/dist/jena/binaries/apache-jena-3.10.0.tar.gz. Uncompress and then add the bin directory to your PATH
 
 The dependencies should be visible in the [Makefile](Makefile). The basic idea is:
 
