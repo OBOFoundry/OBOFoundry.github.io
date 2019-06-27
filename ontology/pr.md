@@ -34,7 +34,7 @@ build:
   source_url: https://proconsortium.org/download/current/pro_nonreasoned.obo
   method: obo2owl
   infallible: 0
-tracker: http://purl.obolibrary.org/obo/pr/tracker
+tracker: https://github.com/PROconsortium/PRoteinOntology/issues
 publications:
   - id: https://proconsortium.org/pro_dsmnt.shtml#publication
     title: "Publications & Dissemination"
