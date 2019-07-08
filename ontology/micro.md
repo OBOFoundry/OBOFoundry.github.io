@@ -8,7 +8,7 @@ description: An ontology of prokaryotic phenotypic and metabolic characters
 title: Ontology of Prokaryotic Phenotypic and Metabolic Characters
 domain: phenotype
 homepage: https://github.com/carrineblank/MicrO
-issue: https://github.com/carrineblank/MicrO/issues
+tracker: https://github.com/carrineblank/MicrO/issues
 license:
   url: https://creativecommons.org/licenses/by/2.0/
   label: CC-BY 2.0
