@@ -19,6 +19,7 @@ taxon:
   id: NCBITaxon:10088
   label: Mus
 title: Mouse gross anatomy and development, timed
+tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
 build:
   notes: new url soon
   source_url: ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAPA.obo

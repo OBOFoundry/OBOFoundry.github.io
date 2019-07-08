@@ -11,6 +11,7 @@ license:
 description: A structured controlled vocabulary of phenotypes of the slime-mould <i>Dictyostelium discoideum</i>.
 domain: anatomy
 homepage: http://dictybase.org/
+tracker: https://github.com/obophenotype/dicty-phenotype-ontology/issues
 twitter: dictybase
 products:
   - id: ddpheno.owl
