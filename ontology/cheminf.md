@@ -10,6 +10,7 @@ license:
 description: Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them.
 domain: biochemistry
 homepage: https://github.com/semanticchemistry/semanticchemistry
+mailing_list: https://groups.google.com/forum/#!forum/cheminf-ontology
 products:
   - id: cheminf.owl
 title: Chemical Information Ontology
