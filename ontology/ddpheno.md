@@ -8,6 +8,7 @@ contact:
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC-0
+tracker: https://github.com/obophenotype/dicty-phenotype-ontology/issues
 description: A structured controlled vocabulary of phenotypes of the slime-mould <i>Dictyostelium discoideum</i>.
 domain: anatomy
 homepage: http://dictybase.org/
