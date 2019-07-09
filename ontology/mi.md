@@ -4,6 +4,7 @@ id: mi
 contact:
   email: pporras@ebi.ac.uk
   label: Pablo Porras Millán
+tracker: https://github.com/HUPO-PSI/psi-mi-CV/issues
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
