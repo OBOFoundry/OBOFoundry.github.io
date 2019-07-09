@@ -39,21 +39,6 @@ products:
    description: Equivalent to the OWL edition
    format: obo
    derived_from: mondo.owl
- - id: mondo/subsets/mondo-minimal.owl
-   title: Minimal OWL edition.
-   description: Complete logical axioms, no textual definitions, subsets
-   format: owl-rdf/xml
-   license: https://creativecommons.org/publicdomain/zero/1.0/
- - id: mondo/subsets/mondo-minimal.obo
-   title: Minimal OBO edition.
-   description: Identical to Minimal OWL edition, in OBO Format
-   format: obo
-   license: https://creativecommons.org/publicdomain/zero/1.0/
- - id: mondo/subsets/mondo-minimal.json
-   title: Minimal JSON edition.
-   description: Identical to Minimal OWL edition, in OBO Graph JSON Format
-   format: json
-   license: https://creativecommons.org/publicdomain/zero/1.0/
 activity_status: active
 ---
 
