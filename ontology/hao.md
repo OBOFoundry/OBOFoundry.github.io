@@ -4,6 +4,7 @@ id: hao
 contact:
   email: diapriid@gmail.com
   label: Matt Yoder
+tracker: https://github.com/hymao/hao/issues
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC-0
