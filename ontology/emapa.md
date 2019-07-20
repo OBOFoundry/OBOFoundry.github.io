@@ -12,6 +12,7 @@ description: "Abstract (i.e. non-stage specific) stage-specific anatomical struc
 domain: anatomy
 homepage: http://emouseatlas.org
 page: http://www.obofoundry.org/wiki/index.php/EMAPA:Main_Page
+tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
 products:
   - id: emapa.owl
   - id: emapa.obo
