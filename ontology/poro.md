@@ -9,6 +9,7 @@ domain: anatomy
 homepage: https://github.com/obophenotype/porifera-ontology
 products:
   - id: poro.owl
+  - id: poro.obo
 taxon:
   id: NCBITaxon:6040
   label: Porifera
