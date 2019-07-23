@@ -618,7 +618,7 @@
                 }
             ],
             "title": "PRotein Ontology (PRO)",
-            "tracker": "http://purl.obolibrary.org/obo/pr/tracker"
+            "tracker": "https://github.com/PROconsortium/PRoteinOntology/issues"
         },
         {
             "activity_status": "active",
@@ -859,7 +859,8 @@
                 "id": "NCBITaxon:4890",
                 "label": "Ascomycota"
             },
-            "title": "Ascomycete phenotype ontology"
+            "title": "Ascomycete phenotype ontology",
+            "tracker": "https://github.com/obophenotype/ascomycete-phenotype-ontology/issues"
         },
         {
             "activity_status": "active",
@@ -1128,6 +1129,7 @@
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
+            "mailing_list": "https://groups.google.com/forum/#!forum/cheminf-ontology",
             "ontology_purl": "http://purl.obolibrary.org/obo/cheminf.owl",
             "products": [
                 {
@@ -1135,7 +1137,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/cheminf.owl"
                 }
             ],
-            "title": "Chemical Information Ontology"
+            "title": "Chemical Information Ontology",
+            "tracker": "https://github.com/semanticchemistry/semanticchemistry/issues"
         },
         {
             "activity_status": "active",
@@ -1565,6 +1568,7 @@
                 "label": "Dictyostelium discoideum"
             },
             "title": "Dictyostelium discoideum phenotype ontology",
+            "tracker": "https://github.com/obophenotype/dicty-phenotype-ontology/issues",
             "twitter": "dictybase"
         },
         {
@@ -1939,6 +1943,7 @@
                 "label": "Mus"
             },
             "title": "Mouse gross anatomy and development, timed",
+            "tracker": "https://github.com/obophenotype/mouse-anatomy-ontology/issues",
             "usages": [
                 {
                     "description": "GXD",
@@ -2843,7 +2848,8 @@
                 "id": "NCBITaxon:7399",
                 "label": "Hymenoptera"
             },
-            "title": "Hymenoptera Anatomy Ontology"
+            "title": "Hymenoptera Anatomy Ontology",
+            "tracker": "https://github.com/hymao/hao/issues"
         },
         {
             "activity_status": "active",
@@ -3358,7 +3364,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/mfomd.owl"
                 }
             ],
-            "title": "Mental Disease Ontology"
+            "title": "Mental Disease Ontology",
+            "tracker": "https://github.com/jannahastings/mental-functioning-ontology/issues"
         },
         {
             "activity_status": "active",
@@ -3393,7 +3400,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/mi.obo"
                 }
             ],
-            "title": "Molecular Interactions Controlled Vocabulary"
+            "title": "Molecular Interactions Controlled Vocabulary",
+            "tracker": "https://github.com/HUPO-PSI/psi-mi-CV/issues"
         },
         {
             "activity_status": "active",
@@ -3435,7 +3443,6 @@
             "domain": "phenotype",
             "homepage": "https://github.com/carrineblank/MicrO",
             "id": "micro",
-            "issue": "https://github.com/carrineblank/MicrO/issues",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC-BY 2.0",
@@ -3449,7 +3456,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/micro.owl"
                 }
             ],
-            "title": "Ontology of Prokaryotic Phenotypic and Metabolic Characters"
+            "title": "Ontology of Prokaryotic Phenotypic and Metabolic Characters",
+            "tracker": "https://github.com/carrineblank/MicrO/issues"
         },
         {
             "activity_status": "active",
@@ -3641,30 +3649,6 @@
                     "id": "mondo.json",
                     "ontology_purl": "http://purl.obolibrary.org/obo/mondo.json",
                     "title": "json edition"
-                },
-                {
-                    "description": "Complete logical axioms, no textual definitions, subsets",
-                    "format": "owl-rdf/xml",
-                    "id": "mondo/subsets/mondo-minimal.owl",
-                    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/mondo/subsets/mondo-minimal.owl",
-                    "title": "Minimal OWL edition."
-                },
-                {
-                    "description": "Identical to Minimal OWL edition, in OBO Format",
-                    "format": "obo",
-                    "id": "mondo/subsets/mondo-minimal.obo",
-                    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/mondo/subsets/mondo-minimal.obo",
-                    "title": "Minimal OBO edition."
-                },
-                {
-                    "description": "Identical to Minimal OWL edition, in OBO Graph JSON Format",
-                    "format": "json",
-                    "id": "mondo/subsets/mondo-minimal.json",
-                    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/mondo/subsets/mondo-minimal.json",
-                    "title": "Minimal JSON edition."
                 }
             ],
             "taxon": {
@@ -4712,6 +4696,32 @@
         {
             "activity_status": "active",
             "contact": {
+                "email": "safisher@upenn.edu",
+                "label": "Stephen Fisher"
+            },
+            "description": "An application ontology designed to annotate next-generation sequencing experiments performed on RNA.",
+            "domain": "experiments",
+            "homepage": "http://kim.bio.upenn.edu/software/ornaseq.shtml",
+            "id": "ornaseq",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/ornaseq.owl",
+            "products": [
+                {
+                    "id": "ornaseq.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ornaseq.owl"
+                }
+            ],
+            "title": "Ontology of RNA Sequencing",
+            "tracker": "https://github.com/safisher/ornaseq/issues"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
                 "email": "yongqunh@med.umich.edu",
                 "label": "Yongqunh He"
             },
@@ -5091,6 +5101,10 @@
                 {
                     "id": "poro.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/poro.owl"
+                },
+                {
+                    "id": "poro.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/poro.obo"
                 }
             ],
             "publications": [
@@ -7197,6 +7211,59 @@
             },
             "title": "Human developmental anatomy, abstract",
             "tracker": "https://github.com/obophenotype/human-developmental-anatomy-ontology/issues"
+        },
+        {
+            "activity_status": "inactive",
+            "build": {
+                "checkout": "git clone https://github.com/geneontology/unipathway.git",
+                "path": ".",
+                "system": "git"
+            },
+            "contact": {
+                "email": "Anne.Morgat@sib.swiss",
+                "github": "amorgat",
+                "label": "Anne Morgat"
+            },
+            "dependencies": [
+                {
+                    "id": "ro"
+                }
+            ],
+            "description": "A manually curated resource for the representation and annotation of metabolic pathways",
+            "domain": "pathways",
+            "homepage": "https://github.com/geneontology/unipathway",
+            "id": "upa",
+            "jobs": [
+                {
+                    "id": "https://travis-ci.org/geneontology/unipathway",
+                    "type": "travis-ci"
+                }
+            ],
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/upa.owl",
+            "products": [
+                {
+                    "id": "upa.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/upa.owl"
+                },
+                {
+                    "id": "upa.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/upa.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/22102589",
+                    "title": "UniPathway: a resource for the exploration and annotation of metabolic pathways"
+                }
+            ],
+            "title": "Unipathway",
+            "tracker": "https://github.com/geneontology/unipathway/issues"
         },
         {
             "activity_status": "inactive",

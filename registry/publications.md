@@ -40,5 +40,6 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Teleost Anatomy Ontology (tao): [The teleost anatomy ontology: anatomical representation for the genomics age](https://www.ncbi.nlm.nih.gov/pubmed/20547776)
 - The Drug-Drug Interactions Ontology (dinto): [DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug–Drug Interactions and Their Mechanisms.](http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119)
 - Uberon multi-species anatomy ontology (uberon): [Uberon, an integrative multi-species anatomy ontology](http://www.ncbi.nlm.nih.gov/pubmed/22293552)
+- Unipathway (upa): [UniPathway: a resource for the exploration and annotation of metabolic pathways](http://www.ncbi.nlm.nih.gov/pubmed/22102589)
 - Xenopus Anatomy Ontology (xao): [An ontology for Xenopus anatomy and development.](http://www.ncbi.nlm.nih.gov/pubmed/18817563)
 - Zebrafish anatomy and development ontology (zfa): [The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio.](http://www.ncbi.nlm.nih.gov/pubmed/24568621)
