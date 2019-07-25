@@ -9,7 +9,9 @@ description: An ontology of commonly encountered and/or high level Drosophila ph
 domain: phenotype
 homepage: http://purl.obolibrary.org/obo/fbcv
 products:
-  - id: fbcv/dpo.owl
+  - id: dpo.owl
+  - id: dpo.obo
+  - id: dpo-base.owl
 taxon:
   id: NCBITaxon:7227
   label: Drosophila
@@ -18,10 +20,10 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 build:
-  source_url: http://purl.obolibrary.org/obo/fbcv/dpo.owl
+  source_url: http://purl.obolibrary.org/obo/dpo.owl
   method: owl2obo
   infallible: 0
-tracker: http://purl.obolibrary.org/obo/fbcv/tracker
+tracker: https://github.com/FlyBase/drosophila-phenotype-ontology/issues
 browsers:
   - label: FB
     title: FlyBase Browser
