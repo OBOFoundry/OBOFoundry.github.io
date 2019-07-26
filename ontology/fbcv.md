@@ -16,9 +16,9 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 build:
-  source_url: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/fbcv.owl
+  source_url: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.owl
   method: obo2owl
-tracker: http://purl.obolibrary.org/obo/fbbt/tracker
+tracker: https://github.com/FlyBase/flybase-controlled-vocabulary/issues
 browsers:
   - label: FB
     title: FlyBase Browser
