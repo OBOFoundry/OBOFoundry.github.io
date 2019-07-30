@@ -19,9 +19,9 @@ taxon:
   label: Caenorhabditis
 title: C. elegans Gross Anatomy Ontology
 build:
-  source_url: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/wbbt.obo
-  method: obo2owl
-  infallible: 1
+  checkout: git clone https://github.com/obophenotype/c-elegans-gross-anatomy-ontology.git
+  system: git
+  path: "."
 tracker: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology/issues
 activity_status: active
 ---
