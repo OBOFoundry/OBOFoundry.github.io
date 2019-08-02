@@ -110,6 +110,15 @@ Versions are named by a date in the following format: YYYY-MM-DD. For a given ve
 
 For example, for the version of OBI released 2009-11-06, the OWL document is accessible at <http://purl.obolibrary.org/obo/obi/2009-11-06/obi.owl>.
 
+An accepted alternative to the above scheme is to include `/releases/` in the PURL, as follows:
+
+- OWL: http://purl.obolibrary.org/obo/*idspace*/releases/YYYY-MM-DD/*idspace*.owl
+- OBO: http://purl.obolibrary.org/obo/*idspace*/releases/YYYY-MM-DD/*idspace*.obo
+
+This makes it easier to provide a generic PURL redirect to the relevant store (GitHub, S3, etc).
+
+Note that other products can be versioned in addition to the main obo and owl files.
+
 ## Home page
 
 If the ontology has a home page on the Web, it is accessible at http://purl.obolibrary.org/obo/IDSPACE. For example the OBI home page is accessible at: <http://purl.obolibrary.org/obo/obi>.
