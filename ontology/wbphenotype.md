@@ -15,7 +15,6 @@ products:
   - id: wbphenotype.owl
   - id: wbphenotype.obo
   - id: wbphenotype-base.owl
-  - id: wbphenotype-merged.owl
 taxon:
   id: NCBITaxon:6237
   label: Caenorhabditis
