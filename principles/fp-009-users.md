@@ -1,7 +1,7 @@
 ---
 layout: principle
 id: fp-009-users
-title: Documented Plurality of Users
+title: Documented Plurality of Users (principle 9)
 ---
 
 Summary
