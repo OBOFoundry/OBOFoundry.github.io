@@ -1,7 +1,7 @@
 ---
 layout: principle
 id: fp-001-open
-title: Open
+title: Open (principle 1)
 ---
 
 ## Summary
