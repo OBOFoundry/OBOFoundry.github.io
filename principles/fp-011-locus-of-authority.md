@@ -1,7 +1,7 @@
 ---
 layout: principle
 id: fp-011-locus-of-authority
-title: Locus of Authority
+title: Locus of Authority (principle 11)
 ---
 
 ## Summary
