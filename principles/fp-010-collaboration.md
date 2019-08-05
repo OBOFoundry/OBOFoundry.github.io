@@ -1,7 +1,7 @@
 ---
 layout: principle
 id: fp-010-collaboration
-title: Commitment To Collaboration
+title: Commitment To Collaboration (principle 10)
 ---
 
 ## Summary
