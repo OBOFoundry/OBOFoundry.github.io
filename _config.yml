@@ -552,6 +552,7 @@ ontologies:
   products:
   - {id: cdao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/cdao.owl'}
   title: Comparative Data Analysis Ontology
+  tracker: https://github.com/evoinfo/cdao/issues
 - activity_status: active
   build: {method: owl2obo, source_url: 'https://raw.githubusercontent.com/semanticchemistry/semanticchemistry/master/ontology/cheminf.owl'}
   contact: {email: egon.willighagen@gmail.com, label: Egon Willighagen}
@@ -661,6 +662,7 @@ ontologies:
   products:
   - {id: clo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/clo.owl'}
   title: Cell Line Ontology
+  tracker: https://github.com/CLO-Ontology/CLO/issues
 - activity_status: active
   browsers:
   - {label: RGD, title: RGD Ontology Browser, url: 'http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=CMO:0000000'}
@@ -815,7 +817,7 @@ ontologies:
 - activity_status: active
   browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000347'}
-  build: {infallible: 0, method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/fbcv/dpo.owl'}
+  build: {infallible: 0, method: owl2obo, source_url: 'http://purl.obolibrary.org/obo/dpo.owl'}
   contact: {email: cp390@cam.ac.uk, label: Clare Pilgrim}
   description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
   domain: phenotype
@@ -827,13 +829,15 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/dpo.owl
   preferredPrefix: FBcv
   products:
-  - {id: fbcv/dpo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fbcv/dpo.owl'}
+  - {id: dpo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/dpo.owl'}
+  - {id: dpo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/dpo.obo'}
+  - {id: dpo-base.owl, ontology_purl: 'http://purl.obolibrary.org/obo/dpo-base.owl'}
   publications:
   - {id: 'https://doi.org/10.1186/2041-1480-4-30', title: The Drosophila phenotype
       ontology.}
   taxon: {id: 'NCBITaxon:7227', label: Drosophila}
   title: Drosophila Phenotype Ontology
-  tracker: http://purl.obolibrary.org/obo/fbcv/tracker
+  tracker: https://github.com/FlyBase/drosophila-phenotype-ontology/issues
   usages:
   - description: FlyBase uses dpo for phenotype data annotation in Drosophila
     example:
@@ -1135,7 +1139,7 @@ ontologies:
 - activity_status: active
   browsers:
   - {label: FB, title: FlyBase Browser, url: 'http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000013'}
-  build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/fbcv.owl'}
+  build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.owl'}
   contact: {email: cp390@cam.ac.uk, label: Clare Pilgrim}
   description: A structured controlled vocabulary used for various aspects of annotation
     by FlyBase.
@@ -1151,7 +1155,7 @@ ontologies:
   - {id: fbcv.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fbcv.owl'}
   - {id: fbcv.obo, ontology_purl: 'http://purl.obolibrary.org/obo/fbcv.obo'}
   title: FlyBase Controlled Vocabulary
-  tracker: http://purl.obolibrary.org/obo/fbbt/tracker
+  tracker: https://github.com/FlyBase/flybase-controlled-vocabulary/issues
   usages:
   - description: FlyBase uses FBcv for phenotype data annotation in Drosophila
     example:
@@ -2178,6 +2182,23 @@ ontologies:
   title: Ontology of Host-Microbiome Interactions
   tracker: https://github.com/ohmi-ontology/ohmi/issues
 - activity_status: active
+  contact: {email: edong@umich.edu, label: Edison Ong}
+  description: OHPI is a community-driven ontology of host-pathogen interactions (OHPI)
+    and represents the virulence factors (VFs) and how the mutants of VFs in the Victors
+    database become less virulence inside a host organism or host cells. It is developed
+    to represent manually curated HPI knowledge available in the PHIDIAS resource.
+  homepage: https://github.com/OHPI/ohpi
+  id: ohpi
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/4.0/'}
+  mailing_list: http://groups.google.com/group/ohpi-discuss
+  ontology_purl: http://purl.obolibrary.org/obo/ohpi.owl
+  products:
+  - {id: ohpi.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ohpi.owl'}
+  title: Ontology of Host Pathogen Interactions
+  tracker: https://github.com/OHPI/ohpi/issues
+- activity_status: active
   build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.obo'}
   contact: {email: bgee@sib.swiss, label: bgee}
   description: Life cycle stages for Medaka
@@ -2703,23 +2724,6 @@ ontologies:
   title: Scientific Evidence and Provenance Information Ontology
   tracker: https://github.com/monarch-initiative/SEPIO-ontology/issues
 - activity_status: active
-  build: {checkout: 'git clone https://github.com/obophenotype/sibo.git', method: vcs,
-    system: git}
-  contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
-  description: Social Behavior in insects
-  domain: behavior
-  homepage: https://github.com/obophenotype/sibo
-  id: sibo
-  layout: ontology_detail
-  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
-    url: 'http://creativecommons.org/licenses/by/3.0/'}
-  ontology_purl: http://purl.obolibrary.org/obo/sibo.owl
-  products:
-  - {id: sibo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/sibo.owl'}
-  - {id: sibo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/sibo.obo'}
-  title: Social Insect Behavior Ontology
-  tracker: https://github.com/obophenotype/sibo/issues
-- activity_status: active
   build: {method: obo2owl, notes: SWITCH, source_url: 'https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so.obo'}
   contact: {email: keilbeck@genetics.utah.edu, label: Karen Eilbeck}
   depicted_by: http://sequenceontology.org/img/so_icon.png
@@ -3153,7 +3157,8 @@ ontologies:
   usages:
   - {description: Phenoscape uses VTO to annotate systematics data, user: 'http://phenoscape.org'}
 - activity_status: active
-  build: {infallible: 1, method: obo2owl, source_url: 'http://github.com/raymond91125/Wao/raw/master/WBbt.obo'}
+  build: {checkout: 'git clone https://github.com/obophenotype/c-elegans-gross-anatomy-ontology.git',
+    path: ., system: git}
   contact: {email: raymond@caltech.edu, label: Raymond Lee}
   description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis
     elegans</i>.
@@ -3170,9 +3175,10 @@ ontologies:
   - {id: wbbt.obo, ontology_purl: 'http://purl.obolibrary.org/obo/wbbt.obo'}
   taxon: {id: 'NCBITaxon:6237', label: Caenorhabditis}
   title: C. elegans Gross Anatomy Ontology
-  tracker: https://github.com/obophenotype/Wao/issues
+  tracker: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology/issues
 - activity_status: active
-  build: {method: obo2owl, notes: 'switch to vcs in dev repo?', source_url: 'https://raw.github.com/draciti/Life-stage-obo/master/worm_development.obo'}
+  build: {checkout: 'git clone https://github.com/obophenotype/c-elegans-development-ontology.git',
+    path: ., system: git}
   contact: {email: draciti@caltech.edu, label: Daniela Raciti}
   description: A structured controlled vocabulary of the development of <i>Caenorhabditis
     elegans</i>.
@@ -3206,7 +3212,6 @@ ontologies:
   - {id: wbphenotype.owl, ontology_purl: 'http://purl.obolibrary.org/obo/wbphenotype.owl'}
   - {id: wbphenotype.obo, ontology_purl: 'http://purl.obolibrary.org/obo/wbphenotype.obo'}
   - {id: wbphenotype-base.owl, ontology_purl: 'http://purl.obolibrary.org/obo/wbphenotype-base.owl'}
-  - {id: wbphenotype-merged.owl, ontology_purl: 'http://purl.obolibrary.org/obo/wbphenotype-merged.owl'}
   publications:
   - {id: 'http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995', title: 'Worm Phenotype
       Ontology: integrating phenotype data within and beyond the C. elegans community.'}
@@ -3300,6 +3305,7 @@ ontologies:
   products:
   - {id: zeco.obo, ontology_purl: 'http://purl.obolibrary.org/obo/zeco.obo'}
   - {id: zeco.owl, ontology_purl: 'http://purl.obolibrary.org/obo/zeco.owl'}
+  - {id: zeco.obo, ontology_purl: 'http://purl.obolibrary.org/obo/zeco.obo'}
   taxon: {id: 'NCBITaxon:7954', label: Danio}
   title: Zebrafish Experimental Conditions Ontology
   tracker: https://github.com/ybradford/zebrafish-experimental-conditions-ontology/issues
@@ -3460,6 +3466,35 @@ ontologies:
   title: Mosquito insecticide resistance
   validate: false
 - activity_status: orphaned
+  build: {checkout: 'git clone https://github.com/obophenotype/sibo.git', method: vcs,
+    system: git}
+  contact: {email: cjmungall@lbl.gov, label: Chris Mungall}
+  description: Social Behavior in insects
+  domain: behavior
+  homepage: https://github.com/obophenotype/sibo
+  id: sibo
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/sibo.owl
+  products:
+  - {id: sibo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/sibo.owl'}
+  - {id: sibo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/sibo.obo'}
+  title: Social Insect Behavior Ontology
+  tracker: https://github.com/obophenotype/sibo/issues
+- activity_status: orphaned
+  build: {infallible: 1, insert_ontology_id: true, method: obo2owl, source_url: 'ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'}
+  contact: {email: null, label: chEBI}
+  description: An ontology of physico-chemical methods and properties.
+  id: fix
+  in_foundry: false
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/fix.owl
+  products:
+  - {id: fix.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fix.owl'}
+  - {id: fix.obo, ontology_purl: 'http://purl.obolibrary.org/obo/fix.obo'}
+  title: Physico-chemical methods and properties
+- activity_status: orphaned
   description: An ontology that formalizes the genomic element by defining an upper
     class genetic interval
   homepage: https://code.google.com/p/ontology-for-genetic-interval/
@@ -3561,18 +3596,6 @@ ontologies:
   id: cmf
   layout: ontology_detail
   title: CranioMaxilloFacial ontology
-- activity_status: inactive
-  build: {infallible: 1, insert_ontology_id: true, method: obo2owl, source_url: 'ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo'}
-  contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
-  description: An ontology of physico-chemical methods and properties.
-  id: fix
-  in_foundry: false
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/fix.owl
-  products:
-  - {id: fix.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fix.owl'}
-  - {id: fix.obo, ontology_purl: 'http://purl.obolibrary.org/obo/fix.obo'}
-  title: Physico-chemical methods and properties
 - activity_status: inactive
   build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo'}
   contact: {email: hastings@ebi.ac.uk, label: Janna Hastings}
