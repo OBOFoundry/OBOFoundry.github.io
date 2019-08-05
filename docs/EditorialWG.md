@@ -36,17 +36,8 @@ Current activities are focused on creating guidelines for reviews. Once those gu
 
 [Principles review workflow](/docs/PrinciplesReviewWorkflow.html)
 
-# Current Members #
-(in alphabetical order)<br>
-<br>
-Melissa Haendel<br>
-Suzanna Lewis<br>
-Darren Natale<br>
-Bjoern Peters<br>
-Philippe Rocca-Serra<br>
-Lynn Schriml<br>
-Chris Stoeckert<br>
-Ramona Walls<br>
+# Members #
+See the [membership page](/docs/Membership.html) for a list of current members.
 
 Membership in the OBO Foundry Editorial WG is open to all members of the OBO Foundry Operations Committee who are willing to actively participate. If you are interested in joining the working group, send an email to the mailing list.<br>
 <br>
