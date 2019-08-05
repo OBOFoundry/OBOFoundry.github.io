@@ -15,5 +15,5 @@ products:
   - id: fix.owl
   - id: fix.obo
 title: Physico-chemical methods and properties
-activity_status: inactive
+activity_status: orphaned
 ---
