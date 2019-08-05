@@ -11,7 +11,7 @@ contact:
 products:
   - id: zeco.obo
   - id: zeco.owl
-  - id: zeco.obo
+  - id: zeco.json
 taxon:
   id: NCBITaxon:7954
   label: Danio
