@@ -51,10 +51,12 @@ Examples
 --------
 
 For an OBO format ontology use the metadata tag:
+
     data-version: 2015-03-31
     data-version: 44.0
- 
+
 For an OWL format ontology, owl:versionInfo identifies the version and versionIRI identifies the resource:
+
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-12-03</owl:versionInfo>
     <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/obi/2014-12-03/obi.owl"/>
 
