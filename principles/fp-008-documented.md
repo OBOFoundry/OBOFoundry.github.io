@@ -1,7 +1,7 @@
 ---
 layout: principle
 id: fp-008-documented
-title: Documentation
+title: Documentation (principle 8)
 ---
 
 
