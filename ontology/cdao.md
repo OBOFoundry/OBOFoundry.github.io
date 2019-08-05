@@ -9,6 +9,7 @@ homepage: https://github.com/evoinfo/cdao
 products:
   - id: cdao.owl
 title: Comparative Data Analysis Ontology
+tracker: https://github.com/evoinfo/cdao/issues
 build:
   source_url: http://purl.obolibrary.org/obo/cdao.owl
   method: owl2obo
