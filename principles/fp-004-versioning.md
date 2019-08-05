@@ -7,7 +7,7 @@ title: Versioning (principle 4)
 NOTE
 -------
 
-The original wording of this principle (given below) and content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.
+The content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.
 
 Summary
 -------
