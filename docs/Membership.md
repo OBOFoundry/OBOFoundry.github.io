@@ -29,7 +29,6 @@ Current members of the OBO Foundry Operations Committee are (in alphabetical ord
  * [Darren Natale](http://pir.georgetown.edu/pirwww/aboutpir/natalebio.shtml) (E), Georgetown University Medical Center, Washington DC, USA
  * David Osumi-Sutherland (?), EMBL-EBI, Cambridge, UK
  * [James A. Overton](http://james.overton.ca) (T), [Knocean Inc.](http://knocean.com), Toronto, Canada
- * Gareth Owen (E), George Washington University, Washington, DC, USA
  * Bjoern Peters (E), La Jolla Institute for Immunology, La Jolla, CA, USA
  * [Philippe Rocca-Serra](https://www.oerc.ox.ac.uk/people/philippe-rocca-serra) (E, O), University of Oxford e-Research Centre, Department of Engineering Science, Oxford, UK.
  * [Alan Ruttenberg](http://sciencecommons.org/about/whoweare/ruttenberg/) (O, T), University at Buffalo, Buffalo, USA
@@ -44,7 +43,9 @@ Current members of the OBO Foundry Operations Committee are (in alphabetical ord
 Alumni:
 
  * Michael Ashburner
- * Colin Batchelor (E), Royal Society of Chemistry, UK
+ * Colin Batchelor (E)
  * Janna Hastings (E, O)
- * [Suzi Lewis](https://github.com/selewis), (O, T) Lawrence Berkeley National Laboratory, Berkeley, USA
+ * [Suzanna Lewis](https://github.com/selewis), (O, T)
+ * Gareth Owen (E)
  * Susanna-Assunta Sansone
+ * Carlo Tornial (T)
