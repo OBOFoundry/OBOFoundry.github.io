@@ -8,6 +8,7 @@ build:
   infallible: 1
 description: Life cycle stages for Human
 homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv
+tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
 page: https://github.com/obophenotype/developmental-stage-ontologies
 contact:
   label: bgee
