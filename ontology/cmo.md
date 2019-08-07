@@ -10,7 +10,7 @@ license:
 description: Morphological and physiological measurement records generated from clinical and model organism research and health programs.
 domain: clinical
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
-tracker: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology
+tracker: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology/issues
 page: ftp://ftp.rgd.mcw.edu/pub/ontology/clinical_measurement/
 products:
   - id: cmo.owl
