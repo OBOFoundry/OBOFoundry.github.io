@@ -9,6 +9,7 @@ license:
   label: CC-BY 4.0
 description: Ontology of rat strains
 homepage: http://rgd.mcw.edu/rgdweb/search/strains.html
+tracker: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology/issues
 page: ftp://ftp.rgd.mcw.edu/pub/ontology/rat_strain/
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24267899
