@@ -9,7 +9,7 @@ license:
 description: Conditions under which physiological and morphological measurements are made both in the clinic and in studies involving humans or model organisms.
 domain: clinical
 homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000
-tracker: https://github.com/rat-genome-database/XCO-experimental-condition-ontology
+tracker: https://github.com/rat-genome-database/XCO-experimental-condition-ontology/issues
 id: xco
 products:
   - id: xco.owl
