@@ -4,6 +4,7 @@ id: exo
 description: Vocabularies for describing exposure data to inform understanding of environmental health.
 domain: health
 homepage: http://ctdbase.org/help/exposureHelp.jsp
+tracker: https://github.com/CTDbase/exposure-ontology/issues
 page: http://ctdbase.org/downloads/#exposures
 contact:
   label: Carolyn Mattingly
