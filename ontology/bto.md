@@ -7,6 +7,7 @@ contact:
 description: A structured controlled vocabulary for the source of an enzyme comprising tissues, cell lines, cell types and cell cultures.
 domain: anatomy
 homepage: http://www.brenda-enzymes.info
+tracker: https://support.brenda-enzymes.org/open.php?topicId=18
 page: https://en.wikipedia.org/wiki/BRENDA_tissue_ontology
 publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/21030441
