@@ -7,6 +7,7 @@ build:
   method: obo2owl
 description: Life cycle stages for Platynereis dumerilii
 homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv
+tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
 page: https://github.com/obophenotype/developmental-stage-ontologies
 products:
   - id: pdumdv.owl
