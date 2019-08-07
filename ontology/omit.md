@@ -10,6 +10,7 @@ license:
   label: CC-BY 3.0
 description: Ontology to establish data exchange standards and common data elements in the microRNA (miR) domain
 homepage: http://omit.cis.usouthal.edu/
+tracker: https://github.com/OmniSearch/omit/issues
 page: http://omit.cis.usouthal.edu/
 products:
   - id: omit.owl
