@@ -10,6 +10,7 @@ license:
 description: PSI-MOD is an ontology consisting of terms that describe protein chemical modifications
 domain: proteins
 homepage: http://www.psidev.info/MOD
+tracker: https://github.com/HUPO-PSI/psi-mod-CV/issues
 products:
   - id: mod.owl
 title: Protein modification
