@@ -4,7 +4,7 @@ id: upheno
 title: Unified phenotype ontology (uPheno)
 description: The uPheno ontology integrates multiple phenotype ontologies into a unified cross-species phenotype ontology. 
 homepage: https://github.com/obophenotype/upheno
-tracker:https://github.com/obophenotype/upheno/issues
+tracker: https://github.com/obophenotype/upheno/issues
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0
