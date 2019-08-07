@@ -4,12 +4,13 @@ id: omrse
 contact:
   email: hoganwr@gmail.com
   label: Bill Hogan
-license:
+license: https://github.com/ufbmi/OMRSE/issues
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4.0
 description: This ontology covers the domain of social entities that are related to health care, such as demographic information and the roles of various individuals and organizations.
 domain: medicine
 homepage: https://github.com/ufbmi/OMRSE/wiki/OMRSE-Overview
+tracker: 
 products:
   - id: omrse.owl
 taxon:
