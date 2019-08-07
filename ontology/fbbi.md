@@ -11,6 +11,7 @@ license:
 description: A structured controlled vocabulary of sample preparation, visualization and imaging methods used in biomedical research.
 domain: experiments
 homepage: http://cellimagelibrary.org/
+tracker: https://github.com/CRBS/Biological_Imaging_Methods_Ontology/issues
 products:
   - id: fbbi.owl
 title: Biological Imaging Methods Ontology
