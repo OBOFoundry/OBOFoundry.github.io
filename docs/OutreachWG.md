@@ -14,20 +14,7 @@ This page describes members and activities of the OBO Foundry Outreach Working G
 The OBO Foundry Outreach WG is involved in public relations for the OBO Foundry. This includes monitoring and following up discussions on mailing lists, preparing documentation and educational materials, and presenting OBO Foundry activities at workshops, conferences, or other venues.
 
 # Members #
-
-(in alphabetical order)<br>
-members, please fill in names and links<br>
-<br>
-Mathias Brochhausen<br>
-<a href='http://purl.org/net/mcourtot'>Melanie Courtot</a>, Simon Fraser University, Vancouver, Canada<br>
-<a href='https://www.ohsu.edu/people/melissa-haendel/AFE044BDE8046E5D6FBDA51F448BDE2A'>Melissa Haendel</a>, Oregon Health & Science University, Portland, OR<br>
-Janna Hastings<br>
-<a href='https://github.com/selewis'>Suzi Lewis</a> Lawrence Berkeley National Laboratory, Berkeley CA<br>
-<a href='https://github.com/cmungall/'>Chris Mungall</a>  Lawrence Berkeley National Laboratory, Berkeley CA<br>
-<a href='http://alan.ruttenbergs.com/'>Alan Ruttenberg</a><br>
-Richard Scheuermann<br>
-Chris Stoeckert, University of Pennsylvania, Philadelphia, PA, USA<br>
-Ramona Walls, The iPlant Collaborative, University of Arizona, Tucson, AZ, USA<br>
+See the [membership page](/docs/Membership.html) for a list of current members.
 
 <h1>Contact Us</h1>
 
