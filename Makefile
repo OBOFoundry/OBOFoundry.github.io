@@ -92,6 +92,9 @@ registry/ontologies.jsonld: registry/ontologies.yml
 registry/obo_context.jsonld: registry/ontologies.yml
 	./util/processor.py -i $< extract-context  > $@.tmp && mv $@.tmp $@
 
+registry/obo_prefixes.ttl: registry/ontologies.yml
+	./util/make-shacl-prefixes.py $<  > $@.tmp && mv $@.tmp $@
+
 # Use Apache-Jena RIOT to convert jsonld to n-triples
 # NOTE: UGLY HACK. If there is a problem then Jena will write WARN message (to stdout!!!), there appears to
 #  be no way to get it to flag this even with strict and check options, so we do a check with grep, ugh.
