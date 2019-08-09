@@ -11,6 +11,7 @@ homepage: http://purl.obolibrary.org/obo/fbbt
 products:
   - id: fbbt.owl
   - id: fbbt.obo
+  - id: fbbt.json
   - id: fbbt/fbbt-simple.owl
   - id: fbbt/fbbt-simple.obo
 taxon:
@@ -21,9 +22,9 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 build:
-  source_url: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.owl
-  method: owl2obo
-  infallible: 1
+  checkout: git clone https://github.com/FlyBase/drosophila-anatomy-developmental-ontology.git
+  system: git
+  path: "."
 tracker: http://purl.obolibrary.org/obo/fbbt/tracker
 browsers:
   - label: FB
