@@ -11,13 +11,15 @@ homepage: http://purl.obolibrary.org/obo/fbcv
 products:
   - id: fbcv.owl
   - id: fbcv.obo
+  - id: fbcv.json
 title: FlyBase Controlled Vocabulary
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 build:
-  source_url: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.owl
-  method: obo2owl
+  checkout: git clone https://github.com/FlyBase/flybase-controlled-vocabulary.git
+  system: git
+  path: "."
 tracker: https://github.com/FlyBase/flybase-controlled-vocabulary/issues
 browsers:
   - label: FB
