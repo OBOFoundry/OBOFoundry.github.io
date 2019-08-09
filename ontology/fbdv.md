@@ -11,6 +11,7 @@ homepage: http://purl.obolibrary.org/obo/fbdv
 products:
   - id: fbdv.owl
   - id: fbdv.obo
+  - id: fbdv.json
   - id: fbdv/fbdv-simple.owl
   - id: fbdv/fbdv-simple.obo
 taxon:
@@ -21,9 +22,9 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 build:
-  source_url: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv/releases/fbdv.owl
-  method: obo2owl
-  infallible: 0
+  checkout: git clone https://github.com/obophenotype/c-elegans-development-ontology.git
+  system: git
+  path: "."
 tracker: http://purl.obolibrary.org/obo/fbdv/tracker
 browsers:
   - label: FB
