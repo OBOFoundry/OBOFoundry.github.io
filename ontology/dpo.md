@@ -11,7 +11,7 @@ homepage: http://purl.obolibrary.org/obo/fbcv
 products:
   - id: dpo.owl
   - id: dpo.obo
-  - id: dpo-base.owl
+  - id: dpo.json
 taxon:
   id: NCBITaxon:7227
   label: Drosophila
@@ -20,9 +20,9 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 build:
-  source_url: http://purl.obolibrary.org/obo/dpo.owl
-  method: owl2obo
-  infallible: 0
+  checkout: git clone https://github.com/FlyBase/drosophila-phenotype-ontolog.git
+  system: git
+  path: "."
 tracker: https://github.com/FlyBase/drosophila-phenotype-ontology/issues
 browsers:
   - label: FB
