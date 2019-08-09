@@ -22,7 +22,7 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 build:
-  checkout: git clone https://github.com/FlyBase/drosophila-development-ontology.git
+  checkout: git clone https://github.com/FlyBase/drosophila-developmental-ontology.git
   system: git
   path: "."
 tracker: http://purl.obolibrary.org/obo/fbdv/tracker
