@@ -38,7 +38,7 @@ PRINCIPLES := $(wildcard principles/*.md)
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
 
-all: _config.yml registry/ontologies.ttl registry/publications.md registry/obo_context.jsonld
+all: _config.yml registry/ontologies.ttl registry/publications.md registry/obo_context.jsonld registry/obo_prefixes.ttl
 
 pull:
 	git pull
@@ -91,6 +91,11 @@ registry/ontologies.jsonld: registry/ontologies.yml
 
 registry/obo_context.jsonld: registry/ontologies.yml
 	./util/processor.py -i $< extract-context  > $@.tmp && mv $@.tmp $@
+
+# generate triples mapping prefixes to their corresponding PURLs.
+# we use the SHACL vocabulary for this
+registry/obo_prefixes.ttl: registry/ontologies.yml
+	./util/make-shacl-prefixes.py $<  > $@.tmp && mv $@.tmp $@
 
 # Use Apache-Jena RIOT to convert jsonld to n-triples
 # NOTE: UGLY HACK. If there is a problem then Jena will write WARN message (to stdout!!!), there appears to
