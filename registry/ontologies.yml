@@ -266,7 +266,6 @@ ontologies:
   mailing_list: http://groups.google.com/group/obi-users
   ontology_purl: http://purl.obolibrary.org/obo/obi.owl
   products:
-<<<<<<< HEAD
   - description: The full version of OBI in OWL format
     id: obi.owl
     ontology_purl: http://purl.obolibrary.org/obo/obi.owl
@@ -274,12 +273,6 @@ ontologies:
   - description: A collection of important high-level terms and their relations from
       OBI and other ontologies
     id: obi/obi_core.owl
-=======
-  - id: obi.owl
-    ontology_purl: http://purl.obolibrary.org/obo/obi.owl
-    title: OBI
-  - id: obi/obi_core.owl
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
     ontology_purl: http://purl.obolibrary.org/obo/obi/obi_core.owl
     title: OBI Core
   title: Ontology for Biomedical Investigations
@@ -767,10 +760,7 @@ ontologies:
     title: 'The BRENDA Tissue Ontology (BTO): the first all-integrating ontology of
       all organisms for enzyme sources'
   title: BRENDA tissue / enzyme source
-<<<<<<< HEAD
   tracker: https://support.brenda-enzymes.org/open.php?topicId=18
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
 - activity_status: active
   build:
     method: obo2owl
@@ -817,10 +807,7 @@ ontologies:
   - id: cdao.owl
     ontology_purl: http://purl.obolibrary.org/obo/cdao.owl
   title: Comparative Data Analysis Ontology
-<<<<<<< HEAD
   tracker: https://github.com/evoinfo/cdao/issues
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
 - activity_status: active
   build:
     method: owl2obo
@@ -1011,10 +998,7 @@ ontologies:
     title: 'The clinical measurement, measurement method and experimental condition
       ontologies: expansion, improvements and new applications.'
   title: Clinical measurement ontology
-<<<<<<< HEAD
   tracker: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology/issues
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
 - activity_status: active
   build:
     checkout: git clone https://github.com/data2health/contributor-role-ontology.git
@@ -1210,15 +1194,9 @@ ontologies:
     title: FlyBase Browser
     url: http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000347
   build:
-<<<<<<< HEAD
     checkout: git clone https://github.com/FlyBase/drosophila-phenotype-ontolog.git
     path: .
     system: git
-=======
-    infallible: 0
-    method: owl2obo
-    source_url: http://purl.obolibrary.org/obo/fbcv/dpo.owl
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
   contact:
     email: cp390@cam.ac.uk
     label: Clare Pilgrim
@@ -1234,17 +1212,12 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/dpo.owl
   preferredPrefix: FBcv
   products:
-<<<<<<< HEAD
   - id: dpo.owl
     ontology_purl: http://purl.obolibrary.org/obo/dpo.owl
   - id: dpo.obo
     ontology_purl: http://purl.obolibrary.org/obo/dpo.obo
   - id: dpo.json
     ontology_purl: http://purl.obolibrary.org/obo/dpo.json
-=======
-  - id: fbcv/dpo.owl
-    ontology_purl: http://purl.obolibrary.org/obo/fbcv/dpo.owl
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
   publications:
   - id: https://doi.org/10.1186/2041-1480-4-30
     title: The Drosophila phenotype ontology.
@@ -1567,10 +1540,7 @@ ontologies:
   - id: exo.obo
     ontology_purl: http://purl.obolibrary.org/obo/exo.obo
   title: Exposure ontology
-<<<<<<< HEAD
   tracker: https://github.com/CTDbase/exposure-ontology/issues
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
 - activity_status: active
   build:
     checkout: git clone https://github.com/obophenotype/fungal-anatomy-ontology.git
@@ -1638,15 +1608,9 @@ ontologies:
     title: BioPortal Browser
     url: http://bioportal.bioontology.org/ontologies/FB-BT?p=classes
   build:
-<<<<<<< HEAD
     checkout: git clone https://github.com/FlyBase/drosophila-anatomy-developmental-ontology.git
     path: .
     system: git
-=======
-    infallible: 1
-    method: owl2obo
-    source_url: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.owl
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
   contact:
     email: cp390@cam.ac.uk
     label: Clare Pilgrim
@@ -1666,11 +1630,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/fbbt.owl
   - id: fbbt.obo
     ontology_purl: http://purl.obolibrary.org/obo/fbbt.obo
-<<<<<<< HEAD
   - id: fbbt.json
     ontology_purl: http://purl.obolibrary.org/obo/fbbt.json
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
   - id: fbbt/fbbt-simple.owl
     ontology_purl: http://purl.obolibrary.org/obo/fbbt/fbbt-simple.owl
   - id: fbbt/fbbt-simple.obo
@@ -1707,14 +1668,9 @@ ontologies:
     title: FlyBase Browser
     url: http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000013
   build:
-<<<<<<< HEAD
     checkout: git clone https://github.com/FlyBase/flybase-controlled-vocabulary.git
     path: .
     system: git
-=======
-    method: obo2owl
-    source_url: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/fbcv.owl
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
   contact:
     email: cp390@cam.ac.uk
     label: Clare Pilgrim
@@ -1735,11 +1691,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/fbcv.owl
   - id: fbcv.obo
     ontology_purl: http://purl.obolibrary.org/obo/fbcv.obo
-<<<<<<< HEAD
   - id: fbcv.json
     ontology_purl: http://purl.obolibrary.org/obo/fbcv.json
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
   title: FlyBase Controlled Vocabulary
   tracker: https://github.com/FlyBase/flybase-controlled-vocabulary/issues
   usages:
@@ -1754,15 +1707,9 @@ ontologies:
     title: FlyBase Browser
     url: http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008
   build:
-<<<<<<< HEAD
     checkout: git clone https://github.com/FlyBase/drosophila-developmental-ontology.git
     path: .
     system: git
-=======
-    infallible: 0
-    method: obo2owl
-    source_url: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv/releases/fbdv.owl
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
   contact:
     email: cp390@cam.ac.uk
     label: Clare Pilgrim
@@ -1783,11 +1730,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/fbdv.owl
   - id: fbdv.obo
     ontology_purl: http://purl.obolibrary.org/obo/fbdv.obo
-<<<<<<< HEAD
   - id: fbdv.json
     ontology_purl: http://purl.obolibrary.org/obo/fbdv.json
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
   - id: fbdv/fbdv-simple.owl
     ontology_purl: http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl
   - id: fbdv/fbdv-simple.obo
@@ -2572,10 +2516,7 @@ ontologies:
     title: 'The clinical measurement, measurement method and experimental condition
       ontologies: expansion, improvements and new applications.'
   title: Measurement method ontology
-<<<<<<< HEAD
   tracker: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology/issues
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
 - activity_status: active
   build:
     method: obo2owl
@@ -2599,10 +2540,7 @@ ontologies:
   - id: mmusdv.obo
     ontology_purl: http://purl.obolibrary.org/obo/mmusdv.obo
   title: Mouse Developmental Stages
-<<<<<<< HEAD
   tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
 - activity_status: active
   build:
     insert_ontology_id: true
@@ -3253,7 +3191,6 @@ ontologies:
   title: Ontology of Host-Microbiome Interactions
   tracker: https://github.com/ohmi-ontology/ohmi/issues
 - activity_status: active
-<<<<<<< HEAD
   contact:
     email: edong@umich.edu
     label: Edison Ong
@@ -3276,8 +3213,6 @@ ontologies:
   title: Ontology of Host Pathogen Interactions
   tracker: https://github.com/OHPI/ohpi/issues
 - activity_status: active
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
   build:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.obo
@@ -3341,10 +3276,7 @@ ontologies:
   - id: omit.owl
     ontology_purl: http://purl.obolibrary.org/obo/omit.owl
   title: Ontology for MIRNA Target
-<<<<<<< HEAD
   tracker: https://github.com/OmniSearch/omit/issues
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
 - activity_status: active
   build:
     method: obo2owl
@@ -3485,7 +3417,6 @@ ontologies:
   tracker: https://github.com/OPMI/opmi/issues
 - activity_status: active
   contact:
-<<<<<<< HEAD
     email: safisher@upenn.edu
     label: Stephen Fisher
   description: An application ontology designed to annotate next-generation sequencing
@@ -3506,8 +3437,6 @@ ontologies:
   tracker: https://github.com/safisher/ornaseq/issues
 - activity_status: active
   contact:
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
     email: yongqunh@med.umich.edu
     label: Yongqunh He
   description: A biomedical ontology in the domain of vaccine adverse events.
@@ -3523,10 +3452,7 @@ ontologies:
   - id: ovae.owl
     ontology_purl: http://purl.obolibrary.org/obo/ovae.owl
   title: Ontology of Vaccine Adverse Events
-<<<<<<< HEAD
   tracker: https://github.com/OVAE-Ontology/ovae/issues
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
 - activity_status: active
   build:
     checkout: git clone https://github.com/PopulationAndCommunityOntology/pco.git
@@ -3763,11 +3689,8 @@ ontologies:
   products:
   - id: poro.owl
     ontology_purl: http://purl.obolibrary.org/obo/poro.owl
-<<<<<<< HEAD
   - id: poro.obo
     ontology_purl: http://purl.obolibrary.org/obo/poro.obo
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
   publications:
   - id: https://doi.org/10.1186/2041-1480-5-39
     title: 'The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy
@@ -3997,10 +3920,7 @@ ontologies:
     id: NCBITaxon:10114
     label: Rattus
   title: Rat Strain Ontology
-<<<<<<< HEAD
   tracker: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology/issues
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
 - activity_status: active
   build:
     method: owl2obo
@@ -4024,10 +3944,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/rxno.owl
     title: Name Reaction Ontology
   title: Name Reaction Ontology
-<<<<<<< HEAD
   tracker: https://github.com/rsc-ontologies/rxno/issues
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
 - activity_status: active
   build:
     checkout: git clone https://github.com/monarch-initiative/SEPIO-ontology.git
@@ -4055,34 +3972,6 @@ ontologies:
   tracker: https://github.com/monarch-initiative/SEPIO-ontology/issues
 - activity_status: active
   build:
-<<<<<<< HEAD
-=======
-    checkout: git clone https://github.com/obophenotype/sibo.git
-    method: vcs
-    system: git
-  contact:
-    email: cjmungall@lbl.gov
-    label: Chris Mungall
-  description: Social Behavior in insects
-  domain: behavior
-  homepage: https://github.com/obophenotype/sibo
-  id: sibo
-  layout: ontology_detail
-  license:
-    label: CC-BY
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
-  ontology_purl: http://purl.obolibrary.org/obo/sibo.owl
-  products:
-  - id: sibo.owl
-    ontology_purl: http://purl.obolibrary.org/obo/sibo.owl
-  - id: sibo.obo
-    ontology_purl: http://purl.obolibrary.org/obo/sibo.obo
-  title: Social Insect Behavior Ontology
-  tracker: https://github.com/obophenotype/sibo/issues
-- activity_status: active
-  build:
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
     method: obo2owl
     notes: SWITCH
     source_url: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so.obo
@@ -4728,15 +4617,9 @@ ontologies:
     user: http://phenoscape.org
 - activity_status: active
   build:
-<<<<<<< HEAD
     checkout: git clone https://github.com/obophenotype/c-elegans-gross-anatomy-ontology.git
     path: .
     system: git
-=======
-    infallible: 1
-    method: obo2owl
-    source_url: http://github.com/raymond91125/Wao/raw/master/WBbt.obo
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
   contact:
     email: raymond@caltech.edu
     label: Raymond Lee
@@ -4761,21 +4644,12 @@ ontologies:
     id: NCBITaxon:6237
     label: Caenorhabditis
   title: C. elegans Gross Anatomy Ontology
-<<<<<<< HEAD
   tracker: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology/issues
 - activity_status: active
   build:
     checkout: git clone https://github.com/obophenotype/c-elegans-development-ontology.git
     path: .
     system: git
-=======
-  tracker: https://github.com/obophenotype/Wao/issues
-- activity_status: active
-  build:
-    method: obo2owl
-    notes: switch to vcs in dev repo?
-    source_url: https://raw.github.com/draciti/Life-stage-obo/master/worm_development.obo
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
   contact:
     email: draciti@caltech.edu
     label: Daniela Raciti
@@ -4826,11 +4700,6 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/wbphenotype.obo
   - id: wbphenotype-base.owl
     ontology_purl: http://purl.obolibrary.org/obo/wbphenotype-base.owl
-<<<<<<< HEAD
-=======
-  - id: wbphenotype-merged.owl
-    ontology_purl: http://purl.obolibrary.org/obo/wbphenotype-merged.owl
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
   publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995
     title: 'Worm Phenotype Ontology: integrating phenotype data within and beyond
@@ -4873,10 +4742,7 @@ ontologies:
     title: 'The clinical measurement, measurement method and experimental condition
       ontologies: expansion, improvements and new applications.'
   title: Experimental condition ontology
-<<<<<<< HEAD
   tracker: https://github.com/rat-genome-database/XCO-experimental-condition-ontology/issues
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
 - activity_status: active
   build:
     method: obo2owl
@@ -4965,11 +4831,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/zeco.obo
   - id: zeco.owl
     ontology_purl: http://purl.obolibrary.org/obo/zeco.owl
-<<<<<<< HEAD
   - id: zeco.json
     ontology_purl: http://purl.obolibrary.org/obo/zeco.json
-=======
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
   taxon:
     id: NCBITaxon:7954
     label: Danio
@@ -5397,29 +5260,6 @@ ontologies:
   title: CranioMaxilloFacial ontology
 - activity_status: inactive
   build:
-<<<<<<< HEAD
-=======
-    infallible: 1
-    insert_ontology_id: true
-    method: obo2owl
-    source_url: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo
-  contact:
-    email: hastings@ebi.ac.uk
-    label: Janna Hastings
-  description: An ontology of physico-chemical methods and properties.
-  id: fix
-  in_foundry: false
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/fix.owl
-  products:
-  - id: fix.owl
-    ontology_purl: http://purl.obolibrary.org/obo/fix.owl
-  - id: fix.obo
-    ontology_purl: http://purl.obolibrary.org/obo/fix.obo
-  title: Physico-chemical methods and properties
-- activity_status: inactive
-  build:
->>>>>>> ff42f20a5b48f8342b54edafadcce69cf3adae7b
     insert_ontology_id: true
     method: obo2owl
     source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo

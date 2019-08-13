@@ -376,18 +376,42 @@
             "ontology_purl": "http://purl.obolibrary.org/obo/obi.owl",
             "products": [
                 {
+                    "description": "The full version of OBI in OWL format",
                     "id": "obi.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/obi.owl",
                     "title": "OBI"
                 },
                 {
+                    "description": "A collection of important high-level terms and their relations from OBI and other ontologies",
                     "id": "obi/obi_core.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/obi/obi_core.owl",
                     "title": "OBI Core"
                 }
             ],
             "title": "Ontology for Biomedical Investigations",
-            "tracker": "http://purl.obolibrary.org/obo/obi/tracker"
+            "tracker": "http://purl.obolibrary.org/obo/obi/tracker",
+            "usages": [
+                {
+                    "description": "PennTURBO accelerates the processes of finding and connecting key information from clinical records, via semantic modeling of the processes that generated the data. This makes the discovery of previously unappreciated relations between the data possible for research and for operational tasks.",
+                    "example": [
+                        {
+                            "description": "CYP2C1*2/*2 MI patient taking Clopidogrel",
+                            "url": "https://github.com/PennTURBO/Turbo-Documentation/blob/master/IBI_CIC_TURBO_MAM_20190102.pdf"
+                        }
+                    ],
+                    "user": "http://upibi.org/turbo/"
+                },
+                {
+                    "description": "The Evidence & Conclusion Ontology (ECO) describes types of scientific evidence within the biological research domain. ECO uses OBI to logically describe how the evidence arises from an investigation.",
+                    "example": [
+                        {
+                            "description": "rapid amplification of cDNA ends polymerase chain reaction evidence",
+                            "url": "http://purl.obolibrary.org/obo/ECO_0001820"
+                        }
+                    ],
+                    "user": "http://evidenceontology.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -1047,7 +1071,8 @@
                     "title": "The BRENDA Tissue Ontology (BTO): the first all-integrating ontology of all organisms for enzyme sources"
                 }
             ],
-            "title": "BRENDA tissue / enzyme source"
+            "title": "BRENDA tissue / enzyme source",
+            "tracker": "https://support.brenda-enzymes.org/open.php?topicId=18"
         },
         {
             "activity_status": "active",
@@ -1375,7 +1400,8 @@
                     "title": "The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications."
                 }
             ],
-            "title": "Clinical measurement ontology"
+            "title": "Clinical measurement ontology",
+            "tracker": "https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology/issues"
         },
         {
             "activity_status": "active",
@@ -1641,9 +1667,9 @@
                 }
             ],
             "build": {
-                "infallible": 0,
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/dpo.owl"
+                "checkout": "git clone https://github.com/FlyBase/drosophila-phenotype-ontolog.git",
+                "path": ".",
+                "system": "git"
             },
             "contact": {
                 "email": "cp390@cam.ac.uk",
@@ -1671,8 +1697,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/dpo.obo"
                 },
                 {
-                    "id": "dpo-base.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/dpo-base.owl"
+                    "id": "dpo.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/dpo.json"
                 }
             ],
             "publications": [
@@ -2163,7 +2189,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/exo.obo"
                 }
             ],
-            "title": "Exposure ontology"
+            "title": "Exposure ontology",
+            "tracker": "https://github.com/CTDbase/exposure-ontology/issues"
         },
         {
             "activity_status": "active",
@@ -2235,7 +2262,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/fbbi.owl"
                 }
             ],
-            "title": "Biological Imaging Methods Ontology"
+            "title": "Biological Imaging Methods Ontology",
+            "tracker": "https://github.com/CRBS/Biological_Imaging_Methods_Ontology/issues"
         },
         {
             "activity_status": "active",
@@ -2257,9 +2285,9 @@
                 }
             ],
             "build": {
-                "infallible": 1,
-                "method": "owl2obo",
-                "source_url": "https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.owl"
+                "checkout": "git clone https://github.com/FlyBase/drosophila-anatomy-developmental-ontology.git",
+                "path": ".",
+                "system": "git"
             },
             "contact": {
                 "email": "cp390@cam.ac.uk",
@@ -2285,6 +2313,10 @@
                 {
                     "id": "fbbt.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/fbbt.obo"
+                },
+                {
+                    "id": "fbbt.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbt.json"
                 },
                 {
                     "id": "fbbt/fbbt-simple.owl",
@@ -2352,8 +2384,9 @@
                 }
             ],
             "build": {
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.owl"
+                "checkout": "git clone https://github.com/FlyBase/flybase-controlled-vocabulary.git",
+                "path": ".",
+                "system": "git"
             },
             "contact": {
                 "email": "cp390@cam.ac.uk",
@@ -2379,6 +2412,10 @@
                 {
                     "id": "fbcv.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/fbcv.obo"
+                },
+                {
+                    "id": "fbcv.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbcv.json"
                 }
             ],
             "title": "FlyBase Controlled Vocabulary",
@@ -2406,9 +2443,9 @@
                 }
             ],
             "build": {
-                "infallible": 0,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv/releases/fbdv.owl"
+                "checkout": "git clone https://github.com/FlyBase/drosophila-developmental-ontology.git",
+                "path": ".",
+                "system": "git"
             },
             "contact": {
                 "email": "cp390@cam.ac.uk",
@@ -2434,6 +2471,10 @@
                 {
                     "id": "fbdv.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/fbdv.obo"
+                },
+                {
+                    "id": "fbdv.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbdv.json"
                 },
                 {
                     "id": "fbdv/fbdv-simple.owl",
@@ -2925,7 +2966,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/hsapdv.obo"
                 }
             ],
-            "title": "Human Developmental Stages"
+            "title": "Human Developmental Stages",
+            "tracker": "https://github.com/obophenotype/developmental-stage-ontologies/issues"
         },
         {
             "activity_status": "active",
@@ -3542,7 +3584,8 @@
                     "title": "The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications."
                 }
             ],
-            "title": "Measurement method ontology"
+            "title": "Measurement method ontology",
+            "tracker": "https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology/issues"
         },
         {
             "activity_status": "active",
@@ -3575,7 +3618,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/mmusdv.obo"
                 }
             ],
-            "title": "Mouse Developmental Stages"
+            "title": "Mouse Developmental Stages",
+            "tracker": "https://github.com/obophenotype/developmental-stage-ontologies/issues"
         },
         {
             "activity_status": "active",
@@ -3605,7 +3649,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/mod.owl"
                 }
             ],
-            "title": "Protein modification"
+            "title": "Protein modification",
+            "tracker": "https://github.com/HUPO-PSI/psi-mod-CV/issues"
         },
         {
             "activity_status": "active",
@@ -3696,7 +3741,8 @@
                     "title": "Molecular Process Ontology"
                 }
             ],
-            "title": "Molecular Process Ontology"
+            "title": "Molecular Process Ontology",
+            "tracker": "https://github.com/rsc-ontologies/rxno/issues"
         },
         {
             "activity_status": "active",
@@ -4166,7 +4212,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/oae.owl"
                 }
             ],
-            "title": "Ontology of Adverse Events"
+            "title": "Ontology of Adverse Events",
+            "tracker": "https://github.com/OAE-ontology/OAE/issues"
         },
         {
             "activity_status": "active",
@@ -4494,7 +4541,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/olatdv.owl"
                 }
             ],
-            "title": "Medaka Developmental Stages"
+            "title": "Medaka Developmental Stages",
+            "tracker": "https://github.com/obophenotype/developmental-stage-ontologies/issues"
         },
         {
             "activity_status": "active",
@@ -4546,7 +4594,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/omit.owl"
                 }
             ],
-            "title": "Ontology for MIRNA Target"
+            "title": "Ontology for MIRNA Target",
+            "tracker": "https://github.com/OmniSearch/omit/issues"
         },
         {
             "activity_status": "active",
@@ -4613,7 +4662,8 @@
                 "id": "NCBITaxon:9606",
                 "label": "Homo sapiens"
             },
-            "title": "Ontology of Medically Related Social Entities"
+            "title": "Ontology of Medically Related Social Entities",
+            "tracker": "https://github.com/ufbmi/OMRSE/issues"
         },
         {
             "activity_status": "active",
@@ -4777,7 +4827,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/ovae.owl"
                 }
             ],
-            "title": "Ontology of Vaccine Adverse Events"
+            "title": "Ontology of Vaccine Adverse Events",
+            "tracker": "https://github.com/OVAE-Ontology/ovae/issues"
         },
         {
             "activity_status": "active",
@@ -4906,7 +4957,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/pdumdv.obo"
                 }
             ],
-            "title": "Platynereis Developmental Stages"
+            "title": "Platynereis Developmental Stages",
+            "tracker": "https://github.com/obophenotype/developmental-stage-ontologies/issues"
         },
         {
             "activity_status": "active",
@@ -5281,7 +5333,8 @@
                     "title": "The pathway ontology - updates and applications."
                 }
             ],
-            "title": "Pathway ontology"
+            "title": "Pathway ontology",
+            "tracker": "https://github.com/rat-genome-database/PW-Pathway-Ontology/issues"
         },
         {
             "activity_status": "active",
@@ -5474,7 +5527,8 @@
                 "id": "NCBITaxon:10114",
                 "label": "Rattus"
             },
-            "title": "Rat Strain Ontology"
+            "title": "Rat Strain Ontology",
+            "tracker": "https://github.com/rat-genome-database/RS-Rat-Strain-Ontology/issues"
         },
         {
             "activity_status": "active",
@@ -5504,7 +5558,8 @@
                     "title": "Name Reaction Ontology"
                 }
             ],
-            "title": "Name Reaction Ontology"
+            "title": "Name Reaction Ontology",
+            "tracker": "https://github.com/rsc-ontologies/rxno/issues"
         },
         {
             "activity_status": "active",
@@ -6321,7 +6376,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/mp-hp-view.owl"
                 }
             ],
-            "title": "Unified phenotype ontology (uPheno)"
+            "title": "Unified phenotype ontology (uPheno)",
+            "tracker": "https://github.com/obophenotype/upheno/issues"
         },
         {
             "activity_status": "active",
@@ -6597,7 +6653,8 @@
                     "title": "The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications."
                 }
             ],
-            "title": "Experimental condition ontology"
+            "title": "Experimental condition ontology",
+            "tracker": "https://github.com/rat-genome-database/XCO-experimental-condition-ontology/issues"
         },
         {
             "activity_status": "active",
@@ -6731,8 +6788,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/zeco.owl"
                 },
                 {
-                    "id": "zeco.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/zeco.obo"
+                    "id": "zeco.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/zeco.json"
                 }
             ],
             "taxon": {
