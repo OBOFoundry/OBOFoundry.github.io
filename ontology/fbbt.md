@@ -59,6 +59,12 @@ usages:
     example:
       - url: "http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBbt:00005106"
         description: "alleles, constructs and insertions annotated to neuron in FlyBase"
+  - user: https://monarchinitiative.org/
+    type: annotation
+    description: FBbt is used by the Monarch Initiative for phenotype annotations.
+    examples:
+     - url: https://monarchinitiative.org/phenotype/FBbt%3A00005684PHENOTYPE
+    reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
 activity_status: active
 ---
 
