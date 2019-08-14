@@ -26,6 +26,13 @@ build:
 publications:
 - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995
   title: "Worm Phenotype Ontology: integrating phenotype data within and beyond the C. elegans community."
+usages:
+ - user: https://monarchinitiative.org/
+   type: annotation
+   description: WBPhenotype is used by the Monarch Initiative for phenotype annotations.
+   examples:
+    - url: https://monarchinitiative.org/phenotype/WBPhenotype%3A0000370
+   reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
 activity_status: active
 ---
 
