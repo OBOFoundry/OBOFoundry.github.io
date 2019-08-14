@@ -30,5 +30,12 @@ tracker: https://github.com/obophenotype/zebrafish-phenotype-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+usages:
+ - user: https://monarchinitiative.org/
+   type: annotation
+   description: ZP is used by the Monarch Initiative for phenotype annotations.
+   examples:
+    - url: https://monarchinitiative.org/phenotype/ZP:0005692
+   reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
 activity_status: active
 ---
