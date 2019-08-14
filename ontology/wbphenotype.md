@@ -29,7 +29,7 @@ publications:
 usages:
  - user: https://monarchinitiative.org/
    type: annotation
-   description: WBPhenotype is used by the Monarch Initiative for phenotype annotations.
+   description: Monarch integrates phenotype annotations from sources such as WormBase, and allows for querying using the WBPhenotype ontology.
    examples:
     - url: https://monarchinitiative.org/phenotype/WBPhenotype%3A0000370
    reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
