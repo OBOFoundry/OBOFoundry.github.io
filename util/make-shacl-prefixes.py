@@ -46,7 +46,7 @@ def main(args):
     prefix = ont.get('preferredPrefix', ont['id'].upper())
     print(f'{sep}[ sh:prefix "{prefix}" ; sh:namespace "http://purl.obolibrary.org/obo/{prefix}_"]')
     sep = ','
-  print(']')
+  print('] .')
     
     
   
