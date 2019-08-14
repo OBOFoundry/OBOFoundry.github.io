@@ -36,10 +36,9 @@ usages:
    examples:
     - url: http://amigo.geneontology.org/amigo/term/GO:0055085
       description: annotations to transmembrane transport
-activity_status: active
  - user: https://monarchinitiative.org/
    type: annotation
-   description: The Monarch Initiative provides semantic-based integrative data anlaysis to connect phenotypes to genotypes across species.
+   description: ECO is used by the Monarch Initiative for evidence types for disease to phenotype annotations.
    examples:
     - url: https://monarchinitiative.org/phenotype/HP%3A0001300#diseases
    reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
