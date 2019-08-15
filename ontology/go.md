@@ -86,7 +86,7 @@ products:
    title: "GO (OBO Format edition), daily snapshot release"
    description: "Equivalent to go.owl, but released daily. Note the snapshot release is not archived."
    page: http://geneontology.org/page/download-ontology
-depicted_by: http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png
+depicted_by: http://geneontology.org/assets/go-logo-icon.mini.png
 usages:
  - user: http://geneontology.org
    type: annotation
