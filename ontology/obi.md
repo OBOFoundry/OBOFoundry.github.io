@@ -22,6 +22,9 @@ products:
   - id: obi.owl
     description: The full version of OBI in OWL format
     title: OBI
+  - id: obi.obo
+    description: The OBO-format version of OBI
+    title: OBI in OBO
   - id: obi/obi_core.owl
     description: A collection of important high-level terms and their relations from OBI and other ontologies
     title: OBI Core
