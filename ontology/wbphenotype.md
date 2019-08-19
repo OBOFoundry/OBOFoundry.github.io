@@ -27,7 +27,7 @@ publications:
 - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995
   title: "Worm Phenotype Ontology: integrating phenotype data within and beyond the C. elegans community."
 usages:
- - user: https://www.wormbase.org/#012-34-5
+ - user: https://www.wormbase.org/
    type: annotation
    description: WormBase uses WBPhenotype to curate worm phenotypes, and to allow search and indexing on the WormBase site
    examples:
