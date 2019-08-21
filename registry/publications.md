@@ -20,7 +20,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Drosophila Phenotype Ontology (dpo): [The Drosophila phenotype ontology.](https://doi.org/10.1186/2041-1480-4-30)
 - Drosophila gross anatomy (fbbt): [The Drosophila anatomy ontology. [Journal of Biomedical Semantics](https://doi.org/10.1186/2041-1480-4-32)
 - Environment Ontology (envo): [The environment ontology: contextualising biological and biomedical entities](http://www.dx.doi.org/10.1186/2041-1480-4-43)
-- Evidence ontology (eco): [Standardized description of scientific evidence using the Evidence Ontology (ECO)](http://www.ncbi.nlm.nih.gov/pubmed/25052702)
+- Evidence ontology (eco): [ECO, the Evidence & Conclusion Ontology: community standard for evidence information.](http://www.ncbi.nlm.nih.gov/pubmed/30407590)
 - Experimental condition ontology (xco): [Three ontologies to define phenotype measurement data.](http://www.ncbi.nlm.nih.gov/pubmed/22654893)
 - Fission Yeast Phenotype Ontology (fypo): [FYPO: The Fission Yeast Phenotype Ontology.](http://www.ncbi.nlm.nih.gov/pubmed/23658422)
 - Human Disease Ontology (doid): [Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data](http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409)

@@ -233,7 +233,7 @@
                     "type": "BridgeOntology"
                 }
             ],
-            "depicted_by": "http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png",
+            "depicted_by": "http://geneontology.org/assets/go-logo-icon.mini.png",
             "description": "An ontology for describing the function of genes and gene products",
             "domain": "biology",
             "facebook": "https://www.facebook.com/Gene-Ontology-305908656519/",
@@ -380,6 +380,12 @@
                     "id": "obi.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/obi.owl",
                     "title": "OBI"
+                },
+                {
+                    "description": "The OBO-format version of OBI",
+                    "id": "obi.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/obi.obo",
+                    "title": "OBI in OBO"
                 },
                 {
                     "description": "A collection of important high-level terms and their relations from OBI and other ontologies",
@@ -1846,6 +1852,10 @@
             ],
             "publications": [
                 {
+                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/30407590",
+                    "title": "ECO, the Evidence & Conclusion Ontology: community standard for evidence information."
+                },
+                {
                     "id": "http://www.ncbi.nlm.nih.gov/pubmed/25052702",
                     "title": "Standardized description of scientific evidence using the Evidence Ontology (ECO)"
                 }
@@ -1863,6 +1873,17 @@
                     ],
                     "type": "annotation",
                     "user": "http://geneontology.org"
+                },
+                {
+                    "description": "ECO is used by the Monarch Initiative for evidence types for disease to phenotype annotations.",
+                    "examples": [
+                        {
+                            "url": "https://monarchinitiative.org/phenotype/HP%3A0001300#diseases"
+                        }
+                    ],
+                    "reference": "https://academic.oup.com/nar/article/45/D1/D712/2605791",
+                    "type": "annotation",
+                    "user": "https://monarchinitiative.org/"
                 }
             ]
         },
@@ -3711,7 +3732,20 @@
                 "label": "Metazoa"
             },
             "title": "Mondo Disease Ontology",
-            "tracker": "https://github.com/monarch-initiative/mondo-build/issues"
+            "tracker": "https://github.com/monarch-initiative/mondo-build/issues",
+            "usages": [
+                {
+                    "description": "Mondo is used by the Monarch Initiative for disease annotations.",
+                    "examples": [
+                        {
+                            "url": "https://monarchinitiative.org/phenotype/HP:0001300#diseases"
+                        }
+                    ],
+                    "reference": "https://academic.oup.com/nar/article/45/D1/D712/2605791",
+                    "type": "annotation",
+                    "user": "https://monarchinitiative.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -3764,10 +3798,9 @@
                 }
             ],
             "build": {
-                "infallible": 1,
-                "method": "archive",
-                "path": "archive/src/ontology",
-                "source_url": "http://build.berkeleybop.org/job/build-mp-edit/lastSuccessfulBuild/artifact/*zip*/archive.zip"
+                "checkout": "git clone https://github.com/obophenotype/mammalian-phenotype-ontology.git",
+                "path": ".",
+                "system": "git"
             },
             "contact": {
                 "email": "pheno@jax.org",
@@ -3800,13 +3833,17 @@
                 {
                     "id": "mp.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/mp.obo"
+                },
+                {
+                    "id": "mp.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mp.json"
                 }
             ],
             "taxon": {
                 "id": "NCBITaxon:40674",
                 "label": "Mammalia"
             },
-            "title": "Mammalian Phenotype",
+            "title": "Mammalian Phenotype Ontology",
             "tracker": "https://github.com/obophenotype/mammalian-phenotype-ontology/issues"
         },
         {
@@ -6603,7 +6640,31 @@
                 "id": "NCBITaxon:6237",
                 "label": "Caenorhabditis"
             },
-            "title": "C. elegans phenotype"
+            "title": "C. elegans phenotype",
+            "usages": [
+                {
+                    "description": "WormBase uses WBPhenotype to curate worm phenotypes, and to allow search and indexing on the WormBase site",
+                    "examples": [
+                        {
+                            "url": "https://www.wormbase.org/species/c_elegans/gene/WBGene00013855#0c-9g-3"
+                        }
+                    ],
+                    "reference": "https://academic.oup.com/nar/article/46/D1/D869/4563314",
+                    "type": "annotation",
+                    "user": "https://www.wormbase.org/"
+                },
+                {
+                    "description": "Monarch integrates phenotype annotations from sources such as WormBase, and allows for querying using the WBPhenotype ontology.",
+                    "examples": [
+                        {
+                            "url": "https://monarchinitiative.org/phenotype/WBPhenotype%3A0000370"
+                        }
+                    ],
+                    "reference": "https://academic.oup.com/nar/article/45/D1/D712/2605791",
+                    "type": "annotation",
+                    "user": "https://monarchinitiative.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -6901,7 +6962,20 @@
                 }
             ],
             "title": "Zebrafish Phenotype Ontology",
-            "tracker": "https://github.com/obophenotype/zebrafish-phenotype-ontology/issues"
+            "tracker": "https://github.com/obophenotype/zebrafish-phenotype-ontology/issues",
+            "usages": [
+                {
+                    "description": "ZP is used by the Monarch Initiative for phenotype annotations.",
+                    "examples": [
+                        {
+                            "url": "https://monarchinitiative.org/phenotype/ZP:0005692"
+                        }
+                    ],
+                    "reference": "https://academic.oup.com/nar/article/45/D1/D712/2605791",
+                    "type": "annotation",
+                    "user": "https://monarchinitiative.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -7012,7 +7086,20 @@
             "termgenie": "http://hp.termgenie.org",
             "title": "Human Phenotype Ontology",
             "tracker": "https://github.com/obophenotype/human-phenotype-ontology/issues/",
-            "twitter": "hp_ontology"
+            "twitter": "hp_ontology",
+            "usages": [
+                {
+                    "description": "HPO is used by the Monarch Initiative for phenotype annotations.",
+                    "examples": [
+                        {
+                            "url": "https://monarchinitiative.org/phenotype/HP:0001300"
+                        }
+                    ],
+                    "reference": "https://academic.oup.com/nar/article/45/D1/D712/2605791",
+                    "type": "annotation",
+                    "user": "https://monarchinitiative.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
