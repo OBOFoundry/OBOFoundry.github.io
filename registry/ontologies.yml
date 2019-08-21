@@ -1376,6 +1376,24 @@ ontologies:
   title: Geographical Entity Ontology
   tracker: https://ontology.atlassian.net/browse/GEO#selectedTab=com.atlassian.jira.plugin.system.project%3Aissues-panel
 - activity_status: active
+  build: {checkout: 'git clone https://github.com/glygen-glycan-data/GNOme.git', path: .,
+    system: git}
+  contact: {email: nje5@georgetown.edu, github: edwardsnj, label: Nathan Edwards}
+  description: An ontology for glycans based on GlyTouCan, but organized by subsumption.
+  domain: glycan structure
+  homepage: https://github.com/glygen-glycan-data/GNOme
+  id: gno
+  layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/gno.owl
+  products:
+  - {id: gno.owl, ontology_purl: 'http://purl.obolibrary.org/obo/gno.owl'}
+  - {id: gno.obo, ontology_purl: 'http://purl.obolibrary.org/obo/gno.obo'}
+  - {id: gno.json, ontology_purl: 'http://purl.obolibrary.org/obo/gno.json'}
+  title: Glycan Naming Ontology
+  tracker: https://github.com/glygen-glycan-data/GNOme/issues
+- activity_status: active
   contact: {email: dwelter@ebi.ac.uk, label: Danielle Welter}
   description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description
     of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide
