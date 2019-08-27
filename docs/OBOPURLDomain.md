@@ -18,7 +18,7 @@ This SOP is intended for use by the OBO Foundry Technical Working Group. If you 
 ## Prerequisites ##
 1. Someone has requested a new PURL, following the [PURL Request Guidelines](http://www.obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.htm), i.e. they have already sent an email to [obo-discuss](mailto:obo-discuss@googlegroups.com) and created an issue on the [tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues).
 
-## PURL request review process##
+## PURL request review process ##
 1. All members of the OBO community should respond to requests on obo-discuss as appropriate. This is particurly important if the new resource overlaps with an ontology you work on.
 1. Review any new or outstanding PURL requests at the start of each OBO Operations Committee meeting. Ideally, this should happen within two weeks of the issue being created.
 1. If there are any concerns, one person on the OBO ops call is responsible for reaching out to the requestor to try to address them
