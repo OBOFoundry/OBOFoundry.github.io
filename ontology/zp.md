@@ -33,7 +33,7 @@ license:
 usages:
  - user: https://monarchinitiative.org/
    type: annotation
-   description: ZP is used by the Monarch Initiative for phenotype annotations.
+   description: Monarch integrates phenotype annotations from sources such as ZFIIN, and allows for querying using the ZP ontology.
    examples:
     - url: https://monarchinitiative.org/phenotype/ZP:0005692
    reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
