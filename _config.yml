@@ -1010,8 +1010,12 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/envo.owl
   page: https://github.com/EnvironmentOntology/envo
   products:
-  - {id: envo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/envo.owl'}
-  - {id: envo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/envo.obo'}
+  - {id: envo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/envo.owl', title: main
+      ENVO OWL release}
+  - {id: envo.json, ontology_purl: 'http://purl.obolibrary.org/obo/envo.json', title: ENVO
+      in obographs JSON format}
+  - {id: envo.obo, ontology_purl: 'http://purl.obolibrary.org/obo/envo.obo', title: ENVO
+      in OBO Format. May be lossy}
   - {id: subsets/envo-basic.obo, ontology_purl: 'http://purl.obolibrary.org/obo/subsets/envo-basic.obo',
     title: OBO-Basic edition of ENVO}
   - {id: subsets/envoEmpo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/subsets/envoEmpo.owl',
@@ -1095,13 +1099,12 @@ ontologies:
   contact: {email: mah79@cam.ac.uk, github: mah11, label: Midori Harris}
   description: A structured controlled vocabulary for the anatomy of fungi.
   domain: anatomy
-  homepage: http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/
+  homepage: https://github.com/obophenotype/fungal-anatomy-ontology/
   id: fao
   layout: ontology_detail
   license: {label: CC-0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png',
     url: 'http://creativecommons.org/publicdomain/zero/1.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/fao.owl
-  page: http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/#description
   products:
   - {id: fao.owl, ontology_purl: 'http://purl.obolibrary.org/obo/fao.owl'}
   - {id: fao.obo, ontology_purl: 'http://purl.obolibrary.org/obo/fao.obo'}
@@ -1577,6 +1580,20 @@ ontologies:
   - {id: ino.owl, ontology_purl: 'http://purl.obolibrary.org/obo/ino.owl'}
   title: Interaction Network Ontology
   tracker: https://github.com/INO-ontology/ino/issues
+- activity_status: active
+  contact: {email: paul.fabry@usherbrooke.ca, label: Paul Fabry}
+  description: LABO is an ontology of informational entities formalizing clinical
+    laboratory tests prescriptions and reporting documents.
+  domain: clinical documentation
+  homepage: https://github.com/OpenLHS/LABO
+  id: labo
+  layout: ontology_detail
+  license: {label: CC-BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/labo.owl
+  products:
+  - {id: labo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/labo.owl'}
+  title: clinical LABoratory Ontology
 - activity_status: active
   build: {infallible: 1, insert_ontology_id: true, method: obo2owl, source_url: 'ftp://ftp.informatics.jax.org/pub/reports/adult_mouse_anatomy.obo'}
   contact: {email: Terry.Hayamizu@jax.org, github: tfhayamizu, label: Terry Hayamizu}
@@ -3453,7 +3470,8 @@ ontologies:
   title: Zebrafish Phenotype Ontology
   tracker: https://github.com/obophenotype/zebrafish-phenotype-ontology/issues
   usages:
-  - description: ZP is used by the Monarch Initiative for phenotype annotations.
+  - description: Monarch integrates phenotype annotations from sources such as ZFIIN,
+      and allows for querying using the ZP ontology.
     examples:
     - {url: 'https://monarchinitiative.org/phenotype/ZP:0005692'}
     reference: https://academic.oup.com/nar/article/45/D1/D712/2605791

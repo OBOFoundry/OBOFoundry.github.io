@@ -2062,11 +2062,18 @@
             "products": [
                 {
                     "id": "envo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/envo.owl"
+                    "ontology_purl": "http://purl.obolibrary.org/obo/envo.owl",
+                    "title": "main ENVO OWL release"
+                },
+                {
+                    "id": "envo.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/envo.json",
+                    "title": "ENVO in obographs JSON format"
                 },
                 {
                     "id": "envo.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/envo.obo"
+                    "ontology_purl": "http://purl.obolibrary.org/obo/envo.obo",
+                    "title": "ENVO in OBO Format. May be lossy"
                 },
                 {
                     "id": "subsets/envo-basic.obo",
@@ -2228,7 +2235,7 @@
             },
             "description": "A structured controlled vocabulary for the anatomy of fungi.",
             "domain": "anatomy",
-            "homepage": "http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/",
+            "homepage": "https://github.com/obophenotype/fungal-anatomy-ontology/",
             "id": "fao",
             "layout": "ontology_detail",
             "license": {
@@ -2237,7 +2244,6 @@
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/fao.owl",
-            "page": "http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/#description",
             "products": [
                 {
                     "id": "fao.owl",
@@ -3224,6 +3230,31 @@
             ],
             "title": "Interaction Network Ontology",
             "tracker": "https://github.com/INO-ontology/ino/issues"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "paul.fabry@usherbrooke.ca",
+                "label": "Paul Fabry"
+            },
+            "description": "LABO is an ontology of informational entities formalizing clinical laboratory tests prescriptions and reporting documents.",
+            "domain": "clinical documentation",
+            "homepage": "https://github.com/OpenLHS/LABO",
+            "id": "labo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/labo.owl",
+            "products": [
+                {
+                    "id": "labo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/labo.owl"
+                }
+            ],
+            "title": "clinical LABoratory Ontology"
         },
         {
             "activity_status": "active",
@@ -7005,7 +7036,7 @@
             "tracker": "https://github.com/obophenotype/zebrafish-phenotype-ontology/issues",
             "usages": [
                 {
-                    "description": "ZP is used by the Monarch Initiative for phenotype annotations.",
+                    "description": "Monarch integrates phenotype annotations from sources such as ZFIIN, and allows for querying using the ZP ontology.",
                     "examples": [
                         {
                             "url": "https://monarchinitiative.org/phenotype/ZP:0005692"
