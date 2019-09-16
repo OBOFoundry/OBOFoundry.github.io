@@ -1519,6 +1519,20 @@ ontologies:
   title: Information Artifact Ontology
   tracker: https://github.com/information-artifact-ontology/IAO/issues
 - activity_status: active
+  contact: {email: liumeng94@sjtu.edu.cn, label: Meng LIU}
+  description: ICEO is an integrated biological ontology for the description of bacterial
+    integrative and conjugative elements (ICEs).
+  homepage: https://github.com/ontoice/ICEO
+  id: iceo
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/4.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/iceo.owl
+  products:
+  - {id: iceo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/iceo.owl'}
+  title: Integrative and Conjugative Element Ontology
+  tracker: https://github.com/ontoice/ICEO/issues
+- activity_status: active
   contact: {email: yongqunh@med.umich.edu, github: yongqunh, label: Yongqun Oliver
       He}
   description: An ontology of clinical informed consents
