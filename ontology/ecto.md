@@ -51,6 +51,3 @@ license:
 activity_status: active
 ---
 
-Enter a detailed description of your ontology here. You can use arbitrary markdown and HTML.
-You can also embed images too.
-
