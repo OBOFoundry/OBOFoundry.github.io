@@ -956,6 +956,59 @@ ontologies:
   title: An ontology of core ecological entities
   tracker: https://github.com/EcologicalSemantics/ecocore/issues
 - activity_status: active
+  build: {checkout: 'git clone https://github.com/EnvironmentOntology/environmental-exposure-ontology.git',
+    path: ., system: git}
+  contact: {email: annethessen@gmail.com, github: diatomsRcool, label: Anne Thessen}
+  dependencies:
+  - {id: chebi}
+  - {id: envo}
+  - {id: exo}
+  - {id: go}
+  - {id: iao}
+  - {id: maxo}
+  - {id: nbo}
+  - {id: ncit}
+  - {id: ncbitaxon}
+  - {id: npo}
+  - {id: pato}
+  - {id: ro}
+  - {id: uberon}
+  - {id: xco}
+  description: ECTO describes exposures to experimental treatments of plants and model
+    organisms (e.g. exposures to modification of diet, lighting levels, temperature);
+    exposures of humans or any other organisms to stressors through a variety of routes,
+    for purposes of public health, environmental monitoring etc, stimuli, natural
+    and experimental, any kind of environmental condition or change in condition that
+    can be experienced by an organism or population of organisms on earth. The scope
+    is very general and can include for example plant treatment regimens, as well
+    as human clinical exposures (although these may better be handled by a more specialized
+    ontology).
+  domain: environment
+  homepage: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+  id: ecto
+  jobs:
+  - {id: 'https://travis-ci.org/EnvironmentOntology/environmental-exposure-ontology',
+    type: travis-ci}
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/ecto.owl
+  products:
+  - {id: ecto.owl, name: 'Environmental conditions, treatments and exposures ontology
+      main release in OWL format', ontology_purl: 'http://purl.obolibrary.org/obo/ecto.owl'}
+  - {id: ecto.obo, name: 'Environmental conditions, treatments and exposures ontology
+      additional release in OBO format', ontology_purl: 'http://purl.obolibrary.org/obo/ecto.obo'}
+  - {id: ecto.json, name: 'Environmental conditions, treatments and exposures ontology
+      additional release in OBOJSon format', ontology_purl: 'http://purl.obolibrary.org/obo/ecto.json'}
+  - {id: ecto/ecto-base.owl, name: 'Environmental conditions, treatments and exposures
+      ontology main release in OWL format', ontology_purl: 'http://purl.obolibrary.org/obo/ecto/ecto-base.owl'}
+  - {id: ecto/ecto-base.obo, name: 'Environmental conditions, treatments and exposures
+      ontology additional release in OBO format', ontology_purl: 'http://purl.obolibrary.org/obo/ecto/ecto-base.obo'}
+  - {id: ecto/ecto-base.json, name: 'Environmental conditions, treatments and exposures
+      ontology additional release in OBOJSon format', ontology_purl: 'http://purl.obolibrary.org/obo/ecto/ecto-base.json'}
+  title: Environmental conditions, treatments and exposures ontology
+  tracker: https://github.com/EnvironmentOntology/environmental-exposure-ontology/issues
+- activity_status: active
   build: {method: obo2owl, notes: new url soon, source_url: 'ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAPA.obo'}
   contact: {email: Terry.Hayamizu@jax.org, github: tfhayamizu, label: Terry Hayamizu}
   description: Abstract (i.e. non-stage specific) stage-specific anatomical structures
@@ -1844,7 +1897,7 @@ ontologies:
   contact: {email: vasilevs@ohsu.edu, github: nicolevasilevsky, label: Nicole Vasilevsky}
   description: An ontology that harmonizes multiple disease resources.
   domain: disease
-  homepage: https://github.com/monarch-initiative/mondo
+  homepage: https://monarch-initiative.github.io/mondo
   id: mondo
   label: MONDO
   layout: ontology_detail
@@ -3581,6 +3634,25 @@ ontologies:
   - {id: sbo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/sbo.owl'}
   title: Systems Biology Ontology
   tracker: https://sourceforge.net/p/sbo/term-request/
+- activity_status: active
+  browsers:
+  - {label: BioPortal, title: BioPortal Browser, url: 'http://bioportal.bioontology.org/ontologies/TXPO?p=classes'}
+  - {label: TOXPILOT, title: TOXPILOT, url: 'https://toxpilot.nibiohn.go.jp/'}
+  contact: {email: y-yamagata@nibiohn.go.jp, github: txpo-ontology, label: Yuki Yamagata}
+  description: TOXic Process Ontology (TXPO) systematizes a wide variety of terms
+    involving toxicity courses and processes. The first version of TXPO focuses on
+    liver toxicity.
+  domain: toxicity
+  homepage: https://toxpilot.nibiohn.go.jp/
+  id: txpo
+  layout: ontology_detail
+  license: {label: CC-BY version 3.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/txpo.owl
+  products:
+  - {id: txpo.owl, ontology_purl: 'http://purl.obolibrary.org/obo/txpo.owl'}
+  title: Toxic Process Ontology
+  tracker: https://github.com/txpo-ontology/TXPO/issues
 - activity_status: active
   build: {method: obo2owl, source_url: 'http://anobase.vectorbase.org/miro/miro_release.obo'}
   contact: {email: louis@imbb.forth.gr, label: C. Louis}
