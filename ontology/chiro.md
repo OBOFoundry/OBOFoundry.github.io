@@ -9,7 +9,7 @@ build:
   checkout: git clone https://github.com/obophenotype/chiro.git
   system: git
   path: "."
-contact: Nicole Vasilevsky
+contact:
   email: vasilevs@ohsu.edu
   label: Nicole Vasilevsky
   github: nicolevasilevsky
