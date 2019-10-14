@@ -89,7 +89,7 @@ usages:
     description: Annotation and semantic search over microbial data sets
     example:
       - url: https://www.planetmicrobe.org/project/#/samples/200
-        description: "Exposure of ENVO annotations associated with an omic dataset derived from a sample of marine water near Lisboa, taken as part of the Ocean Sampling Day Project (https://www.microb3.eu/osd.html)"  
+        description: "Example metadata of a sample of marine water near Lisboa, taken as part of the Ocean Sampling Day Project (https://www.microb3.eu/osd.html). ENVO is used for the fields environmental feature, material, and biome."  
 activity_status: active
 ---
 
