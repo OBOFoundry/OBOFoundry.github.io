@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'export PATH=${PATH}:/usr/local/bin'
-                sh 'pip install -r requirements.txt'
+                sh 'build.sh'
                 sh 'make build/robot.jar'
             }
         }
