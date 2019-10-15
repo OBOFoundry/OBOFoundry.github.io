@@ -1,0 +1,375 @@
+#!/usr/bin/env python
+
+## ## "Open" Automated Check
+##
+## ### Requirements
+## 1. The ontology **must** have a license both in the registry data and in the ontology file.
+## 2. The licenese **must** be the same in both files.
+## 3. The license *should* be one of the CC0 or CC-BY licenses.
+##
+## ### Implementation
+## The registry data entry is validated with JSON schema using the [license schema](https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/util/schema/license.json). The license schema ensures that a license entry is present and that the entry has a `url` and `label`. The license schema also checks that the license is one of the CC0 or CC-BY licenses. OWL API is then used to check the ontology as an `OWLOntology` object. Annotations on the ontology are retrieved and the `dcterms:license` property is found. The python script ensures that the correct `dcterms:license` property is used. The script compares this license to the registry license to ensure that they are the same.
+
+import jsonschema
+import dash_utils
+
+
+def is_open(ontology, data):
+    """Check FP 1 - Open.
+
+    This method checks the following:
+    - is the registry license present? (ERROR)
+    - is the registry license a valid open license? (WARN)
+    - is the ontology license present? (ERROR)
+    - does the ontology license match the registry license? (ERROR)
+    - does the ontology license use the correct property? (WARN)
+    The registry license is checked by validation against the license schema.
+    The ontology license is retrieved from the OWLOntology object.
+
+    Args:
+        ontology (OWLOntology): ontology object
+        data (dict): parsed ontology registry data from YAML file
+
+    Returns:
+        ERROR, WARN, INFO, or PASS string with optional message.
+    """
+
+    v = OpenValidator(ontology, data)
+
+    loadable = False
+    if ontology:
+        loadable = True
+
+    return process_results(v.registry_license,
+                           v.ontology_license,
+                           v.is_open,
+                           loadable,
+                           v.correct_property,
+                           v.matches_ontology)
+
+
+class OpenValidator():
+    """Validator for FP 1 - Open on OWLOntology objects.
+
+    Attributes:
+        registry_license (str): license URL from registry data
+        is_open (bool): True if registry license is CC0 or CC-BY (None if
+                        missing)
+        ontology_license (str): license URL from ontology
+        correct_property (bool): True if license annotation uses the correct DC
+                                 licenses property (None if missing)
+        matches_ontology (bool): True if registry licenses matches ontology
+                                 license (None if missing)
+    """
+
+    def __init__(self, ontology, data):
+        """Instantiate an OpenValidator.
+
+        Args:
+            ontology (OWLOntology): ontology object
+            data (dict): parsed ontology registry data from YAML file
+        """
+
+        self.registry_license = None
+        if 'license' in data and 'url' in data['license']:
+            self.registry_license = data['license']['url']
+
+        self.is_open = None
+        if self.registry_license is not None:
+            self.is_open = check_registry_license(data)
+
+        self.ontology_license = None
+        self.correct_property = None
+        # set ontology_license and correct_property
+        self.check_ontology_license(ontology)
+
+        self.matches_ontology = compare_licenses(self.registry_license,
+                                                 self.ontology_license)
+
+    def check_ontology_license(self, ontology):
+        """Check if ontology license exists and uses correct propety.
+
+        Retrieve the license in the header and the annotation property used.
+        Set ontology_license (string or None) and correct_property (True,
+        False, or None).
+
+        Args:
+            ontology (OWLOntology): ontology object
+        """
+
+        # if the ontology is missing, we could not load it
+        if ontology is None:
+            return
+
+        # search the annotations to find a license
+        annotations = ontology.getAnnotations()
+        license = dash_utils.get_ontology_annotation_value(annotations,
+                                                         license_prop)
+        bad_license = dash_utils.get_ontology_annotation_value(annotations,
+                                                             bad_license_prop)
+
+        if license:
+            self.ontology_license = license
+            self.correct_property = True
+        elif bad_license:
+            self.ontology_license = bad_license
+            self.correct_property = False
+
+
+def big_is_open(file, data):
+    """Check FP 1 - Open.
+
+    This method checks the following:
+    - is the registry license present? (ERROR)
+    - is the registry license a valid open license? (WARN)
+    - is the ontology license present? (ERROR)
+    - does the ontology license match the registry license? (ERROR)
+    - does the ontology license use the correct property? (WARN)
+    The registry license is checked by validation against the license schema.
+    The ontology license is retrieved from the ontology file.
+
+    Args:
+        file (str): path to ontology file
+        data (dict): parsed ontology regsitry data from YAML file
+
+    Returns:
+        ERROR, WARN, INFO, or PASS string with optional message.
+    """
+
+    v = BigOpenValidator(file, data)
+    return process_results(v.registry_license,
+                           v.ontology_license,
+                           v.is_open,
+                           None,
+                           v.correct_property,
+                           v.matches_ontology)
+
+
+class BigOpenValidator():
+    """Validator for FP 1 - Open on big ontology files.
+
+    Attributes:
+        registry_license (str): license URL from registry data
+        is_open (bool): True if registry license is CC0 or CC-BY (None if
+                        missing)
+        ontology_license (str): license URL from ontology
+        correct_property (bool): True if license annotation uses the correct DC
+                                 licenses property (None if missing)
+        matches_ontology (bool): True if registry licenses matches ontology
+                                 license (None if missing)
+    """
+
+    def __init__(self, file, data):
+        """Instantiate a BigOpenValidator.
+
+        Args:
+            file (str): path to ontology file
+            data (dict): parsed ontology registry data from YAML file
+        """
+
+        self.registry_license = None
+        if 'license' in data and 'url' in data['license']:
+            self.registry_license = data['license']['url']
+
+        self.is_open = None
+        if self.registry_license is not None:
+            self.is_open = check_registry_license(data)
+
+        self.ontology_license = None
+        self.correct_property = None
+        # set ontology_license and correct_property
+        self.check_ontology_license(file)
+
+        self.matches_ontology = compare_licenses(self.registry_license,
+                                                 self.ontology_license)
+
+    def check_ontology_license(self, file):
+        """Check if ontology license exists and uses correct propety.
+
+        Retrieve the license in the header and the annotation property used.
+        Set ontology_license (string or None) and correct_property (True,
+        False, or None).
+
+        Args:
+            file (str): path to ontology file
+        """
+
+        dc11 = None
+        dcterms = None
+        rdf = None
+        owl = None
+        prefixes = True
+
+        with open(file, 'r') as f:
+            for line in f:
+                if prefixes:
+                    # we need to know the prefixes
+                    if 'http://purl.org/dc/elements/1.1' in line:
+                        dc11 = dash_utils.get_prefix(line)
+                    elif 'http://purl.org/dc/terms' in line:
+                        dcterms = dash_utils.get_prefix(line)
+                    elif 'http://www.w3.org/1999/02/22-rdf-syntax-ns#' in line:
+                        rdf = dash_utils.get_prefix(line)
+                    elif 'http://www.w3.org/2002/07/owl#' in line:
+                        owl = dash_utils.get_prefix(line)
+                    elif owl and '{0}:Ontology'.format(owl) in line:
+                        prefixes = False
+                elif '</{0}:Ontology>'.format(owl) in line:
+                    # we don't care about anything outside the header
+                    # if we get here, no license was found
+                    break
+
+                elif dc11 and '{0}:license'.format(dc11) in line:
+                    # incorrect dc license
+                    if rdf and '{0}:resource'.format(rdf) in line:
+                        self.ontology_license = dash_utils.get_resource_value(
+                            line)
+                        self.correct_property = False
+                    else:
+                        self.ontology_license = dash_utils.get_literal_value(
+                            line)
+                        self.correct_property = False
+                    return
+
+                elif dcterms and '{0}:license'.format(dcterms) in line:
+                    # correct dc license
+                    if rdf and '{0}:resource'.format(rdf) in line:
+                        self.ontology_license = dash_utils.get_resource_value(
+                            line)
+                        self.correct_property = True
+                    else:
+                        self.ontology_license = dash_utils.get_literal_value(
+                            line)
+                        self.correct_property = True
+                    return
+
+
+# ---------- UTILITY METHODS ---------- #
+
+
+def check_registry_license(data):
+    """Use the JSON license schema to validate the registry data.
+
+    This ensures that the license is present and one of the CC0 or CC-BY
+    licenses.
+
+    Args:
+        data (dict): parsed ontology registry data from YAML file
+
+    Return:
+        True if data passes validation.
+    """
+
+    try:
+        jsonschema.validate(data, license_schema)
+        return True
+    except jsonschema.exceptions.ValidationError as ve:
+        return False
+
+
+def compare_licenses(registry_license, ontology_license):
+    """Compare the registry and ontology licenses.
+
+    Args:
+        registry_license (str): license URL from the registry
+        ontology_license (str): license URL from the ontology
+
+    Return:
+        True if registry license matches ontology licences;
+        False if the licenses do not match;
+        None if one or both licenses are missing.
+    """
+
+    if ontology_license is None or registry_license is None:
+        return None
+
+    # normalize http vs https
+    fmt_ontology_license = ontology_license.replace('https', 'http').strip()
+    fmt_registry_license = registry_license.replace('https', 'http').strip()
+    return (fmt_ontology_license == fmt_registry_license)
+
+
+def process_results(registry_license,
+                    ontology_license,
+                    is_open,
+                    loadable,
+                    correct_property,
+                    matches_ontology):
+    """Process the results of the validation to create a cell for the dashboard
+    table in the format '{LEVEL}|{OPTIONAL MESSAGE}'.
+
+    Args:
+        registry_license (str): license URL from the registry data
+        ontology_license (str): license URL from the ontology
+        is_open (bool): if True, license is CC0 or CC-BY;
+                        if False, license is not open;
+                        if None, registry license is missing
+        loadable (bool): if True, ontology was loaded;
+                         if False, ontology could not be loaded;
+                         if None, no attempt to load was made (big)
+        correct_property (bool): if True, correct DC license property was used;
+                                 if False, wrong DC license property was used;
+                                 if None, the ontology license is missing
+        matches_ontology (bool): if True, the registry license matches the
+                                 ontology license;
+                                 if False, the registry license does not match;
+                                 if None, one or both licenses are missing
+
+    Return:
+        '{LEVEL}|{OPTIONAL MESSAGE}' where LEVEL is one of PASS, INFO, WARN, or
+        ERROR. The OPTIONAL MESSAGE explains the issues on a non-PASS level.
+    """
+
+    # error messages
+    missing_registry_license = 'missing registry license'
+    missing_ontology_license = 'missing ontology license'
+    load_err = 'unable to load ontology'
+    not_open = 'registry license \'{0}\' is not a valid open license'
+    wrong_prop = 'license should use property \'{0}\''.format(license_prop)
+    no_match = 'ontology license \'{0}\' does not match regsitry license\
+ \'{1}\''
+
+    issues = []
+    level = 'PASS'
+
+    # loadable = None for big ontologies
+    if loadable is False:
+        level = 'INFO'
+        issues.append(load_err)
+
+    # is_open = None if missing registry license
+    if is_open is False:
+        level = 'WARN'
+        issues.append(not_open.format(registry_license))
+
+    # correct_property = None if missing ontology license
+    if correct_property is False:
+        level = 'WARN'
+        issues.append(wrong_prop)
+
+    if not ontology_license:
+        level = 'ERROR'
+        issues.append(missing_ontology_license)
+
+    # matches_ontology = None if missing ontology licenese
+    if matches_ontology is False:
+        level = 'ERROR'
+        issues.append(no_match.format(ontology_license, registry_license))
+
+    if not registry_license:
+        level = 'ERROR'
+        issues.append(missing_registry_license)
+
+    if len(issues) == 0:
+        return level
+
+    return '{0}|{1}'.format(level, '. '.join(issues))
+
+
+# correct dc license property namespace
+license_prop = 'http://purl.org/dc/terms/license'
+# incorrect dc license property namespace
+bad_license_prop = 'http://purl.org/dc/elements/1.1/license'
+
+# license JSON schema for registry validation
+license_schema = dash_utils.load_schema('util/schema/license.json')

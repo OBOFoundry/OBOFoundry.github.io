@@ -126,6 +126,30 @@ tmp/unsorted-ontologies.yml: $(ONTS) | tmp
 extract-metadata: $(ONTS)
 	./util/extract-metadata.py validate $^
 
+
+### OBO Dashboard
+
+# This is the Jenkins job
+# The reports will be archived
+
+dashboard: reports/dashboard.html
+
+RUN_ROBOT = java -jar build/robot.jar python &
+
+build:
+	mkdir -p $@
+
+build/robot.jar: build
+	curl -o $@ -Lk https://build.obolibrary.io/job/ontodev/job/robot/job/py4j/lastSuccessfulBuild/artifact/bin/robot.jar
+
+reports/dashboard.csv: registry/ontologies.yml | reports build/robot.jar
+	$(RUN_ROBOT)
+	./util/principles/dashboard.py $< $@
+
+reports/dashboard.html: reports/dashboard.csv
+	./util/create-html-grid.py $< $@
+
+
 # Note this should *not* be run as part of general travis jobs, it is expensive
 # and may be prone to false positives as it is inherently network-based
 #
