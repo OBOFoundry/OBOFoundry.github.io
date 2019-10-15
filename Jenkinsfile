@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'build.sh'
+                sh './build.sh'
                 sh 'make build/robot.jar'
             }
         }
