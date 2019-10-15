@@ -10,9 +10,9 @@ pipeline {
         }
         stage('dashboard') {
             steps {
-                sh 'kill $(lsof -t -i:25333)'
+                sh 'kill $(lsof -t -i:25333) || true'
                 sh 'make dashboard'
-                sh 'kill $(lsof -t -i:25333)'
+                sh 'kill $(lsof -t -i:25333) || true'
             }
         }
     }
