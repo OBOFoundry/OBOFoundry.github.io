@@ -148,6 +148,8 @@ reports/dashboard.csv: registry/ontologies.yml | reports build/robot.jar
 
 reports/dashboard.html: reports/dashboard.csv
 	./util/create-html-grid.py $< $@
+	mkdir -p reports/assets
+	cp -r assets/svg reports/assets
 
 
 # Note this should *not* be run as part of general travis jobs, it is expensive
