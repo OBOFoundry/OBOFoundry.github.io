@@ -143,7 +143,12 @@ build:
 build/robot.jar: build
 	curl -o $@ -Lk https://build.obolibrary.io/job/ontodev/job/robot/job/py4j/lastSuccessfulBuild/artifact/bin/robot.jar
 
-reports/dashboard.csv: registry/ontologies.yml | reports build/robot.jar
+.PHONY: build/robot-foreign.jar
+build/robot-foreign.jar: build
+	curl -o $@ -Lk  https://build.obolibrary.io/job/ontodev/job/robot/job/562-feature/lastSuccessfulBuild/artifact/bin/robot.jar
+
+
+reports/dashboard.csv: registry/ontologies.yml | reports build/robot.jar build/robot-foreign.jar
 	$(RUN_ROBOT)
 	./util/principles/dashboard.py $< $@
 

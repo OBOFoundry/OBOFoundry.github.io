@@ -269,7 +269,7 @@ def fetch_base_ontology(ns):
         return output
 
     # easier to do this via command line
-    cmd = '''java -jar build/robot.jar merge --input-iri {0} \
+    cmd = '''java -jar build/robot-foreign.jar merge --input-iri {0} \
              remove --base-iri {1} --axioms external \
              -p false --output {2}'''.format(purl, base, output)
     print(cmd)
