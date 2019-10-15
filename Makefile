@@ -139,6 +139,7 @@ RUN_ROBOT = java -jar build/robot.jar python &
 build:
 	mkdir -p $@
 
+.PHONY: build/robot.jar
 build/robot.jar: build
 	curl -o $@ -Lk https://build.obolibrary.io/job/ontodev/job/robot/job/py4j/lastSuccessfulBuild/artifact/bin/robot.jar
 
