@@ -63,6 +63,9 @@ tmp:
 reports:
 	mkdir -p $@
 
+reports/robot:
+	mkdir -p $@
+
 
 ### Build Configuration Files
 
@@ -147,7 +150,7 @@ build/robot.jar: build
 build/robot-foreign.jar: build
 	curl -o $@ -Lk  https://build.obolibrary.io/job/ontodev/job/robot/job/562-feature/lastSuccessfulBuild/artifact/bin/robot.jar
 
-reports/dashboard.csv: registry/ontologies.yml | reports build/robot.jar build/robot-foreign.jar
+reports/dashboard.csv: registry/ontologies.yml | reports/robot build/robot.jar build/robot-foreign.jar
 	kill $$(lsof -t -i:25333) || true
 	$(RUN_ROBOT)
 	./util/principles/dashboard.py $< $@
