@@ -75,27 +75,11 @@ def main(args):
             continue
             if 'is_obsolete' in data and data['is_obsolete'] is 'true':
                 continue
-            try:
-                dashboard_map[ns] = big_check_principles(ns, data)
-            except Exception as e:
-                # delete any partial entry if it exists
-                if ns in dashboard_map:
-                    del dashboard_map[ns]
-                print(
-                    'ERROR - Unable to run principle check on {0}\
-\nCAUSE:\n'.format(ns, str(e)), flush=True)
+            dashboard_map[ns] = big_check_principles(ns, data)
         else:
             if 'is_obsolete' in data and data['is_obsolete'] is 'true':
                 continue
-            try:
-                dashboard_map[ns] = check_principles(ns, data)
-            except Exception as e:
-                # delete any partial entry if it exists
-                if ns in dashboard_map:
-                    del dashboard_map[ns]
-                print(
-                    'ERROR - Unable to run principle check on {0}\
-\nCAUSE:\n'.format(ns, str(e)), flush=True)
+            dashboard_map[ns] = check_principles(ns, data)
     save_dashboard(dashboard_map, outfile)
 
     # clean up
