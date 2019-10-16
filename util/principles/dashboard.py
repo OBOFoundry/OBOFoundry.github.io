@@ -83,7 +83,7 @@ def main(args):
                     del dashboard_map[ns]
                 print(
                     'ERROR - Unable to run principle check on {0}\
-\nCAUSE:\n'.format(ns, str(e)))
+\nCAUSE:\n'.format(ns, str(e)), flush=True)
         else:
             if 'is_obsolete' in data and data['is_obsolete'] is 'true':
                 continue
@@ -95,7 +95,7 @@ def main(args):
                     del dashboard_map[ns]
                 print(
                     'ERROR - Unable to run principle check on {0}\
-\nCAUSE:\n'.format(ns, str(e)))
+\nCAUSE:\n'.format(ns, str(e)), flush=True)
     save_dashboard(dashboard_map, outfile)
 
     # clean up
@@ -105,11 +105,11 @@ def main(args):
 def check_principles(ns, data):
     '''Given an ontology ID and the corresponding data from the YAML,
     run the automated principle validation. Return a map of results.'''
-    print('Checking ' + ns)
+    print('Checking ' + ns, flush=True)
     ont_file = fetch_base_ontology(ns)
     ont = load_ontology_from_file(ont_file)
 
-    print('Running ROBOT report on %s...' % ns)
+    print('Running ROBOT report on {0}...'.format(ns), flush=True)
     report = report_utils.run_report(robot_gateway, io_helper, ns, ont)
 
     file = 'build/%s.owl' % ns
@@ -143,10 +143,10 @@ def check_principles(ns, data):
 def big_check_principles(ns, data):
     '''Given an ontology ID and the corresponding data from the YAML,
     run the automated principle validation. Return a map of results.'''
-    print('Checking ' + ns)
+    print('Checking ' + ns, flush=True)
     file = download_ontology(ns)
 
-    print('Running ROBOT report on {0}...'.format(ns))
+    print('Running ROBOT report on {0}...'.format(ns), flush=True)
     report_obj = report_utils.BigReport(robot_gateway, ns, file)
     report = report_obj.get_report()
     good_format = report_obj.get_good_format()
@@ -192,7 +192,7 @@ def save_dashboard(dashboard_map, outfile):
             info = 0
             for k, val in check_map.items():
                 if val is None:
-                    print('Missing value for check {0} on {1}'.format(k, ns))
+                    print('Missing value for check {0} on {1}'.format(k, ns), flush=True)
                     continue
                 if val.startswith('ERROR'):
                     err += 1
@@ -274,11 +274,11 @@ def fetch_base_ontology(ns):
     cmd = '''java -jar build/robot-foreign.jar merge --input-iri {0} \
              remove --base-iri {1} --axioms external \
              -p false --output {2}'''.format(purl, base, output)
-    print(cmd)
+    print(cmd, flush=True)
     os.system(cmd)
 
     if not os.path.isfile(output):
-        print('Unable to retrieve {0}'.format(ns))
+        print('Unable to retrieve {0}'.format(ns), flush=True)
         return None
     return output
 
@@ -290,21 +290,21 @@ def load_ontology_from_file(path):
     try:
         ont = io_helper.loadOntology(path)
     except Exception as e:
-        print('Unable to load \'{0}\''.format(path))
+        print('Unable to load \'{0}\''.format(path), flush=True)
         return None
-    print('Loaded \'{0}\''.format(path))
+    print('Loaded \'{0}\''.format(path), flush=True)
     return ont
 
 
 def load_ontology_from_iri(purl):
     '''Given a PURL, return an OWLOntology object.'''
-    print('Retrieving <{0}>'.format(purl))
+    print('Retrieving <{0}>'.format(purl), flush=True)
     iri = gateway.jvm.org.semanticweb.owlapi.model.IRI.create(purl)
     ont = None
     try:
         ont = io_helper.loadOntology(iri)
     except Exception as e:
-        print('ERROR - Unable to load <{0}>'.format(purl))
+        print('ERROR - Unable to load <{0}>'.format(purl), flush=True)
         return None
     print('Loaded <{0}>'.format(purl))
     return ont
@@ -316,11 +316,11 @@ def download_ontology(ns):
     purl = 'http://purl.obolibrary.org/obo/%s.owl' % ns.lower()
     file = 'build/%s.owl' % ns
     if not os.path.isfile(file):
-        print('Downloading <{0}>'.format(purl))
+        print('Downloading <{0}>'.format(purl), flush=True)
         curl = 'curl -Lk {0} > {1}'.format(purl, file)
         os.system(curl)
     if not os.path.isfile(file):
-        print('ERROR - Unable to download {0}'.format(ns))
+        print('ERROR - Unable to download {0}'.format(ns), flush=True)
         return None
     return file
 
