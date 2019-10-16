@@ -139,16 +139,16 @@ RUN_ROBOT = java -jar build/robot.jar python &
 build:
 	mkdir -p $@
 
-.PHONY: build/robot.jar
+#.PHONY: build/robot.jar
 build/robot.jar: build
 	curl -o $@ -Lk https://build.obolibrary.io/job/ontodev/job/robot/job/py4j/lastSuccessfulBuild/artifact/bin/robot.jar
 
-.PHONY: build/robot-foreign.jar
+#.PHONY: build/robot-foreign.jar
 build/robot-foreign.jar: build
 	curl -o $@ -Lk  https://build.obolibrary.io/job/ontodev/job/robot/job/562-feature/lastSuccessfulBuild/artifact/bin/robot.jar
 
-
 reports/dashboard.csv: registry/ontologies.yml | reports build/robot.jar build/robot-foreign.jar
+	kill $$(lsof -t -i:25333) || true
 	$(RUN_ROBOT)
 	./util/principles/dashboard.py $< $@
 
