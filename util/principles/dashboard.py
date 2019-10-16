@@ -82,7 +82,8 @@ def main(args):
                 if ns in dashboard_map:
                     del dashboard_map[ns]
                 print(
-                    'ERROR - Unable to run principle check on {0}'.format(ns))
+                    'ERROR - Unable to run principle check on {0}\
+\nCAUSE:\n'.format(ns, str(e)))
         else:
             if 'is_obsolete' in data and data['is_obsolete'] is 'true':
                 continue
@@ -93,7 +94,8 @@ def main(args):
                 if ns in dashboard_map:
                     del dashboard_map[ns]
                 print(
-                    'ERROR - Unable to run principle check on {0}'.format(ns))
+                    'ERROR - Unable to run principle check on {0}\
+\nCAUSE:\n'.format(ns, str(e)))
     save_dashboard(dashboard_map, outfile)
 
     # clean up
