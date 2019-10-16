@@ -11,6 +11,7 @@ pipeline {
         stage('dashboard') {
             steps {
                 sh 'export PYTHONUNBUFFERED=1'
+                sh 'kill $(lsof -t -i:25333) || true'
                 sh 'make dashboard'
             }
         }
