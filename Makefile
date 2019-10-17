@@ -135,30 +135,57 @@ extract-metadata: $(ONTS)
 # This is the Jenkins job
 # The reports will be archived
 
-dashboard: reports/dashboard.html
+dashboard: build/dashboard.zip
 
 RUN_ROBOT = java -jar build/robot.jar python &
 
+# Build directories
 build:
+	mkdir -p $@
+build/ontologies:
 	mkdir -p $@
 
 #.PHONY: build/robot.jar
 build/robot.jar: build
 	curl -o $@ -Lk https://build.obolibrary.io/job/ontodev/job/robot/job/py4j/lastSuccessfulBuild/artifact/bin/robot.jar
 
+# This version of ROBOT includes features for removing external axioms to create 'base' artefacts
+# This will be removed once this feature is released
 #.PHONY: build/robot-foreign.jar
 build/robot-foreign.jar: build
 	curl -o $@ -Lk  https://build.obolibrary.io/job/ontodev/job/robot/job/562-feature/lastSuccessfulBuild/artifact/bin/robot.jar
 
-reports/dashboard.csv: registry/ontologies.yml | reports/robot build/robot.jar build/robot-foreign.jar
-	kill $$(lsof -t -i:25333) || true
+# Generate the initial dashboard results file
+# ALWAYS make sure nothing is running on port 25333
+# Then boot Py4J gateway to ROBOT on that port
+reports/dashboard.csv: registry/ontologies.yml | reports/robot build/ontologies build/robot.jar build/robot-foreign.jar
 	$(RUN_ROBOT)
 	./util/principles/dashboard.py $< $@
 
+# Generate the HTML grid output for dashboard
 reports/dashboard.html: reports/dashboard.csv
 	./util/create-html-grid.py $< $@
-	mkdir -p reports/assets
-	cp -r assets/svg reports/assets
+
+# Move all important results to a dashboard directory
+build/dashboard: reports/dashboard.html
+	mkdir -p $@
+	mkdir -p $@/assets
+	cp $< $@
+	cp -r reports/robot $@
+	cp -r reports/principles $@
+	cp -r assets/svg $@/assets
+
+# Compress dashboard directory for Jenkins archiving
+build/dashboard.zip: build/dashboard
+	zip $@ $<
+
+# Clean up, removing ontology files
+# We don't want to keep them because we will download new ones each time to stay up-to-date
+# Reports are all archived in build/dashboard.zip
+clean-dashboard: build/dashboard.zip
+	rm -rf build/ontologies
+	rm -rf reports/robot
+	rm -rf reports/principles
 
 
 # Note this should *not* be run as part of general travis jobs, it is expensive

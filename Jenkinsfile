@@ -10,16 +10,17 @@ pipeline {
         }
         stage('dashboard') {
             steps {
-                sh 'export PYTHONUNBUFFERED=1'
                 sh 'kill $(lsof -t -i:25333) || true'
-                sh 'make dashboard'
+                sh 'export PYTHONUNBUFFERED=1'
+                sh 'make clean-dashboard'
+                sh 'kill $(lsof -t -i:25333)'
             }
         }
     }
 
     post {
         always {
-            archiveArtifacts artifacts: 'reports/*', fingerprint: true
+            archiveArtifacts artifacts: 'build/*.zip', fingerprint: true
         }
     }
 }

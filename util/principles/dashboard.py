@@ -24,8 +24,9 @@ import report_utils
 from argparse import ArgumentParser
 from py4j.java_gateway import JavaGateway
 
+foundry = ['bfo', 'go', 'uberon', 'xao']
 big_onts = ['chebi', 'bto', 'uberon', 'ncbitaxon', 'pr', 'ncit', 'gaz']
-foundry = ['bfo', 'doid', 'go', 'obi', 'pato', 'po', 'xao', 'zfa']
+obo = 'http://purl.obolibrary.org/obo'
 
 
 def main(args):
@@ -61,7 +62,7 @@ def main(args):
 
     # RO properties for relations check
     print('Retrieving RO properties')
-    ro = load_ontology_from_iri('http://purl.obolibrary.org/obo/ro.owl')
+    ro = load_ontology_from_iri('{0}/ro.owl'.format(obo))
     ro_merged = robot_gateway.MergeOperation.merge(ro)
     ro_props = fp_007.get_properties('ro', ro)
 
@@ -71,26 +72,33 @@ def main(args):
     # Run checks and save to file
     dashboard_map = {}
     for ns, data in data_map.items():
-        if ns in big_onts:
+        if ns not in foundry:
             continue
+        if ns in big_onts:
+            # big ontologies cannot be easily loaded by ROBOT
+            # some methods use XML parsing instead
+            # (assuming the format is RDF/XML)
             if 'is_obsolete' in data and data['is_obsolete'] is 'true':
                 continue
             try:
                 dashboard_map[ns] = big_check_principles(ns, data)
             except Exception as e:
+                del dashboard_map[ns]
                 print(
-                    'ERROR - Unable to finish principle check on {0}'.format(
-                        ns),
+                    'ERROR: Unable to finish check on {0}\nCAUSE:\n{1}'.format(
+                        ns, str(e)),
                     flush=True)
         else:
+            # otherwise, just run the normal checks using ROBOT and OWLAPI
             if 'is_obsolete' in data and data['is_obsolete'] is 'true':
                 continue
             try:
                 dashboard_map[ns] = check_principles(ns, data)
             except Exception as e:
+                del dashboard_map[ns]
                 print(
-                    'ERROR - Unable to finish principle check on {0}'.format(
-                        ns),
+                    'ERROR: Unable to finish check on {0}\nCAUSE:\n{1}'.format(
+                        ns, str(e)),
                     flush=True)
     save_dashboard(dashboard_map, outfile)
 
@@ -108,26 +116,8 @@ def check_principles(ns, data):
     print('Running ROBOT report on {0}...'.format(ns), flush=True)
     report = report_utils.run_report(robot_gateway, io_helper, ns, ont)
 
-    file = 'build/%s.owl' % ns
-
-    check_map = {}
-    check_map[1] = fp_001.is_open(ont, data)
-    check_map[2] = fp_002.is_common_format(ont)
-    check_map[3] = fp_003.has_valid_uris(robot_gateway, ns, ont)
-    check_map[4] = fp_004.has_versioning(ont)
-    check_map[5] = fp_005.has_scope(data, domain_map)
-    check_map[6] = fp_006.has_valid_definitions(report)
-    check_map[7] = fp_007.has_valid_relations(ns, ont, ro_props)
-    check_map[8] = fp_008.has_documentation(data)
-    check_map[9] = fp_009.has_users(data)
-    # FP 10 cannot be automatically validated
-    check_map[11] = fp_011.has_contact(data)
-    check_map[12] = fp_012.has_valid_labels(report)
-    check_map[16] = fp_016.is_maintained(ont)
-
-    # add the report results to the dashboard
-    check_map['report'] = report_utils.process_report(
-        robot_gateway, ns, report)
+    # run each principle check
+    check_map = run_checks(robot_gateway, ns, ont, None, report, data)
 
     # remove from memory
     del report
@@ -147,28 +137,145 @@ def big_check_principles(ns, data):
     report = report_obj.get_report()
     good_format = report_obj.get_good_format()
 
-    check_map = {}
-    check_map[1] = fp_001.big_is_open(file, data)
-    check_map[2] = fp_002.big_is_common_format(True)  # good_format
-    check_map[3] = fp_003.big_has_valid_uris(ns, file)
-    check_map[4] = fp_004.big_has_versioning(file)
-    check_map[5] = fp_005.has_scope(data, domain_map)
-    check_map[6] = fp_006.has_valid_definitions(report)
-    check_map[7] = fp_007.big_has_valid_relations(ns, file, ro_props)
-    check_map[8] = fp_008.has_documentation(data)
-    check_map[9] = fp_009.has_users(data)
-    # FP 10 cannot be automatically validated
-    check_map[11] = fp_011.has_contact(data)
-    check_map[12] = fp_012.has_valid_labels(report)
-    check_map[16] = fp_016.big_is_maintained(file)
-
-    # add the report results to the dashboard
-    check_map['report'] = report_utils.process_report(
-        robot_gateway, ns, report)
+    # run each principle check
+    check_map = run_checks(robot_gateway, ns, None, file, report, data)
 
     # remove from memory
     del report
-    # os.remove(file)
+
+    return check_map
+
+
+def run_checks(robot_gateway, ns, ont, file, report, data):
+    """Given a robot gateway, an ontology namespace, an ontology object (or
+    null), a path to ontology (or null), a ROBOT report object, and the
+    registry data, run all the principle checks and return a map with results.
+    """
+    check_map = {}
+
+    try:
+        if file:
+            check_map[1] = fp_001.big_is_open(file, data)
+        else:
+            check_map[1] = fp_001.is_open(ont, data)
+    except Exception as e:
+        check_map[1] = 'INFO|unable to run check 1'
+        print('ERROR: unable to run check 1 for {0}\nCAUSE:\n{1}'.format(
+                  ns, str(e)),
+              flush=True)
+
+    try:
+        if file:
+            check_map[2] = fp_002.big_is_common_format(file)
+        else:
+            check_map[2] = fp_002.is_common_format(ont)
+    except Exception as e:
+        check_map[2] = 'INFO|unable to run check 2'
+        print('ERROR: unable to run check 2 for {0}\nCAUSE:\n{1}'.format(
+                  ns, str(e)),
+              flush=True)
+
+    try:
+        if file:
+            check_map[3] = fp_003.big_has_valid_uris(ns, file)
+        else:
+            check_map[3] = fp_003.has_valid_uris(robot_gateway, ns, ont)
+    except Exception as e:
+        check_map[3] = 'INFO|unable to run check 3'
+        print('ERROR: unable to run check 3 for {0}\nCAUSE:\n{1}'.format(
+                  ns, str(e)),
+              flush=True)
+
+    try:
+        if file:
+            check_map[4] = fp_004.big_has_versioning(file)
+        else:
+            check_map[4] = fp_004.has_versioning(ont)
+    except Exception as e:
+        check_map[4] = 'INFO|unable to run check 4'
+        print('ERROR: unable to run check 4 for {0}\nCAUSE:\n{1}'.format(
+                  ns, str(e)),
+              flush=True)
+
+    try:
+        check_map[5] = fp_005.has_scope(data, domain_map)
+    except Exception as e:
+        check_map[5] = 'INFO|unable to run check 5'
+        print('ERROR: unable to run check 5 for {0}\nCAUSE:\n{1}'.format(
+                  ns, str(e)),
+              flush=True)
+
+    try:
+        check_map[6] = fp_006.has_valid_definitions(report)
+    except Exception as e:
+        check_map[6] = 'INFO|unable to run check 6'
+        print('ERROR: unable to run check 6 for {0}\nCAUSE:\n{1}'.format(
+                  ns, str(e)),
+              flush=True)
+
+    try:
+        if file:
+            check_map[7] = fp_007.big_has_valid_relations(ns, file, ro_props)
+        else:
+            check_map[7] = fp_007.has_valid_relations(ns, ont, ro_props)
+    except Exception as e:
+        check_map[7] = 'INFO|unable to run check 7'
+        print('ERROR: unable to run check 7 for {0}\nCAUSE:\n{1}'.format(
+                  ns, str(e)),
+              flush=True)
+
+    try:
+        check_map[8] = fp_008.has_documentation(data)
+    except Exception as e:
+        check_map[8] = 'INFO|unable to run check 8'
+        print('ERROR: unable to run check 8 for {0}\nCAUSE:\n{1}'.format(
+                  ns, str(e)),
+              flush=True)
+
+    try:
+        check_map[9] = fp_009.has_users(data)
+    except Exception as e:
+        check_map[9] = 'INFO|unable to run check 9'
+        print('ERROR: unable to run check 9 for {0}\nCAUSE:\n{1}'.format(
+                  ns, str(e)),
+              flush=True)
+
+    try:
+        check_map[11] = fp_011.has_contact(data)
+    except Exception as e:
+        check_map[11] = 'INFO|unable to run check 11'
+        print('ERROR: unable to run check 11 for {0}\nCAUSE:\n{1}'.format(
+                  ns, str(e)),
+              flush=True)
+
+    try:
+        check_map[12] = fp_012.has_valid_labels(report)
+    except Exception as e:
+        check_map[12] = 'INFO|unable to run check 12'
+        print('ERROR: unable to run check 12 for {0}\nCAUSE:\n{1}'.format(
+                  ns, str(e)),
+              flush=True)
+
+    try:
+        if file:
+            check_map[16] = fp_016.big_is_maintained(file)
+        else:
+            check_map[16] = fp_016.is_maintained(ont)
+    except Exception as e:
+        check_map[16] = 'INFO|unable to run check 16'
+        print('ERROR: unable to run check 16 for {0}\nCAUSE:\n{1}'.format(
+                  ns, str(e)),
+              flush=True)
+
+    # finally, add the report results to the dashboard
+    try:
+        check_map['report'] = report_utils.process_report(
+            robot_gateway, ns, report)
+    except Exception as e:
+        check_map['report'] = 'INFO|unable to save report'
+        print('ERROR: unable to save ROBOT report for {0}\nCAUSE:\n{1}'.format(
+                  ns, str(e)),
+              flush=True)
 
     return check_map
 
@@ -188,7 +295,8 @@ def save_dashboard(dashboard_map, outfile):
             info = 0
             for k, val in check_map.items():
                 if val is None:
-                    print('Missing value for check {0} on {1}'.format(k, ns), flush=True)
+                    print('Missing value for check {0} on {1}'.format(k, ns),
+                          flush=True)
                     continue
                 if val.startswith('ERROR'):
                     err += 1
@@ -210,16 +318,18 @@ def save_dashboard(dashboard_map, outfile):
 
 
 def load_data(yaml_infile):
-    '''Given the registry YAML file, load the data.
-    Return a map of ontology ID to data item.'''
+    """Given the registry YAML file, load the data.
+    Return a map of ontology ID to data item.
+    """
     with open(yaml_infile, 'r') as s:
         data = yaml.load(s, Loader=yaml.SafeLoader)
     return data['ontologies']
 
 
 def sort_data(ont_data):
-    '''Given the ontology data from the registry YAML file,
-    sort by ontology ID. Return a map of ont ID to data item.'''
+    """Given the ontology data from the registry YAML file,
+    sort by ontology ID. Return a map of ont ID to data item.
+    """
     data_map = {}
     for item in ont_data:
         ont_id = item['id']
@@ -228,8 +338,9 @@ def sort_data(ont_data):
 
 
 def get_domains(ont_data):
-    '''Given the ontology data fro the registry YAML file,
-    map the ontology ID to the scope (domain).'''
+    """Given the ontology data fro the registry YAML file,
+    map the ontology ID to the scope (domain).
+    """
     domain_map = {}
     for item in ont_data:
         ont_id = item['id']
@@ -239,10 +350,10 @@ def get_domains(ont_data):
 
 
 def fetch_base_ontology(ns):
+    """Given a namespace, use ROBOT to create a 'base' artefact that only
+    contains internal terms. Save this fiile in the build directory.
     """
-    """
-    # circumstances where NS isn't totally upper
-    # we probably won't try to get base for large ontologies right now
+    # NS with lowercase letters
     if ns == 'ncbitaxon':
         ns = 'NCBITaxon'
     elif ns == 'fbdv':
@@ -259,12 +370,9 @@ def fetch_base_ontology(ns):
         ns = ns.upper()
 
     # option args
-    purl = 'http://purl.obolibrary.org/obo/{0}.owl'.format(ns.lower())
-    base = 'http://purl.obolibrary.org/obo/{0}_'.format(ns)
+    purl = '{0}/{1}.owl'.format(obo, ns.lower())
+    base = '{0}/{1}_'.format(obo, ns)
     output = 'build/ontologies/{0}.owl'.format(ns.lower())
-
-    if os.path.exists(output):
-        return output
 
     # easier to do this via command line
     cmd = '''java -jar build/robot-foreign.jar merge --input-iri {0} \
@@ -274,49 +382,50 @@ def fetch_base_ontology(ns):
     os.system(cmd)
 
     if not os.path.isfile(output):
-        print('Unable to retrieve {0}'.format(ns), flush=True)
+        print('ERROR: Unable to retrieve {0}'.format(ns), flush=True)
         return None
     return output
 
 
 def load_ontology_from_file(path):
-    """
+    """Given a path to an ontology file, load the file as an OWLOntology.
     """
     ont = None
     try:
         ont = io_helper.loadOntology(path)
     except Exception as e:
-        print('Unable to load \'{0}\''.format(path), flush=True)
+        print('ERROR: Unable to load \'{0}\''.format(path), flush=True)
         return None
     print('Loaded \'{0}\''.format(path), flush=True)
     return ont
 
 
 def load_ontology_from_iri(purl):
-    '''Given a PURL, return an OWLOntology object.'''
+    """Given a PURL, return an OWLOntology object.
+    """
     print('Retrieving <{0}>'.format(purl), flush=True)
     iri = gateway.jvm.org.semanticweb.owlapi.model.IRI.create(purl)
     ont = None
     try:
         ont = io_helper.loadOntology(iri)
     except Exception as e:
-        print('ERROR - Unable to load <{0}>'.format(purl), flush=True)
+        print('ERROR: Unable to load <{0}>'.format(purl), flush=True)
         return None
     print('Loaded <{0}>'.format(purl))
     return ont
 
 
 def download_ontology(ns):
-    '''Given a PURL, download the ontology to a file in the build directory.'''
-
-    purl = 'http://purl.obolibrary.org/obo/%s.owl' % ns.lower()
-    file = 'build/%s.owl' % ns
+    """Given a PURL, download the ontology to a file in the build directory.
+    """
+    purl = '{0}/{1}.owl'.format(obo, ns.lower())
+    file = 'build/ontologies/%s.owl' % ns
     if not os.path.isfile(file):
         print('Downloading <{0}>'.format(purl), flush=True)
         curl = 'curl -Lk {0} > {1}'.format(purl, file)
         os.system(curl)
     if not os.path.isfile(file):
-        print('ERROR - Unable to download {0}'.format(ns), flush=True)
+        print('ERROR: Unable to download {0}'.format(ns), flush=True)
         return None
     return file
 
