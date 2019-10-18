@@ -77,7 +77,9 @@ def main(args):
     # Run checks and save to file
     dashboard_map = {}
     for ns, data in data_map.items():
-        if ns in big_onts and big:
+        if ns in big_onts:
+            if not big:
+                continue
             # big ontologies cannot be easily loaded by ROBOT
             # some methods use XML parsing instead
             # (assuming the format is RDF/XML)
@@ -91,7 +93,9 @@ def main(args):
                     'ERROR: Unable to finish check on {0}\nCAUSE:\n{1}'.format(
                         ns, str(e)),
                     flush=True)
-        elif not big:
+        else:
+            if big:
+                continue
             # otherwise, just run the normal checks using ROBOT and OWLAPI
             if 'is_obsolete' in data and data['is_obsolete'] is 'true':
                 continue

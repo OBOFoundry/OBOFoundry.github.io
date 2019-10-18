@@ -140,7 +140,7 @@ extract-metadata: $(ONTS)
 
 dashboard: build/dashboard.zip
 
-RUN_ROBOT = java -jar build/robot.jar python &
+RUN_ROBOT = java -Xmx12G -jar build/robot.jar python &
 
 # Build directories
 build:
