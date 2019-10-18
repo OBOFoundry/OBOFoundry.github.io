@@ -24,7 +24,6 @@ import report_utils
 from argparse import ArgumentParser
 from py4j.java_gateway import JavaGateway
 
-foundry = ['bfo', 'go', 'uberon', 'xao']
 big_onts = ['chebi', 'bto', 'uberon', 'ncbitaxon', 'pr', 'ncit', 'gaz']
 obo = 'http://purl.obolibrary.org/obo'
 
@@ -44,6 +43,11 @@ def main(args):
     parser.add_argument('outfile',
                         type=str,
                         help='CSV output file to write dashboard data')
+    parser.add_argument('--big',
+                        type=str_to_bool,
+                        nargs='?',
+                        const=True, default=False,
+                        help="Run over big ontologies")
     args = parser.parse_args()
 
     # globals
@@ -54,6 +58,7 @@ def main(args):
     # IO files
     yaml_infile = args.yaml_infile
     outfile = args.outfile
+    big = args.big
     ont_data = load_data(yaml_infile)
     data_map = sort_data(ont_data)
 
@@ -72,9 +77,7 @@ def main(args):
     # Run checks and save to file
     dashboard_map = {}
     for ns, data in data_map.items():
-        if ns not in foundry:
-            continue
-        if ns in big_onts:
+        if ns in big_onts and big:
             # big ontologies cannot be easily loaded by ROBOT
             # some methods use XML parsing instead
             # (assuming the format is RDF/XML)
@@ -88,7 +91,7 @@ def main(args):
                     'ERROR: Unable to finish check on {0}\nCAUSE:\n{1}'.format(
                         ns, str(e)),
                     flush=True)
-        else:
+        elif not big:
             # otherwise, just run the normal checks using ROBOT and OWLAPI
             if 'is_obsolete' in data and data['is_obsolete'] is 'true':
                 continue
@@ -104,6 +107,17 @@ def main(args):
 
     # clean up
     gc.collect()
+
+
+def str_to_bool(v):
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ('true'):
+        return True
+    elif v.lower() in ('false'):
+        return False
+    else:
+        raise argparse.ArgumentTypeError('Boolean value expected.')
 
 
 def check_principles(ns, data):
@@ -132,9 +146,13 @@ def big_check_principles(ns, data):
     print('Checking ' + ns, flush=True)
     file = download_ontology(ns)
 
-    print('Running ROBOT report on {0}...'.format(ns), flush=True)
-    report_obj = report_utils.BigReport(robot_gateway, ns, file)
-    report = report_obj.get_report()
+    if ns == 'gaz':
+        # TODO: report on GAZ
+        report = None
+    else:
+        print('Running ROBOT report on {0}...'.format(ns), flush=True)
+        report_obj = report_utils.BigReport(robot_gateway, ns, file)
+        report = report_obj.get_report()
     good_format = report_obj.get_good_format()
 
     # run each principle check

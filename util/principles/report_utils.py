@@ -47,17 +47,17 @@ class BigReport:
         """Instantiate a new BigReport object by running a report over the
         ontology file.
         """
-        tdb_dir = 'build/.%s-tdb' % ns
+        tdb_dir = 'build/ontologies/.{0}-tdb'.format(ns)
         report_options = robot_gateway.ReportOperation.getDefaultOptions()
         report_options['tdb-directory'] = tdb_dir
-        report_options['keep-tdb-mappings'] = 'true'
         report_options['limit'] = '1'
         report_options['tdb'] = 'true'
         report = None
 
         self.good_format = True
         try:
-            print('Loading triples to %s and running report...' % tdb_dir)
+            print(
+                'Loading triples to {0} and running report...'.format(tdb_dir))
             report = robot_gateway.ReportOperation.getTDBReport(
                 file, report_options)
         except Py4JJavaError as err:
@@ -94,15 +94,14 @@ def run_big_report(robot_gateway, ns, file):
     Returns:
         Report object
     """
-    tdb_dir = 'build/.%s-tdb' % ns
+    tdb_dir = 'build/ontologies/.{0}-tdb'.format(ns)
     report_options = robot_gateway.ReportOperation.getDefaultOptions()
     report_options['tdb-directory'] = tdb_dir
-    report_options['keep-tdb-mappings'] = 'true'
     report_options['limit'] = '10000'
     report_options['tdb'] = 'true'
     report = None
     try:
-        print('Loading triples to %s and running report...' % tdb_dir)
+        print('Loading triples to {0} and running report...'.format(tdb_dir))
         report = robot_gateway.ReportOperation.getTDBReport(
             file, report_options)
     except Py4JJavaError as err:
@@ -125,13 +124,13 @@ def process_report(robot_gateway, ns, report):
     """
     if report is None:
         return 'INFO|report failed'
-    outfile = 'reports/robot/%s.tsv' % ns
+    outfile = 'reports/robot/{0}.tsv'.format(ns)
 
     # print summary to terminal and save to report file
     report_options = robot_gateway.ReportOperation.getDefaultOptions()
     robot_gateway.ReportOperation.processReport(
         report, outfile, report_options)
-    print('See %s for details\n' % outfile)
+    print('See {0} for details\n'.format(outfile))
 
     # return the report status
     errs = report.getTotalViolations('ERROR')

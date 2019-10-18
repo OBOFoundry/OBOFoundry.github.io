@@ -66,6 +66,9 @@ reports:
 reports/robot:
 	mkdir -p $@
 
+reports/principles:
+	mkdir -p $@
+
 
 ### Build Configuration Files
 
@@ -145,32 +148,49 @@ build:
 build/ontologies:
 	mkdir -p $@
 
+# This version of ROBOT includes features for starting Py4J
+# This will be changed to ROBOT release once feature is released
 #.PHONY: build/robot.jar
 build/robot.jar: build
-	curl -o $@ -Lk https://build.obolibrary.io/job/ontodev/job/robot/job/py4j/lastSuccessfulBuild/artifact/bin/robot.jar
+	curl -o $@ -Lk \
+	https://build.obolibrary.io/job/ontodev/job/robot/job/py4j/lastSuccessfulBuild/artifact/bin/robot.jar
 
 # This version of ROBOT includes features for removing external axioms to create 'base' artefacts
 # This will be removed once this feature is released
 #.PHONY: build/robot-foreign.jar
 build/robot-foreign.jar: build
-	curl -o $@ -Lk  https://build.obolibrary.io/job/ontodev/job/robot/job/562-feature/lastSuccessfulBuild/artifact/bin/robot.jar
+	curl -o $@ -Lk \
+	https://build.obolibrary.io/job/ontodev/job/robot/job/562-feature/lastSuccessfulBuild/artifact/bin/robot.jar
 
 # Generate the initial dashboard results file
 # ALWAYS make sure nothing is running on port 25333
 # Then boot Py4J gateway to ROBOT on that port
-reports/dashboard.csv: registry/ontologies.yml | reports/robot build/ontologies build/robot.jar build/robot-foreign.jar
+reports/dashboard.csv: registry/ontologies.yml | \
+reports/robot reports/principles build/ontologies build/robot.jar build/robot-foreign.jar
 	$(RUN_ROBOT)
-	./util/principles/dashboard.py $< $@
+	./util/principles/dashboard.py $< $@ --big false
+	kill $$(lsof -t -i:25333) || true
+
+# We have to restart the Py4J gateway
+# otherwise the reports won't run properly with TDB
+reports/big-dashboard.csv: registry/ontologies.yml | \
+reports/robot reports/principles build/ontologies build/robot.jar build/robot-foreign.jar
+	kill $$(lsof -t -i:25333) || true
+	$(RUN_ROBOT)
+	./util/principles/dashboard.py $< $@ --big true
 
 # Generate the HTML grid output for dashboard
 reports/dashboard.html: reports/dashboard.csv
 	./util/create-html-grid.py $< $@
 
+reports/big-dashboard.html: reports/big-dashboard.csv
+
 # Move all important results to a dashboard directory
-build/dashboard: reports/dashboard.html
+build/dashboard: reports/dashboard.html reports/big-dashboard.html
 	mkdir -p $@
 	mkdir -p $@/assets
 	cp $< $@
+	cp $(word 2,$^) $@
 	cp -r reports/robot $@
 	cp -r reports/principles $@
 	cp -r assets/svg $@/assets
