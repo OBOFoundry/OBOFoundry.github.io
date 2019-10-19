@@ -140,7 +140,7 @@ extract-metadata: $(ONTS)
 
 dashboard: build/dashboard.zip
 
-RUN_ROBOT = java -Xmx12G -jar build/robot.jar python &
+RUN_ROBOT = kill $$(lsof -t -i:25333) || true && java -Xmx12G -jar build/robot.jar python &
 
 # Build directories
 build:
