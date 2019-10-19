@@ -8,6 +8,7 @@ build:
   method: vcs
   infallible: 1
 canonical: ro.owl
+aberowl_id: relo
 description: Relationship types shared across multiple ontologies
 homepage: https://github.com/oborel/obo-relations/
 documentation: https://github.com/oborel/obo-relations/wiki/ROGuide

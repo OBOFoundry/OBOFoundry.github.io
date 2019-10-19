@@ -38,6 +38,7 @@ taxon:
   id: NCBITaxon:33208
   label: Metazoa
 domain: cells
+aberowl_id: ab
 tracker: https://code.google.com/p/cell-ontology/issues/list
 termgenie: http://cl.termgenie.org
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
