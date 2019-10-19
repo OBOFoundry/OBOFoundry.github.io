@@ -140,7 +140,7 @@ extract-metadata: $(ONTS)
 
 dashboard: build/dashboard.zip
 
-RUN_ROBOT = kill $$(lsof -t -i:25333) || true && java -Xmx12G -jar build/robot.jar python &
+RUN_ROBOT = java -Xxm12G -jar build/robot.jar python &
 
 # Build directories
 build:
@@ -167,17 +167,17 @@ build/robot-foreign.jar: build
 # Then boot Py4J gateway to ROBOT on that port
 reports/dashboard.csv: registry/ontologies.yml | \
 reports/robot reports/principles build/ontologies build/robot.jar build/robot-foreign.jar
-	$(RUN_ROBOT)
-	./util/principles/dashboard.py $< $@ --big false
 	kill $$(lsof -t -i:25333) || true
+	$(RUN_ROBOT)
+	./util/principles/dashboard.py $< $@ --big false && kill $$(lsof -t -i:25333) || true
 
 # We have to restart the Py4J gateway
 # otherwise the reports won't run properly with TDB
 reports/big-dashboard.csv: registry/ontologies.yml | \
 reports/robot reports/principles build/ontologies build/robot.jar build/robot-foreign.jar
-	$(RUN_ROBOT)
-	./util/principles/dashboard.py $< $@ --big true
 	kill $$(lsof -t -i:25333) || true
+	$(RUN_ROBOT)
+	./util/principles/dashboard.py $< $@ --big true && kill $$(lsof -t -i:25333) || true
 
 # Generate the HTML grid output for dashboard
 reports/dashboard.html: reports/dashboard.csv
