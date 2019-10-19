@@ -88,7 +88,8 @@ def main(args):
             try:
                 dashboard_map[ns] = big_check_principles(ns, data)
             except Exception as e:
-                del dashboard_map[ns]
+                if ns in dashboard_map:
+                    del dashboard_map[ns]
                 print(
                     'ERROR: Unable to finish check on {0}\nCAUSE:\n{1}'.format(
                         ns, str(e)),
@@ -102,7 +103,8 @@ def main(args):
             try:
                 dashboard_map[ns] = check_principles(ns, data)
             except Exception as e:
-                del dashboard_map[ns]
+                if ns in dashboard_map:
+                    del dashboard_map[ns]
                 print(
                     'ERROR: Unable to finish check on {0}\nCAUSE:\n{1}'.format(
                         ns, str(e)),
@@ -152,6 +154,7 @@ def big_check_principles(ns, data):
 
     if ns == 'gaz':
         # TODO: report on GAZ
+        report_obj = None
         report = None
     else:
         print('Running ROBOT report on {0}...'.format(ns), flush=True)
@@ -163,6 +166,7 @@ def big_check_principles(ns, data):
     check_map = run_checks(robot_gateway, ns, None, file, report, data)
 
     # remove from memory
+    del report_obj
     del report
 
     return check_map

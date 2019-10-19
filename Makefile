@@ -175,9 +175,9 @@ reports/robot reports/principles build/ontologies build/robot.jar build/robot-fo
 # otherwise the reports won't run properly with TDB
 reports/big-dashboard.csv: registry/ontologies.yml | \
 reports/robot reports/principles build/ontologies build/robot.jar build/robot-foreign.jar
-	kill $$(lsof -t -i:25333) || true
 	$(RUN_ROBOT)
 	./util/principles/dashboard.py $< $@ --big true
+	kill $$(lsof -t -i:25333) || true
 
 # Generate the HTML grid output for dashboard
 reports/dashboard.html: reports/dashboard.csv
