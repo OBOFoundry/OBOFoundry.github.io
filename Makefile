@@ -183,7 +183,10 @@ reports/robot reports/principles build/ontologies build/robot.jar build/robot-fo
 reports/dashboard.html: reports/dashboard.csv
 	./util/create-html-grid.py $< $@
 
+# Generate the HTML grid output for big dashboard
+# TODO: combine and sort in correct order
 reports/big-dashboard.html: reports/big-dashboard.csv
+	./util/create-html-grid.py $< $@
 
 # Move all important results to a dashboard directory
 build/dashboard: reports/dashboard.html reports/big-dashboard.html
