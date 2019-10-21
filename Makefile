@@ -140,25 +140,27 @@ extract-metadata: $(ONTS)
 
 dashboard: build/dashboard.zip
 
-RUN_ROBOT = java -Xmx12G -jar build/robot.jar python &
-
 # Build directories
 build:
 	mkdir -p $@
 build/ontologies:
 	mkdir -p $@
 
+# reboot the JVM for Py4J
+reboot:
+	./util/reboot.sh
+
 # This version of ROBOT includes features for starting Py4J
 # This will be changed to ROBOT release once feature is released
 #.PHONY: build/robot.jar
-build/robot.jar: build
+build/robot.jar: | build
 	curl -o $@ -Lk \
 	https://build.obolibrary.io/job/ontodev/job/robot/job/py4j/lastSuccessfulBuild/artifact/bin/robot.jar
 
 # This version of ROBOT includes features for removing external axioms to create 'base' artefacts
 # This will be removed once this feature is released
 #.PHONY: build/robot-foreign.jar
-build/robot-foreign.jar: build
+build/robot-foreign.jar: | build
 	curl -o $@ -Lk \
 	https://build.obolibrary.io/job/ontodev/job/robot/job/562-feature/lastSuccessfulBuild/artifact/bin/robot.jar
 
@@ -167,17 +169,12 @@ build/robot-foreign.jar: build
 # Then boot Py4J gateway to ROBOT on that port
 reports/dashboard.csv: registry/ontologies.yml | \
 reports/robot reports/principles build/ontologies build/robot.jar build/robot-foreign.jar
-	kill $$(lsof -t -i:25333) || true
-	$(RUN_ROBOT)
-	./util/principles/dashboard.py $< $@ --big false && kill $$(lsof -t -i:25333) || true
+	make reboot
+	./util/principles/dashboard.py $< $@ --big false
 
-# We have to restart the Py4J gateway
-# otherwise the reports won't run properly with TDB
-reports/big-dashboard.csv: registry/ontologies.yml | \
-reports/robot reports/principles build/ontologies build/robot.jar build/robot-foreign.jar
-	kill $$(lsof -t -i:25333) || true
-	$(RUN_ROBOT)
-	./util/principles/dashboard.py $< $@ --big true && kill $$(lsof -t -i:25333) || true
+reports/big-dashboard.csv: reports/dashboard.csv
+	make reboot
+	./util/principles/dashboard.py registry/ontologies.yml $@ --big true
 
 # Generate the HTML grid output for dashboard
 reports/dashboard.html: reports/dashboard.csv

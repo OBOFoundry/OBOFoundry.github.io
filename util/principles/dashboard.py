@@ -23,7 +23,9 @@ import report_utils
 
 from argparse import ArgumentParser
 from py4j.java_gateway import JavaGateway
+from py4j.protocol import Py4JNetworkError
 
+foundry = ['bfo', 'chebi']
 big_onts = ['chebi', 'bto', 'uberon', 'ncbitaxon', 'pr', 'ncit', 'gaz']
 obo = 'http://purl.obolibrary.org/obo'
 
@@ -50,9 +52,19 @@ def main(args):
                         help="Run over big ontologies")
     args = parser.parse_args()
 
-    # globals
-    gateway = JavaGateway()
-    robot_gateway = gateway.jvm.org.obolibrary.robot
+    # activate gateway to JVM
+    try:
+        gateway = JavaGateway()
+        robot_gateway = gateway.jvm.org.obolibrary.robot
+    except Py4JNetworkError:
+        print('ERROR: No JVM listening on port 25333', flush=True)
+        sys.exit(1)
+    except Exception as e:
+        print('ERROR: problem with JVM on port 25333\n{0}'.format(str(e)),
+              flush=True)
+        sys.exit(1)
+
+    # IOHelper for working with ontologies
     io_helper = robot_gateway.IOHelper()
 
     # IO files
@@ -77,6 +89,9 @@ def main(args):
     # Run checks and save to file
     dashboard_map = {}
     for ns, data in data_map.items():
+        if ns not in foundry:
+            # Testing - skip most
+            continue
         if ns in big_onts:
             if not big:
                 continue
@@ -113,6 +128,7 @@ def main(args):
 
     # clean up
     gc.collect()
+    sys.exit(0)
 
 
 def str_to_bool(v):
