@@ -148,7 +148,7 @@ build/ontologies:
 
 # reboot the JVM for Py4J
 reboot:
-	./util/reboot.sh
+	bash ./util/reboot.sh
 
 # This version of ROBOT includes features for starting Py4J
 # This will be changed to ROBOT release once feature is released
