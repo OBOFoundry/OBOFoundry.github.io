@@ -186,25 +186,23 @@ reports/dashboard.html: reports/dashboard-full.csv
 
 # Move all important results to a dashboard directory
 build/dashboard: reports/dashboard.html
-	rm build/dashboard.zip
 	mkdir -p $@
 	mkdir -p $@/assets
 	cp $< $@
 	cp -r reports/robot $@
 	cp -r reports/principles $@
 	cp -r assets/svg $@/assets
-
-# Compress dashboard directory for Jenkins archiving
-build/dashboard.zip: build/dashboard
-	zip -r $@ $<
+	rm -rf build/dashboard.zip
+	zip -r $@.zip $@
 
 # Clean up, removing ontology files
 # We don't want to keep them because we will download new ones each time to stay up-to-date
 # Reports are all archived in build/dashboard.zip
-clean-dashboard: build/dashboard.zip
+clean-dashboard: build/dashboard
 	rm -rf build/ontologies
 	rm -rf reports/robot
 	rm -rf reports/principles
+	rm -rf build/dashboard
 
 
 # Note this should *not* be run as part of general travis jobs, it is expensive
