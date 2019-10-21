@@ -186,6 +186,7 @@ reports/dashboard.html: reports/dashboard-full.csv
 
 # Move all important results to a dashboard directory
 build/dashboard: reports/dashboard.html
+	rm build/dashboard.zip
 	mkdir -p $@
 	mkdir -p $@/assets
 	cp $< $@
@@ -195,7 +196,6 @@ build/dashboard: reports/dashboard.html
 
 # Compress dashboard directory for Jenkins archiving
 build/dashboard.zip: build/dashboard
-	rm build/dashboard.zip
 	zip -r $@ $<
 
 # Clean up, removing ontology files
