@@ -25,7 +25,6 @@ from argparse import ArgumentParser
 from py4j.java_gateway import JavaGateway
 from py4j.protocol import Py4JNetworkError
 
-foundry = ['bfo', 'uberon']
 big_onts = ['chebi', 'bto', 'uberon', 'ncbitaxon', 'pr', 'ncit', 'gaz']
 obo = 'http://purl.obolibrary.org/obo'
 
@@ -89,8 +88,6 @@ def main(args):
     # Run checks and save to file
     dashboard_map = {}
     for ns, data in data_map.items():
-        if ns not in foundry:
-            continue
         if ns in big_onts:
             if not big:
                 continue

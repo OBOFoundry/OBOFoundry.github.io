@@ -188,9 +188,10 @@ reports/dashboard.html: reports/dashboard-full.csv
 build/dashboard: reports/dashboard.html
 	mkdir -p $@
 	mkdir -p $@/assets
+	mkdir -p $@/reports
 	cp $< $@
-	cp -r reports/robot $@
-	cp -r reports/principles $@
+	cp -r reports/robot $@/reports
+	cp -r reports/principles $@/reports
 	cp -r assets/svg $@/assets
 	rm -rf build/dashboard.zip
 	zip -r $@.zip $@
