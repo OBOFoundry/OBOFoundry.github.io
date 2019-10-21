@@ -196,7 +196,7 @@ build/dashboard: reports/dashboard.html
 # Compress dashboard directory for Jenkins archiving
 build/dashboard.zip: build/dashboard
 	rm build/dashboard.zip
-	zip -FSr $@ $<
+	zip -r $@ $<
 
 # Clean up, removing ontology files
 # We don't want to keep them because we will download new ones each time to stay up-to-date
