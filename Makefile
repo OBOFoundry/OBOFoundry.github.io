@@ -189,8 +189,7 @@ reports/big-dashboard.html: reports/big-dashboard.csv
 	./util/create-html-grid.py $< $@
 
 # Move all important results to a dashboard directory
-# build/dashboard: reports/dashboard.html reports/big-dashboard.html
-build/dashboard:
+build/dashboard: reports/dashboard.html reports/big-dashboard.html
 	mkdir -p $@
 	mkdir -p $@/assets
 	cp $< $@
