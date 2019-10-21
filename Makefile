@@ -176,28 +176,27 @@ reports/big-dashboard.csv: reports/dashboard.csv
 	make reboot
 	./util/principles/dashboard.py registry/ontologies.yml $@ --big true
 
-# Generate the HTML grid output for dashboard
-reports/dashboard.html: reports/dashboard.csv
-	./util/create-html-grid.py $< $@
+# Combine the dashboard files
+reports/dashboard-full.csv: reports/dashboard.csv reports/big-dashboard.csv
+	./util/principles/sort_tables.py $^ registry/ontologies.yml $@
 
-# Generate the HTML grid output for big dashboard
-# TODO: combine and sort in correct order
-reports/big-dashboard.html: reports/big-dashboard.csv
+# Generate the HTML grid output for dashboard
+reports/dashboard.html: reports/dashboard-full.csv
 	./util/create-html-grid.py $< $@
 
 # Move all important results to a dashboard directory
-build/dashboard: reports/dashboard.html reports/big-dashboard.html
+build/dashboard: reports/dashboard.html
 	mkdir -p $@
 	mkdir -p $@/assets
 	cp $< $@
-	cp $(word 2,$^) $@
 	cp -r reports/robot $@
 	cp -r reports/principles $@
 	cp -r assets/svg $@/assets
 
 # Compress dashboard directory for Jenkins archiving
 build/dashboard.zip: build/dashboard
-	zip -r $@ $<
+	rm build/dashboard.zip
+	zip -FSr $@ $<
 
 # Clean up, removing ontology files
 # We don't want to keep them because we will download new ones each time to stay up-to-date

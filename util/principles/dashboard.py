@@ -39,7 +39,7 @@ def main(args):
 
     # parse input args
     parser = ArgumentParser(description='Create a dashboard file')
-    parser.add_argument('yaml_infile',
+    parser.add_argument('ontologies_yml',
                         type=str,
                         help='YAML file with registry data')
     parser.add_argument('outfile',
@@ -68,7 +68,7 @@ def main(args):
     io_helper = robot_gateway.IOHelper()
 
     # IO files
-    yaml_infile = args.yaml_infile
+    yaml_infile = args.ontologies_yml
     outfile = args.outfile
     big = args.big
     ont_data = load_data(yaml_infile)
@@ -90,7 +90,6 @@ def main(args):
     dashboard_map = {}
     for ns, data in data_map.items():
         if ns not in foundry:
-            # Testing - skip most
             continue
         if ns in big_onts:
             if not big:
