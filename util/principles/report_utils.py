@@ -57,7 +57,8 @@ class BigReport:
         self.good_format = True
         try:
             print(
-                'Loading triples to {0} and running report...'.format(tdb_dir))
+                'Loading triples to {0} and running report...'.format(tdb_dir),
+                flush=True)
             report = robot_gateway.ReportOperation.getTDBReport(
                 file, report_options)
         except Py4JJavaError as err:
