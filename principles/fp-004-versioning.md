@@ -14,6 +14,8 @@ Summary
 
 The ontology provider has documented procedures for versioning the ontology, and different versions of ontology are marked, stored, and officially released.
 
+[This check is automatically validated.](checks/fp_004)
+
 Purpose
 -------------
 

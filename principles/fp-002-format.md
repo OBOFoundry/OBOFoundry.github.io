@@ -8,6 +8,8 @@ title: Common Format (principle 2)
 
 The ontology is made available in a common formal language in an accepted concrete syntax.
 
+[This check is automatically validated.](checks/fp_002)
+
 ## Purpose
 
 A common format allows the maximum number of people to access and reuse an ontology.

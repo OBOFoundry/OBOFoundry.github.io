@@ -13,6 +13,8 @@ Summary
 -------
 The scope of an ontology is the extent of the domain or subject matter it intends to cover. The ontology must have a clearly specified scope and content that adheres to that scope.
 
+[This check is automatically validated.](checks/fp_005)
+
 Purpose
 -------
 An in-scope ontology prevents overlaps between ontologies (duplication of terms), facilitates user searches for specific content, and enables quick selection of ontologies of interest, yet still allows for new terms to be created via combination of existing terms (cross-products).

@@ -36,7 +36,10 @@ def big_is_common_format(good_format):
     Return:
         PASS if good_format, ERROR otherwise.
     """
-    if not good_format:
+    if good_format is None:
+        return format_msg(
+            'INFO', ['unable to load ontology (may be too large)'])
+    elif good_format is False:
         return format_msg('ERROR', ['unable to parse ontology'])
     else:
         return 'PASS'

@@ -30,11 +30,13 @@ obo = 'http://purl.obolibrary.org/obo'
 
 
 def main(args):
-    global domain_map, \
-           gateway, \
-           io_helper, \
-           robot_gateway, \
-           ro_props
+    """Usage: ./dashboard.py <ontologies_yml> <output_csv> [--big <bool>]
+
+    Create a dashboard CSV over the ontologies in the registry data. If --big,
+    only do the "big" ontologies (which need different processing). Otherwise,
+    ignore "big" ontologies.
+    """
+    global domain_map, gateway, io_helper, robot_gateway, ro_props
 
     # parse input args
     parser = ArgumentParser(description='Create a dashboard file')
@@ -128,6 +130,8 @@ def main(args):
 
 
 def str_to_bool(v):
+    """Convert a string value to boolean.
+    """
     if isinstance(v, bool):
         return v
     if v.lower() in ('true'):
@@ -139,17 +143,21 @@ def str_to_bool(v):
 
 
 def check_principles(ns, data):
-    '''Given an ontology ID and the corresponding data from the YAML,
-    run the automated principle validation. Return a map of results.'''
+    """Given an ontology ID and the corresponding data from the YAML,
+    run the automated principle validation. Return a map of results.
+    """
     print('Checking ' + ns, flush=True)
     ont_file = fetch_base_ontology(ns)
     ont = load_ontology_from_file(ont_file)
 
-    print('Running ROBOT report on {0}...'.format(ns), flush=True)
-    report = report_utils.run_report(robot_gateway, io_helper, ns, ont)
+    if ont:
+        print('Running ROBOT report on {0}...'.format(ns), flush=True)
+        report = report_utils.run_report(robot_gateway, io_helper, ns, ont)
+    else:
+        report = None
 
     # run each principle check
-    check_map = run_checks(robot_gateway, ns, ont, None, report, data)
+    check_map = run_checks(robot_gateway, ns, ont, None, report, data, None)
 
     # remove from memory
     del report
@@ -159,23 +167,20 @@ def check_principles(ns, data):
 
 
 def big_check_principles(ns, data):
-    '''Given an ontology ID and the corresponding data from the YAML,
-    run the automated principle validation. Return a map of results.'''
+    """Given an ontology ID and the corresponding data from the YAML,
+    run the automated principle validation. Return a map of results.
+    """
     print('Checking ' + ns, flush=True)
     file = download_ontology(ns)
 
-    if ns == 'gaz':
-        # TODO: report on GAZ
-        report_obj = None
-        report = None
-    else:
-        print('Running ROBOT report on {0}...'.format(ns), flush=True)
-        report_obj = report_utils.BigReport(robot_gateway, ns, file)
-        report = report_obj.get_report()
+    print('Running ROBOT report on {0}...'.format(ns), flush=True)
+    report_obj = report_utils.BigReport(robot_gateway, ns, file)
+    report = report_obj.get_report()
     good_format = report_obj.get_good_format()
 
     # run each principle check
-    check_map = run_checks(robot_gateway, ns, None, file, report, data)
+    check_map = run_checks(
+        robot_gateway, ns, None, file, report, data, good_format)
 
     # remove from memory
     del report_obj
@@ -184,10 +189,12 @@ def big_check_principles(ns, data):
     return check_map
 
 
-def run_checks(robot_gateway, ns, ont, file, report, data):
+def run_checks(robot_gateway, ns, ont, file, report, data, good_format):
     """Given a robot gateway, an ontology namespace, an ontology object (or
-    null), a path to ontology (or null), a ROBOT report object, and the
-    registry data, run all the principle checks and return a map with results.
+    None), a path to ontology (or None), a ROBOT report object, the
+    registry data, and a boolean indicating good formatting for large
+    ontologies (None for regular ontologies), run all the principle checks and
+    return a map with results.
     """
     check_map = {}
 
@@ -204,7 +211,7 @@ def run_checks(robot_gateway, ns, ont, file, report, data):
 
     try:
         if file:
-            check_map[2] = fp_002.big_is_common_format(file)
+            check_map[2] = fp_002.big_is_common_format(good_format)
         else:
             check_map[2] = fp_002.is_common_format(ont)
     except Exception as e:
@@ -428,6 +435,8 @@ def fetch_base_ontology(ns):
 def load_ontology_from_file(path):
     """Given a path to an ontology file, load the file as an OWLOntology.
     """
+    if not path:
+        return None
     ont = None
     try:
         ont = io_helper.loadOntology(path)

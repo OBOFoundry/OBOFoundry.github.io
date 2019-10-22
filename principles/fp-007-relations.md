@@ -14,6 +14,8 @@ Summary
 
 Relations should be reused from the Relations Ontology (RO).
 
+[This check is automatically validated.](checks/fp_007)
+
 Purpose
 -------
 

@@ -8,6 +8,13 @@ from argparse import ArgumentParser
 
 
 def main(args):
+    """Usage: ./sort_tables.py <dashboard_csv>
+                               <big_dashboard_csv>
+                               <ontologies_yml>
+                               <output_csv>
+
+    Combine the regular and "big" dashboard result CSVs in registry order.
+    """
     global headers
 
     # parse input args
@@ -47,6 +54,14 @@ def main(args):
 
 
 def get_registry_order(ontologies_yml):
+    """Get an ordered list of ontology namespaces from the registry data.
+
+    Args:
+        ontologies_yml: path to YAML file containing registry data
+
+    Return:
+        registry-orderd list of ontology namespaces
+    """
     with open(ontologies_yml, 'r') as f:
         data = yaml.load(f, Loader=yaml.SafeLoader)
     ordered = []
@@ -56,6 +71,16 @@ def get_registry_order(ontologies_yml):
 
 
 def get_csv_map(csv_file, big_csv_file):
+    """Create a CSV map of ontology NS to dashboard results row from both the
+    regular and the "big" dashboard.
+
+    Args:
+        csv_file: path to dashboard CSV
+        big_csv_file: path to big dashboard CSV
+
+    Return:
+        map of ontology NS to results row
+    """
     global headers
 
     csv_map = {}
