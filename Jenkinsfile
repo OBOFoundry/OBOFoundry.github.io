@@ -1,6 +1,6 @@
 pipeline {
     agent {
-            docker {
+        docker {
             image 'geneontology/dev-base:eb2f253bb0ff780e1b623adde6d5537c55c31224_2019-08-13T163314'
             args "-u root:root --tmpfs /opt:exec -w /opt"
         }
@@ -9,8 +9,10 @@ pipeline {
     stages {
         stage('dashboard') {
             steps {
-                sh 'export PYTHONUNBUFFERED=1'
-                sh 'make clean-dashboard'
+                timeout(time: 8, unit: 'HOURS') {
+                    sh 'export PYTHONUNBUFFERED=1'
+                    sh 'make clean-dashboard'
+                }
             }
         }
     }
