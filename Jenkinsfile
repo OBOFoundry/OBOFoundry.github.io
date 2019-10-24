@@ -10,7 +10,7 @@ pipeline {
 }
 
 def test() {
-    withDockerContainer("obolibrary/odkfull:v1.1.7") {
+    docker.image("obolibrary/odkfull:v1.1.7").inside {
         sh 'ls -al'
     }
 }
