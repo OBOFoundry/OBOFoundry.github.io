@@ -8,6 +8,8 @@ pipeline {
     stages {
         stage('dashboard') {
             steps {
+                sh 'mkdir dashboard'
+                sh 'ls -al'
                 dir('./dashboard') {
                     git branch: 'dashboard', url: 'https://github.com/OBOFoundry/OBOFoundry.github.io.git'
                     sh 'ls -al'
