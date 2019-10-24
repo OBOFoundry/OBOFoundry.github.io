@@ -1,8 +1,8 @@
 pipeline {
     agent {
         docker {
-            image 'geneontology/dev-base:eb2f253bb0ff780e1b623adde6d5537c55c31224_2019-08-13T163314'
-            args "-u root:root --tmpfs /opt:exec -w /opt"
+            image 'obolibrary/odkfull:v1.1.7'
+            args '-u root:root'
         }
     }
     stages {
