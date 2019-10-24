@@ -1,16 +1,13 @@
-#!groovy
-
 pipeline {
-    agent any
+    agent {
+        image 'obolibrary/odkfull:v1.1.7'
+        args '-u root:root'
+    }
     stages {
         stage("Test") {
-            steps { test() }
+            steps { 
+                sh 'ls -al'
+            }
         }
-    }
-}
-
-def test() {
-    docker.image("obolibrary/odkfull:v1.1.7").inside {
-        sh 'ls -al'
     }
 }
