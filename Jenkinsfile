@@ -79,6 +79,11 @@ pipeline {
 		}
 	    }
 	    steps {
+
+		// Check what our world looks like.
+		sh 'echo "made it here 1: $PYTHONUNBUFFERED"'
+		sh 'env'
+
 		// Create a relative working directory and setup our
 		// working environment.
 		dir('./OBOFoundry.github.io') {
@@ -86,6 +91,7 @@ pipeline {
 			url: 'https://github.com/OBOFoundry/OBOFoundry.github.io'
 
 		    // Check what our world looks like.
+		    sh 'echo "made it here 2: $PYTHONUNBUFFERED"'
 		    sh 'env'
 
 		    // We're downloading things, so lets give it a few
@@ -93,7 +99,7 @@ pipeline {
                     timeout(time: 8, unit: 'HOURS') {
 			retry(3){
 			    sh 'export PYTHONUNBUFFERED=1'
-			    sh 'echo "made it here: $PYTHONUNBUFFERED"'
+			    sh 'echo "made it here 3: $PYTHONUNBUFFERED"'
 			    sh '$MAKECMD clean-dashboard'
 			}
 		    }
