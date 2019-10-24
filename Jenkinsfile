@@ -32,8 +32,8 @@ pipeline {
 
 	// The people to call when things go bad. It is a comma-space
 	// "separated" string.
-	TARGET_ADMIN_EMAILS = 'ctauber@gmail.com,sjcarbon@lbl.gov'
-	TARGET_SUCCESS_EMAILS = 'ctauber@gmail.com,sjcarbon@lbl.gov'
+	TARGET_ADMIN_EMAILS = 'sjcarbon@lbl.gov'
+	TARGET_SUCCESS_EMAILS = 'sjcarbon@lbl.gov'
 	// Control make to get through our loads faster if
 	// possible. Assuming we're cpu bound for some of these...
 	// wok has 48 "processors" over 12 "cores", so I have no idea;
@@ -93,6 +93,7 @@ pipeline {
                     timeout(time: 8, unit: 'HOURS') {
 			retry(3){
 			    sh 'export PYTHONUNBUFFERED=1'
+			    sh 'echo "made it here: $PYTHONUNBUFFERED"'
 			    sh '$MAKECMD clean-dashboard'
 			}
 		    }
