@@ -52,7 +52,7 @@ pipeline {
 	stage('Ready and clean') {
 	    steps {
 		// Give us a minute to cancel if we want.
-		sleep time: 1, unit: 'MINUTES'
+		//sleep time: 1, unit: 'MINUTES'
 		cleanWs deleteDirs: true, disableDeferredWipeout: true
 	    }
 	}
@@ -108,8 +108,10 @@ pipeline {
 	}
     }
     post {
-	// Let's let our general public people know if things go well.
+	// On success, archive our stuff and let our general public
+	// people know things went well.
 	success {
+            archiveArtifacts artifacts: 'reports/*', fingerprint: true
 	    script {
 		echo "There has been a successful run of the ${env.BRANCH_NAME} pipeline."
 		mail bcc: '', body: "There has been successful run of the ${env.BRANCH_NAME} pipeline. Please see: https://build.obolibrary.io/job/obofoundry/job/pipeline/job/${env.BRANCH_NAME}", cc: '', from: '', replyTo: '', subject: "OBO pipeline success for ${env.BRANCH_NAME}", to: "${TARGET_SUCCESS_EMAILS}"
