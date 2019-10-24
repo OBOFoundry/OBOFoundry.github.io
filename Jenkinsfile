@@ -11,9 +11,7 @@ pipeline {
             steps {
                 dir('./dashboard') {
                     git branch: 'dashboard', url: 'https://github.com/OBOFoundry/OBOFoundry.github.io.git'
-                }
-                timeout(time: 8, unit: 'HOURS') {
-                    sh 'ls'
+                    sh 'ls -al'
                 }
             }
         }
