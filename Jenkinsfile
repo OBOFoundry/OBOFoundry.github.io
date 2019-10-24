@@ -82,7 +82,7 @@ pipeline {
 		// Create a relative working directory and setup our
 		// working environment.
 		dir('./OBOFoundry.github.io') {
-		    git branch: $BRANCH_NAME,
+		    git branch: BRANCH_NAME,
 			url: 'https://github.com/OBOFoundry/OBOFoundry.github.io'
 
 		    // Check what our world looks like.
