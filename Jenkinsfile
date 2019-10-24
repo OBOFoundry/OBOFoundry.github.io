@@ -75,7 +75,7 @@ pipeline {
 		    image 'obolibrary/odkfull:v1.1.7'
 		    // Reset Jenkins Docker agent default to original
 		    // root.
-		    args '-u root:root'
+		    //args '-u root:root'
 		}
 	    }
 	    steps {
