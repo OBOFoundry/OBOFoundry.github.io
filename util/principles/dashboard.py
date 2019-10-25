@@ -90,8 +90,6 @@ def main(args):
     # Run checks and save to file
     dashboard_map = {}
     for ns, data in data_map.items():
-        if ns not in test:
-            continue
         if ns == 'gaz':
             continue
         if ns in big_onts:
