@@ -91,6 +91,7 @@ pipeline {
 						retry(3){
 							sh 'export PYTHONUNBUFFERED=1'
 							sh 'make clean-dashboard'
+							archiveArtifacts artifacts: 'build/*.zip', onlyIfSuccessful: true
 						}
 					}
 				}
@@ -98,10 +99,6 @@ pipeline {
 		}
 	}
 	post {
-		// On success, archive our stuff.
-		success {
-			archiveArtifacts artifacts: 'build/*.zip', fingerprint: true
-		}
 		// Let's let our internal people know if things change.
 		changed {
 			echo "There has been a change in the ${env.BRANCH_NAME} pipeline."
