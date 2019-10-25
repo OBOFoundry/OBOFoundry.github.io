@@ -148,6 +148,7 @@ def get_version_iri(file):
                 # we found the version IRI
                 # no need to continue reading lines
                 version_iri = get_resource_value(line)
+                valid = True
                 break
 
             elif owl and '</{0}:Ontology>'.format(owl) in line:

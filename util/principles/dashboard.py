@@ -25,7 +25,6 @@ from argparse import ArgumentParser
 from py4j.java_gateway import JavaGateway
 from py4j.protocol import Py4JNetworkError
 
-test = ['bfo', 'uberon']
 big_onts = ['chebi', 'bto', 'uberon', 'ncbitaxon', 'pr', 'ncit', 'gaz']
 obo = 'http://purl.obolibrary.org/obo'
 
