@@ -89,6 +89,7 @@ pipeline {
 		    // Setup our environment the way we want.
 		    sh 'pip3 install -r requirements.txt'
 		    sh 'apt-get -f install lsof'
+		    sh 'apt-get -f install zip'
 
 		    // Check what our world looks like.
 		    sh 'env'
