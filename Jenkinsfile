@@ -32,8 +32,8 @@ pipeline {
 
 	// The people to call when things go bad. It is a comma-space
 	// "separated" string.
-	TARGET_ADMIN_EMAILS = 'rctauber@gmail.com'
-	TARGET_SUCCESS_EMAILS = 'rctauber@gmail.com'
+	TARGET_ADMIN_EMAILS = 'rbca.jackson@gmail.com'
+	TARGET_SUCCESS_EMAILS = 'rbca.jackson@gmail.com'
 	// Control make to get through our loads faster if
 	// possible. Assuming we're cpu bound for some of these...
 	// wok has 48 "processors" over 12 "cores", so I have no idea;
@@ -83,7 +83,7 @@ pipeline {
 		// Create a relative working directory and setup our
 		// working environment.
 		dir('./OBOFoundry.github.io') {
-		    git branch: BRANCH_NAME,
+		    git branch: $BRANCH_NAME,
 			url: 'https://github.com/OBOFoundry/OBOFoundry.github.io'
 
 		    // Setup our environment the way we want.
@@ -108,22 +108,22 @@ pipeline {
     post {
 	// On success, archive our stuff and let our general public
 	// people know things went well.
-	success {
-            archiveArtifacts artifacts: 'reports/*', fingerprint: true
-	    script {
-		echo "There has been a successful run of the ${env.BRANCH_NAME} pipeline."
-		mail bcc: '', body: "There has been successful run of the ${env.BRANCH_NAME} pipeline. Please see: https://build.obolibrary.io/job/obofoundry/job/pipeline/job/${env.BRANCH_NAME}", cc: '', from: '', replyTo: '', subject: "OBO pipeline success for ${env.BRANCH_NAME}", to: "${TARGET_SUCCESS_EMAILS}"
-	    }
-	}
-	// Let's let our internal people know if things change.
-        changed {
-	    echo "There has been a change in the ${env.BRANCH_NAME} pipeline."
-	    mail bcc: '', body: "There has been a pipeline status change in ${env.BRANCH_NAME}. Please see: https://build.obolibrary.io/job/obofoundry/job/pipeline/job/${env.BRANCH_NAME}", cc: '', from: '', replyTo: '', subject: "OBO pipeline change for ${env.BRANCH_NAME}", to: "${TARGET_ADMIN_EMAILS}"
-	}
-	// Let's let our internal people know if things go badly.
-	failure {
-	    echo "There has been a failure in the ${env.BRANCH_NAME} pipeline."
-	    mail bcc: '', body: "There has been a pipeline failure in ${env.BRANCH_NAME}. Please see: https://build.obolibrary.io/job/obofoundry/job/pipeline/job/${env.BRANCH_NAME}", cc: '', from: '', replyTo: '', subject: "OBO pipeline FAIL for ${env.BRANCH_NAME}", to: "${TARGET_ADMIN_EMAILS}"
+    	success {
+                archiveArtifacts artifacts: 'reports/*.zip', fingerprint: true
+    	    script {
+        		echo "There has been a successful run of the ${env.BRANCH_NAME} pipeline."
+        		mail bcc: '', body: "There has been successful run of the ${env.BRANCH_NAME} pipeline. Please see: https://build.obolibrary.io/job/obofoundry/job/pipeline/job/${env.BRANCH_NAME}", cc: '', from: '', replyTo: '', subject: "OBO pipeline success for ${env.BRANCH_NAME}", to: "${TARGET_SUCCESS_EMAILS}"
+    	    }
+    	}
+    	// Let's let our internal people know if things change.
+            changed {
+        	    echo "There has been a change in the ${env.BRANCH_NAME} pipeline."
+        	    mail bcc: '', body: "There has been a pipeline status change in ${env.BRANCH_NAME}. Please see: https://build.obolibrary.io/job/obofoundry/job/pipeline/job/${env.BRANCH_NAME}", cc: '', from: '', replyTo: '', subject: "OBO pipeline change for ${env.BRANCH_NAME}", to: "${TARGET_ADMIN_EMAILS}"
+    	}
+    	// Let's let our internal people know if things go badly.
+    	failure {
+    	    echo "There has been a failure in the ${env.BRANCH_NAME} pipeline."
+    	    mail bcc: '', body: "There has been a pipeline failure in ${env.BRANCH_NAME}. Please see: https://build.obolibrary.io/job/obofoundry/job/pipeline/job/${env.BRANCH_NAME}", cc: '', from: '', replyTo: '', subject: "OBO pipeline FAIL for ${env.BRANCH_NAME}", to: "${TARGET_ADMIN_EMAILS}"
         }
     }
 }
