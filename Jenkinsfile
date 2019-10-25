@@ -87,7 +87,7 @@ pipeline {
 			url: 'https://github.com/OBOFoundry/OBOFoundry.github.io'
 
 		    // Setup our environment the way we want.
-		    sh 'pip install -r requirements.txt'
+		    sh 'pip3 install -r requirements.txt'
 
 		    // Check what our world looks like.
 		    sh 'env'
