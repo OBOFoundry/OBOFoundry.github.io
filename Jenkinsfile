@@ -32,8 +32,8 @@ pipeline {
 
 	// The people to call when things go bad. It is a comma-space
 	// "separated" string.
-	TARGET_ADMIN_EMAILS = 'sjcarbon@lbl.gov'
-	TARGET_SUCCESS_EMAILS = 'sjcarbon@lbl.gov'
+	TARGET_ADMIN_EMAILS = 'rctauber@gmail.com'
+	TARGET_SUCCESS_EMAILS = 'rctauber@gmail.com'
 	// Control make to get through our loads faster if
 	// possible. Assuming we're cpu bound for some of these...
 	// wok has 48 "processors" over 12 "cores", so I have no idea;
@@ -88,6 +88,7 @@ pipeline {
 
 		    // Setup our environment the way we want.
 		    sh 'pip3 install -r requirements.txt'
+		    sh 'apt-get -f install lsof'
 
 		    // Check what our world looks like.
 		    sh 'env'
