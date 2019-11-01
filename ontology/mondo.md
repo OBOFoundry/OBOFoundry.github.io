@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: mondo
-label: MONDO
+label: Mondo
 title: Mondo Disease Ontology
 description: An ontology that harmonizes multiple disease resources.
 homepage: https://monarch-initiative.github.io/mondo
