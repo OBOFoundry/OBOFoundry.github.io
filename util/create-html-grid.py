@@ -11,7 +11,7 @@ bootstrap_js = 'https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.
 
 headers = []
 # Map of principle names to links for Dashboard
-host = 'http://127.0.0.1:4000'
+host = 'http://obofoundry.org/'
 principle_map = {"Open":
                  "{0}/principles/fp-001-open.html".format(host),
                  "Format":

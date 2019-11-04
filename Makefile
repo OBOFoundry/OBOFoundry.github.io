@@ -177,8 +177,8 @@ reports/big-dashboard.csv: reports/dashboard.csv
 	./util/principles/dashboard.py registry/ontologies.yml $@ --big true
 
 # Combine the dashboard files
-reports/dashboard-full.csv: reports/dashboard.csv reports/big-dashboard.csv
-	./util/principles/sort_tables.py $^ registry/ontologies.yml $@
+reports/dashboard-full.csv: reports/dashboard.csv reports/big-dashboard.csv registry/ontologies.yml
+	./util/principles/sort_tables.py $^ $@
 
 # Generate the HTML grid output for dashboard
 reports/dashboard.html: reports/dashboard-full.csv
