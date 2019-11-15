@@ -22,4 +22,8 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4.0
 activity_status: active
+browsers:
+  - label: GNOme
+    title: GNOme Glycan Composition Browser and Subsumption Navigator
+    url: https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html
 ---
