@@ -17,8 +17,8 @@ products:
   - id: bto.obo
   - id: bto.json
 license:
-  url: https://creativecommons.org/licenses/by-nd/4.0/
-  label: CC BY-ND 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 title: BRENDA tissue / enzyme source
 build:
   checkout: git clone https://github.com/BRENDA-Enzymes/BTO.git
