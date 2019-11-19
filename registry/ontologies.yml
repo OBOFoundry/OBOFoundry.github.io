@@ -511,25 +511,29 @@ ontologies:
   title: Biological Spatial Ontology
   tracker: https://github.com/obophenotype/biological-spatial-ontology/issues
 - activity_status: active
-  build: {insert_ontology_id: true, method: obo2owl, source_url: 'http://www.brenda-enzymes.info/ontology/tissue/tree/update/update_files/BrendaTissueOBO'}
+  build: {checkout: 'git clone https://github.com/BRENDA-Enzymes/BTO.git', path: .,
+    system: git}
   contact: {email: a.chang@tu-bs.de, label: Antje Chang}
   description: A structured controlled vocabulary for the source of an enzyme comprising
     tissues, cell lines, cell types and cell cultures.
   domain: anatomy
-  homepage: http://www.brenda-enzymes.info
+  homepage: http://www.brenda-enzymes.org
   id: bto
   layout: ontology_detail
-  license: {label: CC BY-ND 4.0, url: 'https://creativecommons.org/licenses/by-nd/4.0/'}
+  license: {label: CC BY 4.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'https://creativecommons.org/licenses/by/4.0/'}
   ontology_purl: http://purl.obolibrary.org/obo/bto.owl
   page: https://en.wikipedia.org/wiki/BRENDA_tissue_ontology
   products:
   - {id: bto.owl, ontology_purl: 'http://purl.obolibrary.org/obo/bto.owl'}
+  - {id: bto.obo, ontology_purl: 'http://purl.obolibrary.org/obo/bto.obo'}
+  - {id: bto.json, ontology_purl: 'http://purl.obolibrary.org/obo/bto.json'}
   publications:
   - {id: 'https://www.ncbi.nlm.nih.gov/pubmed/21030441', title: 'The BRENDA Tissue
       Ontology (BTO): the first all-integrating ontology of all organisms for enzyme
       sources'}
   title: BRENDA tissue / enzyme source
-  tracker: https://support.brenda-enzymes.org/open.php?topicId=18
+  tracker: https://github.com/BRENDA-Enzymes/BTO/issues
 - activity_status: active
   build: {method: obo2owl, notes: moving to owl soon, source_url: 'http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/caro/caro.obo'}
   contact: {email: haendel@ohsu.edu, github: mellybelly, label: Melissa Haendel}
@@ -578,6 +582,40 @@ ontologies:
   - {id: cheminf.owl, ontology_purl: 'http://purl.obolibrary.org/obo/cheminf.owl'}
   title: Chemical Information Ontology
   tracker: https://github.com/semanticchemistry/semanticchemistry/issues
+- activity_status: active
+  build: {checkout: 'git clone https://github.com/obophenotype/chiro.git', path: .,
+    system: git}
+  contact: {email: vasilevs@ohsu.edu, github: nicolevasilevsky, label: Nicole Vasilevsky}
+  dependencies:
+  - {id: chebi}
+  - {id: mp}
+  - {id: hp}
+  - {id: go}
+  - {id: pr}
+  - {id: uberon}
+  - {id: ncbitaxon}
+  description: CHEBI provides a distinct role hierarchy. Chemicals in the structural
+    hierarchy are connected via a 'has role' relation. CHIRO provides links from these
+    roles to useful other classes in other ontologies. This will allow direct connection
+    between chemical structures (small molecules, drugs) and what they do. This could
+    be formalized using 'capable of', in the same way Uberon and the Cell Ontology
+    link structures to processes.
+  domain: biochemistry
+  homepage: https://github.com/obophenotype/chiro
+  id: chiro
+  jobs:
+  - {id: 'https://travis-ci.org/obophenotype/chiro', type: travis-ci}
+  layout: ontology_detail
+  license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
+    url: 'http://creativecommons.org/licenses/by/3.0/'}
+  ontology_purl: http://purl.obolibrary.org/obo/chiro.owl
+  products:
+  - {id: chiro.owl, name: CHEBI Integrated Role Ontology main release in OWL format,
+    ontology_purl: 'http://purl.obolibrary.org/obo/chiro.owl'}
+  - {id: chiro.obo, name: CHEBI Integrated Role Ontology additional release in OBO
+      format, ontology_purl: 'http://purl.obolibrary.org/obo/chiro.obo'}
+  title: CHEBI Integrated Role Ontology
+  tracker: https://github.com/obophenotype/chiro/issues
 - activity_status: active
   contact: {email: batchelorc@rsc.org, github: batchelorc, label: Colin Batchelor}
   description: CHMO, the chemical methods ontology, describes methods used to
@@ -773,7 +811,8 @@ ontologies:
   tracker: https://github.com/dictyBase/migration-data/issues
   twitter: dictybase
 - activity_status: active
-  build: {insert_ontology_id: true, method: obo2owl, source_url: 'https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_phenotypes.obo'}
+  build: {checkout: 'git clone https://github.com/obophenotype/dicty-phenotype-ontology.git',
+    path: ., system: git}
   contact: {email: pfey@northwestern.edu, github: pfey03, label: Petra Fey}
   description: A structured controlled vocabulary of phenotypes of the slime-mould
     <i>Dictyostelium discoideum</i>.
@@ -1103,10 +1142,9 @@ ontologies:
 - activity_status: active
   contact: {email: stoeckrt@pennmedicine.upenn.edu, github: cstoeckert, label: Chris
       Stoeckert}
-  depicted_by: http://meetings.embo.org/files/2017-06/eupath.jpg
-  description: An ontology is developed to support Eukaryotic Pathogen Database Bioinformatics
-    Resource Center sites (EuPathDB; http://eupathdb.org).
-  homepage: https://github.com/EuPath-ontology/EuPath-ontology
+  description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector
+    Genomics Resource (VEuPathDB; https://veupathdb.org).
+  homepage: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
   id: eupath
   layout: ontology_detail
   license: {label: CC-BY, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
@@ -1114,8 +1152,8 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/eupath.owl
   products:
   - {id: eupath.owl, ontology_purl: 'http://purl.obolibrary.org/obo/eupath.owl'}
-  title: EuPathDB ontology
-  tracker: https://github.com/EuPath-ontology/EuPath-ontology/issues
+  title: VEuPathDB ontology
+  tracker: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology/issues
 - activity_status: active
   build: {method: obo2owl, source_url: 'https://raw.githubusercontent.com/CTDbase/exposure-ontology/master/src/ontology/exo.obo'}
   contact: {email: cjmattin@ncsu.edu, label: Carolyn Mattingly}
@@ -1432,6 +1470,9 @@ ontologies:
   title: Geographical Entity Ontology
   tracker: https://ontology.atlassian.net/browse/GEO#selectedTab=com.atlassian.jira.plugin.system.project%3Aissues-panel
 - activity_status: active
+  browsers:
+  - {label: GNOme, title: GNOme Glycan Composition Browser and Subsumption Navigator,
+    url: 'https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html'}
   build: {checkout: 'git clone https://github.com/glygen-glycan-data/GNOme.git', path: .,
     system: git}
   contact: {email: nje5@georgetown.edu, github: edwardsnj, label: Nathan Edwards}
@@ -1899,7 +1940,7 @@ ontologies:
   domain: disease
   homepage: https://monarch-initiative.github.io/mondo
   id: mondo
-  label: MONDO
+  label: Mondo
   layout: ontology_detail
   license: {label: CC BY 3.0, logo: 'http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png',
     url: 'http://creativecommons.org/licenses/by/3.0/'}
@@ -2975,6 +3016,11 @@ ontologies:
   taxon: {id: 'NCBITaxon:9606', label: Homo sapiens}
   title: Symptom Ontology
   tracker: https://github.com/DiseaseOntology/SymptomOntology/issues
+  usages:
+  - description: Symptoms of human diseases in the DO
+    examples:
+    - {description: symptoms of human diseases, url: 'http://www.disease-ontology.org/?id=DOID:0060164'}
+    user: http://www.disease-ontology.org
 - activity_status: active
   build: {method: obo2owl, source_url: 'http://anobase.vectorbase.org/anatomy/tick_anatomy.obo'}
   contact: {email: dsonensh@odu.edu, label: Daniel Sonenshine}
@@ -3078,6 +3124,11 @@ ontologies:
   - {id: trans.obo, ontology_purl: 'http://purl.obolibrary.org/obo/trans.obo'}
   title: Pathogen Transmission Ontology
   tracker: https://github.com/DiseaseOntology/PathogenTransmissionOntology/issues
+  usages:
+  - description: Methods of trnasmission of human diseases in the DO
+    examples:
+    - {description: methods of transmission of human diseases, url: 'http://www.disease-ontology.org/?id=DOID:12365'}
+    user: http://www.disease-ontology.org
 - activity_status: active
   contact: {email: balhoff@renci.org, label: Jim Balhoff}
   description: An ontology covering the taxonomy of teleosts (bony fish)
