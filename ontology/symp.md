@@ -29,9 +29,6 @@ license:
    examples:
     - url: http://www.disease-ontology.org/?id=DOID:0060164
       description: symptoms of human diseases
-activity_status: active
-  
-  
   
 activity_status: active
 ---
