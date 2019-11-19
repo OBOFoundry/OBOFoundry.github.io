@@ -22,6 +22,17 @@ tracker: https://github.com/DiseaseOntology/SymptomOntology/issues
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0
+  
+  usages:
+ - user: http://www.disease-ontology.org
+   description: Symptoms of human diseases in the DO
+   examples:
+    - url: http://www.disease-ontology.org/?id=DOID:0060164
+      description: symptoms of human diseases
+activity_status: active
+  
+  
+  
 activity_status: active
 ---
 

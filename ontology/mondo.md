@@ -1,10 +1,10 @@
 ---
 layout: ontology_detail
 id: mondo
-label: MONDO
+label: Mondo
 title: Mondo Disease Ontology
 description: An ontology that harmonizes multiple disease resources.
-homepage: https://github.com/monarch-initiative/mondo
+homepage: https://monarch-initiative.github.io/mondo
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
@@ -39,6 +39,13 @@ products:
    description: Equivalent to the OWL edition
    format: obo
    derived_from: mondo.owl
+usages:
+ - user: https://monarchinitiative.org/
+   type: annotation
+   description: Mondo is used by the Monarch Initiative for disease annotations.
+   examples:
+    - url: https://monarchinitiative.org/phenotype/HP:0001300#diseases
+   reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
 activity_status: active
 ---
 

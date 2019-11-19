@@ -19,7 +19,11 @@ publications:
     title: "The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation"
 products:
   - id: envo.owl
+    title: "main ENVO OWL release"
+  - id: envo.json
+    title: "ENVO in obographs JSON format"
   - id: envo.obo
+    title: "ENVO in OBO Format. May be lossy"
   - id: subsets/envo-basic.obo
     title: OBO-Basic edition of ENVO
   - id: subsets/envoEmpo.owl

@@ -22,9 +22,9 @@ taxon:
   label: Dictyostelium discoideum
 title: Dictyostelium discoideum phenotype ontology
 build:
-  source_url: https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_phenotypes.obo
-  insert_ontology_id: true
-  method: obo2owl
+  checkout: git clone https://github.com/obophenotype/dicty-phenotype-ontology.git
+  system: git
+  path: "."
 activity_status: active
 ---
 

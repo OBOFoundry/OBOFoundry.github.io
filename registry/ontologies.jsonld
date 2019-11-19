@@ -233,7 +233,7 @@
                     "type": "BridgeOntology"
                 }
             ],
-            "depicted_by": "http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png",
+            "depicted_by": "http://geneontology.org/assets/go-logo-icon.mini.png",
             "description": "An ontology for describing the function of genes and gene products",
             "domain": "biology",
             "facebook": "https://www.facebook.com/Gene-Ontology-305908656519/",
@@ -380,6 +380,12 @@
                     "id": "obi.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/obi.owl",
                     "title": "OBI"
+                },
+                {
+                    "description": "The OBO-format version of OBI",
+                    "id": "obi.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/obi.obo",
+                    "title": "OBI in OBO"
                 },
                 {
                     "description": "A collection of important high-level terms and their relations from OBI and other ontologies",
@@ -1667,9 +1673,9 @@
                 }
             ],
             "build": {
-                "infallible": 0,
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/dpo.owl"
+                "checkout": "git clone https://github.com/FlyBase/drosophila-phenotype-ontolog.git",
+                "path": ".",
+                "system": "git"
             },
             "contact": {
                 "email": "cp390@cam.ac.uk",
@@ -1697,8 +1703,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/dpo.obo"
                 },
                 {
-                    "id": "dpo-base.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/dpo-base.owl"
+                    "id": "dpo.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/dpo.json"
                 }
             ],
             "publications": [
@@ -1846,6 +1852,10 @@
             ],
             "publications": [
                 {
+                    "id": "http://www.ncbi.nlm.nih.gov/pubmed/30407590",
+                    "title": "ECO, the Evidence & Conclusion Ontology: community standard for evidence information."
+                },
+                {
                     "id": "http://www.ncbi.nlm.nih.gov/pubmed/25052702",
                     "title": "Standardized description of scientific evidence using the Evidence Ontology (ECO)"
                 }
@@ -1863,6 +1873,17 @@
                     ],
                     "type": "annotation",
                     "user": "http://geneontology.org"
+                },
+                {
+                    "description": "ECO is used by the Monarch Initiative for evidence types for disease to phenotype annotations.",
+                    "examples": [
+                        {
+                            "url": "https://monarchinitiative.org/phenotype/HP%3A0001300#diseases"
+                        }
+                    ],
+                    "reference": "https://academic.oup.com/nar/article/45/D1/D712/2605791",
+                    "type": "annotation",
+                    "user": "https://monarchinitiative.org/"
                 }
             ]
         },
@@ -1939,6 +1960,114 @@
             ],
             "title": "An ontology of core ecological entities",
             "tracker": "https://github.com/EcologicalSemantics/ecocore/issues"
+        },
+        {
+            "activity_status": "active",
+            "build": {
+                "checkout": "git clone https://github.com/EnvironmentOntology/environmental-exposure-ontology.git",
+                "path": ".",
+                "system": "git"
+            },
+            "contact": {
+                "email": "annethessen@gmail.com",
+                "github": "diatomsRcool",
+                "label": "Anne Thessen"
+            },
+            "dependencies": [
+                {
+                    "id": "chebi"
+                },
+                {
+                    "id": "envo"
+                },
+                {
+                    "id": "exo"
+                },
+                {
+                    "id": "go"
+                },
+                {
+                    "id": "iao"
+                },
+                {
+                    "id": "maxo"
+                },
+                {
+                    "id": "nbo"
+                },
+                {
+                    "id": "ncit"
+                },
+                {
+                    "id": "ncbitaxon"
+                },
+                {
+                    "id": "npo"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
+                },
+                {
+                    "id": "xco"
+                }
+            ],
+            "description": "ECTO describes exposures to experimental treatments of plants and model organisms (e.g. exposures to modification of diet, lighting levels, temperature); exposures of humans or any other organisms to stressors through a variety of routes, for purposes of public health, environmental monitoring etc, stimuli, natural and experimental, any kind of environmental condition or change in condition that can be experienced by an organism or population of organisms on earth. The scope is very general and can include for example plant treatment regimens, as well as human clinical exposures (although these may better be handled by a more specialized ontology).",
+            "domain": "environment",
+            "homepage": "https://github.com/EnvironmentOntology/environmental-exposure-ontology",
+            "id": "ecto",
+            "jobs": [
+                {
+                    "id": "https://travis-ci.org/EnvironmentOntology/environmental-exposure-ontology",
+                    "type": "travis-ci"
+                }
+            ],
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/ecto.owl",
+            "products": [
+                {
+                    "id": "ecto.owl",
+                    "name": "Environmental conditions, treatments and exposures ontology main release in OWL format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ecto.owl"
+                },
+                {
+                    "id": "ecto.obo",
+                    "name": "Environmental conditions, treatments and exposures ontology additional release in OBO format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ecto.obo"
+                },
+                {
+                    "id": "ecto.json",
+                    "name": "Environmental conditions, treatments and exposures ontology additional release in OBOJSon format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ecto.json"
+                },
+                {
+                    "id": "ecto/ecto-base.owl",
+                    "name": "Environmental conditions, treatments and exposures ontology main release in OWL format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ecto/ecto-base.owl"
+                },
+                {
+                    "id": "ecto/ecto-base.obo",
+                    "name": "Environmental conditions, treatments and exposures ontology additional release in OBO format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ecto/ecto-base.obo"
+                },
+                {
+                    "id": "ecto/ecto-base.json",
+                    "name": "Environmental conditions, treatments and exposures ontology additional release in OBOJSon format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ecto/ecto-base.json"
+                }
+            ],
+            "title": "Environmental conditions, treatments and exposures ontology",
+            "tracker": "https://github.com/EnvironmentOntology/environmental-exposure-ontology/issues"
         },
         {
             "activity_status": "active",
@@ -2041,11 +2170,18 @@
             "products": [
                 {
                     "id": "envo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/envo.owl"
+                    "ontology_purl": "http://purl.obolibrary.org/obo/envo.owl",
+                    "title": "main ENVO OWL release"
+                },
+                {
+                    "id": "envo.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/envo.json",
+                    "title": "ENVO in obographs JSON format"
                 },
                 {
                     "id": "envo.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/envo.obo"
+                    "ontology_purl": "http://purl.obolibrary.org/obo/envo.obo",
+                    "title": "ENVO in OBO Format. May be lossy"
                 },
                 {
                     "id": "subsets/envo-basic.obo",
@@ -2207,7 +2343,7 @@
             },
             "description": "A structured controlled vocabulary for the anatomy of fungi.",
             "domain": "anatomy",
-            "homepage": "http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/",
+            "homepage": "https://github.com/obophenotype/fungal-anatomy-ontology/",
             "id": "fao",
             "layout": "ontology_detail",
             "license": {
@@ -2216,7 +2352,6 @@
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/fao.owl",
-            "page": "http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/#description",
             "products": [
                 {
                     "id": "fao.owl",
@@ -2285,9 +2420,9 @@
                 }
             ],
             "build": {
-                "infallible": 1,
-                "method": "owl2obo",
-                "source_url": "https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.owl"
+                "checkout": "git clone https://github.com/FlyBase/drosophila-anatomy-developmental-ontology.git",
+                "path": ".",
+                "system": "git"
             },
             "contact": {
                 "email": "cp390@cam.ac.uk",
@@ -2313,6 +2448,10 @@
                 {
                     "id": "fbbt.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/fbbt.obo"
+                },
+                {
+                    "id": "fbbt.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbt.json"
                 },
                 {
                     "id": "fbbt/fbbt-simple.owl",
@@ -2380,8 +2519,9 @@
                 }
             ],
             "build": {
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.owl"
+                "checkout": "git clone https://github.com/FlyBase/flybase-controlled-vocabulary.git",
+                "path": ".",
+                "system": "git"
             },
             "contact": {
                 "email": "cp390@cam.ac.uk",
@@ -2407,6 +2547,10 @@
                 {
                     "id": "fbcv.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/fbcv.obo"
+                },
+                {
+                    "id": "fbcv.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbcv.json"
                 }
             ],
             "title": "FlyBase Controlled Vocabulary",
@@ -2434,9 +2578,9 @@
                 }
             ],
             "build": {
-                "infallible": 0,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbdv/releases/fbdv.owl"
+                "checkout": "git clone https://github.com/FlyBase/drosophila-developmental-ontology.git",
+                "path": ".",
+                "system": "git"
             },
             "contact": {
                 "email": "cp390@cam.ac.uk",
@@ -2462,6 +2606,10 @@
                 {
                     "id": "fbdv.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/fbdv.obo"
+                },
+                {
+                    "id": "fbdv.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbdv.json"
                 },
                 {
                     "id": "fbdv/fbdv-simple.owl",
@@ -2823,6 +2971,46 @@
         },
         {
             "activity_status": "active",
+            "build": {
+                "checkout": "git clone https://github.com/glygen-glycan-data/GNOme.git",
+                "path": ".",
+                "system": "git"
+            },
+            "contact": {
+                "email": "nje5@georgetown.edu",
+                "github": "edwardsnj",
+                "label": "Nathan Edwards"
+            },
+            "description": "An ontology for glycans based on GlyTouCan, but organized by subsumption.",
+            "domain": "glycan structure",
+            "homepage": "https://github.com/glygen-glycan-data/GNOme",
+            "id": "gno",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/gno.owl",
+            "products": [
+                {
+                    "id": "gno.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/gno.owl"
+                },
+                {
+                    "id": "gno.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/gno.obo"
+                },
+                {
+                    "id": "gno.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/gno.json"
+                }
+            ],
+            "title": "Glycan Naming Ontology",
+            "tracker": "https://github.com/glygen-glycan-data/GNOme/issues"
+        },
+        {
+            "activity_status": "active",
             "contact": {
                 "email": "dwelter@ebi.ac.uk",
                 "label": "Danielle Welter"
@@ -3039,6 +3227,31 @@
         {
             "activity_status": "active",
             "contact": {
+                "email": "liumeng94@sjtu.edu.cn",
+                "label": "Meng LIU"
+            },
+            "description": "ICEO is an integrated biological ontology for the description of bacterial integrative and conjugative elements (ICEs).",
+            "homepage": "https://github.com/ontoice/ICEO",
+            "id": "iceo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/iceo.owl",
+            "products": [
+                {
+                    "id": "iceo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/iceo.owl"
+                }
+            ],
+            "title": "Integrative and Conjugative Element Ontology",
+            "tracker": "https://github.com/ontoice/ICEO/issues"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
                 "email": "yongqunh@med.umich.edu",
                 "github": "yongqunh",
                 "label": "Yongqun Oliver He"
@@ -3150,6 +3363,31 @@
             ],
             "title": "Interaction Network Ontology",
             "tracker": "https://github.com/INO-ontology/ino/issues"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "paul.fabry@usherbrooke.ca",
+                "label": "Paul Fabry"
+            },
+            "description": "LABO is an ontology of informational entities formalizing clinical laboratory tests prescriptions and reporting documents.",
+            "domain": "clinical documentation",
+            "homepage": "https://github.com/OpenLHS/LABO",
+            "id": "labo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/labo.owl",
+            "products": [
+                {
+                    "id": "labo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/labo.owl"
+                }
+            ],
+            "title": "clinical LABoratory Ontology"
         },
         {
             "activity_status": "active",
@@ -3656,7 +3894,7 @@
             },
             "description": "An ontology that harmonizes multiple disease resources.",
             "domain": "disease",
-            "homepage": "https://github.com/monarch-initiative/mondo",
+            "homepage": "https://monarch-initiative.github.io/mondo",
             "id": "mondo",
             "label": "MONDO",
             "layout": "ontology_detail",
@@ -3698,7 +3936,20 @@
                 "label": "Metazoa"
             },
             "title": "Mondo Disease Ontology",
-            "tracker": "https://github.com/monarch-initiative/mondo-build/issues"
+            "tracker": "https://github.com/monarch-initiative/mondo-build/issues",
+            "usages": [
+                {
+                    "description": "Mondo is used by the Monarch Initiative for disease annotations.",
+                    "examples": [
+                        {
+                            "url": "https://monarchinitiative.org/phenotype/HP:0001300#diseases"
+                        }
+                    ],
+                    "reference": "https://academic.oup.com/nar/article/45/D1/D712/2605791",
+                    "type": "annotation",
+                    "user": "https://monarchinitiative.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -3751,10 +4002,9 @@
                 }
             ],
             "build": {
-                "infallible": 1,
-                "method": "archive",
-                "path": "archive/src/ontology",
-                "source_url": "http://build.berkeleybop.org/job/build-mp-edit/lastSuccessfulBuild/artifact/*zip*/archive.zip"
+                "checkout": "git clone https://github.com/obophenotype/mammalian-phenotype-ontology.git",
+                "path": ".",
+                "system": "git"
             },
             "contact": {
                 "email": "pheno@jax.org",
@@ -3787,13 +4037,17 @@
                 {
                     "id": "mp.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/mp.obo"
+                },
+                {
+                    "id": "mp.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mp.json"
                 }
             ],
             "taxon": {
                 "id": "NCBITaxon:40674",
                 "label": "Mammalia"
             },
-            "title": "Mammalian Phenotype",
+            "title": "Mammalian Phenotype Ontology",
             "tracker": "https://github.com/obophenotype/mammalian-phenotype-ontology/issues"
         },
         {
@@ -6590,7 +6844,31 @@
                 "id": "NCBITaxon:6237",
                 "label": "Caenorhabditis"
             },
-            "title": "C. elegans phenotype"
+            "title": "C. elegans phenotype",
+            "usages": [
+                {
+                    "description": "WormBase uses WBPhenotype to curate worm phenotypes, and to allow search and indexing on the WormBase site",
+                    "examples": [
+                        {
+                            "url": "https://www.wormbase.org/species/c_elegans/gene/WBGene00013855#0c-9g-3"
+                        }
+                    ],
+                    "reference": "https://academic.oup.com/nar/article/46/D1/D869/4563314",
+                    "type": "annotation",
+                    "user": "https://www.wormbase.org/"
+                },
+                {
+                    "description": "Monarch integrates phenotype annotations from sources such as WormBase, and allows for querying using the WBPhenotype ontology.",
+                    "examples": [
+                        {
+                            "url": "https://monarchinitiative.org/phenotype/WBPhenotype%3A0000370"
+                        }
+                    ],
+                    "reference": "https://academic.oup.com/nar/article/45/D1/D712/2605791",
+                    "type": "annotation",
+                    "user": "https://monarchinitiative.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -6888,7 +7166,20 @@
                 }
             ],
             "title": "Zebrafish Phenotype Ontology",
-            "tracker": "https://github.com/obophenotype/zebrafish-phenotype-ontology/issues"
+            "tracker": "https://github.com/obophenotype/zebrafish-phenotype-ontology/issues",
+            "usages": [
+                {
+                    "description": "Monarch integrates phenotype annotations from sources such as ZFIIN, and allows for querying using the ZP ontology.",
+                    "examples": [
+                        {
+                            "url": "https://monarchinitiative.org/phenotype/ZP:0005692"
+                        }
+                    ],
+                    "reference": "https://academic.oup.com/nar/article/45/D1/D712/2605791",
+                    "type": "annotation",
+                    "user": "https://monarchinitiative.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -6999,7 +7290,20 @@
             "termgenie": "http://hp.termgenie.org",
             "title": "Human Phenotype Ontology",
             "tracker": "https://github.com/obophenotype/human-phenotype-ontology/issues/",
-            "twitter": "hp_ontology"
+            "twitter": "hp_ontology",
+            "usages": [
+                {
+                    "description": "HPO is used by the Monarch Initiative for phenotype annotations.",
+                    "examples": [
+                        {
+                            "url": "https://monarchinitiative.org/phenotype/HP:0001300"
+                        }
+                    ],
+                    "reference": "https://academic.oup.com/nar/article/45/D1/D712/2605791",
+                    "type": "annotation",
+                    "user": "https://monarchinitiative.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -7086,6 +7390,45 @@
             ],
             "title": "Systems Biology Ontology",
             "tracker": "https://sourceforge.net/p/sbo/term-request/"
+        },
+        {
+            "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal Browser",
+                    "url": "http://bioportal.bioontology.org/ontologies/TXPO?p=classes"
+                },
+                {
+                    "label": "TOXPILOT",
+                    "title": "TOXPILOT",
+                    "url": "https://toxpilot.nibiohn.go.jp/"
+                }
+            ],
+            "contact": {
+                "email": "y-yamagata@nibiohn.go.jp",
+                "github": "txpo-ontology",
+                "label": "Yuki Yamagata"
+            },
+            "description": "TOXic Process Ontology (TXPO) systematizes a wide variety of terms involving toxicity courses and processes. The first version of TXPO focuses on liver toxicity.",
+            "domain": "toxicity",
+            "homepage": "https://toxpilot.nibiohn.go.jp/",
+            "id": "txpo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY version 3.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/txpo.owl",
+            "products": [
+                {
+                    "id": "txpo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/txpo.owl"
+                }
+            ],
+            "title": "Toxic Process Ontology",
+            "tracker": "https://github.com/txpo-ontology/TXPO/issues"
         },
         {
             "activity_status": "active",
