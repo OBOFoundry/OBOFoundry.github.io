@@ -14,4 +14,4 @@ checks/fp_%.md: ../util/principles/fp_%.py | checks
 	| awk '!found && /import/ { print "```"; found=1 } 1' \
 	> $@
 	echo '```' >> $@
-	echo "---\nlayout: check\nid: $(notdir $(basename $@))\ntitle: $(subst fp_,,$(notdir $(basename $@)))\n---\n$$(cat $@)" > $@
+	echo "---\nlayout: check\nid: $(notdir $(basename $@))\ntitle: $(subst 0,,$(subst fp_,,$(notdir $(basename $@))))\n---\n$$(cat $@)" > $@
