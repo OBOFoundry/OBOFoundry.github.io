@@ -47,8 +47,8 @@ products:
    description: For use in neuroscience
    page: http://bioinformatics.oxfordjournals.org/content/28/9/1262.long
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  url: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC-0
 usages:
  - user: http://geneontology.org
    type: annotation
