@@ -14,6 +14,8 @@ Summary
 
 The ontology has textual definitions for the majority of its classes and for top level terms in particular.
 
+[This check is automatically validated.](checks/fp_006)
+
 Purpose
 -------
 

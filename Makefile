@@ -63,6 +63,12 @@ tmp:
 reports:
 	mkdir -p $@
 
+reports/robot:
+	mkdir -p $@
+
+reports/principles:
+	mkdir -p $@
+
 
 ### Build Configuration Files
 
@@ -130,6 +136,80 @@ tmp/unsorted-ontologies.yml: $(ONTS) | tmp
 
 extract-metadata: $(ONTS)
 	./util/extract-metadata.py validate $^
+
+
+### OBO Dashboard
+
+# This is the Jenkins job
+# The reports will be archived
+
+dashboard: build/dashboard.zip
+
+# Build directories
+build:
+	mkdir -p $@
+build/ontologies:
+	mkdir -p $@
+
+# reboot the JVM for Py4J
+reboot:
+	bash ./util/reboot.sh
+
+# This version of ROBOT includes features for starting Py4J
+# This will be changed to ROBOT release once feature is released
+#.PHONY: build/robot.jar
+build/robot.jar: | build
+	curl -o $@ -Lk \
+	https://build.obolibrary.io/job/ontodev/job/robot/job/py4j/lastSuccessfulBuild/artifact/bin/robot.jar
+
+# This version of ROBOT includes features for removing external axioms to create 'base' artefacts
+# This will be removed once this feature is released
+#.PHONY: build/robot-foreign.jar
+build/robot-foreign.jar: | build
+	curl -o $@ -Lk \
+	https://build.obolibrary.io/job/ontodev/job/robot/job/562-feature/lastSuccessfulBuild/artifact/bin/robot.jar
+
+# Generate the initial dashboard results file
+# ALWAYS make sure nothing is running on port 25333
+# Then boot Py4J gateway to ROBOT on that port
+reports/dashboard.csv: registry/ontologies.yml | \
+reports/robot reports/principles build/ontologies build/robot.jar build/robot-foreign.jar
+	make reboot
+	./util/principles/dashboard.py $< $@ --big false
+
+reports/big-dashboard.csv: reports/dashboard.csv
+	make reboot
+	./util/principles/dashboard.py registry/ontologies.yml $@ --big true
+
+# Combine the dashboard files
+reports/dashboard-full.csv: reports/dashboard.csv reports/big-dashboard.csv registry/ontologies.yml
+	./util/principles/sort_tables.py $^ $@
+
+# Generate the HTML grid output for dashboard
+reports/dashboard.html: reports/dashboard-full.csv
+	./util/create-html-grid.py $< $@
+
+# Move all important results to a dashboard directory
+build/dashboard: reports/dashboard.html
+	mkdir -p $@
+	mkdir -p $@/assets
+	mkdir -p $@/reports
+	cp $< $@
+	cp -r reports/robot $@/reports
+	cp -r reports/principles $@/reports
+	cp -r assets/svg $@/assets
+	rm -rf build/dashboard.zip
+	zip -r $@.zip $@
+
+# Clean up, removing ontology files
+# We don't want to keep them because we will download new ones each time to stay up-to-date
+# Reports are all archived in build/dashboard.zip
+clean-dashboard: build/dashboard
+	rm -rf build/ontologies
+	rm -rf reports/robot
+	rm -rf reports/principles
+	rm -rf build/dashboard
+
 
 # Note this should *not* be run as part of general travis jobs, it is expensive
 # and may be prone to false positives as it is inherently network-based

@@ -24,6 +24,8 @@ Briefly, some important things to remember:
  * labels should be unique within an ontology
  * use the IAO property 'obo foundry unique label' [http://purl.obolibrary.org/obo/IAO_0000589](http://purl.obolibrary.org/obo/IAO_0000589) to declare a pan-OBO unique label if required
 
+[This check is automatically validated.](checks/fp_012)
+
 Date Accepted
 -------------
 

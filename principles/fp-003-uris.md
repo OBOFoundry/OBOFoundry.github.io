@@ -21,6 +21,8 @@ labels or mnemonics meaningful to humans. Additional information is available at
 
 The ID-space / prefix must be registered with the OBO library in advance. Please see the relevant [documentation](http://obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests).
 
+[This check is automatically validated.](checks/fp_003)
+
 ### OBO-Format Ontologies
 
 If the source ontology is in OBO-Format, then this is automatically

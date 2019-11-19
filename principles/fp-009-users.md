@@ -10,6 +10,8 @@ Summary
 The ontology developers should document that the ontology is used by
 multiple independent people or organizations.
 
+[This check is automatically validated.](checks/fp_009)
+
 Purpose
 -------
 

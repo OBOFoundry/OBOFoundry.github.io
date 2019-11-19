@@ -288,9 +288,6 @@ def save_grid(metadata_grid, headers, grid_outfile):
       results = metadata_grid[ont_id]
       s = '{1}{0}{2}{0}{3}'.format(separator, ont_id, results['ontology_status'],
                                    results['validation_status'])
-      if ont_id == 'vario':
-        print(headers)
-        print(results)
       for h in headers:
         if h == 'license':
           # license has two checks
