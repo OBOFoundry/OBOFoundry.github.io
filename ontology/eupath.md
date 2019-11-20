@@ -8,6 +8,7 @@ contact:
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
+depicted_by: https://github.com/EuPathDB/communitysite/blob/master/assets/images/VEuPathDB-logo-s.png?raw=true
 description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org). 
 homepage: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
 products:
