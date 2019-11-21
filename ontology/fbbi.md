@@ -9,7 +9,7 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 description: A structured controlled vocabulary of sample preparation, visualization and imaging methods used in biomedical research.
-domain: experiments
+domain: imaging experiments
 homepage: http://cellimagelibrary.org/
 tracker: https://github.com/CRBS/Biological_Imaging_Methods_Ontology/issues
 products:
