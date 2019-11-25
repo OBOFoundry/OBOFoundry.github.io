@@ -60,54 +60,5 @@ pipeline {
 			sh 'echo "$START_DAY"'
 			}
 		}
-		// Our main bit of work.
-		stage('Produce dashboard') {
-			agent {
-				docker {
-					image 'obolibrary/odkfull:v1.1.7'
-					// Reset Jenkins Docker agent default to original
-					// root.
-					args '-u root:root'
-				}
-			}
-			steps {
-				// Create a relative working directory and setup our
-				// working environment.
-				dir('./OBOFoundry.github.io') {
-					git branch: BRANCH_NAME,
-					url: 'https://github.com/OBOFoundry/OBOFoundry.github.io'
-
-					// Setup our environment the way we want.
-					sh 'pip3 install -r requirements.txt'
-					sh 'apt-get -f install lsof'
-					sh 'apt-get -f install zip'
-
-					// Check what our world looks like.
-					sh 'env'
-
-					// We're downloading things, so lets give it a few
-					// tries.
-					timeout(time: 8, unit: 'HOURS') {
-						retry(3){
-							sh 'export PYTHONUNBUFFERED=1'
-							sh 'make clean-dashboard'
-							archiveArtifacts artifacts: 'build/*.zip', onlyIfSuccessful: true
-						}
-					}
-				}
-			}
-		}
-	}
-	post {
-		// Let's let our internal people know if things change.
-		changed {
-			echo "There has been a change in the ${env.BRANCH_NAME} pipeline."
-			mail bcc: '', body: "There has been a pipeline status change in ${env.BRANCH_NAME}. Please see: https://build.obolibrary.io/job/obofoundry/job/pipeline/job/${env.BRANCH_NAME}", cc: '', from: '', replyTo: '', subject: "OBO pipeline change for ${env.BRANCH_NAME}", to: "${TARGET_ADMIN_EMAILS}"
-		}
-		// Let's let our internal people know if things go badly.
-		failure {
-			echo "There has been a failure in the ${env.BRANCH_NAME} pipeline."
-			mail bcc: '', body: "There has been a pipeline failure in ${env.BRANCH_NAME}. Please see: https://build.obolibrary.io/job/obofoundry/job/pipeline/job/${env.BRANCH_NAME}", cc: '', from: '', replyTo: '', subject: "OBO pipeline FAIL for ${env.BRANCH_NAME}", to: "${TARGET_ADMIN_EMAILS}"
-		}
 	}
 }
