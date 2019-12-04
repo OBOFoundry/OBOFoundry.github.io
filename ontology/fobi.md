@@ -12,7 +12,7 @@ license:
   label: CC-BY
 products:
   - id: fobi.owl
-    title: FOBI: An ontology to represent food intake data and associate it with metabolomic data
+    title: FOBI is an ontology to represent food intake data and associate it with metabolomic data
     format: owl-rdf/xml
 title: FOBI
 dependencies:
