@@ -32,6 +32,13 @@ def main():
   parser_n.set_defaults(function=concat_principles_yaml)
   parser_n.add_argument('files', nargs='*')
 
+    # SUBCOMMAND (added by Bill D. 2019-12-09)
+  parser_n = subparsers.add_parser('concat-reviews', help='concat reviews yamls')
+  parser_n.add_argument('-i', '--include', help='yaml file to include for header')
+  parser_n.add_argument('-o', '--output', help='output yaml')
+  parser_n.set_defaults(function=concat_reviews_yaml)
+  parser_n.add_argument('files', nargs='*')
+
   args = parser.parse_args()
 
   func = args.function
@@ -184,6 +191,27 @@ def concat_principles_yaml(args):
     (obj, md) = load_md(fn)
     objs.append(obj)
   cfg['principles'] = objs
+  with open(args.output, 'w') as f:
+    f.write(yaml.dump(cfg))
+  return cfg
+
+
+def concat_reviews_yaml(args): # (added by Bill D. 2019-01-09)
+  """
+  Concatenate all of the reviews .md files given in the command line arguments and
+  add them to the 'reviews' field of the YAML object that is returned. If the
+  --include command line option has been specified, then the YAML will include information
+  from that file.
+  """
+  objs = []
+  cfg = {}
+  if (args.include):
+    with open(args.include, 'r') as f:
+      cfg = yaml.load(f.read(), Loader=yaml.SafeLoader)
+  for fn in args.files:
+    (obj, md) = load_md(fn)
+    objs.append(obj)
+  cfg['reviews'] = objs
   with open(args.output, 'w') as f:
     f.write(yaml.dump(cfg))
   return cfg

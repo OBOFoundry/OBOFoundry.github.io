@@ -34,6 +34,8 @@ ONTS := $(wildcard ontology/*.md)
 # All principles .md files
 PRINCIPLES := $(wildcard principles/*.md)
 
+# All review .md files
+REVIEWS := $(wildcard reviews/*.md)
 
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
@@ -79,7 +81,7 @@ reports/principles:
 # `sites` object - think of it like the global database
 #
 # (this is somewhat hacky, but concatenating these yamls is safe)
-_config.yml: _config_header.yml registry/ontologies.yml principles/all.yml
+_config.yml: _config_header.yml registry/ontologies.yml principles/all.yml reviews/all.yml
 	cat $^ > $@.tmp && mv $@.tmp $@
 
 # Sort ontologies based on the validation (metadata-grid)
@@ -90,6 +92,11 @@ registry/ontologies.yml: reports/metadata-grid.csv
 # into a single yaml file in that directory
 principles/all.yml: $(PRINCIPLES)
 	./util/extract-metadata.py concat-principles -o $@.tmp $^  && mv $@.tmp $@
+
+# Extract the metadata from each principle in the reviews/ directory, and concatenate
+# into a single yaml file in that directory
+reviews/all.yml: $(REVIEWS)
+	./util/extract-metadata.py concat-reviews -o $@.tmp $^  && mv $@.tmp $@
 
 # Use a generic yaml->json conversion, but adding a @content
 registry/ontologies.jsonld: registry/ontologies.yml
