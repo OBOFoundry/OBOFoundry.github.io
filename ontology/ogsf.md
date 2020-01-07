@@ -12,7 +12,7 @@ license:
 products:
   - id: ogsf.owl
 title: Ontology of Genetic Susceptibility Factor
-tracker: https://code.google.com/p/ogsf/issues/list
+tracker: https://github.com/linikujp/ontology-for-genetic-interval/issues
 activity_status: active
 ---
 
