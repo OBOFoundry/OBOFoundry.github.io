@@ -24,6 +24,7 @@ Current members of the OBO Foundry Operations Committee are (in alphabetical ord
 
  * Jim Balhoff (T), RENCI, University of North Carolina, Chapel Hill, NC, USA
  * Mathias Brochhausen (O), Department of Biomedical Informatics, University of Arkansas for Medical Sciences, Little Rock, AR, USA
+ * Matt Brush (T), OHSU
  * Pier Luigi Buttigieg (E, O), Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Bremerhaven, Germany
  * Seth Carbon (T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA
  * [Melanie Courtot](http://purl.org/net/mcourtot) (O, T), EMBL-EBI, Cambridge, UK 
