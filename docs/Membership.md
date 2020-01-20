@@ -49,6 +49,8 @@ Current members of the OBO Foundry Operations Committee are (in alphabetical ord
  * Randi Vita (O), La Jolla Institute for Immunology, La Jolla, CA, USA
  * [Ramona Walls](http://www.cyverse.org/ramona-walls) (E, T), CyVerse, University of Arizona, Tucson, AZ, USA
  * [Jie Zheng](http://cbil.upenn.edu/profile-staff_bio/39) (T, O), University of Pennsylvania, Philadelphia, USA
+ 
+New members: follow the instructions on the [onboarding doc](https://docs.google.com/document/d/1MKhNTjZjGx6Ls72dybIV2ajYtbqtwP7O4lwxN2v3RBA/edit#heading=h.10q6n5qc13dp)
 
 Alumni:
 
