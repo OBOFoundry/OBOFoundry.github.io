@@ -16,10 +16,11 @@ This page deals with policies and guidelines for the process of ontology review,
 # How to request an ontology review #
 
   1. Go to the OBO Foundry Operations Committee [issue tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues).
-  2. Click on "New issue".
-  3. Click "Label" and select "review request".
+  2. Click on [New issue](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new/choose).
+  3. Select the "Ontology Review Request" issue template
   4. Enter title of issue (e.g., "Review request for MyO") and any comments.
-  5. Click "Submit".
+  5. You will see a link for a self-review form. Fill this in.
+  6. Click "Submit".
 
 # Ontology review priority #
 
