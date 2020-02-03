@@ -3148,11 +3148,11 @@ _:b192  <http://www.w3.org/2000/01/rdf-schema#label>  "Brian Aevermann" ;
         <http://purl.org/dc/elements/1.1/description>  "An application ontology to represent genetic susceptibility to a specific disease, adverse event, or a pathological process." ;
         <http://purl.org/dc/elements/1.1/title>  "Ontology of Genetic Susceptibility Factor" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/3.0/> ;
-        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/linikujp/ontology-for-genetic-interval/issues" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/linikujp/OGSF/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ogsf.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b193 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ogsf.owl> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <http://purl.obolibrary.org/obo/none> .
+        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/linikujp/OGSF> .
 
 _:b193  <http://www.w3.org/2000/01/rdf-schema#label>  "Asiyah Yu Lin" ;
         <http://xmlns.com/foaf/0.1/mbox>  "linikujp@gmail.com" .
@@ -4310,6 +4310,7 @@ _:b263  <http://www.w3.org/2000/01/rdf-schema#label>  "Raymond Lee" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/wbbt.obo" .
 
 <http://purl.obolibrary.org/obo/wbls>
+        <http://identifiers.org/preferredPrefix>  "WBls" ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b264 ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_6237> ;
         <http://purl.org/dc/elements/1.1/description>  "A structured controlled vocabulary of the development of <i>Caenorhabditis elegans</i>." ;
