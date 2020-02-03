@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: wbls
+preferredPrefix: WBls
 contact:
   email: draciti@caltech.edu
   label: Daniela Raciti
