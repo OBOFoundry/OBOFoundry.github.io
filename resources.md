@@ -1,3 +1,9 @@
+---
+layout: doc
+id: resources
+title: resources
+---
+
 # Ontology Tutorials and Resources
 
 ## Ontology Browsers
