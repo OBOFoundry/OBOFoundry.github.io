@@ -4,12 +4,6 @@ id: Policy_for_OBO_namespace_and_associated_PURL_requests
 title: Policy for OBO IDSPACE and associated PURL requests
 ---
 
-## This policy has been formally adopted on April 19th 2013. Do not edit this page without consulting with the OBO Technical group.
-
-## Change adopted March 2017 to add obsolete metadata to non-maintained PURLs. See issue https://github.com/OBOFoundry/OBOFoundry.github.io/issues/344
-
-## Revised February 2020 to accomodate new requirements to do original work and work with existing ontologies. See issue https://github.com/OBOFoundry/OBOFoundry.github.io/issues/620
-
 Please raise any questions or concerns on our GitHub tracker: https://github.com/OBOFoundry/OBOFoundry.github.io/issues
 
 
