@@ -16,7 +16,6 @@ homepage: http://geneontology.org/
 twitter: news4go
 facebook: https://www.facebook.com/Gene-Ontology-305908656519/ 
 tracker: https://github.com/geneontology/go-ontology/issues/
-termgenie: http://go.termgenie.org
 taxon:
   id: NCBITaxon:1
   label: All life
