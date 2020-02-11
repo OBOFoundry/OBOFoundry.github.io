@@ -1,4 +1,4 @@
-OP
+---
 layout: doc
 id: Policy_for_OBO_namespace_and_associated_PURL_requests
 title: Policy for OBO IDSPACE and associated PURL requests
