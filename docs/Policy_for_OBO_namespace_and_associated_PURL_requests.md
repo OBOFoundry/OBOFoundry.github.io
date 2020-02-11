@@ -56,7 +56,7 @@ Example of such request for OHMI:
 
 ## 2. Response
 
-Allow up to 4 weeks to give members of the community time to provide feedback and for the Operations Committee to review the requesst. If you don't hear back from us after 4 weeks, please follow-up via the tracker issue you created.
+Allow up to 4 weeks to give members of the community time to provide feedback and for the Operations Committee to review the request. If you don't hear back from us after 4 weeks, please follow-up via the tracker issue you created.
 
 Based on this discussion, the Operations Committee will either decline your IDSPACE request, ask for changes, or approve the request.
 
