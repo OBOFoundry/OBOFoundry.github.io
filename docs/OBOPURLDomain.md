@@ -1,11 +1,10 @@
 ---
 layout: doc
 id: OBOPURLDomain
-title: OBOPURLDomain
+title: OBO PURL Domain
 ---
 
-The [OBO ID Policy](https://obofoundry.org/id_policy.shtml) describes the general schema for which purls are then create, and what the format of individual purls are.
+Please see the [OBO ID Policy](http://www.obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html) document, which describes the requirements and process for requesting a new IDSPACE and PURL.
 
-Every ontology in OBO has a PURL, and every class also gets a PURL. The PURLs for ontologies can be found on individual ontology home pages.
+For technical details of how the OBO PURL system works, and the format of individual PURLs, refer to https://github.com/OBOFoundry/purl.obolibrary.org/.
 
-For technical details of how the OBO PURL system works, refer to https://github.com/OBOFoundry/purl.obolibrary.org/
