@@ -34,6 +34,8 @@ dependencies:
 - id: go
 - id: ro
 - id: uberon
+- id: foodon
+- id: chebi
 
 tracker: https://github.com/monarch-initiative/MAxO/issues
 license:
