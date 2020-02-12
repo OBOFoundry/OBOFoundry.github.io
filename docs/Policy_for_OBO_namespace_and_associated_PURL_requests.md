@@ -63,7 +63,7 @@ Based on this discussion, the Operations Committee will either decline your IDSP
 
 ## 3. Approval
 
-Once an IDSPACE is approved, two important YAML format files (`[IDSPACE].yml`) must be created. Since your project will be responsible for maintaining these files, it's best if someone on your team reads our documentation and creates these files. If this is impossible, please let us know on your tracker issue, and one of our volunteers will try to accommodate you.
+Once an IDSPACE is approved, two important files must be created. Since your project will be responsible for maintaining these files, it's best if someone on your team reads our documentation and creates these files. If this is impossible, please let us know on your tracker issue, and one of our volunteers will try to accommodate you.
 
 1. An OBO Registry metadata file. An OBO Registry entry provides key metadata about your project for <http://obofoundry.org> and many other uses. See our [FAQ: Edit metadata](http://obofoundry.github.io/faq/how-do-i-edit-metadata.html)
 
@@ -71,7 +71,7 @@ Once an IDSPACE is approved, two important YAML format files (`[IDSPACE].yml`) m
 
 If you used the [Ontology Development Kit](https://github.com/INCATools/ontology-development-kit) to create your ontology, then the required YAML files will be created and stored under `src/metadata`.
 
-These two files should be created as GitHub Pull Requests (PRs) in the appropriate repository ([OBO Foundry Registry](https://github.com/OBOFoundry/OBOFoundry.github.io) for the YAML and [OBO PURLs](https://github.com/OBOFoundry/purl.obolibrary.org/) for the PURL configuration). Once these PRs for these two files are merged, your ontology is officially registered with OBO and your PURLs are available.
+These two files should be created as GitHub Pull Requests (PRs) in the appropriate repository ([OBO Foundry Registry](https://github.com/OBOFoundry/OBOFoundry.github.io) for the OBO registry entry and [OBO PURLs](https://github.com/OBOFoundry/purl.obolibrary.org/) for the PURL configuration). Once these PRs for these two files are merged, your ontology is officially registered with OBO and your PURLs are available.
 
 
 ## 4. Maintenance
