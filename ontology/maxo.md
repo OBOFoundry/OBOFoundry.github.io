@@ -12,7 +12,7 @@ build:
 contact:
   email: Leigh.Carmody@jax.org
   label: Leigh Carmody
-  github: @LCCarmody
+  github: LCCarmody
 description: Medical Action Ontology is an ontology...
 domain: stuff
 homepage: https://github.com/monarch-initiative/MAxO
