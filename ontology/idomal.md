@@ -13,11 +13,6 @@ homepage: https://www.vectorbase.org/ontology-browser
 products:
   - id: idomal.owl
 title: Malaria Ontology
-<!--
-build:
-  source_url: http://anobase.vectorbase.org/idomal/IDOMAL.obo
-  method: obo2owl
--->
 activity_status: inactive
 ---
 
