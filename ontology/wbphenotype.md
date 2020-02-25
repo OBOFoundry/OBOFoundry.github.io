@@ -11,6 +11,7 @@ license:
 description: A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes
 domain: phenotype
 homepage: https://github.com/obophenotype/c-elegans-phenotype-ontology
+tracker: https://github.com/obophenotype/c-elegans-phenotype-ontology/issues
 products:
   - id: wbphenotype.owl
   - id: wbphenotype.obo
