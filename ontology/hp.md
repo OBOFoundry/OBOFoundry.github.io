@@ -19,7 +19,7 @@ products:
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
-title: human phenotype ontology
+title: Human Phenotype Ontology
 jobs:
   - id: https://travis-ci.org/obophenotype/human-phenotype-ontology
     type: travis-ci
@@ -29,7 +29,6 @@ build:
   method: archive
   infallible: 1
 tracker: https://github.com/obophenotype/human-phenotype-ontology/issues/
-termgenie: http://hp.termgenie.org
 mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
 browsers:
   - label: HPO
@@ -45,6 +44,16 @@ publications:
     title: "The Human Phenotype Ontology: Semantic Unification of Common and Rare Disease."
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24217912
     title: "The Human Phenotype Ontology project: linking molecular biology and disease through phenotype data."
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/30476213
+    title: "Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources."
+usages:
+ - user: https://monarchinitiative.org/
+   type: annotation
+   description: HPO is used by the Monarch Initiative for phenotype annotations.
+   examples:
+    - url: https://monarchinitiative.org/phenotype/HP:0001300
+   reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
+activity_status: active
 ---
 
 <img src="http://human-phenotype-ontology.github.io/img/HPO-logo-stacked-black.png"/>
@@ -55,5 +64,6 @@ The Human Phenotype Ontology (HPO) aims to provide a standardized vocabulary of 
 
 The HPO can be browsed using:
 
+ * [Main Browser](https://hpo.jax.org/)
  * [HPO Browser](http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118)
  * [Monarch Browser](https://monarchinitiative.org/phenotype/HP:0000118)

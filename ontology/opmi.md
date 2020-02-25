@@ -14,6 +14,7 @@ products:
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
+activity_status: active
 ---
 
 The Ontology of Precision Medicine and Investigation (OPMI) aims to ontologically represent and standardize various entities and relations associated with precision medicine and related investigations at different conditions.

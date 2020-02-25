@@ -41,7 +41,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 ## Repo Organization
 
  * [registry/](registry)   `<-- DERIVED yaml, json and RDF. DO NOT EDIT`
-    * [registry/ontologies.yaml](registry/ontologies.yaml)  `<-- READONLY`
+    * [registry/ontologies.yml](registry/ontologies.yml)  `<-- READONLY`
     * [registry/ontologies.jsonld](registry/ontologies.jsonld)  `<-- generated from yaml`
     * `registry/ontologies.rdf  <-- TODO generated from jsonld`
  * [ontology/](ontology/)  `<-- source for ontology metadata. EDIT IN HERE`
@@ -49,7 +49,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
     * [ontology/uberon.md](ontology/uberon.md)
     * ...
  * [Makefile](Makefile) `<-- For compiling derived artefacts and running tests`
- * [.travis.yml](.travis.ml) `<-- continuous integration config`
+ * [.travis.yml](.travis.yml) `<-- continuous integration config`
  * [_posts/](_posts) `<-- Blog posts/news`
  * [_layouts/](_layouts) `<-- Jekyll layouts`
  * [_includes/](_includes) `<-- Jekyll includes`

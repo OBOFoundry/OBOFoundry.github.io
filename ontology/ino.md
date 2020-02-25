@@ -13,6 +13,7 @@ homepage: https://github.com/INO-ontology/ino
 tracker: https://github.com/INO-ontology/ino/issues
 products:
   - id: ino.owl
+activity_status: active
 ---
 
 # Summary

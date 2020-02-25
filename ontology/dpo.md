@@ -9,7 +9,9 @@ description: An ontology of commonly encountered and/or high level Drosophila ph
 domain: phenotype
 homepage: http://purl.obolibrary.org/obo/fbcv
 products:
-  - id: fbcv/dpo.owl
+  - id: dpo.owl
+  - id: dpo.obo
+  - id: dpo.json
 taxon:
   id: NCBITaxon:7227
   label: Drosophila
@@ -18,10 +20,10 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 build:
-  source_url: http://purl.obolibrary.org/obo/fbcv/dpo.owl
-  method: owl2obo
-  infallible: 0
-tracker: http://purl.obolibrary.org/obo/fbcv/tracker
+  checkout: git clone https://github.com/FlyBase/drosophila-phenotype-ontolog.git
+  system: git
+  path: "."
+tracker: https://github.com/FlyBase/drosophila-phenotype-ontology/issues
 browsers:
   - label: FB
     title: FlyBase Browser
@@ -35,6 +37,7 @@ usages:
     example:
       - url: "http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBcv:0002030"
         description: "alleles and constructs annotated to pupal lethal in FlyBase"
+activity_status: active
 ---
 
 An ontology of commonly encountered and/or high level Drosophila phenotypes.  It has significant formalisation - utilising terms from GO, CL, PATO and the Drosophila anatomy ontology.  It has been used by FlyBase for > 159000 annotations of phenotype.

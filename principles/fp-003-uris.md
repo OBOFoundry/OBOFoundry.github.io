@@ -1,13 +1,13 @@
 ---
 layout: principle
 id: fp-003-uris
-title: URI/Identifier Space
+title: URI/Identifier Space (principle 3)
 ---
 
 NOTE
 -----
 
-The original wording of this principle (given below) and content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.
+The content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.
 
 Details
 -------
@@ -20,6 +20,8 @@ labels or mnemonics meaningful to humans. Additional information is available at
 <http://www.obofoundry.org/id-policy>
 
 The ID-space / prefix must be registered with the OBO library in advance. Please see the relevant [documentation](http://obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests).
+
+[This check is automatically validated.](checks/fp_003)
 
 ### OBO-Format Ontologies
 

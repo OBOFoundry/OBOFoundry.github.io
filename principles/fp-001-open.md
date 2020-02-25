@@ -1,12 +1,14 @@
 ---
 layout: principle
 id: fp-001-open
-title: Open
+title: Open (principle 1)
 ---
 
 ## Summary
 
 The ontology MUST be openly available to be used by all without any constraint other than (a) its origin must be acknowledged and (b) it is not to be altered and subsequently redistributed in altered form under the original name or with the same identifiers.
+
+[This check is automatically validated.](checks/fp_001)
 
 ## Purpose
 

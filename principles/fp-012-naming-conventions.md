@@ -1,13 +1,13 @@
 ---
 layout: principle
 id: fp-012-naming-conventions
-title: Naming Conventions
+title: Naming Conventions (principle 12)
 ---
 
 NOTE
 -------
 
-The original wording of this principle (given below) and content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.
+The content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.
 
 Details
 -------
@@ -23,6 +23,8 @@ Briefly, some important things to remember:
  * make the primary labels to be as unambiguous as possible. Remember, your ontology may be used in a different context than that for which it was originally intended. Remember also of course that the label should be unambiguous without looking at parent terms
  * labels should be unique within an ontology
  * use the IAO property 'obo foundry unique label' [http://purl.obolibrary.org/obo/IAO_0000589](http://purl.obolibrary.org/obo/IAO_0000589) to declare a pan-OBO unique label if required
+
+[This check is automatically validated.](checks/fp_012)
 
 Date Accepted
 -------------

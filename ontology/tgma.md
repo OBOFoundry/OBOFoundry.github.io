@@ -19,6 +19,7 @@ title: Mosquito gross anatomy ontology
 build:
   source_url: http://anobase.vectorbase.org/anatomy/mosquito_anatomy.obo
   method: obo2owl
+activity_status: inactive
 ---
 
 A structured controlled vocabulary of the anatomy of mosquitoes.

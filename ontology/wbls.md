@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: wbls
+preferredPrefix: WBls
 contact:
   email: draciti@caltech.edu
   label: Daniela Raciti
@@ -18,9 +19,10 @@ taxon:
   label: Caenorhabditis
 title: C. elegans development ontology
 build:
-  notes: switch to vcs in dev repo?
-  source_url: https://raw.github.com/draciti/Life-stage-obo/master/worm_development.obo
-  method: obo2owl
+  checkout: git clone https://github.com/obophenotype/c-elegans-development-ontology.git
+  system: git
+  path: "."
+activity_status: active
 ---
 
 A structured controlled vocabulary of the development of <i>Caenorhabditis elegans</i>.

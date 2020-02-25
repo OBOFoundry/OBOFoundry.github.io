@@ -1,0 +1,18 @@
+{
+	"title": "products",
+	"level": "info",
+	"description": "'products' is a recommended field. The value is a list of resources, each with an ID. The resources should be in one of the following formats: OWL, OBO, JSON, OFN, OWX, TTL, or g-zipped OWL.",
+	"properties": {
+		"products": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"id": { "type": "string", "pattern": "^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$" }
+				},
+				"required": ["id"]
+			}
+		}
+	},
+	"required": ["products"]
+}

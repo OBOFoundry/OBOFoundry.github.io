@@ -1,79 +1,79 @@
 ---
 layout: doc
 id: Policy_for_OBO_namespace_and_associated_PURL_requests
-title: Policy_for_OBO_namespace_and_associated_PURL_requests
+title: Policy for OBO IDSPACE and associated PURL requests
 ---
 
-**This policy has been formally adopted on April 19th 2013. Do not edit this page without consulting with the OBO Technical group.**
-**Change adopted March 2017 to add obsolete metadata to non-maintained PURLs. See issue #344.**
-Comments to [obo-discuss@lists.sourceforge.net](mailto:obo-discuss@lists.sourceforge.net)
+Please raise any questions or concerns on our GitHub tracker: https://github.com/OBOFoundry/OBOFoundry.github.io/issues
+
 
 # Background
 
-Identifiers are managed by giving requesting projects a series of numerical ids that have a common prefix, sometimes known as a _namespace_. For example, a project might request and obtain the prefix "MOBO". The ontology would then use ids of the form http://purl.obolibrary.org/obo/MOBO_0000001 , http://purl.obolibrary.org/obo/MOBO_0000002 ...
+Every OBO project has an IDSPACE: a short alphanumeric code that uniquely identifies it among the other OBO projects, e.g. "MOBO". The IDSPACE is an important part of the project PURLs (Persistent Uniform Resource Locators), which are used to identify individual ontology terms as well as project artifacts such as OWL files.
 
-In order to ensure that there is no prefix redundancy, i.e. only one project/resource is using the namespace "MOBO", these are allocated by the OBO Foundry technical working group.
+In order to ensure that there is no IDSPACE redundancy, i.e. only one project/resource is using the IDSPACE "MOBO", these are allocated by the OBO Foundry Technical Working Group.
 
-The technical working group reserves the right to make decisions based on their experience and judgement. In addition to uniqueness of prefixes, other criteria are for example that there not be overlaps of usage. This includes awareness that there can be the appearance of overlap between accession numbers used in databases and [prefixed URIs](http://www.w3.org/TR/curie/). For example, we would probably not create a prefix "ISBN" and would instead make alternative suggestions.
-
-# Process #
-
-## OBO ##
-  1. While there are no review requirements, participation in the OBO Foundry implies willingness to discuss your project and collaboratively develop it. You are strongly encouraged to build upon the existing suite of ontologies available in the [OBO library](http://obofoundry.org).
-  1. We recommend projects be orthogonal to each other (i.e., no domain overlap). For those classes that are common across multiple resources (e.g., the class _cell_) we recommend importing terms from an already existing ontology. At a minimum, we expect attribution of existing work.
-
-## Requestor ##
-
-  1. You will get a PURL for your main file under the OBO PURL domain as well as a PURL domain. You will be part of the administrator group for those resources. Please familiarize yourself with the PURL guide at [PULRGuide](PURLGuide.html) .
-  1. As of today (April 7th, 2013), when your prefix is registered it is automatically included for display on the OBO Foundry site. This may change in the future as we modify our registration system.
-  1. Once your domain is created under OBO you will automatically benefit from our dereferencing tool [Ontobee](http://www.ontobee.org). If preferred you can, of course, redirect your pages towards your own web pages.
-  1. Please keep the OBO PURL group (group ID: OBO) to the maintainers/members of your PURL group
-
-## Status of ontology development ##
-
-  1. A project should exist, with work started. We will not "pre-book" prefixes and domains for potential future resources.
-  1. The required namespace must be available.
-  1. The resource must be publicly available when released.
-  1. There must be a contact person for the resource. We ask that the contact person for resources be subscribed to our main communication channel, the obo-discuss list.
-  1. The requestor and/or contact person should be ready to discuss issues such as whether the ontology is orthogonal, whether there is potential to collaborate with existing efforts.
-  1. It is expected that solicitation of a prefix is done _before_ the prefix is used for identifiers. A common strategy is to develop an ontology, request a prefix, and translate the initial URIs used to the PURLs some time before the initial release. **There is no guarantee that you will be granted your prefix, even if you have been using it in your file**.
-
-## Information needed for a prefix request ##
-
-  * requested prefix
-  * ontology title
-  * ontology download link
-  * ontology home page
-  * point person contact email
-  * ontology discussion mailing-list
-  * ontology issue tracker link
+The technical working group reserves the right to make decisions based on their experience and judgement. In addition to uniqueness of IDSPACEs, other criteria are for example that there not be overlaps of usage. This includes awareness that there can be the appearance of overlap between accession numbers used in databases and [prefixed URIs](http://www.w3.org/TR/curie/). For example, we would probably not create a IDSPACE "ISBN" and would instead make alternative suggestions.
 
 
-## Requesting the prefix ##
+# Expectations for OBO Membership
 
-The requests proceeds in 2 steps:
+1. Participation in the OBO Foundry implies willingness to discuss your project and collaboratively develop it. You are strongly encouraged to build upon the existing suite of ontologies available in the [OBO library](http://obofoundry.org).
 
-  1. First send an email to [obo-discuss](mailto:obo-discuss@lists.sourceforge.net) with your request to allow community feedback (you may need to [register](https://lists.sourceforge.net/lists/listinfo/obo-discuss) first)
+2. We recommend projects be orthogonal to each other (i.e. no domain overlap). For those classes that are common across multiple resources (e.g., the class _cell_) we recommend importing terms from an already existing ontology. Application ontologies (those developed for specific data integration tasks) should reuse terms from existing OBO Foundry domain ontologies. At a minimum, we expect attribution of existing work, specifically through the use of PURLs for individual terms and ontologies.
 
-  1. Submit your request to [our tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues)
+3. OBO projects are [open](http://obofoundry.org/principles/fp-001-open.html) and use [version control](http://obofoundry.org/principles/fp-004-versioning.html), and so we recommend that you set up an ontology repository on [GitHub](https://github.com) (or another public version control system). We provide the [Ontology Development Kit](https://github.com/INCATools/ontology-development-kit) to help with common ontology development tasks, including the creation of a GitHub repository and appropriate metadata files (see below).
+
+
+# Requirements for OBO Membership
+
+1. A project should exist, with work started. We will not "pre-book" IDSPACEs and domains for potential future resources.
+2. A project must be doing original work within the biological ontology community. 
+    * We will not provide an IDSPACE for a project that is issuing new identifier for existing ontologies.
+    * If there is clear overlap with an existing domain ontology, you must demonstrate a good faith effort to work with that ontology to provide any new terms needed.
+3. The required IDSPACE must be available.
+4. The resource must be publicly available when released. The general expectation is that the ontology source code is available on a public repository such as GitHub.
+5. There must be a contact person for the resource. The contact person for resources must be subscribed to our main communication channel, the [obo-discuss](mailto:obo-discuss@googlegroups.com) mailing list.
+6. The requestor and/or contact person should be ready to discuss issues such as whether the ontology is orthogonal, whether there is potential to collaborate with existing efforts.
+7. It is expected that solicitation of a IDSPACE is done _before_ the IDSPACE is used for identifiers. A common strategy is to develop an ontology, request a IDSPACE, and translate the initial URIs used to the PURLs some time before the initial release.  **There is no guarantee that you will be granted your IDSPACE, even if you have been using it in your file**.
+
+
+# Process
+
+## 1. Requesting the IDSPACE
+
+1. Submit your request to [our tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues). Select `New Issue` and then select `New Ontology Request`. Fill out the requested information to the best of your ability.
+
+2. Send an email to [obo-discuss](mailto:obo-discuss@googlegroups.com) with your request to allow community feedback (you may need to [apply to join group](https://groups.google.com/forum/#!forum/obo-discuss) first.) Be sure to include the link to the issue you created in step 1.
 
 We expect general discussion to take place on the obo-discuss list, while technical follow-up will take place on the tracker.
 
-Example of such request:
+Example of such request for OHMI:
 
- * OHMI
-    * [obo-discuss message](https://sourceforge.net/p/obo/mailman/message/35692927/)
-    * [tracker message](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/397)
+* [tracker issue](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/397)
+* [obo-discuss message](https://sourceforge.net/p/obo/mailman/message/35692927/)
 
-## Response ##
 
-Allocate 2 weeks to give members of the community time to provide feedback and for the operations committee to act on the request. We will usually respond on the tracker ticket and acknowledge your request/provide a tentative creation date.
-If you don't hear back from us after 2 weeks, please send a note to the [obo-foundry-technical-working-group@googlegroups.com](mailto:obo-foundry-technical-working-group@googlegroups.com) or request follow-up via the tracker ticket.
+## 2. Response
 
-# PURL Maintenance Obligations #
+Allow up to 4 weeks to give members of the community time to provide feedback and for the Operations Committee to review the request. If you don't hear back from us after 4 weeks, please follow-up via the tracker issue you created.
 
-Ontology editors are responsible for maintaining their own PURLs. Help is available from the OBO Foundry Technical WG by filing an issue in the [tracker] (https://github.com/OBOFoundry/OBOFoundry.github.io/issues) associated with this repository. Any PURL that does not work (or never worked) is considered abandoned and will be obsoleted after an initial warning period. If you find that a PURL you maintain was obsoleted when it should not have been, please file an issue in the [tracker] (https://github.com/OBOFoundry/OBOFoundry.github.io/issues) to have it restored.
+Based on this discussion, the Operations Committee will either decline your IDSPACE request, ask for changes, or approve the request.
 
-# For more information #
 
-For instructions on how to create the prefix/domain at purl.org, or to understand how the OBO PURL domain/redirection works, see [OBOPURLDomain](OBOPURLDomain.html)
+## 3. Approval
+
+Once an IDSPACE is approved, two important files must be created. Since your project will be responsible for maintaining these files, it's best if someone on your team reads our documentation and creates these files. If this is impossible, please let us know on your tracker issue, and one of our volunteers will try to accommodate you.
+
+1. An OBO Registry metadata file. An OBO Registry entry provides key metadata about your project for <http://obofoundry.org> and many other uses. See our [FAQ: Edit metadata](http://obofoundry.github.io/faq/how-do-i-edit-metadata.html)
+
+2. An OBO PURL configuration file. The OBO PURL system helps maintain links to your ontology terms and artifacts. See [purl.obolibrary.org/](https://github.com/OBOFoundry/purl.obolibrary.org/) for configuration file formatting and how to add your new file.
+
+If you used the [Ontology Development Kit](https://github.com/INCATools/ontology-development-kit) to create your ontology, then the required YAML files will be created and stored under `src/metadata`.
+
+These two files should be created as GitHub Pull Requests (PRs) in the appropriate repository ([OBO Foundry Registry](https://github.com/OBOFoundry/OBOFoundry.github.io) for the OBO registry entry and [OBO PURLs](https://github.com/OBOFoundry/purl.obolibrary.org/) for the PURL configuration). Once these PRs for these two files are merged, your ontology is officially registered with OBO and your PURLs are available.
+
+
+## 4. Maintenance
+
+As your ontology project grows and changes, be sure to update the OBO registry entry and PURL configuration for your project using GitHub Pull Requests.

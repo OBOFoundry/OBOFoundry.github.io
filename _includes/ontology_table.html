@@ -2,7 +2,15 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/reg
 <table class="table">
   <tbody>
     {% for ont in site.ontologies %}
-    <tr class="{% if ont.in_foundry_order %}foundry{% elsif ont.is_obsolete %}obsolete{% endif %}">
+      {% if ont.in_foundry_order %}
+      <tr class="foundry">
+      {% elsif ont.is_obsolete %}
+      <tr class="obsolete">
+      {% elsif ont.activity_status == "orphaned" %}
+      <tr class="obsolete">
+      {% elsif ont.activity_status == "inactive" %}
+      <tr class="obsolete">
+      {% endif %}
       <td>
          <a href="ontology/{{ ont.id }}.html" >
            {% if ont.is_obsolete %}
@@ -32,6 +40,9 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/reg
           {{ ont.description }}
         </s>
         <mark>obsolete</mark>
+        {% elsif ont.activity_status == "inactive" %}
+        {{ ont.description }}
+        <mark>inactive</mark>
         {% else %}
         {{ ont.description }}
         {% endif %}

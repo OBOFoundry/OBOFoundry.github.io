@@ -10,6 +10,7 @@ taxon:
   label: Zea
 homepage: http://www.maizemap.org/
 is_obsolete: true
+activity_status: inactive
 ---
 
 A structured controlled vocabulary for the anatomy of <i>Zea mays</i>.

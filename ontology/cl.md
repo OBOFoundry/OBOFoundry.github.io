@@ -27,7 +27,6 @@ taxon:
   label: Metazoa
 domain: cells
 tracker: https://github.com/obophenotype/cell-ontology/issues
-termgenie: http://cl.termgenie.org
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
 dependencies:
  - id: uberon
@@ -52,6 +51,9 @@ products:
    title: Basic CL
    description: Basic version, no inter-ontology axioms
    format: obo
+ - id: cl/cl-base.owl
+   title: CL base module
+   description: complete CL but with no imports or external axioms
 usages:
  - user: https://www.encodeproject.org/
    seeAlso: https://www.biosharing.org/biodbcore-000034
@@ -64,6 +66,7 @@ usages:
    examples:
     - url: http://fantom.gsc.riken.jp/5/sstar/CL:0000540
       description: FANTOM5 samples annotated to neuron
+activity_status: active
 ---
 
 ![neuron](https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Derived_Neuron_schema_with_no_labels.svg/320px-Derived_Neuron_schema_with_no_labels.svg.png)

@@ -2,17 +2,20 @@
 layout: ontology_detail
 id: go
 in_foundry_order: 1
+homepage: geneontology.org
 contact:
-  email: david.hill@jax.org
-  label: David Hill
-  github: ukemi
+  email: suzia@stanford.edu
+  label: Suzi Aleksander
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 label: GO
 description: An ontology for describing the function of genes and gene products
 title: Gene Ontology
+homepage: http://geneontology.org/
 twitter: news4go
 facebook: https://www.facebook.com/Gene-Ontology-305908656519/ 
 tracker: https://github.com/geneontology/go-ontology/issues/
-termgenie: http://go.termgenie.org
 taxon:
   id: NCBITaxon:1
   label: All life
@@ -82,10 +85,7 @@ products:
    title: "GO (OBO Format edition), daily snapshot release"
    description: "Equivalent to go.owl, but released daily. Note the snapshot release is not archived."
    page: http://geneontology.org/page/download-ontology
-license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
-depicted_by: http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png
+depicted_by: http://geneontology.org/assets/go-logo-icon.mini.png
 usages:
  - user: http://geneontology.org
    type: annotation
@@ -93,6 +93,7 @@ usages:
    examples:
     - url: http://amigo.geneontology.org/amigo/term/GO:0055085
       description: annotations to transmembrane transport
+activity_status: active
 ---
 
 The goal of the GeneOntology (GO) project is to provide a uniformway to describe the functions of gene products from organisms across all kingdoms of life and thereby enable analysis of genomic data

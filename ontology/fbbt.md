@@ -6,11 +6,12 @@ contact:
   email: cp390@cam.ac.uk
   label: Clare Pilgrim
 description: An ontology representing the gross anatomy of Drosophila melanogaster.
-domain: anatomy
+domain: Drosophilid anatomy
 homepage: http://purl.obolibrary.org/obo/fbbt
 products:
   - id: fbbt.owl
   - id: fbbt.obo
+  - id: fbbt.json
   - id: fbbt/fbbt-simple.owl
   - id: fbbt/fbbt-simple.obo
 taxon:
@@ -21,9 +22,9 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 build:
-  source_url: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.owl
-  method: owl2obo
-  infallible: 1
+  checkout: git clone https://github.com/FlyBase/drosophila-anatomy-developmental-ontology.git
+  system: git
+  path: "."
 tracker: http://purl.obolibrary.org/obo/fbbt/tracker
 browsers:
   - label: FB
@@ -58,6 +59,7 @@ usages:
     example:
       - url: "http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBbt:00005106"
         description: "alleles, constructs and insertions annotated to neuron in FlyBase"
+activity_status: active
 ---
 
 An ontology representing the gross anatomy of Drosophila melanogaster.

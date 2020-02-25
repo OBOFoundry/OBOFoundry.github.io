@@ -34,6 +34,7 @@ products:
   - id: chebi/chebi_core.obo
     title: "chebi_core, no xrefs"
 tracker: https://github.com/ebi-chebi/ChEBI/issues
+activity_status: active
 ---
 
 A structured classification of chemical compounds of biological relevance.

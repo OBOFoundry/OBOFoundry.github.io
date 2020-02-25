@@ -1,0 +1,10 @@
+{
+	"title": "id",
+	"level": "error",
+	"principle": "http://obofoundry.org/principles/fp-003-uris.html",
+	"description": "'id' is a required property. The value is a string with no numeric or lowercase characters. This is typically an abbreviation or acronym of the ontology title.",
+	"properties": {
+		"id": { "type": "string", "pattern": "^[0-9a-z_]+$" }
+	},
+	"required": ["id"]
+}

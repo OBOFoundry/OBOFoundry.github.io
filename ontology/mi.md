@@ -4,6 +4,7 @@ id: mi
 contact:
   email: pporras@ebi.ac.uk
   label: Pablo Porras Millán
+tracker: https://github.com/HUPO-PSI/psi-mi-CV/issues
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
@@ -19,6 +20,7 @@ build:
   source_url: https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo
   insert_ontology_id: true
   method: obo2owl
+activity_status: active
 ---
 
 A structured controlled vocabulary for the annotation of experiments concerned with protein-protein interactions. Developed by the HUPO Proteomics Standards Initiative.

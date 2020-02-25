@@ -1,18 +1,20 @@
 ---
 layout: principle
 id: fp-006-textual-definitions
-title: Textual Definitions
+title: Textual Definitions (principle 6)
 ---
 
 NOTE
 -------
 
-The original wording of this principle (given below) and content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.
+The content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.
 
 Summary
 -------
 
 The ontology has textual definitions for the majority of its classes and for top level terms in particular.
+
+[This check is automatically validated.](checks/fp_006)
 
 Purpose
 -------
@@ -67,13 +69,19 @@ Examples
 <i><b>Class</b></i>: reproductive shoot system
 <br>  <i><b>Term IRI</b></i>: http://purl.obolibrary.org/obo/PO_0025082
 <br>  <i><b>Definition</b></i>: A shoot system (PO:0009006) in the sporophytic phase that has as part at least one sporangium (PO:0025094).
-<br>  <i><b>Logical definition</b></i>: subclass of: shoot system; subclass of: participates_in some reproductive shoot system development stage
-
+<br>  <i><b>Logical definition</b></i>:
+```intersectionOf: shoot system
+intersectionOf: participates_in some reproductive shoot system development stage
+```
 <i><b>Class</b></i>: chromatography device
 <br>  <i><b>Term IRI</b></i>: http://purl.obolibrary.org/obo/OBI_0000048
 <br>  <i><b>Definition</b></i>: A device that facilitates the separation of mixtures. The function of a chromatography device involves passing a mixture dissolved in a "mobile phase" through a stationary phase, which separates the analyte to be measured from other molecules in the mixture and allows it to be isolated.
 <br>  <i><b>Definition source</b></i>: http://en.wikipedia.org/wiki/Chromatography
-<br>  <i><b>Logical definition</b></i>: subclass of: device; subclass of: has_function some material separation function
+<br>  <i><b>Logical definition</b></i>:
+```
+intersectionOf: device
+intersectionOf: has_function some material separation function
+```
 
 Counter-Examples
 ----------------

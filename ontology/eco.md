@@ -22,6 +22,8 @@ contact:
   label: Michelle Giglio 
   github: mgiglio99
 publications:
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/30407590
+    title: "ECO, the Evidence & Conclusion Ontology: community standard for evidence information."
   - id: http://www.ncbi.nlm.nih.gov/pubmed/25052702
     title: "Standardized description of scientific evidence using the Evidence Ontology (ECO)"
 license:
@@ -36,6 +38,13 @@ usages:
    examples:
     - url: http://amigo.geneontology.org/amigo/term/GO:0055085
       description: annotations to transmembrane transport
+ - user: https://monarchinitiative.org/
+   type: annotation
+   description: ECO is used by the Monarch Initiative for evidence types for disease to phenotype annotations.
+   examples:
+    - url: https://monarchinitiative.org/phenotype/HP%3A0001300#diseases
+   reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
+activity_status: active
 ---
 
 <img src="https://avatars1.githubusercontent.com/u/12802432" alt="ECO logo"/>
@@ -51,6 +60,6 @@ For **advice on requesting new terms**, please see **[the Evidence & Conclusion 
 
 For **further information** visit the **[Evidence & Conclusion Ontology website](http://www.evidenceontology.org/)**.
 
-Please **cite** the following paper: [Chibucos MC, Mungall CJ, Balakrishnan R, Christie KR, Huntley RP, White O, Blake JA, Lewis SE, and Giglio M. (2014) **Standardized description of scientific evidence using the Evidence Ontology (ECO)**. _Database_. Vol. **2014**: article ID bau066.](http://database.oxfordjournals.org/content/2014/bau075.long)
+Please **cite** the following paper: [Giglio M, Tauber R, Nadendla S, Munro J, Olley D, Ball S, Mitraka E, Schriml LM, Gaudet P, Hobbs ET, Erill I, Siegele DA, Hu JC, Mungall C, Chibucos MC. **ECO, the Evidence & Conclusion Ontology: community standard for evidence information**. Nucleic Acids Res. 2019 Jan 8;47(D1):D1186-D1194.](https://www.ncbi.nlm.nih.gov/pubmed/30407590)
 
 This work is made possible by **[award number 1458400](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400)** from the **US National Science Foundation's Division of Biological Infrastructure**.

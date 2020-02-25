@@ -7,6 +7,7 @@ contact:
   label: mb4@sanger.ac.uk
 homepage: http://www.sanger.ac.uk/Users/mb4/PLO/
 is_obsolete: true
+activity_status: inactive
 ---
 
 A structured controlled vocabulary for the life cycle of the malaria parasite <i>Plasmodium</i>.

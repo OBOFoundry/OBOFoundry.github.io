@@ -9,6 +9,7 @@ domain: anatomy
 homepage: https://github.com/obophenotype/porifera-ontology
 products:
   - id: poro.owl
+  - id: poro.obo
 taxon:
   id: NCBITaxon:6040
   label: Porifera
@@ -32,6 +33,7 @@ build:
   infallible: 1
   method: vcs
 tracker: https://github.com/obophenotype/porifera-ontology/issues
+activity_status: active
 ---
 
 An ontology covering the anatomy of Porifera (sponges)

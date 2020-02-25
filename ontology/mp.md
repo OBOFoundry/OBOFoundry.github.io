@@ -1,15 +1,14 @@
 ---
 layout: ontology_detail
 id: mp
-title: Mammalian Phenotype
+title: Mammalian Phenotype Ontology
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4.0
 build:
-  source_url: http://build.berkeleybop.org/job/build-mp-edit/lastSuccessfulBuild/artifact/*zip*/archive.zip
-  path: archive/src/ontology
-  method: archive
-  infallible: 1
+  checkout: git clone https://github.com/obophenotype/mammalian-phenotype-ontology.git
+  system: git
+  path: "."
 description: Standard terms for annotating mammalian phenotypic data.
 homepage: http://www.informatics.jax.org/searches/MP_form.shtml
 page: https://github.com/obophenotype/mammalian-phenotype-ontology
@@ -20,6 +19,7 @@ domain: phenotype
 products:
   - id: mp.owl
   - id: mp.obo
+  - id: mp.json
 browsers:
   - label: MGI
     title: MGI MP Browser
@@ -38,6 +38,7 @@ taxon:
   label: Mammalia
 tracker: https://github.com/obophenotype/mammalian-phenotype-ontology/issues
 mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
+activity_status: active
 ---
 
 The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data.
