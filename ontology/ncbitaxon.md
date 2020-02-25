@@ -9,8 +9,9 @@ build:
   method: archive
   infallible: 1
 contact:
-  email: obo-taxonomy@lists.sourceforge.net
-  label: obo-taxonomy-list
+  email: frederic.bastian@unil.ch
+  label: Frederic Bastian
+  github: fbastian
 description: An ontology representation of the NCBI organismal taxonomy
 source: http://www.ncbi.nlm.nih.gov/taxonomy
 wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
