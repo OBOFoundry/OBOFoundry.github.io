@@ -325,7 +325,6 @@
                 "id": "NCBITaxon:1",
                 "label": "All life"
             },
-            "termgenie": "http://go.termgenie.org",
             "title": "Gene Ontology",
             "tracker": "https://github.com/geneontology/go-ontology/issues/",
             "twitter": "news4go",
@@ -948,33 +947,6 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "jiezheng@pennmedicine.upenn.edu",
-                "github": "zhengj2007",
-                "label": "Jie Zheng"
-            },
-            "description": "An application ontology built for beta cell genomics studies.",
-            "homepage": "https://github.com/obi-bcgo/bcgo",
-            "id": "bcgo",
-            "in_foundry": false,
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-BY",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/bcgo.owl",
-            "products": [
-                {
-                    "id": "bcgo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/bcgo.owl"
-                }
-            ],
-            "title": "Beta Cell Genomics Ontology",
-            "tracker": "https://github.com/obi-bcgo/bcgo/issues"
-        },
-        {
-            "activity_status": "active",
-            "contact": {
                 "email": "rlwalls2008@gmail.com",
                 "github": "ramonawalls",
                 "label": "Ramona Walls"
@@ -1370,7 +1342,6 @@
                 "id": "NCBITaxon:33208",
                 "label": "Metazoa"
             },
-            "termgenie": "http://cl.termgenie.org",
             "title": "Cell Ontology",
             "tracker": "https://github.com/obophenotype/cell-ontology/issues",
             "usages": [
@@ -2157,9 +2128,9 @@
                 "github": "tfhayamizu",
                 "label": "Terry Hayamizu"
             },
-            "description": "Abstract (i.e. non-stage specific) stage-specific anatomical structures of the mouse.",
+            "description": "An ontology for mouse anatomy covering embryonic development and postnatal stages.",
             "domain": "anatomy",
-            "homepage": "http://emouseatlas.org",
+            "homepage": "http://www.informatics.jax.org/expression.shtml",
             "id": "emapa",
             "layout": "ontology_detail",
             "license": {
@@ -2168,7 +2139,6 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/emapa.owl",
-            "page": "http://www.obofoundry.org/wiki/index.php/EMAPA:Main_Page",
             "products": [
                 {
                     "id": "emapa.owl",
@@ -2183,7 +2153,7 @@
                 "id": "NCBITaxon:10088",
                 "label": "Mus"
             },
-            "title": "Mouse gross anatomy and development, timed",
+            "title": "Mouse Developmental Anatomy Ontology",
             "tracker": "https://github.com/obophenotype/mouse-anatomy-ontology/issues",
             "usages": [
                 {
@@ -2223,6 +2193,15 @@
                 },
                 {
                     "id": "ncbitaxon"
+                },
+                {
+                    "id": "foodon"
+                },
+                {
+                    "id": "po"
+                },
+                {
+                    "id": "go"
                 }
             ],
             "description": "Ontology of environmental features and habitats",
@@ -2308,6 +2287,16 @@
                         }
                     ],
                     "user": "https://www.ncbi.nlm.nih.gov/"
+                },
+                {
+                    "description": "Annotation and semantic search over microbial data sets",
+                    "example": [
+                        {
+                            "description": "Example metadata of a sample of marine water near Lisboa, taken as part of the Ocean Sampling Day Project (https://www.microb3.eu/osd.html). ENVO is used for the fields environmental feature, material, and biome.",
+                            "url": "https://www.planetmicrobe.org/project/#/samples/200"
+                        }
+                    ],
+                    "user": "https://www.planetmicrobe.org/project/"
                 }
             ]
         },
@@ -3395,35 +3384,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "http://anobase.vectorbase.org/idomal/IDOMAL.obo"
-            },
-            "contact": {
-                "email": "topalis@imbb.forth.gr",
-                "label": "Pantelis Topalis"
-            },
-            "description": "An application ontology to cover all aspects of malaria as well as the intervention attempts to control it.",
-            "domain": "health",
-            "homepage": "https://www.vectorbase.org/ontology-browser",
-            "id": "idomal",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/idomal.owl",
-            "products": [
-                {
-                    "id": "idomal.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/idomal.owl"
-                }
-            ],
-            "title": "Malaria Ontology"
-        },
-        {
-            "activity_status": "active",
             "contact": {
                 "email": "yongqunh@med.umich.edu",
                 "label": "Yongqun Oliver He"
@@ -3516,6 +3476,90 @@
                     "user": "http://www.informatics.jax.org/expression.shtml"
                 }
             ]
+        },
+        {
+            "activity_status": "active",
+            "build": {
+                "checkout": "git clone https://github.com/monarch-initiative/MAxO.git",
+                "path": ".",
+                "system": "git"
+            },
+            "contact": {
+                "email": "Leigh.Carmody@jax.org",
+                "github": "LCCarmody",
+                "label": "Leigh Carmody"
+            },
+            "dependencies": [
+                {
+                    "id": "iao"
+                },
+                {
+                    "id": "go"
+                },
+                {
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
+                },
+                {
+                    "id": "foodon"
+                },
+                {
+                    "id": "chebi"
+                }
+            ],
+            "description": "Medical Action Ontology is an ontology...",
+            "domain": "stuff",
+            "homepage": "https://github.com/monarch-initiative/MAxO",
+            "id": "maxo",
+            "jobs": [
+                {
+                    "id": "https://travis-ci.org/monarch-initiative/MAxO",
+                    "type": "travis-ci"
+                }
+            ],
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/maxo.owl",
+            "products": [
+                {
+                    "id": "maxo.owl",
+                    "name": "Medical Action Ontology main release in OWL format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/maxo.owl"
+                },
+                {
+                    "id": "maxo.obo",
+                    "name": "Medical Action Ontology additional release in OBO format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/maxo.obo"
+                },
+                {
+                    "id": "maxo.json",
+                    "name": "Medical Action Ontology additional release in OBOJSon format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/maxo.json"
+                },
+                {
+                    "id": "maxo/maxo-base.owl",
+                    "name": "Medical Action Ontology main release in OWL format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/maxo/maxo-base.owl"
+                },
+                {
+                    "id": "maxo/maxo-base.obo",
+                    "name": "Medical Action Ontology additional release in OBO format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/maxo/maxo-base.obo"
+                },
+                {
+                    "id": "maxo/maxo-base.json",
+                    "name": "Medical Action Ontology additional release in OBOJSon format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/maxo/maxo-base.json"
+                }
+            ],
+            "title": "Medical Action Ontology",
+            "tracker": "https://github.com/monarch-initiative/MAxO/issues"
         },
         {
             "activity_status": "active",
@@ -5227,8 +5271,9 @@
                 "source_url": "http://purl.obolibrary.org/obo/pdro.owl"
             },
             "contact": {
-                "email": "info@griis.ca",
-                "label": "Ryeyan Taseen"
+                "email": "paul.fabry@usherbrooke.ca",
+                "github": "pfabry",
+                "label": "Paul Fabry"
             },
             "description": "An ontology to describe entities related to prescription of drugs",
             "domain": "health",
@@ -5703,6 +5748,7 @@
             "tracker": "https://github.com/BGSU-RNA/rnao/issues"
         },
         {
+            "aberowl_id": "relo",
             "activity_status": "active",
             "build": {
                 "checkout": "git clone https://github.com/oborel/obo-relations.git",
@@ -6110,39 +6156,6 @@
         {
             "activity_status": "active",
             "build": {
-                "method": "obo2owl",
-                "source_url": "http://anobase.vectorbase.org/anatomy/tick_anatomy.obo"
-            },
-            "contact": {
-                "email": "dsonensh@odu.edu",
-                "label": "Daniel Sonenshine"
-            },
-            "description": "The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>",
-            "domain": "anatomy",
-            "homepage": "https://www.vectorbase.org/ontology-browser",
-            "id": "tads",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/tads.owl",
-            "products": [
-                {
-                    "id": "tads.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/tads.owl"
-                }
-            ],
-            "taxon": {
-                "id": "NCBITaxon:6939",
-                "label": "Ixodidae"
-            },
-            "title": "Tick Anatomy Ontology"
-        },
-        {
-            "activity_status": "active",
-            "build": {
                 "checkout": "git clone https://github.com/phenoscape/taxrank.git",
                 "path": ".",
                 "system": "git"
@@ -6180,39 +6193,6 @@
             ],
             "title": "Taxonomic rank vocabulary",
             "tracker": "https://github.com/phenoscape/taxrank/issues"
-        },
-        {
-            "activity_status": "active",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "http://anobase.vectorbase.org/anatomy/mosquito_anatomy.obo"
-            },
-            "contact": {
-                "email": "topalis@imbb.forth.gr",
-                "label": "Pantelis Topalis"
-            },
-            "description": "A structured controlled vocabulary of the anatomy of mosquitoes.",
-            "domain": "anatomy",
-            "homepage": "http://anobase.vectorbase.org",
-            "id": "tgma",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/tgma.owl",
-            "products": [
-                {
-                    "id": "tgma.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/tgma.owl"
-                }
-            ],
-            "taxon": {
-                "id": "NCBITaxon:44484",
-                "label": "Anopheles"
-            },
-            "title": "Mosquito gross anatomy ontology"
         },
         {
             "activity_status": "active",
@@ -6953,6 +6933,7 @@
                 "label": "Caenorhabditis"
             },
             "title": "C. elegans phenotype",
+            "tracker": "https://github.com/obophenotype/c-elegans-phenotype-ontology/issues",
             "usages": [
                 {
                     "description": "WormBase uses WBPhenotype to curate worm phenotypes, and to allow search and indexing on the WormBase site",
@@ -7431,7 +7412,6 @@
                 "id": "NCBITaxon:9606",
                 "label": "Homo sapiens"
             },
-            "termgenie": "http://hp.termgenie.org",
             "title": "Human Phenotype Ontology",
             "tracker": "https://github.com/obophenotype/human-phenotype-ontology/issues/",
             "twitter": "hp_ontology",
@@ -7573,35 +7553,6 @@
             ],
             "title": "Toxic Process Ontology",
             "tracker": "https://github.com/txpo-ontology/TXPO/issues"
-        },
-        {
-            "activity_status": "active",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "http://anobase.vectorbase.org/miro/miro_release.obo"
-            },
-            "contact": {
-                "email": "louis@imbb.forth.gr",
-                "label": "C. Louis"
-            },
-            "description": "Application ontology for entities related to insecticide resistance in mosquitos",
-            "domain": "environment",
-            "homepage": "http://anobase.vectorbase.org",
-            "id": "miro",
-            "layout": "ontology_detail",
-            "ontology_purl": "http://purl.obolibrary.org/obo/miro.owl",
-            "products": [
-                {
-                    "id": "miro.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/miro.owl"
-                }
-            ],
-            "taxon": {
-                "id": "NCBITaxon:44484",
-                "label": "Anopheles"
-            },
-            "title": "Mosquito insecticide resistance",
-            "validate": false
         },
         {
             "activity_status": "orphaned",
@@ -7810,6 +7761,97 @@
         },
         {
             "activity_status": "inactive",
+            "contact": {
+                "email": "topalis@imbb.forth.gr",
+                "label": "Pantelis Topalis"
+            },
+            "description": "An application ontology to cover all aspects of malaria as well as the intervention attempts to control it.",
+            "domain": "health",
+            "homepage": "https://www.vectorbase.org/ontology-browser",
+            "id": "idomal",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/idomal.owl",
+            "products": [
+                {
+                    "id": "idomal.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/idomal.owl"
+                }
+            ],
+            "title": "Malaria Ontology"
+        },
+        {
+            "activity_status": "inactive",
+            "build": {
+                "method": "obo2owl",
+                "source_url": "http://anobase.vectorbase.org/anatomy/tick_anatomy.obo"
+            },
+            "contact": {
+                "email": "dsonensh@odu.edu",
+                "label": "Daniel Sonenshine"
+            },
+            "description": "The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>",
+            "domain": "anatomy",
+            "homepage": "https://www.vectorbase.org/ontology-browser",
+            "id": "tads",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/tads.owl",
+            "products": [
+                {
+                    "id": "tads.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/tads.owl"
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:6939",
+                "label": "Ixodidae"
+            },
+            "title": "Tick Anatomy Ontology"
+        },
+        {
+            "activity_status": "inactive",
+            "build": {
+                "method": "obo2owl",
+                "source_url": "http://anobase.vectorbase.org/anatomy/mosquito_anatomy.obo"
+            },
+            "contact": {
+                "email": "topalis@imbb.forth.gr",
+                "label": "Pantelis Topalis"
+            },
+            "description": "A structured controlled vocabulary of the anatomy of mosquitoes.",
+            "domain": "anatomy",
+            "homepage": "http://anobase.vectorbase.org",
+            "id": "tgma",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/tgma.owl",
+            "products": [
+                {
+                    "id": "tgma.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/tgma.owl"
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:44484",
+                "label": "Anopheles"
+            },
+            "title": "Mosquito gross anatomy ontology"
+        },
+        {
+            "activity_status": "inactive",
             "build": {
                 "checkout": "git clone https://github.com/geneontology/unipathway.git",
                 "path": ".",
@@ -7874,6 +7916,30 @@
         },
         {
             "activity_status": "inactive",
+            "contact": {
+                "email": "louis@imbb.forth.gr",
+                "label": "C. Louis"
+            },
+            "description": "Application ontology for entities related to insecticide resistance in mosquitos",
+            "domain": "environment",
+            "id": "miro",
+            "layout": "ontology_detail",
+            "ontology_purl": "http://purl.obolibrary.org/obo/miro.owl",
+            "products": [
+                {
+                    "id": "miro.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/miro.owl"
+                }
+            ],
+            "taxon": {
+                "id": "NCBITaxon:44484",
+                "label": "Anopheles"
+            },
+            "title": "Mosquito insecticide resistance",
+            "validate": false
+        },
+        {
+            "activity_status": "inactive",
             "build": {
                 "insert_ontology_id": true,
                 "method": "obo2owl",
@@ -7923,6 +7989,33 @@
                 }
             ],
             "title": "Adverse Event Reporting Ontology"
+        },
+        {
+            "activity_status": "inactive",
+            "contact": {
+                "email": "jiezheng@pennmedicine.upenn.edu",
+                "github": "zhengj2007",
+                "label": "Jie Zheng"
+            },
+            "description": "An application ontology built for beta cell genomics studies.",
+            "homepage": "https://github.com/obi-bcgo/bcgo",
+            "id": "bcgo",
+            "in_foundry": false,
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "products": [
+                {
+                    "id": "bcgo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/bcgo.owl"
+                }
+            ],
+            "title": "Beta Cell Genomics Ontology",
+            "tracker": "https://github.com/obi-bcgo/bcgo/issues"
         },
         {
             "activity_status": "inactive",
