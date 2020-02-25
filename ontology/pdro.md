@@ -2,8 +2,9 @@
 layout: ontology_detail
 id: pdro
 contact:
-  email: info@griis.ca
-  label: Ryeyan Taseen
+  email: paul.fabry@usherbrooke.ca
+  label: Paul Fabry
+  github: pfabry
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
