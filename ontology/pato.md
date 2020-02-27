@@ -30,7 +30,7 @@ products:
   - id: pato.owl
   - id: pato.obo
   - id: pato.json
-  - id: pato-base.owl
+  - id: pato/pato-base.owl
     description: "Includes axioms linking to other ontologies, but no imports of those ontologies"
 activity_status: active
 ---
