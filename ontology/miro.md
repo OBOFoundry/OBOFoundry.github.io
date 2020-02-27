@@ -8,6 +8,7 @@ description: Application ontology for entities related to insecticide resistance
 domain: environment
 products:
   - id: miro.owl
+  - id: miro.obo
 taxon:
   id: NCBITaxon:44484
   label: Anopheles
