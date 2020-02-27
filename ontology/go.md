@@ -77,11 +77,11 @@ products:
    title: GO Taxon Groupings
    description: "Classes added to ncbitaxon for groupings such as prokaryotes"
    page: http://geneontology.org/page/download-ontology
- - id: snapshot/go.owl
+ - id: go/snapshot/go.owl
    title: "GO (OWL edition), daily snapshot release"
    description: "Equivalent to go.owl, but released daily. Note the snapshot release is not archived."
    page: http://geneontology.org/page/download-ontology
- - id: snapshot/go.obo
+ - id: go/snapshot/go.obo
    title: "GO (OBO Format edition), daily snapshot release"
    description: "Equivalent to go.owl, but released daily. Note the snapshot release is not archived."
    page: http://geneontology.org/page/download-ontology
