@@ -12,13 +12,11 @@ domain: anatomy
 homepage: https://www.vectorbase.org/ontology-browser
 products:
   - id: tads.owl
+  - id: tads.obo
 taxon:
   id: NCBITaxon:6939
   label: Ixodidae
 title: Tick Anatomy Ontology
-build:
-  source_url: http://anobase.vectorbase.org/anatomy/tick_anatomy.obo
-  method: obo2owl
 activity_status: inactive
 ---
 
