@@ -12,6 +12,7 @@ domain: health
 homepage: https://www.vectorbase.org/ontology-browser
 products:
   - id: idomal.owl
+  - id: idomal.obo
 title: Malaria Ontology
 activity_status: inactive
 ---
