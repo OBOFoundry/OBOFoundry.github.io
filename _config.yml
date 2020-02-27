@@ -227,14 +227,14 @@ ontologies:
     title: GO Taxon Groupings
   - description: Equivalent to go.owl, but released daily. Note the snapshot release
       is not archived.
-    id: snapshot/go.owl
-    ontology_purl: http://purl.obolibrary.org/obo/snapshot/go.owl
+    id: go/snapshot/go.owl
+    ontology_purl: http://purl.obolibrary.org/obo/go/snapshot/go.owl
     page: http://geneontology.org/page/download-ontology
     title: GO (OWL edition), daily snapshot release
   - description: Equivalent to go.owl, but released daily. Note the snapshot release
       is not archived.
-    id: snapshot/go.obo
-    ontology_purl: http://purl.obolibrary.org/obo/snapshot/go.obo
+    id: go/snapshot/go.obo
+    ontology_purl: http://purl.obolibrary.org/obo/go/snapshot/go.obo
     page: http://geneontology.org/page/download-ontology
     title: GO (OBO Format edition), daily snapshot release
   taxon:
@@ -344,8 +344,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/pato.json
   - description: Includes axioms linking to other ontologies, but no imports of those
       ontologies
-    id: pato-base.owl
-    ontology_purl: http://purl.obolibrary.org/obo/pato-base.owl
+    id: pato/pato-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/pato/pato-base.owl
   repository: https://github.com/pato-ontology/pato/
   title: Phenotype And Trait Ontology
   tracker: https://github.com/pato-ontology/pato/issues
@@ -1109,8 +1109,8 @@ ontologies:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/cvdo.owl
   contact:
-    email: adrien.barton@gmail.com
-    label: Adrien Barton
+    email: paul.fabry@usherbrooke.ca
+    label: Paul Fabry
   description: An ontology to describe entities related to cardiovascular diseases
   domain: health
   homepage: https://github.com/OpenLHS/CVDO
@@ -2393,6 +2393,13 @@ ontologies:
   contact:
     email: paul.fabry@usherbrooke.ca
     label: Paul Fabry
+  dependencies:
+  - id: iao
+  - id: obi
+  - id: ogms
+  - id: omiabis
+  - id: omrse
+  - id: opmi
   description: LABO is an ontology of informational entities formalizing clinical
     laboratory tests prescriptions and reporting documents.
   domain: clinical documentation
@@ -2400,14 +2407,24 @@ ontologies:
   id: labo
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/labo.owl
   products:
   - id: labo.owl
     ontology_purl: http://purl.obolibrary.org/obo/labo.owl
+  releases: https://github.com/OpenLHS/LABO/releases/
+  taxon:
+    id: NCBITaxon:9606
+    label: Homo sapiens
   title: clinical LABoratory Ontology
+  tracker: https://github.com/OpenLHS/LABO/issues
+  usages:
+  - description: LABO is a part of a core ontological model of medical knowledge in
+      the PARS3 data platform.
+    type: database architecture
+    user: https://griis.ca/
 - activity_status: active
   build:
     infallible: 1
@@ -2700,23 +2717,6 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/micro.owl
   title: Ontology of Prokaryotic Phenotypic and Metabolic Characters
   tracker: https://github.com/carrineblank/MicrO/issues
-- activity_status: active
-  contact:
-    email: topalis@imbb.forth.gr
-    label: Pantelis Topalis
-  description: An application ontology for use with miRNA databases.
-  homepage: http://code.google.com/p/mirna-ontology/
-  id: mirnao
-  layout: ontology_detail
-  license:
-    label: CC0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
-  ontology_purl: http://purl.obolibrary.org/obo/mirnao.owl
-  products:
-  - id: mirnao.owl
-    ontology_purl: http://purl.obolibrary.org/obo/mirnao.owl
-  title: microRNA Ontology
 - activity_status: active
   browsers:
   - label: RGD
@@ -3066,8 +3066,9 @@ ontologies:
     path: archive
     source_url: http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip
   contact:
-    email: obo-taxonomy@lists.sourceforge.net
-    label: obo-taxonomy-list
+    email: frederic.bastian@unil.ch
+    github: fbastian
+    label: Frederic Bastian
   createdWith: https://github.com/owlcollab/owltools/
   description: An ontology representation of the NCBI organismal taxonomy
   domain: taxonomy
@@ -5403,6 +5404,20 @@ ontologies:
   tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list
 - activity_status: orphaned
   build:
+    insert_ontology_id: true
+    method: obo2owl
+    source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo
+  description: An ontology of physico-chemical processes, i.e. physico-chemical changes
+    occurring in course of time.
+  id: rex
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/rex.owl
+  products:
+  - id: rex.owl
+    ontology_purl: http://purl.obolibrary.org/obo/rex.owl
+  title: Physico-chemical process
+- activity_status: orphaned
+  build:
     method: obo2owl
     source_url: http://variationontology.org/vario_download/vario.obo
   description: Variation Ontology, VariO, is an ontology for standardized, systematic
@@ -5506,11 +5521,10 @@ ontologies:
   products:
   - id: idomal.owl
     ontology_purl: http://purl.obolibrary.org/obo/idomal.owl
+  - id: idomal.obo
+    ontology_purl: http://purl.obolibrary.org/obo/idomal.obo
   title: Malaria Ontology
 - activity_status: inactive
-  build:
-    method: obo2owl
-    source_url: http://anobase.vectorbase.org/anatomy/tick_anatomy.obo
   contact:
     email: dsonensh@odu.edu
     label: Daniel Sonenshine
@@ -5527,20 +5541,19 @@ ontologies:
   products:
   - id: tads.owl
     ontology_purl: http://purl.obolibrary.org/obo/tads.owl
+  - id: tads.obo
+    ontology_purl: http://purl.obolibrary.org/obo/tads.obo
   taxon:
     id: NCBITaxon:6939
     label: Ixodidae
   title: Tick Anatomy Ontology
 - activity_status: inactive
-  build:
-    method: obo2owl
-    source_url: http://anobase.vectorbase.org/anatomy/mosquito_anatomy.obo
   contact:
     email: topalis@imbb.forth.gr
     label: Pantelis Topalis
   description: A structured controlled vocabulary of the anatomy of mosquitoes.
   domain: anatomy
-  homepage: http://anobase.vectorbase.org
+  homepage: https://www.vectorbase.org/ontology-browser
   id: tgma
   layout: ontology_detail
   license:
@@ -5551,6 +5564,8 @@ ontologies:
   products:
   - id: tgma.owl
     ontology_purl: http://purl.obolibrary.org/obo/tgma.owl
+  - id: tgma.obo
+    ontology_purl: http://purl.obolibrary.org/obo/tgma.obo
   taxon:
     id: NCBITaxon:44484
     label: Anopheles
@@ -5612,28 +5627,13 @@ ontologies:
   products:
   - id: miro.owl
     ontology_purl: http://purl.obolibrary.org/obo/miro.owl
+  - id: miro.obo
+    ontology_purl: http://purl.obolibrary.org/obo/miro.obo
   taxon:
     id: NCBITaxon:44484
     label: Anopheles
   title: Mosquito insecticide resistance
   validate: false
-- activity_status: inactive
-  build:
-    insert_ontology_id: true
-    method: obo2owl
-    source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo
-  contact:
-    email: hastings@ebi.ac.uk
-    label: Janna Hastings
-  description: An ontology of physico-chemical processes, i.e. physico-chemical changes
-    occurring in course of time.
-  id: rex
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/rex.owl
-  products:
-  - id: rex.owl
-    ontology_purl: http://purl.obolibrary.org/obo/rex.owl
-  title: Physico-chemical process
 - activity_status: inactive
   build:
     method: owl2obo
@@ -6055,6 +6055,22 @@ ontologies:
     id: NCBITaxon:8089
     label: Oryzias
   title: Medaka fish anatomy and development
+- contact:
+    email: topalis@imbb.forth.gr
+    label: Pantelis Topalis
+  description: An application ontology for use with miRNA databases.
+  homepage: http://code.google.com/p/mirna-ontology/
+  id: mirnao
+  is_obsolete: true
+  layout: ontology_detail
+  license:
+    label: CC0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  products:
+  - id: mirnao.owl
+    ontology_purl: http://purl.obolibrary.org/obo/mirnao.owl
+  title: microRNA Ontology
 - activity_status: inactive
   contact:
     email: stoeckrt@pcbi.upenn.edu
@@ -6325,45 +6341,45 @@ ontologies:
     label: Zea
   title: Maize gross anatomy
 principles:
-- id: fp-000-summary
+- id: fp-004-versioning
   layout: principle
-  title: Overview
-- id: fp-001-open
-  layout: principle
-  title: Open (principle 1)
+  title: Versioning (principle 4)
 - id: fp-002-format
   layout: principle
   title: Common Format (principle 2)
 - id: fp-003-uris
   layout: principle
   title: URI/Identifier Space (principle 3)
-- id: fp-004-versioning
+- id: fp-000-summary
   layout: principle
-  title: Versioning (principle 4)
-- id: fp-005-delineated-content
-  layout: principle
-  title: Scope (principle 5)
-- id: fp-006-textual-definitions
-  layout: principle
-  title: Textual Definitions (principle 6)
-- id: fp-007-relations
-  layout: principle
-  title: Relations (principle 7)
-- id: fp-008-documented
-  layout: principle
-  title: Documentation (principle 8)
-- id: fp-009-users
-  layout: principle
-  title: Documented Plurality of Users (principle 9)
-- id: fp-010-collaboration
-  layout: principle
-  title: Commitment To Collaboration (principle 10)
-- id: fp-011-locus-of-authority
-  layout: principle
-  title: Locus of Authority (principle 11)
+  title: Overview
 - id: fp-012-naming-conventions
   layout: principle
   title: Naming Conventions (principle 12)
+- id: fp-006-textual-definitions
+  layout: principle
+  title: Textual Definitions (principle 6)
+- id: fp-009-users
+  layout: principle
+  title: Documented Plurality of Users (principle 9)
+- id: fp-001-open
+  layout: principle
+  title: Open (principle 1)
+- id: fp-010-collaboration
+  layout: principle
+  title: Commitment To Collaboration (principle 10)
 - id: fp-016-maintenance
   layout: principle
   title: Maintenance (principle 16)
+- id: fp-005-delineated-content
+  layout: principle
+  title: Scope (principle 5)
+- id: fp-007-relations
+  layout: principle
+  title: Relations (principle 7)
+- id: fp-011-locus-of-authority
+  layout: principle
+  title: Locus of Authority (principle 11)
+- id: fp-008-documented
+  layout: principle
+  title: Documentation (principle 8)
