@@ -19,6 +19,13 @@ jobs:
 products:
   - id: upheno.owl
   - id: mp-hp-view.owl
+usages:
+  - user: https://monarchinitiative.org/
+    type: analysis
+    description: uPheno is used by the Monarch Initiative for cross-species inference.
+    examples:
+      - url: https://monarchinitiative.org/phenotype/HP:0001300#diseases
+    reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
 build:
   source_url: http://build.berkeleybop.org/job/build-pheno-ontologies/lastSuccessfulBuild/artifact/*zip*/archive.zip
   path: archive/ontology
