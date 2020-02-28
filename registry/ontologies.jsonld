@@ -476,7 +476,20 @@
             ],
             "repository": "https://github.com/pato-ontology/pato/",
             "title": "Phenotype And Trait Ontology",
-            "tracker": "https://github.com/pato-ontology/pato/issues"
+            "tracker": "https://github.com/pato-ontology/pato/issues",
+            "usages": [
+                {
+                    "description": "PATO is used by the Human Phenotype Ontology (HPO) for logical definitions of phenotypes that facilitate cross-species integration.",
+                    "examples": [
+                        {
+                            "url": "https://www.ebi.ac.uk/ols/ontologies/hp/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHP_0011017&viewMode=All&siblings=false"
+                        }
+                    ],
+                    "reference": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6324074/",
+                    "type": "annotation",
+                    "user": "https://hpo.jax.org/app/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -6715,7 +6728,20 @@
                 }
             ],
             "title": "Unified phenotype ontology (uPheno)",
-            "tracker": "https://github.com/obophenotype/upheno/issues"
+            "tracker": "https://github.com/obophenotype/upheno/issues",
+            "usages": [
+                {
+                    "description": "uPheno is used by the Monarch Initiative for cross-species inference.",
+                    "examples": [
+                        {
+                            "url": "https://monarchinitiative.org/phenotype/HP:0001300#diseases"
+                        }
+                    ],
+                    "reference": "https://academic.oup.com/nar/article/45/D1/D712/2605791",
+                    "type": "analysis",
+                    "user": "https://monarchinitiative.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -8097,6 +8123,30 @@
         },
         {
             "activity_status": "inactive",
+            "contact": {
+                "email": "topalis@imbb.forth.gr",
+                "label": "Pantelis Topalis"
+            },
+            "description": "An application ontology for use with miRNA databases.",
+            "homepage": "http://code.google.com/p/mirna-ontology/",
+            "id": "mirnao",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            "products": [
+                {
+                    "id": "mirnao.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mirnao.owl"
+                }
+            ],
+            "title": "microRNA Ontology"
+        },
+        {
+            "activity_status": "inactive",
             "build": {
                 "method": "obo2owl",
                 "source_url": "http://purl.obolibrary.org/obo/tao.obo"
@@ -8542,29 +8592,6 @@
                 "label": "Oryzias"
             },
             "title": "Medaka fish anatomy and development"
-        },
-        {
-            "contact": {
-                "email": "topalis@imbb.forth.gr",
-                "label": "Pantelis Topalis"
-            },
-            "description": "An application ontology for use with miRNA databases.",
-            "homepage": "http://code.google.com/p/mirna-ontology/",
-            "id": "mirnao",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            "products": [
-                {
-                    "id": "mirnao.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/mirnao.owl"
-                }
-            ],
-            "title": "microRNA Ontology"
         },
         {
             "activity_status": "inactive",
