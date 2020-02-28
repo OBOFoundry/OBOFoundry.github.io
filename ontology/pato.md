@@ -32,6 +32,13 @@ products:
   - id: pato.json
   - id: pato/pato-base.owl
     description: "Includes axioms linking to other ontologies, but no imports of those ontologies"
+usages:
+ - user: https://hpo.jax.org/app/
+   type: annotation
+   description: PATO is used by the Human Phenotype Ontology for logical definitions of phenotypes that facilitate cross-species integration.
+   examples:
+    - url: https://www.ebi.ac.uk/ols/ontologies/hp/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHP_0011017&viewMode=All&siblings=false
+   reference: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6324074/
 activity_status: active
 ---
 
