@@ -59,6 +59,7 @@ ChEBI incorporates an ontological classification, whereby the relationships betw
 
 ChEBI uses nomenclature, symbolism and terminology endorsed by the following international scientific bodies:
 
-International Union of Pure and Applied Chemistry (IUPAC)
-Nomenclature Committee of the International Union of Biochemistry and Molecular Biology (NC-IUBMB)
+- International Union of Pure and Applied Chemistry (IUPAC)
+- Nomenclature Committee of the International Union of Biochemistry and Molecular Biology (NC-IUBMB)
+
 Molecules directly encoded by the genome (e.g. nucleic acids, proteins and peptides derived from proteins by cleavage) are not as a rule included in ChEBI.
