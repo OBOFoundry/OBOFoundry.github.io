@@ -21,7 +21,7 @@ products:
   - id: mp-hp-view.owl
 usages:
  - user: https://monarchinitiative.org/
-   type: annotation
+   type: analysis
    description: uPheno is used by the Monarch Initiative for cross-species inference.
    examples:
     - url: https://monarchinitiative.org/phenotype/HP:0001300#diseases
