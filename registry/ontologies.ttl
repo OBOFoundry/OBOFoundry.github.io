@@ -37,6 +37,7 @@ _:b0    <http://www.w3.org/2000/01/rdf-schema#label>  "Barry Smith" ;
         <http://purl.org/dc/elements/1.1/description>  "A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds." ;
         <http://purl.org/dc/elements/1.1/title>  "Chemical Entities of Biological Interest" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <http://europepmc.org/article/MED/26467479> ;
         <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/ebi-chebi/ChEBI/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView> ;
@@ -59,6 +60,9 @@ _:b1    <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CC-BY 4.0" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CC BY 4.0" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CC-BY" .
+
+<http://europepmc.org/article/MED/26467479>
+        <http://purl.org/dc/elements/1.1/title>  "ChEBI in 2016: Improved services and an expanding collection of metabolites." .
 
 <http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView>
         <http://purl.org/dc/elements/1.1/title>  "EBI CHEBI Browser" ;
