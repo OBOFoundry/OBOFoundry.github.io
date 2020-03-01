@@ -18,7 +18,7 @@ jobs:
     type: travis-ci
 products:
   - id: upheno.owl
-  - id: mp-hp-view.owl
+  - id: upheno/mp-hp-view.owl
 usages:
   - user: https://monarchinitiative.org/
     type: analysis
