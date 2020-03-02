@@ -15,7 +15,7 @@ tracker: https://github.com/obophenotype/c-elegans-phenotype-ontology/issues
 products:
   - id: wbphenotype.owl
   - id: wbphenotype.obo
-  - id: wbphenotype-base.owl
+  - id: wbphenotype/wbphenotype-base.owl
 taxon:
   id: NCBITaxon:6237
   label: Caenorhabditis
