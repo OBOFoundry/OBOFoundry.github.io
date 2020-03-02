@@ -14,7 +14,7 @@ homepage: http://hymao.org
 products:
   - id: hao.owl
   - id: hao.obo
-  - id: depictions.owl
+  - id: hao/depictions.owl
 taxon:
   id: NCBITaxon:7399
   label: Hymenoptera
