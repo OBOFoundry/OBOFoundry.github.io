@@ -24,11 +24,11 @@ products:
     title: "ENVO in obographs JSON format"
   - id: envo.obo
     title: "ENVO in OBO Format. May be lossy"
-  - id: subsets/envo-basic.obo
+  - id: envo/subsets/envo-basic.obo
     title: OBO-Basic edition of ENVO
-  - id: subsets/envoEmpo.owl
+  - id: envo/subsets/envoEmpo.owl
     title: Earth Microbiome Project subset
-  - id: subsets/EnvO-Lite-GSC.obo
+  - id: envo/subsets/EnvO-Lite-GSC.obo
     title: GSC Lite subset of ENVO
     homepage: http://environmentontology.org/downloads
 title: Environment Ontology
