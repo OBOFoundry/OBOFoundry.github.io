@@ -6,8 +6,8 @@ title: Mondo Disease Ontology
 description: An ontology that harmonizes multiple disease resources.
 homepage: https://monarch-initiative.github.io/mondo
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
+  url: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 contact:
   email: vasilevs@ohsu.edu
   label: Nicole Vasilevsky
