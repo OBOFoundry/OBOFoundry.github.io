@@ -13,7 +13,13 @@ contact:
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC-BY
-products:
+usages:
+ - user: https://www.iedb.org/
+   type: annotation
+   description: MRO is used by the The Immune Epitope Database (IEDB) annotations
+   examples:
+    - url: https://www.iedb.org/assay/1357035
+   reference: DOI: 10.1093/nar/gky1006
   - id: mro.owl
 activity_status: active
 ---
