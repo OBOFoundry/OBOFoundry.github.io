@@ -9,12 +9,18 @@ license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
 depicted_by: https://raw.githubusercontent.com/EuPathDB/communitysite/master/assets/images/VEuPathDB-logo-s.png
+domain: functional genomics, population biology, clinical epidemiology, and microbiomes
 description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org). 
 homepage: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
 products:
   - id: eupath.owl
 title: VEuPathDB ontology
 tracker: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology/issues
+usages:
+ - user: https://veupathdb.org, https://clinepidb.org, and https://microbiomedb.org
+   type: annotation and query
+   description: The VEuPathDB ontology is used in all of the VEuPathDB resources (https://veupathdb.org), ClinEpiDB (https://clinepidb.org), and MicrobiomeDB (https://microbiomedb.org)
+
 activity_status: active
 ---
 
