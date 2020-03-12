@@ -287,9 +287,9 @@ ontologies:
   integration_server: http://build.berkeleybop.org/job/build-obi/
   layout: ontology_detail
   license:
-    label: CC-BY 3.0
+    label: CC-BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/3.0/
+    url: https://creativecommons.org/licenses/by/4.0/
   mailing_list: http://groups.google.com/group/obi-users
   ontology_purl: http://purl.obolibrary.org/obo/obi.owl
   products:
@@ -705,6 +705,7 @@ ontologies:
   description: An ontology to support the interoperability of biodiversity data, including
     data on museum collections, environmental/metagenomic samples, and ecological
     surveys.
+  domain: biodiversity collections
   homepage: https://github.com/tucotuco/bco
   id: bco
   in_foundry: false
@@ -921,6 +922,28 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/chmo.owl
   title: Chemical Methods Ontology
   tracker: https://github.com/rsc-ontologies/rsc-cmo/issues
+- activity_status: active
+  contact:
+    email: yongqunh@med.umich.edu
+    label: Yongqun Oliver He
+  description: The Coronavirus Infectious Disease Ontology (CIDO) aims to ontologically
+    represent and standardize various aspects of coronavirus infectious diseases,
+    including their etiology, transmission, epidemiology, pathogenesis, diagnosis,
+    prevention, and treatment.
+  homepage: https://github.com/cido-ontology/cido
+  id: cido
+  layout: ontology_detail
+  license:
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/4.0/
+  mailing_list: cido-discuss@googlegroups.com
+  ontology_purl: http://purl.obolibrary.org/obo/cido.owl
+  products:
+  - id: cido.owl
+    ontology_purl: http://purl.obolibrary.org/obo/cido.owl
+  title: Coronavirus Infectious Disease Ontology
+  tracker: https://github.com/cido-ontology/cido/issues
 - activity_status: active
   build:
     checkout: git clone https://github.com/obophenotype/cell-ontology.git
@@ -1595,15 +1618,15 @@ ontologies:
   - id: envo.obo
     ontology_purl: http://purl.obolibrary.org/obo/envo.obo
     title: ENVO in OBO Format. May be lossy
-  - id: subsets/envo-basic.obo
-    ontology_purl: http://purl.obolibrary.org/obo/subsets/envo-basic.obo
+  - id: envo/subsets/envo-basic.obo
+    ontology_purl: http://purl.obolibrary.org/obo/envo/subsets/envo-basic.obo
     title: OBO-Basic edition of ENVO
-  - id: subsets/envoEmpo.owl
-    ontology_purl: http://purl.obolibrary.org/obo/subsets/envoEmpo.owl
+  - id: envo/subsets/envoEmpo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/envo/subsets/envoEmpo.owl
     title: Earth Microbiome Project subset
   - homepage: http://environmentontology.org/downloads
-    id: subsets/EnvO-Lite-GSC.obo
-    ontology_purl: http://purl.obolibrary.org/obo/subsets/EnvO-Lite-GSC.obo
+    id: envo/subsets/EnvO-Lite-GSC.obo
+    ontology_purl: http://purl.obolibrary.org/obo/envo/subsets/EnvO-Lite-GSC.obo
     title: GSC Lite subset of ENVO
   publications:
   - id: http://www.dx.doi.org/10.1186/2041-1480-4-43
@@ -2016,7 +2039,7 @@ ontologies:
   license:
     label: CC-BY
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
+    url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/fypo.owl
   products:
   - id: fypo.owl
@@ -2211,8 +2234,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/hao.owl
   - id: hao.obo
     ontology_purl: http://purl.obolibrary.org/obo/hao.obo
-  - id: depictions.owl
-    ontology_purl: http://purl.obolibrary.org/obo/depictions.owl
+  - id: hao/depictions.owl
+    ontology_purl: http://purl.obolibrary.org/obo/hao/depictions.owl
   taxon:
     id: NCBITaxon:7399
     label: Hymenoptera
@@ -2842,9 +2865,9 @@ ontologies:
   label: Mondo
   layout: ontology_detail
   license:
-    label: CC BY 3.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
+    url: http://creativecommons.org/licenses/by/4.0/
   mailing_list: https://groups.google.com/group/mondo-users
   ontology_purl: http://purl.obolibrary.org/obo/mondo.owl
   products:
@@ -3003,6 +3026,7 @@ ontologies:
     label: Bjoern Peters
   description: An ontology for Major Histocompatibility Complex (MHC) restriction
     in experiments
+  domain: Major Histocompatibility Complex
   homepage: https://github.com/IEDB/MRO
   id: mro
   layout: ontology_detail
@@ -3016,6 +3040,13 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/mro.owl
   title: MHC Restriction Ontology
   tracker: https://github.com/IEDB/MRO/issues
+  usages:
+  - description: MRO is used by the The Immune Epitope Database (IEDB) annotations
+    examples:
+    - url: https://www.iedb.org/assay/1357035
+    reference: DOI:10.1093/nar/gky1006
+    type: annotation
+    user: https://www.iedb.org/
 - activity_status: active
   build:
     method: obo2owl
@@ -4778,8 +4809,8 @@ ontologies:
   products:
   - id: upheno.owl
     ontology_purl: http://purl.obolibrary.org/obo/upheno.owl
-  - id: mp-hp-view.owl
-    ontology_purl: http://purl.obolibrary.org/obo/mp-hp-view.owl
+  - id: upheno/mp-hp-view.owl
+    ontology_purl: http://purl.obolibrary.org/obo/upheno/mp-hp-view.owl
   title: Unified phenotype ontology (uPheno)
   tracker: https://github.com/obophenotype/upheno/issues
   usages:
@@ -4941,8 +4972,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/wbphenotype.owl
   - id: wbphenotype.obo
     ontology_purl: http://purl.obolibrary.org/obo/wbphenotype.obo
-  - id: wbphenotype-base.owl
-    ontology_purl: http://purl.obolibrary.org/obo/wbphenotype-base.owl
+  - id: wbphenotype/wbphenotype-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-base.owl
   publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995
     title: 'Worm Phenotype Ontology: integrating phenotype data within and beyond
