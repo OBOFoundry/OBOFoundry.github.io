@@ -17,9 +17,15 @@ products:
 title: VEuPathDB ontology
 tracker: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology/issues
 usages:
- - user: https://veupathdb.org, https://clinepidb.org, and https://microbiomedb.org
+ - user: https://veupathdb.org
    type: annotation and query
-   description: The VEuPathDB ontology is used in all of the VEuPathDB resources (https://veupathdb.org), ClinEpiDB (https://clinepidb.org), and MicrobiomeDB (https://microbiomedb.org)
+   description: The VEuPathDB ontology is used in the VEuPathDB (Eukaryotic Pathogen, Vector & Host Informatics Resources) covers both functional genomics and population biology.
+ - user: https://clinepidb.org
+   type: annotation and query
+   description: The VEuPathDB ontology is used in the clinical epidemiology resources.
+ - user: https://microbiomedb.org
+   type: annotation and query
+   description: The VEuPathDB ontology is used in the MicrobiomeDB, a systems biology platform for integrating, mining and analyzing microbiome experiments.
 
 activity_status: active
 ---
