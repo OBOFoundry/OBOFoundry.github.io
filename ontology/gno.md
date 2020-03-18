@@ -10,9 +10,12 @@ domain: glycan structure
 homepage: https://github.com/glygen-glycan-data/GNOme
 products:
   - id: gno.owl
+    description: Glycan Naming Ontology, OWL format 
   - id: gno.obo
+    description: Glycan Naming Ontology, OBO format 
   - id: gno.json
-title: Glycan Naming Ontology
+    description: Glycan Naming Ontology, JSON format 
+title: Glycan Naming Ontology (GNOme)
 build:
   checkout: git clone https://github.com/glygen-glycan-data/GNOme.git
   system: git
@@ -26,4 +29,5 @@ browsers:
   - label: GNOme
     title: GNOme Glycan Composition Browser and Subsumption Navigator
     url: https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html
+  
 ---
