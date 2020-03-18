@@ -11,9 +11,9 @@ build:
 description: A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds.
 twitter: chebit
 contact:
-  email: gowen@ebi.ac.uk
-  label: Gareth Owen
-  github: "G-Owen"
+  email: amalik@ebi.ac.uk
+  label: Adnan Malik
+  github: "amalik01"
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4.0
