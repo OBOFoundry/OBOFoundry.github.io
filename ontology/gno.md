@@ -29,8 +29,5 @@ browsers:
   - label: GNOme
     title: GNOme Glycan Composition Browser and Subsumption Navigator
     url: https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html
-entries:
-  - exact: /2020-03-20/gno.owl
-    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.5.0/GNOme.owl
   
 ---
