@@ -10,6 +10,7 @@ license:
 description: AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology
 domain: anatomy
 homepage: https://github.com/obophenotype/human-developmental-anatomy-ontology/
+tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
 products:
   - id: aeo.owl
 title: Anatomical Entity Ontology
