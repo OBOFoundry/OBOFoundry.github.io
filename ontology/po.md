@@ -3,6 +3,11 @@ layout: ontology_detail
 id: po
 in_foundry_order: 1
 title: Plant Ontology
+review:
+  date: 2013
+  document:
+    label: PDF
+    link: https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc
 jobs:
   - id: https://travis-ci.org/Planteome/plant-ontology
     type: travis-ci

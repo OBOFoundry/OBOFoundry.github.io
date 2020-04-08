@@ -4,6 +4,8 @@ id: chebi
 in_foundry_order: 1
 alternatePrefix: ChEBI
 title: Chemical Entities of Biological Interest
+review:
+  date: 2010
 build:
   source_url: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo
   method: obo2owl

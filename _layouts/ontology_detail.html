@@ -148,7 +148,25 @@ layout: default
             {% endif %}
           </dd>
 
-
+					{% if page.review %}
+					<dt>Review Date</dt>
+					<dd>
+						{% if page.review.date %}
+						{{page.review.date}}
+						{% else %}
+						n/a
+						{% endif %}
+					</dd>
+					<dt>Review Document</dt>
+					<dd>
+						{% if page.review.document %}
+					  <a href="{{page.review.document.link}}">{{page.review.document.label}}</a>
+						{% else %}
+						n/a
+						{% endif %}
+					<dd>
+					{% endif %}
+					
           <dt>Homepage</dt>
           <dd>
             <a href="{{page.homepage}}">{{page.homepage}}</a>
@@ -179,7 +197,7 @@ layout: default
           <dd>
             <a href="/domain/{{page.domain}}.html">{{page.domain}}</a>
           </dd>
-
+					
           {% if page.mailing_list %}
           <dt>Mail List</dt>
           <dd>

@@ -25,6 +25,8 @@ browsers:
     title: PRO Home
     url: http://proconsortium.org
 title: PRotein Ontology (PRO)
+review:
+  date: 2010
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY

@@ -12,6 +12,8 @@ license:
 label: GO
 description: An ontology for describing the function of genes and gene products
 title: Gene Ontology
+review:
+  date: 2010
 homepage: http://geneontology.org/
 twitter: news4go
 facebook: https://www.facebook.com/Gene-Ontology-305908656519/ 

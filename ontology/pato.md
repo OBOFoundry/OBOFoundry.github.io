@@ -3,6 +3,8 @@ layout: ontology_detail
 id: pato
 in_foundry_order: 1
 title: Phenotype And Trait Ontology
+review:
+  date: 2010
 build:
   source_url: https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo
   method: obo2owl
