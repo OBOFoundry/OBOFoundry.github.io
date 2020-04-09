@@ -32,7 +32,7 @@ dependencies:
 
 tracker: https://github.com/obophenotype/chiro/issues
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  url: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC-0
 activity_status: active
 ---
