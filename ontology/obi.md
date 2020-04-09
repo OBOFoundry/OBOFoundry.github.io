@@ -3,6 +3,11 @@ layout: ontology_detail
 id: obi
 in_foundry_order: 1
 title: Ontology for Biomedical Investigations
+review:
+  date: 2013
+  document:
+    label: PDF
+    link: https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc
 description: An integrated ontology for the description of life-science and clinical investigations
 domain: experiments
 homepage: http://obi-ontology.org

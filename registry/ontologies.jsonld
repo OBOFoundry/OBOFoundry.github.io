@@ -39,6 +39,13 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/bfo.obo"
                 }
             ],
+            "review": {
+                "date": 2016,
+                "document": {
+                    "label": "PDF",
+                    "link": "https://drive.google.com/open?id=0B81h9ah4tAM_RnNTRUZnVGRyWXM"
+                }
+            },
             "title": "Basic Formal Ontology",
             "tracker": "https://github.com/BFO-ontology/BFO/issues",
             "usages": [
@@ -65,9 +72,9 @@
                 "source_url": "ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo"
             },
             "contact": {
-                "email": "gowen@ebi.ac.uk",
-                "github": "G-Owen",
-                "label": "Gareth Owen"
+                "email": "amalik@ebi.ac.uk",
+                "github": "amalik01",
+                "label": "Adnan Malik"
             },
             "depicted_by": "https://www.ebi.ac.uk/chebi/images/ChEBI_logo.png",
             "description": "A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds.",
@@ -114,6 +121,9 @@
                     "title": "ChEBI in 2016: Improved services and an expanding collection of metabolites."
                 }
             ],
+            "review": {
+                "date": 2010
+            },
             "title": "Chemical Entities of Biological Interest",
             "tracker": "https://github.com/ebi-chebi/ChEBI/issues",
             "twitter": "chebit",
@@ -191,6 +201,13 @@
                     "title": "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"
                 }
             ],
+            "review": {
+                "date": 2015,
+                "document": {
+                    "label": "PDF",
+                    "link": "https://drive.google.com/open?id=0B8vqEgF1N0NIZ082U2JETHlSTGs"
+                }
+            },
             "taxon": {
                 "id": "NCBITaxon:9606",
                 "label": "Homo sapiens"
@@ -350,6 +367,9 @@
                     "title": "GO (OBO Format edition), daily snapshot release"
                 }
             ],
+            "review": {
+                "date": 2010
+            },
             "taxon": {
                 "id": "NCBITaxon:1",
                 "label": "All life"
@@ -422,6 +442,13 @@
                     "title": "OBI Core"
                 }
             ],
+            "review": {
+                "date": 2013,
+                "document": {
+                    "label": "PDF",
+                    "link": "https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc"
+                }
+            },
             "title": "Ontology for Biomedical Investigations",
             "tracker": "http://purl.obolibrary.org/obo/obi/tracker",
             "usages": [
@@ -504,6 +531,9 @@
                 }
             ],
             "repository": "https://github.com/pato-ontology/pato/",
+            "review": {
+                "date": 2010
+            },
             "title": "Phenotype And Trait Ontology",
             "tracker": "https://github.com/pato-ontology/pato/issues",
             "usages": [
@@ -579,6 +609,13 @@
                     "title": "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics."
                 }
             ],
+            "review": {
+                "date": 2013,
+                "document": {
+                    "label": "PDF",
+                    "link": "https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc"
+                }
+            },
             "taxon": {
                 "id": "NCBITaxon:33090",
                 "label": "Viridiplantae"
@@ -688,6 +725,9 @@
                     "title": "Publications & Dissemination"
                 }
             ],
+            "review": {
+                "date": 2010
+            },
             "title": "PRotein Ontology (PRO)",
             "tracker": "https://github.com/PROconsortium/PRoteinOntology/issues"
         },
@@ -735,6 +775,9 @@
                     "title": "Enhanced XAO: the ontology of Xenopus anatomy and development underpins more accurate annotation of gene expression and queries on Xenbase."
                 }
             ],
+            "review": {
+                "date": 2010
+            },
             "taxon": {
                 "id": "NCBITaxon:8353",
                 "label": "Xenopus"
@@ -783,6 +826,9 @@
                     "title": "The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio."
                 }
             ],
+            "review": {
+                "date": 2010
+            },
             "taxon": {
                 "id": "NCBITaxon:7954",
                 "label": "Danio"
@@ -831,7 +877,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/aeo.owl"
                 }
             ],
-            "title": "Anatomical Entity Ontology"
+            "title": "Anatomical Entity Ontology",
+            "tracker": "https://github.com/obophenotype/human-developmental-anatomy-ontology/issues"
         },
         {
             "activity_status": "active",
@@ -2409,6 +2456,7 @@
             },
             "depicted_by": "https://raw.githubusercontent.com/EuPathDB/communitysite/master/assets/images/VEuPathDB-logo-s.png",
             "description": "An ontology is developed to support Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org).",
+            "domain": "functional genomics, population biology, clinical epidemiology, and microbiomes",
             "homepage": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology",
             "id": "eupath",
             "layout": "ontology_detail",
@@ -2425,7 +2473,24 @@
                 }
             ],
             "title": "VEuPathDB ontology",
-            "tracker": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology/issues"
+            "tracker": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology/issues",
+            "usages": [
+                {
+                    "description": "The VEuPathDB ontology is used in the VEuPathDB (Eukaryotic Pathogen, Vector & Host Informatics Resources) covers both functional genomics and population biology.",
+                    "type": "annotation and query",
+                    "user": "https://veupathdb.org"
+                },
+                {
+                    "description": "The VEuPathDB ontology is used in the clinical epidemiology resources.",
+                    "type": "annotation and query",
+                    "user": "https://clinepidb.org"
+                },
+                {
+                    "description": "The VEuPathDB ontology is used in the MicrobiomeDB, a systems biology platform for integrating, mining and analyzing microbiome experiments.",
+                    "type": "annotation and query",
+                    "user": "https://microbiomedb.org"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -3135,19 +3200,22 @@
             "ontology_purl": "http://purl.obolibrary.org/obo/gno.owl",
             "products": [
                 {
+                    "description": "Glycan Naming Ontology, OWL format",
                     "id": "gno.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/gno.owl"
                 },
                 {
+                    "description": "Glycan Naming Ontology, OBO format",
                     "id": "gno.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/gno.obo"
                 },
                 {
+                    "description": "Glycan Naming Ontology, JSON format",
                     "id": "gno.json",
                     "ontology_purl": "http://purl.obolibrary.org/obo/gno.json"
                 }
             ],
-            "title": "Glycan Naming Ontology",
+            "title": "Glycan Naming Ontology (GNOme)",
             "tracker": "https://github.com/glygen-glycan-data/GNOme/issues"
         },
         {

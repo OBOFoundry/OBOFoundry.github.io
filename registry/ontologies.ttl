@@ -70,8 +70,8 @@ _:b1    <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://purl.org/dc/elements/1.1/title>  "EBI CHEBI Browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CHEBI" .
 
-_:b2    <http://www.w3.org/2000/01/rdf-schema#label>  "Gareth Owen" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "gowen@ebi.ac.uk" .
+_:b2    <http://www.w3.org/2000/01/rdf-schema#label>  "Adnan Malik" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "amalik@ebi.ac.uk" .
 
 <http://purl.obolibrary.org/obo/chebi.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/chebi.owl" .
@@ -619,6 +619,7 @@ _:b25   <http://www.w3.org/2000/01/rdf-schema#label>  "Ceri Van Slyke" ;
         <http://purl.org/dc/elements/1.1/title>  "Anatomical Entity Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/human-developmental-anatomy-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/aeo.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b27 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/aeo.owl> ;
@@ -1771,6 +1772,7 @@ _:b103  <http://www.w3.org/2000/01/rdf-schema#label>  "Juliane Schneider" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology is developed to support Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org)." ;
         <http://purl.org/dc/elements/1.1/title>  "VEuPathDB ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/theme>  "functional genomics, population biology, clinical epidemiology, and microbiomes" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/eupath.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b104 ;
@@ -2190,7 +2192,7 @@ _:b126  <http://www.w3.org/2000/01/rdf-schema#label>  "Bill Hogan" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b127 ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology for glycans based on GlyTouCan, but organized by subsumption." ;
-        <http://purl.org/dc/elements/1.1/title>  "Glycan Naming Ontology" ;
+        <http://purl.org/dc/elements/1.1/title>  "Glycan Naming Ontology (GNOme)" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "glycan structure" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/glygen-glycan-data/GNOme/issues" ;
@@ -2212,12 +2214,15 @@ _:b128  <http://www.w3.org/2000/01/rdf-schema#label>  "Nathan Edwards" ;
         <http://xmlns.com/foaf/0.1/mbox>  "nje5@georgetown.edu" .
 
 <http://purl.obolibrary.org/obo/gno.owl>
+        <http://purl.org/dc/elements/1.1/description>  "Glycan Naming Ontology, OWL format" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/gno.owl" .
 
 <http://purl.obolibrary.org/obo/gno.obo>
+        <http://purl.org/dc/elements/1.1/description>  "Glycan Naming Ontology, OBO format" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/gno.obo" .
 
 <http://purl.obolibrary.org/obo/gno.json>
+        <http://purl.org/dc/elements/1.1/description>  "Glycan Naming Ontology, JSON format" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/gno.json" .
 
 <http://purl.obolibrary.org/obo/hancestro>

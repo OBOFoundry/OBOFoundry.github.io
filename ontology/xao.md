@@ -16,6 +16,8 @@ taxon:
   id: NCBITaxon:8353
   label: Xenopus
 title: Xenopus Anatomy Ontology
+review:
+  date: 2010
 build:
   source_url: https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo
   method: obo2owl
