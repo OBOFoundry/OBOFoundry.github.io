@@ -33,7 +33,7 @@ The technical working group reserves the right to make decisions based on their 
     * If there is clear overlap with an existing domain ontology, you must demonstrate a good faith effort to work with that ontology to provide any new terms needed.
 3. The required IDSPACE must be available.
 4. The resource must be publicly available when released. The general expectation is that the ontology source code is available on a public repository such as GitHub.
-5. There must be a contact person for the resource. The contact person for resources must be subscribed to our main communication channel, the [obo-discuss](mailto:obo-discuss@googlegroups.com) mailing list.
+5. There must be a contact person for the resource. The contact person for resources must be subscribed to our main communication channel, the [obo-discuss](https://groups.google.com/forum/#!forum/obo-discuss) mailing list.
 6. The requestor and/or contact person should be ready to discuss issues such as whether the ontology is orthogonal, whether there is potential to collaborate with existing efforts.
 7. It is expected that solicitation of a IDSPACE is done _before_ the IDSPACE is used for identifiers. A common strategy is to develop an ontology, request a IDSPACE, and translate the initial URIs used to the PURLs some time before the initial release.  **There is no guarantee that you will be granted your IDSPACE, even if you have been using it in your file**.
 
@@ -48,10 +48,10 @@ The technical working group reserves the right to make decisions based on their 
 
 We expect general discussion to take place on the obo-discuss list, while technical follow-up will take place on the tracker.
 
-Example of such request for OHMI:
+Example of such request for ECTO:
 
 * [tracker issue](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/397)
-* [obo-discuss message](https://sourceforge.net/p/obo/mailman/message/35692927/)
+* [obo-discuss message](https://groups.google.com/forum/#!msg/obo-discuss/Mfbrg5cJ2lM/17HfTEnJDAAJ)
 
 
 ## 2. Response
