@@ -29,11 +29,11 @@ build:
   method: archive
   infallible: 1
 tracker: https://github.com/obophenotype/human-phenotype-ontology/issues/
-mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
+mailing_list: https://groups.io/g/human-phenotype-ontology
 browsers:
   - label: HPO
-    title: Charite HPO Browser
-    url: http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118
+    title: JAX HPO Browser
+    url: https://hpo.jax.org/app/
   - label: Monarch
     title: Monarch Phenotype Page
     url: http://monarchinitiative.org/phenotype/HP:0000118
@@ -65,5 +65,4 @@ The Human Phenotype Ontology (HPO) aims to provide a standardized vocabulary of 
 The HPO can be browsed using:
 
  * [Main Browser](https://hpo.jax.org/)
- * [HPO Browser](http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118)
  * [Monarch Browser](https://monarchinitiative.org/phenotype/HP:0000118)
