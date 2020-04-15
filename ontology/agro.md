@@ -22,6 +22,9 @@ dependencies:
  - id: pato
  - id: chebi
  - id: iao
+ - id: ncbitaxon
+ - id: po
+ - id: peco
 jobs:
   - id: https://travis-ci.org/AgriculturalSemantics/agro
     type: travis-ci
@@ -35,5 +38,5 @@ tracker: https://github.com/AgriculturalSemantics/agro/issues/
 activity_status: active
 ---
 
-AGRO, the AGRonomy Ontology, describes agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments. AGRO is being built using traits identified by agronomists, the ICASA variables, and other existing ontologies such as ENVO, UO, and PATO, IAO, and CHEBI. Further, AGRO will power an Agronomy Management System and fieldbook modeled on a CGIAR Breeding Management System to capture agronomic data. 
+AgrO, the Agronomy Ontology, describes agronomic practices, techniques, and variables used in agronomic experiments. AgrO is being built using traits identified by agronomists, the ICASA variables, and other existing ontologies such as ENVO, UO, PATO, IAO, and CHEBI. Further, AgrO powers AgroFIMS, the Agronomy Fieldbook and Information Management System modeled on a CGIAR Breeding Management System to capture agronomic data.
 
