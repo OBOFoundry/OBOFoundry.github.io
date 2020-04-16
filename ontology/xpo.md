@@ -12,12 +12,16 @@ build:
 contact:
   email: esegerd3@gmail.com
   label: Erik Segerdell
-description: An ontology of anatomical, cellular, and gene function phenotypes in Xenopus, the African clawed frogs.
+  github: seger
+description: XPO represents anatomical, cellular, and gene function phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis.
 domain: phenotype
 homepage: https://github.com/obophenotype/xenopus-phenotype-ontology
 products:
   - id: xpo.owl
   - id: xpo.obo
+taxon:
+  id: NCBITaxon:8353
+  label: Xenopus
 dependencies:
  - id: iao
  - id: go
@@ -34,4 +38,4 @@ license:
 activity_status: active
 ---
 
-The Xenopus Phenotype Ontology represents and standardizes anatomical, cellular, and gene function phenotypes in Xenopus, the African clawed frogs. The XPO is being designed primarily to support phenotype curation in Xenbase, the model organism database for Xenopus, and to facilitate mappings between frog phenotypes and human disease.
+The Xenopus Phenotype Ontology represents and standardizes phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis. It supports the annotation of phenotypes in Xenbase and is designed to integrate Xenopus data with genotype, phenotype, and disease data across species.
