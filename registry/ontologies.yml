@@ -629,6 +629,9 @@ ontologies:
   - id: pato
   - id: chebi
   - id: iao
+  - id: ncbitaxon
+  - id: po
+  - id: peco
   description: Ontology of agronomic practices, agronomic techniques, and agronomic
     variables used in agronomic experiments
   domain: agronomy
@@ -909,9 +912,9 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
+    label: CC-0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: http://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/chiro.owl
   products:
   - id: chiro.owl
@@ -1029,6 +1032,10 @@ ontologies:
     id: cl/cl-base.owl
     ontology_purl: http://purl.obolibrary.org/obo/cl/cl-base.owl
     title: CL base module
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/27377652
+    title: 'The Cell Ontology 2016: enhanced content, modularization, and ontology
+      interoperability.'
   taxon:
     id: NCBITaxon:33208
     label: Metazoa
@@ -1110,6 +1117,27 @@ ontologies:
       ontologies: expansion, improvements and new applications.'
   title: Clinical measurement ontology
   tracker: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology/issues
+- activity_status: active
+  contact:
+    email: bpeters@lji.org
+    github: bpeters42
+    label: Bjoern Peters
+  description: COB brings together key terms from a wide range of OBO projects to
+    improve interoperability.
+  domain: upper
+  homepage: https://github.com/OBOFoundry/COB
+  id: cob
+  layout: ontology_detail
+  license:
+    label: CC0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/cob.owl
+  products:
+  - id: cob.owl
+    ontology_purl: http://purl.obolibrary.org/obo/cob.owl
+  title: Core Ontology for Biology and Biomedicine
+  tracker: https://github.com/OBOFoundry/COB/issues
 - activity_status: active
   build:
     checkout: git clone https://github.com/data2health/contributor-role-ontology.git
@@ -5292,8 +5320,8 @@ ontologies:
   alternativePrefix: HPO
   browsers:
   - label: HPO
-    title: Charite HPO Browser
-    url: http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118
+    title: JAX HPO Browser
+    url: https://hpo.jax.org/app/
   - label: Monarch
     title: Monarch Phenotype Page
     url: http://monarchinitiative.org/phenotype/HP:0000118
@@ -5318,7 +5346,7 @@ ontologies:
   license:
     label: hpo
     url: https://hpo.jax.org/app/license
-  mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
+  mailing_list: https://groups.io/g/human-phenotype-ontology
   ontology_purl: http://purl.obolibrary.org/obo/hp.owl
   products:
   - id: hp.owl
