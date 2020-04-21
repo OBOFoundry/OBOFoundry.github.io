@@ -28,6 +28,9 @@ taxon:
 domain: cells
 tracker: https://github.com/obophenotype/cell-ontology/issues
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/27377652
+    title: "The Cell Ontology 2016: enhanced content, modularization, and ontology interoperability."
 dependencies:
  - id: uberon
  - id: go
