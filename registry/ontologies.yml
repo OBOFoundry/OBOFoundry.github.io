@@ -512,7 +512,8 @@ ontologies:
     email: esegerd3@gmail.com
     github: seger
     label: Erik Segerdell
-  description: Anatomy and development of the African clawed frog (<i>Xenopus laevis</i>).
+  description: XAO represents the anatomy and development of the African frogs Xenopus
+    laevis and tropicalis.
   domain: anatomy
   homepage: http://www.xenbase.org/anatomy/xao.do?method=display
   id: xao
@@ -541,6 +542,12 @@ ontologies:
     label: Xenopus
   title: Xenopus Anatomy Ontology
   tracker: https://github.com/xenopus-anatomy/xao/issues
+  usages:
+  - description: Xenbase uses XAO to annotate gene expression.
+    examples:
+    - description: Xenopus genes expressed in the pronephric kidney.
+      url: http://www.xenbase.org/anatomy/showanatomy.do?method=displayAnatomySummary&anatomyId=463
+    user: http://www.xenbase.org
 - activity_status: active
   build:
     infallible: 1
@@ -652,6 +659,34 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/agro.owl
   title: Agronomy Ontology
   tracker: https://github.com/AgriculturalSemantics/agro/issues/
+- activity_status: active
+  build:
+    checkout: git clone https://github.com/EBISPOT/amphx_ontology.git
+    path: .
+    system: git
+  contact:
+    email: hescriva@obs-banyuls.fr
+    label: Hector Escriva
+  dependencies:
+  - id: uberon
+  description: An ontology for the development and anatomy of Amphioxus (Branchiostoma
+    lanceolatum).
+  domain: anatomy
+  homepage: https://github.com/EBISPOT/amphx_ontology
+  id: amphx
+  layout: ontology_detail
+  license:
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/amphx.owl
+  products:
+  - id: amphx.owl
+    ontology_purl: http://purl.obolibrary.org/obo/amphx.owl
+  - id: amphx.obo
+    ontology_purl: http://purl.obolibrary.org/obo/amphx.obo
+  title: The Amphioxus Development and Anatomy Ontology
+  tracker: https://github.com/EBISPOT/amphx_ontology/issues
 - activity_status: active
   build:
     method: obo2owl
@@ -2223,9 +2258,12 @@ ontologies:
   tracker: https://ontology.atlassian.net/browse/GEO#selectedTab=com.atlassian.jira.plugin.system.project%3Aissues-panel
 - activity_status: active
   browsers:
-  - label: GNOme
-    title: GNOme Glycan Composition Browser and Subsumption Navigator
-    url: https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html
+  - label: Structure Browser
+    title: GNOme Glycan Structure Browser
+    url: https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
+  - label: Composition Browser
+    title: GNOme Glycan Composition Browser
+    url: https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.compositionselector.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
   build:
     checkout: git clone https://github.com/glygen-glycan-data/GNOme.git
     path: .
@@ -2234,9 +2272,13 @@ ontologies:
     email: nje5@georgetown.edu
     github: edwardsnj
     label: Nathan Edwards
-  description: An ontology for glycans based on GlyTouCan, but organized by subsumption.
+  description: GlyTouCan provides stable accessions for glycans described at varyious
+    degrees of characterization, including compositions (no linkage) and topologies
+    (no carbon bond positions or anomeric configurations). GNOme organizes these stable
+    accessions for interative browsing, for text-based searching, and for automated
+    reasoning with well-defined characterization levels.
   domain: glycan structure
-  homepage: https://github.com/glygen-glycan-data/GNOme
+  homepage: https://github.com/glygen-glycan-data/GNOme/README.md
   id: gno
   layout: ontology_detail
   license:
@@ -2245,16 +2287,18 @@ ontologies:
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/gno.owl
   products:
-  - description: Glycan Naming Ontology, OWL format
+  - description: Glycan Naming and Subsumption Ontology, OWL format (primary)
     id: gno.owl
     ontology_purl: http://purl.obolibrary.org/obo/gno.owl
-  - description: Glycan Naming Ontology, OBO format
+  - description: Glycan Naming and Subsumption Ontology, OBO format (automated conversion
+      from OWL)
     id: gno.obo
     ontology_purl: http://purl.obolibrary.org/obo/gno.obo
-  - description: Glycan Naming Ontology, JSON format
+  - description: Glycan Naming and Subsumption Ontology, JSON format (automated conversion
+      from OWL)
     id: gno.json
     ontology_purl: http://purl.obolibrary.org/obo/gno.json
-  title: Glycan Naming Ontology (GNOme)
+  title: Glycan Naming and Subsumption Ontology (GNOme)
   tracker: https://github.com/glygen-glycan-data/GNOme/issues
 - activity_status: active
   contact:
@@ -5133,6 +5177,7 @@ ontologies:
     system: git
   contact:
     email: esegerd3@gmail.com
+    github: seger
     label: Erik Segerdell
   dependencies:
   - id: iao
@@ -5143,8 +5188,8 @@ ontologies:
   - id: chebi
   - id: cl
   - id: xao
-  description: An ontology of anatomical, cellular, and gene function phenotypes in
-    Xenopus, the African clawed frogs.
+  description: XPO represents anatomical, cellular, and gene function phenotypes occurring
+    throughout the development of the African frogs Xenopus laevis and tropicalis.
   domain: phenotype
   homepage: https://github.com/obophenotype/xenopus-phenotype-ontology
   id: xpo
@@ -5162,6 +5207,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/xpo.owl
   - id: xpo.obo
     ontology_purl: http://purl.obolibrary.org/obo/xpo.obo
+  taxon:
+    id: NCBITaxon:8353
+    label: Xenopus
   title: Xenopus Phenotype Ontology
   tracker: https://github.com/obophenotype/xenopus-phenotype-ontology/issues
 - activity_status: active
