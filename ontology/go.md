@@ -61,7 +61,11 @@ products:
    page: https://github.com/geneontology/obographs/
  - id: go/extensions/go-plus.owl
    title: GO-Plus
-   description: "The main ontology plus axioms connecting to select external ontologies"
+   description: "The main ontology plus axioms connecting to select external ontologies, with subsets of those ontologies"
+   page: http://geneontology.org/page/download-ontology
+ - id: go/go-base.owl
+   title: GO Base Module
+   description: "The main ontology plus axioms connecting to select external ontologies, excluding the external ontologies themselves"
    page: http://geneontology.org/page/download-ontology
  - id: go/extensions/go-plus.json
    title: GO-Plus
