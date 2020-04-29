@@ -20,7 +20,7 @@ contact:
   email: addiehl@buffalo.edu
   github: addiehl
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
+  url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY
 taxon:
   id: NCBITaxon:33208
