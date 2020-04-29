@@ -228,11 +228,18 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/go.json
     page: https://github.com/geneontology/obographs/
     title: GO (JSON edition)
-  - description: The main ontology plus axioms connecting to select external ontologies
+  - description: The main ontology plus axioms connecting to select external ontologies,
+      with subsets of those ontologies
     id: go/extensions/go-plus.owl
     ontology_purl: http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
     page: http://geneontology.org/page/download-ontology
     title: GO-Plus
+  - description: The main ontology plus axioms connecting to select external ontologies,
+      excluding the external ontologies themselves
+    id: go/go-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/go/go-base.owl
+    page: http://geneontology.org/page/download-ontology
+    title: GO Base Module
   - description: As go-plus.owl, in obographs json format
     id: go/extensions/go-plus.json
     ontology_purl: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
@@ -1047,7 +1054,7 @@ ontologies:
   license:
     label: CC-BY
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
+    url: http://creativecommons.org/licenses/by/4.0/
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
   ontology_purl: http://purl.obolibrary.org/obo/cl.owl
   products:
@@ -1351,7 +1358,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/dideo.owl
   title: Drug-drug Interaction and Drug-drug Interaction Evidence Ontology
   tracker: https://github.com/DIDEO/DIDEO/issues
-- activity_status: inactive
+- activity_status: active
   contact:
     email: maria.herrero@kcl.ac.uk
     label: Maria Herrero
@@ -1359,7 +1366,6 @@ ontologies:
   domain: health
   homepage: http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto
   id: dinto
-  is_obsolete: true
   layout: ontology_detail
   license:
     label: CC-BY

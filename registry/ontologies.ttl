@@ -162,6 +162,7 @@ _:b4    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/go.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/go.json> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/go/extensions/go-plus.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/go/go-base.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/go/extensions/go-plus.json> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/go/go-basic.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/go/go-basic.json> ;
@@ -228,7 +229,7 @@ _:b4    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_33208> ;
         <http://purl.org/dc/elements/1.1/description>  "The Cell Ontology is a structured controlled vocabulary for cell types in animals." ;
         <http://purl.org/dc/elements/1.1/title>  "Cell Ontology" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/27377652> ;
         <http://purl.org/dc/terms/1.1/theme>  "cells" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/cell-ontology/issues" ;
@@ -322,9 +323,15 @@ _:b5    <http://www.w3.org/2000/01/rdf-schema#label>  "Suzi Aleksander" ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/geneontology/obographs/> .
 
 <http://purl.obolibrary.org/obo/go/extensions/go-plus.owl>
-        <http://purl.org/dc/elements/1.1/description>  "The main ontology plus axioms connecting to select external ontologies" ;
+        <http://purl.org/dc/elements/1.1/description>  "The main ontology plus axioms connecting to select external ontologies, with subsets of those ontologies" ;
         <http://purl.org/dc/elements/1.1/title>  "GO-Plus" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/go/extensions/go-plus.owl" ;
+        <http://xmlns.com/foaf/0.1/page>  <http://geneontology.org/page/download-ontology> .
+
+<http://purl.obolibrary.org/obo/go/go-base.owl>
+        <http://purl.org/dc/elements/1.1/description>  "The main ontology plus axioms connecting to select external ontologies, excluding the external ontologies themselves" ;
+        <http://purl.org/dc/elements/1.1/title>  "GO Base Module" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/go/go-base.owl" ;
         <http://xmlns.com/foaf/0.1/page>  <http://geneontology.org/page/download-ontology> .
 
 <http://purl.obolibrary.org/obo/go/extensions/go-plus.json>
