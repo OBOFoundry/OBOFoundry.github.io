@@ -1897,38 +1897,6 @@
         },
         {
             "activity_status": "active",
-            "contact": {
-                "email": "maria.herrero@kcl.ac.uk",
-                "label": "Maria Herrero"
-            },
-            "description": "A formal represention for drug-drug interactions knowledge.",
-            "domain": "health",
-            "homepage": "http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto",
-            "id": "dinto",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-BY",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/dinto.owl",
-            "products": [
-                {
-                    "id": "dinto.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/dinto.owl"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119",
-                    "title": "DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug\u2013Drug Interactions and Their Mechanisms."
-                }
-            ],
-            "title": "The Drug-Drug Interactions Ontology",
-            "tracker": "https://github.com/labda/DINTO/issues"
-        },
-        {
-            "activity_status": "active",
             "browsers": [
                 {
                     "label": "FB",
@@ -8305,6 +8273,38 @@
             ],
             "title": "Beta Cell Genomics Ontology",
             "tracker": "https://github.com/obi-bcgo/bcgo/issues"
+        },
+        {
+            "activity_status": "inactive",
+            "contact": {
+                "email": "maria.herrero@kcl.ac.uk",
+                "label": "Maria Herrero"
+            },
+            "description": "A formal represention for drug-drug interactions knowledge.",
+            "domain": "health",
+            "homepage": "http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto",
+            "id": "dinto",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/3.0/"
+            },
+            "products": [
+                {
+                    "id": "dinto.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/dinto.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119",
+                    "title": "DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug\u2013Drug Interactions and Their Mechanisms."
+                }
+            ],
+            "title": "The Drug-Drug Interactions Ontology",
+            "tracker": "https://github.com/labda/DINTO/issues"
         },
         {
             "activity_status": "inactive",
