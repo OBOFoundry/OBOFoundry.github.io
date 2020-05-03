@@ -10,7 +10,7 @@ domain: ontology term annotation
 homepage: https://github.com/information-artifact-ontology/ontology-metadata
 tracker: https://github.com/information-artifact-ontology/ontology-metadata/issues
 products:
-  - id: ontology-metadata.owl
+  - id: omo.owl
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0
