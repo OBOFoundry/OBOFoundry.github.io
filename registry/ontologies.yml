@@ -1124,6 +1124,37 @@ ontologies:
   title: Cell Line Ontology
   tracker: https://github.com/CLO-Ontology/CLO/issues
 - activity_status: active
+  build:
+    checkout: git clone https://github.com/EBISPOT/clyh_ontology.git
+    path: .
+    system: git
+  contact:
+    email: lucas.leclere@obs-vlfr.fr
+    github: L-Leclere
+    label: Lucas Leclere
+  dependencies:
+  - id: uberon
+  - id: ro
+  - id: iao
+  description: The Clytia hemisphaerica Development and Anatomy Ontology (CLYH) describes
+    the anatomical and developmental features of the Clytia hemisphaerica life cycle.
+  domain: anatomy
+  homepage: https://github.com/EBISPOT/clyh_ontology
+  id: clyh
+  layout: ontology_detail
+  license:
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/clyh.owl
+  products:
+  - id: clyh.owl
+    ontology_purl: http://purl.obolibrary.org/obo/clyh.owl
+  - id: clyh.obo
+    ontology_purl: http://purl.obolibrary.org/obo/clyh.obo
+  title: Clytia hemisphaerica Development and Anatomy Ontology
+  tracker: https://github.com/EBISPOT/clyh_ontology/issues
+- activity_status: active
   browsers:
   - label: RGD
     title: RGD Ontology Browser
@@ -2103,6 +2134,56 @@ ontologies:
     title: FoodOn core ontology (without SIREN)
   title: FOODON
   tracker: https://github.com/FoodOntology/foodon/issues/
+- activity_status: active
+  build:
+    checkout: git clone https://github.com/futres/fovt.git
+    path: .
+    system: git
+  contact:
+    email: rlwalls2008@gmail.com
+    github: https://github.com/futres/fovt
+    label: FuTRES Ontology of Vertebrate Traits
+  dependencies:
+  - id: bco
+  - id: oba
+  - id: ro
+  - id: bfo
+  - id: pato
+  - id: bspo
+  - id: iao
+  - id: uberon
+  description: FuTRES Ontology of Vertebrate Traits is an application ontology used
+    to convert vertebrate trait data in spreadsheet to triples. FOVT leverages the
+    BioCollections Ontology (BCO) to link observations of individual specimens to
+    their trait values. Traits are defined in the Ontology of Biological Attributes
+    (OBA).
+  domain: vertebrate traits
+  homepage: https://github.com/futres/fovt
+  id: fovt
+  jobs:
+  - id: https://travis-ci.org/futres/fovt
+    type: travis-ci
+  layout: ontology_detail
+  license:
+    label: CC0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/fovt.owl
+  products:
+  - id: fovt.owl
+    name: FuTRES Ontology of Vertebrate Traits main release in OWL format
+    ontology_purl: http://purl.obolibrary.org/obo/fovt.owl
+  - id: fovt.obo
+    name: FuTRES Ontology of Vertebrate Traits additional release in OBO format
+    ontology_purl: http://purl.obolibrary.org/obo/fovt.obo
+  - id: fovt/fovt-base.owl
+    name: FuTRES Ontology of Vertebrate Traits main release in OWL format
+    ontology_purl: http://purl.obolibrary.org/obo/fovt/fovt-base.owl
+  - id: fovt/fovt-base.obo
+    name: FuTRES Ontology of Vertebrate Traits additional release in OBO format
+    ontology_purl: http://purl.obolibrary.org/obo/fovt/fovt-base.obo
+  title: FuTRES Ontology of Vertebrate Traits
+  tracker: https://github.com/futres/fovt/issues
 - activity_status: active
   build:
     infallible: 1
@@ -3672,6 +3753,32 @@ ontologies:
   title: Ontology for MIRNA Target
   tracker: https://github.com/OmniSearch/omit/issues
 - activity_status: active
+  contact:
+    email: cjmungall@lbl.gov
+    github: cmungall
+    label: Chris Mungall
+  description: An ontology specifies terms that are used to annotate ontology terms
+    for all OBO ontologies. The ontology was developed as part of Information Artifact
+    Ontology (IAO).
+  domain: ontology term annotation
+  homepage: https://github.com/information-artifact-ontology/ontology-metadata
+  id: omo
+  layout: ontology_detail
+  license:
+    label: CC0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/omo.owl
+  products:
+  - id: omo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/omo.owl
+  title: OBO Metadata Ontology
+  tracker: https://github.com/information-artifact-ontology/ontology-metadata/issues
+  usages:
+  - description: OMO is imported by multiple OBO ontologies for ontology term annotations.
+    type: owl_import
+    user: http://obofoundry.org
+- activity_status: active
   build:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/microbialphenotypes/OMP-ontology-files/master/omp.obo
@@ -4181,36 +4288,6 @@ ontologies:
     title: The pathway ontology - updates and applications.
   title: Pathway ontology
   tracker: https://github.com/rat-genome-database/PW-Pathway-Ontology/issues
-- activity_status: inactive
-  browsers:
-  - label: RNAO
-    title: RNA Ontology jOWL Browser
-    url: http://bgsu-rna.github.io/rnao/
-  build:
-    checkout: git clone https://github.com/BGSU-RNA/rnao.git
-    method: vcs
-    system: git
-  contact:
-    email: BatchelorC@rsc.org
-    label: Colin Batchelor
-  description: Controlled vocabulary pertaining to RNA function and based on RNA sequences,
-    secondary and three-dimensional structures.
-  domain: molecular structure
-  homepage: https://github.com/bgsu-rna/rnao
-  id: rnao
-  layout: ontology_detail
-  license:
-    label: CC-0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
-  ontology_purl: http://purl.obolibrary.org/obo/rnao.owl
-  products:
-  - id: rnao.owl
-    ontology_purl: http://purl.obolibrary.org/obo/rnao.owl
-  - id: rnao.obo
-    ontology_purl: http://purl.obolibrary.org/obo/rnao.obo
-  title: RNA ontology
-  tracker: https://github.com/BGSU-RNA/rnao/issues
 - aberowl_id: relo
   activity_status: active
   build:
@@ -5684,6 +5761,36 @@ ontologies:
   - id: idomal.obo
     ontology_purl: http://purl.obolibrary.org/obo/idomal.obo
   title: Malaria Ontology
+- activity_status: inactive
+  browsers:
+  - label: RNAO
+    title: RNA Ontology jOWL Browser
+    url: http://bgsu-rna.github.io/rnao/
+  build:
+    checkout: git clone https://github.com/BGSU-RNA/rnao.git
+    method: vcs
+    system: git
+  contact:
+    email: BatchelorC@rsc.org
+    label: Colin Batchelor
+  description: Controlled vocabulary pertaining to RNA function and based on RNA sequences,
+    secondary and three-dimensional structures.
+  domain: molecular structure
+  homepage: https://github.com/bgsu-rna/rnao
+  id: rnao
+  layout: ontology_detail
+  license:
+    label: CC-0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/rnao.owl
+  products:
+  - id: rnao.owl
+    ontology_purl: http://purl.obolibrary.org/obo/rnao.owl
+  - id: rnao.obo
+    ontology_purl: http://purl.obolibrary.org/obo/rnao.obo
+  title: RNA ontology
+  tracker: https://github.com/BGSU-RNA/rnao/issues
 - activity_status: inactive
   contact:
     email: dsonensh@odu.edu
