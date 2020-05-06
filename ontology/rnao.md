@@ -23,6 +23,6 @@ build:
   system: git
   method: vcs
 tracker: https://github.com/BGSU-RNA/rnao/issues
-activity_status: active
+activity_status: inactive
 ---
 
