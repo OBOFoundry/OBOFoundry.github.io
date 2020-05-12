@@ -14,6 +14,7 @@ homepage: https://github.com/obophenotype/mouse-anatomy-ontology
 page: http://www.informatics.jax.org/searches/AMA_form.shtml
 products:
   - id: ma.owl
+  - id: ma.obo
 taxon:
   id: NCBITaxon:10088
   label: Mus
