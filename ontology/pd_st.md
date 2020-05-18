@@ -3,8 +3,8 @@ layout: ontology_detail
 id: pd_st
 title: Platynereis stage ontology
 contact:
-  email: Thorsten Heinrich
-  label: henrich@embl.de
+  email: henrich@embl.de
+  label: Thorsten Heinrich
 taxon:
   id: NCBITaxon:6358
   label: Platynereis

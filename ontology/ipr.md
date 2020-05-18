@@ -3,8 +3,8 @@ layout: ontology_detail
 id: ipr
 title: Protein Domains
 contact:
-  email: InterPro Help
-  label: interhelp@ebi.ac.uk
+  email: interhelp@ebi.ac.uk
+  label: InterPro Help
 homepage: http://www.ebi.ac.uk/interpro/index.html
 is_obsolete: true
 activity_status: inactive

@@ -3,8 +3,8 @@ layout: ontology_detail
 id: gro
 title: Cereal Plant Gross Anatomy
 contact:
-  email: Plant Ontology Administrators
-  label: po-discuss@plantontology.org
+  email: po-discuss@plantontology.org
+  label: Plant Ontology Administrators
 homepage: http://www.gramene.org/plant_ontology/
 is_obsolete: true
 activity_status: inactive

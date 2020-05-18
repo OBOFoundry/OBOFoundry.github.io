@@ -3,8 +3,8 @@ layout: ontology_detail
 id: ypo
 title: Yeast phenotypes
 contact:
-  email: Mike Cherry
-  label: cherry@genome.stanford.edu
+  email: cherry@genome.stanford.edu
+  label: Mike Cherry
 taxon:
   id: NCBITaxon:4932
   label: Saccharomyces cerevisiae

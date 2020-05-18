@@ -3,8 +3,8 @@ layout: ontology_detail
 id: sao
 title: Subcellular anatomy ontology
 contact:
-  email: Stephen Larson
-  label: slarson@ncmir.ucsd.edu
+  email: slarson@ncmir.ucsd.edu
+  label: Stephen Larson
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
