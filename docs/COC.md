@@ -4,7 +4,7 @@ This code of conduct outlines expectations of the Open Biological Ontologies (OB
 
 **Be welcoming and patient** 
 
-We want and need all-comers to contribute to our collective goals of creating a robust suite of interoperable and effective ontologies. Cooperation from all members is needed to help ensure a safe and welcoming environment for everybody. We strive to be a community that that welcomes and supports persons of all backgrounds and identities. This includes, but is not limited to, members of any race, ethnicity, culture, national origin, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, physical size, family status, political belief, religion, and mental or physical ability.
+We want and need all comers to contribute to our collective goals of creating a robust suite of interoperable and effective ontologies. Cooperation from all members is needed to help ensure a safe and welcoming environment for everybody. We strive to be a community that that welcomes and supports persons of all backgrounds and identities. This includes, but is not limited to, members of any race, ethnicity, culture, national origin, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, physical size, family status, political belief, religion, and mental or physical ability.
 
 **Be considerate** 
 
@@ -16,7 +16,7 @@ Community members are likely to disagree on issues. This is to be expected (espe
 
 **Be careful in choice of words** 
 
-Be thoughtful in your use of words, as others may interpret them differently than may have been intended. If you see others using potentially disrespectful or alienating langauge, please let them know if if it was not intended for you. Often those feeling uncomfortable may not feel comfortable doing or saying anything. It is important that we collectively self-correct. 
+Be thoughtful in your use of words, as others may interpret them differently than may have been intended. If you see others using potentially disrespectful or alienating langauge, please let them know even if it was not intended for you. Often those feeling uncomfortable may not feel comfortable doing or saying anything. It is important that we collectively self-correct. 
 
 **Be kind to everyone** 
 
@@ -44,11 +44,13 @@ The OBO-COC team is intentionally small with only three members, in order to bes
 **Reporting issues** 
 
 If a community member experiences or witnesses unacceptable behavior, or if any other concern arises, then please report it by contacting a member of the OBO-COC team. If the issue involves a member of the COC-team, then please contact a different member. If these options are not sufficient, consider contacting a member of the OBO-Operations committee and/or your local ombuds office.
+
 All reports to OBO-COC will be handled with discretion and will receive serious attention. Reports should include the following:
 
-Name of person submitting the report.
-Names (real, nicknames, or pseudonyms) of any individuals involved. If there are additional witnesses, please include them as well. An account of the incident and whether it is ongoing. A link to any publicly available record (e.g., a mailing list archive, ticket, or a public Slack log), if applicable.
-Any additional information that may be helpful.
+ -  Name of person submitting the report. Names (real, nicknames, or pseudonyms) of any individuals involved. If there are additional witnesses, please include them as well. 
+ - An account of the incident and whether it is ongoing. 
+ - A link to any publicly available record (e.g., a mailing list archive, ticket, or a public Slack log), if applicable.
+ - Any additional information that may be helpful.
 
 If a community member files a report, then a member of the OBO-COC team will personally contact that person, review the incident with them, follow up with any additional questions, and make a decision with you as to how to proceed. All information will be held in confidence at the direction of the person reporting the incident.
 
