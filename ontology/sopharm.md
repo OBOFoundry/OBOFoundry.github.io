@@ -3,8 +3,8 @@ layout: ontology_detail
 id: sopharm
 title: Suggested Ontology for Pharmacogenomics
 contact:
-  email: Adrien Coulet
-  label: Adrien.Coulet@loria.fr
+  email: Adrien.Coulet@loria.fr
+  label: Adrien Coulet
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens

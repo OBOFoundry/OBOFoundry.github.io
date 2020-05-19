@@ -3,8 +3,8 @@ layout: ontology_detail
 id: loggerhead
 title: Loggerhead nesting
 contact:
-  email: Peter Midford
-  label: peteremidford@yahoo.com
+  email: peteremidford@yahoo.com
+  label: Peter Midford
 homepage: http://www.mesquiteproject.org/ontology/Loggerhead/index.html
 is_obsolete: true
 activity_status: inactive
