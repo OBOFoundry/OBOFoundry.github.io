@@ -24,6 +24,7 @@ tracker: https://github.com/Planteome/plant-stress-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+activity_status: active
 ---
 
 Enter a detailed description of your ontology here
