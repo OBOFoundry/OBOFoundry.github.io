@@ -8,6 +8,7 @@ tracker: https://github.com/ClinicalTrialOntology/CTO/issues
 contact:
   email: alpha.tom.kodamullil@scai.fraunhofer.de
   label: Dr. Alpha Tom Kodamullil
+  github: akodamullil
 products:
   - id: cto.owl
 license:
