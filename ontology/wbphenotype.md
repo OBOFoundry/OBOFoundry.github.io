@@ -32,8 +32,8 @@ usages:
    type: annotation
    description: WormBase uses WBPhenotype to curate worm phenotypes, and to allow search and indexing on the WormBase site
    examples:
-    - url: https://www.wormbase.org/species/c_elegans/gene/WBGene00013855#0c-9g-3
-   reference: https://academic.oup.com/nar/article/46/D1/D869/4563314
+    - url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=phenotype
+   reference: https://academic.oup.com/nar/article/48/D1/D762/5603222
  - user: https://monarchinitiative.org/
    type: annotation
    description: Monarch integrates phenotype annotations from sources such as WormBase, and allows for querying using the WBPhenotype ontology.
