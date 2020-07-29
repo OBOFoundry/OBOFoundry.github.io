@@ -4,7 +4,7 @@ id: fideo
 title:  Food Interactions with Drugs Evidence Ontology
 description: Food-Drug interactions automatically extracted from scientific literature
 domain: diet, metabolomics and nutrition
-homepage: https://github.com/getbordea/fideo
+homepage: https://gitub.u-bordeaux.fr/erias/fideo
 contact:
   email: georgeta.bordea@u-bordeaux.fr
   label: Georgeta Bordea
