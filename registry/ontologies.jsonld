@@ -736,7 +736,29 @@
                 "date": 2010
             },
             "title": "PRotein Ontology (PRO)",
-            "tracker": "https://github.com/PROconsortium/PRoteinOntology/issues"
+            "tracker": "https://github.com/PROconsortium/PRoteinOntology/issues",
+            "usages": [
+                {
+                    "description": "Colorado Richly Annotated Full-Text (CRAFT) Corpus; PRO is used for entity tagging and annotation",
+                    "examples": [
+                        {
+                            "description": "Tagged entities (requires download)",
+                            "url": "https://github.com/UCDenver-ccp/CRAFT/releases/tag/v4.0.1"
+                        }
+                    ],
+                    "user": "https://github.com/UCDenver-ccp/CRAFT"
+                },
+                {
+                    "description": "Cell Ontology is a structured controlled vocabulary for cell types in animals; PRO is used for cell type definitions",
+                    "examples": [
+                        {
+                            "description": "A B cell that is CD19-positive (uses the PRO term for non-species-specific CD19 molecule, PR:000001002)",
+                            "url": "http://purl.obolibrary.org/obo/CL_0001201"
+                        }
+                    ],
+                    "user": "http://www.obofoundry.org/ontology/cl.html"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -2109,7 +2131,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/duo.owl"
                 }
             ],
-            "title": "The Data Use Ontology",
+            "title": "Data Use Ontology",
             "tracker": "https://github.com/EBISPOT/DUO/issues"
         },
         {
@@ -3014,6 +3036,33 @@
             },
             "title": "Drosophila development",
             "tracker": "http://purl.obolibrary.org/obo/fbdv/tracker"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "georgeta.bordea@u-bordeaux.fr",
+                "github": "getbordea",
+                "label": "Georgeta Bordea"
+            },
+            "description": "Food-Drug interactions automatically extracted from scientific literature",
+            "domain": "diet, metabolomics and nutrition",
+            "homepage": "https://gitub.u-bordeaux.fr/erias/fideo",
+            "id": "fideo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/fideo.owl",
+            "products": [
+                {
+                    "id": "fideo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fideo.owl"
+                }
+            ],
+            "title": "Food Interactions with Drugs Evidence Ontology",
+            "tracker": "https://github.com/getbordea/fideo/issues"
         },
         {
             "activity_status": "active",
@@ -6562,6 +6611,7 @@
                 "label": "Allyson Lister"
             },
             "description": "The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. It contains detailed information on licensing and formats as well as software applications themselves, mainly (but not limited) to the bioinformatics community.",
+            "domain": "software",
             "homepage": "https://github.com/allysonlister/swo",
             "id": "swo",
             "layout": "ontology_detail",
@@ -7309,7 +7359,7 @@
             },
             "description": "A structured controlled vocabulary of the anatomy of <i>Caenorhabditis elegans</i>.",
             "domain": "anatomy",
-            "homepage": "http://www.wormbase.org/",
+            "homepage": "https://github.com/obophenotype/c-elegans-gross-anatomy-ontology",
             "id": "wbbt",
             "layout": "ontology_detail",
             "license": {
@@ -7329,12 +7379,31 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/wbbt.obo"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://pubmed.ncbi.nlm.nih.gov/18629098/",
+                    "title": "Building a cell and anatomy ontology of Caenorhabditis elegans"
+                }
+            ],
             "taxon": {
                 "id": "NCBITaxon:6237",
                 "label": "Caenorhabditis"
             },
             "title": "C. elegans Gross Anatomy Ontology",
-            "tracker": "https://github.com/obophenotype/c-elegans-gross-anatomy-ontology/issues"
+            "tracker": "https://github.com/obophenotype/c-elegans-gross-anatomy-ontology/issues",
+            "usages": [
+                {
+                    "description": "WormBase uses WBbt to curate anatomical expression patterns and anatomy function annotations, and to allow search and indexing on the WormBase site",
+                    "examples": [
+                        {
+                            "url": "http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression"
+                        }
+                    ],
+                    "reference": "https://academic.oup.com/nar/article/48/D1/D762/5603222",
+                    "type": "annotation",
+                    "user": "https://www.wormbase.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -7344,12 +7413,12 @@
                 "system": "git"
             },
             "contact": {
-                "email": "draciti@caltech.edu",
-                "label": "Daniela Raciti"
+                "email": "cgrove@caltech.edu",
+                "label": "Chris Grove"
             },
             "description": "A structured controlled vocabulary of the development of <i>Caenorhabditis elegans</i>.",
-            "domain": "anatomy",
-            "homepage": "http://www.wormbase.org/",
+            "domain": "developemental life stage",
+            "homepage": "https://github.com/obophenotype/c-elegans-development-ontology",
             "id": "wbls",
             "layout": "ontology_detail",
             "license": {
@@ -7369,11 +7438,31 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/wbls.obo"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://academic.oup.com/nar/article/48/D1/D762/5603222",
+                    "title": "WormBase: a modern Model Organism Information Resource"
+                }
+            ],
             "taxon": {
                 "id": "NCBITaxon:6237",
                 "label": "Caenorhabditis"
             },
-            "title": "C. elegans development ontology"
+            "title": "C. elegans development ontology",
+            "tracker": "https://github.com/obophenotype/c-elegans-development-ontology/issues",
+            "usages": [
+                {
+                    "description": "WormBase uses WBls to curate temporal expression patterns, and to allow search and indexing on the WormBase site",
+                    "examples": [
+                        {
+                            "url": "http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression"
+                        }
+                    ],
+                    "reference": "https://academic.oup.com/nar/article/48/D1/D762/5603222",
+                    "type": "annotation",
+                    "user": "https://www.wormbase.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -7429,10 +7518,10 @@
                     "description": "WormBase uses WBPhenotype to curate worm phenotypes, and to allow search and indexing on the WormBase site",
                     "examples": [
                         {
-                            "url": "https://www.wormbase.org/species/c_elegans/gene/WBGene00013855#0c-9g-3"
+                            "url": "http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=phenotype"
                         }
                     ],
-                    "reference": "https://academic.oup.com/nar/article/46/D1/D869/4563314",
+                    "reference": "https://academic.oup.com/nar/article/48/D1/D762/5603222",
                     "type": "annotation",
                     "user": "https://www.wormbase.org/"
                 },
