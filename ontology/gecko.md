@@ -15,6 +15,9 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4.0
 tracker: https://github.com/IHCC-cohorts/GECKO/issues
+usages:
+  - user: https://ihccglobal.org/
+    description: IHCC uses GECKO to standardize data from various cohorts for the IHCC cohort browser
 activity_status: active
 ---
 
