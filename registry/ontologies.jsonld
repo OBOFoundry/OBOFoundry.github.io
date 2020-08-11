@@ -3386,6 +3386,33 @@
         {
             "activity_status": "active",
             "contact": {
+                "email": "rbca.jackson@gmail.com",
+                "github": "beckyjackson",
+                "label": "Rebecca Jackson"
+            },
+            "description": "An ontology to represent genomics cohort attributes",
+            "domain": "cohort studies",
+            "homepage": "https://github.com/IHCC-cohorts/GECKO",
+            "id": "gecko",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/gecko.owl",
+            "products": [
+                {
+                    "id": "gecko.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/gecko.owl"
+                }
+            ],
+            "title": "Genomics Cohorts Knowledge Ontology",
+            "tracker": "https://github.com/IHCC-cohorts/GECKO/issues"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
                 "email": "damion.dooley@bccdc.ca",
                 "label": "Damion Dooley"
             },
