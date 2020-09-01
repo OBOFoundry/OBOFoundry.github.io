@@ -20,6 +20,7 @@ products:
   - id: mp.owl
   - id: mp.obo
   - id: mp.json
+  - id: mp-base.owl
 browsers:
   - label: MGI
     title: MGI MP Browser
