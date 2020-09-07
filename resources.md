@@ -16,6 +16,7 @@ title: resources
 - [Linked Open Vocabularies](https://lov.linkeddata.es/dataset/lov/)
 
 ## Tutorials
+- [OBO Tutorial](https://github.com/jamesaoverton/obo-tutorial): using OBO ontologies to work with scientific data
 - [Introduction to Ontologies](https://github.com/prog4biol/pfb2018/blob/master/workshops/Ontologies/IntroToOntologies_CSH_2018-10-28g.pdf): slides from Cold Spring Harbor workshop, October 2018.
 - [Ontology Development 101](http://www.ksl.stanford.edu/people/dlm/papers/ontology101/ontology101-noy-mcguinness.html): A Guide to Creating Your First Ontology by Natalya F. Noy and Deborah L. McGuinness.
 - [Ontology 101 Tutorial](http://icbo2018.cgrb.oregonstate.edu/node/19): from International Conference on Biological Ontology (ICBO) 2018
@@ -25,14 +26,14 @@ title: resources
 
 - [Protege](https://protege.stanford.edu/): An ontology development software application
 - [Ontology Development Kit](https://github.com/INCATools/ontology-development-kit): A toolkit to initialize an OBO library repository and associated files.
-- [Robot](http://robot.obolibrary.org/): ROBOT is a an tool for working with Open Biomedical Ontologies.
+- [ROBOT](http://robot.obolibrary.org/): ROBOT is a tool for working with Open Biomedical Ontologies.
 - [VOCOL](https://vocol.iais.fraunhofer.de/): An Integrated Environment for Collaborative Vocabulary Development.
 - [Karma Data Integration](http://usc-isi-i2.github.io/karma/): A data integration tool.
-
-[Ontofox](http://ontofox.hegroup.org/): An ontology term and relation extraction and reuse tool.
+- [Ontofox](http://ontofox.hegroup.org/): An ontology term and relation extraction and reuse tool.
 
 ## Relevant Publications/blogs
-- MIRO: guidelines for minimum information for the reporting of an ontology by Nicolas Matentzoglu, James Malone, Chris Mungall and Robert Stevens, Journal of Biomedical Semantics20189:6, https://doi.org/10.1186/s13326-017-0172-7
+- [The OBO Foundry: coordinated evolution of ontologies to support biomedical data integration](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2814061/) (Smith et al., 2007). Nat Biotechnol 2007 Nov;25(11):1251–1255. http://dx.doi.org/10.1038/nbt1346
+- [MIRO: guidelines for minimum information for the reporting of an ontology(https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-017-0172-7) (2018). Nicolas Matentzoglu, James Malone, Chris Mungall and Robert Stevens, Journal of Biomedical Semantics 2018 9:6, https://doi.org/10.1186/s13326-017-0172-7
 - [An Intrepid Guide to Ontologies](http://www.mkbergman.com/date/2007/05/16/), by Mike Bergman, posted on May 16, 2007 in Adaptive Information, Description Logics, Ontologies, Semantic Web, Structured Web
 - [Monkeying around with OWL](https://douroucouli.wordpress.com/): a technical blog on ontologies and ontology engineering by Chris Mungall.
 - [Feed your head](https://robertdavidstevens.wordpress.com/): a technical blog on ontologies and ontology engineering by Robert Stevens.
