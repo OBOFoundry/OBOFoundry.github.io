@@ -18,6 +18,6 @@
 
   * [PURL Requests](/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html)
   * [OBO PURL Configuration](/docs/OBOPURLDomain.html)
-  * [Setting Up Protege 4.3](/docs/SettingUpProtege.html)
+  * [Ontology tools and resources](/resources)
 
 [Outreach Working Group](/docs/OutreachWG.html)
