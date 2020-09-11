@@ -18,8 +18,21 @@ contact:
 domain: phenotype
 products:
   - id: mp.owl
+    title: "MP (OWL edition)"
+    description: "The main ontology in OWL. Contains all MP terms and links to other OBO ontologies."
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
   - id: mp.obo
+    title: "MP (OBO edition)"
+    description: "A direct translation of the MP (OWL edition) into OBO format."
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
   - id: mp.json
+    title: MP (obographs JSON edition)
+    description: "For a description of the format see https://github.com/geneontology/obographs."
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
+  - id: mp/mp-base.owl
+    title: MP Base Module
+    description: "The main ontology plus axioms connecting to select external ontologies, excluding axioms from the the external ontologies themselves."
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
 browsers:
   - label: MGI
     title: MGI MP Browser
@@ -41,4 +54,4 @@ mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-edito
 activity_status: active
 ---
 
-The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data.
+The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data. 
