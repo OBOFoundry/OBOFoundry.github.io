@@ -3,7 +3,7 @@ name: Ontology Review Request
 about: Request review of your ontology
 title: Request for review of <your ontology>
 labels: 'attn: Editorial WG, review request'
-assignees: nataled
+assignees: wdduncan
 
 ---
 
