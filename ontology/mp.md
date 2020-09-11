@@ -26,7 +26,7 @@ products:
     description: "A direct translation of the MP (OWL edition) into OBO format."
     page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
   - id: mp.json
-    title: MP in obographs JSON format
+    title: MP (obographs JSON edition)
     description: "For a description of the format see https://github.com/geneontology/obographs."
     page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
   - id: mp/mp-base.owl
