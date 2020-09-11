@@ -18,7 +18,13 @@ contact:
 domain: phenotype
 products:
   - id: mp.owl
+    title: "MP (OWL edition)"
+    description: "The main ontology in OWL. Contains all MP terms and links to other OBO ontologies."
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
   - id: mp.obo
+    title: "MP (OBO edition)"
+    description: "A direct translation of the MP (OWL edition) into OBO format."
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
   - id: mp.json
     title: MP in obographs JSON format
     description: "For a description of the format see https://github.com/geneontology/obographs."
