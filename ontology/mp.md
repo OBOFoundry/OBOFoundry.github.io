@@ -54,4 +54,4 @@ mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-edito
 activity_status: active
 ---
 
-The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data.
+The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data. 
