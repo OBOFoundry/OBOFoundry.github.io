@@ -20,7 +20,13 @@ products:
   - id: mp.owl
   - id: mp.obo
   - id: mp.json
-  - id: mp-base.owl
+    title: MP in obographs JSON format
+    description: "For a description of the format see https://github.com/geneontology/obographs."
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
+  - id: mp/mp-base.owl
+    title: MP Base Module
+    description: "The main ontology plus axioms connecting to select external ontologies, excluding axioms from the the external ontologies themselves."
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
 browsers:
   - label: MGI
     title: MGI MP Browser
