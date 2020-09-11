@@ -3,8 +3,8 @@ layout: ontology_detail
 id: pao
 title: Plant Anatomy Ontology
 contact:
-  email: Pankaj Jaiswal
-  label: jaiswalp@science.oregonstate.edu
+  email: jaiswalp@science.oregonstate.edu
+  label: Pankaj Jaiswal
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae

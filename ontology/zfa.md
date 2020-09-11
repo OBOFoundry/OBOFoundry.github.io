@@ -16,6 +16,8 @@ taxon:
   id: NCBITaxon:7954
   label: Danio
 title: Zebrafish anatomy and development ontology
+review:
+  date: 2010
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY

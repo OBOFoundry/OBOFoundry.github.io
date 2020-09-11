@@ -3,8 +3,8 @@ layout: ontology_detail
 id: mao
 title: Multiple alignment
 contact:
-  email: Julie Thompson
-  label: julie@igbmc.u-strasbg.fr
+  email: julie@igbmc.u-strasbg.fr
+  label: Julie Thompson
 homepage: http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html
 is_obsolete: true
 activity_status: inactive

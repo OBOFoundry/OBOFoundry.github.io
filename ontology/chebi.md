@@ -4,6 +4,8 @@ id: chebi
 in_foundry_order: 1
 alternatePrefix: ChEBI
 title: Chemical Entities of Biological Interest
+review:
+  date: 2010
 build:
   source_url: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo
   method: obo2owl
@@ -11,9 +13,9 @@ build:
 description: A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds.
 twitter: chebit
 contact:
-  email: gowen@ebi.ac.uk
-  label: Gareth Owen
-  github: "G-Owen"
+  email: amalik@ebi.ac.uk
+  label: Adnan Malik
+  github: "amalik01"
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4.0

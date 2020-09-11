@@ -38,6 +38,11 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/bfo.owl
   - id: bfo.obo
     ontology_purl: http://purl.obolibrary.org/obo/bfo.obo
+  review:
+    date: 2016
+    document:
+      label: PDF
+      link: https://drive.google.com/open?id=0B81h9ah4tAM_RnNTRUZnVGRyWXM
   title: Basic Formal Ontology
   tracker: https://github.com/BFO-ontology/BFO/issues
   usages:
@@ -56,9 +61,9 @@ ontologies:
     method: obo2owl
     source_url: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo
   contact:
-    email: gowen@ebi.ac.uk
-    github: G-Owen
-    label: Gareth Owen
+    email: amalik@ebi.ac.uk
+    github: amalik01
+    label: Adnan Malik
   depicted_by: https://www.ebi.ac.uk/chebi/images/ChEBI_logo.png
   description: A structured classification of molecular entities of biological interest
     focusing on 'small' chemical compounds.
@@ -90,6 +95,8 @@ ontologies:
   publications:
   - id: http://europepmc.org/article/MED/26467479
     title: 'ChEBI in 2016: Improved services and an expanding collection of metabolites.'
+  review:
+    date: 2010
   title: Chemical Entities of Biological Interest
   tracker: https://github.com/ebi-chebi/ChEBI/issues
   twitter: chebit
@@ -144,6 +151,11 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409
     title: 'Disease Ontology 2015 update: an expanded and updated database of human
       diseases for linking biomedical knowledge through disease data'
+  review:
+    date: 2015
+    document:
+      label: PDF
+      link: https://drive.google.com/open?id=0B8vqEgF1N0NIZ082U2JETHlSTGs
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
@@ -216,11 +228,18 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/go.json
     page: https://github.com/geneontology/obographs/
     title: GO (JSON edition)
-  - description: The main ontology plus axioms connecting to select external ontologies
+  - description: The main ontology plus axioms connecting to select external ontologies,
+      with subsets of those ontologies
     id: go/extensions/go-plus.owl
     ontology_purl: http://purl.obolibrary.org/obo/go/extensions/go-plus.owl
     page: http://geneontology.org/page/download-ontology
     title: GO-Plus
+  - description: The main ontology plus axioms connecting to select external ontologies,
+      excluding the external ontologies themselves
+    id: go/go-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/go/go-base.owl
+    page: http://geneontology.org/page/download-ontology
+    title: GO Base Module
   - description: As go-plus.owl, in obographs json format
     id: go/extensions/go-plus.json
     ontology_purl: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
@@ -253,6 +272,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/go/snapshot/go.obo
     page: http://geneontology.org/page/download-ontology
     title: GO (OBO Format edition), daily snapshot release
+  review:
+    date: 2010
   taxon:
     id: NCBITaxon:1
     label: All life
@@ -306,6 +327,11 @@ ontologies:
     id: obi/obi_core.owl
     ontology_purl: http://purl.obolibrary.org/obo/obi/obi_core.owl
     title: OBI Core
+  review:
+    date: 2013
+    document:
+      label: PDF
+      link: https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc
   title: Ontology for Biomedical Investigations
   tracker: http://purl.obolibrary.org/obo/obi/tracker
   usages:
@@ -363,6 +389,8 @@ ontologies:
     id: pato/pato-base.owl
     ontology_purl: http://purl.obolibrary.org/obo/pato/pato-base.owl
   repository: https://github.com/pato-ontology/pato/
+  review:
+    date: 2010
   title: Phenotype And Trait Ontology
   tracker: https://github.com/pato-ontology/pato/issues
   usages:
@@ -416,6 +444,11 @@ ontologies:
   - id: https://doi.org/10.1093/nar/gkx1152
     title: 'The Planteome database: an integrated resource for reference ontologies,
       plant genomics and phenomics.'
+  review:
+    date: 2013
+    document:
+      label: PDF
+      link: https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc
   taxon:
     id: NCBITaxon:33090
     label: Viridiplantae
@@ -485,8 +518,24 @@ ontologies:
   publications:
   - id: https://proconsortium.org/pro_dsmnt.shtml#publication
     title: Publications & Dissemination
+  review:
+    date: 2010
   title: PRotein Ontology (PRO)
   tracker: https://github.com/PROconsortium/PRoteinOntology/issues
+  usages:
+  - description: Colorado Richly Annotated Full-Text (CRAFT) Corpus; PRO is used for
+      entity tagging and annotation
+    examples:
+    - description: Tagged entities (requires download)
+      url: https://github.com/UCDenver-ccp/CRAFT/releases/tag/v4.0.1
+    user: https://github.com/UCDenver-ccp/CRAFT
+  - description: Cell Ontology is a structured controlled vocabulary for cell types
+      in animals; PRO is used for cell type definitions
+    examples:
+    - description: A B cell that is CD19-positive (uses the PRO term for non-species-specific
+        CD19 molecule, PR:000001002)
+      url: http://purl.obolibrary.org/obo/CL_0001201
+    user: http://www.obofoundry.org/ontology/cl.html
 - activity_status: active
   build:
     infallible: 0
@@ -496,7 +545,8 @@ ontologies:
     email: esegerd3@gmail.com
     github: seger
     label: Erik Segerdell
-  description: Anatomy and development of the African clawed frog (<i>Xenopus laevis</i>).
+  description: XAO represents the anatomy and development of the African frogs Xenopus
+    laevis and tropicalis.
   domain: anatomy
   homepage: http://www.xenbase.org/anatomy/xao.do?method=display
   id: xao
@@ -518,11 +568,19 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24139024
     title: 'Enhanced XAO: the ontology of Xenopus anatomy and development underpins
       more accurate annotation of gene expression and queries on Xenbase.'
+  review:
+    date: 2010
   taxon:
     id: NCBITaxon:8353
     label: Xenopus
   title: Xenopus Anatomy Ontology
   tracker: https://github.com/xenopus-anatomy/xao/issues
+  usages:
+  - description: Xenbase uses XAO to annotate gene expression.
+    examples:
+    - description: Xenopus genes expressed in the pronephric kidney.
+      url: http://www.xenbase.org/anatomy/showanatomy.do?method=displayAnatomySummary&anatomyId=463
+    user: http://www.xenbase.org
 - activity_status: active
   build:
     infallible: 1
@@ -554,6 +612,8 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24568621
     title: 'The zebrafish anatomy and stage ontologies: representing the anatomy and
       development of Danio rerio.'
+  review:
+    date: 2010
   taxon:
     id: NCBITaxon:7954
     label: Danio
@@ -590,6 +650,7 @@ ontologies:
   - id: aeo.owl
     ontology_purl: http://purl.obolibrary.org/obo/aeo.owl
   title: Anatomical Entity Ontology
+  tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
 - activity_status: active
   build:
     checkout: git clone  https://github.com/AgriculturalSemantics/agro.git
@@ -608,6 +669,9 @@ ontologies:
   - id: pato
   - id: chebi
   - id: iao
+  - id: ncbitaxon
+  - id: po
+  - id: peco
   description: Ontology of agronomic practices, agronomic techniques, and agronomic
     variables used in agronomic experiments
   domain: agronomy
@@ -628,6 +692,34 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/agro.owl
   title: Agronomy Ontology
   tracker: https://github.com/AgriculturalSemantics/agro/issues/
+- activity_status: active
+  build:
+    checkout: git clone https://github.com/EBISPOT/amphx_ontology.git
+    path: .
+    system: git
+  contact:
+    email: hescriva@obs-banyuls.fr
+    label: Hector Escriva
+  dependencies:
+  - id: uberon
+  description: An ontology for the development and anatomy of Amphioxus (Branchiostoma
+    lanceolatum).
+  domain: anatomy
+  homepage: https://github.com/EBISPOT/amphx_ontology
+  id: amphx
+  layout: ontology_detail
+  license:
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/amphx.owl
+  products:
+  - id: amphx.owl
+    ontology_purl: http://purl.obolibrary.org/obo/amphx.owl
+  - id: amphx.obo
+    ontology_purl: http://purl.obolibrary.org/obo/amphx.obo
+  title: The Amphioxus Development and Anatomy Ontology
+  tracker: https://github.com/EBISPOT/amphx_ontology/issues
 - activity_status: active
   build:
     method: obo2owl
@@ -888,9 +980,9 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
+    label: CC-0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: http://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/chiro.owl
   products:
   - id: chiro.owl
@@ -976,7 +1068,7 @@ ontologies:
   license:
     label: CC-BY
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
+    url: http://creativecommons.org/licenses/by/4.0/
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
   ontology_purl: http://purl.obolibrary.org/obo/cl.owl
   products:
@@ -1008,6 +1100,10 @@ ontologies:
     id: cl/cl-base.owl
     ontology_purl: http://purl.obolibrary.org/obo/cl/cl-base.owl
     title: CL base module
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/27377652
+    title: 'The Cell Ontology 2016: enhanced content, modularization, and ontology
+      interoperability.'
   taxon:
     id: NCBITaxon:33208
     label: Metazoa
@@ -1054,6 +1150,37 @@ ontologies:
   title: Cell Line Ontology
   tracker: https://github.com/CLO-Ontology/CLO/issues
 - activity_status: active
+  build:
+    checkout: git clone https://github.com/EBISPOT/clyh_ontology.git
+    path: .
+    system: git
+  contact:
+    email: lucas.leclere@obs-vlfr.fr
+    github: L-Leclere
+    label: Lucas Leclere
+  dependencies:
+  - id: uberon
+  - id: ro
+  - id: iao
+  description: The Clytia hemisphaerica Development and Anatomy Ontology (CLYH) describes
+    the anatomical and developmental features of the Clytia hemisphaerica life cycle.
+  domain: anatomy
+  homepage: https://github.com/EBISPOT/clyh_ontology
+  id: clyh
+  layout: ontology_detail
+  license:
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/clyh.owl
+  products:
+  - id: clyh.owl
+    ontology_purl: http://purl.obolibrary.org/obo/clyh.owl
+  - id: clyh.obo
+    ontology_purl: http://purl.obolibrary.org/obo/clyh.obo
+  title: Clytia hemisphaerica Development and Anatomy Ontology
+  tracker: https://github.com/EBISPOT/clyh_ontology/issues
+- activity_status: active
   browsers:
   - label: RGD
     title: RGD Ontology Browser
@@ -1089,6 +1216,27 @@ ontologies:
       ontologies: expansion, improvements and new applications.'
   title: Clinical measurement ontology
   tracker: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology/issues
+- activity_status: active
+  contact:
+    email: bpeters@lji.org
+    github: bpeters42
+    label: Bjoern Peters
+  description: COB brings together key terms from a wide range of OBO projects to
+    improve interoperability.
+  domain: upper
+  homepage: https://github.com/OBOFoundry/COB
+  id: cob
+  layout: ontology_detail
+  license:
+    label: CC0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/cob.owl
+  products:
+  - id: cob.owl
+    ontology_purl: http://purl.obolibrary.org/obo/cob.owl
+  title: Core Ontology for Biology and Biomedicine
+  tracker: https://github.com/OBOFoundry/COB/issues
 - activity_status: active
   build:
     checkout: git clone https://github.com/data2health/contributor-role-ontology.git
@@ -1151,6 +1299,29 @@ ontologies:
     label: Ctenophore
   title: Ctenophore Ontology
   tracker: https://github.com/obophenotype/ctenophore-ontology/issues
+- activity_status: active
+  contact:
+    email: alpha.tom.kodamullil@scai.fraunhofer.de
+    github: akodamullil
+    label: Dr. Alpha Tom Kodamullil
+  description: The core Ontology of Clinical Trials (CTO) will serve as a structured
+    resource integrating basic terms and concepts in the context of clinical trials.
+    Thereby covering clinicaltrails.gov. CoreCTO will serve as a basic ontology to
+    generate extended versions for specific applications such as annotation of variables
+    in study documents from clinical trials.
+  homepage: https://github.com/ClinicalTrialOntology/CTO/
+  id: cto
+  layout: ontology_detail
+  license:
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/cto.owl
+  products:
+  - id: cto.owl
+    ontology_purl: http://purl.obolibrary.org/obo/cto.owl
+  title: 'CTO: Core Ontology of Clinical Trials'
+  tracker: https://github.com/ClinicalTrialOntology/CTO/issues
 - activity_status: active
   build:
     method: owl2obo
@@ -1256,29 +1427,6 @@ ontologies:
   title: Drug-drug Interaction and Drug-drug Interaction Evidence Ontology
   tracker: https://github.com/DIDEO/DIDEO/issues
 - activity_status: active
-  contact:
-    email: maria.herrero@kcl.ac.uk
-    label: Maria Herrero
-  description: A formal represention for drug-drug interactions knowledge.
-  domain: health
-  homepage: http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto
-  id: dinto
-  layout: ontology_detail
-  license:
-    label: CC-BY
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/3.0/
-  ontology_purl: http://purl.obolibrary.org/obo/dinto.owl
-  products:
-  - id: dinto.owl
-    ontology_purl: http://purl.obolibrary.org/obo/dinto.owl
-  publications:
-  - id: http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119
-    title: "DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug\u2013Drug Interactions\
-      \ and Their Mechanisms."
-  title: The Drug-Drug Interactions Ontology
-  tracker: https://github.com/labda/DINTO/issues
-- activity_status: active
   browsers:
   - label: FB
     title: FlyBase Browser
@@ -1372,8 +1520,39 @@ ontologies:
   products:
   - id: duo.owl
     ontology_purl: http://purl.obolibrary.org/obo/duo.owl
-  title: The Data Use Ontology
+  title: Data Use Ontology
   tracker: https://github.com/EBISPOT/DUO/issues
+- activity_status: active
+  build:
+    checkout: git clone https://github.com/echinoderm-ontology/ecao_ontology.git
+    path: .
+    system: git
+  contact:
+    email: ettensohn@cmu.edu
+    github: ettensohn
+    label: Charles Ettensohn
+  dependencies:
+  - id: uberon
+  - id: ro
+  - id: cl
+  description: An ontology for the development and anatomy of the different species
+    of the phylum Echinodermata (NCBITaxon:7586).
+  domain: anatomy
+  homepage: https://github.com/echinoderm-ontology/ecao_ontology
+  id: ecao
+  layout: ontology_detail
+  license:
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/ecao.owl
+  products:
+  - id: ecao.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ecao.owl
+  - id: ecao.obo
+    ontology_purl: http://purl.obolibrary.org/obo/ecao.obo
+  title: The Echinoderm Anatomy and Development Ontology
+  tracker: https://github.com/echinoderm-ontology/ecao_ontology/issues
 - activity_status: active
   build:
     infallible: 1
@@ -1688,6 +1867,7 @@ ontologies:
   depicted_by: https://raw.githubusercontent.com/EuPathDB/communitysite/master/assets/images/VEuPathDB-logo-s.png
   description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector
     Genomics Resource (VEuPathDB; https://veupathdb.org).
+  domain: functional genomics, population biology, clinical epidemiology, and microbiomes
   homepage: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
   id: eupath
   layout: ontology_detail
@@ -1701,6 +1881,19 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/eupath.owl
   title: VEuPathDB ontology
   tracker: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology/issues
+  usages:
+  - description: The VEuPathDB ontology is used in the VEuPathDB (Eukaryotic Pathogen,
+      Vector & Host Informatics Resources) covers both functional genomics and population
+      biology.
+    type: annotation and query
+    user: https://veupathdb.org
+  - description: The VEuPathDB ontology is used in the clinical epidemiology resources.
+    type: annotation and query
+    user: https://clinepidb.org
+  - description: The VEuPathDB ontology is used in the MicrobiomeDB, a systems biology
+      platform for integrating, mining and analyzing microbiome experiments.
+    type: annotation and query
+    user: https://microbiomedb.org
 - activity_status: active
   build:
     method: obo2owl
@@ -1927,6 +2120,26 @@ ontologies:
   title: Drosophila development
   tracker: http://purl.obolibrary.org/obo/fbdv/tracker
 - activity_status: active
+  contact:
+    email: georgeta.bordea@u-bordeaux.fr
+    github: getbordea
+    label: Georgeta Bordea
+  description: Food-Drug interactions automatically extracted from scientific literature
+  domain: diet, metabolomics and nutrition
+  homepage: https://gitub.u-bordeaux.fr/erias/fideo
+  id: fideo
+  layout: ontology_detail
+  license:
+    label: CC0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/fideo.owl
+  products:
+  - id: fideo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/fideo.owl
+  title: Food Interactions with Drugs Evidence Ontology
+  tracker: https://github.com/getbordea/fideo/issues
+- activity_status: active
   build:
     method: owl2obo
     source_url: https://github.com/flora-phenotype-ontology/flopoontology/raw/master/ontology/flopo.owl
@@ -2023,6 +2236,56 @@ ontologies:
   tracker: https://github.com/FoodOntology/foodon/issues/
 - activity_status: active
   build:
+    checkout: git clone https://github.com/futres/fovt.git
+    path: .
+    system: git
+  contact:
+    email: rlwalls2008@gmail.com
+    github: https://github.com/futres/fovt
+    label: FuTRES Ontology of Vertebrate Traits
+  dependencies:
+  - id: bco
+  - id: oba
+  - id: ro
+  - id: bfo
+  - id: pato
+  - id: bspo
+  - id: iao
+  - id: uberon
+  description: FuTRES Ontology of Vertebrate Traits is an application ontology used
+    to convert vertebrate trait data in spreadsheet to triples. FOVT leverages the
+    BioCollections Ontology (BCO) to link observations of individual specimens to
+    their trait values. Traits are defined in the Ontology of Biological Attributes
+    (OBA).
+  domain: vertebrate traits
+  homepage: https://github.com/futres/fovt
+  id: fovt
+  jobs:
+  - id: https://travis-ci.org/futres/fovt
+    type: travis-ci
+  layout: ontology_detail
+  license:
+    label: CC0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/fovt.owl
+  products:
+  - id: fovt.owl
+    name: FuTRES Ontology of Vertebrate Traits main release in OWL format
+    ontology_purl: http://purl.obolibrary.org/obo/fovt.owl
+  - id: fovt.obo
+    name: FuTRES Ontology of Vertebrate Traits additional release in OBO format
+    ontology_purl: http://purl.obolibrary.org/obo/fovt.obo
+  - id: fovt/fovt-base.owl
+    name: FuTRES Ontology of Vertebrate Traits main release in OWL format
+    ontology_purl: http://purl.obolibrary.org/obo/fovt/fovt-base.owl
+  - id: fovt/fovt-base.obo
+    name: FuTRES Ontology of Vertebrate Traits additional release in OBO format
+    ontology_purl: http://purl.obolibrary.org/obo/fovt/fovt-base.obo
+  title: FuTRES Ontology of Vertebrate Traits
+  tracker: https://github.com/futres/fovt/issues
+- activity_status: active
+  build:
     infallible: 1
     method: obo2owl
     source_url: https://raw.githubusercontent.com/pombase/fypo/master/release/fypo.owl
@@ -2086,6 +2349,30 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/gaz.obo
   title: Gazetteer
   tracker: https://github.com/EnvironmentOntology/gaz/issues
+- activity_status: active
+  contact:
+    email: rbca.jackson@gmail.com
+    github: beckyjackson
+    label: Rebecca Jackson
+  description: An ontology to represent genomics cohort attributes
+  domain: cohort studies
+  homepage: https://github.com/IHCC-cohorts/GECKO
+  id: gecko
+  layout: ontology_detail
+  license:
+    label: CC-BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/gecko.owl
+  products:
+  - id: gecko.owl
+    ontology_purl: http://purl.obolibrary.org/obo/gecko.owl
+  title: Genomics Cohorts Knowledge Ontology
+  tracker: https://github.com/IHCC-cohorts/GECKO/issues
+  usages:
+  - description: IHCC uses GECKO to standardize data from various cohorts for the
+      IHCC cohort browser
+    user: https://ihccglobal.org/
 - activity_status: active
   contact:
     email: damion.dooley@bccdc.ca
@@ -2160,9 +2447,12 @@ ontologies:
   tracker: https://ontology.atlassian.net/browse/GEO#selectedTab=com.atlassian.jira.plugin.system.project%3Aissues-panel
 - activity_status: active
   browsers:
-  - label: GNOme
-    title: GNOme Glycan Composition Browser and Subsumption Navigator
-    url: https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html
+  - label: Structure Browser
+    title: GNOme Glycan Structure Browser
+    url: https://gnome.glyomics.org/GNOme.browser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
+  - label: Composition Browser
+    title: GNOme Glycan Composition Browser
+    url: https://gnome.glyomics.org/GNOme.compositionselector.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
   build:
     checkout: git clone https://github.com/glygen-glycan-data/GNOme.git
     path: .
@@ -2171,9 +2461,13 @@ ontologies:
     email: nje5@georgetown.edu
     github: edwardsnj
     label: Nathan Edwards
-  description: An ontology for glycans based on GlyTouCan, but organized by subsumption.
+  description: GlyTouCan provides stable accessions for glycans described at varyious
+    degrees of characterization, including compositions (no linkage) and topologies
+    (no carbon bond positions or anomeric configurations). GNOme organizes these stable
+    accessions for interative browsing, for text-based searching, and for automated
+    reasoning with well-defined characterization levels.
   domain: glycan structure
-  homepage: https://github.com/glygen-glycan-data/GNOme
+  homepage: https://gnome.glyomics.org/
   id: gno
   layout: ontology_detail
   license:
@@ -2182,13 +2476,18 @@ ontologies:
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/gno.owl
   products:
-  - id: gno.owl
+  - description: Glycan Naming and Subsumption Ontology, OWL format (primary)
+    id: gno.owl
     ontology_purl: http://purl.obolibrary.org/obo/gno.owl
-  - id: gno.obo
+  - description: Glycan Naming and Subsumption Ontology, OBO format (automated conversion
+      from OWL)
+    id: gno.obo
     ontology_purl: http://purl.obolibrary.org/obo/gno.obo
-  - id: gno.json
+  - description: Glycan Naming and Subsumption Ontology, JSON format (automated conversion
+      from OWL)
+    id: gno.json
     ontology_purl: http://purl.obolibrary.org/obo/gno.json
-  title: Glycan Naming Ontology
+  title: Glycan Naming and Subsumption Ontology (GNOme)
   tracker: https://github.com/glygen-glycan-data/GNOme/issues
 - activity_status: active
   contact:
@@ -2497,6 +2796,8 @@ ontologies:
   products:
   - id: ma.owl
     ontology_purl: http://purl.obolibrary.org/obo/ma.owl
+  - id: ma.obo
+    ontology_purl: http://purl.obolibrary.org/obo/ma.obo
   taxon:
     id: NCBITaxon:10088
     label: Mus
@@ -3578,6 +3879,32 @@ ontologies:
   title: Ontology for MIRNA Target
   tracker: https://github.com/OmniSearch/omit/issues
 - activity_status: active
+  contact:
+    email: cjmungall@lbl.gov
+    github: cmungall
+    label: Chris Mungall
+  description: An ontology specifies terms that are used to annotate ontology terms
+    for all OBO ontologies. The ontology was developed as part of Information Artifact
+    Ontology (IAO).
+  domain: ontology term annotation
+  homepage: https://github.com/information-artifact-ontology/ontology-metadata
+  id: omo
+  layout: ontology_detail
+  license:
+    label: CC0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/omo.owl
+  products:
+  - id: omo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/omo.owl
+  title: OBO Metadata Ontology
+  tracker: https://github.com/information-artifact-ontology/ontology-metadata/issues
+  usages:
+  - description: OMO is imported by multiple OBO ontologies for ontology term annotations.
+    type: owl_import
+    user: http://obofoundry.org
+- activity_status: active
   build:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/microbialphenotypes/OMP-ontology-files/master/omp.obo
@@ -3906,8 +4233,8 @@ ontologies:
   dependencies:
   - id: ro
   - id: uberon
-  description: planaria-ontology is an ontology for planarian anatomy and developmental
-    stages of S.med
+  description: PLANA, the planarian anatomy ontology, encompasses the anatomy and
+    life cycle stages for both __Schmidtea mediterranea__ biotypes.
   domain: anatomy
   homepage: https://github.com/obophenotype/planaria-ontology
   id: plana
@@ -4054,6 +4381,36 @@ ontologies:
   title: Performance Summary Display Ontology
   tracker: https://github.com/Display-Lab/psdo/issues
 - activity_status: active
+  build:
+    checkout: git clone https://github.com/Planteome/plant-stress-ontology.git
+    path: .
+    system: git
+  contact:
+    email: cooperl@science.oregonstate.edu
+    label: Laurel Cooper
+  dependencies:
+  - id: ro
+  description: The Plant Stress Ontology describes...
+  domain: plant disease and abiotic stress
+  homepage: https://github.com/Planteome/plant-stress-ontology
+  id: pso
+  jobs:
+  - id: https://travis-ci.org/Planteome/plant-stress-ontology
+    type: travis-ci
+  layout: ontology_detail
+  license:
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/pso.owl
+  products:
+  - id: pso.owl
+    ontology_purl: http://purl.obolibrary.org/obo/pso.owl
+  - id: pso.obo
+    ontology_purl: http://purl.obolibrary.org/obo/pso.obo
+  title: Plant Stress Ontology
+  tracker: https://github.com/Planteome/plant-stress-ontology/issues
+- activity_status: active
   browsers:
   - label: RGD
     title: RGD Ontology Browser
@@ -4087,36 +4444,6 @@ ontologies:
     title: The pathway ontology - updates and applications.
   title: Pathway ontology
   tracker: https://github.com/rat-genome-database/PW-Pathway-Ontology/issues
-- activity_status: active
-  browsers:
-  - label: RNAO
-    title: RNA Ontology jOWL Browser
-    url: http://bgsu-rna.github.io/rnao/
-  build:
-    checkout: git clone https://github.com/BGSU-RNA/rnao.git
-    method: vcs
-    system: git
-  contact:
-    email: BatchelorC@rsc.org
-    label: Colin Batchelor
-  description: Controlled vocabulary pertaining to RNA function and based on RNA sequences,
-    secondary and three-dimensional structures.
-  domain: molecular structure
-  homepage: https://github.com/bgsu-rna/rnao
-  id: rnao
-  layout: ontology_detail
-  license:
-    label: CC-0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
-  ontology_purl: http://purl.obolibrary.org/obo/rnao.owl
-  products:
-  - id: rnao.owl
-    ontology_purl: http://purl.obolibrary.org/obo/rnao.owl
-  - id: rnao.obo
-    ontology_purl: http://purl.obolibrary.org/obo/rnao.obo
-  title: RNA ontology
-  tracker: https://github.com/BGSU-RNA/rnao/issues
 - aberowl_id: relo
   activity_status: active
   build:
@@ -4372,6 +4699,7 @@ ontologies:
     their types, tasks, versions, provenance and associated data. It contains detailed
     information on licensing and formats as well as software applications themselves,
     mainly (but not limited) to the bioinformatics community.
+  domain: software
   homepage: https://github.com/allysonlister/swo
   id: swo
   layout: ontology_detail
@@ -4899,7 +5227,7 @@ ontologies:
   description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis
     elegans</i>.
   domain: anatomy
-  homepage: http://www.wormbase.org/
+  homepage: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
   id: wbbt
   layout: ontology_detail
   license:
@@ -4913,23 +5241,34 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/wbbt.owl
   - id: wbbt.obo
     ontology_purl: http://purl.obolibrary.org/obo/wbbt.obo
+  publications:
+  - id: https://pubmed.ncbi.nlm.nih.gov/18629098/
+    title: Building a cell and anatomy ontology of Caenorhabditis elegans
   taxon:
     id: NCBITaxon:6237
     label: Caenorhabditis
   title: C. elegans Gross Anatomy Ontology
   tracker: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology/issues
+  usages:
+  - description: WormBase uses WBbt to curate anatomical expression patterns and anatomy
+      function annotations, and to allow search and indexing on the WormBase site
+    examples:
+    - url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression
+    reference: https://academic.oup.com/nar/article/48/D1/D762/5603222
+    type: annotation
+    user: https://www.wormbase.org/
 - activity_status: active
   build:
     checkout: git clone https://github.com/obophenotype/c-elegans-development-ontology.git
     path: .
     system: git
   contact:
-    email: draciti@caltech.edu
-    label: Daniela Raciti
+    email: cgrove@caltech.edu
+    label: Chris Grove
   description: A structured controlled vocabulary of the development of <i>Caenorhabditis
     elegans</i>.
-  domain: anatomy
-  homepage: http://www.wormbase.org/
+  domain: developemental life stage
+  homepage: https://github.com/obophenotype/c-elegans-development-ontology
   id: wbls
   layout: ontology_detail
   license:
@@ -4943,10 +5282,22 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/wbls.owl
   - id: wbls.obo
     ontology_purl: http://purl.obolibrary.org/obo/wbls.obo
+  publications:
+  - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
+    title: 'WormBase: a modern Model Organism Information Resource'
   taxon:
     id: NCBITaxon:6237
     label: Caenorhabditis
   title: C. elegans development ontology
+  tracker: https://github.com/obophenotype/c-elegans-development-ontology/issues
+  usages:
+  - description: WormBase uses WBls to curate temporal expression patterns, and to
+      allow search and indexing on the WormBase site
+    examples:
+    - url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression
+    reference: https://academic.oup.com/nar/article/48/D1/D762/5603222
+    type: annotation
+    user: https://www.wormbase.org/
 - activity_status: active
   build:
     checkout: git clone https://github.com/obophenotype/c-elegans-phenotype-ontology.git
@@ -4987,8 +5338,8 @@ ontologies:
   - description: WormBase uses WBPhenotype to curate worm phenotypes, and to allow
       search and indexing on the WormBase site
     examples:
-    - url: https://www.wormbase.org/species/c_elegans/gene/WBGene00013855#0c-9g-3
-    reference: https://academic.oup.com/nar/article/46/D1/D869/4563314
+    - url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=phenotype
+    reference: https://academic.oup.com/nar/article/48/D1/D762/5603222
     type: annotation
     user: https://www.wormbase.org/
   - description: Monarch integrates phenotype annotations from sources such as WormBase,
@@ -5067,6 +5418,7 @@ ontologies:
     system: git
   contact:
     email: esegerd3@gmail.com
+    github: seger
     label: Erik Segerdell
   dependencies:
   - id: iao
@@ -5077,8 +5429,8 @@ ontologies:
   - id: chebi
   - id: cl
   - id: xao
-  description: An ontology of anatomical, cellular, and gene function phenotypes in
-    Xenopus, the African clawed frogs.
+  description: XPO represents anatomical, cellular, and gene function phenotypes occurring
+    throughout the development of the African frogs Xenopus laevis and tropicalis.
   domain: phenotype
   homepage: https://github.com/obophenotype/xenopus-phenotype-ontology
   id: xpo
@@ -5096,6 +5448,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/xpo.owl
   - id: xpo.obo
     ontology_purl: http://purl.obolibrary.org/obo/xpo.obo
+  taxon:
+    id: NCBITaxon:8353
+    label: Xenopus
   title: Xenopus Phenotype Ontology
   tracker: https://github.com/obophenotype/xenopus-phenotype-ontology/issues
 - activity_status: active
@@ -5203,6 +5558,39 @@ ontologies:
     type: annotation
     user: https://monarchinitiative.org/
 - activity_status: active
+  contact:
+    email: francesco.vitali@ibba.cnr.it
+    github: FrancescoVit
+    label: Francesco Vitali
+  dependencies:
+  - id: uberon
+  - id: ro
+  - id: chebi
+  - id: ncbitaxon
+  - id: bfo
+  - id: envo
+  - id: obi
+  - id: foodon
+  description: An ontology for description of concepts in the nutritional studies
+    domain.
+  domain: nutrition, nutritional studies, nutrition professionals
+  homepage: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
+  id: ons
+  layout: ontology_detail
+  license:
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/ons.owl
+  page: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
+  products:
+  - format: owl-rdf/xml
+    id: ons_release_v1.0.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ons_release_v1.0.owl
+    title: ONS latest release
+  title: ONS
+  tracker: https://github.com/enpadasi/Ontology-for-Nutritional-Studies/issues
+- activity_status: active
   browsers: null
   contact:
     email: bgee@sib.swiss
@@ -5254,8 +5642,8 @@ ontologies:
   alternativePrefix: HPO
   browsers:
   - label: HPO
-    title: Charite HPO Browser
-    url: http://www.human-phenotype-ontology.org/hpoweb/showterm?id=HP:0000118
+    title: JAX HPO Browser
+    url: https://hpo.jax.org/app/
   - label: Monarch
     title: Monarch Phenotype Page
     url: http://monarchinitiative.org/phenotype/HP:0000118
@@ -5280,7 +5668,7 @@ ontologies:
   license:
     label: hpo
     url: https://hpo.jax.org/app/license
-  mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
+  mailing_list: https://groups.io/g/human-phenotype-ontology
   ontology_purl: http://purl.obolibrary.org/obo/hp.owl
   products:
   - id: hp.owl
@@ -5587,6 +5975,36 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/idomal.obo
   title: Malaria Ontology
 - activity_status: inactive
+  browsers:
+  - label: RNAO
+    title: RNA Ontology jOWL Browser
+    url: http://bgsu-rna.github.io/rnao/
+  build:
+    checkout: git clone https://github.com/BGSU-RNA/rnao.git
+    method: vcs
+    system: git
+  contact:
+    email: BatchelorC@rsc.org
+    label: Colin Batchelor
+  description: Controlled vocabulary pertaining to RNA function and based on RNA sequences,
+    secondary and three-dimensional structures.
+  domain: molecular structure
+  homepage: https://github.com/bgsu-rna/rnao
+  id: rnao
+  layout: ontology_detail
+  license:
+    label: CC-0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/rnao.owl
+  products:
+  - id: rnao.owl
+    ontology_purl: http://purl.obolibrary.org/obo/rnao.owl
+  - id: rnao.obo
+    ontology_purl: http://purl.obolibrary.org/obo/rnao.obo
+  title: RNA ontology
+  tracker: https://github.com/BGSU-RNA/rnao/issues
+- activity_status: inactive
   contact:
     email: dsonensh@odu.edu
     label: Daniel Sonenshine
@@ -5739,6 +6157,29 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/bcgo.owl
   title: Beta Cell Genomics Ontology
   tracker: https://github.com/obi-bcgo/bcgo/issues
+- activity_status: inactive
+  contact:
+    email: maria.herrero@kcl.ac.uk
+    label: Maria Herrero
+  description: A formal represention for drug-drug interactions knowledge.
+  domain: health
+  homepage: http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto
+  id: dinto
+  is_obsolete: true
+  layout: ontology_detail
+  license:
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/3.0/
+  products:
+  - id: dinto.owl
+    ontology_purl: http://purl.obolibrary.org/obo/dinto.owl
+  publications:
+  - id: http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119
+    title: "DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug\u2013Drug Interactions\
+      \ and Their Mechanisms."
+  title: The Drug-Drug Interactions Ontology
+  tracker: https://github.com/labda/DINTO/issues
 - activity_status: inactive
   build:
     method: obo2owl
@@ -6027,8 +6468,8 @@ ontologies:
   tracker: http://purl.obolibrary.org/obo/flu/tracker
 - activity_status: inactive
   contact:
-    email: Plant Ontology Administrators
-    label: po-discuss@plantontology.org
+    email: po-discuss@plantontology.org
+    label: Plant Ontology Administrators
   homepage: http://www.gramene.org/plant_ontology/
   id: gro
   is_obsolete: true
@@ -6036,8 +6477,8 @@ ontologies:
   title: Cereal Plant Gross Anatomy
 - activity_status: inactive
   contact:
-    email: Peter Midford
-    label: peteremidford@yahoo.com
+    email: peteremidford@yahoo.com
+    label: Peter Midford
   homepage: http://www.mesquiteproject.org/ontology/Habronattus/index.html
   id: habronattus
   is_obsolete: true
@@ -6059,8 +6500,8 @@ ontologies:
     method: obo2owl
     source_url: https://web.archive.org/web/20131127090937/http://www.inoh.org/ontologies/MoleculeRoleOntology.obo
   contact:
-    email: INOH curators
-    label: curator@inoh.org
+    email: curator@inoh.org
+    label: INOH curators
   homepage: http://www.inoh.org
   id: imr
   is_obsolete: true
@@ -6068,8 +6509,8 @@ ontologies:
   title: Molecule role (INOH Protein name/family name ontology)
 - activity_status: inactive
   contact:
-    email: InterPro Help
-    label: interhelp@ebi.ac.uk
+    email: interhelp@ebi.ac.uk
+    label: InterPro Help
   homepage: http://www.ebi.ac.uk/interpro/index.html
   id: ipr
   is_obsolete: true
@@ -6091,8 +6532,8 @@ ontologies:
   title: Lipid Ontology
 - activity_status: inactive
   contact:
-    email: Peter Midford
-    label: peteremidford@yahoo.com
+    email: peteremidford@yahoo.com
+    label: Peter Midford
   homepage: http://www.mesquiteproject.org/ontology/Loggerhead/index.html
   id: loggerhead
   is_obsolete: true
@@ -6100,8 +6541,8 @@ ontologies:
   title: Loggerhead nesting
 - activity_status: inactive
   contact:
-    email: Julie Thompson
-    label: julie@igbmc.u-strasbg.fr
+    email: julie@igbmc.u-strasbg.fr
+    label: Julie Thompson
   homepage: http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html
   id: mao
   is_obsolete: true
@@ -6109,8 +6550,8 @@ ontologies:
   title: Multiple alignment
 - activity_status: inactive
   contact:
-    email: Jonathan Bard
-    label: j.bard@ed.ac.uk
+    email: j.bard@ed.ac.uk
+    label: Jonathan Bard
   homepage: null
   id: mat
   is_obsolete: true
@@ -6153,8 +6594,8 @@ ontologies:
   title: Microarray experimental conditions
 - activity_status: inactive
   contact:
-    email: Fahim Imam
-    label: smtifahim@gmail.com
+    email: smtifahim@gmail.com
+    label: Fahim Imam
   description: Neuronal cell types
   homepage: http://neuinfo.org/
   id: nif_cell
@@ -6164,8 +6605,8 @@ ontologies:
   title: NIF Cell
 - activity_status: inactive
   contact:
-    email: Fahim Imam
-    label: smtifahim@gmail.com
+    email: smtifahim@gmail.com
+    label: Fahim Imam
   homepage: http://neuinfo.org/
   id: nif_dysfunction
   is_obsolete: true
@@ -6174,8 +6615,8 @@ ontologies:
   title: NIF Dysfunction
 - activity_status: inactive
   contact:
-    email: Fahim Imam
-    label: smtifahim@gmail.com
+    email: smtifahim@gmail.com
+    label: Fahim Imam
   homepage: http://neuinfo.org/
   id: nif_grossanatomy
   is_obsolete: true
@@ -6203,8 +6644,8 @@ ontologies:
   title: NMR-instrument specific component of metabolomics investigations
 - activity_status: inactive
   contact:
-    email: Chris Mungall
-    label: cjmungall@lbl.gov
+    email: cjmungall@lbl.gov
+    label: Chris Mungall
   homepage: http://www.obofoundry.org/ro
   id: obo_rel
   is_obsolete: true
@@ -6213,8 +6654,8 @@ ontologies:
   title: OBO relationship types (legacy)
 - activity_status: inactive
   contact:
-    email: Pankaj Jaiswal
-    label: jaiswalp@science.oregonstate.edu
+    email: jaiswalp@science.oregonstate.edu
+    label: Pankaj Jaiswal
   homepage: http://www.plantontology.org
   id: pao
   is_obsolete: true
@@ -6225,8 +6666,8 @@ ontologies:
   title: Plant Anatomy Ontology
 - activity_status: inactive
   contact:
-    email: Thorsten Heinrich
-    label: henrich@embl.de
+    email: henrich@embl.de
+    label: Thorsten Heinrich
   homepage: http://4dx.embl.de/platy
   id: pd_st
   is_obsolete: true
@@ -6238,8 +6679,8 @@ ontologies:
   title: Platynereis stage ontology
 - activity_status: inactive
   contact:
-    email: Plant Ontology Administrators
-    label: po-discuss@plantontology.org
+    email: po-discuss@plantontology.org
+    label: Plant Ontology Administrators
   homepage: http://www.plantontology.org
   id: pgdso
   is_obsolete: true
@@ -6250,8 +6691,8 @@ ontologies:
   title: Plant Growth and Development Stage
 - activity_status: inactive
   contact:
-    email: Matt Berriman
-    label: mb4@sanger.ac.uk
+    email: mb4@sanger.ac.uk
+    label: Matt Berriman
   homepage: http://www.sanger.ac.uk/Users/mb4/PLO/
   id: plo
   is_obsolete: true
@@ -6259,8 +6700,8 @@ ontologies:
   title: Plasmodium life cycle
 - activity_status: inactive
   contact:
-    email: Satya S. Sahoo
-    label: satya30@uga.edu
+    email: satya30@uga.edu
+    label: Satya S. Sahoo
   homepage: http://lsdis.cs.uga.edu/projects/glycomics/propreo/
   id: propreo
   is_obsolete: true
@@ -6279,8 +6720,8 @@ ontologies:
   title: Protein covalent bond
 - activity_status: inactive
   contact:
-    email: Stephen Larson
-    label: slarson@ncmir.ucsd.edu
+    email: slarson@ncmir.ucsd.edu
+    label: Stephen Larson
   homepage: http://ccdb.ucsd.edu/CCDBWebSite/sao.html
   id: sao
   is_obsolete: true
@@ -6312,8 +6753,8 @@ ontologies:
   title: Sample processing and separation techniques
 - activity_status: inactive
   contact:
-    email: Adrien Coulet
-    label: Adrien.Coulet@loria.fr
+    email: Adrien.Coulet@loria.fr
+    label: Adrien Coulet
   homepage: http://www.loria.fr/~coulet/sopharm2.0_description.php
   id: sopharm
   is_obsolete: true
@@ -6324,8 +6765,8 @@ ontologies:
   title: Suggested Ontology for Pharmacogenomics
 - activity_status: inactive
   contact:
-    email: Pierre Sprumont
-    label: pierre.sprumont@unifr.ch
+    email: pierre.sprumont@unifr.ch
+    label: Pierre Sprumont
   homepage: null
   id: tahe
   is_obsolete: true
@@ -6336,8 +6777,8 @@ ontologies:
   title: Terminology of Anatomy of Human Embryology
 - activity_status: inactive
   contact:
-    email: Pierre Sprumont
-    label: pierre.sprumont@unifr.ch
+    email: pierre.sprumont@unifr.ch
+    label: Pierre Sprumont
   homepage: null
   id: tahh
   is_obsolete: true
@@ -6380,8 +6821,8 @@ ontologies:
   tracker: https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3AVSAO
 - activity_status: inactive
   contact:
-    email: Mike Cherry
-    label: cherry@genome.stanford.edu
+    email: cherry@genome.stanford.edu
+    label: Mike Cherry
   homepage: http://www.yeastgenome.org/
   id: ypo
   is_obsolete: true
@@ -6393,8 +6834,8 @@ ontologies:
   title: Yeast phenotypes
 - activity_status: inactive
   contact:
-    email: Leszek Vincent
-    label: Leszek@missouri.edu
+    email: Leszek@missouri.edu
+    label: Leszek Vincent
   homepage: http://www.maizemap.org/
   id: zea
   is_obsolete: true
@@ -6404,45 +6845,45 @@ ontologies:
     label: Zea
   title: Maize gross anatomy
 principles:
-- id: fp-004-versioning
+- id: fp-000-summary
   layout: principle
-  title: Versioning (principle 4)
+  title: Overview
+- id: fp-001-open
+  layout: principle
+  title: Open (principle 1)
 - id: fp-002-format
   layout: principle
   title: Common Format (principle 2)
 - id: fp-003-uris
   layout: principle
   title: URI/Identifier Space (principle 3)
-- id: fp-000-summary
+- id: fp-004-versioning
   layout: principle
-  title: Overview
-- id: fp-012-naming-conventions
-  layout: principle
-  title: Naming Conventions (principle 12)
-- id: fp-006-textual-definitions
-  layout: principle
-  title: Textual Definitions (principle 6)
-- id: fp-009-users
-  layout: principle
-  title: Documented Plurality of Users (principle 9)
-- id: fp-001-open
-  layout: principle
-  title: Open (principle 1)
-- id: fp-010-collaboration
-  layout: principle
-  title: Commitment To Collaboration (principle 10)
-- id: fp-016-maintenance
-  layout: principle
-  title: Maintenance (principle 16)
+  title: Versioning (principle 4)
 - id: fp-005-delineated-content
   layout: principle
   title: Scope (principle 5)
+- id: fp-006-textual-definitions
+  layout: principle
+  title: Textual Definitions (principle 6)
 - id: fp-007-relations
   layout: principle
   title: Relations (principle 7)
-- id: fp-011-locus-of-authority
-  layout: principle
-  title: Locus of Authority (principle 11)
 - id: fp-008-documented
   layout: principle
   title: Documentation (principle 8)
+- id: fp-009-users
+  layout: principle
+  title: Documented Plurality of Users (principle 9)
+- id: fp-010-collaboration
+  layout: principle
+  title: Commitment To Collaboration (principle 10)
+- id: fp-011-locus-of-authority
+  layout: principle
+  title: Locus of Authority (principle 11)
+- id: fp-012-naming-conventions
+  layout: principle
+  title: Naming Conventions (principle 12)
+- id: fp-016-maintenance
+  layout: principle
+  title: Maintenance (principle 16)

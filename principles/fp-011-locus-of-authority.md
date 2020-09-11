@@ -29,7 +29,7 @@ for the project, they should identify a replacement and update the metadata acco
 these responsibilities as necessary.
 
 ### Examples: 
-For ChEBI, the primary contact person is Gareth Owen (gowen@ebi.ac.uk). 
+For ChEBI, the primary contact person is Adnan Malik (amalik@ebi.ac.uk). 
 
 ### Counterexamples: 
 Mailing list; for ChEBI, chebi-help@ebi.ac.uk

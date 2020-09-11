@@ -25,6 +25,8 @@ browsers:
     title: PRO Home
     url: http://proconsortium.org
 title: PRotein Ontology (PRO)
+review:
+  date: 2010
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
@@ -40,6 +42,17 @@ publications:
     title: "Publications & Dissemination"
 development:
   id_policy: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+PURLs
+usages:
+ - user: https://github.com/UCDenver-ccp/CRAFT
+   description: Colorado Richly Annotated Full-Text (CRAFT) Corpus; PRO is used for entity tagging and annotation
+   examples:
+    - url: https://github.com/UCDenver-ccp/CRAFT/releases/tag/v4.0.1
+      description: Tagged entities (requires download)
+ - user: http://www.obofoundry.org/ontology/cl.html
+   description: Cell Ontology is a structured controlled vocabulary for cell types in animals; PRO is used for cell type definitions
+   examples:
+    - url: http://purl.obolibrary.org/obo/CL_0001201
+      description: A B cell that is CD19-positive (uses the PRO term for non-species-specific CD19 molecule, PR:000001002)
 activity_status: active
 ---
 

@@ -3,8 +3,8 @@ layout: ontology_detail
 id: obo_rel
 title: OBO relationship types (legacy)
 contact:
-  email: Chris Mungall
-  label: cjmungall@lbl.gov
+  email: cjmungall@lbl.gov
+  label: Chris Mungall
 homepage: http://www.obofoundry.org/ro
 is_obsolete: true
 replaced_by: ro

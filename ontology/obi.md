@@ -3,6 +3,11 @@ layout: ontology_detail
 id: obi
 in_foundry_order: 1
 title: Ontology for Biomedical Investigations
+review:
+  date: 2013
+  document:
+    label: PDF
+    link: https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc
 description: An integrated ontology for the description of life-science and clinical investigations
 domain: experiments
 homepage: http://obi-ontology.org
@@ -55,4 +60,4 @@ The Ontology for Biomedical Investigations (OBI) project is developing an integr
 - [OBI mailing list](http://groups.google.com/group/obi-users)
 - To cite a journal article for OBI please use [Bandrowski et al, PLOS ONE, 2016](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0154556)
 - To refer to the most current information on the OBI project, please use the following: The OBI Consortium [http://purl.obolibrary.org/obo/obi](http://purl.obolibrary.org/obo/obi)
-- To use OBI, remember the licensing terms: OBI is released under [CC-by 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/)
+

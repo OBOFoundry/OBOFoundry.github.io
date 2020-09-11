@@ -15,7 +15,10 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 
 - BRENDA tissue / enzyme source (bto): [The BRENDA Tissue Ontology (BTO): the first all-integrating ontology of all organisms for enzyme sources](https://www.ncbi.nlm.nih.gov/pubmed/21030441)
 - Biological Spatial Ontology (bspo): [Nose to tail, roots to shoots: spatial descriptors for phenotypic diversity in the Biological Spatial Ontology.](http://www.ncbi.nlm.nih.gov/pubmed/25140222)
+- C. elegans Gross Anatomy Ontology (wbbt): [Building a cell and anatomy ontology of Caenorhabditis elegans](https://pubmed.ncbi.nlm.nih.gov/18629098/)
+- C. elegans development ontology (wbls): [WormBase: a modern Model Organism Information Resource](https://academic.oup.com/nar/article/48/D1/D762/5603222)
 - C. elegans phenotype (wbphenotype): [Worm Phenotype Ontology: integrating phenotype data within and beyond the C. elegans community.](http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995)
+- Cell Ontology (cl): [The Cell Ontology 2016: enhanced content, modularization, and ontology interoperability.](https://www.ncbi.nlm.nih.gov/pubmed/27377652)
 - Chemical Entities of Biological Interest (chebi): [ChEBI in 2016: Improved services and an expanding collection of metabolites.](http://europepmc.org/article/MED/26467479)
 - Clinical measurement ontology (cmo): [Three ontologies to define phenotype measurement data.](http://www.ncbi.nlm.nih.gov/pubmed/22654893)
 - Drosophila Phenotype Ontology (dpo): [The Drosophila phenotype ontology.](https://doi.org/10.1186/2041-1480-4-30)

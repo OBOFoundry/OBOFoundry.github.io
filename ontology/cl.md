@@ -20,14 +20,17 @@ contact:
   email: addiehl@buffalo.edu
   github: addiehl
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
 taxon:
   id: NCBITaxon:33208
   label: Metazoa
 domain: cells
 tracker: https://github.com/obophenotype/cell-ontology/issues
-mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
+mailing_list: https://groups.google.com/g/cl_edit
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/27377652
+    title: "The Cell Ontology 2016: enhanced content, modularization, and ontology interoperability."
 dependencies:
  - id: uberon
  - id: go
