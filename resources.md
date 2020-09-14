@@ -1,10 +1,10 @@
 ---
 layout: doc
 id: resources
-title: resources
+title: Resources
 ---
 
-# Ontology Tutorials and Resources
+# Ontology Tools and Resources
 
 ## Ontology Browsers
 - [OBO Foundry](http://www.obofoundry.org/)
@@ -22,7 +22,7 @@ title: resources
 - [Ontology 101 Tutorial](http://icbo2018.cgrb.oregonstate.edu/node/19): from International Conference on Biological Ontology (ICBO) 2018
 - [Ontology 101 Open Educational Resource](https://github.com/OHSUBD2K/BDK14-Ontologies-101): Funded by NIH BD2K Initiative.
 
-## Ontology tools
+## Ontology Tools
 
 - [Protege](https://protege.stanford.edu/): An ontology development software application
 - [Ontology Development Kit](https://github.com/INCATools/ontology-development-kit): A toolkit to initialize an OBO library repository and associated files.
