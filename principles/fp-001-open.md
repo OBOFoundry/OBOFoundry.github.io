@@ -18,7 +18,7 @@ OBO Foundry ontologies are resources for the entire biological and biomedical co
 
 ### For ontology providers
 
-OBO Foundry Ontologies MUST EITHER be released under a [Creative Commons](https://creativecommons.org/) [CC-BY license version 3.0](https://creativecommons.org/licenses/by/3.0/) or later, OR released into the public domain under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) (which is not a license). Regardless of which is chosen, it should be clearly stated in the ontology file.
+OBO Foundry Ontologies MUST EITHER be released under a [Creative Commons](https://creativecommons.org/) [CC-BY license version 3.0](https://creativecommons.org/licenses/by/3.0/) or later, OR released into the public domain under [CC0](https://creativecommons.org/publicdomain/zero/1.0/). It should be clearly stated in the ontology file.
 
 Note: CC-BY licenses allow others to distribute, remix, tweak, and build upon the work, even commercially, as long as they credit the creators for the original creation. CC0 specifies that the creators of an ontology waive, to the extent that they legally can be, all rights and place the ontology in the public domain. It does not prevent them from requesting that the ontology be properly credited and cited, but prevents any legal recourse if it is not credited. Many pros and cons of CC-BY versus CC0 are laid out in [this discussion](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/285). It is important to note that one can move from CC-BY to CC0 but not the other way around.
 
@@ -164,7 +164,3 @@ Discussion of licensing on OBO Foundry Operations Committee [Issue 103](https://
 ## Criteria for review
 
 To pass review, the ontology must have a license that is equivalent to or less restrictive than CC-BY, specified as described in the text and examples above.
-
-## Original Formulation
-
-See the [wiki history](http://wiki.obofoundry.org/wiki/index.php?title=FP_001_open&action=history) for older formulations.
