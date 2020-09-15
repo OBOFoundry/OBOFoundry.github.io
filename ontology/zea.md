@@ -3,8 +3,8 @@ layout: ontology_detail
 id: zea
 title: Maize gross anatomy
 contact:
-  email: Leszek Vincent
-  label: Leszek@missouri.edu
+  email: Leszek@missouri.edu
+  label: Leszek Vincent
 taxon:
   id: NCBITaxon:4575
   label: Zea

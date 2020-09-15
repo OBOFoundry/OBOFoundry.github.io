@@ -7,7 +7,7 @@ contact:
   github: edwardsnj
 description: GlyTouCan provides stable accessions for glycans described at varyious degrees of characterization, including compositions (no linkage) and topologies (no carbon bond positions or anomeric configurations). GNOme organizes these stable accessions for interative browsing, for text-based searching, and for automated reasoning with well-defined characterization levels.
 domain: glycan structure
-homepage: https://github.com/glygen-glycan-data/GNOme#readme
+homepage: https://gnome.glyomics.org/
 products:
   - id: gno.owl
     description: Glycan Naming and Subsumption Ontology, OWL format (primary)
@@ -28,9 +28,9 @@ activity_status: active
 browsers:
   - label: Structure Browser
     title: GNOme Glycan Structure Browser
-    url: https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
+    url: https://gnome.glyomics.org/GNOme.browser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
   - label: Composition Browser
     title: GNOme Glycan Composition Browser
-    url: https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.compositionselector.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
+    url: https://gnome.glyomics.org/GNOme.compositionselector.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
   
 ---

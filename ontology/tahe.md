@@ -3,8 +3,8 @@ layout: ontology_detail
 id: tahe
 title: Terminology of Anatomy of Human Embryology
 contact:
-  email: Pierre Sprumont
-  label: pierre.sprumont@unifr.ch
+  email: pierre.sprumont@unifr.ch
+  label: Pierre Sprumont
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens

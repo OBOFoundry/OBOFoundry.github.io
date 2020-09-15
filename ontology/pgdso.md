@@ -3,8 +3,8 @@ layout: ontology_detail
 id: pgdso
 title: Plant Growth and Development Stage
 contact:
-  email: Plant Ontology Administrators 
-  label: po-discuss@plantontology.org
+  email: po-discuss@plantontology.org
+  label: Plant Ontology Administrators 
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
