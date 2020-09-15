@@ -4,11 +4,6 @@ id: fp-004-versioning
 title: Versioning (principle 4)
 ---
 
-NOTE
--------
-
-The content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.
-
 Summary
 -------
 
@@ -63,7 +58,5 @@ For an OWL format ontology, owl:versionInfo identifies the version and versionIR
     <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/obi/2014-12-03/obi.owl"/>
 
 
-Counter-Examples
-----------------
 
 <Category:Principles> <Category:Accepted>
