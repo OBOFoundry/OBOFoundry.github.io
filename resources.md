@@ -21,6 +21,7 @@ title: Resources
 - [Ontology Development 101](http://www.ksl.stanford.edu/people/dlm/papers/ontology101/ontology101-noy-mcguinness.html): A Guide to Creating Your First Ontology by Natalya F. Noy and Deborah L. McGuinness.
 - [Ontology 101 Tutorial](http://icbo2018.cgrb.oregonstate.edu/node/19): from International Conference on Biological Ontology (ICBO) 2018
 - [Ontology 101 Open Educational Resource](https://github.com/OHSUBD2K/BDK14-Ontologies-101): Funded by NIH BD2K Initiative.
+- [Cell Ontology Tutorial](https://github.com/obophenotype/cell-ontology-training/blob/master/README.md)
 
 ## Ontology Tools
 
