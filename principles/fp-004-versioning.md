@@ -26,7 +26,7 @@ Recommendation
 
 Each official release MUST have a unique resolvable [version IRI](https://www.w3.org/TR/owl2-syntax/#Ontology_IRI_and_Version_IRI). Version IRI is a part of the OWL2 specification. While this field is optional for OWL ontologies, OBO imposes stricter standards and requires this for releases.
 
-The versionIRI is constructed using (1) an ontology _base prefix_ (2) a version _identifier_ and (3) a path to a particular version _product_ or artefact.
+The versionIRI is constructed using (1) an ontology _base prefix_ (2) a version _identifier_ and (3) a path to a particular version _product_ or artifact.
 
 Version identifiers for the ontology artifacts themselves SHOULD be of the form “YYYY-MM-DD” (that is, a date conforming to ISO-8601), OR use a numbering system (such as semantic versioning, i.e, of the form "NN.n"), but in any case each MUST associate with a <i>distinct</i> official release. The date versioning system is preferred, as it meshes with the requirement that version IRIs be specified using dated PURLs (see below).
 
