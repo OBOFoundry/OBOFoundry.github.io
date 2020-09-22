@@ -23,7 +23,7 @@ The checklist is expected to evolve over time; anyone can contribute to the disc
   - The ontology MUST be conformant with this principle
 - Principle 2: [Common Format](http://obofoundry.org/principles/fp-002-format.html)
   - The ontology MUST be conformant with this principle
-  - The ontology MUST be parseable in Protégé and be logically consistent
+  - The ontology MUST be parseable in Protégé and be logically consistent with a standard OWL reasoner such as ELK or HermiT
 - Principle 3: [URI/Identifier Space](http://obofoundry.org/principles/fp-003-uris.html) 
   - The ontology MUST be conformant with this principle, with the caveat the prefix is not yet registered
   - The requested namespace MUST be available (not already used by another ontology)
