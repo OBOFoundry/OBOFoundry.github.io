@@ -73,7 +73,7 @@ products:
    page: https://github.com/geneontology/obographs/
  - id: go/go-basic.obo
    title: "GO-Basic, Filtered, for use with legacy tools"
-   description: "The main ontology plus axioms connecting to select external ontologies"
+   description: "Basic version of the GO, filtered such that the graph is guaranteed to be acyclic and annotations can be propagated up the graph. The relations included are is a, part of, regulates, negatively regulates and positively regulates. This version excludes relationships that cross the 3 GO hierarchies."
    page: http://geneontology.org/page/download-ontology
  - id: go/go-basic.json
    title: "GO-Basic, Filtered, for use with legacy tools (JSON)"
