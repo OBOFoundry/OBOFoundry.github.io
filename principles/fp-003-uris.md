@@ -4,11 +4,6 @@ id: fp-003-uris
 title: URI/Identifier Space (principle 3)
 ---
 
-NOTE
------
-
-The content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.
-
 Details
 -------
 
@@ -19,7 +14,7 @@ identifier (e.g. 0000001). The local identifier should not consist of
 labels or mnemonics meaningful to humans. Additional information is available at 
 <http://www.obofoundry.org/id-policy>
 
-The ID-space / prefix must be registered with the OBO library in advance. Please see the relevant [documentation](http://obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests).
+The ID-space / prefix must be registered with the OBO Library in advance. Please see the relevant [documentation](http://obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests).
 
 [This check is automatically validated.](checks/fp_003)
 
@@ -58,8 +53,5 @@ Counter-Examples
 
 -   There are systems that use alphanumeric id's. This should be
     discouraged, especially as these have semantic content.
--   An example is this NCI class: 'Chemotherapy Regimen or Agent
-    Combination':
-    <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#Chemotherapy_Regimen>
 
 <Category:Principles> <Category:Accepted>
