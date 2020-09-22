@@ -4,11 +4,6 @@ id: fp-004-versioning
 title: Versioning (principle 4)
 ---
 
-NOTE
--------
-
-The content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.
-
 Summary
 -------
 
@@ -72,7 +67,5 @@ For an OWL format ontology, owl:versionInfo identifies the version and versionIR
 
 CHEBI is an example of an OBO ontology that uses a non-date based system system for version identifier. An example versionIRI for CHEBI is http://purl.obolibrary.org/obo/chebi/187/chebi.owl. This corresponds to a value of `187` for `data-version` in OBO format.
 
-Counter-Examples
-----------------
 
 <Category:Principles> <Category:Accepted>
