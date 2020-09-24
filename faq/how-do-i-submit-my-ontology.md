@@ -3,7 +3,7 @@ layout: faq
 title: Submit a new ontology
 ---
 
-## How do I submit a new ontology?
+## How do I submit my ontology?
 
 To submit a new ontology for inclusion in the OBO Foundry, you will need to:
 1. Review the expectations and requirements for membership [here](http://obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html).
