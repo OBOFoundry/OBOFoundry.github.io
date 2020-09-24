@@ -1,7 +1,7 @@
 ---
 layout: doc
-id: Policy_for_OBO_namespace_and_associated_PURL_requests
-title: Policy for OBO IDSPACE and associated PURL requests
+id: Submit_a_new_ontology
+title: Submit a New Ontology to the OBO Foundry
 ---
 
 Please raise any questions or concerns on our GitHub tracker: https://github.com/OBOFoundry/OBOFoundry.github.io/issues
@@ -13,7 +13,7 @@ Every OBO project has an IDSPACE: a short alphanumeric code that uniquely identi
 
 In order to ensure that there is no IDSPACE redundancy, i.e. only one project/resource is using the IDSPACE "MOBO", these are allocated by the OBO Foundry Technical Working Group.
 
-The technical working group reserves the right to make decisions based on their experience and judgement. In addition to uniqueness of IDSPACEs, other criteria are for example that there not be overlaps of usage. This includes awareness that there can be the appearance of overlap between accession numbers used in databases and [prefixed URIs](http://www.w3.org/TR/curie/). For example, we would probably not create a IDSPACE "ISBN" and would instead make alternative suggestions.
+The Technical Working Group reserves the right to make decisions based on their experience and judgement. In addition to uniqueness of IDSPACEs, other criteria are for example that there not be overlaps of usage. This includes awareness that there can be the appearance of overlap between accession numbers used in databases and [prefixed URIs](http://www.w3.org/TR/curie/). For example, we would probably not create a IDSPACE "ISBN" and would instead make alternative suggestions.
 
 
 # Expectations for OBO Membership
@@ -40,9 +40,9 @@ The technical working group reserves the right to make decisions based on their 
 
 # Process
 
-## 1. Requesting the IDSPACE
+## 1. Submitting your ontology to request the IDSPACE
 
-1. Submit your request to [our tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues). Select `New Issue` and then select `New Ontology Request`. Fill out the requested information to the best of your ability.
+1. Submit your request on our [GitHub tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues). Select `New Issue` and then select `New Ontology Request`. Fill out the requested information as completely as possible.
 
 2. Send an email to [obo-discuss](mailto:obo-discuss@googlegroups.com) with your request to allow community feedback (you may need to [apply to join group](https://groups.google.com/forum/#!forum/obo-discuss) first.) Be sure to include the link to the issue you created in step 1.
 
@@ -58,7 +58,7 @@ Example of such request for ECTO:
 
 Allow up to 4 weeks to give members of the community time to provide feedback and for the Operations Committee to review the request. If you don't hear back from us after 4 weeks, please follow-up via the tracker issue you created.
 
-Based on this discussion, the Operations Committee will either decline your IDSPACE request, ask for changes, or approve the request.
+Based on this discussion, the Operations Committee will either approve the IDSPACE request, ask for changes, or decline your request.
 
 
 ## 3. Approval
