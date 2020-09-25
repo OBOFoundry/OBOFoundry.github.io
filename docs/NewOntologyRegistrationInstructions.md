@@ -1,16 +1,16 @@
 ---
 layout: doc
 id: NewOntologyRegistrationInstructions
-title: NewOntologyRegistrationInstructions
+title: New Ontology Submission Instructions
 ---
 
-This page provides guidance for filling out the tracker item to register a new ontology with the OBO Foundry (found [here](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new/choose)). With the exception of the "Additional comments" question, all fields are required.
+This page provides guidance for filling out the tracker item to request that your ontology be considered for addition to the OBO Foundry (found [here](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new/choose)). With the exception of the "Additional comments" question, all fields are required.
 
-Note that joining the OBO Foundry includes a commitment to follow Foundry principles. In addition to obtaining basic information about your ontology, the questions are meant to highlight these principles, provide our expectations, and assess commitment for joining the OBO Foundry. The answers also help us identify the right person to review your PURL request.
+Note that joining the OBO Foundry includes a commitment to follow Foundry principles. In addition to obtaining basic information about your ontology, the questions are meant to highlight these principles, provide our expectations, and assess commitment for joining the OBO Foundry. The answers also help us identify the right person to review your request.
 
 PURL Request documentation: http://www.obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html
 
-Please review the OBO Foundry Principles before proceeding with this submission. The OBO Foundry Principles can be found at: http://obofoundry.org/principles/fp-000-summary.html
+Please review the [OBO Foundry Principles](http://obofoundry.org/principles/fp-000-summary.html) before proceeding with this submission
 
 ## Ontology title
 Concise title of your ontology (e.g, "Gene Ontology")
