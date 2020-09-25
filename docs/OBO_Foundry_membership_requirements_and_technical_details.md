@@ -1,20 +1,10 @@
 ---
 layout: doc
-id: Policy_for_OBO_namespace_and_associated_PURL_requests
-title: Policy for OBO IDSPACE and associated PURL requests
+id: OBO_Foundry_membership_requirements_and_technical_details
+title: OBO Foundry membership requirements and technical details
 ---
 
-Please raise any questions or concerns on our GitHub tracker: https://github.com/OBOFoundry/OBOFoundry.github.io/issues
-
-
-# Background
-
-Every OBO project has an IDSPACE: a short alphanumeric code that uniquely identifies it among the other OBO projects, e.g. "MOBO". The IDSPACE is an important part of the project PURLs (Persistent Uniform Resource Locators), which are used to identify individual ontology terms as well as project artifacts such as OWL files.
-
-In order to ensure that there is no IDSPACE redundancy, i.e. only one project/resource is using the IDSPACE "MOBO", these are allocated by the OBO Foundry Technical Working Group.
-
-The technical working group reserves the right to make decisions based on their experience and judgement. In addition to uniqueness of IDSPACEs, other criteria are for example that there not be overlaps of usage. This includes awareness that there can be the appearance of overlap between accession numbers used in databases and [prefixed URIs](http://www.w3.org/TR/curie/). For example, we would probably not create a IDSPACE "ISBN" and would instead make alternative suggestions.
-
+## For a simple overview of how to submit your ontology for consideration, please go [here](http://www.obofoundry.org/faq/how-do-i-submit-my-ontology.html).
 
 # Expectations for OBO Membership
 
@@ -40,11 +30,9 @@ The technical working group reserves the right to make decisions based on their 
 
 # Process
 
-## 1. Requesting the IDSPACE
+## 1. Submitting your ontology to request the IDSPACE
 
-1. Submit your request to [our tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues). Select `New Issue` and then select `New Ontology Request`. Fill out the requested information to the best of your ability.
-
-2. Send an email to [obo-discuss](mailto:obo-discuss@googlegroups.com) with your request to allow community feedback (you may need to [apply to join group](https://groups.google.com/forum/#!forum/obo-discuss) first.) Be sure to include the link to the issue you created in step 1.
+1. Submit your request on our [GitHub tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues). Select `New Issue` and then select `New Ontology Request`. Fill out the requested information as completely as possible.
 
 We expect general discussion to take place on the obo-discuss list, while technical follow-up will take place on the tracker.
 
@@ -58,7 +46,7 @@ Example of such request for ECTO:
 
 Allow up to 4 weeks to give members of the community time to provide feedback and for the Operations Committee to review the request. If you don't hear back from us after 4 weeks, please follow-up via the tracker issue you created.
 
-Based on this discussion, the Operations Committee will either decline your IDSPACE request, ask for changes, or approve the request.
+Based on this discussion, the Operations Committee will either approve the IDSPACE request, ask for changes, or decline your request.
 
 
 ## 3. Approval
@@ -73,7 +61,14 @@ If you used the [Ontology Development Kit](https://github.com/INCATools/ontology
 
 These two files should be created as GitHub Pull Requests (PRs) in the appropriate repository ([OBO Foundry Registry](https://github.com/OBOFoundry/OBOFoundry.github.io) for the OBO registry entry and [OBO PURLs](https://github.com/OBOFoundry/purl.obolibrary.org/) for the PURL configuration). Once these PRs for these two files are merged, your ontology is officially registered with OBO and your PURLs are available.
 
-
 ## 4. Maintenance
 
 As your ontology project grows and changes, be sure to update the OBO registry entry and PURL configuration for your project using GitHub Pull Requests.
+
+# Background
+
+Every OBO project has an IDSPACE: a short alphanumeric code that uniquely identifies it among the other OBO projects, e.g. "MOBO". The IDSPACE is an important part of the project PURLs (Persistent Uniform Resource Locators), which are used to identify individual ontology terms as well as project artifacts such as OWL files.
+
+In order to ensure that there is no IDSPACE redundancy, i.e. only one project/resource is using the IDSPACE "MOBO", these are allocated by the OBO Foundry Technical Working Group.
+
+The Technical Working Group reserves the right to make decisions based on their experience and judgement. In addition to uniqueness of IDSPACEs, other criteria are for example that there not be overlaps of usage. This includes awareness that there can be the appearance of overlap between accession numbers used in databases and [prefixed URIs](http://www.w3.org/TR/curie/). For example, we would probably not create a IDSPACE "ISBN" and would instead make alternative suggestions.
