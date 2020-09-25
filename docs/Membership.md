@@ -29,6 +29,7 @@ Current members of the OBO Foundry Operations Committee are (in alphabetical ord
  * Seth Carbon (T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA
  * [Melanie Courtot](http://purl.org/net/mcourtot) (O, T), EMBL-EBI, Cambridge, UK 
  * Alexander Diehl (T), University at Buffalo, Buffalo, NY, USA
+ * Damion Dooley (O), Hsiao Lab, Simon Fraser University, BC, Canada
  * Eric Douglass (T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA
  * [Bill Duncan](https://orcid.org/0000-0001-9625-1899) (E),  Lawrence Berkeley National Laboratory, Berkeley, CA, USA
  * Nomi Harris (T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA

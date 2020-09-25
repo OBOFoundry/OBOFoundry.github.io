@@ -28,9 +28,9 @@ activity_status: active
 browsers:
   - label: Structure Browser
     title: GNOme Glycan Structure Browser
-    url: https://gnome.glyomics.org/GNOme.browser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
+    url: https://gnome.glyomics.org/StructureBrowser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
   - label: Composition Browser
     title: GNOme Glycan Composition Browser
-    url: https://gnome.glyomics.org/GNOme.compositionselector.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
+    url: https://gnome.glyomics.org/CompositionBrowser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
   
 ---
