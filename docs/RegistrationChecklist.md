@@ -52,7 +52,7 @@ The checklist is expected to evolve over time; anyone can contribute to the disc
 - Principle 11: [Locus of Authority](http://obofoundry.org/principles/fp-011-locus-of-authority.html)
   - The ontology MUST be conformant with this principle
 - Principle 12: [Naming Conventions](http://obofoundry.org/principles/fp-012-naming-conventions.html)
-  - All classes MUST have labels
+  - All non-obsolete classes MUST have labels
 - Principle 16: [Maintenance](http://obofoundry.org/principles/fp-016-maintenance.html)
   - The ontology MUST have an open tracker where anyone from the community can submit
   - The maintainers SHOULD be responsive to issues in this tracker
