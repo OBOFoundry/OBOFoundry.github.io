@@ -16,7 +16,7 @@
 
 [Technical Working Group](/docs/TechnicalWG.html)
 
-  * [PURL Requests](/docs/OBO_Foundry_membership_requirements_and_technical_details.html)
+  * [PURL Requests](/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html)
   * [OBO PURL Configuration](/docs/OBOPURLDomain.html)
   * [Ontology tools and resources](/resources)
 
