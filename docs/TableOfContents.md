@@ -23,7 +23,7 @@ Operations Committee
 
 [Technical group](/docs/TechnicalWG.html)
 
-  * [PURL requests](/docs/OBO_Foundry_membership_requirements_and_technical_details.html)
+  * [PURL requests](/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html)
   * [OBO PURL configuration](/docs/OBOPURLDomain.html)
   * [Ontology tools and resources](/resources)
 
