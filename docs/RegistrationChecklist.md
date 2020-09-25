@@ -4,8 +4,8 @@ The _Minimum Ontology Registration Request Checklist_ (MORRC) is intended to pro
 The goal is to formalize what is currently an ad-hoc process, to filter out ontologies that are clearly out of scope for OBO. It is intentionally weaker than full
 conformance, because (a) we want to allow registration of imperfect ontologies (b) partial conformance is easier to quickly and objectively check.
 
-Note this does not change the 2 week rule. Anyone from the OBO community is free to object to the ontology on the basis of any of these checks. 
-However, if no objections are raised in the 2 week period, then the ontology becomes registered. Once registered an ontology is never unregistered.
+Note this does not change the existing process in any way. Anyone from the OBO community is free to object to the ontology on the basis of any of these checks. 
+However, if no objections are raised during the review period as specified by the guidelines (typically two weeks from the next OBO foundry operations committee meeting), then the ontology becomes registered. Once registered an ontology is never unregistered.
 
 We use ISO language here for SHOULD/MUST. Anyone is free to raise an objection based on a SHOULD but this is informative and non-blocking. 
 If a MUST is clearly violated then this is basis for exclusion/delaying registration.
@@ -23,14 +23,14 @@ The checklist is expected to evolve over time; anyone can contribute to the disc
   - The ontology MUST be conformant with this principle
 - Principle 2: [Common Format](http://obofoundry.org/principles/fp-002-format.html)
   - The ontology MUST be conformant with this principle
-  - The ontology MUST be parseable in Protégé, ROBOT or OWLAPI and be logically consistent with a standard OWL reasoner such as ELK or HermiT
+  - The ontology MUST be parseable in Protégé, ROBOT or OWLAPI and be logically consistent and coherent with a standard OWL reasoner such as ELK or HermiT (i.e. there should be no unintended unsatisfiable classes)
 - Principle 3: [URI/Identifier Space](http://obofoundry.org/principles/fp-003-uris.html) 
   - The ontology MUST be conformant with this principle, with the caveat the prefix is not yet registered
   - The requested namespace MUST be available (not already used by another ontology)
 - Principle 4: [Versioning](http://obofoundry.org/principles/fp-004-versioning.html) 
   - The ontology MUST have a versionIRI
 - Principle 5: [Scope](http://obofoundry.org/principles/fp-005-delineated-content.html) 
-  - IF there is significant conceptual overlap or matching labels THEN there MUST be computable linkages (one of: skos, obo:xref, owl) which are reasonably comprehensive
+  - IF there is significant conceptual overlap to ontologies already registered by the OBO foundry or matching labels THEN there MUST be computable linkages (one of: skos, obo:xref, owl) which are reasonably comprehensive
   - There SHOULD be a written plan (e.g ticket) for coordinating with overlapping ontologies
 - Principle 6: [Textual Definitions](http://obofoundry.org/principles/fp-006-textual-definitions.html) 
   - The ontology SHOULD be conformant with this principle
