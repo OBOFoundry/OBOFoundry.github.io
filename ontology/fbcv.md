@@ -6,7 +6,7 @@ contact:
   email: cp390@cam.ac.uk
   label: Clare Pilgrim
 description: A structured controlled vocabulary used for various aspects of annotation by FlyBase.
-domain:
+domain: organisms
 homepage: http://purl.obolibrary.org/obo/fbcv
 products:
   - id: fbcv.owl

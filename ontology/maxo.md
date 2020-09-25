@@ -14,7 +14,7 @@ contact:
   label: Leigh Carmody
   github: LCCarmody
 description: Medical Action Ontology is an ontology...
-domain: stuff
+domain: medical
 homepage: https://github.com/monarch-initiative/MAxO
 products:
   - id: maxo.owl

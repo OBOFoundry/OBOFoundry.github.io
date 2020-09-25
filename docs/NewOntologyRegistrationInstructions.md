@@ -10,7 +10,7 @@ This page provides guidance for filling out the fields in the [GitHub issue trac
 
 Note that joining the OBO Foundry includes a commitment to follow Foundry principles. In addition to obtaining basic information about your ontology, the questions are meant to highlight these principles, describe our expectations, and assess your commitment to joining the OBO Foundry. The answers also help us identify the right person to review your request.
 
-Please see [this guide](OBO_Foundry_membership_requirements_and_technical_details.html) for detailed instructions about requesting a PURL.
+Please see [this guide](Policy_for_OBO_namespace_and_associated_PURL_requests.html) for detailed instructions about requesting a PURL.
 
 Please review the [OBO Foundry Principles](http://obofoundry.org/principles/fp-000-summary.html) before proceeding with this submission
 
