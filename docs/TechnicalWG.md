@@ -15,7 +15,7 @@ See <a href='TechnicalWGMeetings.html'>here</a>
 
 <h1>HOWTOs</h1>
 
-<ul><li><a href='OBO_Foundry_membership_requirements_and_technical_details.html'>Creating a prefix and domain for a resource</a></li></ul>
+<ul><li><a href='Policy_for_OBO_namespace_and_associated_PURL_requests.html'>Creating a prefix and domain for a resource</a></li></ul>
 
 <h1>DOCs</h1>
 

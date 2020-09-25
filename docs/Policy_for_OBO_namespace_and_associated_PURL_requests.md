@@ -1,6 +1,6 @@
 ---
 layout: doc
-id: OBO_Foundry_membership_requirements_and_technical_details
+id: Policy_for_OBO_namespace_and_associated_PURL_requests
 title: OBO Foundry membership requirements and technical details
 ---
 
