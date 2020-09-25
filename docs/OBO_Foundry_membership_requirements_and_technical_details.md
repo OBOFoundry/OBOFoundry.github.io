@@ -4,7 +4,7 @@ id: OBO_Foundry_membership_requirements_and_technical_details
 title: OBO Foundry membership requirements and technical details
 ---
 
-For a simple overview of how to submit your ontology for consideration, please go [here](http://www.obofoundry.org/faq/how-do-i-submit-my-ontology.html)
+## For a simple overview of how to submit your ontology for consideration, please go [here](http://www.obofoundry.org/faq/how-do-i-submit-my-ontology.html).
 
 # Expectations for OBO Membership
 
