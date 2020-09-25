@@ -33,6 +33,7 @@ title: OBO Foundry membership requirements and technical details
 ## 1. Submitting your ontology to request the IDSPACE
 
 1. Submit your request on our [GitHub tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues). Select `New Issue` and then select `New Ontology Request`. Fill out the requested information as completely as possible.
+2. Send an email to [obo-discuss](mailto:obo-discuss@googlegroups.com) with your request to allow community feedback (you may need to [apply to join group](https://groups.google.com/forum/#!forum/obo-discuss) first.) Be sure to include the link to the issue you created in step 1.
 
 We expect general discussion to take place on the obo-discuss list, while technical follow-up will take place on the tracker.
 
