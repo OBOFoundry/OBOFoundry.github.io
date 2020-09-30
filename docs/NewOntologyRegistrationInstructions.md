@@ -4,11 +4,13 @@ id: NewOntologyRegistrationInstructions
 title: New Ontology Submission Instructions
 ---
 
-This page provides guidance for filling out the tracker item to request that your ontology be considered for addition to the OBO Foundry (found [here](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new/choose)). With the exception of the "Additional comments" question, all fields are required.
+## For simple instructions about how to submit your ontology to be considered for inclusion in the OBO Foundry, please start [here](/faq/how-do-i-submit-my-ontology.html).
 
-Note that joining the OBO Foundry includes a commitment to follow Foundry principles. In addition to obtaining basic information about your ontology, the questions are meant to highlight these principles, provide our expectations, and assess commitment for joining the OBO Foundry. The answers also help us identify the right person to review your request.
+This page provides guidance for filling out the fields in the [GitHub issue tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?assignees=&labels=new+ontology&template=new-ontology-request.md&title=). With the exception of the "Additional comments" question, all fields are required.
 
-PURL Request documentation: http://www.obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html
+Note that joining the OBO Foundry includes a commitment to follow Foundry principles. In addition to obtaining basic information about your ontology, the questions are meant to highlight these principles, describe our expectations, and assess your commitment to joining the OBO Foundry. The answers also help us identify the right person to review your request.
+
+Please see [this guide](Policy_for_OBO_namespace_and_associated_PURL_requests.html) for detailed instructions about requesting a PURL.
 
 Please review the [OBO Foundry Principles](http://obofoundry.org/principles/fp-000-summary.html) before proceeding with this submission
 
@@ -46,4 +48,4 @@ Is your ontology serving the need of one or more specific projects? If so, pleas
 Which resources, if any, were used to generate the ontology? E.g., NCBITaxon was created from the NCBI taxonomy resource; the Protein Ontology uses, in part, UniProtKB.
 
 ## Additional comments or remarks
-Another other significant information that you'd like to let us know.
+Any other significant information that you'd like us to know.
