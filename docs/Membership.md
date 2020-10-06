@@ -48,6 +48,7 @@ Current members of the OBO Foundry Operations Committee are (in alphabetical ord
  * [Lynn Schriml](http://www.medschool.umaryland.edu/profiles/Schriml-Lynn/) (E, O), University of Maryland School of Medicine
  * Barry Smith (O), University at Buffalo, Buffalo, NY, USA
  * Chris Stoeckert (E, O), University of Pennsylvania, Philadelphia, PA, USA
+ * [Nicole Vasielvsky](http://orcid.org/0000-0001-5208-3432) (E), Oregon Health & Science University, Portland, OR, USA
  * Randi Vita (O), La Jolla Institute for Immunology, La Jolla, CA, USA
  * [Ramona Walls](http://www.cyverse.org/ramona-walls) (E, T), CyVerse, University of Arizona, Tucson, AZ, USA
  * [Jie Zheng](http://cbil.upenn.edu/profile-staff_bio/39) (T, O), University of Pennsylvania, Philadelphia, USA
