@@ -26,17 +26,17 @@ browsers:
 products:
  - id: mondo.owl
    title: Main OWL edition
-   description: Complete ontology, plus inter-ontology equivalence axioms. Uses MONDO IDs.
+   description: Complete ontology. Uses MONDO IDs. Imports merged. The original mondo.owl without merged imports and with equivalence axioms can now be obtained from the release pages and is called mondo-with-equivalents.
    format: owl-rdf/xml
    is_canonical: true
  - id: mondo.obo
    title: obo-format edition
-   description: As OWL, but omits equivalence axioms. xrefs can be used as proxy for equivalence. Uses Mondo IDs
+   description: As OWL. xrefs can be used as proxy for equivalence. Uses Mondo IDs.
    format: obo
    derived_from: mondo.owl
  - id: mondo.json
    title: json edition
-   description: Equivalent to the OWL edition
+   description: Equivalent to the OWL edition.
    format: obo
    derived_from: mondo.owl
 usages:
