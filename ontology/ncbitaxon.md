@@ -3,16 +3,23 @@ layout: ontology_detail
 id: ncbitaxon
 preferredPrefix: NCBITaxon
 title: NCBI organismal classification
-contact: 
-  email: obo-taxonomy@lists.sourceforge.net
-  label: obo-taxonomy-list
-description: The NCBITaxon ontology is an automatic translation of the NCBI taxonomy (a taxonomic classification of living organisms and associated artifacts) database into an ontology
+build:
+  source_url: http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip
+  path: archive
+  method: archive
+  infallible: 1
+contact:
+  email: frederic.bastian@unil.ch
+  label: Frederic Bastian
+  github: fbastian
+description: An ontology representation of the NCBI organismal taxonomy
 source: http://www.ncbi.nlm.nih.gov/taxonomy
 wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
-createdWith: http://owltools.googlecode.com/
+createdWith: https://github.com/owlcollab/owltools/
 domain: taxonomy
-homepage: http://www.obofoundry.org/wiki/index.php/NCBITaxon:Main_Page
+homepage: https://github.com/obophenotype/ncbitaxon
 page: http://www.ncbi.nlm.nih.gov/taxonomy
+tracker: https://github.com/obophenotype/ncbitaxon/issues
 browsers:
   - label: NCBI
     title: NCBI Taxonomy Browser
@@ -20,10 +27,21 @@ browsers:
 jobs:
   - id: http://build.berkeleybop.org/job/build-ncbitaxon/
     type: ReleaseBuild
-products: 
+products:
   - id: ncbitaxon.owl
+    title: Main release
+  - id: ncbitaxon.obo
+    title: OBO Format version of Main release
   - id: ncbitaxon/subsets/taxslim.owl
     title: taxslim
+    page: https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md
+  - id: ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl
+    title: taxslim disjointness axioms
+    page: https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md
+license:
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0 Universal
+activity_status: active
 ---
 
 The NCBITaxon ontology is an automatic translation of the [NCBI taxonomy database](http://www.ncbi.nlm.nih.gov/taxonomy) into obo/owl.
@@ -50,7 +68,7 @@ The PURLs should be resolvable in OntoBee. E.g.
 
  * [http://purl.obolibrary.org/obo/NCBITaxon_9606](http://purl.obolibrary.org/obo/NCBITaxon_9606) (Homo sapiens)
  * http://purl.obolibrary.org/obo/NCBITaxon_7711 (Chordates)
- * http://purl.obolibrary.org/obo/NCBITaxon_7227 (Danio rerio)
+ * http://purl.obolibrary.org/obo/NCBITaxon_7955 (Danio rerio)
 
 ## Releases
 
@@ -61,10 +79,11 @@ is currently no fixed cycle, and this is generally done on demand. The
 team that informally handles this are:
 
  * James Overton, IEBD/OBO
- * Heiko Dietze, LBNL/GO
  * Frederic Bastian, BgeeDb/Uberon
  * Chris Mungall, LBNL/GO/Monarch/Uberon/OBO
  * Peter Midford, Phenoscape
+
+Contact the mail list (see below) for comments on this.
 
 ## Extensions
 
@@ -78,7 +97,7 @@ this ontology includes new classes in the NCBITaxon_Union namespace. These class
 
 One of the main uses for the NCBITaxon ontology is to define taxon constraints in a multi-species ontology. For details, see:
 
- * Waclaw Kusnierczyk (2008) [Taxonomy-based partitioning of the Gene Ontology](http://dx.doi.org/10.1016/j.jbi.2007.07.007), *Journal of Biomedical Informatics*
+ * Waclaw Kusnierczyk (2008) [Taxonomy-based partitioning of the Gene Ontology](https://doi.org/10.1016/j.jbi.2007.07.007), *Journal of Biomedical Informatics*
  * Deegan Née Clark, J. I., Dimmer, E. C., and Mungall, C. J. (2010). [Formalization of taxon-based constraints to detect inconsistencies in annotation and ontology development](http://www.biomedcentral.com/1471-2105/11/530). *BMC Bioinformatics 11, 530**
  * [Taxon constraints in OWL](http://douroucouli.wordpress.com/2012/04/24/taxon-constraints-in-owl) (blog post)
  * [Taxon constraints in Uberon](https://github.com/obophenotype/uberon/wiki/Taxon-constraints)

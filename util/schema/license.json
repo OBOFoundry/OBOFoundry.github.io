@@ -1,0 +1,54 @@
+{
+	"title": "license",
+	"level": "warning",
+	"principle": "http://obofoundry.org/principles/fp-001-open.html",
+	"description": "It is recommended that the 'license' value is CC0 or CC-BY.",
+	"properties": {
+		"license": {
+			"type": "object",
+			"properties": {
+				"url": { "type": "string", "format": "uri" },
+				"label": { "type": "string" }
+			},
+			"required": ["url", "label"],
+			"oneOf": [
+				{
+					"properties": {
+						"url": { "enum": ["http://creativecommons.org/licenses/by/4.0/", "https://creativecommons.org/licenses/by/4.0/"] },
+						"label": { "enum": ["CC-BY", "CC BY 4.0", "CC-BY 4.0"] }
+					}
+				},
+				{
+					"properties": {
+						"url": { "enum": ["http://creativecommons.org/publicdomain/zero/1.0/", "https://creativecommons.org/publicdomain/zero/1.0/"] },
+						"label": { "enum": ["CC-0", "CC0", "CC0 1.0 Universal", "CC0 1.0"] }
+					}	
+				},
+				{
+					"properties": {
+						"url": { "enum": ["http://creativecommons.org/licenses/by/3.0/", "https://creativecommons.org/licenses/by/3.0/"] },
+						"label": { "enum": ["CC-BY", "CC-BY 3.0", "CC BY 3.0"] }	
+					}
+				},
+				{
+					"properties": {
+						"url": { "enum": ["http://creativecommons.org/licenses/by-nd/4.0/", "https://creativecommons.org/licenses/by-nd/4.0/"] },
+						"label": { "enum": ["CC BY-ND 4.0"] }	
+					}
+				},
+				{
+					"properties": {
+						"url": { "enum": ["http://creativecommons.org/licenses/by-sa/2.0/", "https://creativecommons.org/licenses/by-sa/2.0/"] },
+						"label": { "enum": ["CC-BY-SA", "CC BY-SA 2.0"] }
+					}
+				},
+				{
+					"properties": {
+						"url": { "enum": ["http://creativecommons.org/licenses/by/2.0/", "https://creativecommons.org/licenses/by/2.0/"] },
+						"label": { "enum": ["CC-BY", "CC BY 2.0", "CC-BY 2.0"] }
+					}
+				}
+			]
+		}
+	}
+}

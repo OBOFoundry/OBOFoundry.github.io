@@ -1,30 +1,65 @@
+Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/registry/ontologies.jsonld">JSON-LD</a> | <a href="/registry/ontologies.ttl">RDF/Turtle</a>  ]
 <table class="table">
   <tbody>
-    {% assign sorted_ontologies = site.ontologies | sort: 'in_foundry_order', 'last'  %}
-    {% for ont in sorted_ontologies %}
-    <tr>
+    {% for ont in site.ontologies %}
+      {% if ont.in_foundry_order %}
+      <tr class="foundry">
+      {% elsif ont.is_obsolete %}
+      <tr class="obsolete">
+      {% elsif ont.activity_status == "orphaned" %}
+      <tr class="obsolete">
+      {% elsif ont.activity_status == "inactive" %}
+      <tr class="obsolete">
+      {% endif %}
       <td>
-         <a href="ontology/{{ ont.id }}.html" > {{ont.id}} </a>
+         <a href="ontology/{{ ont.id }}.html" >
+           {% if ont.is_obsolete %}
+           <s>
+             {{ ont.id }}
+           </s>
+           {% else %}
+           {{ ont.id }}
+           {% endif %}
+         </a>
       </td>
       <td>
+        {% if ont.is_obsolete %}
+        <s>
+          {{ ont.title }}
+        </s>
+        {% else %}
         {{ ont.title }}
+        {% endif %}
+        {% if ont.license %}
+        <a href="{{ont.license.url}}"><img width="100px" src="{{ont.license.logo}}" alt="{{ont.license.label}}"/></a>
+        {% endif %}
       </td>
       <td>
-        {{ ont.description }} 
+        {% if ont.is_obsolete %}
+        <s>
+          {{ ont.description }}
+        </s>
+        <mark>obsolete</mark>
+        {% elsif ont.activity_status == "inactive" %}
+        {{ ont.description }}
+        <mark>inactive</mark>
+        {% else %}
+        {{ ont.description }}
+        {% endif %}
         <small>
           <a href="ontology/{{ ont.id }}.html" > Detail </a>
         </small>
       </td>
       <td>
         <a href="ontology/{{ont.id}}.html">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+          <button type="button" class="btn btn-default" aria-label="Left Align" title="More details">
             <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
           </button>
         </a>
       </td>
       <td>
         <a href="{{ont.homepage}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+          <button type="button" class="btn btn-default" aria-label="Left Align" title="Project home">
             <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
           </button>
         </a>
@@ -32,7 +67,7 @@
       <td>
         {% if ont.tracker %}
         <a href="{{ont.tracker}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+          <button type="button" class="btn btn-default" aria-label="Left Align" title="Tracker">
             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
           </button>
         </a>
@@ -42,7 +77,7 @@
       <td>
         {% if ont.contact %}
         <a href="mailto:{{ont.contact.email}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+          <button type="button" class="btn btn-default" aria-label="Left Align" title="Email ontology devs">
             <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
           </button>
         </a>
@@ -51,7 +86,7 @@
 
       <td>
         <a href="http://purl.obolibrary.org/obo/{{ont.id}}.owl">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+          <button type="button" class="btn btn-default" aria-label="Left Align" title="Download file">
             <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
           </button>
         </a>
@@ -59,7 +94,7 @@
 
       <td>
         <a href="http://www.ontobee.org/browser/index.php?o={{ont.id}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+          <button type="button" class="btn btn-default" aria-label="Left Align" title="Browse on Ontobee">
             <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
           </button>
         </a>
@@ -68,7 +103,7 @@
       <td>
         {% if ont.publications %}
         <a href="{{ont.publications.first.id}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+          <button type="button" class="btn btn-default" aria-label="Left Align" title="Publications list">
             <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
           </button>
         </a>
@@ -77,7 +112,7 @@
 
       <td>
         {% if ont.in_foundry_order %}
-        <a href="link-to-foundry-principles">
+        <a href="/principles/fp-000-summary.html">
           <button type="button" class="btn btn-default" aria-label="Left Align">
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           </button>

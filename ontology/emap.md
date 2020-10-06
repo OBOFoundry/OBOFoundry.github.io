@@ -1,19 +1,31 @@
 ---
 layout: ontology_detail
 id: emap
-contact: 
+contact:
   email: Terry.Hayamizu@jax.org
   label: Terry Hayamizu
+  github: tfhayamizu
 description: A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).
 domain: anatomy
 homepage: http://emouseatlas.org
-page: http://www.obofoundry.org/wiki/index.php/EMAPA:Main_Page
-products: 
+page: https://www.emouseatlas.org/emap/about/what_is_emap.html
+products:
   - id: emap.owl
-taxon: 
+taxon:
   id: NCBITaxon:10088
   label: Mus
 title: Mouse gross anatomy and development, timed
+build:
+  notes: new url soon
+  source_url: ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAP_combined.obo
+  insert_ontology_id: true
+  method: obo2owl
+used_by:
+ - url: https://www.biosharing.org/biodbcore-000659
+   label: GXD
+is_obsolete: true
+replaced_by: emapa
+activity_status: inactive
 ---
 
 
@@ -21,15 +33,15 @@ title: Mouse gross anatomy and development, timed
 
 The ontology of mouse developmental anatomy was originally developed by Jonathan Bard and his colleagues as part of the Edinburgh Mouse Atlas Project (EMAP) [http://www.emouseatlas.org/emap/home.html (www.emouseatlas.org)] in order to provide a structured controlled vocabulary of stage-specific anatomical structures for the developing laboratory mouse.[1]
 
-The developmental mouse anatomy ontology has subsequently been substantially extended and refined in a collaborative effort between EMAP and the Gene Expression Database (GXD) project [http://www.informatics.jax.org/expression.shtml (www.informatics.jax.org/expression.shtml)], part of the Mouse Genome Informatics (MGI) resource at The Jackson Laboratory. Both GXD and the Edinburgh Mouse Atlas of Gene Expression (EMAGE) database project [http://www.emouseatlas.org/emage/home.php (www.emouseatlas.org/emage/home.php)] currently use this anatomy ontology to describe patterns of gene expression in the mouse embryo. 
+The developmental mouse anatomy ontology has subsequently been substantially extended and refined in a collaborative effort between EMAP and the Gene Expression Database (GXD) project [http://www.informatics.jax.org/expression.shtml (www.informatics.jax.org/expression.shtml)], part of the Mouse Genome Informatics (MGI) resource at The Jackson Laboratory. Both GXD and the Edinburgh Mouse Atlas of Gene Expression (EMAGE) database project [http://www.emouseatlas.org/emage/home.php (www.emouseatlas.org/emage/home.php)] currently use this anatomy ontology to describe patterns of gene expression in the mouse embryo.
 
 Previous versions, such as the one posted on the OBO Foundry site under the filename EMAP.obo, listed the anatomical entities for each developmental stage (Theiler Stages 1 through 26) separately. Stage-specific instances were presented as uniparental hierarchical trees organized using part-of relationships only (i.e. as a strict partonomy). These hierarchies have been used for annotation of expression in both the EMAGE and GXD databases, and the associated identifiers for the stage-specific instances are preserved.
 
 ## EMAPA
 
-A significantly revised and expanded ‘abstract’ (i.e. non-stage-specific) representation of the mouse developmental anatomy ontology has since been developed. This version, entitled EMAPA, includes the following significant modifications: 
+A significantly revised and expanded ‘abstract’ (i.e. non-stage-specific) representation of the mouse developmental anatomy ontology has since been developed. This version, entitled EMAPA, includes the following significant modifications:
 
- * All instances for a given anatomical entity are presented as a single term, together with the first and last (i.e. start and end) Theiler stage at which the entity is considered to be present in the developing embryo. 
+ * All instances for a given anatomical entity are presented as a single term, together with the first and last (i.e. start and end) Theiler stage at which the entity is considered to be present in the developing embryo.
  * Anatomical entities are presented in a hierarchical format that allows multiple parentage for a given entity (i.e. as a directed acyclic graph). Subsumption classification (“is_a”) as well as partonomic and other types of relationships can now be represented.
  * Numerous anatomical terms have been added in response to the needs of expression annotation efforts of both EMAGE and GXD.
  * The urinary and reproductive systems have been extensively revised and refined by curators from the GenitoUrinary Development Molecular Anatomy Project (GUDMAP).[2]

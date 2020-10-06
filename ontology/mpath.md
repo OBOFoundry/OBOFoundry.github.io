@@ -1,18 +1,27 @@
 ---
 layout: ontology_detail
 id: mpath
-contact: 
-  email: PS@mole.bio.cam.ac.uk
+contact:
+  email: pns12@hermes.cam.ac.uk
   label: Paul Schofield
 description: A structured controlled vocabulary of mutant and transgenic mouse pathology phenotypes
 domain: health
 homepage: http://www.pathbase.net
-products: 
+tracker: https://github.com/PaulNSchofield/mpath/issues
+products:
   - id: mpath.owl
-taxon: 
+taxon:
   id: NCBITaxon:10088
   label: Mus
-title: Mouse pathology
+title: Mouse pathology ontology
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
+build:
+  source_url: https://raw.githubusercontent.com/PaulNSchofield/mpath/master/mpath.obo
+  insert_ontology_id: true
+  method: obo2owl
+activity_status: active
 ---
 
 A structured controlled vocabulary of mutant and transgenic mouse pathology phenotypes

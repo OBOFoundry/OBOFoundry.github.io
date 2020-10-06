@@ -1,13 +1,22 @@
 ---
-contact: 
+layout: ontology_detail
+id: vo
+title: Vaccine Ontology
+description: VO is a biomedical ontology in the domain of vaccine and vaccination.
+homepage: http://www.violinet.org/vaccineontology
+tracker: https://github.com/vaccineontology/VO/issues
+contact:
   email: yongqunh@med.umich.edu
   label: Yongqunh He
 domain: health
-homepage: http://www.violinet.org/vaccineontology
-id: vo
-products: 
+products:
   - id: vo.owl
-title: Vaccine ontology
-tracker: http://sourceforge.net/tracker/?atid=1127137&group_id=255029&func=browse
+build:
+  source_url: https://raw.githubusercontent.com/vaccineontology/VO/master/src/VO_merged.owl 
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
+activity_status: active
 ---
-To ensure consistent representation of vaccine knowledge and to support automated reasoning, a community-based effort to develop the Vaccine Ontology (VO) has been initiated. This international collaborative VO development effort has been joined by many institutes and disciplines around the world. The Vaccine Ontology is also being used in a variety of applications by many user groups in academia and industry.
+
+The Vaccine Ontology (VO) is a biomedical ontology in the domain of vaccine and vaccination. VO aims to standardize and integrate vaccines, vaccine components, vaccine mechanisms, vaccine data types, and support computer-assisted reasoning. VO supports basic vaccine research, development, and clincal vaccine usage. VO is being developed as a community-based ontology with support and collaborations from the vaccine and bio-ontology communities. 

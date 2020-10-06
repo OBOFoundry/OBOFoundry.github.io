@@ -1,16 +1,23 @@
 ---
 layout: ontology_detail
 id: bila
-contact: 
+contact:
   email: henrich@embl.de
   label: Thorsten Heinrich
 domain: anatomy
 homepage: http://4dx.embl.de/4DXpress
-products: 
+products:
   - id: bila.owl
-taxon: 
+taxon:
   id: NCBITaxon:33213
   label: Bilateria
 title: Bilateria anatomy
+build:
+  source_url: http://4dx.embl.de/4DXpress_4d/edocs/bilateria_mrca.obo
+  method: obo2owl
+  insert_ontology_id: true
+is_obsolete: true
+replaced_by: uberon
+activity_status: inactive
 ---
 

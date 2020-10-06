@@ -1,23 +1,39 @@
 ---
 layout: ontology_detail
 id: poro
-contact: 
-  email: thacker@uab.edu
+contact:
+  email: robert.thacker@stonybrook.edu
   label: Bob Thacker
-description: The Porifera Ontology (PORO) is an ontology covering the anatomy of the taxon Porifera (sponges)
+description: An ontology covering the anatomy of the taxon Porifera (sponges)
 domain: anatomy
 homepage: https://github.com/obophenotype/porifera-ontology
-products: 
+products:
   - id: poro.owl
-taxon: 
+  - id: poro.obo
+taxon:
   id: NCBITaxon:6040
   label: Porifera
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 title: Porifera Ontology
-integration_server: http://build.berkeleybop.org/job/build-poro/
+publications:
+  - id: https://doi.org/10.1186/2041-1480-5-39
+    title: "The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy ontology"
+dependencies:
+ - id: uberon
+ - id: ro
+jobs:
+  - id: https://travis-ci.org/obophenotype/porifera-ontology
+    type: travis-ci
+build:
+  checkout: git clone https://github.com/obophenotype/porifera-ontology.git
+  system: git
+  path: .
+  infallible: 1
+  method: vcs
 tracker: https://github.com/obophenotype/porifera-ontology/issues
+activity_status: active
 ---
 
 An ontology covering the anatomy of Porifera (sponges)

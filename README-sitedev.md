@@ -36,17 +36,16 @@ web development.
 
 Basically, every `.md` or `.html` file in the directory is visible on
 the site, the same path. `.md` files are automatically translated to
-`.html` (this happens in the [_site](_site) directory, which you
-should never touch).
+`.html`.
 
 Jekyll uses a templating system called liquid. The basic idea is
 simple, templating commands are contained within braces '{ }'.
 
-Pages can have different layouts - see the [_layout/](_layout/)
+Pages can have different layouts - see the [_layouts/](_layouts/)
 directory. They can also include templates from the
 [_includes/](_includes/) directory.
 
-See [_assets](_assets) for bootstrap styling - don't touch this unless
+See [assets/themes](assets/themes) for bootstrap styling - don't touch this unless
 you know what you're doing.
 
 ## Compilation of metadata
@@ -60,9 +59,11 @@ To do this, type:
 
     make
 
-In the top level. Note you will need python3 and the yaml library:
+In the top level. Note you will need python3 and the yaml library, as well as jena's rdfcat
 
     pip3 install yaml
+    
+jena is at https://archive.apache.org/dist/jena/binaries/apache-jena-3.10.0.tar.gz. Uncompress and then add the bin directory to your PATH
 
 The dependencies should be visible in the [Makefile](Makefile). The basic idea is:
 

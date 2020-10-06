@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: faq
 title: Edit metadata
 ---
 
@@ -39,7 +39,6 @@ taxon:
   label: Metazoa
 domain: cells
 tracker: https://code.google.com/p/cell-ontology/issues/list
-termgenie: http://cl.termgenie.org
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
 dependencies:
  - id: uberon
@@ -57,7 +56,7 @@ products:
 
 A few key properties to be aware of:
 
- * *layout* - this is not actually metadata about the ontology but controls how the page is displayed. You should not mess with this unless you are a web style guru, in which case see [this FAQ entry](how-do-i-customize-layout.html)
+ * *layout* - this is not actually metadata about the ontology but controls how the page is displayed. You should not mess with this unless you are a web style guru.
  * *id* - this should not be touched. Your ontology id is fixed in the system by OBO administrators at time of registration and should never be changed. Contact the OBO team if you have a valid reason for changing this. See [ID Policy](../id-policy.html)
  * *title* - a *short* name for your ontology - this is typically the spelling out of your ontology acronym.
  * *description* - a short one line description of your ontology. It should state concisely what the contents of the ontology are. Don't write this like a paper abstract. You can be more verbose in the custom section below
