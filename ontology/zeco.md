@@ -11,6 +11,7 @@ contact:
 products:
   - id: zeco.obo
   - id: zeco.owl
+  - id: zeco.json
 taxon:
   id: NCBITaxon:7954
   label: Danio
@@ -21,6 +22,7 @@ build:
   source_url: https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.obo
   method: obo2owl
 tracker: https://github.com/ybradford/zebrafish-experimental-conditions-ontology/issues
+activity_status: active
 ---
 
 This ontology is designed to represent the experimental conditions

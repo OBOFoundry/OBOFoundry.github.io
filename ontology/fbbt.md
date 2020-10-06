@@ -6,11 +6,12 @@ contact:
   email: cp390@cam.ac.uk
   label: Clare Pilgrim
 description: An ontology representing the gross anatomy of Drosophila melanogaster.
-domain: anatomy
+domain: Drosophilid anatomy
 homepage: http://purl.obolibrary.org/obo/fbbt
 products:
   - id: fbbt.owl
   - id: fbbt.obo
+  - id: fbbt.json
   - id: fbbt/fbbt-simple.owl
   - id: fbbt/fbbt-simple.obo
 taxon:
@@ -21,9 +22,9 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 build:
-  source_url: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.owl
-  method: owl2obo
-  infallible: 1
+  checkout: git clone https://github.com/FlyBase/drosophila-anatomy-developmental-ontology.git
+  system: git
+  path: "."
 tracker: http://purl.obolibrary.org/obo/fbbt/tracker
 browsers:
   - label: FB
@@ -36,13 +37,13 @@ browsers:
     title: BioPortal Browser
     url: http://bioportal.bioontology.org/ontologies/FB-BT?p=classes
 publications:
-  - id: http://dx.doi.org/10.1186/2041-1480-4-32
+  - id: https://doi.org/10.1186/2041-1480-4-32
     title: "The Drosophila anatomy ontology. [Journal of Biomedical Semantics"
-  - id: http://dx.doi.org/10.1093/bioinformatics/bts113
+  - id: https://doi.org/10.1093/bioinformatics/bts113
     title: "A strategy for building neuroanatomy ontologies"
-  - id: http://dx.doi.org/10.1093/bioinformatics/btr677
+  - id: https://doi.org/10.1093/bioinformatics/btr677
     title: "The Virtual Fly Brain Browser and Query Interface"
-  - id: http://dx.doi.org/10.1093/nar/gkj068
+  - id: https://doi.org/10.1093/nar/gkj068
     title: "FlyBase: anatomical data, images and queries"
 usages:
   - user: http://www.virtualflybrain.org/
@@ -58,10 +59,11 @@ usages:
     example:
       - url: "http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBbt:00005106"
         description: "alleles, constructs and insertions annotated to neuron in FlyBase"
+activity_status: active
 ---
 
 An ontology representing the gross anatomy of Drosophila melanogaster.
 
 FBbt can be cited as:
-_Costa M., Reeve S., Grumbling G., Osumi-Sutherland D._ (2013) The Drosophila anatomy ontology. [Journal of Biomedical Semantics __4__(32).](http://dx.doi.org/10.1186/2041-1480-4-32)
+_Costa M., Reeve S., Grumbling G., Osumi-Sutherland D._ (2013) The Drosophila anatomy ontology. [Journal of Biomedical Semantics __4__(32).](https://doi.org/10.1186/2041-1480-4-32)
 

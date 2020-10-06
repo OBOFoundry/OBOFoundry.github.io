@@ -1,15 +1,14 @@
 ---
 layout: ontology_detail
 id: mp
-title: Mammalian Phenotype
+title: Mammalian Phenotype Ontology
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4.0
 build:
-  source_url: http://build.berkeleybop.org/job/build-mp-edit/lastSuccessfulBuild/artifact/*zip*/archive.zip
-  path: archive/src/ontology
-  method: archive
-  infallible: 1
+  checkout: git clone https://github.com/obophenotype/mammalian-phenotype-ontology.git
+  system: git
+  path: "."
 description: Standard terms for annotating mammalian phenotypic data.
 homepage: http://www.informatics.jax.org/searches/MP_form.shtml
 page: https://github.com/obophenotype/mammalian-phenotype-ontology
@@ -19,7 +18,21 @@ contact:
 domain: phenotype
 products:
   - id: mp.owl
+    title: "MP (OWL edition)"
+    description: "The main ontology in OWL. Contains all MP terms and links to other OBO ontologies."
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
   - id: mp.obo
+    title: "MP (OBO edition)"
+    description: "A direct translation of the MP (OWL edition) into OBO format."
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
+  - id: mp.json
+    title: MP (obographs JSON edition)
+    description: "For a description of the format see https://github.com/geneontology/obographs."
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
+  - id: mp/mp-base.owl
+    title: MP Base Module
+    description: "The main ontology plus axioms connecting to select external ontologies, excluding axioms from the the external ontologies themselves."
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
 browsers:
   - label: MGI
     title: MGI MP Browser
@@ -38,6 +51,7 @@ taxon:
   label: Mammalia
 tracker: https://github.com/obophenotype/mammalian-phenotype-ontology/issues
 mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
+activity_status: active
 ---
 
-The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data.
+The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data. 

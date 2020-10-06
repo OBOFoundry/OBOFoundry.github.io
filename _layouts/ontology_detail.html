@@ -53,7 +53,7 @@ layout: default
     </div>
   </div>
   {% endif %}
-  
+
   <div class="col-md-12">
 
     <div class="row">
@@ -62,9 +62,15 @@ layout: default
         <a href="http://www.ontobee.org/browser/index.php?o={{page.id}}">
           <button type="button" class="btn btn-default">OntoBee</button>
         </a>
+        {% if page.aberowl_id %}
+        <a href="http://aber-owl.net/ontology/{{page.aberowl_id | upcase}}">
+          <button type="button" class="btn btn-default">AberOWL</button>
+        </a>
+        {% else %}
         <a href="http://aber-owl.net/ontology/{{page.id | upcase}}">
           <button type="button" class="btn btn-default">AberOWL</button>
         </a>
+        {% endif %}
         <a href="http://www.ebi.ac.uk/ols/ontologies/{{page.id}}">
           <button type="button" class="btn btn-default">OLS</button>
         </a>
@@ -142,7 +148,25 @@ layout: default
             {% endif %}
           </dd>
 
-
+					{% if page.review %}
+					<dt>Review Date</dt>
+					<dd>
+						{% if page.review.date %}
+						{{page.review.date}}
+						{% else %}
+						n/a
+						{% endif %}
+					</dd>
+					<dt>Review Document</dt>
+					<dd>
+						{% if page.review.document %}
+					  <a href="{{page.review.document.link}}">{{page.review.document.label}}</a>
+						{% else %}
+						n/a
+						{% endif %}
+					<dd>
+					{% endif %}
+					
           <dt>Homepage</dt>
           <dd>
             <a href="{{page.homepage}}">{{page.homepage}}</a>
@@ -173,11 +197,11 @@ layout: default
           <dd>
             <a href="/domain/{{page.domain}}.html">{{page.domain}}</a>
           </dd>
-
-          {% if page.termgenie %}
-          <dt>TermGenie</dt>
+					
+          {% if page.mailing_list %}
+          <dt>Mail List</dt>
           <dd>
-            <a href="{{page.termgenie}}">{{page.termgenie}}</a>
+            <a href="{{page.mailing_list}}">{{page.mailing_list}}</a>
           </dd>
           {% endif %}
 
@@ -292,7 +316,7 @@ layout: default
         <footer class="footer">
           <div class="container">
             <p class="text-muted">
-              Edit the metadata for this page: <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md">{{page.id}}.md</a> (remember to make a fork and pull request!)
+              Edit the metadata for this page: <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md">{{page.id}}.md</a> (GitHub will help you create a fork and pull request.)
 
             </p>
           </div>

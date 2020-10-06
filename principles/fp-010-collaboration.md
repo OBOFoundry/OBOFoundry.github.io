@@ -1,7 +1,7 @@
 ---
 layout: principle
 id: fp-010-collaboration
-title: Commitment To Collaboration
+title: Commitment To Collaboration (principle 10)
 ---
 
 ## Summary
@@ -14,7 +14,7 @@ The benefits of collaboration are threefold: (1) Avoid duplication of work; (2) 
 
 ## Implementation
 ### Recommendation:
-It is expected that Foundry ontologies will collaborate with other Foundry ontologies, particularly in ensuring orthogonality of distinct ontologies, in re-using content from other ontologies in cross-product definitions where appropriate, and in establishing and evolving Foundry principles to advance the Foundry suite of ontologies to better serve the joint users. Where there are multiple ontology providers in a particular domain, they are particularly encouraged to get together and determine how the domain should be divided between the ontologies, or whether the ontologies should be merged into a single artifact. Should it be determined that there is a competing ontology in the same domain, the Foundry ontology should invite the developers of the external ontology to collaborate and should strive to negotiate an arrangement that is beneficial to both projects. If necessary, conflicts can be mediated in dedicated workshops or using the obo-discuss@lists.sourceforge.net discussion list where Foundry advisors and members of the editorial board can help the parties negotiate to a mutually agreeable solution. 
+It is expected that Foundry ontologies will collaborate with other Foundry ontologies, particularly in ensuring orthogonality of distinct ontologies, in re-using content from other ontologies in cross-product definitions where appropriate, and in establishing and evolving Foundry principles to advance the Foundry suite of ontologies to better serve the joint users. Where there are multiple ontology providers in a particular domain, they are particularly encouraged to get together and determine how the domain should be divided between the ontologies, or whether the ontologies should be merged into a single artifact. Should it be determined that there is a competing ontology in the same domain, the Foundry ontology should invite the developers of the external ontology to collaborate and should strive to negotiate an arrangement that is beneficial to both projects. If necessary, conflicts can be mediated in dedicated workshops or using the [obo-discuss mailing list](https://groups.google.com/forum/#!forum/obo-discuss) where Foundry advisors and members of the editorial board can help the parties negotiate to a mutually agreeable solution. 
 
 ### Examples:
 * _Collaborative workshop_: http://ncorwiki.buffalo.edu/index.php/Protein_Ontology_Workshop 

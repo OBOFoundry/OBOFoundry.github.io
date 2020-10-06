@@ -15,6 +15,7 @@ tracker: https://github.com/arpcard/aro/issues
 mailing_list: https://mailman.mcmaster.ca/mailman/listinfo/card-l
 products:
   - id: aro.owl
+activity_status: active
 ---
 
 The Antibiotic Resistance Ontology

@@ -8,8 +8,10 @@ build:
   method: vcs
   infallible: 1
 canonical: ro.owl
+aberowl_id: relo
 description: Relationship types shared across multiple ontologies
 homepage: https://github.com/oborel/obo-relations/
+documentation: https://github.com/oborel/obo-relations/wiki/ROGuide
 tracker: https://github.com/oborel/obo-relations/issues
 mailing_list: "https://groups.google.com/forum/#!forum/obo-relations"
 domain: relations
@@ -46,18 +48,19 @@ products:
    description: For use in neuroscience
    page: http://bioinformatics.oxfordjournals.org/content/28/9/1262.long
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  url: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC-0
 usages:
  - user: http://geneontology.org
    type: annotation
    description: RO is used for annotation extensions in the GO
-   reference: http://dx.doi.org/10.1186/1471-2105-15-155
+   reference: https://doi.org/10.1186/1471-2105-15-155
  - user: http://geneontology.org
    type: annotation
    description: RO is used for GO Causal Activity Models
    examples:
     - http://model.geneontology.org/56d1143000003402
+activity_status: active
 ---
 
 ![logo](/images/ro_logo.png)

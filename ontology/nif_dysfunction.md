@@ -3,11 +3,12 @@ layout: ontology_detail
 id: nif_dysfunction
 title: NIF Dysfunction
 contact:
-  email: Fahim Imam
-  label: smtifahim@gmail.com
+  email: smtifahim@gmail.com
+  label: Fahim Imam
 homepage: http://neuinfo.org/
 is_obsolete: true
 replaced_by: doid
+activity_status: inactive
 ---
 
 This ontology contains the former BIRNLex-Disease, version 1.3.2.

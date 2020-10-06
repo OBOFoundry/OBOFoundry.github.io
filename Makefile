@@ -19,35 +19,55 @@
 # Run `make` in this directory to update all generated files
 # (i.e. the default `all` task).
 # Make does its best to detect changes and run only the required tasks,
-# but sometimes it helps to delete the target files first.
+# but sometimes it helps to delete the target files first by running `make clean`
 #
 # WARNING: Makefiles contain significant tab characters!
-# Ensure that your editor shows tab characters before editing this file.
+# Before editing this file, ensure that your editor is not set up to convert tabs
+# to spaces, and then use tabs to indent recipe lines.
 
 
 ### Configuration
 
 # All ontology .md files
-ONTS := $(wildcard ontology/*md)
+ONTS := $(wildcard ontology/*.md)
 
-# All principles .md file
-PRINCIPLES := $(wildcard principles/*md)
+# All principles .md files
+PRINCIPLES := $(wildcard principles/*.md)
 
 
 ### Main Tasks
+.PHONY: all pull_and_build test pull clean
 
-all: yml registry/ontologies.ttl registry/publications.md registry/obo_context.jsonld
-
-pull_and_build: pull all
-
-yml: _config.yml registry/ontologies.yml
-
-test: validate yml
-
-integration-test: test valid-purl-report.txt
+all: _config.yml registry/ontologies.ttl registry/publications.md registry/obo_context.jsonld registry/obo_prefixes.ttl
 
 pull:
 	git pull
+
+pull_and_build: pull all
+
+test: reports/metadata-grid.html _config.yml
+
+integration-test: test valid-purl-report.txt
+
+# Remove and/or revert all targets to their repository versions:
+clean:
+	rm -Rf registry/ontologies.nt registry/ontologies.ttl registry/ontologies.yml registry/publications.md sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
+	git checkout _config.yml registry/ontologies.jsonld registry/ontologies.ttl registry/ontologies.yml registry/publications.md
+
+
+### Directories:
+
+tmp:
+	mkdir -p $@
+
+reports:
+	mkdir -p $@
+
+reports/robot:
+	mkdir -p $@
+
+reports/principles:
+	mkdir -p $@
 
 
 ### Build Configuration Files
@@ -62,9 +82,9 @@ pull:
 _config.yml: _config_header.yml registry/ontologies.yml principles/all.yml
 	cat $^ > $@.tmp && mv $@.tmp $@
 
-# Extract metadata from each ontology .md file and combine into single yaml
-registry/ontologies.yml: $(ONTS)
-	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
+# Sort ontologies based on the validation (metadata-grid)
+registry/ontologies.yml: reports/metadata-grid.csv
+	./util/sort-ontologies.py tmp/unsorted-ontologies.yml $< $@ && rm -rf tmp
 
 # Extract the metadata from each principle in the principles/ directory, and concatenate
 # into a single yaml file in that directory
@@ -78,6 +98,11 @@ registry/ontologies.jsonld: registry/ontologies.yml
 registry/obo_context.jsonld: registry/ontologies.yml
 	./util/processor.py -i $< extract-context  > $@.tmp && mv $@.tmp $@
 
+# generate triples mapping prefixes to their corresponding PURLs.
+# we use the SHACL vocabulary for this
+registry/obo_prefixes.ttl: registry/ontologies.yml
+	./util/make-shacl-prefixes.py $<  > $@.tmp && mv $@.tmp $@
+
 # Use Apache-Jena RIOT to convert jsonld to n-triples
 # NOTE: UGLY HACK. If there is a problem then Jena will write WARN message (to stdout!!!), there appears to
 #  be no way to get it to flag this even with strict and check options, so we do a check with grep, ugh.
@@ -89,14 +114,102 @@ registry/ontologies.ttl: registry/ontologies.nt
 	riot --base=http://purl.obolibrary.org/obo/ --out=ttl $< > $@.tmp && mv $@.tmp $@
 
 # Generate a list of primary publications
-registry/publications.md: util/extract-publications.py registry/ontologies.yml
-	$^ $@
+registry/publications.md: registry/ontologies.yml
+	util/extract-publications.py $< $@
 
 ### Validate Configuration Files
 
-validate: $(ONTS)
-	./util/extract-metadata.py validate $^ && \
-	cd util && python validate-metadata.py
+# generate both a report of the violations and a grid of all results
+# the grid is later used to sort the ontologies on the home page
+RESULTS = reports/metadata-violations.tsv reports/metadata-grid.csv
+reports/metadata-grid.csv: tmp/unsorted-ontologies.yml | extract-metadata reports
+	./util/validate-metadata.py $< $(RESULTS)
+
+# generate an HTML output of the metadata grid
+# TODO: determine where this output belongs
+reports/metadata-grid.html: reports/metadata-grid.csv
+	./util/create-html-grid.py $< $@
+
+# Extract metadata from each ontology .md file and combine into single yaml
+tmp/unsorted-ontologies.yml: $(ONTS) | tmp
+	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
+
+extract-metadata: $(ONTS)
+	./util/extract-metadata.py validate $^
+
+
+### OBO Dashboard
+
+# This is the Jenkins job
+# The reports will be archived
+
+dashboard: build/dashboard.zip
+
+# Build directories
+build:
+	mkdir -p $@
+build/ontologies:
+	mkdir -p $@
+
+# reboot the JVM for Py4J
+reboot:
+	bash ./util/reboot.sh
+
+# This version of ROBOT includes features for starting Py4J
+# This will be changed to ROBOT release once feature is released
+#.PHONY: build/robot.jar
+build/robot.jar: | build
+	curl -o $@ -Lk \
+	https://build.obolibrary.io/job/ontodev/job/robot/job/py4j/lastSuccessfulBuild/artifact/bin/robot.jar
+
+# This version of ROBOT includes features for removing external axioms to create 'base' artefacts
+# This will be removed once this feature is released
+#.PHONY: build/robot-foreign.jar
+build/robot-foreign.jar: | build
+	curl -o $@ -Lk \
+	https://build.obolibrary.io/job/ontodev/job/robot/job/562-feature/lastSuccessfulBuild/artifact/bin/robot.jar
+
+# Generate the initial dashboard results file
+# ALWAYS make sure nothing is running on port 25333
+# Then boot Py4J gateway to ROBOT on that port
+reports/dashboard.csv: registry/ontologies.yml | \
+reports/robot reports/principles build/ontologies build/robot.jar build/robot-foreign.jar
+	make reboot
+	./util/principles/dashboard.py $< $@ --big false
+
+reports/big-dashboard.csv: reports/dashboard.csv
+	make reboot
+	./util/principles/dashboard.py registry/ontologies.yml $@ --big true
+
+# Combine the dashboard files
+reports/dashboard-full.csv: reports/dashboard.csv reports/big-dashboard.csv registry/ontologies.yml
+	./util/principles/sort_tables.py $^ $@
+
+# Generate the HTML grid output for dashboard
+reports/dashboard.html: reports/dashboard-full.csv
+	./util/create-html-grid.py $< $@
+
+# Move all important results to a dashboard directory
+build/dashboard: reports/dashboard.html
+	mkdir -p $@
+	mkdir -p $@/assets
+	mkdir -p $@/reports
+	cp $< $@
+	cp -r reports/robot $@/reports
+	cp -r reports/principles $@/reports
+	cp -r assets/svg $@/assets
+	rm -rf build/dashboard.zip
+	zip -r $@.zip $@
+
+# Clean up, removing ontology files
+# We don't want to keep them because we will download new ones each time to stay up-to-date
+# Reports are all archived in build/dashboard.zip
+clean-dashboard: build/dashboard
+	rm -rf build/ontologies
+	rm -rf reports/robot
+	rm -rf reports/principles
+	rm -rf build/dashboard
+
 
 # Note this should *not* be run as part of general travis jobs, it is expensive
 # and may be prone to false positives as it is inherently network-based
@@ -110,7 +223,6 @@ valid-purl-report.txt: registry/ontologies.yml
 
 sparql-consistency-report.txt: registry/ontologies.yml
 	./util/processor.py -i $< sparql-compare > $@.tmp && mv $@.tmp $@
-
 
 # output of central OBO build
 # See FAQ for more details, and also README.md

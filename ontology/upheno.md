@@ -1,9 +1,10 @@
 ---
 layout: ontology_detail
 id: upheno
-title: Combined phenotype ontology
-description: The Uberpheno ontology integrates multiple phenotype ontologies into a unified cross-species phenotype ontology. 
+title: Unified phenotype ontology (uPheno)
+description: The uPheno ontology integrates multiple phenotype ontologies into a unified cross-species phenotype ontology. 
 homepage: https://github.com/obophenotype/upheno
+tracker: https://github.com/obophenotype/upheno/issues
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0
@@ -17,9 +18,17 @@ jobs:
     type: travis-ci
 products:
   - id: upheno.owl
-  - id: mp-hp-view.owl
+  - id: upheno/mp-hp-view.owl
+usages:
+  - user: https://monarchinitiative.org/
+    type: analysis
+    description: uPheno is used by the Monarch Initiative for cross-species inference.
+    examples:
+      - url: https://monarchinitiative.org/phenotype/HP:0001300#diseases
+    reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
 build:
   source_url: http://build.berkeleybop.org/job/build-pheno-ontologies/lastSuccessfulBuild/artifact/*zip*/archive.zip
   path: archive/ontology
   method: archive
+activity_status: active
 ---

@@ -14,6 +14,7 @@ homepage: https://github.com/ICO-ontology/ICO
 tracker: https://github.com/ICO-ontology/ICO/issues 
 products:
   - id: ico.owl
+activity_status: active
 ---
 
 # Summary
@@ -27,7 +28,7 @@ The Informed Consent Ontology (ICO) is an ontology that represents processes and
 Use the following URI to download this ontology
 
 * [http://purl.obolibrary.org/obo/ico.owl](http://purl.obolibrary.org/obo/ico.owl)
-* This should point to: [https://raw.githubusercontent.com/ICO-ontology/ICO/master/src/ontology/ico_merged.owl](https://raw.githubusercontent.com/ICO-ontology/ICO/master/src/ontology/ico_merged.owl)
+* This should point to: [https://raw.githubusercontent.com/ICO-ontology/ICO/master/ico.owl](https://raw.githubusercontent.com/ICO-ontology/ICO/master/ico.owl)
 
 Note that the source ontology is an OWL file.  
 

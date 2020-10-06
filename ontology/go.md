@@ -2,17 +2,22 @@
 layout: ontology_detail
 id: go
 in_foundry_order: 1
+homepage: geneontology.org
 contact:
-  email: david.hill@jax.org
-  label: David Hill
-  github: ukemi
+  email: suzia@stanford.edu
+  label: Suzi Aleksander
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 label: GO
 description: An ontology for describing the function of genes and gene products
 title: Gene Ontology
+review:
+  date: 2010
+homepage: http://geneontology.org/
 twitter: news4go
 facebook: https://www.facebook.com/Gene-Ontology-305908656519/ 
 tracker: https://github.com/geneontology/go-ontology/issues/
-termgenie: http://go.termgenie.org
 taxon:
   id: NCBITaxon:1
   label: All life
@@ -56,7 +61,11 @@ products:
    page: https://github.com/geneontology/obographs/
  - id: go/extensions/go-plus.owl
    title: GO-Plus
-   description: "The main ontology plus axioms connecting to select external ontologies"
+   description: "The main ontology plus axioms connecting to select external ontologies, with subsets of those ontologies"
+   page: http://geneontology.org/page/download-ontology
+ - id: go/go-base.owl
+   title: GO Base Module
+   description: "The main ontology plus axioms connecting to select external ontologies, excluding the external ontologies themselves"
    page: http://geneontology.org/page/download-ontology
  - id: go/extensions/go-plus.json
    title: GO-Plus
@@ -64,7 +73,7 @@ products:
    page: https://github.com/geneontology/obographs/
  - id: go/go-basic.obo
    title: "GO-Basic, Filtered, for use with legacy tools"
-   description: "The main ontology plus axioms connecting to select external ontologies"
+   description: "Basic version of the GO, filtered such that the graph is guaranteed to be acyclic and annotations can be propagated up the graph. The relations included are is a, part of, regulates, negatively regulates and positively regulates. This version excludes relationships that cross the 3 GO hierarchies."
    page: http://geneontology.org/page/download-ontology
  - id: go/go-basic.json
    title: "GO-Basic, Filtered, for use with legacy tools (JSON)"
@@ -74,18 +83,15 @@ products:
    title: GO Taxon Groupings
    description: "Classes added to ncbitaxon for groupings such as prokaryotes"
    page: http://geneontology.org/page/download-ontology
- - id: snapshot/go.owl
+ - id: go/snapshot/go.owl
    title: "GO (OWL edition), daily snapshot release"
    description: "Equivalent to go.owl, but released daily. Note the snapshot release is not archived."
    page: http://geneontology.org/page/download-ontology
- - id: snapshot/go.obo
+ - id: go/snapshot/go.obo
    title: "GO (OBO Format edition), daily snapshot release"
    description: "Equivalent to go.owl, but released daily. Note the snapshot release is not archived."
    page: http://geneontology.org/page/download-ontology
-license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
-depicted_by: http://geneontology.org/sites/default/files/go-logo-icon.mini__0.png
+depicted_by: http://geneontology.org/assets/go-logo-icon.mini.png
 usages:
  - user: http://geneontology.org
    type: annotation
@@ -93,6 +99,7 @@ usages:
    examples:
     - url: http://amigo.geneontology.org/amigo/term/GO:0055085
       description: annotations to transmembrane transport
+activity_status: active
 ---
 
 The goal of the GeneOntology (GO) project is to provide a uniformway to describe the functions of gene products from organisms across all kingdoms of life and thereby enable analysis of genomic data

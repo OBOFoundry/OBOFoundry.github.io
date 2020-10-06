@@ -11,7 +11,7 @@ This page describes members and activities of the OBO Foundry Editorial Working 
 
 # Details #
 
-The primary task of the Editorial WG is to facilitate the review of candidate OBO Foundry ontologies. This includes developing the principles against which ontologies are reviewed, developing the review process itself, conducting the reviews, and setting policies governing the process.
+The primary task of the Editorial WG is to facilitate the review of candidate OBO Foundry ontologies. This task includes developing the principles against which ontologies are reviewed, developing the review process itself, conducting the reviews, and setting policies governing the process.
 
 # Scope #
 The OBO Foundry Editorial WG will:
@@ -24,23 +24,20 @@ Current activities are focused on creating guidelines for reviews. Once those gu
 
 # Draft guidelines and policies #
 
+## Ontology Review ##
+
 [Ontology review process guidelines](/docs/ReviewProcessGuidelines.html)
 
 [Ontology review criteria policies](/docs/ReviewCriteriaPolicies.html)
 
 [Ontology review management guidelines](/docs/ReviewManagementGuidelines.html)
 
+## Principles Review ##
+
+[Principles review workflow](/docs/PrinciplesReviewWorkflow.html)
+
 # Members #
-(in alphabetical order)<br>
-<br>
-Melissa Haendel<br>
-Darren Natale<br>
-Bjoern Peters<br>
-Philippe Rocca-Serra<br>
-Alan Ruttenberg<br>
-Lynn Schriml<br>
-Chris Stoeckert<br>
-Ramona Walls<br>
+See the [membership page](/docs/Membership.html) for a list of current members.
 
 Membership in the OBO Foundry Editorial WG is open to all members of the OBO Foundry Operations Committee who are willing to actively participate. If you are interested in joining the working group, send an email to the mailing list.<br>
 <br>

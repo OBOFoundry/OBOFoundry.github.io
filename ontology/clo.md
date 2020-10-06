@@ -9,6 +9,7 @@ homepage: http://www.clo-ontology.org
 products:
   - id: clo.owl
 title: Cell Line Ontology
+tracker: https://github.com/CLO-Ontology/CLO/issues
 dependencies:
  - id: uberon
  - id: cl
@@ -17,7 +18,7 @@ dependencies:
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
-
+activity_status: active
 ---
 
 # Summary

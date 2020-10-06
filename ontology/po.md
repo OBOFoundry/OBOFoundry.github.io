@@ -3,6 +3,11 @@ layout: ontology_detail
 id: po
 in_foundry_order: 1
 title: Plant Ontology
+review:
+  date: 2013
+  document:
+    label: PDF
+    link: https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc
 jobs:
   - id: https://travis-ci.org/Planteome/plant-ontology
     type: travis-ci
@@ -24,8 +29,8 @@ tracker: https://github.com/Planteome/plant-ontology/issues
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/23220694
     title: "The plant ontology as a tool for comparative plant anatomy and genomic analyses."
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/22847540
-    title: "Ontologies as integrative tools for plant science."
+  - id: https://doi.org/10.1093/nar/gkx1152
+    title: "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics."
 products:
   - id: po.owl
   - id: po.obo
@@ -58,6 +63,7 @@ usages:
     examples:
       - url: http://archive.gramene.org/db/ontology/search?id=PO:0025034
         description: Gramene annotations to leaf from Arabidopsis
+activity_status: active
 ---
 
 The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data. The PO is under active development to expand to encompass terms and annotations from all plants.

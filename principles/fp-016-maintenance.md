@@ -1,7 +1,7 @@
 ---
 layout: principle
 id: fp-016-maintenance
-title: Maintenance
+title: Maintenance (principle 16)
 ---
 
 NOTE
@@ -11,6 +11,8 @@ The wording of this principle is still in progress.
 Summary and Purpose
 -------
 The ontology needs to reflect changes in scientific consensus to remain accurate over time.
+
+[This check is automatically validated.](checks/fp_016)
 
 Implementation
 -------

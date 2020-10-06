@@ -16,6 +16,8 @@ taxon:
   id: NCBITaxon:7954
   label: Danio
 title: Zebrafish anatomy and development ontology
+review:
+  date: 2010
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
@@ -34,6 +36,7 @@ usages:
     examples:
       - url: http://zfin.org/ZFA:0000029
         description: zebrafish genes expressed in hindbrain and genotypes with hindbrain phenotype
+activity_status: active
 ---
 
 A structured controlled vocabulary of the anatomy and development of the Zebrafish (<i>Danio rerio</i>).

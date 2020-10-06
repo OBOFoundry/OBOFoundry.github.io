@@ -7,8 +7,8 @@ contact:
   label: Darren Natale
 description: An ontological representation of protein-related entities
 domain: proteins
-homepage: http://proconsortium.org/pro
-documentation: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro_readme.txt
+homepage: http://proconsortium.org
+documentation: https://proconsortium.org/download/current/pro_readme.txt
 products:
   - id: pr.owl
     title: pro_reasoned.owl
@@ -25,21 +25,35 @@ browsers:
     title: PRO Home
     url: http://proconsortium.org
 title: PRotein Ontology (PRO)
+review:
+  date: 2010
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
 depicted_by: https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png
 build:
   oort_args: --no-reasoner
-  source_url: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.obo
+  source_url: https://proconsortium.org/download/current/pro_nonreasoned.obo
   method: obo2owl
   infallible: 0
-tracker: http://purl.obolibrary.org/obo/pr/tracker
+tracker: https://github.com/PROconsortium/PRoteinOntology/issues
 publications:
-  - id: http://pir.georgetown.edu/pro/pro_dsmnt.shtml#publication
+  - id: https://proconsortium.org/pro_dsmnt.shtml#publication
     title: "Publications & Dissemination"
 development:
   id_policy: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+PURLs
+usages:
+ - user: https://github.com/UCDenver-ccp/CRAFT
+   description: Colorado Richly Annotated Full-Text (CRAFT) Corpus; PRO is used for entity tagging and annotation
+   examples:
+    - url: https://github.com/UCDenver-ccp/CRAFT/releases/tag/v4.0.1
+      description: Tagged entities (requires download)
+ - user: http://www.obofoundry.org/ontology/cl.html
+   description: Cell Ontology is a structured controlled vocabulary for cell types in animals; PRO is used for cell type definitions
+   examples:
+    - url: http://purl.obolibrary.org/obo/CL_0001201
+      description: A B cell that is CD19-positive (uses the PRO term for non-species-specific CD19 molecule, PR:000001002)
+activity_status: active
 ---
 
 The PRotein Ontology (PRO) formally defines taxon-specific and taxon-neutral protein-related entities in three major areas: proteins related by evolution; proteins produced from a given gene; and protein-containing complexes.

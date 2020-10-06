@@ -8,14 +8,18 @@ build:
   infallible: 1
 description: Life cycle stages for Human
 homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv
+tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
 page: https://github.com/obophenotype/developmental-stage-ontologies
+contact:
+  label: bgee
+  email: bgee@sib.swiss
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 products:
   - id: hsapdv.owl
   - id: hsapdv.obo
-validate: false
+activity_status: active
 ---
 
 <img alt="HumanEmbryogenesis" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/HumanEmbryogenesis.svg/500px-HumanEmbryogenesis.svg.png"/>

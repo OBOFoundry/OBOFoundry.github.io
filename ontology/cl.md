@@ -20,15 +20,17 @@ contact:
   email: addiehl@buffalo.edu
   github: addiehl
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
 taxon:
   id: NCBITaxon:33208
   label: Metazoa
 domain: cells
 tracker: https://github.com/obophenotype/cell-ontology/issues
-termgenie: http://cl.termgenie.org
-mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
+mailing_list: https://groups.google.com/g/cl_edit
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/27377652
+    title: "The Cell Ontology 2016: enhanced content, modularization, and ontology interoperability."
 dependencies:
  - id: uberon
  - id: go
@@ -52,18 +54,22 @@ products:
    title: Basic CL
    description: Basic version, no inter-ontology axioms
    format: obo
+ - id: cl/cl-base.owl
+   title: CL base module
+   description: complete CL but with no imports or external axioms
 usages:
  - user: https://www.encodeproject.org/
    seeAlso: https://www.biosharing.org/biodbcore-000034
    type: annotation
    description: The National Human Genome Research Institute (NHGRI) launched a public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September 2003, to carry out a project to identify all functional elements in the human genome sequence. The ENCODE DCC users Uberon to annotate samples
-   reference: http://dx.doi.org/10.1093/database/bav010
+   reference: https://doi.org/10.1093/database/bav010
  - user: http://fantom5-collaboration.gsc.riken.jp/
    type: annotation
    description: FANTOM5 is using Uberon and CL to annotate samples allowing for transcriptome analyses with cell-type and tissue-level specificity.
    examples:
     - url: http://fantom.gsc.riken.jp/5/sstar/CL:0000540
       description: FANTOM5 samples annotated to neuron
+activity_status: active
 ---
 
 ![neuron](https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Derived_Neuron_schema_with_no_labels.svg/320px-Derived_Neuron_schema_with_no_labels.svg.png)
@@ -97,12 +103,12 @@ This is described in the following publications:
 Malladi, V. S., Erickson, D. T., Podduturi, N. R., Rowe, L. D., Chan,
 E. T., Davidson, J. M., … Hong, E. L. (2015). Ontology application and
 use at the ENCODE DCC. Database : The Journal of Biological Databases
-and Curation, 2015, bav010–. [doi:10.1093/database/bav010](http://dx.doi.org/doi:10.1093/database/bav010)
+and Curation, 2015, bav010–. [doi:10.1093/database/bav010](https://doi.org/doi:10.1093/database/bav010)
 
 Lizio, M., Harshbarger, J., Shimoji, H., Severin, J., Kasukawa, T.,
 Sahin, S., … Kawaji, H. (2015). Gateways to the FANTOM5 promoter level
 mammalian expression atlas. Genome Biology, 16(1),
-22. [doi:10.1186/s13059-014-0560-6](http://dx.doi.org/doi:10.1186/s13059-014-0560-6)
+22. [doi:10.1186/s13059-014-0560-6](https://doi.org/doi:10.1186/s13059-014-0560-6)
 
 [Metadata Standard and Data Exchange Specifications
 to Describe, Model, and Integrate Complex and Diverse High-Throughput

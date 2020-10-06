@@ -1,7 +1,7 @@
 ---
 layout: principle
 id: fp-009-users
-title: Documented Plurality of Users
+title: Documented Plurality of Users (principle 9)
 ---
 
 Summary
@@ -9,6 +9,8 @@ Summary
 
 The ontology developers should document that the ontology is used by
 multiple independent people or organizations.
+
+[This check is automatically validated.](checks/fp_009)
 
 Purpose
 -------

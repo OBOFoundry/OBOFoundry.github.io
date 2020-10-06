@@ -92,9 +92,13 @@
   },
   "checkout": "obofmd:checkout",
   "method": "obofmd:method",
-  "source_url": "obofmd:source_url",
+  "source_url": {
+   "@id": "obofmd:source_url",
+   "@type": "xsd:anyURI"
+  },
   "dependencies": "obofmd:depends_on",
   "integration_server": "obofmd:continuous_integration_server",
+  "activity_status": "obofmd:activity_status",
 
   "publications": "dct:publication",
   "publisher": "dct:publisher",

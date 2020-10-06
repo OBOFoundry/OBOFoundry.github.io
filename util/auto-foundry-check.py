@@ -39,7 +39,7 @@ def main():
     #    help='the path to the review file')
     args = parser.parse_args()
 
-    data = yaml.load(args.ontologies)
+    data = yaml.load(args.ontologies, Loader=yaml.SafeLoader)
     reviews = []
     for ontology in data['ontologies']:
         if 'is_obsolete' in ontology:

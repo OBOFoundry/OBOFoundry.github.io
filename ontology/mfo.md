@@ -14,6 +14,7 @@ taxon:
 title: Medaka fish anatomy and development
 is_obsolete: true
 replaced_by: olatdv
+activity_status: inactive
 ---
 
 A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.

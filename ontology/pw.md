@@ -10,6 +10,7 @@ license:
 description: A controlled vocabulary for annotating gene products to pathways.
 domain: biological process
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
+tracker: https://github.com/rat-genome-database/PW-Pathway-Ontology/issues
 page: ftp://ftp.rgd.mcw.edu/pub/data_release/PW_Introduction.doc
 products:
   - id: pw.owl
@@ -27,6 +28,7 @@ browsers:
   - label: RGD
     title: RGD Ontology Browser
     url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=PW:0000001
+activity_status: active
 ---
 
 <img src="http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif"/>

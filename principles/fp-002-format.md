@@ -1,12 +1,14 @@
 ---
 layout: principle
 id: fp-002-format
-title: Common Format
+title: Common Format (principle 2)
 ---
 
 ## Summary
 
 The ontology is made available in a common formal language in an accepted concrete syntax.
+
+[This check is automatically validated.](checks/fp_002)
 
 ## Purpose
 
@@ -16,7 +18,7 @@ A common format allows the maximum number of people to access and reuse an ontol
 
 ### Recommendations
 
-We make a distinction between how an ontology is developed and how it is presented for release. Developers are free to use whatever combination of technologies and formats is appropriate for development. However, the official owl PURL for the ontology must resolve to a syntactically valid OWL file in an [RDF](https://www.w3.org/TR/rdf11-concepts/) in RDF-XML syntax.
+We make a distinction between how an ontology is developed and how it is presented for release. Developers are free to use whatever combination of technologies and formats is appropriate for development. However, the official OWL PURL for the ontology must resolve to a syntactically valid OWL file using the [RDF-XML](https://www.w3.org/TR/rdf-syntax-grammar/) syntax.
 
 Note: some groups publish an .obo version, and the OBO Foundry pipeline takes care of making the valid .owl file. See the FAQ for details. You may also submit the ontology for review as OBO, see 'criteria for review' below.
 
@@ -50,5 +52,3 @@ Revised wording for principle accepted March 3, 2015.
 The ontology is in, or can be expressed in, a common shared syntax. This may be either the OBO syntax, extensions of this syntax, or OWL.
 
 The reason for this is that the same tools can then be usefully applied. This facilitates shared software implementations. This criterion is not met in all of the ontologies currently listed, but we are working with the ontology developers to have them available in a common OBO syntax.
-
-See the [wiki history](http://wiki.obofoundry.org/wiki/index.php?title=FP_002_format&action=history) for older formulations.

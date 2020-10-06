@@ -39,7 +39,6 @@ taxon:
   label: Metazoa
 domain: cells
 tracker: https://code.google.com/p/cell-ontology/issues/list
-termgenie: http://cl.termgenie.org
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
 dependencies:
  - id: uberon

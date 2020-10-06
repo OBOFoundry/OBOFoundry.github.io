@@ -1,7 +1,7 @@
 ---
 layout: principle
 id: fp-005-delineated-content
-title: Scope
+title: Scope (principle 5)
 ---
 
 
@@ -12,6 +12,8 @@ The wording of this principle is still in progress, with some issues still to be
 Summary
 -------
 The scope of an ontology is the extent of the domain or subject matter it intends to cover. The ontology must have a clearly specified scope and content that adheres to that scope.
+
+[This check is automatically validated.](checks/fp_005)
 
 Purpose
 -------

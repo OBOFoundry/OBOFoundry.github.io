@@ -11,8 +11,7 @@ license:
 description: A structured controlled vocabulary for the anatomy of fungi.
 domain: anatomy
 tracker: https://github.com/obophenotype/fungal-anatomy-ontology/issues
-homepage: http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/
-page: http://www.yeastgenome.org/fungi/fungal_anatomy_ontology/#description
+homepage: https://github.com/obophenotype/fungal-anatomy-ontology/
 products:
   - id: fao.owl
   - id: fao.obo
@@ -25,6 +24,7 @@ build:
   system: git
   method: vcs
   infallible: 1
+activity_status: active
 ---
 
 ![FAO image](http://www.yeastgenome.org/images/fao.color.png)

@@ -10,11 +10,13 @@ license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC-0
 description: An ontology to support the interoperability of biodiversity data, including data on museum collections, environmental/metagenomic samples, and ecological surveys.
+domain: biodiversity collections
 homepage: https://github.com/tucotuco/bco
 products:
   - id: bco.owl
 title: Biological Collections Ontology
 tracker: https://github.com/tucotuco/bco/issues
+activity_status: active
 ---
 
 The Biological Collections Ontology (BCO) is a being developed as an application ontology as part of the Biocode Commons project, within the OBO Foundry framework. The goal of the BCO is to support the interoperability of biodiversity data, including data on museum collections, environmental/metagenomic samples, and ecological surveys.
