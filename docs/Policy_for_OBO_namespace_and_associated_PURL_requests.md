@@ -46,7 +46,7 @@ Example of such request for ECTO:
 
 ## 2. Response
 
-Allow up to 4 weeks to give members of the community time to provide feedback and for the Operations Committee to review the request. If you don't hear back from us after 4 weeks, please follow-up via the tracker issue you created.
+Allow up to 4 weeks to give members of the community time to provide feedback and for the Operations Committee to review the request. If you don't hear back from us after 4 weeks, please follow-up via the tracker issue you created. Note, in some cases, this could take longer.
 
 Based on this discussion, the Operations Committee will either approve the IDSPACE request, ask for changes, or decline your request.
 
