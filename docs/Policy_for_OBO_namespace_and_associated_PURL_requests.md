@@ -4,7 +4,7 @@ id: Policy_for_OBO_namespace_and_associated_PURL_requests
 title: OBO Foundry membership requirements and technical details
 ---
 
-## For a simple overview of how to submit your ontology for consideration, please go [here](http://www.obofoundry.org/faq/how-do-i-submit-my-ontology.html).
+## For a simple overview of how to submit your ontology for consideration, please go [here](http://www.obofoundry.org/faq/how-do-i-register-my-ontology.html).
 
 # Expectations for OBO Membership
 
