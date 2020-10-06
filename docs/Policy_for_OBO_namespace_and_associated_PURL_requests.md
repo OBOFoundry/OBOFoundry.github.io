@@ -4,7 +4,7 @@ id: Policy_for_OBO_namespace_and_associated_PURL_requests
 title: OBO Foundry membership requirements and technical details
 ---
 
-## For a simple overview of how to submit your ontology for consideration, please go [here](http://www.obofoundry.org/faq/how-do-i-submit-my-ontology.html).
+## For a simple overview of how to submit your ontology for consideration, please go [here](http://www.obofoundry.org/faq/how-do-i-register-my-ontology.html).
 
 # Expectations for OBO Membership
 
@@ -33,7 +33,8 @@ title: OBO Foundry membership requirements and technical details
 ## 1. Submitting your ontology to request the IDSPACE
 
 1. Submit your request on our [GitHub tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues). Select `New Issue` and then select `New Ontology Request`. Fill out the requested information as completely as possible.
-2. Send an email to [obo-discuss](mailto:obo-discuss@googlegroups.com) with your request to allow community feedback (you may need to [apply to join group](https://groups.google.com/forum/#!forum/obo-discuss) first.) Be sure to include the link to the issue you created in step 1.
+2. Send an email to [obo-discuss](mailto:obo-discuss@googlegroups.com) with your request to allow community feedback (you may need to [apply to join group](https://groups.google.com/forum/#!forum/obo-discuss) first.) Be sure to include the link to the issue you created in step 1. 
+3. (_Optional_): If you would like to join the obo-community Slack, please indicate this in your email. 
 
 We expect general discussion to take place on the obo-discuss list, while technical follow-up will take place on the tracker.
 
@@ -45,7 +46,7 @@ Example of such request for ECTO:
 
 ## 2. Response
 
-Allow up to 4 weeks to give members of the community time to provide feedback and for the Operations Committee to review the request. If you don't hear back from us after 4 weeks, please follow-up via the tracker issue you created.
+Allow up to 4 weeks to give members of the community time to provide feedback and for the Operations Committee to review the request. If you don't hear back from us after 4 weeks, please follow-up via the tracker issue you created. Note, in some cases, this could take longer.
 
 Based on this discussion, the Operations Committee will either approve the IDSPACE request, ask for changes, or decline your request.
 
