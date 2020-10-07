@@ -5,7 +5,7 @@ title: TableOfContents
 ---
 
 
-Operations committee
+Operations Committee
 
   * [Mission statement](/docs/MissionStatement.html)
   * [Membership](/docs/Membership.html)
@@ -25,4 +25,5 @@ Operations committee
 
   * [PURL requests](/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html)
   * [OBO PURL configuration](/docs/OBOPURLDomain.html)
-  * [Setting up Protege 4.3](/docs/SettingUpProtege.html)
+  * [Ontology tools and resources](/resources)
+
