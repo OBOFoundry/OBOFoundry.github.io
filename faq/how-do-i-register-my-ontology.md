@@ -11,4 +11,4 @@ To submit a new ontology for inclusion in the OBO Foundry, you will need to:
 3. Send an email to [obo-discuss](mailto:obo-discuss@googlegroups.com) with your request to allow community feedback (you may need to [apply to join group](https://groups.google.com/forum/#!forum/obo-discuss) first.) Be sure to include the link to the issue you created in step 2.
 4. (_Optional_): If you would like to join the obo-community Slack, please indicate this in your email.
 
-Please see [this guide](/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html) for detailed instructions and background.
+Please see [this guide](/docs/OBO_Foundry_membership_requirements_and_technical_details.html) for detailed instructions and background.
