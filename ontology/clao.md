@@ -9,7 +9,7 @@ build:
 contact:
   email: lagonzalezmo@unal.edu.co
   label: Luis González-Montaña
-description: CLAO is an ontology of anatomical terms employed in morphological descriptions for the Class Collembola (Arthropoda: Hexapoda).
+description: "CLAO is an ontology of anatomical terms employed in morphological descriptions for the Class Collembola (Arthropoda: Hexapoda)."
 domain: anatomy
 homepage: https://github.com/luis-gonzalez-m/Collembola
 products:
