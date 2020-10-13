@@ -88,7 +88,8 @@ OBO Library ontologies are not constrained by this policy, however, we recommend
 
 IDSPACEs within the OBO library are unique for a given project and are chosen not to conflict with prefix for xrefs. Although IDSPACEs are case-sensitive, there will never be more than one IDSPACEs that are the same when compared in a case-insensitive manner. Therefore,although "GO" and "go", "Go" and "gO" are different IDSPACEs, the IDSPACE "go", "Go" and "gO" will not be used as "GO" has already been allocated.
 
-A registry of allocated IDSPACEs will be maintained. Requests for an IDSPACE should be made by sending mail to <obo-discuss@lists.sourceforge.net>, cc <obo-admin@fruitfly.org>. A request should include information about the ontology, such as scope and maintainer and a confirmation that the ontology is open access.
+A registry of allocated IDSPACEs will be maintained. Requests for an IDSPACE should be made by creating a ticket on our [GitHub tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues) as described on [this page](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.md).
+A request should include information about the ontology, such as scope and maintainer and a confirmation that the ontology is open access.
 
 ### Current ontology document
 
