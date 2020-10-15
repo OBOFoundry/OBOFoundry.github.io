@@ -4,7 +4,7 @@ id: OperationsCommittee
 title: Operations Committee
 ---
 
-[Members](Membership.html) of the OBO Foundry Operations Committee aim at improving flow of operations and making things happen within the [OBO Foundry](http://obofoundry.org), in collaboration with the [OBO Foundry Coordinating Editors](http://obofoundry.org/coordination.shtml) and external invited experts. Such operations include, but are not limited to, establishment of policies, review of resources, outreach and education.
+[Members](Membership.html) of the OBO Foundry Operations Committee aim at improving flow of operations and making things happen within the [OBO Foundry](http://obofoundry.org). Such operations include, but are not limited to, establishment of policies, review of resources, outreach and education.
 
 - The [Editorial Working Group](EditorialWG.html) is involved in reviewing OBO Foundry ontologies and setting policies. Primary tasks are to conduct reviews, as well as all activities that enable that process, such as tool building for automated validation, website maintenance of the review results, or leading calls and taking notes.
 
