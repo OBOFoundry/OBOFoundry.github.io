@@ -12,6 +12,7 @@ contact:
   email: vasilevs@ohsu.edu
   label: Nicole Vasilevsky
   github: nicolevasilevsky
+depicted_by: https://raw.githubusercontent.com/monarch-initiative/mondo/master/docs/images/mondo_logo_black-stacked-small.png
 taxon:
   id: NCBITaxon:33208
   label: Metazoa
