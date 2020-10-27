@@ -3,7 +3,7 @@ layout: ontology_detail
 id: mondo
 label: Mondo
 title: Mondo Disease Ontology
-description: An ontology that harmonizes multiple disease resources.
+description: A semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology.
 homepage: https://monarch-initiative.github.io/mondo
 license:
   url: http://creativecommons.org/licenses/by/4.0/
@@ -16,7 +16,7 @@ taxon:
   id: NCBITaxon:33208
   label: Metazoa
 domain: disease
-tracker: https://github.com/monarch-initiative/mondo-build/issues
+tracker: https://github.com/monarch-initiative/mondo/issues
 mailing_list: https://groups.google.com/group/mondo-users
 canonical: mondo.owl
 browsers:
@@ -59,7 +59,6 @@ These precise mappings are available in three ways depending on the format:
  - the primary release versions (mondo.owl, mondo.obo) are simpler, lacking owl equivalence axioms from Mondo classes to terms from other databases; instead, xrefs are used for linking these terms. If the ID is one of Orphanet, OMIM, DOID or EFO then the xref precisely shadows the equivalence axiom.
 - The [mondo-with-equivalents json edition](http://purl.obolibrary.org/obo/mondo/mondo-with-equivalents.json) has all owl equivalencies as well as all xrefs to other disease sources.
   
-Trackers
+Tracker
 
- - https://github.com/monarch-initiative/monarch-disease-ontology/issues - original tracker (OBSOLETE), primarily for examining kboom output and for feeding back changes to sources
- - https://github.com/monarch-initiative/mondo/issues - new tracker primarily for curating the grouped classes
+ - https://github.com/monarch-initiative/mondo/issues
