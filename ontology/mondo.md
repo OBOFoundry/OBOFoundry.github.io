@@ -3,7 +3,7 @@ layout: ontology_detail
 id: mondo
 label: Mondo
 title: Mondo Disease Ontology
-description: An ontology that harmonizes multiple disease resources.
+description: A semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology.
 homepage: https://monarch-initiative.github.io/mondo
 license:
   url: http://creativecommons.org/licenses/by/4.0/
@@ -17,7 +17,7 @@ taxon:
   id: NCBITaxon:33208
   label: Metazoa
 domain: disease
-tracker: https://github.com/monarch-initiative/mondo-build/issues
+tracker: https://github.com/monarch-initiative/mondo/issues
 mailing_list: https://groups.google.com/group/mondo-users
 canonical: mondo.owl
 browsers:
@@ -52,7 +52,7 @@ activity_status: active
 
 The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. It is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology. Original versions of Mondo were constructed entirely automatically and used the IDs of source databases and ontologies. Later, additional manually curated cross-ontology axioms were added, and a native Mondo ID system was used to avoid confusion with source databases.
 
-One feature of Mondo is that it goes beyond loose xrefs. It curated precise 1:1 equivalence axioms connecting to other resources, validated by OWL reasoning. This means it is safe to propagate across these from OMIM, Orphanet, EFO, DOID (soon NCIT).
+A key feature of Mondo is that it goes beyond loose database cross-references (xrefs). It curated precise 1:1 equivalence axioms connecting to other resources, validated by OWL reasoning. This means it is safe to propagate across these from Online Mendelian Inheritance in Man (OMIM), Orphanet, Experimental Factor Ontology (EFO), Disease Ontology (DOID) and the neoplasm branch of National Cancer Institute Thesaurus (NCIt).
 
 These precise mappings are available in three ways depending on the format:
 
@@ -60,7 +60,6 @@ These precise mappings are available in three ways depending on the format:
  - the primary release versions (mondo.owl, mondo.obo) are simpler, lacking owl equivalence axioms from Mondo classes to terms from other databases; instead, xrefs are used for linking these terms. If the ID is one of Orphanet, OMIM, DOID or EFO then the xref precisely shadows the equivalence axiom.
 - The [mondo-with-equivalents json edition](http://purl.obolibrary.org/obo/mondo/mondo-with-equivalents.json) has all owl equivalencies as well as all xrefs to other disease sources.
   
-Trackers
+Tracker
 
- - https://github.com/monarch-initiative/monarch-disease-ontology/issues - original tracker (OBSOLETE), primarily for examining kboom output and for feeding back changes to sources
- - https://github.com/monarch-initiative/mondo/issues - new tracker primarily for curating the grouped classes
+ - https://github.com/monarch-initiative/mondo/issues
