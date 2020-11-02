@@ -245,7 +245,10 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/go/extensions/go-plus.json
     page: https://github.com/geneontology/obographs/
     title: GO-Plus
-  - description: The main ontology plus axioms connecting to select external ontologies
+  - description: Basic version of the GO, filtered such that the graph is guaranteed
+      to be acyclic and annotations can be propagated up the graph. The relations
+      included are is a, part of, regulates, negatively regulates and positively regulates.
+      This version excludes relationships that cross the 3 GO hierarchies.
     id: go/go-basic.obo
     ontology_purl: http://purl.obolibrary.org/obo/go/go-basic.obo
     page: http://geneontology.org/page/download-ontology
@@ -1069,7 +1072,7 @@ ontologies:
     label: CC-BY
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
-  mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-cell-type
+  mailing_list: https://groups.google.com/g/cl_edit
   ontology_purl: http://purl.obolibrary.org/obo/cl.owl
   products:
   - description: Complete ontology, plus inter-ontology axioms, and imports modules
@@ -1125,6 +1128,35 @@ ontologies:
       url: http://fantom.gsc.riken.jp/5/sstar/CL:0000540
     type: annotation
     user: http://fantom5-collaboration.gsc.riken.jp/
+- activity_status: active
+  build:
+    checkout: git clone https://github.com/luis-gonzalez-m/Collembola.git
+    path: .
+    system: git
+  contact:
+    email: lagonzalezmo@unal.edu.co
+    github: luis-gonzalez-m
+    label: "Luis Gonz\xE1lez-Monta\xF1a"
+  dependencies:
+  - id: ro
+  description: 'CLAO is an ontology of anatomical terms employed in morphological
+    descriptions for the Class Collembola (Arthropoda: Hexapoda).'
+  domain: anatomy
+  homepage: https://github.com/luis-gonzalez-m/Collembola
+  id: clao
+  layout: ontology_detail
+  license:
+    label: CC-0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: http://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/clao.owl
+  products:
+  - id: clao.owl
+    ontology_purl: http://purl.obolibrary.org/obo/clao.owl
+  - id: clao.obo
+    ontology_purl: http://purl.obolibrary.org/obo/clao.obo
+  title: Collembola Anatomy Ontology
+  tracker: https://github.com/luis-gonzalez-m/Collembola/issues
 - activity_status: active
   contact:
     email: siiraa@umich.edu
@@ -2054,7 +2086,7 @@ ontologies:
     label: Clare Pilgrim
   description: A structured controlled vocabulary used for various aspects of annotation
     by FlyBase.
-  domain: null
+  domain: organisms
   homepage: http://purl.obolibrary.org/obo/fbcv
   id: fbcv
   layout: ontology_detail
@@ -2430,6 +2462,7 @@ ontologies:
 - activity_status: active
   contact:
     email: hoganwr@gmail.com
+    github: hoganwr
     label: Bill Hogan
   description: An ontology of geographical entities
   homepage: https://github.com/ufbmi/geographical-entity-ontology/wiki
@@ -2449,10 +2482,10 @@ ontologies:
   browsers:
   - label: Structure Browser
     title: GNOme Glycan Structure Browser
-    url: https://gnome.glyomics.org/GNOme.browser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
+    url: https://gnome.glyomics.org/StructureBrowser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
   - label: Composition Browser
     title: GNOme Glycan Composition Browser
-    url: https://gnome.glyomics.org/GNOme.compositionselector.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
+    url: https://gnome.glyomics.org/CompositionBrowser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
   build:
     checkout: git clone https://github.com/glygen-glycan-data/GNOme.git
     path: .
@@ -2824,7 +2857,7 @@ ontologies:
   - id: foodon
   - id: chebi
   description: Medical Action Ontology is an ontology...
-  domain: stuff
+  domain: medical
   homepage: https://github.com/monarch-initiative/MAxO
   id: maxo
   jobs:
@@ -3159,7 +3192,9 @@ ontologies:
     email: vasilevs@ohsu.edu
     github: nicolevasilevsky
     label: Nicole Vasilevsky
-  description: An ontology that harmonizes multiple disease resources.
+  depicted_by: https://raw.githubusercontent.com/monarch-initiative/mondo/master/docs/images/mondo_logo_black-stacked-small.png
+  description: A semi-automatically constructed ontology that merges in multiple disease
+    resources to yield a coherent merged ontology.
   domain: disease
   homepage: https://monarch-initiative.github.io/mondo
   id: mondo
@@ -3172,22 +3207,22 @@ ontologies:
   mailing_list: https://groups.google.com/group/mondo-users
   ontology_purl: http://purl.obolibrary.org/obo/mondo.owl
   products:
-  - description: Complete ontology, plus inter-ontology equivalence axioms. Uses MONDO
-      IDs.
+  - description: Complete ontology. Uses MONDO IDs. Imports merged. The original mondo.owl
+      without merged imports and with equivalence axioms can now be obtained from
+      the release pages and is called mondo-with-equivalents.
     format: owl-rdf/xml
     id: mondo.owl
     is_canonical: true
     ontology_purl: http://purl.obolibrary.org/obo/mondo.owl
     title: Main OWL edition
   - derived_from: mondo.owl
-    description: As OWL, but omits equivalence axioms. xrefs can be used as proxy
-      for equivalence. Uses Mondo IDs
+    description: As OWL. xrefs can be used as proxy for equivalence. Uses Mondo IDs.
     format: obo
     id: mondo.obo
     ontology_purl: http://purl.obolibrary.org/obo/mondo.obo
     title: obo-format edition
   - derived_from: mondo.owl
-    description: Equivalent to the OWL edition
+    description: Equivalent to the OWL edition.
     format: obo
     id: mondo.json
     ontology_purl: http://purl.obolibrary.org/obo/mondo.json
@@ -3196,7 +3231,7 @@ ontologies:
     id: NCBITaxon:33208
     label: Metazoa
   title: Mondo Disease Ontology
-  tracker: https://github.com/monarch-initiative/mondo-build/issues
+  tracker: https://github.com/monarch-initiative/mondo/issues
   usages:
   - description: Mondo is used by the Monarch Initiative for disease annotations.
     examples:
@@ -3261,12 +3296,28 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/mp.owl
   page: https://github.com/obophenotype/mammalian-phenotype-ontology
   products:
-  - id: mp.owl
+  - description: The main ontology in OWL. Contains all MP terms and links to other
+      OBO ontologies.
+    id: mp.owl
     ontology_purl: http://purl.obolibrary.org/obo/mp.owl
-  - id: mp.obo
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
+    title: MP (OWL edition)
+  - description: A direct translation of the MP (OWL edition) into OBO format.
+    id: mp.obo
     ontology_purl: http://purl.obolibrary.org/obo/mp.obo
-  - id: mp.json
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
+    title: MP (OBO edition)
+  - description: For a description of the format see https://github.com/geneontology/obographs.
+    id: mp.json
     ontology_purl: http://purl.obolibrary.org/obo/mp.json
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
+    title: MP (obographs JSON edition)
+  - description: The main ontology plus axioms connecting to select external ontologies,
+      excluding axioms from the the external ontologies themselves.
+    id: mp/mp-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/mp/mp-base.owl
+    page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
+    title: MP Base Module
   taxon:
     id: NCBITaxon:40674
     label: Mammalia
@@ -3668,7 +3719,7 @@ ontologies:
     label: Jie Zheng
   description: An ontology built for annotation and modeling of biobank repository
     and biobanking administration
-  domain: health
+  domain: biobanking, specimens, bio-repository, biocuration
   homepage: https://github.com/biobanking/biobanking
   id: obib
   layout: ontology_detail
@@ -3682,6 +3733,22 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/obib.owl
   title: Ontology for Biobanking
   tracker: https://github.com/biobanking/biobanking/issues
+  usages:
+  - description: TURBO ontology supporting the PennTURBO project.
+    examples:
+    - description: Blood draw time
+      url: http://purl.obolibrary.org/obo/OBIB_0000079
+    user: https://github.com/PennTURBO/turbo-ontology
+  - description: The Minimum Information About BIobank data Sharing (MIABIS) aims
+      to standardize data elements used to describe biobanks, research on samples
+      and associated data. General attributes to describe biobanks, sample collections
+      and studies at an aggregated/metadata level are defined in MIABIS Core 2.0 (Merino-Martinez
+      et al., 2016).
+    user: https://github.com/MIABIS/miabis
+  - description: The National Cancer Institute Biorepositories and Biospecimen Research
+      Branch (BBRB) is an international leader in research and policy activities related
+      to biospecimen collection, processing, and storage, also known as biobanking.
+    user: https://biospecimens.cancer.gov/resources/vocabularies.asp
 - activity_status: active
   contact:
     email: yongqunh@med.umich.edu
@@ -5638,6 +5705,35 @@ ontologies:
       metabolomic data
   title: FOBI
   tracker: https://github.com/pcastellanoescuder/FoodBiomarkerOntology/issues
+- activity_status: active
+  build:
+    checkout: git clone https://github.com/Superraptor/GSSO.git
+    path: .
+    system: git
+  contact:
+    email: kronkcj@mail.uc.edu
+    github: Superraptor
+    label: Clair Kronk
+  description: The Gender, Sex, and Sexual Orientation (GSSO) ontology has terms for
+    annotating interdisciplinary information concerning gender, sex, and sexual orientation
+    for primary usage in the biomedical and adjacent sciences.
+  domain: organisms
+  homepage: https://gsso.research.cchmc.org/
+  id: gsso
+  layout: ontology_detail
+  license:
+    label: Apache 2.0 License
+    url: http://www.apache.org/licenses/LICENSE-2.0
+  ontology_purl: http://purl.obolibrary.org/obo/gsso.owl
+  products:
+  - id: gsso.owl
+    ontology_purl: http://purl.obolibrary.org/obo/gsso.owl
+  - id: gsso.obo
+    ontology_purl: http://purl.obolibrary.org/obo/gsso.obo
+  - id: gsso.json
+    ontology_purl: http://purl.obolibrary.org/obo/gsso.json
+  title: Gender, Sex, and Sexual Orientation (GSSO) ontology
+  tracker: https://github.com/Superraptor/GSSO/issues
 - activity_status: active
   alternativePrefix: HPO
   browsers:
