@@ -110,12 +110,33 @@ def validate_metadata(item, schemas):
   has_warn = False
   has_info = False
   for s in schemas:
-    title = s['title']
+    title = s['title'] #Name of the schema for separate schemas
+    level = s['level'] #Error level for the schema
     try:
       jsonschema.validate(item, s)
       results[title] = 'pass'
     except jsonschema.exceptions.ValidationError as ve:
-      level = s['level']
+      if title == 'registry_schema':  # This is the merged schema file. Need specific field name.
+        title = list(ve.absolute_schema_path)[0]
+        if title == "required":
+          field_names = re.findall(r"\'(.*?)\'", ve.message)  # Get which field
+          if len(field_names) > 0:
+            title = field_names[0]
+        if title == "properties":
+          title = list(ve.absolute_schema_path)[1] # Get which field
+        # Get the schema "level" for this field dynamically, if we can
+        if title in list(ve.absolute_schema_path) or title in s['properties']:
+          if title in list(ve.absolute_schema_path):
+            title_index = list(ve.absolute_schema_path).index(title)
+            path = list(ve.absolute_schema_path)[0:(title_index+1)]
+          else:
+            path = ['properties',title]
+          abs_schema = s
+          for schema_item in path:
+            if schema_item in abs_schema:
+              if 'level' in abs_schema[schema_item]:
+                level = abs_schema[schema_item]['level']
+              abs_schema = abs_schema[schema_item]
 
       # add to the results map
       results[title] = level
@@ -278,6 +299,7 @@ def save_grid(metadata_grid, headers, grid_outfile):
   header = 'Ontology{0}Activity Status{0}Validation Status'.format(separator)
   # After that, we show the results of each check
   headers.remove('license-lite')
+  headers.remove('registry_schema') # Merged schema. Results show up under different headers.
   for h in headers:
     header += separator + h
   header += '\n'
