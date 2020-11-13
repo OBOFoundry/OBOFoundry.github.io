@@ -36,19 +36,20 @@ def main(args):
 
   # Load in the YAML and the JSON schemas that we will need:
   data = load_data(yaml_infile)
-  schemas = get_schemas()
+  schema = get_schema()
 
   results = {'error': [], 'warn': [], 'info': []}
 
   # Validate each object
   for item in data["ontologies"]:
-    add = validate_metadata(item, schemas)
+    add = validate_metadata(item, schema)
     results = update_results(results, add)
 
   # save the metadata-grid with ALL results
   headers = []
-  for s in schemas:
-    headers.append(s['title'])
+  for s in schema['properties']:
+    if 'level' in s:
+      headers.append(s)
   save_grid(metadata_grid, headers, grid_outfile)
 
   # print and save the results that did not pass
@@ -70,9 +71,9 @@ def load_data(yaml_infile):
   return data
 
 
-def get_schemas():
-  '''Return a set of schemas from the master schema directory.'''
-  schemas = []
+def get_schema():
+  '''Return a schema from the master schema directory.'''
+  schema = None
   for f in os.listdir(SCHEMA_DIR):
     if not f.endswith('.json'):
       continue
@@ -80,15 +81,14 @@ def get_schemas():
       file = '%s/%s' % (SCHEMA_DIR, f)
       with open(file, 'r') as s:
         schema = json.load(s)
-        schemas.append(schema)
     except Exception as e:
       print('Unable to load %s: %s' % (f, str(e)))
-  return schemas
+  return schema
 
 
-def validate_metadata(item, schemas):
-  '''Given an item and a set of schemas, validate the item against the
-  schemas. Add the full results to the metadata_grid and return a map of
+def validate_metadata(item, schema):
+  '''Given an item and a schema, validate the item against the
+  schema. Add the full results to the metadata_grid and return a map of
   errors, warnings, and infos for any active ontologies.'''
   global metadata_grid
 
@@ -109,34 +109,29 @@ def validate_metadata(item, schemas):
   has_error = False
   has_warn = False
   has_info = False
-  for s in schemas:
-    title = s['title'] #Name of the schema for separate schemas
-    level = s['level'] #Error level for the schema
-    try:
-      jsonschema.validate(item, s)
-      results[title] = 'pass'
-    except jsonschema.exceptions.ValidationError as ve:
-      if title == 'registry_schema':  # This is the merged schema file. Need specific field name.
-        title = list(ve.absolute_schema_path)[0]
-        if title == "required":
-          field_names = re.findall(r"\'(.*?)\'", ve.message)  # Get which field
-          if len(field_names) > 0:
-            title = field_names[0]
-        if title == "properties":
-          title = list(ve.absolute_schema_path)[1] # Get which field
-        # Get the schema "level" for this field dynamically, if we can
-        if title in list(ve.absolute_schema_path) or title in s['properties']:
-          if title in list(ve.absolute_schema_path):
-            title_index = list(ve.absolute_schema_path).index(title)
-            path = list(ve.absolute_schema_path)[0:(title_index+1)]
-          else:
-            path = ['properties',title]
-          abs_schema = s
-          for schema_item in path:
-            if schema_item in abs_schema:
-              if 'level' in abs_schema[schema_item]:
-                level = abs_schema[schema_item]['level']
-              abs_schema = abs_schema[schema_item]
+  try:
+    jsonschema.validate(item, schema)
+  except jsonschema.exceptions.ValidationError as ve:
+      title = list(ve.absolute_schema_path)[0]  # Find the named section within the schema
+      if title == "required":
+        field_names = re.findall(r"\'(.*?)\'", ve.message)  # Rather get which field
+        if len(field_names) > 0:
+          title = field_names[0]
+      if title == "properties":
+        title = list(ve.absolute_schema_path)[1] # Get which field
+      # Get the schema "level" for this field dynamically, if we can
+      if title in list(ve.absolute_schema_path) or title in schema['properties']:
+        if title in list(ve.absolute_schema_path):
+          title_index = list(ve.absolute_schema_path).index(title)
+          path = list(ve.absolute_schema_path)[0:(title_index+1)]
+        else:
+          path = ['properties',title]
+        abs_schema = schema
+        for schema_item in path:
+          if schema_item in abs_schema:
+            if 'level' in abs_schema[schema_item]:
+              level = abs_schema[schema_item]['level']
+            abs_schema = abs_schema[schema_item]
 
       # add to the results map
       results[title] = level
@@ -156,53 +151,50 @@ def validate_metadata(item, schemas):
       # - inactive ontology
       # - obsolete ontology
       # - ontology annotated with `validate: false`
-      if item.get('activity_status') == 'orphaned' and \
-         title in ['contact', 'license', 'license-lite']:
-        continue
-      if item.get('is_obsolete') is True or item.get('activity_status') == 'inactive' \
-         or item.get('validate') is False:
-        continue
-
-      # get a message for displaying on terminal
-      msg = ve.message
-      if title in ['license', 'license-lite']:
-        # license error message can show up in a few different ways
-        search = re.search('\'(.+?)\' is not one of', msg)
-        if search:
-          msg = '\'%s\' is not a recommended license' % search.group(1)
-        else:
-          search = re.search('({\'label\'.+?\'url\'.+?}) is not valid', msg)
-          if search:
-            msg = format_license_msg(search.group(1))
-          else:
-            search = re.search('({\'url\'.+?\'label\'.+?}) is not valid', msg)
+      if not ( (item.get('activity_status') == 'orphaned' and \
+              title in ['contact', 'license', 'license-lite']) or \
+              (item.get('is_obsolete') is True or item.get('activity_status') == 'inactive' or \
+                 item.get('validate') is False) ):
+          # get a message for displaying on terminal
+          msg = ve.message
+          if title in ['license', 'license-lite']:
+            # license error message can show up in a few different ways
+            search = re.search('\'(.+?)\' is not one of', msg)
             if search:
-              msg = format_license_msg(search.group(1))
+              msg = '\'%s\' is not a recommended license' % search.group(1)
+            else:
+              search = re.search('({\'label\'.+?\'url\'.+?}) is not valid', msg)
+              if search:
+                msg = format_license_msg(search.group(1))
+              else:
+                search = re.search('({\'url\'.+?\'label\'.+?}) is not valid', msg)
+                if search:
+                  msg = format_license_msg(search.group(1))
 
-      # format the message with the ontology ID
-      msg = '%s %s: %s' % (ont_id.upper(), title, msg)
+          # format the message with the ontology ID
+          msg = '%s %s: %s' % (ont_id.upper(), title, msg)
 
-      # append to correct set of warnings
-      if level == 'error':
-        errors.append(msg)
-      elif level == 'warning':
-        # warnings are recommended fixes, not required
-        if 'required' in msg:
-          msg = msg.replace('required', 'recommended')
-        warnings.append(msg)
-      elif level == 'info':
-        infos.append(msg)
+          # append to correct set of warnings
+          if level == 'error':
+            errors.append(msg)
+          elif level == 'warning':
+            # warnings are recommended fixes, not required
+            if 'required' in msg:
+              msg = msg.replace('required', 'recommended')
+            warnings.append(msg)
+          elif level == 'info':
+            infos.append(msg)
 
-  # add an overall validation status to the grid entry
-  if has_error:
-    results['validation_status'] = 'FAIL'
-  elif has_warn:
-    results['validation_status'] = 'WARN'
-  elif has_info:
-    results['validation_status'] = 'INFO'
-  else:
-    results['validation_status'] = 'PASS'
-  metadata_grid[ont_id] = results
+          # add an overall validation status to the grid entry
+          if has_error:
+            results['validation_status'] = 'FAIL'
+          elif has_warn:
+            results['validation_status'] = 'WARN'
+          elif has_info:
+            results['validation_status'] = 'INFO'
+          else:
+            results['validation_status'] = 'PASS'
+          metadata_grid[ont_id] = results
 
   return {'error': errors, 'warn': warnings, 'info': infos}
 
@@ -298,8 +290,6 @@ def save_grid(metadata_grid, headers, grid_outfile):
   # First three help to see overall details
   header = 'Ontology{0}Activity Status{0}Validation Status'.format(separator)
   # After that, we show the results of each check
-  headers.remove('license-lite')
-  headers.remove('registry_schema') # Merged schema. Results show up under different headers.
   for h in headers:
     header += separator + h
   header += '\n'
