@@ -16,12 +16,13 @@ title: Resources
 - [Linked Open Vocabularies](https://lov.linkeddata.es/dataset/lov/)
 
 ## Tutorials
-- [OBO Tutorial](https://github.com/jamesaoverton/obo-tutorial): using OBO ontologies to work with scientific data by James Overtooon
 - [Introduction to Ontologies](https://github.com/prog4biol/pfb2018/blob/master/workshops/Ontologies/IntroToOntologies_CSH_2018-10-28g.pdf): slides from Cold Spring Harbor workshop, October 2018, by Nicole Vasilevsky.
-- [Ontology Development 101](http://www.ksl.stanford.edu/people/dlm/papers/ontology101/ontology101-noy-mcguinness.html): A Guide to Creating Your First Ontology by Natalya F. Noy and Deborah L. McGuinness.
 - [Ontology 101 Tutorial](http://icbo2018.cgrb.oregonstate.edu/node/19): from International Conference on Biological Ontology (ICBO) 2018
 - [Ontology 101 Open Educational Resource](https://github.com/OHSUBD2K/BDK14-Ontologies-101): Funded by NIH BD2K Initiative.
+- [Ontology Development 101](http://www.ksl.stanford.edu/people/dlm/papers/ontology101/ontology101-noy-mcguinness.html): A Guide to Creating Your First Ontology by Natalya F. Noy and Deborah L. McGuinness.
 - [Cell Ontology Tutorial](https://github.com/obophenotype/cell-ontology-training/blob/master/README.md): Led by David Osumi-Sutherland, Alex Diehl, Nico Matentzoglu and Nicole Vasilevsky
+- [ROBOT tutorial](https://ontodev.github.io/robot-tutorial/#/title-slide) by James Overton
+- [OBO Academy](https://www.youtube.com/channel/UCKAkmAIIfPZc5kjdait-MdQ) - A YouTube channel containing presentations and tutorials relevant to the OBO Foundry, curated by Nico Matentzoglu
 
 ## Ontology Tools
 
