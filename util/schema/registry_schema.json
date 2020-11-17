@@ -46,6 +46,7 @@
 			"items":
 			{
 				"type": "object",
+				"additionalProperties": false,
 				"properties": {
 					"label": { "type": "string" },
 					"title": { "type": "string" },
