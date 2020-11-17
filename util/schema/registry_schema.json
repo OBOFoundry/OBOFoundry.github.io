@@ -187,6 +187,7 @@
 			"description": "'license' is a required property. The value is an object with a 'url' and 'label' field. The 'url' must be the full URL of the license, and the 'label' is the name of the license. It is recommended that the 'license' value is CC0 or CC-BY.",
 			"type": "object",
 			"suggestion": "url: \"http://creativecommons.org/publicdomain/zero/1.0/\" \n label: CC-0",
+			"additionalProperties": false,
 			"properties": {
 				"url": {
 					"type": "string",
@@ -194,6 +195,10 @@
 				},
 				"label": {
 					"type": "string"
+				},
+				"logo": {
+					"type": "string",
+					"format": "uri"
 				}
 			},
 			"anyOf": [
