@@ -90,6 +90,13 @@ IDSPACEs within the OBO library are unique for a given project and are chosen no
 
 A registry of allocated IDSPACEs will be maintained. Requests for an IDSPACE should be made by sending mail to <obo-discuss@lists.sourceforge.net>, cc <obo-admin@fruitfly.org>. A request should include information about the ontology, such as scope and maintainer and a confirmation that the ontology is open access.
 
+#### Guidelines for selecting an IDSPACE
+
+* Use three or more letters; the OBO Library **does not** accept new two-letter IDSPACEs
+* Avoid the letter "O" in three-letter IDSPACES; many ontologies use "O" for "Ontology" which limits the number of combinations
+* Select a longer IDSPACE for ontologies that are more restricted in scope (e.g., species-specific phenotype ontologies)
+* Check [identifiers.org Central Registry](https://registry.identifiers.org/) to make sure the IDSPACE doesn't conflict with an existing namespace outside of the OBO Library
+
 ### Current ontology document
 
 The most current version of an ontology will be at the following URL, where "idspace" is replaced with the IDSPACE of the given ontology in lower case.

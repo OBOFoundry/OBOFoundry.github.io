@@ -31,7 +31,7 @@ The technical working group reserves the right to make decisions based on their 
 2. A project must be doing original work within the biological ontology community. 
     * We will not provide an IDSPACE for a project that is issuing new identifier for existing ontologies.
     * If there is clear overlap with an existing domain ontology, you must demonstrate a good faith effort to work with that ontology to provide any new terms needed.
-3. The required IDSPACE must be available.
+3. The required IDSPACE must be available. We do not allow two-letter IDSPACEs and strongly discourage three-letter IDSPACEs that contain the letter "O". For more details, please see the guidlines for [allocating IDSPACEs](http://obofoundry.org/id-policy.html#allocating-idspaces).
 4. The resource must be publicly available when released. The general expectation is that the ontology source code is available on a public repository such as GitHub.
 5. There must be a contact person for the resource. The contact person for resources must be subscribed to our main communication channel, the [obo-discuss](https://groups.google.com/forum/#!forum/obo-discuss) mailing list.
 6. The requestor and/or contact person should be ready to discuss issues such as whether the ontology is orthogonal, whether there is potential to collaborate with existing efforts.
