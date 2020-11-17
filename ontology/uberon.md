@@ -15,6 +15,7 @@ homepage: http://uberon.org
 page: http://en.wikipedia.org/wiki/Uberon
 twitter: uberanat
 google_plus: "+UberonOrg"
+slack: https://obo-communitygroup.slack.com/archives/C01CR698CF2
 wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
 biosharing: https://www.biosharing.org/bsg-000016
@@ -195,4 +196,4 @@ activity_status: active
 Uberon is an integrated cross-species ontology covering anatomical structures in animals. See the <a href="http://uberon.org">Uberon website</a> for more info, or read the <a
  href="http://genomebiology.com/2012/13/1/R5">Uberon paper in Genome Biology</a>.
 
-![uberon](http://www.obofoundry.org/wiki/images/9/91/Uberon.png)
+![uberon](http://uberon.github.io/images/u-logo.jpg)

@@ -1,17 +1,10 @@
 ---
 layout: doc
 id: TechnicalWG
-title: TechnicalWG
+title: OBO Foundry Technical Working Group
 ---
 
-# Introduction #
-
-This page describes members and activities of the OBOFOC Technical WG.
-
-
-# Details #
-
-The OBOFOC Technical WG is involved in maintaining the technical infrastructure for the OBO Foundry. This includes establishment of policies to be implemented in common tools, website maintenance, calls, etc.
+The OBO Foundry Operations Committee Technical WG is involved in maintaining the technical infrastructure for the OBO Foundry. This includes establishment of policies to be implemented in common tools, website maintenance, etc.
 
 # Members #
 See the [membership page](/docs/Membership.html) for a list of current members.

@@ -29,6 +29,7 @@ Current members of the OBO Foundry Operations Committee are (in alphabetical ord
  * Seth Carbon (T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA
  * [Melanie Courtot](http://purl.org/net/mcourtot) (O, T), EMBL-EBI, Cambridge, UK 
  * Alexander Diehl (T), University at Buffalo, Buffalo, NY, USA
+ * Damion Dooley (O), Hsiao Lab, Simon Fraser University, BC, Canada
  * Eric Douglass (T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA
  * [Bill Duncan](https://orcid.org/0000-0001-9625-1899) (E),  Lawrence Berkeley National Laboratory, Berkeley, CA, USA
  * Nomi Harris (T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA
@@ -47,6 +48,7 @@ Current members of the OBO Foundry Operations Committee are (in alphabetical ord
  * [Lynn Schriml](http://www.medschool.umaryland.edu/profiles/Schriml-Lynn/) (E, O), University of Maryland School of Medicine
  * Barry Smith (O), University at Buffalo, Buffalo, NY, USA
  * Chris Stoeckert (E, O), University of Pennsylvania, Philadelphia, PA, USA
+ * [Nicole Vasilevsky](http://orcid.org/0000-0001-5208-3432) (E, T), Oregon Health & Science University, Portland, OR, USA
  * Randi Vita (O), La Jolla Institute for Immunology, La Jolla, CA, USA
  * [Ramona Walls](http://www.cyverse.org/ramona-walls) (E, T), CyVerse, University of Arizona, Tucson, AZ, USA
  * [Jie Zheng](http://cbil.upenn.edu/profile-staff_bio/39) (T, O), University of Pennsylvania, Philadelphia, USA

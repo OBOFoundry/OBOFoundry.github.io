@@ -183,6 +183,7 @@ def concat_principles_yaml(args):
   for fn in args.files:
     (obj, md) = load_md(fn)
     objs.append(obj)
+  objs.sort(key=lambda x: x['id'])
   cfg['principles'] = objs
   with open(args.output, 'w') as f:
     f.write(yaml.dump(cfg))
