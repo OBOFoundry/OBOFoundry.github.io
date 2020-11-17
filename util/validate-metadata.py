@@ -10,8 +10,8 @@ import yaml
 from argparse import ArgumentParser
 
 
-# Path to JSON schemas:
-SCHEMA_DIR = 'util/schema'
+# Path to JSON schema file:
+SCHEMA_FILE = 'util/schema/registry_schema.json'
 
 # The metadata grid to be generated:
 metadata_grid = {}
@@ -74,15 +74,12 @@ def load_data(yaml_infile):
 def get_schema():
   '''Return a schema from the master schema directory.'''
   schema = None
-  for f in os.listdir(SCHEMA_DIR):
-    if not f.endswith('.json'):
-      continue
-    try:
-      file = '%s/%s' % (SCHEMA_DIR, f)
-      with open(file, 'r') as s:
-        schema = json.load(s)
-    except Exception as e:
-      print('Unable to load %s: %s' % (f, str(e)))
+  try:
+    file = SCHEMA_FILE
+    with open(file, 'r') as s:
+      schema = json.load(s)
+  except Exception as e:
+    print('Unable to load %s: %s' % (f, str(e)))
   return schema
 
 
