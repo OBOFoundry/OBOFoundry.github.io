@@ -18,7 +18,7 @@ Please review the [OBO Foundry Principles](http://obofoundry.org/principles/fp-0
 Concise title of your ontology (e.g, "Gene Ontology")
 
 ## Requested ID space
-Prefix of ontology in lowercase (e.g., go, uberon, chebi, cl). The OBO Foundry ID policy is described at http://obofoundry.org/id-policy.html
+Prefix of ontology in lowercase (e.g., go, uberon, chebi, cl). The OBO Foundry ID policy is described at http://obofoundry.org/id-policy.html. Specifically, please see the guidelines for [allocating IDSPACEs](http://obofoundry.org/id-policy.html#allocating-idspaces).
 
 ## Ontology location
 Home page or URL of ontology. This can be a GitHub URL.
