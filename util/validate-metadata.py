@@ -182,16 +182,16 @@ def validate_metadata(item, schema):
           elif level == 'info':
             infos.append(msg)
 
-          # add an overall validation status to the grid entry
-          if has_error:
-            results['validation_status'] = 'FAIL'
-          elif has_warn:
-            results['validation_status'] = 'WARN'
-          elif has_info:
-            results['validation_status'] = 'INFO'
-          else:
-            results['validation_status'] = 'PASS'
-          metadata_grid[ont_id] = results
+  # add an overall validation status to the grid entry
+  if has_error:
+    results['validation_status'] = 'FAIL'
+  elif has_warn:
+    results['validation_status'] = 'WARN'
+  elif has_info:
+    results['validation_status'] = 'INFO'
+  else:
+    results['validation_status'] = 'PASS'
+  metadata_grid[ont_id] = results
 
   return {'error': errors, 'warn': warnings, 'info': infos}
 

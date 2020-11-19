@@ -13,9 +13,8 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY
 products:
-  - id: ons_release_v1.0.owl
+  - id: ons.owl
     title: ONS latest release
-    format: owl-rdf/xml
 title: ONS
 dependencies:
  - id: uberon
