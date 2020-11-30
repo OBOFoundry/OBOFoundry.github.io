@@ -13,7 +13,7 @@ contact:
   email: p.buttigieg@gmail.com 
   label: Pier Luigi Buttigieg
   github: pbuttigieg
-description: An ontology to provide core semantics for ecological entities.
+description: Ecocore is a community ontology for the concise and controlled description of ecological traits of organisms.
 domain: ecological functions, ecological interactions
 homepage: https://github.com/EcologicalSemantics/ecocore
 products:
@@ -37,4 +37,4 @@ license:
 activity_status: active
 ---
 
-This ontology aims to provide core semantics for ecological entities, such as ecological functions (for predators, prey, etc), food webs, and ecological interactions. The ontology, closely interoperates with existing OBO ontologies such as the Environment Ontology, the Population and Community Ontology (PCO), the Relations Ontology (RO), the Gene Ontology (for biological processes etc), the Phenotype and Quality Ontology (PATO), the Plant Ontology (PO), and many others.
+This ontology aims to provide core semantics for ecological entities, such as ecological functions (for predators, prey, etc), food webs, and ecological interactions. The ontology, closely interoperates with existing OBO ontologies such as the Environment Ontology, the Population and Community Ontology (PCO), the Relations Ontology (RO), the Gene Ontology (for biological processes etc), the Phenotype and Quality Ontology (PATO), the Plant Ontology (PO), and many others. Ecocore is under active development.
