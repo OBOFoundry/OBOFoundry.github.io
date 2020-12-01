@@ -34,8 +34,8 @@ Current members of the OBO Foundry Operations Committee are (in alphabetical ord
  * [Bill Duncan](https://orcid.org/0000-0001-9625-1899) (E),  Lawrence Berkeley National Laboratory, Berkeley, CA, USA
  * Nomi Harris (T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA
  * [Melissa Haendel](https://www.ohsu.edu/people/melissa-haendel/AFE044BDE8046E5D6FBDA51F448BDE2A) (O), Oregon State University, Corvallis, OR
- * [Simon Jupp](http://www.ebi.ac.uk/about/people/simon-jupp) (T), European Bioinformatics Institute, Cambridge, UK 
- * James Malone (T), SciBite, Cambridge, UK
+ * [Simon Jupp](http://www.ebi.ac.uk/about/people/simon-jupp) (OBO Industry Liaison), SciBite, Cambridge, UK 
+ * James Malone (OBO Industry Liaison), SciBite, Cambridge, UK
  * Nico Matentzoglu (T), European Bioinformatics Institute, Cambridge, UK
  * [Chris Mungall](https://github.com/cmungall/), (T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA
  * [Darren Natale](http://pir.georgetown.edu/pirwww/aboutpir/natalebio.shtml) (E), Georgetown University Medical Center, Washington DC, USA
