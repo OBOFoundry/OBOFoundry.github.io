@@ -415,7 +415,30 @@
 			"suggest": false
 		},
 		"usages": {
-			"suggest": false
+			"suggest": false,
+      "level": "info",
+      "description": "Information on usage of particular ontology."
+			"type": "object",
+			"properties": {
+				"user": {
+          "type": "string",
+          "format": "uri"
+        },
+				"type": { "type": "string" },
+				"description": {"type":"string"},
+        "example": {
+          "type": "object",
+          "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "description": {"type": "string"}
+        },
+         "required": ["url", "description"]
+        }
+      },
+      "required": ["user", "description"]
 		},
 		"used_by": {
 			"suggest": false
@@ -438,4 +461,3 @@
 				 "title", "tracker"],
 	"level": "error"
 }
-
