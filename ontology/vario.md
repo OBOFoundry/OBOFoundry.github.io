@@ -6,6 +6,9 @@ homepage: http://variationontology.org
 products:
   - id: vario.owl
 title: Variation Ontology
+contact:
+  label: Mauno Vihinen
+  email: mauno.vihinen@med.lu.se
 build:
   source_url: http://variationontology.org/vario_download/vario.obo
   method: obo2owl
