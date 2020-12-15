@@ -416,12 +416,12 @@
 		},
 		"usages": {
 			"suggest": false,
-      			"level": "info",
+      			"level": "error",
       			"description": "Information on usage of particular ontology.",
 			"type": "array",
-
 			"items": {
         			"type": "object",
+     				"additionalProperties" : false,
         			"properties": {
 					"user": {
           			      		"type": "string",
@@ -433,6 +433,7 @@
 						"type": "array",
 						"items" : {
           						"type": "object",
+      							"additionalProperties" : false,
           						"properties": {
           							"url": {
             							"type": "string",
