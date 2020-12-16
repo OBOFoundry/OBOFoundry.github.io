@@ -2,7 +2,9 @@
 
 import argparse
 import sys
+from yamllint import config, linter
 import yaml
+import frontmatter
 
 __author__ = 'cjm'
 
@@ -10,6 +12,7 @@ __author__ = 'cjm'
 def main():
   parser = argparse.ArgumentParser(description='Helper utils for OBO',
                                    formatter_class=argparse.RawTextHelpFormatter)
+
   subparsers = parser.add_subparsers(dest='subcommand', help='sub-command help')
 
   # SUBCOMMAND
@@ -17,7 +20,8 @@ def main():
   # parser_n.add_argument('-d', '--depth', type=int, help='number of hops')
   parser_n.set_defaults(function=validate_markdown)
   parser_n.add_argument('files', nargs='*')
-
+  parser_n = subparsers.add_parser('prettify', help = 'prettify YAML block in registry ontolgoy Markdown files')
+  parser_n.add_argument('files', nargs='*')
   # SUBCOMMAND
   parser_n = subparsers.add_parser('concat', help='concat ontology yamls')
   parser_n.add_argument('-i', '--include', help='yaml file to include for header')
@@ -37,7 +41,9 @@ def main():
   func = args.function
   func(args)
 
-
+def prettify(args):
+   for file in args.file:
+       text = frontmatter.load(file)
 def validate_markdown(args):
   """
   Ensure the yaml encoded inside a YAML file is syntactically valid.
@@ -196,6 +202,7 @@ def load_md(fn):
 
   Returns a tuple (yaml_obj, markdown_text)
   """
+  print(fn)
   with open(fn, 'r') as f:
     text = f.read()
   return extract(text)
@@ -213,13 +220,15 @@ def extract(mdtext):
   mlines = []
   for line in lines:
     if (line == "---"):
-      n = n + 1
-    else:
-      if n == 1:
+        n = n + 1
+    elif n == 1:
         ylines.append(line)
-      else:
+    else:
         mlines.append(line)
   yamltext = "\n".join(ylines)
+  yaml_config = config.YamlLintConfig(file = "util/config.yamllint")
+  for p in linter.run("---\n" + yamltext, yaml_config):
+       print(p)
   obj = yaml.load(yamltext, Loader=yaml.SafeLoader)
   return (obj, "\n".join(mlines))
 
