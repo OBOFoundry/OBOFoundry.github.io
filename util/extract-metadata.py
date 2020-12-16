@@ -21,6 +21,7 @@ def main():
   parser_n.set_defaults(function=validate_markdown)
   parser_n.add_argument('files', nargs='*')
   parser_n = subparsers.add_parser('prettify', help = 'prettify YAML block in registry ontolgoy Markdown files')
+  parser_n.set_defaults(function=prettify)
   parser_n.add_argument('files', nargs='*')
   # SUBCOMMAND
   parser_n = subparsers.add_parser('concat', help='concat ontology yamls')
@@ -41,9 +42,16 @@ def main():
   func = args.function
   func(args)
 
+class MyDumper(yaml.Dumper):
+    def increase_indent(self, flow=False, indentless=False):
+        return super(MyDumper, self).increase_indent(flow, False)
+
 def prettify(args):
-   for file in args.file:
+   for file in args.files:
        text = frontmatter.load(file)
+       file_obj = open(file, "wb")
+       frontmatter.dump(text, fd = file_obj, sort_keys=False, indent=2, Dumper=MyDumper)
+       file_obj.close()
 def validate_markdown(args):
   """
   Ensure the yaml encoded inside a YAML file is syntactically valid.

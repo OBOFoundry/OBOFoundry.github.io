@@ -132,12 +132,15 @@ reports/metadata-grid.html: reports/metadata-grid.csv
 
 # Extract metadata from each ontology .md file and combine into single yaml
 tmp/unsorted-ontologies.yml: $(ONTS) | tmp
+	./util/extract-metadata.py prettify $^
 	./util/extract-metadata.py concat -o $@.tmp $^  && mv $@.tmp $@
 
 extract-metadata: $(ONTS)
+	./util/extract-metadata.py prettify $^
 	./util/extract-metadata.py validate $^
 
-
+prettify: $(ONTS)
+	./util/extract-metadata.py prettify $^
 ### OBO Dashboard
 
 # This is the Jenkins job
