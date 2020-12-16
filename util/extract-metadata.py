@@ -49,6 +49,7 @@ class MyDumper(yaml.Dumper):
 def prettify(args):
    for file in args.files:
        text = frontmatter.load(file)
+       text.content = text.content + "\n"
        file_obj = open(file, "wb")
        frontmatter.dump(text, fd = file_obj, sort_keys=False, indent=2, Dumper=MyDumper)
        file_obj.close()
