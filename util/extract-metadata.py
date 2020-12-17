@@ -5,7 +5,7 @@ import sys
 from yamllint import config, linter
 import yaml
 import frontmatter
-
+from ruamel.yaml import YAML
 __author__ = 'cjm'
 
 
@@ -51,7 +51,7 @@ def prettify(args):
        text = frontmatter.load(file)
        text.content = text.content + "\n"
        file_obj = open(file, "wb")
-       frontmatter.dump(text, fd = file_obj, sort_keys=False, indent=2, Dumper=MyDumper)
+       frontmatter.dump(text, fd = file_obj, sort_keys=False, indent=2, Dumper=MyDumper, width=1500)
        file_obj.close()
 def validate_markdown(args):
   """
