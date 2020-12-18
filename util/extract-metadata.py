@@ -5,8 +5,9 @@ import sys
 from yamllint import config, linter
 import yaml
 import frontmatter
+from frontmatter.util import u
 from ruamel.yaml import YAML
-import ruamel.yaml
+from ruamel.yaml.compat import StringIO
 __author__ = 'cjm'
 
 
@@ -47,14 +48,33 @@ class MyDumper(yaml.Dumper):
     def increase_indent(self, flow=False, indentless=False):
         return super(MyDumper, self).increase_indent(flow, False)
 
+class CustomRuemelYAMLHandler(frontmatter.YAMLHandler):
+    def __init__(self):
+        self.myyaml = YAML()
+        self.myyaml.default_flow_style = False
+        self.myyaml.allow_duplicate_keys = True
+        self.myyaml.indent(mapping=2, sequence=4, offset=2)
+        self.myyaml.explicit_start = True
+        super().__init__()
+
+    def load(self, fm, **kwargs):
+        return self.myyaml.load(fm, **kwargs)
+
+    def export(self, metadata, **kwargs):
+        stream = StringIO()
+        self.myyaml.dump(data = metadata, stream = stream)
+        metadata = stream.getvalue()
+        return u(metadata)
+
 def prettify(args):
-   # for file in args.files:
-   #     text = frontmatter.load(file)
-   #     text.content = text.content + "\n"
-   #     file_obj = open(file, "wb")
-   #     frontmatter.dump(text, fd = file_obj, sort_keys=False, indent=2, Dumper=MyDumper, width=1500)
+    for file in args.files:
+        text = frontmatter.load(file)
+        text.content = text.content + "\n"
+        file_obj = open(file, "wb")
+        frontmatter.dump(text, fd = file_obj, handler = CustomRuemelYAMLHandler() )
    #     file_obj.close()
-   print("placeholder")
+
+
 def validate_markdown(args):
   """
   Ensure the yaml encoded inside a YAML file is syntactically valid.
