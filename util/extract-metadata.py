@@ -111,19 +111,12 @@ def validate_markdown(args):
   for fn in args.files:
     # we don't do anything with the results; an
     # error is thrown
-    print(fn)
+    if not frontmatter.check(fn):
+        errs.append("%s does not contain frontmatter" %(fn))
     yamltext = get_YAML_text(fn)
-    yaml_config = config.YamlLintConfig("rules:\n  key-duplicates: enable")
-    has_duplicate_keys = False
+    yaml_config = config.YamlLintConfig(file = "util/config.yamllint")
     for p in linter.run("---\n" + yamltext, yaml_config):
-         has_duplicate_keys = True
-         print(p)
-    if not has_duplicate_keys:
-        prettify(argparse.Namespace(files=[fn]))
-        yaml_config = config.YamlLintConfig(file = "util/config.yamllint")
-        yamltext = get_YAML_text(fn)
-        for p in linter.run("---\n" + yamltext, yaml_config):
-            print(p)
+         errs.append(f"%s: {p}" %(fn))
     (obj, md) = load_md(fn)
     errs += validate_structure(obj)
   if len(errs) > 0:
@@ -131,6 +124,7 @@ def validate_markdown(args):
     for e in errs:
       print("ERROR:" + e, file=sys.stderr)
     sys.exit(1)
+
 
 
 def concat_ont_yaml(args):
@@ -248,7 +242,6 @@ def load_md(fn):
 
   Returns a tuple (yaml_obj, markdown_text)
   """
-  print(fn)
   onto_stuff = frontmatter.load(fn)
   return (onto_stuff.metadata, onto_stuff.content)
 
