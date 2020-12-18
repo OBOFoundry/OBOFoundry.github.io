@@ -48,13 +48,15 @@ class MyDumper(yaml.Dumper):
     def increase_indent(self, flow=False, indentless=False):
         return super(MyDumper, self).increase_indent(flow, False)
 
-class CustomRuemelYAMLHandler(frontmatter.YAMLHandler):
+class CustomRuamelYAMLHandler(frontmatter.YAMLHandler):
     def __init__(self):
         self.myyaml = YAML()
         self.myyaml.default_flow_style = False
         self.myyaml.allow_duplicate_keys = True
         self.myyaml.indent(mapping=2, sequence=4, offset=2)
-        self.myyaml.explicit_start = True
+        self.myyaml.preserve_quotes = True
+        self.myyaml.width = 1500
+        #self.myyaml.explicit_start = True
         super().__init__()
 
     def load(self, fm, **kwargs):
@@ -64,15 +66,18 @@ class CustomRuemelYAMLHandler(frontmatter.YAMLHandler):
         stream = StringIO()
         self.myyaml.dump(data = metadata, stream = stream)
         metadata = stream.getvalue()
+        metadata = metadata[:-1]
         return u(metadata)
 
 def prettify(args):
     for file in args.files:
-        text = frontmatter.load(file)
-        text.content = text.content + "\n"
+        handler = CustomRuamelYAMLHandler()
+        text = frontmatter.load(file, handler=handler)
         file_obj = open(file, "wb")
-        frontmatter.dump(text, fd = file_obj, handler = CustomRuemelYAMLHandler() )
-   #     file_obj.close()
+        frontmatter.dump(text, fd = file_obj, handler = handler)
+        file_obj = open(file, 'a')
+        file_obj.write('\n')
+
 
 
 def validate_markdown(args):
@@ -109,6 +114,7 @@ def validate_markdown(args):
   for fn in args.files:
     # we don't do anything with the results; an
     # error is thrown
+    print(fn)
     (obj, md) = load_md(fn)
     errs += validate_structure(obj)
   if len(errs) > 0:
@@ -256,23 +262,24 @@ def extract(mdtext, fn = "foo"):
     else:
         mlines.append(line)
   yamltext = "\n".join(ylines)
-  mtext="\n".join(mlines)
-  myyaml = YAML()
-  myyaml.default_flow_style = False
-  myyaml.allow_duplicate_keys = True
-  myyaml.indent(mapping=2, sequence=4, offset=2)
-  myyaml.explicit_start = True
-  #try:
-  c = open(fn, "w")
-  i = myyaml.load(yamltext)
-  myyaml.dump(i, c)
-
-  c = open(fn, "r")
-  yamltext = c.read()
-  c.close()
-  c = open(fn, "a")
-  c.write("---\n" + mtext)
-  c.close()
+  # mtext="\n".join(mlines)
+  # myyaml = YAML()
+  # yaml.preserve_quotes = True
+  # myyaml.default_flow_style = False
+  # myyaml.allow_duplicate_keys = True
+  # myyaml.indent(mapping=2, sequence=4, offset=2)
+  # myyaml.explicit_start = True
+  # #try:
+  # c = open(fn, "w")
+  # i = myyaml.load(yamltext)
+  # myyaml.dump(i, c)
+  #
+  # c = open(fn, "r")
+  # yamltext = c.read()
+  # c.close()
+  # c = open(fn, "a")
+  # c.write("---\n" + mtext)
+  # c.close()
   #except ruamel.yaml.constructor.DuplicateKeyError:
       #print("is not working")
   yaml_config = config.YamlLintConfig(file = "util/config.yamllint")
