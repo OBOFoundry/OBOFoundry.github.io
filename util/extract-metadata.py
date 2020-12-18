@@ -44,10 +44,6 @@ def main():
   func = args.function
   func(args)
 
-class MyDumper(yaml.Dumper):
-    def increase_indent(self, flow=False, indentless=False):
-        return super(MyDumper, self).increase_indent(flow, False)
-
 class CustomRuamelYAMLHandler(frontmatter.YAMLHandler):
     def __init__(self):
         self.myyaml = YAML()
@@ -77,6 +73,7 @@ def prettify(args):
         frontmatter.dump(text, fd = file_obj, handler = handler)
         file_obj = open(file, 'a')
         file_obj.write('\n')
+        file_obj.close()
 
 
 
@@ -115,6 +112,18 @@ def validate_markdown(args):
     # we don't do anything with the results; an
     # error is thrown
     print(fn)
+    yamltext = get_YAML_text(fn)
+    yaml_config = config.YamlLintConfig("rules:\n  key-duplicates: enable")
+    has_duplicate_keys = False
+    for p in linter.run("---\n" + yamltext, yaml_config):
+         has_duplicate_keys = True
+         print(p)
+    if not has_duplicate_keys:
+        prettify(argparse.Namespace(files=[fn]))
+        yaml_config = config.YamlLintConfig(file = "util/config.yamllint")
+        yamltext = get_YAML_text(fn)
+        for p in linter.run("---\n" + yamltext, yaml_config):
+            print(p)
     (obj, md) = load_md(fn)
     errs += validate_structure(obj)
   if len(errs) > 0:
@@ -239,54 +248,26 @@ def load_md(fn):
 
   Returns a tuple (yaml_obj, markdown_text)
   """
-  with open(fn, 'r') as f:
-    text = f.read()
-  return extract(text, fn)
+  print(fn)
+  onto_stuff = frontmatter.load(fn)
+  return (onto_stuff.metadata, onto_stuff.content)
 
+def get_YAML_text(fn):
+    with open(fn, 'r') as f:
+      text = f.read()
+      chunks = text.split("---")
+      yamltext = chunks[1].strip()
+      return yamltext
 
-def extract(mdtext, fn = "foo"):
-  """
-  Extract a yaml text blob from markdown text and parse the blob.
-
-  Returns a tuple (yaml_obj, markdown_text)
-  """
-  lines = mdtext.split("\n")
-  n = 0
-  ylines = []
-  mlines = []
-  for line in lines:
-    if (line == "---"):
-        n = n + 1
-    elif n == 1:
-        ylines.append(line)
-    else:
-        mlines.append(line)
-  yamltext = "\n".join(ylines)
-  # mtext="\n".join(mlines)
-  # myyaml = YAML()
-  # yaml.preserve_quotes = True
-  # myyaml.default_flow_style = False
-  # myyaml.allow_duplicate_keys = True
-  # myyaml.indent(mapping=2, sequence=4, offset=2)
-  # myyaml.explicit_start = True
-  # #try:
-  # c = open(fn, "w")
-  # i = myyaml.load(yamltext)
-  # myyaml.dump(i, c)
-  #
-  # c = open(fn, "r")
-  # yamltext = c.read()
-  # c.close()
-  # c = open(fn, "a")
-  # c.write("---\n" + mtext)
-  # c.close()
-  #except ruamel.yaml.constructor.DuplicateKeyError:
-      #print("is not working")
-  yaml_config = config.YamlLintConfig(file = "util/config.yamllint")
-  for p in linter.run("---\n" + yamltext, yaml_config):
-       print(p)
-  obj = yaml.load(yamltext, Loader=yaml.SafeLoader)
-  return (obj, "\n".join(mlines))
+# def extract(mdtext, fn = "foo"):
+#   """
+#   Extract a yaml text blob from markdown text and parse the blob.
+#
+#   Returns a tuple (yaml_obj, markdown_text)
+#   """
+#
+#   obj = frontmatter.load()
+#   return (obj, "\n".join(mlines))
 
 
 if __name__ == "__main__":
