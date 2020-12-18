@@ -6,6 +6,7 @@ from yamllint import config, linter
 import yaml
 import frontmatter
 from ruamel.yaml import YAML
+import ruamel.yaml
 __author__ = 'cjm'
 
 
@@ -47,12 +48,13 @@ class MyDumper(yaml.Dumper):
         return super(MyDumper, self).increase_indent(flow, False)
 
 def prettify(args):
-   for file in args.files:
-       text = frontmatter.load(file)
-       text.content = text.content + "\n"
-       file_obj = open(file, "wb")
-       frontmatter.dump(text, fd = file_obj, sort_keys=False, indent=2, Dumper=MyDumper, width=1500)
-       file_obj.close()
+   # for file in args.files:
+   #     text = frontmatter.load(file)
+   #     text.content = text.content + "\n"
+   #     file_obj = open(file, "wb")
+   #     frontmatter.dump(text, fd = file_obj, sort_keys=False, indent=2, Dumper=MyDumper, width=1500)
+   #     file_obj.close()
+   print("placeholder")
 def validate_markdown(args):
   """
   Ensure the yaml encoded inside a YAML file is syntactically valid.
@@ -211,13 +213,12 @@ def load_md(fn):
 
   Returns a tuple (yaml_obj, markdown_text)
   """
-  print(fn)
   with open(fn, 'r') as f:
     text = f.read()
-  return extract(text)
+  return extract(text, fn)
 
 
-def extract(mdtext):
+def extract(mdtext, fn = "foo"):
   """
   Extract a yaml text blob from markdown text and parse the blob.
 
@@ -235,6 +236,25 @@ def extract(mdtext):
     else:
         mlines.append(line)
   yamltext = "\n".join(ylines)
+  mtext="\n".join(mlines)
+  myyaml = YAML()
+  myyaml.default_flow_style = False
+  myyaml.allow_duplicate_keys = True
+  myyaml.indent(mapping=2, sequence=4, offset=2)
+  myyaml.explicit_start = True
+  #try:
+  c = open(fn, "w")
+  i = myyaml.load(yamltext)
+  myyaml.dump(i, c)
+
+  c = open(fn, "r")
+  yamltext = c.read()
+  c.close()
+  c = open(fn, "a")
+  c.write("---\n" + mtext)
+  c.close()
+  #except ruamel.yaml.constructor.DuplicateKeyError:
+      #print("is not working")
   yaml_config = config.YamlLintConfig(file = "util/config.yamllint")
   for p in linter.run("---\n" + yamltext, yaml_config):
        print(p)
