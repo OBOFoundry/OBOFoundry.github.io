@@ -108,6 +108,7 @@ def validate_markdown(args):
     return errs
 
   errs = []
+  warn = []
   for fn in args.files:
     # we don't do anything with the results; an
     # error is thrown
@@ -116,9 +117,16 @@ def validate_markdown(args):
     yamltext = get_YAML_text(fn)
     yaml_config = config.YamlLintConfig(file = "util/config.yamllint")
     for p in linter.run("---\n" + yamltext, yaml_config):
-         errs.append(f"%s: {p}" %(fn))
+        if p.level == "error":
+           errs.append(f"%s: {p}" %(fn))
+        elif p.level=="warning":
+           warn.append(f"%s: {p}" %(fn))
     (obj, md) = load_md(fn)
     errs += validate_structure(obj)
+  if len(warn) > 0:
+      print("WARNINGS:", file = sys.stderr)
+      for w in warn:
+          print("WARN: " + w, file=sys.stderr)
   if len(errs) > 0:
     print("FAILURES:", file=sys.stderr)
     for e in errs:
