@@ -24,8 +24,6 @@ browsers:
   - label: TOXPILOT
     title: TOXPILOT
     url: https://toxpilot.nibiohn.go.jp/
-products:
-  - id: txpo.owl
 activity_status: active
 ---
 

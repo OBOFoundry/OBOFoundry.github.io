@@ -26,9 +26,6 @@ taxon:
   id: NCBITaxon:10197
   label: Ctenophore
 tracker: https://github.com/obophenotype/ctenophore-ontology/issues
-jobs:
-  - id: https://travis-ci.org/obophenotype/ctenophore-ontology
-    type: travis-ci
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY

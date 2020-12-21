@@ -169,27 +169,20 @@ products:
    description: Extended uberon plus all metazoan ontologies
    page: https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies
    taxon: Metazoa
-   mireots_from: zfa
-   mireots_from: xao
-   mireots_from: fbbt
-   mireots_from: wbbt
-   mireots_from: ma
-   mireots_from: fma
-   mireots_from: emapa
-   mireots_from: ehdaa2
  - id: uberon/composite-vertebrate.owl
    type: MergedOntology
    title: Uberon composite vertebrate ontology
    page: https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies
    taxon: Metazoa
-   mireots_from: zfa
-   mireots_from: xao
-   mireots_from: fbbt
-   mireots_from: wbbt
-   mireots_from: ma
-   mireots_from: fma
-   mireots_from: emapa
-   mireots_from: ehdaa2
+   mireots_from:
+    - zfa
+    - xao
+    - fbbt
+    - wbbt
+    - ma
+    - fma
+    - emapa
+    - ehdaa2
 activity_status: active
 ---
 

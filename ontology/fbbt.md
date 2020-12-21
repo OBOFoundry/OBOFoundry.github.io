@@ -51,6 +51,8 @@ usages:
     example:
       - url: http://www.virtualflybrain.org/site/stacks/index.htm?id=FBbt_00003651
         description: "Ring neuron R2 in VFB"
+  - user: http://www.virtualflybrain.org/
+    description: VFB uses FBbt to annotate brain images
     example:
       - url: http://www.virtualflybrain.org/do/gene_list.html?action=geneex&id=FBbt:00003651
         description: "genes expressed in ring neuron R2 in VFB"
@@ -66,4 +68,3 @@ An ontology representing the gross anatomy of Drosophila melanogaster.
 
 FBbt can be cited as:
 _Costa M., Reeve S., Grumbling G., Osumi-Sutherland D._ (2013) The Drosophila anatomy ontology. [Journal of Biomedical Semantics __4__(32).](https://doi.org/10.1186/2041-1480-4-32)
-

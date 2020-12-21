@@ -2,7 +2,6 @@
 layout: ontology_detail
 id: go
 in_foundry_order: 1
-homepage: geneontology.org
 contact:
   email: suzia@stanford.edu
   label: Suzi Aleksander
@@ -103,4 +102,3 @@ activity_status: active
 ---
 
 The goal of the GeneOntology (GO) project is to provide a uniformway to describe the functions of gene products from organisms across all kingdoms of life and thereby enable analysis of genomic data
-
