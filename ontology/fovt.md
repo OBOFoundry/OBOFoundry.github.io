@@ -26,14 +26,14 @@ products:
   - id: fovt/fovt-base.obo
     name: "FuTRES Ontology of Vertebrate Traits additional release in OBO format"
 dependencies:
-- id: bco
-- id: oba
-- id: ro
-- id: bfo
-- id: pato
-- id: bspo
-- id: iao
-- id: uberon
+  - id: bco
+  - id: oba
+  - id: ro
+  - id: bfo
+  - id: pato
+  - id: bspo
+  - id: iao
+  - id: uberon
 
 tracker: https://github.com/futres/fovt/issues
 license:

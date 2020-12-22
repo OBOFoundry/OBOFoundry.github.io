@@ -33,51 +33,51 @@ products:
     homepage: http://environmentontology.org/downloads
 title: Environment Ontology
 dependencies:
- - id: uberon
- - id: pco
- - id: ro
- - id: chebi
- - id: ncbitaxon
- - id: foodon
- - id: po
- - id: go
+  - id: uberon
+  - id: pco
+  - id: ro
+  - id: chebi
+  - id: ncbitaxon
+  - id: foodon
+  - id: po
+  - id: go
 usages:
- - type: data-annotation
-   description: "describing species habitats"
-   examples:
-     url: http://eol.org/pages/211700/data
-   resources:
-     url: http://eol.org
-     label: EOL
- - type: data-annotation
-   description: "describing stomach contents"
-   datasets:
-     url: https://s3.amazonaws.com/globi/snapshot/target/data/taxa/interactions.csv.gz
-   resources:
-     url: http://globalbioticinteractions.org
-     label: GloBI
- - type: dataset-description
-   description: "annotating datasets in data repositories"
-   seeAlso: http://blogs.nature.com/scientificdata/2015/12/17/isa-explorer/
-   search: http://scientificdata.isa-explorer.org/
-   resources:
-     url: http://www.nature.com/sdata/
-     label: Nature Scientific Data
- - user: http://oceans.taraexpeditions.org/en/
-   description: Samples collected during Tara Oceans expedition are annotated with ENVO
-   example:
-     - url: https://www.ebi.ac.uk/metagenomics/projects/ERP001736/samples/ERS487899
-       description: "Sample collected during the Tara Oceans expedition (2009-2013) at station TARA_004 (latitudeN=36.5533, longitudeE=-6.5669)"
- - user: https://www.ncbi.nlm.nih.gov/
-   description: Annotation of habitats of microbes
-   example:
-     - url: https://www.ncbi.nlm.nih.gov/nuccore/NC_016642
-       description: "Annotation of habitat of Pseudovibrio sp. FO-BEG1 to marine environment"
- - user: https://www.planetmicrobe.org/project/
-   description: Annotation and semantic search over microbial data sets
-   example:
-     - url: https://www.planetmicrobe.org/project/#/samples/200
-       description: "Example metadata of a sample of marine water near Lisboa, taken as part of the Ocean Sampling Day Project (https://www.microb3.eu/osd.html). ENVO is used for the fields environmental feature, material, and biome."  
+  - type: data-annotation
+    description: "describing species habitats"
+    examples:
+      url: http://eol.org/pages/211700/data
+    resources:
+      url: http://eol.org
+      label: EOL
+  - type: data-annotation
+    description: "describing stomach contents"
+    datasets:
+      url: https://s3.amazonaws.com/globi/snapshot/target/data/taxa/interactions.csv.gz
+    resources:
+      url: http://globalbioticinteractions.org
+      label: GloBI
+  - type: dataset-description
+    description: "annotating datasets in data repositories"
+    seeAlso: http://blogs.nature.com/scientificdata/2015/12/17/isa-explorer/
+    search: http://scientificdata.isa-explorer.org/
+    resources:
+      url: http://www.nature.com/sdata/
+      label: Nature Scientific Data
+  - user: http://oceans.taraexpeditions.org/en/
+    description: Samples collected during Tara Oceans expedition are annotated with ENVO
+    example:
+      - url: https://www.ebi.ac.uk/metagenomics/projects/ERP001736/samples/ERS487899
+        description: "Sample collected during the Tara Oceans expedition (2009-2013) at station TARA_004 (latitudeN=36.5533, longitudeE=-6.5669)"
+  - user: https://www.ncbi.nlm.nih.gov/
+    description: Annotation of habitats of microbes
+    example:
+      - url: https://www.ncbi.nlm.nih.gov/nuccore/NC_016642
+        description: "Annotation of habitat of Pseudovibrio sp. FO-BEG1 to marine environment"
+  - user: https://www.planetmicrobe.org/project/
+    description: Annotation and semantic search over microbial data sets
+    example:
+      - url: https://www.planetmicrobe.org/project/#/samples/200
+        description: "Example metadata of a sample of marine water near Lisboa, taken as part of the Ocean Sampling Day Project (https://www.microb3.eu/osd.html). ENVO is used for the fields environmental feature, material, and biome."
 
 
 jobs:
@@ -90,7 +90,7 @@ build:
   path: .
   method: vcs
   infallible: 1
-tracker: https://github.com/EnvironmentOntology/envo/issues/  
+tracker: https://github.com/EnvironmentOntology/envo/issues/
 activity_status: active
 ---
 

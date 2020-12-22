@@ -33,6 +33,7 @@ usages:
         description: "alleles and constructs annotated to bang sensitive in FlyBase"
 activity_status: active
 ---
+
 A structured controlled vocabulary used for various aspects of annotation by FlyBase. It includes the Drosophila Phenotype Ontology (dpo) which is also released separately.
 
 This ontology is maintained by FlyBase for various aspects of annotation not covered, or not yet covered, by other OBO ontologies.  If and when community ontologies are available for the domains here covered FlyBase will use them.

@@ -13,5 +13,3 @@ is_obsolete: true
 replaced_by: pdumdv
 activity_status: inactive
 ---
-
-

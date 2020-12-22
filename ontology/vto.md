@@ -18,8 +18,8 @@ license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC-0
 usages:
- - user: http://phenoscape.org
-   description: Phenoscape uses VTO to annotate systematics data
+  - user: http://phenoscape.org
+    description: Phenoscape uses VTO to annotate systematics data
 activity_status: active
 ---
 

@@ -11,10 +11,10 @@ products:
 title: Cell Line Ontology
 tracker: https://github.com/CLO-Ontology/CLO/issues
 dependencies:
- - id: uberon
- - id: cl
- - id: doid
- - id: ncbitaxon
+  - id: uberon
+  - id: cl
+  - id: doid
+  - id: ncbitaxon
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
@@ -39,5 +39,4 @@ Note that the source ontology is a merged OWL file.
 # Browsing
 
 * Default browsing in Ontobee: [http://www.ontobee.org/ontology/clo](http://www.ontobee.org/ontology/clo)
-* Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/CLO](https://bioportal.bioontology.org/ontologies/CLO)  
-
+* Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/CLO](https://bioportal.bioontology.org/ontologies/CLO)

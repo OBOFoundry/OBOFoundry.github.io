@@ -29,4 +29,3 @@ A structured controlled vocabulary for cross-linker reagents used in cross-linki
 ## Mailing Lists
 
  * https://lists.sourceforge.net/lists/listinfo/psidev-ms-vocab
-

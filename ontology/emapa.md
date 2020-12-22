@@ -24,12 +24,11 @@ build:
   source_url: ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAPA.obo
   method: obo2owl
 usages:
- - user: http://www.informatics.jax.org/expression.shtml
-   seeAlso: https://www.biosharing.org/biodbcore-000659
-   description: GXD
+  - user: http://www.informatics.jax.org/expression.shtml
+    seeAlso: https://www.biosharing.org/biodbcore-000659
+    description: GXD
 activity_status: active
 ---
-
 
 ## BACKGROUND
 

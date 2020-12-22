@@ -20,8 +20,8 @@ homepage: https://github.com/obophenotype/ctenophore-ontology
 products:
   - id: cteno.owl
 dependencies:
- - id: uberon
- - id: ro
+  - id: uberon
+  - id: ro
 taxon:
   id: NCBITaxon:10197
   label: Ctenophore
