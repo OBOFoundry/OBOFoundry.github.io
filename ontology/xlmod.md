@@ -13,6 +13,7 @@ domain: MS cross-linker reagents
 mailing_list: psidev-ms-vocab@lists.sourceforge.net
 homepage: http://www.psidev.info/groups/controlled-vocabularies
 page: http://www.psidev.info/groups/controlled-vocabularies
+tracker: https://github.com/HUPO-PSI/mzIdentML/issues
 products:
   - id: xlmod.obo
 license:
