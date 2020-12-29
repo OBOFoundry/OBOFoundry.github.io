@@ -1,6 +1,8 @@
 ---
 layout: ontology_detail
 id: ons
+label: Ontology for Nutritional Studies
+title: Ontology for Nutritional Studies
 contact:
   email: francesco.vitali@ibba.cnr.it
   label: Francesco Vitali
