@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: hsapdv
+preferredPrefix: HsapDv
 title: Human Developmental Stages
 build:
   source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/hsapdv/hsapdv.obo
