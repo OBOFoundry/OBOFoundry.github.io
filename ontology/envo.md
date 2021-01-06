@@ -78,8 +78,6 @@ usages:
     example:
       - url: https://www.planetmicrobe.org/project/#/samples/200
         description: "Example metadata of a sample of marine water near Lisboa, taken as part of the Ocean Sampling Day Project (https://www.microb3.eu/osd.html). ENVO is used for the fields environmental feature, material, and biome."
-
-
 jobs:
   - id: https://travis-ci.org/EnvironmentOntology/envo
     type: travis-ci
