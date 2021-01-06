@@ -17,7 +17,6 @@ license:
 products:
   - id: ons.owl
     title: ONS latest release
-title: ONS
 dependencies:
   - id: uberon
   - id: ro
