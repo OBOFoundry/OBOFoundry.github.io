@@ -48,12 +48,9 @@ publications:
 usages:
   - user: http://www.virtualflybrain.org/
     description: VFB uses FBbt to annotate brain images
-    example:
+    examples:
       - url: http://www.virtualflybrain.org/site/stacks/index.htm?id=FBbt_00003651
         description: "Ring neuron R2 in VFB"
-  - user: http://www.virtualflybrain.org/
-    description: VFB uses FBbt to annotate brain images
-    example:
       - url: http://www.virtualflybrain.org/do/gene_list.html?action=geneex&id=FBbt:00003651
         description: "genes expressed in ring neuron R2 in VFB"
   - user: http://flybase.org
