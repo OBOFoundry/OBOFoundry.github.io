@@ -12,7 +12,7 @@ tracker: https://github.com/txpo-ontology/TXPO/issues
 products:
   - id: txpo.owl
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
+  url: https://creativecommons.org/licenses/by/3.0/
   label: CC-BY version 3.0
 title: Toxic Process Ontology
 #depicted_by: icon_url
