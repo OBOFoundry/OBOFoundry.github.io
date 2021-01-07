@@ -5,6 +5,7 @@ products:
   - id: vt.owl
 title: Vertebrate trait ontology
 homepage: https://github.com/AnimalGenome/vertebrate-trait-ontology
+tracker: https://github.com/AnimalGenome/vertebrate-trait-ontology/issues
 contact:
   label: Carissa Park
   email: caripark@iastate.edu

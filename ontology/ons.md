@@ -1,12 +1,14 @@
 ---
 layout: ontology_detail
 id: ons
+label: Ontology for Nutritional Studies
+title: Ontology for Nutritional Studies
 contact:
   email: francesco.vitali@ibba.cnr.it
   label: Francesco Vitali
   github: FrancescoVit
-description: An ontology for description of concepts in the nutritional studies domain. 
-domain: nutrition, nutritional studies, nutrition professionals 
+description: An ontology for description of concepts in the nutritional studies domain.
+domain: nutrition, nutritional studies, nutrition professionals
 homepage: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
 page: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
 license:
@@ -15,16 +17,15 @@ license:
 products:
   - id: ons.owl
     title: ONS latest release
-title: ONS
 dependencies:
- - id: uberon
- - id: ro
- - id: chebi
- - id: ncbitaxon
- - id: bfo
- - id: envo
- - id: obi
- - id: foodon
+  - id: uberon
+  - id: ro
+  - id: chebi
+  - id: ncbitaxon
+  - id: bfo
+  - id: envo
+  - id: obi
+  - id: foodon
 tracker: https://github.com/enpadasi/Ontology-for-Nutritional-Studies/issues
 activity_status: active
 ---

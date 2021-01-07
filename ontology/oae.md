@@ -12,7 +12,7 @@ products:
   - id: oae.owl
 title: Ontology of Adverse Events
 build:
-  source_url: https://raw.githubusercontent.com/OAE-ontology/OAE/master/src/oae_merged.owl 
+  source_url: https://raw.githubusercontent.com/OAE-ontology/OAE/master/src/oae_merged.owl
   method: owl2obo
 license:
   url: http://creativecommons.org/licenses/by/3.0/

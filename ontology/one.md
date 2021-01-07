@@ -7,8 +7,8 @@ contact:
   email: chen.yang@ugent.be
   label: Chen Yang
   github: cyang0128
-description: An ontology to standardize research output of nutritional epidemiologic studies. 
-domain: nutritional epidemiology, observational studies, dietary surveys 
+description: An ontology to standardize research output of nutritional epidemiologic studies.
+domain: nutritional epidemiology, observational studies, dietary surveys
 homepage: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
 page: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
 license:
@@ -17,9 +17,9 @@ license:
 products:
   - id: one.owl
 dependencies:
- - id: ons
- - id: obi
- - id: foodon
+  - id: ons
+  - id: obi
+  - id: foodon
 tracker: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies/issues
 activity_status: active
 ---

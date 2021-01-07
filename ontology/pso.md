@@ -19,7 +19,7 @@ products:
   - id: pso.owl
   - id: pso.obo
 dependencies:
- - id: ro
+  - id: ro
 tracker: https://github.com/Planteome/plant-stress-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
