@@ -25,4 +25,3 @@ activity_status: active
 ---
 
 GSSO on BioPortal: https://bioportal.bioontology.org/ontologies/GSSO
-

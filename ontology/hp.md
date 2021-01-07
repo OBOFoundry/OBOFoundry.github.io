@@ -47,12 +47,12 @@ publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/30476213
     title: "Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources."
 usages:
- - user: https://monarchinitiative.org/
-   type: annotation
-   description: HPO is used by the Monarch Initiative for phenotype annotations.
-   examples:
-    - url: https://monarchinitiative.org/phenotype/HP:0001300
-   reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
+  - user: https://monarchinitiative.org/
+    type: annotation
+    description: HPO is used by the Monarch Initiative for phenotype annotations.
+    examples:
+      - url: https://monarchinitiative.org/phenotype/HP:0001300
+    reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
 activity_status: active
 ---
 

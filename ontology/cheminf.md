@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: cheminf
 contact:
-  email: egon.willighagen@gmail.com 
+  email: egon.willighagen@gmail.com
   label: Egon Willighagen
 tracker: https://github.com/semanticchemistry/semanticchemistry/issues
 license:

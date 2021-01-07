@@ -34,4 +34,4 @@ Note that the source ontology is a merged OWL file.
 # Browsing
 
 * Default browsing in Ontobee: [http://www.ontobee.org/ontology/ogg](http://www.ontobee.org/ontology/ogg)
-* Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/OGG](https://bioportal.bioontology.org/ontologies/OGG)   
+* Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/OGG](https://bioportal.bioontology.org/ontologies/OGG)

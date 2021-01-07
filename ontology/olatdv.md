@@ -21,8 +21,3 @@ license:
   label: CC-BY
 activity_status: active
 ---
-
-
-
-
-

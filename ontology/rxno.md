@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: rxno
-contact: 
+contact:
   email: batchelorc@rsc.org
   label: Colin Batchelor
 license:
@@ -15,7 +15,7 @@ tracker: https://github.com/rsc-ontologies/rxno/issues
 build:
   source_url: https://raw.githubusercontent.com/rsc-ontologies/rxno/master/rxno.owl
   method: owl2obo
-products: 
+products:
   - id: rxno.owl
     title: Name Reaction Ontology
 activity_status: active

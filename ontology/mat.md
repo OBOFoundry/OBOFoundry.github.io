@@ -5,7 +5,7 @@ title: Minimal anatomical terminology
 contact:
   email: j.bard@ed.ac.uk
   label: Jonathan Bard
-homepage: 
+homepage:
 is_obsolete: true
 activity_status: inactive
 ---

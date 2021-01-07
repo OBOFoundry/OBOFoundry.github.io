@@ -11,8 +11,7 @@ description: A structured controlled vocabulary for sequence annotation, for the
 domain: biological sequence
 homepage: https://github.com/The-Sequence-Ontology/SO-Ontologies
 mailing_list: https://sourceforge.net/p/song/mailman/song-devel/
-page:
-  https://en.wikipedia.org/wiki/Sequence_Ontology
+page: https://en.wikipedia.org/wiki/Sequence_Ontology
 products:
   - id: so.owl
   - id: so.obo
@@ -42,6 +41,3 @@ The Sequence Ontologies are provided as a resource to the biological community. 
  * To provide a structured controlled vocabulary for the description of mutations at both the sequence and more gross level in the context of genomic databases.
 
 The Sequence Ontology is part of OBO. It has close links to other ontology projects such as the RNAO consortium, and the Biosapiens polypeptide features.
-
-
-
