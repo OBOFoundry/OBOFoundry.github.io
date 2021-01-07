@@ -6,7 +6,6 @@ description: Comprehensive hierarchy of extinct and extant vertebrate taxa.
 products:
   - id: vto.owl
   - id: vto.obo
-title: Vertebrate Taxonomy Ontology
 homepage: https://github.com/phenoscape/vertebrate-taxonomy-ontology
 tracker: https://github.com/phenoscape/vertebrate-taxonomy-ontology/issues
 redirects:
@@ -19,8 +18,8 @@ license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC-0
 usages:
- - user: http://phenoscape.org
-   description: Phenoscape uses VTO to annotate systematics data
+  - user: http://phenoscape.org
+    description: Phenoscape uses VTO to annotate systematics data
 activity_status: active
 ---
 

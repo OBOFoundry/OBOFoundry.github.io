@@ -6,7 +6,7 @@ contact:
   label: Pankaj Jaiswal
 description: A controlled vocabulary of describe phenotypic traits in plants.
 domain: phenotype
-homepage:  http://browser.planteome.org/amigo
+homepage: http://browser.planteome.org/amigo
 page: http://browser.planteome.org/amigo/term/TO:0000387#display-lineage-tab
 products:
   - id: to.owl
@@ -19,9 +19,9 @@ taxon:
   label: Viridiplantae
 title: Plant Trait Ontology
 browsers:
- - label: Planteome
-   title: Planteome browser
-   url: http://browser.planteome.org/amigo/term/TO:0000387#display-lineage-tab
+  - label: Planteome
+    title: Planteome browser
+    url: http://browser.planteome.org/amigo/term/TO:0000387#display-lineage-tab
 jobs:
   - id: https://travis-ci.org/Planteome/plant-trait-ontology
     type: travis-ci

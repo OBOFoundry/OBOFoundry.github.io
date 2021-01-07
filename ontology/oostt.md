@@ -13,7 +13,7 @@ products:
 tracker: https://github.com/OOSTT/OOSTT/issues
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY  
+  label: CC-BY
 activity_status: active
 ---
 

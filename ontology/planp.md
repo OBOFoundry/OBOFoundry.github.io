@@ -19,10 +19,10 @@ products:
   - id: planp.owl
   - id: planp.obo
 dependencies:
- - id: ro
- - id: pato
- - id: plana
- - id: go
+  - id: ro
+  - id: pato
+  - id: plana
+  - id: go
 tracker: https://github.com/obophenotype/planarian-phenotype-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/

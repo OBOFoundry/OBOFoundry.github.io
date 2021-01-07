@@ -8,7 +8,7 @@ contact:
 taxon:
   id: NCBITaxon:4932
   label: Saccharomyces cerevisiae
-homepage: http://www.yeastgenome.org/ 
+homepage: http://www.yeastgenome.org/
 is_obsolete: true
 replaced_by: apo
 activity_status: inactive
