@@ -19,7 +19,7 @@ build:
   infallible: 1
 contact:
   email: mgiglio@som.umaryland.edu
-  label: Michelle Giglio 
+  label: Michelle Giglio
   github: mgiglio99
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/30407590
@@ -32,18 +32,18 @@ license:
 funded_by:
   - "http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400"
 usages:
- - user: http://geneontology.org
-   type: annotation
-   description: ECO is used by the GO consortium for evidence on GO associations
-   examples:
-    - url: http://amigo.geneontology.org/amigo/term/GO:0055085
-      description: annotations to transmembrane transport
- - user: https://monarchinitiative.org/
-   type: annotation
-   description: ECO is used by the Monarch Initiative for evidence types for disease to phenotype annotations.
-   examples:
-    - url: https://monarchinitiative.org/phenotype/HP%3A0001300#diseases
-   reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
+  - user: http://geneontology.org
+    type: annotation
+    description: ECO is used by the GO consortium for evidence on GO associations
+    examples:
+      - url: http://amigo.geneontology.org/amigo/term/GO:0055085
+        description: annotations to transmembrane transport
+  - user: https://monarchinitiative.org/
+    type: annotation
+    description: ECO is used by the Monarch Initiative for evidence types for disease to phenotype annotations.
+    examples:
+      - url: https://monarchinitiative.org/phenotype/HP%3A0001300#diseases
+    reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
 activity_status: active
 ---
 

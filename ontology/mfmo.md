@@ -18,7 +18,7 @@ contact:
   label: Robert Druzinsky
   github: RDruzinsky
 dependencies:
- - id: uberon
+  - id: uberon
 products:
   - id: mfmo.owl
 activity_status: active

@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: zeco
-title:  Zebrafish Experimental Conditions Ontology
+title: Zebrafish Experimental Conditions Ontology
 description: Experimental conditions applied to zebrafish, developed to facilitate experiment condition annotation at ZFIN
 domain: environment
 homepage: https://github.com/ybradford/zebrafish-experimental-conditions-ontology

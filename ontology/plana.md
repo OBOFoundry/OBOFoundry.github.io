@@ -19,8 +19,8 @@ products:
   - id: plana.owl
   - id: plana.obo
 dependencies:
- - id: ro
- - id: uberon
+  - id: ro
+  - id: uberon
 tracker: https://github.com/obophenotype/planaria-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/

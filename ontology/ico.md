@@ -11,7 +11,7 @@ contact:
   label: Yongqun Oliver He
   github: yongqunh
 homepage: https://github.com/ICO-ontology/ICO
-tracker: https://github.com/ICO-ontology/ICO/issues 
+tracker: https://github.com/ICO-ontology/ICO/issues
 products:
   - id: ico.owl
 activity_status: active

@@ -17,7 +17,7 @@ products:
   - id: clao.owl
   - id: clao.obo
 dependencies:
- - id: ro
+  - id: ro
 tracker: https://github.com/luis-gonzalez-m/Collembola/issues
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/

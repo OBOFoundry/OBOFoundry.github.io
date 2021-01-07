@@ -42,4 +42,3 @@ The current developers of OHD are Alan Ruttenberg(alanruttenberg@gmail.com) and 
 Initial work on OHD was funded by the University of Buffalo School of
 Dental Medicine and NIDCR grants 5R21DE021178-02 and 5R03DE023358-02,
 PI: Titus Schleyer (schleyer@regenstrief.org)
-

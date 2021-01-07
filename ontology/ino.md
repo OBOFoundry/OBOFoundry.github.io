@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: ino
 title: Interaction Network Ontology
-description: An ontology of interactions and interaction networks 
+description: An ontology of interactions and interaction networks
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY

@@ -19,20 +19,20 @@ products:
   - id: mco.owl
   - id: mco.obo
 dependencies:
- - id: bfo
- - id: chebi
- - id: cl
- - id: clo
- - id: micro
- - id: ncbitaxon
- - id: peco
- - id: ncit
- - id: obi
- - id: omit
- - id: omp
- - id: pato
- - id: uberon
- - id: zeco
+  - id: bfo
+  - id: chebi
+  - id: cl
+  - id: clo
+  - id: micro
+  - id: ncbitaxon
+  - id: peco
+  - id: ncit
+  - id: obi
+  - id: omit
+  - id: omp
+  - id: pato
+  - id: uberon
+  - id: zeco
 tracker: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
@@ -42,4 +42,4 @@ activity_status: active
 
 Enter a detailed description of your ontology here
 
-Microbial Conditions Ontology contains terms to describe growth conditions in microbiological experiments. The first version is based on gene regulation experiments in Escherichia coli K-12. It is being used in RegulonDB to link growth conditions to gene regulation data. 
+Microbial Conditions Ontology contains terms to describe growth conditions in microbiological experiments. The first version is based on gene regulation experiments in Escherichia coli K-12. It is being used in RegulonDB to link growth conditions to gene regulation data.

@@ -17,9 +17,9 @@ products:
   - id: clyh.owl
   - id: clyh.obo
 dependencies:
- - id: uberon
- - id: ro
- - id: iao
+  - id: uberon
+  - id: ro
+  - id: iao
 tracker: https://github.com/EBISPOT/clyh_ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/

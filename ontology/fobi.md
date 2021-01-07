@@ -16,10 +16,10 @@ products:
     format: owl-rdf/xml
 title: FOBI
 dependencies:
- - id: chebi
- - id: foodon
+  - id: chebi
+  - id: foodon
 tracker: https://github.com/pcastellanoescuder/FoodBiomarkerOntology/issues
 activity_status: active
 ---
 
-FOBI (Food-Biomarker Ontology) is composed of two interconnected sub-ontologies. One is a ”Food Ontology” consisting of raw foods and multi-ingredient foods while the second is a ”Biomarker Ontology” containing food intake biomarkers classified by their chemical classes. These two sub-ontologies are conceptually independent but interconnected by different properties. 
+FOBI (Food-Biomarker Ontology) is composed of two interconnected sub-ontologies. One is a ”Food Ontology” consisting of raw foods and multi-ingredient foods while the second is a ”Biomarker Ontology” containing food intake biomarkers classified by their chemical classes. These two sub-ontologies are conceptually independent but interconnected by different properties.

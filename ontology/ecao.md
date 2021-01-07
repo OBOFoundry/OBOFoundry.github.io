@@ -17,9 +17,9 @@ products:
   - id: ecao.owl
   - id: ecao.obo
 dependencies:
- - id: uberon
- - id: ro
- - id: cl
+  - id: uberon
+  - id: ro
+  - id: cl
 tracker: https://github.com/echinoderm-ontology/ecao_ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/

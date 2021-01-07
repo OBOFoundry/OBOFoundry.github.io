@@ -30,9 +30,9 @@ browsers:
     title: BioPortal Browser
     url: http://bioportal.bioontology.org/ontologies/BFO?p=classes
 usages:
- - user: http://obofoundry.org
-   type: owl_import
-   description: BFO is imported by multiple OBO ontologies to standardize upper level structure
+  - user: http://obofoundry.org
+    type: owl_import
+    description: BFO is imported by multiple OBO ontologies to standardize upper level structure
 activity_status: active
 ---
 
@@ -41,5 +41,3 @@ BFO grows out of a philosophical orientation which overlaps with that of DOLCE a
 - [BFO homepage](http://ifomis.org/bfo/)
 - [BFO mailing list](https://groups.google.com/forum/#!forum/bfo-discuss)
 - BFO is released under [CC-by 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/)
-
-

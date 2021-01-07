@@ -24,7 +24,3 @@ activity_status: active
 MmusDv was developed by the Bgee group with assistance from the core Uberon developers and the Mouse anatomy ontology developers.
 
 Currently it includes both embryonic stages and adult stages.
-
-
-
-

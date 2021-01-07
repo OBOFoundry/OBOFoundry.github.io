@@ -39,4 +39,4 @@ Anyone interested is welcome to look at the ontology and post comments/criticism
 ## Updates
 
  * 2011/12/15: This version of the AEO includes some reasoning links [disjoint_from, transitive] and more are planned.
- * 2012/05/31: This version includes the new term "reproductive cell population" and the associated cell types 
+ * 2012/05/31: This version includes the new term "reproductive cell population" and the associated cell types

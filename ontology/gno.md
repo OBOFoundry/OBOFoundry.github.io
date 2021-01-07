@@ -32,5 +32,5 @@ browsers:
   - label: Composition Browser
     title: GNOme Glycan Composition Browser
     url: https://gnome.glyomics.org/CompositionBrowser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
-  
+
 ---
