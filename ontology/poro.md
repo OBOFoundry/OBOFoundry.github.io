@@ -21,8 +21,8 @@ publications:
   - id: https://doi.org/10.1186/2041-1480-5-39
     title: "The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy ontology"
 dependencies:
- - id: uberon
- - id: ro
+  - id: uberon
+  - id: ro
 jobs:
   - id: https://travis-ci.org/obophenotype/porifera-ontology
     type: travis-ci

@@ -10,7 +10,7 @@ build:
   system: git
   path: "."
 contact:
-  email: p.buttigieg@gmail.com 
+  email: p.buttigieg@gmail.com
   label: Pier Luigi Buttigieg
   github: pbuttigieg
 description: Ecocore is a community ontology for the concise and controlled description of ecological traits of organisms.
@@ -20,16 +20,16 @@ products:
   - id: ecocore.owl
   - id: ecocore.obo
 dependencies:
- - id: pco
- - id: ro
- - id: bfo
- - id: pato
- - id: envo
- - id: chebi
- - id: go
- - id: uberon
- - id: po
- - id: iao
+  - id: pco
+  - id: ro
+  - id: bfo
+  - id: pato
+  - id: envo
+  - id: chebi
+  - id: go
+  - id: uberon
+  - id: po
+  - id: iao
 tracker: https://github.com/EcologicalSemantics/ecocore/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/

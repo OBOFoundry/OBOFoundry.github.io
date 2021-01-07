@@ -30,12 +30,12 @@ products:
   - id: maxo/maxo-base.json
     name: "Medical Action Ontology additional release in OBOJSon format"
 dependencies:
-- id: iao
-- id: go
-- id: ro
-- id: uberon
-- id: foodon
-- id: chebi
+  - id: iao
+  - id: go
+  - id: ro
+  - id: uberon
+  - id: foodon
+  - id: chebi
 
 tracker: https://github.com/monarch-initiative/MAxO/issues
 license:
@@ -45,4 +45,3 @@ activity_status: active
 ---
 
 The Medical Action Ontology (MAxO) provides a structured vocabulary for medical procedures, interventions, therapies, and treatments for disease with an emphasis on rare disease (RD). It is often difficult to find relevant clinical literature about strategies to manage RD patients. Responding to this need, MAxO provides a vocabulary to annotate diseases and phenotypes with recommended treatments and interventions.
-

@@ -12,18 +12,18 @@ products:
   - id: obib.owl
 tracker: https://github.com/biobanking/biobanking/issues
 usages:
- - user: https://github.com/PennTURBO/turbo-ontology
-   description: TURBO ontology supporting the PennTURBO project.
-   examples:
-    - url: http://purl.obolibrary.org/obo/OBIB_0000079
-      description: Blood draw time
- - user: https://github.com/MIABIS/miabis
-   description: The Minimum Information About BIobank data Sharing (MIABIS) aims to standardize data elements used to describe biobanks, research on samples and associated data. General attributes to describe biobanks, sample collections and studies at an aggregated/metadata level are defined in MIABIS Core 2.0 (Merino-Martinez et al., 2016).
- - user: https://biospecimens.cancer.gov/resources/vocabularies.asp
-   description: The National Cancer Institute Biorepositories and Biospecimen Research Branch (BBRB) is an international leader in research and policy activities related to biospecimen collection, processing, and storage, also known as biobanking.
+  - user: https://github.com/PennTURBO/turbo-ontology
+    description: TURBO ontology supporting the PennTURBO project.
+    examples:
+      - url: http://purl.obolibrary.org/obo/OBIB_0000079
+        description: Blood draw time
+  - user: https://github.com/MIABIS/miabis
+    description: The Minimum Information About BIobank data Sharing (MIABIS) aims to standardize data elements used to describe biobanks, research on samples and associated data. General attributes to describe biobanks, sample collections and studies at an aggregated/metadata level are defined in MIABIS Core 2.0 (Merino-Martinez et al., 2016).
+  - user: https://biospecimens.cancer.gov/resources/vocabularies.asp
+    description: The National Cancer Institute Biorepositories and Biospecimen Research Branch (BBRB) is an international leader in research and policy activities related to biospecimen collection, processing, and storage, also known as biobanking.
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY  
+  label: CC-BY
 activity_status: active
 ---
 

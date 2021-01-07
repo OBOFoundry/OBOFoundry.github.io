@@ -19,7 +19,7 @@ publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/16779026
     title: "Challenges in converting frame-based ontology into OWL: the Foundational Model of Anatomy case-study"
 products:
- - id: fma.owl
+  - id: fma.owl
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens

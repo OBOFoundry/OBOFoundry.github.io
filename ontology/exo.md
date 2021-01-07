@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: exo
+preferredPrefix: ExO
 description: Vocabularies for describing exposure data to inform understanding of environmental health.
 domain: health
 homepage: http://ctdbase.org/help/exposureHelp.jsp

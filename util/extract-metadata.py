@@ -2,14 +2,19 @@
 
 import argparse
 import sys
+from yamllint import config, linter
 import yaml
-
+import frontmatter
+from frontmatter.util import u
+from ruamel.yaml import YAML
+from ruamel.yaml.compat import StringIO
 __author__ = 'cjm'
 
 
 def main():
   parser = argparse.ArgumentParser(description='Helper utils for OBO',
                                    formatter_class=argparse.RawTextHelpFormatter)
+
   subparsers = parser.add_subparsers(dest='subcommand', help='sub-command help')
 
   # SUBCOMMAND
@@ -17,7 +22,9 @@ def main():
   # parser_n.add_argument('-d', '--depth', type=int, help='number of hops')
   parser_n.set_defaults(function=validate_markdown)
   parser_n.add_argument('files', nargs='*')
-
+  parser_n = subparsers.add_parser('prettify', help = 'prettify YAML block in registry ontolgoy Markdown files')
+  parser_n.set_defaults(function=prettify)
+  parser_n.add_argument('files', nargs='*')
   # SUBCOMMAND
   parser_n = subparsers.add_parser('concat', help='concat ontology yamls')
   parser_n.add_argument('-i', '--include', help='yaml file to include for header')
@@ -36,6 +43,38 @@ def main():
 
   func = args.function
   func(args)
+
+class CustomRuamelYAMLHandler(frontmatter.YAMLHandler):
+    def __init__(self):
+        self.myyaml = YAML()
+        self.myyaml.default_flow_style = False
+        self.myyaml.allow_duplicate_keys = True
+        self.myyaml.indent(mapping=2, sequence=4, offset=2)
+        self.myyaml.preserve_quotes = True
+        self.myyaml.width = 1500
+        #self.myyaml.explicit_start = True
+        super().__init__()
+
+    def load(self, fm, **kwargs):
+        return self.myyaml.load(fm, **kwargs)
+
+    def export(self, metadata, **kwargs):
+        stream = StringIO()
+        self.myyaml.dump(data = metadata, stream = stream)
+        metadata = stream.getvalue()
+        metadata = metadata[:-1]
+        return u(metadata)
+
+def prettify(args):
+    for file in args.files:
+        handler = CustomRuamelYAMLHandler()
+        text = frontmatter.load(file, handler=handler)
+        file_obj = open(file, "wb")
+        frontmatter.dump(text, fd = file_obj, handler = handler)
+        file_obj = open(file, 'a')
+        file_obj.write('\n')
+        file_obj.close()
+
 
 
 def validate_markdown(args):
@@ -69,16 +108,31 @@ def validate_markdown(args):
     return errs
 
   errs = []
+  warn = []
   for fn in args.files:
     # we don't do anything with the results; an
     # error is thrown
+    if not frontmatter.check(fn):
+        errs.append("%s does not contain frontmatter" %(fn))
+    yamltext = get_YAML_text(fn)
+    yaml_config = config.YamlLintConfig(file = "util/config.yamllint")
+    for p in linter.run("---\n" + yamltext, yaml_config):
+        if p.level == "error":
+           errs.append(f"%s: {p}" %(fn))
+        elif p.level=="warning":
+           warn.append(f"%s: {p}" %(fn))
     (obj, md) = load_md(fn)
     errs += validate_structure(obj)
+  if len(warn) > 0:
+      print("WARNINGS:", file = sys.stderr)
+      for w in warn:
+          print("WARN: " + w, file=sys.stderr)
   if len(errs) > 0:
     print("FAILURES:", file=sys.stderr)
     for e in errs:
       print("ERROR:" + e, file=sys.stderr)
     sys.exit(1)
+
 
 
 def concat_ont_yaml(args):
@@ -196,32 +250,25 @@ def load_md(fn):
 
   Returns a tuple (yaml_obj, markdown_text)
   """
-  with open(fn, 'r') as f:
-    text = f.read()
-  return extract(text)
+  onto_stuff = frontmatter.load(fn)
+  return (onto_stuff.metadata, onto_stuff.content)
 
+def get_YAML_text(fn):
+    with open(fn, 'r') as f:
+      text = f.read()
+      chunks = text.split("---")
+      yamltext = chunks[1].strip()
+      return yamltext
 
-def extract(mdtext):
-  """
-  Extract a yaml text blob from markdown text and parse the blob.
-
-  Returns a tuple (yaml_obj, markdown_text)
-  """
-  lines = mdtext.split("\n")
-  n = 0
-  ylines = []
-  mlines = []
-  for line in lines:
-    if (line == "---"):
-      n = n + 1
-    else:
-      if n == 1:
-        ylines.append(line)
-      else:
-        mlines.append(line)
-  yamltext = "\n".join(ylines)
-  obj = yaml.load(yamltext, Loader=yaml.SafeLoader)
-  return (obj, "\n".join(mlines))
+# def extract(mdtext, fn = "foo"):
+#   """
+#   Extract a yaml text blob from markdown text and parse the blob.
+#
+#   Returns a tuple (yaml_obj, markdown_text)
+#   """
+#
+#   obj = frontmatter.load()
+#   return (obj, "\n".join(mlines))
 
 
 if __name__ == "__main__":
