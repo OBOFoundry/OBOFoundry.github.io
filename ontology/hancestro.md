@@ -5,7 +5,7 @@ contact:
   email: danielle.welter@uni.lu
   label: Danielle Welter
 title: Human Ancestry Ontology
-description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide association studies. 
+description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide association studies.
 homepage: https://github.com/EBISPOT/ancestro
 tracker: https://github.com/EBISPOT/ancestro/issues
 domain: ancestry
@@ -21,7 +21,7 @@ license:
   label: CC-BY 4.0
 usages:
   - user: http://www.ebi.ac.uk/efo
-    description: The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databases, and for external projects such as the NHGRI GWAS catalogue. It combines parts of several biological ontologies, such as anatomy, disease and chemical compounds. 
+    description: The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databases, and for external projects such as the NHGRI GWAS catalogue. It combines parts of several biological ontologies, such as anatomy, disease and chemical compounds.
     example: https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
   - user: https://genepio.org/
     description: The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary to identify, document and research foodborne pathogens and associated outbreaks.
@@ -55,4 +55,4 @@ A version of HANCESTRO with BFO upper classes is available at [https://raw.githu
 * Default browsing in Ontobee: [http://www.ontobee.org/ontology/hancestro](http://www.ontobee.org/ontology/hancestro)
 * Browsing in OLS:
 [https://www.ebi.ac.uk/ols/ontologies/hancestro](https://www.ebi.ac.uk/ols/ontologies/hancestro)
-* Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/HANCESTRO](https://bioportal.bioontology.org/ontologies/HANCESTRO)  
+* Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/HANCESTRO](https://bioportal.bioontology.org/ontologies/HANCESTRO)

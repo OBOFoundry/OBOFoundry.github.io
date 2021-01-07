@@ -31,5 +31,3 @@ activity_status: inactive
 Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa.
 
 Note that this ontology has been merged into Uberon. The process is described in _Haendel et al_ [Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon](http://www.ncbi.nlm.nih.gov/pubmed/25009735)
-
-

@@ -44,4 +44,3 @@ To browse the ontology, try [CEPH on the OLS](http://www.ebi.ac.uk/ols/beta/onto
 [tentacle](http://www.ebi.ac.uk/ols/beta/ontologies/ceph/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FCEPH_0000256)
 
 For full details on the project, please head over to the [GitHub Project Page](https://github.com/obophenotype/cephalopod-ontology)
-

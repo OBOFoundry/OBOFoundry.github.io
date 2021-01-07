@@ -24,15 +24,15 @@ build:
   system: git
   path: "."
 publications:
-- id: https://academic.oup.com/nar/article/48/D1/D762/5603222
-  title: "WormBase: a modern Model Organism Information Resource"
+  - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
+    title: "WormBase: a modern Model Organism Information Resource"
 usages:
- - user: https://www.wormbase.org/
-   type: annotation
-   description: WormBase uses WBls to curate temporal expression patterns, and to allow search and indexing on the WormBase site
-   examples:
-    - url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression
-   reference: https://academic.oup.com/nar/article/48/D1/D762/5603222
+  - user: https://www.wormbase.org/
+    type: annotation
+    description: WormBase uses WBls to curate temporal expression patterns, and to allow search and indexing on the WormBase site
+    examples:
+      - url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression
+    reference: https://academic.oup.com/nar/article/48/D1/D762/5603222
 activity_status: active
 ---
 

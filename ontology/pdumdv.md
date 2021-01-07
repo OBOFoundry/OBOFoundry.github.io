@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: pdumdv
+preferredPrefix: PdumDv
 title: Platynereis Developmental Stages
 build:
   source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/pdumdv/pdumdv.obo
@@ -20,8 +21,3 @@ license:
   label: CC-BY
 activity_status: active
 ---
-
-
-
-
-

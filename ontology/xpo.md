@@ -23,14 +23,14 @@ taxon:
   id: NCBITaxon:8353
   label: Xenopus
 dependencies:
- - id: iao
- - id: go
- - id: ro
- - id: pato
- - id: bfo
- - id: chebi
- - id: cl
- - id: xao
+  - id: iao
+  - id: go
+  - id: ro
+  - id: pato
+  - id: bfo
+  - id: chebi
+  - id: cl
+  - id: xao
 tracker: https://github.com/obophenotype/xenopus-phenotype-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/

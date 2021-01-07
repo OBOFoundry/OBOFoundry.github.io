@@ -32,43 +32,43 @@ publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/27377652
     title: "The Cell Ontology 2016: enhanced content, modularization, and ontology interoperability."
 dependencies:
- - id: uberon
- - id: go
- - id: ro
- - id: chebi
- - id: pato
+  - id: uberon
+  - id: go
+  - id: ro
+  - id: chebi
+  - id: pato
 canonical: cl.owl
 products:
- - id: cl.owl
-   title: Main CL OWL edition
-   description: Complete ontology, plus inter-ontology axioms, and imports modules
-   format: owl-rdf/xml
-   is_canonical: true
-   uses: [uberon, chebi, go, pr, pato]
- - id: cl.obo
-   title: CL obo format edition
-   description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
-   format: obo
-   derived_from: cl.owl
- - id: cl/cl-basic.obo
-   title: Basic CL
-   description: Basic version, no inter-ontology axioms
-   format: obo
- - id: cl/cl-base.owl
-   title: CL base module
-   description: complete CL but with no imports or external axioms
+  - id: cl.owl
+    title: Main CL OWL edition
+    description: Complete ontology, plus inter-ontology axioms, and imports modules
+    format: owl-rdf/xml
+    is_canonical: true
+    uses: [uberon, chebi, go, pr, pato]
+  - id: cl.obo
+    title: CL obo format edition
+    description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
+    format: obo
+    derived_from: cl.owl
+  - id: cl/cl-basic.obo
+    title: Basic CL
+    description: Basic version, no inter-ontology axioms
+    format: obo
+  - id: cl/cl-base.owl
+    title: CL base module
+    description: complete CL but with no imports or external axioms
 usages:
- - user: https://www.encodeproject.org/
-   seeAlso: https://www.biosharing.org/biodbcore-000034
-   type: annotation
-   description: The National Human Genome Research Institute (NHGRI) launched a public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September 2003, to carry out a project to identify all functional elements in the human genome sequence. The ENCODE DCC users Uberon to annotate samples
-   reference: https://doi.org/10.1093/database/bav010
- - user: http://fantom5-collaboration.gsc.riken.jp/
-   type: annotation
-   description: FANTOM5 is using Uberon and CL to annotate samples allowing for transcriptome analyses with cell-type and tissue-level specificity.
-   examples:
-    - url: http://fantom.gsc.riken.jp/5/sstar/CL:0000540
-      description: FANTOM5 samples annotated to neuron
+  - user: https://www.encodeproject.org/
+    seeAlso: https://www.biosharing.org/biodbcore-000034
+    type: annotation
+    description: The National Human Genome Research Institute (NHGRI) launched a public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September 2003, to carry out a project to identify all functional elements in the human genome sequence. The ENCODE DCC users Uberon to annotate samples
+    reference: https://doi.org/10.1093/database/bav010
+  - user: http://fantom5-collaboration.gsc.riken.jp/
+    type: annotation
+    description: FANTOM5 is using Uberon and CL to annotate samples allowing for transcriptome analyses with cell-type and tissue-level specificity.
+    examples:
+      - url: http://fantom.gsc.riken.jp/5/sstar/CL:0000540
+        description: FANTOM5 samples annotated to neuron
 activity_status: active
 ---
 
@@ -115,5 +115,3 @@ to Describe, Model, and Integrate Complex and Diverse High-Throughput
 Screening Data from the Library of Integrated Network-based Cellular
 Signatures
 (LINCS)](http://jbx.sagepub.com/content/early/2014/02/11/1087057114522514.full)
-
-
