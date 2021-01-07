@@ -15,7 +15,7 @@ products:
   - id: ero.owl
 title: eagle-i resource ontology
 build:
-  source_url:  http://purl.obolibrary.org/obo/ero.owl
+  source_url: http://purl.obolibrary.org/obo/ero.owl
   method: owl2obo
 activity_status: active
 ---

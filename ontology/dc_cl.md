@@ -7,7 +7,7 @@ contact:
   label: Lindsay.Cowell@utsouthwestern.edu
 taxon:
   id: all
-  label: 
+  label:
 homepage: http://www.dukeontologygroup.org/Projects.html
 is_obsolete: true
 replaced_by: cl

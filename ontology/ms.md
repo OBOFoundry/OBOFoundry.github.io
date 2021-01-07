@@ -12,10 +12,11 @@ integration_server: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master
 domain: MS experiments
 mailing_list: psidev-ms-vocab@lists.sourceforge.net
 homepage: http://www.psidev.info/groups/controlled-vocabularies
+tracker: https://github.com/HUPO-PSI/psi-ms-CV/issues
 page: http://www.psidev.info/groups/controlled-vocabularies
 dependencies:
- - id: pato
- - id: uo
+  - id: pato
+  - id: uo
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/23482073
     title: "The HUPO proteomics standards initiative- mass spectrometry controlled vocabulary."
@@ -36,4 +37,3 @@ A structured controlled vocabulary for the annotation of experiments concerned w
 ## Mailing Lists
 
  * https://lists.sourceforge.net/lists/listinfo/psidev-ms-vocab
-

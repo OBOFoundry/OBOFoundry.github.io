@@ -31,9 +31,9 @@ build:
 tracker: https://github.com/information-artifact-ontology/IAO/issues
 depicted_by: https://avatars0.githubusercontent.com/u/13591168?v=3&s=200
 usages:
- - user: http://obofoundry.org
-   type: owl_import
-   description: IAO is used widely by multiple OBO ontologies for information representation.
+  - user: http://obofoundry.org
+    type: owl_import
+    description: IAO is used widely by multiple OBO ontologies for information representation.
 activity_status: active
 ---
 

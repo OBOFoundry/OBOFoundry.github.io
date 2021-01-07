@@ -19,4 +19,3 @@ build:
   method: owl2obo
 activity_status: active
 ---
-
