@@ -6,8 +6,8 @@ contact:
   label: Frederic Bastian
   github: fbastian
 license:
-  url: https://www.gnu.org/licenses/gpl-3.0.en.html
-  label: GNU GPL 3.0
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0
 title: Confidence Information Ontology
 description: An ontology to capture confidence information about annotations.
 homepage: https://github.com/BgeeDB/confidence-information-ontology
