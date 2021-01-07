@@ -42,27 +42,19 @@ dependencies:
   - id: po
   - id: go
 usages:
-  - type: data-annotation
+  - user: http://eol.org
+    type: data-annotation
     description: "describing species habitats"
     examples:
-      url: http://eol.org/pages/211700/data
-    resources:
-      url: http://eol.org
-      label: EOL
-  - type: data-annotation
+      - url: http://eol.org/pages/211700/data
+        description: "Pseudobarbus burchelli (Tradou Redfin) is a species of bony fishes in the family Cyprinidae. They are associated with freshwater habitat. Individuals can grow to 13.5 cm. They have sexual reproduction."
+  - user: http://globalbioticinteractions.org
+    type: data-annotation
     description: "describing stomach contents"
-    datasets:
-      url: https://s3.amazonaws.com/globi/snapshot/target/data/taxa/interactions.csv.gz
-    resources:
-      url: http://globalbioticinteractions.org
-      label: GloBI
-  - type: dataset-description
+  - user: http://www.nature.com/sdata/
+    type: dataset-description
     description: "annotating datasets in data repositories"
     seeAlso: http://blogs.nature.com/scientificdata/2015/12/17/isa-explorer/
-    search: http://scientificdata.isa-explorer.org/
-    resources:
-      url: http://www.nature.com/sdata/
-      label: Nature Scientific Data
   - user: http://oceans.taraexpeditions.org/en/
     description: Samples collected during Tara Oceans expedition are annotated with ENVO
     example:
