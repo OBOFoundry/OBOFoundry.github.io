@@ -15,10 +15,10 @@ homepage: https://github.com/Display-Lab/psdo
 products:
   - id: psdo.owl
 dependencies:
- - id: stato
- - id: iao
- - id: bfo
- - id: ro
+  - id: stato
+  - id: iao
+  - id: bfo
+  - id: ro
 tracker: https://github.com/Display-Lab/psdo/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/

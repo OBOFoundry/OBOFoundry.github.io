@@ -13,17 +13,17 @@ domain: disease
 homepage: http://www.disease-ontology.org
 DO wiki: http://diseaseontology.sourceforge.net/
 products:
-  - id: doid.owl  
-    title: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy plus equivalent axioms to other OBO Foundry ontologies. 
-  - id: doid.obo  
-    title: Disease Ontology, OBO format. This file omits the equivalent axioms. 
- 
+  - id: doid.owl
+    title: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy plus equivalent axioms to other OBO Foundry ontologies.
+  - id: doid.obo
+    title: Disease Ontology, OBO format. This file omits the equivalent axioms.
+
 browsers:
   - label: DO
     title: DO Browser
     url: http://www.disease-ontology.org/
 taxon:
-  id: NCBITaxon:9606 
+  id: NCBITaxon:9606
   label: Homo sapiens
 title: Human Disease Ontology
 review:
@@ -43,11 +43,11 @@ license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0 Universal
 usages:
- - user: http://www.informatics.jax.org/disease
-   description: MGI disease model annotations use DO
-   examples:
-    - url: http://www.informatics.jax.org/disease/DOID:4123
-      description: Human genes and mouse homology associated with nail diseases
+  - user: http://www.informatics.jax.org/disease
+    description: MGI disease model annotations use DO
+    examples:
+      - url: http://www.informatics.jax.org/disease/DOID:4123
+        description: Human genes and mouse homology associated with nail diseases
 activity_status: active
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: cio
-contact: 
+contact:
   email: bgee@sib.swiss
   label: Frederic Bastian
   github: fbastian

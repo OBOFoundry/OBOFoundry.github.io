@@ -19,7 +19,7 @@ products:
   - id: phipo.owl
   - id: phipo.obo
 dependencies:
- - id: pato
+  - id: pato
 tracker: https://github.com/PHI-base/phipo/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/

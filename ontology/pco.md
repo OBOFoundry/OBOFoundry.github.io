@@ -18,15 +18,15 @@ homepage: https://github.com/PopulationAndCommunityOntology/pco
 products:
   - id: pco.owl
 dependencies:
- - id: ro
- - id: bfo
- - id: pato
- - id: envo
- - id: go
- - id: iao
- - id: bfo
- - id: ncbi_taxon
- - id: caro
+  - id: ro
+  - id: bfo
+  - id: pato
+  - id: envo
+  - id: go
+  - id: iao
+  - id: bfo
+  - id: ncbi_taxon
+  - id: caro
 tracker: https://github.com/PopulationAndCommunityOntology/pco/issues
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/

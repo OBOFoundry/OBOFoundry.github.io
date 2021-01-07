@@ -33,48 +33,36 @@ products:
     homepage: http://environmentontology.org/downloads
 title: Environment Ontology
 dependencies:
- - id: uberon
- - id: pco
- - id: ro
- - id: chebi
- - id: ncbitaxon
- - id: foodon
- - id: po
- - id: go
+  - id: uberon
+  - id: pco
+  - id: ro
+  - id: chebi
+  - id: ncbitaxon
+  - id: foodon
+  - id: po
+  - id: go
 usages:
- - type: data-annotation
-   description: "describing species habitats"
-   examples:
-     url: http://eol.org/pages/211700/data
-   resources:
-     url: http://eol.org
-     label: EOL
- - type: data-annotation
-   description: "describing stomach contents"
-   datasets:
-     url: https://s3.amazonaws.com/globi/snapshot/target/data/taxa/interactions.csv.gz
-   resources:
-     url: http://globalbioticinteractions.org
-     label: GloBI
- - type: dataset-description
-   description: "annotating datasets in data repositories"
-   seeAlso: http://blogs.nature.com/scientificdata/2015/12/17/isa-explorer/
-   search: http://scientificdata.isa-explorer.org/
-   resources:
-     url: http://www.nature.com/sdata/
-     label: Nature Scientific Data
-jobs:
-  - id: https://travis-ci.org/EnvironmentOntology/envo
-    type: travis-ci
-build:
-  checkout: git clone https://github.com/EnvironmentOntology/envo.git
-  email_cc: cjmungall@lbl.gov
-  system: git
-  path: .
-  method: vcs
-  infallible: 1
-tracker: https://github.com/EnvironmentOntology/envo/issues/
-usages:
+  - type: data-annotation
+    description: "describing species habitats"
+    examples:
+      url: http://eol.org/pages/211700/data
+    resources:
+      url: http://eol.org
+      label: EOL
+  - type: data-annotation
+    description: "describing stomach contents"
+    datasets:
+      url: https://s3.amazonaws.com/globi/snapshot/target/data/taxa/interactions.csv.gz
+    resources:
+      url: http://globalbioticinteractions.org
+      label: GloBI
+  - type: dataset-description
+    description: "annotating datasets in data repositories"
+    seeAlso: http://blogs.nature.com/scientificdata/2015/12/17/isa-explorer/
+    search: http://scientificdata.isa-explorer.org/
+    resources:
+      url: http://www.nature.com/sdata/
+      label: Nature Scientific Data
   - user: http://oceans.taraexpeditions.org/en/
     description: Samples collected during Tara Oceans expedition are annotated with ENVO
     example:
@@ -89,7 +77,18 @@ usages:
     description: Annotation and semantic search over microbial data sets
     example:
       - url: https://www.planetmicrobe.org/project/#/samples/200
-        description: "Example metadata of a sample of marine water near Lisboa, taken as part of the Ocean Sampling Day Project (https://www.microb3.eu/osd.html). ENVO is used for the fields environmental feature, material, and biome."  
+        description: "Example metadata of a sample of marine water near Lisboa, taken as part of the Ocean Sampling Day Project (https://www.microb3.eu/osd.html). ENVO is used for the fields environmental feature, material, and biome."
+jobs:
+  - id: https://travis-ci.org/EnvironmentOntology/envo
+    type: travis-ci
+build:
+  checkout: git clone https://github.com/EnvironmentOntology/envo.git
+  email_cc: cjmungall@lbl.gov
+  system: git
+  path: .
+  method: vcs
+  infallible: 1
+tracker: https://github.com/EnvironmentOntology/envo/issues/
 activity_status: active
 ---
 
@@ -104,5 +103,3 @@ Buttigieg, P. L., Morrison, N., Smith, B., Mungall, C. J., & Lewis, S. E. (2013)
 Or for latest developments:
 
 Buttigieg, P. L., Pafilis, E., Lewis, S. E., Schildhauer, M. P., Walls, R. L., & Mungall, C. J. (2016). <b>The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation</b>. <i>Journal of Biomedical Semantics</i>, 7(1), 57. <a href="https://doi.org/10.1186/s13326-016-0097-6">doi:10.1186/s13326-016-0097-6</a>
-
-

@@ -11,7 +11,6 @@ products:
   - id: trans.owl
   - id: trans.obo
 title: Pathogen Transmission Ontology
-
 build:
   source_url: https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/trans.obo
   method: obo2owl
@@ -24,8 +23,8 @@ usages:
   - user: http://www.disease-ontology.org
     description: Methods of trnasmission of human diseases in the DO
     examples:
-    - url: http://www.disease-ontology.org/?id=DOID:12365
-      description: methods of transmission of human diseases
+      - url: http://www.disease-ontology.org/?id=DOID:12365
+        description: methods of transmission of human diseases
 activity_status: active
 ---
 

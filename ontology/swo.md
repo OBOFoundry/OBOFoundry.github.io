@@ -8,6 +8,7 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 homepage: https://github.com/allysonlister/swo
+tracker: https://github.com/allysonlister/swo/issues
 products:
   - id: swo.owl
 title: Software ontology
@@ -18,4 +19,3 @@ build:
   method: owl2obo
 activity_status: active
 ---
-

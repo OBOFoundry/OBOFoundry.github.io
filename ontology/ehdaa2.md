@@ -27,9 +27,9 @@ publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22973865
     title: "A new ontology (structured hierarchy) of human developmental anatomy for the first 7 weeks (Carnegie stages 1-20)."
 dependencies:
- - id: aeo
- - id: caro
- - id: cl
+  - id: aeo
+  - id: caro
+  - id: cl
 activity_status: inactive
 ---
 

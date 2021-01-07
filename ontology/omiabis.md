@@ -3,7 +3,7 @@ layout: ontology_detail
 id: omiabis
 title: Ontologized MIABIS
 contact:
-  email: mbrochhausen@gmail.com 
+  email: mbrochhausen@gmail.com
   label: Mathias Brochhausen
 description: An ontological version of MIABIS (Minimum Information About BIobank data Sharing)
 domain: health
@@ -13,7 +13,7 @@ products:
 tracker: https://github.com/OMIABIS/omiabis-dev/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY  
+  label: CC-BY
 activity_status: active
 ---
 
