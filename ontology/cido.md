@@ -4,7 +4,7 @@ id: cido
 title: Coronavirus Infectious Disease Ontology
 description: The Coronavirus Infectious Disease Ontology (CIDO) aims to ontologically represent and standardize various aspects of coronavirus infectious diseases, including their etiology, transmission, epidemiology, pathogenesis, diagnosis, prevention, and treatment.
 homepage: https://github.com/cido-ontology/cido
-mailing_list: cido-discuss@googlegroups.com 
+mailing_list: cido-discuss@googlegroups.com
 tracker: https://github.com/cido-ontology/cido/issues
 contact:
   email: yongqunh@med.umich.edu

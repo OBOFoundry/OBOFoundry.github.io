@@ -26,9 +26,9 @@ build:
   insert_ontology_id: true
 tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
 usages:
- - user: http://www.informatics.jax.org/expression.shtml
-   seeAlso: https://www.biosharing.org/biodbcore-000659
-   description: GXD
+  - user: http://www.informatics.jax.org/expression.shtml
+    seeAlso: https://www.biosharing.org/biodbcore-000659
+    description: GXD
 activity_status: active
 ---
 

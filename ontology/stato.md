@@ -5,9 +5,6 @@ in_foundry: false
 title: The Statistical Methods Ontology
 description: STATO is a general-purpose STATistics Ontology. Its aim is to provide coverage for processes such as statistical tests, their conditions of application, and information needed or resulting from statistical methods, such as probability distributions, variables, spread and variation metrics. STATO also covers aspects of experimental design and description of plots and graphical representations commonly used to provide visual cues of data distribution or layout and to assist review of the results.
 contact:
-  email: proccaserra@gmail.com
-  label: Philippe Rocca-Serra
-contact:
   email: alejandra.gonzalez.beltran@gmail.com
   label: Alejandra Gonzalez-Beltran
 domain: statistics
@@ -17,7 +14,7 @@ products:
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
-depicted_by:  https://raw.githubusercontent.com/ISA-tools/stato/dev/images/stato-logo-3.png
+depicted_by: https://raw.githubusercontent.com/ISA-tools/stato/dev/images/stato-logo-3.png
 tracker: https://github.com/ISA-tools/stato/issues
 activity_status: active
 ---

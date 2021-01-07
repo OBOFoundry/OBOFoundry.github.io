@@ -21,14 +21,14 @@ products:
     format: owl-rdf/xml
 title: FOODON
 dependencies:
- - id: uberon
- - id: ro
- - id: eo
- - id: chebi
- - id: ncbitaxon
- - id: bfo
- - id: envo
- - id: obi
+  - id: uberon
+  - id: ro
+  - id: eo
+  - id: chebi
+  - id: ncbitaxon
+  - id: bfo
+  - id: envo
+  - id: obi
 tracker: https://github.com/FoodOntology/foodon/issues/
 activity_status: active
 ---

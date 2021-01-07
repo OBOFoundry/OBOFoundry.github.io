@@ -69,4 +69,3 @@ activity_status: active
 The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data. The PO is under active development to expand to encompass terms and annotations from all plants.
 
 <img alt="Planteome logo" src="http://planteome.org/sites/default/files/garland_logo.PNG"/>
-

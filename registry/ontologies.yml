@@ -1646,7 +1646,8 @@ ontologies:
   - id: uberon
   - id: po
   - id: iao
-  description: An ontology to provide core semantics for ecological entities.
+  description: Ecocore is a community ontology for the concise and controlled description
+    of ecological traits of organisms.
   domain: ecological functions, ecological interactions
   homepage: https://github.com/EcologicalSemantics/ecocore
   id: ecocore
@@ -1836,6 +1837,27 @@ ontologies:
   title: Environment Ontology
   tracker: https://github.com/EnvironmentOntology/envo/issues/
   usages:
+  - description: describing species habitats
+    examples:
+      url: http://eol.org/pages/211700/data
+    resources:
+      label: EOL
+      url: http://eol.org
+    type: data-annotation
+  - datasets:
+      url: https://s3.amazonaws.com/globi/snapshot/target/data/taxa/interactions.csv.gz
+    description: describing stomach contents
+    resources:
+      label: GloBI
+      url: http://globalbioticinteractions.org
+    type: data-annotation
+  - description: annotating datasets in data repositories
+    resources:
+      label: Nature Scientific Data
+      url: http://www.nature.com/sdata/
+    search: http://scientificdata.isa-explorer.org/
+    seeAlso: http://blogs.nature.com/scientificdata/2015/12/17/isa-explorer/
+    type: dataset-description
   - description: Samples collected during Tara Oceans expedition are annotated with
       ENVO
     example:
@@ -2025,6 +2047,11 @@ ontologies:
   title: Drosophila gross anatomy
   tracker: http://purl.obolibrary.org/obo/fbbt/tracker
   usages:
+  - description: VFB uses FBbt to annotate brain images
+    example:
+    - description: Ring neuron R2 in VFB
+      url: http://www.virtualflybrain.org/site/stacks/index.htm?id=FBbt_00003651
+    user: http://www.virtualflybrain.org/
   - description: VFB uses FBbt to annotate brain images
     example:
     - description: genes expressed in ring neuron R2 in VFB
@@ -2492,7 +2519,7 @@ ontologies:
   tracker: https://github.com/glygen-glycan-data/GNOme/issues
 - activity_status: active
   contact:
-    email: dwelter@ebi.ac.uk
+    email: danielle.welter@uni.lu
     label: Danielle Welter
   description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description
     of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide
@@ -2507,10 +2534,34 @@ ontologies:
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/hancestro.owl
   products:
-  - id: hancestro.owl
+  - description: The full version of HANCESTRO in OWL format
+    id: hancestro.owl
     ontology_purl: http://purl.obolibrary.org/obo/hancestro.owl
+    title: HANCESTRO
+  - description: Version of HANCESTRO with BFO upper hierarchy for easier integration
+      with other ontologies
+    id: hancestro_bfo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/hancestro_bfo.owl
+    title: HANCESTRO BFO
   title: Human Ancestry Ontology
   tracker: https://github.com/EBISPOT/ancestro/issues
+  usages:
+  - description: The Experimental Factor Ontology (EFO) provides a systematic description
+      of many experimental variables available in EBI databases, and for external
+      projects such as the NHGRI GWAS catalogue. It combines parts of several biological
+      ontologies, such as anatomy, disease and chemical compounds.
+    example: https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
+    user: http://www.ebi.ac.uk/efo
+  - description: The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary
+      to identify, document and research foodborne pathogens and associated outbreaks.
+    example: https://www.ebi.ac.uk/ols/ontologies/genepio/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
+    user: https://genepio.org/
+  - description: FoodOn (http://foodon.org) is a consortium-driven project to build
+      a comprehensive and easily accessible global farm-to-fork ontology about food,
+      that accurately and consistently describes foods commonly known in cultures
+      from around the world.
+    example: https://www.ebi.ac.uk/ols/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
+    user: http://foodon.org
 - activity_status: active
   build:
     checkout: git clone https://github.com/hymao/hao.git
@@ -2593,6 +2644,37 @@ ontologies:
   tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
 - activity_status: active
   contact:
+    email: fernanda.dorea@sva.se
+    github: nandadorea
+    label: Fernanda Dorea
+  dependencies:
+  - id: uberon
+  - id: bfo
+  - id: ro
+  - id: obi
+  - id: ncbitaxon
+  description: The health Surveillance Ontology (HSO) focuses on "surveillance system
+    level data", that is, data outputs from surveillance activities, such as number
+    of samples collected, cases observed, etc. It aims to support One-Health surveillance,
+    covering animal health, public health and food safety surveillance.
+  domain: health
+  homepage: https://w3id.org/hso
+  id: hso
+  layout: ontology_detail
+  license:
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/hso.owl
+  page: https://github.com/SVA-SE/HSO
+  products:
+  - homepage: https://w3id.org/hso
+    id: hso.owl
+    ontology_purl: http://purl.obolibrary.org/obo/hso.owl
+  title: Health Surveillance Ontology
+  tracker: https://github.com/SVA-SE/HSO/issues/
+- activity_status: active
+  contact:
     email: aellenhicks@gmail.com
     label: Amanda Hicks
   description: An ontology for representing clinical data about hypertension, intended
@@ -2629,7 +2711,7 @@ ontologies:
   license:
     label: CC-BY
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
+    url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/iao.owl
   products:
   - id: iao.owl
@@ -2651,6 +2733,10 @@ ontologies:
     title: ontology of document acts
   title: Information Artifact Ontology
   tracker: https://github.com/information-artifact-ontology/IAO/issues
+  usages:
+  - description: IAO is used widely by multiple OBO ontologies for information representation.
+    type: owl_import
+    user: http://obofoundry.org
 - activity_status: active
   contact:
     email: liumeng94@sjtu.edu.cn
@@ -3130,7 +3216,7 @@ ontologies:
   build:
     insert_ontology_id: true
     method: obo2owl
-    source_url: https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mod/data/PSI-MOD.obo
+    source_url: https://raw.githubusercontent.com/HUPO-PSI/psi-mod-CV/master/PSI-MOD.obo
   contact:
     email: pierre-alain.binz@chuv.ch
     label: Pierre-Alain Binz
@@ -3146,8 +3232,18 @@ ontologies:
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/mod.owl
   products:
-  - id: mod.owl
+  - description: PSI-MOD Ontology, OWL format
+    id: mod.owl
     ontology_purl: http://purl.obolibrary.org/obo/mod.owl
+    title: PSI-MOD.owl
+  - description: PSI-MOD Ontology, OBO format
+    id: mod.obo
+    ontology_purl: http://purl.obolibrary.org/obo/mod.obo
+    title: PSI-MOD.obo
+  publications:
+  - id: https://pubmed.ncbi.nlm.nih.gov/18688235/
+    title: The PSI-MOD community standard for representation of protein modification
+      data
   title: Protein modification
   tracker: https://github.com/HUPO-PSI/psi-mod-CV/issues
 - activity_status: active
@@ -3474,7 +3570,9 @@ ontologies:
       components, anatomy), supporting cross-ontology reasoning. The current release
       incorporates CL (cell types) and Uberon (anatomy).
     id: ncit/ncit-plus.owl
-    mireots_from: uberon
+    mireots_from:
+    - cl
+    - uberon
     ontology_purl: http://purl.obolibrary.org/obo/ncit/ncit-plus.owl
     title: NCIt Plus
   - description: This is a subset extracted from NCIt Plus, based on the [NCIt Neoplasm
@@ -4065,6 +4163,7 @@ ontologies:
     email: preets79@gmail.com
     label: Priti Parikh
   description: A reference ontology for parasite life cycle stages.
+  domain: life cycle stage, parasite organism
   homepage: https://github.com/OPL-ontology/OPL
   id: opl
   layout: ontology_detail
@@ -4078,6 +4177,15 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/opl.owl
   title: Ontology for Parasite LifeCycle
   tracker: https://github.com/OPL-ontology/OPL/issues
+  usages:
+  - description: The ontology for parasite lifecycle is used in the VEuPathDB (Eukaryotic
+      Pathogen, Vector & Host Informatics Resources) for parasite life cycle annotation.
+    type: annotation and query
+    user: https://veupathdb.org
+  - description: The ontology for parasite lifecycle is used in the GeneDB for parasite
+      life cycle annotation.
+    type: annotation and query
+    user: https://www.genedb.org
 - activity_status: active
   contact:
     email: yongqunh@med.umich.edu
@@ -4994,7 +5102,7 @@ ontologies:
     title: Uberon base ontology
   - description: Uberon extended
     id: uberon/ext.owl
-    mireots_from: ncbitaxon
+    mireots_from: cl
     ontology_purl: http://purl.obolibrary.org/obo/uberon/ext.owl
     title: Uberon edition that includes subsets of other ontologies and axioms connecting
       to them
@@ -5027,14 +5135,21 @@ ontologies:
     type: BridgeOntology
   - description: Extended uberon plus all metazoan ontologies
     id: uberon/composite-metazoan.owl
-    mireots_from: ehdaa2
     ontology_purl: http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl
     page: https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies
     taxon: Metazoa
     title: Uberon composite metazoan ontology
     type: MergedOntology
   - id: uberon/composite-vertebrate.owl
-    mireots_from: ehdaa2
+    mireots_from:
+    - zfa
+    - xao
+    - fbbt
+    - wbbt
+    - ma
+    - fma
+    - emapa
+    - ehdaa2
     ontology_purl: http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl
     page: https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies
     taxon: Metazoa
@@ -5952,6 +6067,23 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/fix.obo
   title: Physico-chemical methods and properties
 - activity_status: orphaned
+  build:
+    method: obo2owl
+    source_url: http://variationontology.org/vario_download/vario.obo
+  contact:
+    email: mauno.vihinen@med.lu.se
+    label: Mauno Vihinen
+  description: Variation Ontology, VariO, is an ontology for standardized, systematic
+    description of effects, consequences and mechanisms of variations.
+  homepage: http://variationontology.org
+  id: vario
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/vario.owl
+  products:
+  - id: vario.owl
+    ontology_purl: http://purl.obolibrary.org/obo/vario.owl
+  title: Variation Ontology
+- activity_status: orphaned
   description: An ontology that formalizes the genomic element by defining an upper
     class genetic interval
   homepage: https://code.google.com/p/ontology-for-genetic-interval/
@@ -5977,20 +6109,6 @@ ontologies:
   - id: rex.owl
     ontology_purl: http://purl.obolibrary.org/obo/rex.owl
   title: Physico-chemical process
-- activity_status: orphaned
-  build:
-    method: obo2owl
-    source_url: http://variationontology.org/vario_download/vario.obo
-  description: Variation Ontology, VariO, is an ontology for standardized, systematic
-    description of effects, consequences and mechanisms of variations.
-  homepage: http://variationontology.org
-  id: vario
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/vario.owl
-  products:
-  - id: vario.owl
-    ontology_purl: http://purl.obolibrary.org/obo/vario.owl
-  title: Variation Ontology
 - activity_status: inactive
   build:
     checkout: git clone https://github.com/obophenotype/cephalopod-ontology.git

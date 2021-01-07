@@ -1,14 +1,14 @@
 ---
 layout: ontology_detail
 id: mfomd
-contact: 
+contact:
   email: janna.hastings@gmail.com
   label: Janna Hastings
 title: Mental Disease Ontology
 description: An ontology to describe and classify mental diseases such as schizophrenia, annotated with DSM-IV and ICD codes where applicable
 domain: health
 homepage: https://github.com/jannahastings/mental-functioning-ontology
-products: 
+products:
   - id: mfomd.owl
 tracker: https://github.com/jannahastings/mental-functioning-ontology/issues
 license:
