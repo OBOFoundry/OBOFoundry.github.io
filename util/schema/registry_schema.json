@@ -421,6 +421,7 @@
 			"type": "array",
 			"items": {
         			"type": "object",
+				"additionalProperties" : false,
         			"properties": {
 					"user": {
           			      		"type": "string",
@@ -428,9 +429,10 @@
        				 	},
 					"type": { "type": "string" },
 					"description": {"type":"string"},
-        				"example": {
+					"seeAlso": {"type": "string", "format": "uri"},
+        				"examples": {
 						"type": "array",
-						"items" : {
+						"items": {
           						"type": "object",
       							"additionalProperties" : false,
           						"properties": {
@@ -442,7 +444,22 @@
        							},
          						"required": ["url", "description"]
 						}
-        				}
+        				},
+					"publications": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"additionalProperties" : false,
+							"properties": {
+								"id": { 
+								"type": "string",
+								"format": "uri"
+								},
+								"title": {"type": "string"}
+							},
+							"required": ["id", "title"]
+						}
+					}  
       				},
       				"required": ["user", "description"]
 			}
