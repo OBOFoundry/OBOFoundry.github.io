@@ -30,7 +30,7 @@ depicted_by: https://github.com/pombase/website/blob/master/src/assets/FYPO_logo
 usages:
   - user: https://www.pombase.org
     description: Pombase uses fypo for phenotype data annotation in fission yeast
-    example:
+    examples:
       - url: https://www.pombase.org/term/FYPO:0000059
         description: "genotypes annotated to abnormal mitotic cell cycle in fission yeast"
 activity_status: active

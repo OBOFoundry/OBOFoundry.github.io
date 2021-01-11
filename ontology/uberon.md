@@ -31,7 +31,9 @@ usages:
     seeAlso: https://www.biosharing.org/biodbcore-000034
     type: annotation
     description: The National Human Genome Research Institute (NHGRI) launched a public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September 2003, to carry out a project to identify all functional elements in the human genome sequence. The ENCODE DCC users Uberon to annotate samples
-    reference: https://doi.org/10.1093/database/bav010
+    publications:
+      - id: https://doi.org/10.1093/database/bav010
+        title: "Ontology application and use at the ENCODE DCC"
   - user: http://fantom5-collaboration.gsc.riken.jp/
     type: annotation
     description: FANTOM5 is using Uberon and CL to annotate samples allowing for transcriptome analyses with cell-type and tissue-level specificity.
@@ -42,14 +44,12 @@ usages:
     type: query
     description: Querying expression and phenotype data
   - user: https://geneontology.org/
-    label: GO Database
     type: query
-    description: Querying for functional annotations relevant to a tissue
+    description: GO Database is used for querying for functional annotations relevant to a tissue
     examples:
       - url: http://amigo.geneontology.org/amigo/term/UBERON:0000955
         description: GO annotations relevant to the uberon class for brain
   - user: http://phenoscape.org
-    label: Phenoscape
     description: The Phenoscape project is both a major driver of and contributor to Uberon, contibuting thousands of terms. The teleost (bony fishes) component of Uberon was derived from the Teleost Anatomy Ontology, developed by the Phenoscape group. Most of the high level design of the skeletal system comes from the Vertebrate Skeletal Anatomy Ontology (VSAO), also created by the Phenoscape group. Phenoscape curators continue to extend the ontology, covering a wide variety of tetrapod structures, with an emphasis on the appendicular system.
   - user: https://neuinfo.org/
     description: Searchable collection of neuroscience data and ontology for neuroscience
@@ -59,12 +59,16 @@ usages:
     type: Database
   - user: http://single-cell.clst.riken.jp/
     description: SCPortalen
-    reference: https://doi.org/10.1093/nar/gkx949
+    publications:
+      - id: https://doi.org/10.1093/nar/gkx949
+        title: "SCPortalen: human and mouse single-cell centric database"
     type: Database
   - user: https://www.ebi.ac.uk/chembl/
     description: "ChEMBL uses Uberon to describe organ/tissue information in assays"
-    reference: https://doi.org/10.1093/nar/gky1075
     type: Database
+    publications:
+      - id: https://doi.org/10.1093/nar/gky1075
+        title: "ChEMBL: towards direct deposition of bioassay data"
 funded_by:
   - "NIH R24OD011883"
   - "NIH R01HG004838"

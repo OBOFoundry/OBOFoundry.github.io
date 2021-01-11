@@ -32,7 +32,10 @@ usages:
     description: WormBase uses WBbt to curate anatomical expression patterns and anatomy function annotations, and to allow search and indexing on the WormBase site
     examples:
       - url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression
-    reference: https://academic.oup.com/nar/article/48/D1/D762/5603222
+        description: "Expression for gene daf-16 with WormBase ID WBGene00000912"
+    publications:
+      - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
+        title: "WormBase: a modern Model Organism Information Resource"
 activity_status: active
 ---
 

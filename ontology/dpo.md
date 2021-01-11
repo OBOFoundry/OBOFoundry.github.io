@@ -34,7 +34,7 @@ publications:
 usages:
   - user: http://flybase.org
     description: FlyBase uses dpo for phenotype data annotation in Drosophila
-    example:
+    examples:
       - url: "http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBcv:0002030"
         description: "alleles and constructs annotated to pupal lethal in FlyBase"
 activity_status: active

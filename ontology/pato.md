@@ -40,7 +40,10 @@ usages:
     description: PATO is used by the Human Phenotype Ontology (HPO) for logical definitions of phenotypes that facilitate cross-species integration.
     examples:
       - url: https://www.ebi.ac.uk/ols/ontologies/hp/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHP_0011017&viewMode=All&siblings=false
-    reference: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6324074/
+        description: An abnormality in a cellular process.
+    publications:
+      - id: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6324074/
+        title: "Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources"
 activity_status: active
 ---
 

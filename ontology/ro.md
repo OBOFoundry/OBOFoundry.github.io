@@ -53,13 +53,13 @@ license:
 usages:
   - user: http://geneontology.org
     type: annotation
-    description: RO is used for annotation extensions in the GO
-    reference: https://doi.org/10.1186/1471-2105-15-155
-  - user: http://geneontology.org
-    type: annotation
-    description: RO is used for GO Causal Activity Models
+    description: RO is used for annotation extensions in the GO and GO Causal Activity Models.
+    publications:
+      - id: https://doi.org/10.1186/1471-2105-15-155
+        title: "A method for increasing expressivity of Gene Ontology annotations using a compositional approach"
     examples:
-      - http://model.geneontology.org/56d1143000003402
+      - url: http://model.geneontology.org/56d1143000003402
+        description: wg_biogenesis_FlyBase
 activity_status: active
 ---
 

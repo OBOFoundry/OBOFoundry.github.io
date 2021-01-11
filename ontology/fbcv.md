@@ -28,7 +28,7 @@ browsers:
 usages:
   - user: http://flybase.org
     description: FlyBase uses FBcv for phenotype data annotation in Drosophila
-    example:
+    examples:
       - url: "http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBcv:0000391"
         description: "alleles and constructs annotated to bang sensitive in FlyBase"
 activity_status: active

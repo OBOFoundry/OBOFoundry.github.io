@@ -57,17 +57,17 @@ usages:
     seeAlso: http://blogs.nature.com/scientificdata/2015/12/17/isa-explorer/
   - user: http://oceans.taraexpeditions.org/en/
     description: Samples collected during Tara Oceans expedition are annotated with ENVO
-    example:
+    examples:
       - url: https://www.ebi.ac.uk/metagenomics/projects/ERP001736/samples/ERS487899
         description: "Sample collected during the Tara Oceans expedition (2009-2013) at station TARA_004 (latitudeN=36.5533, longitudeE=-6.5669)"
   - user: https://www.ncbi.nlm.nih.gov/
     description: Annotation of habitats of microbes
-    example:
+    examples:
       - url: https://www.ncbi.nlm.nih.gov/nuccore/NC_016642
         description: "Annotation of habitat of Pseudovibrio sp. FO-BEG1 to marine environment"
   - user: https://www.planetmicrobe.org/project/
     description: Annotation and semantic search over microbial data sets
-    example:
+    examples:
       - url: https://www.planetmicrobe.org/project/#/samples/200
         description: "Example metadata of a sample of marine water near Lisboa, taken as part of the Ocean Sampling Day Project (https://www.microb3.eu/osd.html). ENVO is used for the fields environmental feature, material, and biome."
 jobs:

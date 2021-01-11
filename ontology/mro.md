@@ -21,7 +21,10 @@ usages:
     description: MRO is used by the The Immune Epitope Database (IEDB) annotations
     examples:
       - url: https://www.iedb.org/assay/1357035
-    reference: DOI:10.1093/nar/gky1006
+        description: "Epitope ID: 59611 based on reference 1003499"
+    publications:
+      - id: https://doi.org/10.1093/nar/gky1006
+        title: "The Immune Epitope Database (IEDB): 2018 update"
 activity_status: active
 ---
 
