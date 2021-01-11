@@ -429,16 +429,21 @@
        				 	},
 					"type": { "type": "string" },
 					"description": {"type":"string"},
-					"seeAlso": {"type": "string", "format": "uri"},
+					"seeAlso": {
+                                                "description": "secondary link to the user, such as a FAIR Sharing entry",
+						"type": "string", 
+						"format": "uri" 
+						},
         				"examples": {
+						"description": "specific page showing how the ontology is used by that user/resource",
 						"type": "array",
 						"items": {
           						"type": "object",
       							"additionalProperties" : false,
           						"properties": {
           							"url": {
-            							"type": "string",
-            							"format": "uri"
+            								"type": "string",
+            								"format": "uri"
           							},
           							"description": {"type": "string"}
        							},
@@ -446,14 +451,15 @@
 						}
         				},
 					"publications": {
+						"description": "how the user uses the ontology, not specific examples of use",
 						"type": "array",
 						"items": {
 							"type": "object",
 							"additionalProperties" : false,
 							"properties": {
 								"id": { 
-								"type": "string",
-								"format": "uri"
+									"type": "string",
+									"format": "uri"
 								},
 								"title": {"type": "string"}
 							},
