@@ -9,6 +9,7 @@ description: Developmental stages of the Zebrafish
 domain: anatomy
 homepage: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
 page: https://github.com/obophenotype/developmental-stage-ontologies/wiki/ZFS
+tracker: https://github.com/cerivs/zebrafish-anatomical-ontology/issues
 products:
   - id: zfs.owl
   - id: zfs.obo
