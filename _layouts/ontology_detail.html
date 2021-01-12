@@ -2,10 +2,10 @@
 layout: default
 ---
 {% include navbar.html %}
-<div class="content">    
+<div class="content">
 
 
-  <div>	
+  <div>
     <div class="page-header">
       <h1>
         {% if page.depicted_by %}
@@ -13,15 +13,15 @@ layout: default
         {% endif %}
         {{ page.title }}
         <small>{{ page.tagline }}</small>
-      </h1>      
+      </h1>
       <p>
         {{page.description}}
       </p>
       {% if page.twitter %}
-      <iframe style="position: static; visibility: visible; width: 190px; height: 20px;" 
-              data-twttr-rendered="true" title="Twitter Follow Button" 
-              class="twitter-follow-button twitter-follow-button" 
-              src="http://platform.twitter.com/widgets/follow_button.a64cf823bcb784855b86e2970134bd2a.en.html#_=1438577078419&amp;dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name={{page.twitter}}&amp;show_count=true&amp;show_screen_name=true&amp;size=m" 
+      <iframe style="position: static; visibility: visible; width: 190px; height: 20px;"
+              data-twttr-rendered="true" title="Twitter Follow Button"
+              class="twitter-follow-button twitter-follow-button"
+              src="http://platform.twitter.com/widgets/follow_button.a64cf823bcb784855b86e2970134bd2a.en.html#_=1438577078419&amp;dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name={{page.twitter}}&amp;show_count=true&amp;show_screen_name=true&amp;size=m"
               allowtransparency="true" scrolling="no" id="twitter-widget-0" frameborder="0">
       </iframe>
       {% endif %}
@@ -106,16 +106,17 @@ layout: default
             </tbody>
           </table>
         </div>
-        
+
 
       </div>
+
       <div class="col-md-4">
         <dl class="dl-horizontal" style="dd { margin-left: 0 }">
 
           <dt>
             ID Space
-            <span data-toggle="tooltip" 
-                  title="ID prefix" 
+            <span data-toggle="tooltip"
+                  title="ID prefix"
                   html="true">
             </span>
           </dt>
@@ -166,7 +167,7 @@ layout: default
 						{% endif %}
 					<dd>
 					{% endif %}
-					
+
           <dt>Homepage</dt>
           <dd>
             <a href="{{page.homepage}}">{{page.homepage}}</a>
@@ -185,7 +186,7 @@ layout: default
 
           <dt>Contact</dt>
           <dd>
-            <a href="mailto:{{page.contact.email}}">{{page.contact.label}}</a> 
+            <a href="mailto:{{page.contact.email}}">{{page.contact.label}}</a>
           </dd>
 
           <dt>Trackers</dt>
@@ -197,7 +198,7 @@ layout: default
           <dd>
             <a href="/domain/{{page.domain}}.html">{{page.domain}}</a>
           </dd>
-					
+
           {% if page.mailing_list %}
           <dt>Mail List</dt>
           <dd>
@@ -269,16 +270,46 @@ layout: default
           </dd>
           {% endfor %}
           {% endif %}
+          {% if page.usages %}
+          <dt> Usages </dt>
+          {% for p in page.usages %}
+          <dd>   User: <a href="{{p.user}}"> {{p.user}} </a> <br />
+             Description: {{p.description}} <br />
+            {% if p.type %}
+              Type: {{p.type}} <br />
+            {% endif %}
+            {% if p.seeAlso %}
+               seeAlso: <a href="{{p.seeAlso}}"> {{p.seeAlso}} </a> <br />
+            {% endif %}
+            {% if p.examples %}
+              Examples: <br/>
+              {% for example in p.examples %}
+                <a href="{{example.url}}"> {{example.description}} </a> <br />
+              {% endfor %}
+
+            {% endif %}
+            {% if p.publications %}
+              Publications: <br />
+              {% for publication in p.publications %}
+                 <a href="{{publication.id}}"> {{publication.title}} </a> <br />
+              {% endfor %}
+
+            {% endif %}
+          </dd> <br/>
+          {% endfor %}
+
+          {% endif %}
+
 
 
         </dl>
-        
+
 
         <div class="btn-group" role="group" aria-label="Source">
           <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/{{page.id}}.md">
-            <button type="button" 
-                    data-toggle="tooltip" 
-                    title="See FAQ entry: How is metadata stored?" 
+            <button type="button"
+                    data-toggle="tooltip"
+                    title="See FAQ entry: How is metadata stored?"
                     html="true"
                     class="btn btn-default">
               View
@@ -286,18 +317,18 @@ layout: default
           </a>
           <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md">
 
-            <button type="button" 
-                    data-toggle="tooltip" 
-                    title="See FAQ entry: How I do edit my metadata?" 
+            <button type="button"
+                    data-toggle="tooltip"
+                    title="See FAQ entry: How I do edit my metadata?"
                     html="true"
                     class="btn btn-default">
               Edit</button>
           </a>
           <a href="https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/{{page.id}}.yml">
 
-            <button type="button" 
-                    data-toggle="tooltip" 
-                    title="See FAQ entry: How I do edit my PURL?" 
+            <button type="button"
+                    data-toggle="tooltip"
+                    title="See FAQ entry: How I do edit my PURL?"
                     html="true"
                     class="btn btn-default">
               PURL</button>
@@ -326,10 +357,10 @@ layout: default
     </div>
 
     {% if page.comments %}
-    <div>	
-      <div >    
+    <div>
+      <div >
         <h2>Comments Section</h2>
-        <p>Feel free to comment on the post but keep it clean and on topic.</p>	
+        <p>Feel free to comment on the post but keep it clean and on topic.</p>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -347,9 +378,8 @@ layout: default
       </div>
     </div>
     {% endif %}
-    
+
     <!-- Twitter -->
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
   </div>
-  
