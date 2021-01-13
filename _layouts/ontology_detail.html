@@ -110,31 +110,31 @@ layout: default
       <div>
           <h2> Usages </h2> <ul>
         {% for p in page.usages %}
-          <li>
-           <b> User: </b> <a href="{{p.user}}"> {{p.user}} </a> <br/>
-           <b> Description: </b> {{p.description}} <br />
+          <li> <dl>
+          <dt> <b> User: </b> </dt> <dd> <a href="{{p.user}}"> {{p.user}} </a> </dd>
+          <dt> <b> Description: </b> </dt> <dd> {{p.description}} </dd>
           {% if p.type %}
-          <b> Type: </b> {{p.type}} <br />
+          <dt> <b> Type: </b> </dt> <dd> {{p.type}} </dd>
           {% endif %}
           {% if p.seeAlso %}
-           <b> seeAlso: </b> <a href="{{p.seeAlso}}"> {{p.seeAlso}} </a> <br/>
+           <dt> <b> seeAlso: </b> </dt> <dd> <a href="{{p.seeAlso}}"> {{p.seeAlso}} </a> </dd>
           {% endif %}
           {% if p.examples %}
-           <b> Examples: </b> <ul>
+           <dt> <b> Examples: </b> </dt>
             {% for example in p.examples %}
-            <li>  <a href="{{example.url}}"> {{example.description}} </a> </li>
+            <dd>  <a href="{{example.url}}"> {{example.description}} </a> </dd>
             {% endfor %}
-          </ul>
+
           {% endif %}
           {% if p.publications %}
-            <b> Publications: </b> <ul>
+            <dt> <b> Publications: </b> </dt>
             {% for publication in p.publications %}
-            <li> <a href="{{publication.id}}"> {{publication.title}} </a> </li>
+            <dd> <a href="{{publication.id}}"> {{publication.title}} </a> </dd>
             {% endfor %}
-            </ul>
           {% endif %}
-          </li>
+          </dl> </li>
         {% endfor %}
+        </ul>
         </div>
         {% endif %}
 
