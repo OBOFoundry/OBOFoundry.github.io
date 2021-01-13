@@ -2,8 +2,8 @@
 layout: ontology_detail
 id: ero
 contact:
-  email: Juliane_Schneider@hms.harvard.edu
-  label: Juliane Schneider
+  email: Marc_Ciriello@hms.harvard.edu
+  label: Marc Ciriello
 license:
   url: https://creativecommons.org/licenses/by/2.0/
   label: CC-BY 2.0
