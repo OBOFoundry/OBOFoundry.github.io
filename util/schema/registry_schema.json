@@ -415,7 +415,60 @@
 			"suggest": false
 		},
 		"usages": {
-			"suggest": false
+			"suggest": false,
+      			"level": "error",
+      			"description": "Information on usage of particular ontology.",
+			"type": "array",
+			"items": {
+        			"type": "object",
+				"additionalProperties" : false,
+        			"properties": {
+					"user": {
+          			      		"type": "string",
+          					"format": "uri"
+       				 	},
+					"type": { "type": "string" },
+					"description": {"type":"string"},
+					"seeAlso": {
+                                                "description": "secondary link to the user, such as a FAIR Sharing entry",
+						"type": "string", 
+						"format": "uri" 
+						},
+        				"examples": {
+						"description": "specific page showing how the ontology is used by that user/resource",
+						"type": "array",
+						"items": {
+          						"type": "object",
+      							"additionalProperties" : false,
+          						"properties": {
+          							"url": {
+            								"type": "string",
+            								"format": "uri"
+          							},
+          							"description": {"type": "string"}
+       							},
+         						"required": ["url", "description"]
+						}
+        				},
+					"publications": {
+						"description": "how the user uses the ontology, not specific examples of use",
+						"type": "array",
+						"items": {
+							"type": "object",
+							"additionalProperties" : false,
+							"properties": {
+								"id": { 
+									"type": "string",
+									"format": "uri"
+								},
+								"title": {"type": "string"}
+							},
+							"required": ["id", "title"]
+						}
+					}  
+      				},
+      				"required": ["user", "description"]
+			}
 		},
 		"used_by": {
 			"suggest": false
@@ -438,4 +491,3 @@
 				 "title", "tracker"],
 	"level": "error"
 }
-

@@ -24,8 +24,8 @@ build:
   system: git
 usages:
   - user: https://taxonworks.org
-    label: TaxonWorks
     seeAlso: https://github.com/SpeciesFileGroup/taxonworks
+    description: TaxonWorks is an integrated web-based workbench for taxonomists and biodiversity scientists.
     type: application
 mailing_list: https://groups.google.com/forum/#!forum/nomen-discuss
 tracker: https://github.com/SpeciesFileGroup/nomen/issues
