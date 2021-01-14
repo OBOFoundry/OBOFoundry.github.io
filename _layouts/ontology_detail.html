@@ -107,36 +107,43 @@ layout: default
           </table>
         </div>
         {% if page.usages %}
-      <div>
-          <h2> Usages </h2> <ul>
-        {% for p in page.usages %}
-          <li> <dl>
-          <dt> <b> User: </b> </dt> <dd> <a href="{{p.user}}"> {{p.user}} </a> </dd>
-          <dt> <b> Description: </b> </dt> <dd> {{p.description}} </dd>
-          {% if p.type %}
-          <dt> <b> Type: </b> </dt> <dd> {{p.type}} </dd>
-          {% endif %}
-          {% if p.seeAlso %}
-           <dt> <b> seeAlso: </b> </dt> <dd> <a href="{{p.seeAlso}}"> {{p.seeAlso}} </a> </dd>
-          {% endif %}
-          {% if p.examples %}
-           <dt> <b> Examples: </b> </dt>
-            {% for example in p.examples %}
-            <dd>  <a href="{{example.url}}"> {{example.description}} </a> </dd>
-            {% endfor %}
-
-          {% endif %}
-          {% if p.publications %}
-            <dt> <b> Publications: </b> </dt>
-            {% for publication in p.publications %}
-            <dd> <a href="{{publication.id}}"> {{publication.title}} </a> </dd>
-            {% endfor %}
-          {% endif %}
-          </dl> </li>
-        {% endfor %}
-        </ul>
+        <div>
+          <h2>Usages</h2>
+          {% for p in page.usages %}
+          <dl class="dl-horizontal">
+            <dt>User</dt> <dd><a href="{{p.user}}">{{p.user}}</a></dd>
+            <dt>Description</dt><dd>{{p.description}}</dd>
+            {% if p.type %}
+            <dt>Type</dt> <dd>{{p.type}}</dd>
+            {% endif %}
+            {% if p.seeAlso %}
+            <dt>See also</dt> <dd><a href="{{p.seeAlso}}">{{p.seeAlso}}</a></dd>
+            {% endif %}
+            {% if p.examples %}
+            <dt>Examples</dt>
+            <dd>
+              <ul style="padding-left: 20px">
+              {% for example in p.examples %}
+                <li><a href="{{example.url}}">{{example.description}}</a></li>
+              {% endfor %}
+              </ul>
+            </dd>
+            {% endif %}
+            {% if p.publications %}
+            <dt>Publications</dt>
+            <dd>
+              <ul style="padding-left: 20px">
+              {% for publication in p.publications %}
+                <li><a href="{{publication.id}}">{{publication.title}}</a></li>
+              {% endfor %}
+              </ul>
+            </dd>
+            {% endif %}
+          </dl>
+          {% endfor %}
         </div>
         {% endif %}
+
 
       </div>
 
