@@ -55,7 +55,7 @@ usages:
     description: Mondo is used by the ClinGen for disease curations.
     examples:
       - url: https://search.clinicalgenome.org/kb/conditions/MONDO_0011794
-        description: "SCN1A is an autosomal dominant mutation in Dravet syndrome."  
+        description: SCN1A is an autosomal dominant mutation in Dravet syndrome.
 activity_status: active
 ---
 
