@@ -53,6 +53,11 @@ usages:
     examples:
       - url: https://monarchinitiative.org/phenotype/HP:0001300
     reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
+  - user: https://www.hl7.org/implement/standards/
+    type: annotation
+    description: HPO is a terminology used in HL7 standards.
+    examples:
+      - url: https://confluence.hl7.org/display/TA/External+Terminologies+-+Information#  
 activity_status: active
 ---
 
