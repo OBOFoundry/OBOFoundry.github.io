@@ -59,6 +59,18 @@ usages:
   - user: https://portal.kidsfirstdrc.org/
     type: annotation
     description: Mondo is used by the Kids First Data Resource Portal for disease annotations. Note, a login is needed to access the portal and view the Mondo-curated data.
+  - user: https://www.ancestry.com/
+    type: annotation
+    description: Mondo is used by the Ancestory for some disease curations.
+    examples:
+      - url: https://support.ancestry.com/s/article/Disease-Condition-Catalog-Powered-by-MONDO
+        description: Some term names in ancestory.com are curated with Mondo, for ease of use.
+ - user: https://www.humancellatlas.org/
+    type: annotation
+    description: Mondo is used by the Human Cell Atlas for some disease annotations.
+    examples:
+      - url: https://data.humancellatlas.org/explore/projects?filter=%5B%7B%22facetName%22:%22organ%22,%22terms%22:%5B%22kidney%22%5D%7D,%7B%22facetName%22:%22donorDisease%22,%22terms%22:%5B%22acoustic%20neuroma%22,%22acute%20kidney%20tubular%20necrosis%22%5D%7D%5D&catalog=dcp1
+        description: Disease status specimen is normal, type 2 diabetes mellitus.
 activity_status: active
 ---
 
