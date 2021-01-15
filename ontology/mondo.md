@@ -50,6 +50,11 @@ usages:
     publications:
       - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
         title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species "
+ - user: https://www.hl7.org/implement/standards/
+    type: annotation
+    description: Mondo is a terminology used in HL7 standards.
+    examples:
+      - url: https://confluence.hl7.org/display/TA/External+Terminologies+-+Information#  
 activity_status: active
 ---
 
