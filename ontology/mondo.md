@@ -50,6 +50,12 @@ usages:
     publications:
       - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
         title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species "
+- user: https://www.clinicalgenome.org/
+    type: annotation
+    description: Mondo is used by the ClinGen for disease curations.
+    examples:
+      - url: https://search.clinicalgenome.org/kb/conditions/MONDO_0011794
+        description: "SCN1A is an autosomal dominant mutation in Dravet syndrome."  
 activity_status: active
 ---
 
