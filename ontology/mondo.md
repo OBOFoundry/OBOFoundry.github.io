@@ -65,7 +65,7 @@ usages:
     examples:
       - url: https://support.ancestry.com/s/article/Disease-Condition-Catalog-Powered-by-MONDO
         description: Some term names in ancestory.com are curated with Mondo, for ease of use.
- - user: https://www.humancellatlas.org/
+  - user: https://www.humancellatlas.org/
     type: annotation
     description: Mondo is used by the Human Cell Atlas for some disease annotations.
     examples:
