@@ -23,6 +23,7 @@ Membership in working groups: T=technical working group, O=outreach working grou
 Current members of the OBO Foundry Operations Committee are (in alphabetical order of surname):
 
  * Jim Balhoff (T), RENCI, University of North Carolina, Chapel Hill, NC, USA
+ * Mathias Brochhausen (O), University of Arkansas for Medical Sciences, Little Rock, AR, USA
  * Matt Brush (T), OHSU
  * Pier Luigi Buttigieg (E, O), Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Bremerhaven, Germany
  * Seth Carbon (T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA
@@ -57,7 +58,6 @@ Alumni:
 
  * Michael Ashburner
  * Colin Batchelor (E)
- * Mathias Brochhausen (O)
  * Eric Douglass (T)
  * Janna Hastings (E, O)
  * [Suzanna Lewis](https://github.com/selewis), (O, T)
