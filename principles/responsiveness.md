@@ -33,8 +33,11 @@ Examples
 --------
 
 Issue tracker: https://github.com/monarch-initiative/mondo/issues  
+
 Discussion list: mondo-users@googlegroups.com  
+
 Collaboration of this sort can be demonstrated by having an active discussion mailing list, or responsiveness to community requests on a GitHub tracker.  
+
 
 Counter-Examples
 ----------------
