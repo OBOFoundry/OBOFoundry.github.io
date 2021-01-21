@@ -819,7 +819,7 @@ ontologies:
     email: cjmungall@lbl.gov
     github: cmungall
     label: Chris Mungall
-  description: An ontology for respresenting spatial concepts, anatomical axes, gradients,
+  description: An ontology for representing spatial concepts, anatomical axes, gradients,
     regions, planes, sides, and surfaces
   domain: anatomy
   homepage: https://github.com/obophenotype/biological-spatial-ontology
@@ -3348,6 +3348,30 @@ ontologies:
         phenotypes to genotypes across species '
     type: annotation
     user: https://monarchinitiative.org/
+  - description: Mondo is used by the ClinGen for disease curations.
+    examples:
+    - description: SCN1A is an autosomal dominant mutation in Dravet syndrome.
+      url: https://search.clinicalgenome.org/kb/conditions/MONDO_0011794
+    type: annotation
+    user: https://www.clinicalgenome.org/
+  - description: Mondo is used by the Kids First Data Resource Portal for disease
+      annotations. Note, a login is needed to access the portal and view the Mondo-curated
+      data.
+    type: annotation
+    user: https://portal.kidsfirstdrc.org/
+  - description: Mondo is used by the Ancestory for some disease curations.
+    examples:
+    - description: Some term names in ancestory.com are curated with Mondo, for ease
+        of use.
+      url: https://support.ancestry.com/s/article/Disease-Condition-Catalog-Powered-by-MONDO
+    type: annotation
+    user: https://www.ancestry.com/
+  - description: Mondo is used by the Human Cell Atlas for some disease annotations.
+    examples:
+    - description: Disease status specimen is normal, type 2 diabetes mellitus.
+      url: https://data.humancellatlas.org/explore/projects?filter=%5B%7B%22facetName%22:%22organ%22,%22terms%22:%5B%22kidney%22%5D%7D,%7B%22facetName%22:%22donorDisease%22,%22terms%22:%5B%22acoustic%20neuroma%22,%22acute%20kidney%20tubular%20necrosis%22%5D%7D%5D&catalog=dcp1
+    type: annotation
+    user: https://www.humancellatlas.org/
 - activity_status: active
   build:
     method: owl2obo
@@ -5778,6 +5802,36 @@ ontologies:
   tracker: https://github.com/ybradford/zebrafish-experimental-conditions-ontology/issues
 - activity_status: active
   build:
+    infallible: 1
+    method: obo2owl
+    source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/zfs/zfs.obo
+  contact:
+    email: van_slyke@zfin.org
+    label: Ceri Van Slyke
+  description: Developmental stages of the Zebrafish
+  domain: anatomy
+  homepage: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
+  id: zfs
+  in_foundry: false
+  layout: ontology_detail
+  license:
+    label: CC-BY 3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/zfs.owl
+  page: https://github.com/obophenotype/developmental-stage-ontologies/wiki/ZFS
+  products:
+  - id: zfs.owl
+    ontology_purl: http://purl.obolibrary.org/obo/zfs.owl
+  - id: zfs.obo
+    ontology_purl: http://purl.obolibrary.org/obo/zfs.obo
+  taxon:
+    id: NCBITaxon:7954
+    label: Danio
+  title: Zebrafish developmental stages ontology
+  tracker: https://github.com/cerivs/zebrafish-anatomical-ontology/issues
+- activity_status: active
+  build:
     checkout: git clone https://github.com/obophenotype/zebrafish-phenotype-ontology.git
     path: .
     system: git
@@ -5831,8 +5885,8 @@ ontologies:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/ero.owl
   contact:
-    email: Juliane_Schneider@hms.harvard.edu
-    label: Juliane Schneider
+    email: Marc_Ciriello@hms.harvard.edu
+    label: Marc Ciriello
   description: An ontology of research resources such as instruments. protocols, reagents,
     animal models and biospecimens.
   documentation: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
@@ -5987,6 +6041,7 @@ ontologies:
   - id: kisao.owl
     ontology_purl: http://purl.obolibrary.org/obo/kisao.owl
   title: Kinetic Simulation Algorithm Ontology
+  tracker: https://sourceforge.net/p/kisao/feature-requests/
 - activity_status: active
   build:
     method: owl2obo
@@ -6061,35 +6116,6 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/txpo.owl
   title: Toxic Process Ontology
   tracker: https://github.com/txpo-ontology/TXPO/issues
-- activity_status: active
-  build:
-    infallible: 1
-    method: obo2owl
-    source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/zfs/zfs.obo
-  contact:
-    email: van_slyke@zfin.org
-    label: Ceri Van Slyke
-  description: Developmental stages of the Zebrafish
-  domain: anatomy
-  homepage: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
-  id: zfs
-  in_foundry: false
-  layout: ontology_detail
-  license:
-    label: CC-BY 3.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
-  ontology_purl: http://purl.obolibrary.org/obo/zfs.owl
-  page: https://github.com/obophenotype/developmental-stage-ontologies/wiki/ZFS
-  products:
-  - id: zfs.owl
-    ontology_purl: http://purl.obolibrary.org/obo/zfs.owl
-  - id: zfs.obo
-    ontology_purl: http://purl.obolibrary.org/obo/zfs.obo
-  taxon:
-    id: NCBITaxon:7954
-    label: Danio
-  title: Zebrafish developmental stages ontology
 - activity_status: orphaned
   build:
     checkout: git clone https://github.com/obophenotype/sibo.git
