@@ -1,7 +1,7 @@
 ---
 layout: responsiveness
-id: fp-017-responsiveness
-title: Responsiveness (principle 17)
+id: fp-020-responsiveness
+title: Responsiveness (principle 20)
 ---
 
 NOTE
@@ -10,9 +10,9 @@ The wording of this principle is still in progress.
 
 Summary and Purpose
 -------
-Ontology developers, curators and maintainers need to be responsive to community requests on their respective trackers (e.g. GitHub, Bitbucket and GitLab, etc).
+It is required that ontology developers offer channels for community participation. A discussion mailing list and issue tracker are required to obtain an OBO Foundry PURL. It is recommended to aim for a good level of responsiveness to community requests and suggestions, which is also related to the [maintenance principle](http://obofoundry.org/principles/fp-016-maintenance.html).
 
-[This check is automatically validated.](checks/fp_017)
+[This check is automatically validated.](checks/fp_020)
 
 Implementation
 -------
