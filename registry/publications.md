@@ -40,6 +40,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Plant Ontology (po): [The plant ontology as a tool for comparative plant anatomy and genomic analyses.](http://www.ncbi.nlm.nih.gov/pubmed/23220694)
 - Plant Trait Ontology (to): [The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics.](https://doi.org/10.1093/nar/gkx1152)
 - Porifera Ontology (poro): [The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy ontology](https://doi.org/10.1186/2041-1480-5-39)
+- Protein modification (mod): [The PSI-MOD community standard for representation of protein modification data](https://pubmed.ncbi.nlm.nih.gov/18688235/)
 - Rat Strain Ontology (rs): [Rat Strain Ontology: structured controlled vocabulary designed to facilitate access to strain data at RGD.](http://www.ncbi.nlm.nih.gov/pubmed/24267899)
 - Sequence types and features ontology (so): [The Sequence Ontology: a tool for the unification of genome annotations.](http://www.ncbi.nlm.nih.gov/pubmed/15892872)
 - Teleost Anatomy Ontology (tao): [The teleost anatomy ontology: anatomical representation for the genomics age](https://www.ncbi.nlm.nih.gov/pubmed/20547776)
