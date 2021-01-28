@@ -27,13 +27,13 @@ products:
   - id: rbo/rbo-base.json
     name: "Radiation Biology Ontology additional release in OBOJSon format"
 dependencies:
-- id: ro
-- id: bfo
-- id: pato
-- id: chmo
-- id: envo
-- id: obi
-- id: uo
+  - id: ro
+  - id: bfo
+  - id: pato
+  - id: chmo
+  - id: envo
+  - id: obi
+  - id: uo
 
 tracker: https://github.com/DanBerrios/RBO/issues
 license:
