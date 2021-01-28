@@ -4734,6 +4734,55 @@ ontologies:
     title: The pathway ontology - updates and applications.
   title: Pathway ontology
   tracker: https://github.com/rat-genome-database/PW-Pathway-Ontology/issues
+- activity_status: active
+  build:
+    checkout: git clone https://github.com/DanBerrios/RBO.git
+    path: .
+    system: git
+  contact:
+    email: daniel.c.berrios@nasa.gov
+    github: https://github.com/DanBerrios
+    label: Daniel C. Berrios
+  dependencies:
+  - id: ro
+  - id: bfo
+  - id: pato
+  - id: chmo
+  - id: envo
+  - id: obi
+  - id: uo
+  description: The RBO is an ontology about Radiation Biology, with emphasis on Space
+    Biology.
+  domain: radiation biology, the study of the effects of radiation on biological systems
+  homepage: https://github.com/DanBerrios/RBO
+  id: rbo
+  layout: ontology_detail
+  license:
+    label: CC0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/rbo.owl
+  products:
+  - id: rbo.owl
+    name: Radiation Biology Ontology main release in OWL format
+    ontology_purl: http://purl.obolibrary.org/obo/rbo.owl
+  - id: rbo.obo
+    name: Radiation Biology Ontology additional release in OBO format
+    ontology_purl: http://purl.obolibrary.org/obo/rbo.obo
+  - id: rbo.json
+    name: Radiation Biology Ontology additional release in OBOJSon format
+    ontology_purl: http://purl.obolibrary.org/obo/rbo.json
+  - id: rbo/rbo-base.owl
+    name: Radiation Biology Ontology main release in OWL format
+    ontology_purl: http://purl.obolibrary.org/obo/rbo/rbo-base.owl
+  - id: rbo/rbo-base.obo
+    name: Radiation Biology Ontology additional release in OBO format
+    ontology_purl: http://purl.obolibrary.org/obo/rbo/rbo-base.obo
+  - id: rbo/rbo-base.json
+    name: Radiation Biology Ontology additional release in OBOJSon format
+    ontology_purl: http://purl.obolibrary.org/obo/rbo/rbo-base.json
+  title: Radiation Biology Ontology
+  tracker: https://github.com/DanBerrios/RBO/issues
 - aberowl_id: relo
   activity_status: active
   build:
