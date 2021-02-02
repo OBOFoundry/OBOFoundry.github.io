@@ -42,7 +42,7 @@ Current members of the OBO Foundry Operations Committee are (in alphabetical ord
  * David Osumi-Sutherland (?), EMBL-EBI, Cambridge, UK
  * [James A. Overton](http://james.overton.ca) (T), [Knocean Inc.](http://knocean.com), Toronto, Canada
  * Bjoern Peters (E), La Jolla Institute for Immunology, La Jolla, CA, USA
- * [Philippe Rocca-Serra](https://eng.ox.ac.uk/people/philippe-rocca-serra/) (E, O)
+ * [Philippe Rocca-Serra](https://eng.ox.ac.uk/people/philippe-rocca-serra/) (E, O), University of Oxford e-Research Centre, Department of Engineering Science, Oxford, UK.
  * [Alan Ruttenberg](http://sciencecommons.org/about/whoweare/ruttenberg/) (O, T), University at Buffalo, Buffalo, USA
  * [Richard Scheuermann](https://www.jcvi.org/about/rscheuermann) (O), J. Craig Venter Institute, La Jolla, CA, USA
  * [Lynn Schriml](http://www.medschool.umaryland.edu/profiles/Schriml-Lynn/) (E, O), University of Maryland School of Medicine
