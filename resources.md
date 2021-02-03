@@ -23,6 +23,7 @@ title: Resources
 - [Cell Ontology Tutorial](https://github.com/obophenotype/cell-ontology-training/blob/master/README.md): Led by David Osumi-Sutherland, Alex Diehl, Nico Matentzoglu and Nicole Vasilevsky
 - [ROBOT tutorial](https://ontodev.github.io/robot-tutorial/#/title-slide) by James Overton
 - [OBO Academy](https://www.youtube.com/channel/UCKAkmAIIfPZc5kjdait-MdQ) - A YouTube channel containing presentations and tutorials relevant to the OBO Foundry
+- [Pizza Tutorial for Protégé 5](https://drive.google.com/file/d/1UqI19JiGnJwzKx_JQ7qRAz7bmCzyqZpj/view) by Michael DeBellis. More [info.](https://www.michaeldebellis.com/post/new-protege-pizza-tutorial).
 
 ## Ontology Tools
 
