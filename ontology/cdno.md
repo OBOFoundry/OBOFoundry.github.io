@@ -9,6 +9,7 @@ build:
 contact:
   email: l.andres.hernandez.18@student.scu.edu.au
   label: Liliana Andres Hernandez
+  github: LilyAndres
 description: CDNO provides structured terminologies to describe nutritional attributes of crop plants and their harvested materials that contribute to human diet.
 domain: diet, metabolomics and nutrition
 homepage: https://github.com/Southern-Cross-Plant-Science/cdno
@@ -26,7 +27,7 @@ dependencies:
 - id: envo
 tracker: https://github.com/Southern-Cross-Plant-Science/cdno/issues
 license:
-  url: https://creativecommons.org/licenses/by/1.0/
+  url: https://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 activity_status: active
 ---
