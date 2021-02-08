@@ -19,12 +19,12 @@ products:
   - id: cdno.obo
     name: "Crop Dietary Nutrition Ontology additional release in OBO format"
 dependencies:
-- id: ro
-- id: bfo
-- id: pato
-- id: chebi
-- id: po
-- id: envo
+  - id: ro
+  - id: bfo
+  - id: pato
+  - id: chebi
+  - id: po
+  - id: envo
 tracker: https://github.com/Southern-Cross-Plant-Science/cdno/issues
 license:
   url: https://creativecommons.org/licenses/by/3.0/
