@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: cdno
 title: Crop Dietary Nutrition Ontology
-jobs:
-  - id: https://travis-ci.org/Southern-Cross-Plant-Science/cdno
-    type: travis-ci
 build:
   checkout: git clone https://github.com/Southern-Cross-Plant-Science/cdno.git
   system: git
@@ -12,9 +9,8 @@ build:
 contact:
   email: l.andres.hernandez.18@student.scu.edu.au
   label: Liliana Andres Hernandez
-  github: 
-description: CDNO provides structured terminologies to describe nutritional attributes of crop plants and their harvested materials that contribute to human diet. 
-domain: dietary nutritional components, nutritional component concentrations
+description: CDNO provides structured terminologies to describe nutritional attributes of crop plants and their harvested materials that contribute to human diet.
+domain: diet, metabolomics and nutrition
 homepage: https://github.com/Southern-Cross-Plant-Science/cdno
 products:
   - id: cdno.owl
@@ -28,7 +24,6 @@ dependencies:
 - id: chebi
 - id: po
 - id: envo
-
 tracker: https://github.com/Southern-Cross-Plant-Science/cdno/issues
 license:
   url: https://creativecommons.org/licenses/by/1.0/
