@@ -14,6 +14,8 @@ title: OBO Foundry membership requirements and technical details
 
 3. OBO projects are [open](http://obofoundry.org/principles/fp-001-open.html) and use [version control](http://obofoundry.org/principles/fp-004-versioning.html), and so we recommend that you set up an ontology repository on [GitHub](https://github.com) (or another public version control system). We provide the [Ontology Development Kit](https://github.com/INCATools/ontology-development-kit) to help with common ontology development tasks, including the creation of a GitHub repository and appropriate metadata files (see below).
 
+4. Before you participate in our community, please read and agree to follow our [Code of Conduct](http://obofoundry.org/docs/COC.html).
+
 
 # Requirements for OBO Membership
 
