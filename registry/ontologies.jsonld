@@ -1313,6 +1313,64 @@
         {
             "activity_status": "active",
             "build": {
+                "checkout": "git clone https://github.com/Southern-Cross-Plant-Science/cdno.git",
+                "path": ".",
+                "system": "git"
+            },
+            "contact": {
+                "email": "l.andres.hernandez.18@student.scu.edu.au",
+                "github": "LilyAndres",
+                "label": "Liliana Andres Hernandez"
+            },
+            "dependencies": [
+                {
+                    "id": "ro"
+                },
+                {
+                    "id": "bfo"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "chebi"
+                },
+                {
+                    "id": "po"
+                },
+                {
+                    "id": "envo"
+                }
+            ],
+            "description": "CDNO provides structured terminologies to describe nutritional attributes of crop plants and their harvested materials that contribute to human diet.",
+            "domain": "diet, metabolomics and nutrition",
+            "homepage": "https://github.com/Southern-Cross-Plant-Science/cdno",
+            "id": "cdno",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/cdno.owl",
+            "products": [
+                {
+                    "id": "cdno.owl",
+                    "name": "Crop Dietary Nutrition Ontology main release in OWL format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/cdno.owl"
+                },
+                {
+                    "id": "cdno.obo",
+                    "name": "Crop Dietary Nutrition Ontology additional release in OBO format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/cdno.obo"
+                }
+            ],
+            "title": "Crop Dietary Nutrition Ontology",
+            "tracker": "https://github.com/Southern-Cross-Plant-Science/cdno/issues"
+        },
+        {
+            "activity_status": "active",
+            "build": {
                 "method": "owl2obo",
                 "source_url": "https://raw.githubusercontent.com/semanticchemistry/semanticchemistry/master/ontology/cheminf.owl"
             },
