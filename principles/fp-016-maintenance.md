@@ -22,16 +22,6 @@ Review Criteria
 -------
 The developers of the ontology need to include a statement specifying how they are planning to maintain the ontology. We expect that an ontology will be maintained for at least 3 years from the time of review.
 
-### Original Formulation
-
-The original 2006 principles stated in the preamble:
-
-```
- OBO is an open community and, by joining the initiative,
-the authors of an ontology commit to its *maintenance in light of
-scientific advance* and to working with other members to ensure the
-improvement of these principles over time 
-```
 
 Examples
 --------
