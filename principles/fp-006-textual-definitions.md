@@ -21,7 +21,7 @@ Purpose
 
 A textual definition provides a human-readable understanding about what is a member of the associated class.
 
-Recommendations/Requirements
+Requirements and Recommendations
 --------------
 
 Textual definitions MUST be unique within an ontology (i.e. no two terms should share a definition). Textual definitions SHOULD follow Aristotelian form (e.g. “a B that Cs” where B is the parent and C is the differentia), where this is practical.

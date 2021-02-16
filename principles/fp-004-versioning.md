@@ -16,7 +16,7 @@ Purpose
 
 OBO projects share their ontologies using files in OWL or OBO format (see OBO Principle 2). Ontologies are expected to change over time as they are developed and refined (see OBO Principle 16 on maintenance). This will lead to a series of different files. Consumers of ontologies must be able to specify exactly which ontology files they used to encode their data or build their applications, and be able to retrieve unaltered copies of those files in perpetuity. Note that this applies only to those versions which have been officially released.
 
-Recommendations/Requirements
+Requirements and Recommendations
 -------
 
 Each official release MUST have a unique resolvable [version IRI](https://www.w3.org/TR/owl2-syntax/#Ontology_IRI_and_Version_IRI). 

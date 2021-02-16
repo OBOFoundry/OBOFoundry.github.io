@@ -14,7 +14,7 @@ The ontology MUST be openly available to be used by all without any constraint o
 
 OBO Foundry ontologies are resources for the entire biological and biomedical community. Furthermore, in order to realize the OBO Foundry vision of a suite of interoperable ontologies, ontology developers must be free to re-use terms from any OBO Foundry ontology. For these reasons, the ontologies must be available to all without any constraint on their use or redistribution. Nonetheless, it is proper that their original source is always credited and that after any external alterations, ontologies must never be redistributed under the same name or with the same identifiers.
 
-## Recommendations/Requirements
+## Requirements and Recommendations
 
 ### For ontology providers
 
