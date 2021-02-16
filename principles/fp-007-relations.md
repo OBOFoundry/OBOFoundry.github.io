@@ -21,7 +21,7 @@ Purpose
 
 To facilitate interoperability between multiple ontologies, especially with respect to logical inference. That is, a reasoner can only detect logical inconsistencies between ontologies and infer new axioms if the ontologies use the same object properties.
 
-Recommendation
+Recommendations/Requirements
 --------------
 
 Each OBO ontology MUST reuse existing relations (aka object properties) that have already been declared in the Relations Ontology (RO), rather than declaring duplicative relations. In some cases it may make sense for an ontology to declare a new relation in its own ID space. In these cases, there SHOULD still be coordination with RO, for example in the form of an issue submitted to the RO tracker.

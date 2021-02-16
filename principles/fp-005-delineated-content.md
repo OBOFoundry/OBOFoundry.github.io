@@ -23,7 +23,7 @@ Implementation
 -------
 The domain (scope) covered by the ontology should be clearly stated. The statement should be brief and free of jargon; a few sentences should suffice. The content of the ontology should stay within the confines of the stated scope.
 
-Recommendations
+Recommendations/Requirements
 -------
 Ideally the scope should be fairly narrow. Required terms that are out of scope should be imported from the appropriate ontology.
 
