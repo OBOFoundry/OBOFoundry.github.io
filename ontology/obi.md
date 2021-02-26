@@ -41,12 +41,12 @@ browsers:
 usages:
   - user: http://upibi.org/turbo/
     description: PennTURBO accelerates the processes of finding and connecting key information from clinical records, via semantic modeling of the processes that generated the data. This makes the discovery of previously unappreciated relations between the data possible for research and for operational tasks.
-    example:
+    examples:
       - url: https://github.com/PennTURBO/Turbo-Documentation/blob/master/IBI_CIC_TURBO_MAM_20190102.pdf
         description: "CYP2C1*2/*2 MI patient taking Clopidogrel"
   - user: http://evidenceontology.org/
     description: The Evidence & Conclusion Ontology (ECO) describes types of scientific evidence within the biological research domain. ECO uses OBI to logically describe how the evidence arises from an investigation.
-    example:
+    examples:
       - url: http://purl.obolibrary.org/obo/ECO_0001820
         description: "rapid amplification of cDNA ends polymerase chain reaction evidence"
 activity_status: active
@@ -60,4 +60,3 @@ The Ontology for Biomedical Investigations (OBI) project is developing an integr
 - [OBI mailing list](http://groups.google.com/group/obi-users)
 - To cite a journal article for OBI please use [Bandrowski et al, PLOS ONE, 2016](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0154556)
 - To refer to the most current information on the OBI project, please use the following: The OBI Consortium [http://purl.obolibrary.org/obo/obi](http://purl.obolibrary.org/obo/obi)
-

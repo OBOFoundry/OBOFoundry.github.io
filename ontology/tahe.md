@@ -8,9 +8,7 @@ contact:
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
-homepage: 
+homepage:
 is_obsolete: true
 activity_status: inactive
 ---
-
-

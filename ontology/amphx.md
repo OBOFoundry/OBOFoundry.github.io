@@ -16,7 +16,7 @@ products:
   - id: amphx.owl
   - id: amphx.obo
 dependencies:
- - id: uberon
+  - id: uberon
 tracker: https://github.com/EBISPOT/amphx_ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/

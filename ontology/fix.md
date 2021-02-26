@@ -3,7 +3,7 @@ layout: ontology_detail
 id: fix
 in_foundry: false
 contact:
-  email: 
+  email:
   label: chEBI
 description: "An ontology of physico-chemical methods and properties."
 build:

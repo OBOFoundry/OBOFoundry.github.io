@@ -8,7 +8,6 @@ import sys
 import time
 import yaml
 
-from cachier import cachier
 from contextlib import closing
 from SPARQLWrapper import SPARQLWrapper, JSON
 from json import dumps
@@ -119,7 +118,6 @@ def write_all_contributors(ontologies, args):
   print(dumps(results, sort_keys=True, indent=4, separators=(',', ': ')))
 
 
-@cachier(stale_after=datetime.timedelta(days=7))
 def get_ontology_contributors(repo_path):
   """
   Get individual contributors to a org/repo_path

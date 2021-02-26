@@ -131,4 +131,3 @@ The latter is a fairly trivial translation of the former. If you are in any way 
  * Federhen, Scott. **The NCBI taxonomy database.** *Nucleic acids research 40.D1 (2012): D136-D143.* [http://nar.oxfordjournals.org/content/40/D1/D136.short](http://nar.oxfordjournals.org/content/40/D1/D136.short)
 
 If you specifically wish to cite the OBO/OWL translation, use the URL for this page
-

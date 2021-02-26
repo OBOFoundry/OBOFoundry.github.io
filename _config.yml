@@ -342,14 +342,14 @@ ontologies:
       information from clinical records, via semantic modeling of the processes that
       generated the data. This makes the discovery of previously unappreciated relations
       between the data possible for research and for operational tasks.
-    example:
+    examples:
     - description: CYP2C1*2/*2 MI patient taking Clopidogrel
       url: https://github.com/PennTURBO/Turbo-Documentation/blob/master/IBI_CIC_TURBO_MAM_20190102.pdf
     user: http://upibi.org/turbo/
   - description: The Evidence & Conclusion Ontology (ECO) describes types of scientific
       evidence within the biological research domain. ECO uses OBI to logically describe
       how the evidence arises from an investigation.
-    example:
+    examples:
     - description: rapid amplification of cDNA ends polymerase chain reaction evidence
       url: http://purl.obolibrary.org/obo/ECO_0001820
     user: http://evidenceontology.org/
@@ -400,8 +400,11 @@ ontologies:
   - description: PATO is used by the Human Phenotype Ontology (HPO) for logical definitions
       of phenotypes that facilitate cross-species integration.
     examples:
-    - url: https://www.ebi.ac.uk/ols/ontologies/hp/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHP_0011017&viewMode=All&siblings=false
-    reference: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6324074/
+    - description: An abnormality in a cellular process.
+      url: https://www.ebi.ac.uk/ols/ontologies/hp/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHP_0011017&viewMode=All&siblings=false
+    publications:
+    - id: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6324074/
+      title: Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources
     type: annotation
     user: https://hpo.jax.org/app/
 - activity_status: active
@@ -467,11 +470,13 @@ ontologies:
     user: http://planteome.org/
   - description: Maize CELL genomics DB uses PO to annotate images
     examples:
-    - url: http://maize.jcvi.org/cellgenomics/geneDB_list.php?filter=3
+    - description: LhG4 Promoter Drivers
+      url: http://maize.jcvi.org/cellgenomics/geneDB_list.php?filter=3
     user: http://maize.jcvi.org/
   - description: MaizeGDB uses PO for annotation of genes
     examples:
-    - url: http://maizegdb.org/gene_center/gene/GRMZM5G863962
+    - description: Introduced in gene model set 5b in assembly version RefGen_v2.
+      url: http://maizegdb.org/gene_center/gene/GRMZM5G863962
     user: http://maizegdb.org/
   - description: Gramene uses PO for the annotation of plant genes
     examples:
@@ -826,7 +831,7 @@ ontologies:
     email: cjmungall@lbl.gov
     github: cmungall
     label: Chris Mungall
-  description: An ontology for respresenting spatial concepts, anatomical axes, gradients,
+  description: An ontology for representing spatial concepts, anatomical axes, gradients,
     regions, planes, sides, and surfaces
   domain: anatomy
   homepage: https://github.com/obophenotype/biological-spatial-ontology
@@ -928,6 +933,42 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/cdao.owl
   title: Comparative Data Analysis Ontology
   tracker: https://github.com/evoinfo/cdao/issues
+- activity_status: active
+  build:
+    checkout: git clone https://github.com/Southern-Cross-Plant-Science/cdno.git
+    path: .
+    system: git
+  contact:
+    email: l.andres.hernandez.18@student.scu.edu.au
+    github: LilyAndres
+    label: Liliana Andres Hernandez
+  dependencies:
+  - id: ro
+  - id: bfo
+  - id: pato
+  - id: chebi
+  - id: po
+  - id: envo
+  description: CDNO provides structured terminologies to describe nutritional attributes
+    of crop plants and their harvested materials that contribute to human diet.
+  domain: diet, metabolomics and nutrition
+  homepage: https://github.com/Southern-Cross-Plant-Science/cdno
+  id: cdno
+  layout: ontology_detail
+  license:
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/cdno.owl
+  products:
+  - id: cdno.owl
+    name: Crop Dietary Nutrition Ontology main release in OWL format
+    ontology_purl: http://purl.obolibrary.org/obo/cdno.owl
+  - id: cdno.obo
+    name: Crop Dietary Nutrition Ontology additional release in OBO format
+    ontology_purl: http://purl.obolibrary.org/obo/cdno.obo
+  title: Crop Dietary Nutrition Ontology
+  tracker: https://github.com/Southern-Cross-Plant-Science/cdno/issues
 - activity_status: active
   build:
     method: owl2obo
@@ -1040,6 +1081,27 @@ ontologies:
   title: Coronavirus Infectious Disease Ontology
   tracker: https://github.com/cido-ontology/cido/issues
 - activity_status: active
+  contact:
+    email: bgee@sib.swiss
+    github: fbastian
+    label: Frederic Bastian
+  description: An ontology to capture confidence information about annotations.
+  homepage: https://github.com/BgeeDB/confidence-information-ontology
+  id: cio
+  layout: ontology_detail
+  license:
+    label: CC0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/cio.owl
+  products:
+  - id: cio.owl
+    ontology_purl: http://purl.obolibrary.org/obo/cio.owl
+  - id: cio.obo
+    ontology_purl: http://purl.obolibrary.org/obo/cio.obo
+  title: Confidence Information Ontology
+  tracker: https://github.com/BgeeDB/confidence-information-ontology
+- activity_status: active
   build:
     checkout: git clone https://github.com/obophenotype/cell-ontology.git
     email_cc: cl_edit@googlegroups.com
@@ -1117,7 +1179,9 @@ ontologies:
       research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September
       2003, to carry out a project to identify all functional elements in the human
       genome sequence. The ENCODE DCC users Uberon to annotate samples
-    reference: https://doi.org/10.1093/database/bav010
+    publications:
+    - id: https://doi.org/10.1093/database/bav010
+      title: Ontology application and use at the ENCODE DCC
     seeAlso: https://www.biosharing.org/biodbcore-000034
     type: annotation
     user: https://www.encodeproject.org/
@@ -1498,7 +1562,7 @@ ontologies:
   tracker: https://github.com/FlyBase/drosophila-phenotype-ontology/issues
   usages:
   - description: FlyBase uses dpo for phenotype data annotation in Drosophila
-    example:
+    examples:
     - description: alleles and constructs annotated to pupal lethal in FlyBase
       url: http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBcv:0002030
     user: http://flybase.org
@@ -1634,8 +1698,15 @@ ontologies:
   - description: ECO is used by the Monarch Initiative for evidence types for disease
       to phenotype annotations.
     examples:
-    - url: https://monarchinitiative.org/phenotype/HP%3A0001300#diseases
-    reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
+    - description: 'Parkinsonism: Characteristic neurologic anomaly resulting form
+        degeneration of dopamine-generating cells in the substantia nigra, a region
+        of the midbrain, characterized clinically by shaking, rigidity, slowness of
+        movement and difficulty with walking and gait.'
+      url: https://monarchinitiative.org/phenotype/HP%3A0001300#disease
+    publications:
+    - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
+      title: 'The Monarch Initiative: an integrative data and analytic platform connecting
+        phenotypes to genotypes across species'
     type: annotation
     user: https://monarchinitiative.org/
 - activity_status: active
@@ -1658,7 +1729,8 @@ ontologies:
   - id: uberon
   - id: po
   - id: iao
-  description: An ontology to provide core semantics for ecological entities.
+  description: Ecocore is a community ontology for the concise and controlled description
+    of ecological traits of organisms.
   domain: ecological functions, ecological interactions
   homepage: https://github.com/EcologicalSemantics/ecocore
   id: ecocore
@@ -1848,20 +1920,35 @@ ontologies:
   title: Environment Ontology
   tracker: https://github.com/EnvironmentOntology/envo/issues/
   usages:
+  - description: describing species habitats
+    examples:
+    - description: Pseudobarbus burchelli (Tradou Redfin) is a species of bony fishes
+        in the family Cyprinidae. They are associated with freshwater habitat. Individuals
+        can grow to 13.5 cm. They have sexual reproduction.
+      url: http://eol.org/pages/211700/data
+    type: data-annotation
+    user: http://eol.org
+  - description: describing stomach contents
+    type: data-annotation
+    user: http://globalbioticinteractions.org
+  - description: annotating datasets in data repositories
+    seeAlso: http://blogs.nature.com/scientificdata/2015/12/17/isa-explorer/
+    type: dataset-description
+    user: http://www.nature.com/sdata/
   - description: Samples collected during Tara Oceans expedition are annotated with
       ENVO
-    example:
+    examples:
     - description: Sample collected during the Tara Oceans expedition (2009-2013)
         at station TARA_004 (latitudeN=36.5533, longitudeE=-6.5669)
       url: https://www.ebi.ac.uk/metagenomics/projects/ERP001736/samples/ERS487899
     user: http://oceans.taraexpeditions.org/en/
   - description: Annotation of habitats of microbes
-    example:
+    examples:
     - description: Annotation of habitat of Pseudovibrio sp. FO-BEG1 to marine environment
       url: https://www.ncbi.nlm.nih.gov/nuccore/NC_016642
     user: https://www.ncbi.nlm.nih.gov/
   - description: Annotation and semantic search over microbial data sets
-    example:
+    examples:
     - description: Example metadata of a sample of marine water near Lisboa, taken
         as part of the Ocean Sampling Day Project (https://www.microb3.eu/osd.html).
         ENVO is used for the fields environmental feature, material, and biome.
@@ -1921,6 +2008,7 @@ ontologies:
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/exo.owl
   page: http://ctdbase.org/downloads/#exposures
+  preferredPrefix: ExO
   products:
   - id: exo.owl
     ontology_purl: http://purl.obolibrary.org/obo/exo.owl
@@ -2038,13 +2126,15 @@ ontologies:
   tracker: http://purl.obolibrary.org/obo/fbbt/tracker
   usages:
   - description: VFB uses FBbt to annotate brain images
-    example:
+    examples:
+    - description: Ring neuron R2 in VFB
+      url: http://www.virtualflybrain.org/site/stacks/index.htm?id=FBbt_00003651
     - description: genes expressed in ring neuron R2 in VFB
       url: http://www.virtualflybrain.org/do/gene_list.html?action=geneex&id=FBbt:00003651
     user: http://www.virtualflybrain.org/
   - description: Flybase uses FBbt for expression and phenotype data annotation in
       Drosophila
-    example:
+    examples:
     - description: alleles, constructs and insertions annotated to neuron in FlyBase
       url: http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBbt:00005106
     user: http://flybase.org
@@ -2083,7 +2173,7 @@ ontologies:
   tracker: https://github.com/FlyBase/flybase-controlled-vocabulary/issues
   usages:
   - description: FlyBase uses FBcv for phenotype data annotation in Drosophila
-    example:
+    examples:
     - description: alleles and constructs annotated to bang sensitive in FlyBase
       url: http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBcv:0000391
     user: http://flybase.org
@@ -2331,7 +2421,7 @@ ontologies:
   tracker: https://github.com/pombase/fypo/issues
   usages:
   - description: Pombase uses fypo for phenotype data annotation in fission yeast
-    example:
+    examples:
     - description: genotypes annotated to abnormal mitotic cell cycle in fission yeast
       url: https://www.pombase.org/term/FYPO:0000059
     user: https://www.pombase.org
@@ -2504,7 +2594,7 @@ ontologies:
   tracker: https://github.com/glygen-glycan-data/GNOme/issues
 - activity_status: active
   contact:
-    email: dwelter@ebi.ac.uk
+    email: danielle.welter@uni.lu
     label: Danielle Welter
   description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description
     of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide
@@ -2519,10 +2609,43 @@ ontologies:
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/hancestro.owl
   products:
-  - id: hancestro.owl
+  - description: The full version of HANCESTRO in OWL format
+    id: hancestro.owl
     ontology_purl: http://purl.obolibrary.org/obo/hancestro.owl
+    title: HANCESTRO
+  - description: Version of HANCESTRO with BFO upper hierarchy for easier integration
+      with other ontologies
+    id: hancestro_bfo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/hancestro_bfo.owl
+    title: HANCESTRO BFO
   title: Human Ancestry Ontology
   tracker: https://github.com/EBISPOT/ancestro/issues
+  usages:
+  - description: The Experimental Factor Ontology (EFO) provides a systematic description
+      of many experimental variables available in EBI databases, and for external
+      projects such as the NHGRI GWAS catalogue. It combines parts of several biological
+      ontologies, such as anatomy, disease and chemical compounds.
+    examples:
+    - description: Population category defined using ancestry informative markers
+        (AIMs) based on genetic/genomic data
+      url: https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
+    user: http://www.ebi.ac.uk/efo
+  - description: The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary
+      to identify, document and research foodborne pathogens and associated outbreaks.
+    examples:
+    - description: Population category defined using ancestry informative markers
+        (AIMs) based on genetic/genomic data
+      url: https://www.ebi.ac.uk/ols/ontologies/genepio/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
+    user: https://genepio.org/
+  - description: FoodOn (http://foodon.org) is a consortium-driven project to build
+      a comprehensive and easily accessible global farm-to-fork ontology about food,
+      that accurately and consistently describes foods commonly known in cultures
+      from around the world.
+    examples:
+    - description: Population category defined using ancestry informative markers
+        (AIMs) based on genetic/genomic data
+      url: https://www.ebi.ac.uk/ols/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
+    user: http://foodon.org
 - activity_status: active
   build:
     checkout: git clone https://github.com/hymao/hao.git
@@ -2569,9 +2692,9 @@ ontologies:
   id: hom
   layout: ontology_detail
   license:
-    label: CC-BY
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
+    label: CC0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/hom.owl
   products:
   - id: hom.owl
@@ -2596,6 +2719,7 @@ ontologies:
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/hsapdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
+  preferredPrefix: HsapDv
   products:
   - id: hsapdv.owl
     ontology_purl: http://purl.obolibrary.org/obo/hsapdv.owl
@@ -2603,6 +2727,37 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/hsapdv.obo
   title: Human Developmental Stages
   tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
+- activity_status: active
+  contact:
+    email: fernanda.dorea@sva.se
+    github: nandadorea
+    label: Fernanda Dorea
+  dependencies:
+  - id: uberon
+  - id: bfo
+  - id: ro
+  - id: obi
+  - id: ncbitaxon
+  description: The health Surveillance Ontology (HSO) focuses on "surveillance system
+    level data", that is, data outputs from surveillance activities, such as number
+    of samples collected, cases observed, etc. It aims to support One-Health surveillance,
+    covering animal health, public health and food safety surveillance.
+  domain: health
+  homepage: https://w3id.org/hso
+  id: hso
+  layout: ontology_detail
+  license:
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/hso.owl
+  page: https://github.com/SVA-SE/HSO
+  products:
+  - homepage: https://w3id.org/hso
+    id: hso.owl
+    ontology_purl: http://purl.obolibrary.org/obo/hso.owl
+  title: Health Surveillance Ontology
+  tracker: https://github.com/SVA-SE/HSO/issues/
 - activity_status: active
   contact:
     email: aellenhicks@gmail.com
@@ -2641,7 +2796,7 @@ ontologies:
   license:
     label: CC-BY
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
+    url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/iao.owl
   products:
   - id: iao.owl
@@ -2663,6 +2818,10 @@ ontologies:
     title: ontology of document acts
   title: Information Artifact Ontology
   tracker: https://github.com/information-artifact-ontology/IAO/issues
+  usages:
+  - description: IAO is used widely by multiple OBO ontologies for information representation.
+    type: owl_import
+    user: http://obofoundry.org
 - activity_status: active
   contact:
     email: liumeng94@sjtu.edu.cn
@@ -3131,6 +3290,7 @@ ontologies:
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/mmusdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
+  preferredPrefix: MmusDv
   products:
   - id: mmusdv.owl
     ontology_purl: http://purl.obolibrary.org/obo/mmusdv.owl
@@ -3142,7 +3302,7 @@ ontologies:
   build:
     insert_ontology_id: true
     method: obo2owl
-    source_url: https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mod/data/PSI-MOD.obo
+    source_url: https://raw.githubusercontent.com/HUPO-PSI/psi-mod-CV/master/PSI-MOD.obo
   contact:
     email: pierre-alain.binz@chuv.ch
     label: Pierre-Alain Binz
@@ -3158,8 +3318,18 @@ ontologies:
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/mod.owl
   products:
-  - id: mod.owl
+  - description: PSI-MOD Ontology, OWL format
+    id: mod.owl
     ontology_purl: http://purl.obolibrary.org/obo/mod.owl
+    title: PSI-MOD.owl
+  - description: PSI-MOD Ontology, OBO format
+    id: mod.obo
+    ontology_purl: http://purl.obolibrary.org/obo/mod.obo
+    title: PSI-MOD.obo
+  publications:
+  - id: https://pubmed.ncbi.nlm.nih.gov/18688235/
+    title: The PSI-MOD community standard for representation of protein modification
+      data
   title: Protein modification
   tracker: https://github.com/HUPO-PSI/psi-mod-CV/issues
 - activity_status: active
@@ -3215,10 +3385,41 @@ ontologies:
   usages:
   - description: Mondo is used by the Monarch Initiative for disease annotations.
     examples:
-    - url: https://monarchinitiative.org/phenotype/HP:0001300#diseases
-    reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
+    - description: 'Parkinsonism: Characteristic neurologic anomaly resulting form
+        degeneration of dopamine-generating cells in the substantia nigra, a region
+        of the midbrain, characterized clinically by shaking, rigidity, slowness of
+        movement and difficulty with walking and gait.'
+      url: https://monarchinitiative.org/phenotype/HP:0001300#disease
+    publications:
+    - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
+      title: 'The Monarch Initiative: an integrative data and analytic platform connecting
+        phenotypes to genotypes across species '
     type: annotation
     user: https://monarchinitiative.org/
+  - description: Mondo is used by the ClinGen for disease curations.
+    examples:
+    - description: SCN1A is an autosomal dominant mutation in Dravet syndrome.
+      url: https://search.clinicalgenome.org/kb/conditions/MONDO_0011794
+    type: annotation
+    user: https://www.clinicalgenome.org/
+  - description: Mondo is used by the Kids First Data Resource Portal for disease
+      annotations. Note, a login is needed to access the portal and view the Mondo-curated
+      data.
+    type: annotation
+    user: https://portal.kidsfirstdrc.org/
+  - description: Mondo is used by the Ancestory for some disease curations.
+    examples:
+    - description: Some term names in ancestory.com are curated with Mondo, for ease
+        of use.
+      url: https://support.ancestry.com/s/article/Disease-Condition-Catalog-Powered-by-MONDO
+    type: annotation
+    user: https://www.ancestry.com/
+  - description: Mondo is used by the Human Cell Atlas for some disease annotations.
+    examples:
+    - description: Disease status specimen is normal, type 2 diabetes mellitus.
+      url: https://data.humancellatlas.org/explore/projects?filter=%5B%7B%22facetName%22:%22organ%22,%22terms%22:%5B%22kidney%22%5D%7D,%7B%22facetName%22:%22donorDisease%22,%22terms%22:%5B%22acoustic%20neuroma%22,%22acute%20kidney%20tubular%20necrosis%22%5D%7D%5D&catalog=dcp1
+    type: annotation
+    user: https://www.humancellatlas.org/
 - activity_status: active
   build:
     method: owl2obo
@@ -3375,10 +3576,50 @@ ontologies:
   usages:
   - description: MRO is used by the The Immune Epitope Database (IEDB) annotations
     examples:
-    - url: https://www.iedb.org/assay/1357035
-    reference: DOI:10.1093/nar/gky1006
+    - description: 'Epitope ID: 59611 based on reference 1003499'
+      url: https://www.iedb.org/assay/1357035
+    publications:
+    - id: https://doi.org/10.1093/nar/gky1006
+      title: 'The Immune Epitope Database (IEDB): 2018 update'
     type: annotation
     user: https://www.iedb.org/
+- activity_status: active
+  build:
+    method: obo2owl
+    source_url: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master/psi-ms.obo
+  contact:
+    email: gerhard.mayer@rub.de
+    label: Gerhard Mayer
+  createdWith: http://oboedit.org
+  dependencies:
+  - id: pato
+  - id: uo
+  description: A structured controlled vocabulary for the annotation of experiments
+    concerned with proteomics mass spectrometry.
+  domain: MS experiments
+  homepage: http://www.psidev.info/groups/controlled-vocabularies
+  id: ms
+  integration_server: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master
+  label: MS
+  layout: ontology_detail
+  license:
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/3.0/
+  mailing_list: psidev-ms-vocab@lists.sourceforge.net
+  ontology_purl: http://purl.obolibrary.org/obo/ms.owl
+  page: http://www.psidev.info/groups/controlled-vocabularies
+  products:
+  - id: ms.obo
+    ontology_purl: http://purl.obolibrary.org/obo/ms.obo
+  - id: ms.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ms.owl
+  publications:
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/23482073
+    title: The HUPO proteomics standards initiative- mass spectrometry controlled
+      vocabulary.
+  title: Mass spectrometry ontology
+  tracker: https://github.com/HUPO-PSI/psi-ms-CV/issues
 - activity_status: active
   browsers:
   - label: BioPortal
@@ -3486,7 +3727,9 @@ ontologies:
       components, anatomy), supporting cross-ontology reasoning. The current release
       incorporates CL (cell types) and Uberon (anatomy).
     id: ncit/ncit-plus.owl
-    mireots_from: uberon
+    mireots_from:
+    - cl
+    - uberon
     ontology_purl: http://purl.obolibrary.org/obo/ncit/ncit-plus.owl
     title: NCIt Plus
   - description: This is a subset extracted from NCIt Plus, based on the [NCIt Neoplasm
@@ -3557,7 +3800,8 @@ ontologies:
   tracker: https://github.com/SpeciesFileGroup/nomen/issues
   type: owl:Ontology
   usages:
-  - label: TaxonWorks
+  - description: TaxonWorks is an integrated web-based workbench for taxonomists and
+      biodiversity scientists.
     seeAlso: https://github.com/SpeciesFileGroup/taxonworks
     type: application
     user: https://taxonworks.org
@@ -3840,6 +4084,7 @@ ontologies:
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/olatdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
+  preferredPrefix: OlatDv
   products:
   - id: olatdv.obo
     ontology_purl: http://purl.obolibrary.org/obo/olatdv.obo
@@ -4011,6 +4256,7 @@ ontologies:
   domain: nutrition, nutritional studies, nutrition professionals
   homepage: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
   id: ons
+  label: Ontology for Nutritional Studies
   layout: ontology_detail
   license:
     label: CC-BY
@@ -4022,7 +4268,7 @@ ontologies:
   - id: ons.owl
     ontology_purl: http://purl.obolibrary.org/obo/ons.owl
     title: ONS latest release
-  title: ONS
+  title: Ontology for Nutritional Studies
   tracker: https://github.com/enpadasi/Ontology-for-Nutritional-Studies/issues
 - activity_status: active
   browsers:
@@ -4077,6 +4323,7 @@ ontologies:
     email: preets79@gmail.com
     label: Priti Parikh
   description: A reference ontology for parasite life cycle stages.
+  domain: life cycle stage, parasite organism
   homepage: https://github.com/OPL-ontology/OPL
   id: opl
   layout: ontology_detail
@@ -4090,6 +4337,15 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/opl.owl
   title: Ontology for Parasite LifeCycle
   tracker: https://github.com/OPL-ontology/OPL/issues
+  usages:
+  - description: The ontology for parasite lifecycle is used in the VEuPathDB (Eukaryotic
+      Pathogen, Vector & Host Informatics Resources) for parasite life cycle annotation.
+    type: annotation and query
+    user: https://veupathdb.org
+  - description: The ontology for parasite lifecycle is used in the GeneDB for parasite
+      life cycle annotation.
+    type: annotation and query
+    user: https://www.genedb.org
 - activity_status: active
   contact:
     email: yongqunh@med.umich.edu
@@ -4226,6 +4482,7 @@ ontologies:
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/pdumdv.owl
   page: https://github.com/obophenotype/developmental-stage-ontologies
+  preferredPrefix: PdumDv
   products:
   - id: pdumdv.owl
     ontology_purl: http://purl.obolibrary.org/obo/pdumdv.owl
@@ -4513,6 +4770,55 @@ ontologies:
     title: The pathway ontology - updates and applications.
   title: Pathway ontology
   tracker: https://github.com/rat-genome-database/PW-Pathway-Ontology/issues
+- activity_status: active
+  build:
+    checkout: git clone https://github.com/DanBerrios/RBO.git
+    path: .
+    system: git
+  contact:
+    email: daniel.c.berrios@nasa.gov
+    github: https://github.com/DanBerrios
+    label: Daniel C. Berrios
+  dependencies:
+  - id: ro
+  - id: bfo
+  - id: pato
+  - id: chmo
+  - id: envo
+  - id: obi
+  - id: uo
+  description: The RBO is an ontology about Radiation Biology, with emphasis on Space
+    Biology.
+  domain: radiation biology, the study of the effects of radiation on biological systems
+  homepage: https://github.com/DanBerrios/RBO
+  id: rbo
+  layout: ontology_detail
+  license:
+    label: CC0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/rbo.owl
+  products:
+  - id: rbo.owl
+    name: Radiation Biology Ontology main release in OWL format
+    ontology_purl: http://purl.obolibrary.org/obo/rbo.owl
+  - id: rbo.obo
+    name: Radiation Biology Ontology additional release in OBO format
+    ontology_purl: http://purl.obolibrary.org/obo/rbo.obo
+  - id: rbo.json
+    name: Radiation Biology Ontology additional release in OBOJSon format
+    ontology_purl: http://purl.obolibrary.org/obo/rbo.json
+  - id: rbo/rbo-base.owl
+    name: Radiation Biology Ontology main release in OWL format
+    ontology_purl: http://purl.obolibrary.org/obo/rbo/rbo-base.owl
+  - id: rbo/rbo-base.obo
+    name: Radiation Biology Ontology additional release in OBO format
+    ontology_purl: http://purl.obolibrary.org/obo/rbo/rbo-base.obo
+  - id: rbo/rbo-base.json
+    name: Radiation Biology Ontology additional release in OBOJSon format
+    ontology_purl: http://purl.obolibrary.org/obo/rbo/rbo-base.json
+  title: Radiation Biology Ontology
+  tracker: https://github.com/DanBerrios/RBO/issues
 - aberowl_id: relo
   activity_status: active
   build:
@@ -4575,13 +4881,15 @@ ontologies:
   title: Relation Ontology
   tracker: https://github.com/oborel/obo-relations/issues
   usages:
-  - description: RO is used for annotation extensions in the GO
-    reference: https://doi.org/10.1186/1471-2105-15-155
-    type: annotation
-    user: http://geneontology.org
-  - description: RO is used for GO Causal Activity Models
+  - description: RO is used for annotation extensions in the GO and GO Causal Activity
+      Models.
     examples:
-    - http://model.geneontology.org/56d1143000003402
+    - description: wg_biogenesis_FlyBase
+      url: http://model.geneontology.org/56d1143000003402
+    publications:
+    - id: https://doi.org/10.1186/1471-2105-15-155
+      title: A method for increasing expressivity of Gene Ontology annotations using
+        a compositional approach
     type: annotation
     user: http://geneontology.org
 - activity_status: active
@@ -4757,6 +5065,31 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/stato.owl
   title: The Statistical Methods Ontology
   tracker: https://github.com/ISA-tools/stato/issues
+- activity_status: active
+  build:
+    method: owl2obo
+    source_url: https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl
+  contact:
+    email: allyson.lister@oerc.ox.ac.uk
+    label: Allyson Lister
+  description: The Software Ontology (SWO) is a resource for describing software tools,
+    their types, tasks, versions, provenance and associated data. It contains detailed
+    information on licensing and formats as well as software applications themselves,
+    mainly (but not limited) to the bioinformatics community.
+  domain: software
+  homepage: https://github.com/allysonlister/swo
+  id: swo
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/swo.owl
+  products:
+  - id: swo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/swo.owl
+  title: Software ontology
+  tracker: https://github.com/allysonlister/swo/issues
 - activity_status: active
   build:
     infallible: 1
@@ -5006,7 +5339,7 @@ ontologies:
     title: Uberon base ontology
   - description: Uberon extended
     id: uberon/ext.owl
-    mireots_from: ncbitaxon
+    mireots_from: cl
     ontology_purl: http://purl.obolibrary.org/obo/uberon/ext.owl
     title: Uberon edition that includes subsets of other ontologies and axioms connecting
       to them
@@ -5039,14 +5372,21 @@ ontologies:
     type: BridgeOntology
   - description: Extended uberon plus all metazoan ontologies
     id: uberon/composite-metazoan.owl
-    mireots_from: ehdaa2
     ontology_purl: http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl
     page: https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies
     taxon: Metazoa
     title: Uberon composite metazoan ontology
     type: MergedOntology
   - id: uberon/composite-vertebrate.owl
-    mireots_from: ehdaa2
+    mireots_from:
+    - zfa
+    - xao
+    - fbbt
+    - wbbt
+    - ma
+    - fma
+    - emapa
+    - ehdaa2
     ontology_purl: http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl
     page: https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies
     taxon: Metazoa
@@ -5088,7 +5428,9 @@ ontologies:
       research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September
       2003, to carry out a project to identify all functional elements in the human
       genome sequence. The ENCODE DCC users Uberon to annotate samples
-    reference: https://doi.org/10.1093/database/bav010
+    publications:
+    - id: https://doi.org/10.1093/database/bav010
+      title: Ontology application and use at the ENCODE DCC
     seeAlso: https://www.biosharing.org/biodbcore-000034
     type: annotation
     user: https://www.encodeproject.org/
@@ -5102,11 +5444,11 @@ ontologies:
   - description: Querying expression and phenotype data
     type: query
     user: https://monarchinitiative.org/
-  - description: Querying for functional annotations relevant to a tissue
+  - description: GO Database is used for querying for functional annotations relevant
+      to a tissue
     examples:
     - description: GO annotations relevant to the uberon class for brain
       url: http://amigo.geneontology.org/amigo/term/UBERON:0000955
-    label: GO Database
     type: query
     user: https://geneontology.org/
   - description: The Phenoscape project is both a major driver of and contributor
@@ -5116,23 +5458,26 @@ ontologies:
       Skeletal Anatomy Ontology (VSAO), also created by the Phenoscape group. Phenoscape
       curators continue to extend the ontology, covering a wide variety of tetrapod
       structures, with an emphasis on the appendicular system.
-    label: Phenoscape
     user: http://phenoscape.org
-  - label: Neuroscience Information Framework
+  - description: Searchable collection of neuroscience data and ontology for neuroscience
     type: Database
-    url: https://neuinfo.org/
-  - label: SciCrunch
+    user: https://neuinfo.org/
+  - description: cooperative data platform to be used by diverse communities in making
+      data more FAIR.
     type: Database
-    url: https://scicrunch.org/
-  - label: SCPortalen
-    reference: https://doi.org/10.1093/nar/gkx949
+    user: https://scicrunch.org/
+  - description: SCPortalen
+    publications:
+    - id: https://doi.org/10.1093/nar/gkx949
+      title: 'SCPortalen: human and mouse single-cell centric database'
     type: Database
-    url: http://single-cell.clst.riken.jp/
+    user: http://single-cell.clst.riken.jp/
   - description: ChEMBL uses Uberon to describe organ/tissue information in assays
-    label: ChEMBL
-    reference: https://doi.org/10.1093/nar/gky1075
+    publications:
+    - id: https://doi.org/10.1093/nar/gky1075
+      title: 'ChEMBL: towards direct deposition of bioassay data'
     type: Database
-    url: https://www.ebi.ac.uk/chembl/
+    user: https://www.ebi.ac.uk/chembl/
   wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 - activity_status: active
   build:
@@ -5190,8 +5535,15 @@ ontologies:
   usages:
   - description: uPheno is used by the Monarch Initiative for cross-species inference.
     examples:
-    - url: https://monarchinitiative.org/phenotype/HP:0001300#diseases
-    reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
+    - description: Characteristic neurologic anomaly resulting form degeneration of
+        dopamine-generating cells in the substantia nigra, a region of the midbrain,
+        characterized clinically by shaking, rigidity, slowness of movement and difficulty
+        with walking and gait.
+      url: https://monarchinitiative.org/phenotype/HP:0001300#disease
+    publications:
+    - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
+      title: 'The Monarch Initiative: an integrative data and analytic platform connecting
+        phenotypes to genotypes across species '
     type: analysis
     user: https://monarchinitiative.org/
 - activity_status: active
@@ -5215,6 +5567,28 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/vo.owl
   title: Vaccine Ontology
   tracker: https://github.com/vaccineontology/VO/issues
+- activity_status: active
+  build:
+    checkout: svn co http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/vt
+    method: vcs
+    system: svn
+  contact:
+    email: caripark@iastate.edu
+    label: Carissa Park
+  description: An ontology of traits covering vertebrates
+  homepage: https://github.com/AnimalGenome/vertebrate-trait-ontology
+  id: vt
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/vt.owl
+  products:
+  - id: vt.owl
+    ontology_purl: http://purl.obolibrary.org/obo/vt.owl
+  title: Vertebrate trait ontology
+  tracker: https://github.com/AnimalGenome/vertebrate-trait-ontology/issues
 - activity_status: active
   contact:
     email: balhoff@renci.org
@@ -5278,8 +5652,11 @@ ontologies:
   - description: WormBase uses WBbt to curate anatomical expression patterns and anatomy
       function annotations, and to allow search and indexing on the WormBase site
     examples:
-    - url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression
-    reference: https://academic.oup.com/nar/article/48/D1/D762/5603222
+    - description: Expression for gene daf-16 with WormBase ID WBGene00000912
+      url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression
+    publications:
+    - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
+      title: 'WormBase: a modern Model Organism Information Resource'
     type: annotation
     user: https://www.wormbase.org/
 - activity_status: active
@@ -5319,8 +5696,11 @@ ontologies:
   - description: WormBase uses WBls to curate temporal expression patterns, and to
       allow search and indexing on the WormBase site
     examples:
-    - url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression
-    reference: https://academic.oup.com/nar/article/48/D1/D762/5603222
+    - description: Expression for daf-16 gene with WormBase ID WBGene00000912.
+      url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression
+    publications:
+    - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
+      title: 'WormBase: a modern Model Organism Information Resource'
     type: annotation
     user: https://www.wormbase.org/
 - activity_status: active
@@ -5363,15 +5743,23 @@ ontologies:
   - description: WormBase uses WBPhenotype to curate worm phenotypes, and to allow
       search and indexing on the WormBase site
     examples:
-    - url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=phenotype
-    reference: https://academic.oup.com/nar/article/48/D1/D762/5603222
+    - description: Expression for daf-16 gene with WormBase ID WBGene00000912.
+      url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression
+    publications:
+    - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
+      title: 'WormBase: a modern Model Organism Information Resource'
     type: annotation
     user: https://www.wormbase.org/
   - description: Monarch integrates phenotype annotations from sources such as WormBase,
       and allows for querying using the WBPhenotype ontology.
     examples:
-    - url: https://monarchinitiative.org/phenotype/WBPhenotype%3A0000370
-    reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
+    - description: 'Egg long: The fertilized oocytes have a greater than standard
+        length measured end to end compared to control.'
+      url: https://monarchinitiative.org/phenotype/WBPhenotype%3A0000370
+    publications:
+    - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
+      title: 'The Monarch Initiative: an integrative data and analytic platform connecting
+        phenotypes to genotypes across species '
     type: annotation
     user: https://monarchinitiative.org/
 - activity_status: active
@@ -5409,6 +5797,34 @@ ontologies:
       ontologies: expansion, improvements and new applications.'
   title: Experimental condition ontology
   tracker: https://github.com/rat-genome-database/XCO-experimental-condition-ontology/issues
+- activity_status: active
+  build:
+    method: obo2owl
+    source_url: https://raw.githubusercontent.com/HUPO-PSI/mzIdentML/master/cv/XLMOD.obo
+  contact:
+    email: gerhard.mayer@rub.de
+    label: Gerhard Mayer
+  createdWith: http://oboedit.org
+  description: A structured controlled vocabulary for cross-linking reagents used
+    with proteomics mass spectrometry.
+  domain: MS cross-linker reagents
+  homepage: http://www.psidev.info/groups/controlled-vocabularies
+  id: xlmod
+  integration_server: https://raw.githubusercontent.com/HUPO-PSI/mzIdentML/tree/master/cv
+  label: xlmod
+  layout: ontology_detail
+  license:
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/3.0/
+  mailing_list: psidev-ms-vocab@lists.sourceforge.net
+  ontology_purl: http://purl.obolibrary.org/obo/xlmod.owl
+  page: http://www.psidev.info/groups/controlled-vocabularies
+  products:
+  - id: xlmod.obo
+    ontology_purl: http://purl.obolibrary.org/obo/xlmod.obo
+  title: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
+  tracker: https://github.com/HUPO-PSI/mzIdentML/issues
 - activity_status: active
   build:
     checkout: git clone https://github.com/obophenotype/xenopus-phenotype-ontology.git
@@ -5483,6 +5899,36 @@ ontologies:
   tracker: https://github.com/ybradford/zebrafish-experimental-conditions-ontology/issues
 - activity_status: active
   build:
+    infallible: 1
+    method: obo2owl
+    source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/zfs/zfs.obo
+  contact:
+    email: van_slyke@zfin.org
+    label: Ceri Van Slyke
+  description: Developmental stages of the Zebrafish
+  domain: anatomy
+  homepage: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
+  id: zfs
+  in_foundry: false
+  layout: ontology_detail
+  license:
+    label: CC-BY 3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/zfs.owl
+  page: https://github.com/obophenotype/developmental-stage-ontologies/wiki/ZFS
+  products:
+  - id: zfs.owl
+    ontology_purl: http://purl.obolibrary.org/obo/zfs.owl
+  - id: zfs.obo
+    ontology_purl: http://purl.obolibrary.org/obo/zfs.obo
+  taxon:
+    id: NCBITaxon:7954
+    label: Danio
+  title: Zebrafish developmental stages ontology
+  tracker: https://github.com/cerivs/zebrafish-anatomical-ontology/issues
+- activity_status: active
+  build:
     checkout: git clone https://github.com/obophenotype/zebrafish-phenotype-ontology.git
     path: .
     system: git
@@ -5522,37 +5968,22 @@ ontologies:
   - description: Monarch integrates phenotype annotations from sources such as ZFIIN,
       and allows for querying using the ZP ontology.
     examples:
-    - url: https://monarchinitiative.org/phenotype/ZP:0005692
-    reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
+    - description: 'adaxial cell absent, abnormal: Abnormal(ly) absent (of) adaxial
+        cell.'
+      url: https://monarchinitiative.org/phenotype/ZP:0005692
+    publications:
+    - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
+      title: 'The Monarch Initiative: an integrative data and analytic platform connecting
+        phenotypes to genotypes across species'
     type: annotation
     user: https://monarchinitiative.org/
-- activity_status: active
-  contact:
-    email: bgee@sib.swiss
-    github: fbastian
-    label: Frederic Bastian
-  description: An ontology to capture confidence information about annotations.
-  homepage: https://github.com/BgeeDB/confidence-information-ontology
-  id: cio
-  layout: ontology_detail
-  license:
-    label: GNU GPL 3.0
-    url: https://www.gnu.org/licenses/gpl-3.0.en.html
-  ontology_purl: http://purl.obolibrary.org/obo/cio.owl
-  products:
-  - id: cio.owl
-    ontology_purl: http://purl.obolibrary.org/obo/cio.owl
-  - id: cio.obo
-    ontology_purl: http://purl.obolibrary.org/obo/cio.obo
-  title: Confidence Information Ontology
-  tracker: https://github.com/BgeeDB/confidence-information-ontology
 - activity_status: active
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/ero.owl
   contact:
-    email: Juliane_Schneider@hms.harvard.edu
-    label: Juliane Schneider
+    email: Marc_Ciriello@hms.harvard.edu
+    label: Marc Ciriello
   description: An ontology of research resources such as instruments. protocols, reagents,
     animal models and biospecimens.
   documentation: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
@@ -5707,6 +6138,7 @@ ontologies:
   - id: kisao.owl
     ontology_purl: http://purl.obolibrary.org/obo/kisao.owl
   title: Kinetic Simulation Algorithm Ontology
+  tracker: https://sourceforge.net/p/kisao/feature-requests/
 - activity_status: active
   build:
     method: owl2obo
@@ -5731,42 +6163,6 @@ ontologies:
   tracker: http://sourceforge.net/p/mamo-ontology/tickets/
 - activity_status: active
   build:
-    method: obo2owl
-    source_url: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master/psi-ms.obo
-  contact:
-    email: gerhard.mayer@rub.de
-    label: Gerhard Mayer
-  createdWith: http://oboedit.org
-  dependencies:
-  - id: pato
-  - id: uo
-  description: A structured controlled vocabulary for the annotation of experiments
-    concerned with proteomics mass spectrometry.
-  domain: MS experiments
-  homepage: http://www.psidev.info/groups/controlled-vocabularies
-  id: ms
-  integration_server: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master
-  label: MS
-  layout: ontology_detail
-  license:
-    label: CC-BY
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/3.0/
-  mailing_list: psidev-ms-vocab@lists.sourceforge.net
-  ontology_purl: http://purl.obolibrary.org/obo/ms.owl
-  page: http://www.psidev.info/groups/controlled-vocabularies
-  products:
-  - id: ms.obo
-    ontology_purl: http://purl.obolibrary.org/obo/ms.obo
-  - id: ms.owl
-    ontology_purl: http://purl.obolibrary.org/obo/ms.owl
-  publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/23482073
-    title: The HUPO proteomics standards initiative- mass spectrometry controlled
-      vocabulary.
-  title: Mass spectrometry ontology
-- activity_status: active
-  build:
     insert_ontology_id: true
     method: obo2owl
     source_url: http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo
@@ -5789,30 +6185,6 @@ ontologies:
   title: Systems Biology Ontology
   tracker: https://sourceforge.net/p/sbo/term-request/
 - activity_status: active
-  build:
-    method: owl2obo
-    source_url: https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl
-  contact:
-    email: allyson.lister@oerc.ox.ac.uk
-    label: Allyson Lister
-  description: The Software Ontology (SWO) is a resource for describing software tools,
-    their types, tasks, versions, provenance and associated data. It contains detailed
-    information on licensing and formats as well as software applications themselves,
-    mainly (but not limited) to the bioinformatics community.
-  domain: software
-  homepage: https://github.com/allysonlister/swo
-  id: swo
-  layout: ontology_detail
-  license:
-    label: CC BY 4.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/4.0/
-  ontology_purl: http://purl.obolibrary.org/obo/swo.owl
-  products:
-  - id: swo.owl
-    ontology_purl: http://purl.obolibrary.org/obo/swo.owl
-  title: Software ontology
-- activity_status: active
   browsers:
   - label: BioPortal
     title: BioPortal Browser
@@ -5834,90 +6206,13 @@ ontologies:
   license:
     label: CC-BY version 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
+    url: https://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/txpo.owl
   products:
   - id: txpo.owl
     ontology_purl: http://purl.obolibrary.org/obo/txpo.owl
   title: Toxic Process Ontology
   tracker: https://github.com/txpo-ontology/TXPO/issues
-- activity_status: active
-  build:
-    checkout: svn co http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/vt
-    method: vcs
-    system: svn
-  contact:
-    email: caripark@iastate.edu
-    label: Carissa Park
-  description: An ontology of traits covering vertebrates
-  homepage: https://github.com/AnimalGenome/vertebrate-trait-ontology
-  id: vt
-  layout: ontology_detail
-  license:
-    label: CC BY 4.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/4.0/
-  ontology_purl: http://purl.obolibrary.org/obo/vt.owl
-  products:
-  - id: vt.owl
-    ontology_purl: http://purl.obolibrary.org/obo/vt.owl
-  title: Vertebrate trait ontology
-- activity_status: active
-  build:
-    method: obo2owl
-    source_url: https://raw.githubusercontent.com/HUPO-PSI/mzIdentML/master/cv/XLMOD.obo
-  contact:
-    email: gerhard.mayer@rub.de
-    label: Gerhard Mayer
-  createdWith: http://oboedit.org
-  description: A structured controlled vocabulary for cross-linking reagents used
-    with proteomics mass spectrometry.
-  domain: MS cross-linker reagents
-  homepage: http://www.psidev.info/groups/controlled-vocabularies
-  id: xlmod
-  integration_server: https://raw.githubusercontent.com/HUPO-PSI/mzIdentML/tree/master/cv
-  label: xlmod
-  layout: ontology_detail
-  license:
-    label: CC-BY
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/3.0/
-  mailing_list: psidev-ms-vocab@lists.sourceforge.net
-  ontology_purl: http://purl.obolibrary.org/obo/xlmod.owl
-  page: http://www.psidev.info/groups/controlled-vocabularies
-  products:
-  - id: xlmod.obo
-    ontology_purl: http://purl.obolibrary.org/obo/xlmod.obo
-  title: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
-- activity_status: active
-  build:
-    infallible: 1
-    method: obo2owl
-    source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/zfs/zfs.obo
-  contact:
-    email: van_slyke@zfin.org
-    label: Ceri Van Slyke
-  description: Developmental stages of the Zebrafish
-  domain: anatomy
-  homepage: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
-  id: zfs
-  in_foundry: false
-  layout: ontology_detail
-  license:
-    label: CC-BY 3.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
-  ontology_purl: http://purl.obolibrary.org/obo/zfs.owl
-  page: https://github.com/obophenotype/developmental-stage-ontologies/wiki/ZFS
-  products:
-  - id: zfs.owl
-    ontology_purl: http://purl.obolibrary.org/obo/zfs.owl
-  - id: zfs.obo
-    ontology_purl: http://purl.obolibrary.org/obo/zfs.obo
-  taxon:
-    id: NCBITaxon:7954
-    label: Danio
-  title: Zebrafish developmental stages ontology
 - activity_status: orphaned
   build:
     checkout: git clone https://github.com/obophenotype/sibo.git
@@ -5964,6 +6259,23 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/fix.obo
   title: Physico-chemical methods and properties
 - activity_status: orphaned
+  build:
+    method: obo2owl
+    source_url: http://variationontology.org/vario_download/vario.obo
+  contact:
+    email: mauno.vihinen@med.lu.se
+    label: Mauno Vihinen
+  description: Variation Ontology, VariO, is an ontology for standardized, systematic
+    description of effects, consequences and mechanisms of variations.
+  homepage: http://variationontology.org
+  id: vario
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/vario.owl
+  products:
+  - id: vario.owl
+    ontology_purl: http://purl.obolibrary.org/obo/vario.owl
+  title: Variation Ontology
+- activity_status: orphaned
   description: An ontology that formalizes the genomic element by defining an upper
     class genetic interval
   homepage: https://code.google.com/p/ontology-for-genetic-interval/
@@ -5989,20 +6301,6 @@ ontologies:
   - id: rex.owl
     ontology_purl: http://purl.obolibrary.org/obo/rex.owl
   title: Physico-chemical process
-- activity_status: orphaned
-  build:
-    method: obo2owl
-    source_url: http://variationontology.org/vario_download/vario.obo
-  description: Variation Ontology, VariO, is an ontology for standardized, systematic
-    description of effects, consequences and mechanisms of variations.
-  homepage: http://variationontology.org
-  id: vario
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/vario.owl
-  products:
-  - id: vario.owl
-    ontology_purl: http://purl.obolibrary.org/obo/vario.owl
-  title: Variation Ontology
 - activity_status: inactive
   build:
     checkout: git clone https://github.com/obophenotype/cephalopod-ontology.git

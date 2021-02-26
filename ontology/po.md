@@ -54,10 +54,12 @@ usages:
     description: Maize CELL genomics DB uses PO to annotate images
     examples:
       - url: http://maize.jcvi.org/cellgenomics/geneDB_list.php?filter=3
+        description: LhG4 Promoter Drivers
   - user: http://maizegdb.org/
     description: MaizeGDB uses PO for annotation of genes
     examples:
       - url: http://maizegdb.org/gene_center/gene/GRMZM5G863962
+        description: Introduced in gene model set 5b in assembly version RefGen_v2.
   - user: http://gramene.org/
     description: Gramene uses PO for the annotation of plant genes
     examples:
@@ -69,4 +71,3 @@ activity_status: active
 The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data. The PO is under active development to expand to encompass terms and annotations from all plants.
 
 <img alt="Planteome logo" src="http://planteome.org/sites/default/files/garland_logo.PNG"/>
-

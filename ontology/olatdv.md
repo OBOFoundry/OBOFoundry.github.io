@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: olatdv
+preferredPrefix: OlatDv
 title: Medaka Developmental Stages
 build:
   source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.obo
@@ -20,8 +21,3 @@ license:
   label: CC-BY
 activity_status: active
 ---
-
-
-
-
-

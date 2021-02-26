@@ -16,6 +16,7 @@ license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC-BY 3.0
 ---
+
 #Apollo Structured Vocabulary
 
 An ontology of geographical entities implemented in Web Ontology Language 2 (OWL2) and based on Basic Formal Ontology (BFO). The developers aim to adhere to the OBO Foundry principles.

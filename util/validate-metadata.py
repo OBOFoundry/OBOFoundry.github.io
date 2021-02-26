@@ -79,7 +79,7 @@ def get_schema():
     with open(file, 'r') as s:
       schema = json.load(s)
   except Exception as e:
-    print('Unable to load %s: %s' % (f, str(e)))
+    print('Unable to load %s: %s' % (file, str(e)))
   return schema
 
 
