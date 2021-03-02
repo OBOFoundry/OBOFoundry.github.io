@@ -16,7 +16,7 @@ A common format allows the maximum number of people to access and reuse an ontol
 
 ## Implementation
 
-### Requirements and Recommendations
+### Recommendations and Requirements
 
 We make a distinction between how an ontology is developed and how it is presented for release. Developers are free to use whatever combination of technologies and formats is appropriate for development. However, the official OWL PURL for the ontology must resolve to a syntactically valid OWL file using the [RDF-XML](https://www.w3.org/TR/rdf-syntax-grammar/) syntax.
 
