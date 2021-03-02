@@ -47,7 +47,7 @@ dependencies:
 
 tracker: https://github.com/EnvironmentOntology/environmental-exposure-ontology/issues
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0
 activity_status: active
 ---
