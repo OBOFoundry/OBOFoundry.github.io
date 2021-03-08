@@ -17,6 +17,8 @@ The checklist is intended for
 
 The checklist is expected to evolve over time; anyone can contribute to the discussion [here](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1116).
 
+A Google sheets version of the checklist is available [here](https://docs.google.com/spreadsheets/d/1aH8ivqS1pE5IchJtkWYOfebmtkd-s2Zsdq4b5PK8hgQ/edit#gid=0). Feel free to make a copy and use it to assess an ontology!
+
 ## Checklist
 
 - Principle 1: [Open](http://obofoundry.org/principles/fp-001-open.html)

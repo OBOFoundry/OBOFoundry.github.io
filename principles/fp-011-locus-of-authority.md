@@ -17,7 +17,7 @@ It is important that there is a person responsible for communication rather than
 
 ## Implementation
     
-### Recommendation: 
+### Recommendations and Requirements
 
 The name, email address and github username of this person should be provided when requesting to register with [OBO](http://obofoundry.org). 
 This person must be subscribed to 

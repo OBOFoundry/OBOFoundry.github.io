@@ -22,7 +22,7 @@ dependencies:
   - id: bfo
 tracker: https://github.com/EBISPOT/DUO/issues
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
 activity_status: active
 ---
