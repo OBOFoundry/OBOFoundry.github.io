@@ -82,11 +82,5 @@ significantly overlapping in personnel with the developers or three
 independent groups with three independent artefacts (db, etc) that use
 the ontology.
 
-History
--------
-
-Original principle
-
-Updated by editorial committee 12.16.2014
 
 <Category:Principles> <Category:Accepted>
