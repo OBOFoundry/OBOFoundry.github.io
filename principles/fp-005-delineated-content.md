@@ -27,7 +27,11 @@ Recommendations and Requirements
 -------
 Ideally the scope should be fairly narrow. Required terms that are out of scope should be imported from the appropriate ontology.
 
+Examples
+--------
 
+Counter-Examples
+----------------
 
 Issues To Be Addressed (partial list):
 -------
@@ -36,41 +40,6 @@ Issues To Be Addressed (partial list):
 2.Possible need for controlled vocabulary for scope/domain (for example: Anatomy, Upper Level Ontology, Disease, Phenotype, Applicable taxonomy)
 
 
-Date Accepted
--------------
 
--   original principle
-
-History
--------
-
-### Original Formulation
-
-```
- The ontology has a clearly specified and clearly
-delineated content.
-
-The ontology must be orthogonal to other ontologies already lodged
-within OBO.
-
-The major reason for this principle is to allow two different
-ontologies, for example anatomy and process, to be combined through
-additional relationships. These relationships could then be used to
-constrain when terms could be jointly applied to describe complementary
-(but distinguishable) perspectives on the same biological or medical
-entity.
-
-As a corollary to this, we would strive for community acceptance of a
-single ontology for one domain, rather than encouraging rivalry between
-ontologies.
-
-
-```
-
-Examples
---------
-
-Counter-Examples
-----------------
 
 <Category:Principles> <Category:Accepted>

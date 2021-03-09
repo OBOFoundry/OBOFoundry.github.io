@@ -42,13 +42,3 @@ The ontology is available in at least one of the following formats:
 
 - OBO Format
 - OWL or OWL2 RDF/XML
-
-## History
-
-Revised wording for principle accepted March 3, 2015.
-
-### Original formulation
-
-The ontology is in, or can be expressed in, a common shared syntax. This may be either the OBO syntax, extensions of this syntax, or OWL.
-
-The reason for this is that the same tools can then be usefully applied. This facilitates shared software implementations. This criterion is not met in all of the ontologies currently listed, but we are working with the ontology developers to have them available in a common OBO syntax.
