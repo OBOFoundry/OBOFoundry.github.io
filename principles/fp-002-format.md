@@ -16,7 +16,7 @@ A common format allows the maximum number of people to access and reuse an ontol
 
 ## Implementation
 
-### Recommendations
+### Recommendations and Requirements
 
 We make a distinction between how an ontology is developed and how it is presented for release. Developers are free to use whatever combination of technologies and formats is appropriate for development. However, the official OWL PURL for the ontology must resolve to a syntactically valid OWL file using the [RDF-XML](https://www.w3.org/TR/rdf-syntax-grammar/) syntax.
 
@@ -42,13 +42,3 @@ The ontology is available in at least one of the following formats:
 
 - OBO Format
 - OWL or OWL2 RDF/XML
-
-## History
-
-Revised wording for principle accepted March 3, 2015.
-
-### Original formulation
-
-The ontology is in, or can be expressed in, a common shared syntax. This may be either the OBO syntax, extensions of this syntax, or OWL.
-
-The reason for this is that the same tools can then be usefully applied. This facilitates shared software implementations. This criterion is not met in all of the ontologies currently listed, but we are working with the ontology developers to have them available in a common OBO syntax.

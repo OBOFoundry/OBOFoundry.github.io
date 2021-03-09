@@ -74,9 +74,7 @@ usages:
 activity_status: active
 ---
 
-![neuron](https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Derived_Neuron_schema_with_no_labels.svg/320px-Derived_Neuron_schema_with_no_labels.svg.png)
-![lymphocyte](https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Blausen_0625_Lymphocyte_T_cell.png/128px-Blausen_0625_Lymphocyte_T_cell.png)
-![epithelial](https://upload.wikimedia.org/wikipedia/commons/5/5d/Epithelial_shedding.png)
+![logo](/images/CL-logo.jpg)
 
 The Cell Ontology is designed as a structured controlled vocabulary for cell types. This ontology was constructed for use by the model organism and other bioinformatics databases, where there is a need for a controlled vocabulary of cell types. This ontology is not organism specific it covers cell types from prokaryotes to mammals. However, it excludes plant cell types, which are covered by PO.
 

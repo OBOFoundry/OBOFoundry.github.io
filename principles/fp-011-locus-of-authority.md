@@ -17,7 +17,7 @@ It is important that there is a person responsible for communication rather than
 
 ## Implementation
     
-### Recommendation: 
+### Recommendations and Requirements
 
 The name, email address and github username of this person should be provided when requesting to register with [OBO](http://obofoundry.org). 
 This person must be subscribed to 
@@ -33,20 +33,5 @@ For ChEBI, the primary contact person is Adnan Malik (amalik@ebi.ac.uk).
 
 ### Counterexamples: 
 Mailing list; for ChEBI, chebi-help@ebi.ac.uk
-
-## History
-
-### Original Formulation
-
-```
- (Name: Locus of Authority) There should be a single person who is responsible for the 
- ontology, for ensuring continued maintenance in light of scientific advance and prompt 
- response to user feedback, Contact information for this person should be provided on the 
- ontology website, and listed in the OBO Library Metadata File.
- 
- There should be a single person (perhaps the same person) who is responsible for liaison 
- between the ontology developers and the OBO Foundry coordinating editors. 
-
-```
 
 <Category:Principles> <Category:Accepted>

@@ -26,17 +26,6 @@ Briefly, some important things to remember:
 
 [This check is automatically validated.](checks/fp_012)
 
-Date Accepted
--------------
-
--   2009
-
-History
--------
-
-Started as internal policy during Daniel Schobers ph.D thesis, was
-continued and published at EMBL-EBI, and is now refined and amended at
-IMBI UMC Freiburg.
 
 Examples
 --------
