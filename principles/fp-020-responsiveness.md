@@ -1,12 +1,8 @@
 ---
-layout: responsiveness
+layout: principle
 id: fp-020-responsiveness
 title: Responsiveness (principle 20)
 ---
-
-NOTE
--------
-The wording of this principle is still in progress.
 
 Summary
 -------
@@ -24,9 +20,9 @@ Ontology developers MUST set up a mechanism to track community requests and sugg
 
 Expectations of responsiveness:
 1. Issues are contributions - and should be met by a thankful attitude. When receiving an item on your issue tracker, the first thing to do is thank the contributor, even if it cannot be addressed right away. 
-1. If an issue cannot be addressed right away, explain when you plan to address the issue. 
-1. Do not close issues without responding. If an issue is out of scope for a repository, recommend moving it to a different repository.
-1. It is recommended that one or more developers be designated to triage issues.
+2. If an issue cannot be addressed right away, explain when you plan to address the issue. 
+3. Do not close issues without responding. If an issue is out of scope for a repository, recommend moving it to a different repository.
+4. It is recommended that one or more developers be designated to triage issues.
 
 Implementation
 -------
