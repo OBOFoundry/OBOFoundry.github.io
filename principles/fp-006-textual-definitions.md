@@ -70,7 +70,8 @@ Examples
 <br>  <i><b>Term IRI</b></i>: http://purl.obolibrary.org/obo/PO_0025082
 <br>  <i><b>Definition</b></i>: A shoot system (PO:0009006) in the sporophytic phase that has as part at least one sporangium (PO:0025094).
 <br>  <i><b>Logical definition</b></i>:
-```intersectionOf: shoot system
+```
+intersectionOf: shoot system
 intersectionOf: participates_in some reproductive shoot system development stage
 ```
 <i><b>Class</b></i>: chromatography device
@@ -89,34 +90,5 @@ Counter-Examples
 -   No definition
 -   Circular/Self-referential definition
     “A chromatography device is a device that uses chromatography” when chromatography is not defined elsewhere
-
-Date Accepted
--------------
-
--   Revised wording for principle tentatively accepted June 19, 2018.
-
-
-History
--------
-
-### Original Formulation
-
-```
- The ontologies include textual definitions for all terms.
-
-Many biological and medical terms may be ambiguous, so terms should be
-defined so that their precise meaning within the context of a particular
-ontology is clear to a human reader.
-
-Textual definitions (SOP) for a substantial and representative fraction,
-plus equivalent formal definitions (for at least a substantial number of
-terms). For terms lacking textual definitions, there should be evidence
-of implementation of a strategy to provide definitions for all remaining
-undefined terms.
-
-Text definitions should be unique (i.e. no two terms should share a
-definition)
-```
-
 
 <Category:Principles> <Category:Accepted> <Category:Definitions>
