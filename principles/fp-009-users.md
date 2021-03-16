@@ -75,7 +75,7 @@ Counter-Examples
 Mere mention of the existence of an ontology in a publication is not
 enough to count as evidence of usage
 
-Criteria for review
+Criteria for Review
 -------------------
 
 To pass review, the ontology developers must demonstrate at least three
