@@ -32,7 +32,7 @@ Note also that previously we recommended that ontologies may be available in Man
 
 - [OBI](http://obi-ontology.org) is maintained as an OWL ontology.
 
-### Counter-examples
+### Counter-Examples
 
 An ontology that is in Frames format, OWL/XML, or OWL Manchester Syntax.
 
