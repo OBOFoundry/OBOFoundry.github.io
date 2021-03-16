@@ -152,15 +152,15 @@ material</obo:IAO_0000111>
 </owl:Class>
 ```
 
-## Counter-examples
+## Counter-Examples
 
 - An ontology with no license statement is by default subject to the most restrictive copyright laws for those parts of the ontology that are copyrightable, and therefore is not useful within the OBO Foundry.
 - CC BY-ND allows for redistribution, commercial and non-commercial, as long as it is passed along unchanged and in whole, with credit to the creators. This license is too restrictive for the OBO Foundry, because it requires that the ontology be re-used in its entirety, which prevents the re-use of individual terms.
 
-## External documentation
+## External Documentation
 
 Discussion of licensing on OBO Foundry Operations Committee [Issue 103](https://github.com/OBOFoundry/Operations-Committee/issues/103) About Creative Commons licenses.
 
-## Criteria for review
+## Criteria for Review
 
 To pass review, the ontology must have a license that is equivalent to or less restrictive than CC-BY, specified as described in the text and examples above.
