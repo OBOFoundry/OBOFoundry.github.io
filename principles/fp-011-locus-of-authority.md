@@ -31,7 +31,7 @@ these responsibilities as necessary.
 ### Examples: 
 For ChEBI, the primary contact person is Adnan Malik (amalik@ebi.ac.uk). 
 
-### Counterexamples: 
+### Counter-Examples: 
 Mailing list; for ChEBI, chebi-help@ebi.ac.uk
 
 <Category:Principles> <Category:Accepted>
