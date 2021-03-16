@@ -18,20 +18,22 @@ Purpose
 This principle aims to ensure that the ontology tackles a relevant
 scientific area and does so in a usable and sustainable fashion.
 
-Implementation
---------------
-
-The ontology developers should provide links/citations to evidence of
-use (publication, external ontology; see examples below) as input to the
-review process.
-
-*Recommendation*: It is important to be able to illustrate usage outside
+Recommendation
+-------
+It is important to be able to illustrate usage outside
 of the immediate circle of ontology developers and stakeholders. An
 ontology that has not been used by other than the developer(s) is not
 yet ready for review. Note that the ontology can still be listed in
 other ontology portals such as the OBO Library while publicising your
 resource in appropriate channels and searching for users with needs you
 can meet.
+
+Implementation
+--------------
+
+The ontology developers should provide links/citations to evidence of
+use (publication, external ontology; see examples below) as input to the
+review process.
 
 Examples
 --------
