@@ -4,7 +4,7 @@ id: fp-007-relations
 title: Relations (principle 7)
 ---
 
-Notes
+NOTE
 -----
 
 The content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.

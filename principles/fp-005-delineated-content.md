@@ -19,13 +19,13 @@ Purpose
 -------
 An in-scope ontology prevents overlaps between ontologies (duplication of terms), facilitates user searches for specific content, and enables quick selection of ontologies of interest, yet still allows for new terms to be created via combination of existing terms (cross-products).
 
-Implementation
--------
-The domain (scope) covered by the ontology should be clearly stated. The statement should be brief and free of jargon; a few sentences should suffice. The content of the ontology should stay within the confines of the stated scope.
-
 Recommendations and Requirements
 -------
 Ideally the scope should be fairly narrow. Required terms that are out of scope should be imported from the appropriate ontology.
+
+Implementation
+-------
+The domain (scope) covered by the ontology should be clearly stated. The statement should be brief and free of jargon; a few sentences should suffice. The content of the ontology should stay within the confines of the stated scope.
 
 Examples
 --------
