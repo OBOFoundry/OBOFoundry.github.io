@@ -10,8 +10,8 @@ build:
 canonical: ro.owl
 aberowl_id: relo
 description: Relationship types shared across multiple ontologies
-homepage: https://github.com/oborel/obo-relations/
-documentation: https://github.com/oborel/obo-relations/wiki/ROGuide
+homepage: https://oborel.github.io/
+documentation: https://oborel.github.io/obo-relations/
 tracker: https://github.com/oborel/obo-relations/issues
 mailing_list: "https://groups.google.com/forum/#!forum/obo-relations"
 domain: relations
@@ -19,8 +19,6 @@ contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
 jobs:
-  - id: http://build.berkeleybop.org/job/build-ro
-    type: DryRunBuild
   - id: https://travis-ci.org/oborel/obo-relations
     type: travis-ci
 products:
@@ -29,7 +27,9 @@ products:
     description: Canonical edition
   - id: ro.obo
     title: Relation Ontology in obo format
-    description: Has imports merged in
+    description: The obo edition is less expressive than the OWL, and has imports merged in
+  - id: ro.json
+    title: Relation Ontology in obojson format
   - id: ro/core.owl
     title: RO Core relations
     description: Minimal subset intended to work with BFO-classes
