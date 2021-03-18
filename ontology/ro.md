@@ -30,7 +30,7 @@ products:
     description: The obo edition is less expressive than the OWL, and has imports merged in
   - id: ro.json
     title: Relation Ontology in obojson format
- - id: ro/core.owl
+  - id: ro/core.owl
     title: RO Core relations
     description: Minimal subset intended to work with BFO-classes
     page: https://github.com/oborel/obo-relations/wiki/ROCore
