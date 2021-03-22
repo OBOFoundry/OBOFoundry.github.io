@@ -3,7 +3,7 @@ layout: ontology_detail
 id: cl
 label: Cell Ontology
 title: Cell Ontology
-homepage: https://github.com/obophenotype/cell-ontology
+homepage: https://obophenotype.github.io/cell-ontology/
 jobs:
   - id: https://travis-ci.org/obophenotype/cell-ontology
     type: travis-ci
