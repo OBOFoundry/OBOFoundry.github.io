@@ -11,8 +11,8 @@ build:
   path: "."
 contact:
   email: daniel.c.berrios@nasa.gov
-  label: POC
-  github: https://github.com/DanBerrios
+  label: Daniel C. Berrios
+  github: DanBerrios
 description: RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.
 domain: radiation biology, the study of the effects of radiation on biological systems
 homepage: https://github.com/Radiobiology-Informatics-Consortium/RBO
@@ -30,13 +30,13 @@ products:
   - id: rbo/rbo-base.json
     name: "Radiation Biology Ontology additional release in OBOJSon format"
 dependencies:
-- id: ro
-- id: bfo
-- id: pato
-- id: chmo
-- id: envo
-- id: obi
-- id: uo
+  - id: ro
+  - id: bfo
+  - id: pato
+  - id: chmo
+  - id: envo
+  - id: obi
+  - id: uo
 
 tracker: https://github.com/Radiobiology-Informatics-Consortium/RBO/issues
 license:
