@@ -17,7 +17,7 @@ products:
   - id: ico.owl
 usages:
   - user: http://kpmp.org
-    description: tracking informed consent in the kidney precision medicine project that has over 20 institutes involved.    
+    description: tracking informed consent in the kidney precision medicine project that has over 20 institutes involved.
 activity_status: active
 ---
 
