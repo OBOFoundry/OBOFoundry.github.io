@@ -17,7 +17,7 @@ title: eagle-i resource ontology
 build:
   source_url: http://purl.obolibrary.org/obo/ero.owl
   method: owl2obo
-activity_status: active
+activity_status: inactive
 ---
 
 ERO models research resources such instruments. protocols, reagents, animal models and biospecimens. It has been developed in the context of the eagle-i project  (http://eagle-i.net/).
