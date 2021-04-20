@@ -75,5 +75,5 @@ license:
   label: CC-BY
 usages:
   - user: http://website.of.the.project.using.my.ontology.com
-    description: A short description how the project above is using my ontology
+    description: A short description of how the project above is using my ontology
 ```
