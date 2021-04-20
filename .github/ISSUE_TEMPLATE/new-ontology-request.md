@@ -49,3 +49,26 @@ GitHub username:
 
 
 ## Additional comments or remarks
+
+## Metadata
+
+```
+id: yourfourletterid
+title: The Title Of Your Ontology
+contact:
+  email: email@email.fr
+  label: Your Name
+description: Some one sentence description of your ontology.
+domain: your_domain_like_for_example_anatomy
+homepage: https://github.com/EBISPOT/amphx_ontology
+products:
+  - id: yourfourletterid.owl
+  - id: yourfourletterid.obo
+dependencies:
+  - id: ro
+  - id: otheroboontology
+tracker: https://github.com/YOURORG/your_repo/issues
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
+```
