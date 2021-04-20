@@ -52,6 +52,8 @@ GitHub username:
 
 ## Metadata
 
+Please fill in the following metadata record which will be used by the OBO Foundry website.
+
 ```
 id: yourfourletterid
 title: The Title Of Your Ontology
