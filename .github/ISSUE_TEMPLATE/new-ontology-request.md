@@ -52,17 +52,17 @@ GitHub username:
 
 ## Metadata
 
-Please fill in the following metadata record which will be used by the OBO Foundry website.
+Please fill in the following metadata record which will be used by the OBO Foundry website. Note that all the values are all examples in nature, for example `yourfourletterid` could be something like `aism`, `cohm`, `hpo` (it does not have to be four letters). `your_domain_like_for_example_anatomy` could be simply `anatomy`, and the license should be whatever your actual license is. An example can be found [here](https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/amphx.md), but you really only need to fill in the metadata mentioned here.
 
 ```
 id: yourfourletterid
 title: The Title Of Your Ontology
 contact:
-  email: email@email.fr
+  email: email@email.tdl
   label: Your Name
 description: Some one sentence description of your ontology.
 domain: your_domain_like_for_example_anatomy
-homepage: https://github.com/EBISPOT/amphx_ontology
+homepage: https://github.com/YOURORG/your_repo
 products:
   - id: yourfourletterid.owl
   - id: yourfourletterid.obo
