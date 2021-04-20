@@ -125,6 +125,8 @@ as OLS, as well as the central OBO library build), as well as the
 GitHub pages `_config.yml` file. This last step is necessary to update
 the front page.
 
+_Note_: This process works using Ruby 2.6.6 and Jekyll 4.2.0. We tried using Ruby 3.0, but the setup failed for various reasons (missing libraries, obsolete/removed methods). If you are using Mac OS, we recommend using [rvm](https://rvm.io/rvm/install) to install the Ruby version. 
+
 
 #### RDF
 
@@ -197,7 +199,7 @@ Consult online Jekyll docs for details. Basically you just do
 
    gem install jekyll
 
-(I am currently using Jekyll 2.5.3)
+(I am currently using Jekyll 4.2.0 on Ruby 2.6.6; I tried using Ruby 3.0, but the setup failed for various reasons (missing libraries, obsolete/removed methods). If you are using Mac OS, I recommend using [rvm](https://rvm.io/rvm/install) to install the Ruby version.)
 
 You can run a local test install from the top level directory
 
