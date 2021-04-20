@@ -73,4 +73,7 @@ tracker: https://github.com/YOURORG/your_repo/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
+usages:
+  - user: http://website.of.the.project.using.my.ontology.com
+    description: A short description of how the project above is using my ontology
 ```
