@@ -1584,7 +1584,7 @@
             ],
             "description": "The Cell Ontology is a structured controlled vocabulary for cell types in animals.",
             "domain": "cells",
-            "homepage": "https://github.com/obophenotype/cell-ontology",
+            "homepage": "https://obophenotype.github.io/cell-ontology/",
             "id": "cl",
             "integration_server": "http://build.berkeleybop.org/job/build-cl/",
             "jobs": [
@@ -2264,7 +2264,7 @@
             "license": {
                 "label": "CC-BY",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/duo.owl",
             "products": [
@@ -2551,9 +2551,9 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "label": "CC0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ecto.owl",
             "products": [
@@ -6767,13 +6767,13 @@
         {
             "activity_status": "active",
             "build": {
-                "checkout": "git clone https://github.com/DanBerrios/RBO.git",
+                "checkout": "git clone https://github.com/Radiobiology-Informatics-Consortium/RBO.git",
                 "path": ".",
                 "system": "git"
             },
             "contact": {
                 "email": "daniel.c.berrios@nasa.gov",
-                "github": "https://github.com/DanBerrios",
+                "github": "DanBerrios",
                 "label": "Daniel C. Berrios"
             },
             "dependencies": [
@@ -6799,15 +6799,21 @@
                     "id": "uo"
                 }
             ],
-            "description": "The RBO is an ontology about Radiation Biology, with emphasis on Space Biology.",
+            "description": "RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.",
             "domain": "radiation biology, the study of the effects of radiation on biological systems",
-            "homepage": "https://github.com/DanBerrios/RBO",
+            "homepage": "https://github.com/Radiobiology-Informatics-Consortium/RBO",
             "id": "rbo",
+            "jobs": [
+                {
+                    "id": "https://travis-ci.org/DanBerrios/RBO",
+                    "type": "travis-ci"
+                }
+            ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/rbo.owl",
             "products": [
@@ -6843,7 +6849,7 @@
                 }
             ],
             "title": "Radiation Biology Ontology",
-            "tracker": "https://github.com/DanBerrios/RBO/issues"
+            "tracker": "https://github.com/Radiobiology-Informatics-Consortium/RBO/issues"
         },
         {
             "aberowl_id": "relo",
@@ -6860,15 +6866,11 @@
                 "label": "Chris Mungall"
             },
             "description": "Relationship types shared across multiple ontologies",
-            "documentation": "https://github.com/oborel/obo-relations/wiki/ROGuide",
+            "documentation": "https://oborel.github.io/obo-relations/",
             "domain": "relations",
-            "homepage": "https://github.com/oborel/obo-relations/",
+            "homepage": "https://oborel.github.io/",
             "id": "ro",
             "jobs": [
-                {
-                    "id": "http://build.berkeleybop.org/job/build-ro",
-                    "type": "DryRunBuild"
-                },
                 {
                     "id": "https://travis-ci.org/oborel/obo-relations",
                     "type": "travis-ci"
@@ -6890,10 +6892,15 @@
                     "title": "Relation Ontology"
                 },
                 {
-                    "description": "Has imports merged in",
+                    "description": "The obo edition is less expressive than the OWL, and has imports merged in",
                     "id": "ro.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/ro.obo",
                     "title": "Relation Ontology in obo format"
+                },
+                {
+                    "id": "ro.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ro.json",
+                    "title": "Relation Ontology in obojson format"
                 },
                 {
                     "description": "Minimal subset intended to work with BFO-classes",
@@ -8492,36 +8499,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/ero.owl"
-            },
-            "contact": {
-                "email": "Marc_Ciriello@hms.harvard.edu",
-                "label": "Marc Ciriello"
-            },
-            "description": "An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens.",
-            "documentation": "https://open.med.harvard.edu/wiki/display/eaglei/Ontology",
-            "domain": "resources",
-            "homepage": "https://open.med.harvard.edu/wiki/display/eaglei/Ontology",
-            "id": "ero",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-BY 2.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/2.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/ero.owl",
-            "products": [
-                {
-                    "id": "ero.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ero.owl"
-                }
-            ],
-            "title": "eagle-i resource ontology"
-        },
-        {
-            "activity_status": "active",
             "contact": {
                 "email": "polcaes@gmail.com",
                 "github": "pcastellanoescuder",
@@ -8773,6 +8750,135 @@
             ],
             "title": "Systems Biology Ontology",
             "tracker": "https://sourceforge.net/p/sbo/term-request/"
+        },
+        {
+            "activity_status": "active",
+            "build": {
+                "checkout": "git clone https://github.com/scdodev/scdo-ontology.git",
+                "path": ".",
+                "system": "git"
+            },
+            "contact": {
+                "email": "giant.plankton@gmail.com",
+                "label": "Jade Hotchkiss"
+            },
+            "dependencies": [
+                {
+                    "id": "apollo_sv"
+                },
+                {
+                    "id": "aro"
+                },
+                {
+                    "id": "chebi"
+                },
+                {
+                    "id": "chmo"
+                },
+                {
+                    "id": "cmo"
+                },
+                {
+                    "id": "doid"
+                },
+                {
+                    "id": "dron"
+                },
+                {
+                    "id": "duo"
+                },
+                {
+                    "id": "envo"
+                },
+                {
+                    "id": "eupath"
+                },
+                {
+                    "id": "exo"
+                },
+                {
+                    "id": "gaz"
+                },
+                {
+                    "id": "gsso"
+                },
+                {
+                    "id": "hp"
+                },
+                {
+                    "id": "hsapdv"
+                },
+                {
+                    "id": "ico"
+                },
+                {
+                    "id": "ido"
+                },
+                {
+                    "id": "idomal"
+                },
+                {
+                    "id": "mp"
+                },
+                {
+                    "id": "nbo"
+                },
+                {
+                    "id": "ncit"
+                },
+                {
+                    "id": "obi"
+                },
+                {
+                    "id": "ogms"
+                },
+                {
+                    "id": "opmi"
+                },
+                {
+                    "id": "pr"
+                },
+                {
+                    "id": "sbo"
+                },
+                {
+                    "id": "stato"
+                },
+                {
+                    "id": "symp"
+                },
+                {
+                    "id": "uo"
+                },
+                {
+                    "id": "vo"
+                },
+                {
+                    "id": "vt"
+                }
+            ],
+            "description": "An ontology for the standardization of terminology and integration of knowledge about Sickle Cell Disease.",
+            "domain": "disease",
+            "homepage": "https://scdontology.h3abionet.org/",
+            "id": "scdo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "GPL-3.0",
+                "url": "https://www.gnu.org/licenses/gpl-3.0.en.html"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/scdo.owl",
+            "products": [
+                {
+                    "id": "scdo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/scdo.owl"
+                },
+                {
+                    "id": "scdo.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/scdo.obo"
+                }
+            ],
+            "title": "Sickle Cell Disease Ontology",
+            "tracker": "https://github.com/scdodev/scdo-ontology/issues"
         },
         {
             "activity_status": "active",
@@ -9149,6 +9255,36 @@
         },
         {
             "activity_status": "inactive",
+            "build": {
+                "method": "owl2obo",
+                "source_url": "http://purl.obolibrary.org/obo/ero.owl"
+            },
+            "contact": {
+                "email": "Marc_Ciriello@hms.harvard.edu",
+                "label": "Marc Ciriello"
+            },
+            "description": "An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens.",
+            "documentation": "https://open.med.harvard.edu/wiki/display/eaglei/Ontology",
+            "domain": "resources",
+            "homepage": "https://open.med.harvard.edu/wiki/display/eaglei/Ontology",
+            "id": "ero",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY 2.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/2.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/ero.owl",
+            "products": [
+                {
+                    "id": "ero.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ero.owl"
+                }
+            ],
+            "title": "eagle-i resource ontology"
+        },
+        {
+            "activity_status": "inactive",
             "contact": {
                 "email": "topalis@imbb.forth.gr",
                 "label": "Pantelis Topalis"
@@ -9437,8 +9573,8 @@
         {
             "activity_status": "inactive",
             "contact": {
-                "email": "David Blackburn",
-                "label": "david.c.blackburn@gmail.com"
+                "email": "david.c.blackburn@gmail.com",
+                "label": "David Blackburn"
             },
             "homepage": "http://github.com/seger/aao",
             "id": "aao",
@@ -9454,8 +9590,8 @@
         {
             "activity_status": "inactive",
             "contact": {
-                "email": "Animal Diversity Web technical staff",
-                "label": "adw_geeks@umich.edu"
+                "email": "adw_geeks@umich.edu",
+                "label": "Animal Diversity Web technical staff"
             },
             "homepage": "http://www.animaldiversity.org",
             "id": "adw",
@@ -9570,8 +9706,8 @@
         {
             "activity_status": "inactive",
             "contact": {
-                "email": "Jonathan Bard",
-                "label": "J.Bard@ed.ac.uk"
+                "email": "J.Bard@ed.ac.uk",
+                "label": "Jonathan Bard"
             },
             "homepage": "http://genex.hgu.mrc.ac.uk/",
             "id": "ehda",
@@ -9587,8 +9723,8 @@
         {
             "activity_status": "inactive",
             "contact": {
-                "email": "Jonathan Bard",
-                "label": "J.Bard@ed.ac.uk"
+                "email": "J.Bard@ed.ac.uk",
+                "label": "Jonathan Bard"
             },
             "homepage": null,
             "id": "ehdaa",
@@ -9643,8 +9779,8 @@
         {
             "activity_status": "inactive",
             "contact": {
-                "email": "eVOC mailing list",
-                "label": "evoc@sanbi.ac.za"
+                "email": "evoc@sanbi.ac.za",
+                "label": "eVOC mailing list"
             },
             "homepage": "http://www.evocontology.org/",
             "id": "ev",
