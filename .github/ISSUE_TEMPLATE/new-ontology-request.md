@@ -49,3 +49,31 @@ GitHub username:
 
 
 ## Additional comments or remarks
+
+## Metadata
+
+Please fill in the following metadata record which will be used by the OBO Foundry website. Note that the values shown are just examples, for example `yourfourletterid` could be something like `aism`, `cohm`, `mondo` (it does not have to be four letters). `your_domain_like_for_example_anatomy` could be simply `anatomy`, and the license should be whatever your actual license is. An example can be found [here](https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/amphx.md), but you really only need to fill in the metadata mentioned here.
+
+```
+id: yourfourletterid
+title: The Title Of Your Ontology
+contact:
+  email: email@example.com
+  label: Your Name
+description: Some one sentence description of your ontology.
+domain: your_domain_like_for_example_anatomy
+homepage: https://github.com/YOURORG/your_repo
+products:
+  - id: yourfourletterid.owl
+  - id: yourfourletterid.obo
+dependencies:
+  - id: ro
+  - id: otheroboontology
+tracker: https://github.com/YOURORG/your_repo/issues
+license:
+  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC-BY
+usages:
+  - user: http://website.of.the.project.using.my.ontology.com
+    description: A short description of how the project above is using my ontology
+```
