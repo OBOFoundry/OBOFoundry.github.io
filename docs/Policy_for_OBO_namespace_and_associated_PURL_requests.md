@@ -28,6 +28,7 @@ title: OBO Foundry membership requirements and technical details
 5. There must be a contact person for the resource. The contact person for resources must be subscribed to our main communication channel, the [obo-discuss](https://groups.google.com/forum/#!forum/obo-discuss) mailing list.
 6. The requestor and/or contact person should be ready to discuss issues such as whether the ontology is orthogonal, whether there is potential to collaborate with existing efforts.
 7. It is expected that solicitation of a IDSPACE is done _before_ the IDSPACE is used for identifiers. A common strategy is to develop an ontology, request a IDSPACE, and translate the initial URIs used to the PURLs some time before the initial release.  **There is no guarantee that you will be granted your IDSPACE, even if you have been using it in your file**.
+8. As of 4th May 2021, every new ontology submission is required to pass the [OBO Dashboard](http://dashboard.obofoundry.org/) quality control, which means that they are not allowed to have any substantial errors (anything "red"). Your ontology will be set up in a [provisional Dashboard](https://obofoundry.github.io/obo-nor.github.io/dashboard/index.html) as soon as the GitHub submission request is made. OBO foundry will provide support to help you fix any issues your submission might have.
 
 
 # Process
@@ -48,7 +49,9 @@ Example of such request for ECTO:
 
 ## 2. Response
 
-Allow up to 4 weeks to give members of the community time to provide feedback and for the Operations Committee to review the request. If you don't hear back from us after 4 weeks, please follow-up via the tracker issue you created. Note, in some cases, this could take longer.
+After your submission to the GitHub tracker, your ontology will be set up in a [provisional Dashboard](https://obofoundry.github.io/obo-nor.github.io/dashboard/index.html). As of 4th May 2021, every new ontology submission is required to pass the dashboard quality control, which means that they are not allowed to have any substantial errors (anything "red"). OBO foundry will provide support to help you fix any issues your submission might have.
+
+After the ontology passes Dashboard quality control, allow up to 4 weeks to give members of the community time to provide feedback and for the Operations Committee to review the request. If you don't hear back from us after 4 weeks, please follow-up via the tracker issue you created. Note, in some cases, this could take longer.
 
 Based on this discussion, the Operations Committee will either approve the IDSPACE request, ask for changes, or decline your request.
 
