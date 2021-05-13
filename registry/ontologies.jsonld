@@ -1002,6 +1002,65 @@
         {
             "activity_status": "active",
             "build": {
+                "checkout": "git clone https://github.com/insect-morphology/aism",
+                "path": ".",
+                "system": "git"
+            },
+            "contact": {
+                "email": "entiminae@gmail.com",
+                "label": "Jennifer C. Gir\u00f3n"
+            },
+            "dependencies": [
+                {
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
+                },
+                {
+                    "id": "caro"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "bfo"
+                },
+                {
+                    "id": "bspo"
+                }
+            ],
+            "description": "The AISM contains terms used in insect biodiversity research for describing structures of the exoskeleton and the skeletomuscular system. It aims to serve as the basic backbone of generalized terms to be expanded with order-specific terminology.",
+            "domain": "anatomy",
+            "homepage": "https://github.com/insect-morphology/aism",
+            "id": "aism",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/aism.owl",
+            "products": [
+                {
+                    "id": "aism.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/aism.owl"
+                },
+                {
+                    "id": "aism.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/aism.obo"
+                },
+                {
+                    "id": "aism.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/aism.json"
+                }
+            ],
+            "title": "Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)",
+            "tracker": "https://github.com/insect-morphology/aism/issues"
+        },
+        {
+            "activity_status": "active",
+            "build": {
                 "checkout": "git clone https://github.com/EBISPOT/amphx_ontology.git",
                 "path": ".",
                 "system": "git"
@@ -5546,7 +5605,7 @@
             "license": {
                 "label": "CC-BY",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/obib.owl",
             "products": [
