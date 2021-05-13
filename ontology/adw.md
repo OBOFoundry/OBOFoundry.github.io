@@ -3,8 +3,8 @@ layout: ontology_detail
 id: adw
 title: Animal natural history and life history
 contact:
-  email: Animal Diversity Web technical staff
-  label: adw_geeks@umich.edu
+  email: adw_geeks@umich.edu
+  label: Animal Diversity Web technical staff
 homepage: http://www.animaldiversity.org
 is_obsolete: true
 activity_status: inactive

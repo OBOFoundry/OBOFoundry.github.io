@@ -3,8 +3,8 @@ layout: ontology_detail
 id: ev
 title: eVOC (Expressed Sequence Annotation for Humans)
 contact:
-  email: eVOC mailing list
-  label: evoc@sanbi.ac.za
+  email: evoc@sanbi.ac.za
+  label: eVOC mailing list
 homepage: http://www.evocontology.org/
 is_obsolete: true
 activity_status: inactive

@@ -22,7 +22,7 @@ usages:
   - user: https://biospecimens.cancer.gov/resources/vocabularies.asp
     description: The National Cancer Institute Biorepositories and Biospecimen Research Branch (BBRB) is an international leader in research and policy activities related to biospecimen collection, processing, and storage, also known as biobanking.
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
+  url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
 activity_status: active
 ---
