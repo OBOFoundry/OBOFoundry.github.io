@@ -3,8 +3,8 @@ layout: ontology_detail
 id: ehda
 title: Human developmental anatomy, timed version
 contact:
-  email: Jonathan Bard
-  label: J.Bard@ed.ac.uk
+  email: J.Bard@ed.ac.uk
+  label: Jonathan Bard
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens

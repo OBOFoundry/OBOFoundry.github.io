@@ -33,6 +33,7 @@ title: Resources
 - [VOCOL](https://vocol.iais.fraunhofer.de/): An Integrated Environment for Collaborative Vocabulary Development.
 - [Karma Data Integration](http://usc-isi-i2.github.io/karma/): A data integration tool.
 - [Ontofox](http://ontofox.hegroup.org/): An ontology term and relation extraction and reuse tool.
+- [Ubergraph](https://github.com/INCATools/ubergraph): A sparql endpoint with many OBO ontologies loaded and pre-reasoned with simple triples materialized
 
 ## Relevant Publications/blogs
 - [The OBO Foundry: coordinated evolution of ontologies to support biomedical data integration](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2814061/) (Smith et al., 2007). Nat Biotechnol 2007 Nov;25(11):1251–1255. http://dx.doi.org/10.1038/nbt1346
