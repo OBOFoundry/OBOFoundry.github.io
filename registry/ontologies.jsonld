@@ -4123,6 +4123,7 @@
                 "label": "Yongqun Oliver He"
             },
             "description": "An ontology of clinical informed consents",
+            "domain": "informed consent",
             "homepage": "https://github.com/ICO-ontology/ICO",
             "id": "ico",
             "layout": "ontology_detail",
@@ -4139,7 +4140,13 @@
                 }
             ],
             "title": "Informed Consent Ontology",
-            "tracker": "https://github.com/ICO-ontology/ICO/issues"
+            "tracker": "https://github.com/ICO-ontology/ICO/issues",
+            "usages": [
+                {
+                    "description": "tracking informed consent in the kidney precision medicine project that has over 20 institutes involved.",
+                    "user": "http://kpmp.org"
+                }
+            ]
         },
         {
             "activity_status": "active",
