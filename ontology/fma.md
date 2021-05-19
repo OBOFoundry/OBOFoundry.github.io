@@ -23,13 +23,14 @@ products:
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
-title: Foundational Model of Anatomy Ontology (subset)
-build:
-  source_url: http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo
-  insert_ontology_id: true
-  method: obo2owl
+title: Foundational Model of Anatomy Ontology (old deprecated version)
 tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
-activity_status: active
+activity_status: inactive
+is_obsolete: true
+replaced_by: http://purl.org/sig/ont/fma.owl
 ---
 
-Obo format translation of the FMA, omitting all relationships other than is_a, part_of and has_part. Future versions of fma_obo will include more relationships
+This record represents an old deprecated OWL translation of the FMA. FMA is no longer part of the OBO infrastructure, it is available separately from:
+
+[http://purl.org/sig/ont/fma.owl](http://purl.org/sig/ont/fma.owl)
+
