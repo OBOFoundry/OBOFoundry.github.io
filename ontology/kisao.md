@@ -12,7 +12,7 @@ products:
   - id: kisao.owl
 title: Kinetic Simulation Algorithm Ontology
 build:
-  source_url: http://svn.code.sf.net/p/kisao/code/tags/kisao-owl-latest/kisao.owl
+  source_url: https://raw.githubusercontent.com/SED-ML/KiSAO/deploy/kisao.owl
   method: owl2obo
 license:
   url: http://opensource.org/licenses/Artistic-2.0
