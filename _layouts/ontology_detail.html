@@ -187,25 +187,6 @@ layout: default
             {% endif %}
           </dd>
 
-					{% if page.review %}
-					<dt>Review Date</dt>
-					<dd>
-						{% if page.review.date %}
-						{{page.review.date}}
-						{% else %}
-						n/a
-						{% endif %}
-					</dd>
-					<dt>Review Document</dt>
-					<dd>
-						{% if page.review.document %}
-					  <a href="{{page.review.document.link}}">{{page.review.document.label}}</a>
-						{% else %}
-						n/a
-						{% endif %}
-					<dd>
-					{% endif %}
-
           <dt>Homepage</dt>
           <dd>
             <a href="{{page.homepage}}">{{page.homepage}}</a>
@@ -309,8 +290,10 @@ layout: default
           {% endfor %}
           {% endif %}
 
-
-
+          {% if page.review.date and page.review.document %}
+          <dt>OBO Review</dt>
+          <dd>{{page.review.date}} <a href="{{page.review.document.link}}">{{page.review.document.label}}</a><dd>
+          {% endif %}
 
         </dl>
 
