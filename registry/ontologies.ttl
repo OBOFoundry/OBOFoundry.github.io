@@ -260,6 +260,7 @@ _:b4    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b11 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ncbitaxon.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ncbitaxon.json> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/ncbitaxon> ;
@@ -1011,11 +1012,10 @@ _:b53   <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/bfo> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/pato> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/chebi> ;
-        <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/po> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/envo> ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b54 ;
-        <http://purl.org/dc/elements/1.1/description>  "CDNO provides structured terminologies to describe nutritional attributes of crop plants and their harvested materials that contribute to human diet." ;
-        <http://purl.org/dc/elements/1.1/title>  "Crop Dietary Nutrition Ontology" ;
+        <http://purl.org/dc/elements/1.1/description>  "CDNO provides structured terminologies to describe nutritional attributes of material entities that contribute to human diet." ;
+        <http://purl.org/dc/elements/1.1/title>  "Compositional Dietary Nutrition Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/3.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "diet, metabolomics and nutrition" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/Southern-Cross-Plant-Science/cdno/issues" ;
@@ -1947,8 +1947,7 @@ _:b115  <http://www.w3.org/2000/01/rdf-schema#label>  "Terry Hayamizu" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b116 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/foodon.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/foodon_core.owl> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <http://foodontology.github.io/foodon/> ;
-        <http://xmlns.com/foaf/0.1/page>  <http://foodon.org/> .
+        <http://xmlns.com/foaf/0.1/homepage>  <https://foodon.org/> .
 
 _:b30   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/EnvironmentOntology/envo.git" ;
         <http://obofoundry.github.io/vocabulary/method>  "vcs" .
@@ -2295,7 +2294,7 @@ _:b130  <http://www.w3.org/2000/01/rdf-schema#label>  "Onard Mejino" ;
         <http://xmlns.com/foaf/0.1/page>  <http://browser.planteome.org/amigo/term/EO:0007359> .
 
 _:b116  <http://www.w3.org/2000/01/rdf-schema#label>  "Damion Dooley" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "damion.dooley@bccdc.ca" .
+        <http://xmlns.com/foaf/0.1/mbox>  "damion_dooley@sfu.ca" .
 
 <http://purl.obolibrary.org/obo/foodon.owl>
         <http://purl.org/dc/elements/1.1/title>  "FoodOn full ontology including 9000 SIREN indexed food products" ;
@@ -2445,7 +2444,7 @@ _:b141  <http://www.w3.org/2000/01/rdf-schema#label>  "Rebecca Jackson" ;
 <http://purl.obolibrary.org/obo/genepio>
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/uberon> ;
-        <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/pco> ;
+        <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/po> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/ro> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/chebi> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/ncbitaxon> ;
@@ -2461,7 +2460,7 @@ _:b141  <http://www.w3.org/2000/01/rdf-schema#label>  "Rebecca Jackson" ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/GenEpiO/genepio> .
 
 _:b142  <http://www.w3.org/2000/01/rdf-schema#label>  "Damion Dooley" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "damion.dooley@bccdc.ca" .
+        <http://xmlns.com/foaf/0.1/mbox>  "damion_dooley@sfu.ca" .
 
 <http://purl.obolibrary.org/obo/genepio.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/genepio.owl" ;
@@ -2752,6 +2751,7 @@ _:b158  <http://www.w3.org/2000/01/rdf-schema#label>  "Meng LIU" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of clinical informed consents" ;
         <http://purl.org/dc/elements/1.1/title>  "Informed Consent Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/theme>  "informed consent" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/ICO-ontology/ICO/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ico.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b159 ;
@@ -3490,6 +3490,10 @@ _:b11   <http://www.w3.org/2000/01/rdf-schema#label>  "Frederic Bastian" ;
 <http://purl.obolibrary.org/obo/ncbitaxon.obo>
         <http://purl.org/dc/elements/1.1/title>  "OBO Format version of Main release" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ncbitaxon.obo" .
+
+<http://purl.obolibrary.org/obo/ncbitaxon.json>
+        <http://purl.org/dc/elements/1.1/title>  "OBOGraphs JSON version of Main release" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ncbitaxon.json" .
 
 <http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl>
         <http://purl.org/dc/elements/1.1/title>  "taxslim" ;

@@ -32,6 +32,8 @@ products:
     title: Main release
   - id: ncbitaxon.obo
     title: OBO Format version of Main release
+  - id: ncbitaxon.json
+    title: OBOGraphs JSON version of Main release
   - id: ncbitaxon/subsets/taxslim.owl
     title: taxslim
     page: https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md
