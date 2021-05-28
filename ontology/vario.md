@@ -5,6 +5,7 @@ description: Variation Ontology, VariO, is an ontology for standardized, systema
 homepage: http://variationontology.org
 products:
   - id: vario.owl
+  - id: vario.obo
 title: Variation Ontology
 contact:
   label: Mauno Vihinen
