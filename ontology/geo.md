@@ -13,7 +13,7 @@ description: An ontology of geographical entities
 products:
   - id: geo.owl
 title: Geographical Entity Ontology
-tracker: https://ontology.atlassian.net/browse/GEO#selectedTab=com.atlassian.jira.plugin.system.project%3Aissues-panel
+tracker: https://github.com/ufbmi/geographical-entity-ontology/issues
 activity_status: active
 ---
 
