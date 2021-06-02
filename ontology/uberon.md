@@ -187,4 +187,4 @@ activity_status: active
 Uberon is an integrated cross-species ontology covering anatomical structures in animals. See the <a href="http://uberon.org">Uberon website</a> for more info, or read the <a
  href="http://genomebiology.com/2012/13/1/R5">Uberon paper in Genome Biology</a>.
 
-![uberon](https://github.com/jmcmurry/closed-illustrations/blob/master/logos/uberon-logos/uberon_logo_black-banner.png)
+<img src="https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/uberon-logos/uberon_logo_black-banner.png"/>
