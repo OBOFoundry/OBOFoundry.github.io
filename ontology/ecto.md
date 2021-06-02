@@ -51,4 +51,4 @@ license:
   label: CC0
 activity_status: active
 ---
-<img src="https://github.com/jmcmurry/closed-illustrations/blob/master/logos/ecto-logos/ecto-logo_black-banner.png?raw=true"/>
+<img src="https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/ecto-logos/ecto-logo_black-banner.png"/>
