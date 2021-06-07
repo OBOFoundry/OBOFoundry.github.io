@@ -3,8 +3,8 @@ layout: ontology_detail
 id: bootstrep
 title: Gene Regulation Ontology
 contact:
-  email: Vivian Lee
-  label: vlee@ebi.ac.uk
+  email: vlee@ebi.ac.uk
+  label: Vivian Lee
 homepage: http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html
 is_obsolete: true
 replaced_by: molecular_function
