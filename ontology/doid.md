@@ -46,8 +46,14 @@ usages:
   - user: http://www.informatics.jax.org/disease
     description: MGI disease model annotations use DO
     examples:
-      - url: http://www.informatics.jax.org/disease/DOID:4123
-        description: Human genes and mouse homology associated with nail diseases
+      - url: http://www.informatics.jax.org/disease/DOID:0080015
+        description: physical disorder
+  - user: https://www.alliancegenome.org/search?q=disease&category=disease
+    description: Alliance of Genome Resources
+    examples:
+      - url: https://www.alliancegenome.org/disease/DOID:0080599
+        description: Coronavirus infectious disease
+  
 activity_status: active
 ---
 
