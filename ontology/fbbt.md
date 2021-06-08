@@ -25,7 +25,7 @@ build:
   checkout: git clone https://github.com/FlyBase/drosophila-anatomy-developmental-ontology.git
   system: git
   path: "."
-tracker: http://purl.obolibrary.org/obo/fbbt/tracker
+tracker: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues
 browsers:
   - label: FB
     title: FlyBase Browser
