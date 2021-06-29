@@ -13,9 +13,6 @@ contact:
   email: vasilevs@ohsu.edu
   github: nicolevasilevsky
 mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
-jobs:
-  - id: https://travis-ci.org/obophenotype/upheno
-    type: travis-ci
 products:
   - id: upheno.owl
   - id: upheno/mp-hp-view.owl
