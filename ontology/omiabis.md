@@ -10,6 +10,7 @@ domain: health
 homepage: https://github.com/OMIABIS/omiabis-dev
 products:
   - id: omiabis.owl
+tracker: https://github.com/OMIABIS/omiabis-dev/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
