@@ -9,7 +9,7 @@ license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 contact:
-  email: vasilevs@ohsu.edu
+  email: nicole@tislab.org
   label: Nicole Vasilevsky
   github: nicolevasilevsky
 depicted_by: https://raw.githubusercontent.com/monarch-initiative/mondo/master/docs/images/mondo_logo_black-stacked-small.png
