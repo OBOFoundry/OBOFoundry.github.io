@@ -35,8 +35,8 @@ usages:
   - user: https://www.glygen.org/
     description: Computational and Informatics Resources for Glycoscience
     examples:
-    - url: https://www.glygen.org/glycan/G00028MO
-      description: GlyGen uses GNOme for display glycan subsumption relationship
+      - url: https://www.glygen.org/glycan/G00028MO
+        description: GlyGen uses GNOme for display glycan subsumption relationship
   - user: https://proconsortium.org/
     description: Protein Ontology
     examples:
@@ -45,7 +45,7 @@ usages:
   - user: https://www.ebi.ac.uk/chebi/init.do
     description: Chemical Entities of Biological Interest
     examples:
-    - url: https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:167503
-      description: an example of ChEBI imports GNOme term.
+      - url: https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:167503
+        description: an example of ChEBI imports GNOme term.
 activity_status: active
 ---
