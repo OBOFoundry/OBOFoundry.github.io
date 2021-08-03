@@ -15,22 +15,34 @@ light of scientific advance, and for ensuring that all user feedback is addresse
 ## Purpose
 It is important that there is a person responsible for communication rather than a group of people or a list. Often in communications to a list, the responsibility for responding can be diffused and it is likely that in some scenarios no response will be given. It may also, from time to time, be necessary to engage in strategic communications (e.g. relating to funding or collaboration possibilities) that are not able to be made public, and these should not be conducted on public mailing lists. The designation of a contact person is not to be interpreted as a designation for credit. Note that alternative contacts can be designated in case the primary contact is unavailable. However, as for the primary contact, each alternative contact must be an individual.
 
-## Recomendations
-A primary contact person must be assigned, but the primary contact person can, of course, delegate 
-these responsibilities for the project as necessary.
-
-## Implementation
- 
+## Recomendations and Requirements
+A primary contact person MUST be assigned.
 The name, email address and GitHub username of the contact person MUST be provided when requesting to register with [OBO](http://obofoundry.org). The contact person MUST be subscribed to obo-discuss in order to be kept abreast of community developments of relevance to 
-participating ontology projects. The email address of the person who is the locus of the 
+participating ontology projects, but the primary contact person can, of course, delegate 
+these responsibilities for the project as necessary. The email address of the person who is the locus of the 
 authority MUST be kept up-to-date, and before that person ceases to have responsibility 
 for the project, they should identify a replacement and update the metadata accordingly 
-(via the [OBO Foundry issue tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues)) before they move on. 
+(via the [OBO Foundry issue tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues)) before they move on.
+
+## Implementation
+
+First, read the [FAQ](http://obofoundry.github.io/faq/how-do-i-edit-metadata.html) on how to edit the metadata for your ontology.
+
+The contact email MUST NOT be a mailing list. If this person does not already have a GitHub account, we request that they [create one](https://github.com/join). Then, add the following to your [metadata file](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology) (replacing with the correct email, name, and GitHub username):
+
+`contact:
+ email: foo@bar.com
+ label: John Smith
+ github: jsmith123`
 
 ### Examples: 
 For ChEBI, the primary contact person is Adnan Malik (amalik@ebi.ac.uk). 
 
 ### Counter-Examples: 
 Mailing list; for ChEBI, chebi-help@ebi.ac.uk
+
+### Criteria for Review
+
+Email address will be checked to ensure it is written in a standard format.
 
 <Category:Principles> <Category:Accepted>
