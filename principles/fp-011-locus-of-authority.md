@@ -36,7 +36,7 @@ The contact email MUST NOT be a mailing list. If this person does not already ha
  github: jsmith123`
 
 ### Examples: 
-For ChEBI, the primary contact person is Adnan Malik (amalik@ebi.ac.uk). 
+For Mondo, the primary contact person is Nicole Vasilevsky (nicole@tislab.org) and her GitHub handle is: nicolevasilevsky. 
 
 ### Counter-Examples: 
 Mailing list; for ChEBI, chebi-help@ebi.ac.uk
