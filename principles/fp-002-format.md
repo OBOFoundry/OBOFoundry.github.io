@@ -14,15 +14,17 @@ The ontology is made available in a common formal language in an accepted concre
 
 A common format allows the maximum number of people to access and reuse an ontology.
 
+## Recommendations and Requirements
+
+All ontologies MUST have at least one OWL product whose name corresponds to the registered id. Thus the ontology whose IRI is http://purl.obolibrary.org/obo/ro.owl (known to the  OBO Foundry as 'RO'), must have at least the product ro.owl. Developers are free to use whatever combination of technologies and formats is appropriate for development. However, the official OWL PURL for the ontology must resolve to a syntactically valid OWL file using the [RDF-XML](https://www.w3.org/TR/rdf-syntax-grammar/) syntax.
+
+Ontologies can OPTIONALLY produce an OBO-Format file. This is conventionally the same IRI as the owl, but with .owl changed to .obo. Note that an obo product is not listed by default. If you produce an OBO format product, you should register it under the 'products' field in the appropriate metadata file found in this [folder](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology).
+
+It does not matter to us if you maintain the source for your ontology in obo or owl or some hybrid. You have the option of either publishing the alternate format yourself (using a tool like ROBOT) or you can have the OBO central build pipeline do this for you. For more information, see the FAQ entry What is the Build field?.
+
 ## Implementation
 
-### Recommendations and Requirements
-
-We make a distinction between how an ontology is developed and how it is presented for release. Developers are free to use whatever combination of technologies and formats is appropriate for development. However, the official OWL PURL for the ontology must resolve to a syntactically valid OWL file using the [RDF-XML](https://www.w3.org/TR/rdf-syntax-grammar/) syntax.
-
-Note: some groups publish an .obo version, and the OBO Foundry pipeline takes care of making the valid .owl file. See the FAQ for details. You may also submit the ontology for review as OBO, see 'criteria for review' below.
-
-Note also that previously we recommended that ontologies may be available in Manchester syntax or OWL-XML, but we have revised this in order to make the official OWL release consumable by a wider variety of tools.
+ROBOT offers functionality to convert a variety of formats, including OBO, to RDF/XML. Protégé allows you to save ontologies in RDF/XML, as well. The [Ontology 101 Tutorial](https://ontology101tutorial.readthedocs.io/en/latest/StartingProtege.html) has directions on starting and saving in Protégé.
 
 ### Examples
 
