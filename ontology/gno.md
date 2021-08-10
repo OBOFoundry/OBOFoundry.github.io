@@ -33,19 +33,19 @@ browsers:
     url: https://gnome.glyomics.org/CompositionBrowser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
 usages:
   - user: https://www.glygen.org/
-    description: Computational and Informatics Resources for Glycoscience
+    description: GlyGen - Computational and Informatics Resources for Glycoscience
     examples:
       - url: https://www.glygen.org/glycan/G00028MO
-        description: GlyGen uses GNOme for display glycan subsumption relationship
+        description: GNOme attributes and related glycans on glycan pages
   - user: https://proconsortium.org/
-    description: Protein Ontology
+    description: PRO - Protein Ontology
     examples:
       - url: http://purl.obolibrary.org/obo/PR_000059585
-        description: an example of PRO imports GNOme terms.
+        description: example of PRO use of GNO terms
   - user: https://www.ebi.ac.uk/chebi/init.do
-    description: Chemical Entities of Biological Interest
+    description: ChEBI - Chemical Entities of Biological Interest
     examples:
-      - url: https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:167503
-        description: an example of ChEBI imports GNOme term.
+      - url: http://purl.obolibrary.org/obo/CHEBI_167503
+        description: example of ChEBI use of GNO terms
 activity_status: active
 ---
