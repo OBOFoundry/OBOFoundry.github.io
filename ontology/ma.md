@@ -30,6 +30,7 @@ usages:
     seeAlso: https://www.biosharing.org/biodbcore-000659
     description: GXD
 activity_status: active
+repository: https://github.com/obophenotype/mouse-anatomy-ontology
 ---
 
 A structured controlled vocabulary of the adult anatomy of the mouse (Mus).

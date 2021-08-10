@@ -23,6 +23,7 @@ usages:
     description: The ontology for parasite lifecycle is used in the GeneDB for parasite life cycle annotation.
 
 activity_status: active
+repository: https://github.com/OPL-ontology/OPL
 ---
 
 The Ontology for Parasite LifeCycle (OPL) is designed to serve as a reference ontology for parasite life cycle stages. It models the life cycle stage details of various parasites, including Trypanosoma sp., Leishmania major, and Plasmodium sp., etc. In addition to life cycle stages, the ontology also models necessary contextual details, such as host information, vector information, and anatomical location

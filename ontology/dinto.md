@@ -19,6 +19,7 @@ publications:
     title: "DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug–Drug Interactions and Their Mechanisms."
 activity_status: inactive
 is_obsolete: true
+repository: https://github.com/labda/DINTO
 ---
 
 DINTO is an ontology that describes and categorizes drug-drug interactions (DDIs) - a significant risk group for adverse effects associated with pharmaceutical treatment - as well as all the possible mechanisms that can lead to them (including both pharmacodynamic and pharmacokinetic DDI mechanisms).

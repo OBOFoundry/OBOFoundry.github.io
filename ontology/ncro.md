@@ -25,6 +25,7 @@ build:
   source_url: http://purl.obolibrary.org/obo/ncro/prebuild/ncro.owl
   method: owl2obo
 activity_status: active
+repository: https://github.com/OmniSearch/NCRO-Ontology-Files
 ---
 
 The NCRO is a reference ontology in the non-coding RNA (ncRNA) field,

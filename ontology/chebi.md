@@ -52,6 +52,7 @@ usages:
       - url: http://zfin.org/action/expression/experiment?id=ZDB-EXP-190627-10
         description: "A curated zebrafish experiment involving exposure to (5Z,8Z,14Z)-11,12-dihydroxyicosatrienoic acid (CHEBI:63969)"
 activity_status: active
+repository: https://github.com/ebi-chebi/ChEBI
 ---
 
 A freely available dictionary of molecular entities focused on ‘small’ chemical compounds.

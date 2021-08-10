@@ -48,4 +48,5 @@ usages:
       - url: http://purl.obolibrary.org/obo/CHEBI_167503
         description: example of ChEBI use of GNO terms
 activity_status: active
+repository: https://github.com/glygen-glycan-data/GNOme
 ---
