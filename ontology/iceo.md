@@ -14,6 +14,7 @@ license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
 activity_status: active
+repository: https://github.com/ontoice/ICEO
 ---
 
 # ICEO: Integrative and Conjugative Element Ontology

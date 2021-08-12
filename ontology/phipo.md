@@ -25,6 +25,7 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 activity_status: active
+repository: https://github.com/PHI-base/phipo
 ---
 
 PHIPO is being developed to support the comprehensive and detailed representation of phenotypes in PHI-base, the multi-species Pathogen-Host Interactions database available online at <http://www.phi-base.org>. PHIPO is pre-composed and logically defined.

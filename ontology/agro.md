@@ -36,6 +36,7 @@ build:
   infallible: 1
 tracker: https://github.com/AgriculturalSemantics/agro/issues/
 activity_status: active
+repository: https://github.com/AgriculturalSemantics/agro
 ---
 
 AgrO, the Agronomy Ontology, describes agronomic practices, techniques, and variables used in agronomic experiments. AgrO is being built using traits identified by agronomists, the ICASA variables, and other existing ontologies such as ENVO, UO, PATO, IAO, and CHEBI. Further, AgrO powers AgroFIMS, the Agronomy Fieldbook and Information Management System modeled on a CGIAR Breeding Management System to capture agronomic data.

@@ -34,6 +34,7 @@ build:
   method: vcs
 tracker: https://github.com/obophenotype/porifera-ontology/issues
 activity_status: active
+repository: https://github.com/obophenotype/porifera-ontology
 ---
 
 An ontology covering the anatomy of Porifera (sponges)
