@@ -13,6 +13,7 @@ domain: experiments
 homepage: http://obi-ontology.org
 mailing_list: http://groups.google.com/group/obi-users
 tracker: http://purl.obolibrary.org/obo/obi/tracker
+repository: https://github.com/obi-ontology/obi
 contact:
   label: Bjoern Peters
   email: bpeters@lji.org
