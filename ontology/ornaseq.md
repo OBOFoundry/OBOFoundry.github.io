@@ -15,6 +15,7 @@ license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
 activity_status: active
+repository: https://github.com/safisher/ornaseq
 ---
 
 This is an application ontology used to annotate next-generation sequencing experiments performed on RNA (RNAseq). It uses terms from BFO, CHEBI, CL, GENEPIO, GO, IAO, NCBITaxon, NCIT, OBI, OBIws, OGMS, OMIABIS, SO, TAXRANK, and UBERON as well as EFO.

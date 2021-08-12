@@ -99,6 +99,7 @@ usages:
       - url: http://amigo.geneontology.org/amigo/term/GO:0055085
         description: annotations to transmembrane transport
 activity_status: active
+repository: https://github.com/geneontology/go-ontology
 ---
 
 The goal of the GeneOntology (GO) project is to provide a uniformway to describe the functions of gene products from organisms across all kingdoms of life and thereby enable analysis of genomic data

@@ -61,6 +61,7 @@ usages:
       - url: http://model.geneontology.org/56d1143000003402
         description: wg_biogenesis_FlyBase
 activity_status: active
+repository: https://github.com/oborel/obo-relations
 ---
 
 ![logo](/images/ro_logo.png)

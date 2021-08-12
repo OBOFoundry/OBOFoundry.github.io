@@ -25,6 +25,7 @@ build:
   system: git
   path: "."
 activity_status: active
+repository: https://github.com/BRENDA-Enzymes/BTO
 ---
 
 A structured controlled vocabulary for the source of an enzyme. It comprises terms for tissues, cell lines, cell types and cell cultures from uni- and multicellular organisms.

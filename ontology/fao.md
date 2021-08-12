@@ -25,6 +25,7 @@ build:
   method: vcs
   infallible: 1
 activity_status: active
+repository: https://github.com/obophenotype/fungal-anatomy-ontology
 ---
 
 ![FAO image](http://www.yeastgenome.org/images/fao.color.png)

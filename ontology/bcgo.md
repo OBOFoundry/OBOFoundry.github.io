@@ -17,6 +17,7 @@ license:
   label: CC-BY
 is_obsolete: true
 activity_status: inactive
+repository: https://github.com/obi-bcgo/bcgo
 ---
 
 The Beta Cell Genomics Ontology (BCGO) is an application ontology built for the beta cell genomics studies aiming to support database annotation, complicated semantic queries, and automated cell type classification.
