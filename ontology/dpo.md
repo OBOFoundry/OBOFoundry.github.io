@@ -38,6 +38,7 @@ usages:
       - url: "http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBcv:0002030"
         description: "alleles and constructs annotated to pupal lethal in FlyBase"
 activity_status: active
+repository: https://github.com/FlyBase/drosophila-phenotype-ontology
 ---
 
 An ontology of commonly encountered and/or high level Drosophila phenotypes.  It has significant formalisation - utilising terms from GO, CL, PATO and the Drosophila anatomy ontology.  It has been used by FlyBase for > 159000 annotations of phenotype.

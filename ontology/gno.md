@@ -24,7 +24,6 @@ tracker: https://github.com/glygen-glycan-data/GNOme/issues
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY 4.0
-activity_status: active
 browsers:
   - label: Structure Browser
     title: GNOme Glycan Structure Browser
@@ -32,5 +31,22 @@ browsers:
   - label: Composition Browser
     title: GNOme Glycan Composition Browser
     url: https://gnome.glyomics.org/CompositionBrowser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
-
+usages:
+  - user: https://www.glygen.org/
+    description: GlyGen - Computational and Informatics Resources for Glycoscience
+    examples:
+      - url: https://www.glygen.org/glycan/G00028MO
+        description: GNOme attributes and related glycans on glycan pages
+  - user: https://proconsortium.org/
+    description: PRO - Protein Ontology
+    examples:
+      - url: http://purl.obolibrary.org/obo/PR_000059585
+        description: example of PRO use of GNO terms
+  - user: https://www.ebi.ac.uk/chebi/init.do
+    description: ChEBI - Chemical Entities of Biological Interest
+    examples:
+      - url: http://purl.obolibrary.org/obo/CHEBI_167503
+        description: example of ChEBI use of GNO terms
+activity_status: active
+repository: https://github.com/glygen-glycan-data/GNOme
 ---

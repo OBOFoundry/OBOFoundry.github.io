@@ -31,4 +31,5 @@ build:
   path: archive/ontology
   method: archive
 activity_status: active
+repository: https://github.com/obophenotype/upheno
 ---

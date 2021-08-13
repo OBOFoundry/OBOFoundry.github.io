@@ -9,7 +9,7 @@ license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 contact:
-  email: vasilevs@ohsu.edu
+  email: nicole@tislab.org
   label: Nicole Vasilevsky
   github: nicolevasilevsky
 depicted_by: https://raw.githubusercontent.com/monarch-initiative/mondo/master/docs/images/mondo_logo_black-stacked-small.png
@@ -72,6 +72,7 @@ usages:
       - url: https://data.humancellatlas.org/explore/projects?filter=%5B%7B%22facetName%22:%22organ%22,%22terms%22:%5B%22kidney%22%5D%7D,%7B%22facetName%22:%22donorDisease%22,%22terms%22:%5B%22acoustic%20neuroma%22,%22acute%20kidney%20tubular%20necrosis%22%5D%7D%5D&catalog=dcp1
         description: Disease status specimen is normal, type 2 diabetes mellitus.
 activity_status: active
+repository: https://github.com/monarch-initiative/mondo
 ---
 
 The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. It is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology. Original versions of Mondo were constructed entirely automatically and used the IDs of source databases and ontologies. Later, additional manually curated cross-ontology axioms were added, and a native Mondo ID system was used to avoid confusion with source databases.

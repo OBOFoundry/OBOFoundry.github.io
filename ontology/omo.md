@@ -20,4 +20,5 @@ usages:
     type: owl_import
     description: OMO is imported by multiple OBO ontologies for ontology term annotations.
 activity_status: active
+repository: https://github.com/information-artifact-ontology/ontology-metadata
 ---

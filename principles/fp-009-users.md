@@ -18,7 +18,7 @@ Purpose
 This principle aims to ensure that the ontology tackles a relevant
 scientific area and does so in a usable and sustainable fashion.
 
-Recommendation
+Recommendations and Requirements
 -------
 It is important to be able to illustrate usage outside
 of the immediate circle of ontology developers and stakeholders. An

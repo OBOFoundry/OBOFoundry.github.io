@@ -38,6 +38,7 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 activity_status: active
+repository: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 ---
 
 Enter a detailed description of your ontology here

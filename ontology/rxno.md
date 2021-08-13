@@ -19,6 +19,7 @@ products:
   - id: rxno.owl
     title: Name Reaction Ontology
 activity_status: active
+repository: https://github.com/rsc-ontologies/rxno
 ---
 
 RXNO, the name reaction ontology, connects organic name reactions such as the Diels-Alder cyclization and the Cannizzaro reaction to their roles in an organic synthesis and to processes in <a href="mop.html">MOP</a>.

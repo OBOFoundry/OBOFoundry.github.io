@@ -22,7 +22,6 @@ build:
 publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/20547776
     title: "The teleost anatomy ontology: anatomical representation for the genomics age"
-tracker: https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3ATAO
 is_obsolete: true
 replaced_by: uberon
 activity_status: inactive

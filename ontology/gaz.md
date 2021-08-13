@@ -21,4 +21,5 @@ license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0 Universal
 activity_status: inactive
+repository: https://github.com/EnvironmentOntology/gaz
 ---

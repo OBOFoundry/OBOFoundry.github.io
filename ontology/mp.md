@@ -52,6 +52,7 @@ taxon:
 tracker: https://github.com/obophenotype/mammalian-phenotype-ontology/issues
 mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
 activity_status: active
+repository: https://github.com/obophenotype/mammalian-phenotype-ontology
 ---
 
 The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data.

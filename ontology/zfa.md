@@ -37,6 +37,7 @@ usages:
       - url: http://zfin.org/ZFA:0000029
         description: zebrafish genes expressed in hindbrain and genotypes with hindbrain phenotype
 activity_status: active
+repository: https://github.com/cerivs/zebrafish-anatomical-ontology
 ---
 
 A structured controlled vocabulary of the anatomy and development of the Zebrafish (<i>Danio rerio</i>).
