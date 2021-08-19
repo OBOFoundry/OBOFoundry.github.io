@@ -6,14 +6,14 @@ contact:
   label: William Hogan
 description: An ontology to support comparative effectiveness researchers studying claims data.
 domain: health
-homepage: https://bitbucket.org/uamsdbmi/dron.git
+homepage: https://github.com/ufbmi/dron
 products:
   - id: dron.owl
 title: The Drug Ontology
 build:
   source_url: http://purl.obolibrary.org/obo/dron.owl
   method: owl2obo
-tracker: https://ontology.atlassian.net/browse/DRON
+tracker: https://github.com/ufbmi/dron/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
