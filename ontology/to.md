@@ -4,7 +4,7 @@ id: to
 contact:
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
-description: A controlled vocabulary of describe phenotypic traits in plants.
+description: A controlled vocabulary to describe phenotypic traits in plants.
 domain: phenotype
 homepage: http://browser.planteome.org/amigo
 page: http://browser.planteome.org/amigo/term/TO:0000387#display-lineage-tab
