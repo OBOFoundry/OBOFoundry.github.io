@@ -32,10 +32,6 @@ Note: CC-BY licenses allow others to distribute, remix, tweak, and build upon th
 
 4. Regardless of which license an ontology uses, we strongly request and recommend that any reuse of an ontology attributes the source in accordance with scientific norms and the [OBO Citation and Attribution Policy](http://www.obofoundry.org/docs/Citation).
 
-### Remark
-
-In general, copyright legislation says that facts that are not copyrightable are excluded from copyright protection. Therefore, some ontology content may not be copyrightable.
-
 ## Implementation
 
 ### For ontology providers
