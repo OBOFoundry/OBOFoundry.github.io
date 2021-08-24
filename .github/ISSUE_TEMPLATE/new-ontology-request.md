@@ -54,7 +54,7 @@ GitHub username:
 
 You can either check a box by submitted the request first and then using the GitHub interface, or replaceing the `- [ ]` by `- [X]` in the following.
 
- - [ ] There is no other ontology in the OBO foundry which would be an appropriate place for my terms. If there was, I have contacted the editors, and we decided in mutual agreement that a separate ontology is more appropriate.
+- [ ] There is no other ontology in the OBO foundry which would be an appropriate place for my terms. If there was, I have contacted the editors, and we decided in mutual agreement that a separate ontology is more appropriate.
 - [ ] My ontology has a specific release file with a version IRI and a dc:license annotation, serialised in RDF/XML.
 - [ ] All the higher-level terms in my ontology (excluding those from upper ontologies such as BFO) have definitions using the [IAO:0000115](http://www.ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000115) property. For example, if my ontology is about diseases, treatments and symptoms, the terms "disease", "treatment" and "symptom" have a definition (note that if you use the term "disease", you will have imported it from another suitable OBO ontology). Note that definitions are key to understanding the intentions of a term - and I understand that _all_ terms in the ontology, not just the high-level ones, _SHOULD_ have a textual definition.
  - [ ] For every term in my ontology, I checked whether another OBO foundry ontology has it. If so, I re-used that term directly (not by cross-reference, by directly using the IRI).
