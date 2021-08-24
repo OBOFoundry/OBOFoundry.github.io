@@ -23,6 +23,8 @@ title: Resources
 - [ROBOT tutorial](https://ontodev.github.io/robot-tutorial/#/title-slide) by James Overton
 - [OBO Academy](https://www.youtube.com/channel/UCKAkmAIIfPZc5kjdait-MdQ) - A YouTube channel containing presentations and tutorials relevant to the OBO Foundry
 - [Pizza Tutorial for Protégé 5](https://drive.google.com/file/d/1UqI19JiGnJwzKx_JQ7qRAz7bmCzyqZpj/view) by Michael DeBellis. More [info.](https://www.michaeldebellis.com/post/new-protege-pizza-tutorial).
+- [Introduction to Biomedical Ontologies](http://ontology.buffalo.edu/smith/BioOntology_Course.html): A training course in eight lectures by [Barry Smith](http://ontology.buffalo.edu/smith/)
+- [Building Ontologies with Basic Formal Ontology](http://ontology.buffalo.edu/BOBFO/detailed-table-of-contents.html): By Robert Arp, Barry Smith, and Andrew Spear
 
 ## Ontology Tools
 
