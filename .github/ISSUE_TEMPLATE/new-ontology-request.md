@@ -50,14 +50,17 @@ GitHub username:
 
 ## Additional comments or remarks
 
-## OBO Foundry pre-release checklist
+## OBO Foundry pre-registration checklist
 
-You can either check a box by submitted the request first and then using the GitHub interface, or replaceing the `- [ ]` by `- [X]` in the following.
+To be considered for inclusion in the OBO Foundry, an ontology must meet certain requirements, as described in in [the registration process instructions](http://obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html) and the [registration review checklist](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/docs/RegistrationChecklist.md). To ensure you are aware of some of its key points, please review the checklist below.
 
-- [ ] There is no other ontology in the OBO foundry which would be an appropriate place for my terms. If there was, I have contacted the editors, and we decided in mutual agreement that a separate ontology is more appropriate.
+You can either check a box by submitted the request first and then using the GitHub interface, or replacing the `- [ ]` by `- [X]` in the following.
+
+- [ ] I have read an understood [the registration process instructions](http://obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html) and the [registration checklist](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/docs/RegistrationChecklist.md) 
+- [ ] There is no other ontology in the OBO Foundry which would be an appropriate place for my terms. If there was, I have contacted the editors, and we decided in mutual agreement that a separate ontology is more appropriate.
 - [ ] My ontology has a specific release file with a version IRI and a dc:license annotation, serialised in RDF/XML.
 - [ ] I understand that definitions are key to understanding the intentions of a term especially when the ontology is used in curation. While not mandatory, I ensured that reasonable majority of terms in my ontology has such a definition using the [IAO:0000115](http://www.ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000115) property.
-- [ ] For every term in my ontology, I checked whether another OBO foundry ontology has it. If so, I re-used that term directly (not by cross-reference, by directly using the IRI).
+- [ ] For every term in my ontology, I checked whether another OBO Foundry ontology has it. If so, I re-used that term directly (not by cross-reference, by directly using the IRI).
 - [ ] For all relationship properties (Object and Data Property) I checked whether [RO](http://www.ontobee.org/ontology/catalog/RO?iri=http://www.w3.org/2002/07/owl%23ObjectProperty) includes an appropriate one. I understand that aligning with RO is an essential part of the overall alignment between OBO ontologies!
 - [ ] For the selection of appropriate annotation properties, I looked at [OMO](http://www.ontobee.org/ontology/catalog/OMO?iri=http://www.w3.org/2002/07/owl%23AnnotationProperty) first. I understand that aligning ontology metadata and term-level metadata is essential for cross-integration of OBO ontologies. 
 - [ ] If I was not sure about the meaning of any of the checkboxes above, I have consulted with a member of the OBO Foundry for advice.
