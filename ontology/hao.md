@@ -23,6 +23,7 @@ build:
   checkout: git clone https://github.com/hymao/hao.git
   system: git
 activity_status: active
+repository: https://github.com/hymao/hao
 ---
 
 A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)

@@ -35,4 +35,5 @@ license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC-0
 activity_status: active
+repository: https://github.com/obophenotype/chiro
 ---

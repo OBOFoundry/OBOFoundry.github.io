@@ -23,6 +23,7 @@ license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC-0
 activity_status: active
+repository: https://github.com/luis-gonzalez-m/Collembola
 ---
 
 CLAO includes 1201 classes related mainly with anatomical systems, sclerites, and chaetotaxy. This ontology should increase the anatomical knowledge in Arthropoda and interoperability with other anatomical ontologies as HAO.

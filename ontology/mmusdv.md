@@ -20,6 +20,7 @@ products:
   - id: mmusdv.owl
   - id: mmusdv.obo
 activity_status: active
+repository: https://github.com/obophenotype/developmental-stage-ontologies
 ---
 
 MmusDv was developed by the Bgee group with assistance from the core Uberon developers and the Mouse anatomy ontology developers.

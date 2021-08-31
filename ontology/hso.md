@@ -24,6 +24,7 @@ dependencies:
   - id: ncbitaxon
 tracker: https://github.com/SVA-SE/HSO/issues/
 activity_status: active
+repository: https://github.com/SVA-SE/HSO
 ---
 
 The Health Surveillance Ontology (HSO) focuses on "surveillance system level data", that is, data outputs from surveillance activities, such as number of samples collected, cases observed, etc. It aims to support One-Health surveillance, covering animal health, public health and food safety surveillance. "Surveillance" is defined as any activity that collects information which is analysed to inform disease control (https://www.fp7-risksur.eu/terminology/glossary). A typical example of a One-Health surveillance activity, in this context, is the investigation of foodborne zoonotic outbreaks.

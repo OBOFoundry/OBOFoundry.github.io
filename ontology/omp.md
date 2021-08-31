@@ -19,6 +19,7 @@ license:
   label: CC-BY
 tracker: https://github.com/microbialphenotypes/OMP-ontology/issues
 activity_status: active
+repository: https://github.com/microbialphenotypes/OMP-ontology
 ---
 
 OMP is a community ontology for annotating microbial phenotypes.
