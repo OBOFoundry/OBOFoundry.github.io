@@ -50,5 +50,6 @@ license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0
 activity_status: active
+repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
 ---
 <img src="https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/ecto-logos/ecto-logo_black-banner.png"/>

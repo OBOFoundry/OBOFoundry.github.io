@@ -20,6 +20,7 @@ build:
   method: obo2owl
 tracker: https://github.com/obophenotype/caro/issues
 activity_status: active
+repository: https://github.com/obophenotype/caro
 ---
 
 The Common Anatomy Reference Ontology (CARO) is being developed to facilitate interoperability between existing anatomy ontologies for different species, and will provide a template for building new anatomy ontologies. CARO will be described in Anatomy Ontologies for Bioinformatics: Principles and Practice Albert Burger, Duncan Davidson and Richard Baldock (Editors)

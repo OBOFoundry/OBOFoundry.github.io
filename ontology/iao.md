@@ -35,6 +35,7 @@ usages:
     type: owl_import
     description: IAO is used widely by multiple OBO ontologies for information representation.
 activity_status: active
+repository: https://github.com/information-artifact-ontology/IAO
 ---
 
 The Information Artifact Ontology (IAO) is a new ontology of information entities, originally driven by work by the OBI digital entity and realizable information entity branch.

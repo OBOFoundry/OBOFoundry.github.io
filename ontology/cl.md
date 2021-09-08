@@ -72,6 +72,7 @@ usages:
       - url: http://fantom.gsc.riken.jp/5/sstar/CL:0000540
         description: FANTOM5 samples annotated to neuron
 activity_status: active
+repository: https://github.com/obophenotype/cell-ontology
 ---
 
 ![logo](/images/CL-logo.jpg)

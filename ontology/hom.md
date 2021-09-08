@@ -20,6 +20,7 @@ license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0
 activity_status: active
+repository: https://github.com/BgeeDB/homology-ontology
 ---
 
 This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology. The ontology can be cited as:

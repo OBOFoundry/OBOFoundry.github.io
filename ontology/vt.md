@@ -18,4 +18,5 @@ build:
   method: vcs
 description: An ontology of traits covering vertebrates
 activity_status: active
+repository: https://github.com/AnimalGenome/vertebrate-trait-ontology
 ---
