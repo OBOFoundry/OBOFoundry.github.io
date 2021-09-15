@@ -43,6 +43,12 @@ browsers:
   - label: Monarch
     title: Monarch Phenotype Page
     url: http://monarchinitiative.org/phenotype/MP:0000001
+usages:
+- user: http://www.informatics.jax.org/vocab/mp_ontology
+  description: MGI uses MP for phenotype annoation
+  examples:
+   - url: http://www.informatics.jax.org/vocab/mp_ontology/MP:0005375
+     description: Adipose phenotype annoations
 jobs:
   - id: http://build.berkeleybop.org/job/build-mp-edit
     type: DryRunBuild
