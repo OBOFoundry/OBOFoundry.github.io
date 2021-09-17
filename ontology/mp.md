@@ -47,18 +47,18 @@ usages:
   - user: http://www.informatics.jax.org/vocab/mp_ontology
     description: MGI annotates phenotypes of mouse models using the MP
     examples:
-     - url: http://www.informatics.jax.org/vocab/mp_ontology/MP:0008762
-       description: "Term browser page for embryonic lethality showing information about the term including definition, placement in the MP hierarchy, and link to mouse models annotated to this term or any of its decendants"
+      - url: http://www.informatics.jax.org/vocab/mp_ontology/MP:0008762
+        description: "Term browser page for embryonic lethality showing information about the term including definition, placement in the MP hierarchy, and link to mouse models annotated to this term or any of its decendants"
   - user: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MP:0000001
-    description: RGD annotates phenotypes associated with rat genes and alleles using the MP 
+    description: RGD annotates phenotypes associated with rat genes and alleles using the MP
     examples:
-     - url: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MP:0008762
-       description: "Term browser page for embryonic lethality showing information about the term including definition, placement in the MP hierarchy, and link to annotations to this term or any of its decendants"
+      - url: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MP:0008762
+        description: "Term browser page for embryonic lethality showing information about the term including definition, placement in the MP hierarchy, and link to annotations to this term or any of its decendants"
   - user: https://www.mousephenotype.org/
-    description: "IMPC annotates abnormal phenotypes of mice carrying null alleles found following the application of a standardised set of physiological tests" 
+    description: "IMPC annotates abnormal phenotypes of mice carrying null alleles found following the application of a standardised set of physiological tests"
     examples:
-     - url: https://www.mousephenotype.org/data/genes/MGI:97490#phenotypesTab
-       description: All abnormal phenotypes associated with mice carrying at least one null allele pf the Pax6 gene     
+      - url: https://www.mousephenotype.org/data/genes/MGI:97490#phenotypesTab
+        description: All abnormal phenotypes associated with mice carrying at least one null allele pf the Pax6 gene
 jobs:
   - id: http://build.berkeleybop.org/job/build-mp-edit
     type: DryRunBuild
