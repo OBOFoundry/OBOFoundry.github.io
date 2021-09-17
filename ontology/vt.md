@@ -29,5 +29,10 @@ usages:
     examples:
       - url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?acc_id=VT:0003947&species=Rat
         description: "Annotations of rat QTL associated with the VTO term cholesterol amount or its descendants"
+  - user: https://phenome.jax.org/ontologies/navigate/VT:0000001
+    description: The Mouse Phenome Database (MPD) uses the VTO to annotate mouse strain traits
+    examples:
+      - url: https://phenome.jax.org/ontologies/VT:0002224
+        description: "Studies in the MPD database that have measurements related to the VTO term spleen size trait or its descendants"
 repository: https://github.com/AnimalGenome/vertebrate-trait-ontology
 ---
