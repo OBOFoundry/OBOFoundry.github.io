@@ -28,6 +28,6 @@ usages:
     description: The Rat Genome Database (RGD) uses the VTO to annotate rat QTL
     examples:
       - url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?acc_id=VT:0003947&species=Rat
-        description: "Annotations of rat QTL associated with the VTO term cholesterol amount or its descendants"        
+        description: "Annotations of rat QTL associated with the VTO term cholesterol amount or its descendants"
 repository: https://github.com/AnimalGenome/vertebrate-trait-ontology
 ---
