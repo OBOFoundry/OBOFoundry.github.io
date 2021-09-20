@@ -57,8 +57,8 @@ usages:
   - user: https://www.mousephenotype.org/
     description: "IMPC annotates abnormal phenotypes of mice carrying null alleles found following the application of a standardised set of physiological tests"
     examples:
-      - url: https://www.mousephenotype.org/data/genes/MGI:97490#phenotypesTab
-        description: All abnormal phenotypes associated with mice carrying at least one null allele pf the Pax6 gene
+      - url: https://www.mousephenotype.org/data/phenotypes/MP:0013522
+        description: "All IMPC alleles that have been annotated to the MP term "decreased memory-marker CD4-positive NK T cell number"."
 jobs:
   - id: http://build.berkeleybop.org/job/build-mp-edit
     type: DryRunBuild
