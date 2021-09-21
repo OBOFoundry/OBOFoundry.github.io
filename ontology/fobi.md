@@ -19,6 +19,7 @@ dependencies:
   - id: chebi
   - id: foodon
 tracker: https://github.com/pcastellanoescuder/FoodBiomarkerOntology/issues
+homepage: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
 activity_status: active
 repository: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
 ---
