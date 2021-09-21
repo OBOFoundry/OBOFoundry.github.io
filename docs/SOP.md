@@ -1,9 +1,11 @@
 ---
 layout: doc
-id: NewOntologyRequest
-title: New Ontology Request
+id: SOP
+title: Standard Operating Procedures
 ---
-# New Ontology Requests (NOR) 
+# Standard Operating Procedures
+
+## New Ontology Requests (NOR) 
 
 1. When receiving a new ontology request (NOR) issue request, thank the submitter for their submission.
 1. The OBO dashboard curator adds the new submission to the NOR dashboard, which is deployed at https://obofoundry.github.io/obo-nor.github.io/
