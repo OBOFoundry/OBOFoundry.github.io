@@ -18,5 +18,21 @@ build:
   method: vcs
 description: An ontology of traits covering vertebrates
 activity_status: active
+usages:
+  - user: https://www.animalgenome.org/cgi-bin/QTLdb/index
+    description: The Animal Quantitative Trait Loci (QTL) Database (Animal QTLdb) annotates trait mapping data for livestock animals using the VTO
+    examples:
+      - url: https://www.animalgenome.org/cgi-bin/QTLdb/BT/traitsrch?tword=Gastrointestinal%20tract%20weight
+        description: "Links to cattle QTL associated with the VTO term gastrointestinal system morphology trait or its descendants"
+  - user: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=VT:0000001
+    description: The Rat Genome Database (RGD) uses the VTO to annotate rat QTL
+    examples:
+      - url: https://rgd.mcw.edu/rgdweb/ontology/annot.html?acc_id=VT:0003947&species=Rat
+        description: "Annotations of rat QTL associated with the VTO term cholesterol amount or its descendants"
+  - user: https://phenome.jax.org/ontologies/navigate/VT:0000001
+    description: The Mouse Phenome Database (MPD) uses the VTO to annotate mouse strain traits
+    examples:
+      - url: https://phenome.jax.org/ontologies/VT:0002224
+        description: "Studies in the MPD database that have measurements related to the VTO term spleen size trait or its descendants"
 repository: https://github.com/AnimalGenome/vertebrate-trait-ontology
 ---
