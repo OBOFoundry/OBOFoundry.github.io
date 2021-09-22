@@ -21,6 +21,12 @@ products:
 dependencies:
   - id: ro
   - id: uberon
+usages:
+  - user: https://planosphere.stowers.org/
+    description: Planosphere's PAGE database uses PLANA to annotate gene expression locations
+    examples:
+      - url: https://planosphere.stowers.org/ontology/PLANA_0000034
+        description: "The user can get an overview of the genes expressed in the planarian epidermis"
 tracker: https://github.com/obophenotype/planaria-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
