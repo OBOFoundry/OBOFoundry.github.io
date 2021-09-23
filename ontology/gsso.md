@@ -22,6 +22,7 @@ license:
   url: http://www.apache.org/licenses/LICENSE-2.0
   label: Apache 2.0 License
 activity_status: active
+repository: https://github.com/Superraptor/GSSO
 ---
 
 GSSO on BioPortal: https://bioportal.bioontology.org/ontologies/GSSO

@@ -19,6 +19,7 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 activity_status: active
+repository: https://github.com/CLO-Ontology/CLO
 ---
 
 # Summary

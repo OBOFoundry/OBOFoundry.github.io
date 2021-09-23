@@ -26,6 +26,7 @@ build:
   path: "."
   method: vcs
 activity_status: active
+repository: https://github.com/obophenotype/bio-attribute-ontology
 ---
 
 A collection of biological attributes (traits) covering all kingdoms of life. Interoperable with

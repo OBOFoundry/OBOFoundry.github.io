@@ -23,6 +23,7 @@ dependencies:
   - id: ncbitaxon
 tracker: https://github.com/GenEpiO/genepio/issues/
 activity_status: active
+repository: https://github.com/GenEpiO/genepio
 ---
 
 Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary to identify, document and research foodborne pathogens and associated outbreaks. We envision various subdomains including genomic laboratory testing, specimen and isolate metadata, and epidemiological case investigations.

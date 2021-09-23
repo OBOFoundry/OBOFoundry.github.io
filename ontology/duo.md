@@ -25,6 +25,7 @@ license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC-BY
 activity_status: active
+repository: https://github.com/EBISPOT/DUO
 ---
 
 DUO allows to semantically tag datasets with restriction about their usage, making them discoverable automatically based on the authorization level of users, or intended usage.

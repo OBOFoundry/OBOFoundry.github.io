@@ -13,7 +13,7 @@ products:
   - id: txpo.owl
 license:
   url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY version 3.0
+  label: CC-BY 3.0
 title: Toxic Process Ontology
 # depicted_by: icon_url
 browsers:
@@ -25,6 +25,7 @@ browsers:
     title: TOXPILOT
     url: https://toxpilot.nibiohn.go.jp/
 activity_status: active
+repository: https://github.com/txpo-ontology/TXPO
 ---
 
 Elucidating the mechanism of toxicity is crucial in drug safety evaluations. TOXic Process Ontology (TXPO) systematizes a wide variety of terms involving toxicity courses and processes. The first version of TXPO focuses on liver toxicity.

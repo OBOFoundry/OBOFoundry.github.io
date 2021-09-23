@@ -14,6 +14,7 @@ tracker: https://github.com/INO-ontology/ino/issues
 products:
   - id: ino.owl
 activity_status: active
+repository: https://github.com/INO-ontology/ino
 ---
 
 # Summary

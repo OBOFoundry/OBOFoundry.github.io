@@ -36,6 +36,7 @@ usages:
       - url: https://www.ebi.ac.uk/ols/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
         description: Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data
 activity_status: active
+repository: https://github.com/EBISPOT/ancestro
 ---
 
 # Summary

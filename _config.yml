@@ -38,6 +38,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/bfo.owl
   - id: bfo.obo
     ontology_purl: http://purl.obolibrary.org/obo/bfo.obo
+  repository: https://github.com/BFO-ontology/BFO
   review:
     date: 2016
     document:
@@ -95,6 +96,7 @@ ontologies:
   publications:
   - id: http://europepmc.org/article/MED/26467479
     title: 'ChEBI in 2016: Improved services and an expanding collection of metabolites.'
+  repository: https://github.com/ebi-chebi/ChEBI
   review:
     date: 2010
   title: Chemical Entities of Biological Interest
@@ -151,6 +153,7 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409
     title: 'Disease Ontology 2015 update: an expanded and updated database of human
       diseases for linking biomedical knowledge through disease data'
+  repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
   review:
     date: 2015
     document:
@@ -275,6 +278,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/go/snapshot/go.obo
     page: http://geneontology.org/page/download-ontology
     title: GO (OBO Format edition), daily snapshot release
+  repository: https://github.com/geneontology/go-ontology
   review:
     date: 2010
   taxon:
@@ -330,6 +334,7 @@ ontologies:
     id: obi/obi_core.owl
     ontology_purl: http://purl.obolibrary.org/obo/obi/obi_core.owl
     title: OBI Core
+  repository: https://github.com/obi-ontology/obi
   review:
     date: 2013
     document:
@@ -450,6 +455,7 @@ ontologies:
   - id: https://doi.org/10.1093/nar/gkx1152
     title: 'The Planteome database: an integrated resource for reference ontologies,
       plant genomics and phenomics.'
+  repository: https://github.com/Planteome/plant-ontology
   review:
     date: 2013
     document:
@@ -526,6 +532,7 @@ ontologies:
   publications:
   - id: https://proconsortium.org/pro_dsmnt.shtml#publication
     title: Publications & Dissemination
+  repository: https://github.com/PROconsortium/PRoteinOntology
   review:
     date: 2010
   title: PRotein Ontology (PRO)
@@ -576,6 +583,7 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24139024
     title: 'Enhanced XAO: the ontology of Xenopus anatomy and development underpins
       more accurate annotation of gene expression and queries on Xenbase.'
+  repository: https://github.com/xenopus-anatomy/xao
   review:
     date: 2010
   taxon:
@@ -620,6 +628,7 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24568621
     title: 'The zebrafish anatomy and stage ontologies: representing the anatomy and
       development of Danio rerio.'
+  repository: https://github.com/cerivs/zebrafish-anatomical-ontology
   review:
     date: 2010
   taxon:
@@ -657,6 +666,7 @@ ontologies:
   products:
   - id: aeo.owl
     ontology_purl: http://purl.obolibrary.org/obo/aeo.owl
+  repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
   title: Anatomical Entity Ontology
   tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
 - activity_status: active
@@ -698,6 +708,7 @@ ontologies:
   products:
   - id: agro.owl
     ontology_purl: http://purl.obolibrary.org/obo/agro.owl
+  repository: https://github.com/AgriculturalSemantics/agro
   title: Agronomy Ontology
   tracker: https://github.com/AgriculturalSemantics/agro/issues/
 - activity_status: active
@@ -735,6 +746,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/aism.obo
   - id: aism.json
     ontology_purl: http://purl.obolibrary.org/obo/aism.json
+  repository: https://github.com/insect-morphology/aism
   title: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
   tracker: https://github.com/insect-morphology/aism/issues
 - activity_status: active
@@ -763,6 +775,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/amphx.owl
   - id: amphx.obo
     ontology_purl: http://purl.obolibrary.org/obo/amphx.obo
+  repository: https://github.com/EBISPOT/amphx_ontology
   title: The Amphioxus Development and Anatomy Ontology
   tracker: https://github.com/EBISPOT/amphx_ontology/issues
 - activity_status: active
@@ -789,6 +802,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/apo.owl
   - id: apo.obo
     ontology_purl: http://purl.obolibrary.org/obo/apo.obo
+  repository: https://github.com/obophenotype/ascomycete-phenotype-ontology
   taxon:
     id: NCBITaxon:4890
     label: Ascomycota
@@ -812,6 +826,7 @@ ontologies:
   products:
   - id: apollo_sv.owl
     ontology_purl: http://purl.obolibrary.org/obo/apollo_sv.owl
+  repository: https://github.com/ApolloDev/apollo-sv
   title: Apollo Structured Vocabulary
   tracker: https://github.com/ApolloDev/apollo-sv/issues
 - activity_status: active
@@ -832,6 +847,7 @@ ontologies:
   products:
   - id: aro.owl
     ontology_purl: http://purl.obolibrary.org/obo/aro.owl
+  repository: https://github.com/arpcard/aro
   title: Antibiotic Resistance Ontology
   tracker: https://github.com/arpcard/aro/issues
 - activity_status: active
@@ -855,6 +871,7 @@ ontologies:
   products:
   - id: bco.owl
     ontology_purl: http://purl.obolibrary.org/obo/bco.owl
+  repository: https://github.com/tucotuco/bco
   title: Biological Collections Ontology
   tracker: https://github.com/tucotuco/bco/issues
 - activity_status: active
@@ -888,6 +905,7 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/25140222
     title: 'Nose to tail, roots to shoots: spatial descriptors for phenotypic diversity
       in the Biological Spatial Ontology.'
+  repository: https://github.com/obophenotype/biological-spatial-ontology
   title: Biological Spatial Ontology
   tracker: https://github.com/obophenotype/biological-spatial-ontology/issues
 - activity_status: active
@@ -921,6 +939,7 @@ ontologies:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/21030441
     title: 'The BRENDA Tissue Ontology (BTO): the first all-integrating ontology of
       all organisms for enzyme sources'
+  repository: https://github.com/BRENDA-Enzymes/BTO
   title: BRENDA tissue / enzyme source
   tracker: https://github.com/BRENDA-Enzymes/BTO/issues
 - activity_status: active
@@ -946,6 +965,7 @@ ontologies:
   products:
   - id: caro.owl
     ontology_purl: http://purl.obolibrary.org/obo/caro.owl
+  repository: https://github.com/obophenotype/caro
   title: Common Anatomy Reference Ontology
   tracker: https://github.com/obophenotype/caro/issues
 - activity_status: active
@@ -968,6 +988,7 @@ ontologies:
   products:
   - id: cdao.owl
     ontology_purl: http://purl.obolibrary.org/obo/cdao.owl
+  repository: https://github.com/evoinfo/cdao
   title: Comparative Data Analysis Ontology
   tracker: https://github.com/evoinfo/cdao/issues
 - activity_status: active
@@ -1003,6 +1024,7 @@ ontologies:
   - id: cdno.obo
     name: Compositional Dietary Nutrition Ontology additional release in OBO format
     ontology_purl: http://purl.obolibrary.org/obo/cdno.obo
+  repository: https://github.com/Southern-Cross-Plant-Science/cdno
   title: Compositional Dietary Nutrition Ontology
   tracker: https://github.com/Southern-Cross-Plant-Science/cdno/issues
 - activity_status: active
@@ -1027,6 +1049,7 @@ ontologies:
   products:
   - id: cheminf.owl
     ontology_purl: http://purl.obolibrary.org/obo/cheminf.owl
+  repository: https://github.com/semanticchemistry/semanticchemistry
   title: Chemical Information Ontology
   tracker: https://github.com/semanticchemistry/semanticchemistry/issues
 - activity_status: active
@@ -1071,6 +1094,7 @@ ontologies:
   - id: chiro.obo
     name: CHEBI Integrated Role Ontology additional release in OBO format
     ontology_purl: http://purl.obolibrary.org/obo/chiro.obo
+  repository: https://github.com/obophenotype/chiro
   title: CHEBI Integrated Role Ontology
   tracker: https://github.com/obophenotype/chiro/issues
 - activity_status: active
@@ -1092,6 +1116,7 @@ ontologies:
   products:
   - id: chmo.owl
     ontology_purl: http://purl.obolibrary.org/obo/chmo.owl
+  repository: https://github.com/rsc-ontologies/rsc-cmo
   title: Chemical Methods Ontology
   tracker: https://github.com/rsc-ontologies/rsc-cmo/issues
 - activity_status: active
@@ -1114,6 +1139,7 @@ ontologies:
   products:
   - id: cido.owl
     ontology_purl: http://purl.obolibrary.org/obo/cido.owl
+  repository: https://github.com/cido-ontology/cido
   title: Coronavirus Infectious Disease Ontology
   tracker: https://github.com/cido-ontology/cido/issues
 - activity_status: active
@@ -1135,6 +1161,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/cio.owl
   - id: cio.obo
     ontology_purl: http://purl.obolibrary.org/obo/cio.obo
+  repository: https://github.com/BgeeDB/confidence-information-ontology
   title: Confidence Information Ontology
   tracker: https://github.com/BgeeDB/confidence-information-ontology
 - activity_status: active
@@ -1205,6 +1232,7 @@ ontologies:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/27377652
     title: 'The Cell Ontology 2016: enhanced content, modularization, and ontology
       interoperability.'
+  repository: https://github.com/obophenotype/cell-ontology
   taxon:
     id: NCBITaxon:33208
     label: Metazoa
@@ -1255,6 +1283,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/clao.owl
   - id: clao.obo
     ontology_purl: http://purl.obolibrary.org/obo/clao.obo
+  repository: https://github.com/luis-gonzalez-m/Collembola
   title: Collembola Anatomy Ontology
   tracker: https://github.com/luis-gonzalez-m/Collembola/issues
 - activity_status: active
@@ -1279,6 +1308,7 @@ ontologies:
   products:
   - id: clo.owl
     ontology_purl: http://purl.obolibrary.org/obo/clo.owl
+  repository: https://github.com/CLO-Ontology/CLO
   title: Cell Line Ontology
   tracker: https://github.com/CLO-Ontology/CLO/issues
 - activity_status: active
@@ -1310,6 +1340,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/clyh.owl
   - id: clyh.obo
     ontology_purl: http://purl.obolibrary.org/obo/clyh.obo
+  repository: https://github.com/EBISPOT/clyh_ontology
   title: Clytia hemisphaerica Development and Anatomy Ontology
   tracker: https://github.com/EBISPOT/clyh_ontology/issues
 - activity_status: active
@@ -1346,6 +1377,7 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24103152
     title: 'The clinical measurement, measurement method and experimental condition
       ontologies: expansion, improvements and new applications.'
+  repository: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology
   title: Clinical measurement ontology
   tracker: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology/issues
 - activity_status: active
@@ -1367,6 +1399,7 @@ ontologies:
   products:
   - id: cob.owl
     ontology_purl: http://purl.obolibrary.org/obo/cob.owl
+  repository: https://github.com/OBOFoundry/COB
   title: Core Ontology for Biology and Biomedicine
   tracker: https://github.com/OBOFoundry/COB/issues
 - activity_status: active
@@ -1395,6 +1428,7 @@ ontologies:
   - id: cro.owl
     ontology_purl: http://purl.obolibrary.org/obo/cro.owl
     title: CRO
+  repository: https://github.com/data2health/contributor-role-ontology
   title: Contributor Role Ontology
   tracker: https://github.com/data2health/contributor-role-ontology/issues
 - activity_status: active
@@ -1426,6 +1460,7 @@ ontologies:
   products:
   - id: cteno.owl
     ontology_purl: http://purl.obolibrary.org/obo/cteno.owl
+  repository: https://github.com/obophenotype/ctenophore-ontology
   taxon:
     id: NCBITaxon:10197
     label: Ctenophore
@@ -1452,6 +1487,7 @@ ontologies:
   products:
   - id: cto.owl
     ontology_purl: http://purl.obolibrary.org/obo/cto.owl
+  repository: https://github.com/ClinicalTrialOntology/CTO
   title: 'CTO: Core Ontology of Clinical Trials'
   tracker: https://github.com/ClinicalTrialOntology/CTO/issues
 - activity_status: active
@@ -1474,6 +1510,7 @@ ontologies:
   products:
   - id: cvdo.owl
     ontology_purl: http://purl.obolibrary.org/obo/cvdo.owl
+  repository: https://github.com/OpenLHS/CVDO
   title: Cardiovascular Disease Ontology
   tracker: https://github.com/OpenLHS/CVDO/issues
 - activity_status: active
@@ -1501,6 +1538,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/ddanat.owl
   - id: ddanat.obo
     ontology_purl: http://purl.obolibrary.org/obo/ddanat.obo
+  repository: https://github.com/dictyBase/migration-data
   taxon:
     id: NCBITaxon:44689
     label: Dictyostelium discoideum
@@ -1532,6 +1570,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/ddpheno.owl
   - id: ddpheno.obo
     ontology_purl: http://purl.obolibrary.org/obo/ddpheno.obo
+  repository: https://github.com/obophenotype/dicty-phenotype-ontology
   taxon:
     id: NCBITaxon:44689
     label: Dictyostelium discoideum
@@ -1556,6 +1595,7 @@ ontologies:
   products:
   - id: dideo.owl
     ontology_purl: http://purl.obolibrary.org/obo/dideo.owl
+  repository: https://github.com/DIDEO/DIDEO
   title: Drug-drug Interaction and Drug-drug Interaction Evidence Ontology
   tracker: https://github.com/DIDEO/DIDEO/issues
 - activity_status: active
@@ -1591,6 +1631,7 @@ ontologies:
   publications:
   - id: https://doi.org/10.1186/2041-1480-4-30
     title: The Drosophila phenotype ontology.
+  repository: https://github.com/FlyBase/drosophila-phenotype-ontology
   taxon:
     id: NCBITaxon:7227
     label: Drosophila
@@ -1612,7 +1653,7 @@ ontologies:
   description: An ontology to support comparative effectiveness researchers studying
     claims data.
   domain: health
-  homepage: https://bitbucket.org/uamsdbmi/dron.git
+  homepage: https://github.com/ufbmi/dron
   id: dron
   layout: ontology_detail
   license:
@@ -1623,8 +1664,9 @@ ontologies:
   products:
   - id: dron.owl
     ontology_purl: http://purl.obolibrary.org/obo/dron.owl
+  repository: https://github.com/ufbmi/dron/
   title: The Drug Ontology
-  tracker: https://ontology.atlassian.net/browse/DRON
+  tracker: https://github.com/ufbmi/dron/issues
 - activity_status: active
   build:
     checkout: git clone https://github.com/EBISPOT/duo.git
@@ -1652,6 +1694,7 @@ ontologies:
   products:
   - id: duo.owl
     ontology_purl: http://purl.obolibrary.org/obo/duo.owl
+  repository: https://github.com/EBISPOT/DUO
   title: Data Use Ontology
   tracker: https://github.com/EBISPOT/DUO/issues
 - activity_status: active
@@ -1683,6 +1726,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/ecao.owl
   - id: ecao.obo
     ontology_purl: http://purl.obolibrary.org/obo/ecao.obo
+  repository: https://github.com/echinoderm-ontology/ecao_ontology
   title: The Echinoderm Anatomy and Development Ontology
   tracker: https://github.com/echinoderm-ontology/ecao_ontology/issues
 - activity_status: active
@@ -1722,6 +1766,7 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/25052702
     title: Standardized description of scientific evidence using the Evidence Ontology
       (ECO)
+  repository: https://github.com/evidenceontology/evidenceontology
   title: Evidence ontology
   tracker: https://github.com/evidenceontology/evidenceontology/issues
   usages:
@@ -1784,6 +1829,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/ecocore.owl
   - id: ecocore.obo
     ontology_purl: http://purl.obolibrary.org/obo/ecocore.obo
+  repository: https://github.com/EcologicalSemantics/ecocore
   title: An ontology of core ecological entities
   tracker: https://github.com/EcologicalSemantics/ecocore/issues
 - activity_status: active
@@ -1856,6 +1902,7 @@ ontologies:
     name: Environmental conditions, treatments and exposures ontology additional release
       in OBOJSon format
     ontology_purl: http://purl.obolibrary.org/obo/ecto/ecto-base.json
+  repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
   title: Environmental conditions, treatments and exposures ontology
   tracker: https://github.com/EnvironmentOntology/environmental-exposure-ontology/issues
 - activity_status: active
@@ -1883,6 +1930,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/emapa.owl
   - id: emapa.obo
     ontology_purl: http://purl.obolibrary.org/obo/emapa.obo
+  repository: https://github.com/obophenotype/mouse-anatomy-ontology
   taxon:
     id: NCBITaxon:10088
     label: Mus
@@ -1953,6 +2001,7 @@ ontologies:
   - id: https://doi.org/10.1186/s13326-016-0097-6
     title: 'The environment ontology in 2016: bridging domains with increased scope,
       semantic density, and interoperation'
+  repository: https://github.com/EnvironmentOntology/envo
   title: Environment Ontology
   tracker: https://github.com/EnvironmentOntology/envo/issues/
   usages:
@@ -2010,6 +2059,7 @@ ontologies:
   products:
   - id: eupath.owl
     ontology_purl: http://purl.obolibrary.org/obo/eupath.owl
+  repository: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
   title: VEuPathDB ontology
   tracker: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology/issues
   usages:
@@ -2050,6 +2100,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/exo.owl
   - id: exo.obo
     ontology_purl: http://purl.obolibrary.org/obo/exo.obo
+  repository: https://github.com/CTDbase/exposure-ontology
   title: Exposure ontology
   tracker: https://github.com/CTDbase/exposure-ontology/issues
 - activity_status: active
@@ -2077,6 +2128,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/fao.owl
   - id: fao.obo
     ontology_purl: http://purl.obolibrary.org/obo/fao.obo
+  repository: https://github.com/obophenotype/fungal-anatomy-ontology
   taxon:
     id: NCBITaxon:4751
     label: Fungal
@@ -2104,6 +2156,7 @@ ontologies:
   products:
   - id: fbbi.owl
     ontology_purl: http://purl.obolibrary.org/obo/fbbi.owl
+  repository: https://github.com/CRBS/Biological_Imaging_Methods_Ontology
   title: Biological Imaging Methods Ontology
   tracker: https://github.com/CRBS/Biological_Imaging_Methods_Ontology/issues
 - activity_status: active
@@ -2205,6 +2258,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/fbcv.obo
   - id: fbcv.json
     ontology_purl: http://purl.obolibrary.org/obo/fbcv.json
+  repository: https://github.com/FlyBase/flybase-controlled-vocabulary
   title: FlyBase Controlled Vocabulary
   tracker: https://github.com/FlyBase/flybase-controlled-vocabulary/issues
   usages:
@@ -2271,6 +2325,7 @@ ontologies:
   products:
   - id: fideo.owl
     ontology_purl: http://purl.obolibrary.org/obo/fideo.owl
+  repository: https://github.com/getbordea/fideo
   title: Food Interactions with Drugs Evidence Ontology
   tracker: https://github.com/getbordea/fideo/issues
 - activity_status: active
@@ -2294,6 +2349,7 @@ ontologies:
   products:
   - id: flopo.owl
     ontology_purl: http://purl.obolibrary.org/obo/flopo.owl
+  repository: https://github.com/flora-phenotype-ontology/flopoontology
   taxon:
     id: NCBITaxon:33090
     label: Viridiplantae
@@ -2369,6 +2425,7 @@ ontologies:
     id: foodon_core.owl
     ontology_purl: http://purl.obolibrary.org/obo/foodon_core.owl
     title: FoodOn core ontology (without SIREN)
+  repository: https://github.com/FoodOntology/foodon
   title: FOODON
   tracker: https://github.com/FoodOntology/foodon/issues/
 - activity_status: active
@@ -2419,6 +2476,7 @@ ontologies:
   - id: fovt/fovt-base.obo
     name: FuTRES Ontology of Vertebrate Traits additional release in OBO format
     ontology_purl: http://purl.obolibrary.org/obo/fovt/fovt-base.obo
+  repository: https://github.com/futres/fovt
   title: FuTRES Ontology of Vertebrate Traits
   tracker: https://github.com/futres/fovt/issues
 - activity_status: active
@@ -2449,6 +2507,7 @@ ontologies:
   publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/23658422
     title: 'FYPO: The Fission Yeast Phenotype Ontology.'
+  repository: https://github.com/pombase/fypo
   taxon:
     id: NCBITaxon:4896
     label: S. pombe
@@ -2460,32 +2519,6 @@ ontologies:
     - description: genotypes annotated to abnormal mitotic cell cycle in fission yeast
       url: https://www.pombase.org/term/FYPO:0000059
     user: https://www.pombase.org
-- activity_status: active
-  build:
-    method: archive
-    path: archive
-    source_url: http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip
-  contact:
-    email: lschriml@som.umaryland.edu
-    github: lschriml
-    label: Lynn Schriml
-  description: A gazetteer constructed on ontological principles
-  homepage: http://environmentontology.github.io/gaz/
-  id: gaz
-  layout: ontology_detail
-  license:
-    label: CC0 1.0 Universal
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
-  mailing_list: https://groups.google.com/forum/#!forum/obo-gazetteer
-  ontology_purl: http://purl.obolibrary.org/obo/gaz.owl
-  products:
-  - id: gaz.owl
-    ontology_purl: http://purl.obolibrary.org/obo/gaz.owl
-  - id: gaz.obo
-    ontology_purl: http://purl.obolibrary.org/obo/gaz.obo
-  title: Gazetteer
-  tracker: https://github.com/EnvironmentOntology/gaz/issues
 - activity_status: active
   contact:
     email: rbca.jackson@gmail.com
@@ -2504,6 +2537,7 @@ ontologies:
   products:
   - id: gecko.owl
     ontology_purl: http://purl.obolibrary.org/obo/gecko.owl
+  repository: https://github.com/IHCC-cohorts/GECKO
   title: Genomics Cohorts Knowledge Ontology
   tracker: https://github.com/IHCC-cohorts/GECKO/issues
   usages:
@@ -2536,6 +2570,7 @@ ontologies:
   - homepage: http://genepio.github.io/genepio/
     id: genepio.owl
     ontology_purl: http://purl.obolibrary.org/obo/genepio.owl
+  repository: https://github.com/GenEpiO/genepio
   title: Genomic Epidemiology Ontology
   tracker: https://github.com/GenEpiO/genepio/issues/
 - activity_status: active
@@ -2562,6 +2597,7 @@ ontologies:
   - id: geno.owl
     ontology_purl: http://purl.obolibrary.org/obo/geno.owl
     title: GENO
+  repository: https://github.com/monarch-initiative/GENO-ontology
   title: Genotype Ontology
   tracker: https://github.com/monarch-initiative/GENO-ontology/issues
 - activity_status: active
@@ -2581,8 +2617,9 @@ ontologies:
   products:
   - id: geo.owl
     ontology_purl: http://purl.obolibrary.org/obo/geo.owl
+  repository: https://github.com/ufbmi/geographical-entity-ontology
   title: Geographical Entity Ontology
-  tracker: https://ontology.atlassian.net/browse/GEO#selectedTab=com.atlassian.jira.plugin.system.project%3Aissues-panel
+  tracker: https://github.com/ufbmi/geographical-entity-ontology/issues
 - activity_status: active
   browsers:
   - label: Structure Browser
@@ -2625,8 +2662,25 @@ ontologies:
       from OWL)
     id: gno.json
     ontology_purl: http://purl.obolibrary.org/obo/gno.json
+  repository: https://github.com/glygen-glycan-data/GNOme
   title: Glycan Naming and Subsumption Ontology (GNOme)
   tracker: https://github.com/glygen-glycan-data/GNOme/issues
+  usages:
+  - description: GlyGen - Computational and Informatics Resources for Glycoscience
+    examples:
+    - description: GNOme attributes and related glycans on glycan pages
+      url: https://www.glygen.org/glycan/G00028MO
+    user: https://www.glygen.org/
+  - description: PRO - Protein Ontology
+    examples:
+    - description: example of PRO use of GNO terms
+      url: http://purl.obolibrary.org/obo/PR_000059585
+    user: https://proconsortium.org/
+  - description: ChEBI - Chemical Entities of Biological Interest
+    examples:
+    - description: example of ChEBI use of GNO terms
+      url: http://purl.obolibrary.org/obo/CHEBI_167503
+    user: https://www.ebi.ac.uk/chebi/init.do
 - activity_status: active
   contact:
     email: danielle.welter@uni.lu
@@ -2653,6 +2707,7 @@ ontologies:
     id: hancestro_bfo.owl
     ontology_purl: http://purl.obolibrary.org/obo/hancestro_bfo.owl
     title: HANCESTRO BFO
+  repository: https://github.com/EBISPOT/ancestro
   title: Human Ancestry Ontology
   tracker: https://github.com/EBISPOT/ancestro/issues
   usages:
@@ -2706,6 +2761,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/hao.obo
   - id: hao/depictions.owl
     ontology_purl: http://purl.obolibrary.org/obo/hao/depictions.owl
+  repository: https://github.com/hymao/hao
   taxon:
     id: NCBITaxon:7399
     label: Hymenoptera
@@ -2734,6 +2790,7 @@ ontologies:
   products:
   - id: hom.owl
     ontology_purl: http://purl.obolibrary.org/obo/hom.owl
+  repository: https://github.com/BgeeDB/homology-ontology
   title: Homology Ontology
   tracker: https://github.com/BgeeDB/homology-ontology/issues
 - activity_status: active
@@ -2760,6 +2817,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/hsapdv.owl
   - id: hsapdv.obo
     ontology_purl: http://purl.obolibrary.org/obo/hsapdv.obo
+  repository: https://github.com/obophenotype/developmental-stage-ontologies
   title: Human Developmental Stages
   tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
 - activity_status: active
@@ -2791,6 +2849,7 @@ ontologies:
   - homepage: https://w3id.org/hso
     id: hso.owl
     ontology_purl: http://purl.obolibrary.org/obo/hso.owl
+  repository: https://github.com/SVA-SE/HSO
   title: Health Surveillance Ontology
   tracker: https://github.com/SVA-SE/HSO/issues/
 - activity_status: active
@@ -2811,6 +2870,7 @@ ontologies:
   - id: htn.owl
     ontology_purl: http://purl.obolibrary.org/obo/htn.owl
     title: HTN
+  repository: https://github.com/aellenhicks/htn_owl
   source_url: https://raw.githubusercontent.com/aellenhicks/htn_owl/master/htn.owl
   title: Hypertension Ontology
   tracker: https://github.com/aellenhicks/htn_owl/issues
@@ -2851,6 +2911,7 @@ ontologies:
     id: iao/d-acts.owl
     ontology_purl: http://purl.obolibrary.org/obo/iao/d-acts.owl
     title: ontology of document acts
+  repository: https://github.com/information-artifact-ontology/IAO
   title: Information Artifact Ontology
   tracker: https://github.com/information-artifact-ontology/IAO/issues
   usages:
@@ -2874,6 +2935,7 @@ ontologies:
   products:
   - id: iceo.owl
     ontology_purl: http://purl.obolibrary.org/obo/iceo.owl
+  repository: https://github.com/ontoice/ICEO
   title: Integrative and Conjugative Element Ontology
   tracker: https://github.com/ontoice/ICEO/issues
 - activity_status: active
@@ -2894,6 +2956,7 @@ ontologies:
   products:
   - id: ico.owl
     ontology_purl: http://purl.obolibrary.org/obo/ico.owl
+  repository: https://github.com/ICO-ontology/ICO
   title: Informed Consent Ontology
   tracker: https://github.com/ICO-ontology/ICO/issues
   usages:
@@ -2924,6 +2987,7 @@ ontologies:
   products:
   - id: ido.owl
     ontology_purl: http://purl.obolibrary.org/obo/ido.owl
+  repository: https://github.com/infectious-disease-ontology/infectious-disease-ontology
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
@@ -2945,6 +3009,7 @@ ontologies:
   products:
   - id: ino.owl
     ontology_purl: http://purl.obolibrary.org/obo/ino.owl
+  repository: https://github.com/INO-ontology/ino
   title: Interaction Network Ontology
   tracker: https://github.com/INO-ontology/ino/issues
 - activity_status: active
@@ -2973,6 +3038,7 @@ ontologies:
   - id: labo.owl
     ontology_purl: http://purl.obolibrary.org/obo/labo.owl
   releases: https://github.com/OpenLHS/LABO/releases/
+  repository: https://github.com/OpenLHS/LABO
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
@@ -3010,6 +3076,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/ma.owl
   - id: ma.obo
     ontology_purl: http://purl.obolibrary.org/obo/ma.obo
+  repository: https://github.com/obophenotype/mouse-anatomy-ontology
   taxon:
     id: NCBITaxon:10088
     label: Mus
@@ -3067,6 +3134,7 @@ ontologies:
   - id: maxo/maxo-base.json
     name: Medical Action Ontology additional release in OBOJSon format
     ontology_purl: http://purl.obolibrary.org/obo/maxo/maxo-base.json
+  repository: https://github.com/monarch-initiative/MAxO
   title: Medical Action Ontology
   tracker: https://github.com/monarch-initiative/MAxO/issues
 - activity_status: active
@@ -3110,6 +3178,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/mco.owl
   - id: mco.obo
     ontology_purl: http://purl.obolibrary.org/obo/mco.obo
+  repository: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
   title: Microbial Conditions Ontology
   tracker: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology/issues
 - activity_status: active
@@ -3134,6 +3203,7 @@ ontologies:
   products:
   - id: mf.owl
     ontology_purl: http://purl.obolibrary.org/obo/mf.owl
+  repository: https://github.com/jannahastings/mental-functioning-ontology
   title: Mental Functioning Ontology
   tracker: https://github.com/jannahastings/mental-functioning-ontology/issues
 - activity_status: active
@@ -3186,6 +3256,7 @@ ontologies:
   products:
   - id: mfoem.owl
     ontology_purl: http://purl.obolibrary.org/obo/mfoem.owl
+  repository: https://github.com/jannahastings/emotion-ontology
   title: Emotion Ontology
   tracker: https://github.com/jannahastings/emotion-ontology/issues
 - activity_status: active
@@ -3206,6 +3277,7 @@ ontologies:
   products:
   - id: mfomd.owl
     ontology_purl: http://purl.obolibrary.org/obo/mfomd.owl
+  repository: https://github.com/jannahastings/mental-functioning-ontology
   title: Mental Disease Ontology
   tracker: https://github.com/jannahastings/mental-functioning-ontology/issues
 - activity_status: active
@@ -3233,6 +3305,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/mi.owl
   - id: mi.obo
     ontology_purl: http://purl.obolibrary.org/obo/mi.obo
+  repository: https://github.com/HUPO-PSI/psi-mi-CV
   title: Molecular Interactions Controlled Vocabulary
   tracker: https://github.com/HUPO-PSI/psi-mi-CV/issues
 - activity_status: active
@@ -3275,6 +3348,7 @@ ontologies:
   products:
   - id: micro.owl
     ontology_purl: http://purl.obolibrary.org/obo/micro.owl
+  repository: https://github.com/carrineblank/MicrO
   title: Ontology of Prokaryotic Phenotypic and Metabolic Characters
   tracker: https://github.com/carrineblank/MicrO/issues
 - activity_status: active
@@ -3311,6 +3385,7 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24103152
     title: 'The clinical measurement, measurement method and experimental condition
       ontologies: expansion, improvements and new applications.'
+  repository: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology
   title: Measurement method ontology
   tracker: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology/issues
 - activity_status: active
@@ -3336,6 +3411,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/mmusdv.owl
   - id: mmusdv.obo
     ontology_purl: http://purl.obolibrary.org/obo/mmusdv.obo
+  repository: https://github.com/obophenotype/developmental-stage-ontologies
   title: Mouse Developmental Stages
   tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
 - activity_status: active
@@ -3370,6 +3446,7 @@ ontologies:
   - id: https://pubmed.ncbi.nlm.nih.gov/18688235/
     title: The PSI-MOD community standard for representation of protein modification
       data
+  repository: https://github.com/HUPO-PSI/psi-mod-CV
   title: Protein modification
   tracker: https://github.com/HUPO-PSI/psi-mod-CV/issues
 - activity_status: active
@@ -3379,7 +3456,7 @@ ontologies:
     url: https://monarchinitiative.org/disease/MONDO:0019609
   canonical: mondo.owl
   contact:
-    email: vasilevs@ohsu.edu
+    email: nicole@tislab.org
     github: nicolevasilevsky
     label: Nicole Vasilevsky
   depicted_by: https://raw.githubusercontent.com/monarch-initiative/mondo/master/docs/images/mondo_logo_black-stacked-small.png
@@ -3417,6 +3494,7 @@ ontologies:
     id: mondo.json
     ontology_purl: http://purl.obolibrary.org/obo/mondo.json
     title: json edition
+  repository: https://github.com/monarch-initiative/mondo
   taxon:
     id: NCBITaxon:33208
     label: Metazoa
@@ -3481,6 +3559,7 @@ ontologies:
   - id: mop.owl
     ontology_purl: http://purl.obolibrary.org/obo/mop.owl
     title: Molecular Process Ontology
+  repository: https://github.com/rsc-ontologies/rxno
   title: Molecular Process Ontology
   tracker: https://github.com/rsc-ontologies/rxno/issues
 - activity_status: active
@@ -3539,6 +3618,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/mp/mp-base.owl
     page: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/tag/current
     title: MP Base Module
+  repository: https://github.com/obophenotype/mammalian-phenotype-ontology
   taxon:
     id: NCBITaxon:40674
     label: Mammalia
@@ -3566,6 +3646,7 @@ ontologies:
   products:
   - id: mpath.owl
     ontology_purl: http://purl.obolibrary.org/obo/mpath.owl
+  repository: https://github.com/PaulNSchofield/mpath
   taxon:
     id: NCBITaxon:10088
     label: Mus
@@ -3590,6 +3671,7 @@ ontologies:
   products:
   - id: mpio.owl
     ontology_purl: http://purl.obolibrary.org/obo/mpio.owl
+  repository: https://github.com/MPIO-Developers/MPIO
   title: Minimum PDDI Information Ontology
   tracker: https://github.com/MPIO-Developers/MPIO/issues
 - activity_status: active
@@ -3611,6 +3693,7 @@ ontologies:
   products:
   - id: mro.owl
     ontology_purl: http://purl.obolibrary.org/obo/mro.owl
+  repository: https://github.com/IEDB/MRO
   title: MHC Restriction Ontology
   tracker: https://github.com/IEDB/MRO/issues
   usages:
@@ -3658,6 +3741,7 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/23482073
     title: The HUPO proteomics standards initiative- mass spectrometry controlled
       vocabulary.
+  repository: https://github.com/HUPO-PSI/psi-ms-CV
   title: Mass spectrometry ontology
   tracker: https://github.com/HUPO-PSI/psi-ms-CV/issues
 - activity_status: active
@@ -3685,6 +3769,7 @@ ontologies:
   products:
   - id: nbo.owl
     ontology_purl: http://purl.obolibrary.org/obo/nbo.owl
+  repository: https://github.com/obo-behavior/behavior-ontology
   title: Neuro Behavior Ontology
   tracker: https://github.com/obo-behavior/behavior-ontology/issues
 - activity_status: active
@@ -3735,6 +3820,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl
     page: https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md
     title: taxslim disjointness axioms
+  repository: https://github.com/obophenotype/ncbitaxon
   source: http://www.ncbi.nlm.nih.gov/taxonomy
   title: NCBI organismal classification
   tracker: https://github.com/obophenotype/ncbitaxon/issues
@@ -3781,6 +3867,7 @@ ontologies:
     id: ncit/neoplasm-core.owl
     ontology_purl: http://purl.obolibrary.org/obo/ncit/neoplasm-core.owl
     title: NCIt Plus Neoplasm Core
+  repository: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
   title: NCI Thesaurus OBO Edition
   tracker: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
 - activity_status: active
@@ -3806,6 +3893,7 @@ ontologies:
   - id: ncro/dev/ncro.owl
     ontology_purl: http://purl.obolibrary.org/obo/ncro/dev/ncro.owl
     title: NCRO development version
+  repository: https://github.com/OmniSearch/NCRO-Ontology-Files
   title: Non-Coding RNA Ontology
   tracker: https://github.com/OmniSearch/NCRO-Ontology-Files/issues
 - activity_status: active
@@ -3839,6 +3927,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/nomen.owl
     title: NOMEN
     type: owl:Ontology
+  repository: https://github.com/SpeciesFileGroup/nomen
   title: NOMEN - A nomenclatural ontology for biological names
   tracker: https://github.com/SpeciesFileGroup/nomen/issues
   type: owl:Ontology
@@ -3868,6 +3957,7 @@ ontologies:
   products:
   - id: oae.owl
     ontology_purl: http://purl.obolibrary.org/obo/oae.owl
+  repository: https://github.com/OAE-ontology/OAE
   title: Ontology of Adverse Events
   tracker: https://github.com/OAE-ontology/OAE/issues
 - activity_status: active
@@ -3921,6 +4011,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/oba.obo
   - id: oba/subsets/oba-basic.obo
     ontology_purl: http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo
+  repository: https://github.com/obophenotype/bio-attribute-ontology
   title: Ontology of Biological Attributes
   tracker: https://github.com/obophenotype/bio-attribute-ontology/issues
 - activity_status: active
@@ -3941,6 +4032,7 @@ ontologies:
   products:
   - id: obcs.owl
     ontology_purl: http://purl.obolibrary.org/obo/obcs.owl
+  repository: https://github.com/obcs/obcs
   title: Ontology of Biological and Clinical Statistics
   tracker: https://github.com/obcs/obcs/issues
 - activity_status: active
@@ -3961,6 +4053,7 @@ ontologies:
   products:
   - id: obib.owl
     ontology_purl: http://purl.obolibrary.org/obo/obib.owl
+  repository: https://github.com/biobanking/biobanking
   title: Ontology for Biobanking
   tracker: https://github.com/biobanking/biobanking/issues
   usages:
@@ -4016,6 +4109,7 @@ ontologies:
   products:
   - id: ogms.owl
     ontology_purl: http://purl.obolibrary.org/obo/ogms.owl
+  repository: https://github.com/OGMS/ogms
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
@@ -4038,6 +4132,7 @@ ontologies:
   products:
   - id: ogsf.owl
     ontology_purl: http://purl.obolibrary.org/obo/ogsf.owl
+  repository: https://github.com/linikujp/OGSF
   title: Ontology of Genetic Susceptibility Factor
   tracker: https://github.com/linikujp/OGSF/issues
 - activity_status: active
@@ -4086,6 +4181,7 @@ ontologies:
   products:
   - id: ohmi.owl
     ontology_purl: http://purl.obolibrary.org/obo/ohmi.owl
+  repository: https://github.com/ohmi-ontology/ohmi
   title: Ontology of Host-Microbiome Interactions
   tracker: https://github.com/ohmi-ontology/ohmi/issues
 - activity_status: active
@@ -4108,6 +4204,7 @@ ontologies:
   products:
   - id: ohpi.owl
     ontology_purl: http://purl.obolibrary.org/obo/ohpi.owl
+  repository: https://github.com/OHPI/ohpi
   title: Ontology of Host Pathogen Interactions
   tracker: https://github.com/OHPI/ohpi/issues
 - activity_status: active
@@ -4133,28 +4230,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/olatdv.obo
   - id: olatdv.owl
     ontology_purl: http://purl.obolibrary.org/obo/olatdv.owl
+  repository: https://github.com/obophenotype/developmental-stage-ontologies
   title: Medaka Developmental Stages
   tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
-- activity_status: active
-  contact:
-    email: mbrochhausen@gmail.com
-    label: Mathias Brochhausen
-  description: An ontological version of MIABIS (Minimum Information About BIobank
-    data Sharing)
-  domain: health
-  homepage: https://github.com/OMIABIS/omiabis-dev
-  id: omiabis
-  layout: ontology_detail
-  license:
-    label: CC-BY
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
-  ontology_purl: http://purl.obolibrary.org/obo/omiabis.owl
-  products:
-  - id: omiabis.owl
-    ontology_purl: http://purl.obolibrary.org/obo/omiabis.owl
-  title: Ontologized MIABIS
-  tracker: https://github.com/OMIABIS/omiabis-dev/issues
 - activity_status: active
   contact:
     email: huang@southalabama.edu
@@ -4174,6 +4252,7 @@ ontologies:
   products:
   - id: omit.owl
     ontology_purl: http://purl.obolibrary.org/obo/omit.owl
+  repository: https://github.com/OmniSearch/omit
   title: Ontology for MIRNA Target
   tracker: https://github.com/OmniSearch/omit/issues
 - activity_status: active
@@ -4196,6 +4275,7 @@ ontologies:
   products:
   - id: omo.owl
     ontology_purl: http://purl.obolibrary.org/obo/omo.owl
+  repository: https://github.com/information-artifact-ontology/ontology-metadata
   title: OBO Metadata Ontology
   tracker: https://github.com/information-artifact-ontology/ontology-metadata/issues
   usages:
@@ -4224,6 +4304,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/omp.owl
   - id: omp.obo
     ontology_purl: http://purl.obolibrary.org/obo/omp.obo
+  repository: https://github.com/microbialphenotypes/OMP-ontology
   title: Ontology of Microbial Phenotypes
   tracker: https://github.com/microbialphenotypes/OMP-ontology/issues
 - activity_status: active
@@ -4248,6 +4329,7 @@ ontologies:
   products:
   - id: omrse.owl
     ontology_purl: http://purl.obolibrary.org/obo/omrse.owl
+  repository: https://github.com/ufbmi/OMRSE
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
@@ -4278,6 +4360,7 @@ ontologies:
   products:
   - id: one.owl
     ontology_purl: http://purl.obolibrary.org/obo/one.owl
+  repository: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
   title: Ontology for Nutritional Epidemiology
   tracker: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies/issues
 - activity_status: active
@@ -4311,6 +4394,7 @@ ontologies:
   - id: ons.owl
     ontology_purl: http://purl.obolibrary.org/obo/ons.owl
     title: ONS latest release
+  repository: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
   title: Ontology for Nutritional Studies
   tracker: https://github.com/enpadasi/Ontology-for-Nutritional-Studies/issues
 - activity_status: active
@@ -4339,6 +4423,7 @@ ontologies:
   products:
   - id: ontoneo.owl
     ontology_purl: http://purl.obolibrary.org/obo/ontoneo.owl
+  repository: https://github.com/ontoneo-project/Ontoneo
   title: Obstetric and Neonatal Ontology
   tracker: https://github.com/ontoneo-project/Ontoneo/issues
 - activity_status: active
@@ -4359,6 +4444,7 @@ ontologies:
   products:
   - id: oostt.owl
     ontology_purl: http://purl.obolibrary.org/obo/oostt.owl
+  repository: https://github.com/OOSTT/OOSTT
   title: Ontology of Organizational Structures of Trauma centers and Trauma systems
   tracker: https://github.com/OOSTT/OOSTT/issues
 - activity_status: active
@@ -4378,6 +4464,7 @@ ontologies:
   products:
   - id: opl.owl
     ontology_purl: http://purl.obolibrary.org/obo/opl.owl
+  repository: https://github.com/OPL-ontology/OPL
   title: Ontology for Parasite LifeCycle
   tracker: https://github.com/OPL-ontology/OPL/issues
   usages:
@@ -4408,6 +4495,7 @@ ontologies:
   products:
   - id: opmi.owl
     ontology_purl: http://purl.obolibrary.org/obo/opmi.owl
+  repository: https://github.com/OPMI/opmi
   title: Ontology of Precision Medicine and Investigation
   tracker: https://github.com/OPMI/opmi/issues
 - activity_status: active
@@ -4428,6 +4516,7 @@ ontologies:
   products:
   - id: ornaseq.owl
     ontology_purl: http://purl.obolibrary.org/obo/ornaseq.owl
+  repository: https://github.com/safisher/ornaseq
   title: Ontology of RNA Sequencing
   tracker: https://github.com/safisher/ornaseq/issues
 - activity_status: active
@@ -4446,6 +4535,7 @@ ontologies:
   products:
   - id: ovae.owl
     ontology_purl: http://purl.obolibrary.org/obo/ovae.owl
+  repository: https://github.com/OVAE-Ontology/ovae
   title: Ontology of Vaccine Adverse Events
   tracker: https://github.com/OVAE-Ontology/ovae/issues
 - activity_status: active
@@ -4483,6 +4573,7 @@ ontologies:
   products:
   - id: pco.owl
     ontology_purl: http://purl.obolibrary.org/obo/pco.owl
+  repository: https://github.com/PopulationAndCommunityOntology/pco
   title: Population and Community Ontology
   tracker: https://github.com/PopulationAndCommunityOntology/pco/issues
 - activity_status: active
@@ -4506,6 +4597,7 @@ ontologies:
   products:
   - id: pdro.owl
     ontology_purl: http://purl.obolibrary.org/obo/pdro.owl
+  repository: https://github.com/OpenLHS/PDRO
   title: The Prescription of Drugs Ontology
   tracker: https://github.com/OpenLHS/PDRO/issues
 - activity_status: active
@@ -4531,6 +4623,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/pdumdv.owl
   - id: pdumdv.obo
     ontology_purl: http://purl.obolibrary.org/obo/pdumdv.obo
+  repository: https://github.com/obophenotype/developmental-stage-ontologies
   title: Platynereis Developmental Stages
   tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
 - activity_status: active
@@ -4558,6 +4651,7 @@ ontologies:
   - id: https://doi.org/10.1093/nar/gkx1152
     title: 'The Planteome database: an integrated resource for reference ontologies,
       plant genomics and phenomics.'
+  repository: https://github.com/Planteome/plant-experimental-conditions-ontology
   title: Plant Experimental Conditions Ontology
   tracker: https://github.com/Planteome/plant-experimental-conditions-ontology/issues
 - activity_status: active
@@ -4589,6 +4683,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/phipo.owl
   - id: phipo.obo
     ontology_purl: http://purl.obolibrary.org/obo/phipo.obo
+  repository: https://github.com/PHI-base/phipo
   title: Pathogen Host Interaction Phenotype Ontology
   tracker: https://github.com/PHI-base/phipo/issues
 - activity_status: active
@@ -4621,6 +4716,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/plana.owl
   - id: plana.obo
     ontology_purl: http://purl.obolibrary.org/obo/plana.obo
+  repository: https://github.com/obophenotype/planaria-ontology
   title: planaria-ontology
   tracker: https://github.com/obophenotype/planaria-ontology/issues
 - activity_status: active
@@ -4655,6 +4751,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/planp.owl
   - id: planp.obo
     ontology_purl: http://purl.obolibrary.org/obo/planp.obo
+  repository: https://github.com/obophenotype/planarian-phenotype-ontology
   title: Planarian Phenotype Ontology
   tracker: https://github.com/obophenotype/planarian-phenotype-ontology/issues
 - activity_status: active
@@ -4692,6 +4789,7 @@ ontologies:
   - id: https://doi.org/10.1186/2041-1480-5-39
     title: 'The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy
       ontology'
+  repository: https://github.com/obophenotype/porifera-ontology
   taxon:
     id: NCBITaxon:6040
     label: Porifera
@@ -4716,6 +4814,7 @@ ontologies:
   products:
   - id: ppo.owl
     ontology_purl: http://purl.obolibrary.org/obo/ppo.owl
+  repository: https://github.com/PlantPhenoOntology/PPO
   taxon:
     id: NCBITaxon:33090
     label: Viridiplantae
@@ -4747,6 +4846,7 @@ ontologies:
   products:
   - id: psdo.owl
     ontology_purl: http://purl.obolibrary.org/obo/psdo.owl
+  repository: https://github.com/Display-Lab/psdo
   title: Performance Summary Display Ontology
   tracker: https://github.com/Display-Lab/psdo/issues
 - activity_status: active
@@ -4777,6 +4877,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/pso.owl
   - id: pso.obo
     ontology_purl: http://purl.obolibrary.org/obo/pso.obo
+  repository: https://github.com/Planteome/plant-stress-ontology
   title: Plant Stress Ontology
   tracker: https://github.com/Planteome/plant-stress-ontology/issues
 - activity_status: active
@@ -4811,6 +4912,7 @@ ontologies:
     title: The Rat Genome Database pathway portal.
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24499703
     title: The pathway ontology - updates and applications.
+  repository: https://github.com/rat-genome-database/PW-Pathway-Ontology
   title: Pathway ontology
   tracker: https://github.com/rat-genome-database/PW-Pathway-Ontology/issues
 - activity_status: active
@@ -4863,6 +4965,7 @@ ontologies:
   - id: rbo/rbo-base.json
     name: Radiation Biology Ontology additional release in OBOJSon format
     ontology_purl: http://purl.obolibrary.org/obo/rbo/rbo-base.json
+  repository: https://github.com/Radiobiology-Informatics-Consortium/RBO
   title: Radiation Biology Ontology
   tracker: https://github.com/Radiobiology-Informatics-Consortium/RBO/issues
 - aberowl_id: relo
@@ -4926,6 +5029,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/ro/subsets/ro-neuro.owl
     page: http://bioinformatics.oxfordjournals.org/content/28/9/1262.long
     title: Neuroscience subset
+  repository: https://github.com/oborel/obo-relations
   title: Relation Ontology
   tracker: https://github.com/oborel/obo-relations/issues
   usages:
@@ -4970,6 +5074,7 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24267899
     title: 'Rat Strain Ontology: structured controlled vocabulary designed to facilitate
       access to strain data at RGD.'
+  repository: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology
   taxon:
     id: NCBITaxon:10114
     label: Rattus
@@ -4997,6 +5102,7 @@ ontologies:
   - id: rxno.owl
     ontology_purl: http://purl.obolibrary.org/obo/rxno.owl
     title: Name Reaction Ontology
+  repository: https://github.com/rsc-ontologies/rxno
   title: Name Reaction Ontology
   tracker: https://github.com/rsc-ontologies/rxno/issues
 - activity_status: active
@@ -5022,6 +5128,7 @@ ontologies:
   - id: sepio.owl
     ontology_purl: http://purl.obolibrary.org/obo/sepio.owl
     title: SEPIO
+  repository: https://github.com/monarch-initiative/SEPIO-ontology
   title: Scientific Evidence and Provenance Information Ontology
   tracker: https://github.com/monarch-initiative/SEPIO-ontology/issues
 - activity_status: active
@@ -5056,6 +5163,7 @@ ontologies:
     title: 'The Sequence Ontology: a tool for the unification of genome annotations.'
   - id: http://www.ncbi.nlm.nih.gov/pubmed/20226267
     title: Evolution of the Sequence Ontology terms and relationships.
+  repository: https://github.com/The-Sequence-Ontology/SO-Ontologies
   title: Sequence types and features ontology
   tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
 - activity_status: active
@@ -5081,6 +5189,7 @@ ontologies:
   products:
   - id: spd.owl
     ontology_purl: http://purl.obolibrary.org/obo/spd.owl
+  repository: https://github.com/obophenotype/spider-ontology
   taxon:
     id: NCBITaxon:6893
     label: spiders
@@ -5111,6 +5220,7 @@ ontologies:
   products:
   - id: stato.owl
     ontology_purl: http://purl.obolibrary.org/obo/stato.owl
+  repository: https://github.com/ISA-tools/stato
   title: The Statistical Methods Ontology
   tracker: https://github.com/ISA-tools/stato/issues
 - activity_status: active
@@ -5136,6 +5246,7 @@ ontologies:
   products:
   - id: swo.owl
     ontology_purl: http://purl.obolibrary.org/obo/swo.owl
+  repository: https://github.com/allysonlister/swo
   title: Software ontology
   tracker: https://github.com/allysonlister/swo/issues
 - activity_status: active
@@ -5163,6 +5274,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/symp.owl
   - id: symp.obo
     ontology_purl: http://purl.obolibrary.org/obo/symp.obo
+  repository: https://github.com/DiseaseOntology/SymptomOntology
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
@@ -5200,6 +5312,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/taxrank.owl
   - id: taxrank.obo
     ontology_purl: http://purl.obolibrary.org/obo/taxrank.obo
+  repository: https://github.com/phenoscape/taxrank
   title: Taxonomic rank vocabulary
   tracker: https://github.com/phenoscape/taxrank/issues
 - activity_status: active
@@ -5216,7 +5329,7 @@ ontologies:
   contact:
     email: jaiswalp@science.oregonstate.edu
     label: Pankaj Jaiswal
-  description: A controlled vocabulary of describe phenotypic traits in plants.
+  description: A controlled vocabulary to describe phenotypic traits in plants.
   domain: phenotype
   homepage: http://browser.planteome.org/amigo
   id: to
@@ -5239,6 +5352,7 @@ ontologies:
   - id: https://doi.org/10.1093/nar/gkx1152
     title: 'The Planteome database: an integrated resource for reference ontologies,
       plant genomics and phenomics.'
+  repository: https://github.com/Planteome/plant-trait-ontology
   taxon:
     id: NCBITaxon:33090
     label: Viridiplantae
@@ -5281,6 +5395,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/trans.owl
   - id: trans.obo
     ontology_purl: http://purl.obolibrary.org/obo/trans.obo
+  repository: https://github.com/DiseaseOntology/PathogenTransmissionOntology
   title: Pathogen Transmission Ontology
   tracker: https://github.com/DiseaseOntology/PathogenTransmissionOntology/issues
   usages:
@@ -5308,6 +5423,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/tto.obo
   - id: tto.owl
     ontology_purl: http://purl.obolibrary.org/obo/tto.owl
+  repository: https://github.com/phenoscape/teleost-taxonomy-ontology
   taxon:
     id: NCBITaxon:32443
     label: Teleostei
@@ -5548,6 +5664,7 @@ ontologies:
   products:
   - id: uo.owl
     ontology_purl: http://purl.obolibrary.org/obo/uo.owl
+  repository: https://github.com/bio-ontology-research-group/unit-ontology
   title: Units of measurement ontology
   tracker: https://github.com/bio-ontology-research-group/unit-ontology/issues
 - activity_status: active
@@ -5563,9 +5680,6 @@ ontologies:
     unified cross-species phenotype ontology.
   homepage: https://github.com/obophenotype/upheno
   id: upheno
-  jobs:
-  - id: https://travis-ci.org/obophenotype/upheno
-    type: travis-ci
   layout: ontology_detail
   license:
     label: CC0
@@ -5578,6 +5692,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/upheno.owl
   - id: upheno/mp-hp-view.owl
     ontology_purl: http://purl.obolibrary.org/obo/upheno/mp-hp-view.owl
+  repository: https://github.com/obophenotype/upheno
   title: Unified phenotype ontology (uPheno)
   tracker: https://github.com/obophenotype/upheno/issues
   usages:
@@ -5613,6 +5728,7 @@ ontologies:
   products:
   - id: vo.owl
     ontology_purl: http://purl.obolibrary.org/obo/vo.owl
+  repository: https://github.com/vaccineontology/VO
   title: Vaccine Ontology
   tracker: https://github.com/vaccineontology/VO/issues
 - activity_status: active
@@ -5635,6 +5751,7 @@ ontologies:
   products:
   - id: vt.owl
     ontology_purl: http://purl.obolibrary.org/obo/vt.owl
+  repository: https://github.com/AnimalGenome/vertebrate-trait-ontology
   title: Vertebrate trait ontology
   tracker: https://github.com/AnimalGenome/vertebrate-trait-ontology/issues
 - activity_status: active
@@ -5658,6 +5775,7 @@ ontologies:
   redirects:
   - match: ''
     url: http://vertebrate-taxonomy-ontology.s3-website-us-west-2.amazonaws.com/releases/
+  repository: https://github.com/phenoscape/vertebrate-taxonomy-ontology
   title: Vertebrate Taxonomy Ontology
   tracker: https://github.com/phenoscape/vertebrate-taxonomy-ontology/issues
   usages:
@@ -5691,6 +5809,7 @@ ontologies:
   publications:
   - id: https://pubmed.ncbi.nlm.nih.gov/18629098/
     title: Building a cell and anatomy ontology of Caenorhabditis elegans
+  repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
   taxon:
     id: NCBITaxon:6237
     label: Caenorhabditis
@@ -5735,6 +5854,7 @@ ontologies:
   publications:
   - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
     title: 'WormBase: a modern Model Organism Information Resource'
+  repository: https://github.com/obophenotype/c-elegans-development-ontology
   taxon:
     id: NCBITaxon:6237
     label: Caenorhabditis
@@ -5782,6 +5902,7 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995
     title: 'Worm Phenotype Ontology: integrating phenotype data within and beyond
       the C. elegans community.'
+  repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
   taxon:
     id: NCBITaxon:6237
     label: Caenorhabditis
@@ -5843,6 +5964,7 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24103152
     title: 'The clinical measurement, measurement method and experimental condition
       ontologies: expansion, improvements and new applications.'
+  repository: https://github.com/rat-genome-database/XCO-experimental-condition-ontology
   title: Experimental condition ontology
   tracker: https://github.com/rat-genome-database/XCO-experimental-condition-ontology/issues
 - activity_status: active
@@ -5871,6 +5993,7 @@ ontologies:
   products:
   - id: xlmod.obo
     ontology_purl: http://purl.obolibrary.org/obo/xlmod.obo
+  repository: https://github.com/HUPO-PSI/mzIdentML
   title: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
   tracker: https://github.com/HUPO-PSI/mzIdentML/issues
 - activity_status: active
@@ -5910,6 +6033,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/xpo.owl
   - id: xpo.obo
     ontology_purl: http://purl.obolibrary.org/obo/xpo.obo
+  repository: https://github.com/obophenotype/xenopus-phenotype-ontology
   taxon:
     id: NCBITaxon:8353
     label: Xenopus
@@ -5940,6 +6064,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/zeco.owl
   - id: zeco.json
     ontology_purl: http://purl.obolibrary.org/obo/zeco.json
+  repository: https://github.com/ybradford/zebrafish-experimental-conditions-ontology
   taxon:
     id: NCBITaxon:7954
     label: Danio
@@ -5970,6 +6095,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/zfs.owl
   - id: zfs.obo
     ontology_purl: http://purl.obolibrary.org/obo/zfs.obo
+  repository: https://github.com/cerivs/zebrafish-anatomical-ontology
   taxon:
     id: NCBITaxon:7954
     label: Danio
@@ -6010,6 +6136,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/zp.owl
   - id: zp.obo
     ontology_purl: http://purl.obolibrary.org/obo/zp.obo
+  repository: https://github.com/obophenotype/zebrafish-phenotype-ontology
   title: Zebrafish Phenotype Ontology
   tracker: https://github.com/obophenotype/zebrafish-phenotype-ontology/issues
   usages:
@@ -6049,6 +6176,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/fobi.owl
     title: FOBI is an ontology to represent food intake data and associate it with
       metabolomic data
+  repository: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
   title: FOBI
   tracker: https://github.com/pcastellanoescuder/FoodBiomarkerOntology/issues
 - activity_status: active
@@ -6078,6 +6206,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/gsso.obo
   - id: gsso.json
     ontology_purl: http://purl.obolibrary.org/obo/gsso.json
+  repository: https://github.com/Superraptor/GSSO
   title: Gender, Sex, and Sexual Orientation (GSSO) ontology
   tracker: https://github.com/Superraptor/GSSO/issues
 - activity_status: active
@@ -6129,6 +6258,7 @@ ontologies:
       through phenotype data.'
   - id: http://www.ncbi.nlm.nih.gov/pubmed/30476213
     title: Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources.
+  repository: https://github.com/obophenotype/human-phenotype-ontology
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
@@ -6145,12 +6275,11 @@ ontologies:
 - activity_status: active
   build:
     method: owl2obo
-    source_url: http://svn.code.sf.net/p/kisao/code/tags/kisao-owl-latest/kisao.owl
+    source_url: https://raw.githubusercontent.com/SED-ML/KiSAO/deploy/kisao.owl
   contact:
-    email: biomodels-net-support@lists.sf.net
-    label: The Biomodels.net team
-  description: A classification of algorithms available for the simulation of models
-    in biology.
+    email: sed-ml-editors@googlegroups.com
+    label: SED-ML Editors
+  description: A classification of algorithms for simulating biology and their outputs
   domain: algorithms
   homepage: http://co.mbine.org/standards/kisao
   id: kisao
@@ -6162,8 +6291,9 @@ ontologies:
   products:
   - id: kisao.owl
     ontology_purl: http://purl.obolibrary.org/obo/kisao.owl
+  repository: https://github.com/SED-ML/KiSAO
   title: Kinetic Simulation Algorithm Ontology
-  tracker: https://sourceforge.net/p/kisao/feature-requests/
+  tracker: https://github.com/SED-ML/KiSAO/issues
 - activity_status: active
   build:
     method: owl2obo
@@ -6264,6 +6394,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/scdo.owl
   - id: scdo.obo
     ontology_purl: http://purl.obolibrary.org/obo/scdo.obo
+  repository: https://github.com/scdodev/scdo-ontology
   title: Sickle Cell Disease Ontology
   tracker: https://github.com/scdodev/scdo-ontology/issues
 - activity_status: active
@@ -6293,6 +6424,7 @@ ontologies:
   products:
   - id: txpo.owl
     ontology_purl: http://purl.obolibrary.org/obo/txpo.owl
+  repository: https://github.com/txpo-ontology/TXPO
   title: Toxic Process Ontology
   tracker: https://github.com/txpo-ontology/TXPO/issues
 - activity_status: orphaned
@@ -6318,6 +6450,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/sibo.owl
   - id: sibo.obo
     ontology_purl: http://purl.obolibrary.org/obo/sibo.obo
+  repository: https://github.com/obophenotype/sibo
   title: Social Insect Behavior Ontology
   tracker: https://github.com/obophenotype/sibo/issues
 - activity_status: orphaned
@@ -6356,6 +6489,8 @@ ontologies:
   products:
   - id: vario.owl
     ontology_purl: http://purl.obolibrary.org/obo/vario.owl
+  - id: vario.obo
+    ontology_purl: http://purl.obolibrary.org/obo/vario.obo
   title: Variation Ontology
 - activity_status: orphaned
   description: An ontology that formalizes the genomic element by defining an upper
@@ -6413,6 +6548,7 @@ ontologies:
   - id: ceph.obo
     ontology_purl: http://purl.obolibrary.org/obo/ceph.obo
     title: oboformat edition
+  repository: https://github.com/obophenotype/cephalopod-ontology
   taxon:
     id: NCBITaxon:6605
     label: Cephalopod
@@ -6451,11 +6587,39 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22973865
     title: A new ontology (structured hierarchy) of human developmental anatomy for
       the first 7 weeks (Carnegie stages 1-20).
+  repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
   title: Human developmental anatomy, abstract
   tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
+- activity_status: inactive
+  build:
+    method: archive
+    path: archive
+    source_url: http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip
+  contact:
+    email: lschriml@som.umaryland.edu
+    github: lschriml
+    label: Lynn Schriml
+  description: A gazetteer constructed on ontological principles
+  homepage: http://environmentontology.github.io/gaz/
+  id: gaz
+  layout: ontology_detail
+  license:
+    label: CC0 1.0 Universal
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  mailing_list: https://groups.google.com/forum/#!forum/obo-gazetteer
+  ontology_purl: http://purl.obolibrary.org/obo/gaz.owl
+  products:
+  - id: gaz.owl
+    ontology_purl: http://purl.obolibrary.org/obo/gaz.owl
+  - id: gaz.obo
+    ontology_purl: http://purl.obolibrary.org/obo/gaz.obo
+  repository: https://github.com/EnvironmentOntology/gaz
+  title: Gazetteer
+  tracker: https://github.com/EnvironmentOntology/gaz/issues
 - activity_status: inactive
   browsers:
   - label: RNAO
@@ -6484,6 +6648,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/rnao.owl
   - id: rnao.obo
     ontology_purl: http://purl.obolibrary.org/obo/rnao.obo
+  repository: https://github.com/BGSU-RNA/rnao
   title: RNA ontology
   tracker: https://github.com/BGSU-RNA/rnao/issues
 - activity_status: inactive
@@ -6520,16 +6685,9 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22102589
     title: 'UniPathway: a resource for the exploration and annotation of metabolic
       pathways'
+  repository: https://github.com/geneontology/unipathway
   title: Unipathway
   tracker: https://github.com/geneontology/unipathway/issues
-- activity_status: inactive
-  contact:
-    email: engelsta@ohsu.edu
-    label: Mark Engelstad
-  homepage: https://code.google.com/p/craniomaxillofacial-ontology/
-  id: cmf
-  layout: ontology_detail
-  title: CranioMaxilloFacial ontology
 - activity_status: inactive
   build:
     method: owl2obo
@@ -6658,6 +6816,7 @@ ontologies:
   products:
   - id: bcgo.owl
     ontology_purl: http://purl.obolibrary.org/obo/bcgo.owl
+  repository: https://github.com/obi-bcgo/bcgo
   title: Beta Cell Genomics Ontology
   tracker: https://github.com/obi-bcgo/bcgo/issues
 - activity_status: inactive
@@ -6681,6 +6840,7 @@ ontologies:
   - id: http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119
     title: "DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug\u2013Drug Interactions\
       \ and Their Mechanisms."
+  repository: https://github.com/labda/DINTO
   title: The Drug-Drug Interactions Ontology
   tracker: https://github.com/labda/DINTO/issues
 - activity_status: inactive
@@ -6711,6 +6871,7 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22847540
     title: Ontologies as integrative tools for plant science.
   replaced_by: peco
+  repository: https://github.com/Planteome/plant-environment-ontology
   title: Plant Environment Ontology
   tracker: https://github.com/Planteome/plant-environment-ontology/issues
   usages:
@@ -6725,36 +6886,26 @@ ontologies:
       url: http://archive.gramene.org/db/ontology/search?id=EO:0007174
     user: http://gramene.org/
 - activity_status: inactive
-  build:
-    method: obo2owl
-    source_url: http://purl.obolibrary.org/obo/tao.obo
   contact:
-    email: wasila.dahdul@usd.edu
-    label: Wasila Dahdul
-  description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but
-    intended to cover terms relevant to other taxa
-  domain: anatomy
-  homepage: http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology
-  id: tao
+    email: mbrochhausen@gmail.com
+    label: Mathias Brochhausen
+  description: An ontological version of MIABIS (Minimum Information About BIobank
+    data Sharing)
+  domain: health
+  homepage: https://github.com/OMIABIS/omiabis-dev
+  id: omiabis
   is_obsolete: true
   layout: ontology_detail
   license:
-    label: CC-0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: http://creativecommons.org/publicdomain/zero/1.0/
+    label: CC-BY
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
   products:
-  - id: tao.owl
-    ontology_purl: http://purl.obolibrary.org/obo/tao.owl
-  publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/20547776
-    title: 'The teleost anatomy ontology: anatomical representation for the genomics
-      age'
-  replaced_by: uberon
-  taxon:
-    id: NCBITaxon:32443
-    label: Teleostei
-  title: Teleost Anatomy Ontology
-  tracker: https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3ATAO
+  - id: omiabis.owl
+    ontology_purl: http://purl.obolibrary.org/obo/omiabis.owl
+  repository: https://github.com/OMIABIS/omiabis-dev
+  title: Ontologized MIABIS
+  tracker: https://github.com/OMIABIS/omiabis-dev/issues
 - activity_status: inactive
   contact:
     email: david.c.blackburn@gmail.com
@@ -6802,8 +6953,8 @@ ontologies:
   title: Adverse Event Reporting Ontology
 - activity_status: inactive
   contact:
-    email: David Blackburn
-    label: david.c.blackburn@gmail.com
+    email: david.c.blackburn@gmail.com
+    label: David Blackburn
   homepage: http://www.amphibanat.org
   id: ato
   is_obsolete: true
@@ -6835,8 +6986,8 @@ ontologies:
   title: Bilateria anatomy
 - activity_status: inactive
   contact:
-    email: Vivian Lee
-    label: vlee@ebi.ac.uk
+    email: vlee@ebi.ac.uk
+    label: Vivian Lee
   homepage: http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html
   id: bootstrep
   is_obsolete: true
@@ -6845,8 +6996,17 @@ ontologies:
   title: Gene Regulation Ontology
 - activity_status: inactive
   contact:
-    email: Lindsay Cowell
-    label: Lindsay.Cowell@utsouthwestern.edu
+    email: engelsta@ohsu.edu
+    label: Mark Engelstad
+  homepage: https://code.google.com/p/craniomaxillofacial-ontology/
+  id: cmf
+  is_obsolete: true
+  layout: ontology_detail
+  title: CranioMaxilloFacial ontology
+- activity_status: inactive
+  contact:
+    email: Lindsay.Cowell@utsouthwestern.edu
+    label: Lindsay Cowell
   homepage: http://www.dukeontologygroup.org/Projects.html
   id: dc_cl
   is_obsolete: true
@@ -7291,6 +7451,36 @@ ontologies:
 - activity_status: inactive
   build:
     method: obo2owl
+    source_url: http://purl.obolibrary.org/obo/tao.obo
+  contact:
+    email: wasila.dahdul@usd.edu
+    label: Wasila Dahdul
+  description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but
+    intended to cover terms relevant to other taxa
+  domain: anatomy
+  homepage: http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology
+  id: tao
+  is_obsolete: true
+  layout: ontology_detail
+  license:
+    label: CC-0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: http://creativecommons.org/publicdomain/zero/1.0/
+  products:
+  - id: tao.owl
+    ontology_purl: http://purl.obolibrary.org/obo/tao.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/20547776
+    title: 'The teleost anatomy ontology: anatomical representation for the genomics
+      age'
+  replaced_by: uberon
+  taxon:
+    id: NCBITaxon:32443
+    label: Teleostei
+  title: Teleost Anatomy Ontology
+- activity_status: inactive
+  build:
+    method: obo2owl
     source_url: http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/tags/vocab-releases/VSAO/vsao.obo
   contact:
     email: wasila.dahdul@usd.edu
@@ -7310,7 +7500,6 @@ ontologies:
     id: NCBITaxon:7742
     label: Vertebrata
   title: Vertebrate Skeletal Anatomy Ontology-
-  tracker: https://github.com/obophenotype/uberon/issues?q=is%3Aissue+label%3AVSAO
 - activity_status: inactive
   contact:
     email: cherry@genome.stanford.edu

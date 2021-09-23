@@ -18,4 +18,5 @@ build:
   source_url: https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl
   method: owl2obo
 activity_status: active
+repository: https://github.com/allysonlister/swo
 ---

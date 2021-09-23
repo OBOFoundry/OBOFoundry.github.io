@@ -21,6 +21,7 @@ products:
   - id: hsapdv.owl
   - id: hsapdv.obo
 activity_status: active
+repository: https://github.com/obophenotype/developmental-stage-ontologies
 ---
 
 <img alt="HumanEmbryogenesis" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/HumanEmbryogenesis.svg/500px-HumanEmbryogenesis.svg.png"/>

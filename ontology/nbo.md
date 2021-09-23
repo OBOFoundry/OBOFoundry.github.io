@@ -23,4 +23,5 @@ build:
   method: owl2obo
 tracker: https://github.com/obo-behavior/behavior-ontology/issues
 activity_status: active
+repository: https://github.com/obo-behavior/behavior-ontology
 ---

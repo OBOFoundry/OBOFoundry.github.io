@@ -28,6 +28,7 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY
 activity_status: active
+repository: https://github.com/insect-morphology/aism
 ---
 
 The AISM contains terms used in insect biodiversity research for describing structures of the exoskeleton and the skeletomuscular system. It aims to serve as the basic backbone of generalized terms to be expanded with order-specific terminology.

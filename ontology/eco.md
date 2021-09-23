@@ -48,6 +48,7 @@ usages:
       - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
         title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species"
 activity_status: active
+repository: https://github.com/evidenceontology/evidenceontology
 ---
 
 <img src="https://avatars1.githubusercontent.com/u/12802432" alt="ECO logo"/>

@@ -43,6 +43,22 @@ browsers:
   - label: Monarch
     title: Monarch Phenotype Page
     url: http://monarchinitiative.org/phenotype/MP:0000001
+usages:
+  - user: http://www.informatics.jax.org/vocab/mp_ontology
+    description: MGI annotates phenotypes of mouse models using the MP
+    examples:
+      - url: http://www.informatics.jax.org/vocab/mp_ontology/MP:0008762
+        description: "Term browser page for embryonic lethality showing information about the term including definition, placement in the MP hierarchy, and link to mouse models annotated to this term or any of its decendants"
+  - user: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MP:0000001
+    description: RGD annotates phenotypes associated with rat genes and alleles using the MP
+    examples:
+      - url: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MP:0008762
+        description: "Term browser page for embryonic lethality showing information about the term including definition, placement in the MP hierarchy, and link to annotations to this term or any of its decendants"
+  - user: https://www.mousephenotype.org/
+    description: "IMPC annotates abnormal phenotypes of mice carrying null alleles found following the application of a standardised set of physiological tests"
+    examples:
+      - url: https://www.mousephenotype.org/data/phenotypes/MP:0013522
+        description: "All IMPC alleles that have been annotated to the MP term 'decreased memory-marker CD4-positive NK T cell number'."
 jobs:
   - id: http://build.berkeleybop.org/job/build-mp-edit
     type: DryRunBuild
@@ -52,6 +68,7 @@ taxon:
 tracker: https://github.com/obophenotype/mammalian-phenotype-ontology/issues
 mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
 activity_status: active
+repository: https://github.com/obophenotype/mammalian-phenotype-ontology
 ---
 
 The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data.
