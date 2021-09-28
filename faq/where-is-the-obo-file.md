@@ -1,6 +1,6 @@
 ---
 layout: faq
-title: Where is the OBO file for my ontology?
+title: Why is there no OBO-format file listed for my ontology?
 ---
 
 This registry makes a distinction between an *ontology* and the
