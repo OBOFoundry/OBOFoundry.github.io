@@ -19,14 +19,17 @@ The ontology has textual definitions for the majority of its classes and for top
 Purpose
 -------
 
-A textual definition provides a human-readable understanding about what is a member of the associated class.
+A textual definition provides a human-readable understanding about what is a member of the associated class. Textual definitions are, optimally, in concordance with associated machine-readable logical definitions (the latter of which are OPTIONAL).
 
 Recommendations and Requirements
 --------------
 
 Textual definitions MUST be unique within an ontology (i.e. no two terms should share a definition). Textual definitions SHOULD follow Aristotelian form (e.g. “a B that Cs” where B is the parent and C is the differentia), where this is practical.
 
-For terms lacking textual definitions, there should be evidence of implementation of a strategy to provide definitions for all remaining undefined terms. In lieu of textual definitions, there can be elucidations when the term can not be rigorously defined.
+For terms lacking textual definitions, there should be evidence of implementation of a strategy to provide definitions for all remaining undefined terms. In lieu of textual definitions, there can be elucidations when the term can not be rigorously defined. Note that textual definitions can be programmatically generated from logical definitions, if available (see [http://oro.open.ac.uk/21501/1/](http://oro.open.ac.uk/21501/1/)).
+
+Textual definitions should agree with logical definitions and vice versa. This is important because, for example, an ambiguous textual definition could 
+lead to annotations that don’t match a more restricted logical def, causing misclassification. Note that it’s permissible to not to have a logical definition if the class is fuzzy or the axioms/relations can’t be composed equivalence axioms.
 
 Terms often benefit from examples of usage, as well as editor notes about edge cases and the history of the term, but these should be included as separate annotations and not in the definition.
 
@@ -34,8 +37,6 @@ Instances, such as organizations or geographical locations, can benefit from def
 
 Implementation
 --------------
-
-Logical definitions should agree with textual definitions. In fact, logical definitions can be programmatically used to generate textual definitions (see [http://oro.open.ac.uk/21501/1/](http://oro.open.ac.uk/21501/1/))
 
 Textual definitions should be identified using the annotation property: ‘definition’ [http://purl.obolibrary.org/obo/IAO_0000115](http://purl.obolibrary.org/obo/IAO_0000115). The source of the definition should be provided using the annotation property ‘definition source’ [http://purl.obolibrary.org/obo/IAO_0000119](http://purl.obolibrary.org/obo/IAO_0000119), or as an axiom annotation on the definition assertion.
 
