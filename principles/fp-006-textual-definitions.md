@@ -35,9 +35,9 @@ Instances, such as organizations or geographical locations, can benefit from def
 Implementation
 --------------
 
-Logical definitions should agree with textual definitions. In fact, logical definitions can be programmatically used to generate textual definitions (see http://oro.open.ac.uk/21501/1/)
+Logical definitions should agree with textual definitions. In fact, logical definitions can be programmatically used to generate textual definitions (see [http://oro.open.ac.uk/21501/1/](http://oro.open.ac.uk/21501/1/))
 
-Textual definitions should be identified using the annotation property: ‘definition’ http://purl.obolibrary.org/obo/IAO_0000115. The source of the definition should be provided using the annotation property ‘definition source’ http://purl.obolibrary.org/obo/IAO_0000119, or as an axiom annotation on the definition assertion.
+Textual definitions should be identified using the annotation property: ‘definition’ [http://purl.obolibrary.org/obo/IAO_0000115](http://purl.obolibrary.org/obo/IAO_0000115). The source of the definition should be provided using the annotation property ‘definition source’ [http://purl.obolibrary.org/obo/IAO_0000119](http://purl.obolibrary.org/obo/IAO_0000119), or as an axiom annotation on the definition assertion.
 
 An example of providing source in an axiom annotation:
 
@@ -67,7 +67,7 @@ Examples
 --------
 
 <i><b>Class</b></i>: reproductive shoot system
-<br>  <i><b>Term IRI</b></i>: http://purl.obolibrary.org/obo/PO_0025082
+<br>  <i><b>Term IRI</b></i>: [http://purl.obolibrary.org/obo/PO_0025082](http://purl.obolibrary.org/obo/PO_0025082)
 <br>  <i><b>Definition</b></i>: A shoot system (PO:0009006) in the sporophytic phase that has as part at least one sporangium (PO:0025094).
 <br>  <i><b>Logical definition</b></i>:
 ```
