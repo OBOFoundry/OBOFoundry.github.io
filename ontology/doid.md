@@ -43,6 +43,13 @@ license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0 Universal
 usages:
+  - user: https://disease-ontology.org/community/collaborators
+    description: View the DO's ~ 300 contributors, collaborators and use cases
+    examples: 
+      - url: https://www.alliancegenome.org
+        description: Alliance of Genome Resources
+      - url: https://www.iedb.org
+        description: Immune Epitope Database
   - user: http://www.informatics.jax.org/disease
     description: MGI disease model annotations use DO
     examples:
