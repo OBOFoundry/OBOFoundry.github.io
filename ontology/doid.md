@@ -43,11 +43,22 @@ license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0 Universal
 usages:
+  - user: https://www.alliancegenome.org
+    description: Alliance of Genome Resources
+    examples: 
+      - url:https://www.alliancegenome.org/search?category=disease
+      description: retrieve 10,860 results of DO diseases annotated to MOD genes, alleles, animal models and human genes 
   - user: http://www.informatics.jax.org/disease
     description: MGI disease model annotations use DO
     examples:
       - url: http://www.informatics.jax.org/disease/DOID:4123
         description: Human genes and mouse homology associated with nail diseases
+  - user: https://www.iedb.org/result_v3.php?cookie_id=c466a5
+    description: Immune Epitope Database
+    examples:
+      - url:https://www.iedb.org/result_v3.php?cookie_id=c466a5
+        description: Retrieve IEDB disease related data 
+  
 activity_status: active
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 ---
