@@ -43,11 +43,11 @@ license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0 Universal
 usages:
-  - user: http://www.informatics.jax.org/disease
-    description: MGI disease model annotations use DO
+  - user: https://www.alliancegenome.org
+    description: Alliance of Genome Resources
     examples:
-      - url: http://www.informatics.jax.org/disease/DOID:4123
-        description: Human genes and mouse homology associated with nail diseases
+      - url: https://www.alliancegenome.org/search?category=disease
+        description: View 10,860 results of DO annotations to MOD genes, alleles, animal models and human genes
 activity_status: active
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 ---
