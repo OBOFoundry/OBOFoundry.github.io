@@ -43,6 +43,11 @@ license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0 Universal
 usages:
+  - user: https://www.alliancegenome.org
+    description: Alliance of Genome Resources: MGD, RGD, SGD, FlyBase, WormBase, ZFIN use DO
+    examples:
+      - url:https://www.alliancegenome.org/search?category=disease
+        description: 10,860 DO human Diseases annotated to over 190,000 MOD genes, alleles, disease models and human genes
   - user: http://www.informatics.jax.org/disease
     description: MGI disease model annotations use DO
     examples:
