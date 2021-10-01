@@ -43,19 +43,19 @@ license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0 Universal
 usages:
-   - user: https://www.alliancegenome.org
+  - user: https://www.alliancegenome.org
     description: Alliance of Genome Resources: MGD, RGD, SGD, FlyBase, WormBase, ZFIN use DO
     examples:
       - url: https://www.alliancegenome.org/search?category=disease
-       description: 10,860 DO human Diseases annotated to over 190,000 MOD genes, alleles, disease models and human genes
+        description: 10,860 DO human Diseases annotated to over 190,000 MOD genes, alleles, disease models and human genes
       - url: https://www.alliancegenome.org/disease/DOID:0080599
-       description: The landing page for Coronavirus Infectious Disease
+        description: The landing page for Coronavirus Infectious Disease
   - user: http://www.informatics.jax.org/disease
     description: MGI disease model annotations use DO
     examples:
       - url: http://www.informatics.jax.org/disease/DOID:4123
         description: Human genes and mouse homology associated with nail diseases
- - user: https://www.iedb.org
+  - user: https://www.iedb.org
     description: Immune Epitope Database
     examples:
       - url: https://www.iedb.org
