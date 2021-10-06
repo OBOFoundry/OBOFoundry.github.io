@@ -16,6 +16,7 @@ title: Resources
 - [Linked Open Vocabularies](https://lov.linkeddata.es/dataset/lov/)
 
 ## Tutorials
+- [OBO Semantic Engineering Training](https://oboacademy.github.io/obook/)
 - [Introduction to Ontologies](https://github.com/prog4biol/pfb2018/blob/master/workshops/Ontologies/IntroToOntologies_CSH_2018-10-28g.pdf): slides from Cold Spring Harbor workshop, October 2018, by Nicole Vasilevsky.
 - [Ontology 101 Tutorial](http://icbo2018.cgrb.oregonstate.edu/node/19): from International Conference on Biological Ontology (ICBO) 2018
 - [Ontology 101 Open Educational Resource](https://github.com/OHSUBD2K/BDK14-Ontologies-101): Funded by NIH BD2K Initiative.
