@@ -30,6 +30,7 @@ build:
   method: obo2owl
 tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
 activity_status: active
+preferredPrefix: FMA
 ---
 
 Obo format translation of the FMA, omitting all relationships other than is_a, part_of and has_part. Future versions of fma_obo will include more relationships

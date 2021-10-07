@@ -21,6 +21,7 @@ publications:
     title: "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics."
 activity_status: active
 repository: https://github.com/Planteome/plant-experimental-conditions-ontology
+preferredPrefix: PECO
 ---
 
 A structured, controlled vocabulary for the representation of plant experimental conditions.

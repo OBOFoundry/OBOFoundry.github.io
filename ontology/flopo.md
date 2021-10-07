@@ -23,4 +23,5 @@ title: Flora Phenotype Ontology
 tracker: https://github.com/flora-phenotype-ontology/flopoontology/issues
 activity_status: active
 repository: https://github.com/flora-phenotype-ontology/flopoontology
+preferredPrefix: FLOPO
 ---

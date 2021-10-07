@@ -73,6 +73,7 @@ usages:
         description: Disease status specimen is normal, type 2 diabetes mellitus.
 activity_status: active
 repository: https://github.com/monarch-initiative/mondo
+preferredPrefix: MONDO
 ---
 
 The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. It is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology. Original versions of Mondo were constructed entirely automatically and used the IDs of source databases and ontologies. Later, additional manually curated cross-ontology axioms were added, and a native Mondo ID system was used to avoid confusion with source databases.

@@ -48,6 +48,7 @@ usages:
         description: Gramene annotations to submergence tolerance
 activity_status: active
 repository: https://github.com/Planteome/plant-trait-ontology
+preferredPrefix: TO
 ---
 
 A controlled vocabulary of describe phenotypic traits in plants. Each trait is a distinguishable feature, characteristic, quality or phenotypic feature of a developing or mature plant.

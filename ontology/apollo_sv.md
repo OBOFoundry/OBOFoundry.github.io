@@ -16,6 +16,7 @@ license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC-BY 3.0
 repository: https://github.com/ApolloDev/apollo-sv
+preferredPrefix: APOLLO_SV
 ---
 
 #Apollo Structured Vocabulary

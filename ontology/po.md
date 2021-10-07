@@ -67,6 +67,7 @@ usages:
         description: Gramene annotations to leaf from Arabidopsis
 activity_status: active
 repository: https://github.com/Planteome/plant-ontology
+preferredPrefix: PO
 ---
 
 The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data. The PO is under active development to expand to encompass terms and annotations from all plants.

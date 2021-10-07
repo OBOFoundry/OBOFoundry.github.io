@@ -16,6 +16,7 @@ license:
   label: CC-BY
 activity_status: active
 repository: https://github.com/OHPI/ohpi
+preferredPrefix: OHPI
 ---
 
 # OHPI: Ontology of Host-Pathogen Interactions

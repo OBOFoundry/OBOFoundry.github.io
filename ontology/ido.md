@@ -23,4 +23,5 @@ build:
 tracker: https://github.com/infectious-disease-ontology/infectious-disease-ontology/issues
 activity_status: active
 repository: https://github.com/infectious-disease-ontology/infectious-disease-ontology
+preferredPrefix: IDO
 ---

@@ -31,6 +31,7 @@ build:
   method: obo2owl
 activity_status: active
 repository: https://github.com/HUPO-PSI/psi-ms-CV
+preferredPrefix: MS
 ---
 
 A structured controlled vocabulary for the annotation of experiments concerned with proteomics mass spectrometry. Developed by the HUPO Proteomics Standards Initiative (PSI).

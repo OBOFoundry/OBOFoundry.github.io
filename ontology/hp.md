@@ -55,6 +55,7 @@ usages:
     reference: https://academic.oup.com/nar/article/45/D1/D712/2605791
 activity_status: active
 repository: https://github.com/obophenotype/human-phenotype-ontology
+preferredPrefix: HP
 ---
 
 <img src="https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/logo/HPO-logo-black_small.png"/>

@@ -73,6 +73,7 @@ usages:
         description: FANTOM5 samples annotated to neuron
 activity_status: active
 repository: https://github.com/obophenotype/cell-ontology
+preferredPrefix: CL
 ---
 
 ![logo](/images/CL-logo.jpg)
