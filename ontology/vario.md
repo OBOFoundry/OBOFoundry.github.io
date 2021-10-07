@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: vario
+preferredPrefix: VariO
 description: Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations.
 homepage: http://variationontology.org
 products:
