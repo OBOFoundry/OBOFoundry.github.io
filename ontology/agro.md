@@ -9,6 +9,13 @@ contact:
 description: Ontology of agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments
 domain: agronomy
 homepage: https://github.com/AgriculturalSemantics/agro
+usages: 
+  - user: AgroFIMS
+    description: A key use case for AgrO is the Agronomy Field Information Management System (AgroFIMS). AgroFIMS enables digital collection of agronomic data that is semantically described a priori with agronomic terms from AgrO.
+      - url: https://agrofims.org/about
+  - user: Agricultural Model Intercomparison and Improvement Project (AgMIP)
+    decription: AgrO is being used by the University of Florida (UF), and researchers associated with the Agricultural Model Intercomparison and Improvement Project (AgMIP) and IFPRI as a standard reference terminology to enable the generation and reuse of model-ready data. The goal of this effort is to facilitate data queries in GARDIAN that include a measure of the appropriateness of each dataset for use in quantitative analyses. Each dataset will include metadata that fully describe the terminology used in that dataset with links to AgrO definitions and units.
+      - url: https://bigdata.cgiar.org/resources/gardian/
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC-BY
