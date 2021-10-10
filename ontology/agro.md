@@ -26,14 +26,10 @@ publications:
   - id: http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf
     title: "Data-driven Agricultural Research for Development: A Need for Data Harmonization Via Semantics."
 usages: 
-  - user: AgroFIMS
-    description: A key use case for AgrO is the Agronomy Field Information Management System (AgroFIMS). AgroFIMS enables digital collection of agronomic data that is semantically described a priori with agronomic terms from AgrO.
-    examples:
-      - url: https://agrofims.org/about
-  - user: Agricultural Model Intercomparison and Improvement Project (AgMIP)
-    decription: AgrO is being used by the University of Florida (UF), and researchers associated with the Agricultural Model Intercomparison and Improvement Project (AgMIP) and IFPRI as a standard reference terminology to enable the generation and reuse of model-ready data. The goal of this effort is to facilitate data queries in GARDIAN that include a measure of the appropriateness of each dataset for use in quantitative analyses. Each dataset will include metadata that fully describe the terminology used in that dataset with links to AgrO definitions and units.
-    examples:
-      - url: https://bigdata.cgiar.org/resources/gardian/
+  - user: https://agrofims.org/about
+    description: AgroFIMS enables digital collection of agronomic data that is semantically described a priori with agronomic terms from AgrO.
+  - user: https://gardian.bigdata.cgiar.org/
+    decription: AgrO is being used by GARDIAN to facilitate data search within publications and datasets for use in quantitative analyses.
 jobs:
   - id: https://travis-ci.org/AgriculturalSemantics/agro
     type: travis-ci
