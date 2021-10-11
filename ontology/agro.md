@@ -16,7 +16,6 @@ contact:
   email: m.a.laporte@cgiar.org
   label: Marie-Angélique Laporte
   github: "marieALaporte"
-domain: agronomy
 products:
   - id: agro.owl
     title: "AgrO"
@@ -25,7 +24,7 @@ products:
 publications:
   - id: http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf
     title: "Data-driven Agricultural Research for Development: A Need for Data Harmonization Via Semantics."
-usages: 
+usages:
   - user: https://agrofims.org/about
     description: AgroFIMS enables digital collection of agronomic data that is semantically described a priori with agronomic terms from AgrO.
   - user: https://gardian.bigdata.cgiar.org/
@@ -37,21 +36,20 @@ tracker: https://github.com/AgriculturalSemantics/agro/issues/
 activity_status: active
 repository: https://github.com/AgriculturalSemantics/agro
 dependencies:
-- id: envo
-- id: go
-- id: foodon
-- id: ncbitaxon
-- id: pato
-- id: peco
-- id: po
-- id: to
-- id: ro
-- id: bfo
-- id: iao
-- id: obi
-- id: uo
-- id: xco
-
+  - id: envo
+  - id: go
+  - id: foodon
+  - id: ncbitaxon
+  - id: pato
+  - id: peco
+  - id: po
+  - id: to
+  - id: ro
+  - id: bfo
+  - id: iao
+  - id: obi
+  - id: uo
+  - id: xco
 ---
 
 AgrO, the Agronomy Ontology, describes agronomic practices, techniques, and variables used in agronomic experiments. AgrO is being built using traits identified by agronomists, the ICASA variables, and other existing ontologies such as ENVO, UO, PATO, IAO, and CHEBI. Further, AgrO powers AgroFIMS, the Agronomy Fieldbook and Information Management System modeled on a CGIAR Breeding Management System to capture agronomic data.
