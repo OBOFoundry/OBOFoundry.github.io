@@ -62,6 +62,7 @@ usages:
         description: wg_biogenesis_FlyBase
 activity_status: active
 repository: https://github.com/oborel/obo-relations
+preferredPrefix: RO
 ---
 
 ![logo](/images/ro_logo.png)

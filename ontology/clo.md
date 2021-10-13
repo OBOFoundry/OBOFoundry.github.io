@@ -20,6 +20,7 @@ license:
   label: CC-BY
 activity_status: active
 repository: https://github.com/CLO-Ontology/CLO
+preferredPrefix: CLO
 ---
 
 # Summary

@@ -100,6 +100,7 @@ usages:
         description: annotations to transmembrane transport
 activity_status: active
 repository: https://github.com/geneontology/go-ontology
+preferredPrefix: GO
 ---
 
 The goal of the GeneOntology (GO) project is to provide a uniformway to describe the functions of gene products from organisms across all kingdoms of life and thereby enable analysis of genomic data

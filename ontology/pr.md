@@ -55,6 +55,7 @@ usages:
         description: A B cell that is CD19-positive (uses the PRO term for non-species-specific CD19 molecule, PR:000001002)
 activity_status: active
 repository: https://github.com/PROconsortium/PRoteinOntology
+preferredPrefix: PR
 ---
 
 The PRotein Ontology (PRO) formally defines taxon-specific and taxon-neutral protein-related entities in three major areas: proteins related by evolution; proteins produced from a given gene; and protein-containing complexes.

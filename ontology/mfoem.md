@@ -20,6 +20,7 @@ license:
   label: CC-BY
 activity_status: active
 repository: https://github.com/jannahastings/emotion-ontology
+preferredPrefix: MFOEM
 ---
 
 An ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings, designed to support interdisciplinary research by providing unified annotations.

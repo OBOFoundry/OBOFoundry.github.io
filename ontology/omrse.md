@@ -22,6 +22,7 @@ build:
   method: owl2obo
 activity_status: active
 repository: https://github.com/ufbmi/OMRSE
+preferredPrefix: OMRSE
 ---
 
 This ontology covers the domain of social entities that are related to health care, such as demographic information (social entities for recording gender (but not sex) and marital status, for example) and the roles of various individuals and organizations (patient, hospital,etc.)

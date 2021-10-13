@@ -29,6 +29,7 @@ usages:
     description: GXD
 activity_status: active
 repository: https://github.com/obophenotype/mouse-anatomy-ontology
+preferredPrefix: EMAPA
 ---
 
 ## BACKGROUND

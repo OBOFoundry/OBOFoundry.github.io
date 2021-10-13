@@ -26,6 +26,7 @@ browsers:
     url: https://toxpilot.nibiohn.go.jp/
 activity_status: active
 repository: https://github.com/txpo-ontology/TXPO
+preferredPrefix: TXPO
 ---
 
 Elucidating the mechanism of toxicity is crucial in drug safety evaluations. TOXic Process Ontology (TXPO) systematizes a wide variety of terms involving toxicity courses and processes. The first version of TXPO focuses on liver toxicity.

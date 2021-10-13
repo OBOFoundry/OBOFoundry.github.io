@@ -17,6 +17,7 @@ license:
 tracker: https://github.com/getbordea/fideo/issues
 activity_status: active
 repository: https://github.com/getbordea/fideo
+preferredPrefix: FIDEO
 ---
 
 FIDEO represents food-drug interactions automatically extracted from scientific literature.

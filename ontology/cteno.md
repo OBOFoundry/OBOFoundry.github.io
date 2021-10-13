@@ -31,6 +31,7 @@ license:
   label: CC-BY
 activity_status: active
 repository: https://github.com/obophenotype/ctenophore-ontology
+preferredPrefix: CTENO
 ---
 
 An anatomical and developmental ontology for ctenophores (Comb Jellies).

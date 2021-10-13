@@ -43,6 +43,7 @@ license:
   label: CC-BY
 activity_status: active
 repository: https://github.com/monarch-initiative/MAxO
+preferredPrefix: MAXO
 ---
 
 The Medical Action Ontology (MAxO) provides a structured vocabulary for medical procedures, interventions, therapies, and treatments for disease with an emphasis on rare disease (RD). It is often difficult to find relevant clinical literature about strategies to manage RD patients. Responding to this need, MAxO provides a vocabulary to annotate diseases and phenotypes with recommended treatments and interventions.

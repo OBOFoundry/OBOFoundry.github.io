@@ -17,6 +17,7 @@ products:
   - id: cio.obo
 activity_status: active
 repository: https://github.com/BgeeDB/confidence-information-ontology
+preferredPrefix: CIO
 ---
 
 The Confidence Information Ontology (CIO) is an ontology to capture confidence information about annotations.

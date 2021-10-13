@@ -36,4 +36,5 @@ license:
   label: CC-0
 activity_status: active
 repository: https://github.com/obophenotype/chiro
+preferredPrefix: CHIRO
 ---

@@ -31,6 +31,7 @@ usages:
     description: GXD
 activity_status: active
 repository: https://github.com/obophenotype/mouse-anatomy-ontology
+preferredPrefix: MA
 ---
 
 A structured controlled vocabulary of the adult anatomy of the mouse (Mus).

@@ -26,6 +26,7 @@ build:
   infallible: 1
 activity_status: active
 repository: https://github.com/cerivs/zebrafish-anatomical-ontology
+preferredPrefix: ZFS
 ---
 
 An ontology of developmental stages of the Zebrafish (<i>Danio rerio</i>). Note that ZFA includes the leaf nodes of this ontology
