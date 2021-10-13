@@ -29,6 +29,7 @@
             },
             "mailing_list": "https://groups.google.com/forum/#!forum/bfo-discuss",
             "ontology_purl": "http://purl.obolibrary.org/obo/bfo.owl",
+            "preferredPrefix": "BFO",
             "products": [
                 {
                     "id": "bfo.owl",
@@ -91,6 +92,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/chebi.owl",
             "page": "http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual",
+            "preferredPrefix": "CHEBI",
             "products": [
                 {
                     "id": "chebi.owl",
@@ -185,6 +187,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/doid.owl",
+            "preferredPrefix": "DOID",
             "products": [
                 {
                     "id": "doid.owl",
@@ -220,6 +223,20 @@
             "twitter": "diseaseontology",
             "usages": [
                 {
+                    "description": "Alliance of Genome Resources - MGD, RGD, SGD, FlyBase, WormBase, ZFIN use DO",
+                    "examples": [
+                        {
+                            "description": "10,860 DO human Diseases annotated to over 190,000 MOD genes, alleles, disease models and human genes",
+                            "url": "https://www.alliancegenome.org/search?category=disease"
+                        },
+                        {
+                            "description": "The landing page for Coronavirus Infectious Disease",
+                            "url": "https://www.alliancegenome.org/disease/DOID:0080599"
+                        }
+                    ],
+                    "user": "https://www.alliancegenome.org"
+                },
+                {
                     "description": "MGI disease model annotations use DO",
                     "examples": [
                         {
@@ -228,6 +245,16 @@
                         }
                     ],
                     "user": "http://www.informatics.jax.org/disease"
+                },
+                {
+                    "description": "Immune Epitope Database",
+                    "examples": [
+                        {
+                            "description": "Search for experimental data on antibody and T cell epitopes associated with human diseases in the DO. To search for DO disease terms, use the Disease search box on the front page.",
+                            "url": "https://www.iedb.org"
+                        }
+                    ],
+                    "user": "https://www.iedb.org"
                 }
             ]
         },
@@ -298,6 +325,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/go.owl",
+            "preferredPrefix": "GO",
             "products": [
                 {
                     "description": "The main ontology in OWL. This is self contained and does not have connections to other OBO ontologies",
@@ -433,6 +461,7 @@
             },
             "mailing_list": "http://groups.google.com/group/obi-users",
             "ontology_purl": "http://purl.obolibrary.org/obo/obi.owl",
+            "preferredPrefix": "OBI",
             "products": [
                 {
                     "description": "The full version of OBI in OWL format",
@@ -451,6 +480,12 @@
                     "id": "obi/obi_core.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/obi/obi_core.owl",
                     "title": "OBI Core"
+                },
+                {
+                    "description": "Base module for OBI",
+                    "id": "obi/obi-base.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/obi/obi-base.owl",
+                    "title": "OBI Base module"
                 }
             ],
             "repository": "https://github.com/obi-ontology/obi",
@@ -523,6 +558,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/pato.owl",
+            "preferredPrefix": "PATO",
             "products": [
                 {
                     "id": "pato.owl",
@@ -607,6 +643,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/po.owl",
             "page": "https://github.com/Planteome/plant-ontology",
+            "preferredPrefix": "PO",
             "products": [
                 {
                     "id": "po.owl",
@@ -707,6 +744,7 @@
             },
             "contact": {
                 "email": "dan5@georgetown.edu",
+                "github": "nataled",
                 "label": "Darren Natale"
             },
             "depicted_by": "https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png",
@@ -726,6 +764,7 @@
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/pr.owl",
+            "preferredPrefix": "PR",
             "products": [
                 {
                     "description": "PRO after reasoning has been applied, OWL format.",
@@ -799,6 +838,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/xao.owl",
+            "preferredPrefix": "XAO",
             "products": [
                 {
                     "id": "xao.owl",
@@ -867,6 +907,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/zfa.owl",
+            "preferredPrefix": "ZFA",
             "products": [
                 {
                     "id": "zfa.owl",
@@ -929,6 +970,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/aeo.owl",
+            "preferredPrefix": "AEO",
             "products": [
                 {
                     "id": "aeo.owl",
@@ -943,8 +985,6 @@
             "activity_status": "active",
             "build": {
                 "checkout": "git clone  https://github.com/AgriculturalSemantics/agro.git",
-                "infallible": 1,
-                "method": "vcs",
                 "path": ".",
                 "system": "git"
             },
@@ -958,28 +998,43 @@
                     "id": "envo"
                 },
                 {
-                    "id": "uo"
+                    "id": "go"
                 },
                 {
-                    "id": "ro"
-                },
-                {
-                    "id": "pato"
-                },
-                {
-                    "id": "chebi"
-                },
-                {
-                    "id": "iao"
+                    "id": "foodon"
                 },
                 {
                     "id": "ncbitaxon"
                 },
                 {
-                    "id": "po"
+                    "id": "pato"
                 },
                 {
                     "id": "peco"
+                },
+                {
+                    "id": "po"
+                },
+                {
+                    "id": "to"
+                },
+                {
+                    "id": "ro"
+                },
+                {
+                    "id": "bfo"
+                },
+                {
+                    "id": "iao"
+                },
+                {
+                    "id": "obi"
+                },
+                {
+                    "id": "uo"
+                },
+                {
+                    "id": "xco"
                 }
             ],
             "description": "Ontology of agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments",
@@ -994,21 +1049,39 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC-BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
-            "mailing_list": "https://groups.google.com/group/agronomyOntology",
             "ontology_purl": "http://purl.obolibrary.org/obo/agro.owl",
+            "preferredPrefix": "AGRO",
             "products": [
                 {
+                    "description": "Contains all AgrO terms and links to other relavent ontologies.",
                     "id": "agro.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/agro.owl"
+                    "ontology_purl": "http://purl.obolibrary.org/obo/agro.owl",
+                    "title": "AgrO"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf",
+                    "title": "Data-driven Agricultural Research for Development: A Need for Data Harmonization Via Semantics."
                 }
             ],
             "repository": "https://github.com/AgriculturalSemantics/agro",
             "title": "Agronomy Ontology",
-            "tracker": "https://github.com/AgriculturalSemantics/agro/issues/"
+            "tracker": "https://github.com/AgriculturalSemantics/agro/issues/",
+            "usages": [
+                {
+                    "description": "AgroFIMS enables digital collection of agronomic data that is semantically described a priori with agronomic terms from AgrO.",
+                    "user": "https://agrofims.org/about"
+                },
+                {
+                    "description": "AgrO is being used by GARDIAN to facilitate data search within publications and datasets for use in quantitative analyses.",
+                    "user": "https://gardian.bigdata.cgiar.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -1052,6 +1125,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/aism.owl",
+            "preferredPrefix": "AISM",
             "products": [
                 {
                     "id": "aism.owl",
@@ -1097,6 +1171,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/amphx.owl",
+            "preferredPrefix": "AMPHX",
             "products": [
                 {
                     "id": "amphx.owl",
@@ -1133,6 +1208,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/apo.owl",
+            "preferredPrefix": "APO",
             "products": [
                 {
                     "id": "apo.owl",
@@ -1168,6 +1244,7 @@
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/apollo_sv.owl",
+            "preferredPrefix": "APOLLO_SV",
             "products": [
                 {
                     "id": "apollo_sv.owl",
@@ -1196,6 +1273,7 @@
             },
             "mailing_list": "https://mailman.mcmaster.ca/mailman/listinfo/card-l",
             "ontology_purl": "http://purl.obolibrary.org/obo/aro.owl",
+            "preferredPrefix": "ARO",
             "products": [
                 {
                     "id": "aro.owl",
@@ -1225,6 +1303,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/bco.owl",
+            "preferredPrefix": "BCO",
             "products": [
                 {
                     "id": "bco.owl",
@@ -1260,6 +1339,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/bspo.owl",
+            "preferredPrefix": "BSPO",
             "products": [
                 {
                     "id": "bspo.owl",
@@ -1303,6 +1383,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/bto.owl",
             "page": "https://en.wikipedia.org/wiki/BRENDA_tissue_ontology",
+            "preferredPrefix": "BTO",
             "products": [
                 {
                     "id": "bto.owl",
@@ -1350,6 +1431,7 @@
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/caro.owl",
+            "preferredPrefix": "CARO",
             "products": [
                 {
                     "id": "caro.owl",
@@ -1380,6 +1462,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/cdao.owl",
+            "preferredPrefix": "CDAO",
             "products": [
                 {
                     "id": "cdao.owl",
@@ -1430,6 +1513,7 @@
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/cdno.owl",
+            "preferredPrefix": "CDNO",
             "products": [
                 {
                     "id": "cdno.owl",
@@ -1468,6 +1552,7 @@
             },
             "mailing_list": "https://groups.google.com/forum/#!forum/cheminf-ontology",
             "ontology_purl": "http://purl.obolibrary.org/obo/cheminf.owl",
+            "preferredPrefix": "CHEMINF",
             "products": [
                 {
                     "id": "cheminf.owl",
@@ -1530,6 +1615,7 @@
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/chiro.owl",
+            "preferredPrefix": "CHIRO",
             "products": [
                 {
                     "id": "chiro.owl",
@@ -1565,6 +1651,7 @@
             },
             "mailing_list": "chemistry-ontologies@googlegroups.com",
             "ontology_purl": "http://purl.obolibrary.org/obo/chmo.owl",
+            "preferredPrefix": "CHMO",
             "products": [
                 {
                     "id": "chmo.owl",
@@ -1592,6 +1679,7 @@
             },
             "mailing_list": "cido-discuss@googlegroups.com",
             "ontology_purl": "http://purl.obolibrary.org/obo/cido.owl",
+            "preferredPrefix": "CIDO",
             "products": [
                 {
                     "id": "cido.owl",
@@ -1619,6 +1707,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/cio.owl",
+            "preferredPrefix": "CIO",
             "products": [
                 {
                     "id": "cio.owl",
@@ -1685,6 +1774,7 @@
             },
             "mailing_list": "https://groups.google.com/g/cl_edit",
             "ontology_purl": "http://purl.obolibrary.org/obo/cl.owl",
+            "preferredPrefix": "CL",
             "products": [
                 {
                     "description": "Complete ontology, plus inter-ontology axioms, and imports modules",
@@ -1790,6 +1880,7 @@
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/clao.owl",
+            "preferredPrefix": "CLAO",
             "products": [
                 {
                     "id": "clao.owl",
@@ -1834,6 +1925,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/clo.owl",
+            "preferredPrefix": "CLO",
             "products": [
                 {
                     "id": "clo.owl",
@@ -1878,6 +1970,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/clyh.owl",
+            "preferredPrefix": "CLYH",
             "products": [
                 {
                     "id": "clyh.owl",
@@ -1921,6 +2014,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/cmo.owl",
             "page": "ftp://ftp.rgd.mcw.edu/pub/ontology/clinical_measurement/",
+            "preferredPrefix": "CMO",
             "products": [
                 {
                     "id": "cmo.owl",
@@ -1963,6 +2057,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/cob.owl",
+            "preferredPrefix": "COB",
             "products": [
                 {
                     "id": "cob.owl",
@@ -1996,6 +2091,7 @@
                 "url": "https://creativecommons.org/licenses/by/2.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/cro.owl",
+            "preferredPrefix": "CRO",
             "products": [
                 {
                     "id": "cro.owl",
@@ -2045,6 +2141,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/cteno.owl",
+            "preferredPrefix": "CTENO",
             "products": [
                 {
                     "id": "cteno.owl",
@@ -2076,6 +2173,7 @@
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/cto.owl",
+            "preferredPrefix": "CTO",
             "products": [
                 {
                     "id": "cto.owl",
@@ -2107,6 +2205,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/cvdo.owl",
+            "preferredPrefix": "CVDO",
             "products": [
                 {
                     "id": "cvdo.owl",
@@ -2140,6 +2239,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ddanat.owl",
+            "preferredPrefix": "DDANAT",
             "products": [
                 {
                     "id": "ddanat.owl",
@@ -2182,6 +2282,7 @@
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ddpheno.owl",
+            "preferredPrefix": "DDPHENO",
             "products": [
                 {
                     "id": "ddpheno.owl",
@@ -2218,6 +2319,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/dideo.owl",
+            "preferredPrefix": "DIDEO",
             "products": [
                 {
                     "id": "dideo.owl",
@@ -2319,6 +2421,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/dron.owl",
+            "preferredPrefix": "DRON",
             "products": [
                 {
                     "id": "dron.owl",
@@ -2365,6 +2468,7 @@
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/duo.owl",
+            "preferredPrefix": "DUO",
             "products": [
                 {
                     "id": "duo.owl",
@@ -2409,6 +2513,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ecao.owl",
+            "preferredPrefix": "ECAO",
             "products": [
                 {
                     "id": "ecao.owl",
@@ -2456,6 +2561,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/eco.owl",
+            "preferredPrefix": "ECO",
             "products": [
                 {
                     "id": "eco.owl",
@@ -2571,6 +2677,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ecocore.owl",
+            "preferredPrefix": "ECOCORE",
             "products": [
                 {
                     "id": "ecocore.owl",
@@ -2658,6 +2765,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ecto.owl",
+            "preferredPrefix": "ECTO",
             "products": [
                 {
                     "id": "ecto.owl",
@@ -2717,6 +2825,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/emapa.owl",
+            "preferredPrefix": "EMAPA",
             "products": [
                 {
                     "id": "emapa.owl",
@@ -2801,6 +2910,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/envo.owl",
             "page": "https://github.com/EnvironmentOntology/envo",
+            "preferredPrefix": "ENVO",
             "products": [
                 {
                     "id": "envo.owl",
@@ -2921,6 +3031,7 @@
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/eupath.owl",
+            "preferredPrefix": "EUPATH",
             "products": [
                 {
                     "id": "eupath.owl",
@@ -3009,6 +3120,7 @@
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/fao.owl",
+            "preferredPrefix": "FAO",
             "products": [
                 {
                     "id": "fao.owl",
@@ -3309,6 +3421,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/fideo.owl",
+            "preferredPrefix": "FIDEO",
             "products": [
                 {
                     "id": "fideo.owl",
@@ -3341,6 +3454,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/flopo.owl",
+            "preferredPrefix": "FLOPO",
             "products": [
                 {
                     "id": "flopo.owl",
@@ -3378,6 +3492,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/fma.owl",
             "page": "http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy",
+            "preferredPrefix": "FMA",
             "products": [
                 {
                     "id": "fma.owl",
@@ -3404,6 +3519,45 @@
             },
             "title": "Foundational Model of Anatomy Ontology (subset)",
             "tracker": "https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "polcaes@gmail.com",
+                "github": "pcastellanoescuder",
+                "label": "Pol Castellano Escuder"
+            },
+            "dependencies": [
+                {
+                    "id": "chebi"
+                },
+                {
+                    "id": "foodon"
+                }
+            ],
+            "description": "FOBI (Food-Biomarker Ontology) is an ontology to represent food intake data and associate it with metabolomic data",
+            "domain": "metabolomics and nutrition",
+            "homepage": "https://github.com/pcastellanoescuder/FoodBiomarkerOntology",
+            "id": "fobi",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/fobi.owl",
+            "preferredPrefix": "FOBI",
+            "products": [
+                {
+                    "format": "owl-rdf/xml",
+                    "id": "fobi.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fobi.owl",
+                    "title": "FOBI is an ontology to represent food intake data and associate it with metabolomic data"
+                }
+            ],
+            "repository": "https://github.com/pcastellanoescuder/FoodBiomarkerOntology",
+            "title": "FOBI",
+            "tracker": "https://github.com/pcastellanoescuder/FoodBiomarkerOntology/issues"
         },
         {
             "activity_status": "active",
@@ -3449,6 +3603,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/foodon.owl",
+            "preferredPrefix": "FOODON",
             "products": [
                 {
                     "format": "owl-rdf/xml",
@@ -3522,6 +3677,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/fovt.owl",
+            "preferredPrefix": "FOVT",
             "products": [
                 {
                     "id": "fovt.owl",
@@ -3572,6 +3728,7 @@
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/fypo.owl",
+            "preferredPrefix": "FYPO",
             "products": [
                 {
                     "id": "fypo.owl",
@@ -3626,6 +3783,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/gecko.owl",
+            "preferredPrefix": "GECKO",
             "products": [
                 {
                     "id": "gecko.owl",
@@ -3677,6 +3835,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/genepio.owl",
             "page": "https://github.com/GenEpiO/genepio",
+            "preferredPrefix": "GENEPIO",
             "products": [
                 {
                     "homepage": "http://genepio.github.io/genepio/",
@@ -3711,6 +3870,7 @@
                 "url": "https://creativecommons.org/licenses/by-sa/2.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/geno.owl",
+            "preferredPrefix": "GENO",
             "products": [
                 {
                     "id": "geno.owl",
@@ -3739,6 +3899,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/geo.owl",
+            "preferredPrefix": "GEO",
             "products": [
                 {
                     "id": "geo.owl",
@@ -3784,6 +3945,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/gno.owl",
+            "preferredPrefix": "GNO",
             "products": [
                 {
                     "description": "Glycan Naming and Subsumption Ontology, OWL format (primary)",
@@ -3854,6 +4016,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/hancestro.owl",
+            "preferredPrefix": "HANCESTRO",
             "products": [
                 {
                     "description": "The full version of HANCESTRO in OWL format",
@@ -3925,6 +4088,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/hao.owl",
+            "preferredPrefix": "HAO",
             "products": [
                 {
                     "id": "hao.owl",
@@ -3970,6 +4134,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/hom.owl",
+            "preferredPrefix": "HOM",
             "products": [
                 {
                     "id": "hom.owl",
@@ -4053,6 +4218,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/hso.owl",
             "page": "https://github.com/SVA-SE/HSO",
+            "preferredPrefix": "HSO",
             "products": [
                 {
                     "homepage": "https://w3id.org/hso",
@@ -4080,6 +4246,7 @@
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/htn.owl",
+            "preferredPrefix": "HTN",
             "products": [
                 {
                     "id": "htn.owl",
@@ -4115,6 +4282,7 @@
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/iao.owl",
+            "preferredPrefix": "IAO",
             "products": [
                 {
                     "id": "iao.owl",
@@ -4169,6 +4337,7 @@
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/iceo.owl",
+            "preferredPrefix": "ICEO",
             "products": [
                 {
                     "id": "iceo.owl",
@@ -4197,6 +4366,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ico.owl",
+            "preferredPrefix": "ICO",
             "products": [
                 {
                     "id": "ico.owl",
@@ -4235,6 +4405,7 @@
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ido.owl",
+            "preferredPrefix": "IDO",
             "products": [
                 {
                     "id": "ido.owl",
@@ -4265,6 +4436,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ino.owl",
+            "preferredPrefix": "INO",
             "products": [
                 {
                     "id": "ino.owl",
@@ -4312,6 +4484,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/labo.owl",
+            "preferredPrefix": "LABO",
             "products": [
                 {
                     "id": "labo.owl",
@@ -4359,6 +4532,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ma.owl",
             "page": "http://www.informatics.jax.org/searches/AMA_form.shtml",
+            "preferredPrefix": "MA",
             "products": [
                 {
                     "id": "ma.owl",
@@ -4433,6 +4607,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/maxo.owl",
+            "preferredPrefix": "MAXO",
             "products": [
                 {
                     "id": "maxo.owl",
@@ -4541,6 +4716,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/mco.owl",
+            "preferredPrefix": "MCO",
             "products": [
                 {
                     "id": "mco.owl",
@@ -4577,6 +4753,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/mf.owl",
+            "preferredPrefix": "MF",
             "products": [
                 {
                     "id": "mf.owl",
@@ -4610,6 +4787,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/mfmo.owl",
+            "preferredPrefix": "MFMO",
             "products": [
                 {
                     "id": "mfmo.owl",
@@ -4646,6 +4824,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/mfoem.owl",
+            "preferredPrefix": "MFOEM",
             "products": [
                 {
                     "id": "mfoem.owl",
@@ -4673,6 +4852,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/mfomd.owl",
+            "preferredPrefix": "MFOMD",
             "products": [
                 {
                     "id": "mfomd.owl",
@@ -4706,6 +4886,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/mi.owl",
             "page": "https://github.com/HUPO-PSI/psi-mi-CV",
+            "preferredPrefix": "MI",
             "products": [
                 {
                     "id": "mi.owl",
@@ -4739,6 +4920,7 @@
             },
             "mailing_list": "http://groups.google.com/group/miapa-discuss",
             "ontology_purl": "http://purl.obolibrary.org/obo/miapa.owl",
+            "preferredPrefix": "MIAPA",
             "products": [
                 {
                     "id": "miapa.owl",
@@ -4767,6 +4949,7 @@
                 "url": "https://creativecommons.org/licenses/by/2.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/micro.owl",
+            "preferredPrefix": "MICRO",
             "products": [
                 {
                     "id": "micro.owl",
@@ -4806,6 +4989,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/mmo.owl",
             "page": "ftp://ftp.rgd.mcw.edu/pub/ontology/measurement_method/",
+            "preferredPrefix": "MMO",
             "products": [
                 {
                     "id": "mmo.owl",
@@ -4888,6 +5072,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/mod.owl",
+            "preferredPrefix": "MOD",
             "products": [
                 {
                     "description": "PSI-MOD Ontology, OWL format",
@@ -4941,6 +5126,7 @@
             },
             "mailing_list": "https://groups.google.com/group/mondo-users",
             "ontology_purl": "http://purl.obolibrary.org/obo/mondo.owl",
+            "preferredPrefix": "MONDO",
             "products": [
                 {
                     "description": "Complete ontology. Uses MONDO IDs. Imports merged. The original mondo.owl without merged imports and with equivalence axioms can now be obtained from the release pages and is called mondo-with-equivalents.",
@@ -5053,6 +5239,7 @@
             },
             "mailing_list": "chemistry-ontologies@googlegroups.com",
             "ontology_purl": "http://purl.obolibrary.org/obo/mop.owl",
+            "preferredPrefix": "MOP",
             "products": [
                 {
                     "id": "mop.owl",
@@ -5111,6 +5298,7 @@
             "mailing_list": "https://groups.google.com/forum/#!forum/phenotype-ontologies-editors",
             "ontology_purl": "http://purl.obolibrary.org/obo/mp.owl",
             "page": "https://github.com/obophenotype/mammalian-phenotype-ontology",
+            "preferredPrefix": "MP",
             "products": [
                 {
                     "description": "The main ontology in OWL. Contains all MP terms and links to other OBO ontologies.",
@@ -5147,7 +5335,39 @@
                 "label": "Mammalia"
             },
             "title": "Mammalian Phenotype Ontology",
-            "tracker": "https://github.com/obophenotype/mammalian-phenotype-ontology/issues"
+            "tracker": "https://github.com/obophenotype/mammalian-phenotype-ontology/issues",
+            "usages": [
+                {
+                    "description": "MGI annotates phenotypes of mouse models using the MP",
+                    "examples": [
+                        {
+                            "description": "Term browser page for embryonic lethality showing information about the term including definition, placement in the MP hierarchy, and link to mouse models annotated to this term or any of its decendants",
+                            "url": "http://www.informatics.jax.org/vocab/mp_ontology/MP:0008762"
+                        }
+                    ],
+                    "user": "http://www.informatics.jax.org/vocab/mp_ontology"
+                },
+                {
+                    "description": "RGD annotates phenotypes associated with rat genes and alleles using the MP",
+                    "examples": [
+                        {
+                            "description": "Term browser page for embryonic lethality showing information about the term including definition, placement in the MP hierarchy, and link to annotations to this term or any of its decendants",
+                            "url": "https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MP:0008762"
+                        }
+                    ],
+                    "user": "https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MP:0000001"
+                },
+                {
+                    "description": "IMPC annotates abnormal phenotypes of mice carrying null alleles found following the application of a standardised set of physiological tests",
+                    "examples": [
+                        {
+                            "description": "All IMPC alleles that have been annotated to the MP term 'decreased memory-marker CD4-positive NK T cell number'.",
+                            "url": "https://www.mousephenotype.org/data/phenotypes/MP:0013522"
+                        }
+                    ],
+                    "user": "https://www.mousephenotype.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -5171,6 +5391,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/mpath.owl",
+            "preferredPrefix": "MPATH",
             "products": [
                 {
                     "id": "mpath.owl",
@@ -5203,6 +5424,7 @@
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/mpio.owl",
+            "preferredPrefix": "MPIO",
             "products": [
                 {
                     "id": "mpio.owl",
@@ -5231,6 +5453,7 @@
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/mro.owl",
+            "preferredPrefix": "MRO",
             "products": [
                 {
                     "id": "mro.owl",
@@ -5294,6 +5517,7 @@
             "mailing_list": "psidev-ms-vocab@lists.sourceforge.net",
             "ontology_purl": "http://purl.obolibrary.org/obo/ms.owl",
             "page": "http://www.psidev.info/groups/controlled-vocabularies",
+            "preferredPrefix": "MS",
             "products": [
                 {
                     "id": "ms.obo",
@@ -5343,6 +5567,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/nbo.owl",
+            "preferredPrefix": "NBO",
             "products": [
                 {
                     "id": "nbo.owl",
@@ -5445,6 +5670,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ncit.owl",
+            "preferredPrefix": "NCIT",
             "products": [
                 {
                     "description": "A direct transformation of the standard NCIt content using OBO-style term and ontology IRIs and annotation properties.",
@@ -5501,6 +5727,7 @@
             },
             "mailing_list": "ncro-devel@googlegroups.com, ncro-discuss@googlegroups.com",
             "ontology_purl": "http://purl.obolibrary.org/obo/ncro.owl",
+            "preferredPrefix": "NCRO",
             "products": [
                 {
                     "id": "ncro/dev/ncro.owl",
@@ -5540,6 +5767,7 @@
             },
             "mailing_list": "https://groups.google.com/forum/#!forum/nomen-discuss",
             "ontology_purl": "http://purl.obolibrary.org/obo/nomen.owl",
+            "preferredPrefix": "NOMEN",
             "products": [
                 {
                     "description": "core ontology",
@@ -5584,6 +5812,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/oae.owl",
+            "preferredPrefix": "OAE",
             "products": [
                 {
                     "id": "oae.owl",
@@ -5611,6 +5840,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/oarcs.owl",
+            "preferredPrefix": "OARCS",
             "products": [
                 {
                     "id": "oarcs.owl",
@@ -5651,6 +5881,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/oba.owl",
             "page": "http://wiki.geneontology.org/index.php/Extensions/x-attribute",
+            "preferredPrefix": "OBA",
             "products": [
                 {
                     "id": "oba.owl",
@@ -5687,6 +5918,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/obcs.owl",
+            "preferredPrefix": "OBCS",
             "products": [
                 {
                     "id": "obcs.owl",
@@ -5714,6 +5946,7 @@
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/obib.owl",
+            "preferredPrefix": "OBIB",
             "products": [
                 {
                     "id": "obib.owl",
@@ -5760,6 +5993,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ogg.owl",
+            "preferredPrefix": "OGG",
             "products": [
                 {
                     "id": "ogg.owl",
@@ -5787,6 +6021,7 @@
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ogms.owl",
+            "preferredPrefix": "OGMS",
             "products": [
                 {
                     "id": "ogms.owl",
@@ -5817,6 +6052,7 @@
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ogsf.owl",
+            "preferredPrefix": "OGSF",
             "products": [
                 {
                     "id": "ogsf.owl",
@@ -5848,6 +6084,7 @@
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ohd.owl",
+            "preferredPrefix": "OHD",
             "products": [
                 {
                     "id": "ohd.owl",
@@ -5879,6 +6116,7 @@
             },
             "mailing_list": "http://groups.google.com/group/ohmi-discuss",
             "ontology_purl": "http://purl.obolibrary.org/obo/ohmi.owl",
+            "preferredPrefix": "OHMI",
             "products": [
                 {
                     "id": "ohmi.owl",
@@ -5906,6 +6144,7 @@
             },
             "mailing_list": "http://groups.google.com/group/ohpi-discuss",
             "ontology_purl": "http://purl.obolibrary.org/obo/ohpi.owl",
+            "preferredPrefix": "OHPI",
             "products": [
                 {
                     "id": "ohpi.owl",
@@ -5970,6 +6209,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/omit.owl",
             "page": "http://omit.cis.usouthal.edu/",
+            "preferredPrefix": "OMIT",
             "products": [
                 {
                     "id": "omit.owl",
@@ -5998,6 +6238,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/omo.owl",
+            "preferredPrefix": "OMO",
             "products": [
                 {
                     "id": "omo.owl",
@@ -6036,6 +6277,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/omp.owl",
+            "preferredPrefix": "OMP",
             "products": [
                 {
                     "id": "omp.owl",
@@ -6071,6 +6313,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/omrse.owl",
+            "preferredPrefix": "OMRSE",
             "products": [
                 {
                     "id": "omrse.owl",
@@ -6116,6 +6359,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/one.owl",
             "page": "https://github.com/cyang0128/Nutritional-epidemiologic-ontologies",
+            "preferredPrefix": "ONE",
             "products": [
                 {
                     "id": "one.owl",
@@ -6172,6 +6416,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ons.owl",
             "page": "https://github.com/enpadasi/Ontology-for-Nutritional-Studies",
+            "preferredPrefix": "ONS",
             "products": [
                 {
                     "id": "ons.owl",
@@ -6211,6 +6456,7 @@
             },
             "mailing_list": "http://groups.google.com/group/ontoneo-discuss",
             "ontology_purl": "http://purl.obolibrary.org/obo/ontoneo.owl",
+            "preferredPrefix": "ONTONEO",
             "products": [
                 {
                     "id": "ontoneo.owl",
@@ -6238,6 +6484,7 @@
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/oostt.owl",
+            "preferredPrefix": "OOSTT",
             "products": [
                 {
                     "id": "oostt.owl",
@@ -6265,6 +6512,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/opl.owl",
+            "preferredPrefix": "OPL",
             "products": [
                 {
                     "id": "opl.owl",
@@ -6304,6 +6552,7 @@
             },
             "mailing_list": "http://groups.google.com/group/opmi-discuss",
             "ontology_purl": "http://purl.obolibrary.org/obo/opmi.owl",
+            "preferredPrefix": "OPMI",
             "products": [
                 {
                     "id": "opmi.owl",
@@ -6331,6 +6580,7 @@
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ornaseq.owl",
+            "preferredPrefix": "ORNASEQ",
             "products": [
                 {
                     "id": "ornaseq.owl",
@@ -6357,6 +6607,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/ovae.owl",
+            "preferredPrefix": "OVAE",
             "products": [
                 {
                     "id": "ovae.owl",
@@ -6424,6 +6675,7 @@
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/pco.owl",
+            "preferredPrefix": "PCO",
             "products": [
                 {
                     "id": "pco.owl",
@@ -6456,6 +6708,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/pdro.owl",
+            "preferredPrefix": "PDRO",
             "products": [
                 {
                     "id": "pdro.owl",
@@ -6520,6 +6773,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/peco.owl",
             "page": "http://browser.planteome.org/amigo/term/PECO:0007359",
+            "preferredPrefix": "PECO",
             "products": [
                 {
                     "id": "peco.owl",
@@ -6573,6 +6827,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/phipo.owl",
+            "preferredPrefix": "PHIPO",
             "products": [
                 {
                     "id": "phipo.owl",
@@ -6623,6 +6878,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/plana.owl",
+            "preferredPrefix": "PLANA",
             "products": [
                 {
                     "id": "plana.owl",
@@ -6635,7 +6891,19 @@
             ],
             "repository": "https://github.com/obophenotype/planaria-ontology",
             "title": "planaria-ontology",
-            "tracker": "https://github.com/obophenotype/planaria-ontology/issues"
+            "tracker": "https://github.com/obophenotype/planaria-ontology/issues",
+            "usages": [
+                {
+                    "description": "Planosphere's PAGE database uses PLANA to annotate gene expression locations",
+                    "examples": [
+                        {
+                            "description": "The user can get an overview of the genes expressed in the planarian epidermis",
+                            "url": "https://planosphere.stowers.org/ontology/PLANA_0000034"
+                        }
+                    ],
+                    "user": "https://planosphere.stowers.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -6679,6 +6947,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/planp.owl",
+            "preferredPrefix": "PLANP",
             "products": [
                 {
                     "id": "planp.owl",
@@ -6731,6 +7000,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/poro.owl",
+            "preferredPrefix": "PORO",
             "products": [
                 {
                     "id": "poro.owl",
@@ -6773,6 +7043,7 @@
             },
             "mailing_list": "ppo-discuss@googlegroups.com",
             "ontology_purl": "http://purl.obolibrary.org/obo/ppo.owl",
+            "preferredPrefix": "PPO",
             "products": [
                 {
                     "id": "ppo.owl",
@@ -6823,6 +7094,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/psdo.owl",
+            "preferredPrefix": "PSDO",
             "products": [
                 {
                     "id": "psdo.owl",
@@ -6866,6 +7138,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/pso.owl",
+            "preferredPrefix": "PSO",
             "products": [
                 {
                     "id": "pso.owl",
@@ -6909,6 +7182,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/pw.owl",
             "page": "ftp://ftp.rgd.mcw.edu/pub/data_release/PW_Introduction.doc",
+            "preferredPrefix": "PW",
             "products": [
                 {
                     "id": "pw.owl",
@@ -6985,6 +7259,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/rbo.owl",
+            "preferredPrefix": "RBO",
             "products": [
                 {
                     "id": "rbo.owl",
@@ -7054,6 +7329,7 @@
             },
             "mailing_list": "https://groups.google.com/forum/#!forum/obo-relations",
             "ontology_purl": "http://purl.obolibrary.org/obo/ro.owl",
+            "preferredPrefix": "RO",
             "products": [
                 {
                     "description": "Canonical edition",
@@ -7156,6 +7432,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/rs.owl",
             "page": "ftp://ftp.rgd.mcw.edu/pub/ontology/rat_strain/",
+            "preferredPrefix": "RS",
             "products": [
                 {
                     "id": "rs.owl",
@@ -7201,6 +7478,7 @@
             },
             "mailing_list": "chemistry-ontologies@googlegroups.com",
             "ontology_purl": "http://purl.obolibrary.org/obo/rxno.owl",
+            "preferredPrefix": "RXNO",
             "products": [
                 {
                     "id": "rxno.owl",
@@ -7234,6 +7512,7 @@
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/sepio.owl",
+            "preferredPrefix": "SEPIO",
             "products": [
                 {
                     "id": "sepio.owl",
@@ -7270,6 +7549,7 @@
             "mailing_list": "https://sourceforge.net/p/song/mailman/song-devel/",
             "ontology_purl": "http://purl.obolibrary.org/obo/so.owl",
             "page": "https://en.wikipedia.org/wiki/Sequence_Ontology",
+            "preferredPrefix": "SO",
             "products": [
                 {
                     "id": "so.owl",
@@ -7316,6 +7596,7 @@
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/spd.owl",
+            "preferredPrefix": "SPD",
             "products": [
                 {
                     "id": "spd.owl",
@@ -7349,6 +7630,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/stato.owl",
+            "preferredPrefix": "STATO",
             "products": [
                 {
                     "id": "stato.owl",
@@ -7380,6 +7662,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/swo.owl",
+            "preferredPrefix": "SWO",
             "products": [
                 {
                     "id": "swo.owl",
@@ -7412,6 +7695,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/symp.owl",
+            "preferredPrefix": "SYMP",
             "products": [
                 {
                     "id": "symp.owl",
@@ -7470,6 +7754,7 @@
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/taxrank.owl",
+            "preferredPrefix": "TAXRANK",
             "products": [
                 {
                     "id": "taxrank.owl",
@@ -7522,6 +7807,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/to.owl",
             "page": "http://browser.planteome.org/amigo/term/TO:0000387#display-lineage-tab",
+            "preferredPrefix": "TO",
             "products": [
                 {
                     "id": "to.owl",
@@ -7590,6 +7876,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/trans.owl",
+            "preferredPrefix": "TRANS",
             "products": [
                 {
                     "id": "trans.owl",
@@ -7633,6 +7920,7 @@
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/tto.owl",
+            "preferredPrefix": "TTO",
             "products": [
                 {
                     "id": "tto.obo",
@@ -7650,6 +7938,47 @@
             },
             "title": "Teleost taxonomy ontology",
             "tracker": "https://github.com/phenoscape/teleost-taxonomy-ontology/issues"
+        },
+        {
+            "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal Browser",
+                    "url": "http://bioportal.bioontology.org/ontologies/TXPO?p=classes"
+                },
+                {
+                    "label": "TOXPILOT",
+                    "title": "TOXPILOT",
+                    "url": "https://toxpilot.nibiohn.go.jp/"
+                }
+            ],
+            "contact": {
+                "email": "y-yamagata@nibiohn.go.jp",
+                "github": "txpo-ontology",
+                "label": "Yuki Yamagata"
+            },
+            "description": "TOXic Process Ontology (TXPO) systematizes a wide variety of terms involving toxicity courses and processes. The first version of TXPO focuses on liver toxicity.",
+            "domain": "toxicity",
+            "homepage": "https://toxpilot.nibiohn.go.jp/",
+            "id": "txpo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC-BY 3.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/txpo.owl",
+            "preferredPrefix": "TXPO",
+            "products": [
+                {
+                    "id": "txpo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/txpo.owl"
+                }
+            ],
+            "repository": "https://github.com/txpo-ontology/TXPO",
+            "title": "Toxic Process Ontology",
+            "tracker": "https://github.com/txpo-ontology/TXPO/issues"
         },
         {
             "activity_status": "active",
@@ -7734,6 +8063,7 @@
             "mailing_list": "https://lists.sourceforge.net/lists/listinfo/obo-anatomy",
             "ontology_purl": "http://purl.obolibrary.org/obo/uberon.owl",
             "page": "http://en.wikipedia.org/wiki/Uberon",
+            "preferredPrefix": "UBERON",
             "products": [
                 {
                     "description": "core ontology",
@@ -7970,6 +8300,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/uo.owl",
+            "preferredPrefix": "UO",
             "products": [
                 {
                     "id": "uo.owl",
@@ -8003,6 +8334,7 @@
             },
             "mailing_list": "https://groups.google.com/forum/#!forum/phenotype-ontologies-editors",
             "ontology_purl": "http://purl.obolibrary.org/obo/upheno.owl",
+            "preferredPrefix": "UPHENO",
             "products": [
                 {
                     "id": "upheno.owl",
@@ -8056,6 +8388,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/vo.owl",
+            "preferredPrefix": "VO",
             "products": [
                 {
                     "id": "vo.owl",
@@ -8087,6 +8420,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/vt.owl",
+            "preferredPrefix": "VT",
             "products": [
                 {
                     "id": "vt.owl",
@@ -8095,7 +8429,39 @@
             ],
             "repository": "https://github.com/AnimalGenome/vertebrate-trait-ontology",
             "title": "Vertebrate trait ontology",
-            "tracker": "https://github.com/AnimalGenome/vertebrate-trait-ontology/issues"
+            "tracker": "https://github.com/AnimalGenome/vertebrate-trait-ontology/issues",
+            "usages": [
+                {
+                    "description": "The Animal Quantitative Trait Loci (QTL) Database (Animal QTLdb) annotates trait mapping data for livestock animals using the VTO",
+                    "examples": [
+                        {
+                            "description": "Links to cattle QTL associated with the VTO term gastrointestinal system morphology trait or its descendants",
+                            "url": "https://www.animalgenome.org/cgi-bin/QTLdb/BT/traitsrch?tword=Gastrointestinal%20tract%20weight"
+                        }
+                    ],
+                    "user": "https://www.animalgenome.org/cgi-bin/QTLdb/index"
+                },
+                {
+                    "description": "The Rat Genome Database (RGD) uses the VTO to annotate rat QTL",
+                    "examples": [
+                        {
+                            "description": "Annotations of rat QTL associated with the VTO term cholesterol amount or its descendants",
+                            "url": "https://rgd.mcw.edu/rgdweb/ontology/annot.html?acc_id=VT:0003947&species=Rat"
+                        }
+                    ],
+                    "user": "https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=VT:0000001"
+                },
+                {
+                    "description": "The Mouse Phenome Database (MPD) uses the VTO to annotate mouse strain traits",
+                    "examples": [
+                        {
+                            "description": "Studies in the MPD database that have measurements related to the VTO term spleen size trait or its descendants",
+                            "url": "https://phenome.jax.org/ontologies/VT:0002224"
+                        }
+                    ],
+                    "user": "https://phenome.jax.org/ontologies/navigate/VT:0000001"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -8113,6 +8479,7 @@
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/vto.owl",
+            "preferredPrefix": "VTO",
             "products": [
                 {
                     "id": "vto.owl",
@@ -8386,6 +8753,7 @@
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/xco.owl",
+            "preferredPrefix": "XCO",
             "products": [
                 {
                     "id": "xco.owl",
@@ -8436,6 +8804,7 @@
             "mailing_list": "psidev-ms-vocab@lists.sourceforge.net",
             "ontology_purl": "http://purl.obolibrary.org/obo/xlmod.owl",
             "page": "http://www.psidev.info/groups/controlled-vocabularies",
+            "preferredPrefix": "XLMOD",
             "products": [
                 {
                     "id": "xlmod.obo",
@@ -8501,6 +8870,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/xpo.owl",
+            "preferredPrefix": "XPO",
             "products": [
                 {
                     "id": "xpo.owl",
@@ -8540,6 +8910,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/zeco.owl",
+            "preferredPrefix": "ZECO",
             "products": [
                 {
                     "id": "zeco.obo",
@@ -8586,6 +8957,7 @@
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/zfs.owl",
             "page": "https://github.com/obophenotype/developmental-stage-ontologies/wiki/ZFS",
+            "preferredPrefix": "ZFS",
             "products": [
                 {
                     "id": "zfs.owl",
@@ -8655,6 +9027,7 @@
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/zp.owl",
+            "preferredPrefix": "ZP",
             "products": [
                 {
                     "id": "zp.owl",
@@ -8690,43 +9063,6 @@
         },
         {
             "activity_status": "active",
-            "contact": {
-                "email": "polcaes@gmail.com",
-                "github": "pcastellanoescuder",
-                "label": "Pol Castellano Escuder"
-            },
-            "dependencies": [
-                {
-                    "id": "chebi"
-                },
-                {
-                    "id": "foodon"
-                }
-            ],
-            "description": "FOBI (Food-Biomarker Ontology) is an ontology to represent food intake data and associate it with metabolomic data",
-            "domain": "metabolomics and nutrition",
-            "id": "fobi",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-BY",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/fobi.owl",
-            "products": [
-                {
-                    "format": "owl-rdf/xml",
-                    "id": "fobi.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/fobi.owl",
-                    "title": "FOBI is an ontology to represent food intake data and associate it with metabolomic data"
-                }
-            ],
-            "repository": "https://github.com/pcastellanoescuder/FoodBiomarkerOntology",
-            "title": "FOBI",
-            "tracker": "https://github.com/pcastellanoescuder/FoodBiomarkerOntology/issues"
-        },
-        {
-            "activity_status": "active",
             "build": {
                 "checkout": "git clone https://github.com/Superraptor/GSSO.git",
                 "path": ".",
@@ -8747,6 +9083,7 @@
                 "url": "http://www.apache.org/licenses/LICENSE-2.0"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/gsso.owl",
+            "preferredPrefix": "GSSO",
             "products": [
                 {
                     "id": "gsso.owl",
@@ -8808,6 +9145,7 @@
             },
             "mailing_list": "https://groups.io/g/human-phenotype-ontology",
             "ontology_purl": "http://purl.obolibrary.org/obo/hp.owl",
+            "preferredPrefix": "HP",
             "products": [
                 {
                     "id": "hp.owl",
@@ -8878,6 +9216,7 @@
                 "url": "http://opensource.org/licenses/Artistic-2.0"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/kisao.owl",
+            "preferredPrefix": "KISAO",
             "products": [
                 {
                     "id": "kisao.owl",
@@ -8907,6 +9246,7 @@
                 "url": "http://opensource.org/licenses/Artistic-2.0"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/mamo.owl",
+            "preferredPrefix": "MAMO",
             "products": [
                 {
                     "id": "mamo.owl",
@@ -8937,6 +9277,7 @@
                 "url": "http://opensource.org/licenses/Artistic-2.0"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/sbo.owl",
+            "preferredPrefix": "SBO",
             "products": [
                 {
                     "id": "sbo.owl",
@@ -9062,6 +9403,7 @@
                 "url": "https://www.gnu.org/licenses/gpl-3.0.en.html"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/scdo.owl",
+            "preferredPrefix": "SCDO",
             "products": [
                 {
                     "id": "scdo.owl",
@@ -9075,46 +9417,6 @@
             "repository": "https://github.com/scdodev/scdo-ontology",
             "title": "Sickle Cell Disease Ontology",
             "tracker": "https://github.com/scdodev/scdo-ontology/issues"
-        },
-        {
-            "activity_status": "active",
-            "browsers": [
-                {
-                    "label": "BioPortal",
-                    "title": "BioPortal Browser",
-                    "url": "http://bioportal.bioontology.org/ontologies/TXPO?p=classes"
-                },
-                {
-                    "label": "TOXPILOT",
-                    "title": "TOXPILOT",
-                    "url": "https://toxpilot.nibiohn.go.jp/"
-                }
-            ],
-            "contact": {
-                "email": "y-yamagata@nibiohn.go.jp",
-                "github": "txpo-ontology",
-                "label": "Yuki Yamagata"
-            },
-            "description": "TOXic Process Ontology (TXPO) systematizes a wide variety of terms involving toxicity courses and processes. The first version of TXPO focuses on liver toxicity.",
-            "domain": "toxicity",
-            "homepage": "https://toxpilot.nibiohn.go.jp/",
-            "id": "txpo",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC-BY version 3.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/txpo.owl",
-            "products": [
-                {
-                    "id": "txpo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/txpo.owl"
-                }
-            ],
-            "repository": "https://github.com/txpo-ontology/TXPO",
-            "title": "Toxic Process Ontology",
-            "tracker": "https://github.com/txpo-ontology/TXPO/issues"
         },
         {
             "activity_status": "orphaned",
@@ -9196,6 +9498,7 @@
             "id": "vario",
             "layout": "ontology_detail",
             "ontology_purl": "http://purl.obolibrary.org/obo/vario.owl",
+            "preferredPrefix": "VariO",
             "products": [
                 {
                     "id": "vario.owl",
