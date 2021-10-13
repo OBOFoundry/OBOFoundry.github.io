@@ -27,7 +27,7 @@ usages:
   - user: https://agrofims.org/about
     description: AgroFIMS enables digital collection of agronomic data that is semantically described a priori with agronomic terms from AgrO.
   - user: https://gardian.bigdata.cgiar.org/
-    decription: AgrO is being used by GARDIAN to facilitate data search within publications and datasets for use in quantitative analyses.
+    description: AgrO is being used by GARDIAN to facilitate data search within publications and datasets for use in quantitative analyses.
 jobs:
   - id: https://travis-ci.org/AgriculturalSemantics/agro
     type: travis-ci
