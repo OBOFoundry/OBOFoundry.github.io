@@ -45,6 +45,7 @@ usages:
       - id: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6324074/
         title: "Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources"
 activity_status: active
+preferredPrefix: PATO
 ---
 
 Phenotypic qualities (properties). This ontology can be used in conjunction with other ontologies such as GO or anatomical ontologies to refer to phenotypes. Examples of qualities are red, ectopic, high temperature, fused, small, edematous and arrested.

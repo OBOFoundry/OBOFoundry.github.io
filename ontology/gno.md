@@ -49,4 +49,5 @@ usages:
         description: example of ChEBI use of GNO terms
 activity_status: active
 repository: https://github.com/glygen-glycan-data/GNOme
+preferredPrefix: GNO
 ---

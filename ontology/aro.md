@@ -17,6 +17,7 @@ products:
   - id: aro.owl
 activity_status: active
 repository: https://github.com/arpcard/aro
+preferredPrefix: ARO
 ---
 
 The Antibiotic Resistance Ontology

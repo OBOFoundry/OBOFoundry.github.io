@@ -37,6 +37,7 @@ usages:
         description: Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data
 activity_status: active
 repository: https://github.com/EBISPOT/ancestro
+preferredPrefix: HANCESTRO
 ---
 
 # Summary

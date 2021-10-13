@@ -24,6 +24,7 @@ build:
   method: obo2owl
 activity_status: active
 repository: https://github.com/HUPO-PSI/mzIdentML
+preferredPrefix: XLMOD
 ---
 
 A structured controlled vocabulary for cross-linker reagents used in cross-linking mass spectrometry experiments. Developed by the HUPO Proteomics Standards Initiative (PSI).

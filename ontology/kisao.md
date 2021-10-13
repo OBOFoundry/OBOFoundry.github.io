@@ -19,6 +19,7 @@ license:
   label: Artistic License 2.0
 activity_status: active
 repository: https://github.com/SED-ML/KiSAO
+preferredPrefix: KISAO
 ---
 
 The Kinetic Simulation Algorithm Ontology (KiSAO) classifies algorithms available for the simulation of models in biology, and their characteristics, parameters, and outputs.

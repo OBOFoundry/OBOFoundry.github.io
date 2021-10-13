@@ -32,4 +32,5 @@ build:
   method: archive
 activity_status: active
 repository: https://github.com/obophenotype/upheno
+preferredPrefix: UPHENO
 ---

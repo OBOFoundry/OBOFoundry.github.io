@@ -16,6 +16,7 @@ tracker: https://github.com/aszool/oarcs/issues
 products:
   - id: oarcs.owl
 activity_status: active
+preferredPrefix: OARCS
 ---
 
 OArCS is an ontology describing the Arthropod ciruclatory system.

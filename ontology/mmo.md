@@ -30,6 +30,7 @@ browsers:
     url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000
 activity_status: active
 repository: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology
+preferredPrefix: MMO
 ---
 
 The Measurement Method Ontology is designed to represent the variety of methods used to make qualitative and quantitative clinical and phenotype measurements both in the clinic and with model organisms.

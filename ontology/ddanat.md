@@ -26,6 +26,7 @@ build:
 tracker: https://github.com/dictyBase/migration-data/issues
 activity_status: active
 repository: https://github.com/dictyBase/migration-data
+preferredPrefix: DDANAT
 ---
 
 A structured controlled vocabulary of the anatomy of the slime-mould <i>Dictyostelium discoideum</i>.

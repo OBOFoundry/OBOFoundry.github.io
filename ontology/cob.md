@@ -17,6 +17,7 @@ license:
 title: Core Ontology for Biology and Biomedicine
 activity_status: active
 repository: https://github.com/OBOFoundry/COB
+preferredPrefix: COB
 ---
 
 The Core Ontology for Biology and Biomedicine (COB) brings together key terms from a wide range of OBO projects into a single, small ontology. The goal is to improve interoperabilty and reuse across the OBO community through better coordination of key terms.

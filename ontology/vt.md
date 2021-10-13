@@ -35,4 +35,5 @@ usages:
       - url: https://phenome.jax.org/ontologies/VT:0002224
         description: "Studies in the MPD database that have measurements related to the VTO term spleen size trait or its descendants"
 repository: https://github.com/AnimalGenome/vertebrate-trait-ontology
+preferredPrefix: VT
 ---
