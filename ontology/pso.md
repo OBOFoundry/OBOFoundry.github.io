@@ -26,6 +26,7 @@ license:
   label: CC-BY
 activity_status: active
 repository: https://github.com/Planteome/plant-stress-ontology
+preferredPrefix: PSO
 ---
 
 Enter a detailed description of your ontology here

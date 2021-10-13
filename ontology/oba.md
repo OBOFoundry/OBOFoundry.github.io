@@ -27,6 +27,7 @@ build:
   method: vcs
 activity_status: active
 repository: https://github.com/obophenotype/bio-attribute-ontology
+preferredPrefix: OBA
 ---
 
 A collection of biological attributes (traits) covering all kingdoms of life. Interoperable with

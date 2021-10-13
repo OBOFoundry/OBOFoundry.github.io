@@ -20,6 +20,7 @@ usages:
     description: tracking informed consent in the kidney precision medicine project that has over 20 institutes involved.
 activity_status: active
 repository: https://github.com/ICO-ontology/ICO
+preferredPrefix: ICO
 ---
 
 # Summary

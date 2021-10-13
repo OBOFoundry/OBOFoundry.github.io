@@ -30,6 +30,7 @@ taxon:
   label: Rattus
 activity_status: active
 repository: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology
+preferredPrefix: RS
 ---
 
 <img src="http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif"/>

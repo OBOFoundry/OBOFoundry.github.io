@@ -22,6 +22,7 @@ dependencies:
 products:
   - id: mfmo.owl
 activity_status: active
+preferredPrefix: MFMO
 ---
 
 ADD DESCRIPTION HERE

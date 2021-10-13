@@ -31,6 +31,7 @@ dependencies:
 tracker: https://github.com/FoodOntology/foodon/issues/
 activity_status: active
 repository: https://github.com/FoodOntology/foodon
+preferredPrefix: FOODON
 ---
 
 A broadly scoped ontology representing entities which bear a “food role”.  It encompasses materials in natural ecosystems and food webs as well as human-centric categorization and handling of food.

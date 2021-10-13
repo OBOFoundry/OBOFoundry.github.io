@@ -20,6 +20,7 @@ license:
   label: CC-BY
 activity_status: active
 repository: https://github.com/jannahastings/mental-functioning-ontology
+preferredPrefix: MF
 ---
 
 The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning, founded on the Basic Formal Ontology (BFO) and related to the Ontology for General Medical Science (OGMS).

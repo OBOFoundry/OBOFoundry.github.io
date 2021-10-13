@@ -29,6 +29,7 @@ browsers:
     url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000
 activity_status: active
 repository: https://github.com/rat-genome-database/XCO-experimental-condition-ontology
+preferredPrefix: XCO
 ---
 
 <img src="http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif"/>

@@ -33,6 +33,7 @@ license:
   label: CC-BY
 activity_status: active
 repository: https://github.com/obophenotype/planaria-ontology
+preferredPrefix: PLANA
 ---
 
 Anatomy ontology for planaria and terms specific to the developmental stages of the planarian __Schmidtea mediterranea__

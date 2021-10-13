@@ -62,6 +62,7 @@ usages:
         description: Search for experimental data on antibody and T cell epitopes associated with human diseases in the DO. To search for DO disease terms, use the Disease search box on the front page.
 activity_status: active
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
+preferredPrefix: DOID
 ---
 
 Creating a comprehensive classification of human diseases organized by etiology.

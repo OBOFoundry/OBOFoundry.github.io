@@ -19,6 +19,7 @@ license:
   label: CC-BY
 activity_status: active
 repository: https://github.com/ufbmi/dron/
+preferredPrefix: DRON
 ---
 
 We built this ontology primarily to support comparative effectiveness researchers studying claims data. They need to be able to query U.S. National Drug Codes (NDCs) by ingredient, mechanism of action (beta-adrenergic blockade), physiological effect (diuresis), and therapeutic intent (anti-hypertensive).

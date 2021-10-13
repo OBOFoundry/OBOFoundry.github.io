@@ -19,4 +19,5 @@ build:
   method: owl2obo
 activity_status: active
 repository: https://github.com/allysonlister/swo
+preferredPrefix: SWO
 ---
