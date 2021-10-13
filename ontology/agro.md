@@ -20,7 +20,6 @@ products:
   - id: agro.owl
     title: "AgrO"
     description: "Contains all AgrO terms and links to other relavent ontologies."
-    page: https://github.com/AgriculturalSemantics/agro/releases/tag/v2021-07-01
 publications:
   - id: http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf
     title: "Data-driven Agricultural Research for Development: A Need for Data Harmonization Via Semantics."
