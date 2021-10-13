@@ -15,6 +15,7 @@ products:
   - id: ino.owl
 activity_status: active
 repository: https://github.com/INO-ontology/ino
+preferredPrefix: INO
 ---
 
 # Summary

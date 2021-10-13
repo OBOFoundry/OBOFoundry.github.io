@@ -15,6 +15,7 @@ license:
   label: CC-BY
 activity_status: active
 repository: https://github.com/OVAE-Ontology/ovae
+preferredPrefix: OVAE
 ---
 
 # Summary

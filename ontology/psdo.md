@@ -25,6 +25,7 @@ license:
   label: CC-BY
 activity_status: active
 repository: https://github.com/Display-Lab/psdo
+preferredPrefix: PSDO
 ---
 
 The Performance Summary Display Ontology (PSDO) is a lightweight application ontology used to

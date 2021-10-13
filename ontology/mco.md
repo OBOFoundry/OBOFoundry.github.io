@@ -39,6 +39,7 @@ license:
   label: CC-BY
 activity_status: active
 repository: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
+preferredPrefix: MCO
 ---
 
 Enter a detailed description of your ontology here

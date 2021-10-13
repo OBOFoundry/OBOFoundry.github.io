@@ -49,6 +49,7 @@ usages:
         title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species"
 activity_status: active
 repository: https://github.com/evidenceontology/evidenceontology
+preferredPrefix: ECO
 ---
 
 <img src="https://avatars1.githubusercontent.com/u/12802432" alt="ECO logo"/>

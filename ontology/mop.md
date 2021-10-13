@@ -20,4 +20,5 @@ products:
     title: Molecular Process Ontology
 activity_status: active
 repository: https://github.com/rsc-ontologies/rxno
+preferredPrefix: MOP
 ---

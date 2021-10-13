@@ -15,6 +15,7 @@ license:
   label: CC-BY
 activity_status: active
 repository: https://github.com/ontoice/ICEO
+preferredPrefix: ICEO
 ---
 
 # ICEO: Integrative and Conjugative Element Ontology

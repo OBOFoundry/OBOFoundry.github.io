@@ -54,6 +54,7 @@ usages:
       - url: http://purl.obolibrary.org/obo/ECO_0001820
         description: "rapid amplification of cDNA ends polymerase chain reaction evidence"
 activity_status: active
+preferredPrefix: OBI
 ---
 
 The Ontology for Biomedical Investigations (OBI) project is developing an integrated ontology for the description of life-science and clinical investigations.

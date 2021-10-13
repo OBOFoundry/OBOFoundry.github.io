@@ -20,6 +20,7 @@ build:
   method: owl2obo
 tracker: https://purl.obolibrary.org/obo/ohd/issues
 activity_status: active
+preferredPrefix: OHD
 ---
 
 The Oral Health and Disease Ontology is intended as a BFO and OBO

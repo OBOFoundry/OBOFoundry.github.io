@@ -22,6 +22,7 @@ build:
   method: obo2owl
 activity_status: active
 repository: https://github.com/HUPO-PSI/psi-mi-CV
+preferredPrefix: MI
 ---
 
 A structured controlled vocabulary for the annotation of experiments concerned with protein-protein interactions. Developed by the HUPO Proteomics Standards Initiative.

@@ -42,4 +42,5 @@ usages:
         title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species"
 activity_status: active
 repository: https://github.com/obophenotype/zebrafish-phenotype-ontology
+preferredPrefix: ZP
 ---

@@ -20,4 +20,5 @@ build:
 tracker: https://github.com/bio-ontology-research-group/unit-ontology/issues
 activity_status: active
 repository: https://github.com/bio-ontology-research-group/unit-ontology
+preferredPrefix: UO
 ---

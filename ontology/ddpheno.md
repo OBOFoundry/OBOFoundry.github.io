@@ -26,4 +26,5 @@ build:
   path: "."
 activity_status: active
 repository: https://github.com/obophenotype/dicty-phenotype-ontology
+preferredPrefix: DDPHENO
 ---

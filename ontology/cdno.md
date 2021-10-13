@@ -30,6 +30,7 @@ license:
   label: CC-BY
 activity_status: active
 repository: https://github.com/Southern-Cross-Plant-Science/cdno
+preferredPrefix: CDNO
 ---
 
 The CDNO provides structured terminologies to describe nutritional attributes of material entities that contribute to human diet. These terms are intended primarily to be associated with datasets that quantify concentration of chemical nutritional components derived from samples taken from any stage in the production of food raw materials (including from crops, livestock, fisheries) and through processing and supply chains. Additional knowledge associated with these dietary sources may be represented by terms that describe functional, physical and other attributes. 

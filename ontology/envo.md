@@ -83,6 +83,7 @@ build:
 tracker: https://github.com/EnvironmentOntology/envo/issues/
 activity_status: active
 repository: https://github.com/EnvironmentOntology/envo
+preferredPrefix: ENVO
 ---
 
 EnvO is a community ontology for the concise, controlled description of environments.
