@@ -20,7 +20,7 @@ It is expected that Foundry ontologies will collaborate with other Foundry ontol
 * _Collaborative workshop_: http://ncorwiki.buffalo.edu/index.php/Protein_Ontology_Workshop 
 * _Conflict resolution_: The Statistical Methods Ontology (STATO) and Ontology of Biological and Clinical Statistics (OBCS) both cover statistics. The developers of each have posted to the OBO Foundry discussion list to work out how to collaborate.
 * _Contribution to external ontology_: Plant Ontology (PO) curators contribute definitions to Gene Ontology (GO) for biological processes and cell components in plants. PO then uses the GO terms in their definition of corresponding structures and stages.
-*_Documentation of collaboration_: Cell Line Ontology (CLO), Cell Ontology (CL), and Ontology of Biomedical Investigations (OBI) published a paper sorting out their overlap and documented working together. Sarntivjiai et al., "CLO: The cell line ontology", J. Biomed. Sem., 2014, 5, 37. http://www.ncbi.nlm.nih.gov/pubmed/25852852
+* _Documentation of collaboration_: Cell Line Ontology (CLO), Cell Ontology (CL), and Ontology of Biomedical Investigations (OBI) published a paper sorting out their overlap and documented working together. Sarntivjiai et al., "CLO: The cell line ontology", J. Biomed. Sem., 2014, 5, 37. http://www.ncbi.nlm.nih.gov/pubmed/25852852
 * _Providing terms upon request_: The Disease Ontology (DO) responded to a request from the PRotein Ontology for curation of certain disease terms.
 
 ### Counter-examples: 
