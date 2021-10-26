@@ -28,7 +28,7 @@ for the project, they should identify a replacement and update the metadata acco
 
 First, read the [FAQ](http://obofoundry.github.io/faq/how-do-i-edit-metadata.html) on how to edit the metadata for your ontology.
 
-The contact email MUST NOT be a mailing list. If this person does not already have a GitHub account, we request that they [create one](https://github.com/join). Then, add the following to your [metadata file](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology) (replacing with the correct email, name, and GitHub username):
+The contact email MUST NOT be a mailing list. The GitHub account MUST be for the individual designated as the locus of authority. If this person does not already have a GitHub account, we request that they [create one](https://github.com/join). Then, add the following to your [metadata file](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology) (replacing with the correct email, name, and GitHub username):
 
 `contact:
  email: foo@bar.com
