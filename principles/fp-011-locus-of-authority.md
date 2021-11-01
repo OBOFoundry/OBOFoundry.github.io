@@ -17,26 +17,26 @@ It is important that there is a person responsible for communication rather than
 
 ## Recomendations and Requirements
 A primary contact person MUST be assigned.
-The name, email address and GitHub username of the contact person MUST be provided when requesting to register with [OBO](http://obofoundry.org), and the email address MUST NOT be a mailing list. If the person does not already have a GitHub account, we request that they [create one](https://github.com/join). The contact person MUST be subscribed to obo-discuss in order to be kept abreast of community developments of relevance to 
+The name, email address and GitHub username of the contact person MUST be provided when requesting to register with [OBO](http://obofoundry.org). The contact person MUST be subscribed to obo-discuss in order to be kept abreast of community developments of relevance to 
 participating ontology projects, but the primary contact person can, of course, delegate 
 these responsibilities for the project as necessary. The email address of the person who is the locus of the 
-authority MUST be kept up-to-date, and before that person ceases to have responsibility 
-for the project, they should identify a replacement and update the metadata accordingly. 
+authority MUST be kept up-to-date, and before that person ceases to have responsibility
+for the project, they should identify a replacement and update the metadata accordingly 
 (via the [OBO Foundry issue tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues)) before they move on.
 
 ## Implementation
 
-The following should be included in the metadata file for your ontology, found in this [folder](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology) (replacing with the correct email, name, and GitHub username):
-<pre>
-contact:
-   email: foo@bar.com
-   label: John Smith
-   github: jsmith123</pre>
-   
-Instructions for direct editing of the metadata file can be found in the [FAQ](http://obofoundry.github.io/faq/how-do-i-edit-metadata.html). Alternatively, a request to change the metadata can be submitted to the [OBO Foundry issue tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues).
+First, read the [FAQ](http://obofoundry.github.io/faq/how-do-i-edit-metadata.html) on how to edit the metadata for your ontology.
+
+The contact email MUST NOT be a mailing list. The GitHub account MUST be for the individual designated as the locus of authority. If this person does not already have a GitHub account, we request that they [create one](https://github.com/join). Then, add the following to your [metadata file](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology) (replacing with the correct email, name, and GitHub username):
+
+`contact:
+ email: foo@bar.com
+ label: John Smith
+ github: jsmith123`
 
 ### Examples: 
-For Mondo, the primary contact person is Nicole Vasilevsky (nicole@tislab.org) and her GitHub handle is: nicolevasilevsky. 
+For Mondo, the primary contact person is Nicole Vasilevsky (nicole {at} tislab.org) and her GitHub handle is: nicolevasilevsky. 
 
 ### Counter-Examples: 
 Mailing list; for ChEBI, chebi-help@ebi.ac.uk
