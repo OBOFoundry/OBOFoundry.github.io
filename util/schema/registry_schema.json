@@ -212,8 +212,7 @@
 						},
 						"label": {
 							"enum": [
-								"CC BY 4.0",
-								"CC-BY 4.0"
+								"CC BY 4.0"
 							]
 						}
 					}
@@ -228,9 +227,6 @@
 						},
 						"label": {
 							"enum": [
-								"CC-0",
-								"CC0",
-								"CC0 1.0 Universal",
 								"CC0 1.0"
 							]
 						}
@@ -246,7 +242,6 @@
 						},
 						"label": {
 							"enum": [
-								"CC-BY 3.0",
 								"CC BY 3.0"
 							]
 						}
@@ -292,8 +287,7 @@
 						},
 						"label": {
 							"enum": [
-								"CC BY 2.0",
-								"CC-BY 2.0"
+								"CC BY 2.0"
 							]
 						}
 					}
@@ -428,8 +422,8 @@
 					"description": {"type":"string"},
 					"seeAlso": {
                                                 "description": "secondary link to the user, such as a FAIR Sharing entry",
-						"type": "string", 
-						"format": "uri" 
+						"type": "string",
+						"format": "uri"
 						},
         				"examples": {
 						"description": "specific page showing how the ontology is used by that user/resource",
@@ -454,7 +448,7 @@
 							"type": "object",
 							"additionalProperties" : false,
 							"properties": {
-								"id": { 
+								"id": {
 									"type": "string",
 									"format": "uri"
 								},
@@ -462,7 +456,7 @@
 							},
 							"required": ["id", "title"]
 						}
-					}  
+					}
       				},
       				"required": ["user", "description"]
 			}
