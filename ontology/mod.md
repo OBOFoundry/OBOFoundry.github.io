@@ -6,7 +6,7 @@ contact:
   label: Pierre-Alain Binz
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 publications:
   - id: https://pubmed.ncbi.nlm.nih.gov/18688235/
     title: "The PSI-MOD community standard for representation of protein modification data"

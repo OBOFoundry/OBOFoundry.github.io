@@ -7,7 +7,7 @@ contact:
   github: fbastian
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0
+  label: CC0 1.0
 title: Confidence Information Ontology
 description: An ontology to capture confidence information about annotations.
 homepage: https://github.com/BgeeDB/confidence-information-ontology

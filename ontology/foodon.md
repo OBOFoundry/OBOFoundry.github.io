@@ -10,7 +10,7 @@ domain: food
 homepage: https://foodon.org/
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 products:
   - id: foodon.owl
     title: FoodOn full ontology including 9000 SIREN indexed food products

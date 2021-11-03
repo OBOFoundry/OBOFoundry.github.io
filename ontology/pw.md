@@ -6,7 +6,7 @@ contact:
   label: G. Thomas Hayman
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 description: A controlled vocabulary for annotating gene products to pathways.
 domain: biological process
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html

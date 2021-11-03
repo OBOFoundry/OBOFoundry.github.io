@@ -16,7 +16,7 @@ taxon:
 title: Mouse pathology ontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 build:
   source_url: https://raw.githubusercontent.com/PaulNSchofield/mpath/master/mpath.obo
   insert_ontology_id: true

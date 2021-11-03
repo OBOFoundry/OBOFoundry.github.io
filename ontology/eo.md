@@ -18,7 +18,7 @@ products:
 tracker: https://github.com/Planteome/plant-environment-ontology/issues
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 is_obsolete: true
 replaced_by: peco
 publications:

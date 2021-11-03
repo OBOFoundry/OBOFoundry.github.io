@@ -12,7 +12,7 @@ contact:
   github: marijane
 license:
   url: https://creativecommons.org/licenses/by/2.0/
-  label: CC-BY
+  label: CC BY 2.0
 build:
   checkout: git clone https://github.com/data2health/contributor-role-ontology.git
   system: git

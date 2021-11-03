@@ -13,7 +13,7 @@ homepage: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
 page: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 products:
   - id: one.owl
 dependencies:

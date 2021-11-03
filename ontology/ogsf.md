@@ -8,7 +8,7 @@ contact:
   email: linikujp@gmail.com
 license:
   url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY 3.0
+  label: CC BY 3.0
 products:
   - id: ogsf.owl
 title: Ontology of Genetic Susceptibility Factor

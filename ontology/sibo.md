@@ -14,7 +14,7 @@ products:
 title: Social Insect Behavior Ontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 build:
   checkout: git clone https://github.com/obophenotype/sibo.git
   system: git

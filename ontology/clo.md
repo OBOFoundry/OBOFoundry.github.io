@@ -17,7 +17,7 @@ dependencies:
   - id: ncbitaxon
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY 3.0
+  label: CC BY 3.0
 activity_status: active
 repository: https://github.com/CLO-Ontology/CLO
 preferredPrefix: CLO

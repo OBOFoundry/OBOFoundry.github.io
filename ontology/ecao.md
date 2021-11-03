@@ -23,7 +23,7 @@ dependencies:
 tracker: https://github.com/echinoderm-ontology/ecao_ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 activity_status: active
 repository: https://github.com/echinoderm-ontology/ecao_ontology
 preferredPrefix: ECAO

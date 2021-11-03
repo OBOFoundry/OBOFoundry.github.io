@@ -3,7 +3,7 @@ layout: ontology_detail
 id: chmo
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 contact:
   email: batchelorc@rsc.org
   label: Colin Batchelor

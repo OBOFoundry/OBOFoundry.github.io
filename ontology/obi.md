@@ -19,7 +19,7 @@ contact:
   email: bpeters@lji.org
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 depicted_by: https://svn.code.sf.net/p/obi/code/trunk/web/htdocs/images/obi-lotext.png
 build:
   source_url: http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/

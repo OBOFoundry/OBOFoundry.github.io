@@ -13,7 +13,7 @@ products:
   - id: cob.owl
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0
+  label: CC0 1.0
 title: Core Ontology for Biology and Biomedicine
 activity_status: active
 repository: https://github.com/OBOFoundry/COB

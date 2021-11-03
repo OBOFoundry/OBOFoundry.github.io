@@ -40,7 +40,7 @@ browsers:
     url: http://browser.planteome.org/amigo
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae

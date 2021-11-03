@@ -49,7 +49,7 @@ products:
     page: http://bioinformatics.oxfordjournals.org/content/28/9/1262.long
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 usages:
   - user: http://geneontology.org
     type: annotation

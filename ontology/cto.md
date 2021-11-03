@@ -13,7 +13,7 @@ products:
   - id: cto.owl
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 activity_status: active
 repository: https://github.com/ClinicalTrialOntology/CTO
 preferredPrefix: CTO

@@ -6,7 +6,7 @@ contact:
   label: Onard Mejino
 license:
   url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY 3.0
+  label: CC BY 3.0
 description: This is currently a slimmed down version of FMA
 domain: anatomy
 homepage: http://si.washington.edu/projects/fma

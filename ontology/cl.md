@@ -21,7 +21,7 @@ contact:
   github: addiehl
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 taxon:
   id: NCBITaxon:33208
   label: Metazoa

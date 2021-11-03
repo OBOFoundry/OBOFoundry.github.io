@@ -12,7 +12,7 @@ contact:
   github: bpeters42
 license:
   url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 products:
   - id: mro.owl
 usages:

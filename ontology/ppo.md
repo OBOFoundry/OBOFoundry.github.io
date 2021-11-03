@@ -12,7 +12,7 @@ mailing_list: ppo-discuss@googlegroups.com
 tracker: https://github.com/PlantPhenoOntology/PPO/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 products:
   - id: ppo.owl
 taxon:

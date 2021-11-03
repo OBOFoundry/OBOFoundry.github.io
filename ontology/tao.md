@@ -15,7 +15,7 @@ taxon:
 title: Teleost Anatomy Ontology
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 build:
   source_url: http://purl.obolibrary.org/obo/tao.obo
   method: obo2owl

@@ -16,7 +16,7 @@ products:
   - id: bfo.obo
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 title: Basic Formal Ontology
 review:
   date: 2016

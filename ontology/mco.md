@@ -36,7 +36,7 @@ dependencies:
 tracker: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 activity_status: active
 repository: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 preferredPrefix: MCO

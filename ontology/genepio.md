@@ -10,7 +10,7 @@ homepage: http://genepio.org/
 page: https://github.com/GenEpiO/genepio
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 products:
   - id: genepio.owl
     homepage: http://genepio.github.io/genepio/

@@ -30,7 +30,7 @@ dependencies:
 tracker: https://github.com/PopulationAndCommunityOntology/pco/issues
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 activity_status: active
 repository: https://github.com/PopulationAndCommunityOntology/pco
 preferredPrefix: PCO

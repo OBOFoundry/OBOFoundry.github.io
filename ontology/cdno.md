@@ -27,7 +27,7 @@ dependencies:
 tracker: https://github.com/Southern-Cross-Plant-Science/cdno/issues
 license:
   url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY 3.0
+  label: CC BY 3.0
 activity_status: active
 repository: https://github.com/Southern-Cross-Plant-Science/cdno
 preferredPrefix: CDNO

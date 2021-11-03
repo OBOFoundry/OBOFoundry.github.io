@@ -8,7 +8,7 @@ contact:
 description: The Obstetric and Neonatal Ontology is a structured controlled vocabulary to provide a representation of the data from electronic health records (EHRs) involved in the care of the pregnant woman, and of her baby.
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 domain: biomedical, health
 homepage: ontoneo.com
 mailing_list: http://groups.google.com/group/ontoneo-discuss

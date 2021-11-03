@@ -16,7 +16,7 @@ build:
   method: obo2owl
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 tracker: https://github.com/microbialphenotypes/OMP-ontology/issues
 activity_status: active
 repository: https://github.com/microbialphenotypes/OMP-ontology

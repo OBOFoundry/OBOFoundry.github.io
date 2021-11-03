@@ -77,7 +77,7 @@ funded_by:
 canonical: uberon.owl
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 taxon:
   id: NCBITaxon:33208
   label: Metazoa

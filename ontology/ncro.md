@@ -13,7 +13,7 @@ contact:
   github: Huang-OMIT
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 # depicted_by:
 # build:
 #  source_url: http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/

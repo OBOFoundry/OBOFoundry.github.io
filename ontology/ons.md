@@ -13,7 +13,7 @@ homepage: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
 page: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 products:
   - id: ons.owl
     title: ONS latest release
