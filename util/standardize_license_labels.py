@@ -26,7 +26,7 @@ def update_markdown(path: Union[str, pathlib.Path]) -> None:
     try:
         idx = min(i for i, line in enumerate(lines) if line.startswith("license:"))
     except ValueError:
-        tqdm.write(f"no license in {path}")
+        # no license
         return
 
     license_url = None
