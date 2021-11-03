@@ -13,8 +13,8 @@ title: Apollo Structured Vocabulary
 tracker: https://github.com/ApolloDev/apollo-sv/issues
 activity_status: active
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY 3.0
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4.0
 repository: https://github.com/ApolloDev/apollo-sv
 preferredPrefix: APOLLO_SV
 ---
