@@ -26,7 +26,7 @@ dependencies:
 tracker: https://github.com/insect-morphology/aism/issues
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 3.0
+  label: CC-BY 4.0
 activity_status: active
 repository: https://github.com/insect-morphology/aism
 preferredPrefix: AISM
