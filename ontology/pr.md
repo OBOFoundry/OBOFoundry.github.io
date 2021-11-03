@@ -30,7 +30,7 @@ review:
   date: 2010
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 depicted_by: https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png
 build:
   oort_args: --no-reasoner
