@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""
+"""Standardize the license labels using the Bioregistry.
 
 Run with: ``python standardize_license_labels.py``.
 
