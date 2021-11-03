@@ -29,7 +29,7 @@ dependencies:
 tracker: https://github.com/obophenotype/zebrafish-phenotype-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC-BY 3.0
 usages:
   - user: https://monarchinitiative.org/
     type: annotation
