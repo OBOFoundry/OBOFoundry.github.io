@@ -10,12 +10,12 @@ twitter: diseaseontology
 domain: disease
 homepage: http://www.disease-ontology.org
 products:
- - id: disdriv.owl
+  - id: disdriv.owl
 browsers:
   - label: DO
     title: DO Browser
     url: http://www.disease-ontology.org/
-taxon: 
+taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 title: Disease Drivers Ontology
@@ -27,7 +27,7 @@ license:
   label: CC0 1.0
 usages:
   - user: https://www.disease-ontology.org
-    description: Human Disease Ontology 
+    description: Human Disease Ontology
     examples:
       - url: https://www.disease-ontology.org/?id=DOID:0050665
         description: fetal alcohol syndrome, has exposure stressor some alcohol
