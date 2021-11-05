@@ -6,7 +6,7 @@ description: The Mammalian Feeding Muscle Ontology is an antomy ontology for the
 homepage: https://github.com/rdruzinsky/feedontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 taxon:
   id: NCBITaxon:40674
   label: Mammalian

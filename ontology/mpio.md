@@ -14,7 +14,7 @@ products:
 tracker: https://github.com/MPIO-Developers/MPIO/issues
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 activity_status: active
 repository: https://github.com/MPIO-Developers/MPIO
 preferredPrefix: MPIO

@@ -28,7 +28,7 @@ dependencies:
 tracker: https://github.com/geneontology/unipathway/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 repository: https://github.com/geneontology/unipathway
 ---
 

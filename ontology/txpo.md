@@ -13,7 +13,7 @@ products:
   - id: txpo.owl
 license:
   url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY 3.0
+  label: CC BY 3.0
 title: Toxic Process Ontology
 # depicted_by: icon_url
 browsers:

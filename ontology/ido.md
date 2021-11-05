@@ -7,7 +7,7 @@ contact:
   github: lgcowell
 license:
   url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY 3.0
+  label: CC BY 3.0
 domain: health
 homepage: http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology
 products:

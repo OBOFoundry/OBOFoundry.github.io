@@ -11,7 +11,7 @@ homepage: http://dictybase.org/
 twitter: dictybase
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0 Universal
+  label: CC0 1.0
 products:
   - id: ddanat.owl
   - id: ddanat.obo

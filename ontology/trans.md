@@ -18,7 +18,7 @@ build:
 tracker: https://github.com/DiseaseOntology/PathogenTransmissionOntology/issues
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0
+  label: CC0 1.0
 usages:
   - user: http://www.disease-ontology.org
     description: Methods of trnasmission of human diseases in the DO

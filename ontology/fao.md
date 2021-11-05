@@ -7,7 +7,7 @@ contact:
   github: mah11
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 description: A structured controlled vocabulary for the anatomy of fungi.
 domain: anatomy
 tracker: https://github.com/obophenotype/fungal-anatomy-ontology/issues

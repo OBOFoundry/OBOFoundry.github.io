@@ -10,7 +10,7 @@ domain: information
 homepage: https://github.com/information-artifact-ontology/IAO/
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 products:
   - id: iao.owl
   - id: iao/ontology-metadata.owl

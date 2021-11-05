@@ -23,7 +23,7 @@ build:
 tracker: https://github.com/glygen-glycan-data/GNOme/issues
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 browsers:
   - label: Structure Browser
     title: GNOme Glycan Structure Browser

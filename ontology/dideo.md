@@ -9,7 +9,7 @@ contact:
   github: mbrochhausen
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 homepage: https://github.com/DIDEO/DIDEO
 tracker: https://github.com/DIDEO/DIDEO/issues
 products:

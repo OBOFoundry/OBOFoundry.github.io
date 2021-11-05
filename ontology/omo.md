@@ -13,7 +13,7 @@ products:
   - id: omo.owl
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0
+  label: CC0 1.0
 title: OBO Metadata Ontology
 usages:
   - user: http://obofoundry.org

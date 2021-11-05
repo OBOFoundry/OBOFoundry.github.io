@@ -4,7 +4,7 @@ id: mp
 title: Mammalian Phenotype Ontology
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 build:
   checkout: git clone https://github.com/obophenotype/mammalian-phenotype-ontology.git
   system: git

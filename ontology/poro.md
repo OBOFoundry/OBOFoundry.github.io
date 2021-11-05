@@ -15,7 +15,7 @@ taxon:
   label: Porifera
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 title: Porifera Ontology
 publications:
   - id: https://doi.org/10.1186/2041-1480-5-39

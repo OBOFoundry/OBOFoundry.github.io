@@ -13,7 +13,7 @@ products:
   - id: gecko.owl
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 tracker: https://github.com/IHCC-cohorts/GECKO/issues
 usages:
   - user: https://ihccglobal.org/

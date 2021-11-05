@@ -41,7 +41,7 @@ publications:
     title: "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0 Universal
+  label: CC0 1.0
 usages:
   - user: https://www.alliancegenome.org
     description: Alliance of Genome Resources - MGD, RGD, SGD, FlyBase, WormBase, ZFIN use DO

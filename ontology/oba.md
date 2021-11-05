@@ -6,7 +6,7 @@ contact:
   label: Chris Mungall
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 description: A collection of biological attributes (traits) covering all kingdoms of life.
 domain: phenotype
 homepage: https://github.com/obophenotype/bio-attribute-ontology

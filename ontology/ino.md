@@ -5,7 +5,7 @@ title: Interaction Network Ontology
 description: An ontology of interactions and interaction networks
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 contact:
   email: yongqunh@med.umich.edu
   label: Yongqun Oliver He

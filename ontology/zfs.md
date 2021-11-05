@@ -19,7 +19,7 @@ taxon:
 title: Zebrafish developmental stages ontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY 3.0
+  label: CC BY 3.0
 build:
   source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/zfs/zfs.obo
   method: obo2owl

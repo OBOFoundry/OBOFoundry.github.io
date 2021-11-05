@@ -12,7 +12,7 @@ contact:
   github: mbrush
 license:
   url: https://creativecommons.org/licenses/by-sa/2.0/
-  label: CC-BY-SA
+  label: CC BY-SA 2.0
 build:
   checkout: git clone https://github.com/monarch-initiative/GENO-ontology.git
   system: git

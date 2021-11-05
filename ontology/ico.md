@@ -6,7 +6,7 @@ description: An ontology of clinical informed consents
 domain: informed consent
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 contact:
   email: yongqunh@med.umich.edu
   label: Yongqun Oliver He

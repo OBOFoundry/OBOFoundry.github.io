@@ -6,7 +6,7 @@ contact:
   label: Priti Parikh
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 description: A reference ontology for parasite life cycle stages.
 domain: life cycle stage, parasite organism
 homepage: https://github.com/OPL-ontology/OPL

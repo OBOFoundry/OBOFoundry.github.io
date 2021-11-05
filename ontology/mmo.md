@@ -6,7 +6,7 @@ contact:
   label: Jennifer Smith
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 description: "A representation of the variety of methods used to make clinical and phenotype measurements. "
 domain: clinical
 homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000

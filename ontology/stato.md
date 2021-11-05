@@ -13,7 +13,7 @@ products:
   - id: stato.owl
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 depicted_by: https://raw.githubusercontent.com/ISA-tools/stato/dev/images/stato-logo-3.png
 tracker: https://github.com/ISA-tools/stato/issues
 activity_status: active

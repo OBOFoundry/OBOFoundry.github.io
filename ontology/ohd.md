@@ -9,7 +9,7 @@ domain: health
 homepage: https://purl.obolibrary.org/obo/ohd/home
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 products:
   - id: ohd.owl
   - id: ohd/dev/ohd.owl
