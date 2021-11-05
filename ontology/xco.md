@@ -5,7 +5,7 @@ contact:
   label: Jennifer Smith
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 description: Conditions under which physiological and morphological measurements are made both in the clinic and in studies involving humans or model organisms.
 domain: clinical
 homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000

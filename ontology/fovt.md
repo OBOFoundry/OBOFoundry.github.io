@@ -38,7 +38,7 @@ dependencies:
 tracker: https://github.com/futres/fovt/issues
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0
+  label: CC0 1.0
 activity_status: active
 repository: https://github.com/futres/fovt
 preferredPrefix: FOVT

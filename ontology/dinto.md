@@ -13,7 +13,7 @@ domain: health
 tracker: https://github.com/labda/DINTO/issues
 license:
   url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 publications:
   - id: http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119
     title: "DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug–Drug Interactions and Their Mechanisms."

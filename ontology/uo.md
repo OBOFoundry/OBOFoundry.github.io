@@ -13,7 +13,7 @@ products:
 title: Units of measurement ontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 build:
   source_url: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo
   method: obo2owl

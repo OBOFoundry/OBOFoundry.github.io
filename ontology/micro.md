@@ -11,7 +11,7 @@ homepage: https://github.com/carrineblank/MicrO
 tracker: https://github.com/carrineblank/MicrO/issues
 license:
   url: https://creativecommons.org/licenses/by/2.0/
-  label: CC-BY 2.0
+  label: CC BY 2.0
 products:
   - id: micro.owl
 activity_status: active

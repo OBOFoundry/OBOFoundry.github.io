@@ -11,7 +11,7 @@ contact:
   label: Matthew Brush
 license:
   url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 build:
   checkout: git clone https://github.com/monarch-initiative/SEPIO-ontology.git
   system: git

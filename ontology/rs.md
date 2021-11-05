@@ -6,7 +6,7 @@ contact:
   label: Shur-Jen Wang
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 description: Ontology of rat strains
 homepage: http://rgd.mcw.edu/rgdweb/search/strains.html
 tracker: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology/issues

@@ -15,7 +15,7 @@ contact:
   email: bgee@sib.swiss
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 products:
   - id: mmusdv.owl
   - id: mmusdv.obo

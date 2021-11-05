@@ -9,7 +9,7 @@ contact:
   label: Matt Yoder
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 description: NOMEN is a nomenclatural ontology for biological names (not concepts).  It encodes the goverened rules of nomenclature.
 domain: biological nomenclature
 homepage: https://github.com/SpeciesFileGroup/nomen

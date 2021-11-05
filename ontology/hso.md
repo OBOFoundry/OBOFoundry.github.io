@@ -11,7 +11,7 @@ homepage: https://w3id.org/hso
 page: https://github.com/SVA-SE/HSO
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 products:
   - id: hso.owl
     homepage: https://w3id.org/hso

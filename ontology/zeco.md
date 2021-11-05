@@ -17,7 +17,7 @@ taxon:
   label: Danio
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 build:
   source_url: https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.obo
   method: obo2owl

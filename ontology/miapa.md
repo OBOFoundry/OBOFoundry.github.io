@@ -12,7 +12,7 @@ products:
 title: MIAPA Ontology
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 repository: https://github.com/evoinfo/miapa
 tracker: https://github.com/evoinfo/miapa/issues
 releases: https://github.com/evoinfo/miapa/releases

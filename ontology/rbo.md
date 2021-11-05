@@ -41,7 +41,7 @@ dependencies:
 tracker: https://github.com/Radiobiology-Informatics-Consortium/RBO/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 activity_status: active
 repository: https://github.com/Radiobiology-Informatics-Consortium/RBO
 preferredPrefix: RBO

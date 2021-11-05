@@ -13,7 +13,7 @@ products:
   - id: fideo.owl
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0
+  label: CC0 1.0
 tracker: https://github.com/getbordea/fideo/issues
 activity_status: active
 repository: https://github.com/getbordea/fideo

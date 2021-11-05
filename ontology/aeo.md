@@ -6,7 +6,7 @@ contact:
   label: Jonathan Bard
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 description: AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology
 domain: anatomy
 homepage: https://github.com/obophenotype/human-developmental-anatomy-ontology/

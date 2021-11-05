@@ -6,7 +6,7 @@ contact:
   label: Colin Batchelor
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 mailing_list: "chemistry-ontologies@googlegroups.com"
 title: Name Reaction Ontology
 description: Connects organic name reactions to their roles in an organic synthesis and to processes in MOP

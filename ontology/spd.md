@@ -6,7 +6,7 @@ contact:
   label: Martin Ramirez
 license:
   url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY 3.0
+  label: CC BY 3.0
 description: An ontology for spider comparative biology including anatomical parts (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web, borrow).
 domain: anatomy
 homepage: http://research.amnh.org/atol/files/

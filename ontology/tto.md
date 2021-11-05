@@ -16,7 +16,7 @@ taxon:
 title: Teleost taxonomy ontology
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 tracker: https://github.com/phenoscape/teleost-taxonomy-ontology/issues
 activity_status: active
 repository: https://github.com/phenoscape/teleost-taxonomy-ontology

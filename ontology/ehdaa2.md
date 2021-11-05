@@ -6,7 +6,7 @@ contact:
   label: Jonathan Bard
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 description: A structured controlled vocabulary of stage-specific anatomical structures of the developing human.
 tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
 domain: anatomy
