@@ -7,10 +7,10 @@ description: A application driven Epilepsy Ontology sith official terms from the
 domain: disease
 tracker: https://github.com/phwegner/Epilepsyontology/issues
 dependencies:
- - id: BFO
+  - id: BFO
 products:
- - id: epso.owl
- - id: EPSO_merged.owl
+  - id: epso.owl
+  - id: EPSO_merged.owl
 preferredPrefix: EPSO
 ---
 
