@@ -44,6 +44,22 @@ layout: default
     {% endfor %}
   </div>
   {% endif %}
+  
+  {% if page.activity_status == "inactive" %}
+  <div>
+    <div class="alert alert-warning" role="alert">
+      This ontology is inactive.
+    </div>
+  </div>
+  {% endif %}
+  
+  {% if page.activity_status == "orphaned" %}
+  <div>
+    <div class="alert alert-warning" role="alert">
+      This ontology is orphaned.
+    </div>
+  </div>
+  {% endif %}
 
   {% if page.preferredPrefix %}
   <div>
