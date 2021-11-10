@@ -11,6 +11,10 @@ dependencies:
 products:
   - id: epso.owl
   - id: EPSO_merged.owl
+contact:
+  email: alpha.tom.kodamullil@scai.fraunhofer.de
+  label: Alpha Tom Kodamullil
+
 preferredPrefix: EPSO
 ---
 
