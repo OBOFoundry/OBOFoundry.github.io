@@ -4,54 +4,64 @@ id: fp-003-uris
 title: URI/Identifier Space (principle 3)
 ---
 
-Details
+Summary
 -------
 
-Each class and relation (property) in the ontology must have a unique
-URI identifier. The URI should be constructed from a base URI, a prefix
-that is unique within the Foundry (e.g. GO, CHEBI, CL) and a local
-identifier (e.g. 0000001). The local identifier should not consist of
-labels or mnemonics meaningful to humans. Additional information is available at 
-<http://www.obofoundry.org/id-policy>
-
-The ID-space / prefix must be registered with the OBO Library in advance. Please see the relevant [documentation](http://obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests).
+Each ontology MUST have a unique IRI in the form of an OBO Foundry persistent URL (PURL) that includes the ontology's short namespace.
 
 [This check is automatically validated.](checks/fp_003)
 
-### OBO-Format Ontologies
-
-If the source ontology is in OBO-Format, then this is automatically
-satisfied so long as all IDs are of the form \<IDSPACE\> : \<NUMBER\>
-
-Date Accepted
--------------
-
--   original principle
-
-History
+Purpose
 -------
 
-### Original Formulation
+A unique namespace within the OBO Foundry Library allows the source of an element or term (e.g., class, property) from any ontology to be identified immediately by the prefix of the identifier. It also allows ontology element IRIs to be shortened to a compact URI or CURIE, which allows developers to use CURIES for working with ontologies. OWL syntax allows for ontologies and their elements to have identifiers in the form of an IRI. The OBO Foundry uses IRIs in the form of PURLs to allow an ontology and its elements to be resolvable (findable on the web). PURLs are URLs (and thus locate the resource) that are permanent or redirectable, allowing the URL to point to a new location when the resource moves. OBO Foundry PURLs use a standard format that includes the ontology namespace so that they can be easily maintained by a group of volunteers, and so ontology maintainers can update the location their PURL points to using a GitHub pull request.
 
-```
- The ontologies possesses a unique identifier space within
-the OBO Foundry.
+Recommendations and Requirements
+-------
 
-The source of a term (i.e. class) from any ontology can be immediately
-identified by the prefix of the identifier of each term. It is,
-therefore, important that this prefix be unique. 
-```
+Each ontology MUST have a unique IRI in the form of an OBO Foundry permanent URL (PURL). The PURL must include the ontology namespace, which is abbreviated by a short set of letters approved by the OBO Foundry Operations Committee. Every element (class, property, etc.) created by the ontology MUST use the namespace in the identifier of each element, as specified in the OBO Foundry [ID policy](http://www.obofoundry.org/id-policy).
+
+Implementation
+-------
+
+### Ontology Namespace:
+
+The namespace is a short string of letters (usually 2-5) that is representative ontology. When used as part of a CURIE, on its own, or as part of a term ID, the namespace is generally capitalized. When used as part of the ontology IRI, the namespace is in lower case. See examples below
+
+To request a new namespace, ontology developers MUST follow these guidelines. Note that very short namespaces (2-3 characters) are reserved for ontologies that cover a general domain and are likely to be frequently used.
+
+### Ontology IRI:
+
+The primary IRI for an OBO Library IRI MUST have the following format:
+https://purl.obolibrary.org/obo/$namespace.owl
+
+To conform with OBO Foundry principles, the ontology IRI MUST resolve to the ontology file, not a landing page.
+
+For guidelines on how to create IRIs for ontology elements/terms, see the OBO Foundry [ID policy](http://www.obofoundry.org/id-policy).
 
 Examples
 --------
 
-The OBI class 'imaging assay' has the following URI:
-<http://purl.obolibrary.org/obo/OBI_0000185>
+http://purl.obolibrary.org/obo/go.owl
+http://purl.obolibrary.org/obo/pco.owl
 
-Counter-Examples
-----------------
+Counter Examples
+--------
 
--   There are systems that use alphanumeric id's. This should be
-    discouraged, especially as these have semantic content.
+The following counter examples are valid ontology IRIs, but do not conform with OBO Foundry principles.
+
+http://iridl.ldeo.columbia.edu/ontologies/SWEET.owl
+
+Furthermore, these IRIs do not resolve to the ontology file.
+
+http://purl.org/dc/terms/
+
+http://dbpedia.org/ontology/
+
+Criteria for Review:
+-------
+
+The ontology namespace is registered at http://www.obofoundry.org/ following the procedures outlined at http://www.obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html
+The ontology IRI follows the format above.
 
 <Category:Principles> <Category:Accepted>
