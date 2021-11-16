@@ -10,6 +10,7 @@ page: http://ctdbase.org/downloads/#exposures
 contact:
   label: Carolyn Mattingly
   email: cjmattin@ncsu.edu
+  github: cjgrondin
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
