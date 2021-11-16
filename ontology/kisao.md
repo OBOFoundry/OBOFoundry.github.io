@@ -3,7 +3,7 @@ layout: ontology_detail
 id: kisao
 contact:
   email: karr@mssm.edu
-  label: Jonathan Karr 
+  label: Jonathan Karr
   github: jonrkarr
 description: A classification of algorithms for simulating biology and their outputs
 domain: algorithms
