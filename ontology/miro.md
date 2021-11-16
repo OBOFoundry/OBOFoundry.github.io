@@ -16,7 +16,6 @@ title: Mosquito insecticide resistance
 activity_status: inactive
 validate: false
 repository: https://github.com/VEuPathDB-ontology/MIRO
-tracker: https://github.com/VEuPathDB-ontology/MIRO/issues
 ---
 
 Application ontology for entities related to insecticide resistance in mosquitos
