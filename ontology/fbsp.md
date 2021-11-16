@@ -4,6 +4,7 @@ id: fbsp
 contact:
   email: mmc46@gen.cam.ac.uk
   label: Marta Costa
+  github: mmc46
 description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase.
 domain: taxonomy
 homepage: http://www.flybase.org/
