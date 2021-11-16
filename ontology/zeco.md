@@ -8,6 +8,7 @@ homepage: https://github.com/ybradford/zebrafish-experimental-conditions-ontolog
 contact:
   email: ybradford@zfin.org
   label: Yvonne Bradford
+  github: ybradford
 products:
   - id: zeco.obo
   - id: zeco.owl
