@@ -18,6 +18,7 @@ taxon:
   label: Anopheles
 title: Mosquito gross anatomy ontology
 activity_status: inactive
+repository: https://github.com/VEuPathDB-ontology/TGMA
 ---
 
 A structured controlled vocabulary of the anatomy of mosquitoes.
