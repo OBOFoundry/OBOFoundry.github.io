@@ -2,8 +2,9 @@
 layout: ontology_detail
 id: kisao
 contact:
-  email: sed-ml-editors@googlegroups.com
-  label: SED-ML Editors
+  email: karr@mssm.edu
+  label: Jonathan Karr 
+  github: jonrkarr
 description: A classification of algorithms for simulating biology and their outputs
 domain: algorithms
 homepage: http://co.mbine.org/standards/kisao
