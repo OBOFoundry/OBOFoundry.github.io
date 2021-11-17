@@ -14,6 +14,7 @@ products:
 contact:
   email: alpha.tom.kodamullil@scai.fraunhofer.de
   label: Alpha Tom Kodamullil
+  github: akodamullil
   
 repository: git@github.com:phwegner/Epilepsyontology.git
 
@@ -24,5 +25,5 @@ EPSO is a community Ontology maintained by Fraunhofer SCAI.
 
 This Ontology can be cited as: 
 
-_Astghik Sargsyan, Philipp Wegner, Stephan Gebel, Shounak Baksi, Geena Mariya Jose, Vanessa Lage-Rupprecht, Johannes Darms, Marc Jacobs, Satya Sahoo, Sumit Madan, Martin Hofmann-Apitius, Alpha Tom Kodamullil._ __Epilepsy Ontology.__
+Sargsyan, A., Wegner, P., Gebel, S., Baksi, S., Jose, G. M., Lage-Rupprecht, V., Darms, J., Jacobs, M., Sahoo, S., Madan, S., Hofmann-Apitius, M. & Kodamullil, A. T. (2021). Epilepsy Ontology.
 
