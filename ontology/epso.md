@@ -15,9 +15,8 @@ contact:
   email: alpha.tom.kodamullil@scai.fraunhofer.de
   label: Alpha Tom Kodamullil
   github: akodamullil
-
 repository: https://github.com/phwegner/Epilepsyontology
-
+activity_status: active
 preferredPrefix: EPSO
 ---
 
