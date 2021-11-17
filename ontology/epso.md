@@ -7,7 +7,7 @@ description: A application driven Epilepsy Ontology sith official terms from the
 domain: disease
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 tracker: https://github.com/phwegner/Epilepsyontology/issues
 dependencies:
   - id: BFO
