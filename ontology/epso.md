@@ -16,7 +16,7 @@ contact:
   label: Alpha Tom Kodamullil
   github: akodamullil
   
-repository: git@github.com:phwegner/Epilepsyontology.git
+repository: https://github.com/phwegner/Epilepsyontology
 
 preferredPrefix: EPSO
 ---
