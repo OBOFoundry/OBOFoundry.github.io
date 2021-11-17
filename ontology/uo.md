@@ -10,6 +10,7 @@ domain: phenotype
 homepage: https://github.com/bio-ontology-research-group/unit-ontology
 products:
   - id: uo.owl
+  - id: uo.obo
 title: Units of measurement ontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/
@@ -22,3 +23,7 @@ activity_status: active
 repository: https://github.com/bio-ontology-research-group/unit-ontology
 preferredPrefix: UO
 ---
+
+See also:
+
+ * [units-of-measurement](https://units-of-measurement.org/)
