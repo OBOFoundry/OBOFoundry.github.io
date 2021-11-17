@@ -23,7 +23,7 @@
             "in_foundry_order": 1,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -86,7 +86,7 @@
             "in_foundry_order": 1,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -182,7 +182,7 @@
             "in_foundry_order": 1,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0 1.0 Universal",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -427,6 +427,54 @@
                     ],
                     "type": "annotation",
                     "user": "http://geneontology.org"
+                },
+                {
+                    "description": "Uniprot uses GO to show the function of proteins",
+                    "examples": [
+                        {
+                            "description": "functional annotations of human Sonic hedgehog protein",
+                            "url": "https://www.uniprot.org/uniprot/Q15465#function"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://www.uniprot.org"
+                },
+                {
+                    "description": "Reactome annotates activities, pathways, and cellular localization using GO",
+                    "examples": [
+                        {
+                            "description": "protein tyrosine kinase activity of an EGFR complex",
+                            "url": "https://reactome.org/content/detail/R-HSA-177934"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://reactome.org"
+                },
+                {
+                    "description": "The Alliance of Genome Resources uses GO for model organism gene function annotation",
+                    "examples": [
+                        {
+                            "description": "Functional summary of C elegans nsy-1 gene",
+                            "url": "https://www.alliancegenome.org/gene/WB:WBGene00003822#function---go-annotations"
+                        },
+                        {
+                            "description": "Gene Ontology Causal Activity Models for C elegans nsy-1 gene",
+                            "url": "https://www.alliancegenome.org/gene/WB:WBGene00003822#pathways"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://www.alliancegenome.org"
+                },
+                {
+                    "description": "Rhea uses GO to describe individual biochemical reactions",
+                    "examples": [
+                        {
+                            "description": "Glutamine scyllo-inositol transaminase reaction and associated GO term",
+                            "url": "https://www.rhea-db.org/rhea/22920"
+                        }
+                    ],
+                    "type": "mapping",
+                    "user": "https://www.rhea-db.org"
                 }
             ]
         },
@@ -455,7 +503,7 @@
             "integration_server": "http://build.berkeleybop.org/job/build-obi/",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -553,7 +601,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -637,7 +685,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -759,7 +807,7 @@
             "in_foundry_order": 1,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -833,7 +881,7 @@
             "in_foundry_order": 1,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -902,7 +950,7 @@
             "in_foundry_order": 1,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -965,7 +1013,7 @@
             "id": "aeo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -1049,7 +1097,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -1120,7 +1168,7 @@
             "id": "aism",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -1166,7 +1214,7 @@
             "id": "amphx",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -1239,9 +1287,9 @@
             "id": "apollo_sv",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 3.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/3.0/"
+                "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/apollo_sv.owl",
             "preferredPrefix": "APOLLO_SV",
@@ -1267,7 +1315,7 @@
             "id": "aro",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -1298,7 +1346,7 @@
             "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -1334,7 +1382,7 @@
             "id": "bspo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -1426,7 +1474,7 @@
             "id": "caro",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 3.0",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
@@ -1457,7 +1505,7 @@
             "id": "cdao",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0 1.0 Universal",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -1508,7 +1556,7 @@
             "id": "cdno",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
@@ -1610,7 +1658,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -1645,7 +1693,7 @@
             "id": "chmo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -1673,7 +1721,7 @@
             "id": "cido",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -1693,16 +1741,16 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "bgee@sib.swiss",
+                "email": "frederic.bastian@unil.ch",
                 "github": "fbastian",
-                "label": "Frederic Bastian"
+                "label": "Fr\u00e9d\u00e9ric Bastian"
             },
             "description": "An ontology to capture confidence information about annotations.",
             "homepage": "https://github.com/BgeeDB/confidence-information-ontology",
             "id": "cio",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -1768,7 +1816,7 @@
             "label": "Cell Ontology",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -1875,7 +1923,7 @@
             "id": "clao",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -1920,7 +1968,7 @@
             "id": "clo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -1965,7 +2013,7 @@
             "id": "clyh",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -2008,7 +2056,7 @@
             "id": "cmo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -2052,7 +2100,7 @@
             "id": "cob",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -2086,7 +2134,7 @@
             "id": "cro",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 2.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/2.0/"
             },
@@ -2136,7 +2184,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -2168,7 +2216,7 @@
             "id": "cto",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -2234,7 +2282,7 @@
             "id": "ddanat",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0 1.0 Universal",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -2277,7 +2325,7 @@
             "id": "ddpheno",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -2314,7 +2362,7 @@
             "id": "dideo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -2329,6 +2377,62 @@
             "repository": "https://github.com/DIDEO/DIDEO",
             "title": "Drug-drug Interaction and Drug-drug Interaction Evidence Ontology",
             "tracker": "https://github.com/DIDEO/DIDEO/issues"
+        },
+        {
+            "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "DO",
+                    "title": "DO Browser",
+                    "url": "http://www.disease-ontology.org/"
+                }
+            ],
+            "build": {
+                "source_url": "https://github.com/DiseaseOntology/DiseaseDriversOntology/tree/main/src/ontology/disdriv.owl"
+            },
+            "contact": {
+                "email": "lynn.schriml@gmail.com",
+                "github": "lschriml",
+                "label": "Lynn Schriml"
+            },
+            "description": "Ontology for drivers and triggers of human diseases, built to classify ExO ontology exposure stressors. An application ontology. Built in collaboration with EnvO, ExO, ECTO and ChEBI.",
+            "domain": "disease",
+            "homepage": "http://www.disease-ontology.org",
+            "id": "disdriv",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC0 1.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/disdriv.owl",
+            "preferredPrefix": "DISDRIV",
+            "products": [
+                {
+                    "id": "disdriv.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/disdriv.owl"
+                }
+            ],
+            "repository": "https://github.com/DiseaseOntology/DiseaseDriversOntology/",
+            "taxon": {
+                "id": "NCBITaxon:9606",
+                "label": "Homo sapiens"
+            },
+            "title": "Disease Drivers Ontology",
+            "tracker": "https://github.com/DiseaseOntology/DiseaseDriversOntology/issues",
+            "twitter": "diseaseontology",
+            "usages": [
+                {
+                    "description": "Human Disease Ontology",
+                    "examples": [
+                        {
+                            "description": "fetal alcohol syndrome, has exposure stressor some alcohol",
+                            "url": "https://www.disease-ontology.org/?id=DOID:0050665"
+                        }
+                    ],
+                    "user": "https://www.disease-ontology.org"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -2354,7 +2458,7 @@
             "id": "dpo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -2416,7 +2520,7 @@
             "id": "dron",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -2463,7 +2567,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -2508,7 +2612,7 @@
             "id": "ecao",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -2556,7 +2660,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0 1.0 Universal",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -2672,7 +2776,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -2760,7 +2864,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -2820,7 +2924,7 @@
             "id": "emapa",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -2904,7 +3008,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -3026,7 +3130,7 @@
             "id": "eupath",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -3115,7 +3219,7 @@
             "id": "fao",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -3205,7 +3309,7 @@
             "id": "fbbt",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -3308,7 +3412,7 @@
             "id": "fbcv",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -3368,7 +3472,7 @@
             "id": "fbdv",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -3416,7 +3520,7 @@
             "id": "fideo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -3449,7 +3553,7 @@
             "id": "flopo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -3486,7 +3590,7 @@
             "id": "fma",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 3.0",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
@@ -3541,7 +3645,7 @@
             "id": "fobi",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -3598,7 +3702,7 @@
             "id": "foodon",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -3672,7 +3776,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -3723,7 +3827,7 @@
             "id": "fypo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -3778,7 +3882,7 @@
             "id": "gecko",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -3829,7 +3933,7 @@
             "id": "genepio",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -3865,7 +3969,7 @@
             "id": "geno",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY-SA",
+                "label": "CC BY-SA 2.0",
                 "logo": "https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png",
                 "url": "https://creativecommons.org/licenses/by-sa/2.0/"
             },
@@ -3894,7 +3998,7 @@
             "id": "geo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -3940,7 +4044,7 @@
             "id": "gno",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -4011,7 +4115,7 @@
             "id": "hancestro",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -4083,7 +4187,7 @@
             "id": "hao",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -4129,7 +4233,7 @@
             "id": "hom",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -4153,15 +4257,16 @@
                 "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/hsapdv/hsapdv.obo"
             },
             "contact": {
-                "email": "bgee@sib.swiss",
-                "label": "bgee"
+                "email": "frederic.bastian@unil.ch",
+                "github": "fbastian",
+                "label": "Fr\u00e9d\u00e9ric Bastian"
             },
             "description": "Life cycle stages for Human",
             "homepage": "https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv",
             "id": "hsapdv",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -4212,7 +4317,7 @@
             "id": "hso",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -4241,7 +4346,7 @@
             "id": "htn",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -4277,7 +4382,7 @@
             "id": "iao",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -4332,7 +4437,7 @@
             "id": "iceo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -4361,7 +4466,7 @@
             "id": "ico",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -4400,7 +4505,7 @@
             "id": "ido",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 3.0",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
@@ -4431,7 +4536,7 @@
             "id": "ino",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -4526,7 +4631,7 @@
             "id": "ma",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -4602,7 +4707,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -4711,7 +4816,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -4748,7 +4853,7 @@
             "id": "mf",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -4782,7 +4887,7 @@
             "id": "mfmo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -4819,7 +4924,7 @@
             "id": "mfoem",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -4847,7 +4952,7 @@
             "id": "mfomd",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -4914,7 +5019,7 @@
             "id": "miapa",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -4944,7 +5049,7 @@
             "id": "micro",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 2.0",
+                "label": "CC BY 2.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/2.0/"
             },
@@ -4983,7 +5088,7 @@
             "id": "mmo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -5021,15 +5126,16 @@
                 "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/mmusdv/mmusdv.obo"
             },
             "contact": {
-                "email": "bgee@sib.swiss",
-                "label": "bgee"
+                "email": "frederic.bastian@unil.ch",
+                "github": "fbastian",
+                "label": "Fr\u00e9d\u00e9ric Bastian"
             },
             "description": "Life cycle stages for Mus Musculus",
             "homepage": "https://github.com/obophenotype/developmental-stage-ontologies/wiki/MmusDv",
             "id": "mmusdv",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -5067,7 +5173,7 @@
             "id": "mod",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -5233,7 +5339,7 @@
             "id": "mop",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -5291,7 +5397,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -5386,7 +5492,7 @@
             "id": "mpath",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -5419,7 +5525,7 @@
             "id": "mpio",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -5448,7 +5554,7 @@
             "id": "mro",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
@@ -5510,7 +5616,7 @@
             "label": "MS",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
@@ -5562,7 +5668,7 @@
             "id": "nbo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -5611,7 +5717,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0 1.0 Universal",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -5665,7 +5771,7 @@
             "id": "ncit",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -5721,7 +5827,7 @@
             "id": "ncro",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -5761,7 +5867,7 @@
             "label": "NOMEN",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -5807,7 +5913,7 @@
             "id": "oae",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -5875,7 +5981,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -5913,7 +6019,7 @@
             "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -5941,7 +6047,7 @@
             "id": "obib",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -5988,7 +6094,7 @@
             "id": "ogg",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -6016,7 +6122,7 @@
             "id": "ogms",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -6047,7 +6153,7 @@
             "id": "ogsf",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 3.0",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
@@ -6079,7 +6185,7 @@
             "id": "ohd",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -6110,7 +6216,7 @@
             "id": "ohmi",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -6138,7 +6244,7 @@
             "id": "ohpi",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -6162,15 +6268,16 @@
                 "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.obo"
             },
             "contact": {
-                "email": "bgee@sib.swiss",
-                "label": "bgee"
+                "email": "frederic.bastian@unil.ch",
+                "github": "fbastian",
+                "label": "Fr\u00e9d\u00e9ric Bastian"
             },
             "description": "Life cycle stages for Medaka",
             "homepage": "https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv",
             "id": "olatdv",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -6203,7 +6310,7 @@
             "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 3.0",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
@@ -6233,7 +6340,7 @@
             "id": "omo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -6272,7 +6379,7 @@
             "id": "omp",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -6308,7 +6415,7 @@
             "id": "omrse",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -6353,7 +6460,7 @@
             "label": "Ontology for Nutritional Epidemiology",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -6410,7 +6517,7 @@
             "label": "Ontology for Nutritional Studies",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -6450,7 +6557,7 @@
             "id": "ontoneo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -6479,7 +6586,7 @@
             "id": "oostt",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -6507,7 +6614,7 @@
             "id": "opl",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -6546,7 +6653,7 @@
             "id": "opmi",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -6575,7 +6682,7 @@
             "id": "ornaseq",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/4.0/"
             },
@@ -6602,7 +6709,7 @@
             "id": "ovae",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -6670,7 +6777,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -6726,15 +6833,16 @@
                 "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/pdumdv/pdumdv.obo"
             },
             "contact": {
-                "email": "bgee@sib.swiss",
-                "label": "bgee"
+                "email": "frederic.bastian@unil.ch",
+                "github": "fbastian",
+                "label": "Fr\u00e9d\u00e9ric Bastian"
             },
             "description": "Life cycle stages for Platynereis dumerilii",
             "homepage": "https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv",
             "id": "pdumdv",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -6767,7 +6875,7 @@
             "id": "peco",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -6822,7 +6930,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -6873,7 +6981,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -6942,7 +7050,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -6995,7 +7103,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -7037,7 +7145,7 @@
             "id": "ppo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -7089,7 +7197,7 @@
             "id": "psdo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -7133,7 +7241,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -7176,7 +7284,7 @@
             "id": "pw",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -7254,7 +7362,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -7323,7 +7431,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -7426,7 +7534,7 @@
             "id": "rs",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -7472,7 +7580,7 @@
             "id": "rxno",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -7507,7 +7615,7 @@
             "id": "sepio",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
@@ -7542,7 +7650,7 @@
             "id": "so",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -7591,7 +7699,7 @@
             "id": "spd",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 3.0",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
@@ -7625,7 +7733,7 @@
             "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -7690,7 +7798,7 @@
             "id": "symp",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -7749,7 +7857,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -7801,7 +7909,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -7871,7 +7979,7 @@
             "id": "trans",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -7915,7 +8023,7 @@
             "id": "tto",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -7964,7 +8072,7 @@
             "id": "txpo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 3.0",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
@@ -8056,7 +8164,7 @@
             "label": "Uberon",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -8295,7 +8403,7 @@
             "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -8328,7 +8436,7 @@
             "id": "upheno",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -8383,7 +8491,7 @@
             "id": "vo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -8474,7 +8582,7 @@
             "id": "vto",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -8523,7 +8631,7 @@
             "id": "wbbt",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -8748,7 +8856,7 @@
             "id": "xco",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -8797,7 +8905,7 @@
             "label": "xlmod",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
@@ -8865,7 +8973,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -8905,7 +9013,7 @@
             "id": "zeco",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -8951,7 +9059,7 @@
             "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 3.0",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -9022,7 +9130,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -9435,7 +9543,7 @@
             "id": "sibo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -9571,7 +9679,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -9625,7 +9733,7 @@
             "id": "ehdaa2",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -9671,7 +9779,7 @@
             "id": "gaz",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0 1.0 Universal",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -9715,7 +9823,7 @@
             "id": "rnao",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -9763,7 +9871,7 @@
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -9805,7 +9913,7 @@
             "id": "ero",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 2.0",
+                "label": "CC BY 2.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/2.0/"
             },
@@ -9830,7 +9938,7 @@
             "id": "idomal",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -9887,7 +9995,7 @@
             "id": "tads",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -9920,7 +10028,7 @@
             "id": "tgma",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -9955,7 +10063,7 @@
             "is_obsolete": true,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -9982,7 +10090,7 @@
             "is_obsolete": true,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/3.0/"
             },
@@ -10019,7 +10127,7 @@
             "is_obsolete": true,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY 4.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
@@ -10080,7 +10188,7 @@
             "is_obsolete": true,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -10140,7 +10248,7 @@
             "is_obsolete": true,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-BY",
+                "label": "CC BY 3.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "http://creativecommons.org/licenses/by/3.0/"
             },
@@ -10521,7 +10629,7 @@
             "is_obsolete": true,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "https://creativecommons.org/publicdomain/zero/1.0/"
             },
@@ -10828,7 +10936,7 @@
             "is_obsolete": true,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC-0",
+                "label": "CC0 1.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
                 "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
