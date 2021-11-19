@@ -9,6 +9,7 @@ tracker: https://github.com/cido-ontology/cido/issues
 contact:
   email: yongqunh@med.umich.edu
   label: Yongqun Oliver He
+  github: yongqunh
 products:
   - id: cido.owl
 license:

@@ -5,6 +5,7 @@ preferredPrefix: FBbt
 contact:
   email: cp390@cam.ac.uk
   label: Clare Pilgrim
+  github: Clare72
 description: An ontology representing the gross anatomy of Drosophila melanogaster.
 domain: Drosophilid anatomy
 homepage: http://purl.obolibrary.org/obo/fbbt

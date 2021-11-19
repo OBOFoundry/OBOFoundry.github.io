@@ -4,6 +4,7 @@ id: dron
 contact:
   email: hoganwr@gmail.com
   label: William Hogan
+  github: hoganwr
 description: An ontology to support comparative effectiveness researchers studying claims data.
 domain: health
 homepage: https://github.com/ufbmi/dron

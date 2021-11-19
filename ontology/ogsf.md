@@ -6,6 +6,7 @@ homepage: https://github.com/linikujp/OGSF
 contact:
   label: Asiyah Yu Lin
   email: linikujp@gmail.com
+  github: linikujp
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
