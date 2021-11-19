@@ -7,6 +7,7 @@ title: NOMEN - A nomenclatural ontology for biological names
 contact:
   email: diapriid@gmail.com
   label: Matt Yoder
+  github: mjy
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0

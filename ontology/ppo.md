@@ -8,6 +8,7 @@ homepage: https://github.com/PlantPhenoOntology/PPO
 contact:
   email: rlwalls2008@gmail.com
   label: Ramona Walls
+  github: ramonawalls
 mailing_list: ppo-discuss@googlegroups.com
 tracker: https://github.com/PlantPhenoOntology/PPO/issues
 license:

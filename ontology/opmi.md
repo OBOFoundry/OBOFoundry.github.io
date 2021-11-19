@@ -9,6 +9,7 @@ tracker: https://github.com/OPMI/opmi/issues
 contact:
   email: yongqunh@med.umich.edu
   label: Yongqun Oliver He
+  github: yongqunh
 products:
   - id: opmi.owl
 license:

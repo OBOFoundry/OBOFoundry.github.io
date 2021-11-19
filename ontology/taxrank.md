@@ -4,6 +4,7 @@ id: taxrank
 contact:
   email: balhoff@renci.org
   label: Jim Balhoff
+  github: balhoff
 description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
 domain: taxonomy
 homepage: https://github.com/phenoscape/taxrank

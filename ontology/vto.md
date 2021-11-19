@@ -14,6 +14,7 @@ redirects:
 contact:
   label: Jim Balhoff
   email: balhoff@renci.org
+  github: balhoff
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0

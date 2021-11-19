@@ -12,6 +12,7 @@ build:
 contact:
   email: ybradford@zfin.org
   label: Yvonne Bradford
+  github: ybradford
 description: The Zebrafish Phenotype Ontology formally defines all phenotypes of the Zebrafish model organism.
 domain: phenotype
 homepage: https://github.com/obophenotype/zebrafish-phenotype-ontology
