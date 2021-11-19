@@ -8,8 +8,9 @@ homepage: http://ctdbase.org/help/exposureHelp.jsp
 tracker: https://github.com/CTDbase/exposure-ontology/issues
 page: http://ctdbase.org/downloads/#exposures
 contact:
-  label: Carolyn Mattingly
-  email: cjmattin@ncsu.edu
+  label: Cynthia Grondin
+  email: cjgrondin@ncsu.edu
+  github: cjgrondin
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

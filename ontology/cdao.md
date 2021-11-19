@@ -4,6 +4,7 @@ id: cdao
 contact:
   email: balhoff@renci.org
   label: Jim Balhoff
+  github: balhoff
 description: a formalization of concepts and relations relevant to evolutionary comparative analysis
 homepage: https://github.com/evoinfo/cdao
 products:

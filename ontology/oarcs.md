@@ -7,6 +7,7 @@ description: OArCS is an ontology describing the Arthropod ciruclatory system.
 contact:
   email: mjyoder@illinois.edu
   label: Matt Yoder
+  github: mjy
 domain: anatomy
 repository: http://http://oarcs.speciesfilegroup.org
 license:

@@ -4,6 +4,7 @@ id: oba
 contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
+  github: cmungall
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0

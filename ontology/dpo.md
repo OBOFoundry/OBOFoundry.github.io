@@ -5,6 +5,7 @@ preferredPrefix: FBcv
 contact:
   email: cp390@cam.ac.uk
   label: Clare Pilgrim
+  github: Clare72
 description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
 domain: phenotype
 homepage: http://purl.obolibrary.org/obo/fbcv
