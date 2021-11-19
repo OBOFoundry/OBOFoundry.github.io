@@ -9,6 +9,7 @@ tracker: https://github.com/ohmi-ontology/ohmi/issues
 contact:
   email: yongqunh@med.umich.edu
   label: Yongqun Oliver He
+  github: yongqunh
 products:
   - id: ohmi.owl
 license:

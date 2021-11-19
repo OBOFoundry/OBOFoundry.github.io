@@ -4,6 +4,7 @@ id: cheminf
 contact:
   email: egon.willighagen@gmail.com
   label: Egon Willighagen
+  github: egonw
 tracker: https://github.com/semanticchemistry/semanticchemistry/issues
 license:
   url: http://creativecommons.org/licenses/by/4.0/

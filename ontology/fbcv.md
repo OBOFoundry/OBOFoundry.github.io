@@ -5,6 +5,7 @@ preferredPrefix: FBcv
 contact:
   email: cp390@cam.ac.uk
   label: Clare Pilgrim
+  github: Clare72
 description: A structured controlled vocabulary used for various aspects of annotation by FlyBase.
 domain: organisms
 homepage: http://purl.obolibrary.org/obo/fbcv

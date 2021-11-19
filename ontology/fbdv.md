@@ -5,6 +5,7 @@ preferredPrefix: FBdv
 contact:
   email: cp390@cam.ac.uk
   label: Clare Pilgrim
+  github: Clare72
 description: A structured controlled vocabulary of the development of Drosophila melanogaster.
 domain: development
 homepage: http://purl.obolibrary.org/obo/fbdv

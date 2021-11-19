@@ -12,6 +12,7 @@ build:
 contact:
   email: rlwalls2008@gmail.com
   label: Ramona Walls
+  github: ramonawalls
 description: An ontology about groups of interacting organisms such as populations and communities
 domain: collections of organisms
 homepage: https://github.com/PopulationAndCommunityOntology/pco
