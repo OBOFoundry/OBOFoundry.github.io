@@ -45,7 +45,7 @@ layout: default
   </div>
   {% endif %}
 
-  {% if page.preferredPrefix|upper != page.preferredPrefix %}
+  {% if page.preferredPrefix.upper() != page.preferredPrefix %}
   <div>
     <div class="alert alert-info" role="alert">
       This ontology uses a mixed-case prefix. Identifiers and URIs
