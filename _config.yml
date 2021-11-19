@@ -912,9 +912,9 @@ ontologies:
   tracker: https://github.com/ApolloDev/apollo-sv/issues
 - activity_status: active
   contact:
-    email: card@mcmaster.ca
-    github: raphenya
-    label: CARD
+    email: mcarthua@mcmaster.ca
+    github: agmcarthur
+    label: Andrew G. McArthur
   description: Antibiotic resistance genes and mutations
   homepage: https://github.com/arpcard/aro
   id: aro
@@ -6530,6 +6530,33 @@ ontologies:
     type: annotation
     user: https://monarchinitiative.org/
 - activity_status: active
+  contact:
+    email: alpha.tom.kodamullil@scai.fraunhofer.de
+    github: akodamullil
+    label: Alpha Tom Kodamullil
+  dependencies:
+  - id: BFO
+  description: A application driven Epilepsy Ontology sith official terms from the
+    ILAE.
+  domain: disease
+  id: EPSO
+  label: Epilepsy Ontology
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/EPSO.owl
+  preferredPrefix: EPSO
+  products:
+  - id: epso.owl
+    ontology_purl: http://purl.obolibrary.org/obo/epso.owl
+  - id: EPSO_merged.owl
+    ontology_purl: http://purl.obolibrary.org/obo/EPSO_merged.owl
+  repository: https://github.com/phwegner/Epilepsyontology
+  title: Epilepsy Ontology
+  tracker: https://github.com/phwegner/Epilepsyontology/issues
+- activity_status: active
   build:
     checkout: git clone https://github.com/Superraptor/GSSO.git
     path: .
@@ -6629,8 +6656,9 @@ ontologies:
     method: owl2obo
     source_url: https://raw.githubusercontent.com/SED-ML/KiSAO/deploy/kisao.owl
   contact:
-    email: sed-ml-editors@googlegroups.com
-    label: SED-ML Editors
+    email: karr@mssm.edu
+    github: jonrkarr
+    label: Jonathan Karr
   description: A classification of algorithms for simulating biology and their outputs
   domain: algorithms
   homepage: http://co.mbine.org/standards/kisao
