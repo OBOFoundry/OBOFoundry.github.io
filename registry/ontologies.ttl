@@ -800,6 +800,7 @@ _:b27   <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uo.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b39 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uo.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uo.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/bio-ontology-research-group/unit-ontology> .
 
 <http://purl.obolibrary.org/obo/xco>
@@ -2118,8 +2119,8 @@ _:b121  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Stoeckert" ;
 _:b112  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/CTDbase/exposure-ontology/master/src/ontology/exo.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
-_:b113  <http://www.w3.org/2000/01/rdf-schema#label>  "Carolyn Mattingly" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "cjmattin@ncsu.edu" .
+_:b113  <http://www.w3.org/2000/01/rdf-schema#label>  "Cynthia Grondin" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "cjgrondin@ncsu.edu" .
 
 <http://purl.obolibrary.org/obo/exo.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/exo.owl" .
@@ -5014,6 +5015,9 @@ _:b39   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
 <http://purl.obolibrary.org/obo/uo.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uo.owl" .
 
+<http://purl.obolibrary.org/obo/uo.obo>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uo.obo" .
+
 <http://purl.obolibrary.org/obo/upheno>
         <http://identifiers.org/preferredPrefix>  "UPHENO" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
@@ -5363,7 +5367,7 @@ _:b294  <http://www.w3.org/2000/01/rdf-schema#label>  "Yvonne Bradford" ;
 <http://purl.obolibrary.org/obo/zp.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/zp.obo" .
 
-<http://purl.obolibrary.org/obo/EPSO>
+<http://purl.obolibrary.org/obo/epso>
         <http://identifiers.org/preferredPrefix>  "EPSO" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/BFO> ;
@@ -5373,7 +5377,7 @@ _:b294  <http://www.w3.org/2000/01/rdf-schema#label>  "Yvonne Bradford" ;
         <http://purl.org/dc/terms/1.1/theme>  "disease" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/phwegner/Epilepsyontology/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "Epilepsy Ontology" ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/EPSO.owl" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/epso.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b295 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/epso.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/EPSO_merged.owl> .
@@ -6171,8 +6175,8 @@ _:b345  <http://www.w3.org/2000/01/rdf-schema#label>  "eVOC mailing list" ;
 _:b346  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/fly_taxonomy.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
-_:b347  <http://www.w3.org/2000/01/rdf-schema#label>  "Marta Costa" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "mmc46@gen.cam.ac.uk" .
+_:b347  <http://www.w3.org/2000/01/rdf-schema#label>  "Clare Pilgrim" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "cp390@cam.ac.uk" .
 
 <http://purl.obolibrary.org/obo/fbsp.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fbsp.owl" .

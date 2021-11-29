@@ -1,6 +1,6 @@
 ---
 layout: ontology_detail
-id: EPSO
+id: epso
 label: Epilepsy Ontology
 title: Epilepsy Ontology
 description: A application driven Epilepsy Ontology sith official terms from the ILAE.
