@@ -19,6 +19,9 @@ dependencies:
   - id: ncit
 tracker: https://gitlab.com/fortunalab/ontoavida/-/issues
 license:
-    url: https://creativecommons.org/licenses/by/4.0/
-    label: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
+activity_status: active
+repository: https://gitlab.com/fortunalab/ontoavida
+preferredPrefix: ONTOAVIDA
 ---
