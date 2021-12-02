@@ -4693,6 +4693,39 @@ ontologies:
   title: Ontology for Nutritional Studies
   tracker: https://github.com/enpadasi/Ontology-for-Nutritional-Studies/issues
 - activity_status: active
+  contact:
+    email: fortuna@ebd.csic.es
+    github: miguelfortuna
+    label: Miguel A. Fortuna
+  dependencies:
+  - id: fbcv
+  - id: gsso
+  - id: stato
+  - id: ro
+  - id: ncit
+  description: OntoAvida develops an integrated vocabulary for the description of
+    the most widely-used computational approach for studying evolution using digital
+    organisms (i.e., self-replicating computer programs that evolve within a user-defined
+    computational environment).
+  domain: digital evolution, a branch of Artificial Life.
+  homepage: https://gitlab.com/fortunalab/ontoavida
+  id: ontoavida
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/ontoavida.owl
+  preferredPrefix: ONTOAVIDA
+  products:
+  - id: ontoavida.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ontoavida.owl
+  - id: ontoavida.obo
+    ontology_purl: http://purl.obolibrary.org/obo/ontoavida.obo
+  repository: https://gitlab.com/fortunalab/ontoavida
+  title: 'OntoAvida: ontology for Avida digital evolution platform'
+  tracker: https://gitlab.com/fortunalab/ontoavida/-/issues
+- activity_status: active
   browsers:
   - label: BioPortal
     title: BioPortal Browser
