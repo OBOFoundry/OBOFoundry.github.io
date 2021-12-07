@@ -10,8 +10,6 @@ Summary
 The ontology developers should document that the ontology is used by
 multiple independent people or organizations.
 
-[This check is automatically validated.](checks/fp_009)
-
 Purpose
 -------
 
@@ -32,8 +30,17 @@ Implementation
 --------------
 
 The ontology developers should provide links/citations to evidence of
-use (publication, external ontology; see examples below) as input to the
-review process.
+use (publication, external ontology; see examples below for additional types) within your ontology [metadata file](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology) (replacing with the correct group name, link, and description):
+```
+usages:
+- user: http://www.informatics.jax.org/disease (link to group)
+  description: MGI disease model annotations use DO (description of group)
+  examples:
+   - url: http://www.informatics.jax.org/disease/DOID:4123 (link to specific example)
+     description: Human genes and mouse homology associated with nail diseases (description of specific example)
+```
+You may have multiple examples for each user, and mulitple users under the `usages` tag.
+
 
 Examples
 --------
@@ -79,10 +86,16 @@ Criteria for Review
 -------------------
 
 To pass review, the ontology developers must demonstrate at least three
-external users. External users are defined either as researchers not
+external users specified within. External users are defined either as researchers not
 significantly overlapping in personnel with the developers or three
 independent groups with three independent artefacts (db, etc) that use
 the ontology.
 
+[This check is automatically validated.](checks/fp_009)
 
-<Category:Principles> <Category:Accepted>
+## Feedback and Discussion
+
+To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%239+%22Users%22+%3CENTER+ISSUE+TITLE%3E).
+
+To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%239+%22Users%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
+
