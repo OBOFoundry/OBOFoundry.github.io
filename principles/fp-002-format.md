@@ -8,8 +8,6 @@ title: Common Format (principle 2)
 
 The ontology is made available in a common formal language in an accepted concrete syntax.
 
-[This check is automatically validated.](checks/fp_002)
-
 ## Purpose
 
 A common format allows the maximum number of people to access and reuse an ontology.
@@ -42,3 +40,12 @@ The ontology is available in at least one of the following formats:
 
 - OBO Format
 - OWL or OWL2 RDF/XML
+
+[This check is automatically validated.](checks/fp_002)
+
+## Feedback and Discussion
+
+To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%232+%22Format%22+%3CENTER+ISSUE+TITLE%3E).
+
+To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%232+%22Format%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
+
