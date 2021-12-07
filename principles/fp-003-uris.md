@@ -56,7 +56,7 @@ http://purl.org/dc/terms/
 
 http://dbpedia.org/ontology/
 
-Criteria for Review:
+Criteria for Review
 -------
 
 The ontology namespace is registered at http://www.obofoundry.org/ following the procedures outlined at http://www.obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html
@@ -70,4 +70,5 @@ The ontology IRI follows the format above.
 To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%233+%22URIs%22+%3CENTER+ISSUE+TITLE%3E).
 
 To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%233+%22URIs%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
-<Category:Principles> <Category:Accepted>
+
+
