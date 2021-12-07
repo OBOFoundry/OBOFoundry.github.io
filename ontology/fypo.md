@@ -19,9 +19,6 @@ products:
 taxon:
   id: NCBITaxon:4896
   label: S. pombe
-taxon:
-  id: NCBITaxon:4897
-  label: S. japonicus  
 tracker: https://github.com/pombase/fypo/issues
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/23658422
