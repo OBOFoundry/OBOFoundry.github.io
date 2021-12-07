@@ -8,8 +8,6 @@ title: Open (principle 1)
 
 The ontology MUST be openly available to be used by all without any constraint other than (a) its origin must be acknowledged and (b) it is not to be altered and subsequently redistributed in altered form under the original name or with the same identifiers.
 
-[This check is automatically validated.](checks/fp_001)
-
 ## Purpose
 
 OBO Foundry ontologies are resources for the entire biological and biomedical community. Furthermore, in order to realize the OBO Foundry vision of a suite of interoperable ontologies, ontology developers must be free to re-use terms from any OBO Foundry ontology. For these reasons, the ontologies must be available to all without any constraint on their use or redistribution. Nonetheless, it is proper that their original source is always credited and that after any external alterations, ontologies must never be redistributed under the same name or with the same identifiers.
@@ -153,10 +151,18 @@ material</obo:IAO_0000111>
 - An ontology with no license statement is by default subject to the most restrictive copyright laws for those parts of the ontology that are copyrightable, and therefore is not useful within the OBO Foundry.
 - CC BY-ND allows for redistribution, commercial and non-commercial, as long as it is passed along unchanged and in whole, with credit to the creators. This license is too restrictive for the OBO Foundry, because it requires that the ontology be re-used in its entirety, which prevents the re-use of individual terms.
 
-## External Documentation
-
-Discussion of licensing on OBO Foundry Operations Committee [Issue 103](https://github.com/OBOFoundry/Operations-Committee/issues/103) About Creative Commons licenses.
-
 ## Criteria for Review
 
 To pass review, the ontology must have a license that is equivalent to or less restrictive than CC-BY, specified as described in the text and examples above.
+
+[This check is automatically validated.](checks/fp_001)
+
+## Feedback and Discussion
+
+To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%231+%22Open%22+%3CENTER+ISSUE+TITLE%3E).
+
+To suggest revisions or begin a discussion pertaining to the automated validation of this Principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%231+%22Open%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
+
+See also [this discussion of licensing](https://github.com/OBOFoundry/Operations-Committee/issues/103) by the OBO Foundry Operations Committee focusing on Creative Commons licenses.
+
+
