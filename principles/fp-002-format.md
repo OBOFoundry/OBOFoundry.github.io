@@ -36,7 +36,7 @@ An ontology that is in Frames format, OWL/XML, or OWL Manchester Syntax.
 
 ## Criteria for Review
 
-The ontology is available in at least one of the following formats:
+The ontology MUST be available in at least one of the following formats:
 
 - OBO Format
 - OWL or OWL2 RDF/XML
