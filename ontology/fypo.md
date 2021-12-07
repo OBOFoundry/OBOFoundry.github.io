@@ -7,9 +7,9 @@ build:
   method: obo2owl
   infallible: 1
 contact:
-  email: mah79@cam.ac.uk
-  label: Midori Harris
-  github: mah11
+  email: vw253@cam.ac.uk
+  label: Val Wood
+  github: ValWood
 description: FYPO is a formal ontology of phenotypes observed in fission yeast.
 domain: phenotype
 homepage: https://github.com/pombase/fypo
@@ -19,6 +19,9 @@ products:
 taxon:
   id: NCBITaxon:4896
   label: S. pombe
+taxon:
+  id: NCBITaxon:4897
+  label: S. japonicus  
 tracker: https://github.com/pombase/fypo/issues
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/23658422
