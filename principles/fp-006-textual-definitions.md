@@ -87,7 +87,7 @@ Counter-Examples
 
 Criteria for Review
 -------------------
-Each definition MUST be unique. Each entity MUST NOT have more than one textual definition tagged using [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115).
+Each definition MUST be unique. Each entity MUST NOT have more than one textual definition (tagged using [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)). Textual definitions SHOULD be provided for most terms, and for top level terms especially.
 
 [This check is automatically validated.](checks/fp_006)
 
