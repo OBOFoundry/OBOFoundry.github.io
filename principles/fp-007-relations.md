@@ -24,7 +24,7 @@ To facilitate interoperability between multiple ontologies, especially with resp
 Recommendations and Requirements
 --------------
 
-Each OBO ontology MUST reuse existing relations (aka object properties) that have already been declared in the Relations Ontology (RO), rather than declaring duplicative relations. In some cases it may make sense for an ontology to declare a new relation in its own ID space. In these cases, there SHOULD still be coordination with RO, for example in the form of an issue submitted to the RO tracker.
+Each OBO ontology MUST reuse existing relations (aka object properties) that have already been declared in the Relations Ontology (RO), rather than declaring duplicative relations. In some cases it may make sense for an ontology to declare a new relation in its own ID space. If so, the new relation MUST be classified under an existing RO relation, and there SHOULD still be coordination with RO, for example in the form of an issue submitted to the RO tracker.
 
 Implementation
 --------------
