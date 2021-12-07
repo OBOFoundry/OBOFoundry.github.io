@@ -38,7 +38,7 @@ Issues To Be Addressed (partial list):
 2.Possible need for controlled vocabulary for scope/domain (for example: Anatomy, Upper Level Ontology, Disease, Phenotype, Applicable taxonomy)
 
 ## Criteria for Review
-A scope (‘domain’) MUST be declared in the registry data.
+A scope (‘domain’) MUST be declared in the registry data, and terms from the ontology have to fall within that scope.
 
 [This check is automatically validated.](checks/fp_005)
 
