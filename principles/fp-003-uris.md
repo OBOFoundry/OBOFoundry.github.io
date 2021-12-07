@@ -59,8 +59,7 @@ http://dbpedia.org/ontology/
 Criteria for Review
 -------
 
-The ontology namespace is registered at http://www.obofoundry.org/ following the procedures outlined at http://www.obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html
-The ontology IRI follows the format above.
+The ontology namespace MUST be registered following the procedures outlined within the [OBO Foundry membership requirements and technical details](http://www.obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html) document. In addition, the ontology IRI MUST follow the format given above.
 
 [This check is automatically validated.](checks/fp_003)
 
