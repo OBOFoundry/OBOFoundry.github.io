@@ -161,7 +161,7 @@ To pass review, the ontology must have a license that is equivalent to or less r
 
 To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%231+%22Open%22+%3CENTER+ISSUE+TITLE%3E).
 
-To suggest revisions or begin a discussion pertaining to the automated validation of this Principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%231+%22Open%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
+To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%231+%22Open%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
 
 See also [this discussion of licensing](https://github.com/OBOFoundry/Operations-Committee/issues/103) by the OBO Foundry Operations Committee focusing on Creative Commons licenses.
 
