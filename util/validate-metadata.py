@@ -65,14 +65,14 @@ def main(args):
 
 
 def load_data(yaml_infile):
-  '''Given a YAML data file, load the data to validate.'''
+  """Given a YAML data file, load the data to validate."""
   with open(yaml_infile, 'r') as stream:
     data = yaml.load(stream, Loader=yaml.SafeLoader)
   return data
 
 
 def get_schema():
-  '''Return a schema from the master schema directory.'''
+  """Return a schema from the master schema directory."""
   schema = None
   try:
     file = SCHEMA_FILE
@@ -84,9 +84,9 @@ def get_schema():
 
 
 def validate_metadata(item, schema):
-  '''Given an item and a schema, validate the item against the
+  """Given an item and a schema, validate the item against the
   schema. Add the full results to the metadata_grid and return a map of
-  errors, warnings, and infos for any active ontologies.'''
+  errors, warnings, and infos for any active ontologies."""
   global metadata_grid
 
   ont_id = item['id']
@@ -197,7 +197,7 @@ def validate_metadata(item, schema):
 
 
 def format_license_msg(substr):
-  '''Format an exception message for a license issue.'''
+  """Format an exception message for a license issue."""
   # process to dict
   d = json.loads(substr.replace('\'', '"'))
   url = d['url']
@@ -206,8 +206,8 @@ def format_license_msg(substr):
 
 
 def update_results(results, add):
-  '''Given a map of results for all ontologies and a map of results to add,
-  append the results to the lists in the map.'''
+  """Given a map of results for all ontologies and a map of results to add,
+  append the results to the lists in the map."""
   results['error'] = results['error'] + add['error']
   results['warn'] = results['warn'] + add['warn']
   results['info'] = results['info'] + add['info']
@@ -271,8 +271,8 @@ def sort_grid(metadata_grid):
 
 
 def save_grid(metadata_grid, headers, grid_outfile):
-  '''Given a metadata grid of all results and a grid file to write to, create
-  a sorted table of the full results.'''
+  """Given a metadata grid of all results and a grid file to write to, create
+  a sorted table of the full results."""
   if '.csv' in grid_outfile:
     separator = ','
   elif '.tsv' or '.txt' in grid_outfile:
@@ -319,15 +319,15 @@ def save_grid(metadata_grid, headers, grid_outfile):
 
 
 def print_results(results):
-  '''Given a map of results, log results on the console.'''
+  """Given a map of results, log results on the console."""
   for level, messages in results.items():
     for m in messages:
       print('%s\t%s' % (level.upper(), m))
 
 
 def save_results(results, violations_outfile):
-  '''Given a map of results and an output file to write to, write each result
-  on a line.'''
+  """Given a map of results and an output file to write to, write each result
+  on a line."""
   if '.csv' in violations_outfile:
     separator = ','
   elif '.tsv' or '.txt' in violations_outfile:

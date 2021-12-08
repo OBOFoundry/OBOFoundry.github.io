@@ -31,9 +31,9 @@ def main(args):
 
 
 def parse_table(input_grid):
-    '''Given an input grid in TSV or CSV, get the data as a dictionary. Also
+    """Given an input grid in TSV or CSV, get the data as a dictionary. Also
     set the headers for the HTML grid.
-    '''
+    """
     global headers
 
     data = {}
@@ -54,8 +54,8 @@ def parse_table(input_grid):
 
 
 def get_html(data):
-    '''Given the data from the grid, return an array of lines to generate an
-    HTML table.'''
+    """Given the data from the grid, return an array of lines to generate an
+    HTML table."""
     global headers
 
     lines = []
