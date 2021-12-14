@@ -10,8 +10,6 @@ community and the ontology developers, for communicating with the Foundry on all
 Foundry-related matters, for mediating discussions involving maintenance in the 
 light of scientific advance, and for ensuring that all user feedback is addressed.
 
-[This check is automatically validated.](checks/fp_011)
-
 ## Purpose
 It is important that there is a person responsible for communication rather than a group of people or a list. Often in communications to a list, the responsibility for responding can be diffused and it is likely that in some scenarios no response will be given. It may also, from time to time, be necessary to engage in strategic communications (e.g. relating to funding or collaboration possibilities) that are not able to be made public, and these should not be conducted on public mailing lists. The designation of a contact person is not to be interpreted as a designation for credit. Note that alternative contacts can be designated in case the primary contact is unavailable. However, as for the primary contact, each alternative contact must be an individual.
 
@@ -43,6 +41,12 @@ Mailing list; for ChEBI, chebi-help@ebi.ac.uk
 
 ### Criteria for Review
 
-Email address will be checked to ensure it is written in a standard format.
+Email address will be checked to ensure it is for an individual and that it is written in a standard format.
 
-<Category:Principles> <Category:Accepted>
+[This check is automatically validated.](checks/fp_011)
+
+## Feedback and Discussion
+
+To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%2311+%22Contact%22+%3CENTER+ISSUE+TITLE%3E).
+
+To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%2311+%22Contact%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
