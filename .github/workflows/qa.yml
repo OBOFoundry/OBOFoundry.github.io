@@ -18,6 +18,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip setuptools wheel
-          pip install tox
+          pip install "tox<4.0.0"
       - name: Check code quality with flake8
         run: tox -e flake8
