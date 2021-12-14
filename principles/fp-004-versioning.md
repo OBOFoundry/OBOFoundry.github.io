@@ -9,8 +9,6 @@ Summary
 
 The ontology provider has documented procedures for versioning the ontology, and different versions of ontology are marked, stored, and officially released.
 
-[This check is automatically validated.](checks/fp_004)
-
 Purpose
 -------------
 
@@ -67,5 +65,14 @@ For an OWL format ontology, owl:versionInfo identifies the version and versionIR
 
 CHEBI is an example of an OBO ontology that uses a non-date based system system for version identifier. An example versionIRI for CHEBI is http://purl.obolibrary.org/obo/chebi/187/chebi.owl. This corresponds to a value of `187` for `data-version` in OBO format.
 
+Criteria for Review
+--------
+The released ontology must have a version IRI. The version IRI SHOULD follow a dated format (NS/YYYY-MM-DD/ontology.owl).
 
-<Category:Principles> <Category:Accepted>
+[This check is automatically validated.](checks/fp_004)
+
+## Feedback and Discussion
+
+To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%234+%22Versioning%22+%3CENTER+ISSUE+TITLE%3E).
+
+To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%234+%22Versioning%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
