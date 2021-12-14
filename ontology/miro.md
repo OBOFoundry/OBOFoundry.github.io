@@ -2,8 +2,8 @@
 layout: ontology_detail
 id: miro
 contact:
-  email: srund@nd.edu
-  label: Samuel Rund
+  email: louis@imbb.forth.gr
+  label: Christos (Kitsos) Louis
 description: Application ontology for entities related to insecticide resistance in mosquitos
 domain: environment
 products:
