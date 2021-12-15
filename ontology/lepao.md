@@ -1,7 +1,6 @@
 ---
 layout: ontology_detail
 id: lepao
-mirror_from: https://raw.githubusercontent.com/insect-morphology/lepao/main/lepao.owl
 title: Lepidoptera Anatomy Ontology
 contact:
   email: lagonzalezmo@unal.edu.co
