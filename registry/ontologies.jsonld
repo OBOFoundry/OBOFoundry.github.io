@@ -2121,6 +2121,62 @@
         },
         {
             "activity_status": "active",
+            "contact": {
+                "email": "entiminae@gmail.com",
+                "github": "JCGiron",
+                "label": "Jennifer C. Giron"
+            },
+            "dependencies": [
+                {
+                    "id": "aism"
+                },
+                {
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
+                },
+                {
+                    "id": "caro"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "bfo"
+                },
+                {
+                    "id": "bspo"
+                }
+            ],
+            "description": "The Coleoptera Anatomy Ontology contains terms used for describing the anatomy and phenotype of beetles in biodiversity research. It has been built using the Ontology Develoment Kit, with the Ontology for the Anatomy of the Insect Skeleto-Muscular system (AISM) as a backbone.",
+            "domain": "Insect Anatomy.",
+            "homepage": "https://github.com/insect-morphology/colao",
+            "id": "colao",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/colao.owl",
+            "preferredPrefix": "COLAO",
+            "products": [
+                {
+                    "id": "colao.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/colao.owl"
+                },
+                {
+                    "id": "colao.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/colao.obo"
+                }
+            ],
+            "repository": "https://github.com/insect-morphology/colao",
+            "title": "Coleoptera Anatomy Ontology (COLAO)",
+            "tracker": "https://github.com/insect-morphology/colao/issues"
+        },
+        {
+            "activity_status": "active",
             "build": {
                 "checkout": "git clone https://github.com/data2health/contributor-role-ontology.git",
                 "path": "src/ontology",
@@ -3215,9 +3271,9 @@
                 "system": "git"
             },
             "contact": {
-                "email": "mah79@cam.ac.uk",
-                "github": "mah11",
-                "label": "Midori Harris"
+                "email": "vw253@cam.ac.uk",
+                "github": "ValWood",
+                "label": "Val Wood"
             },
             "description": "A structured controlled vocabulary for the anatomy of fungi.",
             "domain": "anatomy",
@@ -3825,9 +3881,9 @@
                 "source_url": "https://raw.githubusercontent.com/pombase/fypo/master/release/fypo.owl"
             },
             "contact": {
-                "email": "mah79@cam.ac.uk",
-                "github": "mah11",
-                "label": "Midori Harris"
+                "email": "vw253@cam.ac.uk",
+                "github": "ValWood",
+                "label": "Val Wood"
             },
             "depicted_by": "https://github.com/pombase/website/blob/master/src/assets/FYPO_logo_tiny.png",
             "description": "FYPO is a formal ontology of phenotypes observed in fission yeast.",
@@ -4622,6 +4678,62 @@
                     "user": "https://griis.ca/"
                 }
             ]
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "lagonzalezmo@unal.edu.co",
+                "github": "luis-gonzalez-m",
+                "label": "Luis A. Gonzalez-Montana"
+            },
+            "dependencies": [
+                {
+                    "id": "aism"
+                },
+                {
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
+                },
+                {
+                    "id": "caro"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "bfo"
+                },
+                {
+                    "id": "bspo"
+                }
+            ],
+            "description": "The Lepidoptera Anatomy Ontology contains terms used for describing the anatomy and phenotype of moths and butterflies in biodiversity research. LEPAO is developed in part by BIOfid (The Specialised Information Service Biodiversity Research).",
+            "domain": "Insect Anatomy",
+            "homepage": "https://github.com/insect-morphology/lepao",
+            "id": "lepao",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/lepao.owl",
+            "preferredPrefix": "LEPAO",
+            "products": [
+                {
+                    "id": "lepao.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/lepao.owl"
+                },
+                {
+                    "id": "lepao.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/lepao.obo"
+                }
+            ],
+            "repository": "https://github.com/insect-morphology/lepao",
+            "title": "Lepidoptera Anatomy Ontology",
+            "tracker": "https://github.com/insect-morphology/lepao/issues"
         },
         {
             "activity_status": "active",
@@ -10086,13 +10198,14 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/idomal.obo"
                 }
             ],
+            "repository": "https://github.com/VEuPathDB-ontology/IDOMAL",
             "title": "Malaria Ontology"
         },
         {
             "activity_status": "inactive",
             "contact": {
                 "email": "louis@imbb.forth.gr",
-                "label": "C. Louis"
+                "label": "Christos (Kitsos) Louis"
             },
             "description": "Application ontology for entities related to insecticide resistance in mosquitos",
             "domain": "environment",
@@ -10109,6 +10222,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/miro.obo"
                 }
             ],
+            "repository": "https://github.com/VEuPathDB-ontology/MIRO",
             "taxon": {
                 "id": "NCBITaxon:44484",
                 "label": "Anopheles"
@@ -10143,6 +10257,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/tads.obo"
                 }
             ],
+            "repository": "https://github.com/VEuPathDB-ontology/TADS",
             "taxon": {
                 "id": "NCBITaxon:6939",
                 "label": "Ixodidae"
@@ -10176,6 +10291,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/tgma.obo"
                 }
             ],
+            "repository": "https://github.com/VEuPathDB-ontology/TGMA",
             "taxon": {
                 "id": "NCBITaxon:44484",
                 "label": "Anopheles"
