@@ -3,7 +3,7 @@ layout: ontology_detail
 id: miro
 contact:
   email: louis@imbb.forth.gr
-  label: C. Louis
+  label: Christos (Kitsos) Louis
 description: Application ontology for entities related to insecticide resistance in mosquitos
 domain: environment
 products:
@@ -15,6 +15,7 @@ taxon:
 title: Mosquito insecticide resistance
 activity_status: inactive
 validate: false
+repository: https://github.com/VEuPathDB-ontology/MIRO
 ---
 
 Application ontology for entities related to insecticide resistance in mosquitos
