@@ -4,7 +4,7 @@ id: lepao
 title: Lepidoptera Anatomy Ontology
 contact:
   email: lagonzalezmo@unal.edu.co
-  label: Luis A. González-Montaña
+  label: Luis A. Gonzalez-Montana
   github: luis-gonzalez-m
 description: The Lepidoptera Anatomy Ontology contains terms used for describing the anatomy and phenotype of moths and butterflies in biodiversity research. LEPAO is developed in part by BIOfid (The Specialised Information Service Biodiversity Research).
 domain: Insect Anatomy
