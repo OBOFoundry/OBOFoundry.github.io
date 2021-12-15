@@ -45,6 +45,22 @@ layout: default
     {% endfor %}
   </div>
   {% endif %}
+  
+  {% if page.activity_status == "inactive" %}
+  <div>
+    <div class="alert alert-warning" role="alert">
+      This ontology is inactive. For more information see <a href="/docs/OntologyStatus.html">here</a>.
+    </div>
+  </div>
+  {% endif %}
+  
+  {% if page.activity_status == "orphaned" %}
+  <div>
+    <div class="alert alert-warning" role="alert">
+      This ontology is orphaned. For more information see <a href="/docs/OntologyStatus.html">here</a>.
+    </div>
+  </div>
+  {% endif %}
 
   {% assign upperPrefix = page.preferredPrefix | upcase %}
   {% if upperPrefix != page.preferredPrefix %}
