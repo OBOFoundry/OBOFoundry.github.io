@@ -1,3 +1,9 @@
+---
+layout: doc
+id: Conduct
+title: Code of Conduct
+---
+
 # Code of Conduct
 
 This code of conduct outlines expectations of the Open Biological Ontologies (OBO) community. The OBO community is committed to providing a welcoming and inspiring environment for all community members, and we expect this code of conduct to be honored by each community member. Herein, we provide specifics regarding appropriate code of conduct, including recommendations for conflict resolution. The OBO community strives to: 
