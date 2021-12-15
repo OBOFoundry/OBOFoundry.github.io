@@ -18,12 +18,13 @@ layout: default
         {{page.description}}
       </p>
       {% if page.twitter %}
-      <iframe style="position: static; visibility: visible; width: 190px; height: 20px;"
-              data-twttr-rendered="true" title="Twitter Follow Button"
-              class="twitter-follow-button twitter-follow-button"
-              src="http://platform.twitter.com/widgets/follow_button.a64cf823bcb784855b86e2970134bd2a.en.html#_=1438577078419&amp;dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name={{page.twitter}}&amp;show_count=true&amp;show_screen_name=true&amp;size=m"
-              allowtransparency="true" scrolling="no" id="twitter-widget-0" frameborder="0">
-      </iframe>
+        <a href="https://twitter.com/{{ page.twitter }}" 
+           class="twitter-follow-button" 
+           data-show-count="false"
+           data-dnt="true">
+          Follow @{{ page.twitter }}
+        </a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       {% endif %}
       {% if page.google_plus %}
       <a href="https://plus.google.com/{{page.google_plus}}">G+</a>
