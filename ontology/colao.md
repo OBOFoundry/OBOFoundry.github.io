@@ -4,7 +4,7 @@ id: colao
 title: "Coleoptera Anatomy Ontology (COLAO)"
 contact:
   email: entiminae@gmail.com
-  label: Jennifer C. Girón
+  label: Jennifer C. Giron
   github: JCGiron
 description: "The Coleoptera Anatomy Ontology contains terms used for describing the anatomy and phenotype of beetles in biodiversity research. It has been built using the Ontology Develoment Kit, with the Ontology for the Anatomy of the Insect Skeleto-Muscular system (AISM) as a backbone."
 domain: Insect Anatomy.
