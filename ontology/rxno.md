@@ -4,6 +4,7 @@ id: rxno
 contact:
   email: batchelorc@rsc.org
   label: Colin Batchelor
+  github: batchelorc
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

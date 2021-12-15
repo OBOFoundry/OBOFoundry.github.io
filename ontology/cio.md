@@ -2,8 +2,8 @@
 layout: ontology_detail
 id: cio
 contact:
-  email: bgee@sib.swiss
-  label: Frederic Bastian
+  label: Frédéric Bastian
+  email: frederic.bastian@unil.ch
   github: fbastian
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/

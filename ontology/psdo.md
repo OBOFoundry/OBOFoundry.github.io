@@ -9,6 +9,7 @@ build:
 contact:
   email: zachll@umich.edu
   label: Zach Landis-Lewis
+  github: zachll
 description: Ontology to reproducibly study visualizations of clinical performance
 domain: learning systems
 homepage: https://github.com/Display-Lab/psdo

@@ -16,7 +16,7 @@ ontologies:
   in_foundry_order: 1
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   mailing_list: https://groups.google.com/forum/#!forum/bfo-discuss
@@ -63,7 +63,7 @@ ontologies:
   in_foundry_order: 1
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/chebi.owl
@@ -127,7 +127,7 @@ ontologies:
   in_foundry_order: 1
   layout: ontology_detail
   license:
-    label: CC0 1.0 Universal
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/doid.owl
@@ -303,6 +303,35 @@ ontologies:
       url: http://amigo.geneontology.org/amigo/term/GO:0055085
     type: annotation
     user: http://geneontology.org
+  - description: Uniprot uses GO to show the function of proteins
+    examples:
+    - description: functional annotations of human Sonic hedgehog protein
+      url: https://www.uniprot.org/uniprot/Q15465#function
+    type: annotation
+    user: https://www.uniprot.org
+  - description: Reactome annotates activities, pathways, and cellular localization
+      using GO
+    examples:
+    - description: protein tyrosine kinase activity of an EGFR complex
+      url: https://reactome.org/content/detail/R-HSA-177934
+    type: annotation
+    user: https://reactome.org
+  - description: The Alliance of Genome Resources uses GO for model organism gene
+      function annotation
+    examples:
+    - description: Functional summary of C elegans nsy-1 gene
+      url: https://www.alliancegenome.org/gene/WB:WBGene00003822#function---go-annotations
+    - description: Gene Ontology Causal Activity Models for C elegans nsy-1 gene
+      url: https://www.alliancegenome.org/gene/WB:WBGene00003822#pathways
+    type: annotation
+    user: https://www.alliancegenome.org
+  - description: Rhea uses GO to describe individual biochemical reactions
+    examples:
+    - description: Glutamine scyllo-inositol transaminase reaction and associated
+        GO term
+      url: https://www.rhea-db.org/rhea/22920
+    type: mapping
+    user: https://www.rhea-db.org
 - activity_status: active
   browsers:
   - label: BioPortal
@@ -323,7 +352,7 @@ ontologies:
   integration_server: http://build.berkeleybop.org/job/build-obi/
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   mailing_list: http://groups.google.com/group/obi-users
@@ -394,7 +423,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/pato.owl
@@ -452,7 +481,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/po.owl
@@ -532,7 +561,7 @@ ontologies:
   in_foundry_order: 1
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/pr.owl
@@ -585,7 +614,7 @@ ontologies:
   in_foundry_order: 1
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/xao.owl
@@ -633,7 +662,7 @@ ontologies:
   in_foundry_order: 1
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/zfa.owl
@@ -678,7 +707,7 @@ ontologies:
   id: aeo
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/aeo.owl
@@ -723,7 +752,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/agro.owl
@@ -771,7 +800,7 @@ ontologies:
   id: aism
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/aism.owl
@@ -803,7 +832,7 @@ ontologies:
   id: amphx
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/amphx.owl
@@ -858,9 +887,9 @@ ontologies:
   id: apollo_sv
   layout: ontology_detail
   license:
-    label: CC-BY 3.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/3.0/
+    url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/apollo_sv.owl
   preferredPrefix: APOLLO_SV
   products:
@@ -871,15 +900,15 @@ ontologies:
   tracker: https://github.com/ApolloDev/apollo-sv/issues
 - activity_status: active
   contact:
-    email: card@mcmaster.ca
-    github: raphenya
-    label: CARD
+    email: mcarthua@mcmaster.ca
+    github: agmcarthur
+    label: Andrew G. McArthur
   description: Antibiotic resistance genes and mutations
   homepage: https://github.com/arpcard/aro
   id: aro
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   mailing_list: https://mailman.mcmaster.ca/mailman/listinfo/card-l
@@ -905,7 +934,7 @@ ontologies:
   in_foundry: false
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/bco.owl
@@ -934,7 +963,7 @@ ontologies:
   id: bspo
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/bspo.owl
@@ -1002,7 +1031,7 @@ ontologies:
   id: caro
   layout: ontology_detail
   license:
-    label: CC-BY 3.0
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/caro.owl
@@ -1019,6 +1048,7 @@ ontologies:
     source_url: http://purl.obolibrary.org/obo/cdao.owl
   contact:
     email: balhoff@renci.org
+    github: balhoff
     label: Jim Balhoff
   description: a formalization of concepts and relations relevant to evolutionary
     comparative analysis
@@ -1026,7 +1056,7 @@ ontologies:
   id: cdao
   layout: ontology_detail
   license:
-    label: CC0 1.0 Universal
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/cdao.owl
@@ -1059,7 +1089,7 @@ ontologies:
   id: cdno
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/cdno.owl
@@ -1080,6 +1110,7 @@ ontologies:
     source_url: https://raw.githubusercontent.com/semanticchemistry/semanticchemistry/master/ontology/cheminf.owl
   contact:
     email: egon.willighagen@gmail.com
+    github: egonw
     label: Egon Willighagen
   description: Includes terms for the descriptors commonly used in cheminformatics
     software applications and the algorithms which generate them.
@@ -1131,7 +1162,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: http://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/chiro.owl
@@ -1157,7 +1188,7 @@ ontologies:
   id: chmo
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   mailing_list: chemistry-ontologies@googlegroups.com
@@ -1172,6 +1203,7 @@ ontologies:
 - activity_status: active
   contact:
     email: yongqunh@med.umich.edu
+    github: yongqunh
     label: Yongqun Oliver He
   description: The Coronavirus Infectious Disease Ontology (CIDO) aims to ontologically
     represent and standardize various aspects of coronavirus infectious diseases,
@@ -1181,7 +1213,7 @@ ontologies:
   id: cido
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   mailing_list: cido-discuss@googlegroups.com
@@ -1195,15 +1227,15 @@ ontologies:
   tracker: https://github.com/cido-ontology/cido/issues
 - activity_status: active
   contact:
-    email: bgee@sib.swiss
+    email: frederic.bastian@unil.ch
     github: fbastian
-    label: Frederic Bastian
+    label: "Fr\xE9d\xE9ric Bastian"
   description: An ontology to capture confidence information about annotations.
   homepage: https://github.com/BgeeDB/confidence-information-ontology
   id: cio
   layout: ontology_detail
   license:
-    label: CC0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/cio.owl
@@ -1246,7 +1278,7 @@ ontologies:
   label: Cell Ontology
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   mailing_list: https://groups.google.com/g/cl_edit
@@ -1327,7 +1359,7 @@ ontologies:
   id: clao
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: http://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/clao.owl
@@ -1355,7 +1387,7 @@ ontologies:
   id: clo
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/clo.owl
@@ -1386,7 +1418,7 @@ ontologies:
   id: clyh
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/clyh.owl
@@ -1417,7 +1449,7 @@ ontologies:
   id: cmo
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: http://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/cmo.owl
@@ -1449,7 +1481,7 @@ ontologies:
   id: cob
   layout: ontology_detail
   license:
-    label: CC0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/cob.owl
@@ -1478,7 +1510,7 @@ ontologies:
   id: cro
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 2.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/2.0/
   ontology_purl: http://purl.obolibrary.org/obo/cro.owl
@@ -1512,7 +1544,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/cteno.owl
@@ -1540,7 +1572,7 @@ ontologies:
   id: cto
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/cto.owl
@@ -1591,7 +1623,7 @@ ontologies:
   id: ddanat
   layout: ontology_detail
   license:
-    label: CC0 1.0 Universal
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/ddanat.owl
@@ -1624,7 +1656,7 @@ ontologies:
   id: ddpheno
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: http://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/ddpheno.owl
@@ -1652,7 +1684,7 @@ ontologies:
   id: dideo
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/dideo.owl
@@ -1665,6 +1697,46 @@ ontologies:
   tracker: https://github.com/DIDEO/DIDEO/issues
 - activity_status: active
   browsers:
+  - label: DO
+    title: DO Browser
+    url: http://www.disease-ontology.org/
+  build:
+    source_url: https://github.com/DiseaseOntology/DiseaseDriversOntology/tree/main/src/ontology/disdriv.owl
+  contact:
+    email: lynn.schriml@gmail.com
+    github: lschriml
+    label: Lynn Schriml
+  description: Ontology for drivers and triggers of human diseases, built to classify
+    ExO ontology exposure stressors. An application ontology. Built in collaboration
+    with EnvO, ExO, ECTO and ChEBI.
+  domain: disease
+  homepage: http://www.disease-ontology.org
+  id: disdriv
+  layout: ontology_detail
+  license:
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/disdriv.owl
+  preferredPrefix: DISDRIV
+  products:
+  - id: disdriv.owl
+    ontology_purl: http://purl.obolibrary.org/obo/disdriv.owl
+  repository: https://github.com/DiseaseOntology/DiseaseDriversOntology/
+  taxon:
+    id: NCBITaxon:9606
+    label: Homo sapiens
+  title: Disease Drivers Ontology
+  tracker: https://github.com/DiseaseOntology/DiseaseDriversOntology/issues
+  twitter: diseaseontology
+  usages:
+  - description: Human Disease Ontology
+    examples:
+    - description: fetal alcohol syndrome, has exposure stressor some alcohol
+      url: https://www.disease-ontology.org/?id=DOID:0050665
+    user: https://www.disease-ontology.org
+- activity_status: active
+  browsers:
   - label: FB
     title: FlyBase Browser
     url: http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000347
@@ -1674,6 +1746,7 @@ ontologies:
     system: git
   contact:
     email: cp390@cam.ac.uk
+    github: Clare72
     label: Clare Pilgrim
   description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
   domain: phenotype
@@ -1681,7 +1754,7 @@ ontologies:
   id: dpo
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/dpo.owl
@@ -1714,6 +1787,7 @@ ontologies:
     source_url: http://purl.obolibrary.org/obo/dron.owl
   contact:
     email: hoganwr@gmail.com
+    github: hoganwr
     label: William Hogan
   description: An ontology to support comparative effectiveness researchers studying
     claims data.
@@ -1722,7 +1796,7 @@ ontologies:
   id: dron
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/dron.owl
@@ -1753,7 +1827,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/duo.owl
@@ -1784,7 +1858,7 @@ ontologies:
   id: ecao
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/ecao.owl
@@ -1818,7 +1892,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC0 1.0 Universal
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/eco.owl
@@ -1889,7 +1963,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/ecocore.owl
@@ -1943,7 +2017,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/ecto.owl
@@ -1992,7 +2066,7 @@ ontologies:
   id: emapa
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/emapa.owl
@@ -2042,7 +2116,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/envo.owl
@@ -2125,7 +2199,7 @@ ontologies:
   id: eupath
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/eupath.owl
@@ -2154,8 +2228,9 @@ ontologies:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/CTDbase/exposure-ontology/master/src/ontology/exo.obo
   contact:
-    email: cjmattin@ncsu.edu
-    label: Carolyn Mattingly
+    email: cjgrondin@ncsu.edu
+    github: cjgrondin
+    label: Cynthia Grondin
   description: Vocabularies for describing exposure data to inform understanding of
     environmental health.
   domain: health
@@ -2193,7 +2268,7 @@ ontologies:
   id: fao
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: http://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/fao.owl
@@ -2251,6 +2326,7 @@ ontologies:
     system: git
   contact:
     email: cp390@cam.ac.uk
+    github: Clare72
     label: Clare Pilgrim
   description: An ontology representing the gross anatomy of Drosophila melanogaster.
   domain: Drosophilid anatomy
@@ -2258,7 +2334,7 @@ ontologies:
   id: fbbt
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/fbbt.owl
@@ -2313,6 +2389,7 @@ ontologies:
     system: git
   contact:
     email: cp390@cam.ac.uk
+    github: Clare72
     label: Clare Pilgrim
   description: A structured controlled vocabulary used for various aspects of annotation
     by FlyBase.
@@ -2321,7 +2398,7 @@ ontologies:
   id: fbcv
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/fbcv.owl
@@ -2353,6 +2430,7 @@ ontologies:
     system: git
   contact:
     email: cp390@cam.ac.uk
+    github: Clare72
     label: Clare Pilgrim
   description: A structured controlled vocabulary of the development of Drosophila
     melanogaster.
@@ -2361,7 +2439,7 @@ ontologies:
   id: fbdv
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/fbdv.owl
@@ -2393,7 +2471,7 @@ ontologies:
   id: fideo
   layout: ontology_detail
   license:
-    label: CC0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/fideo.owl
@@ -2418,7 +2496,7 @@ ontologies:
   id: flopo
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/flopo.owl
@@ -2446,7 +2524,7 @@ ontologies:
   id: fma
   layout: ontology_detail
   license:
-    label: CC-BY 3.0
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/fma.owl
@@ -2483,7 +2561,7 @@ ontologies:
   id: fobi
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/fobi.owl
@@ -2519,7 +2597,7 @@ ontologies:
   id: foodon
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/foodon.owl
@@ -2567,7 +2645,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/fovt.owl
@@ -2604,7 +2682,7 @@ ontologies:
   id: fypo
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/fypo.owl
@@ -2640,7 +2718,7 @@ ontologies:
   id: gecko
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/gecko.owl
@@ -2672,7 +2750,7 @@ ontologies:
   id: genepio
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/genepio.owl
@@ -2701,7 +2779,7 @@ ontologies:
   id: geno
   layout: ontology_detail
   license:
-    label: CC-BY-SA
+    label: CC BY-SA 2.0
     logo: https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png
     url: https://creativecommons.org/licenses/by-sa/2.0/
   ontology_purl: http://purl.obolibrary.org/obo/geno.owl
@@ -2723,7 +2801,7 @@ ontologies:
   id: geo
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/geo.owl
@@ -2760,7 +2838,7 @@ ontologies:
   id: gno
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/gno.owl
@@ -2808,7 +2886,7 @@ ontologies:
   id: hancestro
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/hancestro.owl
@@ -2858,6 +2936,7 @@ ontologies:
     system: git
   contact:
     email: diapriid@gmail.com
+    github: mjy
     label: Matt Yoder
   description: A structured controlled vocabulary of the anatomy of the Hymenoptera
     (bees, wasps, and ants)
@@ -2866,7 +2945,7 @@ ontologies:
   id: hao
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/hao.owl
@@ -2900,7 +2979,7 @@ ontologies:
   id: hom
   layout: ontology_detail
   license:
-    label: CC0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/hom.owl
@@ -2917,14 +2996,15 @@ ontologies:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/hsapdv/hsapdv.obo
   contact:
-    email: bgee@sib.swiss
-    label: bgee
+    email: frederic.bastian@unil.ch
+    github: fbastian
+    label: "Fr\xE9d\xE9ric Bastian"
   description: Life cycle stages for Human
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv
   id: hsapdv
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/hsapdv.owl
@@ -2958,7 +3038,7 @@ ontologies:
   id: hso
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/hso.owl
@@ -2981,7 +3061,7 @@ ontologies:
   id: htn
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/htn.owl
@@ -3009,7 +3089,7 @@ ontologies:
   id: iao
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/iao.owl
@@ -3049,7 +3129,7 @@ ontologies:
   id: iceo
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/iceo.owl
@@ -3071,7 +3151,7 @@ ontologies:
   id: ico
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/ico.owl
@@ -3103,7 +3183,7 @@ ontologies:
   id: ido
   layout: ontology_detail
   license:
-    label: CC-BY 3.0
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/ido.owl
@@ -3120,13 +3200,14 @@ ontologies:
 - activity_status: active
   contact:
     email: yongqunh@med.umich.edu
+    github: yongqunh
     label: Yongqun Oliver He
   description: An ontology of interactions and interaction networks
   homepage: https://github.com/INO-ontology/ino
   id: ino
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/ino.owl
@@ -3192,7 +3273,7 @@ ontologies:
   id: ma
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/ma.owl
@@ -3238,7 +3319,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/maxo.owl
@@ -3297,7 +3378,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/mco.owl
@@ -3325,7 +3406,7 @@ ontologies:
   id: mf
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/mf.owl
@@ -3351,7 +3432,7 @@ ontologies:
   id: mfmo
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/mfmo.owl
@@ -3380,7 +3461,7 @@ ontologies:
   id: mfoem
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/mfoem.owl
@@ -3402,7 +3483,7 @@ ontologies:
   id: mfomd
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/mfomd.owl
@@ -3453,7 +3534,7 @@ ontologies:
   id: miapa
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: http://creativecommons.org/publicdomain/zero/1.0/
   mailing_list: http://groups.google.com/group/miapa-discuss
@@ -3469,6 +3550,7 @@ ontologies:
 - activity_status: active
   contact:
     email: carrine.blank@umontana.edu
+    github: carrineblank
     label: Carrine Blank
   description: An ontology of prokaryotic phenotypic and metabolic characters
   domain: phenotype
@@ -3476,7 +3558,7 @@ ontologies:
   id: micro
   layout: ontology_detail
   license:
-    label: CC-BY 2.0
+    label: CC BY 2.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/2.0/
   ontology_purl: http://purl.obolibrary.org/obo/micro.owl
@@ -3505,7 +3587,7 @@ ontologies:
   id: mmo
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/mmo.owl
@@ -3530,14 +3612,15 @@ ontologies:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/mmusdv/mmusdv.obo
   contact:
-    email: bgee@sib.swiss
-    label: bgee
+    email: frederic.bastian@unil.ch
+    github: fbastian
+    label: "Fr\xE9d\xE9ric Bastian"
   description: Life cycle stages for Mus Musculus
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/MmusDv
   id: mmusdv
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/mmusdv.owl
@@ -3566,7 +3649,7 @@ ontologies:
   id: mod
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/mod.owl
@@ -3683,13 +3766,14 @@ ontologies:
     source_url: https://raw.githubusercontent.com/rsc-ontologies/rxno/master/mop.owl
   contact:
     email: batchelorc@rsc.org
+    github: batchelorc
     label: Colin Batchelor
   description: Processes at the molecular level
   homepage: https://github.com/rsc-ontologies/rxno
   id: mop
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   mailing_list: chemistry-ontologies@googlegroups.com
@@ -3729,7 +3813,7 @@ ontologies:
     type: DryRunBuild
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
@@ -3803,7 +3887,7 @@ ontologies:
   id: mpath
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/mpath.owl
@@ -3829,7 +3913,7 @@ ontologies:
   id: mpio
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/mpio.owl
@@ -3852,7 +3936,7 @@ ontologies:
   id: mro
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/mro.owl
@@ -3893,7 +3977,7 @@ ontologies:
   label: MS
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/3.0/
   mailing_list: psidev-ms-vocab@lists.sourceforge.net
@@ -3930,7 +4014,7 @@ ontologies:
   id: nbo
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/nbo.owl
@@ -3965,7 +4049,7 @@ ontologies:
     type: ReleaseBuild
   layout: ontology_detail
   license:
-    label: CC0 1.0 Universal
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/ncbitaxon.owl
@@ -4007,7 +4091,7 @@ ontologies:
   id: ncit
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/ncit.owl
@@ -4054,7 +4138,7 @@ ontologies:
   id: ncro
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   mailing_list: ncro-devel@googlegroups.com, ncro-discuss@googlegroups.com
@@ -4074,6 +4158,7 @@ ontologies:
   canonical: nomen.owl
   contact:
     email: diapriid@gmail.com
+    github: mjy
     label: Matt Yoder
   description: NOMEN is a nomenclatural ontology for biological names (not concepts).  It
     encodes the goverened rules of nomenclature.
@@ -4086,7 +4171,7 @@ ontologies:
   label: NOMEN
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   mailing_list: https://groups.google.com/forum/#!forum/nomen-discuss
@@ -4115,6 +4200,7 @@ ontologies:
     source_url: https://raw.githubusercontent.com/OAE-ontology/OAE/master/src/oae_merged.owl
   contact:
     email: yongqunh@med.umich.edu
+    github: yongqunh
     label: Yongqunh He
   description: A biomedical ontology in the domain of adverse events
   domain: adverse events, health
@@ -4122,7 +4208,7 @@ ontologies:
   id: oae
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/oae.owl
@@ -4136,6 +4222,7 @@ ontologies:
 - activity_status: active
   contact:
     email: mjyoder@illinois.edu
+    github: mjy
     label: Matt Yoder
   description: OArCS is an ontology describing the Arthropod ciruclatory system.
   domain: anatomy
@@ -4162,6 +4249,7 @@ ontologies:
     system: git
   contact:
     email: cjmungall@lbl.gov
+    github: cmungall
     label: Chris Mungall
   description: A collection of biological attributes (traits) covering all kingdoms
     of life.
@@ -4173,7 +4261,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: http://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/oba.owl
@@ -4200,7 +4288,7 @@ ontologies:
   in_foundry: false
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/obcs.owl
@@ -4222,7 +4310,7 @@ ontologies:
   id: obib
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/obib.owl
@@ -4252,13 +4340,14 @@ ontologies:
 - activity_status: active
   contact:
     email: yongqunh@med.umich.edu
+    github: yongqunh
     label: Yongqun Oliver He
   description: A formal ontology of genes and genomes of biological organisms.
   homepage: https://bitbucket.org/hegroup/ogg
   id: ogg
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/ogg.owl
@@ -4280,7 +4369,7 @@ ontologies:
   id: ogms
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/ogms.owl
@@ -4297,6 +4386,7 @@ ontologies:
 - activity_status: active
   contact:
     email: linikujp@gmail.com
+    github: linikujp
     label: Asiyah Yu Lin
   description: An application ontology to represent genetic susceptibility to a specific
     disease, adverse event, or a pathological process.
@@ -4304,7 +4394,7 @@ ontologies:
   id: ogsf
   layout: ontology_detail
   license:
-    label: CC-BY 3.0
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/ogsf.owl
@@ -4321,6 +4411,7 @@ ontologies:
     source_url: http://purl.obolibrary.org/obo/ohd.owl
   contact:
     email: alanruttenberg@gmail.com
+    github: alanruttenberg
     label: Alan Ruttenberg
   description: The Oral Health and Disease Ontology was created, initially, to represent
     the content of dental practice health records.
@@ -4329,7 +4420,7 @@ ontologies:
   id: ohd
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/ohd.owl
@@ -4345,6 +4436,7 @@ ontologies:
 - activity_status: active
   contact:
     email: yongqunh@med.umich.edu
+    github: yongqunh
     label: Yongqun Oliver He
   description: The Ontology of Host-Microbiome Interactions aims to ontologically
     represent and standardize various entities and relations related to microbiomes,
@@ -4354,7 +4446,7 @@ ontologies:
   id: ohmi
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   mailing_list: http://groups.google.com/group/ohmi-discuss
@@ -4378,7 +4470,7 @@ ontologies:
   id: ohpi
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   mailing_list: http://groups.google.com/group/ohpi-discuss
@@ -4395,14 +4487,15 @@ ontologies:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.obo
   contact:
-    email: bgee@sib.swiss
-    label: bgee
+    email: frederic.bastian@unil.ch
+    github: fbastian
+    label: "Fr\xE9d\xE9ric Bastian"
   description: Life cycle stages for Medaka
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv
   id: olatdv
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/olatdv.owl
@@ -4427,7 +4520,7 @@ ontologies:
   in_foundry: false
   layout: ontology_detail
   license:
-    label: CC-BY 3.0
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/omit.owl
@@ -4452,7 +4545,7 @@ ontologies:
   id: omo
   layout: ontology_detail
   license:
-    label: CC0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/omo.owl
@@ -4480,7 +4573,7 @@ ontologies:
   id: omp
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/omp.owl
@@ -4499,6 +4592,7 @@ ontologies:
     source_url: https://github.com/ufbmi/OMRSE
   contact:
     email: hoganwr@gmail.com
+    github: hoganwr
     label: Bill Hogan
   description: This ontology covers the domain of social entities that are related
     to health care, such as demographic information and the roles of various individuals
@@ -4508,7 +4602,7 @@ ontologies:
   id: omrse
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/omrse.owl
@@ -4539,7 +4633,7 @@ ontologies:
   label: Ontology for Nutritional Epidemiology
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/one.owl
@@ -4573,7 +4667,7 @@ ontologies:
   label: Ontology for Nutritional Studies
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/ons.owl
@@ -4586,6 +4680,39 @@ ontologies:
   repository: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
   title: Ontology for Nutritional Studies
   tracker: https://github.com/enpadasi/Ontology-for-Nutritional-Studies/issues
+- activity_status: active
+  contact:
+    email: fortuna@ebd.csic.es
+    github: miguelfortuna
+    label: Miguel A. Fortuna
+  dependencies:
+  - id: fbcv
+  - id: gsso
+  - id: stato
+  - id: ro
+  - id: ncit
+  description: OntoAvida develops an integrated vocabulary for the description of
+    the most widely-used computational approach for studying evolution using digital
+    organisms (i.e., self-replicating computer programs that evolve within a user-defined
+    computational environment).
+  domain: digital evolution, a branch of Artificial Life.
+  homepage: https://gitlab.com/fortunalab/ontoavida
+  id: ontoavida
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/ontoavida.owl
+  preferredPrefix: ONTOAVIDA
+  products:
+  - id: ontoavida.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ontoavida.owl
+  - id: ontoavida.obo
+    ontology_purl: http://purl.obolibrary.org/obo/ontoavida.obo
+  repository: https://gitlab.com/fortunalab/ontoavida
+  title: 'OntoAvida: ontology for Avida digital evolution platform'
+  tracker: https://gitlab.com/fortunalab/ontoavida/-/issues
 - activity_status: active
   browsers:
   - label: BioPortal
@@ -4604,7 +4731,7 @@ ontologies:
   id: ontoneo
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   mailing_list: http://groups.google.com/group/ontoneo-discuss
@@ -4627,7 +4754,7 @@ ontologies:
   id: oostt
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/oostt.owl
@@ -4648,7 +4775,7 @@ ontologies:
   id: opl
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/opl.owl
@@ -4671,6 +4798,7 @@ ontologies:
 - activity_status: active
   contact:
     email: yongqunh@med.umich.edu
+    github: yongqunh
     label: Yongqun Oliver He
   description: The Ontology of Precision Medicine and Investigation (OPMI) aims to
     ontologically represent and standardize various entities and relations associated
@@ -4679,7 +4807,7 @@ ontologies:
   id: opmi
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   mailing_list: http://groups.google.com/group/opmi-discuss
@@ -4702,7 +4830,7 @@ ontologies:
   id: ornaseq
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/ornaseq.owl
@@ -4716,13 +4844,14 @@ ontologies:
 - activity_status: active
   contact:
     email: yongqunh@med.umich.edu
+    github: yongqunh
     label: Yongqunh He
   description: A biomedical ontology in the domain of vaccine adverse events.
   homepage: http://www.violinet.org/ovae/
   id: ovae
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/ovae.owl
@@ -4740,6 +4869,7 @@ ontologies:
     system: git
   contact:
     email: rlwalls2008@gmail.com
+    github: ramonawalls
     label: Ramona Walls
   dependencies:
   - id: ro
@@ -4761,7 +4891,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: http://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/pco.owl
@@ -4802,14 +4932,15 @@ ontologies:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/pdumdv/pdumdv.obo
   contact:
-    email: bgee@sib.swiss
-    label: bgee
+    email: frederic.bastian@unil.ch
+    github: fbastian
+    label: "Fr\xE9d\xE9ric Bastian"
   description: Life cycle stages for Platynereis dumerilii
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv
   id: pdumdv
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/pdumdv.owl
@@ -4834,7 +4965,7 @@ ontologies:
   id: peco
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/peco.owl
@@ -4872,7 +5003,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/phipo.owl
@@ -4892,6 +5023,7 @@ ontologies:
     system: git
   contact:
     email: smr@stowers.org
+    github: srobb1
     label: Sofia Robb
   dependencies:
   - id: ro
@@ -4906,7 +5038,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/plana.owl
@@ -4934,6 +5066,7 @@ ontologies:
     system: git
   contact:
     email: smr@stowers.org
+    github: srobb1
     label: Sofia Robb
   dependencies:
   - id: ro
@@ -4950,7 +5083,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/planp.owl
@@ -4985,7 +5118,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/poro.owl
@@ -5008,6 +5141,7 @@ ontologies:
 - activity_status: active
   contact:
     email: rlwalls2008@gmail.com
+    github: ramonawalls
     label: Ramona Walls
   description: An ontology for describing the phenology of individual plants and populations
     of plants, and for integrating plant phenological data across sources and scales.
@@ -5016,7 +5150,7 @@ ontologies:
   id: ppo
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   mailing_list: ppo-discuss@googlegroups.com
@@ -5038,6 +5172,7 @@ ontologies:
     system: git
   contact:
     email: zachll@umich.edu
+    github: zachll
     label: Zach Landis-Lewis
   dependencies:
   - id: stato
@@ -5050,7 +5185,7 @@ ontologies:
   id: psdo
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/psdo.owl
@@ -5080,7 +5215,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/pso.owl
@@ -5110,7 +5245,7 @@ ontologies:
   id: pw
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/pw.owl
@@ -5156,7 +5291,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/rbo.owl
@@ -5193,6 +5328,7 @@ ontologies:
   canonical: ro.owl
   contact:
     email: cjmungall@lbl.gov
+    github: cmungall
     label: Chris Mungall
   description: Relationship types shared across multiple ontologies
   documentation: https://oborel.github.io/obo-relations/
@@ -5204,7 +5340,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: http://creativecommons.org/publicdomain/zero/1.0/
   mailing_list: https://groups.google.com/forum/#!forum/obo-relations
@@ -5276,7 +5412,7 @@ ontologies:
   id: rs
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/rs.owl
@@ -5303,6 +5439,7 @@ ontologies:
     source_url: https://raw.githubusercontent.com/rsc-ontologies/rxno/master/rxno.owl
   contact:
     email: batchelorc@rsc.org
+    github: batchelorc
     label: Colin Batchelor
   description: Connects organic name reactions to their roles in an organic synthesis
     and to processes in MOP
@@ -5310,7 +5447,7 @@ ontologies:
   id: rxno
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   mailing_list: chemistry-ontologies@googlegroups.com
@@ -5338,7 +5475,7 @@ ontologies:
   id: sepio
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/sepio.owl
@@ -5366,7 +5503,7 @@ ontologies:
   id: so
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   mailing_list: https://sourceforge.net/p/song/mailman/song-devel/
@@ -5402,7 +5539,7 @@ ontologies:
   id: spd
   layout: ontology_detail
   license:
-    label: CC-BY 3.0
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/spd.owl
@@ -5434,7 +5571,7 @@ ontologies:
   in_foundry: false
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/stato.owl
@@ -5451,6 +5588,7 @@ ontologies:
     source_url: https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl
   contact:
     email: allyson.lister@oerc.ox.ac.uk
+    github: allysonlister
     label: Allyson Lister
   description: The Software Ontology (SWO) is a resource for describing software tools,
     their types, tasks, versions, provenance and associated data. It contains detailed
@@ -5488,7 +5626,7 @@ ontologies:
   id: symp
   layout: ontology_detail
   license:
-    label: CC0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/symp.owl
@@ -5517,6 +5655,7 @@ ontologies:
     system: git
   contact:
     email: balhoff@renci.org
+    github: balhoff
     label: Jim Balhoff
   description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
   domain: taxonomy
@@ -5527,7 +5666,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: http://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/taxrank.owl
@@ -5563,7 +5702,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/to.owl
@@ -5612,7 +5751,7 @@ ontologies:
   id: trans
   layout: ontology_detail
   license:
-    label: CC0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/trans.owl
@@ -5634,6 +5773,7 @@ ontologies:
 - activity_status: active
   contact:
     email: balhoff@renci.org
+    github: balhoff
     label: Jim Balhoff
   description: An ontology covering the taxonomy of teleosts (bony fish)
   domain: taxonomy
@@ -5641,7 +5781,7 @@ ontologies:
   id: tto
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: http://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/tto.owl
@@ -5677,7 +5817,7 @@ ontologies:
   id: txpo
   layout: ontology_detail
   license:
-    label: CC-BY 3.0
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/txpo.owl
@@ -5715,6 +5855,7 @@ ontologies:
   canonical: uberon.owl
   contact:
     email: cjmungall@lbl.gov
+    github: cmungall
     label: Chris Mungall
   dependencies:
   - id: go
@@ -5741,7 +5882,7 @@ ontologies:
   label: Uberon
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
@@ -5917,7 +6058,7 @@ ontologies:
   in_foundry: false
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/uo.owl
@@ -5925,6 +6066,8 @@ ontologies:
   products:
   - id: uo.owl
     ontology_purl: http://purl.obolibrary.org/obo/uo.owl
+  - id: uo.obo
+    ontology_purl: http://purl.obolibrary.org/obo/uo.obo
   repository: https://github.com/bio-ontology-research-group/unit-ontology
   title: Units of measurement ontology
   tracker: https://github.com/bio-ontology-research-group/unit-ontology/issues
@@ -5943,7 +6086,7 @@ ontologies:
   id: upheno
   layout: ontology_detail
   license:
-    label: CC0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
@@ -5976,6 +6119,7 @@ ontologies:
     source_url: https://raw.githubusercontent.com/vaccineontology/VO/master/src/VO_merged.owl
   contact:
     email: yongqunh@med.umich.edu
+    github: yongqunh
     label: Yongqunh He
   description: VO is a biomedical ontology in the domain of vaccine and vaccination.
   domain: health
@@ -5983,7 +6127,7 @@ ontologies:
   id: vo
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/vo.owl
@@ -6042,13 +6186,14 @@ ontologies:
 - activity_status: active
   contact:
     email: balhoff@renci.org
+    github: balhoff
     label: Jim Balhoff
   description: Comprehensive hierarchy of extinct and extant vertebrate taxa.
   homepage: https://github.com/phenoscape/vertebrate-taxonomy-ontology
   id: vto
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: http://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/vto.owl
@@ -6082,7 +6227,7 @@ ontologies:
   id: wbbt
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/wbbt.owl
@@ -6235,7 +6380,7 @@ ontologies:
   id: xco
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/xco.owl
@@ -6271,7 +6416,7 @@ ontologies:
   label: xlmod
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/3.0/
   mailing_list: psidev-ms-vocab@lists.sourceforge.net
@@ -6312,7 +6457,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/xpo.owl
@@ -6334,6 +6479,7 @@ ontologies:
     source_url: https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.obo
   contact:
     email: ybradford@zfin.org
+    github: ybradford
     label: Yvonne Bradford
   description: Experimental conditions applied to zebrafish, developed to facilitate
     experiment condition annotation at ZFIN
@@ -6342,7 +6488,7 @@ ontologies:
   id: zeco
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/zeco.owl
@@ -6375,7 +6521,7 @@ ontologies:
   in_foundry: false
   layout: ontology_detail
   license:
-    label: CC-BY 3.0
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/zfs.owl
@@ -6399,6 +6545,7 @@ ontologies:
     system: git
   contact:
     email: ybradford@zfin.org
+    github: ybradford
     label: Yvonne Bradford
   dependencies:
   - id: go
@@ -6418,7 +6565,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/zp.owl
@@ -6444,6 +6591,33 @@ ontologies:
         phenotypes to genotypes across species'
     type: annotation
     user: https://monarchinitiative.org/
+- activity_status: active
+  contact:
+    email: alpha.tom.kodamullil@scai.fraunhofer.de
+    github: akodamullil
+    label: Alpha Tom Kodamullil
+  dependencies:
+  - id: BFO
+  description: A application driven Epilepsy Ontology sith official terms from the
+    ILAE.
+  domain: disease
+  id: epso
+  label: Epilepsy Ontology
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/epso.owl
+  preferredPrefix: EPSO
+  products:
+  - id: epso.owl
+    ontology_purl: http://purl.obolibrary.org/obo/epso.owl
+  - id: EPSO_merged.owl
+    ontology_purl: http://purl.obolibrary.org/obo/EPSO_merged.owl
+  repository: https://github.com/phwegner/Epilepsyontology
+  title: Epilepsy Ontology
+  tracker: https://github.com/phwegner/Epilepsyontology/issues
 - activity_status: active
   build:
     checkout: git clone https://github.com/Superraptor/GSSO.git
@@ -6544,8 +6718,9 @@ ontologies:
     method: owl2obo
     source_url: https://raw.githubusercontent.com/SED-ML/KiSAO/deploy/kisao.owl
   contact:
-    email: sed-ml-editors@googlegroups.com
-    label: SED-ML Editors
+    email: karr@mssm.edu
+    github: jonrkarr
+    label: Jonathan Karr
   description: A classification of algorithms for simulating biology and their outputs
   domain: algorithms
   homepage: http://co.mbine.org/standards/kisao
@@ -6616,6 +6791,7 @@ ontologies:
     system: git
   contact:
     email: giant.plankton@gmail.com
+    github: JadeHotchkiss
     label: Jade Hotchkiss
   dependencies:
   - id: apollo_sv
@@ -6682,7 +6858,7 @@ ontologies:
   id: sibo
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/sibo.owl
@@ -6779,7 +6955,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/ceph.owl
@@ -6816,7 +6992,7 @@ ontologies:
   id: ehdaa2
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/ehdaa2.owl
@@ -6849,7 +7025,7 @@ ontologies:
   id: gaz
   layout: ontology_detail
   license:
-    label: CC0 1.0 Universal
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   mailing_list: https://groups.google.com/forum/#!forum/obo-gazetteer
@@ -6881,7 +7057,7 @@ ontologies:
   id: rnao
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/rnao.owl
@@ -6914,7 +7090,7 @@ ontologies:
     type: travis-ci
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/upa.owl
@@ -6945,7 +7121,7 @@ ontologies:
   id: ero
   layout: ontology_detail
   license:
-    label: CC-BY 2.0
+    label: CC BY 2.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/2.0/
   ontology_purl: http://purl.obolibrary.org/obo/ero.owl
@@ -6964,7 +7140,7 @@ ontologies:
   id: idomal
   layout: ontology_detail
   license:
-    label: CC0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/idomal.owl
@@ -7004,7 +7180,7 @@ ontologies:
   id: tads
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/tads.owl
@@ -7027,7 +7203,7 @@ ontologies:
   id: tgma
   layout: ontology_detail
   license:
-    label: CC0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   ontology_purl: http://purl.obolibrary.org/obo/tgma.owl
@@ -7052,7 +7228,7 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   products:
@@ -7072,7 +7248,7 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/3.0/
   products:
@@ -7100,7 +7276,7 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   license:
-    label: CC-BY 4.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   page: http://browser.planteome.org/amigo/term/EO:0007359
@@ -7139,7 +7315,7 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   products:
@@ -7186,7 +7362,7 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   license:
-    label: CC-BY
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/3.0/
   products:
@@ -7328,8 +7504,9 @@ ontologies:
     method: obo2owl
     source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/fly_taxonomy.obo
   contact:
-    email: mmc46@gen.cam.ac.uk
-    label: Marta Costa
+    email: cp390@cam.ac.uk
+    github: Clare72
+    label: Clare Pilgrim
   description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli)
     and of other taxa referred to in FlyBase.
   domain: taxonomy
@@ -7471,7 +7648,7 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   license:
-    label: CC0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
   products:
@@ -7705,7 +7882,7 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   license:
-    label: CC-0
+    label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: http://creativecommons.org/publicdomain/zero/1.0/
   products:

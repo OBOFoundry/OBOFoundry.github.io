@@ -12,6 +12,7 @@ build:
 contact:
   email: smr@stowers.org
   label: Sofia Robb
+  github: srobb1
 description: PLANA, the planarian anatomy ontology, encompasses the anatomy and life cycle stages for both __Schmidtea mediterranea__ biotypes.
 domain: anatomy
 homepage: https://github.com/obophenotype/planaria-ontology

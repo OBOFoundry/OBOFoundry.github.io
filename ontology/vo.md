@@ -8,6 +8,7 @@ tracker: https://github.com/vaccineontology/VO/issues
 contact:
   email: yongqunh@med.umich.edu
   label: Yongqunh He
+  github: yongqunh
 domain: health
 products:
   - id: vo.owl

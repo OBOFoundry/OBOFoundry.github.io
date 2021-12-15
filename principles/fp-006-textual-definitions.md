@@ -9,8 +9,6 @@ Summary
 
 The ontology has textual definitions for the majority of its classes and for top level terms in particular.
 
-[This check is automatically validated.](checks/fp_006)
-
 Purpose
 -------
 
@@ -87,4 +85,15 @@ Counter-Examples
 -   Circular/Self-referential definition
     “A chromatography device is a device that uses chromatography” when chromatography is not defined elsewhere
 
-<Category:Principles> <Category:Accepted> <Category:Definitions>
+Criteria for Review
+-------------------
+Each definition MUST be unique. Each entity MUST NOT have more than one textual definition (tagged using [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)). Textual definitions SHOULD be provided for most terms, and for top level terms especially.
+
+[This check is automatically validated.](checks/fp_006)
+
+## Feedback and Discussion
+
+To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%236+%22Definitions%22+%3CENTER+ISSUE+TITLE%3E).
+
+To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%236+%22Definitions%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
+
