@@ -3,7 +3,7 @@ layout: ontology_detail
 id: epso
 label: Epilepsy Ontology
 title: Epilepsy Ontology
-description: A application driven Epilepsy Ontology sith official terms from the ILAE.
+description: A application driven Epilepsy Ontology with official terms from the ILAE.
 domain: disease
 license:
   url: http://creativecommons.org/licenses/by/4.0/
