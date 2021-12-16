@@ -4,6 +4,7 @@ id: sbo
 contact:
   email: sheriff@ebi.ac.uk
   label: Rahuman Sheriff
+  github: rsmsheriff
 description: Terms commonly used in Systems Biology, and in particular in computational modeling.
 domain: biochemistry
 homepage: http://www.ebi.ac.uk/sbo/
@@ -14,7 +15,8 @@ build:
   source_url: http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo
   method: obo2owl
   insert_ontology_id: true
-tracker: https://sourceforge.net/p/sbo/term-request/
+tracker: https://github.com/EBI-BioModels/SBO/issues
+repository: https://github.com/EBI-BioModels/SBO
 license:
   url: http://opensource.org/licenses/Artistic-2.0
   label: Artistic License 2.0
