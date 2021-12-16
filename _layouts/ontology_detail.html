@@ -29,6 +29,13 @@ layout: default
       {% if page.google_plus %}
       <a href="https://plus.google.com/{{page.google_plus}}">G+</a>
       {% endif %}
+      {% if page.repository %}
+        {% if page.repository contains "https://github.com/" %}
+          <a href="{{ page.repository }}">
+            <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ page.repository | remove: 'https://github.com/' }}?style=social" />
+          </a>
+        {% endif %}
+      {% endif %}
     </div>
 
   </div>
