@@ -4,7 +4,7 @@ id: NewOntologyRegistrationInstructions
 title: New Ontology Submission Instructions
 ---
 
-## For simple instructions about how to submit your ontology to be considered for inclusion in the OBO Foundry, please start [here](/faq/how-do-i-register-my-ontology.html).
+## For a simple list of steps for submitting your ontology for consideration, please go [here](/faq/how-do-i-register-my-ontology.html).
 
 This page provides guidance for filling out the fields in the [GitHub issue tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?assignees=&labels=new+ontology&template=new-ontology-request.md&title=). With the exception of the "Additional comments" question, all fields are required.
 
