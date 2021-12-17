@@ -1,6 +1,6 @@
 ---
 layout: ontology_detail
-id: epso
+id: epio
 label: Epilepsy Ontology
 title: Epilepsy Ontology
 description: A application driven Epilepsy Ontology with official terms from the ILAE.
@@ -8,22 +8,22 @@ domain: disease
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-tracker: https://github.com/phwegner/Epilepsyontology/issues
+tracker: https://github.com/SCAI-BIO/EpilepsyOntology/issues
 dependencies:
   - id: BFO
 products:
-  - id: epso.owl
-  - id: EPSO_merged.owl
+  - id: epio.owl
+  - id: EPIO_merged.owl
 contact:
   email: alpha.tom.kodamullil@scai.fraunhofer.de
   label: Alpha Tom Kodamullil
   github: akodamullil
-repository: https://github.com/phwegner/Epilepsyontology
+repository: https://github.com/SCAI-BIO/EpilepsyOntology
 activity_status: active
-preferredPrefix: EPSO
+preferredPrefix: EPIO
 ---
 
-EPSO is a community Ontology maintained by Fraunhofer SCAI. 
+EPIO is a community Ontology maintained by Fraunhofer SCAI. 
 
 This Ontology can be cited as: 
 
