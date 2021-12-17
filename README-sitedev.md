@@ -28,7 +28,7 @@ voting policy for merging these in.
 
 ### Serving with Docker
 
-Because Jekyll is incredibly can be difficult to install, Docker provides an
+Because Jekyll can be difficult to install, Docker provides an
 alternative for running the `serve` command:
 
 ```shell
