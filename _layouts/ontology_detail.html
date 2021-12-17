@@ -20,7 +20,10 @@ layout: default
       {% if page.repository %}
         {% if page.repository contains "https://github.com/" %}
         <a href="{{ page.repository }}">
-          <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ page.repository | remove: 'https://github.com/' }}?style=social" />
+          <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ page.repository | remove: 'https://github.com/' }}" />
+          <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/{{ page.repository | remove: 'https://github.com/' }}" />
+          <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/{{ page.repository | remove: 'https://github.com/' }}" />
+          <!--<img alt="GitHub issues" src="https://img.shields.io/github/issues/{{ page.repository | remove: 'https://github.com/' }}" />-->
         </a>
         {% endif %}
       {% endif %}
