@@ -6668,26 +6668,26 @@ ontologies:
     label: Alpha Tom Kodamullil
   dependencies:
   - id: BFO
-  description: A application driven Epilepsy Ontology sith official terms from the
+  description: A application driven Epilepsy Ontology with official terms from the
     ILAE.
   domain: disease
-  id: epso
+  id: epio
   label: Epilepsy Ontology
   layout: ontology_detail
   license:
     label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
-  ontology_purl: http://purl.obolibrary.org/obo/epso.owl
-  preferredPrefix: EPSO
+  ontology_purl: http://purl.obolibrary.org/obo/epio.owl
+  preferredPrefix: EPIO
   products:
-  - id: epso.owl
-    ontology_purl: http://purl.obolibrary.org/obo/epso.owl
-  - id: EPSO_merged.owl
-    ontology_purl: http://purl.obolibrary.org/obo/EPSO_merged.owl
-  repository: https://github.com/phwegner/Epilepsyontology
+  - id: epio.owl
+    ontology_purl: http://purl.obolibrary.org/obo/epio.owl
+  - id: EPIO_merged.owl
+    ontology_purl: http://purl.obolibrary.org/obo/EPIO_merged.owl
+  repository: https://github.com/SCAI-BIO/EpilepsyOntology
   title: Epilepsy Ontology
-  tracker: https://github.com/phwegner/Epilepsyontology/issues
+  tracker: https://github.com/SCAI-BIO/EpilepsyOntology/issues
 - activity_status: active
   build:
     checkout: git clone https://github.com/Superraptor/GSSO.git
@@ -6837,6 +6837,7 @@ ontologies:
     source_url: http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo
   contact:
     email: sheriff@ebi.ac.uk
+    github: rsmsheriff
     label: Rahuman Sheriff
   description: Terms commonly used in Systems Biology, and in particular in computational
     modeling.
@@ -6852,8 +6853,9 @@ ontologies:
   products:
   - id: sbo.owl
     ontology_purl: http://purl.obolibrary.org/obo/sbo.owl
+  repository: https://github.com/EBI-BioModels/SBO
   title: Systems Biology Ontology
-  tracker: https://sourceforge.net/p/sbo/term-request/
+  tracker: https://github.com/EBI-BioModels/SBO/issues
 - activity_status: active
   build:
     checkout: git clone https://github.com/scdodev/scdo-ontology.git
