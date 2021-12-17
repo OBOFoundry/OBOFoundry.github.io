@@ -121,10 +121,10 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/reg
       </td>
 
       <td>
-        {% if page.repository %}
-          {% if page.repository contains "https://github.com/" %}
-          <a href="{{ page.repository }}">
-            <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ page.repository | remove: 'https://github.com/' }}?style=social" />
+        {% if ont.repository %}
+          {% if ont.repository contains "https://github.com/" %}
+          <a href="{{ ont.repository }}">
+            <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ ont.repository | remove: 'https://github.com/' }}?style=social" />
           </a>
           {% endif %}
         {% endif %}

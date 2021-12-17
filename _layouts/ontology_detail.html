@@ -17,24 +17,20 @@ layout: default
       <p>
         {{page.description}}
       </p>
-      {% if page.twitter %}
-        <a href="https://twitter.com/{{ page.twitter }}" 
-           class="twitter-follow-button" 
-           data-show-count="false"
-           data-dnt="true">
-          Follow @{{ page.twitter }}
-        </a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      {% endif %}
-      {% if page.google_plus %}
-      <a href="https://plus.google.com/{{page.google_plus}}">G+</a>
-      {% endif %}
       {% if page.repository %}
         {% if page.repository contains "https://github.com/" %}
-          <a href="{{ page.repository }}">
-            <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ page.repository | remove: 'https://github.com/' }}?style=social" />
-          </a>
+        <a href="{{ page.repository }}">
+          <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ page.repository | remove: 'https://github.com/' }}?style=social" />
+        </a>
         {% endif %}
+      {% endif %}
+      {% if page.twitter %}
+        <a href="https://twitter.com/{{ page.twitter }}">
+          <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/{{ page.twitter }}?style=social">
+        </a>
+      {% endif %}
+      {% if page.google_plus %}
+        <a href="https://plus.google.com/{{page.google_plus}}">G+</a>
       {% endif %}
     </div>
 
