@@ -5471,29 +5471,29 @@ _:b299  <http://www.w3.org/2000/01/rdf-schema#label>  "Yvonne Bradford" ;
 <http://purl.obolibrary.org/obo/zp.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/zp.obo" .
 
-<http://purl.obolibrary.org/obo/epso>
-        <http://identifiers.org/preferredPrefix>  "EPSO" ;
+<http://purl.obolibrary.org/obo/epio>
+        <http://identifiers.org/preferredPrefix>  "EPIO" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/BFO> ;
-        <http://purl.org/dc/elements/1.1/description>  "A application driven Epilepsy Ontology sith official terms from the ILAE." ;
+        <http://purl.org/dc/elements/1.1/description>  "A application driven Epilepsy Ontology with official terms from the ILAE." ;
         <http://purl.org/dc/elements/1.1/title>  "Epilepsy Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "disease" ;
-        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/phwegner/Epilepsyontology/issues" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/SCAI-BIO/EpilepsyOntology/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "Epilepsy Ontology" ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/epso.owl" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/epio.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b300 ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/epso.owl> ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/EPSO_merged.owl> .
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/epio.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/EPIO_merged.owl> .
 
 _:b300  <http://www.w3.org/2000/01/rdf-schema#label>  "Alpha Tom Kodamullil" ;
         <http://xmlns.com/foaf/0.1/mbox>  "alpha.tom.kodamullil@scai.fraunhofer.de" .
 
-<http://purl.obolibrary.org/obo/epso.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/epso.owl" .
+<http://purl.obolibrary.org/obo/epio.owl>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/epio.owl" .
 
-<http://purl.obolibrary.org/obo/EPSO_merged.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/EPSO_merged.owl" .
+<http://purl.obolibrary.org/obo/EPIO_merged.owl>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/EPIO_merged.owl" .
 
 _:b229  <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/Superraptor/GSSO.git" .
 
@@ -5603,7 +5603,7 @@ _:b304  <http://www.w3.org/2000/01/rdf-schema#label>  "Nicolas Le Novere" ;
         <http://purl.org/dc/elements/1.1/title>  "Systems Biology Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://opensource.org/licenses/Artistic-2.0> ;
         <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
-        <http://usefulinc.com/ns/doap#bug-database>  "https://sourceforge.net/p/sbo/term-request/" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/EBI-BioModels/SBO/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/sbo.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b306 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/sbo.owl> ;
