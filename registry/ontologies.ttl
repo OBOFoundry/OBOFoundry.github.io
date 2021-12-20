@@ -725,8 +725,8 @@ _:b27   <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/bfo> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/envo> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/obi> ;
-        <http://purl.org/dc/elements/1.1/description>  "A broadly scoped ontology representing entities which bear a “food role”.  It encompasses materials in natural ecosystems and food webs as well as human-centric categorization and handling of food." ;
-        <http://purl.org/dc/elements/1.1/title>  "FOODON" ;
+        <http://purl.org/dc/elements/1.1/description>  "A broadly scoped ontology representing entities which bear a “food role”. It encompasses materials in natural ecosystems and agriculture that are consumed by humans and domesticated animals. This includes any generic (unbranded) raw or processed food material found in processing plants, markets, stores or food distribution points. FoodOn also imports nutritional component and dietary pattern terms from other OBO Foundry ontologies to support interoperability in diet and nutrition research" ;
+        <http://purl.org/dc/elements/1.1/title>  "Food Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "food" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/FoodOntology/foodon/issues/" ;
@@ -2466,12 +2466,12 @@ _:b32   <http://www.w3.org/2000/01/rdf-schema#label>  "Damion Dooley" ;
         <http://xmlns.com/foaf/0.1/mbox>  "damion_dooley@sfu.ca" .
 
 <http://purl.obolibrary.org/obo/foodon.owl>
-        <http://purl.org/dc/elements/1.1/title>  "FoodOn full ontology including 9000 SIREN indexed food products" ;
+        <http://purl.org/dc/elements/1.1/title>  "FoodOn ontology with import file references and over 9,000 food products" ;
         <http://purl.org/dc/terms/1.1/format>  "owl-rdf/xml" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/foodon.owl" .
 
 <http://purl.obolibrary.org/obo/foodon_core.owl>
-        <http://purl.org/dc/elements/1.1/title>  "FoodOn core ontology (without SIREN)" ;
+        <http://purl.org/dc/elements/1.1/title>  "FoodOn core ontology (currently the same as foodon.owl)" ;
         <http://purl.org/dc/terms/1.1/format>  "owl-rdf/xml" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/foodon_core.owl" .
 
