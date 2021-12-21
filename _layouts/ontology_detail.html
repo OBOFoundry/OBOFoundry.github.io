@@ -17,17 +17,20 @@ layout: default
       <p>
         {{page.description}}
       </p>
-      {% if page.twitter %}
-        <a href="https://twitter.com/{{ page.twitter }}" 
-           class="twitter-follow-button" 
-           data-show-count="false"
-           data-dnt="true">
-          Follow @{{ page.twitter }}
+      {% if page.repository %}
+        {% if page.repository contains "https://github.com/" %}
+        <a href="{{ page.repository }}">
+          <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ page.repository | remove: 'https://github.com/' }}" />
+          <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/{{ page.repository | remove: 'https://github.com/' }}" />
+          <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/{{ page.repository | remove: 'https://github.com/' }}" />
+          <!--<img alt="GitHub issues" src="https://img.shields.io/github/issues/{{ page.repository | remove: 'https://github.com/' }}" />-->
         </a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        {% endif %}
       {% endif %}
-      {% if page.google_plus %}
-      <a href="https://plus.google.com/{{page.google_plus}}">G+</a>
+      {% if page.twitter %}
+        <a href="https://twitter.com/{{ page.twitter }}">
+          <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/{{ page.twitter }}?style=social">
+        </a>
       {% endif %}
     </div>
 
@@ -389,8 +392,5 @@ layout: default
       </div>
     </div>
     {% endif %}
-
-    <!-- Twitter -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
   </div>
