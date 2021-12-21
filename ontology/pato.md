@@ -16,7 +16,7 @@ contact:
   github: gkoutos
 domain: phenotype
 homepage: https://github.com/pato-ontology/pato/
-repository: https://github.com/pato-ontology/pato/
+repository: https://github.com/pato-ontology/pato
 browsers:
   - label: BioPortal
     title: BioPortal Ontology Browser

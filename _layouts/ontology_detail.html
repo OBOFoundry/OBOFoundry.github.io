@@ -17,16 +17,20 @@ layout: default
       <p>
         {{page.description}}
       </p>
-      {% if page.twitter %}
-      <iframe style="position: static; visibility: visible; width: 190px; height: 20px;"
-              data-twttr-rendered="true" title="Twitter Follow Button"
-              class="twitter-follow-button twitter-follow-button"
-              src="http://platform.twitter.com/widgets/follow_button.a64cf823bcb784855b86e2970134bd2a.en.html#_=1438577078419&amp;dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name={{page.twitter}}&amp;show_count=true&amp;show_screen_name=true&amp;size=m"
-              allowtransparency="true" scrolling="no" id="twitter-widget-0" frameborder="0">
-      </iframe>
+      {% if page.repository %}
+        {% if page.repository contains "https://github.com/" %}
+        <a href="{{ page.repository }}">
+          <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ page.repository | remove: 'https://github.com/' }}" />
+          <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/{{ page.repository | remove: 'https://github.com/' }}" />
+          <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/{{ page.repository | remove: 'https://github.com/' }}" />
+          <!--<img alt="GitHub issues" src="https://img.shields.io/github/issues/{{ page.repository | remove: 'https://github.com/' }}" />-->
+        </a>
+        {% endif %}
       {% endif %}
-      {% if page.google_plus %}
-      <a href="https://plus.google.com/{{page.google_plus}}">G+</a>
+      {% if page.twitter %}
+        <a href="https://twitter.com/{{ page.twitter }}">
+          <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/{{ page.twitter }}?style=social">
+        </a>
       {% endif %}
     </div>
 
@@ -42,6 +46,22 @@ layout: default
       Consider using: <a href="{{repl}}.html">{{repl}}</a>
     </div>
     {% endfor %}
+  </div>
+  {% endif %}
+  
+  {% if page.activity_status == "inactive" %}
+  <div>
+    <div class="alert alert-warning" role="alert">
+      This ontology is inactive. For more information see <a href="/docs/OntologyStatus.html">here</a>.
+    </div>
+  </div>
+  {% endif %}
+  
+  {% if page.activity_status == "orphaned" %}
+  <div>
+    <div class="alert alert-warning" role="alert">
+      This ontology is orphaned. For more information see <a href="/docs/OntologyStatus.html">here</a>.
+    </div>
   </div>
   {% endif %}
 
@@ -372,8 +392,5 @@ layout: default
       </div>
     </div>
     {% endif %}
-
-    <!-- Twitter -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
   </div>

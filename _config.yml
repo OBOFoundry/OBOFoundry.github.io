@@ -451,7 +451,7 @@ ontologies:
       ontologies
     id: pato/pato-base.owl
     ontology_purl: http://purl.obolibrary.org/obo/pato/pato-base.owl
-  repository: https://github.com/pato-ontology/pato/
+  repository: https://github.com/pato-ontology/pato
   review:
     date: 2010
   title: Phenotype And Trait Ontology
@@ -1505,6 +1505,41 @@ ontologies:
   title: Core Ontology for Biology and Biomedicine
   tracker: https://github.com/OBOFoundry/COB/issues
 - activity_status: active
+  contact:
+    email: entiminae@gmail.com
+    github: JCGiron
+    label: Jennifer C. Giron
+  dependencies:
+  - id: aism
+  - id: ro
+  - id: uberon
+  - id: caro
+  - id: pato
+  - id: bfo
+  - id: bspo
+  description: The Coleoptera Anatomy Ontology contains terms used for describing
+    the anatomy and phenotype of beetles in biodiversity research. It has been built
+    using the Ontology Develoment Kit, with the Ontology for the Anatomy of the Insect
+    Skeleto-Muscular system (AISM) as a backbone.
+  domain: Insect Anatomy.
+  homepage: https://github.com/insect-morphology/colao
+  id: colao
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/colao.owl
+  preferredPrefix: COLAO
+  products:
+  - id: colao.owl
+    ontology_purl: http://purl.obolibrary.org/obo/colao.owl
+  - id: colao.obo
+    ontology_purl: http://purl.obolibrary.org/obo/colao.obo
+  repository: https://github.com/insect-morphology/colao
+  title: Coleoptera Anatomy Ontology (COLAO)
+  tracker: https://github.com/insect-morphology/colao/issues
+- activity_status: active
   build:
     checkout: git clone https://github.com/data2health/contributor-role-ontology.git
     path: src/ontology
@@ -1734,7 +1769,7 @@ ontologies:
   products:
   - id: disdriv.owl
     ontology_purl: http://purl.obolibrary.org/obo/disdriv.owl
-  repository: https://github.com/DiseaseOntology/DiseaseDriversOntology/
+  repository: https://github.com/DiseaseOntology/DiseaseDriversOntology
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
@@ -1816,7 +1851,7 @@ ontologies:
   products:
   - id: dron.owl
     ontology_purl: http://purl.obolibrary.org/obo/dron.owl
-  repository: https://github.com/ufbmi/dron/
+  repository: https://github.com/ufbmi/dron
   title: The Drug Ontology
   tracker: https://github.com/ufbmi/dron/issues
 - activity_status: active
@@ -2271,9 +2306,9 @@ ontologies:
     method: vcs
     system: git
   contact:
-    email: mah79@cam.ac.uk
-    github: mah11
-    label: Midori Harris
+    email: vw253@cam.ac.uk
+    github: ValWood
+    label: Val Wood
   description: A structured controlled vocabulary for the anatomy of fungi.
   domain: anatomy
   homepage: https://github.com/obophenotype/fungal-anatomy-ontology/
@@ -2590,7 +2625,7 @@ ontologies:
 - activity_status: active
   contact:
     email: damion_dooley@sfu.ca
-    github: Public-Health-Bioinformatics
+    github: ddooley
     label: Damion Dooley
   dependencies:
   - id: uberon
@@ -2602,8 +2637,12 @@ ontologies:
   - id: envo
   - id: obi
   description: "A broadly scoped ontology representing entities which bear a \u201C\
-    food role\u201D.  It encompasses materials in natural ecosystems and food webs\
-    \ as well as human-centric categorization and handling of food."
+    food role\u201D. It encompasses materials in natural ecosystems and agriculture\
+    \ that are consumed by humans and domesticated animals. This includes any generic\
+    \ (unbranded) raw or processed food material found in processing plants, markets,\
+    \ stores or food distribution points. FoodOn also imports nutritional component\
+    \ and dietary pattern terms from other OBO Foundry ontologies to support interoperability\
+    \ in diet and nutrition research"
   domain: food
   homepage: https://foodon.org/
   id: foodon
@@ -2618,13 +2657,13 @@ ontologies:
   - format: owl-rdf/xml
     id: foodon.owl
     ontology_purl: http://purl.obolibrary.org/obo/foodon.owl
-    title: FoodOn full ontology including 9000 SIREN indexed food products
+    title: FoodOn ontology with import file references and over 9,000 food products
   - format: owl-rdf/xml
     id: foodon_core.owl
     ontology_purl: http://purl.obolibrary.org/obo/foodon_core.owl
-    title: FoodOn core ontology (without SIREN)
+    title: FoodOn core ontology (currently the same as foodon.owl)
   repository: https://github.com/FoodOntology/foodon
-  title: FOODON
+  title: Food Ontology
   tracker: https://github.com/FoodOntology/foodon/issues/
 - activity_status: active
   build:
@@ -2684,9 +2723,9 @@ ontologies:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/pombase/fypo/master/release/fypo.owl
   contact:
-    email: mah79@cam.ac.uk
-    github: mah11
-    label: Midori Harris
+    email: vw253@cam.ac.uk
+    github: ValWood
+    label: Val Wood
   depicted_by: https://github.com/pombase/website/blob/master/src/assets/FYPO_logo_tiny.png
   description: FYPO is a formal ontology of phenotypes observed in fission yeast.
   domain: phenotype
@@ -3268,6 +3307,41 @@ ontologies:
       the PARS3 data platform.
     type: database architecture
     user: https://griis.ca/
+- activity_status: active
+  contact:
+    email: lagonzalezmo@unal.edu.co
+    github: luis-gonzalez-m
+    label: Luis A. Gonzalez-Montana
+  dependencies:
+  - id: aism
+  - id: ro
+  - id: uberon
+  - id: caro
+  - id: pato
+  - id: bfo
+  - id: bspo
+  description: The Lepidoptera Anatomy Ontology contains terms used for describing
+    the anatomy and phenotype of moths and butterflies in biodiversity research. LEPAO
+    is developed in part by BIOfid (The Specialised Information Service Biodiversity
+    Research).
+  domain: Insect Anatomy
+  homepage: https://github.com/insect-morphology/lepao
+  id: lepao
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/lepao.owl
+  preferredPrefix: LEPAO
+  products:
+  - id: lepao.owl
+    ontology_purl: http://purl.obolibrary.org/obo/lepao.owl
+  - id: lepao.obo
+    ontology_purl: http://purl.obolibrary.org/obo/lepao.obo
+  repository: https://github.com/insect-morphology/lepao
+  title: Lepidoptera Anatomy Ontology
+  tracker: https://github.com/insect-morphology/lepao/issues
 - activity_status: active
   build:
     infallible: 1
@@ -6610,26 +6684,26 @@ ontologies:
     label: Alpha Tom Kodamullil
   dependencies:
   - id: BFO
-  description: A application driven Epilepsy Ontology sith official terms from the
+  description: A application driven Epilepsy Ontology with official terms from the
     ILAE.
   domain: disease
-  id: epso
+  id: epio
   label: Epilepsy Ontology
   layout: ontology_detail
   license:
     label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: http://creativecommons.org/licenses/by/4.0/
-  ontology_purl: http://purl.obolibrary.org/obo/epso.owl
-  preferredPrefix: EPSO
+  ontology_purl: http://purl.obolibrary.org/obo/epio.owl
+  preferredPrefix: EPIO
   products:
-  - id: epso.owl
-    ontology_purl: http://purl.obolibrary.org/obo/epso.owl
-  - id: EPSO_merged.owl
-    ontology_purl: http://purl.obolibrary.org/obo/EPSO_merged.owl
-  repository: https://github.com/phwegner/Epilepsyontology
+  - id: epio.owl
+    ontology_purl: http://purl.obolibrary.org/obo/epio.owl
+  - id: EPIO_merged.owl
+    ontology_purl: http://purl.obolibrary.org/obo/EPIO_merged.owl
+  repository: https://github.com/SCAI-BIO/EpilepsyOntology
   title: Epilepsy Ontology
-  tracker: https://github.com/phwegner/Epilepsyontology/issues
+  tracker: https://github.com/SCAI-BIO/EpilepsyOntology/issues
 - activity_status: active
   build:
     checkout: git clone https://github.com/Superraptor/GSSO.git
@@ -6779,6 +6853,7 @@ ontologies:
     source_url: http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo
   contact:
     email: sheriff@ebi.ac.uk
+    github: rsmsheriff
     label: Rahuman Sheriff
   description: Terms commonly used in Systems Biology, and in particular in computational
     modeling.
@@ -6794,8 +6869,9 @@ ontologies:
   products:
   - id: sbo.owl
     ontology_purl: http://purl.obolibrary.org/obo/sbo.owl
+  repository: https://github.com/EBI-BioModels/SBO
   title: Systems Biology Ontology
-  tracker: https://sourceforge.net/p/sbo/term-request/
+  tracker: https://github.com/EBI-BioModels/SBO/issues
 - activity_status: active
   build:
     checkout: git clone https://github.com/scdodev/scdo-ontology.git
@@ -7161,11 +7237,12 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/idomal.owl
   - id: idomal.obo
     ontology_purl: http://purl.obolibrary.org/obo/idomal.obo
+  repository: https://github.com/VEuPathDB-ontology/IDOMAL
   title: Malaria Ontology
 - activity_status: inactive
   contact:
     email: louis@imbb.forth.gr
-    label: C. Louis
+    label: Christos (Kitsos) Louis
   description: Application ontology for entities related to insecticide resistance
     in mosquitos
   domain: environment
@@ -7177,6 +7254,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/miro.owl
   - id: miro.obo
     ontology_purl: http://purl.obolibrary.org/obo/miro.obo
+  repository: https://github.com/VEuPathDB-ontology/MIRO
   taxon:
     id: NCBITaxon:44484
     label: Anopheles
@@ -7201,6 +7279,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/tads.owl
   - id: tads.obo
     ontology_purl: http://purl.obolibrary.org/obo/tads.obo
+  repository: https://github.com/VEuPathDB-ontology/TADS
   taxon:
     id: NCBITaxon:6939
     label: Ixodidae
@@ -7224,6 +7303,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/tgma.owl
   - id: tgma.obo
     ontology_purl: http://purl.obolibrary.org/obo/tgma.obo
+  repository: https://github.com/VEuPathDB-ontology/TGMA
   taxon:
     id: NCBITaxon:44484
     label: Anopheles

@@ -2,9 +2,9 @@
 layout: ontology_detail
 id: fao
 contact:
-  email: mah79@cam.ac.uk
-  label: Midori Harris
-  github: mah11
+  email: vw253@cam.ac.uk
+  label: Val Wood
+  github: ValWood
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0

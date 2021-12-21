@@ -33,6 +33,6 @@ usages:
         description: fetal alcohol syndrome, has exposure stressor some alcohol
 
 activity_status: active
-repository: https://github.com/DiseaseOntology/DiseaseDriversOntology/
+repository: https://github.com/DiseaseOntology/DiseaseDriversOntology
 preferredPrefix: DISDRIV
 ---
