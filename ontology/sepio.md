@@ -9,6 +9,7 @@ tracker: https://github.com/monarch-initiative/SEPIO-ontology/issues
 contact:
   email: mhb120@gmail.com
   label: Matthew Brush
+  github: mbrush
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
