@@ -4,6 +4,7 @@ id: ogms
 contact:
   email: baeverma@jcvi.org
   label: Brian Aevermann
+  github: BAevermann
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

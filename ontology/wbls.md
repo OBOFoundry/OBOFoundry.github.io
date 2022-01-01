@@ -5,6 +5,7 @@ preferredPrefix: WBls
 contact:
   email: cgrove@caltech.edu
   label: Chris Grove
+  github: chris-grove
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
