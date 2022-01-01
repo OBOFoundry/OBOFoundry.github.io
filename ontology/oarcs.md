@@ -9,7 +9,7 @@ contact:
   label: Matt Yoder
   github: mjy
 domain: anatomy
-repository: http://http://oarcs.speciesfilegroup.org
+repository: https://github.com/aszool/oarcs
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
