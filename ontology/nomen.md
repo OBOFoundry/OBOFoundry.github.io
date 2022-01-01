@@ -3,7 +3,7 @@ layout: ontology_detail
 id: nomen
 type: owl:Ontology
 label: NOMEN
-title: NOMEN - A nomenclatural ontology for biological names
+title: A nomenclatural ontology for biological names
 contact:
   email: diapriid@gmail.com
   label: Matt Yoder
