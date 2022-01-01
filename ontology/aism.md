@@ -8,7 +8,7 @@ build:
   path: "."
 contact:
   email: entiminae@gmail.com
-  label: Jennifer C. Girón
+  label: Jennifer C. Giron
   github: JCGiron
 description: The AISM contains terms used in insect biodiversity research for describing structures of the exoskeleton and the skeletomuscular system. It aims to serve as the basic backbone of generalized terms to be expanded with order-specific terminology.
 domain: anatomy
