@@ -7,6 +7,7 @@ description: A biomedical ontology in the domain of biological and clinical stat
 contact:
   email: jiezheng@pennmedicine.upenn.edu
   label: Jie Zheng
+  github: zhengj2007
 domain: statistics
 homepage: https://github.com/obcs/obcs
 products:
