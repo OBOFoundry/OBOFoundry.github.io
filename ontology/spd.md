@@ -4,6 +4,7 @@ id: spd
 contact:
   email: ramirez@macn.gov.ar
   label: Martin Ramirez
+  github: martinjramirez
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
