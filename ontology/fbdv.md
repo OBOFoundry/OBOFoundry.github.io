@@ -9,6 +9,7 @@ contact:
 description: A structured controlled vocabulary of the development of Drosophila melanogaster.
 domain: development
 homepage: http://purl.obolibrary.org/obo/fbdv
+repository: https://github.com/FlyBase/drosophila-developmental-ontology
 products:
   - id: fbdv.owl
   - id: fbdv.obo
