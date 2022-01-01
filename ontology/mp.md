@@ -13,8 +13,9 @@ description: Standard terms for annotating mammalian phenotypic data.
 homepage: http://www.informatics.jax.org/searches/MP_form.shtml
 page: https://github.com/mgijax/mammalian-phenotype-ontology
 contact:
-  email: pheno@jax.org
-  label: JAX phenotype list
+  email: drsbello@gmail.com
+  label: Sue Bello
+  github: sbello
 domain: phenotype
 products:
   - id: mp.owl
