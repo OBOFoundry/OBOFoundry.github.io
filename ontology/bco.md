@@ -17,7 +17,7 @@ products:
 title: Biological Collections Ontology
 tracker: https://github.com/BiodiversityOntologies/bco/issues
 activity_status: active
-repository: https://github.com/BiodiversityOntologies/bco/bco
+repository: https://github.com/BiodiversityOntologies/bco
 preferredPrefix: BCO
 ---
 
