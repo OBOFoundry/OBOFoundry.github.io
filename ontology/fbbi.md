@@ -5,6 +5,7 @@ preferredPrefix: FBbi
 contact:
   email: dorloff@ncmir.ucsd.edu
   label: David Orloff
+  github: orloff18
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

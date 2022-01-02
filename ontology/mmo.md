@@ -4,6 +4,7 @@ id: mmo
 contact:
   email: jrsmith@mcw.edu
   label: Jennifer Smith
+  github: jrsjrs
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0

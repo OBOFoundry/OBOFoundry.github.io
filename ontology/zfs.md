@@ -5,6 +5,7 @@ in_foundry: false
 contact:
   email: van_slyke@zfin.org
   label: Ceri Van Slyke
+  github: cerivs
 description: Developmental stages of the Zebrafish
 domain: anatomy
 homepage: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources

@@ -4,6 +4,7 @@ id: cmo
 contact:
   email: shimoyama@mcw.edu
   label: Mary Shimoyama
+  github: maryshimoyama
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
