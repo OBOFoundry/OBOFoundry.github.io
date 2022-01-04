@@ -21,8 +21,23 @@ Textual definitions MUST be unique within an ontology (i.e. no two terms should 
 
 For terms lacking textual definitions, there should be evidence of implementation of a strategy to provide definitions for all remaining undefined terms. In lieu of textual definitions, there can be elucidations when the term can not be rigorously defined. Note that textual definitions can be programmatically generated from logical definitions, if available (see [http://oro.open.ac.uk/21501/1/](http://oro.open.ac.uk/21501/1/)). In addition, [Dead Simple Ontology Design Patterns](https://github.com/INCATools/dead_simple_owl_design_patterns) (DOSDPs) can be used to generate both textual and logical definitions. DOSDPs are design specifications, written in YAML format, that specify structured text definitions and logical definitions for groups of ontology terms. These are widely used in many OBO Foundry ontologies, such as Mondo and uPheno. For some example patterns, see [Mondo patterns](https://mondo.readthedocs.io/en/latest/editors-guide/patterns/) and [uPheno patterns](https://github.com/obophenotype/upheno/tree/master/src/patterns/dosdp-patterns).
 
-Textual definitions should agree with logical definitions and vice versa. This is important because, for example, an ambiguous textual definition could 
-lead to annotations that don’t match a more restricted logical def, causing misclassification. Note that it’s permissible to not to have a logical definition if the class is fuzzy or the axioms/relations can’t be composed equivalence axioms.
+Textual definitions should agree with logical definitions and vice versa. This is important for two reasons: (1) Reasoners classify terms solely based on logical definitions, while humans predominantly classify terms based on textual definitions, and mismatches between the two can cause unexpected misclassification; and (2) Curators could create incorrect annotations. An example of mismatched definitions:
+<pre>
+http://purl.obolibrary.org/obo/CL_0000017 spermatocyte
+
+Text definition: "A male germ cell that develops from spermatogonia."
+
+Logical definition (that mismatches the textual def): 
+= 'male germ cell' and ('capable of' some 'spermatocyte division')
+</pre>
+The logical definition could be revised to:
+<pre>
+Logical definition (that matches the textual def): 
+= ‘male germ cell’ and (‘develops from’ some 'spermatogonium')
+</pre>
+While both logical definitions can be used to define the class, one better fits with the textual definition than the other. 
+
+Note that it’s permissible to not to have a logical definition if the class is fuzzy or the axioms/relations can’t be composed equivalence axioms.
 
 Terms often benefit from examples of usage, as well as editor notes about edge cases and the history of the term, but these should be included as separate annotations and not in the definition.
 
