@@ -3,8 +3,9 @@ layout: ontology_detail
 id: fbbi
 preferredPrefix: FBbi
 contact:
-  email: dorloff@ncmir.ucsd.edu
-  label: David Orloff
+  email: wawong@gmail.com  
+  label: Willy Wong
+  github: wawong
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
