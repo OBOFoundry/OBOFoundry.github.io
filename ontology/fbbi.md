@@ -3,7 +3,7 @@ layout: ontology_detail
 id: fbbi
 preferredPrefix: FBbi
 contact:
-  email: wawong@gmail.com  
+  email: wawong@gmail.com
   label: Willy Wong
   github: wawong
 license:
