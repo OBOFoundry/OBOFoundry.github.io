@@ -5,6 +5,7 @@ title: clinical LABoratory Ontology
 contact:
   email: paul.fabry@usherbrooke.ca
   label: Paul Fabry
+  github: pfabry
 description: LABO is an ontology of informational entities formalizing clinical laboratory tests prescriptions and reporting documents.
 domain: clinical documentation
 usages:

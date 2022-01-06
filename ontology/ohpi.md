@@ -9,6 +9,7 @@ tracker: https://github.com/OHPI/ohpi/issues
 contact:
   email: edong@umich.edu
   label: Edison Ong
+  github: e4ong1031
 products:
   - id: ohpi.owl
 license:

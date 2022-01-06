@@ -7,6 +7,7 @@ description: STATO is a general-purpose STATistics Ontology. Its aim is to provi
 contact:
   email: alejandra.gonzalez.beltran@gmail.com
   label: Alejandra Gonzalez-Beltran
+  github: agbeltran
 domain: statistics
 homepage: http://stato-ontology.org/
 products:
