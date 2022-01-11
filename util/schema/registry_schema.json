@@ -46,6 +46,7 @@
 			"items":
 			{
 				"type": "object",
+				"title": "Browser",
 				"additionalProperties": false,
 				"properties": {
 					"label": { "type": "string" },
@@ -322,6 +323,7 @@
 			"minItems": 1,
 			"items": {
 				"type": "object",
+          		        "title": "Product",
 				"properties": {
 					"id": {
 						"type": "string",
@@ -339,6 +341,7 @@
 			"type": "array",
 			"items": {
 				"type": "object",
+          		        "title": "Publication",
 				"properties": {
 					"id": { "type": "string" },
 					"title": { "type": "string" }
@@ -411,7 +414,9 @@
       			"description": "Information on usage of particular ontology.",
 			"type": "array",
 			"items": {
-        			"type": "object",
+        		        "type": "object",
+        		        "title": "Usage",
+                            
 				"additionalProperties" : false,
         			"properties": {
 					"user": {
@@ -430,6 +435,7 @@
 						"type": "array",
 						"items": {
           						"type": "object",
+          						"title": "Example",
       							"additionalProperties" : false,
           						"properties": {
           							"url": {
@@ -446,6 +452,7 @@
 						"type": "array",
 						"items": {
 							"type": "object",
+							"title": "Publication",
 							"additionalProperties" : false,
 							"properties": {
 								"id": {
