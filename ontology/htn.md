@@ -7,6 +7,7 @@ homepage: https://github.com/aellenhicks/htn_owl
 contact:
   label: Amanda Hicks
   email: aellenhicks@gmail.com
+  github: aellenhicks
 license:
   label: CC BY 4.0
   url: http://creativecommons.org/licenses/by/4.0/

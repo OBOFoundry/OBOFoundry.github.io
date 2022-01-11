@@ -8,6 +8,7 @@ build:
 contact:
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
+  github: jaiswalp
 description: A structured, controlled vocabulary which describes the treatments, growing conditions, and/or study types used in plant biology experiments.
 domain: environment
 homepage: http://planteome.org/

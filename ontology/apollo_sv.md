@@ -4,6 +4,7 @@ id: apollo_sv
 contact:
   email: MBrochhausen@uams.edu
   label: Mathias Brochhausen
+  github: mbrochhausen
 homepage: https://github.com/ApolloDev/apollo-sv
 description: Defines terms and relations necessary for interoperation between epidemic models and public health application software that interface with these models
 products:

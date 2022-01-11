@@ -4,6 +4,7 @@ id: clo
 contact:
   email: siiraa@umich.edu
   label: Sirarat Sarntivijai
+  github: siiraa
 description: An ontology to standardize and integrate cell line information and to support computer-assisted reasoning.
 homepage: http://www.clo-ontology.org
 products:

@@ -5,6 +5,7 @@ title: Plant Experimental Conditions Ontology
 contact:
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
+  github: jaiswalp
 description: A structured, controlled vocabulary which describes the treatments, growing conditions, and/or study types used in plant biology experiments.
 domain: experimental conditions
 homepage: http://planteome.org/
