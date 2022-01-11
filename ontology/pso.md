@@ -12,6 +12,7 @@ build:
 contact:
   email: cooperl@science.oregonstate.edu
   label: Laurel Cooper
+  github: cooperl09
 description: The Plant Stress Ontology describes...
 domain: plant disease and abiotic stress
 homepage: https://github.com/Planteome/plant-stress-ontology

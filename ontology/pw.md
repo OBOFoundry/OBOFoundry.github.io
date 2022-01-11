@@ -4,6 +4,7 @@ id: pw
 contact:
   email: gthayman@mcw.edu
   label: G. Thomas Hayman
+  github: gthayman
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

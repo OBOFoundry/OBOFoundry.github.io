@@ -14,7 +14,7 @@ products:
   - id: fobi.owl
     title: FOBI is an ontology to represent food intake data and associate it with metabolomic data
     format: owl-rdf/xml
-title: FOBI
+title: Food-Biomarker Ontology
 dependencies:
   - id: chebi
   - id: foodon
