@@ -4,6 +4,7 @@ id: hancestro
 contact:
   email: danielle.welter@uni.lu
   label: Danielle Welter
+  github: daniwelter
 title: Human Ancestry Ontology
 description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide association studies.
 homepage: https://github.com/EBISPOT/ancestro

@@ -9,6 +9,7 @@ contact:
 description: An ontology representing the gross anatomy of Drosophila melanogaster.
 domain: Drosophilid anatomy
 homepage: http://purl.obolibrary.org/obo/fbbt
+repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
 products:
   - id: fbbt.owl
   - id: fbbt.obo
