@@ -20,6 +20,7 @@ build:
   source_url: http://purl.obolibrary.org/obo/ohd.owl
   method: owl2obo
 tracker: https://purl.obolibrary.org/obo/ohd/issues
+repository: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
 activity_status: active
 preferredPrefix: OHD
 ---

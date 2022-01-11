@@ -4,7 +4,8 @@ id: omit
 in_foundry: false
 contact:
   email: huang@southalabama.edu
-  label: Huang, Jingshan
+  label: Jingshan Huang
+  github: Huang-OMIT
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0

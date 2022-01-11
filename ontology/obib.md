@@ -5,6 +5,7 @@ title: Ontology for Biobanking
 contact:
   email: jiezheng@pennmedicine.upenn.edu
   label: Jie Zheng
+  github: zhengj2007
 description: An ontology built for annotation and modeling of biobank repository and biobanking administration
 domain: biobanking, specimens, bio-repository, biocuration
 homepage: https://github.com/biobanking/biobanking

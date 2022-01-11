@@ -8,6 +8,7 @@ tracker: https://github.com/ontoice/ICEO/issues
 contact:
   email: liumeng94@sjtu.edu.cn
   label: Meng LIU
+  github: Lemon-Liu
 products:
   - id: iceo.owl
 license:

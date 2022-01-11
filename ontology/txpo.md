@@ -4,7 +4,7 @@ id: txpo
 contact:
   email: y-yamagata@nibiohn.go.jp
   label: Yuki Yamagata
-  github: txpo-ontology
+  github: yuki-yamagata
 description: TOXic Process Ontology (TXPO) systematizes a wide variety of terms involving toxicity courses and processes. The first version of TXPO focuses on liver toxicity.
 domain: toxicity
 homepage: https://toxpilot.nibiohn.go.jp/

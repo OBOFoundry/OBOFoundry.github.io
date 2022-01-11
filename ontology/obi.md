@@ -17,6 +17,7 @@ repository: https://github.com/obi-ontology/obi
 contact:
   label: Bjoern Peters
   email: bpeters@lji.org
+  github: bpeters42
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
