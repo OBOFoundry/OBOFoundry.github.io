@@ -19,7 +19,7 @@ build:
   system: git
   path: src/ontology
   method: vcs
-activity_status: active
+activity_status: inactive
 repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
 preferredPrefix: AEO
 ---

@@ -4,6 +4,7 @@ id: so
 contact:
   email: keilbeck@genetics.utah.edu
   label: Karen Eilbeck
+  github: keilbeck
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

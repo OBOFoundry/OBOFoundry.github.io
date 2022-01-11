@@ -12,6 +12,7 @@ build:
 contact:
   email: alayne.cuzick@rothamsted.ac.uk
   label: Alayne Cuzick
+  github: CuzickA
 description: PHIPO is a formal ontology of species-neutral phenotypes observed in pathogen-host interactions.
 domain: phenotype
 homepage: https://github.com/PHI-base/phipo

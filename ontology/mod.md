@@ -4,6 +4,7 @@ id: mod
 contact:
   email: pierre-alain.binz@chuv.ch
   label: Pierre-Alain Binz
+  github: pabinz
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
