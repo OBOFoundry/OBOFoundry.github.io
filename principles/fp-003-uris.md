@@ -24,9 +24,11 @@ Implementation
 
 ### Ontology Namespace:
 
-The namespace is a short string of letters (usually 2-5) that is representative ontology. When used as part of a CURIE, on its own, or as part of a term ID, the namespace is generally capitalized. When used as part of the ontology IRI, the namespace is in lower case. See examples below
+The namespace is a short string of letters (usually 2-5) that represents the ontology. When used as part of a CURIE, on its own, or as part of a term ID, the namespace is generally capitalized. When used as part of the ontology IRI, the namespace is in lower case. See examples below.
 
-To request a new namespace, ontology developers MUST follow these guidelines. Note that very short namespaces (2-3 characters) are reserved for ontologies that cover a general domain and are likely to be frequently used.
+To request a new namespace, ontology developers MUST follow the guidelines outlined here. Note that very short namespaces (2-3 characters) are reserved for ontologies that cover a general domain and are likely to be frequently used.
+
+The ontology namespace MUST be unique; that is, it MUST NOT be in current use or have been used in the past.
 
 ### Ontology IRI:
 
