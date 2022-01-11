@@ -35,7 +35,10 @@ def update_markdown(path: Union[str, pathlib.Path]) -> None:
         return
     if "is_obsolete" in data and data["is_obsolete"]:
         return
-    if "activity_status" in data and data["activity_status"] in {"inactive", "orphaned"}:
+    if "activity_status" in data and data["activity_status"] in {
+        "inactive",
+        "orphaned",
+    }:
         return
 
     with open(path, "w") as file:
@@ -44,7 +47,7 @@ def update_markdown(path: Union[str, pathlib.Path]) -> None:
             print(line, file=file)
         print("preferredPrefix:", data["id"].upper(), file=file)
         print("---", file=file)
-        for line in lines[idx + 1:]:
+        for line in lines[idx + 1 :]:
             print(line, file=file)
 
 

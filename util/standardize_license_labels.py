@@ -33,7 +33,7 @@ def update_markdown(path: Union[str, pathlib.Path]) -> None:
     for i in range(1, 3):
         line = lines[idx + i].strip()
         if "url:" in line:
-            _, license_url = line.split(':', 1)
+            _, license_url = line.split(":", 1)
 
     if license_url is None:
         tqdm.write(f"no license URL in {path}")
