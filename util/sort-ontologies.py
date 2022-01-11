@@ -73,9 +73,8 @@ def sort_ontologies(data, sort_order):
 def write_data(data, output):
   '''Given the ontologies data as a dictionary and an output YAML file to
   write to, write the data to the file. '''
-  yaml_str = yaml.dump(data)
   with open(output, 'w') as f:
-    f.write(yaml_str)
+    yaml.safe_dump(data, f, allow_unicode=True)
 
 
 if __name__ == '__main__':

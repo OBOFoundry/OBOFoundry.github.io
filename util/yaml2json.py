@@ -15,5 +15,5 @@ args = parser.parse_args()
 with open(args.yaml_file, 'r') as stream:
   data = yaml.load(stream, Loader=yaml.SafeLoader)
 data['@context'] = "http://obofoundry.github.io/registry/context.jsonld"
-json = json.dumps(data, sort_keys=True, indent=4, separators=(',', ': '))
+json = json.dumps(data, sort_keys=True, indent=4, ensure_ascii=False, separators=(',', ': '))
 print(json)
