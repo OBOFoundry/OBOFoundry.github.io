@@ -26,6 +26,7 @@ GitHub username:
 
 ## Issue tracker
 
+## Version Controlled Repository
 
 ## Ontology license
 
