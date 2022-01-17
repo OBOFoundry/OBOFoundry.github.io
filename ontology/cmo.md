@@ -2,9 +2,9 @@
 layout: ontology_detail
 id: cmo
 contact:
-  email: shimoyama@mcw.edu
-  label: Mary Shimoyama
-  github: maryshimoyama
+  email: jrsmith@mcw.edu
+  label: Jennifer Smith
+  github: jrsjrs
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
