@@ -65,6 +65,7 @@ layout: default
   </div>
   {% endunless %}{% endif %}
 
+  {% if page.preferredPrefix %}
   {% assign upperPrefix = page.preferredPrefix | upcase %}
   {% if upperPrefix != page.preferredPrefix %}
   <div>
@@ -73,6 +74,7 @@ layout: default
       should use: "{{ page.preferredPrefix }}".
     </div>
   </div>
+  {% endif %}
   {% endif %}
 
   <div class="col-md-12">
