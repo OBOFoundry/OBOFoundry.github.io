@@ -64,7 +64,7 @@ You can either check a box by submitted the request first and then using the Git
 - [ ] For all relationship properties (Object and Data Property) I checked whether [RO](http://www.ontobee.org/ontology/catalog/RO?iri=http://www.w3.org/2002/07/owl%23ObjectProperty) includes an appropriate one. I understand that aligning with RO is an essential part of the overall alignment between OBO ontologies!
 - [ ] For the selection of appropriate annotation properties, I looked at [OMO](http://www.ontobee.org/ontology/catalog/OMO?iri=http://www.w3.org/2002/07/owl%23AnnotationProperty) first. I understand that aligning ontology metadata and term-level metadata is essential for cross-integration of OBO ontologies. 
 - [ ] If I was not sure about the meaning of any of the checkboxes above, I have consulted with a member of the OBO Foundry for advice.
-- [ ] The requested ID space does not conflict with another ID space found in other registries such as BioPortal and bioregistry, see [here](https://obofoundry.org/id-policy) for a complete list.
+- [ ] The requested ID space does not conflict with another ID space found in other registries such as BioPortal and the Bioregistry, see [here](https://obofoundry.org/id-policy) for a complete list.
 
 
 ## Metadata
