@@ -49,21 +49,21 @@ layout: default
   </div>
   {% endif %}
   
-  {% if page.activity_status == "inactive" %}
+  {% if page.activity_status == "inactive" %}{% unless page.is_obsolete %}
   <div>
     <div class="alert alert-warning" role="alert">
       This ontology is inactive. For more information see <a href="/docs/OntologyStatus.html">here</a>.
     </div>
   </div>
-  {% endif %}
+  {% endunless %}{% endif %}
   
-  {% if page.activity_status == "orphaned" %}
+  {% if page.activity_status == "orphaned" %}{% unless page.is_obsolete %}
   <div>
     <div class="alert alert-warning" role="alert">
       This ontology is orphaned. For more information see <a href="/docs/OntologyStatus.html">here</a>.
     </div>
   </div>
-  {% endif %}
+  {% endunless %}{% endif %}
 
   {% assign upperPrefix = page.preferredPrefix | upcase %}
   {% if upperPrefix != page.preferredPrefix %}
