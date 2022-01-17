@@ -56,7 +56,7 @@ To be considered for inclusion in the OBO Foundry, an ontology must meet certain
 
 You can either check a box by submitted the request first and then using the GitHub interface, or replacing the `- [ ]` by `- [X]` in the following.
 
-- [ ] I have read an understood [the registration process instructions](http://obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html) and the [registration checklist](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/docs/RegistrationChecklist.md) 
+- [ ] I have read and understood [the registration process instructions](http://obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html) and the [registration checklist](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/docs/RegistrationChecklist.md) 
 - [ ] There is no other ontology in the OBO Foundry which would be an appropriate place for my terms. If there was, I have contacted the editors, and we decided in mutual agreement that a separate ontology is more appropriate.
 - [ ] My ontology has a specific release file with a version IRI and a dc:license annotation, serialised in RDF/XML.
 - [ ] I understand that term definitions, while not mandatory, are key to understanding the intentions of a term especially when the ontology is used in curation. I made sure that a reasonable majority of terms in my ontology have definitions, using the [IAO:0000115](http://www.ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000115) property.
