@@ -2,8 +2,9 @@
 layout: ontology_detail
 id: opl
 contact:
-  email: preets79@gmail.com
-  label: Priti Parikh
+  email: jiezheng@pennmedicine.upenn.edu
+  label: Jie Zheng
+  github: zhengj2007
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
