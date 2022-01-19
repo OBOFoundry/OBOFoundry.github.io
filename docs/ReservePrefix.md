@@ -1,7 +1,7 @@
 ---
 layout: doc
 id: ReservePrefix
-title: Reserve Prefix outside of OBO
+title: Reserve prefix outside of OBO
 ---
 
 # My ontology is not ready for OBO Foundry, can I reserve a prefix anyway?
