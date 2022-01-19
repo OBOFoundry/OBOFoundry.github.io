@@ -1,3 +1,9 @@
+---
+layout: doc
+id: ReserveNamespace
+title: Reserve Namespace outside of OBO
+---
+
 # My ontology is not ready for OBO Foundry, can I reserve a namespace anyway?
 
 If your ontology is not eligible for inclusion in the OBO Foundry you can not directly reserve a namespace in the OBO Foundry. 
