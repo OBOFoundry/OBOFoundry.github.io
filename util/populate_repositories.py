@@ -10,6 +10,7 @@ Author: `Charles Tapley Hoyt <https://cthoyt.com>`_.
 import pathlib
 from io import StringIO
 from typing import Union
+
 import click
 import yaml
 
