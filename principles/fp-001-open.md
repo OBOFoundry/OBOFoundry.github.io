@@ -155,7 +155,7 @@ material</obo:IAO_0000111>
 
 To pass review, the ontology must have a license that is equivalent to or less restrictive than CC-BY, specified as described in the text and examples above.
 
-[This check is automatically validated.](checks/fp_001)
+[This check is automatically validated.](checks/fp_001) The automatic check fully covers the requirements for this principle.
 
 ## Feedback and Discussion
 
