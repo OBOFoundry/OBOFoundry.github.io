@@ -29,7 +29,7 @@ build:
   insert_ontology_id: true
   method: obo2owl
 tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
-activity_status: active
+activity_status: inactive
 preferredPrefix: FMA
 ---
 
