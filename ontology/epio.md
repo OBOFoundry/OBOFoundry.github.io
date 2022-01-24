@@ -18,6 +18,7 @@ contact:
   email: alpha.tom.kodamullil@scai.fraunhofer.de
   label: Alpha Tom Kodamullil
   github: akodamullil
+homepage: https://github.com/SCAI-BIO/EpilepsyOntology
 repository: https://github.com/SCAI-BIO/EpilepsyOntology
 activity_status: active
 preferredPrefix: EPIO
