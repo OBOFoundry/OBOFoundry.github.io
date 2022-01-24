@@ -2,8 +2,9 @@
 layout: ontology_detail
 id: mamo
 contact:
-  email: n.lenovere@gmail.com
-  label: Nicolas Le Novere
+  email: nicolas@ascistance.co.uk
+  github: gambardella
+  label: Nicolas Gambardella
 description: The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features.
 homepage: http://sourceforge.net/p/mamo-ontology/wiki/Home/
 products:
