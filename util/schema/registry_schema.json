@@ -46,6 +46,7 @@
 			"items":
 			{
 				"type": "object",
+				"title": "Browser",
 				"additionalProperties": false,
 				"properties": {
 					"label": { "type": "string" },
@@ -86,9 +87,6 @@
 			},
 			"required": [ "email","label" ]
 		},
-		"created_with": {
-			"suggest": false
-		},
 		"createdWith": {
 			"suggest": false
 		},
@@ -114,13 +112,7 @@
 			"description": "'domain' is a recommended field. The value is the scientific topic area addressed by the ontology.",
 			"type": "string"
 		},
-		"do_wiki": {
-			"suggest": false
-		},
 		"DO wiki": {
-			"suggest": false
-		},
-		"example_class": {
 			"suggest": false
 		},
 		"exampleClass": {
@@ -130,9 +122,6 @@
 			"suggest": false
 		},
 		"funded_by": {
-			"suggest": false
-		},
-		"google_plus": {
 			"suggest": false
 		},
 		"homepage": {
@@ -322,6 +311,7 @@
 			"minItems": 1,
 			"items": {
 				"type": "object",
+          		        "title": "Product",
 				"properties": {
 					"id": {
 						"type": "string",
@@ -339,6 +329,7 @@
 			"type": "array",
 			"items": {
 				"type": "object",
+          		        "title": "Publication",
 				"properties": {
 					"id": { "type": "string" },
 					"title": { "type": "string" }
@@ -382,9 +373,6 @@
 				"label": {"type": "string"}
 			}
 		},
-		"termgenie": {
-			"suggest": false
-		},
 		"title": {
 			"level": "error",
 			"description": "'title' is a required field. The value is the full name of the ontology project.",
@@ -395,9 +383,6 @@
 			"description": "'tracker' is a recommended field. The value is the URI of an issue tracker for the ontology.",
 			"type": "string",
 			"format": "uri"
-		},
-		"ty": {
-			"suggest": false
 		},
 		"type": {
 			"suggest": false
@@ -411,7 +396,9 @@
       			"description": "Information on usage of particular ontology.",
 			"type": "array",
 			"items": {
-        			"type": "object",
+        		        "type": "object",
+        		        "title": "Usage",
+                            
 				"additionalProperties" : false,
         			"properties": {
 					"user": {
@@ -430,6 +417,7 @@
 						"type": "array",
 						"items": {
           						"type": "object",
+          						"title": "Example",
       							"additionalProperties" : false,
           						"properties": {
           							"url": {
@@ -446,6 +434,7 @@
 						"type": "array",
 						"items": {
 							"type": "object",
+							"title": "Publication",
 							"additionalProperties" : false,
 							"properties": {
 								"id": {
