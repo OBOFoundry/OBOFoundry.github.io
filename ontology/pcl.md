@@ -1,6 +1,6 @@
 ---
 layout: ontology_detail
-id: ontoavida
+id: pcl
 title: "Provisional Cell Ontology"
 contact:
   email: davidos@ebi.ac.uk
