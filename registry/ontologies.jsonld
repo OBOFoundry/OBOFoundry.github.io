@@ -3154,6 +3154,45 @@
         {
             "activity_status": "active",
             "contact": {
+                "email": "alpha.tom.kodamullil@scai.fraunhofer.de",
+                "github": "akodamullil",
+                "label": "Alpha Tom Kodamullil"
+            },
+            "dependencies": [
+                {
+                    "id": "BFO"
+                }
+            ],
+            "description": "A application driven Epilepsy Ontology with official terms from the ILAE.",
+            "domain": "disease",
+            "homepage": "https://github.com/SCAI-BIO/EpilepsyOntology",
+            "id": "epio",
+            "label": "Epilepsy Ontology",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/epio.owl",
+            "preferredPrefix": "EPIO",
+            "products": [
+                {
+                    "id": "epio.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/epio.owl"
+                },
+                {
+                    "id": "EPIO_merged.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/EPIO_merged.owl"
+                }
+            ],
+            "repository": "https://github.com/SCAI-BIO/EpilepsyOntology",
+            "title": "Epilepsy Ontology",
+            "tracker": "https://github.com/SCAI-BIO/EpilepsyOntology/issues"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
                 "email": "stoeckrt@pennmedicine.upenn.edu",
                 "github": "cstoeckert",
                 "label": "Chris Stoeckert"
@@ -6569,7 +6608,7 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "chen.yang@ugent.be",
+                "email": "chenyangnutrition@gmail.com",
                 "github": "cyang0128",
                 "label": "Chen Yang"
             },
@@ -6788,8 +6827,9 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "preets79@gmail.com",
-                "label": "Priti Parikh"
+                "email": "jiezheng@pennmedicine.upenn.edu",
+                "github": "zhengj2007",
+                "label": "Jie Zheng"
             },
             "description": "A reference ontology for parasite life cycle stages.",
             "domain": "life cycle stage, parasite organism",
@@ -8271,7 +8311,7 @@
                 }
             ],
             "contact": {
-                "email": "y-yamagata@nibiohn.go.jp",
+                "email": "yuki.yamagata@riken.jp",
                 "github": "yuki-yamagata",
                 "label": "Yuki Yamagata"
             },
@@ -9397,44 +9437,6 @@
         },
         {
             "activity_status": "active",
-            "contact": {
-                "email": "alpha.tom.kodamullil@scai.fraunhofer.de",
-                "github": "akodamullil",
-                "label": "Alpha Tom Kodamullil"
-            },
-            "dependencies": [
-                {
-                    "id": "BFO"
-                }
-            ],
-            "description": "A application driven Epilepsy Ontology with official terms from the ILAE.",
-            "domain": "disease",
-            "id": "epio",
-            "label": "Epilepsy Ontology",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/4.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/epio.owl",
-            "preferredPrefix": "EPIO",
-            "products": [
-                {
-                    "id": "epio.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/epio.owl"
-                },
-                {
-                    "id": "EPIO_merged.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/EPIO_merged.owl"
-                }
-            ],
-            "repository": "https://github.com/SCAI-BIO/EpilepsyOntology",
-            "title": "Epilepsy Ontology",
-            "tracker": "https://github.com/SCAI-BIO/EpilepsyOntology/issues"
-        },
-        {
-            "activity_status": "active",
             "build": {
                 "checkout": "git clone https://github.com/Superraptor/GSSO.git",
                 "path": ".",
@@ -9607,8 +9609,9 @@
                 "source_url": "https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl"
             },
             "contact": {
-                "email": "n.lenovere@gmail.com",
-                "label": "Nicolas Le Novere"
+                "email": "nicolas@ascistance.co.uk",
+                "github": "gambardella",
+                "label": "Nicolas Gambardella"
             },
             "description": "The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features.",
             "homepage": "http://sourceforge.net/p/mamo-ontology/wiki/Home/",
@@ -9843,6 +9846,7 @@
                 "label": "chEBI"
             },
             "description": "An ontology of physico-chemical methods and properties.",
+            "homepage": "http://www.ebi.ac.uk/chebi",
             "id": "fix",
             "in_foundry": false,
             "layout": "ontology_detail",
@@ -10261,35 +10265,6 @@
         {
             "activity_status": "inactive",
             "contact": {
-                "email": "louis@imbb.forth.gr",
-                "label": "Christos (Kitsos) Louis"
-            },
-            "description": "Application ontology for entities related to insecticide resistance in mosquitos",
-            "domain": "environment",
-            "id": "miro",
-            "layout": "ontology_detail",
-            "ontology_purl": "http://purl.obolibrary.org/obo/miro.owl",
-            "products": [
-                {
-                    "id": "miro.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/miro.owl"
-                },
-                {
-                    "id": "miro.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/miro.obo"
-                }
-            ],
-            "repository": "https://github.com/VEuPathDB-ontology/MIRO",
-            "taxon": {
-                "id": "NCBITaxon:44484",
-                "label": "Anopheles"
-            },
-            "title": "Mosquito insecticide resistance",
-            "validate": false
-        },
-        {
-            "activity_status": "inactive",
-            "contact": {
                 "email": "dsonensh@odu.edu",
                 "label": "Daniel Sonenshine"
             },
@@ -10354,6 +10329,35 @@
                 "label": "Anopheles"
             },
             "title": "Mosquito gross anatomy ontology"
+        },
+        {
+            "activity_status": "inactive",
+            "contact": {
+                "email": "louis@imbb.forth.gr",
+                "label": "Christos (Kitsos) Louis"
+            },
+            "description": "Application ontology for entities related to insecticide resistance in mosquitos",
+            "domain": "environment",
+            "id": "miro",
+            "layout": "ontology_detail",
+            "ontology_purl": "http://purl.obolibrary.org/obo/miro.owl",
+            "products": [
+                {
+                    "id": "miro.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/miro.owl"
+                },
+                {
+                    "id": "miro.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/miro.obo"
+                }
+            ],
+            "repository": "https://github.com/VEuPathDB-ontology/MIRO",
+            "taxon": {
+                "id": "NCBITaxon:44484",
+                "label": "Anopheles"
+            },
+            "title": "Mosquito insecticide resistance",
+            "validate": false
         },
         {
             "activity_status": "inactive",
@@ -10849,24 +10853,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://www.lipidprofiles.com/LipidOntology"
-            },
-            "contact": {
-                "email": "bakerc@unb.ca",
-                "label": "Christipher Baker"
-            },
-            "description": "An ontology representation of the LIPIDMAPS nomenclature classification.",
-            "domain": "lipids",
-            "id": "lipro",
-            "in_foundry": false,
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "title": "Lipid Ontology"
-        },
-        {
-            "activity_status": "inactive",
             "contact": {
                 "email": "peteremidford@yahoo.com",
                 "label": "Peter Midford"
@@ -10900,30 +10886,6 @@
             "is_obsolete": true,
             "layout": "ontology_detail",
             "title": "Minimal anatomical terminology"
-        },
-        {
-            "activity_status": "inactive",
-            "contact": {
-                "email": "Thorsten.Henrich@embl-heidelberg.de",
-                "label": "Thorsten Henrich"
-            },
-            "description": "A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.",
-            "domain": "anatomy",
-            "id": "mfo",
-            "is_obsolete": true,
-            "layout": "ontology_detail",
-            "products": [
-                {
-                    "id": "mfo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/mfo.owl"
-                }
-            ],
-            "replaced_by": "olatdv",
-            "taxon": {
-                "id": "NCBITaxon:8089",
-                "label": "Oryzias"
-            },
-            "title": "Medaka fish anatomy and development"
         },
         {
             "activity_status": "inactive",
@@ -11363,6 +11325,48 @@
             "is_obsolete": true,
             "layout": "ontology_detail",
             "title": "Event (INOH pathway ontology)"
+        },
+        {
+            "activity_status": "inactive",
+            "build": {
+                "method": "owl2obo",
+                "source_url": "http://www.lipidprofiles.com/LipidOntology"
+            },
+            "contact": {
+                "email": "bakerc@unb.ca",
+                "label": "Christipher Baker"
+            },
+            "description": "An ontology representation of the LIPIDMAPS nomenclature classification.",
+            "domain": "lipids",
+            "id": "lipro",
+            "in_foundry": false,
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "title": "Lipid Ontology"
+        },
+        {
+            "activity_status": "inactive",
+            "contact": {
+                "email": "Thorsten.Henrich@embl-heidelberg.de",
+                "label": "Thorsten Henrich"
+            },
+            "description": "A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.",
+            "domain": "anatomy",
+            "id": "mfo",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "products": [
+                {
+                    "id": "mfo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mfo.owl"
+                }
+            ],
+            "replaced_by": "olatdv",
+            "taxon": {
+                "id": "NCBITaxon:8089",
+                "label": "Oryzias"
+            },
+            "title": "Medaka fish anatomy and development"
         },
         {
             "activity_status": "inactive",

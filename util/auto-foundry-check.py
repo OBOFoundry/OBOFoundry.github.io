@@ -3,11 +3,13 @@
 # Read the ontologies.yml file
 # check foundry criteria
 
-__author__ = 'Chris Mungall'
+__author__ = "Chris Mungall"
 
-import argparse, yaml
+import argparse
 
-header = '''---
+import yaml
+
+header = """---
 layout: doc
 title: OBO Foundry Criteria Checker
 ---
@@ -22,66 +24,76 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 
 ### Ontology Project Publications
 
-'''
+"""
 
-template = '- {ontology} ({id}): [{title}]({link})\n'
+template = "- {ontology} ({id}): [{title}]({link})\n"
 
-IN_FOUNDRY_ORDER = 'in_foundry_order'
+IN_FOUNDRY_ORDER = "in_foundry_order"
+
 
 def main():
-    parser = argparse.ArgumentParser(
-        description='Extract foundry data')
-    parser.add_argument('-i', '--ontologies',
-        type=argparse.FileType('r'),
-        help='the ontologies YAML file to read')
-    #parser.add_argument(-'r','--review_path',
+    parser = argparse.ArgumentParser(description="Extract foundry data")
+    parser.add_argument(
+        "-i",
+        "--ontologies",
+        type=argparse.FileType("r"),
+        help="the ontologies YAML file to read",
+    )
+    # parser.add_argument(-'r','--review_path',
     #    type=str,
     #    help='the path to the review file')
     args = parser.parse_args()
 
     data = yaml.load(args.ontologies, Loader=yaml.SafeLoader)
     reviews = []
-    for ontology in data['ontologies']:
-        if 'is_obsolete' in ontology:
+    for ontology in data["ontologies"]:
+        if "is_obsolete" in ontology:
             continue
         reviews.append(review_ontology(ontology))
 
-    print('## SUCCESS')
+    print("## SUCCESS")
     for r in reviews:
-        if r['fails'] == []:
-            print(' * {}'.format(r['id']))
-    print('## FAILS')
+        if r["fails"] == []:
+            print(" * {}".format(r["id"]))
+    print("## FAILS")
     for r in reviews:
-        if len(r['fails']) > 0:
-            conflict = ''
-            if r['conflict']:
-                conflict = '*CONFLICT*'
-            print(' * {} FAILS: {} {}'.format(r['id'],r['fails'],conflict))
+        if len(r["fails"]) > 0:
+            conflict = ""
+            if r["conflict"]:
+                conflict = "*CONFLICT*"
+            print(" * {} FAILS: {} {}".format(r["id"], r["fails"], conflict))
 
 
-FAIL_LICENSE = 'license not CC-BY or CC-0'
-FAIL_TRACKER = 'No tracker for community requests'
-FAIL_USERS = 'No real users'
+FAIL_LICENSE = "license not CC-BY or CC-0"
+FAIL_TRACKER = "No tracker for community requests"
+FAIL_USERS = "No real users"
+
+
 def review_ontology(ont):
     inject(ont)
     fails = []
     is_foundry = IN_FOUNDRY_ORDER in ont
     open_license = False
-    if 'license' in ont:
-        lurl = ont['license']['url']
-        if 'creativecommons.org/licenses/by/' in lurl or 'creativecommons.org/publicdomain/zero' in lurl:
+    if "license" in ont:
+        lurl = ont["license"]["url"]
+        if (
+            "creativecommons.org/licenses/by/" in lurl
+            or "creativecommons.org/publicdomain/zero" in lurl
+        ):
             open_license = True
     if not open_license:
         fails.append(FAIL_LICENSE)
-    if 'tracker' not in ont:
+    if "tracker" not in ont:
         fails.append(FAIL_TRACKER)
-    if 'usages' not in ont:
+    if "usages" not in ont:
         fails.append(FAIL_USERS)
-    conflict = is_foundry and len(fails)>0
-    return dict(id=ont['id'], fails=fails, conflict=conflict)
+    conflict = is_foundry and len(fails) > 0
+    return dict(id=ont["id"], fails=fails, conflict=conflict)
+
 
 def inject(ont):
     pass
-    
+
+
 if __name__ == "__main__":
     main()
