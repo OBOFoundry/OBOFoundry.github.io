@@ -125,8 +125,8 @@
 			"suggest": false
 		},
 		"homepage": {
-			"level": "warning",
-			"description": "'homepage' is a recommended property. The value is the full URL to the homepage.",
+			"level": "error",
+			"description": "'homepage' is a required property. The value is the full URL to the homepage.",
 			"type": "string",
 			"format": "uri"
 		},

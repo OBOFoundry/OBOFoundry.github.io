@@ -11,6 +11,7 @@ build:
   method: obo2owl
   infallible: 1
   insert_ontology_id: true
+homepage: http://www.ebi.ac.uk/chebi
 products:
   - id: fix.owl
   - id: fix.obo

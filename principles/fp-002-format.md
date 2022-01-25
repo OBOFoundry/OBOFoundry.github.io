@@ -36,12 +36,9 @@ An ontology that is in Frames format, OWL/XML, or OWL Manchester Syntax.
 
 ## Criteria for Review
 
-The ontology MUST be available in at least one of the following formats:
+The ontology MUST be available in RDF/XML format.
 
-- OBO Format
-- OWL or OWL2 RDF/XML
-
-[This check is automatically validated.](checks/fp_002)
+[This check is automatically validated.](checks/fp_002) The automatic check fully covers the requirements for this principle.
 
 ## Feedback and Discussion
 

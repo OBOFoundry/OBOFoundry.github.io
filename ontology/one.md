@@ -4,7 +4,7 @@ id: one
 label: Ontology for Nutritional Epidemiology
 title: Ontology for Nutritional Epidemiology
 contact:
-  email: chen.yang@ugent.be
+  email: chenyangnutrition@gmail.com
   label: Chen Yang
   github: cyang0128
 description: An ontology to standardize research output of nutritional epidemiologic studies.
