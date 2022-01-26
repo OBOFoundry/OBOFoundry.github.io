@@ -7,7 +7,7 @@ contact:
   github: pfey03
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 description: A structured controlled vocabulary of phenotypes of the slime-mould <i>Dictyostelium discoideum</i>.
 domain: anatomy
 homepage: http://dictybase.org/
@@ -25,4 +25,6 @@ build:
   system: git
   path: "."
 activity_status: active
+repository: https://github.com/obophenotype/dicty-phenotype-ontology
+preferredPrefix: DDPHENO
 ---

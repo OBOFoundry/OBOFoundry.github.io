@@ -7,9 +7,10 @@ title: NOMEN - A nomenclatural ontology for biological names
 contact:
   email: diapriid@gmail.com
   label: Matt Yoder
+  github: mjy
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 description: NOMEN is a nomenclatural ontology for biological names (not concepts).  It encodes the goverened rules of nomenclature.
 domain: biological nomenclature
 homepage: https://github.com/SpeciesFileGroup/nomen
@@ -34,6 +35,8 @@ funded_by:
   - "Species File Group"
 canonical: nomen.owl
 activity_status: active
+repository: https://github.com/SpeciesFileGroup/nomen
+preferredPrefix: NOMEN
 ---
 
 NOMEN is a nomenclatural ontology for biological names (not concepts).  See the <a href="https://github.com/SpeciesFileGroup/nomen">NOMEN homepage</a> for more info.

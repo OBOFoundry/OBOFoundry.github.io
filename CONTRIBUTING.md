@@ -28,3 +28,7 @@ If an issue gets any **-1** votes, the comments on the issue need to reach conse
 
 The project will strive for full consensus on everything until it runs into a problem with that model.
 
+## Python Code Style
+
+All Python code in this repository should conform to `black` and `isort`. You
+can automatically apply them with `tox -e lint`.

@@ -28,7 +28,7 @@ publications:
     title: "Standardized description of scientific evidence using the Evidence Ontology (ECO)"
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0 Universal
+  label: CC0 1.0
 funded_by:
   - "http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400"
 usages:
@@ -48,6 +48,8 @@ usages:
       - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
         title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species"
 activity_status: active
+repository: https://github.com/evidenceontology/evidenceontology
+preferredPrefix: ECO
 ---
 
 <img src="https://avatars1.githubusercontent.com/u/12802432" alt="ECO logo"/>

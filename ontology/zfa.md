@@ -20,7 +20,7 @@ review:
   date: 2010
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 build:
   notes: may be ready to switch to vcs soon
   source_url: https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/src/zebrafish_anatomy.obo
@@ -37,6 +37,8 @@ usages:
       - url: http://zfin.org/ZFA:0000029
         description: zebrafish genes expressed in hindbrain and genotypes with hindbrain phenotype
 activity_status: active
+repository: https://github.com/cerivs/zebrafish-anatomical-ontology
+preferredPrefix: ZFA
 ---
 
 A structured controlled vocabulary of the anatomy and development of the Zebrafish (<i>Danio rerio</i>).

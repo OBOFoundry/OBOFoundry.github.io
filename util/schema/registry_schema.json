@@ -46,6 +46,7 @@
 			"items":
 			{
 				"type": "object",
+				"title": "Browser",
 				"additionalProperties": false,
 				"properties": {
 					"label": { "type": "string" },
@@ -86,9 +87,6 @@
 			},
 			"required": [ "email","label" ]
 		},
-		"created_with": {
-			"suggest": false
-		},
 		"createdWith": {
 			"suggest": false
 		},
@@ -114,13 +112,7 @@
 			"description": "'domain' is a recommended field. The value is the scientific topic area addressed by the ontology.",
 			"type": "string"
 		},
-		"do_wiki": {
-			"suggest": false
-		},
 		"DO wiki": {
-			"suggest": false
-		},
-		"example_class": {
 			"suggest": false
 		},
 		"exampleClass": {
@@ -132,12 +124,9 @@
 		"funded_by": {
 			"suggest": false
 		},
-		"google_plus": {
-			"suggest": false
-		},
 		"homepage": {
-			"level": "warning",
-			"description": "'homepage' is a recommended property. The value is the full URL to the homepage.",
+			"level": "error",
+			"description": "'homepage' is a required property. The value is the full URL to the homepage.",
 			"type": "string",
 			"format": "uri"
 		},
@@ -212,9 +201,7 @@
 						},
 						"label": {
 							"enum": [
-								"CC-BY",
-								"CC BY 4.0",
-								"CC-BY 4.0"
+								"CC BY 4.0"
 							]
 						}
 					}
@@ -229,9 +216,6 @@
 						},
 						"label": {
 							"enum": [
-								"CC-0",
-								"CC0",
-								"CC0 1.0 Universal",
 								"CC0 1.0"
 							]
 						}
@@ -247,8 +231,6 @@
 						},
 						"label": {
 							"enum": [
-								"CC-BY",
-								"CC-BY 3.0",
 								"CC BY 3.0"
 							]
 						}
@@ -279,7 +261,6 @@
 						},
 						"label": {
 							"enum": [
-								"CC-BY-SA",
 								"CC BY-SA 2.0"
 							]
 						}
@@ -295,9 +276,7 @@
 						},
 						"label": {
 							"enum": [
-								"CC-BY",
-								"CC BY 2.0",
-								"CC-BY 2.0"
+								"CC BY 2.0"
 							]
 						}
 					}
@@ -332,6 +311,7 @@
 			"minItems": 1,
 			"items": {
 				"type": "object",
+          		        "title": "Product",
 				"properties": {
 					"id": {
 						"type": "string",
@@ -349,6 +329,7 @@
 			"type": "array",
 			"items": {
 				"type": "object",
+          		        "title": "Publication",
 				"properties": {
 					"id": { "type": "string" },
 					"title": { "type": "string" }
@@ -366,7 +347,7 @@
 			"suggest": false
 		},
 		"repository": {
-			"level": "info",
+			"level": "warning",
 			"description": "'repository' is a recommended field. The value is the URL for the repository in which the ontology files are stored.",
 			"type": "string",
 			"format": "uri"
@@ -392,9 +373,6 @@
 				"label": {"type": "string"}
 			}
 		},
-		"termgenie": {
-			"suggest": false
-		},
 		"title": {
 			"level": "error",
 			"description": "'title' is a required field. The value is the full name of the ontology project.",
@@ -405,9 +383,6 @@
 			"description": "'tracker' is a recommended field. The value is the URI of an issue tracker for the ontology.",
 			"type": "string",
 			"format": "uri"
-		},
-		"ty": {
-			"suggest": false
 		},
 		"type": {
 			"suggest": false
@@ -421,7 +396,9 @@
       			"description": "Information on usage of particular ontology.",
 			"type": "array",
 			"items": {
-        			"type": "object",
+        		        "type": "object",
+        		        "title": "Usage",
+                            
 				"additionalProperties" : false,
         			"properties": {
 					"user": {
@@ -432,14 +409,15 @@
 					"description": {"type":"string"},
 					"seeAlso": {
                                                 "description": "secondary link to the user, such as a FAIR Sharing entry",
-						"type": "string", 
-						"format": "uri" 
+						"type": "string",
+						"format": "uri"
 						},
         				"examples": {
 						"description": "specific page showing how the ontology is used by that user/resource",
 						"type": "array",
 						"items": {
           						"type": "object",
+          						"title": "Example",
       							"additionalProperties" : false,
           						"properties": {
           							"url": {
@@ -456,9 +434,10 @@
 						"type": "array",
 						"items": {
 							"type": "object",
+							"title": "Publication",
 							"additionalProperties" : false,
 							"properties": {
-								"id": { 
+								"id": {
 									"type": "string",
 									"format": "uri"
 								},
@@ -466,7 +445,7 @@
 							},
 							"required": ["id", "title"]
 						}
-					}  
+					}
       				},
       				"required": ["user", "description"]
 			}

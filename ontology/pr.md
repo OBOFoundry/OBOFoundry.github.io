@@ -5,6 +5,7 @@ in_foundry_order: 1
 contact:
   email: dan5@georgetown.edu
   label: Darren Natale
+  github: nataled
 description: An ontological representation of protein-related entities
 domain: proteins
 homepage: http://proconsortium.org
@@ -29,7 +30,7 @@ review:
   date: 2010
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 depicted_by: https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png
 build:
   oort_args: --no-reasoner
@@ -54,6 +55,8 @@ usages:
       - url: http://purl.obolibrary.org/obo/CL_0001201
         description: A B cell that is CD19-positive (uses the PRO term for non-species-specific CD19 molecule, PR:000001002)
 activity_status: active
+repository: https://github.com/PROconsortium/PRoteinOntology
+preferredPrefix: PR
 ---
 
 The PRotein Ontology (PRO) formally defines taxon-specific and taxon-neutral protein-related entities in three major areas: proteins related by evolution; proteins produced from a given gene; and protein-containing complexes.

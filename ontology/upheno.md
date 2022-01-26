@@ -7,15 +7,12 @@ homepage: https://github.com/obophenotype/upheno
 tracker: https://github.com/obophenotype/upheno/issues
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0
+  label: CC0 1.0
 contact:
   label: Nicole Vasilevsky
   email: vasilevs@ohsu.edu
   github: nicolevasilevsky
 mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
-jobs:
-  - id: https://travis-ci.org/obophenotype/upheno
-    type: travis-ci
 products:
   - id: upheno.owl
   - id: upheno/mp-hp-view.owl
@@ -34,4 +31,6 @@ build:
   path: archive/ontology
   method: archive
 activity_status: active
+repository: https://github.com/obophenotype/upheno
+preferredPrefix: UPHENO
 ---

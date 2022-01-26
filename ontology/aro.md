@@ -2,20 +2,22 @@
 layout: ontology_detail
 id: aro
 contact:
-  email: card@mcmaster.ca
-  label: CARD
-  github: raphenya
+  email: mcarthua@mcmaster.ca
+  label: Andrew G. McArthur
+  github: agmcarthur
 description: Antibiotic resistance genes and mutations
 homepage: https://github.com/arpcard/aro
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 title: Antibiotic Resistance Ontology
 tracker: https://github.com/arpcard/aro/issues
 mailing_list: https://mailman.mcmaster.ca/mailman/listinfo/card-l
 products:
   - id: aro.owl
 activity_status: active
+repository: https://github.com/arpcard/aro
+preferredPrefix: ARO
 ---
 
 The Antibiotic Resistance Ontology

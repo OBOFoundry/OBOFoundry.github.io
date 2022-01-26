@@ -40,7 +40,7 @@ browsers:
     url: http://browser.planteome.org/amigo
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
@@ -66,6 +66,8 @@ usages:
       - url: http://archive.gramene.org/db/ontology/search?id=PO:0025034
         description: Gramene annotations to leaf from Arabidopsis
 activity_status: active
+repository: https://github.com/Planteome/plant-ontology
+preferredPrefix: PO
 ---
 
 The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data. The PO is under active development to expand to encompass terms and annotations from all plants.

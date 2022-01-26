@@ -9,8 +9,6 @@ Summary
 
 The ontology provider has documented procedures for versioning the ontology, and different versions of ontology are marked, stored, and officially released.
 
-[This check is automatically validated.](checks/fp_004)
-
 Purpose
 -------------
 
@@ -19,14 +17,13 @@ OBO projects share their ontologies using files in OWL or OBO format (see OBO Pr
 Recommendations and Requirements
 -------
 
-Each official release MUST have a unique resolvable [version IRI](https://www.w3.org/TR/owl2-syntax/#Ontology_IRI_and_Version_IRI). 
-The versionIRI is constructed using (1) an ontology _base prefix_ (2) a version _identifier_ and (3) a path to a particular version _product_ or artifact.
+In addition to an IRI specifying the current release (see Principle 3), each official release MUST have a unique [version IRI](https://www.w3.org/TR/owl2-syntax/#Ontology_IRI_and_Version_IRI) that resolves to the specific ontology artifact indicated. Consumers can then use the version IRI to uniquely identify which official release of the ontology they used, and to retrieve unaltered copies of the file(s). The versionIRI is constructed using (1) an ontology _base prefix_ (2) a version _identifier_ and (3) a path to a particular version _product_ or artifact.
 
 Version identifiers for the ontology artifacts themselves SHOULD be of the form “YYYY-MM-DD” (that is, a date conforming to ISO-8601), OR use a numbering system (such as semantic versioning, i.e, of the form "NN.n"), but in any case each MUST associate with a <i>distinct</i> official release. The date versioning system is preferred, as it meshes with the requirement that version IRIs be specified using dated PURLs (see below).
 
 If a date-based version identifier is used, it MUST conform to ISO-8601, ie. “YYYY-MM-DD“. Variants of this such as (a) using two digits for year instead of four (b) using one digit for month or year (c) using a delimiter other than a hyphen (d) any other ordering such as day/month/year or month/day/year (c) any other variant MUST NOT be used.
 
-All OBO projects MUST also have PURLs that resolve to specific official releases of their ontology, in perpetuity. If the files are moved, the PURL MUST be updated to resolve to the new location. Consumers can then use the version IRI to uniquely identify which official release of the ontology they used, and to retrieve unaltered copies of the file(s).
+All OBO projects MUST also have versioned PURLs that resolve to the corresponding artifacts specified by the versionIRIs, in perpetuity. If the files are moved, the PURL MUST be updated to resolve to the new location.
 
 Note that the content of official release files MUST NOT be changed. For example, if a bug is found in some official released file for some ontology, the bug MUST NOT be fixed by changing the file(s) for that official release. Instead the bug fixes should be included in a new official release, with new files, and consumers can switch to the new release.
 
@@ -67,5 +64,14 @@ For an OWL format ontology, owl:versionInfo identifies the version and versionIR
 
 CHEBI is an example of an OBO ontology that uses a non-date based system system for version identifier. An example versionIRI for CHEBI is http://purl.obolibrary.org/obo/chebi/187/chebi.owl. This corresponds to a value of `187` for `data-version` in OBO format.
 
+Criteria for Review
+--------
+The released ontology must have a version IRI. The version IRI SHOULD follow a dated format (NS/YYYY-MM-DD/ontology.owl).
 
-<Category:Principles> <Category:Accepted>
+[This check is automatically validated.](checks/fp_004)
+
+## Feedback and Discussion
+
+To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%234+%22Versioning%22+%3CENTER+ISSUE+TITLE%3E).
+
+To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%234+%22Versioning%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).

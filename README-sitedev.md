@@ -26,6 +26,16 @@ If this site becomes official we may want to institute policies for
 the site: e.g. major new changes happen on forks/branches, with a
 voting policy for merging these in.
 
+### Serving with Docker
+
+Because Jekyll can be difficult to install, Docker provides an
+alternative for running the `serve` command:
+
+```shell
+$ export JEKYLL_VERSION=3.5
+$ docker run --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:$JEKYLL_VERSION jekyll serve
+```
+
 ## Details
 
 The setup is fairly standard for Jekyll. We use Jekyll bootstrap

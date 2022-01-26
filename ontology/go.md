@@ -5,6 +5,7 @@ in_foundry_order: 1
 contact:
   email: suzia@stanford.edu
   label: Suzi Aleksander
+  github: suzialeksander
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
@@ -98,7 +99,36 @@ usages:
     examples:
       - url: http://amigo.geneontology.org/amigo/term/GO:0055085
         description: annotations to transmembrane transport
+  - user: https://www.uniprot.org
+    type: annotation
+    description: Uniprot uses GO to show the function of proteins
+    examples:
+      - url: https://www.uniprot.org/uniprot/Q15465#function
+        description: functional annotations of human Sonic hedgehog protein
+  - user: https://reactome.org
+    type: annotation
+    description: Reactome annotates activities, pathways, and cellular localization using GO
+    examples:
+      - url: https://reactome.org/content/detail/R-HSA-177934
+        description: protein tyrosine kinase activity of an EGFR complex
+  - user: https://www.alliancegenome.org
+    type: annotation
+    description: The Alliance of Genome Resources uses GO for model organism gene function annotation
+    examples:
+      - url: https://www.alliancegenome.org/gene/WB:WBGene00003822#function---go-annotations
+        description: Functional summary of C elegans nsy-1 gene
+      - url: https://www.alliancegenome.org/gene/WB:WBGene00003822#pathways
+        description: Gene Ontology Causal Activity Models for C elegans nsy-1 gene
+  - user: https://www.rhea-db.org
+    type: mapping
+    description: Rhea uses GO to describe individual biochemical reactions
+    examples:
+      - url: https://www.rhea-db.org/rhea/22920
+        description: Glutamine scyllo-inositol transaminase reaction and associated GO term
+      
 activity_status: active
+repository: https://github.com/geneontology/go-ontology
+preferredPrefix: GO
 ---
 
 The goal of the GeneOntology (GO) project is to provide a uniformway to describe the functions of gene products from organisms across all kingdoms of life and thereby enable analysis of genomic data

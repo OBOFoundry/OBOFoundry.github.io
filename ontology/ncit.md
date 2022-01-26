@@ -8,7 +8,7 @@ contact:
   github: mellybelly
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 homepage: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
 tracker: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
 description: NCI Thesaurus (NCIt)is a reference terminology that includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities. The NCIt OBO Edition aims to increase integration of the NCIt with OBO Library ontologies. NCIt OBO Edition releases should be considered experimental.
@@ -28,6 +28,8 @@ products:
     title: NCIt Plus Neoplasm Core
     description: "This is a subset extracted from NCIt Plus, based on the [NCIt Neoplasm Core value set](https://evs.nci.nih.gov/ftp1/NCI_Thesaurus/Neoplasm/About_Core.html) as a starting point."
 activity_status: active
+repository: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
+preferredPrefix: NCIT
 ---
 
 The NCI Thesaurus is a reference terminology that includes broad

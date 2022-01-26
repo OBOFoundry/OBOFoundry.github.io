@@ -5,6 +5,7 @@ preferredPrefix: WBPhenotype
 contact:
   email: cgrove@caltech.edu
   label: Chris Grove
+  github: chris-grove
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
@@ -47,6 +48,7 @@ usages:
       - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
         title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species "
 activity_status: active
+repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
 ---
 
 A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes

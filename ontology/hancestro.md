@@ -4,6 +4,7 @@ id: hancestro
 contact:
   email: danielle.welter@uni.lu
   label: Danielle Welter
+  github: daniwelter
 title: Human Ancestry Ontology
 description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide association studies.
 homepage: https://github.com/EBISPOT/ancestro
@@ -18,7 +19,7 @@ products:
     title: HANCESTRO BFO
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 usages:
   - user: http://www.ebi.ac.uk/efo
     description: The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databases, and for external projects such as the NHGRI GWAS catalogue. It combines parts of several biological ontologies, such as anatomy, disease and chemical compounds.
@@ -36,6 +37,8 @@ usages:
       - url: https://www.ebi.ac.uk/ols/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
         description: Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data
 activity_status: active
+repository: https://github.com/EBISPOT/ancestro
+preferredPrefix: HANCESTRO
 ---
 
 # Summary

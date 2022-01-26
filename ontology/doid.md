@@ -41,8 +41,15 @@ publications:
     title: "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0 Universal
+  label: CC0 1.0
 usages:
+  - user: https://www.alliancegenome.org
+    description: Alliance of Genome Resources - MGD, RGD, SGD, FlyBase, WormBase, ZFIN use DO
+    examples:
+      - url: https://www.alliancegenome.org/search?category=disease
+        description: 10,860 DO human Diseases annotated to over 190,000 MOD genes, alleles, disease models and human genes
+      - url: https://www.alliancegenome.org/disease/DOID:0080599
+        description: The landing page for Coronavirus Infectious Disease
   - user: http://www.informatics.jax.org/disease
     description: MGI disease model annotations use DO
     examples:
@@ -54,7 +61,17 @@ usages:
       - url: https://www.alliancegenome.org/disease/DOID:0080599
         description: Coronavirus infectious disease
   
+      - url: http://www.informatics.jax.org/disease/DOID:4123
+        description: Human genes and mouse homology associated with nail diseases
+  - user: https://www.iedb.org
+    description: Immune Epitope Database
+    examples:
+      - url: https://www.iedb.org
+        description: Search for experimental data on antibody and T cell epitopes associated with human diseases in the DO. To search for DO disease terms, use the Disease search box on the front page.
+
 activity_status: active
+repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
+preferredPrefix: DOID
 ---
 
 Creating a comprehensive classification of human diseases organized by etiology.

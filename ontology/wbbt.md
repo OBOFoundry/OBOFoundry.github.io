@@ -5,9 +5,10 @@ preferredPrefix: WBbt
 contact:
   email: raymond@caltech.edu
   label: Raymond Lee
+  github: raymond91125
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis elegans</i>.
 domain: anatomy
 homepage: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
@@ -37,6 +38,7 @@ usages:
       - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
         title: "WormBase: a modern Model Organism Information Resource"
 activity_status: active
+repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
 ---
 
 A structured controlled vocabulary of the anatomy of <i>Caenorhabditis elegans</i>.

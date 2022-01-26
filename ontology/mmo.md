@@ -4,9 +4,10 @@ id: mmo
 contact:
   email: jrsmith@mcw.edu
   label: Jennifer Smith
+  github: jrsjrs
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 description: "A representation of the variety of methods used to make clinical and phenotype measurements. "
 domain: clinical
 homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000
@@ -29,6 +30,8 @@ browsers:
     title: RGD Ontology Browser
     url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000
 activity_status: active
+repository: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology
+preferredPrefix: MMO
 ---
 
 The Measurement Method Ontology is designed to represent the variety of methods used to make qualitative and quantitative clinical and phenotype measurements both in the clinic and with model organisms.

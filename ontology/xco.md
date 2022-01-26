@@ -3,9 +3,10 @@ layout: ontology_detail
 contact:
   email: jrsmith@mcw.edu
   label: Jennifer Smith
+  github: jrsjrs
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 description: Conditions under which physiological and morphological measurements are made both in the clinic and in studies involving humans or model organisms.
 domain: clinical
 homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000
@@ -28,6 +29,8 @@ browsers:
     title: RGD Ontology Browser
     url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000
 activity_status: active
+repository: https://github.com/rat-genome-database/XCO-experimental-condition-ontology
+preferredPrefix: XCO
 ---
 
 <img src="http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif"/>

@@ -5,6 +5,7 @@ preferredPrefix: WBls
 contact:
   email: cgrove@caltech.edu
   label: Chris Grove
+  github: chris-grove
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
@@ -37,6 +38,7 @@ usages:
       - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
         title: "WormBase: a modern Model Organism Information Resource"
 activity_status: active
+repository: https://github.com/obophenotype/c-elegans-development-ontology
 ---
 
 A structured controlled vocabulary of the development of <i>Caenorhabditis elegans</i>.

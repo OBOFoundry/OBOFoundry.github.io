@@ -39,7 +39,6 @@ dependencies:
   - id: nbo
   - id: ncit
   - id: ncbitaxon
-  - id: npo
   - id: pato
   - id: ro
   - id: uberon
@@ -48,7 +47,9 @@ dependencies:
 tracker: https://github.com/EnvironmentOntology/environmental-exposure-ontology/issues
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0
+  label: CC0 1.0
 activity_status: active
+repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+preferredPrefix: ECTO
 ---
 <img src="https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/ecto-logos/ecto-logo_black-banner.png"/>

@@ -5,15 +5,18 @@ title: Interaction Network Ontology
 description: An ontology of interactions and interaction networks
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 contact:
   email: yongqunh@med.umich.edu
   label: Yongqun Oliver He
+  github: yongqunh
 homepage: https://github.com/INO-ontology/ino
 tracker: https://github.com/INO-ontology/ino/issues
 products:
   - id: ino.owl
 activity_status: active
+repository: https://github.com/INO-ontology/ino
+preferredPrefix: INO
 ---
 
 # Summary

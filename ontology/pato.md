@@ -16,14 +16,14 @@ contact:
   github: gkoutos
 domain: phenotype
 homepage: https://github.com/pato-ontology/pato/
-repository: https://github.com/pato-ontology/pato/
+repository: https://github.com/pato-ontology/pato
 browsers:
   - label: BioPortal
     title: BioPortal Ontology Browser
     url: https://bioportal.bioontology.org/ontologies/PATO
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 tracker: https://github.com/pato-ontology/pato/issues
 jobs:
   - id: https://travis-ci.org/pato-ontology/pato
@@ -45,6 +45,7 @@ usages:
       - id: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6324074/
         title: "Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources"
 activity_status: active
+preferredPrefix: PATO
 ---
 
 Phenotypic qualities (properties). This ontology can be used in conjunction with other ontologies such as GO or anatomical ontologies to refer to phenotypes. Examples of qualities are red, ectopic, high temperature, fused, small, edematous and arrested.

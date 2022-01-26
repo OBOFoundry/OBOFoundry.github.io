@@ -18,6 +18,7 @@ domain: relations
 contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
+  github: cmungall
 jobs:
   - id: https://travis-ci.org/oborel/obo-relations
     type: travis-ci
@@ -49,7 +50,7 @@ products:
     page: http://bioinformatics.oxfordjournals.org/content/28/9/1262.long
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 usages:
   - user: http://geneontology.org
     type: annotation
@@ -61,6 +62,8 @@ usages:
       - url: http://model.geneontology.org/56d1143000003402
         description: wg_biogenesis_FlyBase
 activity_status: active
+repository: https://github.com/oborel/obo-relations
+preferredPrefix: RO
 ---
 
 ![logo](/images/ro_logo.png)

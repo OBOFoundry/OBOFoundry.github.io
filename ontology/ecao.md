@@ -23,8 +23,10 @@ dependencies:
 tracker: https://github.com/echinoderm-ontology/ecao_ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 activity_status: active
+repository: https://github.com/echinoderm-ontology/ecao_ontology
+preferredPrefix: ECAO
 ---
 
 This ontology is intended to be used for the description and curation of information related to gene regulatory processes in echinoderms (e.g., expression patterns of endogenous genes and reporter DNA constructs, phenotypic effects of gene perturbations, etc.). 

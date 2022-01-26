@@ -17,8 +17,10 @@ build:
 tracker: https://github.com/jannahastings/emotion-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 activity_status: active
+repository: https://github.com/jannahastings/emotion-ontology
+preferredPrefix: MFOEM
 ---
 
 An ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings, designed to support interdisciplinary research by providing unified annotations.
