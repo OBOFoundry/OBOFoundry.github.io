@@ -14,7 +14,6 @@ description: An integrated cross-species anatomy ontology covering animals and b
 homepage: http://uberon.org
 page: http://en.wikipedia.org/wiki/Uberon
 twitter: uberanat
-google_plus: "+UberonOrg"
 slack: https://obo-communitygroup.slack.com/archives/C01CR698CF2
 wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
