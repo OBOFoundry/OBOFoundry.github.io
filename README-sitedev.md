@@ -77,9 +77,9 @@ jena is at https://archive.apache.org/dist/jena/binaries/apache-jena-3.10.0.tar.
 
 The dependencies should be visible in the [Makefile](Makefile). The basic idea is:
 
- * [ontology/](ontology/)*.md  --[extract yaml]--> [registry/ontologies.yaml](registry/ontologies.yaml) --> [_config.yml](_config.yml)
+ * [ontology/](ontology/)*.md  --[extract yaml]--> [registry/ontologies.yml](registry/ontologies.yml) --> [_config.yml](_config.yml)
 
-[registry/ontologies.yaml](registry/ontologies.yaml) is also used to
+[registry/ontologies.yml](registry/ontologies.yml) is also used to
 create [registry/ontologies.rdf](registry/ontologies.rdf) via a
 JSON-LD file (JENA required).
 
