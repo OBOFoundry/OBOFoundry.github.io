@@ -16,6 +16,18 @@ SCHEMA_FILE = "util/schema/registry_schema.json"
 metadata_grid = {}
 
 
+#: These ontologies have invalid licenses, but they're grandfathered in
+LEGACY_LICENSE_PREFIXES = {
+    "gsso",
+    "hp",
+    "kisao",
+    "mamo",
+    "sbo",
+    "scdo",
+    "txpo",
+}
+
+
 def main(args):
     global metadata_grid
     parser = ArgumentParser(
@@ -163,6 +175,7 @@ def validate_metadata(item, schema):
         # - inactive ontology
         # - obsolete ontology
         # - ontology annotated with `validate: false`
+        # - ontology in legacy license exception list
         if not (
             (
                 item.get("activity_status") == "orphaned"
@@ -172,6 +185,10 @@ def validate_metadata(item, schema):
                 item.get("is_obsolete") is True
                 or item.get("activity_status") == "inactive"
                 or item.get("validate") is False
+            )
+            or (
+                title == "license"
+                and ont_id in LEGACY_LICENSE_PREFIXES
             )
         ):
             # get a message for displaying on terminal
