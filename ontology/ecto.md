@@ -39,7 +39,6 @@ dependencies:
   - id: nbo
   - id: ncit
   - id: ncbitaxon
-  - id: npo
   - id: pato
   - id: ro
   - id: uberon
