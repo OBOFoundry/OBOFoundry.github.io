@@ -186,10 +186,7 @@ def validate_metadata(item, schema):
                 or item.get("activity_status") == "inactive"
                 or item.get("validate") is False
             )
-            or (
-                title == "license"
-                and ont_id in LEGACY_LICENSE_PREFIXES
-            )
+            or (title == "license" and ont_id in LEGACY_LICENSE_PREFIXES)
         ):
             # get a message for displaying on terminal
             msg = ve.message
