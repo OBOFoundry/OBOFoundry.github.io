@@ -26,7 +26,7 @@ dependencies:
   - id: go
   - id: iao
   - id: bfo
-  - id: ncbi_taxon
+  - id: ncbitaxon
   - id: caro
 tracker: https://github.com/PopulationAndCommunityOntology/pco/issues
 license:
