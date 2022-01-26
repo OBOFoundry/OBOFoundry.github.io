@@ -4985,6 +4985,65 @@ ontologies:
   title: Ontology of Vaccine Adverse Events
   tracker: https://github.com/OVAE-Ontology/ovae/issues
 - activity_status: active
+  contact:
+    email: davidos@ebi.ac.uk
+    github: dosumis
+    label: David Osumi-Sutherland
+  dependencies:
+  - id: pr
+  - id: go
+  - id: uberon
+  - id: ro
+  - id: pato
+  - id: ncbitaxon
+  - id: bfo
+  - id: cl
+  - id: omo
+  - id: nbo
+  - id: chebi
+  - id: so
+  description: Cell types that are provisionally defined by experimental techniques
+    such as single cell or single nucleus transcriptomics rather than a straightforward
+    & coherent set of properties.
+  domain: phenotype
+  homepage: https://github.com/obophenotype/provisional_cell_ontology
+  id: pcl
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/pcl.owl
+  preferredPrefix: PCL
+  products:
+  - id: pcl.owl
+    ontology_purl: http://purl.obolibrary.org/obo/pcl.owl
+  - id: pcl.obo
+    ontology_purl: http://purl.obolibrary.org/obo/pcl.obo
+  - id: pcl.json
+    ontology_purl: http://purl.obolibrary.org/obo/pcl.json
+  - id: pcl-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/pcl-base.owl
+  - id: pcl-base.obo
+    ontology_purl: http://purl.obolibrary.org/obo/pcl-base.obo
+  - id: pcl-base.json
+    ontology_purl: http://purl.obolibrary.org/obo/pcl-base.json
+  - id: pcl-full.owl
+    ontology_purl: http://purl.obolibrary.org/obo/pcl-full.owl
+  - id: pcl-full.obo
+    ontology_purl: http://purl.obolibrary.org/obo/pcl-full.obo
+  - id: pcl-full.json
+    ontology_purl: http://purl.obolibrary.org/obo/pcl-full.json
+  - id: pcl-simple.owl
+    ontology_purl: http://purl.obolibrary.org/obo/pcl-simple.owl
+  - id: pcl-simple.obo
+    ontology_purl: http://purl.obolibrary.org/obo/pcl-simple.obo
+  - id: pcl-simple.json
+    ontology_purl: http://purl.obolibrary.org/obo/pcl-simple.json
+  repository: https://github.com/obophenotype/provisional_cell_ontology
+  title: Provisional Cell Ontology
+  tracker: https://github.com/obophenotype/provisional_cell_ontology/issues
+- activity_status: active
   build:
     checkout: git clone https://github.com/PopulationAndCommunityOntology/pco.git
     path: .
