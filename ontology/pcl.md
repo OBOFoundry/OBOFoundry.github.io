@@ -25,7 +25,7 @@ products:
 dependencies:
   - id: pr
   - id: go
-  - id: uberon 
+  - id: uberon
   - id: ro
   - id: pato
   - id: ncbitaxon
