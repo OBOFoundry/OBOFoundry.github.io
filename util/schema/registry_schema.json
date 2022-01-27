@@ -347,8 +347,8 @@
 			"suggest": false
 		},
 		"repository": {
-			"level": "warning",
-			"description": "'repository' is a recommended field. The value is the URL for the repository in which the ontology files are stored.",
+			"level": "error",
+			"description": "'repository' is a required field. The value is the URL for the version control repository (e.g., on GitHub, GitLab, Bitbucket, SourceForge) in which the ontology files are stored and updated.",
 			"type": "string",
 			"format": "uri"
 		},
@@ -468,6 +468,6 @@
 	},
 	"required": ["activity_status", "contact", "description",
 				 "homepage", "id", "layout", "license", "products",
-				 "title", "tracker"],
+				 "title", "tracker", "repository"],
 	"level": "error"
 }
