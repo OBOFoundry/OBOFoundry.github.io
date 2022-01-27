@@ -11,6 +11,18 @@ homepage: https://github.com/OBOFoundry/COB
 tracker: https://github.com/OBOFoundry/COB/issues
 products:
   - id: cob.owl
+    title: COB
+    description: Core Ontology for Biology and Biomedicine, main ontology
+  - id: cob/cob-base.owl
+    title: COB base module
+    description: base module for COB
+  - id: cob/cob-to-external.owl
+    title: COB to external
+    type: BridgeOntology
+  - id: cob/products/demo-cob.owl
+    title: COB demo ontology (experimental)
+    status: alpha
+    description: demo of COB including subsets of other ontologies (Experimental, for demo purposes only)
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
