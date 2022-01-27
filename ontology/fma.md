@@ -6,7 +6,7 @@ contact:
   label: Onard Mejino
 license:
   url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY 3.0
+  label: CC BY 3.0
 description: This is currently a slimmed down version of FMA
 domain: anatomy
 homepage: http://si.washington.edu/projects/fma
@@ -29,7 +29,8 @@ build:
   insert_ontology_id: true
   method: obo2owl
 tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
-activity_status: active
+activity_status: inactive
+preferredPrefix: FMA
 ---
 
 Obo format translation of the FMA, omitting all relationships other than is_a, part_of and has_part. Future versions of fma_obo will include more relationships

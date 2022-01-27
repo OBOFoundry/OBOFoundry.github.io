@@ -4,6 +4,7 @@ id: clo
 contact:
   email: siiraa@umich.edu
   label: Sirarat Sarntivijai
+  github: siiraa
 description: An ontology to standardize and integrate cell line information and to support computer-assisted reasoning.
 homepage: http://www.clo-ontology.org
 products:
@@ -17,9 +18,10 @@ dependencies:
   - id: ncbitaxon
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 activity_status: active
 repository: https://github.com/CLO-Ontology/CLO
+preferredPrefix: CLO
 ---
 
 # Summary

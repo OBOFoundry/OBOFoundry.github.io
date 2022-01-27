@@ -9,6 +9,7 @@ build:
 contact:
   email: giant.plankton@gmail.com
   label: Jade Hotchkiss
+  github: JadeHotchkiss
 description: An ontology for the standardization of terminology and integration of knowledge about Sickle Cell Disease.
 domain: disease
 homepage: https://scdontology.h3abionet.org/
@@ -53,6 +54,7 @@ license:
   label: GPL-3.0
 activity_status: active
 repository: https://github.com/scdodev/scdo-ontology
+preferredPrefix: SCDO
 ---
 
 The Sickle Cell Disease Ontology (SCDO) project is a collaboration between H3ABioNet (Pan African Bioinformatics Network) and SPAN (Sickle Cell Disease Pan African Network). The SCDO is currently under development and its purpose is to: 1) establish community standardized SCD terms and descriptions, 2) establish canonical and hierarchical representation of knowledge on SCD, 3) links to other ontologies and bodies of work such as DO, PhenX, MeSH, ICD, NCI’s thesaurus, SNOMED and OMIM. Once complete, we anticipate that the ontology will: 1) be the most comprehensive collection of knowledge on SCD, 2) facilitate exploration of new scientific questions and ideas, 3) facilitate seamless data sharing and collaborations including meta-analysis within the SCD community, 4) support the building of databasing and clinical informatics in SCD.

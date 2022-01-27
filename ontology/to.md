@@ -4,6 +4,7 @@ id: to
 contact:
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
+  github: jaiswalp
 description: A controlled vocabulary to describe phenotypic traits in plants.
 domain: phenotype
 homepage: http://browser.planteome.org/amigo
@@ -13,7 +14,7 @@ products:
   - id: to.obo
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
@@ -48,6 +49,7 @@ usages:
         description: Gramene annotations to submergence tolerance
 activity_status: active
 repository: https://github.com/Planteome/plant-trait-ontology
+preferredPrefix: TO
 ---
 
 A controlled vocabulary of describe phenotypic traits in plants. Each trait is a distinguishable feature, characteristic, quality or phenotypic feature of a developing or mature plant.

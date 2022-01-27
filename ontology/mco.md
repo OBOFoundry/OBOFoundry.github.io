@@ -12,6 +12,7 @@ build:
 contact:
   email: citlalli.mejiaalmonte@gmail.com
   label: Citlalli Mejía-Almonte
+  github: citmejia
 description: Microbial Conditions Ontology is an ontology...
 domain: experimental conditions
 homepage: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
@@ -36,9 +37,10 @@ dependencies:
 tracker: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 activity_status: active
 repository: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
+preferredPrefix: MCO
 ---
 
 Enter a detailed description of your ontology here

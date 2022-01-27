@@ -6,7 +6,7 @@ contact:
   label: Marc Ciriello
 license:
   url: https://creativecommons.org/licenses/by/2.0/
-  label: CC-BY 2.0
+  label: CC BY 2.0
 description: An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens.
 domain: resources
 homepage: https://open.med.harvard.edu/wiki/display/eaglei/Ontology

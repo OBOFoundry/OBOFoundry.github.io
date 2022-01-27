@@ -8,6 +8,7 @@ homepage: https://github.com/ybradford/zebrafish-experimental-conditions-ontolog
 contact:
   email: ybradford@zfin.org
   label: Yvonne Bradford
+  github: ybradford
 products:
   - id: zeco.obo
   - id: zeco.owl
@@ -17,13 +18,14 @@ taxon:
   label: Danio
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 build:
   source_url: https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.obo
   method: obo2owl
 tracker: https://github.com/ybradford/zebrafish-experimental-conditions-ontology/issues
 activity_status: active
 repository: https://github.com/ybradford/zebrafish-experimental-conditions-ontology
+preferredPrefix: ZECO
 ---
 
 This ontology is designed to represent the experimental conditions

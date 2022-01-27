@@ -4,6 +4,7 @@ id: cheminf
 contact:
   email: egon.willighagen@gmail.com
   label: Egon Willighagen
+  github: egonw
 tracker: https://github.com/semanticchemistry/semanticchemistry/issues
 license:
   url: http://creativecommons.org/licenses/by/4.0/
@@ -20,6 +21,7 @@ build:
   method: owl2obo
 activity_status: active
 repository: https://github.com/semanticchemistry/semanticchemistry
+preferredPrefix: CHEMINF
 ---
 
 Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them.

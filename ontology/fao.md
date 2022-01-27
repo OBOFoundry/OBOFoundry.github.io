@@ -2,12 +2,12 @@
 layout: ontology_detail
 id: fao
 contact:
-  email: mah79@cam.ac.uk
-  label: Midori Harris
-  github: mah11
+  email: vw253@cam.ac.uk
+  label: Val Wood
+  github: ValWood
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 description: A structured controlled vocabulary for the anatomy of fungi.
 domain: anatomy
 tracker: https://github.com/obophenotype/fungal-anatomy-ontology/issues
@@ -26,6 +26,7 @@ build:
   infallible: 1
 activity_status: active
 repository: https://github.com/obophenotype/fungal-anatomy-ontology
+preferredPrefix: FAO
 ---
 
 ![FAO image](http://www.yeastgenome.org/images/fao.color.png)

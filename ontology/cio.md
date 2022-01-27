@@ -2,12 +2,12 @@
 layout: ontology_detail
 id: cio
 contact:
-  email: bgee@sib.swiss
-  label: Frederic Bastian
+  label: Frédéric Bastian
+  email: frederic.bastian@unil.ch
   github: fbastian
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0
+  label: CC0 1.0
 title: Confidence Information Ontology
 description: An ontology to capture confidence information about annotations.
 homepage: https://github.com/BgeeDB/confidence-information-ontology
@@ -17,6 +17,7 @@ products:
   - id: cio.obo
 activity_status: active
 repository: https://github.com/BgeeDB/confidence-information-ontology
+preferredPrefix: CIO
 ---
 
 The Confidence Information Ontology (CIO) is an ontology to capture confidence information about annotations.

@@ -4,9 +4,10 @@ id: pw
 contact:
   email: gthayman@mcw.edu
   label: G. Thomas Hayman
+  github: gthayman
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 description: A controlled vocabulary for annotating gene products to pathways.
 domain: biological process
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
@@ -30,6 +31,7 @@ browsers:
     url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=PW:0000001
 activity_status: active
 repository: https://github.com/rat-genome-database/PW-Pathway-Ontology
+preferredPrefix: PW
 ---
 
 <img src="http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif"/>

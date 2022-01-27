@@ -10,7 +10,7 @@ domain: information
 homepage: https://github.com/information-artifact-ontology/IAO/
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 products:
   - id: iao.owl
   - id: iao/ontology-metadata.owl
@@ -36,6 +36,7 @@ usages:
     description: IAO is used widely by multiple OBO ontologies for information representation.
 activity_status: active
 repository: https://github.com/information-artifact-ontology/IAO
+preferredPrefix: IAO
 ---
 
 The Information Artifact Ontology (IAO) is a new ontology of information entities, originally driven by work by the OBI digital entity and realizable information entity branch.

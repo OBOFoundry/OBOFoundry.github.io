@@ -4,9 +4,10 @@ id: rs
 contact:
   email: sjwang@mcw.edu
   label: Shur-Jen Wang
+  github: shurjenw
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 description: Ontology of rat strains
 homepage: http://rgd.mcw.edu/rgdweb/search/strains.html
 tracker: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology/issues
@@ -30,6 +31,7 @@ taxon:
   label: Rattus
 activity_status: active
 repository: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology
+preferredPrefix: RS
 ---
 
 <img src="http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif"/>

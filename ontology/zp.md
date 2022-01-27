@@ -12,6 +12,7 @@ build:
 contact:
   email: ybradford@zfin.org
   label: Yvonne Bradford
+  github: ybradford
 description: The Zebrafish Phenotype Ontology formally defines all phenotypes of the Zebrafish model organism.
 domain: phenotype
 homepage: https://github.com/obophenotype/zebrafish-phenotype-ontology
@@ -29,7 +30,7 @@ dependencies:
 tracker: https://github.com/obophenotype/zebrafish-phenotype-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 usages:
   - user: https://monarchinitiative.org/
     type: annotation
@@ -42,4 +43,5 @@ usages:
         title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species"
 activity_status: active
 repository: https://github.com/obophenotype/zebrafish-phenotype-ontology
+preferredPrefix: ZP
 ---

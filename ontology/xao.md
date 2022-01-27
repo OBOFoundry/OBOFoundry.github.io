@@ -36,9 +36,10 @@ usages:
         description: Xenopus genes expressed in the pronephric kidney.
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 activity_status: active
 repository: https://github.com/xenopus-anatomy/xao
+preferredPrefix: XAO
 ---
 
 The Xenopus Anatomy Ontology represents and standardizes the anatomy and development of the African frogs Xenopus laevis and tropicalis. It supports the annotation of gene expression data in Xenbase and is designed to facilitate cross-taxa comparisons.

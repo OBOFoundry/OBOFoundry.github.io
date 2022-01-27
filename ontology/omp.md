@@ -4,6 +4,7 @@ id: omp
 contact:
   email: jimhu@tamu.edu
   label: James C. Hu
+  github: jimhu-tamu
 description: An ontology of phenotypes covering microbes
 domain: phenotype
 homepage: http://microbialphenotypes.org
@@ -16,10 +17,11 @@ build:
   method: obo2owl
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 tracker: https://github.com/microbialphenotypes/OMP-ontology/issues
 activity_status: active
 repository: https://github.com/microbialphenotypes/OMP-ontology
+preferredPrefix: OMP
 ---
 
 OMP is a community ontology for annotating microbial phenotypes.

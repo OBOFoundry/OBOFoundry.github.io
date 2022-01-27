@@ -9,13 +9,15 @@ tracker: https://github.com/OHPI/ohpi/issues
 contact:
   email: edong@umich.edu
   label: Edison Ong
+  github: e4ong1031
 products:
   - id: ohpi.owl
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 activity_status: active
 repository: https://github.com/OHPI/ohpi
+preferredPrefix: OHPI
 ---
 
 # OHPI: Ontology of Host-Pathogen Interactions

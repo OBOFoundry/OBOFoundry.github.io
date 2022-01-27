@@ -12,6 +12,7 @@ build:
 contact:
   email: rlwalls2008@gmail.com
   label: Ramona Walls
+  github: ramonawalls
 description: An ontology about groups of interacting organisms such as populations and communities
 domain: collections of organisms
 homepage: https://github.com/PopulationAndCommunityOntology/pco
@@ -25,14 +26,15 @@ dependencies:
   - id: go
   - id: iao
   - id: bfo
-  - id: ncbi_taxon
+  - id: ncbitaxon
   - id: caro
 tracker: https://github.com/PopulationAndCommunityOntology/pco/issues
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 activity_status: active
 repository: https://github.com/PopulationAndCommunityOntology/pco
+preferredPrefix: PCO
 ---
 
 The Population and Community Ontology (PCO) describes material entities, qualities, and processes related to collections of interacting organisms such as populations and communities. It is taxon neutral, and can be used for any species, including humans.

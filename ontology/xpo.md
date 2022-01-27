@@ -34,9 +34,10 @@ dependencies:
 tracker: https://github.com/obophenotype/xenopus-phenotype-ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 activity_status: active
 repository: https://github.com/obophenotype/xenopus-phenotype-ontology
+preferredPrefix: XPO
 ---
 
 The Xenopus Phenotype Ontology represents and standardizes phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis. It supports the annotation of phenotypes in Xenbase and is designed to integrate Xenopus data with genotype, phenotype, and disease data across species.

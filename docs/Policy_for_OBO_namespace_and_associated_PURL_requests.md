@@ -4,8 +4,6 @@ id: Policy_for_OBO_namespace_and_associated_PURL_requests
 title: OBO Foundry membership requirements and technical details
 ---
 
-## For a simple overview of how to submit your ontology for consideration, please go [here](http://www.obofoundry.org/faq/how-do-i-register-my-ontology.html).
-
 # Expectations for OBO Membership
 
 1. Participation in the OBO Foundry implies willingness to discuss your project and collaboratively develop it. You are strongly encouraged to build upon the existing suite of ontologies available in the [OBO library](http://obofoundry.org).
@@ -28,7 +26,7 @@ title: OBO Foundry membership requirements and technical details
 5. There must be a contact person for the resource. The contact person for resources must be subscribed to our main communication channel, the [obo-discuss](https://groups.google.com/forum/#!forum/obo-discuss) mailing list.
 6. The requestor and/or contact person should be ready to discuss issues such as whether the ontology is orthogonal, whether there is potential to collaborate with existing efforts.
 7. It is expected that solicitation of a IDSPACE is done _before_ the IDSPACE is used for identifiers. A common strategy is to develop an ontology, request a IDSPACE, and translate the initial URIs used to the PURLs some time before the initial release.  **There is no guarantee that you will be granted your IDSPACE, even if you have been using it in your file**.
-8. As of 4th May 2021, every new ontology submission is required to pass the [OBO Dashboard](http://dashboard.obofoundry.org/) quality control, which means that they are not allowed to have any substantial errors (anything "red"). Your ontology will be set up in a [provisional Dashboard](https://obofoundry.github.io/obo-nor.github.io/dashboard/index.html) as soon as the GitHub submission request is made. OBO foundry will provide support to help you fix any issues your submission might have.
+8. As of 4th May 2021, every new ontology submission is required to pass the [OBO Dashboard](http://dashboard.obofoundry.org/) quality control, which means that they are not allowed to have any substantial errors (anything "red"). The only exceptions to this requirement are (1) `Users`, and (2) results in the `Report` that pertain to terms from imported (external) ontologies. Your ontology will be set up in a [provisional Dashboard](https://obofoundry.github.io/obo-nor.github.io/dashboard/index.html) as soon as the GitHub submission request is made. OBO foundry will provide support to help you fix any issues your submission might have. 
 
 
 # Process

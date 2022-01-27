@@ -14,7 +14,6 @@ description: An integrated cross-species anatomy ontology covering animals and b
 homepage: http://uberon.org
 page: http://en.wikipedia.org/wiki/Uberon
 twitter: uberanat
-google_plus: "+UberonOrg"
 slack: https://obo-communitygroup.slack.com/archives/C01CR698CF2
 wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
@@ -77,7 +76,7 @@ funded_by:
 canonical: uberon.owl
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 taxon:
   id: NCBITaxon:33208
   label: Metazoa
@@ -88,6 +87,7 @@ releases: http://purl.obolibrary.org/obo/uberon/releases/
 contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
+  github: cmungall
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22293552
     title: "Uberon, an integrative multi-species anatomy ontology"
@@ -182,6 +182,7 @@ products:
       - emapa
       - ehdaa2
 activity_status: active
+preferredPrefix: UBERON
 ---
 
 Uberon is an integrated cross-species ontology covering anatomical structures in animals. See the <a href="http://uberon.org">Uberon website</a> for more info, or read the <a

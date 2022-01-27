@@ -7,7 +7,7 @@ contact:
   github: mellybelly
 license:
   url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY 3.0
+  label: CC BY 3.0
 description: An upper level ontology to facilitate interoperability between existing anatomy ontologies for different species
 domain: anatomy
 homepage: https://github.com/obophenotype/caro/
@@ -21,6 +21,7 @@ build:
 tracker: https://github.com/obophenotype/caro/issues
 activity_status: active
 repository: https://github.com/obophenotype/caro
+preferredPrefix: CARO
 ---
 
 The Common Anatomy Reference Ontology (CARO) is being developed to facilitate interoperability between existing anatomy ontologies for different species, and will provide a template for building new anatomy ontologies. CARO will be described in Anatomy Ontologies for Bioinformatics: Principles and Practice Albert Burger, Duncan Davidson and Richard Baldock (Editors)

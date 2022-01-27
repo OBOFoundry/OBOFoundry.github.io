@@ -7,7 +7,7 @@ homepage: https://github.com/obophenotype/upheno
 tracker: https://github.com/obophenotype/upheno/issues
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0
+  label: CC0 1.0
 contact:
   label: Nicole Vasilevsky
   email: vasilevs@ohsu.edu
@@ -32,4 +32,5 @@ build:
   method: archive
 activity_status: active
 repository: https://github.com/obophenotype/upheno
+preferredPrefix: UPHENO
 ---

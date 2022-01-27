@@ -18,7 +18,7 @@ contact:
   github: "amalik01"
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 domain: biochemistry
 homepage: http://www.ebi.ac.uk/chebi
 page: http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual
@@ -53,6 +53,7 @@ usages:
         description: "A curated zebrafish experiment involving exposure to (5Z,8Z,14Z)-11,12-dihydroxyicosatrienoic acid (CHEBI:63969)"
 activity_status: active
 repository: https://github.com/ebi-chebi/ChEBI
+preferredPrefix: CHEBI
 ---
 
 A freely available dictionary of molecular entities focused on ‘small’ chemical compounds.

@@ -12,7 +12,7 @@ contact:
   github: bpeters42
 license:
   url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 products:
   - id: mro.owl
 usages:
@@ -27,6 +27,7 @@ usages:
         title: "The Immune Epitope Database (IEDB): 2018 update"
 activity_status: active
 repository: https://github.com/IEDB/MRO
+preferredPrefix: MRO
 ---
 
 The MHC Restriction Ontology (MRO) is an application ontology capturing how Major Histocompatibility Complex (MHC) restriction is defined in experiments, spanning exact protein complexes, individual protein chains, serotypes, haplotypes and mutant molecules, as well as evidence for MHC restrictions.

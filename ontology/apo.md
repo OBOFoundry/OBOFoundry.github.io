@@ -24,6 +24,7 @@ build:
   method: obo2owl
 activity_status: active
 repository: https://github.com/obophenotype/ascomycete-phenotype-ontology
+preferredPrefix: APO
 ---
 
 A structured controlled vocabulary for the phenotypes of Ascomycete fungi

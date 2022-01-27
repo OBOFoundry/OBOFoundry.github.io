@@ -4,6 +4,7 @@ id: swo
 contact:
   email: allyson.lister@oerc.ox.ac.uk
   label: Allyson Lister
+  github: allysonlister
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
@@ -19,4 +20,5 @@ build:
   method: owl2obo
 activity_status: active
 repository: https://github.com/allysonlister/swo
+preferredPrefix: SWO
 ---

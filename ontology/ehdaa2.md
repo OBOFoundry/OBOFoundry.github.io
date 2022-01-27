@@ -6,7 +6,7 @@ contact:
   label: Jonathan Bard
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 description: A structured controlled vocabulary of stage-specific anatomical structures of the developing human.
 tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
 domain: anatomy
@@ -35,6 +35,16 @@ repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
 ---
 
 A structured controlled vocabulary of stage-specific anatomical structures of the human. It has been designed to mesh with the mouse anatomy and incorporates each Carnegie stage of development (CS1-20). The abstract version of the human developmental anatomy ontology compresses all the tissues present over Carnegie stages 1-20 into a single hierarchy. The heart, for example, is present from Carnegie Stage 9 onwards and is thus represented by 12 EHDA IDs (one for each stage). In the abstract mouse, it has a single ID so that the abstract term given as just <i>heart</i> really means <i>heart (CS 9-20)</i>. Timing details will be added to the abstract version of the ontology in a future release.
+
+## Current Status (2022)
+
+This ontology has been inactive for several years, as of 2022. As of yet there is no complete replacement ontology, but OBO users may want to consider potential alternatives:
+
+ * [HsapDv](https://obofoundry.org/ontology/hsapdv) contains human-specific embryonic stage terms for Carnegie stages
+ * [Uberon](https://obofoundry.org/ontology/uberon) includes embryonic anatomy and developmental stage relations, but is more taxonomically general than EHDAA2, and may be less complete and less precise. Uberon includes EHDAA2 in its composite metazoan build.
+ * [FMA](https://obofoundry.org/ontology/fma) now includes some himan embryonic anatomy, but is constructed on different principles than EHDAA2, and may be less complete and less precise in places
+
+As of 2022, EHDAA2 still has the most complete set of human structure to stage relationships of any ontology in OBO, but note that it is no longer updated.
 
 ## Details
 

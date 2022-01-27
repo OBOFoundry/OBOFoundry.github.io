@@ -12,11 +12,12 @@ homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/Hs
 tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
 page: https://github.com/obophenotype/developmental-stage-ontologies
 contact:
-  label: bgee
-  email: bgee@sib.swiss
+  label: Frédéric Bastian
+  email: frederic.bastian@unil.ch
+  github: fbastian
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 products:
   - id: hsapdv.owl
   - id: hsapdv.obo

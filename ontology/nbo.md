@@ -13,7 +13,7 @@ products:
 title: Neuro Behavior Ontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 browsers:
   - label: BioPortal
     title: BioPortal Ontology Browser
@@ -24,4 +24,5 @@ build:
 tracker: https://github.com/obo-behavior/behavior-ontology/issues
 activity_status: active
 repository: https://github.com/obo-behavior/behavior-ontology
+preferredPrefix: NBO
 ---

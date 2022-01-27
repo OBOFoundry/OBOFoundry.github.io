@@ -14,7 +14,7 @@ products:
 title: Biological Spatial Ontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 build:
   checkout: git clone https://github.com/obophenotype/biological-spatial-ontology.git
   system: git
@@ -27,6 +27,7 @@ publications:
     title: "Nose to tail, roots to shoots: spatial descriptors for phenotypic diversity in the Biological Spatial Ontology."
 activity_status: active
 repository: https://github.com/obophenotype/biological-spatial-ontology
+preferredPrefix: BSPO
 ---
 
 An ontology for respresenting spatial concepts, anatomical axes, gradients, regions, planes, sides, and surfaces. These concepts can be used at multiple biological scales and in a diversity of taxa, including plants, animals and fungi. The BSPO is used to provide a source of anatomical location descriptors for logically defining anatomical entity classes in anatomy ontologies.

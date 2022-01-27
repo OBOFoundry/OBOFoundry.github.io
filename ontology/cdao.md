@@ -4,6 +4,7 @@ id: cdao
 contact:
   email: balhoff@renci.org
   label: Jim Balhoff
+  github: balhoff
 description: a formalization of concepts and relations relevant to evolutionary comparative analysis
 homepage: https://github.com/evoinfo/cdao
 products:
@@ -15,9 +16,10 @@ build:
   method: owl2obo
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0 Universal
+  label: CC0 1.0
 activity_status: active
 repository: https://github.com/evoinfo/cdao
+preferredPrefix: CDAO
 ---
 
 A formalization of concepts and relations relevant to evolutionary comparative analysis, such as phylogenetic trees, OTUs (operational taxonomic units) and compared characters (including molecular characters as well as other types). CDAO is being developed by scientists in biology, evolution, and computer science
