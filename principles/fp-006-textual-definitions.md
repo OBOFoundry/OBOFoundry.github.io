@@ -4,29 +4,40 @@ id: fp-006-textual-definitions
 title: Textual Definitions (principle 6)
 ---
 
-NOTE
--------
-
-The content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.
-
 Summary
 -------
 
 The ontology has textual definitions for the majority of its classes and for top level terms in particular.
 
-[This check is automatically validated.](checks/fp_006)
-
 Purpose
 -------
 
-A textual definition provides a human-readable understanding about what is a member of the associated class.
+A textual definition provides a human-readable understanding about what is a member of the associated class. Textual definitions are, optimally, in concordance with associated machine-readable logical definitions (the latter of which are OPTIONAL).
 
-Recommendation
+Recommendations and Requirements
 --------------
 
 Textual definitions MUST be unique within an ontology (i.e. no two terms should share a definition). Textual definitions SHOULD follow Aristotelian form (e.g. “a B that Cs” where B is the parent and C is the differentia), where this is practical.
 
-For terms lacking textual definitions, there should be evidence of implementation of a strategy to provide definitions for all remaining undefined terms. In lieu of textual definitions, there can be elucidations when the term can not be rigorously defined.
+For terms lacking textual definitions, there should be evidence of implementation of a strategy to provide definitions for all remaining undefined terms. In lieu of textual definitions, there can be elucidations when the term can not be rigorously defined. Note that textual definitions can be programmatically generated from logical definitions, if available (see [http://oro.open.ac.uk/21501/1/](http://oro.open.ac.uk/21501/1/)). In addition, [Dead Simple Ontology Design Patterns](https://github.com/INCATools/dead_simple_owl_design_patterns) (DOSDPs) can be used to generate both textual and logical definitions. DOSDPs are design specifications, written in YAML format, that specify structured text definitions and logical definitions for groups of ontology terms. These are widely used in many OBO Foundry ontologies, such as Mondo and uPheno. For some example patterns, see [Mondo patterns](https://mondo.readthedocs.io/en/latest/editors-guide/patterns/) and [uPheno patterns](https://github.com/obophenotype/upheno/tree/master/src/patterns/dosdp-patterns).
+
+Textual definitions should agree with logical definitions and vice versa. This is important for two reasons: (1) Reasoners classify terms solely based on logical definitions, while humans predominantly classify terms based on textual definitions, and mismatches between the two can cause unexpected misclassification; and (2) Curators could create incorrect annotations. An example of mismatched definitions:
+<pre>
+http://purl.obolibrary.org/obo/CL_0000017 spermatocyte
+
+Text definition: "A male germ cell that develops from spermatogonia."
+
+Logical definition (that mismatches the textual def): 
+= 'male germ cell' and ('capable of' some 'spermatocyte division')
+</pre>
+The logical definition could be revised to:
+<pre>
+Logical definition (that matches the textual def): 
+= ‘male germ cell’ and (‘develops from’ some 'spermatogonium')
+</pre>
+While both logical definitions can be used to define the class, one better fits with the textual definition than the other. 
+
+Note that it’s permissible to not to have a logical definition if the class is fuzzy or the axioms/relations can’t be composed equivalence axioms.
 
 Terms often benefit from examples of usage, as well as editor notes about edge cases and the history of the term, but these should be included as separate annotations and not in the definition.
 
@@ -35,9 +46,7 @@ Instances, such as organizations or geographical locations, can benefit from def
 Implementation
 --------------
 
-Logical definitions should agree with textual definitions. In fact, logical definitions can be programmatically used to generate textual definitions (see http://oro.open.ac.uk/21501/1/)
-
-Textual definitions should be identified using the annotation property: ‘definition’ http://purl.obolibrary.org/obo/IAO_0000115. The source of the definition should be provided using the annotation property ‘definition source’ http://purl.obolibrary.org/obo/IAO_0000119, or as an axiom annotation on the definition assertion.
+Textual definitions should be identified using the annotation property: ‘definition’ [http://purl.obolibrary.org/obo/IAO_0000115](http://purl.obolibrary.org/obo/IAO_0000115). The source of the definition should be provided using the annotation property ‘definition source’ [http://purl.obolibrary.org/obo/IAO_0000119](http://purl.obolibrary.org/obo/IAO_0000119), or as an axiom annotation on the definition assertion.
 
 An example of providing source in an axiom annotation:
 
@@ -67,10 +76,11 @@ Examples
 --------
 
 <i><b>Class</b></i>: reproductive shoot system
-<br>  <i><b>Term IRI</b></i>: http://purl.obolibrary.org/obo/PO_0025082
+<br>  <i><b>Term IRI</b></i>: [http://purl.obolibrary.org/obo/PO_0025082](http://purl.obolibrary.org/obo/PO_0025082)
 <br>  <i><b>Definition</b></i>: A shoot system (PO:0009006) in the sporophytic phase that has as part at least one sporangium (PO:0025094).
 <br>  <i><b>Logical definition</b></i>:
-```intersectionOf: shoot system
+```
+intersectionOf: shoot system
 intersectionOf: participates_in some reproductive shoot system development stage
 ```
 <i><b>Class</b></i>: chromatography device
@@ -90,33 +100,15 @@ Counter-Examples
 -   Circular/Self-referential definition
     “A chromatography device is a device that uses chromatography” when chromatography is not defined elsewhere
 
-Date Accepted
--------------
+Criteria for Review
+-------------------
+Each definition MUST be unique. Each entity MUST NOT have more than one textual definition (tagged using [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)). Textual definitions SHOULD be provided for most terms, and for top level terms especially.
 
--   Revised wording for principle tentatively accepted June 19, 2018.
+[This check is automatically validated.](checks/fp_006)
 
+## Feedback and Discussion
 
-History
--------
+To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%236+%22Definitions%22+%3CENTER+ISSUE+TITLE%3E).
 
-### Original Formulation
+To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%236+%22Definitions%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
 
-```
- The ontologies include textual definitions for all terms.
-
-Many biological and medical terms may be ambiguous, so terms should be
-defined so that their precise meaning within the context of a particular
-ontology is clear to a human reader.
-
-Textual definitions (SOP) for a substantial and representative fraction,
-plus equivalent formal definitions (for at least a substantial number of
-terms). For terms lacking textual definitions, there should be evidence
-of implementation of a strategy to provide definitions for all remaining
-undefined terms.
-
-Text definitions should be unique (i.e. no two terms should share a
-definition)
-```
-
-
-<Category:Principles> <Category:Accepted> <Category:Definitions>

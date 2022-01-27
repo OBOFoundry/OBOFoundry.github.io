@@ -8,6 +8,7 @@ build:
 contact:
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
+  github: jaiswalp
 description: A structured, controlled vocabulary which describes the treatments, growing conditions, and/or study types used in plant biology experiments.
 domain: environment
 homepage: http://planteome.org/
@@ -18,7 +19,7 @@ products:
 tracker: https://github.com/Planteome/plant-environment-ontology/issues
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 is_obsolete: true
 replaced_by: peco
 publications:
@@ -36,6 +37,7 @@ usages:
       - url: http://archive.gramene.org/db/ontology/search?id=EO:0007174
         description: Gramene annotations to cold temperature regiment
 activity_status: inactive
+repository: https://github.com/Planteome/plant-environment-ontology
 ---
 
 A structured, controlled vocabulary for the representation of plant environmental conditions.

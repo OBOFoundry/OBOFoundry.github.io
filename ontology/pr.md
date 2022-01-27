@@ -5,6 +5,7 @@ in_foundry_order: 1
 contact:
   email: dan5@georgetown.edu
   label: Darren Natale
+  github: nataled
 description: An ontological representation of protein-related entities
 domain: proteins
 homepage: http://proconsortium.org
@@ -29,7 +30,7 @@ review:
   date: 2010
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 depicted_by: https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png
 build:
   oort_args: --no-reasoner
@@ -43,20 +44,21 @@ publications:
 development:
   id_policy: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+PURLs
 usages:
- - user: https://github.com/UCDenver-ccp/CRAFT
-   description: Colorado Richly Annotated Full-Text (CRAFT) Corpus; PRO is used for entity tagging and annotation
-   examples:
-    - url: https://github.com/UCDenver-ccp/CRAFT/releases/tag/v4.0.1
-      description: Tagged entities (requires download)
- - user: http://www.obofoundry.org/ontology/cl.html
-   description: Cell Ontology is a structured controlled vocabulary for cell types in animals; PRO is used for cell type definitions
-   examples:
-    - url: http://purl.obolibrary.org/obo/CL_0001201
-      description: A B cell that is CD19-positive (uses the PRO term for non-species-specific CD19 molecule, PR:000001002)
+  - user: https://github.com/UCDenver-ccp/CRAFT
+    description: Colorado Richly Annotated Full-Text (CRAFT) Corpus; PRO is used for entity tagging and annotation
+    examples:
+      - url: https://github.com/UCDenver-ccp/CRAFT/releases/tag/v4.0.1
+        description: Tagged entities (requires download)
+  - user: http://www.obofoundry.org/ontology/cl.html
+    description: Cell Ontology is a structured controlled vocabulary for cell types in animals; PRO is used for cell type definitions
+    examples:
+      - url: http://purl.obolibrary.org/obo/CL_0001201
+        description: A B cell that is CD19-positive (uses the PRO term for non-species-specific CD19 molecule, PR:000001002)
 activity_status: active
+repository: https://github.com/PROconsortium/PRoteinOntology
+preferredPrefix: PR
 ---
 
 The PRotein Ontology (PRO) formally defines taxon-specific and taxon-neutral protein-related entities in three major areas: proteins related by evolution; proteins produced from a given gene; and protein-containing complexes.
 
 Licensing and use: The PRotein Ontology is licensed under CC BY 4.0. You are free to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material) for any purpose, even commercially. You must give appropriate credit (by using the original ontology IRI for the whole ontology or original term IRIs for individual terms), provide a link to the license, and indicate if any changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-

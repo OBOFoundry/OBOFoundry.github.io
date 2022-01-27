@@ -3,7 +3,7 @@ layout: ontology_detail
 id: omiabis
 title: Ontologized MIABIS
 contact:
-  email: mbrochhausen@gmail.com 
+  email: mbrochhausen@gmail.com
   label: Mathias Brochhausen
 description: An ontological version of MIABIS (Minimum Information About BIobank data Sharing)
 domain: health
@@ -13,8 +13,10 @@ products:
 tracker: https://github.com/OMIABIS/omiabis-dev/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY  
-activity_status: active
+  label: CC BY 3.0
+is_obsolete: true
+activity_status: inactive
+repository: https://github.com/OMIABIS/omiabis-dev
 ---
 
-OMIABIS is an open-source ontology of biobank administration. OMIABIS stands for Ontologized MIABIS where MIABIS is the Minimum Information About BIobank data Sharing.
+OMIABIS has been merged into OBIB (http://www.obofoundry.org/ontology/obib.html).

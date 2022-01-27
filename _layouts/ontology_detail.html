@@ -2,10 +2,10 @@
 layout: default
 ---
 {% include navbar.html %}
-<div class="content">    
+<div class="content">
 
 
-  <div>	
+  <div>
     <div class="page-header">
       <h1>
         {% if page.depicted_by %}
@@ -13,20 +13,24 @@ layout: default
         {% endif %}
         {{ page.title }}
         <small>{{ page.tagline }}</small>
-      </h1>      
+      </h1>
       <p>
         {{page.description}}
       </p>
-      {% if page.twitter %}
-      <iframe style="position: static; visibility: visible; width: 190px; height: 20px;" 
-              data-twttr-rendered="true" title="Twitter Follow Button" 
-              class="twitter-follow-button twitter-follow-button" 
-              src="http://platform.twitter.com/widgets/follow_button.a64cf823bcb784855b86e2970134bd2a.en.html#_=1438577078419&amp;dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name={{page.twitter}}&amp;show_count=true&amp;show_screen_name=true&amp;size=m" 
-              allowtransparency="true" scrolling="no" id="twitter-widget-0" frameborder="0">
-      </iframe>
+      {% if page.repository %}
+        {% if page.repository contains "https://github.com/" %}
+        <a href="{{ page.repository }}">
+          <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ page.repository | remove: 'https://github.com/' }}" />
+          <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/{{ page.repository | remove: 'https://github.com/' }}" />
+          <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/{{ page.repository | remove: 'https://github.com/' }}" />
+          <!--<img alt="GitHub issues" src="https://img.shields.io/github/issues/{{ page.repository | remove: 'https://github.com/' }}" />-->
+        </a>
+        {% endif %}
       {% endif %}
-      {% if page.google_plus %}
-      <a href="https://plus.google.com/{{page.google_plus}}">G+</a>
+      {% if page.twitter %}
+        <a href="https://twitter.com/{{ page.twitter }}">
+          <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/{{ page.twitter }}?style=social">
+        </a>
       {% endif %}
     </div>
 
@@ -44,14 +48,33 @@ layout: default
     {% endfor %}
   </div>
   {% endif %}
+  
+  {% if page.activity_status == "inactive" %}{% unless page.is_obsolete %}
+  <div>
+    <div class="alert alert-warning" role="alert">
+      This ontology is inactive. For more information see <a href="/docs/OntologyStatus.html">here</a>.
+    </div>
+  </div>
+  {% endunless %}{% endif %}
+  
+  {% if page.activity_status == "orphaned" %}{% unless page.is_obsolete %}
+  <div>
+    <div class="alert alert-warning" role="alert">
+      This ontology is orphaned. For more information see <a href="/docs/OntologyStatus.html">here</a>.
+    </div>
+  </div>
+  {% endunless %}{% endif %}
 
   {% if page.preferredPrefix %}
+  {% assign upperPrefix = page.preferredPrefix | upcase %}
+  {% if upperPrefix != page.preferredPrefix %}
   <div>
     <div class="alert alert-info" role="alert">
       This ontology uses a mixed-case prefix. Identifiers and URIs
-      should use "{{page.preferredPrefix}}"
+      should use: "{{ page.preferredPrefix }}".
     </div>
   </div>
+  {% endif %}
   {% endif %}
 
   <div class="col-md-12">
@@ -106,16 +129,55 @@ layout: default
             </tbody>
           </table>
         </div>
-        
+        {% if page.usages %}
+        <div>
+          <h2>Usages</h2>
+          {% for p in page.usages %}
+          <dl class="dl-horizontal">
+            <dt>User</dt> <dd><a href="{{p.user}}">{{p.user}}</a></dd>
+            <dt>Description</dt><dd>{{p.description}}</dd>
+            {% if p.type %}
+            <dt>Type</dt> <dd>{{p.type}}</dd>
+            {% endif %}
+            {% if p.seeAlso %}
+            <dt>See also</dt> <dd><a href="{{p.seeAlso}}">{{p.seeAlso}}</a></dd>
+            {% endif %}
+            {% if p.examples %}
+            <dt>Examples</dt>
+            <dd>
+              <ul style="padding-left: 20px">
+              {% for example in p.examples %}
+                <li><a href="{{example.url}}">{{example.description}}</a></li>
+              {% endfor %}
+              </ul>
+            </dd>
+            {% endif %}
+            {% if p.publications %}
+            <dt>Publications</dt>
+            <dd>
+              <ul style="padding-left: 20px">
+              {% for publication in p.publications %}
+                <li><a href="{{publication.id}}">{{publication.title}}</a></li>
+              {% endfor %}
+              </ul>
+            </dd>
+            {% endif %}
+          </dl>
+          {% endfor %}
+        </div>
+        {% endif %}
+
 
       </div>
+
+
       <div class="col-md-4">
         <dl class="dl-horizontal" style="dd { margin-left: 0 }">
 
           <dt>
             ID Space
-            <span data-toggle="tooltip" 
-                  title="ID prefix" 
+            <span data-toggle="tooltip"
+                  title="ID prefix"
                   html="true">
             </span>
           </dt>
@@ -148,25 +210,6 @@ layout: default
             {% endif %}
           </dd>
 
-					{% if page.review %}
-					<dt>Review Date</dt>
-					<dd>
-						{% if page.review.date %}
-						{{page.review.date}}
-						{% else %}
-						n/a
-						{% endif %}
-					</dd>
-					<dt>Review Document</dt>
-					<dd>
-						{% if page.review.document %}
-					  <a href="{{page.review.document.link}}">{{page.review.document.label}}</a>
-						{% else %}
-						n/a
-						{% endif %}
-					<dd>
-					{% endif %}
-					
           <dt>Homepage</dt>
           <dd>
             <a href="{{page.homepage}}">{{page.homepage}}</a>
@@ -185,7 +228,7 @@ layout: default
 
           <dt>Contact</dt>
           <dd>
-            <a href="mailto:{{page.contact.email}}">{{page.contact.label}}</a> 
+            <a href="mailto:{{page.contact.email}}">{{page.contact.label}}</a>
           </dd>
 
           <dt>Trackers</dt>
@@ -197,7 +240,7 @@ layout: default
           <dd>
             <a href="/domain/{{page.domain}}.html">{{page.domain}}</a>
           </dd>
-					
+
           {% if page.mailing_list %}
           <dt>Mail List</dt>
           <dd>
@@ -270,15 +313,19 @@ layout: default
           {% endfor %}
           {% endif %}
 
+          {% if page.review.date and page.review.document %}
+          <dt>OBO Review</dt>
+          <dd>{{page.review.date}} <a href="{{page.review.document.link}}">{{page.review.document.label}}</a><dd>
+          {% endif %}
 
         </dl>
-        
+
 
         <div class="btn-group" role="group" aria-label="Source">
           <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/{{page.id}}.md">
-            <button type="button" 
-                    data-toggle="tooltip" 
-                    title="See FAQ entry: How is metadata stored?" 
+            <button type="button"
+                    data-toggle="tooltip"
+                    title="See FAQ entry: How is metadata stored?"
                     html="true"
                     class="btn btn-default">
               View
@@ -286,18 +333,18 @@ layout: default
           </a>
           <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md">
 
-            <button type="button" 
-                    data-toggle="tooltip" 
-                    title="See FAQ entry: How I do edit my metadata?" 
+            <button type="button"
+                    data-toggle="tooltip"
+                    title="See FAQ entry: How I do edit my metadata?"
                     html="true"
                     class="btn btn-default">
               Edit</button>
           </a>
           <a href="https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/{{page.id}}.yml">
 
-            <button type="button" 
-                    data-toggle="tooltip" 
-                    title="See FAQ entry: How I do edit my PURL?" 
+            <button type="button"
+                    data-toggle="tooltip"
+                    title="See FAQ entry: How I do edit my PURL?"
                     html="true"
                     class="btn btn-default">
               PURL</button>
@@ -326,10 +373,10 @@ layout: default
     </div>
 
     {% if page.comments %}
-    <div>	
-      <div >    
+    <div>
+      <div >
         <h2>Comments Section</h2>
-        <p>Feel free to comment on the post but keep it clean and on topic.</p>	
+        <p>Feel free to comment on the post but keep it clean and on topic.</p>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
           /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -347,9 +394,5 @@ layout: default
       </div>
     </div>
     {% endif %}
-    
-    <!-- Twitter -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
   </div>
-  

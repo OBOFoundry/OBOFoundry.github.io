@@ -6,7 +6,7 @@ contact:
   label: Pantelis Topalis
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0
+  label: CC0 1.0
 description: An application ontology for use with miRNA databases.
 homepage: http://code.google.com/p/mirna-ontology/
 products:

@@ -16,7 +16,7 @@ products:
   - id: bfo.obo
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 title: Basic Formal Ontology
 review:
   date: 2016
@@ -30,10 +30,12 @@ browsers:
     title: BioPortal Browser
     url: http://bioportal.bioontology.org/ontologies/BFO?p=classes
 usages:
- - user: http://obofoundry.org
-   type: owl_import
-   description: BFO is imported by multiple OBO ontologies to standardize upper level structure
+  - user: http://obofoundry.org
+    type: owl_import
+    description: BFO is imported by multiple OBO ontologies to standardize upper level structure
 activity_status: active
+repository: https://github.com/BFO-ontology/BFO
+preferredPrefix: BFO
 ---
 
 BFO grows out of a philosophical orientation which overlaps with that of DOLCE and SUMO. Unlike these, however, it is narrowly focused on the task of providing a genuine upper ontology which can be used in support of domain ontologies developed for scientific research, as for example in biomedicine within the framework of the OBO Foundry. Thus BFO does not contain physical, chemical, biological or other terms which would properly fall within the special sciences domains. BFO is the upper level ontology upon which OBO Foundry ontologies are built.
@@ -41,5 +43,3 @@ BFO grows out of a philosophical orientation which overlaps with that of DOLCE a
 - [BFO homepage](http://ifomis.org/bfo/)
 - [BFO mailing list](https://groups.google.com/forum/#!forum/bfo-discuss)
 - BFO is released under [CC-by 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/)
-
-

@@ -10,7 +10,7 @@ domain: phenotype
 homepage: https://github.com/flora-phenotype-ontology/flopoontology
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 products:
   - id: flopo.owl
 build:
@@ -22,4 +22,6 @@ taxon:
 title: Flora Phenotype Ontology
 tracker: https://github.com/flora-phenotype-ontology/flopoontology/issues
 activity_status: active
+repository: https://github.com/flora-phenotype-ontology/flopoontology
+preferredPrefix: FLOPO
 ---

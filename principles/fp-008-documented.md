@@ -13,10 +13,11 @@ Summary
 -------
 The owners of the ontology should strive to provide as much documentation as possible. The documentation should detail the different processes specific to an ontology life cycle and target various audiences (users or developers).
 
-Purpose: Central to the issue of ontology documentation is ensuring transparency and traceability of artefact development. For each of the development steps, clear procedures should be made available. Documentation availability will be used to assess the quality of the resource. The following itemized list provides a core checklist, distinguishing  general ontology documentation (general information about the resource) and local ontology documentation (documentation at artefact level itself and representational unit level (class and relations)). Documentation assessment with the purpose of assessing Ontology soundness, will cover updates and revision to the documentation. As ontology evolve, so should the documentation, for example by including a release documentation file.
-
 [This check is automatically validated.](checks/fp_008)
 
+Purpose
+-------
+Central to the issue of ontology documentation is ensuring transparency and traceability of artefact development. For each of the development steps, clear procedures should be made available. Documentation availability will be used to assess the quality of the resource. The following itemized list provides a core checklist, distinguishing  general ontology documentation (general information about the resource) and local ontology documentation (documentation at artefact level itself and representational unit level (class and relations)). Documentation assessment with the purpose of assessing Ontology soundness, will cover updates and revision to the documentation. As ontology evolve, so should the documentation, for example by including a release documentation file.
 
 Examples
 --------
@@ -75,24 +76,5 @@ Issues To Be Addressed (partial list):
 
 the ontology is well-documented (e.g. in a published paper describing the ontology or in manuals for developers and users)
 
-History
--------
-
-### Original Formulation
-
-```
- The ontology is well documented. 
-```
-
-
-Counter-Examples
-----------------
-pointing to a publication describing the ontology
-
-
-Date Accepted
--------------
-
--   original principle
 
 <Category:Principles> <Category:Accepted>

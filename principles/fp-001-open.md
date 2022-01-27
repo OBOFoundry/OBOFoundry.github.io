@@ -8,17 +8,15 @@ title: Open (principle 1)
 
 The ontology MUST be openly available to be used by all without any constraint other than (a) its origin must be acknowledged and (b) it is not to be altered and subsequently redistributed in altered form under the original name or with the same identifiers.
 
-[This check is automatically validated.](checks/fp_001)
-
 ## Purpose
 
 OBO Foundry ontologies are resources for the entire biological and biomedical community. Furthermore, in order to realize the OBO Foundry vision of a suite of interoperable ontologies, ontology developers must be free to re-use terms from any OBO Foundry ontology. For these reasons, the ontologies must be available to all without any constraint on their use or redistribution. Nonetheless, it is proper that their original source is always credited and that after any external alterations, ontologies must never be redistributed under the same name or with the same identifiers.
 
-## Recommendations
+## Recommendations and Requirements
 
 ### For ontology providers
 
-OBO Foundry Ontologies MUST EITHER be released under a [Creative Commons](https://creativecommons.org/) [CC-BY license version 3.0](https://creativecommons.org/licenses/by/3.0/) or later, OR released into the public domain under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) (which is not a license). Regardless of which is chosen, it should be clearly stated in the ontology file.
+OBO Foundry Ontologies MUST EITHER be released under a [Creative Commons Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/) license or later (e.g. [Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), OR released into the public domain under [Creative Commons CC0 1.0 Public Domain Dedication (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/). The license MUST be clearly stated using the http://purl.org/dc/terms/license property followed by the URL representing the license (e.g. https://creativecommons.org/licenses/by/3.0/) in the ontology file ([OWL example](https://github.com/INCATools/ontology-development-kit/blob/master/docs/License.md)).
 
 Note: CC-BY licenses allow others to distribute, remix, tweak, and build upon the work, even commercially, as long as they credit the creators for the original creation. CC0 specifies that the creators of an ontology waive, to the extent that they legally can be, all rights and place the ontology in the public domain. It does not prevent them from requesting that the ontology be properly credited and cited, but prevents any legal recourse if it is not credited. Many pros and cons of CC-BY versus CC0 are laid out in [this discussion](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/285). It is important to note that one can move from CC-BY to CC0 but not the other way around.
 
@@ -31,10 +29,6 @@ Note: CC-BY licenses allow others to distribute, remix, tweak, and build upon th
 3. If an individual term is reused without change to the definition, the original term IRI should be used. If the definition of a term (either text or logical) is changed, the original term IRI should not be reused. Suggestions for changes or improvements to term definitions should be submitted to the appropriate ontology issue tracker.
 
 4. Regardless of which license an ontology uses, we strongly request and recommend that any reuse of an ontology attributes the source in accordance with scientific norms and the [OBO Citation and Attribution Policy](http://www.obofoundry.org/docs/Citation).
-
-### Remark
-
-In general, copyright legislation says that facts that are not copyrightable are excluded from copyright protection. Therefore, some ontology content may not be copyrightable.
 
 ## Implementation
 
@@ -152,19 +146,23 @@ material</obo:IAO_0000111>
 </owl:Class>
 ```
 
-## Counter-examples
+## Counter-Examples
 
 - An ontology with no license statement is by default subject to the most restrictive copyright laws for those parts of the ontology that are copyrightable, and therefore is not useful within the OBO Foundry.
 - CC BY-ND allows for redistribution, commercial and non-commercial, as long as it is passed along unchanged and in whole, with credit to the creators. This license is too restrictive for the OBO Foundry, because it requires that the ontology be re-used in its entirety, which prevents the re-use of individual terms.
 
-## External documentation
-
-Discussion of licensing on OBO Foundry Operations Committee [Issue 103](https://github.com/OBOFoundry/Operations-Committee/issues/103) About Creative Commons licenses.
-
-## Criteria for review
+## Criteria for Review
 
 To pass review, the ontology must have a license that is equivalent to or less restrictive than CC-BY, specified as described in the text and examples above.
 
-## Original Formulation
+[This check is automatically validated.](checks/fp_001) The automatic check fully covers the requirements for this principle.
 
-See the [wiki history](http://wiki.obofoundry.org/wiki/index.php?title=FP_001_open&action=history) for older formulations.
+## Feedback and Discussion
+
+To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%231+%22Open%22+%3CENTER+ISSUE+TITLE%3E).
+
+To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%231+%22Open%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
+
+See also [this discussion of licensing](https://github.com/OBOFoundry/Operations-Committee/issues/103) by the OBO Foundry Operations Committee focusing on Creative Commons licenses.
+
+

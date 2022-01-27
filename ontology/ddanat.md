@@ -11,7 +11,7 @@ homepage: http://dictybase.org/
 twitter: dictybase
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0 Universal
+  label: CC0 1.0
 products:
   - id: ddanat.owl
   - id: ddanat.obo
@@ -25,6 +25,8 @@ build:
   insert_ontology_id: true
 tracker: https://github.com/dictyBase/migration-data/issues
 activity_status: active
+repository: https://github.com/dictyBase/migration-data
+preferredPrefix: DDANAT
 ---
 
 A structured controlled vocabulary of the anatomy of the slime-mould <i>Dictyostelium discoideum</i>.

@@ -4,16 +4,19 @@ id: ogg
 contact:
   email: yongqunh@med.umich.edu
   label: Yongqun Oliver He
+  github: yongqunh
 description: A formal ontology of genes and genomes of biological organisms.
 homepage: https://bitbucket.org/hegroup/ogg
+repository: https://bitbucket.org/hegroup/ogg
 products:
   - id: ogg.owl
 title: The Ontology of Genes and Genomes
 tracker: https://bitbucket.org/hegroup/ogg/issues/
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 activity_status: active
+preferredPrefix: OGG
 ---
 
 # Summary
@@ -34,4 +37,4 @@ Note that the source ontology is a merged OWL file.
 # Browsing
 
 * Default browsing in Ontobee: [http://www.ontobee.org/ontology/ogg](http://www.ontobee.org/ontology/ogg)
-* Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/OGG](https://bioportal.bioontology.org/ontologies/OGG)   
+* Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/OGG](https://bioportal.bioontology.org/ontologies/OGG)

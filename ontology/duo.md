@@ -18,13 +18,15 @@ homepage: https://github.com/EBISPOT/DUO
 products:
   - id: duo.owl
 dependencies:
- - id: iao
- - id: bfo
+  - id: iao
+  - id: bfo
 tracker: https://github.com/EBISPOT/DUO/issues
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  url: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 activity_status: active
+repository: https://github.com/EBISPOT/DUO
+preferredPrefix: DUO
 ---
 
 DUO allows to semantically tag datasets with restriction about their usage, making them discoverable automatically based on the authorization level of users, or intended usage.

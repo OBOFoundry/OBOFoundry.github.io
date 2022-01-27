@@ -6,7 +6,7 @@ contact:
   label: Colin Batchelor
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 domain: molecular structure
 homepage: https://github.com/bgsu-rna/rnao
 browsers:
@@ -24,5 +24,5 @@ build:
   method: vcs
 tracker: https://github.com/BGSU-RNA/rnao/issues
 activity_status: inactive
+repository: https://github.com/BGSU-RNA/rnao
 ---
-

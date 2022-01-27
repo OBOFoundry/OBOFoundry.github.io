@@ -9,13 +9,15 @@ tracker: https://github.com/ohmi-ontology/ohmi/issues
 contact:
   email: yongqunh@med.umich.edu
   label: Yongqun Oliver He
+  github: yongqunh
 products:
   - id: ohmi.owl
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 activity_status: active
+repository: https://github.com/ohmi-ontology/ohmi
+preferredPrefix: OHMI
 ---
 
 The Ontology of Host-Microbiome Interactions aims to ontologically represent and standardize various entities and relations related to microbiomes, microbiome host organisms (e.g., human and mouse), and the interactions between the hosts and microbiomes at different conditions.
-

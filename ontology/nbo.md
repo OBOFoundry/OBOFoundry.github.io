@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: nbo
 contact:
-  email: g.gkoutos@bham.ac.uk 
+  email: g.gkoutos@bham.ac.uk
   label: George Gkoutos
   github: gkoutos
 description: An ontology of human and animal behaviours and behavioural phenotypes
@@ -13,7 +13,7 @@ products:
 title: Neuro Behavior Ontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 browsers:
   - label: BioPortal
     title: BioPortal Ontology Browser
@@ -23,5 +23,6 @@ build:
   method: owl2obo
 tracker: https://github.com/obo-behavior/behavior-ontology/issues
 activity_status: active
+repository: https://github.com/obo-behavior/behavior-ontology
+preferredPrefix: NBO
 ---
-

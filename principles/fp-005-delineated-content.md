@@ -13,59 +13,17 @@ Summary
 -------
 The scope of an ontology is the extent of the domain or subject matter it intends to cover. The ontology must have a clearly specified scope and content that adheres to that scope.
 
-[This check is automatically validated.](checks/fp_005)
-
 Purpose
 -------
 An in-scope ontology prevents overlaps between ontologies (duplication of terms), facilitates user searches for specific content, and enables quick selection of ontologies of interest, yet still allows for new terms to be created via combination of existing terms (cross-products).
 
-Implementation
--------
-The domain (scope) covered by the ontology should be clearly stated. The statement should be brief and free of jargon; a few sentences should suffice. The content of the ontology should stay within the confines of the stated scope.
-
-Recommendations
+Recommendations and Requirements
 -------
 Ideally the scope should be fairly narrow. Required terms that are out of scope should be imported from the appropriate ontology.
 
-
-
-Issues To Be Addressed (partial list):
+Implementation
 -------
-1.Would like a metadata tag in the ontology itself for this. TBD.
-
-2.Possible need for controlled vocabulary for scope/domain (for example: Anatomy, Upper Level Ontology, Disease, Phenotype, Applicable taxonomy)
-
-
-Date Accepted
--------------
-
--   original principle
-
-History
--------
-
-### Original Formulation
-
-```
- The ontology has a clearly specified and clearly
-delineated content.
-
-The ontology must be orthogonal to other ontologies already lodged
-within OBO.
-
-The major reason for this principle is to allow two different
-ontologies, for example anatomy and process, to be combined through
-additional relationships. These relationships could then be used to
-constrain when terms could be jointly applied to describe complementary
-(but distinguishable) perspectives on the same biological or medical
-entity.
-
-As a corollary to this, we would strive for community acceptance of a
-single ontology for one domain, rather than encouraging rivalry between
-ontologies.
-
-
-```
+The domain (scope) covered by the ontology should be clearly stated. The statement should be brief and free of jargon; a few sentences should suffice. The content of the ontology should stay within the confines of the stated scope.
 
 Examples
 --------
@@ -73,4 +31,21 @@ Examples
 Counter-Examples
 ----------------
 
-<Category:Principles> <Category:Accepted>
+Issues To Be Addressed (partial list):
+-------
+1.Would like a metadata tag in the ontology itself for this. TBD.
+
+2.Possible need for controlled vocabulary for scope/domain (for example: Anatomy, Upper Level Ontology, Disease, Phenotype, Applicable taxonomy)
+
+## Criteria for Review
+A scope (‘domain’) MUST be declared in the registry data, and terms from the ontology have to fall within that scope.
+
+[This check is automatically validated.](checks/fp_005)
+
+## Feedback and Discussion
+
+To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%235+%22Scope%22+%3CENTER+ISSUE+TITLE%3E).
+
+To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%235+%22Scope%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
+
+

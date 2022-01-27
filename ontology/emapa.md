@@ -7,7 +7,7 @@ contact:
   github: tfhayamizu
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 description: "An ontology for mouse anatomy covering embryonic development and postnatal stages."
 domain: anatomy
 homepage: http://www.informatics.jax.org/expression.shtml
@@ -19,18 +19,18 @@ taxon:
   id: NCBITaxon:10088
   label: Mus
 title: Mouse Developmental Anatomy Ontology
-tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
 build:
   notes: new url soon
   source_url: ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAPA.obo
   method: obo2owl
 usages:
- - user: http://www.informatics.jax.org/expression.shtml
-   seeAlso: https://www.biosharing.org/biodbcore-000659
-   description: GXD
+  - user: http://www.informatics.jax.org/expression.shtml
+    seeAlso: https://www.biosharing.org/biodbcore-000659
+    description: GXD
 activity_status: active
+repository: https://github.com/obophenotype/mouse-anatomy-ontology
+preferredPrefix: EMAPA
 ---
-
 
 ## BACKGROUND
 
@@ -48,7 +48,7 @@ An extensive ontology of mouse anatomical terms, entitled EMAPA, has been develo
 
  * All instances for a given anatomical entity are presented as a single term, together with the first and last (i.e. start and end) Theiler stage at which the entity is considered to be present in the developing embryo.
  * Terms have unique names, with compound names constructed using standardized nomenclature conventions, and alternative names associated as synonyms.
- * Anatomical entities are presented in a hierarchical format that allows multiple parentage for a given entity (i.e. as a directed acyclic graph). 
+ * Anatomical entities are presented in a hierarchical format that allows multiple parentage for a given entity (i.e. as a directed acyclic graph).
  * Subsumption classification (“is_a”) as well as partonomic and other types of relationships (e.g. "develops_from") can now be represented.
  * The ontology has been extended through newborn (TS27) and postnatal (TS28) stages of mouse anatomy, with the latter substantially augmented by terma and relationships from the adult mouse anatomy (MA) ontology.[5]
  * The urinary and reproductive systems have been extensively revised and refined by curators from the GenitoUrinary Development Molecular Anatomy Project (GUDMAP).[6]

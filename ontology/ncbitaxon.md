@@ -32,6 +32,8 @@ products:
     title: Main release
   - id: ncbitaxon.obo
     title: OBO Format version of Main release
+  - id: ncbitaxon.json
+    title: OBOGraphs JSON version of Main release
   - id: ncbitaxon/subsets/taxslim.owl
     title: taxslim
     page: https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md
@@ -40,8 +42,9 @@ products:
     page: https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0 Universal
+  label: CC0 1.0
 activity_status: active
+repository: https://github.com/obophenotype/ncbitaxon
 ---
 
 The NCBITaxon ontology is an automatic translation of the [NCBI taxonomy database](http://www.ncbi.nlm.nih.gov/taxonomy) into obo/owl.
@@ -131,4 +134,3 @@ The latter is a fairly trivial translation of the former. If you are in any way 
  * Federhen, Scott. **The NCBI taxonomy database.** *Nucleic acids research 40.D1 (2012): D136-D143.* [http://nar.oxfordjournals.org/content/40/D1/D136.short](http://nar.oxfordjournals.org/content/40/D1/D136.short)
 
 If you specifically wish to cite the OBO/OWL translation, use the URL for this page
-

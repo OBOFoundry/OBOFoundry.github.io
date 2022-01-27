@@ -4,9 +4,10 @@ id: spd
 contact:
   email: ramirez@macn.gov.ar
   label: Martin Ramirez
+  github: martinjramirez
 license:
   url: https://creativecommons.org/licenses/by/3.0/
-  label: CC-BY 3.0
+  label: CC BY 3.0
 description: An ontology for spider comparative biology including anatomical parts (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web, borrow).
 domain: anatomy
 homepage: http://research.amnh.org/atol/files/
@@ -22,6 +23,8 @@ build:
   insert_ontology_id: true
 tracker: https://github.com/obophenotype/spider-ontology/issues
 activity_status: active
+repository: https://github.com/obophenotype/spider-ontology
+preferredPrefix: SPD
 ---
 
 An ontology for spider comparative biology including anatomical parts (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web, borrow).

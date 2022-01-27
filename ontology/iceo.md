@@ -8,12 +8,15 @@ tracker: https://github.com/ontoice/ICEO/issues
 contact:
   email: liumeng94@sjtu.edu.cn
   label: Meng LIU
+  github: Lemon-Liu
 products:
   - id: iceo.owl
 license:
   url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY
+  label: CC BY 4.0
 activity_status: active
+repository: https://github.com/ontoice/ICEO
+preferredPrefix: ICEO
 ---
 
 # ICEO: Integrative and Conjugative Element Ontology
@@ -28,4 +31,4 @@ The integrative and conjugative elements (ICEs) are modular mobile genetic eleme
 Meng Liu, Hong-Yu Ou and Yongqun He. ICEO: a biological ontology for representing and analyzing the bacterial integrative and conjugative element. The 10th International Conference on Biomedical Ontology (ICBO-2019), July 30-August 2, 2019, at Buffalo, NY, USA. Full length paper.   
 
 
-More information can be found at http://obofoundry.org/ontology/iceo
+

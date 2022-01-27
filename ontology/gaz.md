@@ -19,7 +19,7 @@ tracker: https://github.com/EnvironmentOntology/gaz/issues
 mailing_list: "https://groups.google.com/forum/#!forum/obo-gazetteer"
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0 Universal
-activity_status: active
+  label: CC0 1.0
+activity_status: inactive
+repository: https://github.com/EnvironmentOntology/gaz
 ---
-

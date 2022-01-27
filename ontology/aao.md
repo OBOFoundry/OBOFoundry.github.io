@@ -3,8 +3,8 @@ layout: ontology_detail
 id: aao
 title: Amphibian gross anatomy
 contact:
-  email: David Blackburn
-  label: david.c.blackburn@gmail.com
+  email: david.c.blackburn@gmail.com
+  label: David Blackburn
 taxon:
   id: NCBITaxon:8292
   label: Amphibia

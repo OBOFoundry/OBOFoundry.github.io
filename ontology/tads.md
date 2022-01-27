@@ -6,7 +6,7 @@ contact:
   label: Daniel Sonenshine
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 description: "The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>"
 domain: anatomy
 homepage: https://www.vectorbase.org/ontology-browser
@@ -18,6 +18,7 @@ taxon:
   label: Ixodidae
 title: Tick Anatomy Ontology
 activity_status: inactive
+repository: https://github.com/VEuPathDB-ontology/TADS
 ---
 
 The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>

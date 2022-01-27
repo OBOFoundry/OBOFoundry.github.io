@@ -137,7 +137,8 @@ tmp/unsorted-ontologies.yml: $(ONTS) | tmp
 extract-metadata: $(ONTS)
 	./util/extract-metadata.py validate $^
 
-
+prettify: $(ONTS)
+	./util/extract-metadata.py prettify $^
 ### OBO Dashboard
 
 # This is the Jenkins job

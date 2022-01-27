@@ -3,18 +3,24 @@ layout: ontology_detail
 id: ico
 title: Informed Consent Ontology
 description: An ontology of clinical informed consents
+domain: informed consent
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 contact:
   email: yongqunh@med.umich.edu
   label: Yongqun Oliver He
   github: yongqunh
 homepage: https://github.com/ICO-ontology/ICO
-tracker: https://github.com/ICO-ontology/ICO/issues 
+tracker: https://github.com/ICO-ontology/ICO/issues
 products:
   - id: ico.owl
+usages:
+  - user: http://kpmp.org
+    description: tracking informed consent in the kidney precision medicine project that has over 20 institutes involved.
 activity_status: active
+repository: https://github.com/ICO-ontology/ICO
+preferredPrefix: ICO
 ---
 
 # Summary

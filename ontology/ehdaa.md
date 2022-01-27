@@ -3,12 +3,12 @@ layout: ontology_detail
 id: ehdaa
 title: Human developmental anatomy, abstract version
 contact:
-  email: Jonathan Bard
-  label: J.Bard@ed.ac.uk
+  email: J.Bard@ed.ac.uk
+  label: Jonathan Bard
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
-homepage: 
+homepage:
 is_obsolete: true
 replaced_by: ehdaa2
 activity_status: inactive

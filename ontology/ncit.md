@@ -5,10 +5,10 @@ title: NCI Thesaurus OBO Edition
 contact:
   email: haendel@ohsu.edu
   label: Melissa Haendel
-  contact: mellybelly
+  github: mellybelly
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 homepage: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
 tracker: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
 description: NCI Thesaurus (NCIt)is a reference terminology that includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities. The NCIt OBO Edition aims to increase integration of the NCIt with OBO Library ontologies. NCIt OBO Edition releases should be considered experimental.
@@ -21,12 +21,15 @@ products:
   - id: ncit/ncit-plus.owl
     title: NCIt Plus
     description: "This version replaces NCIt terms with direct references to terms from other domain-specific OBO Library ontologies (e.g. cell types, cellular components, anatomy), supporting cross-ontology reasoning. The current release incorporates CL (cell types) and Uberon (anatomy)."
-    mireots_from: cl
-    mireots_from: uberon
+    mireots_from:
+      - cl
+      - uberon
   - id: ncit/neoplasm-core.owl
     title: NCIt Plus Neoplasm Core
     description: "This is a subset extracted from NCIt Plus, based on the [NCIt Neoplasm Core value set](https://evs.nci.nih.gov/ftp1/NCI_Thesaurus/Neoplasm/About_Core.html) as a starting point."
 activity_status: active
+repository: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
+preferredPrefix: NCIT
 ---
 
 The NCI Thesaurus is a reference terminology that includes broad
@@ -50,10 +53,10 @@ in the caCORE as the semantic base for metadata and objects that form
 the infrastructure upon which the NCICB portals are built (see <a
 href="http://ncicb.nci.nih.gov/">http://ncicb.nci.nih.gov</a>).
 
-The NCI Thesaurus is released under the Creative Commons Attribution 4.0 
-International license (CC BY 4.0). The NCI Thesaurus is produced by the 
-Enterprise Vocabulary Services group of the Center for Biomedical 
+The NCI Thesaurus is released under the Creative Commons Attribution 4.0
+International license (CC BY 4.0). The NCI Thesaurus is produced by the
+Enterprise Vocabulary Services group of the Center for Biomedical
 Informatics and Information Technology, National Cancer Institute, Maryland,
-USA. The name "NCI Thesaurus" is trademarked. Only the NCI Thesaurus 
+USA. The name "NCI Thesaurus" is trademarked. Only the NCI Thesaurus
 published by the NCI can be released under this name (see
 ftp://ftp1.nci.nih.gov/pub/cacore/EVS/NCI_Thesaurus/ThesaurusTermsofUse.htm).

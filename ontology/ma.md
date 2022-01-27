@@ -7,7 +7,7 @@ contact:
   github: tfhayamizu
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 description: A structured controlled vocabulary of the adult anatomy of the mouse (Mus).
 domain: anatomy
 homepage: https://github.com/obophenotype/mouse-anatomy-ontology
@@ -26,10 +26,12 @@ build:
   insert_ontology_id: true
 tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
 usages:
- - user: http://www.informatics.jax.org/expression.shtml
-   seeAlso: https://www.biosharing.org/biodbcore-000659
-   description: GXD
+  - user: http://www.informatics.jax.org/expression.shtml
+    seeAlso: https://www.biosharing.org/biodbcore-000659
+    description: GXD
 activity_status: active
+repository: https://github.com/obophenotype/mouse-anatomy-ontology
+preferredPrefix: MA
 ---
 
 A structured controlled vocabulary of the adult anatomy of the mouse (Mus).

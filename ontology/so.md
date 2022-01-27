@@ -4,15 +4,15 @@ id: so
 contact:
   email: keilbeck@genetics.utah.edu
   label: Karen Eilbeck
+  github: keilbeck
 license:
   url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
+  label: CC BY 4.0
 description: A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.
 domain: biological sequence
 homepage: https://github.com/The-Sequence-Ontology/SO-Ontologies
 mailing_list: https://sourceforge.net/p/song/mailman/song-devel/
-page:
-  https://en.wikipedia.org/wiki/Sequence_Ontology
+page: https://en.wikipedia.org/wiki/Sequence_Ontology
 products:
   - id: so.owl
   - id: so.obo
@@ -29,6 +29,8 @@ publications:
     title: Evolution of the Sequence Ontology terms and relationships.
 depicted_by: http://sequenceontology.org/img/so_icon.png
 activity_status: active
+repository: https://github.com/The-Sequence-Ontology/SO-Ontologies
+preferredPrefix: SO
 ---
 
 SO is a collaborative ontology project for the definition of sequence features used in biological sequence annotation. SO was initially developed by the Gene Ontology Consortium. Contributors to SO include the GMOD community, model organism database groups such as WormBase, FlyBase, Mouse Genome Informatics group, and institutes such as the Sanger Institute and the EBI. Input to SO is welcomed from the sequence annotation community. SO is also part of the Open Biomedical Ontologies library. Our aim is to develop an ontology suitable for describing the features of biological sequences. For questions, please send mail to the SO developers mailing list. For new term suggestions, please use the [Term Tracker](https://github.com/The-Sequence-Ontology/SO-Ontologies/issues).
@@ -42,6 +44,3 @@ The Sequence Ontologies are provided as a resource to the biological community. 
  * To provide a structured controlled vocabulary for the description of mutations at both the sequence and more gross level in the context of genomic databases.
 
 The Sequence Ontology is part of OBO. It has close links to other ontology projects such as the RNAO consortium, and the Biosapiens polypeptide features.
-
-
-

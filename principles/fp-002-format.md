@@ -8,21 +8,19 @@ title: Common Format (principle 2)
 
 The ontology is made available in a common formal language in an accepted concrete syntax.
 
-[This check is automatically validated.](checks/fp_002)
-
 ## Purpose
 
 A common format allows the maximum number of people to access and reuse an ontology.
 
+## Recommendations and Requirements
+
+All ontologies MUST have at least one OWL product whose name corresponds to the registered prefix (e.g., 'GO' --> go.owl, 'OBI' --> obi.owl). Thus the ontology whose IRI is http://purl.obolibrary.org/obo/ro.owl (known to the OBO Foundry as 'RO'), must have at least the product ro.owl. Developers are free to use whatever combination of technologies and formats is appropriate for development. However, the official OWL PURL for the ontology must resolve to a syntactically valid OWL file using the [RDF-XML](https://www.w3.org/TR/rdf-syntax-grammar/) syntax.
+
+Developers can OPTIONALLY produce ontologies in other formats. These are conventionally the same IRI as the owl, but with .owl changed to the relevant extension (e.g., '.obo', '.json'). Note that such products are not listed by default. If you produce an additional format product, you should register it under the 'products' field in the appropriate metadata file found in this [folder](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology).
+
 ## Implementation
 
-### Recommendations
-
-We make a distinction between how an ontology is developed and how it is presented for release. Developers are free to use whatever combination of technologies and formats is appropriate for development. However, the official owl PURL for the ontology must resolve to a syntactically valid OWL file in an [RDF](https://www.w3.org/TR/rdf11-concepts/) in RDF-XML syntax.
-
-Note: some groups publish an .obo version, and the OBO Foundry pipeline takes care of making the valid .owl file. See the FAQ for details. You may also submit the ontology for review as OBO, see 'criteria for review' below.
-
-Note also that previously we recommended that ontologies may be available in Manchester syntax or OWL-XML, but we have revised this in order to make the official OWL release consumable by a wider variety of tools.
+ROBOT offers functionality to convert a variety of formats, including OBO, to RDF/XML. Protégé allows you to save ontologies in RDF/XML, as well. The [Ontology 101 Tutorial](https://ontology101tutorial.readthedocs.io/en/latest/StartingProtege.html) has directions on starting and saving in Protégé.
 
 ### Examples
 
@@ -32,23 +30,19 @@ Note also that previously we recommended that ontologies may be available in Man
 
 - [OBI](http://obi-ontology.org) is maintained as an OWL ontology.
 
-### Counter-examples
+### Counter-Examples
 
 An ontology that is in Frames format, OWL/XML, or OWL Manchester Syntax.
 
-## Criteria for review
+## Criteria for Review
 
-The ontology is available in at least one of the following formats:
+The ontology MUST be available in RDF/XML format.
 
-- OBO Format
-- OWL or OWL2 RDF/XML
+[This check is automatically validated.](checks/fp_002) The automatic check fully covers the requirements for this principle.
 
-## History
+## Feedback and Discussion
 
-Revised wording for principle accepted March 3, 2015.
+To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%232+%22Format%22+%3CENTER+ISSUE+TITLE%3E).
 
-### Original formulation
+To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%232+%22Format%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
 
-The ontology is in, or can be expressed in, a common shared syntax. This may be either the OBO syntax, extensions of this syntax, or OWL.
-
-The reason for this is that the same tools can then be usefully applied. This facilitates shared software implementations. This criterion is not met in all of the ontologies currently listed, but we are working with the ontology developers to have them available in a common OBO syntax.

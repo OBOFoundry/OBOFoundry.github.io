@@ -5,6 +5,7 @@ preferredPrefix: FBcv
 contact:
   email: cp390@cam.ac.uk
   label: Clare Pilgrim
+  github: Clare72
 description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
 domain: phenotype
 homepage: http://purl.obolibrary.org/obo/fbcv
@@ -18,7 +19,7 @@ taxon:
 title: Drosophila Phenotype Ontology
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 build:
   checkout: git clone https://github.com/FlyBase/drosophila-phenotype-ontolog.git
   system: git
@@ -34,10 +35,11 @@ publications:
 usages:
   - user: http://flybase.org
     description: FlyBase uses dpo for phenotype data annotation in Drosophila
-    example:
+    examples:
       - url: "http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBcv:0002030"
         description: "alleles and constructs annotated to pupal lethal in FlyBase"
 activity_status: active
+repository: https://github.com/FlyBase/drosophila-phenotype-ontology
 ---
 
 An ontology of commonly encountered and/or high level Drosophila phenotypes.  It has significant formalisation - utilising terms from GO, CL, PATO and the Drosophila anatomy ontology.  It has been used by FlyBase for > 159000 annotations of phenotype.

@@ -2,11 +2,12 @@
 layout: ontology_detail
 id: cmo
 contact:
-  email: shimoyama@mcw.edu
-  label: Mary Shimoyama
+  email: jrsmith@mcw.edu
+  label: Jennifer Smith
+  github: jrsjrs
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 description: Morphological and physiological measurement records generated from clinical and model organism research and health programs.
 domain: clinical
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
@@ -29,6 +30,8 @@ browsers:
     title: RGD Ontology Browser
     url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=CMO:0000000
 activity_status: active
+repository: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology
+preferredPrefix: CMO
 ---
 
 <img src="http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif"/>

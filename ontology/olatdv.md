@@ -1,6 +1,7 @@
 ---
 layout: ontology_detail
 id: olatdv
+preferredPrefix: OlatDv
 title: Medaka Developmental Stages
 build:
   source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.obo
@@ -13,15 +14,12 @@ products:
   - id: olatdv.obo
   - id: olatdv.owl
 contact:
-  label: bgee
-  email: bgee@sib.swiss
+  label: Frédéric Bastian
+  email: frederic.bastian@unil.ch
+  github: fbastian
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 activity_status: active
+repository: https://github.com/obophenotype/developmental-stage-ontologies
 ---
-
-
-
-
-

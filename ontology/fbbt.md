@@ -5,9 +5,11 @@ preferredPrefix: FBbt
 contact:
   email: cp390@cam.ac.uk
   label: Clare Pilgrim
+  github: Clare72
 description: An ontology representing the gross anatomy of Drosophila melanogaster.
 domain: Drosophilid anatomy
 homepage: http://purl.obolibrary.org/obo/fbbt
+repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
 products:
   - id: fbbt.owl
   - id: fbbt.obo
@@ -20,7 +22,7 @@ taxon:
 title: Drosophila gross anatomy
 license:
   url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  label: CC BY 3.0
 build:
   checkout: git clone https://github.com/FlyBase/drosophila-anatomy-developmental-ontology.git
   system: git
@@ -48,15 +50,14 @@ publications:
 usages:
   - user: http://www.virtualflybrain.org/
     description: VFB uses FBbt to annotate brain images
-    example:
+    examples:
       - url: http://www.virtualflybrain.org/site/stacks/index.htm?id=FBbt_00003651
         description: "Ring neuron R2 in VFB"
-    example:
       - url: http://www.virtualflybrain.org/do/gene_list.html?action=geneex&id=FBbt:00003651
         description: "genes expressed in ring neuron R2 in VFB"
   - user: http://flybase.org
     description: Flybase uses FBbt for expression and phenotype data annotation in Drosophila
-    example:
+    examples:
       - url: "http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBbt:00005106"
         description: "alleles, constructs and insertions annotated to neuron in FlyBase"
 activity_status: active
@@ -66,4 +67,3 @@ An ontology representing the gross anatomy of Drosophila melanogaster.
 
 FBbt can be cited as:
 _Costa M., Reeve S., Grumbling G., Osumi-Sutherland D._ (2013) The Drosophila anatomy ontology. [Journal of Biomedical Semantics __4__(32).](https://doi.org/10.1186/2041-1480-4-32)
-

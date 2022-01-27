@@ -22,17 +22,19 @@ products:
   - id: chiro.obo
     name: "CHEBI Integrated Role Ontology additional release in OBO format"
 dependencies:
-- id: chebi
-- id: mp
-- id: hp
-- id: go
-- id: pr
-- id: uberon
-- id: ncbitaxon
+  - id: chebi
+  - id: mp
+  - id: hp
+  - id: go
+  - id: pr
+  - id: uberon
+  - id: ncbitaxon
 
 tracker: https://github.com/obophenotype/chiro/issues
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
-  label: CC-0
+  label: CC0 1.0
 activity_status: active
+repository: https://github.com/obophenotype/chiro
+preferredPrefix: CHIRO
 ---

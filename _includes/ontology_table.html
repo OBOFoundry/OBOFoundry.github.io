@@ -120,6 +120,16 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/reg
         {% endif %}
       </td>
 
+      <td>
+        {% if ont.repository %}
+          {% if ont.repository contains "https://github.com/" %}
+          <a href="{{ ont.repository }}">
+            <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ ont.repository | remove: 'https://github.com/' }}?style=social" />
+          </a>
+          {% endif %}
+        {% endif %}
+      </td>
+
     </tr>
 
     {% endfor %}

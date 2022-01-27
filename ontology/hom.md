@@ -17,9 +17,11 @@ build:
   method: vcs
   path: src/ontology
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
 activity_status: active
+repository: https://github.com/BgeeDB/homology-ontology
+preferredPrefix: HOM
 ---
 
 This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology. The ontology can be cited as:

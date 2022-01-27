@@ -3,11 +3,11 @@ layout: ontology_detail
 id: dc_cl
 title: Dendritic cell
 contact:
-  email: Lindsay Cowell
-  label: Lindsay.Cowell@utsouthwestern.edu
+  email: Lindsay.Cowell@utsouthwestern.edu
+  label: Lindsay Cowell
 taxon:
   id: all
-  label: 
+  label:
 homepage: http://www.dukeontologygroup.org/Projects.html
 is_obsolete: true
 replaced_by: cl

@@ -30,25 +30,26 @@ products:
   - id: ecto/ecto-base.json
     name: "Environmental conditions, treatments and exposures ontology additional release in OBOJSon format"
 dependencies:
-- id: chebi
-- id: envo
-- id: exo
-- id: go
-- id: iao
-- id: maxo
-- id: nbo
-- id: ncit
-- id: ncbitaxon
-- id: npo
-- id: pato
-- id: ro
-- id: uberon
-- id: xco
+  - id: chebi
+  - id: envo
+  - id: exo
+  - id: go
+  - id: iao
+  - id: maxo
+  - id: nbo
+  - id: ncit
+  - id: ncbitaxon
+  - id: pato
+  - id: ro
+  - id: uberon
+  - id: xco
 
 tracker: https://github.com/EnvironmentOntology/environmental-exposure-ontology/issues
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC-BY
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC0 1.0
 activity_status: active
+repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
+preferredPrefix: ECTO
 ---
-
+<img src="https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/ecto-logos/ecto-logo_black-banner.png"/>
