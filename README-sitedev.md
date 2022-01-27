@@ -1,6 +1,6 @@
 This documentation is for developers of this prototype OBO Foundry site.
 
-Note this document is in markdown and is best view on the github.
+Note this document is in markdown and is best viewed on GitHub.
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ You will first need jekyll, which can be installed by the ruby [gem](https://rub
 
     gem install jekyll
 
-After checking out the code from github, you can start a local server:
+After checking out the code from GitHub, you can start a local server:
 
     jekyll serve
 
@@ -77,11 +77,13 @@ jena is at https://archive.apache.org/dist/jena/binaries/apache-jena-3.10.0.tar.
 
 The dependencies should be visible in the [Makefile](Makefile). The basic idea is:
 
- * [ontology/](ontology/)*.md  --[extract yaml]--> [registry/ontologies.yaml](registry/ontologies.yaml) --> [_config.yml](_config.yml)
+ * [ontology/](ontology/)*.md  --[extract yaml]--> [registry/ontologies.yml](registry/ontologies.yml) --> [_config.yml](_config.yml)
 
-[registry/ontologies.yaml](registry/ontologies.yaml) is also used to
-create [registry/ontologies.rdf](registry/ontologies.rdf) via a
-JSON-LD file (JENA required).
+[registry/ontologies.yml](registry/ontologies.yml) is also used to
+create RDF files via a JSON-LD file (JENA required):
+- [registry/ontologies.nt](registry/ontologies.nt) (in the N-tuples format)
+- [registry/ontologies.ttl](registry/ontologies.ttl) (in the turtle format)
+- [registry/ontologies.jsonld](registry/ontologies.jsonld) (in the JSON-LD format)
 
 ## Pages
 
@@ -98,7 +100,7 @@ this is built). For each ontology it writes a table row.
 
 ### Ontology Pages
 
-These are displayed directly via jekyll. Each ontology has it's own
+These are displayed directly via jekyll. Each ontology has its own
 `.md` page, which consists of the main page content (free form
 markdown) preceded by a structured yaml block. The structured yaml is
 the ontology metadata (with a direct mapping to RDF), arbitrarily
