@@ -11,7 +11,6 @@ twitter: diseaseontology
 facebook: https://www.facebook.com/diseaseontology
 domain: disease
 homepage: http://www.disease-ontology.org
-DO wiki: http://diseaseontology.sourceforge.net/
 products:
   - id: doid.owl
     title: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy plus equivalent axioms to other OBO Foundry ontologies.
