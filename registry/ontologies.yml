@@ -963,6 +963,7 @@ ontologies:
     system: git
   contact:
     email: a.chang@tu-bs.de
+    github: BRENDA-Enzymes
     label: Antje Chang
   description: A structured controlled vocabulary for the source of an enzyme comprising
     tissues, cell lines, cell types and cell cultures.
@@ -6990,32 +6991,6 @@ ontologies:
   tracker: https://github.com/scdodev/scdo-ontology/issues
 - activity_status: orphaned
   build:
-    checkout: git clone https://github.com/obophenotype/sibo.git
-    method: vcs
-    system: git
-  contact:
-    email: cjmungall@lbl.gov
-    label: Chris Mungall
-  description: Social Behavior in insects
-  domain: behavior
-  homepage: https://github.com/obophenotype/sibo
-  id: sibo
-  layout: ontology_detail
-  license:
-    label: CC BY 3.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
-  ontology_purl: http://purl.obolibrary.org/obo/sibo.owl
-  products:
-  - id: sibo.owl
-    ontology_purl: http://purl.obolibrary.org/obo/sibo.owl
-  - id: sibo.obo
-    ontology_purl: http://purl.obolibrary.org/obo/sibo.obo
-  repository: https://github.com/obophenotype/sibo
-  title: Social Insect Behavior Ontology
-  tracker: https://github.com/obophenotype/sibo/issues
-- activity_status: orphaned
-  build:
     infallible: 1
     insert_ontology_id: true
     method: obo2owl
@@ -7035,26 +7010,6 @@ ontologies:
   - id: fix.obo
     ontology_purl: http://purl.obolibrary.org/obo/fix.obo
   title: Physico-chemical methods and properties
-- activity_status: orphaned
-  build:
-    method: obo2owl
-    source_url: http://variationontology.org/vario_download/vario.obo
-  contact:
-    email: mauno.vihinen@med.lu.se
-    label: Mauno Vihinen
-  description: Variation Ontology, VariO, is an ontology for standardized, systematic
-    description of effects, consequences and mechanisms of variations.
-  homepage: http://variationontology.org
-  id: vario
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/vario.owl
-  preferredPrefix: VariO
-  products:
-  - id: vario.owl
-    ontology_purl: http://purl.obolibrary.org/obo/vario.owl
-  - id: vario.obo
-    ontology_purl: http://purl.obolibrary.org/obo/vario.obo
-  title: Variation Ontology
 - activity_status: orphaned
   description: An ontology that formalizes the genomic element by defining an upper
     class genetic interval
@@ -7081,33 +7036,52 @@ ontologies:
   - id: rex.owl
     ontology_purl: http://purl.obolibrary.org/obo/rex.owl
   title: Physico-chemical process
-- activity_status: inactive
+- activity_status: orphaned
   build:
-    checkout: git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git
+    checkout: git clone https://github.com/obophenotype/sibo.git
     method: vcs
-    path: src/ontology
     system: git
   contact:
-    email: J.Bard@ed.ac.uk
-    label: Jonathan Bard
-  description: AEO is an ontology of anatomical structures that expands CARO, the
-    Common Anatomy Reference Ontology
-  domain: anatomy
-  homepage: https://github.com/obophenotype/human-developmental-anatomy-ontology/
-  id: aeo
+    email: cjmungall@lbl.gov
+    label: Chris Mungall
+  description: Social Behavior in insects
+  domain: behavior
+  homepage: https://github.com/obophenotype/sibo
+  id: sibo
   layout: ontology_detail
   license:
-    label: CC BY 4.0
+    label: CC BY 3.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/4.0/
-  ontology_purl: http://purl.obolibrary.org/obo/aeo.owl
-  preferredPrefix: AEO
+    url: http://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/sibo.owl
   products:
-  - id: aeo.owl
-    ontology_purl: http://purl.obolibrary.org/obo/aeo.owl
-  repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
-  title: Anatomical Entity Ontology
-  tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
+  - id: sibo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/sibo.owl
+  - id: sibo.obo
+    ontology_purl: http://purl.obolibrary.org/obo/sibo.obo
+  repository: https://github.com/obophenotype/sibo
+  title: Social Insect Behavior Ontology
+  tracker: https://github.com/obophenotype/sibo/issues
+- activity_status: orphaned
+  build:
+    method: obo2owl
+    source_url: http://variationontology.org/vario_download/vario.obo
+  contact:
+    email: mauno.vihinen@med.lu.se
+    label: Mauno Vihinen
+  description: Variation Ontology, VariO, is an ontology for standardized, systematic
+    description of effects, consequences and mechanisms of variations.
+  homepage: http://variationontology.org
+  id: vario
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/vario.owl
+  preferredPrefix: VariO
+  products:
+  - id: vario.owl
+    ontology_purl: http://purl.obolibrary.org/obo/vario.owl
+  - id: vario.obo
+    ontology_purl: http://purl.obolibrary.org/obo/vario.obo
+  title: Variation Ontology
 - activity_status: inactive
   build:
     checkout: git clone https://github.com/obophenotype/cephalopod-ontology.git
@@ -7144,6 +7118,97 @@ ontologies:
     label: Cephalopod
   title: Cephalopod Ontology
   tracker: https://github.com/obophenotype/cephalopod-ontology/issues
+- activity_status: inactive
+  build:
+    method: archive
+    path: archive
+    source_url: http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip
+  contact:
+    email: lschriml@som.umaryland.edu
+    github: lschriml
+    label: Lynn Schriml
+  description: A gazetteer constructed on ontological principles
+  homepage: http://environmentontology.github.io/gaz/
+  id: gaz
+  layout: ontology_detail
+  license:
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  mailing_list: https://groups.google.com/forum/#!forum/obo-gazetteer
+  ontology_purl: http://purl.obolibrary.org/obo/gaz.owl
+  products:
+  - id: gaz.owl
+    ontology_purl: http://purl.obolibrary.org/obo/gaz.owl
+  - id: gaz.obo
+    ontology_purl: http://purl.obolibrary.org/obo/gaz.obo
+  repository: https://github.com/EnvironmentOntology/gaz
+  title: Gazetteer
+  tracker: https://github.com/EnvironmentOntology/gaz/issues
+- activity_status: inactive
+  build:
+    checkout: git clone https://github.com/geneontology/unipathway.git
+    path: .
+    system: git
+  contact:
+    email: Anne.Morgat@sib.swiss
+    github: amorgat
+    label: Anne Morgat
+  dependencies:
+  - id: ro
+  description: A manually curated resource for the representation and annotation of
+    metabolic pathways
+  domain: pathways
+  homepage: https://github.com/geneontology/unipathway
+  id: upa
+  jobs:
+  - id: https://travis-ci.org/geneontology/unipathway
+    type: travis-ci
+  layout: ontology_detail
+  license:
+    label: CC BY 3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/upa.owl
+  products:
+  - id: upa.owl
+    ontology_purl: http://purl.obolibrary.org/obo/upa.owl
+  - id: upa.obo
+    ontology_purl: http://purl.obolibrary.org/obo/upa.obo
+  publications:
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/22102589
+    title: 'UniPathway: a resource for the exploration and annotation of metabolic
+      pathways'
+  repository: https://github.com/geneontology/unipathway
+  title: Unipathway
+  tracker: https://github.com/geneontology/unipathway/issues
+- activity_status: inactive
+  build:
+    checkout: git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git
+    method: vcs
+    path: src/ontology
+    system: git
+  contact:
+    email: J.Bard@ed.ac.uk
+    label: Jonathan Bard
+  description: AEO is an ontology of anatomical structures that expands CARO, the
+    Common Anatomy Reference Ontology
+  domain: anatomy
+  homepage: https://github.com/obophenotype/human-developmental-anatomy-ontology/
+  id: aeo
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/aeo.owl
+  preferredPrefix: AEO
+  products:
+  - id: aeo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/aeo.owl
+  repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
+  title: Anatomical Entity Ontology
+  tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
 - activity_status: inactive
   build:
     checkout: git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git
@@ -7185,31 +7250,106 @@ ontologies:
   tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
 - activity_status: inactive
   build:
-    method: archive
-    path: archive
-    source_url: http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip
+    method: owl2obo
+    source_url: http://purl.obolibrary.org/obo/ero.owl
   contact:
-    email: lschriml@som.umaryland.edu
-    github: lschriml
-    label: Lynn Schriml
-  description: A gazetteer constructed on ontological principles
-  homepage: http://environmentontology.github.io/gaz/
-  id: gaz
+    email: Marc_Ciriello@hms.harvard.edu
+    label: Marc Ciriello
+  description: An ontology of research resources such as instruments. protocols, reagents,
+    animal models and biospecimens.
+  documentation: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
+  domain: resources
+  homepage: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
+  id: ero
+  layout: ontology_detail
+  license:
+    label: CC BY 2.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/2.0/
+  ontology_purl: http://purl.obolibrary.org/obo/ero.owl
+  products:
+  - id: ero.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ero.owl
+  title: eagle-i resource ontology
+- activity_status: inactive
+  build:
+    insert_ontology_id: true
+    method: obo2owl
+    source_url: http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo
+  contact:
+    email: mejino@u.washington.edu
+    label: Onard Mejino
+  description: This is currently a slimmed down version of FMA
+  domain: anatomy
+  homepage: http://si.washington.edu/projects/fma
+  id: fma
+  layout: ontology_detail
+  license:
+    label: CC BY 3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/fma.owl
+  page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
+  preferredPrefix: FMA
+  products:
+  - id: fma.owl
+    ontology_purl: http://purl.obolibrary.org/obo/fma.owl
+  publications:
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/18688289
+    title: Translating the Foundational Model of Anatomy into OWL
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/18360535
+    title: 'The foundational model of anatomy in OWL: Experience and perspectives'
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/16779026
+    title: 'Challenges in converting frame-based ontology into OWL: the Foundational
+      Model of Anatomy case-study'
+  taxon:
+    id: NCBITaxon:9606
+    label: Homo sapiens
+  title: Foundational Model of Anatomy Ontology (subset)
+  tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
+- activity_status: inactive
+  contact:
+    email: topalis@imbb.forth.gr
+    label: Pantelis Topalis
+  description: An application ontology to cover all aspects of malaria as well as
+    the intervention attempts to control it.
+  domain: health
+  homepage: https://www.vectorbase.org/ontology-browser
+  id: idomal
   layout: ontology_detail
   license:
     label: CC0 1.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
     url: https://creativecommons.org/publicdomain/zero/1.0/
-  mailing_list: https://groups.google.com/forum/#!forum/obo-gazetteer
-  ontology_purl: http://purl.obolibrary.org/obo/gaz.owl
+  ontology_purl: http://purl.obolibrary.org/obo/idomal.owl
   products:
-  - id: gaz.owl
-    ontology_purl: http://purl.obolibrary.org/obo/gaz.owl
-  - id: gaz.obo
-    ontology_purl: http://purl.obolibrary.org/obo/gaz.obo
-  repository: https://github.com/EnvironmentOntology/gaz
-  title: Gazetteer
-  tracker: https://github.com/EnvironmentOntology/gaz/issues
+  - id: idomal.owl
+    ontology_purl: http://purl.obolibrary.org/obo/idomal.owl
+  - id: idomal.obo
+    ontology_purl: http://purl.obolibrary.org/obo/idomal.obo
+  repository: https://github.com/VEuPathDB-ontology/IDOMAL
+  title: Malaria Ontology
+- activity_status: inactive
+  contact:
+    email: louis@imbb.forth.gr
+    label: Christos (Kitsos) Louis
+  description: Application ontology for entities related to insecticide resistance
+    in mosquitos
+  domain: environment
+  id: miro
+  layout: ontology_detail
+  ontology_purl: http://purl.obolibrary.org/obo/miro.owl
+  products:
+  - id: miro.owl
+    ontology_purl: http://purl.obolibrary.org/obo/miro.owl
+  - id: miro.obo
+    ontology_purl: http://purl.obolibrary.org/obo/miro.obo
+  repository: https://github.com/VEuPathDB-ontology/MIRO
+  taxon:
+    id: NCBITaxon:44484
+    label: Anopheles
+  title: Mosquito insecticide resistance
+  validate: false
 - activity_status: inactive
   browsers:
   - label: RNAO
@@ -7241,88 +7381,6 @@ ontologies:
   repository: https://github.com/BGSU-RNA/rnao
   title: RNA ontology
   tracker: https://github.com/BGSU-RNA/rnao/issues
-- activity_status: inactive
-  build:
-    checkout: git clone https://github.com/geneontology/unipathway.git
-    path: .
-    system: git
-  contact:
-    email: Anne.Morgat@sib.swiss
-    github: amorgat
-    label: Anne Morgat
-  dependencies:
-  - id: ro
-  description: A manually curated resource for the representation and annotation of
-    metabolic pathways
-  domain: pathways
-  homepage: https://github.com/geneontology/unipathway
-  id: upa
-  jobs:
-  - id: https://travis-ci.org/geneontology/unipathway
-    type: travis-ci
-  layout: ontology_detail
-  license:
-    label: CC BY 3.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
-  ontology_purl: http://purl.obolibrary.org/obo/upa.owl
-  products:
-  - id: upa.owl
-    ontology_purl: http://purl.obolibrary.org/obo/upa.owl
-  - id: upa.obo
-    ontology_purl: http://purl.obolibrary.org/obo/upa.obo
-  publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/22102589
-    title: 'UniPathway: a resource for the exploration and annotation of metabolic
-      pathways'
-  repository: https://github.com/geneontology/unipathway
-  title: Unipathway
-  tracker: https://github.com/geneontology/unipathway/issues
-- activity_status: inactive
-  build:
-    method: owl2obo
-    source_url: http://purl.obolibrary.org/obo/ero.owl
-  contact:
-    email: Marc_Ciriello@hms.harvard.edu
-    label: Marc Ciriello
-  description: An ontology of research resources such as instruments. protocols, reagents,
-    animal models and biospecimens.
-  documentation: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
-  domain: resources
-  homepage: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
-  id: ero
-  layout: ontology_detail
-  license:
-    label: CC BY 2.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/2.0/
-  ontology_purl: http://purl.obolibrary.org/obo/ero.owl
-  products:
-  - id: ero.owl
-    ontology_purl: http://purl.obolibrary.org/obo/ero.owl
-  title: eagle-i resource ontology
-- activity_status: inactive
-  contact:
-    email: topalis@imbb.forth.gr
-    label: Pantelis Topalis
-  description: An application ontology to cover all aspects of malaria as well as
-    the intervention attempts to control it.
-  domain: health
-  homepage: https://www.vectorbase.org/ontology-browser
-  id: idomal
-  layout: ontology_detail
-  license:
-    label: CC0 1.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
-  ontology_purl: http://purl.obolibrary.org/obo/idomal.owl
-  products:
-  - id: idomal.owl
-    ontology_purl: http://purl.obolibrary.org/obo/idomal.owl
-  - id: idomal.obo
-    ontology_purl: http://purl.obolibrary.org/obo/idomal.obo
-  repository: https://github.com/VEuPathDB-ontology/IDOMAL
-  title: Malaria Ontology
 - activity_status: inactive
   contact:
     email: dsonensh@odu.edu
@@ -7372,63 +7430,6 @@ ontologies:
     label: Anopheles
   title: Mosquito gross anatomy ontology
 - activity_status: inactive
-  build:
-    insert_ontology_id: true
-    method: obo2owl
-    source_url: http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo
-  contact:
-    email: mejino@u.washington.edu
-    label: Onard Mejino
-  description: This is currently a slimmed down version of FMA
-  domain: anatomy
-  homepage: http://si.washington.edu/projects/fma
-  id: fma
-  layout: ontology_detail
-  license:
-    label: CC BY 3.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/3.0/
-  ontology_purl: http://purl.obolibrary.org/obo/fma.owl
-  page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
-  preferredPrefix: FMA
-  products:
-  - id: fma.owl
-    ontology_purl: http://purl.obolibrary.org/obo/fma.owl
-  publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/18688289
-    title: Translating the Foundational Model of Anatomy into OWL
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/18360535
-    title: 'The foundational model of anatomy in OWL: Experience and perspectives'
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/16779026
-    title: 'Challenges in converting frame-based ontology into OWL: the Foundational
-      Model of Anatomy case-study'
-  taxon:
-    id: NCBITaxon:9606
-    label: Homo sapiens
-  title: Foundational Model of Anatomy Ontology (subset)
-  tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
-- activity_status: inactive
-  contact:
-    email: louis@imbb.forth.gr
-    label: Christos (Kitsos) Louis
-  description: Application ontology for entities related to insecticide resistance
-    in mosquitos
-  domain: environment
-  id: miro
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/miro.owl
-  products:
-  - id: miro.owl
-    ontology_purl: http://purl.obolibrary.org/obo/miro.owl
-  - id: miro.obo
-    ontology_purl: http://purl.obolibrary.org/obo/miro.obo
-  repository: https://github.com/VEuPathDB-ontology/MIRO
-  taxon:
-    id: NCBITaxon:44484
-    label: Anopheles
-  title: Mosquito insecticide resistance
-  validate: false
-- activity_status: inactive
   contact:
     email: jiezheng@pennmedicine.upenn.edu
     github: zhengj2007
@@ -7449,30 +7450,6 @@ ontologies:
   repository: https://github.com/obi-bcgo/bcgo
   title: Beta Cell Genomics Ontology
   tracker: https://github.com/obi-bcgo/bcgo/issues
-- activity_status: inactive
-  contact:
-    email: maria.herrero@kcl.ac.uk
-    label: Maria Herrero
-  description: A formal represention for drug-drug interactions knowledge.
-  domain: health
-  homepage: http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto
-  id: dinto
-  is_obsolete: true
-  layout: ontology_detail
-  license:
-    label: CC BY 3.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/3.0/
-  products:
-  - id: dinto.owl
-    ontology_purl: http://purl.obolibrary.org/obo/dinto.owl
-  publications:
-  - id: http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119
-    title: 'DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug–Drug Interactions
-      and Their Mechanisms.'
-  repository: https://github.com/labda/DINTO
-  title: The Drug-Drug Interactions Ontology
-  tracker: https://github.com/labda/DINTO/issues
 - activity_status: inactive
   build:
     method: obo2owl
@@ -7518,27 +7495,6 @@ ontologies:
     user: http://gramene.org/
 - activity_status: inactive
   contact:
-    email: mbrochhausen@gmail.com
-    label: Mathias Brochhausen
-  description: An ontological version of MIABIS (Minimum Information About BIobank
-    data Sharing)
-  domain: health
-  homepage: https://github.com/OMIABIS/omiabis-dev
-  id: omiabis
-  is_obsolete: true
-  layout: ontology_detail
-  license:
-    label: CC BY 3.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
-  products:
-  - id: omiabis.owl
-    ontology_purl: http://purl.obolibrary.org/obo/omiabis.owl
-  repository: https://github.com/OMIABIS/omiabis-dev
-  title: Ontologized MIABIS
-  tracker: https://github.com/OMIABIS/omiabis-dev/issues
-- activity_status: inactive
-  contact:
     email: david.c.blackburn@gmail.com
     label: David Blackburn
   homepage: http://github.com/seger/aao
@@ -7559,29 +7515,6 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   title: Animal natural history and life history
-- activity_status: inactive
-  build:
-    method: owl2obo
-    source_url: http://purl.obolibrary.org/obo/aero.owl
-  contact:
-    email: mcourtot@gmail.com
-    label: Melanie Courtot
-  description: The Adverse Event Reporting Ontology (AERO) is an ontology aimed at
-    supporting clinicians at the time of data entry, increasing quality and accuracy
-    of reported adverse events
-  domain: health
-  homepage: http://purl.obolibrary.org/obo/aero
-  id: aero
-  is_obsolete: true
-  layout: ontology_detail
-  license:
-    label: CC BY 3.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
-  products:
-  - id: aero.owl
-    ontology_purl: http://purl.obolibrary.org/obo/aero.owl
-  title: Adverse Event Reporting Ontology
 - activity_status: inactive
   contact:
     email: david.c.blackburn@gmail.com
@@ -7674,35 +7607,6 @@ ontologies:
     label: Homo sapiens
   title: Human developmental anatomy, abstract version
 - activity_status: inactive
-  build:
-    insert_ontology_id: true
-    method: obo2owl
-    notes: new url soon
-    source_url: ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAP_combined.obo
-  contact:
-    email: Terry.Hayamizu@jax.org
-    github: tfhayamizu
-    label: Terry Hayamizu
-  description: A structured controlled vocabulary of stage-specific anatomical structures
-    of the mouse (Mus).
-  domain: anatomy
-  homepage: http://emouseatlas.org
-  id: emap
-  is_obsolete: true
-  layout: ontology_detail
-  page: https://www.emouseatlas.org/emap/about/what_is_emap.html
-  products:
-  - id: emap.owl
-    ontology_purl: http://purl.obolibrary.org/obo/emap.owl
-  replaced_by: emapa
-  taxon:
-    id: NCBITaxon:10088
-    label: Mus
-  title: Mouse gross anatomy and development, timed
-  used_by:
-  - label: GXD
-    url: https://www.biosharing.org/biodbcore-000659
-- activity_status: inactive
   contact:
     email: evoc@sanbi.ac.za
     label: eVOC mailing list
@@ -7711,29 +7615,6 @@ ontologies:
   is_obsolete: true
   layout: ontology_detail
   title: eVOC (Expressed Sequence Annotation for Humans)
-- activity_status: inactive
-  build:
-    insert_ontology_id: true
-    method: obo2owl
-    source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/fly_taxonomy.obo
-  contact:
-    email: cp390@cam.ac.uk
-    github: Clare72
-    label: Clare Pilgrim
-  description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli)
-    and of other taxa referred to in FlyBase.
-  domain: taxonomy
-  homepage: http://www.flybase.org/
-  id: fbsp
-  is_obsolete: true
-  layout: ontology_detail
-  products:
-  - id: fbsp.owl
-    ontology_purl: http://purl.obolibrary.org/obo/fbsp.owl
-  taxon:
-    id: NCBITaxon:7227
-    label: Drosophila
-  title: Fly taxonomy
 - activity_status: inactive
   build:
     method: owl2obo
@@ -7821,51 +7702,6 @@ ontologies:
   title: Minimal anatomical terminology
 - activity_status: inactive
   contact:
-    email: topalis@imbb.forth.gr
-    label: Pantelis Topalis
-  description: An application ontology for use with miRNA databases.
-  homepage: http://code.google.com/p/mirna-ontology/
-  id: mirnao
-  is_obsolete: true
-  layout: ontology_detail
-  license:
-    label: CC0 1.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
-  products:
-  - id: mirnao.owl
-    ontology_purl: http://purl.obolibrary.org/obo/mirnao.owl
-  title: microRNA Ontology
-- activity_status: inactive
-  contact:
-    email: stoeckrt@pcbi.upenn.edu
-    label: Chris Stoeckert
-  description: A standardized description of a microarray experiment in support of
-    MAGE v.1.
-  domain: experiments
-  homepage: http://mged.sourceforge.net/ontologies/MGEDontology.php
-  id: mo
-  is_obsolete: true
-  layout: ontology_detail
-  page: http://mged.sourceforge.net/software/downloads.php
-  products:
-  - id: mo.owl
-    ontology_purl: http://purl.obolibrary.org/obo/mo.owl
-  replaced_by: obi
-  title: Microarray experimental conditions
-- activity_status: inactive
-  contact:
-    email: smtifahim@gmail.com
-    label: Fahim Imam
-  description: Neuronal cell types
-  homepage: http://neuinfo.org/
-  id: nif_cell
-  is_obsolete: true
-  layout: ontology_detail
-  replaced_by: cl
-  title: NIF Cell
-- activity_status: inactive
-  contact:
     email: smtifahim@gmail.com
     label: Fahim Imam
   homepage: http://neuinfo.org/
@@ -7884,25 +7720,6 @@ ontologies:
   layout: ontology_detail
   replaced_by: uberon
   title: NIF Gross Anatomy
-- activity_status: inactive
-  build:
-    method: owl2obo
-    source_url: https://msi-workgroups.svn.sourceforge.net/svnroot/msi-workgroups/ontology/NMR.owl
-  contact:
-    email: schober@imbi.uni-freiburg.de
-    label: Schober Daniel
-  description: Descriptors relevant to the experimental conditions of the Nuclear
-    Magnetic Resonance (NMR) component in a metabolomics investigation.
-  domain: experiments
-  homepage: http://msi-ontology.sourceforge.net/
-  id: nmr
-  is_obsolete: true
-  layout: ontology_detail
-  page: http://msi-ontology.sourceforge.net/ontology/NMR.owlDocument.doc
-  products:
-  - id: nmr.owl
-    ontology_purl: http://purl.obolibrary.org/obo/nmr.owl
-  title: NMR-instrument specific component of metabolomics investigations
 - activity_status: inactive
   contact:
     email: cjmungall@lbl.gov
@@ -7971,17 +7788,6 @@ ontologies:
   title: Proteomics data and process provenance
 - activity_status: inactive
   contact:
-    email: john.garavelli@ebi.ac.uk
-    label: John Garavelli
-  description: For the description of covalent bonds in proteins.
-  domain: proteins
-  homepage: http://www.ebi.ac.uk/RESID/
-  id: resid
-  is_obsolete: true
-  layout: ontology_detail
-  title: Protein covalent bond
-- activity_status: inactive
-  contact:
     email: slarson@ncmir.ucsd.edu
     label: Stephen Larson
   homepage: http://ccdb.ucsd.edu/CCDBWebSite/sao.html
@@ -7993,26 +7799,6 @@ ontologies:
     id: NCBITaxon:9606
     label: Homo sapiens
   title: Subcellular anatomy ontology
-- activity_status: inactive
-  build:
-    insert_ontology_id: true
-    method: obo2owl
-    source_url: https://raw.githubusercontent.com/HUPO-PSI/gelml/master/CV/sep.obo
-  contact:
-    email: psidev-gps-dev@lists.sourceforge.net
-    label: SEP developers via the PSI and MSI mailing lists
-  description: A structured controlled vocabulary for the annotation of sample processing
-    and separation techniques in scientific experiments.
-  domain: provenance
-  homepage: http://psidev.info/index.php?q=node/312
-  id: sep
-  is_obsolete: true
-  layout: ontology_detail
-  page: http://psidev.info/index.php?q=node/312
-  products:
-  - id: sep.owl
-    ontology_purl: http://purl.obolibrary.org/obo/sep.owl
-  title: Sample processing and separation techniques
 - activity_status: inactive
   contact:
     email: Adrien.Coulet@loria.fr
@@ -8050,58 +7836,6 @@ ontologies:
     label: Homo sapiens
   title: Terminology of Anatomy of Human Histology
 - activity_status: inactive
-  build:
-    method: obo2owl
-    source_url: http://purl.obolibrary.org/obo/tao.obo
-  contact:
-    email: wasila.dahdul@usd.edu
-    label: Wasila Dahdul
-  description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but
-    intended to cover terms relevant to other taxa
-  domain: anatomy
-  homepage: http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology
-  id: tao
-  is_obsolete: true
-  layout: ontology_detail
-  license:
-    label: CC0 1.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: http://creativecommons.org/publicdomain/zero/1.0/
-  products:
-  - id: tao.owl
-    ontology_purl: http://purl.obolibrary.org/obo/tao.owl
-  publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/20547776
-    title: 'The teleost anatomy ontology: anatomical representation for the genomics
-      age'
-  replaced_by: uberon
-  taxon:
-    id: NCBITaxon:32443
-    label: Teleostei
-  title: Teleost Anatomy Ontology
-- activity_status: inactive
-  build:
-    method: obo2owl
-    source_url: http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/tags/vocab-releases/VSAO/vsao.obo
-  contact:
-    email: wasila.dahdul@usd.edu
-    label: Wasila Dahdul
-  description: Vertebrate skeletal anatomy ontology.
-  domain: anatomy
-  homepage: https://www.nescent.org/phenoscape/Main_Page
-  id: vsao
-  is_obsolete: true
-  layout: ontology_detail
-  page: https://www.phenoscape.org/wiki/Skeletal_Anatomy_Jamboree
-  products:
-  - id: vsao.owl
-    ontology_purl: http://purl.obolibrary.org/obo/vsao.owl
-  replaced_by: uberon
-  taxon:
-    id: NCBITaxon:7742
-    label: Vertebrata
-  title: Vertebrate Skeletal Anatomy Ontology-
-- activity_status: inactive
   contact:
     email: cherry@genome.stanford.edu
     label: Mike Cherry
@@ -8129,6 +7863,82 @@ ontologies:
 - activity_status: inactive
   build:
     method: owl2obo
+    source_url: http://purl.obolibrary.org/obo/aero.owl
+  contact:
+    email: mcourtot@gmail.com
+    label: Melanie Courtot
+  description: The Adverse Event Reporting Ontology (AERO) is an ontology aimed at
+    supporting clinicians at the time of data entry, increasing quality and accuracy
+    of reported adverse events
+  domain: health
+  homepage: http://purl.obolibrary.org/obo/aero
+  id: aero
+  is_obsolete: true
+  layout: ontology_detail
+  license:
+    label: CC BY 3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  products:
+  - id: aero.owl
+    ontology_purl: http://purl.obolibrary.org/obo/aero.owl
+  title: Adverse Event Reporting Ontology
+- activity_status: inactive
+  contact:
+    email: maria.herrero@kcl.ac.uk
+    label: Maria Herrero
+  description: A formal represention for drug-drug interactions knowledge.
+  domain: health
+  homepage: http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto
+  id: dinto
+  is_obsolete: true
+  layout: ontology_detail
+  license:
+    label: CC BY 3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/3.0/
+  products:
+  - id: dinto.owl
+    ontology_purl: http://purl.obolibrary.org/obo/dinto.owl
+  publications:
+  - id: http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119
+    title: 'DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug–Drug Interactions
+      and Their Mechanisms.'
+  repository: https://github.com/labda/DINTO
+  title: The Drug-Drug Interactions Ontology
+  tracker: https://github.com/labda/DINTO/issues
+- activity_status: inactive
+  build:
+    insert_ontology_id: true
+    method: obo2owl
+    notes: new url soon
+    source_url: ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAP_combined.obo
+  contact:
+    email: Terry.Hayamizu@jax.org
+    github: tfhayamizu
+    label: Terry Hayamizu
+  description: A structured controlled vocabulary of stage-specific anatomical structures
+    of the mouse (Mus).
+  domain: anatomy
+  homepage: http://emouseatlas.org
+  id: emap
+  is_obsolete: true
+  layout: ontology_detail
+  page: https://www.emouseatlas.org/emap/about/what_is_emap.html
+  products:
+  - id: emap.owl
+    ontology_purl: http://purl.obolibrary.org/obo/emap.owl
+  replaced_by: emapa
+  taxon:
+    id: NCBITaxon:10088
+    label: Mus
+  title: Mouse gross anatomy and development, timed
+  used_by:
+  - label: GXD
+    url: https://www.biosharing.org/biodbcore-000659
+- activity_status: inactive
+  build:
+    method: owl2obo
     source_url: http://purl.obolibrary.org/obo/epo.owl
   description: An ontology designed to support the semantic annotation of epidemiology
     resources
@@ -8141,6 +7951,29 @@ ontologies:
   - id: epo.owl
     ontology_purl: http://purl.obolibrary.org/obo/epo.owl
   title: Epidemiology Ontology
+- activity_status: inactive
+  build:
+    insert_ontology_id: true
+    method: obo2owl
+    source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/fly_taxonomy.obo
+  contact:
+    email: cp390@cam.ac.uk
+    github: Clare72
+    label: Clare Pilgrim
+  description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli)
+    and of other taxa referred to in FlyBase.
+  domain: taxonomy
+  homepage: http://www.flybase.org/
+  id: fbsp
+  is_obsolete: true
+  layout: ontology_detail
+  products:
+  - id: fbsp.owl
+    ontology_purl: http://purl.obolibrary.org/obo/fbsp.owl
+  taxon:
+    id: NCBITaxon:7227
+    label: Drosophila
+  title: Fly taxonomy
 - activity_status: inactive
   build:
     insert_ontology_id: true
@@ -8184,6 +8017,152 @@ ontologies:
     label: Oryzias
   title: Medaka fish anatomy and development
 - activity_status: inactive
+  contact:
+    email: topalis@imbb.forth.gr
+    label: Pantelis Topalis
+  description: An application ontology for use with miRNA databases.
+  homepage: http://code.google.com/p/mirna-ontology/
+  id: mirnao
+  is_obsolete: true
+  layout: ontology_detail
+  license:
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  products:
+  - id: mirnao.owl
+    ontology_purl: http://purl.obolibrary.org/obo/mirnao.owl
+  title: microRNA Ontology
+- activity_status: inactive
+  contact:
+    email: stoeckrt@pcbi.upenn.edu
+    label: Chris Stoeckert
+  description: A standardized description of a microarray experiment in support of
+    MAGE v.1.
+  domain: experiments
+  homepage: http://mged.sourceforge.net/ontologies/MGEDontology.php
+  id: mo
+  is_obsolete: true
+  layout: ontology_detail
+  page: http://mged.sourceforge.net/software/downloads.php
+  products:
+  - id: mo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/mo.owl
+  replaced_by: obi
+  title: Microarray experimental conditions
+- activity_status: inactive
+  contact:
+    email: smtifahim@gmail.com
+    label: Fahim Imam
+  description: Neuronal cell types
+  homepage: http://neuinfo.org/
+  id: nif_cell
+  is_obsolete: true
+  layout: ontology_detail
+  replaced_by: cl
+  title: NIF Cell
+- activity_status: inactive
+  build:
+    method: owl2obo
+    source_url: https://msi-workgroups.svn.sourceforge.net/svnroot/msi-workgroups/ontology/NMR.owl
+  contact:
+    email: schober@imbi.uni-freiburg.de
+    label: Schober Daniel
+  description: Descriptors relevant to the experimental conditions of the Nuclear
+    Magnetic Resonance (NMR) component in a metabolomics investigation.
+  domain: experiments
+  homepage: http://msi-ontology.sourceforge.net/
+  id: nmr
+  is_obsolete: true
+  layout: ontology_detail
+  page: http://msi-ontology.sourceforge.net/ontology/NMR.owlDocument.doc
+  products:
+  - id: nmr.owl
+    ontology_purl: http://purl.obolibrary.org/obo/nmr.owl
+  title: NMR-instrument specific component of metabolomics investigations
+- activity_status: inactive
+  contact:
+    email: mbrochhausen@gmail.com
+    label: Mathias Brochhausen
+  description: An ontological version of MIABIS (Minimum Information About BIobank
+    data Sharing)
+  domain: health
+  homepage: https://github.com/OMIABIS/omiabis-dev
+  id: omiabis
+  is_obsolete: true
+  layout: ontology_detail
+  license:
+    label: CC BY 3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  products:
+  - id: omiabis.owl
+    ontology_purl: http://purl.obolibrary.org/obo/omiabis.owl
+  repository: https://github.com/OMIABIS/omiabis-dev
+  title: Ontologized MIABIS
+  tracker: https://github.com/OMIABIS/omiabis-dev/issues
+- activity_status: inactive
+  contact:
+    email: john.garavelli@ebi.ac.uk
+    label: John Garavelli
+  description: For the description of covalent bonds in proteins.
+  domain: proteins
+  homepage: http://www.ebi.ac.uk/RESID/
+  id: resid
+  is_obsolete: true
+  layout: ontology_detail
+  title: Protein covalent bond
+- activity_status: inactive
+  build:
+    insert_ontology_id: true
+    method: obo2owl
+    source_url: https://raw.githubusercontent.com/HUPO-PSI/gelml/master/CV/sep.obo
+  contact:
+    email: psidev-gps-dev@lists.sourceforge.net
+    label: SEP developers via the PSI and MSI mailing lists
+  description: A structured controlled vocabulary for the annotation of sample processing
+    and separation techniques in scientific experiments.
+  domain: provenance
+  homepage: http://psidev.info/index.php?q=node/312
+  id: sep
+  is_obsolete: true
+  layout: ontology_detail
+  page: http://psidev.info/index.php?q=node/312
+  products:
+  - id: sep.owl
+    ontology_purl: http://purl.obolibrary.org/obo/sep.owl
+  title: Sample processing and separation techniques
+- activity_status: inactive
+  build:
+    method: obo2owl
+    source_url: http://purl.obolibrary.org/obo/tao.obo
+  contact:
+    email: wasila.dahdul@usd.edu
+    label: Wasila Dahdul
+  description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but
+    intended to cover terms relevant to other taxa
+  domain: anatomy
+  homepage: http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology
+  id: tao
+  is_obsolete: true
+  layout: ontology_detail
+  license:
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: http://creativecommons.org/publicdomain/zero/1.0/
+  products:
+  - id: tao.owl
+    ontology_purl: http://purl.obolibrary.org/obo/tao.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/20547776
+    title: 'The teleost anatomy ontology: anatomical representation for the genomics
+      age'
+  replaced_by: uberon
+  taxon:
+    id: NCBITaxon:32443
+    label: Teleostei
+  title: Teleost Anatomy Ontology
+- activity_status: inactive
   id: vhog
   is_obsolete: true
   layout: ontology_detail
@@ -8192,3 +8171,25 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/vhog.owl
   replaced_by: uberon
   title: Vertebrate Homologous Ontology Group Ontology
+- activity_status: inactive
+  build:
+    method: obo2owl
+    source_url: http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/tags/vocab-releases/VSAO/vsao.obo
+  contact:
+    email: wasila.dahdul@usd.edu
+    label: Wasila Dahdul
+  description: Vertebrate skeletal anatomy ontology.
+  domain: anatomy
+  homepage: https://www.nescent.org/phenoscape/Main_Page
+  id: vsao
+  is_obsolete: true
+  layout: ontology_detail
+  page: https://www.phenoscape.org/wiki/Skeletal_Anatomy_Jamboree
+  products:
+  - id: vsao.owl
+    ontology_purl: http://purl.obolibrary.org/obo/vsao.owl
+  replaced_by: uberon
+  taxon:
+    id: NCBITaxon:7742
+    label: Vertebrata
+  title: Vertebrate Skeletal Anatomy Ontology-
