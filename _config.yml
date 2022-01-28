@@ -172,22 +172,20 @@ ontologies:
   - description: Alliance of Genome Resources - MGD, RGD, SGD, FlyBase, WormBase,
       ZFIN use DO
     examples:
-    - description: 10,860 DO human Diseases annotated to over 190,000 MOD genes, alleles,
-        disease models and human genes
+    - description: Human diseases annotated to over 190,000 MOD genes, alleles, disease
+        models and human genes
       url: https://www.alliancegenome.org/search?category=disease
     - description: The landing page for Coronavirus Infectious Disease
       url: https://www.alliancegenome.org/disease/DOID:0080599
     user: https://www.alliancegenome.org
   - description: MGI disease model annotations use DO
     examples:
-    - description: Human genes and mouse homology associated with nail diseases
-      url: http://www.informatics.jax.org/disease/DOID:4123
+    - description: physical disorder
+      url: http://www.informatics.jax.org/disease/DOID:0080015
     user: http://www.informatics.jax.org/disease
   - description: Immune Epitope Database
     examples:
-    - description: Search for experimental data on antibody and T cell epitopes associated
-        with human diseases in the DO. To search for DO disease terms, use the Disease
-        search box on the front page.
+    - description: Aantibody and T cell epitopes associated with human diseases
       url: https://www.iedb.org
     user: https://www.iedb.org
 - activity_status: active
@@ -1479,8 +1477,24 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/cob.owl
   preferredPrefix: COB
   products:
-  - id: cob.owl
+  - description: Core Ontology for Biology and Biomedicine, main ontology
+    id: cob.owl
     ontology_purl: http://purl.obolibrary.org/obo/cob.owl
+    title: COB
+  - description: base module for COB
+    id: cob/cob-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/cob/cob-base.owl
+    title: COB base module
+  - id: cob/cob-to-external.owl
+    ontology_purl: http://purl.obolibrary.org/obo/cob/cob-to-external.owl
+    title: COB to external
+    type: BridgeOntology
+  - description: demo of COB including subsets of other ontologies (Experimental,
+      for demo purposes only)
+    id: cob/products/demo-cob.owl
+    ontology_purl: http://purl.obolibrary.org/obo/cob/products/demo-cob.owl
+    status: alpha
+    title: COB demo ontology (experimental)
   repository: https://github.com/OBOFoundry/COB
   title: Core Ontology for Biology and Biomedicine
   tracker: https://github.com/OBOFoundry/COB/issues
@@ -2023,7 +2037,6 @@ ontologies:
   - id: nbo
   - id: ncit
   - id: ncbitaxon
-  - id: npo
   - id: pato
   - id: ro
   - id: uberon
@@ -2569,42 +2582,6 @@ ontologies:
     label: Viridiplantae
   title: Flora Phenotype Ontology
   tracker: https://github.com/flora-phenotype-ontology/flopoontology/issues
-- activity_status: active
-  build:
-    insert_ontology_id: true
-    method: obo2owl
-    source_url: http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo
-  contact:
-    email: mejino@u.washington.edu
-    label: Onard Mejino
-  description: This is currently a slimmed down version of FMA
-  domain: anatomy
-  homepage: http://si.washington.edu/projects/fma
-  id: fma
-  layout: ontology_detail
-  license:
-    label: CC BY 3.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/3.0/
-  ontology_purl: http://purl.obolibrary.org/obo/fma.owl
-  page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
-  preferredPrefix: FMA
-  products:
-  - id: fma.owl
-    ontology_purl: http://purl.obolibrary.org/obo/fma.owl
-  publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/18688289
-    title: Translating the Foundational Model of Anatomy into OWL
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/18360535
-    title: 'The foundational model of anatomy in OWL: Experience and perspectives'
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/16779026
-    title: 'Challenges in converting frame-based ontology into OWL: the Foundational
-      Model of Anatomy case-study'
-  taxon:
-    id: NCBITaxon:9606
-    label: Homo sapiens
-  title: Foundational Model of Anatomy Ontology (subset)
-  tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
 - activity_status: active
   contact:
     email: polcaes@gmail.com
@@ -4468,6 +4445,7 @@ ontologies:
   products:
   - id: ogg.owl
     ontology_purl: http://purl.obolibrary.org/obo/ogg.owl
+  repository: https://bitbucket.org/hegroup/ogg
   title: The Ontology of Genes and Genomes
   tracker: https://bitbucket.org/hegroup/ogg/issues/
 - activity_status: active
@@ -5060,7 +5038,7 @@ ontologies:
   - id: go
   - id: iao
   - id: bfo
-  - id: ncbi_taxon
+  - id: ncbitaxon
   - id: caro
   description: An ontology about groups of interacting organisms such as populations
     and communities
@@ -6933,6 +6911,7 @@ ontologies:
   products:
   - id: mamo.owl
     ontology_purl: http://purl.obolibrary.org/obo/mamo.owl
+  repository: http://sourceforge.net/p/mamo-ontology
   title: Mathematical modeling ontology
   tracker: http://sourceforge.net/p/mamo-ontology/tickets/
 - activity_status: active
@@ -7404,6 +7383,42 @@ ontologies:
     id: NCBITaxon:44484
     label: Anopheles
   title: Mosquito gross anatomy ontology
+- activity_status: inactive
+  build:
+    insert_ontology_id: true
+    method: obo2owl
+    source_url: http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo
+  contact:
+    email: mejino@u.washington.edu
+    label: Onard Mejino
+  description: This is currently a slimmed down version of FMA
+  domain: anatomy
+  homepage: http://si.washington.edu/projects/fma
+  id: fma
+  layout: ontology_detail
+  license:
+    label: CC BY 3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/fma.owl
+  page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
+  preferredPrefix: FMA
+  products:
+  - id: fma.owl
+    ontology_purl: http://purl.obolibrary.org/obo/fma.owl
+  publications:
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/18688289
+    title: Translating the Foundational Model of Anatomy into OWL
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/18360535
+    title: 'The foundational model of anatomy in OWL: Experience and perspectives'
+  - id: http://www.ncbi.nlm.nih.gov/pubmed/16779026
+    title: 'Challenges in converting frame-based ontology into OWL: the Foundational
+      Model of Anatomy case-study'
+  taxon:
+    id: NCBITaxon:9606
+    label: Homo sapiens
+  title: Foundational Model of Anatomy Ontology (subset)
+  tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
 - activity_status: inactive
   contact:
     email: louis@imbb.forth.gr
