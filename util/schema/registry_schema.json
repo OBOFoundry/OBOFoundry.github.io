@@ -68,7 +68,7 @@
 		"contact": {
 			"level": "error",
 			"principle": "http://obofoundry.org/principles/fp-011-locus-of-authority.html",
-			"description": "'contact' is a required property. This object must include an email and a label (the name of the contact). The contact is the person responsible for communications between the community and the ontology developers.",
+			"description": "'contact' is a required property. This object must include the contact person's name (i.e., label), their personal email, and their personal GitHub handle. The contact is the person responsible for communications between the community and the ontology developers.",
 			"type": "object",
 			"additionalProperties": false,
 			"properties": {
@@ -85,7 +85,7 @@
 					"pattern": "^[^@]+$"
 				}
 			},
-			"required": [ "email","label" ]
+			"required": [ "email","label","github" ]
 		},
 		"createdWith": {
 			"suggest": false
@@ -379,7 +379,7 @@
 			"type": "string"
 		},
 		"tracker": {
-			"level": "warning",
+			"level": "error",
 			"description": "'tracker' is a recommended field. The value is the URI of an issue tracker for the ontology.",
 			"type": "string",
 			"format": "uri"
