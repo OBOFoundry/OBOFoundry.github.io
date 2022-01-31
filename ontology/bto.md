@@ -2,9 +2,9 @@
 layout: ontology_detail
 id: bto
 contact:
-  email: a.chang@tu-bs.de
-  label: Antje Chang
-  github: BRENDA-Enzymes
+  email: c.dudek@tu-braunschweig.de
+  label: Christian-Alexander Dudek
+  github: chdudek
 description: A structured controlled vocabulary for the source of an enzyme comprising tissues, cell lines, cell types and cell cultures.
 domain: anatomy
 homepage: http://www.brenda-enzymes.org
