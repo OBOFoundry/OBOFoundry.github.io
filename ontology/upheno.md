@@ -14,8 +14,21 @@ contact:
   github: nicolevasilevsky
 mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
 products:
+  - id: 
+  - id: 
+products:
   - id: upheno.owl
+    title: "uPheno 1 (inactive)"
+    description: "uPheno 1 is no longer actively maintained, please start using uPheno 2 (see below)."
+    page: https://github.com/obophenotype/upheno
   - id: upheno/mp-hp-view.owl
+    title: "uPheno MP-HP equivalence axioms"
+    description: "No longer actively maintained."
+    page: https://github.com/obophenotype/upheno/tree/master/hp-mp
+  - id: upheno/v2/upheno.owl
+    title: "uPheno 2"
+    description: "The new version of uPheno, along with species independent phenotypes amd additional phenotype relations. The ontology is still in Beta status, but we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is no longer actively maintained."
+    page: https://github.com/obophenotype/upheno-dev
 usages:
   - user: https://monarchinitiative.org/
     type: analysis
