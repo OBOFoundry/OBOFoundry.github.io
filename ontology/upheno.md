@@ -14,9 +14,6 @@ contact:
   github: nicolevasilevsky
 mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
 products:
-  - id: 
-  - id: 
-products:
   - id: upheno.owl
     title: "uPheno 1 (inactive)"
     description: "uPheno 1 is no longer actively maintained, please start using uPheno 2 (see below)."
