@@ -8779,12 +8779,25 @@
             "preferredPrefix": "UPHENO",
             "products": [
                 {
+                    "description": "uPheno 1 is no longer actively maintained, please start using uPheno 2 (see below).",
                     "id": "upheno.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/upheno.owl"
+                    "ontology_purl": "http://purl.obolibrary.org/obo/upheno.owl",
+                    "page": "https://github.com/obophenotype/upheno",
+                    "title": "uPheno 1 (inactive)"
                 },
                 {
+                    "description": "No longer actively maintained.",
                     "id": "upheno/mp-hp-view.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/upheno/mp-hp-view.owl"
+                    "ontology_purl": "http://purl.obolibrary.org/obo/upheno/mp-hp-view.owl",
+                    "page": "https://github.com/obophenotype/upheno/tree/master/hp-mp",
+                    "title": "uPheno MP-HP equivalence axioms"
+                },
+                {
+                    "description": "The new version of uPheno, along with species independent phenotypes amd additional phenotype relations. The ontology is still in Beta status, but we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is no longer actively maintained.",
+                    "id": "upheno/v2/upheno.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/upheno/v2/upheno.owl",
+                    "page": "https://github.com/obophenotype/upheno-dev",
+                    "title": "uPheno 2"
                 }
             ],
             "repository": "https://github.com/obophenotype/upheno",

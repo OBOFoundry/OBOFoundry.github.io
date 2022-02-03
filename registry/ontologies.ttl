@@ -5193,6 +5193,7 @@ _:b37   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b278 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/upheno.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/upheno/mp-hp-view.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/upheno/v2/upheno.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/upheno> .
 
 _:b277  <http://obofoundry.github.io/vocabulary/method>  "archive" ;
@@ -5202,10 +5203,22 @@ _:b278  <http://www.w3.org/2000/01/rdf-schema#label>  "Nicole Vasilevsky" ;
         <http://xmlns.com/foaf/0.1/mbox>  "vasilevs@ohsu.edu" .
 
 <http://purl.obolibrary.org/obo/upheno.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/upheno.owl" .
+        <http://purl.org/dc/elements/1.1/description>  "uPheno 1 is no longer actively maintained, please start using uPheno 2 (see below)." ;
+        <http://purl.org/dc/elements/1.1/title>  "uPheno 1 (inactive)" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/upheno.owl" ;
+        <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/upheno> .
 
 <http://purl.obolibrary.org/obo/upheno/mp-hp-view.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/upheno/mp-hp-view.owl" .
+        <http://purl.org/dc/elements/1.1/description>  "No longer actively maintained." ;
+        <http://purl.org/dc/elements/1.1/title>  "uPheno MP-HP equivalence axioms" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/upheno/mp-hp-view.owl" ;
+        <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/upheno/tree/master/hp-mp> .
+
+<http://purl.obolibrary.org/obo/upheno/v2/upheno.owl>
+        <http://purl.org/dc/elements/1.1/description>  "The new version of uPheno, along with species independent phenotypes amd additional phenotype relations. The ontology is still in Beta status, but we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is no longer actively maintained." ;
+        <http://purl.org/dc/elements/1.1/title>  "uPheno 2" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/upheno/v2/upheno.owl" ;
+        <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/upheno-dev> .
 
 <http://purl.obolibrary.org/obo/vo>
         <http://identifiers.org/preferredPrefix>  "VO" ;
