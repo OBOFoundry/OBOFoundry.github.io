@@ -795,7 +795,8 @@ _:b25   <http://www.w3.org/2000/01/rdf-schema#label>  "Ceri Van Slyke" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b39 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/xco.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/xco.obo> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000> .
+        <http://xmlns.com/foaf/0.1/homepage>  <https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000> ;
+        <http://xmlns.com/foaf/0.1/page>  <https://download.rgd.mcw.edu/ontology/experimental_condition/> .
 
 _:b26   <http://obofoundry.github.io/vocabulary/checkout>  "git clone  https://github.com/AgriculturalSemantics/agro.git" .
 
@@ -5387,7 +5388,7 @@ _:b289  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Grove" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-base.owl" .
 
 _:b38   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
-        <http://obofoundry.github.io/vocabulary/source_url>  "ftp://ftp.rgd.mcw.edu/pub/ontology/experimental_condition/experimental_condition.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+        <http://obofoundry.github.io/vocabulary/source_url>  "https://download.rgd.mcw.edu/ontology/experimental_condition/experimental_condition.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
 <http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000>
         <http://purl.org/dc/elements/1.1/title>  "RGD Ontology Browser" ;
