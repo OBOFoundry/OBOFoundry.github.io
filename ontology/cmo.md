@@ -18,7 +18,7 @@ products:
   - id: cmo.obo
 title: Clinical measurement ontology
 build:
-  source_url: https://download.rgd.mcw.edu/ontology/clinical_measurement/
+  source_url: https://download.rgd.mcw.edu/ontology/clinical_measurement/clinical_measurement.obo
   method: obo2owl
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22654893

@@ -12,13 +12,13 @@ description: A controlled vocabulary for annotating gene products to pathways.
 domain: biological process
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
 tracker: https://github.com/rat-genome-database/PW-Pathway-Ontology/issues
-page: ftp://ftp.rgd.mcw.edu/pub/data_release/PW_Introduction.doc
+page: https://download.rgd.mcw.edu/ontology/pathway/
 products:
   - id: pw.owl
   - id: pw.obo
 title: Pathway ontology
 build:
-  source_url: ftp://ftp.rgd.mcw.edu/pub/data_release/ontology_obo_files/pathway/pathway.obo
+  source_url: https://download.rgd.mcw.edu/ontology/pathway/pathway.obo
   method: obo2owl
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/21478484
