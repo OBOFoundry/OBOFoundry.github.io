@@ -12,13 +12,13 @@ description: "A representation of the variety of methods used to make clinical a
 domain: clinical
 homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000
 tracker: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology/issues
-page: ftp://ftp.rgd.mcw.edu/pub/ontology/measurement_method/
+page: https://download.rgd.mcw.edu/ontology/measurement_method/
 products:
   - id: mmo.owl
   - id: mmo.obo
 title: Measurement method ontology
 build:
-  source_url: ftp://ftp.rgd.mcw.edu/pub/ontology/measurement_method/measurement_method.obo
+  source_url: https://download.rgd.mcw.edu/ontology/measurement_method/measurement_method.obo
   method: obo2owl
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22654893
