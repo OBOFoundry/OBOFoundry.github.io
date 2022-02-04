@@ -11,13 +11,14 @@ description: Conditions under which physiological and morphological measurements
 domain: clinical
 homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000
 tracker: https://github.com/rat-genome-database/XCO-experimental-condition-ontology/issues
+page: https://download.rgd.mcw.edu/ontology/experimental_condition/
 id: xco
 products:
   - id: xco.owl
   - id: xco.obo
 title: Experimental condition ontology
 build:
-  source_url: ftp://ftp.rgd.mcw.edu/pub/ontology/experimental_condition/experimental_condition.obo
+  source_url: https://download.rgd.mcw.edu/ontology/experimental_condition/experimental_condition.obo
   method: obo2owl
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22654893
@@ -38,4 +39,4 @@ preferredPrefix: XCO
 Conditions under which physiological and morphological measurements are made both in the clinic and in studies involving humans or model organisms.
 
 - [Homepage](https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000)
-- [FTP site](ftp://ftp.rgd.mcw.edu/pub/ontology/experimental_condition/)
+- [Download](https://download.rgd.mcw.edu/ontology/experimental_condition/)
