@@ -2,9 +2,9 @@
 layout: ontology_detail
 id: ohd
 contact:
-  email: alanruttenberg@gmail.com
-  label: Alan Ruttenberg
-  github: alanruttenberg
+  email: wdduncan@gmail.com
+  label: Bill Duncan
+  github: wdduncan
 description: "The Oral Health and Disease Ontology was created, initially, to represent the content of dental practice health records."
 domain: health
 homepage: https://purl.obolibrary.org/obo/ohd/home
@@ -15,11 +15,11 @@ products:
   - id: ohd.owl
   - id: ohd/dev/ohd.owl
     title: OHD dev
-title: The Oral Health and Disease Ontology
+title: Oral Health and Disease Ontology
 build:
   source_url: http://purl.obolibrary.org/obo/ohd.owl
   method: owl2obo
-tracker: https://purl.obolibrary.org/obo/ohd/issues
+tracker: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issues
 repository: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
 activity_status: active
 preferredPrefix: OHD
