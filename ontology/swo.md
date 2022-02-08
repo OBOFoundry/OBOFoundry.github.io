@@ -5,6 +5,7 @@ contact:
   email: allyson.lister@oerc.ox.ac.uk
   label: Allyson Lister
   github: allysonlister
+  orcid: 0000-0002-7702-4495
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

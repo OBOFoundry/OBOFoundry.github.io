@@ -9,6 +9,7 @@ contact:
   email: rlwalls2008@gmail.com
   label: Ramona Walls
   github: ramonawalls
+  orcid: 0000-0001-8815-0078
 mailing_list: ppo-discuss@googlegroups.com
 tracker: https://github.com/PlantPhenoOntology/PPO/issues
 license:

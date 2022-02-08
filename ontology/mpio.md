@@ -6,6 +6,7 @@ contact:
   email: mbrochhausen@uams.edu
   label: Mathias Brochhausen
   github: mbrochhausen
+  orcid: 0000-0003-1834-3856
 description: An ontology of minimum information regarding potential drug-drug interaction information.
 domain: health
 homepage: https://github.com/MPIO-Developers/MPIO

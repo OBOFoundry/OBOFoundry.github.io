@@ -5,6 +5,7 @@ contact:
   email: haendel@ohsu.edu
   label: Melissa Haendel
   github: mellybelly
+  orcid: 0000-0001-9114-8737
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0

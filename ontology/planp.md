@@ -13,6 +13,7 @@ contact:
   email: smr@stowers.org
   label: Sofia Robb
   github: srobb1
+  orcid: 0000-0002-3528-5267
 description: Planarian Phenotype Ontology is an ontology of phenotypes observed in the planarian Schmidtea mediterranea.
 domain: phenotype
 homepage: https://github.com/obophenotype/planarian-phenotype-ontology

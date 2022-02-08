@@ -8,6 +8,7 @@ contact:
   label: Amanda Hicks
   email: aellenhicks@gmail.com
   github: aellenhicks
+  orcid: 0000-0002-1795-5570
 license:
   label: CC BY 4.0
   url: http://creativecommons.org/licenses/by/4.0/

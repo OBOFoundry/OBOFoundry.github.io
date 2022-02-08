@@ -5,6 +5,7 @@ contact:
   email: alanruttenberg@gmail.com
   label: Alan Ruttenberg
   github: alanruttenberg
+  orcid: 0000-0002-1604-3078
 description: "The Oral Health and Disease Ontology was created, initially, to represent the content of dental practice health records."
 domain: health
 homepage: https://purl.obolibrary.org/obo/ohd/home

@@ -6,6 +6,7 @@ contact:
   email: safisher@upenn.edu
   label: Stephen Fisher
   github: safisher
+  orcid: 0000-0001-8034-7685
 description: An application ontology designed to annotate next-generation sequencing experiments performed on RNA.
 domain: experiments
 homepage: http://kim.bio.upenn.edu/software/ornaseq.shtml

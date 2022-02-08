@@ -11,6 +11,7 @@ contact:
   label: Cynthia Grondin
   email: cjgrondin@ncsu.edu
   github: cjgrondin
+  orcid: 0000-0002-4642-1738
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

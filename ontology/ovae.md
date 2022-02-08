@@ -6,6 +6,7 @@ contact:
   email: yongqunh@med.umich.edu
   label: Yongqunh He
   github: yongqunh
+  orcid: 0000-0001-9189-9661
 homepage: http://www.violinet.org/ovae/
 tracker: https://github.com/OVAE-Ontology/ovae/issues
 description: "A biomedical ontology in the domain of vaccine adverse events."

@@ -8,6 +8,7 @@ contact:
   email: mjyoder@illinois.edu
   label: Matt Yoder
   github: mjy
+  orcid: 0000-0002-5640-5491
 domain: anatomy
 repository: https://github.com/aszool/oarcs
 license:

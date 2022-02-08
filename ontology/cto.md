@@ -9,6 +9,7 @@ contact:
   email: alpha.tom.kodamullil@scai.fraunhofer.de
   label: Dr. Alpha Tom Kodamullil
   github: akodamullil
+  orcid: 0000-0001-9896-3531
 products:
   - id: cto.owl
 license:

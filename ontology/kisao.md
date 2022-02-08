@@ -5,6 +5,7 @@ contact:
   email: karr@mssm.edu
   label: Jonathan Karr
   github: jonrkarr
+  orcid: 0000-0002-2605-5080
 description: A classification of algorithms for simulating biology and their outputs
 domain: algorithms
 homepage: http://co.mbine.org/standards/kisao

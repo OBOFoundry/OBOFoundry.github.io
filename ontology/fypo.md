@@ -10,6 +10,7 @@ contact:
   email: vw253@cam.ac.uk
   label: Val Wood
   github: ValWood
+  orcid: 0000-0001-6330-7526
 description: FYPO is a formal ontology of phenotypes observed in fission yeast.
 domain: phenotype
 homepage: https://github.com/pombase/fypo

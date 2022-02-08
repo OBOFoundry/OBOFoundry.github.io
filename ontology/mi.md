@@ -5,6 +5,7 @@ contact:
   email: pporras@ebi.ac.uk
   label: Pablo Porras Millán
   github: pporrasebi
+  orcid: 0000-0002-8429-8793
 tracker: https://github.com/HUPO-PSI/psi-mi-CV/issues
 license:
   url: https://creativecommons.org/licenses/by/4.0/

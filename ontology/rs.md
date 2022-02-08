@@ -5,6 +5,7 @@ contact:
   email: sjwang@mcw.edu
   label: Shur-Jen Wang
   github: shurjenw
+  orcid: 0000-0001-5256-8683
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

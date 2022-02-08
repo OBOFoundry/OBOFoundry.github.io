@@ -5,6 +5,7 @@ contact:
   email: janna.hastings@gmail.com
   label: Janna Hastings
   github: jannahastings
+  orcid: 0000-0002-3469-4923
 description: An ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings.
 domain: health
 homepage: https://github.com/jannahastings/emotion-ontology

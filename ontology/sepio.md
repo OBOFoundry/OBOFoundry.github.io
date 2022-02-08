@@ -10,6 +10,7 @@ contact:
   email: mhb120@gmail.com
   label: Matthew Brush
   github: mbrush
+  orcid: 0000-0002-1048-5019
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0

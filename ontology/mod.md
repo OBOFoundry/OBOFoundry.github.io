@@ -5,6 +5,7 @@ contact:
   email: pierre-alain.binz@chuv.ch
   label: Pierre-Alain Binz
   github: pabinz
+  orcid: 0000-0002-0045-7698
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

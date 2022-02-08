@@ -5,6 +5,7 @@ contact:
   email: balhoff@renci.org
   label: Jim Balhoff
   github: balhoff
+  orcid: 0000-0002-8688-6599
 description: An ontology covering the taxonomy of teleosts (bony fish)
 domain: taxonomy
 homepage: https://github.com/phenoscape/teleost-taxonomy-ontology

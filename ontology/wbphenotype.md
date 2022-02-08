@@ -6,6 +6,7 @@ contact:
   email: cgrove@caltech.edu
   label: Chris Grove
   github: chris-grove
+  orcid: 0000-0001-9076-6015
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

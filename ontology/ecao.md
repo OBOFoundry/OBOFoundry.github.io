@@ -10,6 +10,7 @@ contact:
   email: ettensohn@cmu.edu
   label: Charles Ettensohn
   github: ettensohn
+  orcid: 0000-0002-3625-0955
 description: An ontology for the development and anatomy of the different species of the phylum Echinodermata (NCBITaxon:7586).
 domain: anatomy
 homepage: https://github.com/echinoderm-ontology/ecao_ontology

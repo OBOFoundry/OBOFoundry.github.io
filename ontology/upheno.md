@@ -12,6 +12,7 @@ contact:
   label: Nicole Vasilevsky
   email: vasilevs@ohsu.edu
   github: nicolevasilevsky
+  orcid: 0000-0001-5208-3432
 mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-editors
 products:
   - id: upheno.owl

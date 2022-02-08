@@ -6,6 +6,7 @@ contact:
   email: cp390@cam.ac.uk
   label: Clare Pilgrim
   github: Clare72
+  orcid: 0000-0002-1373-1705
 description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
 domain: phenotype
 homepage: http://purl.obolibrary.org/obo/fbcv

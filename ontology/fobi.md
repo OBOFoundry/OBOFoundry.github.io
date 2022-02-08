@@ -5,6 +5,7 @@ contact:
   email: polcaes@gmail.com
   label: Pol Castellano Escuder
   github: pcastellanoescuder
+  orcid: 0000-0001-6466-877X
 description: FOBI (Food-Biomarker Ontology) is an ontology to represent food intake data and associate it with metabolomic data
 domain: metabolomics and nutrition
 license:
