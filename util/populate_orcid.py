@@ -37,12 +37,16 @@ def update_orcid(path: Union[str, pathlib.Path]) -> None:
 
     github_handle = contact.get("github")
     if github_handle is None:
-        tqdm.write(f"Issue getting GitHub handle for {data['id']}")
+        tqdm.write(
+            f"Issue getting GitHub handle for {data['id']} for {contact.get('label')} ({contact.get('email')})"
+        )
         return
 
     orcid = get_github_to_orcid().get(github_handle)
     if orcid is None:
-        tqdm.write(f"Issue getting ORCID for {data['id']} with GitHub handle @{github_handle}")
+        tqdm.write(
+            f"Issue getting ORCID for {data['id']} with GitHub handle @{github_handle}"
+        )
         return
 
     with open(path, "w") as file:
@@ -52,7 +56,7 @@ def update_orcid(path: Union[str, pathlib.Path]) -> None:
             if line.startswith("  github:"):
                 print(f"  orcid: {orcid}", file=file)
         print("---", file=file)
-        for line in lines[idx + 1:]:
+        for line in lines[idx + 1 :]:
             print(line, file=file)
 
 
@@ -60,7 +64,7 @@ def update_orcid(path: Union[str, pathlib.Path]) -> None:
 def get_github_to_orcid() -> dict[str, str]:
     """Get a mapping from GitHub to ORCID identifiers."""
     url = "https://raw.githubusercontent.com/cthoyt/obo-community-health/main/data/contacts_table.tsv"
-    df = pd.read_csv(url, sep='\t')
+    df = pd.read_csv(url, sep="\t")
     return dict(df[["github", "orcid"]].values)
 
 
