@@ -3,6 +3,7 @@ layout: ontology_detail
 id: loggerhead
 title: Loggerhead nesting
 contact:
+  orcid: 0000-0001-6512-3296
   email: peteremidford@yahoo.com
   label: Peter Midford
 homepage: http://www.mesquiteproject.org/ontology/Loggerhead/index.html
