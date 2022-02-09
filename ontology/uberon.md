@@ -88,6 +88,7 @@ contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
   github: cmungall
+  orcid: 0000-0002-6601-2165
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22293552
     title: "Uberon, an integrative multi-species anatomy ontology"

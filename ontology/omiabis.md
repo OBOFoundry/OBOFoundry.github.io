@@ -3,6 +3,7 @@ layout: ontology_detail
 id: omiabis
 title: Ontologized MIABIS
 contact:
+  orcid: 0000-0003-1834-3856
   email: mbrochhausen@gmail.com
   label: Mathias Brochhausen
 description: An ontological version of MIABIS (Minimum Information About BIobank data Sharing)

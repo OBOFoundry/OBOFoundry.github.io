@@ -17,6 +17,7 @@ contact:
   label: Frédéric Bastian
   email: frederic.bastian@unil.ch
   github: fbastian
+  orcid: 0000-0002-9415-5104
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0

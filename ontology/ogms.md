@@ -5,6 +5,7 @@ contact:
   email: baeverma@jcvi.org
   label: Brian Aevermann
   github: BAevermann
+  orcid: 0000-0003-1346-1327
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

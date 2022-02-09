@@ -5,6 +5,7 @@ contact:
   email: ramirez@macn.gov.ar
   label: Martin Ramirez
   github: martinjramirez
+  orcid: 0000-0002-0358-0130
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0

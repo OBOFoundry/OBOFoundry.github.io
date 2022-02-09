@@ -5,6 +5,7 @@ contact:
   email: pfey@northwestern.edu
   label: Petra Fey
   github: pfey03
+  orcid: 0000-0002-4532-2703
 description: A structured controlled vocabulary of the anatomy of the slime-mold Dictyostelium discoideum
 domain: anatomy
 homepage: http://dictybase.org/

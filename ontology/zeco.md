@@ -9,6 +9,7 @@ contact:
   email: ybradford@zfin.org
   label: Yvonne Bradford
   github: ybradford
+  orcid: 0000-0002-9900-7880
 products:
   - id: zeco.obo
   - id: zeco.owl

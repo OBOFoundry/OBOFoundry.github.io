@@ -10,6 +10,7 @@ contact:
   email: whimar@ohsu.edu
   label: Marijane White
   github: marijane
+  orcid: 0000-0001-5059-4132
 license:
   url: https://creativecommons.org/licenses/by/2.0/
   label: CC BY 2.0

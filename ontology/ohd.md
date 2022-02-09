@@ -5,6 +5,7 @@ contact:
   email: wdduncan@gmail.com
   label: Bill Duncan
   github: wdduncan
+  orcid: 0000-0001-9625-1899
 description: "The Oral Health and Disease Ontology was created, initially, to represent the content of dental practice health records."
 domain: health
 homepage: https://purl.obolibrary.org/obo/ohd/home

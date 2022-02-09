@@ -5,6 +5,7 @@ contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
   github: cmungall
+  orcid: 0000-0002-6601-2165
 description: An ontology for representing spatial concepts, anatomical axes, gradients, regions, planes, sides, and surfaces
 domain: anatomy
 homepage: https://github.com/obophenotype/biological-spatial-ontology

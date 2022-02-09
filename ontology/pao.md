@@ -6,6 +6,7 @@ contact:
   email: jaiswalp@science.oregonstate.edu
   label: Pankaj Jaiswal
   github: jaiswalp
+  orcid: 0000-0002-1005-8383
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae

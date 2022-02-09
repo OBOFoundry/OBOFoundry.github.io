@@ -5,6 +5,7 @@ contact:
   email: mcarthua@mcmaster.ca
   label: Andrew G. McArthur
   github: agmcarthur
+  orcid: 0000-0002-1142-3063
 description: Antibiotic resistance genes and mutations
 homepage: https://github.com/arpcard/aro
 license:

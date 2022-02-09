@@ -5,6 +5,7 @@ contact:
   email: lynn.schriml@gmail.com
   label: Lynn Schriml
   github: lschriml
+  orcid: 0000-0001-8910-9851
 description: "An ontology representing the disease transmission process during which the pathogen is transmitted directly or indirectly from its natural reservoir, a susceptible host or source to a new host."
 domain: disease
 homepage: https://github.com/DiseaseOntology/PathogenTransmissionOntology

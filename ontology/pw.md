@@ -5,6 +5,7 @@ contact:
   email: gthayman@mcw.edu
   label: G. Thomas Hayman
   github: gthayman
+  orcid: 0000-0002-9553-7227
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

@@ -16,6 +16,7 @@ contact:
   email: m.a.laporte@cgiar.org
   label: Marie-Angélique Laporte
   github: "marieALaporte"
+  orcid: 0000-0002-8461-9745
 products:
   - id: agro.owl
     title: "AgrO"

@@ -5,6 +5,7 @@ contact:
   email: c.dudek@tu-braunschweig.de
   label: Christian-Alexander Dudek
   github: chdudek
+  orcid: 0000-0001-9117-7909
 description: A structured controlled vocabulary for the source of an enzyme comprising tissues, cell lines, cell types and cell cultures.
 domain: anatomy
 homepage: http://www.brenda-enzymes.org

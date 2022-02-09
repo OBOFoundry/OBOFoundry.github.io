@@ -5,6 +5,7 @@ contact:
   email: pfey@northwestern.edu
   label: Petra Fey
   github: pfey03
+  orcid: 0000-0002-4532-2703
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0

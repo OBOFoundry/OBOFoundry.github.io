@@ -6,6 +6,7 @@ contact:
   email: phismith@buffalo.edu
   label: Barry Smith
   github: phismith
+  orcid: 0000-0003-1384-116X
 description: The upper level ontology upon which OBO Foundry ontologies are built.
 domain: upper
 homepage: http://ifomis.org/bfo/
