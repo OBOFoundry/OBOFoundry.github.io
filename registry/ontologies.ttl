@@ -3921,10 +3921,10 @@ _:b215  <http://www.w3.org/2000/01/rdf-schema#label>  "Asiyah Yu Lin" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b216 ;
         <http://purl.org/dc/elements/1.1/description>  "The Oral Health and Disease Ontology was created, initially, to represent the content of dental practice health records." ;
-        <http://purl.org/dc/elements/1.1/title>  "The Oral Health and Disease Ontology" ;
+        <http://purl.org/dc/elements/1.1/title>  "Oral Health and Disease Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
-        <http://usefulinc.com/ns/doap#bug-database>  "https://purl.obolibrary.org/obo/ohd/issues" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ohd.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b217 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ohd.owl> ;
@@ -3934,8 +3934,8 @@ _:b215  <http://www.w3.org/2000/01/rdf-schema#label>  "Asiyah Yu Lin" ;
 _:b216  <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "http://purl.obolibrary.org/obo/ohd.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
-_:b217  <http://www.w3.org/2000/01/rdf-schema#label>  "Alan Ruttenberg" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "alanruttenberg@gmail.com" .
+_:b217  <http://www.w3.org/2000/01/rdf-schema#label>  "Bill Duncan" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "wdduncan@gmail.com" .
 
 <http://purl.obolibrary.org/obo/ohd.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ohd.owl" .
