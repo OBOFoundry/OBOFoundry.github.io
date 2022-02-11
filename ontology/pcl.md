@@ -36,6 +36,16 @@ dependencies:
   - id: nbo
   - id: chebi
   - id: so
+usages:
+  - user: https://biccn.org/
+    type: annotation
+    description: The brain data standards component of pcl is used by the brain initiative for annotation.
+    examples:
+      - url: https://www.ebi.ac.uk/ols/ontologies/pcl/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPCL_0011003
+        description: transcriptomically defined cell type Lamp5 Egln3_2 primary motor cortex GABAergic interneuron (Mus musculus)
+    publications:
+      - id: https://doi.org/10.1101/2021.10.10.463703
+        title: "Brain Data Standards Ontology: A data-driven ontology of transcriptomically defined cell types in the primary motor cortex"
 tracker: https://github.com/obophenotype/provisional_cell_ontology/issues
 license:
   url: http://creativecommons.org/licenses/by/4.0/
