@@ -9,6 +9,7 @@ contact:
   email: gerhard.mayer@rub.de
   label: Gerhard Mayer
   github: germa
+  orcid: 0000-0002-1767-2343
 integration_server: https://raw.githubusercontent.com/HUPO-PSI/mzIdentML/tree/master/cv
 domain: MS cross-linker reagents
 mailing_list: psidev-ms-vocab@lists.sourceforge.net

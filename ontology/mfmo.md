@@ -17,6 +17,7 @@ contact:
   email: druzinsk@uic.edu
   label: Robert Druzinsky
   github: RDruzinsky
+  orcid: 0000-0002-1572-1316
 dependencies:
   - id: uberon
 products:

@@ -5,6 +5,7 @@ contact:
   email: Terry.Hayamizu@jax.org
   label: Terry Hayamizu
   github: tfhayamizu
+  orcid: 0000-0002-0956-8634
 description: A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).
 domain: anatomy
 homepage: http://emouseatlas.org

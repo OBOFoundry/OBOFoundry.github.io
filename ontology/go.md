@@ -6,6 +6,7 @@ contact:
   email: suzia@stanford.edu
   label: Suzi Aleksander
   github: suzialeksander
+  orcid: 0000-0001-6787-2901
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

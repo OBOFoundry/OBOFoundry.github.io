@@ -5,6 +5,7 @@ contact:
   email: vw253@cam.ac.uk
   label: Val Wood
   github: ValWood
+  orcid: 0000-0001-6330-7526
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0

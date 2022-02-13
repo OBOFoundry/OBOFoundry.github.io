@@ -5,6 +5,7 @@ contact:
   email: jiezheng@pennmedicine.upenn.edu
   label: Jie Zheng
   github: zhengj2007
+  orcid: 0000-0002-2999-0103
 description: "An ontology of information entities."
 domain: information
 homepage: https://github.com/information-artifact-ontology/IAO/

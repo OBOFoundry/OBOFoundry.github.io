@@ -6,6 +6,7 @@ contact:
   email: fortuna@ebd.csic.es
   label: Miguel A. Fortuna
   github: miguelfortuna
+  orcid: 0000-0002-8374-1941
 description: "OntoAvida develops an integrated vocabulary for the description of the most widely-used computational approach for studying evolution using digital organisms (i.e., self-replicating computer programs that evolve within a user-defined computational environment)."
 domain: digital evolution, a branch of Artificial Life.
 homepage: https://gitlab.com/fortunalab/ontoavida

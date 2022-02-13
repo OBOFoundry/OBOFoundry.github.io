@@ -5,6 +5,7 @@ contact:
   email: diapriid@gmail.com
   label: Matt Yoder
   github: mjy
+  orcid: 0000-0002-5640-5491
 tracker: https://github.com/hymao/hao/issues
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/

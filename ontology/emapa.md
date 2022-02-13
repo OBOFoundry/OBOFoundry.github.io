@@ -5,6 +5,7 @@ contact:
   email: Terry.Hayamizu@jax.org
   label: Terry Hayamizu
   github: tfhayamizu
+  orcid: 0000-0002-0956-8634
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

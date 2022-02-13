@@ -18,6 +18,7 @@ contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
   github: cmungall
+  orcid: 0000-0002-6601-2165
 jobs:
   - id: https://travis-ci.org/oborel/obo-relations
     type: travis-ci

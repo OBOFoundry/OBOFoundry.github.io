@@ -2,6 +2,7 @@
 layout: ontology_detail
 id: aero
 contact:
+  orcid: 0000-0002-9551-6370
   email: mcourtot@gmail.com
   label: Melanie Courtot
 description: The Adverse Event Reporting Ontology (AERO) is an ontology aimed at supporting clinicians at the time of data entry, increasing quality and accuracy of reported adverse events

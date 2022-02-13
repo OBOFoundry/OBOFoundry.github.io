@@ -2,6 +2,7 @@
 layout: ontology_detail
 id: sibo
 contact:
+  orcid: 0000-0002-6601-2165
   email: cjmungall@lbl.gov
   label: Chris Mungall
 description: Social Behavior in insects

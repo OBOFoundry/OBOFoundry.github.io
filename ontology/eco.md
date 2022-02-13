@@ -21,6 +21,7 @@ contact:
   email: mgiglio@som.umaryland.edu
   label: Michelle Giglio
   github: mgiglio99
+  orcid: 0000-0001-7628-5565
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/30407590
     title: "ECO, the Evidence & Conclusion Ontology: community standard for evidence information."

@@ -14,6 +14,7 @@ contact:
   email: g.gkoutos@gmail.com
   label: George Gkoutos
   github: gkoutos
+  orcid: 0000-0002-2061-091X
 domain: phenotype
 homepage: https://github.com/pato-ontology/pato/
 repository: https://github.com/pato-ontology/pato

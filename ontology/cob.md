@@ -5,6 +5,7 @@ contact:
   email: bpeters@lji.org
   label: Bjoern Peters
   github: bpeters42
+  orcid: 0000-0002-8457-6693
 description: COB brings together key terms from a wide range of OBO projects to improve interoperability.
 domain: upper
 homepage: https://github.com/OBOFoundry/COB

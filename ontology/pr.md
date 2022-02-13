@@ -6,6 +6,7 @@ contact:
   email: dan5@georgetown.edu
   label: Darren Natale
   github: nataled
+  orcid: 0000-0001-5809-9523
 description: An ontological representation of protein-related entities
 domain: proteins
 homepage: http://proconsortium.org

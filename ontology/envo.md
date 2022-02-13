@@ -5,6 +5,7 @@ contact:
   email: p.buttigieg@gmail.com
   label: Pier Luigi Buttigieg
   github: pbuttigieg
+  orcid: 0000-0002-4366-3088
 description: Ontology of environmental features and habitats
 domain: environment
 homepage: http://environmentontology.org/

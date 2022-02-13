@@ -19,6 +19,7 @@ contact:
   label: Alexander Diehl
   email: addiehl@buffalo.edu
   github: addiehl
+  orcid: 0000-0001-9990-8331
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

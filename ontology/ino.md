@@ -10,6 +10,7 @@ contact:
   email: yongqunh@med.umich.edu
   label: Yongqun Oliver He
   github: yongqunh
+  orcid: 0000-0001-9189-9661
 homepage: https://github.com/INO-ontology/ino
 tracker: https://github.com/INO-ontology/ino/issues
 products:

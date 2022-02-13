@@ -10,6 +10,7 @@ contact:
   email: edong@umich.edu
   label: Edison Ong
   github: e4ong1031
+  orcid: 0000-0002-5159-414X
 products:
   - id: ohpi.owl
 license:

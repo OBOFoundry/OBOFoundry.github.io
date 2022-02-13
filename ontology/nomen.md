@@ -8,6 +8,7 @@ contact:
   email: diapriid@gmail.com
   label: Matt Yoder
   github: mjy
+  orcid: 0000-0002-5640-5491
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0

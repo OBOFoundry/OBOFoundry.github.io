@@ -6,6 +6,7 @@ contact:
   email: fernanda.farinelli@gmail.com
   label: Fernanda Farinelli
   github: FernandaFarinelli
+  orcid: 0000-0003-2338-8872
 description: The Obstetric and Neonatal Ontology is a structured controlled vocabulary to provide a representation of the data from electronic health records (EHRs) involved in the care of the pregnant woman, and of her baby.
 license:
   url: http://creativecommons.org/licenses/by/3.0/

@@ -5,6 +5,7 @@ contact:
   email: damion_dooley@sfu.ca
   label: Damion Dooley
   github: ddooley
+  orcid: 0000-0002-8844-9165
 description: The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary to identify, document and research foodborne pathogens and associated outbreaks.
 domain: health
 homepage: http://genepio.org/

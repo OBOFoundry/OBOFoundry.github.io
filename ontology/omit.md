@@ -6,6 +6,7 @@ contact:
   email: huang@southalabama.edu
   label: Jingshan Huang
   github: Huang-OMIT
+  orcid: 0000-0003-2408-2883
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0

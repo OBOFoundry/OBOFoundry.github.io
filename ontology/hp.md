@@ -10,6 +10,7 @@ contact:
   email: dr.sebastian.koehler@gmail.com
   label: Sebastian Koehler
   github: drseb
+  orcid: 0000-0002-5316-1399
 license:
   url: https://hpo.jax.org/app/license
   label: hpo

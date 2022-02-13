@@ -14,6 +14,7 @@ contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
   github: cmungall
+  orcid: 0000-0002-6601-2165
 description: An anatomical and developmental ontology for ctenophores (Comb Jellies)
 domain: anatomy
 homepage: https://github.com/obophenotype/ctenophore-ontology

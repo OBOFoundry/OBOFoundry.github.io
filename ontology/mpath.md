@@ -5,6 +5,7 @@ contact:
   email: pns12@hermes.cam.ac.uk
   label: Paul Schofield
   github: PaulNSchofield
+  orcid: 0000-0002-5111-7263
 description: A structured controlled vocabulary of mutant and transgenic mouse pathology phenotypes
 domain: health
 homepage: http://www.pathbase.net

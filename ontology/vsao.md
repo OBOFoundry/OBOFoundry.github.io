@@ -2,6 +2,7 @@
 layout: ontology_detail
 id: vsao
 contact:
+  orcid: 0000-0003-3162-7490
   email: wasila.dahdul@usd.edu
   label: Wasila Dahdul
 description: Vertebrate skeletal anatomy ontology.

@@ -6,6 +6,7 @@ contact:
   email: davidos@ebi.ac.uk
   label: David Osumi-Sutherland
   github: dosumis
+  orcid: 0000-0002-7073-9172
 description: "Cell types that are provisionally defined by experimental techniques such as single cell or single nucleus transcriptomics rather than a straightforward & coherent set of properties."
 domain: phenotype
 homepage: https://github.com/obophenotype/provisional_cell_ontology

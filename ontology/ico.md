@@ -11,6 +11,7 @@ contact:
   email: yongqunh@med.umich.edu
   label: Yongqun Oliver He
   github: yongqunh
+  orcid: 0000-0001-9189-9661
 homepage: https://github.com/ICO-ontology/ICO
 tracker: https://github.com/ICO-ontology/ICO/issues
 products:

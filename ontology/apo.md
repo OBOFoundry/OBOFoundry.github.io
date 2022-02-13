@@ -5,6 +5,7 @@ contact:
   email: stacia@stanford.edu
   label: Stacia R Engel
   github: srengel
+  orcid: 0000-0001-5472-917X
 tracker: https://github.com/obophenotype/ascomycete-phenotype-ontology/issues
 license:
   url: https://creativecommons.org/licenses/by/4.0/
