@@ -14,7 +14,6 @@ taxon:
   label: Anopheles
 title: Mosquito insecticide resistance
 activity_status: inactive
-validate: false
 repository: https://github.com/VEuPathDB-ontology/MIRO
 ---
 
