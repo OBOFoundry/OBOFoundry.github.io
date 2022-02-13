@@ -25,14 +25,6 @@
         "activity_status": "${data} is not one of ${schema}."
       }
     },
-    "alternative_prefix": {
-      "suggest": false,
-      "level": "info",
-      "description": "'alternative_prefix' is an optional property that enables e.g. mixed case versions of the ontology ID to be captured."
-    },
-    "alternatePrefix": {
-      "suggest": false
-    },
     "alternativePrefix": {
       "suggest": false
     },
@@ -370,9 +362,6 @@
     "source": {
       "suggest": false
     },
-    "source_url": {
-      "suggest": false
-    },
     "taxon": {
       "level": "info",
       "description": "'taxon' is an informative field. The value is the taxonomic identifier of the organism that is the subject of the ontology.",
@@ -478,15 +467,6 @@
           "description"
         ]
       }
-    },
-    "used_by": {
-      "suggest": false
-    },
-    "validate": {
-      "suggest": false
-    },
-    "was_derived_from": {
-      "suggest": false
     },
     "wasDerivedFrom": {
       "suggest": false
