@@ -2,7 +2,7 @@
 layout: ontology_detail
 id: chebi
 in_foundry_order: 1
-alternatePrefix: ChEBI
+alternativePrefix: ChEBI
 title: Chemical Entities of Biological Interest
 review:
   date: 2010
