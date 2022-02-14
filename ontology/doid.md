@@ -9,7 +9,6 @@ contact:
   orcid: 0000-0001-8910-9851
 description: An ontology for describing the classification of human diseases organized by etiology.
 twitter: diseaseontology
-facebook: https://www.facebook.com/diseaseontology
 domain: disease
 homepage: http://www.disease-ontology.org
 products:
