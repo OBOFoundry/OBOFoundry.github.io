@@ -93,7 +93,6 @@ publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/25009735
     title: "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon"
 depicted_by: http://uberon.github.io/images/u-logo.jpg
-exampleClass: UBERON_0002046
 dependencies:
   - id: go
     subset: uberon/go_import.owl
