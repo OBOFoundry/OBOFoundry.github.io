@@ -16,6 +16,7 @@ ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
 
 SCHEMA_PATH = HERE.joinpath("schema", "registry_schema.json")
 
+
 def get_data() -> Mapping[str, Mapping[str, Any]]:
     """Get the ontology metadata for all ontologies by parsing the frontmatter.."""
     ontologies = {}
