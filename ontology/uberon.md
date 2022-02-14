@@ -95,11 +95,6 @@ publications:
     title: "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon"
 depicted_by: http://uberon.github.io/images/u-logo.jpg
 exampleClass: UBERON_0002046
-redirects:
-  - match: "releases/"
-    url: "http://svn.code.sf.net/p/obo/svn/uberon/releases/"
-  - match: ""
-    url: "http://berkeleybop.org/ontologies/uberon/"
 dependencies:
   - id: go
     subset: uberon/go_import.owl
