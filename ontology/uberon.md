@@ -1,7 +1,6 @@
 ---
 layout: ontology_detail
 id: uberon
-type: owl:Ontology
 label: Uberon
 title: Uberon multi-species anatomy ontology
 build:
