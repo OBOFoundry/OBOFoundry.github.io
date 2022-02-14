@@ -17,7 +17,6 @@ twitter: uberanat
 slack: https://obo-communitygroup.slack.com/archives/C01CR698CF2
 wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
-biosharing: https://www.biosharing.org/bsg-000016
 usages:
   - user: http://bgee.org/
     seeAlso: https://www.biosharing.org/biodbcore-000228
