@@ -4,7 +4,6 @@ id: ms
 label: MS
 description: A structured controlled vocabulary for the annotation of experiments concerned with proteomics mass spectrometry.
 title: Mass spectrometry ontology
-createdWith: http://oboedit.org
 contact:
   email: gerhard.mayer@rub.de
   label: Gerhard Mayer
