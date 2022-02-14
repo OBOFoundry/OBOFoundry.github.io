@@ -273,6 +273,10 @@
       "description": "'mailing_list' is an informative field. The value is a mailing list on which ontology discussions take place.",
       "type": "string"
     },
+    "ontology_purl": {
+      "level": "error",
+      "description": "This field is automatically added in during the build process."
+    },
     "page": {
       "suggest": false
     },
@@ -460,7 +464,8 @@
     "title",
     "tracker",
     "repository",
-    "preferredPrefix"
+    "preferredPrefix",
+    "ontology_purl"
   ],
   "level": "error"
 }

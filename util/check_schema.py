@@ -12,8 +12,12 @@ from collections import Counter, defaultdict
 
 import click
 from tabulate import tabulate
-
 from utils import SCHEMA_PATH, get_data
+
+#: These keys are automatically populated during build
+SKIP_KEYS = {
+    "ontology_purl",
+}
 
 
 @click.command()
@@ -62,7 +66,11 @@ def _check_schema(max_cutoff: int = 3, links: bool = True):
 
     with SCHEMA_PATH.open() as file:
         schema = json.load(file)
-    unused = {prop for prop in schema["properties"] if prop not in property_usage}
+    unused = {
+        prop
+        for prop in schema["properties"]
+        if prop not in property_usage and prop not in SKIP_KEYS
+    }
     print("Unused properties:")
     print(*sorted(unused), sep="\n")
 
