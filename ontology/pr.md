@@ -42,8 +42,6 @@ tracker: https://github.com/PROconsortium/PRoteinOntology/issues
 publications:
   - id: https://proconsortium.org/pro_dsmnt.shtml#publication
     title: "Publications & Dissemination"
-development:
-  id_policy: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+PURLs
 usages:
   - user: https://github.com/UCDenver-ccp/CRAFT
     description: Colorado Richly Annotated Full-Text (CRAFT) Corpus; PRO is used for entity tagging and annotation

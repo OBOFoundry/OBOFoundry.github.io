@@ -1,7 +1,6 @@
 ---
 layout: ontology_detail
 id: hp
-alternativePrefix: HPO
 description: A structured and controlled vocabulary for the phenotypic features encountered in human hereditary and other disease.
 domain: phenotype
 twitter: hp_ontology

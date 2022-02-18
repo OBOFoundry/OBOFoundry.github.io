@@ -1,7 +1,6 @@
 ---
 layout: ontology_detail
 id: uberon
-type: owl:Ontology
 label: Uberon
 title: Uberon multi-species anatomy ontology
 build:
@@ -17,7 +16,6 @@ twitter: uberanat
 slack: https://obo-communitygroup.slack.com/archives/C01CR698CF2
 wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
-biosharing: https://www.biosharing.org/bsg-000016
 usages:
   - user: http://bgee.org/
     seeAlso: https://www.biosharing.org/biodbcore-000228
@@ -95,12 +93,6 @@ publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/25009735
     title: "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon"
 depicted_by: http://uberon.github.io/images/u-logo.jpg
-exampleClass: UBERON_0002046
-redirects:
-  - match: "releases/"
-    url: "http://svn.code.sf.net/p/obo/svn/uberon/releases/"
-  - match: ""
-    url: "http://berkeleybop.org/ontologies/uberon/"
 dependencies:
   - id: go
     subset: uberon/go_import.owl

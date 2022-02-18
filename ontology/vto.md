@@ -8,9 +8,6 @@ products:
   - id: vto.obo
 homepage: https://github.com/phenoscape/vertebrate-taxonomy-ontology
 tracker: https://github.com/phenoscape/vertebrate-taxonomy-ontology/issues
-redirects:
-  - match: ""
-    url: "http://vertebrate-taxonomy-ontology.s3-website-us-west-2.amazonaws.com/releases/"
 contact:
   label: Jim Balhoff
   email: balhoff@renci.org

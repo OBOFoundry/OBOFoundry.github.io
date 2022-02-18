@@ -21,9 +21,6 @@ build:
   source_url: ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAP_combined.obo
   insert_ontology_id: true
   method: obo2owl
-used_by:
-  - url: https://www.biosharing.org/biodbcore-000659
-    label: GXD
 is_obsolete: true
 replaced_by: emapa
 activity_status: inactive

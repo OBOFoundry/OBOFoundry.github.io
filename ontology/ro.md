@@ -8,7 +8,6 @@ build:
   method: vcs
   infallible: 1
 canonical: ro.owl
-aberowl_id: relo
 description: Relationship types shared across multiple ontologies
 homepage: https://oborel.github.io/
 documentation: https://oborel.github.io/obo-relations/
