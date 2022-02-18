@@ -5,6 +5,7 @@ contact:
   email: hilmar.lapp@duke.edu
   label: Hilmar Lapp
   github: hlapp
+  orcid: 0000-0001-9107-0714
 description: An application ontology to formalize annotation of phylogenetic data.
 homepage: http://www.evoio.org/wiki/MIAPA
 products:
@@ -17,7 +18,6 @@ repository: https://github.com/evoinfo/miapa
 tracker: https://github.com/evoinfo/miapa/issues
 releases: https://github.com/evoinfo/miapa/releases
 mailing_list: http://groups.google.com/group/miapa-discuss
-biosharing: https://fairsharing.org/FAIRsharing.ca48xs
 activity_status: active
 preferredPrefix: MIAPA
 ---

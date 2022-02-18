@@ -5,6 +5,7 @@ contact:
   email: robert.hoehndorf@kaust.edu.sa
   label: Robert Hoehndorf
   github: leechuck
+  orcid: 0000-0001-8149-5890
 description: Traits and phenotypes of flowering plants occurring in digitized Floras
 domain: phenotype
 homepage: https://github.com/flora-phenotype-ontology/flopoontology

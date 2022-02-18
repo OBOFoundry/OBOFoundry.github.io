@@ -13,6 +13,7 @@ contact:
   email: meghan.balk@gmail.com
   label: Meghan Balk
   github: megbalk
+  orcid: 0000-0003-2699-3066
 description: FuTRES Ontology of Vertebrate Traits is an application ontology used to convert vertebrate trait data in spreadsheet to triples. FOVT leverages the BioCollections Ontology (BCO) to link observations of individual specimens to their trait values. Traits are defined in the Ontology of Biological Attributes (OBA).
 domain: vertebrate traits
 homepage: https://github.com/futres/fovt

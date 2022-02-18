@@ -8,6 +8,7 @@ contact:
   label: Erik Segerdell
   email: esegerd3@gmail.com
   github: seger
+  orcid: 0000-0002-9611-1279
 in_foundry_order: 1
 products:
   - id: xao.owl

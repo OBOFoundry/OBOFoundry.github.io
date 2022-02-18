@@ -12,6 +12,7 @@ contact:
   email: nicole@tislab.org
   label: Nicole Vasilevsky
   github: nicolevasilevsky
+  orcid: 0000-0001-5208-3432
 depicted_by: https://raw.githubusercontent.com/monarch-initiative/mondo/master/docs/images/mondo_logo_black-stacked-small.png
 taxon:
   id: NCBITaxon:33208

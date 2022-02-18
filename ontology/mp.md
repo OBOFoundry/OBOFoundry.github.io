@@ -16,6 +16,7 @@ contact:
   email: drsbello@gmail.com
   label: Sue Bello
   github: sbello
+  orcid: 0000-0003-4606-0597
 domain: phenotype
 products:
   - id: mp.owl

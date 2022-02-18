@@ -7,6 +7,7 @@ contact:
   email: mbrochhausen@gmail.com
   label: Mathias Brochhausen
   github: mbrochhausen
+  orcid: 0000-0003-1834-3856
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

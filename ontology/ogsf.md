@@ -7,6 +7,7 @@ contact:
   label: Asiyah Yu Lin
   email: linikujp@gmail.com
   github: linikujp
+  orcid: 0000-0002-5379-5359
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0

@@ -9,6 +9,7 @@ contact:
   email: rbca.jackson@gmail.com
   label: Rebecca Jackson
   github: beckyjackson
+  orcid: 0000-0003-4871-5569
 products:
   - id: gecko.owl
 license:

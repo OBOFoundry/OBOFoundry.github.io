@@ -9,6 +9,7 @@ contact:
   email: yongqunh@med.umich.edu
   label: Yongqunh He
   github: yongqunh
+  orcid: 0000-0001-9189-9661
 domain: health
 products:
   - id: vo.owl

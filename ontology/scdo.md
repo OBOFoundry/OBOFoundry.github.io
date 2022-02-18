@@ -10,6 +10,7 @@ contact:
   email: giant.plankton@gmail.com
   label: Jade Hotchkiss
   github: JadeHotchkiss
+  orcid: 0000-0002-2193-0704
 description: An ontology for the standardization of terminology and integration of knowledge about Sickle Cell Disease.
 domain: disease
 homepage: https://scdontology.h3abionet.org/

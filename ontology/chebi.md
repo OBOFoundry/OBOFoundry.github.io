@@ -2,7 +2,6 @@
 layout: ontology_detail
 id: chebi
 in_foundry_order: 1
-alternatePrefix: ChEBI
 title: Chemical Entities of Biological Interest
 review:
   date: 2010
@@ -16,6 +15,7 @@ contact:
   email: amalik@ebi.ac.uk
   label: Adnan Malik
   github: "amalik01"
+  orcid: 0000-0001-8123-5351
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

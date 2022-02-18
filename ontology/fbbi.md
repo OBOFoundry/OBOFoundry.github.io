@@ -6,6 +6,7 @@ contact:
   email: wawong@gmail.com
   label: Willy Wong
   github: wawong
+  orcid: 0000-0002-8841-5870
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

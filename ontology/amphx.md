@@ -10,6 +10,7 @@ contact:
   email: hescriva@obs-banyuls.fr
   label: Hector Escriva
   github: hescriva
+  orcid: 0000-0001-7577-5028
 description: An ontology for the development and anatomy of Amphioxus (Branchiostoma lanceolatum).
 domain: anatomy
 homepage: https://github.com/EBISPOT/amphx_ontology

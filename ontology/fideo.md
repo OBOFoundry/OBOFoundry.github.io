@@ -9,6 +9,7 @@ contact:
   email: georgeta.bordea@u-bordeaux.fr
   label: Georgeta Bordea
   github: getbordea
+  orcid: 0000-0001-9921-8234
 products:
   - id: fideo.owl
 license:

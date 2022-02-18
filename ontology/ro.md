@@ -8,7 +8,6 @@ build:
   method: vcs
   infallible: 1
 canonical: ro.owl
-aberowl_id: relo
 description: Relationship types shared across multiple ontologies
 homepage: https://oborel.github.io/
 documentation: https://oborel.github.io/obo-relations/
@@ -19,6 +18,7 @@ contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
   github: cmungall
+  orcid: 0000-0002-6601-2165
 jobs:
   - id: https://travis-ci.org/oborel/obo-relations
     type: travis-ci

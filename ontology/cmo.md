@@ -5,6 +5,7 @@ contact:
   email: jrsmith@mcw.edu
   label: Jennifer Smith
   github: jrsjrs
+  orcid: 0000-0002-6443-9376
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
@@ -12,13 +13,13 @@ description: Morphological and physiological measurement records generated from 
 domain: clinical
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
 tracker: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology/issues
-page: ftp://ftp.rgd.mcw.edu/pub/ontology/clinical_measurement/
+page: https://download.rgd.mcw.edu/ontology/clinical_measurement/
 products:
   - id: cmo.owl
   - id: cmo.obo
 title: Clinical measurement ontology
 build:
-  source_url: ftp://ftp.rgd.mcw.edu/pub/ontology/clinical_measurement/clinical_measurement.obo
+  source_url: https://download.rgd.mcw.edu/ontology/clinical_measurement/clinical_measurement.obo
   method: obo2owl
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22654893

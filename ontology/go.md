@@ -6,6 +6,7 @@ contact:
   email: suzia@stanford.edu
   label: Suzi Aleksander
   github: suzialeksander
+  orcid: 0000-0001-6787-2901
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
@@ -16,7 +17,6 @@ review:
   date: 2010
 homepage: http://geneontology.org/
 twitter: news4go
-facebook: https://www.facebook.com/Gene-Ontology-305908656519/
 tracker: https://github.com/geneontology/go-ontology/issues/
 taxon:
   id: NCBITaxon:1

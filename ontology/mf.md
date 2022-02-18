@@ -5,6 +5,7 @@ contact:
   email: janna.hastings@gmail.com
   label: Janna Hastings
   github: jannahastings
+  orcid: 0000-0002-3469-4923
 description: The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning.
 domain: health
 homepage: https://github.com/jannahastings/mental-functioning-ontology

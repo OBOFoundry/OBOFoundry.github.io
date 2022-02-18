@@ -6,6 +6,7 @@ contact:
   email: rlwalls2008@gmail.com
   label: Ramona Walls
   github: ramonawalls
+  orcid: 0000-0001-8815-0078
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0

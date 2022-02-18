@@ -3,6 +3,7 @@ layout: ontology_detail
 id: dc_cl
 title: Dendritic cell
 contact:
+  orcid: 0000-0003-1617-8244
   email: Lindsay.Cowell@utsouthwestern.edu
   label: Lindsay Cowell
 taxon:

@@ -2,6 +2,7 @@
 layout: ontology_detail
 id: rnao
 contact:
+  orcid: 0000-0001-5985-7429
   email: BatchelorC@rsc.org
   label: Colin Batchelor
 license:

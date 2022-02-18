@@ -1,7 +1,6 @@
 ---
 layout: ontology_detail
 id: hp
-alternativePrefix: HPO
 description: A structured and controlled vocabulary for the phenotypic features encountered in human hereditary and other disease.
 domain: phenotype
 twitter: hp_ontology
@@ -10,6 +9,7 @@ contact:
   email: dr.sebastian.koehler@gmail.com
   label: Sebastian Koehler
   github: drseb
+  orcid: 0000-0002-5316-1399
 license:
   url: https://hpo.jax.org/app/license
   label: hpo

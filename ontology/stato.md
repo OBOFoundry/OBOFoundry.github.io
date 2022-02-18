@@ -8,6 +8,7 @@ contact:
   email: alejandra.gonzalez.beltran@gmail.com
   label: Alejandra Gonzalez-Beltran
   github: agbeltran
+  orcid: 0000-0003-3499-8262
 domain: statistics
 homepage: http://stato-ontology.org/
 products:

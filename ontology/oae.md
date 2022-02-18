@@ -5,6 +5,7 @@ contact:
   email: yongqunh@med.umich.edu
   label: Yongqunh He
   github: yongqunh
+  orcid: 0000-0001-9189-9661
 description: A biomedical ontology in the domain of adverse events
 domain: adverse events, health
 homepage: https://github.com/OAE-ontology/OAE/

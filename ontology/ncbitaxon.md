@@ -12,10 +12,9 @@ contact:
   email: frederic.bastian@unil.ch
   label: Frederic Bastian
   github: fbastian
+  orcid: 0000-0002-9415-5104
 description: An ontology representation of the NCBI organismal taxonomy
-source: http://www.ncbi.nlm.nih.gov/taxonomy
 wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
-createdWith: https://github.com/owlcollab/owltools/
 domain: taxonomy
 homepage: https://github.com/obophenotype/ncbitaxon
 page: http://www.ncbi.nlm.nih.gov/taxonomy
