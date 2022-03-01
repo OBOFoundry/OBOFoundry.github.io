@@ -66,7 +66,7 @@ CHEBI is an example of an OBO ontology that uses a non-date based system system 
 
 Criteria for Review
 --------
-The released ontology MUST have a version IRI that MUST resolve to the indicated version of the ontology file. The version IRI SHOULD follow a dated format (NS/YYYY-MM-DD/ontology.owl) OR follow a semantic versioning system (e.g., NS/NN.n/ontology.owl).
+The released ontology MUST have a version IRI. The version IRI SHOULD follow a dated format (NS/YYYY-MM-DD/ontology.owl) OR follow a semantic versioning system (e.g., NS/NN.n/ontology.owl).
 
 [This check is automatically validated.](checks/fp_004)
 
