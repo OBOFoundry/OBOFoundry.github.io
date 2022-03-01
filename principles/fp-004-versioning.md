@@ -12,12 +12,12 @@ The ontology provider has documented procedures for versioning the ontology, and
 Purpose
 -------------
 
-OBO projects share their ontologies using files in OWL or OBO format (see OBO Principle 2). Ontologies are expected to change over time as they are developed and refined (see OBO Principle 16 on maintenance). This will lead to a series of different files. Consumers of ontologies must be able to specify exactly which ontology files they used to encode their data or build their applications, and be able to retrieve unaltered copies of those files in perpetuity. Note that this applies only to those versions which have been officially released.
+OBO projects share their ontologies using files in OWL or OBO format (see [Principle 2](https://obofoundry.org/principles/fp-002-format.html)). Ontologies are expected to change over time as they are developed and refined (see OBO Principle 16 on maintenance). This will lead to a series of different files. Consumers of ontologies must be able to specify exactly which ontology files they used to encode their data or build their applications, and be able to retrieve unaltered copies of those files in perpetuity. Note that this applies only to those versions which have been officially released.
 
 Recommendations and Requirements
 -------
 
-In addition to an IRI specifying the current release (see Principle 3), each official release MUST have a unique [version IRI](https://www.w3.org/TR/owl2-syntax/#Ontology_IRI_and_Version_IRI) that resolves to the specific ontology artifact indicated. Consumers can then use the version IRI to uniquely identify which official release of the ontology they used, and to retrieve unaltered copies of the file(s). The versionIRI is constructed using (1) an ontology _base prefix_ (2) a version _identifier_ and (3) a path to a particular version _product_ or artifact.
+In addition to an IRI specifying the current release (see [Principle 3](https://obofoundry.org/principles/fp-003-uris.html)), each official release MUST have a unique [version IRI](https://www.w3.org/TR/owl2-syntax/#Ontology_IRI_and_Version_IRI) that resolves to the specific ontology artifact indicated. Consumers can then use the version IRI to uniquely identify which official release of the ontology they used, and to retrieve unaltered copies of the file(s). The versionIRI is constructed using (1) an ontology _base prefix_ (2) a version _identifier_ and (3) a path to a particular version _product_ or artifact.
 
 Version identifiers for the ontology artifacts themselves SHOULD be of the form “YYYY-MM-DD” (that is, a date conforming to ISO-8601), OR use a numbering system (such as semantic versioning, i.e, of the form "NN.n"), but in any case each MUST associate with a <i>distinct</i> official release. The date versioning system is preferred, as it meshes with the requirement that version IRIs be specified using dated PURLs (see below).
 
@@ -66,7 +66,7 @@ CHEBI is an example of an OBO ontology that uses a non-date based system system 
 
 Criteria for Review
 --------
-The released ontology must have a version IRI. The version IRI SHOULD follow a dated format (NS/YYYY-MM-DD/ontology.owl).
+The released ontology MUST have a version IRI that MUST resolve to the indicated version of the ontology file. The version IRI SHOULD follow a dated format (NS/YYYY-MM-DD/ontology.owl) OR follow a semantic versioning system (e.g., NS/NN.n/ontology.owl).
 
 [This check is automatically validated.](checks/fp_004)
 
