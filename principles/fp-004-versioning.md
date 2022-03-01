@@ -12,7 +12,7 @@ The ontology provider has documented procedures for versioning the ontology, and
 Purpose
 -------------
 
-OBO projects share their ontologies using files in OWL or OBO format (see [Principle 2](https://obofoundry.org/principles/fp-002-format.html)). Ontologies are expected to change over time as they are developed and refined (see OBO Principle 16 on maintenance). This will lead to a series of different files. Consumers of ontologies must be able to specify exactly which ontology files they used to encode their data or build their applications, and be able to retrieve unaltered copies of those files in perpetuity. Note that this applies only to those versions which have been officially released.
+OBO projects share their ontologies using files in OWL or OBO format (see [Principle 2](https://obofoundry.org/principles/fp-002-format.html)). Ontologies are expected to change over time as they are developed and refined (see [Principle 16](https://obofoundry.org/principles/fp-016-maintenance.html)). This will lead to a series of different files. Consumers of ontologies must be able to specify exactly which ontology files they used to encode their data or build their applications, and be able to retrieve unaltered copies of those files in perpetuity. Note that this applies only to those versions which have been officially released.
 
 Recommendations and Requirements
 -------
