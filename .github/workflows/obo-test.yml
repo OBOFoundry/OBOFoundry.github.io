@@ -23,7 +23,3 @@ jobs:
       - name: Run tests
         run: |
           make test
-      - name: Run tox tests
-        run: |
-          pip install tox
-          tox -e py

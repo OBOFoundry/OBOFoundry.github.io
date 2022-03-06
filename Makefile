@@ -45,7 +45,10 @@ pull:
 
 pull_and_build: pull all
 
-test: reports/metadata-grid.html _config.yml
+tox:
+	tox -e py
+
+test: reports/metadata-grid.html _config.yml tox
 
 integration-test: test valid-purl-report.txt
 
