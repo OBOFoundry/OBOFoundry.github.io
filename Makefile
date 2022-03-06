@@ -45,9 +45,6 @@ pull:
 
 pull_and_build: pull all
 
-tox:
-	tox -e py
-
 test: reports/metadata-grid.html _config.yml tox
 
 integration-test: test valid-purl-report.txt
@@ -142,6 +139,11 @@ extract-metadata: $(ONTS)
 
 prettify: $(ONTS)
 	./util/extract-metadata.py prettify $^
+
+# Run tox tests (requires `pip install tox`)
+tox:
+	tox -e py
+
 ### OBO Dashboard
 
 # This is the Jenkins job
