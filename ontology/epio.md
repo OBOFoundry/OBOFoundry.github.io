@@ -10,7 +10,7 @@ license:
   label: CC BY 4.0
 tracker: https://github.com/SCAI-BIO/EpilepsyOntology/issues
 dependencies:
-  - id: BFO
+  - id: bfo
 products:
   - id: epio.owl
   - id: EPIO_merged.owl
