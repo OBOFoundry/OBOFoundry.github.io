@@ -1,7 +1,6 @@
 """Test data integrity, beyond what's possible with the JSON schema."""
 
 import unittest
-from io import StringIO
 from pathlib import Path
 
 import yaml
@@ -12,6 +11,7 @@ ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
 
 
 def get_data():
+    """Get ontology data."""
     ontologies = {}
     for path in ONTOLOGY_DIRECTORY.glob("*.md"):
         with open(path) as file:
@@ -21,7 +21,7 @@ def get_data():
         idx = min(i for i, line in enumerate(lines[1:], start=1) if line == "---")
 
         # Load the data like it is YAML
-        data = yaml.safe_load(StringIO("\n".join(lines[1:idx])))
+        data = yaml.safe_load("\n".join(lines[1:idx]))
         ontologies[data["id"]] = data
     return ontologies
 
