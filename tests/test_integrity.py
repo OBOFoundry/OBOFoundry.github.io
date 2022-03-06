@@ -42,9 +42,14 @@ class TestIntegrity(unittest.TestCase):
             with self.subTest(ontology=ontology):
                 for i, dependency in enumerate(dependencies):
                     # Check that the ID is a valid OBO ontology prefix
-                    dep_id = dependency["id"]
-                    self.assertIn(
-                        dep_id,
-                        set(self.ontologies),
-                        msg=f"Ontology {ontology} has invalid dependency at index {i}: {dep_id}",
-                    )
+                    dependency_id = dependency["id"]
+                    dependency_type = dependency.get("type")
+                    if dependency_type == "BridgeOntology":
+                        self.assertTrue(dependency_id.startswith(f"{ontology}/"))
+                        # TODO what else should be checked about bridge ontologies? or are these invalid?
+                    else:
+                        self.assertIn(
+                            dependency_id,
+                            set(self.ontologies),
+                            msg=f"Ontology {ontology} has invalid dependency at index {i}: {dependency_id}",
+                        )
