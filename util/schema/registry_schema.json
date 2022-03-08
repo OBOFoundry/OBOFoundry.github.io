@@ -99,6 +99,22 @@
       "level": "error",
       "description": "'domain' is a mandatory field. The value is the scientific topic area addressed by the ontology.",
       "type": "string"
+      "enum": [
+        "upper",
+        "anatomy and development",
+        "health",
+        "phenotype",
+        "experiments",
+        "environment",
+        "biochemistry",
+        "microbiology",
+        "agriculture",
+        "diet, metabolomics and nutrition",
+        "biological systems",
+        "information technology",
+        "organisms",
+        "information"
+      ]
     },
     "tags": {
       "description": "'tags' is an optional field. The value is a list of strings, meant to extend 'domain' by providing more details.",
