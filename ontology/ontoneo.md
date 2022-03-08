@@ -13,7 +13,7 @@ license:
   label: CC BY 3.0
 domain: health
 tags:
-  - biomedical, health
+  - biomedical
 homepage: ontoneo.com
 mailing_list: http://groups.google.com/group/ontoneo-discuss
 products:
