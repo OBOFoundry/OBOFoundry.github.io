@@ -12,7 +12,9 @@ contact:
   github: JadeHotchkiss
   orcid: 0000-0002-2193-0704
 description: An ontology for the standardization of terminology and integration of knowledge about Sickle Cell Disease.
-domain: disease
+domain: health
+tags:
+  - disease
 homepage: https://scdontology.h3abionet.org/
 products:
   - id: scdo.owl

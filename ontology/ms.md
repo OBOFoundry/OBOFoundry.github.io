@@ -10,7 +10,9 @@ contact:
   github: germa
   orcid: 0000-0002-1767-2343
 integration_server: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master
-domain: MS experiments
+domain: experiments
+tags:
+  - MS experiments
 mailing_list: psidev-ms-vocab@lists.sourceforge.net
 homepage: http://www.psidev.info/groups/controlled-vocabularies
 tracker: https://github.com/HUPO-PSI/psi-ms-CV/issues

@@ -10,7 +10,9 @@ license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 description: An ontology for representing treatment of disease and diagnosis and on carcinomas and other pathological entities
-domain: medicine
+domain: health
+tags:
+  - medicine
 homepage: https://github.com/OGMS/ogms
 products:
   - id: ogms.owl

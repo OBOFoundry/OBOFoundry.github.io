@@ -10,7 +10,9 @@ title: Human Ancestry Ontology
 description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide association studies.
 homepage: https://github.com/EBISPOT/ancestro
 tracker: https://github.com/EBISPOT/ancestro/issues
-domain: ancestry
+domain: organisms
+tags:
+  - ancestry
 products:
   - id: hancestro.owl
     description: The full version of HANCESTRO in OWL format

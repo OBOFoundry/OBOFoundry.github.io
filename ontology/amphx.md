@@ -12,7 +12,7 @@ contact:
   github: hescriva
   orcid: 0000-0001-7577-5028
 description: An ontology for the development and anatomy of Amphioxus (Branchiostoma lanceolatum).
-domain: anatomy
+domain: anatomy and development
 homepage: https://github.com/EBISPOT/amphx_ontology
 products:
   - id: amphx.owl
