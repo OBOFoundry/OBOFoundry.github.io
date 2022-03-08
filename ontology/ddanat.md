@@ -7,7 +7,7 @@ contact:
   github: pfey03
   orcid: 0000-0002-4532-2703
 description: A structured controlled vocabulary of the anatomy of the slime-mold Dictyostelium discoideum
-domain: anatomy
+domain: anatomy and development
 homepage: http://dictybase.org/
 twitter: dictybase
 license:

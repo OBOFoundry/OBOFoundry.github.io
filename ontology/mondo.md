@@ -17,7 +17,9 @@ depicted_by: https://raw.githubusercontent.com/monarch-initiative/mondo/master/d
 taxon:
   id: NCBITaxon:33208
   label: Metazoa
-domain: disease
+domain: health
+tags:
+ - disease
 tracker: https://github.com/monarch-initiative/mondo/issues
 mailing_list: https://groups.google.com/group/mondo-users
 canonical: mondo.owl

@@ -7,7 +7,9 @@ contact:
   github: yongqunh
   orcid: 0000-0001-9189-9661
 description: A biomedical ontology in the domain of adverse events
-domain: adverse events, health
+domain: health
+tags:
+ - adverse events, health
 homepage: https://github.com/OAE-ontology/OAE/
 tracker: https://github.com/OAE-ontology/OAE/issues
 products:

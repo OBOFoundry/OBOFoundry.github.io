@@ -13,7 +13,7 @@ contact:
   github: cmungall
   orcid: 0000-0002-6601-2165
 description: An anatomical and developmental ontology for cephalopods
-domain: anatomy
+domain: anatomy and development
 homepage: https://github.com/obophenotype/cephalopod-ontology
 products:
   - id: ceph.owl

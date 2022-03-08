@@ -7,7 +7,9 @@ contact:
   github: Clare72
   orcid: 0000-0002-1373-1705
 description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase.
-domain: taxonomy
+domain: organisms
+tags:
+ - taxonomy
 homepage: http://www.flybase.org/
 products:
   - id: fbsp.owl

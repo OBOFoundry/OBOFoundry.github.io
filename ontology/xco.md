@@ -9,7 +9,9 @@ license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
 description: Conditions under which physiological and morphological measurements are made both in the clinic and in studies involving humans or model organisms.
-domain: clinical
+domain: health
+tags:
+ - clinical
 homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000
 tracker: https://github.com/rat-genome-database/XCO-experimental-condition-ontology/issues
 page: https://download.rgd.mcw.edu/ontology/experimental_condition/

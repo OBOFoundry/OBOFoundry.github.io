@@ -15,7 +15,9 @@ contact:
   github: DanBerrios
   orcid: 0000-0003-4312-9552
 description: RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.
-domain: radiation biology, the study of the effects of radiation on biological systems
+domain: environment
+tags:
+ - radiation biology, the study of the effects of radiation on biological systems
 homepage: https://github.com/Radiobiology-Informatics-Consortium/RBO
 products:
   - id: rbo.owl

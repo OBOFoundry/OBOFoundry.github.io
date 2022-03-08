@@ -15,7 +15,9 @@ contact:
   github: cooperl09
   orcid: 0000-0002-6379-8932
 description: The Plant Stress Ontology describes...
-domain: plant disease and abiotic stress
+domain: agriculture
+tags:
+ - plant disease and abiotic stress
 homepage: https://github.com/Planteome/plant-stress-ontology
 products:
   - id: pso.owl

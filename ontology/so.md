@@ -10,7 +10,9 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 description: A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.
-domain: biological sequence
+domain: biochemistry
+tags:
+ - biological sequence
 homepage: https://github.com/The-Sequence-Ontology/SO-Ontologies
 mailing_list: https://sourceforge.net/p/song/mailman/song-devel/
 page: https://en.wikipedia.org/wiki/Sequence_Ontology

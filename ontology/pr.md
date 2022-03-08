@@ -8,7 +8,9 @@ contact:
   github: nataled
   orcid: 0000-0001-5809-9523
 description: An ontological representation of protein-related entities
-domain: proteins
+domain: biochemistry
+tags:
+ - proteins
 homepage: http://proconsortium.org
 documentation: https://proconsortium.org/download/current/pro_readme.txt
 products:

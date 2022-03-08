@@ -3,7 +3,9 @@ layout: ontology_detail
 id: cro
 title: Contributor Role Ontology
 description: A classification of the diverse roles performed in the work leading to a published research output in the sciences. Its purpose to provide transparency in contributions to scholarly published work, to enable improved systems of attribution, credit, and accountability.
-domain: scholarly contribution roles
+domain: information
+tags:
+ - scholarly contribution roles
 homepage: https://github.com/data2health/contributor-role-ontology
 tracker: https://github.com/data2health/contributor-role-ontology/issues
 contact:

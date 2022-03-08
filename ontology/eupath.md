@@ -10,7 +10,9 @@ license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 depicted_by: https://raw.githubusercontent.com/EuPathDB/communitysite/master/assets/images/VEuPathDB-logo-s.png
-domain: functional genomics, population biology, clinical epidemiology, and microbiomes
+domain: organisms
+tags:
+ - functional genomics, population biology, clinical epidemiology, and microbiomes
 description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org).
 homepage: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
 products:

@@ -7,7 +7,9 @@ contact:
   github: gkoutos
   orcid: 0000-0002-2061-091X
 description: An ontology of human and animal behaviours and behavioural phenotypes
-domain: behavior
+domain: biological systems
+tags:
+ - behavior
 homepage: https://github.com/obo-behavior/behavior-ontology/
 products:
   - id: nbo.owl

@@ -15,7 +15,9 @@ contact:
   orcid: 0000-0002-9415-5104
 description: An ontology representation of the NCBI organismal taxonomy
 wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
-domain: taxonomy
+domain: organisms
+tags:
+ - taxonomy
 homepage: https://github.com/obophenotype/ncbitaxon
 page: http://www.ncbi.nlm.nih.gov/taxonomy
 tracker: https://github.com/obophenotype/ncbitaxon/issues

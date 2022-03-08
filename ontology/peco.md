@@ -8,7 +8,9 @@ contact:
   github: jaiswalp
   orcid: 0000-0002-1005-8383
 description: A structured, controlled vocabulary which describes the treatments, growing conditions, and/or study types used in plant biology experiments.
-domain: experimental conditions
+domain: experiments
+tags:
+ - experimental conditions
 homepage: http://planteome.org/
 page: http://browser.planteome.org/amigo/term/PECO:0007359
 products:

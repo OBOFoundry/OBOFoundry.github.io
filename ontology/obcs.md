@@ -9,7 +9,9 @@ contact:
   label: Jie Zheng
   github: zhengj2007
   orcid: 0000-0002-2999-0103
-domain: statistics
+domain: information technology
+tags:
+ - statistics
 homepage: https://github.com/obcs/obcs
 products:
   - id: obcs.owl
