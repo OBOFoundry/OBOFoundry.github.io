@@ -17,7 +17,7 @@ contact:
 description: RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.
 domain: environment
 tags:
-  - radiation biology, the study of the effects of radiation on biological systems
+  - radiation biology
 homepage: https://github.com/Radiobiology-Informatics-Consortium/RBO
 products:
   - id: rbo.owl
