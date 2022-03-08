@@ -9,7 +9,7 @@ contact:
   github: cyang0128
   orcid: 0000-0001-9202-5309
 description: An ontology to standardize research output of nutritional epidemiologic studies.
-domain: diet, metabolomics and nutrition
+domain: diet, metabolomics, and nutrition
 tags:
   - nutritional epidemiology
   - observational studies
