@@ -6,9 +6,7 @@ contact:
   email: bakerc@unb.ca
   label: Christipher Baker
 description: An ontology representation of the LIPIDMAPS nomenclature classification.
-domain: biochemistry
-tags:
- - lipids
+domain: lipids
 title: Lipid Ontology
 build:
   source_url: http://www.lipidprofiles.com/LipidOntology

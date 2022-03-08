@@ -7,9 +7,7 @@ contact:
   github: balhoff
   orcid: 0000-0002-8688-6599
 description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
-domain: organisms
-tags:
- - taxonomy
+domain: taxonomy
 homepage: https://github.com/phenoscape/taxrank
 products:
   - id: taxrank.owl

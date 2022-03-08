@@ -6,7 +6,7 @@ contact:
   email: wasila.dahdul@usd.edu
   label: Wasila Dahdul
 description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa
-domain: anatomy and development
+domain: anatomy
 homepage: http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology
 products:
   - id: tao.owl

@@ -8,7 +8,7 @@ contact:
   github: cerivs
   orcid: 0000-0002-2244-7917
 description: A structured controlled vocabulary of the anatomy and development of the Zebrafish
-domain: anatomy and development
+domain: anatomy
 homepage: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
 products:
   - id: zfa.owl

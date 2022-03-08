@@ -4,7 +4,7 @@ id: bila
 contact:
   email: henrich@embl.de
   label: Thorsten Heinrich
-domain: anatomy and development
+domain: anatomy
 homepage: http://4dx.embl.de/4DXpress
 products:
   - id: bila.owl

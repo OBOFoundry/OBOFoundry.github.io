@@ -9,9 +9,7 @@ contact:
   label: Alejandra Gonzalez-Beltran
   github: agbeltran
   orcid: 0000-0003-3499-8262
-domain: information technology
-tags:
- - statistics
+domain: statistics
 homepage: http://stato-ontology.org/
 products:
   - id: stato.owl

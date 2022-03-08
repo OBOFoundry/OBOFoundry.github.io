@@ -11,7 +11,7 @@ license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
 description: A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)
-domain: anatomy and development
+domain: anatomy
 homepage: http://hymao.org
 products:
   - id: hao.owl

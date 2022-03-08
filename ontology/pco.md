@@ -15,9 +15,7 @@ contact:
   github: ramonawalls
   orcid: 0000-0001-8815-0078
 description: An ontology about groups of interacting organisms such as populations and communities
-domain: environment
-tags:
- - collections of organisms
+domain: collections of organisms
 homepage: https://github.com/PopulationAndCommunityOntology/pco
 products:
   - id: pco.owl

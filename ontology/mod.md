@@ -13,9 +13,7 @@ publications:
   - id: https://pubmed.ncbi.nlm.nih.gov/18688235/
     title: "The PSI-MOD community standard for representation of protein modification data"
 description: PSI-MOD is an ontology consisting of terms that describe protein chemical modifications
-domain: biochemistry
-tags:
- - proteins
+domain: proteins
 homepage: http://www.psidev.info/MOD
 tracker: https://github.com/HUPO-PSI/psi-mod-CV/issues
 products:

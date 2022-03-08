@@ -10,7 +10,7 @@ license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
 description: An upper level ontology to facilitate interoperability between existing anatomy ontologies for different species
-domain: anatomy and development
+domain: anatomy
 homepage: https://github.com/obophenotype/caro/
 products:
   - id: caro.owl

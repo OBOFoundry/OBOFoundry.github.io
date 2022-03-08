@@ -3,9 +3,7 @@ layout: ontology_detail
 id: ico
 title: Informed Consent Ontology
 description: An ontology of clinical informed consents
-domain: experiments
-tags:
- - informed consent
+domain: informed consent
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0

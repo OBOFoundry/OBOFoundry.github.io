@@ -6,7 +6,7 @@ contact:
   email: wasila.dahdul@usd.edu
   label: Wasila Dahdul
 description: Vertebrate skeletal anatomy ontology.
-domain: anatomy and development
+domain: anatomy
 homepage: https://www.nescent.org/phenoscape/Main_Page
 page: https://www.phenoscape.org/wiki/Skeletal_Anatomy_Jamboree
 products:

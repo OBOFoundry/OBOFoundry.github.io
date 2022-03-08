@@ -12,7 +12,7 @@ contact:
   github: luis-gonzalez-m
   orcid: 0000-0002-9136-9932
 description: "CLAO is an ontology of anatomical terms employed in morphological descriptions for the Class Collembola (Arthropoda: Hexapoda)."
-domain: anatomy and development
+domain: anatomy
 homepage: https://github.com/luis-gonzalez-m/Collembola
 products:
   - id: clao.owl

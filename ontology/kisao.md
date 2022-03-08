@@ -7,9 +7,7 @@ contact:
   github: jonrkarr
   orcid: 0000-0002-2605-5080
 description: A classification of algorithms for simulating biology and their outputs
-domain: information technology
-tags:
- - algorithms
+domain: algorithms
 homepage: http://co.mbine.org/standards/kisao
 tracker: https://github.com/SED-ML/KiSAO/issues
 products:

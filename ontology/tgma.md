@@ -8,7 +8,7 @@ license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
 description: A structured controlled vocabulary of the anatomy of mosquitoes.
-domain: anatomy and development
+domain: anatomy
 homepage: https://www.vectorbase.org/ontology-browser
 products:
   - id: tgma.owl

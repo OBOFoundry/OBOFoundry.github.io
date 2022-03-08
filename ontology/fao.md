@@ -10,7 +10,7 @@ license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
 description: A structured controlled vocabulary for the anatomy of fungi.
-domain: anatomy and development
+domain: anatomy
 tracker: https://github.com/obophenotype/fungal-anatomy-ontology/issues
 homepage: https://github.com/obophenotype/fungal-anatomy-ontology/
 products:

@@ -15,7 +15,7 @@ contact:
   github: srobb1
   orcid: 0000-0002-3528-5267
 description: PLANA, the planarian anatomy ontology, encompasses the anatomy and life cycle stages for both __Schmidtea mediterranea__ biotypes.
-domain: anatomy and development
+domain: anatomy
 homepage: https://github.com/obophenotype/planaria-ontology
 products:
   - id: plana.owl

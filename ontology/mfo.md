@@ -5,7 +5,7 @@ contact:
   email: Thorsten.Henrich@embl-heidelberg.de
   label: Thorsten Henrich
 description: A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.
-domain: anatomy and development
+domain: anatomy
 products:
   - id: mfo.owl
 taxon:

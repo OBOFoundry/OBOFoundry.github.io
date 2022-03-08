@@ -7,7 +7,7 @@ contact:
   github: tfhayamizu
   orcid: 0000-0002-0956-8634
 description: A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).
-domain: anatomy and development
+domain: anatomy
 homepage: http://emouseatlas.org
 page: https://www.emouseatlas.org/emap/about/what_is_emap.html
 products:

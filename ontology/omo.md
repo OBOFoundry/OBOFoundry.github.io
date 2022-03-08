@@ -7,9 +7,7 @@ contact:
   github: cmungall
   orcid: 0000-0002-6601-2165
 description: An ontology specifies terms that are used to annotate ontology terms for all OBO ontologies. The ontology was developed as part of Information Artifact Ontology (IAO).
-domain: information
-tags:
- - ontology term annotation
+domain: ontology term annotation
 homepage: https://github.com/information-artifact-ontology/ontology-metadata
 tracker: https://github.com/information-artifact-ontology/ontology-metadata/issues
 products:

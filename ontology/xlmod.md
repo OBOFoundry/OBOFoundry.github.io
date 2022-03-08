@@ -9,9 +9,7 @@ contact:
   label: Lutz Fischer
   github: lutzfischer
   orcid: 0000-0003-4978-0864
-domain: biochemistry
-tags:
- - MS cross-linker reagents
+domain: MS cross-linker reagents
 mailing_list: psidev-ms-vocab@lists.sourceforge.net
 homepage: http://www.psidev.info/groups/controlled-vocabularies
 page: http://www.psidev.info/groups/controlled-vocabularies

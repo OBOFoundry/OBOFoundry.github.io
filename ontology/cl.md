@@ -26,9 +26,7 @@ license:
 taxon:
   id: NCBITaxon:33208
   label: Metazoa
-domain: anatomy and development
-tags:
- - cells
+domain: cells
 tracker: https://github.com/obophenotype/cell-ontology/issues
 mailing_list: https://groups.google.com/g/cl_edit
 publications:

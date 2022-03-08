@@ -8,7 +8,7 @@ contact:
   github: Clare72
   orcid: 0000-0002-1373-1705
 description: A structured controlled vocabulary of the development of Drosophila melanogaster.
-domain: anatomy and development
+domain: development
 homepage: http://purl.obolibrary.org/obo/fbdv
 repository: https://github.com/FlyBase/drosophila-developmental-ontology
 products:

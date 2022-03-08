@@ -8,9 +8,7 @@ contact:
   github: Clare72
   orcid: 0000-0002-1373-1705
 description: An ontology representing the gross anatomy of Drosophila melanogaster.
-domain: anatomy and development
-tags:
- - Drosophilid anatomy
+domain: Drosophilid anatomy
 homepage: http://purl.obolibrary.org/obo/fbbt
 repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
 products:

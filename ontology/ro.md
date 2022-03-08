@@ -13,9 +13,7 @@ homepage: https://oborel.github.io/
 documentation: https://oborel.github.io/obo-relations/
 tracker: https://github.com/oborel/obo-relations/issues
 mailing_list: "https://groups.google.com/forum/#!forum/obo-relations"
-domain: upper
-tags:
- - relations
+domain: relations
 contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall

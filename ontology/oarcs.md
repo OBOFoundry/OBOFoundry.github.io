@@ -9,7 +9,7 @@ contact:
   label: Matt Yoder
   github: mjy
   orcid: 0000-0002-5640-5491
-domain: anatomy and development
+domain: anatomy
 repository: https://github.com/aszool/oarcs
 license:
   url: http://creativecommons.org/licenses/by/3.0/

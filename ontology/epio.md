@@ -4,9 +4,7 @@ id: epio
 label: Epilepsy Ontology
 title: Epilepsy Ontology
 description: A application driven Epilepsy Ontology with official terms from the ILAE.
-domain: health
-tags:
- - disease
+domain: disease
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

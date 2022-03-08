@@ -3,9 +3,7 @@ layout: ontology_detail
 id: geno
 title: Genotype Ontology
 description: An integrated ontology for representing the genetic variations described in genotypes, and their causal relationships to phenotype and diseases.
-domain: biological systems
-tags:
- - genotype-to-phenotype associations
+domain: genotype-to-phenotype associations
 homepage: https://github.com/monarch-initiative/GENO-ontology/
 tracker: https://github.com/monarch-initiative/GENO-ontology/issues
 contact:

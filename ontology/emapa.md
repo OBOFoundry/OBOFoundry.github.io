@@ -10,7 +10,7 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 description: "An ontology for mouse anatomy covering embryonic development and postnatal stages."
-domain: anatomy and development
+domain: anatomy
 homepage: http://www.informatics.jax.org/expression.shtml
 tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
 products:

@@ -8,7 +8,7 @@ license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
 description: This is currently a slimmed down version of FMA
-domain: anatomy and development
+domain: anatomy
 homepage: http://si.washington.edu/projects/fma
 page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
 publications:
