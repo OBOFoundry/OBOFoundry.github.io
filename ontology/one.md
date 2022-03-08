@@ -11,7 +11,9 @@ contact:
 description: An ontology to standardize research output of nutritional epidemiologic studies.
 domain: diet, metabolomics and nutrition
 tags:
-  - nutritional epidemiology, observational studies, dietary surveys
+  - nutritional epidemiology
+  - observational studies
+  - dietary surveys
 homepage: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
 page: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
 license:
