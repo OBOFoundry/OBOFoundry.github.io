@@ -17,7 +17,8 @@ contact:
 description: Ecocore is a community ontology for the concise and controlled description of ecological traits of organisms.
 domain: environment
 tags:
-  - ecological functions, ecological interactions
+  - ecological functions
+  - ecological interactions 
 homepage: https://github.com/EcologicalSemantics/ecocore
 products:
   - id: ecocore.owl
