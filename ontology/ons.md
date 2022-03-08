@@ -9,7 +9,7 @@ contact:
   github: FrancescoVit
   orcid: 0000-0001-9125-4337
 description: An ontology for description of concepts in the nutritional studies domain.
-domain: diet, metabolomics and nutrition
+domain: diet, metabolomics, and nutrition
 tags:
   - nutrition, nutritional studies, nutrition professionals
 homepage: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
