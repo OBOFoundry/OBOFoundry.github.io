@@ -12,7 +12,8 @@ license:
 description: A reference ontology for parasite life cycle stages.
 domain: organisms
 tags:
-  - life cycle stage, parasite organism
+  - life cycle stage
+  - parasite organism
 homepage: https://github.com/OPL-ontology/OPL
 products:
   - id: opl.owl
