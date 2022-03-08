@@ -18,7 +18,7 @@ description: Ecocore is a community ontology for the concise and controlled desc
 domain: environment
 tags:
   - ecological functions
-  - ecological interactions 
+  - ecological interactions
 homepage: https://github.com/EcologicalSemantics/ecocore
 products:
   - id: ecocore.owl
