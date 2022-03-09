@@ -2341,18 +2341,15 @@ ontologies:
     type: annotation and query
     user: https://microbiomedb.org
 - activity_status: active
-  build:
-    method: obo2owl
-    source_url: https://raw.githubusercontent.com/CTDbase/exposure-ontology/master/src/ontology/exo.obo
   contact:
-    email: cjgrondin@ncsu.edu
-    github: cjgrondin
-    label: Cynthia Grondin
-    orcid: 0000-0002-4642-1738
+    email: annethessen@gmail.com
+    github: diatomsRcool
+    label: Anne Thessen
+    orcid: 0000-0002-2908-3327
   description: Vocabularies for describing exposure data to inform understanding of
     environmental health.
   domain: health
-  homepage: http://ctdbase.org/help/exposureHelp.jsp
+  homepage: https://github.com/CTDbase/exposure-ontology
   id: exo
   layout: ontology_detail
   license:
@@ -2360,7 +2357,6 @@ ontologies:
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/exo.owl
-  page: http://ctdbase.org/downloads/#exposures
   preferredPrefix: ExO
   products:
   - id: exo.owl
