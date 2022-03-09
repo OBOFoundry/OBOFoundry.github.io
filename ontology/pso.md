@@ -17,7 +17,8 @@ contact:
 description: The Plant Stress Ontology describes...
 domain: agriculture
 tags:
-  - plant disease and abiotic stress
+  - plant disease
+  - abiotic stress
 homepage: https://github.com/Planteome/plant-stress-ontology
 products:
   - id: pso.owl
