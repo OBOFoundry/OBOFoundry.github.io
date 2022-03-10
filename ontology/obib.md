@@ -8,7 +8,7 @@ contact:
   github: zhengj2007
   orcid: 0000-0002-2999-0103
 description: An ontology built for annotation and modeling of biobank repository and biobanking administration
-domain: experiments
+domain: investigations
 tags:
   - biobanking
   - specimens

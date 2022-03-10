@@ -5,7 +5,7 @@ contact:
   email: psidev-gps-dev@lists.sourceforge.net
   label: SEP developers via the PSI and MSI mailing lists
 description: A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments.
-domain: experiments
+domain: investigations
 tags:
   - provenance
 homepage: http://psidev.info/index.php?q=node/312

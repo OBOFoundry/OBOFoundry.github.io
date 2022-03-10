@@ -3,7 +3,7 @@ layout: ontology_detail
 id: ico
 title: Informed Consent Ontology
 description: An ontology of clinical informed consents
-domain: experiments
+domain: investigations
 tags:
   - informed consent
 license:

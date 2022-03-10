@@ -9,7 +9,7 @@ review:
     label: PDF
     link: https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc
 description: An integrated ontology for the description of life-science and clinical investigations
-domain: experiments
+domain: investigations
 homepage: http://obi-ontology.org
 mailing_list: http://groups.google.com/group/obi-users
 tracker: http://purl.obolibrary.org/obo/obi/tracker

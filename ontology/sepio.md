@@ -3,7 +3,7 @@ layout: ontology_detail
 id: sepio
 title: Scientific Evidence and Provenance Information Ontology
 description: An ontology for representing the provenance of scientific claims and the evidence that supports them.
-domain: experiments
+domain: investigations
 tags:
   - scientific claims
   - evidence
