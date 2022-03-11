@@ -8,7 +8,10 @@ contact:
   github: miguelfortuna
   orcid: 0000-0002-8374-1941
 description: "OntoAvida develops an integrated vocabulary for the description of the most widely-used computational approach for studying evolution using digital organisms (i.e., self-replicating computer programs that evolve within a user-defined computational environment)."
-domain: digital evolution, a branch of Artificial Life.
+domain: simulation
+tags:
+  - digital evolution
+  - artificial life
 homepage: https://gitlab.com/fortunalab/ontoavida
 products:
   - id: ontoavida.owl

@@ -8,7 +8,7 @@ contact:
   github: cerivs
   orcid: 0000-0002-2244-7917
 description: Developmental stages of the Zebrafish
-domain: anatomy
+domain: anatomy and development
 homepage: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
 page: https://github.com/obophenotype/developmental-stage-ontologies/wiki/ZFS
 tracker: https://github.com/cerivs/zebrafish-anatomical-ontology/issues

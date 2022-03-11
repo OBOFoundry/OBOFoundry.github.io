@@ -7,7 +7,7 @@ contact:
   github: chdudek
   orcid: 0000-0001-9117-7909
 description: A structured controlled vocabulary for the source of an enzyme comprising tissues, cell lines, cell types and cell cultures.
-domain: anatomy
+domain: anatomy and development
 homepage: http://www.brenda-enzymes.org
 tracker: https://github.com/BRENDA-Enzymes/BTO/issues
 page: https://en.wikipedia.org/wiki/BRENDA_tissue_ontology

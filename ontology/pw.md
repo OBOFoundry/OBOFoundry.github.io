@@ -10,7 +10,9 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 description: A controlled vocabulary for annotating gene products to pathways.
-domain: biological process
+domain: biological systems
+tags:
+  - biological process
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
 tracker: https://github.com/rat-genome-database/PW-Pathway-Ontology/issues
 page: https://download.rgd.mcw.edu/ontology/pathway/

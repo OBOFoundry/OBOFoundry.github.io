@@ -12,7 +12,7 @@ contact:
   github: L-Leclere
   orcid: 0000-0002-7440-0467
 description: The Clytia hemisphaerica Development and Anatomy Ontology (CLYH) describes the anatomical and developmental features of the Clytia hemisphaerica life cycle.
-domain: anatomy
+domain: anatomy and development
 homepage: https://github.com/EBISPOT/clyh_ontology
 products:
   - id: clyh.owl

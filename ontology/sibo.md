@@ -6,7 +6,9 @@ contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
 description: Social Behavior in insects
-domain: behavior
+domain: biological systems
+tags:
+  - behavior
 homepage: https://github.com/obophenotype/sibo
 tracker: https://github.com/obophenotype/sibo/issues
 products:
