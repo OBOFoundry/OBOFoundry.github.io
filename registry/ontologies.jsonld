@@ -8100,7 +8100,7 @@
             "depicted_by": "http://sequenceontology.org/img/so_icon.png",
             "description": "A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.",
             "domain": "biological sequence",
-            "homepage": "https://github.com/The-Sequence-Ontology/SO-Ontologies",
+            "homepage": "http://www.sequenceontology.org/",
             "id": "so",
             "layout": "ontology_detail",
             "license": {
@@ -8115,11 +8115,25 @@
             "products": [
                 {
                     "id": "so.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/so.owl"
+                    "ontology_purl": "http://purl.obolibrary.org/obo/so.owl",
+                    "title": "Main SO OWL release"
                 },
                 {
                     "id": "so.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/so.obo"
+                    "ontology_purl": "http://purl.obolibrary.org/obo/so.obo",
+                    "title": "Main SO release in OBO Format"
+                },
+                {
+                    "description": "This subset includes only locatable sequence features and is designed for use in such outputs as GFF3",
+                    "id": "so/subsets/SOFA.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/so/subsets/SOFA.owl",
+                    "title": "Sequence Ontology Feature Annotation (SOFA) subset (OWL)"
+                },
+                {
+                    "description": "This subset includes only locatable sequence features and is designed for use in such outputs as GFF3",
+                    "id": "so/subsets/SOFA.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/so/subsets/SOFA.obo",
+                    "title": "Sequence Ontology Feature Annotation (SOFA) subset (OBO Format)"
                 }
             ],
             "publications": [
