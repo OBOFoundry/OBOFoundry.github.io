@@ -4310,7 +4310,9 @@ _:b233  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqunh He" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b236 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/so.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/so.obo> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/The-Sequence-Ontology/SO-Ontologies> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/so/subsets/SOFA.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/so/subsets/SOFA.obo> ;
+        <http://xmlns.com/foaf/0.1/homepage>  <http://www.sequenceontology.org/> ;
         <http://xmlns.com/foaf/0.1/page>  <https://en.wikipedia.org/wiki/Sequence_Ontology> .
 
 _:b234  <http://www.w3.org/2000/01/rdf-schema#label>  "David Osumi-Sutherland" ;
@@ -4852,10 +4854,22 @@ _:b236  <http://www.w3.org/2000/01/rdf-schema#label>  "Karen Eilbeck" ;
         <http://xmlns.com/foaf/0.1/mbox>  "keilbeck@genetics.utah.edu" .
 
 <http://purl.obolibrary.org/obo/so.owl>
+        <http://purl.org/dc/elements/1.1/title>  "Main SO OWL release" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/so.owl" .
 
 <http://purl.obolibrary.org/obo/so.obo>
+        <http://purl.org/dc/elements/1.1/title>  "Main SO release in OBO Format" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/so.obo" .
+
+<http://purl.obolibrary.org/obo/so/subsets/SOFA.owl>
+        <http://purl.org/dc/elements/1.1/description>  "This subset includes only locatable sequence features and is designed for use in such outputs as GFF3" ;
+        <http://purl.org/dc/elements/1.1/title>  "Sequence Ontology Feature Annotation (SOFA) subset (OWL)" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/so/subsets/SOFA.owl" .
+
+<http://purl.obolibrary.org/obo/so/subsets/SOFA.obo>
+        <http://purl.org/dc/elements/1.1/description>  "This subset includes only locatable sequence features and is designed for use in such outputs as GFF3" ;
+        <http://purl.org/dc/elements/1.1/title>  "Sequence Ontology Feature Annotation (SOFA) subset (OBO Format)" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/so/subsets/SOFA.obo" .
 
 <http://purl.obolibrary.org/obo/spd>
         <http://identifiers.org/preferredPrefix>  "SPD" ;
