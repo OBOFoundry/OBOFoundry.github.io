@@ -97,9 +97,33 @@
       "suggest": false
     },
     "domain": {
-      "level": "warning",
-      "description": "'domain' is a recommended field. The value is the scientific topic area addressed by the ontology.",
-      "type": "string"
+      "level": "error",
+      "description": "'domain' is a mandatory field. The value is the scientific topic area addressed by the ontology.",
+      "type": "string",
+      "enum": [
+        "upper",
+        "anatomy and development",
+        "health",
+        "phenotype",
+        "investigations",
+        "environment",
+        "biochemistry",
+        "microbiology",
+        "agriculture",
+        "diet, metabolomics, and nutrition",
+        "biological systems",
+        "information technology",
+        "organisms",
+        "information",
+        "simulation"
+      ]
+    },
+    "tags": {
+      "description": "'tags' is an optional field. The value is a list of strings, meant to extend 'domain' by providing more details.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "funded_by": {
       "suggest": false

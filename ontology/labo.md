@@ -8,7 +8,9 @@ contact:
   github: pfabry
   orcid: 0000-0002-3336-2476
 description: LABO is an ontology of informational entities formalizing clinical laboratory tests prescriptions and reporting documents.
-domain: clinical documentation
+domain: information
+tags:
+  - clinical documentation
 usages:
   - user: https://griis.ca/
     type: database architecture

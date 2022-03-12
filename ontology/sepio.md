@@ -3,7 +3,10 @@ layout: ontology_detail
 id: sepio
 title: Scientific Evidence and Provenance Information Ontology
 description: An ontology for representing the provenance of scientific claims and the evidence that supports them.
-domain: scientific claims, evidence
+domain: investigations
+tags:
+  - scientific claims
+  - evidence
 homepage: https://github.com/monarch-initiative/SEPIO-ontology
 tracker: https://github.com/monarch-initiative/SEPIO-ontology/issues
 contact:
