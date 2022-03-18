@@ -1,6 +1,6 @@
 ---
 layout: ontology_detail
-id: aeo
+id: aEo
 contact:
   email: J.Bard@ed.ac.uk
   label: Jonathan Bard
