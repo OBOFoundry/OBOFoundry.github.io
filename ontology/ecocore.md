@@ -15,7 +15,10 @@ contact:
   github: pbuttigieg
   orcid: 0000-0002-4366-3088
 description: Ecocore is a community ontology for the concise and controlled description of ecological traits of organisms.
-domain: ecological functions, ecological interactions
+domain: environment
+tags:
+  - ecological functions
+  - ecological interactions
 homepage: https://github.com/EcologicalSemantics/ecocore
 products:
   - id: ecocore.owl

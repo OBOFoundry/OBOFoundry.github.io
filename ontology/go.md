@@ -21,7 +21,9 @@ tracker: https://github.com/geneontology/go-ontology/issues/
 taxon:
   id: NCBITaxon:1
   label: All life
-domain: biology
+domain: biological systems
+tags:
+  - biology
 integration_server: http://build.berkeleybop.org/view/GO
 dependencies:
   - id: uberon

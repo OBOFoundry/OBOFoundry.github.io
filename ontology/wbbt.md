@@ -11,7 +11,7 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis elegans</i>.
-domain: anatomy
+domain: anatomy and development
 homepage: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
 tracker: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology/issues
 products:

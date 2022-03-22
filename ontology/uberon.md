@@ -78,7 +78,7 @@ license:
 taxon:
   id: NCBITaxon:33208
   label: Metazoa
-domain: anatomy
+domain: anatomy and development
 repository: https://github.com/obophenotype/uberon
 tracker: https://github.com/obophenotype/uberon/issues
 releases: http://purl.obolibrary.org/obo/uberon/releases/

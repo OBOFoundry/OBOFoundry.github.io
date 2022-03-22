@@ -54,7 +54,7 @@
     "contact": {
       "level": "error",
       "principle": "http://obofoundry.org/principles/fp-011-locus-of-authority.html",
-      "description": "'contact' is a required property. This object must include the contact person's name (i.e., label), their personal email, and their personal GitHub handle. The contact is the person responsible for communications between the community and the ontology developers.",
+      "description": "'contact' is a required property. This object must include the contact person's name (i.e., label), their personal email, their ORCID, and their personal GitHub handle. The contact is the person responsible for communications between the community and the ontology developers.",
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -78,7 +78,8 @@
       "required": [
         "email",
         "label",
-        "github"
+        "github",
+        "orcid"
       ]
     },
     "description": {
@@ -96,9 +97,33 @@
       "suggest": false
     },
     "domain": {
-      "level": "warning",
-      "description": "'domain' is a recommended field. The value is the scientific topic area addressed by the ontology.",
-      "type": "string"
+      "level": "error",
+      "description": "'domain' is a mandatory field. The value is the scientific topic area addressed by the ontology.",
+      "type": "string",
+      "enum": [
+        "upper",
+        "anatomy and development",
+        "health",
+        "phenotype",
+        "investigations",
+        "environment",
+        "biochemistry",
+        "microbiology",
+        "agriculture",
+        "diet, metabolomics, and nutrition",
+        "biological systems",
+        "information technology",
+        "organisms",
+        "information",
+        "simulation"
+      ]
+    },
+    "tags": {
+      "description": "'tags' is an optional field. The value is a list of strings, meant to extend 'domain' by providing more details.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "funded_by": {
       "suggest": false

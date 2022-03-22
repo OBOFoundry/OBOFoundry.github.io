@@ -121,7 +121,7 @@ ontologies:
     orcid: 0000-0001-8910-9851
   description: An ontology for describing the classification of human diseases organized
     by etiology.
-  domain: disease
+  domain: health
   homepage: http://www.disease-ontology.org
   id: doid
   in_foundry_order: 1
@@ -150,6 +150,8 @@ ontologies:
     document:
       label: PDF
       link: https://drive.google.com/open?id=0B8vqEgF1N0NIZ082U2JETHlSTGs
+  tags:
+  - disease
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
@@ -208,7 +210,7 @@ ontologies:
     type: BridgeOntology
   depicted_by: http://geneontology.org/assets/go-logo-icon.mini.png
   description: An ontology for describing the function of genes and gene products
-  domain: biology
+  domain: biological systems
   homepage: http://geneontology.org/
   id: go
   in_foundry_order: 1
@@ -288,6 +290,8 @@ ontologies:
   repository: https://github.com/geneontology/go-ontology
   review:
     date: 2010
+  tags:
+  - biology
   taxon:
     id: NCBITaxon:1
     label: All life
@@ -346,7 +350,7 @@ ontologies:
   depicted_by: https://svn.code.sf.net/p/obi/code/trunk/web/htdocs/images/obi-lotext.png
   description: An integrated ontology for the description of life-science and clinical
     investigations
-  domain: experiments
+  domain: investigations
   homepage: http://obi-ontology.org
   id: obi
   in_foundry_order: 1
@@ -557,7 +561,7 @@ ontologies:
   depicted_by: https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png
   description: An ontological representation of protein-related entities
   documentation: https://proconsortium.org/download/current/pro_readme.txt
-  domain: proteins
+  domain: biochemistry
   homepage: http://proconsortium.org
   id: pr
   in_foundry_order: 1
@@ -583,6 +587,8 @@ ontologies:
   repository: https://github.com/PROconsortium/PRoteinOntology
   review:
     date: 2010
+  tags:
+  - proteins
   title: PRotein Ontology (PRO)
   tracker: https://github.com/PROconsortium/PRoteinOntology/issues
   usages:
@@ -611,7 +617,7 @@ ontologies:
     orcid: 0000-0002-9611-1279
   description: XAO represents the anatomy and development of the African frogs Xenopus
     laevis and tropicalis.
-  domain: anatomy
+  domain: anatomy and development
   homepage: http://www.xenbase.org/anatomy/xao.do?method=display
   id: xao
   in_foundry_order: 1
@@ -660,7 +666,7 @@ ontologies:
     orcid: 0000-0002-2244-7917
   description: A structured controlled vocabulary of the anatomy and development of
     the Zebrafish
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
   id: zfa
   in_foundry_order: 1
@@ -722,7 +728,7 @@ ontologies:
   - id: xco
   description: Ontology of agronomic practices, agronomic techniques, and agronomic
     variables used in agronomic experiments
-  domain: agronomy
+  domain: agriculture
   homepage: https://github.com/AgriculturalSemantics/agro
   id: agro
   jobs:
@@ -745,6 +751,8 @@ ontologies:
     title: 'Data-driven Agricultural Research for Development: A Need for Data Harmonization
       Via Semantics.'
   repository: https://github.com/AgriculturalSemantics/agro
+  tags:
+  - agronomy
   title: Agronomy Ontology
   tracker: https://github.com/AgriculturalSemantics/agro/issues/
   usages:
@@ -775,7 +783,7 @@ ontologies:
     structures of the exoskeleton and the skeletomuscular system. It aims to serve
     as the basic backbone of generalized terms to be expanded with order-specific
     terminology.
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/insect-morphology/aism
   id: aism
   layout: ontology_detail
@@ -809,7 +817,7 @@ ontologies:
   - id: uberon
   description: An ontology for the development and anatomy of Amphioxus (Branchiostoma
     lanceolatum).
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/EBISPOT/amphx_ontology
   id: amphx
   layout: ontology_detail
@@ -915,7 +923,7 @@ ontologies:
   description: An ontology to support the interoperability of biodiversity data, including
     data on museum collections, environmental/metagenomic samples, and ecological
     surveys.
-  domain: biodiversity collections
+  domain: organisms
   homepage: https://github.com/BiodiversityOntologies/bco
   id: bco
   in_foundry: false
@@ -930,6 +938,8 @@ ontologies:
   - id: bco.owl
     ontology_purl: http://purl.obolibrary.org/obo/bco.owl
   repository: https://github.com/BiodiversityOntologies/bco
+  tags:
+  - biodiversity collections
   title: Biological Collections Ontology
   tracker: https://github.com/BiodiversityOntologies/bco/issues
 - activity_status: active
@@ -946,7 +956,7 @@ ontologies:
     orcid: 0000-0002-6601-2165
   description: An ontology for representing spatial concepts, anatomical axes, gradients,
     regions, planes, sides, and surfaces
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/biological-spatial-ontology
   id: bspo
   layout: ontology_detail
@@ -980,7 +990,7 @@ ontologies:
     orcid: 0000-0001-9117-7909
   description: A structured controlled vocabulary for the source of an enzyme comprising
     tissues, cell lines, cell types and cell cultures.
-  domain: anatomy
+  domain: anatomy and development
   homepage: http://www.brenda-enzymes.org
   id: bto
   layout: ontology_detail
@@ -1017,7 +1027,7 @@ ontologies:
     orcid: 0000-0001-9114-8737
   description: An upper level ontology to facilitate interoperability between existing
     anatomy ontologies for different species
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/caro/
   id: caro
   layout: ontology_detail
@@ -1077,7 +1087,7 @@ ontologies:
   - id: envo
   description: CDNO provides structured terminologies to describe nutritional attributes
     of material entities that contribute to human diet.
-  domain: diet, metabolomics and nutrition
+  domain: diet, metabolomics, and nutrition
   homepage: https://github.com/Southern-Cross-Plant-Science/cdno
   id: cdno
   layout: ontology_detail
@@ -1267,7 +1277,7 @@ ontologies:
   - id: pato
   description: The Cell Ontology is a structured controlled vocabulary for cell types
     in animals.
-  domain: cells
+  domain: anatomy and development
   homepage: https://obophenotype.github.io/cell-ontology/
   id: cl
   integration_server: http://build.berkeleybop.org/job/build-cl/
@@ -1317,6 +1327,8 @@ ontologies:
     title: 'The Cell Ontology 2016: enhanced content, modularization, and ontology
       interoperability.'
   repository: https://github.com/obophenotype/cell-ontology
+  tags:
+  - cells
   taxon:
     id: NCBITaxon:33208
     label: Metazoa
@@ -1354,7 +1366,7 @@ ontologies:
   - id: ro
   description: 'CLAO is an ontology of anatomical terms employed in morphological
     descriptions for the Class Collembola (Arthropoda: Hexapoda).'
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/luis-gonzalez-m/Collembola
   id: clao
   layout: ontology_detail
@@ -1416,7 +1428,7 @@ ontologies:
   - id: iao
   description: The Clytia hemisphaerica Development and Anatomy Ontology (CLYH) describes
     the anatomical and developmental features of the Clytia hemisphaerica life cycle.
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/EBISPOT/clyh_ontology
   id: clyh
   layout: ontology_detail
@@ -1449,7 +1461,7 @@ ontologies:
     orcid: 0000-0002-6443-9376
   description: Morphological and physiological measurement records generated from
     clinical and model organism research and health programs.
-  domain: clinical
+  domain: health
   homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
   id: cmo
   layout: ontology_detail
@@ -1472,6 +1484,8 @@ ontologies:
     title: 'The clinical measurement, measurement method and experimental condition
       ontologies: expansion, improvements and new applications.'
   repository: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology
+  tags:
+  - clinical
   title: Clinical measurement ontology
   tracker: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology/issues
 - activity_status: active
@@ -1532,7 +1546,7 @@ ontologies:
     the anatomy and phenotype of beetles in biodiversity research. It has been built
     using the Ontology Develoment Kit, with the Ontology for the Anatomy of the Insect
     Skeleto-Muscular system (AISM) as a backbone.
-  domain: Insect Anatomy.
+  domain: anatomy and development
   homepage: https://github.com/insect-morphology/colao
   id: colao
   layout: ontology_detail
@@ -1548,6 +1562,8 @@ ontologies:
   - id: colao.obo
     ontology_purl: http://purl.obolibrary.org/obo/colao.obo
   repository: https://github.com/insect-morphology/colao
+  tags:
+  - insect anatomy
   title: Coleoptera Anatomy Ontology (COLAO)
   tracker: https://github.com/insect-morphology/colao/issues
 - activity_status: active
@@ -1564,7 +1580,7 @@ ontologies:
     to a published research output in the sciences. Its purpose to provide transparency
     in contributions to scholarly published work, to enable improved systems of attribution,
     credit, and accountability.
-  domain: scholarly contribution roles
+  domain: information
   homepage: https://github.com/data2health/contributor-role-ontology
   id: cro
   layout: ontology_detail
@@ -1579,6 +1595,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/cro.owl
     title: CRO
   repository: https://github.com/data2health/contributor-role-ontology
+  tags:
+  - scholarly contribution roles
   title: Contributor Role Ontology
   tracker: https://github.com/data2health/contributor-role-ontology/issues
 - activity_status: active
@@ -1596,7 +1614,7 @@ ontologies:
   - id: uberon
   - id: ro
   description: An anatomical and developmental ontology for ctenophores (Comb Jellies)
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/ctenophore-ontology
   id: cteno
   jobs:
@@ -1682,7 +1700,7 @@ ontologies:
     orcid: 0000-0002-4532-2703
   description: A structured controlled vocabulary of the anatomy of the slime-mold
     Dictyostelium discoideum
-  domain: anatomy
+  domain: anatomy and development
   homepage: http://dictybase.org/
   id: ddanat
   layout: ontology_detail
@@ -1716,7 +1734,7 @@ ontologies:
     orcid: 0000-0002-4532-2703
   description: A structured controlled vocabulary of phenotypes of the slime-mould
     <i>Dictyostelium discoideum</i>.
-  domain: anatomy
+  domain: anatomy and development
   homepage: http://dictybase.org/
   id: ddpheno
   layout: ontology_detail
@@ -1776,7 +1794,7 @@ ontologies:
   description: Ontology for drivers and triggers of human diseases, built to classify
     ExO ontology exposure stressors. An application ontology. Built in collaboration
     with EnvO, ExO, ECTO and ChEBI.
-  domain: disease
+  domain: health
   homepage: http://www.disease-ontology.org
   id: disdriv
   layout: ontology_detail
@@ -1790,6 +1808,8 @@ ontologies:
   - id: disdriv.owl
     ontology_purl: http://purl.obolibrary.org/obo/disdriv.owl
   repository: https://github.com/DiseaseOntology/DiseaseDriversOntology
+  tags:
+  - disease
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
@@ -1924,7 +1944,7 @@ ontologies:
   - id: cl
   description: An ontology for the development and anatomy of the different species
     of the phylum Echinodermata (NCBITaxon:7586).
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/echinoderm-ontology/ecao_ontology
   id: ecao
   layout: ontology_detail
@@ -1954,7 +1974,7 @@ ontologies:
     label: Michelle Giglio
     orcid: 0000-0001-7628-5565
   description: An ontology for experimental and other evidence statements.
-  domain: experiments
+  domain: investigations
   funded_by:
   - http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400
   homepage: https://github.com/evidenceontology/evidenceontology/
@@ -2028,7 +2048,7 @@ ontologies:
   - id: iao
   description: Ecocore is a community ontology for the concise and controlled description
     of ecological traits of organisms.
-  domain: ecological functions, ecological interactions
+  domain: environment
   homepage: https://github.com/EcologicalSemantics/ecocore
   id: ecocore
   jobs:
@@ -2047,6 +2067,9 @@ ontologies:
   - id: ecocore.obo
     ontology_purl: http://purl.obolibrary.org/obo/ecocore.obo
   repository: https://github.com/EcologicalSemantics/ecocore
+  tags:
+  - ecological functions
+  - ecological interactions
   title: An ontology of core ecological entities
   tracker: https://github.com/EcologicalSemantics/ecocore/issues
 - activity_status: active
@@ -2135,7 +2158,7 @@ ontologies:
     orcid: 0000-0002-0956-8634
   description: An ontology for mouse anatomy covering embryonic development and postnatal
     stages.
-  domain: anatomy
+  domain: anatomy and development
   homepage: http://www.informatics.jax.org/expression.shtml
   id: emapa
   layout: ontology_detail
@@ -2268,10 +2291,10 @@ ontologies:
     label: Alpha Tom Kodamullil
     orcid: 0000-0001-9896-3531
   dependencies:
-  - id: BFO
+  - id: bfo
   description: A application driven Epilepsy Ontology with official terms from the
     ILAE.
-  domain: disease
+  domain: health
   homepage: https://github.com/SCAI-BIO/EpilepsyOntology
   id: epio
   label: Epilepsy Ontology
@@ -2288,6 +2311,8 @@ ontologies:
   - id: EPIO_merged.owl
     ontology_purl: http://purl.obolibrary.org/obo/EPIO_merged.owl
   repository: https://github.com/SCAI-BIO/EpilepsyOntology
+  tags:
+  - disease
   title: Epilepsy Ontology
   tracker: https://github.com/SCAI-BIO/EpilepsyOntology/issues
 - activity_status: active
@@ -2299,7 +2324,7 @@ ontologies:
   depicted_by: https://raw.githubusercontent.com/EuPathDB/communitysite/master/assets/images/VEuPathDB-logo-s.png
   description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector
     Genomics Resource (VEuPathDB; https://veupathdb.org).
-  domain: functional genomics, population biology, clinical epidemiology, and microbiomes
+  domain: organisms
   homepage: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
   id: eupath
   layout: ontology_detail
@@ -2313,6 +2338,11 @@ ontologies:
   - id: eupath.owl
     ontology_purl: http://purl.obolibrary.org/obo/eupath.owl
   repository: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
+  tags:
+  - functional genomics
+  - population biology
+  - clinical epidemiology
+  - microbiomes
   title: VEuPathDB ontology
   tracker: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology/issues
   usages:
@@ -2329,18 +2359,15 @@ ontologies:
     type: annotation and query
     user: https://microbiomedb.org
 - activity_status: active
-  build:
-    method: obo2owl
-    source_url: https://raw.githubusercontent.com/CTDbase/exposure-ontology/master/src/ontology/exo.obo
   contact:
-    email: cjgrondin@ncsu.edu
-    github: cjgrondin
-    label: Cynthia Grondin
-    orcid: 0000-0002-4642-1738
+    email: annethessen@gmail.com
+    github: diatomsRcool
+    label: Anne Thessen
+    orcid: 0000-0002-2908-3327
   description: Vocabularies for describing exposure data to inform understanding of
     environmental health.
   domain: health
-  homepage: http://ctdbase.org/help/exposureHelp.jsp
+  homepage: https://github.com/CTDbase/exposure-ontology
   id: exo
   layout: ontology_detail
   license:
@@ -2348,7 +2375,6 @@ ontologies:
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/exo.owl
-  page: http://ctdbase.org/downloads/#exposures
   preferredPrefix: ExO
   products:
   - id: exo.owl
@@ -2370,7 +2396,7 @@ ontologies:
     label: Val Wood
     orcid: 0000-0001-6330-7526
   description: A structured controlled vocabulary for the anatomy of fungi.
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/fungal-anatomy-ontology/
   id: fao
   layout: ontology_detail
@@ -2402,7 +2428,7 @@ ontologies:
     orcid: 0000-0002-8841-5870
   description: A structured controlled vocabulary of sample preparation, visualization
     and imaging methods used in biomedical research.
-  domain: imaging experiments
+  domain: investigations
   homepage: http://cellimagelibrary.org/
   id: fbbi
   layout: ontology_detail
@@ -2416,6 +2442,8 @@ ontologies:
   - id: fbbi.owl
     ontology_purl: http://purl.obolibrary.org/obo/fbbi.owl
   repository: https://github.com/CRBS/Biological_Imaging_Methods_Ontology
+  tags:
+  - imaging experiments
   title: Biological Imaging Methods Ontology
   tracker: https://github.com/CRBS/Biological_Imaging_Methods_Ontology/issues
 - activity_status: active
@@ -2439,7 +2467,7 @@ ontologies:
     label: Clare Pilgrim
     orcid: 0000-0002-1373-1705
   description: An ontology representing the gross anatomy of Drosophila melanogaster.
-  domain: Drosophilid anatomy
+  domain: anatomy and development
   homepage: http://purl.obolibrary.org/obo/fbbt
   id: fbbt
   layout: ontology_detail
@@ -2470,6 +2498,8 @@ ontologies:
   - id: https://doi.org/10.1093/nar/gkj068
     title: 'FlyBase: anatomical data, images and queries'
   repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
+  tags:
+  - Drosophilid anatomy
   taxon:
     id: NCBITaxon:7227
     label: Drosophila
@@ -2547,7 +2577,7 @@ ontologies:
     orcid: 0000-0002-1373-1705
   description: A structured controlled vocabulary of the development of Drosophila
     melanogaster.
-  domain: development
+  domain: anatomy and development
   homepage: http://purl.obolibrary.org/obo/fbdv
   id: fbdv
   layout: ontology_detail
@@ -2581,7 +2611,7 @@ ontologies:
     label: Georgeta Bordea
     orcid: 0000-0001-9921-8234
   description: Food-Drug interactions automatically extracted from scientific literature
-  domain: diet, metabolomics and nutrition
+  domain: diet, metabolomics, and nutrition
   homepage: https://gitub.u-bordeaux.fr/erias/fideo
   id: fideo
   layout: ontology_detail
@@ -2637,7 +2667,7 @@ ontologies:
   - id: foodon
   description: FOBI (Food-Biomarker Ontology) is an ontology to represent food intake
     data and associate it with metabolomic data
-  domain: metabolomics and nutrition
+  domain: diet, metabolomics, and nutrition
   homepage: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
   id: fobi
   layout: ontology_detail
@@ -2678,7 +2708,7 @@ ontologies:
     food distribution points. FoodOn also imports nutritional component and dietary
     pattern terms from other OBO Foundry ontologies to support interoperability in
     diet and nutrition research
-  domain: food
+  domain: diet, metabolomics, and nutrition
   homepage: https://foodon.org/
   id: foodon
   layout: ontology_detail
@@ -2698,6 +2728,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/foodon_core.owl
     title: FoodOn core ontology (currently the same as foodon.owl)
   repository: https://github.com/FoodOntology/foodon
+  tags:
+  - food
   title: Food Ontology
   tracker: https://github.com/FoodOntology/foodon/issues/
 - activity_status: active
@@ -2724,7 +2756,7 @@ ontologies:
     BioCollections Ontology (BCO) to link observations of individual specimens to
     their trait values. Traits are defined in the Ontology of Biological Attributes
     (OBA).
-  domain: vertebrate traits
+  domain: phenotype
   homepage: https://github.com/futres/fovt
   id: fovt
   jobs:
@@ -2751,6 +2783,8 @@ ontologies:
     name: FuTRES Ontology of Vertebrate Traits additional release in OBO format
     ontology_purl: http://purl.obolibrary.org/obo/fovt/fovt-base.obo
   repository: https://github.com/futres/fovt
+  tags:
+  - vertebrate traits
   title: FuTRES Ontology of Vertebrate Traits
   tracker: https://github.com/futres/fovt/issues
 - activity_status: active
@@ -2802,7 +2836,7 @@ ontologies:
     label: Rebecca Jackson
     orcid: 0000-0003-4871-5569
   description: An ontology to represent genomics cohort attributes
-  domain: cohort studies
+  domain: organisms
   homepage: https://github.com/IHCC-cohorts/GECKO
   id: gecko
   layout: ontology_detail
@@ -2816,6 +2850,8 @@ ontologies:
   - id: gecko.owl
     ontology_purl: http://purl.obolibrary.org/obo/gecko.owl
   repository: https://github.com/IHCC-cohorts/GECKO
+  tags:
+  - cohort studies
   title: Genomics Cohorts Knowledge Ontology
   tracker: https://github.com/IHCC-cohorts/GECKO/issues
   usages:
@@ -2866,7 +2902,7 @@ ontologies:
     orcid: 0000-0002-1048-5019
   description: An integrated ontology for representing the genetic variations described
     in genotypes, and their causal relationships to phenotype and diseases.
-  domain: genotype-to-phenotype associations
+  domain: biological systems
   homepage: https://github.com/monarch-initiative/GENO-ontology/
   id: geno
   layout: ontology_detail
@@ -2881,6 +2917,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/geno.owl
     title: GENO
   repository: https://github.com/monarch-initiative/GENO-ontology
+  tags:
+  - genotype-to-phenotype associations
   title: Genotype Ontology
   tracker: https://github.com/monarch-initiative/GENO-ontology/issues
 - activity_status: active
@@ -2927,7 +2965,7 @@ ontologies:
     (no carbon bond positions or anomeric configurations). GNOme organizes these stable
     accessions for interative browsing, for text-based searching, and for automated
     reasoning with well-defined characterization levels.
-  domain: glycan structure
+  domain: biochemistry
   homepage: https://gnome.glyomics.org/
   id: gno
   layout: ontology_detail
@@ -2950,6 +2988,8 @@ ontologies:
     id: gno.json
     ontology_purl: http://purl.obolibrary.org/obo/gno.json
   repository: https://github.com/glygen-glycan-data/GNOme
+  tags:
+  - glycan structure
   title: Glycan Naming and Subsumption Ontology (GNOme)
   tracker: https://github.com/glygen-glycan-data/GNOme/issues
   usages:
@@ -2977,7 +3017,7 @@ ontologies:
   description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description
     of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide
     association studies.
-  domain: ancestry
+  domain: organisms
   homepage: https://github.com/EBISPOT/ancestro
   id: hancestro
   layout: ontology_detail
@@ -2998,6 +3038,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/hancestro_bfo.owl
     title: HANCESTRO BFO
   repository: https://github.com/EBISPOT/ancestro
+  tags:
+  - ancestry
   title: Human Ancestry Ontology
   tracker: https://github.com/EBISPOT/ancestro/issues
   usages:
@@ -3037,7 +3079,7 @@ ontologies:
     orcid: 0000-0002-5640-5491
   description: A structured controlled vocabulary of the anatomy of the Hymenoptera
     (bees, wasps, and ants)
-  domain: anatomy
+  domain: anatomy and development
   homepage: http://hymao.org
   id: hao
   layout: ontology_detail
@@ -3251,7 +3293,7 @@ ontologies:
     label: Yongqun Oliver He
     orcid: 0000-0001-9189-9661
   description: An ontology of clinical informed consents
-  domain: informed consent
+  domain: investigations
   homepage: https://github.com/ICO-ontology/ICO
   id: ico
   layout: ontology_detail
@@ -3265,6 +3307,8 @@ ontologies:
   - id: ico.owl
     ontology_purl: http://purl.obolibrary.org/obo/ico.owl
   repository: https://github.com/ICO-ontology/ICO
+  tags:
+  - informed consent
   title: Informed Consent Ontology
   tracker: https://github.com/ICO-ontology/ICO/issues
   usages:
@@ -3340,7 +3384,7 @@ ontologies:
   - id: opmi
   description: LABO is an ontology of informational entities formalizing clinical
     laboratory tests prescriptions and reporting documents.
-  domain: clinical documentation
+  domain: information
   homepage: https://github.com/OpenLHS/LABO
   id: labo
   layout: ontology_detail
@@ -3355,6 +3399,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/labo.owl
   releases: https://github.com/OpenLHS/LABO/releases/
   repository: https://github.com/OpenLHS/LABO
+  tags:
+  - clinical documentation
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
@@ -3383,7 +3429,7 @@ ontologies:
     the anatomy and phenotype of moths and butterflies in biodiversity research. LEPAO
     is developed in part by BIOfid (The Specialised Information Service Biodiversity
     Research).
-  domain: Insect Anatomy
+  domain: anatomy and development
   homepage: https://github.com/insect-morphology/lepao
   id: lepao
   layout: ontology_detail
@@ -3399,6 +3445,8 @@ ontologies:
   - id: lepao.obo
     ontology_purl: http://purl.obolibrary.org/obo/lepao.obo
   repository: https://github.com/insect-morphology/lepao
+  tags:
+  - insect anatomy
   title: Lepidoptera Anatomy Ontology
   tracker: https://github.com/insect-morphology/lepao/issues
 - activity_status: active
@@ -3414,7 +3462,7 @@ ontologies:
     orcid: 0000-0002-0956-8634
   description: A structured controlled vocabulary of the adult anatomy of the mouse
     (Mus).
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/mouse-anatomy-ontology
   id: ma
   layout: ontology_detail
@@ -3458,7 +3506,7 @@ ontologies:
   - id: foodon
   - id: chebi
   description: Medical Action Ontology is an ontology...
-  domain: medical
+  domain: health
   homepage: https://github.com/monarch-initiative/MAxO
   id: maxo
   jobs:
@@ -3491,6 +3539,8 @@ ontologies:
     name: Medical Action Ontology additional release in OBOJSon format
     ontology_purl: http://purl.obolibrary.org/obo/maxo/maxo-base.json
   repository: https://github.com/monarch-initiative/MAxO
+  tags:
+  - medical
   title: Medical Action Ontology
   tracker: https://github.com/monarch-initiative/MAxO/issues
 - activity_status: active
@@ -3519,7 +3569,7 @@ ontologies:
   - id: uberon
   - id: zeco
   description: Microbial Conditions Ontology is an ontology...
-  domain: experimental conditions
+  domain: investigations
   homepage: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
   id: mco
   jobs:
@@ -3538,6 +3588,8 @@ ontologies:
   - id: mco.obo
     ontology_purl: http://purl.obolibrary.org/obo/mco.obo
   repository: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
+  tags:
+  - experimental conditions
   title: Microbial Conditions Ontology
   tracker: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology/issues
 - activity_status: active
@@ -3578,7 +3630,7 @@ ontologies:
   description: The Mammalian Feeding Muscle Ontology is an antomy ontology for the
     muscles of the head and neck that participate in feeding, swallowing, and other
     oral-pharyngeal behaviors.
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/rdruzinsky/feedontology
   id: mfmo
   layout: ontology_detail
@@ -3660,7 +3712,7 @@ ontologies:
     orcid: 0000-0002-8429-8793
   description: A structured controlled vocabulary for the annotation of experiments
     concerned with protein-protein interactions.
-  domain: experiments
+  domain: investigations
   homepage: https://github.com/HUPO-PSI/psi-mi-CV
   id: mi
   layout: ontology_detail
@@ -3741,7 +3793,7 @@ ontologies:
     orcid: 0000-0002-6443-9376
   description: 'A representation of the variety of methods used to make clinical and
     phenotype measurements. '
-  domain: clinical
+  domain: health
   homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000
   id: mmo
   layout: ontology_detail
@@ -3764,6 +3816,8 @@ ontologies:
     title: 'The clinical measurement, measurement method and experimental condition
       ontologies: expansion, improvements and new applications.'
   repository: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology
+  tags:
+  - clinical
   title: Measurement method ontology
   tracker: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology/issues
 - activity_status: active
@@ -3806,7 +3860,7 @@ ontologies:
     orcid: 0000-0002-0045-7698
   description: PSI-MOD is an ontology consisting of terms that describe protein chemical
     modifications
-  domain: proteins
+  domain: biochemistry
   homepage: http://www.psidev.info/MOD
   id: mod
   layout: ontology_detail
@@ -3830,6 +3884,8 @@ ontologies:
     title: The PSI-MOD community standard for representation of protein modification
       data
   repository: https://github.com/HUPO-PSI/psi-mod-CV
+  tags:
+  - proteins
   title: Protein modification
   tracker: https://github.com/HUPO-PSI/psi-mod-CV/issues
 - activity_status: active
@@ -3846,7 +3902,7 @@ ontologies:
   depicted_by: https://raw.githubusercontent.com/monarch-initiative/mondo/master/docs/images/mondo_logo_black-stacked-small.png
   description: A semi-automatically constructed ontology that merges in multiple disease
     resources to yield a coherent merged ontology.
-  domain: disease
+  domain: health
   homepage: https://monarch-initiative.github.io/mondo
   id: mondo
   label: Mondo
@@ -3880,6 +3936,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/mondo.json
     title: json edition
   repository: https://github.com/monarch-initiative/mondo
+  tags:
+  - disease
   taxon:
     id: NCBITaxon:33208
     label: Metazoa
@@ -4101,7 +4159,7 @@ ontologies:
     orcid: 0000-0002-8457-6693
   description: An ontology for Major Histocompatibility Complex (MHC) restriction
     in experiments
-  domain: Major Histocompatibility Complex
+  domain: biochemistry
   homepage: https://github.com/IEDB/MRO
   id: mro
   layout: ontology_detail
@@ -4115,6 +4173,8 @@ ontologies:
   - id: mro.owl
     ontology_purl: http://purl.obolibrary.org/obo/mro.owl
   repository: https://github.com/IEDB/MRO
+  tags:
+  - Major Histocompatibility Complex
   title: MHC Restriction Ontology
   tracker: https://github.com/IEDB/MRO/issues
   usages:
@@ -4141,7 +4201,7 @@ ontologies:
   - id: uo
   description: A structured controlled vocabulary for the annotation of experiments
     concerned with proteomics mass spectrometry.
-  domain: MS experiments
+  domain: investigations
   homepage: http://www.psidev.info/groups/controlled-vocabularies
   id: ms
   integration_server: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master
@@ -4165,6 +4225,8 @@ ontologies:
     title: The HUPO proteomics standards initiative- mass spectrometry controlled
       vocabulary.
   repository: https://github.com/HUPO-PSI/psi-ms-CV
+  tags:
+  - MS experiments
   title: Mass spectrometry ontology
   tracker: https://github.com/HUPO-PSI/psi-ms-CV/issues
 - activity_status: active
@@ -4181,7 +4243,7 @@ ontologies:
     label: George Gkoutos
     orcid: 0000-0002-2061-091X
   description: An ontology of human and animal behaviours and behavioural phenotypes
-  domain: behavior
+  domain: biological systems
   homepage: https://github.com/obo-behavior/behavior-ontology/
   id: nbo
   layout: ontology_detail
@@ -4195,6 +4257,8 @@ ontologies:
   - id: nbo.owl
     ontology_purl: http://purl.obolibrary.org/obo/nbo.owl
   repository: https://github.com/obo-behavior/behavior-ontology
+  tags:
+  - behavior
   title: Neuro Behavior Ontology
   tracker: https://github.com/obo-behavior/behavior-ontology/issues
 - activity_status: active
@@ -4213,7 +4277,7 @@ ontologies:
     label: Frederic Bastian
     orcid: 0000-0002-9415-5104
   description: An ontology representation of the NCBI organismal taxonomy
-  domain: taxonomy
+  domain: organisms
   homepage: https://github.com/obophenotype/ncbitaxon
   id: ncbitaxon
   jobs:
@@ -4246,6 +4310,8 @@ ontologies:
     page: https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md
     title: taxslim disjointness axioms
   repository: https://github.com/obophenotype/ncbitaxon
+  tags:
+  - taxonomy
   title: NCBI organismal classification
   tracker: https://github.com/obophenotype/ncbitaxon/issues
   wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
@@ -4306,7 +4372,7 @@ ontologies:
     label: Jingshan Huang
     orcid: 0000-0003-2408-2883
   description: An ontology for non-coding RNA, both of biological origin, and engineered.
-  domain: experiments
+  domain: investigations
   homepage: http://omnisearch.soc.southalabama.edu/w/index.php/Ontology
   id: ncro
   layout: ontology_detail
@@ -4336,7 +4402,7 @@ ontologies:
     orcid: 0000-0002-5640-5491
   description: NOMEN is a nomenclatural ontology for biological names (not concepts).  It
     encodes the goverened rules of nomenclature.
-  domain: biological nomenclature
+  domain: information
   funded_by:
   - NSF-ABI-1356381
   - Species File Group
@@ -4359,6 +4425,8 @@ ontologies:
     title: NOMEN
     type: owl:Ontology
   repository: https://github.com/SpeciesFileGroup/nomen
+  tags:
+  - biological nomenclature
   title: NOMEN - A nomenclatural ontology for biological names
   tracker: https://github.com/SpeciesFileGroup/nomen/issues
   usages:
@@ -4377,7 +4445,7 @@ ontologies:
     label: Yongqunh He
     orcid: 0000-0001-9189-9661
   description: A biomedical ontology in the domain of adverse events
-  domain: adverse events, health
+  domain: health
   homepage: https://github.com/OAE-ontology/OAE/
   id: oae
   layout: ontology_detail
@@ -4391,6 +4459,8 @@ ontologies:
   - id: oae.owl
     ontology_purl: http://purl.obolibrary.org/obo/oae.owl
   repository: https://github.com/OAE-ontology/OAE
+  tags:
+  - adverse events
   title: Ontology of Adverse Events
   tracker: https://github.com/OAE-ontology/OAE/issues
 - activity_status: active
@@ -4400,7 +4470,7 @@ ontologies:
     label: Matt Yoder
     orcid: 0000-0002-5640-5491
   description: OArCS is an ontology describing the Arthropod ciruclatory system.
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/aszool/oarcs
   id: oarcs
   layout: ontology_detail
@@ -4460,7 +4530,7 @@ ontologies:
     label: Jie Zheng
     orcid: 0000-0002-2999-0103
   description: A biomedical ontology in the domain of biological and clinical statistics.
-  domain: statistics
+  domain: information technology
   homepage: https://github.com/obcs/obcs
   id: obcs
   in_foundry: false
@@ -4475,6 +4545,8 @@ ontologies:
   - id: obcs.owl
     ontology_purl: http://purl.obolibrary.org/obo/obcs.owl
   repository: https://github.com/obcs/obcs
+  tags:
+  - statistics
   title: Ontology of Biological and Clinical Statistics
   tracker: https://github.com/obcs/obcs/issues
 - activity_status: active
@@ -4485,7 +4557,7 @@ ontologies:
     orcid: 0000-0002-2999-0103
   description: An ontology built for annotation and modeling of biobank repository
     and biobanking administration
-  domain: biobanking, specimens, bio-repository, biocuration
+  domain: investigations
   homepage: https://github.com/biobanking/biobanking
   id: obib
   layout: ontology_detail
@@ -4499,6 +4571,10 @@ ontologies:
   - id: obib.owl
     ontology_purl: http://purl.obolibrary.org/obo/obib.owl
   repository: https://github.com/biobanking/biobanking
+  tags:
+  - biobanking
+  - specimens
+  - bio-repository
   title: Ontology for Biobanking
   tracker: https://github.com/biobanking/biobanking/issues
   usages:
@@ -4548,7 +4624,7 @@ ontologies:
   depicted_by: https://avatars2.githubusercontent.com/u/12973154?s=200&v=4
   description: An ontology for representing treatment of disease and diagnosis and
     on carcinomas and other pathological entities
-  domain: medicine
+  domain: health
   homepage: https://github.com/OGMS/ogms
   id: ogms
   layout: ontology_detail
@@ -4562,6 +4638,8 @@ ontologies:
   - id: ogms.owl
     ontology_purl: http://purl.obolibrary.org/obo/ogms.owl
   repository: https://github.com/OGMS/ogms
+  tags:
+  - medicine
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
@@ -4734,7 +4812,7 @@ ontologies:
   description: An ontology specifies terms that are used to annotate ontology terms
     for all OBO ontologies. The ontology was developed as part of Information Artifact
     Ontology (IAO).
-  domain: ontology term annotation
+  domain: information
   homepage: https://github.com/information-artifact-ontology/ontology-metadata
   id: omo
   layout: ontology_detail
@@ -4748,6 +4826,8 @@ ontologies:
   - id: omo.owl
     ontology_purl: http://purl.obolibrary.org/obo/omo.owl
   repository: https://github.com/information-artifact-ontology/ontology-metadata
+  tags:
+  - ontology term annotation
   title: OBO Metadata Ontology
   tracker: https://github.com/information-artifact-ontology/ontology-metadata/issues
   usages:
@@ -4794,7 +4874,7 @@ ontologies:
   description: This ontology covers the domain of social entities that are related
     to health care, such as demographic information and the roles of various individuals
     and organizations.
-  domain: medicine
+  domain: health
   homepage: https://github.com/ufbmi/OMRSE/wiki/OMRSE-Overview
   id: omrse
   layout: ontology_detail
@@ -4808,6 +4888,8 @@ ontologies:
   - id: omrse.owl
     ontology_purl: http://purl.obolibrary.org/obo/omrse.owl
   repository: https://github.com/ufbmi/OMRSE
+  tags:
+  - medicine
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
@@ -4825,7 +4907,7 @@ ontologies:
   - id: foodon
   description: An ontology to standardize research output of nutritional epidemiologic
     studies.
-  domain: nutritional epidemiology, observational studies, dietary surveys
+  domain: diet, metabolomics, and nutrition
   homepage: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
   id: one
   label: Ontology for Nutritional Epidemiology
@@ -4841,6 +4923,10 @@ ontologies:
   - id: one.owl
     ontology_purl: http://purl.obolibrary.org/obo/one.owl
   repository: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
+  tags:
+  - nutritional epidemiology
+  - observational studies
+  - dietary surveys
   title: Ontology for Nutritional Epidemiology
   tracker: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies/issues
 - activity_status: active
@@ -4860,7 +4946,7 @@ ontologies:
   - id: foodon
   description: An ontology for description of concepts in the nutritional studies
     domain.
-  domain: nutrition, nutritional studies, nutrition professionals
+  domain: diet, metabolomics, and nutrition
   homepage: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
   id: ons
   label: Ontology for Nutritional Studies
@@ -4877,6 +4963,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/ons.owl
     title: ONS latest release
   repository: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
+  tags:
+  - nutrition, nutritional studies, nutrition professionals
   title: Ontology for Nutritional Studies
   tracker: https://github.com/enpadasi/Ontology-for-Nutritional-Studies/issues
 - activity_status: active
@@ -4895,7 +4983,7 @@ ontologies:
     the most widely-used computational approach for studying evolution using digital
     organisms (i.e., self-replicating computer programs that evolve within a user-defined
     computational environment).
-  domain: digital evolution, a branch of Artificial Life.
+  domain: simulation
   homepage: https://gitlab.com/fortunalab/ontoavida
   id: ontoavida
   layout: ontology_detail
@@ -4911,6 +4999,9 @@ ontologies:
   - id: ontoavida.obo
     ontology_purl: http://purl.obolibrary.org/obo/ontoavida.obo
   repository: https://gitlab.com/fortunalab/ontoavida
+  tags:
+  - digital evolution
+  - artificial life
   title: 'OntoAvida: ontology for Avida digital evolution platform'
   tracker: https://gitlab.com/fortunalab/ontoavida/-/issues
 - activity_status: active
@@ -4928,7 +5019,7 @@ ontologies:
   description: The Obstetric and Neonatal Ontology is a structured controlled vocabulary
     to provide a representation of the data from electronic health records (EHRs)
     involved in the care of the pregnant woman, and of her baby.
-  domain: biomedical, health
+  domain: health
   homepage: ontoneo.com
   id: ontoneo
   layout: ontology_detail
@@ -4943,6 +5034,8 @@ ontologies:
   - id: ontoneo.owl
     ontology_purl: http://purl.obolibrary.org/obo/ontoneo.owl
   repository: https://github.com/ontoneo-project/Ontoneo
+  tags:
+  - biomedical
   title: Obstetric and Neonatal Ontology
   tracker: https://github.com/ontoneo-project/Ontoneo/issues
 - activity_status: active
@@ -4976,7 +5069,7 @@ ontologies:
     label: Jie Zheng
     orcid: 0000-0002-2999-0103
   description: A reference ontology for parasite life cycle stages.
-  domain: life cycle stage, parasite organism
+  domain: organisms
   homepage: https://github.com/OPL-ontology/OPL
   id: opl
   layout: ontology_detail
@@ -4990,6 +5083,9 @@ ontologies:
   - id: opl.owl
     ontology_purl: http://purl.obolibrary.org/obo/opl.owl
   repository: https://github.com/OPL-ontology/OPL
+  tags:
+  - life cycle stage
+  - parasite organism
   title: Ontology for Parasite LifeCycle
   tracker: https://github.com/OPL-ontology/OPL/issues
   usages:
@@ -5034,7 +5130,7 @@ ontologies:
     orcid: 0000-0001-8034-7685
   description: An application ontology designed to annotate next-generation sequencing
     experiments performed on RNA.
-  domain: experiments
+  domain: investigations
   homepage: http://kim.bio.upenn.edu/software/ornaseq.shtml
   id: ornaseq
   layout: ontology_detail
@@ -5154,7 +5250,7 @@ ontologies:
   - id: caro
   description: An ontology about groups of interacting organisms such as populations
     and communities
-  domain: collections of organisms
+  domain: environment
   homepage: https://github.com/PopulationAndCommunityOntology/pco
   id: pco
   jobs:
@@ -5171,6 +5267,8 @@ ontologies:
   - id: pco.owl
     ontology_purl: http://purl.obolibrary.org/obo/pco.owl
   repository: https://github.com/PopulationAndCommunityOntology/pco
+  tags:
+  - collections of organisms
   title: Population and Community Ontology
   tracker: https://github.com/PopulationAndCommunityOntology/pco/issues
 - activity_status: active
@@ -5235,7 +5333,7 @@ ontologies:
     orcid: 0000-0002-1005-8383
   description: A structured, controlled vocabulary which describes the treatments,
     growing conditions, and/or study types used in plant biology experiments.
-  domain: experimental conditions
+  domain: investigations
   homepage: http://planteome.org/
   id: peco
   layout: ontology_detail
@@ -5256,6 +5354,8 @@ ontologies:
     title: 'The Planteome database: an integrated resource for reference ontologies,
       plant genomics and phenomics.'
   repository: https://github.com/Planteome/plant-experimental-conditions-ontology
+  tags:
+  - experimental conditions
   title: Plant Experimental Conditions Ontology
   tracker: https://github.com/Planteome/plant-experimental-conditions-ontology/issues
 - activity_status: active
@@ -5308,7 +5408,7 @@ ontologies:
   - id: uberon
   description: PLANA, the planarian anatomy ontology, encompasses the anatomy and
     life cycle stages for both __Schmidtea mediterranea__ biotypes.
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/planaria-ontology
   id: plana
   jobs:
@@ -5391,7 +5491,7 @@ ontologies:
   - id: uberon
   - id: ro
   description: An ontology covering the anatomy of the taxon Porifera (sponges)
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/porifera-ontology
   id: poro
   jobs:
@@ -5427,7 +5527,7 @@ ontologies:
     orcid: 0000-0001-8815-0078
   description: An ontology for describing the phenology of individual plants and populations
     of plants, and for integrating plant phenological data across sources and scales.
-  domain: plant phenotypes
+  domain: phenotype
   homepage: https://github.com/PlantPhenoOntology/PPO
   id: ppo
   layout: ontology_detail
@@ -5442,6 +5542,8 @@ ontologies:
   - id: ppo.owl
     ontology_purl: http://purl.obolibrary.org/obo/ppo.owl
   repository: https://github.com/PlantPhenoOntology/PPO
+  tags:
+  - plant phenotypes
   taxon:
     id: NCBITaxon:33090
     label: Viridiplantae
@@ -5463,7 +5565,7 @@ ontologies:
   - id: bfo
   - id: ro
   description: Ontology to reproducibly study visualizations of clinical performance
-  domain: learning systems
+  domain: information
   homepage: https://github.com/Display-Lab/psdo
   id: psdo
   layout: ontology_detail
@@ -5477,6 +5579,8 @@ ontologies:
   - id: psdo.owl
     ontology_purl: http://purl.obolibrary.org/obo/psdo.owl
   repository: https://github.com/Display-Lab/psdo
+  tags:
+  - learning systems
   title: Performance Summary Display Ontology
   tracker: https://github.com/Display-Lab/psdo/issues
 - activity_status: active
@@ -5492,7 +5596,7 @@ ontologies:
   dependencies:
   - id: ro
   description: The Plant Stress Ontology describes...
-  domain: plant disease and abiotic stress
+  domain: agriculture
   homepage: https://github.com/Planteome/plant-stress-ontology
   id: pso
   jobs:
@@ -5511,6 +5615,9 @@ ontologies:
   - id: pso.obo
     ontology_purl: http://purl.obolibrary.org/obo/pso.obo
   repository: https://github.com/Planteome/plant-stress-ontology
+  tags:
+  - plant disease
+  - abiotic stress
   title: Plant Stress Ontology
   tracker: https://github.com/Planteome/plant-stress-ontology/issues
 - activity_status: active
@@ -5527,7 +5634,7 @@ ontologies:
     label: G. Thomas Hayman
     orcid: 0000-0002-9553-7227
   description: A controlled vocabulary for annotating gene products to pathways.
-  domain: biological process
+  domain: biological systems
   homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
   id: pw
   layout: ontology_detail
@@ -5549,6 +5656,8 @@ ontologies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24499703
     title: The pathway ontology - updates and applications.
   repository: https://github.com/rat-genome-database/PW-Pathway-Ontology
+  tags:
+  - biological process
   title: Pathway ontology
   tracker: https://github.com/rat-genome-database/PW-Pathway-Ontology/issues
 - activity_status: active
@@ -5571,7 +5680,7 @@ ontologies:
   - id: uo
   description: RBO is an ontology for the effects of radiation on biota in terrestrial
     and space environments.
-  domain: radiation biology, the study of the effects of radiation on biological systems
+  domain: environment
   homepage: https://github.com/Radiobiology-Informatics-Consortium/RBO
   id: rbo
   jobs:
@@ -5604,6 +5713,8 @@ ontologies:
     name: Radiation Biology Ontology additional release in OBOJSon format
     ontology_purl: http://purl.obolibrary.org/obo/rbo/rbo-base.json
   repository: https://github.com/Radiobiology-Informatics-Consortium/RBO
+  tags:
+  - radiation biology
   title: Radiation Biology Ontology
   tracker: https://github.com/Radiobiology-Informatics-Consortium/RBO/issues
 - activity_status: active
@@ -5620,7 +5731,7 @@ ontologies:
     orcid: 0000-0002-6601-2165
   description: Relationship types shared across multiple ontologies
   documentation: https://oborel.github.io/obo-relations/
-  domain: relations
+  domain: upper
   homepage: https://oborel.github.io/
   id: ro
   jobs:
@@ -5670,6 +5781,8 @@ ontologies:
     page: http://bioinformatics.oxfordjournals.org/content/28/9/1262.long
     title: Neuroscience subset
   repository: https://github.com/oborel/obo-relations
+  tags:
+  - relations
   title: Relation Ontology
   tracker: https://github.com/oborel/obo-relations/issues
   usages:
@@ -5763,7 +5876,7 @@ ontologies:
     orcid: 0000-0002-1048-5019
   description: An ontology for representing the provenance of scientific claims and
     the evidence that supports them.
-  domain: scientific claims, evidence
+  domain: investigations
   homepage: https://github.com/monarch-initiative/SEPIO-ontology
   id: sepio
   layout: ontology_detail
@@ -5778,6 +5891,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/sepio.owl
     title: SEPIO
   repository: https://github.com/monarch-initiative/SEPIO-ontology
+  tags:
+  - scientific claims
+  - evidence
   title: Scientific Evidence and Provenance Information Ontology
   tracker: https://github.com/monarch-initiative/SEPIO-ontology/issues
 - activity_status: active
@@ -5793,8 +5909,8 @@ ontologies:
   depicted_by: http://sequenceontology.org/img/so_icon.png
   description: A structured controlled vocabulary for sequence annotation, for the
     exchange of annotation data and for the description of sequence objects in databases.
-  domain: biological sequence
-  homepage: https://github.com/The-Sequence-Ontology/SO-Ontologies
+  domain: biochemistry
+  homepage: http://www.sequenceontology.org/
   id: so
   layout: ontology_detail
   license:
@@ -5808,14 +5924,28 @@ ontologies:
   products:
   - id: so.owl
     ontology_purl: http://purl.obolibrary.org/obo/so.owl
+    title: Main SO OWL release
   - id: so.obo
     ontology_purl: http://purl.obolibrary.org/obo/so.obo
+    title: Main SO release in OBO Format
+  - description: This subset includes only locatable sequence features and is designed
+      for use in such outputs as GFF3
+    id: so/subsets/SOFA.owl
+    ontology_purl: http://purl.obolibrary.org/obo/so/subsets/SOFA.owl
+    title: Sequence Ontology Feature Annotation (SOFA) subset (OWL)
+  - description: This subset includes only locatable sequence features and is designed
+      for use in such outputs as GFF3
+    id: so/subsets/SOFA.obo
+    ontology_purl: http://purl.obolibrary.org/obo/so/subsets/SOFA.obo
+    title: Sequence Ontology Feature Annotation (SOFA) subset (OBO Format)
   publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/15892872
     title: 'The Sequence Ontology: a tool for the unification of genome annotations.'
   - id: http://www.ncbi.nlm.nih.gov/pubmed/20226267
     title: Evolution of the Sequence Ontology terms and relationships.
   repository: https://github.com/The-Sequence-Ontology/SO-Ontologies
+  tags:
+  - biological sequence
   title: Sequence types and features ontology
   tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
 - activity_status: active
@@ -5831,7 +5961,7 @@ ontologies:
   description: An ontology for spider comparative biology including anatomical parts
     (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk,
     web, borrow).
-  domain: anatomy
+  domain: anatomy and development
   homepage: http://research.amnh.org/atol/files/
   id: spd
   layout: ontology_detail
@@ -5864,7 +5994,7 @@ ontologies:
     of experimental design and description of plots and graphical representations
     commonly used to provide visual cues of data distribution or layout and to assist
     review of the results.
-  domain: statistics
+  domain: information technology
   homepage: http://stato-ontology.org/
   id: stato
   in_foundry: false
@@ -5879,6 +6009,8 @@ ontologies:
   - id: stato.owl
     ontology_purl: http://purl.obolibrary.org/obo/stato.owl
   repository: https://github.com/ISA-tools/stato
+  tags:
+  - statistics
   title: The Statistical Methods Ontology
   tracker: https://github.com/ISA-tools/stato/issues
 - activity_status: active
@@ -5894,7 +6026,7 @@ ontologies:
     their types, tasks, versions, provenance and associated data. It contains detailed
     information on licensing and formats as well as software applications themselves,
     mainly (but not limited) to the bioinformatics community.
-  domain: software
+  domain: information technology
   homepage: https://github.com/allysonlister/swo
   id: swo
   layout: ontology_detail
@@ -5908,6 +6040,8 @@ ontologies:
   - id: swo.owl
     ontology_purl: http://purl.obolibrary.org/obo/swo.owl
   repository: https://github.com/allysonlister/swo
+  tags:
+  - software
   title: Software ontology
   tracker: https://github.com/allysonlister/swo/issues
 - activity_status: active
@@ -5923,7 +6057,7 @@ ontologies:
   description: An ontology of disease symptoms, with symptoms encompasing perceived
     changes in function, sensations or appearance reported by a patient indicative
     of a disease.
-  domain: disease
+  domain: health
   homepage: http://symptomontologywiki.igs.umaryland.edu/mediawiki/index.php/Main_Page
   id: symp
   layout: ontology_detail
@@ -5939,6 +6073,8 @@ ontologies:
   - id: symp.obo
     ontology_purl: http://purl.obolibrary.org/obo/symp.obo
   repository: https://github.com/DiseaseOntology/SymptomOntology
+  tags:
+  - disease
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
@@ -5961,7 +6097,7 @@ ontologies:
     label: Jim Balhoff
     orcid: 0000-0002-8688-6599
   description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
-  domain: taxonomy
+  domain: organisms
   homepage: https://github.com/phenoscape/taxrank
   id: taxrank
   jobs:
@@ -5980,6 +6116,8 @@ ontologies:
   - id: taxrank.obo
     ontology_purl: http://purl.obolibrary.org/obo/taxrank.obo
   repository: https://github.com/phenoscape/taxrank
+  tags:
+  - taxonomy
   title: Taxonomic rank vocabulary
   tracker: https://github.com/phenoscape/taxrank/issues
 - activity_status: active
@@ -6053,7 +6191,7 @@ ontologies:
   description: An ontology representing the disease transmission process during which
     the pathogen is transmitted directly or indirectly from its natural reservoir,
     a susceptible host or source to a new host.
-  domain: disease
+  domain: health
   homepage: https://github.com/DiseaseOntology/PathogenTransmissionOntology
   id: trans
   layout: ontology_detail
@@ -6069,6 +6207,8 @@ ontologies:
   - id: trans.obo
     ontology_purl: http://purl.obolibrary.org/obo/trans.obo
   repository: https://github.com/DiseaseOntology/PathogenTransmissionOntology
+  tags:
+  - disease
   title: Pathogen Transmission Ontology
   tracker: https://github.com/DiseaseOntology/PathogenTransmissionOntology/issues
   usages:
@@ -6084,7 +6224,7 @@ ontologies:
     label: Jim Balhoff
     orcid: 0000-0002-8688-6599
   description: An ontology covering the taxonomy of teleosts (bony fish)
-  domain: taxonomy
+  domain: organisms
   homepage: https://github.com/phenoscape/teleost-taxonomy-ontology
   id: tto
   layout: ontology_detail
@@ -6100,6 +6240,8 @@ ontologies:
   - id: tto.owl
     ontology_purl: http://purl.obolibrary.org/obo/tto.owl
   repository: https://github.com/phenoscape/teleost-taxonomy-ontology
+  tags:
+  - taxonomy
   taxon:
     id: NCBITaxon:32443
     label: Teleostei
@@ -6121,7 +6263,7 @@ ontologies:
   description: TOXic Process Ontology (TXPO) systematizes a wide variety of terms
     involving toxicity courses and processes. The first version of TXPO focuses on
     liver toxicity.
-  domain: toxicity
+  domain: biochemistry
   homepage: https://toxpilot.nibiohn.go.jp/
   id: txpo
   layout: ontology_detail
@@ -6135,6 +6277,8 @@ ontologies:
   - id: txpo.owl
     ontology_purl: http://purl.obolibrary.org/obo/txpo.owl
   repository: https://github.com/txpo-ontology/TXPO
+  tags:
+  - toxicity
   title: Toxic Process Ontology
   tracker: https://github.com/txpo-ontology/TXPO/issues
 - activity_status: active
@@ -6178,7 +6322,7 @@ ontologies:
   depicted_by: http://uberon.github.io/images/u-logo.jpg
   description: An integrated cross-species anatomy ontology covering animals and bridging
     multiple species-specific ontologies
-  domain: anatomy
+  domain: anatomy and development
   funded_by:
   - NIH R24OD011883
   - NIH R01HG004838
@@ -6544,7 +6688,7 @@ ontologies:
     orcid: 0000-0002-8151-7479
   description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis
     elegans</i>.
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
   id: wbbt
   layout: ontology_detail
@@ -6591,7 +6735,7 @@ ontologies:
     orcid: 0000-0001-9076-6015
   description: A structured controlled vocabulary of the development of <i>Caenorhabditis
     elegans</i>.
-  domain: developemental life stage
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/c-elegans-development-ontology
   id: wbls
   layout: ontology_detail
@@ -6610,6 +6754,8 @@ ontologies:
   - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
     title: 'WormBase: a modern Model Organism Information Resource'
   repository: https://github.com/obophenotype/c-elegans-development-ontology
+  tags:
+  - developemental life stage
   taxon:
     id: NCBITaxon:6237
     label: Caenorhabditis
@@ -6703,7 +6849,7 @@ ontologies:
     orcid: 0000-0002-6443-9376
   description: Conditions under which physiological and morphological measurements
     are made both in the clinic and in studies involving humans or model organisms.
-  domain: clinical
+  domain: health
   homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000
   id: xco
   layout: ontology_detail
@@ -6726,6 +6872,8 @@ ontologies:
     title: 'The clinical measurement, measurement method and experimental condition
       ontologies: expansion, improvements and new applications.'
   repository: https://github.com/rat-genome-database/XCO-experimental-condition-ontology
+  tags:
+  - clinical
   title: Experimental condition ontology
   tracker: https://github.com/rat-genome-database/XCO-experimental-condition-ontology/issues
 - activity_status: active
@@ -6736,7 +6884,7 @@ ontologies:
     orcid: 0000-0003-4978-0864
   description: A structured controlled vocabulary for cross-linking reagents used
     with proteomics mass spectrometry.
-  domain: MS cross-linker reagents
+  domain: biochemistry
   homepage: http://www.psidev.info/groups/controlled-vocabularies
   id: xlmod
   label: xlmod
@@ -6755,6 +6903,8 @@ ontologies:
   - id: xlmod.owl
     ontology_purl: http://purl.obolibrary.org/obo/xlmod.owl
   repository: https://github.com/HUPO-PSI/xlmod-CV
+  tags:
+  - MS cross-linker reagents
   title: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
   tracker: https://github.com/HUPO-PSI/xlmod-CV/issues
 - activity_status: active
@@ -6847,7 +6997,7 @@ ontologies:
     label: Ceri Van Slyke
     orcid: 0000-0002-2244-7917
   description: Developmental stages of the Zebrafish
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
   id: zfs
   in_foundry: false
@@ -7030,7 +7180,7 @@ ontologies:
     label: Jonathan Karr
     orcid: 0000-0002-2605-5080
   description: A classification of algorithms for simulating biology and their outputs
-  domain: algorithms
+  domain: information technology
   homepage: http://co.mbine.org/standards/kisao
   id: kisao
   layout: ontology_detail
@@ -7043,6 +7193,8 @@ ontologies:
   - id: kisao.owl
     ontology_purl: http://purl.obolibrary.org/obo/kisao.owl
   repository: https://github.com/SED-ML/KiSAO
+  tags:
+  - algorithms
   title: Kinetic Simulation Algorithm Ontology
   tracker: https://github.com/SED-ML/KiSAO/issues
 - activity_status: active
@@ -7142,7 +7294,7 @@ ontologies:
   - id: vt
   description: An ontology for the standardization of terminology and integration
     of knowledge about Sickle Cell Disease.
-  domain: disease
+  domain: health
   homepage: https://scdontology.h3abionet.org/
   id: scdo
   layout: ontology_detail
@@ -7157,6 +7309,8 @@ ontologies:
   - id: scdo.obo
     ontology_purl: http://purl.obolibrary.org/obo/scdo.obo
   repository: https://github.com/scdodev/scdo-ontology
+  tags:
+  - disease
   title: Sickle Cell Disease Ontology
   tracker: https://github.com/scdodev/scdo-ontology/issues
 - activity_status: orphaned
@@ -7216,7 +7370,7 @@ ontologies:
     label: Chris Mungall
     orcid: 0000-0002-6601-2165
   description: Social Behavior in insects
-  domain: behavior
+  domain: biological systems
   homepage: https://github.com/obophenotype/sibo
   id: sibo
   layout: ontology_detail
@@ -7232,6 +7386,8 @@ ontologies:
   - id: sibo.obo
     ontology_purl: http://purl.obolibrary.org/obo/sibo.obo
   repository: https://github.com/obophenotype/sibo
+  tags:
+  - behavior
   title: Social Insect Behavior Ontology
   tracker: https://github.com/obophenotype/sibo/issues
 - activity_status: orphaned
@@ -7265,7 +7421,7 @@ ontologies:
     label: Jonathan Bard
   description: AEO is an ontology of anatomical structures that expands CARO, the
     Common Anatomy Reference Ontology
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/human-developmental-anatomy-ontology/
   id: aeo
   layout: ontology_detail
@@ -7293,7 +7449,7 @@ ontologies:
     label: Chris Mungall
     orcid: 0000-0002-6601-2165
   description: An anatomical and developmental ontology for cephalopods
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/cephalopod-ontology
   id: ceph
   jobs:
@@ -7333,7 +7489,7 @@ ontologies:
   - id: cl
   description: A structured controlled vocabulary of stage-specific anatomical structures
     of the developing human.
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/human-developmental-anatomy-ontology
   id: ehdaa2
   layout: ontology_detail
@@ -7367,7 +7523,7 @@ ontologies:
   description: An ontology of research resources such as instruments. protocols, reagents,
     animal models and biospecimens.
   documentation: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
-  domain: resources
+  domain: information
   homepage: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
   id: ero
   layout: ontology_detail
@@ -7379,6 +7535,8 @@ ontologies:
   products:
   - id: ero.owl
     ontology_purl: http://purl.obolibrary.org/obo/ero.owl
+  tags:
+  - resources
   title: eagle-i resource ontology
 - activity_status: inactive
   build:
@@ -7389,7 +7547,7 @@ ontologies:
     email: mejino@u.washington.edu
     label: Onard Mejino
   description: This is currently a slimmed down version of FMA
-  domain: anatomy
+  domain: anatomy and development
   homepage: http://si.washington.edu/projects/fma
   id: fma
   layout: ontology_detail
@@ -7502,7 +7660,7 @@ ontologies:
     orcid: 0000-0001-5985-7429
   description: Controlled vocabulary pertaining to RNA function and based on RNA sequences,
     secondary and three-dimensional structures.
-  domain: molecular structure
+  domain: biochemistry
   homepage: https://github.com/bgsu-rna/rnao
   id: rnao
   layout: ontology_detail
@@ -7517,6 +7675,8 @@ ontologies:
   - id: rnao.obo
     ontology_purl: http://purl.obolibrary.org/obo/rnao.obo
   repository: https://github.com/BGSU-RNA/rnao
+  tags:
+  - molecular structure
   title: RNA ontology
   tracker: https://github.com/BGSU-RNA/rnao/issues
 - activity_status: inactive
@@ -7524,7 +7684,7 @@ ontologies:
     email: dsonensh@odu.edu
     label: Daniel Sonenshine
   description: 'The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>'
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://www.vectorbase.org/ontology-browser
   id: tads
   layout: ontology_detail
@@ -7548,7 +7708,7 @@ ontologies:
     email: topalis@imbb.forth.gr
     label: Pantelis Topalis
   description: A structured controlled vocabulary of the anatomy of mosquitoes.
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://www.vectorbase.org/ontology-browser
   id: tgma
   layout: ontology_detail
@@ -7581,7 +7741,7 @@ ontologies:
   - id: ro
   description: A manually curated resource for the representation and annotation of
     metabolic pathways
-  domain: pathways
+  domain: biological systems
   homepage: https://github.com/geneontology/unipathway
   id: upa
   jobs:
@@ -7603,6 +7763,8 @@ ontologies:
     title: 'UniPathway: a resource for the exploration and annotation of metabolic
       pathways'
   repository: https://github.com/geneontology/unipathway
+  tags:
+  - pathways
   title: Unipathway
   tracker: https://github.com/geneontology/unipathway/issues
 - activity_status: inactive
@@ -7693,7 +7855,7 @@ ontologies:
   contact:
     email: henrich@embl.de
     label: Thorsten Heinrich
-  domain: anatomy
+  domain: anatomy and development
   homepage: http://4dx.embl.de/4DXpress
   id: bila
   is_obsolete: true
@@ -7803,7 +7965,7 @@ ontologies:
     orcid: 0000-0002-0956-8634
   description: A structured controlled vocabulary of stage-specific anatomical structures
     of the mouse (Mus).
-  domain: anatomy
+  domain: anatomy and development
   homepage: http://emouseatlas.org
   id: emap
   is_obsolete: true
@@ -7897,7 +8059,7 @@ ontologies:
     orcid: 0000-0002-1373-1705
   description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli)
     and of other taxa referred to in FlyBase.
-  domain: taxonomy
+  domain: organisms
   homepage: http://www.flybase.org/
   id: fbsp
   is_obsolete: true
@@ -7905,6 +8067,8 @@ ontologies:
   products:
   - id: fbsp.owl
     ontology_purl: http://purl.obolibrary.org/obo/fbsp.owl
+  tags:
+  - taxonomy
   taxon:
     id: NCBITaxon:7227
     label: Drosophila
@@ -7986,11 +8150,13 @@ ontologies:
     email: bakerc@unb.ca
     label: Christipher Baker
   description: An ontology representation of the LIPIDMAPS nomenclature classification.
-  domain: lipids
+  domain: biochemistry
   id: lipro
   in_foundry: false
   is_obsolete: true
   layout: ontology_detail
+  tags:
+  - lipids
   title: Lipid Ontology
 - activity_status: inactive
   contact:
@@ -8026,7 +8192,7 @@ ontologies:
     label: Thorsten Henrich
   description: A structured controlled vocabulary of the anatomy and development of
     the Japanese medaka fish, <i>Oryzias latipes</i>.
-  domain: anatomy
+  domain: anatomy and development
   id: mfo
   is_obsolete: true
   layout: ontology_detail
@@ -8062,7 +8228,7 @@ ontologies:
     orcid: 0000-0002-5714-991X
   description: A standardized description of a microarray experiment in support of
     MAGE v.1.
-  domain: experiments
+  domain: investigations
   homepage: http://mged.sourceforge.net/ontologies/MGEDontology.php
   id: mo
   is_obsolete: true
@@ -8113,7 +8279,7 @@ ontologies:
     label: Schober Daniel
   description: Descriptors relevant to the experimental conditions of the Nuclear
     Magnetic Resonance (NMR) component in a metabolomics investigation.
-  domain: experiments
+  domain: investigations
   homepage: http://msi-ontology.sourceforge.net/
   id: nmr
   is_obsolete: true
@@ -8218,11 +8384,13 @@ ontologies:
     email: john.garavelli@ebi.ac.uk
     label: John Garavelli
   description: For the description of covalent bonds in proteins.
-  domain: proteins
+  domain: biochemistry
   homepage: http://www.ebi.ac.uk/RESID/
   id: resid
   is_obsolete: true
   layout: ontology_detail
+  tags:
+  - proteins
   title: Protein covalent bond
 - activity_status: inactive
   contact:
@@ -8247,7 +8415,7 @@ ontologies:
     label: SEP developers via the PSI and MSI mailing lists
   description: A structured controlled vocabulary for the annotation of sample processing
     and separation techniques in scientific experiments.
-  domain: provenance
+  domain: investigations
   homepage: http://psidev.info/index.php?q=node/312
   id: sep
   is_obsolete: true
@@ -8256,6 +8424,8 @@ ontologies:
   products:
   - id: sep.owl
     ontology_purl: http://purl.obolibrary.org/obo/sep.owl
+  tags:
+  - provenance
   title: Sample processing and separation techniques
 - activity_status: inactive
   contact:
@@ -8303,7 +8473,7 @@ ontologies:
     orcid: 0000-0003-3162-7490
   description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but
     intended to cover terms relevant to other taxa
-  domain: anatomy
+  domain: anatomy and development
   homepage: http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology
   id: tao
   is_obsolete: true
@@ -8342,7 +8512,7 @@ ontologies:
     label: Wasila Dahdul
     orcid: 0000-0003-3162-7490
   description: Vertebrate skeletal anatomy ontology.
-  domain: anatomy
+  domain: anatomy and development
   homepage: https://www.nescent.org/phenoscape/Main_Page
   id: vsao
   is_obsolete: true

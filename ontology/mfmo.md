@@ -10,7 +10,7 @@ license:
 taxon:
   id: NCBITaxon:40674
   label: Mammalian
-domain: anatomy
+domain: anatomy and development
 repository: https://github.com/RDruzinsky/feedontology
 tracker: https://github.com/RDruzinsky/feedontology/issues
 contact:

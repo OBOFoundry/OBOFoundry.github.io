@@ -15,7 +15,9 @@ contact:
   github: citmejia
   orcid: 0000-0002-0142-5591
 description: Microbial Conditions Ontology is an ontology...
-domain: experimental conditions
+domain: investigations
+tags:
+  - experimental conditions
 homepage: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 products:
   - id: mco.owl

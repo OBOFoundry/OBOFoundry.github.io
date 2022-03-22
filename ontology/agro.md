@@ -5,7 +5,9 @@ title: Agronomy Ontology
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-domain: agronomy
+domain: agriculture
+tags:
+  - agronomy
 build:
   checkout: git clone  https://github.com/AgriculturalSemantics/agro.git
   system: git

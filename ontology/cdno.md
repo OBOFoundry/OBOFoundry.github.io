@@ -12,7 +12,7 @@ contact:
   github: LilyAndres
   orcid: 0000-0002-7696-731X
 description: CDNO provides structured terminologies to describe nutritional attributes of material entities that contribute to human diet.
-domain: diet, metabolomics and nutrition
+domain: diet, metabolomics, and nutrition
 homepage: https://github.com/Southern-Cross-Plant-Science/cdno
 products:
   - id: cdno.owl

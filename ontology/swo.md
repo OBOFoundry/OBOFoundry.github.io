@@ -15,7 +15,9 @@ products:
   - id: swo.owl
 title: Software ontology
 description: The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. It contains detailed information on licensing and formats as well as software applications themselves, mainly (but not limited) to the bioinformatics community.
-domain: software
+domain: information technology
+tags:
+  - software
 build:
   source_url: https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl
   method: owl2obo

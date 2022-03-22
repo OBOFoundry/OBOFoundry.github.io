@@ -10,13 +10,23 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 description: A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.
-domain: biological sequence
-homepage: https://github.com/The-Sequence-Ontology/SO-Ontologies
+domain: biochemistry
+tags:
+  - biological sequence
+homepage: http://www.sequenceontology.org/
 mailing_list: https://sourceforge.net/p/song/mailman/song-devel/
 page: https://en.wikipedia.org/wiki/Sequence_Ontology
 products:
   - id: so.owl
+    title: Main SO OWL release
   - id: so.obo
+    title: Main SO release in OBO Format
+  - id: so/subsets/SOFA.owl
+    title: Sequence Ontology Feature Annotation (SOFA) subset (OWL)
+    description: This subset includes only locatable sequence features and is designed for use in such outputs as GFF3
+  - id: so/subsets/SOFA.obo
+    title: Sequence Ontology Feature Annotation (SOFA) subset (OBO Format)
+    description: This subset includes only locatable sequence features and is designed for use in such outputs as GFF3
 title: Sequence types and features ontology
 build:
   notes: SWITCH

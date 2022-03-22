@@ -8,7 +8,9 @@ contact:
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
-domain: molecular structure
+domain: biochemistry
+tags:
+  - molecular structure
 homepage: https://github.com/bgsu-rna/rnao
 browsers:
   - label: RNAO
