@@ -5,11 +5,12 @@ contact:
   email: pfey@northwestern.edu
   label: Petra Fey
   github: pfey03
+  orcid: 0000-0002-4532-2703
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
 description: A structured controlled vocabulary of phenotypes of the slime-mould <i>Dictyostelium discoideum</i>.
-domain: anatomy
+domain: anatomy and development
 homepage: http://dictybase.org/
 tracker: https://github.com/obophenotype/dicty-phenotype-ontology/issues
 twitter: dictybase

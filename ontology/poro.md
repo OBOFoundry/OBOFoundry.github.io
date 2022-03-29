@@ -4,8 +4,10 @@ id: poro
 contact:
   email: robert.thacker@stonybrook.edu
   label: Bob Thacker
+  github: bobthacker
+  orcid: 0000-0002-9654-0073
 description: An ontology covering the anatomy of the taxon Porifera (sponges)
-domain: anatomy
+domain: anatomy and development
 homepage: https://github.com/obophenotype/porifera-ontology
 products:
   - id: poro.owl

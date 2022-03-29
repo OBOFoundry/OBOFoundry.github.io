@@ -35,7 +35,7 @@ The ontology namespace MUST be unique; that is, it MUST NOT be in current use or
 The primary IRI for an OBO Library IRI MUST have the following format:
 https://purl.obolibrary.org/obo/$namespace.owl
 
-To conform with OBO Foundry principles, the ontology IRI MUST resolve to the ontology file, not a landing page.
+Note: To conform with OBO Foundry [Principle 2](https://obofoundry.org/principles/fp-002-format.html), the ontology IRI MUST resolve to the ontology file, not a landing page.
 
 For guidelines on how to create IRIs for ontology elements/terms, see the OBO Foundry [ID policy](http://www.obofoundry.org/id-policy).
 
@@ -63,7 +63,7 @@ Criteria for Review
 
 The ontology namespace MUST be registered following the procedures outlined within the [OBO Foundry membership requirements and technical details](http://www.obofoundry.org/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.html) document. In addition, the ontology IRI MUST follow the format given above.
 
-[This check is automatically validated.](checks/fp_003)
+[This check is automatically validated.](checks/fp_003) The automatic check fully covers the requirements for this principle.
 
 
 ## Feedback and Discussion

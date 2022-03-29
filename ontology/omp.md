@@ -4,6 +4,8 @@ id: omp
 contact:
   email: jimhu@tamu.edu
   label: James C. Hu
+  github: jimhu-tamu
+  orcid: 0000-0001-9016-2684
 description: An ontology of phenotypes covering microbes
 domain: phenotype
 homepage: http://microbialphenotypes.org

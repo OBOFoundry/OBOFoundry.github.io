@@ -16,8 +16,11 @@ contact:
   email: "Anne.Morgat@sib.swiss"
   label: "Anne Morgat"
   github: amorgat
+  orcid: 0000-0002-1216-2969
 description: "A manually curated resource for the representation and annotation of metabolic pathways"
-domain: pathways
+domain: biological systems
+tags:
+  - pathways
 homepage: https://github.com/geneontology/unipathway
 products:
   - id: upa.owl

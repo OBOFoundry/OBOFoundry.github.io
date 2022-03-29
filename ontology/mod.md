@@ -4,6 +4,8 @@ id: mod
 contact:
   email: pierre-alain.binz@chuv.ch
   label: Pierre-Alain Binz
+  github: pabinz
+  orcid: 0000-0002-0045-7698
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
@@ -11,7 +13,9 @@ publications:
   - id: https://pubmed.ncbi.nlm.nih.gov/18688235/
     title: "The PSI-MOD community standard for representation of protein modification data"
 description: PSI-MOD is an ontology consisting of terms that describe protein chemical modifications
-domain: proteins
+domain: biochemistry
+tags:
+  - proteins
 homepage: http://www.psidev.info/MOD
 tracker: https://github.com/HUPO-PSI/psi-mod-CV/issues
 products:

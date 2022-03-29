@@ -5,6 +5,7 @@ contact:
   email: batchelorc@rsc.org
   label: Colin Batchelor
   github: batchelorc
+  orcid: 0000-0001-5985-7429
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

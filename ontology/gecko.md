@@ -3,12 +3,15 @@ layout: ontology_detail
 id: gecko
 title: Genomics Cohorts Knowledge Ontology
 description: An ontology to represent genomics cohort attributes
-domain: cohort studies
+domain: organisms
+tags:
+  - cohort studies
 homepage: https://github.com/IHCC-cohorts/GECKO
 contact:
   email: rbca.jackson@gmail.com
   label: Rebecca Jackson
   github: beckyjackson
+  orcid: 0000-0003-4871-5569
 products:
   - id: gecko.owl
 license:

@@ -5,11 +5,15 @@ preferredPrefix: WBls
 contact:
   email: cgrove@caltech.edu
   label: Chris Grove
+  github: chris-grove
+  orcid: 0000-0001-9076-6015
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 description: A structured controlled vocabulary of the development of <i>Caenorhabditis elegans</i>.
-domain: developemental life stage
+domain: anatomy and development
+tags:
+  - developemental life stage
 homepage: https://github.com/obophenotype/c-elegans-development-ontology
 tracker: https://github.com/obophenotype/c-elegans-development-ontology/issues
 products:

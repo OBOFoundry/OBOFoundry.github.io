@@ -4,26 +4,26 @@ id: xlmod
 label: xlmod
 description: A structured controlled vocabulary for cross-linking reagents used with proteomics mass spectrometry.
 title: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
-createdWith: http://oboedit.org
 contact:
-  email: gerhard.mayer@rub.de
-  label: Gerhard Mayer
-integration_server: https://raw.githubusercontent.com/HUPO-PSI/mzIdentML/tree/master/cv
-domain: MS cross-linker reagents
+  email: lutz.fischer@tu-berlin.de
+  label: Lutz Fischer
+  github: lutzfischer
+  orcid: 0000-0003-4978-0864
+domain: biochemistry
+tags:
+  - MS cross-linker reagents
 mailing_list: psidev-ms-vocab@lists.sourceforge.net
 homepage: http://www.psidev.info/groups/controlled-vocabularies
 page: http://www.psidev.info/groups/controlled-vocabularies
-tracker: https://github.com/HUPO-PSI/mzIdentML/issues
+tracker: https://github.com/HUPO-PSI/xlmod-CV/issues
 products:
   - id: xlmod.obo
+  - id: xlmod.owl
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
-build:
-  source_url: https://raw.githubusercontent.com/HUPO-PSI/mzIdentML/master/cv/XLMOD.obo
-  method: obo2owl
 activity_status: active
-repository: https://github.com/HUPO-PSI/mzIdentML
+repository: https://github.com/HUPO-PSI/xlmod-CV
 preferredPrefix: XLMOD
 ---
 

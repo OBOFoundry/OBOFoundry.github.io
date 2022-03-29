@@ -5,11 +5,17 @@ contact:
   email: stoeckrt@pennmedicine.upenn.edu
   label: Chris Stoeckert
   github: cstoeckert
+  orcid: 0000-0002-5714-991X
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 depicted_by: https://raw.githubusercontent.com/EuPathDB/communitysite/master/assets/images/VEuPathDB-logo-s.png
-domain: functional genomics, population biology, clinical epidemiology, and microbiomes
+domain: organisms
+tags:
+  - functional genomics
+  - population biology
+  - clinical epidemiology
+  - microbiomes
 description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org).
 homepage: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
 products:

@@ -3,13 +3,17 @@ layout: ontology_detail
 id: fbbi
 preferredPrefix: FBbi
 contact:
-  email: dorloff@ncmir.ucsd.edu
-  label: David Orloff
+  email: wawong@gmail.com
+  label: Willy Wong
+  github: wawong
+  orcid: 0000-0002-8841-5870
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 description: A structured controlled vocabulary of sample preparation, visualization and imaging methods used in biomedical research.
-domain: imaging experiments
+domain: investigations
+tags:
+  - imaging experiments
 homepage: http://cellimagelibrary.org/
 tracker: https://github.com/CRBS/Biological_Imaging_Methods_Ontology/issues
 products:

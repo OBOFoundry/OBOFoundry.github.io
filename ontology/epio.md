@@ -4,13 +4,15 @@ id: epio
 label: Epilepsy Ontology
 title: Epilepsy Ontology
 description: A application driven Epilepsy Ontology with official terms from the ILAE.
-domain: disease
+domain: health
+tags:
+  - disease
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 tracker: https://github.com/SCAI-BIO/EpilepsyOntology/issues
 dependencies:
-  - id: BFO
+  - id: bfo
 products:
   - id: epio.owl
   - id: EPIO_merged.owl
@@ -18,6 +20,8 @@ contact:
   email: alpha.tom.kodamullil@scai.fraunhofer.de
   label: Alpha Tom Kodamullil
   github: akodamullil
+  orcid: 0000-0001-9896-3531
+homepage: https://github.com/SCAI-BIO/EpilepsyOntology
 repository: https://github.com/SCAI-BIO/EpilepsyOntology
 activity_status: active
 preferredPrefix: EPIO

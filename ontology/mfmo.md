@@ -10,13 +10,14 @@ license:
 taxon:
   id: NCBITaxon:40674
   label: Mammalian
-domain: anatomy
+domain: anatomy and development
 repository: https://github.com/RDruzinsky/feedontology
 tracker: https://github.com/RDruzinsky/feedontology/issues
 contact:
   email: druzinsk@uic.edu
   label: Robert Druzinsky
   github: RDruzinsky
+  orcid: 0000-0002-1572-1316
 dependencies:
   - id: uberon
 products:

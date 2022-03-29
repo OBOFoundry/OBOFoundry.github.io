@@ -1,18 +1,20 @@
 ---
 layout: ontology_detail
 id: nomen
-type: owl:Ontology
 label: NOMEN
 title: NOMEN - A nomenclatural ontology for biological names
 contact:
   email: diapriid@gmail.com
   label: Matt Yoder
   github: mjy
+  orcid: 0000-0002-5640-5491
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
 description: NOMEN is a nomenclatural ontology for biological names (not concepts).  It encodes the goverened rules of nomenclature.
-domain: biological nomenclature
+domain: information
+tags:
+  - biological nomenclature
 homepage: https://github.com/SpeciesFileGroup/nomen
 products:
   - id: nomen.owl

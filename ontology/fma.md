@@ -8,7 +8,7 @@ license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
 description: This is currently a slimmed down version of FMA
-domain: anatomy
+domain: anatomy and development
 homepage: http://si.washington.edu/projects/fma
 page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
 publications:
@@ -28,8 +28,9 @@ build:
   source_url: http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo
   insert_ontology_id: true
   method: obo2owl
-tracker: https://sourceforge.net/p/obo/foundational-model-of-anatomy-fma-requests/
-activity_status: active
+tracker: https://bitbucket.org/uwsig/fma/issues
+repository: https://bitbucket.org/uwsig/fma
+activity_status: inactive
 preferredPrefix: FMA
 ---
 

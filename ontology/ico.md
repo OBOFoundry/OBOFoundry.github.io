@@ -3,7 +3,9 @@ layout: ontology_detail
 id: ico
 title: Informed Consent Ontology
 description: An ontology of clinical informed consents
-domain: informed consent
+domain: investigations
+tags:
+  - informed consent
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
@@ -11,6 +13,7 @@ contact:
   email: yongqunh@med.umich.edu
   label: Yongqun Oliver He
   github: yongqunh
+  orcid: 0000-0001-9189-9661
 homepage: https://github.com/ICO-ontology/ICO
 tracker: https://github.com/ICO-ontology/ICO/issues
 products:

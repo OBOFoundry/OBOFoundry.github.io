@@ -5,11 +5,12 @@ contact:
   email: Terry.Hayamizu@jax.org
   label: Terry Hayamizu
   github: tfhayamizu
+  orcid: 0000-0002-0956-8634
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 description: "An ontology for mouse anatomy covering embryonic development and postnatal stages."
-domain: anatomy
+domain: anatomy and development
 homepage: http://www.informatics.jax.org/expression.shtml
 tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
 products:

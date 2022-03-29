@@ -3,13 +3,16 @@ layout: ontology_detail
 id: geno
 title: Genotype Ontology
 description: An integrated ontology for representing the genetic variations described in genotypes, and their causal relationships to phenotype and diseases.
-domain: genotype-to-phenotype associations
+domain: biological systems
+tags:
+  - genotype-to-phenotype associations
 homepage: https://github.com/monarch-initiative/GENO-ontology/
 tracker: https://github.com/monarch-initiative/GENO-ontology/issues
 contact:
   email: mhb120@gmail.com
   label: Matthew Brush
   github: mbrush
+  orcid: 0000-0002-1048-5019
 license:
   url: https://creativecommons.org/licenses/by-sa/2.0/
   label: CC BY-SA 2.0

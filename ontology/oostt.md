@@ -5,6 +5,8 @@ title: Ontology of Organizational Structures of Trauma centers and Trauma system
 contact:
   email: mbrochhausen@gmail.com
   label: Mathias Brochhausen
+  github: mbrochhausen
+  orcid: 0000-0003-1834-3856
 description: An ontology built for representating the organizational components of trauma centers and trauma systems.
 domain: health
 homepage: https://github.com/OOSTT/OOSTT

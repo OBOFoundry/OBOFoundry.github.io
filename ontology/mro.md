@@ -5,11 +5,14 @@ title: MHC Restriction Ontology
 description: An ontology for Major Histocompatibility Complex (MHC) restriction in experiments
 tracker: https://github.com/IEDB/MRO/issues
 homepage: https://github.com/IEDB/MRO
-domain: Major Histocompatibility Complex
+domain: biochemistry
+tags:
+  - Major Histocompatibility Complex
 contact:
   label: Bjoern Peters
   email: bpeters@lji.org
   github: bpeters42
+  orcid: 0000-0002-8457-6693
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0

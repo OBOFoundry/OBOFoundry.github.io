@@ -5,6 +5,7 @@ contact:
   email: lschriml@som.umaryland.edu
   label: Lynn Schriml
   github: lschriml
+  orcid: 0000-0001-8910-9851
 homepage: http://environmentontology.github.io/gaz/
 description: A gazetteer constructed on ontological principles
 products:

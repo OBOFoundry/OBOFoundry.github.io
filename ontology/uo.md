@@ -5,6 +5,8 @@ in_foundry: false
 contact:
   email: g.gkoutos@gmail.com
   label: George Gkoutos
+  github: gkoutos
+  orcid: 0000-0002-2061-091X
 description: Metrical units for use in conjunction with PATO
 domain: phenotype
 homepage: https://github.com/bio-ontology-research-group/unit-ontology

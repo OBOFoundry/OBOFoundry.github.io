@@ -6,8 +6,11 @@ contact:
   email: dan5@georgetown.edu
   label: Darren Natale
   github: nataled
+  orcid: 0000-0001-5809-9523
 description: An ontological representation of protein-related entities
-domain: proteins
+domain: biochemistry
+tags:
+  - proteins
 homepage: http://proconsortium.org
 documentation: https://proconsortium.org/download/current/pro_readme.txt
 products:
@@ -41,8 +44,6 @@ tracker: https://github.com/PROconsortium/PRoteinOntology/issues
 publications:
   - id: https://proconsortium.org/pro_dsmnt.shtml#publication
     title: "Publications & Dissemination"
-development:
-  id_policy: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+PURLs
 usages:
   - user: https://github.com/UCDenver-ccp/CRAFT
     description: Colorado Richly Annotated Full-Text (CRAFT) Corpus; PRO is used for entity tagging and annotation

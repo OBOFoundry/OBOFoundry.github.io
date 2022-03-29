@@ -2,45 +2,43 @@
 
 import csv
 import sys
-
 from argparse import ArgumentParser
 
-bootstrap_css = 'https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css'
+bootstrap_css = (
+    "https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+)
 
 headers = []
 
 
 def main(args):
-    parser = ArgumentParser(
-        description="Generate an HTML output of the metadata grid")
-    parser.add_argument('input_grid',
-                        type=str,
-                        help='File containing the grid (CSV, TSV, or TXT)')
-    parser.add_argument('html_grid',
-                        type=str,
-                        help='HTML file to write the output to')
+    parser = ArgumentParser(description="Generate an HTML output of the metadata grid")
+    parser.add_argument(
+        "input_grid", type=str, help="File containing the grid (CSV, TSV, or TXT)"
+    )
+    parser.add_argument("html_grid", type=str, help="HTML file to write the output to")
     args = parser.parse_args()
 
     input_grid = args.input_grid
     html_grid = args.html_grid
     lines = get_html(parse_table(input_grid))
 
-    with open(html_grid, 'w') as f:
+    with open(html_grid, "w") as f:
         for line in lines:
-            f.write(line + '\n')
+            f.write(line + "\n")
 
 
 def parse_table(input_grid):
-    '''Given an input grid in TSV or CSV, get the data as a dictionary. Also
+    """Given an input grid in TSV or CSV, get the data as a dictionary. Also
     set the headers for the HTML grid.
-    '''
+    """
     global headers
 
     data = {}
-    if '.tsv' in input_grid:
-        delim = '\t'
-    elif '.csv' in input_grid:
-        delim = ','
+    if ".tsv" in input_grid:
+        delim = "\t"
+    elif ".csv" in input_grid:
+        delim = ","
     else:
         print("Invalid file extension: %s" % input_grid, file=sys.stderr)
         sys.exit(1)
@@ -54,8 +52,8 @@ def parse_table(input_grid):
 
 
 def get_html(data):
-    '''Given the data from the grid, return an array of lines to generate an
-    HTML table.'''
+    """Given the data from the grid, return an array of lines to generate an
+    HTML table."""
     global headers
 
     lines = []
@@ -65,68 +63,74 @@ def get_html(data):
     lines.append('<div class="container">')
     lines.append('\t<div class="row" style="padding-top: 20px;">')
     lines.append('\t\t<table class="table table-bordered">')
-    lines.append('\t\t\t<tr>')
+    lines.append("\t\t\t<tr>")
 
     # special columns that link to reports
     c = -1
     for h in headers:
         c += 1
-        lines.append('\t\t\t\t<td><b>{0}</b></td>'.format(h))
-    lines.append('\t\t\t</tr>')
+        lines.append("\t\t\t\t<td><b>{0}</b></td>".format(h))
+    lines.append("\t\t\t</tr>")
 
     for ont, fields in data.items():
-        lines.append('\t\t\t<tr>')
-        td_class = 'active'
+        lines.append("\t\t\t<tr>")
+        td_class = "active"
         lines.append('\t\t\t\t<td class="{0}">{1}</td>'.format(td_class, ont))
         c = 0
         for field in fields:
             c += 1
-            if '|' in field:
-                f = field.split('|')[0].strip()
-                msg = field.split('|')[1]
-                if '. ' in msg:
-                    msg = msg.replace('. ', '<br>')
+            if "|" in field:
+                f = field.split("|")[0].strip()
+                msg = field.split("|")[1]
+                if ". " in msg:
+                    msg = msg.replace(". ", "<br>")
                 if '"' in msg:
                     msg = msg.replace('"', '\\"')
             else:
                 f = field.strip()
                 msg = None
 
-            if f.lower() == 'pass':
-                td_class = 'success'
+            if f.lower() == "pass":
+                td_class = "success"
                 icon = '<img src="../assets/svg/check.svg" height="15px">'
 
-            elif f.lower() == 'info':
-                td_class = 'info'
+            elif f.lower() == "info":
+                td_class = "info"
                 icon = '<img src="../assets/svg/info.svg" height="15px">'
 
-            elif f.lower() == 'warning' or f.lower() == 'warn':
-                td_class = 'warning'
+            elif f.lower() == "warning" or f.lower() == "warn":
+                td_class = "warning"
                 icon = '<img src="../assets/svg/warning.svg" height="15px">'
 
-            elif f.lower() == 'error' or f.lower() == 'fail':
-                td_class = 'danger'
+            elif f.lower() == "error" or f.lower() == "fail":
+                td_class = "danger"
                 icon = '<img src="../assets/svg/x.svg" height="15px">'
 
             else:
-                td_class = 'active'
+                td_class = "active"
                 icon = None
 
             if icon:
                 lines.append(
-                    '\t\t\t\t<td class="{0}" style="text-align:center">{1}</td>'.format(td_class, icon))
+                    '\t\t\t\t<td class="{0}" style="text-align:center">{1}</td>'.format(
+                        td_class, icon
+                    )
+                )
             else:
                 lines.append(
-                    '\t\t\t\t<td class="{0}" style="text-align:center">{1}</td>'.format(td_class, f))
+                    '\t\t\t\t<td class="{0}" style="text-align:center">{1}</td>'.format(
+                        td_class, f
+                    )
+                )
 
-        lines.append('\t\t\t</tr>')
+        lines.append("\t\t\t</tr>")
 
     # closing tags
-    lines.append('\t\t</table>')
-    lines.append('\t</div>')
-    lines.append('</div>')
+    lines.append("\t\t</table>")
+    lines.append("\t</div>")
+    lines.append("</div>")
     return lines
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main(sys.argv)

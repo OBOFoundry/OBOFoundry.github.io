@@ -3,6 +3,7 @@ layout: ontology_detail
 id: ypo
 title: Yeast phenotypes
 contact:
+  orcid: 0000-0001-9163-5180
   email: cherry@genome.stanford.edu
   label: Mike Cherry
 taxon:

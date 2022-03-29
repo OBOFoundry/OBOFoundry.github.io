@@ -5,9 +5,12 @@ contact:
   email: lynn.schriml@gmail.com
   label: Lynn Schriml
   github: lschriml
+  orcid: 0000-0001-8910-9851
 description: Ontology for drivers and triggers of human diseases, built to classify ExO ontology exposure stressors. An application ontology. Built in collaboration with EnvO, ExO, ECTO and ChEBI.
 twitter: diseaseontology
-domain: disease
+domain: health
+tags:
+  - disease
 homepage: http://www.disease-ontology.org
 products:
   - id: disdriv.owl

@@ -13,6 +13,7 @@ contact:
   email: esegerd3@gmail.com
   label: Erik Segerdell
   github: seger
+  orcid: 0000-0002-9611-1279
 description: XPO represents anatomical, cellular, and gene function phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis.
 domain: phenotype
 homepage: https://github.com/obophenotype/xenopus-phenotype-ontology

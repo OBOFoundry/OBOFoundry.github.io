@@ -2,13 +2,16 @@
 layout: ontology_detail
 id: ppo
 title: Plant Phenology Ontology
-domain: plant phenotypes
+domain: phenotype
+tags:
+  - plant phenotypes
 description: An ontology for describing the phenology of individual plants and populations of plants, and for integrating plant phenological data across sources and scales.
 homepage: https://github.com/PlantPhenoOntology/PPO
 contact:
   email: rlwalls2008@gmail.com
   label: Ramona Walls
   github: ramonawalls
+  orcid: 0000-0001-8815-0078
 mailing_list: ppo-discuss@googlegroups.com
 tracker: https://github.com/PlantPhenoOntology/PPO/issues
 license:

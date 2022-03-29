@@ -9,6 +9,8 @@ tracker: https://github.com/AnimalGenome/vertebrate-trait-ontology/issues
 contact:
   label: Carissa Park
   email: caripark@iastate.edu
+  github: caripark
+  orcid: 0000-0002-2346-5201
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

@@ -4,12 +4,14 @@ id: mi
 contact:
   email: pporras@ebi.ac.uk
   label: Pablo Porras Millán
+  github: pporrasebi
+  orcid: 0000-0002-8429-8793
 tracker: https://github.com/HUPO-PSI/psi-mi-CV/issues
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 description: A structured controlled vocabulary for the annotation of experiments concerned with protein-protein interactions.
-domain: experiments
+domain: investigations
 homepage: https://github.com/HUPO-PSI/psi-mi-CV
 page: https://github.com/HUPO-PSI/psi-mi-CV
 products:

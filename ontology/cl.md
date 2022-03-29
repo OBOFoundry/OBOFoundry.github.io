@@ -19,13 +19,16 @@ contact:
   label: Alexander Diehl
   email: addiehl@buffalo.edu
   github: addiehl
+  orcid: 0000-0001-9990-8331
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 taxon:
   id: NCBITaxon:33208
   label: Metazoa
-domain: cells
+domain: anatomy and development
+tags:
+  - cells
 tracker: https://github.com/obophenotype/cell-ontology/issues
 mailing_list: https://groups.google.com/g/cl_edit
 publications:
@@ -78,7 +81,7 @@ preferredPrefix: CL
 
 ![logo](/images/CL-logo.jpg)
 
-The Cell Ontology is designed as a structured controlled vocabulary for cell types. This ontology was constructed for use by the model organism and other bioinformatics databases, where there is a need for a controlled vocabulary of cell types. This ontology is not organism specific it covers cell types from prokaryotes to mammals. However, it excludes plant cell types, which are covered by PO.
+The Cell Ontology is designed as a structured controlled vocabulary for cell types. This ontology was constructed for use by the model organism and other bioinformatics databases, where there is a need for a controlled vocabulary of cell types. This ontology is not organism specific. It covers cell types from prokaryotes to mammals. However, it excludes plant cell types, which are covered by PO.
 
 ## Integration with other ontologies
 

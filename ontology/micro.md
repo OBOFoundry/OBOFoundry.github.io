@@ -5,6 +5,7 @@ contact:
   email: carrine.blank@umontana.edu
   label: Carrine Blank
   github: carrineblank
+  orcid: 0000-0002-2100-6351
 description: An ontology of prokaryotic phenotypic and metabolic characters
 title: Ontology of Prokaryotic Phenotypic and Metabolic Characters
 domain: phenotype

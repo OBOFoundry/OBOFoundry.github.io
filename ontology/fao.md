@@ -5,11 +5,12 @@ contact:
   email: vw253@cam.ac.uk
   label: Val Wood
   github: ValWood
+  orcid: 0000-0001-6330-7526
 license:
   url: http://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
 description: A structured controlled vocabulary for the anatomy of fungi.
-domain: anatomy
+domain: anatomy and development
 tracker: https://github.com/obophenotype/fungal-anatomy-ontology/issues
 homepage: https://github.com/obophenotype/fungal-anatomy-ontology/
 products:

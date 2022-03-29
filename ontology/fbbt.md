@@ -6,9 +6,13 @@ contact:
   email: cp390@cam.ac.uk
   label: Clare Pilgrim
   github: Clare72
+  orcid: 0000-0002-1373-1705
 description: An ontology representing the gross anatomy of Drosophila melanogaster.
-domain: Drosophilid anatomy
+domain: anatomy and development
+tags:
+  - Drosophilid anatomy
 homepage: http://purl.obolibrary.org/obo/fbbt
+repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
 products:
   - id: fbbt.owl
   - id: fbbt.obo

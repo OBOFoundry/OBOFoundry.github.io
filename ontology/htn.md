@@ -7,11 +7,12 @@ homepage: https://github.com/aellenhicks/htn_owl
 contact:
   label: Amanda Hicks
   email: aellenhicks@gmail.com
+  github: aellenhicks
+  orcid: 0000-0002-1795-5570
 license:
   label: CC BY 4.0
   url: http://creativecommons.org/licenses/by/4.0/
 tracker: https://github.com/aellenhicks/htn_owl/issues
-source_url: https://raw.githubusercontent.com/aellenhicks/htn_owl/master/htn.owl
 products:
   - id: htn.owl
     title: HTN

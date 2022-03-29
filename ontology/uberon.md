@@ -1,7 +1,6 @@
 ---
 layout: ontology_detail
 id: uberon
-type: owl:Ontology
 label: Uberon
 title: Uberon multi-species anatomy ontology
 build:
@@ -14,11 +13,9 @@ description: An integrated cross-species anatomy ontology covering animals and b
 homepage: http://uberon.org
 page: http://en.wikipedia.org/wiki/Uberon
 twitter: uberanat
-google_plus: "+UberonOrg"
 slack: https://obo-communitygroup.slack.com/archives/C01CR698CF2
 wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
-biosharing: https://www.biosharing.org/bsg-000016
 usages:
   - user: http://bgee.org/
     seeAlso: https://www.biosharing.org/biodbcore-000228
@@ -81,7 +78,7 @@ license:
 taxon:
   id: NCBITaxon:33208
   label: Metazoa
-domain: anatomy
+domain: anatomy and development
 repository: https://github.com/obophenotype/uberon
 tracker: https://github.com/obophenotype/uberon/issues
 releases: http://purl.obolibrary.org/obo/uberon/releases/
@@ -89,18 +86,13 @@ contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
   github: cmungall
+  orcid: 0000-0002-6601-2165
 publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/22293552
     title: "Uberon, an integrative multi-species anatomy ontology"
   - id: http://www.ncbi.nlm.nih.gov/pubmed/25009735
     title: "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon"
 depicted_by: http://uberon.github.io/images/u-logo.jpg
-exampleClass: UBERON_0002046
-redirects:
-  - match: "releases/"
-    url: "http://svn.code.sf.net/p/obo/svn/uberon/releases/"
-  - match: ""
-    url: "http://berkeleybop.org/ontologies/uberon/"
 dependencies:
   - id: go
     subset: uberon/go_import.owl

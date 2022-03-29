@@ -5,7 +5,9 @@ title: Agronomy Ontology
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-domain: agronomy
+domain: agriculture
+tags:
+  - agronomy
 build:
   checkout: git clone  https://github.com/AgriculturalSemantics/agro.git
   system: git
@@ -16,6 +18,7 @@ contact:
   email: m.a.laporte@cgiar.org
   label: Marie-Angélique Laporte
   github: "marieALaporte"
+  orcid: 0000-0002-8461-9745
 products:
   - id: agro.owl
     title: "AgrO"
