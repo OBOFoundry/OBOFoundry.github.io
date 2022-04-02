@@ -3,7 +3,6 @@
 import unittest
 from pathlib import Path
 
-import citation_url
 import yaml
 
 HERE = Path(__file__).parent.resolve()
@@ -57,6 +56,7 @@ class TestIntegrity(unittest.TestCase):
 
     def test_publications(self):
         """Test publications information."""
+        uri_prefix = "https://www.ncbi.nlm.nih.gov/pubmed/"
         for ontology, data in sorted(self.ontologies.items()):
             for i, publication in enumerate(data.get("publications", [])):
                 identifier = publication["id"]
@@ -71,9 +71,7 @@ class TestIntegrity(unittest.TestCase):
                     self.assertIsInstance(identifier, str)
                     self.assertFalse(identifier.endswith("/"))
                     self.assertTrue(
-                        identifier.startswith("https://www.ncbi.nlm.nih.gov/pubmed/"),
+                        identifier.startswith(uri_prefix),
                         msg=f"{ontology} publication {i} has unexpected identifier: {identifier}",
                     )
-
-                    result = citation_url.parse(identifier)
-                    self.assertEqual(citation_url.Status.success, result.status)
+                    self.assertTrue(identifier[len(uri_prefix):].isnumeric())
