@@ -9,10 +9,9 @@ layout: default
     <div class="page-header">
       <h1>
         {% if page.depicted_by %}
-        <img alt="logo" src="{{page.depicted_by}}"/>
+        <img alt="logo" src="{{page.depicted_by}}" style="max-height: 50px;" />
         {% endif %}
         {{ page.title }}
-        <small>{{ page.tagline }}</small>
       </h1>
       <p>
         {{page.description}}
@@ -48,7 +47,7 @@ layout: default
     {% endfor %}
   </div>
   {% endif %}
-  
+
   {% if page.activity_status == "inactive" %}{% unless page.is_obsolete %}
   <div>
     <div class="alert alert-warning" role="alert">
@@ -56,7 +55,7 @@ layout: default
     </div>
   </div>
   {% endunless %}{% endif %}
-  
+
   {% if page.activity_status == "orphaned" %}{% unless page.is_obsolete %}
   <div>
     <div class="alert alert-warning" role="alert">
@@ -172,13 +171,13 @@ layout: default
 
 
       <div class="col-md-4">
-        <dl class="dl-horizontal" style="dd { margin-left: 0 }">
+        <dl class="dl-horizontal" style="margin-left: 0">
 
           <dt>
             ID Space
             <span data-toggle="tooltip"
                   title="ID prefix"
-                  html="true">
+                  data-html="true">
             </span>
           </dt>
           <dd>
@@ -326,7 +325,7 @@ layout: default
             <button type="button"
                     data-toggle="tooltip"
                     title="See FAQ entry: How is metadata stored?"
-                    html="true"
+                    data-html="true"
                     class="btn btn-default">
               View
             </button>
@@ -336,7 +335,7 @@ layout: default
             <button type="button"
                     data-toggle="tooltip"
                     title="See FAQ entry: How I do edit my metadata?"
-                    html="true"
+                    data-html="true"
                     class="btn btn-default">
               Edit</button>
           </a>
@@ -345,7 +344,7 @@ layout: default
             <button type="button"
                     data-toggle="tooltip"
                     title="See FAQ entry: How I do edit my PURL?"
-                    html="true"
+                    data-html="true"
                     class="btn btn-default">
               PURL</button>
           </a>
