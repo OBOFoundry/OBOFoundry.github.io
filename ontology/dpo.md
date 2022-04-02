@@ -31,7 +31,7 @@ browsers:
     title: FlyBase Browser
     url: http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000347
 publications:
-  - id: https://doi.org/10.1186/2041-1480-4-30
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24138933
     title: "The Drosophila phenotype ontology."
 usages:
   - user: http://flybase.org
