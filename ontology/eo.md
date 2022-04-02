@@ -39,7 +39,7 @@ usages:
         description: Gramene annotations to cold temperature regiment
 activity_status: inactive
 repository: https://github.com/Planteome/plant-environment-ontology
-logo: http://planteome.org/sites/default/files/garland_logo.PNG
+depicted_by: http://planteome.org/sites/default/files/garland_logo.PNG
 ---
 
 A structured, controlled vocabulary for the representation of plant environmental conditions.
