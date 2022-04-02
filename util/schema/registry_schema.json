@@ -293,6 +293,11 @@
         "label"
       ]
     },
+    "logo": {
+      "description": "The URL to a logo for the resource",
+      "type": "string",
+      "format": "uri"
+    },
     "mailing_list": {
       "level": "info",
       "description": "'mailing_list' is an informative field. The value is a mailing list on which ontology discussions take place.",

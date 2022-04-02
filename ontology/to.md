@@ -51,8 +51,7 @@ usages:
 activity_status: active
 repository: https://github.com/Planteome/plant-trait-ontology
 preferredPrefix: TO
+logo: http://planteome.org/sites/default/files/garland_logo.PNG
 ---
 
 A controlled vocabulary of describe phenotypic traits in plants. Each trait is a distinguishable feature, characteristic, quality or phenotypic feature of a developing or mature plant.
-
-<img alt="Planteome logo" src="http://planteome.org/sites/default/files/garland_logo.PNG"/>
