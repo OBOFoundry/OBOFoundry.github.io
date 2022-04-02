@@ -27,8 +27,7 @@ products:
 activity_status: active
 repository: https://github.com/monarch-initiative/SEPIO-ontology
 preferredPrefix: SEPIO
+logo: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/SEPIO-LOGOS/sepio_logo_black-banner.png
 ---
 
 The Scientific Evidence and Provenance Information Ontology (SEPIO) was developed to support description of evidence and provenance information for scientific claims. The core model represents the relationships between claims, their evidence lines, the information items that comprise these lines of evidence, and the methods, tools, and agents involved in the creation of these entities.  Use cases driving SEPIO development include integration of scientific claims and their associated evidence/provenance metadata, and support for the discovery, analysis, and evaluation of claims based on this metadata.
-
-<img src="https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/SEPIO-LOGOS/sepio_logo_black-banner.png"/>
