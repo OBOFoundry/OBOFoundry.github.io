@@ -37,7 +37,7 @@ usages:
       - url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression
         description: Expression for daf-16 gene with WormBase ID WBGene00000912.
     publications:
-      - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
+      - id: https://www.ncbi.nlm.nih.gov/pubmed/31642470
         title: "WormBase: a modern Model Organism Information Resource"
   - user: https://monarchinitiative.org/
     type: annotation
@@ -46,7 +46,7 @@ usages:
       - url: https://monarchinitiative.org/phenotype/WBPhenotype%3A0000370
         description: "Egg long: The fertilized oocytes have a greater than standard length measured end to end compared to control."
     publications:
-      - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
+      - id: https://www.ncbi.nlm.nih.gov/pubmed/27899636
         title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species "
 activity_status: active
 repository: https://github.com/obophenotype/c-elegans-phenotype-ontology

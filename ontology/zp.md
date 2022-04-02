@@ -40,7 +40,7 @@ usages:
       - url: https://monarchinitiative.org/phenotype/ZP:0005692
         description: "adaxial cell absent, abnormal: Abnormal(ly) absent (of) adaxial cell."
     publications:
-      - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
+      - id: https://www.ncbi.nlm.nih.gov/pubmed/27899636
         title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species"
 activity_status: active
 repository: https://github.com/obophenotype/zebrafish-phenotype-ontology

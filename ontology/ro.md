@@ -58,7 +58,7 @@ usages:
     type: annotation
     description: RO is used for annotation extensions in the GO and GO Causal Activity Models.
     publications:
-      - id: https://doi.org/10.1186/1471-2105-15-155
+      - id: https://www.ncbi.nlm.nih.gov/pubmed/24885854
         title: "A method for increasing expressivity of Gene Ontology annotations using a compositional approach"
     examples:
       - url: http://model.geneontology.org/56d1143000003402
