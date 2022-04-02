@@ -29,7 +29,7 @@ usages:
     type: annotation
     description: The National Human Genome Research Institute (NHGRI) launched a public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September 2003, to carry out a project to identify all functional elements in the human genome sequence. The ENCODE DCC users Uberon to annotate samples
     publications:
-      - id: https://doi.org/10.1093/database/bav010
+      - id: https://www.ncbi.nlm.nih.gov/pubmed/25776021
         title: "Ontology application and use at the ENCODE DCC"
   - user: http://fantom5-collaboration.gsc.riken.jp/
     type: annotation
@@ -57,14 +57,14 @@ usages:
   - user: http://single-cell.clst.riken.jp/
     description: SCPortalen
     publications:
-      - id: https://doi.org/10.1093/nar/gkx949
+      - id: https://www.ncbi.nlm.nih.gov/pubmed/29045713
         title: "SCPortalen: human and mouse single-cell centric database"
     type: Database
   - user: https://www.ebi.ac.uk/chembl/
     description: "ChEMBL uses Uberon to describe organ/tissue information in assays"
     type: Database
     publications:
-      - id: https://doi.org/10.1093/nar/gky1075
+      - id: https://www.ncbi.nlm.nih.gov/pubmed/30398643
         title: "ChEMBL: towards direct deposition of bioassay data"
 funded_by:
   - "NIH R24OD011883"

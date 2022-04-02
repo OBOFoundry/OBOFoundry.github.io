@@ -66,7 +66,7 @@ usages:
     type: annotation
     description: The National Human Genome Research Institute (NHGRI) launched a public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September 2003, to carry out a project to identify all functional elements in the human genome sequence. The ENCODE DCC users Uberon to annotate samples
     publications:
-      - id: https://doi.org/10.1093/database/bav010
+      - id: https://www.ncbi.nlm.nih.gov/pubmed/25776021
         title: "Ontology application and use at the ENCODE DCC"
   - user: http://fantom5-collaboration.gsc.riken.jp/
     type: annotation
