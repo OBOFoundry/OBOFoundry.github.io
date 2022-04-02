@@ -26,7 +26,7 @@ build:
   system: git
   path: "."
 publications:
-  - id: https://pubmed.ncbi.nlm.nih.gov/18629098/
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18629098
     title: "Building a cell and anatomy ontology of Caenorhabditis elegans"
 usages:
   - user: https://www.wormbase.org/

@@ -24,9 +24,9 @@ build:
   source_url: https://download.rgd.mcw.edu/ontology/pathway/pathway.obo
   method: obo2owl
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/21478484
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/21478484
     title: "The Rat Genome Database pathway portal."
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/24499703
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24499703
     title: "The pathway ontology - updates and applications."
 browsers:
   - label: RGD

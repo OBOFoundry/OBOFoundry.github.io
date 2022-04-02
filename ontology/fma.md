@@ -12,11 +12,11 @@ domain: anatomy and development
 homepage: http://si.washington.edu/projects/fma
 page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/18688289
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18688289
     title: Translating the Foundational Model of Anatomy into OWL
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/18360535
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18360535
     title: "The foundational model of anatomy in OWL: Experience and perspectives"
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/16779026
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/16779026
     title: "Challenges in converting frame-based ontology into OWL: the Foundational Model of Anatomy case-study"
 products:
   - id: fma.owl

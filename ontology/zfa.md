@@ -29,7 +29,7 @@ build:
   infallible: 1
 tracker: https://github.com/cerivs/zebrafish-anatomical-ontology/issues
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/24568621
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24568621
     title: "The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio."
 usages:
   - user: http://zfin.org

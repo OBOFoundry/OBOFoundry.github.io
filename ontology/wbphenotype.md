@@ -27,7 +27,7 @@ build:
   system: git
   path: "."
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/21261995
     title: "Worm Phenotype Ontology: integrating phenotype data within and beyond the C. elegans community."
 usages:
   - user: https://www.wormbase.org/

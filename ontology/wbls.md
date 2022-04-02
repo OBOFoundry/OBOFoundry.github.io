@@ -28,7 +28,7 @@ build:
   system: git
   path: "."
 publications:
-  - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/31642470
     title: "WormBase: a modern Model Organism Information Resource"
 usages:
   - user: https://www.wormbase.org/

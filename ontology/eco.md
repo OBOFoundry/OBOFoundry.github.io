@@ -23,9 +23,9 @@ contact:
   github: mgiglio99
   orcid: 0000-0001-7628-5565
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/30407590
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
     title: "ECO, the Evidence & Conclusion Ontology: community standard for evidence information."
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/25052702
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25052702
     title: "Standardized description of scientific evidence using the Evidence Ontology (ECO)"
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/

@@ -3,6 +3,7 @@
 import unittest
 from pathlib import Path
 
+import citation_url
 import yaml
 
 HERE = Path(__file__).parent.resolve()
@@ -53,3 +54,33 @@ class TestIntegrity(unittest.TestCase):
                             set(self.ontologies),
                             msg=f"Ontology {ontology} has invalid dependency at index {i}: {dependency_id}",
                         )
+
+    def test_publications(self):
+        """Test publications information."""
+        valid_prefixes = [
+            "https://www.ncbi.nlm.nih.gov/pubmed/",
+            "https://doi.org/",
+        ]
+        for ontology, data in sorted(self.ontologies.items()):
+            for i, publication in enumerate(data.get("publications", [])):
+                identifier = publication["id"]
+                if ontology == "agro" and identifier.startswith("http://ceur-ws.org/"):
+                    # Skip this one case since it's grandfathered in, but otherwise
+                    # these aren't good enough to be considered real citations since
+                    # they don't have a DOI
+                    continue
+
+                with self.subTest(ontology=ontology, id=identifier):
+                    self.assertIn("title", publication)
+                    self.assertIsInstance(identifier, str)
+                    self.assertFalse(identifier.endswith("/"))
+                    self.assertTrue(
+                        any(
+                            identifier.startswith(valid_prefix)
+                            for valid_prefix in valid_prefixes
+                        ),
+                        msg=f"{ontology} publication {i} has unexpected identifier: {identifier}",
+                    )
+
+                    result = citation_url.parse(identifier)
+                    self.assertEqual(citation_url.Status.success, result.status)

@@ -14,9 +14,9 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
 publications:
-  - id: http://www.dx.doi.org/10.1186/2041-1480-4-43
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24330602
     title: "The environment ontology: contextualising biological and biomedical entities"
-  - id: https://doi.org/10.1186/s13326-016-0097-6
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/27664130
     title: "The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation"
 products:
   - id: envo.owl

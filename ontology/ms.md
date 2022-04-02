@@ -21,7 +21,7 @@ dependencies:
   - id: pato
   - id: uo
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/23482073
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/23482073
     title: "The HUPO proteomics standards initiative- mass spectrometry controlled vocabulary."
 products:
   - id: ms.obo

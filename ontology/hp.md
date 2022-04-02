@@ -38,13 +38,13 @@ browsers:
     title: Monarch Phenotype Page
     url: http://monarchinitiative.org/phenotype/HP:0000118
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/18950739
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18950739
     title: "The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease."
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/26119816
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/26119816
     title: "The Human Phenotype Ontology: Semantic Unification of Common and Rare Disease."
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/24217912
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24217912
     title: "The Human Phenotype Ontology project: linking molecular biology and disease through phenotype data."
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/30476213
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/30476213
     title: "Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources."
 usages:
   - user: https://monarchinitiative.org/

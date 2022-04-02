@@ -88,9 +88,9 @@ contact:
   github: cmungall
   orcid: 0000-0002-6601-2165
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/22293552
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22293552
     title: "Uberon, an integrative multi-species anatomy ontology"
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/25009735
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25009735
     title: "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon"
 depicted_by: http://uberon.github.io/images/u-logo.jpg
 dependencies:

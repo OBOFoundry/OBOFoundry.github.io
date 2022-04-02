@@ -28,9 +28,9 @@ page: https://github.com/Planteome/plant-ontology
 twitter: planteome
 tracker: https://github.com/Planteome/plant-ontology/issues
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/23220694
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/23220694
     title: "The plant ontology as a tool for comparative plant anatomy and genomic analyses."
-  - id: https://doi.org/10.1093/nar/gkx1152
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
     title: "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics."
 products:
   - id: po.owl

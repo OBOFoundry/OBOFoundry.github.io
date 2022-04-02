@@ -24,7 +24,7 @@ license:
 is_obsolete: true
 replaced_by: peco
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/22847540
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22847540
     title: "Ontologies as integrative tools for plant science."
 usages:
   - user: http://planteome.org/
