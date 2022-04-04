@@ -97,7 +97,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/chebi/chebi_core.obo
     title: chebi_core, no xrefs
   publications:
-  - id: http://europepmc.org/article/MED/26467479
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/26467479
     title: 'ChEBI in 2016: Improved services and an expanding collection of metabolites.'
   repository: https://github.com/ebi-chebi/ChEBI
   review:
@@ -131,6 +131,7 @@ ontologies:
     github: lschriml
     label: Lynn Schriml
     orcid: 0000-0001-8910-9851
+  depicted_by: http://www.disease-ontology.org/media/images/DO_logo.jpg
   description: An ontology for describing the classification of human diseases organized
     by etiology.
   domain: health
@@ -153,7 +154,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/doid.obo
     title: Disease Ontology, OBO format. This file omits the equivalent axioms.
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25348409
     title: 'Disease Ontology 2015 update: an expanded and updated database of human
       diseases for linking biomedical knowledge through disease data'
   repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
@@ -469,7 +470,7 @@ ontologies:
     - description: An abnormality in a cellular process.
       url: https://www.ebi.ac.uk/ols/ontologies/hp/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHP_0011017&viewMode=All&siblings=false
     publications:
-    - id: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6324074/
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/30476213
       title: Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources
     type: annotation
     user: https://hpo.jax.org/app/
@@ -488,6 +489,7 @@ ontologies:
     github: jaiswalp
     label: Pankaj Jaiswal
     orcid: 0000-0002-1005-8383
+  depicted_by: http://planteome.org/sites/default/files/garland_logo.PNG
   description: The Plant Ontology is a structured vocabulary and database resource
     that links plant anatomy, morphology and growth and development to plant genomics
     data.
@@ -512,10 +514,10 @@ ontologies:
   - id: po.obo
     ontology_purl: http://purl.obolibrary.org/obo/po.obo
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/23220694
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/23220694
     title: The plant ontology as a tool for comparative plant anatomy and genomic
       analyses.
-  - id: https://doi.org/10.1093/nar/gkx1152
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
     title: 'The Planteome database: an integrated resource for reference ontologies,
       plant genomics and phenomics.'
   repository: https://github.com/Planteome/plant-ontology
@@ -594,8 +596,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/pr.obo
     title: pro_reasoned.obo
   publications:
-  - id: https://proconsortium.org/pro_dsmnt.shtml#publication
-    title: Publications & Dissemination
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/27899649
+    title: 'Protein Ontology (PRO): enhancing and scaling up the representation of
+      protein entities'
   repository: https://github.com/PROconsortium/PRoteinOntology
   review:
     date: 2010
@@ -646,9 +649,9 @@ ontologies:
   - id: xao.obo
     ontology_purl: http://purl.obolibrary.org/obo/xao.obo
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/18817563
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18817563
     title: An ontology for Xenopus anatomy and development.
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/24139024
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24139024
     title: 'Enhanced XAO: the ontology of Xenopus anatomy and development underpins
       more accurate annotation of gene expression and queries on Xenbase.'
   repository: https://github.com/xenopus-anatomy/xao
@@ -695,7 +698,7 @@ ontologies:
   - id: zfa.obo
     ontology_purl: http://purl.obolibrary.org/obo/zfa.obo
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/24568621
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24568621
     title: 'The zebrafish anatomy and stage ontologies: representing the anatomy and
       development of Danio rerio.'
   repository: https://github.com/cerivs/zebrafish-anatomical-ontology
@@ -984,7 +987,7 @@ ontologies:
   - id: bspo.obo
     ontology_purl: http://purl.obolibrary.org/obo/bspo.obo
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/25140222
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25140222
     title: 'Nose to tail, roots to shoots: spatial descriptors for phenotypic diversity
       in the Biological Spatial Ontology.'
   repository: https://github.com/obophenotype/biological-spatial-ontology
@@ -1352,7 +1355,7 @@ ontologies:
       2003, to carry out a project to identify all functional elements in the human
       genome sequence. The ENCODE DCC users Uberon to annotate samples
     publications:
-    - id: https://doi.org/10.1093/database/bav010
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/25776021
       title: Ontology application and use at the ENCODE DCC
     seeAlso: https://www.biosharing.org/biodbcore-000034
     type: annotation
@@ -1471,6 +1474,7 @@ ontologies:
     github: jrsjrs
     label: Jennifer Smith
     orcid: 0000-0002-6443-9376
+  depicted_by: http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif
   description: Morphological and physiological measurement records generated from
     clinical and model organism research and health programs.
   domain: health
@@ -1490,9 +1494,9 @@ ontologies:
   - id: cmo.obo
     ontology_purl: http://purl.obolibrary.org/obo/cmo.obo
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/22654893
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22654893
     title: Three ontologies to define phenotype measurement data.
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/24103152
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24103152
     title: 'The clinical measurement, measurement method and experimental condition
       ontologies: expansion, improvements and new applications.'
   repository: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology
@@ -1867,7 +1871,7 @@ ontologies:
   - id: dpo.json
     ontology_purl: http://purl.obolibrary.org/obo/dpo.json
   publications:
-  - id: https://doi.org/10.1186/2041-1480-4-30
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24138933
     title: The Drosophila phenotype ontology.
   repository: https://github.com/FlyBase/drosophila-phenotype-ontology
   taxon:
@@ -1985,6 +1989,7 @@ ontologies:
     github: mgiglio99
     label: Michelle Giglio
     orcid: 0000-0001-7628-5565
+  depicted_by: https://avatars1.githubusercontent.com/u/12802432
   description: An ontology for experimental and other evidence statements.
   domain: investigations
   funded_by:
@@ -2007,10 +2012,10 @@ ontologies:
   - id: eco.obo
     ontology_purl: http://purl.obolibrary.org/obo/eco.obo
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/30407590
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
     title: 'ECO, the Evidence & Conclusion Ontology: community standard for evidence
       information.'
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/25052702
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25052702
     title: Standardized description of scientific evidence using the Evidence Ontology
       (ECO)
   repository: https://github.com/evidenceontology/evidenceontology
@@ -2032,7 +2037,7 @@ ontologies:
         movement and difficulty with walking and gait.'
       url: https://monarchinitiative.org/phenotype/HP%3A0001300#disease
     publications:
-    - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/27899636
       title: 'The Monarch Initiative: an integrative data and analytic platform connecting
         phenotypes to genotypes across species'
     type: annotation
@@ -2108,6 +2113,7 @@ ontologies:
   - id: ro
   - id: uberon
   - id: xco
+  depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/ecto-logos/ecto-logo_black-banner.png
   description: ECTO describes exposures to experimental treatments of plants and model
     organisms (e.g. exposures to modification of diet, lighting levels, temperature);
     exposures of humans or any other organisms to stressors through a variety of routes,
@@ -2217,6 +2223,7 @@ ontologies:
   - id: foodon
   - id: po
   - id: go
+  depicted_by: /logos/envo.png
   description: Ontology of environmental features and habitats
   domain: environment
   homepage: http://environmentontology.org/
@@ -2253,9 +2260,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/envo/subsets/EnvO-Lite-GSC.obo
     title: GSC Lite subset of ENVO
   publications:
-  - id: http://www.dx.doi.org/10.1186/2041-1480-4-43
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24330602
     title: 'The environment ontology: contextualising biological and biomedical entities'
-  - id: https://doi.org/10.1186/s13326-016-0097-6
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/27664130
     title: 'The environment ontology in 2016: bridging domains with increased scope,
       semantic density, and interoperation'
   repository: https://github.com/EnvironmentOntology/envo
@@ -2501,13 +2508,13 @@ ontologies:
   - id: fbbt/fbbt-simple.obo
     ontology_purl: http://purl.obolibrary.org/obo/fbbt/fbbt-simple.obo
   publications:
-  - id: https://doi.org/10.1186/2041-1480-4-32
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24138933
     title: The Drosophila anatomy ontology. [Journal of Biomedical Semantics
-  - id: https://doi.org/10.1093/bioinformatics/bts113
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22402613
     title: A strategy for building neuroanatomy ontologies
-  - id: https://doi.org/10.1093/bioinformatics/btr677
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22180411
     title: The Virtual Fly Brain Browser and Query Interface
-  - id: https://doi.org/10.1093/nar/gkj068
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/16381917
     title: 'FlyBase: anatomical data, images and queries'
   repository: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology
   tags:
@@ -2827,7 +2834,7 @@ ontologies:
   - id: fypo.obo
     ontology_purl: http://purl.obolibrary.org/obo/fypo.obo
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/23658422
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/23658422
     title: 'FYPO: The Fission Yeast Phenotype Ontology.'
   repository: https://github.com/pombase/fypo
   taxon:
@@ -3517,6 +3524,7 @@ ontologies:
   - id: uberon
   - id: foodon
   - id: chebi
+  depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/maxo-logos/maxo_logo_black-banner.png
   description: Medical Action Ontology is an ontology...
   domain: health
   homepage: https://github.com/monarch-initiative/MAxO
@@ -3822,9 +3830,9 @@ ontologies:
   - id: mmo.obo
     ontology_purl: http://purl.obolibrary.org/obo/mmo.obo
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/22654893
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22654893
     title: Three ontologies to define phenotype measurement data.
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/24103152
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24103152
     title: 'The clinical measurement, measurement method and experimental condition
       ontologies: expansion, improvements and new applications.'
   repository: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology
@@ -3892,7 +3900,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/mod.obo
     title: PSI-MOD.obo
   publications:
-  - id: https://pubmed.ncbi.nlm.nih.gov/18688235/
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18688235
     title: The PSI-MOD community standard for representation of protein modification
       data
   repository: https://github.com/HUPO-PSI/psi-mod-CV
@@ -3964,7 +3972,7 @@ ontologies:
         movement and difficulty with walking and gait.'
       url: https://monarchinitiative.org/phenotype/HP:0001300#disease
     publications:
-    - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/27899636
       title: 'The Monarch Initiative: an integrative data and analytic platform connecting
         phenotypes to genotypes across species '
     type: annotation
@@ -4195,7 +4203,7 @@ ontologies:
     - description: 'Epitope ID: 59611 based on reference 1003499'
       url: https://www.iedb.org/assay/1357035
     publications:
-    - id: https://doi.org/10.1093/nar/gky1006
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/30357391
       title: 'The Immune Epitope Database (IEDB): 2018 update'
     type: annotation
     user: https://www.iedb.org/
@@ -4233,7 +4241,7 @@ ontologies:
   - id: ms.owl
     ontology_purl: http://purl.obolibrary.org/obo/ms.owl
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/23482073
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/23482073
     title: The HUPO proteomics standards initiative- mass spectrometry controlled
       vocabulary.
   repository: https://github.com/HUPO-PSI/psi-ms-CV
@@ -5343,6 +5351,7 @@ ontologies:
     github: jaiswalp
     label: Pankaj Jaiswal
     orcid: 0000-0002-1005-8383
+  depicted_by: http://planteome.org/sites/default/files/garland_logo.PNG
   description: A structured, controlled vocabulary which describes the treatments,
     growing conditions, and/or study types used in plant biology experiments.
   domain: investigations
@@ -5362,7 +5371,7 @@ ontologies:
   - id: peco.obo
     ontology_purl: http://purl.obolibrary.org/obo/peco.obo
   publications:
-  - id: https://doi.org/10.1093/nar/gkx1152
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
     title: 'The Planteome database: an integrated resource for reference ontologies,
       plant genomics and phenomics.'
   repository: https://github.com/Planteome/plant-experimental-conditions-ontology
@@ -5522,7 +5531,7 @@ ontologies:
   - id: poro.obo
     ontology_purl: http://purl.obolibrary.org/obo/poro.obo
   publications:
-  - id: https://doi.org/10.1186/2041-1480-5-39
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25276334
     title: 'The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy
       ontology'
   repository: https://github.com/obophenotype/porifera-ontology
@@ -5645,6 +5654,7 @@ ontologies:
     github: gthayman
     label: G. Thomas Hayman
     orcid: 0000-0002-9553-7227
+  depicted_by: http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif
   description: A controlled vocabulary for annotating gene products to pathways.
   domain: biological systems
   homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
@@ -5663,9 +5673,9 @@ ontologies:
   - id: pw.obo
     ontology_purl: http://purl.obolibrary.org/obo/pw.obo
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/21478484
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/21478484
     title: The Rat Genome Database pathway portal.
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/24499703
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24499703
     title: The pathway ontology - updates and applications.
   repository: https://github.com/rat-genome-database/PW-Pathway-Ontology
   tags:
@@ -5804,7 +5814,7 @@ ontologies:
     - description: wg_biogenesis_FlyBase
       url: http://model.geneontology.org/56d1143000003402
     publications:
-    - id: https://doi.org/10.1186/1471-2105-15-155
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/24885854
       title: A method for increasing expressivity of Gene Ontology annotations using
         a compositional approach
     type: annotation
@@ -5822,6 +5832,7 @@ ontologies:
     github: shurjenw
     label: Shur-Jen Wang
     orcid: 0000-0001-5256-8683
+  depicted_by: http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif
   description: Ontology of rat strains
   homepage: http://rgd.mcw.edu/rgdweb/search/strains.html
   id: rs
@@ -5839,7 +5850,7 @@ ontologies:
   - id: rs.obo
     ontology_purl: http://purl.obolibrary.org/obo/rs.obo
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/24267899
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24267899
     title: 'Rat Strain Ontology: structured controlled vocabulary designed to facilitate
       access to strain data at RGD.'
   repository: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology
@@ -5886,6 +5897,7 @@ ontologies:
     github: mbrush
     label: Matthew Brush
     orcid: 0000-0002-1048-5019
+  depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/SEPIO-LOGOS/sepio_logo_black-banner.png
   description: An ontology for representing the provenance of scientific claims and
     the evidence that supports them.
   domain: investigations
@@ -5951,9 +5963,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/so/subsets/SOFA.obo
     title: Sequence Ontology Feature Annotation (SOFA) subset (OBO Format)
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/15892872
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/15892872
     title: 'The Sequence Ontology: a tool for the unification of genome annotations.'
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/20226267
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/20226267
     title: Evolution of the Sequence Ontology terms and relationships.
   repository: https://github.com/The-Sequence-Ontology/SO-Ontologies
   tags:
@@ -6148,6 +6160,7 @@ ontologies:
     github: jaiswalp
     label: Pankaj Jaiswal
     orcid: 0000-0002-1005-8383
+  depicted_by: http://planteome.org/sites/default/files/garland_logo.PNG
   description: A controlled vocabulary to describe phenotypic traits in plants.
   domain: phenotype
   homepage: http://browser.planteome.org/amigo
@@ -6169,7 +6182,7 @@ ontologies:
   - id: to.obo
     ontology_purl: http://purl.obolibrary.org/obo/to.obo
   publications:
-  - id: https://doi.org/10.1093/nar/gkx1152
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
     title: 'The Planteome database: an integrated resource for reference ontologies,
       plant genomics and phenomics.'
   repository: https://github.com/Planteome/plant-trait-ontology
@@ -6331,7 +6344,7 @@ ontologies:
     subset: uberon/chebi_import.owl
   - id: pr
     subset: uberon/pr_import.owl
-  depicted_by: http://uberon.github.io/images/u-logo.jpg
+  depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/uberon-logos/uberon_logo_black-banner.png
   description: An integrated cross-species anatomy ontology covering animals and bridging
     multiple species-specific ontologies
   domain: anatomy and development
@@ -6421,9 +6434,9 @@ ontologies:
     title: Uberon composite vertebrate ontology
     type: MergedOntology
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/22293552
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22293552
     title: Uberon, an integrative multi-species anatomy ontology
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/25009735
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25009735
     title: Unification of multi-species vertebrate anatomy ontologies for comparative
       biology in Uberon
   releases: http://purl.obolibrary.org/obo/uberon/releases/
@@ -6451,7 +6464,7 @@ ontologies:
       2003, to carry out a project to identify all functional elements in the human
       genome sequence. The ENCODE DCC users Uberon to annotate samples
     publications:
-    - id: https://doi.org/10.1093/database/bav010
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/25776021
       title: Ontology application and use at the ENCODE DCC
     seeAlso: https://www.biosharing.org/biodbcore-000034
     type: annotation
@@ -6490,13 +6503,13 @@ ontologies:
     user: https://scicrunch.org/
   - description: SCPortalen
     publications:
-    - id: https://doi.org/10.1093/nar/gkx949
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/29045713
       title: 'SCPortalen: human and mouse single-cell centric database'
     type: Database
     user: http://single-cell.clst.riken.jp/
   - description: ChEMBL uses Uberon to describe organ/tissue information in assays
     publications:
-    - id: https://doi.org/10.1093/nar/gky1075
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/30398643
       title: 'ChEMBL: towards direct deposition of bioassay data'
     type: Database
     user: https://www.ebi.ac.uk/chembl/
@@ -6584,7 +6597,7 @@ ontologies:
         with walking and gait.
       url: https://monarchinitiative.org/phenotype/HP:0001300#disease
     publications:
-    - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/27899636
       title: 'The Monarch Initiative: an integrative data and analytic platform connecting
         phenotypes to genotypes across species '
     type: analysis
@@ -6716,7 +6729,7 @@ ontologies:
   - id: wbbt.obo
     ontology_purl: http://purl.obolibrary.org/obo/wbbt.obo
   publications:
-  - id: https://pubmed.ncbi.nlm.nih.gov/18629098/
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18629098
     title: Building a cell and anatomy ontology of Caenorhabditis elegans
   repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
   taxon:
@@ -6731,7 +6744,7 @@ ontologies:
     - description: Expression for gene daf-16 with WormBase ID WBGene00000912
       url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression
     publications:
-    - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/31642470
       title: 'WormBase: a modern Model Organism Information Resource'
     type: annotation
     user: https://www.wormbase.org/
@@ -6763,7 +6776,7 @@ ontologies:
   - id: wbls.obo
     ontology_purl: http://purl.obolibrary.org/obo/wbls.obo
   publications:
-  - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/31642470
     title: 'WormBase: a modern Model Organism Information Resource'
   repository: https://github.com/obophenotype/c-elegans-development-ontology
   tags:
@@ -6780,7 +6793,7 @@ ontologies:
     - description: Expression for daf-16 gene with WormBase ID WBGene00000912.
       url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression
     publications:
-    - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/31642470
       title: 'WormBase: a modern Model Organism Information Resource'
     type: annotation
     user: https://www.wormbase.org/
@@ -6814,7 +6827,7 @@ ontologies:
   - id: wbphenotype/wbphenotype-base.owl
     ontology_purl: http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-base.owl
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=21261995
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/21261995
     title: 'Worm Phenotype Ontology: integrating phenotype data within and beyond
       the C. elegans community.'
   repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
@@ -6830,7 +6843,7 @@ ontologies:
     - description: Expression for daf-16 gene with WormBase ID WBGene00000912.
       url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression
     publications:
-    - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/31642470
       title: 'WormBase: a modern Model Organism Information Resource'
     type: annotation
     user: https://www.wormbase.org/
@@ -6841,7 +6854,7 @@ ontologies:
         length measured end to end compared to control.'
       url: https://monarchinitiative.org/phenotype/WBPhenotype%3A0000370
     publications:
-    - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/27899636
       title: 'The Monarch Initiative: an integrative data and analytic platform connecting
         phenotypes to genotypes across species '
     type: annotation
@@ -6859,6 +6872,7 @@ ontologies:
     github: jrsjrs
     label: Jennifer Smith
     orcid: 0000-0002-6443-9376
+  depicted_by: http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif
   description: Conditions under which physiological and morphological measurements
     are made both in the clinic and in studies involving humans or model organisms.
   domain: health
@@ -6878,9 +6892,9 @@ ontologies:
   - id: xco.obo
     ontology_purl: http://purl.obolibrary.org/obo/xco.obo
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/22654893
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22654893
     title: Three ontologies to define phenotype measurement data.
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/24103152
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24103152
     title: 'The clinical measurement, measurement method and experimental condition
       ontologies: expansion, improvements and new applications.'
   repository: https://github.com/rat-genome-database/XCO-experimental-condition-ontology
@@ -7081,7 +7095,7 @@ ontologies:
         cell.'
       url: https://monarchinitiative.org/phenotype/ZP:0005692
     publications:
-    - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/27899636
       title: 'The Monarch Initiative: an integrative data and analytic platform connecting
         phenotypes to genotypes across species'
     type: annotation
@@ -7136,6 +7150,7 @@ ontologies:
     github: drseb
     label: Sebastian Koehler
     orcid: 0000-0002-5316-1399
+  depicted_by: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/logo/HPO-logo-black_small.png
   description: A structured and controlled vocabulary for the phenotypic features
     encountered in human hereditary and other disease.
   domain: phenotype
@@ -7157,16 +7172,16 @@ ontologies:
   - id: hp.obo
     ontology_purl: http://purl.obolibrary.org/obo/hp.obo
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/18950739
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18950739
     title: 'The Human Phenotype Ontology: a tool for annotating and analyzing human
       hereditary disease.'
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/26119816
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/26119816
     title: 'The Human Phenotype Ontology: Semantic Unification of Common and Rare
       Disease.'
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/24217912
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24217912
     title: 'The Human Phenotype Ontology project: linking molecular biology and disease
       through phenotype data.'
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/30476213
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/30476213
     title: Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources.
   repository: https://github.com/obophenotype/human-phenotype-ontology
   taxon:
@@ -7516,7 +7531,7 @@ ontologies:
   - id: ehdaa2.obo
     ontology_purl: http://purl.obolibrary.org/obo/ehdaa2.obo
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/22973865
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22973865
     title: A new ontology (structured hierarchy) of human developmental anatomy for
       the first 7 weeks (Carnegie stages 1-20).
   repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
@@ -7574,11 +7589,11 @@ ontologies:
   - id: fma.owl
     ontology_purl: http://purl.obolibrary.org/obo/fma.owl
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/18688289
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18688289
     title: Translating the Foundational Model of Anatomy into OWL
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/18360535
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18360535
     title: 'The foundational model of anatomy in OWL: Experience and perspectives'
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/16779026
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/16779026
     title: 'Challenges in converting frame-based ontology into OWL: the Foundational
       Model of Anatomy case-study'
   repository: https://bitbucket.org/uwsig/fma
@@ -7771,7 +7786,7 @@ ontologies:
   - id: upa.obo
     ontology_purl: http://purl.obolibrary.org/obo/upa.obo
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/22102589
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22102589
     title: 'UniPathway: a resource for the exploration and annotation of metabolic
       pathways'
   repository: https://github.com/geneontology/unipathway
@@ -7932,7 +7947,7 @@ ontologies:
   - id: dinto.owl
     ontology_purl: http://purl.obolibrary.org/obo/dinto.owl
   publications:
-  - id: http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/26147071
     title: 'DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug–Drug Interactions
       and Their Mechanisms.'
   repository: https://github.com/labda/DINTO
@@ -8000,6 +8015,7 @@ ontologies:
     github: jaiswalp
     label: Pankaj Jaiswal
     orcid: 0000-0002-1005-8383
+  depicted_by: http://planteome.org/sites/default/files/garland_logo.PNG
   description: A structured, controlled vocabulary which describes the treatments,
     growing conditions, and/or study types used in plant biology experiments.
   domain: environment
@@ -8018,7 +8034,7 @@ ontologies:
   - id: eo.obo
     ontology_purl: http://purl.obolibrary.org/obo/eo.obo
   publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/22847540
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22847540
     title: Ontologies as integrative tools for plant science.
   replaced_by: peco
   repository: https://github.com/Planteome/plant-environment-ontology
@@ -8507,6 +8523,7 @@ ontologies:
     label: Teleostei
   title: Teleost Anatomy Ontology
 - activity_status: inactive
+  depicted_by: http://bgee.org/img/logo/bgee13_logo.png
   id: vhog
   is_obsolete: true
   layout: ontology_detail
