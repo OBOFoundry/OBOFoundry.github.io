@@ -92,7 +92,7 @@ publications:
     title: "Uberon, an integrative multi-species anatomy ontology"
   - id: https://www.ncbi.nlm.nih.gov/pubmed/25009735
     title: "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon"
-depicted_by: http://uberon.github.io/images/u-logo.jpg
+depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/uberon-logos/uberon_logo_black-banner.png
 dependencies:
   - id: go
     subset: uberon/go_import.owl
@@ -180,5 +180,3 @@ preferredPrefix: UBERON
 
 Uberon is an integrated cross-species ontology covering anatomical structures in animals. See the <a href="http://uberon.org">Uberon website</a> for more info, or read the <a
  href="http://genomebiology.com/2012/13/1/R5">Uberon paper in Genome Biology</a>.
-
-<img src="https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/uberon-logos/uberon_logo_black-banner.png"/>

@@ -65,6 +65,7 @@ usages:
 activity_status: active
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 preferredPrefix: DOID
+depicted_by: http://www.disease-ontology.org/media/images/DO_logo.jpg
 ---
 
 Creating a comprehensive classification of human diseases organized by etiology.
@@ -75,5 +76,3 @@ This file is equivalent to doid-non-classified.obo.
 
 - DO provides an additional OBO file, [doid-merged.obo](https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-merged.obo). 
  for the [AGR](http://www.alliancegenome.org) that includes [OMIM](http://omim.org) to DO associations as xrefs plus defined  relationships between OMIM susceptibility IDs and DO terms.  
-
-<img src="http://www.disease-ontology.org/media/images/DO_logo.jpg"/>

@@ -51,9 +51,8 @@ usages:
 activity_status: active
 repository: https://github.com/evidenceontology/evidenceontology
 preferredPrefix: ECO
+depicted_by: https://avatars1.githubusercontent.com/u/12802432
 ---
-
-<img src="https://avatars1.githubusercontent.com/u/12802432" alt="ECO logo"/>
 
 The Evidence & Conclusion Ontology (ECO) describes types of scientific evidence within the realm of biological research that can arise from laboratory experiments, computational methods, manual literature curation, and other means. Researchers can use these types of evidence to support assertions about things (such as scientific conclusions, gene annotations, or other statements of fact) that result from scientific research.
 

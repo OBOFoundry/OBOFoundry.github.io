@@ -39,13 +39,10 @@ usages:
         description: Gramene annotations to cold temperature regiment
 activity_status: inactive
 repository: https://github.com/Planteome/plant-environment-ontology
+depicted_by: http://planteome.org/sites/default/files/garland_logo.PNG
 ---
 
 A structured, controlled vocabulary for the representation of plant environmental conditions.
-
-<img alt="Planteome logo" src="http://planteome.org/sites/default/files/garland_logo.PNG"/>
-
-Note this ontology is  replaced by [PECO](peco.html).
 
 ## Migration Guide from EO to PECO
 

@@ -85,11 +85,10 @@ tracker: https://github.com/EnvironmentOntology/envo/issues/
 activity_status: active
 repository: https://github.com/EnvironmentOntology/envo
 preferredPrefix: ENVO
+depicted_by: /logos/envo.png
 ---
 
 EnvO is a community ontology for the concise, controlled description of environments.
-
-<img src="/logos/envo.png"/>
 
 Envo can be cited as:
 
