@@ -35,8 +35,7 @@ browsers:
 activity_status: active
 repository: https://github.com/rat-genome-database/PW-Pathway-Ontology
 preferredPrefix: PW
+depicted_by: http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif
 ---
-
-<img src="http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif"/>
 
 The Pathway Ontology is a controlled vocabulary for pathways that provides standard terms for the annotation of gene products. The Pathway Ontology is under development at <a href="http://rgd.mcw.edu">Rat Genome Database</a>.

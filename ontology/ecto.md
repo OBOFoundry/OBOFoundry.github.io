@@ -44,7 +44,6 @@ dependencies:
   - id: ro
   - id: uberon
   - id: xco
-
 tracker: https://github.com/EnvironmentOntology/environmental-exposure-ontology/issues
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
@@ -52,5 +51,5 @@ license:
 activity_status: active
 repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
 preferredPrefix: ECTO
+depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/ecto-logos/ecto-logo_black-banner.png
 ---
-<img src="https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/ecto-logos/ecto-logo_black-banner.png"/>
