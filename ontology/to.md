@@ -35,7 +35,7 @@ build:
   infallible: 1
 tracker: https://github.com/Planteome/plant-trait-ontology/issues
 publications:
-  - id: https://doi.org/10.1093/nar/gkx1152
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
     title: "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics."
 usages:
   - user: http://planteome.org/

@@ -25,9 +25,9 @@ build:
   infallible: 0
 tracker: https://github.com/xenopus-anatomy/xao/issues
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/18817563
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18817563
     title: "An ontology for Xenopus anatomy and development."
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/24139024
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24139024
     title: "Enhanced XAO: the ontology of Xenopus anatomy and development underpins more accurate annotation of gene expression and queries on Xenbase."
 usages:
   - user: http://www.xenbase.org

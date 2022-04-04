@@ -9,6 +9,8 @@ HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
 ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
 
+uri_prefix = "https://www.ncbi.nlm.nih.gov/pubmed/"
+
 
 def get_data():
     """Get ontology data."""
@@ -53,3 +55,39 @@ class TestIntegrity(unittest.TestCase):
                             set(self.ontologies),
                             msg=f"Ontology {ontology} has invalid dependency at index {i}: {dependency_id}",
                         )
+
+    def test_publications(self):
+        """Test publications information."""
+        for ontology, data in sorted(self.ontologies.items()):
+            for i, publication in enumerate(data.get("publications", [])):
+                identifier = publication["id"]
+                if ontology == "agro" and identifier.startswith("http://ceur-ws.org/"):
+                    # Skip this one case since it's grandfathered in, but otherwise
+                    # these aren't good enough to be considered real citations since
+                    # they don't have a DOI
+                    continue
+
+                with self.subTest(ontology=ontology, id=identifier):
+                    self.assert_valid_publication_id(
+                        publication,
+                        msg=f"{ontology} publication {i} has unexpected identifier: {identifier}",
+                    )
+
+            for i, usage in enumerate(data.get("usages", [])):
+                for j, publication in enumerate(usage.get("publications", [])):
+                    self.assertIn("user", usage, msg=f"Malformed usage missing a user in {ontology}")
+                    with self.subTest(ontology=ontology, user=usage["user"], id=publication["id"]):
+                        self.assert_valid_publication_id(
+                            publication,
+                            msg=f"{ontology} usage {i} publication {j} has unexpected identifier: {publication['id']}",
+                        )
+
+    def assert_valid_publication_id(self, publication, msg=None):
+        """Assert that the publication is annotated properly."""
+        self.assertIn("title", publication)
+        self.assertIn("id", publication)
+        identifier = publication["id"]
+        self.assertIsInstance(identifier, str)
+        self.assertFalse(identifier.endswith("/"))
+        self.assertTrue(identifier.startswith(uri_prefix), msg=msg)
+        self.assertTrue(identifier[len(uri_prefix):].isnumeric())

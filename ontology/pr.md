@@ -42,8 +42,8 @@ build:
   infallible: 0
 tracker: https://github.com/PROconsortium/PRoteinOntology/issues
 publications:
-  - id: https://proconsortium.org/pro_dsmnt.shtml#publication
-    title: "Publications & Dissemination"
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/27899649
+    title: "Protein Ontology (PRO): enhancing and scaling up the representation of protein entities"
 usages:
   - user: https://github.com/UCDenver-ccp/CRAFT
     description: Colorado Richly Annotated Full-Text (CRAFT) Corpus; PRO is used for entity tagging and annotation

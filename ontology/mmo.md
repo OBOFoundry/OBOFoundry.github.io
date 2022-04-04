@@ -24,9 +24,9 @@ build:
   source_url: https://download.rgd.mcw.edu/ontology/measurement_method/measurement_method.obo
   method: obo2owl
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/22654893
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22654893
     title: "Three ontologies to define phenotype measurement data."
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/24103152
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24103152
     title: "The clinical measurement, measurement method and experimental condition ontologies: expansion, improvements and new applications."
 browsers:
   - label: RGD

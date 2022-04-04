@@ -15,7 +15,7 @@ license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
 publications:
-  - id: http://pubs.acs.org/doi/10.1021/acs.jcim.5b00119
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/26147071
     title: "DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug–Drug Interactions and Their Mechanisms."
 activity_status: inactive
 is_obsolete: true

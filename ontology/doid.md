@@ -38,7 +38,7 @@ build:
   infallible: 1
 tracker: https://github.com/DiseaseOntology/HumanDiseaseOntology/issues
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/?term=25348409
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25348409
     title: "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/

@@ -10,7 +10,7 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 publications:
-  - id: https://pubmed.ncbi.nlm.nih.gov/18688235/
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18688235
     title: "The PSI-MOD community standard for representation of protein modification data"
 description: PSI-MOD is an ontology consisting of terms that describe protein chemical modifications
 domain: biochemistry

@@ -24,7 +24,7 @@ build:
   infallible: 1
 tracker: https://github.com/obophenotype/biological-spatial-ontology/issues
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/25140222
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25140222
     title: "Nose to tail, roots to shoots: spatial descriptors for phenotypic diversity in the Biological Spatial Ontology."
 activity_status: active
 repository: https://github.com/obophenotype/biological-spatial-ontology

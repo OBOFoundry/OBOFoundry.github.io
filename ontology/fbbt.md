@@ -42,13 +42,13 @@ browsers:
     title: BioPortal Browser
     url: http://bioportal.bioontology.org/ontologies/FB-BT?p=classes
 publications:
-  - id: https://doi.org/10.1186/2041-1480-4-32
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24138933
     title: "The Drosophila anatomy ontology. [Journal of Biomedical Semantics"
-  - id: https://doi.org/10.1093/bioinformatics/bts113
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22402613
     title: "A strategy for building neuroanatomy ontologies"
-  - id: https://doi.org/10.1093/bioinformatics/btr677
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22180411
     title: "The Virtual Fly Brain Browser and Query Interface"
-  - id: https://doi.org/10.1093/nar/gkj068
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/16381917
     title: "FlyBase: anatomical data, images and queries"
 usages:
   - user: http://www.virtualflybrain.org/

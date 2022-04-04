@@ -24,7 +24,7 @@ homepage: http://www.ebi.ac.uk/chebi
 page: http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual
 depicted_by: https://www.ebi.ac.uk/chebi/images/ChEBI_logo.png
 publications:
-  - id: http://europepmc.org/article/MED/26467479
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/26467479
     title: "ChEBI in 2016: Improved services and an expanding collection of metabolites."
 browsers:
   - label: CHEBI

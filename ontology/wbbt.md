@@ -26,7 +26,7 @@ build:
   system: git
   path: "."
 publications:
-  - id: https://pubmed.ncbi.nlm.nih.gov/18629098/
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18629098
     title: "Building a cell and anatomy ontology of Caenorhabditis elegans"
 usages:
   - user: https://www.wormbase.org/
@@ -36,7 +36,7 @@ usages:
       - url: http://www.wormbase.org/db/get?name=WBGene00000912;class=Gene;widget=expression
         description: "Expression for gene daf-16 with WormBase ID WBGene00000912"
     publications:
-      - id: https://academic.oup.com/nar/article/48/D1/D762/5603222
+      - id: https://www.ncbi.nlm.nih.gov/pubmed/31642470
         title: "WormBase: a modern Model Organism Information Resource"
 activity_status: active
 repository: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology

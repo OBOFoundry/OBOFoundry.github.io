@@ -34,9 +34,9 @@ build:
   method: obo2owl
 tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/15892872
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/15892872
     title: "The Sequence Ontology: a tool for the unification of genome annotations."
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/20226267
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/20226267
     title: Evolution of the Sequence Ontology terms and relationships.
 depicted_by: http://sequenceontology.org/img/so_icon.png
 activity_status: active

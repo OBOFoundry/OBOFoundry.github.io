@@ -23,9 +23,9 @@ contact:
   github: mgiglio99
   orcid: 0000-0001-7628-5565
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/30407590
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
     title: "ECO, the Evidence & Conclusion Ontology: community standard for evidence information."
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/25052702
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25052702
     title: "Standardized description of scientific evidence using the Evidence Ontology (ECO)"
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
@@ -46,7 +46,7 @@ usages:
       - url: https://monarchinitiative.org/phenotype/HP%3A0001300#disease
         description: "Parkinsonism: Characteristic neurologic anomaly resulting form degeneration of dopamine-generating cells in the substantia nigra, a region of the midbrain, characterized clinically by shaking, rigidity, slowness of movement and difficulty with walking and gait."
     publications:
-      - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
+      - id: https://www.ncbi.nlm.nih.gov/pubmed/27899636
         title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species"
 activity_status: active
 repository: https://github.com/evidenceontology/evidenceontology

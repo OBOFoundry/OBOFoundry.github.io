@@ -10,7 +10,7 @@ build:
   system: git
   path: "."
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/22102589
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22102589
     title: "UniPathway: a resource for the exploration and annotation of metabolic pathways"
 contact:
   email: "Anne.Morgat@sib.swiss"

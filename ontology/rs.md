@@ -14,7 +14,7 @@ homepage: http://rgd.mcw.edu/rgdweb/search/strains.html
 tracker: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology/issues
 page: https://download.rgd.mcw.edu/ontology/rat_strain/
 publications:
-  - id: http://www.ncbi.nlm.nih.gov/pubmed/24267899
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24267899
     title: "Rat Strain Ontology: structured controlled vocabulary designed to facilitate access to strain data at RGD."
 browsers:
   - label: RGD

@@ -35,7 +35,7 @@ usages:
       - url: https://monarchinitiative.org/phenotype/HP:0001300#disease
         description: "Characteristic neurologic anomaly resulting form degeneration of dopamine-generating cells in the substantia nigra, a region of the midbrain, characterized clinically by shaking, rigidity, slowness of movement and difficulty with walking and gait."
     publications:
-      - id: https://academic.oup.com/nar/article/45/D1/D712/2605791
+      - id: https://www.ncbi.nlm.nih.gov/pubmed/27899636
         title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species "
 build:
   source_url: http://build.berkeleybop.org/job/build-pheno-ontologies/lastSuccessfulBuild/artifact/*zip*/archive.zip
