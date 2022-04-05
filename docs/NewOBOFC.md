@@ -21,3 +21,8 @@ Potential members of the Operations Committee are identified from two possible s
 
 Note that new members are strongly encouraged to become members of one of the subcommittees: [Editorial Working Group](https://obofoundry.org/docs/EditorialWG.html)
  or [Technical Working Group](https://obofoundry.org/docs/TechnicalWG.html). 
+
+## Onboarding
+Once a candidate has gone through the steps above and been confirmed as a new OFOC member, they need to onboard.
+Currently, the onboarding steps to be taken by or on behalf of a new OFOC member are listed in a Google doc called "OBO Operations Onboarding" in the OBO Operations gdrive folder.
+This may in the future become a public GitHub doc, if that can be done safely.
