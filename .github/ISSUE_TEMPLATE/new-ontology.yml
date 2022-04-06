@@ -49,6 +49,27 @@ body:
         - CC-BY 3.0
     validations:
       required: true
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domain
+      description: Please choose the domain that best describes your ontology
+      options:
+        - upper
+        - anatomy and development
+        - health
+        - phenotype
+        - investigations
+        - environment
+        - biochemistry
+        - microbiology
+        - agriculture
+        - diet, metabolomics, and nutrition
+        - biological systems
+        - information technology
+        - organisms
+        - information
+        - simulation
   - type: markdown
     attributes:
       value: |
