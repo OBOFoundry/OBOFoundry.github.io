@@ -51,6 +51,8 @@ body:
       required: true
   - type: dropdown
     id: domain
+    validations:
+      required: true
     attributes:
       label: Domain
       description: Please choose the domain that best describes your ontology
