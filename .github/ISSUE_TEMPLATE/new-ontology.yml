@@ -60,7 +60,7 @@ body:
     attributes:
       label: Source Code Repository
       description: What is the URL of the repository? Typically, this will be a link to GitHub.
-      placeholder: ex. https://github.com/obophenotype/uberon/
+      placeholder: e.g. https://github.com/obophenotype/uberon/
     validations:
       required: true
   - type: input
@@ -68,7 +68,7 @@ body:
     attributes:
       label: Homepage
       description: What is the homepage of your ontology? If you don't have a specific homepage, you should consider using GitHub pages to make one! Otherwise, include a duplicate of the repository in this field.
-      placeholder: ex. https://uberon.github.io
+      placeholder: e.g. https://obophenotype.github.io/uberon/
     validations:
       required: true
   - type: input
@@ -76,7 +76,7 @@ body:
     attributes:
       label: Issue Tracker
       description: What is the URL of the public issue tracker? Typically, this will be the link to the GitHub repository with a trailing `/issues` URL part.
-      placeholder: ex. https://github.com/obophenotype/uberon/issues
+      placeholder: e.g. https://github.com/obophenotype/uberon/issues
     validations:
       required: true
   - type: input
@@ -84,7 +84,7 @@ body:
     attributes:
       label: Ontology Download Link
       description: What URL can be used to download your Ontology?
-      placeholder: ex. https://github.com/obophenotype/uberon/raw/master/uberon.owl
+      placeholder: e.g. https://github.com/obophenotype/uberon/raw/master/uberon.owl
     validations:
       required: true
 
@@ -99,7 +99,7 @@ body:
     attributes:
       label: Contact Name
       description: What is the full name of the contact for the ontology?
-      placeholder: ex. Charles Tapley Hoyt
+      placeholder: e.g. Charles Tapley Hoyt
     validations:
       required: true
   - type: input
@@ -107,7 +107,7 @@ body:
     attributes:
       label: Contact Email
       description: What is the email address of the contact for the ontology?
-      placeholder: ex. cthoyt@gmail.com
+      placeholder: e.g. cthoyt@gmail.com
     validations:
       required: true
   - type: input
@@ -115,7 +115,7 @@ body:
     attributes:
       label: Contact GitHub Username
       description: What is the GitHub username of the contact for the ontology? Do not include the @ symbol.
-      placeholder: ex. cthoyt
+      placeholder: e.g. cthoyt
     validations:
       required: true
   - type: input
@@ -123,7 +123,7 @@ body:
     attributes:
       label: Contact ORCID Identifier
       description: What is the ORCID identifier of the contact for the ontology? ORCID identifiers can be made at https://orcid.org.
-      placeholder: ex. 0000-0003-4423-4370
+      placeholder: e.g. 0000-0003-4423-4370
     validations:
       required: true
 
@@ -155,11 +155,11 @@ body:
     attributes:
       label: Dependencies
       description: |
-        Please provide a list of ontologies that yours depends on using their OBO Foundry prefixes
+        Please provide a list of ontologies that yours depends on using their OBO Foundry prefixes (these are lowercased ID spaces)
       placeholder: |
-        - ENVO
-        - CHEBI
-        - ExO
+        - envo
+        - chebi
+        - exo
     validations:
       required: false
   - type: textarea
