@@ -19,7 +19,7 @@ title: Food-Biomarker Ontology
 dependencies:
   - id: chebi
   - id: foodon
-publications: 
+publications:
    - id: https://www.ncbi.nlm.nih.gov/pubmed/32556148
      title: "FOBI: an ontology to represent food intake data and associate it with metabolomic data"
    - id: https://www.ncbi.nlm.nih.gov/pubmed/34601570
