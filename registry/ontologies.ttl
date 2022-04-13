@@ -1107,6 +1107,7 @@ _:b58   <http://www.w3.org/2000/01/rdf-schema#label>  "Liliana Andres Hernandez"
         <http://purl.org/dc/elements/1.1/description>  "Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them." ;
         <http://purl.org/dc/elements/1.1/title>  "Chemical Information Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/21991315> ;
         <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/semanticchemistry/semanticchemistry/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "https://groups.google.com/forum/#!forum/cheminf-ontology" ;
@@ -1117,6 +1118,9 @@ _:b58   <http://www.w3.org/2000/01/rdf-schema#label>  "Liliana Andres Hernandez"
 
 _:b59   <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/semanticchemistry/semanticchemistry/master/ontology/cheminf.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/21991315>
+        <http://purl.org/dc/elements/1.1/title>  "The chemical information ontology: provenance and disambiguation for chemical data on the biological semantic web" .
 
 _:b60   <http://www.w3.org/2000/01/rdf-schema#label>  "Egon Willighagen" ;
         <http://xmlns.com/foaf/0.1/mbox>  "egon.willighagen@gmail.com" .
@@ -2401,12 +2405,20 @@ _:b131  <http://www.w3.org/2000/01/rdf-schema#label>  "Robert Hoehndorf" ;
         <http://purl.org/dc/elements/1.1/description>  "FOBI (Food-Biomarker Ontology) is an ontology to represent food intake data and associate it with metabolomic data" ;
         <http://purl.org/dc/elements/1.1/title>  "Food-Biomarker Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/32556148> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/34601570> ;
         <http://purl.org/dc/terms/1.1/theme>  "diet, metabolomics, and nutrition" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/pcastellanoescuder/FoodBiomarkerOntology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fobi.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b132 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/fobi.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/pcastellanoescuder/FoodBiomarkerOntology> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/32556148>
+        <http://purl.org/dc/elements/1.1/title>  "FOBI: an ontology to represent food intake data and associate it with metabolomic data" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/34601570>
+        <http://purl.org/dc/elements/1.1/title>  "The fobitools framework: the first steps towards food enrichment analysis" .
 
 _:b132  <http://www.w3.org/2000/01/rdf-schema#label>  "Pol Castellano Escuder" ;
         <http://xmlns.com/foaf/0.1/mbox>  "polcaes@gmail.com" .
