@@ -10,7 +10,7 @@ build:
   system: git
   path: "."
 contact:
-  email: esegerd3@gmail.com
+  email: Erik.Segerdell@cchmc.org
   label: Erik Segerdell
   github: seger
   orcid: 0000-0002-9611-1279
