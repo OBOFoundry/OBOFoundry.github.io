@@ -580,7 +580,7 @@ _:b22   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://purl.org/dc/elements/1.1/title>  "Enhanced XAO: the ontology of Xenopus anatomy and development underpins more accurate annotation of gene expression and queries on Xenbase." .
 
 _:b23   <http://www.w3.org/2000/01/rdf-schema#label>  "Erik Segerdell" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "esegerd3@gmail.com" .
+        <http://xmlns.com/foaf/0.1/mbox>  "Erik.Segerdell@cchmc.org" .
 
 <http://purl.obolibrary.org/obo/xao.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/xao.owl" .
@@ -5452,6 +5452,7 @@ _:b289  <http://www.w3.org/2000/01/rdf-schema#label>  "Lutz Fischer" ;
         <http://purl.org/dc/elements/1.1/description>  "XPO represents anatomical, cellular, and gene function phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis." ;
         <http://purl.org/dc/elements/1.1/title>  "Xenopus Phenotype Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/35317743> ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/xenopus-phenotype-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/xpo.owl" ;
@@ -5462,8 +5463,11 @@ _:b289  <http://www.w3.org/2000/01/rdf-schema#label>  "Lutz Fischer" ;
 
 _:b290  <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/xenopus-phenotype-ontology.git" .
 
+<https://www.ncbi.nlm.nih.gov/pubmed/35317743>
+        <http://purl.org/dc/elements/1.1/title>  "The Xenopus phenotype ontology: bridging model organism phenotype data to human health and development." .
+
 _:b291  <http://www.w3.org/2000/01/rdf-schema#label>  "Erik Segerdell" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "esegerd3@gmail.com" .
+        <http://xmlns.com/foaf/0.1/mbox>  "Erik.Segerdell@cchmc.org" .
 
 <http://purl.obolibrary.org/obo/xpo.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/xpo.owl" .

@@ -57,4 +57,5 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Uberon multi-species anatomy ontology (uberon): [Uberon, an integrative multi-species anatomy ontology](https://www.ncbi.nlm.nih.gov/pubmed/22293552)
 - Unipathway (upa): [UniPathway: a resource for the exploration and annotation of metabolic pathways](https://www.ncbi.nlm.nih.gov/pubmed/22102589)
 - Xenopus Anatomy Ontology (xao): [An ontology for Xenopus anatomy and development.](https://www.ncbi.nlm.nih.gov/pubmed/18817563)
+- Xenopus Phenotype Ontology (xpo): [The Xenopus phenotype ontology: bridging model organism phenotype data to human health and development.](https://www.ncbi.nlm.nih.gov/pubmed/35317743)
 - Zebrafish anatomy and development ontology (zfa): [The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio.](https://www.ncbi.nlm.nih.gov/pubmed/24568621)

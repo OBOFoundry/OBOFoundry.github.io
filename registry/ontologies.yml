@@ -614,7 +614,7 @@ ontologies:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo
   contact:
-    email: esegerd3@gmail.com
+    email: Erik.Segerdell@cchmc.org
     github: seger
     label: Erik Segerdell
     orcid: 0000-0002-9611-1279
@@ -6937,7 +6937,7 @@ ontologies:
     path: .
     system: git
   contact:
-    email: esegerd3@gmail.com
+    email: Erik.Segerdell@cchmc.org
     github: seger
     label: Erik Segerdell
     orcid: 0000-0002-9611-1279
@@ -6970,6 +6970,10 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/xpo.owl
   - id: xpo.obo
     ontology_purl: http://purl.obolibrary.org/obo/xpo.obo
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/35317743
+    title: 'The Xenopus phenotype ontology: bridging model organism phenotype data
+      to human health and development.'
   repository: https://github.com/obophenotype/xenopus-phenotype-ontology
   taxon:
     id: NCBITaxon:8353
