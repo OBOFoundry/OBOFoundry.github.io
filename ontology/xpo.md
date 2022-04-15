@@ -10,7 +10,7 @@ build:
   system: git
   path: "."
 contact:
-  email: esegerd3@gmail.com
+  email: Erik.Segerdell@cchmc.org
   label: Erik Segerdell
   github: seger
   orcid: 0000-0002-9611-1279
@@ -33,6 +33,9 @@ dependencies:
   - id: cl
   - id: xao
 tracker: https://github.com/obophenotype/xenopus-phenotype-ontology/issues
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/35317743
+    title: "The Xenopus phenotype ontology: bridging model organism phenotype data to human health and development."
 license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
