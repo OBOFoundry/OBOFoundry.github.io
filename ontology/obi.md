@@ -63,6 +63,26 @@ usages:
     examples:
       - url: http://www.iedb.org/assay/1505273
         description: A specific assay curated in the IEDB using the OBI:1110180 '3H-thymidine assay measuring epitope specific proliferation of T cells' ('3H-thymidine')
+  - user: https://www.encodeproject.org/
+    description: ENCODE is a comprehensive parts list of functional elements in the human genome, including elements that act at the protein and RNA levels, and regulatory elements that control cells and circumstances in which a gene is active.
+    examples:
+      - url: https://www.encodeproject.org/report/?type=Experiment&accession=ENCSR012KGU&accession=ENCSR560MXA&accession=ENCSR803FKU&accession=ENCSR216YPQ&accession=ENCSR115BCB&field=%40id&field=assay_term_name&field=assay_term_id
+        description: A specific assay annotated in ENCODE using OBI:0000716 'ChiP-seq'
+  - user: https://genelab-data.ndc.nasa.gov/genelab/projects
+    description: The NASA GeneLab data repository hosts space biology and space-related datasets funded by multiple space agencies around the world.
+    examples:
+      - url: https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-464/
+        description: A specific assay annotated in NASA GeneLab using OBI:0001271 'RNA-seq assay'
+  - user: https://app.nih-cfde.org/
+    description: The CFDE is providing a centralized metadata resource to allow search across data coordination centers from multiple Common Fund programs.
+    examples:
+      - url: https://app.nih-cfde.org/chaise/recordset/#1/CFDE:assay_type@sort(nid)
+        description: OBI is used in CFDE to captures types of experiments with assay terms such as OBI:0003094 'fluorescence in-situ hybridization assay'
+  - user: http://www.neuinfo.org
+    description: NIF is a dynamic inventory of Web-based neuroscience resources, data, and tools accessible via any computer connected to the Internet.
+    examples:
+      - url: https://neuinfo.org/data/search?q=organism&l=organism#all
+        description: A specific OBI term used to autocomplete in NIF search OBI:0100026 'organism'
 activity_status: active
 preferredPrefix: OBI
 ---
