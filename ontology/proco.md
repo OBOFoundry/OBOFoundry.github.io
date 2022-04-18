@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: proco
-title: "PROCO: Ontology of Process Chemistry"
+title: "Ontology of Process Chemistry"
 contact:
   email: wes_schafer@merck.com
   label: Wes Schafer
