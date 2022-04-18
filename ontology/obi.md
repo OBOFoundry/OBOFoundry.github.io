@@ -48,16 +48,6 @@ publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/27128319
     title: The Ontology for Biomedical Investigations
 usages:
-  - user: http://upibi.org/turbo/
-    description: PennTURBO accelerates the processes of finding and connecting key information from clinical records, via semantic modeling of the processes that generated the data. This makes the discovery of previously unappreciated relations between the data possible for research and for operational tasks.
-    examples:
-      - url: https://github.com/PennTURBO/Turbo-Documentation/blob/master/IBI_CIC_TURBO_MAM_20190102.pdf
-        description: "CYP2C1*2/*2 MI patient taking Clopidogrel"
-  - user: http://evidenceontology.org/
-    description: The Evidence & Conclusion Ontology (ECO) describes types of scientific evidence within the biological research domain. ECO uses OBI to logically describe how the evidence arises from an investigation.
-    examples:
-      - url: http://purl.obolibrary.org/obo/ECO_0001820
-        description: "rapid amplification of cDNA ends polymerase chain reaction evidence"
   - user: https://www.iedb.org
     description: The Immune Epitope Database (IEDB) is funded by NIAID that catalogs experimental data on antibody and T cell epitopes studied in humans, non-human primates, and other animal species in the context of infectious disease, allergy, autoimmunity and transplantation.
     examples:
