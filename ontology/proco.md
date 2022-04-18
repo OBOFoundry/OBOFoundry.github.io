@@ -6,7 +6,7 @@ contact:
   email: wes_schafer@merck.com
   label: Wes Schafer
   github: schaferw
-  orcid: ?
+  orcid: 0000-0002-8786-1756
 description: OPC covers process chemistry, the chemical field concerned with scaling up laboratory syntheses to commercially viable processes.
 domain: biochemistry
 homepage: https://github.com/proco-ontology/PROCO
@@ -23,11 +23,6 @@ tracker: https://github.com/proco-ontology/PROCO/issues
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-usages:
-  - user: Merck & Co.
-    description: pharmaceutical API development
-  - user: Allotrope
-    description: important domain in pharmaceutical industry
 activity_status: active
 repository: https://github.com/proco-ontology/PROCO
 preferredPrefix: PROCO
