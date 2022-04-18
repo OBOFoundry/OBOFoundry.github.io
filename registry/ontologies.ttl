@@ -372,6 +372,7 @@ _:b5    <http://www.w3.org/2000/01/rdf-schema#label>  "Suzi Aleksander" ;
         <http://purl.org/dc/elements/1.1/description>  "An integrated ontology for the description of life-science and clinical investigations" ;
         <http://purl.org/dc/elements/1.1/title>  "Ontology for Biomedical Investigations" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/27128319> ;
         <http://purl.org/dc/terms/1.1/theme>  "investigations" ;
         <http://usefulinc.com/ns/doap#bug-database>  "http://purl.obolibrary.org/obo/obi/tracker" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "http://groups.google.com/group/obi-users" ;
@@ -385,6 +386,9 @@ _:b5    <http://www.w3.org/2000/01/rdf-schema#label>  "Suzi Aleksander" ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://obi-ontology.org> .
 
 _:b14   <http://obofoundry.github.io/vocabulary/source_url>  "http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/27128319>
+        <http://purl.org/dc/elements/1.1/title>  "The Ontology for Biomedical Investigations" .
 
 <http://bioportal.bioontology.org/ontologies/OBI?p=classes>
         <http://purl.org/dc/elements/1.1/title>  "BioPortal Browser" ;
