@@ -14,6 +14,9 @@ license:
 title: Antibiotic Resistance Ontology
 tracker: https://github.com/arpcard/aro/issues
 mailing_list: https://mailman.mcmaster.ca/mailman/listinfo/card-l
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/31665441
+    title: "CARD 2020: antibiotic resistome surveillance with the comprehensive antibiotic resistance database."
 products:
   - id: aro.owl
 activity_status: active
