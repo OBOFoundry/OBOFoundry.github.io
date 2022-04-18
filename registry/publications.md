@@ -20,6 +20,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 ### Some Ontology Project Publications (not a complete list)
 
 - Agronomy Ontology (agro): [Data-driven Agricultural Research for Development: A Need for Data Harmonization Via Semantics.](http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf)
+- Antibiotic Resistance Ontology (aro): [CARD 2020: antibiotic resistome surveillance with the comprehensive antibiotic resistance database.](https://www.ncbi.nlm.nih.gov/pubmed/31665441)
 - BRENDA tissue / enzyme source (bto): [The BRENDA Tissue Ontology (BTO): the first all-integrating ontology of all organisms for enzyme sources](https://www.ncbi.nlm.nih.gov/pubmed/21030441)
 - Biological Spatial Ontology (bspo): [Nose to tail, roots to shoots: spatial descriptors for phenotypic diversity in the Biological Spatial Ontology.](https://www.ncbi.nlm.nih.gov/pubmed/25140222)
 - C. elegans Gross Anatomy Ontology (wbbt): [Building a cell and anatomy ontology of Caenorhabditis elegans](https://www.ncbi.nlm.nih.gov/pubmed/18629098)
