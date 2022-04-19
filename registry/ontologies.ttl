@@ -956,12 +956,16 @@ _:b50   <http://www.w3.org/2000/01/rdf-schema#label>  "Mathias Brochhausen" ;
         <http://purl.org/dc/elements/1.1/description>  "Antibiotic resistance genes and mutations" ;
         <http://purl.org/dc/elements/1.1/title>  "Antibiotic Resistance Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/31665441> ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/arpcard/aro/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "https://mailman.mcmaster.ca/mailman/listinfo/card-l" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/aro.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b51 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/aro.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/arpcard/aro> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/31665441>
+        <http://purl.org/dc/elements/1.1/title>  "CARD 2020: antibiotic resistome surveillance with the comprehensive antibiotic resistance database." .
 
 _:b51   <http://www.w3.org/2000/01/rdf-schema#label>  "Andrew G. McArthur" ;
         <http://xmlns.com/foaf/0.1/mbox>  "mcarthua@mcmaster.ca" .
