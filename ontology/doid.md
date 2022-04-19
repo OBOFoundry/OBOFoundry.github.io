@@ -38,6 +38,8 @@ build:
   infallible: 1
 tracker: https://github.com/DiseaseOntology/HumanDiseaseOntology/issues
 publications:
+  - id: https://pubmed.ncbi.nlm.nih.gov/28253937/
+    title: "Therapeutic indications and other use-case-driven updates in the drug ontology: anti-malarials, anti-hypertensives, opioid analgesics, and a large term request"
   - id: https://www.ncbi.nlm.nih.gov/pubmed/25348409
     title: "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"
 license:
