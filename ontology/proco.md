@@ -7,7 +7,7 @@ contact:
   label: Wes Schafer
   github: schaferw
   orcid: 0000-0002-8786-1756
-description: OPC covers process chemistry, the chemical field concerned with scaling up laboratory syntheses to commercially viable processes.
+description: PROCO covers process chemistry, the chemical field concerned with scaling up laboratory syntheses to commercially viable processes.
 domain: biochemistry
 homepage: https://github.com/proco-ontology/PROCO
 products:
