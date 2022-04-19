@@ -27,6 +27,10 @@ build:
 activity_status: active
 repository: https://github.com/ufbmi/OMRSE
 preferredPrefix: OMRSE
+publications:
+  - id: https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-016-0087-8
+    title: "CThe ontology of medically related social entities: recent developments"
+
 ---
 
 This ontology covers the domain of social entities that are related to health care, such as demographic information (social entities for recording gender (but not sex) and marital status, for example) and the roles of various individuals and organizations (patient, hospital,etc.)
