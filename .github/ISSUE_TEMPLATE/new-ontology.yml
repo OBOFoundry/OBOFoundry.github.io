@@ -103,6 +103,14 @@ body:
     validations:
       required: true
   - type: input
+    id: contributing
+    attributes:
+      label: Contribution Guidelines
+      description: What is the URL of contribution guidelines? Ideally, this is a file name CONTRIBUTING or CONTRIBUTING.md in the root of your repository.
+      placeholder: e.g. https://github.com/geneontology/go-ontology/blob/master/CONTRIBUTING.md
+    validations:
+      required: true
+  - type: input
     id: download
     attributes:
       label: Ontology Download Link
