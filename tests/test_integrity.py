@@ -89,5 +89,3 @@ class TestIntegrity(unittest.TestCase):
         identifier = publication["id"]
         self.assertIsInstance(identifier, str)
         self.assertFalse(identifier.endswith("/"))
-        self.assertTrue(identifier.startswith(uri_prefix), msg=msg)
-        self.assertTrue(identifier[len(uri_prefix):].isnumeric())
