@@ -62,7 +62,7 @@ usages:
     description: Immune Epitope Database
     examples:
       - url: https://www.iedb.org
-        description: Aantibody and T cell epitopes associated with human diseases
+        description: Antibody and T cell epitopes associated with human diseases
 
 activity_status: active
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
