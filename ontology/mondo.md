@@ -51,6 +51,8 @@ usages:
       - url: https://monarchinitiative.org/phenotype/HP:0001300#disease
         description: "Parkinsonism: Characteristic neurologic anomaly resulting form degeneration of dopamine-generating cells in the substantia nigra, a region of the midbrain, characterized clinically by shaking, rigidity, slowness of movement and difficulty with walking and gait."
     publications:
+      - id: https://www.medrxiv.org/content/10.1101/2022.04.13.22273750
+        title: "Mondo: Unifying diseases for the world, by the world"
       - id: https://www.ncbi.nlm.nih.gov/pubmed/27899636
         title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species "
   - user: https://www.clinicalgenome.org/
