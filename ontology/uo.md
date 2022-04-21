@@ -21,6 +21,9 @@ build:
   source_url: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo
   method: obo2owl
 tracker: https://github.com/bio-ontology-research-group/unit-ontology/issues
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/23060432
+    title: "The Units Ontology: a tool for integrating units of measurement in science"
 activity_status: active
 repository: https://github.com/bio-ontology-research-group/unit-ontology
 preferredPrefix: UO
