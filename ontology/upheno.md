@@ -30,7 +30,7 @@ products:
 publications: 
    - id: https://zenodo.org/record/2382757
      title: "Phenotype Ontologies Traversing All The Organisms (POTATO) workshop aims to reconcile logical definitions across species" 
-   - id: https://zenodo.org/record/3352149#.YmClWdPMJ4F 
+   - id: https://zenodo.org/record/3352149
      title: "Phenotype Ontologies Traversing All The Organisms (POTATO) workshop: 2nd edition"      
 usages:
   - user: https://monarchinitiative.org/
