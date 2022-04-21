@@ -27,6 +27,11 @@ products:
     title: "uPheno 2"
     description: "The new version of uPheno, along with species independent phenotypes amd additional phenotype relations. The ontology is still in Beta status, but we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is no longer actively maintained."
     page: https://github.com/obophenotype/upheno-dev
+publications: 
+   - id: https://zenodo.org/record/2382757#.YmClG9PMJ4E 
+     title: "Phenotype Ontologies Traversing All The Organisms (POTATO) workshop aims to reconcile logical definitions across species" 
+   - id: https://zenodo.org/record/3352149#.YmClWdPMJ4F 
+     title: "Phenotype Ontologies Traversing All The Organisms (POTATO) workshop: 2nd edition"      
 usages:
   - user: https://monarchinitiative.org/
     type: analysis
