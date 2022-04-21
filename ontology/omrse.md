@@ -29,7 +29,7 @@ repository: https://github.com/ufbmi/OMRSE
 preferredPrefix: OMRSE
 publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/27406187
-    title: "CThe ontology of medically related social entities: recent developments"
+    title: "The ontology of medically related social entities: recent developments"
 
 ---
 
