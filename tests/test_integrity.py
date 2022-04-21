@@ -9,8 +9,13 @@ HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
 ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
 
-uri_prefix = "https://www.ncbi.nlm.nih.gov/pubmed/"
-
+PUBMED_PREFIX = "https://www.ncbi.nlm.nih.gov/pubmed/"
+ARXIV_PREFIX = "https://arxiv.org/abs/"
+BIORXIV_PREFIX = "https://www.biorxiv.org/content/"
+MEDRXIV_PREFIX = "https://www.medrxiv.org/content/"
+ZENODO_PREFIX = "https://zenodo.org/record/"
+DOI_PREFIX = "https://doi.org/"
+CHEMRXIV_DOI_PREFIX = "https://doi.org/10.26434/chemrxiv"
 
 def get_data():
     """Get ontology data."""
@@ -89,5 +94,38 @@ class TestIntegrity(unittest.TestCase):
         identifier = publication["id"]
         self.assertIsInstance(identifier, str)
         self.assertFalse(identifier.endswith("/"))
-        self.assertTrue(identifier.startswith(uri_prefix), msg=msg)
-        self.assertTrue(identifier[len(uri_prefix):].isnumeric())
+
+        is_pubmed = (
+            identifier.startswith(PUBMED_PREFIX)
+            and identifier[len(PUBMED_PREFIX) :].isnumeric()
+        )
+        is_zenodo = (
+            identifier.startswith(ZENODO_PREFIX)
+            and identifier[len(ZENODO_PREFIX) :].isnumeric()
+        )
+        # TODO add regular expression validation
+        is_doi = identifier.startswith(DOI_PREFIX)
+        is_arxiv = identifier.startswith(ARXIV_PREFIX)
+        is_biorxiv = identifier.startswith(BIORXIV_PREFIX)
+        is_medrxiv = identifier.startswith(MEDRXIV_PREFIX)
+
+        self.assertTrue(
+            any(
+                (
+                    is_pubmed,
+                    is_zenodo,
+                    is_doi,
+                    is_arxiv,
+                    is_biorxiv,
+                    is_medrxiv,
+                )
+            ),
+            msg=msg,
+        )
+
+        # Make sure that the unversioned DOI is used
+        if is_arxiv or is_biorxiv or is_medrxiv or identifier.startswith(CHEMRXIV_DOI_PREFIX):
+            for v in range(1, 100):
+                self.assertFalse(
+                    identifier.endswith(f".v{v}"), msg="Please use an unversioned DOI"
+                )
