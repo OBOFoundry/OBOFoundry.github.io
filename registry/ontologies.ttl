@@ -1154,6 +1154,7 @@ _:b60   <http://www.w3.org/2000/01/rdf-schema#label>  "Egon Willighagen" ;
         <http://purl.org/dc/elements/1.1/description>  "CHEBI provides a distinct role hierarchy. Chemicals in the structural hierarchy are connected via a 'has role' relation. CHIRO provides links from these roles to useful other classes in other ontologies. This will allow direct connection between chemical structures (small molecules, drugs) and what they do. This could be formalized using 'capable of', in the same way Uberon and the Cell Ontology link structures to processes." ;
         <http://purl.org/dc/elements/1.1/title>  "CHEBI Integrated Role Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/publicdomain/zero/1.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.26434/chemrxiv.12591221> ;
         <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/chiro/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/chiro.owl" ;
@@ -1214,6 +1215,9 @@ _:b61   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://gi
 <http://creativecommons.org/publicdomain/zero/1.0/>
         <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png> ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CC0 1.0" .
+
+<https://doi.org/10.26434/chemrxiv.12591221>
+        <http://purl.org/dc/elements/1.1/title>  "Extension of Roles in the ChEBI Ontology" .
 
 _:b62   <http://www.w3.org/2000/01/rdf-schema#label>  "Nicole Vasilevsky" ;
         <http://xmlns.com/foaf/0.1/mbox>  "vasilevs@ohsu.edu" .
@@ -3462,6 +3466,7 @@ _:b194  <http://www.w3.org/2000/01/rdf-schema#label>  "Pierre-Alain Binz" ;
         <http://purl.org/dc/elements/1.1/description>  "A semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology." ;
         <http://purl.org/dc/elements/1.1/title>  "Mondo Disease Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.medrxiv.org/content/10.1101/2022.04.13.22273750> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/monarch-initiative/mondo/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "https://groups.google.com/group/mondo-users" ;
@@ -3473,6 +3478,9 @@ _:b194  <http://www.w3.org/2000/01/rdf-schema#label>  "Pierre-Alain Binz" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo.json> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://monarch-initiative.github.io/mondo> .
+
+<https://www.medrxiv.org/content/10.1101/2022.04.13.22273750>
+        <http://purl.org/dc/elements/1.1/title>  "Mondo: Unifying diseases for the world, by the world" .
 
 <https://monarchinitiative.org/disease/MONDO:0019609>
         <http://purl.org/dc/elements/1.1/title>  "Monarch Initiative Disease Browser" ;
@@ -5207,6 +5215,8 @@ _:b37   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
         <http://purl.org/dc/elements/1.1/description>  "The uPheno ontology integrates multiple phenotype ontologies into a unified cross-species phenotype ontology." ;
         <http://purl.org/dc/elements/1.1/title>  "Unified phenotype ontology (uPheno)" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://zenodo.org/record/2382757> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://zenodo.org/record/3352149> ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/upheno/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "https://groups.google.com/forum/#!forum/phenotype-ontologies-editors" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/upheno.owl" ;
@@ -5218,6 +5228,12 @@ _:b37   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
 
 _:b276  <http://obofoundry.github.io/vocabulary/method>  "archive" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "http://build.berkeleybop.org/job/build-pheno-ontologies/lastSuccessfulBuild/artifact/*zip*/archive.zip"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://zenodo.org/record/2382757>
+        <http://purl.org/dc/elements/1.1/title>  "Phenotype Ontologies Traversing All The Organisms (POTATO) workshop aims to reconcile logical definitions across species" .
+
+<https://zenodo.org/record/3352149>
+        <http://purl.org/dc/elements/1.1/title>  "Phenotype Ontologies Traversing All The Organisms (POTATO) workshop: 2nd edition" .
 
 _:b277  <http://www.w3.org/2000/01/rdf-schema#label>  "Nicole Vasilevsky" ;
         <http://xmlns.com/foaf/0.1/mbox>  "vasilevs@ohsu.edu" .
