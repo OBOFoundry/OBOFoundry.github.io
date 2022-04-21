@@ -23,7 +23,7 @@ products:
   - id: chiro.obo
     name: "CHEBI Integrated Role Ontology additional release in OBO format"
 publications: 
-   - id: https://chemrxiv.org/engage/chemrxiv/article-details/60c74d1f9abda21f6df8d3ce
+   - id: https://doi.org/10.26434/chemrxiv.12591221
      title: "Extension of Roles in the ChEBI Ontology" 
 dependencies:
   - id: chebi
