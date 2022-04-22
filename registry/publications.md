@@ -21,6 +21,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 
 - Agronomy Ontology (agro): [Data-driven Agricultural Research for Development: A Need for Data Harmonization Via Semantics.](http://ceur-ws.org/Vol-1747/IT205_ICBO2016.pdf)
 - Antibiotic Resistance Ontology (aro): [CARD 2020: antibiotic resistome surveillance with the comprehensive antibiotic resistance database.](https://www.ncbi.nlm.nih.gov/pubmed/31665441)
+- Apollo Structured Vocabulary (apollo_sv): [The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation](https://doi.org/10.1186/s13326-016-0092-y)
 - BRENDA tissue / enzyme source (bto): [The BRENDA Tissue Ontology (BTO): the first all-integrating ontology of all organisms for enzyme sources](https://www.ncbi.nlm.nih.gov/pubmed/21030441)
 - Biological Spatial Ontology (bspo): [Nose to tail, roots to shoots: spatial descriptors for phenotypic diversity in the Biological Spatial Ontology.](https://www.ncbi.nlm.nih.gov/pubmed/25140222)
 - C. elegans Gross Anatomy Ontology (wbbt): [Building a cell and anatomy ontology of Caenorhabditis elegans](https://www.ncbi.nlm.nih.gov/pubmed/18629098)
@@ -46,6 +47,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Measurement method ontology (mmo): [Three ontologies to define phenotype measurement data.](https://www.ncbi.nlm.nih.gov/pubmed/22654893)
 - Mondo Disease Ontology (mondo): [Mondo: Unifying diseases for the world, by the world](https://www.medrxiv.org/content/10.1101/2022.04.13.22273750)
 - Ontology for Biomedical Investigations (obi): [The Ontology for Biomedical Investigations](https://www.ncbi.nlm.nih.gov/pubmed/27128319)
+- Ontology of Medically Related Social Entities (omrse): [The ontology of medically related social entities: recent developments](https://www.ncbi.nlm.nih.gov/pubmed/27406187)
 - PRotein Ontology (PRO) (pr): [Protein Ontology (PRO): enhancing and scaling up the representation of protein entities](https://www.ncbi.nlm.nih.gov/pubmed/27899649)
 - Pathway ontology (pw): [The Rat Genome Database pathway portal.](https://www.ncbi.nlm.nih.gov/pubmed/21478484)
 - Plant Environment Ontology (eo): [Ontologies as integrative tools for plant science.](https://www.ncbi.nlm.nih.gov/pubmed/22847540)
@@ -57,6 +59,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Rat Strain Ontology (rs): [Rat Strain Ontology: structured controlled vocabulary designed to facilitate access to strain data at RGD.](https://www.ncbi.nlm.nih.gov/pubmed/24267899)
 - Sequence types and features ontology (so): [The Sequence Ontology: a tool for the unification of genome annotations.](https://www.ncbi.nlm.nih.gov/pubmed/15892872)
 - Teleost Anatomy Ontology (tao): [The teleost anatomy ontology: anatomical representation for the genomics age](https://www.ncbi.nlm.nih.gov/pubmed/20547776)
+- The Drug Ontology (dron): [Therapeutic indications and other use-case-driven updates in the drug ontology: anti-malarials, anti-hypertensives, opioid analgesics, and a large term request](https://doi.org/10.1186/s13326-017-0121-5)
 - The Drug-Drug Interactions Ontology (dinto): [DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug–Drug Interactions and Their Mechanisms.](https://www.ncbi.nlm.nih.gov/pubmed/26147071)
 - Uberon multi-species anatomy ontology (uberon): [Uberon, an integrative multi-species anatomy ontology](https://www.ncbi.nlm.nih.gov/pubmed/22293552)
 - Unified phenotype ontology (uPheno) (upheno): [Phenotype Ontologies Traversing All The Organisms (POTATO) workshop aims to reconcile logical definitions across species](https://zenodo.org/record/2382757)
