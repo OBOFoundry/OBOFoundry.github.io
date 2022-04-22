@@ -20,7 +20,7 @@ license:
 repository: https://github.com/ApolloDev/apollo-sv
 preferredPrefix: APOLLO_SV
 publications:
-  - id: https://pubmed.ncbi.nlm.nih.gov/27538448
+  - id: https://doi.org/10.1186/s13326-016-0092-y
     title: "The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation"
 ---
 
