@@ -2,10 +2,10 @@
 layout: ontology_detail
 id: apollo_sv
 contact:
-  email: MBrochhausen@uams.edu
-  label: Mathias Brochhausen
-  github: mbrochhausen
-  orcid: 0000-0003-1834-3856
+  email: hoganwr@ufl.edu
+  label: William Hogan
+  github: hoganwr
+  orcid: 0000-0002-9881-1017
 homepage: https://github.com/ApolloDev/apollo-sv
 description: Defines terms and relations necessary for interoperation between epidemic models and public health application software that interface with these models
 products:
@@ -19,6 +19,9 @@ license:
   label: CC BY 4.0
 repository: https://github.com/ApolloDev/apollo-sv
 preferredPrefix: APOLLO_SV
+publications:
+  - id: https://pubmed.ncbi.nlm.nih.gov/27538448/
+    title: "The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation"
 ---
 
 #Apollo Structured Vocabulary
