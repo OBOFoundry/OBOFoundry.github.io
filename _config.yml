@@ -912,10 +912,10 @@ ontologies:
   tracker: https://github.com/obophenotype/ascomycete-phenotype-ontology/issues
 - activity_status: active
   contact:
-    email: MBrochhausen@uams.edu
-    github: mbrochhausen
-    label: Mathias Brochhausen
-    orcid: 0000-0003-1834-3856
+    email: hoganwr@ufl.edu
+    github: hoganwr
+    label: William Hogan
+    orcid: 0000-0002-9881-1017
   description: Defines terms and relations necessary for interoperation between epidemic
     models and public health application software that interface with these models
   domain: health
@@ -931,6 +931,10 @@ ontologies:
   products:
   - id: apollo_sv.owl
     ontology_purl: http://purl.obolibrary.org/obo/apollo_sv.owl
+  publications:
+  - id: https://doi.org/10.1186/s13326-016-0092-y
+    title: 'The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious
+      disease epidemiology and population biology for use in epidemic simulation'
   repository: https://github.com/ApolloDev/apollo-sv
   title: Apollo Structured Vocabulary
   tracker: https://github.com/ApolloDev/apollo-sv/issues
@@ -1948,6 +1952,11 @@ ontologies:
   products:
   - id: dron.owl
     ontology_purl: http://purl.obolibrary.org/obo/dron.owl
+  publications:
+  - id: https://doi.org/10.1186/s13326-017-0121-5
+    title: 'Therapeutic indications and other use-case-driven updates in the drug
+      ontology: anti-malarials, anti-hypertensives, opioid analgesics, and a large
+      term request'
   repository: https://github.com/ufbmi/dron
   title: The Drug Ontology
   tracker: https://github.com/ufbmi/dron/issues
@@ -4955,6 +4964,9 @@ ontologies:
   products:
   - id: omrse.owl
     ontology_purl: http://purl.obolibrary.org/obo/omrse.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/27406187
+    title: 'The ontology of medically related social entities: recent developments'
   repository: https://github.com/ufbmi/OMRSE
   tags:
   - medicine

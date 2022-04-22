@@ -941,6 +941,7 @@ _:b49   <http://www.w3.org/2000/01/rdf-schema#label>  "Stacia R Engel" ;
         <http://purl.org/dc/elements/1.1/description>  "Defines terms and relations necessary for interoperation between epidemic models and public health application software that interface with these models" ;
         <http://purl.org/dc/elements/1.1/title>  "Apollo Structured Vocabulary" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1186/s13326-016-0092-y> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/ApolloDev/apollo-sv/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/apollo_sv.owl" ;
@@ -948,8 +949,11 @@ _:b49   <http://www.w3.org/2000/01/rdf-schema#label>  "Stacia R Engel" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/apollo_sv.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/ApolloDev/apollo-sv> .
 
-_:b50   <http://www.w3.org/2000/01/rdf-schema#label>  "Mathias Brochhausen" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "MBrochhausen@uams.edu" .
+<https://doi.org/10.1186/s13326-016-0092-y>
+        <http://purl.org/dc/elements/1.1/title>  "The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation" .
+
+_:b50   <http://www.w3.org/2000/01/rdf-schema#label>  "William Hogan" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "hoganwr@ufl.edu" .
 
 <http://purl.obolibrary.org/obo/apollo_sv.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/apollo_sv.owl" .
@@ -1780,6 +1784,7 @@ _:b94   <http://www.w3.org/2000/01/rdf-schema#label>  "Clare Pilgrim" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology to support comparative effectiveness researchers studying claims data." ;
         <http://purl.org/dc/elements/1.1/title>  "The Drug Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1186/s13326-017-0121-5> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/ufbmi/dron/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/dron.owl" ;
@@ -1789,6 +1794,9 @@ _:b94   <http://www.w3.org/2000/01/rdf-schema#label>  "Clare Pilgrim" ;
 
 _:b97   <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "http://purl.obolibrary.org/obo/dron.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://doi.org/10.1186/s13326-017-0121-5>
+        <http://purl.org/dc/elements/1.1/title>  "Therapeutic indications and other use-case-driven updates in the drug ontology: anti-malarials, anti-hypertensives, opioid analgesics, and a large term request" .
 
 _:b98   <http://www.w3.org/2000/01/rdf-schema#label>  "William Hogan" ;
         <http://xmlns.com/foaf/0.1/mbox>  "hoganwr@gmail.com" .
@@ -3013,6 +3021,7 @@ _:b162  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
         <http://purl.org/dc/elements/1.1/description>  "This ontology covers the domain of social entities that are related to health care, such as demographic information and the roles of various individuals and organizations." ;
         <http://purl.org/dc/elements/1.1/title>  "Ontology of Medically Related Social Entities" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/27406187> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/ufbmi/OMRSE/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/omrse.owl" ;
@@ -4061,6 +4070,9 @@ _:b177  <http://www.w3.org/2000/01/rdf-schema#label>  "James C. Hu" ;
 
 _:b166  <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://github.com/ufbmi/OMRSE"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/27406187>
+        <http://purl.org/dc/elements/1.1/title>  "The ontology of medically related social entities: recent developments" .
 
 _:b167  <http://www.w3.org/2000/01/rdf-schema#label>  "Bill Hogan" ;
         <http://xmlns.com/foaf/0.1/mbox>  "hoganwr@gmail.com" .
