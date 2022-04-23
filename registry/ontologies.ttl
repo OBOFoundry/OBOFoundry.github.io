@@ -1365,11 +1365,15 @@ _:b71   <http://www.w3.org/2000/01/rdf-schema#label>  "Luis González-Montaña" 
         <http://purl.org/dc/elements/1.1/description>  "An ontology to standardize and integrate cell line information and to support computer-assisted reasoning." ;
         <http://purl.org/dc/elements/1.1/title>  "Cell Line Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/25852852> ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/CLO-Ontology/CLO/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/clo.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b72 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/clo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.clo-ontology.org> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/25852852>
+        <http://purl.org/dc/elements/1.1/title>  "CLO: The Cell Line Ontology" .
 
 _:b72   <http://www.w3.org/2000/01/rdf-schema#label>  "Sirarat Sarntivijai" ;
         <http://xmlns.com/foaf/0.1/mbox>  "siiraa@umich.edu" .
@@ -5275,6 +5279,8 @@ _:b277  <http://www.w3.org/2000/01/rdf-schema#label>  "Nicole Vasilevsky" ;
         <http://purl.org/dc/elements/1.1/description>  "VO is a biomedical ontology in the domain of vaccine and vaccination." ;
         <http://purl.org/dc/elements/1.1/title>  "Vaccine Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/23256535> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/21624163> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/vaccineontology/VO/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/vo.owl" ;
@@ -5283,6 +5289,12 @@ _:b277  <http://www.w3.org/2000/01/rdf-schema#label>  "Nicole Vasilevsky" ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.violinet.org/vaccineontology> .
 
 _:b278  <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/vaccineontology/VO/master/src/VO_merged.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/23256535>
+        <http://purl.org/dc/elements/1.1/title>  "Ontology representation and analysis of vaccine formulation and administration and their effects on vaccine immune responses" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/21624163>
+        <http://purl.org/dc/elements/1.1/title>  "Mining of vaccine-associated IFN-γ gene interaction networks using the Vaccine Ontology" .
 
 _:b279  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqunh He" ;
         <http://xmlns.com/foaf/0.1/mbox>  "yongqunh@med.umich.edu" .
