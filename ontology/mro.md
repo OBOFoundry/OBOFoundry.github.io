@@ -26,8 +26,8 @@ usages:
       - url: https://www.iedb.org/assay/1357035
         description: "Epitope ID: 59611 based on reference 1003499"
     publications:
-      - id: https://www.ncbi.nlm.nih.gov/pubmed/30357391
-        title: "The Immune Epitope Database (IEDB): 2018 update"
+      - id: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4709943/
+        title: "An ontology for major histocompatibility restriction"
 activity_status: active
 repository: https://github.com/IEDB/MRO
 preferredPrefix: MRO
