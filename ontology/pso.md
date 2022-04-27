@@ -10,10 +10,13 @@ build:
   system: git
   path: "."
 contact:
-  email: cooperl@science.oregonstate.edu
+  email: cooperl@oregonstate.edu
   label: Laurel Cooper
   github: cooperl09
   orcid: 0000-0002-6379-8932
+contact:
+  email: jaiswalp@oregonstate.edu
+  label: Pankaj Jaiswal
 description: The Plant Stress Ontology describes...
 domain: agriculture
 tags:
