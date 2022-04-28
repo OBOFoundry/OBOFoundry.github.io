@@ -43,6 +43,10 @@ products:
     description: Equivalent to the OWL edition.
     format: obo
     derived_from: mondo.owl
+  - id: mondo/mondo-base.owl
+    title: Mondo Base Module
+    description: "The main ontology plus axioms connecting to select external ontologies, excluding the external ontologies themselves"
+    format: owl
 publications:
   - id: https://www.medrxiv.org/content/10.1101/2022.04.13.22273750
     title: "Mondo: Unifying diseases for the world, by the world"
