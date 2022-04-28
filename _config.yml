@@ -4012,6 +4012,12 @@ ontologies:
     id: mondo.json
     ontology_purl: http://purl.obolibrary.org/obo/mondo.json
     title: json edition
+  - description: The main ontology plus axioms connecting to select external ontologies,
+      excluding the external ontologies themselves
+    format: owl
+    id: mondo/mondo-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/mondo/mondo-base.owl
+    title: Mondo Base Module
   publications:
   - id: https://www.medrxiv.org/content/10.1101/2022.04.13.22273750
     title: 'Mondo: Unifying diseases for the world, by the world'
