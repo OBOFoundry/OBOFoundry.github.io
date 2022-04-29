@@ -771,6 +771,7 @@ _:b25   <http://www.w3.org/2000/01/rdf-schema#label>  "Ceri Van Slyke" ;
         <http://purl.org/dc/elements/1.1/description>  "Metrical units for use in conjunction with PATO" ;
         <http://purl.org/dc/elements/1.1/title>  "Units of measurement ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/23060432> ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/bio-ontology-research-group/unit-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uo.owl" ;
@@ -5221,6 +5222,9 @@ _:b7    <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
 
 _:b36   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/23060432>
+        <http://purl.org/dc/elements/1.1/title>  "The Units Ontology: a tool for integrating units of measurement in science" .
 
 _:b37   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
         <http://xmlns.com/foaf/0.1/mbox>  "g.gkoutos@gmail.com" .

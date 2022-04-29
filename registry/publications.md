@@ -65,6 +65,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Uberon multi-species anatomy ontology (uberon): [Uberon, an integrative multi-species anatomy ontology](https://www.ncbi.nlm.nih.gov/pubmed/22293552)
 - Unified phenotype ontology (uPheno) (upheno): [Phenotype Ontologies Traversing All The Organisms (POTATO) workshop aims to reconcile logical definitions across species](https://zenodo.org/record/2382757)
 - Unipathway (upa): [UniPathway: a resource for the exploration and annotation of metabolic pathways](https://www.ncbi.nlm.nih.gov/pubmed/22102589)
+- Units of measurement ontology (uo): [The Units Ontology: a tool for integrating units of measurement in science](https://www.ncbi.nlm.nih.gov/pubmed/23060432)
 - Vaccine Ontology (vo): [Ontology representation and analysis of vaccine formulation and administration and their effects on vaccine immune responses](https://www.ncbi.nlm.nih.gov/pubmed/23256535)
 - Xenopus Anatomy Ontology (xao): [An ontology for Xenopus anatomy and development.](https://www.ncbi.nlm.nih.gov/pubmed/18817563)
 - Xenopus Phenotype Ontology (xpo): [The Xenopus phenotype ontology: bridging model organism phenotype data to human health and development.](https://www.ncbi.nlm.nih.gov/pubmed/35317743)
