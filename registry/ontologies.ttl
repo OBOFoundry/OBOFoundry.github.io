@@ -428,6 +428,8 @@ _:b15   <http://www.w3.org/2000/01/rdf-schema#label>  "Bjoern Peters" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of phenotypic qualities (properties, attributes or characteristics)" ;
         <http://purl.org/dc/elements/1.1/title>  "Phenotype And Trait Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/28387809> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/15642100> ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/pato-ontology/pato/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://bioportal.bioontology.org/ontologies/PATO> ;
@@ -445,6 +447,12 @@ _:b16   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
 <http://creativecommons.org/licenses/by/3.0/>
         <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png> ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CC BY 3.0" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/28387809>
+        <http://purl.org/dc/elements/1.1/title>  "The anatomy of phenotype ontologies: principles, properties and applications" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/15642100>
+        <http://purl.org/dc/elements/1.1/title>  "Using ontologies to describe mouse phenotypes" .
 
 <https://bioportal.bioontology.org/ontologies/PATO>
         <http://purl.org/dc/elements/1.1/title>  "BioPortal Ontology Browser" ;
@@ -2033,6 +2041,7 @@ _:b106  <http://www.w3.org/2000/01/rdf-schema#label>  "Pier Luigi Buttigieg" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of human and animal behaviours and behavioural phenotypes" ;
         <http://purl.org/dc/elements/1.1/title>  "Neuro Behavior Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/24177753> ;
         <http://purl.org/dc/terms/1.1/theme>  "biological systems" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obo-behavior/behavior-ontology/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://bioportal.bioontology.org/ontologies/NBO> ;
@@ -3694,6 +3703,9 @@ _:b203  <http://www.w3.org/2000/01/rdf-schema#label>  "Gerhard Mayer" ;
 
 _:b114  <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/obo-behavior/behavior-ontology/master/nbo.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/24177753>
+        <http://purl.org/dc/elements/1.1/title>  "Analyzing gene expression data in mice with the Neuro Behavior Ontology" .
 
 <https://bioportal.bioontology.org/ontologies/NBO>
         <http://purl.org/dc/elements/1.1/title>  "BioPortal Ontology Browser" ;
