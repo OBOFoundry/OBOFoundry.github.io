@@ -64,8 +64,8 @@ usages:
     type: annotation
     description: Mondo is used by the ClinGen for disease curations.
     examples:
-      - url: https://search.clinicalgenome.org/kb/conditions/MONDO_0011794
-        description: SCN1A is an autosomal dominant mutation in Dravet syndrome.
+      - url: https://search.clinicalgenome.org/kb/conditions/MONDO:0007947
+        description: FBN1 is an autosomal dominant mutation in Marfan syndrome.
   - user: https://portal.kidsfirstdrc.org/
     type: annotation
     description: Mondo is used by the Kids First Data Resource Portal for disease annotations. Note, a login is needed to access the portal and view the Mondo-curated data.
