@@ -49,7 +49,7 @@ activity_status: active
 preferredPrefix: PATO
 publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/28387809
-    title: "The anatomy of phenotype ontologies: principles, properties and applications" 
+    title: "The anatomy of phenotype ontologies: principles, properties and applications"
   - id: https://www.ncbi.nlm.nih.gov/pubmed/15642100
     title: "Using ontologies to describe mouse phenotypes"
 ---
