@@ -33,6 +33,8 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Chemical Entities of Biological Interest (chebi): [ChEBI in 2016: Improved services and an expanding collection of metabolites.](https://www.ncbi.nlm.nih.gov/pubmed/26467479)
 - Chemical Information Ontology (cheminf): [The chemical information ontology: provenance and disambiguation for chemical data on the biological semantic web](https://www.ncbi.nlm.nih.gov/pubmed/21991315)
 - Clinical measurement ontology (cmo): [Three ontologies to define phenotype measurement data.](https://www.ncbi.nlm.nih.gov/pubmed/22654893)
+- Dictyostelium discoideum anatomy (ddanat): [An anatomy ontology to represent biological knowledge in Dictyostelium discoideum](https://www.ncbi.nlm.nih.gov/pubmed/18366659)
+- Dictyostelium discoideum phenotype ontology (ddpheno): [dictyBase and the Dicty Stock Center (version 2.0) - a progress report](https://www.ncbi.nlm.nih.gov/pubmed/31840793)
 - Drosophila Phenotype Ontology (dpo): [The Drosophila phenotype ontology.](https://www.ncbi.nlm.nih.gov/pubmed/24138933)
 - Drosophila gross anatomy (fbbt): [The Drosophila anatomy ontology. [Journal of Biomedical Semantics](https://www.ncbi.nlm.nih.gov/pubmed/24138933)
 - Environment Ontology (envo): [The environment ontology: contextualising biological and biomedical entities](https://www.ncbi.nlm.nih.gov/pubmed/24330602)
