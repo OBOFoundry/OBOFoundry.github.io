@@ -28,6 +28,9 @@ tracker: https://github.com/dictyBase/migration-data/issues
 activity_status: active
 repository: https://github.com/dictyBase/migration-data
 preferredPrefix: DDANAT
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18366659
+    title: "An anatomy ontology to represent biological knowledge in Dictyostelium discoideum"
 ---
 
 A structured controlled vocabulary of the anatomy of the slime-mould <i>Dictyostelium discoideum</i>.
