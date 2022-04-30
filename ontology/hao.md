@@ -28,7 +28,7 @@ activity_status: active
 repository: https://github.com/hymao/hao
 preferredPrefix: HAO
 publications: 
-   - id: https://www.ncbi.nlm.nih.gov/pubmed/PMC3012123
+   - id: https://www.ncbi.nlm.nih.gov/pubmed/21209921
      title: "A gross anatomy ontology for hymenoptera " 
 ---
 
