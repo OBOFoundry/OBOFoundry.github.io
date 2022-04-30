@@ -1634,6 +1634,7 @@ _:b85   <http://www.w3.org/2000/01/rdf-schema#label>  "Paul Fabry" ;
         <http://purl.org/dc/elements/1.1/description>  "A structured controlled vocabulary of the anatomy of the slime-mold Dictyostelium discoideum" ;
         <http://purl.org/dc/elements/1.1/title>  "Dictyostelium discoideum anatomy" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/18366659> ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/dictyBase/migration-data/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ddanat.owl" ;
@@ -1648,6 +1649,9 @@ _:b86   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
 
 <http://purl.obolibrary.org/obo/NCBITaxon_44689>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Dictyostelium discoideum" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/18366659>
+        <http://purl.org/dc/elements/1.1/title>  "An anatomy ontology to represent biological knowledge in Dictyostelium discoideum" .
 
 _:b87   <http://www.w3.org/2000/01/rdf-schema#label>  "Petra Fey" ;
         <http://xmlns.com/foaf/0.1/mbox>  "pfey@northwestern.edu" .
@@ -1666,6 +1670,7 @@ _:b87   <http://www.w3.org/2000/01/rdf-schema#label>  "Petra Fey" ;
         <http://purl.org/dc/elements/1.1/description>  "A structured controlled vocabulary of phenotypes of the slime-mould <i>Dictyostelium discoideum</i>." ;
         <http://purl.org/dc/elements/1.1/title>  "Dictyostelium discoideum phenotype ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/publicdomain/zero/1.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/31840793> ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/dicty-phenotype-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ddpheno.owl" ;
@@ -1676,6 +1681,9 @@ _:b87   <http://www.w3.org/2000/01/rdf-schema#label>  "Petra Fey" ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://dictybase.org/> .
 
 _:b88   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/dicty-phenotype-ontology.git" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/31840793>
+        <http://purl.org/dc/elements/1.1/title>  "dictyBase and the Dicty Stock Center (version 2.0) - a progress report" .
 
 _:b89   <http://www.w3.org/2000/01/rdf-schema#label>  "Petra Fey" ;
         <http://xmlns.com/foaf/0.1/mbox>  "pfey@northwestern.edu" .
