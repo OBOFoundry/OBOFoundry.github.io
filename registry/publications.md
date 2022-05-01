@@ -46,6 +46,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Human Disease Ontology (doid): [Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data](https://www.ncbi.nlm.nih.gov/pubmed/25348409)
 - Human Phenotype Ontology (hp): [The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease.](https://www.ncbi.nlm.nih.gov/pubmed/18950739)
 - Human developmental anatomy, abstract (ehdaa2): [A new ontology (structured hierarchy) of human developmental anatomy for the first 7 weeks (Carnegie stages 1-20).](https://www.ncbi.nlm.nih.gov/pubmed/22973865)
+- Hymenoptera Anatomy Ontology (hao): [A gross anatomy ontology for hymenoptera](https://www.ncbi.nlm.nih.gov/pubmed/21209921)
 - Mass spectrometry ontology (ms): [The HUPO proteomics standards initiative- mass spectrometry controlled vocabulary.](https://www.ncbi.nlm.nih.gov/pubmed/23482073)
 - Measurement method ontology (mmo): [Three ontologies to define phenotype measurement data.](https://www.ncbi.nlm.nih.gov/pubmed/22654893)
 - Mondo Disease Ontology (mondo): [Mondo: Unifying diseases for the world, by the world](https://www.medrxiv.org/content/10.1101/2022.04.13.22273750)

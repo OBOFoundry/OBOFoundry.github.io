@@ -2764,6 +2764,7 @@ _:b148  <http://www.w3.org/2000/01/rdf-schema#label>  "Danielle Welter" ;
         <http://purl.org/dc/elements/1.1/description>  "A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)" ;
         <http://purl.org/dc/elements/1.1/title>  "Hymenoptera Anatomy Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/21209921> ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/hymao/hao/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hao.owl" ;
@@ -2777,6 +2778,9 @@ _:b149  <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://gi
 
 <http://purl.obolibrary.org/obo/NCBITaxon_7399>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Hymenoptera" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/21209921>
+        <http://purl.org/dc/elements/1.1/title>  "A gross anatomy ontology for hymenoptera" .
 
 _:b150  <http://www.w3.org/2000/01/rdf-schema#label>  "Matt Yoder" ;
         <http://xmlns.com/foaf/0.1/mbox>  "diapriid@gmail.com" .
