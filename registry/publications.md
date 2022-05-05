@@ -64,6 +64,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Protein modification (mod): [The PSI-MOD community standard for representation of protein modification data](https://www.ncbi.nlm.nih.gov/pubmed/18688235)
 - Rat Strain Ontology (rs): [Rat Strain Ontology: structured controlled vocabulary designed to facilitate access to strain data at RGD.](https://www.ncbi.nlm.nih.gov/pubmed/24267899)
 - Sequence types and features ontology (so): [The Sequence Ontology: a tool for the unification of genome annotations.](https://www.ncbi.nlm.nih.gov/pubmed/15892872)
+- Software ontology (swo): [The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation](https://www.ncbi.nlm.nih.gov/pubmed/25068035)
 - Teleost Anatomy Ontology (tao): [The teleost anatomy ontology: anatomical representation for the genomics age](https://www.ncbi.nlm.nih.gov/pubmed/20547776)
 - The Drug Ontology (dron): [Therapeutic indications and other use-case-driven updates in the drug ontology: anti-malarials, anti-hypertensives, opioid analgesics, and a large term request](https://doi.org/10.1186/s13326-017-0121-5)
 - The Drug-Drug Interactions Ontology (dinto): [DINTO: Using OWL Ontologies and SWRL Rules to Infer Drug–Drug Interactions and Their Mechanisms.](https://www.ncbi.nlm.nih.gov/pubmed/26147071)
