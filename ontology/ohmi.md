@@ -19,6 +19,7 @@ license:
 activity_status: active
 repository: https://github.com/ohmi-ontology/ohmi
 preferredPrefix: OHMI
+domain: biological systems
 ---
 
 The Ontology of Host-Microbiome Interactions aims to ontologically represent and standardize various entities and relations related to microbiomes, microbiome host organisms (e.g., human and mouse), and the interactions between the hosts and microbiomes at different conditions.
