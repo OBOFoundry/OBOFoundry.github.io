@@ -31,7 +31,7 @@ dependencies:
 products:
   - id: labo.owl
 publications:
-   - id: https://doi.org/10.5281/zenodo.6522019
+  - id: https://doi.org/10.5281/zenodo.6522019
      title: "LABO: An Ontology for Laboratory Test Prescription and Reporting"
 license:
   url: https://creativecommons.org/licenses/by/4.0/
