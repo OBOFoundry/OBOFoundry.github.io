@@ -16,7 +16,7 @@ contact:
   orcid: 0000-0002-3528-5267 
 publications: 
   - id: https://www.ncbi.nlm.nih.gov/pubmed/34318308
-     title: "Planarian Anatomy Ontology: a resource to connect data within and across experimental platforms" 
+    title: "Planarian Anatomy Ontology: a resource to connect data within and across experimental platforms" 
 description: PLANA, the planarian anatomy ontology, encompasses the anatomy and life cycle stages for both __Schmidtea mediterranea__ biotypes.
 domain: anatomy and development
 homepage: https://github.com/obophenotype/planaria-ontology
