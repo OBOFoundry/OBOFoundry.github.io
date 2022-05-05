@@ -21,7 +21,7 @@ build:
   source_url: http://purl.obolibrary.org/obo/pdro.owl
   method: owl2obo
 publications:
-  - id: https://pubmed.ncbi.nlm.nih.gov/34831777
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/34831777
     title: "The Prescription of Drug Ontology 2.0 (PDRO): More Than the Sum of Its Parts"
 tracker: https://github.com/OpenLHS/PDRO/issues
 activity_status: active
