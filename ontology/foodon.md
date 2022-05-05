@@ -37,7 +37,7 @@ repository: https://github.com/FoodOntology/foodon
 preferredPrefix: FOODON
 publications:
    - id: https://doi.org/10.1038/s41538-018-0032-6
-     title: "FoodOn: a harmonized food ontology to increase global food traceability, quality control and data integration"
+    title: "FoodOn: a harmonized food ontology to increase global food traceability, quality control and data integration"
 ---
 
 A broadly scoped ontology representing entities which bear a “food role”.  It encompasses materials in natural ecosystems and food webs as well as human-centric categorization and handling of food.
