@@ -17,7 +17,7 @@ page: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-publications: 
+publications:
   - id: https://pubmed.ncbi.nlm.nih.gov/29736190/
   title: "ONS: an ontology for a standardized description of interventions and observational studies in nutrition"
 products:
