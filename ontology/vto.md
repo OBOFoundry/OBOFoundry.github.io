@@ -10,7 +10,7 @@ homepage: https://github.com/phenoscape/vertebrate-taxonomy-ontology
 tracker: https://github.com/phenoscape/vertebrate-taxonomy-ontology/issues
 publications:
   - id: https://doi.org/10.1186/2041-1480-4-34
-    title: The vertebrate taxonomy ontology: a framework for reasoning across model organism and species phenotypes
+    title: "The vertebrate taxonomy ontology: a framework for reasoning across model organism and species phenotypes"
 contact:
   label: Jim Balhoff
   email: balhoff@renci.org
