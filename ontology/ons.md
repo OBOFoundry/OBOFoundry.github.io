@@ -18,7 +18,7 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 publications:
-  - id: https://pubmed.ncbi.nlm.nih.gov/29736190/
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/29736190
     title: "ONS: an ontology for a standardized description of interventions and observational studies in nutrition"
 products:
   - id: ons.owl
