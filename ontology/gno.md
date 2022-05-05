@@ -34,9 +34,9 @@ browsers:
   - label: Composition Browser
     title: GNOme Glycan Composition Browser
     url: https://gnome.glyomics.org/CompositionBrowser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
-publications: 
-   - id: https://dblp.org/rec/conf/icbo/ZhangE21
-     title: "GNOme - Glycan Naming and Subsumption Ontology" 
+publications:
+  - id: https://dblp.org/rec/conf/icbo/ZhangE21
+    title: "GNOme - Glycan Naming and Subsumption Ontology"
 usages:
   - user: https://www.glygen.org/
     description: GlyGen - Computational and Informatics Resources for Glycoscience
