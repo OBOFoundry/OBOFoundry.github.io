@@ -19,13 +19,13 @@ homepage: https://scdontology.h3abionet.org/
 products:
   - id: scdo.owl
   - id: scdo.obo
-publications: 
+publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/35363306
-     title: "The Sickle Cell Disease Ontology: recent development and expansion of the universal sickle cell knowledge representation."
+    title: "The Sickle Cell Disease Ontology: recent development and expansion of the universal sickle cell knowledge representation."
   - id: https://www.ncbi.nlm.nih.gov/pubmed/33021900
-     title: "The Sickle Cell Disease Ontology: Enabling Collaborative Research and Co-Designing of New Planetary Health Applications."
+    title: "The Sickle Cell Disease Ontology: Enabling Collaborative Research and Co-Designing of New Planetary Health Applications."
   - id: https://www.ncbi.nlm.nih.gov/pubmed/31769834
-     title: "The Sickle Cell Disease Ontology: enabling universal sickle cell-based knowledge representation."
+    title: "The Sickle Cell Disease Ontology: enabling universal sickle cell-based knowledge representation."
 tracker: https://github.com/scdodev/scdo-ontology/issues
 license:
   url: https://www.gnu.org/licenses/gpl-3.0.en.html
