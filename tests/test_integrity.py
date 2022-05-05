@@ -135,16 +135,14 @@ class TestIntegrity(unittest.TestCase):
 
     def test_schema_mandatory(self):
         """Test all things in schema marked as error are also in the required list."""
+        """Test all things in schema marked as error/warning are also in the required list."""
         # why is there a mismatch between their levels and required status?
         skip_keys = {"in_foundry", "products", "usages"}
         schema = json.loads(SCHEMA_PATH.read_text())
         required: Set[str] = set(schema["required"])
-        errors = set()
-        warnings = set()
-        for key, extras in schema["properties"].items():
-            level = extras.get("level")
-            if level == "warning":
-                warnings.add(key)
-            elif level == "error":
-                errors.add(key)
-        self.assertEqual(required - skip_keys, (errors | warnings) - skip_keys)
+        high_level: Set[str] = {
+            key
+            for key, configuration in schema["properties"].items()
+            if configuration.get("level") in {"warning", "error"}
+        }
+        self.assertEqual(required - skip_keys, high_level - skip_keys)
