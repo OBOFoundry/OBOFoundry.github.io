@@ -18,7 +18,8 @@ license:
   label: CC BY 4.0
 activity_status: active
 repository: https://github.com/OHPI/ohpi
-preferredPrefix: OHPI
+preferredPrefix: OHPI 
+domain: biological systems
 ---
 
 # OHPI: Ontology of Host-Pathogen Interactions
