@@ -35,7 +35,7 @@ tracker: https://github.com/FoodOntology/foodon/issues/
 activity_status: active
 repository: https://github.com/FoodOntology/foodon
 preferredPrefix: FOODON
-publications: 
+publications:
    - id: https://doi.org/10.1038/s41538-018-0032-6
      title: "FoodOn: a harmonized food ontology to increase global food traceability, quality control and data integration"
 ---
