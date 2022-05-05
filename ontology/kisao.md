@@ -15,7 +15,7 @@ tags:
   - numerical simulation
   - simulation algorithms
 homepage: https://github.com/SED-ML/KiSAO
-releases:  https://github.com/SED-ML/KiSAO/releases
+releases: https://github.com/SED-ML/KiSAO/releases
 tracker: https://github.com/SED-ML/KiSAO/issues
 products:
   - id: kisao.owl
