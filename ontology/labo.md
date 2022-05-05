@@ -30,6 +30,9 @@ dependencies:
   - id: opmi
 products:
   - id: labo.owl
+publications: 
+   - id: http://ceur-ws.org/Vol-2518/paper-ODLS2.pdf
+     title: "LABO: An Ontology for Laboratory Test Prescription and Reporting" 
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
