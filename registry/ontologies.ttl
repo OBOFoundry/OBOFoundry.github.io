@@ -4989,6 +4989,7 @@ _:b227  <http://www.w3.org/2000/01/rdf-schema#label>  "Alejandra Gonzalez-Beltra
         <http://purl.org/dc/elements/1.1/description>  "The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. It contains detailed information on licensing and formats as well as software applications themselves, mainly (but not limited) to the bioinformatics community." ;
         <http://purl.org/dc/elements/1.1/title>  "Software ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/25068035> ;
         <http://purl.org/dc/terms/1.1/theme>  "information technology" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/allysonlister/swo/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/swo.owl" ;
@@ -4998,6 +4999,9 @@ _:b227  <http://www.w3.org/2000/01/rdf-schema#label>  "Alejandra Gonzalez-Beltra
 
 _:b266  <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/25068035>
+        <http://purl.org/dc/elements/1.1/title>  "The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation" .
 
 _:b267  <http://www.w3.org/2000/01/rdf-schema#label>  "Allyson Lister" ;
         <http://xmlns.com/foaf/0.1/mbox>  "allyson.lister@oerc.ox.ac.uk" .
