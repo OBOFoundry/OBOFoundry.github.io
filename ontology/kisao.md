@@ -64,7 +64,7 @@ browsers:
     url: https://bioportal.bioontology.org/ontologies/KISAO
   - label: OntoBee
     title: OntoBee
-    url: https://www.ontobee.org/ontology/KISAO  
+    url: https://www.ontobee.org/ontology/KISAO
 publications:
   - id: https://pubmed.ncbi.nlm.nih.gov/22027554/
     title: "Controlled vocabularies and semantics in systems biology"
