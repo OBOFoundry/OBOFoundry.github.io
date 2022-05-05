@@ -66,7 +66,7 @@ browsers:
     title: OntoBee
     url: https://www.ontobee.org/ontology/KISAO
 publications:
-  - id: https://pubmed.ncbi.nlm.nih.gov/22027554/
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22027554
     title: "Controlled vocabularies and semantics in systems biology"
 funded_by:
   - "NIH P41EB023912"
