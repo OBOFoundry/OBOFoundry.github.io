@@ -29,6 +29,11 @@ tracker: https://github.com/Southern-Cross-Plant-Science/cdno/issues
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
+  
+homepage: https://cdno.info/
+publications: 
+  - id: https://doi.org/10.1002/csc2.20092
+    title: "<Knowledge representation and data sharing to unlock crop variation for nutritional food security>"
 activity_status: active
 repository: https://github.com/Southern-Cross-Plant-Science/cdno
 preferredPrefix: CDNO
