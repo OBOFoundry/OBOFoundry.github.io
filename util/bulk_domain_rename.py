@@ -33,5 +33,5 @@ def main(old_label: str, new_label: str):
                     print(line, file=file)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
