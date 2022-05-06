@@ -1583,6 +1583,12 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/cdao.owl"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.4137/EBO.S2320",
+                    "title": "Initial Implementation of a Comparative Data Analysis Ontology"
+                }
+            ],
             "repository": "https://github.com/evoinfo/cdao",
             "title": "Comparative Data Analysis Ontology",
             "tracker": "https://github.com/evoinfo/cdao/issues"
@@ -2430,6 +2436,12 @@
             "activity_status": "active",
             "build": {
                 "method": "owl2obo",
+                "publications": [
+                    {
+                        "id": "http://dx.doi.org/10.3233/978-1-61499-438-1-409",
+                        "title": "The Cardiovascular Disease Ontology"
+                    }
+                ],
                 "source_url": "http://purl.obolibrary.org/obo/cvdo.owl"
             },
             "contact": {
@@ -3867,6 +3879,12 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/flopo.owl"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/27842607",
+                    "title": "The flora phenotype ontology (FLOPO): tool for integrating morphological traits and phenotypes of vascular plants"
+                }
+            ],
             "repository": "https://github.com/flora-phenotype-ontology/flopoontology",
             "taxon": {
                 "id": "NCBITaxon:33090",
@@ -3983,6 +4001,12 @@
                     "id": "foodon_core.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/foodon_core.owl",
                     "title": "FoodOn core ontology (currently the same as foodon.owl)"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/31304272",
+                    "title": "FoodOn: a harmonized food ontology to increase global food traceability, quality control and data integration"
                 }
             ],
             "repository": "https://github.com/FoodOntology/foodon",
@@ -4909,6 +4933,12 @@
                 {
                     "id": "labo.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/labo.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.5281/zenodo.6522019",
+                    "title": "LABO: An Ontology for Laboratory Test Prescription and Reporting"
                 }
             ],
             "releases": "https://github.com/OpenLHS/LABO/releases/",
@@ -5863,6 +5893,12 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/mp/mp-base.owl",
                     "page": "https://github.com/mgijax/mammalian-phenotype-ontology/releases/tag/current",
                     "title": "MP Base Module"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/22961259",
+                    "title": "The Mammalian Phenotype Ontology as a unifying standard for experimental and high-throughput phenotyping data"
                 }
             ],
             "repository": "https://github.com/mgijax/mammalian-phenotype-ontology",
@@ -7055,6 +7091,12 @@
                     "title": "ONS latest release"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/29736190",
+                    "title": "ONS: an ontology for a standardized description of interventions and observational studies in nutrition"
+                }
+            ],
             "repository": "https://github.com/enpadasi/Ontology-for-Nutritional-Studies",
             "tags": [
                 "nutrition, nutritional studies, nutrition professionals"
@@ -7524,7 +7566,7 @@
                 "orcid": "0000-0002-3336-2476"
             },
             "description": "An ontology to describe entities related to prescription of drugs",
-            "domain": "health",
+            "domain": "information",
             "homepage": "https://github.com/OpenLHS/PDRO",
             "id": "pdro",
             "layout": "ontology_detail",
@@ -7541,7 +7583,16 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/pdro.owl"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/34831777",
+                    "title": "The Prescription of Drug Ontology 2.0 (PDRO): More Than the Sum of Its Parts"
+                }
+            ],
             "repository": "https://github.com/OpenLHS/PDRO",
+            "tags": [
+                "clinical documentation"
+            ],
             "title": "The Prescription of Drugs Ontology",
             "tracker": "https://github.com/OpenLHS/PDRO/issues"
         },
@@ -7725,6 +7776,12 @@
                 {
                     "id": "plana.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/plana.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/34318308",
+                    "title": "Planarian Anatomy Ontology: a resource to connect data within and across experimental platforms"
                 }
             ],
             "repository": "https://github.com/obophenotype/planaria-ontology",
@@ -7975,7 +8032,7 @@
                     "id": "ro"
                 }
             ],
-            "description": "The Plant Stress Ontology describes...",
+            "description": "The Plant Stress Ontology describes biotic and abiotic stresses that a plant may encounter.",
             "domain": "agriculture",
             "homepage": "https://github.com/Planteome/plant-stress-ontology",
             "id": "pso",
@@ -8001,6 +8058,12 @@
                 {
                     "id": "pso.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/pso.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/29186578",
+                    "title": "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics."
                 }
             ],
             "repository": "https://github.com/Planteome/plant-stress-ontology",
@@ -8693,6 +8756,12 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/taxrank.obo"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1186/2041-1480-4-34",
+                    "title": "The vertebrate taxonomy ontology: a framework for reasoning across model organism and species phenotypes"
+                }
+            ],
             "repository": "https://github.com/phenoscape/taxrank",
             "tags": [
                 "taxonomy"
@@ -8870,6 +8939,12 @@
                 {
                     "id": "tto.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/tto.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1038/npre.2010.4629.1",
+                    "title": "The Teleost Taxonomy Ontology"
                 }
             ],
             "repository": "https://github.com/phenoscape/teleost-taxonomy-ontology",
@@ -9476,6 +9551,12 @@
                 {
                     "id": "vto.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/vto.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1186/2041-1480-4-34",
+                    "title": "The vertebrate taxonomy ontology: a framework for reasoning across model organism and species phenotypes"
                 }
             ],
             "repository": "https://github.com/phenoscape/vertebrate-taxonomy-ontology",
@@ -10214,19 +10295,40 @@
         },
         {
             "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "OLS",
+                    "title": "Ontology Lookup Service",
+                    "url": "https://www.ebi.ac.uk/ols/ontologies/kisao"
+                },
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal",
+                    "url": "https://bioportal.bioontology.org/ontologies/KISAO"
+                },
+                {
+                    "label": "OntoBee",
+                    "title": "OntoBee",
+                    "url": "https://www.ontobee.org/ontology/KISAO"
+                }
+            ],
             "build": {
                 "method": "owl2obo",
                 "source_url": "https://raw.githubusercontent.com/SED-ML/KiSAO/deploy/kisao.owl"
             },
             "contact": {
-                "email": "karr@mssm.edu",
+                "email": "jonrkarr@gmail.com",
                 "github": "jonrkarr",
                 "label": "Jonathan Karr",
                 "orcid": "0000-0002-2605-5080"
             },
-            "description": "A classification of algorithms for simulating biology and their outputs",
-            "domain": "information technology",
-            "homepage": "http://co.mbine.org/standards/kisao",
+            "description": "A classification of algorithms for simulating biology, their parameters, and their outputs",
+            "domain": "simulation",
+            "funded_by": [
+                "NIH P41EB023912",
+                "NIH R35GM119771"
+            ],
+            "homepage": "https://github.com/SED-ML/KiSAO",
             "id": "kisao",
             "layout": "ontology_detail",
             "license": {
@@ -10241,12 +10343,70 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/kisao.owl"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/22027554",
+                    "title": "Controlled vocabularies and semantics in systems biology"
+                }
+            ],
+            "releases": "https://github.com/SED-ML/KiSAO/releases",
             "repository": "https://github.com/SED-ML/KiSAO",
             "tags": [
-                "algorithms"
+                "systems biology",
+                "computational biology",
+                "mathematical modeling",
+                "numerical simulation",
+                "simulation algorithms"
             ],
             "title": "Kinetic Simulation Algorithm Ontology",
-            "tracker": "https://github.com/SED-ML/KiSAO/issues"
+            "tracker": "https://github.com/SED-ML/KiSAO/issues",
+            "usages": [
+                {
+                    "description": "The Simulation Experiment Description Markup Language (SED-ML) is a language for describing simulations and visualizations of their results.",
+                    "examples": [
+                        {
+                            "description": "Several examples of simulations encoded in SED-ML",
+                            "url": "https://sed-ml.org/examples.html"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://sed-ml.org/"
+                },
+                {
+                    "description": "BioSimulations is a repository of biosimulation projects.",
+                    "examples": [
+                        {
+                            "description": "Simulation of a synthetic oscillatory biochemical network",
+                            "url": "https://biosimulations.org/projects/Repressilator-Elowitz-Nature-2000"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://biosimulations.org/"
+                },
+                {
+                    "description": "runBioSimulations is a web application for execution biological simulations.",
+                    "examples": [
+                        {
+                            "description": "Example simulation runs",
+                            "url": "https://run.biosimulations.org/runs?try=1"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://run.biosimulations.org/"
+                },
+                {
+                    "description": "BioSimulators is a registry of biosimulation tools.",
+                    "examples": [
+                        {
+                            "description": "tellurium is a software tool for kinetic simulation of biochemical networks",
+                            "url": "https://biosimulators.org/simulators/tellurium/latest#tab=algorithms"
+                        }
+                    ],
+                    "seeAlso": "https://arxiv.org/abs/2203.06732",
+                    "type": "annotation",
+                    "user": "https://biosimulators.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -10441,6 +10601,20 @@
                 {
                     "id": "scdo.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/scdo.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/35363306",
+                    "title": "The Sickle Cell Disease Ontology: recent development and expansion of the universal sickle cell knowledge representation."
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/33021900",
+                    "title": "The Sickle Cell Disease Ontology: Enabling Collaborative Research and Co-Designing of New Planetary Health Applications."
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/31769834",
+                    "title": "The Sickle Cell Disease Ontology: enabling universal sickle cell-based knowledge representation."
                 }
             ],
             "repository": "https://github.com/scdodev/scdo-ontology",
