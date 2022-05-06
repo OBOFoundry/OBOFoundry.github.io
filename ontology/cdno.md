@@ -13,7 +13,7 @@ contact:
   orcid: 0000-0002-7696-731X
 description: CDNO provides structured terminologies to describe nutritional attributes of material entities that contribute to human diet.
 domain: diet, metabolomics, and nutrition
-homepage: https://github.com/Southern-Cross-Plant-Science/cdno
+homepage: https://cdno.info/
 products:
   - id: cdno.owl
     name: "Compositional Dietary Nutrition Ontology main release in OWL format"
@@ -29,8 +29,6 @@ tracker: https://github.com/Southern-Cross-Plant-Science/cdno/issues
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
-  
-homepage: https://cdno.info/
 publications:
   - id: https://doi.org/10.1002/csc2.20092
     title: "Knowledge representation and data sharing to unlock crop variation for nutritional food security"
