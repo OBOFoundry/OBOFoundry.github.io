@@ -1625,7 +1625,7 @@
             ],
             "description": "CDNO provides structured terminologies to describe nutritional attributes of material entities that contribute to human diet.",
             "domain": "diet, metabolomics, and nutrition",
-            "homepage": "https://github.com/Southern-Cross-Plant-Science/cdno",
+            "homepage": "https://cdno.info/",
             "id": "cdno",
             "layout": "ontology_detail",
             "license": {
@@ -1645,6 +1645,12 @@
                     "id": "cdno.obo",
                     "name": "Compositional Dietary Nutrition Ontology additional release in OBO format",
                     "ontology_purl": "http://purl.obolibrary.org/obo/cdno.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1002/csc2.20092",
+                    "title": "Knowledge representation and data sharing to unlock crop variation for nutritional food security"
                 }
             ],
             "repository": "https://github.com/Southern-Cross-Plant-Science/cdno",

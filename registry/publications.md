@@ -34,6 +34,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Chemical Information Ontology (cheminf): [The chemical information ontology: provenance and disambiguation for chemical data on the biological semantic web](https://www.ncbi.nlm.nih.gov/pubmed/21991315)
 - Clinical measurement ontology (cmo): [Three ontologies to define phenotype measurement data.](https://www.ncbi.nlm.nih.gov/pubmed/22654893)
 - Comparative Data Analysis Ontology (cdao): [Initial Implementation of a Comparative Data Analysis Ontology](https://doi.org/10.4137/EBO.S2320)
+- Compositional Dietary Nutrition Ontology (cdno): [Knowledge representation and data sharing to unlock crop variation for nutritional food security](https://doi.org/10.1002/csc2.20092)
 - Dictyostelium discoideum anatomy (ddanat): [An anatomy ontology to represent biological knowledge in Dictyostelium discoideum](https://www.ncbi.nlm.nih.gov/pubmed/18366659)
 - Dictyostelium discoideum phenotype ontology (ddpheno): [dictyBase and the Dicty Stock Center (version 2.0) - a progress report](https://www.ncbi.nlm.nih.gov/pubmed/31840793)
 - Drosophila Phenotype Ontology (dpo): [The Drosophila phenotype ontology.](https://www.ncbi.nlm.nih.gov/pubmed/24138933)
