@@ -53,7 +53,7 @@ usages:
     type: annotation
     description: BioSimulators is a registry of biosimulation tools.
     examples:
-      - url: https://biosimulators.org/simulators/tellurium
+      - url: https://biosimulators.org/simulators/tellurium/latest#tab=algorithms
         description: "tellurium is a software tool for kinetic simulation of biochemical networks"
 browsers:
   - label: OLS
