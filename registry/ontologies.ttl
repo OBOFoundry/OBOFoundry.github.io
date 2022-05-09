@@ -152,6 +152,8 @@ _:b4    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology for describing the function of genes and gene products" ;
         <http://purl.org/dc/elements/1.1/title>  "Gene Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/10802651> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/33290552> ;
         <http://purl.org/dc/terms/1.1/theme>  "biological systems" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/geneontology/go-ontology/issues/" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "GO" ;
@@ -294,6 +296,12 @@ _:b4    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
 
 <http://purl.obolibrary.org/obo/NCBITaxon_1>
         <http://www.w3.org/2000/01/rdf-schema#label>  "All life" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/10802651>
+        <http://purl.org/dc/elements/1.1/title>  "Gene ontology: tool for the unification of biology. The Gene Ontology Consortium" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/33290552>
+        <http://purl.org/dc/elements/1.1/title>  "The Gene Ontology resource: enriching a GOld mine" .
 
 <http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab>
         <http://purl.org/dc/elements/1.1/title>  "Gene Ontology AmiGO 2 Browser" ;
@@ -922,6 +930,7 @@ _:b47   <http://www.w3.org/2000/01/rdf-schema#label>  "Hector Escriva" ;
         <http://purl.org/dc/elements/1.1/description>  "A structured controlled vocabulary for the phenotypes of Ascomycete fungi" ;
         <http://purl.org/dc/elements/1.1/title>  "Ascomycete phenotype ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/20157474> ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/ascomycete-phenotype-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/apo.owl" ;
@@ -935,6 +944,9 @@ _:b48   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
 
 <http://purl.obolibrary.org/obo/NCBITaxon_4890>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Ascomycota" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/20157474>
+        <http://purl.org/dc/elements/1.1/title>  "New mutant phenotype data curation system in the Saccharomyces Genome Database" .
 
 _:b49   <http://www.w3.org/2000/01/rdf-schema#label>  "Stacia R Engel" ;
         <http://xmlns.com/foaf/0.1/mbox>  "stacia@stanford.edu" .
@@ -4998,6 +5010,7 @@ _:b236  <http://www.w3.org/2000/01/rdf-schema#label>  "Karen Eilbeck" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology for spider comparative biology including anatomical parts (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web, borrow)." ;
         <http://purl.org/dc/elements/1.1/title>  "Spider Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.3390/d11100202> ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/spider-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/spd.owl" ;
@@ -5010,6 +5023,9 @@ _:b264  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
 
 <http://purl.obolibrary.org/obo/NCBITaxon_6893>
         <http://www.w3.org/2000/01/rdf-schema#label>  "spiders" .
+
+<https://doi.org/10.3390/d11100202>
+        <http://purl.org/dc/elements/1.1/title>  "The Spider Anatomy Ontology (SPD)—A Versatile Tool to Link Anatomy with Cross-Disciplinary Data" .
 
 _:b265  <http://www.w3.org/2000/01/rdf-schema#label>  "Martin Ramirez" ;
         <http://xmlns.com/foaf/0.1/mbox>  "ramirez@macn.gov.ar" .
@@ -5188,6 +5204,7 @@ _:b274  <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
         <http://purl.org/dc/elements/1.1/description>  "TOXic Process Ontology (TXPO) systematizes a wide variety of terms involving toxicity courses and processes. The first version of TXPO focuses on liver toxicity." ;
         <http://purl.org/dc/elements/1.1/title>  "Toxic Process Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/32883995> ;
         <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/txpo-ontology/TXPO/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://bioportal.bioontology.org/ontologies/TXPO?p=classes> ;
@@ -5196,6 +5213,9 @@ _:b274  <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b275 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/txpo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://toxpilot.nibiohn.go.jp/> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/32883995>
+        <http://purl.org/dc/elements/1.1/title>  "Ontological approach to the knowledge systematization of a toxic process and toxic course representation framework for early drug risk management" .
 
 <http://bioportal.bioontology.org/ontologies/TXPO?p=classes>
         <http://purl.org/dc/elements/1.1/title>  "BioPortal Browser" ;
