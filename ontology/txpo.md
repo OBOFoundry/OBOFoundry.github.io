@@ -30,6 +30,9 @@ browsers:
 activity_status: active
 repository: https://github.com/txpo-ontology/TXPO
 preferredPrefix: TXPO
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/32883995
+    title: "Ontological approach to the knowledge systematization of a toxic process and toxic course representation framework for early drug risk management"
 ---
 
 Elucidating the mechanism of toxicity is crucial in drug safety evaluations. TOXic Process Ontology (TXPO) systematizes a wide variety of terms involving toxicity courses and processes. The first version of TXPO focuses on liver toxicity.

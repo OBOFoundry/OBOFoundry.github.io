@@ -35,6 +35,7 @@ usages:
         description: "alleles and constructs annotated to bang sensitive in FlyBase"
 activity_status: active
 repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+publications: []
 ---
 
 A structured controlled vocabulary used for various aspects of annotation by FlyBase. It includes the Drosophila Phenotype Ontology (dpo) which is also released separately.
