@@ -302,6 +302,12 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/go/snapshot/go.obo
     page: http://geneontology.org/page/download-ontology
     title: GO (OBO Format edition), daily snapshot release
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/10802651
+    title: 'Gene ontology: tool for the unification of biology. The Gene Ontology
+      Consortium'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/33290552
+    title: 'The Gene Ontology resource: enriching a GOld mine'
   repository: https://github.com/geneontology/go-ontology
   review:
     date: 2010
@@ -909,6 +915,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/apo.owl
   - id: apo.obo
     ontology_purl: http://purl.obolibrary.org/obo/apo.obo
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/20157474
+    title: New mutant phenotype data curation system in the Saccharomyces Genome Database
   repository: https://github.com/obophenotype/ascomycete-phenotype-ontology
   taxon:
     id: NCBITaxon:4890
@@ -2644,6 +2653,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/fbcv.obo
   - id: fbcv.json
     ontology_purl: http://purl.obolibrary.org/obo/fbcv.json
+  publications: []
   repository: https://github.com/FlyBase/flybase-controlled-vocabulary
   title: FlyBase Controlled Vocabulary
   tracker: https://github.com/FlyBase/flybase-controlled-vocabulary/issues
@@ -2690,6 +2700,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl
   - id: fbdv/fbdv-simple.obo
     ontology_purl: http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo
+  publications: []
   repository: https://github.com/FlyBase/drosophila-developmental-ontology
   taxon:
     id: NCBITaxon:7227
@@ -6129,6 +6140,10 @@ ontologies:
   products:
   - id: spd.owl
     ontology_purl: http://purl.obolibrary.org/obo/spd.owl
+  publications:
+  - id: https://doi.org/10.3390/d11100202
+    title: The Spider Anatomy Ontology (SPD)—A Versatile Tool to Link Anatomy with
+      Cross-Disciplinary Data
   repository: https://github.com/obophenotype/spider-ontology
   taxon:
     id: NCBITaxon:6893
@@ -6443,6 +6458,10 @@ ontologies:
   products:
   - id: txpo.owl
     ontology_purl: http://purl.obolibrary.org/obo/txpo.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/32883995
+    title: Ontological approach to the knowledge systematization of a toxic process
+      and toxic course representation framework for early drug risk management
   repository: https://github.com/txpo-ontology/TXPO
   tags:
   - toxicity
