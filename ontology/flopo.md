@@ -26,6 +26,6 @@ activity_status: active
 repository: https://github.com/flora-phenotype-ontology/flopoontology
 preferredPrefix: FLOPO
 publications:
-  id: https://pubmed.ncbi.nlm.nih.gov/27842607/
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/27842607
     title: "The flora phenotype ontology (FLOPO): tool for integrating morphological traits and phenotypes of vascular plants"
 ---
