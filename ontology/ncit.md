@@ -31,7 +31,7 @@ products:
 activity_status: active
 repository: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
 preferredPrefix: NCIT
-domain: upper
+domain: health
 ---
 
 The NCI Thesaurus is a reference terminology that includes broad
