@@ -13,7 +13,7 @@ tracker: https://github.com/EBISPOT/ancestro/issues
 domain: organisms
 tags:
   - ancestry
- publications:
+publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/29448949
     title: "A standardized framework for representation of ancestry data in genomics studies, with application to the NHGRI-EBI GWAS Catalog"
 products:
