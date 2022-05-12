@@ -7,7 +7,7 @@ contact:
   github: edwardsnj
   orcid: 0000-0001-5168-3196
 description: GlyTouCan provides stable accessions for glycans described at varyious degrees of characterization, including compositions (no linkage) and topologies (no carbon bond positions or anomeric configurations). GNOme organizes these stable accessions for interative browsing, for text-based searching, and for automated reasoning with well-defined characterization levels.
-domain: biochemistry
+domain: chemistry and biochemistry
 tags:
   - glycan structure
 homepage: https://gnome.glyomics.org/

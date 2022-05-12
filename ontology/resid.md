@@ -5,7 +5,7 @@ contact:
   email: john.garavelli@ebi.ac.uk
   label: John Garavelli
 description: For the description of covalent bonds in proteins.
-domain: biochemistry
+domain: chemistry and biochemistry
 tags:
   - proteins
 homepage: http://www.ebi.ac.uk/RESID/
