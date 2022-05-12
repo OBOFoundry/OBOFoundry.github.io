@@ -19,7 +19,7 @@ license:
 activity_status: active
 repository: https://github.com/cido-ontology/cido
 preferredPrefix: CIDO
-domain: phenotype
+domain: health
 ---
 
 The Ontology of Coronavirus Infectious Disease (CIDO) is a community-driven open-source biomedical ontology in the area of coronavirus infectious disease. The CIDO is developed to provide standardized human- and computer-interpretable annotation and representation of various coronavirus infectious diseases, including their etiology, transmission, epidemiology, pathogenesis, diagnosis, prevention, and treatment. Its development follows the OBO Foundry Principles.
