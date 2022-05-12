@@ -15,7 +15,7 @@ contact:
   github: nicolevasilevsky
   orcid: 0000-0001-5208-3432
 description: CHEBI provides a distinct role hierarchy. Chemicals in the structural hierarchy are connected via a 'has role' relation. CHIRO provides links from these roles to useful other classes in other ontologies. This will allow direct connection between chemical structures (small molecules, drugs) and what they do. This could be formalized using 'capable of', in the same way Uberon and the Cell Ontology link structures to processes.
-domain: biochemistry
+domain: chemistry and biochemistry
 homepage: https://github.com/obophenotype/chiro
 products:
   - id: chiro.owl

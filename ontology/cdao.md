@@ -8,6 +8,9 @@ contact:
   orcid: 0000-0002-8688-6599
 description: a formalization of concepts and relations relevant to evolutionary comparative analysis
 homepage: https://github.com/evoinfo/cdao
+publications:
+  - id: https://doi.org/10.4137/EBO.S2320
+    title: Initial Implementation of a Comparative Data Analysis Ontology
 products:
   - id: cdao.owl
 title: Comparative Data Analysis Ontology

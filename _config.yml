@@ -70,7 +70,7 @@ ontologies:
   depicted_by: https://www.ebi.ac.uk/chebi/images/ChEBI_logo.png
   description: A structured classification of molecular entities of biological interest
     focusing on 'small' chemical compounds.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: http://www.ebi.ac.uk/chebi
   id: chebi
   in_foundry_order: 1
@@ -302,6 +302,12 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/go/snapshot/go.obo
     page: http://geneontology.org/page/download-ontology
     title: GO (OBO Format edition), daily snapshot release
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/10802651
+    title: 'Gene ontology: tool for the unification of biology. The Gene Ontology
+      Consortium'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/33290552
+    title: 'The Gene Ontology resource: enriching a GOld mine'
   repository: https://github.com/geneontology/go-ontology
   review:
     date: 2010
@@ -608,7 +614,7 @@ ontologies:
   depicted_by: https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png
   description: An ontological representation of protein-related entities
   documentation: https://proconsortium.org/download/current/pro_readme.txt
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: http://proconsortium.org
   id: pr
   in_foundry_order: 1
@@ -909,6 +915,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/apo.owl
   - id: apo.obo
     ontology_purl: http://purl.obolibrary.org/obo/apo.obo
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/20157474
+    title: New mutant phenotype data curation system in the Saccharomyces Genome Database
   repository: https://github.com/obophenotype/ascomycete-phenotype-ontology
   taxon:
     id: NCBITaxon:4890
@@ -1122,6 +1131,9 @@ ontologies:
   products:
   - id: cdao.owl
     ontology_purl: http://purl.obolibrary.org/obo/cdao.owl
+  publications:
+  - id: https://doi.org/10.4137/EBO.S2320
+    title: Initial Implementation of a Comparative Data Analysis Ontology
   repository: https://github.com/evoinfo/cdao
   title: Comparative Data Analysis Ontology
   tracker: https://github.com/evoinfo/cdao/issues
@@ -1144,7 +1156,7 @@ ontologies:
   description: CDNO provides structured terminologies to describe nutritional attributes
     of material entities that contribute to human diet.
   domain: diet, metabolomics, and nutrition
-  homepage: https://github.com/Southern-Cross-Plant-Science/cdno
+  homepage: https://cdno.info/
   id: cdno
   layout: ontology_detail
   license:
@@ -1160,6 +1172,10 @@ ontologies:
   - id: cdno.obo
     name: Compositional Dietary Nutrition Ontology additional release in OBO format
     ontology_purl: http://purl.obolibrary.org/obo/cdno.obo
+  publications:
+  - id: https://doi.org/10.1002/csc2.20092
+    title: Knowledge representation and data sharing to unlock crop variation for
+      nutritional food security
   repository: https://github.com/Southern-Cross-Plant-Science/cdno
   title: Compositional Dietary Nutrition Ontology
   tracker: https://github.com/Southern-Cross-Plant-Science/cdno/issues
@@ -1174,7 +1190,7 @@ ontologies:
     orcid: 0000-0001-7542-0286
   description: Includes terms for the descriptors commonly used in cheminformatics
     software applications and the algorithms which generate them.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: https://github.com/semanticchemistry/semanticchemistry
   id: cheminf
   layout: ontology_detail
@@ -1219,7 +1235,7 @@ ontologies:
     between chemical structures (small molecules, drugs) and what they do. This could
     be formalized using 'capable of', in the same way Uberon and the Cell Ontology
     link structures to processes.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: https://github.com/obophenotype/chiro
   id: chiro
   jobs:
@@ -1732,6 +1748,9 @@ ontologies:
 - activity_status: active
   build:
     method: owl2obo
+    publications:
+    - id: http://dx.doi.org/10.3233/978-1-61499-438-1-409
+      title: The Cardiovascular Disease Ontology
     source_url: http://purl.obolibrary.org/obo/cvdo.owl
   contact:
     email: paul.fabry@usherbrooke.ca
@@ -2399,10 +2418,10 @@ ontologies:
   tracker: https://github.com/SCAI-BIO/EpilepsyOntology/issues
 - activity_status: active
   contact:
-    email: stoeckrt@pennmedicine.upenn.edu
-    github: cstoeckert
-    label: Chris Stoeckert
-    orcid: 0000-0002-5714-991X
+    email: jiezheng@pennmedicine.upenn.edu
+    github: zhengj2007
+    label: Jie Zheng
+    orcid: 0000-0002-2999-0103
   depicted_by: https://raw.githubusercontent.com/EuPathDB/communitysite/master/assets/images/VEuPathDB-logo-s.png
   description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector
     Genomics Resource (VEuPathDB; https://veupathdb.org).
@@ -2634,6 +2653,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/fbcv.obo
   - id: fbcv.json
     ontology_purl: http://purl.obolibrary.org/obo/fbcv.json
+  publications: []
   repository: https://github.com/FlyBase/flybase-controlled-vocabulary
   title: FlyBase Controlled Vocabulary
   tracker: https://github.com/FlyBase/flybase-controlled-vocabulary/issues
@@ -2680,6 +2700,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/fbdv/fbdv-simple.owl
   - id: fbdv/fbdv-simple.obo
     ontology_purl: http://purl.obolibrary.org/obo/fbdv/fbdv-simple.obo
+  publications: []
   repository: https://github.com/FlyBase/drosophila-developmental-ontology
   taxon:
     id: NCBITaxon:7227
@@ -2732,6 +2753,10 @@ ontologies:
   products:
   - id: flopo.owl
     ontology_purl: http://purl.obolibrary.org/obo/flopo.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/27842607
+    title: 'The flora phenotype ontology (FLOPO): tool for integrating morphological
+      traits and phenotypes of vascular plants'
   repository: https://github.com/flora-phenotype-ontology/flopoontology
   taxon:
     id: NCBITaxon:33090
@@ -2815,6 +2840,10 @@ ontologies:
     id: foodon_core.owl
     ontology_purl: http://purl.obolibrary.org/obo/foodon_core.owl
     title: FoodOn core ontology (currently the same as foodon.owl)
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/31304272
+    title: 'FoodOn: a harmonized food ontology to increase global food traceability,
+      quality control and data integration'
   repository: https://github.com/FoodOntology/foodon
   tags:
   - food
@@ -3053,7 +3082,7 @@ ontologies:
     (no carbon bond positions or anomeric configurations). GNOme organizes these stable
     accessions for interative browsing, for text-based searching, and for automated
     reasoning with well-defined characterization levels.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: https://gnome.glyomics.org/
   id: gno
   layout: ontology_detail
@@ -3125,6 +3154,10 @@ ontologies:
     id: hancestro_bfo.owl
     ontology_purl: http://purl.obolibrary.org/obo/hancestro_bfo.owl
     title: HANCESTRO BFO
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/29448949
+    title: A standardized framework for representation of ancestry data in genomics
+      studies, with application to the NHGRI-EBI GWAS Catalog
   repository: https://github.com/EBISPOT/ancestro
   tags:
   - ancestry
@@ -3488,6 +3521,9 @@ ontologies:
   products:
   - id: labo.owl
     ontology_purl: http://purl.obolibrary.org/obo/labo.owl
+  publications:
+  - id: https://doi.org/10.5281/zenodo.6522019
+    title: 'LABO: An Ontology for Laboratory Test Prescription and Reporting'
   releases: https://github.com/OpenLHS/LABO/releases/
   repository: https://github.com/OpenLHS/LABO
   tags:
@@ -3952,7 +3988,7 @@ ontologies:
     orcid: 0000-0002-0045-7698
   description: PSI-MOD is an ontology consisting of terms that describe protein chemical
     modifications
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: http://www.psidev.info/MOD
   id: mod
   layout: ontology_detail
@@ -4168,6 +4204,10 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/mp/mp-base.owl
     page: https://github.com/mgijax/mammalian-phenotype-ontology/releases/tag/current
     title: MP Base Module
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22961259
+    title: The Mammalian Phenotype Ontology as a unifying standard for experimental
+      and high-throughput phenotyping data
   repository: https://github.com/mgijax/mammalian-phenotype-ontology
   taxon:
     id: NCBITaxon:40674
@@ -4260,7 +4300,7 @@ ontologies:
     orcid: 0000-0002-8457-6693
   description: An ontology for Major Histocompatibility Complex (MHC) restriction
     in experiments
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: https://github.com/IEDB/MRO
   id: mro
   layout: ontology_detail
@@ -5069,6 +5109,10 @@ ontologies:
   - id: ons.owl
     ontology_purl: http://purl.obolibrary.org/obo/ons.owl
     title: ONS latest release
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/29736190
+    title: 'ONS: an ontology for a standardized description of interventions and observational
+      studies in nutrition'
   repository: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
   tags:
   - nutrition, nutritional studies, nutrition professionals
@@ -5388,7 +5432,7 @@ ontologies:
     label: Paul Fabry
     orcid: 0000-0002-3336-2476
   description: An ontology to describe entities related to prescription of drugs
-  domain: health
+  domain: information
   homepage: https://github.com/OpenLHS/PDRO
   id: pdro
   layout: ontology_detail
@@ -5401,7 +5445,13 @@ ontologies:
   products:
   - id: pdro.owl
     ontology_purl: http://purl.obolibrary.org/obo/pdro.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/34831777
+    title: 'The Prescription of Drug Ontology 2.0 (PDRO): More Than the Sum of Its
+      Parts'
   repository: https://github.com/OpenLHS/PDRO
+  tags:
+  - clinical documentation
   title: The Prescription of Drugs Ontology
   tracker: https://github.com/OpenLHS/PDRO/issues
 - activity_status: active
@@ -5534,6 +5584,10 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/plana.owl
   - id: plana.obo
     ontology_purl: http://purl.obolibrary.org/obo/plana.obo
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/34318308
+    title: 'Planarian Anatomy Ontology: a resource to connect data within and across
+      experimental platforms'
   repository: https://github.com/obophenotype/planaria-ontology
   title: planaria-ontology
   tracker: https://github.com/obophenotype/planaria-ontology/issues
@@ -5703,7 +5757,8 @@ ontologies:
     orcid: 0000-0002-6379-8932
   dependencies:
   - id: ro
-  description: The Plant Stress Ontology describes...
+  description: The Plant Stress Ontology describes biotic and abiotic stresses that
+    a plant may encounter.
   domain: agriculture
   homepage: https://github.com/Planteome/plant-stress-ontology
   id: pso
@@ -5722,6 +5777,10 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/pso.owl
   - id: pso.obo
     ontology_purl: http://purl.obolibrary.org/obo/pso.obo
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
+    title: 'The Planteome database: an integrated resource for reference ontologies,
+      plant genomics and phenomics.'
   repository: https://github.com/Planteome/plant-stress-ontology
   tags:
   - plant disease
@@ -6020,7 +6079,7 @@ ontologies:
   depicted_by: http://sequenceontology.org/img/so_icon.png
   description: A structured controlled vocabulary for sequence annotation, for the
     exchange of annotation data and for the description of sequence objects in databases.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: http://www.sequenceontology.org/
   id: so
   layout: ontology_detail
@@ -6085,6 +6144,10 @@ ontologies:
   products:
   - id: spd.owl
     ontology_purl: http://purl.obolibrary.org/obo/spd.owl
+  publications:
+  - id: https://doi.org/10.3390/d11100202
+    title: The Spider Anatomy Ontology (SPD)—A Versatile Tool to Link Anatomy with
+      Cross-Disciplinary Data
   repository: https://github.com/obophenotype/spider-ontology
   taxon:
     id: NCBITaxon:6893
@@ -6150,6 +6213,10 @@ ontologies:
   products:
   - id: swo.owl
     ontology_purl: http://purl.obolibrary.org/obo/swo.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25068035
+    title: 'The Software Ontology (SWO): a resource for reproducibility in biomedical
+      data analysis, curation and digital preservation'
   repository: https://github.com/allysonlister/swo
   tags:
   - software
@@ -6226,6 +6293,10 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/taxrank.owl
   - id: taxrank.obo
     ontology_purl: http://purl.obolibrary.org/obo/taxrank.obo
+  publications:
+  - id: https://doi.org/10.1186/2041-1480-4-34
+    title: 'The vertebrate taxonomy ontology: a framework for reasoning across model
+      organism and species phenotypes'
   repository: https://github.com/phenoscape/taxrank
   tags:
   - taxonomy
@@ -6351,6 +6422,9 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/tto.obo
   - id: tto.owl
     ontology_purl: http://purl.obolibrary.org/obo/tto.owl
+  publications:
+  - id: https://doi.org/10.1038/npre.2010.4629.1
+    title: The Teleost Taxonomy Ontology
   repository: https://github.com/phenoscape/teleost-taxonomy-ontology
   tags:
   - taxonomy
@@ -6375,7 +6449,7 @@ ontologies:
   description: TOXic Process Ontology (TXPO) systematizes a wide variety of terms
     involving toxicity courses and processes. The first version of TXPO focuses on
     liver toxicity.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: https://toxpilot.nibiohn.go.jp/
   id: txpo
   layout: ontology_detail
@@ -6388,6 +6462,10 @@ ontologies:
   products:
   - id: txpo.owl
     ontology_purl: http://purl.obolibrary.org/obo/txpo.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/32883995
+    title: Ontological approach to the knowledge systematization of a toxic process
+      and toxic course representation framework for early drug risk management
   repository: https://github.com/txpo-ontology/TXPO
   tags:
   - toxicity
@@ -6799,6 +6877,10 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/vto.owl
   - id: vto.obo
     ontology_purl: http://purl.obolibrary.org/obo/vto.obo
+  publications:
+  - id: https://doi.org/10.1186/2041-1480-4-34
+    title: 'The vertebrate taxonomy ontology: a framework for reasoning across model
+      organism and species phenotypes'
   repository: https://github.com/phenoscape/vertebrate-taxonomy-ontology
   title: Vertebrate Taxonomy Ontology
   tracker: https://github.com/phenoscape/vertebrate-taxonomy-ontology/issues
@@ -7014,7 +7096,7 @@ ontologies:
     orcid: 0000-0003-4978-0864
   description: A structured controlled vocabulary for cross-linking reagents used
     with proteomics mass spectrometry.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: http://www.psidev.info/groups/controlled-vocabularies
   id: xlmod
   label: xlmod
@@ -7306,17 +7388,31 @@ ontologies:
     type: annotation
     user: https://monarchinitiative.org/
 - activity_status: active
+  browsers:
+  - label: OLS
+    title: Ontology Lookup Service
+    url: https://www.ebi.ac.uk/ols/ontologies/kisao
+  - label: BioPortal
+    title: BioPortal
+    url: https://bioportal.bioontology.org/ontologies/KISAO
+  - label: OntoBee
+    title: OntoBee
+    url: https://www.ontobee.org/ontology/KISAO
   build:
     method: owl2obo
     source_url: https://raw.githubusercontent.com/SED-ML/KiSAO/deploy/kisao.owl
   contact:
-    email: karr@mssm.edu
+    email: jonrkarr@gmail.com
     github: jonrkarr
     label: Jonathan Karr
     orcid: 0000-0002-2605-5080
-  description: A classification of algorithms for simulating biology and their outputs
-  domain: information technology
-  homepage: http://co.mbine.org/standards/kisao
+  description: A classification of algorithms for simulating biology, their parameters,
+    and their outputs
+  domain: simulation
+  funded_by:
+  - NIH P41EB023912
+  - NIH R35GM119771
+  homepage: https://github.com/SED-ML/KiSAO
   id: kisao
   layout: ontology_detail
   license:
@@ -7327,11 +7423,47 @@ ontologies:
   products:
   - id: kisao.owl
     ontology_purl: http://purl.obolibrary.org/obo/kisao.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22027554
+    title: Controlled vocabularies and semantics in systems biology
+  releases: https://github.com/SED-ML/KiSAO/releases
   repository: https://github.com/SED-ML/KiSAO
   tags:
-  - algorithms
+  - systems biology
+  - computational biology
+  - mathematical modeling
+  - numerical simulation
+  - simulation algorithms
   title: Kinetic Simulation Algorithm Ontology
   tracker: https://github.com/SED-ML/KiSAO/issues
+  usages:
+  - description: The Simulation Experiment Description Markup Language (SED-ML) is
+      a language for describing simulations and visualizations of their results.
+    examples:
+    - description: Several examples of simulations encoded in SED-ML
+      url: https://sed-ml.org/examples.html
+    type: annotation
+    user: https://sed-ml.org/
+  - description: BioSimulations is a repository of biosimulation projects.
+    examples:
+    - description: Simulation of a synthetic oscillatory biochemical network
+      url: https://biosimulations.org/projects/Repressilator-Elowitz-Nature-2000
+    type: annotation
+    user: https://biosimulations.org/
+  - description: runBioSimulations is a web application for execution biological simulations.
+    examples:
+    - description: Example simulation runs
+      url: https://run.biosimulations.org/runs?try=1
+    type: annotation
+    user: https://run.biosimulations.org/
+  - description: BioSimulators is a registry of biosimulation tools.
+    examples:
+    - description: tellurium is a software tool for kinetic simulation of biochemical
+        networks
+      url: https://biosimulators.org/simulators/tellurium/latest#tab=algorithms
+    seeAlso: https://arxiv.org/abs/2203.06732
+    type: annotation
+    user: https://biosimulators.org/
 - activity_status: active
   build:
     method: owl2obo
@@ -7370,7 +7502,7 @@ ontologies:
     orcid: 0000-0003-0705-9809
   description: Terms commonly used in Systems Biology, and in particular in computational
     modeling.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: http://www.ebi.ac.uk/sbo/
   id: sbo
   layout: ontology_detail
@@ -7443,6 +7575,16 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/scdo.owl
   - id: scdo.obo
     ontology_purl: http://purl.obolibrary.org/obo/scdo.obo
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/35363306
+    title: 'The Sickle Cell Disease Ontology: recent development and expansion of
+      the universal sickle cell knowledge representation.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/33021900
+    title: 'The Sickle Cell Disease Ontology: Enabling Collaborative Research and
+      Co-Designing of New Planetary Health Applications.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/31769834
+    title: 'The Sickle Cell Disease Ontology: enabling universal sickle cell-based
+      knowledge representation.'
   repository: https://github.com/scdodev/scdo-ontology
   tags:
   - disease
@@ -7795,7 +7937,7 @@ ontologies:
     orcid: 0000-0001-5985-7429
   description: Controlled vocabulary pertaining to RNA function and based on RNA sequences,
     secondary and three-dimensional structures.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: https://github.com/bgsu-rna/rnao
   id: rnao
   layout: ontology_detail
@@ -8286,7 +8428,7 @@ ontologies:
     email: bakerc@unb.ca
     label: Christipher Baker
   description: An ontology representation of the LIPIDMAPS nomenclature classification.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   id: lipro
   in_foundry: false
   is_obsolete: true
@@ -8520,7 +8662,7 @@ ontologies:
     email: john.garavelli@ebi.ac.uk
     label: John Garavelli
   description: For the description of covalent bonds in proteins.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: http://www.ebi.ac.uk/RESID/
   id: resid
   is_obsolete: true

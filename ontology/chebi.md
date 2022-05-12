@@ -19,7 +19,7 @@ contact:
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-domain: biochemistry
+domain: chemistry and biochemistry
 homepage: http://www.ebi.ac.uk/chebi
 page: http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual
 depicted_by: https://www.ebi.ac.uk/chebi/images/ChEBI_logo.png

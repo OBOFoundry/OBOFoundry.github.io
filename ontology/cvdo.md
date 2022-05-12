@@ -18,6 +18,9 @@ title: Cardiovascular Disease Ontology
 build:
   source_url: http://purl.obolibrary.org/obo/cvdo.owl
   method: owl2obo
+  publications:
+    - id: http://dx.doi.org/10.3233/978-1-61499-438-1-409
+      title: "The Cardiovascular Disease Ontology"
 tracker: https://github.com/OpenLHS/CVDO/issues
 activity_status: active
 repository: https://github.com/OpenLHS/CVDO

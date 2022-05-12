@@ -11,6 +11,7 @@ license:
   label: CC BY 4.0
 homepage: https://github.com/ufbmi/geographical-entity-ontology/wiki
 description: An ontology of geographical entities
+domain: environment
 products:
   - id: geo.owl
 title: Geographical Entity Ontology

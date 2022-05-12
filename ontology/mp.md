@@ -35,6 +35,9 @@ products:
     title: MP Base Module
     description: "The main ontology plus axioms connecting to select external ontologies, excluding axioms from the the external ontologies themselves."
     page: https://github.com/mgijax/mammalian-phenotype-ontology/releases/tag/current
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22961259
+    title: "The Mammalian Phenotype Ontology as a unifying standard for experimental and high-throughput phenotyping data"
 browsers:
   - label: MGI
     title: MGI MP Browser

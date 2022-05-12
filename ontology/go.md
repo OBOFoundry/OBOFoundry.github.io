@@ -131,6 +131,11 @@ usages:
 activity_status: active
 repository: https://github.com/geneontology/go-ontology
 preferredPrefix: GO
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/10802651
+    title: "Gene ontology: tool for the unification of biology. The Gene Ontology Consortium"
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/33290552
+    title: "The Gene Ontology resource: enriching a GOld mine"
 ---
 
 The goal of the GeneOntology (GO) project is to provide a uniformway to describe the functions of gene products from organisms across all kingdoms of life and thereby enable analysis of genomic data
