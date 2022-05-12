@@ -70,7 +70,7 @@ ontologies:
   depicted_by: https://www.ebi.ac.uk/chebi/images/ChEBI_logo.png
   description: A structured classification of molecular entities of biological interest
     focusing on 'small' chemical compounds.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: http://www.ebi.ac.uk/chebi
   id: chebi
   in_foundry_order: 1
@@ -614,7 +614,7 @@ ontologies:
   depicted_by: https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png
   description: An ontological representation of protein-related entities
   documentation: https://proconsortium.org/download/current/pro_readme.txt
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: http://proconsortium.org
   id: pr
   in_foundry_order: 1
@@ -1190,7 +1190,7 @@ ontologies:
     orcid: 0000-0001-7542-0286
   description: Includes terms for the descriptors commonly used in cheminformatics
     software applications and the algorithms which generate them.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: https://github.com/semanticchemistry/semanticchemistry
   id: cheminf
   layout: ontology_detail
@@ -1235,7 +1235,7 @@ ontologies:
     between chemical structures (small molecules, drugs) and what they do. This could
     be formalized using 'capable of', in the same way Uberon and the Cell Ontology
     link structures to processes.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: https://github.com/obophenotype/chiro
   id: chiro
   jobs:
@@ -2418,10 +2418,10 @@ ontologies:
   tracker: https://github.com/SCAI-BIO/EpilepsyOntology/issues
 - activity_status: active
   contact:
-    email: stoeckrt@pennmedicine.upenn.edu
-    github: cstoeckert
-    label: Chris Stoeckert
-    orcid: 0000-0002-5714-991X
+    email: jiezheng@pennmedicine.upenn.edu
+    github: zhengj2007
+    label: Jie Zheng
+    orcid: 0000-0002-2999-0103
   depicted_by: https://raw.githubusercontent.com/EuPathDB/communitysite/master/assets/images/VEuPathDB-logo-s.png
   description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector
     Genomics Resource (VEuPathDB; https://veupathdb.org).
@@ -3082,7 +3082,7 @@ ontologies:
     (no carbon bond positions or anomeric configurations). GNOme organizes these stable
     accessions for interative browsing, for text-based searching, and for automated
     reasoning with well-defined characterization levels.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: https://gnome.glyomics.org/
   id: gno
   layout: ontology_detail
@@ -3154,6 +3154,10 @@ ontologies:
     id: hancestro_bfo.owl
     ontology_purl: http://purl.obolibrary.org/obo/hancestro_bfo.owl
     title: HANCESTRO BFO
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/29448949
+    title: A standardized framework for representation of ancestry data in genomics
+      studies, with application to the NHGRI-EBI GWAS Catalog
   repository: https://github.com/EBISPOT/ancestro
   tags:
   - ancestry
@@ -3984,7 +3988,7 @@ ontologies:
     orcid: 0000-0002-0045-7698
   description: PSI-MOD is an ontology consisting of terms that describe protein chemical
     modifications
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: http://www.psidev.info/MOD
   id: mod
   layout: ontology_detail
@@ -4296,7 +4300,7 @@ ontologies:
     orcid: 0000-0002-8457-6693
   description: An ontology for Major Histocompatibility Complex (MHC) restriction
     in experiments
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: https://github.com/IEDB/MRO
   id: mro
   layout: ontology_detail
@@ -6075,7 +6079,7 @@ ontologies:
   depicted_by: http://sequenceontology.org/img/so_icon.png
   description: A structured controlled vocabulary for sequence annotation, for the
     exchange of annotation data and for the description of sequence objects in databases.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: http://www.sequenceontology.org/
   id: so
   layout: ontology_detail
@@ -6445,7 +6449,7 @@ ontologies:
   description: TOXic Process Ontology (TXPO) systematizes a wide variety of terms
     involving toxicity courses and processes. The first version of TXPO focuses on
     liver toxicity.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: https://toxpilot.nibiohn.go.jp/
   id: txpo
   layout: ontology_detail
@@ -7092,7 +7096,7 @@ ontologies:
     orcid: 0000-0003-4978-0864
   description: A structured controlled vocabulary for cross-linking reagents used
     with proteomics mass spectrometry.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: http://www.psidev.info/groups/controlled-vocabularies
   id: xlmod
   label: xlmod
@@ -7498,7 +7502,7 @@ ontologies:
     orcid: 0000-0003-0705-9809
   description: Terms commonly used in Systems Biology, and in particular in computational
     modeling.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: http://www.ebi.ac.uk/sbo/
   id: sbo
   layout: ontology_detail
@@ -7933,7 +7937,7 @@ ontologies:
     orcid: 0000-0001-5985-7429
   description: Controlled vocabulary pertaining to RNA function and based on RNA sequences,
     secondary and three-dimensional structures.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: https://github.com/bgsu-rna/rnao
   id: rnao
   layout: ontology_detail
@@ -8424,7 +8428,7 @@ ontologies:
     email: bakerc@unb.ca
     label: Christipher Baker
   description: An ontology representation of the LIPIDMAPS nomenclature classification.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   id: lipro
   in_foundry: false
   is_obsolete: true
@@ -8658,7 +8662,7 @@ ontologies:
     email: john.garavelli@ebi.ac.uk
     label: John Garavelli
   description: For the description of covalent bonds in proteins.
-  domain: biochemistry
+  domain: chemistry and biochemistry
   homepage: http://www.ebi.ac.uk/RESID/
   id: resid
   is_obsolete: true

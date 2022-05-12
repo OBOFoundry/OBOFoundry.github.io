@@ -49,6 +49,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Food-Biomarker Ontology (fobi): [FOBI: an ontology to represent food intake data and associate it with metabolomic data](https://www.ncbi.nlm.nih.gov/pubmed/32556148)
 - Foundational Model of Anatomy Ontology (subset) (fma): [Translating the Foundational Model of Anatomy into OWL](https://www.ncbi.nlm.nih.gov/pubmed/18688289)
 - Gene Ontology (go): [Gene ontology: tool for the unification of biology. The Gene Ontology Consortium](https://www.ncbi.nlm.nih.gov/pubmed/10802651)
+- Human Ancestry Ontology (hancestro): [A standardized framework for representation of ancestry data in genomics studies, with application to the NHGRI-EBI GWAS Catalog](https://www.ncbi.nlm.nih.gov/pubmed/29448949)
 - Human Disease Ontology (doid): [Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data](https://www.ncbi.nlm.nih.gov/pubmed/25348409)
 - Human Phenotype Ontology (hp): [The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease.](https://www.ncbi.nlm.nih.gov/pubmed/18950739)
 - Human developmental anatomy, abstract (ehdaa2): [A new ontology (structured hierarchy) of human developmental anatomy for the first 7 weeks (Carnegie stages 1-20).](https://www.ncbi.nlm.nih.gov/pubmed/22973865)

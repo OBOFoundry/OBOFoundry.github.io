@@ -39,7 +39,7 @@ _:b0    <http://www.w3.org/2000/01/rdf-schema#label>  "Barry Smith" ;
         <http://purl.org/dc/elements/1.1/title>  "Chemical Entities of Biological Interest" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/26467479> ;
-        <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/ebi-chebi/ChEBI/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/chebi.owl" ;
@@ -536,7 +536,7 @@ _:b19   <http://www.w3.org/2000/01/rdf-schema#label>  "Pankaj Jaiswal" ;
         <http://purl.org/dc/elements/1.1/title>  "PRotein Ontology (PRO)" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/27899649> ;
-        <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/PROconsortium/PRoteinOntology/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://bioportal.bioontology.org/ontologies/PR?p=classes&conceptid=http://purl.obolibrary.org/obo/PR_000000001> ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://proconsortium.org> ;
@@ -1154,7 +1154,7 @@ _:b58   <http://www.w3.org/2000/01/rdf-schema#label>  "Liliana Andres Hernandez"
         <http://purl.org/dc/elements/1.1/title>  "Chemical Information Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/21991315> ;
-        <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/semanticchemistry/semanticchemistry/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "https://groups.google.com/forum/#!forum/cheminf-ontology" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/cheminf.owl" ;
@@ -1189,7 +1189,7 @@ _:b60   <http://www.w3.org/2000/01/rdf-schema#label>  "Egon Willighagen" ;
         <http://purl.org/dc/elements/1.1/title>  "CHEBI Integrated Role Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/publicdomain/zero/1.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.26434/chemrxiv.12591221> ;
-        <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/chiro/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/chiro.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b62 ;
@@ -2228,8 +2228,8 @@ _:b119  <http://www.w3.org/2000/01/rdf-schema#label>  "Alpha Tom Kodamullil" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/eupath.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/VEuPathDB-ontology/VEuPathDB-ontology> .
 
-_:b120  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Stoeckert" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "stoeckrt@pennmedicine.upenn.edu" .
+_:b120  <http://www.w3.org/2000/01/rdf-schema#label>  "Jie Zheng" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "jiezheng@pennmedicine.upenn.edu" .
 
 <http://purl.obolibrary.org/obo/eupath.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/eupath.owl" .
@@ -2726,7 +2726,7 @@ _:b145  <http://www.w3.org/2000/01/rdf-schema#label>  "Bill Hogan" ;
         <http://purl.org/dc/elements/1.1/description>  "GlyTouCan provides stable accessions for glycans described at varyious degrees of characterization, including compositions (no linkage) and topologies (no carbon bond positions or anomeric configurations). GNOme organizes these stable accessions for interative browsing, for text-based searching, and for automated reasoning with well-defined characterization levels." ;
         <http://purl.org/dc/elements/1.1/title>  "Glycan Naming and Subsumption Ontology (GNOme)" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
-        <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/glygen-glycan-data/GNOme/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://gnome.glyomics.org/StructureBrowser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2> ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://gnome.glyomics.org/CompositionBrowser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2> ;
@@ -2768,6 +2768,7 @@ _:b147  <http://www.w3.org/2000/01/rdf-schema#label>  "Nathan Edwards" ;
         <http://purl.org/dc/elements/1.1/description>  "The Human Ancestry Ontology (HANCESTRO) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide association studies." ;
         <http://purl.org/dc/elements/1.1/title>  "Human Ancestry Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/29448949> ;
         <http://purl.org/dc/terms/1.1/theme>  "organisms" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/EBISPOT/ancestro/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hancestro.owl" ;
@@ -2775,6 +2776,9 @@ _:b147  <http://www.w3.org/2000/01/rdf-schema#label>  "Nathan Edwards" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hancestro.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hancestro_bfo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/EBISPOT/ancestro> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/29448949>
+        <http://purl.org/dc/elements/1.1/title>  "A standardized framework for representation of ancestry data in genomics studies, with application to the NHGRI-EBI GWAS Catalog" .
 
 _:b148  <http://www.w3.org/2000/01/rdf-schema#label>  "Danielle Welter" ;
         <http://xmlns.com/foaf/0.1/mbox>  "danielle.welter@uni.lu" .
@@ -3504,7 +3508,7 @@ _:b192  <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
         <http://purl.org/dc/elements/1.1/title>  "Protein modification" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/18688235> ;
-        <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/HUPO-PSI/psi-mod-CV/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mod.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b194 ;
@@ -3703,7 +3707,7 @@ _:b200  <http://www.w3.org/2000/01/rdf-schema#label>  "Mathias Brochhausen" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology for Major Histocompatibility Complex (MHC) restriction in experiments" ;
         <http://purl.org/dc/elements/1.1/title>  "MHC Restriction Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/3.0/> ;
-        <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/IEDB/MRO/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mro.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b201 ;
@@ -4425,7 +4429,7 @@ _:b233  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqunh He" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/15892872> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/20226267> ;
-        <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/The-Sequence-Ontology/SO-Ontologies/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "https://sourceforge.net/p/song/mailman/song-devel/" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/so.owl" ;
@@ -5205,7 +5209,7 @@ _:b274  <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
         <http://purl.org/dc/elements/1.1/title>  "Toxic Process Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/3.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/32883995> ;
-        <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/txpo-ontology/TXPO/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://bioportal.bioontology.org/ontologies/TXPO?p=classes> ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://toxpilot.nibiohn.go.jp/> ;
@@ -5577,7 +5581,7 @@ _:b39   <http://www.w3.org/2000/01/rdf-schema#label>  "Jennifer Smith" ;
         <http://purl.org/dc/elements/1.1/description>  "A structured controlled vocabulary for cross-linking reagents used with proteomics mass spectrometry." ;
         <http://purl.org/dc/elements/1.1/title>  "HUPO-PSI cross-linking and derivatization reagents controlled vocabulary" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/3.0/> ;
-        <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/HUPO-PSI/xlmod-CV/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "psidev-ms-vocab@lists.sourceforge.net" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "xlmod" ;
@@ -5841,7 +5845,7 @@ _:b299  <http://www.w3.org/2000/01/rdf-schema#label>  "Nicolas Gambardella" ;
         <http://purl.org/dc/elements/1.1/description>  "Terms commonly used in Systems Biology, and in particular in computational modeling." ;
         <http://purl.org/dc/elements/1.1/title>  "Systems Biology Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://opensource.org/licenses/Artistic-2.0> ;
-        <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/EBI-BioModels/SBO/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/sbo.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b301 ;
@@ -6251,7 +6255,7 @@ _:b324  <http://www.w3.org/2000/01/rdf-schema#label>  "Christos (Kitsos) Louis" 
         <http://purl.org/dc/elements/1.1/description>  "Controlled vocabulary pertaining to RNA function and based on RNA sequences, secondary and three-dimensional structures." ;
         <http://purl.org/dc/elements/1.1/title>  "RNA ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
-        <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/BGSU-RNA/rnao/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://bgsu-rna.github.io/rnao/> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/rnao.owl" ;
@@ -6663,7 +6667,7 @@ _:b358  <http://www.w3.org/2000/01/rdf-schema#label>  "InterPro Help" ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b359 ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology representation of the LIPIDMAPS nomenclature classification." ;
         <http://purl.org/dc/elements/1.1/title>  "Lipid Ontology" ;
-        <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b360 .
 
 _:b359  <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
@@ -6865,7 +6869,7 @@ _:b377  <http://www.w3.org/2000/01/rdf-schema#label>  "Satya S. Sahoo" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/description>  "For the description of covalent bonds in proteins." ;
         <http://purl.org/dc/elements/1.1/title>  "Protein covalent bond" ;
-        <http://purl.org/dc/terms/1.1/theme>  "biochemistry" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b378 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.ebi.ac.uk/RESID/> .
 
