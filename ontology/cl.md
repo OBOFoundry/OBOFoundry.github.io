@@ -69,12 +69,24 @@ usages:
     publications:
     - id: https://doi.org/10.1101/2021.10.10.463703
       title: "Brain Data Standards Ontology: A data-driven ontology of transcriptomically defined cell types in the primary motor cortex"
-   - user: https://hubmapconsortium.org/
+  - user: https://hubmapconsortium.org/
     type: annotation
     description: HuBMAP develops tools to create an open, global atlas of the human body at the cellular level. The Cell Ontology is used in annotating cell types in the tools developed.
     publications:
     - id: https://pubmed.ncbi.nlm.nih.gov/31597973/
       title: "The human body at cellular resolution: the NIH Human Biomolecular Atlas Program."
+  - user: https://www.humancellatlas.org/
+    type: annotation
+    description: The Human Cell Atlas (HCA) is an international group of researchers using a combination of these new technologies to create cellular reference maps. The HCA use CL to annotated cells in their reference maps. 
+    publications:
+    - id: https://pubmed.ncbi.nlm.nih.gov/29206104/
+      title: "The Human Cell Atlas"
+  - user: https://www.ebi.ac.uk/gxa/home
+    type: annotation
+    description: The EBI single cell expression atlas is an extension to EBI expression atlas that displays gene expression in single cells. Cell types in the single cell expression atlas linked with terms from the Cell Ontology.
+    publications:
+    - id: https://pubmed.ncbi.nlm.nih.gov/31665515/
+      title: "Expression Atlas update: from tissues to single cells"
   - user: https://www.encodeproject.org/
     seeAlso: https://www.biosharing.org/biodbcore-000034
     type: annotation
@@ -113,7 +125,7 @@ Uberon and various phenotype ontologies.
 
 ## Applications
 
-The following are some applications that uses CL along with their publications: 
+The following are some applications of the cell ontology along with their publications: 
 
 **HuBMAP**
 
