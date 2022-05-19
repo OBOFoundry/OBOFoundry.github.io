@@ -77,7 +77,7 @@ usages:
       title: "The human body at cellular resolution: the NIH Human Biomolecular Atlas Program."
   - user: https://www.humancellatlas.org/
     type: annotation
-    description: The Human Cell Atlas (HCA) is an international group of researchers using a combination of these new technologies to create cellular reference maps. The HCA use CL to annotated cells in their reference maps. 
+    description: The Human Cell Atlas (HCA) is an international group of researchers using a combination of these new technologies to create cellular reference maps. The HCA use CL to annotated cells in their reference maps.
     publications:
     - id: https://pubmed.ncbi.nlm.nih.gov/29206104/
       title: "The Human Cell Atlas"
