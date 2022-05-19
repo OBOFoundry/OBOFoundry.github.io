@@ -73,19 +73,19 @@ usages:
     type: annotation
     description: HuBMAP develops tools to create an open, global atlas of the human body at the cellular level. The Cell Ontology is used in annotating cell types in the tools developed.
     publications:
-      - id: https://pubmed.ncbi.nlm.nih.gov/31597973
+      - id: https://www.ncbi.nlm.nih.gov/pubmed/31597973
         title: "The human body at cellular resolution: the NIH Human Biomolecular Atlas Program."
   - user: https://www.humancellatlas.org/
     type: annotation
     description: The Human Cell Atlas (HCA) is an international group of researchers using a combination of these new technologies to create cellular reference maps. The HCA use CL to annotated cells in their reference maps.
     publications:
-      - id: https://pubmed.ncbi.nlm.nih.gov/29206104
+      - id: https://www.ncbi.nlm.nih.gov/pubmed/29206104
         title: "The Human Cell Atlas"
   - user: https://www.ebi.ac.uk/gxa/home
     type: annotation
     description: The EBI single cell expression atlas is an extension to EBI expression atlas that displays gene expression in single cells. Cell types in the single cell expression atlas linked with terms from the Cell Ontology.
     publications:
-      - id: https://pubmed.ncbi.nlm.nih.gov/31665515
+      - id: https://www.ncbi.nlm.nih.gov/pubmed/31665515
         title: "Expression Atlas update: from tissues to single cells"
   - user: https://www.encodeproject.org/
     seeAlso: https://www.biosharing.org/biodbcore-000034
