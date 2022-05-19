@@ -40,6 +40,8 @@ dependencies:
   - id: ro
   - id: chebi
   - id: pato
+  - id: pr
+  - id: ncbitaxon
 canonical: cl.owl
 products:
   - id: cl.owl
@@ -47,7 +49,7 @@ products:
     description: Complete ontology, plus inter-ontology axioms, and imports modules
     format: owl-rdf/xml
     is_canonical: true
-    uses: [uberon, chebi, go, pr, pato]
+    uses: [uberon, chebi, go, pr, pato, ncbitaxon, ro]
   - id: cl.obo
     title: CL obo format edition
     description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
@@ -61,10 +63,22 @@ products:
     title: CL base module
     description: complete CL but with no imports or external axioms
 usages:
+  - user: https://biccn.org/
+    type: annotation
+    description: The BICCN created a high-resolution atlas of cell types in the primary motor based on single cell transcriptomics. These cell types are represented in the brain data standards ontology which anchors to cell types in the cell ontology.
+    publications:
+    - id: https://doi.org/10.1101/2021.10.10.463703
+      title: "Brain Data Standards Ontology: A data-driven ontology of transcriptomically defined cell types in the primary motor cortex"
+   - user: https://hubmapconsortium.org/
+    type: annotation
+    description: HuBMAP develops tools to create an open, global atlas of the human body at the cellular level. The Cell Ontology is used in annotating cell types in the tools developed.
+    publications:
+    - id: https://pubmed.ncbi.nlm.nih.gov/31597973/
+      title: "The human body at cellular resolution: the NIH Human Biomolecular Atlas Program."
   - user: https://www.encodeproject.org/
     seeAlso: https://www.biosharing.org/biodbcore-000034
     type: annotation
-    description: The National Human Genome Research Institute (NHGRI) launched a public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September 2003, to carry out a project to identify all functional elements in the human genome sequence. The ENCODE DCC users Uberon to annotate samples
+    description: The National Human Genome Research Institute (NHGRI) launched a public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September 2003, to carry out a project to identify all functional elements in the human genome sequence. The ENCODE DCC uses Uberon to annotate samples
     publications:
       - id: https://www.ncbi.nlm.nih.gov/pubmed/25776021
         title: "Ontology application and use at the ENCODE DCC"
@@ -99,21 +113,39 @@ Uberon and various phenotype ontologies.
 
 ## Applications
 
-One of the main uses of the CL is to describe samples used in
-transcriptomic and functional genomics studies, such as FANTOM5,
-ENCODE and LINCS.
+The following are some applications that uses CL along with their publications: 
 
-This is described in the following publications:
+**HuBMAP**
+
+HuBMAP Consortium (2019) The human body at cellular resolution: the NIH Human Biomolecular Atlas Program. Nature, 574, 187–192
+
+**Human Cell Atlas (HCA)**
+
+Regev,A., Teichmann,S.A., Lander,E.S., Amit,I., Benoist,C., Birney,E., Bodenmiller,B., Campbell,P., Carninci,P., Clatworthy,M., et al. (2017) The Human Cell Atlas. Elife, 6.
+
+**Single Cell Expression Atlas**
+
+Papatheodorou,I., Moreno,P., Manning,J., Fuentes,A.M.-P., George,N., Fexova,S., Fonseca,N.A., Füllgrabe,A., Green,M., Huang,N., et al. (2020) Expression Atlas update: from tissues to single cells. Nucleic Acids Res., 48, D77–D83.
+
+**BRAIN Initiative Cell Census Network (BICCN)/Brain Data Standards Ontology**
+
+Tan,S.Z.K., Kir,H., Aevermann,B., Gillespie,T., Hawrylycz,M., Lein,E., Matentzoglu,N., Miller,J., Mollenkopf,T.S., Mungall,C.J., et al. (2021) Brain Data Standards Ontology: A data-driven ontology of transcriptomically defined cell types in the primary motor cortex. bioRxiv, 10.1101/2021.10.10.463703.
+
+**ENCODE**
 
 Malladi, V. S., Erickson, D. T., Podduturi, N. R., Rowe, L. D., Chan,
 E. T., Davidson, J. M., … Hong, E. L. (2015). Ontology application and
 use at the ENCODE DCC. Database : The Journal of Biological Databases
 and Curation, 2015, bav010–. [doi:10.1093/database/bav010](https://doi.org/doi:10.1093/database/bav010)
 
+**FANTOMS**
+
 Lizio, M., Harshbarger, J., Shimoji, H., Severin, J., Kasukawa, T.,
 Sahin, S., … Kawaji, H. (2015). Gateways to the FANTOM5 promoter level
 mammalian expression atlas. Genome Biology, 16(1),
 22. [doi:10.1186/s13059-014-0560-6](https://doi.org/doi:10.1186/s13059-014-0560-6)
+
+**LINCS**
 
 [Metadata Standard and Data Exchange Specifications
 to Describe, Model, and Integrate Complex and Diverse High-Throughput
