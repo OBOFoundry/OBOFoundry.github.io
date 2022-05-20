@@ -66,24 +66,38 @@ usages:
   - user: https://biccn.org/
     type: annotation
     description: The BICCN created a high-resolution atlas of cell types in the primary motor based on single cell transcriptomics. These cell types are represented in the brain data standards ontology which anchors to cell types in the cell ontology.
+    examples:
+      - url: https://knowledge.brain-map.org/celltypes/CCN202002013/CS202002013_193
+       description: "cell type card of a cell type linked to a PCL cell type (L2/3 IT primary motor cortex glutamatergic neuron) which is a subclass of cell types in CL (CL:4023041)"
+      - url: https://www.ebi.ac.uk/ols/ontologies/pcl/terms?iri=http://purl.obolibrary.org/obo/PCL_0011193
+        description: "PCL cell type used in cell type cards linked directly to CL cell types"
     publications:
       - id: https://doi.org/10.1101/2021.10.10.463703
         title: "Brain Data Standards Ontology: A data-driven ontology of transcriptomically defined cell types in the primary motor cortex"
   - user: https://hubmapconsortium.org/
     type: annotation
     description: HuBMAP develops tools to create an open, global atlas of the human body at the cellular level. The Cell Ontology is used in annotating cell types in the tools developed.
+    examples:
+      - url: https://hubmapconsortium.github.io/ccf-asct-reporter/vis?selectedOrgans=heart-v1.1&playground=false
+        description: "ASCT+B reporter showing CL being used to annotate cell types in the heart"
     publications:
       - id: https://www.ncbi.nlm.nih.gov/pubmed/31597973
         title: "The human body at cellular resolution: the NIH Human Biomolecular Atlas Program."
   - user: https://www.humancellatlas.org/
     type: annotation
-    description: The Human Cell Atlas (HCA) is an international group of researchers using a combination of these new technologies to create cellular reference maps. The HCA use CL to annotated cells in their reference maps.
+    description: The Human Cell Atlas (HCA) is an international group of researchers using a combination of these new technologies to create cellular reference maps. The HCA use CL to annotate cells in their reference maps.
+    examples:
+      - url: https://singlecell.broadinstitute.org/single_cell?type=study&page=1&facets=cell_type%3ACL_0000236&scpbr=human-cell-atlas-main-collection
+        description: "HCA collection studies that are related B cell (CL:0000236) that is filtered through CL annotation"
     publications:
       - id: https://www.ncbi.nlm.nih.gov/pubmed/29206104
         title: "The Human Cell Atlas"
   - user: https://www.ebi.ac.uk/gxa/home
     type: annotation
     description: The EBI single cell expression atlas is an extension to EBI expression atlas that displays gene expression in single cells. Cell types in the single cell expression atlas linked with terms from the Cell Ontology.
+    examples:
+      - url: https://www.ebi.ac.uk/gxa/experiments/E-MTAB-3578/Results
+        description: "RNA-Seq CAGE (Cap Analysis of Gene Expression) analysis of mice cells in RIKEN FANTOM5 project annotated using cell types from CL"
     publications:
       - id: https://www.ncbi.nlm.nih.gov/pubmed/31665515
         title: "Expression Atlas update: from tissues to single cells"
