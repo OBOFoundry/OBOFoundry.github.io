@@ -68,7 +68,7 @@ usages:
     description: The BICCN created a high-resolution atlas of cell types in the primary motor based on single cell transcriptomics. These cell types are represented in the brain data standards ontology which anchors to cell types in the cell ontology.
     examples:
       - url: https://knowledge.brain-map.org/celltypes/CCN202002013/CS202002013_193
-       description: "cell type card of a cell type linked to a PCL cell type (L2/3 IT primary motor cortex glutamatergic neuron) which is a subclass of cell types in CL (CL:4023041)"
+        description: "cell type card of a cell type linked to a PCL cell type (L2/3 IT primary motor cortex glutamatergic neuron) which is a subclass of cell types in CL (CL:4023041)"
       - url: https://www.ebi.ac.uk/ols/ontologies/pcl/terms?iri=http://purl.obolibrary.org/obo/PCL_0011193
         description: "PCL cell type used in cell type cards linked directly to CL cell types"
     publications:
