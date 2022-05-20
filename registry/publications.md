@@ -64,6 +64,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Ontology for Nutritional Studies (ons): [ONS: an ontology for a standardized description of interventions and observational studies in nutrition](https://www.ncbi.nlm.nih.gov/pubmed/29736190)
 - Ontology of Medically Related Social Entities (omrse): [The ontology of medically related social entities: recent developments](https://www.ncbi.nlm.nih.gov/pubmed/27406187)
 - PRotein Ontology (PRO) (pr): [Protein Ontology (PRO): enhancing and scaling up the representation of protein entities](https://www.ncbi.nlm.nih.gov/pubmed/27899649)
+- Pathogen Host Interaction Phenotype Ontology (phipo): [PHI-base in 2022: a multi-species phenotype database for Pathogen-Host Interactions](https://www.ncbi.nlm.nih.gov/pubmed/34788826)
 - Pathway ontology (pw): [The Rat Genome Database pathway portal.](https://www.ncbi.nlm.nih.gov/pubmed/21478484)
 - Phenotype And Trait Ontology (pato): [The anatomy of phenotype ontologies: principles, properties and applications](https://www.ncbi.nlm.nih.gov/pubmed/28387809)
 - Plant Environment Ontology (eo): [Ontologies as integrative tools for plant science.](https://www.ncbi.nlm.nih.gov/pubmed/22847540)

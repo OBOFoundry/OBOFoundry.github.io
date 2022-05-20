@@ -224,6 +224,8 @@ _:b4    <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/ro> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/chebi> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/pato> ;
+        <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/pr> ;
+        <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/ncbitaxon> ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b8 ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_33208> ;
         <http://purl.org/dc/elements/1.1/description>  "The Cell Ontology is a structured controlled vocabulary for cell types in animals." ;
@@ -2707,6 +2709,7 @@ _:b144  <http://www.w3.org/2000/01/rdf-schema#label>  "Matthew Brush" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of geographical entities" ;
         <http://purl.org/dc/elements/1.1/title>  "Geographical Entity Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/theme>  "environment" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/ufbmi/geographical-entity-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/geo.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b145 ;
@@ -4559,6 +4562,7 @@ _:b31   <http://www.w3.org/2000/01/rdf-schema#label>  "Pankaj Jaiswal" ;
         <http://purl.org/dc/elements/1.1/description>  "PHIPO is a formal ontology of species-neutral phenotypes observed in pathogen-host interactions." ;
         <http://purl.org/dc/elements/1.1/title>  "Pathogen Host Interaction Phenotype Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/34788826> ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/PHI-base/phipo/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/phipo.owl" ;
@@ -4568,6 +4572,9 @@ _:b31   <http://www.w3.org/2000/01/rdf-schema#label>  "Pankaj Jaiswal" ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/PHI-base/phipo> .
 
 _:b241  <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/PHI-base/phipo.git" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/34788826>
+        <http://purl.org/dc/elements/1.1/title>  "PHI-base in 2022: a multi-species phenotype database for Pathogen-Host Interactions" .
 
 _:b242  <http://www.w3.org/2000/01/rdf-schema#label>  "Alayne Cuzick" ;
         <http://xmlns.com/foaf/0.1/mbox>  "alayne.cuzick@rothamsted.ac.uk" .
