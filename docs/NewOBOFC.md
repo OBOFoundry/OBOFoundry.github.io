@@ -4,8 +4,6 @@ id: OFOCMember
 title: Becoming a member of the OBO Operations Committee
 ---
 
-# Becoming a member of the OBO Foundry Operations Committee (OFOC)
-
 Note: This is _not_ a formal process, but rather a piece of documentation to make the current _informal_ process more transparent. 
 
 The OBO Foundry Operations Committee aims to facilitate the flow of operations within the OBO Foundry.
