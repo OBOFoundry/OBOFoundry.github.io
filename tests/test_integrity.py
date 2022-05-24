@@ -129,3 +129,17 @@ class TestIntegrity(unittest.TestCase):
                 self.assertFalse(
                     identifier.endswith(f".v{v}"), msg="Please use an unversioned DOI"
                 )
+
+    def test_replacements(self):
+        """Test that the replaced by field doesn't point to a non-active ontology."""
+        inactive_prefixes = {
+            prefix
+            for prefix, record in self.ontologies.items()
+            if record["activity_status"] != "active"
+        }
+        for prefix, record in self.ontologies.items():
+            replaced_by = record.get("replaced_by")
+            if replaced_by is None:
+                continue
+            with self.subTest(prefix=prefix):
+                self.assertNotIn(replaced_by, inactive_prefixes, msg="")

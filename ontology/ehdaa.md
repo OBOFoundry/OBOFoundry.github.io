@@ -10,7 +10,6 @@ taxon:
   label: Homo sapiens
 homepage:
 is_obsolete: true
-replaced_by: ehdaa2
 activity_status: inactive
 ---
 

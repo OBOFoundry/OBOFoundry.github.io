@@ -10,7 +10,6 @@ taxon:
   label: Homo sapiens
 homepage: http://genex.hgu.mrc.ac.uk/
 is_obsolete: true
-replaced_by: ehdaa2
 activity_status: inactive
 ---
 
