@@ -39,8 +39,8 @@ title: Ontology Tools and Resources
 ## Ontology Analysis
 
 - [OBO Dashboard](https://dashboard.obofoundry.org): An assesment of OBO Foundry ontologies' conformance to OBO Foundry principles 
-- [OBO Community Health Report](https://github.com/cthoyt/obo-community-health): A self-updating assessment of the quality of metadata, responsiveness of the maintainers, and the overall community engagement for each OBO Foundry ontology.
-- [Ontology Quality Assessment](https://github.com/cthoyt/oquat): A self-updating assesment of the semantic quality of OBO Foundry ontologies and beyond (i.e., using known prefixes, using standard identifiers, etc.) 
+- [OBO Community Health Report](https://cthoyt.com/obo-community-health): A self-updating assessment of the quality of metadata, responsiveness of the maintainers, and the overall community engagement for each OBO Foundry ontology.
+- [Ontology Quality Assessment](https://cthoyt.com/oquat): A self-updating assesment of the semantic quality of OBO Foundry ontologies and beyond (i.e., using known prefixes, using standard identifiers, etc.) 
 
 ## Relevant Publications/blogs
 
