@@ -17,17 +17,17 @@ OBO projects share their ontologies using files in OWL or OBO format (see [Princ
 Recommendations and Requirements
 -------
 
-In addition to an IRI specifying the current release (see [Principle 3](https://obofoundry.org/principles/fp-003-uris.html)), each official release MUST have a unique [version IRI](https://www.w3.org/TR/owl2-syntax/#Ontology_IRI_and_Version_IRI) that resolves to the specific ontology artifact indicated. Consumers can then use the version IRI to uniquely identify which official release of the ontology they used, and to retrieve unaltered copies of the file(s). The versionIRI is constructed using (1) an ontology _base prefix_ (2) a version _identifier_ and (3) a path to a particular version _product_ or artifact.
+In addition to an IRI specifying the current release (see [Principle 3](https://obofoundry.org/principles/fp-003-uris.html)), each official release MUST have a unique version IRI that resolves to the specific ontology artifact indicated. Consumers can then use the version IRI to uniquely identify which official release of the ontology they used, and to retrieve unaltered copies of the file(s). A _version IRI_ is a full path that MUST resolve to the particular version of the ontology artifact. Both the version IRI and the corresponding artifact MUST contain an identical _version identifier_ string.
 
-Version identifiers for the ontology artifacts themselves SHOULD be of the form “YYYY-MM-DD” (that is, a date conforming to ISO-8601), OR use a numbering system (such as semantic versioning, i.e, of the form "NN.n"), but in any case each MUST associate with a <i>distinct</i> official release. The date versioning system is preferred, as it meshes with the requirement that version IRIs be specified using dated PURLs (see below).
+Version identifiers MUST either be of the form “YYYY-MM-DD” (that is, a date) OR use a numbering system (such as semantic versioning, i.e, of the form "NN.n"). Each version MUST associate with a <b>distinct</b> official release. The date versioning system is preferred, as it meshes with the requirement that version IRIs be specified using dated PURLs (see below).
 
-If a date-based version identifier is used, it MUST conform to ISO-8601, ie. “YYYY-MM-DD“. Variants of this such as (a) using two digits for year instead of four (b) using one digit for month or year (c) using a delimiter other than a hyphen (d) any other ordering such as day/month/year or month/day/year (c) any other variant MUST NOT be used.
+If a date-based version identifier is used, it MUST conform to [ISO-8601](https://www.iso.org/iso-8601-date-and-time-format.html), ie. “YYYY-MM-DD“. Variants of this--such as (a) using two digits for year instead of four (b) using one digit for month or year (c) using a delimiter other than a hyphen (d) any other ordering such as day/month/year or month/day/year (c) any other variant--MUST NOT be used.
 
-All OBO projects MUST also have versioned PURLs that resolve to the corresponding artifacts specified by the versionIRIs, in perpetuity. If the files are moved, the PURL MUST be updated to resolve to the new location.
+All OBO projects MUST also have versioned PURLs that resolve to the corresponding artifacts specified by the version IRIs, in perpetuity. If the files are moved, the PURL MUST be updated to resolve to the new location.
 
 Note that the content of official release files MUST NOT be changed. For example, if a bug is found in some official released file for some ontology, the bug MUST NOT be fixed by changing the file(s) for that official release. Instead the bug fixes should be included in a new official release, with new files, and consumers can switch to the new release.
 
-Additionally, each ontology SHOULD have an owl:versionInfo attached. When this is attached, it MUST correspond to the version Info. 
+Additionally, each ontology SHOULD have an owl:versionInfo statement. When this is stated, it MUST correspond to the version Info. 
 
 Implementation
 -------
@@ -66,7 +66,7 @@ CHEBI is an example of an OBO ontology that uses a non-date based system system 
 
 Criteria for Review
 --------
-The released ontology MUST have a version IRI. The version IRI SHOULD follow a dated format (NS/YYYY-MM-DD/ontology.owl) OR follow a semantic versioning system (e.g., NS/NN.n/ontology.owl).
+The released ontology MUST have a version IRI. The version IRI MUST use a date format (NS/YYYY-MM-DD/ontology.owl) OR use a semantic versioning format (e.g., NS/NN.n/ontology.owl). The version IRI MUST resolve to an ontology artifact that is associated with the same version identifier as used in the version IRI.
 
 [This check is automatically validated.](checks/fp_004)
 
