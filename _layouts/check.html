@@ -28,7 +28,7 @@ layout: default
         </li>
         {% endfor %}
         </ul>
-
+{% if p.id %}
         <div class="btn-group" role="group" aria-label="Source">
           <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/principles/{{page.id}}.md">
             <button type="button" 
@@ -50,6 +50,7 @@ layout: default
           </a>
           <!-- <button type="button" class="btn btn-default">Help</button> -->
         </div>
+{% endif %}
         <div>
           This page is generated via <a href="{{site.repo_src}}_layouts/principle.html">_layouts/check.html</a>. See <a href="/faq/how-do-i-edit-content.html">edit guide</a>
         </div>
