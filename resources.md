@@ -1,11 +1,8 @@
 ---
 layout: doc
 id: resources
-title: Resources
+title: Ontology Tools and Resources
 ---
-
-# Ontology Tools and Resources
-
 ## Ontology Browsers
 
 - [OBO Foundry](http://www.obofoundry.org/)
