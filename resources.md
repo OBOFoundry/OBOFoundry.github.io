@@ -1,12 +1,10 @@
 ---
 layout: doc
 id: resources
-title: Resources
+title: Ontology Tools and Resources
 ---
-
-# Ontology Tools and Resources
-
 ## Ontology Browsers
+
 - [OBO Foundry](http://www.obofoundry.org/)
 - [BioPortal](http://bioportal.bioontology.org/)
 - [Ontology Lookup Service](https://www.ebi.ac.uk/ols/index)
@@ -16,6 +14,7 @@ title: Resources
 - [Linked Open Vocabularies](https://lov.linkeddata.es/dataset/lov/)
 
 ## Tutorials
+
 - [OBO Semantic Engineering Training](https://oboacademy.github.io/obook/)
 - [Introduction to Ontologies](https://github.com/prog4biol/pfb2018/blob/master/workshops/Ontologies/IntroToOntologies_CSH_2018-10-28g.pdf): slides from Cold Spring Harbor workshop, October 2018, by Nicole Vasilevsky.
 - [Ontology 101 Tutorial](http://icbo2018.cgrb.oregonstate.edu/node/19): from International Conference on Biological Ontology (ICBO) 2018
@@ -37,7 +36,14 @@ title: Resources
 - [Ontofox](http://ontofox.hegroup.org/): An ontology term and relation extraction and reuse tool.
 - [Ubergraph](https://github.com/INCATools/ubergraph): A sparql endpoint with many OBO ontologies loaded and pre-reasoned with simple triples materialized
 
+## Ontology Analysis
+
+- [OBO Dashboard](https://dashboard.obofoundry.org): An assesment of OBO Foundry ontologies' conformance to OBO Foundry principles 
+- [OBO Community Health Report](https://cthoyt.com/obo-community-health): A self-updating assessment of the quality of metadata, responsiveness of the maintainers, and the overall community engagement for each OBO Foundry ontology.
+- [Ontology Quality Assessment](https://cthoyt.com/oquat): A self-updating assesment of the semantic quality of OBO Foundry ontologies and beyond (i.e., using known prefixes, using standard identifiers, etc.) 
+
 ## Relevant Publications/blogs
+
 - [The OBO Foundry: coordinated evolution of ontologies to support biomedical data integration](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2814061/) (Smith et al., 2007). Nat Biotechnol 2007 Nov;25(11):1251–1255. http://dx.doi.org/10.1038/nbt1346
 - [MIRO: guidelines for minimum information for the reporting of an ontology](https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-017-0172-7) (2018). Nicolas Matentzoglu, James Malone, Chris Mungall and Robert Stevens, Journal of Biomedical Semantics 2018 9:6, https://doi.org/10.1186/s13326-017-0172-7
 - [Monkeying around with OWL](https://douroucouli.wordpress.com/): a technical blog on ontologies and ontology engineering by Chris Mungall.
