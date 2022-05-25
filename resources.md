@@ -46,6 +46,7 @@ title: Resources
 - [Ontology Quality Assessment](https://github.com/cthoyt/oquat): A self-updating assesment of the semantic quality of OBO Foundry ontologies and beyond (i.e., using known prefixes, using standard identifiers, etc.) 
 
 ## Relevant Publications/blogs
+
 - [The OBO Foundry: coordinated evolution of ontologies to support biomedical data integration](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2814061/) (Smith et al., 2007). Nat Biotechnol 2007 Nov;25(11):1251–1255. http://dx.doi.org/10.1038/nbt1346
 - [MIRO: guidelines for minimum information for the reporting of an ontology](https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-017-0172-7) (2018). Nicolas Matentzoglu, James Malone, Chris Mungall and Robert Stevens, Journal of Biomedical Semantics 2018 9:6, https://doi.org/10.1186/s13326-017-0172-7
 - [Monkeying around with OWL](https://douroucouli.wordpress.com/): a technical blog on ontologies and ontology engineering by Chris Mungall.
