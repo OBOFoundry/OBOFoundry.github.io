@@ -947,6 +947,7 @@ ontologies:
     label: Andrew G. McArthur
     orcid: 0000-0002-1142-3063
   description: Antibiotic resistance genes and mutations
+  domain: microbiology
   homepage: https://github.com/arpcard/aro
   id: aro
   layout: ontology_detail
@@ -1107,6 +1108,7 @@ ontologies:
     orcid: 0000-0002-8688-6599
   description: a formalization of concepts and relations relevant to evolutionary
     comparative analysis
+  domain: organisms
   homepage: https://github.com/evoinfo/cdao
   id: cdao
   layout: ontology_detail
@@ -1283,6 +1285,7 @@ ontologies:
     represent and standardize various aspects of coronavirus infectious diseases,
     including their etiology, transmission, epidemiology, pathogenesis, diagnosis,
     prevention, and treatment.
+  domain: health
   homepage: https://github.com/cido-ontology/cido
   id: cido
   layout: ontology_detail
@@ -1306,6 +1309,7 @@ ontologies:
     label: Frédéric Bastian
     orcid: 0000-0002-9415-5104
   description: An ontology to capture confidence information about annotations.
+  domain: information
   homepage: https://github.com/BgeeDB/confidence-information-ontology
   id: cio
   layout: ontology_detail
@@ -1523,6 +1527,7 @@ ontologies:
   - id: ncbitaxon
   description: An ontology to standardize and integrate cell line information and
     to support computer-assisted reasoning.
+  domain: anatomy and development
   homepage: http://www.clo-ontology.org
   id: clo
   layout: ontology_detail
@@ -1777,6 +1782,7 @@ ontologies:
     Thereby covering clinicaltrails.gov. CoreCTO will serve as a basic ontology to
     generate extended versions for specific applications such as annotation of variables
     in study documents from clinical trials.
+  domain: health
   homepage: https://github.com/ClinicalTrialOntology/CTO/
   id: cto
   layout: ontology_detail
@@ -1904,6 +1910,7 @@ ontologies:
     orcid: 0000-0003-1834-3856
   description: The Potential Drug-drug Interaction and Potential Drug-drug Interaction
     Evidence Ontology
+  domain: chemistry and biochemistry
   homepage: https://github.com/DIDEO/DIDEO
   id: dideo
   layout: ontology_detail
@@ -2055,6 +2062,7 @@ ontologies:
   - id: iao
   - id: bfo
   description: DUO is an ontology which represent data use conditions.
+  domain: information
   homepage: https://github.com/EBISPOT/DUO
   id: duo
   jobs:
@@ -3287,6 +3295,7 @@ ontologies:
     orcid: 0000-0002-9415-5104
   description: This ontology represents concepts related to homology, as well as other
     concepts used to describe similarity and non-homology.
+  domain: anatomy and development
   homepage: https://github.com/BgeeDB/homology-ontology
   id: hom
   layout: ontology_detail
@@ -3313,6 +3322,7 @@ ontologies:
     label: Frédéric Bastian
     orcid: 0000-0002-9415-5104
   description: Life cycle stages for Human
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv
   id: hsapdv
   layout: ontology_detail
@@ -3373,6 +3383,7 @@ ontologies:
     orcid: 0000-0002-1795-5570
   description: An ontology for representing clinical data about hypertension, intended
     to support classification of patients according to various diagnostic guidelines
+  domain: health
   homepage: https://github.com/aellenhicks/htn_owl
   id: htn
   layout: ontology_detail
@@ -3443,6 +3454,7 @@ ontologies:
     orcid: 0000-0003-3781-6962
   description: ICEO is an integrated biological ontology for the description of bacterial
     integrative and conjugative elements (ICEs).
+  domain: microbiology
   homepage: https://github.com/ontoice/ICEO
   id: iceo
   layout: ontology_detail
@@ -3526,6 +3538,7 @@ ontologies:
     label: Yongqun Oliver He
     orcid: 0000-0001-9189-9661
   description: An ontology of interactions and interaction networks
+  domain: biological systems
   homepage: https://github.com/INO-ontology/ino
   id: ino
   layout: ontology_detail
@@ -3914,6 +3927,7 @@ ontologies:
     label: Hilmar Lapp
     orcid: 0000-0001-9107-0714
   description: An application ontology to formalize annotation of phylogenetic data.
+  domain: information
   homepage: http://www.evoio.org/wiki/MIAPA
   id: miapa
   layout: ontology_detail
@@ -4006,6 +4020,7 @@ ontologies:
     label: Frédéric Bastian
     orcid: 0000-0002-9415-5104
   description: Life cycle stages for Mus Musculus
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/MmusDv
   id: mmusdv
   layout: ontology_detail
@@ -4176,6 +4191,7 @@ ontologies:
     label: Colin Batchelor
     orcid: 0000-0001-5985-7429
   description: Processes at the molecular level
+  domain: chemistry and biochemistry
   homepage: https://github.com/rsc-ontologies/rxno
   id: mop
   layout: ontology_detail
@@ -4517,6 +4533,7 @@ ontologies:
     coverage of the cancer domain, including cancer related diseases, findings and
     abnormalities. The NCIt OBO Edition aims to increase integration of the NCIt with
     OBO Library ontologies. NCIt OBO Edition releases should be considered experimental.
+  domain: health
   homepage: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
   id: ncit
   layout: ontology_detail
@@ -4792,6 +4809,7 @@ ontologies:
     label: Yongqun Oliver He
     orcid: 0000-0001-9189-9661
   description: A formal ontology of genes and genomes of biological organisms.
+  domain: biological systems
   homepage: https://bitbucket.org/hegroup/ogg
   id: ogg
   layout: ontology_detail
@@ -4845,6 +4863,7 @@ ontologies:
     orcid: 0000-0002-5379-5359
   description: An application ontology to represent genetic susceptibility to a specific
     disease, adverse event, or a pathological process.
+  domain: investigations
   homepage: https://github.com/linikujp/OGSF
   id: ogsf
   layout: ontology_detail
@@ -4900,6 +4919,7 @@ ontologies:
     represent and standardize various entities and relations related to microbiomes,
     microbiome host organisms (e.g., human and mouse), and the interactions between
     the hosts and microbiomes at different conditions.
+  domain: organisms
   homepage: https://github.com/ohmi-ontology/ohmi
   id: ohmi
   layout: ontology_detail
@@ -4926,6 +4946,7 @@ ontologies:
     and represents the virulence factors (VFs) and how the mutants of VFs in the Victors
     database become less virulence inside a host organism or host cells. It is developed
     to represent manually curated HPI knowledge available in the PHIDIAS resource.
+  domain: biological systems
   homepage: https://github.com/OHPI/ohpi
   id: ohpi
   layout: ontology_detail
@@ -4952,6 +4973,7 @@ ontologies:
     label: Frédéric Bastian
     orcid: 0000-0002-9415-5104
   description: Life cycle stages for Medaka
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv
   id: olatdv
   layout: ontology_detail
@@ -4978,6 +5000,7 @@ ontologies:
     orcid: 0000-0003-2408-2883
   description: Ontology to establish data exchange standards and common data elements
     in the microRNA (miR) domain
+  domain: chemistry and biochemistry
   homepage: http://omit.cis.usouthal.edu/
   id: omit
   in_foundry: false
@@ -4988,7 +5011,7 @@ ontologies:
     url: https://creativecommons.org/licenses/by/3.0/
   ontology_purl: http://purl.obolibrary.org/obo/omit.owl
   page: http://omit.cis.usouthal.edu/
-  preferredPrefix: OMIT
+  preferredPrefix: chemistry and biochemistry
   products:
   - id: omit.owl
     ontology_purl: http://purl.obolibrary.org/obo/omit.owl
@@ -5305,6 +5328,7 @@ ontologies:
   description: The Ontology of Precision Medicine and Investigation (OPMI) aims to
     ontologically represent and standardize various entities and relations associated
     with precision medicine and related investigations at different conditions.
+  domain: investigations
   homepage: https://github.com/OPMI/opmi
   id: opmi
   layout: ontology_detail
@@ -5352,6 +5376,7 @@ ontologies:
     label: Yongqunh He
     orcid: 0000-0001-9189-9661
   description: A biomedical ontology in the domain of vaccine adverse events.
+  domain: health
   homepage: http://www.violinet.org/ovae/
   id: ovae
   layout: ontology_detail
@@ -5512,6 +5537,7 @@ ontologies:
     label: Frédéric Bastian
     orcid: 0000-0002-9415-5104
   description: Life cycle stages for Platynereis dumerilii
+  domain: anatomy and development
   homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv
   id: pdumdv
   layout: ontology_detail
@@ -6032,6 +6058,7 @@ ontologies:
     orcid: 0000-0001-5256-8683
   depicted_by: http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif
   description: Ontology of rat strains
+  domain: organisms
   homepage: http://rgd.mcw.edu/rgdweb/search/strains.html
   id: rs
   layout: ontology_detail
@@ -6068,6 +6095,7 @@ ontologies:
     orcid: 0000-0001-5985-7429
   description: Connects organic name reactions to their roles in an organic synthesis
     and to processes in MOP
+  domain: chemistry and biochemistry
   homepage: https://github.com/rsc-ontologies/rxno
   id: rxno
   layout: ontology_detail
@@ -6775,6 +6803,7 @@ ontologies:
     orcid: 0000-0001-5208-3432
   description: The uPheno ontology integrates multiple phenotype ontologies into a
     unified cross-species phenotype ontology.
+  domain: phenotype
   homepage: https://github.com/obophenotype/upheno
   id: upheno
   layout: ontology_detail
@@ -6872,6 +6901,7 @@ ontologies:
     label: Carissa Park
     orcid: 0000-0002-2346-5201
   description: An ontology of traits covering vertebrates
+  domain: phenotype
   homepage: https://github.com/AnimalGenome/vertebrate-trait-ontology
   id: vt
   layout: ontology_detail
@@ -6915,6 +6945,7 @@ ontologies:
     label: Jim Balhoff
     orcid: 0000-0002-8688-6599
   description: Comprehensive hierarchy of extinct and extant vertebrate taxa.
+  domain: organisms
   homepage: https://github.com/phenoscape/vertebrate-taxonomy-ontology
   id: vto
   layout: ontology_detail
@@ -7528,6 +7559,7 @@ ontologies:
   description: The Mathematical Modelling Ontology (MAMO) is a classification of the
     types of mathematical models used mostly in the life sciences, their variables,
     relationships and other relevant features.
+  domain: simulation
   homepage: http://sourceforge.net/p/mamo-ontology/wiki/Home/
   id: mamo
   layout: ontology_detail
