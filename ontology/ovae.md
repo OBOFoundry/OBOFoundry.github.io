@@ -18,7 +18,7 @@ license:
 activity_status: active
 repository: https://github.com/OVAE-Ontology/ovae
 preferredPrefix: OVAE
-domain: phenotype
+domain: health
 ---
 
 # Summary
