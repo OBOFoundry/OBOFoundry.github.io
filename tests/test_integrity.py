@@ -17,6 +17,7 @@ ZENODO_PREFIX = "https://zenodo.org/record/"
 DOI_PREFIX = "https://doi.org/"
 CHEMRXIV_DOI_PREFIX = "https://doi.org/10.26434/chemrxiv"
 
+
 def get_data():
     """Get ontology data."""
     ontologies = {}
@@ -80,8 +81,14 @@ class TestIntegrity(unittest.TestCase):
 
             for i, usage in enumerate(data.get("usages", [])):
                 for j, publication in enumerate(usage.get("publications", [])):
-                    self.assertIn("user", usage, msg=f"Malformed usage missing a user in {ontology}")
-                    with self.subTest(ontology=ontology, user=usage["user"], id=publication["id"]):
+                    self.assertIn(
+                        "user",
+                        usage,
+                        msg=f"Malformed usage missing a user in {ontology}",
+                    )
+                    with self.subTest(
+                        ontology=ontology, user=usage["user"], id=publication["id"]
+                    ):
                         self.assert_valid_publication_id(
                             publication,
                             msg=f"{ontology} usage {i} publication {j} has unexpected identifier: {publication['id']}",
@@ -124,7 +131,12 @@ class TestIntegrity(unittest.TestCase):
         )
 
         # Make sure that the unversioned DOI is used
-        if is_arxiv or is_biorxiv or is_medrxiv or identifier.startswith(CHEMRXIV_DOI_PREFIX):
+        if (
+            is_arxiv
+            or is_biorxiv
+            or is_medrxiv
+            or identifier.startswith(CHEMRXIV_DOI_PREFIX)
+        ):
             for v in range(1, 100):
                 self.assertFalse(
                     identifier.endswith(f".v{v}"), msg="Please use an unversioned DOI"
