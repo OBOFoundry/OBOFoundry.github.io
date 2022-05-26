@@ -19,7 +19,7 @@ products:
 title: Ontology for MIRNA Target
 activity_status: active
 repository: https://github.com/OmniSearch/omit
-preferredPrefix: chemistry and biochemistry
+preferredPrefix: OMIT
 domain: chemistry and biochemistry
 ---
 
