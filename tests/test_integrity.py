@@ -143,3 +143,14 @@ class TestIntegrity(unittest.TestCase):
                 continue
             with self.subTest(prefix=prefix):
                 self.assertNotIn(replaced_by, inactive_prefixes, msg="")
+
+    def test_preferred_prefix(self):
+        """Test all preferred prefixes."""
+        for prefix, record in self.ontologies.items():
+            with self.subTest(prefix=prefix):
+                if record.get("activity_status") != "active":
+                    continue
+                preferred_prefix = record.get("preferredPrefix")
+                self.assertIsNotNone(preferred_prefix)
+                self.assertLessEqual(2, len(preferred_prefix))
+                self.assertNotIn(" ", preferred_prefix)
