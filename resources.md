@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: resources
 title: Ontology Tools and Resources
 ---
 ## Ontology Browsers
