@@ -7888,31 +7888,6 @@ ontologies:
   tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
 - activity_status: inactive
   build:
-    method: owl2obo
-    source_url: http://purl.obolibrary.org/obo/ero.owl
-  contact:
-    email: Marc_Ciriello@hms.harvard.edu
-    label: Marc Ciriello
-  description: An ontology of research resources such as instruments. protocols, reagents,
-    animal models and biospecimens.
-  documentation: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
-  domain: information
-  homepage: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
-  id: ero
-  layout: ontology_detail
-  license:
-    label: CC BY 2.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/2.0/
-  ontology_purl: http://purl.obolibrary.org/obo/ero.owl
-  products:
-  - id: ero.owl
-    ontology_purl: http://purl.obolibrary.org/obo/ero.owl
-  tags:
-  - resources
-  title: eagle-i resource ontology
-- activity_status: inactive
-  build:
     insert_ontology_id: true
     method: obo2owl
     source_url: http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo
@@ -8412,6 +8387,31 @@ ontologies:
   - id: epo.owl
     ontology_purl: http://purl.obolibrary.org/obo/epo.owl
   title: Epidemiology Ontology
+- activity_status: inactive
+  build:
+    method: owl2obo
+    source_url: http://purl.obolibrary.org/obo/ero.owl
+  contact:
+    email: Marc_Ciriello@hms.harvard.edu
+    label: Marc Ciriello
+  description: An ontology of research resources such as instruments. protocols, reagents,
+    animal models and biospecimens.
+  documentation: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
+  domain: information
+  homepage: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
+  id: ero
+  is_obsolete: true
+  layout: ontology_detail
+  license:
+    label: CC BY 2.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/2.0/
+  products:
+  - id: ero.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ero.owl
+  tags:
+  - resources
+  title: eagle-i resource ontology
 - activity_status: inactive
   contact:
     email: evoc@sanbi.ac.za
