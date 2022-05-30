@@ -16,8 +16,8 @@ products:
   - id: fbcv.json
 title: FlyBase Controlled Vocabulary
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
+  url: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 build:
   checkout: git clone https://github.com/FlyBase/flybase-controlled-vocabulary.git
   system: git
