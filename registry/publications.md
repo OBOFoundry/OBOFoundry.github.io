@@ -43,7 +43,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Dictyostelium discoideum anatomy (ddanat): [An anatomy ontology to represent biological knowledge in Dictyostelium discoideum](https://www.ncbi.nlm.nih.gov/pubmed/18366659)
 - Dictyostelium discoideum phenotype ontology (ddpheno): [dictyBase and the Dicty Stock Center (version 2.0) - a progress report](https://www.ncbi.nlm.nih.gov/pubmed/31840793)
 - Drosophila Phenotype Ontology (dpo): [The Drosophila phenotype ontology.](https://www.ncbi.nlm.nih.gov/pubmed/24138933)
-- Drosophila gross anatomy (fbbt): [The Drosophila anatomy ontology. [Journal of Biomedical Semantics](https://www.ncbi.nlm.nih.gov/pubmed/24138933)
+- Drosophila gross anatomy (fbbt): [The Drosophila anatomy ontology](https://www.ncbi.nlm.nih.gov/pubmed/24139062)
 - Environment Ontology (envo): [The environment ontology: contextualising biological and biomedical entities](https://www.ncbi.nlm.nih.gov/pubmed/24330602)
 - Evidence ontology (eco): [ECO, the Evidence & Conclusion Ontology: community standard for evidence information.](https://www.ncbi.nlm.nih.gov/pubmed/30407590)
 - Experimental condition ontology (xco): [Three ontologies to define phenotype measurement data.](https://www.ncbi.nlm.nih.gov/pubmed/22654893)

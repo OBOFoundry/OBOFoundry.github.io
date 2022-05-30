@@ -1779,7 +1779,7 @@ _:b92   <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_7227> ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of commonly encountered and/or high level Drosophila phenotypes." ;
         <http://purl.org/dc/elements/1.1/title>  "Drosophila Phenotype Ontology" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/24138933> ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/FlyBase/drosophila-phenotype-ontology/issues" ;
@@ -1797,8 +1797,7 @@ _:b93   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://gi
         <http://www.w3.org/2000/01/rdf-schema#label>  "Drosophila" .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/24138933>
-        <http://purl.org/dc/elements/1.1/title>  "The Drosophila phenotype ontology." ;
-        <http://purl.org/dc/elements/1.1/title>  "The Drosophila anatomy ontology. [Journal of Biomedical Semantics" .
+        <http://purl.org/dc/elements/1.1/title>  "The Drosophila phenotype ontology." .
 
 <http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000347>
         <http://purl.org/dc/elements/1.1/title>  "FlyBase Browser" ;
@@ -1822,7 +1821,7 @@ _:b94   <http://www.w3.org/2000/01/rdf-schema#label>  "Clare Pilgrim" ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b95 ;
         <http://purl.org/dc/elements/1.1/description>  "A structured controlled vocabulary used for various aspects of annotation by FlyBase." ;
         <http://purl.org/dc/elements/1.1/title>  "FlyBase Controlled Vocabulary" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "organisms" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/FlyBase/flybase-controlled-vocabulary/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000013> ;
@@ -2315,8 +2314,8 @@ _:b124  <http://www.w3.org/2000/01/rdf-schema#label>  "Willy Wong" ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_7227> ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology representing the gross anatomy of Drosophila melanogaster." ;
         <http://purl.org/dc/elements/1.1/title>  "Drosophila gross anatomy" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
-        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/24138933> ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/24139062> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/22402613> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/22180411> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/16381917> ;
@@ -2335,6 +2334,9 @@ _:b124  <http://www.w3.org/2000/01/rdf-schema#label>  "Willy Wong" ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://purl.obolibrary.org/obo/fbbt> .
 
 _:b125  <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/FlyBase/drosophila-anatomy-developmental-ontology.git" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/24139062>
+        <http://purl.org/dc/elements/1.1/title>  "The Drosophila anatomy ontology" .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/22402613>
         <http://purl.org/dc/elements/1.1/title>  "A strategy for building neuroanatomy ontologies" .
@@ -2400,7 +2402,7 @@ _:b96   <http://www.w3.org/2000/01/rdf-schema#label>  "Clare Pilgrim" ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_7227> ;
         <http://purl.org/dc/elements/1.1/description>  "A structured controlled vocabulary of the development of Drosophila melanogaster." ;
         <http://purl.org/dc/elements/1.1/title>  "Drosophila development" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "http://purl.obolibrary.org/obo/fbdv/tracker" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008> ;
