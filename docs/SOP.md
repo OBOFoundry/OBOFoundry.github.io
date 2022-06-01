@@ -31,9 +31,10 @@ In general, the metadata record of an ontology in the OBO Foundry metadata regis
 1. Any member of the community (OBO Foundry or otherwise) may propose a change in the form of a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 2. This pull request is reviewed by a member of the OBO Foundry operations committee and may be rejected. 
 3. The OBO Foundry operations committee member MUST then tag the listed contact person using their GitHub handle on the pull request requesting a review (initial request for feedback).
-4. After two weeks without activity, the OBO Foundry operations committee member will update the Pull request once more and announce a prospective merge date no earlier than two weeks in the future.
+4. After two weeks without activity, an OBO Foundry operations committee member will update the Pull request and announce a prospective merge date no earlier than two weeks in the future.
 5. After at least 4 weeks have passed since the initial request for review:
-   - If the change pertains to one of the following metadata fields, the OBO Foundry operations committee member will send an email to the listed contact with a link to the pull request: `activity_status`, `contact`.
-   - If the change pertains to any change other than the above, the OBO Foundry operations committee member may merge the pull request at their own discretion.
+   - If the change pertains to one of the following metadata fields, an OBO Foundry operations committee member MUST send an email to the listed contact with a link to the pull request: `activity_status`, `contact`.
+   - If the change pertains to any change other than the above, the OBO Foundry operations committee member MAY merge the pull request at their own discretion.
+6. If at least 3 months have passed after the initial request for feedback, and the above conditions are met, any OBO Foundry operations committee member MAY merge the pull request at their own discretion.
 
 For a discussion on this SOP, see [here](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1848).
