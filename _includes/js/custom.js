@@ -161,9 +161,9 @@ jQuery(document).ready(function () {
                 is_obsolete ="obsolete_row";
             }
             let template = `
-                <tr class="row ${is_obsolete}">
+                <tr class="row">
                     <td class="col-sm-1">
-                        <a href="ontology/${id}.html">
+                        <a class="${is_obsolete}" href="ontology/${id}.html">
                            ${id}
                         </a>     
                     </td>
