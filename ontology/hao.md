@@ -31,5 +31,3 @@ publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/21209921
     title: "A gross anatomy ontology for hymenoptera"
 ---
-
-A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)

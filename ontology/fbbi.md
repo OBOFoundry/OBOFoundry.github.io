@@ -25,5 +25,3 @@ build:
 activity_status: active
 repository: https://github.com/CRBS/Biological_Imaging_Methods_Ontology
 ---
-
-A structured controlled vocabulary of sample preparation, visualization and imaging methods used in biomedical research.

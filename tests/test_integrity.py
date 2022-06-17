@@ -20,6 +20,7 @@ ZENODO_PREFIX = "https://zenodo.org/record/"
 DOI_PREFIX = "https://doi.org/"
 CHEMRXIV_DOI_PREFIX = "https://doi.org/10.26434/chemrxiv"
 
+
 def get_data():
     """Get ontology data."""
     ontologies = {}
@@ -32,6 +33,7 @@ def get_data():
 
         # Load the data like it is YAML
         data = yaml.safe_load("\n".join(lines[1:idx]))
+        data["long_description"] = "".join(lines[idx:])
         ontologies[data["id"]] = data
     return ontologies
 
@@ -83,8 +85,14 @@ class TestIntegrity(unittest.TestCase):
 
             for i, usage in enumerate(data.get("usages", [])):
                 for j, publication in enumerate(usage.get("publications", [])):
-                    self.assertIn("user", usage, msg=f"Malformed usage missing a user in {ontology}")
-                    with self.subTest(ontology=ontology, user=usage["user"], id=publication["id"]):
+                    self.assertIn(
+                        "user",
+                        usage,
+                        msg=f"Malformed usage missing a user in {ontology}",
+                    )
+                    with self.subTest(
+                        ontology=ontology, user=usage["user"], id=publication["id"]
+                    ):
                         self.assert_valid_publication_id(
                             publication,
                             msg=f"{ontology} usage {i} publication {j} has unexpected identifier: {publication['id']}",
@@ -127,7 +135,12 @@ class TestIntegrity(unittest.TestCase):
         )
 
         # Make sure that the unversioned DOI is used
-        if is_arxiv or is_biorxiv or is_medrxiv or identifier.startswith(CHEMRXIV_DOI_PREFIX):
+        if (
+            is_arxiv
+            or is_biorxiv
+            or is_medrxiv
+            or identifier.startswith(CHEMRXIV_DOI_PREFIX)
+        ):
             for v in range(1, 100):
                 self.assertFalse(
                     identifier.endswith(f".v{v}"), msg="Please use an unversioned DOI"
@@ -147,13 +160,45 @@ class TestIntegrity(unittest.TestCase):
         }
         self.assertEqual(required - skip_keys, high_level - skip_keys)
 
+    @staticmethod
+    def skip_inactive(record) -> bool:
+        """Check if should skip for inactive records."""
+        return record.get("activity_status") != "active"
+
     def test_preferred_prefix(self):
         """Test all preferred prefixes."""
         for prefix, record in self.ontologies.items():
             with self.subTest(prefix=prefix):
-                if record.get("activity_status") != "active":
+                if self.skip_inactive(record):
                     continue
                 preferred_prefix = record.get("preferredPrefix")
                 self.assertIsNotNone(preferred_prefix)
                 self.assertLessEqual(2, len(preferred_prefix))
                 self.assertNotIn(" ", preferred_prefix)
+
+    def test_redundant_descriptions(self):
+        """Test that the description field is not redundant of the long form description."""
+        for prefix, record in self.ontologies.items():
+            if self.skip_inactive(record):
+                continue
+            description = record.get("description")
+            long_description = record["long_description"]
+            if description is None:
+                continue
+            with self.subTest(prefix=prefix):
+                self.assertNotEqual(
+                    _string_norm(description),
+                    _string_norm(long_description),
+                    msg=f"Effectively the same description was reused in the short and long-form field for {prefix}",
+                )
+
+
+def _string_norm(s: str) -> str:
+    return (
+        s.strip()
+        .lower()
+        .replace("\n", "")
+        .replace(" ", "")
+        .replace(".", "")
+        .replace("-", "")
+    )

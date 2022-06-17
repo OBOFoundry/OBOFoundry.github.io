@@ -27,5 +27,3 @@ activity_status: active
 repository: https://github.com/semanticchemistry/semanticchemistry
 preferredPrefix: CHEMINF
 ---
-
-Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them.

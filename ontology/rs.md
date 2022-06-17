@@ -36,5 +36,3 @@ preferredPrefix: RS
 depicted_by: http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif
 domain: organisms
 ---
-
-Ontology of rat strains

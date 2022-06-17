@@ -43,5 +43,3 @@ usages:
 activity_status: active
 repository: https://github.com/obophenotype/c-elegans-development-ontology
 ---
-
-A structured controlled vocabulary of the development of <i>Caenorhabditis elegans</i>.
