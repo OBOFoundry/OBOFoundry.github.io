@@ -352,6 +352,13 @@ jQuery(document).ready(function () {
         }
         return JsonData;
     }
+    function apply_all_filters(data){
+        let selectedDomain = $("#dd-domains").children("option:selected").val();
+                let res = data["ontologies"].filter(x => x["domain"] !== undefined);
+                let dt = res.filter(x => x["domain"].includes(selectedDomain));
+                let dt2 = Search($("#searchVal"), dt);
+                applyFilters(dt2)
+    }
     fetch('/registry/ontologies.jsonld')
         .then(response => response.json())
         .then( (data) => {
@@ -390,22 +397,16 @@ jQuery(document).ready(function () {
 
             // check box filter event for table data
             $("[data-filter]").on("change", () =>{
-                debugger;
-                applyFilters(data["ontologies"])
+                apply_all_filters(data)
             });
             // get table by domain dropdown
             $("#dd-domains").on("change", () =>{
-                let selectedDomain = $("#dd-domains").children("option:selected").val();
-                let res = data["ontologies"].filter(x => x["domain"] !== undefined);
-                let dt = res.filter(x => x["domain"].includes(selectedDomain));
-                let dt2 = Search($("#searchVal"), dt);
-                applyFilters(dt2)
+                apply_all_filters(data)
 
             });
             // search word in table
             $("#searchVal").on("keyup", debounce((e) => {
-                    let dt = Search($("#searchVal"), data["ontologies"]);
-                    applyFilters(dt)
+               apply_all_filters(data)
               }));
 
             let element = document.querySelector('[data-filter]');
