@@ -28,4 +28,5 @@ preferredPrefix: FLOPO
 publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/27842607
     title: "The flora phenotype ontology (FLOPO): tool for integrating morphological traits and phenotypes of vascular plants"
+added: 2015-12-16
 ---

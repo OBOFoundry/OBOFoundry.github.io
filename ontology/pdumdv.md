@@ -24,4 +24,5 @@ license:
 activity_status: active
 repository: https://github.com/obophenotype/developmental-stage-ontologies
 domain: anatomy and development
+added: 2015-08-21
 ---

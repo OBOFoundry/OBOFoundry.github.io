@@ -22,6 +22,7 @@ build:
 activity_status: inactive
 repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
 preferredPrefix: AEO
+added: 2015-07-28
 ---
 
 The AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology, to about 160 classes using the is_a relationship; it thus provides a detailed type classification for tissues. The ~100 new classes were chosen for their use in categorizing the major vertebrate and invertebrate anatomy ontologies at a granularity adequate for tissues of a single cell type. This site is to be used for posting details of the ontologies and updates

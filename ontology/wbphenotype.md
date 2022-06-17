@@ -50,6 +50,7 @@ usages:
         title: "The Monarch Initiative: an integrative data and analytic platform connecting phenotypes to genotypes across species "
 activity_status: active
 repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
+added: 2015-07-28
 ---
 
 A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes

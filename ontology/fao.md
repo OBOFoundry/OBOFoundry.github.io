@@ -28,6 +28,7 @@ build:
 activity_status: active
 repository: https://github.com/obophenotype/fungal-anatomy-ontology
 preferredPrefix: FAO
+added: 2015-07-28
 ---
 
 ![FAO image](http://www.yeastgenome.org/images/fao.color.png)

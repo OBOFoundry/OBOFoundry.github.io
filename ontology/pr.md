@@ -58,6 +58,7 @@ usages:
 activity_status: active
 repository: https://github.com/PROconsortium/PRoteinOntology
 preferredPrefix: PR
+added: 2015-07-28
 ---
 
 The PRotein Ontology (PRO) formally defines taxon-specific and taxon-neutral protein-related entities in three major areas: proteins related by evolution; proteins produced from a given gene; and protein-containing complexes.

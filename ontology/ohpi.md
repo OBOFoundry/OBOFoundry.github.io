@@ -20,6 +20,7 @@ activity_status: active
 repository: https://github.com/OHPI/ohpi
 preferredPrefix: OHPI
 domain: biological systems
+added: 2019-07-22
 ---
 
 # OHPI: Ontology of Host-Pathogen Interactions

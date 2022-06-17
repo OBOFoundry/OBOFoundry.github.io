@@ -21,6 +21,7 @@ mailing_list: http://groups.google.com/group/miapa-discuss
 activity_status: active
 preferredPrefix: MIAPA
 domain: information
+added: 2015-07-28
 ---
 
 The MIAPA ontology is an application ontology to formalize annotation of phylogenetic data according to the emerging Minimum Information About a Phylogenetic Analysis (MIAPA) metadata reporting standard. Please see [Leebens-Mack _et al._ (2006)](https://doi.org/10.1089/omi.2006.10.231) for the initial introduction of MIAPA.

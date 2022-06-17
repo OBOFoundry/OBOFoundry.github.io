@@ -45,4 +45,5 @@ usages:
 activity_status: active
 repository: https://github.com/obophenotype/zebrafish-phenotype-ontology
 preferredPrefix: ZP
+added: 2019-01-02
 ---

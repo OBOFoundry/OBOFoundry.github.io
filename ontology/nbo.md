@@ -31,4 +31,5 @@ preferredPrefix: NBO
 publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/24177753
     title: "Analyzing gene expression data in mice with the Neuro Behavior Ontology"
+added: 2015-07-28
 ---

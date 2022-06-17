@@ -32,6 +32,7 @@ license:
 activity_status: active
 repository: https://github.com/obophenotype/planarian-phenotype-ontology
 preferredPrefix: PLANP
+added: 2018-11-19
 ---
 
 Planarian Phenotype Ontology is an ontology of phenotypes observed in the planarian Schmidtea mediterranea. Many of the phenotypes were seen durning RNAi experiments.

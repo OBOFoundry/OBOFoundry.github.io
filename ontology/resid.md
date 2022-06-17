@@ -12,6 +12,7 @@ homepage: http://www.ebi.ac.uk/RESID/
 title: Protein covalent bond
 is_obsolete: true
 activity_status: inactive
+added: 2015-07-28
 ---
 
 For the description of covalent bonds in proteins.

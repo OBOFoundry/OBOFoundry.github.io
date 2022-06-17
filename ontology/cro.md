@@ -26,6 +26,7 @@ products:
 activity_status: active
 repository: https://github.com/data2health/contributor-role-ontology
 preferredPrefix: CRO
+added: 2017-07-20
 ---
 
 The Contributor Role Ontology expands the CASRAI Contributor Roles Taxonomy (CRediT), which is a high-level classification of the diverse roles performed in the work leading to a published research output in the sciences. Its purpose to provide transparency in contributions to scholarly published work, to enable improved systems of attribution, credit, and accountability.

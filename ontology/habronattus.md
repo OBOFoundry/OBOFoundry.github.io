@@ -9,6 +9,7 @@ contact:
 homepage: http://www.mesquiteproject.org/ontology/Habronattus/index.html
 is_obsolete: true
 activity_status: inactive
+added: 2015-08-21
 ---
 
 A demonstration of ontology construction as a general technique for coding ethograms and other descriptions of behavior into machine understandable forms. An ontology for courtship behavior of the spider <i>Habronattus californicus</i>.

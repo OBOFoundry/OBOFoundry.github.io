@@ -25,6 +25,7 @@ license:
 activity_status: active
 repository: https://github.com/HUPO-PSI/xlmod-CV
 preferredPrefix: XLMOD
+added: 2019-04-18
 ---
 
 A structured controlled vocabulary for cross-linker reagents used in cross-linking mass spectrometry experiments. Developed by the HUPO Proteomics Standards Initiative (PSI).

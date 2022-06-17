@@ -35,6 +35,7 @@ repository: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology
 preferredPrefix: RS
 depicted_by: http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif
 domain: organisms
+added: 2015-07-28
 ---
 
 Ontology of rat strains

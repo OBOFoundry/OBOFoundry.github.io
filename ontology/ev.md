@@ -8,6 +8,7 @@ contact:
 homepage: http://www.evocontology.org/
 is_obsolete: true
 activity_status: inactive
+added: 2015-08-21
 ---
 
 Provides structured controlled vocabularies for the annotation of expressed sequences with respect to anatomical system, cell type, developmental stage, experimental technique, microarray platform, pathology, pooling, tissue preparation and treatment.

@@ -24,6 +24,7 @@ usages:
 activity_status: active
 repository: https://github.com/IHCC-cohorts/GECKO
 preferredPrefix: GECKO
+added: 2020-08-11
 ---
 
 Genomics Cohorts Knowledge Ontology (GECKO) is an ontology to represent genomics cohort attributes. The GECKO is maintained by the [CINECA project]( https://www.cineca-project.eu), and standardises attributes commonly used for genomics cohort description as well as individual-level data items. A series of tools is being developed to enable automated generation of harmonised data files based on a JSON schema mapping file. For more information please contact [CINECA](mailto:info@cineca-project.eu).

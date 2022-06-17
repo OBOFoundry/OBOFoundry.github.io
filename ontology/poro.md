@@ -38,6 +38,7 @@ tracker: https://github.com/obophenotype/porifera-ontology/issues
 activity_status: active
 repository: https://github.com/obophenotype/porifera-ontology
 preferredPrefix: PORO
+added: 2015-07-28
 ---
 
 An ontology covering the anatomy of Porifera (sponges)

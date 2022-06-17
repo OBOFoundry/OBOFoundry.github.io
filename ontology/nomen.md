@@ -39,6 +39,7 @@ canonical: nomen.owl
 activity_status: active
 repository: https://github.com/SpeciesFileGroup/nomen
 preferredPrefix: NOMEN
+added: 2019-01-11
 ---
 
 NOMEN is a nomenclatural ontology for biological names (not concepts).  See the <a href="https://github.com/SpeciesFileGroup/nomen">NOMEN homepage</a> for more info.

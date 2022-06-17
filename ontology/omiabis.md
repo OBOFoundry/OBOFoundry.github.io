@@ -18,6 +18,7 @@ license:
 is_obsolete: true
 activity_status: inactive
 repository: https://github.com/OMIABIS/omiabis-dev
+added: 2016-02-05
 ---
 
 OMIABIS has been merged into OBIB (http://www.obofoundry.org/ontology/obib.html).

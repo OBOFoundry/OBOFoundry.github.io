@@ -40,6 +40,7 @@ usages:
 activity_status: active
 repository: https://github.com/cerivs/zebrafish-anatomical-ontology
 preferredPrefix: ZFA
+added: 2015-07-28
 ---
 
 A structured controlled vocabulary of the anatomy and development of the Zebrafish (<i>Danio rerio</i>).

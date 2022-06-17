@@ -22,6 +22,7 @@ preferredPrefix: APOLLO_SV
 publications:
   - id: https://doi.org/10.1186/s13326-016-0092-y
     title: "The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation"
+added: 2019-04-04
 ---
 
 #Apollo Structured Vocabulary

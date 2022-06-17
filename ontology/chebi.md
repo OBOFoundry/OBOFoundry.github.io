@@ -54,6 +54,7 @@ usages:
 activity_status: active
 repository: https://github.com/ebi-chebi/ChEBI
 preferredPrefix: CHEBI
+added: 2015-07-28
 ---
 
 A freely available dictionary of molecular entities focused on ‘small’ chemical compounds.

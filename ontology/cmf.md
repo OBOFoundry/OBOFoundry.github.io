@@ -9,6 +9,7 @@ contact:
 homepage: https://code.google.com/p/craniomaxillofacial-ontology/
 activity_status: inactive
 is_obsolete: true
+added: 2015-08-21
 ---
 
 Ontology for oral & maxillofacial surgical procedures.

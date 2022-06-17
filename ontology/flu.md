@@ -16,4 +16,5 @@ build:
 tracker: http://purl.obolibrary.org/obo/flu/tracker
 is_obsolete: true
 activity_status: inactive
+added: 2015-07-29
 ---

@@ -43,4 +43,5 @@ license:
 activity_status: active
 repository: https://github.com/obophenotype/provisional_cell_ontology
 preferredPrefix: PCL
+added: 2022-01-25
 ---

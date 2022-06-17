@@ -29,6 +29,7 @@ preferredPrefix: APO
 publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/20157474
     title: "New mutant phenotype data curation system in the Saccharomyces Genome Database"
+added: 2015-07-28
 ---
 
 A structured controlled vocabulary for the phenotypes of Ascomycete fungi

@@ -16,6 +16,7 @@ build:
   method: owl2obo
 is_obsolete: true
 activity_status: inactive
+added: 2015-07-28
 ---
 
 Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation.

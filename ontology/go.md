@@ -136,6 +136,7 @@ publications:
     title: "Gene ontology: tool for the unification of biology. The Gene Ontology Consortium"
   - id: https://www.ncbi.nlm.nih.gov/pubmed/33290552
     title: "The Gene Ontology resource: enriching a GOld mine"
+added: 2015-07-28
 ---
 
 The goal of the GeneOntology (GO) project is to provide a uniformway to describe the functions of gene products from organisms across all kingdoms of life and thereby enable analysis of genomic data

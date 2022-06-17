@@ -25,6 +25,7 @@ build:
 activity_status: orphaned
 repository: https://github.com/obophenotype/sibo
 preferredPrefix: SIBO
+added: 2015-07-29
 ---
 
 The Social Insect Behavior Ontology (SIBO), created by Chris Smith of the BDGP/SFSU. It was been adopted by Chris Mungall, but I am currently looking to hand it over or to merge it into the <a href="nbo.html">NBO</a>

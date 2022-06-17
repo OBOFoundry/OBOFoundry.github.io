@@ -24,6 +24,7 @@ usages:
 activity_status: active
 repository: https://github.com/ICO-ontology/ICO
 preferredPrefix: ICO
+added: 2015-08-21
 ---
 
 # Summary

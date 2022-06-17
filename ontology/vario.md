@@ -15,6 +15,7 @@ build:
   source_url: http://variationontology.org/vario_download/vario.obo
   method: obo2owl
 activity_status: orphaned
+added: 2015-07-28
 ---
 
 Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations.

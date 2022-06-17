@@ -21,6 +21,7 @@ build:
   method: owl2obo
 activity_status: inactive
 is_obsolete: true
+added: 2015-07-28
 ---
 
 ERO models research resources such instruments. protocols, reagents, animal models and biospecimens. It has been developed in the context of the eagle-i project  (http://eagle-i.net/).

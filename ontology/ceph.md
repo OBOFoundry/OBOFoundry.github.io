@@ -32,6 +32,7 @@ license:
   label: CC BY 3.0
 activity_status: inactive
 repository: https://github.com/obophenotype/cephalopod-ontology
+added: 2015-08-21
 ---
 
 Welcome to the Cephalopod Ontology

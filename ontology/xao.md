@@ -41,6 +41,7 @@ license:
 activity_status: active
 repository: https://github.com/xenopus-anatomy/xao
 preferredPrefix: XAO
+added: 2015-07-28
 ---
 
 The Xenopus Anatomy Ontology represents and standardizes the anatomy and development of the African frogs Xenopus laevis and tropicalis. It supports the annotation of gene expression data in Xenbase and is designed to facilitate cross-taxa comparisons.

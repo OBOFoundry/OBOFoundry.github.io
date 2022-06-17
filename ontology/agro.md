@@ -53,6 +53,7 @@ dependencies:
   - id: uo
   - id: xco
 preferredPrefix: AGRO
+added: 2016-06-04
 ---
 
 AgrO, the Agronomy Ontology, describes agronomic practices, techniques, and variables used in agronomic experiments. AgrO is being built using traits identified by agronomists, the ICASA variables, and other existing ontologies such as ENVO, UO, PATO, IAO, and CHEBI. Further, AgrO powers AgroFIMS, the Agronomy Fieldbook and Information Management System modeled on a CGIAR Breeding Management System to capture agronomic data.

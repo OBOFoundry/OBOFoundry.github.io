@@ -25,6 +25,7 @@ preferredPrefix: DRON
 publications:
   - id: https://doi.org/10.1186/s13326-017-0121-5
     title: "Therapeutic indications and other use-case-driven updates in the drug ontology: anti-malarials, anti-hypertensives, opioid analgesics, and a large term request"
+added: 2015-07-28
 ---
 
 We built this ontology primarily to support comparative effectiveness researchers studying claims data. They need to be able to query U.S. National Drug Codes (NDCs) by ingredient, mechanism of action (beta-adrenergic blockade), physiological effect (diuresis), and therapeutic intent (anti-hypertensive).

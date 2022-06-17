@@ -26,6 +26,7 @@ license:
 activity_status: active
 repository: https://github.com/vaccineontology/VO
 preferredPrefix: VO
+added: 2015-07-29
 ---
 
 The Vaccine Ontology (VO) is a biomedical ontology in the domain of vaccine and vaccination. VO aims to standardize and integrate vaccines, vaccine components, vaccine mechanisms, vaccine data types, and support computer-assisted reasoning. VO supports basic vaccine research, development, and clincal vaccine usage. VO is being developed as a community-based ontology with support and collaborations from the vaccine and bio-ontology communities.

@@ -11,6 +11,7 @@ taxon:
 homepage: http://www.amphibanat.org
 is_obsolete: true
 activity_status: inactive
+added: 2015-08-21
 ---
 
 A taxonomy of Amphibia

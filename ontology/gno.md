@@ -53,4 +53,5 @@ usages:
 activity_status: active
 repository: https://github.com/glygen-glycan-data/GNOme
 preferredPrefix: GNO
+added: 2019-08-15
 ---

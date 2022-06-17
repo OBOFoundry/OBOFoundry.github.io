@@ -31,4 +31,5 @@ preferredPrefix: DDPHENO
 publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/31840793
     title: "dictyBase and the Dicty Stock Center (version 2.0) - a progress report"
+added: 2015-08-21
 ---

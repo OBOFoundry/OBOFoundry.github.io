@@ -23,6 +23,7 @@ build:
   insert_ontology_id: true
 is_obsolete: true
 activity_status: inactive
+added: 2015-07-28
 ---
 
 The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase.

@@ -38,4 +38,5 @@ usages:
 activity_status: active
 repository: https://github.com/DiseaseOntology/DiseaseDriversOntology
 preferredPrefix: DISDRIV
+added: 2021-11-05
 ---

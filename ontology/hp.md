@@ -57,6 +57,7 @@ activity_status: active
 repository: https://github.com/obophenotype/human-phenotype-ontology
 preferredPrefix: HP
 depicted_by: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/logo/HPO-logo-black_small.png
+added: 2015-07-28
 ---
 
 An ontology is a computational representation of a domain of knowledge based upon a controlled, standardized vocabulary for describing entities and the semantic relationships between them.

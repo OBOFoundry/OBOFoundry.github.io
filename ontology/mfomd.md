@@ -19,6 +19,7 @@ license:
 activity_status: active
 repository: https://github.com/jannahastings/mental-functioning-ontology
 preferredPrefix: MFOMD
+added: 2015-08-21
 ---
 
 An ontology to describe and classify mental diseases such as schizophrenia, annotated with DSM-IV and ICD codes where applicable.

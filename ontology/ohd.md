@@ -24,6 +24,7 @@ tracker: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issu
 repository: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
 activity_status: active
 preferredPrefix: OHD
+added: 2016-12-01
 ---
 
 The Oral Health and Disease Ontology is intended as a BFO and OBO

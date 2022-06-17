@@ -42,6 +42,7 @@ depicted_by: http://sequenceontology.org/img/so_icon.png
 activity_status: active
 repository: https://github.com/The-Sequence-Ontology/SO-Ontologies
 preferredPrefix: SO
+added: 2015-07-28
 ---
 
 SO is a collaborative ontology project for the definition of sequence features used in biological sequence annotation. SO was initially developed by the Gene Ontology Consortium. Contributors to SO include the GMOD community, model organism database groups such as WormBase, FlyBase, Mouse Genome Informatics group, and institutes such as the Sanger Institute and the EBI. Input to SO is welcomed from the sequence annotation community. SO is also part of the Open Biomedical Ontologies library. Our aim is to develop an ontology suitable for describing the features of biological sequences. For questions, please send mail to the SO developers mailing list. For new term suggestions, please use the [Term Tracker](https://github.com/The-Sequence-Ontology/SO-Ontologies/issues).

@@ -26,6 +26,7 @@ publications:
 is_obsolete: true
 replaced_by: uberon
 activity_status: inactive
+added: 2015-07-28
 ---
 
 Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa.

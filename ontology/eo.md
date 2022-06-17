@@ -40,6 +40,7 @@ usages:
 activity_status: inactive
 repository: https://github.com/Planteome/plant-environment-ontology
 depicted_by: http://planteome.org/sites/default/files/garland_logo.PNG
+added: 2015-07-29
 ---
 
 A structured, controlled vocabulary for the representation of plant environmental conditions.

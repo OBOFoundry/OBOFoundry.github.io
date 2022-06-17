@@ -25,6 +25,7 @@ homepage: https://github.com/SCAI-BIO/EpilepsyOntology
 repository: https://github.com/SCAI-BIO/EpilepsyOntology
 activity_status: active
 preferredPrefix: EPIO
+added: 2021-12-16
 ---
 
 EPIO is a community Ontology maintained by Fraunhofer SCAI. 

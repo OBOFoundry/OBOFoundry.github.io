@@ -42,7 +42,7 @@ def main():
     for ontology, time in ontology_to_time.items():
         path = ONTOLOGY_DIRECTORY.joinpath(ontology).with_suffix(".md")
         if not path.is_file():
-            print("File no longer exists:", path)
+            print(f"File no longer exists: {path} added on {time}")
             continue
         update_markdown(path, time)
 

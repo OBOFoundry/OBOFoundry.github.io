@@ -23,6 +23,7 @@ activity_status: active
 repository: https://github.com/arpcard/aro
 preferredPrefix: ARO
 domain: microbiology
+added: 2017-11-15
 ---
 
 The Antibiotic Resistance Ontology

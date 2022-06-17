@@ -42,6 +42,7 @@ usages:
         title: "WormBase: a modern Model Organism Information Resource"
 activity_status: active
 repository: https://github.com/obophenotype/c-elegans-development-ontology
+added: 2015-07-28
 ---
 
 A structured controlled vocabulary of the development of <i>Caenorhabditis elegans</i>.

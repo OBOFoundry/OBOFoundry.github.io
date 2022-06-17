@@ -19,6 +19,7 @@ build:
   source_url: http://purl.obolibrary.org/obo/aero.owl
   method: owl2obo
 activity_status: inactive
+added: 2015-07-28
 ---
 
 The Adverse Event Reporting Ontology (AERO) is an ontology aimed at supporting clinicians at the time of data entry, increasing quality and accuracy of reported adverse events.

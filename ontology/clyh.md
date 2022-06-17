@@ -28,6 +28,7 @@ license:
 activity_status: active
 repository: https://github.com/EBISPOT/clyh_ontology
 preferredPrefix: CLYH
+added: 2020-05-06
 ---
 
 The Clytia hemisphaerica Development and Anatomy Ontology (CLYH) describes the anatomical and developmental features of the Clytia hemisphaerica life cycle. This species is a member of the phylum Cnidaria and belongs to the hydrozoan clade Leptothecata. Its life cycle comprises three stages: a planula larva, a benthic polyp colony, and a sexually-reproducing jellyfish  (medusa).

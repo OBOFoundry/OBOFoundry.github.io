@@ -27,6 +27,7 @@ build:
 activity_status: active
 repository: https://github.com/OmniSearch/ncro
 preferredPrefix: NCRO
+added: 2015-11-18
 ---
 
 The NCRO is a reference ontology in the non-coding RNA (ncRNA) field,

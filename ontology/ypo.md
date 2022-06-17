@@ -13,6 +13,7 @@ homepage: http://www.yeastgenome.org/
 is_obsolete: true
 replaced_by: apo
 activity_status: inactive
+added: 2015-08-21
 ---
 
 A structured controlled vocabulary for the phenotypes of budding yeast.

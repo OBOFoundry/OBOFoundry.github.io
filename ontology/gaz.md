@@ -23,4 +23,5 @@ license:
   label: CC0 1.0
 activity_status: inactive
 repository: https://github.com/EnvironmentOntology/gaz
+added: 2015-07-28
 ---
