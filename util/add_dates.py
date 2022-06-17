@@ -52,6 +52,10 @@ def update_markdown(path: pathlib.Path, date: datetime.datetime) -> None:
     with path.open() as file:
         lines = [line.rstrip("\n") for line in file]
 
+    if any(line.startswith("added:") for line in lines):
+        # No need to add duplicates
+        return
+
     assert lines[0] == "---"
     idx = min(i for i, line in enumerate(lines[1:], start=1) if line == "---")
 
