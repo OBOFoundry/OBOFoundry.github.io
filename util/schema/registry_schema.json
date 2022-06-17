@@ -18,6 +18,11 @@
         "activity_status": "${data} is not one of ${schema}."
       }
     },
+    "added": {
+      "level": "error",
+      "format": "date",
+      "description": "The date when the ontology was added to the OBO Foundry git repository, in the YYYY-MM-DD format"
+    },
     "browsers": {
       "level": "info",
       "description": "'browsers' is an informative field. It specifies the URL of a website in which the ontology can be browsed. OntoBee is included by default.",
@@ -479,6 +484,7 @@
   },
   "required": [
     "activity_status",
+    "added",
     "contact",
     "description",
     "homepage",
