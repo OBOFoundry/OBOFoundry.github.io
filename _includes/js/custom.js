@@ -158,12 +158,13 @@ jQuery(document).ready(function () {
                 `;
             }
             if(data[i]["is_obsolete"]){
+                debugger;
                 is_obsolete ="obsolete_row";
             }
             let template = `
-                <tr class="row">
+                <tr class="row ${is_obsolete}">
                     <td class="col-sm-1">
-                        <a class="${is_obsolete}" href="ontology/${id}.html">
+                        <a class="" href="ontology/${id}.html">
                            ${id}
                         </a>     
                     </td>
@@ -298,6 +299,59 @@ jQuery(document).ready(function () {
         timer = setTimeout(() => { func.apply(this, args); }, timeout);
       };
     }
+    function applyFilters(data){
+        let selector  = $("[data-filter]");
+                let domain = selector[0].checked
+                let hideactive = selector[1].checked
+                let hideObsolete = selector[2].checked
+
+                if(!domain && !hideactive && !hideObsolete){
+                    renderTable(data);
+                }else if(domain && !hideactive && !hideObsolete){
+                    renderTable(sortByField(data, "domain"), "domain");
+                }else if(domain && hideactive && !hideObsolete){
+                    let filteredData = data.filter(x => x["activity_status"] === "active");
+                    renderTable(sortByField(filteredData, "domain"), "domain");
+                }else if(domain && !hideactive && hideObsolete){
+                    let filteredData = data.filter(x => x["is_obsolete"] !== true);
+                    renderTable(sortByField(filteredData, "domain"), "domain");
+                }else if(domain && hideactive && hideObsolete){
+                    let filteredData = data.filter(x => x["is_obsolete"] !== true)
+                        .filter(x => x["activity_status"] === "active");
+                    renderTable(sortByField(filteredData, "domain"), "domain");
+                }else if(!domain && hideactive && hideObsolete){
+                    let filteredData = data.filter(x => x["is_obsolete"] !== true)
+                        .filter(x => x["activity_status"] === "active");
+                    renderTable(filteredData, "");
+                }
+                else if(!domain && hideactive && !hideObsolete){
+                    let filteredData = data["ontologies"].filter(x => x["activity_status"] === "active");
+                    renderTable(filteredData, "");
+                }
+                else if(!domain && !hideactive && hideObsolete){
+                    let filteredData = data.filter(x => x["is_obsolete"] !== true);
+                    renderTable(filteredData, "");
+                }
+    }
+
+    function Search(input, JsonData){
+        let value = input.val().toLowerCase();
+        if(value.length >= 2){
+            return JsonData.filter((row)=>{
+                let term = input.val().toLowerCase();
+                if(row.domain === undefined){
+                    row.domain = ""
+                }
+                if(row.description === undefined){
+                    row.description = ""
+                }
+                return (row.id.toLowerCase().includes(term) ||
+                    row.domain.toLowerCase().includes(term) ||
+                    row.description.toLowerCase().includes(term))
+                });
+        }
+        return JsonData;
+    }
     fetch('/registry/ontologies.jsonld')
         .then(response => response.json())
         .then( (data) => {
@@ -334,62 +388,24 @@ jQuery(document).ready(function () {
             //render unfiltered table
             renderTable(data["ontologies"]);
 
-
             // check box filter event for table data
             $("[data-filter]").on("change", () =>{
-                let selector  = $("[data-filter]");
-                let domain = selector[0].checked
-                let activityStatus = selector[1].checked
-                let isObsolete = selector[2].checked
-
-                if(!domain && !activityStatus && !isObsolete){
-                    renderTable(data["ontologies"]);
-                }else if(domain && !activityStatus && !isObsolete){
-                    renderTable(sortByField(data["ontologies"], "domain"), "domain");
-                }else if(domain && activityStatus && !isObsolete){
-                    let filteredData = data["ontologies"].filter(x => x["activity_status"] === "active");
-                    renderTable(sortByField(filteredData, "domain"), "domain");
-                }else if(domain && !activityStatus && isObsolete){
-                    let filteredData = data["ontologies"].filter(x => x["is_obsolete"] !== true);
-                    renderTable(sortByField(filteredData, "domain"), "domain");
-                }else if(domain && activityStatus && isObsolete){
-                    let filteredData = data["ontologies"].filter(x => x["is_obsolete"] !== true)
-                        .filter(x => x["activity_status"] === "active");
-                    renderTable(sortByField(filteredData, "domain"), "domain");
-                }else if(!domain && activityStatus && isObsolete){
-                    let filteredData = data["ontologies"].filter(x => x["is_obsolete"] !== true)
-                        .filter(x => x["activity_status"] === "active");
-                    renderTable(filteredData, "");
-                }
-                else if(!domain && activityStatus && !isObsolete){
-                    let filteredData = data["ontologies"].filter(x => x["activity_status"] === "active");
-                    renderTable(filteredData, "");
-                }
-                else if(!domain && !activityStatus && isObsolete){
-                    let filteredData = data["ontologies"].filter(x => x["is_obsolete"] !== true);
-                    renderTable(filteredData, "");
-                }
+                debugger;
+                applyFilters(data["ontologies"])
             });
             // get table by domain dropdown
             $("#dd-domains").on("change", () =>{
                 let selectedDomain = $("#dd-domains").children("option:selected").val();
                 let res = data["ontologies"].filter(x => x["domain"] !== undefined);
                 let dt = res.filter(x => x["domain"].includes(selectedDomain));
-                renderTable(dt, "");
-                if(selectedDomain === ""){
-                    let element = document.querySelector('[data-filter]');
-                    let event = new Event('change');
-                    element.dispatchEvent(event);
-                }
+                let dt2 = Search($("#searchVal"), dt);
+                applyFilters(dt2)
 
             });
             // search word in table
             $("#searchVal").on("keyup", debounce((e) => {
-
-                    let value = $("#searchVal").val().toLowerCase();
-                    $("#ont_table tbody tr").filter(function() {
-                      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                    });
+                    let dt = Search($("#searchVal"), data["ontologies"]);
+                    applyFilters(dt)
               }));
 
             let element = document.querySelector('[data-filter]');
