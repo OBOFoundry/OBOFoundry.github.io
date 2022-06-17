@@ -20,7 +20,8 @@
     },
     "added": {
       "level": "error",
-      "format": "date",
+      "type": "string",
+      "regex": "^\\d{4}-\\d{2}-\\d{2}$",
       "description": "The date when the ontology was added to the OBO Foundry git repository, in the YYYY-MM-DD format"
     },
     "browsers": {
