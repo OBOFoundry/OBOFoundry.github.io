@@ -52,14 +52,14 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/reg
       </td>
       <td>
         <a href="ontology/{{ont.id}}.html">
-          <button type="button" class="btn btn-default" aria-label="Left Align" title="More details">
+          <button type="button" class="btn btn-default" aria-label="More details for {{ ont.title }}" title="More details">
             <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
           </button>
         </a>
       </td>
       <td>
         <a href="{{ont.homepage}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align" title="Project home">
+          <button type="button" class="btn btn-default" aria-label="Go to the homepage for {{ ont.title }}" title="Project home">
             <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
           </button>
         </a>
@@ -67,7 +67,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/reg
       <td>
         {% if ont.tracker %}
         <a href="{{ont.tracker}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align" title="Tracker">
+          <button type="button" aria-label="Go to the tracker for {{ ont.title }}" title="Tracker">
             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
           </button>
         </a>
@@ -77,7 +77,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/reg
       <td>
         {% if ont.contact %}
         <a href="mailto:{{ont.contact.email}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align" title="Email ontology devs">
+          <button type="button" class="btn btn-default" aria-label="Send an email to {{ont.contact.label}}, the contact person for {{ ont.title }}" title="Email ontology devs">
             <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
           </button>
         </a>
@@ -86,7 +86,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/reg
 
       <td>
         <a href="http://purl.obolibrary.org/obo/{{ont.id}}.owl">
-          <button type="button" class="btn btn-default" aria-label="Left Align" title="Download file">
+          <button type="button" class="btn btn-default" aria-label="Download {{ ont.title }} in the OWL format" title="Download file">
             <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
           </button>
         </a>
@@ -94,7 +94,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/reg
 
       <td>
         <a href="http://www.ontobee.org/browser/index.php?o={{ont.id}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align" title="Browse on Ontobee">
+          <button type="button" class="btn btn-default" aria-label="Browse {{ ont.title }} on OntoBee" title="Browse on Ontobee">
             <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
           </button>
         </a>
@@ -103,7 +103,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/reg
       <td>
         {% if ont.publications %}
         <a href="{{ont.publications.first.id}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align" title="Publications list">
+          <button type="button" class="btn btn-default" aria-label="View the primary publication for {{ ont.title }}" title="Publications list">
             <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
           </button>
         </a>
@@ -113,7 +113,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/reg
       <td>
         {% if ont.in_foundry_order %}
         <a href="/principles/fp-000-summary.html">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+          <button type="button" class="btn btn-default" aria-label="View the OBO Foundry criteria for the Foundry status of {{ ont.title }}">
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           </button>
         </a>
