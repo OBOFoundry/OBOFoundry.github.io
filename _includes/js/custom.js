@@ -113,6 +113,7 @@ jQuery(document).ready(function () {
         for (let i = 0; i < data.length; i++) {
             let id = data[i]['id'];
             let is_obsolete = "";
+            let is_inactive = "";
             let activity_status = data[i]['activity_status']
             let title = data[i]['title'];
             let license_url = "#";
@@ -139,7 +140,7 @@ jQuery(document).ready(function () {
                 tracker = data[i]["tracker"];
             }
             if(data[i].hasOwnProperty("domain") && data[i]['domain'] !== undefined){
-                domainInner = data[i]['domain'].split(",");
+                domainInner[0] = data[i]['domain'];
             }
             if (data[i]["contact"]){
                 contact = data[i]["contact"]["email"];
@@ -157,16 +158,19 @@ jQuery(document).ready(function () {
                         </a>             
                 `;
             }
+            if(activity_status === "inactive"){
+                is_inactive ="inactive_row";
+            }
             if(data[i]["is_obsolete"]){
-                debugger;
-                is_obsolete ="obsolete_row";
+                is_obsolete = "(obsolete)"
             }
             let template = `
-                <tr class="row ${is_obsolete}">
+                <tr class="row ${is_inactive}">
                     <td class="col-sm-1">
                         <a class="" href="ontology/${id}.html">
-                           ${id}
-                        </a>     
+                           ${id} 
+                        </a>
+                        <span style="background-color: #ff8d82">${is_obsolete}</span>    
                     </td>
                     <td class="col-sm-1">
                         ${title}
@@ -233,25 +237,12 @@ jQuery(document).ready(function () {
 
 
             if( domain !== ""){
-                if(domainInner.length > 1){
-                    for(let i=0; i<domainInner.length; i++){
-                        let d = domainInner[i].trim().replace("and ", "")
-                        tableDomains.push(d)
-                        if(!tableDomainhtml.hasOwnProperty(d)){
-                            tableDomainhtml[d] = template;
-                        }else{
-                            tableDomainhtml[d] += template;
-                        }
-                    }
-                }else{
                     tableDomains.push(domainInner[0].trim())
                     if(!tableDomainhtml.hasOwnProperty(domainInner[0].trim())){
                         tableDomainhtml[domainInner[0].trim()] = template;
                     }else{
                         tableDomainhtml[domainInner[0].trim()] += template;
                     }
-                }
-
             }
             table += template;
         }
@@ -383,12 +374,13 @@ jQuery(document).ready(function () {
             let domains = [];
             for(let k=0; k<data["ontologies"].length; k++){
                 if(data["ontologies"][k]["domain"] != undefined){
-                    let d = data["ontologies"][k]["domain"].replace(" and", ",").split(",")
-                    domains.push(...d)
+                    let d = data["ontologies"][k]["domain"] //.replace(" and", ",").split(",")
+                    domains.push(d)
                 }
             }
             domains = [...new Set(domains)];
             domains.sort();
+            $("#dd-domains").append(`<option></option>`);
             domains.forEach(function (r){
                 $("#dd-domains").append(`<option value="${r.trim()}">${r.trim()}</option>`);
             })
