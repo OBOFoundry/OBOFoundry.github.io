@@ -51,71 +51,55 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/reg
         </small>
       </td>
       <td>
-        <a href="ontology/{{ont.id}}.html">
-          <button type="button" class="btn btn-default" aria-label="Left Align" title="More details">
+        <a href="ontology/{{ont.id}}.html" class="btn btn-default" aria-label="More details for {{ ont.title }}" title="More details">
             <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-          </button>
         </a>
       </td>
       <td>
-        <a href="{{ont.homepage}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align" title="Project home">
+        <a href="{{ont.homepage}}" class="btn btn-default" aria-label="Go to the homepage for {{ ont.title }}" title="Project home">
             <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-          </button>
         </a>
       </td>
       <td>
         {% if ont.tracker %}
-        <a href="{{ont.tracker}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align" title="Tracker">
+        <a href="{{ont.tracker}}" class="btn btn-default" aria-label="Go to the tracker for {{ ont.title }}" title="Tracker">
             <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-          </button>
         </a>
         {% endif %}
       </td>
 
       <td>
         {% if ont.contact %}
-        <a href="mailto:{{ont.contact.email}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align" title="Email ontology devs">
+        <a href="mailto:{{ont.contact.email}}" class="btn btn-default" aria-label="Send an email to {{ont.contact.label}}, the contact person for {{ ont.title }}" title="Email ontology devs">
             <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-          </button>
         </a>
         {% endif %}
       </td>
 
       <td>
-        <a href="http://purl.obolibrary.org/obo/{{ont.id}}.owl">
-          <button type="button" class="btn btn-default" aria-label="Left Align" title="Download file">
+        <a href="http://purl.obolibrary.org/obo/{{ont.id}}.owl" class="btn btn-default" aria-label="Download {{ ont.title }} in the OWL format" title="Download file">
             <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
-          </button>
         </a>
       </td>
 
       <td>
-        <a href="http://www.ontobee.org/browser/index.php?o={{ont.id}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align" title="Browse on Ontobee">
+        <a href="http://www.ontobee.org/browser/index.php?o={{ont.id}}" class="btn btn-default" aria-label="Browse {{ ont.title }} on OntoBee" title="Browse on Ontobee">
             <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-          </button>
         </a>
       </td>
 
       <td>
         {% if ont.publications %}
-        <a href="{{ont.publications.first.id}}">
-          <button type="button" class="btn btn-default" aria-label="Left Align" title="Publications list">
+        <a href="{{ont.publications.first.id}}" class="btn btn-default" aria-label="View the primary publication for {{ ont.title }}" title="Publications list">
             <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
-          </button>
         </a>
         {% endif %}
       </td>
 
       <td>
         {% if ont.in_foundry_order %}
-        <a href="/principles/fp-000-summary.html">
-          <button type="button" class="btn btn-default" aria-label="Left Align">
+        <a href="/principles/fp-000-summary.html" class="btn btn-default" aria-label="View the OBO Foundry criteria for the Foundry status of {{ ont.title }}">
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          </button>
         </a>
         {% endif %}
       </td>
@@ -123,7 +107,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/reg
       <td>
         {% if ont.repository %}
           {% if ont.repository contains "https://github.com/" %}
-          <a href="{{ ont.repository }}">
+          <a href="{{ ont.repository }}" aria-label="Go to the repository page for {{ ont.title }}">
             <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ ont.repository | remove: 'https://github.com/' }}?style=social" />
           </a>
           {% endif %}
