@@ -36,15 +36,15 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> | <a href="/reg
       </td>
       <td>
         {% if ont.is_obsolete %}
-        <s>
-          {{ ont.description }}
-        </s>
-        <mark>obsolete</mark>
+            <s>
+              {{ ont.description | truncate: 140 }}
+            </s>
+            <mark>obsolete</mark>
         {% elsif ont.activity_status == "inactive" %}
-        {{ ont.description }}
-        <mark>inactive</mark>
+            {{ ont.description | truncate: 140 }}
+            <mark>inactive</mark>
         {% else %}
-        {{ ont.description }}
+            {{ ont.description | truncate: 140 }}
         {% endif %}
         <small>
           <a href="ontology/{{ ont.id }}.html" > Detail </a>
