@@ -8,7 +8,7 @@ contact:
   github: schaferw
   orcid: 0000-0002-8786-1756
 description: PROCO covers process chemistry, the chemical field concerned with scaling up laboratory syntheses to commercially viable processes.
-domain: biochemistry
+domain: chemistry and biochemistry
 homepage: https://github.com/proco-ontology/PROCO
 products:
   - id: proco.owl
