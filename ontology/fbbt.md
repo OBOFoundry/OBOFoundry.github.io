@@ -24,8 +24,8 @@ taxon:
   label: Drosophila
 title: Drosophila gross anatomy
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
+  url: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 build:
   checkout: git clone https://github.com/FlyBase/drosophila-anatomy-developmental-ontology.git
   system: git
@@ -42,8 +42,8 @@ browsers:
     title: BioPortal Browser
     url: http://bioportal.bioontology.org/ontologies/FB-BT?p=classes
 publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/24138933
-    title: "The Drosophila anatomy ontology. [Journal of Biomedical Semantics"
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24139062
+    title: "The Drosophila anatomy ontology"
   - id: https://www.ncbi.nlm.nih.gov/pubmed/22402613
     title: "A strategy for building neuroanatomy ontologies"
   - id: https://www.ncbi.nlm.nih.gov/pubmed/22180411

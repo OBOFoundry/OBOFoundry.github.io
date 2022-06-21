@@ -23,4 +23,5 @@ license:
   label: CC BY 3.0
 activity_status: active
 repository: https://github.com/obophenotype/developmental-stage-ontologies
+domain: anatomy and development
 ---

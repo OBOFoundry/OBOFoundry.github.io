@@ -19,6 +19,7 @@ license:
 activity_status: active
 repository: https://github.com/OPMI/opmi
 preferredPrefix: OPMI
+domain: investigations
 ---
 
 The Ontology of Precision Medicine and Investigation (OPMI) aims to ontologically represent and standardize various entities and relations associated with precision medicine and related investigations at different conditions.

@@ -14,7 +14,7 @@ license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 description: Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them.
-domain: biochemistry
+domain: chemistry and biochemistry
 homepage: https://github.com/semanticchemistry/semanticchemistry
 mailing_list: https://groups.google.com/forum/#!forum/cheminf-ontology
 products:

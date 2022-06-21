@@ -7,7 +7,7 @@ contact:
   github: rsmsheriff
   orcid: 0000-0003-0705-9809
 description: Terms commonly used in Systems Biology, and in particular in computational modeling.
-domain: biochemistry
+domain: chemistry and biochemistry
 homepage: http://www.ebi.ac.uk/sbo/
 products:
   - id: sbo.owl

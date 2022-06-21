@@ -23,4 +23,5 @@ products:
 activity_status: active
 repository: https://github.com/rsc-ontologies/rxno
 preferredPrefix: MOP
+domain: chemistry and biochemistry
 ---

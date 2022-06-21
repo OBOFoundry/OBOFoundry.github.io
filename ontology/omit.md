@@ -20,6 +20,7 @@ title: Ontology for MIRNA Target
 activity_status: active
 repository: https://github.com/OmniSearch/omit
 preferredPrefix: OMIT
+domain: chemistry and biochemistry
 ---
 
 The purpose of the OMIT ontology is to establish data exchange standards and common data elements in the microRNA (miR) domain. Biologists (cell biologists in particular) and bioinformaticians can make use of OMIT to leverage emerging semantic technologies in knowledge acquisition and discovery for more effective identification of important roles performed by miRs in humans' various diseases and biological processes (usually through miRs' respective target genes). OMIT has reused and extended a set of well-established concepts from existing bio-ontologies, e.g., Gene Ontology, Sequence Ontology, Protein Ontology, NCBI Organism Taxonomy, Human Disease Ontology, Foundational Model of Anatomy, and so forth.

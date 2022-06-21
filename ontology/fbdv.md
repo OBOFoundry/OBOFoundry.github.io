@@ -22,8 +22,8 @@ taxon:
   label: Drosophila
 title: Drosophila development
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
+  url: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 build:
   checkout: git clone https://github.com/FlyBase/drosophila-developmental-ontology.git
   system: git
@@ -34,6 +34,7 @@ browsers:
     title: FlyBase Browser
     url: http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008
 activity_status: active
+publications: []
 ---
 
 A structured controlled vocabulary of the development of <i>Drosophila melanogaster</i>.

@@ -11,7 +11,7 @@ layout: default
       <h1>
         {{ page.title }}
       </h1>      
-    </p>
+    </div>
 
   </div>
    
@@ -21,7 +21,7 @@ layout: default
       <div class="col-md-3">
         {% capture my_include %}{% include docs_toc.md %}{% endcapture %}
         {{ my_include | markdownify }}
-
+        {% if page.id %}
         <div class="btn-group" role="group" aria-label="Source">
           <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/docs/{{page.id}}.md">
             <button type="button" 
@@ -42,7 +42,7 @@ layout: default
               Edit</button>
           </a>
           <!-- <button type="button" class="btn btn-default">Help</button> -->
-        </div>
+        </div>{% endif %}
       </div>
 
       <div class="col-md-9">

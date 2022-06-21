@@ -18,6 +18,7 @@ license:
 activity_status: active
 repository: https://github.com/ontoice/ICEO
 preferredPrefix: ICEO
+domain: microbiology
 ---
 
 # ICEO: Integrative and Conjugative Element Ontology

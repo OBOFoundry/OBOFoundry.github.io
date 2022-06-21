@@ -1,13 +1,16 @@
 """Test data integrity, beyond what's possible with the JSON schema."""
 
+import json
 import unittest
 from pathlib import Path
+from typing import Set
 
 import yaml
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
 ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
+SCHEMA_PATH = ROOT.joinpath("util", "schema", "registry_schema.json")
 
 PUBMED_PREFIX = "https://www.ncbi.nlm.nih.gov/pubmed/"
 ARXIV_PREFIX = "https://arxiv.org/abs/"
@@ -129,3 +132,28 @@ class TestIntegrity(unittest.TestCase):
                 self.assertFalse(
                     identifier.endswith(f".v{v}"), msg="Please use an unversioned DOI"
                 )
+
+    def test_schema_mandatory(self):
+        """Test all things in schema marked as error are also in the required list."""
+        """Test all things in schema marked as error/warning are also in the required list."""
+        # why is there a mismatch between their levels and required status?
+        skip_keys = {"in_foundry", "products", "usages"}
+        schema = json.loads(SCHEMA_PATH.read_text())
+        required: Set[str] = set(schema["required"])
+        high_level: Set[str] = {
+            key
+            for key, configuration in schema["properties"].items()
+            if configuration.get("level") in {"warning", "error"}
+        }
+        self.assertEqual(required - skip_keys, high_level - skip_keys)
+
+    def test_preferred_prefix(self):
+        """Test all preferred prefixes."""
+        for prefix, record in self.ontologies.items():
+            with self.subTest(prefix=prefix):
+                if record.get("activity_status") != "active":
+                    continue
+                preferred_prefix = record.get("preferredPrefix")
+                self.assertIsNotNone(preferred_prefix)
+                self.assertLessEqual(2, len(preferred_prefix))
+                self.assertNotIn(" ", preferred_prefix)
