@@ -2756,6 +2756,7 @@ _:b146  <http://www.w3.org/2000/01/rdf-schema#label>  "Bill Hogan" ;
         <http://purl.org/dc/elements/1.1/description>  "GlyTouCan provides stable accessions for glycans described at varyious degrees of characterization, including compositions (no linkage) and topologies (no carbon bond positions or anomeric configurations). GNOme organizes these stable accessions for interative browsing, for text-based searching, and for automated reasoning with well-defined characterization levels." ;
         <http://purl.org/dc/elements/1.1/title>  "Glycan Naming and Subsumption Ontology (GNOme)" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.5281/zenodo.6678278> ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/glygen-glycan-data/GNOme/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://gnome.glyomics.org/StructureBrowser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2> ;
@@ -2768,6 +2769,9 @@ _:b146  <http://www.w3.org/2000/01/rdf-schema#label>  "Bill Hogan" ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://gnome.glyomics.org/> .
 
 _:b147  <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/glygen-glycan-data/GNOme.git" .
+
+<https://doi.org/10.5281/zenodo.6678278>
+        <http://purl.org/dc/elements/1.1/title>  "GNOme - Glycan Naming and Subsumption Ontology" .
 
 <https://gnome.glyomics.org/StructureBrowser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2>
         <http://purl.org/dc/elements/1.1/title>  "GNOme Glycan Structure Browser" ;
