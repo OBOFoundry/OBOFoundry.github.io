@@ -756,6 +756,35 @@ ontologies:
       url: http://zfin.org/ZFA:0000029
     user: http://zfin.org
 - activity_status: active
+  contact:
+    email: alpha.tom.kodamullil@scai.fraunhofer.de
+    github: akodamullil
+    label: Alpha Tom Kodamullil
+    orcid: 0000-0001-9896-3531
+  dependencies:
+  - id: bfo
+  description: Alzheimer's Disease Ontology is a knowledge-based ontology that encompasses
+    varieties of concepts related to Alzheimer'S Disease, structured by upper level
+    Basic Formal Ontology(BFO). This Ontology is enriched by the interrelated entities
+    that demonstrate the network of the understanding on Alzheimer's disease and can
+    be readily applied for text mining.
+  domain: health
+  homepage: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO
+  id: ado
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/ado.owl
+  preferredPrefix: ADO
+  products:
+  - id: ado.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ado.owl
+  repository: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO
+  title: Alzheimer's Disease Ontology
+  tracker: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO/issues
+- activity_status: active
   build:
     checkout: git clone  https://github.com/AgriculturalSemantics/agro.git
     path: .
@@ -3091,9 +3120,9 @@ ontologies:
   id: geno
   layout: ontology_detail
   license:
-    label: CC BY-SA 2.0
-    logo: https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png
-    url: https://creativecommons.org/licenses/by-sa/2.0/
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/geno.owl
   preferredPrefix: GENO
   products:
@@ -5802,6 +5831,37 @@ ontologies:
   title: Plant Phenology Ontology
   tracker: https://github.com/PlantPhenoOntology/PPO/issues
 - activity_status: active
+  contact:
+    email: wes_schafer@merck.com
+    github: schaferw
+    label: Wes Schafer
+    orcid: 0000-0002-8786-1756
+  dependencies:
+  - id: ro
+  - id: obi
+  - id: chebi
+  - id: pato
+  - id: cheminf
+  - id: sbo
+  description: PROCO covers process chemistry, the chemical field concerned with scaling
+    up laboratory syntheses to commercially viable processes.
+  domain: chemistry and biochemistry
+  homepage: https://github.com/proco-ontology/PROCO
+  id: proco
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/proco.owl
+  preferredPrefix: PROCO
+  products:
+  - id: proco.owl
+    ontology_purl: http://purl.obolibrary.org/obo/proco.owl
+  repository: https://github.com/proco-ontology/PROCO
+  title: Process Chemistry Ontology
+  tracker: https://github.com/proco-ontology/PROCO/issues
+- activity_status: active
   build:
     checkout: https://github.com/Display-Lab/psdo.git
     path: .
@@ -7720,18 +7780,6 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/fix.obo
   title: Physico-chemical methods and properties
 - activity_status: orphaned
-  description: An ontology that formalizes the genomic element by defining an upper
-    class genetic interval
-  homepage: https://code.google.com/p/ontology-for-genetic-interval/
-  id: ogi
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/ogi.owl
-  products:
-  - id: ogi.owl
-    ontology_purl: http://purl.obolibrary.org/obo/ogi.owl
-  title: Ontology for genetic interval
-  tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list
-- activity_status: orphaned
   build:
     insert_ontology_id: true
     method: obo2owl
@@ -8686,6 +8734,24 @@ ontologies:
   layout: ontology_detail
   replaced_by: ro
   title: OBO relationship types (legacy)
+- activity_status: inactive
+  contact:
+    email: linikujp@gmail.com
+    github: linikujp
+    label: Asiyah Yu Lin
+    orcid: 0000-0002-5379-5359
+  description: An ontology that formalizes the genomic element by defining an upper
+    class genetic interval
+  homepage: https://code.google.com/p/ontology-for-genetic-interval/
+  id: ogi
+  is_obsolete: true
+  layout: ontology_detail
+  products:
+  - id: ogi.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ogi.owl
+  replaced_by: ogsf
+  title: Ontology for genetic interval
+  tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list
 - activity_status: inactive
   contact:
     email: mbrochhausen@gmail.com
