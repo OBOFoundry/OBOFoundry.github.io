@@ -10,6 +10,9 @@ description: An ontology covering the taxonomy of teleosts (bony fish)
 domain: organisms
 tags:
   - taxonomy
+publications:
+  - id: https://doi.org/10.1038/npre.2010.4629.1
+    title: The Teleost Taxonomy Ontology
 homepage: https://github.com/phenoscape/teleost-taxonomy-ontology
 products:
   - id: tto.obo

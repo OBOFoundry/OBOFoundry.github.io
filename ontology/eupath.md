@@ -2,10 +2,10 @@
 layout: ontology_detail
 id: eupath
 contact:
-  email: stoeckrt@pennmedicine.upenn.edu
-  label: Chris Stoeckert
-  github: cstoeckert
-  orcid: 0000-0002-5714-991X
+  email: jiezheng@pennmedicine.upenn.edu
+  label: Jie Zheng
+  github: zhengj2007
+  orcid: 0000-0002-2999-0103
 license:
   url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0

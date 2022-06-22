@@ -18,6 +18,7 @@ products:
 activity_status: active
 repository: https://github.com/INO-ontology/ino
 preferredPrefix: INO
+domain: biological systems
 ---
 
 # Summary

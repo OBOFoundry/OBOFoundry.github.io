@@ -12,6 +12,9 @@ products:
   - id: clo.owl
 title: Cell Line Ontology
 tracker: https://github.com/CLO-Ontology/CLO/issues
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25852852
+    title: "CLO: The Cell Line Ontology"
 dependencies:
   - id: uberon
   - id: cl
@@ -23,6 +26,7 @@ license:
 activity_status: active
 repository: https://github.com/CLO-Ontology/CLO
 preferredPrefix: CLO
+domain: anatomy and development
 ---
 
 # Summary

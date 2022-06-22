@@ -6,7 +6,7 @@ domain: anatomy and development
 homepage: http://www.xenbase.org/anatomy/xao.do?method=display
 contact:
   label: Erik Segerdell
-  email: esegerd3@gmail.com
+  email: Erik.Segerdell@cchmc.org
   github: seger
   orcid: 0000-0002-9611-1279
 in_foundry_order: 1

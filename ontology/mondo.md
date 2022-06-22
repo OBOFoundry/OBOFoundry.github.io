@@ -43,6 +43,13 @@ products:
     description: Equivalent to the OWL edition.
     format: obo
     derived_from: mondo.owl
+  - id: mondo/mondo-base.owl
+    title: Mondo Base Module
+    description: "The main ontology plus axioms connecting to select external ontologies, excluding the external ontologies themselves"
+    format: owl
+publications:
+  - id: https://www.medrxiv.org/content/10.1101/2022.04.13.22273750
+    title: "Mondo: Unifying diseases for the world, by the world"
 usages:
   - user: https://monarchinitiative.org/
     type: annotation
@@ -57,8 +64,8 @@ usages:
     type: annotation
     description: Mondo is used by the ClinGen for disease curations.
     examples:
-      - url: https://search.clinicalgenome.org/kb/conditions/MONDO_0011794
-        description: SCN1A is an autosomal dominant mutation in Dravet syndrome.
+      - url: https://search.clinicalgenome.org/kb/conditions/MONDO:0007947
+        description: FBN1 is an autosomal dominant mutation in Marfan syndrome.
   - user: https://portal.kidsfirstdrc.org/
     type: annotation
     description: Mondo is used by the Kids First Data Resource Portal for disease annotations. Note, a login is needed to access the portal and view the Mondo-curated data.

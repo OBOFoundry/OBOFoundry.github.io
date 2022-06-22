@@ -23,6 +23,11 @@ build:
   method: obo2owl
   infallible: 1
 tracker: https://github.com/DiseaseOntology/SymptomOntology/issues
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/19850722
+    title: "GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database"
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
+    title: "The Human Disease Ontology 2022 update"
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0

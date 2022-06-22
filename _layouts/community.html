@@ -161,7 +161,7 @@ layout: default
 
         </dl>
         
-
+        {% if page.id %}
         <div class="btn-group" role="group" aria-label="Source">
           <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/community/{{page.id}}.md">
             <button type="button" 
@@ -191,12 +191,11 @@ layout: default
               PURL</button>
           </a>
           <!-- <button type="button" class="btn btn-default">Help</button> -->
-        </div>
+        </div>{% endif %}
       </div>
 
 
-
-      <div class="row">
+{% if page.id %}      <div class="row">
 
         <footer class="footer">
           <div class="container">
@@ -206,7 +205,7 @@ layout: default
             </p>
           </div>
         </footer>
-      </div>
+      </div>{% endif %}
 
     </div>
 

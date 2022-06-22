@@ -16,8 +16,8 @@ products:
   - id: fbcv.json
 title: FlyBase Controlled Vocabulary
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
+  url: http://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 build:
   checkout: git clone https://github.com/FlyBase/flybase-controlled-vocabulary.git
   system: git
@@ -35,6 +35,7 @@ usages:
         description: "alleles and constructs annotated to bang sensitive in FlyBase"
 activity_status: active
 repository: https://github.com/FlyBase/flybase-controlled-vocabulary
+publications: []
 ---
 
 A structured controlled vocabulary used for various aspects of annotation by FlyBase. It includes the Drosophila Phenotype Ontology (dpo) which is also released separately.

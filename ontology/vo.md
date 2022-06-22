@@ -5,6 +5,11 @@ title: Vaccine Ontology
 description: VO is a biomedical ontology in the domain of vaccine and vaccination.
 homepage: http://www.violinet.org/vaccineontology
 tracker: https://github.com/vaccineontology/VO/issues
+publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/23256535
+    title: "Ontology representation and analysis of vaccine formulation and administration and their effects on vaccine immune responses"
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/21624163
+    title: "Mining of vaccine-associated IFN-γ gene interaction networks using the Vaccine Ontology"
 contact:
   email: yongqunh@med.umich.edu
   label: Yongqunh He

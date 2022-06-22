@@ -49,7 +49,7 @@ Example of such request for ECTO:
 
 After your submission to the GitHub tracker, your ontology will be set up in a [provisional Dashboard](https://obofoundry.github.io/obo-nor.github.io/dashboard/index.html). As of 4th May 2021, every new ontology submission is required to pass the dashboard quality control, which means that they are not allowed to have any substantial errors (anything "red"). OBO foundry will provide support to help you fix any issues your submission might have.
 
-After the ontology passes Dashboard quality control, allow up to 4 weeks to give members of the community time to provide feedback and for the Operations Committee to review the request. If you don't hear back from us after 4 weeks, please follow-up via the tracker issue you created. Note, in some cases, this could take longer.
+After the ontology passes Dashboard quality control, please allow time for members of the community to provide feedback and for the Operations Committee to review the request. If you don't hear back from us after 4 weeks, you can follow-up via the tracker issue you created.
 
 Based on this discussion, the Operations Committee will either approve the IDSPACE request, ask for changes, or decline your request.
 

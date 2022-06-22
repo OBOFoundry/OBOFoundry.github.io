@@ -40,6 +40,8 @@ tracker: https://github.com/DiseaseOntology/HumanDiseaseOntology/issues
 publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/25348409
     title: "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
+    title: "The Human Disease Ontology 2022 update"
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
@@ -60,7 +62,7 @@ usages:
     description: Immune Epitope Database
     examples:
       - url: https://www.iedb.org
-        description: Aantibody and T cell epitopes associated with human diseases
+        description: Antibody and T cell epitopes associated with human diseases
 
 activity_status: active
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
