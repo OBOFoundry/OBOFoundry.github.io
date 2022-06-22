@@ -21,5 +21,6 @@ license:
 repository: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO
 preferredPrefix: ADO
 activity_status: active
+github_date_added: 2022-06-21
 ---
 

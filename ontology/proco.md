@@ -26,6 +26,7 @@ license:
 activity_status: active
 repository: https://github.com/proco-ontology/PROCO
 preferredPrefix: PROCO
+github_date_added: 2022-06-21
 ---
 
 Previously named the Ontology of Process Chemistry (OPC), the PROcess Chemistry Ontology (PROCO) is aimed to be a community-based ontology in the domain of process chemistry, which is a branch of chemistry (including pharmaceutical chemistry) that studies the development and optimization of the production processes for chemical compounds, and the scaling up of laboratory chemical reactions into commercially viable routes. Key considerations are product quality, process robustness, economics, environmental sustainability, regulatory compliance and safety.
