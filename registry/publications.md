@@ -97,6 +97,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Unified phenotype ontology (uPheno) (upheno): [Phenotype Ontologies Traversing All The Organisms (POTATO) workshop aims to reconcile logical definitions across species](https://zenodo.org/record/2382757)
 - Unipathway (upa): [UniPathway: a resource for the exploration and annotation of metabolic pathways](https://www.ncbi.nlm.nih.gov/pubmed/22102589)
 - Units of measurement ontology (uo): [The Units Ontology: a tool for integrating units of measurement in science](https://www.ncbi.nlm.nih.gov/pubmed/23060432)
+- VEuPathDB ontology (eupath): [Malaria study data integration and information retrieval based on OBO Foundry ontologies.](https://doi.org/10.5281/zenodo.6685957)
 - Vaccine Ontology (vo): [Ontology representation and analysis of vaccine formulation and administration and their effects on vaccine immune responses](https://www.ncbi.nlm.nih.gov/pubmed/23256535)
 - Vertebrate Taxonomy Ontology (vto): [The vertebrate taxonomy ontology: a framework for reasoning across model organism and species phenotypes](https://doi.org/10.1186/2041-1480-4-34)
 - Xenopus Anatomy Ontology (xao): [An ontology for Xenopus anatomy and development.](https://www.ncbi.nlm.nih.gov/pubmed/18817563)
