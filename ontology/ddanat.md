@@ -31,7 +31,7 @@ preferredPrefix: DDANAT
 publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/18366659
     title: "An anatomy ontology to represent biological knowledge in Dictyostelium discoideum"
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 A structured controlled vocabulary of the anatomy of the slime-mould <i>Dictyostelium discoideum</i>.

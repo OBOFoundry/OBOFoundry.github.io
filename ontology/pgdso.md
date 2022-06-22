@@ -11,7 +11,7 @@ taxon:
 homepage: http://www.plantontology.org
 is_obsolete: true
 activity_status: inactive
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---
 
 REPLACED BY: PO. A controlled vocabulary of growth and developmental stages in various plants. Note that this has been subsumed into the PO

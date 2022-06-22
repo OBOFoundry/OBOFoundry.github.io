@@ -27,7 +27,7 @@ tracker: https://github.com/ybradford/zebrafish-experimental-conditions-ontology
 activity_status: active
 repository: https://github.com/ybradford/zebrafish-experimental-conditions-ontology
 preferredPrefix: ZECO
-added: 2016-07-28
+github_date_added: 2016-07-28
 ---
 
 This ontology is designed to represent the experimental conditions

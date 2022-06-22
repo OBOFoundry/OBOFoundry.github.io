@@ -13,7 +13,7 @@ taxon:
 homepage: http://www.plantontology.org
 is_obsolete: true
 activity_status: inactive
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---
 
 REPLACED BY: PO. A controlled vocabulary of plant morphological and anatomical structures representing organs, tissues, cell types, and their biological relationships based on spatial and developmental organization. Note that this has been subsumed into the PO

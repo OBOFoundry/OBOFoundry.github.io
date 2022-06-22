@@ -19,7 +19,7 @@ taxon:
 title: Mosquito gross anatomy ontology
 activity_status: inactive
 repository: https://github.com/VEuPathDB-ontology/TGMA
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 A structured controlled vocabulary of the anatomy of mosquitoes.

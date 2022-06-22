@@ -36,7 +36,7 @@ activity_status: active
 repository: https://github.com/rat-genome-database/XCO-experimental-condition-ontology
 preferredPrefix: XCO
 depicted_by: http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif
-added: 2015-07-29
+github_date_added: 2015-07-29
 ---
 
 Conditions under which physiological and morphological measurements are made both in the clinic and in studies involving humans or model organisms.

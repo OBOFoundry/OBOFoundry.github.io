@@ -50,5 +50,5 @@ activity_status: active
 repository: https://github.com/obophenotype/upheno
 preferredPrefix: UPHENO
 domain: phenotype
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---

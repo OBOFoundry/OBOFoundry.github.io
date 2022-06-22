@@ -12,7 +12,7 @@ taxon:
 homepage: http://www.maizemap.org/
 is_obsolete: true
 activity_status: inactive
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---
 
 A structured controlled vocabulary for the anatomy of <i>Zea mays</i>.

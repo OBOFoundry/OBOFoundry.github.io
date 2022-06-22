@@ -29,7 +29,7 @@ publications:
 activity_status: active
 repository: https://github.com/obophenotype/biological-spatial-ontology
 preferredPrefix: BSPO
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 An ontology for respresenting spatial concepts, anatomical axes, gradients, regions, planes, sides, and surfaces. These concepts can be used at multiple biological scales and in a diversity of taxa, including plants, animals and fungi. The BSPO is used to provide a source of anatomical location descriptors for logically defining anatomical entity classes in anatomy ontologies.

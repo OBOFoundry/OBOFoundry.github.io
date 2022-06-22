@@ -17,5 +17,5 @@ products:
   - id: fix.obo
 title: Physico-chemical methods and properties
 activity_status: orphaned
-added: 2015-07-29
+github_date_added: 2015-07-29
 ---

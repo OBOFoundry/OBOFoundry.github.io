@@ -15,7 +15,7 @@ tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list
 activity_status: inactive
 is_obsolete: true
 replaced_by: ogsf
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 Using BFO as its framwork, OGI formalized the genomic element by defining an upper class 'genetic interval'. The definition of 'genetic interval' is "the spatial continuous physical entity which contains ordered genomic sets(DNA, RNA, Allele, Marker,etc.) between and including two points (Nucleic_Acid_Base_Residue) on a chromosome or RNA molecule which must have a liner primary sequence structure.

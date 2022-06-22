@@ -18,11 +18,11 @@
         "activity_status": "${data} is not one of ${schema}."
       }
     },
-    "added": {
+    "github_date_added": {
       "level": "error",
       "format": "date",
       "regex": "^\\d{4}-\\d{2}-\\d{2}$",
-      "description": "The date when the ontology was added to the OBO Foundry git repository, in the YYYY-MM-DD format"
+      "description": "The date a markdown file was first committed to the OBO Foundry git repository on GitHub, in the YYYY-MM-DD format. Note that in several cases, this is not reflective of the date to which the ontology was added/accepted into the OBO Foundry. For example, because the GitHub repository was created at 2015-07-28, many ontologies accepted into the OBO Foundry at earlier dates will be listed with this date as their GitHub added date. Ontologies that were renamed also won't reflect their date added to the OBO Foundry in this field, such as PECO/EO."
     },
     "browsers": {
       "level": "info",
@@ -485,7 +485,7 @@
   },
   "required": [
     "activity_status",
-    "added",
+    "github_date_added",
     "contact",
     "description",
     "homepage",

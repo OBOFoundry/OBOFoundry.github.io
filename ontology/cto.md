@@ -19,7 +19,7 @@ activity_status: active
 repository: https://github.com/ClinicalTrialOntology/CTO
 preferredPrefix: CTO
 domain: health
-added: 2020-07-08
+github_date_added: 2020-07-08
 ---
 
 The core Ontology of Clinical Trials (CTO) will serve as a structured resource integrating basic terms and concepts in the context of clinical trials. Thereby covering clinicaltrails.gov. CoreCTO will serve as a basic ontology to generate extended versions for specific applications such as annotation of variables in study documents from clinical trials.

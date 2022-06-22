@@ -48,7 +48,7 @@ license:
 activity_status: active
 repository: https://github.com/Radiobiology-Informatics-Consortium/RBO
 preferredPrefix: RBO
-added: 2021-01-28
+github_date_added: 2021-01-28
 ---
 
 The effects of all kinds of radiation on biological systems is the subject of much research, both on earth and in space environments.  This ontology is designed to support the needs of these investigators, particularly for organizing, describing and archiving data from experiments and observations examining these effects.  

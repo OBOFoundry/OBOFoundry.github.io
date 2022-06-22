@@ -9,7 +9,7 @@ homepage: http://neuinfo.org/
 is_obsolete: true
 replaced_by: doid
 activity_status: inactive
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---
 
 This ontology contains the former BIRNLex-Disease, version 1.3.2.

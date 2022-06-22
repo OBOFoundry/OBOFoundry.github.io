@@ -29,7 +29,7 @@ activity_status: active
 repository: https://github.com/EBISPOT/DUO
 preferredPrefix: DUO
 domain: information
-added: 2017-01-24
+github_date_added: 2017-01-24
 ---
 
 DUO allows to semantically tag datasets with restriction about their usage, making them discoverable automatically based on the authorization level of users, or intended usage.

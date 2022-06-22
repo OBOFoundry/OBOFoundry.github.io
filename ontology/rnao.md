@@ -28,5 +28,5 @@ build:
 tracker: https://github.com/BGSU-RNA/rnao/issues
 activity_status: inactive
 repository: https://github.com/BGSU-RNA/rnao
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---

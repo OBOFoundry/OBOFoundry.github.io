@@ -27,5 +27,5 @@ build:
 activity_status: active
 repository: https://github.com/allysonlister/swo
 preferredPrefix: SWO
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---

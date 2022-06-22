@@ -45,7 +45,7 @@ usages:
 activity_status: active
 repository: https://github.com/EBISPOT/ancestro
 preferredPrefix: HANCESTRO
-added: 2018-07-13
+github_date_added: 2018-07-13
 ---
 
 # Summary

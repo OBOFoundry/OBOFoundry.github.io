@@ -46,7 +46,7 @@ license:
   label: CC0 1.0
 activity_status: active
 repository: https://github.com/obophenotype/ncbitaxon
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 The NCBITaxon ontology is an automatic translation of the [NCBI taxonomy database](http://www.ncbi.nlm.nih.gov/taxonomy) into obo/owl.

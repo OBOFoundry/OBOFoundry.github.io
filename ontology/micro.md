@@ -19,7 +19,7 @@ products:
 activity_status: active
 repository: https://github.com/carrineblank/MicrO
 preferredPrefix: MICRO
-added: 2015-10-20
+github_date_added: 2015-10-20
 ---
 
 Includes terms and term synonyms extracted from > 1500 prokaryotic taxonomic descriptions, collected from a large number of taxonomic descriptions from Archaea, Cyanobacteria, Bacteroidetes, Firmicutes, and Mollicutes.

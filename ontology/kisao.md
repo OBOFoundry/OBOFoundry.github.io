@@ -71,7 +71,7 @@ publications:
 funded_by:
   - "NIH P41EB023912"
   - "NIH R35GM119771"
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 The Kinetic Simulation Algorithm Ontology (KiSAO) describes algorithms for simulating models in biology, their parameters, and their outputs.

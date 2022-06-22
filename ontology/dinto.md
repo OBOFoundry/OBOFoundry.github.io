@@ -20,7 +20,7 @@ publications:
 activity_status: inactive
 is_obsolete: true
 repository: https://github.com/labda/DINTO
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---
 
 DINTO is an ontology that describes and categorizes drug-drug interactions (DDIs) - a significant risk group for adverse effects associated with pharmaceutical treatment - as well as all the possible mechanisms that can lead to them (including both pharmacodynamic and pharmacokinetic DDI mechanisms).

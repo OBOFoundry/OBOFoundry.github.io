@@ -38,7 +38,7 @@ usages:
 activity_status: active
 repository: https://github.com/information-artifact-ontology/IAO
 preferredPrefix: IAO
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 The Information Artifact Ontology (IAO) is a new ontology of information entities, originally driven by work by the OBI digital entity and realizable information entity branch.

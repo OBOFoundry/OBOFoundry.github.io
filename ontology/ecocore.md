@@ -41,7 +41,7 @@ license:
 activity_status: active
 repository: https://github.com/EcologicalSemantics/ecocore
 preferredPrefix: ECOCORE
-added: 2017-08-17
+github_date_added: 2017-08-17
 ---
 
 This ontology aims to provide core semantics for ecological entities, such as ecological functions (for predators, prey, etc), food webs, and ecological interactions. The ontology, closely interoperates with existing OBO ontologies such as the Environment Ontology, the Population and Community Ontology (PCO), the Relations Ontology (RO), the Gene Ontology (for biological processes etc), the Phenotype and Quality Ontology (PATO), the Plant Ontology (PO), and many others. Ecocore is under active development.

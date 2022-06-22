@@ -16,7 +16,7 @@ products:
 title: Malaria Ontology
 activity_status: inactive
 repository: https://github.com/VEuPathDB-ontology/IDOMAL
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 An application ontology to cover all aspects of malaria (clinical, epidemiological, biological, etc) as well as the intervention attempts to control it.

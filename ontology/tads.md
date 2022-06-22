@@ -19,7 +19,7 @@ taxon:
 title: Tick Anatomy Ontology
 activity_status: inactive
 repository: https://github.com/VEuPathDB-ontology/TADS
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>

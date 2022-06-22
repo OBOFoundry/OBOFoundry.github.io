@@ -8,7 +8,7 @@ contact:
 homepage: http://lsdis.cs.uga.edu/projects/glycomics/propreo/
 is_obsolete: true
 activity_status: inactive
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---
 
 A comprehensive proteomics data and process provenance ontology.

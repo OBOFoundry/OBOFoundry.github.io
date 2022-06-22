@@ -31,7 +31,7 @@ usages:
 activity_status: active
 repository: https://github.com/obophenotype/mouse-anatomy-ontology
 preferredPrefix: EMAPA
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---
 
 ## BACKGROUND

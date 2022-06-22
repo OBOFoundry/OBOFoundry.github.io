@@ -19,7 +19,7 @@ license:
 activity_status: active
 repository: https://github.com/MPIO-Developers/MPIO
 preferredPrefix: MPIO
-added: 2017-11-02
+github_date_added: 2017-11-02
 ---
 
 MPIO (Minimum PDDI Information Ontology) is an OWL representation of minimum information regarding potential drug-drug interaction information. It is based on and meant to be use in alignment with DIDEO or DINTO.

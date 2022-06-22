@@ -39,7 +39,7 @@ license:
 activity_status: active
 repository: https://github.com/OpenLHS/LABO
 preferredPrefix: LABO
-added: 2019-08-29
+github_date_added: 2019-08-29
 ---
 
 LABO is an ontology of informational entities describing laboratory tests prescriptions and reporting documents. LABO is a component of a core ontological model, along with the ontology of drug prescriptions PDRO, that aims to enable interoperability between various clinical data sources in the context of a Learning Health System.

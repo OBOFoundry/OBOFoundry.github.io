@@ -24,7 +24,7 @@ products:
   - id: mfmo.owl
 activity_status: active
 preferredPrefix: MFMO
-added: 2015-08-11
+github_date_added: 2015-08-11
 ---
 
 ADD DESCRIPTION HERE

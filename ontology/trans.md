@@ -37,7 +37,7 @@ usages:
 activity_status: active
 repository: https://github.com/DiseaseOntology/PathogenTransmissionOntology
 preferredPrefix: TRANS
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 The Pathogen Transmission Ontology describes the tranmission methods of human disease pathogens describing how a pathogen is transmitted from one host, reservoir, or source to another host. The pathogen transmission may occur either directly or indirectly and may involve animate vectors or inanimate vehicles.

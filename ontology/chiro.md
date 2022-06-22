@@ -41,5 +41,5 @@ license:
 activity_status: active
 repository: https://github.com/obophenotype/chiro
 preferredPrefix: CHIRO
-added: 2019-09-26
+github_date_added: 2019-09-26
 ---

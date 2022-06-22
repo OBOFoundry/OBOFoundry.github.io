@@ -25,7 +25,7 @@ license:
 activity_status: active
 repository: https://github.com/Superraptor/GSSO
 preferredPrefix: GSSO
-added: 2020-10-01
+github_date_added: 2020-10-01
 ---
 
 GSSO on BioPortal: https://bioportal.bioontology.org/ontologies/GSSO

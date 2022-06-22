@@ -27,7 +27,7 @@ activity_status: active
 repository: https://github.com/CLO-Ontology/CLO
 preferredPrefix: CLO
 domain: anatomy and development
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 # Summary

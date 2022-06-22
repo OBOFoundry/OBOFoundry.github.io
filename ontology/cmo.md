@@ -36,7 +36,7 @@ activity_status: active
 repository: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology
 preferredPrefix: CMO
 depicted_by: http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 The Clinical Measurement Ontology is designed to be used to standardize morphological and physiological measurement records generated from clinical and model organism research and health programs.

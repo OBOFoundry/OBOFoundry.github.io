@@ -25,5 +25,5 @@ usages:
 activity_status: active
 repository: https://github.com/information-artifact-ontology/ontology-metadata
 preferredPrefix: OMO
-added: 2020-05-02
+github_date_added: 2020-05-02
 ---

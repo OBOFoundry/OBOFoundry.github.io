@@ -28,7 +28,7 @@ browsers:
 activity_status: active
 repository: https://github.com/ontoneo-project/Ontoneo
 preferredPrefix: ONTONEO
-added: 2016-11-22
+github_date_added: 2016-11-22
 ---
 
 The OntONeo suite is a collection of open ontologies available about Obstetric and Neonatal domain, currently designed to be composed by three complementary sub-ontologies covering several data from electronic health records (EHRs) involved in the care of the pregnant woman, and of her baby.

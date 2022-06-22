@@ -31,7 +31,7 @@ publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/27406187
     title: "The ontology of medically related social entities: recent developments"
 
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 This ontology covers the domain of social entities that are related to health care, such as demographic information (social entities for recording gender (but not sex) and marital status, for example) and the roles of various individuals and organizations (patient, hospital,etc.)

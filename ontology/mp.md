@@ -75,7 +75,7 @@ mailing_list: https://groups.google.com/forum/#!forum/phenotype-ontologies-edito
 activity_status: active
 repository: https://github.com/mgijax/mammalian-phenotype-ontology
 preferredPrefix: MP
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 The Mammalian Phenotype Ontology is under development as a community effort to provide standard terms for annotating mammalian phenotypic data.

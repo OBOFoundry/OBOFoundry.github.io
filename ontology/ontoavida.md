@@ -29,5 +29,5 @@ license:
 activity_status: active
 repository: https://gitlab.com/fortunalab/ontoavida
 preferredPrefix: ONTOAVIDA
-added: 2021-12-01
+github_date_added: 2021-12-01
 ---

@@ -23,7 +23,7 @@ tracker: https://github.com/microbialphenotypes/OMP-ontology/issues
 activity_status: active
 repository: https://github.com/microbialphenotypes/OMP-ontology
 preferredPrefix: OMP
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---
 
 OMP is a community ontology for annotating microbial phenotypes.

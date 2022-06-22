@@ -75,7 +75,7 @@ usages:
         description: A specific OBI term used to autocomplete in NIF search OBI:0100026 'organism'
 activity_status: active
 preferredPrefix: OBI
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 The Ontology for Biomedical Investigations (OBI) project is developing an integrated ontology for the description of life-science and clinical investigations.

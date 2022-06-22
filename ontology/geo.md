@@ -19,7 +19,7 @@ tracker: https://github.com/ufbmi/geographical-entity-ontology/issues
 activity_status: active
 repository: https://github.com/ufbmi/geographical-entity-ontology
 preferredPrefix: GEO
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 An ontology of geographical entities implemented in Web Ontology Language 2 (OWL2) and based on Basic Formal Ontology (BFO). The developers aim to adhere to the OBO Foundry principles.

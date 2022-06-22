@@ -21,7 +21,7 @@ build:
 is_obsolete: true
 replaced_by: uberon
 activity_status: inactive
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 Vertebrate skeletal anatomy ontology.

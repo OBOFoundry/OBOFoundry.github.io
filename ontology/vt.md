@@ -39,5 +39,5 @@ usages:
 repository: https://github.com/AnimalGenome/vertebrate-trait-ontology
 preferredPrefix: VT
 domain: phenotype
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---

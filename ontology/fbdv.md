@@ -35,7 +35,7 @@ browsers:
     url: http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008
 activity_status: active
 publications: []
-added: 2015-07-29
+github_date_added: 2015-07-29
 ---
 
 A structured controlled vocabulary of the development of <i>Drosophila melanogaster</i>.

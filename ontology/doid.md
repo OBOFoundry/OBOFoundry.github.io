@@ -68,7 +68,7 @@ activity_status: active
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 preferredPrefix: DOID
 depicted_by: http://www.disease-ontology.org/media/images/DO_logo.jpg
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 Creating a comprehensive classification of human diseases organized by etiology.

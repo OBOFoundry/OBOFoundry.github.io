@@ -30,7 +30,7 @@ preferredPrefix: HAO
 publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/21209921
     title: "A gross anatomy ontology for hymenoptera"
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)

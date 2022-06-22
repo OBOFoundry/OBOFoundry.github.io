@@ -24,7 +24,7 @@ license:
 activity_status: active
 repository: https://github.com/OAE-ontology/OAE
 preferredPrefix: OAE
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 The Ontology of Adverse Events (OAE) is a biomedical ontology in the domain of adverse events. OAE aims to standardize adverse event annotation, integrate various adverse event data, and support computer-assisted reasoning.  OAE is a community-based ontology. Its development follows the OBO Foundry principles.

@@ -14,7 +14,7 @@ products:
 title: microRNA Ontology
 is_obsolete: true
 activity_status: inactive
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 microRNA Ontology (miRNAO) is an application ontology and it has been developed in order to drive miRNA databases.

@@ -27,7 +27,7 @@ publications:
 activity_status: active
 repository: https://github.com/bio-ontology-research-group/unit-ontology
 preferredPrefix: UO
-added: 2015-07-29
+github_date_added: 2015-07-29
 ---
 
 See also:

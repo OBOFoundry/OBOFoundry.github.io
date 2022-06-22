@@ -29,7 +29,7 @@ tracker: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies/issue
 activity_status: active
 repository: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
 preferredPrefix: ONE
-added: 2020-11-17
+github_date_added: 2020-11-17
 ---
 
 Nutritional epidemiology is a specific research area. The generic ontologies for food science, nutrition science or medical science failed to cover the specific characteristics of nutritional epidemiologic studies. As a result, we developed the ontology for nutritional epidemiology (ONE) in order to describe nutritional epidemiologic studies accurately.

@@ -10,7 +10,7 @@ homepage: http://neuinfo.org/
 is_obsolete: true
 replaced_by: cl
 activity_status: inactive
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---
 
 Cell types from NIFSTD

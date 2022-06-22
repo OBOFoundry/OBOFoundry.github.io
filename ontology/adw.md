@@ -8,7 +8,7 @@ contact:
 homepage: http://www.animaldiversity.org
 is_obsolete: true
 activity_status: inactive
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---
 
 An ontology for animal life history and natural history characteristics suitable for populations and higher taxonomic entities.

@@ -25,7 +25,7 @@ activity_status: active
 repository: https://github.com/evoinfo/cdao
 preferredPrefix: CDAO
 domain: organisms
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 A formalization of concepts and relations relevant to evolutionary comparative analysis, such as phylogenetic trees, OTUs (operational taxonomic units) and compared characters (including molecular characters as well as other types). CDAO is being developed by scientists in biology, evolution, and computer science

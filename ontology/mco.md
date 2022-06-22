@@ -44,7 +44,7 @@ license:
 activity_status: active
 repository: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 preferredPrefix: MCO
-added: 2019-02-15
+github_date_added: 2019-02-15
 ---
 
 Enter a detailed description of your ontology here

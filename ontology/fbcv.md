@@ -36,7 +36,7 @@ usages:
 activity_status: active
 repository: https://github.com/FlyBase/flybase-controlled-vocabulary
 publications: []
-added: 2015-08-06
+github_date_added: 2015-08-06
 ---
 
 A structured controlled vocabulary used for various aspects of annotation by FlyBase. It includes the Drosophila Phenotype Ontology (dpo) which is also released separately.

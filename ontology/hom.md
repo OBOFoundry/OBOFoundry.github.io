@@ -24,7 +24,7 @@ activity_status: active
 repository: https://github.com/BgeeDB/homology-ontology
 preferredPrefix: HOM
 domain: anatomy and development
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology. The ontology can be cited as:

@@ -8,7 +8,7 @@ contact:
 homepage: http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html
 is_obsolete: true
 activity_status: inactive
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---
 
 An ontology for data retrieval and exchange in the fields of multiple DNA/RNA  alignment, protein sequence and protein structure alignment.

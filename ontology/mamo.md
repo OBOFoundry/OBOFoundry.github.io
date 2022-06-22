@@ -22,7 +22,7 @@ license:
 activity_status: active
 preferredPrefix: MAMO
 domain: simulation
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features.

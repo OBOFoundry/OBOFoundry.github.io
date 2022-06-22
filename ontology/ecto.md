@@ -52,5 +52,5 @@ activity_status: active
 repository: https://github.com/EnvironmentOntology/environmental-exposure-ontology
 preferredPrefix: ECTO
 depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/ecto-logos/ecto-logo_black-banner.png
-added: 2019-09-24
+github_date_added: 2019-09-24
 ---

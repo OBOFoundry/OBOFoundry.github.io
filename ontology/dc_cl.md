@@ -13,7 +13,7 @@ homepage: http://www.dukeontologygroup.org/Projects.html
 is_obsolete: true
 replaced_by: cl
 activity_status: inactive
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---
 
 Representation of types of dendritic cell. Note that the domain of this ontology is wholly subsumed by the domain of the Cell ontology (CL).

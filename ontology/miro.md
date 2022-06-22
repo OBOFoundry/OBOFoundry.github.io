@@ -15,7 +15,7 @@ taxon:
 title: Mosquito insecticide resistance
 activity_status: inactive
 repository: https://github.com/VEuPathDB-ontology/MIRO
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 Application ontology for entities related to insecticide resistance in mosquitos

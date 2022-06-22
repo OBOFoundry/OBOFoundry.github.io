@@ -28,7 +28,7 @@ license:
 activity_status: active
 repository: https://github.com/echinoderm-ontology/ecao_ontology
 preferredPrefix: ECAO
-added: 2020-05-06
+github_date_added: 2020-05-06
 ---
 
 This ontology is intended to be used for the description and curation of information related to gene regulatory processes in echinoderms (e.g., expression patterns of endogenous genes and reporter DNA constructs, phenotypic effects of gene perturbations, etc.). 

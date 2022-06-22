@@ -8,7 +8,7 @@ contact:
 homepage: http://www.gramene.org/plant_ontology/
 is_obsolete: true
 activity_status: inactive
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---
 
 A structured controlled vocabulary for the anatomy of Graminae. Please note that this ontology has now been superseded by the Plant Ontology.

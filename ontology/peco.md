@@ -27,7 +27,7 @@ activity_status: active
 repository: https://github.com/Planteome/plant-experimental-conditions-ontology
 preferredPrefix: PECO
 depicted_by: http://planteome.org/sites/default/files/garland_logo.PNG
-added: 2017-06-05
+github_date_added: 2017-06-05
 ---
 
 A structured, controlled vocabulary for the representation of plant experimental conditions.

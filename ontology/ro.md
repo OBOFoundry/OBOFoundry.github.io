@@ -66,7 +66,7 @@ usages:
 activity_status: active
 repository: https://github.com/oborel/obo-relations
 preferredPrefix: RO
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 ![logo](/images/ro_logo.png)

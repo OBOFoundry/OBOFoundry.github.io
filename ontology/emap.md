@@ -24,7 +24,7 @@ build:
 is_obsolete: true
 replaced_by: emapa
 activity_status: inactive
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 ## BACKGROUND

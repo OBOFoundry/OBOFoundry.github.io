@@ -52,7 +52,7 @@ publications:
     title: "The anatomy of phenotype ontologies: principles, properties and applications"
   - id: https://www.ncbi.nlm.nih.gov/pubmed/15642100
     title: "Using ontologies to describe mouse phenotypes"
-added: 2015-07-28
+github_date_added: 2015-07-28
 ---
 
 Phenotypic qualities (properties). This ontology can be used in conjunction with other ontologies such as GO or anatomical ontologies to refer to phenotypes. Examples of qualities are red, ectopic, high temperature, fused, small, edematous and arrested.

@@ -25,7 +25,7 @@ products:
 activity_status: active
 repository: https://github.com/obophenotype/developmental-stage-ontologies
 domain: anatomy and development
-added: 2015-08-21
+github_date_added: 2015-08-21
 ---
 
 <img alt="HumanEmbryogenesis" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/HumanEmbryogenesis.svg/500px-HumanEmbryogenesis.svg.png"/>

@@ -22,7 +22,7 @@ license:
 activity_status: active
 repository: https://github.com/obcs/obcs
 preferredPrefix: OBCS
-added: 2015-07-31
+github_date_added: 2015-07-31
 ---
 
 The Ontology of Biological and Clinical Statistics (OBCS) is a biomedical ontology in the domain of biological and clinical statistics. OBCS is primarily targeted for statistical term representation in the fields in biological, biomedical, and clinical domains.
