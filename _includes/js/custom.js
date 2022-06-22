@@ -142,6 +142,9 @@ jQuery(document).ready(function () {
             if(data[i].hasOwnProperty("domain") && data[i]['domain'] !== undefined){
                 domainInner[0] = data[i]['domain'];
             }
+            if(description !== undefined && description.toString().length > 140){
+                description = description.toString().slice(0, 140) + '...'
+            }
             if (data[i]["contact"]){
                 contact = data[i]["contact"]["email"];
             }
@@ -151,10 +154,8 @@ jQuery(document).ready(function () {
             }
             if (data[i]["in_foundry_order"]) {
                 foundry_order = `
-                        <a class="col-sm-1" href="/principles/fp-000-summary.html">
-                            <button type="button" class="btn btn-default btn-sm" aria-label="Left Align">
+                        <a class="col-sm-1 btn btn-default btn-sm" href="/principles/fp-000-summary.html" aria-label="Left Align">
                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                            </button>
                         </a>             
                 `;
             }
@@ -182,44 +183,30 @@ jQuery(document).ready(function () {
                         </small>
                     </td>
                     <td class="col-sm-5">
-                        <small class="row">
-                            <a class="col-sm-1" href="ontology/${id}.html">
-                              <button type="button" class="btn btn-default btn-sm" aria-label="Left Align" title="More details">
+                        <div class="ic-display">
+                            <a class="btn btn-default btn-sm" href="ontology/${id}.html" aria-label="Left Align" title="More details">
                                   <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-                              </button>
                             </a>
-                            <a class="col-sm-1" href="${homepage}">
-                               <button type="button" class="btn btn-default btn-sm" aria-label="Left Align" title="Project home">
+                            <a class="btn btn-default btn-sm" href="${homepage}" aria-label="Left Align" title="Project home">
                                  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                               </button>
                             </a>
-                            <a class="col-sm-1" href="${tracker}">
-                              <button type="button" class="btn btn-default btn-sm" aria-label="Left Align" title="Tracker">
+                            <a class="btn btn-default btn-sm" href="${tracker}" aria-label="Left Align" title="Tracker">
                                 <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-                              </button>
                             </a>
-                            <a class="col-sm-1" href="mailto:${contact}">\
-                              <button type="button" class="btn btn-default btn-sm" aria-label="Left Align" title="Email ontology devs">
+                            <a class="btn btn-default btn-sm" href="mailto:${contact}" aria-label="Left Align" title="Email ontology devs">\
                                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                              </button>
                             </a>
-                            <a class="col-sm-1" href="http://purl.obolibrary.org/obo/${id}.owl">
-                              <button type="button" class="btn btn-default btn-sm" aria-label="Left Align" title="Download file">
+                            <a class="btn btn-default btn-sm" href="http://purl.obolibrary.org/obo/${id}.owl" aria-label="Left Align" title="Download file">
                                 <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
-                               </button>
                             </a>
-                            <a class="col-sm-1" href="http://www.ontobee.org/browser/index.php?o=${id}">
-                              <button type="button" class="btn btn-default btn-sm" aria-label="Left Align" title="Browse on Ontobee">
+                            <a class="btn btn-default btn-sm" href="http://www.ontobee.org/browser/index.php?o=${id}" aria-label="Left Align" title="Browse on Ontobee">
                                 <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-                              </button>
                             </a>
-                            <a class="col-sm-1" href="${publication}">
-                              <button type="button" class="btn btn-default btn-sm" aria-label="Left Align" title="Publications list">
+                            <a class="btn btn-default btn-sm" href="${publication}" aria-label="Left Align" title="Publications list">
                                 <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
-                              </button>
                             </a>
                             ${foundry_order}
-                        </small>
+                        </div>
                     </td>
                     <td class="col-sm-1">
                         <a href="${license_url}" >
