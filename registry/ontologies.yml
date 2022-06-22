@@ -1,6 +1,5 @@
 ontologies:
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: BioPortal
     title: BioPortal Browser
@@ -43,7 +42,6 @@ ontologies:
     type: owl_import
     user: http://obofoundry.org
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: CHEBI
     title: EBI CHEBI Browser
@@ -108,7 +106,6 @@ ontologies:
       url: http://zfin.org/action/expression/experiment?id=ZDB-EXP-190627-10
     user: http://zfin.org
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: DO
     title: DO Browser
@@ -185,7 +182,6 @@ ontologies:
       url: https://www.iedb.org
     user: https://www.iedb.org
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: AmiGO
     title: Gene Ontology AmiGO 2 Browser
@@ -349,7 +345,6 @@ ontologies:
     type: mapping
     user: https://www.rhea-db.org
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: BioPortal
     title: BioPortal Browser
@@ -446,7 +441,6 @@ ontologies:
       url: https://neuinfo.org/data/search?q=organism&l=organism#all
     user: http://www.neuinfo.org
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: BioPortal
     title: BioPortal Ontology Browser
@@ -508,7 +502,6 @@ ontologies:
     type: annotation
     user: https://hpo.jax.org/app/
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: Planteome
     title: Planteome browser
@@ -589,7 +582,6 @@ ontologies:
       url: http://archive.gramene.org/db/ontology/search?id=PO:0025034
     user: http://gramene.org/
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: BioPortal
     title: BioPortal Browser
@@ -656,7 +648,6 @@ ontologies:
       url: http://purl.obolibrary.org/obo/CL_0001201
     user: http://www.obofoundry.org/ontology/cl.html
 - activity_status: active
-  added: 2015-07-28
   build:
     infallible: 0
     method: obo2owl
@@ -705,7 +696,6 @@ ontologies:
       url: http://www.xenbase.org/anatomy/showanatomy.do?method=displayAnatomySummary&anatomyId=463
     user: http://www.xenbase.org
 - activity_status: active
-  added: 2015-07-28
   build:
     infallible: 1
     method: obo2owl
@@ -754,7 +744,35 @@ ontologies:
       url: http://zfin.org/ZFA:0000029
     user: http://zfin.org
 - activity_status: active
-  added: 2016-06-04
+  contact:
+    email: alpha.tom.kodamullil@scai.fraunhofer.de
+    github: akodamullil
+    label: Alpha Tom Kodamullil
+    orcid: 0000-0001-9896-3531
+  dependencies:
+  - id: bfo
+  description: Alzheimer's Disease Ontology is a knowledge-based ontology that encompasses
+    varieties of concepts related to Alzheimer'S Disease, structured by upper level
+    Basic Formal Ontology(BFO). This Ontology is enriched by the interrelated entities
+    that demonstrate the network of the understanding on Alzheimer's disease and can
+    be readily applied for text mining.
+  domain: health
+  homepage: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO
+  id: ado
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/ado.owl
+  preferredPrefix: ADO
+  products:
+  - id: ado.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ado.owl
+  repository: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO
+  title: Alzheimer's Disease Ontology
+  tracker: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO/issues
+- activity_status: active
   build:
     checkout: git clone  https://github.com/AgriculturalSemantics/agro.git
     path: .
@@ -816,7 +834,6 @@ ontologies:
       and datasets for use in quantitative analyses.
     user: https://gardian.bigdata.cgiar.org/
 - activity_status: active
-  added: 2021-05-06
   build:
     checkout: git clone https://github.com/insect-morphology/aism
     path: .
@@ -858,7 +875,6 @@ ontologies:
   title: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
   tracker: https://github.com/insect-morphology/aism/issues
 - activity_status: active
-  added: 2020-04-21
   build:
     checkout: git clone https://github.com/EBISPOT/amphx_ontology.git
     path: .
@@ -891,7 +907,6 @@ ontologies:
   title: The Amphioxus Development and Anatomy Ontology
   tracker: https://github.com/EBISPOT/amphx_ontology/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/obophenotype/ascomycete-phenotype-ontology/master/apo.obo
@@ -927,7 +942,6 @@ ontologies:
   title: Ascomycete phenotype ontology
   tracker: https://github.com/obophenotype/ascomycete-phenotype-ontology/issues
 - activity_status: active
-  added: 2019-04-04
   contact:
     email: hoganwr@ufl.edu
     github: hoganwr
@@ -956,7 +970,6 @@ ontologies:
   title: Apollo Structured Vocabulary
   tracker: https://github.com/ApolloDev/apollo-sv/issues
 - activity_status: active
-  added: 2017-11-15
   contact:
     email: mcarthua@mcmaster.ca
     github: agmcarthur
@@ -985,7 +998,6 @@ ontologies:
   title: Antibiotic Resistance Ontology
   tracker: https://github.com/arpcard/aro/issues
 - activity_status: active
-  added: 2015-07-29
   contact:
     email: rlwalls2008@gmail.com
     github: ramonawalls
@@ -1014,7 +1026,6 @@ ontologies:
   title: Biological Collections Ontology
   tracker: https://github.com/BiodiversityOntologies/bco/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/obophenotype/biological-spatial-ontology.git
     infallible: 1
@@ -1051,7 +1062,6 @@ ontologies:
   title: Biological Spatial Ontology
   tracker: https://github.com/obophenotype/biological-spatial-ontology/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/BRENDA-Enzymes/BTO.git
     path: .
@@ -1089,7 +1099,6 @@ ontologies:
   title: BRENDA tissue / enzyme source
   tracker: https://github.com/BRENDA-Enzymes/BTO/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     method: obo2owl
     notes: moving to owl soon
@@ -1118,7 +1127,6 @@ ontologies:
   title: Common Anatomy Reference Ontology
   tracker: https://github.com/obophenotype/caro/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/cdao.owl
@@ -1149,7 +1157,6 @@ ontologies:
   title: Comparative Data Analysis Ontology
   tracker: https://github.com/evoinfo/cdao/issues
 - activity_status: active
-  added: 2021-02-08
   build:
     checkout: git clone https://github.com/Southern-Cross-Plant-Science/cdno.git
     path: .
@@ -1192,7 +1199,6 @@ ontologies:
   title: Compositional Dietary Nutrition Ontology
   tracker: https://github.com/Southern-Cross-Plant-Science/cdno/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     method: owl2obo
     source_url: https://raw.githubusercontent.com/semanticchemistry/semanticchemistry/master/ontology/cheminf.owl
@@ -1225,7 +1231,6 @@ ontologies:
   title: Chemical Information Ontology
   tracker: https://github.com/semanticchemistry/semanticchemistry/issues
 - activity_status: active
-  added: 2019-09-26
   build:
     checkout: git clone https://github.com/obophenotype/chiro.git
     path: .
@@ -1276,7 +1281,6 @@ ontologies:
   title: CHEBI Integrated Role Ontology
   tracker: https://github.com/obophenotype/chiro/issues
 - activity_status: active
-  added: 2015-07-28
   contact:
     email: batchelorc@rsc.org
     github: batchelorc
@@ -1301,7 +1305,6 @@ ontologies:
   title: Chemical Methods Ontology
   tracker: https://github.com/rsc-ontologies/rsc-cmo/issues
 - activity_status: active
-  added: 2020-03-12
   contact:
     email: yongqunh@med.umich.edu
     github: yongqunh
@@ -1329,7 +1332,6 @@ ontologies:
   title: Coronavirus Infectious Disease Ontology
   tracker: https://github.com/cido-ontology/cido/issues
 - activity_status: active
-  added: 2016-05-17
   contact:
     email: frederic.bastian@unil.ch
     github: fbastian
@@ -1355,7 +1357,6 @@ ontologies:
   title: Confidence Information Ontology
   tracker: https://github.com/BgeeDB/confidence-information-ontology
 - activity_status: active
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/obophenotype/cell-ontology.git
     email_cc: cl_edit@googlegroups.com
@@ -1511,7 +1512,6 @@ ontologies:
     type: annotation
     user: http://fantom5-collaboration.gsc.riken.jp/
 - activity_status: active
-  added: 2020-10-08
   build:
     checkout: git clone https://github.com/luis-gonzalez-m/Collembola.git
     path: .
@@ -1544,7 +1544,6 @@ ontologies:
   title: Collembola Anatomy Ontology
   tracker: https://github.com/luis-gonzalez-m/Collembola/issues
 - activity_status: active
-  added: 2015-07-28
   contact:
     email: siiraa@umich.edu
     github: siiraa
@@ -1577,7 +1576,6 @@ ontologies:
   title: Cell Line Ontology
   tracker: https://github.com/CLO-Ontology/CLO/issues
 - activity_status: active
-  added: 2020-05-06
   build:
     checkout: git clone https://github.com/EBISPOT/clyh_ontology.git
     path: .
@@ -1612,7 +1610,6 @@ ontologies:
   title: Clytia hemisphaerica Development and Anatomy Ontology
   tracker: https://github.com/EBISPOT/clyh_ontology/issues
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: RGD
     title: RGD Ontology Browser
@@ -1656,7 +1653,6 @@ ontologies:
   title: Clinical measurement ontology
   tracker: https://github.com/rat-genome-database/CMO-Clinical-Measurement-Ontology/issues
 - activity_status: active
-  added: 2020-04-15
   contact:
     email: bpeters@lji.org
     github: bpeters42
@@ -1697,7 +1693,6 @@ ontologies:
   title: Core Ontology for Biology and Biomedicine
   tracker: https://github.com/OBOFoundry/COB/issues
 - activity_status: active
-  added: 2021-12-14
   contact:
     email: entiminae@gmail.com
     github: JCGiron
@@ -1736,7 +1731,6 @@ ontologies:
   title: Coleoptera Anatomy Ontology (COLAO)
   tracker: https://github.com/insect-morphology/colao/issues
 - activity_status: active
-  added: 2017-07-20
   build:
     checkout: git clone https://github.com/data2health/contributor-role-ontology.git
     path: src/ontology
@@ -1770,7 +1764,6 @@ ontologies:
   title: Contributor Role Ontology
   tracker: https://github.com/data2health/contributor-role-ontology/issues
 - activity_status: active
-  added: 2015-07-29
   build:
     checkout: git clone https://github.com/obophenotype/ctenophore-ontology.git
     method: vcs
@@ -1808,7 +1801,6 @@ ontologies:
   title: Ctenophore Ontology
   tracker: https://github.com/obophenotype/ctenophore-ontology/issues
 - activity_status: active
-  added: 2020-07-08
   contact:
     email: alpha.tom.kodamullil@scai.fraunhofer.de
     github: akodamullil
@@ -1836,7 +1828,6 @@ ontologies:
   title: 'CTO: Core Ontology of Clinical Trials'
   tracker: https://github.com/ClinicalTrialOntology/CTO/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     method: owl2obo
     publications:
@@ -1866,7 +1857,6 @@ ontologies:
   title: Cardiovascular Disease Ontology
   tracker: https://github.com/OpenLHS/CVDO/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     insert_ontology_id: true
     method: obo2owl
@@ -1905,7 +1895,6 @@ ontologies:
   tracker: https://github.com/dictyBase/migration-data/issues
   twitter: dictybase
 - activity_status: active
-  added: 2015-08-21
   build:
     checkout: git clone https://github.com/obophenotype/dicty-phenotype-ontology.git
     path: .
@@ -1943,7 +1932,6 @@ ontologies:
   tracker: https://github.com/obophenotype/dicty-phenotype-ontology/issues
   twitter: dictybase
 - activity_status: active
-  added: 2015-08-21
   contact:
     email: mbrochhausen@gmail.com
     github: mbrochhausen
@@ -1968,7 +1956,6 @@ ontologies:
   title: Drug-drug Interaction and Drug-drug Interaction Evidence Ontology
   tracker: https://github.com/DIDEO/DIDEO/issues
 - activity_status: active
-  added: 2021-11-05
   browsers:
   - label: DO
     title: DO Browser
@@ -2012,7 +1999,6 @@ ontologies:
       url: https://www.disease-ontology.org/?id=DOID:0050665
     user: https://www.disease-ontology.org
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: FB
     title: FlyBase Browser
@@ -2060,7 +2046,6 @@ ontologies:
       url: http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBcv:0002030
     user: http://flybase.org
 - activity_status: active
-  added: 2015-07-28
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/dron.owl
@@ -2093,7 +2078,6 @@ ontologies:
   title: The Drug Ontology
   tracker: https://github.com/ufbmi/dron/issues
 - activity_status: active
-  added: 2017-01-24
   build:
     checkout: git clone https://github.com/EBISPOT/duo.git
     path: .
@@ -2127,7 +2111,6 @@ ontologies:
   title: Data Use Ontology
   tracker: https://github.com/EBISPOT/DUO/issues
 - activity_status: active
-  added: 2020-05-06
   build:
     checkout: git clone https://github.com/echinoderm-ontology/ecao_ontology.git
     path: .
@@ -2162,7 +2145,6 @@ ontologies:
   title: The Echinoderm Anatomy and Development Ontology
   tracker: https://github.com/echinoderm-ontology/ecao_ontology/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     infallible: 1
     method: obo2owl
@@ -2227,7 +2209,6 @@ ontologies:
     type: annotation
     user: https://monarchinitiative.org/
 - activity_status: active
-  added: 2017-08-17
   build:
     checkout: git clone https://github.com/EcologicalSemantics/ecocore.git
     path: .
@@ -2275,7 +2256,6 @@ ontologies:
   title: An ontology of core ecological entities
   tracker: https://github.com/EcologicalSemantics/ecocore/issues
 - activity_status: active
-  added: 2019-09-24
   build:
     checkout: git clone https://github.com/EnvironmentOntology/environmental-exposure-ontology.git
     path: .
@@ -2351,7 +2331,6 @@ ontologies:
   title: Environmental conditions, treatments and exposures ontology
   tracker: https://github.com/EnvironmentOntology/environmental-exposure-ontology/issues
 - activity_status: active
-  added: 2015-08-21
   build:
     method: obo2owl
     notes: new url soon
@@ -2389,7 +2368,6 @@ ontologies:
     seeAlso: https://www.biosharing.org/biodbcore-000659
     user: http://www.informatics.jax.org/expression.shtml
 - activity_status: active
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/EnvironmentOntology/envo.git
     email_cc: cjmungall@lbl.gov
@@ -2492,7 +2470,6 @@ ontologies:
       url: https://www.planetmicrobe.org/project/#/samples/200
     user: https://www.planetmicrobe.org/project/
 - activity_status: active
-  added: 2021-12-16
   contact:
     email: alpha.tom.kodamullil@scai.fraunhofer.de
     github: akodamullil
@@ -2524,7 +2501,6 @@ ontologies:
   title: Epilepsy Ontology
   tracker: https://github.com/SCAI-BIO/EpilepsyOntology/issues
 - activity_status: active
-  added: 2018-01-02
   contact:
     email: jiezheng@pennmedicine.upenn.edu
     github: zhengj2007
@@ -2568,7 +2544,6 @@ ontologies:
     type: annotation and query
     user: https://microbiomedb.org
 - activity_status: active
-  added: 2015-07-28
   contact:
     email: annethessen@gmail.com
     github: diatomsRcool
@@ -2595,7 +2570,6 @@ ontologies:
   title: Exposure ontology
   tracker: https://github.com/CTDbase/exposure-ontology/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/obophenotype/fungal-anatomy-ontology.git
     infallible: 1
@@ -2629,7 +2603,6 @@ ontologies:
   title: Fungal gross anatomy
   tracker: https://github.com/obophenotype/fungal-anatomy-ontology/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/dosumis/fbbi/master/src/ontology/fbbi.obo
@@ -2659,7 +2632,6 @@ ontologies:
   title: Biological Imaging Methods Ontology
   tracker: https://github.com/CRBS/Biological_Imaging_Methods_Ontology/issues
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: FB
     title: FlyBase Browser
@@ -2733,7 +2705,6 @@ ontologies:
       url: http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBbt:00005106
     user: http://flybase.org
 - activity_status: active
-  added: 2015-08-06
   browsers:
   - label: FB
     title: FlyBase Browser
@@ -2777,7 +2748,6 @@ ontologies:
       url: http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBcv:0000391
     user: http://flybase.org
 - activity_status: active
-  added: 2015-07-29
   browsers:
   - label: FB
     title: FlyBase Browser
@@ -2822,7 +2792,6 @@ ontologies:
   title: Drosophila development
   tracker: http://purl.obolibrary.org/obo/fbdv/tracker
 - activity_status: active
-  added: 2020-07-29
   contact:
     email: georgeta.bordea@u-bordeaux.fr
     github: getbordea
@@ -2846,7 +2815,6 @@ ontologies:
   title: Food Interactions with Drugs Evidence Ontology
   tracker: https://github.com/getbordea/fideo/issues
 - activity_status: active
-  added: 2015-12-16
   build:
     method: owl2obo
     source_url: https://github.com/flora-phenotype-ontology/flopoontology/raw/master/ontology/flopo.owl
@@ -2880,7 +2848,6 @@ ontologies:
   title: Flora Phenotype Ontology
   tracker: https://github.com/flora-phenotype-ontology/flopoontology/issues
 - activity_status: active
-  added: 2019-12-04
   contact:
     email: polcaes@gmail.com
     github: pcastellanoescuder
@@ -2917,7 +2884,6 @@ ontologies:
   title: Food-Biomarker Ontology
   tracker: https://github.com/pcastellanoescuder/FoodBiomarkerOntology/issues
 - activity_status: active
-  added: 2016-07-25
   contact:
     email: damion_dooley@sfu.ca
     github: ddooley
@@ -2968,7 +2934,6 @@ ontologies:
   title: Food Ontology
   tracker: https://github.com/FoodOntology/foodon/issues/
 - activity_status: active
-  added: 2020-05-06
   build:
     checkout: git clone https://github.com/futres/fovt.git
     path: .
@@ -3024,7 +2989,6 @@ ontologies:
   title: FuTRES Ontology of Vertebrate Traits
   tracker: https://github.com/futres/fovt/issues
 - activity_status: active
-  added: 2015-07-29
   build:
     infallible: 1
     method: obo2owl
@@ -3067,7 +3031,6 @@ ontologies:
       url: https://www.pombase.org/term/FYPO:0000059
     user: https://www.pombase.org
 - activity_status: active
-  added: 2020-08-11
   contact:
     email: rbca.jackson@gmail.com
     github: beckyjackson
@@ -3097,7 +3060,6 @@ ontologies:
       IHCC cohort browser
     user: https://ihccglobal.org/
 - activity_status: active
-  added: 2016-07-25
   contact:
     email: damion_dooley@sfu.ca
     github: ddooley
@@ -3130,7 +3092,6 @@ ontologies:
   title: Genomic Epidemiology Ontology
   tracker: https://github.com/GenEpiO/genepio/issues/
 - activity_status: active
-  added: 2017-01-05
   build:
     checkout: git clone https://github.com/monarch-initiative/GENO-ontology.git
     path: src/ontology
@@ -3147,9 +3108,9 @@ ontologies:
   id: geno
   layout: ontology_detail
   license:
-    label: CC BY-SA 2.0
-    logo: https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png
-    url: https://creativecommons.org/licenses/by-sa/2.0/
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/geno.owl
   preferredPrefix: GENO
   products:
@@ -3162,7 +3123,6 @@ ontologies:
   title: Genotype Ontology
   tracker: https://github.com/monarch-initiative/GENO-ontology/issues
 - activity_status: active
-  added: 2015-07-28
   contact:
     email: hoganwr@gmail.com
     github: hoganwr
@@ -3186,7 +3146,6 @@ ontologies:
   title: Geographical Entity Ontology
   tracker: https://github.com/ufbmi/geographical-entity-ontology/issues
 - activity_status: active
-  added: 2019-08-15
   browsers:
   - label: Structure Browser
     title: GNOme Glycan Structure Browser
@@ -3230,6 +3189,9 @@ ontologies:
       from OWL)
     id: gno.json
     ontology_purl: http://purl.obolibrary.org/obo/gno.json
+  publications:
+  - id: https://doi.org/10.5281/zenodo.6678278
+    title: GNOme - Glycan Naming and Subsumption Ontology
   repository: https://github.com/glygen-glycan-data/GNOme
   tags:
   - glycan structure
@@ -3252,7 +3214,6 @@ ontologies:
       url: http://purl.obolibrary.org/obo/CHEBI_167503
     user: https://www.ebi.ac.uk/chebi/init.do
 - activity_status: active
-  added: 2018-07-13
   contact:
     email: danielle.welter@uni.lu
     github: daniwelter
@@ -3317,7 +3278,6 @@ ontologies:
       url: https://www.ebi.ac.uk/ols/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
     user: http://foodon.org
 - activity_status: active
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/hymao/hao.git
     system: git
@@ -3355,7 +3315,6 @@ ontologies:
   title: Hymenoptera Anatomy Ontology
   tracker: https://github.com/hymao/hao/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/BgeeDB/homology-ontology.git
     method: vcs
@@ -3385,7 +3344,6 @@ ontologies:
   title: Homology Ontology
   tracker: https://github.com/BgeeDB/homology-ontology/issues
 - activity_status: active
-  added: 2015-08-21
   build:
     infallible: 1
     method: obo2owl
@@ -3416,7 +3374,6 @@ ontologies:
   title: Human Developmental Stages
   tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
 - activity_status: active
-  added: 2020-11-28
   contact:
     email: fernanda.dorea@sva.se
     github: nandadorea
@@ -3451,7 +3408,6 @@ ontologies:
   title: Health Surveillance Ontology
   tracker: https://github.com/SVA-SE/HSO/issues/
 - activity_status: active
-  added: 2019-06-05
   contact:
     email: aellenhicks@gmail.com
     github: aellenhicks
@@ -3477,7 +3433,6 @@ ontologies:
   title: Hypertension Ontology
   tracker: https://github.com/aellenhicks/htn_owl/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/iao.owl
@@ -3524,7 +3479,6 @@ ontologies:
     type: owl_import
     user: http://obofoundry.org
 - activity_status: active
-  added: 2019-09-02
   contact:
     email: liumeng94@sjtu.edu.cn
     github: Lemon-Liu
@@ -3549,7 +3503,6 @@ ontologies:
   title: Integrative and Conjugative Element Ontology
   tracker: https://github.com/ontoice/ICEO/issues
 - activity_status: active
-  added: 2015-08-21
   contact:
     email: yongqunh@med.umich.edu
     github: yongqunh
@@ -3579,7 +3532,6 @@ ontologies:
       that has over 20 institutes involved.
     user: http://kpmp.org
 - activity_status: active
-  added: 2015-07-28
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/ido.owl
@@ -3612,7 +3564,6 @@ ontologies:
   title: Infectious Disease Ontology
   tracker: https://github.com/infectious-disease-ontology/infectious-disease-ontology/issues
 - activity_status: active
-  added: 2018-03-10
   contact:
     email: yongqunh@med.umich.edu
     github: yongqunh
@@ -3636,7 +3587,6 @@ ontologies:
   title: Interaction Network Ontology
   tracker: https://github.com/INO-ontology/ino/issues
 - activity_status: active
-  added: 2019-08-29
   contact:
     email: paul.fabry@usherbrooke.ca
     github: pfabry
@@ -3682,7 +3632,6 @@ ontologies:
     type: database architecture
     user: https://griis.ca/
 - activity_status: active
-  added: 2021-12-14
   contact:
     email: lagonzalezmo@unal.edu.co
     github: luis-gonzalez-m
@@ -3721,7 +3670,6 @@ ontologies:
   title: Lepidoptera Anatomy Ontology
   tracker: https://github.com/insect-morphology/lepao/issues
 - activity_status: active
-  added: 2015-07-29
   build:
     infallible: 1
     insert_ontology_id: true
@@ -3761,7 +3709,6 @@ ontologies:
     seeAlso: https://www.biosharing.org/biodbcore-000659
     user: http://www.informatics.jax.org/expression.shtml
 - activity_status: active
-  added: 2020-02-12
   build:
     checkout: git clone https://github.com/monarch-initiative/MAxO.git
     path: .
@@ -3818,7 +3765,6 @@ ontologies:
   title: Medical Action Ontology
   tracker: https://github.com/monarch-initiative/MAxO/issues
 - activity_status: active
-  added: 2019-02-15
   build:
     checkout: git clone https://github.com/microbial-conditions-ontology/microbial-conditions-ontology.git
     path: .
@@ -3868,7 +3814,6 @@ ontologies:
   title: Microbial Conditions Ontology
   tracker: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/mf.owl
@@ -3896,7 +3841,6 @@ ontologies:
   title: Mental Functioning Ontology
   tracker: https://github.com/jannahastings/mental-functioning-ontology/issues
 - activity_status: active
-  added: 2015-08-11
   contact:
     email: druzinsk@uic.edu
     github: RDruzinsky
@@ -3927,7 +3871,6 @@ ontologies:
   title: Mammalian Feeding Muscle Ontology
   tracker: https://github.com/RDruzinsky/feedontology/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/mfoem.owl
@@ -3955,7 +3898,6 @@ ontologies:
   title: Emotion Ontology
   tracker: https://github.com/jannahastings/emotion-ontology/issues
 - activity_status: active
-  added: 2015-08-21
   contact:
     email: janna.hastings@gmail.com
     github: jannahastings
@@ -3980,7 +3922,6 @@ ontologies:
   title: Mental Disease Ontology
   tracker: https://github.com/jannahastings/mental-functioning-ontology/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     insert_ontology_id: true
     method: obo2owl
@@ -4012,7 +3953,6 @@ ontologies:
   title: Molecular Interactions Controlled Vocabulary
   tracker: https://github.com/HUPO-PSI/psi-mi-CV/issues
 - activity_status: active
-  added: 2015-07-28
   contact:
     email: hilmar.lapp@duke.edu
     github: hlapp
@@ -4038,7 +3978,6 @@ ontologies:
   title: MIAPA Ontology
   tracker: https://github.com/evoinfo/miapa/issues
 - activity_status: active
-  added: 2015-10-20
   contact:
     email: carrine.blank@umontana.edu
     github: carrineblank
@@ -4062,7 +4001,6 @@ ontologies:
   title: Ontology of Prokaryotic Phenotypic and Metabolic Characters
   tracker: https://github.com/carrineblank/MicrO/issues
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: RGD
     title: RGD Ontology Browser
@@ -4105,7 +4043,6 @@ ontologies:
   title: Measurement method ontology
   tracker: https://github.com/rat-genome-database/MMO-Measurement-Method-Ontology/issues
 - activity_status: active
-  added: 2015-08-21
   build:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/mmusdv/mmusdv.obo
@@ -4135,7 +4072,6 @@ ontologies:
   title: Mouse Developmental Stages
   tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     insert_ontology_id: true
     method: obo2owl
@@ -4176,7 +4112,6 @@ ontologies:
   title: Protein modification
   tracker: https://github.com/HUPO-PSI/psi-mod-CV/issues
 - activity_status: active
-  added: 2016-07-12
   browsers:
   - label: Monarch
     title: Monarch Initiative Disease Browser
@@ -4279,7 +4214,6 @@ ontologies:
     type: annotation
     user: https://www.humancellatlas.org/
 - activity_status: active
-  added: 2015-08-17
   build:
     method: owl2obo
     source_url: https://raw.githubusercontent.com/rsc-ontologies/rxno/master/mop.owl
@@ -4308,7 +4242,6 @@ ontologies:
   title: Molecular Process Ontology
   tracker: https://github.com/rsc-ontologies/rxno/issues
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: MGI
     title: MGI MP Browser
@@ -4401,7 +4334,6 @@ ontologies:
       url: https://www.mousephenotype.org/data/phenotypes/MP:0013522
     user: https://www.mousephenotype.org/
 - activity_status: active
-  added: 2015-07-28
   build:
     insert_ontology_id: true
     method: obo2owl
@@ -4433,7 +4365,6 @@ ontologies:
   title: Mouse pathology ontology
   tracker: https://github.com/PaulNSchofield/mpath/issues
 - activity_status: active
-  added: 2017-11-02
   contact:
     email: mbrochhausen@uams.edu
     github: mbrochhausen
@@ -4458,7 +4389,6 @@ ontologies:
   title: Minimum PDDI Information Ontology
   tracker: https://github.com/MPIO-Developers/MPIO/issues
 - activity_status: active
-  added: 2015-09-17
   contact:
     email: bpeters@lji.org
     github: bpeters42
@@ -4495,7 +4425,6 @@ ontologies:
     type: annotation
     user: https://www.iedb.org/
 - activity_status: active
-  added: 2015-07-28
   build:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master/psi-ms.obo
@@ -4538,7 +4467,6 @@ ontologies:
   title: Mass spectrometry ontology
   tracker: https://github.com/HUPO-PSI/psi-ms-CV/issues
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: BioPortal
     title: BioPortal Ontology Browser
@@ -4574,7 +4502,6 @@ ontologies:
   title: Neuro Behavior Ontology
   tracker: https://github.com/obo-behavior/behavior-ontology/issues
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: NCBI
     title: NCBI Taxonomy Browser
@@ -4629,7 +4556,6 @@ ontologies:
   tracker: https://github.com/obophenotype/ncbitaxon/issues
   wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
 - activity_status: active
-  added: 2016-04-01
   contact:
     email: haendel@ohsu.edu
     github: mellybelly
@@ -4678,7 +4604,6 @@ ontologies:
   title: NCI Thesaurus OBO Edition
   tracker: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
 - activity_status: active
-  added: 2015-11-18
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/ncro/prebuild/ncro.owl
@@ -4707,7 +4632,6 @@ ontologies:
   title: Non-Coding RNA Ontology
   tracker: https://github.com/OmniSearch/ncro/issues
 - activity_status: active
-  added: 2019-01-11
   build:
     checkout: git clone https://github.com/SpeciesFileGroup/nomen.git
     system: git
@@ -4753,7 +4677,6 @@ ontologies:
     type: application
     user: https://taxonworks.org
 - activity_status: active
-  added: 2015-07-28
   build:
     method: owl2obo
     source_url: https://raw.githubusercontent.com/OAE-ontology/OAE/master/src/oae_merged.owl
@@ -4782,7 +4705,6 @@ ontologies:
   title: Ontology of Adverse Events
   tracker: https://github.com/OAE-ontology/OAE/issues
 - activity_status: active
-  added: 2017-02-10
   contact:
     email: mjyoder@illinois.edu
     github: mjy
@@ -4806,7 +4728,6 @@ ontologies:
   title: Ontology of Arthropod Circulatory Systems
   tracker: https://github.com/aszool/oarcs/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/obophenotype/bio-attribute-ontology.git
     method: vcs
@@ -4844,7 +4765,6 @@ ontologies:
   title: Ontology of Biological Attributes
   tracker: https://github.com/obophenotype/bio-attribute-ontology/issues
 - activity_status: active
-  added: 2015-07-31
   contact:
     email: jiezheng@pennmedicine.upenn.edu
     github: zhengj2007
@@ -4871,7 +4791,6 @@ ontologies:
   title: Ontology of Biological and Clinical Statistics
   tracker: https://github.com/obcs/obcs/issues
 - activity_status: active
-  added: 2015-08-17
   contact:
     email: jiezheng@pennmedicine.upenn.edu
     github: zhengj2007
@@ -4916,7 +4835,6 @@ ontologies:
       to biospecimen collection, processing, and storage, also known as biobanking.
     user: https://biospecimens.cancer.gov/resources/vocabularies.asp
 - activity_status: active
-  added: 2015-07-29
   contact:
     email: yongqunh@med.umich.edu
     github: yongqunh
@@ -4940,7 +4858,6 @@ ontologies:
   title: The Ontology of Genes and Genomes
   tracker: https://bitbucket.org/hegroup/ogg/issues/
 - activity_status: active
-  added: 2015-07-29
   contact:
     email: baeverma@jcvi.org
     github: BAevermann
@@ -4971,7 +4888,6 @@ ontologies:
   title: Ontology for General Medical Science
   tracker: https://github.com/OGMS/ogms/issues
 - activity_status: active
-  added: 2015-07-28
   contact:
     email: linikujp@gmail.com
     github: linikujp
@@ -4996,7 +4912,6 @@ ontologies:
   title: Ontology of Genetic Susceptibility Factor
   tracker: https://github.com/linikujp/OGSF/issues
 - activity_status: active
-  added: 2016-12-01
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/ohd.owl
@@ -5027,7 +4942,6 @@ ontologies:
   title: Oral Health and Disease Ontology
   tracker: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issues
 - activity_status: active
-  added: 2017-04-21
   contact:
     email: yongqunh@med.umich.edu
     github: yongqunh
@@ -5055,7 +4969,6 @@ ontologies:
   title: Ontology of Host-Microbiome Interactions
   tracker: https://github.com/ohmi-ontology/ohmi/issues
 - activity_status: active
-  added: 2019-07-22
   contact:
     email: edong@umich.edu
     github: e4ong1031
@@ -5083,7 +4996,6 @@ ontologies:
   title: Ontology of Host Pathogen Interactions
   tracker: https://github.com/OHPI/ohpi/issues
 - activity_status: active
-  added: 2015-08-21
   build:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.obo
@@ -5113,7 +5025,6 @@ ontologies:
   title: Medaka Developmental Stages
   tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
 - activity_status: active
-  added: 2015-07-29
   contact:
     email: huang@southalabama.edu
     github: Huang-OMIT
@@ -5140,7 +5051,6 @@ ontologies:
   title: Ontology for MIRNA Target
   tracker: https://github.com/OmniSearch/omit/issues
 - activity_status: active
-  added: 2020-05-02
   contact:
     email: cjmungall@lbl.gov
     github: cmungall
@@ -5172,7 +5082,6 @@ ontologies:
     type: owl_import
     user: http://obofoundry.org
 - activity_status: active
-  added: 2015-08-21
   build:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/microbialphenotypes/OMP-ontology-files/master/omp.obo
@@ -5201,7 +5110,6 @@ ontologies:
   title: Ontology of Microbial Phenotypes
   tracker: https://github.com/microbialphenotypes/OMP-ontology/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     method: owl2obo
     source_url: https://github.com/ufbmi/OMRSE
@@ -5238,7 +5146,6 @@ ontologies:
   title: Ontology of Medically Related Social Entities
   tracker: https://github.com/ufbmi/OMRSE/issues
 - activity_status: active
-  added: 2020-11-17
   contact:
     email: chenyangnutrition@gmail.com
     github: cyang0128
@@ -5273,7 +5180,6 @@ ontologies:
   title: Ontology for Nutritional Epidemiology
   tracker: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies/issues
 - activity_status: active
-  added: 2020-05-28
   contact:
     email: francesco.vitali@ibba.cnr.it
     github: FrancescoVit
@@ -5316,7 +5222,6 @@ ontologies:
   title: Ontology for Nutritional Studies
   tracker: https://github.com/enpadasi/Ontology-for-Nutritional-Studies/issues
 - activity_status: active
-  added: 2021-12-01
   contact:
     email: fortuna@ebd.csic.es
     github: miguelfortuna
@@ -5354,7 +5259,6 @@ ontologies:
   title: 'OntoAvida: ontology for Avida digital evolution platform'
   tracker: https://gitlab.com/fortunalab/ontoavida/-/issues
 - activity_status: active
-  added: 2016-11-22
   browsers:
   - label: BioPortal
     title: BioPortal Browser
@@ -5389,7 +5293,6 @@ ontologies:
   title: Obstetric and Neonatal Ontology
   tracker: https://github.com/ontoneo-project/Ontoneo/issues
 - activity_status: active
-  added: 2016-04-04
   contact:
     email: mbrochhausen@gmail.com
     github: mbrochhausen
@@ -5414,7 +5317,6 @@ ontologies:
   title: Ontology of Organizational Structures of Trauma centers and Trauma systems
   tracker: https://github.com/OOSTT/OOSTT/issues
 - activity_status: active
-  added: 2015-07-28
   contact:
     email: jiezheng@pennmedicine.upenn.edu
     github: zhengj2007
@@ -5450,7 +5352,6 @@ ontologies:
     type: annotation and query
     user: https://www.genedb.org
 - activity_status: active
-  added: 2018-08-30
   contact:
     email: yongqunh@med.umich.edu
     github: yongqunh
@@ -5477,7 +5378,6 @@ ontologies:
   title: Ontology of Precision Medicine and Investigation
   tracker: https://github.com/OPMI/opmi/issues
 - activity_status: active
-  added: 2019-06-20
   contact:
     email: safisher@upenn.edu
     github: safisher
@@ -5502,7 +5402,6 @@ ontologies:
   title: Ontology of RNA Sequencing
   tracker: https://github.com/safisher/ornaseq/issues
 - activity_status: active
-  added: 2015-07-28
   contact:
     email: yongqunh@med.umich.edu
     github: yongqunh
@@ -5526,7 +5425,6 @@ ontologies:
   title: Ontology of Vaccine Adverse Events
   tracker: https://github.com/OVAE-Ontology/ovae/issues
 - activity_status: active
-  added: 2022-01-25
   contact:
     email: davidos@ebi.ac.uk
     github: dosumis
@@ -5587,7 +5485,6 @@ ontologies:
   title: Provisional Cell Ontology
   tracker: https://github.com/obophenotype/provisional_cell_ontology/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/PopulationAndCommunityOntology/pco.git
     path: .
@@ -5631,7 +5528,6 @@ ontologies:
   title: Population and Community Ontology
   tracker: https://github.com/PopulationAndCommunityOntology/pco/issues
 - activity_status: active
-  added: 2016-11-11
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/pdro.owl
@@ -5664,7 +5560,6 @@ ontologies:
   title: The Prescription of Drugs Ontology
   tracker: https://github.com/OpenLHS/PDRO/issues
 - activity_status: active
-  added: 2015-08-21
   build:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/pdumdv/pdumdv.obo
@@ -5694,7 +5589,6 @@ ontologies:
   title: Platynereis Developmental Stages
   tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
 - activity_status: active
-  added: 2017-06-05
   contact:
     email: jaiswalp@science.oregonstate.edu
     github: jaiswalp
@@ -5729,7 +5623,6 @@ ontologies:
   title: Plant Experimental Conditions Ontology
   tracker: https://github.com/Planteome/plant-experimental-conditions-ontology/issues
 - activity_status: active
-  added: 2018-08-15
   build:
     checkout: git clone https://github.com/PHI-base/phipo.git
     path: .
@@ -5769,7 +5662,6 @@ ontologies:
   title: Pathogen Host Interaction Phenotype Ontology
   tracker: https://github.com/PHI-base/phipo/issues
 - activity_status: active
-  added: 2017-02-07
   build:
     checkout: git clone https://github.com/obophenotype/planaria-ontology.git
     path: .
@@ -5818,7 +5710,6 @@ ontologies:
       url: https://planosphere.stowers.org/ontology/PLANA_0000034
     user: https://planosphere.stowers.org/
 - activity_status: active
-  added: 2018-11-19
   build:
     checkout: git clone https://github.com/obophenotype/planarian-phenotype-ontology.git
     path: .
@@ -5857,7 +5748,6 @@ ontologies:
   title: Planarian Phenotype Ontology
   tracker: https://github.com/obophenotype/planarian-phenotype-ontology/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/obophenotype/porifera-ontology.git
     infallible: 1
@@ -5902,7 +5792,6 @@ ontologies:
   title: Porifera Ontology
   tracker: https://github.com/obophenotype/porifera-ontology/issues
 - activity_status: active
-  added: 2016-12-30
   contact:
     email: rlwalls2008@gmail.com
     github: ramonawalls
@@ -5933,7 +5822,37 @@ ontologies:
   title: Plant Phenology Ontology
   tracker: https://github.com/PlantPhenoOntology/PPO/issues
 - activity_status: active
-  added: 2019-04-04
+  contact:
+    email: wes_schafer@merck.com
+    github: schaferw
+    label: Wes Schafer
+    orcid: 0000-0002-8786-1756
+  dependencies:
+  - id: ro
+  - id: obi
+  - id: chebi
+  - id: pato
+  - id: cheminf
+  - id: sbo
+  description: PROCO covers process chemistry, the chemical field concerned with scaling
+    up laboratory syntheses to commercially viable processes.
+  domain: chemistry and biochemistry
+  homepage: https://github.com/proco-ontology/PROCO
+  id: proco
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/proco.owl
+  preferredPrefix: PROCO
+  products:
+  - id: proco.owl
+    ontology_purl: http://purl.obolibrary.org/obo/proco.owl
+  repository: https://github.com/proco-ontology/PROCO
+  title: Process Chemistry Ontology
+  tracker: https://github.com/proco-ontology/PROCO/issues
+- activity_status: active
   build:
     checkout: https://github.com/Display-Lab/psdo.git
     path: .
@@ -5968,7 +5887,6 @@ ontologies:
   title: Performance Summary Display Ontology
   tracker: https://github.com/Display-Lab/psdo/issues
 - activity_status: active
-  added: 2020-05-14
   build:
     checkout: git clone https://github.com/Planteome/plant-stress-ontology.git
     path: .
@@ -6011,7 +5929,6 @@ ontologies:
   title: Plant Stress Ontology
   tracker: https://github.com/Planteome/plant-stress-ontology/issues
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: RGD
     title: RGD Ontology Browser
@@ -6053,7 +5970,6 @@ ontologies:
   title: Pathway ontology
   tracker: https://github.com/rat-genome-database/PW-Pathway-Ontology/issues
 - activity_status: active
-  added: 2021-01-28
   build:
     checkout: git clone https://github.com/Radiobiology-Informatics-Consortium/RBO.git
     path: .
@@ -6111,7 +6027,6 @@ ontologies:
   title: Radiation Biology Ontology
   tracker: https://github.com/Radiobiology-Informatics-Consortium/RBO/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/oborel/obo-relations.git
     infallible: 1
@@ -6192,7 +6107,6 @@ ontologies:
     type: annotation
     user: http://geneontology.org
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: RGD
     title: RGD Ontology Browser
@@ -6234,7 +6148,6 @@ ontologies:
   title: Rat Strain Ontology
   tracker: https://github.com/rat-genome-database/RS-Rat-Strain-Ontology/issues
 - activity_status: active
-  added: 2015-08-17
   build:
     method: owl2obo
     source_url: https://raw.githubusercontent.com/rsc-ontologies/rxno/master/rxno.owl
@@ -6264,7 +6177,6 @@ ontologies:
   title: Name Reaction Ontology
   tracker: https://github.com/rsc-ontologies/rxno/issues
 - activity_status: active
-  added: 2017-06-30
   build:
     checkout: git clone https://github.com/monarch-initiative/SEPIO-ontology.git
     path: src/ontology
@@ -6298,7 +6210,6 @@ ontologies:
   title: Scientific Evidence and Provenance Information Ontology
   tracker: https://github.com/monarch-initiative/SEPIO-ontology/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     method: obo2owl
     notes: SWITCH
@@ -6351,7 +6262,6 @@ ontologies:
   title: Sequence types and features ontology
   tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     insert_ontology_id: true
     method: obo2owl
@@ -6388,7 +6298,6 @@ ontologies:
   title: Spider Ontology
   tracker: https://github.com/obophenotype/spider-ontology/issues
 - activity_status: active
-  added: 2015-08-17
   contact:
     email: alejandra.gonzalez.beltran@gmail.com
     github: agbeltran
@@ -6422,7 +6331,6 @@ ontologies:
   title: The Statistical Methods Ontology
   tracker: https://github.com/ISA-tools/stato/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     method: owl2obo
     source_url: https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl
@@ -6458,7 +6366,6 @@ ontologies:
   title: Software ontology
   tracker: https://github.com/allysonlister/swo/issues
 - activity_status: active
-  added: 2015-07-28
   build:
     infallible: 1
     method: obo2owl
@@ -6507,7 +6414,6 @@ ontologies:
       url: http://www.disease-ontology.org/?id=DOID:0060164
     user: http://www.disease-ontology.org
 - activity_status: active
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/phenoscape/taxrank.git
     path: .
@@ -6546,7 +6452,6 @@ ontologies:
   title: Taxonomic rank vocabulary
   tracker: https://github.com/phenoscape/taxrank/issues
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: Planteome
     title: Planteome browser
@@ -6606,7 +6511,6 @@ ontologies:
       url: http://archive.gramene.org/db/ontology/search?id=TO:0000286
     user: http://gramene.org/
 - activity_status: active
-  added: 2015-07-28
   build:
     infallible: 1
     method: obo2owl
@@ -6652,7 +6556,6 @@ ontologies:
       url: http://www.disease-ontology.org/?id=DOID:12365
     user: http://www.disease-ontology.org
 - activity_status: active
-  added: 2015-07-28
   contact:
     email: balhoff@renci.org
     github: balhoff
@@ -6686,7 +6589,6 @@ ontologies:
   title: Teleost taxonomy ontology
   tracker: https://github.com/phenoscape/teleost-taxonomy-ontology/issues
 - activity_status: active
-  added: 2019-09-26
   browsers:
   - label: BioPortal
     title: BioPortal Browser
@@ -6725,7 +6627,6 @@ ontologies:
   title: Toxic Process Ontology
   tracker: https://github.com/txpo-ontology/TXPO/issues
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: RGD
     title: Gene Ontology AmiGO 2 Browser
@@ -6934,7 +6835,6 @@ ontologies:
     user: https://www.ebi.ac.uk/chembl/
   wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 - activity_status: active
-  added: 2015-07-29
   build:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo
@@ -6967,7 +6867,6 @@ ontologies:
   title: Units of measurement ontology
   tracker: https://github.com/bio-ontology-research-group/unit-ontology/issues
 - activity_status: active
-  added: 2015-08-21
   build:
     method: archive
     path: archive/ontology
@@ -7035,7 +6934,6 @@ ontologies:
     type: analysis
     user: https://monarchinitiative.org/
 - activity_status: active
-  added: 2015-07-29
   build:
     source_url: https://raw.githubusercontent.com/vaccineontology/VO/master/src/VO_merged.owl
   contact:
@@ -7068,7 +6966,6 @@ ontologies:
   title: Vaccine Ontology
   tracker: https://github.com/vaccineontology/VO/issues
 - activity_status: active
-  added: 2015-08-21
   build:
     checkout: svn co http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/vt
     method: vcs
@@ -7117,7 +7014,6 @@ ontologies:
       url: https://phenome.jax.org/ontologies/VT:0002224
     user: https://phenome.jax.org/ontologies/navigate/VT:0000001
 - activity_status: active
-  added: 2015-07-28
   contact:
     email: balhoff@renci.org
     github: balhoff
@@ -7150,7 +7046,6 @@ ontologies:
   - description: Phenoscape uses VTO to annotate systematics data
     user: http://phenoscape.org
 - activity_status: active
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/obophenotype/c-elegans-gross-anatomy-ontology.git
     path: .
@@ -7198,7 +7093,6 @@ ontologies:
     type: annotation
     user: https://www.wormbase.org/
 - activity_status: active
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/obophenotype/c-elegans-development-ontology.git
     path: .
@@ -7248,7 +7142,6 @@ ontologies:
     type: annotation
     user: https://www.wormbase.org/
 - activity_status: active
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/obophenotype/c-elegans-phenotype-ontology.git
     path: .
@@ -7311,7 +7204,6 @@ ontologies:
     type: annotation
     user: https://monarchinitiative.org/
 - activity_status: active
-  added: 2015-07-29
   browsers:
   - label: RGD
     title: RGD Ontology Browser
@@ -7355,7 +7247,6 @@ ontologies:
   title: Experimental condition ontology
   tracker: https://github.com/rat-genome-database/XCO-experimental-condition-ontology/issues
 - activity_status: active
-  added: 2019-04-18
   contact:
     email: lutz.fischer@tu-berlin.de
     github: lutzfischer
@@ -7387,7 +7278,6 @@ ontologies:
   title: HUPO-PSI cross-linking and derivatization reagents controlled vocabulary
   tracker: https://github.com/HUPO-PSI/xlmod-CV/issues
 - activity_status: active
-  added: 2018-11-30
   build:
     checkout: git clone https://github.com/obophenotype/xenopus-phenotype-ontology.git
     path: .
@@ -7437,7 +7327,6 @@ ontologies:
   title: Xenopus Phenotype Ontology
   tracker: https://github.com/obophenotype/xenopus-phenotype-ontology/issues
 - activity_status: active
-  added: 2016-07-28
   build:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.obo
@@ -7472,7 +7361,6 @@ ontologies:
   title: Zebrafish Experimental Conditions Ontology
   tracker: https://github.com/ybradford/zebrafish-experimental-conditions-ontology/issues
 - activity_status: active
-  added: 2015-07-29
   build:
     infallible: 1
     method: obo2owl
@@ -7507,7 +7395,6 @@ ontologies:
   title: Zebrafish developmental stages ontology
   tracker: https://github.com/cerivs/zebrafish-anatomical-ontology/issues
 - activity_status: active
-  added: 2019-01-02
   build:
     checkout: git clone https://github.com/obophenotype/zebrafish-phenotype-ontology.git
     path: .
@@ -7562,7 +7449,6 @@ ontologies:
     type: annotation
     user: https://monarchinitiative.org/
 - activity_status: active
-  added: 2020-10-01
   build:
     checkout: git clone https://github.com/Superraptor/GSSO.git
     path: .
@@ -7595,7 +7481,6 @@ ontologies:
   title: Gender, Sex, and Sexual Orientation (GSSO) ontology
   tracker: https://github.com/Superraptor/GSSO/issues
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: HPO
     title: JAX HPO Browser
@@ -7661,7 +7546,6 @@ ontologies:
     type: annotation
     user: https://monarchinitiative.org/
 - activity_status: active
-  added: 2015-07-28
   browsers:
   - label: OLS
     title: Ontology Lookup Service
@@ -7739,7 +7623,6 @@ ontologies:
     type: annotation
     user: https://biosimulators.org/
 - activity_status: active
-  added: 2015-07-28
   build:
     method: owl2obo
     source_url: https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl
@@ -7767,7 +7650,6 @@ ontologies:
   title: Mathematical modeling ontology
   tracker: http://sourceforge.net/p/mamo-ontology/tickets/
 - activity_status: active
-  added: 2015-07-28
   build:
     insert_ontology_id: true
     method: obo2owl
@@ -7795,7 +7677,6 @@ ontologies:
   title: Systems Biology Ontology
   tracker: https://github.com/EBI-BioModels/SBO/issues
 - activity_status: active
-  added: 2021-04-16
   build:
     checkout: git clone https://github.com/scdodev/scdo-ontology.git
     path: .
@@ -7869,7 +7750,6 @@ ontologies:
   title: Sickle Cell Disease Ontology
   tracker: https://github.com/scdodev/scdo-ontology/issues
 - activity_status: orphaned
-  added: 2015-07-29
   build:
     infallible: 1
     insert_ontology_id: true
@@ -7891,20 +7771,6 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/fix.obo
   title: Physico-chemical methods and properties
 - activity_status: orphaned
-  added: 2015-07-28
-  description: An ontology that formalizes the genomic element by defining an upper
-    class genetic interval
-  homepage: https://code.google.com/p/ontology-for-genetic-interval/
-  id: ogi
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/ogi.owl
-  products:
-  - id: ogi.owl
-    ontology_purl: http://purl.obolibrary.org/obo/ogi.owl
-  title: Ontology for genetic interval
-  tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list
-- activity_status: orphaned
-  added: 2015-07-28
   build:
     insert_ontology_id: true
     method: obo2owl
@@ -7919,7 +7785,6 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/rex.owl
   title: Physico-chemical process
 - activity_status: orphaned
-  added: 2015-07-29
   build:
     checkout: git clone https://github.com/obophenotype/sibo.git
     method: vcs
@@ -7950,7 +7815,6 @@ ontologies:
   title: Social Insect Behavior Ontology
   tracker: https://github.com/obophenotype/sibo/issues
 - activity_status: orphaned
-  added: 2015-07-28
   build:
     method: obo2owl
     source_url: http://variationontology.org/vario_download/vario.obo
@@ -7971,7 +7835,6 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/vario.obo
   title: Variation Ontology
 - activity_status: inactive
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git
     method: vcs
@@ -7999,7 +7862,6 @@ ontologies:
   title: Anatomical Entity Ontology
   tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
 - activity_status: inactive
-  added: 2015-08-21
   build:
     checkout: git clone https://github.com/obophenotype/cephalopod-ontology.git
     method: vcs
@@ -8037,7 +7899,6 @@ ontologies:
   title: Cephalopod Ontology
   tracker: https://github.com/obophenotype/cephalopod-ontology/issues
 - activity_status: inactive
-  added: 2015-07-28
   build:
     checkout: git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git
     method: vcs
@@ -8077,7 +7938,6 @@ ontologies:
   title: Human developmental anatomy, abstract
   tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
 - activity_status: inactive
-  added: 2015-07-28
   build:
     insert_ontology_id: true
     method: obo2owl
@@ -8115,7 +7975,6 @@ ontologies:
   title: Foundational Model of Anatomy Ontology (subset)
   tracker: https://bitbucket.org/uwsig/fma/issues
 - activity_status: inactive
-  added: 2015-07-28
   build:
     method: archive
     path: archive
@@ -8144,7 +8003,6 @@ ontologies:
   title: Gazetteer
   tracker: https://github.com/EnvironmentOntology/gaz/issues
 - activity_status: inactive
-  added: 2015-07-28
   contact:
     email: topalis@imbb.forth.gr
     label: Pantelis Topalis
@@ -8167,7 +8025,6 @@ ontologies:
   repository: https://github.com/VEuPathDB-ontology/IDOMAL
   title: Malaria Ontology
 - activity_status: inactive
-  added: 2015-07-28
   contact:
     email: louis@imbb.forth.gr
     label: Christos (Kitsos) Louis
@@ -8188,7 +8045,6 @@ ontologies:
     label: Anopheles
   title: Mosquito insecticide resistance
 - activity_status: inactive
-  added: 2015-07-28
   browsers:
   - label: RNAO
     title: RNA Ontology jOWL Browser
@@ -8223,7 +8079,6 @@ ontologies:
   title: RNA ontology
   tracker: https://github.com/BGSU-RNA/rnao/issues
 - activity_status: inactive
-  added: 2015-07-28
   contact:
     email: dsonensh@odu.edu
     label: Daniel Sonenshine
@@ -8248,7 +8103,6 @@ ontologies:
     label: Ixodidae
   title: Tick Anatomy Ontology
 - activity_status: inactive
-  added: 2015-07-28
   contact:
     email: topalis@imbb.forth.gr
     label: Pantelis Topalis
@@ -8273,7 +8127,6 @@ ontologies:
     label: Anopheles
   title: Mosquito gross anatomy ontology
 - activity_status: inactive
-  added: 2018-12-12
   build:
     checkout: git clone https://github.com/geneontology/unipathway.git
     path: .
@@ -8314,7 +8167,6 @@ ontologies:
   title: Unipathway
   tracker: https://github.com/geneontology/unipathway/issues
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: david.c.blackburn@gmail.com
     label: David Blackburn
@@ -8328,7 +8180,6 @@ ontologies:
     label: Amphibia
   title: Amphibian gross anatomy
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: adw_geeks@umich.edu
     label: Animal Diversity Web technical staff
@@ -8338,7 +8189,6 @@ ontologies:
   layout: ontology_detail
   title: Animal natural history and life history
 - activity_status: inactive
-  added: 2015-07-28
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/aero.owl
@@ -8363,7 +8213,6 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/aero.owl
   title: Adverse Event Reporting Ontology
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: david.c.blackburn@gmail.com
     label: David Blackburn
@@ -8376,7 +8225,6 @@ ontologies:
     label: Amphibia
   title: Amphibian taxonomy
 - activity_status: inactive
-  added: 2015-07-28
   contact:
     email: jiezheng@pennmedicine.upenn.edu
     github: zhengj2007
@@ -8399,7 +8247,6 @@ ontologies:
   title: Beta Cell Genomics Ontology
   tracker: https://github.com/obi-bcgo/bcgo/issues
 - activity_status: inactive
-  added: 2015-07-28
   build:
     insert_ontology_id: true
     method: obo2owl
@@ -8421,7 +8268,6 @@ ontologies:
     label: Bilateria
   title: Bilateria anatomy
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: vlee@ebi.ac.uk
     label: Vivian Lee
@@ -8432,7 +8278,6 @@ ontologies:
   replaced_by: molecular_function
   title: Gene Regulation Ontology
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: engelsta@ohsu.edu
     label: Mark Engelstad
@@ -8443,7 +8288,6 @@ ontologies:
   layout: ontology_detail
   title: CranioMaxilloFacial ontology
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: Lindsay.Cowell@utsouthwestern.edu
     label: Lindsay Cowell
@@ -8458,7 +8302,6 @@ ontologies:
     label: null
   title: Dendritic cell
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: maria.herrero@kcl.ac.uk
     label: Maria Herrero
@@ -8483,7 +8326,6 @@ ontologies:
   title: The Drug-Drug Interactions Ontology
   tracker: https://github.com/labda/DINTO/issues
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: J.Bard@ed.ac.uk
     label: Jonathan Bard
@@ -8497,7 +8339,6 @@ ontologies:
     label: Homo sapiens
   title: Human developmental anatomy, timed version
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: J.Bard@ed.ac.uk
     label: Jonathan Bard
@@ -8511,7 +8352,6 @@ ontologies:
     label: Homo sapiens
   title: Human developmental anatomy, abstract version
 - activity_status: inactive
-  added: 2015-07-28
   build:
     insert_ontology_id: true
     method: obo2owl
@@ -8539,7 +8379,6 @@ ontologies:
     label: Mus
   title: Mouse gross anatomy and development, timed
 - activity_status: inactive
-  added: 2015-07-29
   build:
     method: obo2owl
     source_url: https://github.com/Planteome/plant-environment-ontology/blob/master/plant-environment-ontology.obo.owl
@@ -8585,7 +8424,6 @@ ontologies:
       url: http://archive.gramene.org/db/ontology/search?id=EO:0007174
     user: http://gramene.org/
 - activity_status: inactive
-  added: 2015-07-29
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/epo.owl
@@ -8601,7 +8439,6 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/epo.owl
   title: Epidemiology Ontology
 - activity_status: inactive
-  added: 2015-07-28
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/ero.owl
@@ -8627,7 +8464,6 @@ ontologies:
   - resources
   title: eagle-i resource ontology
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: evoc@sanbi.ac.za
     label: eVOC mailing list
@@ -8637,7 +8473,6 @@ ontologies:
   layout: ontology_detail
   title: eVOC (Expressed Sequence Annotation for Humans)
 - activity_status: inactive
-  added: 2015-07-28
   build:
     insert_ontology_id: true
     method: obo2owl
@@ -8664,7 +8499,6 @@ ontologies:
     label: Drosophila
   title: Fly taxonomy
 - activity_status: inactive
-  added: 2015-07-29
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/flu.owl
@@ -8683,7 +8517,6 @@ ontologies:
   title: Influenza Ontology
   tracker: http://purl.obolibrary.org/obo/flu/tracker
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: po-discuss@plantontology.org
     label: Plant Ontology Administrators
@@ -8693,7 +8526,6 @@ ontologies:
   layout: ontology_detail
   title: Cereal Plant Gross Anatomy
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: peteremidford@yahoo.com
     label: Peter Midford
@@ -8704,7 +8536,6 @@ ontologies:
   layout: ontology_detail
   title: Habronattus courtship
 - activity_status: inactive
-  added: 2015-08-21
   build:
     insert_ontology_id: true
     method: obo2owl
@@ -8715,7 +8546,6 @@ ontologies:
   layout: ontology_detail
   title: Event (INOH pathway ontology)
 - activity_status: inactive
-  added: 2015-08-21
   build:
     insert_ontology_id: true
     method: obo2owl
@@ -8729,7 +8559,6 @@ ontologies:
   layout: ontology_detail
   title: Molecule role (INOH Protein name/family name ontology)
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: interhelp@ebi.ac.uk
     label: InterPro Help
@@ -8739,7 +8568,6 @@ ontologies:
   layout: ontology_detail
   title: Protein Domains
 - activity_status: inactive
-  added: 2015-07-29
   build:
     method: owl2obo
     source_url: http://www.lipidprofiles.com/LipidOntology
@@ -8756,7 +8584,6 @@ ontologies:
   - lipids
   title: Lipid Ontology
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: peteremidford@yahoo.com
     label: Peter Midford
@@ -8767,7 +8594,6 @@ ontologies:
   layout: ontology_detail
   title: Loggerhead nesting
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: julie@igbmc.u-strasbg.fr
     label: Julie Thompson
@@ -8777,7 +8603,6 @@ ontologies:
   layout: ontology_detail
   title: Multiple alignment
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: j.bard@ed.ac.uk
     label: Jonathan Bard
@@ -8787,7 +8612,6 @@ ontologies:
   layout: ontology_detail
   title: Minimal anatomical terminology
 - activity_status: inactive
-  added: 2015-07-28
   contact:
     email: Thorsten.Henrich@embl-heidelberg.de
     label: Thorsten Henrich
@@ -8806,7 +8630,6 @@ ontologies:
     label: Oryzias
   title: Medaka fish anatomy and development
 - activity_status: inactive
-  added: 2015-07-28
   contact:
     email: topalis@imbb.forth.gr
     label: Pantelis Topalis
@@ -8824,7 +8647,6 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/mirnao.owl
   title: microRNA Ontology
 - activity_status: inactive
-  added: 2015-07-28
   contact:
     email: stoeckrt@pcbi.upenn.edu
     label: Chris Stoeckert
@@ -8843,7 +8665,6 @@ ontologies:
   replaced_by: obi
   title: Microarray experimental conditions
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: smtifahim@gmail.com
     label: Fahim Imam
@@ -8855,7 +8676,6 @@ ontologies:
   replaced_by: cl
   title: NIF Cell
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: smtifahim@gmail.com
     label: Fahim Imam
@@ -8866,7 +8686,6 @@ ontologies:
   replaced_by: doid
   title: NIF Dysfunction
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: smtifahim@gmail.com
     label: Fahim Imam
@@ -8877,7 +8696,6 @@ ontologies:
   replaced_by: uberon
   title: NIF Gross Anatomy
 - activity_status: inactive
-  added: 2015-07-28
   build:
     method: owl2obo
     source_url: https://msi-workgroups.svn.sourceforge.net/svnroot/msi-workgroups/ontology/NMR.owl
@@ -8897,7 +8715,6 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/nmr.owl
   title: NMR-instrument specific component of metabolomics investigations
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: cjmungall@lbl.gov
     label: Chris Mungall
@@ -8909,7 +8726,24 @@ ontologies:
   replaced_by: ro
   title: OBO relationship types (legacy)
 - activity_status: inactive
-  added: 2016-02-05
+  contact:
+    email: linikujp@gmail.com
+    github: linikujp
+    label: Asiyah Yu Lin
+    orcid: 0000-0002-5379-5359
+  description: An ontology that formalizes the genomic element by defining an upper
+    class genetic interval
+  homepage: https://code.google.com/p/ontology-for-genetic-interval/
+  id: ogi
+  is_obsolete: true
+  layout: ontology_detail
+  products:
+  - id: ogi.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ogi.owl
+  replaced_by: ogsf
+  title: Ontology for genetic interval
+  tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list
+- activity_status: inactive
   contact:
     email: mbrochhausen@gmail.com
     label: Mathias Brochhausen
@@ -8932,7 +8766,6 @@ ontologies:
   title: Ontologized MIABIS
   tracker: https://github.com/OMIABIS/omiabis-dev/issues
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: jaiswalp@science.oregonstate.edu
     github: jaiswalp
@@ -8947,7 +8780,6 @@ ontologies:
     label: Viridiplantae
   title: Plant Anatomy Ontology
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: henrich@embl.de
     label: Thorsten Heinrich
@@ -8961,7 +8793,6 @@ ontologies:
     label: Platynereis
   title: Platynereis stage ontology
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: po-discuss@plantontology.org
     label: Plant Ontology Administrators
@@ -8974,7 +8805,6 @@ ontologies:
     label: Viridiplantae
   title: Plant Growth and Development Stage
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: mb4@sanger.ac.uk
     label: Matt Berriman
@@ -8984,7 +8814,6 @@ ontologies:
   layout: ontology_detail
   title: Plasmodium life cycle
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: satya30@uga.edu
     label: Satya S. Sahoo
@@ -8994,7 +8823,6 @@ ontologies:
   layout: ontology_detail
   title: Proteomics data and process provenance
 - activity_status: inactive
-  added: 2015-07-28
   contact:
     email: john.garavelli@ebi.ac.uk
     label: John Garavelli
@@ -9008,7 +8836,6 @@ ontologies:
   - proteins
   title: Protein covalent bond
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: slarson@ncmir.ucsd.edu
     label: Stephen Larson
@@ -9022,7 +8849,6 @@ ontologies:
     label: Homo sapiens
   title: Subcellular anatomy ontology
 - activity_status: inactive
-  added: 2015-07-28
   build:
     insert_ontology_id: true
     method: obo2owl
@@ -9045,7 +8871,6 @@ ontologies:
   - provenance
   title: Sample processing and separation techniques
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: Adrien.Coulet@loria.fr
     label: Adrien Coulet
@@ -9058,7 +8883,6 @@ ontologies:
     label: Homo sapiens
   title: Suggested Ontology for Pharmacogenomics
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: pierre.sprumont@unifr.ch
     label: Pierre Sprumont
@@ -9071,7 +8895,6 @@ ontologies:
     label: Homo sapiens
   title: Terminology of Anatomy of Human Embryology
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: pierre.sprumont@unifr.ch
     label: Pierre Sprumont
@@ -9084,7 +8907,6 @@ ontologies:
     label: Homo sapiens
   title: Terminology of Anatomy of Human Histology
 - activity_status: inactive
-  added: 2015-07-28
   build:
     method: obo2owl
     source_url: http://purl.obolibrary.org/obo/tao.obo
@@ -9116,7 +8938,6 @@ ontologies:
     label: Teleostei
   title: Teleost Anatomy Ontology
 - activity_status: inactive
-  added: 2015-07-28
   depicted_by: http://bgee.org/img/logo/bgee13_logo.png
   id: vhog
   is_obsolete: true
@@ -9127,7 +8948,6 @@ ontologies:
   replaced_by: uberon
   title: Vertebrate Homologous Ontology Group Ontology
 - activity_status: inactive
-  added: 2015-07-28
   build:
     method: obo2owl
     source_url: http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/tags/vocab-releases/VSAO/vsao.obo
@@ -9151,7 +8971,6 @@ ontologies:
     label: Vertebrata
   title: Vertebrate Skeletal Anatomy Ontology-
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: cherry@genome.stanford.edu
     label: Mike Cherry
@@ -9166,7 +8985,6 @@ ontologies:
     label: Saccharomyces cerevisiae
   title: Yeast phenotypes
 - activity_status: inactive
-  added: 2015-08-21
   contact:
     email: Leszek@missouri.edu
     label: Leszek Vincent
