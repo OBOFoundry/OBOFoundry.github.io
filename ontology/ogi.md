@@ -3,11 +3,18 @@ layout: ontology_detail
 id: ogi
 description: An ontology that formalizes the genomic element by defining an upper class genetic interval
 homepage: https://code.google.com/p/ontology-for-genetic-interval/
+contact:
+  label: Asiyah Yu Lin
+  email: linikujp@gmail.com
+  github: linikujp
+  orcid: 0000-0002-5379-5359
 products:
   - id: ogi.owl
 title: Ontology for genetic interval
 tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list
-activity_status: orphaned
+activity_status: inactive
+is_obsolete: true
+replaced_by: ogsf
 added: 2015-07-28
 ---
 

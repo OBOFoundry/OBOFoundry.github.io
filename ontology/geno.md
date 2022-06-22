@@ -14,8 +14,8 @@ contact:
   github: mbrush
   orcid: 0000-0002-1048-5019
 license:
-  url: https://creativecommons.org/licenses/by-sa/2.0/
-  label: CC BY-SA 2.0
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC BY 4.0
 build:
   checkout: git clone https://github.com/monarch-initiative/GENO-ontology.git
   system: git
