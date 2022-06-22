@@ -33,7 +33,7 @@ usages:
     type: annotation and query
     description: The VEuPathDB ontology is used in the MicrobiomeDB, a systems biology platform for integrating, mining and analyzing microbiome experiments.
 publications:
-  - id: https://pdfs.semanticscholar.org/888e/a51dbb138122d39c42f863f2a1ada7976db4.pdf
+  - id: https://doi.org/10.5281/zenodo.6685957
     title: "Malaria study data integration and information retrieval based on OBO Foundry ontologies."
 activity_status: active
 repository: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
