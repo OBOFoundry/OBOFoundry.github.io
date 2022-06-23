@@ -1,3 +1,14 @@
+/*
+ *   This content is licensed according to the W3C Software License at
+ *   https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
+ *
+ *   File:   sortable-table.js
+ *
+ *   Desc:   Adds sorting to a HTML data table that implements ARIA Authoring Practices
+ *   Docs: https://w3c.github.io/aria-practices/examples/table/sortable-table.html
+ */
+
+'use strict';
 class SortableTable {
   constructor(tableNode) {
     this.tableNode = tableNode;

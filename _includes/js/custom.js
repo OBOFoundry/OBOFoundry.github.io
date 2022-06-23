@@ -1,19 +1,19 @@
-jQuery(document).ready(function () {
+jQuery(document).ready(function() {
 
     function search() {
         $('#close', search).hide();
         var data = false;
         var matches = false;
         var search = $('#search');
-        var find = function (phrase) {
+        var find = function(phrase) {
             if (!data) {
                 return $.ajax({
                     url: '/search.json',
                     dataType: 'json',
-                    success: function (resp) {
+                    success: function(resp) {
                         data = _(resp).chain()
                             .compact()
-                            .map(function (p) {
+                            .map(function(p) {
                                 p.words = (p.title.toLowerCase() + ' ' + p.summary.toLowerCase()).match(/(\w+)/g);
                                 return p;
                             })
@@ -23,22 +23,22 @@ jQuery(document).ready(function () {
                 });
             }
 
-            matches = _(data).filter(function (p) {
-                return _(phrase).filter(function (a) {
-                    return _(p.words).any(function (b) {
+            matches = _(data).filter(function(p) {
+                return _(phrase).filter(function(a) {
+                    return _(p.words).any(function(b) {
                         return a === b || b.indexOf(a) === 0;
                     });
                 }).length === phrase.length;
             });
 
-            $(matches).each(function () {
+            $(matches).each(function() {
                 $('#search-results', search).append('<li><h6>' + this.title + '</h6><p>' + this.title + '... <small><a href="' + this.url + '">Read more</a></small></p><hr></li>');
             });
 
             $('#search-results', search).show();
             $('#close', search).show();
         };
-        $('input', search).bind("focus", _(function () {
+        $('input', search).bind("focus", _(function() {
             $('#search-results', search).empty();
             $('#search-results', search).hide();
             $('#close', search).hide();
@@ -50,13 +50,13 @@ jQuery(document).ready(function () {
             return false;
         }).debounce(100));
 
-        $('#close', search).bind("click", function () {
+        $('#close', search).bind("click", function() {
             $('#search-results', search).hide();
             $('#close', search).hide();
             return false;
         });
 
-        $('input', search).keyup(_(function () {
+        $('input', search).keyup(_(function() {
             $('#search-results', search).empty();
             $('#search-results', search).hide();
             $('#close', search).hide();
@@ -69,47 +69,56 @@ jQuery(document).ready(function () {
         }).debounce(100));
     };
     search();
-
+    //set the first character os string to uppercase
     function capitalize(string) {
-      return string.charAt(0).toUpperCase() + string.slice(1);
+        return string.charAt(0).toUpperCase() + string.slice(1);
     }
     //surround data table rows generated in rendertable function with table head
-    function tableHtml(content, domain=false, tableDomains){
-         return`<div><strong>${ domain? capitalize(tableDomains): ""}</strong></div>
-                            <table id="ont_table" class="table table-hover sortable">
-                                 <thead>
-                                 <tr class="row">
-                                  <th class="col-sm-1" >ID
-                                   <button type="button" class="btn btn-outline-default btn-sm" title="Sort by ID" data-sort="id" style="float: right">
+    function tableHtml(content, domain = false, tableDomains) {
+        return `<div><strong>${ domain? capitalize(tableDomains): ""}</strong></div>
+                <table id="ont_table" class="table table-hover sortable">
+                    <thead>
+                        <tr class="row">
+                            <th class="col-sm-1">
+                                ID
+                                <button type="button" class="btn btn-outline-default btn-sm" title="Sort by ID" data-sort="id" style="float: right;">
                                     <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
-                                  </button>
-                                  </th>
-                                  <th class="col-sm-1" >Title
-                                    <button type="button" class="btn btn-outline-default btn-sm" title="Sort by title" data-sort="title" style="float: right">
-                                        <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
-                                    </button>
-                                 </th>
-                                  <th class="col-sm-3">Description</th>
-                                  <th class="col-sm-4">Quick Access</th>
-                                  <th class="col-sm-2" >Re-Use
-                                       <button type="button" class="btn btn-outline-default btn-sm" title="Sort by License" data-sort="license" style="float: right">
-                                        <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
-                                      </button>
-                                    </th>
-                                  <th class="col-sm-1">Social</th>
-                                 </tr>
-                                
-                                 </thead>
-                                 <tbody>${content}</tbody>
-                            </table>
+                                </button>
+                            </th>
+                            <th class="col-sm-1">
+                                Title
+                                <button type="button" class="btn btn-outline-default btn-sm" title="Sort by title" data-sort="title" style="float: right;">
+                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
+                                </button>
+                            </th>
+                            <th class="col-sm-3">Description</th>
+                            <th class="col-sm-4">Quick Access</th>
+                            <th class="col-sm-2">
+                                Re-Use
+                                <button type="button" class="btn btn-outline-default btn-sm" title="Sort by License" data-sort="license" style="float: right;">
+                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
+                                </button>
+                            </th>
+                            <th class="col-sm-1">Social</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${content}
+                    </tbody>
+                </table>
                 `;
     }
 
-    function renderTable(data, domain="") {
+    /**
+     * converts json data passed in into renderTable into html table
+     * @param {object} data Ontology json data.
+     * @param {boolean} [domain=false]
+     */
+    function renderTable(data, domain= false ) {
         let table = ``;
         let domainTables = ``;
-        let tableDomains =[];
-        let tableDomainhtml = {};
+        let tableDomains = []; // list of domains
+        let tableDomainhtml = {}; // hold html table data with domain as key
         for (let i = 0; i < data.length; i++) {
             let id = data[i]['id'];
             let is_obsolete = "";
@@ -133,38 +142,39 @@ jQuery(document).ready(function () {
                 license_logo = data[i]["license"]["logo"];
                 license_label = data[i]["license"]["label"];
             }
-            if (data[i]["repository"] && data[i]["repository"].includes("https://github.com/")){
+            if (data[i]["repository"] && data[i]["repository"].includes("https://github.com/")) {
                 repo = data[i]["repository"];
             }
             if (data[i]["tracker"]) {
                 tracker = data[i]["tracker"];
             }
-            if(data[i].hasOwnProperty("domain") && data[i]['domain'] !== undefined){
+            if (data[i].hasOwnProperty("domain") && data[i]['domain'] !== undefined) {
                 domainInner[0] = data[i]['domain'];
             }
-            if(description !== undefined && description.toString().length > 140){
+            if (description !== undefined && description.toString().length > 140) {
                 description = description.toString().slice(0, 140) + '...'
             }
-            if (data[i]["contact"]){
+            if (data[i]["contact"]) {
                 contact = data[i]["contact"]["email"];
             }
-            if (data[i]["publications"]   && data[i]["publications"].length > 0){
+            if (data[i]["publications"] && data[i]["publications"].length > 0) {
                 console.log(data[i]["publications"], id)
                 publication = data[i]["publications"][0]["id"];
             }
             if (data[i]["in_foundry_order"]) {
                 foundry_order = `
-                        <a class="col-sm-1 btn btn-default btn-sm" href="/principles/fp-000-summary.html" aria-label="Left Align">
+                        <a class="col-sm-1 btn btn-default btn-sm" href="/principles/fp-000-summary.html" aria-label="View the OBO Foundry criteria for the Foundry status of ${title}">
                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                         </a>             
                 `;
             }
-            if(activity_status === "inactive"){
-                is_inactive ="inactive_row";
+            if (activity_status === "inactive") {
+                is_inactive = "inactive_row";
             }
-            if(data[i]["is_obsolete"]){
+            if (data[i]["is_obsolete"]) {
                 is_obsolete = "(obsolete)"
             }
+            // table row template
             let template = `
                 <tr class="row ${is_inactive}">
                     <td class="col-sm-1">
@@ -184,25 +194,25 @@ jQuery(document).ready(function () {
                     </td>
                     <td class="col-sm-5">
                         <div class="ic-display">
-                            <a class="btn btn-default btn-sm" href="ontology/${id}.html" aria-label="Left Align" title="More details">
+                            <a class="btn btn-default btn-sm" href="ontology/${id}.html" aria-label="More details for ${title}" title="More details">
                                   <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                             </a>
-                            <a class="btn btn-default btn-sm" href="${homepage}" aria-label="Left Align" title="Project home">
+                            <a class="btn btn-default btn-sm" href="${homepage}" aria-label="Go to the homepage for ${title}" title="Project home">
                                  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                             </a>
-                            <a class="btn btn-default btn-sm" href="${tracker}" aria-label="Left Align" title="Tracker">
+                            <a class="btn btn-default btn-sm" href="${tracker}" aria-label="Go to the tracker for ${title}" title="Tracker">
                                 <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
                             </a>
-                            <a class="btn btn-default btn-sm" href="mailto:${contact}" aria-label="Left Align" title="Email ontology devs">\
+                            <a class="btn btn-default btn-sm" href="mailto:${contact}" aria-label="Send an email to ${title}" title="Email ontology devs">\
                                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                             </a>
-                            <a class="btn btn-default btn-sm" href="http://purl.obolibrary.org/obo/${id}.owl" aria-label="Left Align" title="Download file">
+                            <a class="btn btn-default btn-sm" href="http://purl.obolibrary.org/obo/${id}.owl" aria-label="Download ${title} in OWL format" title="Download file">
                                 <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
                             </a>
-                            <a class="btn btn-default btn-sm" href="http://www.ontobee.org/browser/index.php?o=${id}" aria-label="Left Align" title="Browse on Ontobee">
+                            <a class="btn btn-default btn-sm" href="http://www.ontobee.org/browser/index.php?o=${id}" aria-label="Browse ${title} on OntoBee" title="Browse on Ontobee">
                                 <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                             </a>
-                            <a class="btn btn-default btn-sm" href="${publication}" aria-label="Left Align" title="Publications list">
+                            <a class="btn btn-default btn-sm" href="${publication}" aria-label="View the primary publication for ${title}" title="Publications list">
                                 <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
                             </a>
                             ${foundry_order}
@@ -223,123 +233,157 @@ jQuery(document).ready(function () {
             `;
 
 
-            if( domain !== ""){
-                    tableDomains.push(domainInner[0].trim())
-                    if(!tableDomainhtml.hasOwnProperty(domainInner[0].trim())){
-                        tableDomainhtml[domainInner[0].trim()] = template;
-                    }else{
-                        tableDomainhtml[domainInner[0].trim()] += template;
-                    }
+            if (domain === true) {
+                tableDomains.push(domainInner[0].trim())
+                if (!tableDomainhtml.hasOwnProperty(domainInner[0].trim())) {
+                    tableDomainhtml[domainInner[0].trim()] = template;
+                } else {
+                    tableDomainhtml[domainInner[0].trim()] += template;
+                }
             }
             table += template;
         }
-        if( domain !== ""){
+        if (domain === true) {
             tableDomains = [...new Set(tableDomains)]
-            for(let i=0; i<tableDomains.length; i++){
+            //loops through list of domains and surrounds html row with table tag and headers
+            for (let i = 0; i < tableDomains.length; i++) {
                 let content = tableDomainhtml[tableDomains[i]];
 
                 let table = tableHtml(content, true, tableDomains[i]);
-                if(tableDomains[i].toLowerCase() === "upper"){
+
+                // merge all final table html generated above with the upper domain at top.
+                if (tableDomains[i].toLowerCase() === "upper") {
                     domainTables = table + domainTables;
-                }else{
+                } else {
                     domainTables = domainTables + table;
                 }
 
             }
         }
-
-        if( domain !== ""){
+        // append table(s) generated depending on if domain filter is active or not.
+        if (domain === true) {
             $("#tableDiv").html(domainTables);
-        }else{
-             let res = tableHtml(table, false, "")
+        } else {
+            let res = tableHtml(table, false, "")
             $("#tableDiv").html(res);
         }
     }
 
-    function sortByField (data, sortField){
-        return data.sort(function (a, b) {
-                        if (a[sortField] === undefined || b[sortField] === undefined) {
-                            return 0;
-                        }
-                        if (a[sortField].toLowerCase() < b[sortField].toLowerCase()) {
-                            return -1;
-                        }
-                        if (a[sortField].toLowerCase() > b[sortField].toLowerCase()) {
-                            return 1;
-                        }
-                        return 0;
-                    });
-    }
-    function debounce(func, timeout = 300){
-      let timer;
-      return (...args) => {
-        clearTimeout(timer);
-        timer = setTimeout(() => { func.apply(this, args); }, timeout);
-      };
-    }
-    function applyFilters(data){
-        let selector  = $("[data-filter]");
-                let domain = selector[0].checked
-                let hideactive = selector[1].checked
-                let hideObsolete = selector[2].checked
-
-                if(!domain && !hideactive && !hideObsolete){
-                    renderTable(data);
-                }else if(domain && !hideactive && !hideObsolete){
-                    renderTable(sortByField(data, "domain"), "domain");
-                }else if(domain && hideactive && !hideObsolete){
-                    let filteredData = data.filter(x => x["activity_status"] === "active");
-                    renderTable(sortByField(filteredData, "domain"), "domain");
-                }else if(domain && !hideactive && hideObsolete){
-                    let filteredData = data.filter(x => x["is_obsolete"] !== true);
-                    renderTable(sortByField(filteredData, "domain"), "domain");
-                }else if(domain && hideactive && hideObsolete){
-                    let filteredData = data.filter(x => x["is_obsolete"] !== true)
-                        .filter(x => x["activity_status"] === "active");
-                    renderTable(sortByField(filteredData, "domain"), "domain");
-                }else if(!domain && hideactive && hideObsolete){
-                    let filteredData = data.filter(x => x["is_obsolete"] !== true)
-                        .filter(x => x["activity_status"] === "active");
-                    renderTable(filteredData, "");
-                }
-                else if(!domain && hideactive && !hideObsolete){
-                    let filteredData = data["ontologies"].filter(x => x["activity_status"] === "active");
-                    renderTable(filteredData, "");
-                }
-                else if(!domain && !hideactive && hideObsolete){
-                    let filteredData = data.filter(x => x["is_obsolete"] !== true);
-                    renderTable(filteredData, "");
-                }
+    /**
+     * Sort json ontology data by the given sort field
+     * @param {Object} data
+     * @param {string|number} sortField
+     */
+    function sortByField(data, sortField) {
+        return data.sort(function(a, b) {
+            if (a[sortField] === undefined || b[sortField] === undefined) {
+                return 0;
+            }
+            if (a[sortField].toLowerCase() < b[sortField].toLowerCase()) {
+                return -1;
+            }
+            if (a[sortField].toLowerCase() > b[sortField].toLowerCase()) {
+                return 1;
+            }
+            return 0;
+        });
     }
 
-    function Search(input, JsonData){
+    /**
+     * make a function wait for a given amount of time before running
+     * @param {*} func
+     * @param {number} timeout
+     */
+    function debounce(func, timeout = 300) {
+        let timer;
+        return (...args) => {
+            clearTimeout(timer);
+            timer = setTimeout(() => {
+                func.apply(this, args);
+            }, timeout);
+        };
+    }
+
+    /**
+     * applies selected checkbox filter to data passed in
+     * @param {object} data
+     */
+    function applyFilters(data) {
+        let selector = $("[data-filter]");
+        let domain = selector[0].checked
+        let hideactive = selector[1].checked
+        let hideObsolete = selector[2].checked
+        let filteredData = [];
+
+        if (!domain && !hideactive && !hideObsolete) {
+            renderTable(data);
+        } else if (domain && !hideactive && !hideObsolete) {
+            renderTable(sortByField(data, "domain"), true);
+        } else if (domain && hideactive && !hideObsolete) {
+            filteredData = data.filter(x => x["activity_status"] === "active");
+            renderTable(sortByField(filteredData, "domain"), true);
+        } else if (domain && !hideactive && hideObsolete) {
+            filteredData = data.filter(x => x["is_obsolete"] !== true);
+            renderTable(sortByField(filteredData, "domain"), true);
+        } else if (domain && hideactive && hideObsolete) {
+            filteredData = data.filter(x => x["is_obsolete"] !== true)
+                .filter(x => x["activity_status"] === "active");
+            renderTable(sortByField(filteredData, "domain"), true);
+        } else if (!domain && hideactive && hideObsolete) {
+            filteredData = data.filter(x => x["is_obsolete"] !== true)
+                .filter(x => x["activity_status"] === "active");
+            renderTable(filteredData);
+        } else if (!domain && hideactive && !hideObsolete) {
+            filteredData = data["ontologies"].filter(x => x["activity_status"] === "active");
+            renderTable(filteredData);
+        } else if (!domain && !hideactive && hideObsolete) {
+            filteredData = data.filter(x => x["is_obsolete"] !== true);
+            renderTable(filteredData);
+        }
+    }
+
+    /**
+     * Search the given fields {domain, description, id} for input text
+     * @param {*} input input is a Jquery selector of the search box
+     * @param {object} JsonData Ontology data to search through
+     * @return {object} returns filtered json data
+     */
+    function Search(input, JsonData) {
         let value = input.val().toLowerCase();
-        if(value.length >= 2){
-            return JsonData.filter((row)=>{
+        // check text length greater than 2 before doing search
+        if (value.length >= 2) {
+            return JsonData.filter((row) => {
                 let term = input.val().toLowerCase();
-                if(row.domain === undefined){
+                if (row.domain === undefined) {
                     row.domain = ""
                 }
-                if(row.description === undefined){
+                if (row.description === undefined) {
                     row.description = ""
                 }
                 return (row.id.toLowerCase().includes(term) ||
                     row.domain.toLowerCase().includes(term) ||
                     row.description.toLowerCase().includes(term))
-                });
+            });
         }
         return JsonData;
     }
-    function apply_all_filters(data){
+
+    /**
+     * applies filters taking into consideration the state of
+     * all the other filters and search text
+     * @param {object} data
+     */
+    function apply_all_filters(data) {
         let selectedDomain = $("#dd-domains").children("option:selected").val();
-                let res = data["ontologies"].filter(x => x["domain"] !== undefined);
-                let dt = res.filter(x => x["domain"].includes(selectedDomain));
-                let dt2 = Search($("#searchVal"), dt);
-                applyFilters(dt2)
+        let res = data["ontologies"].filter(x => x["domain"] !== undefined);
+        let dt = res.filter(x => x["domain"].includes(selectedDomain));
+        let dt2 = Search($("#searchVal"), dt);
+        applyFilters(dt2)
     }
+// obtain json data using fetch
     fetch('/registry/ontologies.jsonld')
         .then(response => response.json())
-        .then( (data) => {
+        .then((data) => {
 
             // create change observer to handle sorting when we have single and multiple tables based on domains
             let target = document.querySelector('#tableDiv')
@@ -352,15 +396,15 @@ jQuery(document).ready(function () {
             });
             // Pass in the target node, as well as the observer options.
             observer.observe(target, {
-                attributes:    true,
-                childList:     true,
+                attributes: true,
+                childList: true,
                 characterData: true
             });
 
-            // extract domain and set values for drpdown menu
+            // extract domain and set values for dropdown menu
             let domains = [];
-            for(let k=0; k<data["ontologies"].length; k++){
-                if(data["ontologies"][k]["domain"] != undefined){
+            for (let k = 0; k < data["ontologies"].length; k++) {
+                if (data["ontologies"][k]["domain"] !== undefined) {
                     let d = data["ontologies"][k]["domain"] //.replace(" and", ",").split(",")
                     domains.push(d)
                 }
@@ -368,26 +412,27 @@ jQuery(document).ready(function () {
             domains = [...new Set(domains)];
             domains.sort();
             $("#dd-domains").append(`<option></option>`);
-            domains.forEach(function (r){
+            domains.forEach(function(r) {
                 $("#dd-domains").append(`<option value="${r.trim()}">${r.trim()}</option>`);
             })
-            //render unfiltered table
+            //render table on page load
             renderTable(data["ontologies"]);
 
             // check box filter event for table data
-            $("[data-filter]").on("change", () =>{
+            $("[data-filter]").on("change", () => {
                 apply_all_filters(data)
             });
             // get table by domain dropdown
-            $("#dd-domains").on("change", () =>{
+            $("#dd-domains").on("change", () => {
                 apply_all_filters(data)
 
             });
             // search word in table
             $("#searchVal").on("keyup", debounce((e) => {
-               apply_all_filters(data)
-              }));
+                apply_all_filters(data)
+            }));
 
+            // dispatch change event on initial load to apply checkbox filters
             let element = document.querySelector('[data-filter]');
             let event = new Event('change');
             element.dispatchEvent(event);
