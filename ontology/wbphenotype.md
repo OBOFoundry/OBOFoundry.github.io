@@ -51,5 +51,3 @@ usages:
 activity_status: active
 repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
 ---
-
-A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes

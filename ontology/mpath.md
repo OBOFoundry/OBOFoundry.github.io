@@ -27,5 +27,3 @@ activity_status: active
 repository: https://github.com/PaulNSchofield/mpath
 preferredPrefix: MPATH
 ---
-
-A structured controlled vocabulary of mutant and transgenic mouse pathology phenotypes

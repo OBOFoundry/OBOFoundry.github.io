@@ -30,5 +30,3 @@ publications:
   - id: https://doi.org/10.3390/d11100202
     title: "The Spider Anatomy Ontology (SPD)—A Versatile Tool to Link Anatomy with Cross-Disciplinary Data"
 ---
-
-An ontology for spider comparative biology including anatomical parts (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web, borrow).
