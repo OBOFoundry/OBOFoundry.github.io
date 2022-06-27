@@ -43,8 +43,9 @@ def main(args):
     print(" sh:declare")
     sep = ""
     for ont in data["ontologies"]:
-        if ont.get("is_obsolete", False):
-            continue
+        # if ont.get("is_obsolete", False):
+        #    continue
+        # See https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1976
         prefix = ont.get("preferredPrefix", ont["id"].upper())
         print(
             f'{sep}[ sh:prefix "{prefix}" ; sh:namespace "http://purl.obolibrary.org/obo/{prefix}_"]'
