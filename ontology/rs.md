@@ -37,5 +37,3 @@ depicted_by: http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif
 domain: organisms
 github_date_added: 2015-07-28
 ---
-
-Ontology of rat strains

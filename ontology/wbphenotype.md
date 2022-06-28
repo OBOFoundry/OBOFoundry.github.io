@@ -52,5 +52,3 @@ activity_status: active
 repository: https://github.com/obophenotype/c-elegans-phenotype-ontology
 github_date_added: 2015-07-28
 ---
-
-A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes

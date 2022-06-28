@@ -28,5 +28,3 @@ repository: https://github.com/semanticchemistry/semanticchemistry
 preferredPrefix: CHEMINF
 github_date_added: 2015-07-28
 ---
-
-Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them.

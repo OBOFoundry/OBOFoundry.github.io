@@ -32,5 +32,3 @@ publications:
     title: "A gross anatomy ontology for hymenoptera"
 github_date_added: 2015-07-28
 ---
-
-A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)

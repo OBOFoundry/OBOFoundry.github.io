@@ -34,5 +34,3 @@ repository: https://github.com/insect-morphology/aism
 preferredPrefix: AISM
 github_date_added: 2021-05-06
 ---
-
-The AISM contains terms used in insect biodiversity research for describing structures of the exoskeleton and the skeletomuscular system. It aims to serve as the basic backbone of generalized terms to be expanded with order-specific terminology.

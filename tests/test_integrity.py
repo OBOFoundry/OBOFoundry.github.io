@@ -33,6 +33,7 @@ def get_data():
 
         # Load the data like it is YAML
         data = yaml.safe_load("\n".join(lines[1:idx]))
+        data["long_description"] = "".join(lines[idx:])
         ontologies[data["id"]] = data
     return ontologies
 
@@ -159,13 +160,45 @@ class TestIntegrity(unittest.TestCase):
         }
         self.assertEqual(required - skip_keys, high_level - skip_keys)
 
+    @staticmethod
+    def skip_inactive(record) -> bool:
+        """Check if should skip for inactive records."""
+        return record.get("activity_status") != "active"
+
     def test_preferred_prefix(self):
         """Test all preferred prefixes."""
         for prefix, record in self.ontologies.items():
             with self.subTest(prefix=prefix):
-                if record.get("activity_status") != "active":
+                if self.skip_inactive(record):
                     continue
                 preferred_prefix = record.get("preferredPrefix")
                 self.assertIsNotNone(preferred_prefix)
                 self.assertLessEqual(2, len(preferred_prefix))
                 self.assertNotIn(" ", preferred_prefix)
+
+    def test_redundant_descriptions(self):
+        """Test that the description field is not redundant of the long form description."""
+        for prefix, record in self.ontologies.items():
+            if self.skip_inactive(record):
+                continue
+            description = record.get("description")
+            long_description = record["long_description"]
+            if description is None:
+                continue
+            with self.subTest(prefix=prefix):
+                self.assertNotEqual(
+                    _string_norm(description),
+                    _string_norm(long_description),
+                    msg=f"Effectively the same description was reused in the short and long-form field for {prefix}",
+                )
+
+
+def _string_norm(s: str) -> str:
+    return (
+        s.strip()
+        .lower()
+        .replace("\n", "")
+        .replace(" ", "")
+        .replace(".", "")
+        .replace("-", "")
+    )

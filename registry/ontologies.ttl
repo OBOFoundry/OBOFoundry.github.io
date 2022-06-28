@@ -2251,12 +2251,16 @@ _:b120  <http://www.w3.org/2000/01/rdf-schema#label>  "Alpha Tom Kodamullil" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology is developed to support Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org)." ;
         <http://purl.org/dc/elements/1.1/title>  "VEuPathDB ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.5281/zenodo.6685957> ;
         <http://purl.org/dc/terms/1.1/theme>  "organisms" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/eupath.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b121 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/eupath.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/VEuPathDB-ontology/VEuPathDB-ontology> .
+
+<https://doi.org/10.5281/zenodo.6685957>
+        <http://purl.org/dc/elements/1.1/title>  "Malaria study data integration and information retrieval based on OBO Foundry ontologies." .
 
 _:b121  <http://www.w3.org/2000/01/rdf-schema#label>  "Jie Zheng" ;
         <http://xmlns.com/foaf/0.1/mbox>  "jiezheng@pennmedicine.upenn.edu" .

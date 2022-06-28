@@ -21,5 +21,3 @@ activity_status: active
 preferredPrefix: OARCS
 github_date_added: 2017-02-10
 ---
-
-OArCS is an ontology describing the Arthropod ciruclatory system.
