@@ -219,7 +219,11 @@ class TestStandardizedYaml(unittest.TestCase):
                     explicit_end=False,
                     width=float("inf"),
                 ).rstrip()
-                self.assertEqual(dumped, chunked)
+                self.assertEqual(
+                    dumped,
+                    chunked,
+                    msg="\n\n\tPlease run `tox -e lint` to standardize the ontology metadata.",
+                )
 
 
 def _string_norm(s: str) -> str:
