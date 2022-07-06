@@ -10,7 +10,6 @@ Author: `Charles Tapley Hoyt <https://cthoyt.com>`_.
 import pathlib
 from io import StringIO
 
-import click
 import yaml
 from yaml import MappingNode, SafeDumper, ScalarNode
 
@@ -89,7 +88,6 @@ def update_markdown(path: pathlib.Path) -> None:
             print(line, file=file)
 
 
-@click.command()
 def main():
     for path in ONTOLOGY_DIRECTORY.glob("*.md"):
         update_markdown(path)
