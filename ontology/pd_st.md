@@ -5,11 +5,11 @@ title: Platynereis stage ontology
 contact:
   email: henrich@embl.de
   label: Thorsten Heinrich
-taxon:
-  id: NCBITaxon:6358
-  label: Platynereis
 homepage: http://4dx.embl.de/platy
 is_obsolete: true
 replaced_by: pdumdv
+taxon:
+  id: NCBITaxon:6358
+  label: Platynereis
 activity_status: inactive
 ---

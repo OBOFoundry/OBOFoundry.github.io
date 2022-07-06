@@ -14,7 +14,8 @@ import yaml
 from yaml import MappingNode, SafeDumper, ScalarNode
 
 HERE = pathlib.Path(__file__).parent.resolve()
-ONTOLOGY_DIRECTORY = HERE.parent.joinpath("ontology").resolve()
+ROOT = HERE.parent.parent.resolve()
+ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
 
 
 def sort_key(kv):
