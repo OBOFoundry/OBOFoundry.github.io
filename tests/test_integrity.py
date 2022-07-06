@@ -8,6 +8,8 @@ from typing import Set
 
 import yaml
 
+from obofoundry.standardize_metadata import ModifiedDumper
+
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
 ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
@@ -213,12 +215,7 @@ class TestStandardizedYaml(unittest.TestCase):
                 chunked = "\n".join(lines[1:idx])
                 data = yaml.safe_load(StringIO(chunked))
                 # These settings should match the standardize_metadata.py dumping sequence
-                dumped = yaml.safe_dump(
-                    data,
-                    sort_keys=True,
-                    explicit_end=False,
-                    width=float("inf"),
-                ).rstrip()
+                dumped = ModifiedDumper.dump(data)
                 self.assertEqual(
                     dumped,
                     chunked,

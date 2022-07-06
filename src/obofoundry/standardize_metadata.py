@@ -61,6 +61,16 @@ class ModifiedDumper(SafeDumper):
                 node.flow_style = best_style
         return node
 
+    @classmethod
+    def dump(cls, data):
+        return yaml.dump(
+            data,
+            Dumper=cls,
+            sort_keys=True,
+            explicit_end=False,
+            width=float("inf"),
+        ).rstrip()
+
 
 def update_markdown(path: pathlib.Path) -> None:
     """Update the given markdown file."""
@@ -72,19 +82,13 @@ def update_markdown(path: pathlib.Path) -> None:
 
     # Load the data like it is YAML
     data = yaml.safe_load(StringIO("\n".join(lines[1:idx])))
-    dumped = yaml.dump(
-        data,
-        Dumper=ModifiedDumper,
-        sort_keys=True,
-        explicit_end=False,
-        width=float("inf"),
-    ).rstrip()
+    dumped = ModifiedDumper.dump(data)
 
     with path.open("w") as file:
         print("---", file=file)
         print(dumped, file=file)
         print("---", file=file)
-        for line in lines[idx + 1:]:
+        for line in lines[idx + 1 :]:
             print(line, file=file)
 
 
