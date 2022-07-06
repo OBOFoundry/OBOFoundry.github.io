@@ -69,6 +69,7 @@ class ModifiedDumper(SafeDumper):
             sort_keys=True,
             explicit_end=False,
             width=float("inf"),
+            allow_unicode=True,
         ).rstrip()
 
 
