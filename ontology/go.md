@@ -12,14 +12,8 @@ contact:
   label: Suzi Aleksander
   orcid: 0000-0001-6787-2901
 dependencies:
-- id: uberon
-  subset: go/extensions/uberon_import.owl
 - id: cl
   subset: go/extensions/cl_import.owl
-- id: ncbitaxon
-  subset: go/extensions/ncbitaxon_import.owl
-- id: ro
-  subset: go/extensions/ro_import.owl
 - id: go/extensions/go-bridge-to-nifstd.owl
   title: GO bridge to NIFSTD
   connects:
@@ -30,6 +24,12 @@ dependencies:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/24093723
     title: 'The Gene Ontology (GO) Cellular Component Ontology: integration with SAO (Subcellular Anatomy Ontology) and other recent developments.'
   type: BridgeOntology
+- id: ncbitaxon
+  subset: go/extensions/ncbitaxon_import.owl
+- id: ro
+  subset: go/extensions/ro_import.owl
+- id: uberon
+  subset: go/extensions/uberon_import.owl
 depicted_by: http://geneontology.org/assets/go-logo-icon.mini.png
 description: An ontology for describing the function of genes and gene products
 domain: biological systems

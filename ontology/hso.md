@@ -8,11 +8,11 @@ contact:
   label: Fernanda Dorea
   orcid: 0000-0001-8638-8525
 dependencies:
-- id: uberon
 - id: bfo
-- id: ro
-- id: obi
 - id: ncbitaxon
+- id: obi
+- id: ro
+- id: uberon
 description: The health Surveillance Ontology (HSO) focuses on "surveillance system level data", that is, data outputs from surveillance activities, such as number of samples collected, cases observed, etc. It aims to support One-Health surveillance, covering animal health, public health and food safety surveillance.
 domain: health
 homepage: https://w3id.org/hso

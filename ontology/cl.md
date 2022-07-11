@@ -15,13 +15,13 @@ contact:
   label: Alexander Diehl
   orcid: 0000-0001-9990-8331
 dependencies:
-- id: uberon
-- id: go
-- id: ro
 - id: chebi
+- id: go
+- id: ncbitaxon
 - id: pato
 - id: pr
-- id: ncbitaxon
+- id: ro
+- id: uberon
 description: The Cell Ontology is a structured controlled vocabulary for cell types in animals.
 domain: anatomy and development
 homepage: https://obophenotype.github.io/cell-ontology/

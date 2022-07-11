@@ -9,12 +9,12 @@ contact:
   orcid: 0000-0002-9136-9932
 dependencies:
 - id: aism
-- id: ro
-- id: uberon
-- id: caro
-- id: pato
 - id: bfo
 - id: bspo
+- id: caro
+- id: pato
+- id: ro
+- id: uberon
 description: The Lepidoptera Anatomy Ontology contains terms used for describing the anatomy and phenotype of moths and butterflies in biodiversity research. LEPAO is developed in part by BIOfid (The Specialised Information Service Biodiversity Research).
 domain: anatomy and development
 homepage: https://github.com/insect-morphology/lepao

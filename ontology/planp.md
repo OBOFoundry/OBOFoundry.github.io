@@ -12,10 +12,10 @@ contact:
   label: Sofia Robb
   orcid: 0000-0002-3528-5267
 dependencies:
-- id: ro
+- id: go
 - id: pato
 - id: plana
-- id: go
+- id: ro
 description: Planarian Phenotype Ontology is an ontology of phenotypes observed in the planarian Schmidtea mediterranea.
 domain: phenotype
 homepage: https://github.com/obophenotype/planarian-phenotype-ontology

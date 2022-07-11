@@ -12,10 +12,10 @@ contact:
   label: Zach Landis-Lewis
   orcid: 0000-0002-9117-9338
 dependencies:
-- id: stato
-- id: iao
 - id: bfo
+- id: iao
 - id: ro
+- id: stato
 description: Ontology to reproducibly study visualizations of clinical performance
 domain: information
 homepage: https://github.com/Display-Lab/psdo

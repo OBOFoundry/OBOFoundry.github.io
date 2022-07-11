@@ -14,8 +14,8 @@ contact:
   label: Bob Thacker
   orcid: 0000-0002-9654-0073
 dependencies:
-- id: uberon
 - id: ro
+- id: uberon
 description: An ontology covering the anatomy of the taxon Porifera (sponges)
 domain: anatomy and development
 homepage: https://github.com/obophenotype/porifera-ontology

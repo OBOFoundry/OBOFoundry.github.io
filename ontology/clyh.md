@@ -12,9 +12,9 @@ contact:
   label: Lucas Leclere
   orcid: 0000-0002-7440-0467
 dependencies:
-- id: uberon
-- id: ro
 - id: iao
+- id: ro
+- id: uberon
 description: The Clytia hemisphaerica Development and Anatomy Ontology (CLYH) describes the anatomical and developmental features of the Clytia hemisphaerica life cycle.
 domain: anatomy and development
 homepage: https://github.com/EBISPOT/clyh_ontology

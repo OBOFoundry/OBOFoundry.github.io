@@ -19,8 +19,8 @@ dependencies:
 - id: iao
 - id: maxo
 - id: nbo
-- id: ncit
 - id: ncbitaxon
+- id: ncit
 - id: pato
 - id: ro
 - id: uberon

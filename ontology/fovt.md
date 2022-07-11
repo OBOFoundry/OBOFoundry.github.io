@@ -13,12 +13,12 @@ contact:
   orcid: 0000-0003-2699-3066
 dependencies:
 - id: bco
-- id: oba
-- id: ro
 - id: bfo
-- id: pato
 - id: bspo
 - id: iao
+- id: oba
+- id: pato
+- id: ro
 - id: uberon
 description: FuTRES Ontology of Vertebrate Traits is an application ontology used to convert vertebrate trait data in spreadsheet to triples. FOVT leverages the BioCollections Ontology (BCO) to link observations of individual specimens to their trait values. Traits are defined in the Ontology of Biological Attributes (OBA).
 domain: phenotype

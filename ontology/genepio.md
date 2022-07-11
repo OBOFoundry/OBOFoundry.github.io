@@ -8,11 +8,11 @@ contact:
   label: Damion Dooley
   orcid: 0000-0002-8844-9165
 dependencies:
-- id: uberon
-- id: po
-- id: ro
 - id: chebi
 - id: ncbitaxon
+- id: po
+- id: ro
+- id: uberon
 description: The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary to identify, document and research foodborne pathogens and associated outbreaks.
 domain: health
 homepage: http://genepio.org/

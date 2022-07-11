@@ -12,8 +12,8 @@ contact:
   label: Melanie Courtot
   orcid: 0000-0002-9551-6370
 dependencies:
-- id: iao
 - id: bfo
+- id: iao
 description: DUO is an ontology which represent data use conditions.
 domain: information
 homepage: https://github.com/EBISPOT/DUO

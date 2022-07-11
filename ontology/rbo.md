@@ -12,12 +12,12 @@ contact:
   label: Daniel C. Berrios
   orcid: 0000-0003-4312-9552
 dependencies:
-- id: ro
 - id: bfo
-- id: pato
 - id: chmo
 - id: envo
 - id: obi
+- id: pato
+- id: ro
 - id: uo
 description: RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.
 domain: environment
