@@ -1,34 +1,34 @@
 ---
 layout: ontology_detail
 id: bspo
+title: Biological Spatial Ontology
+build:
+  checkout: git clone https://github.com/obophenotype/biological-spatial-ontology.git
+  infallible: 1
+  method: vcs
+  path: src/ontology
+  system: git
 contact:
   email: cjmungall@lbl.gov
-  label: Chris Mungall
   github: cmungall
+  label: Chris Mungall
   orcid: 0000-0002-6601-2165
 description: An ontology for representing spatial concepts, anatomical axes, gradients, regions, planes, sides, and surfaces
 domain: anatomy and development
 homepage: https://github.com/obophenotype/biological-spatial-ontology
-products:
-  - id: bspo.owl
-  - id: bspo.obo
-title: Biological Spatial Ontology
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
-build:
-  checkout: git clone https://github.com/obophenotype/biological-spatial-ontology.git
-  system: git
-  path: src/ontology
-  method: vcs
-  infallible: 1
-tracker: https://github.com/obophenotype/biological-spatial-ontology/issues
-publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/25140222
-    title: "Nose to tail, roots to shoots: spatial descriptors for phenotypic diversity in the Biological Spatial Ontology."
-activity_status: active
-repository: https://github.com/obophenotype/biological-spatial-ontology
+  url: http://creativecommons.org/licenses/by/3.0/
 preferredPrefix: BSPO
+products:
+- id: bspo.owl
+- id: bspo.obo
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/25140222
+  title: 'Nose to tail, roots to shoots: spatial descriptors for phenotypic diversity in the Biological Spatial Ontology.'
+repository: https://github.com/obophenotype/biological-spatial-ontology
+tracker: https://github.com/obophenotype/biological-spatial-ontology/issues
+activity_status: active
 ---
 
 An ontology for respresenting spatial concepts, anatomical axes, gradients, regions, planes, sides, and surfaces. These concepts can be used at multiple biological scales and in a diversity of taxa, including plants, animals and fungi. The BSPO is used to provide a source of anatomical location descriptors for logically defining anatomical entity classes in anatomy ontologies.
