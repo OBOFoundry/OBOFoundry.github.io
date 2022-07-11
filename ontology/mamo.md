@@ -10,6 +10,7 @@ domain: simulation
 homepage: http://sourceforge.net/p/mamo-ontology/wiki/Home/
 license:
   label: Artistic License 2.0
+  url: http://opensource.org/licenses/Artistic-2.0
 preferredPrefix: MAMO
 products:
 - id: mamo.owl
