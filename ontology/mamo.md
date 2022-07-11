@@ -1,16 +1,19 @@
 ---
 layout: ontology_detail
 id: mamo
+title: Mathematical modeling ontology
+build:
+  method: owl2obo
+  source_url: https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl
 description: The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features.
 domain: simulation
 homepage: http://sourceforge.net/p/mamo-ontology/wiki/Home/
 license:
   label: Artistic License 2.0
-activity_status: orphaned
 preferredPrefix: MAMO
 products:
 - id: mamo.owl
 repository: http://sourceforge.net/p/mamo-ontology
 tracker: http://sourceforge.net/p/mamo-ontology/tickets/
-activity_status: active
+activity_status: orphaned
 ---
