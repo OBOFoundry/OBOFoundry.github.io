@@ -2,10 +2,13 @@
 
 import json
 import unittest
+from io import StringIO
 from pathlib import Path
 from typing import Set
 
 import yaml
+
+from obofoundry.standardize_metadata import ModifiedDumper
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
@@ -190,6 +193,33 @@ class TestIntegrity(unittest.TestCase):
                     _string_norm(description),
                     _string_norm(long_description),
                     msg=f"Effectively the same description was reused in the short and long-form field for {prefix}",
+                )
+
+
+class TestStandardizedYaml(unittest.TestCase):
+    """Test the YAML is standard."""
+
+    def test_standardized(self):
+        """Test the YAML is standardized."""
+        for path in ONTOLOGY_DIRECTORY.glob("*.md"):
+            with self.subTest(prefix=path.stem):
+                with path.open() as file:
+                    lines = [line.rstrip("\n") for line in file]
+
+                self.assertEqual(lines[0], "---")
+                idx = min(
+                    i for i, line in enumerate(lines[1:], start=1) if line == "---"
+                )
+
+                # Load the data like it is YAML
+                chunked = "\n".join(lines[1:idx])
+                data = yaml.safe_load(StringIO(chunked))
+                # These settings should match the standardize_metadata.py dumping sequence
+                dumped = ModifiedDumper.dump(data)
+                self.assertEqual(
+                    dumped,
+                    chunked,
+                    msg="\n\n\tPlease run `tox -e lint` to standardize the ontology metadata.",
                 )
 
 
