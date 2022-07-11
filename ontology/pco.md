@@ -13,7 +13,6 @@ contact:
   orcid: 0000-0001-8815-0078
 dependencies:
 - id: bfo
-- id: bfo
 - id: caro
 - id: envo
 - id: go
