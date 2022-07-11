@@ -9,6 +9,7 @@ Author: `Charles Tapley Hoyt <https://cthoyt.com>`_.
 
 import pathlib
 from io import StringIO
+from operator import itemgetter
 
 import yaml
 from yaml import MappingNode, SafeDumper, ScalarNode
@@ -84,6 +85,12 @@ def update_markdown(path: pathlib.Path) -> None:
 
     # Load the data like it is YAML
     data = yaml.safe_load(StringIO("\n".join(lines[1:idx])))
+
+    # Sort dependencies by ID
+    dependencies = data.get("dependencies")
+    if dependencies:
+        data["dependencies"] = sorted(dependencies, key=itemgetter("id"))
+
     dumped = ModifiedDumper.dump(data)
 
     with path.open("w") as file:

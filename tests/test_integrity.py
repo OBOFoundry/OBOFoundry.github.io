@@ -55,6 +55,18 @@ class TestIntegrity(unittest.TestCase):
             if not dependencies:
                 continue
             with self.subTest(ontology=ontology):
+                dependency_ids = [d["id"] for d in dependencies]
+                self.assertEqual(
+                    sorted(dependency_ids),
+                    dependency_ids,
+                    msg="dependencies should be sorted by ID",
+                )
+                self.assertEqual(
+                    sorted(set(dependency_ids)),
+                    dependency_ids,
+                    msg="dependencies should be unique",
+                )
+
                 for i, dependency in enumerate(dependencies):
                     # Check that the ID is a valid OBO ontology prefix
                     dependency_id = dependency["id"]

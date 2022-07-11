@@ -12,13 +12,13 @@ contact:
   label: Erik Segerdell
   orcid: 0000-0002-9611-1279
 dependencies:
-- id: iao
-- id: go
-- id: ro
-- id: pato
 - id: bfo
 - id: chebi
 - id: cl
+- id: go
+- id: iao
+- id: pato
+- id: ro
 - id: xao
 description: XPO represents anatomical, cellular, and gene function phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis.
 domain: phenotype

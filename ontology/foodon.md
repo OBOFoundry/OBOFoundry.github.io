@@ -8,14 +8,14 @@ contact:
   label: Damion Dooley
   orcid: 0000-0002-8844-9165
 dependencies:
-- id: uberon
-- id: ro
-- id: eo
-- id: chebi
-- id: ncbitaxon
 - id: bfo
+- id: chebi
 - id: envo
+- id: eo
+- id: ncbitaxon
 - id: obi
+- id: ro
+- id: uberon
 description: A broadly scoped ontology representing entities which bear a “food role”. It encompasses materials in natural ecosystems and agriculture that are consumed by humans and domesticated animals. This includes any generic (unbranded) raw or processed food material found in processing plants, markets, stores or food distribution points. FoodOn also imports nutritional component and dietary pattern terms from other OBO Foundry ontologies to support interoperability in diet and nutrition research
 domain: diet, metabolomics, and nutrition
 homepage: https://foodon.org/

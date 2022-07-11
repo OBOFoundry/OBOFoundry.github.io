@@ -8,14 +8,14 @@ contact:
   label: Francesco Vitali
   orcid: 0000-0001-9125-4337
 dependencies:
-- id: uberon
-- id: ro
-- id: chebi
-- id: ncbitaxon
 - id: bfo
+- id: chebi
 - id: envo
-- id: obi
 - id: foodon
+- id: ncbitaxon
+- id: obi
+- id: ro
+- id: uberon
 description: An ontology for description of concepts in the nutritional studies domain.
 domain: diet, metabolomics, and nutrition
 homepage: https://github.com/enpadasi/Ontology-for-Nutritional-Studies

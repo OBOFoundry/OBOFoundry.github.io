@@ -18,12 +18,12 @@ dependencies:
 - id: clo
 - id: micro
 - id: ncbitaxon
-- id: peco
 - id: ncit
 - id: obi
 - id: omit
 - id: omp
 - id: pato
+- id: peco
 - id: uberon
 - id: zeco
 description: Microbial Conditions Ontology is an ontology...

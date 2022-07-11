@@ -15,14 +15,14 @@ contact:
   label: Pier Luigi Buttigieg
   orcid: 0000-0002-4366-3088
 dependencies:
-- id: uberon
-- id: pco
-- id: ro
 - id: chebi
-- id: ncbitaxon
 - id: foodon
-- id: po
 - id: go
+- id: ncbitaxon
+- id: pco
+- id: po
+- id: ro
+- id: uberon
 depicted_by: /logos/envo.png
 description: Ontology of environmental features and habitats
 domain: environment

@@ -12,15 +12,14 @@ contact:
   label: Ramona Walls
   orcid: 0000-0001-8815-0078
 dependencies:
-- id: ro
 - id: bfo
-- id: pato
+- id: caro
 - id: envo
 - id: go
 - id: iao
-- id: bfo
 - id: ncbitaxon
-- id: caro
+- id: pato
+- id: ro
 description: An ontology about groups of interacting organisms such as populations and communities
 domain: environment
 homepage: https://github.com/PopulationAndCommunityOntology/pco

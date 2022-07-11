@@ -10,9 +10,9 @@ contact:
 dependencies:
 - id: fbcv
 - id: gsso
-- id: stato
-- id: ro
 - id: ncit
+- id: ro
+- id: stato
 description: OntoAvida develops an integrated vocabulary for the description of the most widely-used computational approach for studying evolution using digital organisms (i.e., self-replicating computer programs that evolve within a user-defined computational environment).
 domain: simulation
 homepage: https://gitlab.com/fortunalab/ontoavida

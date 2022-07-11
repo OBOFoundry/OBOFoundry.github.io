@@ -8,18 +8,18 @@ contact:
   label: David Osumi-Sutherland
   orcid: 0000-0002-7073-9172
 dependencies:
-- id: pr
-- id: go
-- id: uberon
-- id: ro
-- id: pato
-- id: ncbitaxon
 - id: bfo
-- id: cl
-- id: omo
-- id: nbo
 - id: chebi
+- id: cl
+- id: go
+- id: nbo
+- id: ncbitaxon
+- id: omo
+- id: pato
+- id: pr
+- id: ro
 - id: so
+- id: uberon
 description: Cell types that are provisionally defined by experimental techniques such as single cell or single nucleus transcriptomics rather than a straightforward & coherent set of properties.
 domain: phenotype
 homepage: https://github.com/obophenotype/provisional_cell_ontology

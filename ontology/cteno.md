@@ -13,8 +13,8 @@ contact:
   label: Chris Mungall
   orcid: 0000-0002-6601-2165
 dependencies:
-- id: uberon
 - id: ro
+- id: uberon
 description: An anatomical and developmental ontology for ctenophores (Comb Jellies)
 domain: anatomy and development
 homepage: https://github.com/obophenotype/ctenophore-ontology

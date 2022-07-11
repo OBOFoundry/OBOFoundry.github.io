@@ -12,16 +12,16 @@ contact:
   label: Pier Luigi Buttigieg
   orcid: 0000-0002-4366-3088
 dependencies:
-- id: pco
-- id: ro
 - id: bfo
-- id: pato
-- id: envo
 - id: chebi
+- id: envo
 - id: go
-- id: uberon
-- id: po
 - id: iao
+- id: pato
+- id: pco
+- id: po
+- id: ro
+- id: uberon
 description: Ecocore is a community ontology for the concise and controlled description of ecological traits of organisms.
 domain: environment
 homepage: https://github.com/EcologicalSemantics/ecocore

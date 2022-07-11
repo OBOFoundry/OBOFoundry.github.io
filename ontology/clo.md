@@ -8,10 +8,10 @@ contact:
   label: Sirarat Sarntivijai
   orcid: 0000-0002-2548-641X
 dependencies:
-- id: uberon
 - id: cl
 - id: doid
 - id: ncbitaxon
+- id: uberon
 description: An ontology to standardize and integrate cell line information and to support computer-assisted reasoning.
 domain: anatomy and development
 homepage: http://www.clo-ontology.org

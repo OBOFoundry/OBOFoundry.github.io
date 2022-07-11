@@ -8,9 +8,9 @@ contact:
   label: Chen Yang
   orcid: 0000-0001-9202-5309
 dependencies:
-- id: ons
-- id: obi
 - id: foodon
+- id: obi
+- id: ons
 description: An ontology to standardize research output of nutritional epidemiologic studies.
 domain: diet, metabolomics, and nutrition
 homepage: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies

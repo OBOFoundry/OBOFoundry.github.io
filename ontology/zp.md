@@ -12,13 +12,13 @@ contact:
   label: Yvonne Bradford
   orcid: 0000-0002-9900-7880
 dependencies:
-- id: go
-- id: ro
-- id: pato
-- id: bspo
-- id: zfa
 - id: bfo
+- id: bspo
+- id: go
+- id: pato
+- id: ro
 - id: uberon
+- id: zfa
 description: The Zebrafish Phenotype Ontology formally defines all phenotypes of the Zebrafish model organism.
 domain: phenotype
 homepage: https://github.com/obophenotype/zebrafish-phenotype-ontology

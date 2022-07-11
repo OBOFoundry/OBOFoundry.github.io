@@ -12,12 +12,12 @@ contact:
   label: Leigh Carmody
   orcid: 0000-0001-7941-2961
 dependencies:
-- id: iao
+- id: chebi
+- id: foodon
 - id: go
+- id: iao
 - id: ro
 - id: uberon
-- id: foodon
-- id: chebi
 depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/maxo-logos/maxo_logo_black-banner.png
 description: Medical Action Ontology is an ontology...
 domain: health

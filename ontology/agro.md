@@ -12,18 +12,18 @@ contact:
   label: Marie-Angélique Laporte
   orcid: 0000-0002-8461-9745
 dependencies:
+- id: bfo
 - id: envo
-- id: go
 - id: foodon
+- id: go
+- id: iao
 - id: ncbitaxon
+- id: obi
 - id: pato
 - id: peco
 - id: po
-- id: to
 - id: ro
-- id: bfo
-- id: iao
-- id: obi
+- id: to
 - id: uo
 - id: xco
 description: Ontology of agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments

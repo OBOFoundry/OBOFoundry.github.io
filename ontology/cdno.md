@@ -12,11 +12,11 @@ contact:
   label: Liliana Andres Hernandez
   orcid: 0000-0002-7696-731X
 dependencies:
-- id: ro
 - id: bfo
-- id: pato
 - id: chebi
 - id: envo
+- id: pato
+- id: ro
 description: CDNO provides structured terminologies to describe nutritional attributes of material entities that contribute to human diet.
 domain: diet, metabolomics, and nutrition
 homepage: https://cdno.info/

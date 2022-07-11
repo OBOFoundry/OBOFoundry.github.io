@@ -31,12 +31,12 @@ contact:
   label: Chris Mungall
   orcid: 0000-0002-6601-2165
 dependencies:
-- id: go
-  subset: uberon/go_import.owl
-- id: cl
-  subset: uberon/cl_import.owl
 - id: chebi
   subset: uberon/chebi_import.owl
+- id: cl
+  subset: uberon/cl_import.owl
+- id: go
+  subset: uberon/go_import.owl
 - id: pr
   subset: uberon/pr_import.owl
 depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/uberon-logos/uberon_logo_black-banner.png
