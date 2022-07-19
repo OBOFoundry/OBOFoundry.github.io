@@ -1,26 +1,23 @@
 
 NOTE: this file for now begins the process of collecting information needed to fill out YAML files containing ontology metadata. The JSON schema is used for this purpose because it (presumably) contains all the fields that can be filled in.
 
-{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://obofoundry.org/config/registry_schema",
-  "title": "registry_schema",
-  "additionalProperties": false,
-  "properties": {
-    "activity_status": {
-      "level": "error",
-      "principle": "http://obofoundry.org/principles/fp-016-maintenance.html",
-      "description": "'activity_status' is a required property that must have a value of 'active', 'inactive', or 'orphaned'. Active ontologies have a contact and are currently in development. Orphaned ontologies are still in development, but do not have a contact. Inactive ontologies are no longer in development.",
-      "type": "string",
-      "enum": [
-        "active",
-        "inactive",
-        "orphaned"
-      ],
-      "errors": {
-        "activity_status": "${data} is not one of ${schema}."
-      }
-    },
+  "required": [
+    "contact",
+    "description",
+    "homepage",
+    "id",
+    "layout",
+    "license",
+    "products",
+    "title",
+    "tracker",
+    "repository",
+    "preferredPrefix",
+    "ontology_purl",
+    "domain"
+  ],
+
+
     "browsers": {
       "level": "info",
       "description": "'browsers' is an informative field. It specifies the URL of a website in which the ontology can be browsed. OntoBee is included by default.",
@@ -480,21 +477,3 @@ NOTE: this file for now begins the process of collecting information needed to f
       "suggest": false
     }
   },
-  "required": [
-    "activity_status",
-    "contact",
-    "description",
-    "homepage",
-    "id",
-    "layout",
-    "license",
-    "products",
-    "title",
-    "tracker",
-    "repository",
-    "preferredPrefix",
-    "ontology_purl",
-    "domain"
-  ],
-  "level": "error"
-}
