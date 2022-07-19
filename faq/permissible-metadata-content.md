@@ -3,18 +3,13 @@ layout: faq
 title: Permissible content
 ---
 
-This FAQ is about what content is permissible in the metadata file.
+This FAQ is about the content of the various fields in your ontology metadata file. Instructions on how to edit that file is covered by the FAQ <a href="{{site.baseurl}}faq/how-do-i-edit-metadata.html">How do I edit the metadata for my ontology?</a>
 
- * To edit ontology metadata, see the FAQ <a href="{{site.baseurl}}faq/how-do-i-edit-metadata.html">How do I edit metadata</a>
+NOTE: In the instructions below, items in angle brackets--including the brackets <> themselves--should be replaced by the appropriate content.
 
-## Permissible content for the 'publications' field
-  -id: <URL of cited reference>
-    Identifiers (e.g., CURIEs, URIs) for references to publications that appear in ontology metadata must refer to a resource that
-    1) hosts its own original content and metadata, and 2) can be used to look up metadata about the corresponding publication including its title, venue, authors, etc.
+## What can I put in the 'publications' field?
+Allowed number of entries: *any*<br>
+Each entry under this field should have one 'id' subfield and one 'title' subfield with content as indicated:
+- id: \<cited reference> The cited reference must take the form of a URI (e.g., https://...") that points to one of the following permitted resources: PubMed, PubMed Central, and the Digital Object Identifier (DOI) service. Note that preprint servers such as arXiv, bioRxiv, medRxiv, and ChemRxiv--as well as alternative hosting platforms such as Zenodo and FigShare--can still be used, but not directly. For example, instead of a direct link to Zenodo such as  https://zenodo.org/record/6685957, the equivalent DOI record https://doi.org/10.5281/zenodo.6685957 should be used. Links to Semantic Scholar (https://www.semanticscholar.org) or CEUR-WS (http://ceur-ws.org/) are not permitted. As an alternative, the Zenodo platform can be used to upload content that does not have a home in any of the permitted resources.
 
-    Resources like PubMed, PubMed Central, arXiv, bioRxiv, medRxiv (via DOI), and ChemRxiv (via DOI) constitute well-known first-party resources.
-    Further, the Digital Object Identifier (DOI) service qualifies as a high-quality first-party resource.
-
-    Resources like Semantic Scholar which do not host original content and loose PDF links (e.g., in http://ceur-ws.org) are not sufficient under these new standards. As an alternative, the Zenodo platform can be used to upload content that does not have a home in any of the other first-party services.
-
-  - title: <title of cited reference>
+- title: <title of cited reference> Technically this is a free-text field, but best practice is to use the title of the publication cited under the 'id' subfield.
