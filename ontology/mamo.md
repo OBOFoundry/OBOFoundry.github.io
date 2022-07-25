@@ -5,11 +5,6 @@ title: Mathematical modeling ontology
 build:
   method: owl2obo
   source_url: https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl
-contact:
-  email: nicolas@ascistance.co.uk
-  github: gambardella
-  label: Nicolas Gambardella
-  orcid: 0000-0002-6309-7327
 description: The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features.
 domain: simulation
 homepage: http://sourceforge.net/p/mamo-ontology/wiki/Home/
@@ -21,5 +16,5 @@ products:
 - id: mamo.owl
 repository: http://sourceforge.net/p/mamo-ontology
 tracker: http://sourceforge.net/p/mamo-ontology/tickets/
-activity_status: active
+activity_status: orphaned
 ---
