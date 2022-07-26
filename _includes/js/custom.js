@@ -131,7 +131,7 @@ jQuery(document).ready(function() {
             let description = data[i]['description'];
             let repo = "";
             let homepage = data[i]["homepage"];
-            let tracker = "#";
+            let tracker = "";
             let contact = "";
             let publication = "";
             let foundry_order = "";
@@ -146,7 +146,9 @@ jQuery(document).ready(function() {
                 repo = data[i]["repository"];
             }
             if (data[i]["tracker"]) {
-                tracker = data[i]["tracker"];
+                tracker =`<a class="btn btn-default btn-sm" href="${data[i]["tracker"]}" aria-label="Go to the tracker for ${title}" title="Go to the tracker for ${title}">
+                                <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                            </a>`;
             }
             if (data[i].hasOwnProperty("domain") && data[i]['domain'] !== undefined) {
                 domainInner[0] = data[i]['domain'];
@@ -206,16 +208,13 @@ jQuery(document).ready(function() {
                             <a class="btn btn-default btn-sm" href="${homepage}" aria-label="Go to the homepage for ${title}" title="Go to the homepage for ${title}">
                                  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                             </a>
-                            <a class="btn btn-default btn-sm" href="${tracker}" aria-label="Go to the tracker for ${title}" title="Go to the tracker for ${title}">
-                                <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
-                            </a>
-                            
                             <a class="btn btn-default btn-sm" href="http://purl.obolibrary.org/obo/${id}.owl" aria-label="Download ${title} in OWL format" title="Download ${title} in OWL format">
                                 <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
                             </a>
                             <a class="btn btn-default btn-sm" href="http://www.ontobee.org/browser/index.php?o=${id}" aria-label="Browse ${title} on OntoBee" title="Browse ${title} on OntoBee">
                                 <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                             </a>
+                            ${tracker}
                             ${contact}
                             ${publication}
                             ${foundry_order}
