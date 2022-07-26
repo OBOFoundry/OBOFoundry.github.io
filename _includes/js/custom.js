@@ -155,10 +155,17 @@ jQuery(document).ready(function() {
                 description = description.toString().slice(0, 140) + '...'
             }
             if (data[i]["contact"]) {
-                contact = data[i]["contact"]["email"];
+                contact =`
+                        <a class="btn btn-default btn-sm" href="mailto:${data[i]["contact"]["email"]}" aria-label="Send an email to ${title}"
+                           title="Send an email to ${title}">\
+                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        </a>`;
             }
             if (data[i]["publications"] && data[i]["publications"].length > 0) {
-                publication = data[i]["publications"][0]["id"];
+                publication = `
+                            <a class="btn btn-default btn-sm" href="${data[i]["publications"][0]["id"]}" aria-label="View the primary publication for ${title}" title="View the primary publication for ${title}">
+                                <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                            </a>`;
             }
             if (data[i]["in_foundry_order"]) {
                 foundry_order = `
@@ -202,18 +209,15 @@ jQuery(document).ready(function() {
                             <a class="btn btn-default btn-sm" href="${tracker}" aria-label="Go to the tracker for ${title}" title="Go to the tracker for ${title}">
                                 <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
                             </a>
-                            <a class="btn btn-default btn-sm" href="mailto:${contact}" aria-label="Send an email to ${title}" title="Send an email to ${title}">\
-                                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                            </a>
+                            
                             <a class="btn btn-default btn-sm" href="http://purl.obolibrary.org/obo/${id}.owl" aria-label="Download ${title} in OWL format" title="Download ${title} in OWL format">
                                 <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
                             </a>
                             <a class="btn btn-default btn-sm" href="http://www.ontobee.org/browser/index.php?o=${id}" aria-label="Browse ${title} on OntoBee" title="Browse ${title} on OntoBee">
                                 <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                             </a>
-                            <a class="btn btn-default btn-sm" href="${publication}" aria-label="View the primary publication for ${title}" title="View the primary publication for ${title}">
-                                <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
-                            </a>
+                            ${contact}
+                            ${publication}
                             ${foundry_order}
                         </div>
                     </td>
