@@ -436,5 +436,6 @@ jQuery(document).ready(function() {
             let element = document.querySelector('[data-filter]');
             let event = new Event('change');
             element.dispatchEvent(event);
+            $('#table-main').css('display', 'block');
         }).catch(error => console.log(error));
 });
