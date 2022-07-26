@@ -158,7 +158,6 @@ jQuery(document).ready(function() {
                 contact = data[i]["contact"]["email"];
             }
             if (data[i]["publications"] && data[i]["publications"].length > 0) {
-                console.log(data[i]["publications"], id)
                 publication = data[i]["publications"][0]["id"];
             }
             if (data[i]["in_foundry_order"]) {
@@ -437,5 +436,12 @@ jQuery(document).ready(function() {
             let event = new Event('change');
             element.dispatchEvent(event);
             $('#table-main').css('display', 'block');
+            debugger;
+            $( 'a' ).tooltip({
+                tooltipClass: "mytooltipstyle",
+                show: {
+                    effect: "slideDown",
+                }
+            });
         }).catch(error => console.log(error));
 });
