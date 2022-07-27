@@ -223,6 +223,7 @@ jQuery(document).ready(function() {
                     <td class="col-sm-1">
                         <a href="${license_url}" >
                             <img width="100px" src="${license_logo}" alt="${license_label}"/>
+                            <span style="display: none">${license_label}</span>
                         </a>
                     </td>  
                     <td class="col-sm-1">
