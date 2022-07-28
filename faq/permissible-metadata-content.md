@@ -1,6 +1,6 @@
 ---
 layout: faq
-title: Permissible content
+title: Metadata content
 ---
 
 This FAQ is about the content of the various fields in your ontology metadata file. Instructions on how to edit that file is covered by the FAQ <a href="faq/how-do-i-edit-metadata.html">How do I edit the metadata for my ontology?</a>
