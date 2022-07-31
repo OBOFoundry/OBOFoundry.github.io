@@ -1,24 +1,24 @@
 ---
 layout: ontology_detail
 id: micro
+title: Ontology of Prokaryotic Phenotypic and Metabolic Characters
 contact:
   email: carrine.blank@umontana.edu
-  label: Carrine Blank
   github: carrineblank
+  label: Carrine Blank
   orcid: 0000-0002-2100-6351
 description: An ontology of prokaryotic phenotypic and metabolic characters
-title: Ontology of Prokaryotic Phenotypic and Metabolic Characters
 domain: phenotype
 homepage: https://github.com/carrineblank/MicrO
-tracker: https://github.com/carrineblank/MicrO/issues
 license:
-  url: https://creativecommons.org/licenses/by/2.0/
   label: CC BY 2.0
-products:
-  - id: micro.owl
-activity_status: active
-repository: https://github.com/carrineblank/MicrO
+  url: https://creativecommons.org/licenses/by/2.0/
 preferredPrefix: MICRO
+products:
+- id: micro.owl
+repository: https://github.com/carrineblank/MicrO
+tracker: https://github.com/carrineblank/MicrO/issues
+activity_status: active
 ---
 
 Includes terms and term synonyms extracted from > 1500 prokaryotic taxonomic descriptions, collected from a large number of taxonomic descriptions from Archaea, Cyanobacteria, Bacteroidetes, Firmicutes, and Mollicutes.

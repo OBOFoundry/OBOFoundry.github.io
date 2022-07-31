@@ -5,11 +5,11 @@ title: Suggested Ontology for Pharmacogenomics
 contact:
   email: Adrien.Coulet@loria.fr
   label: Adrien Coulet
+homepage: http://www.loria.fr/~coulet/sopharm2.0_description.php
+is_obsolete: true
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
-homepage: http://www.loria.fr/~coulet/sopharm2.0_description.php
-is_obsolete: true
 activity_status: inactive
 ---
 

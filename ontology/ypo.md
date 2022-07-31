@@ -3,15 +3,15 @@ layout: ontology_detail
 id: ypo
 title: Yeast phenotypes
 contact:
-  orcid: 0000-0001-9163-5180
   email: cherry@genome.stanford.edu
   label: Mike Cherry
-taxon:
-  id: NCBITaxon:4932
-  label: Saccharomyces cerevisiae
+  orcid: 0000-0001-9163-5180
 homepage: http://www.yeastgenome.org/
 is_obsolete: true
 replaced_by: apo
+taxon:
+  id: NCBITaxon:4932
+  label: Saccharomyces cerevisiae
 activity_status: inactive
 ---
 

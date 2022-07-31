@@ -3,9 +3,9 @@ layout: ontology_detail
 id: obo_rel
 title: OBO relationship types (legacy)
 contact:
-  orcid: 0000-0002-6601-2165
   email: cjmungall@lbl.gov
   label: Chris Mungall
+  orcid: 0000-0002-6601-2165
 homepage: http://www.obofoundry.org/ro
 is_obsolete: true
 replaced_by: ro
