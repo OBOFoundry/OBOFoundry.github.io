@@ -11,6 +11,7 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 
 ## SOPs
 - [New Ontology Requests](#NOR)
+- [Reviewing ontologies for OBO membership](#ROOM)
 - [Changing ontology metadata in the registry](#META)
 
 <a name="NOR"></a> 
@@ -22,6 +23,25 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 1. At the next OBO Foundry Operations Committee conference call (hereafter, "Operations call"), a liaison is selected to be responsible for the issue. This liaison becomes familiar with the new ontology and rallies the appropriate people to provide feedback.
 1. At the next Operations call after that one, the liaison presents the NOR to the OBO Foundry Operations Committee and answers questions. In most cases, the information provided will be sufficient to either grant or refuse the prefix request. In some cases, the committee may choose to postpone its decision to require some clarification and fixes from the submitter.
 The liaison MUST be present at the Operations call in order for the NOR case to be discussed. If the liaison does not participate for 2 consecutive Operations calls, the chair of the second call emails the liaison to request a statement confirming the ability to continue as liaison. If the liaison does not participate in 3 consecutive Operations calls and did not respond to the email above, a new liaison is assigned during that third call.
+
+<a name="ROOM"></a> 
+### Reviewing Ontologies for OBO Membership (ROOM) 
+
+The goal of this SOP is to provide a clear set of criteria to be checked for the manual review of an ontology in response to a request to register a new ontology with the OBO Foundry. It is expected that a programmatic review using the Dashboard has already been done and the submitters have addressed those problems found. The purpose of the manual review is to check the ontology for issues that the Dashboard review does not cover. In order for this review to be relatively quick (~ 2 hours), a sample of terms/axioms should be checked; the reviewer is not expected to review all the terms/axioms.
+
+Check the following and provide a brief summary in the tracker issue for the new ontology request. All items of feedback must be provided using GitHub checklist syntax (`- [ ] TODO`) in order to track how far they are being addressed. Addressable issues identified as part of the review should be added to the new ontology’s issue tracker. 
+1. Ontology scope. The new ontology must be relevant and of some utility to biology and medicine.  Was the ontology developed using expert input or trusted scientific sources representative of the consensus in its target domain of knowledge? If the ontology was developed for a very specific purpose or community, representation and consensus need not be broad; however, this scope should be clearly stated.
+2. Validation of the filled out form and automated checks. Is the artifact available on the web in a valid serialization (e.g. OWL in XML, RDF, or functional syntax) that can be opened and inspected by open-source tools (e.g. Protégé)? Is the artifact's metadata informative and sufficient? 
+3. Terms with the new ontology prefix. The new terms provided by the ontology must not already be available in an available OBO Foundry ontology. There must not be a term with the same label available. There should not be another OBO Foundry ontology whose scope covers those terms and if there is there should be some evidence of contacting that OBO Foundry ontology.
+4. Correct use of imported terms. Does the ontology accurately - in both a technical and substantive sense - reuse terms from other OBO ontologies?
+If terms are reused, is there textual and (where relevant) axiomatic definition preserved?
+Are imported terms in appropriate hierarchies? That is, has the import of the term preserved its upper-level alignment?
+Are any additional axioms used for these terms correct in both a technical (e.g. passes reasoning) and substantive sense?
+5. Basic review of axiomatic patterns:
+Are existential restrictions used correctly? Typical mistakes include “R some (A and B and C)” to mean “(R some A and R some B and R some C)”
+Are axioms generally highly complex? If so, we should review a handful to ensure they are as intended.
+Appropriate use of object properties. Examples of incorrect usage include those based on some interpretation of the label of the object property but not actually fitting the property definition or domain and range. 
+6. Responsiveness to fixing changes. A willingness to fix any identified issues must be demonstrated.
 
 <a name="META"></a> 
 ### Changing ontology metadata in the registry
