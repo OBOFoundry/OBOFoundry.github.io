@@ -217,7 +217,6 @@ jQuery(document).ready(function() {
                             ${tracker}
                             ${contact}
                             ${publication}
-                            ${foundry_order}
                         </div>
                     </td>
                     <td class="col-sm-1">
