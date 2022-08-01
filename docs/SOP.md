@@ -33,7 +33,7 @@ Check the following and provide a brief summary in the tracker issue for the new
 1. Ontology scope. The new ontology must present some use cases where it will be relevant to life-sciences.  Was the ontology developed using expert input or trusted scientific sources representative of the consensus in its target domain of knowledge? If the ontology was developed for a very specific purpose or community, representation and consensus need not be broad; however, this scope should be clearly stated.
 2. Terms with the new ontology prefix. The new terms provided by the ontology must not already be available in an available OBO Foundry ontology. There must not be a term with the same label available. There should not be another OBO Foundry ontology whose scope covers those terms and if there is there should be some evidence of contacting that OBO Foundry ontology.
 3. Correct use of imported terms. Does the ontology accurately - in both a technical and substantive sense - reuse terms from other OBO ontologies?
-If terms are reused, is there textual and (where relevant) axiomatic definition preserved?
+If terms are reused, is the textual and (where relevant) axiomatic definition preserved?
 Are imported terms in appropriate hierarchies? That is, has the import of the term preserved its upper-level alignment?
 Are any additional axioms used for these terms correct in both a technical (e.g. passes reasoning) and substantive sense?
 4. Basic review of axiomatic patterns:
