@@ -11,7 +11,7 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 
 ## SOPs
 - [New Ontology Requests](#NOR)
-- [Reviewing ontologies for OBO membership](#ROOM)
+- [Reviewing Ontologies for OBO Membership](#ROOM)
 - [Changing ontology metadata in the registry](#META)
 
 <a name="NOR"></a> 
