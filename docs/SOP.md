@@ -39,8 +39,8 @@ Are any additional axioms used for these terms correct in both a technical (e.g.
 4. Basic review of axiomatic patterns:
 Are existential restrictions used correctly? Typical mistakes include “R some (A and B and C)” to mean “(R some A and R some B and R some C)”
 Are axioms generally highly complex? If so, we should review a handful to ensure they are as intended.
-Appropriate use of object properties. Examples of incorrect usage include those based on some interpretation of the label of the object property but not actually fitting the property definition or domain and range. 
-5. Responsiveness to fixing changes. A willingness to fix any identified issues must be demonstrated.
+5. Appropriate use of object properties. Examples of incorrect usage include those based on some interpretation of the label of the object property but not actually fitting the property definition or domain and range. 
+6. Responsiveness to fixing changes. A willingness to fix any identified issues must be demonstrated.
 
 <a name="META"></a> 
 ### Changing ontology metadata in the registry
