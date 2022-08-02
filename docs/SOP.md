@@ -12,6 +12,7 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 ## SOPs
 - [New Ontology Requests](#NOR)
 - [Reviewing Ontologies for OBO Membership](#ROOM)
+- [Ontology Acceptance Email](#OAE)
 - [Changing ontology metadata in the registry](#META)
 
 <a name="NOR"></a> 
@@ -41,6 +42,24 @@ Are existential restrictions used correctly? Typical mistakes include “R some 
 Are axioms generally highly complex? If so, we should review a handful to ensure they are as intended.
 5. Appropriate use of object properties. Examples of incorrect usage include those based on some interpretation of the label of the object property but not actually fitting the property definition or domain and range. 
 6. Responsiveness to fixing changes. A willingness to fix any identified issues must be demonstrated.
+
+<a name="OAM"></a> 
+### Ontology Acceptance Email (OAE) 
+
+Thank you again for your ontology submission to the OBO Foundry. We are happy to inform you that your ontology (YOURID) has been accepted following discussion in the OBO Operations Committee meeting, DD-MM-YYYY. Before we can add it to the OBO ontology registry you need to complete the following steps.
+
+Create a metadata record for your ontology to be included in the registry
+1. Create a new file in this directory,  https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology, called YOURID.md (there is an “Add file” button in the top right):
+2. Obtain the already curated metadata that relates to your ontology from https://github.com/OBOFoundry/obo-nor.github.io/blob/master/dashboard-config.yml
+3. Create a pull request to add the metadata record. This pull request should include a link to this issue (the New Ontology Request issue).
+Here is an example record for the PATO ontology: https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/pato.md?plain=1
+Your metadata will be reviewed and merged by a member of the OBO Foundry Operations Committee
+
+Create a PURL registry entry for your ontology.
+1. Go https://github.com/OBOFoundry/purl.obolibrary.org/tree/master/config, click “Add file” and add a file named YOURID.yml.
+2. Add the desired configuration.
+3. Make a pull request with a link to this issue
+See here for an example: https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/pato.yml
 
 <a name="META"></a> 
 ### Changing ontology metadata in the registry
