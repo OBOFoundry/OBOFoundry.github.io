@@ -26,7 +26,7 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 The liaison MUST be present at the Operations call in order for the NOR case to be discussed. If the liaison does not participate for 2 consecutive Operations calls, the chair of the second call emails the liaison to request a statement confirming the ability to continue as liaison. If the liaison does not participate in 3 consecutive Operations calls and did not respond to the email above, a new liaison is assigned during that third call.
 
 <a name="ROOM"></a> 
-### Reviewing Ontologies for OBO Membership (ROOM) 
+### Reviewing Ontologies for OBO Membership
 
 The goal of this SOP is to provide a clear set of criteria to be checked for the manual review of an ontology in response to a request to register a new ontology with the OBO Foundry. It is expected that a programmatic review using the Dashboard has already been done and the submitters have addressed those problems found. The purpose of the manual review is to check the ontology for issues that the Dashboard review does not cover. In order for this review to be relatively quick (~ 2 hours), a sample of terms/axioms should be checked; the reviewer is not expected to review all the terms/axioms.
 
@@ -43,8 +43,8 @@ Are axioms generally highly complex? If so, we should review a handful to ensure
 5. Appropriate use of [object properties](https://www.w3.org/TR/2004/REC-owl-semantics-20040210/#owl_ObjectProperty). Examples of incorrect usage include those based on some interpretation of the label of the object property but not actually fitting the property definition or domain and range. A typical example of incorrect usage is R some (A and B and C) to mean R some A and R some B and R some C.
 6. Responsiveness to fixing changes. A willingness to fix any identified issues during the review must be demonstrated. Issues expected to be addressed should be added in TODO mode in the GitHub issue. The time limit for addressing these is 2 months.
 
-<a name="OAM"></a> 
-### Ontology Acceptance Email (OAE) 
+<a name="OAE"></a> 
+### Ontology Acceptance Email 
 
 Thank you again for your ontology submission to the OBO Foundry. We are happy to inform you that your ontology (YOURID) has been accepted following discussion in the OBO Operations Committee meeting, DD-MM-YYYY. Before we can add it to the OBO ontology registry you need to complete the following steps.
 
