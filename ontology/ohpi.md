@@ -2,23 +2,24 @@
 layout: ontology_detail
 id: ohpi
 title: Ontology of Host Pathogen Interactions
-description: OHPI is a community-driven ontology of host-pathogen interactions (OHPI) and represents the virulence factors (VFs) and how the mutants of VFs in the Victors database become less virulence inside a host organism or host cells. It is developed to represent manually curated HPI knowledge available in the PHIDIAS resource.
-homepage: https://github.com/OHPI/ohpi
-mailing_list: http://groups.google.com/group/ohpi-discuss
-tracker: https://github.com/OHPI/ohpi/issues
 contact:
   email: edong@umich.edu
-  label: Edison Ong
   github: e4ong1031
+  label: Edison Ong
   orcid: 0000-0002-5159-414X
-products:
-  - id: ohpi.owl
+description: OHPI is a community-driven ontology of host-pathogen interactions (OHPI) and represents the virulence factors (VFs) and how the mutants of VFs in the Victors database become less virulence inside a host organism or host cells. It is developed to represent manually curated HPI knowledge available in the PHIDIAS resource.
+domain: biological systems
+homepage: https://github.com/OHPI/ohpi
 license:
-  url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-activity_status: active
-repository: https://github.com/OHPI/ohpi
+  url: http://creativecommons.org/licenses/by/4.0/
+mailing_list: http://groups.google.com/group/ohpi-discuss
 preferredPrefix: OHPI
+products:
+- id: ohpi.owl
+repository: https://github.com/OHPI/ohpi
+tracker: https://github.com/OHPI/ohpi/issues
+activity_status: active
 ---
 
 # OHPI: Ontology of Host-Pathogen Interactions

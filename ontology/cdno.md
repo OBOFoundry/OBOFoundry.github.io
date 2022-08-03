@@ -4,34 +4,37 @@ id: cdno
 title: Compositional Dietary Nutrition Ontology
 build:
   checkout: git clone https://github.com/Southern-Cross-Plant-Science/cdno.git
+  path: .
   system: git
-  path: "."
 contact:
   email: l.andres.hernandez.18@student.scu.edu.au
-  label: Liliana Andres Hernandez
   github: LilyAndres
+  label: Liliana Andres Hernandez
   orcid: 0000-0002-7696-731X
+dependencies:
+- id: bfo
+- id: chebi
+- id: envo
+- id: pato
+- id: ro
 description: CDNO provides structured terminologies to describe nutritional attributes of material entities that contribute to human diet.
 domain: diet, metabolomics, and nutrition
-homepage: https://github.com/Southern-Cross-Plant-Science/cdno
-products:
-  - id: cdno.owl
-    name: "Compositional Dietary Nutrition Ontology main release in OWL format"
-  - id: cdno.obo
-    name: "Compositional Dietary Nutrition Ontology additional release in OBO format"
-dependencies:
-  - id: ro
-  - id: bfo
-  - id: pato
-  - id: chebi
-  - id: envo
-tracker: https://github.com/Southern-Cross-Plant-Science/cdno/issues
+homepage: https://cdno.info/
 license:
-  url: https://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
-activity_status: active
-repository: https://github.com/Southern-Cross-Plant-Science/cdno
+  url: https://creativecommons.org/licenses/by/3.0/
 preferredPrefix: CDNO
+products:
+- id: cdno.owl
+  name: Compositional Dietary Nutrition Ontology main release in OWL format
+- id: cdno.obo
+  name: Compositional Dietary Nutrition Ontology additional release in OBO format
+publications:
+- id: https://doi.org/10.1002/csc2.20092
+  title: Knowledge representation and data sharing to unlock crop variation for nutritional food security
+repository: https://github.com/Southern-Cross-Plant-Science/cdno
+tracker: https://github.com/Southern-Cross-Plant-Science/cdno/issues
+activity_status: active
 ---
 
 The CDNO provides structured terminologies to describe nutritional attributes of material entities that contribute to human diet. These terms are intended primarily to be associated with datasets that quantify concentration of chemical nutritional components derived from samples taken from any stage in the production of food raw materials (including from crops, livestock, fisheries) and through processing and supply chains. Additional knowledge associated with these dietary sources may be represented by terms that describe functional, physical and other attributes. 

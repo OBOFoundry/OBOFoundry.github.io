@@ -4,32 +4,32 @@ id: psdo
 title: Performance Summary Display Ontology
 build:
   checkout: https://github.com/Display-Lab/psdo.git
+  path: .
   system: git
-  path: "."
 contact:
   email: zachll@umich.edu
-  label: Zach Landis-Lewis
   github: zachll
+  label: Zach Landis-Lewis
   orcid: 0000-0002-9117-9338
+dependencies:
+- id: bfo
+- id: iao
+- id: ro
+- id: stato
 description: Ontology to reproducibly study visualizations of clinical performance
 domain: information
-tags:
-  - learning systems
 homepage: https://github.com/Display-Lab/psdo
-products:
-  - id: psdo.owl
-dependencies:
-  - id: stato
-  - id: iao
-  - id: bfo
-  - id: ro
-tracker: https://github.com/Display-Lab/psdo/issues
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
-activity_status: active
-repository: https://github.com/Display-Lab/psdo
+  url: http://creativecommons.org/licenses/by/3.0/
 preferredPrefix: PSDO
+products:
+- id: psdo.owl
+repository: https://github.com/Display-Lab/psdo
+tags:
+- learning systems
+tracker: https://github.com/Display-Lab/psdo/issues
+activity_status: active
 ---
 
 The Performance Summary Display Ontology (PSDO) is a lightweight application ontology used to
