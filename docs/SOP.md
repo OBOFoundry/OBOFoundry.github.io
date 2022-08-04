@@ -49,10 +49,12 @@ Thank you again for your ontology submission to the OBO Foundry. We are happy to
 
 Create a metadata record for your ontology to be included in the registry
 1. Create a new file in this directory,  https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology, called YOURID.md (there is an “Add file” button in the top right):
-2. Obtain the already curated metadata that relates to your ontology from https://github.com/OBOFoundry/obo-nor.github.io/blob/master/dashboard-config.yml (you'll need to scroll down to locate yours; it will have your prefix in the " - id:" field.) Permissable content for fields is being documented [here](https://obofoundry.org/faq/permissible-metadata-content.html).
+2. Obtain the already curated metadata that relates to your ontology from https://github.com/OBOFoundry/obo-nor.github.io/blob/master/dashboard-config.yml (you'll need to scroll down to locate yours; it will have your prefix in the " - id:" field.) 
 3. Create a pull request to add the metadata record. This pull request should include a link to this issue (the New Ontology Request issue).
+
 Here is an example record for the PATO ontology: https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/pato.md?plain=1
-Your metadata will be reviewed and merged by a member of the OBO Foundry Operations Committee
+
+Your metadata will be reviewed and merged by a member of the OBO Foundry Operations Committee. Permissable content for fields is being documented [here](https://obofoundry.org/faq/permissible-metadata-content.html).
 
 Create a PURL registry entry for your ontology.
 1. Go https://github.com/OBOFoundry/purl.obolibrary.org/tree/master/config, click “Add file” and add a file named YOURID.yml.
