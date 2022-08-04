@@ -28,9 +28,9 @@ The liaison MUST be present at the Operations call in order for the NOR case to 
 <a name="ROOM"></a> 
 ### Reviewing Ontologies for OBO Membership
 
-The goal of this SOP is to provide a clear set of criteria to be checked for the manual review of an ontology in response to a request to register a new ontology with the OBO Foundry. It is expected that a programmatic review using the Dashboard has already been done and the submitters have addressed those problems found. The purpose of the manual review is to check the ontology for issues that the Dashboard review does not cover. In order for this review to be relatively quick (~ 2 hours), a sample of terms/axioms should be checked; the reviewer is not expected to review all the terms/axioms.
+The goal of this SOP is to provide a clear set of criteria to be checked for the manual review of an ontology in response to a request to register that new ontology with the OBO Foundry. It is expected that a programmatic review using the Dashboard has already been done and the submitters have addressed any problems found. The purpose of the manual review is to check the ontology for issues that the Dashboard review does not cover. A sample of terms/axioms should be checked. In order for this review to be relatively quick (~ 2 hours), the reviewer is not expected to review all the terms/axioms.
 
-Check the following and provide a brief summary in the tracker issue for the new ontology request. All items of feedback must be provided using GitHub checklist syntax (`- [ ] TODO`) in order to track how far they are being addressed. Addressable issues identified as part of the review should be added to the new ontology’s issue tracker. 
+Check the following and provide a brief summary in the tracker issue for the new ontology request. All items of feedback must be provided using GitHub checklist syntax (`- [ ] TODO`) in order to track how far along they are in being addressed. Addressable issues identified as part of the review should be added to the new ontology’s issue tracker. 
 1. Ontology scope. The new ontology must present some use cases where it will be relevant to life-sciences.  Was the ontology developed using expert input or trusted scientific sources representative of the consensus in its target domain of knowledge? If the ontology was developed for a very specific purpose or community, representation and consensus need not be broad; however, this scope should be clearly stated.
 2. Terms with the new ontology prefix. The new terms provided by the ontology should not already be available in an available OBO Foundry ontology. If there is an overlap of terms, justification should be provided. There must not be a term with the same label available. There should not be another OBO Foundry ontology whose scope covers those terms and if there is there should be some evidence of contacting that OBO Foundry ontology.
 3. Correct use of imported terms. Does the ontology accurately reuse terms from other OBO ontologies?
@@ -45,7 +45,9 @@ Are axioms generally highly complex? If so, we should review a handful to ensure
 <a name="OAE"></a> 
 ### Ontology Acceptance Email 
 
-Thank you again for your ontology submission to the OBO Foundry. We are happy to inform you that your ontology (YOURID) has been accepted following discussion in the OBO Operations Committee meeting, DD-MM-YYYY. Before we can add it to the OBO ontology registry you need to complete the following steps.
+Once a new ontology has been accepted, the following should be used as boiler plate for letting them know and what are the next steps they should take.
+
+"Thank you again for your ontology submission to the OBO Foundry. We are happy to inform you that your ontology (YOURID) has been accepted following discussion in the OBO Operations Committee meeting, DD-MM-YYYY. Before we can add it to the OBO ontology registry you need to complete the following steps.
 
 Create a metadata record for your ontology to be included in the registry
 1. Create a new file in this directory,  https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology, called YOURID.md (there is an “Add file” button in the top right):
@@ -60,7 +62,7 @@ Create a PURL registry entry for your ontology.
 1. Go https://github.com/OBOFoundry/purl.obolibrary.org/tree/master/config, click “Add file” and add a file named YOURID.yml.
 2. Add the desired configuration.
 3. Make a pull request with a link to this issue
-See here for an example: https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/pato.yml
+See here for an example: https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/pato.yml "
 
 <a name="META"></a> 
 ### Changing ontology metadata in the registry
