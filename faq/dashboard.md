@@ -15,9 +15,11 @@ Please see the [OBO-Dashboard About page](http://dashboard.obofoundry.org/dashbo
 ## How can I assess my ontology using the OBO Dashboard?
 
 After you have [submitted an ontology to be considered for the OBO Foundry](/faq/how-do-i-register-my-ontology.html),
-your ontology is added to https://obofoundry.org/obo-nor.github.io/dashboard/index.html, which is a separate dashboard specifically for new ontology requests.
+your ontology is added to [https://obofoundry.org/obo-nor.github.io/dashboard/index.html](https://obofoundry.org/obo-nor.github.io/dashboard/index.html), which is a separate dashboard specifically for new ontology requests.
 
 ### But what if I want to check my ontology's OBO compliance without submitting it to the OBO Foundry?
 
-You can install the [ROBOT](https://robot.obolibrary.org/) command-line tool and use the 'report' command, https://robot.obolibrary.org/report,
+The OBO Academy OBook has a how-to guide on how to run the dashboard locally: [https://oboacademy.github.io/obook/howto/deploy-custom-obo-dashboard/](https://oboacademy.github.io/obook/howto/deploy-custom-obo-dashboard/)
+
+Another approach is to install the [ROBOT](https://robot.obolibrary.org/) command-line tool and use the ['report' command](https://robot.obolibrary.org/report)
 which prints a summary to the console of issues with your ontology (categorized as ERROR/WARN/INFO depending on severity).
