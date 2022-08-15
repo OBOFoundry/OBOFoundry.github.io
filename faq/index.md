@@ -1,9 +1,7 @@
 ---
 layout: faq
-title: FAQs
+title: OBO Foundry Frequently Asked Questions
 ---
-
-## OBO Foundry Frequently Asked Questions (FAQs)
 
 ### Policy
 - <a href="/principles/fp-000-summary.html">What are the OBO Foundry Principles?</a>
