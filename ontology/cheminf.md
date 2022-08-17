@@ -33,7 +33,7 @@ usages:
   user: https://www.ebi.ac.uk/chembl/
 - description: ENM uses CHEMINF for chemical information terms
   user: https://github.com/enanomapper/ontologies
-- descriptoin: PubChem uses CHEMINF in their RDF representation
+- description: PubChem uses CHEMINF in their RDF representation
   examples:
   - description: Physicochemical properties are represented as classes that are typed with CHEMINF classes
     url: https://pubchem.ncbi.nlm.nih.gov/rest/rdf/descriptor/CID161282_Canonical_SMILES
