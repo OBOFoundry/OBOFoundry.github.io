@@ -14,8 +14,8 @@ description: Includes terms for the descriptors commonly used in cheminformatics
 domain: chemistry and biochemistry
 homepage: https://github.com/semanticchemistry/semanticchemistry
 license:
-  label: CC BY 4.0
-  url: http://creativecommons.org/licenses/by/4.0/
+  label: CC0 1.0
+  url: http://creativecommons.org/publicdomain/zero/1.0/
 mailing_list: https://groups.google.com/forum/#!forum/cheminf-ontology
 preferredPrefix: CHEMINF
 products:
