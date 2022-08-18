@@ -28,11 +28,9 @@ tracker: https://github.com/semanticchemistry/semanticchemistry/issues
 usages:
 - description: ChEMBL uses CHEMINF in the RDF download
   examples:
-  - description: Physicochemical properties are represented as classes that are typed with CHEMINF classes
-    url: http://rdf.ebi.ac.uk/resource/chembl/molecule/CHEMBL6939#mw_freebase
+  - description: The RDF is provided as SPARQL endpoint by Maastricht University.
+    url: https://chemblmirror.rdf.bigcat-bioinformatics.org/
   user: https://www.ebi.ac.uk/chembl/
-- description: ENM uses CHEMINF for chemical information terms
-  user: https://github.com/enanomapper/ontologies
 - description: PubChem uses CHEMINF in their RDF representation
   examples:
   - description: Physicochemical properties are represented as classes that are typed with CHEMINF classes
