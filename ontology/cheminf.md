@@ -25,5 +25,16 @@ publications:
   title: 'The chemical information ontology: provenance and disambiguation for chemical data on the biological semantic web'
 repository: https://github.com/semanticchemistry/semanticchemistry
 tracker: https://github.com/semanticchemistry/semanticchemistry/issues
+usages:
+- description: ChEMBL uses CHEMINF in the RDF download
+  examples:
+  - description: The RDF is provided as SPARQL endpoint by Maastricht University.
+    url: https://chemblmirror.rdf.bigcat-bioinformatics.org/
+  user: https://www.ebi.ac.uk/chembl/
+- description: PubChem uses CHEMINF in their RDF representation
+  examples:
+  - description: Physicochemical properties are represented as classes that are typed with CHEMINF classes
+    url: https://pubchem.ncbi.nlm.nih.gov/rest/rdf/descriptor/CID161282_Canonical_SMILES
+  user: https://pubchem.ncbi.nlm.nih.gov/
 activity_status: active
 ---
