@@ -5,7 +5,7 @@ title: Add a browser
 
 ## How do I add a custom link to an ontology browser for my ontology?
 
-Every ontology in the registry is automatically in [OntoBee](http://ontobee.org), so we
+Every ontology in the registry is automatically in [OntoBee](https://ontobee.org), so we
 automatically provide a link to OntoBee.
 
 You can add links to other browsers by adding entires in the
