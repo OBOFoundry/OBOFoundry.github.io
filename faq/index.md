@@ -11,7 +11,9 @@ title: OBO Foundry Frequently Asked Questions
 
 ### Citation 
 - [How do I cite the OBO Foundry?](/registry/publications.html) 
-- [How do I cite a specific ontology?](/docs/Citation.html) ### Terms 
+- [How do I cite a specific ontology?](/docs/Citation.html) 
+ 
+### Terms 
 - [How do I request a new ontology term?](/faq/how-do-i-request-a-term.html)
 
 ### Ontology display 
