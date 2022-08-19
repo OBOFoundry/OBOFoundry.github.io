@@ -360,8 +360,12 @@ jQuery(document).ready(function() {
                 if (row.description === undefined) {
                     row.description = ""
                 }
+                if (row.title === undefined) {
+                    row.title = ""
+                }
                 return (row.id.toLowerCase().includes(term) ||
                     row.domain.toLowerCase().includes(term) ||
+                    row.title.toLowerCase().includes(term) ||
                     row.description.toLowerCase().includes(term))
             });
         }
