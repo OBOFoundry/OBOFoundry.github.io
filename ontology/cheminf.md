@@ -14,8 +14,8 @@ description: Includes terms for the descriptors commonly used in cheminformatics
 domain: chemistry and biochemistry
 homepage: https://github.com/semanticchemistry/semanticchemistry
 license:
-  label: CC BY 4.0
-  url: http://creativecommons.org/licenses/by/4.0/
+  label: CC0 1.0
+  url: http://creativecommons.org/publicdomain/zero/1.0/
 mailing_list: https://groups.google.com/forum/#!forum/cheminf-ontology
 preferredPrefix: CHEMINF
 products:
@@ -25,5 +25,16 @@ publications:
   title: 'The chemical information ontology: provenance and disambiguation for chemical data on the biological semantic web'
 repository: https://github.com/semanticchemistry/semanticchemistry
 tracker: https://github.com/semanticchemistry/semanticchemistry/issues
+usages:
+- description: ChEMBL uses CHEMINF in the RDF download
+  examples:
+  - description: The RDF is provided as SPARQL endpoint by Maastricht University.
+    url: https://chemblmirror.rdf.bigcat-bioinformatics.org/
+  user: https://www.ebi.ac.uk/chembl/
+- description: PubChem uses CHEMINF in their RDF representation
+  examples:
+  - description: Physicochemical properties are represented as classes that are typed with CHEMINF classes
+    url: https://pubchem.ncbi.nlm.nih.gov/rest/rdf/descriptor/CID161282_Canonical_SMILES
+  user: https://pubchem.ncbi.nlm.nih.gov/
 activity_status: active
 ---

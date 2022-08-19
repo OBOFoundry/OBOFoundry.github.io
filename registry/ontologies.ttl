@@ -1176,7 +1176,7 @@ _:b59   <http://www.w3.org/2000/01/rdf-schema#label>  "Liliana Andres Hernandez"
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b60 ;
         <http://purl.org/dc/elements/1.1/description>  "Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them." ;
         <http://purl.org/dc/elements/1.1/title>  "Chemical Information Ontology" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/publicdomain/zero/1.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/21991315> ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/semanticchemistry/semanticchemistry/issues" ;
@@ -1188,6 +1188,10 @@ _:b59   <http://www.w3.org/2000/01/rdf-schema#label>  "Liliana Andres Hernandez"
 
 _:b60   <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/semanticchemistry/semanticchemistry/master/ontology/cheminf.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://creativecommons.org/publicdomain/zero/1.0/>
+        <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>  "CC0 1.0" .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/21991315>
         <http://purl.org/dc/elements/1.1/title>  "The chemical information ontology: provenance and disambiguation for chemical data on the biological semantic web" .
@@ -1270,10 +1274,6 @@ _:b61   <http://www.w3.org/2000/01/rdf-schema#label>  "Egon Willighagen" ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/mgijax/mammalian-phenotype-ontology> .
 
 _:b62   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/chiro.git" .
-
-<http://creativecommons.org/publicdomain/zero/1.0/>
-        <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png> ;
-        <http://www.w3.org/2000/01/rdf-schema#label>  "CC0 1.0" .
 
 <https://doi.org/10.26434/chemrxiv.12591221>
         <http://purl.org/dc/elements/1.1/title>  "Extension of Roles in the ChEBI Ontology" .
