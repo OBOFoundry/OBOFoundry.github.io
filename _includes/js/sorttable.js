@@ -8,30 +8,21 @@
  *   Docs: https://w3c.github.io/aria-practices/examples/table/sortable-table.html
  */
 
-
 'use strict';
 class SortableTable {
-  /**
-   * initialize sortable table. Add button in table header to use for initializing sortable column
-   * @param {Element} tableNode dom table element
-   */
   constructor(tableNode) {
     this.tableNode = tableNode;
 
-    //get all table headers
     this.columnHeaders = tableNode.querySelectorAll('thead th');
 
     this.sortColumns = [];
 
-    //select table headers containing button element for sorting.
     for (var i = 0; i < this.columnHeaders.length; i++) {
       var ch = this.columnHeaders[i];
       var buttonNode = ch.querySelector('button');
       if (buttonNode) {
         this.sortColumns.push(i);
-        //set custom attribute for tracking sortable columns column-index.
         buttonNode.setAttribute('data-column-index', i);
-        // handle button click event on table column
         buttonNode.addEventListener('click', this.handleClick.bind(this));
       }
     }
@@ -51,10 +42,6 @@ class SortableTable {
     }
   }
 
-  /**
-   * Takes the index of the column to be sorted parses sort parameters from html
-   * @param {string|number} columnIndex
-   */
   setColumnHeaderSort(columnIndex) {
     if (typeof columnIndex === 'string') {
       columnIndex = parseInt(columnIndex);
@@ -64,21 +51,16 @@ class SortableTable {
       var ch = this.columnHeaders[i];
       var buttonNode = ch.querySelector('button');
       if (i === columnIndex) {
-        //get the sort order from aria-sort attribute
         var value = ch.getAttribute('aria-sort');
         if (value === 'descending') {
-          //change sort order parameter
           ch.setAttribute('aria-sort', 'ascending');
-          //sort column
           this.sortColumn(
             columnIndex,
             'ascending',
             ch.classList.contains('num')
           );
         } else {
-          //change sort order parameter
           ch.setAttribute('aria-sort', 'descending');
-          //sort column
           this.sortColumn(
             columnIndex,
             'descending',
@@ -93,12 +75,6 @@ class SortableTable {
     }
   }
 
-  /**
-   * Sort table column data given the below parameters
-   * @param {number} columnIndex
-   * @param {string} sortValue sort order
-   * @param {boolean} isNumber
-   */
   sortColumn(columnIndex, sortValue, isNumber) {
     function compareValues(a, b) {
       if (sortValue === 'ascending') {
@@ -135,7 +111,6 @@ class SortableTable {
     var rowNode = tbodyNode.firstElementChild;
 
     var index = 0;
-    //extract table data cells
     while (rowNode) {
       rowNodes.push(rowNode);
       var rowCells = rowNode.querySelectorAll('th, td');
@@ -151,7 +126,7 @@ class SortableTable {
       rowNode = rowNode.nextElementSibling;
       index += 1;
     }
-    // sort extracted data cells
+
     dataCells.sort(compareValues);
 
     // remove rows
@@ -169,7 +144,6 @@ class SortableTable {
 
   handleClick(event) {
     var tgt = event.currentTarget;
-    //get the column to sort and pass index t
     this.setColumnHeaderSort(tgt.getAttribute('data-column-index'));
   }
 

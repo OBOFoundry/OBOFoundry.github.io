@@ -79,33 +79,27 @@ jQuery(document).ready(function() {
                 <table id="ont_table" class="table table-hover sortable">
                     <thead>
                         <tr class="row">
-                            <th class="col-sm-1 ob-center">
-                                <span>ID</span>
-                                <button type="button" class="btn btn-outline-default btn-sm" title="Sort by ID" data-sort="id" >
+                            <th class="col-sm-1">
+                                ID
+                                <button type="button" class="btn btn-outline-default btn-sm" title="Sort by ID" data-sort="id" style="float: right;">
                                     <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
                                 </button>
                             </th>
-                            <th class="col-sm-1 ob-center">
-                                <span>Title</span>
-                                <button type="button" class="btn btn-outline-default btn-sm" title="Sort by title" data-sort="title" >
+                            <th class="col-sm-1">
+                                Title
+                                <button type="button" class="btn btn-outline-default btn-sm" title="Sort by title" data-sort="title" style="float: right;">
                                     <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
                                 </button>
                             </th>
-                            <th class="col-sm-3 ob-center">
-                                <span>Description</span>
-                            </th>
-                            <th class="col-sm-4 ob-center">
-                                <span>Quick Access</span>
-                            </th>
-                            <th class="col-sm-2 ob-center">
-                                <span>Re-Use</span>
-                                <button type="button" class="btn btn-outline-default btn-sm" title="Sort by License" data-sort="license" >
+                            <th class="col-sm-3">Description</th>
+                            <th class="col-sm-4">Quick Access</th>
+                            <th class="col-sm-2">
+                                Re-Use
+                                <button type="button" class="btn btn-outline-default btn-sm" title="Sort by License" data-sort="license" style="float: right;">
                                     <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
                                 </button>
                             </th>
-                            <th class="col-sm-1 ob-center">
-                                <span>Social</span>
-                                </th>
+                            <th class="col-sm-1">Social</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -140,6 +134,7 @@ jQuery(document).ready(function() {
             let tracker = "";
             let contact = "";
             let publication = "";
+            let foundry_order = "";
             let domainInner = ["Unknown"];
 
             if (data[i]['license']) {
@@ -173,6 +168,13 @@ jQuery(document).ready(function() {
                             <a class="btn btn-default btn-sm" href="${data[i]["publications"][0]["id"]}" aria-label="View the primary publication for ${title}" title="View the primary publication for ${title}">
                                 <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
                             </a>`;
+            }
+            if (data[i]["in_foundry_order"]) {
+                foundry_order = `
+                        <a class="col-sm-1 btn btn-default btn-sm" href="/principles/fp-000-summary.html" aria-label="View the OBO Foundry criteria for the Foundry status of ${title}" title="View the OBO Foundry criteria for the Foundry status of ${title}">
+                               <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        </a>             
+                `;
             }
             if (activity_status === "inactive") {
                 is_inactive = "inactive_row";
@@ -215,11 +217,12 @@ jQuery(document).ready(function() {
                             ${tracker}
                             ${contact}
                             ${publication}
+                            ${foundry_order}
                         </div>
                     </td>
                     <td class="col-sm-1">
                         <a href="${license_url}" >
-                            <img width="100px" src="${license_logo}" alt="${license_label}"/><br>
+                            <img width="100px" src="${license_logo}" alt="${license_label}"/>
                             <span style="display: none">${license_label}</span>
                         </a>
                     </td>  
