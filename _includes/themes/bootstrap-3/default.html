@@ -20,6 +20,7 @@
 
     <!-- Custom styles -->
     <link href="/css/custom.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/jquery-ui.css" rel="stylesheet" type="text/css" media="all">
     <link href="/assets/css/pygments.css" rel="stylesheet" type="text/css" media="all">
 
     <style>
@@ -83,7 +84,6 @@
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
   </head>
 
   <body>
@@ -107,7 +107,8 @@
 
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+<!--    <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>-->
+    <script src="{{ site.baseurl}}js/all.js" type="text/javascript"></script>
   </body>
 </html>

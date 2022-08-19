@@ -4,7 +4,7 @@ title: The OBO Foundry
 ---
 <div class="content">    
   <div class="col-md-12">
-    <h1>The Open Biological and Biomedical Ontology (OBO) Foundry<h1>
+    <h1>The Open Biological and Biomedical Ontology (OBO) Foundry</h1>
     <h3>Community development of interoperable ontologies for the biological sciences</h3>
     <h4>Learn about OBO best practices and community resources</h4>
     <ul>
@@ -23,13 +23,15 @@ title: The OBO Foundry
     </ul>
 
     <h4>OBO Library: find, use, and contribute to community ontologies</h4>
-    <p>The table below lists current OBO ontologies (in alphabetical order, but with the ontologies that have been manually reviewed by the OBO Foundry listed first, and obsolete ontologies listed last).</p>
   </div>
 
   <div class="col-md-12">
     <div class="row">
       <div class="col-md-12">
-        {% include ontology_table.html %}
+        {% include table_widget.html %}
+        <noscript>
+          {% include ontology_table.html %}
+        </noscript>
       </div>
     </div>
   </div>
