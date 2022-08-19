@@ -204,14 +204,8 @@ ontologies:
     label: Suzi Aleksander
     orcid: 0000-0001-6787-2901
   dependencies:
-  - id: uberon
-    subset: go/extensions/uberon_import.owl
   - id: cl
     subset: go/extensions/cl_import.owl
-  - id: ncbitaxon
-    subset: go/extensions/ncbitaxon_import.owl
-  - id: ro
-    subset: go/extensions/ro_import.owl
   - connects:
     - id: nifstd
     - id: go
@@ -223,6 +217,12 @@ ontologies:
         SAO (Subcellular Anatomy Ontology) and other recent developments.'
     title: GO bridge to NIFSTD
     type: BridgeOntology
+  - id: ncbitaxon
+    subset: go/extensions/ncbitaxon_import.owl
+  - id: ro
+    subset: go/extensions/ro_import.owl
+  - id: uberon
+    subset: go/extensions/uberon_import.owl
   depicted_by: http://geneontology.org/assets/go-logo-icon.mini.png
   description: An ontology for describing the function of genes and gene products
   domain: biological systems
@@ -756,6 +756,35 @@ ontologies:
       url: http://zfin.org/ZFA:0000029
     user: http://zfin.org
 - activity_status: active
+  contact:
+    email: alpha.tom.kodamullil@scai.fraunhofer.de
+    github: akodamullil
+    label: Alpha Tom Kodamullil
+    orcid: 0000-0001-9896-3531
+  dependencies:
+  - id: bfo
+  description: Alzheimer's Disease Ontology is a knowledge-based ontology that encompasses
+    varieties of concepts related to Alzheimer'S Disease, structured by upper level
+    Basic Formal Ontology(BFO). This Ontology is enriched by the interrelated entities
+    that demonstrate the network of the understanding on Alzheimer's disease and can
+    be readily applied for text mining.
+  domain: health
+  homepage: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO
+  id: ado
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/ado.owl
+  preferredPrefix: ADO
+  products:
+  - id: ado.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ado.owl
+  repository: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO
+  title: Alzheimer's Disease Ontology
+  tracker: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO/issues
+- activity_status: active
   build:
     checkout: git clone  https://github.com/AgriculturalSemantics/agro.git
     path: .
@@ -766,18 +795,18 @@ ontologies:
     label: Marie-Angélique Laporte
     orcid: 0000-0002-8461-9745
   dependencies:
+  - id: bfo
   - id: envo
-  - id: go
   - id: foodon
+  - id: go
+  - id: iao
   - id: ncbitaxon
+  - id: obi
   - id: pato
   - id: peco
   - id: po
-  - id: to
   - id: ro
-  - id: bfo
-  - id: iao
-  - id: obi
+  - id: to
   - id: uo
   - id: xco
   description: Ontology of agronomic practices, agronomic techniques, and agronomic
@@ -827,12 +856,12 @@ ontologies:
     label: Jennifer C. Girón
     orcid: 0000-0002-0851-6883
   dependencies:
-  - id: ro
-  - id: uberon
-  - id: caro
-  - id: pato
   - id: bfo
   - id: bspo
+  - id: caro
+  - id: pato
+  - id: ro
+  - id: uberon
   description: The AISM contains terms used in insect biodiversity research for describing
     structures of the exoskeleton and the skeletomuscular system. It aims to serve
     as the basic backbone of generalized terms to be expanded with order-specific
@@ -1150,11 +1179,11 @@ ontologies:
     label: Liliana Andres Hernandez
     orcid: 0000-0002-7696-731X
   dependencies:
-  - id: ro
   - id: bfo
-  - id: pato
   - id: chebi
   - id: envo
+  - id: pato
+  - id: ro
   description: CDNO provides structured terminologies to describe nutritional attributes
     of material entities that contribute to human diet.
   domain: diet, metabolomics, and nutrition
@@ -1225,12 +1254,12 @@ ontologies:
     orcid: 0000-0001-5208-3432
   dependencies:
   - id: chebi
-  - id: mp
-  - id: hp
   - id: go
+  - id: hp
+  - id: mp
+  - id: ncbitaxon
   - id: pr
   - id: uberon
-  - id: ncbitaxon
   description: CHEBI provides a distinct role hierarchy. Chemicals in the structural
     hierarchy are connected via a 'has role' relation. CHIRO provides links from these
     roles to useful other classes in other ontologies. This will allow direct connection
@@ -1353,13 +1382,13 @@ ontologies:
     label: Alexander Diehl
     orcid: 0000-0001-9990-8331
   dependencies:
-  - id: uberon
-  - id: go
-  - id: ro
   - id: chebi
+  - id: go
+  - id: ncbitaxon
   - id: pato
   - id: pr
-  - id: ncbitaxon
+  - id: ro
+  - id: uberon
   description: The Cell Ontology is a structured controlled vocabulary for cell types
     in animals.
   domain: anatomy and development
@@ -1533,10 +1562,10 @@ ontologies:
     label: Sirarat Sarntivijai
     orcid: 0000-0002-2548-641X
   dependencies:
-  - id: uberon
   - id: cl
   - id: doid
   - id: ncbitaxon
+  - id: uberon
   description: An ontology to standardize and integrate cell line information and
     to support computer-assisted reasoning.
   domain: anatomy and development
@@ -1569,9 +1598,9 @@ ontologies:
     label: Lucas Leclere
     orcid: 0000-0002-7440-0467
   dependencies:
-  - id: uberon
-  - id: ro
   - id: iao
+  - id: ro
+  - id: uberon
   description: The Clytia hemisphaerica Development and Anatomy Ontology (CLYH) describes
     the anatomical and developmental features of the Clytia hemisphaerica life cycle.
   domain: anatomy and development
@@ -1683,12 +1712,12 @@ ontologies:
     orcid: 0000-0002-0851-6883
   dependencies:
   - id: aism
-  - id: ro
-  - id: uberon
-  - id: caro
-  - id: pato
   - id: bfo
   - id: bspo
+  - id: caro
+  - id: pato
+  - id: ro
+  - id: uberon
   description: The Coleoptera Anatomy Ontology contains terms used for describing
     the anatomy and phenotype of beetles in biodiversity research. It has been built
     using the Ontology Develoment Kit, with the Ontology for the Anatomy of the Insect
@@ -1758,8 +1787,8 @@ ontologies:
     label: Chris Mungall
     orcid: 0000-0002-6601-2165
   dependencies:
-  - id: uberon
   - id: ro
+  - id: uberon
   description: An anatomical and developmental ontology for ctenophores (Comb Jellies)
   domain: anatomy and development
   homepage: https://github.com/obophenotype/ctenophore-ontology
@@ -2071,8 +2100,8 @@ ontologies:
     label: Melanie Courtot
     orcid: 0000-0002-9551-6370
   dependencies:
-  - id: iao
   - id: bfo
+  - id: iao
   description: DUO is an ontology which represent data use conditions.
   domain: information
   homepage: https://github.com/EBISPOT/DUO
@@ -2104,9 +2133,9 @@ ontologies:
     label: Charles Ettensohn
     orcid: 0000-0002-3625-0955
   dependencies:
-  - id: uberon
-  - id: ro
   - id: cl
+  - id: ro
+  - id: uberon
   description: An ontology for the development and anatomy of the different species
     of the phylum Echinodermata (NCBITaxon:7586).
   domain: anatomy and development
@@ -2202,16 +2231,16 @@ ontologies:
     label: Pier Luigi Buttigieg
     orcid: 0000-0002-4366-3088
   dependencies:
-  - id: pco
-  - id: ro
   - id: bfo
-  - id: pato
-  - id: envo
   - id: chebi
+  - id: envo
   - id: go
-  - id: uberon
-  - id: po
   - id: iao
+  - id: pato
+  - id: pco
+  - id: po
+  - id: ro
+  - id: uberon
   description: Ecocore is a community ontology for the concise and controlled description
     of ecological traits of organisms.
   domain: environment
@@ -2256,8 +2285,8 @@ ontologies:
   - id: iao
   - id: maxo
   - id: nbo
-  - id: ncit
   - id: ncbitaxon
+  - id: ncit
   - id: pato
   - id: ro
   - id: uberon
@@ -2364,14 +2393,14 @@ ontologies:
     label: Pier Luigi Buttigieg
     orcid: 0000-0002-4366-3088
   dependencies:
-  - id: uberon
-  - id: pco
-  - id: ro
   - id: chebi
-  - id: ncbitaxon
   - id: foodon
-  - id: po
   - id: go
+  - id: ncbitaxon
+  - id: pco
+  - id: po
+  - id: ro
+  - id: uberon
   depicted_by: /logos/envo.png
   description: Ontology of environmental features and habitats
   domain: environment
@@ -2505,6 +2534,10 @@ ontologies:
   products:
   - id: eupath.owl
     ontology_purl: http://purl.obolibrary.org/obo/eupath.owl
+  publications:
+  - id: https://doi.org/10.5281/zenodo.6685957
+    title: Malaria study data integration and information retrieval based on OBO Foundry
+      ontologies.
   repository: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
   tags:
   - functional genomics
@@ -2873,14 +2906,14 @@ ontologies:
     label: Damion Dooley
     orcid: 0000-0002-8844-9165
   dependencies:
-  - id: uberon
-  - id: ro
-  - id: eo
-  - id: chebi
-  - id: ncbitaxon
   - id: bfo
+  - id: chebi
   - id: envo
+  - id: eo
+  - id: ncbitaxon
   - id: obi
+  - id: ro
+  - id: uberon
   description: A broadly scoped ontology representing entities which bear a “food
     role”. It encompasses materials in natural ecosystems and agriculture that are
     consumed by humans and domesticated animals. This includes any generic (unbranded)
@@ -2928,12 +2961,12 @@ ontologies:
     orcid: 0000-0003-2699-3066
   dependencies:
   - id: bco
-  - id: oba
-  - id: ro
   - id: bfo
-  - id: pato
   - id: bspo
   - id: iao
+  - id: oba
+  - id: pato
+  - id: ro
   - id: uberon
   description: FuTRES Ontology of Vertebrate Traits is an application ontology used
     to convert vertebrate trait data in spreadsheet to triples. FOVT leverages the
@@ -3049,11 +3082,11 @@ ontologies:
     label: Damion Dooley
     orcid: 0000-0002-8844-9165
   dependencies:
-  - id: uberon
-  - id: po
-  - id: ro
   - id: chebi
   - id: ncbitaxon
+  - id: po
+  - id: ro
+  - id: uberon
   description: The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary
     to identify, document and research foodborne pathogens and associated outbreaks.
   domain: health
@@ -3091,9 +3124,9 @@ ontologies:
   id: geno
   layout: ontology_detail
   license:
-    label: CC BY-SA 2.0
-    logo: https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png
-    url: https://creativecommons.org/licenses/by-sa/2.0/
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/geno.owl
   preferredPrefix: GENO
   products:
@@ -3172,6 +3205,9 @@ ontologies:
       from OWL)
     id: gno.json
     ontology_purl: http://purl.obolibrary.org/obo/gno.json
+  publications:
+  - id: https://doi.org/10.5281/zenodo.6678278
+    title: GNOme - Glycan Naming and Subsumption Ontology
   repository: https://github.com/glygen-glycan-data/GNOme
   tags:
   - glycan structure
@@ -3360,11 +3396,11 @@ ontologies:
     label: Fernanda Dorea
     orcid: 0000-0001-8638-8525
   dependencies:
-  - id: uberon
   - id: bfo
-  - id: ro
-  - id: obi
   - id: ncbitaxon
+  - id: obi
+  - id: ro
+  - id: uberon
   description: The health Surveillance Ontology (HSO) focuses on "surveillance system
     level data", that is, data outputs from surveillance activities, such as number
     of samples collected, cases observed, etc. It aims to support One-Health surveillance,
@@ -3619,12 +3655,12 @@ ontologies:
     orcid: 0000-0002-9136-9932
   dependencies:
   - id: aism
-  - id: ro
-  - id: uberon
-  - id: caro
-  - id: pato
   - id: bfo
   - id: bspo
+  - id: caro
+  - id: pato
+  - id: ro
+  - id: uberon
   description: The Lepidoptera Anatomy Ontology contains terms used for describing
     the anatomy and phenotype of moths and butterflies in biodiversity research. LEPAO
     is developed in part by BIOfid (The Specialised Information Service Biodiversity
@@ -3699,12 +3735,12 @@ ontologies:
     label: Leigh Carmody
     orcid: 0000-0001-7941-2961
   dependencies:
-  - id: iao
+  - id: chebi
+  - id: foodon
   - id: go
+  - id: iao
   - id: ro
   - id: uberon
-  - id: foodon
-  - id: chebi
   depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/maxo-logos/maxo_logo_black-banner.png
   description: Medical Action Ontology is an ontology...
   domain: health
@@ -3761,12 +3797,12 @@ ontologies:
   - id: clo
   - id: micro
   - id: ncbitaxon
-  - id: peco
   - id: ncit
   - id: obi
   - id: omit
   - id: omp
   - id: pato
+  - id: peco
   - id: uberon
   - id: zeco
   description: Microbial Conditions Ontology is an ontology...
@@ -5132,9 +5168,9 @@ ontologies:
     label: Chen Yang
     orcid: 0000-0001-9202-5309
   dependencies:
-  - id: ons
-  - id: obi
   - id: foodon
+  - id: obi
+  - id: ons
   description: An ontology to standardize research output of nutritional epidemiologic
     studies.
   domain: diet, metabolomics, and nutrition
@@ -5166,14 +5202,14 @@ ontologies:
     label: Francesco Vitali
     orcid: 0000-0001-9125-4337
   dependencies:
-  - id: uberon
-  - id: ro
-  - id: chebi
-  - id: ncbitaxon
   - id: bfo
+  - id: chebi
   - id: envo
-  - id: obi
   - id: foodon
+  - id: ncbitaxon
+  - id: obi
+  - id: ro
+  - id: uberon
   description: An ontology for description of concepts in the nutritional studies
     domain.
   domain: diet, metabolomics, and nutrition
@@ -5210,9 +5246,9 @@ ontologies:
   dependencies:
   - id: fbcv
   - id: gsso
-  - id: stato
-  - id: ro
   - id: ncit
+  - id: ro
+  - id: stato
   description: OntoAvida develops an integrated vocabulary for the description of
     the most widely-used computational approach for studying evolution using digital
     organisms (i.e., self-replicating computer programs that evolve within a user-defined
@@ -5411,18 +5447,18 @@ ontologies:
     label: David Osumi-Sutherland
     orcid: 0000-0002-7073-9172
   dependencies:
-  - id: pr
-  - id: go
-  - id: uberon
-  - id: ro
-  - id: pato
-  - id: ncbitaxon
   - id: bfo
-  - id: cl
-  - id: omo
-  - id: nbo
   - id: chebi
+  - id: cl
+  - id: go
+  - id: nbo
+  - id: ncbitaxon
+  - id: omo
+  - id: pato
+  - id: pr
+  - id: ro
   - id: so
+  - id: uberon
   description: Cell types that are provisionally defined by experimental techniques
     such as single cell or single nucleus transcriptomics rather than a straightforward
     & coherent set of properties.
@@ -5475,15 +5511,14 @@ ontologies:
     label: Ramona Walls
     orcid: 0000-0001-8815-0078
   dependencies:
-  - id: ro
   - id: bfo
-  - id: pato
+  - id: caro
   - id: envo
   - id: go
   - id: iao
-  - id: bfo
   - id: ncbitaxon
-  - id: caro
+  - id: pato
+  - id: ro
   description: An ontology about groups of interacting organisms such as populations
     and communities
   domain: environment
@@ -5700,10 +5735,10 @@ ontologies:
     label: Sofia Robb
     orcid: 0000-0002-3528-5267
   dependencies:
-  - id: ro
+  - id: go
   - id: pato
   - id: plana
-  - id: go
+  - id: ro
   description: Planarian Phenotype Ontology is an ontology of phenotypes observed
     in the planarian Schmidtea mediterranea.
   domain: phenotype
@@ -5740,8 +5775,8 @@ ontologies:
     label: Bob Thacker
     orcid: 0000-0002-9654-0073
   dependencies:
-  - id: uberon
   - id: ro
+  - id: uberon
   description: An ontology covering the anatomy of the taxon Porifera (sponges)
   domain: anatomy and development
   homepage: https://github.com/obophenotype/porifera-ontology
@@ -5802,6 +5837,37 @@ ontologies:
   title: Plant Phenology Ontology
   tracker: https://github.com/PlantPhenoOntology/PPO/issues
 - activity_status: active
+  contact:
+    email: wes_schafer@merck.com
+    github: schaferw
+    label: Wes Schafer
+    orcid: 0000-0002-8786-1756
+  dependencies:
+  - id: chebi
+  - id: cheminf
+  - id: obi
+  - id: pato
+  - id: ro
+  - id: sbo
+  description: PROCO covers process chemistry, the chemical field concerned with scaling
+    up laboratory syntheses to commercially viable processes.
+  domain: chemistry and biochemistry
+  homepage: https://github.com/proco-ontology/PROCO
+  id: proco
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/proco.owl
+  preferredPrefix: PROCO
+  products:
+  - id: proco.owl
+    ontology_purl: http://purl.obolibrary.org/obo/proco.owl
+  repository: https://github.com/proco-ontology/PROCO
+  title: Process Chemistry Ontology
+  tracker: https://github.com/proco-ontology/PROCO/issues
+- activity_status: active
   build:
     checkout: https://github.com/Display-Lab/psdo.git
     path: .
@@ -5812,10 +5878,10 @@ ontologies:
     label: Zach Landis-Lewis
     orcid: 0000-0002-9117-9338
   dependencies:
-  - id: stato
-  - id: iao
   - id: bfo
+  - id: iao
   - id: ro
+  - id: stato
   description: Ontology to reproducibly study visualizations of clinical performance
   domain: information
   homepage: https://github.com/Display-Lab/psdo
@@ -5929,12 +5995,12 @@ ontologies:
     label: Daniel C. Berrios
     orcid: 0000-0003-4312-9552
   dependencies:
-  - id: ro
   - id: bfo
-  - id: pato
   - id: chmo
   - id: envo
   - id: obi
+  - id: pato
+  - id: ro
   - id: uo
   description: RBO is an ontology for the effects of radiation on biota in terrestrial
     and space environments.
@@ -6605,12 +6671,12 @@ ontologies:
     label: Chris Mungall
     orcid: 0000-0002-6601-2165
   dependencies:
-  - id: go
-    subset: uberon/go_import.owl
-  - id: cl
-    subset: uberon/cl_import.owl
   - id: chebi
     subset: uberon/chebi_import.owl
+  - id: cl
+    subset: uberon/cl_import.owl
+  - id: go
+    subset: uberon/go_import.owl
   - id: pr
     subset: uberon/pr_import.owl
   depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/uberon-logos/uberon_logo_black-banner.png
@@ -7237,13 +7303,13 @@ ontologies:
     label: Erik Segerdell
     orcid: 0000-0002-9611-1279
   dependencies:
-  - id: iao
-  - id: go
-  - id: ro
-  - id: pato
   - id: bfo
   - id: chebi
   - id: cl
+  - id: go
+  - id: iao
+  - id: pato
+  - id: ro
   - id: xao
   description: XPO represents anatomical, cellular, and gene function phenotypes occurring
     throughout the development of the African frogs Xenopus laevis and tropicalis.
@@ -7354,13 +7420,13 @@ ontologies:
     label: Yvonne Bradford
     orcid: 0000-0002-9900-7880
   dependencies:
-  - id: go
-  - id: ro
-  - id: pato
-  - id: bspo
-  - id: zfa
   - id: bfo
+  - id: bspo
+  - id: go
+  - id: pato
+  - id: ro
   - id: uberon
+  - id: zfa
   description: The Zebrafish Phenotype Ontology formally defines all phenotypes of
     the Zebrafish model organism.
   domain: phenotype
@@ -7573,33 +7639,6 @@ ontologies:
     user: https://biosimulators.org/
 - activity_status: active
   build:
-    method: owl2obo
-    source_url: https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl
-  contact:
-    email: nicolas@ascistance.co.uk
-    github: gambardella
-    label: Nicolas Gambardella
-    orcid: 0000-0002-6309-7327
-  description: The Mathematical Modelling Ontology (MAMO) is a classification of the
-    types of mathematical models used mostly in the life sciences, their variables,
-    relationships and other relevant features.
-  domain: simulation
-  homepage: http://sourceforge.net/p/mamo-ontology/wiki/Home/
-  id: mamo
-  layout: ontology_detail
-  license:
-    label: Artistic License 2.0
-    url: http://opensource.org/licenses/Artistic-2.0
-  ontology_purl: http://purl.obolibrary.org/obo/mamo.owl
-  preferredPrefix: MAMO
-  products:
-  - id: mamo.owl
-    ontology_purl: http://purl.obolibrary.org/obo/mamo.owl
-  repository: http://sourceforge.net/p/mamo-ontology
-  title: Mathematical modeling ontology
-  tracker: http://sourceforge.net/p/mamo-ontology/tickets/
-- activity_status: active
-  build:
     insert_ontology_id: true
     method: obo2owl
     source_url: http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo
@@ -7720,17 +7759,27 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/fix.obo
   title: Physico-chemical methods and properties
 - activity_status: orphaned
-  description: An ontology that formalizes the genomic element by defining an upper
-    class genetic interval
-  homepage: https://code.google.com/p/ontology-for-genetic-interval/
-  id: ogi
+  build:
+    method: owl2obo
+    source_url: https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl
+  description: The Mathematical Modelling Ontology (MAMO) is a classification of the
+    types of mathematical models used mostly in the life sciences, their variables,
+    relationships and other relevant features.
+  domain: simulation
+  homepage: http://sourceforge.net/p/mamo-ontology/wiki/Home/
+  id: mamo
   layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/ogi.owl
+  license:
+    label: Artistic License 2.0
+    url: http://opensource.org/licenses/Artistic-2.0
+  ontology_purl: http://purl.obolibrary.org/obo/mamo.owl
+  preferredPrefix: MAMO
   products:
-  - id: ogi.owl
-    ontology_purl: http://purl.obolibrary.org/obo/ogi.owl
-  title: Ontology for genetic interval
-  tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list
+  - id: mamo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/mamo.owl
+  repository: http://sourceforge.net/p/mamo-ontology
+  title: Mathematical modeling ontology
+  tracker: http://sourceforge.net/p/mamo-ontology/tickets/
 - activity_status: orphaned
   build:
     insert_ontology_id: true
@@ -8686,6 +8735,24 @@ ontologies:
   layout: ontology_detail
   replaced_by: ro
   title: OBO relationship types (legacy)
+- activity_status: inactive
+  contact:
+    email: linikujp@gmail.com
+    github: linikujp
+    label: Asiyah Yu Lin
+    orcid: 0000-0002-5379-5359
+  description: An ontology that formalizes the genomic element by defining an upper
+    class genetic interval
+  homepage: https://code.google.com/p/ontology-for-genetic-interval/
+  id: ogi
+  is_obsolete: true
+  layout: ontology_detail
+  products:
+  - id: ogi.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ogi.owl
+  replaced_by: ogsf
+  title: Ontology for genetic interval
+  tracker: https://code.google.com/p/ontology-for-genetic-interval/issues/list
 - activity_status: inactive
   contact:
     email: mbrochhausen@gmail.com

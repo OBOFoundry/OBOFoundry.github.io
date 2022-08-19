@@ -2,23 +2,23 @@
 layout: ontology_detail
 id: ino
 title: Interaction Network Ontology
-description: An ontology of interactions and interaction networks
-license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
 contact:
   email: yongqunh@med.umich.edu
-  label: Yongqun Oliver He
   github: yongqunh
+  label: Yongqun Oliver He
   orcid: 0000-0001-9189-9661
-homepage: https://github.com/INO-ontology/ino
-tracker: https://github.com/INO-ontology/ino/issues
-products:
-  - id: ino.owl
-activity_status: active
-repository: https://github.com/INO-ontology/ino
-preferredPrefix: INO
+description: An ontology of interactions and interaction networks
 domain: biological systems
+homepage: https://github.com/INO-ontology/ino
+license:
+  label: CC BY 3.0
+  url: http://creativecommons.org/licenses/by/3.0/
+preferredPrefix: INO
+products:
+- id: ino.owl
+repository: https://github.com/INO-ontology/ino
+tracker: https://github.com/INO-ontology/ino/issues
+activity_status: active
 ---
 
 # Summary

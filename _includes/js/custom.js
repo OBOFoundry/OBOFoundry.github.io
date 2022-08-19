@@ -199,7 +199,7 @@ jQuery(document).ready(function() {
                         </small>
                     </td>
                     <td class="col-sm-5">
-                        <div class="ic-display">
+                        <div class="btn-group" role="group" aria-label="Quick access for ${title}">
                             <a class="btn btn-default btn-sm" href="ontology/${id}.html" aria-label="More details for ${title}" title="More details for ${title}">
                                   <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                             </a>

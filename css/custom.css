@@ -1,29 +1,38 @@
-.foundry {
+.foundry
+{
   background-color: #f0fbff;
 }
 
-.obsolete {
+.obsolete
+{
   background-color: #f6f6f6;
 }
 
-.inactive_row {
+.inactive_row
+{
   background-color: silver;
 }
-.ic-display{
+
+.ic-display
+{
   display: flex;
   justify-content: space-around;
 }
-#table-main{
+
+#table-main
+{
   display: none;
 }
 
-.mytooltipstyle{
+.mytooltipstyle
+{
   color: white !important;
   background-color: rgba(0,0,0,0.4) !important;
   padding: 5px;
   height: 10px;
 }
 
-.ob-center{
+.ob-center
+{
   vertical-align: middle !important;
 }

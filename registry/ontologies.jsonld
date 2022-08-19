@@ -283,20 +283,8 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon",
-                    "subset": "go/extensions/uberon_import.owl"
-                },
-                {
                     "id": "cl",
                     "subset": "go/extensions/cl_import.owl"
-                },
-                {
-                    "id": "ncbitaxon",
-                    "subset": "go/extensions/ncbitaxon_import.owl"
-                },
-                {
-                    "id": "ro",
-                    "subset": "go/extensions/ro_import.owl"
                 },
                 {
                     "connects": [
@@ -317,6 +305,18 @@
                     ],
                     "title": "GO bridge to NIFSTD",
                     "type": "BridgeOntology"
+                },
+                {
+                    "id": "ncbitaxon",
+                    "subset": "go/extensions/ncbitaxon_import.owl"
+                },
+                {
+                    "id": "ro",
+                    "subset": "go/extensions/ro_import.owl"
+                },
+                {
+                    "id": "uberon",
+                    "subset": "go/extensions/uberon_import.owl"
                 }
             ],
             "depicted_by": "http://geneontology.org/assets/go-logo-icon.mini.png",
@@ -1073,6 +1073,41 @@
         },
         {
             "activity_status": "active",
+            "contact": {
+                "email": "alpha.tom.kodamullil@scai.fraunhofer.de",
+                "github": "akodamullil",
+                "label": "Alpha Tom Kodamullil",
+                "orcid": "0000-0001-9896-3531"
+            },
+            "dependencies": [
+                {
+                    "id": "bfo"
+                }
+            ],
+            "description": "Alzheimer's Disease Ontology is a knowledge-based ontology that encompasses varieties of concepts related to Alzheimer'S Disease, structured by upper level Basic Formal Ontology(BFO). This Ontology is enriched by the interrelated entities that demonstrate the network of the understanding on Alzheimer's disease and can be readily applied for text mining.",
+            "domain": "health",
+            "homepage": "https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO",
+            "id": "ado",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/ado.owl",
+            "preferredPrefix": "ADO",
+            "products": [
+                {
+                    "id": "ado.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ado.owl"
+                }
+            ],
+            "repository": "https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO",
+            "title": "Alzheimer's Disease Ontology",
+            "tracker": "https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO/issues"
+        },
+        {
+            "activity_status": "active",
             "build": {
                 "checkout": "git clone  https://github.com/AgriculturalSemantics/agro.git",
                 "path": ".",
@@ -1086,16 +1121,25 @@
             },
             "dependencies": [
                 {
-                    "id": "envo"
+                    "id": "bfo"
                 },
                 {
-                    "id": "go"
+                    "id": "envo"
                 },
                 {
                     "id": "foodon"
                 },
                 {
+                    "id": "go"
+                },
+                {
+                    "id": "iao"
+                },
+                {
                     "id": "ncbitaxon"
+                },
+                {
+                    "id": "obi"
                 },
                 {
                     "id": "pato"
@@ -1107,19 +1151,10 @@
                     "id": "po"
                 },
                 {
-                    "id": "to"
-                },
-                {
                     "id": "ro"
                 },
                 {
-                    "id": "bfo"
-                },
-                {
-                    "id": "iao"
-                },
-                {
-                    "id": "obi"
+                    "id": "to"
                 },
                 {
                     "id": "uo"
@@ -1192,10 +1227,10 @@
             },
             "dependencies": [
                 {
-                    "id": "ro"
+                    "id": "bfo"
                 },
                 {
-                    "id": "uberon"
+                    "id": "bspo"
                 },
                 {
                     "id": "caro"
@@ -1204,10 +1239,10 @@
                     "id": "pato"
                 },
                 {
-                    "id": "bfo"
+                    "id": "ro"
                 },
                 {
-                    "id": "bspo"
+                    "id": "uberon"
                 }
             ],
             "description": "The AISM contains terms used in insect biodiversity research for describing structures of the exoskeleton and the skeletomuscular system. It aims to serve as the basic backbone of generalized terms to be expanded with order-specific terminology.",
@@ -1626,19 +1661,19 @@
             },
             "dependencies": [
                 {
-                    "id": "ro"
-                },
-                {
                     "id": "bfo"
-                },
-                {
-                    "id": "pato"
                 },
                 {
                     "id": "chebi"
                 },
                 {
                     "id": "envo"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "ro"
                 }
             ],
             "description": "CDNO provides structured terminologies to describe nutritional attributes of material entities that contribute to human diet.",
@@ -1734,22 +1769,22 @@
                     "id": "chebi"
                 },
                 {
-                    "id": "mp"
+                    "id": "go"
                 },
                 {
                     "id": "hp"
                 },
                 {
-                    "id": "go"
+                    "id": "mp"
+                },
+                {
+                    "id": "ncbitaxon"
                 },
                 {
                     "id": "pr"
                 },
                 {
                     "id": "uberon"
-                },
-                {
-                    "id": "ncbitaxon"
                 }
             ],
             "description": "CHEBI provides a distinct role hierarchy. Chemicals in the structural hierarchy are connected via a 'has role' relation. CHIRO provides links from these roles to useful other classes in other ontologies. This will allow direct connection between chemical structures (small molecules, drugs) and what they do. This could be formalized using 'capable of', in the same way Uberon and the Cell Ontology link structures to processes.",
@@ -1906,16 +1941,13 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
+                    "id": "chebi"
                 },
                 {
                     "id": "go"
                 },
                 {
-                    "id": "ro"
-                },
-                {
-                    "id": "chebi"
+                    "id": "ncbitaxon"
                 },
                 {
                     "id": "pato"
@@ -1924,7 +1956,10 @@
                     "id": "pr"
                 },
                 {
-                    "id": "ncbitaxon"
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
             "description": "The Cell Ontology is a structured controlled vocabulary for cell types in animals.",
@@ -2156,9 +2191,6 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
-                },
-                {
                     "id": "cl"
                 },
                 {
@@ -2166,6 +2198,9 @@
                 },
                 {
                     "id": "ncbitaxon"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
             "description": "An ontology to standardize and integrate cell line information and to support computer-assisted reasoning.",
@@ -2211,13 +2246,13 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
+                    "id": "iao"
                 },
                 {
                     "id": "ro"
                 },
                 {
-                    "id": "iao"
+                    "id": "uberon"
                 }
             ],
             "description": "The Clytia hemisphaerica Development and Anatomy Ontology (CLYH) describes the anatomical and developmental features of the Clytia hemisphaerica life cycle.",
@@ -2370,10 +2405,10 @@
                     "id": "aism"
                 },
                 {
-                    "id": "ro"
+                    "id": "bfo"
                 },
                 {
-                    "id": "uberon"
+                    "id": "bspo"
                 },
                 {
                     "id": "caro"
@@ -2382,10 +2417,10 @@
                     "id": "pato"
                 },
                 {
-                    "id": "bfo"
+                    "id": "ro"
                 },
                 {
-                    "id": "bspo"
+                    "id": "uberon"
                 }
             ],
             "description": "The Coleoptera Anatomy Ontology contains terms used for describing the anatomy and phenotype of beetles in biodiversity research. It has been built using the Ontology Develoment Kit, with the Ontology for the Anatomy of the Insect Skeleto-Muscular system (AISM) as a backbone.",
@@ -2472,10 +2507,10 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
+                    "id": "ro"
                 },
                 {
-                    "id": "ro"
+                    "id": "uberon"
                 }
             ],
             "description": "An anatomical and developmental ontology for ctenophores (Comb Jellies)",
@@ -2897,10 +2932,10 @@
             },
             "dependencies": [
                 {
-                    "id": "iao"
+                    "id": "bfo"
                 },
                 {
-                    "id": "bfo"
+                    "id": "iao"
                 }
             ],
             "description": "DUO is an ontology which represent data use conditions.",
@@ -2946,13 +2981,13 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
+                    "id": "cl"
                 },
                 {
                     "id": "ro"
                 },
                 {
-                    "id": "cl"
+                    "id": "uberon"
                 }
             ],
             "description": "An ontology for the development and anatomy of the different species of the phylum Echinodermata (NCBITaxon:7586).",
@@ -3086,34 +3121,34 @@
             },
             "dependencies": [
                 {
-                    "id": "pco"
-                },
-                {
-                    "id": "ro"
-                },
-                {
                     "id": "bfo"
-                },
-                {
-                    "id": "pato"
-                },
-                {
-                    "id": "envo"
                 },
                 {
                     "id": "chebi"
                 },
                 {
+                    "id": "envo"
+                },
+                {
                     "id": "go"
                 },
                 {
-                    "id": "uberon"
+                    "id": "iao"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "pco"
                 },
                 {
                     "id": "po"
                 },
                 {
-                    "id": "iao"
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
             "description": "Ecocore is a community ontology for the concise and controlled description of ecological traits of organisms.",
@@ -3188,10 +3223,10 @@
                     "id": "nbo"
                 },
                 {
-                    "id": "ncit"
+                    "id": "ncbitaxon"
                 },
                 {
-                    "id": "ncbitaxon"
+                    "id": "ncit"
                 },
                 {
                     "id": "pato"
@@ -3329,28 +3364,28 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
-                },
-                {
-                    "id": "pco"
-                },
-                {
-                    "id": "ro"
-                },
-                {
                     "id": "chebi"
-                },
-                {
-                    "id": "ncbitaxon"
                 },
                 {
                     "id": "foodon"
                 },
                 {
+                    "id": "go"
+                },
+                {
+                    "id": "ncbitaxon"
+                },
+                {
+                    "id": "pco"
+                },
+                {
                     "id": "po"
                 },
                 {
-                    "id": "go"
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
             "depicted_by": "/logos/envo.png",
@@ -3542,6 +3577,12 @@
                 {
                     "id": "eupath.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/eupath.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.5281/zenodo.6685957",
+                    "title": "Malaria study data integration and information retrieval based on OBO Foundry ontologies."
                 }
             ],
             "repository": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology",
@@ -4065,28 +4106,28 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
-                },
-                {
-                    "id": "ro"
-                },
-                {
-                    "id": "eo"
+                    "id": "bfo"
                 },
                 {
                     "id": "chebi"
                 },
                 {
-                    "id": "ncbitaxon"
-                },
-                {
-                    "id": "bfo"
-                },
-                {
                     "id": "envo"
                 },
                 {
+                    "id": "eo"
+                },
+                {
+                    "id": "ncbitaxon"
+                },
+                {
                     "id": "obi"
+                },
+                {
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
             "description": "A broadly scoped ontology representing entities which bear a “food role”. It encompasses materials in natural ecosystems and agriculture that are consumed by humans and domesticated animals. This includes any generic (unbranded) raw or processed food material found in processing plants, markets, stores or food distribution points. FoodOn also imports nutritional component and dietary pattern terms from other OBO Foundry ontologies to support interoperability in diet and nutrition research",
@@ -4146,22 +4187,22 @@
                     "id": "bco"
                 },
                 {
-                    "id": "oba"
-                },
-                {
-                    "id": "ro"
-                },
-                {
                     "id": "bfo"
-                },
-                {
-                    "id": "pato"
                 },
                 {
                     "id": "bspo"
                 },
                 {
                     "id": "iao"
+                },
+                {
+                    "id": "oba"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "ro"
                 },
                 {
                     "id": "uberon"
@@ -4325,7 +4366,10 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
+                    "id": "chebi"
+                },
+                {
+                    "id": "ncbitaxon"
                 },
                 {
                     "id": "po"
@@ -4334,10 +4378,7 @@
                     "id": "ro"
                 },
                 {
-                    "id": "chebi"
-                },
-                {
-                    "id": "ncbitaxon"
+                    "id": "uberon"
                 }
             ],
             "description": "The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary to identify, document and research foodborne pathogens and associated outbreaks.",
@@ -4383,9 +4424,9 @@
             "id": "geno",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC BY-SA 2.0",
-                "logo": "https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png",
-                "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/geno.owl",
             "preferredPrefix": "GENO",
@@ -4485,6 +4526,12 @@
                     "description": "Glycan Naming and Subsumption Ontology, JSON format (automated conversion from OWL)",
                     "id": "gno.json",
                     "ontology_purl": "http://purl.obolibrary.org/obo/gno.json"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.5281/zenodo.6678278",
+                    "title": "GNOme - Glycan Naming and Subsumption Ontology"
                 }
             ],
             "repository": "https://github.com/glygen-glycan-data/GNOme",
@@ -4743,19 +4790,19 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
-                },
-                {
                     "id": "bfo"
                 },
                 {
-                    "id": "ro"
+                    "id": "ncbitaxon"
                 },
                 {
                     "id": "obi"
                 },
                 {
-                    "id": "ncbitaxon"
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
             "description": "The health Surveillance Ontology (HSO) focuses on \"surveillance system level data\", that is, data outputs from surveillance activities, such as number of samples collected, cases observed, etc. It aims to support One-Health surveillance, covering animal health, public health and food safety surveillance.",
@@ -5097,10 +5144,10 @@
                     "id": "aism"
                 },
                 {
-                    "id": "ro"
+                    "id": "bfo"
                 },
                 {
-                    "id": "uberon"
+                    "id": "bspo"
                 },
                 {
                     "id": "caro"
@@ -5109,10 +5156,10 @@
                     "id": "pato"
                 },
                 {
-                    "id": "bfo"
+                    "id": "ro"
                 },
                 {
-                    "id": "bspo"
+                    "id": "uberon"
                 }
             ],
             "description": "The Lepidoptera Anatomy Ontology contains terms used for describing the anatomy and phenotype of moths and butterflies in biodiversity research. LEPAO is developed in part by BIOfid (The Specialised Information Service Biodiversity Research).",
@@ -5211,22 +5258,22 @@
             },
             "dependencies": [
                 {
-                    "id": "iao"
+                    "id": "chebi"
+                },
+                {
+                    "id": "foodon"
                 },
                 {
                     "id": "go"
+                },
+                {
+                    "id": "iao"
                 },
                 {
                     "id": "ro"
                 },
                 {
                     "id": "uberon"
-                },
-                {
-                    "id": "foodon"
-                },
-                {
-                    "id": "chebi"
                 }
             ],
             "depicted_by": "https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/maxo-logos/maxo_logo_black-banner.png",
@@ -5320,9 +5367,6 @@
                     "id": "ncbitaxon"
                 },
                 {
-                    "id": "peco"
-                },
-                {
                     "id": "ncit"
                 },
                 {
@@ -5336,6 +5380,9 @@
                 },
                 {
                     "id": "pato"
+                },
+                {
+                    "id": "peco"
                 },
                 {
                     "id": "uberon"
@@ -7132,13 +7179,13 @@
             },
             "dependencies": [
                 {
-                    "id": "ons"
+                    "id": "foodon"
                 },
                 {
                     "id": "obi"
                 },
                 {
-                    "id": "foodon"
+                    "id": "ons"
                 }
             ],
             "description": "An ontology to standardize research output of nutritional epidemiologic studies.",
@@ -7180,28 +7227,28 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
-                },
-                {
-                    "id": "ro"
+                    "id": "bfo"
                 },
                 {
                     "id": "chebi"
                 },
                 {
-                    "id": "ncbitaxon"
-                },
-                {
-                    "id": "bfo"
-                },
-                {
                     "id": "envo"
+                },
+                {
+                    "id": "foodon"
+                },
+                {
+                    "id": "ncbitaxon"
                 },
                 {
                     "id": "obi"
                 },
                 {
-                    "id": "foodon"
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
             "description": "An ontology for description of concepts in the nutritional studies domain.",
@@ -7254,13 +7301,13 @@
                     "id": "gsso"
                 },
                 {
-                    "id": "stato"
+                    "id": "ncit"
                 },
                 {
                     "id": "ro"
                 },
                 {
-                    "id": "ncit"
+                    "id": "stato"
                 }
             ],
             "description": "OntoAvida develops an integrated vocabulary for the description of the most widely-used computational approach for studying evolution using digital organisms (i.e., self-replicating computer programs that evolve within a user-defined computational environment).",
@@ -7514,40 +7561,40 @@
             },
             "dependencies": [
                 {
-                    "id": "pr"
-                },
-                {
-                    "id": "go"
-                },
-                {
-                    "id": "uberon"
-                },
-                {
-                    "id": "ro"
-                },
-                {
-                    "id": "pato"
-                },
-                {
-                    "id": "ncbitaxon"
-                },
-                {
                     "id": "bfo"
-                },
-                {
-                    "id": "cl"
-                },
-                {
-                    "id": "omo"
-                },
-                {
-                    "id": "nbo"
                 },
                 {
                     "id": "chebi"
                 },
                 {
+                    "id": "cl"
+                },
+                {
+                    "id": "go"
+                },
+                {
+                    "id": "nbo"
+                },
+                {
+                    "id": "ncbitaxon"
+                },
+                {
+                    "id": "omo"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "pr"
+                },
+                {
+                    "id": "ro"
+                },
+                {
                     "id": "so"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
             "description": "Cell types that are provisionally defined by experimental techniques such as single cell or single nucleus transcriptomics rather than a straightforward & coherent set of properties.",
@@ -7631,13 +7678,10 @@
             },
             "dependencies": [
                 {
-                    "id": "ro"
-                },
-                {
                     "id": "bfo"
                 },
                 {
-                    "id": "pato"
+                    "id": "caro"
                 },
                 {
                     "id": "envo"
@@ -7649,13 +7693,13 @@
                     "id": "iao"
                 },
                 {
-                    "id": "bfo"
-                },
-                {
                     "id": "ncbitaxon"
                 },
                 {
-                    "id": "caro"
+                    "id": "pato"
+                },
+                {
+                    "id": "ro"
                 }
             ],
             "description": "An ontology about groups of interacting organisms such as populations and communities",
@@ -7958,7 +8002,7 @@
             },
             "dependencies": [
                 {
-                    "id": "ro"
+                    "id": "go"
                 },
                 {
                     "id": "pato"
@@ -7967,7 +8011,7 @@
                     "id": "plana"
                 },
                 {
-                    "id": "go"
+                    "id": "ro"
                 }
             ],
             "description": "Planarian Phenotype Ontology is an ontology of phenotypes observed in the planarian Schmidtea mediterranea.",
@@ -8019,10 +8063,10 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
+                    "id": "ro"
                 },
                 {
-                    "id": "ro"
+                    "id": "uberon"
                 }
             ],
             "description": "An ontology covering the anatomy of the taxon Porifera (sponges)",
@@ -8107,6 +8151,56 @@
         },
         {
             "activity_status": "active",
+            "contact": {
+                "email": "wes_schafer@merck.com",
+                "github": "schaferw",
+                "label": "Wes Schafer",
+                "orcid": "0000-0002-8786-1756"
+            },
+            "dependencies": [
+                {
+                    "id": "chebi"
+                },
+                {
+                    "id": "cheminf"
+                },
+                {
+                    "id": "obi"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "ro"
+                },
+                {
+                    "id": "sbo"
+                }
+            ],
+            "description": "PROCO covers process chemistry, the chemical field concerned with scaling up laboratory syntheses to commercially viable processes.",
+            "domain": "chemistry and biochemistry",
+            "homepage": "https://github.com/proco-ontology/PROCO",
+            "id": "proco",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/proco.owl",
+            "preferredPrefix": "PROCO",
+            "products": [
+                {
+                    "id": "proco.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/proco.owl"
+                }
+            ],
+            "repository": "https://github.com/proco-ontology/PROCO",
+            "title": "Process Chemistry Ontology",
+            "tracker": "https://github.com/proco-ontology/PROCO/issues"
+        },
+        {
+            "activity_status": "active",
             "build": {
                 "checkout": "https://github.com/Display-Lab/psdo.git",
                 "path": ".",
@@ -8120,16 +8214,16 @@
             },
             "dependencies": [
                 {
-                    "id": "stato"
+                    "id": "bfo"
                 },
                 {
                     "id": "iao"
                 },
                 {
-                    "id": "bfo"
+                    "id": "ro"
                 },
                 {
-                    "id": "ro"
+                    "id": "stato"
                 }
             ],
             "description": "Ontology to reproducibly study visualizations of clinical performance",
@@ -8292,13 +8386,7 @@
             },
             "dependencies": [
                 {
-                    "id": "ro"
-                },
-                {
                     "id": "bfo"
-                },
-                {
-                    "id": "pato"
                 },
                 {
                     "id": "chmo"
@@ -8308,6 +8396,12 @@
                 },
                 {
                     "id": "obi"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "ro"
                 },
                 {
                     "id": "uo"
@@ -9225,16 +9319,16 @@
             },
             "dependencies": [
                 {
-                    "id": "go",
-                    "subset": "uberon/go_import.owl"
+                    "id": "chebi",
+                    "subset": "uberon/chebi_import.owl"
                 },
                 {
                     "id": "cl",
                     "subset": "uberon/cl_import.owl"
                 },
                 {
-                    "id": "chebi",
-                    "subset": "uberon/chebi_import.owl"
+                    "id": "go",
+                    "subset": "uberon/go_import.owl"
                 },
                 {
                     "id": "pr",
@@ -10092,18 +10186,6 @@
             },
             "dependencies": [
                 {
-                    "id": "iao"
-                },
-                {
-                    "id": "go"
-                },
-                {
-                    "id": "ro"
-                },
-                {
-                    "id": "pato"
-                },
-                {
                     "id": "bfo"
                 },
                 {
@@ -10111,6 +10193,18 @@
                 },
                 {
                     "id": "cl"
+                },
+                {
+                    "id": "go"
+                },
+                {
+                    "id": "iao"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "ro"
                 },
                 {
                     "id": "xao"
@@ -10264,25 +10358,25 @@
             },
             "dependencies": [
                 {
-                    "id": "go"
-                },
-                {
-                    "id": "ro"
-                },
-                {
-                    "id": "pato"
+                    "id": "bfo"
                 },
                 {
                     "id": "bspo"
                 },
                 {
-                    "id": "zfa"
+                    "id": "go"
                 },
                 {
-                    "id": "bfo"
+                    "id": "pato"
+                },
+                {
+                    "id": "ro"
                 },
                 {
                     "id": "uberon"
+                },
+                {
+                    "id": "zfa"
                 }
             ],
             "description": "The Zebrafish Phenotype Ontology formally defines all phenotypes of the Zebrafish model organism.",
@@ -10591,39 +10685,6 @@
         {
             "activity_status": "active",
             "build": {
-                "method": "owl2obo",
-                "source_url": "https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl"
-            },
-            "contact": {
-                "email": "nicolas@ascistance.co.uk",
-                "github": "gambardella",
-                "label": "Nicolas Gambardella",
-                "orcid": "0000-0002-6309-7327"
-            },
-            "description": "The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features.",
-            "domain": "simulation",
-            "homepage": "http://sourceforge.net/p/mamo-ontology/wiki/Home/",
-            "id": "mamo",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "Artistic License 2.0",
-                "url": "http://opensource.org/licenses/Artistic-2.0"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/mamo.owl",
-            "preferredPrefix": "MAMO",
-            "products": [
-                {
-                    "id": "mamo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/mamo.owl"
-                }
-            ],
-            "repository": "http://sourceforge.net/p/mamo-ontology",
-            "title": "Mathematical modeling ontology",
-            "tracker": "http://sourceforge.net/p/mamo-ontology/tickets/"
-        },
-        {
-            "activity_status": "active",
-            "build": {
                 "insert_ontology_id": true,
                 "method": "obo2owl",
                 "source_url": "http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo"
@@ -10837,19 +10898,30 @@
         },
         {
             "activity_status": "orphaned",
-            "description": "An ontology that formalizes the genomic element by defining an upper class genetic interval",
-            "homepage": "https://code.google.com/p/ontology-for-genetic-interval/",
-            "id": "ogi",
+            "build": {
+                "method": "owl2obo",
+                "source_url": "https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl"
+            },
+            "description": "The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features.",
+            "domain": "simulation",
+            "homepage": "http://sourceforge.net/p/mamo-ontology/wiki/Home/",
+            "id": "mamo",
             "layout": "ontology_detail",
-            "ontology_purl": "http://purl.obolibrary.org/obo/ogi.owl",
+            "license": {
+                "label": "Artistic License 2.0",
+                "url": "http://opensource.org/licenses/Artistic-2.0"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/mamo.owl",
+            "preferredPrefix": "MAMO",
             "products": [
                 {
-                    "id": "ogi.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ogi.owl"
+                    "id": "mamo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mamo.owl"
                 }
             ],
-            "title": "Ontology for genetic interval",
-            "tracker": "https://code.google.com/p/ontology-for-genetic-interval/issues/list"
+            "repository": "http://sourceforge.net/p/mamo-ontology",
+            "title": "Mathematical modeling ontology",
+            "tracker": "http://sourceforge.net/p/mamo-ontology/tickets/"
         },
         {
             "activity_status": "orphaned",
@@ -12147,6 +12219,29 @@
             "layout": "ontology_detail",
             "replaced_by": "ro",
             "title": "OBO relationship types (legacy)"
+        },
+        {
+            "activity_status": "inactive",
+            "contact": {
+                "email": "linikujp@gmail.com",
+                "github": "linikujp",
+                "label": "Asiyah Yu Lin",
+                "orcid": "0000-0002-5379-5359"
+            },
+            "description": "An ontology that formalizes the genomic element by defining an upper class genetic interval",
+            "homepage": "https://code.google.com/p/ontology-for-genetic-interval/",
+            "id": "ogi",
+            "is_obsolete": true,
+            "layout": "ontology_detail",
+            "products": [
+                {
+                    "id": "ogi.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ogi.owl"
+                }
+            ],
+            "replaced_by": "ogsf",
+            "title": "Ontology for genetic interval",
+            "tracker": "https://code.google.com/p/ontology-for-genetic-interval/issues/list"
         },
         {
             "activity_status": "inactive",

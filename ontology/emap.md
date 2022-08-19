@@ -1,28 +1,28 @@
 ---
 layout: ontology_detail
 id: emap
+title: Mouse gross anatomy and development, timed
+build:
+  insert_ontology_id: true
+  method: obo2owl
+  notes: new url soon
+  source_url: ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAP_combined.obo
 contact:
   email: Terry.Hayamizu@jax.org
-  label: Terry Hayamizu
   github: tfhayamizu
+  label: Terry Hayamizu
   orcid: 0000-0002-0956-8634
 description: A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).
 domain: anatomy and development
 homepage: http://emouseatlas.org
+is_obsolete: true
 page: https://www.emouseatlas.org/emap/about/what_is_emap.html
 products:
-  - id: emap.owl
+- id: emap.owl
+replaced_by: emapa
 taxon:
   id: NCBITaxon:10088
   label: Mus
-title: Mouse gross anatomy and development, timed
-build:
-  notes: new url soon
-  source_url: ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAP_combined.obo
-  insert_ontology_id: true
-  method: obo2owl
-is_obsolete: true
-replaced_by: emapa
 activity_status: inactive
 ---
 
