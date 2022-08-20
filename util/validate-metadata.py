@@ -121,7 +121,7 @@ def validate_metadata(item, schema):
     results = {}
 
     # determine how to sort this item in the grid:
-    results["foundry"] = True if item.get("in_foundry_order") == 1 else False
+    results["foundry"] = False #True if item.get("in_foundry_order") == 1 else False
     results["obsolete"] = True if item.get("is_obsolete") is True else False
     # if there is no status, put them at the bottom with inactive:
     results["ontology_status"] = (
