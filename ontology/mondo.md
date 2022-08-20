@@ -13,7 +13,7 @@ contact:
   label: Nicole Vasilevsky
   orcid: 0000-0001-5208-3432
 depicted_by: https://raw.githubusercontent.com/monarch-initiative/mondo/master/docs/images/mondo_logo_black-stacked-small.png
-description: A semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology.
+description: A global community effort to harmonize multiple disease resources to yield a coherent merged ontology.
 domain: health
 homepage: https://monarch-initiative.github.io/mondo
 label: Mondo
@@ -86,9 +86,9 @@ usages:
 activity_status: active
 ---
 
-The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. It is a semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology. Original versions of Mondo were constructed entirely automatically and used the IDs of source databases and ontologies. Later, additional manually curated cross-ontology axioms were added, and a native Mondo ID system was used to avoid confusion with source databases.
+The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. It is a global community effort to reconcile and curate the very many disease resources within a coherent merged ontology. Original versions of Mondo were constructed entirely automatically and used the IDs of source databases and ontologies. Later, additional manually curated cross-ontology axioms were added, and a native Mondo ID system was used to avoid confusion with source databases.
 
-A key feature of Mondo is that it goes beyond loose database cross-references (xrefs). It curated precise 1:1 equivalence axioms connecting to other resources, validated by OWL reasoning. This means it is safe to propagate across these from Online Mendelian Inheritance in Man (OMIM), Orphanet, Experimental Factor Ontology (EFO), Disease Ontology (DOID) and the neoplasm branch of National Cancer Institute Thesaurus (NCIt).
+A key feature of Mondo is that it goes beyond loose database cross-references (xrefs). It curated precise 1:1 equivalence axioms connecting to other resources, validated by OWL reasoning. This means it is safe to propagate across these from Online Mendelian Inheritance in Man (OMIM), Orphanet, Experimental Factor Ontology (EFO), Disease Ontology (DOID) and the neoplasm branch of National Cancer Institute Thesaurus (NCIt). All provenance and attribution is tracked, ensuring interoperability across resources.
 
 These precise mappings are available in three ways depending on the format:
 
