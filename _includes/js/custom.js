@@ -195,8 +195,9 @@ jQuery(document).ready(function() {
                             <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
                         </a>`;
             }
-            if (activity_status === "inactive") {
+            if (activity_status === "inactive" || activity_status === "orphaned") {
                 is_inactive = "inactive_row";
+                is_obsolete = `(${activity_status})`
             }
             if (data[i]["is_obsolete"]) {
                 is_obsolete = "(obsolete)"
@@ -223,12 +224,12 @@ jQuery(document).ready(function() {
                         <a href="ontology/${id}.html">
                             ${id}
                         </a>
-                        <span style="background-color: #ff8d82">${is_obsolete}</span>    
                     </td>
                     <td class="col-sm-1">
                         ${title}
                     </td>
                     <td class="col-sm-3">
+                        <span style="background-color: #ff8d82">${is_obsolete}</span>
                         ${description_box}
                     </td>
                     <td class="col-sm-5">
