@@ -149,6 +149,12 @@ jQuery(document).ready(function() {
             }
             if (data[i]["repository"] && data[i]["repository"].includes("https://github.com/")) {
                 repo = data[i]["repository"];
+                github_box = `
+                    <a href="${repo}">
+                        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/${repo.replace("https://github.com/", "")}?style=social" />
+                    </a>`;
+            } else {
+                github_box = ``;
             }
             if (data[i]["tracker"]) {
                 tracker =`<a class="btn btn-default" href="${data[i]["tracker"]}" aria-label="Go to the tracker for ${title}" title="Go to the tracker for ${title}">
@@ -229,11 +235,8 @@ jQuery(document).ready(function() {
                         </a>
                     </td>  
                     <td class="col-sm-1">
-                        <a href="${repo}">
-                            <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/${repo.replace("https://github.com/", "")}?style=social" />
-                        </a>
+                        ${github_box}
                     </td>
-                                    
                 </tr>
             `;
 
