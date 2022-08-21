@@ -55,7 +55,7 @@ class SortableTable {
    * Takes the index of the column to be sorted parses sort parameters from html
    * @param {string|number} columnIndex
    */
-  setColumnHeaderSort(columnIndex) {
+  setColumnHeaderSort(columnIndex, chevron) {
     if (typeof columnIndex === 'string') {
       columnIndex = parseInt(columnIndex);
     }
@@ -75,6 +75,8 @@ class SortableTable {
             'ascending',
             ch.classList.contains('num')
           );
+          // Point chevron in appropriate direction
+          chevron.setAttribute('class', 'glyphicon glyphicon-chevron-down')
         } else {
           //change sort order parameter
           ch.setAttribute('aria-sort', 'descending');
@@ -84,6 +86,8 @@ class SortableTable {
             'descending',
             ch.classList.contains('num')
           );
+          // Point chevron in appropriate direction
+          chevron.setAttribute('class', 'glyphicon glyphicon-chevron-up')
         }
       } else {
         if (ch.hasAttribute('aria-sort') && buttonNode) {
@@ -170,7 +174,10 @@ class SortableTable {
   handleClick(event) {
     var tgt = event.currentTarget;
     //get the column to sort and pass index t
-    this.setColumnHeaderSort(tgt.getAttribute('data-column-index'));
+    this.setColumnHeaderSort(
+      tgt.getAttribute('data-column-index'),
+      tgt.firstElementChild
+    );
   }
 
   handleOptionChange(event) {
