@@ -81,13 +81,13 @@ jQuery(document).ready(function() {
                         <tr class="row">
                             <th scope="col" class="col-sm-1 ob-center">
                                 <span>ID</span>
-                                <button type="button" class="btn btn-outline-default btn-sm" title="Sort by ID" data-sort="id" >
+                                <button type="button" class="btn btn-outline-default btn-xs" title="Sort by ID" data-sort="id" >
                                     <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
                                 </button>
                             </th>
                             <th scope="col" class="col-sm-1 ob-center">
                                 <span>Title</span>
-                                <button type="button" class="btn btn-outline-default btn-sm" title="Sort by title" data-sort="title" >
+                                <button type="button" class="btn btn-outline-default btn-xs" title="Sort by title" data-sort="title" >
                                     <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
                                 </button>
                             </th>
@@ -99,13 +99,13 @@ jQuery(document).ready(function() {
                             </th>
                             <th scope="col" class="col-sm-2 ob-center">
                                 <span>Re-Use</span>
-                                <button type="button" class="btn btn-outline-default btn-sm" title="Sort by License" data-sort="license" >
+                                <button type="button" class="btn btn-outline-default btn-xs" title="Sort by License" data-sort="license" >
                                     <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
                                 </button>
                             </th>
                             <th scope="col" class="col-sm-1 ob-center">
                                 <span>Social</span>
-                                </th>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
