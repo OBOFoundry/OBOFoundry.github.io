@@ -79,31 +79,31 @@ jQuery(document).ready(function() {
                 <table id="ont_table" class="table table-hover sortable">
                     <thead>
                         <tr class="row">
-                            <th class="col-sm-1 ob-center">
+                            <th scope="col" class="col-sm-1 ob-center">
                                 <span>ID</span>
                                 <button type="button" class="btn btn-outline-default btn-sm" title="Sort by ID" data-sort="id" >
                                     <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
                                 </button>
                             </th>
-                            <th class="col-sm-1 ob-center">
+                            <th scope="col" class="col-sm-1 ob-center">
                                 <span>Title</span>
                                 <button type="button" class="btn btn-outline-default btn-sm" title="Sort by title" data-sort="title" >
                                     <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
                                 </button>
                             </th>
-                            <th class="col-sm-3 ob-center">
+                            <th scope="col" class="col-sm-3 ob-center">
                                 <span>Description</span>
                             </th>
-                            <th class="col-sm-4 ob-center">
+                            <th scope="col" class="col-sm-4 ob-center">
                                 <span>Quick Access</span>
                             </th>
-                            <th class="col-sm-2 ob-center">
+                            <th scope="col" class="col-sm-2 ob-center">
                                 <span>Re-Use</span>
                                 <button type="button" class="btn btn-outline-default btn-sm" title="Sort by License" data-sort="license" >
                                     <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
                                 </button>
                             </th>
-                            <th class="col-sm-1 ob-center">
+                            <th scope="col" class="col-sm-1 ob-center">
                                 <span>Social</span>
                                 </th>
                         </tr>
@@ -183,9 +183,9 @@ jQuery(document).ready(function() {
             // table row template
             let template = `
                 <tr class="row ${is_inactive}">
-                    <td class="col-sm-1">
                         <a class="" href="ontology/${id}.html">
                            ${id} 
+                    <th scope="row" class="col-sm-1">
                         </a>
                         <span style="background-color: #ff8d82">${is_obsolete}</span>    
                     </td>
