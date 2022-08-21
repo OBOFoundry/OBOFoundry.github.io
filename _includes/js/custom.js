@@ -186,9 +186,14 @@ jQuery(document).ready(function() {
             }
             if (data[i]["publications"] && data[i]["publications"].length > 0) {
                 publication = `
-                            <a class="btn btn-default btn-sm" href="${data[i]["publications"][0]["id"]}" aria-label="View the primary publication for ${title}" title="View the primary publication for ${title}">
+                            <a role="button" class="btn btn-default" href="${data[i]["publications"][0]["id"]}" aria-label="View the primary publication for ${title}" title="View the primary publication for ${title}">
                                 <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
                             </a>`;
+            } else {
+                publication = `
+                        <a role="button" class="btn btn-default disabled">
+                            <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                        </a>`;
             }
             if (activity_status === "inactive") {
                 is_inactive = "inactive_row";
