@@ -219,9 +219,9 @@ jQuery(document).ready(function() {
             // table row template
             let template = `
                 <tr class="row ${is_inactive}">
-                        <a class="" href="ontology/${id}.html">
-                           ${id} 
                     <th scope="row" class="col-sm-1">
+                        <a href="ontology/${id}.html">
+                            ${id}
                         </a>
                         <span style="background-color: #ff8d82">${is_obsolete}</span>    
                     </td>
