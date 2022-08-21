@@ -201,6 +201,16 @@ jQuery(document).ready(function() {
             if (data[i]["is_obsolete"]) {
                 is_obsolete = "(obsolete)"
             }
+            if (license_logo) {
+                license_box = `
+                    <a href="${license_url}" >
+                        <img width="80px" src="${license_logo}" alt="${license_label}"/>
+                    </a>
+                    <span style="display: none">${license_label}</span>
+                `;
+            } else {
+                license_box = `<a href="${license_url}">${license_label}</a>`;
+            }
             if (description) {
                 description_box = `${description}`;
             } else {
@@ -241,10 +251,7 @@ jQuery(document).ready(function() {
                         </div>
                     </td>
                     <td class="col-sm-1">
-                        <a href="${license_url}" >
-                            <img width="100px" src="${license_logo}" alt="${license_label}"/><br>
-                            <span style="display: none">${license_label}</span>
-                        </a>
+                        ${license_box}
                     </td>  
                     <td class="col-sm-1">
                         ${github_box}
