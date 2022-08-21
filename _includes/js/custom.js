@@ -174,8 +174,13 @@ jQuery(document).ready(function() {
             }
             if (data[i]["contact"]) {
                 contact =`
-                        <a class="btn btn-default btn-sm" href="mailto:${data[i]["contact"]["email"]}" aria-label="Send an email to ${title}"
+                        <a role="button" class="btn btn-default" href="mailto:${data[i]["contact"]["email"]}" aria-label="Send an email to ${title}"
                            title="Send an email to ${title}">\
+                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        </a>`;
+            } else {
+                contact = `
+                        <a role="button" class="btn btn-default disabled">
                             <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                         </a>`;
             }
