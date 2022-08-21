@@ -441,7 +441,6 @@ jQuery(document).ready(function() {
             let event = new Event('change');
             element.dispatchEvent(event);
             $('#table-main').css('display', 'block');
-            debugger;
             $( 'a' ).tooltip({
                 tooltipClass: "mytooltipstyle",
                 show: {
