@@ -159,7 +159,7 @@ jQuery(document).ready(function() {
                 domainInner[0] = data[i]['domain'];
             }
             if (description !== undefined && description.toString().length > 140) {
-                description = description.toString().slice(0, 140) + '...'
+                description = description.toString().slice(0, 140).trim() + '...'
             }
             if (data[i]["contact"]) {
                 contact =`
