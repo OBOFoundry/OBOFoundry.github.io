@@ -151,9 +151,14 @@ jQuery(document).ready(function() {
                 repo = data[i]["repository"];
             }
             if (data[i]["tracker"]) {
-                tracker =`<a class="btn btn-default btn-sm" href="${data[i]["tracker"]}" aria-label="Go to the tracker for ${title}" title="Go to the tracker for ${title}">
+                tracker =`<a class="btn btn-default" href="${data[i]["tracker"]}" aria-label="Go to the tracker for ${title}" title="Go to the tracker for ${title}">
                                 <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
                             </a>`;
+            } else {
+                tracker = `
+                        <a class="btn btn-default disabled">
+                            <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                        </a>`;
             }
             if (data[i].hasOwnProperty("domain") && data[i]['domain'] !== undefined) {
                 domainInner[0] = data[i]['domain'];
