@@ -199,17 +199,17 @@ jQuery(document).ready(function() {
                         </small>
                     </td>
                     <td class="col-sm-5">
-                        <div class="ic-display">
-                            <a class="btn btn-default btn-sm" href="ontology/${id}.html" aria-label="More details for ${title}" title="More details for ${title}">
+                        <div class="btn-group btn-group-sm" role="group">
+                            <a role="button" class="btn btn-default" href="ontology/${id}.html" aria-label="More details for ${title}" title="More details for ${title}">
                                   <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                             </a>
-                            <a class="btn btn-default btn-sm" href="${homepage}" aria-label="Go to the homepage for ${title}" title="Go to the homepage for ${title}">
+                            <a role="button" class="btn btn-default" href="${homepage}" aria-label="Go to the homepage for ${title}" title="Go to the homepage for ${title}">
                                  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                             </a>
-                            <a class="btn btn-default btn-sm" href="http://purl.obolibrary.org/obo/${id}.owl" aria-label="Download ${title} in OWL format" title="Download ${title} in OWL format">
+                            <a role="button" class="btn btn-default" href="http://purl.obolibrary.org/obo/${id}.owl" aria-label="Download ${title} in OWL format" title="Download ${title} in OWL format">
                                 <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
                             </a>
-                            <a class="btn btn-default btn-sm" href="http://www.ontobee.org/browser/index.php?o=${id}" aria-label="Browse ${title} on OntoBee" title="Browse ${title} on OntoBee">
+                            <a role="button" class="btn btn-default" href="http://www.ontobee.org/browser/index.php?o=${id}" aria-label="Browse ${title} on OntoBee" title="Browse ${title} on OntoBee">
                                 <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                             </a>
                             ${tracker}
