@@ -201,6 +201,11 @@ jQuery(document).ready(function() {
             if (data[i]["is_obsolete"]) {
                 is_obsolete = "(obsolete)"
             }
+            if (description) {
+                description_box = `${description}`;
+            } else {
+                description_box = ``;
+            }
             // table row template
             let template = `
                 <tr class="row ${is_inactive}">
@@ -214,10 +219,7 @@ jQuery(document).ready(function() {
                         ${title}
                     </td>
                     <td class="col-sm-3">
-                        ${description}
-                        <small>
-                            <a href="ontology/${id}.html">Detail</a>
-                        </small>
+                        ${description_box}
                     </td>
                     <td class="col-sm-5">
                         <div class="btn-group btn-group-sm" role="group">
