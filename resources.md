@@ -7,7 +7,7 @@ title: Ontology Tools and Resources
 - [OBO Foundry](http://www.obofoundry.org/)
 - [BioPortal](http://bioportal.bioontology.org/): has over 700 biomedical ontologies, including the OBO Foundry ontologies. Users can search for terms or browse individual ontologies. BioPortal also provides tools to aid in increasing ontology interoperability.
 - [Ontology Lookup Service (OLS)](https://www.ebi.ac.uk/ols/index): lets users search for terms across all ontologies, or individual ontologies, as well as view term hierarchies. OLS also has an API so that ontologies can be browsed programmatically.
-- [Ontobee](http://www.ontobee.org/): Part of the Onto-Animal tool collection. Users can search all available ontologies and browse detailed descriptions of individiual terms. OntoBee is the default server for most OBO Foundry ontology IRIs.
+- [Ontobee](https://ontobee.org/): Part of the Onto-Animal tool collection. Users can search all available ontologies and browse detailed descriptions of individiual terms. OntoBee is the default server for most OBO Foundry ontology IRIs.
 - [AberOWL](http://aber-owl.net/): A repository of biological ontologies and access to reasoned versions of those ontologies. Ontolgies can be browsed by term labels or queried by Manchester OWL syntax statements.
 - [QuickGO](https://www.ebi.ac.uk/QuickGO/)
 - [AmiGO](http://amigo.geneontology.org/amigo)

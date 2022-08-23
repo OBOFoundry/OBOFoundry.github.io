@@ -91,7 +91,7 @@ create RDF files via a JSON-LD file (JENA required):
 
 The front page [index.html](index.html) is the ontology table. It is
 driven by the
-[_includes/ontology_table.html](_includes/ontology_table.html)
+[_includes/ontology_table.html](_includes/table_widget.html)
 template.
 
 It iterates through all ontologies (these are stored in the variable
