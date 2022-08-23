@@ -59,10 +59,10 @@ Here is an example record for the PATO ontology: https://github.com/OBOFoundry/O
 Your metadata will be reviewed and merged by a member of the OBO Foundry Operations Committee. Permissable content for fields is being documented [here](https://obofoundry.org/faq/permissible-metadata-content.html).
 
 Create a PURL registry entry for your ontology.
-1. Go https://github.com/OBOFoundry/purl.obolibrary.org/tree/master/config, click “Add file” and add a file named YOURID.yml.
+1. Go to https://github.com/OBOFoundry/purl.obolibrary.org/tree/master/config, click “Add file” and add a file named YOURID.yml.
 2. Add the desired configuration.
 3. Make a pull request with a link to this issue
-See here for an example: https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/pato.yml "
+See here for an example of a PURL yml file: https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/pato.yml "
 
 <a name="META"></a> 
 ### Changing ontology metadata in the registry
