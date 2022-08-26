@@ -150,5 +150,5 @@ We use bootstrap 3, so far no themes.
 HTML code is kept nice looking with [`prettier`](https://prettier.io):
 
 ```shell
-npx prettier --write _includes/ _layouts/
+npx prettier --write .
 ```
