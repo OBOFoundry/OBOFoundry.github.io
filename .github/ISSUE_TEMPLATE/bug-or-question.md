@@ -1,7 +1,6 @@
 ---
 name: Bug report or question
 about: Report a problem on obofoundry.org or ask a question
-
 ---
 
 If you are reporting an issue with our website, please specify the URL you were looking at, which browser and OS you are using, and if possible,

@@ -24,7 +24,7 @@ each ontology.
 
 The output goes here:
 
- * http://ontologies.berkeleybop.org/
+- http://ontologies.berkeleybop.org/
 
 You can choose to entirely ignore the output of this pipeline for your
 ontology. However, it provides a convenient fall-through for groups
@@ -37,36 +37,36 @@ well as additional services such as validation).
 
 The continuous integration job runs here:
 
- * http://build.berkeleybop.org/job/simple-build-obo-all/
+- http://build.berkeleybop.org/job/simple-build-obo-all/
 
 It takes as metadata input the yml file from this repository. It makes
 use of the `build` object.
 
 This job will fail if ontologies marked as `infallible` fail. To debug, the full log of the last build can be examined:
 
- * https://build.berkeleybop.org/job/simple-build-obo-all/lastBuild/consoleFull
+- https://build.berkeleybop.org/job/simple-build-obo-all/lastBuild/consoleFull
 
 (Look for the text "should not fail")
 
 ## Warning
 
-A  http://ontologies.berkeleybop.org/ URL should never be handed out directly. This service exists so that:
+A http://ontologies.berkeleybop.org/ URL should never be handed out directly. This service exists so that:
 
- * Un PURL-registered ontologies will have a fall-through
- * Registered PURL ontologies that do not want to take charge of either OBO or OWL generation will have a place to 302-redirect to
+- Un PURL-registered ontologies will have a fall-through
+- Registered PURL ontologies that do not want to take charge of either OBO or OWL generation will have a place to 302-redirect to
 
 ## What are some of the methods?
 
 The build object takes a number of different methods:
 
- * obo2owl: creates a release folder using an obo file as source
- * owl2obo: creates a release folder using an owl file as source
- * archive: copies a release folder (e.g. from an existing CI job) to the bbop ontology repository
- * vcs: does a git or svn checkout and copies the resulting folder
+- obo2owl: creates a release folder using an obo file as source
+- owl2obo: creates a release folder using an owl file as source
+- archive: copies a release folder (e.g. from an existing CI job) to the bbop ontology repository
+- vcs: does a git or svn checkout and copies the resulting folder
 
-For more details, ask a question on the tracker or see the script: 
+For more details, ask a question on the tracker or see the script:
 
- * https://github.com/owlcollab/owltools/blob/master/OWLTools-Oort/bin/build-obo-ontologies.pl
+- https://github.com/owlcollab/owltools/blob/master/OWLTools-Oort/bin/build-obo-ontologies.pl
 
 ## Assumptions
 

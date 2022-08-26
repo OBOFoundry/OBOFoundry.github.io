@@ -6,7 +6,8 @@ title: OBO Foundry Technical Working Group
 
 The OBO Foundry Operations Committee Technical WG is involved in maintaining the technical infrastructure for the OBO Foundry. This includes establishment of policies to be implemented in common tools, website maintenance, etc.
 
-# Members #
+# Members
+
 See the [membership page](/docs/Membership.html) for a list of current members.
 
 <h1>Meetings</h1>

@@ -3,8 +3,8 @@ layout: faq
 title: Where is the OBO file for my ontology?
 ---
 
-This registry makes a distinction between an *ontology* and the
-*products* (also known as *editions*) of that ontology.
+This registry makes a distinction between an _ontology_ and the
+_products_ (also known as _editions_) of that ontology.
 
 Products can be the ontology in a different format (e.g. obo vs owl),
 or they can be different variants (for example, subsets or
@@ -18,7 +18,6 @@ OBO Foundry administrative perspective, the "parent" is considered the
 ontology.
 
 The different products are listed as objects under the `product` key, for example:
-
 
 ```
 ---
@@ -47,10 +46,6 @@ Developers can OPTIONALLY produce ontologies in other formats. These are convent
 
 It does not matter to us if you maintain the source for your ontology
 in obo or owl or some hybrid. You have the option of either publishing
-the alternate format yourself (using a tool like ROBOT) *or* you can
+the alternate format yourself (using a tool like ROBOT) _or_ you can
 have the OBO central build pipeline do this for you. For more
 information, see the FAQ entry [What is the Build field?](what-is-the-build-field.md).
-
-
-
-

@@ -10,27 +10,27 @@ homepage: http://obofoundry.org/community/microbial
 # - pbuttigieg
 # - todo
 ontologies:
- - id: envo
-   description: "For annotating microbial habitats"
-   role: ""
- - id: micro
-   description: "traits and phenotypes"
-   role: ""
- - id: mco
-   description: "microbial conditions"
-   role: ""
- - id: ohmi
-   description: "host-microbiome interactions"
-   role: ""
- - id: omp
-   description: "phenotypes"
-   role: ""
- - id: phipo
-   description: "pathogen-host phenotypes"
-   role: ""
- - id: go
-   description: "For annotating microbial function"
-   role: ""
+  - id: envo
+    description: "For annotating microbial habitats"
+    role: ""
+  - id: micro
+    description: "traits and phenotypes"
+    role: ""
+  - id: mco
+    description: "microbial conditions"
+    role: ""
+  - id: ohmi
+    description: "host-microbiome interactions"
+    role: ""
+  - id: omp
+    description: "phenotypes"
+    role: ""
+  - id: phipo
+    description: "pathogen-host phenotypes"
+    role: ""
+  - id: go
+    description: "For annotating microbial function"
+    role: ""
 ---
 
 This OBO community group is for coordinating the efforts of different ontologies for annotating traits and functions of microbes, either in isolation or in the host of host-microbiome interactions, or microbial communities.
@@ -45,4 +45,4 @@ There are a number of ontologies for describing microbial phenotypes, such as [M
 
 For functional annotation of microbial genes, the [GO](https://obofoundry.org/ontology/go) is the recommended OBO ontology.
 
-The [Genome Standards Consortium](http://gensc.org/) (GSC) coordinates the usage of many of these ontologies through minimal information standards such as the [MIxS](http://gensc.org/mixs/) 
+The [Genome Standards Consortium](http://gensc.org/) (GSC) coordinates the usage of many of these ontologies through minimal information standards such as the [MIxS](http://gensc.org/mixs/)

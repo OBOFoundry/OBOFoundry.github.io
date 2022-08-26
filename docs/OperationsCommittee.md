@@ -16,4 +16,5 @@ The members of the Operations Committee are listed [here](Membership.html).
 See a description of our activities in our [mission statement](MissionStatement.html).
 
 ## Interested in joining?
+
 If you are interested in becoming part of the OBO Operations Committee, please see [this page](NewOBOFC.html) to find out about the nomination and onboarding process.
