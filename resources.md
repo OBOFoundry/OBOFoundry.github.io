@@ -2,6 +2,7 @@
 layout: doc
 title: Ontology Tools and Resources
 ---
+
 ## Ontology Browsers
 
 - [OBO Foundry](http://www.obofoundry.org/)
@@ -39,20 +40,20 @@ title: Ontology Tools and Resources
 
 ## Ontology Analysis
 
-- [OBO Dashboard](https://dashboard.obofoundry.org): An assesment of OBO Foundry ontologies' conformance to OBO Foundry principles 
+- [OBO Dashboard](https://dashboard.obofoundry.org): An assesment of OBO Foundry ontologies' conformance to OBO Foundry principles
 - [OBO Community Health Report](https://cthoyt.com/obo-community-health): A self-updating assessment of the quality of metadata, responsiveness of the maintainers, and the overall community engagement for each OBO Foundry ontology.
-- [Ontology Quality Assessment](https://cthoyt.com/oquat): A self-updating assesment of the semantic quality of OBO Foundry ontologies and beyond (using known prefixes, using standard identifiers, etc.) 
+- [Ontology Quality Assessment](https://cthoyt.com/oquat): A self-updating assesment of the semantic quality of OBO Foundry ontologies and beyond (using known prefixes, using standard identifiers, etc.)
 
 ## Relevant Publications/blogs
 
-- [**OBO Foundry in 2021: operationalizing open data principles to evaluate ontologies**](https://academic.oup.com/database/article/doi/10.1093/database/baab069/6410158) **(2021)**. Rebecca Jackson, Nicolas Matentzoglu, James A Overton, Randi Vita, James P Balhoff, Pier Luigi Buttigieg, Seth Carbon, Melanie Courtot, Alexander D Diehl, Damion M Dooley, William D Duncan, Nomi L Harris, Melissa A Haendel, Suzanna E Lewis, Darren A Natale, David Osumi-Sutherland, Alan Ruttenberg, Lynn M Schriml, Barry Smith, Christian J Stoeckert Jr., Nicole A Vasilevsky, Ramona L Walls, Jie Zheng, Christopher J Mungall, Bjoern Peters. *Database*, Volume 2021, baab069, https://doi.org/10.1093/database/baab069
+- [**OBO Foundry in 2021: operationalizing open data principles to evaluate ontologies**](https://academic.oup.com/database/article/doi/10.1093/database/baab069/6410158) **(2021)**. Rebecca Jackson, Nicolas Matentzoglu, James A Overton, Randi Vita, James P Balhoff, Pier Luigi Buttigieg, Seth Carbon, Melanie Courtot, Alexander D Diehl, Damion M Dooley, William D Duncan, Nomi L Harris, Melissa A Haendel, Suzanna E Lewis, Darren A Natale, David Osumi-Sutherland, Alan Ruttenberg, Lynn M Schriml, Barry Smith, Christian J Stoeckert Jr., Nicole A Vasilevsky, Ramona L Walls, Jie Zheng, Christopher J Mungall, Bjoern Peters. _Database_, Volume 2021, baab069, https://doi.org/10.1093/database/baab069
 - [The OBO Foundry: coordinated evolution of ontologies to support biomedical data integration](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2814061/) (Smith et al., 2007). Nat Biotechnol 2007 Nov;25(11):1251–1255. http://dx.doi.org/10.1038/nbt1346
 - [MIRO: guidelines for minimum information for the reporting of an ontology](https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-017-0172-7) (2018). Nicolas Matentzoglu, James Malone, Chris Mungall and Robert Stevens, Journal of Biomedical Semantics 2018 9:6, https://doi.org/10.1186/s13326-017-0172-7
 - [Monkeying around with OWL](https://douroucouli.wordpress.com/): a technical blog on ontologies and ontology engineering by Chris Mungall.
 - [Feed your head](https://robertdavidstevens.wordpress.com/): a technical blog on ontologies and ontology engineering by Robert Stevens.
 - [Biomedical ontologies, data integration and annotation, British sense of humour](http://drjamesmalone.blogspot.com/): a technical blog on ontologies and ontology engineering by James Malone.
 - [What are Ontologies?](https://www.ontotext.com/knowledgehub/fundamentals/what-are-ontologies/)
-- [Semantic Web for the Working Ontologist](http://workingontologist.org/), Second Edition by Dean Allemang and James Hendler 
+- [Semantic Web for the Working Ontologist](http://workingontologist.org/), Second Edition by Dean Allemang and James Hendler
 - [Linked Data Patterns: A pattern catalogue for modelling, publishing, and consuming Linked Data](http://patterns.dataincubator.org/book/) by Leigh Dodds and Ian Davis
 - [Learning SPARQL](http://www.learningsparql.com/) by Bob DuCharme
 - [Guidelines for writing definitions in ontologies](https://philpapers.org/archive/SEPGFW.pdf) by Selja Seppälä, Alan Ruttenberg and Barry Smith

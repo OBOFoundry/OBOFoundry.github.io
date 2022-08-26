@@ -4,12 +4,12 @@ id: fp-000-summary
 title: Overview
 ---
 
-These principles are intended as normative for OBO Foundry ontologies, and ontologies submitted for review will be evaluated according to them. We consider these to be generally good practice, and recommend they be considered even if there are no plans to submit an ontology for review by the Foundry. Where we use capitalized words such as "MUST", and "SHOULD", they will be interpreted according to [RFC 2119: Key words for use in RFCs to Indicate Requirement Levels](https://www.ietf.org/rfc/rfc2119.html) when the principles are applied during reviews of ontologies for inclusion in the Foundry. 
+These principles are intended as normative for OBO Foundry ontologies, and ontologies submitted for review will be evaluated according to them. We consider these to be generally good practice, and recommend they be considered even if there are no plans to submit an ontology for review by the Foundry. Where we use capitalized words such as "MUST", and "SHOULD", they will be interpreted according to [RFC 2119: Key words for use in RFCs to Indicate Requirement Levels](https://www.ietf.org/rfc/rfc2119.html) when the principles are applied during reviews of ontologies for inclusion in the Foundry.
 
 There is currently an ongoing process to clarify the wording of the principles and expand on their purpose, implementation, and criteria to be used to evaluate ontologies for compliance with each principle. Please use the [issue tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues) to let us know if there are further clarifications that you would like to see addressed for any of the principles.
 
-Quick Summary
--------------
+## Quick Summary
+
 The following summarizes each principle. See individual pages for details.
 
 P1) <b>Open</b> - The ontology MUST be openly available to be used by all without any constraint other than (a) its origin must be acknowledged and (b) it is not to be altered and subsequently redistributed in altered form under the original name or with the same identifiers.
