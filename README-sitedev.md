@@ -147,8 +147,6 @@ We use bootstrap 3, so far no themes.
 
 ### Code quality
 
-HTML code is kept nice looking with [`prettier`](https://prettier.io):
-
-```shell
-npx prettier --write .
-```
+1. Install the Node Package Manager (NPM) following [these instructions](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+2. Install [`prettier`](https://prettier.io) with NPM using `npm install --save-dev --save-exact prettier`
+3. Run `prettier` from the root of the repository using the [node package executor (NPX)](https://www.npmjs.com/package/npx) with `npx prettier --write .`
