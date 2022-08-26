@@ -145,3 +145,10 @@ current wiki, but other opinions welcome.
 
 We use bootstrap 3, so far no themes.
 
+### Code quality
+
+HTML code is kept nice looking with [`prettier`](https://prettier.io):
+
+```shell
+npx prettier --write _includes/ _layouts/
+```
