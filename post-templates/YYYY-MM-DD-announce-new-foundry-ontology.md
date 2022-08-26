@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "$OntologyName is the newest member of the OBO Foundry"
-date:   YYYY-MM-DD
+title: "$OntologyName is the newest member of the OBO Foundry"
+date: YYYY-MM-DD
 categories: update
 summary: "The OBO Foundry Operations Committee is pleased to announce the inclusion of the $OntologyName ($IDSPACE) as a full member of the the OBO Foundry."
 image: "OPTIONAL-IMAGE-URL"
 tags:
- - announce
- - foundry
+  - announce
+  - foundry
 ---
 
 $IDSPACE was reviewed by the OBO Foundry Editorial Working Group and found to perform well when measured against accepted OBO Foundry Principles. Consequently, the Editorial WG recommended that $ID be given full member status as OBO Foundry Ontologies. This decision was ratified by the OBO Foundry Operations Committee.
