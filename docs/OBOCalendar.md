@@ -1,14 +1,8 @@
 ---
 layout: doc
 id: OBOCalendar
-title: OBOCalendar
+title: OBO Calendar
 ---
-
-# Introduction
-
-Information about the OBO Foundry shared calendar
-
-# Details
 
 The calendar is publicly available to view at http://www.google.com/calendar/embed?src=cW8yM2Q3NDliajh0ZGwwb2VlNnRhdnBoc3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ. Please see below for how to add it to your own calendar.
 

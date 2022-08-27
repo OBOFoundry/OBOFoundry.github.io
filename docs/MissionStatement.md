@@ -1,10 +1,8 @@
 ---
 layout: doc
 id: MissionStatement
-title: MissionStatement
+title: Mission Statement
 ---
-
-# Mission statement of the OBO Foundry Operations Committee
 
 The OBO Foundry Operations Committee aims to facilitate the flow of operations within the OBO Foundry, in collaboration with the OBO Foundry Coordinating Editors and external invited experts. Such operations include, but are not limited to, establishment of policies, review of resources, outreach and education.
 
