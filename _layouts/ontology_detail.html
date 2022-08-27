@@ -50,7 +50,8 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
 
 <div class="row">
     <div class="col-md-8" style="padding-left: 0">
-        {% if content | strip %}
+        {% assign stripped_content_size = content | strip | size %}
+        {% if stripped_content_size > 0 %}
         <div class="panel panel-default">
             <div class="panel-body">
                 {{ content }}
