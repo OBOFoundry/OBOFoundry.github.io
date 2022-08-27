@@ -36,5 +36,3 @@ tags:
 tracker: https://github.com/Planteome/plant-stress-ontology/issues
 activity_status: active
 ---
-
-Enter a detailed description of your ontology here
