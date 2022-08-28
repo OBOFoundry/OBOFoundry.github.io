@@ -46,6 +46,4 @@ tracker: https://github.com/microbial-conditions-ontology/microbial-conditions-o
 activity_status: active
 ---
 
-Enter a detailed description of your ontology here
-
 Microbial Conditions Ontology contains terms to describe growth conditions in microbiological experiments. The first version is based on gene regulation experiments in Escherichia coli K-12. It is being used in RegulonDB to link growth conditions to gene regulation data.
