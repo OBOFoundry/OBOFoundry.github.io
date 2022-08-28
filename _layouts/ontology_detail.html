@@ -50,46 +50,9 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
 
 <div class="row">
   <div class="col-md-8" style="padding-left: 0">
-    {% assign stripped_content_size = content | strip | size %} {% if
-    stripped_content_size > 0 %}
-    <div class="panel panel-default">
-      <div class="panel-body">{{ content }}</div>
-    </div>
-    {% endif %}
+    {% assign stripped_content_size = content | strip | size %}
 
     <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Badges and Buttons</h3>
-      </div>
-      {% if page.repository and page.repository contains "https://github.com/"
-      %}
-      <div class="panel-body">
-        <a href="{{ page.repository }}">
-          <img
-            alt="GitHub Repo stars"
-            src="https://img.shields.io/github/stars/{{ page.repository | remove: 'https://github.com/' }}"
-          />
-          <img
-            alt="GitHub contributors"
-            src="https://img.shields.io/github/contributors/{{ page.repository | remove: 'https://github.com/' }}"
-          />
-          <img
-            alt="GitHub last commit"
-            src="https://img.shields.io/github/last-commit/{{ page.repository | remove: 'https://github.com/' }}"
-          />
-          <!--<img alt="GitHub issues" src="https://img.shields.io/github/issues/{{ page.repository | remove: 'https://github.com/' }}" />-->
-        </a>
-      </div>
-      {% endif %} {% if page.twitter %}
-      <div class="panel-body">
-        <a href="https://twitter.com/{{ page.twitter }}">
-          <img
-            alt="Twitter Follow"
-            src="https://img.shields.io/twitter/follow/{{ page.twitter }}?style=social"
-          />
-        </a>
-      </div>
-      {% endif %}
       <div class="panel-body">
         <!-- TODO: each ontology should configure which browsers to be exposed in -->
         <a href="https://ontobee.org/browser/index.php?o={{page.id}}">
@@ -116,6 +79,9 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
           <button type="button" class="btn btn-default">Bioregistry</button>
         </a>
       </div>
+      {% if stripped_content_size > 0 %}
+      <div class="panel-body">{{ content }}</div>
+      {% endif %}
     </div>
 
     <div class="panel panel-default">
@@ -305,8 +271,50 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         <a href="{{p.id}}">{{p.type}}</a>
         {% endif %}
       </dd>
-      {% endfor %} {% endif %} {% if page.review.date and page.review.document
-      %}
+      {% endfor %} {% endif %} {% if page.twitter %}
+      <dt>Twitter</dt>
+      <dd>
+        <a
+          href="https://twitter.com/{{ page.twitter }}"
+          style="padding: 0.5em 0"
+        >
+          <img
+            alt="Twitter Follow"
+            src="https://img.shields.io/twitter/follow/{{ page.twitter }}?style=social"
+          />
+        </a>
+      </dd>
+      {% endif %} {% if page.repository and page.repository contains
+      "https://github.com/" %}
+      <dt>Stars</dt>
+      <dd>
+        <a href="{{ page.repository }}">
+          <img
+            alt="GitHub Repo stars"
+            src="https://img.shields.io/github/stars/{{ page.repository | remove: 'https://github.com/' }}"
+          />
+        </a>
+      </dd>
+      <dt>Contributors</dt>
+      <dd>
+        <a href="{{ page.repository }}">
+          <img
+            alt="GitHub contributors"
+            src="https://img.shields.io/github/contributors/{{ page.repository | remove: 'https://github.com/' }}"
+          />
+        </a>
+      </dd>
+      <dt>Last Commit</dt>
+      <dd>
+        <a href="{{ page.repository }}">
+          <img
+            alt="GitHub last commit"
+            src="https://img.shields.io/github/last-commit/{{ page.repository | remove: 'https://github.com/' }}"
+          />
+        </a>
+        <!--<img alt="GitHub issues" src="https://img.shields.io/github/issues/{{ page.repository | remove: 'https://github.com/' }}" />-->
+      </dd>
+      {% endif %} {% if page.review.date and page.review.document %}
       <dt>OBO Review</dt>
       <dd>
         {{page.review.date}}

@@ -52,6 +52,7 @@ taxon:
   id: NCBITaxon:33208
   label: Metazoa
 tracker: https://github.com/monarch-initiative/mondo/issues
+twitter: MonarchInit
 usages:
 - description: Mondo is used by the Monarch Initiative for disease annotations.
   examples:
