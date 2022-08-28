@@ -1,7 +1,7 @@
 ---
 layout: doc
 id: TableOfContents
-title: TableOfContents
+title: Table of Contents
 ---
 
 Operations Committee

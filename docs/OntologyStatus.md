@@ -4,8 +4,6 @@ id: Ontologystatus
 title: Ontology status
 ---
 
-# Ontology status
-
 Info: this page is non-normative; definitions may change.
 
 An ontology can be active, inactive, orphaned or obsolete
