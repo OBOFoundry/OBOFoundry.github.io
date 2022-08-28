@@ -12,7 +12,7 @@ layout: default
 </div>
 
 {% if page.is_obsolete %}
-<div>
+<div class="row">
   <div class="alert alert-danger" role="alert">
     This ontology is deprecated!
   </div>
@@ -24,7 +24,7 @@ layout: default
 </div>
 {% endif %} {% if page.activity_status == "inactive" %}{% unless
 page.is_obsolete %}
-<div>
+<div class="row">
   <div class="alert alert-warning" role="alert">
     This ontology is inactive. For more information see
     <a href="/docs/OntologyStatus.html">here</a>.
@@ -32,7 +32,7 @@ page.is_obsolete %}
 </div>
 {% endunless %}{% endif %} {% if page.activity_status == "orphaned" %}{% unless
 page.is_obsolete %}
-<div>
+<div class="row">
   <div class="alert alert-warning" role="alert">
     This ontology is orphaned. For more information see
     <a href="/docs/OntologyStatus.html">here</a>.
@@ -40,7 +40,7 @@ page.is_obsolete %}
 </div>
 {% endunless %}{% endif %} {% if page.preferredPrefix %} {% assign upperPrefix =
 page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
-<div>
+<div class="row">
   <div class="alert alert-info" role="alert">
     This ontology uses a mixed-case prefix. Identifiers and URIs should use: "{{
     page.preferredPrefix }}".
