@@ -65,5 +65,3 @@ usages:
   user: http://flybase.org
 activity_status: active
 ---
-
-An ontology representing the gross anatomy of Drosophila melanogaster.
