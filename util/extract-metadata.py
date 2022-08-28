@@ -204,6 +204,14 @@ def concat_ont_yaml(args):
                     logo = "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png"
                 elif lurl.find("creativecommons.org/publicdomain/zero/") > 0:
                     logo = "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png"
+                elif lurl.find("hpo.jax.org/app/license"):
+                    logo = "https://hpo.jax.org/app/license"
+                elif lurl.find("apache.org/licenses/LICENSE-2.0"):
+                    logo = "https://opensource.org/licenses/Apache-2.0"
+                elif lurl.find("opensource.org/licenses/Artistic-2.0"):
+                    logo = "https://opensource.org/licenses/Artistic-2.0"
+                elif lurl.find("gnu.org/licenses/gpl-3.0.en.html"):
+                    logo = "https://www.gnu.org/licenses/gpl-3.0"
                 if logo:
                     license["logo"] = logo
             if has_a_product(obj):
