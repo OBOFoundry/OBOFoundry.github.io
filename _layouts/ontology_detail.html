@@ -84,6 +84,21 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
       {% endif %}
     </div>
 
+    {% if page.publications %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Publications</h3>
+      </div>
+      <div class="list-group">
+        {% for p in page.publications %}
+        <div class="list-group-item">
+          <a href="{{p.id}}">{{p.title}}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">Products</h3>
@@ -237,13 +252,7 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
           >{{page.exampleClass}}</a
         >
       </dd>
-      {% endif %} {% if page.publications %}
-      <dt>Cite</dt>
-      {% for p in page.publications %}
-      <dd>
-        <small><a href="{{p.id}}">{{p.title}}</a></small>
-      </dd>
-      {% endfor %} {% endif %} {% if page.funded_by %}
+      {% endif %} {% if page.funded_by %}
       <dt>Funding</dt>
       {% for x in page.funded_by %}
       <dd>{{x}}</dd>

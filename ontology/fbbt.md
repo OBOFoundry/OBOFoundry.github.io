@@ -67,6 +67,3 @@ activity_status: active
 ---
 
 An ontology representing the gross anatomy of Drosophila melanogaster.
-
-FBbt can be cited as:
-_Costa M., Reeve S., Grumbling G., Osumi-Sutherland D._ (2013) The Drosophila anatomy ontology. [Journal of Biomedical Semantics __4__(32).](https://doi.org/10.1186/2041-1480-4-32)
