@@ -18,7 +18,7 @@ products:
 - id: cio.owl
 - id: cio.obo
 publications:
-- id: http://www.ncbi.nlm.nih.gov/pubmed/25957950
+- id: https://www.ncbi.nlm.nih.gov/pubmed/25957950
   title: 'The Confidence Information Ontology: a step towards a standard for asserting confidence in annotations'
 repository: https://github.com/BgeeDB/confidence-information-ontology
 tracker: https://github.com/BgeeDB/confidence-information-ontology
