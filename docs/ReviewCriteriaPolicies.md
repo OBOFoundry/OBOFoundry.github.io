@@ -1,10 +1,8 @@
 ---
 layout: doc
 id: ReviewCriteriaPolicies
-title: ReviewCriteriaPolicies
+title: Review Criteria Policies
 ---
-
-# Ontology Review Criteria
 
 This page deals with policies and guidelines for the criteria by which an ontology should be reviewed. [ReviewProcessGuidelines](/docs/ReviewProcessGuidelines.html) covers guidelines and policies for the operational aspects of ontology review.
 

@@ -1,4 +1,8 @@
-# Minimum Ontology Registration Request Checklist
+---
+layout: doc
+id: registration-checklist
+title: Minimum Ontology Registration Request Checklist
+---
 
 The _Minimum Ontology Registration Request Checklist_ (MORRC) is intended to provide a first pass to fairly evaluate ontology registration requests to the OBO foundry.
 The goal is to formalize what is currently an ad-hoc process, to filter out ontologies that are clearly out of scope for OBO. It is intentionally weaker than full

@@ -1,10 +1,10 @@
 ---
 layout: doc
 id: ReservePrefix
-title: Reserve prefix outside of OBO
+title: Reserve a prefix outside of OBO
 ---
 
-# My ontology is not ready for OBO Foundry, can I reserve a prefix anyway?
+# My ontology is not ready for OBO Foundry, can I reserve a prefix anyway?
 
 If your ontology is not eligible for inclusion in the OBO Foundry you can not directly reserve a prefix (Ontology ID) in the OBO Foundry.
 However, if you want to make sure that no one uses your prefix, you can [register your prefix at the Bioregistry](https://github.com/biopragmatics/bioregistry/issues/new/choose).

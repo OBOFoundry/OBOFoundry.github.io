@@ -4,10 +4,6 @@ id: SOP
 title: Standard Operating Procedures
 ---
 
-# Standard Operating Procedures
-
-**Description**:
-
 This document contains standard operating procedures (SOPs) for the OBO Foundry Operations Committee, and is intended for internal use only.
 
 ## SOPs

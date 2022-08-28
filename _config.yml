@@ -8,6 +8,8 @@ repo: https://github.com/OBOFoundry/OBOFoundry.github.io/
 repo_src: https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/
 author:
   name: OBO Technical WG
+plugins:
+  - jekyll-sitemap
 ## --Anything above this line can be edited in _config_header.yml --
 ## --Everything below this line automatically generated in _config.yml --
 ontologies:
@@ -3804,6 +3806,7 @@ ontologies:
     label: Metazoa
   title: Mondo Disease Ontology
   tracker: https://github.com/monarch-initiative/mondo/issues
+  twitter: MonarchInit
   usages:
   - description: Mondo is used by the Monarch Initiative for disease annotations.
     examples:

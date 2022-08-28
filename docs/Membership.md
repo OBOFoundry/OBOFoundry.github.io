@@ -4,11 +4,7 @@ id: Membership
 title: Membership
 ---
 
-# Introduction
-
 The OBO Foundry Operations Committee discusses, oversees, and ensures the completion of the fundamental day-to-day activities of the Foundry. The Committee is composed of three working groups. Anyone who is active in a working group (active being based on both attendance at WG meetings and actual work done for working groups) is considered a member of the Operations Committee.
-
-# Working Groups
 
 There are currently three working groups:
 
@@ -18,7 +14,7 @@ There are currently three working groups:
 
 More information [here](/docs/OperationsCommittee.html)
 
-# Members
+## Members
 
 Membership in working groups: T=technical working group, O=outreach working group, E=editorial working group
 
@@ -55,7 +51,7 @@ Current members of the OBO Foundry Operations Committee are (in alphabetical ord
 
 New members: follow the instructions on the [onboarding doc](https://docs.google.com/document/d/1MKhNTjZjGx6Ls72dybIV2ajYtbqtwP7O4lwxN2v3RBA/edit#heading=h.10q6n5qc13dp)
 
-Alumni:
+## Alumni
 
 - Michael Ashburner
 - Colin Batchelor

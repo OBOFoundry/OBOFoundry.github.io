@@ -1,7 +1,7 @@
 ---
 layout: doc
 id: ReviewProcessGuidelines
-title: ReviewProcessGuidelines
+title: Review Process Guidelines
 ---
 
 This page deals with policies and guidelines for the process of ontology review, particularly operational aspects such as:

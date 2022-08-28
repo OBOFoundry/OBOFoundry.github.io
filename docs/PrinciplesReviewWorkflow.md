@@ -1,7 +1,7 @@
 ---
 layout: doc
 id: PrincipleReviewProcess
-title: PrincipleReviewProcess
+title: Principle Review Process
 ---
 
 This page describes the process for reviewing, updating, and creating [OBO Foundry Principles](http://obofoundry.github.io/principles/fp-000-summary.html).
