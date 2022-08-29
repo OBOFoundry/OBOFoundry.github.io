@@ -65,4 +65,6 @@ For **advice on requesting new terms**, please see **[the Evidence & Conclusion 
 
 For **further information** visit the **[Evidence & Conclusion Ontology website](http://www.evidenceontology.org/)**.
 
+Please **cite** the following paper: [Giglio M, Tauber R, Nadendla S, Munro J, Olley D, Ball S, Mitraka E, Schriml LM, Gaudet P, Hobbs ET, Erill I, Siegele DA, Hu JC, Mungall C, Chibucos MC. **ECO, the Evidence & Conclusion Ontology: community standard for evidence information**. Nucleic Acids Res. 2019 Jan 8;47(D1):D1186-D1194.](https://www.ncbi.nlm.nih.gov/pubmed/30407590)
+
 This work is made possible by **[award number 1458400](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400)** from the **US National Science Foundation's Division of Biological Infrastructure**.
