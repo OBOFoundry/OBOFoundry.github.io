@@ -256,12 +256,6 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
       <dt>Funding</dt>
       {% for x in page.funded_by %}
       <dd>{{x}}</dd>
-      {% endfor %} {% endif %} {% if page.used_by %}
-      <dt>Used by</dt>
-      {% for x in page.used_by %}
-      <dd>
-        <a href="{{x.url}}">{{x.label}}</a>
-      </dd>
       {% endfor %} {% endif %} {% if page.dependencies %}
       <dt>Dependencies</dt>
       {% for x in page.dependencies %}
