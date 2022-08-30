@@ -76,7 +76,7 @@ class SortableTable {
             ch.classList.contains('num')
           );
           // Point chevron in appropriate direction
-          chevron.setAttribute('class', 'glyphicon glyphicon-chevron-down')
+          chevron.setAttribute('class', 'glyphicon glyphicon-chevron-up')
         } else {
           //change sort order parameter
           ch.setAttribute('aria-sort', 'descending');
@@ -87,7 +87,7 @@ class SortableTable {
             ch.classList.contains('num')
           );
           // Point chevron in appropriate direction
-          chevron.setAttribute('class', 'glyphicon glyphicon-chevron-up')
+          chevron.setAttribute('class', 'glyphicon glyphicon-chevron-down')
         }
       } else {
         if (ch.hasAttribute('aria-sort') && buttonNode) {

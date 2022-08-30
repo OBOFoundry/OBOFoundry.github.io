@@ -82,13 +82,13 @@ jQuery(document).ready(function() {
                             <th scope="col" class="ob-center">
                                 <span>ID</span>
                                 <button type="button" class="btn btn-outline-default btn-xs" title="Sort by ID" data-sort="id" >
-                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
+                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-up"></span>
                                 </button>
                             </th>
                             <th scope="col" class="ob-center">
                                 <span>Title</span>
                                 <button type="button" class="btn btn-outline-default btn-xs" title="Sort by title" data-sort="title" >
-                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
+                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-up"></span>
                                 </button>
                             </th>
                             <th scope="col" class="ob-center">
@@ -100,7 +100,7 @@ jQuery(document).ready(function() {
                             <th scope="col" class="ob-center">
                                 <span>Re-Use</span>
                                 <button type="button" class="btn btn-outline-default btn-xs" title="Sort by License" data-sort="license" >
-                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
+                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-up"></span>
                                 </button>
                             </th>
                             <th scope="col" class="ob-center">
@@ -250,7 +250,7 @@ jQuery(document).ready(function() {
                     </td>
                     <td>
                         ${license_box}
-                    </td>  
+                    </td>
                     <td>
                         ${github_box}
                     </td>
