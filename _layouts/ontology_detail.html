@@ -93,6 +93,9 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         {% for p in page.publications %}
         <div class="list-group-item">
           <a href="{{p.id}}">{{p.title}}</a>
+          {% if p.preferred %}
+          <span class="badge">Preferred</span>
+          {% endif %}
         </div>
         {% endfor %}
       </div>
