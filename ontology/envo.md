@@ -51,6 +51,7 @@ products:
   homepage: http://environmentontology.org/downloads
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/24330602
+  preferred: true
   title: 'The environment ontology: contextualising biological and biomedical entities'
 - id: https://www.ncbi.nlm.nih.gov/pubmed/27664130
   title: 'The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation'
