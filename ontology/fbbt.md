@@ -37,6 +37,7 @@ products:
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/24139062
   title: The Drosophila anatomy ontology
+  preferred: true
 - id: https://www.ncbi.nlm.nih.gov/pubmed/22402613
   title: A strategy for building neuroanatomy ontologies
 - id: https://www.ncbi.nlm.nih.gov/pubmed/22180411

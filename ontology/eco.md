@@ -31,6 +31,7 @@ products:
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
   title: 'ECO, the Evidence & Conclusion Ontology: community standard for evidence information.'
+  preferred: true
 - id: https://www.ncbi.nlm.nih.gov/pubmed/25052702
   title: Standardized description of scientific evidence using the Evidence Ontology (ECO)
 repository: https://github.com/evidenceontology/evidenceontology
