@@ -226,7 +226,14 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         <a href="mailto:{{page.contact.email}}">{{page.contact.label}}</a>
       </dd>
 
-      <dt>Trackers</dt>
+      {% if page.repository and page.repository != page.homepage %}
+      <dt>Repository</dt>
+      <dd>
+        <a href="{{page.repository}}">{{page.repository}}</a>
+      </dd>
+      {% endif %}
+
+      <dt>Tracker</dt>
       <dd>
         <a href="{{page.tracker}}">{{page.tracker}}</a>
       </dd>
