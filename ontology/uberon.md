@@ -43,10 +43,13 @@ depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/mas
 description: An integrated cross-species anatomy ontology covering animals and bridging multiple species-specific ontologies
 domain: anatomy and development
 funded_by:
-- NIH R24OD011883
-- NIH R01HG004838
-- NIH P41HG002273
-- NSF DEB-0956049
+- name: NIH R24OD011883
+  url: https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=R24OD011883&arg_ProgOfficeCode=205
+- name: NIH R01HG004838
+- name: NIH P41HG002273
+  url: https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=P41HG002273&arg_ProgOfficeCode=55
+- name: NSF DEB-0956049
+  url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=0956049
 homepage: http://uberon.org
 label: Uberon
 license:

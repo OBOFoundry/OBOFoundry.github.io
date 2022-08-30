@@ -16,7 +16,8 @@ depicted_by: https://avatars1.githubusercontent.com/u/12802432
 description: An ontology for experimental and other evidence statements.
 domain: investigations
 funded_by:
-- http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400
+- name: NSF-ABI-1458400
+  url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400
 homepage: https://github.com/evidenceontology/evidenceontology/
 jobs:
 - id: https://travis-ci.org/evidenceontology/evidenceontology
