@@ -20,13 +20,12 @@ preferredPrefix: OMP
 products:
 - id: omp.owl
 - id: omp.obo
+publications:
+- id: https://doi.org/10.1186/s12866-014-0294-3
+  title: An ontology for microbial phenotypes
 repository: https://github.com/microbialphenotypes/OMP-ontology
 tracker: https://github.com/microbialphenotypes/OMP-ontology/issues
 activity_status: active
 ---
 
 OMP is a community ontology for annotating microbial phenotypes.
-
-OMP can be cited as:
-Chibucos M.C., Zweifel A.E., Herrera J.C., Meza W., Eslamfam S., Uetz P., Siegele D.A., Hu J.C., and Giglio M.G. (2014) An ontology for microbial phenotypes. BMC Microbiol. 14:294. 
-PMID:25433798, doi: [10.1186/s12866-014-0294-3](https://doi.org/10.1186/s12866-014-0294-3).
