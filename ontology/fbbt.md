@@ -37,6 +37,7 @@ products:
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/24139062
   title: The Drosophila anatomy ontology
+  preferred: true
 - id: https://www.ncbi.nlm.nih.gov/pubmed/22402613
   title: A strategy for building neuroanatomy ontologies
 - id: https://www.ncbi.nlm.nih.gov/pubmed/22180411
@@ -65,8 +66,3 @@ usages:
   user: http://flybase.org
 activity_status: active
 ---
-
-An ontology representing the gross anatomy of Drosophila melanogaster.
-
-FBbt can be cited as:
-_Costa M., Reeve S., Grumbling G., Osumi-Sutherland D._ (2013) The Drosophila anatomy ontology. [Journal of Biomedical Semantics __4__(32).](https://doi.org/10.1186/2041-1480-4-32)
