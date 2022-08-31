@@ -6,7 +6,7 @@ title: Standard Operating Procedures
 
 This document contains standard operating procedures (SOPs) for the OBO Foundry Operations Committee, and is intended for internal use only.
 
-# SOPs
+## SOPs
 
 - [New Ontology Requests](#NOR)
 - [Changing ontology metadata in the registry](#META)
@@ -14,7 +14,7 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 
 <a name="NOR"></a>
 
-## New Ontology Requests (NOR)
+### New Ontology Requests (NOR)
 
 1. When receiving a new ontology request (NOR), the OBO dashboard administrator should thank the submitter for their submission.
 1. The OBO dashboard administrator adds the new submission to the NOR dashboard, which is deployed at https://obofoundry.github.io/obo-nor.github.io/
@@ -25,7 +25,7 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 
 <a name="META"></a>
 
-## Changing ontology metadata in the registry
+### Changing ontology metadata in the registry
 
 In general, the metadata record of an ontology in the OBO Foundry metadata registry ([example](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/go.md)) is managed and curated by the ontology team that is responsible for the respective ontology. However, as an open data organisation, the OBO Foundry does accept proposals by any member of the community to change this metadata. Such change proposal can include fixing typos, adding a tag, adding a publication where it was missed. The following SOP exists to ensure that these changes are not performed without the knowledge of the responsible ontology team.
 
@@ -43,9 +43,10 @@ For a discussion on this SOP, see [here](https://github.com/OBOFoundry/OBOFoundr
 
 <a name="OPS_CHAIR"></a>
 
-## Chairing an OBO Operations Committee meeting call
+### Chairing an OBO Operations Committee meeting call
 
-### Before the call (a day or two in advance):
+#### Before the call (a day or two in advance):
+
 1. Prepare a stub in the OBO Operations Committee (OFOC) [rolling agenda](https://docs.google.com/document/d/1aka4i6R89i04IYPS7CyzItQPOyb3IgtW4m75G475qcc/edit) with the following <b>Repeating Agenda Items</b>:
 
      1. Check for [pending members for obo-discuss](https://groups.google.com/g/obo-discuss/pending-members) 
@@ -67,7 +68,8 @@ Please review
 
 Please also add agenda items to https://docs.google.com/document/d/1aka4i6R89i04IYPS7CyzItQPOyb3IgtW4m75G475qcc/edit."
 
-### During the call:
+#### During the call:
+
 1. Wait until approximately 8-10 people have joined. Begin no more than 4-5 minutes after the hour regardless of how many people are present.
 2. Share your screen to show the agenda, greet the attendees, and drive the agenda. (You don't have to show your face, but some people choose to do so. It is up to you).
 3. It is important to keep the discussion on track: 
@@ -76,7 +78,9 @@ Please also add agenda items to https://docs.google.com/document/d/1aka4i6R89i04
 4. Add notes to the agenda capturing important discussion points, summaries, decisions made, action items (with assignees), and next steps. These can be brief but it is important to capture what has been discussed and/or decided so that the group doesn’t forget. Don’t worry if it takes a little time. Make note of any new issues (or comments on existing issues) that are needed; these will be done after the call.
 5. End the call on time. Don’t start new topics too close to the end or let discussions drag on after the hour.
 6. Thank everyone for taking the time to attend!
-### After the call:
+
+#### After the call:
+
 1. Make a pass through the minutes for the purposes of streamlining, formatting, and providing clarity.
 2. Make sure that all new issues are logged on GitHub. Add comments to all GitHub issues that were discussed, as appropriate.
 
