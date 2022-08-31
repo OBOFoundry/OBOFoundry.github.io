@@ -53,21 +53,19 @@ For a discussion on this SOP, see [here](https://github.com/OBOFoundry/OBOFoundr
      3. Review [new ontology requests](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/new%20ontology)
      4. Report from Editorial Working Group (EWG) (Darren)
      5. Report from Technical Working Group (TWG) (Nico)
-     6. Review additional [open issues](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/attn%3A%20OFOC%20call) and [pull requests](https://github.com/OBOFoundry/OBOFoundry.github.io/pulls?q=is%3Apr+is%3Aopen+label%3A%22attn%3A+OFOC+call%22) that are labeled “attn: OFOC call”
+     6. Review additional [open issues](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/attn%3A%20OFOC%20call) and [pull requests](https://github.com/OBOFoundry/OBOFoundry.github.io/pulls?q=is%3Apr+is%3Aopen+label%3A%22attn%3A+OFOC+call%22) that are labeled "attn: OFOC call"
 
-2. Check the issues labeled [“attn:OFOC call”](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/attn%3A%20OFOC%20call) found at the OBO foundry github repository. Pick one or two open issues you deem important and put them towards the end of the stub agenda, after the Working Group reports and before the review of additional open issues.
+2. Check the issues labeled ["attn:OFOC call"](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/attn%3A%20OFOC%20call) found at the OBO foundry github repository. Pick one or two open issues you deem important and put them towards the end of the stub agenda, after the Working Group reports and before the review of additional open issues.
 3. Send an email to obo-operations-committee @ googlegroups.com (not obo-discuss!) with the subject "OBO Operations Committee meeting" and the following text given between quotes:<br>
 
-"I am chairing this week’s OFOC meeting.<br>
+"I am chairing this week’s OFOC meeting. The Zoom link is given in the agenda document (see below).<br>
 
 Please review
 [new ontology requests](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/new%20ontology),
 [open pull requests](https://github.com/OBOFoundry/OBOFoundry.github.io/pulls), and
 [recent tracker items](https://github.com/OBOFoundry/OBOFoundry.github.io/issues?q=is%3Aopen).<br>
 
-Please also add agenda items to https://docs.google.com/document/d/1aka4i6R89i04IYPS7CyzItQPOyb3IgtW4m75G475qcc/edit.<br>
-
-Zoom link: https://lbnl.zoom.us/j/95769353231?pwd=Y3ZtVTVVZnZEQW1GSkxZK0NwdVIydz09"
+Please also add agenda items to https://docs.google.com/document/d/1aka4i6R89i04IYPS7CyzItQPOyb3IgtW4m75G475qcc/edit."
 
 ### During the call:
 1. Wait until approximately 8-10 people have joined. Begin no more than 4-5 minutes after the hour regardless of how many people are present.
