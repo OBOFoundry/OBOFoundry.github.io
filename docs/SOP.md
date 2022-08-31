@@ -58,15 +58,16 @@ For a discussion on this SOP, see [here](https://github.com/OBOFoundry/OBOFoundr
 
 2. Check the issues labeled ["attn:OFOC call"](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/attn%3A%20OFOC%20call) found at the OBO foundry github repository. Pick one or two open issues you deem important and put them towards the end of the stub agenda, after the Working Group reports and before the review of additional open issues.
 3. Send an email to obo-operations-committee @ googlegroups.com (not obo-discuss!) with the subject "OBO Operations Committee meeting" and the following text given between quotes:<br>
+   <hr>
+   "I am chairing this week’s OFOC meeting. The Zoom link is given in the agenda document (see below).<br>
 
-"I am chairing this week’s OFOC meeting. The Zoom link is given in the agenda document (see below).<br>
+   Please review
+      - [new ontology requests](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/new%20ontology),
+      - [open pull requests](https://github.com/OBOFoundry/OBOFoundry.github.io/pulls), and
+      - [recent tracker items](https://github.com/OBOFoundry/OBOFoundry.github.io/issues?q=is%3Aopen).
 
-Please review
-[new ontology requests](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/new%20ontology),
-[open pull requests](https://github.com/OBOFoundry/OBOFoundry.github.io/pulls), and
-[recent tracker items](https://github.com/OBOFoundry/OBOFoundry.github.io/issues?q=is%3Aopen).<br>
-
-Please also add agenda items to https://docs.google.com/document/d/1aka4i6R89i04IYPS7CyzItQPOyb3IgtW4m75G475qcc/edit."
+   Please also add agenda items to `<URLOFAGENDA>`."
+   <hr>
 
 #### During the call:
 
