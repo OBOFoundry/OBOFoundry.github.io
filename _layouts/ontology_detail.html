@@ -277,7 +277,13 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
           >{{page.exampleClass}}</a
         >
       </dd>
-      {% endif %} {% if page.jobs %}
+      {% endif %} {% if page.dependencies %}
+      <dt>Dependencies</dt>
+      {% for x in page.dependencies %}
+      <dd>
+        <a href="{{x.id}}">{{x.id}}</a>
+      </dd>
+      {% endfor %} {% endif %} {% if page.jobs %}
       <dt>Jobs</dt>
       {% for p in page.jobs %}
       <dd>
