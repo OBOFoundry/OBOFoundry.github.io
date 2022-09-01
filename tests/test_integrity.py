@@ -84,6 +84,15 @@ class TestIntegrity(unittest.TestCase):
     def test_publications(self):
         """Test publications information."""
         for ontology, data in sorted(self.ontologies.items()):
+            self.assertIn(
+                sum(
+                    publication.get("preferred", False)
+                    for publication in data.get("publications", [])
+                ),
+                {0, 1},
+                msg=f"Only one publication can be marked as preferred for {ontology}.",
+            )
+
             for i, publication in enumerate(data.get("publications", [])):
                 identifier = publication["id"]
                 if ontology == "agro" and identifier.startswith("http://ceur-ws.org/"):
