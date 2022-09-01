@@ -17,7 +17,7 @@ description: An ontology for experimental and other evidence statements.
 domain: investigations
 funded_by:
 - http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400
-homepage: https://github.com/evidenceontology/evidenceontology/
+homepage: https://www.evidenceontology.org
 jobs:
 - id: https://travis-ci.org/evidenceontology/evidenceontology
   type: travis-ci
@@ -31,6 +31,7 @@ products:
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
   title: 'ECO, the Evidence & Conclusion Ontology: community standard for evidence information.'
+  preferred: true
 - id: https://www.ncbi.nlm.nih.gov/pubmed/25052702
   title: Standardized description of scientific evidence using the Evidence Ontology (ECO)
 repository: https://github.com/evidenceontology/evidenceontology
@@ -62,9 +63,5 @@ ECO was originally created around the year 2000 to support gene product annotati
 
 ***
 For **advice on requesting new terms**, please see **[the Evidence & Conclusion Ontology wiki](https://github.com/evidenceontology/evidenceontology/wiki/New-term-request-how-to)**.
-
-For **further information** visit the **[Evidence & Conclusion Ontology website](http://www.evidenceontology.org/)**.
-
-Please **cite** the following paper: [Giglio M, Tauber R, Nadendla S, Munro J, Olley D, Ball S, Mitraka E, Schriml LM, Gaudet P, Hobbs ET, Erill I, Siegele DA, Hu JC, Mungall C, Chibucos MC. **ECO, the Evidence & Conclusion Ontology: community standard for evidence information**. Nucleic Acids Res. 2019 Jan 8;47(D1):D1186-D1194.](https://www.ncbi.nlm.nih.gov/pubmed/30407590)
 
 This work is made possible by **[award number 1458400](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400)** from the **US National Science Foundation's Division of Biological Infrastructure**.

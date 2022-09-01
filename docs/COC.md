@@ -4,8 +4,6 @@ id: Conduct
 title: Code of Conduct
 ---
 
-# Code of Conduct
-
 This code of conduct outlines expectations of the Open Biological Ontologies (OBO) community. The OBO community is committed to providing a welcoming and inspiring environment for all community members, and we expect this code of conduct to be honored by each community member. Herein, we provide specifics regarding appropriate code of conduct, including recommendations for conflict resolution. The OBO community strives to:
 
 **Be welcoming and patient**
@@ -32,17 +30,17 @@ Do not insult or put down other community members. Harassment and other exclusio
 
 Disagreements, both social and technical, happen all the time. It is important that we constructively resolve disagreements and differing views. Remember that we are a diverse group. Diversity contributes to the strength of our community, which is composed of people from a wide range of backgrounds. However, diversity also means that different persons will have different perspectives on issues. While you may not always understand why someone holds a particular viewpoint, that does not necessarily mean that a viewpoint is wrong. Instead of blame, anger, hostility, or argumentation, focus on resolving disagreements and learning from mistakes.
 
-# Ethics Statement
+## Ethics Statement
 
 All members of the OBO community will be expected to abide by the highest ethical standards, for example, in accordance with the NIH standards for ethical conduct (https://oir.nih.gov/sourcebook/ethical-conduct). Plagiarism will not be tolerated.
 
-# Diversity Statement
+## Diversity Statement
 
 We encourage every member of the OBO community to participate, and we are committed to building a community for all. Although we may not always be successful, we seek to treat every person as fairly and equally as possible. If a community member makes a mistake, then we expect that person to own responsibility for the error and correct it. If a person has been harmed or offended as a result of another person’s action, and if a community member is witness, then both members own responsibility to listen carefully and respectfully to person who has been harmed and make every effort to not repeat the behaviour, as well as to make every effort to correct the damage.
 
 Although this list cannot be exhaustive, we explicitly honor diversity in age, gender, gender identity or expression, culture, ethnicity, language, national origin, political beliefs, profession, race, religion, sexual orientation, socioeconomic status, and technical ability. We will not tolerate discrimination based on any of the protected characteristics above, including participants with disabilities.
 
-# Conflict Resolution and Reporting Issues
+## Conflict Resolution and Reporting Issues
 
 **Conflict resolution team**
 

@@ -979,6 +979,7 @@ _:b61   <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology to capture confidence information about annotations." ;
         <http://purl.org/dc/elements/1.1/title>  "Confidence Information Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/25957950> ;
         <http://purl.org/dc/terms/1.1/theme>  "information" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/BgeeDB/confidence-information-ontology" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/cio.owl" ;
@@ -986,6 +987,9 @@ _:b61   <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cio.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cio.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/BgeeDB/confidence-information-ontology> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/25957950>
+        <http://purl.org/dc/elements/1.1/title>  "The Confidence Information Ontology: a step towards a standard for asserting confidence in annotations" .
 
 _:b62   <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
         <http://xmlns.com/foaf/0.1/mbox>  "frederic.bastian@unil.ch" .
@@ -1670,7 +1674,7 @@ _:b99   <http://www.w3.org/2000/01/rdf-schema#label>  "Charles Ettensohn" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b101 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/eco.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/eco.obo> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/evidenceontology/evidenceontology/> .
+        <http://xmlns.com/foaf/0.1/homepage>  <https://www.evidenceontology.org> .
 
 _:b100  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
@@ -2692,6 +2696,7 @@ _:b147  <http://www.w3.org/2000/01/rdf-schema#label>  "Matt Yoder" ;
         <http://purl.org/dc/elements/1.1/description>  "This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology." ;
         <http://purl.org/dc/elements/1.1/title>  "Homology Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1016/j.tig.2009.12.012> ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/BgeeDB/homology-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hom.owl" ;
@@ -2701,6 +2706,9 @@ _:b147  <http://www.w3.org/2000/01/rdf-schema#label>  "Matt Yoder" ;
 
 _:b148  <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/BgeeDB/homology-ontology.git" ;
         <http://obofoundry.github.io/vocabulary/method>  "vcs" .
+
+<https://doi.org/10.1016/j.tig.2009.12.012>
+        <http://purl.org/dc/elements/1.1/title>  "An ontology to clarify homology-related concepts" .
 
 _:b149  <http://www.w3.org/2000/01/rdf-schema#label>  "Frederic Bastian" ;
         <http://xmlns.com/foaf/0.1/mbox>  "bgee@sib.swiss" .
@@ -2877,12 +2885,16 @@ _:b158  <http://www.w3.org/2000/01/rdf-schema#label>  "Lindsay Cowell" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of interactions and interaction networks" ;
         <http://purl.org/dc/elements/1.1/title>  "Interaction Network Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1186/2041-1480-6-2> ;
         <http://purl.org/dc/terms/1.1/theme>  "biological systems" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/INO-ontology/ino/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ino.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b159 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ino.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/INO-ontology/ino> .
+
+<https://doi.org/10.1186/2041-1480-6-2>
+        <http://purl.org/dc/elements/1.1/title>  "Development and application of an Interaction Network Ontology for literature mining of vaccine-associated gene-gene interactions" .
 
 _:b159  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
         <http://xmlns.com/foaf/0.1/mbox>  "yongqunh@med.umich.edu" .
@@ -3120,6 +3132,7 @@ _:b110  <http://www.w3.org/2000/01/rdf-schema#label>  "Leigh Carmody" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of phenotypes covering microbes" ;
         <http://purl.org/dc/elements/1.1/title>  "Ontology of Microbial Phenotypes" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1186/s12866-014-0294-3> ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/microbialphenotypes/OMP-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/omp.owl" ;
@@ -3280,6 +3293,7 @@ _:b184  <http://www.w3.org/2000/01/rdf-schema#label>  "Pablo Porras Millán" ;
         <http://purl.org/dc/elements/1.1/description>  "An application ontology to formalize annotation of phylogenetic data." ;
         <http://purl.org/dc/elements/1.1/title>  "MIAPA Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/publicdomain/zero/1.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1089/omi.2006.10.231> ;
         <http://purl.org/dc/terms/1.1/theme>  "information" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/evoinfo/miapa/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "http://groups.google.com/group/miapa-discuss" ;
@@ -3287,6 +3301,9 @@ _:b184  <http://www.w3.org/2000/01/rdf-schema#label>  "Pablo Porras Millán" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b185 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/miapa.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.evoio.org/wiki/MIAPA> .
+
+<https://doi.org/10.1089/omi.2006.10.231>
+        <http://purl.org/dc/elements/1.1/title>  "Taking the First Steps towards a Standard for Reporting on Phylogenies: Minimum Information about a Phylogenetic Analysis (MIAPA)" .
 
 _:b185  <http://www.w3.org/2000/01/rdf-schema#label>  "Hilmar Lapp" ;
         <http://xmlns.com/foaf/0.1/mbox>  "hilmar.lapp@duke.edu" .
@@ -3417,6 +3434,7 @@ _:b191  <http://www.w3.org/2000/01/rdf-schema#label>  "Pierre-Alain Binz" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo.json> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo/mondo-base.owl> ;
+        <http://xmlns.com/foaf/0.1/account>  <http://purl.obolibrary.org/obo/MonarchInit> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://monarch-initiative.github.io/mondo> .
 
 <https://www.medrxiv.org/content/10.1101/2022.04.13.22273750>
@@ -3970,6 +3988,7 @@ _:b214  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
         <http://purl.org/dc/elements/1.1/description>  "OHPI is a community-driven ontology of host-pathogen interactions (OHPI) and represents the virulence factors (VFs) and how the mutants of VFs in the Victors database become less virulence inside a host organism or host cells. It is developed to represent manually curated HPI knowledge available in the PHIDIAS resource." ;
         <http://purl.org/dc/elements/1.1/title>  "Ontology of Host Pathogen Interactions" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/30365026> ;
         <http://purl.org/dc/terms/1.1/theme>  "biological systems" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/OHPI/ohpi/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "http://groups.google.com/group/ohpi-discuss" ;
@@ -3977,6 +3996,9 @@ _:b214  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b215 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ohpi.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/OHPI/ohpi> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/30365026>
+        <http://purl.org/dc/elements/1.1/title>  "Victors: a web-based knowledge base of virulence factors in human and animal pathogens" .
 
 _:b215  <http://www.w3.org/2000/01/rdf-schema#label>  "Edison Ong" ;
         <http://xmlns.com/foaf/0.1/mbox>  "edong@umich.edu" .
@@ -4039,6 +4061,9 @@ _:b218  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
 
 _:b173  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/microbialphenotypes/OMP-ontology-files/master/omp.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://doi.org/10.1186/s12866-014-0294-3>
+        <http://purl.org/dc/elements/1.1/title>  "An ontology for microbial phenotypes" .
 
 _:b174  <http://www.w3.org/2000/01/rdf-schema#label>  "James C. Hu" ;
         <http://xmlns.com/foaf/0.1/mbox>  "jimhu@tamu.edu" .

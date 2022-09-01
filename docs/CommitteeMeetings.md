@@ -1,10 +1,8 @@
 ---
 layout: doc
 id: CommitteeMeetings
-title: CommitteeMeetings
+title: Committee Meetings
 ---
-
-# Introduction
 
 This page lists the various meetings held by the OBO Foundry Operations Committee. Access to minutes of committee meetings is restricted to committee members.
 

@@ -79,31 +79,31 @@ jQuery(document).ready(function() {
                 <table id="ont_table" class="table table-hover sortable">
                     <thead>
                         <tr class="row">
-                            <th scope="col" class="col-sm-1 ob-center">
+                            <th scope="col" class="ob-center">
                                 <span>ID</span>
                                 <button type="button" class="btn btn-outline-default btn-xs" title="Sort by ID" data-sort="id" >
-                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
+                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-up"></span>
                                 </button>
                             </th>
-                            <th scope="col" class="col-sm-1 ob-center">
+                            <th scope="col" class="ob-center">
                                 <span>Title</span>
                                 <button type="button" class="btn btn-outline-default btn-xs" title="Sort by title" data-sort="title" >
-                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
+                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-up"></span>
                                 </button>
                             </th>
-                            <th scope="col" class="col-sm-3 ob-center">
+                            <th scope="col" class="ob-center">
                                 <span>Description</span>
                             </th>
-                            <th scope="col" class="col-sm-4 ob-center">
+                            <th scope="col" class="ob-center">
                                 <span>Quick Access</span>
                             </th>
-                            <th scope="col" class="col-sm-2 ob-center">
+                            <th scope="col" class="ob-center">
                                 <span>Re-Use</span>
                                 <button type="button" class="btn btn-outline-default btn-xs" title="Sort by License" data-sort="license" >
-                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span>
+                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-up"></span>
                                 </button>
                             </th>
-                            <th scope="col" class="col-sm-1 ob-center">
+                            <th scope="col" class="ob-center">
                                 <span>Social</span>
                             </th>
                         </tr>
@@ -220,23 +220,20 @@ jQuery(document).ready(function() {
             // table row template
             let template = `
                 <tr class="row ${is_inactive}">
-                    <th scope="row" class="col-sm-1">
+                    <th scope="row">
                         <a href="ontology/${id}.html">
                             ${id}
                         </a>
                     </td>
-                    <td class="col-sm-1">
+                    <td>
                         ${title}
                     </td>
-                    <td class="col-sm-3">
+                    <td>
                         <span style="background-color: #ff8d82">${is_obsolete}</span>
                         ${description_box}
                     </td>
-                    <td class="col-sm-5">
-                        <div class="btn-group btn-group-sm" role="group">
-                            <a role="button" class="btn btn-default" href="ontology/${id}.html" aria-label="More details for ${title}" title="More details for ${title}">
-                                  <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-                            </a>
+                    <td>
+                        <div class="btn-group btn-group-sm" role="group" style="display: flex;">
                             <a role="button" class="btn btn-default" href="${homepage}" aria-label="Go to the homepage for ${title}" title="Go to the homepage for ${title}">
                                  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                             </a>
@@ -251,10 +248,10 @@ jQuery(document).ready(function() {
                             ${publication}
                         </div>
                     </td>
-                    <td class="col-sm-1">
+                    <td>
                         ${license_box}
-                    </td>  
-                    <td class="col-sm-1">
+                    </td>
+                    <td>
                         ${github_box}
                     </td>
                 </tr>

@@ -9,37 +9,10 @@ layout: default
     {% endif %} {{ page.title }}
   </h1>
   <p>{{page.description}}</p>
-  {% if page.repository %} {% if page.repository contains "https://github.com/"
-  %}
-  <p>
-    <a href="{{ page.repository }}">
-      <img
-        alt="GitHub Repo stars"
-        src="https://img.shields.io/github/stars/{{ page.repository | remove: 'https://github.com/' }}"
-      />
-      <img
-        alt="GitHub contributors"
-        src="https://img.shields.io/github/contributors/{{ page.repository | remove: 'https://github.com/' }}"
-      />
-      <img
-        alt="GitHub last commit"
-        src="https://img.shields.io/github/last-commit/{{ page.repository | remove: 'https://github.com/' }}"
-      />
-      <!--<img alt="GitHub issues" src="https://img.shields.io/github/issues/{{ page.repository | remove: 'https://github.com/' }}" />-->
-    </a>
-  </p>
-  {% endif %} {% endif %} {% if page.twitter %}
-  <a href="https://twitter.com/{{ page.twitter }}">
-    <img
-      alt="Twitter Follow"
-      src="https://img.shields.io/twitter/follow/{{ page.twitter }}?style=social"
-    />
-  </a>
-  {% endif %}
 </div>
 
 {% if page.is_obsolete %}
-<div>
+<div class="row">
   <div class="alert alert-danger" role="alert">
     This ontology is deprecated!
   </div>
@@ -51,7 +24,7 @@ layout: default
 </div>
 {% endif %} {% if page.activity_status == "inactive" %}{% unless
 page.is_obsolete %}
-<div>
+<div class="row">
   <div class="alert alert-warning" role="alert">
     This ontology is inactive. For more information see
     <a href="/docs/OntologyStatus.html">here</a>.
@@ -59,7 +32,7 @@ page.is_obsolete %}
 </div>
 {% endunless %}{% endif %} {% if page.activity_status == "orphaned" %}{% unless
 page.is_obsolete %}
-<div>
+<div class="row">
   <div class="alert alert-warning" role="alert">
     This ontology is orphaned. For more information see
     <a href="/docs/OntologyStatus.html">here</a>.
@@ -67,7 +40,7 @@ page.is_obsolete %}
 </div>
 {% endunless %}{% endif %} {% if page.preferredPrefix %} {% assign upperPrefix =
 page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
-<div>
+<div class="row">
   <div class="alert alert-info" role="alert">
     This ontology uses a mixed-case prefix. Identifiers and URIs should use: "{{
     page.preferredPrefix }}".
@@ -77,36 +50,63 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
 
 <div class="row">
   <div class="col-md-8" style="padding-left: 0">
-    <!-- TODO: each ontology should configure which browsers to be exposed in -->
-    <a href="https://ontobee.org/browser/index.php?o={{page.id}}">
-      <button type="button" class="btn btn-default">OntoBee</button>
-    </a>
-    {% if page.aberowl_id %}
-    <a href="http://aber-owl.net/ontology/{{page.aberowl_id | upcase}}">
-      <button type="button" class="btn btn-default">AberOWL</button>
-    </a>
-    {% else %}
-    <a href="http://aber-owl.net/ontology/{{page.id | upcase}}">
-      <button type="button" class="btn btn-default">AberOWL</button>
-    </a>
+    {% assign stripped_content_size = content | strip | size %}
+
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <!-- TODO: each ontology should configure which browsers to be exposed in -->
+        <a href="https://ontobee.org/browser/index.php?o={{page.id}}">
+          <button type="button" class="btn btn-default">OntoBee</button>
+        </a>
+        {% if page.aberowl_id %}
+        <a href="http://aber-owl.net/ontology/{{page.aberowl_id | upcase}}">
+          <button type="button" class="btn btn-default">AberOWL</button>
+        </a>
+        {% else %}
+        <a href="http://aber-owl.net/ontology/{{page.id | upcase}}">
+          <button type="button" class="btn btn-default">AberOWL</button>
+        </a>
+        {% endif %}
+        <a href="http://www.ebi.ac.uk/ols/ontologies/{{page.id}}">
+          <button type="button" class="btn btn-default">OLS</button>
+        </a>
+        {% for b in page.browsers %}
+        <a href="{{b.url}}">
+          <button type="button" class="btn btn-default">{{b.label}}</button>
+        </a>
+        {% endfor %}
+        <a href="https://bioregistry.io/metaregistry/obofoundry/{{page.id}}">
+          <button type="button" class="btn btn-default">Bioregistry</button>
+        </a>
+      </div>
+      {% if stripped_content_size > 0 %}
+      <div class="panel-body">{{ content }}</div>
+      {% endif %}
+    </div>
+
+    {% if page.publications %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Publications</h3>
+      </div>
+      <div class="list-group">
+        {% for p in page.publications %}
+        <div class="list-group-item">
+          <a href="{{p.id}}">{{p.title}}</a>
+          {% if p.preferred %}
+          <span class="badge">Preferred</span>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
     {% endif %}
-    <a href="http://www.ebi.ac.uk/ols/ontologies/{{page.id}}">
-      <button type="button" class="btn btn-default">OLS</button>
-    </a>
-    {% for b in page.browsers %}
-    <a href="{{b.url}}">
-      <button type="button" class="btn btn-default">{{b.label}}</button>
-    </a>
-    {% endfor %}
-    <a href="https://bioregistry.io/metaregistry/obofoundry/{{page.id}}">
-      <button type="button" class="btn btn-default">Bioregistry</button>
-    </a>
 
-    {{ content }}
-
-    <div>
-      <h2>Products</h2>
-      <table class="table">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Products</h3>
+      </div>
+      <table class="table table-striped">
         <tbody>
           {% for p in page.products %}
           <tr>
@@ -125,41 +125,42 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
       </table>
     </div>
     {% if page.usages %}
-    <div>
-      <h2>Usages</h2>
-      {% for p in page.usages %}
-      <dl class="dl-horizontal">
-        <dt>User</dt>
-        <dd><a href="{{p.user}}">{{p.user}}</a></dd>
-        <dt>Description</dt>
-        <dd>{{p.description}}</dd>
-        {% if p.type %}
-        <dt>Type</dt>
-        <dd>{{p.type}}</dd>
-        {% endif %} {% if p.seeAlso %}
-        <dt>See also</dt>
-        <dd><a href="{{p.seeAlso}}">{{p.seeAlso}}</a></dd>
-        {% endif %} {% if p.examples %}
-        <dt>Examples</dt>
-        <dd>
-          <ul style="padding-left: 20px">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Usages</h3>
+      </div>
+      <div class="list-group">
+        {% for p in page.usages %}
+        <div class="list-group-item">
+          <dl class="dl-horizontal" style="margin-bottom: 0">
+            <dt>User</dt>
+            <dd><a href="{{p.user}}">{{p.user}}</a></dd>
+            <dt>Description</dt>
+            <dd>{{p.description}}</dd>
+            {% if p.type %}
+            <dt>Type</dt>
+            <dd>{{p.type}}</dd>
+            {% endif %} {% if p.seeAlso %}
+            <dt>See also</dt>
+            <dd><a href="{{p.seeAlso}}">{{p.seeAlso}}</a></dd>
+            {% endif %} {% if p.examples %}
+            <dt>Examples</dt>
             {% for example in p.examples %}
-            <li><a href="{{example.url}}">{{example.description}}</a></li>
-            {% endfor %}
-          </ul>
-        </dd>
-        {% endif %} {% if p.publications %}
-        <dt>Publications</dt>
-        <dd>
-          <ul style="padding-left: 20px">
-            {% for publication in p.publications %}
-            <li><a href="{{publication.id}}">{{publication.title}}</a></li>
-            {% endfor %}
-          </ul>
-        </dd>
-        {% endif %}
-      </dl>
-      {% endfor %}
+            <dd><a href="{{example.url}}">{{example.description}}</a></dd>
+            {% endfor %} {% endif %} {% if p.publications %}
+            <dt>Publications</dt>
+            <dd>
+              <ul style="padding-left: 20px">
+                {% for publication in p.publications %}
+                <li><a href="{{publication.id}}">{{publication.title}}</a></li>
+                {% endfor %}
+              </ul>
+            </dd>
+            {% endif %}
+          </dl>
+        </div>
+        {% endfor %}
+      </div>
     </div>
     {% endif %}
   </div>
@@ -225,7 +226,14 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         <a href="mailto:{{page.contact.email}}">{{page.contact.label}}</a>
       </dd>
 
-      <dt>Trackers</dt>
+      {% if page.repository and page.repository != page.homepage %}
+      <dt>Repository</dt>
+      <dd>
+        <a href="{{page.repository}}">{{page.repository}}</a>
+      </dd>
+      {% endif %}
+
+      <dt>Tracker</dt>
       <dd>
         <a href="{{page.tracker}}">{{page.tracker}}</a>
       </dd>
@@ -254,22 +262,10 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
           >{{page.exampleClass}}</a
         >
       </dd>
-      {% endif %} {% if page.publications %}
-      <dt>Cite</dt>
-      {% for p in page.publications %}
-      <dd>
-        <small><a href="{{p.id}}">{{p.title}}</a></small>
-      </dd>
-      {% endfor %} {% endif %} {% if page.funded_by %}
+      {% endif %} {% if page.funded_by %}
       <dt>Funding</dt>
       {% for x in page.funded_by %}
       <dd>{{x}}</dd>
-      {% endfor %} {% endif %} {% if page.used_by %}
-      <dt>Used by</dt>
-      {% for x in page.used_by %}
-      <dd>
-        <a href="{{x.url}}">{{x.label}}</a>
-      </dd>
       {% endfor %} {% endif %} {% if page.dependencies %}
       <dt>Dependencies</dt>
       {% for x in page.dependencies %}
@@ -288,8 +284,50 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         <a href="{{p.id}}">{{p.type}}</a>
         {% endif %}
       </dd>
-      {% endfor %} {% endif %} {% if page.review.date and page.review.document
-      %}
+      {% endfor %} {% endif %} {% if page.twitter %}
+      <dt>Twitter</dt>
+      <dd>
+        <a
+          href="https://twitter.com/{{ page.twitter }}"
+          style="padding: 0.5em 0"
+        >
+          <img
+            alt="Twitter Follow"
+            src="https://img.shields.io/twitter/follow/{{ page.twitter }}?style=social"
+          />
+        </a>
+      </dd>
+      {% endif %} {% if page.repository and page.repository contains
+      "https://github.com/" %}
+      <dt>Stars</dt>
+      <dd>
+        <a href="{{ page.repository }}">
+          <img
+            alt="GitHub Repo stars"
+            src="https://img.shields.io/github/stars/{{ page.repository | remove: 'https://github.com/' }}"
+          />
+        </a>
+      </dd>
+      <dt>Contributors</dt>
+      <dd>
+        <a href="{{ page.repository }}">
+          <img
+            alt="GitHub contributors"
+            src="https://img.shields.io/github/contributors/{{ page.repository | remove: 'https://github.com/' }}"
+          />
+        </a>
+      </dd>
+      <dt>Last Commit</dt>
+      <dd>
+        <a href="{{ page.repository }}">
+          <img
+            alt="GitHub last commit"
+            src="https://img.shields.io/github/last-commit/{{ page.repository | remove: 'https://github.com/' }}"
+          />
+        </a>
+        <!--<img alt="GitHub issues" src="https://img.shields.io/github/issues/{{ page.repository | remove: 'https://github.com/' }}" />-->
+      </dd>
+      {% endif %} {% if page.review.date and page.review.document %}
       <dt>OBO Review</dt>
       <dd>
         {{page.review.date}}
@@ -300,7 +338,7 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
       <dd>{% endif %}</dd>
     </dl>
 
-    <div class="btn-group" role="group" aria-label="Source">
+    <div class="btn-group pull-right" role="group" aria-label="Source">
       <a
         href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/{{page.id}}.md"
       >
