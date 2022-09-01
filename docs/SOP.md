@@ -66,7 +66,7 @@ For a discussion on this SOP, see [here](https://github.com/OBOFoundry/OBOFoundr
       - [open pull requests](https://github.com/OBOFoundry/OBOFoundry.github.io/pulls), and
       - [recent tracker items](https://github.com/OBOFoundry/OBOFoundry.github.io/issues?q=is%3Aopen).
 
-   Please also add agenda items to `<URLOFAGENDA>`." (replace `<URLOFAGENDA>` with the URL of the meeting agenda).
+   Please also add agenda items to https://docs.google.com/document/d/1aka4i6R89i04IYPS7CyzItQPOyb3IgtW4m75G475qcc/edit#."
    <hr>
 
 #### During the call:
