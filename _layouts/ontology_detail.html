@@ -107,11 +107,7 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
       <div class="list-group">
         {% for p in page.funded_by %}
         <div class="list-group-item">
-          {% if p.url %}
-          <a href="{{ p.url }}">{{ p.name or p.url }}</a>
-          {% else %}
-          {{ p.name }}
-          {% endif %}
+          <a href="{{ p.id }}">{{ p.title }}</a>
         </div>
         {% endfor %}
       </div>

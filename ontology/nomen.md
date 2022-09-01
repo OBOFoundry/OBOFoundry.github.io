@@ -14,8 +14,8 @@ contact:
 description: NOMEN is a nomenclatural ontology for biological names (not concepts).  It encodes the goverened rules of nomenclature.
 domain: information
 funded_by:
-- name: NSF-ABI-1356381
-  url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1356381
+- title: NSF ABI-1356381
+  id: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1356381
 homepage: https://github.com/SpeciesFileGroup/nomen
 label: NOMEN
 license:

@@ -133,14 +133,15 @@
         "type": "object",
         "title": "Funding",
         "properties": {
-          "name": {
+          "title": {
             "type": "string"
           },
-          "url": {
+          "id": {
             "type": "string"
           }
         },
         "required": [
+          "title",
           "url"
         ]
       }
