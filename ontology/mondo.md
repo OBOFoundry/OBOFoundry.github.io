@@ -52,6 +52,7 @@ taxon:
   id: NCBITaxon:33208
   label: Metazoa
 tracker: https://github.com/monarch-initiative/mondo/issues
+twitter: MonarchInit
 usages:
 - description: Mondo is used by the Monarch Initiative for disease annotations.
   examples:
@@ -95,7 +96,3 @@ These precise mappings are available in three ways depending on the format:
 - The [mondo-with-equivalent](http://purl.obolibrary.org/obo/mondo/mondo-with-equivalents.owl) edition uses OWL equivalence axioms directly in the ontology. Note this makes it harder to browse in some portals, but this edition may be preferable for computational use. The owl edition also includes axiomatization using CL, Uberon, GO, HP, RO, NCBITaxon.
 - The primary release versions (mondo.owl, mondo.obo) are simpler, lacking owl equivalence axioms from Mondo classes to terms from other databases; instead, xrefs are used for linking these terms. If the ID is one of Orphanet, OMIM, DOID or EFO then the xref precisely shadows the equivalence axiom.
 - The [mondo-with-equivalents json edition](http://purl.obolibrary.org/obo/mondo/mondo-with-equivalents.json) has all owl equivalencies as well as all xrefs to other disease sources.
-
-Tracker
-
- - https://github.com/monarch-initiative/mondo/issues

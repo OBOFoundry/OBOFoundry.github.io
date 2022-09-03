@@ -36,6 +36,6 @@ used to render the button), `title` and `url` (the actual link).
 
 In future we hope to enhance this:
 
- * embeddable browsers
- * embeddable search
- * automatic links to OLS and BioPortal
+- embeddable browsers
+- embeddable search
+- automatic links to OLS and BioPortal

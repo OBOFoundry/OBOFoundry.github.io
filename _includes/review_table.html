@@ -1,32 +1,24 @@
 <table class="tg">
   <tbody>
-		<tr>
-			<th class="tg-lbaf">Ontology Name</th>
-			<th class="tg-lbaf">Date</th>
-			<th class="tg-lbaf">Review</th>
-		</tr>
-    {% for ont in site.ontologies %}
-		  {% if ont.review %}
-		  <tr>
-				<td class="tg-yp4a">
-					<a href="../ontology/{{ ont.id }}.html">{{ont.title}}</a>
-				</td>
-				<td class="tg-yp4a">
-					{% if ont.review %}
-					  {{ont.review.date}}
-					{% else %}
-					  n/a
-					{% endif %}
-				</td>
-				<td class="tg-yp4a">
-					{% if ont.review.document %}
-					  <a href="{{ont.review.document.link}}">{{ont.review.document.label}}</a>
-					{% else %}
-					  n/a
-					{% endif %}
-				</td>
-			</tr>
-		  {% endif %}
-		{% endfor %}
-	</tbody>
+    <tr>
+      <th class="tg-lbaf">Ontology Name</th>
+      <th class="tg-lbaf">Date</th>
+      <th class="tg-lbaf">Review</th>
+    </tr>
+    {% for ont in site.ontologies %} {% if ont.review %}
+    <tr>
+      <td class="tg-yp4a">
+        <a href="../ontology/{{ ont.id }}.html">{{ont.title}}</a>
+      </td>
+      <td class="tg-yp4a">
+        {% if ont.review %} {{ont.review.date}} {% else %} n/a {% endif %}
+      </td>
+      <td class="tg-yp4a">
+        {% if ont.review.document %}
+        <a href="{{ont.review.document.link}}">{{ont.review.document.label}}</a>
+        {% else %} n/a {% endif %}
+      </td>
+    </tr>
+    {% endif %} {% endfor %}
+  </tbody>
 </table>
