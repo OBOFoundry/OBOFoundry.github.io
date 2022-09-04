@@ -9616,6 +9616,67 @@
         },
         {
             "activity_status": "active",
+            "contact": {
+                "email": "Sabrina@tislab.org",
+                "github": "sabrinatoro",
+                "label": "Sabrina Toro",
+                "orcid": "0000-0002-4142-7153"
+            },
+            "dependencies": [
+                {
+                    "id": "ncbitaxon"
+                }
+            ],
+            "description": "Vertebrate Breed Ontology is an ontology created to serve as a single computable resource for vertebrate breed names.",
+            "domain": "organisms",
+            "homepage": "https://github.com/monarch-initiative/vertebrate-breed-ontology",
+            "id": "vbo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/vbo.owl",
+            "preferredPrefix": "VBO",
+            "products": [
+                {
+                    "id": "vbo.owl",
+                    "name": "Vertebrate Breed Ontology main release in OWL format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo.owl"
+                },
+                {
+                    "id": "vbo.obo",
+                    "name": "Vertebrate Breed Ontology additional release in OBO format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo.obo"
+                },
+                {
+                    "id": "vbo.json",
+                    "name": "Vertebrate Breed Ontology additional release in OBOJSon format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo.json"
+                },
+                {
+                    "id": "vbo/vbo-base.owl",
+                    "name": "Vertebrate Breed Ontology main release in OWL format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo/vbo-base.owl"
+                },
+                {
+                    "id": "vbo/vbo-base.obo",
+                    "name": "Vertebrate Breed Ontology additional release in OBO format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo/vbo-base.obo"
+                },
+                {
+                    "id": "vbo/vbo-base.json",
+                    "name": "Vertebrate Breed Ontology additional release in OBOJSon format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo/vbo-base.json"
+                }
+            ],
+            "repository": "https://github.com/monarch-initiative/vertebrate-breed-ontology",
+            "title": "Vertebrate Breed Ontology",
+            "tracker": "https://github.com/monarch-initiative/vertebrate-breed-ontology/issues"
+        },
+        {
+            "activity_status": "active",
             "build": {
                 "source_url": "https://raw.githubusercontent.com/vaccineontology/VO/master/src/VO_merged.owl"
             },
