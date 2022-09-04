@@ -1,51 +1,51 @@
 ---
 layout: ontology_detail
 id: ncbitaxon
-preferredPrefix: NCBITaxon
 title: NCBI organismal classification
+browsers:
+- title: NCBI Taxonomy Browser
+  label: NCBI
+  url: http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi
 build:
-  source_url: http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip
-  path: archive
-  method: archive
   infallible: 1
+  method: archive
+  path: archive
+  source_url: http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip
 contact:
   email: frederic.bastian@unil.ch
-  label: Frederic Bastian
   github: fbastian
+  label: Frederic Bastian
   orcid: 0000-0002-9415-5104
 description: An ontology representation of the NCBI organismal taxonomy
-wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
 domain: organisms
-tags:
-  - taxonomy
 homepage: https://github.com/obophenotype/ncbitaxon
-page: http://www.ncbi.nlm.nih.gov/taxonomy
-tracker: https://github.com/obophenotype/ncbitaxon/issues
-browsers:
-  - label: NCBI
-    title: NCBI Taxonomy Browser
-    url: http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi
 jobs:
-  - id: http://build.berkeleybop.org/job/build-ncbitaxon/
-    type: ReleaseBuild
-products:
-  - id: ncbitaxon.owl
-    title: Main release
-  - id: ncbitaxon.obo
-    title: OBO Format version of Main release
-  - id: ncbitaxon.json
-    title: OBOGraphs JSON version of Main release
-  - id: ncbitaxon/subsets/taxslim.owl
-    title: taxslim
-    page: https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md
-  - id: ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl
-    title: taxslim disjointness axioms
-    page: https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md
+- id: http://build.berkeleybop.org/job/build-ncbitaxon/
+  type: ReleaseBuild
 license:
-  url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
-activity_status: active
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+page: http://www.ncbi.nlm.nih.gov/taxonomy
+preferredPrefix: NCBITaxon
+products:
+- id: ncbitaxon.owl
+  title: Main release
+- id: ncbitaxon.obo
+  title: OBO Format version of Main release
+- id: ncbitaxon.json
+  title: OBOGraphs JSON version of Main release
+- id: ncbitaxon/subsets/taxslim.owl
+  title: taxslim
+  page: https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md
+- id: ncbitaxon/subsets/taxslim-disjoint-over-in-taxon.owl
+  title: taxslim disjointness axioms
+  page: https://github.com/obophenotype/ncbitaxon/blob/master/subsets/README.md
 repository: https://github.com/obophenotype/ncbitaxon
+tags:
+- taxonomy
+tracker: https://github.com/obophenotype/ncbitaxon/issues
+wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
+activity_status: active
 ---
 
 The NCBITaxon ontology is an automatic translation of the [NCBI taxonomy database](http://www.ncbi.nlm.nih.gov/taxonomy) into obo/owl.

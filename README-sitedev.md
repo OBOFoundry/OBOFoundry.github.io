@@ -91,7 +91,7 @@ create RDF files via a JSON-LD file (JENA required):
 
 The front page [index.html](index.html) is the ontology table. It is
 driven by the
-[_includes/ontology_table.html](_includes/ontology_table.html)
+[_includes/ontology_table.html](_includes/table_widget.html)
 template.
 
 It iterates through all ontologies (these are stored in the variable
@@ -145,3 +145,9 @@ current wiki, but other opinions welcome.
 
 We use bootstrap 3, so far no themes.
 
+### Code quality
+
+1. Install the Node Package Manager (NPM) following [these instructions](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+2. Install the [node package exector (`npx`)](https://www.npmjs.com/package/npx) with NPM using `npm install npx`
+2. Install [`prettier`](https://prettier.io) with NPM using `npm install prettier`
+3. Run `prettier` from the root of the repository with `npx prettier --write .`

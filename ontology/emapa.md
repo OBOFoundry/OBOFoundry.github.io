@@ -1,36 +1,36 @@
 ---
 layout: ontology_detail
 id: emapa
+title: Mouse Developmental Anatomy Ontology
+build:
+  method: obo2owl
+  notes: new url soon
+  source_url: ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAPA.obo
 contact:
   email: Terry.Hayamizu@jax.org
-  label: Terry Hayamizu
   github: tfhayamizu
+  label: Terry Hayamizu
   orcid: 0000-0002-0956-8634
-license:
-  url: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-description: "An ontology for mouse anatomy covering embryonic development and postnatal stages."
+description: An ontology for mouse anatomy covering embryonic development and postnatal stages.
 domain: anatomy and development
 homepage: http://www.informatics.jax.org/expression.shtml
-tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
+license:
+  label: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
+preferredPrefix: EMAPA
 products:
-  - id: emapa.owl
-  - id: emapa.obo
+- id: emapa.owl
+- id: emapa.obo
+repository: https://github.com/obophenotype/mouse-anatomy-ontology
 taxon:
   id: NCBITaxon:10088
   label: Mus
-title: Mouse Developmental Anatomy Ontology
-build:
-  notes: new url soon
-  source_url: ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAPA.obo
-  method: obo2owl
+tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
 usages:
-  - user: http://www.informatics.jax.org/expression.shtml
-    seeAlso: https://www.biosharing.org/biodbcore-000659
-    description: GXD
+- description: GXD
+  seeAlso: https://www.biosharing.org/biodbcore-000659
+  user: http://www.informatics.jax.org/expression.shtml
 activity_status: active
-repository: https://github.com/obophenotype/mouse-anatomy-ontology
-preferredPrefix: EMAPA
 ---
 
 ## BACKGROUND

@@ -1,27 +1,27 @@
 ---
 layout: ontology_detail
 id: aeo
-contact:
-  email: J.Bard@ed.ac.uk
-  label: Jonathan Bard
-license:
-  url: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-description: AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology
-domain: anatomy and development
-homepage: https://github.com/obophenotype/human-developmental-anatomy-ontology/
-tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
-products:
-  - id: aeo.owl
 title: Anatomical Entity Ontology
 build:
   checkout: git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git
-  system: git
-  path: src/ontology
   method: vcs
-activity_status: inactive
-repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
+  path: src/ontology
+  system: git
+contact:
+  email: J.Bard@ed.ac.uk
+  label: Jonathan Bard
+description: AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology
+domain: anatomy and development
+homepage: https://github.com/obophenotype/human-developmental-anatomy-ontology/
+license:
+  label: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
 preferredPrefix: AEO
+products:
+- id: aeo.owl
+repository: https://github.com/obophenotype/human-developmental-anatomy-ontology
+tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
+activity_status: inactive
 ---
 
 The AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology, to about 160 classes using the is_a relationship; it thus provides a detailed type classification for tissues. The ~100 new classes were chosen for their use in categorizing the major vertebrate and invertebrate anatomy ontologies at a granularity adequate for tissues of a single cell type. This site is to be used for posting details of the ontologies and updates

@@ -5,11 +5,11 @@ title: Plant Growth and Development Stage
 contact:
   email: po-discuss@plantontology.org
   label: Plant Ontology Administrators
+homepage: http://www.plantontology.org
+is_obsolete: true
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
-homepage: http://www.plantontology.org
-is_obsolete: true
 activity_status: inactive
 ---
 

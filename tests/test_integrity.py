@@ -2,10 +2,13 @@
 
 import json
 import unittest
+from io import StringIO
 from pathlib import Path
 from typing import Set
 
 import yaml
+
+from obofoundry.standardize_metadata import ModifiedDumper
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
@@ -20,6 +23,7 @@ ZENODO_PREFIX = "https://zenodo.org/record/"
 DOI_PREFIX = "https://doi.org/"
 CHEMRXIV_DOI_PREFIX = "https://doi.org/10.26434/chemrxiv"
 
+
 def get_data():
     """Get ontology data."""
     ontologies = {}
@@ -32,6 +36,7 @@ def get_data():
 
         # Load the data like it is YAML
         data = yaml.safe_load("\n".join(lines[1:idx]))
+        data["long_description"] = "".join(lines[idx:])
         ontologies[data["id"]] = data
     return ontologies
 
@@ -50,6 +55,18 @@ class TestIntegrity(unittest.TestCase):
             if not dependencies:
                 continue
             with self.subTest(ontology=ontology):
+                dependency_ids = [d["id"] for d in dependencies]
+                self.assertEqual(
+                    sorted(dependency_ids),
+                    dependency_ids,
+                    msg="dependencies should be sorted by ID",
+                )
+                self.assertEqual(
+                    sorted(set(dependency_ids)),
+                    dependency_ids,
+                    msg="dependencies should be unique",
+                )
+
                 for i, dependency in enumerate(dependencies):
                     # Check that the ID is a valid OBO ontology prefix
                     dependency_id = dependency["id"]
@@ -67,6 +84,15 @@ class TestIntegrity(unittest.TestCase):
     def test_publications(self):
         """Test publications information."""
         for ontology, data in sorted(self.ontologies.items()):
+            self.assertIn(
+                sum(
+                    publication.get("preferred", False)
+                    for publication in data.get("publications", [])
+                ),
+                {0, 1},
+                msg=f"Only one publication can be marked as preferred for {ontology}.",
+            )
+
             for i, publication in enumerate(data.get("publications", [])):
                 identifier = publication["id"]
                 if ontology == "agro" and identifier.startswith("http://ceur-ws.org/"):
@@ -83,8 +109,14 @@ class TestIntegrity(unittest.TestCase):
 
             for i, usage in enumerate(data.get("usages", [])):
                 for j, publication in enumerate(usage.get("publications", [])):
-                    self.assertIn("user", usage, msg=f"Malformed usage missing a user in {ontology}")
-                    with self.subTest(ontology=ontology, user=usage["user"], id=publication["id"]):
+                    self.assertIn(
+                        "user",
+                        usage,
+                        msg=f"Malformed usage missing a user in {ontology}",
+                    )
+                    with self.subTest(
+                        ontology=ontology, user=usage["user"], id=publication["id"]
+                    ):
                         self.assert_valid_publication_id(
                             publication,
                             msg=f"{ontology} usage {i} publication {j} has unexpected identifier: {publication['id']}",
@@ -127,7 +159,12 @@ class TestIntegrity(unittest.TestCase):
         )
 
         # Make sure that the unversioned DOI is used
-        if is_arxiv or is_biorxiv or is_medrxiv or identifier.startswith(CHEMRXIV_DOI_PREFIX):
+        if (
+            is_arxiv
+            or is_biorxiv
+            or is_medrxiv
+            or identifier.startswith(CHEMRXIV_DOI_PREFIX)
+        ):
             for v in range(1, 100):
                 self.assertFalse(
                     identifier.endswith(f".v{v}"), msg="Please use an unversioned DOI"
@@ -147,13 +184,72 @@ class TestIntegrity(unittest.TestCase):
         }
         self.assertEqual(required - skip_keys, high_level - skip_keys)
 
+    @staticmethod
+    def skip_inactive(record) -> bool:
+        """Check if should skip for inactive records."""
+        return record.get("activity_status") != "active"
+
     def test_preferred_prefix(self):
         """Test all preferred prefixes."""
         for prefix, record in self.ontologies.items():
             with self.subTest(prefix=prefix):
-                if record.get("activity_status") != "active":
+                if self.skip_inactive(record):
                     continue
                 preferred_prefix = record.get("preferredPrefix")
                 self.assertIsNotNone(preferred_prefix)
                 self.assertLessEqual(2, len(preferred_prefix))
                 self.assertNotIn(" ", preferred_prefix)
+
+    def test_redundant_descriptions(self):
+        """Test that the description field is not redundant of the long form description."""
+        for prefix, record in self.ontologies.items():
+            if self.skip_inactive(record):
+                continue
+            description = record.get("description")
+            long_description = record["long_description"]
+            if description is None:
+                continue
+            with self.subTest(prefix=prefix):
+                self.assertNotEqual(
+                    _string_norm(description),
+                    _string_norm(long_description),
+                    msg=f"Effectively the same description was reused in the short and long-form field for {prefix}",
+                )
+
+
+class TestStandardizedYaml(unittest.TestCase):
+    """Test the YAML is standard."""
+
+    def test_standardized(self):
+        """Test the YAML is standardized."""
+        for path in ONTOLOGY_DIRECTORY.glob("*.md"):
+            with self.subTest(prefix=path.stem):
+                with path.open() as file:
+                    lines = [line.rstrip("\n") for line in file]
+
+                self.assertEqual(lines[0], "---")
+                idx = min(
+                    i for i, line in enumerate(lines[1:], start=1) if line == "---"
+                )
+
+                # Load the data like it is YAML
+                chunked = "\n".join(lines[1:idx])
+                data = yaml.safe_load(StringIO(chunked))
+                # These settings should match the standardize_metadata.py dumping sequence
+                dumped = ModifiedDumper.dump(data)
+                self.assertEqual(
+                    dumped,
+                    chunked,
+                    msg="\n\n\tPlease run `tox -e lint` to standardize the ontology metadata.",
+                )
+
+
+def _string_norm(s: str) -> str:
+    return (
+        s.strip()
+        .lower()
+        .replace("\n", "")
+        .replace(" ", "")
+        .replace(".", "")
+        .replace("-", "")
+    )
