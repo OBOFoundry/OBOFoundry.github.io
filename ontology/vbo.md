@@ -1,3 +1,4 @@
+---
 id: vbo
 title: Vertebrate Breed Ontology
 contact:
@@ -30,3 +31,4 @@ license:
 repository: https://github.com/monarch-initiative/vertebrate-breed-ontology
 preferredPrefix: VBO
 activity_status: active
+---
