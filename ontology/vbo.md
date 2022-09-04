@@ -1,4 +1,5 @@
 ---
+layout: ontology_detail
 id: vbo
 title: Vertebrate Breed Ontology
 contact:
