@@ -21,6 +21,7 @@ preferredPrefix: SYMP
 products:
 - id: symp.owl
 - id: symp.obo
+- id: symp.json
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/19850722
   title: GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database

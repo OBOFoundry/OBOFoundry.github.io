@@ -61,6 +61,9 @@ products:
   description: core ontology
   is_canonical: true
   type: owl:Ontology
+- id: uberon.json
+  title: Uberon
+  description: core ontology
 - id: uberon/uberon-base.owl
   title: Uberon base ontology
   description: Axioms defined within Uberon and to be used in imports for other ontologies

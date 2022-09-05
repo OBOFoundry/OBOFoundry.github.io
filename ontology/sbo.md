@@ -20,6 +20,7 @@ license:
 preferredPrefix: SBO
 products:
 - id: sbo.owl
+- id: sbo.obo
 repository: https://github.com/EBI-BioModels/SBO
 tracker: https://github.com/EBI-BioModels/SBO/issues
 activity_status: active

@@ -21,6 +21,7 @@ preferredPrefix: DDPHENO
 products:
 - id: ddpheno.owl
 - id: ddpheno.obo
+- id: ddpheno.json
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/31840793
   title: dictyBase and the Dicty Stock Center (version 2.0) - a progress report

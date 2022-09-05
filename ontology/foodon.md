@@ -27,6 +27,8 @@ products:
 - id: foodon.owl
   title: FoodOn ontology with import file references and over 9,000 food products
   format: owl-rdf/xml
+- id: foodon.obo
+  format: obo
 - id: foodon_core.owl
   title: FoodOn core ontology (currently the same as foodon.owl)
   format: owl-rdf/xml

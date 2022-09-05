@@ -23,6 +23,7 @@ preferredPrefix: ZFA
 products:
 - id: zfa.owl
 - id: zfa.obo
+- id: zfa.json
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/24568621
   title: 'The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio.'

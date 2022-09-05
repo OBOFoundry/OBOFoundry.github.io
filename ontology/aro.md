@@ -17,6 +17,7 @@ mailing_list: https://mailman.mcmaster.ca/mailman/listinfo/card-l
 preferredPrefix: ARO
 products:
 - id: aro.owl
+- id: aro.obo
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/31665441
   title: 'CARD 2020: antibiotic resistome surveillance with the comprehensive antibiotic resistance database.'

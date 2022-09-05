@@ -29,6 +29,8 @@ products:
   title: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy plus equivalent axioms to other OBO Foundry ontologies.
 - id: doid.obo
   title: Disease Ontology, OBO format. This file omits the equivalent axioms.
+- id: doid.json
+  title: Disease Ontology, OBO Graph format.
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/25348409
   title: 'Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data'

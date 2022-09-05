@@ -20,6 +20,8 @@ license:
 preferredPrefix: CARO
 products:
 - id: caro.owl
+- id: caro.obo
+- id: caro.json
 repository: https://github.com/obophenotype/caro
 tracker: https://github.com/obophenotype/caro/issues
 activity_status: active

@@ -26,6 +26,7 @@ license:
 preferredPrefix: DUO
 products:
 - id: duo.owl
+- id: duo.obo
 repository: https://github.com/EBISPOT/DUO
 tracker: https://github.com/EBISPOT/DUO/issues
 activity_status: active

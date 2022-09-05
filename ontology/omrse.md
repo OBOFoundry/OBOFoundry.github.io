@@ -19,6 +19,8 @@ license:
 preferredPrefix: OMRSE
 products:
 - id: omrse.owl
+- id: omrse.obo
+- id: omrse.json
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/27406187
   title: 'The ontology of medically related social entities: recent developments'

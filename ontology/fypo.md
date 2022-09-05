@@ -22,6 +22,7 @@ preferredPrefix: FYPO
 products:
 - id: fypo.owl
 - id: fypo.obo
+- id: fypo.json
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/23658422
   title: 'FYPO: The Fission Yeast Phenotype Ontology.'

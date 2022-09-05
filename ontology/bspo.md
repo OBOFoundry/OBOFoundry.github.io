@@ -23,6 +23,7 @@ preferredPrefix: BSPO
 products:
 - id: bspo.owl
 - id: bspo.obo
+- id: bspo.json
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/25140222
   title: 'Nose to tail, roots to shoots: spatial descriptors for phenotypic diversity in the Biological Spatial Ontology.'

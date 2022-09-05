@@ -34,6 +34,7 @@ preferredPrefix: HP
 products:
 - id: hp.owl
 - id: hp.obo
+- id: hp.json
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/18950739
   title: 'The Human Phenotype Ontology: a tool for annotating and analyzing human hereditary disease.'

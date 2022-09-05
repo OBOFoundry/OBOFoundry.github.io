@@ -32,6 +32,7 @@ license:
 preferredPrefix: PCO
 products:
 - id: pco.owl
+- id: pco.obo
 repository: https://github.com/PopulationAndCommunityOntology/pco
 tags:
 - collections of organisms

@@ -17,6 +17,7 @@ mailing_list: chemistry-ontologies@googlegroups.com
 preferredPrefix: CHMO
 products:
 - id: chmo.owl
+- id: chmo.obo
 repository: https://github.com/rsc-ontologies/rsc-cmo
 tracker: https://github.com/rsc-ontologies/rsc-cmo/issues
 activity_status: active

@@ -17,6 +17,7 @@ license:
 preferredPrefix: OGMS
 products:
 - id: ogms.owl
+- id: ogms.obo
 repository: https://github.com/OGMS/ogms
 tags:
 - medicine

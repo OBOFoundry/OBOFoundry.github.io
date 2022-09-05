@@ -26,6 +26,7 @@ preferredPrefix: OBA
 products:
 - id: oba.owl
 - id: oba.obo
+- id: oba.json
 - id: oba/subsets/oba-basic.obo
 repository: https://github.com/obophenotype/bio-attribute-ontology
 tracker: https://github.com/obophenotype/bio-attribute-ontology/issues

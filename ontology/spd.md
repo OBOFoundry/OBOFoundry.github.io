@@ -20,6 +20,7 @@ license:
 preferredPrefix: SPD
 products:
 - id: spd.owl
+- id: spd.obo
 publications:
 - id: https://doi.org/10.3390/d11100202
   title: The Spider Anatomy Ontology (SPD)—A Versatile Tool to Link Anatomy with Cross-Disciplinary Data

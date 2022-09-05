@@ -16,6 +16,7 @@ license:
 preferredPrefix: ORNASEQ
 products:
 - id: ornaseq.owl
+- id: ornaseq.obo
 repository: https://github.com/safisher/ornaseq
 tracker: https://github.com/safisher/ornaseq/issues
 activity_status: active

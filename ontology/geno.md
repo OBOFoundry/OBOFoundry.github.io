@@ -21,6 +21,10 @@ preferredPrefix: GENO
 products:
 - id: geno.owl
   title: GENO
+- id: geno.obo
+  title: GENO
+- id: geno.json
+  title: GENO
 repository: https://github.com/monarch-initiative/GENO-ontology
 tags:
 - genotype-to-phenotype associations
