@@ -102,6 +102,21 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
     </div>
     {% endif %}
 
+    {% if page.funded_by %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Funding</h3>
+      </div>
+      <div class="list-group">
+        {% for p in page.funded_by %}
+        <div class="list-group-item">
+          <a href="{{ p.id }}">{{ p.title }}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">Products</h3>
@@ -262,11 +277,7 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
           >{{page.exampleClass}}</a
         >
       </dd>
-      {% endif %} {% if page.funded_by %}
-      <dt>Funding</dt>
-      {% for x in page.funded_by %}
-      <dd>{{x}}</dd>
-      {% endfor %} {% endif %} {% if page.dependencies %}
+      {% endif %} {% if page.dependencies %}
       <dt>Dependencies</dt>
       {% for x in page.dependencies %}
       <dd>
