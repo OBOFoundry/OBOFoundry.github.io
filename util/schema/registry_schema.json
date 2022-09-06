@@ -126,7 +126,25 @@
       }
     },
     "funded_by": {
-      "suggest": false
+      "level": "info",
+      "description": "An optional field containing structured funding sources",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Funding",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "url"
+        ]
+      }
     },
     "homepage": {
       "level": "error",
