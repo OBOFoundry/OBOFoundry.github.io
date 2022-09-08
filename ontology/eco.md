@@ -16,7 +16,8 @@ depicted_by: https://avatars1.githubusercontent.com/u/12802432
 description: An ontology for experimental and other evidence statements.
 domain: investigations
 funded_by:
-- http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400
+- id: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400
+  title: NSF ABI-1458400
 homepage: https://www.evidenceontology.org
 jobs:
 - id: https://travis-ci.org/evidenceontology/evidenceontology
@@ -63,5 +64,3 @@ ECO was originally created around the year 2000 to support gene product annotati
 
 ***
 For **advice on requesting new terms**, please see **[the Evidence & Conclusion Ontology wiki](https://github.com/evidenceontology/evidenceontology/wiki/New-term-request-how-to)**.
-
-This work is made possible by **[award number 1458400](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400)** from the **US National Science Foundation's Division of Biological Infrastructure**.
