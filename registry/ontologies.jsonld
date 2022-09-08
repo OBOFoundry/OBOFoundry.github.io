@@ -2491,7 +2491,7 @@
                 "system": "git"
             },
             "contact": {
-                "email": "p.buttigieg@gmail.com",
+                "email": "pier.buttigieg@awi.de",
                 "github": "pbuttigieg",
                 "label": "Pier Luigi Buttigieg",
                 "orcid": "0000-0002-4366-3088"
@@ -2523,21 +2523,21 @@
                 }
             ],
             "depicted_by": "/logos/envo.png",
-            "description": "Ontology of environmental features and habitats",
+            "description": "An ontology of environmental systems, components, and processes.",
             "domain": "environment",
             "homepage": "http://environmentontology.org/",
             "id": "envo",
             "jobs": [
                 {
-                    "id": "https://travis-ci.org/EnvironmentOntology/envo",
-                    "type": "travis-ci"
+                    "id": "https://github.com/EnvironmentOntology/envo/blob/master/.github/workflows/qc.yml",
+                    "type": "github-action"
                 }
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC BY 3.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "label": "CC0 1.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/envo.owl",
             "page": "https://github.com/EnvironmentOntology/envo",
@@ -2577,11 +2577,12 @@
             ],
             "publications": [
                 {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/24330602",
+                    "id": "https://doi.org/10.1186/2041-1480-4-43",
+                    "preferred": true,
                     "title": "The environment ontology: contextualising biological and biomedical entities"
                 },
                 {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/27664130",
+                    "id": "https://doi.org/10.1186/s13326-016-0097-6",
                     "title": "The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation"
                 }
             ],
