@@ -53,7 +53,7 @@ publications:
 - id: https://doi.org/10.1186/2041-1480-4-43
   title: 'The environment ontology: contextualising biological and biomedical entities'
   preferred: true
-- id: https://www.ncbi.nlm.nih.gov/pubmed/27664130
+- id: https://doi.org/10.1186/s13326-016-0097-6
   title: 'The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation'
 repository: https://github.com/EnvironmentOntology/envo
 tracker: https://github.com/EnvironmentOntology/envo/issues/
