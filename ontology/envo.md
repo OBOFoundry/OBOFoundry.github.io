@@ -50,7 +50,7 @@ products:
   title: GSC Lite subset of ENVO
   homepage: http://environmentontology.org/downloads
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/24330602
+- id: https://doi.org/10.1186/2041-1480-4-43
   title: 'The environment ontology: contextualising biological and biomedical entities'
   preferred: true
 - id: https://www.ncbi.nlm.nih.gov/pubmed/27664130
