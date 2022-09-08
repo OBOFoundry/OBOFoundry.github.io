@@ -10,7 +10,7 @@ build:
   path: .
   system: git
 contact:
-  email: p.buttigieg@gmail.com
+  email: pier.buttigieg@awi.de
   github: pbuttigieg
   label: Pier Luigi Buttigieg
   orcid: 0000-0002-4366-3088
@@ -24,15 +24,15 @@ dependencies:
 - id: ro
 - id: uberon
 depicted_by: /logos/envo.png
-description: Ontology of environmental features and habitats
+description: An ontology of environmental systems, components, and processes.
 domain: environment
 homepage: http://environmentontology.org/
 jobs:
-- id: https://travis-ci.org/EnvironmentOntology/envo
-  type: travis-ci
+- id: https://github.com/EnvironmentOntology/envo/blob/master/.github/workflows/qc.yml
+  type: github-action
 license:
-  label: CC BY 3.0
-  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC0 1.0
+  url: http://creativecommons.org/publicdomain/zero/1.0/
 page: https://github.com/EnvironmentOntology/envo
 preferredPrefix: ENVO
 products:
