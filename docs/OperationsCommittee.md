@@ -17,12 +17,6 @@ See a description of our activities in our [mission statement](MissionStatement.
 
 ## OBO Operations Committee SOP
 [Standard operating procedures (SOPs)](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/docs/SOP.md) for the OBO Foundry Operations Committee can be found in our GitHub repo.
-That document describes:
-- New Ontology Requests
-- Reviewing Ontologies for OBO Membership
-- Ontology acceptance email
-- Changing ontology metadata in the registry
-- Chairing an OBO Operations Committee meeting call
 
 ## Interested in joining?
 
