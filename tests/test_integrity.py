@@ -219,38 +219,8 @@ class TestIntegrity(unittest.TestCase):
 
     def test_has_purl_config(self):
         """Tests that OBO PURL configuration is available."""
-        #: A begrudging list of exceptions that are currently missing configuration.
-        #: DO NOT EVER AMMEND THIS LIST.
-        exceptions = {
-            "bootstrep",
-            "cmf",
-            "dinto",
-            "epo",
-            "ev",
-            "gro",
-            "habronattus",
-            "lipro",
-            "loggerhead",
-            "mao",
-            "mfo",
-            "mirnao",
-            "nif_cell",
-            "nif_dysfunction",
-            "nif_grossanatomy",
-            "pao",
-            "pd_st",
-            "pgdso",
-            "plo",
-            "propreo",
-            "sopharm",
-            "tahe",
-            "tahh",
-            "vsao",
-            "ypo",
-            "zea",
-        }
         for prefix, record in self.ontologies.items():
-            if prefix in exceptions or self.skip_inactive(record):
+            if self.skip_inactive(record):
                 continue
             with self.subTest(prefix=prefix):
                 url = f"https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config/{prefix}.yml"
