@@ -249,8 +249,8 @@ class TestIntegrity(unittest.TestCase):
             "ypo",
             "zea",
         }
-        for prefix in self.ontologies:
-            if prefix in exceptions:
+        for prefix, record in self.ontologies.items():
+            if prefix in exceptions or self.skip_inactive(record):
                 continue
             with self.subTest(prefix=prefix):
                 url = f"https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config/{prefix}.yml"
