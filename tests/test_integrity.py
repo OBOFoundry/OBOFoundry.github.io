@@ -6,6 +6,7 @@ from io import StringIO
 from pathlib import Path
 from typing import Set
 
+import requests
 import yaml
 
 from obofoundry.standardize_metadata import ModifiedDumper
@@ -214,6 +215,50 @@ class TestIntegrity(unittest.TestCase):
                     _string_norm(description),
                     _string_norm(long_description),
                     msg=f"Effectively the same description was reused in the short and long-form field for {prefix}",
+                )
+
+    def test_has_purl_config(self):
+        """Tests that OBO PURL configuration is available."""
+        #: A begrudging list of exceptions that are currently missing configuration.
+        #: DO NOT EVER AMMEND THIS LIST.
+        exceptions = {
+            "bootstrep",
+            "cmf",
+            "dinto",
+            "epo",
+            "ev",
+            "gro",
+            "habronattus",
+            "lipro",
+            "loggerhead",
+            "mao",
+            "mfo",
+            "mirnao",
+            "nif_cell",
+            "nif_dysfunction",
+            "nif_grossanatomy",
+            "pao",
+            "pd_st",
+            "pgdso",
+            "plo",
+            "propreo",
+            "sopharm",
+            "tahe",
+            "tahh",
+            "vsao",
+            "ypo",
+            "zea",
+        }
+        for prefix in self.ontologies:
+            if prefix in exceptions:
+                continue
+            with self.subTest(prefix=prefix):
+                url = f"https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config/{prefix}.yml"
+                res = requests.get(url)
+                self.assertEqual(
+                    200,
+                    res.status_code,
+                    msg=f"PURL configuration is missing for {prefix}",
                 )
 
 
