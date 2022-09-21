@@ -30,9 +30,11 @@ Current members of the OBO Foundry Operations Committee are (in alphabetical ord
 - Hector Guzman-Orozco (O), La Jolla Institute for Immunology, La Jolla, CA, USA
 - Nomi Harris (O, T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA
 - [Melissa Haendel](https://www.ohsu.edu/people/melissa-haendel/AFE044BDE8046E5D6FBDA51F448BDE2A) (O), Unversity of Colorado Anschutz Medical Campus, Auroa, CO, USA
+- Bill Hogan (E), University of Florida, Gainseville, FL, USA
 - Rebecca Jackson (T), Intelligent Medical Objects (IMO), Rosemont, IL, USA
 - Nico Matentzoglu (T), Semanticly, Athens, Greece
 - [Chris Mungall](https://github.com/cmungall/) (T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA
+- Hande Küçük McGinty (E, O), Ohio University, Athens, OH, USA
 - [Darren Natale](http://pir.georgetown.edu/pirwww/aboutpir/natalebio.shtml) (E), Georgetown University Medical Center, Washington DC, USA
 - David Osumi-Sutherland (O), EMBL-EBI, Cambridge, UK
 - [James A. Overton](http://james.overton.ca) (T), [Knocean Inc.](http://knocean.com), Toronto, Canada
