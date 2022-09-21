@@ -61,7 +61,7 @@ Create a metadata record for your ontology to be included in the registry:
 
 Here is an example record for the PATO ontology: https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/pato.md?plain=1
 
-Your metadata will be reviewed and merged by a member of the OBO Foundry Operations Committee. Permissable content for fields is being documented [here](https://obofoundry.org/faq/permissible-metadata-content.html).
+Your metadata will be reviewed and merged by a member of the OBO Foundry Operations Committee. Permissible content for fields is being documented [here](https://obofoundry.org/faq/permissible-metadata-content.html).
 
 To create a PURL registry entry for your ontology:
 1. Go to https://github.com/OBOFoundry/purl.obolibrary.org/tree/master/config, click “Add file” and add a file named YOURID.yml.
