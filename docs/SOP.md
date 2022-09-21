@@ -50,7 +50,7 @@ Are axioms generally highly complex? If so, we should review a handful to ensure
 Once a new ontology has been accepted, the following should be used as a template for letting the ontology owner know that, and informing them about the next steps they should take.
 
 The ontology owner should be notified in the ticket and also by email (they were required to supply their email address as part of their new ontology request),
-ccing obo-discuss & obo-operations.
+ccing obo-discuss & obo-operations-committee.
 
 "Thank you again for your ontology submission to the OBO Foundry. We are happy to inform you that your ontology (YOURID) has been accepted following discussion in the OBO Operations Committee meeting, YYYY-MM-DD. Before we can add it to the OBO ontology registry you need to complete the following steps.
 
