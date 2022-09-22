@@ -33,8 +33,8 @@ Current members of the OBO Foundry Operations Committee are (in alphabetical ord
 - Bill Hogan (E), University of Florida, Gainseville, FL, USA
 - Rebecca Jackson (T), Intelligent Medical Objects (IMO), Rosemont, IL, USA
 - Nico Matentzoglu (T), Semanticly, Athens, Greece
+- Hande Küçük McGinty (E, O), Kansas State University, Manhattan, KS, USA
 - [Chris Mungall](https://github.com/cmungall/) (T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA
-- Hande Küçük McGinty (E, O), Ohio University, Athens, OH, USA
 - [Darren Natale](http://pir.georgetown.edu/pirwww/aboutpir/natalebio.shtml) (E), Georgetown University Medical Center, Washington DC, USA
 - David Osumi-Sutherland (O), EMBL-EBI, Cambridge, UK
 - [James A. Overton](http://james.overton.ca) (T), [Knocean Inc.](http://knocean.com), Toronto, Canada
