@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0001-9625-1899
 description: The Oral Health and Disease Ontology was created, initially, to represent the content of dental practice health records.
 domain: health
+cite: Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology
 homepage: https://purl.obolibrary.org/obo/ohd/home
 license:
   label: CC BY 4.0
@@ -41,7 +42,9 @@ terms from the Current Dental Terminology (CDT)
 OHD is in early development and subject to change without notice. 
 
 The current developers of OHD are Alan Ruttenberg(alanruttenberg@gmail.com) and Bill Duncan
-(wdduncan@gmail.com)
+(wdduncan@gmail.com).
+
+To cite the ontology please use [Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology](https://pubmed.ncbi.nlm.nih.gov/32819435/).
 
 Initial work on OHD was funded by the University of Buffalo School of
 Dental Medicine and NIDCR grants 5R21DE021178-02 and 5R03DE023358-02,
