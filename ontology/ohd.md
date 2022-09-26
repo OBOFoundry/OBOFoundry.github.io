@@ -10,11 +10,11 @@ contact:
   github: wdduncan
   label: Bill Duncan
   orcid: 0000-0001-9625-1899
-description: The Oral Health and Disease Ontology was created, initially, to represent the content of dental practice health records.
+description: The Oral Health and Disease Ontology is used for representing the diagnosis and treatment of dental maladies.
 domain: health
 publications: 
-  - id: https://pubmed.ncbi.nlm.nih.gov/32819435/
-    title: Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology
+- id: https://pubmed.ncbi.nlm.nih.gov/32819435/
+  title: Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology
 homepage: https://purl.obolibrary.org/obo/ohd/home
 license:
   label: CC BY 4.0
