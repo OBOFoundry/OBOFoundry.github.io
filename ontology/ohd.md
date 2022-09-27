@@ -23,7 +23,7 @@ products:
   title: OHD dev
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/32819435
-  title: 'Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology'
+  title: Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology
 repository: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
 tracker: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issues
 activity_status: active
