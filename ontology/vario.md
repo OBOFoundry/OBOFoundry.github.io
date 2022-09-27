@@ -12,6 +12,9 @@ contact:
   orcid: 0000-0002-9614-7976
 description: Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations.
 homepage: http://variationontology.org
+license:
+  label: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
 preferredPrefix: VariO
 products:
 - id: vario.owl
