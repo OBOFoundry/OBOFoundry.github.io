@@ -21,5 +21,3 @@ products:
 - id: vario.obo
 activity_status: orphaned
 ---
-
-Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations.
