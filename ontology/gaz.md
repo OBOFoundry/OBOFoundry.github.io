@@ -12,6 +12,7 @@ contact:
   label: Lynn Schriml
   orcid: 0000-0001-8910-9851
 description: A gazetteer constructed on ontological principles
+domain: environment
 homepage: http://environmentontology.github.io/gaz/
 license:
   label: CC0 1.0
