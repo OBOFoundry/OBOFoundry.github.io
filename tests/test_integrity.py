@@ -10,10 +10,10 @@ import requests
 import yaml
 
 from obofoundry.standardize_metadata import ModifiedDumper
+from obofoundry.utils import ONTOLOGY_DIRECTORY, get_data
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
-ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
 SCHEMA_PATH = ROOT.joinpath("util", "schema", "registry_schema.json")
 
 PUBMED_PREFIX = "https://www.ncbi.nlm.nih.gov/pubmed/"
@@ -23,23 +23,6 @@ MEDRXIV_PREFIX = "https://www.medrxiv.org/content/"
 ZENODO_PREFIX = "https://zenodo.org/record/"
 DOI_PREFIX = "https://doi.org/"
 CHEMRXIV_DOI_PREFIX = "https://doi.org/10.26434/chemrxiv"
-
-
-def get_data():
-    """Get ontology data."""
-    ontologies = {}
-    for path in ONTOLOGY_DIRECTORY.glob("*.md"):
-        with open(path) as file:
-            lines = [line.rstrip("\n") for line in file]
-
-        assert lines[0] == "---"
-        idx = min(i for i, line in enumerate(lines[1:], start=1) if line == "---")
-
-        # Load the data like it is YAML
-        data = yaml.safe_load("\n".join(lines[1:idx]))
-        data["long_description"] = "".join(lines[idx:])
-        ontologies[data["id"]] = data
-    return ontologies
 
 
 class TestIntegrity(unittest.TestCase):

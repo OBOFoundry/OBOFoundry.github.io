@@ -9,6 +9,7 @@ build:
 contact:
   email: curator@inoh.org
   label: INOH curators
+domain: chemistry and biochemistry
 homepage: http://www.inoh.org
 is_obsolete: true
 activity_status: inactive

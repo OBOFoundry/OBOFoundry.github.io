@@ -5,6 +5,7 @@ title: Amphibian taxonomy
 contact:
   email: david.c.blackburn@gmail.com
   label: David Blackburn
+domain: organisms
 homepage: http://www.amphibanat.org
 is_obsolete: true
 taxon:
