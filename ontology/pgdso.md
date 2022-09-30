@@ -5,6 +5,7 @@ title: Plant Growth and Development Stage
 contact:
   email: po-discuss@plantontology.org
   label: Plant Ontology Administrators
+domain: anatomy and development
 homepage: http://www.plantontology.org
 is_obsolete: true
 taxon:
