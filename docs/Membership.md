@@ -16,6 +16,27 @@ New members: follow the instructions on the [onboarding doc](https://docs.google
 
 ## Alumni
 
+<table class="table">
+<thead>
+<tr>
+    <th role="columnheader">Name</th>
+    <th role="columnheader">ORCID</th>
+    <th role="columnheader">Note</th>
+</tr>
+</thead>
+<tbody>
+{% for member in site.data.alumni.members %}
+<tr>
+    <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
+    <td>{% if member.orcid %}<a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a>{% endif %}</td>
+    <td>{% if member.note %}{{ member.note }}{% endif %}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+
+
 <ul>
 {% for member in site.data.alumni.members %}
 <li>
