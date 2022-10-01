@@ -19,6 +19,7 @@ class Member(BaseModel):
     name: str
     orcid: str
     affiliation: str
+    country: str
     groups: List[str]
 
 
