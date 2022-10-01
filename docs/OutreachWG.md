@@ -26,7 +26,7 @@ The mailing list for the OBO Foundry Outreach Working Group is <a href='mailto:o
 {% for member in site.data.outreach.members %}
 <tr>
     <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
-    <td>{% if member.orcid %}<a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a>{% endif %}</td>
+    <td><a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a></td>
     <td>{{ member.affiliation }}</td>
 </tr>
 {% endfor %}

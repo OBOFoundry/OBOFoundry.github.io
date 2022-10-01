@@ -30,7 +30,7 @@ The mailing list for the OBO Foundry Technical Working Group is <a href='mailto:
 {% for member in site.data.technical.members %}
 <tr>
     <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
-    <td>{% if member.orcid %}<a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a>{% endif %}</td>
+    <td><a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a></td>
     <td>{{ member.affiliation }}</td>
 </tr>
 {% endfor %}
