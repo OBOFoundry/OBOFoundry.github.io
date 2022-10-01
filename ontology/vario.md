@@ -19,7 +19,11 @@ license:
 preferredPrefix: VariO
 products:
 - id: vario.owl
+  title: VariO in OWL Functional notation
+- id: vario.owx
+- title: VariO in OWL RDF/XML
 - id: vario.obo
+  title: VariO in OBO
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/24162187
   title: Variation Ontology for annotation of variation effects and mechanisms
