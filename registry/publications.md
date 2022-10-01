@@ -74,6 +74,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 - Ontology of Host Pathogen Interactions (ohpi): [Victors: a web-based knowledge base of virulence factors in human and animal pathogens](https://www.ncbi.nlm.nih.gov/pubmed/30365026)
 - Ontology of Medically Related Social Entities (omrse): [The ontology of medically related social entities: recent developments](https://www.ncbi.nlm.nih.gov/pubmed/27406187)
 - Ontology of Microbial Phenotypes (omp): [An ontology for microbial phenotypes](https://doi.org/10.1186/s12866-014-0294-3)
+- Oral Health and Disease Ontology (ohd): [Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology](https://www.ncbi.nlm.nih.gov/pubmed/32819435)
 - PRotein Ontology (PRO) (pr): [Protein Ontology (PRO): enhancing and scaling up the representation of protein entities](https://www.ncbi.nlm.nih.gov/pubmed/27899649)
 - Pathogen Host Interaction Phenotype Ontology (phipo): [PHI-base in 2022: a multi-species phenotype database for Pathogen-Host Interactions](https://www.ncbi.nlm.nih.gov/pubmed/34788826)
 - Pathogen Transmission Ontology (trans): [GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database](https://www.ncbi.nlm.nih.gov/pubmed/19850722)

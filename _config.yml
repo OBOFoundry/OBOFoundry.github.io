@@ -4557,8 +4557,8 @@ ontologies:
     github: wdduncan
     label: Bill Duncan
     orcid: 0000-0001-9625-1899
-  description: The Oral Health and Disease Ontology was created, initially, to represent
-    the content of dental practice health records.
+  description: The Oral Health and Disease Ontology is used for representing the diagnosis
+    and treatment of dental maladies.
   domain: health
   homepage: https://purl.obolibrary.org/obo/ohd/home
   id: ohd
@@ -4575,6 +4575,10 @@ ontologies:
   - id: ohd/dev/ohd.owl
     ontology_purl: http://purl.obolibrary.org/obo/ohd/dev/ohd.owl
     title: OHD dev
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/32819435
+    title: Structuring, reuse and analysis of electronic dental data using the Oral
+      Health and Disease Ontology
   repository: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
   title: Oral Health and Disease Ontology
   tracker: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issues
@@ -8085,6 +8089,7 @@ ontologies:
     label: Lynn Schriml
     orcid: 0000-0001-8910-9851
   description: A gazetteer constructed on ontological principles
+  domain: environment
   homepage: http://environmentontology.github.io/gaz/
   id: gaz
   layout: ontology_detail

@@ -3873,9 +3873,10 @@ _:b207  <http://www.w3.org/2000/01/rdf-schema#label>  "Asiyah Yu Lin" ;
         <http://identifiers.org/preferredPrefix>  "OHD" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b208 ;
-        <http://purl.org/dc/elements/1.1/description>  "The Oral Health and Disease Ontology was created, initially, to represent the content of dental practice health records." ;
+        <http://purl.org/dc/elements/1.1/description>  "The Oral Health and Disease Ontology is used for representing the diagnosis and treatment of dental maladies." ;
         <http://purl.org/dc/elements/1.1/title>  "Oral Health and Disease Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/32819435> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ohd.owl" ;
@@ -3886,6 +3887,9 @@ _:b207  <http://www.w3.org/2000/01/rdf-schema#label>  "Asiyah Yu Lin" ;
 
 _:b208  <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "http://purl.obolibrary.org/obo/ohd.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/32819435>
+        <http://purl.org/dc/elements/1.1/title>  "Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology" .
 
 _:b209  <http://www.w3.org/2000/01/rdf-schema#label>  "Bill Duncan" ;
         <http://xmlns.com/foaf/0.1/mbox>  "wdduncan@gmail.com" .
@@ -6078,6 +6082,7 @@ _:b245  <http://www.w3.org/2000/01/rdf-schema#label>  "Rahuman Sheriff" ;
         <http://purl.org/dc/elements/1.1/description>  "A gazetteer constructed on ontological principles" ;
         <http://purl.org/dc/elements/1.1/title>  "Gazetteer" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
+        <http://purl.org/dc/terms/1.1/theme>  "environment" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/EnvironmentOntology/gaz/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "https://groups.google.com/forum/#!forum/obo-gazetteer" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/gaz.owl" ;
