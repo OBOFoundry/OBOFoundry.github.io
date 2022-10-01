@@ -2,6 +2,7 @@
 
 import unittest
 from pathlib import Path
+from typing import List
 
 import yaml
 from pydantic import BaseModel
@@ -23,7 +24,7 @@ class Group(BaseModel):
     """Representation of a working group."""
 
     name: str
-    members: list[Member]
+    members: List[Member]
 
 
 class TestMembershipData(unittest.TestCase):
