@@ -6,6 +6,7 @@ contact:
   email: topalis@imbb.forth.gr
   label: Pantelis Topalis
 description: An application ontology for use with miRNA databases.
+domain: chemistry and biochemistry
 homepage: http://code.google.com/p/mirna-ontology/
 is_obsolete: true
 license:

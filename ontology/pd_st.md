@@ -5,6 +5,7 @@ title: Platynereis stage ontology
 contact:
   email: henrich@embl.de
   label: Thorsten Heinrich
+domain: anatomy and development
 homepage: http://4dx.embl.de/platy
 is_obsolete: true
 replaced_by: pdumdv
