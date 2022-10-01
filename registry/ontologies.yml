@@ -1601,6 +1601,72 @@ ontologies:
   tracker: https://github.com/echinoderm-ontology/ecao_ontology/issues
 - activity_status: active
   build:
+    infallible: 1
+    method: obo2owl
+    notes: switch to vcs
+    source_url: https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.obo
+  contact:
+    email: mgiglio@som.umaryland.edu
+    github: mgiglio99
+    label: Michelle Giglio
+    orcid: 0000-0001-7628-5565
+  depicted_by: https://avatars1.githubusercontent.com/u/12802432
+  description: An ontology for experimental and other evidence statements.
+  domain: investigations
+  funded_by:
+  - id: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400
+    title: NSF ABI-1458400
+  homepage: https://www.evidenceontology.org
+  id: eco
+  jobs:
+  - id: https://travis-ci.org/evidenceontology/evidenceontology
+    type: travis-ci
+  layout: ontology_detail
+  license:
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  ontology_purl: http://purl.obolibrary.org/obo/eco.owl
+  preferredPrefix: ECO
+  products:
+  - id: eco.owl
+    ontology_purl: http://purl.obolibrary.org/obo/eco.owl
+  - id: eco.obo
+    ontology_purl: http://purl.obolibrary.org/obo/eco.obo
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
+    preferred: true
+    title: 'ECO, the Evidence & Conclusion Ontology: community standard for evidence
+      information.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25052702
+    title: Standardized description of scientific evidence using the Evidence Ontology
+      (ECO)
+  repository: https://github.com/evidenceontology/evidenceontology
+  title: Evidence ontology
+  tracker: https://github.com/evidenceontology/evidenceontology/issues
+  usages:
+  - description: ECO is used by the GO consortium for evidence on GO associations
+    examples:
+    - description: annotations to transmembrane transport
+      url: http://amigo.geneontology.org/amigo/term/GO:0055085
+    type: annotation
+    user: http://geneontology.org
+  - description: ECO is used by the Monarch Initiative for evidence types for disease
+      to phenotype annotations.
+    examples:
+    - description: 'Parkinsonism: Characteristic neurologic anomaly resulting form
+        degeneration of dopamine-generating cells in the substantia nigra, a region
+        of the midbrain, characterized clinically by shaking, rigidity, slowness of
+        movement and difficulty with walking and gait.'
+      url: https://monarchinitiative.org/phenotype/HP%3A0001300#disease
+    publications:
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/27899636
+      title: 'The Monarch Initiative: an integrative data and analytic platform connecting
+        phenotypes to genotypes across species'
+    type: annotation
+    user: https://monarchinitiative.org/
+- activity_status: active
+  build:
     checkout: git clone https://github.com/EcologicalSemantics/ecocore.git
     path: .
     system: git
@@ -4205,6 +4271,51 @@ ontologies:
   tracker: https://github.com/OmniSearch/ncro/issues
 - activity_status: active
   build:
+    checkout: git clone https://github.com/SpeciesFileGroup/nomen.git
+    system: git
+  canonical: nomen.owl
+  contact:
+    email: diapriid@gmail.com
+    github: mjy
+    label: Matt Yoder
+    orcid: 0000-0002-5640-5491
+  description: NOMEN is a nomenclatural ontology for biological names (not concepts).  It
+    encodes the goverened rules of nomenclature.
+  domain: information
+  funded_by:
+  - id: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1356381
+    title: NSF ABI-1356381
+  homepage: https://github.com/SpeciesFileGroup/nomen
+  id: nomen
+  label: NOMEN
+  layout: ontology_detail
+  license:
+    label: CC0 1.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
+    url: https://creativecommons.org/publicdomain/zero/1.0/
+  mailing_list: https://groups.google.com/forum/#!forum/nomen-discuss
+  ontology_purl: http://purl.obolibrary.org/obo/nomen.owl
+  preferredPrefix: NOMEN
+  products:
+  - description: core ontology
+    id: nomen.owl
+    is_canonical: true
+    ontology_purl: http://purl.obolibrary.org/obo/nomen.owl
+    title: NOMEN
+    type: owl:Ontology
+  repository: https://github.com/SpeciesFileGroup/nomen
+  tags:
+  - biological nomenclature
+  title: NOMEN - A nomenclatural ontology for biological names
+  tracker: https://github.com/SpeciesFileGroup/nomen/issues
+  usages:
+  - description: TaxonWorks is an integrated web-based workbench for taxonomists and
+      biodiversity scientists.
+    seeAlso: https://github.com/SpeciesFileGroup/taxonworks
+    type: application
+    user: https://taxonworks.org
+- activity_status: active
+  build:
     method: owl2obo
     source_url: https://raw.githubusercontent.com/OAE-ontology/OAE/master/src/oae_merged.owl
   contact:
@@ -6467,6 +6578,218 @@ ontologies:
   title: Toxic Process Ontology
   tracker: https://github.com/txpo-ontology/TXPO/issues
 - activity_status: active
+  browsers:
+  - label: RGD
+    title: Gene Ontology AmiGO 2 Browser
+    url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=UBERON:0001062
+  - label: AmiGO (SUBSET)
+    title: Gene Ontology AmiGO 2 Browser
+    url: http://amigo.geneontology.org/amigo/term/UBERON:0001062#display-lineage-tab
+  - label: Bgee (gene expression)
+    title: Bgee gene expression queries
+    url: http://bgee.org/?page=gene
+  - label: FANTOM5
+    title: FANTOM5 Data Portal
+    url: http://fantom.gsc.riken.jp/5/sstar/UBERON:0001890
+  - label: KnowledgeSpace
+    title: INCF KnowledgeSpace Portal
+    url: https://knowledge-space.org/index.php/pages/view/UBERON:0000061
+  build:
+    checkout: svn --ignore-externals co http://svn.code.sf.net/p/obo/svn/uberon/trunk
+    email_cc: cjmungall@lbl.gov
+    infallible: 1
+    method: vcs
+    system: svn
+  canonical: uberon.owl
+  contact:
+    email: cjmungall@lbl.gov
+    github: cmungall
+    label: Chris Mungall
+    orcid: 0000-0002-6601-2165
+  dependencies:
+  - id: chebi
+    subset: uberon/chebi_import.owl
+  - id: cl
+    subset: uberon/cl_import.owl
+  - id: go
+    subset: uberon/go_import.owl
+  - id: pr
+    subset: uberon/pr_import.owl
+  depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/uberon-logos/uberon_logo_black-banner.png
+  description: An integrated cross-species anatomy ontology covering animals and bridging
+    multiple species-specific ontologies
+  domain: anatomy and development
+  funded_by:
+  - id: https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=R24OD011883&arg_ProgOfficeCode=205
+    title: NIH R24-OD011883
+  - id: https://grantome.com/grant/NIH/R01-HG004838
+    title: NIH R01-HG004838
+  - id: https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=P41HG002273&arg_ProgOfficeCode=55
+    title: NIH P41-HG002273
+  - id: https://www.nsf.gov/awardsearch/showAward?AWD_ID=0956049
+    title: NSF DEB-0956049
+  homepage: http://uberon.org
+  id: uberon
+  label: Uberon
+  layout: ontology_detail
+  license:
+    label: CC BY 3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
+  ontology_purl: http://purl.obolibrary.org/obo/uberon.owl
+  page: http://en.wikipedia.org/wiki/Uberon
+  preferredPrefix: UBERON
+  products:
+  - description: core ontology
+    id: uberon.owl
+    is_canonical: true
+    ontology_purl: http://purl.obolibrary.org/obo/uberon.owl
+    title: Uberon
+    type: owl:Ontology
+  - description: Axioms defined within Uberon and to be used in imports for other
+      ontologies
+    id: uberon/uberon-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/uberon/uberon-base.owl
+    page: https://github.com/INCATools/ontology-development-kit/issues/50
+    title: Uberon base ontology
+  - description: Uberon extended
+    id: uberon/ext.owl
+    mireots_from: cl
+    ontology_purl: http://purl.obolibrary.org/obo/uberon/ext.owl
+    title: Uberon edition that includes subsets of other ontologies and axioms connecting
+      to them
+    type: owl:Ontology
+  - description: Uberon edition that excludes external ontologies and most relations
+    format: obo
+    id: uberon/basic.obo
+    ontology_purl: http://purl.obolibrary.org/obo/uberon/basic.obo
+    title: Uberon basic
+    type: obo-basic-ontology
+  - connects:
+    - id: uberon
+    - id: zfa
+    description: Taxonomic equivalence axioms connecting zebrafish-specific classes
+      to generic uberon counterparts
+    id: uberon/bridge/uberon-bridge-to-zfa.owl
+    ontology_purl: http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-zfa.owl
+    page: https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies
+    title: Uberon bridge to ZFA
+    type: BridgeOntology
+  - connects:
+    - id: uberon
+    - id: ma
+    description: Taxonomic equivalence axioms connecting adult mouse specific classes
+      to generic uberon counterparts
+    id: uberon/bridge/uberon-bridge-to-ma.owl
+    ontology_purl: http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-ma.owl
+    page: https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies
+    title: Uberon bridge to MA
+    type: BridgeOntology
+  - description: Extended uberon plus all metazoan ontologies
+    id: uberon/composite-metazoan.owl
+    ontology_purl: http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl
+    page: https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies
+    taxon: Metazoa
+    title: Uberon composite metazoan ontology
+    type: MergedOntology
+  - id: uberon/composite-vertebrate.owl
+    mireots_from:
+    - zfa
+    - xao
+    - fbbt
+    - wbbt
+    - ma
+    - fma
+    - emapa
+    - ehdaa2
+    ontology_purl: http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl
+    page: https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies
+    taxon: Metazoa
+    title: Uberon composite vertebrate ontology
+    type: MergedOntology
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/22293552
+    title: Uberon, an integrative multi-species anatomy ontology
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25009735
+    title: Unification of multi-species vertebrate anatomy ontologies for comparative
+      biology in Uberon
+  releases: http://purl.obolibrary.org/obo/uberon/releases/
+  repository: https://github.com/obophenotype/uberon
+  slack: https://obo-communitygroup.slack.com/archives/C01CR698CF2
+  taxon:
+    id: NCBITaxon:33208
+    label: Metazoa
+  title: Uberon multi-species anatomy ontology
+  tracker: https://github.com/obophenotype/uberon/issues
+  twitter: uberanat
+  usages:
+  - description: Bgee is a database to retrieve and compare gene expression patterns
+      between animal species. Bgee in using Uberon to annotate the site of expression,
+      and Bgee curators one the major contributors to the ontology.
+    examples:
+    - description: Uberon terms used to annotate expression of human hemoglobin subunit
+        beta
+      url: http://bgee.org/?page=gene&gene_id=ENSG00000244734
+    seeAlso: https://www.biosharing.org/biodbcore-000228
+    type: annotation
+    user: http://bgee.org/
+  - description: The National Human Genome Research Institute (NHGRI) launched a public
+      research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September
+      2003, to carry out a project to identify all functional elements in the human
+      genome sequence. The ENCODE DCC users Uberon to annotate samples
+    publications:
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/25776021
+      title: Ontology application and use at the ENCODE DCC
+    seeAlso: https://www.biosharing.org/biodbcore-000034
+    type: annotation
+    user: https://www.encodeproject.org/
+  - description: FANTOM5 is using Uberon and CL to annotate samples allowing for transcriptome
+      analyses with cell-type and tissue-level specificity.
+    examples:
+    - description: FANTOM5 samples annotated to telencephalon or its parts
+      url: http://fantom.gsc.riken.jp/5/sstar/UBERON:0001893
+    type: annotation
+    user: http://fantom5-collaboration.gsc.riken.jp/
+  - description: Querying expression and phenotype data
+    type: query
+    user: https://monarchinitiative.org/
+  - description: GO Database is used for querying for functional annotations relevant
+      to a tissue
+    examples:
+    - description: GO annotations relevant to the uberon class for brain
+      url: http://amigo.geneontology.org/amigo/term/UBERON:0000955
+    type: query
+    user: https://geneontology.org/
+  - description: The Phenoscape project is both a major driver of and contributor
+      to Uberon, contibuting thousands of terms. The teleost (bony fishes) component
+      of Uberon was derived from the Teleost Anatomy Ontology, developed by the Phenoscape
+      group. Most of the high level design of the skeletal system comes from the Vertebrate
+      Skeletal Anatomy Ontology (VSAO), also created by the Phenoscape group. Phenoscape
+      curators continue to extend the ontology, covering a wide variety of tetrapod
+      structures, with an emphasis on the appendicular system.
+    user: http://phenoscape.org
+  - description: Searchable collection of neuroscience data and ontology for neuroscience
+    type: Database
+    user: https://neuinfo.org/
+  - description: cooperative data platform to be used by diverse communities in making
+      data more FAIR.
+    type: Database
+    user: https://scicrunch.org/
+  - description: SCPortalen
+    publications:
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/29045713
+      title: 'SCPortalen: human and mouse single-cell centric database'
+    type: Database
+    user: http://single-cell.clst.riken.jp/
+  - description: ChEMBL uses Uberon to describe organ/tissue information in assays
+    publications:
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/30398643
+      title: 'ChEMBL: towards direct deposition of bioassay data'
+    type: Database
+    user: https://www.ebi.ac.uk/chembl/
+  wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
+- activity_status: active
   build:
     method: obo2owl
     source_url: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo
@@ -7220,329 +7543,6 @@ ontologies:
     user: https://monarchinitiative.org/
 - activity_status: active
   build:
-    infallible: 1
-    method: obo2owl
-    notes: switch to vcs
-    source_url: https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.obo
-  contact:
-    email: mgiglio@som.umaryland.edu
-    github: mgiglio99
-    label: Michelle Giglio
-    orcid: 0000-0001-7628-5565
-  depicted_by: https://avatars1.githubusercontent.com/u/12802432
-  description: An ontology for experimental and other evidence statements.
-  domain: investigations
-  funded_by:
-  - id: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400
-    title: NSF ABI-1458400
-  homepage: https://www.evidenceontology.org
-  id: eco
-  jobs:
-  - id: https://travis-ci.org/evidenceontology/evidenceontology
-    type: travis-ci
-  layout: ontology_detail
-  license:
-    label: CC0 1.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
-  ontology_purl: http://purl.obolibrary.org/obo/eco.owl
-  preferredPrefix: ECO
-  products:
-  - id: eco.owl
-    ontology_purl: http://purl.obolibrary.org/obo/eco.owl
-  - id: eco.obo
-    ontology_purl: http://purl.obolibrary.org/obo/eco.obo
-  publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
-    preferred: true
-    title: 'ECO, the Evidence & Conclusion Ontology: community standard for evidence
-      information.'
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/25052702
-    title: Standardized description of scientific evidence using the Evidence Ontology
-      (ECO)
-  repository: https://github.com/evidenceontology/evidenceontology
-  title: Evidence ontology
-  tracker: https://github.com/evidenceontology/evidenceontology/issues
-  usages:
-  - description: ECO is used by the GO consortium for evidence on GO associations
-    examples:
-    - description: annotations to transmembrane transport
-      url: http://amigo.geneontology.org/amigo/term/GO:0055085
-    type: annotation
-    user: http://geneontology.org
-  - description: ECO is used by the Monarch Initiative for evidence types for disease
-      to phenotype annotations.
-    examples:
-    - description: 'Parkinsonism: Characteristic neurologic anomaly resulting form
-        degeneration of dopamine-generating cells in the substantia nigra, a region
-        of the midbrain, characterized clinically by shaking, rigidity, slowness of
-        movement and difficulty with walking and gait.'
-      url: https://monarchinitiative.org/phenotype/HP%3A0001300#disease
-    publications:
-    - id: https://www.ncbi.nlm.nih.gov/pubmed/27899636
-      title: 'The Monarch Initiative: an integrative data and analytic platform connecting
-        phenotypes to genotypes across species'
-    type: annotation
-    user: https://monarchinitiative.org/
-- activity_status: active
-  build:
-    checkout: git clone https://github.com/SpeciesFileGroup/nomen.git
-    system: git
-  canonical: nomen.owl
-  contact:
-    email: diapriid@gmail.com
-    github: mjy
-    label: Matt Yoder
-    orcid: 0000-0002-5640-5491
-  description: NOMEN is a nomenclatural ontology for biological names (not concepts).  It
-    encodes the goverened rules of nomenclature.
-  domain: information
-  funded_by:
-  - id: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1356381
-    title: NSF ABI-1356381
-  homepage: https://github.com/SpeciesFileGroup/nomen
-  id: nomen
-  label: NOMEN
-  layout: ontology_detail
-  license:
-    label: CC0 1.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png
-    url: https://creativecommons.org/publicdomain/zero/1.0/
-  mailing_list: https://groups.google.com/forum/#!forum/nomen-discuss
-  ontology_purl: http://purl.obolibrary.org/obo/nomen.owl
-  preferredPrefix: NOMEN
-  products:
-  - description: core ontology
-    id: nomen.owl
-    is_canonical: true
-    ontology_purl: http://purl.obolibrary.org/obo/nomen.owl
-    title: NOMEN
-    type: owl:Ontology
-  repository: https://github.com/SpeciesFileGroup/nomen
-  tags:
-  - biological nomenclature
-  title: NOMEN - A nomenclatural ontology for biological names
-  tracker: https://github.com/SpeciesFileGroup/nomen/issues
-  usages:
-  - description: TaxonWorks is an integrated web-based workbench for taxonomists and
-      biodiversity scientists.
-    seeAlso: https://github.com/SpeciesFileGroup/taxonworks
-    type: application
-    user: https://taxonworks.org
-- activity_status: active
-  browsers:
-  - label: RGD
-    title: Gene Ontology AmiGO 2 Browser
-    url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=UBERON:0001062
-  - label: AmiGO (SUBSET)
-    title: Gene Ontology AmiGO 2 Browser
-    url: http://amigo.geneontology.org/amigo/term/UBERON:0001062#display-lineage-tab
-  - label: Bgee (gene expression)
-    title: Bgee gene expression queries
-    url: http://bgee.org/?page=gene
-  - label: FANTOM5
-    title: FANTOM5 Data Portal
-    url: http://fantom.gsc.riken.jp/5/sstar/UBERON:0001890
-  - label: KnowledgeSpace
-    title: INCF KnowledgeSpace Portal
-    url: https://knowledge-space.org/index.php/pages/view/UBERON:0000061
-  build:
-    checkout: svn --ignore-externals co http://svn.code.sf.net/p/obo/svn/uberon/trunk
-    email_cc: cjmungall@lbl.gov
-    infallible: 1
-    method: vcs
-    system: svn
-  canonical: uberon.owl
-  contact:
-    email: cjmungall@lbl.gov
-    github: cmungall
-    label: Chris Mungall
-    orcid: 0000-0002-6601-2165
-  dependencies:
-  - id: chebi
-    subset: uberon/chebi_import.owl
-  - id: cl
-    subset: uberon/cl_import.owl
-  - id: go
-    subset: uberon/go_import.owl
-  - id: pr
-    subset: uberon/pr_import.owl
-  depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/uberon-logos/uberon_logo_black-banner.png
-  description: An integrated cross-species anatomy ontology covering animals and bridging
-    multiple species-specific ontologies
-  domain: anatomy and development
-  funded_by:
-  - id: https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=R24OD011883&arg_ProgOfficeCode=205
-    title: NIH R24-OD011883
-  - id: https://grantome.com/grant/NIH/R01-HG004838
-    title: NIH R01-HG004838
-  - id: https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=P41HG002273&arg_ProgOfficeCode=55
-    title: NIH P41-HG002273
-  - id: https://www.nsf.gov/awardsearch/showAward?AWD_ID=0956049
-    title: NSF DEB-0956049
-  homepage: http://uberon.org
-  id: uberon
-  label: Uberon
-  layout: ontology_detail
-  license:
-    label: CC BY 3.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
-  mailing_list: https://lists.sourceforge.net/lists/listinfo/obo-anatomy
-  ontology_purl: http://purl.obolibrary.org/obo/uberon.owl
-  page: http://en.wikipedia.org/wiki/Uberon
-  preferredPrefix: UBERON
-  products:
-  - description: core ontology
-    id: uberon.owl
-    is_canonical: true
-    ontology_purl: http://purl.obolibrary.org/obo/uberon.owl
-    title: Uberon
-    type: owl:Ontology
-  - description: Axioms defined within Uberon and to be used in imports for other
-      ontologies
-    id: uberon/uberon-base.owl
-    ontology_purl: http://purl.obolibrary.org/obo/uberon/uberon-base.owl
-    page: https://github.com/INCATools/ontology-development-kit/issues/50
-    title: Uberon base ontology
-  - description: Uberon extended
-    id: uberon/ext.owl
-    mireots_from: cl
-    ontology_purl: http://purl.obolibrary.org/obo/uberon/ext.owl
-    title: Uberon edition that includes subsets of other ontologies and axioms connecting
-      to them
-    type: owl:Ontology
-  - description: Uberon edition that excludes external ontologies and most relations
-    format: obo
-    id: uberon/basic.obo
-    ontology_purl: http://purl.obolibrary.org/obo/uberon/basic.obo
-    title: Uberon basic
-    type: obo-basic-ontology
-  - connects:
-    - id: uberon
-    - id: zfa
-    description: Taxonomic equivalence axioms connecting zebrafish-specific classes
-      to generic uberon counterparts
-    id: uberon/bridge/uberon-bridge-to-zfa.owl
-    ontology_purl: http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-zfa.owl
-    page: https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies
-    title: Uberon bridge to ZFA
-    type: BridgeOntology
-  - connects:
-    - id: uberon
-    - id: ma
-    description: Taxonomic equivalence axioms connecting adult mouse specific classes
-      to generic uberon counterparts
-    id: uberon/bridge/uberon-bridge-to-ma.owl
-    ontology_purl: http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-ma.owl
-    page: https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies
-    title: Uberon bridge to MA
-    type: BridgeOntology
-  - description: Extended uberon plus all metazoan ontologies
-    id: uberon/composite-metazoan.owl
-    ontology_purl: http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl
-    page: https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies
-    taxon: Metazoa
-    title: Uberon composite metazoan ontology
-    type: MergedOntology
-  - id: uberon/composite-vertebrate.owl
-    mireots_from:
-    - zfa
-    - xao
-    - fbbt
-    - wbbt
-    - ma
-    - fma
-    - emapa
-    - ehdaa2
-    ontology_purl: http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl
-    page: https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies
-    taxon: Metazoa
-    title: Uberon composite vertebrate ontology
-    type: MergedOntology
-  publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/22293552
-    title: Uberon, an integrative multi-species anatomy ontology
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/25009735
-    title: Unification of multi-species vertebrate anatomy ontologies for comparative
-      biology in Uberon
-  releases: http://purl.obolibrary.org/obo/uberon/releases/
-  repository: https://github.com/obophenotype/uberon
-  slack: https://obo-communitygroup.slack.com/archives/C01CR698CF2
-  taxon:
-    id: NCBITaxon:33208
-    label: Metazoa
-  title: Uberon multi-species anatomy ontology
-  tracker: https://github.com/obophenotype/uberon/issues
-  twitter: uberanat
-  usages:
-  - description: Bgee is a database to retrieve and compare gene expression patterns
-      between animal species. Bgee in using Uberon to annotate the site of expression,
-      and Bgee curators one the major contributors to the ontology.
-    examples:
-    - description: Uberon terms used to annotate expression of human hemoglobin subunit
-        beta
-      url: http://bgee.org/?page=gene&gene_id=ENSG00000244734
-    seeAlso: https://www.biosharing.org/biodbcore-000228
-    type: annotation
-    user: http://bgee.org/
-  - description: The National Human Genome Research Institute (NHGRI) launched a public
-      research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September
-      2003, to carry out a project to identify all functional elements in the human
-      genome sequence. The ENCODE DCC users Uberon to annotate samples
-    publications:
-    - id: https://www.ncbi.nlm.nih.gov/pubmed/25776021
-      title: Ontology application and use at the ENCODE DCC
-    seeAlso: https://www.biosharing.org/biodbcore-000034
-    type: annotation
-    user: https://www.encodeproject.org/
-  - description: FANTOM5 is using Uberon and CL to annotate samples allowing for transcriptome
-      analyses with cell-type and tissue-level specificity.
-    examples:
-    - description: FANTOM5 samples annotated to telencephalon or its parts
-      url: http://fantom.gsc.riken.jp/5/sstar/UBERON:0001893
-    type: annotation
-    user: http://fantom5-collaboration.gsc.riken.jp/
-  - description: Querying expression and phenotype data
-    type: query
-    user: https://monarchinitiative.org/
-  - description: GO Database is used for querying for functional annotations relevant
-      to a tissue
-    examples:
-    - description: GO annotations relevant to the uberon class for brain
-      url: http://amigo.geneontology.org/amigo/term/UBERON:0000955
-    type: query
-    user: https://geneontology.org/
-  - description: The Phenoscape project is both a major driver of and contributor
-      to Uberon, contibuting thousands of terms. The teleost (bony fishes) component
-      of Uberon was derived from the Teleost Anatomy Ontology, developed by the Phenoscape
-      group. Most of the high level design of the skeletal system comes from the Vertebrate
-      Skeletal Anatomy Ontology (VSAO), also created by the Phenoscape group. Phenoscape
-      curators continue to extend the ontology, covering a wide variety of tetrapod
-      structures, with an emphasis on the appendicular system.
-    user: http://phenoscape.org
-  - description: Searchable collection of neuroscience data and ontology for neuroscience
-    type: Database
-    user: https://neuinfo.org/
-  - description: cooperative data platform to be used by diverse communities in making
-      data more FAIR.
-    type: Database
-    user: https://scicrunch.org/
-  - description: SCPortalen
-    publications:
-    - id: https://www.ncbi.nlm.nih.gov/pubmed/29045713
-      title: 'SCPortalen: human and mouse single-cell centric database'
-    type: Database
-    user: http://single-cell.clst.riken.jp/
-  - description: ChEMBL uses Uberon to describe organ/tissue information in assays
-    publications:
-    - id: https://www.ncbi.nlm.nih.gov/pubmed/30398643
-      title: 'ChEMBL: towards direct deposition of bioassay data'
-    type: Database
-    user: https://www.ebi.ac.uk/chembl/
-  wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
-- activity_status: active
-  build:
     checkout: git clone https://github.com/Superraptor/GSSO.git
     path: .
     system: git
@@ -7827,6 +7827,7 @@ ontologies:
     email: null
     label: chEBI
   description: An ontology of physico-chemical methods and properties.
+  domain: chemistry and biochemistry
   homepage: http://www.ebi.ac.uk/chebi
   id: fix
   in_foundry: false
@@ -7867,6 +7868,7 @@ ontologies:
     source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo
   description: An ontology of physico-chemical processes, i.e. physico-chemical changes
     occurring in course of time.
+  domain: chemistry and biochemistry
   id: rex
   layout: ontology_detail
   ontology_purl: http://purl.obolibrary.org/obo/rex.owl
@@ -7913,6 +7915,7 @@ ontologies:
     label: Mauno Vihinen
   description: Variation Ontology, VariO, is an ontology for standardized, systematic
     description of effects, consequences and mechanisms of variations.
+  domain: biological systems
   homepage: http://variationontology.org
   id: vario
   layout: ontology_detail
@@ -8261,6 +8264,7 @@ ontologies:
   contact:
     email: david.c.blackburn@gmail.com
     label: David Blackburn
+  domain: anatomy and development
   homepage: http://github.com/seger/aao
   id: aao
   is_obsolete: true
@@ -8274,6 +8278,7 @@ ontologies:
   contact:
     email: adw_geeks@umich.edu
     label: Animal Diversity Web technical staff
+  domain: organisms
   homepage: http://www.animaldiversity.org
   id: adw
   is_obsolete: true
@@ -8307,6 +8312,7 @@ ontologies:
   contact:
     email: david.c.blackburn@gmail.com
     label: David Blackburn
+  domain: organisms
   homepage: http://www.amphibanat.org
   id: ato
   is_obsolete: true
@@ -8322,6 +8328,7 @@ ontologies:
     label: Jie Zheng
     orcid: 0000-0002-2999-0103
   description: An application ontology built for beta cell genomics studies.
+  domain: anatomy and development
   homepage: https://github.com/obi-bcgo/bcgo
   id: bcgo
   in_foundry: false
@@ -8362,6 +8369,7 @@ ontologies:
   contact:
     email: vlee@ebi.ac.uk
     label: Vivian Lee
+  domain: chemistry and biochemistry
   homepage: http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html
   id: bootstrep
   is_obsolete: true
@@ -8373,6 +8381,7 @@ ontologies:
     email: engelsta@ohsu.edu
     label: Mark Engelstad
     orcid: 0000-0001-5889-4463
+  domain: health
   homepage: https://code.google.com/p/craniomaxillofacial-ontology/
   id: cmf
   is_obsolete: true
@@ -8383,6 +8392,7 @@ ontologies:
     email: Lindsay.Cowell@utsouthwestern.edu
     label: Lindsay Cowell
     orcid: 0000-0003-1617-8244
+  domain: anatomy and development
   homepage: http://www.dukeontologygroup.org/Projects.html
   id: dc_cl
   is_obsolete: true
@@ -8420,6 +8430,7 @@ ontologies:
   contact:
     email: J.Bard@ed.ac.uk
     label: Jonathan Bard
+  domain: anatomy and development
   homepage: http://genex.hgu.mrc.ac.uk/
   id: ehda
   is_obsolete: true
@@ -8433,6 +8444,7 @@ ontologies:
   contact:
     email: J.Bard@ed.ac.uk
     label: Jonathan Bard
+  domain: anatomy and development
   homepage: null
   id: ehdaa
   is_obsolete: true
@@ -8520,6 +8532,7 @@ ontologies:
     source_url: http://purl.obolibrary.org/obo/epo.owl
   description: An ontology designed to support the semantic annotation of epidemiology
     resources
+  domain: health
   homepage: https://code.google.com/p/epidemiology-ontology/
   id: epo
   in_foundry: false
@@ -8558,6 +8571,7 @@ ontologies:
   contact:
     email: evoc@sanbi.ac.za
     label: eVOC mailing list
+  domain: anatomy and development
   homepage: http://www.evocontology.org/
   id: ev
   is_obsolete: true
@@ -8611,6 +8625,7 @@ ontologies:
   contact:
     email: po-discuss@plantontology.org
     label: Plant Ontology Administrators
+  domain: anatomy and development
   homepage: http://www.gramene.org/plant_ontology/
   id: gro
   is_obsolete: true
@@ -8621,6 +8636,7 @@ ontologies:
     email: peteremidford@yahoo.com
     label: Peter Midford
     orcid: 0000-0001-6512-3296
+  domain: organisms
   homepage: http://www.mesquiteproject.org/ontology/Habronattus/index.html
   id: habronattus
   is_obsolete: true
@@ -8631,6 +8647,7 @@ ontologies:
     insert_ontology_id: true
     method: obo2owl
     source_url: http://download.baderlab.org/INOH/ontologies/EventOntology_172.obo
+  domain: chemistry and biochemistry
   homepage: http://www.inoh.org
   id: iev
   is_obsolete: true
@@ -8644,6 +8661,7 @@ ontologies:
   contact:
     email: curator@inoh.org
     label: INOH curators
+  domain: chemistry and biochemistry
   homepage: http://www.inoh.org
   id: imr
   is_obsolete: true
@@ -8653,6 +8671,7 @@ ontologies:
   contact:
     email: interhelp@ebi.ac.uk
     label: InterPro Help
+  domain: chemistry and biochemistry
   homepage: http://www.ebi.ac.uk/interpro/index.html
   id: ipr
   is_obsolete: true
@@ -8679,6 +8698,7 @@ ontologies:
     email: peteremidford@yahoo.com
     label: Peter Midford
     orcid: 0000-0001-6512-3296
+  domain: organisms
   homepage: http://www.mesquiteproject.org/ontology/Loggerhead/index.html
   id: loggerhead
   is_obsolete: true
@@ -8688,6 +8708,7 @@ ontologies:
   contact:
     email: julie@igbmc.u-strasbg.fr
     label: Julie Thompson
+  domain: chemistry and biochemistry
   homepage: http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html
   id: mao
   is_obsolete: true
@@ -8697,6 +8718,7 @@ ontologies:
   contact:
     email: j.bard@ed.ac.uk
     label: Jonathan Bard
+  domain: anatomy and development
   homepage: null
   id: mat
   is_obsolete: true
@@ -8725,6 +8747,7 @@ ontologies:
     email: topalis@imbb.forth.gr
     label: Pantelis Topalis
   description: An application ontology for use with miRNA databases.
+  domain: chemistry and biochemistry
   homepage: http://code.google.com/p/mirna-ontology/
   id: mirnao
   is_obsolete: true
@@ -8760,6 +8783,7 @@ ontologies:
     email: smtifahim@gmail.com
     label: Fahim Imam
   description: Neuronal cell types
+  domain: anatomy and development
   homepage: http://neuinfo.org/
   id: nif_cell
   is_obsolete: true
@@ -8770,6 +8794,7 @@ ontologies:
   contact:
     email: smtifahim@gmail.com
     label: Fahim Imam
+  domain: health
   homepage: http://neuinfo.org/
   id: nif_dysfunction
   is_obsolete: true
@@ -8780,6 +8805,7 @@ ontologies:
   contact:
     email: smtifahim@gmail.com
     label: Fahim Imam
+  domain: anatomy and development
   homepage: http://neuinfo.org/
   id: nif_grossanatomy
   is_obsolete: true
@@ -8810,6 +8836,7 @@ ontologies:
     email: cjmungall@lbl.gov
     label: Chris Mungall
     orcid: 0000-0002-6601-2165
+  domain: upper
   homepage: http://www.obofoundry.org/ro
   id: obo_rel
   is_obsolete: true
@@ -8824,6 +8851,7 @@ ontologies:
     orcid: 0000-0002-5379-5359
   description: An ontology that formalizes the genomic element by defining an upper
     class genetic interval
+  domain: chemistry and biochemistry
   homepage: https://code.google.com/p/ontology-for-genetic-interval/
   id: ogi
   is_obsolete: true
@@ -8862,6 +8890,7 @@ ontologies:
     github: jaiswalp
     label: Pankaj Jaiswal
     orcid: 0000-0002-1005-8383
+  domain: anatomy and development
   homepage: http://www.plantontology.org
   id: pao
   is_obsolete: true
@@ -8874,6 +8903,7 @@ ontologies:
   contact:
     email: henrich@embl.de
     label: Thorsten Heinrich
+  domain: anatomy and development
   homepage: http://4dx.embl.de/platy
   id: pd_st
   is_obsolete: true
@@ -8887,6 +8917,7 @@ ontologies:
   contact:
     email: po-discuss@plantontology.org
     label: Plant Ontology Administrators
+  domain: anatomy and development
   homepage: http://www.plantontology.org
   id: pgdso
   is_obsolete: true
@@ -8899,6 +8930,7 @@ ontologies:
   contact:
     email: mb4@sanger.ac.uk
     label: Matt Berriman
+  domain: anatomy and development
   homepage: http://www.sanger.ac.uk/Users/mb4/PLO/
   id: plo
   is_obsolete: true
@@ -8908,6 +8940,7 @@ ontologies:
   contact:
     email: satya30@uga.edu
     label: Satya S. Sahoo
+  domain: chemistry and biochemistry
   homepage: http://lsdis.cs.uga.edu/projects/glycomics/propreo/
   id: propreo
   is_obsolete: true
@@ -8930,6 +8963,7 @@ ontologies:
   contact:
     email: slarson@ncmir.ucsd.edu
     label: Stephen Larson
+  domain: anatomy and development
   homepage: http://ccdb.ucsd.edu/CCDBWebSite/sao.html
   id: sao
   is_obsolete: true
@@ -8965,6 +8999,7 @@ ontologies:
   contact:
     email: Adrien.Coulet@loria.fr
     label: Adrien Coulet
+  domain: chemistry and biochemistry
   homepage: http://www.loria.fr/~coulet/sopharm2.0_description.php
   id: sopharm
   is_obsolete: true
@@ -8977,6 +9012,7 @@ ontologies:
   contact:
     email: pierre.sprumont@unifr.ch
     label: Pierre Sprumont
+  domain: anatomy and development
   homepage: null
   id: tahe
   is_obsolete: true
@@ -8989,6 +9025,7 @@ ontologies:
   contact:
     email: pierre.sprumont@unifr.ch
     label: Pierre Sprumont
+  domain: health
   homepage: null
   id: tahh
   is_obsolete: true
@@ -9030,6 +9067,7 @@ ontologies:
   title: Teleost Anatomy Ontology
 - activity_status: inactive
   depicted_by: http://bgee.org/img/logo/bgee13_logo.png
+  domain: anatomy and development
   id: vhog
   is_obsolete: true
   layout: ontology_detail
@@ -9066,6 +9104,7 @@ ontologies:
     email: cherry@genome.stanford.edu
     label: Mike Cherry
     orcid: 0000-0001-9163-5180
+  domain: phenotype
   homepage: http://www.yeastgenome.org/
   id: ypo
   is_obsolete: true
@@ -9080,6 +9119,7 @@ ontologies:
     email: Leszek@missouri.edu
     label: Leszek Vincent
     orcid: 0000-0002-9316-2919
+  domain: anatomy and development
   homepage: http://www.maizemap.org/
   id: zea
   is_obsolete: true
