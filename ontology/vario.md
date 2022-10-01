@@ -34,7 +34,9 @@ publications:
 activity_status: inactive
 ---
 
-TODO for this ontology to become "active":
+## Requirements to become "active"
+
+The following are necessary to change the `activity_status` to "active":
 
 1. Needs public issue tracker (required by metadata schema checks). For example,
    this could be done via github even if the ontology is not maitained there, as
@@ -45,7 +47,7 @@ TODO for this ontology to become "active":
      - http://www.variationontology.org/vario_download/VariO_1.09.owl (functional format)
      - http://www.variationontology.org/vario_download/VariO_1.09.owx (RDF/XML)
 
-Nice to have:
+## Nice to have
 
 - Organize the various versions into OBO's standard folder structure
 - Fix file extensions to match OBO standard (i.e., RDF/XML has .owl extension and functional has .ofn)
