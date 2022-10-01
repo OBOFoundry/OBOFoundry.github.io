@@ -23,7 +23,7 @@ dependencies:
 - id: po
 - id: ro
 - id: uberon
-depicted_by: /logos/envo.png
+depicted_by: /images/envo.png
 description: An ontology of environmental systems, components, and processes.
 domain: environment
 homepage: http://environmentontology.org/
