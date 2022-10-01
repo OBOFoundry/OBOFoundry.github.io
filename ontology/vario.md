@@ -39,9 +39,14 @@ TODO for this ontology to become "active":
 1. Needs public issue tracker (required by metadata schema checks). For example,
    this could be done via github even if the ontology is not maitained there, as
    ChEBI and PR do.
-2. Ontology needs to be distributed in RDF/XML as mandated
-   by https://obofoundry.org/principles/fp-002-format.html. This should motivate
-   some updates to VariO's PURL configuration (or portentially renaming these files)
-   as http://variationontology.org/download.shtml lists two artifacts:
-   - http://www.variationontology.org/vario_download/VariO_1.09.owl (functional format)
-   - http://www.variationontology.org/vario_download/VariO_1.09.owx (RDF/XML)
+2. PURL configuration needs to be improved:
+   - redirect http://purl.obolibrary.org/obo/vario.owl and http://purl.obolibrary.org/obo/vario.owx to latest versions
+   - provide an OBO version of the latest, i.e.:
+     - http://www.variationontology.org/vario_download/VariO_1.09.owl (functional format)
+     - http://www.variationontology.org/vario_download/VariO_1.09.owx (RDF/XML)
+
+Nice to have:
+
+- Organize the various versions into OBO's standard folder structure
+- Fix file extensions to match OBO standard (i.e., RDF/XML has .owl extension and functional has .ofn)
+
