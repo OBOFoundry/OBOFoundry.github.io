@@ -34,14 +34,3 @@ New members: follow the instructions on the [onboarding doc](https://docs.google
 {% endfor %}
 </tbody>
 </table>
-
-
-
-<ul>
-{% for member in site.data.alumni.members %}
-<li>
-{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}
-{% if member.note %}({{ member.note }}){% endif %}
-</li>
-{% endfor %}
-</ul>
