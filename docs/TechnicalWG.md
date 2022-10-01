@@ -28,7 +28,7 @@ The mailing list for the OBO Foundry Technical Working Group is <a href='mailto:
 </tr>
 </thead>
 <tbody>
-{% assign members = site.data.operations.members | where_exp:"item","item.groups contains 'technical'" %}
+{% assign members = site.data.operations.members | sort: "name" | where_exp:"item","item.groups contains 'technical'" %}
 {% for member in members %}
 <tr>
     <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>

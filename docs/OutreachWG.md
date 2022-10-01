@@ -24,7 +24,7 @@ The mailing list for the OBO Foundry Outreach Working Group is <a href='mailto:o
 </tr>
 </thead>
 <tbody>
-{% assign members = site.data.operations.members | where_exp:"item","item.groups contains 'outreach'" %}
+{% assign members = site.data.operations.members | sort: "name" | where_exp:"item","item.groups contains 'outreach'" %}
 {% for member in members %}
 <tr>
     <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
