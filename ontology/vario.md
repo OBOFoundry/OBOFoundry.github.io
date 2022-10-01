@@ -19,5 +19,12 @@ preferredPrefix: VariO
 products:
 - id: vario.owl
 - id: vario.obo
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/24162187
+  title: Variation Ontology for annotation of variation effects and mechanisms
+- id: https://www.ncbi.nlm.nih.gov/pubmed/24533660
+  name: 'Variation ontology: annotator guide'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/25616435
+  name: Types and effects of protein variations
 activity_status: orphaned
 ---
