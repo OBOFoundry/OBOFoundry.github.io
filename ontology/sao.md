@@ -5,6 +5,7 @@ title: Subcellular anatomy ontology
 contact:
   email: slarson@ncmir.ucsd.edu
   label: Stephen Larson
+domain: anatomy and development
 homepage: http://ccdb.ucsd.edu/CCDBWebSite/sao.html
 is_obsolete: true
 replaced_by: go

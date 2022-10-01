@@ -6,6 +6,7 @@ contact:
   email: smtifahim@gmail.com
   label: Fahim Imam
 description: Neuronal cell types
+domain: anatomy and development
 homepage: http://neuinfo.org/
 is_obsolete: true
 replaced_by: cl
