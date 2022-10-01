@@ -8,7 +8,24 @@ The OBO Foundry Operations Committee Technical WG is involved in maintaining the
 
 # Members
 
-See the [membership page](/docs/Membership.html) for a list of current members.
+<table class="table">
+<thead>
+<tr>
+    <th role="columnheader">Name</th>
+    <th role="columnheader">ORCID</th>
+    <th role="columnheader">Affiliation</th>
+</tr>
+</thead>
+<tbody>
+{% for member in site.data.technical.members %}
+<tr>
+    <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
+    <td>{% if member.orcid %}<a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a>{% endif %}</td>
+    <td>{{ member.affiliation }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
 
 <h1>Meetings</h1>
 
