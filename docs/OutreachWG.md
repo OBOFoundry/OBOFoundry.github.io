@@ -12,9 +12,25 @@ The OBO Foundry Outreach WG is involved in public relations for the OBO Foundry.
 
 ## Members
 
-See the [membership page](/docs/Membership.html) for a list of current members.
-
-<h1>Contact Us</h1>
+<table class="table">
+<thead>
+<tr>
+    <th role="columnheader">Name</th>
+    <th role="columnheader">ORCID</th>
+    <th role="columnheader">Affiliation</th>
+</tr>
+</thead>
+<tbody>
+{% for member in site.data.outreach.members %}
+<tr>
+    <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
+    <td>{% if member.orcid %}<a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a>{% endif %}</td>
+    <td>{{ member.affiliation }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+## Contact Us
 
 The best way to contact the OBO Foundry Outreach Working Group is through the <a href='https://github.com/OBOFoundry/OBOFoundry.github.io/issues'>obo foundry issue tracker</a>. A member of the OBO admin group will assign the `outreach` label to the ticket.
 

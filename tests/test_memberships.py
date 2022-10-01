@@ -22,16 +22,19 @@ class Member(BaseModel):
 class Group(BaseModel):
     """Representation of a working group."""
 
+    name: str
     members: list[Member]
 
 
 class TestMembershipData(unittest.TestCase):
     """Test membership data."""
 
-    def test_technical(self):
-        """Test the technical working group data is clean."""
-        path = DATA.joinpath("technical.yml")
-        self.assert_data(path)
+    def test_data(self):
+        """Test the working group data is clean."""
+        for name in ["technical", "outreach"]:
+            with self.subTest(name=name):
+                path = DATA.joinpath(name).with_suffix(".yml")
+                self.assert_data(path)
 
     def assert_data(self, path: Path):
         """Assert the data is good."""
