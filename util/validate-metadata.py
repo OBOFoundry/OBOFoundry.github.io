@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import json
-import os
 import re
 import sys
 from argparse import ArgumentParser
@@ -388,4 +387,4 @@ def save_results(results, violations_outfile):
 
 
 if __name__ == "__main__":
-    main(sys.argv)
+    main()
