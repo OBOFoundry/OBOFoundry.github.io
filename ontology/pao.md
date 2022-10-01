@@ -7,6 +7,7 @@ contact:
   github: jaiswalp
   label: Pankaj Jaiswal
   orcid: 0000-0002-1005-8383
+domain: anatomy and development
 homepage: http://www.plantontology.org
 is_obsolete: true
 taxon:

@@ -5,6 +5,7 @@ title: Gene Regulation Ontology
 contact:
   email: vlee@ebi.ac.uk
   label: Vivian Lee
+domain: chemistry and biochemistry
 homepage: http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html
 is_obsolete: true
 replaced_by: molecular_function

@@ -6,6 +6,7 @@ contact:
   email: Lindsay.Cowell@utsouthwestern.edu
   label: Lindsay Cowell
   orcid: 0000-0003-1617-8244
+domain: anatomy and development
 homepage: http://www.dukeontologygroup.org/Projects.html
 is_obsolete: true
 replaced_by: cl
