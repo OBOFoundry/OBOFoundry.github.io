@@ -3,7 +3,7 @@
 import unittest
 from collections import Counter
 from pathlib import Path
-from typing import List
+from typing import List, Literal
 
 import yaml
 from pydantic import BaseModel
@@ -20,7 +20,7 @@ class Member(BaseModel):
     orcid: str
     affiliation: str
     country: str
-    groups: List[str]
+    groups: List[Literal["editorial", "outreach", "technical"]]
 
 
 class Group(BaseModel):
