@@ -21,7 +21,7 @@ products:
 - id: vario.owl
   title: VariO in OWL Functional notation
 - id: vario.owx
-- title: VariO in OWL RDF/XML
+  title: VariO in OWL RDF/XML
 - id: vario.obo
   title: VariO in OBO
 publications:
