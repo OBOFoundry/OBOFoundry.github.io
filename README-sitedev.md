@@ -32,8 +32,7 @@ Because Jekyll can be difficult to install, Docker provides an
 alternative for running the `serve` command:
 
 ```shell
-$ export JEKYLL_VERSION=3.5
-$ docker run --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:$JEKYLL_VERSION jekyll serve
+$ docker run --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:latest jekyll serve
 ```
 
 ## Details

@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/OBOFoundry/OBOFoundry.github.io.svg?branch=master)](https://travis-ci.org/OBOFoundry/OBOFoundry.github.io)
+# OBO Foundry Registry and Website
 
-## OBO Foundry Registry and Website
+## FAQ
 
 ### What is this?
 
@@ -49,7 +49,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
     * [ontology/uberon.md](ontology/uberon.md)
     * ...
  * [Makefile](Makefile) `<-- For compiling derived artefacts and running tests`
- * [.travis.yml](.travis.yml) `<-- continuous integration config`
  * [_posts/](_posts) `<-- Blog posts/news`
  * [_layouts/](_layouts) `<-- Jekyll layouts`
  * [_includes/](_includes) `<-- Jekyll includes`
@@ -67,7 +66,7 @@ For example:
  * [ontology/uberon.md](ontology/uberon.md)
  * [ontology/bfo.md](ontology/bfo.md)
 
-Each md file consists of
+Each `*.md` file consists of
 
  * YAML metadata
  * Markdown text to be shown on the page for that ontology
@@ -95,38 +94,17 @@ AEO is an ontology of anatomical structures that expands CARO, the Common Anatom
 The [aeo page](http://obofoundry.github.io/ontology/aeo.html) shows the structured info on the right and the formatted text on the right. (THIS IS A BAD EXAMPLE IT HAS NO FORMATTING)
 
 The YAML data is strictly vetted by OBO team. The Makefile takes care
-of syntactic validation (the travis job runs `make test`). The OBO
+of syntactic validation (the GitHub Actions runs `make test`). The OBO
 team ensures the content is correct, up to date and accurate.
 
 You can put any HTML or Markdown in the lower section - customize each ontology page!
 
 Note that each md file is the primary source for the metadata for each
 ontology. It may seem odd to mix the markdown in with the yaml, but in
-practice this works well and is easy to mainpulate using the python
+practice this works well and is easy to manipulate using the python
 script in the util/ directory.
 
 The one piece of visual info in the md is the `layout` field, which is necessary for Jekyll.
-
-
-### Generation of downstream artefacts
-
-OBO admins should periodically
-
-    git pull
-    make
-    jekyll server
-    ## open 127.0.0.1:4000 in a web browser and spot-check changes
-    git commit -m 'regenerated derived files' -a
-    git push origin master
-
-See the `Makefile` for details. This will have the effect of
-regenerating the main ontologies yaml (used by external consumers such
-as OLS, as well as the central OBO library build), as well as the
-GitHub pages `_config.yml` file. This last step is necessary to update
-the front page.
-
-_Note_: This process works using Ruby 2.6.6 and Jekyll 4.2.0. We tried using Ruby 3.0, but the setup failed for various reasons (missing libraries, obsolete/removed methods). If you are using Mac OS, we recommend using [rvm](https://rvm.io/rvm/install) to install the Ruby version. 
-
 
 #### RDF
 
@@ -148,7 +126,7 @@ For example:
 Note that joe randoms cannot just come in and update things. Anyone with a github ID can make [pull request](https://help.github.com/articles/using-pull-requests/)
 (aka PR). It is up to the OBO team whether the PR may be merged or rejected.
 
-Note that if you make a syntax error whilst editing, then the travis
+Note that if you make a syntax error whilst editing, then the GitHub Actions
 check will fail. Your PR will have a big red X next to it, in which
 case the OBO team will not merge your PR. Don't worry, all you have to
 do is make further edits to fix the syntax error.
@@ -174,7 +152,7 @@ Depending on the build configuration, this may also make additional files. See f
 
  * http://berkeleybop.org/ontologies/uberon/
 
-A  http://berkeleybop.org/ontologies/ URL should never be handed out directly. This service exists so that:
+A http://berkeleybop.org/ontologies/ URL should never be handed out directly. This service exists so that:
 
  * Un PURL-registered ontologies will have a fall-through
  * Registered PURL ontologies that do not want to take charge of either OBO or OWL generation will have a place to 302-redirect to
@@ -185,27 +163,16 @@ This job will fail if ontologies marked as `infallible` fail. To debug, the full
 
 (Look for the text "should not fail")
 
-## Adding news
+## Instructions for Website developers
 
-Simply add a post to the [_posts/](_posts/) directory - copy an exiting one if you like
+Because Jekyll can be difficult to install, Docker provides an
+alternative for running the `serve` command:
 
-Posts can also be edited via the GH web interface, all posts are here:
+```shell
+$ docker run --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:latest jekyll serve
+```
 
-https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/_posts
-
-## Instructions for WebSite developers
-
-Consult online Jekyll docs for details. Basically you just do
-
-   gem install jekyll
-
-(I am currently using Jekyll 4.2.0 on Ruby 2.6.6; I tried using Ruby 3.0, but the setup failed for various reasons (missing libraries, obsolete/removed methods). If you are using Mac OS, I recommend using [rvm](https://rvm.io/rvm/install) to install the Ruby version.)
-
-You can run a local test install from the top level directory
-
-    jekyll serve
-
-Then open http://127.0.0.1:4000
+Then open http://127.0.0.1:4000.
 
 Every commit is visible within a few minutes on: http://obofoundry.github.io
 
@@ -239,9 +206,3 @@ We should definitely have some mechanism for syncing these or allowing
 this option. However, for the majority of ontologies for which I (cjm)
 are de-facto administrating, the expertise and time to do this in OWL
 is not there, and many groups prefer to have this centralized.
-
-
-
-
-
-
