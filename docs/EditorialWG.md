@@ -47,7 +47,8 @@ Membership in the OBO Foundry Editorial WG is open to all members of the OBO Fou
 </tr>
 </thead>
 <tbody>
-{% for member in site.data.editorial.members %}
+{% assign members = site.data.operations.members | where_exp:"item","item.groups contains 'editorial'" %}
+{% for member in members %}
 <tr>
     <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
     <td><a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a></td>

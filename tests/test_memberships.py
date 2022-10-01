@@ -6,6 +6,7 @@ from typing import List
 
 import yaml
 from pydantic import BaseModel
+from collections import Counter
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
@@ -18,12 +19,12 @@ class Member(BaseModel):
     name: str
     orcid: str
     affiliation: str
+    groups: List[str]
 
 
 class Group(BaseModel):
     """Representation of a working group."""
 
-    name: str
     members: List[Member]
 
 
@@ -32,12 +33,17 @@ class TestMembershipData(unittest.TestCase):
 
     def test_data(self):
         """Test the working group data is clean."""
-        for name in ["technical", "outreach", "editorial"]:
-            with self.subTest(name=name):
-                path = DATA.joinpath(name).with_suffix(".yml")
-                self.assert_data(path)
-
-    def assert_data(self, path: Path):
-        """Assert the data is good."""
+        path = DATA.joinpath("operations").with_suffix(".yml")
         res = Group.parse_obj(yaml.safe_load(path.read_text()))
         self.assertIsNotNone(res)
+        counter = Counter(
+            member.orcid
+            for member in res.members
+            if member.orcid
+        )
+        counter = {
+            orcid
+            for orcid, count in counter.items()
+            if count > 1
+        }
+        self.assertEqual(0, len(counter), msg=f"Duplicate: {counter}")

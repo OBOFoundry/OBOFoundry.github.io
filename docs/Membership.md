@@ -12,6 +12,28 @@ There are currently three working groups. Each page lists their respective membe
 - [Technical Working Group](TechnicalWG.html)
 - [Outreach Working Group](OutreachWG.html)
 
+<table class="table">
+<thead>
+<tr>
+    <th role="columnheader">Name</th>
+    <th role="columnheader">ORCID</th>
+    <th role="columnheader">Affiliation</th>
+    <th role="columnheader">Groups</th>
+</tr>
+</thead>
+<tbody>
+{% assign members = site.data.operations.members | sort: "name" %}
+{% for member in members %}
+<tr>
+    <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
+    <td><a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a></td>
+    <td>{{ member.affiliation }}</td>
+    <td>{{ member.groups | join: ", " }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
 New members: follow the instructions on the [onboarding doc](https://docs.google.com/document/d/1MKhNTjZjGx6Ls72dybIV2ajYtbqtwP7O4lwxN2v3RBA/edit#heading=h.10q6n5qc13dp)
 
 ## Alumni
