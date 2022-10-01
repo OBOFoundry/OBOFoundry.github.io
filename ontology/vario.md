@@ -40,7 +40,7 @@ The following are necessary to change the `activity_status` to "active":
 
 1. Needs public issue tracker (required by metadata schema checks). For example,
    this could be done via github even if the ontology is not maitained there, as
-   ChEBI and PR do.
+   ChEBI and PR do. This is part of the OBO foundry standard at https://obofoundry.org/principles/fp-020-responsiveness.html.
 2. PURL configuration needs to be improved:
    - redirect http://purl.obolibrary.org/obo/vario.owl and http://purl.obolibrary.org/obo/vario.owx to latest versions
    - provide an OBO version of the latest, i.e.:
