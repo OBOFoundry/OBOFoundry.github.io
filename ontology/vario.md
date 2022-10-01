@@ -26,5 +26,13 @@ publications:
   name: 'Variation ontology: annotator guide'
 - id: https://www.ncbi.nlm.nih.gov/pubmed/25616435
   name: Types and effects of protein variations
-activity_status: orphaned
+activity_status: inactive
 ---
+
+TODO for this ontology to become "active":
+
+1. Needs public issue tracker (required by metadata schema checks). For example,
+   this could be done via github even if the ontology is not maitained there, as
+   ChEBI and PR do.
+2. Ontology needs to be distributed in RDF/XML as mandated
+   by https://obofoundry.org/principles/fp-002-format.html
