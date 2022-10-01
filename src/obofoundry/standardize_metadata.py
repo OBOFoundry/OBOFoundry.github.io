@@ -16,7 +16,8 @@ from yaml import MappingNode, SafeDumper, ScalarNode
 
 HERE = pathlib.Path(__file__).parent.resolve()
 ROOT = HERE.parent.parent.resolve()
-ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
+ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology")
+DATA_DIRECTORY = ROOT.joinpath("_data")
 
 
 def sort_key(kv):
@@ -104,6 +105,11 @@ def update_markdown(path: pathlib.Path) -> None:
 def main():
     for path in ONTOLOGY_DIRECTORY.glob("*.md"):
         update_markdown(path)
+
+    path = DATA_DIRECTORY.joinpath("operations.yml")
+    t = yaml.safe_load(path.read_text())
+    t["members"] = sorted(t["members"], key=itemgetter("name"))
+    path.write_text(yaml.safe_dump(t, sort_keys=True, width=float("inf")))
 
 
 if __name__ == "__main__":
