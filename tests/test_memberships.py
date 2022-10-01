@@ -31,7 +31,7 @@ class TestMembershipData(unittest.TestCase):
 
     def test_data(self):
         """Test the working group data is clean."""
-        for name in ["technical", "outreach"]:
+        for name in ["technical", "outreach", "editorial"]:
             with self.subTest(name=name):
                 path = DATA.joinpath(name).with_suffix(".yml")
                 self.assert_data(path)

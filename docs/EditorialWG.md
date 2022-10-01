@@ -36,7 +36,24 @@ Current activities are focused on creating guidelines for reviews. Once those gu
 
 # Members
 
-See the [membership page](/docs/Membership.html) for a list of current members.
+<table class="table">
+<thead>
+<tr>
+    <th role="columnheader">Name</th>
+    <th role="columnheader">ORCID</th>
+    <th role="columnheader">Affiliation</th>
+</tr>
+</thead>
+<tbody>
+{% for member in site.data.editorial.members %}
+<tr>
+    <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
+    <td>{% if member.orcid %}<a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a>{% endif %}</td>
+    <td>{{ member.affiliation }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
 
 Membership in the OBO Foundry Editorial WG is open to all members of the OBO Foundry Operations Committee who are willing to actively participate. If you are interested in joining the working group, send an email to the mailing list.<br>
 <br>
