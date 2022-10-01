@@ -6,7 +6,7 @@ title: Technical Working Group
 
 The OBO Foundry Operations Committee Technical WG is involved in maintaining the technical infrastructure for the OBO Foundry. This includes establishment of policies to be implemented in common tools, website maintenance, etc.
 
-# Members
+## Members
 
 <table class="table">
 <thead>
@@ -27,19 +27,13 @@ The OBO Foundry Operations Committee Technical WG is involved in maintaining the
 </tbody>
 </table>
 
-<h1>Meetings</h1>
+## Links
 
-See <a href='TechnicalWGMeetings.html'>here</a>
+- <a href='TechnicalWGMeetings.html'>Meetings</a>
+- <a href='Policy_for_OBO_namespace_and_associated_PURL_requests.html'>Creating a prefix and domain for a resource</a>
+- <a href='OBOPURLDomain.html'>How is the OBO PURL configured</a>
 
-<h1>HOWTOs</h1>
-
-<ul><li><a href='Policy_for_OBO_namespace_and_associated_PURL_requests.html'>Creating a prefix and domain for a resource</a></li></ul>
-
-<h1>DOCs</h1>
-
-<ul><li><a href='OBOPURLDomain.html'>How is the OBO PURL configured</a></li></ul>
-
-<h1>Contact Us</h1>
+## Contact Us
 
 The best way to contact the OBO Foundry Technical Working Group is through the <a href='https://github.com/OBOFoundry/OBOFoundry.github.io/issues'>issue tracker</a>. Select the Technical group template or the Prefix/domain request template.<br>
 <br>
