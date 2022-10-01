@@ -1,33 +1,17 @@
 # OBO Foundry Registry and Website
 
-## FAQ
+This is the registry and website for the OBO Foundry. It is deployed with GitHub
+Pages and Jekyll to https://obofoundry.github.io and is then mapped to
+https://obofoundry.org.
 
-### What is this?
+For most questions, see the main site FAQ at https://obofoundry.org/faq/.
+For details on site development, please see [README-sitedev.md](README-sitedev.md)
 
-This is the registry and website for the OBO Foundry.
-
-It uses GitHub pages and can be visible here: http://obofoundry.github.io/
-
-We map http://obofoundry.org to this address.
-
-### How does it work?
-
-The source can be found on https://github.com/OBOFoundry/OBOFoundry.github.io
-
-It uses GitHub Pages/[Jekyll](https://en.wikipedia.org/wiki/Jekyll_%28software%29),
-a popular static site generator.
-
-GitHub pages [are integrated with
-github](https://help.github.com/articles/using-jekyll-with-pages/)
-which means that the entire site can be seen on
-http://obofoundry.github.io (we don't run a dedicated webserver)
-
-For more details see: [README-sitedev.md](README-sitedev.md)
+## Contributing
 
 ### I have some comments
 
-You can use the [issue
-tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues)
+You can use the [issue tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues)
 but you may want to hold off til things are more stable
 
 ### I want to contribute
@@ -37,6 +21,13 @@ Please do! Anyone can fork and make PR, or [create an issue in the tracker](http
 Note that most members of the community will do this via the [obofoundry.org website](http://obofoundry.org) - each ontology page has links for editing the metadata.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+### Shouldn't we pull project data from the ontologies themselves?
+
+We should definitely have some mechanism for syncing these or allowing
+this option. However, for the majority of ontologies for which I (cjm)
+are de-facto administrating, the expertise and time to do this in OWL
+is not there, and many groups prefer to have this centralized.
 
 ## Repo Organization
 
@@ -73,7 +64,7 @@ Each `*.md` file consists of
 
 For example:
 
-```
+```markdown
 ---
 layout: ontology_detail
 id: aeo
@@ -112,7 +103,7 @@ The yaml is all "YAML-LD" and can compile down to RDF/OWL using a generic transl
 
 ### Community Contributions
 
-Note that general OBO users are free to edit via the github web
+Note that general OBO users are free to edit via the GitHub web
 interface and make a pull request. They can update their own entries,
 but they are also welcome to suggest changes elsewhere.
 
@@ -123,7 +114,7 @@ For example:
  * [view ontology/uberon.md](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/uberon.md) 
  * [edit ontology/uberon.md](https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/uberon.md) 
 
-Note that joe randoms cannot just come in and update things. Anyone with a github ID can make [pull request](https://help.github.com/articles/using-pull-requests/)
+Note that joe randoms cannot just come in and update things. Anyone with a GitHub account can make [pull request](https://help.github.com/articles/using-pull-requests/)
 (aka PR). It is up to the OBO team whether the PR may be merged or rejected.
 
 Note that if you make a syntax error whilst editing, then the GitHub Actions
@@ -191,18 +182,3 @@ Basics:
  * source can be markdown or html
  * Different styles of pages go in _layouts
  * ...
-
-## Site FAQ
-
-See also the main FAQ on the website: this FAQ is for OBO internal people
-
-### It's missing feature X from the old site
-
-File an issue! Or better yet, make a change on a fork and make a PR!
-
-### Shouldn't we pull project data from the ontologies themselves?
-
-We should definitely have some mechanism for syncing these or allowing
-this option. However, for the majority of ontologies for which I (cjm)
-are de-facto administrating, the expertise and time to do this in OWL
-is not there, and many groups prefer to have this centralized.
