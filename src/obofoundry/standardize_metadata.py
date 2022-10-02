@@ -14,10 +14,7 @@ from operator import itemgetter
 import yaml
 from yaml import MappingNode, SafeDumper, ScalarNode
 
-HERE = pathlib.Path(__file__).parent.resolve()
-ROOT = HERE.parent.parent.resolve()
-ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology")
-DATA_DIRECTORY = ROOT.joinpath("_data")
+from obofoundry.constants import DATA_DIRECTORY, ONTOLOGY_DIRECTORY
 
 
 def sort_key(kv):

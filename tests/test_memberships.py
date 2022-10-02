@@ -18,6 +18,8 @@ class Member(BaseModel):
 
     name: str
     orcid: str
+    wikidata: str
+    github: str
     affiliation: str
     country: str
     groups: List[Literal["editorial", "outreach", "technical"]]
