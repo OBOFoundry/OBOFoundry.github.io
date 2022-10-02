@@ -1,0 +1,28 @@
+---
+permalink: /404.html
+layout: default
+title: 404
+---
+
+<h1>404 - Page not found!</h1>
+<p>We're sorry, we can't find the page you requested, please check the URL and try again or <a href="/">go back to the homepage</a></p>
+
+<script>
+  /*
+  * This script simulates case-insensitivity by taking the given
+  * URL, casting it to lower case, and then redirecting the user
+  * to the lower-case-URL. This is a hack, as it's not currently
+  * possible to enforce case-insensitivity on GitHub pages.
+  *
+  * In the worst case, this script may cause the 404 page to be
+  * loaded twice. Suppose a user went to homepage/NonExistent.html,
+  * leading them to this page; this script would redirect them to
+  * homepage/nonexistent.html which would again lead to this page.
+  */
+  window.onload = () => {
+    givenURL = window.location.href;
+    if (givenURL != givenURL.toLowerCase()) {
+      location.replace(givenURL.toLowerCase());
+    }
+  }
+</script>
