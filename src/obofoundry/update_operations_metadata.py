@@ -1,11 +1,11 @@
 """Run this script to update the operations metadata."""
 
 from obofoundry.constants import OPS_PATH
-from obofoundry.utils import load_ops
 import click
 import yaml
 import requests
 from textwrap import dedent
+from tqdm import tqdm
 
 #: WikiData SPARQL endpoint. See https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service#Interfacing
 WIKIDATA_SPARQL = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
@@ -25,11 +25,11 @@ def query_wikidata(query: str):
 @click.command()
 def main():
     operations_metadata = yaml.safe_load(OPS_PATH.read_text())
-    for member in operations_metadata["members"]:
+    for member in tqdm(operations_metadata["members"]):
         orcid = member["orcid"]
         if "wikidata" not in member:
-            print(orcid, "missing ORCID")
-            q = dedent(f"""\
+            tqdm.write(f"{orcid} missing wikidata")
+            sparql = dedent(f"""\
                 SELECT DISTINCT ?item ?github 
                 WHERE 
                 {{
@@ -38,8 +38,7 @@ def main():
                 }}
                 LIMIT 1
                 """)
-            print(f"running query:\n{q}")
-            res = query_wikidata(q)
+            res = query_wikidata(sparql)
             if res:
                 member["wikidata"] = res[0]["item"]["value"].removeprefix("http://www.wikidata.org/entity/")
                 github = res[0].get("github")
