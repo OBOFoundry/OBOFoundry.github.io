@@ -24,8 +24,9 @@ def query_wikidata(query: str):
     return res_json["results"]["bindings"]
 
 
-@click.command()
+@click.command(name="update-operations-metadata")
 def main():
+    """Update the operations committee members metadata file by querying Wikidata."""
     operations_metadata = yaml.safe_load(OPS_PATH.read_text())
     for member in tqdm(operations_metadata["members"]):
         orcid = member["orcid"]

@@ -144,6 +144,15 @@ prettify: $(ONTS)
 tox:
 	tox -e py
 
+##########################
+## Metadata Maintenance ##
+##########################
+
+# Use SPARQL queries to Wikidata to enrich the
+# OBO operations committee metadata file
+update-operations-metadata:
+	python -m obofoundry update-operations-metadata
+
 ### OBO Dashboard
 
 # This is the Jenkins job
