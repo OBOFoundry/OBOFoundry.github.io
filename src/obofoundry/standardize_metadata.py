@@ -14,7 +14,7 @@ from operator import itemgetter
 import yaml
 from yaml import MappingNode, SafeDumper, ScalarNode
 
-from obofoundry.constants import ONTOLOGY_DIRECTORY, DATA_DIRECTORY
+from obofoundry.constants import DATA_DIRECTORY, ONTOLOGY_DIRECTORY
 
 
 def sort_key(kv):
