@@ -4,14 +4,11 @@ from pathlib import Path
 
 import yaml
 
+from obofoundry.constants import ONTOLOGY_DIRECTORY
+
 __all__ = [
     "get_data",
-    "ONTOLOGY_DIRECTORY",
 ]
-
-HERE = Path(__file__).parent.resolve()
-ROOT = HERE.parent.parent.resolve()
-ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
 
 
 def get_data():
