@@ -150,6 +150,7 @@ tox:
 
 # Use SPARQL queries to Wikidata to enrich the
 # OBO operations committee metadata file
+.PHONY: update-operations-metadata
 update-operations-metadata:
 	python -m obofoundry update-operations-metadata
 
