@@ -7,7 +7,7 @@ import requests
 import yaml
 from tqdm import tqdm
 
-from obofoundry.constants import OPS_PATH
+from obofoundry.constants import OPERATIONS_METADATA_PATH
 
 #: WikiData SPARQL endpoint. See https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service#Interfacing
 WIKIDATA_SPARQL = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
@@ -27,7 +27,7 @@ def query_wikidata(query: str):
 @click.command(name="update-operations-metadata")
 def main():
     """Update the operations committee members metadata file by querying Wikidata."""
-    operations_metadata = yaml.safe_load(OPS_PATH.read_text())
+    operations_metadata = yaml.safe_load(OPERATIONS_METADATA_PATH.read_text())
     for member in tqdm(operations_metadata["members"]):
         orcid = member["orcid"]
         if "wikidata" not in member or "github" not in member:
@@ -51,7 +51,7 @@ def main():
                 github = res[0].get("github")
                 if github:
                     member["github"] = github["value"]
-            OPS_PATH.write_text(
+            OPERATIONS_METADATA_PATH.write_text(
                 yaml.safe_dump(
                     operations_metadata,
                     sort_keys=True,
