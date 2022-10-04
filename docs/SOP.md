@@ -12,7 +12,7 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 - [Reviewing Ontologies for OBO Membership](#ROOM)
 - [Ontology Acceptance Email](#OAE)
 - [Changing ontology metadata in the registry](#META)
-- [Becoming a member of the OBO Operations Committee] (#OPS_MEMBER)
+- [Becoming a member of the OBO Operations Committee](#OPS_MEMBER)
 - [Chairing an OBO Operations Committee meeting call](#OPS_CHAIR)
 
 <a name="NOR"></a>
