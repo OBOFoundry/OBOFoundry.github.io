@@ -102,7 +102,7 @@ def update_markdown(path: pathlib.Path) -> None:
             print(line, file=file)
 
 
-@click.commaand(name="standarize-metadata")
+@click.command(name="standarize-metadata")
 def main():
     """Standardize ontology and other metadata."""
     for path in ONTOLOGY_DIRECTORY.glob("*.md"):
