@@ -69,6 +69,7 @@ New members: follow the instructions on the [onboarding doc](https://docs.google
 
 {{ role.description }}
 
+{% if role.requirements %}
 Requirements:
 
 <ol>
@@ -76,5 +77,10 @@ Requirements:
     <li>{{ requirement }}</li>
 {% endfor %}
 </ol>
+{% endif %}
+
+{% if role.open %}
+This role is open to new members.
+{% endif %}
 
 {% endfor %}
