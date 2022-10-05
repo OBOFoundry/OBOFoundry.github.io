@@ -1,3 +1,4 @@
+open opportunities:
 - name: Registry Metadata Steward
   commitment: 2-4 hours per month
   requirements:
@@ -18,3 +19,56 @@
   description: |
     You will be responsible for registering new ontologies at the OBO dashboard and helping their
     owners pass them.
+- name: OBO Website Coordinator
+  commitment: 2-6 hours per month
+  requirements:
+    - Working knowledge of javascript
+    - Working knowledge of python
+    - Nice to have: knowledge of jekyll and liquid (like jinja)
+    - Should have technical background
+  description: |
+    You will be responsible for gatekeeping community changes to the website.
+- name: OBO Dashboard Maintainer
+  commitment: 2-10 hours per month
+  requirements:
+    - Basic knowledge of dashboard
+    - Social skills are a nice to have
+    - Infinite patience also helpful
+  description: |
+    Updating the [OBO Dashboard](http://dashboard.obofoundry.org/dashboard/index.html) once per month. 
+    Fixing horrible bugs in OBO-Dashboard if they come up (should be rare). 
+    Working with OBO Ops to find people for extending dashboard when new principles come along.
+- name: Technical Working Group OBO Operations liaison
+  commitment: 2 hours per month
+  requirements:
+    - Strong python skills
+    - Some level of pro-activity helpful
+    - Experience with ODK/docker
+  description: |
+    Preparing a short report about all general developments in OBO Technical Working Group (TWG)
+     for the OBO Operations team meeting. You will go through pull requests and emails and summarize 
+     in bullet points and report to OBO Ops.
+
+currently filled roles:
+- name: PURL system maintainer
+  description: |
+    PURL config curation and PURL server maintenance.
+  lead(s): James Overton
+- name: OMO metadata coordinator
+  description: |
+    You will be responsible for registering new ontologies at the OBO dashboard and helping their
+    owners pass them.
+  lead(s): Jie Zheng and Nico Matentzoglu
+- name: OBO Tools coordinator
+  description: |
+    Coordinating and hosting OBO Tools workshops at meetings and conferences such as ICBO, and
+     making sure tools align with OBO principles and support them, etc.)
+  lead(s): James Overton
+- name: OBO Academy
+  description: |
+    Maintaining [https://oboacademy.github.io/obook/](https://oboacademy.github.io/obook/) and organising OBO Tutorials.
+  lead(s): James Overton, Becky Jackson, Nicole Vasilevsky, Nico Matentzoglu, Shawn Tan, Bradley Varner
+- name: OBO Issue Tracker Shepherd
+  description: |
+    Assigning incoming issues at https://github.com/OBOFoundry/OBOFoundry.github.io, tagging them, chasing them
+  lead(s): Nomi Harris
