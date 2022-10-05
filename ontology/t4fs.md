@@ -10,6 +10,7 @@ contact:
 description: A terminology for the skills necessary to make data FAIR and to keep it FAIR.
 domain: skills for enabling FAIR data, applicable across all research areas including the life sciences
 homepage: https://github.com/terms4fairskills/FAIRterminology
+repository: https://github.com/terms4fairskills/FAIRterminology
 products:
   - id: t4fs.owl
   - id: t4fs.obo
