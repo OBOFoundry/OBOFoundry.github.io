@@ -23,6 +23,7 @@ preferredPrefix: CLAO
 products:
 - id: clao.owl
 - id: clao.obo
+pull_request_added: 1337
 repository: https://github.com/luis-gonzalez-m/Collembola
 tracker: https://github.com/luis-gonzalez-m/Collembola/issues
 activity_status: active
