@@ -106,7 +106,9 @@ def main():
     path = DATA_DIRECTORY.joinpath("operations.yml")
     t = yaml.safe_load(path.read_text())
     t["members"] = sorted(t["members"], key=itemgetter("name"))
-    path.write_text(yaml.safe_dump(t, sort_keys=True, width=float("inf")))
+    path.write_text(
+        yaml.safe_dump(t, sort_keys=True, width=float("inf"), allow_unicode=True)
+    )
 
 
 if __name__ == "__main__":
