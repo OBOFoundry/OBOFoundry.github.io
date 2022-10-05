@@ -60,3 +60,21 @@ New members: follow the instructions on the [onboarding doc](https://docs.google
 {% endfor %}
 </tbody>
 </table>
+
+## Roles
+
+{% for role in site.data.roles %}
+
+### {{ role.name }}
+
+{{ role.description }}
+
+Requirements:
+
+<ol>
+{% for requirement in role.requirements %}
+    <li>{{ requirement }}</li>
+{% endfor %}
+</ol>
+
+{% endfor %}
