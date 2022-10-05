@@ -11,13 +11,14 @@ import pathlib
 from io import StringIO
 from operator import itemgetter
 
+import click
 import yaml
 from yaml import MappingNode, SafeDumper, ScalarNode
 
 from obofoundry.constants import DATA_DIRECTORY, ONTOLOGY_DIRECTORY
 
 
-def sort_key(kv):
+def _sort_key(kv):
     k, v = kv
     if k == "layout":
         return 1, k
@@ -32,7 +33,9 @@ def sort_key(kv):
 
 
 class ModifiedDumper(SafeDumper):
-    def represent_mapping(self, tag, mapping, flow_style=None):
+    """A yaml dumper that sorts mappings."""
+
+    def represent_mapping(self, tag, mapping, flow_style=None):  # noqa:D102
         value = []
         node = MappingNode(tag, value, flow_style=flow_style)
         if self.alias_key is not None:
@@ -43,7 +46,7 @@ class ModifiedDumper(SafeDumper):
             if self.sort_keys:
                 try:
                     # all code is directly from the base class except this sorted
-                    mapping = sorted(mapping, key=sort_key)
+                    mapping = sorted(mapping, key=_sort_key)
                 except TypeError:
                     pass
         for item_key, item_value in mapping:
@@ -62,7 +65,7 @@ class ModifiedDumper(SafeDumper):
         return node
 
     @classmethod
-    def dump(cls, data):
+    def dump(cls, data):  # noqa:D102
         return yaml.dump(
             data,
             Dumper=cls,
@@ -99,7 +102,9 @@ def update_markdown(path: pathlib.Path) -> None:
             print(line, file=file)
 
 
+@click.command(name="standarize-metadata")
 def main():
+    """Standardize ontology and other metadata."""
     for path in ONTOLOGY_DIRECTORY.glob("*.md"):
         update_markdown(path)
 
