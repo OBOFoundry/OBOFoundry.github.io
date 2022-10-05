@@ -1,7 +1,5 @@
 """Test data integrity, beyond what's possible with the JSON schema."""
 
-from pathlib import Path
-
 import yaml
 
 from obofoundry.constants import ONTOLOGY_DIRECTORY
