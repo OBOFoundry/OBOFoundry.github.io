@@ -19,8 +19,11 @@ products:
 - id: t4fs.obo
 - id: t4fs.json
 - id: t4fs-community.owl
+  title: This community view of T4FS makes the ontology available in OWL without upper-level ontology (ULO) terms to give the user community a simpler view of the term hierarchy.
 - id: t4fs-community.obo
+  title: This community view of T4FS makes the ontology available in OBO format without upper-level ontology (ULO) terms to give the user community a simpler view of the term hierarchy.
 - id: t4fs-community.json
+  title: This community view of T4FS makes the ontology available in JSON format without upper-level ontology (ULO) terms to give the user community a simpler view of the term hierarchy.
 publications:
 - id: https://doi.org/10.5281/zenodo.4705219
   title: 'EOSC Co-creation funded project 074: Delivery of a proof of concept for terms4FAIRskills: Technical report'
