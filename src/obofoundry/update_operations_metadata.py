@@ -42,8 +42,8 @@ def _main(path: Path):
             tqdm.write(f"{member['name']} ({orcid}) missing wikidata or github")
             sparql = dedent(
                 f"""\
-                SELECT DISTINCT ?item ?github 
-                WHERE 
+                SELECT DISTINCT ?item ?github
+                WHERE
                 {{
                     ?item wdt:P496 "{orcid}" .
                     OPTIONAL {{ ?item wdt:P2037 ?github }} .
