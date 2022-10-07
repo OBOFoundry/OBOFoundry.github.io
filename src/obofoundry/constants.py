@@ -8,3 +8,4 @@ ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology")
 DATA_DIRECTORY = ROOT.joinpath("_data")
 #: Path to the file containing metadata about members of the OBO Operations Committee
 OPERATIONS_METADATA_PATH = DATA_DIRECTORY.joinpath("operations.yml")
+ALUMNI_METADATA_PATH = DATA_DIRECTORY.joinpath("alumni.yml")
