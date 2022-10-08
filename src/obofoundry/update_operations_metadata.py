@@ -4,27 +4,11 @@ from pathlib import Path
 from textwrap import dedent
 
 import click
-import requests
 import yaml
 from tqdm import tqdm
 
 from obofoundry.constants import ALUMNI_METADATA_PATH, OPERATIONS_METADATA_PATH
-
-#: WikiData SPARQL endpoint. See https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service#Interfacing
-WIKIDATA_SPARQL = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
-
-
-def query_wikidata(query: str):
-    """Query the Wikidata SPARQL endpoint and return JSON."""
-    headers = {
-        "User-Agent": "obofoundry/1.0 (https://obofoundry.org/; cthoyt@gmail.com)"
-    }
-    res = requests.get(
-        WIKIDATA_SPARQL, params={"query": query, "format": "json"}, headers=headers
-    )
-    res.raise_for_status()
-    res_json = res.json()
-    return res_json["results"]["bindings"]
+from obofoundry.utils import query_wikidata
 
 
 @click.command(name="update-operations-metadata")
