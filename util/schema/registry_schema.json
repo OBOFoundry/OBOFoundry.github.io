@@ -126,7 +126,25 @@
       }
     },
     "funded_by": {
-      "suggest": false
+      "level": "info",
+      "description": "An optional field containing structured funding sources",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Funding",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "id"
+        ]
+      }
     },
     "homepage": {
       "level": "error",
@@ -321,6 +339,12 @@
           "id": {
             "type": "string",
             "pattern": "^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
           }
         },
         "required": [

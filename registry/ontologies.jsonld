@@ -1464,7 +1464,7 @@
             },
             "description": "COB brings together key terms from a wide range of OBO projects to improve interoperability.",
             "domain": "upper",
-            "homepage": "https://github.com/OBOFoundry/COB",
+            "homepage": "https://obofoundry.org/COB/",
             "id": "cob",
             "layout": "ontology_detail",
             "license": {
@@ -2258,7 +2258,10 @@
             "description": "An ontology for experimental and other evidence statements.",
             "domain": "investigations",
             "funded_by": [
-                "http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400"
+                {
+                    "id": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400",
+                    "title": "NSF ABI-1458400"
+                }
             ],
             "homepage": "https://www.evidenceontology.org",
             "id": "eco",
@@ -2582,7 +2585,7 @@
                 "system": "git"
             },
             "contact": {
-                "email": "p.buttigieg@gmail.com",
+                "email": "pier.buttigieg@awi.de",
                 "github": "pbuttigieg",
                 "label": "Pier Luigi Buttigieg",
                 "orcid": "0000-0002-4366-3088"
@@ -2613,22 +2616,22 @@
                     "id": "uberon"
                 }
             ],
-            "depicted_by": "/logos/envo.png",
-            "description": "Ontology of environmental features and habitats",
+            "depicted_by": "/images/envo.png",
+            "description": "An ontology of environmental systems, components, and processes.",
             "domain": "environment",
             "homepage": "http://environmentontology.org/",
             "id": "envo",
             "jobs": [
                 {
-                    "id": "https://travis-ci.org/EnvironmentOntology/envo",
-                    "type": "travis-ci"
+                    "id": "https://github.com/EnvironmentOntology/envo/blob/master/.github/workflows/qc.yml",
+                    "type": "github-action"
                 }
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC BY 3.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "label": "CC0 1.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/envo.owl",
             "page": "https://github.com/EnvironmentOntology/envo",
@@ -2668,11 +2671,12 @@
             ],
             "publications": [
                 {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/24330602",
+                    "id": "https://doi.org/10.1186/2041-1480-4-43",
+                    "preferred": true,
                     "title": "The environment ontology: contextualising biological and biomedical entities"
                 },
                 {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/27664130",
+                    "id": "https://doi.org/10.1186/s13326-016-0097-6",
                     "title": "The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation"
                 }
             ],
@@ -6006,8 +6010,10 @@
             "description": "NOMEN is a nomenclatural ontology for biological names (not concepts).  It encodes the goverened rules of nomenclature.",
             "domain": "information",
             "funded_by": [
-                "NSF-ABI-1356381",
-                "Species File Group"
+                {
+                    "id": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1356381",
+                    "title": "NSF ABI-1356381"
+                }
             ],
             "homepage": "https://github.com/SpeciesFileGroup/nomen",
             "id": "nomen",
@@ -6492,7 +6498,7 @@
                 "label": "Bill Duncan",
                 "orcid": "0000-0001-9625-1899"
             },
-            "description": "The Oral Health and Disease Ontology was created, initially, to represent the content of dental practice health records.",
+            "description": "The Oral Health and Disease Ontology is used for representing the diagnosis and treatment of dental maladies.",
             "domain": "health",
             "homepage": "https://purl.obolibrary.org/obo/ohd/home",
             "id": "ohd",
@@ -6513,6 +6519,12 @@
                     "id": "ohd/dev/ohd.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/ohd/dev/ohd.owl",
                     "title": "OHD dev"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/32819435",
+                    "title": "Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology"
                 }
             ],
             "repository": "https://github.com/oral-health-and-disease-ontologies/ohd-ontology",
@@ -9266,10 +9278,22 @@
             "description": "An integrated cross-species anatomy ontology covering animals and bridging multiple species-specific ontologies",
             "domain": "anatomy and development",
             "funded_by": [
-                "NIH R24OD011883",
-                "NIH R01HG004838",
-                "NIH P41HG002273",
-                "NSF DEB-0956049"
+                {
+                    "id": "https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=R24OD011883&arg_ProgOfficeCode=205",
+                    "title": "NIH R24-OD011883"
+                },
+                {
+                    "id": "https://grantome.com/grant/NIH/R01-HG004838",
+                    "title": "NIH R01-HG004838"
+                },
+                {
+                    "id": "https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=P41HG002273&arg_ProgOfficeCode=55",
+                    "title": "NIH P41-HG002273"
+                },
+                {
+                    "id": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0956049",
+                    "title": "NSF DEB-0956049"
+                }
             ],
             "homepage": "http://uberon.org",
             "id": "uberon",
@@ -9613,6 +9637,67 @@
                     "user": "https://monarchinitiative.org/"
                 }
             ]
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "Sabrina@tislab.org",
+                "github": "sabrinatoro",
+                "label": "Sabrina Toro",
+                "orcid": "0000-0002-4142-7153"
+            },
+            "dependencies": [
+                {
+                    "id": "ncbitaxon"
+                }
+            ],
+            "description": "Vertebrate Breed Ontology is an ontology created to serve as a single computable resource for vertebrate breed names.",
+            "domain": "organisms",
+            "homepage": "https://github.com/monarch-initiative/vertebrate-breed-ontology",
+            "id": "vbo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/vbo.owl",
+            "preferredPrefix": "VBO",
+            "products": [
+                {
+                    "id": "vbo.owl",
+                    "name": "Vertebrate Breed Ontology main release in OWL format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo.owl"
+                },
+                {
+                    "id": "vbo.obo",
+                    "name": "Vertebrate Breed Ontology additional release in OBO format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo.obo"
+                },
+                {
+                    "id": "vbo.json",
+                    "name": "Vertebrate Breed Ontology additional release in OBOJSon format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo.json"
+                },
+                {
+                    "id": "vbo/vbo-base.owl",
+                    "name": "Vertebrate Breed Ontology main release in OWL format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo/vbo-base.owl"
+                },
+                {
+                    "id": "vbo/vbo-base.obo",
+                    "name": "Vertebrate Breed Ontology additional release in OBO format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo/vbo-base.obo"
+                },
+                {
+                    "id": "vbo/vbo-base.json",
+                    "name": "Vertebrate Breed Ontology additional release in OBOJSon format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo/vbo-base.json"
+                }
+            ],
+            "repository": "https://github.com/monarch-initiative/vertebrate-breed-ontology",
+            "title": "Vertebrate Breed Ontology",
+            "tracker": "https://github.com/monarch-initiative/vertebrate-breed-ontology/issues"
         },
         {
             "activity_status": "active",
@@ -10661,8 +10746,14 @@
             "description": "A classification of algorithms for simulating biology, their parameters, and their outputs",
             "domain": "simulation",
             "funded_by": [
-                "NIH P41EB023912",
-                "NIH R35GM119771"
+                {
+                    "id": "https://grantome.com/search?q=P41EB023912",
+                    "title": "NIH P41EB023912"
+                },
+                {
+                    "id": "https://grantome.com/search?q=R35GM119771",
+                    "title": "NIH R35GM119771"
+                }
             ],
             "homepage": "https://github.com/SED-ML/KiSAO",
             "id": "kisao",
@@ -10941,6 +11032,7 @@
                 "label": "chEBI"
             },
             "description": "An ontology of physico-chemical methods and properties.",
+            "domain": "chemistry and biochemistry",
             "homepage": "http://www.ebi.ac.uk/chebi",
             "id": "fix",
             "in_foundry": false,
@@ -10993,6 +11085,7 @@
                 "source_url": "http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo"
             },
             "description": "An ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time.",
+            "domain": "chemistry and biochemistry",
             "id": "rex",
             "layout": "ontology_detail",
             "ontology_purl": "http://purl.obolibrary.org/obo/rex.owl",
@@ -11056,6 +11149,7 @@
                 "label": "Mauno Vihinen"
             },
             "description": "Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations.",
+            "domain": "biological systems",
             "homepage": "http://variationontology.org",
             "id": "vario",
             "layout": "ontology_detail",
@@ -11282,6 +11376,7 @@
                 "orcid": "0000-0001-8910-9851"
             },
             "description": "A gazetteer constructed on ontological principles",
+            "domain": "environment",
             "homepage": "http://environmentontology.github.io/gaz/",
             "id": "gaz",
             "layout": "ontology_detail",
@@ -11543,6 +11638,7 @@
                 "email": "david.c.blackburn@gmail.com",
                 "label": "David Blackburn"
             },
+            "domain": "anatomy and development",
             "homepage": "http://github.com/seger/aao",
             "id": "aao",
             "is_obsolete": true,
@@ -11560,6 +11656,7 @@
                 "email": "adw_geeks@umich.edu",
                 "label": "Animal Diversity Web technical staff"
             },
+            "domain": "organisms",
             "homepage": "http://www.animaldiversity.org",
             "id": "adw",
             "is_obsolete": true,
@@ -11602,6 +11699,7 @@
                 "email": "david.c.blackburn@gmail.com",
                 "label": "David Blackburn"
             },
+            "domain": "organisms",
             "homepage": "http://www.amphibanat.org",
             "id": "ato",
             "is_obsolete": true,
@@ -11621,6 +11719,7 @@
                 "orcid": "0000-0002-2999-0103"
             },
             "description": "An application ontology built for beta cell genomics studies.",
+            "domain": "anatomy and development",
             "homepage": "https://github.com/obi-bcgo/bcgo",
             "id": "bcgo",
             "in_foundry": false,
@@ -11676,6 +11775,7 @@
                 "email": "vlee@ebi.ac.uk",
                 "label": "Vivian Lee"
             },
+            "domain": "chemistry and biochemistry",
             "homepage": "http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html",
             "id": "bootstrep",
             "is_obsolete": true,
@@ -11690,6 +11790,7 @@
                 "label": "Mark Engelstad",
                 "orcid": "0000-0001-5889-4463"
             },
+            "domain": "health",
             "homepage": "https://code.google.com/p/craniomaxillofacial-ontology/",
             "id": "cmf",
             "is_obsolete": true,
@@ -11703,6 +11804,7 @@
                 "label": "Lindsay Cowell",
                 "orcid": "0000-0003-1617-8244"
             },
+            "domain": "anatomy and development",
             "homepage": "http://www.dukeontologygroup.org/Projects.html",
             "id": "dc_cl",
             "is_obsolete": true,
@@ -11753,6 +11855,7 @@
                 "email": "J.Bard@ed.ac.uk",
                 "label": "Jonathan Bard"
             },
+            "domain": "anatomy and development",
             "homepage": "http://genex.hgu.mrc.ac.uk/",
             "id": "ehda",
             "is_obsolete": true,
@@ -11770,6 +11873,7 @@
                 "email": "J.Bard@ed.ac.uk",
                 "label": "Jonathan Bard"
             },
+            "domain": "anatomy and development",
             "homepage": null,
             "id": "ehdaa",
             "is_obsolete": true,
@@ -11890,6 +11994,7 @@
                 "source_url": "http://purl.obolibrary.org/obo/epo.owl"
             },
             "description": "An ontology designed to support the semantic annotation of epidemiology resources",
+            "domain": "health",
             "homepage": "https://code.google.com/p/epidemiology-ontology/",
             "id": "epo",
             "in_foundry": false,
@@ -11942,6 +12047,7 @@
                 "email": "evoc@sanbi.ac.za",
                 "label": "eVOC mailing list"
             },
+            "domain": "anatomy and development",
             "homepage": "http://www.evocontology.org/",
             "id": "ev",
             "is_obsolete": true,
@@ -12013,6 +12119,7 @@
                 "email": "po-discuss@plantontology.org",
                 "label": "Plant Ontology Administrators"
             },
+            "domain": "anatomy and development",
             "homepage": "http://www.gramene.org/plant_ontology/",
             "id": "gro",
             "is_obsolete": true,
@@ -12026,6 +12133,7 @@
                 "label": "Peter Midford",
                 "orcid": "0000-0001-6512-3296"
             },
+            "domain": "organisms",
             "homepage": "http://www.mesquiteproject.org/ontology/Habronattus/index.html",
             "id": "habronattus",
             "is_obsolete": true,
@@ -12039,6 +12147,7 @@
                 "method": "obo2owl",
                 "source_url": "http://download.baderlab.org/INOH/ontologies/EventOntology_172.obo"
             },
+            "domain": "chemistry and biochemistry",
             "homepage": "http://www.inoh.org",
             "id": "iev",
             "is_obsolete": true,
@@ -12056,6 +12165,7 @@
                 "email": "curator@inoh.org",
                 "label": "INOH curators"
             },
+            "domain": "chemistry and biochemistry",
             "homepage": "http://www.inoh.org",
             "id": "imr",
             "is_obsolete": true,
@@ -12068,6 +12178,7 @@
                 "email": "interhelp@ebi.ac.uk",
                 "label": "InterPro Help"
             },
+            "domain": "chemistry and biochemistry",
             "homepage": "http://www.ebi.ac.uk/interpro/index.html",
             "id": "ipr",
             "is_obsolete": true,
@@ -12102,6 +12213,7 @@
                 "label": "Peter Midford",
                 "orcid": "0000-0001-6512-3296"
             },
+            "domain": "organisms",
             "homepage": "http://www.mesquiteproject.org/ontology/Loggerhead/index.html",
             "id": "loggerhead",
             "is_obsolete": true,
@@ -12114,6 +12226,7 @@
                 "email": "julie@igbmc.u-strasbg.fr",
                 "label": "Julie Thompson"
             },
+            "domain": "chemistry and biochemistry",
             "homepage": "http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html",
             "id": "mao",
             "is_obsolete": true,
@@ -12126,6 +12239,7 @@
                 "email": "j.bard@ed.ac.uk",
                 "label": "Jonathan Bard"
             },
+            "domain": "anatomy and development",
             "homepage": null,
             "id": "mat",
             "is_obsolete": true,
@@ -12163,6 +12277,7 @@
                 "label": "Pantelis Topalis"
             },
             "description": "An application ontology for use with miRNA databases.",
+            "domain": "chemistry and biochemistry",
             "homepage": "http://code.google.com/p/mirna-ontology/",
             "id": "mirnao",
             "is_obsolete": true,
@@ -12210,6 +12325,7 @@
                 "label": "Fahim Imam"
             },
             "description": "Neuronal cell types",
+            "domain": "anatomy and development",
             "homepage": "http://neuinfo.org/",
             "id": "nif_cell",
             "is_obsolete": true,
@@ -12223,6 +12339,7 @@
                 "email": "smtifahim@gmail.com",
                 "label": "Fahim Imam"
             },
+            "domain": "health",
             "homepage": "http://neuinfo.org/",
             "id": "nif_dysfunction",
             "is_obsolete": true,
@@ -12236,6 +12353,7 @@
                 "email": "smtifahim@gmail.com",
                 "label": "Fahim Imam"
             },
+            "domain": "anatomy and development",
             "homepage": "http://neuinfo.org/",
             "id": "nif_grossanatomy",
             "is_obsolete": true,
@@ -12275,6 +12393,7 @@
                 "label": "Chris Mungall",
                 "orcid": "0000-0002-6601-2165"
             },
+            "domain": "upper",
             "homepage": "http://www.obofoundry.org/ro",
             "id": "obo_rel",
             "is_obsolete": true,
@@ -12291,6 +12410,7 @@
                 "orcid": "0000-0002-5379-5359"
             },
             "description": "An ontology that formalizes the genomic element by defining an upper class genetic interval",
+            "domain": "chemistry and biochemistry",
             "homepage": "https://code.google.com/p/ontology-for-genetic-interval/",
             "id": "ogi",
             "is_obsolete": true,
@@ -12341,6 +12461,7 @@
                 "label": "Pankaj Jaiswal",
                 "orcid": "0000-0002-1005-8383"
             },
+            "domain": "anatomy and development",
             "homepage": "http://www.plantontology.org",
             "id": "pao",
             "is_obsolete": true,
@@ -12357,6 +12478,7 @@
                 "email": "henrich@embl.de",
                 "label": "Thorsten Heinrich"
             },
+            "domain": "anatomy and development",
             "homepage": "http://4dx.embl.de/platy",
             "id": "pd_st",
             "is_obsolete": true,
@@ -12374,6 +12496,7 @@
                 "email": "po-discuss@plantontology.org",
                 "label": "Plant Ontology Administrators"
             },
+            "domain": "anatomy and development",
             "homepage": "http://www.plantontology.org",
             "id": "pgdso",
             "is_obsolete": true,
@@ -12390,6 +12513,7 @@
                 "email": "mb4@sanger.ac.uk",
                 "label": "Matt Berriman"
             },
+            "domain": "anatomy and development",
             "homepage": "http://www.sanger.ac.uk/Users/mb4/PLO/",
             "id": "plo",
             "is_obsolete": true,
@@ -12402,6 +12526,7 @@
                 "email": "satya30@uga.edu",
                 "label": "Satya S. Sahoo"
             },
+            "domain": "chemistry and biochemistry",
             "homepage": "http://lsdis.cs.uga.edu/projects/glycomics/propreo/",
             "id": "propreo",
             "is_obsolete": true,
@@ -12431,6 +12556,7 @@
                 "email": "slarson@ncmir.ucsd.edu",
                 "label": "Stephen Larson"
             },
+            "domain": "anatomy and development",
             "homepage": "http://ccdb.ucsd.edu/CCDBWebSite/sao.html",
             "id": "sao",
             "is_obsolete": true,
@@ -12477,6 +12603,7 @@
                 "email": "Adrien.Coulet@loria.fr",
                 "label": "Adrien Coulet"
             },
+            "domain": "chemistry and biochemistry",
             "homepage": "http://www.loria.fr/~coulet/sopharm2.0_description.php",
             "id": "sopharm",
             "is_obsolete": true,
@@ -12493,6 +12620,7 @@
                 "email": "pierre.sprumont@unifr.ch",
                 "label": "Pierre Sprumont"
             },
+            "domain": "anatomy and development",
             "homepage": null,
             "id": "tahe",
             "is_obsolete": true,
@@ -12509,6 +12637,7 @@
                 "email": "pierre.sprumont@unifr.ch",
                 "label": "Pierre Sprumont"
             },
+            "domain": "health",
             "homepage": null,
             "id": "tahh",
             "is_obsolete": true,
@@ -12563,6 +12692,7 @@
         {
             "activity_status": "inactive",
             "depicted_by": "http://bgee.org/img/logo/bgee13_logo.png",
+            "domain": "anatomy and development",
             "id": "vhog",
             "is_obsolete": true,
             "layout": "ontology_detail",
@@ -12613,6 +12743,7 @@
                 "label": "Mike Cherry",
                 "orcid": "0000-0001-9163-5180"
             },
+            "domain": "phenotype",
             "homepage": "http://www.yeastgenome.org/",
             "id": "ypo",
             "is_obsolete": true,
@@ -12631,6 +12762,7 @@
                 "label": "Leszek Vincent",
                 "orcid": "0000-0002-9316-2919"
             },
+            "domain": "anatomy and development",
             "homepage": "http://www.maizemap.org/",
             "id": "zea",
             "is_obsolete": true,
