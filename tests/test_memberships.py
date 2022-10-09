@@ -51,4 +51,3 @@ class TestMembershipData(unittest.TestCase):
             with self.subTest(row=i):
                 self.assertIn("name", member)
                 self.assertIn("orcid", member)
-                self.assertIn("github", member)

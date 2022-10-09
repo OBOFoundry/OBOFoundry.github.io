@@ -58,7 +58,7 @@ New members: follow the instructions on the [onboarding doc](https://docs.google
 <tr>
     <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
     <td><a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a></td>
-    <td>{% if member.github != "ghost" %}<a href="https://github.com/{{ member.github }}">{{ member.github }}</a>{% endif %}</td>
+    <td>{% if member.github %}<a href="https://github.com/{{ member.github }}">{{ member.github }}</a>{% endif %}</td>
     <td>{% if member.departed %}{{ member.departed }}{% endif %}</td>
     <td>{% if member.note %}{{ member.note }}{% endif %}</td>
 </tr>
