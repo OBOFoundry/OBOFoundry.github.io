@@ -21,13 +21,6 @@ Note that most members of the community will do this via the [obofoundry.org web
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
-### Shouldn't we pull project data from the ontologies themselves?
-
-We should definitely have some mechanism for syncing these or allowing
-this option. However, for the majority of ontologies for which I (cjm)
-are de-facto administrating, the expertise and time to do this in OWL
-is not there, and many groups prefer to have this centralized.
-
 ## Repo Organization
 
  * [registry/](registry)   `<-- DERIVED yaml, json and RDF. DO NOT EDIT`
