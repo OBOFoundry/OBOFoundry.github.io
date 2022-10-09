@@ -154,31 +154,6 @@ This job will fail if ontologies marked as `infallible` fail. To debug, the full
 
 (Look for the text "should not fail")
 
-## Instructions for Website developers
+## Instructions for Website Development
 
-Because Jekyll can be difficult to install, Docker provides an
-alternative for running the `serve` command:
-
-```shell
-$ docker run --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:latest jekyll serve
-```
-
-Then open http://127.0.0.1:4000.
-
-Every commit is visible within a few minutes on: http://obofoundry.github.io
-
-You may want to work on a branch to avoid disrupting the live
-site. Exact procedures for accepting changes back into master have yet
-to be determined. See [CONTRIBUTING.md](CONTRIBUTING.md) for a draft.
-
-The setup is fairly standard for Jekyll. We use Jekyll bootstrap
-(bootstrap 3). We try and keep things minimal so that the site will
-work on github. Even if you have no knowledge of Jekyll, it is fairly
-easy to introspect what is going on if you have done much CMS work or
-web development.
-
-Basics:
-
- * source can be markdown or html
- * Different styles of pages go in _layouts
- * ...
+See [README-sitedev.md](README-sitedev.md)
