@@ -12,7 +12,6 @@ For details on site development, please see [README-sitedev.md](README-sitedev.m
 ### I have some comments
 
 You can use the [issue tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues)
-but you may want to hold off til things are more stable
 
 ### I want to contribute
 
