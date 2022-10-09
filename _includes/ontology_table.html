@@ -54,7 +54,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> |
       <td>
         <a
           href="ontology/{{ont.id}}.html"
-          class="btn btn-default"
+          class="btn btn-outline-primary"
           aria-label="More details for {{ ont.title }}"
           title="More details"
         >
@@ -64,7 +64,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> |
       <td>
         <a
           href="{{ont.homepage}}"
-          class="btn btn-default"
+          class="btn btn-outline-primary"
           aria-label="Go to the homepage for {{ ont.title }}"
           title="Project home"
         >
@@ -75,7 +75,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> |
         {% if ont.tracker %}
         <a
           href="{{ont.tracker}}"
-          class="btn btn-default"
+          class="btn btn-outline-primary"
           aria-label="Go to the tracker for {{ ont.title }}"
           title="Tracker"
         >
@@ -88,7 +88,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> |
         {% if ont.contact %}
         <a
           href="mailto:{{ont.contact.email}}"
-          class="btn btn-default"
+          class="btn btn-outline-primary"
           aria-label="Send an email to {{ont.contact.label}}, the contact person for {{ ont.title }}"
           title="Email ontology devs"
         >
@@ -100,7 +100,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> |
       <td>
         <a
           href="http://purl.obolibrary.org/obo/{{ont.id}}.owl"
-          class="btn btn-default"
+          class="btn btn-outline-primary"
           aria-label="Download {{ ont.title }} in the OWL format"
           title="Download file"
         >
@@ -111,7 +111,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> |
       <td>
         <a
           href="https://ontobee.org/browser/index.php?o={{ont.id}}"
-          class="btn btn-default"
+          class="btn btn-outline-primary"
           aria-label="Browse {{ ont.title }} on OntoBee"
           title="Browse on Ontobee"
         >
@@ -123,7 +123,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> |
         {% if ont.publications %}
         <a
           href="{{ont.publications.first.id}}"
-          class="btn btn-default"
+          class="btn btn-outline-primary"
           aria-label="View the primary publication for {{ ont.title }}"
           title="Publications list"
         >
@@ -136,7 +136,7 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> |
         {% if ont.in_foundry_order %}
         <a
           href="/principles/fp-000-summary.html"
-          class="btn btn-default"
+          class="btn btn-outline-primary"
           aria-label="View the OBO Foundry criteria for the Foundry status of {{ ont.title }}"
         >
           <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
