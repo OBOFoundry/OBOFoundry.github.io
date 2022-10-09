@@ -59,7 +59,9 @@ def get_html(data):
     lines = []
     # bootstrap CSS
     lines.append('<link rel="stylesheet" href="{0}">'.format(bootstrap_css))
-    lines.append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">')
+    lines.append(
+        '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">'
+    )
     # opening tags
     lines.append('<div class="container">')
     lines.append('\t<div class="row" style="padding-top: 20px;">')
