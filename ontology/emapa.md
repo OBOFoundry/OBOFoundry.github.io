@@ -21,6 +21,21 @@ preferredPrefix: EMAPA
 products:
 - id: emapa.owl
 - id: emapa.obo
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/9651497
+  title: An internet-accessible database of mouse developmental anatomy based on a systematic nomenclature
+- id: https://www.ncbi.nlm.nih.gov/pubmed/23972281
+  title: 'EMAP/EMAPA ontology of mouse developmental anatomy: 2013 update'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/26208972
+  title: 'Mouse Anatomy Ontologies: Enhancements and Tools for Exploring and Integrating Biomedical Data'
+- id: https://doi.org/10.1016/B978-0-12-800043-4.00023-3
+  title: 'Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene Expression Database for Mouse Development (GXD)'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/15774030
+  title: 'The Adult Mouse Anatomical Dictionary: A tool for annotating and integrating data'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/17452023
+  title: A high-resolution anatomical ontology of the developing murine genitourinary tract
+- id: https://www.ncbi.nlm.nih.gov/pubmed/24265223
+  title: 'EMAGE mouse embryo spatial gene expression database: 2014 update'
 repository: https://github.com/obophenotype/mouse-anatomy-ontology
 taxon:
   id: NCBITaxon:10088
@@ -56,22 +71,3 @@ An extensive ontology of mouse anatomical terms, entitled EMAPA, has been develo
  * Extensive additions and revisions have been made in response to the expression annotation efforts of GXD, Edinburgh Mouse Atlas of Gene Expression (EMAGE)[7], GUDMAP and other projects.
 
 GXD and other resources use the EMAPA ontology for annotation of mouse gene expression at embryonic and postnatal (including adult) stages. The GXD browser www.informatics.jax.org/vocab/gxd/anatomy enables users to navigate the ontology, to locate specific anatomical structures, and to obtain associated expression data in GXD.
-
-The EMAPA ontology is available for download in OWL and OBO formats (see below).
-
-# REFERENCES
-
- * [1] Bard JBL, Kaufman MH, Dubreuil C, Brune RM, Burger A, Baldock RA, Davidson DR (1998). An internet-accessible database of mouse developmental anatomy based on a systematic nomenclature. Mech Dev 74, 111-120.
- <https://www.sciencedirect.com/science/article/pii/S0925477398000690?via%3Dihub>
- * [2] Hayamizu TF, Wicks MN, Davidson DR, Burger A, Ringwald M, Baldock RA (2013). EMAP/EMAPA ontology of mouse developmental anatomy: 2013 update. Journal of Biomedical Semantics 4:15.
-<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3851555/>
- * [3] Hayamizu TF, Baldock RA, Ringwald M (2015). Mouse Anatomy Ontologies: Enhancements and Tools for Exploring and Integrating Biomedical Data. Mamm Genome 26, 422-30.
- <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4602063/>
- * [4] Hayamizu TF, Ringwald (2016). Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene Expression Database for Mouse Development (GXD). In: Kaufman's Atlas of Mouse Development Supplement. Academic Press.
-<https://www.sciencedirect.com/science/article/pii/B9780128000434000233>
- * [5] Hayamizu TF, Mangan M, Corradi JP, Kadin JA, Ringwald M (2005). The Adult Mouse Anatomical Dictionary: A tool for annotating and integrating data. Genome Biology 6:R29.
-<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1088948/>
- * [6] Little MH, Brennan J, Georgas K, Davies JA, Davidson DR, Baldock RA, Beverdam A, Bertram JF, Capel B, Chiu HS, Clements D, Cullen-McEwen L, Fleming J, Gilbert T, Herzlinger D, Houghton D, Kaufman MH, Kleymenova E, Koopman PA, Lewis AG, McMahon AP, Mendelsohn CL, Mitchell EK, Rumballe BA, Sweeney DE, Valerius MT, Yamada G, Yang Y, Yu J (2007). A high-resolution anatomical ontology of the developing murine genitourinary tract. Gene Exp Patterns 7, 680-99.
-<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2117077/>
- * [7] Richardson L, Venkataraman S, Stevenson P, Yang Y, Moss J, Graham L, Burton B, Hill B, Rao J, Baldock RA, Armit C (2014). EMAGE mouse embryo spatial gene expression database: 2014 update. Nucleic Acids Res. 42, D835-D844.
-<https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3965061/>

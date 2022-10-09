@@ -17,6 +17,9 @@ license:
 preferredPrefix: BCO
 products:
 - id: bco.owl
+publications:
+- id: https://doi.org/10.1371/journal.pone.0089606
+  title: 'Semantics in Support of Biodiversity Knowledge Discovery: An Introduction to the Biological Collections Ontology and Related Ontologies'
 repository: https://github.com/BiodiversityOntologies/bco
 tags:
 - biodiversity collections
