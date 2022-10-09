@@ -50,13 +50,13 @@ activity_status: active
 
 ## BACKGROUND
 
-The ontology of mouse developmental anatomy was originally developed by Jonathan Bard and his colleagues as part of the Edinburgh Mouse Atlas Project (EMAP) in order to provide a structured controlled vocabulary of stage-specific anatomical structures for the developing laboratory mouse.[1]
+The ontology of mouse developmental anatomy was originally developed by Jonathan Bard and his colleagues as part of the Edinburgh Mouse Atlas Project (EMAP) in order to provide a structured controlled vocabulary of stage-specific anatomical structures for the developing laboratory mouse. (Bard *et al.*, 1998)
 
 Initial versions listed anatomical entities for each developmental stage (Theiler Stages 1 through 26) separately. Stage-specific instances were presented as uniparental hierarchies organized solely using part-of relationships (i.e. as a strict partonomy). An ‘abstract’ (i.e. non-stage-specific) representation of the mouse developmental anatomy ontology was subsequently developed.
 
 The mouse developmental anatomy ontology has been substantially extended and refined over many years in a collaborative effort between EMAP and the Gene Expression Database (GXD) project (www.informatics.jax.org/expression.shtml), part of the Mouse Genome Informatics (MGI) resource at The Jackson Laboratory. The ontology continues to be maintained and expanded by GXD.
 
-Overviews of the evolution and current status of the mouse anatomy ontologies, including some of the rationale for ontology content augmentation, restructuring of hierarchies, and other enhancements have been presented in various publications.[2,3,4]
+Overviews of the evolution and current status of the mouse anatomy ontologies, including some of the rationale for ontology content augmentation, restructuring of hierarchies, and other enhancements have been presented in various publications. (Hayamizu *et al.*, 2013; Hayamizu *et al.*, 2015; Hayamizu *et al.*, 2016)
 
 ## SUMMARY
 
@@ -66,8 +66,8 @@ An extensive ontology of mouse anatomical terms, entitled EMAPA, has been develo
  * Terms have unique names, with compound names constructed using standardized nomenclature conventions, and alternative names associated as synonyms.
  * Anatomical entities are presented in a hierarchical format that allows multiple parentage for a given entity (i.e. as a directed acyclic graph).
  * Subsumption classification (“is_a”) as well as partonomic and other types of relationships (e.g. "develops_from") can now be represented.
- * The ontology has been extended through newborn (TS27) and postnatal (TS28) stages of mouse anatomy, with the latter substantially augmented by terma and relationships from the adult mouse anatomy (MA) ontology.[5]
- * The urinary and reproductive systems have been extensively revised and refined by curators from the GenitoUrinary Development Molecular Anatomy Project (GUDMAP).[6]
- * Extensive additions and revisions have been made in response to the expression annotation efforts of GXD, Edinburgh Mouse Atlas of Gene Expression (EMAGE)[7], GUDMAP and other projects.
+ * The ontology has been extended through newborn (TS27) and postnatal (TS28) stages of mouse anatomy, with the latter substantially augmented by terma and relationships from the adult mouse anatomy (MA) ontology. (Hayamizu *et al.*, 2005)
+ * The urinary and reproductive systems have been extensively revised and refined by curators from the GenitoUrinary Development Molecular Anatomy Project (GUDMAP). (Little *et al.*, 2007)
+ * Extensive additions and revisions have been made in response to the expression annotation efforts of GXD, Edinburgh Mouse Atlas of Gene Expression (EMAGE; Richardson *et al.*, 2014), GUDMAP and other projects.
 
 GXD and other resources use the EMAPA ontology for annotation of mouse gene expression at embryonic and postnatal (including adult) stages. The GXD browser www.informatics.jax.org/vocab/gxd/anatomy enables users to navigate the ontology, to locate specific anatomical structures, and to obtain associated expression data in GXD.
