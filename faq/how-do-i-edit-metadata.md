@@ -75,15 +75,13 @@ The Amphioxus Development and Anatomy Ontology (AMPHX) is to describe the anatom
 ### Pull Request Pipeline
 
 Any user can make proposed changes to any `*.md` file. These remain on
-their fork until approved by OBO admins.
+their fork until approved by OBO admins. The workflow is:
 
-The workflow is:
-
-1.  An automated GitHub Actions job will run to validate your changes
-2.  An OBO administrator will evaluate your PR. If it failed the checks, it will not be accepted
-3.  If the the OBO admin rejects it they will provide feedback in the comment form which you can use to make further edits
-4.  More likely, the change will be accepted by the OBO admin. They will click "merge" and the changes will be visible in a few seconds.
-5.  The OBO admin will also need to run a Make script to regenerate the main metadata file, so your changes may not be visible on the front table straight away
+1. An automated GitHub Actions job will run to validate your changes
+2. An OBO administrator will evaluate your PR. If it failed the checks, it will not be accepted
+3. If the the OBO admin rejects it they will provide feedback in the comment form which you can use to make further edits
+4. More likely, the change will be accepted by the OBO admin. They will click "squash and merge".
+5. An automated GitHub Actions workflow will update the build artifacts and issue a new PR. An OBO admin can review and accept.
 
 ## Pull Request Tutorial
 
