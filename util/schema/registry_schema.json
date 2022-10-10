@@ -339,6 +339,12 @@
           "id": {
             "type": "string",
             "pattern": "^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
           }
         },
         "required": [
