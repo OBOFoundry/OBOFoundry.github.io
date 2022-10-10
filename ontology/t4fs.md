@@ -3,10 +3,10 @@ layout: ontology_detail
 id: t4fs
 title: terms4FAIRskills
 contact:
-  email: pete_mcq@protonmail.com
-  github: drosophilic
-  label: Peter McQuilton
-  orcid: 0000-0003-2687-1982
+  email: allyson.lister@oerc.ox.ac.uk
+  github: allysonlister
+  label: Allyson Lister
+  orcid: 0000-0002-7702-4495
 description: A terminology for the skills necessary to make data FAIR and to keep it FAIR.
 domain: information
 homepage: https://github.com/terms4fairskills/FAIRterminology
