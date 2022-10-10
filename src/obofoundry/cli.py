@@ -12,7 +12,8 @@ later, but that will cause problems--the code will get executed twice:
 """
 
 import click
-from . import update_operations_metadata
+
+from . import standardize_metadata, update_operations_metadata
 
 __all__ = [
     "main",
@@ -24,7 +25,8 @@ def main():
     """CLI for the OBO Foundry."""
 
 
+main.add_command(standardize_metadata.main)
 main.add_command(update_operations_metadata.main)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

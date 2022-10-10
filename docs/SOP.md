@@ -12,6 +12,7 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 - [Reviewing Ontologies for OBO Membership](#ROOM)
 - [Ontology Acceptance Email](#OAE)
 - [Changing ontology metadata in the registry](#META)
+- [Becoming a member of the OBO Operations Committee](#OPS_MEMBER)
 - [Chairing an OBO Operations Committee meeting call](#OPS_CHAIR)
 
 <a name="NOR"></a>
@@ -85,6 +86,11 @@ In general, the metadata record of an ontology in the OBO Foundry metadata regis
 7. If at least 3 months have passed after the initial request for feedback, and the above conditions are met, any OBO Foundry operations committee member MAY merge the pull request at their own discretion.
 
 For a discussion on this SOP, see [here](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1848).
+
+<a name="OPS_MEMBER"></a>
+
+## Becoming a member of the OBO Operations Committee
+The current processes of nomination, acceptance and onboarding are described [here](https://obofoundry.org/docs/NewOBOFC.html).
 
 <a name="OPS_CHAIR"></a>
 
