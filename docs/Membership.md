@@ -12,7 +12,7 @@ There are currently three working groups. Each page lists their respective membe
 - [Technical Working Group](TechnicalWG.html)
 - [Outreach Working Group](OutreachWG.html)
 
-<table class="table">
+<table class="table table-striped table-hover">
 <thead>
 <tr>
     <th role="columnheader">Name</th>
@@ -42,7 +42,7 @@ New members: follow the instructions on the [onboarding doc](https://docs.google
 
 ## Alumni
 
-<table class="table">
+<table class="table table-striped table-hover">
 <thead>
 <tr>
     <th role="columnheader">Name</th>

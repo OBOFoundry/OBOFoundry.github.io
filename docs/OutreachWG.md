@@ -14,7 +14,7 @@ The mailing list for the OBO Foundry Outreach Working Group is <a href='mailto:o
 
 ## Members
 
-<table class="table">
+<table class="table table-striped table-hover">
 <thead>
 <tr>
     <th role="columnheader">Name</th>
