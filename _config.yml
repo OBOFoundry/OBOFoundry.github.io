@@ -6296,9 +6296,6 @@ ontologies:
   title: The Statistical Methods Ontology
   tracker: https://github.com/ISA-tools/stato/issues
 - activity_status: active
-  build:
-    method: owl2obo
-    source_url: https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl
   contact:
     email: allyson.lister@oerc.ox.ac.uk
     github: allysonlister
@@ -6321,6 +6318,8 @@ ontologies:
   products:
   - id: swo.owl
     ontology_purl: http://purl.obolibrary.org/obo/swo.owl
+  - id: swo.json
+    ontology_purl: http://purl.obolibrary.org/obo/swo.json
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/25068035
     title: 'The Software Ontology (SWO): a resource for reproducibility in biomedical
