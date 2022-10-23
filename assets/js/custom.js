@@ -471,11 +471,5 @@ jQuery(document).ready(function() {
             let event = new Event('change');
             element.dispatchEvent(event);
             $('#table-main').css('display', 'block');
-            $( 'a' ).tooltip({
-                tooltipClass: "mytooltipstyle",
-                show: {
-                    effect: "slideDown",
-                }
-            });
         }).catch(error => console.log(error));
 });
