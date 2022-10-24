@@ -21,7 +21,8 @@ class Person(BaseModel):
     name: str
     orcid: str
     status: Literal["lead", "support"]
-    start: Optional[str]
+    start: Optional[str]  # can later be parsed more carefully
+    # TODO add github
 
 
 class Role(BaseModel):
@@ -30,8 +31,9 @@ class Role(BaseModel):
     name: str
     description: str
     open: Optional[bool]
-    commitment: Optional[str]
-    requirements: List[str] = Field(default_factory=list)
+    commitment: Optional[str]  # can later be required
+    requirements: Optional[List[str]]  # can later be required
+    responsibilities: Optional[List[str]]  # can later be required
     people: List[Person]
 
 
@@ -45,4 +47,10 @@ class TestRoles(unittest.TestCase):
             name = role_dict.get("name")
             with self.subTest(name=name):
                 self.assertIsNotNone(name)
-                Role.parse_obj(role_dict)
+                obj = Role.parse_obj(role_dict)
+                self.assertIsInstance(obj, Role)
+                if obj.requirements is not None:
+                    self.assertNotEqual(0, len(obj.requirements))
+                if obj.responsibilities is not None:
+                    self.assertNotEqual(0, len(obj.responsibilities))
+                self.assertLess(0, len(obj.people))
