@@ -18,11 +18,13 @@ An in-scope ontology prevents overlaps between ontologies (duplication of terms)
 
 ## Recommendations and Requirements
 
-Ideally the scope should be fairly narrow. Required terms that are out of scope should be imported from the appropriate ontology.
+Ideally the scope should be fairly narrow. Required terms that are out of scope should be imported from the appropriate ontology unless no such ontology exists and there is an immediate need for an out-of-scope term (or set thereof). We encourage the ontology maintainers to create a shareable file with such terms so that the community can access, reuse, edit, and add these new terms as new ontologies with the intended scope are developed.
 
 ## Implementation
 
-The domain (scope) covered by the ontology should be clearly stated. The statement should be brief and free of jargon; a few sentences should suffice. The content of the ontology should stay within the confines of the stated scope.
+The domain (scope) covered by the ontology should be clearly stated. The statement should be brief and free of jargon; a few sentences should suffice. The content of the ontology should stay within the confines of the stated scope. Out-of-scope terms should be placed within a separate module that can be imported/exported as a single unit.
+Generic terms must be maintained with community needs in mind. Mid/upper level terms should be considered for the [Core Ontology for Biology and Biomedicine (COB)](https://obofoundry.org/ontology/cob.html).
+
 
 ## Examples
 
