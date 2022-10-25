@@ -404,22 +404,10 @@ jQuery(document).ready(function() {
      */
     function apply_all_filters(data) {
         let selectedDomain = $("#dd-domains").children("option:selected").val();
-        if (selectedDomain) {
-            /**
-             * Filter out ontologies with no `domain` attribute and apply
-             * the rest of the user-supplied filters to the data.
-             */
-            let res = data["ontologies"].filter(x => x["domain"] !== undefined);
-            let dt = res.filter(x => x["domain"].includes(selectedDomain));
-            let dt2 = Search($("#searchVal"), dt);
-            applyFilters(dt2)
-        } else {
-            /**
-             * If no filters are supplied, just send back the raw data,
-             * including ontologies that don't have a `domain` attribute.
-             */
-            applyFilters(data["ontologies"]);
-        }
+        let res = data["ontologies"].filter(x => x["domain"] !== undefined);
+        let dt = res.filter(x => x["domain"].includes(selectedDomain));
+        let dt2 = Search($("#searchVal"), dt);
+        applyFilters(dt2)
     }
 // obtain json data using fetch
     fetch('/registry/ontologies.jsonld')

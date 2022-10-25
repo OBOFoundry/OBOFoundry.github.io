@@ -19,6 +19,7 @@ The mailing list for the OBO Foundry Outreach Working Group is <a href='mailto:o
 <tr>
     <th role="columnheader">Name</th>
     <th role="columnheader">ORCID</th>
+    <th role="columnheader">GitHub</th>
     <th role="columnheader">Affiliation</th>
     <th role="columnheader">Country</th>
 </tr>
@@ -29,6 +30,7 @@ The mailing list for the OBO Foundry Outreach Working Group is <a href='mailto:o
 <tr>
     <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
     <td><a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a></td>
+    <td><a href="https://github.com/{{ member.github }}">{{ member.github }}</a></td>
     <td>{{ member.affiliation }}</td>
     <td>{{ member.country }}</td>
 </tr>

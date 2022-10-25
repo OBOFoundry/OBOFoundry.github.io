@@ -1,17 +1,14 @@
 """Test data integrity, beyond what's possible with the JSON schema."""
 
-from pathlib import Path
-
+import requests
 import yaml
+
+from obofoundry.constants import ONTOLOGY_DIRECTORY
 
 __all__ = [
     "get_data",
-    "ONTOLOGY_DIRECTORY",
+    "query_wikidata",
 ]
-
-HERE = Path(__file__).parent.resolve()
-ROOT = HERE.parent.parent.resolve()
-ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
 
 
 def get_data():
@@ -29,3 +26,18 @@ def get_data():
         data["long_description"] = "".join(lines[idx:])
         ontologies[data["id"]] = data
     return ontologies
+
+
+#: WikiData SPARQL endpoint. See https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service#Interfacing
+WIKIDATA_SPARQL = "https://query.wikidata.org/bigdata/namespace/wdq/sparql"
+
+
+def query_wikidata(query: str):
+    """Query the Wikidata SPARQL endpoint and return JSON."""
+    headers = {"User-Agent": "obofoundry/1.0 (https://obofoundry.org)"}
+    res = requests.get(
+        WIKIDATA_SPARQL, params={"query": query, "format": "json"}, headers=headers
+    )
+    res.raise_for_status()
+    res_json = res.json()
+    return res_json["results"]["bindings"]
