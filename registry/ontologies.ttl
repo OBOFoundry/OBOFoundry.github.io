@@ -5106,7 +5106,6 @@ _:b224  <http://www.w3.org/2000/01/rdf-schema#label>  "Alejandra Gonzalez-Beltra
 <http://purl.obolibrary.org/obo/swo>
         <http://identifiers.org/preferredPrefix>  "SWO" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b266 ;
         <http://purl.org/dc/elements/1.1/description>  "The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. It contains detailed information on licensing and formats as well as software applications themselves, mainly (but not limited) to the bioinformatics community." ;
         <http://purl.org/dc/elements/1.1/title>  "Software ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
@@ -5114,26 +5113,27 @@ _:b224  <http://www.w3.org/2000/01/rdf-schema#label>  "Alejandra Gonzalez-Beltra
         <http://purl.org/dc/terms/1.1/theme>  "information technology" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/allysonlister/swo/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/swo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b267 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b266 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/swo.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/swo.json> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/allysonlister/swo> .
-
-_:b266  <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
-        <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/25068035>
         <http://purl.org/dc/elements/1.1/title>  "The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation" .
 
-_:b267  <http://www.w3.org/2000/01/rdf-schema#label>  "Allyson Lister" ;
+_:b266  <http://www.w3.org/2000/01/rdf-schema#label>  "Allyson Lister" ;
         <http://xmlns.com/foaf/0.1/mbox>  "allyson.lister@oerc.ox.ac.uk" .
 
 <http://purl.obolibrary.org/obo/swo.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/swo.owl" .
 
+<http://purl.obolibrary.org/obo/swo.json>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/swo.json" .
+
 <http://purl.obolibrary.org/obo/symp>
         <http://identifiers.org/preferredPrefix>  "SYMP" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b268 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b267 ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of disease symptoms, with symptoms encompasing perceived changes in function, sensations or appearance reported by a patient indicative of a disease." ;
         <http://purl.org/dc/elements/1.1/title>  "Symptom Ontology" ;
@@ -5143,18 +5143,18 @@ _:b267  <http://www.w3.org/2000/01/rdf-schema#label>  "Allyson Lister" ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/DiseaseOntology/SymptomOntology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/symp.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b269 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b268 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/symp.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/symp.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://symptomontologywiki.igs.umaryland.edu/mediawiki/index.php/Main_Page> .
 
-_:b268  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+_:b267  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/master/symp.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/19850722>
         <http://purl.org/dc/elements/1.1/title>  "GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database" .
 
-_:b269  <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
+_:b268  <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://xmlns.com/foaf/0.1/mbox>  "lynn.schriml@gmail.com" .
 
 <http://purl.obolibrary.org/obo/symp.owl>
@@ -5162,6 +5162,52 @@ _:b269  <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
 
 <http://purl.obolibrary.org/obo/symp.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/symp.obo" .
+
+<http://purl.obolibrary.org/obo/t4fs>
+        <http://identifiers.org/preferredPrefix>  "TF4S" ;
+        <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
+        <http://purl.org/dc/elements/1.1/description>  "A terminology for the skills necessary to make data FAIR and to keep it FAIR." ;
+        <http://purl.org/dc/elements/1.1/title>  "terms4FAIRskills" ;
+        <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.5281/zenodo.4705219> ;
+        <http://purl.org/dc/terms/1.1/theme>  "information" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/terms4fairskills/FAIRterminology/issues" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/t4fs.owl" ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b269 ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/t4fs.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/t4fs.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/t4fs.json> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/t4fs-community.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/t4fs-community.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/t4fs-community.json> ;
+        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/terms4fairskills/FAIRterminology> .
+
+<https://doi.org/10.5281/zenodo.4705219>
+        <http://purl.org/dc/elements/1.1/title>  "EOSC Co-creation funded project 074: Delivery of a proof of concept for terms4FAIRskills: Technical report" .
+
+_:b269  <http://www.w3.org/2000/01/rdf-schema#label>  "Allyson Lister" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "allyson.lister@oerc.ox.ac.uk" .
+
+<http://purl.obolibrary.org/obo/t4fs.owl>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/t4fs.owl" .
+
+<http://purl.obolibrary.org/obo/t4fs.obo>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/t4fs.obo" .
+
+<http://purl.obolibrary.org/obo/t4fs.json>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/t4fs.json" .
+
+<http://purl.obolibrary.org/obo/t4fs-community.owl>
+        <http://purl.org/dc/elements/1.1/title>  "This community view of T4FS makes the ontology available in OWL without upper-level ontology (ULO) terms to give the user community a simpler view of the term hierarchy." ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/t4fs-community.owl" .
+
+<http://purl.obolibrary.org/obo/t4fs-community.obo>
+        <http://purl.org/dc/elements/1.1/title>  "This community view of T4FS makes the ontology available in OBO format without upper-level ontology (ULO) terms to give the user community a simpler view of the term hierarchy." ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/t4fs-community.obo" .
+
+<http://purl.obolibrary.org/obo/t4fs-community.json>
+        <http://purl.org/dc/elements/1.1/title>  "This community view of T4FS makes the ontology available in JSON format without upper-level ontology (ULO) terms to give the user community a simpler view of the term hierarchy." ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/t4fs-community.json" .
 
 <http://purl.obolibrary.org/obo/taxrank>
         <http://identifiers.org/preferredPrefix>  "TAXRANK" ;
