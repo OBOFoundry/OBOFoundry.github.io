@@ -84,17 +84,15 @@ jQuery(document).ready(function() {
                 <table id="ont_table" class="table table-hover sortable">
                     <thead>
                         <tr>
-                            <th scope="col">
-                                <span>ID</span>
-                                <button type="button" class="btn btn-outline-default btn-xs" title="Sort by ID" data-sort="id" >
-                                    <i class="bi-chevron-up" aria-hidden="true"></i>
-                                </button>
+                            <th scope="col" style="min-width: 4em;">
+                                <span class="sort-button" title="Sort by ID" data-sort="id" >
+                                    ID <i class="bi-chevron-up" aria-hidden="true"></i>
+                                </span>
                             </th>
                             <th scope="col">
-                                <span>Title</span>
-                                <button type="button" class="btn btn-outline-default btn-xs" title="Sort by title" data-sort="title" >
-                                    <i class="bi-chevron-up" aria-hidden="true"></i>
-                                </button>
+                                <span class="sort-button" title="Sort by title" data-sort="title" >
+                                    Title <i class="bi-chevron-up" aria-hidden="true"></i>
+                                </span>
                             </th>
                             <th scope="col">
                                 <span>Description</span>
@@ -103,10 +101,9 @@ jQuery(document).ready(function() {
                                 <span>Quick Access</span>
                             </th>
                             <th scope="col">
-                                <span>Re-Use</span>
-                                <button type="button" class="btn btn-outline-default btn-xs" title="Sort by License" data-sort="license" >
-                                    <i class="bi-chevron-up" aria-hidden="true"></i>
-                                </button>
+                                <span class="sort-button" title="Sort by License" data-sort="license" >
+                                    Re-Use <i class="bi-chevron-up" aria-hidden="true"></i>
+                                </span>
                             </th>
                             <th scope="col">
                                 <span>Social</span>
