@@ -30,12 +30,6 @@ publications:
   title: 'Mouse Anatomy Ontologies: Enhancements and Tools for Exploring and Integrating Biomedical Data'
 - id: https://doi.org/10.1016/B978-0-12-800043-4.00023-3
   title: 'Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene Expression Database for Mouse Development (GXD)'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/15774030
-  title: 'The Adult Mouse Anatomical Dictionary: A tool for annotating and integrating data'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/17452023
-  title: A high-resolution anatomical ontology of the developing murine genitourinary tract
-- id: https://www.ncbi.nlm.nih.gov/pubmed/24265223
-  title: 'EMAGE mouse embryo spatial gene expression database: 2014 update'
 repository: https://github.com/obophenotype/mouse-anatomy-ontology
 taxon:
   id: NCBITaxon:10088
@@ -47,8 +41,6 @@ usages:
   user: http://www.informatics.jax.org/expression.shtml
 activity_status: active
 ---
-
-## BACKGROUND
 
 The ontology of mouse developmental anatomy was originally developed by Jonathan Bard and his colleagues as part of the Edinburgh Mouse Atlas Project (EMAP) in order to provide a structured controlled vocabulary of stage-specific anatomical structures for the developing laboratory mouse. (Bard *et al.*, 1998)
 
@@ -71,3 +63,9 @@ An extensive ontology of mouse anatomical terms, entitled EMAPA, has been develo
  * Extensive additions and revisions have been made in response to the expression annotation efforts of GXD, Edinburgh Mouse Atlas of Gene Expression (EMAGE; Richardson *et al.*, 2014), GUDMAP and other projects.
 
 GXD and other resources use the EMAPA ontology for annotation of mouse gene expression at embryonic and postnatal (including adult) stages. The GXD browser www.informatics.jax.org/vocab/gxd/anatomy enables users to navigate the ontology, to locate specific anatomical structures, and to obtain associated expression data in GXD.
+
+## Additional publications
+
+ * [5] Hayamizu TF, Mangan M, Corradi JP, Kadin JA, Ringwald M (2005). The Adult Mouse Anatomical Dictionary: A tool for annotating and integrating data. Genome Biology 6:R29. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1088948/>
+ * [6] Little MH, Brennan J, Georgas K, Davies JA, Davidson DR, Baldock RA, Beverdam A, Bertram JF, Capel B, Chiu HS, Clements D, Cullen-McEwen L, Fleming J, Gilbert T, Herzlinger D, Houghton D, Kaufman MH, Kleymenova E, Koopman PA, Lewis AG, McMahon AP, Mendelsohn CL, Mitchell EK, Rumballe BA, Sweeney DE, Valerius MT, Yamada G, Yang Y, Yu J (2007). A high-resolution anatomical ontology of the developing murine genitourinary tract. Gene Exp Patterns 7, 680-99. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2117077/>
+ * [7] Richardson L, Venkataraman S, Stevenson P, Yang Y, Moss J, Graham L, Burton B, Hill B, Rao J, Baldock RA, Armit C (2014). EMAGE mouse embryo spatial gene expression database: 2014 update. Nucleic Acids Res. 42, D835-D844. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3965061/>
