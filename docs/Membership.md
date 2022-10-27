@@ -94,8 +94,8 @@ New members: follow the instructions on the [onboarding doc](https://docs.google
 #### Responsibilities
 
 <ol>
-{% for requirement in role.requirements %}
-    <li>{{ requirement }}</li>
+{% for responsibility in role.responsibilities %}
+    <li>{{ responsibility }}</li>
 {% endfor %}
 </ol>
 {% endif %}
