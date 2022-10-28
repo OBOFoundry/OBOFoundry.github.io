@@ -38,7 +38,7 @@ The mailing list for the OBO Foundry Editorial Working Group is <a href='mailto:
 
 Membership in the OBO Foundry Editorial WG is open to all members of the OBO Foundry Operations Committee who are willing to actively participate. If you are interested in joining the working group, send an email to the mailing list.
 
-<table class="table">
+<table class="table table-striped table-hover">
 <thead>
 <tr>
     <th role="columnheader">Name</th>

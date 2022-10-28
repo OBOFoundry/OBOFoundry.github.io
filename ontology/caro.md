@@ -15,8 +15,8 @@ description: An upper level ontology to facilitate interoperability between exis
 domain: anatomy and development
 homepage: https://github.com/obophenotype/caro/
 license:
-  label: CC BY 3.0
-  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
 preferredPrefix: CARO
 products:
 - id: caro.owl

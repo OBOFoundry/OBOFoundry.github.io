@@ -17,6 +17,7 @@ class SortableTable {
    */
   constructor(tableNode) {
     this.tableNode = tableNode;
+    this.selector = '.sort-button'
 
     //get all table headers
     this.columnHeaders = tableNode.querySelectorAll('thead th');
@@ -26,7 +27,7 @@ class SortableTable {
     //select table headers containing button element for sorting.
     for (var i = 0; i < this.columnHeaders.length; i++) {
       var ch = this.columnHeaders[i];
-      var buttonNode = ch.querySelector('button');
+      var buttonNode = ch.querySelector(this.selector);
       if (buttonNode) {
         this.sortColumns.push(i);
         //set custom attribute for tracking sortable columns column-index.
@@ -62,7 +63,7 @@ class SortableTable {
 
     for (var i = 0; i < this.columnHeaders.length; i++) {
       var ch = this.columnHeaders[i];
-      var buttonNode = ch.querySelector('button');
+      var buttonNode = ch.querySelector(this.selector);
       if (i === columnIndex) {
         //get the sort order from aria-sort attribute
         var value = ch.getAttribute('aria-sort');
@@ -76,7 +77,7 @@ class SortableTable {
             ch.classList.contains('num')
           );
           // Point chevron in appropriate direction
-          chevron.setAttribute('class', 'glyphicon glyphicon-chevron-up')
+          chevron.setAttribute('class', 'bi-chevron-up')
         } else {
           //change sort order parameter
           ch.setAttribute('aria-sort', 'descending');
@@ -87,7 +88,7 @@ class SortableTable {
             ch.classList.contains('num')
           );
           // Point chevron in appropriate direction
-          chevron.setAttribute('class', 'glyphicon glyphicon-chevron-down')
+          chevron.setAttribute('class', 'bi-chevron-down')
         }
       } else {
         if (ch.hasAttribute('aria-sort') && buttonNode) {

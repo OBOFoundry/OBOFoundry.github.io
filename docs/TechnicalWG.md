@@ -18,7 +18,7 @@ The mailing list for the OBO Foundry Technical Working Group is <a href='mailto:
 
 ## Members
 
-<table class="table">
+<table class="table table-striped table-hover">
 <thead>
 <tr>
     <th role="columnheader">Name</th>

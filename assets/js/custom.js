@@ -1,3 +1,8 @@
+/*
+This script requires underscore.min.js for access to the underscore `_` object.
+This doesn't appear to be documented anywhere what it does or why.
+*/
+
 jQuery(document).ready(function() {
 
     function search() {
@@ -78,32 +83,29 @@ jQuery(document).ready(function() {
         return `<div><strong>${ domain? capitalize(tableDomains): ""}</strong></div>
                 <table id="ont_table" class="table table-hover sortable">
                     <thead>
-                        <tr class="row">
-                            <th scope="col" class="ob-center">
-                                <span>ID</span>
-                                <button type="button" class="btn btn-outline-default btn-xs" title="Sort by ID" data-sort="id" >
-                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-up"></span>
-                                </button>
+                        <tr>
+                            <th scope="col" style="min-width: 4em;">
+                                <span class="sort-button" title="Sort by ID" data-sort="id" >
+                                    ID <i class="bi-chevron-up" aria-hidden="true"></i>
+                                </span>
                             </th>
-                            <th scope="col" class="ob-center">
-                                <span>Title</span>
-                                <button type="button" class="btn btn-outline-default btn-xs" title="Sort by title" data-sort="title" >
-                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-up"></span>
-                                </button>
+                            <th scope="col">
+                                <span class="sort-button" title="Sort by title" data-sort="title" >
+                                    Title <i class="bi-chevron-up" aria-hidden="true"></i>
+                                </span>
                             </th>
-                            <th scope="col" class="ob-center">
+                            <th scope="col">
                                 <span>Description</span>
                             </th>
-                            <th scope="col" class="ob-center">
+                            <th scope="col">
                                 <span>Quick Access</span>
                             </th>
-                            <th scope="col" class="ob-center">
-                                <span>Re-Use</span>
-                                <button type="button" class="btn btn-outline-default btn-xs" title="Sort by License" data-sort="license" >
-                                    <span aria-hidden="true" class="glyphicon glyphicon-chevron-up"></span>
-                                </button>
+                            <th scope="col">
+                                <span class="sort-button" title="Sort by License" data-sort="license" >
+                                    Re-Use <i class="bi-chevron-up" aria-hidden="true"></i>
+                                </span>
                             </th>
-                            <th scope="col" class="ob-center">
+                            <th scope="col">
                                 <span>Social</span>
                             </th>
                         </tr>
@@ -157,13 +159,13 @@ jQuery(document).ready(function() {
                 github_box = ``;
             }
             if (data[i]["tracker"]) {
-                tracker =`<a class="btn btn-default" href="${data[i]["tracker"]}" aria-label="Go to the tracker for ${title}" title="Go to the tracker for ${title}">
-                                <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                tracker =`<a class="btn btn-outline-primary" href="${data[i]["tracker"]}" aria-label="Go to the tracker for ${title}" title="Go to the tracker for ${title}">
+                                <i class="bi-chat" aria-hidden="true"></i>
                             </a>`;
             } else {
                 tracker = `
-                        <a class="btn btn-default disabled">
-                            <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                        <a class="btn btn-outline-primary disabled">
+                            <i class="bi-chat" aria-hidden="true"></i>
                         </a>`;
             }
             if (data[i].hasOwnProperty("domain") && data[i]['domain'] !== undefined) {
@@ -174,25 +176,25 @@ jQuery(document).ready(function() {
             }
             if (data[i]["contact"]) {
                 contact =`
-                        <a role="button" class="btn btn-default" href="mailto:${data[i]["contact"]["email"]}" aria-label="Send an email to ${title}"
-                           title="Send an email to ${title}">\
-                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        <a role="button" class="btn btn-outline-primary" href="mailto:${data[i]["contact"]["email"]}" aria-label="Send an email to ${title}"
+                           title="Send an email to ${title}">
+                            <i class="bi-mailbox" aria-hidden="true"></i>
                         </a>`;
             } else {
                 contact = `
-                        <a role="button" class="btn btn-default disabled">
-                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        <a role="button" class="btn btn-outline-primary disabled">
+                            <i class="bi-mailbox" aria-hidden="true"></i>
                         </a>`;
             }
             if (data[i]["publications"] && data[i]["publications"].length > 0) {
                 publication = `
-                            <a role="button" class="btn btn-default" href="${data[i]["publications"][0]["id"]}" aria-label="View the primary publication for ${title}" title="View the primary publication for ${title}">
-                                <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                            <a role="button" class="btn btn-outline-primary" href="${data[i]["publications"][0]["id"]}" aria-label="View the primary publication for ${title}" title="View the primary publication for ${title}">
+                                <i class="bi-book" aria-hidden="true"></i>
                             </a>`;
             } else {
                 publication = `
-                        <a role="button" class="btn btn-default disabled">
-                            <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                        <a role="button" class="btn btn-outline-primary disabled">
+                            <i class="bi-book" aria-hidden="true"></i>
                         </a>`;
             }
             if (activity_status === "inactive" || activity_status === "orphaned") {
@@ -219,7 +221,7 @@ jQuery(document).ready(function() {
             }
             // table row template
             let template = `
-                <tr class="row ${is_inactive}">
+                <tr class="${is_inactive}">
                     <th scope="row">
                         <a href="ontology/${id}.html">
                             ${id}
@@ -233,15 +235,15 @@ jQuery(document).ready(function() {
                         ${description_box}
                     </td>
                     <td>
-                        <div class="btn-group btn-group-sm" role="group" style="display: flex;">
-                            <a role="button" class="btn btn-default" href="${homepage}" aria-label="Go to the homepage for ${title}" title="Go to the homepage for ${title}">
-                                 <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        <div class="btn-group btn-group-sm" role="group">
+                            <a class="btn btn-outline-primary" href="${homepage}" aria-label="Go to the homepage for ${title}" title="Go to the homepage for ${title}">
+                                 <i class="bi-house" aria-hidden="true"></i>
                             </a>
-                            <a role="button" class="btn btn-default" href="http://purl.obolibrary.org/obo/${id}.owl" aria-label="Download ${title} in OWL format" title="Download ${title} in OWL format">
-                                <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+                            <a class="btn btn-outline-primary" href="http://purl.obolibrary.org/obo/${id}.owl" aria-label="Download ${title} in OWL format" title="Download ${title} in OWL format">
+                                <i class="bi-download" aria-hidden="true"></i>
                             </a>
-                            <a role="button" class="btn btn-default" href="http://www.ontobee.org/browser/index.php?o=${id}" aria-label="Browse ${title} on OntoBee" title="Browse ${title} on OntoBee">
-                                <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                            <a class="btn btn-outline-primary" href="http://www.ontobee.org/browser/index.php?o=${id}" aria-label="Browse ${title} on OntoBee" title="Browse ${title} on OntoBee">
+                                <i class="bi-eye" aria-hidden="true"></i>
                             </a>
                             ${tracker}
                             ${contact}
@@ -466,11 +468,5 @@ jQuery(document).ready(function() {
             let event = new Event('change');
             element.dispatchEvent(event);
             $('#table-main').css('display', 'block');
-            $( 'a' ).tooltip({
-                tooltipClass: "mytooltipstyle",
-                show: {
-                    effect: "slideDown",
-                }
-            });
         }).catch(error => console.log(error));
 });

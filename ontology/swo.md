@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: swo
 title: Software ontology
-build:
-  method: owl2obo
-  source_url: https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl
 contact:
   email: allyson.lister@oerc.ox.ac.uk
   github: allysonlister
@@ -19,6 +16,7 @@ license:
 preferredPrefix: SWO
 products:
 - id: swo.owl
+- id: swo.json
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/25068035
   title: 'The Software Ontology (SWO): a resource for reproducibility in biomedical data analysis, curation and digital preservation'

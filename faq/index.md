@@ -41,7 +41,7 @@ title: OBO Foundry Frequently Asked Questions
 - [What tools are there for creating, editing and working with OBO ontologies?](/resources)
 - [How should I manage my ontology using version control?](https://douroucouli.wordpress.com/2014/01/08/creating-an-ontology-project/)
 - [How do I convert between formats (e.g. OBO to OWL format)?](http://robot.obolibrary.org/convert)
-- [How should I manage and curate my ontology throughout its lifecycle?](faq/managing-ontology.html)
+- [How should I manage and curate my ontology throughout its lifecycle?](/faq/managing-ontology.html)
 
 ### Participate
 
