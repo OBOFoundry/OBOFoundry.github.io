@@ -183,6 +183,8 @@ class TestIntegrity(unittest.TestCase):
                 self.assertIsNotNone(preferred_prefix)
                 self.assertLessEqual(2, len(preferred_prefix))
                 self.assertNotIn(" ", preferred_prefix)
+                if prefix != "dpo":
+                    self.assertEqual(preferred_prefix.casefold(), prefix.casefold())
 
     def test_redundant_descriptions(self):
         """Test that the description field is not redundant of the long form description."""
