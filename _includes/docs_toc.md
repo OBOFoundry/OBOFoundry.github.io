@@ -1,6 +1,5 @@
 [Operations Committee](/docs/OperationsCommittee.html)
 
-- [Mission Statement](/docs/MissionStatement.html)
 - [Membership](/docs/Membership.html)
 - [Meetings](/docs/CommitteeMeetings.html)
 - [Policy Decisions](/docs/OperationsCommitteePolicyDecisions.html)
