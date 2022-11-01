@@ -17,6 +17,9 @@ mailing_list: cido-discuss@googlegroups.com
 preferredPrefix: CIDO
 products:
 - id: cido.owl
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/36271389
+  title: "A comprehensive update on CIDO: the community-based coronavirus infectious disease ontology"
 repository: https://github.com/cido-ontology/cido
 tracker: https://github.com/cido-ontology/cido/issues
 activity_status: active
