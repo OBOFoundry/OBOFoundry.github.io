@@ -19,6 +19,9 @@ license:
 preferredPrefix: IDO
 products:
 - id: ido.owl
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/34275487
+  title: The Infectious Disease Ontology in the age of COVID-19
 repository: https://github.com/infectious-disease-ontology/infectious-disease-ontology
 taxon:
   id: NCBITaxon:9606

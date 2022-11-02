@@ -13,7 +13,7 @@ homepage: https://github.com/terms4fairskills/FAIRterminology
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
-preferredPrefix: TF4S
+preferredPrefix: T4FS
 products:
 - id: t4fs.owl
 - id: t4fs.obo
