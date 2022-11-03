@@ -18,7 +18,6 @@ Current working groups include:
 - The [Outreach Working Group](OutreachWG.html) is involved in public relations for the OBO Foundry. This includes monitoring and following up discussions on mailing lists, preparing documentation and educational materials, and presenting OBO Foundry activities at workshops, conferences, or other venues.
 
 The members of the Operations Committee are listed [here](Membership.html).
-See a description of our activities in our [mission statement](MissionStatement.html).
 
 New members should follow the instructions on the [onboarding doc](https://docs.google.com/document/d/1MKhNTjZjGx6Ls72dybIV2ajYtbqtwP7O4lwxN2v3RBA/edit#heading=h.10q6n5qc13dp)
 
