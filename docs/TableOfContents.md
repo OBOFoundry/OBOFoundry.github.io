@@ -6,7 +6,6 @@ title: Table of Contents
 
 Operations Committee
 
-- [Mission statement](/docs/MissionStatement.html)
 - [Membership](/docs/Membership.html)
 - [Meetings](/docs/CommitteeMeetings.html)
 - [Policy decisions](/docs/OperationsCommitteePolicyDecisions.html)
