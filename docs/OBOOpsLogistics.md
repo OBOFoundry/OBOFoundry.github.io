@@ -1,7 +1,6 @@
 ---
 layout: doc
-id: OBOOpsLogistics
-title: OBO Operations Committee: Logistics
+title: OBO Operations Committee Logistics
 ---
 
 ## Joining the OBO Operations Committee
@@ -20,7 +19,7 @@ This calendar contains event such as
 (2) events of interest to the community: the NCBO webinars, or the ontolog sessions
 (3) meetings and workshops, such as ICBO, NCBO events etc. Deadlines would be acceptable (e.g. September 5th, deadline for tutorial proposal for some conference)
 
-Personal events are not appropriate for this calendar (e.g. Z on vacation) and adding those will result in editing rights being revoked.
+Personal events are not appropriate for this calendar (e.g. "Z on vacation") and adding those will result in editing rights being revoked.
 
 ### Add the OBO Foundry calendar to your own
 
