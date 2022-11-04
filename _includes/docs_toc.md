@@ -1,10 +1,8 @@
 [Operations Committee](/docs/OperationsCommittee.html)
 
 - [Membership](/docs/Membership.html)
-- [Meetings](/docs/CommitteeMeetings.html)
+- [Logistics](/docs/OBOOpsLogistics.md)
 - [Policy Decisions](/docs/OperationsCommitteePolicyDecisions.html)
-- [Mailing Lists](/docs/MailingLists.html)
-- [OBO Calendar](/docs/OBOCalendar.html)
 
 [Editorial Working Group](/docs/EditorialWG.html)
 
