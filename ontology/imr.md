@@ -2,15 +2,16 @@
 layout: ontology_detail
 id: imr
 title: Molecule role (INOH Protein name/family name ontology)
+build:
+  insert_ontology_id: true
+  method: obo2owl
+  source_url: https://web.archive.org/web/20131127090937/http://www.inoh.org/ontologies/MoleculeRoleOntology.obo
 contact:
   email: curator@inoh.org
   label: INOH curators
+domain: chemistry and biochemistry
 homepage: http://www.inoh.org
 is_obsolete: true
-build:
-  source_url: https://web.archive.org/web/20131127090937/http://www.inoh.org/ontologies/MoleculeRoleOntology.obo
-  method: obo2owl
-  insert_ontology_id: true
 activity_status: inactive
 github_date_added: 2015-08-21
 ---

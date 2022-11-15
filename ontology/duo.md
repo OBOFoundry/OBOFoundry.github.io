@@ -2,34 +2,33 @@
 layout: ontology_detail
 id: duo
 title: Data Use Ontology
-jobs:
-  - id: https://travis-ci.org/EBISPOT/DUO
-    type: travis-ci
 build:
   checkout: git clone https://github.com/EBISPOT/duo.git
+  path: .
   system: git
-  path: "."
 contact:
   email: mcourtot@gmail.com
-  label: Melanie Courtot
   github: mcourtot
+  label: Melanie Courtot
   orcid: 0000-0002-9551-6370
-description: DUO is an ontology which represent data use conditions.
-homepage: https://github.com/EBISPOT/DUO
-products:
-  - id: duo.owl
 dependencies:
-  - id: iao
-  - id: bfo
-tracker: https://github.com/EBISPOT/DUO/issues
-license:
-  url: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-activity_status: active
-repository: https://github.com/EBISPOT/DUO
-preferredPrefix: DUO
+- id: bfo
+- id: iao
+description: DUO is an ontology which represent data use conditions.
 domain: information
-github_date_added: 2017-01-24
+homepage: https://github.com/EBISPOT/DUO
+jobs:
+- id: https://travis-ci.org/EBISPOT/DUO
+  type: travis-ci
+license:
+  label: CC BY 4.0
+  url: http://creativecommons.org/licenses/by/4.0/
+preferredPrefix: DUO
+products:
+- id: duo.owl
+repository: https://github.com/EBISPOT/DUO
+tracker: https://github.com/EBISPOT/DUO/issues
+activity_status: active
 ---
 
 DUO allows to semantically tag datasets with restriction about their usage, making them discoverable automatically based on the authorization level of users, or intended usage.

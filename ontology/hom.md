@@ -1,32 +1,32 @@
 ---
 layout: ontology_detail
 id: hom
-contact:
-  email: bgee@sib.swiss
-  label: Frederic Bastian
-  github: fbastian
-  orcid: 0000-0002-9415-5104
-description: This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology.
-homepage: https://github.com/BgeeDB/homology-ontology
-products:
-  - id: hom.owl
 title: Homology Ontology
-tracker: https://github.com/BgeeDB/homology-ontology/issues
 build:
   checkout: git clone https://github.com/BgeeDB/homology-ontology.git
-  system: git
   method: vcs
   path: src/ontology
-license:
-  url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-activity_status: active
-repository: https://github.com/BgeeDB/homology-ontology
-preferredPrefix: HOM
+  system: git
+contact:
+  email: bgee@sib.swiss
+  github: fbastian
+  label: Frederic Bastian
+  orcid: 0000-0002-9415-5104
+description: This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology.
 domain: anatomy and development
-github_date_added: 2015-07-28
+homepage: https://github.com/BgeeDB/homology-ontology
+license:
+  label: CC0 1.0
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+preferredPrefix: HOM
+products:
+- id: hom.owl
+publications:
+- id: https://doi.org/10.1016/j.tig.2009.12.012
+  title: An ontology to clarify homology-related concepts
+repository: https://github.com/BgeeDB/homology-ontology
+tracker: https://github.com/BgeeDB/homology-ontology/issues
+activity_status: active
 ---
 
 This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology. The ontology can be cited as:
-
-Roux J, Robinson-Rechavi M. 2010. An ontology to clarify homology-related concepts. <i>Trends in Genetics</i> 26:99-102. <a href="https://doi.org/10.1016/j.tig.2009.12.012">doi:10.1016/j.tig.2009.12.012</a>

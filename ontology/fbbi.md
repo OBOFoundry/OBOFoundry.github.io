@@ -1,28 +1,27 @@
 ---
 layout: ontology_detail
 id: fbbi
-preferredPrefix: FBbi
-contact:
-  email: wawong@gmail.com
-  label: Willy Wong
-  github: wawong
-  orcid: 0000-0002-8841-5870
-license:
-  url: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-description: A structured controlled vocabulary of sample preparation, visualization and imaging methods used in biomedical research.
-domain: investigations
-tags:
-  - imaging experiments
-homepage: http://cellimagelibrary.org/
-tracker: https://github.com/CRBS/Biological_Imaging_Methods_Ontology/issues
-products:
-  - id: fbbi.owl
 title: Biological Imaging Methods Ontology
 build:
-  source_url: https://raw.githubusercontent.com/dosumis/fbbi/master/src/ontology/fbbi.obo
   method: obo2owl
-activity_status: active
+  source_url: https://raw.githubusercontent.com/dosumis/fbbi/master/src/ontology/fbbi.obo
+contact:
+  email: wawong@gmail.com
+  github: wawong
+  label: Willy Wong
+  orcid: 0000-0002-8841-5870
+description: A structured controlled vocabulary of sample preparation, visualization and imaging methods used in biomedical research.
+domain: investigations
+homepage: http://cellimagelibrary.org/
+license:
+  label: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
+preferredPrefix: FBbi
+products:
+- id: fbbi.owl
 repository: https://github.com/CRBS/Biological_Imaging_Methods_Ontology
-github_date_added: 2015-07-28
+tags:
+- imaging experiments
+tracker: https://github.com/CRBS/Biological_Imaging_Methods_Ontology/issues
+activity_status: active
 ---

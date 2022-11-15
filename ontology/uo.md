@@ -1,33 +1,32 @@
 ---
 layout: ontology_detail
 id: uo
-in_foundry: false
+title: Units of measurement ontology
+build:
+  method: obo2owl
+  source_url: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo
 contact:
   email: g.gkoutos@gmail.com
-  label: George Gkoutos
   github: gkoutos
+  label: George Gkoutos
   orcid: 0000-0002-2061-091X
 description: Metrical units for use in conjunction with PATO
 domain: phenotype
 homepage: https://github.com/bio-ontology-research-group/unit-ontology
-products:
-  - id: uo.owl
-  - id: uo.obo
-title: Units of measurement ontology
+in_foundry: false
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
-build:
-  source_url: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo
-  method: obo2owl
-tracker: https://github.com/bio-ontology-research-group/unit-ontology/issues
-publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/23060432
-    title: "The Units Ontology: a tool for integrating units of measurement in science"
-activity_status: active
-repository: https://github.com/bio-ontology-research-group/unit-ontology
+  url: http://creativecommons.org/licenses/by/3.0/
 preferredPrefix: UO
-github_date_added: 2015-07-29
+products:
+- id: uo.owl
+- id: uo.obo
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/23060432
+  title: 'The Units Ontology: a tool for integrating units of measurement in science'
+repository: https://github.com/bio-ontology-research-group/unit-ontology
+tracker: https://github.com/bio-ontology-research-group/unit-ontology/issues
+activity_status: active
 ---
 
 See also:

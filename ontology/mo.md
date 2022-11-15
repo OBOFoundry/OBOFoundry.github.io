@@ -1,18 +1,18 @@
 ---
 layout: ontology_detail
 id: mo
+title: Microarray experimental conditions
 contact:
-  orcid: 0000-0002-5714-991X
   email: stoeckrt@pcbi.upenn.edu
   label: Chris Stoeckert
+  orcid: 0000-0002-5714-991X
 description: A standardized description of a microarray experiment in support of MAGE v.1.
 domain: investigations
 homepage: http://mged.sourceforge.net/ontologies/MGEDontology.php
+is_obsolete: true
 page: http://mged.sourceforge.net/software/downloads.php
 products:
-  - id: mo.owl
-title: Microarray experimental conditions
-is_obsolete: true
+- id: mo.owl
 replaced_by: obi
 activity_status: inactive
 github_date_added: 2015-07-28

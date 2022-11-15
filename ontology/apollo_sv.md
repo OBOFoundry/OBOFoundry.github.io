@@ -1,28 +1,27 @@
 ---
 layout: ontology_detail
 id: apollo_sv
+title: Apollo Structured Vocabulary
 contact:
   email: hoganwr@ufl.edu
-  label: William Hogan
   github: hoganwr
+  label: William Hogan
   orcid: 0000-0002-9881-1017
-homepage: https://github.com/ApolloDev/apollo-sv
 description: Defines terms and relations necessary for interoperation between epidemic models and public health application software that interface with these models
-products:
-  - id: apollo_sv.owl
 domain: health
-title: Apollo Structured Vocabulary
+homepage: https://github.com/ApolloDev/apollo-sv
+license:
+  label: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
+preferredPrefix: APOLLO_SV
+products:
+- id: apollo_sv.owl
+publications:
+- id: https://doi.org/10.1186/s13326-016-0092-y
+  title: 'The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation'
+repository: https://github.com/ApolloDev/apollo-sv
 tracker: https://github.com/ApolloDev/apollo-sv/issues
 activity_status: active
-license:
-  url: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-repository: https://github.com/ApolloDev/apollo-sv
-preferredPrefix: APOLLO_SV
-publications:
-  - id: https://doi.org/10.1186/s13326-016-0092-y
-    title: "The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation"
-github_date_added: 2019-04-04
 ---
 
 #Apollo Structured Vocabulary

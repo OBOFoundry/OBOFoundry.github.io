@@ -3,15 +3,16 @@ layout: ontology_detail
 id: dc_cl
 title: Dendritic cell
 contact:
-  orcid: 0000-0003-1617-8244
   email: Lindsay.Cowell@utsouthwestern.edu
   label: Lindsay Cowell
-taxon:
-  id: all
-  label:
+  orcid: 0000-0003-1617-8244
+domain: anatomy and development
 homepage: http://www.dukeontologygroup.org/Projects.html
 is_obsolete: true
 replaced_by: cl
+taxon:
+  id: all
+  label: null
 activity_status: inactive
 github_date_added: 2015-08-21
 ---

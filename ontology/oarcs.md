@@ -2,22 +2,21 @@
 layout: ontology_detail
 id: oarcs
 title: Ontology of Arthropod Circulatory Systems
-homepage: https://github.com/aszool/oarcs
-description: OArCS is an ontology describing the Arthropod ciruclatory system.
 contact:
   email: mjyoder@illinois.edu
-  label: Matt Yoder
   github: mjy
+  label: Matt Yoder
   orcid: 0000-0002-5640-5491
+description: OArCS is an ontology describing the Arthropod ciruclatory system.
 domain: anatomy and development
-repository: https://github.com/aszool/oarcs
+homepage: https://github.com/aszool/oarcs
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
-tracker: https://github.com/aszool/oarcs/issues
-products:
-  - id: oarcs.owl
-activity_status: active
+  url: http://creativecommons.org/licenses/by/3.0/
 preferredPrefix: OARCS
-github_date_added: 2017-02-10
+products:
+- id: oarcs.owl
+repository: https://github.com/aszool/oarcs
+tracker: https://github.com/aszool/oarcs/issues
+activity_status: active
 ---

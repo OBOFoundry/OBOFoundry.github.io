@@ -3,1076 +3,6 @@
     "ontologies": [
         {
             "activity_status": "active",
-            "browsers": [
-                {
-                    "label": "BioPortal",
-                    "title": "BioPortal Browser",
-                    "url": "http://bioportal.bioontology.org/ontologies/BFO?p=classes"
-                }
-            ],
-            "contact": {
-                "email": "phismith@buffalo.edu",
-                "github": "phismith",
-                "label": "Barry Smith",
-                "orcid": "0000-0003-1384-116X"
-            },
-            "depicted_by": "https://avatars2.githubusercontent.com/u/12972134?v=3&s=200",
-            "description": "The upper level ontology upon which OBO Foundry ontologies are built.",
-            "domain": "upper",
-            "homepage": "http://ifomis.org/bfo/",
-            "id": "bfo",
-            "in_foundry_order": 1,
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/4.0/"
-            },
-            "mailing_list": "https://groups.google.com/forum/#!forum/bfo-discuss",
-            "ontology_purl": "http://purl.obolibrary.org/obo/bfo.owl",
-            "preferredPrefix": "BFO",
-            "products": [
-                {
-                    "id": "bfo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/bfo.owl"
-                },
-                {
-                    "id": "bfo.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/bfo.obo"
-                }
-            ],
-            "repository": "https://github.com/BFO-ontology/BFO",
-            "review": {
-                "date": 2016,
-                "document": {
-                    "label": "PDF",
-                    "link": "https://drive.google.com/open?id=0B81h9ah4tAM_RnNTRUZnVGRyWXM"
-                }
-            },
-            "title": "Basic Formal Ontology",
-            "tracker": "https://github.com/BFO-ontology/BFO/issues",
-            "usages": [
-                {
-                    "description": "BFO is imported by multiple OBO ontologies to standardize upper level structure",
-                    "type": "owl_import",
-                    "user": "http://obofoundry.org"
-                }
-            ]
-        },
-        {
-            "activity_status": "active",
-            "browsers": [
-                {
-                    "label": "CHEBI",
-                    "title": "EBI CHEBI Browser",
-                    "url": "http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView"
-                }
-            ],
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo"
-            },
-            "contact": {
-                "email": "amalik@ebi.ac.uk",
-                "github": "amalik01",
-                "label": "Adnan Malik",
-                "orcid": "0000-0001-8123-5351"
-            },
-            "depicted_by": "https://www.ebi.ac.uk/chebi/images/ChEBI_logo.png",
-            "description": "A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds.",
-            "domain": "chemistry and biochemistry",
-            "homepage": "http://www.ebi.ac.uk/chebi",
-            "id": "chebi",
-            "in_foundry_order": 1,
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/chebi.owl",
-            "page": "http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual",
-            "preferredPrefix": "CHEBI",
-            "products": [
-                {
-                    "id": "chebi.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/chebi.owl"
-                },
-                {
-                    "id": "chebi.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/chebi.obo"
-                },
-                {
-                    "id": "chebi.owl.gz",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/chebi.owl.gz",
-                    "title": "chebi, compressed owl"
-                },
-                {
-                    "id": "chebi/chebi_lite.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/chebi/chebi_lite.obo",
-                    "title": "chebi_lite, no syns or xrefs"
-                },
-                {
-                    "id": "chebi/chebi_core.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/chebi/chebi_core.obo",
-                    "title": "chebi_core, no xrefs"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/26467479",
-                    "title": "ChEBI in 2016: Improved services and an expanding collection of metabolites."
-                }
-            ],
-            "repository": "https://github.com/ebi-chebi/ChEBI",
-            "review": {
-                "date": 2010
-            },
-            "title": "Chemical Entities of Biological Interest",
-            "tracker": "https://github.com/ebi-chebi/ChEBI/issues",
-            "twitter": "chebit",
-            "usages": [
-                {
-                    "description": "Rhea uses CHEBI to annotate reaction participants",
-                    "examples": [
-                        {
-                            "description": "Query for all usages of CHEBI:29748 (chorismate)",
-                            "url": "https://www.rhea-db.org/searchresults?q=CHEBI:29748"
-                        }
-                    ],
-                    "user": "https://www.rhea-db.org/"
-                },
-                {
-                    "description": "ZFIN uses CHEBI to annotate experiments",
-                    "examples": [
-                        {
-                            "description": "A curated zebrafish experiment involving exposure to (5Z,8Z,14Z)-11,12-dihydroxyicosatrienoic acid (CHEBI:63969)",
-                            "url": "http://zfin.org/action/expression/experiment?id=ZDB-EXP-190627-10"
-                        }
-                    ],
-                    "user": "http://zfin.org"
-                }
-            ]
-        },
-        {
-            "activity_status": "active",
-            "browsers": [
-                {
-                    "label": "DO",
-                    "title": "DO Browser",
-                    "url": "http://www.disease-ontology.org/"
-                }
-            ],
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.obo"
-            },
-            "contact": {
-                "email": "lynn.schriml@gmail.com",
-                "github": "lschriml",
-                "label": "Lynn Schriml",
-                "orcid": "0000-0001-8910-9851"
-            },
-            "depicted_by": "http://www.disease-ontology.org/media/images/DO_logo.jpg",
-            "description": "An ontology for describing the classification of human diseases organized by etiology.",
-            "domain": "health",
-            "homepage": "http://www.disease-ontology.org",
-            "id": "doid",
-            "in_foundry_order": 1,
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC0 1.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
-                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/doid.owl",
-            "preferredPrefix": "DOID",
-            "products": [
-                {
-                    "id": "doid.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/doid.owl",
-                    "title": "Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy plus equivalent axioms to other OBO Foundry ontologies."
-                },
-                {
-                    "id": "doid.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/doid.obo",
-                    "title": "Disease Ontology, OBO format. This file omits the equivalent axioms."
-                }
-            ],
-            "publications": [
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/25348409",
-                    "title": "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"
-                },
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/34755882",
-                    "title": "The Human Disease Ontology 2022 update"
-                }
-            ],
-            "repository": "https://github.com/DiseaseOntology/HumanDiseaseOntology",
-            "review": {
-                "date": 2015,
-                "document": {
-                    "label": "PDF",
-                    "link": "https://drive.google.com/open?id=0B8vqEgF1N0NIZ082U2JETHlSTGs"
-                }
-            },
-            "tags": [
-                "disease"
-            ],
-            "taxon": {
-                "id": "NCBITaxon:9606",
-                "label": "Homo sapiens"
-            },
-            "title": "Human Disease Ontology",
-            "tracker": "https://github.com/DiseaseOntology/HumanDiseaseOntology/issues",
-            "twitter": "diseaseontology",
-            "usages": [
-                {
-                    "description": "Alliance of Genome Resources - MGD, RGD, SGD, FlyBase, WormBase, ZFIN use DO",
-                    "examples": [
-                        {
-                            "description": "Human diseases annotated to over 190,000 MOD genes, alleles, disease models and human genes",
-                            "url": "https://www.alliancegenome.org/search?category=disease"
-                        },
-                        {
-                            "description": "The landing page for Coronavirus Infectious Disease",
-                            "url": "https://www.alliancegenome.org/disease/DOID:0080599"
-                        }
-                    ],
-                    "user": "https://www.alliancegenome.org"
-                },
-                {
-                    "description": "MGI disease model annotations use DO",
-                    "examples": [
-                        {
-                            "description": "physical disorder",
-                            "url": "http://www.informatics.jax.org/disease/DOID:0080015"
-                        }
-                    ],
-                    "user": "http://www.informatics.jax.org/disease"
-                },
-                {
-                    "description": "Immune Epitope Database",
-                    "examples": [
-                        {
-                            "description": "Antibody and T cell epitopes associated with human diseases",
-                            "url": "https://www.iedb.org"
-                        }
-                    ],
-                    "user": "https://www.iedb.org"
-                }
-            ]
-        },
-        {
-            "activity_status": "active",
-            "browsers": [
-                {
-                    "label": "AmiGO",
-                    "title": "Gene Ontology AmiGO 2 Browser",
-                    "url": "http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab"
-                }
-            ],
-            "contact": {
-                "email": "suzia@stanford.edu",
-                "github": "suzialeksander",
-                "label": "Suzi Aleksander",
-                "orcid": "0000-0001-6787-2901"
-            },
-            "dependencies": [
-                {
-                    "id": "uberon",
-                    "subset": "go/extensions/uberon_import.owl"
-                },
-                {
-                    "id": "cl",
-                    "subset": "go/extensions/cl_import.owl"
-                },
-                {
-                    "id": "ncbitaxon",
-                    "subset": "go/extensions/ncbitaxon_import.owl"
-                },
-                {
-                    "id": "ro",
-                    "subset": "go/extensions/ro_import.owl"
-                },
-                {
-                    "connects": [
-                        {
-                            "id": "nifstd"
-                        },
-                        {
-                            "id": "go"
-                        }
-                    ],
-                    "description": "Bridging axioms between nifstd and go",
-                    "id": "go/extensions/go-bridge-to-nifstd.owl",
-                    "publications": [
-                        {
-                            "id": "http://www.ncbi.nlm.nih.gov/pubmed/24093723",
-                            "title": "The Gene Ontology (GO) Cellular Component Ontology: integration with SAO (Subcellular Anatomy Ontology) and other recent developments."
-                        }
-                    ],
-                    "title": "GO bridge to NIFSTD",
-                    "type": "BridgeOntology"
-                }
-            ],
-            "depicted_by": "http://geneontology.org/assets/go-logo-icon.mini.png",
-            "description": "An ontology for describing the function of genes and gene products",
-            "domain": "biological systems",
-            "homepage": "http://geneontology.org/",
-            "id": "go",
-            "in_foundry_order": 1,
-            "integration_server": "http://build.berkeleybop.org/view/GO",
-            "label": "GO",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/go.owl",
-            "preferredPrefix": "GO",
-            "products": [
-                {
-                    "description": "The main ontology in OWL. This is self contained and does not have connections to other OBO ontologies",
-                    "id": "go.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/go.owl",
-                    "page": "http://geneontology.org/page/download-ontology",
-                    "title": "GO (OWL edition)"
-                },
-                {
-                    "description": "Equivalent to go.owl, in obo format",
-                    "id": "go.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/go.obo",
-                    "page": "http://geneontology.org/page/download-ontology",
-                    "title": "GO (OBO Format edition)"
-                },
-                {
-                    "description": "Equivalent to go.owl, in obograph json format",
-                    "id": "go.json",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/go.json",
-                    "page": "https://github.com/geneontology/obographs/",
-                    "title": "GO (JSON edition)"
-                },
-                {
-                    "description": "The main ontology plus axioms connecting to select external ontologies, with subsets of those ontologies",
-                    "id": "go/extensions/go-plus.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/go/extensions/go-plus.owl",
-                    "page": "http://geneontology.org/page/download-ontology",
-                    "title": "GO-Plus"
-                },
-                {
-                    "description": "The main ontology plus axioms connecting to select external ontologies, excluding the external ontologies themselves",
-                    "id": "go/go-base.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/go/go-base.owl",
-                    "page": "http://geneontology.org/page/download-ontology",
-                    "title": "GO Base Module"
-                },
-                {
-                    "description": "As go-plus.owl, in obographs json format",
-                    "id": "go/extensions/go-plus.json",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/go/extensions/go-plus.json",
-                    "page": "https://github.com/geneontology/obographs/",
-                    "title": "GO-Plus"
-                },
-                {
-                    "description": "Basic version of the GO, filtered such that the graph is guaranteed to be acyclic and annotations can be propagated up the graph. The relations included are is a, part of, regulates, negatively regulates and positively regulates. This version excludes relationships that cross the 3 GO hierarchies.",
-                    "id": "go/go-basic.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/go/go-basic.obo",
-                    "page": "http://geneontology.org/page/download-ontology",
-                    "title": "GO-Basic, Filtered, for use with legacy tools"
-                },
-                {
-                    "description": "As go-basic.obo, in json format",
-                    "id": "go/go-basic.json",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/go/go-basic.json",
-                    "page": "http://geneontology.org/page/download-ontology",
-                    "title": "GO-Basic, Filtered, for use with legacy tools (JSON)"
-                },
-                {
-                    "description": "Classes added to ncbitaxon for groupings such as prokaryotes",
-                    "id": "go/extensions/go-taxon-groupings.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl",
-                    "page": "http://geneontology.org/page/download-ontology",
-                    "title": "GO Taxon Groupings"
-                },
-                {
-                    "description": "Equivalent to go.owl, but released daily. Note the snapshot release is not archived.",
-                    "id": "go/snapshot/go.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/go/snapshot/go.owl",
-                    "page": "http://geneontology.org/page/download-ontology",
-                    "title": "GO (OWL edition), daily snapshot release"
-                },
-                {
-                    "description": "Equivalent to go.owl, but released daily. Note the snapshot release is not archived.",
-                    "id": "go/snapshot/go.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/go/snapshot/go.obo",
-                    "page": "http://geneontology.org/page/download-ontology",
-                    "title": "GO (OBO Format edition), daily snapshot release"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/10802651",
-                    "title": "Gene ontology: tool for the unification of biology. The Gene Ontology Consortium"
-                },
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/33290552",
-                    "title": "The Gene Ontology resource: enriching a GOld mine"
-                }
-            ],
-            "repository": "https://github.com/geneontology/go-ontology",
-            "review": {
-                "date": 2010
-            },
-            "tags": [
-                "biology"
-            ],
-            "taxon": {
-                "id": "NCBITaxon:1",
-                "label": "All life"
-            },
-            "title": "Gene Ontology",
-            "tracker": "https://github.com/geneontology/go-ontology/issues/",
-            "twitter": "news4go",
-            "usages": [
-                {
-                    "description": "The GO ontology is used by the GO consortium for functional annotation of genes",
-                    "examples": [
-                        {
-                            "description": "annotations to transmembrane transport",
-                            "url": "http://amigo.geneontology.org/amigo/term/GO:0055085"
-                        }
-                    ],
-                    "type": "annotation",
-                    "user": "http://geneontology.org"
-                },
-                {
-                    "description": "Uniprot uses GO to show the function of proteins",
-                    "examples": [
-                        {
-                            "description": "functional annotations of human Sonic hedgehog protein",
-                            "url": "https://www.uniprot.org/uniprot/Q15465#function"
-                        }
-                    ],
-                    "type": "annotation",
-                    "user": "https://www.uniprot.org"
-                },
-                {
-                    "description": "Reactome annotates activities, pathways, and cellular localization using GO",
-                    "examples": [
-                        {
-                            "description": "protein tyrosine kinase activity of an EGFR complex",
-                            "url": "https://reactome.org/content/detail/R-HSA-177934"
-                        }
-                    ],
-                    "type": "annotation",
-                    "user": "https://reactome.org"
-                },
-                {
-                    "description": "The Alliance of Genome Resources uses GO for model organism gene function annotation",
-                    "examples": [
-                        {
-                            "description": "Functional summary of C elegans nsy-1 gene",
-                            "url": "https://www.alliancegenome.org/gene/WB:WBGene00003822#function---go-annotations"
-                        },
-                        {
-                            "description": "Gene Ontology Causal Activity Models for C elegans nsy-1 gene",
-                            "url": "https://www.alliancegenome.org/gene/WB:WBGene00003822#pathways"
-                        }
-                    ],
-                    "type": "annotation",
-                    "user": "https://www.alliancegenome.org"
-                },
-                {
-                    "description": "Rhea uses GO to describe individual biochemical reactions",
-                    "examples": [
-                        {
-                            "description": "Glutamine scyllo-inositol transaminase reaction and associated GO term",
-                            "url": "https://www.rhea-db.org/rhea/22920"
-                        }
-                    ],
-                    "type": "mapping",
-                    "user": "https://www.rhea-db.org"
-                }
-            ]
-        },
-        {
-            "activity_status": "active",
-            "browsers": [
-                {
-                    "label": "BioPortal",
-                    "title": "BioPortal Browser",
-                    "url": "http://bioportal.bioontology.org/ontologies/OBI?p=classes"
-                }
-            ],
-            "build": {
-                "source_url": "http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/"
-            },
-            "contact": {
-                "email": "bpeters@lji.org",
-                "github": "bpeters42",
-                "label": "Bjoern Peters",
-                "orcid": "0000-0002-8457-6693"
-            },
-            "depicted_by": "https://svn.code.sf.net/p/obi/code/trunk/web/htdocs/images/obi-lotext.png",
-            "description": "An integrated ontology for the description of life-science and clinical investigations",
-            "domain": "investigations",
-            "homepage": "http://obi-ontology.org",
-            "id": "obi",
-            "in_foundry_order": 1,
-            "integration_server": "http://build.berkeleybop.org/job/build-obi/",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
-            },
-            "mailing_list": "http://groups.google.com/group/obi-users",
-            "ontology_purl": "http://purl.obolibrary.org/obo/obi.owl",
-            "preferredPrefix": "OBI",
-            "products": [
-                {
-                    "description": "The full version of OBI in OWL format",
-                    "id": "obi.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/obi.owl",
-                    "title": "OBI"
-                },
-                {
-                    "description": "The OBO-format version of OBI",
-                    "id": "obi.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/obi.obo",
-                    "title": "OBI in OBO"
-                },
-                {
-                    "description": "A collection of important high-level terms and their relations from OBI and other ontologies",
-                    "id": "obi/obi_core.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/obi/obi_core.owl",
-                    "title": "OBI Core"
-                },
-                {
-                    "description": "Base module for OBI",
-                    "id": "obi/obi-base.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/obi/obi-base.owl",
-                    "title": "OBI Base module"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/27128319",
-                    "title": "The Ontology for Biomedical Investigations"
-                }
-            ],
-            "repository": "https://github.com/obi-ontology/obi",
-            "review": {
-                "date": 2013,
-                "document": {
-                    "label": "PDF",
-                    "link": "https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc"
-                }
-            },
-            "title": "Ontology for Biomedical Investigations",
-            "tracker": "http://purl.obolibrary.org/obo/obi/tracker",
-            "usages": [
-                {
-                    "description": "The Immune Epitope Database (IEDB) is funded by NIAID that catalogs experimental data on antibody and T cell epitopes studied in humans, non-human primates, and other animal species in the context of infectious disease, allergy, autoimmunity and transplantation.",
-                    "examples": [
-                        {
-                            "description": "A specific assay curated in the IEDB using the OBI:1110180 '3H-thymidine assay measuring epitope specific proliferation of T cells' ('3H-thymidine')",
-                            "url": "http://www.iedb.org/assay/1505273"
-                        }
-                    ],
-                    "user": "https://www.iedb.org"
-                },
-                {
-                    "description": "ENCODE is a comprehensive parts list of functional elements in the human genome, including elements that act at the protein and RNA levels, and regulatory elements that control cells and circumstances in which a gene is active.",
-                    "examples": [
-                        {
-                            "description": "A specific assay annotated in ENCODE using OBI:0000716 'ChiP-seq'",
-                            "url": "https://www.encodeproject.org/report/?type=Experiment&accession=ENCSR012KGU&accession=ENCSR560MXA&accession=ENCSR803FKU&accession=ENCSR216YPQ&accession=ENCSR115BCB&field=%40id&field=assay_term_name&field=assay_term_id"
-                        }
-                    ],
-                    "user": "https://www.encodeproject.org/"
-                },
-                {
-                    "description": "The NASA GeneLab data repository hosts space biology and space-related datasets funded by multiple space agencies around the world.",
-                    "examples": [
-                        {
-                            "description": "A specific assay annotated in NASA GeneLab using OBI:0001271 'RNA-seq assay'",
-                            "url": "https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-464/"
-                        }
-                    ],
-                    "user": "https://genelab-data.ndc.nasa.gov/genelab/projects"
-                },
-                {
-                    "description": "The CFDE is providing a centralized metadata resource to allow search across data coordination centers from multiple Common Fund programs.",
-                    "examples": [
-                        {
-                            "description": "OBI is used in CFDE to captures types of experiments with assay terms such as OBI:0003094 'fluorescence in-situ hybridization assay'",
-                            "url": "https://app.nih-cfde.org/chaise/recordset/#1/CFDE:assay_type@sort(nid)"
-                        }
-                    ],
-                    "user": "https://app.nih-cfde.org/"
-                },
-                {
-                    "description": "NIF is a dynamic inventory of Web-based neuroscience resources, data, and tools accessible via any computer connected to the Internet.",
-                    "examples": [
-                        {
-                            "description": "A specific OBI term used to autocomplete in NIF search OBI:0100026 'organism'",
-                            "url": "https://neuinfo.org/data/search?q=organism&l=organism#all"
-                        }
-                    ],
-                    "user": "http://www.neuinfo.org"
-                }
-            ]
-        },
-        {
-            "activity_status": "active",
-            "browsers": [
-                {
-                    "label": "BioPortal",
-                    "title": "BioPortal Ontology Browser",
-                    "url": "https://bioportal.bioontology.org/ontologies/PATO"
-                }
-            ],
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo"
-            },
-            "contact": {
-                "email": "g.gkoutos@gmail.com",
-                "github": "gkoutos",
-                "label": "George Gkoutos",
-                "orcid": "0000-0002-2061-091X"
-            },
-            "description": "An ontology of phenotypic qualities (properties, attributes or characteristics)",
-            "domain": "phenotype",
-            "homepage": "https://github.com/pato-ontology/pato/",
-            "id": "pato",
-            "in_foundry_order": 1,
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/pato-ontology/pato",
-                    "type": "travis-ci"
-                }
-            ],
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 3.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/pato.owl",
-            "preferredPrefix": "PATO",
-            "products": [
-                {
-                    "id": "pato.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/pato.owl"
-                },
-                {
-                    "id": "pato.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/pato.obo"
-                },
-                {
-                    "id": "pato.json",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/pato.json"
-                },
-                {
-                    "description": "Includes axioms linking to other ontologies, but no imports of those ontologies",
-                    "id": "pato/pato-base.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/pato/pato-base.owl"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/28387809",
-                    "title": "The anatomy of phenotype ontologies: principles, properties and applications"
-                },
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/15642100",
-                    "title": "Using ontologies to describe mouse phenotypes"
-                }
-            ],
-            "repository": "https://github.com/pato-ontology/pato",
-            "review": {
-                "date": 2010
-            },
-            "title": "Phenotype And Trait Ontology",
-            "tracker": "https://github.com/pato-ontology/pato/issues",
-            "usages": [
-                {
-                    "description": "PATO is used by the Human Phenotype Ontology (HPO) for logical definitions of phenotypes that facilitate cross-species integration.",
-                    "examples": [
-                        {
-                            "description": "An abnormality in a cellular process.",
-                            "url": "https://www.ebi.ac.uk/ols/ontologies/hp/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHP_0011017&viewMode=All&siblings=false"
-                        }
-                    ],
-                    "publications": [
-                        {
-                            "id": "https://www.ncbi.nlm.nih.gov/pubmed/30476213",
-                            "title": "Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources"
-                        }
-                    ],
-                    "type": "annotation",
-                    "user": "https://hpo.jax.org/app/"
-                }
-            ]
-        },
-        {
-            "activity_status": "active",
-            "browsers": [
-                {
-                    "label": "Planteome",
-                    "title": "Planteome browser",
-                    "url": "http://browser.planteome.org/amigo"
-                }
-            ],
-            "build": {
-                "checkout": "git clone https://github.com/Planteome/plant-ontology.git",
-                "infallible": 1,
-                "method": "vcs",
-                "system": "git"
-            },
-            "contact": {
-                "email": "jaiswalp@science.oregonstate.edu",
-                "github": "jaiswalp",
-                "label": "Pankaj Jaiswal",
-                "orcid": "0000-0002-1005-8383"
-            },
-            "depicted_by": "http://planteome.org/sites/default/files/garland_logo.PNG",
-            "description": "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.",
-            "domain": "anatomy and development",
-            "homepage": "http://browser.planteome.org/amigo",
-            "id": "po",
-            "in_foundry_order": 1,
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/Planteome/plant-ontology",
-                    "type": "travis-ci"
-                }
-            ],
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/po.owl",
-            "page": "https://github.com/Planteome/plant-ontology",
-            "preferredPrefix": "PO",
-            "products": [
-                {
-                    "id": "po.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/po.owl"
-                },
-                {
-                    "id": "po.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/po.obo"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/23220694",
-                    "title": "The plant ontology as a tool for comparative plant anatomy and genomic analyses."
-                },
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/29186578",
-                    "title": "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics."
-                }
-            ],
-            "repository": "https://github.com/Planteome/plant-ontology",
-            "review": {
-                "date": 2013,
-                "document": {
-                    "label": "PDF",
-                    "link": "https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc"
-                }
-            },
-            "taxon": {
-                "id": "NCBITaxon:33090",
-                "label": "Viridiplantae"
-            },
-            "title": "Plant Ontology",
-            "tracker": "https://github.com/Planteome/plant-ontology/issues",
-            "twitter": "planteome",
-            "usages": [
-                {
-                    "description": "Planteome uses PO to describe location of tissue expression for genes in viridiplantae",
-                    "examples": [
-                        {
-                            "description": "Genes and proteins annotate to leaf",
-                            "url": "http://browser.planteome.org/amigo/term/PO:0025034"
-                        }
-                    ],
-                    "user": "http://planteome.org/"
-                },
-                {
-                    "description": "Maize CELL genomics DB uses PO to annotate images",
-                    "examples": [
-                        {
-                            "description": "LhG4 Promoter Drivers",
-                            "url": "http://maize.jcvi.org/cellgenomics/geneDB_list.php?filter=3"
-                        }
-                    ],
-                    "user": "http://maize.jcvi.org/"
-                },
-                {
-                    "description": "MaizeGDB uses PO for annotation of genes",
-                    "examples": [
-                        {
-                            "description": "Introduced in gene model set 5b in assembly version RefGen_v2.",
-                            "url": "http://maizegdb.org/gene_center/gene/GRMZM5G863962"
-                        }
-                    ],
-                    "user": "http://maizegdb.org/"
-                },
-                {
-                    "description": "Gramene uses PO for the annotation of plant genes",
-                    "examples": [
-                        {
-                            "description": "Gramene annotations to leaf from Arabidopsis",
-                            "url": "http://archive.gramene.org/db/ontology/search?id=PO:0025034"
-                        }
-                    ],
-                    "user": "http://gramene.org/"
-                }
-            ]
-        },
-        {
-            "activity_status": "active",
-            "browsers": [
-                {
-                    "label": "BioPortal",
-                    "title": "BioPortal Browser",
-                    "url": "http://bioportal.bioontology.org/ontologies/PR?p=classes&conceptid=http://purl.obolibrary.org/obo/PR_000000001"
-                },
-                {
-                    "label": "PRO",
-                    "title": "PRO Home",
-                    "url": "http://proconsortium.org"
-                }
-            ],
-            "build": {
-                "infallible": 0,
-                "method": "obo2owl",
-                "oort_args": "--no-reasoner",
-                "source_url": "https://proconsortium.org/download/current/pro_nonreasoned.obo"
-            },
-            "contact": {
-                "email": "dan5@georgetown.edu",
-                "github": "nataled",
-                "label": "Darren Natale",
-                "orcid": "0000-0001-5809-9523"
-            },
-            "depicted_by": "https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png",
-            "description": "An ontological representation of protein-related entities",
-            "documentation": "https://proconsortium.org/download/current/pro_readme.txt",
-            "domain": "chemistry and biochemistry",
-            "homepage": "http://proconsortium.org",
-            "id": "pr",
-            "in_foundry_order": 1,
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/4.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/pr.owl",
-            "preferredPrefix": "PR",
-            "products": [
-                {
-                    "description": "PRO after reasoning has been applied, OWL format.",
-                    "id": "pr.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/pr.owl",
-                    "title": "pro_reasoned.owl"
-                },
-                {
-                    "description": "PRO after reasoning has been applied, OBO format.",
-                    "id": "pr.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/pr.obo",
-                    "title": "pro_reasoned.obo"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/27899649",
-                    "title": "Protein Ontology (PRO): enhancing and scaling up the representation of protein entities"
-                }
-            ],
-            "repository": "https://github.com/PROconsortium/PRoteinOntology",
-            "review": {
-                "date": 2010
-            },
-            "tags": [
-                "proteins"
-            ],
-            "title": "PRotein Ontology (PRO)",
-            "tracker": "https://github.com/PROconsortium/PRoteinOntology/issues",
-            "usages": [
-                {
-                    "description": "Colorado Richly Annotated Full-Text (CRAFT) Corpus; PRO is used for entity tagging and annotation",
-                    "examples": [
-                        {
-                            "description": "Tagged entities (requires download)",
-                            "url": "https://github.com/UCDenver-ccp/CRAFT/releases/tag/v4.0.1"
-                        }
-                    ],
-                    "user": "https://github.com/UCDenver-ccp/CRAFT"
-                },
-                {
-                    "description": "Cell Ontology is a structured controlled vocabulary for cell types in animals; PRO is used for cell type definitions",
-                    "examples": [
-                        {
-                            "description": "A B cell that is CD19-positive (uses the PRO term for non-species-specific CD19 molecule, PR:000001002)",
-                            "url": "http://purl.obolibrary.org/obo/CL_0001201"
-                        }
-                    ],
-                    "user": "http://www.obofoundry.org/ontology/cl.html"
-                }
-            ]
-        },
-        {
-            "activity_status": "active",
-            "build": {
-                "infallible": 0,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo"
-            },
-            "contact": {
-                "email": "Erik.Segerdell@cchmc.org",
-                "github": "seger",
-                "label": "Erik Segerdell",
-                "orcid": "0000-0002-9611-1279"
-            },
-            "description": "XAO represents the anatomy and development of the African frogs Xenopus laevis and tropicalis.",
-            "domain": "anatomy and development",
-            "homepage": "http://www.xenbase.org/anatomy/xao.do?method=display",
-            "id": "xao",
-            "in_foundry_order": 1,
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 3.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/xao.owl",
-            "preferredPrefix": "XAO",
-            "products": [
-                {
-                    "id": "xao.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/xao.owl"
-                },
-                {
-                    "id": "xao.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/xao.obo"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/18817563",
-                    "title": "An ontology for Xenopus anatomy and development."
-                },
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/24139024",
-                    "title": "Enhanced XAO: the ontology of Xenopus anatomy and development underpins more accurate annotation of gene expression and queries on Xenbase."
-                }
-            ],
-            "repository": "https://github.com/xenopus-anatomy/xao",
-            "review": {
-                "date": 2010
-            },
-            "taxon": {
-                "id": "NCBITaxon:8353",
-                "label": "Xenopus"
-            },
-            "title": "Xenopus Anatomy Ontology",
-            "tracker": "https://github.com/xenopus-anatomy/xao/issues",
-            "usages": [
-                {
-                    "description": "Xenbase uses XAO to annotate gene expression.",
-                    "examples": [
-                        {
-                            "description": "Xenopus genes expressed in the pronephric kidney.",
-                            "url": "http://www.xenbase.org/anatomy/showanatomy.do?method=displayAnatomySummary&anatomyId=463"
-                        }
-                    ],
-                    "user": "http://www.xenbase.org"
-                }
-            ]
-        },
-        {
-            "activity_status": "active",
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "notes": "may be ready to switch to vcs soon",
-                "source_url": "https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/src/zebrafish_anatomy.obo"
-            },
-            "contact": {
-                "email": "van_slyke@zfin.org",
-                "github": "cerivs",
-                "label": "Ceri Van Slyke",
-                "orcid": "0000-0002-2244-7917"
-            },
-            "description": "A structured controlled vocabulary of the anatomy and development of the Zebrafish",
-            "domain": "anatomy and development",
-            "homepage": "https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources",
-            "id": "zfa",
-            "in_foundry_order": 1,
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 3.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/zfa.owl",
-            "preferredPrefix": "ZFA",
-            "products": [
-                {
-                    "id": "zfa.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/zfa.owl"
-                },
-                {
-                    "id": "zfa.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/zfa.obo"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/24568621",
-                    "title": "The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio."
-                }
-            ],
-            "repository": "https://github.com/cerivs/zebrafish-anatomical-ontology",
-            "review": {
-                "date": 2010
-            },
-            "taxon": {
-                "id": "NCBITaxon:7954",
-                "label": "Danio"
-            },
-            "title": "Zebrafish anatomy and development ontology",
-            "tracker": "https://github.com/cerivs/zebrafish-anatomical-ontology/issues",
-            "usages": [
-                {
-                    "description": "ZFIN uses ZFA to annotate gene expression and phenotype",
-                    "examples": [
-                        {
-                            "description": "zebrafish genes expressed in hindbrain and genotypes with hindbrain phenotype",
-                            "url": "http://zfin.org/ZFA:0000029"
-                        }
-                    ],
-                    "user": "http://zfin.org"
-                }
-            ]
-        },
-        {
-            "activity_status": "active",
             "contact": {
                 "email": "alpha.tom.kodamullil@scai.fraunhofer.de",
                 "github": "akodamullil",
@@ -1121,16 +51,25 @@
             },
             "dependencies": [
                 {
-                    "id": "envo"
+                    "id": "bfo"
                 },
                 {
-                    "id": "go"
+                    "id": "envo"
                 },
                 {
                     "id": "foodon"
                 },
                 {
+                    "id": "go"
+                },
+                {
+                    "id": "iao"
+                },
+                {
                     "id": "ncbitaxon"
+                },
+                {
+                    "id": "obi"
                 },
                 {
                     "id": "pato"
@@ -1142,19 +81,10 @@
                     "id": "po"
                 },
                 {
-                    "id": "to"
-                },
-                {
                     "id": "ro"
                 },
                 {
-                    "id": "bfo"
-                },
-                {
-                    "id": "iao"
-                },
-                {
-                    "id": "obi"
+                    "id": "to"
                 },
                 {
                     "id": "uo"
@@ -1227,10 +157,10 @@
             },
             "dependencies": [
                 {
-                    "id": "ro"
+                    "id": "bfo"
                 },
                 {
-                    "id": "uberon"
+                    "id": "bspo"
                 },
                 {
                     "id": "caro"
@@ -1239,10 +169,10 @@
                     "id": "pato"
                 },
                 {
-                    "id": "bfo"
+                    "id": "ro"
                 },
                 {
-                    "id": "bspo"
+                    "id": "uberon"
                 }
             ],
             "description": "The AISM contains terms used in insect biodiversity research for describing structures of the exoskeleton and the skeletomuscular system. It aims to serve as the basic backbone of generalized terms to be expanded with order-specific terminology.",
@@ -1467,12 +397,76 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/bco.owl"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1371/journal.pone.0089606",
+                    "title": "Semantics in Support of Biodiversity Knowledge Discovery: An Introduction to the Biological Collections Ontology and Related Ontologies"
+                }
+            ],
             "repository": "https://github.com/BiodiversityOntologies/bco",
             "tags": [
                 "biodiversity collections"
             ],
             "title": "Biological Collections Ontology",
             "tracker": "https://github.com/BiodiversityOntologies/bco/issues"
+        },
+        {
+            "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal Browser",
+                    "url": "http://bioportal.bioontology.org/ontologies/BFO?p=classes"
+                }
+            ],
+            "contact": {
+                "email": "phismith@buffalo.edu",
+                "github": "phismith",
+                "label": "Barry Smith",
+                "orcid": "0000-0003-1384-116X"
+            },
+            "depicted_by": "https://avatars2.githubusercontent.com/u/12972134?v=3&s=200",
+            "description": "The upper level ontology upon which OBO Foundry ontologies are built.",
+            "domain": "upper",
+            "homepage": "http://ifomis.org/bfo/",
+            "id": "bfo",
+            "in_foundry_order": 1,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/4.0/"
+            },
+            "mailing_list": "https://groups.google.com/forum/#!forum/bfo-discuss",
+            "ontology_purl": "http://purl.obolibrary.org/obo/bfo.owl",
+            "preferredPrefix": "BFO",
+            "products": [
+                {
+                    "id": "bfo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/bfo.owl"
+                },
+                {
+                    "id": "bfo.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/bfo.obo"
+                }
+            ],
+            "repository": "https://github.com/BFO-ontology/BFO",
+            "review": {
+                "date": 2016,
+                "document": {
+                    "label": "PDF",
+                    "link": "https://drive.google.com/open?id=0B81h9ah4tAM_RnNTRUZnVGRyWXM"
+                }
+            },
+            "title": "Basic Formal Ontology",
+            "tracker": "https://github.com/BFO-ontology/BFO/issues",
+            "usages": [
+                {
+                    "description": "BFO is imported by multiple OBO ontologies to standardize upper level structure",
+                    "type": "owl_import",
+                    "user": "http://obofoundry.org"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -1590,9 +584,9 @@
             "id": "caro",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC BY 3.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/3.0/"
+                "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/caro.owl",
             "preferredPrefix": "CARO",
@@ -1661,19 +655,19 @@
             },
             "dependencies": [
                 {
-                    "id": "ro"
-                },
-                {
                     "id": "bfo"
-                },
-                {
-                    "id": "pato"
                 },
                 {
                     "id": "chebi"
                 },
                 {
                     "id": "envo"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "ro"
                 }
             ],
             "description": "CDNO provides structured terminologies to describe nutritional attributes of material entities that contribute to human diet.",
@@ -1712,6 +706,102 @@
         },
         {
             "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "CHEBI",
+                    "title": "EBI CHEBI Browser",
+                    "url": "http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView"
+                }
+            ],
+            "build": {
+                "infallible": 1,
+                "method": "obo2owl",
+                "source_url": "ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo"
+            },
+            "contact": {
+                "email": "amalik@ebi.ac.uk",
+                "github": "amalik01",
+                "label": "Adnan Malik",
+                "orcid": "0000-0001-8123-5351"
+            },
+            "depicted_by": "https://www.ebi.ac.uk/chebi/images/ChEBI_logo.png",
+            "description": "A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds.",
+            "domain": "chemistry and biochemistry",
+            "homepage": "http://www.ebi.ac.uk/chebi",
+            "id": "chebi",
+            "in_foundry_order": 1,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/chebi.owl",
+            "page": "http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual",
+            "preferredPrefix": "CHEBI",
+            "products": [
+                {
+                    "id": "chebi.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/chebi.owl"
+                },
+                {
+                    "id": "chebi.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/chebi.obo"
+                },
+                {
+                    "id": "chebi.owl.gz",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/chebi.owl.gz",
+                    "title": "chebi, compressed owl"
+                },
+                {
+                    "id": "chebi/chebi_lite.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/chebi/chebi_lite.obo",
+                    "title": "chebi_lite, no syns or xrefs"
+                },
+                {
+                    "id": "chebi/chebi_core.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/chebi/chebi_core.obo",
+                    "title": "chebi_core, no xrefs"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/26467479",
+                    "title": "ChEBI in 2016: Improved services and an expanding collection of metabolites."
+                }
+            ],
+            "repository": "https://github.com/ebi-chebi/ChEBI",
+            "review": {
+                "date": 2010
+            },
+            "title": "Chemical Entities of Biological Interest",
+            "tracker": "https://github.com/ebi-chebi/ChEBI/issues",
+            "twitter": "chebit",
+            "usages": [
+                {
+                    "description": "Rhea uses CHEBI to annotate reaction participants",
+                    "examples": [
+                        {
+                            "description": "Query for all usages of CHEBI:29748 (chorismate)",
+                            "url": "https://www.rhea-db.org/searchresults?q=CHEBI:29748"
+                        }
+                    ],
+                    "user": "https://www.rhea-db.org/"
+                },
+                {
+                    "description": "ZFIN uses CHEBI to annotate experiments",
+                    "examples": [
+                        {
+                            "description": "A curated zebrafish experiment involving exposure to (5Z,8Z,14Z)-11,12-dihydroxyicosatrienoic acid (CHEBI:63969)",
+                            "url": "http://zfin.org/action/expression/experiment?id=ZDB-EXP-190627-10"
+                        }
+                    ],
+                    "user": "http://zfin.org"
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
             "build": {
                 "method": "owl2obo",
                 "source_url": "https://raw.githubusercontent.com/semanticchemistry/semanticchemistry/master/ontology/cheminf.owl"
@@ -1728,9 +818,9 @@
             "id": "cheminf",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/4.0/"
+                "label": "CC0 1.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
             "mailing_list": "https://groups.google.com/forum/#!forum/cheminf-ontology",
             "ontology_purl": "http://purl.obolibrary.org/obo/cheminf.owl",
@@ -1749,7 +839,29 @@
             ],
             "repository": "https://github.com/semanticchemistry/semanticchemistry",
             "title": "Chemical Information Ontology",
-            "tracker": "https://github.com/semanticchemistry/semanticchemistry/issues"
+            "tracker": "https://github.com/semanticchemistry/semanticchemistry/issues",
+            "usages": [
+                {
+                    "description": "ChEMBL uses CHEMINF in the RDF download",
+                    "examples": [
+                        {
+                            "description": "The RDF is provided as SPARQL endpoint by Maastricht University.",
+                            "url": "https://chemblmirror.rdf.bigcat-bioinformatics.org/"
+                        }
+                    ],
+                    "user": "https://www.ebi.ac.uk/chembl/"
+                },
+                {
+                    "description": "PubChem uses CHEMINF in their RDF representation",
+                    "examples": [
+                        {
+                            "description": "Physicochemical properties are represented as classes that are typed with CHEMINF classes",
+                            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/rdf/descriptor/CID161282_Canonical_SMILES"
+                        }
+                    ],
+                    "user": "https://pubchem.ncbi.nlm.nih.gov/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -1769,22 +881,22 @@
                     "id": "chebi"
                 },
                 {
-                    "id": "mp"
+                    "id": "go"
                 },
                 {
                     "id": "hp"
                 },
                 {
-                    "id": "go"
+                    "id": "mp"
+                },
+                {
+                    "id": "ncbitaxon"
                 },
                 {
                     "id": "pr"
                 },
                 {
                     "id": "uberon"
-                },
-                {
-                    "id": "ncbitaxon"
                 }
             ],
             "description": "CHEBI provides a distinct role hierarchy. Chemicals in the structural hierarchy are connected via a 'has role' relation. CHIRO provides links from these roles to useful other classes in other ontologies. This will allow direct connection between chemical structures (small molecules, drugs) and what they do. This could be formalized using 'capable of', in the same way Uberon and the Cell Ontology link structures to processes.",
@@ -1919,6 +1031,12 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/cio.obo"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/25957950",
+                    "title": "The Confidence Information Ontology: a step towards a standard for asserting confidence in annotations"
+                }
+            ],
             "repository": "https://github.com/BgeeDB/confidence-information-ontology",
             "title": "Confidence Information Ontology",
             "tracker": "https://github.com/BgeeDB/confidence-information-ontology"
@@ -1941,16 +1059,13 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
+                    "id": "chebi"
                 },
                 {
                     "id": "go"
                 },
                 {
-                    "id": "ro"
-                },
-                {
-                    "id": "chebi"
+                    "id": "ncbitaxon"
                 },
                 {
                     "id": "pato"
@@ -1959,9 +1074,13 @@
                     "id": "pr"
                 },
                 {
-                    "id": "ncbitaxon"
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
+            "depicted_by": "/images/CL-logo.jpg",
             "description": "The Cell Ontology is a structured controlled vocabulary for cell types in animals.",
             "domain": "anatomy and development",
             "homepage": "https://obophenotype.github.io/cell-ontology/",
@@ -2191,9 +1310,6 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
-                },
-                {
                     "id": "cl"
                 },
                 {
@@ -2201,6 +1317,9 @@
                 },
                 {
                     "id": "ncbitaxon"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
             "description": "An ontology to standardize and integrate cell line information and to support computer-assisted reasoning.",
@@ -2246,13 +1365,13 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
+                    "id": "iao"
                 },
                 {
                     "id": "ro"
                 },
                 {
-                    "id": "iao"
+                    "id": "uberon"
                 }
             ],
             "description": "The Clytia hemisphaerica Development and Anatomy Ontology (CLYH) describes the anatomical and developmental features of the Clytia hemisphaerica life cycle.",
@@ -2351,7 +1470,7 @@
             },
             "description": "COB brings together key terms from a wide range of OBO projects to improve interoperability.",
             "domain": "upper",
-            "homepage": "https://github.com/OBOFoundry/COB",
+            "homepage": "https://obofoundry.org/COB/",
             "id": "cob",
             "layout": "ontology_detail",
             "license": {
@@ -2405,10 +1524,10 @@
                     "id": "aism"
                 },
                 {
-                    "id": "ro"
+                    "id": "bfo"
                 },
                 {
-                    "id": "uberon"
+                    "id": "bspo"
                 },
                 {
                     "id": "caro"
@@ -2417,10 +1536,10 @@
                     "id": "pato"
                 },
                 {
-                    "id": "bfo"
+                    "id": "ro"
                 },
                 {
-                    "id": "bspo"
+                    "id": "uberon"
                 }
             ],
             "description": "The Coleoptera Anatomy Ontology contains terms used for describing the anatomy and phenotype of beetles in biodiversity research. It has been built using the Ontology Develoment Kit, with the Ontology for the Anatomy of the Insect Skeleto-Muscular system (AISM) as a backbone.",
@@ -2507,10 +1626,10 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
+                    "id": "ro"
                 },
                 {
-                    "id": "ro"
+                    "id": "uberon"
                 }
             ],
             "description": "An anatomical and developmental ontology for ctenophores (Comb Jellies)",
@@ -2809,6 +1928,117 @@
             "activity_status": "active",
             "browsers": [
                 {
+                    "label": "DO",
+                    "title": "DO Browser",
+                    "url": "http://www.disease-ontology.org/"
+                }
+            ],
+            "build": {
+                "infallible": 1,
+                "method": "obo2owl",
+                "source_url": "https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.obo"
+            },
+            "contact": {
+                "email": "lynn.schriml@gmail.com",
+                "github": "lschriml",
+                "label": "Lynn Schriml",
+                "orcid": "0000-0001-8910-9851"
+            },
+            "depicted_by": "http://www.disease-ontology.org/media/images/DO_logo.jpg",
+            "description": "An ontology for describing the classification of human diseases organized by etiology.",
+            "domain": "health",
+            "homepage": "http://www.disease-ontology.org",
+            "id": "doid",
+            "in_foundry_order": 1,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC0 1.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/doid.owl",
+            "preferredPrefix": "DOID",
+            "products": [
+                {
+                    "id": "doid.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/doid.owl",
+                    "title": "Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy plus equivalent axioms to other OBO Foundry ontologies."
+                },
+                {
+                    "id": "doid.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/doid.obo",
+                    "title": "Disease Ontology, OBO format. This file omits the equivalent axioms."
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/25348409",
+                    "title": "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/34755882",
+                    "title": "The Human Disease Ontology 2022 update"
+                }
+            ],
+            "repository": "https://github.com/DiseaseOntology/HumanDiseaseOntology",
+            "review": {
+                "date": 2015,
+                "document": {
+                    "label": "PDF",
+                    "link": "https://drive.google.com/open?id=0B8vqEgF1N0NIZ082U2JETHlSTGs"
+                }
+            },
+            "tags": [
+                "disease"
+            ],
+            "taxon": {
+                "id": "NCBITaxon:9606",
+                "label": "Homo sapiens"
+            },
+            "title": "Human Disease Ontology",
+            "tracker": "https://github.com/DiseaseOntology/HumanDiseaseOntology/issues",
+            "twitter": "diseaseontology",
+            "usages": [
+                {
+                    "description": "Alliance of Genome Resources - MGD, RGD, SGD, FlyBase, WormBase, ZFIN use DO",
+                    "examples": [
+                        {
+                            "description": "Human diseases annotated to over 190,000 MOD genes, alleles, disease models and human genes",
+                            "url": "https://www.alliancegenome.org/search?category=disease"
+                        },
+                        {
+                            "description": "The landing page for Coronavirus Infectious Disease",
+                            "url": "https://www.alliancegenome.org/disease/DOID:0080599"
+                        }
+                    ],
+                    "user": "https://www.alliancegenome.org"
+                },
+                {
+                    "description": "MGI disease model annotations use DO",
+                    "examples": [
+                        {
+                            "description": "physical disorder",
+                            "url": "http://www.informatics.jax.org/disease/DOID:0080015"
+                        }
+                    ],
+                    "user": "http://www.informatics.jax.org/disease"
+                },
+                {
+                    "description": "Immune Epitope Database",
+                    "examples": [
+                        {
+                            "description": "Antibody and T cell epitopes associated with human diseases",
+                            "url": "https://www.iedb.org"
+                        }
+                    ],
+                    "user": "https://www.iedb.org"
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
+            "browsers": [
+                {
                     "label": "FB",
                     "title": "FlyBase Browser",
                     "url": "http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000347"
@@ -2932,10 +2162,10 @@
             },
             "dependencies": [
                 {
-                    "id": "iao"
+                    "id": "bfo"
                 },
                 {
-                    "id": "bfo"
+                    "id": "iao"
                 }
             ],
             "description": "DUO is an ontology which represent data use conditions.",
@@ -2981,13 +2211,13 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
+                    "id": "cl"
                 },
                 {
                     "id": "ro"
                 },
                 {
-                    "id": "cl"
+                    "id": "uberon"
                 }
             ],
             "description": "An ontology for the development and anatomy of the different species of the phylum Echinodermata (NCBITaxon:7586).",
@@ -3034,9 +2264,12 @@
             "description": "An ontology for experimental and other evidence statements.",
             "domain": "investigations",
             "funded_by": [
-                "http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400"
+                {
+                    "id": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400",
+                    "title": "NSF ABI-1458400"
+                }
             ],
-            "homepage": "https://github.com/evidenceontology/evidenceontology/",
+            "homepage": "https://www.evidenceontology.org",
             "id": "eco",
             "jobs": [
                 {
@@ -3065,6 +2298,7 @@
             "publications": [
                 {
                     "id": "https://www.ncbi.nlm.nih.gov/pubmed/30407590",
+                    "preferred": true,
                     "title": "ECO, the Evidence & Conclusion Ontology: community standard for evidence information."
                 },
                 {
@@ -3121,34 +2355,34 @@
             },
             "dependencies": [
                 {
-                    "id": "pco"
-                },
-                {
-                    "id": "ro"
-                },
-                {
                     "id": "bfo"
-                },
-                {
-                    "id": "pato"
-                },
-                {
-                    "id": "envo"
                 },
                 {
                     "id": "chebi"
                 },
                 {
+                    "id": "envo"
+                },
+                {
                     "id": "go"
                 },
                 {
-                    "id": "uberon"
+                    "id": "iao"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "pco"
                 },
                 {
                     "id": "po"
                 },
                 {
-                    "id": "iao"
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
             "description": "Ecocore is a community ontology for the concise and controlled description of ecological traits of organisms.",
@@ -3223,10 +2457,10 @@
                     "id": "nbo"
                 },
                 {
-                    "id": "ncit"
+                    "id": "ncbitaxon"
                 },
                 {
-                    "id": "ncbitaxon"
+                    "id": "ncit"
                 },
                 {
                     "id": "pato"
@@ -3331,6 +2565,24 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/emapa.obo"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/9651497",
+                    "title": "An internet-accessible database of mouse developmental anatomy based on a systematic nomenclature"
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/23972281",
+                    "title": "EMAP/EMAPA ontology of mouse developmental anatomy: 2013 update"
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/26208972",
+                    "title": "Mouse Anatomy Ontologies: Enhancements and Tools for Exploring and Integrating Biomedical Data"
+                },
+                {
+                    "id": "https://doi.org/10.1016/B978-0-12-800043-4.00023-3",
+                    "title": "Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene Expression Database for Mouse Development (GXD)"
+                }
+            ],
             "repository": "https://github.com/obophenotype/mouse-anatomy-ontology",
             "taxon": {
                 "id": "NCBITaxon:10088",
@@ -3357,53 +2609,53 @@
                 "system": "git"
             },
             "contact": {
-                "email": "p.buttigieg@gmail.com",
+                "email": "pier.buttigieg@awi.de",
                 "github": "pbuttigieg",
                 "label": "Pier Luigi Buttigieg",
                 "orcid": "0000-0002-4366-3088"
             },
             "dependencies": [
                 {
-                    "id": "uberon"
-                },
-                {
-                    "id": "pco"
-                },
-                {
-                    "id": "ro"
-                },
-                {
                     "id": "chebi"
-                },
-                {
-                    "id": "ncbitaxon"
                 },
                 {
                     "id": "foodon"
                 },
                 {
+                    "id": "go"
+                },
+                {
+                    "id": "ncbitaxon"
+                },
+                {
+                    "id": "pco"
+                },
+                {
                     "id": "po"
                 },
                 {
-                    "id": "go"
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
-            "depicted_by": "/logos/envo.png",
-            "description": "Ontology of environmental features and habitats",
+            "depicted_by": "/images/envo.png",
+            "description": "An ontology of environmental systems, components, and processes.",
             "domain": "environment",
             "homepage": "http://environmentontology.org/",
             "id": "envo",
             "jobs": [
                 {
-                    "id": "https://travis-ci.org/EnvironmentOntology/envo",
-                    "type": "travis-ci"
+                    "id": "https://github.com/EnvironmentOntology/envo/blob/master/.github/workflows/qc.yml",
+                    "type": "github-action"
                 }
             ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC BY 3.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "label": "CC0 1.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "http://creativecommons.org/publicdomain/zero/1.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/envo.owl",
             "page": "https://github.com/EnvironmentOntology/envo",
@@ -3443,11 +2695,12 @@
             ],
             "publications": [
                 {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/24330602",
+                    "id": "https://doi.org/10.1186/2041-1480-4-43",
+                    "preferred": true,
                     "title": "The environment ontology: contextualising biological and biomedical entities"
                 },
                 {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/27664130",
+                    "id": "https://doi.org/10.1186/s13326-016-0097-6",
                     "title": "The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation"
                 }
             ],
@@ -3794,6 +3047,7 @@
             "publications": [
                 {
                     "id": "https://www.ncbi.nlm.nih.gov/pubmed/24139062",
+                    "preferred": true,
                     "title": "The Drosophila anatomy ontology"
                 },
                 {
@@ -4106,28 +3360,28 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
-                },
-                {
-                    "id": "ro"
-                },
-                {
-                    "id": "eo"
+                    "id": "bfo"
                 },
                 {
                     "id": "chebi"
                 },
                 {
-                    "id": "ncbitaxon"
-                },
-                {
-                    "id": "bfo"
-                },
-                {
                     "id": "envo"
                 },
                 {
+                    "id": "eo"
+                },
+                {
+                    "id": "ncbitaxon"
+                },
+                {
                     "id": "obi"
+                },
+                {
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
             "description": "A broadly scoped ontology representing entities which bear a “food role”. It encompasses materials in natural ecosystems and agriculture that are consumed by humans and domesticated animals. This includes any generic (unbranded) raw or processed food material found in processing plants, markets, stores or food distribution points. FoodOn also imports nutritional component and dietary pattern terms from other OBO Foundry ontologies to support interoperability in diet and nutrition research",
@@ -4187,22 +3441,22 @@
                     "id": "bco"
                 },
                 {
-                    "id": "oba"
-                },
-                {
-                    "id": "ro"
-                },
-                {
                     "id": "bfo"
-                },
-                {
-                    "id": "pato"
                 },
                 {
                     "id": "bspo"
                 },
                 {
                     "id": "iao"
+                },
+                {
+                    "id": "oba"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "ro"
                 },
                 {
                     "id": "uberon"
@@ -4366,7 +3620,10 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
+                    "id": "chebi"
+                },
+                {
+                    "id": "ncbitaxon"
                 },
                 {
                     "id": "po"
@@ -4375,10 +3632,7 @@
                     "id": "ro"
                 },
                 {
-                    "id": "chebi"
-                },
-                {
-                    "id": "ncbitaxon"
+                    "id": "uberon"
                 }
             ],
             "description": "The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary to identify, document and research foodborne pathogens and associated outbreaks.",
@@ -4575,6 +3829,240 @@
         },
         {
             "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "AmiGO",
+                    "title": "Gene Ontology AmiGO 2 Browser",
+                    "url": "http://amigo.geneontology.org/amigo/term/GO:0008150#display-lineage-tab"
+                }
+            ],
+            "contact": {
+                "email": "suzia@stanford.edu",
+                "github": "suzialeksander",
+                "label": "Suzi Aleksander",
+                "orcid": "0000-0001-6787-2901"
+            },
+            "dependencies": [
+                {
+                    "id": "cl",
+                    "subset": "go/extensions/cl_import.owl"
+                },
+                {
+                    "connects": [
+                        {
+                            "id": "nifstd"
+                        },
+                        {
+                            "id": "go"
+                        }
+                    ],
+                    "description": "Bridging axioms between nifstd and go",
+                    "id": "go/extensions/go-bridge-to-nifstd.owl",
+                    "publications": [
+                        {
+                            "id": "http://www.ncbi.nlm.nih.gov/pubmed/24093723",
+                            "title": "The Gene Ontology (GO) Cellular Component Ontology: integration with SAO (Subcellular Anatomy Ontology) and other recent developments."
+                        }
+                    ],
+                    "title": "GO bridge to NIFSTD",
+                    "type": "BridgeOntology"
+                },
+                {
+                    "id": "ncbitaxon",
+                    "subset": "go/extensions/ncbitaxon_import.owl"
+                },
+                {
+                    "id": "ro",
+                    "subset": "go/extensions/ro_import.owl"
+                },
+                {
+                    "id": "uberon",
+                    "subset": "go/extensions/uberon_import.owl"
+                }
+            ],
+            "depicted_by": "http://geneontology.org/assets/go-logo-icon.mini.png",
+            "description": "An ontology for describing the function of genes and gene products",
+            "domain": "biological systems",
+            "homepage": "http://geneontology.org/",
+            "id": "go",
+            "in_foundry_order": 1,
+            "integration_server": "http://build.berkeleybop.org/view/GO",
+            "label": "GO",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/go.owl",
+            "preferredPrefix": "GO",
+            "products": [
+                {
+                    "description": "The main ontology in OWL. This is self contained and does not have connections to other OBO ontologies",
+                    "id": "go.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/go.owl",
+                    "page": "http://geneontology.org/page/download-ontology",
+                    "title": "GO (OWL edition)"
+                },
+                {
+                    "description": "Equivalent to go.owl, in obo format",
+                    "id": "go.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/go.obo",
+                    "page": "http://geneontology.org/page/download-ontology",
+                    "title": "GO (OBO Format edition)"
+                },
+                {
+                    "description": "Equivalent to go.owl, in obograph json format",
+                    "id": "go.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/go.json",
+                    "page": "https://github.com/geneontology/obographs/",
+                    "title": "GO (JSON edition)"
+                },
+                {
+                    "description": "The main ontology plus axioms connecting to select external ontologies, with subsets of those ontologies",
+                    "id": "go/extensions/go-plus.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/go/extensions/go-plus.owl",
+                    "page": "http://geneontology.org/page/download-ontology",
+                    "title": "GO-Plus"
+                },
+                {
+                    "description": "The main ontology plus axioms connecting to select external ontologies, excluding the external ontologies themselves",
+                    "id": "go/go-base.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/go/go-base.owl",
+                    "page": "http://geneontology.org/page/download-ontology",
+                    "title": "GO Base Module"
+                },
+                {
+                    "description": "As go-plus.owl, in obographs json format",
+                    "id": "go/extensions/go-plus.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/go/extensions/go-plus.json",
+                    "page": "https://github.com/geneontology/obographs/",
+                    "title": "GO-Plus"
+                },
+                {
+                    "description": "Basic version of the GO, filtered such that the graph is guaranteed to be acyclic and annotations can be propagated up the graph. The relations included are is a, part of, regulates, negatively regulates and positively regulates. This version excludes relationships that cross the 3 GO hierarchies.",
+                    "id": "go/go-basic.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/go/go-basic.obo",
+                    "page": "http://geneontology.org/page/download-ontology",
+                    "title": "GO-Basic, Filtered, for use with legacy tools"
+                },
+                {
+                    "description": "As go-basic.obo, in json format",
+                    "id": "go/go-basic.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/go/go-basic.json",
+                    "page": "http://geneontology.org/page/download-ontology",
+                    "title": "GO-Basic, Filtered, for use with legacy tools (JSON)"
+                },
+                {
+                    "description": "Classes added to ncbitaxon for groupings such as prokaryotes",
+                    "id": "go/extensions/go-taxon-groupings.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/go/extensions/go-taxon-groupings.owl",
+                    "page": "http://geneontology.org/page/download-ontology",
+                    "title": "GO Taxon Groupings"
+                },
+                {
+                    "description": "Equivalent to go.owl, but released daily. Note the snapshot release is not archived.",
+                    "id": "go/snapshot/go.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/go/snapshot/go.owl",
+                    "page": "http://geneontology.org/page/download-ontology",
+                    "title": "GO (OWL edition), daily snapshot release"
+                },
+                {
+                    "description": "Equivalent to go.owl, but released daily. Note the snapshot release is not archived.",
+                    "id": "go/snapshot/go.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/go/snapshot/go.obo",
+                    "page": "http://geneontology.org/page/download-ontology",
+                    "title": "GO (OBO Format edition), daily snapshot release"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/10802651",
+                    "title": "Gene ontology: tool for the unification of biology. The Gene Ontology Consortium"
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/33290552",
+                    "title": "The Gene Ontology resource: enriching a GOld mine"
+                }
+            ],
+            "repository": "https://github.com/geneontology/go-ontology",
+            "review": {
+                "date": 2010
+            },
+            "tags": [
+                "biology"
+            ],
+            "taxon": {
+                "id": "NCBITaxon:1",
+                "label": "All life"
+            },
+            "title": "Gene Ontology",
+            "tracker": "https://github.com/geneontology/go-ontology/issues/",
+            "twitter": "news4go",
+            "usages": [
+                {
+                    "description": "The GO ontology is used by the GO consortium for functional annotation of genes",
+                    "examples": [
+                        {
+                            "description": "annotations to transmembrane transport",
+                            "url": "http://amigo.geneontology.org/amigo/term/GO:0055085"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "http://geneontology.org"
+                },
+                {
+                    "description": "Uniprot uses GO to show the function of proteins",
+                    "examples": [
+                        {
+                            "description": "functional annotations of human Sonic hedgehog protein",
+                            "url": "https://www.uniprot.org/uniprot/Q15465#function"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://www.uniprot.org"
+                },
+                {
+                    "description": "Reactome annotates activities, pathways, and cellular localization using GO",
+                    "examples": [
+                        {
+                            "description": "protein tyrosine kinase activity of an EGFR complex",
+                            "url": "https://reactome.org/content/detail/R-HSA-177934"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://reactome.org"
+                },
+                {
+                    "description": "The Alliance of Genome Resources uses GO for model organism gene function annotation",
+                    "examples": [
+                        {
+                            "description": "Functional summary of C elegans nsy-1 gene",
+                            "url": "https://www.alliancegenome.org/gene/WB:WBGene00003822#function---go-annotations"
+                        },
+                        {
+                            "description": "Gene Ontology Causal Activity Models for C elegans nsy-1 gene",
+                            "url": "https://www.alliancegenome.org/gene/WB:WBGene00003822#pathways"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://www.alliancegenome.org"
+                },
+                {
+                    "description": "Rhea uses GO to describe individual biochemical reactions",
+                    "examples": [
+                        {
+                            "description": "Glutamine scyllo-inositol transaminase reaction and associated GO term",
+                            "url": "https://www.rhea-db.org/rhea/22920"
+                        }
+                    ],
+                    "type": "mapping",
+                    "user": "https://www.rhea-db.org"
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
             "contact": {
                 "email": "danielle.welter@uni.lu",
                 "github": "daniwelter",
@@ -4736,6 +4224,12 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/hom.owl"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1016/j.tig.2009.12.012",
+                    "title": "An ontology to clarify homology-related concepts"
+                }
+            ],
             "repository": "https://github.com/BgeeDB/homology-ontology",
             "title": "Homology Ontology",
             "tracker": "https://github.com/BgeeDB/homology-ontology/issues"
@@ -4790,19 +4284,19 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
-                },
-                {
                     "id": "bfo"
                 },
                 {
-                    "id": "ro"
+                    "id": "ncbitaxon"
                 },
                 {
                     "id": "obi"
                 },
                 {
-                    "id": "ncbitaxon"
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
             "description": "The health Surveillance Ontology (HSO) focuses on \"surveillance system level data\", that is, data outputs from surveillance activities, such as number of samples collected, cases observed, etc. It aims to support One-Health surveillance, covering animal health, public health and food safety surveillance.",
@@ -4949,6 +4443,12 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/iceo.owl"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/35058462",
+                    "title": "ICEO, a biological ontology for representing and analyzing bacterial integrative and conjugative elements"
+                }
+            ],
             "repository": "https://github.com/ontoice/ICEO",
             "title": "Integrative and Conjugative Element Ontology",
             "tracker": "https://github.com/ontoice/ICEO/issues"
@@ -5056,6 +4556,12 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/ino.owl"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1186/2041-1480-6-2",
+                    "title": "Development and application of an Interaction Network Ontology for literature mining of vaccine-associated gene-gene interactions"
+                }
+            ],
             "repository": "https://github.com/INO-ontology/ino",
             "title": "Interaction Network Ontology",
             "tracker": "https://github.com/INO-ontology/ino/issues"
@@ -5144,10 +4650,10 @@
                     "id": "aism"
                 },
                 {
-                    "id": "ro"
+                    "id": "bfo"
                 },
                 {
-                    "id": "uberon"
+                    "id": "bspo"
                 },
                 {
                     "id": "caro"
@@ -5156,10 +4662,10 @@
                     "id": "pato"
                 },
                 {
-                    "id": "bfo"
+                    "id": "ro"
                 },
                 {
-                    "id": "bspo"
+                    "id": "uberon"
                 }
             ],
             "description": "The Lepidoptera Anatomy Ontology contains terms used for describing the anatomy and phenotype of moths and butterflies in biodiversity research. LEPAO is developed in part by BIOfid (The Specialised Information Service Biodiversity Research).",
@@ -5258,22 +4764,22 @@
             },
             "dependencies": [
                 {
-                    "id": "iao"
+                    "id": "chebi"
+                },
+                {
+                    "id": "foodon"
                 },
                 {
                     "id": "go"
+                },
+                {
+                    "id": "iao"
                 },
                 {
                     "id": "ro"
                 },
                 {
                     "id": "uberon"
-                },
-                {
-                    "id": "foodon"
-                },
-                {
-                    "id": "chebi"
                 }
             ],
             "depicted_by": "https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/maxo-logos/maxo_logo_black-banner.png",
@@ -5367,9 +4873,6 @@
                     "id": "ncbitaxon"
                 },
                 {
-                    "id": "peco"
-                },
-                {
                     "id": "ncit"
                 },
                 {
@@ -5383,6 +4886,9 @@
                 },
                 {
                     "id": "pato"
+                },
+                {
+                    "id": "peco"
                 },
                 {
                     "id": "uberon"
@@ -5630,6 +5136,12 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/miapa.owl"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1089/omi.2006.10.231",
+                    "title": "Taking the First Steps towards a Standard for Reporting on Phylogenies: Minimum Information about a Phylogenetic Analysis (MIAPA)"
+                }
+            ],
             "releases": "https://github.com/evoinfo/miapa/releases",
             "repository": "https://github.com/evoinfo/miapa",
             "title": "MIAPA Ontology",
@@ -5832,7 +5344,7 @@
                 "orcid": "0000-0001-5208-3432"
             },
             "depicted_by": "https://raw.githubusercontent.com/monarch-initiative/mondo/master/docs/images/mondo_logo_black-stacked-small.png",
-            "description": "A semi-automatically constructed ontology that merges in multiple disease resources to yield a coherent merged ontology.",
+            "description": "A global community effort to harmonize multiple disease resources to yield a coherent merged ontology.",
             "domain": "health",
             "homepage": "https://monarch-initiative.github.io/mondo",
             "id": "mondo",
@@ -5895,6 +5407,7 @@
             },
             "title": "Mondo Disease Ontology",
             "tracker": "https://github.com/monarch-initiative/mondo/issues",
+            "twitter": "MonarchInit",
             "usages": [
                 {
                     "description": "Mondo is used by the Monarch Initiative for disease annotations.",
@@ -6527,8 +6040,10 @@
             "description": "NOMEN is a nomenclatural ontology for biological names (not concepts).  It encodes the goverened rules of nomenclature.",
             "domain": "information",
             "funded_by": [
-                "NSF-ABI-1356381",
-                "Species File Group"
+                {
+                    "id": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1356381",
+                    "title": "NSF ABI-1356381"
+                }
             ],
             "homepage": "https://github.com/SpeciesFileGroup/nomen",
             "id": "nomen",
@@ -6721,6 +6236,135 @@
         },
         {
             "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal Browser",
+                    "url": "http://bioportal.bioontology.org/ontologies/OBI?p=classes"
+                }
+            ],
+            "build": {
+                "source_url": "http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/"
+            },
+            "contact": {
+                "email": "bpeters@lji.org",
+                "github": "bpeters42",
+                "label": "Bjoern Peters",
+                "orcid": "0000-0002-8457-6693"
+            },
+            "depicted_by": "https://svn.code.sf.net/p/obi/code/trunk/web/htdocs/images/obi-lotext.png",
+            "description": "An integrated ontology for the description of life-science and clinical investigations",
+            "domain": "investigations",
+            "homepage": "http://obi-ontology.org",
+            "id": "obi",
+            "in_foundry_order": 1,
+            "integration_server": "http://build.berkeleybop.org/job/build-obi/",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "mailing_list": "http://groups.google.com/group/obi-users",
+            "ontology_purl": "http://purl.obolibrary.org/obo/obi.owl",
+            "preferredPrefix": "OBI",
+            "products": [
+                {
+                    "description": "The full version of OBI in OWL format",
+                    "id": "obi.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/obi.owl",
+                    "title": "OBI"
+                },
+                {
+                    "description": "The OBO-format version of OBI",
+                    "id": "obi.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/obi.obo",
+                    "title": "OBI in OBO"
+                },
+                {
+                    "description": "A collection of important high-level terms and their relations from OBI and other ontologies",
+                    "id": "obi/obi_core.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/obi/obi_core.owl",
+                    "title": "OBI Core"
+                },
+                {
+                    "description": "Base module for OBI",
+                    "id": "obi/obi-base.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/obi/obi-base.owl",
+                    "title": "OBI Base module"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/27128319",
+                    "title": "The Ontology for Biomedical Investigations"
+                }
+            ],
+            "repository": "https://github.com/obi-ontology/obi",
+            "review": {
+                "date": 2013,
+                "document": {
+                    "label": "PDF",
+                    "link": "https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc"
+                }
+            },
+            "title": "Ontology for Biomedical Investigations",
+            "tracker": "http://purl.obolibrary.org/obo/obi/tracker",
+            "usages": [
+                {
+                    "description": "The Immune Epitope Database (IEDB) is funded by NIAID that catalogs experimental data on antibody and T cell epitopes studied in humans, non-human primates, and other animal species in the context of infectious disease, allergy, autoimmunity and transplantation.",
+                    "examples": [
+                        {
+                            "description": "A specific assay curated in the IEDB using the OBI:1110180 '3H-thymidine assay measuring epitope specific proliferation of T cells' ('3H-thymidine')",
+                            "url": "http://www.iedb.org/assay/1505273"
+                        }
+                    ],
+                    "user": "https://www.iedb.org"
+                },
+                {
+                    "description": "ENCODE is a comprehensive parts list of functional elements in the human genome, including elements that act at the protein and RNA levels, and regulatory elements that control cells and circumstances in which a gene is active.",
+                    "examples": [
+                        {
+                            "description": "A specific assay annotated in ENCODE using OBI:0000716 'ChiP-seq'",
+                            "url": "https://www.encodeproject.org/report/?type=Experiment&accession=ENCSR012KGU&accession=ENCSR560MXA&accession=ENCSR803FKU&accession=ENCSR216YPQ&accession=ENCSR115BCB&field=%40id&field=assay_term_name&field=assay_term_id"
+                        }
+                    ],
+                    "user": "https://www.encodeproject.org/"
+                },
+                {
+                    "description": "The NASA GeneLab data repository hosts space biology and space-related datasets funded by multiple space agencies around the world.",
+                    "examples": [
+                        {
+                            "description": "A specific assay annotated in NASA GeneLab using OBI:0001271 'RNA-seq assay'",
+                            "url": "https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-464/"
+                        }
+                    ],
+                    "user": "https://genelab-data.ndc.nasa.gov/genelab/projects"
+                },
+                {
+                    "description": "The CFDE is providing a centralized metadata resource to allow search across data coordination centers from multiple Common Fund programs.",
+                    "examples": [
+                        {
+                            "description": "OBI is used in CFDE to captures types of experiments with assay terms such as OBI:0003094 'fluorescence in-situ hybridization assay'",
+                            "url": "https://app.nih-cfde.org/chaise/recordset/#1/CFDE:assay_type@sort(nid)"
+                        }
+                    ],
+                    "user": "https://app.nih-cfde.org/"
+                },
+                {
+                    "description": "NIF is a dynamic inventory of Web-based neuroscience resources, data, and tools accessible via any computer connected to the Internet.",
+                    "examples": [
+                        {
+                            "description": "A specific OBI term used to autocomplete in NIF search OBI:0100026 'organism'",
+                            "url": "https://neuinfo.org/data/search?q=organism&l=organism#all"
+                        }
+                    ],
+                    "user": "http://www.neuinfo.org"
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
             "contact": {
                 "email": "jiezheng@pennmedicine.upenn.edu",
                 "github": "zhengj2007",
@@ -6884,7 +6528,7 @@
                 "label": "Bill Duncan",
                 "orcid": "0000-0001-9625-1899"
             },
-            "description": "The Oral Health and Disease Ontology was created, initially, to represent the content of dental practice health records.",
+            "description": "The Oral Health and Disease Ontology is used for representing the diagnosis and treatment of dental maladies.",
             "domain": "health",
             "homepage": "https://purl.obolibrary.org/obo/ohd/home",
             "id": "ohd",
@@ -6905,6 +6549,12 @@
                     "id": "ohd/dev/ohd.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/ohd/dev/ohd.owl",
                     "title": "OHD dev"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/32819435",
+                    "title": "Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology"
                 }
             ],
             "repository": "https://github.com/oral-health-and-disease-ontologies/ohd-ontology",
@@ -6967,6 +6617,12 @@
                 {
                     "id": "ohpi.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/ohpi.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/30365026",
+                    "title": "Victors: a web-based knowledge base of virulence factors in human and animal pathogens"
                 }
             ],
             "repository": "https://github.com/OHPI/ohpi",
@@ -7118,6 +6774,12 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/omp.obo"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1186/s12866-014-0294-3",
+                    "title": "An ontology for microbial phenotypes"
+                }
+            ],
             "repository": "https://github.com/microbialphenotypes/OMP-ontology",
             "title": "Ontology of Microbial Phenotypes",
             "tracker": "https://github.com/microbialphenotypes/OMP-ontology/issues"
@@ -7179,13 +6841,13 @@
             },
             "dependencies": [
                 {
-                    "id": "ons"
+                    "id": "foodon"
                 },
                 {
                     "id": "obi"
                 },
                 {
-                    "id": "foodon"
+                    "id": "ons"
                 }
             ],
             "description": "An ontology to standardize research output of nutritional epidemiologic studies.",
@@ -7227,28 +6889,28 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
-                },
-                {
-                    "id": "ro"
+                    "id": "bfo"
                 },
                 {
                     "id": "chebi"
                 },
                 {
-                    "id": "ncbitaxon"
-                },
-                {
-                    "id": "bfo"
-                },
-                {
                     "id": "envo"
+                },
+                {
+                    "id": "foodon"
+                },
+                {
+                    "id": "ncbitaxon"
                 },
                 {
                     "id": "obi"
                 },
                 {
-                    "id": "foodon"
+                    "id": "ro"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
             "description": "An ontology for description of concepts in the nutritional studies domain.",
@@ -7301,13 +6963,13 @@
                     "id": "gsso"
                 },
                 {
-                    "id": "stato"
+                    "id": "ncit"
                 },
                 {
                     "id": "ro"
                 },
                 {
-                    "id": "ncit"
+                    "id": "stato"
                 }
             ],
             "description": "OntoAvida develops an integrated vocabulary for the description of the most widely-used computational approach for studying evolution using digital organisms (i.e., self-replicating computer programs that evolve within a user-defined computational environment).",
@@ -7553,6 +7215,100 @@
         },
         {
             "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal Ontology Browser",
+                    "url": "https://bioportal.bioontology.org/ontologies/PATO"
+                }
+            ],
+            "build": {
+                "infallible": 1,
+                "method": "obo2owl",
+                "source_url": "https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo"
+            },
+            "contact": {
+                "email": "g.gkoutos@gmail.com",
+                "github": "gkoutos",
+                "label": "George Gkoutos",
+                "orcid": "0000-0002-2061-091X"
+            },
+            "description": "An ontology of phenotypic qualities (properties, attributes or characteristics)",
+            "domain": "phenotype",
+            "homepage": "https://github.com/pato-ontology/pato/",
+            "id": "pato",
+            "in_foundry_order": 1,
+            "jobs": [
+                {
+                    "id": "https://travis-ci.org/pato-ontology/pato",
+                    "type": "travis-ci"
+                }
+            ],
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 3.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/pato.owl",
+            "preferredPrefix": "PATO",
+            "products": [
+                {
+                    "id": "pato.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pato.owl"
+                },
+                {
+                    "id": "pato.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pato.obo"
+                },
+                {
+                    "id": "pato.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pato.json"
+                },
+                {
+                    "description": "Includes axioms linking to other ontologies, but no imports of those ontologies",
+                    "id": "pato/pato-base.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pato/pato-base.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/28387809",
+                    "title": "The anatomy of phenotype ontologies: principles, properties and applications"
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/15642100",
+                    "title": "Using ontologies to describe mouse phenotypes"
+                }
+            ],
+            "repository": "https://github.com/pato-ontology/pato",
+            "review": {
+                "date": 2010
+            },
+            "title": "Phenotype And Trait Ontology",
+            "tracker": "https://github.com/pato-ontology/pato/issues",
+            "usages": [
+                {
+                    "description": "PATO is used by the Human Phenotype Ontology (HPO) for logical definitions of phenotypes that facilitate cross-species integration.",
+                    "examples": [
+                        {
+                            "description": "An abnormality in a cellular process.",
+                            "url": "https://www.ebi.ac.uk/ols/ontologies/hp/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHP_0011017&viewMode=All&siblings=false"
+                        }
+                    ],
+                    "publications": [
+                        {
+                            "id": "https://www.ncbi.nlm.nih.gov/pubmed/30476213",
+                            "title": "Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://hpo.jax.org/app/"
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
             "contact": {
                 "email": "davidos@ebi.ac.uk",
                 "github": "dosumis",
@@ -7561,40 +7317,40 @@
             },
             "dependencies": [
                 {
-                    "id": "pr"
-                },
-                {
-                    "id": "go"
-                },
-                {
-                    "id": "uberon"
-                },
-                {
-                    "id": "ro"
-                },
-                {
-                    "id": "pato"
-                },
-                {
-                    "id": "ncbitaxon"
-                },
-                {
                     "id": "bfo"
-                },
-                {
-                    "id": "cl"
-                },
-                {
-                    "id": "omo"
-                },
-                {
-                    "id": "nbo"
                 },
                 {
                     "id": "chebi"
                 },
                 {
+                    "id": "cl"
+                },
+                {
+                    "id": "go"
+                },
+                {
+                    "id": "nbo"
+                },
+                {
+                    "id": "ncbitaxon"
+                },
+                {
+                    "id": "omo"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "pr"
+                },
+                {
+                    "id": "ro"
+                },
+                {
                     "id": "so"
+                },
+                {
+                    "id": "uberon"
                 }
             ],
             "description": "Cell types that are provisionally defined by experimental techniques such as single cell or single nucleus transcriptomics rather than a straightforward & coherent set of properties.",
@@ -7678,13 +7434,10 @@
             },
             "dependencies": [
                 {
-                    "id": "ro"
-                },
-                {
                     "id": "bfo"
                 },
                 {
-                    "id": "pato"
+                    "id": "caro"
                 },
                 {
                     "id": "envo"
@@ -7696,13 +7449,13 @@
                     "id": "iao"
                 },
                 {
-                    "id": "bfo"
-                },
-                {
                     "id": "ncbitaxon"
                 },
                 {
-                    "id": "caro"
+                    "id": "pato"
+                },
+                {
+                    "id": "ro"
                 }
             ],
             "description": "An ontology about groups of interacting organisms such as populations and communities",
@@ -8005,7 +7758,7 @@
             },
             "dependencies": [
                 {
-                    "id": "ro"
+                    "id": "go"
                 },
                 {
                     "id": "pato"
@@ -8014,7 +7767,7 @@
                     "id": "plana"
                 },
                 {
-                    "id": "go"
+                    "id": "ro"
                 }
             ],
             "description": "Planarian Phenotype Ontology is an ontology of phenotypes observed in the planarian Schmidtea mediterranea.",
@@ -8051,6 +7804,126 @@
         },
         {
             "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "Planteome",
+                    "title": "Planteome browser",
+                    "url": "http://browser.planteome.org/amigo"
+                }
+            ],
+            "build": {
+                "checkout": "git clone https://github.com/Planteome/plant-ontology.git",
+                "infallible": 1,
+                "method": "vcs",
+                "system": "git"
+            },
+            "contact": {
+                "email": "jaiswalp@science.oregonstate.edu",
+                "github": "jaiswalp",
+                "label": "Pankaj Jaiswal",
+                "orcid": "0000-0002-1005-8383"
+            },
+            "depicted_by": "http://planteome.org/sites/default/files/garland_logo.PNG",
+            "description": "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.",
+            "domain": "anatomy and development",
+            "homepage": "http://browser.planteome.org/amigo",
+            "id": "po",
+            "in_foundry_order": 1,
+            "jobs": [
+                {
+                    "id": "https://travis-ci.org/Planteome/plant-ontology",
+                    "type": "travis-ci"
+                }
+            ],
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/po.owl",
+            "page": "https://github.com/Planteome/plant-ontology",
+            "preferredPrefix": "PO",
+            "products": [
+                {
+                    "id": "po.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/po.owl"
+                },
+                {
+                    "id": "po.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/po.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/23220694",
+                    "title": "The plant ontology as a tool for comparative plant anatomy and genomic analyses."
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/29186578",
+                    "title": "The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics."
+                }
+            ],
+            "repository": "https://github.com/Planteome/plant-ontology",
+            "review": {
+                "date": 2013,
+                "document": {
+                    "label": "PDF",
+                    "link": "https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc"
+                }
+            },
+            "taxon": {
+                "id": "NCBITaxon:33090",
+                "label": "Viridiplantae"
+            },
+            "title": "Plant Ontology",
+            "tracker": "https://github.com/Planteome/plant-ontology/issues",
+            "twitter": "planteome",
+            "usages": [
+                {
+                    "description": "Planteome uses PO to describe location of tissue expression for genes in viridiplantae",
+                    "examples": [
+                        {
+                            "description": "Genes and proteins annotate to leaf",
+                            "url": "http://browser.planteome.org/amigo/term/PO:0025034"
+                        }
+                    ],
+                    "user": "http://planteome.org/"
+                },
+                {
+                    "description": "Maize CELL genomics DB uses PO to annotate images",
+                    "examples": [
+                        {
+                            "description": "LhG4 Promoter Drivers",
+                            "url": "http://maize.jcvi.org/cellgenomics/geneDB_list.php?filter=3"
+                        }
+                    ],
+                    "user": "http://maize.jcvi.org/"
+                },
+                {
+                    "description": "MaizeGDB uses PO for annotation of genes",
+                    "examples": [
+                        {
+                            "description": "Introduced in gene model set 5b in assembly version RefGen_v2.",
+                            "url": "http://maizegdb.org/gene_center/gene/GRMZM5G863962"
+                        }
+                    ],
+                    "user": "http://maizegdb.org/"
+                },
+                {
+                    "description": "Gramene uses PO for the annotation of plant genes",
+                    "examples": [
+                        {
+                            "description": "Gramene annotations to leaf from Arabidopsis",
+                            "url": "http://archive.gramene.org/db/ontology/search?id=PO:0025034"
+                        }
+                    ],
+                    "user": "http://gramene.org/"
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
             "build": {
                 "checkout": "git clone https://github.com/obophenotype/porifera-ontology.git",
                 "infallible": 1,
@@ -8066,10 +7939,10 @@
             },
             "dependencies": [
                 {
-                    "id": "uberon"
+                    "id": "ro"
                 },
                 {
-                    "id": "ro"
+                    "id": "uberon"
                 }
             ],
             "description": "An ontology covering the anatomy of the taxon Porifera (sponges)",
@@ -8154,6 +8027,99 @@
         },
         {
             "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal Browser",
+                    "url": "http://bioportal.bioontology.org/ontologies/PR?p=classes&conceptid=http://purl.obolibrary.org/obo/PR_000000001"
+                },
+                {
+                    "label": "PRO",
+                    "title": "PRO Home",
+                    "url": "http://proconsortium.org"
+                }
+            ],
+            "build": {
+                "infallible": 0,
+                "method": "obo2owl",
+                "oort_args": "--no-reasoner",
+                "source_url": "https://proconsortium.org/download/current/pro_nonreasoned.obo"
+            },
+            "contact": {
+                "email": "dan5@georgetown.edu",
+                "github": "nataled",
+                "label": "Darren Natale",
+                "orcid": "0000-0001-5809-9523"
+            },
+            "depicted_by": "https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png",
+            "description": "An ontological representation of protein-related entities",
+            "documentation": "https://proconsortium.org/download/current/pro_readme.txt",
+            "domain": "chemistry and biochemistry",
+            "homepage": "http://proconsortium.org",
+            "id": "pr",
+            "in_foundry_order": 1,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/pr.owl",
+            "preferredPrefix": "PR",
+            "products": [
+                {
+                    "description": "PRO after reasoning has been applied, OWL format.",
+                    "id": "pr.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pr.owl",
+                    "title": "pro_reasoned.owl"
+                },
+                {
+                    "description": "PRO after reasoning has been applied, OBO format.",
+                    "id": "pr.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pr.obo",
+                    "title": "pro_reasoned.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/27899649",
+                    "title": "Protein Ontology (PRO): enhancing and scaling up the representation of protein entities"
+                }
+            ],
+            "repository": "https://github.com/PROconsortium/PRoteinOntology",
+            "review": {
+                "date": 2010
+            },
+            "tags": [
+                "proteins"
+            ],
+            "title": "PRotein Ontology (PRO)",
+            "tracker": "https://github.com/PROconsortium/PRoteinOntology/issues",
+            "usages": [
+                {
+                    "description": "Colorado Richly Annotated Full-Text (CRAFT) Corpus; PRO is used for entity tagging and annotation",
+                    "examples": [
+                        {
+                            "description": "Tagged entities (requires download)",
+                            "url": "https://github.com/UCDenver-ccp/CRAFT/releases/tag/v4.0.1"
+                        }
+                    ],
+                    "user": "https://github.com/UCDenver-ccp/CRAFT"
+                },
+                {
+                    "description": "Cell Ontology is a structured controlled vocabulary for cell types in animals; PRO is used for cell type definitions",
+                    "examples": [
+                        {
+                            "description": "A B cell that is CD19-positive (uses the PRO term for non-species-specific CD19 molecule, PR:000001002)",
+                            "url": "http://purl.obolibrary.org/obo/CL_0001201"
+                        }
+                    ],
+                    "user": "http://www.obofoundry.org/ontology/cl.html"
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
             "contact": {
                 "email": "wes_schafer@merck.com",
                 "github": "schaferw",
@@ -8162,19 +8128,19 @@
             },
             "dependencies": [
                 {
-                    "id": "ro"
+                    "id": "chebi"
+                },
+                {
+                    "id": "cheminf"
                 },
                 {
                     "id": "obi"
                 },
                 {
-                    "id": "chebi"
-                },
-                {
                     "id": "pato"
                 },
                 {
-                    "id": "cheminf"
+                    "id": "ro"
                 },
                 {
                     "id": "sbo"
@@ -8217,16 +8183,16 @@
             },
             "dependencies": [
                 {
-                    "id": "stato"
+                    "id": "bfo"
                 },
                 {
                     "id": "iao"
                 },
                 {
-                    "id": "bfo"
+                    "id": "ro"
                 },
                 {
-                    "id": "ro"
+                    "id": "stato"
                 }
             ],
             "description": "Ontology to reproducibly study visualizations of clinical performance",
@@ -8389,13 +8355,7 @@
             },
             "dependencies": [
                 {
-                    "id": "ro"
-                },
-                {
                     "id": "bfo"
-                },
-                {
-                    "id": "pato"
                 },
                 {
                     "id": "chmo"
@@ -8405,6 +8365,12 @@
                 },
                 {
                     "id": "obi"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "ro"
                 },
                 {
                     "id": "uo"
@@ -8864,10 +8830,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl"
-            },
             "contact": {
                 "email": "allyson.lister@oerc.ox.ac.uk",
                 "github": "allysonlister",
@@ -8890,6 +8852,10 @@
                 {
                     "id": "swo.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/swo.owl"
+                },
+                {
+                    "id": "swo.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/swo.json"
                 }
             ],
             "publications": [
@@ -8970,6 +8936,79 @@
                         }
                     ],
                     "user": "http://www.disease-ontology.org"
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "allyson.lister@oerc.ox.ac.uk",
+                "github": "allysonlister",
+                "label": "Allyson Lister",
+                "orcid": "0000-0002-7702-4495"
+            },
+            "description": "A terminology for the skills necessary to make data FAIR and to keep it FAIR.",
+            "domain": "information",
+            "homepage": "https://github.com/terms4fairskills/FAIRterminology",
+            "id": "t4fs",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/t4fs.owl",
+            "preferredPrefix": "TF4S",
+            "products": [
+                {
+                    "id": "t4fs.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/t4fs.owl"
+                },
+                {
+                    "id": "t4fs.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/t4fs.obo"
+                },
+                {
+                    "id": "t4fs.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/t4fs.json"
+                },
+                {
+                    "id": "t4fs-community.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/t4fs-community.owl",
+                    "title": "This community view of T4FS makes the ontology available in OWL without upper-level ontology (ULO) terms to give the user community a simpler view of the term hierarchy."
+                },
+                {
+                    "id": "t4fs-community.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/t4fs-community.obo",
+                    "title": "This community view of T4FS makes the ontology available in OBO format without upper-level ontology (ULO) terms to give the user community a simpler view of the term hierarchy."
+                },
+                {
+                    "id": "t4fs-community.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/t4fs-community.json",
+                    "title": "This community view of T4FS makes the ontology available in JSON format without upper-level ontology (ULO) terms to give the user community a simpler view of the term hierarchy."
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.5281/zenodo.4705219",
+                    "title": "EOSC Co-creation funded project 074: Delivery of a proof of concept for terms4FAIRskills: Technical report"
+                }
+            ],
+            "repository": "https://github.com/terms4fairskills/FAIRterminology",
+            "title": "terms4FAIRskills",
+            "tracker": "https://github.com/terms4fairskills/FAIRterminology/issues",
+            "usages": [
+                {
+                    "description": "Semaphora integrates terms4FAIRskills, allowing users to annotate training materials with the ontology.",
+                    "user": "http://t4fs.esciencedatafactory.com/"
+                },
+                {
+                    "description": "FAIRassist is designed to offer personalised guidance to all stakeholders to enable the discovery of standards and repositories in FAIRsharing, which should be used to make data FAIR, as well as to signpost FAIR assessment resources.",
+                    "user": "https://fairassist.org"
+                },
+                {
+                    "description": "FAIRsFAIR Competence Centre (project wp6) will provide a platform for training materials resulting from project training activities, annot",
+                    "user": "https://www.fairsfair.eu/"
                 }
             ]
         },
@@ -9322,16 +9361,16 @@
             },
             "dependencies": [
                 {
-                    "id": "go",
-                    "subset": "uberon/go_import.owl"
+                    "id": "chebi",
+                    "subset": "uberon/chebi_import.owl"
                 },
                 {
                     "id": "cl",
                     "subset": "uberon/cl_import.owl"
                 },
                 {
-                    "id": "chebi",
-                    "subset": "uberon/chebi_import.owl"
+                    "id": "go",
+                    "subset": "uberon/go_import.owl"
                 },
                 {
                     "id": "pr",
@@ -9342,10 +9381,22 @@
             "description": "An integrated cross-species anatomy ontology covering animals and bridging multiple species-specific ontologies",
             "domain": "anatomy and development",
             "funded_by": [
-                "NIH R24OD011883",
-                "NIH R01HG004838",
-                "NIH P41HG002273",
-                "NSF DEB-0956049"
+                {
+                    "id": "https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=R24OD011883&arg_ProgOfficeCode=205",
+                    "title": "NIH R24-OD011883"
+                },
+                {
+                    "id": "https://grantome.com/grant/NIH/R01-HG004838",
+                    "title": "NIH R01-HG004838"
+                },
+                {
+                    "id": "https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=P41HG002273&arg_ProgOfficeCode=55",
+                    "title": "NIH P41-HG002273"
+                },
+                {
+                    "id": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=0956049",
+                    "title": "NSF DEB-0956049"
+                }
             ],
             "homepage": "http://uberon.org",
             "id": "uberon",
@@ -9689,6 +9740,67 @@
                     "user": "https://monarchinitiative.org/"
                 }
             ]
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "Sabrina@tislab.org",
+                "github": "sabrinatoro",
+                "label": "Sabrina Toro",
+                "orcid": "0000-0002-4142-7153"
+            },
+            "dependencies": [
+                {
+                    "id": "ncbitaxon"
+                }
+            ],
+            "description": "Vertebrate Breed Ontology is an ontology created to serve as a single computable resource for vertebrate breed names.",
+            "domain": "organisms",
+            "homepage": "https://github.com/monarch-initiative/vertebrate-breed-ontology",
+            "id": "vbo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/vbo.owl",
+            "preferredPrefix": "VBO",
+            "products": [
+                {
+                    "id": "vbo.owl",
+                    "name": "Vertebrate Breed Ontology main release in OWL format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo.owl"
+                },
+                {
+                    "id": "vbo.obo",
+                    "name": "Vertebrate Breed Ontology additional release in OBO format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo.obo"
+                },
+                {
+                    "id": "vbo.json",
+                    "name": "Vertebrate Breed Ontology additional release in OBOJSon format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo.json"
+                },
+                {
+                    "id": "vbo/vbo-base.owl",
+                    "name": "Vertebrate Breed Ontology main release in OWL format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo/vbo-base.owl"
+                },
+                {
+                    "id": "vbo/vbo-base.obo",
+                    "name": "Vertebrate Breed Ontology additional release in OBO format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo/vbo-base.obo"
+                },
+                {
+                    "id": "vbo/vbo-base.json",
+                    "name": "Vertebrate Breed Ontology additional release in OBOJSon format",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/vbo/vbo-base.json"
+                }
+            ],
+            "repository": "https://github.com/monarch-initiative/vertebrate-breed-ontology",
+            "title": "Vertebrate Breed Ontology",
+            "tracker": "https://github.com/monarch-initiative/vertebrate-breed-ontology/issues"
         },
         {
             "activity_status": "active",
@@ -10076,6 +10188,75 @@
         },
         {
             "activity_status": "active",
+            "build": {
+                "infallible": 0,
+                "method": "obo2owl",
+                "source_url": "https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo"
+            },
+            "contact": {
+                "email": "Erik.Segerdell@cchmc.org",
+                "github": "seger",
+                "label": "Erik Segerdell",
+                "orcid": "0000-0002-9611-1279"
+            },
+            "description": "XAO represents the anatomy and development of the African frogs Xenopus laevis and tropicalis.",
+            "domain": "anatomy and development",
+            "homepage": "http://www.xenbase.org/anatomy/xao.do?method=display",
+            "id": "xao",
+            "in_foundry_order": 1,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 3.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/xao.owl",
+            "preferredPrefix": "XAO",
+            "products": [
+                {
+                    "id": "xao.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/xao.owl"
+                },
+                {
+                    "id": "xao.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/xao.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/18817563",
+                    "title": "An ontology for Xenopus anatomy and development."
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/24139024",
+                    "title": "Enhanced XAO: the ontology of Xenopus anatomy and development underpins more accurate annotation of gene expression and queries on Xenbase."
+                }
+            ],
+            "repository": "https://github.com/xenopus-anatomy/xao",
+            "review": {
+                "date": 2010
+            },
+            "taxon": {
+                "id": "NCBITaxon:8353",
+                "label": "Xenopus"
+            },
+            "title": "Xenopus Anatomy Ontology",
+            "tracker": "https://github.com/xenopus-anatomy/xao/issues",
+            "usages": [
+                {
+                    "description": "Xenbase uses XAO to annotate gene expression.",
+                    "examples": [
+                        {
+                            "description": "Xenopus genes expressed in the pronephric kidney.",
+                            "url": "http://www.xenbase.org/anatomy/showanatomy.do?method=displayAnatomySummary&anatomyId=463"
+                        }
+                    ],
+                    "user": "http://www.xenbase.org"
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
             "browsers": [
                 {
                     "label": "RGD",
@@ -10189,18 +10370,6 @@
             },
             "dependencies": [
                 {
-                    "id": "iao"
-                },
-                {
-                    "id": "go"
-                },
-                {
-                    "id": "ro"
-                },
-                {
-                    "id": "pato"
-                },
-                {
                     "id": "bfo"
                 },
                 {
@@ -10208,6 +10377,18 @@
                 },
                 {
                     "id": "cl"
+                },
+                {
+                    "id": "go"
+                },
+                {
+                    "id": "iao"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "ro"
                 },
                 {
                     "id": "xao"
@@ -10306,6 +10487,72 @@
             "build": {
                 "infallible": 1,
                 "method": "obo2owl",
+                "notes": "may be ready to switch to vcs soon",
+                "source_url": "https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/src/zebrafish_anatomy.obo"
+            },
+            "contact": {
+                "email": "van_slyke@zfin.org",
+                "github": "cerivs",
+                "label": "Ceri Van Slyke",
+                "orcid": "0000-0002-2244-7917"
+            },
+            "description": "A structured controlled vocabulary of the anatomy and development of the Zebrafish",
+            "domain": "anatomy and development",
+            "homepage": "https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources",
+            "id": "zfa",
+            "in_foundry_order": 1,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 3.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/zfa.owl",
+            "preferredPrefix": "ZFA",
+            "products": [
+                {
+                    "id": "zfa.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/zfa.owl"
+                },
+                {
+                    "id": "zfa.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/zfa.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/24568621",
+                    "title": "The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio."
+                }
+            ],
+            "repository": "https://github.com/cerivs/zebrafish-anatomical-ontology",
+            "review": {
+                "date": 2010
+            },
+            "taxon": {
+                "id": "NCBITaxon:7954",
+                "label": "Danio"
+            },
+            "title": "Zebrafish anatomy and development ontology",
+            "tracker": "https://github.com/cerivs/zebrafish-anatomical-ontology/issues",
+            "usages": [
+                {
+                    "description": "ZFIN uses ZFA to annotate gene expression and phenotype",
+                    "examples": [
+                        {
+                            "description": "zebrafish genes expressed in hindbrain and genotypes with hindbrain phenotype",
+                            "url": "http://zfin.org/ZFA:0000029"
+                        }
+                    ],
+                    "user": "http://zfin.org"
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
+            "build": {
+                "infallible": 1,
+                "method": "obo2owl",
                 "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/zfs/zfs.obo"
             },
             "contact": {
@@ -10361,25 +10608,25 @@
             },
             "dependencies": [
                 {
-                    "id": "go"
-                },
-                {
-                    "id": "ro"
-                },
-                {
-                    "id": "pato"
+                    "id": "bfo"
                 },
                 {
                     "id": "bspo"
                 },
                 {
-                    "id": "zfa"
+                    "id": "go"
                 },
                 {
-                    "id": "bfo"
+                    "id": "pato"
+                },
+                {
+                    "id": "ro"
                 },
                 {
                     "id": "uberon"
+                },
+                {
+                    "id": "zfa"
                 }
             ],
             "description": "The Zebrafish Phenotype Ontology formally defines all phenotypes of the Zebrafish model organism.",
@@ -10602,8 +10849,14 @@
             "description": "A classification of algorithms for simulating biology, their parameters, and their outputs",
             "domain": "simulation",
             "funded_by": [
-                "NIH P41EB023912",
-                "NIH R35GM119771"
+                {
+                    "id": "https://grantome.com/search?q=P41EB023912",
+                    "title": "NIH P41EB023912"
+                },
+                {
+                    "id": "https://grantome.com/search?q=R35GM119771",
+                    "title": "NIH R35GM119771"
+                }
             ],
             "homepage": "https://github.com/SED-ML/KiSAO",
             "id": "kisao",
@@ -10684,39 +10937,6 @@
                     "user": "https://biosimulators.org/"
                 }
             ]
-        },
-        {
-            "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl"
-            },
-            "contact": {
-                "email": "nicolas@ascistance.co.uk",
-                "github": "gambardella",
-                "label": "Nicolas Gambardella",
-                "orcid": "0000-0002-6309-7327"
-            },
-            "description": "The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features.",
-            "domain": "simulation",
-            "homepage": "http://sourceforge.net/p/mamo-ontology/wiki/Home/",
-            "id": "mamo",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "Artistic License 2.0",
-                "url": "http://opensource.org/licenses/Artistic-2.0"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/mamo.owl",
-            "preferredPrefix": "MAMO",
-            "products": [
-                {
-                    "id": "mamo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/mamo.owl"
-                }
-            ],
-            "repository": "http://sourceforge.net/p/mamo-ontology",
-            "title": "Mathematical modeling ontology",
-            "tracker": "http://sourceforge.net/p/mamo-ontology/tickets/"
         },
         {
             "activity_status": "active",
@@ -10915,6 +11135,7 @@
                 "label": "chEBI"
             },
             "description": "An ontology of physico-chemical methods and properties.",
+            "domain": "chemistry and biochemistry",
             "homepage": "http://www.ebi.ac.uk/chebi",
             "id": "fix",
             "in_foundry": false,
@@ -10935,11 +11156,39 @@
         {
             "activity_status": "orphaned",
             "build": {
+                "method": "owl2obo",
+                "source_url": "https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl"
+            },
+            "description": "The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features.",
+            "domain": "simulation",
+            "homepage": "http://sourceforge.net/p/mamo-ontology/wiki/Home/",
+            "id": "mamo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "Artistic License 2.0",
+                "url": "http://opensource.org/licenses/Artistic-2.0"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/mamo.owl",
+            "preferredPrefix": "MAMO",
+            "products": [
+                {
+                    "id": "mamo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mamo.owl"
+                }
+            ],
+            "repository": "http://sourceforge.net/p/mamo-ontology",
+            "title": "Mathematical modeling ontology",
+            "tracker": "http://sourceforge.net/p/mamo-ontology/tickets/"
+        },
+        {
+            "activity_status": "orphaned",
+            "build": {
                 "insert_ontology_id": true,
                 "method": "obo2owl",
                 "source_url": "http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo"
             },
             "description": "An ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time.",
+            "domain": "chemistry and biochemistry",
             "id": "rex",
             "layout": "ontology_detail",
             "ontology_purl": "http://purl.obolibrary.org/obo/rex.owl",
@@ -11003,6 +11252,7 @@
                 "label": "Mauno Vihinen"
             },
             "description": "Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations.",
+            "domain": "biological systems",
             "homepage": "http://variationontology.org",
             "id": "vario",
             "layout": "ontology_detail",
@@ -11229,6 +11479,7 @@
                 "orcid": "0000-0001-8910-9851"
             },
             "description": "A gazetteer constructed on ontological principles",
+            "domain": "environment",
             "homepage": "http://environmentontology.github.io/gaz/",
             "id": "gaz",
             "layout": "ontology_detail",
@@ -11490,6 +11741,7 @@
                 "email": "david.c.blackburn@gmail.com",
                 "label": "David Blackburn"
             },
+            "domain": "anatomy and development",
             "homepage": "http://github.com/seger/aao",
             "id": "aao",
             "is_obsolete": true,
@@ -11507,6 +11759,7 @@
                 "email": "adw_geeks@umich.edu",
                 "label": "Animal Diversity Web technical staff"
             },
+            "domain": "organisms",
             "homepage": "http://www.animaldiversity.org",
             "id": "adw",
             "is_obsolete": true,
@@ -11549,6 +11802,7 @@
                 "email": "david.c.blackburn@gmail.com",
                 "label": "David Blackburn"
             },
+            "domain": "organisms",
             "homepage": "http://www.amphibanat.org",
             "id": "ato",
             "is_obsolete": true,
@@ -11568,6 +11822,7 @@
                 "orcid": "0000-0002-2999-0103"
             },
             "description": "An application ontology built for beta cell genomics studies.",
+            "domain": "anatomy and development",
             "homepage": "https://github.com/obi-bcgo/bcgo",
             "id": "bcgo",
             "in_foundry": false,
@@ -11623,6 +11878,7 @@
                 "email": "vlee@ebi.ac.uk",
                 "label": "Vivian Lee"
             },
+            "domain": "chemistry and biochemistry",
             "homepage": "http://www.ebi.ac.uk/Rebholz-srv/GRO/GRO.html",
             "id": "bootstrep",
             "is_obsolete": true,
@@ -11637,6 +11893,7 @@
                 "label": "Mark Engelstad",
                 "orcid": "0000-0001-5889-4463"
             },
+            "domain": "health",
             "homepage": "https://code.google.com/p/craniomaxillofacial-ontology/",
             "id": "cmf",
             "is_obsolete": true,
@@ -11650,6 +11907,7 @@
                 "label": "Lindsay Cowell",
                 "orcid": "0000-0003-1617-8244"
             },
+            "domain": "anatomy and development",
             "homepage": "http://www.dukeontologygroup.org/Projects.html",
             "id": "dc_cl",
             "is_obsolete": true,
@@ -11700,6 +11958,7 @@
                 "email": "J.Bard@ed.ac.uk",
                 "label": "Jonathan Bard"
             },
+            "domain": "anatomy and development",
             "homepage": "http://genex.hgu.mrc.ac.uk/",
             "id": "ehda",
             "is_obsolete": true,
@@ -11717,6 +11976,7 @@
                 "email": "J.Bard@ed.ac.uk",
                 "label": "Jonathan Bard"
             },
+            "domain": "anatomy and development",
             "homepage": null,
             "id": "ehdaa",
             "is_obsolete": true,
@@ -11837,6 +12097,7 @@
                 "source_url": "http://purl.obolibrary.org/obo/epo.owl"
             },
             "description": "An ontology designed to support the semantic annotation of epidemiology resources",
+            "domain": "health",
             "homepage": "https://code.google.com/p/epidemiology-ontology/",
             "id": "epo",
             "in_foundry": false,
@@ -11889,6 +12150,7 @@
                 "email": "evoc@sanbi.ac.za",
                 "label": "eVOC mailing list"
             },
+            "domain": "anatomy and development",
             "homepage": "http://www.evocontology.org/",
             "id": "ev",
             "is_obsolete": true,
@@ -11960,6 +12222,7 @@
                 "email": "po-discuss@plantontology.org",
                 "label": "Plant Ontology Administrators"
             },
+            "domain": "anatomy and development",
             "homepage": "http://www.gramene.org/plant_ontology/",
             "id": "gro",
             "is_obsolete": true,
@@ -11973,6 +12236,7 @@
                 "label": "Peter Midford",
                 "orcid": "0000-0001-6512-3296"
             },
+            "domain": "organisms",
             "homepage": "http://www.mesquiteproject.org/ontology/Habronattus/index.html",
             "id": "habronattus",
             "is_obsolete": true,
@@ -11986,6 +12250,7 @@
                 "method": "obo2owl",
                 "source_url": "http://download.baderlab.org/INOH/ontologies/EventOntology_172.obo"
             },
+            "domain": "chemistry and biochemistry",
             "homepage": "http://www.inoh.org",
             "id": "iev",
             "is_obsolete": true,
@@ -12003,6 +12268,7 @@
                 "email": "curator@inoh.org",
                 "label": "INOH curators"
             },
+            "domain": "chemistry and biochemistry",
             "homepage": "http://www.inoh.org",
             "id": "imr",
             "is_obsolete": true,
@@ -12015,6 +12281,7 @@
                 "email": "interhelp@ebi.ac.uk",
                 "label": "InterPro Help"
             },
+            "domain": "chemistry and biochemistry",
             "homepage": "http://www.ebi.ac.uk/interpro/index.html",
             "id": "ipr",
             "is_obsolete": true,
@@ -12049,6 +12316,7 @@
                 "label": "Peter Midford",
                 "orcid": "0000-0001-6512-3296"
             },
+            "domain": "organisms",
             "homepage": "http://www.mesquiteproject.org/ontology/Loggerhead/index.html",
             "id": "loggerhead",
             "is_obsolete": true,
@@ -12061,6 +12329,7 @@
                 "email": "julie@igbmc.u-strasbg.fr",
                 "label": "Julie Thompson"
             },
+            "domain": "chemistry and biochemistry",
             "homepage": "http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html",
             "id": "mao",
             "is_obsolete": true,
@@ -12073,6 +12342,7 @@
                 "email": "j.bard@ed.ac.uk",
                 "label": "Jonathan Bard"
             },
+            "domain": "anatomy and development",
             "homepage": null,
             "id": "mat",
             "is_obsolete": true,
@@ -12110,6 +12380,7 @@
                 "label": "Pantelis Topalis"
             },
             "description": "An application ontology for use with miRNA databases.",
+            "domain": "chemistry and biochemistry",
             "homepage": "http://code.google.com/p/mirna-ontology/",
             "id": "mirnao",
             "is_obsolete": true,
@@ -12157,6 +12428,7 @@
                 "label": "Fahim Imam"
             },
             "description": "Neuronal cell types",
+            "domain": "anatomy and development",
             "homepage": "http://neuinfo.org/",
             "id": "nif_cell",
             "is_obsolete": true,
@@ -12170,6 +12442,7 @@
                 "email": "smtifahim@gmail.com",
                 "label": "Fahim Imam"
             },
+            "domain": "health",
             "homepage": "http://neuinfo.org/",
             "id": "nif_dysfunction",
             "is_obsolete": true,
@@ -12183,6 +12456,7 @@
                 "email": "smtifahim@gmail.com",
                 "label": "Fahim Imam"
             },
+            "domain": "anatomy and development",
             "homepage": "http://neuinfo.org/",
             "id": "nif_grossanatomy",
             "is_obsolete": true,
@@ -12222,6 +12496,7 @@
                 "label": "Chris Mungall",
                 "orcid": "0000-0002-6601-2165"
             },
+            "domain": "upper",
             "homepage": "http://www.obofoundry.org/ro",
             "id": "obo_rel",
             "is_obsolete": true,
@@ -12238,6 +12513,7 @@
                 "orcid": "0000-0002-5379-5359"
             },
             "description": "An ontology that formalizes the genomic element by defining an upper class genetic interval",
+            "domain": "chemistry and biochemistry",
             "homepage": "https://code.google.com/p/ontology-for-genetic-interval/",
             "id": "ogi",
             "is_obsolete": true,
@@ -12288,6 +12564,7 @@
                 "label": "Pankaj Jaiswal",
                 "orcid": "0000-0002-1005-8383"
             },
+            "domain": "anatomy and development",
             "homepage": "http://www.plantontology.org",
             "id": "pao",
             "is_obsolete": true,
@@ -12304,6 +12581,7 @@
                 "email": "henrich@embl.de",
                 "label": "Thorsten Heinrich"
             },
+            "domain": "anatomy and development",
             "homepage": "http://4dx.embl.de/platy",
             "id": "pd_st",
             "is_obsolete": true,
@@ -12321,6 +12599,7 @@
                 "email": "po-discuss@plantontology.org",
                 "label": "Plant Ontology Administrators"
             },
+            "domain": "anatomy and development",
             "homepage": "http://www.plantontology.org",
             "id": "pgdso",
             "is_obsolete": true,
@@ -12337,6 +12616,7 @@
                 "email": "mb4@sanger.ac.uk",
                 "label": "Matt Berriman"
             },
+            "domain": "anatomy and development",
             "homepage": "http://www.sanger.ac.uk/Users/mb4/PLO/",
             "id": "plo",
             "is_obsolete": true,
@@ -12349,6 +12629,7 @@
                 "email": "satya30@uga.edu",
                 "label": "Satya S. Sahoo"
             },
+            "domain": "chemistry and biochemistry",
             "homepage": "http://lsdis.cs.uga.edu/projects/glycomics/propreo/",
             "id": "propreo",
             "is_obsolete": true,
@@ -12378,6 +12659,7 @@
                 "email": "slarson@ncmir.ucsd.edu",
                 "label": "Stephen Larson"
             },
+            "domain": "anatomy and development",
             "homepage": "http://ccdb.ucsd.edu/CCDBWebSite/sao.html",
             "id": "sao",
             "is_obsolete": true,
@@ -12424,6 +12706,7 @@
                 "email": "Adrien.Coulet@loria.fr",
                 "label": "Adrien Coulet"
             },
+            "domain": "chemistry and biochemistry",
             "homepage": "http://www.loria.fr/~coulet/sopharm2.0_description.php",
             "id": "sopharm",
             "is_obsolete": true,
@@ -12440,6 +12723,7 @@
                 "email": "pierre.sprumont@unifr.ch",
                 "label": "Pierre Sprumont"
             },
+            "domain": "anatomy and development",
             "homepage": null,
             "id": "tahe",
             "is_obsolete": true,
@@ -12456,6 +12740,7 @@
                 "email": "pierre.sprumont@unifr.ch",
                 "label": "Pierre Sprumont"
             },
+            "domain": "health",
             "homepage": null,
             "id": "tahh",
             "is_obsolete": true,
@@ -12510,6 +12795,7 @@
         {
             "activity_status": "inactive",
             "depicted_by": "http://bgee.org/img/logo/bgee13_logo.png",
+            "domain": "anatomy and development",
             "id": "vhog",
             "is_obsolete": true,
             "layout": "ontology_detail",
@@ -12560,6 +12846,7 @@
                 "label": "Mike Cherry",
                 "orcid": "0000-0001-9163-5180"
             },
+            "domain": "phenotype",
             "homepage": "http://www.yeastgenome.org/",
             "id": "ypo",
             "is_obsolete": true,
@@ -12578,6 +12865,7 @@
                 "label": "Leszek Vincent",
                 "orcid": "0000-0002-9316-2919"
             },
+            "domain": "anatomy and development",
             "homepage": "http://www.maizemap.org/",
             "id": "zea",
             "is_obsolete": true,

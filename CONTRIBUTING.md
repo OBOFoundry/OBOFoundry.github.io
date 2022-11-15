@@ -4,14 +4,14 @@ Thank you for taking the time to contribute. We appreciate it!
 
 There are two ways to contribute to this effort. The first way is to use this project's [Issues Page](https://github.com/OBOFoundry/OBOFoundry.github.io/issues), which we use as a forum to discuss both major and minor issues related to developing the OBO repository, procedures and associated web interface. Examples of the type of issues that can be submitted are:
 
- * Issues to do with the website and other technical issues
- * Issues relating to metadata about individual ontologies
- * Issues regarding OBO as a whole
+- Issues to do with the website and other technical issues
+- Issues relating to metadata about individual ontologies
+- Issues regarding OBO as a whole
 
 Please refer to the FAQ section [faq/how-do-i-edit-metadata.md](faq/how-do-i-edit-metadata.md) on making Pull Requests.
 
-
 <a name="issue_resolution"></a>
+
 ## Issue Resolution
 
 Once a pull request or issue have been submitted, anyone can comment or vote on an issue to express their opinion following the Apache voting system. Quick summary:

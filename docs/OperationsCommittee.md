@@ -15,5 +15,11 @@ title: Operations Committee
 The members of the Operations Committee are listed [here](Membership.html).
 See a description of our activities in our [mission statement](MissionStatement.html).
 
+New members should follow the instructions on the [onboarding doc](https://docs.google.com/document/d/1MKhNTjZjGx6Ls72dybIV2ajYtbqtwP7O4lwxN2v3RBA/edit#heading=h.10q6n5qc13dp)
+
+## OBO Operations Committee SOP
+[Standard operating procedures (SOPs)](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/docs/SOP.md) for the OBO Foundry Operations Committee can be found in our GitHub repo.
+
 ## Interested in joining?
+
 If you are interested in becoming part of the OBO Operations Committee, please see [this page](NewOBOFC.html) to find out about the nomination and onboarding process.

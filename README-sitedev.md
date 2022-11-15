@@ -1,40 +1,20 @@
-This documentation is for developers of this prototype OBO Foundry site.
+# Site Development
 
-Note this document is in markdown and is best viewed on GitHub.
+This documentation is for developers of this prototype OBO Foundry site.
 
 ## Getting Started
 
-You will first need jekyll, which can be installed by the ruby [gem](https://rubygems.org/):
-
-    gem install jekyll
-
-After checking out the code from GitHub, you can start a local server:
-
-    jekyll serve
-
-(this must always be done from the top level)
-
-Then view http://127.0.0.1:4000
-
-You can make changes locally (you will need to start jekyll again - no
-hot fixes).
-
-If you commit and push, your change will be visible within a few
-minutes on: http://obofoundry.github.io
-
-If this site becomes official we may want to institute policies for
-the site: e.g. major new changes happen on forks/branches, with a
-voting policy for merging these in.
-
-### Serving with Docker
-
 Because Jekyll can be difficult to install, Docker provides an
-alternative for running the `serve` command:
+alternative for running the `serve` command, then open http://localhost:4000:
 
 ```shell
-$ export JEKYLL_VERSION=3.5
-$ docker run --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:$JEKYLL_VERSION jekyll serve
+$ docker run --rm --volume="$PWD:/srv/jekyll" -p 4000:4000 -it jekyll/jekyll:3.5 jekyll serve
 ```
+
+You can make changes locally and the Docker image will automatically update.
+When you're ready, you can commit to a new branch and send a pull request.
+After it's accepted, it will be automatically built and deployed to
+http://obofoundry.github.io in a few minutes.
 
 ## Details
 
@@ -91,7 +71,7 @@ create RDF files via a JSON-LD file (JENA required):
 
 The front page [index.html](index.html) is the ontology table. It is
 driven by the
-[_includes/ontology_table.html](_includes/ontology_table.html)
+[_includes/ontology_table.html](_includes/table_widget.html)
 template.
 
 It iterates through all ontologies (these are stored in the variable
@@ -141,7 +121,9 @@ We could in theory easily manage our principles here. E.g. one .md
 file per principle. I personally think this much better than the
 current wiki, but other opinions welcome.
 
-### Bootstrap Conventions
+### Code quality
 
-We use bootstrap 3, so far no themes.
-
+1. Install the Node Package Manager (NPM) following [these instructions](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+2. Install the [node package exector (`npx`)](https://www.npmjs.com/package/npx) with NPM using `npm install npx`
+3. Install [`prettier`](https://prettier.io) with NPM using `npm install prettier`
+4. Run `prettier` from the root of the repository with `npx prettier --write .`

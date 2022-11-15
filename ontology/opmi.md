@@ -2,23 +2,22 @@
 layout: ontology_detail
 id: opmi
 title: Ontology of Precision Medicine and Investigation
-description: The Ontology of Precision Medicine and Investigation (OPMI) aims to ontologically represent and standardize various entities and relations associated with precision medicine and related investigations at different conditions.
-homepage: https://github.com/OPMI/opmi
-mailing_list: http://groups.google.com/group/opmi-discuss
-tracker: https://github.com/OPMI/opmi/issues
 contact:
   email: yongqunh@med.umich.edu
-  label: Yongqun Oliver He
   github: yongqunh
+  label: Yongqun Oliver He
   orcid: 0000-0001-9189-9661
-products:
-  - id: opmi.owl
-license:
-  url: http://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-activity_status: active
-repository: https://github.com/OPMI/opmi
-preferredPrefix: OPMI
+description: The Ontology of Precision Medicine and Investigation (OPMI) aims to ontologically represent and standardize various entities and relations associated with precision medicine and related investigations at different conditions.
 domain: investigations
-github_date_added: 2018-08-30
+homepage: https://github.com/OPMI/opmi
+license:
+  label: CC BY 4.0
+  url: http://creativecommons.org/licenses/by/4.0/
+mailing_list: http://groups.google.com/group/opmi-discuss
+preferredPrefix: OPMI
+products:
+- id: opmi.owl
+repository: https://github.com/OPMI/opmi
+tracker: https://github.com/OPMI/opmi/issues
+activity_status: active
 ---

@@ -1,25 +1,24 @@
 ---
 layout: ontology_detail
 id: mfomd
+title: Mental Disease Ontology
 contact:
   email: janna.hastings@gmail.com
-  label: Janna Hastings
   github: jannahastings
+  label: Janna Hastings
   orcid: 0000-0002-3469-4923
-title: Mental Disease Ontology
 description: An ontology to describe and classify mental diseases such as schizophrenia, annotated with DSM-IV and ICD codes where applicable
 domain: health
 homepage: https://github.com/jannahastings/mental-functioning-ontology
-products:
-  - id: mfomd.owl
-tracker: https://github.com/jannahastings/mental-functioning-ontology/issues
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
-activity_status: active
-repository: https://github.com/jannahastings/mental-functioning-ontology
+  url: http://creativecommons.org/licenses/by/3.0/
 preferredPrefix: MFOMD
-github_date_added: 2015-08-21
+products:
+- id: mfomd.owl
+repository: https://github.com/jannahastings/mental-functioning-ontology
+tracker: https://github.com/jannahastings/mental-functioning-ontology/issues
+activity_status: active
 ---
 
 An ontology to describe and classify mental diseases such as schizophrenia, annotated with DSM-IV and ICD codes where applicable.

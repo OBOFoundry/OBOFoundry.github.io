@@ -5,6 +5,7 @@ title: Cereal Plant Gross Anatomy
 contact:
   email: po-discuss@plantontology.org
   label: Plant Ontology Administrators
+domain: anatomy and development
 homepage: http://www.gramene.org/plant_ontology/
 is_obsolete: true
 activity_status: inactive

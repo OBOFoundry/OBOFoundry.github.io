@@ -1,13 +1,10 @@
 ---
 layout: doc
 id: Citation
-title: Citation
+title: OBO Citation and Attribution Policy
 ---
 
-# OBO Citation and Attribution Policy
-
 Open Biological and Biomedical Ontologies are used in a diversity of ways. The following guidelines are intended to promote proper attribution of the ontology creators and contributors, and to promote reproducibility in informatics applications.
-
 
 ## Referring to a single term
 
@@ -25,7 +22,6 @@ We also recommend including the primary label of the term in quotation marks bef
 
 > 'heart' ([UBERON:0000948](http://purl.obolibrary.org/obo/UBERON_0000948))
 
-
 ## Referring to an ontology
 
 To facilitate reproducibility, be specific about the version of the ontology that you are referring to by using an ontology version IRI that contains the release date:
@@ -40,10 +36,9 @@ When referring to an ontology in general (not a specific version) you can use it
 
 The ontology IRI or ontology version IRI should be accompanied by a citation of the ontology, in any context where citations are appropriate.
 
-
 ## Citing an ontology
 
-Some ontologies recommend citation of specific publications. Please see their respective homepages for this information. For example, [Uberon](http://obofoundry.org/ontology/uberon) lists two publications under "Cite." 
+Some ontologies recommend citation of specific publications. Please see their respective homepages for this information. For example, [Uberon](http://obofoundry.org/ontology/uberon) lists two publications under "Cite."
 
 In addition to the recommended publication, you should also cite the ontology using its IRI and the [new data citation extension to JATS](https://peerj.com/articles/cs-1/). When no specific publication is recommended, you must cite the ontology by its IRI. Here is an example citation:
 

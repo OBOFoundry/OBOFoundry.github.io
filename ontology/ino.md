@@ -2,24 +2,26 @@
 layout: ontology_detail
 id: ino
 title: Interaction Network Ontology
-description: An ontology of interactions and interaction networks
-license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
 contact:
   email: yongqunh@med.umich.edu
-  label: Yongqun Oliver He
   github: yongqunh
+  label: Yongqun Oliver He
   orcid: 0000-0001-9189-9661
-homepage: https://github.com/INO-ontology/ino
-tracker: https://github.com/INO-ontology/ino/issues
-products:
-  - id: ino.owl
-activity_status: active
-repository: https://github.com/INO-ontology/ino
-preferredPrefix: INO
+description: An ontology of interactions and interaction networks
 domain: biological systems
-github_date_added: 2018-03-10
+homepage: https://github.com/INO-ontology/ino
+license:
+  label: CC BY 3.0
+  url: http://creativecommons.org/licenses/by/3.0/
+preferredPrefix: INO
+products:
+- id: ino.owl
+publications:
+- id: https://doi.org/10.1186/2041-1480-6-2
+  title: Development and application of an Interaction Network Ontology for literature mining of vaccine-associated gene-gene interactions
+repository: https://github.com/INO-ontology/ino
+tracker: https://github.com/INO-ontology/ino/issues
+activity_status: active
 ---
 
 # Summary
@@ -41,7 +43,3 @@ Note that the source ontology is an OWL file.
 
 * Default browsing in Ontobee: [http://www.ontobee.org/ontology/ino](http://www.ontobee.org/ontology/ino)
 * Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/INO](https://bioportal.bioontology.org/ontologies/INO)
-
-INO can be cited as:
-
-Hur J, Özgür A, Xiang Z, He Y. <b>Development and application of an Interaction Network Ontology for literature mining of vaccine-associated gene-gene interactions</b>. <i>Journal of Biomedical Semantics. 2015, 6:2</i>. <a href="http://www.dx.doi.org/10.1186/2041-1480-6-2">10.1186/2041-1480-6-2</a>

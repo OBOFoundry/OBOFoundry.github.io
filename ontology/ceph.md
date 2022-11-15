@@ -4,35 +4,34 @@ id: ceph
 title: Cephalopod Ontology
 build:
   checkout: git clone https://github.com/obophenotype/cephalopod-ontology.git
-  system: git
-  path: src/ontology
   method: vcs
+  path: src/ontology
+  system: git
 contact:
   email: cjmungall@lbl.gov
-  label: Chris Mungall
   github: cmungall
+  label: Chris Mungall
   orcid: 0000-0002-6601-2165
 description: An anatomical and developmental ontology for cephalopods
 domain: anatomy and development
 homepage: https://github.com/obophenotype/cephalopod-ontology
+jobs:
+- id: https://travis-ci.org/obophenotype/cephalopod-ontology
+  type: travis-ci
+license:
+  label: CC BY 3.0
+  url: http://creativecommons.org/licenses/by/3.0/
 products:
-  - id: ceph.owl
-    title: main version
-  - id: ceph.obo
-    title: oboformat edition
+- id: ceph.owl
+  title: main version
+- id: ceph.obo
+  title: oboformat edition
+repository: https://github.com/obophenotype/cephalopod-ontology
 taxon:
   id: NCBITaxon:6605
   label: Cephalopod
 tracker: https://github.com/obophenotype/cephalopod-ontology/issues
-jobs:
-  - id: https://travis-ci.org/obophenotype/cephalopod-ontology
-    type: travis-ci
-license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
 activity_status: inactive
-repository: https://github.com/obophenotype/cephalopod-ontology
-github_date_added: 2015-08-21
 ---
 
 Welcome to the Cephalopod Ontology

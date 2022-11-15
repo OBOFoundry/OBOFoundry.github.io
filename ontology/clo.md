@@ -1,40 +1,37 @@
 ---
 layout: ontology_detail
 id: clo
+title: Cell Line Ontology
 contact:
   email: siiraa@umich.edu
-  label: Sirarat Sarntivijai
   github: siiraa
+  label: Sirarat Sarntivijai
   orcid: 0000-0002-2548-641X
-description: An ontology to standardize and integrate cell line information and to support computer-assisted reasoning.
-homepage: http://www.clo-ontology.org
-products:
-  - id: clo.owl
-title: Cell Line Ontology
-tracker: https://github.com/CLO-Ontology/CLO/issues
-publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/25852852
-    title: "CLO: The Cell Line Ontology"
 dependencies:
-  - id: uberon
-  - id: cl
-  - id: doid
-  - id: ncbitaxon
-license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
-activity_status: active
-repository: https://github.com/CLO-Ontology/CLO
-preferredPrefix: CLO
+- id: cl
+- id: doid
+- id: ncbitaxon
+- id: uberon
+description: An ontology to standardize and integrate cell line information and to support computer-assisted reasoning.
 domain: anatomy and development
-github_date_added: 2015-07-28
+homepage: http://www.clo-ontology.org
+license:
+  label: CC BY 3.0
+  url: http://creativecommons.org/licenses/by/3.0/
+preferredPrefix: CLO
+products:
+- id: clo.owl
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/25852852
+  title: 'CLO: The Cell Line Ontology'
+repository: https://github.com/CLO-Ontology/CLO
+tracker: https://github.com/CLO-Ontology/CLO/issues
+activity_status: active
 ---
 
 # Summary
 
 The Cell Line Ontology (CLO) is a community-driven ontology that is developed to standardize and integrate cell line information and support computer-assisted reasoning.
-
-* Home: [http://www.clo-ontology.org](http://www.clo-ontology.org)  
 
 # Download
 

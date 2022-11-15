@@ -1,60 +1,59 @@
 ---
 layout: ontology_detail
 id: chebi
-in_foundry_order: 1
 title: Chemical Entities of Biological Interest
-review:
-  date: 2010
+browsers:
+- title: EBI CHEBI Browser
+  label: CHEBI
+  url: http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView
 build:
-  source_url: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo
-  method: obo2owl
   infallible: 1
-description: A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds.
-twitter: chebit
+  method: obo2owl
+  source_url: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo
 contact:
   email: amalik@ebi.ac.uk
+  github: amalik01
   label: Adnan Malik
-  github: "amalik01"
   orcid: 0000-0001-8123-5351
-license:
-  url: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
+depicted_by: https://www.ebi.ac.uk/chebi/images/ChEBI_logo.png
+description: A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds.
 domain: chemistry and biochemistry
 homepage: http://www.ebi.ac.uk/chebi
+in_foundry_order: 1
+license:
+  label: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
 page: http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual
-depicted_by: https://www.ebi.ac.uk/chebi/images/ChEBI_logo.png
-publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/26467479
-    title: "ChEBI in 2016: Improved services and an expanding collection of metabolites."
-browsers:
-  - label: CHEBI
-    title: EBI CHEBI Browser
-    url: http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView
-products:
-  - id: chebi.owl
-  - id: chebi.obo
-  - id: chebi.owl.gz
-    title: "chebi, compressed owl"
-  - id: chebi/chebi_lite.obo
-    title: "chebi_lite, no syns or xrefs"
-  - id: chebi/chebi_core.obo
-    title: "chebi_core, no xrefs"
-tracker: https://github.com/ebi-chebi/ChEBI/issues
-usages:
-  - user: https://www.rhea-db.org/
-    description: Rhea uses CHEBI to annotate reaction participants
-    examples:
-      - url: https://www.rhea-db.org/searchresults?q=CHEBI:29748
-        description: "Query for all usages of CHEBI:29748 (chorismate)"
-  - user: http://zfin.org
-    description: ZFIN uses CHEBI to annotate experiments
-    examples:
-      - url: http://zfin.org/action/expression/experiment?id=ZDB-EXP-190627-10
-        description: "A curated zebrafish experiment involving exposure to (5Z,8Z,14Z)-11,12-dihydroxyicosatrienoic acid (CHEBI:63969)"
-activity_status: active
-repository: https://github.com/ebi-chebi/ChEBI
 preferredPrefix: CHEBI
-github_date_added: 2015-07-28
+products:
+- id: chebi.owl
+- id: chebi.obo
+- id: chebi.owl.gz
+  title: chebi, compressed owl
+- id: chebi/chebi_lite.obo
+  title: chebi_lite, no syns or xrefs
+- id: chebi/chebi_core.obo
+  title: chebi_core, no xrefs
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/26467479
+  title: 'ChEBI in 2016: Improved services and an expanding collection of metabolites.'
+repository: https://github.com/ebi-chebi/ChEBI
+review:
+  date: 2010
+tracker: https://github.com/ebi-chebi/ChEBI/issues
+twitter: chebit
+usages:
+- description: Rhea uses CHEBI to annotate reaction participants
+  examples:
+  - description: Query for all usages of CHEBI:29748 (chorismate)
+    url: https://www.rhea-db.org/searchresults?q=CHEBI:29748
+  user: https://www.rhea-db.org/
+- description: ZFIN uses CHEBI to annotate experiments
+  examples:
+  - description: A curated zebrafish experiment involving exposure to (5Z,8Z,14Z)-11,12-dihydroxyicosatrienoic acid (CHEBI:63969)
+    url: http://zfin.org/action/expression/experiment?id=ZDB-EXP-190627-10
+  user: http://zfin.org
+activity_status: active
 ---
 
 A freely available dictionary of molecular entities focused on ‘small’ chemical compounds.

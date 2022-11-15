@@ -1,6 +1,23 @@
----
-theme :
-  name : bootstrap-3
----
-{% include JB/setup %}
-{% include themes/bootstrap-3/default.html %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>{{ site.name }}</title>
+    {%- include head.html -%}
+</head>
+
+<body>
+
+{%- include header.html -%}
+
+<div class="container" style="margin-top: 2em; margin-bottom: 2em;">
+    {{ content }}
+</div>
+
+{%- include footer.html -%}
+
+{%- include scripts.html -%}
+
+</body>
+
+</html>

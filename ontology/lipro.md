@@ -1,19 +1,19 @@
 ---
 layout: ontology_detail
 id: lipro
-in_foundry: false
+title: Lipid Ontology
+build:
+  method: owl2obo
+  source_url: http://www.lipidprofiles.com/LipidOntology
 contact:
   email: bakerc@unb.ca
   label: Christipher Baker
 description: An ontology representation of the LIPIDMAPS nomenclature classification.
 domain: chemistry and biochemistry
-tags:
-  - lipids
-title: Lipid Ontology
-build:
-  source_url: http://www.lipidprofiles.com/LipidOntology
-  method: owl2obo
+in_foundry: false
 is_obsolete: true
+tags:
+- lipids
 activity_status: inactive
 github_date_added: 2015-07-29
 ---

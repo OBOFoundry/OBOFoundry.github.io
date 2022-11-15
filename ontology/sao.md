@@ -5,12 +5,13 @@ title: Subcellular anatomy ontology
 contact:
   email: slarson@ncmir.ucsd.edu
   label: Stephen Larson
-taxon:
-  id: NCBITaxon:9606
-  label: Homo sapiens
+domain: anatomy and development
 homepage: http://ccdb.ucsd.edu/CCDBWebSite/sao.html
 is_obsolete: true
 replaced_by: go
+taxon:
+  id: NCBITaxon:9606
+  label: Homo sapiens
 activity_status: inactive
 github_date_added: 2015-08-21
 ---

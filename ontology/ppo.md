@@ -2,30 +2,29 @@
 layout: ontology_detail
 id: ppo
 title: Plant Phenology Ontology
-domain: phenotype
-tags:
-  - plant phenotypes
-description: An ontology for describing the phenology of individual plants and populations of plants, and for integrating plant phenological data across sources and scales.
-homepage: https://github.com/PlantPhenoOntology/PPO
 contact:
   email: rlwalls2008@gmail.com
-  label: Ramona Walls
   github: ramonawalls
+  label: Ramona Walls
   orcid: 0000-0001-8815-0078
-mailing_list: ppo-discuss@googlegroups.com
-tracker: https://github.com/PlantPhenoOntology/PPO/issues
+description: An ontology for describing the phenology of individual plants and populations of plants, and for integrating plant phenological data across sources and scales.
+domain: phenotype
+homepage: https://github.com/PlantPhenoOntology/PPO
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
+  url: http://creativecommons.org/licenses/by/3.0/
+mailing_list: ppo-discuss@googlegroups.com
+preferredPrefix: PPO
 products:
-  - id: ppo.owl
+- id: ppo.owl
+repository: https://github.com/PlantPhenoOntology/PPO
+tags:
+- plant phenotypes
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
+tracker: https://github.com/PlantPhenoOntology/PPO/issues
 activity_status: active
-repository: https://github.com/PlantPhenoOntology/PPO
-preferredPrefix: PPO
-github_date_added: 2016-12-30
 ---
 
 Plant phenology — the timing of plant life-cycle events, such as flowering or leafing-out — has cascading effects on multiple levels of biological organization, from individuals to ecosystems, and is crucial for understanding the links between climate and biological communities. Plant phenology data are collected and used by many different types of researchers, from plant breeders to ecosystem ecologists. Today, thanks to data digitization and aggregation initiatives, phenology monitoring networks, and the efforts of citizen scientists, more phenologically relevant data is available than ever before.  Unfortunately, combining these data in large-scale analyses remains prohibitively difficult, mostly because the individuals and organizations producing the data are using non-standardized terminologies and metrics during data collection and processing.  Lack of standardization remains particularly problematic for historical datasets, which are crucial for time-based analyses. 

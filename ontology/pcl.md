@@ -1,47 +1,46 @@
 ---
 layout: ontology_detail
 id: pcl
-title: "Provisional Cell Ontology"
+title: Provisional Cell Ontology
 contact:
   email: davidos@ebi.ac.uk
-  label: David Osumi-Sutherland
   github: dosumis
+  label: David Osumi-Sutherland
   orcid: 0000-0002-7073-9172
-description: "Cell types that are provisionally defined by experimental techniques such as single cell or single nucleus transcriptomics rather than a straightforward & coherent set of properties."
+dependencies:
+- id: bfo
+- id: chebi
+- id: cl
+- id: go
+- id: nbo
+- id: ncbitaxon
+- id: omo
+- id: pato
+- id: pr
+- id: ro
+- id: so
+- id: uberon
+description: Cell types that are provisionally defined by experimental techniques such as single cell or single nucleus transcriptomics rather than a straightforward & coherent set of properties.
 domain: phenotype
 homepage: https://github.com/obophenotype/provisional_cell_ontology
-products:
-  - id: pcl.owl
-  - id: pcl.obo
-  - id: pcl.json
-  - id: pcl-base.owl
-  - id: pcl-base.obo
-  - id: pcl-base.json
-  - id: pcl-full.owl
-  - id: pcl-full.obo
-  - id: pcl-full.json
-  - id: pcl-simple.owl
-  - id: pcl-simple.obo
-  - id: pcl-simple.json
-dependencies:
-  - id: pr
-  - id: go
-  - id: uberon
-  - id: ro
-  - id: pato
-  - id: ncbitaxon
-  - id: bfo
-  - id: cl
-  - id: omo
-  - id: nbo
-  - id: chebi
-  - id: so
-tracker: https://github.com/obophenotype/provisional_cell_ontology/issues
 license:
-  url: http://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-activity_status: active
-repository: https://github.com/obophenotype/provisional_cell_ontology
+  url: http://creativecommons.org/licenses/by/4.0/
 preferredPrefix: PCL
-github_date_added: 2022-01-25
+products:
+- id: pcl.owl
+- id: pcl.obo
+- id: pcl.json
+- id: pcl-base.owl
+- id: pcl-base.obo
+- id: pcl-base.json
+- id: pcl-full.owl
+- id: pcl-full.obo
+- id: pcl-full.json
+- id: pcl-simple.owl
+- id: pcl-simple.obo
+- id: pcl-simple.json
+repository: https://github.com/obophenotype/provisional_cell_ontology
+tracker: https://github.com/obophenotype/provisional_cell_ontology/issues
+activity_status: active
 ---

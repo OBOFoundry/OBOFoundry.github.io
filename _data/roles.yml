@@ -1,0 +1,158 @@
+- name: Registry Metadata Steward
+  open: true
+  commitment: 2-6 hours per month
+  requirements:
+    - love for metadata
+    - basic python
+    - community mindset
+  description: You are responsible for shepherding our registry
+    metadata according to our principles and SOPs, merge changes and generally
+    protect and guard them. This involves also facilitating the implementation of QC
+    checks.
+  responsibilities:
+    - Checking OBOFoundry.github.io at least weekly for metadata related issues and pull requests.
+    - "Tagging metadata related issues and pull requests with 'attn: OFOC call' if they need to be discussed by the Operations Committee. Provide instructions what needs to be discussed."
+    - Assessing pull requests to be in line with OBO SOPs. Unless covered by an explicit exception, metadata changes must be signed off by registered ontology contacts.
+    - Providing guidance for metadata-related issues and pull requests.
+    - Implement additional checks for metadata integrity if necessary.
+    - The Registry Metadata Steward is not required to fix issues with the metadata proactively, but may choose to do so at their own discretion.
+    - Provide monthly summary to Technical Working Group OBO Operations liaison for report to OBO Operations Committee.
+  people:
+    - name: matentzn
+      orcid: 0000-0002-7356-1779
+      status: lead
+- name: OBO NOR Dashboard maintainer
+  open: true
+  commitment: 2-6 hours per month
+  requirements:
+    - Basic knowledge of OBO dashboard
+    - Community mindset
+    - Stakeholder support
+  description:
+    You will be responsible for registering new ontologies at the OBO dashboard and helping their
+    owners pass them.
+  responsibilities:
+  people:
+    - name: matentzn
+      orcid: 0000-0002-7356-1779
+      status: lead
+- name: OBO Website Coordinator
+  open: true
+  commitment: 2-6 hours per month
+  requirements:
+    - Working knowledge of javascript
+    - Working knowledge of python
+    - "Nice to have: knowledge of jekyll and liquid (like jinja)"
+    - Should have technical background
+  description: You will be responsible for gatekeeping community changes to the website.
+  responsibilities:
+  people:
+    - name: matentzn
+      orcid: 0000-0002-7356-1779
+      status: lead
+- name: OBO Dashboard Maintainer
+  open: true
+  commitment: 2-10 hours per month
+  requirements:
+    - Basic knowledge of dashboard
+    - Social skills are a nice to have
+    - Infinite patience also helpful
+  description: Updating the OBO Dashboard once per month.
+    Fixing horrible bugs in OBO-Dashboard if they come up (should be rare).
+    Working with OBO Ops to find people for extending dashboard when new principles come along.
+  responsibilities:
+  people:
+    - name: matentzn
+      orcid: 0000-0002-7356-1779
+      status: lead
+- name: Technical Working Group OBO Operations liaison
+  open: true
+  commitment: 2 hours per month
+  requirements:
+    - Strong python skills
+    - Some level of pro-activity helpful
+    - Experience with ODK/docker
+  description:
+    Preparing a short report about all general developments in OBO Technical Working Group (TWG)
+    for the OBO Operations team meeting. You will go through pull requests and emails and summarize
+    in bullet points and report to OBO Ops.
+  responsibilities:
+  people:
+    - name: matentzn
+      orcid: 0000-0002-7356-1779
+      status: lead
+- name: PURL system maintainer
+  open: false
+  description: |
+    PURL config curation and PURL server maintenance.
+  responsibilities:
+  people:
+    - name: jamesaoverton
+      orcid: 0000-0001-5139-5557
+      status: lead
+      start: 2015-11
+- name: OMO metadata coordinator
+  open: false
+  description: |
+    You will be responsible for registering new ontologies at the OBO dashboard and helping their
+    owners pass them.
+  responsibilities:
+  people:
+    - name: zhengj2007
+      orcid: 0000-0002-2999-0103
+      status: lead
+    - name: matentzn
+      orcid: 0000-0002-7356-1779
+      status: lead
+- name: OBO Tools coordinator
+  open: false
+  description: |
+    Coordinating and hosting OBO Tools workshops at meetings and conferences such as ICBO, and
+     making sure tools align with OBO principles and support them, etc.)
+  responsibilities:
+  people:
+    - name: jamesaoverton
+      orcid: 0000-0001-5139-5557
+      status: lead
+      start: 2017
+- name: OBO Academy
+  open: false
+  description: |
+    Maintaining https://oboacademy.github.io/obook/ and organising OBO Tutorials.
+  responsibilities:
+  people:
+    - name: nicolevasilevsky
+      orcid: 0000-0001-5208-3432
+      status: lead
+      start: 2021-06
+    - name: matentzn
+      orcid: 0000-0002-7356-1779
+      status: lead
+      start: 2021-06
+    - name: jamesaoverton
+      orcid: 0000-0001-5139-5557
+      status: support
+      start: 2021-06
+    - name: beckyjackson
+      orcid: 0000-0003-4871-5569
+      status: support
+      start: 2021-06
+    - name: shawntanzk
+      orcid: 0000-0001-7258-9596
+      status: support
+      start: 2022
+    - name: bvarner-ebi
+      status: support
+      orcid: 0000-0002-1773-2692
+      start: 2022
+- name: OBO Issue Tracker Shepherd
+  open: false
+  description: |
+    Assigning incoming issues at https://github.com/OBOFoundry/OBOFoundry.github.io, tagging them, chasing them
+  responsibilities:
+    - "Tagging metadata related issues with 'attn: Technical Working WG' and 'metadata'."
+  people:
+    - name: nlharris
+      orcid: 0000-0001-6315-3707
+      status: lead
+      start: 2019-01
