@@ -30,7 +30,7 @@ products:
 - id: eco.owl
 - id: eco.obo
 publications:
-- id: https://pubmed.ncbi.nlm.nih.gov/34986598
+- id: https://www.ncbi.nlm.nih.gov/pubmed/34986598
   title: 'ECO: the Evidence and Conclusion Ontology, an update for 2022.'
   preferred: true
 - id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
