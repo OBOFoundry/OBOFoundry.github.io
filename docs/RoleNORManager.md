@@ -14,7 +14,7 @@ The NOR Manager has these basic duties:
 - The NOR Manager MUST actively listen to issues on the [OBO Issue Tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues).
 - When a new ontology request is received, and the wrong issue template was used, the NOR Manager must inform the NOR requestor to use the correct issue template and close the wrongly submitted issue.
 - When a valid NOR request is received the NOR Manager acknowledges the receipt with the following message:
-    ```
+    ```markdown
     Dear @GITHUBNAME,
     
     Thank you for your submission. The review will be executed as a two stage process. 
