@@ -285,6 +285,13 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
           #{{ page.issue_requested }}
         </a>
       </dd>
+      {% endif %} {% if page.pull_request_added %}
+      <dt>PR Added</dt>
+      <dd>
+        <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/pull/{{ page.pull_request_added }}">
+          #{{ page.pull_request_added }}
+        </a>
+      </dd>
       {% endif %} {% if page.dependencies %}
       <dt>Dependencies</dt>
       {% for x in page.dependencies %}
