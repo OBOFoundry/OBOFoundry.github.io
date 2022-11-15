@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: OBOOpsLogistics
 title: OBO Operations Committee Logistics
 ---
 
