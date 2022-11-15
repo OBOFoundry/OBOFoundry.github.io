@@ -277,6 +277,13 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
           >{{page.exampleClass}}</a
         >
       </dd>
+      {% endif %} {% if page.issue_requested %}
+      <dt>New Ontology Request</dt>
+      <dd>
+        <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/issue/{{ page.issue_requested }}">
+          {{ page.issue_requested }}
+        </a>
+      </dd>
       {% endif %} {% if page.pull_request_added %}
       <dt>PR Added</dt>
       <dd>

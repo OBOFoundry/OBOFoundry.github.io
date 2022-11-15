@@ -370,6 +370,11 @@
         ]
       }
     },
+    "issue_requested": {
+      "suggest": false,
+      "type": "integer",
+      "description": "This encodes the number of the issue on the OBO Foundry GitHub repository that was originally used to request this ontology."
+    },
     "pull_request_added": {
       "suggest": false,
       "type": "integer",
