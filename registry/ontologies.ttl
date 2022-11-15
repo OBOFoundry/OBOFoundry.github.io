@@ -1673,6 +1673,7 @@ _:b99   <http://www.w3.org/2000/01/rdf-schema#label>  "Charles Ettensohn" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology for experimental and other evidence statements." ;
         <http://purl.org/dc/elements/1.1/title>  "Evidence ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/34986598> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/30407590> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/25052702> ;
         <http://purl.org/dc/terms/1.1/theme>  "investigations" ;
@@ -1686,6 +1687,9 @@ _:b99   <http://www.w3.org/2000/01/rdf-schema#label>  "Charles Ettensohn" ;
 
 _:b100  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/34986598>
+        <http://purl.org/dc/elements/1.1/title>  "ECO: the Evidence and Conclusion Ontology, an update for 2022." .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/30407590>
         <http://purl.org/dc/elements/1.1/title>  "ECO, the Evidence & Conclusion Ontology: community standard for evidence information." .
