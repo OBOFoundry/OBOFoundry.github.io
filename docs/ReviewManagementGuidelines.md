@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: ReviewManagementGuidelines
 title: Review Management Guidelines
 ---
 

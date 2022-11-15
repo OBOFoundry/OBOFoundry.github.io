@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: EditorialWG
 title: Editorial Working Group
 ---
 

@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: PrincipleReviewProcess
 title: Principle Review Process
 ---
 

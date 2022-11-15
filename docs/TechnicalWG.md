@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: TechnicalWG
 title: Technical Working Group
 ---
 
