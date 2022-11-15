@@ -1,10 +1,10 @@
-## OBO Role: NOR Manager
+## OBO Role: New Ontology Request (NOR) Manager
 
-The NOR Manager has these basic duties:
+The New Ontology Request (NOR) Manager has these basic duties:
 
 1. Receiving `new ontology` requests on OBO and acknowledging the receipt
-2. Including the ontology into the OBO NOR Dashboard
-3. Supporting the NOR requestor to passing the OBO Dashboard
+2. Including the ontology into the OBO New Ontology Request (NOR) Dashboard
+3. Supporting the New Ontology requestor to passing the OBO Dashboard
 4. Assigning a provisional reviewer from the OBO Operations Committee
 5. Removing the accepted ontology from the Dashboard upon acceptance
 
@@ -12,7 +12,7 @@ The NOR Manager has these basic duties:
 ### Receiving `new ontology` requests on OBO and acknowledging the receipt
 
 - The NOR Manager MUST actively listen to issues on the [OBO Issue Tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues).
-- When a new ontology request is received, and the wrong issue template was used, the NOR Manager must inform the NOR requestor to use the correct issue template and close the wrongly submitted issue.
+- When a new ontology request is received, and the wrong issue template was used, the New Ontology Request (NOR) Manager must inform the NOR requestor to use the correct issue template and close the wrongly submitted issue.
 - When a valid NOR request is received the NOR Manager acknowledges the receipt with the following message:
     ```markdown
     Dear @GITHUBNAME,
@@ -35,9 +35,9 @@ The NOR Manager has these basic duties:
     Good luck.
     ```
 
-### Including the ontology into the OBO NOR Dashboard
+### Including the ontology into the OBO New Ontology Request (NOR) Dashboard
 
 
     After the dashboard is run, the OBO dashboard administrator informs the submitter about the need to fix the issues revealed by the dashboard, noting this is not part of the review itself, just a precursor, and that upon completion, a liaison will be assigned.
     At the next OBO Foundry Operations Committee conference call (hereafter, "Operations call"), a liaison is selected to be responsible for the issue. This liaison becomes familiar with the new ontology and rallies the appropriate people to provide feedback.
-    At the next Operations call after that one, the liaison presents the NOR to the OBO Foundry Operations Committee and answers questions. In most cases, the information provided will be sufficient to either grant or refuse the prefix request. In some cases, the committee may choose to postpone its decision to require some clarification and fixes from the submitter. The liaison MUST be present at the Operations call in order for the NOR case to be discussed. If the liaison does not participate for 2 consecutive Operations calls, the chair of the second call emails the liaison to request a statement confirming the ability to continue as liaison. If the liaison does not participate in 3 consecutive Operations calls and did not respond to the email above, a new liaison is assigned during that third call.
+    At the next Operations call after that one, the liaison presents the New Ontology Request (NOR) to the OBO Foundry Operations Committee and answers questions. In most cases, the information provided will be sufficient to either grant or refuse the prefix request. In some cases, the committee may choose to postpone its decision to require some clarification and fixes from the submitter. The liaison MUST be present at the Operations call in order for the NOR case to be discussed. If the liaison does not participate for 2 consecutive Operations calls, the chair of the second call emails the liaison to request a statement confirming the ability to continue as liaison. If the liaison does not participate in 3 consecutive Operations calls and did not respond to the email above, a new liaison is assigned during that third call.
