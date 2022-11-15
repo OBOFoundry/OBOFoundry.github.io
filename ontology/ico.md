@@ -26,22 +26,9 @@ usages:
 activity_status: active
 ---
 
-# Summary
-
 The Informed Consent Ontology (ICO) is an ontology that represents processes and information pertaining to obtaining informed consent in medical investigations.
 
-* Home: [https://github.com/ICO-ontology/ICO](https://github.com/ICO-ontology/ICO) 
-
-# Download
-
-Use the following URI to download this ontology
-
-* [http://purl.obolibrary.org/obo/ico.owl](http://purl.obolibrary.org/obo/ico.owl)
-* This should point to: [https://raw.githubusercontent.com/ICO-ontology/ICO/master/ico.owl](https://raw.githubusercontent.com/ICO-ontology/ICO/master/ico.owl)
-
-Note that the source ontology is an OWL file.  
-
-# Browsing
+## Browsing
 
 * Default browsing in Ontobee: [http://www.ontobee.org/ontology/ico](http://www.ontobee.org/ontology/ico)
 * Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/ICO](https://bioportal.bioontology.org/ontologies/ICO)

@@ -18,22 +18,22 @@ Textual definitions MUST be unique within an ontology (i.e. no two terms should 
 
 For terms lacking textual definitions, there should be evidence of implementation of a strategy to provide definitions for all remaining undefined terms. In lieu of textual definitions, there can be elucidations when the term can not be rigorously defined. Note that textual definitions can be programmatically generated from logical definitions, if available (see [http://oro.open.ac.uk/21501/1/](http://oro.open.ac.uk/21501/1/)). In addition, [Dead Simple Ontology Design Patterns](https://github.com/INCATools/dead_simple_owl_design_patterns) (DOSDPs) can be used to generate both textual and logical definitions. DOSDPs are design specifications, written in YAML format, that specify structured text definitions and logical definitions for groups of ontology terms. These are widely used in many OBO Foundry ontologies, such as Mondo and uPheno. For some example patterns, see [Mondo patterns](https://mondo.readthedocs.io/en/latest/editors-guide/patterns/) and [uPheno patterns](https://github.com/obophenotype/upheno/tree/master/src/patterns/dosdp-patterns).
 
-Textual definitions should agree with logical definitions and vice versa. This is important for two reasons: (1) Reasoners classify terms solely based on logical definitions, while humans predominantly classify terms based on textual definitions, and mismatches between the two can cause unexpected misclassification; and (2) Curators could create incorrect annotations. An example of mismatched definitions:
+Logical definitions, when present, should agree with textual definitions and vice versa. This is important for two reasons: (1) Reasoners classify terms solely based on logical definitions, while humans predominantly classify terms based on textual definitions, and mismatches between the two can cause unexpected misclassification; and (2) Curators could create incorrect annotations. An example of mismatched definitions:
 
 <pre>
-http://purl.obolibrary.org/obo/CL_0000017 spermatocyte
+http://purl.obolibrary.org/obo/OBI_0003243 blood assay datum
 
-Text definition: "A male germ cell that develops from spermatogonia."
-
-Logical definition (that mismatches the textual def): 
-= 'male germ cell' and ('capable of' some 'spermatocyte division')
+Text definition: "A data item that is the specified output of a blood assay."
 </pre>
 
-The logical definition could be revised to:
-
+Logical definition (that does not match the textual def): 
 <pre>
+= 'information content entity' and (is_specified_output_of some 'blood assay')
+</pre>
+
 Logical definition (that matches the textual def): 
-= ‘male germ cell’ and (‘develops from’ some 'spermatogonium')
+<pre>
+= 'data item' and (is_specified_output_of some 'blood assay')
 </pre>
 
 While both logical definitions can be used to define the class, one better fits with the textual definition than the other.
@@ -74,25 +74,24 @@ def: "Any complex formed of proteins that act in nucleotide-excision repair." [P
 
 ## Examples
 
-<i><b>Class</b></i>: reproductive shoot system
-<br> <i><b>Term IRI</b></i>: [http://purl.obolibrary.org/obo/PO_0025082](http://purl.obolibrary.org/obo/PO_0025082)
-<br> <i><b>Definition</b></i>: A shoot system (PO:0009006) in the sporophytic phase that has as part at least one sporangium (PO:0025094).
+<i><b>Class</b></i>: primary phloem sieve element
+<br> <i><b>Term IRI</b></i>: [http://purl.obolibrary.org/obo/PO_0025452](http://purl.obolibrary.org/obo/PO_0025452)
+<br> <i><b>Definition</b></i>: A sieve element (PO:0025406) that is part of a portion of primary phloem (PO:0006075).
 <br> <i><b>Logical definition</b></i>:
 
 ```
-intersectionOf: shoot system
-intersectionOf: participates_in some reproductive shoot system development stage
+'sieve element'
+ and ('part of' some 'primary phloem')
 ```
 
-<i><b>Class</b></i>: chromatography device
-<br> <i><b>Term IRI</b></i>: http://purl.obolibrary.org/obo/OBI_0000048
-<br> <i><b>Definition</b></i>: A device that facilitates the separation of mixtures. The function of a chromatography device involves passing a mixture dissolved in a "mobile phase" through a stationary phase, which separates the analyte to be measured from other molecules in the mixture and allows it to be isolated.
-<br> <i><b>Definition source</b></i>: http://en.wikipedia.org/wiki/Chromatography
+<i><b>Class</b></i>: ecto-epithelial cell
+<br> <i><b>Term IRI</b></i>: [http://purl.obolibrary.org/obo/CL_0002077](http://purl.obolibrary.org/obo/CL_0002077)
+<br> <i><b>Definition</b></i>: An epithelial cell derived from ectoderm.
 <br> <i><b>Logical definition</b></i>:
 
 ```
-intersectionOf: device
-intersectionOf: has_function some material separation function
+'epithelial cell'
+ and ('develops from' some 'ectodermal cell')
 ```
 
 ## Counter-Examples
