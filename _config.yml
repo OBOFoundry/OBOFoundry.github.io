@@ -290,6 +290,10 @@ ontologies:
   products:
   - id: bco.owl
     ontology_purl: http://purl.obolibrary.org/obo/bco.owl
+  publications:
+  - id: https://doi.org/10.1371/journal.pone.0089606
+    title: 'Semantics in Support of Biodiversity Knowledge Discovery: An Introduction
+      to the Biological Collections Ontology and Related Ontologies'
   repository: https://github.com/BiodiversityOntologies/bco
   tags:
   - biodiversity collections
@@ -427,9 +431,9 @@ ontologies:
   id: caro
   layout: ontology_detail
   license:
-    label: CC BY 3.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/3.0/
+    url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/caro.owl
   preferredPrefix: CARO
   products:
@@ -716,6 +720,10 @@ ontologies:
   products:
   - id: cido.owl
     ontology_purl: http://purl.obolibrary.org/obo/cido.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/36271389
+    title: 'A comprehensive update on CIDO: the community-based coronavirus infectious
+      disease ontology'
   repository: https://github.com/cido-ontology/cido
   title: Coronavirus Infectious Disease Ontology
   tracker: https://github.com/cido-ontology/cido/issues
@@ -933,6 +941,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/clao.owl
   - id: clao.obo
     ontology_purl: http://purl.obolibrary.org/obo/clao.obo
+  pull_request_added: 1337
   repository: https://github.com/luis-gonzalez-m/Collembola
   title: Collembola Anatomy Ontology
   tracker: https://github.com/luis-gonzalez-m/Collembola/issues
@@ -999,6 +1008,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/clyh.owl
   - id: clyh.obo
     ontology_purl: http://purl.obolibrary.org/obo/clyh.obo
+  pull_request_added: 1205
   repository: https://github.com/EBISPOT/clyh_ontology
   title: Clytia hemisphaerica Development and Anatomy Ontology
   tracker: https://github.com/EBISPOT/clyh_ontology/issues
@@ -1828,6 +1838,18 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/emapa.owl
   - id: emapa.obo
     ontology_purl: http://purl.obolibrary.org/obo/emapa.obo
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/9651497
+    title: An internet-accessible database of mouse developmental anatomy based on
+      a systematic nomenclature
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/23972281
+    title: 'EMAP/EMAPA ontology of mouse developmental anatomy: 2013 update'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/26208972
+    title: 'Mouse Anatomy Ontologies: Enhancements and Tools for Exploring and Integrating
+      Biomedical Data'
+  - id: https://doi.org/10.1016/B978-0-12-800043-4.00023-3
+    title: 'Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene
+      Expression Database for Mouse Development (GXD)'
   repository: https://github.com/obophenotype/mouse-anatomy-ontology
   taxon:
     id: NCBITaxon:10088
@@ -1860,7 +1882,7 @@ ontologies:
   - id: po
   - id: ro
   - id: uberon
-  depicted_by: /logos/envo.png
+  depicted_by: /images/envo.png
   description: An ontology of environmental systems, components, and processes.
   domain: environment
   homepage: http://environmentontology.org/
@@ -3142,6 +3164,10 @@ ontologies:
   products:
   - id: iceo.owl
     ontology_purl: http://purl.obolibrary.org/obo/iceo.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/35058462
+    title: ICEO, a biological ontology for representing and analyzing bacterial integrative
+      and conjugative elements
   repository: https://github.com/ontoice/ICEO
   title: Integrative and Conjugative Element Ontology
   tracker: https://github.com/ontoice/ICEO/issues
@@ -3200,6 +3226,9 @@ ontologies:
   products:
   - id: ido.owl
     ontology_purl: http://purl.obolibrary.org/obo/ido.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/34275487
+    title: The Infectious Disease Ontology in the age of COVID-19
   repository: https://github.com/infectious-disease-ontology/infectious-disease-ontology
   taxon:
     id: NCBITaxon:9606
@@ -6296,9 +6325,6 @@ ontologies:
   title: The Statistical Methods Ontology
   tracker: https://github.com/ISA-tools/stato/issues
 - activity_status: active
-  build:
-    method: owl2obo
-    source_url: https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl
   contact:
     email: allyson.lister@oerc.ox.ac.uk
     github: allysonlister
@@ -6321,6 +6347,8 @@ ontologies:
   products:
   - id: swo.owl
     ontology_purl: http://purl.obolibrary.org/obo/swo.owl
+  - id: swo.json
+    ontology_purl: http://purl.obolibrary.org/obo/swo.json
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/25068035
     title: 'The Software Ontology (SWO): a resource for reproducibility in biomedical
@@ -6378,6 +6406,66 @@ ontologies:
     - description: symptoms of human diseases
       url: http://www.disease-ontology.org/?id=DOID:0060164
     user: http://www.disease-ontology.org
+- activity_status: active
+  contact:
+    email: allyson.lister@oerc.ox.ac.uk
+    github: allysonlister
+    label: Allyson Lister
+    orcid: 0000-0002-7702-4495
+  description: A terminology for the skills necessary to make data FAIR and to keep
+    it FAIR.
+  domain: information
+  homepage: https://github.com/terms4fairskills/FAIRterminology
+  id: t4fs
+  issue_requested: 1520
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/t4fs.owl
+  preferredPrefix: T4FS
+  products:
+  - id: t4fs.owl
+    ontology_purl: http://purl.obolibrary.org/obo/t4fs.owl
+  - id: t4fs.obo
+    ontology_purl: http://purl.obolibrary.org/obo/t4fs.obo
+  - id: t4fs.json
+    ontology_purl: http://purl.obolibrary.org/obo/t4fs.json
+  - id: t4fs-community.owl
+    ontology_purl: http://purl.obolibrary.org/obo/t4fs-community.owl
+    title: This community view of T4FS makes the ontology available in OWL without
+      upper-level ontology (ULO) terms to give the user community a simpler view of
+      the term hierarchy.
+  - id: t4fs-community.obo
+    ontology_purl: http://purl.obolibrary.org/obo/t4fs-community.obo
+    title: This community view of T4FS makes the ontology available in OBO format
+      without upper-level ontology (ULO) terms to give the user community a simpler
+      view of the term hierarchy.
+  - id: t4fs-community.json
+    ontology_purl: http://purl.obolibrary.org/obo/t4fs-community.json
+    title: This community view of T4FS makes the ontology available in JSON format
+      without upper-level ontology (ULO) terms to give the user community a simpler
+      view of the term hierarchy.
+  publications:
+  - id: https://doi.org/10.5281/zenodo.4705219
+    title: 'EOSC Co-creation funded project 074: Delivery of a proof of concept for
+      terms4FAIRskills: Technical report'
+  pull_request_added: 2140
+  repository: https://github.com/terms4fairskills/FAIRterminology
+  title: terms4FAIRskills
+  tracker: https://github.com/terms4fairskills/FAIRterminology/issues
+  usages:
+  - description: Semaphora integrates terms4FAIRskills, allowing users to annotate
+      training materials with the ontology.
+    user: http://t4fs.esciencedatafactory.com/
+  - description: FAIRassist is designed to offer personalised guidance to all stakeholders
+      to enable the discovery of standards and repositories in FAIRsharing, which
+      should be used to make data FAIR, as well as to signpost FAIR assessment resources.
+    user: https://fairassist.org
+  - description: FAIRsFAIR Competence Centre (project wp6) will provide a platform
+      for training materials resulting from project training activities, annot
+    user: https://www.fairsfair.eu/
 - activity_status: active
   build:
     checkout: git clone https://github.com/phenoscape/taxrank.git

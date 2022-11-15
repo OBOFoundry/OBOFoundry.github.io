@@ -38,7 +38,7 @@ PRINCIPLES := $(wildcard principles/*.md)
 ### Main Tasks
 .PHONY: all pull_and_build test pull clean
 
-all: _config.yml registry/ontologies.ttl registry/publications.md registry/obo_context.jsonld registry/obo_prefixes.ttl
+all: _config.yml registry/ontologies.ttl registry/obo_context.jsonld registry/obo_prefixes.ttl
 
 pull:
 	git pull
@@ -51,8 +51,8 @@ integration-test: test valid-purl-report.txt
 
 # Remove and/or revert all targets to their repository versions:
 clean:
-	rm -Rf registry/ontologies.nt registry/ontologies.ttl registry/ontologies.yml registry/publications.md sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
-	git checkout _config.yml registry/ontologies.jsonld registry/ontologies.ttl registry/ontologies.yml registry/publications.md
+	rm -Rf registry/ontologies.nt registry/ontologies.ttl registry/ontologies.yml sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
+	git checkout _config.yml registry/ontologies.jsonld registry/ontologies.ttl registry/ontologies.yml
 
 
 ### Directories:
@@ -112,10 +112,6 @@ registry/ontologies.nt: registry/ontologies.jsonld
 
 registry/ontologies.ttl: registry/ontologies.nt
 	riot --base=http://purl.obolibrary.org/obo/ --out=ttl $< > $@.tmp && mv $@.tmp $@
-
-# Generate a list of primary publications
-registry/publications.md: registry/ontologies.yml
-	util/extract-publications.py $< $@
 
 ### Validate Configuration Files
 

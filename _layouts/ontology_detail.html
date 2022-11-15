@@ -52,44 +52,44 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
   <div class="col-md-8" style="padding-left: 0">
     {% assign stripped_content_size = content | strip | size %}
 
-    <div class="panel panel-default">
-      <div class="panel-body">
+    <div class="card" style="margin-bottom: 1.5em;">
+      <div class="card-body">
         <!-- TODO: each ontology should configure which browsers to be exposed in -->
-        <a href="https://ontobee.org/browser/index.php?o={{page.id}}">
-          <button type="button" class="btn btn-default">OntoBee</button>
+        <a href="https://ontobee.org/browser/index.php?o={{page.id}}" class="btn btn-outline-primary">
+          OntoBee
         </a>
         {% if page.aberowl_id %}
-        <a href="http://aber-owl.net/ontology/{{page.aberowl_id | upcase}}">
-          <button type="button" class="btn btn-default">AberOWL</button>
+        <a href="http://aber-owl.net/ontology/{{page.aberowl_id | upcase}}" class="btn btn-outline-primary">
+          AberOWL
         </a>
         {% else %}
-        <a href="http://aber-owl.net/ontology/{{page.id | upcase}}">
-          <button type="button" class="btn btn-default">AberOWL</button>
+        <a href="http://aber-owl.net/ontology/{{page.id | upcase}}" class="btn btn-outline-primary">
+          AberOWL
         </a>
         {% endif %}
-        <a href="http://www.ebi.ac.uk/ols/ontologies/{{page.id}}">
-          <button type="button" class="btn btn-default">OLS</button>
+        <a href="http://www.ebi.ac.uk/ols/ontologies/{{page.id}}" class="btn btn-outline-primary">
+          OLS
         </a>
         {% for b in page.browsers %}
-        <a href="{{b.url}}">
-          <button type="button" class="btn btn-default">{{b.label}}</button>
+        <a href="{{b.url}}" class="btn btn-outline-primary">
+          {{b.label}}
         </a>
         {% endfor %}
-        <a href="https://bioregistry.io/metaregistry/obofoundry/{{page.id}}">
-          <button type="button" class="btn btn-default">Bioregistry</button>
+        <a href="https://bioregistry.io/metaregistry/obofoundry/{{page.id}}" class="btn btn-outline-primary">
+         Bioregistry
         </a>
+        {% if stripped_content_size > 0 %}
+        <p class="card-text">{{ content }}</p>
+        {% endif %}
       </div>
-      {% if stripped_content_size > 0 %}
-      <div class="panel-body">{{ content }}</div>
-      {% endif %}
     </div>
 
     {% if page.publications %}
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Publications</h3>
+    <div class="card" style="margin-bottom: 1.5em;">
+      <div class="card-header">
+        Publications
       </div>
-      <div class="list-group">
+      <div class="list-group list-group-flush">
         {% for p in page.publications %}
         <div class="list-group-item">
           <a href="{{p.id}}">{{p.title}}</a>
@@ -103,11 +103,11 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
     {% endif %}
 
     {% if page.funded_by %}
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Funding</h3>
+    <div class="card" style="margin-bottom: 1.5em;">
+      <div class="card-header">
+        Funding
       </div>
-      <div class="list-group">
+      <div class="list-group list-group-flush">
         {% for p in page.funded_by %}
         <div class="list-group-item">
           <a href="{{ p.id }}">{{ p.title }}</a>
@@ -117,11 +117,11 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
     </div>
     {% endif %}
 
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Products</h3>
+    <div class="card" style="margin-bottom: 1.5em;">
+      <div class="card-header">
+        Products
       </div>
-      <table class="table table-striped">
+      <table class="table table-striped mb-0">
         <tbody>
           {% for p in page.products %}
           <tr>
@@ -139,12 +139,13 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         </tbody>
       </table>
     </div>
+
     {% if page.usages %}
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="panel-title">Usages</h3>
+    <div class="card" style="margin-bottom: 1.5em;">
+      <div class="card-header">
+        Usages
       </div>
-      <div class="list-group">
+      <div class="list-group list-group-flush">
         {% for p in page.usages %}
         <div class="list-group-item">
           <dl class="dl-horizontal" style="margin-bottom: 0">
@@ -255,11 +256,11 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
 
       <dt>Domain</dt>
       <dd>
-        <a href="/domain/{{page.domain}}.html">{{page.domain}}</a>
+        {{page.domain}}
       </dd>
 
       {% if page.mailing_list %}
-      <dt>Mail List</dt>
+      <dt>Mailing List</dt>
       <dd>
         <a href="{{page.mailing_list}}">{{page.mailing_list}}</a>
       </dd>
@@ -276,6 +277,13 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         <a href="http://purl.obolibrary.org/obo/{{page.exampleClass}}"
           >{{page.exampleClass}}</a
         >
+      </dd>
+      {% endif %} {% if page.issue_requested %}
+      <dt>New Ontology Request</dt>
+      <dd>
+        <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/issues/{{ page.issue_requested }}">
+          #{{ page.issue_requested }}
+        </a>
       </dd>
       {% endif %} {% if page.dependencies %}
       <dt>Dependencies</dt>
@@ -352,52 +360,40 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
     <div class="btn-group pull-right" role="group" aria-label="Source">
       <a
         href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/{{page.id}}.md"
+        class="btn btn-outline-primary"
+        data-toggle="tooltip"
+        title="See FAQ entry: How is metadata stored?"
+        data-html="true"
       >
-        <button
-          type="button"
-          data-toggle="tooltip"
-          title="See FAQ entry: How is metadata stored?"
-          data-html="true"
-          class="btn btn-default"
-        >
-          View
-        </button>
+        View
       </a>
       <a
         href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md"
-      >
-        <button
-          type="button"
+        type="button"
           data-toggle="tooltip"
           title="See FAQ entry: How I do edit my metadata?"
           data-html="true"
-          class="btn btn-default"
-        >
-          Edit
-        </button>
+          class="btn btn-outline-primary"
+      >
+        Edit
       </a>
       <a
         href="https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/{{page.id}}.yml"
+        data-toggle="tooltip"
+        title="See FAQ entry: How I do edit my PURL?"
+        data-html="true"
+        class="btn btn-outline-primary"
       >
-        <button
-          type="button"
-          data-toggle="tooltip"
-          title="See FAQ entry: How I do edit my PURL?"
-          data-html="true"
-          class="btn btn-default"
-        >
-          PURL
-        </button>
+          PURL Config
       </a>
-      <div>
-        Generated by:
-        <a href="{{site.repo_src}}_layouts/ontology_detail.html"
-          >_layouts/ontology_detail.html</a
-        ><br />
-        See
-        <a href="/faq/how-do-i-edit-metadata.html">metadata guide</a>
-      </div>
-      <!-- <button type="button" class="btn btn-default">Help</button> -->
+    </div>
+    <div>
+      Generated by:
+      <a href="{{site.repo_src}}_layouts/ontology_detail.html"
+        >_layouts/ontology_detail.html</a
+      ><br />
+      See
+      <a href="/faq/how-do-i-edit-metadata.html">metadata guide</a>
     </div>
   </div>
 </div>

@@ -12,7 +12,7 @@ There are currently three working groups. Each page lists their respective membe
 - [Technical Working Group](TechnicalWG.html)
 - [Outreach Working Group](OutreachWG.html)
 
-<table class="table">
+<table class="table table-striped table-hover">
 <thead>
 <tr>
     <th role="columnheader">Name</th>
@@ -42,21 +42,85 @@ New members: follow the instructions on the [onboarding doc](https://docs.google
 
 ## Alumni
 
-<table class="table">
+<table class="table table-striped table-hover">
 <thead>
 <tr>
     <th role="columnheader">Name</th>
     <th role="columnheader">ORCID</th>
+    <th role="columnheader">GitHub</th>
+    <th role="columnheader">Departed</th>
     <th role="columnheader">Note</th>
 </tr>
 </thead>
 <tbody>
-{% for member in site.data.alumni.members %}
+{% assign alumni_members = site.data.alumni.members | sort: "name" %}
+{% for member in alumni_members %}
 <tr>
     <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
-    <td>{% if member.orcid %}<a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a>{% endif %}</td>
+    <td><a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a></td>
+    <td>{% if member.github %}<a href="https://github.com/{{ member.github }}">{{ member.github }}</a>{% endif %}</td>
+    <td>{% if member.departed %}{{ member.departed }}{% endif %}</td>
     <td>{% if member.note %}{{ member.note }}{% endif %}</td>
 </tr>
 {% endfor %}
 </tbody>
 </table>
+
+## Roles
+
+{% for role in site.data.roles %}
+
+### {{ role.name }}
+
+{{ role.description }}
+
+{% if role.open %}
+<blockquote>This role is open to new members.</blockquote>
+{% endif %}
+
+{% if role.requirements %}
+
+#### Requirements
+
+<ol>
+{% for requirement in role.requirements %}
+    <li>{{ requirement }}</li>
+{% endfor %}
+</ol>
+{% endif %}
+
+{% if role.responsibilities %}
+
+#### Responsibilities
+
+<ol>
+{% for responsibility in role.responsibilities %}
+    <li>{{ responsibility }}</li>
+{% endfor %}
+</ol>
+{% endif %}
+
+#### People
+
+<table class="table">
+<thead>
+<tr>
+<th>Name</th>
+<th>ORCID</th>
+<th>Status</th>
+<th>Start</th>
+</tr>
+</thead>
+<tbody>
+{% for person in role.people %}
+<tr>
+    <td>{{ person.name }}</td>
+    <td><a href="https://orcid.org/{{ person.orcid }}">{{ person.orcid }}</a></td>
+    <td>{{ person.status }}</td>
+    <td>{{ person.start }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+{% endfor %}
