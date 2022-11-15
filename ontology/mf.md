@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0002-3469-4923
 description: The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning.
 domain: health
+github_date_added: 2015-07-28
 homepage: https://github.com/jannahastings/mental-functioning-ontology
 license:
   label: CC BY 3.0

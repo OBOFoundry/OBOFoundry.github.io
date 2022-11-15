@@ -14,6 +14,7 @@ contact:
 depicted_by: https://github.com/pombase/website/blob/master/src/assets/FYPO_logo_tiny.png
 description: FYPO is a formal ontology of phenotypes observed in fission yeast.
 domain: phenotype
+github_date_added: 2015-07-29
 homepage: https://github.com/pombase/fypo
 license:
   label: CC BY 4.0

@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-5379-5359
 description: An application ontology to represent genetic susceptibility to a specific disease, adverse event, or a pathological process.
 domain: investigations
+github_date_added: 2015-07-28
 homepage: https://github.com/linikujp/OGSF
 license:
   label: CC BY 3.0

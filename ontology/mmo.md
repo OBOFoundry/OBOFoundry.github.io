@@ -16,6 +16,7 @@ contact:
   orcid: 0000-0002-6443-9376
 description: 'A representation of the variety of methods used to make clinical and phenotype measurements. '
 domain: health
+github_date_added: 2015-07-28
 homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000
 license:
   label: CC0 1.0

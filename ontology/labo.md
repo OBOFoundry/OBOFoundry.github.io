@@ -16,6 +16,7 @@ dependencies:
 - id: opmi
 description: LABO is an ontology of informational entities formalizing clinical laboratory tests prescriptions and reporting documents.
 domain: information
+github_date_added: 2019-08-29
 homepage: https://github.com/OpenLHS/LABO
 license:
   label: CC BY 4.0

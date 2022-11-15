@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0001-8910-9851
 description: An ontology representing the disease transmission process during which the pathogen is transmitted directly or indirectly from its natural reservoir, a susceptible host or source to a new host.
 domain: health
+github_date_added: 2015-07-28
 homepage: https://github.com/DiseaseOntology/PathogenTransmissionOntology
 license:
   label: CC0 1.0

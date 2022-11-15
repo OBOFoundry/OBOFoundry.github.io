@@ -33,6 +33,7 @@ dependencies:
 depicted_by: http://geneontology.org/assets/go-logo-icon.mini.png
 description: An ontology for describing the function of genes and gene products
 domain: biological systems
+github_date_added: 2015-07-28
 homepage: http://geneontology.org/
 in_foundry_order: 1
 integration_server: http://build.berkeleybop.org/view/GO

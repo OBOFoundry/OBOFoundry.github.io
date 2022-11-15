@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-8457-6693
 description: An ontology for Major Histocompatibility Complex (MHC) restriction in experiments
 domain: chemistry and biochemistry
+github_date_added: 2015-09-17
 homepage: https://github.com/IEDB/MRO
 license:
   label: CC BY 3.0

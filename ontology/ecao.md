@@ -17,6 +17,7 @@ dependencies:
 - id: uberon
 description: An ontology for the development and anatomy of the different species of the phylum Echinodermata (NCBITaxon:7586).
 domain: anatomy and development
+github_date_added: 2020-05-06
 homepage: https://github.com/echinoderm-ontology/ecao_ontology
 license:
   label: CC BY 3.0

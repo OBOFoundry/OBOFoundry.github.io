@@ -14,6 +14,7 @@ contact:
   orcid: 0000-0001-6330-7526
 description: A structured controlled vocabulary for the anatomy of fungi.
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: https://github.com/obophenotype/fungal-anatomy-ontology/
 license:
   label: CC0 1.0

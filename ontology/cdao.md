@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0002-8688-6599
 description: a formalization of concepts and relations relevant to evolutionary comparative analysis
 domain: organisms
+github_date_added: 2015-07-28
 homepage: https://github.com/evoinfo/cdao
 license:
   label: CC0 1.0

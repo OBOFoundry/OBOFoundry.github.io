@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0002-0045-7698
 description: PSI-MOD is an ontology consisting of terms that describe protein chemical modifications
 domain: chemistry and biochemistry
+github_date_added: 2015-07-28
 homepage: http://www.psidev.info/MOD
 license:
   label: CC BY 4.0

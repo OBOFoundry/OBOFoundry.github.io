@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0001-5985-7429
 description: CHMO, the chemical methods ontology, describes methods used to
 domain: health
+github_date_added: 2015-07-28
 homepage: https://github.com/rsc-ontologies/rsc-cmo
 license:
   label: CC BY 4.0

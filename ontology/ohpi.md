@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-5159-414X
 description: OHPI is a community-driven ontology of host-pathogen interactions (OHPI) and represents the virulence factors (VFs) and how the mutants of VFs in the Victors database become less virulence inside a host organism or host cells. It is developed to represent manually curated HPI knowledge available in the PHIDIAS resource.
 domain: biological systems
+github_date_added: 2019-07-22
 homepage: https://github.com/OHPI/ohpi
 license:
   label: CC BY 4.0

@@ -16,6 +16,7 @@ domain: information
 funded_by:
 - id: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1356381
   title: NSF ABI-1356381
+github_date_added: 2019-01-11
 homepage: https://github.com/SpeciesFileGroup/nomen
 label: NOMEN
 license:

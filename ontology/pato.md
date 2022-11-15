@@ -17,6 +17,7 @@ contact:
   orcid: 0000-0002-2061-091X
 description: An ontology of phenotypic qualities (properties, attributes or characteristics)
 domain: phenotype
+github_date_added: 2015-07-28
 homepage: https://github.com/pato-ontology/pato/
 in_foundry_order: 1
 jobs:

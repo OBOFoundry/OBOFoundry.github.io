@@ -14,6 +14,7 @@ contact:
   orcid: 0000-0002-2244-7917
 description: A structured controlled vocabulary of the anatomy and development of the Zebrafish
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
 in_foundry_order: 1
 license:

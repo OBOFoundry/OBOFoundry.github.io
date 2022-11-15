@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0001-9107-0714
 description: An application ontology to formalize annotation of phylogenetic data.
 domain: information
+github_date_added: 2015-07-28
 homepage: http://www.evoio.org/wiki/MIAPA
 license:
   label: CC0 1.0

@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0002-4532-2703
 description: A structured controlled vocabulary of the anatomy of the slime-mold Dictyostelium discoideum
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: http://dictybase.org/
 license:
   label: CC0 1.0

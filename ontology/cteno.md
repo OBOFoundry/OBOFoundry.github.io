@@ -17,6 +17,7 @@ dependencies:
 - id: uberon
 description: An anatomical and developmental ontology for ctenophores (Comb Jellies)
 domain: anatomy and development
+github_date_added: 2015-07-29
 homepage: https://github.com/obophenotype/ctenophore-ontology
 jobs:
 - id: https://travis-ci.org/obophenotype/ctenophore-ontology

@@ -10,6 +10,7 @@ contact:
 depicted_by: https://avatars2.githubusercontent.com/u/12973154?s=200&v=4
 description: An ontology for representing treatment of disease and diagnosis and on carcinomas and other pathological entities
 domain: health
+github_date_added: 2015-07-29
 homepage: https://github.com/OGMS/ogms
 license:
   label: CC BY 4.0

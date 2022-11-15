@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0001-5472-917X
 description: A structured controlled vocabulary for the phenotypes of Ascomycete fungi
 domain: phenotype
+github_date_added: 2015-07-28
 homepage: http://www.yeastgenome.org/
 license:
   label: CC BY 4.0

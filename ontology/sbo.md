@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0003-0705-9809
 description: Terms commonly used in Systems Biology, and in particular in computational modeling.
 domain: chemistry and biochemistry
+github_date_added: 2015-07-28
 homepage: http://www.ebi.ac.uk/sbo/
 license:
   label: Artistic License 2.0

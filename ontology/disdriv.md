@@ -15,6 +15,7 @@ contact:
   orcid: 0000-0001-8910-9851
 description: Ontology for drivers and triggers of human diseases, built to classify ExO ontology exposure stressors. An application ontology. Built in collaboration with EnvO, ExO, ECTO and ChEBI.
 domain: health
+github_date_added: 2021-11-05
 homepage: http://www.disease-ontology.org
 license:
   label: CC0 1.0

@@ -14,6 +14,7 @@ contact:
 depicted_by: http://sequenceontology.org/img/so_icon.png
 description: A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.
 domain: chemistry and biochemistry
+github_date_added: 2015-07-28
 homepage: http://www.sequenceontology.org/
 license:
   label: CC BY 4.0

@@ -11,6 +11,7 @@ contact:
   label: SEP developers via the PSI and MSI mailing lists
 description: A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments.
 domain: investigations
+github_date_added: 2015-07-28
 homepage: http://psidev.info/index.php?q=node/312
 is_obsolete: true
 page: http://psidev.info/index.php?q=node/312

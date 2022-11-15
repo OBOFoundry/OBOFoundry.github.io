@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-8688-6599
 description: Comprehensive hierarchy of extinct and extant vertebrate taxa.
 domain: organisms
+github_date_added: 2015-07-28
 homepage: https://github.com/phenoscape/vertebrate-taxonomy-ontology
 license:
   label: CC0 1.0

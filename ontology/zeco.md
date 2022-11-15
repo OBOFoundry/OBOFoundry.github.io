@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0002-9900-7880
 description: Experimental conditions applied to zebrafish, developed to facilitate experiment condition annotation at ZFIN
 domain: environment
+github_date_added: 2016-07-28
 homepage: https://github.com/ybradford/zebrafish-experimental-conditions-ontology
 license:
   label: CC BY 3.0

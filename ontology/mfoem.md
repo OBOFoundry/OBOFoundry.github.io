@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0002-3469-4923
 description: An ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings.
 domain: health
+github_date_added: 2015-07-28
 homepage: https://github.com/jannahastings/emotion-ontology
 license:
   label: CC BY 3.0

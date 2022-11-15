@@ -12,6 +12,7 @@ contact:
   label: Jonathan Bard
 description: AEO is an ontology of anatomical structures that expands CARO, the Common Anatomy Reference Ontology
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: https://github.com/obophenotype/human-developmental-anatomy-ontology/
 license:
   label: CC BY 4.0

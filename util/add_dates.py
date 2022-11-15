@@ -52,7 +52,7 @@ def update_markdown(path: pathlib.Path, date: datetime.datetime) -> None:
     with path.open() as file:
         lines = [line.rstrip("\n") for line in file]
 
-    if any(line.startswith("added:") for line in lines):
+    if any(line.startswith("github_date_added:") for line in lines):
         # No need to add duplicates
         return
 
@@ -63,7 +63,7 @@ def update_markdown(path: pathlib.Path, date: datetime.datetime) -> None:
         print("---", file=file)
         for line in lines[1:idx]:
             print(line, file=file)
-        print("added:", date.strftime("%Y-%m-%d"), file=file)
+        print("github_date_added:", date.strftime("%Y-%m-%d"), file=file)
         print("---", file=file)
         for line in lines[idx + 1 :]:
             print(line, file=file)

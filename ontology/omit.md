@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0003-2408-2883
 description: Ontology to establish data exchange standards and common data elements in the microRNA (miR) domain
 domain: chemistry and biochemistry
+github_date_added: 2015-07-29
 homepage: http://omit.cis.usouthal.edu/
 in_foundry: false
 license:

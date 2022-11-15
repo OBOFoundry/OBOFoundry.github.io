@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0002-4532-2703
 description: A structured controlled vocabulary of phenotypes of the slime-mould <i>Dictyostelium discoideum</i>.
 domain: anatomy and development
+github_date_added: 2015-08-21
 homepage: http://dictybase.org/
 license:
   label: CC0 1.0

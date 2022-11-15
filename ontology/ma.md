@@ -14,6 +14,7 @@ contact:
   orcid: 0000-0002-0956-8634
 description: A structured controlled vocabulary of the adult anatomy of the mouse (Mus).
 domain: anatomy and development
+github_date_added: 2015-07-29
 homepage: https://github.com/obophenotype/mouse-anatomy-ontology
 license:
   label: CC BY 4.0

@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0002-8151-7479
 description: A structured controlled vocabulary of the anatomy of <i>Caenorhabditis elegans</i>.
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology
 license:
   label: CC BY 4.0

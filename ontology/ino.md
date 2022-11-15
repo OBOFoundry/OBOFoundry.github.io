@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0001-9189-9661
 description: An ontology of interactions and interaction networks
 domain: biological systems
+github_date_added: 2018-03-10
 homepage: https://github.com/INO-ontology/ino
 license:
   label: CC BY 3.0

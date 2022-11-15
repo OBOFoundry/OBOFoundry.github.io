@@ -10,6 +10,7 @@ contact:
   email: henrich@embl.de
   label: Thorsten Heinrich
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: http://4dx.embl.de/4DXpress
 is_obsolete: true
 products:
@@ -19,5 +20,4 @@ taxon:
   id: NCBITaxon:33213
   label: Bilateria
 activity_status: inactive
-github_date_added: 2015-07-28
 ---

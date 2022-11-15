@@ -7,6 +7,7 @@ contact:
   label: Pantelis Topalis
 description: An application ontology for use with miRNA databases.
 domain: chemistry and biochemistry
+github_date_added: 2015-07-28
 homepage: http://code.google.com/p/mirna-ontology/
 is_obsolete: true
 license:
@@ -15,7 +16,6 @@ license:
 products:
 - id: mirnao.owl
 activity_status: inactive
-github_date_added: 2015-07-28
 ---
 
 microRNA Ontology (miRNAO) is an application ontology and it has been developed in order to drive miRNA databases.

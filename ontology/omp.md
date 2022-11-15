@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0001-9016-2684
 description: An ontology of phenotypes covering microbes
 domain: phenotype
+github_date_added: 2015-08-21
 homepage: http://microbialphenotypes.org
 license:
   label: CC BY 3.0

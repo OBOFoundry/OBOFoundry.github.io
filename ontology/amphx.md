@@ -15,6 +15,7 @@ dependencies:
 - id: uberon
 description: An ontology for the development and anatomy of Amphioxus (Branchiostoma lanceolatum).
 domain: anatomy and development
+github_date_added: 2020-04-21
 homepage: https://github.com/EBISPOT/amphx_ontology
 license:
   label: CC BY 3.0

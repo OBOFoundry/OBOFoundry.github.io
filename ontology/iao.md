@@ -13,6 +13,7 @@ contact:
 depicted_by: https://avatars0.githubusercontent.com/u/13591168?v=3&s=200
 description: An ontology of information entities.
 domain: information
+github_date_added: 2015-07-28
 homepage: https://github.com/information-artifact-ontology/IAO/
 license:
   label: CC BY 4.0

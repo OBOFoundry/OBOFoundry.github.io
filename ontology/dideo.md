@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0003-1834-3856
 description: The Potential Drug-drug Interaction and Potential Drug-drug Interaction Evidence Ontology
 domain: chemistry and biochemistry
+github_date_added: 2015-08-21
 homepage: https://github.com/DIDEO/DIDEO
 license:
   label: CC BY 4.0

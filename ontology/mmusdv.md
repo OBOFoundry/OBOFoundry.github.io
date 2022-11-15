@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0002-9415-5104
 description: Life cycle stages for Mus Musculus
 domain: anatomy and development
+github_date_added: 2015-08-21
 homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/MmusDv
 license:
   label: CC BY 3.0

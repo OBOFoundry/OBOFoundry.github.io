@@ -23,6 +23,7 @@ contact:
   orcid: 0000-0003-4606-0597
 description: Standard terms for annotating mammalian phenotypic data.
 domain: phenotype
+github_date_added: 2015-07-28
 homepage: http://www.informatics.jax.org/searches/MP_form.shtml
 jobs:
 - id: http://build.berkeleybop.org/job/build-mp-edit

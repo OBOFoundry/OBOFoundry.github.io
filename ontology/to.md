@@ -20,6 +20,7 @@ contact:
 depicted_by: http://planteome.org/sites/default/files/garland_logo.PNG
 description: A controlled vocabulary to describe phenotypic traits in plants.
 domain: phenotype
+github_date_added: 2015-07-28
 homepage: http://browser.planteome.org/amigo
 jobs:
 - id: https://travis-ci.org/Planteome/plant-trait-ontology

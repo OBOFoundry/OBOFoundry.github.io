@@ -7,6 +7,7 @@ contact:
   label: Maria Herrero
 description: A formal represention for drug-drug interactions knowledge.
 domain: health
+github_date_added: 2015-08-21
 homepage: http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto
 is_obsolete: true
 license:

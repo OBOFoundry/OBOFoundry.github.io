@@ -17,6 +17,7 @@ contact:
 depicted_by: http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif
 description: Morphological and physiological measurement records generated from clinical and model organism research and health programs.
 domain: health
+github_date_added: 2015-07-28
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
 license:
   label: CC0 1.0

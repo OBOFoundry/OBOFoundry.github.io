@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-8688-6599
 description: An ontology covering the taxonomy of teleosts (bony fish)
 domain: organisms
+github_date_added: 2015-07-28
 homepage: https://github.com/phenoscape/teleost-taxonomy-ontology
 license:
   label: CC0 1.0

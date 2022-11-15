@@ -18,6 +18,7 @@ contact:
 depicted_by: http://www.disease-ontology.org/media/images/DO_logo.jpg
 description: An ontology for describing the classification of human diseases organized by etiology.
 domain: health
+github_date_added: 2015-07-28
 homepage: http://www.disease-ontology.org
 in_foundry_order: 1
 license:

@@ -16,6 +16,7 @@ dependencies:
 - id: uberon
 description: PLANA, the planarian anatomy ontology, encompasses the anatomy and life cycle stages for both __Schmidtea mediterranea__ biotypes.
 domain: anatomy and development
+github_date_added: 2017-02-07
 homepage: https://github.com/obophenotype/planaria-ontology
 jobs:
 - id: https://travis-ci.org/obophenotype/planaria-ontology

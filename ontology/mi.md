@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0002-8429-8793
 description: A structured controlled vocabulary for the annotation of experiments concerned with protein-protein interactions.
 domain: investigations
+github_date_added: 2015-07-28
 homepage: https://github.com/HUPO-PSI/psi-mi-CV
 license:
   label: CC BY 4.0

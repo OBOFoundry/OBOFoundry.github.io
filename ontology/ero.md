@@ -11,6 +11,7 @@ contact:
 description: An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens.
 documentation: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
 domain: information
+github_date_added: 2015-07-28
 homepage: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
 is_obsolete: true
 license:

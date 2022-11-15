@@ -11,6 +11,7 @@ contact:
   orcid: 0000-0003-3162-7490
 description: Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology
 is_obsolete: true
 license:
@@ -26,7 +27,6 @@ taxon:
   id: NCBITaxon:32443
   label: Teleostei
 activity_status: inactive
-github_date_added: 2015-07-28
 ---
 
 Multispecies fish anatomy ontology. Originally seeded from ZFA, but intended to cover terms relevant to other taxa.

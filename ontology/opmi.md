@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0001-9189-9661
 description: The Ontology of Precision Medicine and Investigation (OPMI) aims to ontologically represent and standardize various entities and relations associated with precision medicine and related investigations at different conditions.
 domain: investigations
+github_date_added: 2018-08-30
 homepage: https://github.com/OPMI/opmi
 license:
   label: CC BY 4.0

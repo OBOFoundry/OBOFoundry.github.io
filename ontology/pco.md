@@ -22,6 +22,7 @@ dependencies:
 - id: ro
 description: An ontology about groups of interacting organisms such as populations and communities
 domain: environment
+github_date_added: 2015-07-28
 homepage: https://github.com/PopulationAndCommunityOntology/pco
 jobs:
 - id: https://travis-ci.org/PopulationAndCommunityOntology/pco

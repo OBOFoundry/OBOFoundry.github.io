@@ -21,6 +21,7 @@ dependencies:
 - id: zfa
 description: The Zebrafish Phenotype Ontology formally defines all phenotypes of the Zebrafish model organism.
 domain: phenotype
+github_date_added: 2019-01-02
 homepage: https://github.com/obophenotype/zebrafish-phenotype-ontology
 jobs:
 - id: https://travis-ci.org/obophenotype/zebrafish-phenotype-ontology

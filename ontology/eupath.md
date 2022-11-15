@@ -10,6 +10,7 @@ contact:
 depicted_by: https://raw.githubusercontent.com/EuPathDB/communitysite/master/assets/images/VEuPathDB-logo-s.png
 description: An ontology is developed to support Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org).
 domain: organisms
+github_date_added: 2018-01-02
 homepage: https://github.com/VEuPathDB-ontology/VEuPathDB-ontology
 license:
   label: CC BY 4.0

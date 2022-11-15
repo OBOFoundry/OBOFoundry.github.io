@@ -15,6 +15,7 @@ dependencies:
 - id: ro
 description: The Plant Stress Ontology describes biotic and abiotic stresses that a plant may encounter.
 domain: agriculture
+github_date_added: 2020-05-14
 homepage: https://github.com/Planteome/plant-stress-ontology
 jobs:
 - id: https://travis-ci.org/Planteome/plant-stress-ontology

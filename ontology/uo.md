@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0002-2061-091X
 description: Metrical units for use in conjunction with PATO
 domain: phenotype
+github_date_added: 2015-07-29
 homepage: https://github.com/bio-ontology-research-group/unit-ontology
 in_foundry: false
 license:

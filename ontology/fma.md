@@ -11,6 +11,7 @@ contact:
   label: Onard Mejino
 description: This is currently a slimmed down version of FMA
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: http://si.washington.edu/projects/fma
 license:
   label: CC BY 3.0

@@ -16,6 +16,7 @@ contact:
 depicted_by: https://svn.code.sf.net/p/obi/code/trunk/web/htdocs/images/obi-lotext.png
 description: An integrated ontology for the description of life-science and clinical investigations
 domain: investigations
+github_date_added: 2015-07-28
 homepage: http://obi-ontology.org
 in_foundry_order: 1
 integration_server: http://build.berkeleybop.org/job/build-obi/

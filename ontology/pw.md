@@ -17,6 +17,7 @@ contact:
 depicted_by: http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif
 description: A controlled vocabulary for annotating gene products to pathways.
 domain: biological systems
+github_date_added: 2015-07-28
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
 license:
   label: CC BY 4.0

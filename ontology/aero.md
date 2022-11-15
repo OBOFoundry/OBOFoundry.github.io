@@ -11,6 +11,7 @@ contact:
   orcid: 0000-0002-9551-6370
 description: The Adverse Event Reporting Ontology (AERO) is an ontology aimed at supporting clinicians at the time of data entry, increasing quality and accuracy of reported adverse events
 domain: health
+github_date_added: 2015-07-28
 homepage: http://purl.obolibrary.org/obo/aero
 is_obsolete: true
 license:
@@ -19,7 +20,6 @@ license:
 products:
 - id: aero.owl
 activity_status: inactive
-github_date_added: 2015-07-28
 ---
 
 The Adverse Event Reporting Ontology (AERO) is an ontology aimed at supporting clinicians at the time of data entry, increasing quality and accuracy of reported adverse events.

@@ -7,11 +7,11 @@ contact:
   label: Fahim Imam
 description: Neuronal cell types
 domain: anatomy and development
+github_date_added: 2015-08-21
 homepage: http://neuinfo.org/
 is_obsolete: true
 replaced_by: cl
 activity_status: inactive
-github_date_added: 2015-08-21
 ---
 
 Cell types from NIFSTD

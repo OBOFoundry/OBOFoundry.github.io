@@ -17,6 +17,7 @@ dependencies:
 - id: uberon
 description: The Clytia hemisphaerica Development and Anatomy Ontology (CLYH) describes the anatomical and developmental features of the Clytia hemisphaerica life cycle.
 domain: anatomy and development
+github_date_added: 2020-05-06
 homepage: https://github.com/EBISPOT/clyh_ontology
 license:
   label: CC BY 3.0

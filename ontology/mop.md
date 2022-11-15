@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0001-5985-7429
 description: Processes at the molecular level
 domain: chemistry and biochemistry
+github_date_added: 2015-08-17
 homepage: https://github.com/rsc-ontologies/rxno
 license:
   label: CC BY 4.0

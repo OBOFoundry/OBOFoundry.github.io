@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0001-8034-7685
 description: An application ontology designed to annotate next-generation sequencing experiments performed on RNA.
 domain: investigations
+github_date_added: 2019-06-20
 homepage: http://kim.bio.upenn.edu/software/ornaseq.shtml
 license:
   label: CC BY 4.0

@@ -21,6 +21,7 @@ dependencies:
 depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/maxo-logos/maxo_logo_black-banner.png
 description: Medical Action Ontology is an ontology...
 domain: health
+github_date_added: 2020-02-12
 homepage: https://github.com/monarch-initiative/MAxO
 jobs:
 - id: https://travis-ci.org/monarch-initiative/MAxO

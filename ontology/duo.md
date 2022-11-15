@@ -16,6 +16,7 @@ dependencies:
 - id: iao
 description: DUO is an ontology which represent data use conditions.
 domain: information
+github_date_added: 2017-01-24
 homepage: https://github.com/EBISPOT/DUO
 jobs:
 - id: https://travis-ci.org/EBISPOT/DUO

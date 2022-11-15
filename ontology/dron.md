@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0002-9881-1017
 description: An ontology to support comparative effectiveness researchers studying claims data.
 domain: health
+github_date_added: 2015-07-28
 homepage: https://github.com/ufbmi/dron
 license:
   label: CC BY 3.0

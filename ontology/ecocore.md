@@ -24,6 +24,7 @@ dependencies:
 - id: uberon
 description: Ecocore is a community ontology for the concise and controlled description of ecological traits of organisms.
 domain: environment
+github_date_added: 2017-08-17
 homepage: https://github.com/EcologicalSemantics/ecocore
 jobs:
 - id: https://travis-ci.org/EcologicalSemantics/ecocore

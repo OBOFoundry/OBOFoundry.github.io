@@ -16,6 +16,7 @@ dependencies:
 - id: sbo
 description: PROCO covers process chemistry, the chemical field concerned with scaling up laboratory syntheses to commercially viable processes.
 domain: chemistry and biochemistry
+github_date_added: 2022-04-19
 homepage: https://github.com/proco-ontology/PROCO
 license:
   label: CC BY 4.0

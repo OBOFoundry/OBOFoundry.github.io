@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0002-9611-1279
 description: XAO represents the anatomy and development of the African frogs Xenopus laevis and tropicalis.
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: http://www.xenbase.org/anatomy/xao.do?method=display
 in_foundry_order: 1
 license:

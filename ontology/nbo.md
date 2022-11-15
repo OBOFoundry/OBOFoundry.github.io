@@ -16,6 +16,7 @@ contact:
   orcid: 0000-0002-2061-091X
 description: An ontology of human and animal behaviours and behavioural phenotypes
 domain: biological systems
+github_date_added: 2015-07-28
 homepage: https://github.com/obo-behavior/behavior-ontology/
 license:
   label: CC BY 3.0

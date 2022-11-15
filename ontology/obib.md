@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-2999-0103
 description: An ontology built for annotation and modeling of biobank repository and biobanking administration
 domain: investigations
+github_date_added: 2015-08-17
 homepage: https://github.com/biobanking/biobanking
 license:
   label: CC BY 4.0

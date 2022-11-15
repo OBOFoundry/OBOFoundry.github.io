@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0002-5111-7263
 description: A structured controlled vocabulary of mutant and transgenic mouse pathology phenotypes
 domain: health
+github_date_added: 2015-07-28
 homepage: http://www.pathbase.net
 license:
   label: CC BY 3.0

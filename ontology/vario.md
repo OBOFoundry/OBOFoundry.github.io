@@ -10,13 +10,13 @@ contact:
   label: Mauno Vihinen
 description: Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations.
 domain: biological systems
+github_date_added: 2015-07-28
 homepage: http://variationontology.org
 preferredPrefix: VariO
 products:
 - id: vario.owl
 - id: vario.obo
 activity_status: orphaned
-github_date_added: 2015-07-28
 ---
 
 Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations.

@@ -7,6 +7,7 @@ contact:
   label: Daniel Sonenshine
 description: 'The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>'
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: https://www.vectorbase.org/ontology-browser
 license:
   label: CC BY 4.0

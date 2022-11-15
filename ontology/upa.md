@@ -15,6 +15,7 @@ dependencies:
 - id: ro
 description: A manually curated resource for the representation and annotation of metabolic pathways
 domain: biological systems
+github_date_added: 2018-12-12
 homepage: https://github.com/geneontology/unipathway
 jobs:
 - id: https://travis-ci.org/geneontology/unipathway

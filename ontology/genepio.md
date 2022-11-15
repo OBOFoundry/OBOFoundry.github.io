@@ -15,6 +15,7 @@ dependencies:
 - id: uberon
 description: The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary to identify, document and research foodborne pathogens and associated outbreaks.
 domain: health
+github_date_added: 2016-07-25
 homepage: http://genepio.org/
 license:
   label: CC BY 3.0

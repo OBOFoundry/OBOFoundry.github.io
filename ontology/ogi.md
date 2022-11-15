@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-5379-5359
 description: An ontology that formalizes the genomic element by defining an upper class genetic interval
 domain: chemistry and biochemistry
+github_date_added: 2015-07-28
 homepage: https://code.google.com/p/ontology-for-genetic-interval/
 is_obsolete: true
 products:

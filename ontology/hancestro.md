@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0003-1058-2668
 description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide association studies.
 domain: organisms
+github_date_added: 2018-07-13
 homepage: https://github.com/EBISPOT/ancestro
 license:
   label: CC BY 4.0

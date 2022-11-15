@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0001-9189-9661
 description: A formal ontology of genes and genomes of biological organisms.
 domain: biological systems
+github_date_added: 2015-07-29
 homepage: https://bitbucket.org/hegroup/ogg
 license:
   label: CC BY 3.0

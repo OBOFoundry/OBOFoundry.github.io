@@ -17,6 +17,7 @@ contact:
   orcid: 0000-0002-1373-1705
 description: An ontology of commonly encountered and/or high level Drosophila phenotypes.
 domain: phenotype
+github_date_added: 2015-07-28
 homepage: http://purl.obolibrary.org/obo/fbcv
 license:
   label: CC BY 4.0

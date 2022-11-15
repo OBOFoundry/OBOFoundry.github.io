@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-7702-4495
 description: The Software Ontology (SWO) is a resource for describing software tools, their types, tasks, versions, provenance and associated data. It contains detailed information on licensing and formats as well as software applications themselves, mainly (but not limited) to the bioinformatics community.
 domain: information technology
+github_date_added: 2015-07-28
 homepage: https://github.com/allysonlister/swo
 license:
   label: CC BY 4.0

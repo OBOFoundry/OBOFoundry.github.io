@@ -11,6 +11,7 @@ dependencies:
 - id: uberon
 description: The Mammalian Feeding Muscle Ontology is an antomy ontology for the muscles of the head and neck that participate in feeding, swallowing, and other oral-pharyngeal behaviors.
 domain: anatomy and development
+github_date_added: 2015-08-11
 homepage: https://github.com/rdruzinsky/feedontology
 license:
   label: CC BY 3.0

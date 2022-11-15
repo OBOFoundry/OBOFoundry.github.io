@@ -12,11 +12,11 @@ contact:
   label: chEBI
 description: An ontology of physico-chemical methods and properties.
 domain: chemistry and biochemistry
+github_date_added: 2015-07-29
 homepage: http://www.ebi.ac.uk/chebi
 in_foundry: false
 products:
 - id: fix.owl
 - id: fix.obo
 activity_status: orphaned
-github_date_added: 2015-07-29
 ---

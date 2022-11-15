@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0002-1048-5019
 description: An integrated ontology for representing the genetic variations described in genotypes, and their causal relationships to phenotype and diseases.
 domain: biological systems
+github_date_added: 2017-01-05
 homepage: https://github.com/monarch-initiative/GENO-ontology/
 license:
   label: CC BY 4.0

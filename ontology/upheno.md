@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0001-5208-3432
 description: The uPheno ontology integrates multiple phenotype ontologies into a unified cross-species phenotype ontology.
 domain: phenotype
+github_date_added: 2015-08-21
 homepage: https://github.com/obophenotype/upheno
 license:
   label: CC0 1.0

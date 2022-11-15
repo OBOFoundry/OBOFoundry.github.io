@@ -15,6 +15,7 @@ contact:
   orcid: 0000-0002-3336-2476
 description: An ontology to describe entities related to cardiovascular diseases
 domain: health
+github_date_added: 2015-07-28
 homepage: https://github.com/OpenLHS/CVDO
 license:
   label: CC BY 4.0

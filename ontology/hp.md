@@ -22,6 +22,7 @@ contact:
 depicted_by: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/logo/HPO-logo-black_small.png
 description: A structured and controlled vocabulary for the phenotypic features encountered in human hereditary and other disease.
 domain: phenotype
+github_date_added: 2015-07-28
 homepage: http://www.human-phenotype-ontology.org/
 jobs:
 - id: https://travis-ci.org/obophenotype/human-phenotype-ontology

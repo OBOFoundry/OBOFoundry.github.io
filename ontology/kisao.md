@@ -27,6 +27,7 @@ funded_by:
   title: NIH P41EB023912
 - id: https://grantome.com/search?q=R35GM119771
   title: NIH R35GM119771
+github_date_added: 2015-07-28
 homepage: https://github.com/SED-ML/KiSAO
 license:
   label: Artistic License 2.0

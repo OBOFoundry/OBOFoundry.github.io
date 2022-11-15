@@ -16,6 +16,7 @@ contact:
   orcid: 0000-0001-5985-7429
 description: Controlled vocabulary pertaining to RNA function and based on RNA sequences, secondary and three-dimensional structures.
 domain: chemistry and biochemistry
+github_date_added: 2015-07-28
 homepage: https://github.com/bgsu-rna/rnao
 license:
   label: CC0 1.0

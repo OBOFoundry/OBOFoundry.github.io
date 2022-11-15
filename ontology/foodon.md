@@ -18,6 +18,7 @@ dependencies:
 - id: uberon
 description: A broadly scoped ontology representing entities which bear a “food role”. It encompasses materials in natural ecosystems and agriculture that are consumed by humans and domesticated animals. This includes any generic (unbranded) raw or processed food material found in processing plants, markets, stores or food distribution points. FoodOn also imports nutritional component and dietary pattern terms from other OBO Foundry ontologies to support interoperability in diet and nutrition research
 domain: diet, metabolomics, and nutrition
+github_date_added: 2016-07-25
 homepage: https://foodon.org/
 license:
   label: CC BY 3.0

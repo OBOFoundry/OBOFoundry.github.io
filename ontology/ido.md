@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0003-1617-8244
 description: A set of interoperable ontologies that will together provide coverage of the infectious disease domain. IDO core is the upper-level ontology that hosts terms of general relevance across the domain, while extension ontologies host terms to specific to a particular part of the domain.
 domain: health
+github_date_added: 2015-07-28
 homepage: http://www.bioontology.org/wiki/index.php/Infectious_Disease_Ontology
 license:
   label: CC BY 3.0

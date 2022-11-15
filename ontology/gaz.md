@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0001-8910-9851
 description: A gazetteer constructed on ontological principles
 domain: environment
+github_date_added: 2015-07-28
 homepage: http://environmentontology.github.io/gaz/
 license:
   label: CC0 1.0

@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0001-9076-6015
 description: A structured controlled vocabulary of the development of <i>Caenorhabditis elegans</i>.
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: https://github.com/obophenotype/c-elegans-development-ontology
 license:
   label: CC BY 4.0

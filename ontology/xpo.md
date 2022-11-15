@@ -22,6 +22,7 @@ dependencies:
 - id: xao
 description: XPO represents anatomical, cellular, and gene function phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis.
 domain: phenotype
+github_date_added: 2018-11-30
 homepage: https://github.com/obophenotype/xenopus-phenotype-ontology
 jobs:
 - id: https://travis-ci.org/obophenotype/xenopus-phenotype-ontology

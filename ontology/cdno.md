@@ -19,6 +19,7 @@ dependencies:
 - id: ro
 description: CDNO provides structured terminologies to describe nutritional attributes of material entities that contribute to human diet.
 domain: diet, metabolomics, and nutrition
+github_date_added: 2021-02-08
 homepage: https://cdno.info/
 license:
   label: CC BY 3.0

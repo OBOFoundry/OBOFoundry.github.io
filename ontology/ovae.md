@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0001-9189-9661
 description: A biomedical ontology in the domain of vaccine adverse events.
 domain: health
+github_date_added: 2015-07-28
 homepage: http://www.violinet.org/ovae/
 license:
   label: CC BY 3.0

@@ -10,6 +10,7 @@ contact:
 depicted_by: http://planteome.org/sites/default/files/garland_logo.PNG
 description: A structured, controlled vocabulary which describes the treatments, growing conditions, and/or study types used in plant biology experiments.
 domain: investigations
+github_date_added: 2017-06-05
 homepage: http://planteome.org/
 license:
   label: CC BY 4.0

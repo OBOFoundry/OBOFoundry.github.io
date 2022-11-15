@@ -18,6 +18,7 @@ contact:
 depicted_by: https://www.ebi.ac.uk/chebi/images/ChEBI_logo.png
 description: A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds.
 domain: chemistry and biochemistry
+github_date_added: 2015-07-28
 homepage: http://www.ebi.ac.uk/chebi
 in_foundry_order: 1
 license:

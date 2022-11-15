@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0001-5059-4132
 description: A classification of the diverse roles performed in the work leading to a published research output in the sciences. Its purpose to provide transparency in contributions to scholarly published work, to enable improved systems of attribution, credit, and accountability.
 domain: information
+github_date_added: 2017-07-20
 homepage: https://github.com/data2health/contributor-role-ontology
 license:
   label: CC BY 2.0

@@ -17,6 +17,7 @@ contact:
 depicted_by: http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif
 description: Conditions under which physiological and morphological measurements are made both in the clinic and in studies involving humans or model organisms.
 domain: health
+github_date_added: 2015-07-29
 homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000
 license:
   label: CC0 1.0

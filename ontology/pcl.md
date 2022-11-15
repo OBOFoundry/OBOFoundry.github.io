@@ -22,6 +22,7 @@ dependencies:
 - id: uberon
 description: Cell types that are provisionally defined by experimental techniques such as single cell or single nucleus transcriptomics rather than a straightforward & coherent set of properties.
 domain: phenotype
+github_date_added: 2022-01-25
 homepage: https://github.com/obophenotype/provisional_cell_ontology
 license:
   label: CC BY 4.0

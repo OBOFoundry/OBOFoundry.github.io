@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0002-1373-1705
 description: The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase.
 domain: organisms
+github_date_added: 2015-07-28
 homepage: http://www.flybase.org/
 is_obsolete: true
 products:
@@ -23,7 +24,6 @@ taxon:
   id: NCBITaxon:7227
   label: Drosophila
 activity_status: inactive
-github_date_added: 2015-07-28
 ---
 
 The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase.

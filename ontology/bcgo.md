@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-2999-0103
 description: An application ontology built for beta cell genomics studies.
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: https://github.com/obi-bcgo/bcgo
 in_foundry: false
 is_obsolete: true

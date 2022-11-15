@@ -21,6 +21,7 @@ dependencies:
 - id: uo
 description: RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.
 domain: environment
+github_date_added: 2021-01-28
 homepage: https://github.com/Radiobiology-Informatics-Consortium/RBO
 jobs:
 - id: https://travis-ci.org/DanBerrios/RBO

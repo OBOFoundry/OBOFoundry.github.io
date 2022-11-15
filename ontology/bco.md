@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0001-8815-0078
 description: An ontology to support the interoperability of biodiversity data, including data on museum collections, environmental/metagenomic samples, and ecological surveys.
 domain: organisms
+github_date_added: 2015-07-29
 homepage: https://github.com/BiodiversityOntologies/bco
 in_foundry: false
 license:

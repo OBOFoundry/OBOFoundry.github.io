@@ -7,6 +7,7 @@ contact:
   label: Pantelis Topalis
 description: An application ontology to cover all aspects of malaria as well as the intervention attempts to control it.
 domain: health
+github_date_added: 2015-07-28
 homepage: https://www.vectorbase.org/ontology-browser
 license:
   label: CC0 1.0

@@ -6,10 +6,10 @@ contact:
   email: evoc@sanbi.ac.za
   label: eVOC mailing list
 domain: anatomy and development
+github_date_added: 2015-08-21
 homepage: http://www.evocontology.org/
 is_obsolete: true
 activity_status: inactive
-github_date_added: 2015-08-21
 ---
 
 Provides structured controlled vocabularies for the annotation of expressed sequences with respect to anatomical system, cell type, developmental stage, experimental technique, microarray platform, pathology, pooling, tissue preparation and treatment.

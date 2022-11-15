@@ -7,6 +7,7 @@ contact:
   label: Thorsten Henrich
 description: A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.
 domain: anatomy and development
+github_date_added: 2015-07-28
 is_obsolete: true
 products:
 - id: mfo.owl
@@ -15,7 +16,6 @@ taxon:
   id: NCBITaxon:8089
   label: Oryzias
 activity_status: inactive
-github_date_added: 2015-07-28
 ---
 
 A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.

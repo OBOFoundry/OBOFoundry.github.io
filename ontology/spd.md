@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0002-0358-0130
 description: An ontology for spider comparative biology including anatomical parts (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web, borrow).
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: http://research.amnh.org/atol/files/
 license:
   label: CC BY 3.0

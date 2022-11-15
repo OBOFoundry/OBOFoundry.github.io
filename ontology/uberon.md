@@ -51,6 +51,7 @@ funded_by:
   title: NIH P41-HG002273
 - id: https://www.nsf.gov/awardsearch/showAward?AWD_ID=0956049
   title: NSF DEB-0956049
+github_date_added: 2015-07-28
 homepage: http://uberon.org
 label: Uberon
 license:

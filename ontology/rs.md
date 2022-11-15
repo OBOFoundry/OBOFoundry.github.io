@@ -17,6 +17,7 @@ contact:
 depicted_by: http://rgd.mcw.edu/common/images/rgd_LOGO_blue_rgd.gif
 description: Ontology of rat strains
 domain: organisms
+github_date_added: 2015-07-28
 homepage: http://rgd.mcw.edu/rgdweb/search/strains.html
 license:
   label: CC BY 4.0

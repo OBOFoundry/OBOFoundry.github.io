@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0001-9189-9661
 description: The Coronavirus Infectious Disease Ontology (CIDO) aims to ontologically represent and standardize various aspects of coronavirus infectious diseases, including their etiology, transmission, epidemiology, pathogenesis, diagnosis, prevention, and treatment.
 domain: health
+github_date_added: 2020-03-12
 homepage: https://github.com/cido-ontology/cido
 license:
   label: CC BY 4.0

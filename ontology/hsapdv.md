@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0002-9415-5104
 description: Life cycle stages for Human
 domain: anatomy and development
+github_date_added: 2015-08-21
 homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv
 license:
   label: CC BY 3.0

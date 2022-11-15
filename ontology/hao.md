@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0002-5640-5491
 description: A structured controlled vocabulary of the anatomy of the Hymenoptera (bees, wasps, and ants)
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: http://hymao.org
 license:
   label: CC0 1.0

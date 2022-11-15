@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-9881-1017
 description: An ontology of geographical entities
 domain: environment
+github_date_added: 2015-07-28
 homepage: https://github.com/ufbmi/geographical-entity-ontology/wiki
 license:
   label: CC BY 4.0

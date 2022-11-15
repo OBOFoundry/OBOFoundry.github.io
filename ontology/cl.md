@@ -25,6 +25,7 @@ dependencies:
 depicted_by: /images/CL-logo.jpg
 description: The Cell Ontology is a structured controlled vocabulary for cell types in animals.
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: https://obophenotype.github.io/cell-ontology/
 integration_server: http://build.berkeleybop.org/job/build-cl/
 jobs:

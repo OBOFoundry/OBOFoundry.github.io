@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0002-3336-2476
 description: An ontology to describe entities related to prescription of drugs
 domain: information
+github_date_added: 2016-11-11
 homepage: https://github.com/OpenLHS/PDRO
 license:
   label: CC BY 4.0

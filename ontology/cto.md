@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0001-9896-3531
 description: The core Ontology of Clinical Trials (CTO) will serve as a structured resource integrating basic terms and concepts in the context of clinical trials. Thereby covering clinicaltrails.gov. CoreCTO will serve as a basic ontology to generate extended versions for specific applications such as annotation of variables in study documents from clinical trials.
 domain: health
+github_date_added: 2020-07-08
 homepage: https://github.com/ClinicalTrialOntology/CTO/
 license:
   label: CC BY 4.0

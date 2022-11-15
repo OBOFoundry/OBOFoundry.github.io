@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-2908-3327
 description: Vocabularies for describing exposure data to inform understanding of environmental health.
 domain: health
+github_date_added: 2015-07-28
 homepage: https://github.com/CTDbase/exposure-ontology
 license:
   label: CC BY 4.0

@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0001-9625-1899
 description: The Oral Health and Disease Ontology is used for representing the diagnosis and treatment of dental maladies.
 domain: health
+github_date_added: 2016-12-01
 homepage: https://purl.obolibrary.org/obo/ohd/home
 license:
   label: CC BY 4.0

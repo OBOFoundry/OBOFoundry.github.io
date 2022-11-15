@@ -18,6 +18,7 @@ dependencies:
 - id: uberon
 description: An ontology for description of concepts in the nutritional studies domain.
 domain: diet, metabolomics, and nutrition
+github_date_added: 2020-05-28
 homepage: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
 label: Ontology for Nutritional Studies
 license:

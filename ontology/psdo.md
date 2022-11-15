@@ -18,6 +18,7 @@ dependencies:
 - id: stato
 description: Ontology to reproducibly study visualizations of clinical performance
 domain: information
+github_date_added: 2019-04-04
 homepage: https://github.com/Display-Lab/psdo
 license:
   label: CC BY 3.0

@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0003-3781-6962
 description: ICEO is an integrated biological ontology for the description of bacterial integrative and conjugative elements (ICEs).
 domain: microbiology
+github_date_added: 2019-09-02
 homepage: https://github.com/ontoice/ICEO
 license:
   label: CC BY 4.0

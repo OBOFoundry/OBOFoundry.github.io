@@ -28,6 +28,7 @@ dependencies:
 - id: xco
 description: Ontology of agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments
 domain: agriculture
+github_date_added: 2016-06-04
 homepage: https://github.com/AgriculturalSemantics/agro
 jobs:
 - id: https://travis-ci.org/AgriculturalSemantics/agro

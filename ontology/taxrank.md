@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0002-8688-6599
 description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
 domain: organisms
+github_date_added: 2015-07-28
 homepage: https://github.com/phenoscape/taxrank
 jobs:
 - id: https://travis-ci.org/phenoscape/taxrank

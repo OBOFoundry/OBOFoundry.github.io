@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-3469-4923
 description: An ontology to describe and classify mental diseases such as schizophrenia, annotated with DSM-IV and ICD codes where applicable
 domain: health
+github_date_added: 2015-08-21
 homepage: https://github.com/jannahastings/mental-functioning-ontology
 license:
   label: CC BY 3.0

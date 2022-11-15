@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0002-8841-5870
 description: A structured controlled vocabulary of sample preparation, visualization and imaging methods used in biomedical research.
 domain: investigations
+github_date_added: 2015-07-28
 homepage: http://cellimagelibrary.org/
 license:
   label: CC BY 4.0

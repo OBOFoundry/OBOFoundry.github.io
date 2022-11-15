@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0001-9076-6015
 description: A structured controlled vocabulary of <i>Caenorhabditis elegans</i> phenotypes
 domain: phenotype
+github_date_added: 2015-07-28
 homepage: https://github.com/obophenotype/c-elegans-phenotype-ontology
 license:
   label: CC BY 4.0

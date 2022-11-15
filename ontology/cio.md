@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-9415-5104
 description: An ontology to capture confidence information about annotations.
 domain: information
+github_date_added: 2016-05-17
 homepage: https://github.com/BgeeDB/confidence-information-ontology
 license:
   label: CC0 1.0

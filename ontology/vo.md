@@ -11,6 +11,7 @@ contact:
   orcid: 0000-0001-9189-9661
 description: VO is a biomedical ontology in the domain of vaccine and vaccination.
 domain: health
+github_date_added: 2015-07-29
 homepage: http://www.violinet.org/vaccineontology
 license:
   label: CC BY 3.0

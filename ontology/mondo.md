@@ -15,6 +15,7 @@ contact:
 depicted_by: https://raw.githubusercontent.com/monarch-initiative/mondo/master/docs/images/mondo_logo_black-stacked-small.png
 description: A global community effort to harmonize multiple disease resources to yield a coherent merged ontology.
 domain: health
+github_date_added: 2016-07-12
 homepage: https://monarch-initiative.github.io/mondo
 label: Mondo
 license:

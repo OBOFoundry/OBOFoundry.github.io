@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0001-8910-9851
 description: An ontology of disease symptoms, with symptoms encompasing perceived changes in function, sensations or appearance reported by a patient indicative of a disease.
 domain: health
+github_date_added: 2015-07-28
 homepage: http://symptomontologywiki.igs.umaryland.edu/mediawiki/index.php/Main_Page
 license:
   label: CC0 1.0

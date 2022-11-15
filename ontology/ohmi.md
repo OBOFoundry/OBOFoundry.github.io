@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0001-9189-9661
 description: The Ontology of Host-Microbiome Interactions aims to ontologically represent and standardize various entities and relations related to microbiomes, microbiome host organisms (e.g., human and mouse), and the interactions between the hosts and microbiomes at different conditions.
 domain: organisms
+github_date_added: 2017-04-21
 homepage: https://github.com/ohmi-ontology/ohmi
 license:
   label: CC BY 4.0

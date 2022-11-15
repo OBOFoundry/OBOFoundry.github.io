@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0002-0956-8634
 description: An ontology for mouse anatomy covering embryonic development and postnatal stages.
 domain: anatomy and development
+github_date_added: 2015-08-21
 homepage: http://www.informatics.jax.org/expression.shtml
 license:
   label: CC BY 4.0

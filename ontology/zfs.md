@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0002-2244-7917
 description: Developmental stages of the Zebrafish
 domain: anatomy and development
+github_date_added: 2015-07-29
 homepage: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
 in_foundry: false
 license:

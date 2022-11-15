@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0001-8149-5890
 description: Traits and phenotypes of flowering plants occurring in digitized Floras
 domain: phenotype
+github_date_added: 2015-12-16
 homepage: https://github.com/flora-phenotype-ontology/flopoontology
 license:
   label: CC0 1.0

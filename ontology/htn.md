@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-1795-5570
 description: An ontology for representing clinical data about hypertension, intended to support classification of patients according to various diagnostic guidelines
 domain: health
+github_date_added: 2019-06-05
 homepage: https://github.com/aellenhicks/htn_owl
 license:
   label: CC BY 4.0

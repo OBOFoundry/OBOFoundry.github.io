@@ -14,6 +14,7 @@ contact:
   orcid: 0000-0002-6601-2165
 description: An anatomical and developmental ontology for cephalopods
 domain: anatomy and development
+github_date_added: 2015-08-21
 homepage: https://github.com/obophenotype/cephalopod-ontology
 jobs:
 - id: https://travis-ci.org/obophenotype/cephalopod-ontology

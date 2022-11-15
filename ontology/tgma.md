@@ -7,6 +7,7 @@ contact:
   label: Pantelis Topalis
 description: A structured controlled vocabulary of the anatomy of mosquitoes.
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: https://www.vectorbase.org/ontology-browser
 license:
   label: CC0 1.0

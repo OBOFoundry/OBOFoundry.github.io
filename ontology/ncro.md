@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0003-2408-2883
 description: An ontology for non-coding RNA, both of biological origin, and engineered.
 domain: investigations
+github_date_added: 2015-11-18
 homepage: http://omnisearch.soc.southalabama.edu/w/index.php/Ontology
 license:
   label: CC BY 4.0

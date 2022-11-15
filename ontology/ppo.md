@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0001-8815-0078
 description: An ontology for describing the phenology of individual plants and populations of plants, and for integrating plant phenological data across sources and scales.
 domain: phenotype
+github_date_added: 2016-12-30
 homepage: https://github.com/PlantPhenoOntology/PPO
 license:
   label: CC BY 3.0

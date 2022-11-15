@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-1142-3063
 description: Antibiotic resistance genes and mutations
 domain: microbiology
+github_date_added: 2017-11-15
 homepage: https://github.com/arpcard/aro
 license:
   label: CC BY 4.0

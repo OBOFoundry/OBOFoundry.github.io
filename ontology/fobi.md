@@ -12,6 +12,7 @@ dependencies:
 - id: foodon
 description: FOBI (Food-Biomarker Ontology) is an ontology to represent food intake data and associate it with metabolomic data
 domain: diet, metabolomics, and nutrition
+github_date_added: 2019-12-04
 homepage: https://github.com/pcastellanoescuder/FoodBiomarkerOntology
 license:
   label: CC BY 3.0

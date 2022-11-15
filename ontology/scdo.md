@@ -45,6 +45,7 @@ dependencies:
 - id: vt
 description: An ontology for the standardization of terminology and integration of knowledge about Sickle Cell Disease.
 domain: health
+github_date_added: 2021-04-16
 homepage: https://scdontology.h3abionet.org/
 license:
   label: GPL-3.0

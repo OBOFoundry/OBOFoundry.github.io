@@ -11,6 +11,7 @@ contact:
   orcid: 0000-0003-3162-7490
 description: Vertebrate skeletal anatomy ontology.
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: https://www.nescent.org/phenoscape/Main_Page
 is_obsolete: true
 page: https://www.phenoscape.org/wiki/Skeletal_Anatomy_Jamboree
@@ -21,7 +22,6 @@ taxon:
   id: NCBITaxon:7742
   label: Vertebrata
 activity_status: inactive
-github_date_added: 2015-07-28
 ---
 
 Vertebrate skeletal anatomy ontology.

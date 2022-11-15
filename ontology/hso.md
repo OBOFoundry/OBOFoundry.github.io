@@ -15,6 +15,7 @@ dependencies:
 - id: uberon
 description: The health Surveillance Ontology (HSO) focuses on "surveillance system level data", that is, data outputs from surveillance activities, such as number of samples collected, cases observed, etc. It aims to support One-Health surveillance, covering animal health, public health and food safety surveillance.
 domain: health
+github_date_added: 2020-11-28
 homepage: https://w3id.org/hso
 license:
   label: CC BY 3.0

@@ -15,6 +15,7 @@ dependencies:
 - id: uo
 description: A structured controlled vocabulary for the annotation of experiments concerned with proteomics mass spectrometry.
 domain: investigations
+github_date_added: 2015-07-28
 homepage: http://www.psidev.info/groups/controlled-vocabularies
 integration_server: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master
 label: MS

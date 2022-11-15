@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0003-4871-5569
 description: An ontology to represent genomics cohort attributes
 domain: organisms
+github_date_added: 2020-08-11
 homepage: https://github.com/IHCC-cohorts/GECKO
 license:
   label: CC BY 4.0

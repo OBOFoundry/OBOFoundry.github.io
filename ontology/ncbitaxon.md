@@ -18,6 +18,7 @@ contact:
   orcid: 0000-0002-9415-5104
 description: An ontology representation of the NCBI organismal taxonomy
 domain: organisms
+github_date_added: 2015-07-28
 homepage: https://github.com/obophenotype/ncbitaxon
 jobs:
 - id: http://build.berkeleybop.org/job/build-ncbitaxon/

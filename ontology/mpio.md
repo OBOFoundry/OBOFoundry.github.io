@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0003-1834-3856
 description: An ontology of minimum information regarding potential drug-drug interaction information.
 domain: health
+github_date_added: 2017-11-02
 homepage: https://github.com/MPIO-Developers/MPIO
 license:
   label: CC BY 4.0

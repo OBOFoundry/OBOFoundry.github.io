@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0001-9114-8737
 description: An upper level ontology to facilitate interoperability between existing anatomy ontologies for different species
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: https://github.com/obophenotype/caro/
 license:
   label: CC BY 4.0

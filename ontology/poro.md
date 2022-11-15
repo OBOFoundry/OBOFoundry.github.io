@@ -18,6 +18,7 @@ dependencies:
 - id: uberon
 description: An ontology covering the anatomy of the taxon Porifera (sponges)
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: https://github.com/obophenotype/porifera-ontology
 jobs:
 - id: https://travis-ci.org/obophenotype/porifera-ontology

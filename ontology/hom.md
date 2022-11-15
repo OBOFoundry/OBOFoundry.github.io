@@ -14,6 +14,7 @@ contact:
   orcid: 0000-0002-9415-5104
 description: This ontology represents concepts related to homology, as well as other concepts used to describe similarity and non-homology.
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: https://github.com/BgeeDB/homology-ontology
 license:
   label: CC0 1.0

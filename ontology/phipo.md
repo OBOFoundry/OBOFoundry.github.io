@@ -15,6 +15,7 @@ dependencies:
 - id: pato
 description: PHIPO is a formal ontology of species-neutral phenotypes observed in pathogen-host interactions.
 domain: phenotype
+github_date_added: 2018-08-15
 homepage: https://github.com/PHI-base/phipo
 jobs:
 - id: https://travis-ci.org/PHI-base/phipo

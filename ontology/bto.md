@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0001-9117-7909
 description: A structured controlled vocabulary for the source of an enzyme comprising tissues, cell lines, cell types and cell cultures.
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: http://www.brenda-enzymes.org
 license:
   label: CC BY 4.0

@@ -15,6 +15,7 @@ contact:
   orcid: 0000-0003-2338-8872
 description: The Obstetric and Neonatal Ontology is a structured controlled vocabulary to provide a representation of the data from electronic health records (EHRs) involved in the care of the pregnant woman, and of her baby.
 domain: health
+github_date_added: 2016-11-22
 homepage: ontoneo.com
 license:
   label: CC BY 3.0

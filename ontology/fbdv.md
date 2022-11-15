@@ -17,6 +17,7 @@ contact:
   orcid: 0000-0002-1373-1705
 description: A structured controlled vocabulary of the development of Drosophila melanogaster.
 domain: anatomy and development
+github_date_added: 2015-07-29
 homepage: http://purl.obolibrary.org/obo/fbdv
 license:
   label: CC BY 4.0

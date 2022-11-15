@@ -11,6 +11,7 @@ dependencies:
 - id: bfo
 description: Alzheimer's Disease Ontology is a knowledge-based ontology that encompasses varieties of concepts related to Alzheimer'S Disease, structured by upper level Basic Formal Ontology(BFO). This Ontology is enriched by the interrelated entities that demonstrate the network of the understanding on Alzheimer's disease and can be readily applied for text mining.
 domain: health
+github_date_added: 2022-06-21
 homepage: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO
 license:
   label: CC BY 4.0
@@ -21,6 +22,5 @@ products:
 repository: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO
 tracker: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO/issues
 activity_status: active
-github_date_added: 2022-06-21
 ---
 

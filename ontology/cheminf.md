@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0001-7542-0286
 description: Includes terms for the descriptors commonly used in cheminformatics software applications and the algorithms which generate them.
 domain: chemistry and biochemistry
+github_date_added: 2015-07-28
 homepage: https://github.com/semanticchemistry/semanticchemistry
 license:
   label: CC0 1.0

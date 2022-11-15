@@ -18,6 +18,7 @@ domain: investigations
 funded_by:
 - id: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400
   title: NSF ABI-1458400
+github_date_added: 2015-07-28
 homepage: https://www.evidenceontology.org
 jobs:
 - id: https://travis-ci.org/evidenceontology/evidenceontology

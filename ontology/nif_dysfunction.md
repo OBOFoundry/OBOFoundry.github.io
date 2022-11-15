@@ -6,11 +6,11 @@ contact:
   email: smtifahim@gmail.com
   label: Fahim Imam
 domain: health
+github_date_added: 2015-08-21
 homepage: http://neuinfo.org/
 is_obsolete: true
 replaced_by: doid
 activity_status: inactive
-github_date_added: 2015-08-21
 ---
 
 This ontology contains the former BIRNLex-Disease, version 1.3.2.

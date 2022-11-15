@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0001-9189-9661
 description: An ontology of clinical informed consents
 domain: investigations
+github_date_added: 2015-08-21
 homepage: https://github.com/ICO-ontology/ICO
 license:
   label: CC BY 3.0

@@ -17,6 +17,7 @@ dependencies:
 - id: uberon
 description: The Lepidoptera Anatomy Ontology contains terms used for describing the anatomy and phenotype of moths and butterflies in biodiversity research. LEPAO is developed in part by BIOfid (The Specialised Information Service Biodiversity Research).
 domain: anatomy and development
+github_date_added: 2021-12-14
 homepage: https://github.com/insect-morphology/lepao
 license:
   label: CC BY 4.0

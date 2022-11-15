@@ -18,6 +18,7 @@ dependencies:
 - id: ro
 description: Planarian Phenotype Ontology is an ontology of phenotypes observed in the planarian Schmidtea mediterranea.
 domain: phenotype
+github_date_added: 2018-11-19
 homepage: https://github.com/obophenotype/planarian-phenotype-ontology
 jobs:
 - id: https://travis-ci.org/obophenotype/planarian-phenotype-ontology

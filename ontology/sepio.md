@@ -14,6 +14,7 @@ contact:
 depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/SEPIO-LOGOS/sepio_logo_black-banner.png
 description: An ontology for representing the provenance of scientific claims and the evidence that supports them.
 domain: investigations
+github_date_added: 2017-06-30
 homepage: https://github.com/monarch-initiative/SEPIO-ontology
 license:
   label: CC BY 3.0

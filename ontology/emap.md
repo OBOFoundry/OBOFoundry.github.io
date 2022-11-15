@@ -14,6 +14,7 @@ contact:
   orcid: 0000-0002-0956-8634
 description: A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: http://emouseatlas.org
 is_obsolete: true
 page: https://www.emouseatlas.org/emap/about/what_is_emap.html
@@ -24,7 +25,6 @@ taxon:
   id: NCBITaxon:10088
   label: Mus
 activity_status: inactive
-github_date_added: 2015-07-28
 ---
 
 ## BACKGROUND

@@ -8,6 +8,7 @@ contact:
   orcid: 0000-0003-1834-3856
 description: An ontological version of MIABIS (Minimum Information About BIobank data Sharing)
 domain: health
+github_date_added: 2016-02-05
 homepage: https://github.com/OMIABIS/omiabis-dev
 is_obsolete: true
 license:

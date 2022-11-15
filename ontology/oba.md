@@ -14,6 +14,7 @@ contact:
   orcid: 0000-0002-6601-2165
 description: A collection of biological attributes (traits) covering all kingdoms of life.
 domain: phenotype
+github_date_added: 2015-07-28
 homepage: https://github.com/obophenotype/bio-attribute-ontology
 jobs:
 - id: https://travis-ci.org/obophenotype/bio-attribute-ontology

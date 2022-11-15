@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0002-6601-2165
 description: Social Behavior in insects
 domain: biological systems
+github_date_added: 2015-07-29
 homepage: https://github.com/obophenotype/sibo
 license:
   label: CC BY 3.0

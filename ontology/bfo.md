@@ -14,6 +14,7 @@ contact:
 depicted_by: https://avatars2.githubusercontent.com/u/12972134?v=3&s=200
 description: The upper level ontology upon which OBO Foundry ontologies are built.
 domain: upper
+github_date_added: 2015-07-28
 homepage: http://ifomis.org/bfo/
 in_foundry_order: 1
 license:

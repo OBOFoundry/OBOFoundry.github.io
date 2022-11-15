@@ -6,10 +6,10 @@ contact:
   email: interhelp@ebi.ac.uk
   label: InterPro Help
 domain: chemistry and biochemistry
+github_date_added: 2015-08-21
 homepage: http://www.ebi.ac.uk/interpro/index.html
 is_obsolete: true
 activity_status: inactive
-github_date_added: 2015-08-21
 ---
 
 A database of protein families, domains and functional sites in which identifiable features found in known proteins can be applied to unknown protein sequences.

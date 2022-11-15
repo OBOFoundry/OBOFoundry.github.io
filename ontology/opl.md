@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-2999-0103
 description: A reference ontology for parasite life cycle stages.
 domain: organisms
+github_date_added: 2015-07-28
 homepage: https://github.com/OPL-ontology/OPL
 license:
   label: CC BY 4.0

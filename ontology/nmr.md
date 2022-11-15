@@ -10,13 +10,13 @@ contact:
   label: Schober Daniel
 description: Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation.
 domain: investigations
+github_date_added: 2015-07-28
 homepage: http://msi-ontology.sourceforge.net/
 is_obsolete: true
 page: http://msi-ontology.sourceforge.net/ontology/NMR.owlDocument.doc
 products:
 - id: nmr.owl
 activity_status: inactive
-github_date_added: 2015-07-28
 ---
 
 Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation.

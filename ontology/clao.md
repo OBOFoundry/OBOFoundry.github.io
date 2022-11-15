@@ -15,6 +15,7 @@ dependencies:
 - id: ro
 description: 'CLAO is an ontology of anatomical terms employed in morphological descriptions for the Class Collembola (Arthropoda: Hexapoda).'
 domain: anatomy and development
+github_date_added: 2020-10-08
 homepage: https://github.com/luis-gonzalez-m/Collembola
 license:
   label: CC0 1.0

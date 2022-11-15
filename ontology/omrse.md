@@ -12,6 +12,7 @@ contact:
   orcid: 0000-0002-9881-1017
 description: This ontology covers the domain of social entities that are related to health care, such as demographic information and the roles of various individuals and organizations.
 domain: health
+github_date_added: 2015-07-28
 homepage: https://github.com/ufbmi/OMRSE/wiki/OMRSE-Overview
 license:
   label: CC BY 4.0

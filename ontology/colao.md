@@ -17,6 +17,7 @@ dependencies:
 - id: uberon
 description: The Coleoptera Anatomy Ontology contains terms used for describing the anatomy and phenotype of beetles in biodiversity research. It has been built using the Ontology Develoment Kit, with the Ontology for the Anatomy of the Insect Skeleto-Muscular system (AISM) as a backbone.
 domain: anatomy and development
+github_date_added: 2021-12-14
 homepage: https://github.com/insect-morphology/colao
 license:
   label: CC BY 4.0

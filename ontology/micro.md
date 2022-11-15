@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-2100-6351
 description: An ontology of prokaryotic phenotypic and metabolic characters
 domain: phenotype
+github_date_added: 2015-10-20
 homepage: https://github.com/carrineblank/MicrO
 license:
   label: CC BY 2.0

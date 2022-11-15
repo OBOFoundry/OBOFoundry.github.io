@@ -26,6 +26,7 @@ dependencies:
 depicted_by: /images/envo.png
 description: An ontology of environmental systems, components, and processes.
 domain: environment
+github_date_added: 2015-07-28
 homepage: http://environmentontology.org/
 jobs:
 - id: https://github.com/EnvironmentOntology/envo/blob/master/.github/workflows/qc.yml

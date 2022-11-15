@@ -23,6 +23,7 @@ contact:
   orcid: 0000-0002-1373-1705
 description: An ontology representing the gross anatomy of Drosophila melanogaster.
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: http://purl.obolibrary.org/obo/fbbt
 license:
   label: CC BY 4.0
@@ -65,5 +66,4 @@ usages:
     url: http://flybase.org/cgi-bin/cvreport.html?rel=is_a&id=FBbt:00005106
   user: http://flybase.org
 activity_status: active
-github_date_added: 2015-07-28
 ---

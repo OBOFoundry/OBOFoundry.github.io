@@ -13,6 +13,7 @@ dependencies:
 - id: ons
 description: An ontology to standardize research output of nutritional epidemiologic studies.
 domain: diet, metabolomics, and nutrition
+github_date_added: 2020-11-17
 homepage: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
 label: Ontology for Nutritional Epidemiology
 license:

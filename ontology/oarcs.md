@@ -9,6 +9,7 @@ contact:
   orcid: 0000-0002-5640-5491
 description: OArCS is an ontology describing the Arthropod ciruclatory system.
 domain: anatomy and development
+github_date_added: 2017-02-10
 homepage: https://github.com/aszool/oarcs
 license:
   label: CC BY 3.0

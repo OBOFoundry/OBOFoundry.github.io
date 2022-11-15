@@ -16,6 +16,7 @@ contact:
 description: Relationship types shared across multiple ontologies
 documentation: https://oborel.github.io/obo-relations/
 domain: upper
+github_date_added: 2015-07-28
 homepage: https://oborel.github.io/
 jobs:
 - id: https://travis-ci.org/oborel/obo-relations

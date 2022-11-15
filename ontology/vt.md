@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0002-2346-5201
 description: An ontology of traits covering vertebrates
 domain: phenotype
+github_date_added: 2015-08-21
 homepage: https://github.com/AnimalGenome/vertebrate-trait-ontology
 license:
   label: CC BY 4.0

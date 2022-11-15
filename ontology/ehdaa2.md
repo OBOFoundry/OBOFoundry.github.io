@@ -16,6 +16,7 @@ dependencies:
 - id: cl
 description: A structured controlled vocabulary of stage-specific anatomical structures of the developing human.
 domain: anatomy and development
+github_date_added: 2015-07-28
 homepage: https://github.com/obophenotype/human-developmental-anatomy-ontology
 license:
   label: CC BY 4.0

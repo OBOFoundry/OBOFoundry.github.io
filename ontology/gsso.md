@@ -13,6 +13,7 @@ contact:
   orcid: 0000-0001-8397-8810
 description: The Gender, Sex, and Sexual Orientation (GSSO) ontology has terms for annotating interdisciplinary information concerning gender, sex, and sexual orientation for primary usage in the biomedical and adjacent sciences.
 domain: organisms
+github_date_added: 2020-10-01
 homepage: https://gsso.research.cchmc.org/
 license:
   label: Apache 2.0 License

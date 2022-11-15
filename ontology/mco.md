@@ -28,6 +28,7 @@ dependencies:
 - id: zeco
 description: Microbial Conditions Ontology is an ontology...
 domain: investigations
+github_date_added: 2019-02-15
 homepage: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
 jobs:
 - id: https://travis-ci.org/microbial-conditions-ontology/microbial-conditions-ontology
