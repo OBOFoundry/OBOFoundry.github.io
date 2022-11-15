@@ -30,9 +30,11 @@ products:
 - id: eco.owl
 - id: eco.obo
 publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/34986598
+  title: 'ECO: the Evidence and Conclusion Ontology, an update for 2022.'
+  preferred: true
 - id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
   title: 'ECO, the Evidence & Conclusion Ontology: community standard for evidence information.'
-  preferred: true
 - id: https://www.ncbi.nlm.nih.gov/pubmed/25052702
   title: Standardized description of scientific evidence using the Evidence Ontology (ECO)
 repository: https://github.com/evidenceontology/evidenceontology
@@ -60,7 +62,7 @@ The Evidence & Conclusion Ontology (ECO) describes types of scientific evidence 
 
 ECO comprises two high-level classes, evidence and assertion method, where evidence is defined as “a type of information that is used to support an assertion,” and assertion method is defined as “a means by which a statement is made about an entity.” Together evidence and assertion method can be combined to describe both the support for an assertion and whether that assertion was made by a human being or a computer. However, ECO is _not_ used to make the assertion itself; for that, one would use another ontology, free text description, or some other means.
 
-ECO was originally created around the year 2000 to support gene product annotation by the Gene Ontology, which now displays ECO in AmiGO 2. Today ECO is used by many groups concerned with evidence in scientific research.
+ECO was originally created around the year 2000 to support gene product annotation by the Gene Ontology. Today ECO is used by dozens of biomedical resources to capture evidence associated with assertions in biocuration.
 
 ***
 For **advice on requesting new terms**, please see **[the Evidence & Conclusion Ontology wiki](https://github.com/evidenceontology/evidenceontology/wiki/New-term-request-how-to)**.

@@ -997,6 +997,12 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/cido.owl"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/36271389",
+                    "title": "A comprehensive update on CIDO: the community-based coronavirus infectious disease ontology"
+                }
+            ],
             "repository": "https://github.com/cido-ontology/cido",
             "title": "Coronavirus Infectious Disease Ontology",
             "tracker": "https://github.com/cido-ontology/cido/issues"
@@ -1296,6 +1302,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/clao.obo"
                 }
             ],
+            "pull_request_added": 1337,
             "repository": "https://github.com/luis-gonzalez-m/Collembola",
             "title": "Collembola Anatomy Ontology",
             "tracker": "https://github.com/luis-gonzalez-m/Collembola/issues"
@@ -1396,6 +1403,7 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/clyh.obo"
                 }
             ],
+            "pull_request_added": 1205,
             "repository": "https://github.com/EBISPOT/clyh_ontology",
             "title": "Clytia hemisphaerica Development and Anatomy Ontology",
             "tracker": "https://github.com/EBISPOT/clyh_ontology/issues"
@@ -2297,8 +2305,12 @@
             ],
             "publications": [
                 {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/30407590",
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/34986598",
                     "preferred": true,
+                    "title": "ECO: the Evidence and Conclusion Ontology, an update for 2022."
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/30407590",
                     "title": "ECO, the Evidence & Conclusion Ontology: community standard for evidence information."
                 },
                 {
@@ -4520,6 +4532,12 @@
                 {
                     "id": "ido.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/ido.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/34275487",
+                    "title": "The Infectious Disease Ontology in the age of COVID-19"
                 }
             ],
             "repository": "https://github.com/infectious-disease-ontology/infectious-disease-ontology",
@@ -8951,6 +8969,7 @@
             "domain": "information",
             "homepage": "https://github.com/terms4fairskills/FAIRterminology",
             "id": "t4fs",
+            "issue_requested": 1520,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -8958,7 +8977,7 @@
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/t4fs.owl",
-            "preferredPrefix": "TF4S",
+            "preferredPrefix": "T4FS",
             "products": [
                 {
                     "id": "t4fs.owl",
@@ -8994,6 +9013,7 @@
                     "title": "EOSC Co-creation funded project 074: Delivery of a proof of concept for terms4FAIRskills: Technical report"
                 }
             ],
+            "pull_request_added": 2140,
             "repository": "https://github.com/terms4fairskills/FAIRterminology",
             "title": "terms4FAIRskills",
             "tracker": "https://github.com/terms4fairskills/FAIRterminology/issues",

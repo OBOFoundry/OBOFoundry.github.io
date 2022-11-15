@@ -963,6 +963,7 @@ _:b60   <http://www.w3.org/2000/01/rdf-schema#label>  "Colin Batchelor" ;
         <http://purl.org/dc/elements/1.1/description>  "The Coronavirus Infectious Disease Ontology (CIDO) aims to ontologically represent and standardize various aspects of coronavirus infectious diseases, including their etiology, transmission, epidemiology, pathogenesis, diagnosis, prevention, and treatment." ;
         <http://purl.org/dc/elements/1.1/title>  "Coronavirus Infectious Disease Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/36271389> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/cido-ontology/cido/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "cido-discuss@googlegroups.com" ;
@@ -970,6 +971,9 @@ _:b60   <http://www.w3.org/2000/01/rdf-schema#label>  "Colin Batchelor" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b61 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cido.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/cido-ontology/cido> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/36271389>
+        <http://purl.org/dc/elements/1.1/title>  "A comprehensive update on CIDO: the community-based coronavirus infectious disease ontology" .
 
 _:b61   <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
         <http://xmlns.com/foaf/0.1/mbox>  "yongqunh@med.umich.edu" .
@@ -1669,6 +1673,7 @@ _:b99   <http://www.w3.org/2000/01/rdf-schema#label>  "Charles Ettensohn" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology for experimental and other evidence statements." ;
         <http://purl.org/dc/elements/1.1/title>  "Evidence ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/34986598> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/30407590> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/25052702> ;
         <http://purl.org/dc/terms/1.1/theme>  "investigations" ;
@@ -1682,6 +1687,9 @@ _:b99   <http://www.w3.org/2000/01/rdf-schema#label>  "Charles Ettensohn" ;
 
 _:b100  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/34986598>
+        <http://purl.org/dc/elements/1.1/title>  "ECO: the Evidence and Conclusion Ontology, an update for 2022." .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/30407590>
         <http://purl.org/dc/elements/1.1/title>  "ECO, the Evidence & Conclusion Ontology: community standard for evidence information." .
@@ -2890,6 +2898,7 @@ _:b156  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
         <http://purl.org/dc/elements/1.1/description>  "A set of interoperable ontologies that will together provide coverage of the infectious disease domain. IDO core is the upper-level ontology that hosts terms of general relevance across the domain, while extension ontologies host terms to specific to a particular part of the domain." ;
         <http://purl.org/dc/elements/1.1/title>  "Infectious Disease Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/34275487> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/infectious-disease-ontology/infectious-disease-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ido.owl" ;
@@ -2899,6 +2908,9 @@ _:b156  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
 
 _:b157  <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "http://purl.obolibrary.org/obo/ido.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/34275487>
+        <http://purl.org/dc/elements/1.1/title>  "The Infectious Disease Ontology in the age of COVID-19" .
 
 _:b158  <http://www.w3.org/2000/01/rdf-schema#label>  "Lindsay Cowell" ;
         <http://xmlns.com/foaf/0.1/mbox>  "Lindsay.Cowell@utsouthwestern.edu" .
@@ -5188,7 +5200,7 @@ _:b268  <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/symp.obo" .
 
 <http://purl.obolibrary.org/obo/t4fs>
-        <http://identifiers.org/preferredPrefix>  "TF4S" ;
+        <http://identifiers.org/preferredPrefix>  "T4FS" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
         <http://purl.org/dc/elements/1.1/description>  "A terminology for the skills necessary to make data FAIR and to keep it FAIR." ;
         <http://purl.org/dc/elements/1.1/title>  "terms4FAIRskills" ;

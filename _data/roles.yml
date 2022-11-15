@@ -21,7 +21,7 @@
     - name: matentzn
       orcid: 0000-0002-7356-1779
       status: lead
-- name: OBO NOR Dashboard maintainer
+- name: OBO New Ontology Request (NOR) Manager
   open: true
   commitment: 2-6 hours per month
   requirements:
@@ -32,6 +32,11 @@
     You will be responsible for registering new ontologies at the OBO dashboard and helping their
     owners pass them.
   responsibilities:
+    - Checking OBOFoundry.github.io at least weekly for NOR related issues and pull requests.
+    - Managing the NOR Process (https://obofoundry.org/docs/SOP.html#NOR)
+    - Assisting NOR submitters to understanding the NOR process and passing the NOR Dashboard
+    - Assigning and reminding OBO Operations Committee Members as reviewers
+    - Assisting successful NOR submitters to making registry metadata and PURL pull requests
   people:
     - name: matentzn
       orcid: 0000-0002-7356-1779
@@ -151,6 +156,21 @@
     Assigning incoming issues at https://github.com/OBOFoundry/OBOFoundry.github.io, tagging them, chasing them
   responsibilities:
     - "Tagging metadata related issues with 'attn: Technical Working WG' and 'metadata'."
+  people:
+    - name: nlharris
+      orcid: 0000-0001-6315-3707
+      status: lead
+      start: 2019-01
+- name: OBO Google Service Manager
+  open: true
+  description: |
+    Managing the OBO Google Drives, Calendars, Mailing list and Meeting Minutes
+  responsibilities:
+    - Adding and removing people from OBO Mailing Lists
+    - Adding new OBO Ops members to Google Drive and removing alumni
+    - Adding important OBO events to the OBO calendar and sending out invites
+    - Managing public and internal OBO Google Drives
+    - Report adding members to the to any OBO Google drive with Write or Admin rights to the OBO Operations Committee
   people:
     - name: nlharris
       orcid: 0000-0001-6315-3707
