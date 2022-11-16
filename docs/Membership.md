@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: Membership
 title: Membership
 ---
 

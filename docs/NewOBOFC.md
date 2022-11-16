@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: OFOCMember
 title: Becoming a member of the OBO Operations Committee
 ---
 
