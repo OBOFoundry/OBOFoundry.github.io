@@ -1,7 +1,7 @@
 [Operations Committee](/docs/OperationsCommittee.html)
 
 - [Membership](/docs/Membership.html)
-- [Logistics](/docs/OBOOpsLogistics.md)
+- [Logistics](/docs/OBOOpsLogistics.html)
 - [Policy Decisions](/docs/OperationsCommitteePolicyDecisions.html)
 
 [Editorial Working Group](/docs/EditorialWG.html)
