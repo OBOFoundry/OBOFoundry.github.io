@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: OutreachWG
 title: Outreach Working Group
 ---
 

@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: OperationsCommittee
 title: Operations Committee
 ---
 

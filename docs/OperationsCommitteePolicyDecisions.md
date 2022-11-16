@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: OperationsCommitteePolicyDecisions
 title: Operations Committee Policy Decisions
 ---
 
