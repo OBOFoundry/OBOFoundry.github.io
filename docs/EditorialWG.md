@@ -22,7 +22,6 @@ Current activities are focused on creating guidelines for reviews. Once those gu
 
 - [Ontology review process guidelines](/docs/ReviewProcessGuidelines.html)
 - [Ontology review criteria policies](/docs/ReviewCriteriaPolicies.html)
-- [Ontology review management guidelines](/docs/ReviewManagementGuidelines.html)
 
 ### Principles Review
 
