@@ -1,4 +1,8 @@
-## OBO Role: New Ontology Request (NOR) Manager
+---
+layout: doc
+permalink: /role/nor-manager
+title: OBO Role: New Ontology Request (NOR) Manager
+---
 
 The New Ontology Request (NOR) Manager has these basic duties:
 
