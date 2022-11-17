@@ -20,4 +20,4 @@ This document presents the SOPs for role recruitment and retirement, and the exp
 
 - Role holders should announce extended absences (more than 1 month) so that the role can be covered by another OBO Foundry Operations Committee team member. 
   Absences--or desire to retire--should be reported to the respective OBO Working Group liaison (usually the OBO Foundry Committee Technical Working Group liaison) and be announced in an email to the OBO Operations Commitee mailing list.
-- All role holders must manage themselves _pro-actively_: there is no line management structure. It is therefore critical that the role holder take their duties responsibly. 
+- All role holders must manage themselves _proactively_: there is no line management structure. It is therefore critical that the role holder take their duties responsibly. 
