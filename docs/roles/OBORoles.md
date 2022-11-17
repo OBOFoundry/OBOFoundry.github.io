@@ -1,6 +1,6 @@
 # OBO Foundry Roles
 
-OBO Foundry Roles are designed to manage a single aspect of the day-to-day activities of the OBO Foundry. 
+Each OBO Foundry Role is designed to manage a single aspect of the day-to-day activities of the OBO Foundry. 
 This document presents the SOPs for role recruitment and retirement, and the expectations and responsibilities common to all roles.
 
 ## General SOPs for role recruitment and retirement
