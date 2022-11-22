@@ -20,21 +20,21 @@ For terms lacking textual definitions, there should be evidence of implementatio
 
 Logical definitions, when present, should agree with textual definitions and vice versa. This is important for two reasons: (1) Reasoners classify terms solely based on logical definitions, while humans predominantly classify terms based on textual definitions, and mismatches between the two can cause unexpected misclassification; and (2) Curators could create incorrect annotations. An example of mismatched definitions:
 
-<pre>
+```
 http://purl.obolibrary.org/obo/OBI_0003243 blood assay datum
 
 Text definition: "A data item that is the specified output of a blood assay."
-</pre>
+```
 
 Logical definition (that does not match the textual def): 
-<pre>
+```
 = 'information content entity' and (is_specified_output_of some 'blood assay')
-</pre>
+```
 
 Logical definition (that matches the textual def): 
-<pre>
+```
 = 'data item' and (is_specified_output_of some 'blood assay')
-</pre>
+```
 
 While both logical definitions can be used to define the class, one better fits with the textual definition than the other.
 
