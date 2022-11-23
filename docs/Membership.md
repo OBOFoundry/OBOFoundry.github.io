@@ -14,6 +14,7 @@ There are currently three working groups. Each page lists their respective membe
 <table class="table table-striped table-hover">
 <thead>
 <tr>
+    <th role="columnheader">Picture</th>
     <th role="columnheader">Name</th>
     <th role="columnheader">ORCID</th>
     <th role="columnheader">GitHub</th>
@@ -26,6 +27,7 @@ There are currently three working groups. Each page lists their respective membe
 {% assign members = site.data.operations.members | sort: "name" %}
 {% for member in members %}
 <tr>
+    <td><img src="/images/ofoc/{{ member.github }}.png" alt="{{ member.name }} photo" style="max-height: 100px" class="align-text-top"></td>
     <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
     <td><a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a></td>
     <td><a href="https://github.com/{{ member.github }}">{{ member.github }}</a></td>
