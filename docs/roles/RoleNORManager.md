@@ -8,7 +8,7 @@ The New Ontology Request (NOR) Manager has these basic duties:
 
 1. Receiving `new ontology` requests on OBO and acknowledging the receipt
 2. Including the ontology into the OBO New Ontology Request (NOR) Dashboard
-3. Supporting the New Ontology requestor to passing the OBO Dashboard
+3. Supporting the New Ontology requestor to pass the OBO Dashboard
 4. Assigning a provisional reviewer from the OBO Operations Committee
 5. Removing the accepted ontology from the Dashboard upon acceptance
 
