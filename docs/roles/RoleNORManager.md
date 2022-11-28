@@ -25,7 +25,7 @@ The New Ontology Request (NOR) Manager has these basic duties:
     First, you will have to pass [OBO NOR Dashboard](https://obofoundry.org/obo-nor.github.io/dashboard/index.html). Pass means that no check _apart from `Users` may be red_.
     After you have successfully passed the Dashboard you will be assigned an OBO Operations committee member to review the ontology.
     
-    Usually, the review will result in an opportunity to you to improve the ontology.
+    Usually, the review will result in an opportunity for you to improve the ontology.
     When the reviewer believes the ontology is ready for presentation to the OBO Operations Committee, they will present
     your ontology during an OBO Operations Call. This gives other members of the
     committee the opportunity to assess your work.
