@@ -16,7 +16,7 @@ This document presents the SOPs for role recruitment and retirement, and the exp
 - Each candidate must submit an application for a role to the OBO Operations Committee. The application should outline the motivation for taking on the role as well as 
   describe the skillsets that will make them suitable for that role.
 - Applications will be reviewed by the OBO Operations Committee. Decisions for appointing a member of the community to a role will be based on vote. A positive outcome occurs (that is, the appointment is approved) if the candidate receives at least 70% in favor.
-- Any OBO Operations Committee member may suggest that an individual be removed from a role. In such case, a vote must be called to enact the removal. A postive outcomes occurs (that is, the removal is implemented) if at least 70% of the OBO Operations Committee members are in favor of removal.
+- Any OBO Operations Committee member may suggest that an individual be removed from a role. In such case, a vote must be called to enact the removal _during an OBO Operations Call_. A postive outcomes occurs (that is, the removal is implemented) if at least 70% of the OBO Operations Committee members _present in the call_ are in favor of removal.
 - Removal from a role only impacts the privileges granted as part of the role (e.g., revoking Google Admin rights or GitHub Maintainer rights), at the discretion of the Working Group managing the role. It does not remove the person from OBO Operations Committee membership.
  
 
