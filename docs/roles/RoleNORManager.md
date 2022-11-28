@@ -1,6 +1,6 @@
 ---
 layout: doc
-permalink: /role/nor-manager
+permalink: /roles/nor-manager
 title: OBO Role: New Ontology Request (NOR) Manager
 ---
 
