@@ -41,7 +41,25 @@ The New Ontology Request (NOR) Manager has these basic duties:
 
 ### Including the ontology into the OBO New Ontology Request (NOR) Dashboard
 
+The OBO NOR Dashboard is managed here: https://github.com/OBOFoundry/obo-nor.github.io.
 
-    After the dashboard is run, the OBO dashboard administrator informs the submitter about the need to fix the issues revealed by the dashboard, noting this is not part of the review itself, just a precursor, and that upon completion, a liaison will be assigned.
-    At the next OBO Foundry Operations Committee conference call (hereafter, "Operations call"), a liaison is selected to be responsible for the issue. This liaison becomes familiar with the new ontology and rallies the appropriate people to provide feedback.
-    At the next Operations call after that one, the liaison presents the New Ontology Request (NOR) to the OBO Foundry Operations Committee and answers questions. In most cases, the information provided will be sufficient to either grant or refuse the prefix request. In some cases, the committee may choose to postpone its decision to require some clarification and fixes from the submitter. The liaison MUST be present at the Operations call in order for the NOR case to be discussed. If the liaison does not participate for 2 consecutive Operations calls, the chair of the second call emails the liaison to request a statement confirming the ability to continue as liaison. If the liaison does not participate in 3 consecutive Operations calls and did not respond to the email above, a new liaison is assigned during that third call.
+Integrating the submitted ontology into OBO dashboard means simply adding a new record into the `ontologies->custom` subsection
+of the [dashboard config file](https://github.com/OBOFoundry/obo-nor.github.io/blob/master/dashboard-config.yml). Only information explicitly mentioned in the New Ontology Request should be used.
+
+### Supporting the New Ontology requestor to pass the OBO Dashboard
+
+For many New Ontology requestors it is not always easy to interpret the warnings on the OBO Dashboard. The NOR Manager is responsible for supporting the requestor interpreting the dashboard (but _not_ to fix the problems). There is no need to dig deep into the ontologies to diagnose problems - that is the requestors responsibility - but pointing to documentation like the [OBO Foundry Principles](https://obofoundry.org/principles/fp-000-summary.html) may be necessary.
+
+### Assigning a provisional reviewer from the OBO Operations Committee
+
+If and only if the requested ontology passes the dashboard, i.e. no more "red" exists aside from the `Usage` column, the NOR manager assigns the next available reviewer from the ['OBO Operations Members' sheet in the OBO Duty Rotation Table](https://docs.google.com/spreadsheets/d/19GrEWVnpxjnrig0iYUOiUvsZ0JDbprMh1USnRb-SXtg/edit). The reviewer is assigned by 
+
+1. Adding them to the ['Ontology Review Rotation' sheet in the OBO Duty Rotation Table](https://docs.google.com/spreadsheets/d/19GrEWVnpxjnrig0iYUOiUvsZ0JDbprMh1USnRb-SXtg/edit)
+2. Assigning the NOR GitHub issue to the reviewer
+3. Announcing the assignment to the OBO Operations Technical Working Group Liason to include the the OBO Operations Meeting Report.
+
+### Removing the accepted ontology from the Dashboard upon acceptance
+
+When the ontology is accepted, the OBO NOR review needs to make sure that the accepted ontology is removed from the OBO NOR Dashboard.
+
+Note 29.11.2022: There is a [work in progress](https://github.com/OBOFoundry/obo-nor.github.io/pull/23) which can deal with this step automatically, but the responsibility still stays with the OBO NOR Manager.
