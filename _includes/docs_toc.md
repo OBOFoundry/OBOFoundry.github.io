@@ -17,6 +17,6 @@
 
 [Outreach Working Group](/docs/OutreachWG.html)
 
-[Roles](/roles/)
+[OBO Foundry Organizational Roles](/roles/)
 
 - [Overview](/roles/overview)
