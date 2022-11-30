@@ -14,6 +14,12 @@ permalink: /roles/overview
 <blockquote>This role is open to new members.</blockquote>
 {% endif %}
 
+{% if role.sop %}
+### Standard Operating Procedures
+
+See [here]({{ role.sop }}).
+{% endif %}
+
 {% if role.requirements %}
 
 ### Requirements
