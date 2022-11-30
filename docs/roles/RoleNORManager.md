@@ -60,6 +60,6 @@ If and only if the requested ontology passes the dashboard, i.e. no more "red" e
 
 ### Removing the accepted ontology from the Dashboard upon acceptance
 
-When the ontology is accepted, the OBO NOR review needs to make sure that the accepted ontology is removed from the OBO NOR Dashboard.
+When the ontology is accepted, the OBO NOR reviewer needs to make sure that the accepted ontology is removed from the OBO NOR Dashboard.
 
 Note 29.11.2022: There is a [work in progress](https://github.com/OBOFoundry/obo-nor.github.io/pull/23) which can deal with this step automatically, but the responsibility still stays with the OBO NOR Manager.
