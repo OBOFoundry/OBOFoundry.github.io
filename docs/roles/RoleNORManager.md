@@ -58,7 +58,7 @@ If and only if the requested ontology passes the dashboard, i.e. no more "red" e
 2. Assigning the NOR GitHub issue to the reviewer
 3. Announcing the reviewer assignment to the OBO Operations Technical Working Group Liaison to include in their report at the next OBO Operations meeting.
 
-### Removing the accepted ontology from the Dashboard upon acceptance
+### Removing the accepted ontology from the NOR Dashboard upon acceptance
 
 When the ontology is accepted, the OBO NOR reviewer needs to make sure that the accepted ontology is removed from the OBO NOR Dashboard.
 
