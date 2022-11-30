@@ -56,7 +56,7 @@ If and only if the requested ontology passes the dashboard, i.e. no more "red" e
 
 1. Adding them to the ['Ontology Review Rotation' sheet in the OBO Duty Rotation Table](https://docs.google.com/spreadsheets/d/19GrEWVnpxjnrig0iYUOiUvsZ0JDbprMh1USnRb-SXtg/edit)
 2. Assigning the NOR GitHub issue to the reviewer
-3. Announcing the assignment to the OBO Operations Technical Working Group Liason to include the the OBO Operations Meeting Report.
+3. Announcing the reviewer assignment to the OBO Operations Technical Working Group Liaison to include in their report at the next OBO Operations meeting.
 
 ### Removing the accepted ontology from the Dashboard upon acceptance
 
