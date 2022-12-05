@@ -7,7 +7,7 @@ contact:
   github: dalalghamdi
   label: Dalia Alghamdi
   orcid: 0000-0002-2801-0767
-description: "The Next Generation Biobanking Ontology (NGBO) is an open application ontology representing contextual data about omics digital assets in biobank. The ontology focuses on capturing the information about three main activities: wet bench analysis used to generate omics data, bioinformatics analysis used to analyze and interpret data, and data management."
+description: 'The Next Generation Biobanking Ontology (NGBO) is an open application ontology representing contextual data about omics digital assets in biobank. The ontology focuses on capturing the information about three main activities: wet bench analysis used to generate omics data, bioinformatics analysis used to analyze and interpret data, and data management.'
 domain: investigations
 homepage: https://github.com/Dalalghamdi/NGBO
 issue_requested: 1819
