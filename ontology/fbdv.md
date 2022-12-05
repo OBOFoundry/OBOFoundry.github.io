@@ -35,6 +35,13 @@ taxon:
   label: Drosophila
 tracker: http://purl.obolibrary.org/obo/fbdv/tracker
 activity_status: active
+
+usages:
+- user: http://flybase.org (link to group)
+  description: Used to record stages in expression and phenotype curation
+  examples: https://flybase.org/reports/FBgn0041604#expression
+   - url: http://www.informatics.jax.org/disease/DOID:4123 (link to specific example)
+     description: Expression of DLP in embryonic/larval midgut primordium at[embryonic stage 13](http:purl.obolibrary.org/obo//FBdv_00005328) (Khare and Baumgartner, 2000)
 ---
 
 A structured controlled vocabulary of the development of <i>Drosophila melanogaster</i>.
