@@ -13,7 +13,7 @@ homepage: https://github.com/Dalalghamdi/NGBO
 issue_requested: 1819
 license:
   label: CC BY 4.0
-  url: url: https://creativecommons.org/licenses/by/4.0/
+  url: https://creativecommons.org/licenses/by/4.0/
 preferredPrefix: NGBO
 products:
 - id: ngbo.owl
