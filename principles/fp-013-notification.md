@@ -45,7 +45,7 @@ Examples
 - GitHub issue: https://github.com/geneontology/go-announcements/issues/275
 - Social media (Twitter): https://twitter.com/diseaseontology/status/1301907848625033216
 - Mailing list announcement (general): https://groups.google.com/g/obo-discuss/c/RrCF5f9FRC4/m/nEVwLqN5CQAJ
-- Mailing list announcement (ontology-specific): https://sourceforge.net/p/obi/mailman/message/37667479/      ........can we find a better example?
+- Mailing list announcement (ontology-specific): https://groups.google.com/g/obi-users/c/wweskCfHbSc
 - GitHub pre-release: https://github.com/obi-ontology/obi/pull/1558
 - Advance release note: https://proconsortium.org/download/release_55.0/pro_release_note.txt
 
