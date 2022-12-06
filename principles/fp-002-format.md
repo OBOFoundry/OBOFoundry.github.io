@@ -45,4 +45,3 @@ The ontology MUST be available in RDF/XML format.
 To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%232+%22Format%22+%3CENTER+ISSUE+TITLE%3E).
 
 To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%232+%22Format%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
-

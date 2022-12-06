@@ -5,12 +5,13 @@ title: Amphibian gross anatomy
 contact:
   email: david.c.blackburn@gmail.com
   label: David Blackburn
-taxon:
-  id: NCBITaxon:8292
-  label: Amphibia
+domain: anatomy and development
 homepage: http://github.com/seger/aao
 is_obsolete: true
 replaced_by: uberon
+taxon:
+  id: NCBITaxon:8292
+  label: Amphibia
 activity_status: inactive
 ---
 

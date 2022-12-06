@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import json
-import os
 import re
 import sys
 from argparse import ArgumentParser
@@ -28,7 +27,7 @@ LEGACY_LICENSE_PREFIXES = {
 }
 
 
-def main(args):
+def main():
     global metadata_grid
     parser = ArgumentParser(
         description="""
@@ -97,8 +96,8 @@ def load_data(yaml_infile):
 def get_schema():
     """Return a schema from the master schema directory."""
     schema = None
+    file = SCHEMA_FILE
     try:
-        file = SCHEMA_FILE
         with open(file, "r") as s:
             schema = json.load(s)
     except Exception as e:
@@ -121,7 +120,7 @@ def validate_metadata(item, schema):
     results = {}
 
     # determine how to sort this item in the grid:
-    results["foundry"] = True if item.get("in_foundry_order") == 1 else False
+    results["foundry"] = False  # True if item.get("in_foundry_order") == 1 else False
     results["obsolete"] = True if item.get("is_obsolete") is True else False
     # if there is no status, put them at the bottom with inactive:
     results["ontology_status"] = (
@@ -151,11 +150,16 @@ def validate_metadata(item, schema):
             else:
                 path = ["properties", title]
             abs_schema = schema
+            level = None
             for schema_item in path:
                 if schema_item in abs_schema:
                     if "level" in abs_schema[schema_item]:
                         level = abs_schema[schema_item]["level"]
                     abs_schema = abs_schema[schema_item]
+            if level is None:
+                raise ValueError
+        else:
+            raise ValueError
 
         # add to the results map
         results[title] = level
@@ -179,7 +183,7 @@ def validate_metadata(item, schema):
         if not (
             (
                 item.get("activity_status") == "orphaned"
-                and title in ["contact", "license", "license-lite"]
+                and title in ["contact", "license"]
             )
             or (
                 item.get("is_obsolete") is True
@@ -190,7 +194,7 @@ def validate_metadata(item, schema):
         ):
             # get a message for displaying on terminal
             msg = ve.message
-            if title in ["license", "license-lite"]:
+            if title in ["license"]:
                 # license error message can show up in a few different ways
                 search = re.search("'(.+?)' is not one of", msg)
                 if search:
@@ -383,4 +387,4 @@ def save_results(results, violations_outfile):
 
 
 if __name__ == "__main__":
-    main(sys.argv)
+    main()

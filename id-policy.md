@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: default
 title: ID Policy
 ---
 
@@ -13,20 +13,20 @@ In the OWL language, all elements of an ontology (including classes/terms, and t
 
 For example:
 
-* <http://purl.obolibrary.org/obo/UBERON_0000955> UBERON class PURL for 'brain'
-* <http://purl.obolibrary.org/obo/obi.owl> ontology PURL for OBI
+- <http://purl.obolibrary.org/obo/UBERON_0000955> UBERON class PURL for 'brain'
+- <http://purl.obolibrary.org/obo/obi.owl> ontology PURL for OBI
 
 Note that legacy formats such as obo-format and many bioinformatics databases require the use of short-form identifiers (e.g. GO:0008150) to identify ontology terms. In this document we provide a well-defined mapping between these short prefixed identifiers and PURLs by considering the identifiers to be [CURIE](https://en.wikipedia.org/wiki/CURIE)s.
 
-This document addresses identifiers *only* for ontology terms, and not for Dbxrefs.
+This document addresses identifiers _only_ for ontology terms, and not for Dbxrefs.
 
 ## Design goals
 
- - There must be a predictable, bidirectional mapping between OBO IDs, and OBO Foundry-compliant URIs.
- - The URIs should resolve to useful information about a term.
- - The URIs should be designed so that they can be maintained over time to keep pointing to useful information.
- - Each OBO ID is assigned to a only single term within the set of all OBO ontologies.
- - There is a 1:1 mapping of OBO IDs to Foundry-compliant URIs.
+- There must be a predictable, bidirectional mapping between OBO IDs, and OBO Foundry-compliant URIs.
+- The URIs should resolve to useful information about a term.
+- The URIs should be designed so that they can be maintained over time to keep pointing to useful information.
+- Each OBO ID is assigned to a only single term within the set of all OBO ontologies.
+- There is a 1:1 mapping of OBO IDs to Foundry-compliant URIs.
 
 ### Format of OBO-format IDs
 
@@ -85,20 +85,20 @@ A request should include information about the ontology, such as scope and maint
 
 #### Guidelines for selecting an IDSPACE
 
-* Use three or more letters; the OBO Library **does not** accept new two-letter IDSPACEs
-* Avoid the letter "O" in three-letter IDSPACES; many ontologies use "O" for "Ontology" which limits the number of combinations
-* Select a longer IDSPACE for ontologies that are more restricted in scope (e.g., species-specific phenotype ontologies)
-* Search **each** of the following registries to make sure your IDSPACE doesn't conflict with one inside or outside of the OBO Library:
-<br>&emsp; - [OBO Foundry](https://obofoundry.org) 
-<br>&emsp; - [Bioregistry](https://bioregistry.io) (or [browse here](https://bioregistry.io/registry/))
-<br>&emsp; - [BioPortal](https://bioportal.bioontology.org/) (or [browse here](https://bioportal.bioontology.org/ontologies))
+- Use three or more letters; the OBO Library **does not** accept new two-letter IDSPACEs
+- Avoid the letter "O" in three-letter IDSPACES; many ontologies use "O" for "Ontology" which limits the number of combinations
+- Select a longer IDSPACE for ontologies that are more restricted in scope (e.g., species-specific phenotype ontologies)
+- Search **each** of the following registries to make sure your IDSPACE doesn't conflict with one inside or outside of the OBO Library:
+  <br>&emsp; - [OBO Foundry](https://obofoundry.org)
+  <br>&emsp; - [Bioregistry](https://bioregistry.io) (or [browse here](https://bioregistry.io/registry/))
+  <br>&emsp; - [BioPortal](https://bioportal.bioontology.org/) (or [browse here](https://bioportal.bioontology.org/ontologies))
 
 ### Current ontology document
 
 The most current version of an ontology will be at the following URL, where "idspace" is replaced with the IDSPACE of the given ontology in lower case.
 
-* Current OWL: http://purl.obolibrary.org/obo/idspace.owl
-* Current OBO: http://purl.obolibrary.org/obo/idspace.obo
+- Current OWL: http://purl.obolibrary.org/obo/idspace.owl
+- Current OBO: http://purl.obolibrary.org/obo/idspace.obo
 
 For example, the Ontology for Biomedical Investigations has the IDSPACE "OBI", so the current version of the OWL document would be at http://purl.obolibrary.org/obo/obi.owl
 
@@ -106,7 +106,7 @@ Additionally other ontology products can be included underneath this. For exampl
 
 ## Versions of ontologies
 
-Versions are named by a date in the following format: YYYY-MM-DD. For a given version of an ontology, the ontology should be accessible at the following URL, where *idspace*; is replaced by the IDSPACE in lower case:
+Versions are named by a date in the following format: YYYY-MM-DD. For a given version of an ontology, the ontology should be accessible at the following URL, where _idspace_; is replaced by the IDSPACE in lower case:
 
 - OWL: http://purl.obolibrary.org/obo/*idspace*/YYYY-MM-DD/*idspace*.owl
 - OBO: http://purl.obolibrary.org/obo/*idspace*/YYYY-MM-DD/*idspace*.obo

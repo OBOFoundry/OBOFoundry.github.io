@@ -5,12 +5,13 @@ title: Human developmental anatomy, abstract version
 contact:
   email: J.Bard@ed.ac.uk
   label: Jonathan Bard
+domain: anatomy and development
+homepage: null
+is_obsolete: true
+replaced_by: ehdaa2
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
-homepage:
-is_obsolete: true
-replaced_by: ehdaa2
 activity_status: inactive
 ---
 

@@ -1,24 +1,24 @@
 ---
 layout: ontology_detail
 id: tads
+title: Tick Anatomy Ontology
 contact:
   email: dsonensh@odu.edu
   label: Daniel Sonenshine
-license:
-  url: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-description: "The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>"
+description: 'The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>'
 domain: anatomy and development
 homepage: https://www.vectorbase.org/ontology-browser
+license:
+  label: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
 products:
-  - id: tads.owl
-  - id: tads.obo
+- id: tads.owl
+- id: tads.obo
+repository: https://github.com/VEuPathDB-ontology/TADS
 taxon:
   id: NCBITaxon:6939
   label: Ixodidae
-title: Tick Anatomy Ontology
 activity_status: inactive
-repository: https://github.com/VEuPathDB-ontology/TADS
 ---
 
 The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>

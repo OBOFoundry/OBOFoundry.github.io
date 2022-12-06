@@ -1,398 +1,399 @@
 ---
 layout: default
 ---
-{% include navbar.html %}
-<div class="content">
 
+<div class="row">
+  <h1>
+    {% if page.depicted_by %}
+    <img alt="logo" src="{{page.depicted_by}}" style="max-height: 1em" />
+    {% endif %} {{ page.title }}
+  </h1>
+  <p>{{page.description}}</p>
+</div>
 
-  <div>
-    <div class="page-header">
-      <h1>
-        {% if page.depicted_by %}
-        <img alt="logo" src="{{page.depicted_by}}"/>
-        {% endif %}
-        {{ page.title }}
-        <small>{{ page.tagline }}</small>
-      </h1>
-      <p>
-        {{page.description}}
-      </p>
-      {% if page.repository %}
-        {% if page.repository contains "https://github.com/" %}
-        <a href="{{ page.repository }}">
-          <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ page.repository | remove: 'https://github.com/' }}" />
-          <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/{{ page.repository | remove: 'https://github.com/' }}" />
-          <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/{{ page.repository | remove: 'https://github.com/' }}" />
-          <!--<img alt="GitHub issues" src="https://img.shields.io/github/issues/{{ page.repository | remove: 'https://github.com/' }}" />-->
-        </a>
-        {% endif %}
-      {% endif %}
-      {% if page.twitter %}
-        <a href="https://twitter.com/{{ page.twitter }}">
-          <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/{{ page.twitter }}?style=social">
-        </a>
-      {% endif %}
-    </div>
-
+{% if page.is_obsolete %}
+<div class="row">
+  <div class="alert alert-danger" role="alert">
+    This ontology is deprecated!
   </div>
-
-  {% if page.is_obsolete %}
-  <div>
-    <div class="alert alert-danger" role="alert">
-      This ontology is deprecated!
-    </div>
-    {% for repl in page.replaced_by %}
-    <div class="alert alert-info" role="alert">
-      Consider using: <a href="{{repl}}.html">{{repl}}</a>
-    </div>
-    {% endfor %}
+  {% for repl in page.replaced_by %}
+  <div class="alert alert-info" role="alert">
+    Consider using: <a href="{{repl}}.html">{{repl}}</a>
   </div>
-  {% endif %}
-  
-  {% if page.activity_status == "inactive" %}{% unless page.is_obsolete %}
-  <div>
-    <div class="alert alert-warning" role="alert">
-      This ontology is inactive. For more information see <a href="/docs/OntologyStatus.html">here</a>.
-    </div>
+  {% endfor %}
+</div>
+{% endif %} {% if page.activity_status == "inactive" %}{% unless
+page.is_obsolete %}
+<div class="row">
+  <div class="alert alert-warning" role="alert">
+    This ontology is inactive. For more information see
+    <a href="/docs/OntologyStatus.html">here</a>.
   </div>
-  {% endunless %}{% endif %}
-  
-  {% if page.activity_status == "orphaned" %}{% unless page.is_obsolete %}
-  <div>
-    <div class="alert alert-warning" role="alert">
-      This ontology is orphaned. For more information see <a href="/docs/OntologyStatus.html">here</a>.
-    </div>
+</div>
+{% endunless %}{% endif %} {% if page.activity_status == "orphaned" %}{% unless
+page.is_obsolete %}
+<div class="row">
+  <div class="alert alert-warning" role="alert">
+    This ontology is orphaned. For more information see
+    <a href="/docs/OntologyStatus.html">here</a>.
   </div>
-  {% endunless %}{% endif %}
-
-  {% if page.preferredPrefix %}
-  {% assign upperPrefix = page.preferredPrefix | upcase %}
-  {% if upperPrefix != page.preferredPrefix %}
-  <div>
-    <div class="alert alert-info" role="alert">
-      This ontology uses a mixed-case prefix. Identifiers and URIs
-      should use: "{{ page.preferredPrefix }}".
-    </div>
+</div>
+{% endunless %}{% endif %} {% if page.preferredPrefix %} {% assign upperPrefix =
+page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
+<div class="row">
+  <div class="alert alert-info" role="alert">
+    This ontology uses a mixed-case prefix. Identifiers and URIs should use: "{{
+    page.preferredPrefix }}".
   </div>
-  {% endif %}
-  {% endif %}
+</div>
+{% endif %} {% endif %}
 
-  <div class="col-md-12">
+<div class="row">
+  <div class="col-md-8" style="padding-left: 0">
+    {% assign stripped_content_size = content | strip | size %}
 
-    <div class="row">
-      <div class="col-md-8">
+    <div class="card" style="margin-bottom: 1.5em;">
+      <div class="card-body">
         <!-- TODO: each ontology should configure which browsers to be exposed in -->
-        <a href="http://www.ontobee.org/browser/index.php?o={{page.id}}">
-          <button type="button" class="btn btn-default">OntoBee</button>
+        <a href="https://ontobee.org/browser/index.php?o={{page.id}}" class="btn btn-outline-primary">
+          OntoBee
         </a>
         {% if page.aberowl_id %}
-        <a href="http://aber-owl.net/ontology/{{page.aberowl_id | upcase}}">
-          <button type="button" class="btn btn-default">AberOWL</button>
+        <a href="http://aber-owl.net/ontology/{{page.aberowl_id | upcase}}" class="btn btn-outline-primary">
+          AberOWL
         </a>
         {% else %}
-        <a href="http://aber-owl.net/ontology/{{page.id | upcase}}">
-          <button type="button" class="btn btn-default">AberOWL</button>
+        <a href="http://aber-owl.net/ontology/{{page.id | upcase}}" class="btn btn-outline-primary">
+          AberOWL
         </a>
         {% endif %}
-        <a href="http://www.ebi.ac.uk/ols/ontologies/{{page.id}}">
-          <button type="button" class="btn btn-default">OLS</button>
+        <a href="http://www.ebi.ac.uk/ols/ontologies/{{page.id}}" class="btn btn-outline-primary">
+          OLS
         </a>
         {% for b in page.browsers %}
-        <a href="{{b.url}}">
-          <button type="button" class="btn btn-default">{{b.label}}</button>
+        <a href="{{b.url}}" class="btn btn-outline-primary">
+          {{b.label}}
         </a>
         {% endfor %}
-
-        {{ content }}
-
-        <div>
-          <h2>Products</h2>
-          <table class="table">
-            <tbody>
-
-              {% for p in page.products %}
-              <tr>
-                <td>
-                  <a href="http://purl.obolibrary.org/obo/{{p.id}}">{{p.id}}</a>
-                </td>
-                <td>
-                  {{p.title}}
-                </td>
-                <td>
-                  {{p.description}}
-                  {% if p.page %}
-                  <a href="{{p.page}}"> [page]</a>
-                  {% endif %}
-                </td>
-              </tr>
-              {% endfor %}
-            </tbody>
-          </table>
-        </div>
-        {% if page.usages %}
-        <div>
-          <h2>Usages</h2>
-          {% for p in page.usages %}
-          <dl class="dl-horizontal">
-            <dt>User</dt> <dd><a href="{{p.user}}">{{p.user}}</a></dd>
-            <dt>Description</dt><dd>{{p.description}}</dd>
-            {% if p.type %}
-            <dt>Type</dt> <dd>{{p.type}}</dd>
-            {% endif %}
-            {% if p.seeAlso %}
-            <dt>See also</dt> <dd><a href="{{p.seeAlso}}">{{p.seeAlso}}</a></dd>
-            {% endif %}
-            {% if p.examples %}
-            <dt>Examples</dt>
-            <dd>
-              <ul style="padding-left: 20px">
-              {% for example in p.examples %}
-                <li><a href="{{example.url}}">{{example.description}}</a></li>
-              {% endfor %}
-              </ul>
-            </dd>
-            {% endif %}
-            {% if p.publications %}
-            <dt>Publications</dt>
-            <dd>
-              <ul style="padding-left: 20px">
-              {% for publication in p.publications %}
-                <li><a href="{{publication.id}}">{{publication.title}}</a></li>
-              {% endfor %}
-              </ul>
-            </dd>
-            {% endif %}
-          </dl>
-          {% endfor %}
-        </div>
+        <a href="https://bioregistry.io/metaregistry/obofoundry/{{page.id}}" class="btn btn-outline-primary">
+         Bioregistry
+        </a>
+        {% if stripped_content_size > 0 %}
+        <p class="card-text">{{ content }}</p>
         {% endif %}
-
-
       </div>
-
-
-      <div class="col-md-4">
-        <dl class="dl-horizontal" style="dd { margin-left: 0 }">
-
-          <dt>
-            ID Space
-            <span data-toggle="tooltip"
-                  title="ID prefix"
-                  html="true">
-            </span>
-          </dt>
-          <dd>
-            <a href="http://purl.obolibrary.org/obo/{{page.id}}/">{{page.id}}</a>
-          </dd>
-
-          <dt>PURL</dt>
-          <dd>
-            <a href="http://purl.obolibrary.org/obo/{{page.id}}.owl">http://purl.obolibrary.org/obo/{{page.id}}.owl</a>
-          </dd>
-
-          <dt>License</dt>
-          <dd>
-            {% if page.license %}
-            <a href="{{page.license.url}}">{{page.license.label}}</a>
-            {% if page.license.alert %}
-            <div class="alert alert-danger" role="alert">
-              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-              <span class="sr-only">Warning:</span>
-              {{page.license.alert}}
-            </div>
-            {% endif %}
-            {% else %}
-            <div class="alert alert-danger" role="alert">
-              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-              <span class="sr-only">Warning:</span>
-              Not entered
-            </div>
-            {% endif %}
-          </dd>
-
-          <dt>Homepage</dt>
-          <dd>
-            <a href="{{page.homepage}}">{{page.homepage}}</a>
-          </dd>
-          {% for p in page.page %}
-          <dd>
-            <a href="{{p}}">{{p}}</a>
-          </dd>
-          {% endfor %}
-
-          {% if page.biosharing %}
-          <dd>
-            <a href="{{page.biosharing}}">{{page.biosharing}}</a>
-          </dd>
-          {% endif %}
-
-          <dt>Contact</dt>
-          <dd>
-            <a href="mailto:{{page.contact.email}}">{{page.contact.label}}</a>
-          </dd>
-
-          <dt>Trackers</dt>
-          <dd>
-            <a href="{{page.tracker}}">{{page.tracker}}</a>
-          </dd>
-
-          <dt>Domain</dt>
-          <dd>
-            <a href="/domain/{{page.domain}}.html">{{page.domain}}</a>
-          </dd>
-
-          {% if page.mailing_list %}
-          <dt>Mail List</dt>
-          <dd>
-            <a href="{{page.mailing_list}}">{{page.mailing_list}}</a>
-          </dd>
-          {% endif %}
-
-          {% if page.taxon %}
-          <dt>Taxon</dt>
-          <dd>
-            <a href="http://amigo.geneontology.org/amigo/term/{{page.taxon.id}}">{{page.taxon.label}}</a>
-          </dd>
-          {% endif %}
-
-          {% if page.exampleClass %}
-          <dt>Example</dt>
-          <dd>
-            <a href="http://purl.obolibrary.org/obo/{{page.exampleClass}}">{{page.exampleClass}}</a>
-          </dd>
-          {% endif %}
-
-          {% if page.publications %}
-          <dt>Cite</dt>
-          {% for p in page.publications %}
-          <dd>
-            <small><a href="{{p.id}}">{{p.title}}</a></small>
-          </dd>
-          {% endfor %}
-          {% endif %}
-
-          {% if page.funded_by %}
-          <dt>Funding</dt>
-          {% for x in page.funded_by %}
-          <dd>
-            {{x}}
-          </dd>
-          {% endfor %}
-          {% endif %}
-
-          {% if page.used_by %}
-          <dt>Used by</dt>
-          {% for x in page.used_by %}
-          <dd>
-            <a href="{{x.url}}">{{x.label}}</a>
-          </dd>
-          {% endfor %}
-          {% endif %}
-
-          {% if page.dependencies %}
-          <dt>Dependencies</dt>
-          {% for x in page.dependencies %}
-          <dd>
-            <a href="{{x.id}}">{{x.id}}</a>
-          </dd>
-          {% endfor %}
-          {% endif %}
-
-          {% if page.jobs %}
-          <dt>Jobs</dt>
-          {% for p in page.jobs %}
-          <dd>
-            {% if p.type == "travis-cl" or p.id contains "travis" %}
-            <a href="{{p.id}}">
-              <img alt="Build Status" src="{{p.id}}.svg?branch=master"/>
-            </a>
-            {% else %}
-            <a href="{{p.id}}">{{p.type}}</a>
-            {% endif %}
-          </dd>
-          {% endfor %}
-          {% endif %}
-
-          {% if page.review.date and page.review.document %}
-          <dt>OBO Review</dt>
-          <dd>{{page.review.date}} <a href="{{page.review.document.link}}">{{page.review.document.label}}</a><dd>
-          {% endif %}
-
-        </dl>
-
-
-        <div class="btn-group" role="group" aria-label="Source">
-          <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/{{page.id}}.md">
-            <button type="button"
-                    data-toggle="tooltip"
-                    title="See FAQ entry: How is metadata stored?"
-                    html="true"
-                    class="btn btn-default">
-              View
-            </button>
-          </a>
-          <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md">
-
-            <button type="button"
-                    data-toggle="tooltip"
-                    title="See FAQ entry: How I do edit my metadata?"
-                    html="true"
-                    class="btn btn-default">
-              Edit</button>
-          </a>
-          <a href="https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/{{page.id}}.yml">
-
-            <button type="button"
-                    data-toggle="tooltip"
-                    title="See FAQ entry: How I do edit my PURL?"
-                    html="true"
-                    class="btn btn-default">
-              PURL</button>
-          </a>
-          <div>
-            Generated by: <a href="{{site.repo_src}}_layouts/ontology_detail.html">_layouts/ontology_detail.html</a><br/> See <a href="/faq/how-do-i-edit-metadata.html">metadata guide</a>
-          </div>
-          <!-- <button type="button" class="btn btn-default">Help</button> -->
-        </div>
-      </div>
-
-
-
-      <div class="row">
-
-        <footer class="footer">
-          <div class="container">
-            <p class="text-muted">
-              Edit the metadata for this page: <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md">{{page.id}}.md</a> (GitHub will help you create a fork and pull request.)
-
-            </p>
-          </div>
-        </footer>
-      </div>
-
     </div>
 
-    {% if page.comments %}
-    <div>
-      <div >
-        <h2>Comments Section</h2>
-        <p>Feel free to comment on the post but keep it clean and on topic.</p>
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-          var disqus_shortname = '{{ site.comments.disqus.short_name }}';
-
-          /* * * DON'T EDIT BELOW THIS LINE * * */
-          (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    {% if page.publications %}
+    <div class="card" style="margin-bottom: 1.5em;">
+      <div class="card-header">
+        Publications
+      </div>
+      <div class="list-group list-group-flush">
+        {% for p in page.publications %}
+        <div class="list-group-item">
+          <a href="{{p.id}}">{{p.title}}</a>
+          {% if p.preferred %}
+          <span class="badge">Preferred</span>
+          {% endif %}
+        </div>
+        {% endfor %}
       </div>
     </div>
     {% endif %}
 
+    {% if page.funded_by %}
+    <div class="card" style="margin-bottom: 1.5em;">
+      <div class="card-header">
+        Funding
+      </div>
+      <div class="list-group list-group-flush">
+        {% for p in page.funded_by %}
+        <div class="list-group-item">
+          <a href="{{ p.id }}">{{ p.title }}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="card" style="margin-bottom: 1.5em;">
+      <div class="card-header">
+        Products
+      </div>
+      <table class="table table-striped mb-0">
+        <tbody>
+          {% for p in page.products %}
+          <tr>
+            <td>
+              <a href="http://purl.obolibrary.org/obo/{{p.id}}">{{p.id}}</a>
+            </td>
+            <td>{{p.title}}</td>
+            <td>
+              {{p.description}} {% if p.page %}
+              <a href="{{p.page}}"> [page]</a>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    {% if page.usages %}
+    <div class="card" style="margin-bottom: 1.5em;">
+      <div class="card-header">
+        Usages
+      </div>
+      <div class="list-group list-group-flush">
+        {% for p in page.usages %}
+        <div class="list-group-item">
+          <dl class="dl-horizontal" style="margin-bottom: 0">
+            <dt>User</dt>
+            <dd><a href="{{p.user}}">{{p.user}}</a></dd>
+            <dt>Description</dt>
+            <dd>{{p.description}}</dd>
+            {% if p.type %}
+            <dt>Type</dt>
+            <dd>{{p.type}}</dd>
+            {% endif %} {% if p.seeAlso %}
+            <dt>See also</dt>
+            <dd><a href="{{p.seeAlso}}">{{p.seeAlso}}</a></dd>
+            {% endif %} {% if p.examples %}
+            <dt>Examples</dt>
+            {% for example in p.examples %}
+            <dd><a href="{{example.url}}">{{example.description}}</a></dd>
+            {% endfor %} {% endif %} {% if p.publications %}
+            <dt>Publications</dt>
+            <dd>
+              <ul style="padding-left: 20px">
+                {% for publication in p.publications %}
+                <li><a href="{{publication.id}}">{{publication.title}}</a></li>
+                {% endfor %}
+              </ul>
+            </dd>
+            {% endif %}
+          </dl>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
   </div>
+
+  <div class="col-md-4" style="padding-right: 0">
+    <dl class="dl-horizontal" style="margin-left: 0">
+      <dt>
+        ID Space
+        <span data-toggle="tooltip" title="ID prefix" data-html="true"> </span>
+      </dt>
+      <dd>
+        <a href="http://purl.obolibrary.org/obo/{{page.id}}/">{{page.id}}</a>
+      </dd>
+
+      <dt>PURL</dt>
+      <dd>
+        <a href="http://purl.obolibrary.org/obo/{{page.id}}.owl"
+          >http://purl.obolibrary.org/obo/{{page.id}}.owl</a
+        >
+      </dd>
+
+      <dt>License</dt>
+      <dd>
+        {% if page.license %}
+        <a href="{{page.license.url}}">{{page.license.label}}</a>
+        {% if page.license.alert %}
+        <div class="alert alert-danger" role="alert">
+          <span
+            class="glyphicon glyphicon-exclamation-sign"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">Warning:</span>
+          {{page.license.alert}}
+        </div>
+        {% endif %} {% else %}
+        <div class="alert alert-danger" role="alert">
+          <span
+            class="glyphicon glyphicon-exclamation-sign"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">Warning:</span>
+          Not entered
+        </div>
+        {% endif %}
+      </dd>
+
+      <dt>Homepage</dt>
+      <dd>
+        <a href="{{page.homepage}}">{{page.homepage}}</a>
+      </dd>
+      {% for p in page.page %}
+      <dd>
+        <a href="{{p}}">{{p}}</a>
+      </dd>
+      {% endfor %} {% if page.biosharing %}
+      <dd>
+        <a href="{{page.biosharing}}">{{page.biosharing}}</a>
+      </dd>
+      {% endif %}
+
+      <dt>Contact</dt>
+      <dd>
+        <a href="mailto:{{page.contact.email}}">{{page.contact.label}}</a>
+      </dd>
+
+      {% if page.repository and page.repository != page.homepage %}
+      <dt>Repository</dt>
+      <dd>
+        <a href="{{page.repository}}">{{page.repository}}</a>
+      </dd>
+      {% endif %}
+
+      <dt>Tracker</dt>
+      <dd>
+        <a href="{{page.tracker}}">{{page.tracker}}</a>
+      </dd>
+
+      <dt>Domain</dt>
+      <dd>
+        {{page.domain}}
+      </dd>
+
+      {% if page.mailing_list %}
+      <dt>Mailing List</dt>
+      <dd>
+        <a href="{{page.mailing_list}}">{{page.mailing_list}}</a>
+      </dd>
+      {% endif %} {% if page.taxon %}
+      <dt>Taxon</dt>
+      <dd>
+        <a href="http://amigo.geneontology.org/amigo/term/{{page.taxon.id}}"
+          >{{page.taxon.label}}</a
+        >
+      </dd>
+      {% endif %} {% if page.exampleClass %}
+      <dt>Example</dt>
+      <dd>
+        <a href="http://purl.obolibrary.org/obo/{{page.exampleClass}}"
+          >{{page.exampleClass}}</a
+        >
+      </dd>
+      {% endif %} {% if page.issue_requested %}
+      <dt>New Ontology Request</dt>
+      <dd>
+        <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/issues/{{ page.issue_requested }}">
+          #{{ page.issue_requested }}
+        </a>
+      </dd>
+      {% endif %} {% if page.dependencies %}
+      <dt>Dependencies</dt>
+      {% for x in page.dependencies %}
+      <dd>
+        <a href="{{x.id}}">{{x.id}}</a>
+      </dd>
+      {% endfor %} {% endif %} {% if page.jobs %}
+      <dt>Jobs</dt>
+      {% for p in page.jobs %}
+      <dd>
+        {% if p.type == "travis-cl" or p.id contains "travis" %}
+        <a href="{{p.id}}">
+          <img alt="Build Status" src="{{p.id}}.svg?branch=master" />
+        </a>
+        {% else %}
+        <a href="{{p.id}}">{{p.type}}</a>
+        {% endif %}
+      </dd>
+      {% endfor %} {% endif %} {% if page.twitter %}
+      <dt>Twitter</dt>
+      <dd>
+        <a
+          href="https://twitter.com/{{ page.twitter }}"
+          style="padding: 0.5em 0"
+        >
+          <img
+            alt="Twitter Follow"
+            src="https://img.shields.io/twitter/follow/{{ page.twitter }}?style=social"
+          />
+        </a>
+      </dd>
+      {% endif %} {% if page.repository and page.repository contains
+      "https://github.com/" %}
+      <dt>Stars</dt>
+      <dd>
+        <a href="{{ page.repository }}">
+          <img
+            alt="GitHub Repo stars"
+            src="https://img.shields.io/github/stars/{{ page.repository | remove: 'https://github.com/' }}"
+          />
+        </a>
+      </dd>
+      <dt>Contributors</dt>
+      <dd>
+        <a href="{{ page.repository }}">
+          <img
+            alt="GitHub contributors"
+            src="https://img.shields.io/github/contributors/{{ page.repository | remove: 'https://github.com/' }}"
+          />
+        </a>
+      </dd>
+      <dt>Last Commit</dt>
+      <dd>
+        <a href="{{ page.repository }}">
+          <img
+            alt="GitHub last commit"
+            src="https://img.shields.io/github/last-commit/{{ page.repository | remove: 'https://github.com/' }}"
+          />
+        </a>
+        <!--<img alt="GitHub issues" src="https://img.shields.io/github/issues/{{ page.repository | remove: 'https://github.com/' }}" />-->
+      </dd>
+      {% endif %} {% if page.review.date and page.review.document %}
+      <dt>OBO Review</dt>
+      <dd>
+        {{page.review.date}}
+        <a href="{{page.review.document.link}}"
+          >{{page.review.document.label}}</a
+        >
+      </dd>
+      <dd>{% endif %}</dd>
+    </dl>
+
+    <div class="btn-group pull-right" role="group" aria-label="Source">
+      <a
+        href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/{{page.id}}.md"
+        class="btn btn-outline-primary"
+        data-toggle="tooltip"
+        title="See FAQ entry: How is metadata stored?"
+        data-html="true"
+      >
+        View
+      </a>
+      <a
+        href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/ontology/{{page.id}}.md"
+        type="button"
+          data-toggle="tooltip"
+          title="See FAQ entry: How I do edit my metadata?"
+          data-html="true"
+          class="btn btn-outline-primary"
+      >
+        Edit
+      </a>
+      <a
+        href="https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/{{page.id}}.yml"
+        data-toggle="tooltip"
+        title="See FAQ entry: How I do edit my PURL?"
+        data-html="true"
+        class="btn btn-outline-primary"
+      >
+          PURL Config
+      </a>
+    </div>
+    <div>
+      Generated by:
+      <a href="{{site.repo_src}}_layouts/ontology_detail.html"
+        >_layouts/ontology_detail.html</a
+      ><br />
+      See
+      <a href="/faq/how-do-i-edit-metadata.html">metadata guide</a>
+    </div>
+  </div>
+</div>

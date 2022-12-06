@@ -1,7 +1,6 @@
 reports
 util/__pycache__/
 util/principles/__pycache__/
-build/
 .jekyll-cache/
 .DS_Store
 /_site
@@ -12,3 +11,23 @@ build/
 tmp/
 *.tmp
 .venv
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+node_modules/

@@ -1,23 +1,24 @@
 ---
 layout: ontology_detail
 id: ogg
+title: The Ontology of Genes and Genomes
 contact:
   email: yongqunh@med.umich.edu
-  label: Yongqun Oliver He
   github: yongqunh
+  label: Yongqun Oliver He
   orcid: 0000-0001-9189-9661
 description: A formal ontology of genes and genomes of biological organisms.
+domain: biological systems
 homepage: https://bitbucket.org/hegroup/ogg
-repository: https://bitbucket.org/hegroup/ogg
-products:
-  - id: ogg.owl
-title: The Ontology of Genes and Genomes
-tracker: https://bitbucket.org/hegroup/ogg/issues/
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
-activity_status: active
+  url: http://creativecommons.org/licenses/by/3.0/
 preferredPrefix: OGG
+products:
+- id: ogg.owl
+repository: https://bitbucket.org/hegroup/ogg
+tracker: https://bitbucket.org/hegroup/ogg/issues/
+activity_status: active
 ---
 
 # Summary

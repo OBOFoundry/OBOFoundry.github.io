@@ -107,7 +107,7 @@
         "phenotype",
         "investigations",
         "environment",
-        "biochemistry",
+        "chemistry and biochemistry",
         "microbiology",
         "agriculture",
         "diet, metabolomics, and nutrition",
@@ -126,7 +126,25 @@
       }
     },
     "funded_by": {
-      "suggest": false
+      "level": "info",
+      "description": "An optional field containing structured funding sources",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Funding",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "id"
+        ]
+      }
     },
     "homepage": {
       "level": "error",
@@ -321,6 +339,12 @@
           "id": {
             "type": "string",
             "pattern": "^[0-9A-Za-z-_\\/]+\\.(owl|obo|json|omn|ofn|owx|ttl|owl\\.gz)$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
           }
         },
         "required": [
@@ -341,6 +365,9 @@
           },
           "title": {
             "type": "string"
+          },
+          "preferred": {
+            "type": "boolean"
           }
         },
         "required": [
@@ -348,6 +375,16 @@
           "title"
         ]
       }
+    },
+    "issue_requested": {
+      "suggest": false,
+      "type": "integer",
+      "description": "This encodes the number of the issue on the OBO Foundry GitHub repository that was originally used to request this ontology."
+    },
+    "pull_request_added": {
+      "suggest": false,
+      "type": "integer",
+      "description": "This encodes the number of the pull request on the OBO Foundry GitHub repository that was originally used to add this ontology. You can curate additional ones by going to the ontology page (e.g., https://github.com/OBOFoundry/OBOFoundry.github.io/commits/master/ontology/clyh.md) and looking the whole way down the list for the first commit. Click on the title for the commit then you will see if there's a PR associated with it."
     },
     "releases": {
       "suggest": false
@@ -490,7 +527,8 @@
     "tracker",
     "repository",
     "preferredPrefix",
-    "ontology_purl"
+    "ontology_purl",
+    "domain"
   ],
   "level": "error"
 }

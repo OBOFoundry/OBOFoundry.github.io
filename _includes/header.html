@@ -1,0 +1,161 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="/images/foundrylogo.png" alt="" style="max-height: 24px"
+                 class="d-inline-block align-text-top">
+            OBO Foundry
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarAboutDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarAboutDropdown">
+                        <li><a class="dropdown-item" href="/about-OBO-Foundry.html">About</a></li>
+                        <li><a class="dropdown-item" href="/docs/COC.html">Code of Conduct</a></li>
+                        <li><a class="dropdown-item" href="/resources">Resouces</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="/docs/OperationsCommittee.html">Operations Committee</a></li>
+                        <li><a class="dropdown-item" href="/docs/SOP.html" style="padding-left: 2em">Standard Operating
+                            Procedures</a></li>
+                        <li><a class="dropdown-item" href="/docs/EditorialWG.html" style="padding-left: 2em">Editorial
+                            Working Group</a></li>
+                        <li><a class="dropdown-item" href="/docs/TechnicalWG.html" style="padding-left: 2em">Technical
+                            Working Group</a></li>
+                        <li><a class="dropdown-item" href="/docs/OutreachWG.html" style="padding-left: 2em">Outreach
+                            Working Group</a></li>
+                        <li><a class="dropdown-item" href="/roles/">OBO Foundry Organizational Roles</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="https://github.com/OBOFoundry/OBOFoundry.github.io">GitHub
+                            Project</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/OBOFoundry">GitHub Organization</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarPrinciplesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Principles
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarPrinciplesDropdown">
+                        {% for principle in site.principles %}
+                        <li><a class="dropdown-item" href="/principles/{{ principle.id }}.html">{{ principle.title
+                            }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarOntologiesDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Ontologies
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarOntologiesDropdown">
+                        <li><a class="dropdown-item" href="/">Ontology Table</a></li>
+                        <li><a class="dropdown-item" href="/id-policy.html">ID Policy</a></li>
+                        <li><a class="dropdown-item" href="http://dashboard.obofoundry.org/dashboard/index.html">OBO
+                            Dashboard</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology">
+                                Ontologies Metadata Source
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/registry/">
+                                Combined Metadata
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.yml">
+                                Ontology YAML
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.jsonld">
+                                Ontology JSON-LD
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.ttl">
+                                Ontology RDF/Turtle
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarCitationDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Citation
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarCitationDropdown">
+                        <li><a class="dropdown-item" href="/docs/Citation.html">Cite Ontologies</a></li>
+                        <li><a class="dropdown-item" href="/registry/publications.html">Cite the OBO Foundry</a></li>
+                        <li><a class="dropdown-item" href="/registry/publications.html">Publications Related to the OBO
+                            Foundry</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarParticipateDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Participate
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarParticipateDropdown">
+                        <li>
+                            <a class="dropdown-item" href="https://github.com/OBOFoundry/OBOFoundry.github.io/issues">OBO
+                                Foundry Issue Tracker</a></li>
+                        <li>
+                            <a class="dropdown-item" href="https://groups.google.com/forum/#!forum/obo-discuss">OBO-Discuss
+                                Mail List</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://groups.google.com/forum/#!members/obo-tools">OBO-Tools
+                                Mail List</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="https://obo-communitygroup.slack.com/archives/C01DP18L5GW">OBO
+                                Community Slack channel</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/docs/NewOBOFC.html">Join the OBO Operations Committee</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/faq/how-do-i-register-my-ontology.html">Submit your
+                                ontology</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/faq/index.html">FAQ</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search" action="https://ontobee.org/search" method="get">
+                <!-- while the ontology input doesn't do anything, the Ontobee site is broken and doesn't work if it's missing -->
+                <input name="ontology" type="hidden" value=""/>
+                <input class="form-control me-2" type="search" placeholder="Search Ontobee" aria-label="Search"
+                       name="keywords">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>

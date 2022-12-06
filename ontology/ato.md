@@ -5,11 +5,12 @@ title: Amphibian taxonomy
 contact:
   email: david.c.blackburn@gmail.com
   label: David Blackburn
+domain: organisms
+homepage: http://www.amphibanat.org
+is_obsolete: true
 taxon:
   id: NCBITaxon:8292
   label: Amphibia
-homepage: http://www.amphibanat.org
-is_obsolete: true
 activity_status: inactive
 ---
 
