@@ -6,6 +6,7 @@ contact:
   email: cherry@genome.stanford.edu
   label: Mike Cherry
   orcid: 0000-0001-9163-5180
+domain: phenotype
 homepage: http://www.yeastgenome.org/
 is_obsolete: true
 replaced_by: apo

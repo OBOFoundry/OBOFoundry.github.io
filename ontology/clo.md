@@ -33,8 +33,6 @@ activity_status: active
 
 The Cell Line Ontology (CLO) is a community-driven ontology that is developed to standardize and integrate cell line information and support computer-assisted reasoning.
 
-* Home: [http://www.clo-ontology.org](http://www.clo-ontology.org)  
-
 # Download
 
 Use the following URI to download this ontology

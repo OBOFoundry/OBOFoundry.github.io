@@ -9,7 +9,7 @@ contact:
   orcid: 0000-0002-8457-6693
 description: COB brings together key terms from a wide range of OBO projects to improve interoperability.
 domain: upper
-homepage: https://github.com/OBOFoundry/COB
+homepage: https://obofoundry.org/COB/
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/

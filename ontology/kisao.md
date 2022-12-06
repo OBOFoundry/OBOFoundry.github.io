@@ -23,8 +23,10 @@ contact:
 description: A classification of algorithms for simulating biology, their parameters, and their outputs
 domain: simulation
 funded_by:
-- NIH P41EB023912
-- NIH R35GM119771
+- id: https://grantome.com/search?q=P41EB023912
+  title: NIH P41EB023912
+- id: https://grantome.com/search?q=R35GM119771
+  title: NIH R35GM119771
 homepage: https://github.com/SED-ML/KiSAO
 license:
   label: Artistic License 2.0

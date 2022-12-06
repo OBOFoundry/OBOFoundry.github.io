@@ -8,6 +8,7 @@ contact:
   label: Asiyah Yu Lin
   orcid: 0000-0002-5379-5359
 description: An ontology that formalizes the genomic element by defining an upper class genetic interval
+domain: chemistry and biochemistry
 homepage: https://code.google.com/p/ontology-for-genetic-interval/
 is_obsolete: true
 products:

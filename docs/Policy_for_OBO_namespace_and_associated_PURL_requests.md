@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: Policy_for_OBO_namespace_and_associated_PURL_requests
 title: OBO Foundry membership requirements and technical details
 ---
 
@@ -14,36 +13,33 @@ title: OBO Foundry membership requirements and technical details
 
 4. Before you participate in our community, please read and agree to follow our [Code of Conduct](http://obofoundry.org/docs/COC.html).
 
-
 # Requirements for OBO Membership
 
 1. A project should exist, with work started. We will not "pre-book" IDSPACEs and domains for potential future resources.
-2. A project must be doing original work within the biological ontology community. 
-    * We will not provide an IDSPACE for a project that is issuing new identifier for existing ontologies.
-    * If there is clear overlap with an existing domain ontology, you must demonstrate a good faith effort to work with that ontology to provide any new terms needed.
+2. A project must be doing original work within the biological ontology community.
+   - We will not provide an IDSPACE for a project that is issuing new identifier for existing ontologies.
+   - If there is clear overlap with an existing domain ontology, you must demonstrate a good faith effort to work with that ontology to provide any new terms needed.
 3. The required IDSPACE must be available. We do not allow two-letter IDSPACEs and strongly discourage three-letter IDSPACEs that contain the letter "O". For more details, please see the guidelines for [allocating IDSPACEs](http://obofoundry.org/id-policy.html#allocating-idspaces).
 4. The resource must be publicly available when released. The general expectation is that the ontology source code is available on a public repository such as GitHub.
 5. There must be a contact person for the resource. The contact person for resources must be subscribed to our main communication channel, the [obo-discuss](https://groups.google.com/forum/#!forum/obo-discuss) mailing list.
 6. The requestor and/or contact person should be ready to discuss issues such as whether the ontology is orthogonal, whether there is potential to collaborate with existing efforts.
-7. It is expected that solicitation of a IDSPACE is done _before_ the IDSPACE is used for identifiers. A common strategy is to develop an ontology, request a IDSPACE, and translate the initial URIs used to the PURLs some time before the initial release.  **There is no guarantee that you will be granted your IDSPACE, even if you have been using it in your file**.
-8. As of 4th May 2021, every new ontology submission is required to pass the [OBO Dashboard](http://dashboard.obofoundry.org/) quality control, which means that they are not allowed to have any substantial errors (anything "red"). The only exceptions to this requirement are (1) `Users`, and (2) results in the `Report` that pertain to terms from imported (external) ontologies. Your ontology will be set up in a [provisional Dashboard](https://obofoundry.github.io/obo-nor.github.io/dashboard/index.html) as soon as the GitHub submission request is made. OBO foundry will provide support to help you fix any issues your submission might have. 
-
+7. It is expected that solicitation of a IDSPACE is done _before_ the IDSPACE is used for identifiers. A common strategy is to develop an ontology, request a IDSPACE, and translate the initial URIs used to the PURLs some time before the initial release. **There is no guarantee that you will be granted your IDSPACE, even if you have been using it in your file**.
+8. As of 4th May 2021, every new ontology submission is required to pass the [OBO Dashboard](http://dashboard.obofoundry.org/) quality control, which means that they are not allowed to have any substantial errors (anything "red"). The only exceptions to this requirement are (1) `Users`, and (2) results in the `Report` that pertain to terms from imported (external) ontologies. Your ontology will be set up in a [provisional Dashboard](https://obofoundry.github.io/obo-nor.github.io/dashboard/index.html) as soon as the GitHub submission request is made. OBO foundry will provide support to help you fix any issues your submission might have.
 
 # Process
 
 ## 1. Submitting your ontology to request the IDSPACE
 
 1. Submit your request on our [GitHub tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues). Select `New Issue` and then select `New Ontology Request`. Fill out the requested information as completely as possible.
-2. Send an email to [obo-discuss](mailto:obo-discuss@googlegroups.com) with your request to allow community feedback (you may need to [apply to join group](https://groups.google.com/forum/#!forum/obo-discuss) first.) Be sure to include the link to the issue you created in step 1. 
-3. (_Optional_): If you would like to join the obo-community Slack, please indicate this in your email. 
+2. Send an email to [obo-discuss](mailto:obo-discuss@googlegroups.com) with your request to allow community feedback (you may need to [apply to join group](https://groups.google.com/forum/#!forum/obo-discuss) first.) Be sure to include the link to the issue you created in step 1.
+3. (_Optional_): If you would like to join the obo-community Slack, please indicate this in your email.
 
 We expect general discussion to take place on the obo-discuss list, while technical follow-up will take place on the tracker.
 
 Example of such request for ECTO:
 
-* [tracker issue](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/397)
-* [obo-discuss message](https://groups.google.com/forum/#!msg/obo-discuss/Mfbrg5cJ2lM/17HfTEnJDAAJ)
-
+- [tracker issue](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/397)
+- [obo-discuss message](https://groups.google.com/forum/#!msg/obo-discuss/Mfbrg5cJ2lM/17HfTEnJDAAJ)
 
 ## 2. Response
 
@@ -52,7 +48,6 @@ After your submission to the GitHub tracker, your ontology will be set up in a [
 After the ontology passes Dashboard quality control, please allow time for members of the community to provide feedback and for the Operations Committee to review the request. If you don't hear back from us after 4 weeks, you can follow-up via the tracker issue you created.
 
 Based on this discussion, the Operations Committee will either approve the IDSPACE request, ask for changes, or decline your request.
-
 
 ## 3. Approval
 

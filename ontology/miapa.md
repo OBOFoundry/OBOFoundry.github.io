@@ -17,10 +17,13 @@ mailing_list: http://groups.google.com/group/miapa-discuss
 preferredPrefix: MIAPA
 products:
 - id: miapa.owl
+publications:
+- id: https://doi.org/10.1089/omi.2006.10.231
+  title: 'Taking the First Steps towards a Standard for Reporting on Phylogenies: Minimum Information about a Phylogenetic Analysis (MIAPA)'
 releases: https://github.com/evoinfo/miapa/releases
 repository: https://github.com/evoinfo/miapa
 tracker: https://github.com/evoinfo/miapa/issues
 activity_status: active
 ---
 
-The MIAPA ontology is an application ontology to formalize annotation of phylogenetic data according to the emerging Minimum Information About a Phylogenetic Analysis (MIAPA) metadata reporting standard. Please see [Leebens-Mack _et al._ (2006)](https://doi.org/10.1089/omi.2006.10.231) for the initial introduction of MIAPA.
+The MIAPA ontology is an application ontology to formalize annotation of phylogenetic data according to the emerging Minimum Information About a Phylogenetic Analysis (MIAPA) metadata reporting standard.

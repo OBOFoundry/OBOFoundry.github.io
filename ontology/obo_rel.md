@@ -6,6 +6,7 @@ contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall
   orcid: 0000-0002-6601-2165
+domain: upper
 homepage: http://www.obofoundry.org/ro
 is_obsolete: true
 replaced_by: ro

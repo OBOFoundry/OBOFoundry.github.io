@@ -5,6 +5,7 @@ title: Human developmental anatomy, abstract version
 contact:
   email: J.Bard@ed.ac.uk
   label: Jonathan Bard
+domain: anatomy and development
 homepage: null
 is_obsolete: true
 replaced_by: ehdaa2

@@ -1,10 +1,10 @@
 ---
 layout: doc
-id: Participate
 title: How to participate in the OBO Foundry
 ---
 
-The OBO Foundry is currently a volunteer-run organization. There are many ways to get involved:  
+The OBO Foundry is currently a volunteer-run organization. There are many ways to get involved:
+
 - Submit a bug report, question, or feature request to the [OBO Foundry issue tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues)
 - Join the [OBO-Discuss mailing list](https://groups.google.com/forum/#!forum/obo-discuss)
 - Join the [OBO-Tools mailing list](https://groups.google.com/forum/#!members/obo-tools)

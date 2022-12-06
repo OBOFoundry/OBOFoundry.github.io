@@ -6,13 +6,14 @@ from io import StringIO
 from pathlib import Path
 from typing import Set
 
+import requests
 import yaml
 
 from obofoundry.standardize_metadata import ModifiedDumper
+from obofoundry.utils import ONTOLOGY_DIRECTORY, get_data
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
-ONTOLOGY_DIRECTORY = ROOT.joinpath("ontology").resolve()
 SCHEMA_PATH = ROOT.joinpath("util", "schema", "registry_schema.json")
 
 PUBMED_PREFIX = "https://www.ncbi.nlm.nih.gov/pubmed/"
@@ -22,23 +23,6 @@ MEDRXIV_PREFIX = "https://www.medrxiv.org/content/"
 ZENODO_PREFIX = "https://zenodo.org/record/"
 DOI_PREFIX = "https://doi.org/"
 CHEMRXIV_DOI_PREFIX = "https://doi.org/10.26434/chemrxiv"
-
-
-def get_data():
-    """Get ontology data."""
-    ontologies = {}
-    for path in ONTOLOGY_DIRECTORY.glob("*.md"):
-        with open(path) as file:
-            lines = [line.rstrip("\n") for line in file]
-
-        assert lines[0] == "---"
-        idx = min(i for i, line in enumerate(lines[1:], start=1) if line == "---")
-
-        # Load the data like it is YAML
-        data = yaml.safe_load("\n".join(lines[1:idx]))
-        data["long_description"] = "".join(lines[idx:])
-        ontologies[data["id"]] = data
-    return ontologies
 
 
 class TestIntegrity(unittest.TestCase):
@@ -84,6 +68,15 @@ class TestIntegrity(unittest.TestCase):
     def test_publications(self):
         """Test publications information."""
         for ontology, data in sorted(self.ontologies.items()):
+            self.assertIn(
+                sum(
+                    publication.get("preferred", False)
+                    for publication in data.get("publications", [])
+                ),
+                {0, 1},
+                msg=f"Only one publication can be marked as preferred for {ontology}.",
+            )
+
             for i, publication in enumerate(data.get("publications", [])):
                 identifier = publication["id"]
                 if ontology == "agro" and identifier.startswith("http://ceur-ws.org/"):
@@ -190,6 +183,8 @@ class TestIntegrity(unittest.TestCase):
                 self.assertIsNotNone(preferred_prefix)
                 self.assertLessEqual(2, len(preferred_prefix))
                 self.assertNotIn(" ", preferred_prefix)
+                if prefix != "dpo":
+                    self.assertEqual(preferred_prefix.casefold(), prefix.casefold())
 
     def test_redundant_descriptions(self):
         """Test that the description field is not redundant of the long form description."""
@@ -205,6 +200,20 @@ class TestIntegrity(unittest.TestCase):
                     _string_norm(description),
                     _string_norm(long_description),
                     msg=f"Effectively the same description was reused in the short and long-form field for {prefix}",
+                )
+
+    def test_has_purl_config(self):
+        """Tests that OBO PURL configuration is available."""
+        for prefix, record in self.ontologies.items():
+            if self.skip_inactive(record):
+                continue
+            with self.subTest(prefix=prefix):
+                url = f"https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config/{prefix}.yml"
+                res = requests.get(url)
+                self.assertEqual(
+                    200,
+                    res.status_code,
+                    msg=f"PURL configuration is missing for {prefix}",
                 )
 
 

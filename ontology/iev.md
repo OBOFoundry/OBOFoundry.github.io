@@ -6,6 +6,7 @@ build:
   insert_ontology_id: true
   method: obo2owl
   source_url: http://download.baderlab.org/INOH/ontologies/EventOntology_172.obo
+domain: chemistry and biochemistry
 homepage: http://www.inoh.org
 is_obsolete: true
 activity_status: inactive

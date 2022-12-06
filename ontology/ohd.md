@@ -10,7 +10,7 @@ contact:
   github: wdduncan
   label: Bill Duncan
   orcid: 0000-0001-9625-1899
-description: The Oral Health and Disease Ontology was created, initially, to represent the content of dental practice health records.
+description: The Oral Health and Disease Ontology is used for representing the diagnosis and treatment of dental maladies.
 domain: health
 homepage: https://purl.obolibrary.org/obo/ohd/home
 license:
@@ -21,6 +21,9 @@ products:
 - id: ohd.owl
 - id: ohd/dev/ohd.owl
   title: OHD dev
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/32819435
+  title: Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology
 repository: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
 tracker: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issues
 activity_status: active
@@ -41,7 +44,7 @@ terms from the Current Dental Terminology (CDT)
 OHD is in early development and subject to change without notice. 
 
 The current developers of OHD are Alan Ruttenberg(alanruttenberg@gmail.com) and Bill Duncan
-(wdduncan@gmail.com)
+(wdduncan@gmail.com).
 
 Initial work on OHD was funded by the University of Buffalo School of
 Dental Medicine and NIDCR grants 5R21DE021178-02 and 5R03DE023358-02,

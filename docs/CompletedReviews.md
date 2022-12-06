@@ -1,12 +1,9 @@
 ---
 layout: doc
-id: CompletedReviews
-title: CompletedReviews
+title: Completed Reviews
 ---
-## Introduction ##
 
 This page lists OBO Foundry ontologies that have gone through the current [review process](http://obofoundry.org/docs/ReviewProcessGuidelines). OBO Foundry ontologies added in 2010 were reviewed using a similar but non-identical process.
-
 
 <style type="text/css">
   .tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
@@ -16,6 +13,4 @@ This page lists OBO Foundry ontologies that have gone through the current [revie
   .tg .tg-lbaf{font-weight:bold;border-color:#333333;vertical-align:top}
 </style>
 
-
 {% include review_table.html %}
-

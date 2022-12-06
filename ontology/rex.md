@@ -7,6 +7,7 @@ build:
   method: obo2owl
   source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo
 description: An ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time.
+domain: chemistry and biochemistry
 products:
 - id: rex.owl
 activity_status: orphaned

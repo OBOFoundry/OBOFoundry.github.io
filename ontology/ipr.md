@@ -5,6 +5,7 @@ title: Protein Domains
 contact:
   email: interhelp@ebi.ac.uk
   label: InterPro Help
+domain: chemistry and biochemistry
 homepage: http://www.ebi.ac.uk/interpro/index.html
 is_obsolete: true
 activity_status: inactive

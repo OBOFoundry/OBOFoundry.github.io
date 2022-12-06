@@ -16,8 +16,9 @@ depicted_by: https://avatars1.githubusercontent.com/u/12802432
 description: An ontology for experimental and other evidence statements.
 domain: investigations
 funded_by:
-- http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400
-homepage: https://github.com/evidenceontology/evidenceontology/
+- id: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400
+  title: NSF ABI-1458400
+homepage: https://www.evidenceontology.org
 jobs:
 - id: https://travis-ci.org/evidenceontology/evidenceontology
   type: travis-ci
@@ -29,6 +30,9 @@ products:
 - id: eco.owl
 - id: eco.obo
 publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/34986598
+  title: 'ECO: the Evidence and Conclusion Ontology, an update for 2022.'
+  preferred: true
 - id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
   title: 'ECO, the Evidence & Conclusion Ontology: community standard for evidence information.'
 - id: https://www.ncbi.nlm.nih.gov/pubmed/25052702
@@ -58,13 +62,7 @@ The Evidence & Conclusion Ontology (ECO) describes types of scientific evidence 
 
 ECO comprises two high-level classes, evidence and assertion method, where evidence is defined as “a type of information that is used to support an assertion,” and assertion method is defined as “a means by which a statement is made about an entity.” Together evidence and assertion method can be combined to describe both the support for an assertion and whether that assertion was made by a human being or a computer. However, ECO is _not_ used to make the assertion itself; for that, one would use another ontology, free text description, or some other means.
 
-ECO was originally created around the year 2000 to support gene product annotation by the Gene Ontology, which now displays ECO in AmiGO 2. Today ECO is used by many groups concerned with evidence in scientific research.
+ECO was originally created around the year 2000 to support gene product annotation by the Gene Ontology. Today ECO is used by dozens of biomedical resources to capture evidence associated with assertions in biocuration.
 
 ***
 For **advice on requesting new terms**, please see **[the Evidence & Conclusion Ontology wiki](https://github.com/evidenceontology/evidenceontology/wiki/New-term-request-how-to)**.
-
-For **further information** visit the **[Evidence & Conclusion Ontology website](http://www.evidenceontology.org/)**.
-
-Please **cite** the following paper: [Giglio M, Tauber R, Nadendla S, Munro J, Olley D, Ball S, Mitraka E, Schriml LM, Gaudet P, Hobbs ET, Erill I, Siegele DA, Hu JC, Mungall C, Chibucos MC. **ECO, the Evidence & Conclusion Ontology: community standard for evidence information**. Nucleic Acids Res. 2019 Jan 8;47(D1):D1186-D1194.](https://www.ncbi.nlm.nih.gov/pubmed/30407590)
-
-This work is made possible by **[award number 1458400](http://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400)** from the **US National Science Foundation's Division of Biological Infrastructure**.

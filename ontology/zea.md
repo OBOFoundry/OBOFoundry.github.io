@@ -6,6 +6,7 @@ contact:
   email: Leszek@missouri.edu
   label: Leszek Vincent
   orcid: 0000-0002-9316-2919
+domain: anatomy and development
 homepage: http://www.maizemap.org/
 is_obsolete: true
 taxon:

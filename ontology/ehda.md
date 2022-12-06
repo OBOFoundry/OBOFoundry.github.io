@@ -5,6 +5,7 @@ title: Human developmental anatomy, timed version
 contact:
   email: J.Bard@ed.ac.uk
   label: Jonathan Bard
+domain: anatomy and development
 homepage: http://genex.hgu.mrc.ac.uk/
 is_obsolete: true
 replaced_by: ehdaa2

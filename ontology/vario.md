@@ -9,6 +9,7 @@ contact:
   email: mauno.vihinen@med.lu.se
   label: Mauno Vihinen
 description: Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations.
+domain: biological systems
 homepage: http://variationontology.org
 preferredPrefix: VariO
 products:

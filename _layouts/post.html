@@ -2,77 +2,120 @@
 layout: default
 ---
 
-<div class="content">    
-    <div class="row">	
-        <div class="span7 column">
-            <h1>{{ page.title }}</h1>
-        </div>
-
-        <div class="span7 columns">
-            {{ page.summary }}
-            </br>
-        </div>
-        <div>
-          <img class="listImage img-rounded" border="0" src="{{ page.image }}" alt="{{ page.title }} image">
-        </div>
-    </div>
-    
-    <div class="row">	
-        <div class="span7 columns">
-            {{ content }}
-        </div>
-    </div>
-    
-    <div class="pager hidden-phone hidden-tablet">
-        <a class="prev" href="{{ page.previous.url }}" title="Previous Post: {{page.previous.title}}"><i class="icon-arrow-left icon-white"></i></a>
-        <a class="next" href="{{ page.next.url }}" title="Previous Post: {{page.next.title}}"><i class="icon-arrow-right icon-white"></i></a>
-    </div>
-    
-    <div class="row">	
-        <div class="span7 column">
-            <p>
-              <i>{{ page.author}}</i>
-              <i class="icon-calendar"></i> {{ page.date | date: "%B %e, %Y" }}
-              | <i class="icon-comment"></i> <a href="{{ page.url }}#disqus_thread"></a>     
-              <br />
-              <a href="https://twitter.com/share" class="twitter-share-button" data-via="{{ site.project.twitter }}">Tweet</a> <g:plusone size="medium"></g:plusone></h5>
-            </p>
-        </div>
+<div class="content">
+  <div class="row">
+    <div class="span7 column">
+      <h1>{{ page.title }}</h1>
     </div>
 
-    {% if page.comments %}
-    <div class="row">	
-        <div class="span7 columns">    
-            <h2>Comments Section</h2>
-            <p>Feel free to comment on the post but keep it clean and on topic.</p>	
-            <div id="disqus_thread"></div>
-            <script type="text/javascript">
-                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                var disqus_shortname = '{{ site.comments.disqus.short_name }}';
-
-                /* * * DON'T EDIT BELOW THIS LINE * * */
-                (function() {
-                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-        </div>
+    <div class="span7 columns">
+      {{ page.summary }}
+      <br />
     </div>
-    {% endif %}
-    
-    <!-- Twitter -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <div>
+      <img
+        class="listImage img-rounded"
+        border="0"
+        src="{{ page.image }}"
+        alt="{{ page.title }} image"
+      />
+    </div>
+  </div>
 
-    <!-- Google + -->
-    <script type="text/javascript">
-      (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-      })();
-    </script>
+  <div class="row">
+    <div class="span7 columns">{{ content }}</div>
+  </div>
+
+  <div class="pager hidden-phone hidden-tablet">
+    <a
+      class="prev"
+      href="{{ page.previous.url }}"
+      title="Previous Post: {{page.previous.title}}"
+      ><i class="icon-arrow-left icon-white"></i
+    ></a>
+    <a
+      class="next"
+      href="{{ page.next.url }}"
+      title="Previous Post: {{page.next.title}}"
+      ><i class="icon-arrow-right icon-white"></i
+    ></a>
+  </div>
+
+  <div class="row">
+    <div class="span7 column">
+      <p>
+        <i>{{ page.author}}</i>
+        <i class="icon-calendar"></i> {{ page.date | date: "%B %e, %Y" }} |
+        <i class="icon-comment"></i> <a href="{{ page.url }}#disqus_thread"></a>
+        <br />
+        <a
+          href="https://twitter.com/share"
+          class="twitter-share-button"
+          data-via="{{ site.project.twitter }}"
+          >Tweet</a
+        >
+      </p>
+    </div>
+  </div>
+
+  {% if page.comments %}
+  <div class="row">
+    <div class="span7 columns">
+      <h2>Comments Section</h2>
+      <p>Feel free to comment on the post but keep it clean and on topic.</p>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = "{{ site.comments.disqus.short_name }}";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+          var dsq = document.createElement("script");
+          dsq.type = "text/javascript";
+          dsq.async = true;
+          dsq.src = "http://" + disqus_shortname + ".disqus.com/embed.js";
+          (
+            document.getElementsByTagName("head")[0] ||
+            document.getElementsByTagName("body")[0]
+          ).appendChild(dsq);
+        })();
+      </script>
+      <noscript
+        >Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript"
+          >comments powered by Disqus.</a
+        ></noscript
+      >
+      <a href="http://disqus.com" class="dsq-brlink"
+        >comments powered by <span class="logo-disqus">Disqus</span></a
+      >
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Twitter -->
+  <script>
+    !(function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    })(document, "script", "twitter-wjs");
+  </script>
+
+  <!-- Google + -->
+  <script type="text/javascript">
+    (function () {
+      var po = document.createElement("script");
+      po.type = "text/javascript";
+      po.async = true;
+      po.src = "https://apis.google.com/js/plusone.js";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(po, s);
+    })();
+  </script>
 </div>
-    

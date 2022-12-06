@@ -43,10 +43,14 @@ depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/mas
 description: An integrated cross-species anatomy ontology covering animals and bridging multiple species-specific ontologies
 domain: anatomy and development
 funded_by:
-- NIH R24OD011883
-- NIH R01HG004838
-- NIH P41HG002273
-- NSF DEB-0956049
+- id: https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=R24OD011883&arg_ProgOfficeCode=205
+  title: NIH R24-OD011883
+- id: https://grantome.com/grant/NIH/R01-HG004838
+  title: NIH R01-HG004838
+- id: https://taggs.hhs.gov/Detail/AwardDetail?arg_AwardNum=P41HG002273&arg_ProgOfficeCode=55
+  title: NIH P41-HG002273
+- id: https://www.nsf.gov/awardsearch/showAward?AWD_ID=0956049
+  title: NSF DEB-0956049
 homepage: http://uberon.org
 label: Uberon
 license:
@@ -178,5 +182,4 @@ wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 activity_status: active
 ---
 
-Uberon is an integrated cross-species ontology covering anatomical structures in animals. See the <a href="http://uberon.org">Uberon website</a> for more info, or read the <a
- href="http://genomebiology.com/2012/13/1/R5">Uberon paper in Genome Biology</a>.
+Uberon is an integrated cross-species ontology covering anatomical structures in animals.

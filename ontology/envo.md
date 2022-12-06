@@ -10,7 +10,7 @@ build:
   path: .
   system: git
 contact:
-  email: p.buttigieg@gmail.com
+  email: pier.buttigieg@awi.de
   github: pbuttigieg
   label: Pier Luigi Buttigieg
   orcid: 0000-0002-4366-3088
@@ -23,16 +23,16 @@ dependencies:
 - id: po
 - id: ro
 - id: uberon
-depicted_by: /logos/envo.png
-description: Ontology of environmental features and habitats
+depicted_by: /images/envo.png
+description: An ontology of environmental systems, components, and processes.
 domain: environment
 homepage: http://environmentontology.org/
 jobs:
-- id: https://travis-ci.org/EnvironmentOntology/envo
-  type: travis-ci
+- id: https://github.com/EnvironmentOntology/envo/blob/master/.github/workflows/qc.yml
+  type: github-action
 license:
-  label: CC BY 3.0
-  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC0 1.0
+  url: http://creativecommons.org/publicdomain/zero/1.0/
 page: https://github.com/EnvironmentOntology/envo
 preferredPrefix: ENVO
 products:
@@ -50,9 +50,10 @@ products:
   title: GSC Lite subset of ENVO
   homepage: http://environmentontology.org/downloads
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/24330602
+- id: https://doi.org/10.1186/2041-1480-4-43
   title: 'The environment ontology: contextualising biological and biomedical entities'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/27664130
+  preferred: true
+- id: https://doi.org/10.1186/s13326-016-0097-6
   title: 'The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation'
 repository: https://github.com/EnvironmentOntology/envo
 tracker: https://github.com/EnvironmentOntology/envo/issues/
@@ -89,11 +90,3 @@ activity_status: active
 ---
 
 EnvO is a community ontology for the concise, controlled description of environments.
-
-Envo can be cited as:
-
-Buttigieg, P. L., Morrison, N., Smith, B., Mungall, C. J., & Lewis, S. E. (2013). <b>The environment ontology: contextualising biological and biomedical entities</b>. <i>Journal of Biomedical Semantics, 4(1), 43</i>. <a href="http://www.dx.doi.org/10.1186/2041-1480-4-43">doi:10.1186/2041-1480-4-43</a>
-
-Or for latest developments:
-
-Buttigieg, P. L., Pafilis, E., Lewis, S. E., Schildhauer, M. P., Walls, R. L., & Mungall, C. J. (2016). <b>The environment ontology in 2016: bridging domains with increased scope, semantic density, and interoperation</b>. <i>Journal of Biomedical Semantics</i>, 7(1), 57. <a href="https://doi.org/10.1186/s13326-016-0097-6">doi:10.1186/s13326-016-0097-6</a>

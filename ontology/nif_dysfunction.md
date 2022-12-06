@@ -5,6 +5,7 @@ title: NIF Dysfunction
 contact:
   email: smtifahim@gmail.com
   label: Fahim Imam
+domain: health
 homepage: http://neuinfo.org/
 is_obsolete: true
 replaced_by: doid

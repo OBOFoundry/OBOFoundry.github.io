@@ -16,6 +16,9 @@ license:
 preferredPrefix: INO
 products:
 - id: ino.owl
+publications:
+- id: https://doi.org/10.1186/2041-1480-6-2
+  title: Development and application of an Interaction Network Ontology for literature mining of vaccine-associated gene-gene interactions
 repository: https://github.com/INO-ontology/ino
 tracker: https://github.com/INO-ontology/ino/issues
 activity_status: active
@@ -40,7 +43,3 @@ Note that the source ontology is an OWL file.
 
 * Default browsing in Ontobee: [http://www.ontobee.org/ontology/ino](http://www.ontobee.org/ontology/ino)
 * Browsing in NCBO BioPortal: [https://bioportal.bioontology.org/ontologies/INO](https://bioportal.bioontology.org/ontologies/INO)
-
-INO can be cited as:
-
-Hur J, Özgür A, Xiang Z, He Y. <b>Development and application of an Interaction Network Ontology for literature mining of vaccine-associated gene-gene interactions</b>. <i>Journal of Biomedical Semantics. 2015, 6:2</i>. <a href="http://www.dx.doi.org/10.1186/2041-1480-6-2">10.1186/2041-1480-6-2</a>
