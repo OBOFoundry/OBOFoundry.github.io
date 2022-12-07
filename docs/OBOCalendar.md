@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: OBOCalendar
 title: OBO Calendar
 ---
 

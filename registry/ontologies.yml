@@ -927,6 +927,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/clao.owl
   - id: clao.obo
     ontology_purl: http://purl.obolibrary.org/obo/clao.obo
+  pull_request_added: 1337
   repository: https://github.com/luis-gonzalez-m/Collembola
   title: Collembola Anatomy Ontology
   tracker: https://github.com/luis-gonzalez-m/Collembola/issues
@@ -993,6 +994,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/clyh.owl
   - id: clyh.obo
     ontology_purl: http://purl.obolibrary.org/obo/clyh.obo
+  pull_request_added: 1205
   repository: https://github.com/EBISPOT/clyh_ontology
   title: Clytia hemisphaerica Development and Anatomy Ontology
   tracker: https://github.com/EBISPOT/clyh_ontology/issues
@@ -1642,8 +1644,10 @@ ontologies:
   - id: eco.obo
     ontology_purl: http://purl.obolibrary.org/obo/eco.obo
   publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/34986598
     preferred: true
+    title: 'ECO: the Evidence and Conclusion Ontology, an update for 2022.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
     title: 'ECO, the Evidence & Conclusion Ontology: community standard for evidence
       information.'
   - id: https://www.ncbi.nlm.nih.gov/pubmed/25052702
@@ -2294,9 +2298,9 @@ ontologies:
   products:
   - id: fideo.owl
     ontology_purl: http://purl.obolibrary.org/obo/fideo.owl
-  repository: https://github.com/getbordea/fideo
+  repository: https://gitub.u-bordeaux.fr/erias/fideo
   title: Food Interactions with Drugs Evidence Ontology
-  tracker: https://github.com/getbordea/fideo/issues
+  tracker: https://gitub.u-bordeaux.fr/erias/fideo/issues
 - activity_status: active
   build:
     method: owl2obo
@@ -4640,6 +4644,9 @@ ontologies:
   products:
   - id: ogms.owl
     ontology_purl: http://purl.obolibrary.org/obo/ogms.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25991121
+    title: Biomarkers in the Ontology for General Medical Science
   repository: https://github.com/OGMS/ogms
   tags:
   - medicine
@@ -6401,6 +6408,7 @@ ontologies:
   domain: information
   homepage: https://github.com/terms4fairskills/FAIRterminology
   id: t4fs
+  issue_requested: 1520
   layout: ontology_detail
   license:
     label: CC BY 4.0
@@ -6434,6 +6442,7 @@ ontologies:
   - id: https://doi.org/10.5281/zenodo.4705219
     title: 'EOSC Co-creation funded project 074: Delivery of a proof of concept for
       terms4FAIRskills: Technical report'
+  pull_request_added: 2140
   repository: https://github.com/terms4fairskills/FAIRterminology
   title: terms4FAIRskills
   tracker: https://github.com/terms4fairskills/FAIRterminology/issues

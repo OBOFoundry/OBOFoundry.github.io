@@ -376,6 +376,16 @@
         ]
       }
     },
+    "issue_requested": {
+      "suggest": false,
+      "type": "integer",
+      "description": "This encodes the number of the issue on the OBO Foundry GitHub repository that was originally used to request this ontology."
+    },
+    "pull_request_added": {
+      "suggest": false,
+      "type": "integer",
+      "description": "This encodes the number of the pull request on the OBO Foundry GitHub repository that was originally used to add this ontology. You can curate additional ones by going to the ontology page (e.g., https://github.com/OBOFoundry/OBOFoundry.github.io/commits/master/ontology/clyh.md) and looking the whole way down the list for the first commit. Click on the title for the commit then you will see if there's a PR associated with it."
+    },
     "releases": {
       "suggest": false
     },

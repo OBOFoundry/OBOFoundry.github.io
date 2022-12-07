@@ -1,5 +1,5 @@
 - name: Registry Metadata Steward
-  open: true
+  open: false
   commitment: 2-6 hours per month
   requirements:
     - love for metadata
@@ -20,9 +20,13 @@
   people:
     - name: matentzn
       orcid: 0000-0002-7356-1779
+      status: support
+    - name: deepakunni3
+      orcid: 0000-0002-3583-7340
       status: lead
+      start: 2022-12
 - name: OBO New Ontology Request (NOR) Manager
-  open: true
+  open: false
   commitment: 2-6 hours per month
   requirements:
     - Basic knowledge of OBO dashboard
@@ -31,6 +35,7 @@
   description:
     You will be responsible for registering new ontologies at the OBO dashboard and helping their
     owners pass them.
+  sop: /roles/nor-manager
   responsibilities:
     - Checking OBOFoundry.github.io at least weekly for NOR related issues and pull requests.
     - Managing the NOR Process (https://obofoundry.org/docs/SOP.html#NOR)
@@ -40,7 +45,11 @@
   people:
     - name: matentzn
       orcid: 0000-0002-7356-1779
+      status: support
+    - name: pfabry
+      orcid: 0000-0002-3336-2476
       status: lead
+      start: 2022-12
 - name: OBO Website Coordinator
   open: true
   commitment: 2-6 hours per month
@@ -56,7 +65,7 @@
       orcid: 0000-0002-7356-1779
       status: lead
 - name: OBO Dashboard Maintainer
-  open: true
+  open: false
   commitment: 2-10 hours per month
   requirements:
     - Basic knowledge of dashboard
@@ -67,25 +76,34 @@
     Working with OBO Ops to find people for extending dashboard when new principles come along.
   responsibilities:
   people:
+    - name: anitacaron
+      orcid: 0000-0002-6523-4866
+      status: lead
+      start: 2022-12
     - name: matentzn
       orcid: 0000-0002-7356-1779
-      status: lead
+      status: support
 - name: Technical Working Group OBO Operations liaison
-  open: true
+  open: false
   commitment: 2 hours per month
   requirements:
     - Strong python skills
     - Some level of pro-activity helpful
     - Experience with ODK/docker
   description:
-    Preparing a short report about all general developments in OBO Technical Working Group (TWG)
-    for the OBO Operations team meeting. You will go through pull requests and emails and summarize
-    in bullet points and report to OBO Ops.
+    Preparing a short report about all general developments in OBO Technical
+    Working Group (TWG) for the OBO Operations team meeting. You will go
+    through pull requests and emails and summarize in bullet points and report
+    to OBO Ops.
   responsibilities:
   people:
+    - name: rays22
+      orcid: 0000-0001-8314-2140
+      status: lead
+      start: 2022-12
     - name: matentzn
       orcid: 0000-0002-7356-1779
-      status: lead
+      status: support
 - name: PURL system maintainer
   open: false
   description: |
@@ -156,6 +174,21 @@
     Assigning incoming issues at https://github.com/OBOFoundry/OBOFoundry.github.io, tagging them, chasing them
   responsibilities:
     - "Tagging metadata related issues with 'attn: Technical Working WG' and 'metadata'."
+  people:
+    - name: nlharris
+      orcid: 0000-0001-6315-3707
+      status: lead
+      start: 2019-01
+- name: OBO Google Service Manager
+  open: true
+  description: |
+    Managing the OBO Google Drives, Calendars, Mailing list and Meeting Minutes
+  responsibilities:
+    - Adding and removing people from OBO Mailing Lists
+    - Adding new OBO Ops members to Google Drive and removing alumni
+    - Adding important OBO events to the OBO calendar and sending out invites
+    - Managing public and internal OBO Google Drives
+    - Report adding members to the to any OBO Google drive with Write or Admin rights to the OBO Operations Committee
   people:
     - name: nlharris
       orcid: 0000-0001-6315-3707

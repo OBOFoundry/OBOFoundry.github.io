@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: SOP
 title: Standard Operating Procedures
 ---
 

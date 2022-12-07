@@ -17,6 +17,9 @@ license:
 preferredPrefix: OGMS
 products:
 - id: ogms.owl
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/25991121
+  title: Biomarkers in the Ontology for General Medical Science
 repository: https://github.com/OGMS/ogms
 tags:
 - medicine

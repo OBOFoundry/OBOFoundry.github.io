@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: NewOntologyRegistrationInstructions
 title: New Ontology Submission Instructions
 ---
 

@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: ReviewProcessGuidelines
 title: Review Process Guidelines
 ---
 

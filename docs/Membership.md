@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: Membership
 title: Membership
 ---
 
@@ -15,6 +14,7 @@ There are currently three working groups. Each page lists their respective membe
 <table class="table table-striped table-hover">
 <thead>
 <tr>
+    <th role="columnheader">Picture</th>
     <th role="columnheader">Name</th>
     <th role="columnheader">ORCID</th>
     <th role="columnheader">GitHub</th>
@@ -27,6 +27,7 @@ There are currently three working groups. Each page lists their respective membe
 {% assign members = site.data.operations.members | sort: "name" %}
 {% for member in members %}
 <tr>
+    <td><img src="/images/ofoc/{{ member.github }}.png" alt="{{ member.name }} photo" style="max-height: 100px" class="align-text-top"></td>
     <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
     <td><a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a></td>
     <td><a href="https://github.com/{{ member.github }}">{{ member.github }}</a></td>
@@ -66,61 +67,3 @@ New members: follow the instructions on the [onboarding doc](https://docs.google
 </tbody>
 </table>
 
-## Roles
-
-{% for role in site.data.roles %}
-
-### {{ role.name }}
-
-{{ role.description }}
-
-{% if role.open %}
-<blockquote>This role is open to new members.</blockquote>
-{% endif %}
-
-{% if role.requirements %}
-
-#### Requirements
-
-<ol>
-{% for requirement in role.requirements %}
-    <li>{{ requirement }}</li>
-{% endfor %}
-</ol>
-{% endif %}
-
-{% if role.responsibilities %}
-
-#### Responsibilities
-
-<ol>
-{% for responsibility in role.responsibilities %}
-    <li>{{ responsibility }}</li>
-{% endfor %}
-</ol>
-{% endif %}
-
-#### People
-
-<table class="table">
-<thead>
-<tr>
-<th>Name</th>
-<th>ORCID</th>
-<th>Status</th>
-<th>Start</th>
-</tr>
-</thead>
-<tbody>
-{% for person in role.people %}
-<tr>
-    <td>{{ person.name }}</td>
-    <td><a href="https://orcid.org/{{ person.orcid }}">{{ person.orcid }}</a></td>
-    <td>{{ person.status }}</td>
-    <td>{{ person.start }}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-
-{% endfor %}
