@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: registration-checklist
 title: Minimum Ontology Registration Request Checklist
 ---
 

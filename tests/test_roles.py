@@ -19,10 +19,11 @@ class Person(BaseModel):
     """A model for a person."""
 
     name: str
+    github: str
     orcid: str
     status: Literal["lead", "support"]
-    start: Optional[str]  # can later be parsed more carefully
-    # TODO add github
+    start: str
+    end: Optional[str]
 
 
 class Role(BaseModel):

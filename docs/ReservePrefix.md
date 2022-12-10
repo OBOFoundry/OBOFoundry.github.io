@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: ReservePrefix
 title: Reserve a prefix outside of OBO
 ---
 
