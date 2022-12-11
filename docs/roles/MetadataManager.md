@@ -13,7 +13,7 @@ You are responsible for shepherding our registry metadata according to our princ
   - https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology (the ontology metadata)
   - https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/_data (the OBO Foundry member metadata)
 - Tagging metadata related issues and pull requests with 'attn: OFOC call' if they need to be discussed by the Operations Committee. Provide instructions what needs to be discussed.
-- Assessing pull requests to be in line with OBO SOPs. Unless covered by an explicit exception, metadata changes must be signed off by registered ontology contacts.
+- Assessing pull requests to be in line with [OBO SOPs on Ontology Metadata](https://obofoundry.org/docs/SOP.html#META). Unless covered by an explicit exception, metadata changes must be signed off by registered ontology contacts.
 - Providing guidance for metadata-related issues and pull requests.
 - Implement additional checks for metadata integrity if necessary.
 - The Registry Metadata Steward is not required to fix issues with the metadata proactively, but may choose to do so at their own discretion.
