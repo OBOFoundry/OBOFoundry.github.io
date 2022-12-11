@@ -15,12 +15,12 @@ dependencies:
 - id: chebi
 - id: foodon
 - id: go
-- id: iao
-- id: ro
-- id: uberon
 - id: hp
+- id: iao
 - id: nbo
 - id: obi
+- id: ro
+- id: uberon
 depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/maxo-logos/maxo_logo_black-banner.png
 description: The Medical Action Ontology (MAxO) provides a broad view of medical actions and includes terms for medical procedures, interventions, therapies, treatments, and recommendations.
 domain: health
