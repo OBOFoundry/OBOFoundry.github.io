@@ -15,19 +15,19 @@ dependencies:
 - id: chebi
 - id: foodon
 - id: go
+- id: hp
 - id: iao
+- id: nbo
+- id: obi
 - id: ro
 - id: uberon
 depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/maxo-logos/maxo_logo_black-banner.png
-description: Medical Action Ontology is an ontology...
+description: The Medical Action Ontology (MAxO) provides a broad view of medical actions and includes terms for medical procedures, interventions, therapies, treatments, and recommendations.
 domain: health
 homepage: https://github.com/monarch-initiative/MAxO
-jobs:
-- id: https://travis-ci.org/monarch-initiative/MAxO
-  type: travis-ci
 license:
-  label: CC BY 3.0
-  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 4.0
+  url: http://creativecommons.org/licenses/by/4.0/
 preferredPrefix: MAXO
 products:
 - id: maxo.owl
@@ -48,5 +48,3 @@ tags:
 tracker: https://github.com/monarch-initiative/MAxO/issues
 activity_status: active
 ---
-
-The Medical Action Ontology (MAxO) provides a structured vocabulary for medical procedures, interventions, therapies, and treatments for disease with an emphasis on rare disease (RD). It is often difficult to find relevant clinical literature about strategies to manage RD patients. Responding to this need, MAxO provides a vocabulary to annotate diseases and phenotypes with recommended treatments and interventions.

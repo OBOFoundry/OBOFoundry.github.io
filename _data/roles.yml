@@ -18,10 +18,13 @@
     - The Registry Metadata Steward is not required to fix issues with the metadata proactively, but may choose to do so at their own discretion.
     - Provide monthly summary to Technical Working Group OBO Operations liaison for report to OBO Operations Committee.
   people:
-    - name: matentzn
+    - name: Nico Matentzoglu
+      github: matentzn
       orcid: 0000-0002-7356-1779
       status: support
-    - name: deepakunni3
+      start: "0000-00-00"
+    - github: deepakunni3
+      name: Deepak Unni
       orcid: 0000-0002-3583-7340
       status: lead
       start: 2022-12
@@ -43,15 +46,18 @@
     - Assigning and reminding OBO Operations Committee Members as reviewers
     - Assisting successful NOR submitters to making registry metadata and PURL pull requests
   people:
-    - name: matentzn
+    - name: Nico Matentzoglu
+      github: matentzn
       orcid: 0000-0002-7356-1779
       status: support
-    - name: pfabry
+      start: "0000-00-00"
+    - github: pfabry
+      name: Paul Fabry
       orcid: 0000-0002-3336-2476
       status: lead
       start: 2022-12
 - name: OBO Website Coordinator
-  open: true
+  open: false
   commitment: 2-6 hours per month
   requirements:
     - Working knowledge of javascript
@@ -61,9 +67,16 @@
   description: You will be responsible for gatekeeping community changes to the website.
   responsibilities:
   people:
-    - name: matentzn
-      orcid: 0000-0002-7356-1779
+    - github: erik-whiting
+      name: Erik Whiting
+      orcid: 0000-0003-1022-5281
       status: lead
+      start: 2022-12
+    - github: matentzn
+      name: Nico Matentzoglu
+      orcid: 0000-0002-7356-1779
+      status: support
+      start: "0000-00-00"
 - name: OBO Dashboard Maintainer
   open: false
   commitment: 2-10 hours per month
@@ -76,11 +89,14 @@
     Working with OBO Ops to find people for extending dashboard when new principles come along.
   responsibilities:
   people:
-    - name: anitacaron
+    - github: anitacaron
+      name: Anita Caron
       orcid: 0000-0002-6523-4866
       status: lead
       start: 2022-12
-    - name: matentzn
+    - github: matentzn
+      name: Nico Matentzoglu
+      start: "0000-00-00"
       orcid: 0000-0002-7356-1779
       status: support
 - name: Technical Working Group OBO Operations liaison
@@ -97,20 +113,24 @@
     to OBO Ops.
   responsibilities:
   people:
-    - name: rays22
+    - github: rays22
+      name: Ray Stefancsik
       orcid: 0000-0001-8314-2140
       status: lead
       start: 2022-12
-    - name: matentzn
+    - github: matentzn
+      name: Nico Matentzoglu
       orcid: 0000-0002-7356-1779
       status: support
+      start: "0000-00-00"
 - name: PURL system maintainer
   open: false
   description: |
     PURL config curation and PURL server maintenance.
   responsibilities:
   people:
-    - name: jamesaoverton
+    - name: James A. Overton
+      github: jamesaoverton
       orcid: 0000-0001-5139-5557
       status: lead
       start: 2015-11
@@ -121,12 +141,16 @@
     owners pass them.
   responsibilities:
   people:
-    - name: zhengj2007
+    - name: Jie Zheng
+      github: zhengj2007
       orcid: 0000-0002-2999-0103
       status: lead
-    - name: matentzn
+      start: "0000-00-00"
+    - name: Nico Matentzoglu
+      github: matentzn
       orcid: 0000-0002-7356-1779
       status: lead
+      start: "0000-00-00"
 - name: OBO Tools coordinator
   open: false
   description: |
@@ -134,7 +158,8 @@
      making sure tools align with OBO principles and support them, etc.)
   responsibilities:
   people:
-    - name: jamesaoverton
+    - name: James A. Overton
+      github: jamesaoverton
       orcid: 0000-0001-5139-5557
       status: lead
       start: 2017
@@ -144,27 +169,33 @@
     Maintaining https://oboacademy.github.io/obook/ and organising OBO Tutorials.
   responsibilities:
   people:
-    - name: nicolevasilevsky
+    - name: Nicole Vasilevsky
+      github: nicolevasilevsky
       orcid: 0000-0001-5208-3432
       status: lead
       start: 2021-06
-    - name: matentzn
+    - name: Nico Matentzoglu
+      github: matentzn
       orcid: 0000-0002-7356-1779
       status: lead
       start: 2021-06
-    - name: jamesaoverton
+    - name: James A. Overton
+      github: jamesaoverton
       orcid: 0000-0001-5139-5557
       status: support
       start: 2021-06
-    - name: beckyjackson
+    - name: Rebecca Jackson
+      github: beckyjackson
       orcid: 0000-0003-4871-5569
       status: support
       start: 2021-06
-    - name: shawntanzk
+    - name: Shawn Tan
+      github: shawntanzk
       orcid: 0000-0001-7258-9596
       status: support
       start: 2022
-    - name: bvarner-ebi
+    - name: Bradley Varner
+      github: bvarner-ebi
       status: support
       orcid: 0000-0002-1773-2692
       start: 2022
@@ -175,7 +206,8 @@
   responsibilities:
     - "Tagging metadata related issues with 'attn: Technical Working WG' and 'metadata'."
   people:
-    - name: nlharris
+    - name: Nomi Harris
+      github: nlharris
       orcid: 0000-0001-6315-3707
       status: lead
       start: 2019-01
@@ -190,7 +222,8 @@
     - Managing public and internal OBO Google Drives
     - Report adding members to the to any OBO Google drive with Write or Admin rights to the OBO Operations Committee
   people:
-    - name: nlharris
+    - github: nlharris
+      name: Nomi Harris
       orcid: 0000-0001-6315-3707
       status: lead
       start: 2019-01
