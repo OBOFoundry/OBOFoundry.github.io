@@ -16,6 +16,14 @@ ROOT = HERE.parent.resolve()
 DATA = ROOT.joinpath("_data")
 
 
+class Affiliation(BaseModel):
+    """Represents an affiliation."""
+
+    name: str
+    ror: Optional[str]
+    wikidata: Optional[str]
+
+
 class Member(BaseModel):
     """Representation of a member in a working group."""
 
@@ -23,11 +31,9 @@ class Member(BaseModel):
     orcid: str
     wikidata: str
     github: str
-    affiliation: str
-    affiliation_wikidata: Optional[str]
+    affiliation: Affiliation
     country: str
     groups: List[Literal["editorial", "outreach", "technical"]]
-    ror: Optional[str]
 
 
 class Group(BaseModel):
@@ -48,8 +54,8 @@ class TestMembershipData(unittest.TestCase):
         self.assertEqual(0, len(counter), msg=f"Duplicate: {counter}")
         for person in res.members:
             with self.subTest(name=person.name):
-                self.assertTrue(
-                    person.ror is not None or person.affiliation_wikidata is not None,
+                self.assertFalse(
+                    person.affiliation.ror is None and person.affiliation.wikidata is None,
                     msg=dedent(
                         f"""\
                         No ROR nor Wikidata identifier was curated for {person.name}.
