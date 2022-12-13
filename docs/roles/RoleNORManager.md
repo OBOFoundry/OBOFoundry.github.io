@@ -45,10 +45,12 @@ The OBO NOR Dashboard is managed here: https://github.com/OBOFoundry/obo-nor.git
 
 Integrating the submitted ontology into OBO dashboard means simply adding a new record into the `ontologies->custom` subsection
 of the [dashboard config file](https://github.com/OBOFoundry/obo-nor.github.io/blob/master/dashboard-config.yml). Only information explicitly mentioned in the New Ontology Request should be used.
+- When dashboard config is updated, and every Monday morning, the OBO NOR Dashboard is regenerated using [this](https://github.com/OBOFoundry/obo-nor.github.io/blob/master/.github/workflows/dashboard.yml) GitHub action. The OBO NOR Manager should sanity check the diff for any oddities, in particular, changes to the file `dashboard/dashboard-results.yml`.  This PR should always be reviewed by the NOR Manager and not be automatically merged into the main branch as part of the GitHub action.
 
 ### Supporting the New Ontology requestor to pass the OBO Dashboard
 
 For many New Ontology requestors it is not always easy to interpret the warnings on the OBO Dashboard. The NOR Manager is responsible for supporting the requestor interpreting the dashboard (but _not_ to fix the problems). There is no need to dig deep into the ontologies to diagnose problems - that is the requestors responsibility - but pointing to documentation like the [OBO Foundry Principles](https://obofoundry.org/principles/fp-000-summary.html) may be necessary.
+- All discussions between the requestors and the NOR manager must take place in the [OBO Issue Tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues) in the NOR issue created by the requestor.
 
 ### Assigning a provisional reviewer from the OBO Operations Committee
 
