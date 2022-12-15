@@ -11,7 +11,7 @@ contact:
   github: keilbeck
   label: Karen Eilbeck
   orcid: 0000-0002-0831-6427
-depicted_by: http://sequenceontology.org/img/so_icon.png
+depicted_by: /images/so_logo.png
 description: A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.
 domain: chemistry and biochemistry
 homepage: http://www.sequenceontology.org/
