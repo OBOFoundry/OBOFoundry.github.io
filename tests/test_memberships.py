@@ -68,10 +68,7 @@ class TestMembershipData(unittest.TestCase):
                 )
                 stub = OFOC_IMAGS.joinpath(person.github)
                 self.assertTrue(
-                    any(
-                        stub.with_suffix(suffix).is_file()
-                        for suffix in [".png", ".jpg"]
-                    ),
+                    OFOC_IMAGS.joinpath(person.github).with_suffix(".png").is_file(),
                     msg=f"{person.name} is missing a photo in {OFOC_IMAGS} that matches their github handle",
                 )
 
