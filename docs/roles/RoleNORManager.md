@@ -16,7 +16,7 @@ The New Ontology Request (NOR) Manager has these basic duties:
 ### Receiving `new ontology` requests on OBO and acknowledging the receipt
 
 - The NOR Manager MUST actively listen to issues on the [OBOFoundry GitHub issues tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues).
-- When a new ontology request is received, and the wrong issue template was used, the New Ontology Request (NOR) Manager must inform the NOR requestor to use the correct issue template and close the wrongly submitted issue with the following message:
+- When a new ontology request is received, and the wrong issue template was used, the NOR Manager must inform the NOR requestor to use the correct issue template and close the wrongly submitted issue with the following message:
     ```markdown
     Dear @GITHUBNAME,
     
@@ -45,6 +45,9 @@ The New Ontology Request (NOR) Manager has these basic duties:
     
     Good luck.
     ```
+- The NOR Manager must ensure that the requestors use the proper communication channels with the OBO community:
+    - Make sure that the requestors have joined and send an appropriate email to the obo-discuss mailing list (see the [FAQ](https://obofoundry.org/faq/how-do-i-register-my-ontology.html)). If they have not, point them to the instructions and ask them to do so.
+    - Invite the requestors (using the email listed in the metadata) to the OBO Foundry Slack space (using the `Slack->Invite people to obo-community` menu, adding the email provided.
 
 ### Including the ontology into the OBO New Ontology Request (NOR) Dashboard and updating the dashboard
 
