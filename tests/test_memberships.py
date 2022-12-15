@@ -14,7 +14,7 @@ from obofoundry.constants import ALUMNI_METADATA_PATH, OPERATIONS_METADATA_PATH
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
 DATA = ROOT.joinpath("_data")
-OFOC_IMAGS = ROOT.joinpath("images", "ofoc")
+OFOC_IMAGES = ROOT.joinpath("images", "ofoc")
 
 
 class Affiliation(BaseModel):
@@ -67,8 +67,8 @@ class TestMembershipData(unittest.TestCase):
                     ),
                 )
                 self.assertTrue(
-                    OFOC_IMAGS.joinpath(person.github).with_suffix(".png").is_file(),
-                    msg=f"{person.name} is missing a photo in {OFOC_IMAGS} that matches their github handle",
+                    OFOC_IMAGES.joinpath(person.github).with_suffix(".png").is_file(),
+                    msg=f"{person.name} is missing a photo in {OFOC_IMAGES} that matches their github handle",
                 )
 
     def test_encoding(self):
