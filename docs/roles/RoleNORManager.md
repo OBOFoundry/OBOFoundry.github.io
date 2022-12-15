@@ -6,7 +6,7 @@ title: New Ontology Request (NOR) Manager
 
 The New Ontology Request (NOR) Manager has these basic duties:
 
-1. Receiving `new ontology` requests on the OBOFoundry GitHub issues tracker and acknowledging the receipt
+1. Receiving `new ontology` requests on the OBO Foundry GitHub issues tracker and acknowledging the receipt
 2. Including the ontology in the OBO New Ontology Request (NOR) Dashboard and updating the dashboard
 3. Supporting the New Ontology requestor to pass the OBO Dashboard
 4. Assigning a provisional reviewer from the OBO Operations Committee
