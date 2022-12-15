@@ -14,6 +14,7 @@ from obofoundry.constants import ALUMNI_METADATA_PATH, OPERATIONS_METADATA_PATH
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
 DATA = ROOT.joinpath("_data")
+OFOC_IMAGS = ROOT.joinpath("images", "ofoc")
 
 
 class Affiliation(BaseModel):
@@ -64,6 +65,14 @@ class TestMembershipData(unittest.TestCase):
                         is rejected, create a Wikidata entry and annotate in the `affiliation_wikidata` field.
                     """.rstrip()
                     ),
+                )
+                stub = OFOC_IMAGS.joinpath(person.github)
+                self.assertTrue(
+                    any(
+                        stub.with_suffix(suffix).is_file()
+                        for suffix in [".png", ".jpg"]
+                    ),
+                    msg=f"{person.name} is missing a photo in {OFOC_IMAGS} that matches their github handle",
                 )
 
     def test_encoding(self):
