@@ -12,7 +12,7 @@ domain: investigations
 purpose: 'This ontology is developed to represent omics contextual data to support experts in specimen-derivative data  discovery and reuse stages.'
 scope: 'This ontology includes real-world physical objects such as specimens, computerized objects such as datasets, and planned processes and related specifications'
 intended users: 'The intended end-users are biobanking organizations, data collectors, omics researchers, and decision-makers.'
-commitment to collaboration: 'new terms introduced by NGBO will be submitted to appropriate OBO foundry domain ontology when possible. NGBO also, accept and review requests from community to edit/add terms through issue requests here (https://github.com/Dalalghamdi/NGBO/issues)' 
+commitment to collaboration: 'new terms introduced by NGBO will be submitted to appropriate OBO foundry domain ontology when possible. NGBO also, accept and review requests from community to edit/add terms through issue requests here (https://github.com/Dalalghamdi/NGBO/issues)'
 homepage: https://github.com/Dalalghamdi/NGBO
 issue_requested: 1819
 license:
@@ -26,6 +26,3 @@ repository: https://github.com/Dalalghamdi/NGBO
 tracker: https://github.com/Dalalghamdi/NGBO/issues
 activity_status: active
 ---
-
-        
-        
