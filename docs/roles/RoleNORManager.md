@@ -21,7 +21,7 @@ The New Ontology Request (NOR) Manager has these basic duties:
     Dear @GITHUBNAME,
     
     Thank you for your submission. 
-    However, the wrong issue template has been used. Please make sure to follow the [New Ontology Submission Instructions](https://obofoundry.org/docs/NewOntologyRegistrationInstructions.html) and use the [New Ontology Request issue template](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?assignees=&labels=new+ontology&template=new-ontology-request.md&title=).
+    However, the wrong issue template has been used. Please make sure to follow the [New Ontology Submission Instructions](https://obofoundry.org/docs/NewOntologyRegistrationInstructions.html) and use the [New Ontology Request issue template](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?assignees=&labels=new+ontology&template=new-ontology.yml&title=Request+for+new+ontology+%5BNAME%5D).
     Thank you.
     ```
 - When a valid NOR request is received the NOR Manager acknowledges the receipt with the following message:
