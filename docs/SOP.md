@@ -137,3 +137,9 @@ The current processes of nomination, acceptance and onboarding are described [he
 
 For a discussion on this SOP, see [here](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2043).
 
+## OBO Operations calls and meeting minutes are now open to the public
+In August 2022, in order to increase transparency and inclusivity and perhaps help recruit new members to the OBO Operations committee,
+it was [proposed that OBO Operations calls be opened to the public to listen in](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2048) (with no voting power).
+In November 2022, the OBO Operations committee agreed to open the calls and meeting minutes to the public starting in January 2023.
+The publicly viewable meeting minutes can now be found at [https://docs.google.com/document/d/1qhLFQL5IzTMUIBOtxJ5AqaEHcOCOQgNeXfvAb5O5P0A/edit#](https://docs.google.com/document/d/1qhLFQL5IzTMUIBOtxJ5AqaEHcOCOQgNeXfvAb5O5P0A/edit#).
+To reduce the risk of Zoom-bombing, the Zoom URL is not included in that doc, but it can be found in Slack.
