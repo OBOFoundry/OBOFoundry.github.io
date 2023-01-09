@@ -14,6 +14,15 @@ from obofoundry.constants import ALUMNI_METADATA_PATH, OPERATIONS_METADATA_PATH
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
 DATA = ROOT.joinpath("_data")
+OFOC_IMAGES = ROOT.joinpath("images", "ofoc")
+
+
+class Affiliation(BaseModel):
+    """Represents an affiliation."""
+
+    name: str
+    ror: Optional[str]
+    wikidata: Optional[str]
 
 
 class Member(BaseModel):
@@ -23,11 +32,9 @@ class Member(BaseModel):
     orcid: str
     wikidata: str
     github: str
-    affiliation: str
-    affiliation_wikidata: Optional[str]
+    affiliation: Affiliation
     country: str
     groups: List[Literal["editorial", "outreach", "technical"]]
-    ror: Optional[str]
 
 
 class Group(BaseModel):
@@ -48,8 +55,8 @@ class TestMembershipData(unittest.TestCase):
         self.assertEqual(0, len(counter), msg=f"Duplicate: {counter}")
         for person in res.members:
             with self.subTest(name=person.name):
-                self.assertTrue(
-                    person.ror is not None or person.affiliation_wikidata is not None,
+                self.assertFalse(
+                    person.affiliation.ror is None and person.affiliation.wikidata is None,
                     msg=dedent(
                         f"""\
                         No ROR nor Wikidata identifier was curated for {person.name}.
@@ -59,6 +66,15 @@ class TestMembershipData(unittest.TestCase):
                     """.rstrip()
                     ),
                 )
+                self.assertTrue(
+                    OFOC_IMAGES.joinpath(person.github).with_suffix(".png").is_file(),
+                    msg=f"{person.name} is missing a photo in {OFOC_IMAGES} that matches their github handle",
+                )
+
+    def test_encoding(self):
+        """Test correct encoding."""
+        t = OPERATIONS_METADATA_PATH.read_text()
+        self.assertEqual(yaml.safe_dump(yaml.safe_load(t), allow_unicode=True), t)
 
     def test_alumni(self):
         """Test the alumni data."""
