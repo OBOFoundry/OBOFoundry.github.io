@@ -95,6 +95,8 @@ The current processes of nomination, acceptance and onboarding are described [he
 
 ### Chairing an OBO Operations Committee meeting call
 
+***Please note that as of 2023-01-10, OBO Operations meeting minutes are now viewable by the public.***
+
 #### Before the call (a day or two in advance):
 
 1. Prepare a stub in the OBO Operations Committee (OFOC) [rolling agenda](https://docs.google.com/document/d/1aka4i6R89i04IYPS7CyzItQPOyb3IgtW4m75G475qcc/edit) with the following <b>Repeating Agenda Items</b>:
@@ -136,10 +138,3 @@ The current processes of nomination, acceptance and onboarding are described [he
 2. Make sure that all new issues are logged on GitHub. Add comments to all GitHub issues that were discussed, as appropriate.
 
 For a discussion on this SOP, see [here](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2043).
-
-## OBO Operations calls and meeting minutes are now open to the public
-In August 2022, in order to increase transparency and inclusivity and perhaps help recruit new members to the OBO Operations committee,
-it was [proposed that OBO Operations calls be opened to the public to listen in](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2048) (with no voting power).
-In November 2022, the OBO Operations committee agreed to open the calls and meeting minutes to the public starting in January 2023.
-The publicly viewable meeting minutes can now be found at [https://docs.google.com/document/d/1qhLFQL5IzTMUIBOtxJ5AqaEHcOCOQgNeXfvAb5O5P0A/edit#](https://docs.google.com/document/d/1qhLFQL5IzTMUIBOtxJ5AqaEHcOCOQgNeXfvAb5O5P0A/edit#).
-To reduce the risk of Zoom-bombing, the Zoom URL is not included in that doc, but it can be found in Slack.
