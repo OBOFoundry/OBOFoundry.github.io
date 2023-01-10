@@ -95,6 +95,8 @@ The current processes of nomination, acceptance and onboarding are described [he
 
 ### Chairing an OBO Operations Committee meeting call
 
+***Please note that as of 2023-01-10, OBO Operations meeting minutes are now viewable by the public.***
+
 #### Before the call (a day or two in advance):
 
 1. Prepare a stub in the OBO Operations Committee (OFOC) [rolling agenda](https://docs.google.com/document/d/1aka4i6R89i04IYPS7CyzItQPOyb3IgtW4m75G475qcc/edit) with the following <b>Repeating Agenda Items</b>:
@@ -136,4 +138,3 @@ The current processes of nomination, acceptance and onboarding are described [he
 2. Make sure that all new issues are logged on GitHub. Add comments to all GitHub issues that were discussed, as appropriate.
 
 For a discussion on this SOP, see [here](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2043).
-
