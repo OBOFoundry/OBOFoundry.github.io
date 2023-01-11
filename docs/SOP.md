@@ -18,7 +18,7 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 
 ### New Ontology Requests (NOR)
 
-1. When receiving a new ontology request (NOR), the OBO dashboard administrator should thank the submitter for their submission.
+1. When receiving a new ontology request (NOR), the NOR Manager  should thank the submitter for their submission.
 1. The OBO dashboard administrator adds the new submission to the NOR dashboard, which is deployed at https://obofoundry.github.io/obo-nor.github.io/
 1. After the dashboard is run, the OBO dashboard administrator informs the submitter about the need to fix the issues revealed by the dashboard, noting this is not part of the review itself, just a precursor, and that upon completion, a liaison will be assigned.
 1. At the next OBO Foundry Operations Committee conference call (hereafter, "Operations call"), a liaison is selected to be responsible for the issue. This liaison becomes familiar with the new ontology and rallies the appropriate people to provide feedback.
@@ -44,13 +44,20 @@ Are axioms generally highly complex? If so, we should review a handful to ensure
 5. Appropriate use of [object properties](https://www.w3.org/TR/2004/REC-owl-semantics-20040210/#owl_ObjectProperty). Examples of incorrect usage include those based on some interpretation of the label of the object property but not actually fitting the property definition or domain and range. A typical example of incorrect usage is R some (A and B and C) to mean R some A and R some B and R some C.
 6. Responsiveness to fixing changes. A willingness to fix any identified issues during the review must be demonstrated. Issues expected to be addressed should be added using GitHub checklist syntax (`- [ ] TODO`) in the GitHub issue. The time limit for addressing these is 2 months; a longer period should be requested if needed.
 
-<a name="OAE"></a> 
+Note that the NOR Manager (see [roles overview](https://obofoundry.org/roles/overview)) can help assist NOR submitters in understanding the NOR process and passing the NOR Dashboard, as well as later assisting successful NOR submitters in making registry metadata and PURL pull requests
+
+<a name="OAE"></a>
+## Ontology Acceptance/Rejection Decision
+Once the reviewer has decided whether a new ontology meets the requirements, they presents their review and recommendation to the OBO Ops committee.
+The committee can ask the reviewer for clarifications, and then the people on the call make the decision about whether to accept the ontology.
+The decision is made by “consensus” on the call: i.e., no one objects strenuously.
+No quorum (minimum number of attendees) on the call is required. 
+
 ### Ontology Acceptance Notification 
 
-Once a new ontology has been accepted, the following should be used as a template for letting the ontology owner know that, and informing them about the next steps they should take.
-
-The ontology owner should be notified in the ticket and also by email (they were required to supply their email address as part of their new ontology request),
+Once a new ontology has been accepted, the ontology owner should be notified in the ticket and also by email (they were required to supply their email address as part of their new ontology request),
 ccing obo-discuss & obo-operations-committee.
+The following template should be used to let the ontology owner know that their ontology was accepted, and informing them about the next steps they should take:
 
 "Thank you again for your ontology submission to the OBO Foundry. We are happy to inform you that your ontology (YOURID) has been accepted following discussion in the OBO Operations Committee meeting, YYYY-MM-DD. Before we can add it to the OBO ontology registry you need to complete the following steps.
 
@@ -69,8 +76,15 @@ To create a PURL registry entry for your ontology:
 3. Make a pull request with a link to this issue
 See here for an example of a PURL yml file: https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/pato.yml "
 
+### Ontology Rejection Notification
+If it is determined that a submitted ontology does not meet the requirements for acceptance in the OBO Foundry, and the submitter has been informed of the issues and at least two months have elapsed and they have not corrected the problems,
+the reviewer can recommend to the OBO Operations Committee that the ontology should be rejected. The decision to reject an ontology is to be made by consensus from those on the call where the review is presented.
+The reviewer should notify the ontology owner in the ticket and also by email, ccing obo-operations-committee (but maybe not obo-discuss?).
+
+(Should there be a template for the rejection notice?)
+
 <a name="META"></a> 
-### Changing ontology metadata in the registry
+## Changing ontology metadata in the registry
 
 In general, the metadata record of an ontology in the OBO Foundry metadata registry ([example](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/go.md)) is managed and curated by the ontology team that is responsible for the respective ontology. However, as an open data organisation, the OBO Foundry does accept proposals by any member of the community to change this metadata. Such change proposal can include fixing typos, adding a tag, adding a publication where it was missed. The following SOP exists to ensure that these changes are not performed without the knowledge of the responsible ontology team.
 
