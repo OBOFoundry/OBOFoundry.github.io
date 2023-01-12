@@ -18,19 +18,19 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 
 ### New Ontology Requests (NOR)
 
-1. When receiving a new ontology request (NOR), the NOR Manager  should thank the submitter for their submission.
-1. The OBO dashboard administrator adds the new submission to the NOR dashboard, which is deployed at https://obofoundry.github.io/obo-nor.github.io/
-1. After the dashboard is run, the OBO dashboard administrator informs the submitter about the need to fix the issues revealed by the dashboard, noting this is not part of the review itself, just a precursor, and that upon completion, a liaison will be assigned.
-1. At the next OBO Foundry Operations Committee conference call (hereafter, "Operations call"), a liaison is selected to be responsible for the issue. This liaison becomes familiar with the new ontology and rallies the appropriate people to provide feedback.
-1. At the next Operations call after that one, the liaison presents the NOR to the OBO Foundry Operations Committee and answers questions. In most cases, the information provided will be sufficient to either grant or refuse the prefix request. In some cases, the committee may choose to postpone its decision to require some clarification and fixes from the submitter.
+1. When receiving a new ontology request (NOR), the NOR Manager should thank the submitter for their submission.
+2. The OBO dashboard administrator adds the new submission to the NOR dashboard, which is deployed at https://obofoundry.github.io/obo-nor.github.io/
+3. After the dashboard is run, the OBO dashboard administrator informs the submitter about the need to fix the issues revealed by the dashboard, noting this is not part of the review itself, just a precursor, and that upon completion, a liaison will be assigned.
+4. At the next OBO Foundry Operations Committee conference call (hereafter, "Operations call"), a liaison is selected to be responsible for the issue. This liaison becomes familiar with the new ontology and rallies the appropriate people to provide feedback.
+5. At the next Operations call after that one, the liaison presents the NOR to the OBO Foundry Operations Committee and answers questions. In most cases, the information provided will be sufficient to either grant or refuse the prefix request. In some cases, the committee may choose to postpone its decision to require some clarification and fixes from the submitter.
    The liaison MUST be present at the Operations call in order for the NOR case to be discussed. If the liaison does not participate for 2 consecutive Operations calls, the chair of the second call emails the liaison to request a statement confirming the ability to continue as liaison. If the liaison does not participate in 3 consecutive Operations calls and did not respond to the email above, a new liaison is assigned during that third call.
 
-<a name="ROOM"></a> 
+<a name="ROOM"></a>
 ### Reviewing Ontologies for OBO Membership
 
 The goal of this SOP is to provide a clear set of criteria to be checked for the manual review of an ontology in response to a request to register that new ontology with the OBO Foundry. It is expected that a programmatic review using the Dashboard has already been done and the submitters have addressed any problems found. The purpose of the manual review is to check the ontology for issues that the Dashboard review does not cover. A sample of terms/axioms should be checked. In order for this review to be relatively quick (~ 2 hours), the reviewer is not expected to review all the terms/axioms.
 
-Check the following and provide a brief summary in the tracker issue for the new ontology request. All items of feedback must be provided using GitHub checklist syntax (`- [ ] TODO`) in order to track how far along they are in being addressed. Addressable issues identified as part of the review should be added to the new ontology’s issue tracker. 
+Check the following and provide a brief summary in the tracker issue for the new ontology request. All items of feedback must be provided using GitHub checklist syntax (`- [ ] TODO`) in order to track how far along they are in being addressed. Addressable issues identified as part of the review should be added to the new ontology’s issue tracker.
 1. Ontology scope. The new ontology must present use cases demonstrating its relevance to the life sciences.  Was the ontology developed using expert input or trusted scientific sources representative of the consensus in its target domain of knowledge? If the ontology was developed for a very specific purpose or community, representation and consensus need not be broad; however, this scope should be clearly stated.
 2. Terms with the new ontology prefix. There MUST NOT be a term with the same meaning available in another OBO Foundry ontology, ie there must not be a term referring to a concept that already exists in another OBO Foundry ontology (whether or not the label is identical). There SHOULD NOT be another OBO Foundry ontology whose scope covers any of the new terms. In the event that these conditions cannot be fulfilled, justification(s) MUST be provided. Such justification(s) include:
     - the demonstration that these terms are actually not the same (this happens when term meaning/concept is ambiguous); or
@@ -48,12 +48,12 @@ Note that the NOR Manager (see [roles overview](https://obofoundry.org/roles/ove
 
 <a name="OAE"></a>
 ## Ontology Acceptance/Rejection Decision
-Once the reviewer has decided whether a new ontology meets the requirements, they presents their review and recommendation to the OBO Ops committee.
+Once the reviewer has decided whether a new ontology meets the requirements, they present their review and recommendation to the OBO Ops committee.
 The committee can ask the reviewer for clarifications, and then the people on the call make the decision about whether to accept the ontology.
 The decision is made by “consensus” on the call: i.e., no one objects strenuously.
-No quorum (minimum number of attendees) on the call is required. 
+No quorum (minimum number of attendees) on the call is required.
 
-### Ontology Acceptance Notification 
+### Ontology Acceptance Notification
 
 Once a new ontology has been accepted, the ontology owner should be notified in the ticket and also by email (they were required to supply their email address as part of their new ontology request),
 ccing obo-discuss & obo-operations-committee.
@@ -63,7 +63,7 @@ The following template should be used to let the ontology owner know that their 
 
 Create a metadata record for your ontology to be included in the registry:
 1. Create a new file in https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology, called YOURID.md (there is an “Add file” button in the top right).
-2. Obtain the already curated metadata that relates to your ontology from https://github.com/OBOFoundry/obo-nor.github.io/blob/master/dashboard-config.yml (you'll need to scroll down to locate yours; it will have your prefix in the " - id:" field.) 
+2. Obtain the already curated metadata that relates to your ontology from https://github.com/OBOFoundry/obo-nor.github.io/blob/master/dashboard-config.yml (you'll need to scroll down to locate yours; it will have your prefix in the " - id:" field.)
 3. Create a pull request to add the metadata record. This pull request should include a link to this issue (the New Ontology Request issue).
 
 Here is an example record for the PATO ontology: https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/pato.md?plain=1
@@ -83,14 +83,14 @@ The reviewer should notify the ontology owner in the ticket and also by email, c
 
 (Should there be a template for the rejection notice?)
 
-<a name="META"></a> 
+<a name="META"></a>
 ## Changing ontology metadata in the registry
 
 In general, the metadata record of an ontology in the OBO Foundry metadata registry ([example](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/ontology/go.md)) is managed and curated by the ontology team that is responsible for the respective ontology. However, as an open data organisation, the OBO Foundry does accept proposals by any member of the community to change this metadata. Such change proposal can include fixing typos, adding a tag, adding a publication where it was missed. The following SOP exists to ensure that these changes are not performed without the knowledge of the responsible ontology team.
 
 1. Any member of the community (OBO Foundry or otherwise) may propose a change in the form of a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 2. This pull request is reviewed by a member of the OBO Foundry operations committee and may be rejected.
-3. To prevent undue delays to website development, if the proposed change affects merely the presentation of the web page (for example, information is moved from one section of the website to another, URLs are changed from http to https, there is a change in the display/formatting of a page, typos) the OBO Foundry Operations Committee member may choose to accept the pull request without waiting for further review. In such case, the following steps may be ignored. 
+3. To prevent undue delays to website development, if the proposed change affects merely the presentation of the web page (for example, information is moved from one section of the website to another, URLs are changed from http to https, there is a change in the display/formatting of a page, typos) the OBO Foundry Operations Committee member may choose to accept the pull request without waiting for further review. In such case, the following steps may be ignored.
 4. The OBO Foundry operations committee member MUST then tag the listed contact person using their GitHub handle on the pull request requesting a review (initial request for feedback).
 5. After two weeks without activity, an OBO Foundry operations committee member will update the pull request and announce a prospective merge date no earlier than two weeks in the future.
 6. After at least 4 weeks have passed since the initial request for review:
@@ -114,7 +114,7 @@ The current processes of nomination, acceptance and onboarding are described [he
 #### Before the call (a day or two in advance):
 
 1. Prepare a stub in the OBO Operations Committee (OFOC) [rolling agenda](https://docs.google.com/document/d/1aka4i6R89i04IYPS7CyzItQPOyb3IgtW4m75G475qcc/edit) with the following <b>Repeating Agenda Items</b>:
-     1. Check for [pending members for obo-discuss](https://groups.google.com/g/obo-discuss/pending-members) 
+     1. Check for [pending members for obo-discuss](https://groups.google.com/g/obo-discuss/pending-members)
      2. Get volunteers to sign up to lead upcoming meetings (if needed)
      3. Review [new ontology requests](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/new%20ontology)
      4. Report from Editorial Working Group (EWG) (Darren)
@@ -139,7 +139,7 @@ The current processes of nomination, acceptance and onboarding are described [he
 
 1. Wait until approximately 8-10 people have joined. Begin no more than 4 minutes after the hour regardless of how many people are present.
 2. Share your screen to show the agenda, greet the attendees, and drive the agenda. (You don't have to show your face, but some people choose to do so. It is up to you).
-3. It is important to keep the discussion on track: 
+3. It is important to keep the discussion on track:
    - If it appears that the group will not reach consensus after long discussion of a particular item, you (or one of the primary participants in the discussion) should politely summarize the discussion and call for agreement on next steps so that the next item on the agenda can be addressed.
     - Be aware that sometimes not every agenda item can be discussed in a single meeting. It is more important that the items that do get addressed are discussed fully.
 4. Add notes to the agenda capturing important discussion points, summaries, decisions made, action items (with assignees), and next steps. These can be brief but it is important to capture what has been discussed and/or decided so that the group doesn’t forget. Don’t worry if it takes a little time. Make note of any new issues (or comments on existing issues) that are needed; these will be done after the call.
