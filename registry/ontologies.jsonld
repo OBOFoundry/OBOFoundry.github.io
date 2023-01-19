@@ -3236,7 +3236,19 @@
                 "label": "Drosophila"
             },
             "title": "Drosophila development",
-            "tracker": "http://purl.obolibrary.org/obo/fbdv/tracker"
+            "tracker": "http://purl.obolibrary.org/obo/fbdv/tracker",
+            "usages": [
+                {
+                    "description": "Used to record stages in expression and phenotype curation",
+                    "examples": [
+                        {
+                            "description": "Expression of DLP in embryonic/larval midgut primordium at embryonic stage 13 (http://purl.obolibrary.org/obo/FBdv_00005328) (Khare and Baumgartner, 2000)",
+                            "url": "https://flybase.org/reports/FBgn0041604#expression"
+                        }
+                    ],
+                    "user": "http://flybase.org"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -3892,7 +3904,7 @@
                     "subset": "go/extensions/uberon_import.owl"
                 }
             ],
-            "depicted_by": "http://geneontology.org/assets/go-logo-icon.mini.png",
+            "depicted_by": "/images/go_logo.png",
             "description": "An ontology for describing the function of genes and gene products",
             "domain": "biological systems",
             "homepage": "http://geneontology.org/",
@@ -4791,7 +4803,16 @@
                     "id": "go"
                 },
                 {
+                    "id": "hp"
+                },
+                {
                     "id": "iao"
+                },
+                {
+                    "id": "nbo"
+                },
+                {
+                    "id": "obi"
                 },
                 {
                     "id": "ro"
@@ -4801,21 +4822,15 @@
                 }
             ],
             "depicted_by": "https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/maxo-logos/maxo_logo_black-banner.png",
-            "description": "Medical Action Ontology is an ontology...",
+            "description": "The Medical Action Ontology (MAxO) provides a broad view of medical actions and includes terms for medical procedures, interventions, therapies, treatments, and recommendations.",
             "domain": "health",
             "homepage": "https://github.com/monarch-initiative/MAxO",
             "id": "maxo",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/monarch-initiative/MAxO",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC BY 3.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/maxo.owl",
             "preferredPrefix": "MAXO",
@@ -8716,7 +8731,7 @@
                 "label": "Karen Eilbeck",
                 "orcid": "0000-0002-0831-6427"
             },
-            "depicted_by": "http://sequenceontology.org/img/so_icon.png",
+            "depicted_by": "/images/so_logo.png",
             "description": "A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.",
             "domain": "chemistry and biochemistry",
             "homepage": "http://www.sequenceontology.org/",

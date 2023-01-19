@@ -31,7 +31,7 @@ There are currently three working groups. Each page lists their respective membe
     <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
     <td><a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a></td>
     <td><a href="https://github.com/{{ member.github }}">{{ member.github }}</a></td>
-    <td>{{ member.affiliation }}</td>
+    <td>{{ member.affiliation.name }}</td>
     <td>{{ member.country }} </td>
     <td>{{ member.groups | join: ", " }}</td>
 </tr>

@@ -48,6 +48,7 @@ See [here]({{ role.sop }}).
 <thead>
 <tr>
 <th>Name</th>
+<th>GitHub</th>
 <th>ORCID</th>
 <th>Status</th>
 <th>Start</th>
@@ -57,6 +58,7 @@ See [here]({{ role.sop }}).
 {% for person in role.people %}
 <tr>
     <td>{{ person.name }}</td>
+    <td><a href="https://github.com/{{ person.github }}">{{ person.github }}</a></td>
     <td><a href="https://orcid.org/{{ person.orcid }}">{{ person.orcid }}</a></td>
     <td>{{ person.status }}</td>
     <td>{{ person.start }}</td>

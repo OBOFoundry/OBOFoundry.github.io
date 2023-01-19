@@ -95,10 +95,11 @@ The current processes of nomination, acceptance and onboarding are described [he
 
 ### Chairing an OBO Operations Committee meeting call
 
+***Please note that as of 2023-01-10, OBO Operations meeting minutes are now viewable by the public.***
+
 #### Before the call (a day or two in advance):
 
 1. Prepare a stub in the OBO Operations Committee (OFOC) [rolling agenda](https://docs.google.com/document/d/1aka4i6R89i04IYPS7CyzItQPOyb3IgtW4m75G475qcc/edit) with the following <b>Repeating Agenda Items</b>:
-
      1. Check for [pending members for obo-discuss](https://groups.google.com/g/obo-discuss/pending-members) 
      2. Get volunteers to sign up to lead upcoming meetings (if needed)
      3. Review [new ontology requests](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/new%20ontology)
@@ -107,25 +108,26 @@ The current processes of nomination, acceptance and onboarding are described [he
      6. Review additional [open issues](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/attn%3A%20OFOC%20call) and [pull requests](https://github.com/OBOFoundry/OBOFoundry.github.io/pulls?q=is%3Apr+is%3Aopen+label%3A%22attn%3A+OFOC+call%22) that are labeled "attn: OFOC call"
 
 2. Check the issues labeled ["attn:OFOC call"](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/attn%3A%20OFOC%20call) found at the OBO foundry github repository. Pick one or two open issues you deem important and put them towards the end of the stub agenda, after the Working Group reports and before the review of additional open issues.
-3. Send an email to obo-operations-committee @ googlegroups.com (not obo-discuss!) with the subject "OBO Operations Committee meeting" and the following text given between quotes:<br>
+3. Send an email to obo-operations-committee @ googlegroups.com (not obo-discuss!) with the subject "OBO Operations Committee meeting" and the following text given between quotes
+(note that for safety, the Zoom URL is not included in this document -- please refer to the calendar invite or Slack):<br>
    <hr>
-   "I am chairing this week’s OFOC meeting. The Zoom link is given in the agenda document (see below).<br>
+   "I am chairing this week’s OFOC meeting. The Zoom link is [...].<br>
 
    Please review
       - [new ontology requests](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/new%20ontology),
       - [open pull requests](https://github.com/OBOFoundry/OBOFoundry.github.io/pulls), and
       - [recent tracker items](https://github.com/OBOFoundry/OBOFoundry.github.io/issues?q=is%3Aopen).
 
-   Please also add agenda items to https://docs.google.com/document/d/1aka4i6R89i04IYPS7CyzItQPOyb3IgtW4m75G475qcc/edit#."
+   Please feel free to add agenda items to [https://docs.google.com/document/d/1qhLFQL5IzTMUIBOtxJ5AqaEHcOCOQgNeXfvAb5O5P0A/edit](https://docs.google.com/document/d/1qhLFQL5IzTMUIBOtxJ5AqaEHcOCOQgNeXfvAb5O5P0A/edit)."
    <hr>
 
 #### During the call:
 
-1. Wait until approximately 8-10 people have joined. Begin no more than 4-5 minutes after the hour regardless of how many people are present.
+1. Wait until approximately 8-10 people have joined. Begin no more than 4 minutes after the hour regardless of how many people are present.
 2. Share your screen to show the agenda, greet the attendees, and drive the agenda. (You don't have to show your face, but some people choose to do so. It is up to you).
 3. It is important to keep the discussion on track: 
-   1. If it appears that the group will not reach consensus after long discussion of a particular item, you (or one of the primary participants in the discussion) should politely summarize the discussion and call for agreement on next steps so that the next item on the agenda can be addressed.
-   1. Be aware that sometimes not every agenda item can be discussed in a single meeting. It is more important that the items that do get addressed are discussed fully.
+   - If it appears that the group will not reach consensus after long discussion of a particular item, you (or one of the primary participants in the discussion) should politely summarize the discussion and call for agreement on next steps so that the next item on the agenda can be addressed.
+    - Be aware that sometimes not every agenda item can be discussed in a single meeting. It is more important that the items that do get addressed are discussed fully.
 4. Add notes to the agenda capturing important discussion points, summaries, decisions made, action items (with assignees), and next steps. These can be brief but it is important to capture what has been discussed and/or decided so that the group doesn’t forget. Don’t worry if it takes a little time. Make note of any new issues (or comments on existing issues) that are needed; these will be done after the call.
 5. End the call on time. Don’t start new topics too close to the end or let discussions drag on after the hour.
 6. Thank everyone for taking the time to attend!
@@ -136,5 +138,3 @@ The current processes of nomination, acceptance and onboarding are described [he
 2. Make sure that all new issues are logged on GitHub. Add comments to all GitHub issues that were discussed, as appropriate.
 
 For a discussion on this SOP, see [here](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2043).
-
-
