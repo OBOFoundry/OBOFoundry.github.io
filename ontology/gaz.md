@@ -23,5 +23,5 @@ products:
 - id: gaz.obo
 repository: https://github.com/EnvironmentOntology/gaz
 tracker: https://github.com/EnvironmentOntology/gaz/issues
-activity_status: inactive
+activity_status: active
 ---
