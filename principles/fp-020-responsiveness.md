@@ -12,9 +12,7 @@ Ontology developers MUST offer channels for community participation and SHOULD b
 
 Ontology development benefits from community input, which is strongly encouraged by the OBO Foundry. Accordingly, "responsiveness" is a key quality of our general collaborative spirit. This principle is intended to ensure that channels for community input are available and that responses to input are given swiftly.
 
-Recommendations and Requirements
-
----
+## Recommendations and Requirements
 
 Ontology developers MUST set up a public mechanism to track community requests and suggestions (collectively, “issues”), and SHOULD aim to respond within 2-5 working days. Optional: Establish a discussion forum for more general communication with and between users.
 
