@@ -3,7 +3,8 @@ layout: principle
 id: fp-011-locus-of-authority
 title: Locus of Authority (principle 11)
 ---
-CONTENTS: [Recommendations/Requirements](https://obofoundry.org/principles/fp-011-locus-of-authority.html#Recommendations) | [Implementation](https://obofoundry.org/principles/fp-011-locus-of-authority#Implementation) | [Examples/Counter-Examples](https://obofoundry.org/principles/fp-011-locus-of-authority.html#Counter-Examples) | [Criteria for Review](https://obofoundry.org/principles/fp-011-locus-of-authority.html#Criteria) | [Feedback/Discussion](https://obofoundry.org/principles/fp-011-locus-of-authority.html#Feedback) 
+CONTENTS: [Recommendations/Requirements](#recommendations-and-requirements) | [Implementation](#implementation) | [Examples/Counter-Examples](#examples) | [Criteria for Review](#criteria-for-review) | [Feedback/Discussion](#feedback-and-discussion) 
+
 ## Summary
 
 There should be a person who is responsible for communications between the
