@@ -34,15 +34,15 @@ The contact email MUST NOT be a mailing list. The GitHub account MUST be for the
 
 `contact: email: foo@bar.com label: John Smith github: jsmith123`
 
-### Examples:
+## Examples:
 
 For Mondo, the primary contact person is Nicole Vasilevsky (nicole {at} tislab.org) and her GitHub handle is: nicolevasilevsky.
 
-### Counter-Examples:
+## Counter-Examples:
 
 Mailing list; for ChEBI, chebi-help@ebi.ac.uk
 
-### Criteria for Review
+## Criteria for Review
 
 Email address will be checked to ensure it is for an individual and that it is written in a standard format.
 
