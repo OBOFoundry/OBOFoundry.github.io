@@ -300,6 +300,14 @@ class TestModernIntegrity(unittest.TestCase):
                 self.assertIsNotNone(
                     spdx, msg="No LICENSE file found in the repository"
                 )
+                self.assertNotEqual(
+                    "NOASSERTION",
+                    spdx,
+                    msg="Either no LICENSE file was found or the LICENSE file does not have a standard format that "
+                        "GitHub can parse. See https://docs.github.com/en/repositories/managing-your-"
+                        "repositorys-settings-and-features/customizing-your-repository/licensing-a-"
+                        "repository#detecting-a-license for information on how GitHub does this.",
+                )
                 self.assertIn(
                     spdx,
                     ALLOWED_SPDX,
