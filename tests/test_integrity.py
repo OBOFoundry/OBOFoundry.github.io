@@ -314,3 +314,4 @@ class TestModernIntegrity(unittest.TestCase):
                     msg=f"LICENSE file does not follow a standard format for"
                     f" one of the allowed license types ({ALLOWED_SPDX})",
                 )
+                # TODO match github to metadata in obo submission
