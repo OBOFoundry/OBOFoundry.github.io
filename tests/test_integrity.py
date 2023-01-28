@@ -2,6 +2,7 @@
 
 import json
 import unittest
+from functools import lru_cache
 from io import StringIO
 from pathlib import Path
 from typing import Set
@@ -10,7 +11,7 @@ import requests
 import yaml
 
 from obofoundry.standardize_metadata import ModifiedDumper
-from obofoundry.utils import ONTOLOGY_DIRECTORY, get_data
+from obofoundry.utils import ONTOLOGY_DIRECTORY, get_data, get_new_data
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
@@ -23,6 +24,11 @@ MEDRXIV_PREFIX = "https://www.medrxiv.org/content/"
 ZENODO_PREFIX = "https://zenodo.org/record/"
 DOI_PREFIX = "https://doi.org/"
 CHEMRXIV_DOI_PREFIX = "https://doi.org/10.26434/chemrxiv"
+ALLOWED_SPDX = {
+    "CC0-1.0",  # see https://bioregistry.io/spdx:CC0-1.0
+    "CC-BY-3.0",  # see https://bioregistry.io/spdx:CC-BY-3.0
+    "CC-BY-4.0",  # see https://bioregistry.io/spdx:CC-BY-4.0
+}
 
 
 class TestIntegrity(unittest.TestCase):
@@ -253,3 +259,50 @@ def _string_norm(s: str) -> str:
         .replace(".", "")
         .replace("-", "")
     )
+
+
+class TestModernIntegrity(unittest.TestCase):
+    """A test case for data integrity exclusively for new ontologies.
+
+    Specifically, tests implemented in this integrity test are only
+    "going-forwards" and don't need to be retroactively applied. This works
+    since it only looks at ontologies that appear in the /ontologies folder
+    with a markdown file but do not already appear in the published registry
+    build.
+    """
+
+    def setUp(self) -> None:
+        """Set up the test case."""
+        self.ontologies = get_new_data()
+
+    def test_github_references(self):
+        """Test that new ontologies reference the pull request where they were added."""
+        for prefix, data in self.ontologies.items():
+            with self.subTest(prefix=prefix):
+                self.assertIn("pull_request_added", data)
+                self.assertIn("issue_requested", data)
+
+    def test_repository_license(self):
+        """Test that the repository has a license that's correct."""
+        for prefix, data in self.ontologies.items():
+            repository = data["repository"]
+            if not repository.startswith("https://github.com"):
+                continue
+            r = repository.removeprefix("https://github.com/").rstrip("/")
+            url = f"https://api.github.com/repos/{r}"
+            with self.subTest(prefix=prefix):
+                res = requests.get(url)
+                res.raise_for_status()
+                res_json = res.json()
+                self.assertIn("license", res_json)
+                self.assertIn("spdx_id", res_json["license"])
+                spdx = res_json["license"]["spdx_id"]
+                self.assertIsNotNone(
+                    spdx, msg="No LICENSE file found in the repository"
+                )
+                self.assertIn(
+                    spdx,
+                    ALLOWED_SPDX,
+                    msg=f"LICENSE file does not follow a standard format for"
+                    f" one of the allowed license types ({ALLOWED_SPDX})",
+                )
