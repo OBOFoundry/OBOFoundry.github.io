@@ -1,47 +1,47 @@
 ---
 layout: ontology_detail
 id: so
-contact:
-  email: keilbeck@genetics.utah.edu
-  label: Karen Eilbeck
-  github: keilbeck
-  orcid: 0000-0002-0831-6427
-license:
-  url: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
-description: A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.
-domain: biochemistry
-tags:
-  - biological sequence
-homepage: http://www.sequenceontology.org/
-mailing_list: https://sourceforge.net/p/song/mailman/song-devel/
-page: https://en.wikipedia.org/wiki/Sequence_Ontology
-products:
-  - id: so.owl
-    title: Main SO OWL release
-  - id: so.obo
-    title: Main SO release in OBO Format
-  - id: so/subsets/SOFA.owl
-    title: Sequence Ontology Feature Annotation (SOFA) subset (OWL)
-    description: This subset includes only locatable sequence features and is designed for use in such outputs as GFF3
-  - id: so/subsets/SOFA.obo
-    title: Sequence Ontology Feature Annotation (SOFA) subset (OBO Format)
-    description: This subset includes only locatable sequence features and is designed for use in such outputs as GFF3
 title: Sequence types and features ontology
 build:
+  method: obo2owl
   notes: SWITCH
   source_url: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so.obo
-  method: obo2owl
-tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
-publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/15892872
-    title: "The Sequence Ontology: a tool for the unification of genome annotations."
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/20226267
-    title: Evolution of the Sequence Ontology terms and relationships.
-depicted_by: http://sequenceontology.org/img/so_icon.png
-activity_status: active
-repository: https://github.com/The-Sequence-Ontology/SO-Ontologies
+contact:
+  email: keilbeck@genetics.utah.edu
+  github: keilbeck
+  label: Karen Eilbeck
+  orcid: 0000-0002-0831-6427
+depicted_by: /images/so_logo.png
+description: A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.
+domain: chemistry and biochemistry
+homepage: http://www.sequenceontology.org/
+license:
+  label: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
+mailing_list: https://sourceforge.net/p/song/mailman/song-devel/
+page: https://en.wikipedia.org/wiki/Sequence_Ontology
 preferredPrefix: SO
+products:
+- id: so.owl
+  title: Main SO OWL release
+- id: so.obo
+  title: Main SO release in OBO Format
+- id: so/subsets/SOFA.owl
+  title: Sequence Ontology Feature Annotation (SOFA) subset (OWL)
+  description: This subset includes only locatable sequence features and is designed for use in such outputs as GFF3
+- id: so/subsets/SOFA.obo
+  title: Sequence Ontology Feature Annotation (SOFA) subset (OBO Format)
+  description: This subset includes only locatable sequence features and is designed for use in such outputs as GFF3
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/15892872
+  title: 'The Sequence Ontology: a tool for the unification of genome annotations.'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/20226267
+  title: Evolution of the Sequence Ontology terms and relationships.
+repository: https://github.com/The-Sequence-Ontology/SO-Ontologies
+tags:
+- biological sequence
+tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
+activity_status: active
 ---
 
 SO is a collaborative ontology project for the definition of sequence features used in biological sequence annotation. SO was initially developed by the Gene Ontology Consortium. Contributors to SO include the GMOD community, model organism database groups such as WormBase, FlyBase, Mouse Genome Informatics group, and institutes such as the Sanger Institute and the EBI. Input to SO is welcomed from the sequence annotation community. SO is also part of the Open Biomedical Ontologies library. Our aim is to develop an ontology suitable for describing the features of biological sequences. For questions, please send mail to the SO developers mailing list. For new term suggestions, please use the [Term Tracker](https://github.com/The-Sequence-Ontology/SO-Ontologies/issues).

@@ -1,71 +1,71 @@
 ---
 layout: ontology_detail
 id: doid
-in_foundry_order: 1
+title: Human Disease Ontology
+browsers:
+- title: DO Browser
+  label: DO
+  url: http://www.disease-ontology.org/
+build:
+  infallible: 1
+  method: obo2owl
+  source_url: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.obo
 contact:
   email: lynn.schriml@gmail.com
-  label: Lynn Schriml
   github: lschriml
+  label: Lynn Schriml
   orcid: 0000-0001-8910-9851
+depicted_by: http://www.disease-ontology.org/media/images/DO_logo.jpg
 description: An ontology for describing the classification of human diseases organized by etiology.
-twitter: diseaseontology
 domain: health
-tags:
-  - disease
 homepage: http://www.disease-ontology.org
+in_foundry_order: 1
+license:
+  label: CC0 1.0
+  url: https://creativecommons.org/publicdomain/zero/1.0/
+preferredPrefix: DOID
 products:
-  - id: doid.owl
-    title: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy plus equivalent axioms to other OBO Foundry ontologies.
-  - id: doid.obo
-    title: Disease Ontology, OBO format. This file omits the equivalent axioms.
-
-browsers:
-  - label: DO
-    title: DO Browser
-    url: http://www.disease-ontology.org/
-taxon:
-  id: NCBITaxon:9606
-  label: Homo sapiens
-title: Human Disease Ontology
+- id: doid.owl
+  title: Disease Ontology, OWL format. This file contains DO's is_a asserted hierarchy plus equivalent axioms to other OBO Foundry ontologies.
+- id: doid.obo
+  title: Disease Ontology, OBO format. This file omits the equivalent axioms.
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/25348409
+  title: 'Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data'
+- id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
+  title: The Human Disease Ontology 2022 update
+repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 review:
   date: 2015
   document:
     label: PDF
     link: https://drive.google.com/open?id=0B8vqEgF1N0NIZ082U2JETHlSTGs
-build:
-  source_url: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.obo
-  method: obo2owl
-  infallible: 1
+tags:
+- disease
+taxon:
+  id: NCBITaxon:9606
+  label: Homo sapiens
 tracker: https://github.com/DiseaseOntology/HumanDiseaseOntology/issues
-publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/25348409
-    title: "Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data"
-license:
-  url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
+twitter: diseaseontology
 usages:
-  - user: https://www.alliancegenome.org
-    description: Alliance of Genome Resources - MGD, RGD, SGD, FlyBase, WormBase, ZFIN use DO
-    examples:
-      - url: https://www.alliancegenome.org/search?category=disease
-        description: Human diseases annotated to over 190,000 MOD genes, alleles, disease models and human genes
-      - url: https://www.alliancegenome.org/disease/DOID:0080599
-        description: The landing page for Coronavirus Infectious Disease
-  - user: http://www.informatics.jax.org/disease
-    description: MGI disease model annotations use DO
-    examples:
-      - url: http://www.informatics.jax.org/disease/DOID:0080015
-        description: physical disorder
-  - user: https://www.iedb.org
-    description: Immune Epitope Database
-    examples:
-      - url: https://www.iedb.org
-        description: Aantibody and T cell epitopes associated with human diseases
-
+- description: Alliance of Genome Resources - MGD, RGD, SGD, FlyBase, WormBase, ZFIN use DO
+  examples:
+  - description: Human diseases annotated to over 190,000 MOD genes, alleles, disease models and human genes
+    url: https://www.alliancegenome.org/search?category=disease
+  - description: The landing page for Coronavirus Infectious Disease
+    url: https://www.alliancegenome.org/disease/DOID:0080599
+  user: https://www.alliancegenome.org
+- description: MGI disease model annotations use DO
+  examples:
+  - description: physical disorder
+    url: http://www.informatics.jax.org/disease/DOID:0080015
+  user: http://www.informatics.jax.org/disease
+- description: Immune Epitope Database
+  examples:
+  - description: Antibody and T cell epitopes associated with human diseases
+    url: https://www.iedb.org
+  user: https://www.iedb.org
 activity_status: active
-repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
-preferredPrefix: DOID
-depicted_by: http://www.disease-ontology.org/media/images/DO_logo.jpg
 ---
 
 Creating a comprehensive classification of human diseases organized by etiology.

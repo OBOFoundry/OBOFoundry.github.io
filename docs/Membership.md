@@ -1,67 +1,69 @@
 ---
 layout: doc
-id: Membership
 title: Membership
 ---
 
-# Introduction #
-
 The OBO Foundry Operations Committee discusses, oversees, and ensures the completion of the fundamental day-to-day activities of the Foundry. The Committee is composed of three working groups. Anyone who is active in a working group (active being based on both attendance at WG meetings and actual work done for working groups) is considered a member of the Operations Committee.
 
-# Working Groups #
+There are currently three working groups. Each page lists their respective members:
 
-There are currently three working groups:
-- [Editorial Working Group](EditorialWG.html) 
+- [Editorial Working Group](EditorialWG.html)
 - [Technical Working Group](TechnicalWG.html)
 - [Outreach Working Group](OutreachWG.html)
 
-More information [here](/docs/OperationsCommittee.html)
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+    <th role="columnheader">Picture</th>
+    <th role="columnheader">Name</th>
+    <th role="columnheader">ORCID</th>
+    <th role="columnheader">GitHub</th>
+    <th role="columnheader">Affiliation</th>
+    <th role="columnheader">Country</th>
+    <th role="columnheader">Groups</th>
+</tr>
+</thead>
+<tbody>
+{% assign members = site.data.operations.members | sort: "name" %}
+{% for member in members %}
+<tr>
+    <td><img src="/images/ofoc/{{ member.github }}.png" alt="{{ member.name }} photo" style="max-height: 100px" class="align-text-top"></td>
+    <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
+    <td><a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a></td>
+    <td><a href="https://github.com/{{ member.github }}">{{ member.github }}</a></td>
+    <td>{{ member.affiliation.name }}</td>
+    <td>{{ member.country }} </td>
+    <td>{{ member.groups | join: ", " }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
 
-# Members #
-Membership in working groups: T=technical working group, O=outreach working group, E=editorial working group
-
-Current members of the OBO Foundry Operations Committee are (in alphabetical order of surname):
-
- * Jim Balhoff (T), RENCI, University of North Carolina, Chapel Hill, NC, USA
- * Mathias Brochhausen (O), University of Arkansas for Medical Sciences, Little Rock, AR, USA
- * Matt Brush (T), Unversity of Colorado Anschutz Medical Campus, Auroa, CO, USA
- * Pier Luigi Buttigieg (E, O), Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research, Bremerhaven, Germany
- * Seth Carbon (T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA
- * [Melanie Courtot](http://purl.org/net/mcourtot) (O, T), EMBL-EBI, Cambridge, UK 
- * Alexander Diehl (T), University at Buffalo, Buffalo, NY, USA
- * Damion Dooley (O), Hsiao Lab, Simon Fraser University, BC, Canada
- * [Bill Duncan](https://orcid.org/0000-0001-9625-1899) (E),  Lawrence Berkeley National Laboratory, Berkeley, CA, USA
- * Nomi Harris (T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA
- * [Melissa Haendel](https://www.ohsu.edu/people/melissa-haendel/AFE044BDE8046E5D6FBDA51F448BDE2A) (O), Unversity of Colorado Anschutz Medical Campus, Auroa, CO, USA
- * Rebecca Jackson (T), [Knocean Inc.](http://knocean.com), Toronto, Canada
- * Simon Jupp (OBO Industry Liaison), SciBite, Cambridge, UK 
- * James Malone (OBO Industry Liaison), SciBite, Cambridge, UK
- * Nico Matentzoglu (T), Semanticly, Athens, Greece
- * [Chris Mungall](https://github.com/cmungall/), (T), Lawrence Berkeley National Laboratory, Berkeley, CA, USA
- * [Darren Natale](http://pir.georgetown.edu/pirwww/aboutpir/natalebio.shtml) (E), Georgetown University Medical Center, Washington DC, USA
- * David Osumi-Sutherland, EMBL-EBI, Cambridge, UK
- * [James A. Overton](http://james.overton.ca) (T), [Knocean Inc.](http://knocean.com), Toronto, Canada
- * Bjoern Peters (E), La Jolla Institute for Immunology, La Jolla, CA, USA
- * [Philippe Rocca-Serra](https://eng.ox.ac.uk/people/philippe-rocca-serra/) (E, O), University of Oxford e-Research Centre, Department of Engineering Science, Oxford, UK.
- * [Alan Ruttenberg](http://sciencecommons.org/about/whoweare/ruttenberg/) (O, T), University at Buffalo, Buffalo, USA
- * [Richard Scheuermann](https://www.jcvi.org/about/rscheuermann) (O), J. Craig Venter Institute, La Jolla, CA, USA
- * [Lynn Schriml](http://www.medschool.umaryland.edu/profiles/Schriml-Lynn/) (E, O), University of Maryland School of Medicine
- * Barry Smith (O), University at Buffalo, Buffalo, NY, USA
- * Chris Stoeckert (E, O), University of Pennsylvania, Philadelphia, PA, USA
- * [Nicole Vasilevsky](http://orcid.org/0000-0001-5208-3432) (E, T), Unversity of Colorado Anschutz Medical Campus, Auroa, CO, USA
- * Randi Vita (O), La Jolla Institute for Immunology, La Jolla, CA, USA
- * [Ramona Walls](http://www.cyverse.org/ramona-walls) (E, T), CyVerse, University of Arizona, Tucson, AZ, USA
- * [Jie Zheng](http://cbil.upenn.edu/profile-staff_bio/39) (T, O), University of Pennsylvania, Philadelphia, USA
- 
 New members: follow the instructions on the [onboarding doc](https://docs.google.com/document/d/1MKhNTjZjGx6Ls72dybIV2ajYtbqtwP7O4lwxN2v3RBA/edit#heading=h.10q6n5qc13dp)
 
-Alumni:
+## Alumni
 
- * Michael Ashburner
- * Colin Batchelor (E)
- * Eric Douglass (T)
- * Janna Hastings (E, O)
- * [Suzanna Lewis](https://github.com/selewis), (O, T)
- * Gareth Owen (E)
- * Susanna-Assunta Sansone
- * Carlo Tornial (T)
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+    <th role="columnheader">Name</th>
+    <th role="columnheader">ORCID</th>
+    <th role="columnheader">GitHub</th>
+    <th role="columnheader">Departed</th>
+    <th role="columnheader">Note</th>
+</tr>
+</thead>
+<tbody>
+{% assign alumni_members = site.data.alumni.members | sort: "name" %}
+{% for member in alumni_members %}
+<tr>
+    <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
+    <td><a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a></td>
+    <td>{% if member.github %}<a href="https://github.com/{{ member.github }}">{{ member.github }}</a>{% endif %}</td>
+    <td>{% if member.departed %}{{ member.departed }}{% endif %}</td>
+    <td>{% if member.note %}{{ member.note }}{% endif %}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+

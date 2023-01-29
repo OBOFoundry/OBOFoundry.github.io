@@ -59,6 +59,9 @@ def get_html(data):
     lines = []
     # bootstrap CSS
     lines.append('<link rel="stylesheet" href="{0}">'.format(bootstrap_css))
+    lines.append(
+        '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">'
+    )
     # opening tags
     lines.append('<div class="container">')
     lines.append('\t<div class="row" style="padding-top: 20px;">')
@@ -92,19 +95,19 @@ def get_html(data):
 
             if f.lower() == "pass":
                 td_class = "success"
-                icon = '<img src="../assets/svg/check.svg" height="15px">'
+                icon = '<i class="bi-check-circle" aria-hidden="true"></i>'
 
             elif f.lower() == "info":
                 td_class = "info"
-                icon = '<img src="../assets/svg/info.svg" height="15px">'
+                icon = '<i class="bi-info-circle" aria-hidden="true"></i>'
 
             elif f.lower() == "warning" or f.lower() == "warn":
                 td_class = "warning"
-                icon = '<img src="../assets/svg/warning.svg" height="15px">'
+                icon = '<i class="bi bi-exclamation-circle"></i>'
 
             elif f.lower() == "error" or f.lower() == "fail":
                 td_class = "danger"
-                icon = '<img src="../assets/svg/x.svg" height="15px">'
+                icon = '<i class="bi-x-circle" aria-hidden="true"></i>'
 
             else:
                 td_class = "active"

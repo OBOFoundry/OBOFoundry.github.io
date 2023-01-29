@@ -2,37 +2,37 @@
 layout: ontology_detail
 id: cteno
 title: Ctenophore Ontology
-jobs:
-  - id: https://travis-ci.org/obophenotype/ctenophore-ontology
-    type: travis-ci
 build:
   checkout: git clone https://github.com/obophenotype/ctenophore-ontology.git
-  system: git
-  path: .
   method: vcs
+  path: .
+  system: git
 contact:
   email: cjmungall@lbl.gov
-  label: Chris Mungall
   github: cmungall
+  label: Chris Mungall
   orcid: 0000-0002-6601-2165
+dependencies:
+- id: ro
+- id: uberon
 description: An anatomical and developmental ontology for ctenophores (Comb Jellies)
 domain: anatomy and development
 homepage: https://github.com/obophenotype/ctenophore-ontology
+jobs:
+- id: https://travis-ci.org/obophenotype/ctenophore-ontology
+  type: travis-ci
+license:
+  label: CC BY 3.0
+  url: http://creativecommons.org/licenses/by/3.0/
+preferredPrefix: CTENO
 products:
-  - id: cteno.owl
-dependencies:
-  - id: uberon
-  - id: ro
+- id: cteno.owl
+repository: https://github.com/obophenotype/ctenophore-ontology
 taxon:
   id: NCBITaxon:10197
   label: Ctenophore
 tracker: https://github.com/obophenotype/ctenophore-ontology/issues
-license:
-  url: http://creativecommons.org/licenses/by/3.0/
-  label: CC BY 3.0
 activity_status: active
-repository: https://github.com/obophenotype/ctenophore-ontology
-preferredPrefix: CTENO
 ---
 
 An anatomical and developmental ontology for ctenophores (Comb Jellies).

@@ -1,29 +1,30 @@
 ---
 layout: ontology_detail
 id: hsapdv
-preferredPrefix: HsapDv
 title: Human Developmental Stages
 build:
-  source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/hsapdv/hsapdv.obo
-  method: obo2owl
   infallible: 1
-description: Life cycle stages for Human
-homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv
-tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
-page: https://github.com/obophenotype/developmental-stage-ontologies
+  method: obo2owl
+  source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/hsapdv/hsapdv.obo
 contact:
-  label: Frédéric Bastian
   email: frederic.bastian@unil.ch
   github: fbastian
+  label: Frédéric Bastian
   orcid: 0000-0002-9415-5104
+description: Life cycle stages for Human
+domain: anatomy and development
+homepage: https://github.com/obophenotype/developmental-stage-ontologies/wiki/HsapDv
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
+  url: http://creativecommons.org/licenses/by/3.0/
+page: https://github.com/obophenotype/developmental-stage-ontologies
+preferredPrefix: HsapDv
 products:
-  - id: hsapdv.owl
-  - id: hsapdv.obo
-activity_status: active
+- id: hsapdv.owl
+- id: hsapdv.obo
 repository: https://github.com/obophenotype/developmental-stage-ontologies
+tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
+activity_status: active
 ---
 
 <img alt="HumanEmbryogenesis" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/HumanEmbryogenesis.svg/500px-HumanEmbryogenesis.svg.png"/>

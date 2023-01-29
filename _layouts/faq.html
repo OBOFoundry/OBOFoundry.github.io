@@ -1,29 +1,24 @@
 ---
 layout: default
 ---
-{% include navbar.html %}
-<div class="content">    
 
-
-  <div>	
+<div class="content">
+  <div>
     <div class="page-header">
-      <h1>
-        FAQ: {{ page.title }}
-      </h1>      
-    <p>
-      {{page.summary}}
-    </p>
+      <h1>FAQ: {{ page.title }}</h1>
+      {% if page.summary %}
+      <p>{{page.summary}}</p>
+      {% endif %}
     </div>
-
   </div>
-   
+
   <div class="col-md-12">
     {{ content }}
-    <br/>
-    <strong>Was this helpful?</strong> Please contact us if you have questions or something is not clear. <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new">File an issue on GitHub</a>
+    <br />
+    <strong>Was this helpful?</strong> Please contact us if you have questions
+    or something is not clear.
+    <a href="https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new"
+      >File an issue on GitHub</a
+    >
   </div>
-
-    
-
 </div>
-    

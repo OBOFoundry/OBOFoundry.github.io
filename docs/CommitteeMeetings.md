@@ -1,10 +1,7 @@
 ---
 layout: doc
-id: CommitteeMeetings
-title: CommitteeMeetings
+title: Committee Meetings
 ---
-
-# Introduction
 
 This page lists the various meetings held by the OBO Foundry Operations Committee. Access to minutes of committee meetings is restricted to committee members.
 
@@ -23,6 +20,7 @@ Chairs are assigned on a rotating basis. The chair should create agenda, host ca
 Our meeting minutes are shared on Google Docs. Access is restricted to OFOC members.
 
 ### 2017
+
 - 2017-06-27 Chris M.
 - 2017-06-13 Bjoern
 - 2017-05-30 Lynn
@@ -30,12 +28,13 @@ Our meeting minutes are shared on Google Docs. Access is restricted to OFOC memb
 - 2017-05-02 Darren (Cancelled due to low attendance)
 - [2017-04-18 James](https://docs.google.com/document/d/1_5zjIBcRw4SliACiJ-0wOT286_AghyC_rI5wgRyZBV4/edit#)
 - 2017-04-04 Cancelled
-- [2017-03-21 Darren](https://docs.google.com/document/d/1XPV4RyVKa2RdPtcwek9kBEdZTLZjGWRJhCXBcpvJA3A/edit#heading=h.sgf6as8e4yz) 
+- [2017-03-21 Darren](https://docs.google.com/document/d/1XPV4RyVKa2RdPtcwek9kBEdZTLZjGWRJhCXBcpvJA3A/edit#heading=h.sgf6as8e4yz)
 - 2017-03-07 Ramona
 - 2017-02-21 Lynn
 - [2017-02-21 and 2017-03-07 Meeting Notes](https://docs.google.com/document/d/1gxbh5Csuh7GxCx0EKzjkvZZ88jLdAyMW7ez0V2eKc-M/edit)
 
 ### 2016
+
 - 2016-07-26 Bjoern
 - 2016-07-12 Philippe (tentatively)
 - 2016-06-28 Jie

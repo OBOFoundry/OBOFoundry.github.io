@@ -1,16 +1,17 @@
 ---
 layout: ontology_detail
 id: epo
-in_foundry: false
-description: An ontology designed to support the semantic annotation of epidemiology resources
-homepage: https://code.google.com/p/epidemiology-ontology/
-products:
-  - id: epo.owl
 title: Epidemiology Ontology
 build:
-  source_url: http://purl.obolibrary.org/obo/epo.owl
   method: owl2obo
+  source_url: http://purl.obolibrary.org/obo/epo.owl
+description: An ontology designed to support the semantic annotation of epidemiology resources
+domain: health
+homepage: https://code.google.com/p/epidemiology-ontology/
+in_foundry: false
 is_obsolete: true
+products:
+- id: epo.owl
 activity_status: inactive
 ---
 

@@ -23,7 +23,6 @@ required) and test changes locally.
 
 More details:
 
- * [GitHub project](https://github.com/OBOFoundry/OBOFoundry.github.io/)
- * [README.md](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/README.md) -- how the site works
- * [README-sitedev.md](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/README-sitedev.md) -- for site developers
-
+- [GitHub project](https://github.com/OBOFoundry/OBOFoundry.github.io/)
+- [README.md](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/README.md) -- how the site works
+- [README-sitedev.md](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/README-sitedev.md) -- for site developers

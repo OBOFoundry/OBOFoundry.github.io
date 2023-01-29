@@ -2,32 +2,30 @@
 layout: ontology_detail
 id: geno
 title: Genotype Ontology
-description: An integrated ontology for representing the genetic variations described in genotypes, and their causal relationships to phenotype and diseases.
-domain: biological systems
-tags:
-  - genotype-to-phenotype associations
-homepage: https://github.com/monarch-initiative/GENO-ontology/
-tracker: https://github.com/monarch-initiative/GENO-ontology/issues
-contact:
-  email: mhb120@gmail.com
-  label: Matthew Brush
-  github: mbrush
-  orcid: 0000-0002-1048-5019
-license:
-  url: https://creativecommons.org/licenses/by-sa/2.0/
-  label: CC BY-SA 2.0
 build:
   checkout: git clone https://github.com/monarch-initiative/GENO-ontology.git
-  system: git
   path: src/ontology
-products:
-  - id: geno.owl
-    title: GENO
-
-
-activity_status: active
-repository: https://github.com/monarch-initiative/GENO-ontology
+  system: git
+contact:
+  email: mhb120@gmail.com
+  github: mbrush
+  label: Matthew Brush
+  orcid: 0000-0002-1048-5019
+description: An integrated ontology for representing the genetic variations described in genotypes, and their causal relationships to phenotype and diseases.
+domain: biological systems
+homepage: https://github.com/monarch-initiative/GENO-ontology/
+license:
+  label: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
 preferredPrefix: GENO
+products:
+- id: geno.owl
+  title: GENO
+repository: https://github.com/monarch-initiative/GENO-ontology
+tags:
+- genotype-to-phenotype associations
+tracker: https://github.com/monarch-initiative/GENO-ontology/issues
+activity_status: active
 ---
 
 GENO is an OWL2 ontology that represents the levels of genetic variation specified in genotypes, to support genotype-to-phenotype (G2P) data aggregation and analysis across diverse research communities and sources. The core of the ontology is a graph decomposing a genotype into smaller components of variation, from a complete genotype specifying sequence variation across an entire genome, down to specific allelic variants and sequence alterations. Structuring genotype instance data according to this model supports a primary use case of GENO to enable integrated analysis of G2P data where phenotype annotations are made at different levels of granularity in this genotype partonomy. GENO also enables description of various attributes of genotypes and genetic variants. These attributes include zygosity, genomic position, expression, dominance, and functional dependencies or consequences of a given variant.

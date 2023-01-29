@@ -2,31 +2,28 @@
 layout: ontology_detail
 id: ncro
 title: Non-Coding RNA Ontology
+build:
+  method: owl2obo
+  source_url: http://purl.obolibrary.org/obo/ncro/prebuild/ncro.owl
+contact:
+  email: huang@southalabama.edu
+  github: Huang-OMIT
+  label: Jingshan Huang
+  orcid: 0000-0003-2408-2883
 description: An ontology for non-coding RNA, both of biological origin, and engineered.
 domain: investigations
 homepage: http://omnisearch.soc.southalabama.edu/w/index.php/Ontology
-mailing_list: ncro-devel@googlegroups.com, ncro-discuss@googlegroups.com
-tracker: https://github.com/OmniSearch/ncro/issues
-contact:
-  label: Jingshan Huang
-  email: huang@southalabama.edu
-  github: Huang-OMIT
-  orcid: 0000-0003-2408-2883
 license:
-  url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-# build:
-#  source_url: http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/
-# integration_server: http://build.berkeleybop.org/job/build-obi/
-products:
-  - id: ncro/dev/ncro.owl
-    title: NCRO development version
-build:
-  source_url: http://purl.obolibrary.org/obo/ncro/prebuild/ncro.owl
-  method: owl2obo
-activity_status: active
-repository: https://github.com/OmniSearch/ncro
+  url: https://creativecommons.org/licenses/by/4.0/
+mailing_list: ncro-devel@googlegroups.com, ncro-discuss@googlegroups.com
 preferredPrefix: NCRO
+products:
+- id: ncro/dev/ncro.owl
+  title: NCRO development version
+repository: https://github.com/OmniSearch/ncro
+tracker: https://github.com/OmniSearch/ncro/issues
+activity_status: active
 ---
 
 The NCRO is a reference ontology in the non-coding RNA (ncRNA) field,
