@@ -29,6 +29,11 @@ ALLOWED_SPDX = {
     "CC-BY-3.0",  # see https://bioregistry.io/spdx:CC-BY-3.0
     "CC-BY-4.0",  # see https://bioregistry.io/spdx:CC-BY-4.0
 }
+OBO_TO_SPDX = {
+    "CC BY 4.0": "CC-BY-4.0",
+    "CC BY 3.0": "CC-BY-3.0",
+    "CC0": "CC0-1.0",
+}
 
 
 class TestIntegrity(unittest.TestCase):
@@ -304,9 +309,9 @@ class TestModernIntegrity(unittest.TestCase):
                     "NOASSERTION",
                     spdx,
                     msg="Either no LICENSE file was found or the LICENSE file does not have a standard format that "
-                        "GitHub can parse. See https://docs.github.com/en/repositories/managing-your-"
-                        "repositorys-settings-and-features/customizing-your-repository/licensing-a-"
-                        "repository#detecting-a-license for information on how GitHub does this.",
+                    "GitHub can parse. See https://docs.github.com/en/repositories/managing-your-"
+                    "repositorys-settings-and-features/customizing-your-repository/licensing-a-"
+                    "repository#detecting-a-license for information on how GitHub does this.",
                 )
                 self.assertIn(
                     spdx,
@@ -314,4 +319,10 @@ class TestModernIntegrity(unittest.TestCase):
                     msg=f"LICENSE file does not follow a standard format for"
                     f" one of the allowed license types ({ALLOWED_SPDX})",
                 )
-                # TODO match github to metadata in obo submission
+
+                obo_license = data["license"]["label"]
+                self.assertEqual(
+                    spdx,
+                    OBO_TO_SPDX[obo_license],
+                    msg="OBO Foundry license annotation does not match GitHub license",
+                )

@@ -45,7 +45,7 @@ def query_wikidata(query: str):
 
 
 def get_new_data():
-    """Get records for ontologies that have additional checks
+    """Get records for ontologies that have additional checks.
 
     So far, this applies in the following scenarios:
 
