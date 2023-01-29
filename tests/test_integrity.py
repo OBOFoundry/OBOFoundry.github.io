@@ -2,7 +2,6 @@
 
 import json
 import unittest
-from functools import lru_cache
 from io import StringIO
 from pathlib import Path
 from typing import Set
