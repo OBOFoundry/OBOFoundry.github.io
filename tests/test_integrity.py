@@ -349,6 +349,9 @@ class TestModernIntegrity(unittest.TestCase):
                 f"https://github.com/{r}/blob/{default_branch}/docs/CONTRIBUTING.md",
                 f"https://github.com/{r}/blob/{default_branch}/.github/CONTRIBUTING.md",
             ]
-            for path in paths:
-                res = requests.get(path)
-                res.raise_for_status()
+            self.assertTrue(
+                any(requests.get(path).status_code == 200 for path in paths),
+                msg=f"Could not find a CONTRIBUTING.md file in the repository for {prefix} ({repository}) in any of "
+                "the standard locations defined by GitHub in https://docs.github.com/en/communities/setting-up-"
+                "your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors.",
+            )
