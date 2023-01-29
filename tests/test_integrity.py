@@ -2,6 +2,7 @@
 
 import json
 import unittest
+from functools import lru_cache
 from io import StringIO
 from pathlib import Path
 from typing import Set
@@ -286,21 +287,29 @@ class TestModernIntegrity(unittest.TestCase):
                 self.assertIn("pull_request_added", data)
                 self.assertIn("issue_requested", data)
 
+    @lru_cache
+    def _get_github_data(self, prefix: str):
+        data = self.ontologies[prefix]
+        repository = data["repository"]
+        if not repository.startswith("https://github.com"):
+            return None
+        r = repository.removeprefix("https://github.com/").rstrip("/")
+        url = f"https://api.github.com/repos/{r}"
+        res = requests.get(url)
+        res.raise_for_status()
+        return res.json()
+
     def test_repository_license(self):
         """Test that the repository has a license that's correct."""
         for prefix, data in self.ontologies.items():
             repository = data["repository"]
             if not repository.startswith("https://github.com"):
                 continue
-            r = repository.removeprefix("https://github.com/").rstrip("/")
-            url = f"https://api.github.com/repos/{r}"
             with self.subTest(prefix=prefix):
-                res = requests.get(url)
-                res.raise_for_status()
-                res_json = res.json()
-                self.assertIn("license", res_json)
-                self.assertIn("spdx_id", res_json["license"])
-                spdx = res_json["license"]["spdx_id"]
+                github_data = self._get_github_data(prefix)
+                self.assertIn("license", github_data)
+                self.assertIn("spdx_id", github_data["license"])
+                spdx = github_data["license"]["spdx_id"]
                 self.assertIsNotNone(
                     spdx, msg="No LICENSE file found in the repository"
                 )
