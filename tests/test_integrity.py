@@ -34,6 +34,7 @@ OBO_TO_SPDX = {
     "CC BY 3.0": "CC-BY-3.0",
     "CC0": "CC0-1.0",
 }
+NOR_DASHBOARD_RESULTS = "https://raw.githubusercontent.com/OBOFoundry/obo-nor.github.io/master/dashboard/dashboard-results.yml"
 
 
 class TestIntegrity(unittest.TestCase):
@@ -334,3 +335,41 @@ class TestModernIntegrity(unittest.TestCase):
                     OBO_TO_SPDX[obo_license],
                     msg="OBO Foundry license annotation does not match GitHub license",
                 )
+
+    def test_nor_dashboard(self):
+        """Test that the ontology is in and passes the NOR dashboard."""
+        nor_data = yaml.safe_load(requests.get(NOR_DASHBOARD_RESULTS).content)
+        nor_ontologies = {
+            record["namespace"]: record for record in nor_data["ontologies"]
+        }
+        for prefix, data in self.ontologies.items():
+            with self.subTest(prefix=prefix):
+                self.assertIn(
+                    prefix,
+                    set(nor_ontologies),
+                    msg=f"Need to add `{prefix}` to the New Ontlogy Request Dashboard "
+                    f"(https://github.com/OBOFoundry/obo-nor.github.io)",
+                )
+                self.assertEqual(
+                    "PASS",
+                    nor_ontologies["summary"]["status"],
+                    msg="Passing the NOR Dashboard outright is required for new ontologies",
+                )
+
+    def test_contribution_guidelines(self):
+        """Test that a contribution guidelines document is available in an expected location/format."""
+        for prefix, data in self.ontologies.items():
+            repository = data["repository"]
+            if not repository.startswith("https://github.com"):
+                continue
+            r = repository.removeprefix("https://github.com/").rstrip("/")
+            github_data = self._get_github_data(prefix)
+            default_branch = github_data["default_branch"]
+            paths = [
+                f"https://github.com/{r}/blob/{default_branch}/CONTRIBUTING.md",
+                f"https://github.com/{r}/blob/{default_branch}/docs/CONTRIBUTING.md",
+                f"https://github.com/{r}/blob/{default_branch}/.github/CONTRIBUTING.md",
+            ]
+            for path in paths:
+                res = requests.get(path)
+                res.raise_for_status()
