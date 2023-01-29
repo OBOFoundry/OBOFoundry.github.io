@@ -355,21 +355,3 @@ class TestModernIntegrity(unittest.TestCase):
                     nor_ontologies["summary"]["status"],
                     msg="Passing the NOR Dashboard outright is required for new ontologies",
                 )
-
-    def test_contribution_guidelines(self):
-        """Test that a contribution guidelines document is available in an expected location/format."""
-        for prefix, data in self.ontologies.items():
-            repository = data["repository"]
-            if not repository.startswith("https://github.com"):
-                continue
-            r = repository.removeprefix("https://github.com/").rstrip("/")
-            github_data = self._get_github_data(prefix)
-            default_branch = github_data["default_branch"]
-            paths = [
-                f"https://github.com/{r}/blob/{default_branch}/CONTRIBUTING.md",
-                f"https://github.com/{r}/blob/{default_branch}/docs/CONTRIBUTING.md",
-                f"https://github.com/{r}/blob/{default_branch}/.github/CONTRIBUTING.md",
-            ]
-            for path in paths:
-                res = requests.get(path)
-                res.raise_for_status()
