@@ -3,6 +3,7 @@ layout: principle
 id: fp-011-locus-of-authority
 title: Locus of Authority (principle 11)
 ---
+CONTENTS: [Recommendations/Requirements](#recommendations-and-requirements) | [Implementation](#implementation) | [Examples/Counter-Examples](#examples) | [Criteria for Review](#criteria-for-review) | [Feedback/Discussion](#feedback-and-discussion) 
 
 ## Summary
 
@@ -15,7 +16,7 @@ light of scientific advance, and for ensuring that all user feedback is addresse
 
 It is important that there is a person responsible for communication rather than a group of people or a list. Often in communications to a list, the responsibility for responding can be diffused and it is likely that in some scenarios no response will be given. It may also, from time to time, be necessary to engage in strategic communications (e.g. relating to funding or collaboration possibilities) that are not able to be made public, and these should not be conducted on public mailing lists. The designation of a contact person is not to be interpreted as a designation for credit. Note that alternative contacts can be designated in case the primary contact is unavailable. However, as for the primary contact, each alternative contact must be an individual.
 
-## Recomendations and Requirements
+## Recommendations and Requirements
 
 A primary contact person MUST be assigned.
 The name, email address and GitHub username of the contact person MUST be provided when requesting to register with [OBO](http://obofoundry.org). The contact person MUST be subscribed to obo-discuss in order to be kept abreast of community developments of relevance to
@@ -33,15 +34,15 @@ The contact email MUST NOT be a mailing list. The GitHub account MUST be for the
 
 `contact: email: foo@bar.com label: John Smith github: jsmith123`
 
-### Examples:
+## Examples:
 
 For Mondo, the primary contact person is Nicole Vasilevsky (nicole {at} tislab.org) and her GitHub handle is: nicolevasilevsky.
 
-### Counter-Examples:
+## Counter-Examples:
 
 Mailing list; for ChEBI, chebi-help@ebi.ac.uk
 
-### Criteria for Review
+## Criteria for Review
 
 Email address will be checked to ensure it is for an individual and that it is written in a standard format.
 
