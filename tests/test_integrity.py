@@ -345,9 +345,14 @@ class TestModernIntegrity(unittest.TestCase):
             github_data = self._get_github_data(prefix)
             default_branch = github_data["default_branch"]
             paths = [
+                # Markdown
                 f"https://github.com/{r}/blob/{default_branch}/CONTRIBUTING.md",
                 f"https://github.com/{r}/blob/{default_branch}/docs/CONTRIBUTING.md",
                 f"https://github.com/{r}/blob/{default_branch}/.github/CONTRIBUTING.md",
+                # RST
+                f"https://github.com/{r}/blob/{default_branch}/CONTRIBUTING.rst",
+                f"https://github.com/{r}/blob/{default_branch}/docs/CONTRIBUTING.rst",
+                f"https://github.com/{r}/blob/{default_branch}/.github/CONTRIBUTING.rst",
             ]
             self.assertTrue(
                 any(requests.get(path).status_code == 200 for path in paths),
