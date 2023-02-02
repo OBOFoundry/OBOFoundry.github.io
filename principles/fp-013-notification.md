@@ -4,6 +4,9 @@ id: fp-013-notification
 title: Notification of Changes (principle 13)
 ---
 
+**THE TEXT HEREIN IS A DRAFT, PENDING FINAL VETTING**
+----------------------------------------------------
+
 Summary
 -------
 
