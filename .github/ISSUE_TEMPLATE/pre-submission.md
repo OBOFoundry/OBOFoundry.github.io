@@ -1,5 +1,5 @@
 name: Pre-submission Inquiry
-description: Make a pre-submission inquiry for an ontology. The purpose of a pre-submission inquiry is to announce an early ontology project that is not yet ready for review. It also serves as a reservation of a ontology namespace for a total of 6 months.
+description: Make a pre-submission inquiry for an ontology. The purpose of a pre-submission inquiry is to announce an early ontology project that is not yet ready for review. It also serves as a reservation of an ontology namespace for 6 months.
 title: Pre-submission Inquiry for Ontology [NAME]
 labels: [ pre-submission ]
 body:
