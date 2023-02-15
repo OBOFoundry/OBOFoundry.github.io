@@ -27,6 +27,9 @@ products:
 - id: oba.owl
 - id: oba.obo
 - id: oba/subsets/oba-basic.obo
+publications:
+- id: https://doi.org/10.1101/2023.01.26.525742
+  title: The Ontology of Biological Attributes (OBA) - Computational Traits for the Life Sciences
 repository: https://github.com/obophenotype/bio-attribute-ontology
 tracker: https://github.com/obophenotype/bio-attribute-ontology/issues
 activity_status: active

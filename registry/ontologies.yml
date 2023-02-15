@@ -69,7 +69,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/agro.owl
   preferredPrefix: AGRO
   products:
-  - description: Contains all AgrO terms and links to other relavent ontologies.
+  - description: Contains all AgrO terms and links to other relevant ontologies.
     id: agro.owl
     ontology_purl: http://purl.obolibrary.org/obo/agro.owl
     title: AgrO
@@ -4311,6 +4311,35 @@ ontologies:
   title: Non-Coding RNA Ontology
   tracker: https://github.com/OmniSearch/ncro/issues
 - activity_status: active
+  contact:
+    email: dal.alghamdi92@gmail.com
+    github: dalalghamdi
+    label: Dalia Alghamdi
+    orcid: 0000-0002-2801-0767
+  description: 'The Next Generation Biobanking Ontology (NGBO) is an open application
+    ontology representing contextual data about omics digital assets in biobank. The
+    ontology focuses on capturing the information about three main activities: wet
+    bench analysis used to generate omics data, bioinformatics analysis used to analyze
+    and interpret data, and data management.'
+  domain: investigations
+  homepage: https://github.com/Dalalghamdi/NGBO
+  id: ngbo
+  issue_requested: 1819
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/ngbo.owl
+  preferredPrefix: NGBO
+  products:
+  - id: ngbo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ngbo.owl
+  pull_request_added: 2214
+  repository: https://github.com/Dalalghamdi/NGBO
+  title: Next Generation Biobanking Ontology
+  tracker: https://github.com/Dalalghamdi/NGBO/issues
+- activity_status: active
   build:
     checkout: git clone https://github.com/SpeciesFileGroup/nomen.git
     system: git
@@ -4440,6 +4469,10 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/oba.obo
   - id: oba/subsets/oba-basic.obo
     ontology_purl: http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo
+  publications:
+  - id: https://doi.org/10.1101/2023.01.26.525742
+    title: The Ontology of Biological Attributes (OBA) - Computational Traits for
+      the Life Sciences
   repository: https://github.com/obophenotype/bio-attribute-ontology
   title: Ontology of Biological Attributes
   tracker: https://github.com/obophenotype/bio-attribute-ontology/issues
@@ -8786,7 +8819,8 @@ ontologies:
     source_url: http://www.lipidprofiles.com/LipidOntology
   contact:
     email: bakerc@unb.ca
-    label: Christipher Baker
+    label: Christopher Baker
+    orcid: 0000-0003-4004-6479
   description: An ontology representation of the LIPIDMAPS nomenclature classification.
   domain: chemistry and biochemistry
   id: lipro
