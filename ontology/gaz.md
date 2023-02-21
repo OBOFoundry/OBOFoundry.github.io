@@ -21,7 +21,7 @@ mailing_list: https://groups.google.com/forum/#!forum/obo-gazetteer
 products:
 - id: gaz.owl
 - id: gaz.obo
-- id: gaz-countries.owl
+- id: gaz/gaz-countries.owl
   title: GAZ countries
   description: A country specific subset of the GAZ.
 repository: https://github.com/EnvironmentOntology/gaz
