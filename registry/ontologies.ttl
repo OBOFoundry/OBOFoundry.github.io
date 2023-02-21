@@ -6202,6 +6202,7 @@ _:b250  <http://www.w3.org/2000/01/rdf-schema#label>  "Rahuman Sheriff" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b307 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/gaz.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/gaz.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/gaz/gaz-countries.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://environmentontology.github.io/gaz/> .
 
 <http://purl.obolibrary.org/obo/idomal>
@@ -6485,6 +6486,11 @@ _:b307  <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
 
 <http://purl.obolibrary.org/obo/gaz.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/gaz.obo" .
+
+<http://purl.obolibrary.org/obo/gaz/gaz-countries.owl>
+        <http://purl.org/dc/elements/1.1/description>  "A country specific subset of the GAZ." ;
+        <http://purl.org/dc/elements/1.1/title>  "GAZ countries" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/gaz/gaz-countries.owl" .
 
 _:b308  <http://www.w3.org/2000/01/rdf-schema#label>  "Pantelis Topalis" ;
         <http://xmlns.com/foaf/0.1/mbox>  "topalis@imbb.forth.gr" .
