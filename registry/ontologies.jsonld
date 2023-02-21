@@ -1164,6 +1164,7 @@
             },
             "title": "Cell Ontology",
             "tracker": "https://github.com/obophenotype/cell-ontology/issues",
+            "twitter": "CellOntology",
             "usages": [
                 {
                     "description": "The BICCN created a high-resolution atlas of cell types in the primary motor based on single cell transcriptomics. These cell types are represented in the brain data standards ontology which anchors to cell types in the cell ontology.",
@@ -6259,6 +6260,12 @@
                 {
                     "id": "oba/subsets/oba-basic.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1101/2023.01.26.525742",
+                    "title": "The Ontology of Biological Attributes (OBA) - Computational Traits for the Life Sciences"
                 }
             ],
             "repository": "https://github.com/obophenotype/bio-attribute-ontology",

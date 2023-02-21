@@ -1035,6 +1035,7 @@ _:b62   <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cl.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cl/cl-basic.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cl/cl-base.owl> ;
+        <http://xmlns.com/foaf/0.1/account>  <http://purl.obolibrary.org/obo/CellOntology> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://obophenotype.github.io/cell-ontology/> .
 
 _:b63   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/cell-ontology.git" ;
@@ -2367,6 +2368,7 @@ _:b6    <http://www.w3.org/2000/01/rdf-schema#label>  "Damion Dooley" ;
         <http://purl.org/dc/elements/1.1/description>  "A collection of biological attributes (traits) covering all kingdoms of life." ;
         <http://purl.org/dc/elements/1.1/title>  "Ontology of Biological Attributes" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/publicdomain/zero/1.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1101/2023.01.26.525742> ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/bio-attribute-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/oba.owl" ;
@@ -3871,6 +3873,9 @@ _:b208  <http://www.w3.org/2000/01/rdf-schema#label>  "Matt Yoder" ;
 
 _:b134  <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/bio-attribute-ontology.git" ;
         <http://obofoundry.github.io/vocabulary/method>  "vcs" .
+
+<https://doi.org/10.1101/2023.01.26.525742>
+        <http://purl.org/dc/elements/1.1/title>  "The Ontology of Biological Attributes (OBA) - Computational Traits for the Life Sciences" .
 
 _:b135  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://xmlns.com/foaf/0.1/mbox>  "cjmungall@lbl.gov" .
