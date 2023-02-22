@@ -83,7 +83,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/agro.owl
   preferredPrefix: AGRO
   products:
-  - description: Contains all AgrO terms and links to other relavent ontologies.
+  - description: Contains all AgrO terms and links to other relevant ontologies.
     id: agro.owl
     ontology_purl: http://purl.obolibrary.org/obo/agro.owl
     title: AgrO
@@ -839,6 +839,7 @@ ontologies:
     label: Metazoa
   title: Cell Ontology
   tracker: https://github.com/obophenotype/cell-ontology/issues
+  twitter: CellOntology
   usages:
   - description: The BICCN created a high-resolution atlas of cell types in the primary
       motor based on single cell transcriptomics. These cell types are represented
@@ -4483,6 +4484,10 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/oba.obo
   - id: oba/subsets/oba-basic.obo
     ontology_purl: http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo
+  publications:
+  - id: https://doi.org/10.1101/2023.01.26.525742
+    title: The Ontology of Biological Attributes (OBA) - Computational Traits for
+      the Life Sciences
   repository: https://github.com/obophenotype/bio-attribute-ontology
   title: Ontology of Biological Attributes
   tracker: https://github.com/obophenotype/bio-attribute-ontology/issues
@@ -8239,6 +8244,10 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/gaz.owl
   - id: gaz.obo
     ontology_purl: http://purl.obolibrary.org/obo/gaz.obo
+  - description: A country specific subset of the GAZ.
+    id: gaz/gaz-countries.owl
+    ontology_purl: http://purl.obolibrary.org/obo/gaz/gaz-countries.owl
+    title: GAZ countries
   repository: https://github.com/EnvironmentOntology/gaz
   title: Gazetteer
   tracker: https://github.com/EnvironmentOntology/gaz/issues
@@ -8829,7 +8838,8 @@ ontologies:
     source_url: http://www.lipidprofiles.com/LipidOntology
   contact:
     email: bakerc@unb.ca
-    label: Christipher Baker
+    label: Christopher Baker
+    orcid: 0000-0003-4004-6479
   description: An ontology representation of the LIPIDMAPS nomenclature classification.
   domain: chemistry and biochemistry
   id: lipro
@@ -9314,6 +9324,9 @@ principles:
 - id: fp-012-naming-conventions
   layout: principle
   title: Naming Conventions (principle 12)
+- id: fp-013-notification
+  layout: principle
+  title: Notification of Changes (principle 13)
 - id: fp-016-maintenance
   layout: principle
   title: Maintenance (principle 16)
