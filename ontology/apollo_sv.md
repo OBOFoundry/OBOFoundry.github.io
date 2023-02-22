@@ -23,7 +23,7 @@ repository: https://github.com/ApolloDev/apollo-sv
 tracker: https://github.com/ApolloDev/apollo-sv/issues
 usages:
 - description: 'Development and Validation of a Controlled Vocabulary: An OWL Representation of Organizational Structures of Trauma Centers and Trauma Systems'
-  user: https://ebooks.iospress.nl/publication/52017
+  user: https://doi.org//10.3233/SHTI190252
 activity_status: active
 ---
 
