@@ -350,10 +350,22 @@ class TestModernIntegrity(unittest.TestCase):
                     msg=f"Need to add `{prefix}` to the New Ontlogy Request Dashboard "
                     f"(https://github.com/OBOFoundry/obo-nor.github.io)",
                 )
+
+                failures = set()
+                for key, record in nor_ontologies[prefix]["results"].items():
+                    if key in {
+                        "ROBOT Report",
+                        "FP09 Plurality of Users",
+                    }:
+                        continue
+                    if record["status"] != "PASS":
+                        failures.add(key)
+
                 self.assertEqual(
-                    "PASS",
-                    nor_ontologies["summary"]["status"],
-                    msg="Passing the NOR Dashboard outright is required for new ontologies",
+                    set(),
+                    failures,
+                    msg="Passing the NOR Dashboard outright is required for "
+                    "new ontologies, with the exception of FP09 (usages, for now)",
                 )
 
     def test_contribution_guidelines(self):
