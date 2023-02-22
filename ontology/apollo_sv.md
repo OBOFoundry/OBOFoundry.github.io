@@ -26,8 +26,6 @@ usages:
   examples:
   - description: 'hospital stay dataset reference in midasnetwork.us resource'
     url: https://midasnetwork.us/ontology/class-oboapollo_sv_00000600.html
- 
-  
 activity_status: active
 ---
 
