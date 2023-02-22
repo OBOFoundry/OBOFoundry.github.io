@@ -355,3 +355,29 @@ class TestModernIntegrity(unittest.TestCase):
                     nor_ontologies["summary"]["status"],
                     msg="Passing the NOR Dashboard outright is required for new ontologies",
                 )
+
+    def test_contribution_guidelines(self):
+        """Test that a contribution guidelines document is available in an expected location/format."""
+        for prefix, data in self.ontologies.items():
+            repository = data["repository"]
+            if not repository.startswith("https://github.com"):
+                continue
+            r = repository.removeprefix("https://github.com/").rstrip("/")
+            github_data = self._get_github_data(prefix)
+            default_branch = github_data["default_branch"]
+            paths = [
+                # Markdown
+                f"https://github.com/{r}/blob/{default_branch}/CONTRIBUTING.md",
+                f"https://github.com/{r}/blob/{default_branch}/docs/CONTRIBUTING.md",
+                f"https://github.com/{r}/blob/{default_branch}/.github/CONTRIBUTING.md",
+                # RST
+                f"https://github.com/{r}/blob/{default_branch}/CONTRIBUTING.rst",
+                f"https://github.com/{r}/blob/{default_branch}/docs/CONTRIBUTING.rst",
+                f"https://github.com/{r}/blob/{default_branch}/.github/CONTRIBUTING.rst",
+            ]
+            self.assertTrue(
+                any(requests.get(path).status_code == 200 for path in paths),
+                msg=f"Could not find a CONTRIBUTING.md file in the repository for {prefix} ({repository}) in any of "
+                "the standard locations defined by GitHub in https://docs.github.com/en/communities/setting-up-"
+                "your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors.",
+            )
