@@ -356,7 +356,7 @@ _:b3    <http://www.w3.org/2000/01/rdf-schema#label>  "Marie-Angélique Laporte"
         <http://xmlns.com/foaf/0.1/mbox>  "m.a.laporte@cgiar.org" .
 
 <http://purl.obolibrary.org/obo/agro.owl>
-        <http://purl.org/dc/elements/1.1/description>  "Contains all AgrO terms and links to other relavent ontologies." ;
+        <http://purl.org/dc/elements/1.1/description>  "Contains all AgrO terms and links to other relevant ontologies." ;
         <http://purl.org/dc/elements/1.1/title>  "AgrO" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/agro.owl" .
 
@@ -1035,6 +1035,7 @@ _:b62   <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cl.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cl/cl-basic.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cl/cl-base.owl> ;
+        <http://xmlns.com/foaf/0.1/account>  <http://purl.obolibrary.org/obo/CellOntology> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://obophenotype.github.io/cell-ontology/> .
 
 _:b63   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/cell-ontology.git" ;
@@ -2367,6 +2368,7 @@ _:b6    <http://www.w3.org/2000/01/rdf-schema#label>  "Damion Dooley" ;
         <http://purl.org/dc/elements/1.1/description>  "A collection of biological attributes (traits) covering all kingdoms of life." ;
         <http://purl.org/dc/elements/1.1/title>  "Ontology of Biological Attributes" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/publicdomain/zero/1.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1101/2023.01.26.525742> ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/bio-attribute-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/oba.owl" ;
@@ -3871,6 +3873,9 @@ _:b208  <http://www.w3.org/2000/01/rdf-schema#label>  "Matt Yoder" ;
 
 _:b134  <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/bio-attribute-ontology.git" ;
         <http://obofoundry.github.io/vocabulary/method>  "vcs" .
+
+<https://doi.org/10.1101/2023.01.26.525742>
+        <http://purl.org/dc/elements/1.1/title>  "The Ontology of Biological Attributes (OBA) - Computational Traits for the Life Sciences" .
 
 _:b135  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://xmlns.com/foaf/0.1/mbox>  "cjmungall@lbl.gov" .
@@ -6197,6 +6202,7 @@ _:b250  <http://www.w3.org/2000/01/rdf-schema#label>  "Rahuman Sheriff" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b307 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/gaz.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/gaz.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/gaz/gaz-countries.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://environmentontology.github.io/gaz/> .
 
 <http://purl.obolibrary.org/obo/idomal>
@@ -6480,6 +6486,11 @@ _:b307  <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
 
 <http://purl.obolibrary.org/obo/gaz.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/gaz.obo" .
+
+<http://purl.obolibrary.org/obo/gaz/gaz-countries.owl>
+        <http://purl.org/dc/elements/1.1/description>  "A country specific subset of the GAZ." ;
+        <http://purl.org/dc/elements/1.1/title>  "GAZ countries" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/gaz/gaz-countries.owl" .
 
 _:b308  <http://www.w3.org/2000/01/rdf-schema#label>  "Pantelis Topalis" ;
         <http://xmlns.com/foaf/0.1/mbox>  "topalis@imbb.forth.gr" .
@@ -6973,7 +6984,7 @@ _:b361  <http://www.w3.org/2000/01/rdf-schema#label>  "InterPro Help" ;
 _:b362  <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "http://www.lipidprofiles.com/LipidOntology"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
-_:b363  <http://www.w3.org/2000/01/rdf-schema#label>  "Christipher Baker" ;
+_:b363  <http://www.w3.org/2000/01/rdf-schema#label>  "Christopher Baker" ;
         <http://xmlns.com/foaf/0.1/mbox>  "bakerc@unb.ca" .
 
 <http://purl.obolibrary.org/obo/loggerhead>

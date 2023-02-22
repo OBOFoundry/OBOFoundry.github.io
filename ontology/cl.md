@@ -72,6 +72,7 @@ taxon:
   id: NCBITaxon:33208
   label: Metazoa
 tracker: https://github.com/obophenotype/cell-ontology/issues
+twitter: CellOntology
 usages:
 - description: The BICCN created a high-resolution atlas of cell types in the primary motor based on single cell transcriptomics. These cell types are represented in the brain data standards ontology which anchors to cell types in the cell ontology.
   examples:

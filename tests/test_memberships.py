@@ -56,7 +56,8 @@ class TestMembershipData(unittest.TestCase):
         for person in res.members:
             with self.subTest(name=person.name):
                 self.assertFalse(
-                    person.affiliation.ror is None and person.affiliation.wikidata is None,
+                    person.affiliation.ror is None
+                    and person.affiliation.wikidata is None,
                     msg=dedent(
                         f"""\
                         No ROR nor Wikidata identifier was curated for {person.name}.
