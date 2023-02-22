@@ -3,6 +3,7 @@ layout: principle
 id: fp-002-format
 title: Common Format (principle 2)
 ---
+GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; [Implementation](#implementation) &#124; [Examples/Counter&#8209;Examples](#examples) &#124; [Criteria&nbsp;for&nbsp;Review](#criteria-for-review) &#124; [Feedback/Discussion](#feedback-and-discussion)
 
 ## Summary
 
@@ -22,7 +23,7 @@ Developers can OPTIONALLY produce ontologies in other formats. These are convent
 
 ROBOT offers functionality to convert a variety of formats, including OBO, to RDF/XML. Protégé allows you to save ontologies in RDF/XML, as well. The [Ontology 101 Tutorial](https://ontology101tutorial.readthedocs.io/en/latest/StartingProtege.html) has directions on starting and saving in Protégé.
 
-### Examples
+## Examples
 
 - The [Gene Ontology](http://geneontology.org) is maintained as OBO-Format. It is automatically converted to OWL and is available in both OBO and OWL via the OBO Foundry.
 
@@ -30,7 +31,7 @@ ROBOT offers functionality to convert a variety of formats, including OBO, to RD
 
 - [OBI](http://obi-ontology.org) is maintained as an OWL ontology.
 
-### Counter-Examples
+## Counter-Examples
 
 An ontology that is in Frames format, OWL/XML, or OWL Manchester Syntax.
 
