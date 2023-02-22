@@ -22,8 +22,12 @@ publications:
 repository: https://github.com/ApolloDev/apollo-sv
 tracker: https://github.com/ApolloDev/apollo-sv/issues
 usages:
-- description: 'Development and Validation of a Controlled Vocabulary: An OWL Representation of Organizational Structures of Trauma Centers and Trauma Systems'
-  user: https://doi.org//10.3233/SHTI190252
+- description: 'Apollo-SV terms are used in the new MIDAS portal (https://midasnetwork.us/catalog/) for making data discoverable.'
+  examples:
+  - description: 'hospital stay dataset reference in midasnetwork.us resource'
+    url: https://midasnetwork.us/ontology/class-oboapollo_sv_00000600.html
+ 
+  
 activity_status: active
 ---
 
