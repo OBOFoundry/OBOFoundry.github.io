@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: CompletedReviews
 title: Completed Reviews
 ---
 

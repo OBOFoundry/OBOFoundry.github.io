@@ -3,6 +3,7 @@ layout: principle
 id: fp-020-responsiveness
 title: Responsiveness (principle 20)
 ---
+GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; [Implementation](#implementation) &#124; [Examples/Counter&#8209;Examples](#examples) &#124; [Criteria&nbsp;for&nbsp;Review](#criteria-for-review) &#124; [Feedback/Discussion](#feedback-and-discussion)
 
 ## Summary
 
@@ -12,11 +13,9 @@ Ontology developers MUST offer channels for community participation and SHOULD b
 
 Ontology development benefits from community input, which is strongly encouraged by the OBO Foundry. Accordingly, "responsiveness" is a key quality of our general collaborative spirit. This principle is intended to ensure that channels for community input are available and that responses to input are given swiftly.
 
-Recommendations and Requirements
+## Recommendations and Requirements
 
----
-
-Ontology developers MUST set up a mechanism to track community requests and suggestions (collectively, “issues”), and SHOULD aim to respond within 2-5 working days. Optional: Establish a discussion forum for more general communication with and between users.
+Ontology developers MUST set up a public mechanism to track community requests and suggestions (collectively, “issues”), and SHOULD aim to respond within 2-5 working days. Optional: Establish a discussion forum for more general communication with and between users.
 
 Expectations of responsiveness:
 
@@ -27,30 +26,38 @@ Expectations of responsiveness:
 
 ## Implementation
 
-A discussion mailing list and issue tracker are required to obtain an OBO Foundry PURL. The OBO Foundry offers the following recommendations on the responsiveness in issue trackers (GitHub is recommended).
+<i>Issue tracker:</i>
+Specify the URL for an issue tracker (GitHub is recommended) in the ontology configuration file (YAML) that is used to display ontology details on the OBO Foundry web site. Specification of the tracker is done using the following text (customized for your ontology) within its [metadata file](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology):
 
-1. Specify the URL for an issue tracker (GitHub is recommended) in the ontology configuration file (YAML) that is used to display ontology details on the OBO Foundry web site.
-2. Optional: Establish a discussion forum (For example, Google groups mailing list, Slack, Twitter).
+`tracker: <URL pointing to issue tracker>`
 
-Specification of the tracker is done using the following text (customized for your ontology) within its [metadata file](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology):
+<i>Discussion forum (optional):</i>
+Establish a discussion forum (For example, Google groups mailing list, Slack, Twitter). Each of these is specified in the configuration file as given below:
 
-`tracker: https://github.com/geneontology/go-ontology/issues/ `
+`mailing_list: <email address>`
+
+`twitter: <twitter handle>`
+
+`slack: <URL pointing to slack channel>`
 
 ## Examples
 
 Issue tracker: https://github.com/monarch-initiative/mondo/issues
 
-Discussion list: mondo-users@googlegroups.com
+Mailing list: mondo-users@googlegroups.com
 
-Collaboration of this sort can be demonstrated by having an active discussion mailing list, or responsiveness to community requests on a GitHub tracker.
+Twitter: diseaseontology
+
+Slack: https://geneontologyworkspace.slack.com
 
 ## Counter-Examples
 
+Specifying a private issue tracker.
 Waiting until an issue is resolved before responding, if such resolution comes well after submission of a ticket.
 
 ## Criteria for Review
 
-There is a functioning issue tracker for ontology requests specified on the OBO Foundry web site.
+There is a functioning public issue tracker for ontology requests specified on the OBO Foundry web site.
 
 [This check is automatically validated.](checks/fp_020)
 

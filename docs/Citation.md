@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: Citation
 title: OBO Citation and Attribution Policy
 ---
 

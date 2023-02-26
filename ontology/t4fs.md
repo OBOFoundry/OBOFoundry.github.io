@@ -10,10 +10,11 @@ contact:
 description: A terminology for the skills necessary to make data FAIR and to keep it FAIR.
 domain: information
 homepage: https://github.com/terms4fairskills/FAIRterminology
+issue_requested: 1520
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
-preferredPrefix: TF4S
+preferredPrefix: T4FS
 products:
 - id: t4fs.owl
 - id: t4fs.obo
@@ -27,6 +28,7 @@ products:
 publications:
 - id: https://doi.org/10.5281/zenodo.4705219
   title: 'EOSC Co-creation funded project 074: Delivery of a proof of concept for terms4FAIRskills: Technical report'
+pull_request_added: 2140
 repository: https://github.com/terms4fairskills/FAIRterminology
 tracker: https://github.com/terms4fairskills/FAIRterminology/issues
 usages:

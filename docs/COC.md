@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: Conduct
 title: Code of Conduct
 ---
 

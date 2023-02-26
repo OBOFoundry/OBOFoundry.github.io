@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: Participate
 title: How to participate in the OBO Foundry
 ---
 

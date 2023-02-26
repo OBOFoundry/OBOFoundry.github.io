@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: TechnicalWG
 title: Technical Working Group
 ---
 
@@ -18,7 +17,7 @@ The mailing list for the OBO Foundry Technical Working Group is <a href='mailto:
 
 ## Members
 
-<table class="table">
+<table class="table table-striped table-hover">
 <thead>
 <tr>
     <th role="columnheader">Name</th>
@@ -35,7 +34,7 @@ The mailing list for the OBO Foundry Technical Working Group is <a href='mailto:
     <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
     <td><a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a></td>
     <td><a href="https://github.com/{{ member.github }}">{{ member.github }}</a></td>
-    <td>{{ member.affiliation }}</td>
+    <td>{{ member.affiliation.name }}</td>
     <td>{{ member.country }}</td>
 </tr>
 {% endfor %}

@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: TechnicalWGMeetings
 title: Technical Working Group Meetings
 ---
 

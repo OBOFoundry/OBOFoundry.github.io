@@ -33,7 +33,7 @@ Interactions between ontologies developed by the same entity (person, consortium
 
 ## Criteria for Review
 
-To pass review, the ontology developers must document their attempts at an open dialog with OBO Foundry members, for example by attempting to ascertain if there are other possible ontologies in (or overlapping) the domain of interest. Such documentation can be a simple pointer to an e-mail thread on the OBO discuss list. If there are other ontologies that might need to be aligned or have boundaries determined, evidence of coordination or cooperation should be provided. Further evidence of collaboration may include examples of terms that have been provided to other ontologies in the OBO Foundry community. Finally, hosting or participating in collaborative workshops or meetings attended by OBO Foundry community members is considered evidence of collaboration.
+Ontology developers must document their attempts at an open dialog with OBO Foundry members, for example by attempting to ascertain if there are other possible ontologies in (or overlapping) the domain of interest. Such documentation can be a simple pointer to an e-mail thread on the OBO discuss list. If there are other ontologies that might need to be aligned or have boundaries determined, evidence of coordination or cooperation should be provided. Further evidence of collaboration may include examples of terms that have been provided to other ontologies in the OBO Foundry community. Finally, hosting or participating in collaborative workshops or meetings attended by OBO Foundry community members is considered evidence of collaboration.
 
 ## Feedback and Discussion
 

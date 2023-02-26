@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: OBOPURLDomain
 title: OBO PURL Domain
 ---
 

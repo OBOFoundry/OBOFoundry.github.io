@@ -25,6 +25,7 @@ preferredPrefix: CLYH
 products:
 - id: clyh.owl
 - id: clyh.obo
+pull_request_added: 1205
 repository: https://github.com/EBISPOT/clyh_ontology
 tracker: https://github.com/EBISPOT/clyh_ontology/issues
 activity_status: active

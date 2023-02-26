@@ -1,6 +1,5 @@
 ---
 layout: doc
-id: EditorialWG
 title: Editorial Working Group
 ---
 
@@ -22,7 +21,6 @@ Current activities are focused on creating guidelines for reviews. Once those gu
 
 - [Ontology review process guidelines](/docs/ReviewProcessGuidelines.html)
 - [Ontology review criteria policies](/docs/ReviewCriteriaPolicies.html)
-- [Ontology review management guidelines](/docs/ReviewManagementGuidelines.html)
 
 ### Principles Review
 
@@ -38,7 +36,7 @@ The mailing list for the OBO Foundry Editorial Working Group is <a href='mailto:
 
 Membership in the OBO Foundry Editorial WG is open to all members of the OBO Foundry Operations Committee who are willing to actively participate. If you are interested in joining the working group, send an email to the mailing list.
 
-<table class="table">
+<table class="table table-striped table-hover">
 <thead>
 <tr>
     <th role="columnheader">Name</th>
@@ -55,7 +53,7 @@ Membership in the OBO Foundry Editorial WG is open to all members of the OBO Fou
     <td>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</td>
     <td><a href="https://orcid.org/{{ member.orcid }}">{{ member.orcid }}</a></td>
     <td><a href="https://github.com/{{ member.github }}">{{ member.github }}</a></td>
-    <td>{{ member.affiliation }}</td>
+    <td>{{ member.affiliation.name }}</td>
     <td>{{ member.country }}</td>
 </tr>
 {% endfor %}

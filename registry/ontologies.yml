@@ -69,7 +69,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/agro.owl
   preferredPrefix: AGRO
   products:
-  - description: Contains all AgrO terms and links to other relavent ontologies.
+  - description: Contains all AgrO terms and links to other relevant ontologies.
     id: agro.owl
     ontology_purl: http://purl.obolibrary.org/obo/agro.owl
     title: AgrO
@@ -276,6 +276,10 @@ ontologies:
   products:
   - id: bco.owl
     ontology_purl: http://purl.obolibrary.org/obo/bco.owl
+  publications:
+  - id: https://doi.org/10.1371/journal.pone.0089606
+    title: 'Semantics in Support of Biodiversity Knowledge Discovery: An Introduction
+      to the Biological Collections Ontology and Related Ontologies'
   repository: https://github.com/BiodiversityOntologies/bco
   tags:
   - biodiversity collections
@@ -413,9 +417,9 @@ ontologies:
   id: caro
   layout: ontology_detail
   license:
-    label: CC BY 3.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/3.0/
+    url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/caro.owl
   preferredPrefix: CARO
   products:
@@ -702,6 +706,10 @@ ontologies:
   products:
   - id: cido.owl
     ontology_purl: http://purl.obolibrary.org/obo/cido.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/36271389
+    title: 'A comprehensive update on CIDO: the community-based coronavirus infectious
+      disease ontology'
   repository: https://github.com/cido-ontology/cido
   title: Coronavirus Infectious Disease Ontology
   tracker: https://github.com/cido-ontology/cido/issues
@@ -817,6 +825,7 @@ ontologies:
     label: Metazoa
   title: Cell Ontology
   tracker: https://github.com/obophenotype/cell-ontology/issues
+  twitter: CellOntology
   usages:
   - description: The BICCN created a high-resolution atlas of cell types in the primary
       motor based on single cell transcriptomics. These cell types are represented
@@ -919,6 +928,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/clao.owl
   - id: clao.obo
     ontology_purl: http://purl.obolibrary.org/obo/clao.obo
+  pull_request_added: 1337
   repository: https://github.com/luis-gonzalez-m/Collembola
   title: Collembola Anatomy Ontology
   tracker: https://github.com/luis-gonzalez-m/Collembola/issues
@@ -985,6 +995,7 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/clyh.owl
   - id: clyh.obo
     ontology_purl: http://purl.obolibrary.org/obo/clyh.obo
+  pull_request_added: 1205
   repository: https://github.com/EBISPOT/clyh_ontology
   title: Clytia hemisphaerica Development and Anatomy Ontology
   tracker: https://github.com/EBISPOT/clyh_ontology/issues
@@ -1634,8 +1645,10 @@ ontologies:
   - id: eco.obo
     ontology_purl: http://purl.obolibrary.org/obo/eco.obo
   publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/34986598
     preferred: true
+    title: 'ECO: the Evidence and Conclusion Ontology, an update for 2022.'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/30407590
     title: 'ECO, the Evidence & Conclusion Ontology: community standard for evidence
       information.'
   - id: https://www.ncbi.nlm.nih.gov/pubmed/25052702
@@ -1814,6 +1827,18 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/emapa.owl
   - id: emapa.obo
     ontology_purl: http://purl.obolibrary.org/obo/emapa.obo
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/9651497
+    title: An internet-accessible database of mouse developmental anatomy based on
+      a systematic nomenclature
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/23972281
+    title: 'EMAP/EMAPA ontology of mouse developmental anatomy: 2013 update'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/26208972
+    title: 'Mouse Anatomy Ontologies: Enhancements and Tools for Exploring and Integrating
+      Biomedical Data'
+  - id: https://doi.org/10.1016/B978-0-12-800043-4.00023-3
+    title: 'Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene
+      Expression Database for Mouse Development (GXD)'
   repository: https://github.com/obophenotype/mouse-anatomy-ontology
   taxon:
     id: NCBITaxon:10088
@@ -2254,6 +2279,14 @@ ontologies:
     label: Drosophila
   title: Drosophila development
   tracker: http://purl.obolibrary.org/obo/fbdv/tracker
+  usages:
+  - description: Used to record stages in expression and phenotype curation
+    examples:
+    - description: Expression of DLP in embryonic/larval midgut primordium at embryonic
+        stage 13 (http://purl.obolibrary.org/obo/FBdv_00005328) (Khare and Baumgartner,
+        2000)
+      url: https://flybase.org/reports/FBgn0041604#expression
+    user: http://flybase.org
 - activity_status: active
   contact:
     email: georgeta.bordea@u-bordeaux.fr
@@ -2274,9 +2307,9 @@ ontologies:
   products:
   - id: fideo.owl
     ontology_purl: http://purl.obolibrary.org/obo/fideo.owl
-  repository: https://github.com/getbordea/fideo
+  repository: https://gitub.u-bordeaux.fr/erias/fideo
   title: Food Interactions with Drugs Evidence Ontology
-  tracker: https://github.com/getbordea/fideo/issues
+  tracker: https://gitub.u-bordeaux.fr/erias/fideo/issues
 - activity_status: active
   build:
     method: owl2obo
@@ -2706,7 +2739,7 @@ ontologies:
     subset: go/extensions/ro_import.owl
   - id: uberon
     subset: go/extensions/uberon_import.owl
-  depicted_by: http://geneontology.org/assets/go-logo-icon.mini.png
+  depicted_by: /images/go_logo.png
   description: An ontology for describing the function of genes and gene products
   domain: biological systems
   homepage: http://geneontology.org/
@@ -3128,6 +3161,10 @@ ontologies:
   products:
   - id: iceo.owl
     ontology_purl: http://purl.obolibrary.org/obo/iceo.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/35058462
+    title: ICEO, a biological ontology for representing and analyzing bacterial integrative
+      and conjugative elements
   repository: https://github.com/ontoice/ICEO
   title: Integrative and Conjugative Element Ontology
   tracker: https://github.com/ontoice/ICEO/issues
@@ -3186,6 +3223,9 @@ ontologies:
   products:
   - id: ido.owl
     ontology_purl: http://purl.obolibrary.org/obo/ido.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/34275487
+    title: The Infectious Disease Ontology in the age of COVID-19
   repository: https://github.com/infectious-disease-ontology/infectious-disease-ontology
   taxon:
     id: NCBITaxon:9606
@@ -3355,22 +3395,24 @@ ontologies:
   - id: chebi
   - id: foodon
   - id: go
+  - id: hp
   - id: iao
+  - id: nbo
+  - id: obi
   - id: ro
   - id: uberon
   depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/maxo-logos/maxo_logo_black-banner.png
-  description: Medical Action Ontology is an ontology...
+  description: The Medical Action Ontology (MAxO) provides a broad view of medical
+    actions and includes terms for medical procedures, interventions, therapies, treatments,
+    and recommendations.
   domain: health
   homepage: https://github.com/monarch-initiative/MAxO
   id: maxo
-  jobs:
-  - id: https://travis-ci.org/monarch-initiative/MAxO
-    type: travis-ci
   layout: ontology_detail
   license:
-    label: CC BY 3.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
+    url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/maxo.owl
   preferredPrefix: MAXO
   products:
@@ -4270,6 +4312,35 @@ ontologies:
   title: Non-Coding RNA Ontology
   tracker: https://github.com/OmniSearch/ncro/issues
 - activity_status: active
+  contact:
+    email: dal.alghamdi92@gmail.com
+    github: dalalghamdi
+    label: Dalia Alghamdi
+    orcid: 0000-0002-2801-0767
+  description: 'The Next Generation Biobanking Ontology (NGBO) is an open application
+    ontology representing contextual data about omics digital assets in biobank. The
+    ontology focuses on capturing the information about three main activities: wet
+    bench analysis used to generate omics data, bioinformatics analysis used to analyze
+    and interpret data, and data management.'
+  domain: investigations
+  homepage: https://github.com/Dalalghamdi/NGBO
+  id: ngbo
+  issue_requested: 1819
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/ngbo.owl
+  preferredPrefix: NGBO
+  products:
+  - id: ngbo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ngbo.owl
+  pull_request_added: 2214
+  repository: https://github.com/Dalalghamdi/NGBO
+  title: Next Generation Biobanking Ontology
+  tracker: https://github.com/Dalalghamdi/NGBO/issues
+- activity_status: active
   build:
     checkout: git clone https://github.com/SpeciesFileGroup/nomen.git
     system: git
@@ -4399,6 +4470,10 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/oba.obo
   - id: oba/subsets/oba-basic.obo
     ontology_purl: http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo
+  publications:
+  - id: https://doi.org/10.1101/2023.01.26.525742
+    title: The Ontology of Biological Attributes (OBA) - Computational Traits for
+      the Life Sciences
   repository: https://github.com/obophenotype/bio-attribute-ontology
   title: Ontology of Biological Attributes
   tracker: https://github.com/obophenotype/bio-attribute-ontology/issues
@@ -4613,6 +4688,9 @@ ontologies:
   products:
   - id: ogms.owl
     ontology_purl: http://purl.obolibrary.org/obo/ogms.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25991121
+    title: Biomarkers in the Ontology for General Medical Science
   repository: https://github.com/OGMS/ogms
   tags:
   - medicine
@@ -6170,7 +6248,7 @@ ontologies:
     github: keilbeck
     label: Karen Eilbeck
     orcid: 0000-0002-0831-6427
-  depicted_by: http://sequenceontology.org/img/so_icon.png
+  depicted_by: /images/so_logo.png
   description: A structured controlled vocabulary for sequence annotation, for the
     exchange of annotation data and for the description of sequence objects in databases.
   domain: chemistry and biochemistry
@@ -6374,13 +6452,14 @@ ontologies:
   domain: information
   homepage: https://github.com/terms4fairskills/FAIRterminology
   id: t4fs
+  issue_requested: 1520
   layout: ontology_detail
   license:
     label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
     url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/t4fs.owl
-  preferredPrefix: TF4S
+  preferredPrefix: T4FS
   products:
   - id: t4fs.owl
     ontology_purl: http://purl.obolibrary.org/obo/t4fs.owl
@@ -6407,6 +6486,7 @@ ontologies:
   - id: https://doi.org/10.5281/zenodo.4705219
     title: 'EOSC Co-creation funded project 074: Delivery of a proof of concept for
       terms4FAIRskills: Technical report'
+  pull_request_added: 2140
   repository: https://github.com/terms4fairskills/FAIRterminology
   title: terms4FAIRskills
   tracker: https://github.com/terms4fairskills/FAIRterminology/issues
@@ -8150,6 +8230,10 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/gaz.owl
   - id: gaz.obo
     ontology_purl: http://purl.obolibrary.org/obo/gaz.obo
+  - description: A country specific subset of the GAZ.
+    id: gaz/gaz-countries.owl
+    ontology_purl: http://purl.obolibrary.org/obo/gaz/gaz-countries.owl
+    title: GAZ countries
   repository: https://github.com/EnvironmentOntology/gaz
   title: Gazetteer
   tracker: https://github.com/EnvironmentOntology/gaz/issues
@@ -8740,7 +8824,8 @@ ontologies:
     source_url: http://www.lipidprofiles.com/LipidOntology
   contact:
     email: bakerc@unb.ca
-    label: Christipher Baker
+    label: Christopher Baker
+    orcid: 0000-0003-4004-6479
   description: An ontology representation of the LIPIDMAPS nomenclature classification.
   domain: chemistry and biochemistry
   id: lipro

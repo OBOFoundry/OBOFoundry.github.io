@@ -3,6 +3,7 @@ layout: principle
 id: fp-001-open
 title: Open (principle 1)
 ---
+GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; [Implementation](#implementation) &#124; [Examples/Counter&#8209;Examples](#examples) &#124; [Criteria&nbsp;for&nbsp;Review](#criteria-for-review) &#124; [Feedback/Discussion](#feedback-and-discussion) 
 
 ## Summary
 
@@ -155,7 +156,7 @@ material</obo:IAO_0000111>
 
 ## Criteria for Review
 
-To pass review, the ontology must have a license that is equivalent to or less restrictive than CC-BY, specified as described in the text and examples above.
+The ontology must have a license that is equivalent to or less restrictive than CC-BY, specified as described in the text and examples above.
 
 [This check is automatically validated.](checks/fp_001) The automatic check fully covers the requirements for this principle.
 

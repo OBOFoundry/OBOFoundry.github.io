@@ -30,7 +30,7 @@ dependencies:
   subset: go/extensions/ro_import.owl
 - id: uberon
   subset: go/extensions/uberon_import.owl
-depicted_by: http://geneontology.org/assets/go-logo-icon.mini.png
+depicted_by: /images/go_logo.png
 description: An ontology for describing the function of genes and gene products
 domain: biological systems
 homepage: http://geneontology.org/

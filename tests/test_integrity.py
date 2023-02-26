@@ -2,6 +2,7 @@
 
 import json
 import unittest
+from functools import lru_cache
 from io import StringIO
 from pathlib import Path
 from typing import Set
@@ -10,7 +11,7 @@ import requests
 import yaml
 
 from obofoundry.standardize_metadata import ModifiedDumper
-from obofoundry.utils import ONTOLOGY_DIRECTORY, get_data
+from obofoundry.utils import ONTOLOGY_DIRECTORY, get_data, get_new_data
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent
@@ -23,6 +24,17 @@ MEDRXIV_PREFIX = "https://www.medrxiv.org/content/"
 ZENODO_PREFIX = "https://zenodo.org/record/"
 DOI_PREFIX = "https://doi.org/"
 CHEMRXIV_DOI_PREFIX = "https://doi.org/10.26434/chemrxiv"
+ALLOWED_SPDX = {
+    "CC0-1.0",  # see https://bioregistry.io/spdx:CC0-1.0
+    "CC-BY-3.0",  # see https://bioregistry.io/spdx:CC-BY-3.0
+    "CC-BY-4.0",  # see https://bioregistry.io/spdx:CC-BY-4.0
+}
+OBO_TO_SPDX = {
+    "CC BY 4.0": "CC-BY-4.0",
+    "CC BY 3.0": "CC-BY-3.0",
+    "CC0": "CC0-1.0",
+}
+NOR_DASHBOARD_RESULTS = "https://raw.githubusercontent.com/OBOFoundry/obo-nor.github.io/master/dashboard/dashboard-results.yml"
 
 
 class TestIntegrity(unittest.TestCase):
@@ -183,6 +195,8 @@ class TestIntegrity(unittest.TestCase):
                 self.assertIsNotNone(preferred_prefix)
                 self.assertLessEqual(2, len(preferred_prefix))
                 self.assertNotIn(" ", preferred_prefix)
+                if prefix != "dpo":
+                    self.assertEqual(preferred_prefix.casefold(), prefix.casefold())
 
     def test_redundant_descriptions(self):
         """Test that the description field is not redundant of the long form description."""
@@ -251,3 +265,131 @@ def _string_norm(s: str) -> str:
         .replace(".", "")
         .replace("-", "")
     )
+
+
+class TestModernIntegrity(unittest.TestCase):
+    """A test case for data integrity exclusively for new ontologies.
+
+    Specifically, tests implemented in this integrity test are only
+    "going-forwards" and don't need to be retroactively applied. This works
+    since it only looks at ontologies that appear in the /ontologies folder
+    with a markdown file but do not already appear in the published registry
+    build.
+    """
+
+    def setUp(self) -> None:
+        """Set up the test case."""
+        self.ontologies = get_new_data()
+
+    def test_github_references(self):
+        """Test that new ontologies reference the pull request where they were added."""
+        for prefix, data in self.ontologies.items():
+            with self.subTest(prefix=prefix):
+                self.assertIn("pull_request_added", data)
+                self.assertIn("issue_requested", data)
+
+    @lru_cache
+    def _get_github_data(self, prefix: str):
+        data = self.ontologies[prefix]
+        repository = data["repository"]
+        if not repository.startswith("https://github.com"):
+            return None
+        r = repository.removeprefix("https://github.com/").rstrip("/")
+        url = f"https://api.github.com/repos/{r}"
+        res = requests.get(url)
+        res.raise_for_status()
+        return res.json()
+
+    def test_repository_license(self):
+        """Test that the repository has a license that's correct."""
+        for prefix, data in self.ontologies.items():
+            repository = data["repository"]
+            if not repository.startswith("https://github.com"):
+                continue
+            with self.subTest(prefix=prefix):
+                github_data = self._get_github_data(prefix)
+                self.assertIn("license", github_data)
+                self.assertIn("spdx_id", github_data["license"])
+                spdx = github_data["license"]["spdx_id"]
+                self.assertIsNotNone(
+                    spdx, msg="No LICENSE file found in the repository"
+                )
+                self.assertNotEqual(
+                    "NOASSERTION",
+                    spdx,
+                    msg="Either no LICENSE file was found or the LICENSE file does not have a standard format that "
+                    "GitHub can parse. See https://docs.github.com/en/repositories/managing-your-"
+                    "repositorys-settings-and-features/customizing-your-repository/licensing-a-"
+                    "repository#detecting-a-license for information on how GitHub does this.",
+                )
+                self.assertIn(
+                    spdx,
+                    ALLOWED_SPDX,
+                    msg=f"LICENSE file does not follow a standard format for"
+                    f" one of the allowed license types ({ALLOWED_SPDX})",
+                )
+
+                obo_license = data["license"]["label"]
+                self.assertEqual(
+                    spdx,
+                    OBO_TO_SPDX[obo_license],
+                    msg="OBO Foundry license annotation does not match GitHub license",
+                )
+
+    def test_nor_dashboard(self):
+        """Test that the ontology is in and passes the NOR dashboard."""
+        nor_data = yaml.safe_load(requests.get(NOR_DASHBOARD_RESULTS).content)
+        nor_ontologies = {
+            record["namespace"]: record for record in nor_data["ontologies"]
+        }
+        for prefix, data in self.ontologies.items():
+            with self.subTest(prefix=prefix):
+                self.assertIn(
+                    prefix,
+                    set(nor_ontologies),
+                    msg=f"Need to add `{prefix}` to the New Ontlogy Request Dashboard "
+                    f"(https://github.com/OBOFoundry/obo-nor.github.io)",
+                )
+
+                failures = set()
+                for key, record in nor_ontologies[prefix]["results"].items():
+                    if key in {
+                        "ROBOT Report",
+                        "FP09 Plurality of Users",
+                    }:
+                        continue
+                    if record["status"] != "PASS":
+                        failures.add(key)
+
+                self.assertEqual(
+                    set(),
+                    failures,
+                    msg="Passing the NOR Dashboard outright is required for "
+                    "new ontologies, with the exception of FP09 (usages, for now)",
+                )
+
+    def test_contribution_guidelines(self):
+        """Test that a contribution guidelines document is available in an expected location/format."""
+        for prefix, data in self.ontologies.items():
+            repository = data["repository"]
+            if not repository.startswith("https://github.com"):
+                continue
+            r = repository.removeprefix("https://github.com/").rstrip("/")
+            github_data = self._get_github_data(prefix)
+            default_branch = github_data["default_branch"]
+            paths = [
+                # Markdown
+                f"https://github.com/{r}/blob/{default_branch}/CONTRIBUTING.md",
+                f"https://github.com/{r}/blob/{default_branch}/docs/CONTRIBUTING.md",
+                f"https://github.com/{r}/blob/{default_branch}/.github/CONTRIBUTING.md",
+                # RST
+                f"https://github.com/{r}/blob/{default_branch}/CONTRIBUTING.rst",
+                f"https://github.com/{r}/blob/{default_branch}/docs/CONTRIBUTING.rst",
+                f"https://github.com/{r}/blob/{default_branch}/.github/CONTRIBUTING.rst",
+            ]
+            self.assertTrue(
+                any(requests.get(path).status_code == 200 for path in paths),
+                msg=f"Could not find a CONTRIBUTING.md file in the repository for {prefix} ({repository}) in any of "
+                "the standard locations defined by GitHub in https://docs.github.com/en/communities/setting-up-"
+                "your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors.",
+            )

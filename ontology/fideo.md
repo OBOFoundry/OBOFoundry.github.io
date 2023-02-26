@@ -16,8 +16,8 @@ license:
 preferredPrefix: FIDEO
 products:
 - id: fideo.owl
-repository: https://github.com/getbordea/fideo
-tracker: https://github.com/getbordea/fideo/issues
+repository: https://gitub.u-bordeaux.fr/erias/fideo
+tracker: https://gitub.u-bordeaux.fr/erias/fideo/issues
 activity_status: active
 ---
 
