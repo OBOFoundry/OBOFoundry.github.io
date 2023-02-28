@@ -133,7 +133,7 @@ usages:
   examples:
   - description: Uberon terms used to annotate expression of human hemoglobin subunit beta
     url: http://bgee.org/?page=gene&gene_id=ENSG00000244734
-  seeAlso: https://fairsharing.org/FAIRsharing.x6d6sx
+  seeAlso: https://doi.org/10.25504/FAIRsharing.x6d6sx
   type: annotation
   user: http://bgee.org/
 - description: The National Human Genome Research Institute (NHGRI) launched a public research consortium named ENCODE, the Encyclopedia Of DNA Elements, in September 2003, to carry out a project to identify all functional elements in the human genome sequence. The ENCODE DCC users Uberon to annotate samples
