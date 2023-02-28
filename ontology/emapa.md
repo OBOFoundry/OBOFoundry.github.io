@@ -37,7 +37,7 @@ taxon:
 tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
 usages:
 - description: GXD
-  seeAlso: https://fairsharing.org/FAIRsharing.q9neh8
+  seeAlso: https://doi.org/10.25504/FAIRsharing.q9neh8
   user: http://www.informatics.jax.org/expression.shtml
 activity_status: active
 ---
