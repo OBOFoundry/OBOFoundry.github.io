@@ -18,8 +18,8 @@ preferredPrefix: OGMS
 products:
 - id: ogms.owl
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/25991121
-  title: Biomarkers in the Ontology for General Medical Science
+- id: https://pubmed.ncbi.nlm.nih.gov/21347182/
+  title: Toward an ontological treatment of disease and diagnosis
 repository: https://github.com/OGMS/ogms
 tags:
 - medicine
