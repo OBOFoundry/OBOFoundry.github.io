@@ -105,15 +105,14 @@ For a discussion on this SOP, see [here](https://github.com/OBOFoundry/OBOFoundr
 
 ## Reviving obsolete, orphaned, or inactive ontologies
 
-Ontologies that became dormant and were marked as either obsolete, orphaned, or inactive require a review process if they want to be marked as active again.
+Ontologies that were marked as either obsolete, orphaned, or inactive require a review process if they want to be marked as active again.
 Currently, these are the required steps:
-1. If an ontology is desired to be reactivated, it must first pass the Dashboard.
-2. A member of the ontology community makes a PR on the metadata file with the desired change in state.
-   This PR must include some evidence that backs up the change (we will provide better guidelines as this SOP matures). Think of showing closed issues to indicate activity etc.
+1. If ontology reactivation is desired, it must first pass the Dashboard.
+2. A member of the ontology community makes a pull request (PR) on the metadata file with the desired change in status. The PR must include evidence to demonstrate new activity, for example by referring to recently-closed issues (we will provide more detailed guidelines as this SOP matures).
 3. If the community member is not the ontology owner, the ontology owner must be contacted for comment via email and tagged on the issue. The ontology owner is given 1 month to object to the change, in which case, it is rejected.
-4. The OBO Operations committee assigns a reviewer during the next call to analyse the evidence for the change. Only the evidence matters - no need to try and collect more evidence in favour of the state change.
-5. The Reviewer presents the arguments for and against the state change at an OBO Ops call.
-6. A vote is issued that must be unanimous in favour of the state change.
+4. The OBO Operations committee assigns a reviewer during the next call to analyse the evidence for the change. Only the evidence matters - no need to collect more evidence in favor of the status change.
+5. The Reviewer presents the arguments for and against the status change at an OBO Operations call.
+6. A vote is issued that must be unanimous in favour of the status change.
 
 <a name="OPS_MEMBER"></a>
 
