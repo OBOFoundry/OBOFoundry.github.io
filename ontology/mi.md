@@ -7,10 +7,10 @@ build:
   method: obo2owl
   source_url: https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo
 contact:
-  email: pporras@ebi.ac.uk
-  github: pporrasebi
-  label: Pablo Porras Millán
-  orcid: 0000-0002-8429-8793
+  email: luana.licata@gmail.com
+  github: luanalicata
+  label: Luana Licata
+  orcid: 0000-0001-5084-9000
 description: A structured controlled vocabulary for the annotation of experiments concerned with protein-protein interactions.
 domain: investigations
 homepage: https://github.com/HUPO-PSI/psi-mi-CV

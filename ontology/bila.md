@@ -8,7 +8,9 @@ build:
   source_url: http://4dx.embl.de/4DXpress_4d/edocs/bilateria_mrca.obo
 contact:
   email: henrich@embl.de
-  label: Thorsten Heinrich
+  github: ThorstenHen
+  label: Thorsten Henrich
+  orcid: 0000-0002-1548-3290
 domain: anatomy and development
 homepage: http://4dx.embl.de/4DXpress
 is_obsolete: true

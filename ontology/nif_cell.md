@@ -5,6 +5,7 @@ title: NIF Cell
 contact:
   email: smtifahim@gmail.com
   label: Fahim Imam
+  orcid: 0000-0003-4752-543X
 description: Neuronal cell types
 domain: anatomy and development
 homepage: http://neuinfo.org/
