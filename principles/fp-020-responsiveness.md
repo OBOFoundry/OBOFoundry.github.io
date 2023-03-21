@@ -3,55 +3,61 @@ layout: principle
 id: fp-020-responsiveness
 title: Responsiveness (principle 20)
 ---
+GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; [Implementation](#implementation) &#124; [Examples/Counter&#8209;Examples](#examples) &#124; [Criteria&nbsp;for&nbsp;Review](#criteria-for-review) &#124; [Feedback/Discussion](#feedback-and-discussion)
 
-Summary
--------
-Ontology developers MUST offer channels for community participation and SHOULD be responsive to requests. 
+## Summary
 
-Purpose
--------
-Ontology development benefits from community input, which is strongly encouraged by the OBO Foundry. Accordingly, "responsiveness" is a key quality of our general collaborative spirit. This principle is intended to ensure that channels for community input are available and that responses to input are given swiftly. 
+Ontology developers MUST offer channels for community participation and SHOULD be responsive to requests.
 
-Recommendations and Requirements
-------- 
-Ontology developers MUST set up a mechanism to track community requests and suggestions (collectively, “issues”), and SHOULD aim to respond within 2-5 working days. Optional: Establish a discussion forum for more general communication with and between users.
+## Purpose
+
+Ontology development benefits from community input, which is strongly encouraged by the OBO Foundry. Accordingly, "responsiveness" is a key quality of our general collaborative spirit. This principle is intended to ensure that channels for community input are available and that responses to input are given swiftly.
+
+## Recommendations and Requirements
+
+Ontology developers MUST set up a public mechanism to track community requests and suggestions (collectively, “issues”), and SHOULD aim to respond within 2-5 working days. Optional: Establish a discussion forum for more general communication with and between users.
 
 Expectations of responsiveness:
-1. Issues are contributions - and should be met by a thankful attitude. When receiving an item on your issue tracker, the first thing to do is thank the contributor, even if it cannot be addressed right away. 
-2. If an issue cannot be addressed right away, explain when you plan to address the issue. 
+
+1. Issues are contributions - and should be met by a thankful attitude. When receiving an item on your issue tracker, the first thing to do is thank the contributor, even if it cannot be addressed right away.
+2. If an issue cannot be addressed right away, explain when you plan to address the issue.
 3. Do not close issues without responding. If an issue is out of scope for a repository, recommend moving it to a different repository.
 4. It is recommended that one or more developers be designated to triage issues.
 
-Implementation
--------
-A discussion mailing list and issue tracker are required to obtain an OBO Foundry PURL. The OBO Foundry offers the following recommendations on the responsiveness in issue trackers (GitHub is recommended).
+## Implementation
 
-1. Specify the URL for an issue tracker (GitHub is recommended) in the ontology configuration file (YAML) that is used to display ontology details on the OBO Foundry web site.
-2. Optional: Establish a discussion forum (For example, Google groups mailing list, Slack, Twitter).
+<i>Issue tracker:</i>
+Specify the URL for an issue tracker (GitHub is recommended) in the ontology configuration file (YAML) that is used to display ontology details on the OBO Foundry web site. Specification of the tracker is done using the following text (customized for your ontology) within its [metadata file](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology):
 
-Specification of the tracker is done using the following text (customized for your ontology) within its [metadata file](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology):
+`tracker: <URL pointing to issue tracker>`
 
-`tracker: https://github.com/geneontology/go-ontology/issues/
-`
+<i>Discussion forum (optional):</i>
+Establish a discussion forum (For example, Google groups mailing list, Slack, Twitter). Each of these is specified in the configuration file as given below:
 
-Examples
---------
+`mailing_list: <email address>`
 
-Issue tracker: https://github.com/monarch-initiative/mondo/issues  
+`twitter: <twitter handle>`
 
-Discussion list: mondo-users@googlegroups.com  
+`slack: <URL pointing to slack channel>`
 
-Collaboration of this sort can be demonstrated by having an active discussion mailing list, or responsiveness to community requests on a GitHub tracker.  
+## Examples
 
+Issue tracker: https://github.com/monarch-initiative/mondo/issues
 
-Counter-Examples
-----------------
+Mailing list: mondo-users@googlegroups.com
 
+Twitter: diseaseontology
+
+Slack: https://geneontologyworkspace.slack.com
+
+## Counter-Examples
+
+Specifying a private issue tracker.
 Waiting until an issue is resolved before responding, if such resolution comes well after submission of a ticket.
 
-Criteria for Review
--------
-There is a functioning issue tracker for ontology requests specified on the OBO Foundry web site.
+## Criteria for Review
+
+There is a functioning public issue tracker for ontology requests specified on the OBO Foundry web site.
 
 [This check is automatically validated.](checks/fp_020)
 

@@ -2,50 +2,51 @@
 layout: ontology_detail
 id: rbo
 title: Radiation Biology Ontology
-jobs:
-  - id: https://travis-ci.org/DanBerrios/RBO
-    type: travis-ci
 build:
   checkout: git clone https://github.com/Radiobiology-Informatics-Consortium/RBO.git
+  path: .
   system: git
-  path: "."
 contact:
   email: daniel.c.berrios@nasa.gov
-  label: Daniel C. Berrios
   github: DanBerrios
+  label: Daniel C. Berrios
   orcid: 0000-0003-4312-9552
-description: RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.
-domain: radiation biology, the study of the effects of radiation on biological systems
-homepage: https://github.com/Radiobiology-Informatics-Consortium/RBO
-products:
-  - id: rbo.owl
-    name: "Radiation Biology Ontology main release in OWL format"
-  - id: rbo.obo
-    name: "Radiation Biology Ontology additional release in OBO format"
-  - id: rbo.json
-    name: "Radiation Biology Ontology additional release in OBOJSon format"
-  - id: rbo/rbo-base.owl
-    name: "Radiation Biology Ontology main release in OWL format"
-  - id: rbo/rbo-base.obo
-    name: "Radiation Biology Ontology additional release in OBO format"
-  - id: rbo/rbo-base.json
-    name: "Radiation Biology Ontology additional release in OBOJSon format"
 dependencies:
-  - id: ro
-  - id: bfo
-  - id: pato
-  - id: chmo
-  - id: envo
-  - id: obi
-  - id: uo
-
-tracker: https://github.com/Radiobiology-Informatics-Consortium/RBO/issues
+- id: bfo
+- id: chmo
+- id: envo
+- id: obi
+- id: pato
+- id: ro
+- id: uo
+description: RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.
+domain: environment
+homepage: https://github.com/Radiobiology-Informatics-Consortium/RBO
+jobs:
+- id: https://travis-ci.org/DanBerrios/RBO
+  type: travis-ci
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
-activity_status: active
-repository: https://github.com/Radiobiology-Informatics-Consortium/RBO
+  url: http://creativecommons.org/licenses/by/3.0/
 preferredPrefix: RBO
+products:
+- id: rbo.owl
+  name: Radiation Biology Ontology main release in OWL format
+- id: rbo.obo
+  name: Radiation Biology Ontology additional release in OBO format
+- id: rbo.json
+  name: Radiation Biology Ontology additional release in OBOJSon format
+- id: rbo/rbo-base.owl
+  name: Radiation Biology Ontology main release in OWL format
+- id: rbo/rbo-base.obo
+  name: Radiation Biology Ontology additional release in OBO format
+- id: rbo/rbo-base.json
+  name: Radiation Biology Ontology additional release in OBOJSon format
+repository: https://github.com/Radiobiology-Informatics-Consortium/RBO
+tags:
+- radiation biology
+tracker: https://github.com/Radiobiology-Informatics-Consortium/RBO/issues
+activity_status: active
 ---
 
 The effects of all kinds of radiation on biological systems is the subject of much research, both on earth and in space environments.  This ontology is designed to support the needs of these investigators, particularly for organizing, describing and archiving data from experiments and observations examining these effects.  

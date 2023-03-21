@@ -20,8 +20,8 @@ the idspace for your ontology.
 
 The markdown (`.md`) page for your ontology is in two sections:
 
- 1. The section between the `---` markers is in a format called *yaml*, and is structured metadata
- 2. The section after the markers is markdown text that can be used to customize your page
+1.  The section between the `---` markers is in a format called _yaml_, and is structured metadata
+2.  The section after the markers is markdown text that can be used to customize your page
 
 ### YAML Metadata
 
@@ -34,7 +34,7 @@ label: Cell Ontology
 title: Cell Ontology
 description: The Cell Ontology is a structured controlled vocabulary for cell types in animals.
 integration_server: http://build.berkeleybop.org/job/build-cl/
-taxon: 
+taxon:
   id: NCBITaxon:33208
   label: Metazoa
 domain: cells
@@ -50,46 +50,38 @@ products:
  - id: cl/cl-basic.obo
 ```
 
-*IMPORTANT* some properties are in flux, be warned.
+_IMPORTANT_ some properties are in flux, be warned.
 
-*TODO* link to doc for properties
+_TODO_ link to doc for properties
 
 A few key properties to be aware of:
 
- * *layout* - this is not actually metadata about the ontology but controls how the page is displayed. You should not mess with this unless you are a web style guru.
- * *id* - this should not be touched. Your ontology id is fixed in the system by OBO administrators at time of registration and should never be changed. Contact the OBO team if you have a valid reason for changing this. See [ID Policy](../id-policy.html)
- * *title* - a *short* name for your ontology - this is typically the spelling out of your ontology acronym.
- * *description* - a short one line description of your ontology. It should state concisely what the contents of the ontology are. Don't write this like a paper abstract. You can be more verbose in the custom section below
- * *tracker* - typically a github issues url
+- _layout_ - this is not actually metadata about the ontology but controls how the page is displayed. You should not mess with this unless you are a web style guru.
+- _id_ - this should not be touched. Your ontology id is fixed in the system by OBO administrators at time of registration and should never be changed. Contact the OBO team if you have a valid reason for changing this. See [ID Policy](../id-policy.html)
+- _title_ - a _short_ name for your ontology - this is typically the spelling out of your ontology acronym.
+- _description_ - a short one line description of your ontology. It should state concisely what the contents of the ontology are. Don't write this like a paper abstract. You can be more verbose in the custom section below
+- _tracker_ - typically a github issues url
 
 ### Freeform Markdown
 
-The section after the second `---` controls what goes in the main panel on your ontology page. You should include at least a one paragarph description here. You are free to put more detail, and you can use a mixture of HTML and Markdown formatting. You can even put images in here.
+The section after the second `---` controls what goes in the main panel on your ontology page. You should include at least a one paragraph description here. You are free to put more detail, and you can use a mixture of HTML and Markdown formatting. You can even put images in here. You should not put citations, funding statements, or other information that is possible to include in the structured data.
 
-For example, here is the ENVO freeform markdown section
+For example, here is the AMPHX freeform markdown section
 
-```
-EnvO is a community ontology for the concise, controlled description of environments.
-
-<img src="/logos/envo.png"/>
-
-Envo can be cited as:
-
-Buttigieg, P. L., Morrison, N., Smith, B., Mungall, C. J., & Lewis, S. E. (2013). <b>The environment ontology: contextualising biological and biomedical entities</b>. <i>Journal of Biomedical Semantics, 4(1), 43</i>. <a href="http://www.dx.doi.org/10.1186/2041-1480-4-43">doi:10.1186/2041-1480-4-43</a>
+```markdown
+The Amphioxus Development and Anatomy Ontology (AMPHX) is to describe the anatomy and development of Amphioxus, also known as lancelet, member of the invertebrate subphylum Cephalochordata and the phylum Chordata. This ontology is intended to be used for description of gene expression in amphioxus (e.g. Insitus, RNA-seq). The ontology was created in the context of the European project [CORBEL](https://www.corbel-project.eu/home.html), and used in the database [MARIMBA](http://marimba.obs-vlfr.fr/home).
 ```
 
 ### Pull Request Pipeline
 
-Any user can make propsed changes to any md file. These remain on
-their fork until approved by OBO admins.
+Any user can make proposed changes to any `*.md` file. These remain on
+their fork until approved by OBO admins. The workflow is:
 
-The workflow is:
-
- 1. An automated Travis job will run to validate your changes
- 2. An OBO administrator will evaluate your PR. If it failed the travis check, it will not be accepted
- 3. If the the OBO admin rejects it they will provide feedback in the comment form which you can use to make further edits
- 4. More likely, the change will be accepted by the OBO admin. They will click "merge" and the changes will be visible in a few seconds.
- 5. The OBO admin will also need to run a Make script to regenerate the main metadata file, so your changes may not be visible on the front table straight away
+1. An automated GitHub Actions job will run to validate your changes
+2. An OBO administrator will evaluate your PR. If it failed the checks, it will not be accepted
+3. If the the OBO admin rejects it they will provide feedback in the comment form which you can use to make further edits
+4. More likely, the change will be accepted by the OBO admin. They will click "squash and merge".
+5. An automated GitHub Actions workflow will update the build artifacts and issue a new PR. An OBO admin can review and accept.
 
 ## Pull Request Tutorial
 
@@ -269,8 +261,3 @@ Finally delete your branch:
 If this seems bewildering, don't worry. The PR mechanism is optional
 you can always ask OBO administrators to make any changes for you, via
 email or the tracker.
-
-
-
-
-

@@ -4,30 +4,30 @@ id: ecao
 title: The Echinoderm Anatomy and Development Ontology
 build:
   checkout: git clone https://github.com/echinoderm-ontology/ecao_ontology.git
+  path: .
   system: git
-  path: "."
 contact:
   email: ettensohn@cmu.edu
-  label: Charles Ettensohn
   github: ettensohn
+  label: Charles Ettensohn
   orcid: 0000-0002-3625-0955
-description: An ontology for the development and anatomy of the different species of the phylum Echinodermata (NCBITaxon:7586).
-domain: anatomy
-homepage: https://github.com/echinoderm-ontology/ecao_ontology
-products:
-  - id: ecao.owl
-  - id: ecao.obo
 dependencies:
-  - id: uberon
-  - id: ro
-  - id: cl
-tracker: https://github.com/echinoderm-ontology/ecao_ontology/issues
+- id: cl
+- id: ro
+- id: uberon
+description: An ontology for the development and anatomy of the different species of the phylum Echinodermata (NCBITaxon:7586).
+domain: anatomy and development
+homepage: https://github.com/echinoderm-ontology/ecao_ontology
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
-activity_status: active
-repository: https://github.com/echinoderm-ontology/ecao_ontology
+  url: http://creativecommons.org/licenses/by/3.0/
 preferredPrefix: ECAO
+products:
+- id: ecao.owl
+- id: ecao.obo
+repository: https://github.com/echinoderm-ontology/ecao_ontology
+tracker: https://github.com/echinoderm-ontology/ecao_ontology/issues
+activity_status: active
 ---
 
 This ontology is intended to be used for the description and curation of information related to gene regulatory processes in echinoderms (e.g., expression patterns of endogenous genes and reporter DNA constructs, phenotypic effects of gene perturbations, etc.). 

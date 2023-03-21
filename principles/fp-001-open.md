@@ -3,6 +3,7 @@ layout: principle
 id: fp-001-open
 title: Open (principle 1)
 ---
+GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; [Implementation](#implementation) &#124; [Examples/Counter&#8209;Examples](#examples) &#124; [Criteria&nbsp;for&nbsp;Review](#criteria-for-review) &#124; [Feedback/Discussion](#feedback-and-discussion) 
 
 ## Summary
 
@@ -37,8 +38,9 @@ Note: CC-BY licenses allow others to distribute, remix, tweak, and build upon th
 #### `.owl` files
 
 1. OBO Foundry Ontologies MUST specify the reuse constraints using the following annotations in any publically released OWL version of the ontology:
-    1. dcterms:license - specifies the license - see Example 1 (below)
-    2. rdfs:comment - specifies terms of reuse - see Example 1 (below)
+
+   1. dcterms:license - specifies the license - see Example 1 (below)
+   2. rdfs:comment - specifies terms of reuse - see Example 1 (below)
 
 2. OBO Foundry Ontologies that host terms developed by an external group (but which are not part of an existing ontology) must credit the external group - see Examples (below)
 
@@ -47,8 +49,8 @@ Note: CC-BY licenses allow others to distribute, remix, tweak, and build upon th
 #### `.obo` files
 
 1. OBO Foundry Ontologies must specify the reuse constraints using the following annotations in any publically released OBO version of the ontology:
-    1. the license in a separate property annotation, which can be converted to a dc:license statement if the ontology is converted to OWL - see Example 2 (below)
-    2. the reuse constraints using a comment in the official OBO version of the ontology - see Example 2 (below)
+   1. the license in a separate property annotation, which can be converted to a dc:license statement if the ontology is converted to OWL - see Example 2 (below)
+   2. the reuse constraints using a comment in the official OBO version of the ontology - see Example 2 (below)
 
 ### For ontology re-use
 
@@ -57,13 +59,14 @@ Note: CC-BY licenses allow others to distribute, remix, tweak, and build upon th
 The attribution method for individual terms reused in another ontology (e.g., by MIREOT) is via use of their original IRI or ID - see Examples (below).
 
 1. **In OWL** - Any ontology re-using individual terms from another ontology should:
-    1. re-use the original term IRI (which for OBO Foundry ontologies is generally in the form of an OBO Foundry PURL)
-    2. use an IAO:imported from annotation <http://purl.obolibrary.org/obo/IAO_0000412> on each imported term to link back to the group (i.e. ontology) maintaining it, where more information would be available about the license
-    3. include any annotations for term or definition editors from the original ontology
+
+   1. re-use the original term IRI (which for OBO Foundry ontologies is generally in the form of an OBO Foundry PURL)
+   2. use an IAO:imported from annotation <http://purl.obolibrary.org/obo/IAO_0000412> on each imported term to link back to the group (i.e. ontology) maintaining it, where more information would be available about the license
+   3. include any annotations for term or definition editors from the original ontology
 
 2. **In OBO** - Any ontology re-using individual terms from another ontology should:
-    1. re-use the original term ID (of the form <GO:0000001>)
-    2. include any XREFs to the original term editor(s) from the original ontology
+   1. re-use the original term ID (of the form <GO:0000001>)
+   2. include any XREFs to the original term editor(s) from the original ontology
 
 #### Full ontologies
 
@@ -153,7 +156,7 @@ material</obo:IAO_0000111>
 
 ## Criteria for Review
 
-To pass review, the ontology must have a license that is equivalent to or less restrictive than CC-BY, specified as described in the text and examples above.
+The ontology must have a license that is equivalent to or less restrictive than CC-BY, specified as described in the text and examples above.
 
 [This check is automatically validated.](checks/fp_001) The automatic check fully covers the requirements for this principle.
 
@@ -164,5 +167,3 @@ To suggest revisions or begin a discussion pertaining to this principle, please 
 To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%231+%22Open%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
 
 See also [this discussion of licensing](https://github.com/OBOFoundry/Operations-Committee/issues/103) by the OBO Foundry Operations Committee focusing on Creative Commons licenses.
-
-

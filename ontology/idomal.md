@@ -1,21 +1,21 @@
 ---
 layout: ontology_detail
 id: idomal
+title: Malaria Ontology
 contact:
   email: topalis@imbb.forth.gr
   label: Pantelis Topalis
-license:
-  url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
 description: An application ontology to cover all aspects of malaria as well as the intervention attempts to control it.
 domain: health
 homepage: https://www.vectorbase.org/ontology-browser
+license:
+  label: CC0 1.0
+  url: https://creativecommons.org/publicdomain/zero/1.0/
 products:
-  - id: idomal.owl
-  - id: idomal.obo
-title: Malaria Ontology
-activity_status: inactive
+- id: idomal.owl
+- id: idomal.obo
 repository: https://github.com/VEuPathDB-ontology/IDOMAL
+activity_status: inactive
 ---
 
 An application ontology to cover all aspects of malaria (clinical, epidemiological, biological, etc) as well as the intervention attempts to control it.

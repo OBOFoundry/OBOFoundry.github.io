@@ -2,33 +2,37 @@
 layout: ontology_detail
 id: pso
 title: Plant Stress Ontology
-jobs:
-  - id: https://travis-ci.org/Planteome/plant-stress-ontology
-    type: travis-ci
 build:
   checkout: git clone https://github.com/Planteome/plant-stress-ontology.git
+  path: .
   system: git
-  path: "."
 contact:
-  email: cooperl@science.oregonstate.edu
-  label: Laurel Cooper
+  email: cooperl@oregonstate.edu
   github: cooperl09
+  label: Laurel Cooper
   orcid: 0000-0002-6379-8932
-description: The Plant Stress Ontology describes...
-domain: plant disease and abiotic stress
-homepage: https://github.com/Planteome/plant-stress-ontology
-products:
-  - id: pso.owl
-  - id: pso.obo
 dependencies:
-  - id: ro
-tracker: https://github.com/Planteome/plant-stress-ontology/issues
+- id: ro
+description: The Plant Stress Ontology describes biotic and abiotic stresses that a plant may encounter.
+domain: agriculture
+homepage: https://github.com/Planteome/plant-stress-ontology
+jobs:
+- id: https://travis-ci.org/Planteome/plant-stress-ontology
+  type: travis-ci
 license:
-  url: http://creativecommons.org/licenses/by/3.0/
   label: CC BY 3.0
-activity_status: active
-repository: https://github.com/Planteome/plant-stress-ontology
+  url: http://creativecommons.org/licenses/by/3.0/
 preferredPrefix: PSO
+products:
+- id: pso.owl
+- id: pso.obo
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
+  title: 'The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics.'
+repository: https://github.com/Planteome/plant-stress-ontology
+tags:
+- plant disease
+- abiotic stress
+tracker: https://github.com/Planteome/plant-stress-ontology/issues
+activity_status: active
 ---
-
-Enter a detailed description of your ontology here

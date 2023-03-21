@@ -1,45 +1,50 @@
 ---
 layout: ontology_detail
 id: hancestro
+title: Human Ancestry Ontology
 contact:
   email: danielle.welter@uni.lu
-  label: Danielle Welter
   github: daniwelter
+  label: Danielle Welter
   orcid: 0000-0003-1058-2668
-title: Human Ancestry Ontology
 description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide association studies.
+domain: organisms
 homepage: https://github.com/EBISPOT/ancestro
-tracker: https://github.com/EBISPOT/ancestro/issues
-domain: ancestry
-products:
-  - id: hancestro.owl
-    description: The full version of HANCESTRO in OWL format
-    title: HANCESTRO
-  - id: hancestro_bfo.owl
-    description: Version of HANCESTRO with BFO upper hierarchy for easier integration with other ontologies
-    title: HANCESTRO BFO
 license:
-  url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
-usages:
-  - user: http://www.ebi.ac.uk/efo
-    description: The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databases, and for external projects such as the NHGRI GWAS catalogue. It combines parts of several biological ontologies, such as anatomy, disease and chemical compounds.
-    examples:
-      - url: https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
-        description: Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data
-  - user: https://genepio.org/
-    description: The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary to identify, document and research foodborne pathogens and associated outbreaks.
-    examples:
-      - url: https://www.ebi.ac.uk/ols/ontologies/genepio/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
-        description: Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data
-  - user: http://foodon.org
-    description: FoodOn (http://foodon.org) is a consortium-driven project to build a comprehensive and easily accessible global farm-to-fork ontology about food, that accurately and consistently describes foods commonly known in cultures from around the world.
-    examples:
-      - url: https://www.ebi.ac.uk/ols/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
-        description: Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data
-activity_status: active
-repository: https://github.com/EBISPOT/ancestro
+  url: https://creativecommons.org/licenses/by/4.0/
 preferredPrefix: HANCESTRO
+products:
+- id: hancestro.owl
+  title: HANCESTRO
+  description: The full version of HANCESTRO in OWL format
+- id: hancestro_bfo.owl
+  title: HANCESTRO BFO
+  description: Version of HANCESTRO with BFO upper hierarchy for easier integration with other ontologies
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/29448949
+  title: A standardized framework for representation of ancestry data in genomics studies, with application to the NHGRI-EBI GWAS Catalog
+repository: https://github.com/EBISPOT/ancestro
+tags:
+- ancestry
+tracker: https://github.com/EBISPOT/ancestro/issues
+usages:
+- description: The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databases, and for external projects such as the NHGRI GWAS catalogue. It combines parts of several biological ontologies, such as anatomy, disease and chemical compounds.
+  examples:
+  - description: Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data
+    url: https://www.ebi.ac.uk/ols/ontologies/efo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
+  user: http://www.ebi.ac.uk/efo
+- description: The Genomic Epidemiology Ontology (GenEpiO) covers vocabulary necessary to identify, document and research foodborne pathogens and associated outbreaks.
+  examples:
+  - description: Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data
+    url: https://www.ebi.ac.uk/ols/ontologies/genepio/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
+  user: https://genepio.org/
+- description: FoodOn (http://foodon.org) is a consortium-driven project to build a comprehensive and easily accessible global farm-to-fork ontology about food, that accurately and consistently describes foods commonly known in cultures from around the world.
+  examples:
+  - description: Population category defined using ancestry informative markers (AIMs) based on genetic/genomic data
+    url: https://www.ebi.ac.uk/ols/ontologies/foodon/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHANCESTRO_0004&viewMode=All&siblings=false
+  user: http://foodon.org
+activity_status: active
 ---
 
 # Summary

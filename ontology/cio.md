@@ -1,27 +1,28 @@
 ---
 layout: ontology_detail
 id: cio
+title: Confidence Information Ontology
 contact:
-  label: Frédéric Bastian
   email: frederic.bastian@unil.ch
   github: fbastian
+  label: Frédéric Bastian
   orcid: 0000-0002-9415-5104
-license:
-  url: https://creativecommons.org/publicdomain/zero/1.0/
-  label: CC0 1.0
-title: Confidence Information Ontology
 description: An ontology to capture confidence information about annotations.
+domain: information
 homepage: https://github.com/BgeeDB/confidence-information-ontology
-tracker: https://github.com/BgeeDB/confidence-information-ontology
-products:
-  - id: cio.owl
-  - id: cio.obo
-activity_status: active
-repository: https://github.com/BgeeDB/confidence-information-ontology
+license:
+  label: CC0 1.0
+  url: https://creativecommons.org/publicdomain/zero/1.0/
 preferredPrefix: CIO
+products:
+- id: cio.owl
+- id: cio.obo
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/25957950
+  title: 'The Confidence Information Ontology: a step towards a standard for asserting confidence in annotations'
+repository: https://github.com/BgeeDB/confidence-information-ontology
+tracker: https://github.com/BgeeDB/confidence-information-ontology
+activity_status: active
 ---
 
 The Confidence Information Ontology (CIO) is an ontology to capture confidence information about annotations.
-
-- [CIO homepage](https://github.com/BgeeDB/confidence-information-ontology)
-- To cite a journal article for OBI please use the following: [Bastian et al, Database, 2015](http://www.ncbi.nlm.nih.gov/pubmed/25957950))
