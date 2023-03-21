@@ -113,7 +113,7 @@
             "preferredPrefix": "AGRO",
             "products": [
                 {
-                    "description": "Contains all AgrO terms and links to other relavent ontologies.",
+                    "description": "Contains all AgrO terms and links to other relevant ontologies.",
                     "id": "agro.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/agro.owl",
                     "title": "AgrO"
@@ -331,7 +331,21 @@
             ],
             "repository": "https://github.com/ApolloDev/apollo-sv",
             "title": "Apollo Structured Vocabulary",
-            "tracker": "https://github.com/ApolloDev/apollo-sv/issues"
+            "tracker": "https://github.com/ApolloDev/apollo-sv/issues",
+            "usages": [
+                {
+                    "description": "Apollo-SV terms are used in the new MIDAS portal (https://midasnetwork.us/catalog/) for making data discoverable.",
+                    "examples": [
+                        {
+                            "description": "A 'hospital stay dataset' reference in the midasnetwork.us resource",
+                            "url": "https://midasnetwork.us/ontology/class-oboapollo_sv_00000600.html"
+                        }
+                    ],
+                    "seeAlso": "https://midasnetwork.us/catalog/",
+                    "type": "annotation",
+                    "user": "https://midasnetwork.us/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -1164,6 +1178,7 @@
             },
             "title": "Cell Ontology",
             "tracker": "https://github.com/obophenotype/cell-ontology/issues",
+            "twitter": "CellOntology",
             "usages": [
                 {
                     "description": "The BICCN created a high-resolution atlas of cell types in the primary motor based on single cell transcriptomics. These cell types are represented in the brain data standards ontology which anchors to cell types in the cell ontology.",
@@ -1245,7 +1260,7 @@
                             "title": "Ontology application and use at the ENCODE DCC"
                         }
                     ],
-                    "seeAlso": "https://www.biosharing.org/biodbcore-000034",
+                    "seeAlso": "https://doi.org/10.25504/FAIRsharing.v0hbjs",
                     "type": "annotation",
                     "user": "https://www.encodeproject.org/"
                 },
@@ -2605,7 +2620,7 @@
             "usages": [
                 {
                     "description": "GXD",
-                    "seeAlso": "https://www.biosharing.org/biodbcore-000659",
+                    "seeAlso": "https://doi.org/10.25504/FAIRsharing.q9neh8",
                     "user": "http://www.informatics.jax.org/expression.shtml"
                 }
             ]
@@ -3236,7 +3251,19 @@
                 "label": "Drosophila"
             },
             "title": "Drosophila development",
-            "tracker": "http://purl.obolibrary.org/obo/fbdv/tracker"
+            "tracker": "http://purl.obolibrary.org/obo/fbdv/tracker",
+            "usages": [
+                {
+                    "description": "Used to record stages in expression and phenotype curation",
+                    "examples": [
+                        {
+                            "description": "Expression of DLP in embryonic/larval midgut primordium at embryonic stage 13 (http://purl.obolibrary.org/obo/FBdv_00005328) (Khare and Baumgartner, 2000)",
+                            "url": "https://flybase.org/reports/FBgn0041604#expression"
+                        }
+                    ],
+                    "user": "http://flybase.org"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -3892,7 +3919,7 @@
                     "subset": "go/extensions/uberon_import.owl"
                 }
             ],
-            "depicted_by": "http://geneontology.org/assets/go-logo-icon.mini.png",
+            "depicted_by": "/images/go_logo.png",
             "description": "An ontology for describing the function of genes and gene products",
             "domain": "biological systems",
             "homepage": "http://geneontology.org/",
@@ -4762,7 +4789,7 @@
             "usages": [
                 {
                     "description": "GXD",
-                    "seeAlso": "https://www.biosharing.org/biodbcore-000659",
+                    "seeAlso": "https://doi.org/10.25504/FAIRsharing.q9neh8",
                     "user": "http://www.informatics.jax.org/expression.shtml"
                 }
             ]
@@ -4791,7 +4818,16 @@
                     "id": "go"
                 },
                 {
+                    "id": "hp"
+                },
+                {
                     "id": "iao"
+                },
+                {
+                    "id": "nbo"
+                },
+                {
+                    "id": "obi"
                 },
                 {
                     "id": "ro"
@@ -4801,21 +4837,15 @@
                 }
             ],
             "depicted_by": "https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/maxo-logos/maxo_logo_black-banner.png",
-            "description": "Medical Action Ontology is an ontology...",
+            "description": "The Medical Action Ontology (MAxO) provides a broad view of medical actions and includes terms for medical procedures, interventions, therapies, treatments, and recommendations.",
             "domain": "health",
             "homepage": "https://github.com/monarch-initiative/MAxO",
             "id": "maxo",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/monarch-initiative/MAxO",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
-                "label": "CC BY 3.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/maxo.owl",
             "preferredPrefix": "MAXO",
@@ -5095,10 +5125,10 @@
                 "source_url": "https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo"
             },
             "contact": {
-                "email": "pporras@ebi.ac.uk",
-                "github": "pporrasebi",
-                "label": "Pablo Porras Millán",
-                "orcid": "0000-0002-8429-8793"
+                "email": "luana.licata@gmail.com",
+                "github": "luanalicata",
+                "label": "Luana Licata",
+                "orcid": "0000-0001-5084-9000"
             },
             "description": "A structured controlled vocabulary for the annotation of experiments concerned with protein-protein interactions.",
             "domain": "investigations",
@@ -6044,6 +6074,38 @@
         },
         {
             "activity_status": "active",
+            "contact": {
+                "email": "dal.alghamdi92@gmail.com",
+                "github": "dalalghamdi",
+                "label": "Dalia Alghamdi",
+                "orcid": "0000-0002-2801-0767"
+            },
+            "description": "The Next Generation Biobanking Ontology (NGBO) is an open application ontology representing contextual data about omics digital assets in biobank. The ontology focuses on capturing the information about three main activities: wet bench analysis used to generate omics data, bioinformatics analysis used to analyze and interpret data, and data management.",
+            "domain": "investigations",
+            "homepage": "https://github.com/Dalalghamdi/NGBO",
+            "id": "ngbo",
+            "issue_requested": 1819,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/ngbo.owl",
+            "preferredPrefix": "NGBO",
+            "products": [
+                {
+                    "id": "ngbo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ngbo.owl"
+                }
+            ],
+            "pull_request_added": 2214,
+            "repository": "https://github.com/Dalalghamdi/NGBO",
+            "title": "Next Generation Biobanking Ontology",
+            "tracker": "https://github.com/Dalalghamdi/NGBO/issues"
+        },
+        {
+            "activity_status": "active",
             "build": {
                 "checkout": "git clone https://github.com/SpeciesFileGroup/nomen.git",
                 "system": "git"
@@ -6212,6 +6274,12 @@
                 {
                     "id": "oba/subsets/oba-basic.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/oba/subsets/oba-basic.obo"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1101/2023.01.26.525742",
+                    "title": "The Ontology of Biological Attributes (OBA) - Computational Traits for the Life Sciences"
                 }
             ],
             "repository": "https://github.com/obophenotype/bio-attribute-ontology",
@@ -8716,7 +8784,7 @@
                 "label": "Karen Eilbeck",
                 "orcid": "0000-0002-0831-6427"
             },
-            "depicted_by": "http://sequenceontology.org/img/so_icon.png",
+            "depicted_by": "/images/so_logo.png",
             "description": "A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.",
             "domain": "chemistry and biochemistry",
             "homepage": "http://www.sequenceontology.org/",
@@ -9558,7 +9626,7 @@
                             "url": "http://bgee.org/?page=gene&gene_id=ENSG00000244734"
                         }
                     ],
-                    "seeAlso": "https://www.biosharing.org/biodbcore-000228",
+                    "seeAlso": "https://doi.org/10.25504/FAIRsharing.x6d6sx",
                     "type": "annotation",
                     "user": "http://bgee.org/"
                 },
@@ -9570,7 +9638,7 @@
                             "title": "Ontology application and use at the ENCODE DCC"
                         }
                     ],
-                    "seeAlso": "https://www.biosharing.org/biodbcore-000034",
+                    "seeAlso": "https://doi.org/10.25504/FAIRsharing.v0hbjs",
                     "type": "annotation",
                     "user": "https://www.encodeproject.org/"
                 },
@@ -11524,6 +11592,12 @@
                 {
                     "id": "gaz.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/gaz.obo"
+                },
+                {
+                    "description": "A country specific subset of the GAZ.",
+                    "id": "gaz/gaz-countries.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/gaz/gaz-countries.owl",
+                    "title": "GAZ countries"
                 }
             ],
             "repository": "https://github.com/EnvironmentOntology/gaz",
@@ -11765,7 +11839,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "david.c.blackburn@gmail.com",
-                "label": "David Blackburn"
+                "label": "David Blackburn",
+                "orcid": "0000-0002-1810-9886"
             },
             "domain": "anatomy and development",
             "homepage": "http://github.com/seger/aao",
@@ -11826,7 +11901,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "david.c.blackburn@gmail.com",
-                "label": "David Blackburn"
+                "label": "David Blackburn",
+                "orcid": "0000-0002-1810-9886"
             },
             "domain": "organisms",
             "homepage": "http://www.amphibanat.org",
@@ -11878,7 +11954,9 @@
             },
             "contact": {
                 "email": "henrich@embl.de",
-                "label": "Thorsten Heinrich"
+                "github": "ThorstenHen",
+                "label": "Thorsten Henrich",
+                "orcid": "0000-0002-1548-3290"
             },
             "domain": "anatomy and development",
             "homepage": "http://4dx.embl.de/4DXpress",
@@ -12322,7 +12400,8 @@
             },
             "contact": {
                 "email": "bakerc@unb.ca",
-                "label": "Christipher Baker"
+                "label": "Christopher Baker",
+                "orcid": "0000-0003-4004-6479"
             },
             "description": "An ontology representation of the LIPIDMAPS nomenclature classification.",
             "domain": "chemistry and biochemistry",
@@ -12378,8 +12457,10 @@
         {
             "activity_status": "inactive",
             "contact": {
-                "email": "Thorsten.Henrich@embl-heidelberg.de",
-                "label": "Thorsten Henrich"
+                "email": "henrich@embl.de",
+                "github": "ThorstenHen",
+                "label": "Thorsten Henrich",
+                "orcid": "0000-0002-1548-3290"
             },
             "description": "A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.",
             "domain": "anatomy and development",
@@ -12451,7 +12532,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "smtifahim@gmail.com",
-                "label": "Fahim Imam"
+                "label": "Fahim Imam",
+                "orcid": "0000-0003-4752-543X"
             },
             "description": "Neuronal cell types",
             "domain": "anatomy and development",
@@ -12466,7 +12548,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "smtifahim@gmail.com",
-                "label": "Fahim Imam"
+                "label": "Fahim Imam",
+                "orcid": "0000-0003-4752-543X"
             },
             "domain": "health",
             "homepage": "http://neuinfo.org/",
@@ -12480,7 +12563,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "smtifahim@gmail.com",
-                "label": "Fahim Imam"
+                "label": "Fahim Imam",
+                "orcid": "0000-0003-4752-543X"
             },
             "domain": "anatomy and development",
             "homepage": "http://neuinfo.org/",
@@ -12605,7 +12689,9 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "henrich@embl.de",
-                "label": "Thorsten Heinrich"
+                "github": "ThorstenHen",
+                "label": "Thorsten Henrich",
+                "orcid": "0000-0002-1548-3290"
             },
             "domain": "anatomy and development",
             "homepage": "http://4dx.embl.de/platy",
@@ -12666,7 +12752,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "john.garavelli@ebi.ac.uk",
-                "label": "John Garavelli"
+                "label": "John Garavelli",
+                "orcid": "0000-0002-4131-735X"
             },
             "description": "For the description of covalent bonds in proteins.",
             "domain": "chemistry and biochemistry",

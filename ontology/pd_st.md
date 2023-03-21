@@ -4,7 +4,9 @@ id: pd_st
 title: Platynereis stage ontology
 contact:
   email: henrich@embl.de
-  label: Thorsten Heinrich
+  github: ThorstenHen
+  label: Thorsten Henrich
+  orcid: 0000-0002-1548-3290
 domain: anatomy and development
 homepage: http://4dx.embl.de/platy
 is_obsolete: true

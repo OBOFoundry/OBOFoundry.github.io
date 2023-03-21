@@ -21,6 +21,14 @@ publications:
   title: 'The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation'
 repository: https://github.com/ApolloDev/apollo-sv
 tracker: https://github.com/ApolloDev/apollo-sv/issues
+usages:
+- description: Apollo-SV terms are used in the new MIDAS portal (https://midasnetwork.us/catalog/) for making data discoverable.
+  examples:
+  - description: A 'hospital stay dataset' reference in the midasnetwork.us resource
+    url: https://midasnetwork.us/ontology/class-oboapollo_sv_00000600.html
+  seeAlso: https://midasnetwork.us/catalog/
+  type: annotation
+  user: https://midasnetwork.us/
 activity_status: active
 ---
 

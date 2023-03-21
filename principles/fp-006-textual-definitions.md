@@ -3,6 +3,7 @@ layout: principle
 id: fp-006-textual-definitions
 title: Textual Definitions (principle 6)
 ---
+GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; [Implementation](#implementation) &#124; [Examples/Counter&#8209;Examples](#examples) &#124; [Criteria&nbsp;for&nbsp;Review](#criteria-for-review) &#124; [Feedback/Discussion](#feedback-and-discussion)
 
 ## Summary
 

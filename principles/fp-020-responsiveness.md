@@ -3,6 +3,7 @@ layout: principle
 id: fp-020-responsiveness
 title: Responsiveness (principle 20)
 ---
+GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; [Implementation](#implementation) &#124; [Examples/Counter&#8209;Examples](#examples) &#124; [Criteria&nbsp;for&nbsp;Review](#criteria-for-review) &#124; [Feedback/Discussion](#feedback-and-discussion)
 
 ## Summary
 
@@ -12,9 +13,7 @@ Ontology developers MUST offer channels for community participation and SHOULD b
 
 Ontology development benefits from community input, which is strongly encouraged by the OBO Foundry. Accordingly, "responsiveness" is a key quality of our general collaborative spirit. This principle is intended to ensure that channels for community input are available and that responses to input are given swiftly.
 
-Recommendations and Requirements
-
----
+## Recommendations and Requirements
 
 Ontology developers MUST set up a public mechanism to track community requests and suggestions (collectively, “issues”), and SHOULD aim to respond within 2-5 working days. Optional: Establish a discussion forum for more general communication with and between users.
 

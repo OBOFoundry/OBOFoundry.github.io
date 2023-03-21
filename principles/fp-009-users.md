@@ -3,6 +3,7 @@ layout: principle
 id: fp-009-users
 title: Documented Plurality of Users (principle 9)
 ---
+GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; [Implementation](#implementation) &#124; [Examples/Counter&#8209;Examples](#examples) &#124; [Criteria&nbsp;for&nbsp;Review](#criteria-for-review) &#124; [Feedback/Discussion](#feedback-and-discussion)
 
 ## Summary
 
@@ -75,12 +76,9 @@ enough to count as evidence of usage
 
 ## Criteria for Review
 
-An ontology that has not been used by other than the developer(s) is not
-yet ready for review. To pass review, the ontology developers must demonstrate at least three
-external users specified within. External users are defined either as researchers not
-significantly overlapping in personnel with the developers or three
-independent groups with three independent artefacts (db, etc) that use
-the ontology.
+Ontology developers must demonstrate at least three external users specified within the metadata file. External users are defined either as researchers not
+significantly overlapping in personnel with the developers or three independent groups with three independent artefacts (db, etc) that use
+the ontology. Note that new ontologies are not expected to have a plurality of users, and thus the automatic evaluation of this criterion can be ignored.
 
 [This check is automatically validated.](checks/fp_009)
 

@@ -22,8 +22,8 @@ Ideally, the maintainer of an ontology should actively monitor for any changes i
 
 ## Counter-Examples
 
-## Review Criteria
+## Criteria for Review
 
-The developers of the ontology need to include a statement specifying how they are planning to maintain the ontology. We expect that an ontology will be maintained for at least 3 years from the time of review.
+The developers of the ontology need to include a statement specifying how they are planning to maintain the ontology. We expect that an ontology will be maintained for at least 3 years from the time of acceptance.
 
 <Category:Principles> <Category:Accepted>

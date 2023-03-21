@@ -72,6 +72,7 @@ taxon:
   id: NCBITaxon:33208
   label: Metazoa
 tracker: https://github.com/obophenotype/cell-ontology/issues
+twitter: CellOntology
 usages:
 - description: The BICCN created a high-resolution atlas of cell types in the primary motor based on single cell transcriptomics. These cell types are represented in the brain data standards ontology which anchors to cell types in the cell ontology.
   examples:
@@ -115,7 +116,7 @@ usages:
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/25776021
     title: Ontology application and use at the ENCODE DCC
-  seeAlso: https://www.biosharing.org/biodbcore-000034
+  seeAlso: https://doi.org/10.25504/FAIRsharing.v0hbjs
   type: annotation
   user: https://www.encodeproject.org/
 - description: FANTOM5 is using Uberon and CL to annotate samples allowing for transcriptome analyses with cell-type and tissue-level specificity.
