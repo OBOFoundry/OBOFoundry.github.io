@@ -103,16 +103,17 @@ For a discussion on this SOP, see [here](https://github.com/OBOFoundry/OBOFoundr
 
 <a name="REACTIVATION"></a>
 
-## Reviving obsolete, orphaned, or inactive ontologies
+## Reactivating obsolete, orphaned, or inactive ontologies
 
-Ontologies that were marked as either obsolete, orphaned, or inactive require a review process if they want to be marked as active again.
+To mark ontologies that were marked as either obsolete, orphaned, or inactive as active again, we follow this process. 
 Currently, these are the required steps:
-1. If ontology reactivation is desired, it must first pass the Dashboard.
-2. A member of the ontology community makes a pull request (PR) on the metadata file with the desired change in status. The PR must include evidence to demonstrate new activity, for example by referring to recently-closed issues (we will provide more detailed guidelines as this SOP matures).
-3. If the community member is not the ontology owner, the ontology owner must be contacted for comment via email and tagged on the issue. The ontology owner is given 1 month to object to the change, in which case, it is rejected.
-4. The OBO Operations committee assigns a reviewer during the next call to analyse the evidence for the change. Only the evidence matters - no need to collect more evidence in favor of the status change.
-5. The Reviewer presents the arguments for and against the status change at an OBO Operations call.
-6. A vote is issued that must be unanimous in favour of the status change.
+
+1. A member of the development team of the ontology makes a pull request (PR) on the metadata file with the desired change in status. The PR must include evidence to demonstrate new activity, for example by referring to recently-closed issues (we will provide more detailed guidelines as this SOP matures).
+1. If the community member is not the ontology owner, the ontology owner must be contacted for comment via email and tagged on the issue. The ontology owner is given 1 month to object to the change, in which case, it is rejected.
+1. The ontology is added to the NOR dashboard which should be passed prior to proceeding. Fixing the basic issues revealed by the dashboard is considered some basic evidence that the ontology is indeed active. The ontology owner may request to bypass this criterion if there are a good reasons. 
+1. The OBO Operations committee assigns a status change reviewer during the next call to analyse the evidence for the change. Only the evidence matters - no need to collect more evidence in favor of the status change.
+1. The status change reviewer presents the arguments for and against the status change at an OBO Operations call.
+1. A vote is issued that must be unanimous in favour of the status change.
 
 <a name="OPS_MEMBER"></a>
 
