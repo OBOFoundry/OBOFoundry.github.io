@@ -365,6 +365,12 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         >
       </dd>
       <dd>{% endif %}</dd>
+      <dt>OBO Dashboard</dt>
+      <dd>
+        <a href="http://dashboard.obofoundry.org/dashboard/{{ page.id }}/dashboard.html">
+          <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOBOFoundry%2Fobo-dash.github.io%2Fgh-pages%2Fdashboard%2F{{ page.id }}%2Fdashboard-qc-badge.json" alt="OBO Dashboard badge for {{ page.id }}"/>
+        </a>
+      </dd>
     </dl>
 
     <div class="btn-group pull-right" role="group" aria-label="Source">
