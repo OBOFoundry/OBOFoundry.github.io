@@ -9,6 +9,7 @@
     metadata according to our principles and SOPs, merge changes and generally
     protect and guard them. This involves also facilitating the implementation of QC
     checks.
+  sop: /roles/metadata-steward
   responsibilities:
     - Checking OBOFoundry.github.io at least weekly for metadata related issues and pull requests.
     - "Tagging metadata related issues and pull requests with 'attn: OFOC call' if they need to be discussed by the Operations Committee. Provide instructions what needs to be discussed."
@@ -65,6 +66,7 @@
     - "Nice to have: knowledge of jekyll and liquid (like jinja)"
     - Should have technical background
   description: You will be responsible for gatekeeping community changes to the website.
+  sop: /roles/website-coordinator
   responsibilities:
   people:
     - github: erik-whiting
@@ -87,6 +89,7 @@
   description: Updating the OBO Dashboard once per month.
     Fixing horrible bugs in OBO-Dashboard if they come up (should be rare).
     Working with OBO Ops to find people for extending dashboard when new principles come along.
+  sop: /roles/dashboard-manager
   responsibilities:
   people:
     - github: anitacaron
@@ -111,6 +114,7 @@
     Working Group (TWG) for the OBO Operations team meeting. You will go
     through pull requests and emails and summarize in bullet points and report
     to OBO Ops.
+  sop: /roles/twg-ops-liaison
   responsibilities:
   people:
     - github: rays22
@@ -220,7 +224,7 @@
     - Adding new OBO Ops members to Google Drive and removing alumni
     - Adding important OBO events to the OBO calendar and sending out invites
     - Managing public and internal OBO Google Drives
-    - Report adding members to the to any OBO Google drive with Write or Admin rights to the OBO Operations Committee
+    - Reporting adding members to any OBO Google drive with Write or Admin rights to the OBO Operations Committee
   people:
     - github: nlharris
       name: Nomi Harris
