@@ -45,7 +45,7 @@ Central to the issue of ontology documentation is ensuring transparency and trac
 
 - _Developer documentation:_
 
-- documentation about collaborating and submitting issues by creating a [CONTRIBUTING.md file](http://mozillascience.github.io/working-open-workshop/contributing/).
+- documentation about collaborating and submitting issues by creating a [CONTRIBUTING.md file](http://mozillascience.github.io/working-open-workshop/contributing/) as described [here](http://obofoundry.org/principles/fp-020-responsiveness.html#implementation).
 - documentation about authors contributions
 - documentation about licensing terms, rights of use.
 - documentation about version control
