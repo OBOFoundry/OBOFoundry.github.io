@@ -75,7 +75,17 @@ class TestMembershipData(unittest.TestCase):
     def test_encoding(self):
         """Test correct encoding."""
         t = OPERATIONS_METADATA_PATH.read_text()
-        self.assertEqual(yaml.safe_dump(yaml.safe_load(t), allow_unicode=True), t)
+        self.maxDiff = None
+        self.assertEqual(
+            yaml.safe_dump(
+                yaml.safe_load(t),
+                allow_unicode=True,
+                sort_keys=True,
+                explicit_end=False,
+                width=float("inf"),
+            ),
+            t,
+        )
 
     def test_alumni(self):
         """Test the alumni data."""
