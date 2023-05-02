@@ -69,15 +69,6 @@ usages:
     title: A solution to the challenges of interdisciplinary aggregation and use of specimen-level trait data
   type: annotation
   user: https://futres.org/
-- description: The Mouse Phenome Database (MPD) takes advantage of the axioms provided by OBA for Vertebrate Trait (VT) ontology terms to integrate genomic and phenomic data.
-  examples:
-  - description: response to alcohol trait
-    url: https://phenome.jax.org/ontologies/vt:0010489
-  publications:
-  - id: https://doi.org/10.1093/nar/gkac1007
-    title: 'Mouse Phenome Database: towards a more FAIR-compliant and TRUST-worthy data repository and tool suite for phenotypes and genotypes'
-  type: Database
-  user: https://phenome.jax.org
 activity_status: active
 ---
 
