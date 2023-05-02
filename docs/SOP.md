@@ -117,7 +117,7 @@ The current processes of nomination, acceptance and onboarding are described [he
      1. Get volunteers to sign up to lead upcoming meetings (if needed)
      2. Review [new ontology requests](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/new%20ontology)
      3. Report from Editorial Working Group (EWG) (Darren)
-     4. Report from Technical Working Group (TWG) (Nico)
+     4. Report from Technical Working Group (TWG) (Ray)
      5. Review additional [open issues](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/attn%3A%20OFOC%20call) and [pull requests](https://github.com/OBOFoundry/OBOFoundry.github.io/pulls?q=is%3Apr+is%3Aopen+label%3A%22attn%3A+OFOC+call%22) that are labeled "attn: OFOC call"
 
 2. Check the issues labeled ["attn:OFOC call"](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/attn%3A%20OFOC%20call) found at the OBO foundry github repository. Pick one or two open issues you deem important and put them towards the end of the stub agenda, after the Working Group reports and before the review of additional open issues.
