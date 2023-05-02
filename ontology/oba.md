@@ -53,8 +53,8 @@ usages:
   user: https://platform.opentargets.org
 - description: The Encyclopedia of Life (EOL) TraitBank takes advantage of the well-axiomatised OBA terms to infer traits in biodiversity data and to improve their search functionality.
   examples:
-  - description: body mass http://purl.obolibrary.org/obo/OBA_VT0001259 The amount of matter in the body of an organism.
-    url: https://eol.org/terms/search_results?tq%5Bf%5D%5B0%5D%5Bp%5D=260&tq%5Br%5D=record
+  - description: cell size http://purl.obolibrary.org/obo/OBA_0000055
+    url: https://eol.org/terms/search_results?tq%5Bf%5D%5B0%5D%5Bp%5D=380&tq%5Br%5D=record
   publications:
   - id: https://doi.org/10.3233/SW-150190
     title: 'TraitBank: Practical semantics for organism attribute data'
