@@ -79,7 +79,7 @@ body:
     id: download
     attributes:
       label: Ontology Download Link
-      description: What URL can be used to download your Ontology?
+      description: What URL can be used to download your ontology?
       placeholder: e.g. https://github.com/obophenotype/uberon/raw/master/uberon.owl
     validations:
       required: true
