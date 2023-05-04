@@ -139,7 +139,7 @@ body:
     id: remarks
     attributes:
       label: Additional comments or remarks
-      description: Is there an other information that will be helpful for the OBO community and reviewers of your ontology?
+      description: Is there any other information that will be helpful for the OBO community and reviewers of your ontology?
     validations:
       required: false
   
