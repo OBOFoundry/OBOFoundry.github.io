@@ -63,7 +63,7 @@ body:
     id: repository
     attributes:
       label: Source Code Repository
-      description: What is the URL of the repository? Typically, this will be a link to GitHub.
+      description: What is the URL of the repository? Typically, this will be a link to a public GitHub or Gitlab repository.
       placeholder: e.g. https://github.com/obophenotype/uberon/
     validations:
       required: true
