@@ -26,7 +26,7 @@ body:
     id: idspace
     attributes:
       label: Identifier Space
-      description: What is the prefix for the identifier space associated with your ontology? This is typically all capital letters with at least 3, ideally 4 or more, characters. This *must* not conflict with any entries in the [Bioregistry](https://bioregistry.io/registry) nor [BioPortal](https://bioportal.bioontology.org). See OBO Principle [FP-003 "URI/Identifier Space"](https://obofoundry.org/principles/fp-003-uris.html).
+      description: What is the prefix for the identifier space associated with your ontology? This is typically all capital letters with at least 3, ideally 4 or more, characters. This MUST NOT conflict with any entries in the [Bioregistry](https://bioregistry.io/registry) nor [BioPortal](https://bioportal.bioontology.org). See OBO Principle [FP-003 "URI/Identifier Space"](https://obofoundry.org/principles/fp-003-uris.html).
       placeholder: ex. UBERON
     validations:
       required: true
@@ -142,4 +142,4 @@ body:
       description: Is there any other information that will be helpful for the OBO community and reviewers of your ontology?
     validations:
       required: false
-  
+
