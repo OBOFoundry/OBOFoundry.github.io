@@ -78,7 +78,7 @@ activity_status: active
 
 The Ontology for Biomedical Investigations (OBI) project is developing an integrated ontology for the description of life-science and clinical investigations.
 
-- [Browse OBI on Ontobee](http://www.ontobee.org/browser/index.php?o=obi)
+- [Browse OBI on Ontobee](http://www.ontobee.org/ontology/obi)
 - Download OBI: [http://purl.obolibrary.org/obo/obi.owl](http://purl.obolibrary.org/obo/obi.owl)
 - [OBI homepage](http://obi-ontology.org)
 - [OBI mailing list](http://groups.google.com/group/obi-users)
