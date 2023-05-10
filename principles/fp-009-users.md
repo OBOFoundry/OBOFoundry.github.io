@@ -49,7 +49,7 @@ Note that the ontology can still be listed on the OBO Foundry website while publ
 The ontology developers MUST provide links/citations to publicly available evidence of
 use within your ontology [metadata file](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology) as given below (replacing with the correct group name, link, and description):
 
-```
+```yaml
 usages:
 - user: http://www.informatics.jax.org/disease (link to group)
   description: MGI disease model annotations use DO (description of group)
@@ -63,7 +63,7 @@ You may have multiple examples for each user, and mulitple users under the `usag
 ## Examples
 
 Use of PSI-MOD term IRI (in the form of a CURIE) in the PR ontology:
-```
+```yaml
 - user: http://purl.obolibrary.org/obo/pr
   description: Protein Ontology
   examples:
@@ -71,7 +71,7 @@ Use of PSI-MOD term IRI (in the form of a CURIE) in the PR ontology:
      description: OBO Format stanza showing use of PSI-MOD term in logical definition
 ```
 Term requests to PR from multiple users:
-```
+```yaml
 - user: (multiple)
   description: Term requests made via the Protein Ontology GitHub tracker
   examples:
@@ -79,7 +79,7 @@ Term requests to PR from multiple users:
      description: List of issues tagged with 'Term Request' to PRO
 ```
 Publication showing the Disease Ontology being used in research by external users
-```
+```yaml
 - user: https://pubmed.ncbi.nlm.nih.gov/36860337/
   description: Machine learning-based prediction of candidate gene biomarkers correlated with immune infiltration in patients with idiopathic pulmonary fibrosis
   examples:
@@ -87,7 +87,7 @@ Publication showing the Disease Ontology being used in research by external user
      description: In abstract, "Functional annotation, pathway enrichment, Disease Ontology and gene set enrichment analyses revealed..."
 ```
 Use of terms from GO for annotation:
-```
+```yaml
 - user: https://www.uniprot.org
   description: UniProt
   examples:
@@ -95,7 +95,7 @@ Use of terms from GO for annotation:
      description: Functional annotation using GO (see subsection entitled "GO annotations")
 ```
 OBI terms imported into external ontologies
-```
+```yaml
 - user: (multiple)
   description: Ontologies using OBI terms
   examples:
