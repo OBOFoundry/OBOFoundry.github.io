@@ -242,7 +242,7 @@ jQuery(document).ready(function() {
                             <a class="btn btn-outline-primary" href="http://purl.obolibrary.org/obo/${id}.owl" aria-label="Download ${title} in OWL format" title="Download ${title} in OWL format">
                                 <i class="bi-download" aria-hidden="true"></i>
                             </a>
-                            <a class="btn btn-outline-primary" href="http://www.ontobee.org/ontology/${id}" aria-label="Browse ${title} on OntoBee" title="Browse ${title} on OntoBee">
+                            <a class="btn btn-outline-primary" href="https://www.ontobee.org/ontology/${id}" aria-label="Browse ${title} on OntoBee" title="Browse ${title} on OntoBee">
                                 <i class="bi-eye" aria-hidden="true"></i>
                             </a>
                             ${tracker}
