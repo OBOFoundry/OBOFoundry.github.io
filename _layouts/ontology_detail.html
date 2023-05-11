@@ -55,7 +55,7 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
     <div class="card" style="margin-bottom: 1.5em;">
       <div class="card-body">
         <!-- TODO: each ontology should configure which browsers to be exposed in -->
-        <a href="https://ontobee.org/browser/index.php?o={{page.id}}" class="btn btn-outline-primary">
+        <a href="https://ontobee.org/ontology/{{page.id}}" class="btn btn-outline-primary">
           OntoBee
         </a>
         {% if page.aberowl_id %}
