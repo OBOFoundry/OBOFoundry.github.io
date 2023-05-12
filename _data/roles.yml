@@ -9,6 +9,7 @@
     metadata according to our principles and SOPs, merge changes and generally
     protect and guard them. This involves also facilitating the implementation of QC
     checks.
+  sop: /roles/metadata-steward
   responsibilities:
     - Checking OBOFoundry.github.io at least weekly for metadata related issues and pull requests.
     - "Tagging metadata related issues and pull requests with 'attn: OFOC call' if they need to be discussed by the Operations Committee. Provide instructions what needs to be discussed."
@@ -65,6 +66,7 @@
     - "Nice to have: knowledge of jekyll and liquid (like jinja)"
     - Should have technical background
   description: You will be responsible for gatekeeping community changes to the website.
+  sop: /roles/website-coordinator
   responsibilities:
   people:
     - github: erik-whiting
@@ -77,6 +79,25 @@
       orcid: 0000-0002-7356-1779
       status: support
       start: "0000-00-00"
+- name: OBO Newsletter Steward
+  open: true
+  commitment: 2-4 hours per month
+  requirements:
+    - Should have a basic journalistic instinct, compiling the most relevant discussion points, decisions and issues for the wider community
+  description: You will be responsible for managing, compiling and disseminating the OBO Newletter
+  responsibilities:
+    - Manage a Google doc with the current and previous newsletter drafts based on the newsletter skeleton
+    - Add GitHub issues and/or pull requests tagged with "newsletter" to the newsletter, with one or two sentences of summary
+    - Summarise key developments (ongoing and past) to the community, based on reports of the working groups to the Operations Committee meeting
+    - Summarise key decisions from the OBO operations calls
+    - Proactively finalise the newsletter draft for the last meeting of March, June, September and December, and requesting feedback
+    - After 10 days of requesting feedback, send the newsletter to obo-discuss mailing list
+  people:
+    - github: LK112019
+      name: Leila Kiani
+      orcid: 0009-0009-6722-6147
+      status: lead
+      start: "2023-05-01"
 - name: OBO Dashboard Maintainer
   open: false
   commitment: 2-10 hours per month
@@ -87,6 +108,7 @@
   description: Updating the OBO Dashboard once per month.
     Fixing horrible bugs in OBO-Dashboard if they come up (should be rare).
     Working with OBO Ops to find people for extending dashboard when new principles come along.
+  sop: /roles/dashboard-manager
   responsibilities:
   people:
     - github: anitacaron
@@ -111,6 +133,7 @@
     Working Group (TWG) for the OBO Operations team meeting. You will go
     through pull requests and emails and summarize in bullet points and report
     to OBO Ops.
+  sop: /roles/twg-ops-liaison
   responsibilities:
   people:
     - github: rays22
@@ -220,7 +243,7 @@
     - Adding new OBO Ops members to Google Drive and removing alumni
     - Adding important OBO events to the OBO calendar and sending out invites
     - Managing public and internal OBO Google Drives
-    - Report adding members to the to any OBO Google drive with Write or Admin rights to the OBO Operations Committee
+    - Reporting adding members to any OBO Google drive with Write or Admin rights to the OBO Operations Committee
   people:
     - github: nlharris
       name: Nomi Harris

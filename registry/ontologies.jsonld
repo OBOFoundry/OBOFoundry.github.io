@@ -305,7 +305,7 @@
                 "label": "William Hogan",
                 "orcid": "0000-0002-9881-1017"
             },
-            "description": "Defines terms and relations necessary for interoperation between epidemic models and public health application software that interface with these models",
+            "description": "An OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation.",
             "domain": "health",
             "homepage": "https://github.com/ApolloDev/apollo-sv",
             "id": "apollo_sv",
@@ -331,7 +331,21 @@
             ],
             "repository": "https://github.com/ApolloDev/apollo-sv",
             "title": "Apollo Structured Vocabulary",
-            "tracker": "https://github.com/ApolloDev/apollo-sv/issues"
+            "tracker": "https://github.com/ApolloDev/apollo-sv/issues",
+            "usages": [
+                {
+                    "description": "Apollo-SV terms are used in the new MIDAS portal (https://midasnetwork.us/catalog/) for making data discoverable.",
+                    "examples": [
+                        {
+                            "description": "A 'hospital stay dataset' reference in the midasnetwork.us resource",
+                            "url": "https://midasnetwork.us/ontology/class-oboapollo_sv_00000600.html"
+                        }
+                    ],
+                    "seeAlso": "https://midasnetwork.us/catalog/",
+                    "type": "annotation",
+                    "user": "https://midasnetwork.us/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -5111,10 +5125,10 @@
                 "source_url": "https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo"
             },
             "contact": {
-                "email": "pporras@ebi.ac.uk",
-                "github": "pporrasebi",
-                "label": "Pablo Porras Millán",
-                "orcid": "0000-0002-8429-8793"
+                "email": "luana.licata@gmail.com",
+                "github": "luanalicata",
+                "label": "Luana Licata",
+                "orcid": "0000-0001-5084-9000"
             },
             "description": "A structured controlled vocabulary for the annotation of experiments concerned with protein-protein interactions.",
             "domain": "investigations",
@@ -6264,13 +6278,83 @@
             ],
             "publications": [
                 {
-                    "id": "https://doi.org/10.1101/2023.01.26.525742",
-                    "title": "The Ontology of Biological Attributes (OBA) - Computational Traits for the Life Sciences"
+                    "id": "https://doi.org/10.1007/s00335-023-09992-1",
+                    "title": "The Ontology of Biological Attributes (OBA) - computational traits for the life sciences"
                 }
             ],
             "repository": "https://github.com/obophenotype/bio-attribute-ontology",
             "title": "Ontology of Biological Attributes",
-            "tracker": "https://github.com/obophenotype/bio-attribute-ontology/issues"
+            "tracker": "https://github.com/obophenotype/bio-attribute-ontology/issues",
+            "usages": [
+                {
+                    "description": "OBA terms are used by the NHGRI-EBI GWAS Catalog for phenotypic trait annotation.",
+                    "examples": [
+                        {
+                            "description": "age of onset of depressive disorder",
+                            "url": "https://www.ebi.ac.uk/gwas/efotraits/OBA_2040166"
+                        }
+                    ],
+                    "publications": [
+                        {
+                            "id": "https://doi.org/10.1093/nar/gkac1010",
+                            "title": "The NHGRI-EBI GWAS Catalog: knowledgebase and deposition resource"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://www.ebi.ac.uk/gwas/"
+                },
+                {
+                    "description": "OBA trait terms facilitate computational drug target identification via the Open Targets Platform.",
+                    "examples": [
+                        {
+                            "description": "age of onset of Alzheimer disease",
+                            "url": "https://platform.opentargets.org/disease/OBA_2001000/associations"
+                        }
+                    ],
+                    "publications": [
+                        {
+                            "id": "https://doi.org/10.1093/nar/gkac1046",
+                            "title": "The next-generation Open Targets Platform: reimagined, redesigned, rebuilt"
+                        }
+                    ],
+                    "type": "Database",
+                    "user": "https://platform.opentargets.org"
+                },
+                {
+                    "description": "The Encyclopedia of Life (EOL) TraitBank takes advantage of the well-axiomatised OBA terms to infer traits in biodiversity data and to improve their search functionality.",
+                    "examples": [
+                        {
+                            "description": "cell size http://purl.obolibrary.org/obo/OBA_0000055",
+                            "url": "https://eol.org/terms/search_results?tq%5Bf%5D%5B0%5D%5Bp%5D=380&tq%5Br%5D=record"
+                        }
+                    ],
+                    "publications": [
+                        {
+                            "id": "https://doi.org/10.3233/SW-150190",
+                            "title": "TraitBank: Practical semantics for organism attribute data"
+                        }
+                    ],
+                    "type": "Database",
+                    "user": "https://eol.org/traitbank"
+                },
+                {
+                    "description": "OBA terms are used by the Functional Trait Resource for Environmental Studies (FuTRES) for the annotation of measurable traits in vertebrates.",
+                    "examples": [
+                        {
+                            "description": "body length",
+                            "url": "https://futres-data-interface.netlify.app/"
+                        }
+                    ],
+                    "publications": [
+                        {
+                            "id": "https://doi.org/10.1016/j.isci.2022.105101",
+                            "title": "A solution to the challenges of interdisciplinary aggregation and use of specimen-level trait data"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://futres.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -9880,7 +9964,20 @@
             ],
             "repository": "https://github.com/monarch-initiative/vertebrate-breed-ontology",
             "title": "Vertebrate Breed Ontology",
-            "tracker": "https://github.com/monarch-initiative/vertebrate-breed-ontology/issues"
+            "tracker": "https://github.com/monarch-initiative/vertebrate-breed-ontology/issues",
+            "usages": [
+                {
+                    "description": "VBO is used in the Online Mendelian Inheritance in Animals (OMIA) for breed annotations.",
+                    "examples": [
+                        {
+                            "description": "Urticaria pigmentosa affects the Sphynx (Cat) (VBO:0100230) breed.",
+                            "url": "https://www.omia.org/OMIA001289/9685/"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://omia.org/home/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -11825,7 +11922,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "david.c.blackburn@gmail.com",
-                "label": "David Blackburn"
+                "label": "David Blackburn",
+                "orcid": "0000-0002-1810-9886"
             },
             "domain": "anatomy and development",
             "homepage": "http://github.com/seger/aao",
@@ -11886,7 +11984,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "david.c.blackburn@gmail.com",
-                "label": "David Blackburn"
+                "label": "David Blackburn",
+                "orcid": "0000-0002-1810-9886"
             },
             "domain": "organisms",
             "homepage": "http://www.amphibanat.org",
@@ -11938,7 +12037,9 @@
             },
             "contact": {
                 "email": "henrich@embl.de",
-                "label": "Thorsten Heinrich"
+                "github": "ThorstenHen",
+                "label": "Thorsten Henrich",
+                "orcid": "0000-0002-1548-3290"
             },
             "domain": "anatomy and development",
             "homepage": "http://4dx.embl.de/4DXpress",
@@ -12439,8 +12540,10 @@
         {
             "activity_status": "inactive",
             "contact": {
-                "email": "Thorsten.Henrich@embl-heidelberg.de",
-                "label": "Thorsten Henrich"
+                "email": "henrich@embl.de",
+                "github": "ThorstenHen",
+                "label": "Thorsten Henrich",
+                "orcid": "0000-0002-1548-3290"
             },
             "description": "A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>.",
             "domain": "anatomy and development",
@@ -12512,7 +12615,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "smtifahim@gmail.com",
-                "label": "Fahim Imam"
+                "label": "Fahim Imam",
+                "orcid": "0000-0003-4752-543X"
             },
             "description": "Neuronal cell types",
             "domain": "anatomy and development",
@@ -12527,7 +12631,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "smtifahim@gmail.com",
-                "label": "Fahim Imam"
+                "label": "Fahim Imam",
+                "orcid": "0000-0003-4752-543X"
             },
             "domain": "health",
             "homepage": "http://neuinfo.org/",
@@ -12541,7 +12646,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "smtifahim@gmail.com",
-                "label": "Fahim Imam"
+                "label": "Fahim Imam",
+                "orcid": "0000-0003-4752-543X"
             },
             "domain": "anatomy and development",
             "homepage": "http://neuinfo.org/",
@@ -12666,7 +12772,9 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "henrich@embl.de",
-                "label": "Thorsten Heinrich"
+                "github": "ThorstenHen",
+                "label": "Thorsten Henrich",
+                "orcid": "0000-0002-1548-3290"
             },
             "domain": "anatomy and development",
             "homepage": "http://4dx.embl.de/platy",
@@ -12727,7 +12835,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "john.garavelli@ebi.ac.uk",
-                "label": "John Garavelli"
+                "label": "John Garavelli",
+                "orcid": "0000-0002-4131-735X"
             },
             "description": "For the description of covalent bonds in proteins.",
             "domain": "chemistry and biochemistry",
