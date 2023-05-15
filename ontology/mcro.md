@@ -20,7 +20,7 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 activity_status: active
-repository: https://gitlab.com/fortunalab/ontoavida
+repository: https://github.com/UTHealth-Ontology/MCRO
 preferredPrefix: MCRO
 ---
 
