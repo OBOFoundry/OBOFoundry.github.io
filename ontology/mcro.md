@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: mcro
-title: "Model Card Report Ontology: An OWL2-encoded ontology modeling the model card report for machine learning model assests."
+title: Model Card Report Ontology
 contact:
   email: muamith@utmb.edu
   label: Tuan Amith
@@ -14,8 +14,8 @@ products:
   - id: mcro.owl
 dependencies:
   - id: iao
-  - id: swo
   - id: prov-o
+  - id: swo
 tracker: https://github.com/UTHealth-Ontology/MCRO
 license:
   url: https://creativecommons.org/licenses/by/4.0/
