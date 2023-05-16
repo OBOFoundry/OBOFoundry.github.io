@@ -14,7 +14,6 @@ products:
   - id: mcro.owl
 dependencies:
   - id: iao
-  - id: prov-o
   - id: swo
 tracker: https://github.com/UTHealth-Ontology/MCRO
 license:
