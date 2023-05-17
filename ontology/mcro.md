@@ -10,7 +10,7 @@ contact:
 dependencies:
 - id: iao
 - id: swo
-description: Model card reports are documents detailing transparent metadata information relating to machine learning models. Similar to what we have with drug labels and nutritional labels, the goal of model cards are to communicate relevant information on all aspects of a machine learning model that have undergone any experimentation. However these important reports of the machine learning models are presented in static documents. This work encodes the structure of model card reports and align them to standard OBO Foundry ontologies to help formalize and enrich these documents. The end result is computable model of the model card that can be used to standardize reporting and be integrated in future software tooling (searching and indexing, etc.).
+description: An OWL2-encoded ontology modeling the model card report for machine learning model assets for standardize the reporting and software integration.
 domain: information technology
 homepage: https://github.com/UTHealth-Ontology/MCRO
 license:
