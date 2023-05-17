@@ -20,7 +20,7 @@ preferredPrefix: MCRO
 products:
 - id: mcro.owl
 repository: https://github.com/UTHealth-Ontology/MCRO
-tracker: https://github.com/UTHealth-Ontology/MCRO
+tracker: https://github.com/UTHealth-Ontology/MCRO/issues
 activity_status: active
 ---
 
