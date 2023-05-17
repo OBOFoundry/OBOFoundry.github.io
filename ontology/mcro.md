@@ -10,7 +10,7 @@ contact:
 dependencies:
 - id: iao
 - id: swo
-description: An OWL2-encoded ontology modeling the model card report for machine learning model assets for standardize the reporting and software integration.
+description: An ontology representing the structure of model card reports to describe machine learning assests.
 domain: information technology
 homepage: https://github.com/UTHealth-Ontology/MCRO
 license:
