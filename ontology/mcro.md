@@ -10,7 +10,7 @@ contact:
 dependencies:
 - id: iao
 - id: swo
-description: An ontology representing the structure of model card reports to describe machine learning assests.
+description: An ontology representing the structure of model card reports - reports that describe basic characteristics of machine learning models for the public and consumers.
 domain: information technology
 homepage: https://github.com/UTHealth-Ontology/MCRO
 license:
@@ -24,4 +24,4 @@ tracker: https://github.com/UTHealth-Ontology/MCRO/issues
 activity_status: active
 ---
 
-An OWL2-encoded ontology modeling the model card report for machine learning model assests. The aim of this work is to describe machine learning models to communicate information about specific details about the model (trade offs, intended users, licensing, etc.). As an ontology-based artifact we can semantically express, standardize, and yield computable benefits to the model card reports. 
+Model card reports are documents that describe specific details about machine learning models to promote transparency - intended use cases, limitations, trained data sets, performance metrics, etc. The Model Card Report Ontology (MCRO) represents the common structures of this document to provide a computable and linkable artifact towards aggregation and archiving model card reports. 
