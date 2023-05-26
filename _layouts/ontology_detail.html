@@ -55,7 +55,7 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
     <div class="card" style="margin-bottom: 1.5em;">
       <div class="card-body">
         <!-- TODO: each ontology should configure which browsers to be exposed in -->
-        <a href="https://ontobee.org/browser/index.php?o={{page.id}}" class="btn btn-outline-primary">
+        <a href="https://ontobee.org/ontology/{{page.id}}" class="btn btn-outline-primary">
           OntoBee
         </a>
         {% if page.aberowl_id %}
@@ -188,7 +188,7 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         <span data-toggle="tooltip" title="ID prefix" data-html="true"> </span>
       </dt>
       <dd>
-        <a href="http://purl.obolibrary.org/obo/{{page.id}}/">{{page.id}}</a>
+        {{page.id}}
       </dd>
 
       <dt>PURL</dt>
@@ -241,6 +241,16 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
       <dd>
         <a href="mailto:{{page.contact.email}}">{{page.contact.label}}</a>
       </dd>
+      {% if page.contact.orcid %}
+      <dd>
+        <a href="https://orcid.org/{{ page.contact.orcid }}">{{ page.contact.orcid }}</a>
+      </dd>
+      {% endif %}
+      {% if page.contact.github %}
+      <dd>
+        <a href="https://github.com/{{ page.contact.github }}">@{{ page.contact.github }}</a>
+      </dd>
+      {% endif %}
 
       {% if page.repository and page.repository != page.homepage %}
       <dt>Repository</dt>
@@ -355,6 +365,12 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         >
       </dd>
       <dd>{% endif %}</dd>
+      <dt>OBO Dashboard</dt>
+      <dd>
+        <a href="http://dashboard.obofoundry.org/dashboard/{{ page.id }}/dashboard.html">
+          <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOBOFoundry%2Fobo-dash.github.io%2Fgh-pages%2Fdashboard%2F{{ page.id }}%2Fdashboard-qc-badge.json" alt="OBO Dashboard badge for {{ page.id }}"/>
+        </a>
+      </dd>
     </dl>
 
     <div class="btn-group pull-right" role="group" aria-label="Source">
