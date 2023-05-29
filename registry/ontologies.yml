@@ -8015,6 +8015,44 @@ ontologies:
   tracker: https://github.com/scdodev/scdo-ontology/issues
 - activity_status: orphaned
   build:
+    method: obo2owl
+    source_url: http://variationontology.org/vario_download/vario.obo
+  contact:
+    email: mauno.vihinen@med.lu.se
+    github: maunov
+    label: Mauno Vihinen
+    orcid: 0000-0002-9614-7976
+  description: Variation Ontology, VariO, is an ontology for standardized, systematic
+    description of effects, consequences and mechanisms of variations.
+  domain: biological systems
+  homepage: http://variationontology.org
+  id: vario
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/vario.owl
+  preferredPrefix: VariO
+  products:
+  - id: vario.owl
+    ontology_purl: http://purl.obolibrary.org/obo/vario.owl
+    title: VariO main release in OWL
+  - id: vario.obo
+    ontology_purl: http://purl.obolibrary.org/obo/vario.obo
+    title: VariO in OBO format
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24162187
+    title: Variation Ontology for annotation of variation effects and mechanisms
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/24533660
+    title: 'Variation ontology: annotator guide'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/25616435
+    title: Types and effects of protein variations
+  repository: N/A
+  title: Variation Ontology
+  tracker: http://variationontology.org/instructions.shtml
+- activity_status: orphaned
+  build:
     infallible: 1
     insert_ontology_id: true
     method: obo2owl
@@ -8102,27 +8140,6 @@ ontologies:
   - behavior
   title: Social Insect Behavior Ontology
   tracker: https://github.com/obophenotype/sibo/issues
-- activity_status: orphaned
-  build:
-    method: obo2owl
-    source_url: http://variationontology.org/vario_download/vario.obo
-  contact:
-    email: mauno.vihinen@med.lu.se
-    label: Mauno Vihinen
-  description: Variation Ontology, VariO, is an ontology for standardized, systematic
-    description of effects, consequences and mechanisms of variations.
-  domain: biological systems
-  homepage: http://variationontology.org
-  id: vario
-  layout: ontology_detail
-  ontology_purl: http://purl.obolibrary.org/obo/vario.owl
-  preferredPrefix: VariO
-  products:
-  - id: vario.owl
-    ontology_purl: http://purl.obolibrary.org/obo/vario.owl
-  - id: vario.obo
-    ontology_purl: http://purl.obolibrary.org/obo/vario.obo
-  title: Variation Ontology
 - activity_status: inactive
   build:
     checkout: git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git
