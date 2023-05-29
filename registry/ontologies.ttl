@@ -6240,22 +6240,63 @@ _:b305  <http://www.w3.org/2000/01/rdf-schema#label>  "Jade Hotchkiss" ;
 <http://purl.obolibrary.org/obo/scdo.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/scdo.obo" .
 
-<http://purl.obolibrary.org/obo/fix>
+<http://purl.obolibrary.org/obo/vario>
+        <http://identifiers.org/preferredPrefix>  "VariO" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b309 ;
+        <http://purl.org/dc/elements/1.1/description>  "Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations." ;
+        <http://purl.org/dc/elements/1.1/title>  "Variation Ontology" ;
+        <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/24162187> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/24533660> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/25616435> ;
+        <http://purl.org/dc/terms/1.1/theme>  "biological systems" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "http://variationontology.org/instructions.shtml" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/vario.owl" ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b310 ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vario.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vario.obo> ;
+        <http://xmlns.com/foaf/0.1/homepage>  <http://variationontology.org> .
+
+_:b309  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+        <http://obofoundry.github.io/vocabulary/source_url>  "http://variationontology.org/vario_download/vario.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/24162187>
+        <http://purl.org/dc/elements/1.1/title>  "Variation Ontology for annotation of variation effects and mechanisms" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/24533660>
+        <http://purl.org/dc/elements/1.1/title>  "Variation ontology: annotator guide" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/25616435>
+        <http://purl.org/dc/elements/1.1/title>  "Types and effects of protein variations" .
+
+_:b310  <http://www.w3.org/2000/01/rdf-schema#label>  "Mauno Vihinen" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "mauno.vihinen@med.lu.se" .
+
+<http://purl.obolibrary.org/obo/vario.owl>
+        <http://purl.org/dc/elements/1.1/title>  "VariO main release in OWL" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/vario.owl" .
+
+<http://purl.obolibrary.org/obo/vario.obo>
+        <http://purl.org/dc/elements/1.1/title>  "VariO in OBO format" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/vario.obo" .
+
+<http://purl.obolibrary.org/obo/fix>
+        <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b311 ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of physico-chemical methods and properties." ;
         <http://purl.org/dc/elements/1.1/title>  "Physico-chemical methods and properties" ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fix.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b310 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b312 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/fix.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/fix.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.ebi.ac.uk/chebi> .
 
-_:b309  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+_:b311  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
-_:b310  <http://www.w3.org/2000/01/rdf-schema#label>  "chEBI" .
+_:b312  <http://www.w3.org/2000/01/rdf-schema#label>  "chEBI" .
 
 <http://purl.obolibrary.org/obo/fix.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fix.owl" .
@@ -6266,7 +6307,7 @@ _:b310  <http://www.w3.org/2000/01/rdf-schema#label>  "chEBI" .
 <http://purl.obolibrary.org/obo/mamo>
         <http://identifiers.org/preferredPrefix>  "MAMO" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b311 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b313 ;
         <http://purl.org/dc/elements/1.1/description>  "The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features." ;
         <http://purl.org/dc/elements/1.1/title>  "Mathematical modeling ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://opensource.org/licenses/Artistic-2.0> ;
@@ -6276,7 +6317,7 @@ _:b310  <http://www.w3.org/2000/01/rdf-schema#label>  "chEBI" .
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mamo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://sourceforge.net/p/mamo-ontology/wiki/Home/> .
 
-_:b311  <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
+_:b313  <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
 <http://purl.obolibrary.org/obo/mamo.owl>
@@ -6284,14 +6325,14 @@ _:b311  <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
 
 <http://purl.obolibrary.org/obo/rex>
         <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b312 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b314 ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time." ;
         <http://purl.org/dc/elements/1.1/title>  "Physico-chemical process" ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/rex.owl" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/rex.owl> .
 
-_:b312  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+_:b314  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
 <http://purl.obolibrary.org/obo/rex.owl>
@@ -6300,22 +6341,22 @@ _:b312  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
 <http://purl.obolibrary.org/obo/sibo>
         <http://identifiers.org/preferredPrefix>  "SIBO" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b313 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b315 ;
         <http://purl.org/dc/elements/1.1/description>  "Social Behavior in insects" ;
         <http://purl.org/dc/elements/1.1/title>  "Social Insect Behavior Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "biological systems" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/sibo/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/sibo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b314 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b316 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/sibo.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/sibo.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/sibo> .
 
-_:b313  <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/sibo.git" ;
+_:b315  <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/sibo.git" ;
         <http://obofoundry.github.io/vocabulary/method>  "vcs" .
 
-_:b314  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
+_:b316  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://xmlns.com/foaf/0.1/mbox>  "cjmungall@lbl.gov" .
 
 <http://purl.obolibrary.org/obo/sibo.owl>
@@ -6323,31 +6364,6 @@ _:b314  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
 
 <http://purl.obolibrary.org/obo/sibo.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/sibo.obo" .
-
-<http://purl.obolibrary.org/obo/vario>
-        <http://identifiers.org/preferredPrefix>  "VariO" ;
-        <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b315 ;
-        <http://purl.org/dc/elements/1.1/description>  "Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations." ;
-        <http://purl.org/dc/elements/1.1/title>  "Variation Ontology" ;
-        <http://purl.org/dc/terms/1.1/theme>  "biological systems" ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/vario.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b316 ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vario.owl> ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vario.obo> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <http://variationontology.org> .
-
-_:b315  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
-        <http://obofoundry.github.io/vocabulary/source_url>  "http://variationontology.org/vario_download/vario.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-
-_:b316  <http://www.w3.org/2000/01/rdf-schema#label>  "Mauno Vihinen" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "mauno.vihinen@med.lu.se" .
-
-<http://purl.obolibrary.org/obo/vario.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/vario.owl" .
-
-<http://purl.obolibrary.org/obo/vario.obo>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/vario.obo" .
 
 <http://purl.obolibrary.org/obo/aeo>
         <http://identifiers.org/preferredPrefix>  "AEO" ;
