@@ -175,7 +175,7 @@ def validate_metadata(item, schema):
 
         # these cases will not cause test failure and will not be logged
         # the results are just added to the metadata grid:
-        # - orphaned ontology on contact or license check
+        # - orphaned ontology on contact or license or repository check
         # - inactive ontology
         # - obsolete ontology
         # - ontology annotated with `validate: false`
