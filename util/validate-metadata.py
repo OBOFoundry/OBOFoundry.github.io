@@ -183,7 +183,7 @@ def validate_metadata(item, schema):
         if not (
             (
                 item.get("activity_status") == "orphaned"
-                and title in ["contact", "license"]
+                and title in ["contact", "license", "repository"]
             )
             or (
                 item.get("is_obsolete") is True
