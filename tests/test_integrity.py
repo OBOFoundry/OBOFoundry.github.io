@@ -1,10 +1,14 @@
 """Test data integrity, beyond what's possible with the JSON schema."""
 
 import json
+import os
+import subprocess
+import tempfile
 import unittest
 from functools import lru_cache
 from io import StringIO
 from pathlib import Path
+from subprocess import check_output
 from typing import Set
 
 import requests
@@ -393,3 +397,32 @@ class TestModernIntegrity(unittest.TestCase):
                 "the standard locations defined by GitHub in https://docs.github.com/en/communities/setting-up-"
                 "your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors.",
             )
+
+    def test_obograph(self):
+        """Test that new ontologies can be converted to OBO Graph JSON."""
+        if not self.ontologies:
+            self.skipTest("No new ontologies to test")
+        for prefix, data in self.ontologies.items():
+            with self.subTest(prefix=prefix), tempfile.TemporaryDirectory() as d:
+                path = Path(d).joinpath(prefix).with_suffix(".json")
+                url = f"http://purl.obolibrary.org/obo/{prefix}.owl"
+                command = [
+                    "robot",
+                    "convert",
+                    "--input-iri",
+                    url,
+                    "--output",
+                    str(path),
+                    "-vvv",
+                ]
+                try:
+                    check_output(  # noqa:S603
+                        command,
+                        cwd=os.path.dirname(__file__),
+                    )
+                except subprocess.CalledProcessError as e:
+                    msg = e.output.decode()
+                else:
+                    msg = None
+                if msg is not None:
+                    self.fail(msg)
