@@ -15,7 +15,7 @@ Ontology development benefits from community input, which is strongly encouraged
 
 ## Recommendations and Requirements
 
-Ontology developers MUST set up a public mechanism to track community requests and suggestions (collectively, “issues”), and SHOULD aim to respond within 2-5 working days. Optional: Establish a discussion forum for more general communication with and between users.
+Ontology developers MUST set up a public mechanism to track community requests and suggestions (collectively, “issues”), and SHOULD aim to respond within 2-5 working days. To facilitate submission of well-crafted issues, ontology developers SHOULD create a set of guidelines/instructions for contributions. Optional: Establish a discussion forum for more general communication with and between users.
 
 Expectations of responsiveness:
 
@@ -30,6 +30,9 @@ Expectations of responsiveness:
 Specify the URL for an issue tracker (GitHub is recommended) in the ontology configuration file (YAML) that is used to display ontology details on the OBO Foundry web site. Specification of the tracker is done using the following text (customized for your ontology) within its [metadata file](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology):
 
 `tracker: <URL pointing to issue tracker>`
+
+<i>Guideline for contributions (recommended):</i>
+Create a file called 'CONTRIBUTING.md' ([example](https://github.com/mapping-commons/sssom/blob/master/CONTRIBUTING.md)) in an easy-to-find main folder for the appropriate ontology (for example, in the root directory of the ontology GitHub repository, where one would expect to find LICENSE or README files). Learn more about contribution guidelines [here](http://mozillascience.github.io/working-open-workshop/contributing/)).
 
 <i>Discussion forum (optional):</i>
 Establish a discussion forum (For example, Google groups mailing list, Slack, Twitter). Each of these is specified in the configuration file as given below:

@@ -5,6 +5,7 @@ title: Amphibian taxonomy
 contact:
   email: david.c.blackburn@gmail.com
   label: David Blackburn
+  orcid: 0000-0002-1810-9886
 domain: organisms
 homepage: http://www.amphibanat.org
 is_obsolete: true
