@@ -19,8 +19,18 @@ license:
 preferredPrefix: MCRO
 products:
 - id: mcro.owl
+publications:
+- id: https://doi.org/10.1186/s12859-022-04797-6
+  title: 'Toward a standard formal semantic representation of the model card report'
 repository: https://github.com/UTHealth-Ontology/MCRO
 tracker: https://github.com/UTHealth-Ontology/MCRO/issues
+usages:
+- description: 'MCRO used for publishing model cards'
+  examples:
+  - description: 'Demonstration of Java-based library utilizing MCRO to output RDF-based model card reports'
+  publications: 
+  - id: https://doi.org/10.1145/3543873.3587601
+    title: 'Application of an ontology for model cards to generate computable artifacts for linking machine learning information from biomedical research'
 activity_status: active
 ---
 
