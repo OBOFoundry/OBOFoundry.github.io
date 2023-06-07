@@ -876,8 +876,24 @@ _:b51   <http://www.w3.org/2000/01/rdf-schema#label>  "Egon Willighagen" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://monarchinitiative.org/phenotype/HP:0000118> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b55 ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp.json> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-base.json> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-base.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-base.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-full.json> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-full.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-full.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-international.json> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-international.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-international.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.json> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/phenotype.hpoa> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/phenotype_to_genes.txt> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/genes_to_phenotype.txt> ;
         <http://xmlns.com/foaf/0.1/account>  <http://purl.obolibrary.org/obo/hp_ontology> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.human-phenotype-ontology.org/> .
 
@@ -6066,11 +6082,113 @@ _:b54   <http://obofoundry.github.io/vocabulary/method>  "archive" ;
 _:b55   <http://www.w3.org/2000/01/rdf-schema#label>  "Sebastian Koehler" ;
         <http://xmlns.com/foaf/0.1/mbox>  "dr.sebastian.koehler@gmail.com" .
 
-<http://purl.obolibrary.org/obo/hp.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp.owl" .
+<http://purl.obolibrary.org/obo/hp.json>
+        <http://purl.org/dc/elements/1.1/description>  "Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in obographs JSON format." ;
+        <http://purl.org/dc/elements/1.1/title>  "Official HPO release in obographs JSON format" ;
+        <http://purl.org/dc/terms/1.1/format>  "json" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp.json" .
 
 <http://purl.obolibrary.org/obo/hp.obo>
+        <http://purl.org/dc/elements/1.1/description>  "Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in OBO file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "Official HPO release in OBO format" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp.obo" .
+
+<http://purl.obolibrary.org/obo/hp.owl>
+        <http://purl.org/dc/elements/1.1/description>  "Manually classified version of the ontology without the use of a reasoner, with imported terms, in OWL format (RDF/XML)." ;
+        <http://purl.org/dc/elements/1.1/title>  "Official HPO release in OWL" ;
+        <http://purl.org/dc/terms/1.1/format>  "owl" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp.owl" .
+
+<http://purl.obolibrary.org/obo/hp/hp-base.json>
+        <http://purl.org/dc/elements/1.1/description>  "Manually curated version of the ontology without the use of a reasoner, with references to imported terms, in obographs JSON file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO base release in obographs JSON format" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-base.json" .
+
+<http://purl.obolibrary.org/obo/hp/hp-base.obo>
+        <http://purl.org/dc/elements/1.1/description>  "Manually curated version of the ontology without the use of a reasoner, with references to imported terms, in OBO file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO base release in OBO format" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-base.obo" .
+
+<http://purl.obolibrary.org/obo/hp/hp-base.owl>
+        <http://purl.org/dc/elements/1.1/description>  "Manually curated version of the ontology without the use of a reasoner, with references to imported terms, in OWL (RDF/XML) file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO base release in OWL format" ;
+        <http://purl.org/dc/terms/1.1/format>  "owl" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-base.owl" .
+
+<http://purl.obolibrary.org/obo/hp/hp-full.json>
+        <http://purl.org/dc/elements/1.1/description>  "Version of the ontology automatically classified with the use of a reasoner, including all imported terms, in obographs JSON file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO full release in obographs JSON format" ;
+        <http://purl.org/dc/terms/1.1/format>  "json" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-full.json" .
+
+<http://purl.obolibrary.org/obo/hp/hp-full.obo>
+        <http://purl.org/dc/elements/1.1/description>  "Version of the ontology automatically classified with the use of a reasoner, including all imported terms, in OBO file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO full release in OBO format" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-full.obo" .
+
+<http://purl.obolibrary.org/obo/hp/hp-full.owl>
+        <http://purl.org/dc/elements/1.1/description>  "Version of the ontology automatically classified with the use of a reasoner, including all imported terms, in OWL (RDF/XML) file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO full release in OWL format" ;
+        <http://purl.org/dc/terms/1.1/format>  "owl" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-full.owl" .
+
+<http://purl.obolibrary.org/obo/hp/hp-international.json>
+        <http://purl.org/dc/elements/1.1/description>  "Version of the ontology corresponding to the primary release (hp.owl), with translated labels, synonyms, and definitions, in obographs JSON file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO International Edition in obographs JSON format" ;
+        <http://purl.org/dc/terms/1.1/format>  "json" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-international.json" .
+
+<http://purl.obolibrary.org/obo/hp/hp-international.obo>
+        <http://purl.org/dc/elements/1.1/description>  "Version of the ontology corresponding to the primary release (hp.owl), with translated labels, synonyms, and definitions, in OBO file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO International Edition in OBO format" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-international.obo" .
+
+<http://purl.obolibrary.org/obo/hp/hp-international.owl>
+        <http://purl.org/dc/elements/1.1/description>  "Version of the ontology corresponding to the primary release (hp.owl), with translated labels, synonyms, and definitions, in OWL (RDF/XML) file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO International Edition in OWL format" ;
+        <http://purl.org/dc/terms/1.1/format>  "owl" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-international.owl" .
+
+<http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.json>
+        <http://purl.org/dc/elements/1.1/description>  "Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in obographs JSON file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO simple, manually classified, without imports in obographs JSON format" ;
+        <http://purl.org/dc/terms/1.1/format>  "json" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.json" .
+
+<http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.obo>
+        <http://purl.org/dc/elements/1.1/description>  "Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in OBO file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO simple, manually classified, without imports in OBO format" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.obo" .
+
+<http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.owl>
+        <http://purl.org/dc/elements/1.1/description>  "Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in OWL (RDF/XML) file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO simple, manually classified, without imports in OWL format" ;
+        <http://purl.org/dc/terms/1.1/format>  "owl" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.owl" .
+
+<http://purl.obolibrary.org/obo/hp/phenotype.hpoa>
+        <http://purl.org/dc/elements/1.1/description>  "https://hpo.jax.org/app/data/annotations" ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO Annotations (Phenotype to Disease)" ;
+        <http://purl.org/dc/terms/1.1/format>  "tsv" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/phenotype.hpoa" .
+
+<http://purl.obolibrary.org/obo/hp/phenotype_to_genes.txt>
+        <http://purl.org/dc/elements/1.1/description>  "https://hpo.jax.org/app/data/annotations" ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO phenotype to gene annotations" ;
+        <http://purl.org/dc/terms/1.1/format>  "tsv" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/phenotype_to_genes.txt" .
+
+<http://purl.obolibrary.org/obo/hp/genes_to_phenotype.txt>
+        <http://purl.org/dc/elements/1.1/description>  "https://hpo.jax.org/app/data/annotations" ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO gene to phenotype annotations" ;
+        <http://purl.org/dc/terms/1.1/format>  "tsv" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/genes_to_phenotype.txt" .
 
 <http://purl.obolibrary.org/obo/kisao>
         <http://identifiers.org/preferredPrefix>  "KISAO" ;
