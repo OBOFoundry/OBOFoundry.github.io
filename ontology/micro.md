@@ -18,7 +18,7 @@ products:
 - id: micro.owl
 repository: https://github.com/carrineblank/MicrO
 tracker: https://github.com/carrineblank/MicrO/issues
-activity_status: active
+activity_status: inactive
 ---
 
 Includes terms and term synonyms extracted from > 1500 prokaryotic taxonomic descriptions, collected from a large number of taxonomic descriptions from Archaea, Cyanobacteria, Bacteroidetes, Firmicutes, and Mollicutes.
