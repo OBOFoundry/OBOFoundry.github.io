@@ -3145,7 +3145,7 @@ _:b110  <http://www.w3.org/2000/01/rdf-schema#label>  "Leigh Carmody" ;
 
 <http://purl.obolibrary.org/obo/micro>
         <http://identifiers.org/preferredPrefix>  "MICRO" ;
-        <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
+        <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of prokaryotic phenotypic and metabolic characters" ;
         <http://purl.org/dc/elements/1.1/title>  "Ontology of Prokaryotic Phenotypic and Metabolic Characters" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/2.0/> ;
@@ -3355,12 +3355,6 @@ _:b185  <http://www.w3.org/2000/01/rdf-schema#label>  "Hilmar Lapp" ;
 
 <http://purl.obolibrary.org/obo/miapa.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/miapa.owl" .
-
-_:b171  <http://www.w3.org/2000/01/rdf-schema#label>  "Carrine Blank" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "carrine.blank@umontana.edu" .
-
-<http://purl.obolibrary.org/obo/micro.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/micro.owl" .
 
 <http://purl.obolibrary.org/obo/mmo>
         <http://identifiers.org/preferredPrefix>  "MMO" ;
@@ -6364,6 +6358,12 @@ _:b316  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
 
 <http://purl.obolibrary.org/obo/sibo.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/sibo.obo" .
+
+_:b171  <http://www.w3.org/2000/01/rdf-schema#label>  "Carrine Blank" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "carrine.blank@umontana.edu" .
+
+<http://purl.obolibrary.org/obo/micro.owl>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/micro.owl" .
 
 <http://purl.obolibrary.org/obo/aeo>
         <http://identifiers.org/preferredPrefix>  "AEO" ;
