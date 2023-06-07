@@ -24,4 +24,8 @@ tracker: https://github.com/UTHealth-Ontology/MCRO/issues
 activity_status: active
 ---
 
-Model card reports are documents that describe specific details about machine learning models to promote transparency - intended use cases, limitations, trained data sets, performance metrics, etc. The Model Card Report Ontology (MCRO) represents the common structures of this document to provide a computable and linkable artifact towards aggregation and archiving model card reports. 
+Model card reports are documents detailing transparent metadata information relating to machine learning models. Analogous with drug labels and nutritional labels, the goal of model cards are to communicate relevant information on all aspects of a machine learning model that have undergone any experimentation. However, these reports of the machine learning models are presented in static documents. 
+
+This work encodes the various structures of model card reports and align them to standard OBO Foundry ontologies (specifically the Information Artifact Ontology and the Software Ontology) to help formalize and enrich these documents, and essentially make these reports computable for indexing, searching and aggregation.
+
+
