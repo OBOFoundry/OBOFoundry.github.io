@@ -2990,6 +2990,7 @@ _:b159  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology for representing treatment of disease and diagnosis and on carcinomas and other pathological entities" ;
         <http://purl.org/dc/elements/1.1/title>  "Ontology for General Medical Science" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/21347182> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/25991121> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/OGMS/ogms/issues" ;
@@ -3987,6 +3988,9 @@ _:b211  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
 
 <http://purl.obolibrary.org/obo/ogg.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ogg.owl" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/21347182>
+        <http://purl.org/dc/elements/1.1/title>  "Toward an ontological treatment of disease and diagnosis" .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/25991121>
         <http://purl.org/dc/elements/1.1/title>  "Biomarkers in the Ontology for General Medical Science" .
