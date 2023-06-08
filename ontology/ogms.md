@@ -20,6 +20,9 @@ products:
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/21347182
   title: Toward an ontological treatment of disease and diagnosis
+  preferred: true
+- id: https://www.ncbi.nlm.nih.gov/pubmed/25991121
+  title: Biomarkers in the Ontology for General Medical Science
 repository: https://github.com/OGMS/ogms
 tags:
 - medicine
