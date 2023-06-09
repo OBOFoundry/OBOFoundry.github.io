@@ -26,15 +26,17 @@ repository: https://github.com/UTHealth-Ontology/MCRO
 tracker: https://github.com/UTHealth-Ontology/MCRO/issues
 usages:
 - description: 'MCRO used for publishing model cards'
+  user: https://github.com/UTHealth-Ontology/MCRO-Software
   examples:
   - description: 'Demonstration of Java-based library utilizing MCRO to output RDF-based model card reports'
+    url: https://github.com/UTHealth-Ontology/MCRO-Software
   publications: 
   - id: https://doi.org/10.1145/3543873.3587601
     title: 'Application of an ontology for model cards to generate computable artifacts for linking machine learning information from biomedical research'
 activity_status: active
 ---
 
-Model card reports are documents detailing transparent metadata information relating to machine learning models. Analogous with drug labels and nutritional labels, the goal of model cards are to communicate relevant information on all aspects of a machine learning model that have undergone any experimentation. However, these reports of the machine learning models are presented in static documents. 
+Model card reports are documents detailing transparent metadata information relating to machine learning models. Analogous with drug labels and nutritional labels, the goal of model cards are to communicate relevant information on all aspects of a machine learning model that have undergone any experimentation. The National Institutes of Health, through their Bridge2AI initiative, expressed interest in model cards as an artifact to communicate specifics and promote transparency for AI-based machine learning models in biomedical research. However, these reports are presented in static documents, and have the potential to impede any possible retrieval, analysis, and aggregation of these reports. Model card reports translated as RDF-based formats could help in this effort, including supplementing application tools to analyze AI-based machine learning models.
 
 This work encodes the various structures of model card reports and align them to standard OBO Foundry ontologies (specifically the Information Artifact Ontology and the Software Ontology) to help formalize and enrich these documents, and essentially make these reports computable for indexing, searching and aggregation.
 
