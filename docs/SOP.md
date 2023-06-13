@@ -112,7 +112,7 @@ Currently, these are the required steps:
 1. The ontology is added to the NOR dashboard which should be passed prior to proceeding. Fixing the basic issues revealed by the dashboard is considered some basic evidence that the ontology is indeed active. The ontology owner may request to bypass this criterion if there are a good reason. 
 1. The OBO Operations committee assigns a status change reviewer during the next call to analyse the evidence for the change. Only the evidence matters - no need to collect more evidence in favor of the status change.
 1. The status change reviewer presents the arguments for and against the status change at an OBO Operations call.
-1. A vote is issued that must be unanimous in favour of the status change.
+1. If there is no significant objection, the status change is enacted by merging the pull request.
 
 <a name="OPS_MEMBER"></a>
 
