@@ -31,7 +31,6 @@ The OBO Foundry, established in 2003, is an international collaborative effort d
 
 In this inaugural edition of the OBO newsletter, we want to remind you of the [procedure for requesting the inclusion of a new ontology in the OBO Foundry](https://obofoundry.org/faq/how-do-i-register-my-ontology.html):
 
-
 1. Clearly define the ontology's purpose and scope.
 2. Review [OBO Foundry Principles](http://obofoundry.org/principles/fp-000-summary.html) for alignment.
 3. Check existing ontologies to avoid duplication.
@@ -49,7 +48,6 @@ Recently accepted ontologies include:
 * [Alzheimer's Disease Ontology](https://obofoundry.org/ontology/ado.html)
 * [Next Generation Biobanking Ontology](https://obofoundry.org/ontology/ngbo.html)
 * [Vertebrate Breed Ontology](https://obofoundry.org/ontology/vbo.html)
-
 
 ### Spotlight on Ontologies
 
@@ -188,7 +186,6 @@ In this section we introduce the volunteers that recently joined the OBO Operati
 </table>
 
 ---
-
 
 ## Decisions Made and Important Updates
 
