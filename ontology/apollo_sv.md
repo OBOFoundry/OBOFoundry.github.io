@@ -7,7 +7,7 @@ contact:
   github: hoganwr
   label: William Hogan
   orcid: 0000-0002-9881-1017
-description: Defines terms and relations necessary for interoperation between epidemic models and public health application software that interface with these models
+description: An OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation.
 domain: health
 homepage: https://github.com/ApolloDev/apollo-sv
 license:
@@ -21,9 +21,13 @@ publications:
   title: 'The Apollo Structured Vocabulary: an OWL2 ontology of phenomena in infectious disease epidemiology and population biology for use in epidemic simulation'
 repository: https://github.com/ApolloDev/apollo-sv
 tracker: https://github.com/ApolloDev/apollo-sv/issues
+usages:
+- description: Apollo-SV terms are used in the new MIDAS portal (https://midasnetwork.us/catalog/) for making data discoverable.
+  examples:
+  - description: A 'hospital stay dataset' reference in the midasnetwork.us resource
+    url: https://midasnetwork.us/ontology/class-oboapollo_sv_00000600.html
+  seeAlso: https://midasnetwork.us/catalog/
+  type: annotation
+  user: https://midasnetwork.us/
 activity_status: active
 ---
-
-#Apollo Structured Vocabulary
-
-An ontology of geographical entities implemented in Web Ontology Language 2 (OWL2) and based on Basic Formal Ontology (BFO). The developers aim to adhere to the OBO Foundry principles.

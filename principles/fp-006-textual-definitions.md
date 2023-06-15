@@ -15,7 +15,7 @@ A textual definition provides a human-readable understanding about what is a mem
 
 ## Recommendations and Requirements
 
-Textual definitions MUST be unique within an ontology (i.e. no two terms should share a definition). Textual definitions SHOULD follow Aristotelian form (e.g. “a B that Cs” where B is the parent and C is the differentia), where this is practical.
+Textual definitions MUST be unique within an ontology (i.e. no two terms should share a definition) and be written in English. Textual definitions SHOULD follow Aristotelian form (e.g. “a B that Cs” where B is the parent and C is the differentia), where this is practical.
 
 For terms lacking textual definitions, there should be evidence of implementation of a strategy to provide definitions for all remaining undefined terms. In lieu of textual definitions, there can be elucidations when the term can not be rigorously defined. Note that textual definitions can be programmatically generated from logical definitions, if available (see [http://oro.open.ac.uk/21501/1/](http://oro.open.ac.uk/21501/1/)). In addition, [Dead Simple Ontology Design Patterns](https://github.com/INCATools/dead_simple_owl_design_patterns) (DOSDPs) can be used to generate both textual and logical definitions. DOSDPs are design specifications, written in YAML format, that specify structured text definitions and logical definitions for groups of ontology terms. These are widely used in many OBO Foundry ontologies, such as Mondo and uPheno. For some example patterns, see [Mondo patterns](https://mondo.readthedocs.io/en/latest/editors-guide/patterns/) and [uPheno patterns](https://github.com/obophenotype/upheno/tree/master/src/patterns/dosdp-patterns).
 

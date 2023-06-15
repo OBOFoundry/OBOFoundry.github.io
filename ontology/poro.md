@@ -47,7 +47,7 @@ An ontology covering the anatomy of Porifera (sponges)
 
 ## Browse ##
 
-The ontology can be browsed in [OntoBee](http://www.ontobee.org/browser/index.php?o=PORO)
+The ontology can be browsed in [OntoBee](https://www.ontobee.org/ontology/PORO)
 
 Example entry points:
 
