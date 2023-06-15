@@ -1,12 +1,10 @@
 ---
 layout: post
-title: "OBO Inaugural Newsletter June 2023"
+title: "Welcome to the inaugural issue of the OBO Foundry Newsletter -  Celebrating our 20th anniversary (June 2023)"
 date: 2023-06-16
 categories: update
 summary: "The inaugural edition of our newly formed OBO Newsletter."
 ---
-
-## Welcome to the inaugural issue of the OBO Foundry Newsletter -  Celebrating our 20th anniversary (June 2023)
 
 We are thrilled to bring you this first edition while we celebrate our 20th anniversary, packed with exciting updates and information about the OBO Foundry and its community.
 
