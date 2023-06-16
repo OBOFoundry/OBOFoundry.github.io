@@ -243,12 +243,13 @@ The National Student Data Corps, an initiative within the [Northeast Big Data In
 
 ## International Society for Biocuration Career Awards
 
-The International Society of Biocuration (ISB; [https://www.biocuration.org](https://www.biocuration.org/)) has recently announced its list of nominees for prestigious awards, including the [Early Career Award](https://www.biocuration.org/excellence-in-biocuration-early-career-award-2023/), [Advanced Career Award](https://www.biocuration.org/excellence-in-biocuration-advanced-career-award-2023/), and [Lifetime Achievement Award](https://www.biocuration.org/exceptional-contributions-to-biocuration-lifetime-achievement-award-2023/). We are thrilled to acknowledge the following OBO community volunteers as nominees:
+The International Society of Biocuration (ISB; https://www.biocuration.org) has recently announced the winners for the prestigious [Early Career Award, Advanced Career Award, and Lifetime Achievement Award](https://www.biocuration.org/announcement-for-2023-winners-of-excellence-in-biocuration-awards/). We are delighted to announce that two of the winners of this year's "Excellence in Biocuration Award" are active contributors to the OBO Foundry: The Early Career Award was given to Charlie Hoyt, and the Advanced Career Award was given to Nico Matentzoglu.
 
-1. [Charlie Hoyt](https://orcid.org/0000-0003-4423-4370) (early)
-2. [Nico Matentzoglu](https://orcid.org/0000-0002-7356-1779) (advanced)
+[Charles Tapley Hoyt](https://orcid.org/0000-0003-4423-4370), a Research Fellow at Harvard Medical School, is an exceptional biocurator. He leads the development of community datasets and databases like Bioregistry, Biomappings, and Chemical Roles Graph. He actively contributes to the OBO Foundry ontology community and related standards development, including the SSSOM standard. Charlie's active engagement in the Biocuration community includes co-chairing the recent Biocuration 2023 conference.
 
-The winners will be announced in mid-June on the ISB [website](https://www.biocuration.org/).
+[Nicolas Matentzoglu](https://orcid.org/0000-0002-7356-1779), a celebrated figure in bio-ontology and biocuration, passionately advocates open science. He co-leads the OBO Academy and leads the development of the Ontology Development Kit (ODK). Nico also spearheads the development of the Simple Standard for Sharing Ontological Mappings (SSSOM). His efforts have attracted and united diverse contributors in the biocuration community.
+
+We congratulate Charlie and Nico on their well-deserved awards!
 
 ---
 
