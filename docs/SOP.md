@@ -11,6 +11,7 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 - [Reviewing Ontologies for OBO Membership](#ROOM)
 - [Ontology Acceptance Email](#OAE)
 - [Changing ontology metadata in the registry](#META)
+- [Reviving obsolete, orphaned, or inactive ontologies](#REACTIVATION)
 - [Becoming a member of the OBO Operations Committee](#OPS_MEMBER)
 - [Chairing an OBO Operations Committee meeting call](#OPS_CHAIR)
 
@@ -99,6 +100,19 @@ In general, the metadata record of an ontology in the OBO Foundry metadata regis
 7. If at least 3 months have passed after the initial request for feedback, and the above conditions are met, any OBO Foundry operations committee member MAY merge the pull request at their own discretion.
 
 For a discussion on this SOP, see [here](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1848).
+
+<a name="REACTIVATION"></a>
+
+## Reactivating obsolete, orphaned, or inactive ontologies
+
+To mark ontologies that were marked as either obsolete, orphaned, or inactive as active again, we follow this process. 
+Currently, these are the required steps:
+
+1. A person involved in developing the ontology (usually the contact person) makes a pull request (PR) on the metadata file with the desired change in status. The PR must include evidence to demonstrate new activity, for example by referring to recently-closed issues (we will provide more detailed guidelines as this SOP matures). If the PR was made by someone other than the contact person, or if the contact person has changed, the contact should be tagged in the PR so that the proper followup can be done. The contact person then has one month to verify that the change is desired.
+1. The ontology is added to the NOR dashboard to identify potential problems. Fixing basic issues revealed by the dashboard will be considered additional evidence that the ontology is indeed active.
+1. The OBO Operations committee assigns a status change reviewer during the next call to analyse the evidence for the change. Only the evidence matters - no need to collect more evidence in favor of the status change.
+1. The status change reviewer presents the arguments for and against the status change at an OBO Operations call.
+1. If there is no significant objection, the status change is enacted by merging the pull request.
 
 <a name="OPS_MEMBER"></a>
 
