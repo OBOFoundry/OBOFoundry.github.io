@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Welcome to the inaugural issue of the OBO Foundry Newsletter -  Celebrating our 20th anniversary (June 2023)"
+title: "Inaugural OBO Foundry Newsletter"
 date: 2023-06-16
-categories: update
-summary: "The inaugural edition of our newly formed OBO Newsletter."
+author: Leila Kiani
+categories: newsletter
 ---
 
-We are thrilled to bring you this first edition while we celebrate our 20th anniversary, packed with exciting updates and information about the OBO Foundry and its community.
+We are thrilled to bring you this first edition while we celebrate our 20<sup>th</sup> anniversary, packed with exciting updates and information about the OBO Foundry and its community.
 
 In this issue, you will find a range of content, including general announcements, training opportunities, and details about recent and upcoming events. Our goal with the OBO Foundry's Quarterly Newsletter is to inform community members about the latest activities and advancements within the OBO Foundry.
 
@@ -78,8 +78,7 @@ By collaborating across these different areas and pulling together volunteers fr
 
 In this section we introduce the volunteers that recently joined the OBO Operations Committee. [Mathias Brochhausen](https://github.com/mbrochhausen) recently rejoined the OBO Operations Committee, after a period of absence. Welcome back Mathias!
 
-
-<table>
+<table class="table">
   <tr>
    <td><strong>Picture</strong>
    </td>
@@ -96,7 +95,7 @@ In this section we introduce the volunteers that recently joined the OBO Operati
   </tr>
   <tr>
    <td>
-    <img src="https://obofoundry.org/images/ofoc/anitacaron.png" width="" alt="Anita Caron" />
+    <img src="https://obofoundry.org/images/ofoc/anitacaron.png" style="max-height: 150px" alt="Anita Caron" />
    </td>
    <td>Anita R. Caron
    </td>
@@ -111,7 +110,7 @@ In this section we introduce the volunteers that recently joined the OBO Operati
   </tr>
   <tr>
    <td>
-    <img src="https://obofoundry.org/images/ofoc/deepakunni3.png" width="" alt="Deepak Unni" />
+    <img src="https://obofoundry.org/images/ofoc/deepakunni3.png" style="max-height: 150px" alt="Deepak Unni" />
    </td>
    <td>Deepak R. Unni
    </td>
@@ -126,7 +125,7 @@ In this section we introduce the volunteers that recently joined the OBO Operati
   </tr>
   <tr>
    <td>
-    <img src="https://obofoundry.org/images/ofoc/erik-whiting.png" width="" alt="Erik Whiting" />
+    <img src="https://obofoundry.org/images/ofoc/erik-whiting.png" style="max-height: 150px" alt="Erik Whiting" />
    </td>
    <td>Erik Whiting
    </td>
@@ -141,7 +140,7 @@ In this section we introduce the volunteers that recently joined the OBO Operati
   </tr>
   <tr>
    <td>
-    <img src="https://obofoundry.org/images/ofoc/LK112019.png" width="" alt="Leila Kiani" />
+    <img src="https://obofoundry.org/images/ofoc/LK112019.png" style="max-height: 150px" alt="Leila Kiani" />
    </td>
    <td>Leila Kiani
    </td>
@@ -156,7 +155,7 @@ In this section we introduce the volunteers that recently joined the OBO Operati
   </tr>
   <tr>
    <td>
-    <img src="https://obofoundry.org/images/ofoc/pfabry.png" width="" alt="Paul Fabry" />
+    <img src="https://obofoundry.org/images/ofoc/pfabry.png" style="max-height: 150px" alt="Paul Fabry" />
    </td>
    <td>Paul Fabry
    </td>
@@ -171,7 +170,7 @@ In this section we introduce the volunteers that recently joined the OBO Operati
   </tr>
   <tr>
    <td>
-    <img src="https://obofoundry.org/images/ofoc/rays22.png" alt="Ray Stefancsik" />
+    <img src="https://obofoundry.org/images/ofoc/rays22.png" style="max-height: 150px" alt="Ray Stefancsik" />
    </td>
    <td>Ray Stefancsik
    </td>
@@ -261,7 +260,7 @@ Monarch OBO Training is a virtual training session that is offered biweekly on T
 
 ### [ICBO OBO Tutorial 2023](https://oboacademy.github.io/obook/courses/icbo2023/): Using and Reusing Ontologies
 
-Date: Exact data TBD. Workshops/tutorials will be held August 28-30, 2023 \
+Date: Exact date TBD. Workshops/tutorials will be held August 28-30, 2023 \
 Location: In person at [ICBO2023](https://www.icbo2023.ncor-brasil.org/) in Brazil and virtual  \
 Organizers: [Nicole Vasilevsky](https://orcid.org/0000-0001-5208-3432) and [Nico Matentzoglu](https://orcid.org/0000-0002-7356-1779) \
 The ICBO OBO Tutorial 2023, "Using and Reusing Ontologies," is targeted towards  novice and experienced ontology users and developers. The tutorial, a longstanding tradition at ICBO, introduces OBO and ontologies in general and will include more advanced topics including using ROBOT and ChatGPT.
