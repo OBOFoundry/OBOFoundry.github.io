@@ -42,7 +42,7 @@ This site uses Jekyll's built-in blog system for newsletters. Take the following
 1. Create a markdown file in the [`_posts`](_posts) directory. This file name should start with the date of writing in
    YYYY-MM-DD format, then the remainder of the file name can be a short description of the contents. Use lowercase
    words and have dashes between them instead of spaces. Example: `2023-06-16-inaugural-newsletter.md`.
-2. Inside the markdown file, you need the following "frontmatter"
+2. At the top of the the markdown file, you need the following "frontmatter" (which is YAML hiding between two `---`)
    ```yaml
     ---
     layout: post
