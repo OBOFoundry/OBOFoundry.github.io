@@ -33,6 +33,8 @@ The project will strive for full consensus on everything until it runs into a pr
 All Python code in this repository should conform to `black` and `isort`. You
 can automatically apply them with `tox -e lint`.
 
+<a id="newsletter"></a>
+
 ## Adding Newsletter Entries
 
 This site uses Jekyll's built-in blog system for newsletters. Take the following steps to get a new post up:
