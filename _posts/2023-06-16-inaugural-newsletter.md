@@ -1,9 +1,10 @@
 ---
 layout: post
+categories: newsletter
 title: "Inaugural OBO Foundry Newsletter"
 date: 2023-06-16
-author: Leila Kiani
-categories: newsletter
+author: 
+  - Leila Kiani
 ---
 
 We are thrilled to bring you this first edition while we celebrate our 20<sup>th</sup> anniversary, packed with exciting updates and information about the OBO Foundry and its community.
@@ -242,9 +243,9 @@ The National Student Data Corps, an initiative within the [Northeast Big Data In
 
 ## International Society for Biocuration Career Awards
 
-The International Society of Biocuration (ISB; https://www.biocuration.org) has recently announced the winners for the prestigious [Early Career Award, Advanced Career Award, and Lifetime Achievement Award](https://www.biocuration.org/announcement-for-2023-winners-of-excellence-in-biocuration-awards/). We are delighted to announce that two of the winners of this year's "Excellence in Biocuration Award" are active contributors to the OBO Foundry: The Early Career Award was given to Charlie Hoyt, and the Advanced Career Award was given to Nico Matentzoglu.
+The [International Society of Biocuration (ISB)](https://www.biocuration.org) has recently announced the winners for the prestigious [Early Career Award, Advanced Career Award, and Lifetime Achievement Award](https://www.biocuration.org/announcement-for-2023-winners-of-excellence-in-biocuration-awards/). We are delighted to announce that two of the winners of this year's "Excellence in Biocuration Award" are active contributors to the OBO Foundry: The Early Career Award was given to Charlie Hoyt, and the Advanced Career Award was given to Nico Matentzoglu.
 
-[Charles Tapley Hoyt](https://orcid.org/0000-0003-4423-4370), a Research Fellow at Harvard Medical School, is an exceptional biocurator. He leads the development of community datasets and databases like Bioregistry, Biomappings, and Chemical Roles Graph. He actively contributes to the OBO Foundry ontology community and related standards development, including the SSSOM standard. Charlie's active engagement in the Biocuration community includes co-chairing the recent Biocuration 2023 conference.
+[Charles Tapley Hoyt](https://orcid.org/0000-0003-4423-4370), a Research Fellow at Harvard Medical School, is an exceptional biocurator. He leads the development of community datasets and databases like the [Bioregistry](https://bioregistry.io/), [Biomappings](https://github.com/biopragmatics/biomappings), and Chemical Roles Graph. He actively contributes to the OBO Foundry ontology community and related standards development, including the SSSOM standard. Charlie's active engagement in the Biocuration community includes co-chairing the recent Biocuration 2023 conference.
 
 [Nicolas Matentzoglu](https://orcid.org/0000-0002-7356-1779), a celebrated figure in bio-ontology and biocuration, passionately advocates open science. He co-leads the OBO Academy and leads the development of the Ontology Development Kit (ODK). Nico also spearheads the development of the Simple Standard for Sharing Ontological Mappings (SSSOM). His efforts have attracted and united diverse contributors in the biocuration community.
 
