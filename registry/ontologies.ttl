@@ -876,8 +876,24 @@ _:b51   <http://www.w3.org/2000/01/rdf-schema#label>  "Egon Willighagen" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://monarchinitiative.org/phenotype/HP:0000118> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b55 ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp.json> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-base.json> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-base.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-base.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-full.json> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-full.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-full.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-international.json> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-international.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-international.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.json> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/phenotype.hpoa> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/phenotype_to_genes.txt> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hp/genes_to_phenotype.txt> ;
         <http://xmlns.com/foaf/0.1/account>  <http://purl.obolibrary.org/obo/hp_ontology> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.human-phenotype-ontology.org/> .
 
@@ -2974,6 +2990,7 @@ _:b159  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology for representing treatment of disease and diagnosis and on carcinomas and other pathological entities" ;
         <http://purl.org/dc/elements/1.1/title>  "Ontology for General Medical Science" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/21347182> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/25991121> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/OGMS/ogms/issues" ;
@@ -3145,7 +3162,7 @@ _:b110  <http://www.w3.org/2000/01/rdf-schema#label>  "Leigh Carmody" ;
 
 <http://purl.obolibrary.org/obo/micro>
         <http://identifiers.org/preferredPrefix>  "MICRO" ;
-        <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
+        <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of prokaryotic phenotypic and metabolic characters" ;
         <http://purl.org/dc/elements/1.1/title>  "Ontology of Prokaryotic Phenotypic and Metabolic Characters" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/2.0/> ;
@@ -3355,12 +3372,6 @@ _:b185  <http://www.w3.org/2000/01/rdf-schema#label>  "Hilmar Lapp" ;
 
 <http://purl.obolibrary.org/obo/miapa.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/miapa.owl" .
-
-_:b171  <http://www.w3.org/2000/01/rdf-schema#label>  "Carrine Blank" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "carrine.blank@umontana.edu" .
-
-<http://purl.obolibrary.org/obo/micro.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/micro.owl" .
 
 <http://purl.obolibrary.org/obo/mmo>
         <http://identifiers.org/preferredPrefix>  "MMO" ;
@@ -3977,6 +3988,9 @@ _:b211  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
 
 <http://purl.obolibrary.org/obo/ogg.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ogg.owl" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/21347182>
+        <http://purl.org/dc/elements/1.1/title>  "Toward an ontological treatment of disease and diagnosis" .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/25991121>
         <http://purl.org/dc/elements/1.1/title>  "Biomarkers in the Ontology for General Medical Science" .
@@ -6072,11 +6086,113 @@ _:b54   <http://obofoundry.github.io/vocabulary/method>  "archive" ;
 _:b55   <http://www.w3.org/2000/01/rdf-schema#label>  "Sebastian Koehler" ;
         <http://xmlns.com/foaf/0.1/mbox>  "dr.sebastian.koehler@gmail.com" .
 
-<http://purl.obolibrary.org/obo/hp.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp.owl" .
+<http://purl.obolibrary.org/obo/hp.json>
+        <http://purl.org/dc/elements/1.1/description>  "Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in obographs JSON format." ;
+        <http://purl.org/dc/elements/1.1/title>  "Official HPO release in obographs JSON format" ;
+        <http://purl.org/dc/terms/1.1/format>  "json" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp.json" .
 
 <http://purl.obolibrary.org/obo/hp.obo>
+        <http://purl.org/dc/elements/1.1/description>  "Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in OBO file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "Official HPO release in OBO format" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp.obo" .
+
+<http://purl.obolibrary.org/obo/hp.owl>
+        <http://purl.org/dc/elements/1.1/description>  "Manually classified version of the ontology without the use of a reasoner, with imported terms, in OWL format (RDF/XML)." ;
+        <http://purl.org/dc/elements/1.1/title>  "Official HPO release in OWL" ;
+        <http://purl.org/dc/terms/1.1/format>  "owl" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp.owl" .
+
+<http://purl.obolibrary.org/obo/hp/hp-base.json>
+        <http://purl.org/dc/elements/1.1/description>  "Manually curated version of the ontology without the use of a reasoner, with references to imported terms, in obographs JSON file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO base release in obographs JSON format" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-base.json" .
+
+<http://purl.obolibrary.org/obo/hp/hp-base.obo>
+        <http://purl.org/dc/elements/1.1/description>  "Manually curated version of the ontology without the use of a reasoner, with references to imported terms, in OBO file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO base release in OBO format" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-base.obo" .
+
+<http://purl.obolibrary.org/obo/hp/hp-base.owl>
+        <http://purl.org/dc/elements/1.1/description>  "Manually curated version of the ontology without the use of a reasoner, with references to imported terms, in OWL (RDF/XML) file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO base release in OWL format" ;
+        <http://purl.org/dc/terms/1.1/format>  "owl" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-base.owl" .
+
+<http://purl.obolibrary.org/obo/hp/hp-full.json>
+        <http://purl.org/dc/elements/1.1/description>  "Version of the ontology automatically classified with the use of a reasoner, including all imported terms, in obographs JSON file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO full release in obographs JSON format" ;
+        <http://purl.org/dc/terms/1.1/format>  "json" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-full.json" .
+
+<http://purl.obolibrary.org/obo/hp/hp-full.obo>
+        <http://purl.org/dc/elements/1.1/description>  "Version of the ontology automatically classified with the use of a reasoner, including all imported terms, in OBO file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO full release in OBO format" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-full.obo" .
+
+<http://purl.obolibrary.org/obo/hp/hp-full.owl>
+        <http://purl.org/dc/elements/1.1/description>  "Version of the ontology automatically classified with the use of a reasoner, including all imported terms, in OWL (RDF/XML) file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO full release in OWL format" ;
+        <http://purl.org/dc/terms/1.1/format>  "owl" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-full.owl" .
+
+<http://purl.obolibrary.org/obo/hp/hp-international.json>
+        <http://purl.org/dc/elements/1.1/description>  "Version of the ontology corresponding to the primary release (hp.owl), with translated labels, synonyms, and definitions, in obographs JSON file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO International Edition in obographs JSON format" ;
+        <http://purl.org/dc/terms/1.1/format>  "json" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-international.json" .
+
+<http://purl.obolibrary.org/obo/hp/hp-international.obo>
+        <http://purl.org/dc/elements/1.1/description>  "Version of the ontology corresponding to the primary release (hp.owl), with translated labels, synonyms, and definitions, in OBO file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO International Edition in OBO format" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-international.obo" .
+
+<http://purl.obolibrary.org/obo/hp/hp-international.owl>
+        <http://purl.org/dc/elements/1.1/description>  "Version of the ontology corresponding to the primary release (hp.owl), with translated labels, synonyms, and definitions, in OWL (RDF/XML) file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO International Edition in OWL format" ;
+        <http://purl.org/dc/terms/1.1/format>  "owl" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-international.owl" .
+
+<http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.json>
+        <http://purl.org/dc/elements/1.1/description>  "Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in obographs JSON file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO simple, manually classified, without imports in obographs JSON format" ;
+        <http://purl.org/dc/terms/1.1/format>  "json" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.json" .
+
+<http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.obo>
+        <http://purl.org/dc/elements/1.1/description>  "Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in OBO file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO simple, manually classified, without imports in OBO format" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.obo" .
+
+<http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.owl>
+        <http://purl.org/dc/elements/1.1/description>  "Simple, manually curated version of the ontology without the use of a reasoner, and without any imported terms, in OWL (RDF/XML) file format." ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO simple, manually classified, without imports in OWL format" ;
+        <http://purl.org/dc/terms/1.1/format>  "owl" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/hp-simple-non-classified.owl" .
+
+<http://purl.obolibrary.org/obo/hp/phenotype.hpoa>
+        <http://purl.org/dc/elements/1.1/description>  "https://hpo.jax.org/app/data/annotations" ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO Annotations (Phenotype to Disease)" ;
+        <http://purl.org/dc/terms/1.1/format>  "tsv" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/phenotype.hpoa" .
+
+<http://purl.obolibrary.org/obo/hp/phenotype_to_genes.txt>
+        <http://purl.org/dc/elements/1.1/description>  "https://hpo.jax.org/app/data/annotations" ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO phenotype to gene annotations" ;
+        <http://purl.org/dc/terms/1.1/format>  "tsv" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/phenotype_to_genes.txt" .
+
+<http://purl.obolibrary.org/obo/hp/genes_to_phenotype.txt>
+        <http://purl.org/dc/elements/1.1/description>  "https://hpo.jax.org/app/data/annotations" ;
+        <http://purl.org/dc/elements/1.1/title>  "HPO gene to phenotype annotations" ;
+        <http://purl.org/dc/terms/1.1/format>  "tsv" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hp/genes_to_phenotype.txt" .
 
 <http://purl.obolibrary.org/obo/kisao>
         <http://identifiers.org/preferredPrefix>  "KISAO" ;
@@ -6240,10 +6356,94 @@ _:b305  <http://www.w3.org/2000/01/rdf-schema#label>  "Jade Hotchkiss" ;
 <http://purl.obolibrary.org/obo/scdo.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/scdo.obo" .
 
+<http://purl.obolibrary.org/obo/fix>
+        <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b309 ;
+        <http://purl.org/dc/elements/1.1/description>  "An ontology of physico-chemical methods and properties." ;
+        <http://purl.org/dc/elements/1.1/title>  "Physico-chemical methods and properties" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fix.owl" ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b310 ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/fix.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/fix.obo> ;
+        <http://xmlns.com/foaf/0.1/homepage>  <http://www.ebi.ac.uk/chebi> .
+
+_:b309  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+        <http://obofoundry.github.io/vocabulary/source_url>  "ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+_:b310  <http://www.w3.org/2000/01/rdf-schema#label>  "chEBI" .
+
+<http://purl.obolibrary.org/obo/fix.owl>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fix.owl" .
+
+<http://purl.obolibrary.org/obo/fix.obo>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fix.obo" .
+
+<http://purl.obolibrary.org/obo/mamo>
+        <http://identifiers.org/preferredPrefix>  "MAMO" ;
+        <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b311 ;
+        <http://purl.org/dc/elements/1.1/description>  "The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features." ;
+        <http://purl.org/dc/elements/1.1/title>  "Mathematical modeling ontology" ;
+        <http://purl.org/dc/terms/1.1/license>  <http://opensource.org/licenses/Artistic-2.0> ;
+        <http://purl.org/dc/terms/1.1/theme>  "simulation" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "http://sourceforge.net/p/mamo-ontology/tickets/" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mamo.owl" ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mamo.owl> ;
+        <http://xmlns.com/foaf/0.1/homepage>  <http://sourceforge.net/p/mamo-ontology/wiki/Home/> .
+
+_:b311  <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
+        <http://obofoundry.github.io/vocabulary/source_url>  "https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://purl.obolibrary.org/obo/mamo.owl>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mamo.owl" .
+
+<http://purl.obolibrary.org/obo/rex>
+        <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b312 ;
+        <http://purl.org/dc/elements/1.1/description>  "An ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time." ;
+        <http://purl.org/dc/elements/1.1/title>  "Physico-chemical process" ;
+        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/rex.owl" ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/rex.owl> .
+
+_:b312  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+        <http://obofoundry.github.io/vocabulary/source_url>  "http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<http://purl.obolibrary.org/obo/rex.owl>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/rex.owl" .
+
+<http://purl.obolibrary.org/obo/sibo>
+        <http://identifiers.org/preferredPrefix>  "SIBO" ;
+        <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b313 ;
+        <http://purl.org/dc/elements/1.1/description>  "Social Behavior in insects" ;
+        <http://purl.org/dc/elements/1.1/title>  "Social Insect Behavior Ontology" ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/theme>  "biological systems" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/sibo/issues" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/sibo.owl" ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b314 ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/sibo.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/sibo.obo> ;
+        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/sibo> .
+
+_:b313  <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/sibo.git" ;
+        <http://obofoundry.github.io/vocabulary/method>  "vcs" .
+
+_:b314  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "cjmungall@lbl.gov" .
+
+<http://purl.obolibrary.org/obo/sibo.owl>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/sibo.owl" .
+
+<http://purl.obolibrary.org/obo/sibo.obo>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/sibo.obo" .
+
 <http://purl.obolibrary.org/obo/vario>
         <http://identifiers.org/preferredPrefix>  "VariO" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b309 ;
+        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b315 ;
         <http://purl.org/dc/elements/1.1/description>  "Variation Ontology, VariO, is an ontology for standardized, systematic description of effects, consequences and mechanisms of variations." ;
         <http://purl.org/dc/elements/1.1/title>  "Variation Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
@@ -6253,12 +6453,12 @@ _:b305  <http://www.w3.org/2000/01/rdf-schema#label>  "Jade Hotchkiss" ;
         <http://purl.org/dc/terms/1.1/theme>  "biological systems" ;
         <http://usefulinc.com/ns/doap#bug-database>  "http://variationontology.org/instructions.shtml" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/vario.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b310 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b316 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vario.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vario.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://variationontology.org> .
 
-_:b309  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+_:b315  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "http://variationontology.org/vario_download/vario.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/24162187>
@@ -6270,7 +6470,7 @@ _:b309  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/25616435>
         <http://purl.org/dc/elements/1.1/title>  "Types and effects of protein variations" .
 
-_:b310  <http://www.w3.org/2000/01/rdf-schema#label>  "Mauno Vihinen" ;
+_:b316  <http://www.w3.org/2000/01/rdf-schema#label>  "Mauno Vihinen" ;
         <http://xmlns.com/foaf/0.1/mbox>  "mauno.vihinen@med.lu.se" .
 
 <http://purl.obolibrary.org/obo/vario.owl>
@@ -6281,89 +6481,11 @@ _:b310  <http://www.w3.org/2000/01/rdf-schema#label>  "Mauno Vihinen" ;
         <http://purl.org/dc/elements/1.1/title>  "VariO in OBO format" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/vario.obo" .
 
-<http://purl.obolibrary.org/obo/fix>
-        <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b311 ;
-        <http://purl.org/dc/elements/1.1/description>  "An ontology of physico-chemical methods and properties." ;
-        <http://purl.org/dc/elements/1.1/title>  "Physico-chemical methods and properties" ;
-        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fix.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b312 ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/fix.owl> ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/fix.obo> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <http://www.ebi.ac.uk/chebi> .
+_:b171  <http://www.w3.org/2000/01/rdf-schema#label>  "Carrine Blank" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "carrine.blank@umontana.edu" .
 
-_:b311  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
-        <http://obofoundry.github.io/vocabulary/source_url>  "ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-
-_:b312  <http://www.w3.org/2000/01/rdf-schema#label>  "chEBI" .
-
-<http://purl.obolibrary.org/obo/fix.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fix.owl" .
-
-<http://purl.obolibrary.org/obo/fix.obo>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fix.obo" .
-
-<http://purl.obolibrary.org/obo/mamo>
-        <http://identifiers.org/preferredPrefix>  "MAMO" ;
-        <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b313 ;
-        <http://purl.org/dc/elements/1.1/description>  "The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features." ;
-        <http://purl.org/dc/elements/1.1/title>  "Mathematical modeling ontology" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://opensource.org/licenses/Artistic-2.0> ;
-        <http://purl.org/dc/terms/1.1/theme>  "simulation" ;
-        <http://usefulinc.com/ns/doap#bug-database>  "http://sourceforge.net/p/mamo-ontology/tickets/" ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mamo.owl" ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mamo.owl> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <http://sourceforge.net/p/mamo-ontology/wiki/Home/> .
-
-_:b313  <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
-        <http://obofoundry.github.io/vocabulary/source_url>  "https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-
-<http://purl.obolibrary.org/obo/mamo.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mamo.owl" .
-
-<http://purl.obolibrary.org/obo/rex>
-        <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b314 ;
-        <http://purl.org/dc/elements/1.1/description>  "An ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time." ;
-        <http://purl.org/dc/elements/1.1/title>  "Physico-chemical process" ;
-        <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/rex.owl" ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/rex.owl> .
-
-_:b314  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
-        <http://obofoundry.github.io/vocabulary/source_url>  "http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-
-<http://purl.obolibrary.org/obo/rex.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/rex.owl" .
-
-<http://purl.obolibrary.org/obo/sibo>
-        <http://identifiers.org/preferredPrefix>  "SIBO" ;
-        <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
-        <http://obofoundry.github.io/vocabulary/has_build_information>  _:b315 ;
-        <http://purl.org/dc/elements/1.1/description>  "Social Behavior in insects" ;
-        <http://purl.org/dc/elements/1.1/title>  "Social Insect Behavior Ontology" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
-        <http://purl.org/dc/terms/1.1/theme>  "biological systems" ;
-        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/sibo/issues" ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/sibo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b316 ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/sibo.owl> ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/sibo.obo> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/sibo> .
-
-_:b315  <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/sibo.git" ;
-        <http://obofoundry.github.io/vocabulary/method>  "vcs" .
-
-_:b316  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "cjmungall@lbl.gov" .
-
-<http://purl.obolibrary.org/obo/sibo.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/sibo.owl" .
-
-<http://purl.obolibrary.org/obo/sibo.obo>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/sibo.obo" .
+<http://purl.obolibrary.org/obo/micro.owl>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/micro.owl" .
 
 <http://purl.obolibrary.org/obo/aeo>
         <http://identifiers.org/preferredPrefix>  "AEO" ;

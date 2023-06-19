@@ -29,7 +29,6 @@ publications:
   title: 'Variation ontology: annotator guide'
 - id: https://www.ncbi.nlm.nih.gov/pubmed/25616435
   title: Types and effects of protein variations
-repository: N/A
 tracker: http://variationontology.org/instructions.shtml
 activity_status: orphaned
 ---
