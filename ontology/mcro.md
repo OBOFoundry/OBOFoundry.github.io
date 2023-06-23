@@ -30,7 +30,7 @@ usages:
   examples:
   - description: 'Demonstration of Java-based library utilizing MCRO to output RDF-based model card reports'
     url: https://github.com/UTHealth-Ontology/MCRO-Software
-  publications: 
+  publications:
   - id: https://doi.org/10.1145/3543873.3587601
     title: 'Application of an ontology for model cards to generate computable artifacts for linking machine learning information from biomedical research'
 activity_status: active
