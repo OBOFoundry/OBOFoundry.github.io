@@ -151,7 +151,11 @@
                         Newsletter
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarNewsletterDropdown">
-                        <li><a class="dropdown-item" href="/posts/2023-06-16-InauguralNewsletter.html">Inaugural Newsletter 15th June 2023</a></li>
+                        {% for post in site.posts %}
+                        {% if post.categories contains "newsletter" %}
+                        <li><a class="dropdown-item" href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                        {% endif %}
+                        {% endfor %}
                     </ul>
                 </li>
 

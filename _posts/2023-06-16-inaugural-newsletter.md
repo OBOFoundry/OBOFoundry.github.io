@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Welcome to the inaugural issue of the OBO Foundry Newsletter -  Celebrating our 20th anniversary (June 2023)"
+categories: newsletter
+title: "Inaugural OBO Foundry Newsletter"
 date: 2023-06-16
-categories: update
-summary: "The inaugural edition of our newly formed OBO Newsletter."
+author: 
+  - Leila Kiani
 ---
 
-We are thrilled to bring you this first edition while we celebrate our 20th anniversary, packed with exciting updates and information about the OBO Foundry and its community.
+We are thrilled to bring you this first edition while we celebrate our 20<sup>th</sup> anniversary, packed with exciting updates and information about the OBO Foundry and its community.
 
 In this issue, you will find a range of content, including general announcements, training opportunities, and details about recent and upcoming events. Our goal with the OBO Foundry's Quarterly Newsletter is to inform community members about the latest activities and advancements within the OBO Foundry.
 
@@ -78,8 +79,7 @@ By collaborating across these different areas and pulling together volunteers fr
 
 In this section we introduce the volunteers that recently joined the OBO Operations Committee. [Mathias Brochhausen](https://github.com/mbrochhausen) recently rejoined the OBO Operations Committee, after a period of absence. Welcome back Mathias!
 
-
-<table>
+<table class="table">
   <tr>
    <td><strong>Picture</strong>
    </td>
@@ -96,7 +96,7 @@ In this section we introduce the volunteers that recently joined the OBO Operati
   </tr>
   <tr>
    <td>
-    <img src="https://obofoundry.org/images/ofoc/anitacaron.png" width="" alt="Anita Caron" />
+    <img src="https://obofoundry.org/images/ofoc/anitacaron.png" style="max-height: 150px" alt="Anita Caron" />
    </td>
    <td>Anita R. Caron
    </td>
@@ -111,7 +111,7 @@ In this section we introduce the volunteers that recently joined the OBO Operati
   </tr>
   <tr>
    <td>
-    <img src="https://obofoundry.org/images/ofoc/deepakunni3.png" width="" alt="Deepak Unni" />
+    <img src="https://obofoundry.org/images/ofoc/deepakunni3.png" style="max-height: 150px" alt="Deepak Unni" />
    </td>
    <td>Deepak R. Unni
    </td>
@@ -126,7 +126,7 @@ In this section we introduce the volunteers that recently joined the OBO Operati
   </tr>
   <tr>
    <td>
-    <img src="https://obofoundry.org/images/ofoc/erik-whiting.png" width="" alt="Erik Whiting" />
+    <img src="https://obofoundry.org/images/ofoc/erik-whiting.png" style="max-height: 150px" alt="Erik Whiting" />
    </td>
    <td>Erik Whiting
    </td>
@@ -141,7 +141,7 @@ In this section we introduce the volunteers that recently joined the OBO Operati
   </tr>
   <tr>
    <td>
-    <img src="https://obofoundry.org/images/ofoc/LK112019.png" width="" alt="Leila Kiani" />
+    <img src="https://obofoundry.org/images/ofoc/LK112019.png" style="max-height: 150px" alt="Leila Kiani" />
    </td>
    <td>Leila Kiani
    </td>
@@ -156,7 +156,7 @@ In this section we introduce the volunteers that recently joined the OBO Operati
   </tr>
   <tr>
    <td>
-    <img src="https://obofoundry.org/images/ofoc/pfabry.png" width="" alt="Paul Fabry" />
+    <img src="https://obofoundry.org/images/ofoc/pfabry.png" style="max-height: 150px" alt="Paul Fabry" />
    </td>
    <td>Paul Fabry
    </td>
@@ -171,7 +171,7 @@ In this section we introduce the volunteers that recently joined the OBO Operati
   </tr>
   <tr>
    <td>
-    <img src="https://obofoundry.org/images/ofoc/rays22.png" alt="Ray Stefancsik" />
+    <img src="https://obofoundry.org/images/ofoc/rays22.png" style="max-height: 150px" alt="Ray Stefancsik" />
    </td>
    <td>Ray Stefancsik
    </td>
@@ -243,9 +243,9 @@ The National Student Data Corps, an initiative within the [Northeast Big Data In
 
 ## International Society for Biocuration Career Awards
 
-The International Society of Biocuration (ISB; https://www.biocuration.org) has recently announced the winners for the prestigious [Early Career Award, Advanced Career Award, and Lifetime Achievement Award](https://www.biocuration.org/announcement-for-2023-winners-of-excellence-in-biocuration-awards/). We are delighted to announce that two of the winners of this year's "Excellence in Biocuration Award" are active contributors to the OBO Foundry: The Early Career Award was given to Charlie Hoyt, and the Advanced Career Award was given to Nico Matentzoglu.
+The [International Society of Biocuration (ISB)](https://www.biocuration.org) has recently announced the winners for the prestigious [Early Career Award, Advanced Career Award, and Lifetime Achievement Award](https://www.biocuration.org/announcement-for-2023-winners-of-excellence-in-biocuration-awards/). We are delighted to announce that two of the winners of this year's "Excellence in Biocuration Award" are active contributors to the OBO Foundry: The Early Career Award was given to Charlie Hoyt, and the Advanced Career Award was given to Nico Matentzoglu.
 
-[Charles Tapley Hoyt](https://orcid.org/0000-0003-4423-4370), a Research Fellow at Harvard Medical School, is an exceptional biocurator. He leads the development of community datasets and databases like Bioregistry, Biomappings, and Chemical Roles Graph. He actively contributes to the OBO Foundry ontology community and related standards development, including the SSSOM standard. Charlie's active engagement in the Biocuration community includes co-chairing the recent Biocuration 2023 conference.
+[Charles Tapley Hoyt](https://orcid.org/0000-0003-4423-4370), a Research Fellow at Harvard Medical School, is an exceptional biocurator. He leads the development of community datasets and databases like the [Bioregistry](https://bioregistry.io/), [Biomappings](https://github.com/biopragmatics/biomappings), and Chemical Roles Graph. He actively contributes to the OBO Foundry ontology community and related standards development, including the SSSOM standard. Charlie's active engagement in the Biocuration community includes co-chairing the recent Biocuration 2023 conference.
 
 [Nicolas Matentzoglu](https://orcid.org/0000-0002-7356-1779), a celebrated figure in bio-ontology and biocuration, passionately advocates open science. He co-leads the OBO Academy and leads the development of the Ontology Development Kit (ODK). Nico also spearheads the development of the Simple Standard for Sharing Ontological Mappings (SSSOM). His efforts have attracted and united diverse contributors in the biocuration community.
 
@@ -261,7 +261,7 @@ Monarch OBO Training is a virtual training session that is offered biweekly on T
 
 ### [ICBO OBO Tutorial 2023](https://oboacademy.github.io/obook/courses/icbo2023/): Using and Reusing Ontologies
 
-Date: Exact data TBD. Workshops/tutorials will be held August 28-30, 2023 \
+Date: Exact date TBD. Workshops/tutorials will be held August 28-30, 2023 \
 Location: In person at [ICBO2023](https://www.icbo2023.ncor-brasil.org/) in Brazil and virtual  \
 Organizers: [Nicole Vasilevsky](https://orcid.org/0000-0001-5208-3432) and [Nico Matentzoglu](https://orcid.org/0000-0002-7356-1779) \
 The ICBO OBO Tutorial 2023, "Using and Reusing Ontologies," is targeted towards  novice and experienced ontology users and developers. The tutorial, a longstanding tradition at ICBO, introduces OBO and ontologies in general and will include more advanced topics including using ROBOT and ChatGPT.
