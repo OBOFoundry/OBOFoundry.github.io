@@ -4982,6 +4982,68 @@
         },
         {
             "activity_status": "active",
+            "contact": {
+                "email": "muamith@utmb.edu",
+                "github": "ProfTuan",
+                "label": "Tuan Amith",
+                "orcid": "0000-0003-4333-1857"
+            },
+            "dependencies": [
+                {
+                    "id": "iao"
+                },
+                {
+                    "id": "swo"
+                }
+            ],
+            "description": "An ontology representing the structure of model card reports - reports that describe basic characteristics of machine learning models for the public and consumers.",
+            "domain": "information technology",
+            "homepage": "https://github.com/UTHealth-Ontology/MCRO",
+            "id": "mcro",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/mcro.owl",
+            "preferredPrefix": "MCRO",
+            "products": [
+                {
+                    "id": "mcro.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mcro.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1186/s12859-022-04797-6",
+                    "title": "Toward a standard formal semantic representation of the model card report"
+                }
+            ],
+            "repository": "https://github.com/UTHealth-Ontology/MCRO",
+            "title": "Model Card Report Ontology",
+            "tracker": "https://github.com/UTHealth-Ontology/MCRO/issues",
+            "usages": [
+                {
+                    "description": "MCRO used for publishing model cards",
+                    "examples": [
+                        {
+                            "description": "Demonstration of Java-based library utilizing MCRO to output RDF-based model card reports",
+                            "url": "https://github.com/UTHealth-Ontology/MCRO-Software"
+                        }
+                    ],
+                    "publications": [
+                        {
+                            "id": "https://doi.org/10.1145/3543873.3587601",
+                            "title": "Application of an ontology for model cards to generate computable artifacts for linking machine learning information from biomedical research"
+                        }
+                    ],
+                    "user": "https://github.com/UTHealth-Ontology/MCRO-Software"
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
             "build": {
                 "method": "owl2obo",
                 "source_url": "http://purl.obolibrary.org/obo/mf.owl"

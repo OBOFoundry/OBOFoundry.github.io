@@ -32,3 +32,27 @@ The project will strive for full consensus on everything until it runs into a pr
 
 All Python code in this repository should conform to `black` and `isort`. You
 can automatically apply them with `tox -e lint`.
+
+<a id="newsletter"></a>
+
+## Adding Newsletter Entries
+
+This site uses Jekyll's built-in blog system for newsletters. Take the following steps to get a new post up:
+
+1. Create a markdown file in the [`_posts`](_posts) directory. This file name should start with the date of writing in
+   YYYY-MM-DD format, then the remainder of the file name can be a short description of the contents. Use lowercase
+   words and have dashes between them instead of spaces. Example: `2023-06-16-inaugural-newsletter.md`.
+2. At the top of the the markdown file, you need the following "frontmatter" (which is YAML hiding between two `---`)
+   ```yaml
+    ---
+    layout: post
+    categories: newsletter
+    title: YOUR TITLE
+    author: YOUR NAME
+    date: YYYY-MM-DD
+    ---
+    ```
+   Where you replace the title and author fields with free text and the date field with a day formatted with YYYY-MM-DD
+   that matches the file name.
+3. Do not begin the newsletter with a title (that uses a `#` in markdown).
+4. The first paragraph of text in the newsletter will serve as a short description
