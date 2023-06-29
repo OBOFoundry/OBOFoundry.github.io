@@ -12,42 +12,47 @@ The New Ontology Request (NOR) Manager has these basic duties:
 4. Assigning a provisional reviewer from the OBO Operations Committee
 5. Removing the accepted ontology from the NOR Dashboard upon acceptance
 
-
 ### Receiving `new ontology` requests on OBO and acknowledging the receipt
 
 - The NOR Manager MUST actively listen to issues on the [OBOFoundry GitHub issues tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues).
+
 - When a new ontology request is received, and the wrong issue template was used, the NOR Manager must inform the NOR requestor to use the correct issue template and close the wrongly submitted issue with the following message:
-    ```markdown
-    Dear @GITHUBNAME,
-    
-    Thank you for your submission. 
-    However, the wrong issue template has been used. Please make sure to follow the [New Ontology Submission Instructions](https://obofoundry.org/docs/NewOntologyRegistrationInstructions.html) and use the [New Ontology Request issue template](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?assignees=&labels=new+ontology&template=new-ontology.yml&title=Request+for+new+ontology+%5BNAME%5D).
-    Thank you.
-    ```
+  
+  ```markdown
+  Dear @GITHUBNAME,
+  
+  Thank you for your submission. 
+  However, the wrong issue template has been used. Please make sure to follow the [New Ontology Submission Instructions](https://obofoundry.org/docs/NewOntologyRegistrationInstructions.html) and use the [New Ontology Request issue template](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?assignees=&labels=new+ontology&template=new-ontology.yml&title=Request+for+new+ontology+%5BNAME%5D).
+  Thank you.
+  ```
+
 - When a valid NOR request is received the NOR Manager acknowledges the receipt with the following message:
-    ```markdown
-    Dear @GITHUBNAME,
-    
-    Thank you for your submission. The review will be executed as a two stage process. 
-    First, you will have to pass [OBO NOR Dashboard](https://obofoundry.org/obo-nor.github.io/dashboard/index.html). Pass means that no check _apart from `Users` may be red_.
-    After you have successfully passed the Dashboard you will be assigned an OBO Operations committee member to review the ontology.
-    
-    Usually, the review will result in an opportunity for you to improve the ontology.
-    When the reviewer believes the ontology is ready for presentation to the OBO Operations Committee, they will present
-    your ontology during an OBO Operations Call. This gives other members of the
-    committee the opportunity to assess your work.
-    
-    When a decision is reached by the committee you will be informed here on the issue tracker.
-    The process can take any number of weeks or months, depending on the case at hand.
-    Please inform us about any reasons you might have for increased urgency.
-    
-    You will be informed once your ontology is loaded in the OBO NOR Dashboard.
-    
-    Good luck.
-    ```
+  
+  ```markdown
+  Dear @GITHUBNAME,
+  
+  Thank you for your submission. The review will be executed as a two stage process. 
+  First, you will have to pass [OBO NOR Dashboard](https://obofoundry.org/obo-nor.github.io/dashboard/index.html). Pass means that no check _apart from `Users` may be red_.
+  After you have successfully passed the Dashboard you will be assigned an OBO Operations committee member to review the ontology.
+  
+  Usually, the review will result in an opportunity for you to improve the ontology.
+  When the reviewer believes the ontology is ready for presentation to the OBO Operations Committee, they will present
+  your ontology during an OBO Operations Call. This gives other members of the
+  committee the opportunity to assess your work.
+  
+  When a decision is reached by the committee you will be informed here on the issue tracker.
+  The process can take any number of weeks or months, depending on the case at hand.
+  Please inform us about any reasons you might have for increased urgency.
+  
+  You will be informed once your ontology is loaded in the OBO NOR Dashboard.
+  
+  Good luck.
+  ```
+
 - The NOR Manager must ensure that the requestors use the proper communication channels with the OBO community:
-    - Make sure that the requestors have joined and send an appropriate email to the obo-discuss mailing list (see the [FAQ](https://obofoundry.org/faq/how-do-i-register-my-ontology.html)). If they have not, point them to the instructions and ask them to do so.
-    - Invite the requestors (using the email listed in the metadata) to the OBO Foundry Slack space (using the `Slack->Invite people to obo-community` menu, adding the email provided.
+  
+  - Make sure that the requestors have joined and send an appropriate email to the obo-discuss mailing list (see the [FAQ](https://obofoundry.org/faq/how-do-i-register-my-ontology.html)). If they have not, point them to the instructions and ask them to do so.
+  - Invite the requestors (using the email listed in the metadata) to the OBO Foundry Slack space (using the `Slack->Invite people to obo-community` menu, adding the email provided.
 
 ### Including the ontology into the OBO New Ontology Request (NOR) Dashboard and updating the dashboard
 
@@ -56,10 +61,12 @@ The OBO NOR Dashboard is managed here: https://github.com/OBOFoundry/obo-nor.git
 Integrating the submitted ontology into OBO dashboard means simply adding a new record into the `ontologies->custom` subsection
 of the [dashboard config file](https://github.com/OBOFoundry/obo-nor.github.io/blob/master/dashboard-config.yml). Only information explicitly mentioned in the New Ontology Request should be used.  
 NOTE: 
+
 > **All modifications on obo-nor.github.io repository MUST be done via pull requests and NOT via direct commits on the master branch.  
 > The /workflow/dahsboard.yml file must indicate the GitHubID of the actual NOR manager as assignee.**  
 
 Every update (adding or removing an ontology) should proceed as follows:  
+
 1. Creation of a Pull Request (PR) for modification of the [dashboard config file](https://github.com/OBOFoundry/obo-nor.github.io/blob/master/dashboard-config.yml) for adding or deleting record in the `ontologies->custom` section of the file.
 2. Once the previous PR is merged, it triggers the *Update dashboard run* [GitHub action](https://github.com/OBOFoundry/obo-nor.github.io/blob/master/.github/workflows/dashboard.yml). This action can also be triggered manually [here](https://github.com/OBOFoundry/obo-nor.github.io/actions/workflows/dashboard.yml) with the `run workflow` button.
 3. Once the run is complete, a new PR named `Update dashboard run` is created. Manually check the diff, especially the /dashboard/dahsboard-result.yml file for inconsistencies.
@@ -70,7 +77,18 @@ In addition, the *Update dashboard run* action is automatically triggered on Mon
 ### Supporting the New Ontology requestor to pass the OBO Dashboard
 
 For many New Ontology requestors it is not always easy to interpret the warnings on the OBO Dashboard. The NOR Manager is responsible for supporting the requestor interpreting the dashboard (but _not_ to fix the problems). There is no need to dig deep into the ontologies to diagnose problems - that is the requestors responsibility - but pointing to documentation like the [OBO Foundry Principles](https://obofoundry.org/principles/fp-000-summary.html) may be necessary.
-- All discussions between the requestors and the NOR manager must take place in the [OBO Issue Tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues) in the NOR issue created by the requestor.
+
+In addition, some checks need to be carried out manually by the NOR manager until sufficiently reliable automatic checks are available. A non exhaustive list includes:
+
+- URIs: check if it includes "https"  and if it conforms with the overall format "http://purl.obolibrary.org/obo/XXX"
+
+- Object properties: check if object properties are imported from the OBO-relations ontology. Check if domains and ranges are specified for created object properties.
+
+- Release artefact: check if release artefacts are identified as such and if different kinds of artefacts (base vs full for example) are released.
+
+- Imports: check how external classes and object properties are imported.
+
+During this process, all discussions between the requestors and the NOR manager must take place in the [OBO Issue Tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues) in the NOR issue created by the requestor.
 
 ### Assigning a provisional reviewer from the OBO Operations Committee
 
