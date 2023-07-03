@@ -86,7 +86,7 @@ In addition, some checks need to be carried out manually by the NOR manager unti
 
 - Release artefact: check if release artefacts are identified as such and ensure that, alongside a "main release", a base release is provided which **does not include imported terms**.
 
-- Imports: check how external classes and object properties are imported.
+- Imports: Ensure that there is a mechanism in place to update imported terms (classes and properties).
 
 During this process, all discussions between the requestors and the NOR manager must take place in the [OBO Issue Tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues) in the NOR issue created by the requestor.
 
