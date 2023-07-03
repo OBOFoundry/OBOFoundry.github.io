@@ -80,7 +80,7 @@ For many New Ontology requestors it is not always easy to interpret the warnings
 
 In addition, some checks need to be carried out manually by the NOR manager until sufficiently reliable automatic checks are available. A non exhaustive list includes:
 
-- URIs: check if it includes "https"  and if it conforms with the overall format "http://purl.obolibrary.org/obo/XXX"
+- URIs: check if it includes "https"  and if it [conforms with the overall format](http://obofoundry.org/id-policy) "http://purl.obolibrary.org/obo/ONTOLOGY_"
 
 - Object properties: check if object properties are imported from the OBO-relations ontology. Check if domains and ranges are specified for created object properties.
 
