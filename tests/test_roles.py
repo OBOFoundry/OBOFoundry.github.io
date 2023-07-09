@@ -48,7 +48,7 @@ class TestRoles(unittest.TestCase):
             name = role_dict.get("name")
             with self.subTest(name=name):
                 self.assertIsNotNone(name)
-                obj = Role.parse_obj(role_dict)
+                obj = Role.model_validate(role_dict)
                 self.assertIsInstance(obj, Role)
                 if obj.requirements is not None:
                     self.assertNotEqual(0, len(obj.requirements))
