@@ -24,6 +24,13 @@ publications:
   title: 'Therapeutic indications and other use-case-driven updates in the drug ontology: anti-malarials, anti-hypertensives, opioid analgesics, and a large term request'
 repository: https://github.com/ufbmi/dron
 tracker: https://github.com/ufbmi/dron/issues
+usages:
+- description: DrOn is used for the classification of Drugs, in particular, based on RxNorm codes, in the PennTURBO project.
+  examples:
+  - description: 'From the documentation: For example, the text `500 mg Tylenol po` tabs might be mapped to http://purl.obolibrary.org/obo/DRON_00073395, with the label `Acetaminophen 500 MG Oral Tablet [Tylenol]`. DrOn knows that this is a subclass of `Acetaminophen 500 MG Oral Tablet` (through its logical axiomatisation).'
+    url: https://pennturbo.github.io/Turbo-Documentation/medication_text_to_terms_to_roles.html
+  type: annotation
+  user: https://github.com/PennTURBO
 activity_status: active
 ---
 
