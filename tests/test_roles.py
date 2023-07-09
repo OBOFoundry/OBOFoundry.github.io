@@ -23,7 +23,7 @@ class Person(BaseModel):
     orcid: str
     status: Literal["lead", "support"]
     start: str
-    end: Optional[str]
+    end: Optional[str] = None
 
 
 class Role(BaseModel):
@@ -31,10 +31,10 @@ class Role(BaseModel):
 
     name: str
     description: str
-    open: Optional[bool]
-    commitment: Optional[str]  # can later be required
-    requirements: Optional[List[str]]  # can later be required
-    responsibilities: Optional[List[str]]  # can later be required
+    open: Optional[bool] = None
+    commitment: Optional[str] = None # can later be required
+    requirements: Optional[List[str]] = None # can later be required
+    responsibilities: Optional[List[str]] = None # can later be required
     people: List[Person]
 
 

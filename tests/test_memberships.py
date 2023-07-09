@@ -21,8 +21,8 @@ class Affiliation(BaseModel):
     """Represents an affiliation."""
 
     name: str
-    ror: Optional[str]
-    wikidata: Optional[str]
+    ror: Optional[str] = None
+    wikidata: Optional[str] = None
 
 
 class Member(BaseModel):
