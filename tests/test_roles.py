@@ -23,7 +23,7 @@ class Person(BaseModel):
     orcid: str
     status: Literal["lead", "support"]
     start: str
-    end: Optional[str]
+    end: Optional[str] = None
 
 
 class Role(BaseModel):
@@ -31,10 +31,10 @@ class Role(BaseModel):
 
     name: str
     description: str
-    open: Optional[bool]
-    commitment: Optional[str]  # can later be required
-    requirements: Optional[List[str]]  # can later be required
-    responsibilities: Optional[List[str]]  # can later be required
+    open: Optional[bool] = None
+    commitment: Optional[str] = None # can later be required
+    requirements: Optional[List[str]] = None # can later be required
+    responsibilities: Optional[List[str]] = None # can later be required
     people: List[Person]
 
 
@@ -48,7 +48,7 @@ class TestRoles(unittest.TestCase):
             name = role_dict.get("name")
             with self.subTest(name=name):
                 self.assertIsNotNone(name)
-                obj = Role.parse_obj(role_dict)
+                obj = Role.model_validate(role_dict)
                 self.assertIsInstance(obj, Role)
                 if obj.requirements is not None:
                     self.assertNotEqual(0, len(obj.requirements))
