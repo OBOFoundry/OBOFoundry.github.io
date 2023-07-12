@@ -82,7 +82,6 @@ In addition, some checks need to be carried out manually by the NOR manager unti
 
 - URIs: check if it includes "https"  and if it [conforms with the overall format](http://obofoundry.org/id-policy) "http://purl.obolibrary.org/obo/ONTOLOGY_"
 
-- Object properties: check if object properties are imported from the OBO-relations ontology. Check if domains and ranges are specified for created object properties.
 
 - Release artefact: check if release artefacts are identified as such and ensure that, alongside a "main release", a base release is provided which **does not include imported terms**.
 
