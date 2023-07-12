@@ -21,8 +21,8 @@ class Affiliation(BaseModel):
     """Represents an affiliation."""
 
     name: str
-    ror: Optional[str]
-    wikidata: Optional[str]
+    ror: Optional[str] = None
+    wikidata: Optional[str] = None
 
 
 class Member(BaseModel):
@@ -48,7 +48,7 @@ class TestMembershipData(unittest.TestCase):
 
     def test_data(self):
         """Test the working group data is clean."""
-        res = Group.parse_obj(yaml.safe_load(OPERATIONS_METADATA_PATH.read_text()))
+        res = Group.model_validate(yaml.safe_load(OPERATIONS_METADATA_PATH.read_text()))
         self.assertIsNotNone(res)
         counter = Counter(member.orcid for member in res.members)
         counter = {orcid for orcid, count in counter.items() if count > 1}
