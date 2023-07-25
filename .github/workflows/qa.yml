@@ -6,7 +6,7 @@ jobs:
   lint:
     name: Lint
     runs-on: ubuntu-latest
-    if: github.actor != 'github-actions[bot]'
+    if: github.triggering_actor != 'github-actions[bot]'
     strategy:
       matrix:
         python-version: [ "3.7", "3.10" ]

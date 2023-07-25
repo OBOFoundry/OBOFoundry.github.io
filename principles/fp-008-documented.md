@@ -18,9 +18,21 @@ The owners of the ontology should strive to provide as much documentation as pos
 
 Central to the issue of ontology documentation is ensuring transparency and traceability of artefact development. For each of the development steps, clear procedures should be made available. Documentation availability will be used to assess the quality of the resource. The following itemized list provides a core checklist, distinguishing general ontology documentation (general information about the resource) and local ontology documentation (documentation at artefact level itself and representational unit level (class and relations)). Documentation assessment with the purpose of assessing Ontology soundness, will cover updates and revision to the documentation. As ontology evolve, so should the documentation, for example by including a release documentation file.
 
+## Recommendations and Requirements
+
+## Implementation
+### Term adoption
+If a term that was previously defined in an identifier space belonging to ontology A (e.g. http://purl.obolibrary.org/obo/A_123) is adopted by ontology B (with a different identifier scheme, e.g. http://purl.obolibrary.org/obo/B_123) the following annotation assertion MUST be added to that term:
+
+OWL format (Turtle serialisation):
+`<http://purl.obolibrary.org/obo/A_123> rdfs:isDefinedBy <http://purl.obolibrary.org/obo/b.owl>`
+
+OBO format:
+`property_value: isDefinedBy http://purl.obolibrary.org/obo/b.owl`
+
 ## Examples
 
-- _Embedded or 'in-situ' documentation_:
+_Embedded or 'in-situ' documentation_:
   Namely any specific metadata available from the ontology artefact itself providing information about the resource in its entirety or parts of it.
   global ontology description (about the ontology as a whole):
 - creator(s)
@@ -28,13 +40,13 @@ Central to the issue of ontology documentation is ensuring transparency and trac
 - license
 - version
 
-- _local ontology documentation (about each term):_
+_local ontology documentation (about each term):_
   documentation for individual representational unit annotation
 - justify the different elements of class metadata
 - justify class axiomatization
   documentation about the textual definition: is it manually created or generated with software assistance by relying on patterns and class axioms.
 
-- _User documentation:_
+_User documentation:_
   A documentation detailing the ontology's raison d'etre, its coverage, the use cases and query cases (including translation into SPARQL queries) it is intended to support
   documentation about how to access the resource
   documentation about how to produce semantic web document compatible with the representation intended by the developers (OWL examples, OWL coding patterns)
@@ -43,7 +55,7 @@ Central to the issue of ontology documentation is ensuring transparency and trac
 - availability of presentations (e.g. on slideshare)
 - availability of web seminars (e.g. on a youtube channel)
 
-- _Developer documentation:_
+_Developer documentation:_
 
 - documentation about collaborating and submitting issues by creating a [CONTRIBUTING.md file](http://mozillascience.github.io/working-open-workshop/contributing/) as described [here](http://obofoundry.org/principles/fp-020-responsiveness.html#implementation).
 - documentation about authors contributions
