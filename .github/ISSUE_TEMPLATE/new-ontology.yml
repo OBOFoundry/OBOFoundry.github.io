@@ -264,6 +264,8 @@ body:
           required: false
         - label: My ontology has a specific release file with a version IRI and a `dc:license` annotation, serialised in RDF/XML.
           required: false
+        - label: My identifiers (classes and properties IRIs) are formatted according to the [OBO Foundry Identifier Policy](http://obofoundry.org/id-policy)
+          required: false
         - label: I understand that term definitions, while not mandatory, are key to understanding the intentions of a term especially when the ontology is used in curation. I made sure that a reasonable majority of terms in my ontology have definitions, using the [IAO:0000115](https://ontobee.org/ontology/IAO?iri=http://purl.obolibrary.org/obo/IAO_0000115) property.
           required: false
         - label: For every term in my ontology, I checked whether another OBO Foundry ontology has one with the same meaning. If so, I re-used that term directly (not by cross-reference, by directly using the IRI).
