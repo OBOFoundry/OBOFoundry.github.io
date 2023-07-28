@@ -3,13 +3,13 @@ layout: ontology_detail
 id: hancestro
 title: Human Ancestry Ontology
 contact:
-  email: danielle.welter@uni.lu
+  email: dwelter.ontologist@gmail.com
   github: daniwelter
   label: Danielle Welter
   orcid: 0000-0003-1058-2668
 description: The Human Ancestry Ontology (HANCESTRO) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide association studies.
 domain: organisms
-homepage: https://github.com/EBISPOT/ancestro
+homepage: https://ebispot.github.io/hancestro/
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
@@ -17,17 +17,17 @@ preferredPrefix: HANCESTRO
 products:
 - id: hancestro.owl
   title: HANCESTRO
-  description: The full version of HANCESTRO in OWL format
-- id: hancestro_bfo.owl
-  title: HANCESTRO BFO
-  description: Version of HANCESTRO with BFO upper hierarchy for easier integration with other ontologies
+  description: The full version of HANCESTRO in OWL format, with BFO upper hierarchy for easier integration with other ontologies
+- id: hancestro_base.owl
+  title: HANCESTRO Base
+  description: Base version of HANCESTRO
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/29448949
   title: A standardized framework for representation of ancestry data in genomics studies, with application to the NHGRI-EBI GWAS Catalog
-repository: https://github.com/EBISPOT/ancestro
+repository: https://github.com/EBISPOT/hancestro
 tags:
 - ancestry
-tracker: https://github.com/EBISPOT/ancestro/issues
+tracker: https://github.com/EBISPOT/hancestro/issues
 usages:
 - description: The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databases, and for external projects such as the NHGRI GWAS catalogue. It combines parts of several biological ontologies, such as anatomy, disease and chemical compounds.
   examples:
@@ -51,18 +51,18 @@ activity_status: active
 
 The Human Ancestry Ontology (HANCESTRO) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide association studies.
 
-* Home: [https://github.com/EBISPOT/ancestro](https://github.com/EBISPOT/ancestro)  
+* Home: [https://github.com/EBISPOT/hancestro](https://github.com/EBISPOT/hancestro)  
 
 # Download
 
 Use the following URI to download this ontology
 
 * [http://purl.obolibrary.org/obo/hancestro.owl](http://purl.obolibrary.org/obo/hancestro.owl)
-* This should point to: [https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro_inferred.owl](https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro_inferred.owl)
+* This should point to: [https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro.owl](https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro.owl)
 
-A non-reasoned version of the ontology is available at [https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro.owl](https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro.owl)
+A non-reasoned base version of the ontology is available at [https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro-base.owl](https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro-base.owl)
 
-A version of HANCESTRO with BFO upper classes is available at [https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro_bfo.owl](https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro_bfo.owl)
+A version of HANCESTRO with BFO upper classes is also available at [https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro-full.owl](https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro-full.owl)
 
 
 # Browsing
