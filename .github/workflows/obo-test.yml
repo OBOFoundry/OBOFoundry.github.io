@@ -23,6 +23,11 @@ jobs:
       - name: Run linter
         run: |
           tox -e lint
+      - name: Commit linter changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'Apply linter changes'
+          add: '.'
       - name: Run tests
         run: |
           make test
