@@ -18,7 +18,7 @@ products:
 - id: hancestro.owl
   title: HANCESTRO
   description: The full version of HANCESTRO in OWL format, with BFO upper hierarchy for easier integration with other ontologies
-- id: hancestro_base.owl
+- id: hancestro-base.owl
   title: HANCESTRO Base
   description: Base version of HANCESTRO
 publications:
