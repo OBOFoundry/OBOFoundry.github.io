@@ -2909,7 +2909,7 @@ ontologies:
     user: https://www.rhea-db.org
 - activity_status: active
   contact:
-    email: danielle.welter@uni.lu
+    email: dwelter.ontologist@gmail.com
     github: daniwelter
     label: Danielle Welter
     orcid: 0000-0003-1058-2668
@@ -2917,7 +2917,7 @@ ontologies:
     of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide
     association studies.
   domain: organisms
-  homepage: https://github.com/EBISPOT/ancestro
+  homepage: https://ebispot.github.io/hancestro/
   id: hancestro
   layout: ontology_detail
   license:
@@ -2927,24 +2927,24 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/hancestro.owl
   preferredPrefix: HANCESTRO
   products:
-  - description: The full version of HANCESTRO in OWL format
+  - description: The full version of HANCESTRO in OWL format, with BFO upper hierarchy
+      for easier integration with other ontologies
     id: hancestro.owl
     ontology_purl: http://purl.obolibrary.org/obo/hancestro.owl
     title: HANCESTRO
-  - description: Version of HANCESTRO with BFO upper hierarchy for easier integration
-      with other ontologies
-    id: hancestro_bfo.owl
-    ontology_purl: http://purl.obolibrary.org/obo/hancestro_bfo.owl
-    title: HANCESTRO BFO
+  - description: Base version of HANCESTRO
+    id: hancestro-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/hancestro-base.owl
+    title: HANCESTRO Base
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/29448949
     title: A standardized framework for representation of ancestry data in genomics
       studies, with application to the NHGRI-EBI GWAS Catalog
-  repository: https://github.com/EBISPOT/ancestro
+  repository: https://github.com/EBISPOT/hancestro
   tags:
   - ancestry
   title: Human Ancestry Ontology
-  tracker: https://github.com/EBISPOT/ancestro/issues
+  tracker: https://github.com/EBISPOT/hancestro/issues
   usages:
   - description: The Experimental Factor Ontology (EFO) provides a systematic description
       of many experimental variables available in EBI databases, and for external
