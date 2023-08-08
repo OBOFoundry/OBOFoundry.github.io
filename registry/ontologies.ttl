@@ -2680,28 +2680,28 @@ _:b7    <http://www.w3.org/2000/01/rdf-schema#label>  "Suzi Aleksander" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/29448949> ;
         <http://purl.org/dc/terms/1.1/theme>  "organisms" ;
-        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/EBISPOT/ancestro/issues" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/EBISPOT/hancestro/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hancestro.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b145 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hancestro.owl> ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hancestro_bfo.owl> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/EBISPOT/ancestro> .
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/hancestro-base.owl> ;
+        <http://xmlns.com/foaf/0.1/homepage>  <https://ebispot.github.io/hancestro/> .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/29448949>
         <http://purl.org/dc/elements/1.1/title>  "A standardized framework for representation of ancestry data in genomics studies, with application to the NHGRI-EBI GWAS Catalog" .
 
 _:b145  <http://www.w3.org/2000/01/rdf-schema#label>  "Danielle Welter" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "danielle.welter@uni.lu" .
+        <http://xmlns.com/foaf/0.1/mbox>  "dwelter.ontologist@gmail.com" .
 
 <http://purl.obolibrary.org/obo/hancestro.owl>
-        <http://purl.org/dc/elements/1.1/description>  "The full version of HANCESTRO in OWL format" ;
+        <http://purl.org/dc/elements/1.1/description>  "The full version of HANCESTRO in OWL format, with BFO upper hierarchy for easier integration with other ontologies" ;
         <http://purl.org/dc/elements/1.1/title>  "HANCESTRO" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hancestro.owl" .
 
-<http://purl.obolibrary.org/obo/hancestro_bfo.owl>
-        <http://purl.org/dc/elements/1.1/description>  "Version of HANCESTRO with BFO upper hierarchy for easier integration with other ontologies" ;
-        <http://purl.org/dc/elements/1.1/title>  "HANCESTRO BFO" ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hancestro_bfo.owl" .
+<http://purl.obolibrary.org/obo/hancestro-base.owl>
+        <http://purl.org/dc/elements/1.1/description>  "Base version of HANCESTRO" ;
+        <http://purl.org/dc/elements/1.1/title>  "HANCESTRO Base" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/hancestro-base.owl" .
 
 <http://purl.obolibrary.org/obo/hao>
         <http://identifiers.org/preferredPrefix>  "HAO" ;
