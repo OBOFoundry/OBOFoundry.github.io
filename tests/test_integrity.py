@@ -333,7 +333,7 @@ class TestModernIntegrity(unittest.TestCase):
                 self.assertEqual(
                     spdx,
                     OBO_TO_SPDX[obo_license],
-                    msg="OBO Foundry license annotation does not match GitHub license",
+                    msg="FORCING FAILURE",
                 )
 
     def test_nor_dashboard(self):
