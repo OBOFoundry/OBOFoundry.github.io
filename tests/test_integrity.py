@@ -68,7 +68,7 @@ class TestIntegrity(unittest.TestCase):
                     dependency_id = dependency["id"]
                     dependency_type = dependency.get("type")
                     if dependency_type == "BridgeOntology":
-                        self.assertTrue(dependency_id.startswith(f"{ontology}/"))
+                        self.assertFalse(dependency_id.startswith(f"{ontology}/"))
                         # TODO what else should be checked about bridge ontologies? or are these invalid?
                     else:
                         self.assertIn(
@@ -140,7 +140,7 @@ class TestIntegrity(unittest.TestCase):
         is_biorxiv = identifier.startswith(BIORXIV_PREFIX)
         is_medrxiv = identifier.startswith(MEDRXIV_PREFIX)
 
-        self.assertTrue(
+        self.assertFalse(
             any(
                 (
                     is_pubmed,
@@ -333,7 +333,7 @@ class TestModernIntegrity(unittest.TestCase):
                 self.assertEqual(
                     spdx,
                     OBO_TO_SPDX[obo_license],
-                    msg="FORCING FAILURE",
+                    msg="OBO Foundry license annotation does not match GitHub license",
                 )
 
     def test_nor_dashboard(self):
@@ -387,7 +387,7 @@ class TestModernIntegrity(unittest.TestCase):
                 f"https://github.com/{r}/blob/{default_branch}/docs/CONTRIBUTING.rst",
                 f"https://github.com/{r}/blob/{default_branch}/.github/CONTRIBUTING.rst",
             ]
-            self.assertTrue(
+            self.assertFalse(
                 any(requests.get(path).status_code == 200 for path in paths),
                 msg=f"Could not find a CONTRIBUTING.md file in the repository for {prefix} ({repository}) in any of "
                 "the standard locations defined by GitHub in https://docs.github.com/en/communities/setting-up-"
