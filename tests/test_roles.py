@@ -32,9 +32,9 @@ class Role(BaseModel):
     name: str
     description: str
     open: Optional[bool] = None
-    commitment: Optional[str] = None # can later be required
-    requirements: Optional[List[str]] = None # can later be required
-    responsibilities: Optional[List[str]] = None # can later be required
+    commitment: Optional[str] = None  # can later be required
+    requirements: Optional[List[str]] = None  # can later be required
+    responsibilities: Optional[List[str]] = None  # can later be required
     people: List[Person]
 
 

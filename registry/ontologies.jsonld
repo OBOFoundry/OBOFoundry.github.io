@@ -4116,14 +4116,14 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "danielle.welter@uni.lu",
+                "email": "dwelter.ontologist@gmail.com",
                 "github": "daniwelter",
                 "label": "Danielle Welter",
                 "orcid": "0000-0003-1058-2668"
             },
             "description": "The Human Ancestry Ontology (HANCESTRO) provides a systematic description of the ancestry concepts used in the NHGRI-EBI Catalog of published genome-wide association studies.",
             "domain": "organisms",
-            "homepage": "https://github.com/EBISPOT/ancestro",
+            "homepage": "https://ebispot.github.io/hancestro/",
             "id": "hancestro",
             "layout": "ontology_detail",
             "license": {
@@ -4135,16 +4135,16 @@
             "preferredPrefix": "HANCESTRO",
             "products": [
                 {
-                    "description": "The full version of HANCESTRO in OWL format",
+                    "description": "The full version of HANCESTRO in OWL format, with BFO upper hierarchy for easier integration with other ontologies",
                     "id": "hancestro.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/hancestro.owl",
                     "title": "HANCESTRO"
                 },
                 {
-                    "description": "Version of HANCESTRO with BFO upper hierarchy for easier integration with other ontologies",
-                    "id": "hancestro_bfo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/hancestro_bfo.owl",
-                    "title": "HANCESTRO BFO"
+                    "description": "Base version of HANCESTRO",
+                    "id": "hancestro-base.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/hancestro-base.owl",
+                    "title": "HANCESTRO Base"
                 }
             ],
             "publications": [
@@ -4153,12 +4153,12 @@
                     "title": "A standardized framework for representation of ancestry data in genomics studies, with application to the NHGRI-EBI GWAS Catalog"
                 }
             ],
-            "repository": "https://github.com/EBISPOT/ancestro",
+            "repository": "https://github.com/EBISPOT/hancestro",
             "tags": [
                 "ancestry"
             ],
             "title": "Human Ancestry Ontology",
-            "tracker": "https://github.com/EBISPOT/ancestro/issues",
+            "tracker": "https://github.com/EBISPOT/hancestro/issues",
             "usages": [
                 {
                     "description": "The Experimental Factor Ontology (EFO) provides a systematic description of many experimental variables available in EBI databases, and for external projects such as the NHGRI GWAS catalogue. It combines parts of several biological ontologies, such as anatomy, disease and chemical compounds.",
@@ -6843,45 +6843,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.obo"
-            },
-            "contact": {
-                "email": "frederic.bastian@unil.ch",
-                "github": "fbastian",
-                "label": "Frédéric Bastian",
-                "orcid": "0000-0002-9415-5104"
-            },
-            "description": "Life cycle stages for Medaka",
-            "domain": "anatomy and development",
-            "homepage": "https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv",
-            "id": "olatdv",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 3.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/olatdv.owl",
-            "page": "https://github.com/obophenotype/developmental-stage-ontologies",
-            "preferredPrefix": "OlatDv",
-            "products": [
-                {
-                    "id": "olatdv.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/olatdv.obo"
-                },
-                {
-                    "id": "olatdv.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/olatdv.owl"
-                }
-            ],
-            "repository": "https://github.com/obophenotype/developmental-stage-ontologies",
-            "title": "Medaka Developmental Stages",
-            "tracker": "https://github.com/obophenotype/developmental-stage-ontologies/issues"
-        },
-        {
-            "activity_status": "active",
             "contact": {
                 "email": "huang@southalabama.edu",
                 "github": "Huang-OMIT",
@@ -7743,45 +7704,6 @@
             ],
             "title": "The Prescription of Drugs Ontology",
             "tracker": "https://github.com/OpenLHS/PDRO/issues"
-        },
-        {
-            "activity_status": "active",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/pdumdv/pdumdv.obo"
-            },
-            "contact": {
-                "email": "frederic.bastian@unil.ch",
-                "github": "fbastian",
-                "label": "Frédéric Bastian",
-                "orcid": "0000-0002-9415-5104"
-            },
-            "description": "Life cycle stages for Platynereis dumerilii",
-            "domain": "anatomy and development",
-            "homepage": "https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv",
-            "id": "pdumdv",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 3.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/pdumdv.owl",
-            "page": "https://github.com/obophenotype/developmental-stage-ontologies",
-            "preferredPrefix": "PdumDv",
-            "products": [
-                {
-                    "id": "pdumdv.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/pdumdv.owl"
-                },
-                {
-                    "id": "pdumdv.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/pdumdv.obo"
-                }
-            ],
-            "repository": "https://github.com/obophenotype/developmental-stage-ontologies",
-            "title": "Platynereis Developmental Stages",
-            "tracker": "https://github.com/obophenotype/developmental-stage-ontologies/issues"
         },
         {
             "activity_status": "active",
@@ -11678,6 +11600,84 @@
             "repository": "https://github.com/carrineblank/MicrO",
             "title": "Ontology of Prokaryotic Phenotypic and Metabolic Characters",
             "tracker": "https://github.com/carrineblank/MicrO/issues"
+        },
+        {
+            "activity_status": "inactive",
+            "build": {
+                "method": "obo2owl",
+                "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.obo"
+            },
+            "contact": {
+                "email": "frederic.bastian@unil.ch",
+                "github": "fbastian",
+                "label": "Frédéric Bastian",
+                "orcid": "0000-0002-9415-5104"
+            },
+            "description": "Life cycle stages for Medaka",
+            "domain": "anatomy and development",
+            "homepage": "https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv",
+            "id": "olatdv",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 3.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/olatdv.owl",
+            "page": "https://github.com/obophenotype/developmental-stage-ontologies",
+            "preferredPrefix": "OlatDv",
+            "products": [
+                {
+                    "id": "olatdv.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/olatdv.obo"
+                },
+                {
+                    "id": "olatdv.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/olatdv.owl"
+                }
+            ],
+            "repository": "https://github.com/obophenotype/developmental-stage-ontologies",
+            "title": "Medaka Developmental Stages",
+            "tracker": "https://github.com/obophenotype/developmental-stage-ontologies/issues"
+        },
+        {
+            "activity_status": "inactive",
+            "build": {
+                "method": "obo2owl",
+                "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/pdumdv/pdumdv.obo"
+            },
+            "contact": {
+                "email": "frederic.bastian@unil.ch",
+                "github": "fbastian",
+                "label": "Frédéric Bastian",
+                "orcid": "0000-0002-9415-5104"
+            },
+            "description": "Life cycle stages for Platynereis dumerilii",
+            "domain": "anatomy and development",
+            "homepage": "https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv",
+            "id": "pdumdv",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 3.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/pdumdv.owl",
+            "page": "https://github.com/obophenotype/developmental-stage-ontologies",
+            "preferredPrefix": "PdumDv",
+            "products": [
+                {
+                    "id": "pdumdv.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pdumdv.owl"
+                },
+                {
+                    "id": "pdumdv.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pdumdv.obo"
+                }
+            ],
+            "repository": "https://github.com/obophenotype/developmental-stage-ontologies",
+            "title": "Platynereis Developmental Stages",
+            "tracker": "https://github.com/obophenotype/developmental-stage-ontologies/issues"
         },
         {
             "activity_status": "inactive",
