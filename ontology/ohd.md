@@ -19,8 +19,8 @@ license:
 preferredPrefix: OHD
 products:
 - id: ohd.owl
-- id: ohd/dev/ohd.owl
-  title: OHD dev
+- id: ohd-base.owl
+- id: ohd-non-classified.owl
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/32819435
   title: Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology
