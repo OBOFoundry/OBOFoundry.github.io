@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: taxrank
 title: Taxonomic rank vocabulary
-build:
-  checkout: git clone https://github.com/phenoscape/taxrank.git
-  path: .
-  system: git
 contact:
   email: balhoff@renci.org
   github: balhoff
@@ -14,9 +10,6 @@ contact:
 description: A vocabulary of taxonomic ranks (species, family, phylum, etc)
 domain: organisms
 homepage: https://github.com/phenoscape/taxrank
-jobs:
-- id: https://travis-ci.org/phenoscape/taxrank
-  type: travis-ci
 license:
   label: CC0 1.0
   url: http://creativecommons.org/publicdomain/zero/1.0/

@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: agro
 title: Agronomy Ontology
-build:
-  checkout: git clone  https://github.com/AgriculturalSemantics/agro.git
-  path: .
-  system: git
 contact:
   email: m.a.laporte@cgiar.org
   github: marieALaporte
@@ -29,9 +25,6 @@ dependencies:
 description: Ontology of agronomic practices, agronomic techniques, and agronomic variables used in agronomic experiments
 domain: agriculture
 homepage: https://github.com/AgriculturalSemantics/agro
-jobs:
-- id: https://travis-ci.org/AgriculturalSemantics/agro
-  type: travis-ci
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/

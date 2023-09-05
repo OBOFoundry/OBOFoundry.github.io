@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: zp
 title: Zebrafish Phenotype Ontology
-build:
-  checkout: git clone https://github.com/obophenotype/zebrafish-phenotype-ontology.git
-  path: .
-  system: git
 contact:
   email: ybradford@zfin.org
   github: ybradford
@@ -22,9 +18,6 @@ dependencies:
 description: The Zebrafish Phenotype Ontology formally defines all phenotypes of the Zebrafish model organism.
 domain: phenotype
 homepage: https://github.com/obophenotype/zebrafish-phenotype-ontology
-jobs:
-- id: https://travis-ci.org/obophenotype/zebrafish-phenotype-ontology
-  type: travis-ci
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/
