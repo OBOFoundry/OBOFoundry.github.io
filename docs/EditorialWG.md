@@ -15,9 +15,9 @@ The OBO Foundry Editorial WG is responsible for:
 
 ## Guidelines and policies
 
-#### Ontology Review
+#### Ontologies Review
 
-- [Ontology review workflow](/docs/OntologiesReviewWorkflow.html)
+- [Ontologies review workflow](/docs/OntologiesReviewWorkflow.html)
 
 #### Principles Review
 
