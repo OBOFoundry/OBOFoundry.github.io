@@ -1,7 +1,8 @@
 ---
 layout: doc
 title: Principle Review Process
---
+---
+
 This page describes the process for reviewing, updating, and creating [OBO Foundry Principles](http://obofoundry.github.io/principles/fp-000-summary.html) by the OBO Foundry Editorial Working Group (EWG).
 
 For the following, steps 1-5 are internal to the EWG and steps 6-7 are internal to the OBO Operations Committee. 
