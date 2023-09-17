@@ -3,7 +3,7 @@ layout: ontology_detail
 id: apollo_sv
 title: Apollo Structured Vocabulary
 contact:
-  email: hoganwr@ufl.edu
+  email: hoganwr@gmail.com
   github: hoganwr
   label: William Hogan
   orcid: 0000-0002-9881-1017
