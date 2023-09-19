@@ -143,52 +143,11 @@ It is essential to use the same license to ensure consistency and clarity within
 
 Starting from this issue, we spotlight essential software tools that form the foundation of the Open Biomedical Ontologies (OBO) Foundry community. These tools play a central role in facilitating collaboration, upholding data integrity, and editing and validating ontologies. The table below lists some of the tools that are frequently used by (and, in some cases, developed by) members of the OBO Foundry community.
 
-<table>
-  <tr>
-   <td><strong>Software Package</strong>
-   </td>
-   <td><strong>Links</strong>
-   </td>
-   <td><strong>Language(s)</strong>
-   </td>
-   <td><strong>Core Features</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>curies / curies4j
-   </td>
-   <td><a href="https://github.com/cthoyt/curies/">cthoyt/curies</a>, <a href="https://github.com/cthoyt/curies4j/">cthoyt/curies4j</a>
-   </td>
-   <td>Python, Java
-   </td>
-   <td>The core library for conversion between URIs and Compact URIs (CURIEs). An essential addon for all Semantic Software Engineers.
-   </td>
-  </tr>
-  <tr>
-   <td>ROBOT
-   </td>
-   <td><a href="https://github.com/ontodev/robot">https://github.com/ontodev/robot</a>
-<p>
-http://robot.obolibrary.org/
-   </td>
-   <td>Java, CLI
-   </td>
-   <td>The Swiss Army Knife of Ontology Engineering. Transform your ontologies, manage them with templates and check them for errors! A must have for all ontology engineers!
-   </td>
-  </tr>
-  <tr>
-   <td>Ontology Access Kit (OAK)
-   </td>
-   <td><a href="https://incatools.github.io/ontology-access-kit">https://incatools.github.io/ontology-access-kit</a>
-<p>
-
-   </td>
-   <td>Python
-   </td>
-   <td>User-facing Python library and CLI tool suite for accessing ontologies, including visualization, mapping and annotation. Indispensable for data scientists that work with ontologies.
-   </td>
-  </tr>
-</table>
+| Software Package          | Links                                           | Language(s)  | Core Features                                                                                                                                                                         |
+|---------------------------|-------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| curies / curies4j         | cthoyt/curies, cthoyt/curies4j                  | Python, Java | The core library for conversion between URIs and Compact URIs (CURIEs). An essential addon for all Semantic Software Engineers.                                                       |
+| ROBOT                     | https://github.com/ontodev/robot                | Java, CLI    | The Swiss Army Knife of Ontology Engineering. Transform your ontologies, manage them with templates and check them for errors! A must have for all ontology engineers!                |
+| Ontology Access Kit (OAK) | https://incatools.github.io/ontology-access-kit | Python       | User-facing Python library and CLI tool suite for accessing ontologies, including visualization, mapping and annotation. Indispensable for data scientists that work with ontologies. |
 
 ---
 
