@@ -22,7 +22,7 @@ Best regards, [The OBO Foundry Operations Committee.](https://obofoundry.org/doc
 
 ## In Memoriam: Remembering Michael Ashburner
 
-<img src="https://obofoundry.org/images/ashburner.png" style="max-height: 250px" alt="Michael Ashburner" />
+<img src="https://obofoundry.org/images/ashburner.jpg" style="height: 250px" alt="Michael Ashburner" />
 
 We bid farewell to Michael Ashburner, a distinguished biologist and an unwavering advocate for open science. Ashburner, a pioneering figure in genetics, bioinformatics, and the OBO Foundry, passed away on July 10, 2023, at 81. His visionary leadership at EMBL-EBI left an indelible mark on bioinformatics. He sequenced the Drosophila genome, co-founding FlyBase and shaping ontologies like GO and ChEBI. Advocating for open science, he championed genome accessibility and open publishing. Honored with awards such as the Gregor Mendel Medal, his legacy inspires future scientists. Our heartfelt condolences go out to his family, friends, and colleagues.
 
@@ -95,13 +95,13 @@ We are delighted to feature two OBO Foundry members in this month's spotlight! L
 
 **Darren Natale**
 
-<img src="https://obofoundry.org/images/ofoc/nataled.png" style="max-height: 250px" alt="Darren Natale" />
+<img src="https://obofoundry.org/images/ofoc/nataled.png" style="height: 250px" alt="Darren Natale" />
 
 A member of the faculty at Georgetown University Medical Center (Washington, DC, USA) and the Protein Information Resource (headed by Dr. Cathy Wu) since 2002, Darren Natale obtained his PhD in Biology at the University of Buffalo (NY, USA) in 1993. A molecular biologist by training (specializing in the field of DNA replication), Darren began his foray into bioinformatics when he joined the then-recently-established COG protein classification project at NCBI as a curator in 1999. In 2002 he brought his classification expertise to GUMC/PIR for the then-new UniProt project. In 2006 he became interested in working with ontologies, and shortly thereafter joined the OBO Foundry. He is the manager of the Protein Ontology project, which provides an ontological representation of protein-related entities (principally, post-translationally modified proteoforms). Currently, his collaborations include the aforementioned UniProt and PRO, and the Pathways2GO project. He also leads a collaborative project designed to make IEDB epitope data widely available in UniProtKB, PRO, and iPTMnet. Along with participating in the development of several other ontologies, his principal contribution to the OBO Foundry is as an inaugural member of the OBO Foundry Operations Committee, and as long-time chair of the Editorial Working Group. His favorite aspects of working with the OBO Foundry community are the collaborative way challenges to ontological modeling are met, and the often spirited but always informative discussions.
 
 **Chris Stoeckert**
 
-<img src="https://obofoundry.org/images/cstoeckert.png" style="max-height: 250px" alt="Chris Stoeckert" />
+<img src="https://obofoundry.org/images/cstoeckert.png" style="height: 250px" alt="Chris Stoeckert" />
 
 Before retiring at the end of 2022, Chris Stoeckert, Ph.D., was a Research Professor of Genetics at the Institute of Biomedical Informatics at the University of Pennsylvania; he is now an adjunct professor at Penn. Originally a biophysicist and then a molecular and cell biologist, he spent most of his career working on databases supporting the mining of complex datasets. These have included databases on gene expression, orthologous proteins, pancreatic development, Alzheimer’s Disease genomics, and multiple resources associated with the NIAID VEuPathDB Bioinformatic Research Center supporting research on eukaryotic pathogens (e.g., PlasmoDB) and vectors. The database work led to involvement in the development of data standards such as MIAME (Minimal Information About a Microarray Experiment), MAGE-TAB format standard for reporting microarray experiments, and the development of biomedical ontologies such as the MGED Ontology. Chris is a founder and developer of the Ontology for Biomedical Investigations (OBI), has led the development of the Ontology for Biobanking (OBIB), and contributed to a variety of ontologies in the OBO Foundry. Most recently, he applied ontologies for integration and harmonization of clinical data using semantic graphs in the TURBO (Transforming & Unifying Research with Biomedical Ontologies) project at Penn. He has served on the OBO Foundry Operations Committee and participated in the Editorial Working Group. Chris has enjoyed watching the OBO Foundry grow from its beginnings and is excited about its future with the influx of new members and technology.
 
