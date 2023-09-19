@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: newsletter
-title: "The OBO Foundry Newsletter: Advancing Bio-Ontologies for Enhanced Data Integration"
+title: "2nd OBO Foundry Newsletter: In Memoriam - Remembering Michael Ashburner"
 date: 2023-09-15
 author:
   - Leila Kiani
