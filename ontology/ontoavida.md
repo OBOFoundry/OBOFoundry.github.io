@@ -35,7 +35,7 @@ products:
     page: https://gitlab.com/fortunalab/ontoavida/-/raw/master/ontoavida.obo
 
 publications:
-  - id: https://doi.org/10.1038/s41597-023-02514-3 
+  - id: https://doi.org/10.1038/s41597-023-02514-3
     title: "Ontology for the Avida digital evolution platform"
 repository: https://gitlab.com/fortunalab/ontoavida
 tags:
