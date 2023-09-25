@@ -8,7 +8,7 @@ browsers:
   url: https://owl.fortunalab.org/ontoavida/
 contact:
   email: fortuna@ebd.csic.es
-  github: fortunalab
+  github: miguelfortuna
   label: Miguel A. Fortuna
   orcid: 0000-0002-8374-1941
 dependencies:
