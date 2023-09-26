@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: duo
 title: Data Use Ontology
-build:
-  checkout: git clone https://github.com/EBISPOT/duo.git
-  path: .
-  system: git
 contact:
   email: mcourtot@gmail.com
   github: mcourtot
@@ -17,9 +13,6 @@ dependencies:
 description: DUO is an ontology which represent data use conditions.
 domain: information
 homepage: https://github.com/EBISPOT/DUO
-jobs:
-- id: https://travis-ci.org/EBISPOT/DUO
-  type: travis-ci
 license:
   label: CC BY 4.0
   url: http://creativecommons.org/licenses/by/4.0/

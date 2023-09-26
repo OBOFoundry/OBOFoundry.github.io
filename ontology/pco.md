@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: pco
 title: Population and Community Ontology
-build:
-  checkout: git clone https://github.com/PopulationAndCommunityOntology/pco.git
-  path: .
-  system: git
 contact:
   email: rlwalls2008@gmail.com
   github: ramonawalls
@@ -23,9 +19,6 @@ dependencies:
 description: An ontology about groups of interacting organisms such as populations and communities
 domain: environment
 homepage: https://github.com/PopulationAndCommunityOntology/pco
-jobs:
-- id: https://travis-ci.org/PopulationAndCommunityOntology/pco
-  type: travis-ci
 license:
   label: CC0 1.0
   url: http://creativecommons.org/publicdomain/zero/1.0/

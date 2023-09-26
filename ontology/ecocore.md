@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: ecocore
 title: An ontology of core ecological entities
-build:
-  checkout: git clone https://github.com/EcologicalSemantics/ecocore.git
-  path: .
-  system: git
 contact:
   email: p.buttigieg@gmail.com
   github: pbuttigieg
@@ -25,9 +21,6 @@ dependencies:
 description: Ecocore is a community ontology for the concise and controlled description of ecological traits of organisms.
 domain: environment
 homepage: https://github.com/EcologicalSemantics/ecocore
-jobs:
-- id: https://travis-ci.org/EcologicalSemantics/ecocore
-  type: travis-ci
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/

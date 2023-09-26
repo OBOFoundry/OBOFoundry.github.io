@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: plana
 title: planaria-ontology
-build:
-  checkout: git clone https://github.com/obophenotype/planaria-ontology.git
-  path: .
-  system: git
 contact:
   email: smr@stowers.org
   github: srobb1
@@ -17,9 +13,6 @@ dependencies:
 description: PLANA, the planarian anatomy ontology, encompasses the anatomy and life cycle stages for both __Schmidtea mediterranea__ biotypes.
 domain: anatomy and development
 homepage: https://github.com/obophenotype/planaria-ontology
-jobs:
-- id: https://travis-ci.org/obophenotype/planaria-ontology
-  type: travis-ci
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/
