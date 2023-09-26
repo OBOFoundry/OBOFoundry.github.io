@@ -3,28 +3,25 @@ layout: doc
 title: Editorial Working Group
 ---
 
-The primary task of the Editorial WG is to facilitate the review of candidate OBO Foundry ontologies. This task includes developing the principles against which ontologies are reviewed, developing the review process itself, conducting the reviews, and setting policies governing the process.
+The primary tasks of the Editorial WG are to develop and maintain OBO Foundry principles and to facilitate the review of candidate OBO Foundry ontologies. This task includes developing the principles against which ontologies are reviewed, developing the review process itself, conducting the reviews, and setting policies governing the process.
 
 ## Scope
 
-The OBO Foundry Editorial WG will:
+The OBO Foundry Editorial WG is responsible for:
 
-- create guidelines for ontology review process (how we do reviews, operationally)
-- create policies for ontology review criteria (what aspects of an ontology and which ontologies we should review)
-- manage the ontology review process
+- Principles: drafting text, and creating the workflow and guidelines for the principles development process
+- Ontologies: reviewing, and creating the workflow and guidelines for the ontology review process
+- Policies: crafting the policies for the above
 
-Current activities are focused on creating guidelines for reviews. Once those guidelines are in place, the working group will shift its focus to carrying out the review process, with an aim of reducing the backlog of ontologies awaiting review.
+## Guidelines and policies
 
-## Draft guidelines and policies
+#### Ontologies Review
 
-### Ontology Review
+- [Ontologies review workflow](/docs/OntologiesReviewWorkflow.html)
 
-- [Ontology review process guidelines](/docs/ReviewProcessGuidelines.html)
-- [Ontology review criteria policies](/docs/ReviewCriteriaPolicies.html)
+#### Principles Review
 
-### Principles Review
-
-[Principles review workflow](/docs/PrinciplesReviewWorkflow.html)
+- [Principles review workflow](/docs/PrinciplesReviewWorkflow.html)
 
 ## Contact Us
 
