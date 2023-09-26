@@ -23,8 +23,8 @@ Recommendations and Requirements
 Ontology owners SHOULD, in accordance with this principle, pre-announce changes to a primary group of users who actively monitor the ontology and its changes, for example, via a mailing list (ontology-specific or more general, as deemed suitable), a social media group (relevant to the ontology), or via announcements on a home page or elsewhere. The lead time for announcements can be determined according to release lifecycles of major ontology applications and is expected to vary by domain.
 
 The kinds of changes that might warrant a pre-announcement include (but are not limited to):
-- <i><b>Planned obsoletions.</i></b> Terms that will be made obsolete. Such announcements can provide users the opportunity to intervene if necessary.
-- <i><b>Major hierarchy rearrangements.</i></b> Moving branches from one point in the hierarchy to another, especially large branches affecting many terms or those close to the top of the hierarchy.
+- <i><b>Planned obsoletions.</b></i> Terms that will be made obsolete. Such announcements can provide users the opportunity to intervene if necessary.
+- <i><b>Major hierarchy rearrangements.</b></i> Moving branches from one point in the hierarchy to another, especially large branches affecting many terms or those close to the top of the hierarchy.
 
 Term additions and small hierarchy changes are not expected to need pre-announcement but doing so is not prohibited. 
 
