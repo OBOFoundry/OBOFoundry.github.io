@@ -6,11 +6,6 @@ browsers:
 - title: Planteome browser
   label: Planteome
   url: http://browser.planteome.org/amigo
-build:
-  checkout: git clone https://github.com/Planteome/plant-ontology.git
-  infallible: 1
-  method: vcs
-  system: git
 contact:
   email: jaiswalp@science.oregonstate.edu
   github: jaiswalp
@@ -21,9 +16,6 @@ description: The Plant Ontology is a structured vocabulary and database resource
 domain: anatomy and development
 homepage: http://browser.planteome.org/amigo
 in_foundry_order: 1
-jobs:
-- id: https://travis-ci.org/Planteome/plant-ontology
-  type: travis-ci
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/

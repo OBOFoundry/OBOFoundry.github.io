@@ -2,11 +2,6 @@
 layout: ontology_detail
 id: ceph
 title: Cephalopod Ontology
-build:
-  checkout: git clone https://github.com/obophenotype/cephalopod-ontology.git
-  method: vcs
-  path: src/ontology
-  system: git
 contact:
   email: cjmungall@lbl.gov
   github: cmungall
@@ -15,9 +10,6 @@ contact:
 description: An anatomical and developmental ontology for cephalopods
 domain: anatomy and development
 homepage: https://github.com/obophenotype/cephalopod-ontology
-jobs:
-- id: https://travis-ci.org/obophenotype/cephalopod-ontology
-  type: travis-ci
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/

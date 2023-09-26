@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: ecto
 title: Environmental conditions, treatments and exposures ontology
-build:
-  checkout: git clone https://github.com/EnvironmentOntology/environmental-exposure-ontology.git
-  path: .
-  system: git
 contact:
   email: annethessen@gmail.com
   github: diatomsRcool
@@ -29,9 +25,6 @@ depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/mas
 description: ECTO describes exposures to experimental treatments of plants and model organisms (e.g. exposures to modification of diet, lighting levels, temperature); exposures of humans or any other organisms to stressors through a variety of routes, for purposes of public health, environmental monitoring etc, stimuli, natural and experimental, any kind of environmental condition or change in condition that can be experienced by an organism or population of organisms on earth. The scope is very general and can include for example plant treatment regimens, as well as human clinical exposures (although these may better be handled by a more specialized ontology).
 domain: environment
 homepage: https://github.com/EnvironmentOntology/environmental-exposure-ontology
-jobs:
-- id: https://travis-ci.org/EnvironmentOntology/environmental-exposure-ontology
-  type: travis-ci
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/

@@ -12,10 +12,6 @@ browsers:
 - title: Monarch Phenotype Page
   label: Monarch
   url: http://monarchinitiative.org/phenotype/MP:0000001
-build:
-  checkout: git clone https://github.com/mgijax/mammalian-phenotype-ontology.git
-  path: .
-  system: git
 contact:
   email: drsbello@gmail.com
   github: sbello
@@ -24,9 +20,6 @@ contact:
 description: Standard terms for annotating mammalian phenotypic data.
 domain: phenotype
 homepage: http://www.informatics.jax.org/searches/MP_form.shtml
-jobs:
-- id: http://build.berkeleybop.org/job/build-mp-edit
-  type: DryRunBuild
 license:
   label: CC BY 4.0
   url: http://creativecommons.org/licenses/by/4.0/

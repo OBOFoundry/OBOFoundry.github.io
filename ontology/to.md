@@ -6,12 +6,6 @@ browsers:
 - title: Planteome browser
   label: Planteome
   url: http://browser.planteome.org/amigo/term/TO:0000387#display-lineage-tab
-build:
-  checkout: git clone https://github.com/Planteome/plant-trait-ontology.git
-  infallible: 1
-  method: vcs
-  path: .
-  system: git
 contact:
   email: jaiswalp@science.oregonstate.edu
   github: jaiswalp
@@ -21,9 +15,6 @@ depicted_by: http://planteome.org/sites/default/files/garland_logo.PNG
 description: A controlled vocabulary to describe phenotypic traits in plants.
 domain: phenotype
 homepage: http://browser.planteome.org/amigo
-jobs:
-- id: https://travis-ci.org/Planteome/plant-trait-ontology
-  type: travis-ci
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/

@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: planp
 title: Planarian Phenotype Ontology
-build:
-  checkout: git clone https://github.com/obophenotype/planarian-phenotype-ontology.git
-  path: .
-  system: git
 contact:
   email: smr@stowers.org
   github: srobb1
@@ -19,9 +15,6 @@ dependencies:
 description: Planarian Phenotype Ontology is an ontology of phenotypes observed in the planarian Schmidtea mediterranea.
 domain: phenotype
 homepage: https://github.com/obophenotype/planarian-phenotype-ontology
-jobs:
-- id: https://travis-ci.org/obophenotype/planarian-phenotype-ontology
-  type: travis-ci
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/
