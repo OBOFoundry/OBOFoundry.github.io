@@ -38,11 +38,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone  https://github.com/AgriculturalSemantics/agro.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "m.a.laporte@cgiar.org",
                 "github": "marieALaporte",
@@ -97,12 +92,6 @@
             "domain": "agriculture",
             "homepage": "https://github.com/AgriculturalSemantics/agro",
             "id": "agro",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/AgriculturalSemantics/agro",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -300,7 +289,7 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "hoganwr@ufl.edu",
+                "email": "hoganwr@gmail.com",
                 "github": "hoganwr",
                 "label": "William Hogan",
                 "orcid": "0000-0002-9881-1017"
@@ -879,11 +868,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/chiro.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "vasilevs@ohsu.edu",
                 "github": "nicolevasilevsky",
@@ -917,12 +901,6 @@
             "domain": "chemistry and biochemistry",
             "homepage": "https://github.com/obophenotype/chiro",
             "id": "chiro",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/chiro",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -1063,13 +1041,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/cell-ontology.git",
-                "email_cc": "cl_edit@googlegroups.com",
-                "infallible": 1,
-                "method": "vcs",
-                "system": "git"
-            },
             "canonical": "cl.owl",
             "contact": {
                 "email": "addiehl@buffalo.edu",
@@ -1105,13 +1076,6 @@
             "domain": "anatomy and development",
             "homepage": "https://obophenotype.github.io/cell-ontology/",
             "id": "cl",
-            "integration_server": "http://build.berkeleybop.org/job/build-cl/",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/cell-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "label": "Cell Ontology",
             "layout": "ontology_detail",
             "license": {
@@ -1635,12 +1599,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/ctenophore-ontology.git",
-                "method": "vcs",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "cjmungall@lbl.gov",
                 "github": "cmungall",
@@ -1659,12 +1617,6 @@
             "domain": "anatomy and development",
             "homepage": "https://github.com/obophenotype/ctenophore-ontology",
             "id": "cteno",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/ctenophore-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -2185,11 +2137,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/EBISPOT/duo.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "mcourtot@gmail.com",
                 "github": "mcourtot",
@@ -2208,12 +2155,6 @@
             "domain": "information",
             "homepage": "https://github.com/EBISPOT/DUO",
             "id": "duo",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/EBISPOT/DUO",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -2284,12 +2225,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "notes": "switch to vcs",
-                "source_url": "https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.obo"
-            },
             "contact": {
                 "email": "mgiglio@som.umaryland.edu",
                 "github": "mgiglio99",
@@ -2307,12 +2242,6 @@
             ],
             "homepage": "https://www.evidenceontology.org",
             "id": "eco",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/evidenceontology/evidenceontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -2382,11 +2311,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/EcologicalSemantics/ecocore.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "p.buttigieg@gmail.com",
                 "github": "pbuttigieg",
@@ -2429,12 +2353,6 @@
             "domain": "environment",
             "homepage": "https://github.com/EcologicalSemantics/ecocore",
             "id": "ecocore",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/EcologicalSemantics/ecocore",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -2463,11 +2381,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/EnvironmentOntology/environmental-exposure-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "annethessen@gmail.com",
                 "github": "diatomsRcool",
@@ -2520,12 +2433,6 @@
             "domain": "environment",
             "homepage": "https://github.com/EnvironmentOntology/environmental-exposure-ontology",
             "id": "ecto",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/EnvironmentOntology/environmental-exposure-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -2640,14 +2547,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/EnvironmentOntology/envo.git",
-                "email_cc": "cjmungall@lbl.gov",
-                "infallible": 1,
-                "method": "vcs",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "pier.buttigieg@awi.de",
                 "github": "pbuttigieg",
@@ -2685,12 +2584,6 @@
             "domain": "environment",
             "homepage": "http://environmentontology.org/",
             "id": "envo",
-            "jobs": [
-                {
-                    "id": "https://github.com/EnvironmentOntology/envo/blob/master/.github/workflows/qc.yml",
-                    "type": "github-action"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -3477,11 +3370,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/futres/fovt.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "meghan.balk@gmail.com",
                 "github": "megbalk",
@@ -3518,12 +3406,6 @@
             "domain": "phenotype",
             "homepage": "https://github.com/futres/fovt",
             "id": "fovt",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/futres/fovt",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -4288,11 +4170,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/hsapdv/hsapdv.obo"
-            },
             "contact": {
                 "email": "frederic.bastian@unil.ch",
                 "github": "fbastian",
@@ -4903,11 +4780,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/microbial-conditions-ontology/microbial-conditions-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "citlalli.mejiaalmonte@gmail.com",
                 "github": "citmejia",
@@ -4962,12 +4834,6 @@
             "domain": "investigations",
             "homepage": "https://github.com/microbial-conditions-ontology/microbial-conditions-ontology",
             "id": "mco",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/microbial-conditions-ontology/microbial-conditions-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -5614,11 +5480,6 @@
                     "url": "http://monarchinitiative.org/phenotype/MP:0000001"
                 }
             ],
-            "build": {
-                "checkout": "git clone https://github.com/mgijax/mammalian-phenotype-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "drsbello@gmail.com",
                 "github": "sbello",
@@ -5629,12 +5490,6 @@
             "domain": "phenotype",
             "homepage": "http://www.informatics.jax.org/searches/MP_form.shtml",
             "id": "mp",
-            "jobs": [
-                {
-                    "id": "http://build.berkeleybop.org/job/build-mp-edit",
-                    "type": "DryRunBuild"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -5960,12 +5815,6 @@
                     "url": "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi"
                 }
             ],
-            "build": {
-                "infallible": 1,
-                "method": "archive",
-                "path": "archive",
-                "source_url": "http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip"
-            },
             "contact": {
                 "email": "frederic.bastian@unil.ch",
                 "github": "fbastian",
@@ -5976,12 +5825,6 @@
             "domain": "organisms",
             "homepage": "https://github.com/obophenotype/ncbitaxon",
             "id": "ncbitaxon",
-            "jobs": [
-                {
-                    "id": "http://build.berkeleybop.org/job/build-ncbitaxon/",
-                    "type": "ReleaseBuild"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -6288,12 +6131,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/bio-attribute-ontology.git",
-                "method": "vcs",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "cjmungall@lbl.gov",
                 "github": "cmungall",
@@ -6304,12 +6141,6 @@
             "domain": "phenotype",
             "homepage": "https://github.com/obophenotype/bio-attribute-ontology",
             "id": "oba",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/bio-attribute-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -7134,6 +6965,13 @@
         },
         {
             "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "Human-readable (HTML)",
+                    "title": "Ontoavida HTML Browser",
+                    "url": "https://owl.fortunalab.org/ontoavida/"
+                }
+            ],
             "contact": {
                 "email": "fortuna@ebd.csic.es",
                 "github": "miguelfortuna",
@@ -7171,12 +7009,24 @@
             "preferredPrefix": "ONTOAVIDA",
             "products": [
                 {
+                    "description": "The main ontology in OWL",
                     "id": "ontoavida.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ontoavida.owl"
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ontoavida.owl",
+                    "page": "https://gitlab.com/fortunalab/ontoavida/-/raw/master/ontoavida.owl",
+                    "title": "OWL"
                 },
                 {
+                    "description": "Equivalent to ontoavida.owl, in obo format",
                     "id": "ontoavida.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ontoavida.obo"
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ontoavida.obo",
+                    "page": "https://gitlab.com/fortunalab/ontoavida/-/raw/master/ontoavida.obo",
+                    "title": "OBO"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1038/s41597-023-02514-3",
+                    "title": "Ontology for the Avida digital evolution platform"
                 }
             ],
             "repository": "https://gitlab.com/fortunalab/ontoavida",
@@ -7185,7 +7035,19 @@
                 "artificial life"
             ],
             "title": "OntoAvida: ontology for Avida digital evolution platform",
-            "tracker": "https://gitlab.com/fortunalab/ontoavida/-/issues"
+            "tracker": "https://gitlab.com/fortunalab/ontoavida/-/issues",
+            "usages": [
+                {
+                    "description": "An R package—avidaR—uses OntoAvida to perform complex queries on an RDF database—avidaDB—containing the genomes, transcriptomes, and phenotypes of more than a million digital organisms",
+                    "examples": [
+                        {
+                            "description": "avidaR: an R library to perform complex queries on an ontology-based database of digital organisms",
+                            "url": "http://doi.org/10.7717/peerj-cs.1568"
+                        }
+                    ],
+                    "user": "https://cran.r-project.org/package=avidaR"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -7407,11 +7269,6 @@
                     "url": "https://bioportal.bioontology.org/ontologies/PATO"
                 }
             ],
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo"
-            },
             "contact": {
                 "email": "g.gkoutos@gmail.com",
                 "github": "gkoutos",
@@ -7423,12 +7280,6 @@
             "homepage": "https://github.com/pato-ontology/pato/",
             "id": "pato",
             "in_foundry_order": 1,
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/pato-ontology/pato",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -7606,11 +7457,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/PopulationAndCommunityOntology/pco.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "rlwalls2008@gmail.com",
                 "github": "ramonawalls",
@@ -7647,12 +7493,6 @@
             "domain": "environment",
             "homepage": "https://github.com/PopulationAndCommunityOntology/pco",
             "id": "pco",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/PopulationAndCommunityOntology/pco",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -7764,11 +7604,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/PHI-base/phipo.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "alayne.cuzick@rothamsted.ac.uk",
                 "github": "CuzickA",
@@ -7784,12 +7619,6 @@
             "domain": "phenotype",
             "homepage": "https://github.com/PHI-base/phipo",
             "id": "phipo",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/PHI-base/phipo",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -7820,11 +7649,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/planaria-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "smr@stowers.org",
                 "github": "srobb1",
@@ -7843,12 +7667,6 @@
             "domain": "anatomy and development",
             "homepage": "https://github.com/obophenotype/planaria-ontology",
             "id": "plana",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/planaria-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -7891,11 +7709,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/planarian-phenotype-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "smr@stowers.org",
                 "github": "srobb1",
@@ -7920,12 +7733,6 @@
             "domain": "phenotype",
             "homepage": "https://github.com/obophenotype/planarian-phenotype-ontology",
             "id": "planp",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/planarian-phenotype-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -7957,12 +7764,6 @@
                     "url": "http://browser.planteome.org/amigo"
                 }
             ],
-            "build": {
-                "checkout": "git clone https://github.com/Planteome/plant-ontology.git",
-                "infallible": 1,
-                "method": "vcs",
-                "system": "git"
-            },
             "contact": {
                 "email": "jaiswalp@science.oregonstate.edu",
                 "github": "jaiswalp",
@@ -7975,12 +7776,6 @@
             "homepage": "http://browser.planteome.org/amigo",
             "id": "po",
             "in_foundry_order": 1,
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/Planteome/plant-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -8070,13 +7865,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/porifera-ontology.git",
-                "infallible": 1,
-                "method": "vcs",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "robert.thacker@stonybrook.edu",
                 "github": "bobthacker",
@@ -8095,12 +7883,6 @@
             "domain": "anatomy and development",
             "homepage": "https://github.com/obophenotype/porifera-ontology",
             "id": "poro",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/porifera-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -8368,11 +8150,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/Planteome/plant-stress-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "cooperl@oregonstate.edu",
                 "github": "cooperl09",
@@ -8388,12 +8165,6 @@
             "domain": "agriculture",
             "homepage": "https://github.com/Planteome/plant-stress-ontology",
             "id": "pso",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/Planteome/plant-stress-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -8488,11 +8259,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/Radiobiology-Informatics-Consortium/RBO.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "daniel.c.berrios@nasa.gov",
                 "github": "DanBerrios",
@@ -8526,12 +8292,6 @@
             "domain": "environment",
             "homepage": "https://github.com/Radiobiology-Informatics-Consortium/RBO",
             "id": "rbo",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/DanBerrios/RBO",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -8581,12 +8341,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/oborel/obo-relations.git",
-                "infallible": 1,
-                "method": "vcs",
-                "system": "git"
-            },
             "canonical": "ro.owl",
             "contact": {
                 "email": "cjmungall@lbl.gov",
@@ -8599,12 +8353,6 @@
             "domain": "upper",
             "homepage": "https://oborel.github.io/",
             "id": "ro",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/oborel/obo-relations",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -9162,11 +8910,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/phenoscape/taxrank.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "balhoff@renci.org",
                 "github": "balhoff",
@@ -9177,12 +8920,6 @@
             "domain": "organisms",
             "homepage": "https://github.com/phenoscape/taxrank",
             "id": "taxrank",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/phenoscape/taxrank",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -9223,13 +8960,6 @@
                     "url": "http://browser.planteome.org/amigo/term/TO:0000387#display-lineage-tab"
                 }
             ],
-            "build": {
-                "checkout": "git clone https://github.com/Planteome/plant-trait-ontology.git",
-                "infallible": 1,
-                "method": "vcs",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "jaiswalp@science.oregonstate.edu",
                 "github": "jaiswalp",
@@ -9241,12 +8971,6 @@
             "domain": "phenotype",
             "homepage": "http://browser.planteome.org/amigo",
             "id": "to",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/Planteome/plant-trait-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -10518,11 +10242,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/xenopus-phenotype-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "Erik.Segerdell@cchmc.org",
                 "github": "seger",
@@ -10559,12 +10278,6 @@
             "domain": "phenotype",
             "homepage": "https://github.com/obophenotype/xenopus-phenotype-ontology",
             "id": "xpo",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/xenopus-phenotype-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -10756,11 +10469,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/zebrafish-phenotype-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "ybradford@zfin.org",
                 "github": "ybradford",
@@ -10794,12 +10502,6 @@
             "domain": "phenotype",
             "homepage": "https://github.com/obophenotype/zebrafish-phenotype-ontology",
             "id": "zp",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/zebrafish-phenotype-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -10897,12 +10599,6 @@
                     "url": "http://monarchinitiative.org/phenotype/HP:0000118"
                 }
             ],
-            "build": {
-                "infallible": 1,
-                "method": "archive",
-                "path": "archive/hp",
-                "source_url": "http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip"
-            },
             "contact": {
                 "email": "dr.sebastian.koehler@gmail.com",
                 "github": "drseb",
@@ -10914,12 +10610,6 @@
             "domain": "phenotype",
             "homepage": "http://www.human-phenotype-ontology.org/",
             "id": "hp",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/human-phenotype-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "hpo",
@@ -11727,12 +11417,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/cephalopod-ontology.git",
-                "method": "vcs",
-                "path": "src/ontology",
-                "system": "git"
-            },
             "contact": {
                 "email": "cjmungall@lbl.gov",
                 "github": "cmungall",
@@ -11743,12 +11427,6 @@
             "domain": "anatomy and development",
             "homepage": "https://github.com/obophenotype/cephalopod-ontology",
             "id": "ceph",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/cephalopod-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -12106,11 +11784,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "checkout": "git clone https://github.com/geneontology/unipathway.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "Anne.Morgat@sib.swiss",
                 "github": "amorgat",
@@ -12126,12 +11799,6 @@
             "domain": "biological systems",
             "homepage": "https://github.com/geneontology/unipathway",
             "id": "upa",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/geneontology/unipathway",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",

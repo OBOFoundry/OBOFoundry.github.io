@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: chiro
 title: CHEBI Integrated Role Ontology
-build:
-  checkout: git clone https://github.com/obophenotype/chiro.git
-  path: .
-  system: git
 contact:
   email: vasilevs@ohsu.edu
   github: nicolevasilevsky
@@ -22,9 +18,6 @@ dependencies:
 description: CHEBI provides a distinct role hierarchy. Chemicals in the structural hierarchy are connected via a 'has role' relation. CHIRO provides links from these roles to useful other classes in other ontologies. This will allow direct connection between chemical structures (small molecules, drugs) and what they do. This could be formalized using 'capable of', in the same way Uberon and the Cell Ontology link structures to processes.
 domain: chemistry and biochemistry
 homepage: https://github.com/obophenotype/chiro
-jobs:
-- id: https://travis-ci.org/obophenotype/chiro
-  type: travis-ci
 license:
   label: CC0 1.0
   url: http://creativecommons.org/publicdomain/zero/1.0/

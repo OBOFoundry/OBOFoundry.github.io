@@ -6,11 +6,6 @@ browsers:
 - title: NCBI Taxonomy Browser
   label: NCBI
   url: http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi
-build:
-  infallible: 1
-  method: archive
-  path: archive
-  source_url: http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip
 contact:
   email: frederic.bastian@unil.ch
   github: fbastian
@@ -19,9 +14,6 @@ contact:
 description: An ontology representation of the NCBI organismal taxonomy
 domain: organisms
 homepage: https://github.com/obophenotype/ncbitaxon
-jobs:
-- id: http://build.berkeleybop.org/job/build-ncbitaxon/
-  type: ReleaseBuild
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/

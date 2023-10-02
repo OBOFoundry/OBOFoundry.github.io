@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: rbo
 title: Radiation Biology Ontology
-build:
-  checkout: git clone https://github.com/Radiobiology-Informatics-Consortium/RBO.git
-  path: .
-  system: git
 contact:
   email: daniel.c.berrios@nasa.gov
   github: DanBerrios
@@ -22,9 +18,6 @@ dependencies:
 description: RBO is an ontology for the effects of radiation on biota in terrestrial and space environments.
 domain: environment
 homepage: https://github.com/Radiobiology-Informatics-Consortium/RBO
-jobs:
-- id: https://travis-ci.org/DanBerrios/RBO
-  type: travis-ci
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/

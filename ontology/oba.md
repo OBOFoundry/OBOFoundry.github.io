@@ -2,11 +2,6 @@
 layout: ontology_detail
 id: oba
 title: Ontology of Biological Attributes
-build:
-  checkout: git clone https://github.com/obophenotype/bio-attribute-ontology.git
-  method: vcs
-  path: .
-  system: git
 contact:
   email: cjmungall@lbl.gov
   github: cmungall
@@ -15,9 +10,6 @@ contact:
 description: A collection of biological attributes (traits) covering all kingdoms of life.
 domain: phenotype
 homepage: https://github.com/obophenotype/bio-attribute-ontology
-jobs:
-- id: https://travis-ci.org/obophenotype/bio-attribute-ontology
-  type: travis-ci
 license:
   label: CC0 1.0
   url: http://creativecommons.org/publicdomain/zero/1.0/

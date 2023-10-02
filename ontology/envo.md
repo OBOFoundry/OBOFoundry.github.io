@@ -2,13 +2,6 @@
 layout: ontology_detail
 id: envo
 title: Environment Ontology
-build:
-  checkout: git clone https://github.com/EnvironmentOntology/envo.git
-  email_cc: cjmungall@lbl.gov
-  infallible: 1
-  method: vcs
-  path: .
-  system: git
 contact:
   email: pier.buttigieg@awi.de
   github: pbuttigieg
@@ -27,9 +20,6 @@ depicted_by: /images/envo.png
 description: An ontology of environmental systems, components, and processes.
 domain: environment
 homepage: http://environmentontology.org/
-jobs:
-- id: https://github.com/EnvironmentOntology/envo/blob/master/.github/workflows/qc.yml
-  type: github-action
 license:
   label: CC0 1.0
   url: http://creativecommons.org/publicdomain/zero/1.0/

@@ -6,8 +6,8 @@
 
 [Editorial Working Group](/docs/EditorialWG.html)
 
-- [Review Process](/docs/ReviewProcessGuidelines.html)
-- [Review Criteria](/docs/ReviewCriteriaPolicies.html)
+- [Ontologies Review](/docs/OntologiesReviewWorkflow.html)
+- [Principles Review](/docs/PrinciplesReviewWorkflow.html)
 
 [Technical Working Group](/docs/TechnicalWG.html)
 
