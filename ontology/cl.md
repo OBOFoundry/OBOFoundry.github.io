@@ -118,7 +118,18 @@ usages:
 activity_status: active
 ---
 
-The Cell Ontology is designed as a structured controlled vocabulary for cell types. This ontology was constructed for use by the model organism and other bioinformatics databases, where there is a need for a controlled vocabulary of cell types. This ontology is not organism specific. It covers cell types from prokaryotes to mammals. However, it excludes plant cell types, which are covered by PO.
+Cell Ontology (CL) is an ontology designed to classify and describe cell types across different organisms. 
+It serves as a resource for model organism and bioinformatics databases. 
+The ontology covers a broad range of cell types in animal cells, with over 2700 cell type classes, 
+and provides high-level cell type classes as mapping points for cell type classes in ontologies 
+representing other species, such as the Plant Ontology or Drosophila Anatomy Ontology. 
+Integration with other ontologies such as Uberon, GO, CHEBI, PR, and PATO enables linking cell types to anatomical structures, biological processes, and other relevant concepts. 
+
+The Cell Ontology was created in 2004 and has been a core OBO Foundry ontology since the start of the Foundry. 
+Since then, CL has been adopted by various efforts,  including the HuBMAP project, Human Cell Atlas (HCA), 
+cellxgene platform, Single Cell Expression Atlas, BRAIN Initiative Cell Census Network (BICCN), 
+ArrayExpress, The Cell Image Library, ENCODE, and FANTOM5, for annotating cell types and 
+facilitating cellular reference mapping, as documented through various publications and examples.
 
 ## Integration with other ontologies
 
