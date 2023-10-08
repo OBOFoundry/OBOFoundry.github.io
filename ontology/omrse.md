@@ -32,4 +32,4 @@ tracker: https://github.com/ufbmi/OMRSE/issues
 activity_status: active
 ---
 
-This ontology covers the domain of social entities that are related to health care, such as demographic information (social entities for recording gender (but not sex) and marital status, for example) and the roles of various individuals and organizations (patient, hospital,etc.)
+For more information on the social entities represented in OMRSE, please visit our wiki page or list of publications. OMRSE is designed to be a mid-level ontology that bridges the gap between BFO, which it reuses for its top-level hierarchy, and more specific domain or application ontologies. For this reason, we are always open to working with ontology developers who want to build interoperability between their projects and OMRSE.
