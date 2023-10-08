@@ -12,7 +12,7 @@ contact:
   orcid: 0000-0002-9881-1017
 description: The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations.
 domain: health
-homepage: https://github.com/ufbmi/OMRSE/wiki/OMRSE-Overview
+homepage: https://github.com/mcwdsi/OMRSE/wiki/OMRSE-Overview
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
@@ -22,13 +22,13 @@ products:
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/27406187
   title: 'The ontology of medically related social entities: recent developments'
-repository: https://github.com/ufbmi/OMRSE
+repository: https://github.com/mcwdsi/OMRSE
 tags:
 - medicine
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
-tracker: https://github.com/ufbmi/OMRSE/issues
+tracker: https://github.com/mcwdsi/OMRSE/issues
 activity_status: active
 ---
 
