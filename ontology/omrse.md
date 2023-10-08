@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: omrse
-title: Ontology of Medically Related Social Entities
+title: Ontology for Modeling and Representation of Social Entities
 build:
   method: owl2obo
   source_url: https://github.com/ufbmi/OMRSE
@@ -10,7 +10,7 @@ contact:
   github: hoganwr
   label: Bill Hogan
   orcid: 0000-0002-9881-1017
-description: This ontology covers the domain of social entities that are related to health care, such as demographic information and the roles of various individuals and organizations.
+description: The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations.
 domain: health
 homepage: https://github.com/ufbmi/OMRSE/wiki/OMRSE-Overview
 license:
