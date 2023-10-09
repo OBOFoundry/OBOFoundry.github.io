@@ -6,12 +6,12 @@ build:
   method: archive
   path: archive
   source_url: http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip
-contact:
+contact: Lynn Schriml
   email: lschriml@som.umaryland.edu
   github: lschriml
   label: Lynn Schriml
   orcid: 0000-0001-8910-9851
-description: A gazetteer constructed on ontological principles
+description: A gazetteer constructed on ontological principles. The countries are actively maintained.
 domain: environment
 homepage: http://environmentontology.github.io/gaz/
 license:
