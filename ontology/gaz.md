@@ -6,7 +6,7 @@ build:
   method: archive
   path: archive
   source_url: http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip
-contact: Lynn Schriml
+contact:
   email: lschriml@som.umaryland.edu
   github: lschriml
   label: Lynn Schriml
