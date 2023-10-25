@@ -24,7 +24,8 @@ publications:
   title: 'The ontology of medically related social entities: recent developments'
 repository: https://github.com/mcwdsi/OMRSE
 tags:
-- medicine
+- social
+- behavior
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
