@@ -1,18 +1,18 @@
 ---
 layout: ontology_detail
 id: omrse
-title: Ontology of Medically Related Social Entities
+title: Ontology for Modeling and Representation of Social Entities
 build:
   method: owl2obo
-  source_url: https://github.com/ufbmi/OMRSE
+  source_url: https://github.com/mcwdsi/OMRSE
 contact:
   email: hoganwr@gmail.com
   github: hoganwr
   label: Bill Hogan
   orcid: 0000-0002-9881-1017
-description: This ontology covers the domain of social entities that are related to health care, such as demographic information and the roles of various individuals and organizations.
+description: The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations.
 domain: health
-homepage: https://github.com/ufbmi/OMRSE/wiki/OMRSE-Overview
+homepage: https://github.com/mcwdsi/OMRSE/wiki/OMRSE-Overview
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
@@ -22,14 +22,15 @@ products:
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/27406187
   title: 'The ontology of medically related social entities: recent developments'
-repository: https://github.com/ufbmi/OMRSE
+repository: https://github.com/mcwdsi/OMRSE
 tags:
-- medicine
+- social
+- behavior
 taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
-tracker: https://github.com/ufbmi/OMRSE/issues
+tracker: https://github.com/mcwdsi/OMRSE/issues
 activity_status: active
 ---
 
-This ontology covers the domain of social entities that are related to health care, such as demographic information (social entities for recording gender (but not sex) and marital status, for example) and the roles of various individuals and organizations (patient, hospital,etc.)
+For more information on the social entities represented in OMRSE, please visit our wiki page or list of publications. OMRSE is designed to be a mid-level ontology that bridges the gap between BFO, which it reuses for its top-level hierarchy, and more specific domain or application ontologies. For this reason, we are always open to working with ontology developers who want to build interoperability between their projects and OMRSE.
