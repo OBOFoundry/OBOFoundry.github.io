@@ -2944,16 +2944,16 @@ _:b137  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqun Oliver He" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b141 ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
-        <http://purl.org/dc/elements/1.1/description>  "This ontology covers the domain of social entities that are related to health care, such as demographic information and the roles of various individuals and organizations." ;
-        <http://purl.org/dc/elements/1.1/title>  "Ontology of Medically Related Social Entities" ;
+        <http://purl.org/dc/elements/1.1/description>  "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." ;
+        <http://purl.org/dc/elements/1.1/title>  "Ontology for Modeling and Representation of Social Entities" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/27406187> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
-        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/ufbmi/OMRSE/issues" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/mcwdsi/OMRSE/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/omrse.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b142 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/omrse.owl> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/ufbmi/OMRSE/wiki/OMRSE-Overview> .
+        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/mcwdsi/OMRSE/wiki/OMRSE-Overview> .
 
 <http://purl.obolibrary.org/obo/opmi>
         <http://identifiers.org/preferredPrefix>  "OPMI" ;
@@ -4055,7 +4055,7 @@ _:b151  <http://www.w3.org/2000/01/rdf-schema#label>  "James C. Hu" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/omp.obo" .
 
 _:b141  <http://obofoundry.github.io/vocabulary/method>  "owl2obo" ;
-        <http://obofoundry.github.io/vocabulary/source_url>  "https://github.com/ufbmi/OMRSE"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+        <http://obofoundry.github.io/vocabulary/source_url>  "https://github.com/mcwdsi/OMRSE"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/27406187>
         <http://purl.org/dc/elements/1.1/title>  "The ontology of medically related social entities: recent developments" .
