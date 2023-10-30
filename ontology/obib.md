@@ -3,10 +3,9 @@ layout: ontology_detail
 id: obib
 title: Ontology for Biobanking
 contact:
-  email: jiezheng@pennmedicine.upenn.edu
-  github: zhengj2007
-  label: Jie Zheng
-  orcid: 0000-0002-2999-0103
+  email: jmwhorton@uams.edu
+  github: jmwhorton
+  label: Justin Whorton
 description: An ontology built for annotation and modeling of biobank repository and biobanking administration
 domain: investigations
 homepage: https://github.com/biobanking/biobanking
