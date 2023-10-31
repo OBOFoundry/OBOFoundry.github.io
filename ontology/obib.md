@@ -6,6 +6,7 @@ contact:
   email: jmwhorton@uams.edu
   github: jmwhorton
   label: Justin Whorton
+  orcid: 0009-0003-4268-6207
 description: An ontology built for annotation and modeling of biobank repository and biobanking administration
 domain: investigations
 homepage: https://github.com/biobanking/biobanking
