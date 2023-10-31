@@ -2040,35 +2040,6 @@ ontologies:
   title: Fungal gross anatomy
   tracker: https://github.com/obophenotype/fungal-anatomy-ontology/issues
 - activity_status: active
-  build:
-    method: obo2owl
-    source_url: https://raw.githubusercontent.com/dosumis/fbbi/master/src/ontology/fbbi.obo
-  contact:
-    email: wawong@gmail.com
-    github: wawong
-    label: Willy Wong
-    orcid: 0000-0002-8841-5870
-  description: A structured controlled vocabulary of sample preparation, visualization
-    and imaging methods used in biomedical research.
-  domain: investigations
-  homepage: http://cellimagelibrary.org/
-  id: fbbi
-  layout: ontology_detail
-  license:
-    label: CC BY 4.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/4.0/
-  ontology_purl: http://purl.obolibrary.org/obo/fbbi.owl
-  preferredPrefix: FBbi
-  products:
-  - id: fbbi.owl
-    ontology_purl: http://purl.obolibrary.org/obo/fbbi.owl
-  repository: https://github.com/CRBS/Biological_Imaging_Methods_Ontology
-  tags:
-  - imaging experiments
-  title: Biological Imaging Methods Ontology
-  tracker: https://github.com/CRBS/Biological_Imaging_Methods_Ontology/issues
-- activity_status: active
   browsers:
   - label: FB
     title: FlyBase Browser
@@ -3490,36 +3461,6 @@ ontologies:
   title: Mental Functioning Ontology
   tracker: https://github.com/jannahastings/mental-functioning-ontology/issues
 - activity_status: active
-  contact:
-    email: druzinsk@uic.edu
-    github: RDruzinsky
-    label: Robert Druzinsky
-    orcid: 0000-0002-1572-1316
-  dependencies:
-  - id: uberon
-  description: The Mammalian Feeding Muscle Ontology is an antomy ontology for the
-    muscles of the head and neck that participate in feeding, swallowing, and other
-    oral-pharyngeal behaviors.
-  domain: anatomy and development
-  homepage: https://github.com/rdruzinsky/feedontology
-  id: mfmo
-  layout: ontology_detail
-  license:
-    label: CC BY 3.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
-  ontology_purl: http://purl.obolibrary.org/obo/mfmo.owl
-  preferredPrefix: MFMO
-  products:
-  - id: mfmo.owl
-    ontology_purl: http://purl.obolibrary.org/obo/mfmo.owl
-  repository: https://github.com/RDruzinsky/feedontology
-  taxon:
-    id: NCBITaxon:40674
-    label: Mammalian
-  title: Mammalian Feeding Muscle Ontology
-  tracker: https://github.com/RDruzinsky/feedontology/issues
-- activity_status: active
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/mfoem.owl
@@ -4683,30 +4624,6 @@ ontologies:
   title: Ontology for General Medical Science
   tracker: https://github.com/OGMS/ogms/issues
 - activity_status: active
-  contact:
-    email: linikujp@gmail.com
-    github: linikujp
-    label: Asiyah Yu Lin
-    orcid: 0000-0002-5379-5359
-  description: An application ontology to represent genetic susceptibility to a specific
-    disease, adverse event, or a pathological process.
-  domain: investigations
-  homepage: https://github.com/linikujp/OGSF
-  id: ogsf
-  layout: ontology_detail
-  license:
-    label: CC BY 3.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/3.0/
-  ontology_purl: http://purl.obolibrary.org/obo/ogsf.owl
-  preferredPrefix: OGSF
-  products:
-  - id: ogsf.owl
-    ontology_purl: http://purl.obolibrary.org/obo/ogsf.owl
-  repository: https://github.com/linikujp/OGSF
-  title: Ontology of Genetic Susceptibility Factor
-  tracker: https://github.com/linikujp/OGSF/issues
-- activity_status: active
   build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/ohd.owl
@@ -4889,17 +4806,18 @@ ontologies:
 - activity_status: active
   build:
     method: owl2obo
-    source_url: https://github.com/ufbmi/OMRSE
+    source_url: https://github.com/mcwdsi/OMRSE
   contact:
     email: hoganwr@gmail.com
     github: hoganwr
     label: Bill Hogan
     orcid: 0000-0002-9881-1017
-  description: This ontology covers the domain of social entities that are related
-    to health care, such as demographic information and the roles of various individuals
-    and organizations.
+  description: The Ontology for Modeling and Representation of Social Entities (OMRSE)
+    is an OBO Foundry ontology that represents the various entities that arise from
+    human social interactions, such as social acts, social roles, social groups, and
+    organizations.
   domain: health
-  homepage: https://github.com/ufbmi/OMRSE/wiki/OMRSE-Overview
+  homepage: https://github.com/mcwdsi/OMRSE/wiki/OMRSE-Overview
   id: omrse
   layout: ontology_detail
   license:
@@ -4914,14 +4832,15 @@ ontologies:
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/27406187
     title: 'The ontology of medically related social entities: recent developments'
-  repository: https://github.com/ufbmi/OMRSE
+  repository: https://github.com/mcwdsi/OMRSE
   tags:
-  - medicine
+  - social
+  - behavior
   taxon:
     id: NCBITaxon:9606
     label: Homo sapiens
-  title: Ontology of Medically Related Social Entities
-  tracker: https://github.com/ufbmi/OMRSE/issues
+  title: Ontology for Modeling and Representation of Social Entities
+  tracker: https://github.com/mcwdsi/OMRSE/issues
 - activity_status: active
   contact:
     email: chenyangnutrition@gmail.com
@@ -8035,6 +7954,65 @@ ontologies:
   title: Variation Ontology
   tracker: http://variationontology.org/instructions.shtml
 - activity_status: inactive
+  build:
+    method: obo2owl
+    source_url: https://raw.githubusercontent.com/dosumis/fbbi/master/src/ontology/fbbi.obo
+  contact:
+    email: wawong@gmail.com
+    github: wawong
+    label: Willy Wong
+    orcid: 0000-0002-8841-5870
+  description: A structured controlled vocabulary of sample preparation, visualization
+    and imaging methods used in biomedical research.
+  domain: investigations
+  homepage: http://cellimagelibrary.org/
+  id: fbbi
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/fbbi.owl
+  preferredPrefix: FBbi
+  products:
+  - id: fbbi.owl
+    ontology_purl: http://purl.obolibrary.org/obo/fbbi.owl
+  repository: https://github.com/CRBS/Biological_Imaging_Methods_Ontology
+  tags:
+  - imaging experiments
+  title: Biological Imaging Methods Ontology
+  tracker: https://github.com/CRBS/Biological_Imaging_Methods_Ontology/issues
+- activity_status: inactive
+  contact:
+    email: druzinsk@uic.edu
+    github: RDruzinsky
+    label: Robert Druzinsky
+    orcid: 0000-0002-1572-1316
+  dependencies:
+  - id: uberon
+  description: The Mammalian Feeding Muscle Ontology is an antomy ontology for the
+    muscles of the head and neck that participate in feeding, swallowing, and other
+    oral-pharyngeal behaviors.
+  domain: anatomy and development
+  homepage: https://github.com/rdruzinsky/feedontology
+  id: mfmo
+  layout: ontology_detail
+  license:
+    label: CC BY 3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/mfmo.owl
+  preferredPrefix: MFMO
+  products:
+  - id: mfmo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/mfmo.owl
+  repository: https://github.com/RDruzinsky/feedontology
+  taxon:
+    id: NCBITaxon:40674
+    label: Mammalian
+  title: Mammalian Feeding Muscle Ontology
+  tracker: https://github.com/RDruzinsky/feedontology/issues
+- activity_status: inactive
   contact:
     email: carrine.blank@umontana.edu
     github: carrineblank
@@ -8057,6 +8035,30 @@ ontologies:
   repository: https://github.com/carrineblank/MicrO
   title: Ontology of Prokaryotic Phenotypic and Metabolic Characters
   tracker: https://github.com/carrineblank/MicrO/issues
+- activity_status: inactive
+  contact:
+    email: linikujp@gmail.com
+    github: linikujp
+    label: Asiyah Yu Lin
+    orcid: 0000-0002-5379-5359
+  description: An application ontology to represent genetic susceptibility to a specific
+    disease, adverse event, or a pathological process.
+  domain: investigations
+  homepage: https://github.com/linikujp/OGSF
+  id: ogsf
+  layout: ontology_detail
+  license:
+    label: CC BY 3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/ogsf.owl
+  preferredPrefix: OGSF
+  products:
+  - id: ogsf.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ogsf.owl
+  repository: https://github.com/linikujp/OGSF
+  title: Ontology of Genetic Susceptibility Factor
+  tracker: https://github.com/linikujp/OGSF/issues
 - activity_status: inactive
   build:
     method: obo2owl
