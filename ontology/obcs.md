@@ -3,7 +3,7 @@ layout: ontology_detail
 id: obcs
 title: Ontology of Biological and Clinical Statistics
 contact:
-  email: jiezheng@pennmedicine.upenn.edu
+  email: jiezhen@med.umich.edu
   github: zhengj2007
   label: Jie Zheng
   orcid: 0000-0002-2999-0103
@@ -12,8 +12,8 @@ domain: information technology
 homepage: https://github.com/obcs/obcs
 in_foundry: false
 license:
-  label: CC BY 3.0
-  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 4.0
+  url: http://creativecommons.org/licenses/by/4.0/
 preferredPrefix: OBCS
 products:
 - id: obcs.owl
@@ -21,6 +21,15 @@ repository: https://github.com/obcs/obcs
 tags:
 - statistics
 tracker: https://github.com/obcs/obcs/issues
+usages:
+  examples:
+  - description: OBCS is used in statistical analysis method annotation and analysis in literature text mining
+    url: https://link.springer.com/article/10.1007/s40484-017-0122-5
+  user: https://link.springer.com/article/10.1007/s40484-017-0122-5
+  examples:
+  - description: OBCS is used in annotation of study designs
+    url: https://clinepidb.org/ce/app/search/dataset/Studies/result
+  user: https://clinepidb.org/
 activity_status: active
 ---
 
