@@ -11,10 +11,10 @@ contact:
   orcid: 0000-0001-9189-9661
 description: VO is a biomedical ontology in the domain of vaccine and vaccination.
 domain: health
-homepage: http://www.violinet.org/vaccineontology
+homepage: https://violinet.org/vaccineontology
 license:
-  label: CC BY 3.0
-  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 4.0
+  url: http://creativecommons.org/licenses/by/4.0/
 preferredPrefix: VO
 products:
 - id: vo.owl
@@ -25,6 +25,29 @@ publications:
   title: Mining of vaccine-associated IFN-γ gene interaction networks using the Vaccine Ontology
 repository: https://github.com/vaccineontology/VO
 tracker: https://github.com/vaccineontology/VO/issues
+usages:
+- description: VIOLIN uses VO to standardize vaccine information
+  examples:
+  - description: VIOLIN using VO grouped all SARS-CoV-2 vaccines
+    url: https://violinet.org/canvaxkb/vaccine_detail.php?c_vaccine_id=5339
+  - description: A specific vaccine ‘Allogeneic Tumor Cell Vaccine’ curated in VO for VIOLIN vaccine record
+    url: https://violinet.org/vaxquery/query_detail.php?c_pathogen_id=321#vaccine_5878
+  user: https://violinet.org
+- description: Vaccine Adjuvant Compendium (VAC) uses Vaccine Ontology to standard vaccine adjuvants developed by NIH
+  examples:
+  - description: A specific vaccine adjuvant, such as CaPNP (CaPtivant)(TM), in Vaccine Adjuvant Compendium, uses VO_0005295 ‘CaPNP (CaPtivant)(TM) vaccine adjuvant’
+    url: https://vac.niaid.nih.gov/view?id=11
+  user: https://www.niaid.nih.gov/research/vaccine-adjuvant-compendium-vac
+- description: ImmPort uses Vaccine Ontology to standardize vaccine recorded collected in NIH funded ImmPort studies
+  examples:
+  - description: Vaccine annotated using VO terms
+    url: https://www.immport.org/shared/home
+  user: https://www.immport.org/
+- description: Human Immunology Project Consortium (HIPC) uses VO to standardize vaccine records
+  examples:
+  - description: standardize vaccine records using VO
+    url: https://immunespace.org/
+  user: https://immunespace.org/
 activity_status: active
 ---
 
