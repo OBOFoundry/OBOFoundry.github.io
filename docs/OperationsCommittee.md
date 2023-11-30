@@ -21,7 +21,7 @@ The members of the Operations Committee are listed [here](Membership.html).
 New members should follow the instructions on the [onboarding doc](https://docs.google.com/document/d/1MKhNTjZjGx6Ls72dybIV2ajYtbqtwP7O4lwxN2v3RBA/edit#heading=h.10q6n5qc13dp)
 
 ## Standard operating procedures (SOPs)
-[This page documents the standard operating procedures (SOPs)](OperationsCommittee.html) for the OBO Foundry Operations Committee ([GitHub link](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/docs/SOP.md)).
+[This page documents the standard operating procedures (SOPs)](OperationsCommittee.html) for the OBO Foundry Operations Committee.
 
 ## Interested in joining?
 
