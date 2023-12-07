@@ -3,7 +3,7 @@ layout: ontology_detail
 id: opl
 title: Ontology for Parasite LifeCycle
 contact:
-  email: jiezheng@pennmedicine.upenn.edu
+  email: zhengj2007@gmail.com
   github: zhengj2007
   label: Jie Zheng
   orcid: 0000-0002-2999-0103
