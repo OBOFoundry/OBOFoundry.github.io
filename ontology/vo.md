@@ -40,13 +40,13 @@ usages:
   user: https://www.niaid.nih.gov/research/vaccine-adjuvant-compendium-vac
 - description: ImmPort uses Vaccine Ontology to standardize vaccine recorded collected in NIH funded ImmPort studies
   examples:
-  - description: Vaccine annotated using VO terms
-    url: https://www.immport.org/shared/home
+  - description: ImmPort data used VO for annotation shown in its dataModel
+    url: https://www.immport.org/shared/dataModel
   user: https://www.immport.org/
 - description: Human Immunology Project Consortium (HIPC) uses VO to standardize vaccine records
   examples:
-  - description: standardize vaccine records using VO
-    url: https://immunespace.org/
+  - description: Influenza Vaccine Live, Intranasal used VO_0000044
+    url: http://www.hipc-dashboard.org/#vaccine/vo-0000044
   user: https://immunespace.org/
 activity_status: active
 ---
