@@ -32,6 +32,7 @@ usages:
   examples:
   - url: https://link.springer.com/article/10.1007/s40484-017-0122-5
     description: In Methods, "Both OBCS and the Vaccine Ontology (VO) were used to ontologically model various components and relations in a typical host response to vaccination study."
+activity_status: active
 ---
 
 The Ontology of Biological and Clinical Statistics (OBCS) is a biomedical ontology in the domain of biological and clinical statistics. OBCS is primarily targeted for statistical term representation in the fields in biological, biomedical, and clinical domains.
