@@ -24,7 +24,7 @@ products:
 publications:
 - id: https://icbo-conference.github.io/icbo2022/papers/ICBO-2022_paper_5061.pdf
   title: 'Toward an Occupation Ontology, OccO'
-repository: https://github.com/Occupation-Ontology/OccO 
+repository: https://github.com/Occupation-Ontology/OccO
 review:
   date: 2023
 tracker: https://github.com/Occupation-Ontology/OccO/issues
