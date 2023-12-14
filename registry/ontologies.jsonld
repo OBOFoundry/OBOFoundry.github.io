@@ -2741,66 +2741,6 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "jiezheng@pennmedicine.upenn.edu",
-                "github": "zhengj2007",
-                "label": "Jie Zheng",
-                "orcid": "0000-0002-2999-0103"
-            },
-            "depicted_by": "https://raw.githubusercontent.com/EuPathDB/communitysite/master/assets/images/VEuPathDB-logo-s.png",
-            "description": "An ontology is developed to support Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org).",
-            "domain": "organisms",
-            "homepage": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology",
-            "id": "eupath",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/4.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/eupath.owl",
-            "preferredPrefix": "EUPATH",
-            "products": [
-                {
-                    "id": "eupath.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/eupath.owl"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "https://doi.org/10.5281/zenodo.6685957",
-                    "title": "Malaria study data integration and information retrieval based on OBO Foundry ontologies."
-                }
-            ],
-            "repository": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology",
-            "tags": [
-                "functional genomics",
-                "population biology",
-                "clinical epidemiology",
-                "microbiomes"
-            ],
-            "title": "VEuPathDB ontology",
-            "tracker": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology/issues",
-            "usages": [
-                {
-                    "description": "The VEuPathDB ontology is used in the VEuPathDB (Eukaryotic Pathogen, Vector & Host Informatics Resources) covers both functional genomics and population biology.",
-                    "type": "annotation and query",
-                    "user": "https://veupathdb.org"
-                },
-                {
-                    "description": "The VEuPathDB ontology is used in the clinical epidemiology resources.",
-                    "type": "annotation and query",
-                    "user": "https://clinepidb.org"
-                },
-                {
-                    "description": "The VEuPathDB ontology is used in the MicrobiomeDB, a systems biology platform for integrating, mining and analyzing microbiome experiments.",
-                    "type": "annotation and query",
-                    "user": "https://microbiomedb.org"
-                }
-            ]
-        },
-        {
-            "activity_status": "active",
-            "contact": {
                 "email": "annethessen@gmail.com",
                 "github": "diatomsRcool",
                 "label": "Anne Thessen",
@@ -4253,7 +4193,7 @@
                 "source_url": "http://purl.obolibrary.org/obo/iao.owl"
             },
             "contact": {
-                "email": "jiezheng@pennmedicine.upenn.edu",
+                "email": "zhengj2007@gmail.com",
                 "github": "zhengj2007",
                 "label": "Jie Zheng",
                 "orcid": "0000-0002-2999-0103"
@@ -7021,7 +6961,7 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "jiezheng@pennmedicine.upenn.edu",
+                "email": "zhengj2007@gmail.com",
                 "github": "zhengj2007",
                 "label": "Jie Zheng",
                 "orcid": "0000-0002-2999-0103"
@@ -11167,6 +11107,66 @@
             ],
             "title": "Variation Ontology",
             "tracker": "http://variationontology.org/instructions.shtml"
+        },
+        {
+            "activity_status": "inactive",
+            "contact": {
+                "email": "jiezhen@med.umich.edu",
+                "github": "zhengj2007",
+                "label": "Jie Zheng",
+                "orcid": "0000-0002-2999-0103"
+            },
+            "depicted_by": "https://raw.githubusercontent.com/EuPathDB/communitysite/master/assets/images/VEuPathDB-logo-s.png",
+            "description": "An ontology is developed to support Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org).",
+            "domain": "organisms",
+            "homepage": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology",
+            "id": "eupath",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/eupath.owl",
+            "preferredPrefix": "EUPATH",
+            "products": [
+                {
+                    "id": "eupath.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/eupath.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.5281/zenodo.6685957",
+                    "title": "Malaria study data integration and information retrieval based on OBO Foundry ontologies."
+                }
+            ],
+            "repository": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology",
+            "tags": [
+                "functional genomics",
+                "population biology",
+                "clinical epidemiology",
+                "microbiomes"
+            ],
+            "title": "VEuPathDB ontology",
+            "tracker": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology/issues",
+            "usages": [
+                {
+                    "description": "The VEuPathDB ontology is used in the VEuPathDB (Eukaryotic Pathogen, Vector & Host Informatics Resources) covers both functional genomics and population biology.",
+                    "type": "annotation and query",
+                    "user": "https://veupathdb.org"
+                },
+                {
+                    "description": "The VEuPathDB ontology is used in the clinical epidemiology resources.",
+                    "type": "annotation and query",
+                    "user": "https://clinepidb.org"
+                },
+                {
+                    "description": "The VEuPathDB ontology is used in the MicrobiomeDB, a systems biology platform for integrating, mining and analyzing microbiome experiments.",
+                    "type": "annotation and query",
+                    "user": "https://microbiomedb.org"
+                }
+            ]
         },
         {
             "activity_status": "inactive",
