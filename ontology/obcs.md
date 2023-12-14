@@ -22,15 +22,10 @@ tags:
 - statistics
 tracker: https://github.com/obcs/obcs/issues
 usages:
-- description: VEuPathDB Clinical Epidemiology Resources use OBCS
-  examples:
-  - description: OBCS is used in annotation of study designs
-    url: https://clinepidb.org/ce/app/search/dataset/Studies/result
-  user: https://clinepidb.org/
-- user: https://link.springer.com/article/10.1007/s40484-017-0122-5
+- user: https://doi.org/10.1007/s40484-017-0122-5
   description: The Ontology of Biological and Clinical Statistics (OBCS)-based statistical method standardization and meta-analysis of host responses to yellow fever vaccines
   examples:
-  - url: https://link.springer.com/article/10.1007/s40484-017-0122-5
+  - url: https://doi.org/10.1007/s40484-017-0122-5
     description: In Methods, "Both OBCS and the Vaccine Ontology (VO) were used to ontologically model various components and relations ..."
 activity_status: active
 ---
