@@ -22,8 +22,6 @@ preferredPrefix: OCCO
 products:
 - id: occo.owl
 repository: https://github.com/Occupation-Ontology/OccO
-review:
-  date: 2023
 tracker: https://github.com/Occupation-Ontology/OccO/issues
 activity_status: active
 ---
