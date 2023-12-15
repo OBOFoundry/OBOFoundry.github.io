@@ -22,11 +22,11 @@ tags:
 - statistics
 tracker: https://github.com/obcs/obcs/issues
 usages:
-- user: https://doi.org/10.1007/s40484-017-0122-5
-  description: The Ontology of Biological and Clinical Statistics (OBCS)-based statistical method standardization and meta-analysis of host responses to yellow fever vaccines
+- description: The Ontology of Biological and Clinical Statistics (OBCS)-based statistical method standardization and meta-analysis of host responses to yellow fever vaccines
   examples:
-  - url: https://doi.org/10.1007/s40484-017-0122-5
-    description: In Methods, "Both OBCS and the Vaccine Ontology (VO) were used to ontologically model various components and relations ..."
+  - description: In Methods, "Both OBCS and the Vaccine Ontology (VO) were used to ontologically model various components and relations ..."
+    url: https://doi.org/10.1007/s40484-017-0122-5
+  user: https://doi.org/10.1007/s40484-017-0122-5
 activity_status: active
 ---
 
