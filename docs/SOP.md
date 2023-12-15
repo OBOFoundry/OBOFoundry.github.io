@@ -61,7 +61,7 @@ No quorum (minimum number of attendees) on the call is required.
 
 ### Ontology Acceptance Notification
 
-Once a new ontology has been accepted, the ontology owner should be notified in the ticket and also by email (they were required to supply their email address as part of their new ontology request),
+Once a new ontology has been accepted, the ontology owner should be notified by the ontology reviewer, both in the ticket and also by via email (they were required to supply their email address as part of their new ontology request),
 ccing obo-discuss & obo-operations-committee.
 The following template should be used to let the ontology owner know that their ontology was accepted, and informing them about the next steps they should take:
 
