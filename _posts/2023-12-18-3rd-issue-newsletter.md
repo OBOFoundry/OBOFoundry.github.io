@@ -133,7 +133,7 @@ Nomi Harris is a dedicated OBO member who has been vital to the community for ma
 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<img src="https://obofoundry.org/images/nlharris_portrait.jpg" style="height: 250px" alt="Nomi Harris" />
 
 
 ![alt_text](images/image1.png "image_tooltip")
