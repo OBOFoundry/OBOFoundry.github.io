@@ -147,7 +147,7 @@ In addition to coordinating about a dozen projects for BBOP, Nomi chairs the ann
 
 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<img src="https://obofoundry.org/images/jamesaoverton_portrait.jpg" style="height: 250px" alt="James Overton" />
 
 
 ![alt_text](images/image2.jpg "image_tooltip")
