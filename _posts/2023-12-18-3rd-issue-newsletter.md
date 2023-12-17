@@ -205,7 +205,7 @@ The implementation of the “Common Format” principle has been [one of the mos
 
 
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<img src="https://obofoundry.org/images/obo_interoperability.jpg" style="height: 250px" alt="OBO Interoperability Pyramid" />
 
 
 ![alt_text](images/image4.png "image_tooltip")
