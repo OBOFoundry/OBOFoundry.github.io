@@ -176,7 +176,6 @@ In light of the widespread issue of curated scientific resources becoming out of
 <img src="https://obofoundry.org/images/o3.jpg" style="height: 250px" alt="Open Code, Open Data, and Open Infrastructure (O3)" />
 
 
-![alt_text](images/image3.png "image_tooltip")
 
 
 **[Figure 1.](https://zenodo.org/records/10159888)** A schematic diagram of how social workflows, technical workflows, and project governance interact with the open data, open code, and open infrastructure (O3) guidelines.
