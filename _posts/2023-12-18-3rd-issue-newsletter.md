@@ -208,7 +208,6 @@ The implementation of the “Common Format” principle has been [one of the mos
 <img src="https://obofoundry.org/images/obo_interoperability.jpg" style="height: 250px" alt="OBO Interoperability Pyramid" />
 
 
-![alt_text](images/image4.png "image_tooltip")
 
 
 **Figure 2.** The four “layers” of interoperability in the OBO Foundry.
