@@ -289,7 +289,7 @@ The table below provides an overview of several of these tools, some of which ar
 
 Don't forget you can vote for future training topics here: [https://github.com/OBOAcademy/obook/discussions/categories/tutorial-requests](https://github.com/OBOAcademy/obook/discussions/categories/tutorial-requests)
 
-Updates on past events
+### Updates on past events
 
 
 
