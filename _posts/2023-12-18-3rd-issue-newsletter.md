@@ -136,7 +136,6 @@ Nomi Harris is a dedicated OBO member who has been vital to the community for ma
 <img src="https://obofoundry.org/images/nlharris_portrait.jpg" style="height: 250px" alt="Nomi Harris" />
 
 
-![alt_text](images/image1.png "image_tooltip")
 
 
 [Nomi Harris](https://www.linkedin.com/in/nomiharris) is a Program Manager for the Berkeley Bioinformatics Open-Source Projects ([BBOP](http://www.berkeleybop.org/)) group at the Lawrence Berkeley National Laboratory. The group is led by [Chris Mungall](https://biosciences.lbl.gov/profiles/chris-mungall/), who is well known in the ontology world and was one of the co-founders of OBO. Nomi has a master’s degree in computer science from MIT, and wrote bioinformatics software for years before transitioning to project management. She has been involved with the OBO Foundry since 2007.
