@@ -116,8 +116,8 @@ Currently, these are the required steps:
 1. A person involved in developing the ontology (usually the contact person) makes a pull request (PR) on the metadata file with the desired change in status. The PR must include evidence to demonstrate new activity, for example by referring to recently-closed issues (we will provide more detailed guidelines as this SOP matures). If the PR was made by someone other than the contact person, or if the contact person has changed, the contact should be tagged in the PR so that the proper followup can be done. The contact person then has one month to verify that the change is desired.
 1. The ontology is added to the NOR dashboard to identify potential problems. Fixing basic issues revealed by the dashboard will be considered additional evidence that the ontology is indeed active.
 1. The OBO Operations committee assigns a status change reviewer during the next call to analyse the evidence for the change. Only the evidence matters - no need to collect more evidence in favor of the status change.
-1. The status change reviewer presents the arguments for and against the status change at an OBO Operations call.
-1. If there is no significant objection, the status change is enacted by merging the pull request.
+1. Within two weeks, the status change reviewer presents the arguments for and against the status change at an OBO Operations call.
+1. If there is no significant objection within 4 weeks of the recommendation by the status change reviewer, the status change is enacted by merging the pull request.
 
 <a name="OPS_MEMBER"></a>
 
