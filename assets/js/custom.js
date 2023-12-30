@@ -111,6 +111,12 @@ jQuery(document).ready(function() {
                             <th scope="col">
                                 <span>Dashboard Status</span>
                             </th>
+                            <!-- style="display:none;" -->
+                            <th scope="col">
+                                <span class="sort-button" title="Sort by Dashboard success" data-sort="success_sort_order" >
+                                    Success Sort order <i class="bi-chevron-up" aria-hidden="true"></i>
+                                </span>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -245,8 +251,12 @@ jQuery(document).ready(function() {
                     dash_success_indicator = "<span>&#88;</span>";
                 }
                 // table row template
+                let tr_class = is_inactive
+                if (!dash_success) {
+                    tr_class += " failing";
+                }
                 let template = `
-                    <tr class="${is_inactive}">
+                    <tr class="${tr_class}">
                         <th scope="row">
                             <a href="ontology/${id}.html">
                                 ${id}
@@ -283,6 +293,9 @@ jQuery(document).ready(function() {
                         </td>
                         <td>
                             ${dash_success_indicator}
+                        </td>
+                        <td>
+                            ${success_sort_order}
                         </td>
                     </tr>
                 `;
