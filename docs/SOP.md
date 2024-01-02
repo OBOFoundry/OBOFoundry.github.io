@@ -34,7 +34,7 @@ New Ontology Requests SOP are fully documented [here](/roles/nor-manager).
 
 The goal of this SOP is to provide a clear set of criteria to be checked for the manual review of an ontology in response to a request to register that new ontology with the OBO Foundry. It is expected that a programmatic review using the Dashboard has already been done and the submitters have addressed any problems found. The purpose of the manual review is to check the ontology for issues that the Dashboard review does not cover. A sample of terms/axioms should be checked. In order for this review to be relatively quick (~ 2 hours), the reviewer is not expected to review all the terms/axioms.
 
-Check the following and provide a brief summary in the tracker issue for the new ontology request. All items of feedback must be provided using GitHub checklist syntax (`- [ ] TODO`) in order to track how far along they are in being addressed. Addressable issues identified as part of the review should be added to the new ontology’s issue tracker.
+Check the following and provide a brief summary in the tracker issue for the new ontology request (note that a brief version of this list--and expected answers--are given in the [Ontology Review Workflow](https://obofoundry.org/docs/OntologiesReviewWorkflow.html)). All items of feedback must be provided using GitHub checklist syntax (`- [ ] TODO`) in order to track how far along they are in being addressed. Addressable issues identified as part of the review should be added to the new ontology’s issue tracker.
 1. Ontology scope. The new ontology must present use cases demonstrating its relevance to the life sciences.  Was the ontology developed using expert input or trusted scientific sources representative of the consensus in its target domain of knowledge? If the ontology was developed for a very specific purpose or community, representation and consensus need not be broad; however, this scope should be clearly stated.
 2. Terms with the new ontology prefix. 
 All new terms MUST follow the [OBO identifier scheme](http://obofoundry.org/id-policy) (often they are accidentally written wrongly, e.g. using https instead of http). 
@@ -61,7 +61,7 @@ No quorum (minimum number of attendees) on the call is required.
 
 ### Ontology Acceptance Notification
 
-Once a new ontology has been accepted, the ontology owner should be notified by the ontology reviewer, both in the ticket and also by via email (they were required to supply their email address as part of their new ontology request),
+Once a new ontology has been accepted, the ontology owner should be notified by the ontology reviewer, both in the ticket and also via email (they were required to supply their email address as part of their new ontology request),
 ccing obo-discuss & obo-operations-committee.
 The following template should be used to let the ontology owner know that their ontology was accepted, and informing them about the next steps they should take:
 
@@ -116,8 +116,8 @@ Currently, these are the required steps:
 1. A person involved in developing the ontology (usually the contact person) makes a pull request (PR) on the metadata file with the desired change in status. The PR must include evidence to demonstrate new activity, for example by referring to recently-closed issues (we will provide more detailed guidelines as this SOP matures). If the PR was made by someone other than the contact person, or if the contact person has changed, the contact should be tagged in the PR so that the proper followup can be done. The contact person then has one month to verify that the change is desired.
 1. The ontology is added to the NOR dashboard to identify potential problems. Fixing basic issues revealed by the dashboard will be considered additional evidence that the ontology is indeed active.
 1. The OBO Operations committee assigns a status change reviewer during the next call to analyse the evidence for the change. Only the evidence matters - no need to collect more evidence in favor of the status change.
-1. The status change reviewer presents the arguments for and against the status change at an OBO Operations call.
-1. If there is no significant objection, the status change is enacted by merging the pull request.
+1. Within two weeks the status change reviewer presents the arguments for and against the status change at an OBO Operations call.
+1. If there is no significant objection within a four week time period, the status change is enacted by merging the pull request.
 
 <a name="OPS_MEMBER"></a>
 
