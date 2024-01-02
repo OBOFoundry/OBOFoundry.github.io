@@ -48,7 +48,7 @@ Are any additional axioms used for these terms correct in both a technical (e.g.
 Are existential restrictions used correctly? Typical mistakes include “R some (A and B and C)” to mean “(R some A and R some B and R some C)”
 Are axioms generally highly complex? If so, we should review a handful to ensure they are as intended.
 5. Appropriate use of [object properties](https://www.w3.org/TR/2004/REC-owl-semantics-20040210/#owl_ObjectProperty). Examples of incorrect usage include those based on some interpretation of the label of the object property but not actually fitting the property definition or domain and range. A typical example of incorrect usage is R some (A and B and C) to mean R some A and R some B and R some C.
-6. Responsiveness to fixing changes. A willingness to fix any identified issues during the review must be demonstrated. Issues expected to be addressed should be added using GitHub checklist syntax (`- [ ] TODO`) in the GitHub issue. The time limit for addressing these is 2 months; a longer period should be requested if needed.
+6. Responsiveness to suggested changes. A willingness to fix any identified issues during the review must be demonstrated. Issues expected to be addressed should be added using GitHub checklist syntax (`- [ ] TODO`) in the GitHub issue. The time limit for addressing these is 2 months; a longer period should be requested if needed.
 
 Note that the NOR Manager (see [roles overview](https://obofoundry.org/roles/overview)) can help assist NOR submitters in understanding the NOR process and passing the NOR Dashboard, as well as later assisting successful NOR submitters in making registry metadata and PURL pull requests
 
