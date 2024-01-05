@@ -5,7 +5,7 @@ title: Human Disease Ontology
 browsers:
 - title: DO Browser
   label: DO
-  url: http://www.disease-ontology.org/
+  url: http://www.disease-ontology.org/do
 build:
   infallible: 1
   method: obo2owl
