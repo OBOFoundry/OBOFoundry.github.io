@@ -1,7 +1,11 @@
 ---
 layout: ontology_detail
 id: eco
-title: Evidence ontology
+title: Evidence and Conclusion Ontology
+browsers:
+- title: ECO Browser
+  label: ECO
+  url: https://www.evidenceontology.org/
 contact:
   email: mgiglio@som.umaryland.edu
   github: mgiglio99
