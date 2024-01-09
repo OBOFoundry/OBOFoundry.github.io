@@ -5,7 +5,7 @@ title: Evidence and Conclusion Ontology
 browsers:
 - title: ECO Browser
   label: ECO
-  url: https://www.evidenceontology.org/
+  url: https://www.evidenceontology.org/browse
 contact:
   email: mgiglio@som.umaryland.edu
   github: mgiglio99
