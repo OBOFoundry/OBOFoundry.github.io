@@ -14,35 +14,35 @@ The table below shows the statuses with their corresponding values for "Responsi
 
 <table class="tg">
   <tbody>
-    <tr align="center">
-      <th class="tg-lbaf">&nbsp;Status&nbsp;</th>
-      <th class="tg-lbaf">&nbsp;Responsive&nbsp;</th>
-      <th class="tg-lbaf">&nbsp;Maintained&nbsp;</th>
+    <tr>
+      <th class="tg-lbaf" align="left">&nbsp;Status&nbsp;</th>
+      <th class="tg-lbaf" align="center">&nbsp;Responsive&nbsp;</th>
+      <th class="tg-lbaf" align="center">&nbsp;&nbsp;Maintained&nbsp;&nbsp;</th>
     </tr>
     <tr>
       <td align="left">&nbsp;Active&nbsp;</td>
       <td align="center">&nbsp;yes&nbsp;</td>
-      <td align="center">&nbsp;yes&nbsp;</td>
+      <td align="center">&nbsp;&nbsp;yes&nbsp;&nbsp;</td>
     </tr>
     <tr>
       <td align="left">&nbsp;Inactive&nbsp;</td>
       <td align="center">&nbsp;yes&nbsp;</td>
-      <td align="center">&nbsp;no&nbsp;</td>
+      <td align="center">&nbsp;&nbsp;no&nbsp;&nbsp;</td>
     </tr>
     <tr>
       <td align="left">&nbsp;Unresponsive&nbsp;</td>
       <td align="center">&nbsp;no&nbsp;</td>
-      <td align="center">&nbsp;yes&nbsp;</td>
+      <td align="center">&nbsp;&nbsp;yes&nbsp;&nbsp;</td>
     </tr>
     <tr>
       <td align="left">&nbsp;Orphaned&nbsp;</td>
       <td align="center">&nbsp;no&nbsp;</td>
-      <td align="center">&nbsp;no&nbsp;</td>
+      <td align="center">&nbsp;&nbsp;no&nbsp;&nbsp;</td>
     </tr>
     <tr>
       <td align="left">&nbsp;Obsolete&nbsp;</td>
       <td align="center">&nbsp;(yes/no)&nbsp;</td>
-      <td align="center">&nbsp;no&nbsp;</td>
+      <td align="center">&nbsp;&nbsp;no&nbsp;&nbsp;</td>
     </tr>
   </tbody>
 </table>
