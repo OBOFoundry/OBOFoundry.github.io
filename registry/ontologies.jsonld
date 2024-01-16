@@ -1905,7 +1905,7 @@
                 {
                     "label": "DO",
                     "title": "DO Browser",
-                    "url": "http://www.disease-ontology.org/"
+                    "url": "http://www.disease-ontology.org/do"
                 }
             ],
             "build": {
@@ -2225,6 +2225,13 @@
         },
         {
             "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "ECO",
+                    "title": "ECO Browser",
+                    "url": "https://www.evidenceontology.org/browse"
+                }
+            ],
             "contact": {
                 "email": "mgiglio@som.umaryland.edu",
                 "github": "mgiglio99",
@@ -2276,7 +2283,7 @@
                 }
             ],
             "repository": "https://github.com/evidenceontology/evidenceontology",
-            "title": "Evidence ontology",
+            "title": "Evidence and Conclusion Ontology",
             "tracker": "https://github.com/evidenceontology/evidenceontology/issues",
             "usages": [
                 {

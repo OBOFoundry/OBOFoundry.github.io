@@ -1383,7 +1383,7 @@ ontologies:
   browsers:
   - label: DO
     title: DO Browser
-    url: http://www.disease-ontology.org/
+    url: http://www.disease-ontology.org/do
   build:
     infallible: 1
     method: obo2owl
@@ -1607,6 +1607,10 @@ ontologies:
   title: The Echinoderm Anatomy and Development Ontology
   tracker: https://github.com/echinoderm-ontology/ecao_ontology/issues
 - activity_status: active
+  browsers:
+  - label: ECO
+    title: ECO Browser
+    url: https://www.evidenceontology.org/browse
   contact:
     email: mgiglio@som.umaryland.edu
     github: mgiglio99
@@ -1643,7 +1647,7 @@ ontologies:
     title: Standardized description of scientific evidence using the Evidence Ontology
       (ECO)
   repository: https://github.com/evidenceontology/evidenceontology
-  title: Evidence ontology
+  title: Evidence and Conclusion Ontology
   tracker: https://github.com/evidenceontology/evidenceontology/issues
   usages:
   - description: ECO is used by the GO consortium for evidence on GO associations

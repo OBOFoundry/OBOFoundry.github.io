@@ -1127,7 +1127,7 @@ _:b55   <http://www.w3.org/2000/01/rdf-schema#label>  "Luis González-Montaña" 
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/34755882> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/DiseaseOntology/HumanDiseaseOntology/issues" ;
-        <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://www.disease-ontology.org/> ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://www.disease-ontology.org/do> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/doid.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b58 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/doid.owl> ;
@@ -1509,6 +1509,10 @@ _:b57   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/34755882>
         <http://purl.org/dc/elements/1.1/title>  "The Human Disease Ontology 2022 update" .
 
+<http://www.disease-ontology.org/do>
+        <http://purl.org/dc/elements/1.1/title>  "DO Browser" ;
+        <http://www.w3.org/2000/01/rdf-schema#label>  "DO" .
+
 _:b58   <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://xmlns.com/foaf/0.1/mbox>  "lynn.schriml@gmail.com" .
 
@@ -1661,7 +1665,7 @@ _:b86   <http://www.w3.org/2000/01/rdf-schema#label>  "Charles Ettensohn" ;
         <http://identifiers.org/preferredPrefix>  "ECO" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology for experimental and other evidence statements." ;
-        <http://purl.org/dc/elements/1.1/title>  "Evidence ontology" ;
+        <http://purl.org/dc/elements/1.1/title>  "Evidence and Conclusion Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/34986598> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/30407590> ;
@@ -1669,6 +1673,7 @@ _:b86   <http://www.w3.org/2000/01/rdf-schema#label>  "Charles Ettensohn" ;
         <http://purl.org/dc/terms/1.1/theme>  "investigations" ;
         <http://rdf-vocabulary.ddialliance.org/discovery#fundedBy>  <https://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400> ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/evidenceontology/evidenceontology/issues" ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://www.evidenceontology.org/browse> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/eco.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b87 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/eco.owl> ;
@@ -1686,6 +1691,10 @@ _:b86   <http://www.w3.org/2000/01/rdf-schema#label>  "Charles Ettensohn" ;
 
 <https://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400>
         <http://purl.org/dc/elements/1.1/title>  "NSF ABI-1458400" .
+
+<https://www.evidenceontology.org/browse>
+        <http://purl.org/dc/elements/1.1/title>  "ECO Browser" ;
+        <http://www.w3.org/2000/01/rdf-schema#label>  "ECO" .
 
 _:b87   <http://www.w3.org/2000/01/rdf-schema#label>  "Michelle Giglio" ;
         <http://xmlns.com/foaf/0.1/mbox>  "mgiglio@som.umaryland.edu" .

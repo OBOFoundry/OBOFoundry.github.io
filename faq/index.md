@@ -29,7 +29,7 @@ title: OBO Foundry Frequently Asked Questions
 - [How do I edit the metadata for my ontology?](/faq/how-do-i-edit-metadata.html)
 - [What are permissible values in the metadata file, e.g. for 'publications'?](/faq/permissible-metadata-content.html)
 - [What is the `build` object in the ontology metadata?](/faq/what-is-the-build-field.html)
-- [What does it mean for an ontology to be flagged as 'inactive', 'orphaned' or 'obsolete'?](/docs/OntologyStatus.html)
+- [What does it mean for an ontology to be flagged as 'inactive', 'unresponsive', 'orphaned' or 'obsolete'?](/docs/OntologyStatus.html)
 
 ### OBO Dashboard
 
