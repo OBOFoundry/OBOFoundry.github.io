@@ -108,9 +108,9 @@ For a discussion on this SOP, see [here](https://github.com/OBOFoundry/OBOFoundr
 
 <a name="REACTIVATION"></a>
 
-## Reactivating obsolete, orphaned, or inactive ontologies
+## Reactivating obsolete, orphaned, unresponsive, or inactive ontologies
 
-To mark ontologies that were marked as either obsolete, orphaned, or inactive as active again, we follow this process. 
+To mark ontologies that were marked as either obsolete, orphaned, unresponsive, or inactive as active again, we follow this process. 
 Currently, these are the required steps:
 
 1. A person involved in developing the ontology (usually the contact person) makes a pull request (PR) on the metadata file with the desired change in status. The PR must include evidence to demonstrate new activity, for example by referring to recently-closed issues (we will provide more detailed guidelines as this SOP matures). If the PR was made by someone other than the contact person, or if the contact person has changed, the contact should be tagged in the PR so that the proper followup can be done. The contact person then has one month to verify that the change is desired.
@@ -118,6 +118,7 @@ Currently, these are the required steps:
 1. The OBO Operations committee assigns a status change reviewer during the next call to analyse the evidence for the change. Only the evidence matters - no need to collect more evidence in favor of the status change.
 1. Within two weeks the status change reviewer presents the arguments for and against the status change at an OBO Operations call.
 1. If there is no significant objection within a four week time period, the status change is enacted by merging the pull request.
+1. The contact person for the ontology should be notified of the acceptance or rejection of the change.
 
 <a name="OPS_MEMBER"></a>
 
