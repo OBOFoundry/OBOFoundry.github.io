@@ -30,11 +30,6 @@ publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
   title: 'The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics.'
 repository: https://github.com/Planteome/plant-ontology
-review:
-  date: 2013
-  document:
-    label: PDF
-    link: https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae

@@ -25,11 +25,6 @@ products:
 - id: bfo.owl
 - id: bfo.obo
 repository: https://github.com/BFO-ontology/BFO
-review:
-  date: 2016
-  document:
-    label: PDF
-    link: https://drive.google.com/open?id=0B81h9ah4tAM_RnNTRUZnVGRyWXM
 tracker: https://github.com/BFO-ontology/BFO/issues
 usages:
 - description: BFO is imported by multiple OBO ontologies to standardize upper level structure
