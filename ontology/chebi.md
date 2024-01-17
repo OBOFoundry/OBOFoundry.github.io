@@ -38,8 +38,6 @@ publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/26467479
   title: 'ChEBI in 2016: Improved services and an expanding collection of metabolites.'
 repository: https://github.com/ebi-chebi/ChEBI
-review:
-  date: 2010
 tracker: https://github.com/ebi-chebi/ChEBI/issues
 twitter: chebit
 usages:
