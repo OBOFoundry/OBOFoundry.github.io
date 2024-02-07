@@ -21,7 +21,9 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 
 1. When receiving a new ontology request (NOR), the NOR Manager should thank the submitter for their submission. In addition, the NOR Manager should assist NOR submitters in understanding the NOR process and passing the NOR review during the whole process.
 2. The NOR Manager adds the new submission to the NOR dashboard, which is deployed at https://obofoundry.github.io/obo-nor.github.io/
-3. In addition to the dashboard, the NOR Manager could need to manually review that the submitted ontology adheres to the OBO foundry [principles](http://obofoundry.org/principles/fp-000-summary.html). For example, IRIs and object properties need to be reviewed manually pending the implementation of new automated checks. 
+3. In addition to the dashboard the NOR Manager 
+   - manually reviews that the submitted ontology adheres to the OBO foundry [principles](http://obofoundry.org/principles/fp-000-summary.html). For example, IRIs and object properties need to be reviewed manually pending the implementation of new automated checks. 
+   - runs a lexical matching tool on the submitted ontology that checks for lexical overlap with existing OBO ontologies, and posts the results of that matching process as a comment in the NOR issue. The comment should instruct the submitter to address all cases where a new identifier was introduced for a concept (1) that already existed, or (2) that would be in scope for another ontology, clearly citing this SOP.
 4. After the dashboard is run and the manual review is done, the NOR Manager informs the OBO Foundry Operations Committee of any issues for consideration. Until all issues are resolved or the NOR request is rejected, the NOR Manager acts as a liaison between the OBO Foundry Operations Committee and the NOR submitter.
 5. Once the new ontology passes the review, the NOR manager assigns the next available reviewer from the OBO operation members.
 6. Finally, when the ontology is fully accepted, the NOR manager remove the ontology from the OBO NOR dashboard.
@@ -38,9 +40,6 @@ Check the following and provide a brief summary in the tracker issue for the new
 1. Ontology scope. The new ontology must present use cases demonstrating its relevance to the life sciences.  Was the ontology developed using expert input or trusted scientific sources representative of the consensus in its target domain of knowledge? If the ontology was developed for a very specific purpose or community, representation and consensus need not be broad; however, this scope should be clearly stated.
 2. Terms with the new ontology prefix. 
 All new terms MUST follow the [OBO identifier scheme](http://obofoundry.org/id-policy) (often they are accidentally written wrongly, e.g. using https instead of http).
-The Ontology reviewer MUST run a lexical matching tool on the submitted ontology that checks for lexical overlap with existing OBO ontologies,
-and post the results of that matching process as a comment in the NOR issue. The comment should instruct the submitter to address all cases where a new identifier was introduced for a concept (1) that already existed,
-or (2) that would be in scope for another ontology, clearly citing this SOP.  
 There MUST NOT be a term with the same meaning available in another OBO Foundry ontology, ie there must not be a term referring to a concept that already exists in another OBO Foundry ontology (whether or not the label is identical). There SHOULD NOT be another OBO Foundry ontology whose scope covers any of the new terms (NCIT excluded, which was included in OBO as a bridge and does not commit to OBO principles). In the event that these conditions cannot be fulfilled, justification(s) MUST be provided. Such justification(s) include:
     - the demonstration that these terms are actually not the same (this happens when term meaning/concept is ambiguous); or
     - the other OBO Foundry ontology (for which the terms were in scope) was contacted and rejected the request for adding new terms in scope for that ontology.
