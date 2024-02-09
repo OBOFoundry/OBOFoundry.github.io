@@ -21,7 +21,9 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 
 1. When receiving a new ontology request (NOR), the NOR Manager should thank the submitter for their submission. In addition, the NOR Manager should assist NOR submitters in understanding the NOR process and passing the NOR review during the whole process.
 2. The NOR Manager adds the new submission to the NOR dashboard, which is deployed at https://obofoundry.github.io/obo-nor.github.io/
-3. In addition to the dashboard, the NOR Manager could need to manually review that the submitted ontology adheres to the OBO foundry [principles](http://obofoundry.org/principles/fp-000-summary.html). For example, IRIs and object properties need to be reviewed manually pending the implementation of new automated checks. 
+3. In addition to the dashboard the NOR Manager 
+   - manually reviews that the submitted ontology adheres to the OBO foundry [principles](http://obofoundry.org/principles/fp-000-summary.html). For example, IRIs and object properties need to be reviewed manually pending the implementation of new automated checks. 
+   - runs a lexical matching tool on the submitted ontology that checks for lexical overlap with existing OBO ontologies, and posts the results of that matching process as a comment in the NOR issue. The comment should instruct the submitter to address all cases where a new identifier was introduced for a concept (1) that already existed, or (2) that would be in scope for another ontology, clearly citing this SOP.
 4. After the dashboard is run and the manual review is done, the NOR Manager informs the OBO Foundry Operations Committee of any issues for consideration. Until all issues are resolved or the NOR request is rejected, the NOR Manager acts as a liaison between the OBO Foundry Operations Committee and the NOR submitter.
 5. Once the new ontology passes the review, the NOR manager assigns the next available reviewer from the OBO operation members.
 6. Finally, when the ontology is fully accepted, the NOR manager remove the ontology from the OBO NOR dashboard.
@@ -37,8 +39,8 @@ The goal of this SOP is to provide a clear set of criteria to be checked for the
 Check the following and provide a brief summary in the tracker issue for the new ontology request (note that a brief version of this list--and expected answers--are given in the [Ontology Review Workflow](https://obofoundry.org/docs/OntologiesReviewWorkflow.html)). All items of feedback must be provided using GitHub checklist syntax (`- [ ] TODO`) in order to track how far along they are in being addressed. Addressable issues identified as part of the review should be added to the new ontology’s issue tracker.
 1. Ontology scope. The new ontology must present use cases demonstrating its relevance to the life sciences.  Was the ontology developed using expert input or trusted scientific sources representative of the consensus in its target domain of knowledge? If the ontology was developed for a very specific purpose or community, representation and consensus need not be broad; however, this scope should be clearly stated.
 2. Terms with the new ontology prefix. 
-All new terms MUST follow the [OBO identifier scheme](http://obofoundry.org/id-policy) (often they are accidentally written wrongly, e.g. using https instead of http). 
-There MUST NOT be a term with the same meaning available in another OBO Foundry ontology, ie there must not be a term referring to a concept that already exists in another OBO Foundry ontology (whether or not the label is identical). There SHOULD NOT be another OBO Foundry ontology whose scope covers any of the new terms. In the event that these conditions cannot be fulfilled, justification(s) MUST be provided. Such justification(s) include:
+All new terms MUST follow the [OBO identifier scheme](http://obofoundry.org/id-policy) (often they are accidentally written wrongly, e.g. using https instead of http).
+There MUST NOT be a term with the same meaning available in another OBO Foundry ontology, ie there must not be a term referring to a concept that already exists in another OBO Foundry ontology (whether or not the label is identical). There SHOULD NOT be another OBO Foundry ontology whose scope covers any of the new terms (NCIT excluded, which was included in OBO as a bridge and does not commit to OBO principles). In the event that these conditions cannot be fulfilled, justification(s) MUST be provided. Such justification(s) include:
     - the demonstration that these terms are actually not the same (this happens when term meaning/concept is ambiguous); or
     - the other OBO Foundry ontology (for which the terms were in scope) was contacted and rejected the request for adding new terms in scope for that ontology.
 3. Correct use of imported terms. Does the ontology accurately reuse terms from other OBO ontologies?
@@ -108,9 +110,9 @@ For a discussion on this SOP, see [here](https://github.com/OBOFoundry/OBOFoundr
 
 <a name="REACTIVATION"></a>
 
-## Reactivating obsolete, orphaned, or inactive ontologies
+## Reactivating obsolete, orphaned, unresponsive, or inactive ontologies
 
-To mark ontologies that were marked as either obsolete, orphaned, or inactive as active again, we follow this process. 
+To mark ontologies that were marked as either obsolete, orphaned, unresponsive, or inactive as active again, we follow this process. 
 Currently, these are the required steps:
 
 1. A person involved in developing the ontology (usually the contact person) makes a pull request (PR) on the metadata file with the desired change in status. The PR must include evidence to demonstrate new activity, for example by referring to recently-closed issues (we will provide more detailed guidelines as this SOP matures). If the PR was made by someone other than the contact person, or if the contact person has changed, the contact should be tagged in the PR so that the proper followup can be done. The contact person then has one month to verify that the change is desired.
@@ -118,6 +120,7 @@ Currently, these are the required steps:
 1. The OBO Operations committee assigns a status change reviewer during the next call to analyse the evidence for the change. Only the evidence matters - no need to collect more evidence in favor of the status change.
 1. Within two weeks the status change reviewer presents the arguments for and against the status change at an OBO Operations call.
 1. If there is no significant objection within a four week time period, the status change is enacted by merging the pull request.
+1. The contact person for the ontology should be notified of the acceptance or rejection of the change.
 
 <a name="OPS_MEMBER"></a>
 

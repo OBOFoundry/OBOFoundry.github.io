@@ -1226,6 +1226,7 @@ _:b62   <http://www.w3.org/2000/01/rdf-schema#label>  "Jennifer Smith" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b63 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cob.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cob/cob-base.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cob/cob-native.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cob/cob-to-external.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cob/products/demo-cob.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://obofoundry.org/COB/> .
@@ -1242,6 +1243,11 @@ _:b63   <http://www.w3.org/2000/01/rdf-schema#label>  "Bjoern Peters" ;
         <http://purl.org/dc/elements/1.1/description>  "base module for COB" ;
         <http://purl.org/dc/elements/1.1/title>  "COB base module" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/cob/cob-base.owl" .
+
+<http://purl.obolibrary.org/obo/cob/cob-native.owl>
+        <http://purl.org/dc/elements/1.1/description>  "COB with native IDs preserved rather than rewired to OBO IDs" ;
+        <http://purl.org/dc/elements/1.1/title>  "COB native module" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/cob/cob-native.owl" .
 
 <http://purl.obolibrary.org/obo/cob/cob-to-external.owl>
         <http://purl.org/dc/elements/1.1/title>  "COB to external" ;

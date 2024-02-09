@@ -40,8 +40,6 @@ publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/27899649
   title: 'Protein Ontology (PRO): enhancing and scaling up the representation of protein entities'
 repository: https://github.com/PROconsortium/PRoteinOntology
-review:
-  date: 2010
 tags:
 - proteins
 tracker: https://github.com/PROconsortium/PRoteinOntology/issues

@@ -31,8 +31,6 @@ publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/15642100
   title: Using ontologies to describe mouse phenotypes
 repository: https://github.com/pato-ontology/pato
-review:
-  date: 2010
 tracker: https://github.com/pato-ontology/pato/issues
 usages:
 - description: PATO is used by the Human Phenotype Ontology (HPO) for logical definitions of phenotypes that facilitate cross-species integration.

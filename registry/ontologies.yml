@@ -317,11 +317,6 @@ ontologies:
   - id: bfo.obo
     ontology_purl: http://purl.obolibrary.org/obo/bfo.obo
   repository: https://github.com/BFO-ontology/BFO
-  review:
-    date: 2016
-    document:
-      label: PDF
-      link: https://drive.google.com/open?id=0B81h9ah4tAM_RnNTRUZnVGRyWXM
   title: Basic Formal Ontology
   tracker: https://github.com/BFO-ontology/BFO/issues
   usages:
@@ -549,8 +544,6 @@ ontologies:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/26467479
     title: 'ChEBI in 2016: Improved services and an expanding collection of metabolites.'
   repository: https://github.com/ebi-chebi/ChEBI
-  review:
-    date: 2010
   title: Chemical Entities of Biological Interest
   tracker: https://github.com/ebi-chebi/ChEBI/issues
   twitter: chebit
@@ -1054,6 +1047,10 @@ ontologies:
     id: cob/cob-base.owl
     ontology_purl: http://purl.obolibrary.org/obo/cob/cob-base.owl
     title: COB base module
+  - description: COB with native IDs preserved rather than rewired to OBO IDs
+    id: cob/cob-native.owl
+    ontology_purl: http://purl.obolibrary.org/obo/cob/cob-native.owl
+    title: COB native module
   - id: cob/cob-to-external.owl
     ontology_purl: http://purl.obolibrary.org/obo/cob/cob-to-external.owl
     title: COB to external
@@ -1408,11 +1405,6 @@ ontologies:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
     title: The Human Disease Ontology 2022 update
   repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
-  review:
-    date: 2015
-    document:
-      label: PDF
-      link: https://drive.google.com/open?id=0B8vqEgF1N0NIZ082U2JETHlSTGs
   tags:
   - disease
   taxon:
@@ -2696,8 +2688,6 @@ ontologies:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/33290552
     title: 'The Gene Ontology resource: enriching a GOld mine'
   repository: https://github.com/geneontology/go-ontology
-  review:
-    date: 2010
   tags:
   - biology
   taxon:
@@ -4439,11 +4429,6 @@ ontologies:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/27128319
     title: The Ontology for Biomedical Investigations
   repository: https://github.com/obi-ontology/obi
-  review:
-    date: 2013
-    document:
-      label: PDF
-      link: https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc
   title: Ontology for Biomedical Investigations
   tracker: http://purl.obolibrary.org/obo/obi/tracker
   usages:
@@ -5179,8 +5164,6 @@ ontologies:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/15642100
     title: Using ontologies to describe mouse phenotypes
   repository: https://github.com/pato-ontology/pato
-  review:
-    date: 2010
   title: Phenotype And Trait Ontology
   tracker: https://github.com/pato-ontology/pato/issues
   usages:
@@ -5498,11 +5481,6 @@ ontologies:
     title: 'The Planteome database: an integrated resource for reference ontologies,
       plant genomics and phenomics.'
   repository: https://github.com/Planteome/plant-ontology
-  review:
-    date: 2013
-    document:
-      label: PDF
-      link: https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc
   taxon:
     id: NCBITaxon:33090
     label: Viridiplantae
@@ -5642,8 +5620,6 @@ ontologies:
     title: 'Protein Ontology (PRO): enhancing and scaling up the representation of
       protein entities'
   repository: https://github.com/PROconsortium/PRoteinOntology
-  review:
-    date: 2010
   tags:
   - proteins
   title: PRotein Ontology (PRO)
@@ -7183,8 +7159,6 @@ ontologies:
     title: 'Enhanced XAO: the ontology of Xenopus anatomy and development underpins
       more accurate annotation of gene expression and queries on Xenbase.'
   repository: https://github.com/xenopus-anatomy/xao
-  review:
-    date: 2010
   taxon:
     id: NCBITaxon:8353
     label: Xenopus
@@ -7380,8 +7354,6 @@ ontologies:
     title: 'The zebrafish anatomy and stage ontologies: representing the anatomy and
       development of Danio rerio.'
   repository: https://github.com/cerivs/zebrafish-anatomical-ontology
-  review:
-    date: 2010
   taxon:
     id: NCBITaxon:7954
     label: Danio

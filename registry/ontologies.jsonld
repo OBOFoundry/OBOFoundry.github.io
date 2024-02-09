@@ -454,13 +454,6 @@
                 }
             ],
             "repository": "https://github.com/BFO-ontology/BFO",
-            "review": {
-                "date": 2016,
-                "document": {
-                    "label": "PDF",
-                    "link": "https://drive.google.com/open?id=0B81h9ah4tAM_RnNTRUZnVGRyWXM"
-                }
-            },
             "title": "Basic Formal Ontology",
             "tracker": "https://github.com/BFO-ontology/BFO/issues",
             "usages": [
@@ -774,9 +767,6 @@
                 }
             ],
             "repository": "https://github.com/ebi-chebi/ChEBI",
-            "review": {
-                "date": 2010
-            },
             "title": "Chemical Entities of Biological Interest",
             "tracker": "https://github.com/ebi-chebi/ChEBI/issues",
             "twitter": "chebit",
@@ -1481,6 +1471,12 @@
                     "title": "COB base module"
                 },
                 {
+                    "description": "COB with native IDs preserved rather than rewired to OBO IDs",
+                    "id": "cob/cob-native.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/cob/cob-native.owl",
+                    "title": "COB native module"
+                },
+                {
                     "id": "cob/cob-to-external.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/cob/cob-to-external.owl",
                     "title": "COB to external",
@@ -1956,13 +1952,6 @@
                 }
             ],
             "repository": "https://github.com/DiseaseOntology/HumanDiseaseOntology",
-            "review": {
-                "date": 2015,
-                "document": {
-                    "label": "PDF",
-                    "link": "https://drive.google.com/open?id=0B8vqEgF1N0NIZ082U2JETHlSTGs"
-                }
-            },
             "tags": [
                 "disease"
             ],
@@ -3830,9 +3819,6 @@
                 }
             ],
             "repository": "https://github.com/geneontology/go-ontology",
-            "review": {
-                "date": 2010
-            },
             "tags": [
                 "biology"
             ],
@@ -6228,13 +6214,6 @@
                 }
             ],
             "repository": "https://github.com/obi-ontology/obi",
-            "review": {
-                "date": 2013,
-                "document": {
-                    "label": "PDF",
-                    "link": "https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc"
-                }
-            },
             "title": "Ontology for Biomedical Investigations",
             "tracker": "http://purl.obolibrary.org/obo/obi/tracker",
             "usages": [
@@ -7210,9 +7189,6 @@
                 }
             ],
             "repository": "https://github.com/pato-ontology/pato",
-            "review": {
-                "date": 2010
-            },
             "title": "Phenotype And Trait Ontology",
             "tracker": "https://github.com/pato-ontology/pato/issues",
             "usages": [
@@ -7698,13 +7674,6 @@
                 }
             ],
             "repository": "https://github.com/Planteome/plant-ontology",
-            "review": {
-                "date": 2013,
-                "document": {
-                    "label": "PDF",
-                    "link": "https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc"
-                }
-            },
             "taxon": {
                 "id": "NCBITaxon:33090",
                 "label": "Viridiplantae"
@@ -7907,9 +7876,6 @@
                 }
             ],
             "repository": "https://github.com/PROconsortium/PRoteinOntology",
-            "review": {
-                "date": 2010
-            },
             "tags": [
                 "proteins"
             ],
@@ -10056,9 +10022,6 @@
                 }
             ],
             "repository": "https://github.com/xenopus-anatomy/xao",
-            "review": {
-                "date": 2010
-            },
             "taxon": {
                 "id": "NCBITaxon:8353",
                 "label": "Xenopus"
@@ -10338,9 +10301,6 @@
                 }
             ],
             "repository": "https://github.com/cerivs/zebrafish-anatomical-ontology",
-            "review": {
-                "date": 2010
-            },
             "taxon": {
                 "id": "NCBITaxon:7954",
                 "label": "Danio"

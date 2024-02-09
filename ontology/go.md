@@ -92,8 +92,6 @@ publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/33290552
   title: 'The Gene Ontology resource: enriching a GOld mine'
 repository: https://github.com/geneontology/go-ontology
-review:
-  date: 2010
 tags:
 - biology
 taxon:
