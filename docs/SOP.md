@@ -25,7 +25,7 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
    - manually reviews that the submitted ontology adheres to the OBO foundry [principles](http://obofoundry.org/principles/fp-000-summary.html). For example, IRIs and object properties need to be reviewed manually pending the implementation of new automated checks. 
    - runs a lexical matching tool on the submitted ontology that checks for lexical overlap with existing OBO ontologies, and posts the results of that matching process as a comment in the NOR issue. The comment should instruct the submitter to address all cases where a new identifier was introduced for a concept (1) that already existed, or (2) that would be in scope for another ontology, clearly citing this SOP.
 4. After the dashboard is run and the manual review is done, the NOR Manager informs the OBO Foundry Operations Committee of any issues for consideration. Until all issues are resolved or the NOR request is rejected, the NOR Manager acts as a liaison between the OBO Foundry Operations Committee and the NOR submitter.
-5. Once the new ontology passes the automated review, the NOR manager assigns the next available OBO operation member to act as designated NOR Reviewer.
+5. Once the new ontology passes the automated review, the NOR manager assigns the next available OBO operations member to act as designated NOR Reviewer.
 6. Finally, when the ontology is fully accepted, the NOR manager removes the ontology from the OBO NOR dashboard.
 
 New Ontology Requests SOP are fully documented [here](/roles/nor-manager). 
