@@ -31,10 +31,13 @@ title: OBO Foundry Frequently Asked Questions
 - [What is the `build` object in the ontology metadata?](/faq/what-is-the-build-field.html)
 - [What does it mean for an ontology to be flagged as 'inactive', 'unresponsive', 'orphaned' or 'obsolete'?](/docs/OntologyStatus.html)
 
-### OBO Dashboard
+### OBO Foundry Dashboard
 
-- [What is the OBO Dashboard?](/faq/dashboard.html)
+- [What is the OBO Foundry Dashboard?](/faq/dashboard.html)
+- [What does it mean for an ontology to "pass" the Dashboard?](/faq/dashboard.html)
 - [How can I assess my ontology using the OBO Dashboard?](/faq/dashboard.html)
+- [What if I want to check my ontology's OBO compliance without submitting it to the OBO Foundry?](/faq/dashboard.html)
+- [Where can I find information describing how to rectify issues reported by the OBO Dashboard?](/faq/dashboard.html)
 
 ### Guides
 
