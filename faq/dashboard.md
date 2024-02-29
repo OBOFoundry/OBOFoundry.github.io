@@ -29,7 +29,7 @@ An ontology is considered to have "passed" the OBO Dashboard checks if the statu
 - Evaluations for ontologies accepted into the OBO Foundry occur monthly, and can be found at the [OBO Dashboard](http://dashboard.obofoundry.org/dashboard/index.html) page.
 - Evaluations for newly-submitted ontologies occur weekly, and can be found at the [New Ontology Request Dashboard](https://obofoundry.org/obo-nor.github.io/dashboard/index.html) page throughout the submission process (that is, during the period extending from initial submission through acceptance or rejection). This is a separate dashboard specifically for new ontology requests.
 
-### What if I want to check my ontology's OBO compliance without submitting it to the OBO Foundry?
+## What if I want to check my ontology's OBO compliance without submitting it to the OBO Foundry?
 
 - The OBO Academy OBook has a how-to guide on how to run the dashboard locally: [https://oboacademy.github.io/obook/howto/deploy-custom-obo-dashboard/](https://oboacademy.github.io/obook/howto/deploy-custom-obo-dashboard/)
 - Another approach is to install the [ROBOT](https://robot.obolibrary.org/) command-line tool and use the ['report' command](https://robot.obolibrary.org/report)
