@@ -25,16 +25,18 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
    - manually reviews that the submitted ontology adheres to the OBO foundry [principles](http://obofoundry.org/principles/fp-000-summary.html). For example, IRIs and object properties need to be reviewed manually pending the implementation of new automated checks. 
    - runs a lexical matching tool on the submitted ontology that checks for lexical overlap with existing OBO ontologies, and posts the results of that matching process as a comment in the NOR issue. The comment should instruct the submitter to address all cases where a new identifier was introduced for a concept (1) that already existed, or (2) that would be in scope for another ontology, clearly citing this SOP.
 4. After the dashboard is run and the manual review is done, the NOR Manager informs the OBO Foundry Operations Committee of any issues for consideration. Until all issues are resolved or the NOR request is rejected, the NOR Manager acts as a liaison between the OBO Foundry Operations Committee and the NOR submitter.
-5. Once the new ontology passes the review, the NOR manager assigns the next available reviewer from the OBO operation members.
-6. Finally, when the ontology is fully accepted, the NOR manager remove the ontology from the OBO NOR dashboard.
+5. Once the new ontology passes the automated review, the NOR manager assigns the next available OBO operations member to act as designated NOR Reviewer.
+6. Finally, when the ontology is fully accepted, the NOR manager removes the ontology from the OBO NOR dashboard.
 
 New Ontology Requests SOP are fully documented [here](/roles/nor-manager). 
-
 
 <a name="ROOM"></a>
 ### Reviewing Ontologies for OBO Membership
 
-The goal of this SOP is to provide a clear set of criteria to be checked for the manual review of an ontology in response to a request to register that new ontology with the OBO Foundry. It is expected that a programmatic review using the Dashboard has already been done and the submitters have addressed any problems found. The purpose of the manual review is to check the ontology for issues that the Dashboard review does not cover. A sample of terms/axioms should be checked. In order for this review to be relatively quick (~ 2 hours), the reviewer is not expected to review all the terms/axioms.
+The goal of this SOP is to (1) provide a list of items to be checked during manual review of a newly-registered ontology (and the criteria used to review each item); and (2) provide a clear set of rules governing how suggested changes are communicated to the ontology submitter. These are the responsibility of the designated NOR Reviewer. Note that the NOR Reviewer does not need to assist submitters in understanding the NOR process, nor pass the NOR Dashboard, nor assist submitters to make registry metadata and PURL pull requests. Those are the responsibility of the NOR Manager (see [roles overview](https://obofoundry.org/roles/overview)). 
+
+#### What to Review/Criteria Used
+It is expected that a programmatic review using the Dashboard has already been done and the submitters have addressed any problems found. The purpose of the manual review is to check the ontology for issues that the Dashboard review does not cover. A sample of terms/axioms should be checked. In order for this review to be relatively quick (~ 2 hours), the NOR Reviewer is not expected to review all the terms/axioms.
 
 Check the following and provide a brief summary in the tracker issue for the new ontology request (note that a brief version of this list--and expected answers--are given in the [Ontology Review Workflow](https://obofoundry.org/docs/OntologiesReviewWorkflow.html)). All items of feedback must be provided using GitHub checklist syntax (`- [ ] TODO`) in order to track how far along they are in being addressed. Addressable issues identified as part of the review should be added to the new ontology’s issue tracker.
 1. Ontology scope. The new ontology must present use cases demonstrating its relevance to the life sciences.  Was the ontology developed using expert input or trusted scientific sources representative of the consensus in its target domain of knowledge? If the ontology was developed for a very specific purpose or community, representation and consensus need not be broad; however, this scope should be clearly stated.
@@ -52,7 +54,13 @@ Are axioms generally highly complex? If so, we should review a handful to ensure
 5. Appropriate use of [object properties](https://www.w3.org/TR/2004/REC-owl-semantics-20040210/#owl_ObjectProperty). Examples of incorrect usage include those based on some interpretation of the label of the object property but not actually fitting the property definition or domain and range. A typical example of incorrect usage is R some (A and B and C) to mean R some A and R some B and R some C.
 6. Responsiveness to suggested changes. A willingness to fix any identified issues during the review must be demonstrated. Issues expected to be addressed should be added using GitHub checklist syntax (`- [ ] TODO`) in the GitHub issue. The time limit for addressing these is 2 months; a longer period should be requested if needed.
 
-Note that the NOR Manager (see [roles overview](https://obofoundry.org/roles/overview)) can help assist NOR submitters in understanding the NOR process and passing the NOR Dashboard, as well as later assisting successful NOR submitters in making registry metadata and PURL pull requests
+#### Rules of Communication
+Part of the NOR review process includes helping submitters navigate through suggested improvements. Specifically, the designated NOR Reviewer acts as the official interface between the NOR submitter and the OBO community. As such, the designated NOR Reviewer is tasked with:
+1. Communicating review results to the ontology submitter by providing feedback on the relevant GitHub tracker. Actionable items should be provided using GitHub checklist syntax (- [ ] TODO) in order to track how far along they are in being addressed. Each item should have an indication of whether they MUST, SHOULD, or MUST NOT be processed by the ontology submitter.
+2. Coordinating any OBO community comments into items of feedback and communicating these items to the ontology submitter as indicated above.
+3. Informing the ontology submitter (and the community) that _only the items provided by the designated OBO Foundry reviewer need to be addressed_. That is, the Reviewer needs to make explicit what action, if any, needs to be taken with respect to comments/suggestions made by anyone other than the designated NOR Reviewer. If the suggestion is in accordance with the requirements of the principles, add to the checklist. If not, the NOR Reviewer should make clear that such 'extra' suggestions are at the submitter's discretion.
+
+In summary, the designated NOR Reviewer is considered the final arbiter of requirements, and in some cases might have to clarify which suggestions made by other reviewers are required (MUST), which are simply good to do but not required (SHOULD), and which should not be done (MUST NOT).
 
 <a name="OAE"></a>
 ## Ontology Acceptance/Rejection Decision
