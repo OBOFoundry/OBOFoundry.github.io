@@ -22,7 +22,7 @@ Each element of the Dashboard check (corresponding to each principle) has four p
 
 The last column of the Dashboard ('Summary') corresponds to the lowest result of all checks. For example, if there are any errors, this column will contain an 'x' on a red background. If there are any 'Info' results, but no 'Error' or 'Warning' results, this column will contain an italics 'i' on a blue background.
 
-An ontology is considered to have "passed" the OBO Dashboard checks if the status in the 'Summary' column is anything other than that of 'Error'.
+An ontology is considered to have "passed" the OBO Dashboard checks if the status in the 'Summary' column is anything other than 'Error'.
 
 ## How can I assess my ontology using the OBO Dashboard?
 
