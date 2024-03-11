@@ -111,12 +111,6 @@ jQuery(document).ready(function() {
                             <th scope="col">
                                 <span>Dashboard Status</span>
                             </th>
-                            <!-- style="display:none;" -->
-                            <th scope="col">
-                                <span class="sort-button" title="Sort by Dashboard success" data-sort="success_sort_order" >
-                                    Success Sort order <i class="bi-chevron-up" aria-hidden="true"></i>
-                                </span>
-                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -151,10 +145,18 @@ jQuery(document).ready(function() {
             let domainTables = ``;
             let tableDomains = []; // list of domains
             let tableDomainhtml = {}; // hold html table data with domain as key
+            const sortRows = (a, b) => {
+                if (dashboard_success_data[a.id] !== dashboard_success_data[b.id]) {
+                    return dashboard_success_data[a.id] > dashboard_success_data[b.id] ? -1 : 1;
+                } else {
+                    return a.id > b.id ? 1 : -1;
+                }
+            }
+            data.sort(sortRows)
+
             for (let i = 0; i < data.length; i++) {
                 let id = data[i]['id'];
                 let dash_success = dashboard_success_data[id];
-                let success_sort_order = dash_success ? 0 : 1;
                 let is_obsolete = "";
                 let is_inactive = "";
                 let activity_status = data[i]['activity_status']
@@ -293,9 +295,6 @@ jQuery(document).ready(function() {
                         </td>
                         <td>
                             ${dash_success_indicator}
-                        </td>
-                        <td>
-                            ${success_sort_order}
                         </td>
                     </tr>
                 `;
