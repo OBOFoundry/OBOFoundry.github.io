@@ -121,38 +121,51 @@ jQuery(document).ready(function() {
     }
 
     /**
-     * converts json data passed in into renderTable into html table
+     * Parse raw HTML OBO Dashboard into structured success information
+     * @param  {String} dashboardHtml Raw HTML fetched from live OBO Dashboard instance
+     * @return {string} object mapping ontology IDs to status boolean
+     */
+    function parseDashboardHtml(dashboardHtml) {
+      const dashboard_html = new DOMParser().parseFromString(dashboardHtml, "text/html");
+      const dashboard_table = dashboard_html.getElementsByClassName("table table-borderless")[0];
+      const rows = Array.from(dashboard_table.getElementsByTagName("tr")).slice(1);
+      const dashboard_success_data = rows.reduce((acc, row) => {
+        const cells = row.getElementsByTagName("td");
+        const id = cells[0].innerText;
+        const status_cell = cells[cells.length - 1];
+        acc[id] = !status_cell.classList.contains("table-danger");
+        return acc;
+      }, {})
+      return dashboard_success_data;
+    }
+
+    /**
+     * Construct and render HTML ontology table(s)
      * @param {object} data Ontology json data.
-     * @param {boolean} [domain=false]
+     * @param {boolean} [domain=false] if true, render tables grouped by domain rather than one big table
      */
     function renderTable(data, domain= false ) {
-        let dashboard_url = "https://dashboard.obofoundry.org/dashboard/index.html";
-        let dashboard_success_data = {};
+        const dashboard_url = "https://dashboard.obofoundry.org/dashboard/index.html";
+        let dashboard_success_data;
         fetch(dashboard_url)
             .then(response => response.text())
             .then((table_data) => {
-                let dashboard_html = new DOMParser().parseFromString(table_data, "text/html");
-                let dashboard_table = dashboard_html.getElementsByClassName("table table-borderless")[0];
-                let rows = dashboard_table.getElementsByTagName("tr");
-                for (let row_index = 1; row_index < rows.length; row_index++) {
-                    let cells = rows[row_index].getElementsByTagName("td");
-                    let id = cells[0].innerText;
-                    let status_cell = cells[cells.length - 1]
-                    dashboard_success_data[id] = !status_cell.classList.contains("table-danger");
-                }
-        }).then(() => {
+                dashboard_success_data = parseDashboardHtml(table_data);
+            }).then(() => {
+                // by default, sort ontology records first by dashboard success status, then alphabetically
+                data.sort((a, b) => {
+                    if (dashboard_success_data[a.id] !== dashboard_success_data[b.id]) {
+                        return dashboard_success_data[a.id] > dashboard_success_data[b.id] ? -1 : 1;
+                    } else {
+                        return a.id > b.id ? 1 : -1;
+                    }
+                });
+
             let table = ``;
             let domainTables = ``;
             let tableDomains = []; // list of domains
             let tableDomainhtml = {}; // hold html table data with domain as key
-            const sortRows = (a, b) => {
-                if (dashboard_success_data[a.id] !== dashboard_success_data[b.id]) {
-                    return dashboard_success_data[a.id] > dashboard_success_data[b.id] ? -1 : 1;
-                } else {
-                    return a.id > b.id ? 1 : -1;
-                }
-            }
-            data.sort(sortRows)
+
 
             for (let i = 0; i < data.length; i++) {
                 let id = data[i]['id'];
