@@ -22,7 +22,7 @@ homepage: https://github.com/adeans/gallont/tree/main
 license:
   url: https://creativecommons.org/publicdomain/zero/1.0/
   label: CC0 1.0
-preferredPrefix: LSDAO
+preferredPrefix: GALLONT
 products:
   - id: gallont.owl
 repository: https://github.com/adeans/gallont
