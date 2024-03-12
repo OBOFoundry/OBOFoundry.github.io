@@ -24,7 +24,7 @@ license:
   label: CC0 1.0
 preferredPrefix: LSDAO
 products:
-  - id: lsdao.owl
+  - id: gallont.owl
 repository: https://github.com/adeans/gallont
 tracker: https://github.com/adeans/gallont/issues
 activity_status: active
