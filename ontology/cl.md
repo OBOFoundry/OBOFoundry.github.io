@@ -157,6 +157,10 @@ HuBMAP Consortium (2019) The human body at cellular resolution: the NIH Human Bi
 
 Regev,A., Teichmann,S.A., Lander,E.S., Amit,I., Benoist,C., Birney,E., Bodenmiller,B., Campbell,P., Carninci,P., Clatworthy,M., et al. (2017) The Human Cell Atlas. Elife, 6.
 
+**Kidney Precision Medicine Project (KPMP)**
+
+Ong E, Wang LL, Schaub J, O'Toole JF, Steck B, Rosenberg AZ, Dowd F, Hansen J, Barisoni L, Jain S, de Boer IH, Valerius MT, Waikar SS, Park C, Crawford DC, Alexandrov T, Anderton CR, Stoeckert C, Weng C, Diehl AD, Mungall CJ, Haendel M, Robinson PN, Himmelfarb J, Iyengar R, Kretzler M, Mooney S, and He Y, Kidney Precision Medicine Project. Modeling Kidney Disease Using Ontology: insights from the Kidney Precision Medicine Project. Nature Review Nephrology. 2020 Nov;16(11):686-696. doi: 10.1038/s41581-020-00335-w. PMID: 32939051. PMCID: PMC8012202.
+
 **Single Cell Expression Atlas**
 
 Papatheodorou,I., Moreno,P., Manning,J., Fuentes,A.M.-P., George,N., Fexova,S., Fonseca,N.A., Füllgrabe,A., Green,M., Huang,N., et al. (2020) Expression Atlas update: from tissues to single cells. Nucleic Acids Res., 48, D77–D83.
