@@ -25,7 +25,7 @@ license:
 preferredPrefix: GALLONT
 products:
   - id: gallont.owl
-  - id: galllont.json
+  - id: gallont.json
   - id: gallont.obo
   - id: gallont.obo
 repository: https://github.com/adeans/gallont
