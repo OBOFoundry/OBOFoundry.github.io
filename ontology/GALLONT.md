@@ -27,7 +27,6 @@ products:
   - id: gallont.owl
   - id: gallont.json
   - id: gallont.obo
-  - id: gallont.obo
 repository: https://github.com/adeans/gallont
 tracker: https://github.com/adeans/gallont/issues
 activity_status: active
