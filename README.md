@@ -19,7 +19,7 @@ Please do! Anyone can fork and make PR, or [create an issue in the tracker](http
 
 Note that most members of the community will do this via the [obofoundry.org website](http://obofoundry.org) - each ontology page has links for editing the metadata.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Repo Organization
 
