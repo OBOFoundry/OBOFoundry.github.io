@@ -66,7 +66,7 @@ The ontology reviewer should notify the ontology owner about their ontology's ac
 
 ### New ontologies accepted in the OBO Foundry Ontology Library
  
-* [The Gall Ontology](https://github.com/adeans/gallont). The GALLONT submission to OBO Foundry, discussed in GitHub issue [#2522](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2522), proposes an ontology for plant gall phenotypes. It aims to provide a controlled vocabulary for describing plant galls, integrating terms from [PATO](https://obofoundry.org/ontology/pato.html), [PO](https://obofoundry.org/ontology/po.html), and other OBO ontologies. The ontology has been formally accepted and is integrated into the website at the moment.
+* [The Gall Ontology](https://github.com/adeans/gallont). The GALLONT submission to OBO Foundry, discussed in GitHub issue [#2522](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2522), proposes an ontology for plant gall phenotypes. It aims to provide a controlled vocabulary for describing plant galls, integrating terms from [PATO](https://obofoundry.org/ontology/pato.html), [PO](https://obofoundry.org/ontology/po.html), and other OBO ontologies. The ontology has been formally accepted and is now [included on obofoundry.org](https://obofoundry.org/ontology/gallont.html).
 
 
 ### New ontologies currently under review 
