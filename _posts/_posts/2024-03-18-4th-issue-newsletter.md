@@ -58,7 +58,7 @@ Here, we list some of the discussions happening around the OBO-sphere:
 
 ### Reviewing Ontologies for OBO Membership
 
-[The Standard Operating Procedure (SOP)](https://obofoundry.org/docs/SOP.html#ROOM:~:text=Ontology%20Acceptance/Rejection%20Decision) for Ontology Acceptance/Rejection Decision. The reviewer presents their assessment and recommendation regarding a new ontology to the OBO Operations Committee. The committee may request clarifications from the reviewer before making a decision on the ontology's acceptance. The decision is made by consensus among the attendees on the call, meaning no strong objections are raised. There is no minimum number of attendees required for the decision to be made.
+We recently updated [the Standard Operating Procedure (SOP)](https://obofoundry.org/docs/SOP.html#ROOM:~:text=Ontology%20Acceptance/Rejection%20Decision) for Ontology Acceptance/Rejection Decision. The reviewer presents their assessment and recommendation regarding a new ontology to the OBO Operations Committee. The committee may request clarifications from the reviewer before making a decision on the ontology's acceptance. The decision is made by consensus among the attendees on the call, meaning no strong objections are raised. There is no minimum number of attendees required for the decision to be made.
 
 ### Ontology Acceptance Notification
 
