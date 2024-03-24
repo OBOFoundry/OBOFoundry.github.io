@@ -28,8 +28,6 @@ publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/24139024
   title: 'Enhanced XAO: the ontology of Xenopus anatomy and development underpins more accurate annotation of gene expression and queries on Xenbase.'
 repository: https://github.com/xenopus-anatomy/xao
-review:
-  date: 2010
 taxon:
   id: NCBITaxon:8353
   label: Xenopus
