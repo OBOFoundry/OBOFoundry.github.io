@@ -120,6 +120,21 @@ jQuery(document).ready(function() {
                 `;
     }
 
+    const DashboardStatus = {
+        PASS: 5,  // all checks pass
+        INFO: 4,  // info parameters returned
+        WARN: 3,  // warnings raised
+        ERROR: 2,  // errors raised
+        FAILED: 1,  // dashboard QC failed to run
+        UNKNOWN: 0,  // not found in dashboard results
+    }
+
+    const generateDashboardBadge = (dashboardResults) => {
+        const success = [DashboardStatus.PASS, DashboardStatus.INFO, DashboardStatus.WARN].includes(dashboardResults.status);
+        const color = success ? "green" : "red";
+        return `<img alt="Static Badge" src="https://img.shields.io/badge/%E2%9A%99_OBO_Dashboard_QC-ERROR_1%252C_WARN_2-${color}">`;
+    }
+
     /**
      * Construct and render HTML ontology table(s)
      * @param {object} data Ontology json data.
@@ -132,210 +147,228 @@ jQuery(document).ready(function() {
             .then(response => response.json())
             .then((dashboard_complete_data) => {
                 dashboard_success_data = dashboard_complete_data.ontologies.reduce((acc, onto) => {
+                    const key = onto.namespace;
                     if ("summary" in onto && "status" in onto.summary) {
-                        const key = onto.namespace;
-                        const passes = onto.summary.status !== "ERROR";
-                        acc[key] = passes;
+                        acc[key] = {
+                            status: DashboardStatus[onto.summary.status],
+                            ...onto.summary.summary_count
+                        };
+                    } else {
+                        // dashboard QC failed
+                        acc[key] = {
+                            status: DashboardStatus.FAILED,
+                        }
                     }
                     return acc;
                 }, {})
+                // the dashboard might be missing some ontologies -- e.g. if they're brand new
+                dashboard_success_data = data.reduce((acc, onto) => {
+                    if (!(onto.id in dashboard_success_data)) {
+                        acc[onto.id] = {
+                            status: DashboardStatus.UNKNOWN,
+                        }
+                    };
+                    return acc;
+                }, dashboard_success_data);
+                console.log(dashboard_success_data);
             }).then(() => {
                 // by default, sort ontology records first by dashboard success status, then alphabetically
                 data.sort((a, b) => {
-                    if (dashboard_success_data[a.id] !== dashboard_success_data[b.id]) {
-                        return dashboard_success_data[a.id] > dashboard_success_data[b.id] ? -1 : 1;
+                    if (dashboard_success_data[a.id].status !== dashboard_success_data[b.id].status) {
+                        return dashboard_success_data[a.id].status > dashboard_success_data[b.id].status ? -1 : 1;
                     } else {
                         return a.id > b.id ? 1 : -1;
                     }
                 });
 
-            let table = ``;
-            let domainTables = ``;
-            let tableDomains = []; // list of domains
-            let tableDomainhtml = {}; // hold html table data with domain as key
+                let table = ``;
+                let domainTables = ``;
+                let tableDomains = []; // list of domains
+                let tableDomainhtml = {}; // hold html table data with domain as key
 
 
-            for (let i = 0; i < data.length; i++) {
-                let id = data[i]['id'];
-                let dash_success = dashboard_success_data[id];
-                let is_obsolete = "";
-                let is_inactive = "";
-                let activity_status = data[i]['activity_status']
-                let title = data[i]['title'];
-                let license_url = "#";
-                let license_logo = "#";
-                let license_label = "";
-                let description = data[i]['description'];
-                let repo = "";
-                let homepage = data[i]["homepage"];
-                let tracker = "";
-                let contact = "";
-                let publication = "";
-                let domainInner = ["Unknown"];
-                if (data[i]['license']) {
-                    license_url = data[i]["license"]["url"];
-                    license_logo = data[i]["license"]["logo"];
-                    license_label = data[i]["license"]["label"];
-                }
+                for (let i = 0; i < data.length; i++) {
+                    let id = data[i]['id'];
+                    let dash_success = [DashboardStatus.PASS, DashboardStatus.INFO, DashboardStatus.WARN].includes(dashboard_success_data[id].status) ;
+                    let is_obsolete = "";
+                    let is_inactive = "";
+                    let activity_status = data[i]['activity_status']
+                    let title = data[i]['title'];
+                    let license_url = "#";
+                    let license_logo = "#";
+                    let license_label = "";
+                    let description = data[i]['description'];
+                    let repo = "";
+                    let homepage = data[i]["homepage"];
+                    let tracker = "";
+                    let contact = "";
+                    let publication = "";
+                    let domainInner = ["Unknown"];
+                    if (data[i]['license']) {
+                        license_url = data[i]["license"]["url"];
+                        license_logo = data[i]["license"]["logo"];
+                        license_label = data[i]["license"]["label"];
+                    }
 
-                if (data[i]["repository"] && data[i]["repository"].includes("https://github.com/")) {
-                    repo = data[i]["repository"];
-                    github_box = `
-                        <a href="${repo}">
-                            <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/${repo.replace("https://github.com/", "")}?style=social" />
-                        </a>`;
-                } else {
-                    github_box = ``;
-                }
-                if (data[i]["tracker"]) {
-                    tracker =`<a class="btn btn-outline-primary" href="${data[i]["tracker"]}" aria-label="Go to the tracker for ${title}" title="Go to the tracker for ${title}">
+                    if (data[i]["repository"] && data[i]["repository"].includes("https://github.com/")) {
+                        repo = data[i]["repository"];
+                        github_box = `
+                            <a href="${repo}">
+                                <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/${repo.replace("https://github.com/", "")}?style=social" />
+                            </a>`;
+                    } else {
+                        github_box = ``;
+                    }
+                    if (data[i]["tracker"]) {
+                        tracker =`<a class="btn btn-outline-primary" href="${data[i]["tracker"]}" aria-label="Go to the tracker for ${title}" title="Go to the tracker for ${title}">
+                                        <i class="bi-chat" aria-hidden="true"></i>
+                                    </a>`;
+                    } else {
+                        tracker = `
+                                <a class="btn btn-outline-primary disabled">
                                     <i class="bi-chat" aria-hidden="true"></i>
                                 </a>`;
-                } else {
-                    tracker = `
-                            <a class="btn btn-outline-primary disabled">
-                                <i class="bi-chat" aria-hidden="true"></i>
-                            </a>`;
-                }
-                if (data[i].hasOwnProperty("domain") && data[i]['domain'] !== undefined) {
-                    domainInner[0] = data[i]['domain'];
-                }
-                if (description !== undefined && description.toString().length > 140) {
-                    description = description.toString().slice(0, 140).trim() + '...'
-                }
-                if (data[i]["contact"]) {
-                    contact =`
-                            <a role="button" class="btn btn-outline-primary" href="mailto:${data[i]["contact"]["email"]}" aria-label="Send an email to ${title}"
-                               title="Send an email to ${title}">
-                                <i class="bi-mailbox" aria-hidden="true"></i>
-                            </a>`;
-                } else {
-                    contact = `
-                            <a role="button" class="btn btn-outline-primary disabled">
-                                <i class="bi-mailbox" aria-hidden="true"></i>
-                            </a>`;
-                }
-                if (data[i]["publications"] && data[i]["publications"].length > 0) {
-                    publication = `
-                                <a role="button" class="btn btn-outline-primary" href="${data[i]["publications"][0]["id"]}" aria-label="View the primary publication for ${title}" title="View the primary publication for ${title}">
+                    }
+                    if (data[i].hasOwnProperty("domain") && data[i]['domain'] !== undefined) {
+                        domainInner[0] = data[i]['domain'];
+                    }
+                    if (description !== undefined && description.toString().length > 140) {
+                        description = description.toString().slice(0, 140).trim() + '...'
+                    }
+                    if (data[i]["contact"]) {
+                        contact =`
+                                <a role="button" class="btn btn-outline-primary" href="mailto:${data[i]["contact"]["email"]}" aria-label="Send an email to ${title}"
+                                title="Send an email to ${title}">
+                                    <i class="bi-mailbox" aria-hidden="true"></i>
+                                </a>`;
+                    } else {
+                        contact = `
+                                <a role="button" class="btn btn-outline-primary disabled">
+                                    <i class="bi-mailbox" aria-hidden="true"></i>
+                                </a>`;
+                    }
+                    if (data[i]["publications"] && data[i]["publications"].length > 0) {
+                        publication = `
+                                    <a role="button" class="btn btn-outline-primary" href="${data[i]["publications"][0]["id"]}" aria-label="View the primary publication for ${title}" title="View the primary publication for ${title}">
+                                        <i class="bi-book" aria-hidden="true"></i>
+                                    </a>`;
+                    } else {
+                        publication = `
+                                <a role="button" class="btn btn-outline-primary disabled">
                                     <i class="bi-book" aria-hidden="true"></i>
                                 </a>`;
-                } else {
-                    publication = `
-                            <a role="button" class="btn btn-outline-primary disabled">
-                                <i class="bi-book" aria-hidden="true"></i>
-                            </a>`;
-                }
-                if (activity_status === "inactive" || activity_status === "orphaned") {
-                    is_inactive = "inactive_row";
-                    is_obsolete = `(${activity_status})`
-                }
-                if (data[i]["is_obsolete"]) {
-                    is_obsolete = "(obsolete)"
-                }
-                if (license_logo) {
-                    license_box = `
-                        <a href="${license_url}" >
-                            <img width="80px" src="${license_logo}" alt="${license_label}"/>
-                        </a>
-                        <span style="display: none">${license_label}</span>
-                    `;
-                } else {
-                    license_box = `<a href="${license_url}">${license_label}</a>`;
-                }
-                if (description) {
-                    description_box = `${description}`;
-                } else {
-                    description_box = ``;
-                }
-                if (dash_success) {
-                    dash_success_indicator = "<span>&#10003;</span>";
-                } else {
-                    dash_success_indicator = "<span>&#88;</span>";
-                }
-                // table row template
-                let tr_class = is_inactive
-                if (!dash_success) {
-                    tr_class += " failing";
-                }
-                let template = `
-                    <tr class="${tr_class}">
-                        <th scope="row">
-                            <a href="ontology/${id}.html">
-                                ${id}
+                    }
+                    if (activity_status === "inactive" || activity_status === "orphaned") {
+                        is_inactive = "inactive_row";
+                        is_obsolete = `(${activity_status})`
+                    }
+                    if (data[i]["is_obsolete"]) {
+                        is_obsolete = "(obsolete)"
+                    }
+                    if (license_logo) {
+                        license_box = `
+                            <a href="${license_url}" >
+                                <img width="80px" src="${license_logo}" alt="${license_label}"/>
                             </a>
-                        </td>
-                        <td>
-                            ${title}
-                        </td>
-                        <td>
-                            <span style="background-color: #ff8d82">${is_obsolete}</span>
-                            ${description_box}
-                        </td>
-                        <td>
-                            <div class="btn-group btn-group-sm" role="group">
-                                <a class="btn btn-outline-primary" href="${homepage}" aria-label="Go to the homepage for ${title}" title="Go to the homepage for ${title}">
-                                     <i class="bi-house" aria-hidden="true"></i>
+                            <span style="display: none">${license_label}</span>
+                        `;
+                    } else {
+                        license_box = `<a href="${license_url}">${license_label}</a>`;
+                    }
+                    if (description) {
+                        description_box = `${description}`;
+                    } else {
+                        description_box = ``;
+                    }
+                    dash_success_indicator = generateDashboardBadge(dashboard_success_data[id]);
+                    // if (dash_success) {
+                    //     dash_success_indicator = "<span>&#10003;</span>";
+                    // } else {
+                    //     dash_success_indicator = "<span>&#88;</span>";
+                    // }
+                    // table row template
+                    let tr_class = is_inactive
+                    if (!dash_success) {
+                        tr_class += " failing";
+                    }
+                    let template = `
+                        <tr class="${tr_class}">
+                            <th scope="row">
+                                <a href="ontology/${id}.html">
+                                    ${id}
                                 </a>
-                                <a class="btn btn-outline-primary" href="https://purl.obolibrary.org/obo/${id}.owl" aria-label="Download ${title} in OWL format" title="Download ${title} in OWL format">
-                                    <i class="bi-download" aria-hidden="true"></i>
-                                </a>
-                                <a class="btn btn-outline-primary" href="https://www.ontobee.org/ontology/${id}" aria-label="Browse ${title} on OntoBee" title="Browse ${title} on OntoBee">
-                                    <i class="bi-eye" aria-hidden="true"></i>
-                                </a>
-                                ${tracker}
-                                ${contact}
-                                ${publication}
-                            </div>
-                        </td>
-                        <td>
-                            ${license_box}
-                        </td>
-                        <td>
-                            ${github_box}
-                        </td>
-                        <td>
-                            ${dash_success_indicator}
-                        </td>
-                    </tr>
-                `;
+                            </td>
+                            <td>
+                                ${title}
+                            </td>
+                            <td>
+                                <span style="background-color: #ff8d82">${is_obsolete}</span>
+                                ${description_box}
+                            </td>
+                            <td>
+                                <div class="btn-group btn-group-sm" role="group">
+                                    <a class="btn btn-outline-primary" href="${homepage}" aria-label="Go to the homepage for ${title}" title="Go to the homepage for ${title}">
+                                        <i class="bi-house" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="btn btn-outline-primary" href="https://purl.obolibrary.org/obo/${id}.owl" aria-label="Download ${title} in OWL format" title="Download ${title} in OWL format">
+                                        <i class="bi-download" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="btn btn-outline-primary" href="https://www.ontobee.org/ontology/${id}" aria-label="Browse ${title} on OntoBee" title="Browse ${title} on OntoBee">
+                                        <i class="bi-eye" aria-hidden="true"></i>
+                                    </a>
+                                    ${tracker}
+                                    ${contact}
+                                    ${publication}
+                                </div>
+                            </td>
+                            <td>
+                                ${license_box}
+                            </td>
+                            <td>
+                                ${github_box}
+                            </td>
+                            <td>
+                                ${dash_success_indicator}
+                            </td>
+                        </tr>
+                    `;
 
 
+                    if (domain === true) {
+                        tableDomains.push(domainInner[0].trim())
+                        if (!tableDomainhtml.hasOwnProperty(domainInner[0].trim())) {
+                            tableDomainhtml[domainInner[0].trim()] = template;
+                        } else {
+                            tableDomainhtml[domainInner[0].trim()] += template;
+                        }
+                    }
+                    table += template;
+                }
                 if (domain === true) {
-                    tableDomains.push(domainInner[0].trim())
-                    if (!tableDomainhtml.hasOwnProperty(domainInner[0].trim())) {
-                        tableDomainhtml[domainInner[0].trim()] = template;
-                    } else {
-                        tableDomainhtml[domainInner[0].trim()] += template;
+                    tableDomains = [...new Set(tableDomains)]
+                    //loops through list of domains and surrounds html row with table tag and headers
+                    for (let i = 0; i < tableDomains.length; i++) {
+                        let content = tableDomainhtml[tableDomains[i]];
+
+                        let table = tableHtml(content, true, tableDomains[i]);
+
+                        // merge all final table html generated above with the upper domain at top.
+                        if (tableDomains[i].toLowerCase() === "upper") {
+                            domainTables = table + domainTables;
+                        } else {
+                            domainTables = domainTables + table;
+                        }
+
                     }
                 }
-                table += template;
-            }
-            if (domain === true) {
-                tableDomains = [...new Set(tableDomains)]
-                //loops through list of domains and surrounds html row with table tag and headers
-                for (let i = 0; i < tableDomains.length; i++) {
-                    let content = tableDomainhtml[tableDomains[i]];
-
-                    let table = tableHtml(content, true, tableDomains[i]);
-
-                    // merge all final table html generated above with the upper domain at top.
-                    if (tableDomains[i].toLowerCase() === "upper") {
-                        domainTables = table + domainTables;
-                    } else {
-                        domainTables = domainTables + table;
-                    }
-
+                // append table(s) generated depending on if domain filter is active or not.
+                if (domain === true) {
+                    $("#tableDiv").html(domainTables);
+                } else {
+                    let res = tableHtml(table, false, "")
+                    $("#tableDiv").html(res);
                 }
-            }
-            // append table(s) generated depending on if domain filter is active or not.
-            if (domain === true) {
-                $("#tableDiv").html(domainTables);
-            } else {
-                let res = tableHtml(table, false, "")
-                $("#tableDiv").html(res);
-            }
-        });
+            });
     }
 
     /**
