@@ -6,7 +6,7 @@ title: Operations Committee
 [Members](Membership.html) of the OBO Foundry Operations Committee aim to improve the flow of operations and make things happen within the [OBO Foundry](http://obofoundry.org). Such operations include, but are not limited to, establishment of policies, review of resources, outreach and education.
 
 The OBO Operations commitee is committed to openness and accountability.
-In this spirit, we make the meeting notes from OBO Operation calls public (https://docs.google.com/document/d/1qhLFQL5IzTMUIBOtxJ5AqaEHcOCOQgNeXfvAb5O5P0A/edit).
+In this spirit, we make the [meeting notes from OBO Operation calls](https://docs.google.com/document/d/1qhLFQL5IzTMUIBOtxJ5AqaEHcOCOQgNeXfvAb5O5P0A/edit) public.
 In addition, we strive to record decisions and action items as issues on the public [OBO GitHub tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues) as much as possible.
 
 ## Organization of the OBO Foundry Operations Committee
