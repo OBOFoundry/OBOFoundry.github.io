@@ -3,11 +3,11 @@ layout: ontology_detail
 id: cdno
 title: Compositional Dietary Nutrition Ontology
 build:
-  checkout: git clone https://github.com/Southern-Cross-Plant-Science/cdno.git
+  checkout: git clone https://github.com/CompositionalDietaryNutritionOntology/cdno.git
   path: .
   system: git
 contact:
-  email: l.andres.hernandez.18@student.scu.edu.au
+  email: landreshdz@gmail.com
   github: LilyAndres
   label: Liliana Andres Hernandez
   orcid: 0000-0002-7696-731X
@@ -30,10 +30,10 @@ products:
 - id: cdno.obo
   name: Compositional Dietary Nutrition Ontology additional release in OBO format
 publications:
-- id: https://doi.org/10.1002/csc2.20092
-  title: Knowledge representation and data sharing to unlock crop variation for nutritional food security
+- id: https://doi.org/10.3389/fnut.2022.928837
+  title: Establishing a Common Nutritional Vocabulary - From Food Production to Diet
 repository: https://github.com/Southern-Cross-Plant-Science/cdno
-tracker: https://github.com/Southern-Cross-Plant-Science/cdno/issues
+tracker: https://github.com/CompositionalDietaryNutritionOntology/cdno/issues
 activity_status: active
 ---
 
