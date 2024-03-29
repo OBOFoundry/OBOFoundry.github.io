@@ -36,7 +36,7 @@ usages:
   - description: The project creates and maintains the Ontology of Organizational Structures of Trauma centers and Trauma systems or OOSTT, which reuses OMRSE terms
     url: https://www.ebi.ac.uk/ols4/ontologies/oostt/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOOSTT_00000089
   publications:
-  - id: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5312685
+  - id: https://pubmed.ncbi.nlm.nih.gov/28217041
     title: 'OOSTT: a Resource for Analyzing the Organizational Structures of Trauma Centers and Trauma Systems'
   type: owl:Ontology
   user: https://boar.uams.edu/projects/comparative-assessment-framework-for-environments-of-trauma-care
@@ -45,7 +45,7 @@ usages:
   - description: Several facility classes extend OMRSE's 'facility'
     url: https://www.ebi.ac.uk/ols4/ontologies/bcio/classes/http%253A%252F%252Fhumanbehaviourchange.org%252Fontology%252FBCIO_026022
   publications:
-  - id: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7489274
+  - id: https://doi.org/10.12688/wellcomeopenres.15904.1
     title: 'Development of an Intervention Setting Ontology for behaviour change: Specifying where interventions take place'
   type: owl:Ontology
   user: https://www.humanbehaviourchange.org
