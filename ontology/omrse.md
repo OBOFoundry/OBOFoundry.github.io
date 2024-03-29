@@ -35,9 +35,6 @@ usages:
   examples:
   - description: The project creates and maintains the Ontology of Organizational Structures of Trauma centers and Trauma systems or OOSTT, which reuses OMRSE terms
     url: https://www.ebi.ac.uk/ols4/ontologies/oostt/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOOSTT_00000089
-  publications:
-  - id: https://pubmed.ncbi.nlm.nih.gov/28217041
-    title: 'OOSTT: a Resource for Analyzing the Organizational Structures of Trauma Centers and Trauma Systems'
   type: owl:Ontology
   user: https://boar.uams.edu/projects/comparative-assessment-framework-for-environments-of-trauma-care
 - description: OMRSE is used by the Intervention Setting Ontology component of the Behavior Change Intervention Ontology
