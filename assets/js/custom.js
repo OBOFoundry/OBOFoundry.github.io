@@ -109,7 +109,9 @@ jQuery(document).ready(function() {
                                 <span>Social</span>
                             </th>
                             <th scope="col">
-                                <span>Dashboard Status</span>
+                                <span class="sort-button" title="Sort by Status" data-sort="status" >
+                                    Dashboard Status <i class="bi-chevron-up" aria-hidden="true"></i>
+                                </span>
                             </th>
                         </tr>
                     </thead>
@@ -120,6 +122,7 @@ jQuery(document).ready(function() {
                 `;
     }
 
+    // constrain status values, make them sortable
     const DashboardStatus = {
         PASS: 5,  // all checks pass
         INFO: 4,  // info parameters returned
@@ -127,12 +130,6 @@ jQuery(document).ready(function() {
         ERROR: 2,  // errors raised
         FAILED: 1,  // dashboard QC failed to run
         UNKNOWN: 0,  // not found in dashboard results
-    }
-
-    const generateDashboardBadge = (dashboardResults) => {
-        const success = [DashboardStatus.PASS, DashboardStatus.INFO, DashboardStatus.WARN].includes(dashboardResults.status);
-        const color = success ? "green" : "red";
-        return `<img alt="Static Badge" src="https://img.shields.io/badge/%E2%9A%99_OBO_Dashboard_QC-ERROR_1%252C_WARN_2-${color}">`;
     }
 
     /**
@@ -170,7 +167,6 @@ jQuery(document).ready(function() {
                     };
                     return acc;
                 }, dashboard_success_data);
-                console.log(dashboard_success_data);
             }).then(() => {
                 // by default, sort ontology records first by dashboard success status, then alphabetically
                 data.sort((a, b) => {
@@ -280,14 +276,13 @@ jQuery(document).ready(function() {
                     } else {
                         description_box = ``;
                     }
-                    dash_success_indicator = generateDashboardBadge(dashboard_success_data[id]);
-                    // if (dash_success) {
-                    //     dash_success_indicator = "<span>&#10003;</span>";
-                    // } else {
-                    //     dash_success_indicator = "<span>&#88;</span>";
-                    // }
-                    // table row template
-                    let tr_class = is_inactive
+                    dash_success_indicator = `
+                        <a href="http://dashboard.obofoundry.org/dashboard/${id}/dashboard.html">
+                          <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOBOFoundry%2Fobo-dash.github.io%2Fgh-pages%2Fdashboard%2F${id}%2Fdashboard-qc-badge.json" alt="OBO Dashboard badge for ${id}"/>
+                        </a>
+                        <span style="display: none">${dash_success}</a>
+                    `;
+                    let tr_class = is_inactive;
                     if (!dash_success) {
                         tr_class += " failing";
                     }
