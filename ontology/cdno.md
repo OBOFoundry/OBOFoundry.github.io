@@ -32,7 +32,7 @@ products:
 publications:
 - id: https://doi.org/10.3389/fnut.2022.928837
   title: Establishing a Common Nutritional Vocabulary - From Food Production to Diet
-repository: https://github.com/Southern-Cross-Plant-Science/cdno
+repository: https://github.com/CompositionalDietaryNutritionOntology/cdno
 tracker: https://github.com/CompositionalDietaryNutritionOntology/cdno/issues
 activity_status: active
 ---
