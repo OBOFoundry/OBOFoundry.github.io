@@ -713,9 +713,9 @@ _:b38   <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
         <http://purl.org/dc/elements/1.1/description>  "CDNO provides structured terminologies to describe nutritional attributes of material entities that contribute to human diet." ;
         <http://purl.org/dc/elements/1.1/title>  "Compositional Dietary Nutrition Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/3.0/> ;
-        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1002/csc2.20092> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.3389/fnut.2022.928837> ;
         <http://purl.org/dc/terms/1.1/theme>  "diet, metabolomics, and nutrition" ;
-        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/Southern-Cross-Plant-Science/cdno/issues" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/CompositionalDietaryNutritionOntology/cdno/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/cdno.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b40 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/cdno.owl> ;
@@ -744,17 +744,17 @@ _:b38   <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.ebi.ac.uk/chebi> ;
         <http://xmlns.com/foaf/0.1/page>  <http://www.ebi.ac.uk/chebi/init.do?toolBarForward=userManual> .
 
-_:b39   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/Southern-Cross-Plant-Science/cdno.git" .
+_:b39   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/CompositionalDietaryNutritionOntology/cdno.git" .
 
 <https://creativecommons.org/licenses/by/3.0/>
         <http://schema.org/logo>  <http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png> ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "CC BY 3.0" .
 
-<https://doi.org/10.1002/csc2.20092>
-        <http://purl.org/dc/elements/1.1/title>  "Knowledge representation and data sharing to unlock crop variation for nutritional food security" .
+<https://doi.org/10.3389/fnut.2022.928837>
+        <http://purl.org/dc/elements/1.1/title>  "Establishing a Common Nutritional Vocabulary - From Food Production to Diet" .
 
 _:b40   <http://www.w3.org/2000/01/rdf-schema#label>  "Liliana Andres Hernandez" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "l.andres.hernandez.18@student.scu.edu.au" .
+        <http://xmlns.com/foaf/0.1/mbox>  "landreshdz@gmail.com" .
 
 <http://purl.obolibrary.org/obo/cdno.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/cdno.owl" .

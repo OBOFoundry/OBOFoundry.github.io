@@ -639,12 +639,12 @@
         {
             "activity_status": "active",
             "build": {
-                "checkout": "git clone https://github.com/Southern-Cross-Plant-Science/cdno.git",
+                "checkout": "git clone https://github.com/CompositionalDietaryNutritionOntology/cdno.git",
                 "path": ".",
                 "system": "git"
             },
             "contact": {
-                "email": "l.andres.hernandez.18@student.scu.edu.au",
+                "email": "landreshdz@gmail.com",
                 "github": "LilyAndres",
                 "label": "Liliana Andres Hernandez",
                 "orcid": "0000-0002-7696-731X"
@@ -692,13 +692,13 @@
             ],
             "publications": [
                 {
-                    "id": "https://doi.org/10.1002/csc2.20092",
-                    "title": "Knowledge representation and data sharing to unlock crop variation for nutritional food security"
+                    "id": "https://doi.org/10.3389/fnut.2022.928837",
+                    "title": "Establishing a Common Nutritional Vocabulary - From Food Production to Diet"
                 }
             ],
-            "repository": "https://github.com/Southern-Cross-Plant-Science/cdno",
+            "repository": "https://github.com/CompositionalDietaryNutritionOntology/cdno",
             "title": "Compositional Dietary Nutrition Ontology",
-            "tracker": "https://github.com/Southern-Cross-Plant-Science/cdno/issues"
+            "tracker": "https://github.com/CompositionalDietaryNutritionOntology/cdno/issues"
         },
         {
             "activity_status": "active",
@@ -6781,7 +6781,37 @@
                 "label": "Homo sapiens"
             },
             "title": "Ontology for Modeling and Representation of Social Entities",
-            "tracker": "https://github.com/mcwdsi/OMRSE/issues"
+            "tracker": "https://github.com/mcwdsi/OMRSE/issues",
+            "usages": [
+                {
+                    "description": "OMRSE is used by the CAFÊ and TIPTOE projects",
+                    "examples": [
+                        {
+                            "description": "The project creates and maintains the Ontology of Organizational Structures of Trauma centers and Trauma systems or OOSTT, which reuses OMRSE terms",
+                            "url": "https://www.ebi.ac.uk/ols4/ontologies/oostt/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOOSTT_00000089"
+                        }
+                    ],
+                    "type": "owl:Ontology",
+                    "user": "https://boar.uams.edu/projects/comparative-assessment-framework-for-environments-of-trauma-care"
+                },
+                {
+                    "description": "OMRSE is used by the Intervention Setting Ontology component of the Behavior Change Intervention Ontology",
+                    "examples": [
+                        {
+                            "description": "Several facility classes extend OMRSE's 'facility'",
+                            "url": "https://www.ebi.ac.uk/ols4/ontologies/bcio/classes/http%253A%252F%252Fhumanbehaviourchange.org%252Fontology%252FBCIO_026022"
+                        }
+                    ],
+                    "publications": [
+                        {
+                            "id": "https://doi.org/10.12688/wellcomeopenres.15904.1",
+                            "title": "Development of an Intervention Setting Ontology for behaviour change: Specifying where interventions take place"
+                        }
+                    ],
+                    "type": "owl:Ontology",
+                    "user": "https://www.humanbehaviourchange.org"
+                }
+            ]
         },
         {
             "activity_status": "active",
