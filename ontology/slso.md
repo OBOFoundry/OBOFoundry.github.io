@@ -8,9 +8,9 @@ browsers:
   url: https://bioportal.bioontology.org/ontologies/SLSO
 contact:
   email: daniel.c.berrios@nasa.gov
+  github: DanBerrios
   label: Dan Berrios
   orcid: 0000-0003-4312-9552
-  github: DanBerrios
 description: The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data.
 domain: investigations
 homepage: https://github.com/nasa/LSDAO
