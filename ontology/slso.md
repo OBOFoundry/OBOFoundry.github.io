@@ -14,7 +14,6 @@ contact:
 description: The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data.
 domain: investigations
 homepage: https://github.com/nasa/LSDAO
-in_foundry_order: 1
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/
