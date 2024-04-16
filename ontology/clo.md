@@ -14,7 +14,7 @@ dependencies:
 - id: uberon
 description: An ontology to standardize and integrate cell line information and to support computer-assisted reasoning.
 domain: anatomy and development
-homepage: http://www.clo-ontology.org
+homepage: https://github.com/CLO-Ontology/CLO
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/
