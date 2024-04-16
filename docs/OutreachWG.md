@@ -5,6 +5,8 @@ title: Outreach Working Group
 
 The OBO Foundry Outreach WG is involved in public relations for the OBO Foundry. This includes monitoring and following up discussions on mailing lists, preparing documentation and educational materials, and presenting OBO Foundry activities at workshops, conferences, or other venues.
 
+Note: all views expressed by members of the OBO Foundry Operations Committee are their own, and does not necessarily represent the opinion of the organisations they are affiliated with.
+
 ## Contact Us
 
 The best way to contact the OBO Foundry Outreach Working Group is through the <a href='https://github.com/OBOFoundry/OBOFoundry.github.io/issues'>obo foundry issue tracker</a>. A member of the OBO admin group will assign the `outreach` label to the ticket.
