@@ -5,7 +5,7 @@ title: Human Disease Ontology
 browsers:
 - title: DO Browser
   label: DO
-  url: http://www.disease-ontology.org/
+  url: http://www.disease-ontology.org/do
 build:
   infallible: 1
   method: obo2owl
@@ -35,11 +35,6 @@ publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
   title: The Human Disease Ontology 2022 update
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
-review:
-  date: 2015
-  document:
-    label: PDF
-    link: https://drive.google.com/open?id=0B8vqEgF1N0NIZ082U2JETHlSTGs
 tags:
 - disease
 taxon:

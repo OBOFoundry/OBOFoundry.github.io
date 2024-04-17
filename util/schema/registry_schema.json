@@ -7,12 +7,13 @@
     "activity_status": {
       "level": "error",
       "principle": "http://obofoundry.org/principles/fp-016-maintenance.html",
-      "description": "'activity_status' is a required property that must have a value of 'active', 'inactive', or 'orphaned'. Active ontologies have a contact and are currently in development. Orphaned ontologies are still in development, but do not have a contact. Inactive ontologies are no longer in development.",
+      "description": "'activity_status' is a required property that must have a value of 'active', 'inactive', 'orphaned', or 'unresponsive'. Active ontologies have a contact and are currently in development. Orphaned ontologies are still in development, but do not have a contact. Inactive ontologies are no longer in development. Unresponsive ontologies are still being developed, but the maintainers do not respond to discussion on GitHub, email, nor Slack.",
       "type": "string",
       "enum": [
         "active",
         "inactive",
-        "orphaned"
+        "orphaned",
+        "unresponsive"
       ],
       "errors": {
         "activity_status": "${data} is not one of ${schema}."
@@ -394,9 +395,6 @@
       "description": "'repository' is a required field. The value is the URL for the version control repository (e.g., on GitHub, GitLab, Bitbucket, SourceForge) in which the ontology files are stored and updated.",
       "type": "string",
       "format": "uri"
-    },
-    "review": {
-      "suggest": false
     },
     "slack": {
       "suggest": false

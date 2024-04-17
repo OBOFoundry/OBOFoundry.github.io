@@ -27,8 +27,6 @@ publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/24568621
   title: 'The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio.'
 repository: https://github.com/cerivs/zebrafish-anatomical-ontology
-review:
-  date: 2010
 taxon:
   id: NCBITaxon:7954
   label: Danio

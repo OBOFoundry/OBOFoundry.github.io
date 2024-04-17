@@ -51,9 +51,11 @@ def _check_schema(max_cutoff: int = 3, links: bool = True):
                 (
                     k,
                     ", ".join(
-                        f"[{prefix}](https://obofoundry.org/ontologies/{prefix})"
-                        if links
-                        else prefix
+                        (
+                            f"[{prefix}](https://obofoundry.org/ontologies/{prefix})"
+                            if links
+                            else prefix
+                        )
                         for prefix in prefixes
                     ),
                 )

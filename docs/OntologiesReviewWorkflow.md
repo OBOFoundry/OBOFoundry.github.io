@@ -30,7 +30,7 @@ The manual process begins once a reviewer is assigned. The reviewer will assess 
 
 # Manual review criteria
 
-For the list below, yes/no questions include the expected answers in square brackets after the question. Criteria for review minimally include:
+For the list below, yes/no questions include the expected answers in square brackets after the question (see also the more detailed description of the review criteria given in the [SOP](http://obofoundry.org/docs/SOP.html#ROOM)). Criteria for review minimally include:
 
 1. Ontology scope
    - Do the terms fall within the ontology's stated target domain of knowledge? [yes]
