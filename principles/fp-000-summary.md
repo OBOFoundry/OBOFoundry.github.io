@@ -36,6 +36,8 @@ P11) <b>Locus of Authority</b> - There should be a person who is responsible for
 
 P12) <b>Naming Conventions</b> - The names (primary labels) for elements (classes, properties, etc.) in an ontology must be intelligible to scientists and amenable to natural language processing. Primary labels should be unique among OBO Library ontologies.
 
+P13) <b>Notification of Changes</b> - Ontologies SHOULD announce major changes to relevant stakeholders and collaborators ahead of release.
+
 P16) <b>Maintenance</b> - The ontology needs to reflect changes in scientific consensus to remain accurate over time.
 
 P20) <b>Responsiveness</b> - Ontology developers MUST offer channels for community participation and SHOULD be responsive to requests.
