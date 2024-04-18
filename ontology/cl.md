@@ -115,6 +115,15 @@ usages:
     url: http://fantom.gsc.riken.jp/5/sstar/CL:0000540
   type: annotation
   user: http://fantom5-collaboration.gsc.riken.jp/
+- description: The Kidney Precision Medicine Project (KPMP) makes use of the Kidney Tissue Atlas Ontology (KTAO) which imports terms from CL for defining kidney-related terms and their relations.
+  examples:
+  - description: The Kidney Tissue Atlas Ontology (KTAO) imports terms from CL to define kidney-related cell types, cell states, gene markers, diseases and their relations
+    url: https://ontobee.org/ontology/KTAO?iri=http://purl.obolibrary.org/obo/CL_1000497
+  publications:
+  - id: https://doi.org/10.1038/s41581-020-00335-w
+    title: 'Modelling kidney disease using ontology: insights from the Kidney Precision Medicine Project'
+  type: annotation
+  user: https://www.kpmp.org/
 activity_status: active
 ---
 
