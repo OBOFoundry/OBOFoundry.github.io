@@ -406,10 +406,18 @@ _:b2    <http://www.w3.org/2000/01/rdf-schema#label>  "Marie-Angélique Laporte"
 <http://purl.obolibrary.org/obo/uberon>
         <http://identifiers.org/preferredPrefix>  "UBERON" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
+        <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/bfo> ;
+        <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/bspo> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/chebi> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/cl> ;
+        <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/envo> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/go> ;
+        <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/nbo> ;
+        <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/ncbitaxon> ;
+        <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/omo> ;
+        <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/pato> ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/pr> ;
+        <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/ro> ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b26 ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_33208> ;
         <http://purl.org/dc/elements/1.1/description>  "An integrated cross-species anatomy ontology covering animals and bridging multiple species-specific ontologies" ;
@@ -434,10 +442,8 @@ _:b2    <http://www.w3.org/2000/01/rdf-schema#label>  "Marie-Angélique Laporte"
         <http://www.w3.org/ns/dcat#contactPoint>  _:b27 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uberon.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uberon/uberon-base.owl> ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uberon/ext.owl> ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uberon/basic.obo> ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-zfa.owl> ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-ma.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uberon/uberon-basic.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uberon/collected-metazoan.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl> ;
         <http://xmlns.com/foaf/0.1/account>  <http://purl.obolibrary.org/obo/uberanat> ;
@@ -5343,8 +5349,7 @@ _:b243  <http://www.w3.org/2000/01/rdf-schema#label>  "Yuki Yamagata" ;
 <http://purl.obolibrary.org/obo/txpo.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/txpo.owl" .
 
-_:b26   <http://obofoundry.github.io/vocabulary/checkout>  "svn --ignore-externals co http://svn.code.sf.net/p/obo/svn/uberon/trunk" ;
-        <http://obofoundry.github.io/vocabulary/method>  "vcs" .
+_:b26   <http://obofoundry.github.io/vocabulary/checkout>  "git clone https://github.com/obophenotype/uberon.git" .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/22293552>
         <http://purl.org/dc/elements/1.1/title>  "Uberon, an integrative multi-species anatomy ontology" .
@@ -5399,47 +5404,35 @@ _:b27   <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uberon/uberon-base.owl" ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/INCATools/ontology-development-kit/issues/50> .
 
-<http://purl.obolibrary.org/obo/uberon/ext.owl>
-        <http://purl.org/dc/elements/1.1/description>  "Uberon extended" ;
-        <http://purl.org/dc/elements/1.1/title>  "Uberon edition that includes subsets of other ontologies and axioms connecting to them" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://www.w3.org/2002/07/owl#Ontology> ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uberon/ext.owl" .
-
-<http://purl.obolibrary.org/obo/uberon/basic.obo>
+<http://purl.obolibrary.org/obo/uberon/uberon-basic.obo>
         <http://purl.org/dc/elements/1.1/description>  "Uberon edition that excludes external ontologies and most relations" ;
         <http://purl.org/dc/elements/1.1/title>  "Uberon basic" ;
         <http://purl.org/dc/terms/1.1/format>  "obo" ;
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://purl.obolibrary.org/obo/obo-basic-ontology> ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uberon/basic.obo" .
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uberon/uberon-basic.obo" .
 
-<http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-zfa.owl>
-        <http://purl.org/dc/elements/1.1/description>  "Taxonomic equivalence axioms connecting zebrafish-specific classes to generic uberon counterparts" ;
-        <http://purl.org/dc/elements/1.1/title>  "Uberon bridge to ZFA" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://purl.obolibrary.org/obo/BridgeOntology> ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-zfa.owl" ;
-        <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies> .
-
-<http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-ma.owl>
-        <http://purl.org/dc/elements/1.1/description>  "Taxonomic equivalence axioms connecting adult mouse specific classes to generic uberon counterparts" ;
-        <http://purl.org/dc/elements/1.1/title>  "Uberon bridge to MA" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://purl.obolibrary.org/obo/BridgeOntology> ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-ma.owl" ;
-        <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies> .
+<http://purl.obolibrary.org/obo/uberon/collected-metazoan.owl>
+        <http://purl.obolibrary.org/obo/IAO_0000136>  "Metazoa"^^<http://www.w3.org/2002/07/owl#Class> ;
+        <http://purl.org/dc/elements/1.1/description>  "Uberon plus all metazoan ontologies" ;
+        <http://purl.org/dc/elements/1.1/title>  "Uberon collected metazoan ontology" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://purl.obolibrary.org/obo/MergedOntology> ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uberon/collected-metazoan.owl" ;
+        <http://xmlns.com/foaf/0.1/page>  <https://obophenotype.github.io/uberon/combined_multispecies/> .
 
 <http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl>
         <http://purl.obolibrary.org/obo/IAO_0000136>  "Metazoa"^^<http://www.w3.org/2002/07/owl#Class> ;
-        <http://purl.org/dc/elements/1.1/description>  "Extended uberon plus all metazoan ontologies" ;
+        <http://purl.org/dc/elements/1.1/description>  "Uberon and all metazoan ontologies with redundant species-specific terms removed" ;
         <http://purl.org/dc/elements/1.1/title>  "Uberon composite metazoan ontology" ;
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://purl.obolibrary.org/obo/MergedOntology> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl" ;
-        <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies> .
+        <http://xmlns.com/foaf/0.1/page>  <https://obophenotype.github.io/uberon/combined_multispecies/> .
 
 <http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl>
-        <http://purl.obolibrary.org/obo/IAO_0000136>  "Metazoa"^^<http://www.w3.org/2002/07/owl#Class> ;
+        <http://purl.obolibrary.org/obo/IAO_0000136>  "Vertebrata"^^<http://www.w3.org/2002/07/owl#Class> ;
         <http://purl.org/dc/elements/1.1/title>  "Uberon composite vertebrate ontology" ;
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <http://purl.obolibrary.org/obo/MergedOntology> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl" ;
-        <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies> .
+        <http://xmlns.com/foaf/0.1/page>  <https://obophenotype.github.io/uberon/combined_multispecies/> .
 
 _:b16   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
