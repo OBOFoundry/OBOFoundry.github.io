@@ -15,6 +15,7 @@ products:
 tags:
 - ancestry
 tracker: https://github.com/h3abionet/afpo/issues
+repository: https://github.com/h3abionet/afpo
 license:
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
