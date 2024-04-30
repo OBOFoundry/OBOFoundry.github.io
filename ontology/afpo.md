@@ -10,6 +10,7 @@ contact:
 description: AfPO is a tool which enables to annotate the African individuals, and brings together knowledge accumulated about existing populations with their genetic fingerprint in a standardized format.
 domain: organisms
 homepage: https://github.com/h3abionet/afpo
+preferredPrefix: AfPO
 products:
 - id: afpo.owl
 tags:
