@@ -8,7 +8,7 @@ contact:
   orcid: 0000-0001-5868-4204
   github: Melek-C
 description: AfPO is a tool which enables to annotate the African individuals, and brings together knowledge accumulated about existing populations with their genetic fingerprint in a standardized format.
-domain: phenotype
+domain: organisms
 homepage: https://github.com/h3abionet/afpo
 products:
 - id: afpo.owl
