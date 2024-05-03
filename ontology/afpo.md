@@ -18,14 +18,15 @@ products:
 - id: afpo.owl
   title: AfPO (OWL edition)
   description: The main ontology in OWL. Contains all MP terms and links to other OBO ontologies
-  repository: https://github.com/h3abionet/afpo
 - id: afpo.obo
   title: AfPO (OBO edition)
-  description: A direct translation of the AfPO (OWL edition) into OBO format.
+  description: A direct translation of the AfPO (OWL edition) into OBO format
   page: https://github.com/h3abionet/afpo
 - id: afpo.json
   title: AfPO (obographs JSON edition)
+  description: A direct translation of the AfPO (OWL edition) into OBOGraph JSON format
   page: https://github.com/h3abionet/afpo
+repository: https://github.com/h3abionet/afpo
 tags:
 - ancestry
 tracker: https://github.com/h3abionet/afpo/issues
