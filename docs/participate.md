@@ -11,4 +11,4 @@ The OBO Foundry is currently a volunteer-run organization. There are many ways t
 - Participate in the [OBO Community Slack channel](https://obo-communitygroup.slack.com/archives/C01DP18L5GW)
 - [Submit your ontology](/faq/how-do-i-register-my-ontology.html) to be considered for inclusion in the OBO Foundry
 - [Create a pull request to improve this website](/faq//how-do-i-modify-website.html)
-- Nominate yourself to [join the OBO Foundry Operations Committee](/docs/NewOBOFC.md)
+- Nominate yourself to [join the OBO Foundry Operations Committee](/docs/NewOBOFC.html)
