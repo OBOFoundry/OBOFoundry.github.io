@@ -44,6 +44,47 @@ ontologies:
   tracker: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO/issues
 - activity_status: active
   contact:
+    email: mcmelek@msn.com
+    github: Melek-C
+    label: Melek Chaouch
+    orcid: 0000-0001-5868-4204
+  description: AfPO is a tool which enables to annotate the African individuals, and
+    brings together knowledge accumulated about existing populations with their genetic
+    fingerprint in a standardized format.
+  domain: organisms
+  homepage: https://github.com/h3abionet/afpo
+  id: afpo
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/afpo.owl
+  preferredPrefix: AfPO
+  products:
+  - description: The main ontology in OWL. Contains all MP terms and links to other
+      OBO ontologies
+    id: afpo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/afpo.owl
+    title: AfPO (OWL edition)
+  - description: A direct translation of the AfPO (OWL edition) into OBO format
+    id: afpo.obo
+    ontology_purl: http://purl.obolibrary.org/obo/afpo.obo
+    page: https://github.com/h3abionet/afpo
+    title: AfPO (OBO edition)
+  - description: A direct translation of the AfPO (OWL edition) into OBOGraph JSON
+      format
+    id: afpo.json
+    ontology_purl: http://purl.obolibrary.org/obo/afpo.json
+    page: https://github.com/h3abionet/afpo
+    title: AfPO (obographs JSON edition)
+  repository: https://github.com/h3abionet/afpo
+  tags:
+  - ancestry
+  title: African Population Ontology
+  tracker: https://github.com/h3abionet/afpo/issues
+- activity_status: active
+  contact:
     email: m.a.laporte@cgiar.org
     github: marieALaporte
     label: Marie-Angélique Laporte
