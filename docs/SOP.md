@@ -9,7 +9,7 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 
 - [New Ontology Requests](#NOR)
 - [Reviewing Ontologies for OBO Membership](#ROOM)
-- [Ontology Acceptance Email](#OAE)
+- [Notification of NOR Decision](#NOD)
 - [Changing ontology metadata in the registry](#META)
 - [Reviving obsolete, orphaned, or inactive ontologies](#REACTIVATION)
 - [Becoming a member of the OBO Operations Committee](#OPS_MEMBER)
@@ -54,7 +54,7 @@ Are axioms generally highly complex? If so, we should review a handful to ensure
 5. Appropriate use of [object properties](https://www.w3.org/TR/2004/REC-owl-semantics-20040210/#owl_ObjectProperty). Examples of incorrect usage include those based on some interpretation of the label of the object property but not actually fitting the property definition or domain and range. A typical example of incorrect usage is R some (A and B and C) to mean R some A and R some B and R some C.
 6. Responsiveness to suggested changes. A willingness to fix any identified issues during the review must be demonstrated. Issues expected to be addressed should be added using GitHub checklist syntax (`- [ ] TODO`) in the GitHub issue. The time limit for addressing these is 2 months; a longer period should be requested if needed.
 
-#### Rules of Communication
+#### Communicating Suggested Revisions to the Submitter
 Part of the NOR review process includes helping submitters navigate through suggested improvements. Specifically, the designated NOR Reviewer acts as the official interface between the NOR submitter and the OBO community. As such, the designated NOR Reviewer is tasked with:
 1. Communicating review results to the ontology submitter by providing feedback on the relevant GitHub tracker. Actionable items should be provided using GitHub checklist syntax (- [ ] TODO) in order to track how far along they are in being addressed. Each item should have an indication of whether they MUST, SHOULD, or MUST NOT be processed by the ontology submitter.
 2. Coordinating any OBO community comments into items of feedback and communicating these items to the ontology submitter as indicated above.
@@ -62,25 +62,26 @@ Part of the NOR review process includes helping submitters navigate through sugg
 
 In summary, the designated NOR Reviewer is considered the final arbiter of requirements, and in some cases might have to clarify which suggestions made by other reviewers are required (MUST), which are simply good to do but not required (SHOULD), and which should not be done (MUST NOT).
 
-#### Inactive New Ontology Requests
-
-In case an open New Ontology Request has not been responded to by the NOR submit for more than 2 months, it is considered inactive. In this case the NOR reviewer should add the following message:
-
-> Due to inactivity for the past two months, this issue will soon be closed. When you are ready, you are welcome to re-open this issue again. Thanks for your interest in submitting your ontology to the OBO Foundry.
-
-
-<a name="OAE"></a>
-## Ontology Acceptance/Rejection Decision
-Once the reviewer has decided whether a new ontology meets the requirements, they present their review and recommendation to the OBO Ops committee.
+#### Communicating the Recommendation to OBO Operations
+Once the reviewer has decided whether a new ontology meets the requirements, they present their review and recommendation to the OBO Operations Committee.
 The committee can ask the reviewer for clarifications, and then the people on the call make the decision about whether to accept the ontology.
-The decision is made by “consensus” on the call: i.e., no one objects strenuously.
-No quorum (minimum number of attendees) on the call is required.
+The decision is made by “consensus” on the call: i.e., no one objects strenuously. No quorum (minimum number of attendees) on the call is required.
 
-### Ontology Acceptance Notification
+See next section for guidance on communicating the decision to the submitter.
 
-Once a new ontology has been accepted, the ontology owner should be notified by the ontology reviewer, both in the ticket and also via email (they were required to supply their email address as part of their new ontology request),
-ccing obo-discuss & obo-operations-committee.
-The following template should be used to let the ontology owner know that their ontology was accepted, and informing them about the next steps they should take:
+<a name="NOD"></a>
+## Notification of NOR Decision
+Upon discussion within the OBO Operations Committe, a new ontology can be assigned three possible statuses:
+- Acceptance: In which case the ontology will be added to the OBO Foundry
+- Rejection: In which case the ontology will not be added to the OBO Foundry
+- Inactive: In which case the ontology will not yet be added to the OBO Foundry, due to submitter not responding to requests in a timely manner
+
+Each status should be communicated to the ontology submitter according to the following:
+
+### Notification of Ontology Acceptance
+Once a new ontology has been accepted, the ontology owner should be notified by the ontology reviewer, both in the ticket and also via email,
+cc-ing the obo-discuss & obo-operations-committee mailing lists.
+The following template should be used to let the ontology owner know that their ontology was accepted, and to inform them about the next steps they should take:
 
 "Thank you again for your ontology submission to the OBO Foundry. We are happy to inform you that your ontology (YOURID) has been accepted following discussion in the OBO Operations Committee meeting, YYYY-MM-DD. Before we can add it to the OBO ontology registry you need to complete the following steps.
 
@@ -99,12 +100,17 @@ To create a PURL registry entry for your ontology:
 3. Make a pull request with a link to this issue
 See here for an example of a PURL yml file: https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/config/pato.yml "
 
-### Ontology Rejection Notification
-If it is determined that a submitted ontology does not meet the requirements for acceptance in the OBO Foundry, and the submitter has been informed of the issues and at least two months have elapsed and they have not corrected the problems,
+### Notification of Ontology Rejection
+If it is determined that a submitted ontology does not meet the requirements for acceptance in the OBO Foundry,
 the reviewer can recommend to the OBO Operations Committee that the ontology should be rejected. The decision to reject an ontology is to be made by consensus from those on the call where the review is presented.
-The reviewer should notify the ontology owner in the ticket and also by email, ccing obo-operations-committee (but maybe not obo-discuss?).
+The reviewer should notify the ontology owner in the ticket and also by email, cc-ing the obo-operations-committee mailing list (but maybe not obo-discuss?).
 
 (Should there be a template for the rejection notice?)
+
+### Notification of Inactive Status
+If the submitter has been informed of issues/recommendations, and at least two months have elapsed with no response or correction of problems, the NOR is considered inactive. In this case the NOR reviewer should add the following message:
+
+> Due to inactivity for the past two months, this issue will be closed. When ready, you are welcome to re-open the issue, at which point we will be glad to continue the process. Thanks for your interest in submitting your ontology to the OBO Foundry.
 
 <a name="META"></a>
 ## Changing ontology metadata in the registry
