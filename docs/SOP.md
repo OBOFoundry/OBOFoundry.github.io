@@ -62,6 +62,13 @@ Part of the NOR review process includes helping submitters navigate through sugg
 
 In summary, the designated NOR Reviewer is considered the final arbiter of requirements, and in some cases might have to clarify which suggestions made by other reviewers are required (MUST), which are simply good to do but not required (SHOULD), and which should not be done (MUST NOT).
 
+#### Inactive New Ontology Requests
+
+In case an open New Ontology Request has not been responded to by the NOR submit for more than 2 months, it is considered inactive. In this case the NOR reviewer should add the following message:
+
+> Due to inactivity for the past two months, this issue will soon be closed. When you are ready, you are welcome to re-open this issue again. Thanks for your interest in submitting your ontology to the OBO Foundry.
+
+
 <a name="OAE"></a>
 ## Ontology Acceptance/Rejection Decision
 Once the reviewer has decided whether a new ontology meets the requirements, they present their review and recommendation to the OBO Ops committee.
