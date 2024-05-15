@@ -71,7 +71,7 @@ See next section for guidance on communicating the decision to the submitter.
 
 <a name="NOD"></a>
 ## Notification of NOR Decision
-Upon discussion within the OBO Operations Committe, a new ontology can be assigned three possible statuses:
+After discussion within the OBO Operations Committee, a new ontology can be assigned one of three possible statuses:
 - Acceptance: In which case the ontology will be added to the OBO Foundry
 - Rejection: In which case the ontology will not be added to the OBO Foundry
 - Inactive: In which case the ontology will not yet be added to the OBO Foundry, due to submitter not responding to requests in a timely manner
