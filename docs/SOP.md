@@ -63,7 +63,7 @@ Part of the NOR review process includes helping submitters navigate through sugg
 In summary, the designated NOR Reviewer is considered the final arbiter of requirements, and in some cases might have to clarify which suggestions made by other reviewers are required (MUST), which are simply good to do but not required (SHOULD), and which should not be done (MUST NOT).
 
 #### Communicating the Recommendation to OBO Operations
-Once the reviewer has decided whether a new ontology meets the requirements, they present their review and recommendation to the OBO Operations Committee.
+Once the reviewer has decided whether a new ontology meets the requirements, they present their review and recommendation to the OBO Operations Committee during the next OBO Ops meeting.
 The committee can ask the reviewer for clarifications, and then the people on the call make the decision about whether to accept the ontology.
 The decision is made by “consensus” on the call: i.e., no one objects strenuously. No quorum (minimum number of attendees) on the call is required.
 
