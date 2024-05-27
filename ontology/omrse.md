@@ -30,6 +30,22 @@ taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 tracker: https://github.com/mcwdsi/OMRSE/issues
+usages:
+- description: OMRSE is used by the CAFÊ and TIPTOE projects
+  examples:
+  - description: The project creates and maintains the Ontology of Organizational Structures of Trauma centers and Trauma systems or OOSTT, which reuses OMRSE terms
+    url: https://www.ebi.ac.uk/ols4/ontologies/oostt/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOOSTT_00000089
+  type: owl:Ontology
+  user: https://boar.uams.edu/projects/comparative-assessment-framework-for-environments-of-trauma-care
+- description: OMRSE is used by the Intervention Setting Ontology component of the Behavior Change Intervention Ontology
+  examples:
+  - description: Several facility classes extend OMRSE's 'facility'
+    url: https://www.ebi.ac.uk/ols4/ontologies/bcio/classes/http%253A%252F%252Fhumanbehaviourchange.org%252Fontology%252FBCIO_026022
+  publications:
+  - id: https://doi.org/10.12688/wellcomeopenres.15904.1
+    title: 'Development of an Intervention Setting Ontology for behaviour change: Specifying where interventions take place'
+  type: owl:Ontology
+  user: https://www.humanbehaviourchange.org
 activity_status: active
 ---
 

@@ -19,11 +19,10 @@ browsers:
   label: KnowledgeSpace
   url: https://knowledge-space.org/index.php/pages/view/UBERON:0000061
 build:
-  checkout: svn --ignore-externals co http://svn.code.sf.net/p/obo/svn/uberon/trunk
+  checkout: git clone https://github.com/obophenotype/uberon.git
   email_cc: cjmungall@lbl.gov
   infallible: 1
-  method: vcs
-  system: svn
+  system: git
 canonical: uberon.owl
 contact:
   email: cjmungall@lbl.gov
@@ -31,14 +30,18 @@ contact:
   label: Chris Mungall
   orcid: 0000-0002-6601-2165
 dependencies:
+- id: bfo
+- id: bspo
 - id: chebi
-  subset: uberon/chebi_import.owl
 - id: cl
-  subset: uberon/cl_import.owl
+- id: envo
 - id: go
-  subset: uberon/go_import.owl
+- id: nbo
+- id: ncbitaxon
+- id: omo
+- id: pato
 - id: pr
-  subset: uberon/pr_import.owl
+- id: ro
 depicted_by: https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/uberon-logos/uberon_logo_black-banner.png
 description: An integrated cross-species anatomy ontology covering animals and bridging multiple species-specific ontologies
 domain: anatomy and development
@@ -69,36 +72,21 @@ products:
   title: Uberon base ontology
   description: Axioms defined within Uberon and to be used in imports for other ontologies
   page: https://github.com/INCATools/ontology-development-kit/issues/50
-- id: uberon/ext.owl
-  title: Uberon edition that includes subsets of other ontologies and axioms connecting to them
-  description: Uberon extended
-  mireots_from: cl
-  type: owl:Ontology
-- id: uberon/basic.obo
+- id: uberon/uberon-basic.obo
   title: Uberon basic
   description: Uberon edition that excludes external ontologies and most relations
   format: obo
   type: obo-basic-ontology
-- id: uberon/bridge/uberon-bridge-to-zfa.owl
-  title: Uberon bridge to ZFA
-  connects:
-  - id: uberon
-  - id: zfa
-  description: Taxonomic equivalence axioms connecting zebrafish-specific classes to generic uberon counterparts
-  page: https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies
-  type: BridgeOntology
-- id: uberon/bridge/uberon-bridge-to-ma.owl
-  title: Uberon bridge to MA
-  connects:
-  - id: uberon
-  - id: ma
-  description: Taxonomic equivalence axioms connecting adult mouse specific classes to generic uberon counterparts
-  page: https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies
-  type: BridgeOntology
+- id: uberon/collected-metazoan.owl
+  title: Uberon collected metazoan ontology
+  description: Uberon plus all metazoan ontologies
+  page: https://obophenotype.github.io/uberon/combined_multispecies/
+  taxon: Metazoa
+  type: MergedOntology
 - id: uberon/composite-metazoan.owl
   title: Uberon composite metazoan ontology
-  description: Extended uberon plus all metazoan ontologies
-  page: https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies
+  description: Uberon and all metazoan ontologies with redundant species-specific terms removed
+  page: https://obophenotype.github.io/uberon/combined_multispecies/
   taxon: Metazoa
   type: MergedOntology
 - id: uberon/composite-vertebrate.owl
@@ -112,8 +100,8 @@ products:
   - fma
   - emapa
   - ehdaa2
-  page: https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies
-  taxon: Metazoa
+  page: https://obophenotype.github.io/uberon/combined_multispecies/
+  taxon: Vertebrata
   type: MergedOntology
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/22293552

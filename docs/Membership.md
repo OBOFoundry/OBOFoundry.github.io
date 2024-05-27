@@ -5,6 +5,8 @@ title: OBO Operations Committee Membership
 
 The OBO Foundry Operations Committee discusses, oversees, and ensures the completion of the fundamental day-to-day activities of the Foundry. The Committee is composed of three working groups. Anyone who is active in a working group (active being based on both attendance at WG meetings and actual work done for working groups) is considered a member of the Operations Committee.
 
+Note: all views expressed by individual members of the OBO Foundry Operations Committee are their own, and do not necessarily represent the opinions of the OBO Foundry as a whole nor of their affiliated organisations.
+
 There are currently three working groups. Each page lists their respective members:
 
 - [Editorial Working Group](EditorialWG.html)
