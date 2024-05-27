@@ -138,7 +138,7 @@ jQuery(document).ready(function() {
      * @param {boolean} [domain=false] if true, render tables grouped by domain rather than one big table
      */
     function renderTable(data, domain= false ) {
-        const dashboard_url = "https://raw.githubusercontent.com/OBOFoundry/obo-dash.github.io/results-json/dashboard/dashboard-results.json";  // TODO get final JSON results location
+        const dashboard_url = "https://gist.githubusercontent.com/jsstevenson/cb5d7f0569abe5b343069d1b664423f7/raw/f05faec03212df30797612a3aaed1bda2e9b4bbb/tmp-dashboard-results.json";  // TODO get final JSON results location
         let dashboard_success_data;
         fetch(dashboard_url)
             .then(response => response.json())
@@ -148,12 +148,14 @@ jQuery(document).ready(function() {
                     if ("summary" in onto && "status" in onto.summary) {
                         acc[key] = {
                             status: DashboardStatus[onto.summary.status],
+                            is_passing: DashboardStatus[onto.summary.status] >= DashboardStatus.WARN,
                             ...onto.summary.summary_count
                         };
                     } else {
                         // dashboard QC failed
                         acc[key] = {
                             status: DashboardStatus.FAILED,
+                            is_passing: false,
                         }
                     }
                     return acc;
@@ -163,6 +165,7 @@ jQuery(document).ready(function() {
                     if (!(onto.id in dashboard_success_data)) {
                         acc[onto.id] = {
                             status: DashboardStatus.UNKNOWN,
+                            is_passing: false,
                         }
                     };
                     return acc;
@@ -170,8 +173,8 @@ jQuery(document).ready(function() {
             }).then(() => {
                 // by default, sort ontology records first by dashboard success status, then alphabetically
                 data.sort((a, b) => {
-                    if (dashboard_success_data[a.id].status !== dashboard_success_data[b.id].status) {
-                        return dashboard_success_data[a.id].status > dashboard_success_data[b.id].status ? -1 : 1;
+                    if (dashboard_success_data[a.id].is_passing !== dashboard_success_data[b.id].is_passing) {
+                        return dashboard_success_data[a.id].is_passing > dashboard_success_data[b.id].is_passing ? -1 : 1;
                     } else {
                         return a.id > b.id ? 1 : -1;
                     }
@@ -185,7 +188,7 @@ jQuery(document).ready(function() {
 
                 for (let i = 0; i < data.length; i++) {
                     let id = data[i]['id'];
-                    let dash_success = [DashboardStatus.PASS, DashboardStatus.INFO, DashboardStatus.WARN].includes(dashboard_success_data[id].status) ;
+                    let dash_success = dashboard_success_data[id].is_passing ? 1 : 0;
                     let is_obsolete = "";
                     let is_inactive = "";
                     let activity_status = data[i]['activity_status']
@@ -277,10 +280,10 @@ jQuery(document).ready(function() {
                         description_box = ``;
                     }
                     dash_success_indicator = `
+                        <span style="display: none">${dash_success}</span>
                         <a href="http://dashboard.obofoundry.org/dashboard/${id}/dashboard.html">
                           <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOBOFoundry%2Fobo-dash.github.io%2Fgh-pages%2Fdashboard%2F${id}%2Fdashboard-qc-badge.json" alt="OBO Dashboard badge for ${id}"/>
                         </a>
-                        <span style="display: none">${dash_success}</a>
                     `;
                     let tr_class = is_inactive;
                     if (!dash_success) {
