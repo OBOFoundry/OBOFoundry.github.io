@@ -101,17 +101,12 @@ jQuery(document).ready(function() {
                                 <span>Quick Access</span>
                             </th>
                             <th scope="col">
-                                <span class="sort-button" title="Sort by License" data-sort="license" >
+                                <span class="sort-button" title="Sort by status" data-sort="license" >
                                     Re-Use <i class="bi-chevron-up" aria-hidden="true"></i>
                                 </span>
                             </th>
                             <th scope="col">
                                 <span>Social</span>
-                            </th>
-                            <th scope="col">
-                                <span class="sort-button" title="Sort by Status" data-sort="status" >
-                                    Dashboard Status <i class="bi-chevron-up" aria-hidden="true"></i>
-                                </span>
                             </th>
                         </tr>
                     </thead>
@@ -267,9 +262,8 @@ jQuery(document).ready(function() {
                     if (license_logo) {
                         license_box = `
                             <a href="${license_url}" >
-                                <img width="80px" src="${license_logo}" alt="${license_label}"/>
+                                <img width="100px" src="${license_logo}" alt="${license_label}"/>
                             </a>
-                            <span style="display: none">${license_label}</span>
                         `;
                     } else {
                         license_box = `<a href="${license_url}">${license_label}</a>`;
@@ -279,11 +273,14 @@ jQuery(document).ready(function() {
                     } else {
                         description_box = ``;
                     }
+                    const dash_badge_url = dashboard_success_data[id].status !== DashboardStatus.FAILED ? `http://dashboard.obofoundry.org/dashboard/${id}/dashboard.html` : `http://dashboard.obofoundry.org/dashboard`;
                     dash_success_indicator = `
                         <span style="display: none">${dash_success}</span>
-                        <a href="http://dashboard.obofoundry.org/dashboard/${id}/dashboard.html">
-                          <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOBOFoundry%2Fobo-dash.github.io%2Fgh-pages%2Fdashboard%2F${id}%2Fdashboard-qc-badge.json" alt="OBO Dashboard badge for ${id}"/>
-                        </a>
+                        <div class="dash-status">
+                            <a href="${dash_badge_url}">
+                              <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOBOFoundry%2Fobo-dash.github.io%2Fgh-pages%2Fdashboard%2F${id}%2Fdashboard-qc-badge.json" alt="OBO Dashboard badge for ${id}"/>
+                            </a>
+                        </div>
                     `;
                     let tr_class = is_inactive;
                     if (!dash_success) {
@@ -320,13 +317,11 @@ jQuery(document).ready(function() {
                                 </div>
                             </td>
                             <td>
+                                ${dash_success_indicator}
                                 ${license_box}
                             </td>
                             <td>
                                 ${github_box}
-                            </td>
-                            <td>
-                                ${dash_success_indicator}
                             </td>
                         </tr>
                     `;
