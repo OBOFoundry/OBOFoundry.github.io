@@ -133,7 +133,7 @@ jQuery(document).ready(function() {
      * @param {boolean} [domain=false] if true, render tables grouped by domain rather than one big table
      */
     function renderTable(data, domain= false ) {
-        const dashboard_url = "https://gist.githubusercontent.com/jsstevenson/cb5d7f0569abe5b343069d1b664423f7/raw/f05faec03212df30797612a3aaed1bda2e9b4bbb/tmp-dashboard-results.json";  // TODO get final JSON results location
+        const dashboard_url = "https://github.com/OBOFoundry/obo-dash.github.io/blob/gh-pages/dashboard/dashboard-results.json";
         let dashboard_success_data;
         fetch(dashboard_url)
             .then(response => response.json())
