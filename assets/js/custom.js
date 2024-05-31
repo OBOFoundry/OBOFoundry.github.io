@@ -128,12 +128,32 @@ jQuery(document).ready(function() {
     }
 
     /**
+     * Construct dashboard QC badge. Use predefined "NA" badge for obsolete/excluded ontologies.
+     * @param {string} id Ontology id (short name)
+     * @param {object} success_data Selected fields from dashboard for {id}
+     * @param {number} dash_success Success grouping for ontology
+     */
+    const getDashboardBadge = (id, success_data, dash_success) => {
+        const dash_badge_link_url = success_data.status > DashboardStatus.FAILED ? `http://dashboard.obofoundry.org/dashboard/${id}/dashboard.html` : `http://dashboard.obofoundry.org/dashboard`;
+        const dash_badge_url = success_data.status !== DashboardStatus.UNKNOWN ? `https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOBOFoundry%2Fobo-dash.github.io%2Fgh-pages%2Fdashboard%2F${id}%2Fdashboard-qc-badge.json` : "https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOBOFoundry%2FOBOFoundry.github.io%2Fmaster%2Fassets%2Fjson%2Fna_dashboard_badge.json";
+        const dash_status_indicator = `
+            <span style="display: none">${dash_success}</span>
+            <div class="dash-status">
+                <a href="${dash_badge_link_url}">
+                    <img src="${dash_badge_url}" alt="OBO Dashboard badge for ${id}" />
+                </a>
+            </div>
+        `;
+        return dash_status_indicator;
+    }
+
+    /**
      * Construct and render HTML ontology table(s)
      * @param {object} data Ontology json data.
      * @param {boolean} [domain=false] if true, render tables grouped by domain rather than one big table
      */
     function renderTable(data, domain= false ) {
-        const dashboard_url = "https://github.com/OBOFoundry/obo-dash.github.io/blob/gh-pages/dashboard/dashboard-results.json";
+        const dashboard_url = "https://raw.githubusercontent.com/OBOFoundry/obo-dash.github.io/gh-pages/dashboard/dashboard-results.json";
         let dashboard_success_data;
         fetch(dashboard_url)
             .then(response => response.json())
@@ -273,19 +293,21 @@ jQuery(document).ready(function() {
                     } else {
                         description_box = ``;
                     }
-                    const dash_badge_url = dashboard_success_data[id].status !== DashboardStatus.FAILED ? `http://dashboard.obofoundry.org/dashboard/${id}/dashboard.html` : `http://dashboard.obofoundry.org/dashboard`;
-                    dash_success_indicator = `
-                        <span style="display: none">${dash_success}</span>
-                        <div class="dash-status">
-                            <a href="${dash_badge_url}">
-                              <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOBOFoundry%2Fobo-dash.github.io%2Fgh-pages%2Fdashboard%2F${id}%2Fdashboard-qc-badge.json" alt="OBO Dashboard badge for ${id}"/>
-                            </a>
-                        </div>
-                    `;
+                    // const dash_badge_link_url = dashboard_success_data[id].status !== DashboardStatus.FAILED ? `http://dashboard.obofoundry.org/dashboard/${id}/dashboard.html` : `http://dashboard.obofoundry.org/dashboard`;
+                    // dash_success_indicator = `
+                    //     <span style="display: none">${dash_success}</span>
+                    //     <div class="dash-status">
+                    //         <a href="${dash_badge_link_url}">
+                    //           <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOBOFoundry%2Fobo-dash.github.io%2Fgh-pages%2Fdashboard%2F${id}%2Fdashboard-qc-badge.json" alt="OBO Dashboard badge for ${id}"/>
+                    //         </a>
+                    //     </div>
+                    // `;
                     let tr_class = is_inactive;
                     if (!dash_success) {
                         tr_class += " failing";
                     }
+          // TODO
+          console.log(getDashboardBadge(id, dashboard_success_data[id], dash_success));
                     let template = `
                         <tr class="${tr_class}">
                             <th scope="row">
@@ -317,7 +339,7 @@ jQuery(document).ready(function() {
                                 </div>
                             </td>
                             <td>
-                                ${dash_success_indicator}
+                                ${getDashboardBadge(id, dashboard_success_data[id], dash_success)}
                                 ${license_box}
                             </td>
                             <td>
