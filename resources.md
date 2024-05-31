@@ -23,6 +23,7 @@ title: Ontology Tools and Resources
 - [Cell Ontology Tutorial](https://github.com/obophenotype/cell-ontology-training/blob/master/README.md): Led by David Osumi-Sutherland, Alex Diehl, Nico Matentzoglu and Nicole Vasilevsky
 - [ROBOT tutorial](https://ontodev.github.io/robot-tutorial/#/title-slide) by James Overton
 - [OBO Academy](https://www.youtube.com/channel/UCKAkmAIIfPZc5kjdait-MdQ): A YouTube channel with presentations and tutorials relevant to the OBO Foundry
+- [The OAK Guide](https://incatools.github.io/ontology-access-kit/guide/index.html): Hands-on guide to programmatically working with OBO ontologies
 - [Pizza Tutorial for Protégé 5](https://drive.google.com/file/d/1UqI19JiGnJwzKx_JQ7qRAz7bmCzyqZpj/view) by Michael DeBellis. [More info](https://www.michaeldebellis.com/post/new-protege-pizza-tutorial).
 - [Introduction to Biomedical Ontologies](http://ontology.buffalo.edu/smith/BioOntology_Course.html): A training course in eight lectures by [Barry Smith](http://ontology.buffalo.edu/smith/)
 - [Building Ontologies with Basic Formal Ontology](http://ontology.buffalo.edu/BOBFO/detailed-table-of-contents.html): By Robert Arp, Barry Smith, and Andrew Spear
@@ -37,12 +38,13 @@ title: Ontology Tools and Resources
 - [Karma Data Integration](http://usc-isi-i2.github.io/karma/): A data integration tool
 - [Ontofox](http://ontofox.hegroup.org/): An ontology term and relation extraction and reuse tool
 - [Ubergraph](https://github.com/INCATools/ubergraph): A sparql endpoint with many OBO ontologies loaded and pre-reasoned with simple triples materialized
+- [Ontology Access Kit (OAK)](https://github.com/INCATools/ontology-access-kit): A python library and command-line tool for working with ontologies and ontology-annotated data
+- [obofoundry-tagged repositories in GitHub](https://github.com/topics/obofoundry)
 
 ## Ontology Analysis
 
 - [OBO Dashboard](https://dashboard.obofoundry.org): An assesment of OBO Foundry ontologies' conformance to OBO Foundry principles
 - [OBO Community Health Report](https://cthoyt.com/obo-community-health): A self-updating assessment of the quality of metadata, responsiveness of the maintainers, and the overall community engagement for each OBO Foundry ontology.
-- [Ontology Quality Assessment](https://cthoyt.com/oquat): A self-updating assesment of the semantic quality of OBO Foundry ontologies and beyond (using known prefixes, using standard identifiers, etc.)
 - [Current Ontology Versions](https://psiotwo.github.io/ontology-version-extractor/output.html): A daily refreshed list of OBO ontology versions and their compatibility with OBO Foundry Identifier Policy.
 
 ## Relevant Publications/blogs
