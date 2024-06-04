@@ -1,4 +1,4 @@
-<img width="1023" alt="image" src="https://github.com/OBOFoundry/OBOFoundry.github.io/assets/7070631/132e3781-9753-4fd8-abd6-c29a7242bc48">---
+---
 layout: principle
 id: fp-003-uris
 title: URI/Identifier Space (principle 3)
