@@ -22,7 +22,7 @@ Each ontology MUST have a unique IRI in the form of an OBO Foundry permanent URL
 ### Ontology Namespace:
 
 The namespace is a short string of letters (usually 2-5) that represents the ontology. 
-When used as part of a CURIE, on its own, or as part of a term ID, the namespace must be capitalized.
+When used as part of a CURIE, on its own, or as part of a term ID, the namespace MUST be capitalized.
 As per [vote on 31st May 2024](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2596), this applies to all ontologies submitted for acceptance after the 1st June 2024. Ontologies submitted before the 1st June 2024 may retain their mixed case prefixes.
 When used as part of the ontology IRI, the namespace is in lower case. See examples below.
 
