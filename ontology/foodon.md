@@ -38,6 +38,15 @@ tags:
 - food
 tracker: https://github.com/FoodOntology/foodon/issues/
 activity_status: active
+usages:
+- user: https://fdc.nal.usda.gov/
+  description: FoodData Central nutrition database web portal provided by USDA Agricultural Research Service
+- user: https://www.fda.gov/food/whole-genome-sequencing-wgs-program/genometrakr-network
+  description: FDA GenomeTrackr surveillance program for reporting foodborne pathogen biosamples.
+- user: https://foodperiodictable.org/
+  description: Periodic Table Of Food Initiative database of food biosample nutrition analytics.
+- user: https://wikifcd.wikibase.cloud/wiki/Main_Page
+  description: Wiki database consolidating over 30 global food composition databases.
 ---
 
 A broadly scoped ontology representing entities which bear a “food role”.  It encompasses materials in natural ecosystems and food webs as well as human-centric categorization and handling of food.
