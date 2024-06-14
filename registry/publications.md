@@ -18,7 +18,9 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 
 [Google Scholar list of papers citing The OBO Foundry](https://scholar.google.ca/scholar?cites=13806088078865650870&as_sdt=2005&sciodt=0,5&hl=en)
 
-### Some Ontology Project Publications (not a complete list)
+### Known Ontology Project Publications
+
+This list is generated automatically from OBO Foundry ontology metadata. It is not intended to be authoritative or exhaustive.
 
 <ul>
 {% for ontology in site.ontologies %}

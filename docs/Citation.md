@@ -37,7 +37,7 @@ The ontology IRI or ontology version IRI should be accompanied by a citation of 
 
 ## Citing an ontology
 
-Some ontologies recommend citation of specific publications. Please see their respective homepages for this information. For example, [Uberon](http://obofoundry.org/ontology/uberon) lists two publications under "Cite."
+Some ontologies recommend citation of specific publications. Please see their respective homepages for this information. For example, [Uberon]({{ "ontology/uberon.html#publications" | prepend: site.baseurl }}) lists two publications under "Publications."
 
 In addition to the recommended publication, you should also cite the ontology using its IRI and the [new data citation extension to JATS](https://peerj.com/articles/cs-1/). When no specific publication is recommended, you must cite the ontology by its IRI. Here is an example citation:
 
