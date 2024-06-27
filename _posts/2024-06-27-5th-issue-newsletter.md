@@ -15,7 +15,7 @@ The biggest news in this issue is the change to the [OBO Foundry homepage](https
 
 This issue also highlights well-established ontologies, dedicated members and volunteers, advanced research, foundational principles, and essential tools. We provide updates on past events and announce the numerous upcoming opportunities for learning and collaboration, which promise to shape the future of biomedical research.
 
-Best regards, [ The OBO Foundry Operations Committee.](https://obofoundry.org/docs/OperationsCommittee.html)
+Best regards, [The OBO Foundry Operations Committee.](https://obofoundry.org/docs/OperationsCommittee.html)
 
 
 ## Highlights 
@@ -23,13 +23,7 @@ Best regards, [ The OBO Foundry Operations Committee.](https://obofoundry.org/do
 
 ### OBO Foundry Home Page now highlights ontologies that meet OBO Foundry principles
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
+<img src="https://obofoundry.org/images/newsletter/homepage_new_table.png" style="height: 400px" alt="Homepage new table" />
 
 The OBO Foundry front page now visually promotes ontologies that pass the basic metadata requirements implemented by the [OBO Dashboard](https://github.com/OBOFoundry/OBOFoundry.github.io/pull/2555#issuecomment-2134005986) (described below). Ontologies with no dashboard errors are listed first in their section; those with errors are at the end, with gray-shaded backgrounds (as shown in the screenshot above). We hope that ontology developers will take this as an incentive to update their metadata records! Get help in the #dashboard channel in the OBO-community Slack workspace. The team is ready to support you! 
 
@@ -38,19 +32,13 @@ The OBO Foundry front page now visually promotes ontologies that pass the basic 
 
 The [OBO Foundry Dashboard](https://dashboard.obofoundry.org/dashboard/analysis.html) is a tool that automatically checks ontologies in the OBO Foundry for adherence to the [OBO Foundry principles](https://obofoundry.org/principles/fp-000-summary.html)). It provides:
 
-
-
 * [A report on each ontology's compliance with the 20 principles](https://dashboard.obofoundry.org/dashboard/) (green means an ontology meets the principle; pink means it does not; yellow means there was a warning). An ontology is considered to “pass” the dashboard if it has no errors.
 * [Overall statistics about the ontologies in the OBO Foundry](https://dashboard.obofoundry.org/dashboard/analysis.html), including the breakdown of how many ontologies currently pass the checks broken down by OBO principle (see Figure below).
 
 The dashboard aims to inform both users and developers, allowing users to quickly assess an ontology's quality and helping developers of the ontologies identify areas for improvement. The OBO Foundry announced last year that passing the dashboard would become mandatory for all ontologies on January 1, 2024, and that non-compliant ontologies would be listed at the bottom of their respective groups to encourage greater quality control.
 
 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
+<img src="https://obofoundry.org/images/newsletter/analysis_principles.png" style="height: 400px" alt="Principle Analysis" />
 
 
 Above: The OBO dashboard showing the proportion of ontologies in the OBO Foundry that pass each active principle.
@@ -125,10 +113,8 @@ The OBO Foundry is honored to highlight two members who are making valuable cont
 
 ### 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<img src="https://obofoundry.org/images/newsletter/jiezheng.png" style="height: 400px" alt="Jie Zheng" />
 
-
-![alt_text](images/image3.png "image_tooltip")
 
 
 Jie Zheng is a software developer and bioinformatician at the University of Michigan, Ann Arbor. She earned her Ph.D. in Biology from Queen's University (Kingston, Canada) in 2009 and conducted postdoctoral research at the University of Pennsylvania under Dr. Chris Stoeckert, a pioneer in the field of biological ontologies. In 2014, Jie joined the OBO Foundry community and took part in its Operations Committee. She initiated and coordinated the development of the OBO Metadata Ontology to harmonize ontology metadata. Jie has worked on various OBO Foundry ontologies, such as the Ontology of Biomedical Investigations, Occupation Ontology, and Vaccine Ontology. Additionally, she was involved in the development of web-based ontology tools, Ontoanimal (e.g., OntoBee, OntoRat, and Ontodog), in collaboration with Dr. Yongqun "Oliver" He’s team. During her decade-plus working at UPenn, Jie's focus was primarily on developing ontologies and leveraging them to establish metadata standards, build graph-based knowledge bases, and integrate and analyze data across diverse resources. In 2023, Jie joined Dr. He's laboratory at the University of Michigan, where she now applies her extensive knowledge of ontologies combined with machine learning techniques to vaccine research.
@@ -138,10 +124,8 @@ Jie Zheng is a software developer and bioinformatician at the University of Mich
 
 
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<img src="https://obofoundry.org/images/newsletter/damiondooley.png" style="height: 400px" alt="Damion Dooley" />
 
-
-![alt_text](images/image4.png "image_tooltip")
 
 
 Damion Dooley is an Ontology Development Lead at the Centre for Infectious Disease and One Health (CIDGOH.ca), a 20+ member group of bioinformatics and ontology researchers at the Faculty of Health Sciences, Simon Fraser University, Canada.  His ontology work began in 2013 to support rapid enteric pathogen whole genome sequencing and analysis.  Damion led the creation of the FoodOn food ontology and the Joint Food Ontology Workgroup to facilitate foodborne disease, agriculture, nutrition and food science data sharing. FoodOn, adopting the many food description facets of LanguaL, a popular food composition thesaurus, is now being used and supported by a wide variety of research and inter-agency data sharing projects.  He also participates in The Open Biological and Biomedical Ontologies Foundry operations committee, and in curation of the Ontology for Biomedical Investigations (OBI). He looks forward to a future of FAIR, harmonized data that reduces barriers to discovery and insight in a rapidly changing world.
@@ -156,10 +140,8 @@ In this issue we introduce our new member of the OBO Operations Committee. Welco
 
 
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<img src="https://obofoundry.org/images/newsletter/janelomax.png" style="height: 400px" alt="Jane Lomax" />
 
-
-![alt_text](images/image5.png "image_tooltip")
 
 
 Dr. Jane Lomax is currently the Head of Ontologies at SciBite, a semantic technology company. In this role, she oversees the development of  ontological solutions for clients across various industries, including pharmaceutical R&D, healthcare and consumer goods. She is an advocate for the use of open ontologies and FAIR data principles in industry.
@@ -181,10 +163,8 @@ The Artificial Intelligence Ontology (AIO) is a systematization of artificial in
 
 
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<img src="https://obofoundry.org/images/newsletter/aio.png" style="height: 400px" alt="AIO" />
 
-
-![alt_text](images/image6.png "image_tooltip")
 
 
 (Figure from Joachimiak M p., Miller MA, Caufield JH, Ly R, Harris NL, Tritt A, Mungall CJ, Bouchard KE. The Artificial Intelligence Ontology: LLM-assisted construction of AI concept hierarchies. 2024 Apr 3; [http://arxiv.org/abs/2404.03044](http://arxiv.org/abs/2404.03044))
@@ -196,10 +176,8 @@ This work by Zheng et al (Jie Zheng was also featured above in the OBO Member Sp
 
 
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<img src="https://obofoundry.org/images/newsletter/vo.png" style="height: 400px" alt="Vaccine Ontology (Oncological Model)" />
 
-
-![alt_text](images/image7.png "image_tooltip")
 
 
 (Figure from Jie Zheng, Xingxian Li, Anna Maria Masci, Hayleigh Kahn, Anthony Huffman, Eliyas Asfaw, Yuanyi Pan, Jinjing Guo, Virginia He, Justin Song, Andrey I. Seleznev, Asiyah Yu Lin & Yongqun He. 2024 June 19 [https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-024-00312-3](https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-024-00312-3)
