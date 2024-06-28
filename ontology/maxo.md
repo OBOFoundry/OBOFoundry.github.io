@@ -46,5 +46,12 @@ repository: https://github.com/monarch-initiative/MAxO
 tags:
 - medical
 tracker: https://github.com/monarch-initiative/MAxO/issues
+usages:
+- description: MAxO is used to capture disease-treatment relations from the scientific literature.
+  examples:
+  - description: 'Bardet-biedl Syndrome 1 (MONDO:0008854) is treated through dietary interventions (MAXO:0000088) according to Forsyth et al 2003 (PMID:20301537)'
+    url: https://hpo.jax.org/data/annotations
+  type: annotation
+  user: https://hpo.jax.org/
 activity_status: active
 ---
