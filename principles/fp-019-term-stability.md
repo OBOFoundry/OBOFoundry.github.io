@@ -38,7 +38,6 @@ Detailed procedures for obsoleting a term are described on the OBO Academy page 
   - OWL format: Add an "owl:deprecated" annotation with value of "true^xsd:boolean"
   - OBO format: Add an "is_obsolete: true" declaration
 1) Prepend the string "obsolete " (including the space) to the term label
-1) Prepend the string "OBSOLETE. " (including the space) to the term definition
 1) Remove existing logical axioms from the term
 1) Remove or replace all usages of the term elsewhere in the ontology
 
@@ -57,20 +56,10 @@ Detailed procedures for obsoleting a term are described on the OBO Academy page 
 
 <i><b>To obsolete a term, the ontology developer</b></i> MAY:
 
+1) Prepend the string "OBSOLETE. " (including the space) to the term definition
 1) Indicate the reason(s) for obsoleting:
   -  OWL: Use the "has obsolescence reason" annotation property from OMO ([IAO:0000231](http://purl.obolibrary.org/obo/IAO_0000231])) with the value set to the IRI of one of the individuals of the "obsolescence reason specification" term [IAO:0000225](http://purl.obolibrary.org/obo/IAO_0000225)
   -  OBO: ?? 
-
-<i><b>To obsolete a term, the ontology developer</b></i> MAY <i><b>(but probably shouldn’t)</b></i>:
-1) Place the term under "ObsoleteClass" or similar
-  -  OWL: 
-```
-<rdfs:subClassOf rdf:resource=http://www.geneontology.org/formats/oboInOwl#ObsoleteClass/>
-```
-  -  OBO:
-```
-is_a: oboInOwl#ObsoleteClass
-```
 
 Examples
 -------
