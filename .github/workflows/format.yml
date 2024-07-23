@@ -1,4 +1,4 @@
-name: Run and Apply Linter
+name: Autoformat code and metadata
 on:
   workflow_dispatch:
   pull_request:
@@ -8,19 +8,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.ref }}
       - name: Install dependencies
-        run: |
-          pip install --upgrade pip setuptools wheel
-          pip install "tox<4.0.0"
+        run: pip install --upgrade pip setuptools wheel "tox<4.0.0"
       - name: Permission workaround
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
-      - name: Run linter
+      - name: Run formatter
         run: tox -e lint
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
-          message: 'Commit automated linter changes'
+          message: 'Commit automated formatter changes'
           add: '.'
