@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: phipo
 title: Pathogen Host Interaction Phenotype Ontology
-build:
-  checkout: git clone https://github.com/PHI-base/phipo.git
-  path: .
-  system: git
 contact:
   email: alayne.cuzick@rothamsted.ac.uk
   github: CuzickA
@@ -16,9 +12,6 @@ dependencies:
 description: PHIPO is a formal ontology of species-neutral phenotypes observed in pathogen-host interactions.
 domain: phenotype
 homepage: https://github.com/PHI-base/phipo
-jobs:
-- id: https://travis-ci.org/PHI-base/phipo
-  type: travis-ci
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/

@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: upa
 title: Unipathway
-build:
-  checkout: git clone https://github.com/geneontology/unipathway.git
-  path: .
-  system: git
 contact:
   email: Anne.Morgat@sib.swiss
   github: amorgat
@@ -16,9 +12,6 @@ dependencies:
 description: A manually curated resource for the representation and annotation of metabolic pathways
 domain: biological systems
 homepage: https://github.com/geneontology/unipathway
-jobs:
-- id: https://travis-ci.org/geneontology/unipathway
-  type: travis-ci
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/

@@ -23,5 +23,5 @@ repository: https://github.com/CRBS/Biological_Imaging_Methods_Ontology
 tags:
 - imaging experiments
 tracker: https://github.com/CRBS/Biological_Imaging_Methods_Ontology/issues
-activity_status: active
+activity_status: inactive
 ---

@@ -5,28 +5,22 @@ title: Mammalian Phenotype Ontology
 browsers:
 - title: MGI MP Browser
   label: MGI
-  url: http://www.informatics.jax.org/searches/MP_form.shtml
+  url: https://www.informatics.jax.org/vocab/mp_ontology/
 - title: RGD MP Browser
   label: RGD
   url: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MP:0000001
 - title: Monarch Phenotype Page
   label: Monarch
   url: http://monarchinitiative.org/phenotype/MP:0000001
-build:
-  checkout: git clone https://github.com/mgijax/mammalian-phenotype-ontology.git
-  path: .
-  system: git
 contact:
   email: drsbello@gmail.com
   github: sbello
   label: Sue Bello
   orcid: 0000-0003-4606-0597
+depicted_by: https://raw.githubusercontent.com/mgijax/mammalian-phenotype-ontology/main/logo/2024_MP_logo_RGB_ICON_color.png
 description: Standard terms for annotating mammalian phenotypic data.
 domain: phenotype
-homepage: http://www.informatics.jax.org/searches/MP_form.shtml
-jobs:
-- id: http://build.berkeleybop.org/job/build-mp-edit
-  type: DryRunBuild
+homepage: https://www.informatics.jax.org/vocab/mp_ontology/
 license:
   label: CC BY 4.0
   url: http://creativecommons.org/licenses/by/4.0/

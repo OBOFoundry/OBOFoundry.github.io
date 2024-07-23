@@ -15,21 +15,19 @@ A unique namespace within the OBO Foundry Library allows the source of an elemen
 
 ## Recommendations and Requirements
 
-Each ontology MUST have a unique IRI in the form of an OBO Foundry permanent URL (PURL). The PURL must include the ontology namespace, which is abbreviated by a short set of letters approved by the OBO Foundry Operations Committee. Every element (class, property, etc.) created by the ontology MUST use the namespace in the identifier of each element, as specified in the OBO Foundry [ID policy](http://www.obofoundry.org/id-policy).
+Each ontology MUST have a unique IRI in the form of an OBO Foundry permanent URL (PURL). The PURL must include the ontology namespace, which is a short string of letters (usually 2-5) that represents the ontology. Namespaces MUST be approved by the OBO Foundry Operations Committee. Every element (class, property, etc.) created by the ontology MUST use the namespace in the identifier of each element, as specified in the OBO Foundry [ID policy](http://www.obofoundry.org/id-policy).
 
 ## Implementation
 
 ### Ontology Namespace:
 
-The namespace is a short string of letters (usually 2-5) that represents the ontology. When used as part of a CURIE, on its own, or as part of a term ID, the namespace is generally capitalized. When used as part of the ontology IRI, the namespace is in lower case. See examples below.
+The ontology namespace MUST be unique; that is, it MUST NOT be in current use or have been used in the past. When used as part of the ontology IRI, the namespace is in lower case. When used as part of a CURIE, on its own, or as part of a term ID, the namespace MUST be capitalized (<i>Note: this applies to ontologies submitted after 1st June 2024; mixed-case prefixes for ontologies submitted before this date may be retained</i>).
 
 To request a new namespace, ontology developers MUST follow the guidelines outlined here. Note that very short namespaces (2-3 characters) are reserved for ontologies that cover a general domain and are likely to be frequently used.
 
-The ontology namespace MUST be unique; that is, it MUST NOT be in current use or have been used in the past.
-
 ### Ontology IRI:
 
-The primary IRI for an OBO Library IRI MUST have the following format:
+The primary IRI for an OBO ontology IRI MUST have the following format:
 https://purl.obolibrary.org/obo/$namespace.owl
 
 Note: To conform with OBO Foundry [Principle 2](https://obofoundry.org/principles/fp-002-format.html), the ontology IRI MUST resolve to the ontology file, not a landing page.
@@ -38,20 +36,22 @@ For guidelines on how to create IRIs for ontology elements/terms, see the OBO Fo
 
 ## Examples
 
-http://purl.obolibrary.org/obo/go.owl
-http://purl.obolibrary.org/obo/pco.owl
+| Namespace | Ontology IRI | Term IRI | Term CURIE |
+| ------------- | ------------- | ------------- | ------------- |
+| GO  | http://purl.obolibrary.org/obo/go.owl | http://purl.obolibrary.org/obo/GO_0008150 | GO:0008150 |
+| PCO  | http://purl.obolibrary.org/obo/pco.owl | http://purl.obolibrary.org/obo/PCO_0000000 | PCO:0000000 |
 
 ## Counter Examples
 
 The following counter examples are valid ontology IRIs, but do not conform with OBO Foundry principles.
 
-http://iridl.ldeo.columbia.edu/ontologies/SWEET.owl
+- http://iridl.ldeo.columbia.edu/ontologies/SWEET.owl
 
 Furthermore, these IRIs do not resolve to the ontology file.
 
-http://purl.org/dc/terms/
+- http://purl.org/dc/terms/
 
-http://dbpedia.org/ontology/
+- http://dbpedia.org/ontology/
 
 ## Criteria for Review
 
@@ -64,3 +64,5 @@ The ontology namespace MUST be registered following the procedures outlined with
 To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%233+%22URIs%22+%3CENTER+ISSUE+TITLE%3E).
 
 To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%233+%22URIs%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
+
+See also [this discussion](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2596) of URI capitalization by the OBO Foundry Operations Committee.

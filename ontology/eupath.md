@@ -3,7 +3,7 @@ layout: ontology_detail
 id: eupath
 title: VEuPathDB ontology
 contact:
-  email: jiezheng@pennmedicine.upenn.edu
+  email: jiezhen@med.umich.edu
   github: zhengj2007
   label: Jie Zheng
   orcid: 0000-0002-2999-0103
@@ -37,7 +37,7 @@ usages:
 - description: The VEuPathDB ontology is used in the MicrobiomeDB, a systems biology platform for integrating, mining and analyzing microbiome experiments.
   type: annotation and query
   user: https://microbiomedb.org
-activity_status: active
+activity_status: inactive
 ---
 
 The VEuPathDB ontology is an application ontology developed to encode our understanding of what data is about in the public resources developed and maintained by the Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org). The VEuPathDB ontology was previously named the EuPathDB ontology prior to EuPathDB joining with VectorBase.The ontology was built based on the Ontology of Biomedical Investigations (OBI) with integration of other OBO ontologies such as PATO, OGMS, DO, etc. as needed for coverage. Currently the VEuPath ontology is primarily intended to be used for support of the VEuPathDB sites. Terms with VEuPathDB ontology IDs that are not specific to VEuPathDB will be submitted to OBO Foundry ontologies for subsequent import and replacement of those terms when they are available.

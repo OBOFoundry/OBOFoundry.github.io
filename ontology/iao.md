@@ -6,7 +6,7 @@ build:
   method: owl2obo
   source_url: http://purl.obolibrary.org/obo/iao.owl
 contact:
-  email: jiezheng@pennmedicine.upenn.edu
+  email: zhengj2007@gmail.com
   github: zhengj2007
   label: Jie Zheng
   orcid: 0000-0002-2999-0103

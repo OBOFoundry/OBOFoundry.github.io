@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: mco
 title: Microbial Conditions Ontology
-build:
-  checkout: git clone https://github.com/microbial-conditions-ontology/microbial-conditions-ontology.git
-  path: .
-  system: git
 contact:
   email: citlalli.mejiaalmonte@gmail.com
   github: citmejia
@@ -29,9 +25,6 @@ dependencies:
 description: Microbial Conditions Ontology is an ontology...
 domain: investigations
 homepage: https://github.com/microbial-conditions-ontology/microbial-conditions-ontology
-jobs:
-- id: https://travis-ci.org/microbial-conditions-ontology/microbial-conditions-ontology
-  type: travis-ci
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/

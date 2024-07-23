@@ -38,11 +38,55 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone  https://github.com/AgriculturalSemantics/agro.git",
-                "path": ".",
-                "system": "git"
+            "contact": {
+                "email": "mcmelek@msn.com",
+                "github": "Melek-C",
+                "label": "Melek Chaouch",
+                "orcid": "0000-0001-5868-4204"
             },
+            "description": "AfPO is an ontology that can be used in the study of diverse populations across Africa. It brings together publicly available demographic, anthropological and genetic data relating to African people in a standardised and structured format. The AfPO can be employed to classify African study participants comprehensively in prospective research studies. It can also be used to classify past study participants by mapping them using a language or ethnicity identifier or synonyms.",
+            "domain": "organisms",
+            "homepage": "https://github.com/h3abionet/afpo",
+            "id": "afpo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/afpo.owl",
+            "preferredPrefix": "AfPO",
+            "products": [
+                {
+                    "description": "The main ontology in OWL. Contains all MP terms and links to other OBO ontologies",
+                    "id": "afpo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/afpo.owl",
+                    "title": "AfPO (OWL edition)"
+                },
+                {
+                    "description": "A direct translation of the AfPO (OWL edition) into OBO format",
+                    "id": "afpo.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/afpo.obo",
+                    "page": "https://github.com/h3abionet/afpo",
+                    "title": "AfPO (OBO edition)"
+                },
+                {
+                    "description": "A direct translation of the AfPO (OWL edition) into OBOGraph JSON format",
+                    "id": "afpo.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/afpo.json",
+                    "page": "https://github.com/h3abionet/afpo",
+                    "title": "AfPO (obographs JSON edition)"
+                }
+            ],
+            "repository": "https://github.com/h3abionet/afpo",
+            "tags": [
+                "ancestry"
+            ],
+            "title": "African Population Ontology",
+            "tracker": "https://github.com/h3abionet/afpo/issues"
+        },
+        {
+            "activity_status": "active",
             "contact": {
                 "email": "m.a.laporte@cgiar.org",
                 "github": "marieALaporte",
@@ -97,12 +141,6 @@
             "domain": "agriculture",
             "homepage": "https://github.com/AgriculturalSemantics/agro",
             "id": "agro",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/AgriculturalSemantics/agro",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -300,7 +338,7 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "hoganwr@ufl.edu",
+                "email": "hoganwr@gmail.com",
                 "github": "hoganwr",
                 "label": "William Hogan",
                 "orcid": "0000-0002-9881-1017"
@@ -465,13 +503,6 @@
                 }
             ],
             "repository": "https://github.com/BFO-ontology/BFO",
-            "review": {
-                "date": 2016,
-                "document": {
-                    "label": "PDF",
-                    "link": "https://drive.google.com/open?id=0B81h9ah4tAM_RnNTRUZnVGRyWXM"
-                }
-            },
             "title": "Basic Formal Ontology",
             "tracker": "https://github.com/BFO-ontology/BFO/issues",
             "usages": [
@@ -657,12 +688,12 @@
         {
             "activity_status": "active",
             "build": {
-                "checkout": "git clone https://github.com/Southern-Cross-Plant-Science/cdno.git",
+                "checkout": "git clone https://github.com/CompositionalDietaryNutritionOntology/cdno.git",
                 "path": ".",
                 "system": "git"
             },
             "contact": {
-                "email": "l.andres.hernandez.18@student.scu.edu.au",
+                "email": "landreshdz@gmail.com",
                 "github": "LilyAndres",
                 "label": "Liliana Andres Hernandez",
                 "orcid": "0000-0002-7696-731X"
@@ -710,13 +741,13 @@
             ],
             "publications": [
                 {
-                    "id": "https://doi.org/10.1002/csc2.20092",
-                    "title": "Knowledge representation and data sharing to unlock crop variation for nutritional food security"
+                    "id": "https://doi.org/10.3389/fnut.2022.928837",
+                    "title": "Establishing a Common Nutritional Vocabulary - From Food Production to Diet"
                 }
             ],
-            "repository": "https://github.com/Southern-Cross-Plant-Science/cdno",
+            "repository": "https://github.com/CompositionalDietaryNutritionOntology/cdno",
             "title": "Compositional Dietary Nutrition Ontology",
-            "tracker": "https://github.com/Southern-Cross-Plant-Science/cdno/issues"
+            "tracker": "https://github.com/CompositionalDietaryNutritionOntology/cdno/issues"
         },
         {
             "activity_status": "active",
@@ -785,9 +816,6 @@
                 }
             ],
             "repository": "https://github.com/ebi-chebi/ChEBI",
-            "review": {
-                "date": 2010
-            },
             "title": "Chemical Entities of Biological Interest",
             "tracker": "https://github.com/ebi-chebi/ChEBI/issues",
             "twitter": "chebit",
@@ -879,11 +907,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/chiro.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "vasilevs@ohsu.edu",
                 "github": "nicolevasilevsky",
@@ -917,12 +940,6 @@
             "domain": "chemistry and biochemistry",
             "homepage": "https://github.com/obophenotype/chiro",
             "id": "chiro",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/chiro",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -1063,13 +1080,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/cell-ontology.git",
-                "email_cc": "cl_edit@googlegroups.com",
-                "infallible": 1,
-                "method": "vcs",
-                "system": "git"
-            },
             "canonical": "cl.owl",
             "contact": {
                 "email": "addiehl@buffalo.edu",
@@ -1105,13 +1115,6 @@
             "domain": "anatomy and development",
             "homepage": "https://obophenotype.github.io/cell-ontology/",
             "id": "cl",
-            "integration_server": "http://build.berkeleybop.org/job/build-cl/",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/cell-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "label": "Cell Ontology",
             "layout": "ontology_detail",
             "license": {
@@ -1325,10 +1328,10 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "siiraa@umich.edu",
-                "github": "siiraa",
-                "label": "Sirarat Sarntivijai",
-                "orcid": "0000-0002-2548-641X"
+                "email": "zhengj2007@gmail.com",
+                "github": "zhengj2007",
+                "label": "Jie Zheng",
+                "orcid": "0000-0002-2999-0103"
             },
             "dependencies": [
                 {
@@ -1346,7 +1349,7 @@
             ],
             "description": "An ontology to standardize and integrate cell line information and to support computer-assisted reasoning.",
             "domain": "anatomy and development",
-            "homepage": "http://www.clo-ontology.org",
+            "homepage": "https://github.com/CLO-Ontology/CLO",
             "id": "clo",
             "layout": "ontology_detail",
             "license": {
@@ -1517,6 +1520,12 @@
                     "title": "COB base module"
                 },
                 {
+                    "description": "COB with native IDs preserved rather than rewired to OBO IDs",
+                    "id": "cob/cob-native.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/cob/cob-native.owl",
+                    "title": "COB native module"
+                },
+                {
                     "id": "cob/cob-to-external.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/cob/cob-to-external.owl",
                     "title": "COB to external",
@@ -1635,12 +1644,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/ctenophore-ontology.git",
-                "method": "vcs",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "cjmungall@lbl.gov",
                 "github": "cmungall",
@@ -1659,12 +1662,6 @@
             "domain": "anatomy and development",
             "homepage": "https://github.com/obophenotype/ctenophore-ontology",
             "id": "cteno",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/ctenophore-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -1953,7 +1950,7 @@
                 {
                     "label": "DO",
                     "title": "DO Browser",
-                    "url": "http://www.disease-ontology.org/"
+                    "url": "http://www.disease-ontology.org/do"
                 }
             ],
             "build": {
@@ -2004,13 +2001,6 @@
                 }
             ],
             "repository": "https://github.com/DiseaseOntology/HumanDiseaseOntology",
-            "review": {
-                "date": 2015,
-                "document": {
-                    "label": "PDF",
-                    "link": "https://drive.google.com/open?id=0B8vqEgF1N0NIZ082U2JETHlSTGs"
-                }
-            },
             "tags": [
                 "disease"
             ],
@@ -2185,11 +2175,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/EBISPOT/duo.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "mcourtot@gmail.com",
                 "github": "mcourtot",
@@ -2208,12 +2193,6 @@
             "domain": "information",
             "homepage": "https://github.com/EBISPOT/DUO",
             "id": "duo",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/EBISPOT/DUO",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -2284,12 +2263,13 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "notes": "switch to vcs",
-                "source_url": "https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.obo"
-            },
+            "browsers": [
+                {
+                    "label": "ECO",
+                    "title": "ECO Browser",
+                    "url": "https://www.evidenceontology.org/browse"
+                }
+            ],
             "contact": {
                 "email": "mgiglio@som.umaryland.edu",
                 "github": "mgiglio99",
@@ -2307,12 +2287,6 @@
             ],
             "homepage": "https://www.evidenceontology.org",
             "id": "eco",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/evidenceontology/evidenceontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -2347,7 +2321,7 @@
                 }
             ],
             "repository": "https://github.com/evidenceontology/evidenceontology",
-            "title": "Evidence ontology",
+            "title": "Evidence and Conclusion Ontology",
             "tracker": "https://github.com/evidenceontology/evidenceontology/issues",
             "usages": [
                 {
@@ -2382,11 +2356,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/EcologicalSemantics/ecocore.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "p.buttigieg@gmail.com",
                 "github": "pbuttigieg",
@@ -2429,12 +2398,6 @@
             "domain": "environment",
             "homepage": "https://github.com/EcologicalSemantics/ecocore",
             "id": "ecocore",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/EcologicalSemantics/ecocore",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -2463,11 +2426,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/EnvironmentOntology/environmental-exposure-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "annethessen@gmail.com",
                 "github": "diatomsRcool",
@@ -2520,12 +2478,6 @@
             "domain": "environment",
             "homepage": "https://github.com/EnvironmentOntology/environmental-exposure-ontology",
             "id": "ecto",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/EnvironmentOntology/environmental-exposure-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -2640,14 +2592,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/EnvironmentOntology/envo.git",
-                "email_cc": "cjmungall@lbl.gov",
-                "infallible": 1,
-                "method": "vcs",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "pier.buttigieg@awi.de",
                 "github": "pbuttigieg",
@@ -2685,12 +2629,6 @@
             "domain": "environment",
             "homepage": "http://environmentontology.org/",
             "id": "envo",
-            "jobs": [
-                {
-                    "id": "https://github.com/EnvironmentOntology/envo/blob/master/.github/workflows/qc.yml",
-                    "type": "github-action"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -2848,66 +2786,6 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "jiezheng@pennmedicine.upenn.edu",
-                "github": "zhengj2007",
-                "label": "Jie Zheng",
-                "orcid": "0000-0002-2999-0103"
-            },
-            "depicted_by": "https://raw.githubusercontent.com/EuPathDB/communitysite/master/assets/images/VEuPathDB-logo-s.png",
-            "description": "An ontology is developed to support Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org).",
-            "domain": "organisms",
-            "homepage": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology",
-            "id": "eupath",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/4.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/eupath.owl",
-            "preferredPrefix": "EUPATH",
-            "products": [
-                {
-                    "id": "eupath.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/eupath.owl"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "https://doi.org/10.5281/zenodo.6685957",
-                    "title": "Malaria study data integration and information retrieval based on OBO Foundry ontologies."
-                }
-            ],
-            "repository": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology",
-            "tags": [
-                "functional genomics",
-                "population biology",
-                "clinical epidemiology",
-                "microbiomes"
-            ],
-            "title": "VEuPathDB ontology",
-            "tracker": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology/issues",
-            "usages": [
-                {
-                    "description": "The VEuPathDB ontology is used in the VEuPathDB (Eukaryotic Pathogen, Vector & Host Informatics Resources) covers both functional genomics and population biology.",
-                    "type": "annotation and query",
-                    "user": "https://veupathdb.org"
-                },
-                {
-                    "description": "The VEuPathDB ontology is used in the clinical epidemiology resources.",
-                    "type": "annotation and query",
-                    "user": "https://clinepidb.org"
-                },
-                {
-                    "description": "The VEuPathDB ontology is used in the MicrobiomeDB, a systems biology platform for integrating, mining and analyzing microbiome experiments.",
-                    "type": "annotation and query",
-                    "user": "https://microbiomedb.org"
-                }
-            ]
-        },
-        {
-            "activity_status": "active",
-            "contact": {
                 "email": "annethessen@gmail.com",
                 "github": "diatomsRcool",
                 "label": "Anne Thessen",
@@ -2982,43 +2860,6 @@
             },
             "title": "Fungal gross anatomy",
             "tracker": "https://github.com/obophenotype/fungal-anatomy-ontology/issues"
-        },
-        {
-            "activity_status": "active",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/dosumis/fbbi/master/src/ontology/fbbi.obo"
-            },
-            "contact": {
-                "email": "wawong@gmail.com",
-                "github": "wawong",
-                "label": "Willy Wong",
-                "orcid": "0000-0002-8841-5870"
-            },
-            "description": "A structured controlled vocabulary of sample preparation, visualization and imaging methods used in biomedical research.",
-            "domain": "investigations",
-            "homepage": "http://cellimagelibrary.org/",
-            "id": "fbbi",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/fbbi.owl",
-            "preferredPrefix": "FBbi",
-            "products": [
-                {
-                    "id": "fbbi.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbi.owl"
-                }
-            ],
-            "repository": "https://github.com/CRBS/Biological_Imaging_Methods_Ontology",
-            "tags": [
-                "imaging experiments"
-            ],
-            "title": "Biological Imaging Methods Ontology",
-            "tracker": "https://github.com/CRBS/Biological_Imaging_Methods_Ontology/issues"
         },
         {
             "activity_status": "active",
@@ -3477,11 +3318,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/futres/fovt.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "meghan.balk@gmail.com",
                 "github": "megbalk",
@@ -3518,12 +3354,6 @@
             "domain": "phenotype",
             "homepage": "https://github.com/futres/fovt",
             "id": "fovt",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/futres/fovt",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -3622,6 +3452,70 @@
                     "user": "https://www.pombase.org"
                 }
             ]
+        },
+        {
+            "activity_status": "active",
+            "contact": {
+                "email": "adeans@psu.edu",
+                "github": "adeans",
+                "label": "Andy Deans",
+                "orcid": "0000-0002-2119-4663"
+            },
+            "dependencies": [
+                {
+                    "id": "caro"
+                },
+                {
+                    "id": "flopo"
+                },
+                {
+                    "id": "ncbitaxon"
+                },
+                {
+                    "id": "obi"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "po"
+                },
+                {
+                    "id": "poro"
+                },
+                {
+                    "id": "ro"
+                }
+            ],
+            "description": "Ontology of plant gall phenotypes. Plant galls are novel plant structures, generated by plants in response to biotic stressors. This ontology is used to annotate gall phenotypes (e.g., their colors, textures, sizes, locations on the plant) in a semantic way, in order to facilitate discoveries about the genetic and physiologic mechanisms responsible for such phenotypes. The ontology can also be used as a controlled vocabulary for natural language descriptions of plant galls.",
+            "domain": "phenotype",
+            "homepage": "https://adeans.github.io/gallont/",
+            "id": "gallont",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC0 1.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/cc-zero.png",
+                "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/gallont.owl",
+            "preferredPrefix": "GALLONT",
+            "products": [
+                {
+                    "id": "gallont.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/gallont.owl"
+                },
+                {
+                    "id": "gallont.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/gallont.json"
+                },
+                {
+                    "id": "gallont.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/gallont.obo"
+                }
+            ],
+            "repository": "https://github.com/adeans/gallont",
+            "title": "Plant Gall Ontology",
+            "tracker": "https://github.com/adeans/gallont/issues"
         },
         {
             "activity_status": "active",
@@ -4038,9 +3932,6 @@
                 }
             ],
             "repository": "https://github.com/geneontology/go-ontology",
-            "review": {
-                "date": 2010
-            },
             "tags": [
                 "biology"
             ],
@@ -4288,11 +4179,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/hsapdv/hsapdv.obo"
-            },
             "contact": {
                 "email": "frederic.bastian@unil.ch",
                 "github": "fbastian",
@@ -4413,7 +4299,7 @@
                 "source_url": "http://purl.obolibrary.org/obo/iao.owl"
             },
             "contact": {
-                "email": "jiezheng@pennmedicine.upenn.edu",
+                "email": "zhengj2007@gmail.com",
                 "github": "zhengj2007",
                 "label": "Jie Zheng",
                 "orcid": "0000-0002-2999-0103"
@@ -4899,15 +4785,23 @@
                 "medical"
             ],
             "title": "Medical Action Ontology",
-            "tracker": "https://github.com/monarch-initiative/MAxO/issues"
+            "tracker": "https://github.com/monarch-initiative/MAxO/issues",
+            "usages": [
+                {
+                    "description": "MAxO is used to capture disease-treatment relations from the scientific literature.",
+                    "examples": [
+                        {
+                            "description": "Bardet-biedl Syndrome 1 (MONDO:0008854) is treated through dietary interventions (MAXO:0000088) according to Forsyth et al 2003 (PMID:20301537)",
+                            "url": "https://hpo.jax.org/data/annotations"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://hpo.jax.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/microbial-conditions-ontology/microbial-conditions-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "citlalli.mejiaalmonte@gmail.com",
                 "github": "citmejia",
@@ -4962,12 +4856,6 @@
             "domain": "investigations",
             "homepage": "https://github.com/microbial-conditions-ontology/microbial-conditions-ontology",
             "id": "mco",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/microbial-conditions-ontology/microbial-conditions-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -5088,45 +4976,6 @@
             "repository": "https://github.com/jannahastings/mental-functioning-ontology",
             "title": "Mental Functioning Ontology",
             "tracker": "https://github.com/jannahastings/mental-functioning-ontology/issues"
-        },
-        {
-            "activity_status": "active",
-            "contact": {
-                "email": "druzinsk@uic.edu",
-                "github": "RDruzinsky",
-                "label": "Robert Druzinsky",
-                "orcid": "0000-0002-1572-1316"
-            },
-            "dependencies": [
-                {
-                    "id": "uberon"
-                }
-            ],
-            "description": "The Mammalian Feeding Muscle Ontology is an antomy ontology for the muscles of the head and neck that participate in feeding, swallowing, and other oral-pharyngeal behaviors.",
-            "domain": "anatomy and development",
-            "homepage": "https://github.com/rdruzinsky/feedontology",
-            "id": "mfmo",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 3.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/mfmo.owl",
-            "preferredPrefix": "MFMO",
-            "products": [
-                {
-                    "id": "mfmo.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/mfmo.owl"
-                }
-            ],
-            "repository": "https://github.com/RDruzinsky/feedontology",
-            "taxon": {
-                "id": "NCBITaxon:40674",
-                "label": "Mammalian"
-            },
-            "title": "Mammalian Feeding Muscle Ontology",
-            "tracker": "https://github.com/RDruzinsky/feedontology/issues"
         },
         {
             "activity_status": "active",
@@ -5601,7 +5450,7 @@
                 {
                     "label": "MGI",
                     "title": "MGI MP Browser",
-                    "url": "http://www.informatics.jax.org/searches/MP_form.shtml"
+                    "url": "https://www.informatics.jax.org/vocab/mp_ontology/"
                 },
                 {
                     "label": "RGD",
@@ -5614,27 +5463,17 @@
                     "url": "http://monarchinitiative.org/phenotype/MP:0000001"
                 }
             ],
-            "build": {
-                "checkout": "git clone https://github.com/mgijax/mammalian-phenotype-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "drsbello@gmail.com",
                 "github": "sbello",
                 "label": "Sue Bello",
                 "orcid": "0000-0003-4606-0597"
             },
+            "depicted_by": "https://raw.githubusercontent.com/mgijax/mammalian-phenotype-ontology/main/logo/2024_MP_logo_RGB_ICON_color.png",
             "description": "Standard terms for annotating mammalian phenotypic data.",
             "domain": "phenotype",
-            "homepage": "http://www.informatics.jax.org/searches/MP_form.shtml",
+            "homepage": "https://www.informatics.jax.org/vocab/mp_ontology/",
             "id": "mp",
-            "jobs": [
-                {
-                    "id": "http://build.berkeleybop.org/job/build-mp-edit",
-                    "type": "DryRunBuild"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -5960,12 +5799,6 @@
                     "url": "http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi"
                 }
             ],
-            "build": {
-                "infallible": 1,
-                "method": "archive",
-                "path": "archive",
-                "source_url": "http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip"
-            },
             "contact": {
                 "email": "frederic.bastian@unil.ch",
                 "github": "fbastian",
@@ -5976,12 +5809,6 @@
             "domain": "organisms",
             "homepage": "https://github.com/obophenotype/ncbitaxon",
             "id": "ncbitaxon",
-            "jobs": [
-                {
-                    "id": "http://build.berkeleybop.org/job/build-ncbitaxon/",
-                    "type": "ReleaseBuild"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -6026,6 +5853,18 @@
             ],
             "title": "NCBI organismal classification",
             "tracker": "https://github.com/obophenotype/ncbitaxon/issues",
+            "usages": [
+                {
+                    "description": "The Immune Epitope Database (IEDB) is funded by NIAID that catalogs experimental data on antibody and T cell epitopes studied in humans, non-human primates, and other animal species in the context of infectious disease, allergy, autoimmunity and transplantation.",
+                    "examples": [
+                        {
+                            "description": "A specific assay curated in the IEDB using the NCBITaxon:520 Bordetella pertussis as the source organism.",
+                            "url": "http://www.iedb.org/assay/1505273"
+                        }
+                    ],
+                    "user": "https://www.iedb.org"
+                }
+            ],
             "wasDerivedFrom": "ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat"
         },
         {
@@ -6276,12 +6115,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/bio-attribute-ontology.git",
-                "method": "vcs",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "cjmungall@lbl.gov",
                 "github": "cmungall",
@@ -6292,12 +6125,6 @@
             "domain": "phenotype",
             "homepage": "https://github.com/obophenotype/bio-attribute-ontology",
             "id": "oba",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/bio-attribute-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -6404,7 +6231,7 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "jiezheng@pennmedicine.upenn.edu",
+                "email": "jiezhen@med.umich.edu",
                 "github": "zhengj2007",
                 "label": "Jie Zheng",
                 "orcid": "0000-0002-2999-0103"
@@ -6416,9 +6243,9 @@
             "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
-                "label": "CC BY 3.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/obcs.owl",
             "preferredPrefix": "OBCS",
@@ -6433,7 +6260,19 @@
                 "statistics"
             ],
             "title": "Ontology of Biological and Clinical Statistics",
-            "tracker": "https://github.com/obcs/obcs/issues"
+            "tracker": "https://github.com/obcs/obcs/issues",
+            "usages": [
+                {
+                    "description": "The Ontology of Biological and Clinical Statistics (OBCS)-based statistical method standardization and meta-analysis of host responses to yellow fever vaccines",
+                    "examples": [
+                        {
+                            "description": "In Methods, \"Both OBCS and the Vaccine Ontology (VO) were used to ontologically model various components and relations ...\"",
+                            "url": "https://doi.org/10.1007/s40484-017-0122-5"
+                        }
+                    ],
+                    "user": "https://doi.org/10.1007/s40484-017-0122-5"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -6502,13 +6341,6 @@
                 }
             ],
             "repository": "https://github.com/obi-ontology/obi",
-            "review": {
-                "date": 2013,
-                "document": {
-                    "label": "PDF",
-                    "link": "https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc"
-                }
-            },
             "title": "Ontology for Biomedical Investigations",
             "tracker": "http://purl.obolibrary.org/obo/obi/tracker",
             "usages": [
@@ -6567,10 +6399,10 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "jiezheng@pennmedicine.upenn.edu",
-                "github": "zhengj2007",
-                "label": "Jie Zheng",
-                "orcid": "0000-0002-2999-0103"
+                "email": "jmwhorton@uams.edu",
+                "github": "jmwhorton",
+                "label": "Justin Whorton",
+                "orcid": "0009-0003-4268-6207"
             },
             "description": "An ontology built for annotation and modeling of biobank repository and biobanking administration",
             "domain": "investigations",
@@ -6618,6 +6450,44 @@
                     "user": "https://biospecimens.cancer.gov/resources/vocabularies.asp"
                 }
             ]
+        },
+        {
+            "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal Ontology Browser",
+                    "url": "https://bioportal.bioontology.org/ontologies/OCCO?p=classes"
+                }
+            ],
+            "contact": {
+                "email": "zhengj2007@gmail.com",
+                "github": "zhengj2007",
+                "label": "Jie Zheng",
+                "orcid": "0000-0002-2999-0103"
+            },
+            "description": "An ontology representing occupations. It is designed to facilitate harmonization of existing occupation standards, such as the US Bureau of Labor Statistics Standard Occupational Classification (US SOC), the International Standard Classification of Occupations (ISCO), the UK National Statistics Standard Occupational Classification (UK SOC), and the European Skills, Competences, Qualifications and Occupations (ESCO) of the European Union.",
+            "domain": "information",
+            "homepage": "https://github.com/Occupation-Ontology/OccO",
+            "id": "occo",
+            "issue_requested": 2428,
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/occo.owl",
+            "preferredPrefix": "OCCO",
+            "products": [
+                {
+                    "id": "occo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/occo.owl"
+                }
+            ],
+            "repository": "https://github.com/Occupation-Ontology/OccO",
+            "title": "Occupation Ontology",
+            "tracker": "https://github.com/Occupation-Ontology/OccO/issues"
         },
         {
             "activity_status": "active",
@@ -6697,36 +6567,6 @@
             },
             "title": "Ontology for General Medical Science",
             "tracker": "https://github.com/OGMS/ogms/issues"
-        },
-        {
-            "activity_status": "active",
-            "contact": {
-                "email": "linikujp@gmail.com",
-                "github": "linikujp",
-                "label": "Asiyah Yu Lin",
-                "orcid": "0000-0002-5379-5359"
-            },
-            "description": "An application ontology to represent genetic susceptibility to a specific disease, adverse event, or a pathological process.",
-            "domain": "investigations",
-            "homepage": "https://github.com/linikujp/OGSF",
-            "id": "ogsf",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 3.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/ogsf.owl",
-            "preferredPrefix": "OGSF",
-            "products": [
-                {
-                    "id": "ogsf.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ogsf.owl"
-                }
-            ],
-            "repository": "https://github.com/linikujp/OGSF",
-            "title": "Ontology of Genetic Susceptibility Factor",
-            "tracker": "https://github.com/linikujp/OGSF/issues"
         },
         {
             "activity_status": "active",
@@ -6961,7 +6801,7 @@
             "activity_status": "active",
             "build": {
                 "method": "owl2obo",
-                "source_url": "https://github.com/ufbmi/OMRSE"
+                "source_url": "https://github.com/mcwdsi/OMRSE"
             },
             "contact": {
                 "email": "hoganwr@gmail.com",
@@ -6969,9 +6809,9 @@
                 "label": "Bill Hogan",
                 "orcid": "0000-0002-9881-1017"
             },
-            "description": "This ontology covers the domain of social entities that are related to health care, such as demographic information and the roles of various individuals and organizations.",
+            "description": "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations.",
             "domain": "health",
-            "homepage": "https://github.com/ufbmi/OMRSE/wiki/OMRSE-Overview",
+            "homepage": "https://github.com/mcwdsi/OMRSE/wiki/OMRSE-Overview",
             "id": "omrse",
             "layout": "ontology_detail",
             "license": {
@@ -6993,16 +6833,47 @@
                     "title": "The ontology of medically related social entities: recent developments"
                 }
             ],
-            "repository": "https://github.com/ufbmi/OMRSE",
+            "repository": "https://github.com/mcwdsi/OMRSE",
             "tags": [
-                "medicine"
+                "social",
+                "behavior"
             ],
             "taxon": {
                 "id": "NCBITaxon:9606",
                 "label": "Homo sapiens"
             },
-            "title": "Ontology of Medically Related Social Entities",
-            "tracker": "https://github.com/ufbmi/OMRSE/issues"
+            "title": "Ontology for Modeling and Representation of Social Entities",
+            "tracker": "https://github.com/mcwdsi/OMRSE/issues",
+            "usages": [
+                {
+                    "description": "OMRSE is used by the CAFÊ and TIPTOE projects",
+                    "examples": [
+                        {
+                            "description": "The project creates and maintains the Ontology of Organizational Structures of Trauma centers and Trauma systems or OOSTT, which reuses OMRSE terms",
+                            "url": "https://www.ebi.ac.uk/ols4/ontologies/oostt/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOOSTT_00000089"
+                        }
+                    ],
+                    "type": "owl:Ontology",
+                    "user": "https://boar.uams.edu/projects/comparative-assessment-framework-for-environments-of-trauma-care"
+                },
+                {
+                    "description": "OMRSE is used by the Intervention Setting Ontology component of the Behavior Change Intervention Ontology",
+                    "examples": [
+                        {
+                            "description": "Several facility classes extend OMRSE's 'facility'",
+                            "url": "https://www.ebi.ac.uk/ols4/ontologies/bcio/classes/http%253A%252F%252Fhumanbehaviourchange.org%252Fontology%252FBCIO_026022"
+                        }
+                    ],
+                    "publications": [
+                        {
+                            "id": "https://doi.org/10.12688/wellcomeopenres.15904.1",
+                            "title": "Development of an Intervention Setting Ontology for behaviour change: Specifying where interventions take place"
+                        }
+                    ],
+                    "type": "owl:Ontology",
+                    "user": "https://www.humanbehaviourchange.org"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -7122,6 +6993,13 @@
         },
         {
             "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "Human-readable (HTML)",
+                    "title": "Ontoavida HTML Browser",
+                    "url": "https://owl.fortunalab.org/ontoavida/"
+                }
+            ],
             "contact": {
                 "email": "fortuna@ebd.csic.es",
                 "github": "miguelfortuna",
@@ -7159,12 +7037,24 @@
             "preferredPrefix": "ONTOAVIDA",
             "products": [
                 {
+                    "description": "The main ontology in OWL",
                     "id": "ontoavida.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ontoavida.owl"
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ontoavida.owl",
+                    "page": "https://gitlab.com/fortunalab/ontoavida/-/raw/master/ontoavida.owl",
+                    "title": "OWL"
                 },
                 {
+                    "description": "Equivalent to ontoavida.owl, in obo format",
                     "id": "ontoavida.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ontoavida.obo"
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ontoavida.obo",
+                    "page": "https://gitlab.com/fortunalab/ontoavida/-/raw/master/ontoavida.obo",
+                    "title": "OBO"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1038/s41597-023-02514-3",
+                    "title": "Ontology for the Avida digital evolution platform"
                 }
             ],
             "repository": "https://gitlab.com/fortunalab/ontoavida",
@@ -7173,7 +7063,19 @@
                 "artificial life"
             ],
             "title": "OntoAvida: ontology for Avida digital evolution platform",
-            "tracker": "https://gitlab.com/fortunalab/ontoavida/-/issues"
+            "tracker": "https://gitlab.com/fortunalab/ontoavida/-/issues",
+            "usages": [
+                {
+                    "description": "An R package—avidaR—uses OntoAvida to perform complex queries on an RDF database—avidaDB—containing the genomes, transcriptomes, and phenotypes of more than a million digital organisms",
+                    "examples": [
+                        {
+                            "description": "avidaR: an R library to perform complex queries on an ontology-based database of digital organisms",
+                            "url": "http://doi.org/10.7717/peerj-cs.1568"
+                        }
+                    ],
+                    "user": "https://cran.r-project.org/package=avidaR"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -7252,7 +7154,7 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "jiezheng@pennmedicine.upenn.edu",
+                "email": "zhengj2007@gmail.com",
                 "github": "zhengj2007",
                 "label": "Jie Zheng",
                 "orcid": "0000-0002-2999-0103"
@@ -7395,11 +7297,6 @@
                     "url": "https://bioportal.bioontology.org/ontologies/PATO"
                 }
             ],
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo"
-            },
             "contact": {
                 "email": "g.gkoutos@gmail.com",
                 "github": "gkoutos",
@@ -7411,12 +7308,6 @@
             "homepage": "https://github.com/pato-ontology/pato/",
             "id": "pato",
             "in_foundry_order": 1,
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/pato-ontology/pato",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -7455,9 +7346,6 @@
                 }
             ],
             "repository": "https://github.com/pato-ontology/pato",
-            "review": {
-                "date": 2010
-            },
             "title": "Phenotype And Trait Ontology",
             "tracker": "https://github.com/pato-ontology/pato/issues",
             "usages": [
@@ -7594,11 +7482,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/PopulationAndCommunityOntology/pco.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "rlwalls2008@gmail.com",
                 "github": "ramonawalls",
@@ -7635,12 +7518,6 @@
             "domain": "environment",
             "homepage": "https://github.com/PopulationAndCommunityOntology/pco",
             "id": "pco",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/PopulationAndCommunityOntology/pco",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -7752,11 +7629,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/PHI-base/phipo.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "alayne.cuzick@rothamsted.ac.uk",
                 "github": "CuzickA",
@@ -7772,12 +7644,6 @@
             "domain": "phenotype",
             "homepage": "https://github.com/PHI-base/phipo",
             "id": "phipo",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/PHI-base/phipo",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -7808,11 +7674,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/planaria-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "smr@stowers.org",
                 "github": "srobb1",
@@ -7831,12 +7692,6 @@
             "domain": "anatomy and development",
             "homepage": "https://github.com/obophenotype/planaria-ontology",
             "id": "plana",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/planaria-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -7879,11 +7734,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/planarian-phenotype-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "smr@stowers.org",
                 "github": "srobb1",
@@ -7908,12 +7758,6 @@
             "domain": "phenotype",
             "homepage": "https://github.com/obophenotype/planarian-phenotype-ontology",
             "id": "planp",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/planarian-phenotype-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -7945,30 +7789,18 @@
                     "url": "http://browser.planteome.org/amigo"
                 }
             ],
-            "build": {
-                "checkout": "git clone https://github.com/Planteome/plant-ontology.git",
-                "infallible": 1,
-                "method": "vcs",
-                "system": "git"
-            },
             "contact": {
                 "email": "jaiswalp@science.oregonstate.edu",
                 "github": "jaiswalp",
                 "label": "Pankaj Jaiswal",
                 "orcid": "0000-0002-1005-8383"
             },
-            "depicted_by": "http://planteome.org/sites/default/files/garland_logo.PNG",
+            "depicted_by": "https://github.com/Planteome/plant-ontology/blob/master/Planteome_profile.jpg",
             "description": "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.",
             "domain": "anatomy and development",
             "homepage": "http://browser.planteome.org/amigo",
             "id": "po",
             "in_foundry_order": 1,
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/Planteome/plant-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -7999,13 +7831,6 @@
                 }
             ],
             "repository": "https://github.com/Planteome/plant-ontology",
-            "review": {
-                "date": 2013,
-                "document": {
-                    "label": "PDF",
-                    "link": "https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc"
-                }
-            },
             "taxon": {
                 "id": "NCBITaxon:33090",
                 "label": "Viridiplantae"
@@ -8058,13 +7883,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/porifera-ontology.git",
-                "infallible": 1,
-                "method": "vcs",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "robert.thacker@stonybrook.edu",
                 "github": "bobthacker",
@@ -8083,12 +7901,6 @@
             "domain": "anatomy and development",
             "homepage": "https://github.com/obophenotype/porifera-ontology",
             "id": "poro",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/porifera-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -8221,9 +8033,6 @@
                 }
             ],
             "repository": "https://github.com/PROconsortium/PRoteinOntology",
-            "review": {
-                "date": 2010
-            },
             "tags": [
                 "proteins"
             ],
@@ -8356,11 +8165,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/Planteome/plant-stress-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "cooperl@oregonstate.edu",
                 "github": "cooperl09",
@@ -8376,12 +8180,6 @@
             "domain": "agriculture",
             "homepage": "https://github.com/Planteome/plant-stress-ontology",
             "id": "pso",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/Planteome/plant-stress-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -8476,11 +8274,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/Radiobiology-Informatics-Consortium/RBO.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "daniel.c.berrios@nasa.gov",
                 "github": "DanBerrios",
@@ -8514,12 +8307,6 @@
             "domain": "environment",
             "homepage": "https://github.com/Radiobiology-Informatics-Consortium/RBO",
             "id": "rbo",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/DanBerrios/RBO",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -8569,12 +8356,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/oborel/obo-relations.git",
-                "infallible": 1,
-                "method": "vcs",
-                "system": "git"
-            },
             "canonical": "ro.owl",
             "contact": {
                 "email": "cjmungall@lbl.gov",
@@ -8587,12 +8368,6 @@
             "domain": "upper",
             "homepage": "https://oborel.github.io/",
             "id": "ro",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/oborel/obo-relations",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -8812,6 +8587,56 @@
             ],
             "title": "Scientific Evidence and Provenance Information Ontology",
             "tracker": "https://github.com/monarch-initiative/SEPIO-ontology/issues"
+        },
+        {
+            "activity_status": "active",
+            "browsers": [
+                {
+                    "label": "BioPortal",
+                    "title": "BioPortal Ontology Browser",
+                    "url": "https://bioportal.bioontology.org/ontologies/SLSO"
+                }
+            ],
+            "contact": {
+                "email": "daniel.c.berrios@nasa.gov",
+                "github": "DanBerrios",
+                "label": "Dan Berrios",
+                "orcid": "0000-0003-4312-9552"
+            },
+            "description": "The Space Life Sciences Ontology is an application ontology and is intended to support the operation of NASA's Life Sciences Data Archive and other systems that contain space life science research data.",
+            "domain": "investigations",
+            "homepage": "https://github.com/nasa/LSDAO",
+            "id": "slso",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 3.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/slso.owl",
+            "preferredPrefix": "SLSO",
+            "products": [
+                {
+                    "id": "slso.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/slso.owl"
+                },
+                {
+                    "id": "slso.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/slso.obo"
+                },
+                {
+                    "id": "slso.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/slso.json"
+                },
+                {
+                    "description": "Includes axioms linking to other ontologies, but no imports of those ontologies",
+                    "id": "slso-base.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/slso-base.owl"
+                }
+            ],
+            "repository": "https://github.com/nasa/LSDAO",
+            "title": "Space Life Sciences Ontology",
+            "tracker": "https://github.com/nasa/LSDAO/issues"
         },
         {
             "activity_status": "active",
@@ -9150,11 +8975,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/phenoscape/taxrank.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "balhoff@renci.org",
                 "github": "balhoff",
@@ -9165,12 +8985,6 @@
             "domain": "organisms",
             "homepage": "https://github.com/phenoscape/taxrank",
             "id": "taxrank",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/phenoscape/taxrank",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -9211,13 +9025,6 @@
                     "url": "http://browser.planteome.org/amigo/term/TO:0000387#display-lineage-tab"
                 }
             ],
-            "build": {
-                "checkout": "git clone https://github.com/Planteome/plant-trait-ontology.git",
-                "infallible": 1,
-                "method": "vcs",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "jaiswalp@science.oregonstate.edu",
                 "github": "jaiswalp",
@@ -9229,12 +9036,6 @@
             "domain": "phenotype",
             "homepage": "http://browser.planteome.org/amigo",
             "id": "to",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/Planteome/plant-trait-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -9482,11 +9283,10 @@
                 }
             ],
             "build": {
-                "checkout": "svn --ignore-externals co http://svn.code.sf.net/p/obo/svn/uberon/trunk",
+                "checkout": "git clone https://github.com/obophenotype/uberon.git",
                 "email_cc": "cjmungall@lbl.gov",
                 "infallible": 1,
-                "method": "vcs",
-                "system": "svn"
+                "system": "git"
             },
             "canonical": "uberon.owl",
             "contact": {
@@ -9497,20 +9297,40 @@
             },
             "dependencies": [
                 {
-                    "id": "chebi",
-                    "subset": "uberon/chebi_import.owl"
+                    "id": "bfo"
                 },
                 {
-                    "id": "cl",
-                    "subset": "uberon/cl_import.owl"
+                    "id": "bspo"
                 },
                 {
-                    "id": "go",
-                    "subset": "uberon/go_import.owl"
+                    "id": "chebi"
                 },
                 {
-                    "id": "pr",
-                    "subset": "uberon/pr_import.owl"
+                    "id": "cl"
+                },
+                {
+                    "id": "envo"
+                },
+                {
+                    "id": "go"
+                },
+                {
+                    "id": "nbo"
+                },
+                {
+                    "id": "ncbitaxon"
+                },
+                {
+                    "id": "omo"
+                },
+                {
+                    "id": "pato"
+                },
+                {
+                    "id": "pr"
+                },
+                {
+                    "id": "ro"
                 }
             ],
             "depicted_by": "https://raw.githubusercontent.com/jmcmurry/closed-illustrations/master/logos/uberon-logos/uberon_logo_black-banner.png",
@@ -9564,58 +9384,27 @@
                     "title": "Uberon base ontology"
                 },
                 {
-                    "description": "Uberon extended",
-                    "id": "uberon/ext.owl",
-                    "mireots_from": "cl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/uberon/ext.owl",
-                    "title": "Uberon edition that includes subsets of other ontologies and axioms connecting to them",
-                    "type": "owl:Ontology"
-                },
-                {
                     "description": "Uberon edition that excludes external ontologies and most relations",
                     "format": "obo",
-                    "id": "uberon/basic.obo",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/uberon/basic.obo",
+                    "id": "uberon/uberon-basic.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/uberon/uberon-basic.obo",
                     "title": "Uberon basic",
                     "type": "obo-basic-ontology"
                 },
                 {
-                    "connects": [
-                        {
-                            "id": "uberon"
-                        },
-                        {
-                            "id": "zfa"
-                        }
-                    ],
-                    "description": "Taxonomic equivalence axioms connecting zebrafish-specific classes to generic uberon counterparts",
-                    "id": "uberon/bridge/uberon-bridge-to-zfa.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-zfa.owl",
-                    "page": "https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies",
-                    "title": "Uberon bridge to ZFA",
-                    "type": "BridgeOntology"
+                    "description": "Uberon plus all metazoan ontologies",
+                    "id": "uberon/collected-metazoan.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/uberon/collected-metazoan.owl",
+                    "page": "https://obophenotype.github.io/uberon/combined_multispecies/",
+                    "taxon": "Metazoa",
+                    "title": "Uberon collected metazoan ontology",
+                    "type": "MergedOntology"
                 },
                 {
-                    "connects": [
-                        {
-                            "id": "uberon"
-                        },
-                        {
-                            "id": "ma"
-                        }
-                    ],
-                    "description": "Taxonomic equivalence axioms connecting adult mouse specific classes to generic uberon counterparts",
-                    "id": "uberon/bridge/uberon-bridge-to-ma.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/uberon/bridge/uberon-bridge-to-ma.owl",
-                    "page": "https://github.com/obophenotype/uberon/wiki/inter-anatomy-ontology-bridge-ontologies",
-                    "title": "Uberon bridge to MA",
-                    "type": "BridgeOntology"
-                },
-                {
-                    "description": "Extended uberon plus all metazoan ontologies",
+                    "description": "Uberon and all metazoan ontologies with redundant species-specific terms removed",
                     "id": "uberon/composite-metazoan.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/uberon/composite-metazoan.owl",
-                    "page": "https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies",
+                    "page": "https://obophenotype.github.io/uberon/combined_multispecies/",
                     "taxon": "Metazoa",
                     "title": "Uberon composite metazoan ontology",
                     "type": "MergedOntology"
@@ -9633,8 +9422,8 @@
                         "ehdaa2"
                     ],
                     "ontology_purl": "http://purl.obolibrary.org/obo/uberon/composite-vertebrate.owl",
-                    "page": "https://github.com/obophenotype/uberon/wiki/Multi-species-composite-ontologies",
-                    "taxon": "Metazoa",
+                    "page": "https://obophenotype.github.io/uberon/combined_multispecies/",
+                    "taxon": "Vertebrata",
                     "title": "Uberon composite vertebrate ontology",
                     "type": "MergedOntology"
                 }
@@ -9964,13 +9753,13 @@
             },
             "description": "VO is a biomedical ontology in the domain of vaccine and vaccination.",
             "domain": "health",
-            "homepage": "http://www.violinet.org/vaccineontology",
+            "homepage": "https://violinet.org/vaccineontology",
             "id": "vo",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC BY 3.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/vo.owl",
             "preferredPrefix": "VO",
@@ -9992,7 +9781,53 @@
             ],
             "repository": "https://github.com/vaccineontology/VO",
             "title": "Vaccine Ontology",
-            "tracker": "https://github.com/vaccineontology/VO/issues"
+            "tracker": "https://github.com/vaccineontology/VO/issues",
+            "usages": [
+                {
+                    "description": "VIOLIN uses VO to standardize vaccine information",
+                    "examples": [
+                        {
+                            "description": "VIOLIN using VO grouped all SARS-CoV-2 vaccines",
+                            "url": "https://violinet.org/canvaxkb/vaccine_detail.php?c_vaccine_id=5339"
+                        },
+                        {
+                            "description": "A specific vaccine ‘Allogeneic Tumor Cell Vaccine’ curated in VO for VIOLIN vaccine record",
+                            "url": "https://violinet.org/vaxquery/query_detail.php?c_pathogen_id=321#vaccine_5878"
+                        }
+                    ],
+                    "user": "https://violinet.org"
+                },
+                {
+                    "description": "Vaccine Adjuvant Compendium (VAC) uses Vaccine Ontology to standard vaccine adjuvants developed by NIH",
+                    "examples": [
+                        {
+                            "description": "A specific vaccine adjuvant, such as CaPNP (CaPtivant)(TM), in Vaccine Adjuvant Compendium, uses VO_0005295 ‘CaPNP (CaPtivant)(TM) vaccine adjuvant’",
+                            "url": "https://vac.niaid.nih.gov/view?id=11"
+                        }
+                    ],
+                    "user": "https://www.niaid.nih.gov/research/vaccine-adjuvant-compendium-vac"
+                },
+                {
+                    "description": "ImmPort uses Vaccine Ontology to standardize vaccine recorded collected in NIH funded ImmPort studies",
+                    "examples": [
+                        {
+                            "description": "ImmPort data used VO for annotation shown in its dataModel",
+                            "url": "https://www.immport.org/shared/dataModel"
+                        }
+                    ],
+                    "user": "https://www.immport.org/"
+                },
+                {
+                    "description": "Human Immunology Project Consortium (HIPC) uses VO to standardize vaccine records",
+                    "examples": [
+                        {
+                            "description": "Influenza Vaccine Live, Intranasal used VO_0000044",
+                            "url": "http://www.hipc-dashboard.org/#vaccine/vo-0000044"
+                        }
+                    ],
+                    "user": "https://immunespace.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -10382,9 +10217,6 @@
                 }
             ],
             "repository": "https://github.com/xenopus-anatomy/xao",
-            "review": {
-                "date": 2010
-            },
             "taxon": {
                 "id": "NCBITaxon:8353",
                 "label": "Xenopus"
@@ -10506,11 +10338,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/xenopus-phenotype-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "Erik.Segerdell@cchmc.org",
                 "github": "seger",
@@ -10547,12 +10374,6 @@
             "domain": "phenotype",
             "homepage": "https://github.com/obophenotype/xenopus-phenotype-ontology",
             "id": "xpo",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/xenopus-phenotype-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -10675,9 +10496,6 @@
                 }
             ],
             "repository": "https://github.com/cerivs/zebrafish-anatomical-ontology",
-            "review": {
-                "date": 2010
-            },
             "taxon": {
                 "id": "NCBITaxon:7954",
                 "label": "Danio"
@@ -10744,11 +10562,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/zebrafish-phenotype-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "ybradford@zfin.org",
                 "github": "ybradford",
@@ -10782,12 +10595,6 @@
             "domain": "phenotype",
             "homepage": "https://github.com/obophenotype/zebrafish-phenotype-ontology",
             "id": "zp",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/zebrafish-phenotype-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -10885,12 +10692,6 @@
                     "url": "http://monarchinitiative.org/phenotype/HP:0000118"
                 }
             ],
-            "build": {
-                "infallible": 1,
-                "method": "archive",
-                "path": "archive/hp",
-                "source_url": "http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip"
-            },
             "contact": {
                 "email": "dr.sebastian.koehler@gmail.com",
                 "github": "drseb",
@@ -10902,12 +10703,6 @@
             "domain": "phenotype",
             "homepage": "http://www.human-phenotype-ontology.org/",
             "id": "hp",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/human-phenotype-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "hpo",
@@ -11574,6 +11369,142 @@
         {
             "activity_status": "inactive",
             "contact": {
+                "email": "jiezhen@med.umich.edu",
+                "github": "zhengj2007",
+                "label": "Jie Zheng",
+                "orcid": "0000-0002-2999-0103"
+            },
+            "depicted_by": "https://raw.githubusercontent.com/EuPathDB/communitysite/master/assets/images/VEuPathDB-logo-s.png",
+            "description": "An ontology is developed to support Eukaryotic Pathogen, Host & Vector Genomics Resource (VEuPathDB; https://veupathdb.org).",
+            "domain": "organisms",
+            "homepage": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology",
+            "id": "eupath",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/eupath.owl",
+            "preferredPrefix": "EUPATH",
+            "products": [
+                {
+                    "id": "eupath.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/eupath.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.5281/zenodo.6685957",
+                    "title": "Malaria study data integration and information retrieval based on OBO Foundry ontologies."
+                }
+            ],
+            "repository": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology",
+            "tags": [
+                "functional genomics",
+                "population biology",
+                "clinical epidemiology",
+                "microbiomes"
+            ],
+            "title": "VEuPathDB ontology",
+            "tracker": "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology/issues",
+            "usages": [
+                {
+                    "description": "The VEuPathDB ontology is used in the VEuPathDB (Eukaryotic Pathogen, Vector & Host Informatics Resources) covers both functional genomics and population biology.",
+                    "type": "annotation and query",
+                    "user": "https://veupathdb.org"
+                },
+                {
+                    "description": "The VEuPathDB ontology is used in the clinical epidemiology resources.",
+                    "type": "annotation and query",
+                    "user": "https://clinepidb.org"
+                },
+                {
+                    "description": "The VEuPathDB ontology is used in the MicrobiomeDB, a systems biology platform for integrating, mining and analyzing microbiome experiments.",
+                    "type": "annotation and query",
+                    "user": "https://microbiomedb.org"
+                }
+            ]
+        },
+        {
+            "activity_status": "inactive",
+            "build": {
+                "method": "obo2owl",
+                "source_url": "https://raw.githubusercontent.com/dosumis/fbbi/master/src/ontology/fbbi.obo"
+            },
+            "contact": {
+                "email": "wawong@gmail.com",
+                "github": "wawong",
+                "label": "Willy Wong",
+                "orcid": "0000-0002-8841-5870"
+            },
+            "description": "A structured controlled vocabulary of sample preparation, visualization and imaging methods used in biomedical research.",
+            "domain": "investigations",
+            "homepage": "http://cellimagelibrary.org/",
+            "id": "fbbi",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/fbbi.owl",
+            "preferredPrefix": "FBbi",
+            "products": [
+                {
+                    "id": "fbbi.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbi.owl"
+                }
+            ],
+            "repository": "https://github.com/CRBS/Biological_Imaging_Methods_Ontology",
+            "tags": [
+                "imaging experiments"
+            ],
+            "title": "Biological Imaging Methods Ontology",
+            "tracker": "https://github.com/CRBS/Biological_Imaging_Methods_Ontology/issues"
+        },
+        {
+            "activity_status": "inactive",
+            "contact": {
+                "email": "druzinsk@uic.edu",
+                "github": "RDruzinsky",
+                "label": "Robert Druzinsky",
+                "orcid": "0000-0002-1572-1316"
+            },
+            "dependencies": [
+                {
+                    "id": "uberon"
+                }
+            ],
+            "description": "The Mammalian Feeding Muscle Ontology is an antomy ontology for the muscles of the head and neck that participate in feeding, swallowing, and other oral-pharyngeal behaviors.",
+            "domain": "anatomy and development",
+            "homepage": "https://github.com/rdruzinsky/feedontology",
+            "id": "mfmo",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 3.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/mfmo.owl",
+            "preferredPrefix": "MFMO",
+            "products": [
+                {
+                    "id": "mfmo.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mfmo.owl"
+                }
+            ],
+            "repository": "https://github.com/RDruzinsky/feedontology",
+            "taxon": {
+                "id": "NCBITaxon:40674",
+                "label": "Mammalian"
+            },
+            "title": "Mammalian Feeding Muscle Ontology",
+            "tracker": "https://github.com/RDruzinsky/feedontology/issues"
+        },
+        {
+            "activity_status": "inactive",
+            "contact": {
                 "email": "carrine.blank@umontana.edu",
                 "github": "carrineblank",
                 "label": "Carrine Blank",
@@ -11600,6 +11531,36 @@
             "repository": "https://github.com/carrineblank/MicrO",
             "title": "Ontology of Prokaryotic Phenotypic and Metabolic Characters",
             "tracker": "https://github.com/carrineblank/MicrO/issues"
+        },
+        {
+            "activity_status": "inactive",
+            "contact": {
+                "email": "linikujp@gmail.com",
+                "github": "linikujp",
+                "label": "Asiyah Yu Lin",
+                "orcid": "0000-0002-5379-5359"
+            },
+            "description": "An application ontology to represent genetic susceptibility to a specific disease, adverse event, or a pathological process.",
+            "domain": "investigations",
+            "homepage": "https://github.com/linikujp/OGSF",
+            "id": "ogsf",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 3.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/ogsf.owl",
+            "preferredPrefix": "OGSF",
+            "products": [
+                {
+                    "id": "ogsf.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ogsf.owl"
+                }
+            ],
+            "repository": "https://github.com/linikujp/OGSF",
+            "title": "Ontology of Genetic Susceptibility Factor",
+            "tracker": "https://github.com/linikujp/OGSF/issues"
         },
         {
             "activity_status": "inactive",
@@ -11715,12 +11676,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/cephalopod-ontology.git",
-                "method": "vcs",
-                "path": "src/ontology",
-                "system": "git"
-            },
             "contact": {
                 "email": "cjmungall@lbl.gov",
                 "github": "cmungall",
@@ -11731,12 +11686,6 @@
             "domain": "anatomy and development",
             "homepage": "https://github.com/obophenotype/cephalopod-ontology",
             "id": "ceph",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/obophenotype/cephalopod-ontology",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -11887,7 +11836,7 @@
                 "label": "Lynn Schriml",
                 "orcid": "0000-0001-8910-9851"
             },
-            "description": "A gazetteer constructed on ontological principles",
+            "description": "A gazetteer constructed on ontological principles. The countries are actively maintained.",
             "domain": "environment",
             "homepage": "http://environmentontology.github.io/gaz/",
             "id": "gaz",
@@ -12094,11 +12043,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "checkout": "git clone https://github.com/geneontology/unipathway.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "Anne.Morgat@sib.swiss",
                 "github": "amorgat",
@@ -12114,12 +12058,6 @@
             "domain": "biological systems",
             "homepage": "https://github.com/geneontology/unipathway",
             "id": "upa",
-            "jobs": [
-                {
-                    "id": "https://travis-ci.org/geneontology/unipathway",
-                    "type": "travis-ci"
-                }
-            ],
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -12570,7 +12508,6 @@
                 "label": "eVOC mailing list"
             },
             "domain": "anatomy and development",
-            "homepage": "http://www.evocontology.org/",
             "id": "ev",
             "is_obsolete": true,
             "layout": "ontology_detail",

@@ -6,11 +6,6 @@ browsers:
 - title: NCBI Taxonomy Browser
   label: NCBI
   url: http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi
-build:
-  infallible: 1
-  method: archive
-  path: archive
-  source_url: http://build.berkeleybop.org/job/build-ncbitaxon/lastSuccessfulBuild/artifact/*zip*/archive.zip
 contact:
   email: frederic.bastian@unil.ch
   github: fbastian
@@ -19,9 +14,6 @@ contact:
 description: An ontology representation of the NCBI organismal taxonomy
 domain: organisms
 homepage: https://github.com/obophenotype/ncbitaxon
-jobs:
-- id: http://build.berkeleybop.org/job/build-ncbitaxon/
-  type: ReleaseBuild
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/
@@ -44,6 +36,12 @@ repository: https://github.com/obophenotype/ncbitaxon
 tags:
 - taxonomy
 tracker: https://github.com/obophenotype/ncbitaxon/issues
+usages:
+- description: The Immune Epitope Database (IEDB) is funded by NIAID that catalogs experimental data on antibody and T cell epitopes studied in humans, non-human primates, and other animal species in the context of infectious disease, allergy, autoimmunity and transplantation.
+  examples:
+  - description: A specific assay curated in the IEDB using the NCBITaxon:520 Bordetella pertussis as the source organism.
+    url: http://www.iedb.org/assay/1505273
+  user: https://www.iedb.org
 wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
 activity_status: active
 ---

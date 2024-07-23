@@ -21,6 +21,9 @@ products:
 - id: cob/cob-base.owl
   title: COB base module
   description: base module for COB
+- id: cob/cob-native.owl
+  title: COB native module
+  description: COB with native IDs preserved rather than rewired to OBO IDs
 - id: cob/cob-to-external.owl
   title: COB to external
   type: BridgeOntology

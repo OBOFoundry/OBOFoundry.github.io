@@ -18,7 +18,7 @@ products:
 - id: ogsf.owl
 repository: https://github.com/linikujp/OGSF
 tracker: https://github.com/linikujp/OGSF/issues
-activity_status: active
+activity_status: inactive
 ---
 
 Ontology for Genetic Susceptibility Factor (OGSF) is an application ontology to model/represent the notion of genetic susceptibility to a specific disease or an adverse event or a pathological biological process. It is developed using BFO2.0's framwork. The ontology is under the domain of genetic epidemiology.

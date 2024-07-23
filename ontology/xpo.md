@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: xpo
 title: Xenopus Phenotype Ontology
-build:
-  checkout: git clone https://github.com/obophenotype/xenopus-phenotype-ontology.git
-  path: .
-  system: git
 contact:
   email: Erik.Segerdell@cchmc.org
   github: seger
@@ -23,9 +19,6 @@ dependencies:
 description: XPO represents anatomical, cellular, and gene function phenotypes occurring throughout the development of the African frogs Xenopus laevis and tropicalis.
 domain: phenotype
 homepage: https://github.com/obophenotype/xenopus-phenotype-ontology
-jobs:
-- id: https://travis-ci.org/obophenotype/xenopus-phenotype-ontology
-  type: travis-ci
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/

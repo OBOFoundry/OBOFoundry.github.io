@@ -9,11 +9,6 @@ browsers:
 - title: Monarch Phenotype Page
   label: Monarch
   url: http://monarchinitiative.org/phenotype/HP:0000118
-build:
-  infallible: 1
-  method: archive
-  path: archive/hp
-  source_url: http://compbio.charite.de/hudson/job/hpo/lastSuccessfulBuild/artifact/*zip*/archive.zip
 contact:
   email: dr.sebastian.koehler@gmail.com
   github: drseb
@@ -23,9 +18,6 @@ depicted_by: https://raw.githubusercontent.com/obophenotype/human-phenotype-onto
 description: A structured and controlled vocabulary for the phenotypic features encountered in human hereditary and other disease.
 domain: phenotype
 homepage: http://www.human-phenotype-ontology.org/
-jobs:
-- id: https://travis-ci.org/obophenotype/human-phenotype-ontology
-  type: travis-ci
 license:
   label: hpo
   url: https://hpo.jax.org/app/license

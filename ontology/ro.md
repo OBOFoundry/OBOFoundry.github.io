@@ -2,11 +2,6 @@
 layout: ontology_detail
 id: ro
 title: Relation Ontology
-build:
-  checkout: git clone https://github.com/oborel/obo-relations.git
-  infallible: 1
-  method: vcs
-  system: git
 canonical: ro.owl
 contact:
   email: cjmungall@lbl.gov
@@ -17,9 +12,6 @@ description: Relationship types shared across multiple ontologies
 documentation: https://oborel.github.io/obo-relations/
 domain: upper
 homepage: https://oborel.github.io/
-jobs:
-- id: https://travis-ci.org/oborel/obo-relations
-  type: travis-ci
 license:
   label: CC0 1.0
   url: http://creativecommons.org/publicdomain/zero/1.0/
