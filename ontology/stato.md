@@ -18,10 +18,40 @@ license:
 preferredPrefix: STATO
 products:
 - id: stato.owl
+publications:
+- id: https://doi.org/10.1038/s41597-019-0286-0
+  title: 'Experiment design driven FAIRification of omics data matrices, an exemplar.'
+- id: https://doi.org/10.1038/s41597-020-0409-7
+  title: 'Semantic concept schema of the linear mixed model of experimental observations'
 repository: https://github.com/ISA-tools/stato
 tags:
 - statistics
 tracker: https://github.com/ISA-tools/stato/issues
+usages:
+- description: an R/Bioconductor package, named struct (Statistics in R using Class-based Templates), which defines a suite of class-based templates that allows users to develop and implement highly standardized and readable statistical analysis workflows. Struct integrates with the STATistics Ontology to ensure consistent reporting and maximizes semantic interoperability
+  publications:
+  - id: https://doi.org/10.1101/2021.10.10.463703
+    title: 'struct: an R/Bioconductor-based framework for standardized metabolomics data analysis and beyond'
+  type: annotation
+  user: https://bioconductor.org/packages/release/bioc/html/struct.html
+- description: Scientific Evidence Code System (SEVCO) on the FEvIR platform. The FEvIR Platform includes many Builder Tools to create FHIR® Resources without requiring expertise in FHIR® or JSON, and Converter Tools to convert structured data to FHIR® Resources
+  publications:
+  - id: https://doi.org/10.1016/j.jbi.2021.103685
+    title: 'Making science computable: Developing code systems for statistics, study design, and risk of bias'
+  type: annotation
+  user: https://fevir.net/resources/CodeSystem/27270#STATO:0000039
+- description: PSI-MS CV
+  publications:
+  - id: https://doi.org/10.1093/database/bat009
+    title: 'The HUPO proteomics standards initiative- mass spectrometry controlled vocabulary.'
+  type: annotation
+  user: https://github.com/HUPO-PSI/psi-ms-CV
+- description: OBCS
+  publications:
+  - id: https://doi.org/10.1186/s13326-016-0100-2
+    title: 'The Ontology of Biological and Clinical Statistics (OBCS) for standardized and reproducible statistical analysis'
+  type: annotation
+  user: https://github.com/obcs/obcs
 activity_status: active
 ---
 
