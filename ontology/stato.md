@@ -3,10 +3,10 @@ layout: ontology_detail
 id: stato
 title: The Statistical Methods Ontology
 contact:
-  email: alejandra.gonzalez.beltran@gmail.com
-  github: agbeltran
-  label: Alejandra Gonzalez-Beltran
-  orcid: 0000-0003-3499-8262
+  email: proccaserra@gmail.com
+  github: proccaserra
+  label: Philippe Rocca-Serra
+  orcid: 0000-0001-9853-5668
 depicted_by: https://raw.githubusercontent.com/ISA-tools/stato/dev/images/stato-logo-3.png
 description: STATO is a general-purpose STATistics Ontology. Its aim is to provide coverage for processes such as statistical tests, their conditions of application, and information needed or resulting from statistical methods, such as probability distributions, variables, spread and variation metrics. STATO also covers aspects of experimental design and description of plots and graphical representations commonly used to provide visual cues of data distribution or layout and to assist review of the results.
 domain: information technology
