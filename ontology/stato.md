@@ -20,7 +20,7 @@ products:
 - id: stato.owl
 publications:
 - id: https://doi.org/10.1038/s41597-019-0286-0
-  title: 'Experiment design driven FAIRification of omics data matrices, an exemplar.'
+  title: 'Experiment design driven FAIRification of omics data matrices, an exemplar'
 - id: https://doi.org/10.1038/s41597-020-0409-7
   title: 'Semantic concept schema of the linear mixed model of experimental observations'
 repository: https://github.com/ISA-tools/stato
@@ -34,7 +34,7 @@ usages:
     title: 'struct: an R/Bioconductor-based framework for standardized metabolomics data analysis and beyond'
   type: annotation
   user: https://bioconductor.org/packages/release/bioc/html/struct.html
-- description: Scientific Evidence Code System (SEVCO) on the FEvIR platform. The FEvIR Platform includes many Builder Tools to create FHIR® Resources without requiring expertise in FHIR® or JSON, and Converter Tools to convert structured data to FHIR® Resources
+- description: Scientific Evidence Code System (SEVCO) on the FEvIR platform. The FEvIR Platform includes many Builder Tools to create FHIR Resources without requiring expertise in FHIR or JSON, and Converter Tools to convert structured data to FHIR Resources
   publications:
   - id: https://doi.org/10.1016/j.jbi.2021.103685
     title: 'Making science computable: Developing code systems for statistics, study design, and risk of bias'
