@@ -84,7 +84,7 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
       </div>
     </div>
 
-    {% if page.publications %}
+    {% if page.publications and page.publications.size > 0 %}
     <div class="card" style="margin-bottom: 1.5em;" id="publications">
       <div class="card-header">
         Publications
