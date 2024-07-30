@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     if: github.triggering_actor != 'github-actions[bot]'
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@master
+      - uses: actions/setup-python@master
         with:
           python-version: '3.9'
       - name: Install requirements
