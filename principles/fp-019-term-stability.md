@@ -9,17 +9,17 @@ GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; 
 Summary
 -------
 
-The definition of a term MUST always denote the same thing(s)--known as "referent(s)"--in reality. If a proposed change to the definition would change its referents, then a new term with new IRI and definition MUST instead be created.
+The definition of a term MUST always denote the same thing(s)--known as "referent(s)"--in reality. If a proposed change to the definition would substantially change its referents, then a new term with new IRI and definition MUST instead be created.
 
 Purpose
 -------
 
-Users of an ontology depend on the stability of its terms and their meanings. Therefore, changes to the definition of a term should never shift its meaning. Put another way, its set of referents MUST remain stable. That is, changes to a term definition should not cause that term to point to different entities than it denotes already.
+Users of an ontology depend on the stability of its terms and their meanings. Therefore, changes to the definition of a term should never substantially shift its meaning. Put another way, its set of referents MUST remain stable, within reason. That is, changes to a term definition should not cause that term to point to different entities than it denotes already.
 
 Recommendations and Requirements
 -------
 
-If changing a term definition would change its referent, then instead a new term MUST be created with a new IRI and the new definition. Minor changes to the definition for clarity, grammar, and/or proper punctuation that do not change the referent are permitted.
+If changing a term definition would change its referents, then instead a new term MUST be created with a new IRI and the new definition. Minor changes to the definition for clarity, grammar, and/or proper punctuation that do not change the referents are permitted. What is considered a 'minor change' will likely need to be considered on a case-by-case basis; it is left to the ontology developers to decide. However, any feedback from users MUST be taken into account.
 
 Conditions under which a term must be deprecated according to this principle, or for which term deprecation should be considered, include:
 
@@ -35,17 +35,18 @@ Detailed procedures for obsoleting a term are described on the OBO Academy page 
 
 <i><b>To obsolete a term, the ontology developer</b></i> MUST:
 1) Mark the term as obsolete
-  - OWL format: Add an "owl:deprecated" annotation with value of "true^xsd:boolean"
-  - OBO format: Add an "is_obsolete: true" declaration
-1) Prepend the string "obsolete " (including the space) to the term label
-1) Remove existing logical axioms from the term
-1) Remove or replace all usages of the term elsewhere in the ontology
+  - OWL format: Add an "owl:deprecated" annotation property with value of "true^xsd:boolean"
+  - OBO format: Add an "is_obsolete: true" tag
+2) Prepend the string "obsolete " (including the space) to the term label
+  - NOTE: To be consistent with [Principle 12](https://obofoundry.org/principles/fp-012-naming-conventions.html) "Naming Conventions", the syntax/format MUST be precisely as given above. Thus, the following are disallowed: "Obsolete {label}", "obsolete_{label}", "OBSOLETE {label}" (and variations thereof).
+3) Remove all existing logical axioms from the term
+4) Remove or replace all usages of the term elsewhere in the ontology
 
 <i><b>To obsolete a term, the ontology developer</b></i> SHOULD:
 1) Indicate any exact term replacement:
   -  OWL: Use the "term replaced by" annotation property from OMO ([IAO:0100001](http://purl.obolibrary.org/obo/IAO_0100001)) with the value set to the IRI of the relevant term
   -  OBO: Use the "replaced_by:" tag with the value set to the CURIE of the relevant term
-1) Indicate any inexact term replacements:
+2) Indicate any inexact term replacements:
   -  OWL: Use the "oboInOwl:consider" annotation property with the value set either to  the full IRI(s) or to the CURIE(s) of the relevant term(s)
 ```
    IRI method:   <oboInOwl:consider rdf:resource="http://purl.obolibrary.org/obo/OBI_0001544)>
@@ -56,8 +57,8 @@ Detailed procedures for obsoleting a term are described on the OBO Academy page 
 
 <i><b>To obsolete a term, the ontology developer</b></i> MAY:
 
-1) Prepend the string "OBSOLETE. " (including the space) to the term definition
-1) Indicate the reason(s) for obsoleting:
+1) Prepend the string "OBSOLETE. " (this precise string, including the space) to the term definition. NOTE: This MUST be implemented consistently. That is, if applied at all, it has to be applied to every obsoleted term definition.
+2) Indicate the reason(s) for obsoleting:
   -  OWL: Use the "has obsolescence reason" annotation property from OMO ([IAO:0000231](http://purl.obolibrary.org/obo/IAO_0000231])) with the value set to the IRI of one of the individuals of the "obsolescence reason specification" term [IAO:0000225](http://purl.obolibrary.org/obo/IAO_0000225)
   -  OBO: ?? 
 
@@ -97,6 +98,10 @@ Criteria for review
 -------
 
 TBD
+to capture:
+- ROBOT will give an ERROR if any obsolete term (that is, a term with an "owl:deprecated" property or "is_obsolete: true" tag) does not also have 'obsolete ' prepended to the label.
+- If there is at least one term with 'OBSOLETE.' prepended to the definition, ROBOT will WARN if not all obsolete terms are treated consistently.
+-OTHERS?
 
 Feedback and Discussion
 -------
