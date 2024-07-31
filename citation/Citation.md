@@ -3,7 +3,7 @@ layout: citation
 title: OBO Citation and Attribution Policy
 ---
 
-Open Biological and Biomedical Ontologies are used in a diversity of ways. The following guidelines are intended to promote proper attribution of the ontology creators and contributors, and to promote reproducibility in informatics applications.
+Open Biological and Biomedical Ontologies are used in a variety of ways. The following guidelines are intended to promote proper attribution of the ontology creators and contributors, and to promote reproducibility in informatics applications.
 
 <h2 id="single-term">Referring to a single term</h2>
 
