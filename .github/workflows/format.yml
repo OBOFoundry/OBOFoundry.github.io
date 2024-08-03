@@ -17,11 +17,15 @@ jobs:
         run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Run formatter
         run: tox -e lint
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          message: 'Commit automated formatter changes'
-          add: '.'
+      - name: Commit all changes
+        run: |
+          if [[ `git status --porcelain` ]]; then
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git add .
+            git commit -m "Apply code formatting"
+            git push
+          fi
       - uses: actions/setup-python@v5
         with:
           python-version: '3.9'
