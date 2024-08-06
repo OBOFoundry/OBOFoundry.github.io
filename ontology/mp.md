@@ -13,7 +13,7 @@ browsers:
   label: Monarch
   url: http://monarchinitiative.org/phenotype/MP:0000001
 contact:
-  email: drsbello@gmail.com
+  email: pheno@jax.org
   github: sbello
   label: Sue Bello
   orcid: 0000-0003-4606-0597
