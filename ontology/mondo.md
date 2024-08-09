@@ -87,12 +87,11 @@ usages:
 activity_status: active
 ---
 
-The Mondo Disease Ontology (Mondo) aims to harmonize disease definitions across the world. It is a global community effort to reconcile and curate the very many disease resources within a coherent merged ontology. Original versions of Mondo were constructed entirely automatically and used the IDs of source databases and ontologies. Later, additional manually curated cross-ontology axioms were added, and a native Mondo ID system was used to avoid confusion with source databases.
+The Mondo Disease Ontology (Mondo) aims to harmonize existing disease terminologies into a coherent ontological representation of diseases.
+Mondo integrates widely used terminologies such as Online Mendelian Inheritance in Man (OMIM), Orphanet, Experimental Factor Ontology (EFO), Disease Ontology (DOID) and the neoplasm branch of National Cancer Institute Thesaurus (NCIt).
+Mondo aims to track provenance and attribution for every integrated part of the disease definition to serve a wide range of data integration and cross-terminology analysis use cases.
 
-A key feature of Mondo is that it goes beyond loose database cross-references (xrefs). It curated precise 1:1 equivalence axioms connecting to other resources, validated by OWL reasoning. This means it is safe to propagate across these from Online Mendelian Inheritance in Man (OMIM), Orphanet, Experimental Factor Ontology (EFO), Disease Ontology (DOID) and the neoplasm branch of National Cancer Institute Thesaurus (NCIt). All provenance and attribution is tracked, ensuring interoperability across resources.
+A key part of Mondo is the curation of precise mappings across resources. These mappings are available in two ways:
 
-These precise mappings are available in three ways depending on the format:
-
-- The [mondo-with-equivalent](http://purl.obolibrary.org/obo/mondo/mondo-with-equivalents.owl) edition uses OWL equivalence axioms directly in the ontology. Note this makes it harder to browse in some portals, but this edition may be preferable for computational use. The owl edition also includes axiomatization using CL, Uberon, GO, HP, RO, NCBITaxon.
-- The primary release versions (mondo.owl, mondo.obo) are simpler, lacking owl equivalence axioms from Mondo classes to terms from other databases; instead, xrefs are used for linking these terms. If the ID is one of Orphanet, OMIM, DOID or EFO then the xref precisely shadows the equivalence axiom.
-- The [mondo-with-equivalents json edition](http://purl.obolibrary.org/obo/mondo/mondo-with-equivalents.json) has all owl equivalencies as well as all xrefs to other disease sources.
+- The official Mondo disease mappings in [SSSOM](https://mapping-commons.github.io/sssom/) format: [https://github.com/monarch-initiative/mondo/tree/master/src/ontology/mappings](https://github.com/monarch-initiative/mondo/tree/master/src/ontology/mappings)
+- As part of the various Mondo release products (both as SKOS mappings and oboInOwl:hasDbXref cross-references).
