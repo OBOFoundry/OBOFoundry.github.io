@@ -88,7 +88,7 @@ activity_status: active
 ---
 
 The Mondo Disease Ontology (Mondo) aims to harmonize existing disease terminologies into a coherent ontological representation of diseases.
-Mondo integrates widely used terminologies such as Online Mendelian Inheritance in Man (OMIM), Orphanet, Experimental Factor Ontology (EFO), Disease Ontology (DOID) and the neoplasm branch of National Cancer Institute Thesaurus (NCIt).
+Mondo integrates widely used terminologies such as Online Mendelian Inheritance in Man (OMIM), Orphanet, Experimental Factor Ontology (EFO), Disease Ontology (DOID), ICD 11 (Foundation) and the neoplasm branch of National Cancer Institute Thesaurus (NCIt).
 Mondo aims to track provenance and attribution for every integrated part of the disease definition to serve a wide range of data integration and cross-terminology analysis use cases.
 
 A key part of Mondo is the curation of precise mappings across resources. These mappings are available in two ways:
