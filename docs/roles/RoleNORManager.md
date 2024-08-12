@@ -104,4 +104,4 @@ Note 29.11.2022: There is a [work in progress](https://github.com/OBOFoundry/obo
 The OBO Duty Rotation Table is a Google spreadsheet available [here](https://docs.google.com/spreadsheets/d/19GrEWVnpxjnrig0iYUOiUvsZ0JDbprMh1USnRb-SXtg/edit).
 When a new member is added to OBO Foundry, the OBO NOR reviewer should add their name to this table. Likewise, former members should be removed from the table. The list of current OBO Foundry members is maintained in the file [operations.yml](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/_data/operations.yml).
 
-In addition, when a new ontology has been submitted, it should be documented in the 'Ontology Review Rotation' sheet in the same document.
+In addition, when a new ontology has been submitted, it should be added to the ['Ontology Reviewers' tab](https://docs.google.com/spreadsheets/d/19GrEWVnpxjnrig0iYUOiUvsZ0JDbprMh1USnRb-SXtg/edit?gid=1683009411#gid=1683009411) in the OBO Duty Rotation spreadsheet.
