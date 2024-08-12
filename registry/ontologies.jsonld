@@ -4785,7 +4785,20 @@
                 "medical"
             ],
             "title": "Medical Action Ontology",
-            "tracker": "https://github.com/monarch-initiative/MAxO/issues"
+            "tracker": "https://github.com/monarch-initiative/MAxO/issues",
+            "usages": [
+                {
+                    "description": "MAxO is used to capture disease-treatment relations from the scientific literature.",
+                    "examples": [
+                        {
+                            "description": "Bardet-biedl Syndrome 1 (MONDO:0008854) is treated through dietary interventions (MAXO:0000088) according to Forsyth et al 2003 (PMID:20301537)",
+                            "url": "https://hpo.jax.org/data/annotations"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://hpo.jax.org/"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -5451,7 +5464,7 @@
                 }
             ],
             "contact": {
-                "email": "drsbello@gmail.com",
+                "email": "pheno@jax.org",
                 "github": "sbello",
                 "label": "Sue Bello",
                 "orcid": "0000-0003-4606-0597"
@@ -8742,10 +8755,10 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "alejandra.gonzalez.beltran@gmail.com",
-                "github": "agbeltran",
-                "label": "Alejandra Gonzalez-Beltran",
-                "orcid": "0000-0003-3499-8262"
+                "email": "proccaserra@gmail.com",
+                "github": "proccaserra",
+                "label": "Philippe Rocca-Serra",
+                "orcid": "0000-0001-9853-5668"
             },
             "depicted_by": "https://raw.githubusercontent.com/ISA-tools/stato/dev/images/stato-logo-3.png",
             "description": "STATO is a general-purpose STATistics Ontology. Its aim is to provide coverage for processes such as statistical tests, their conditions of application, and information needed or resulting from statistical methods, such as probability distributions, variables, spread and variation metrics. STATO also covers aspects of experimental design and description of plots and graphical representations commonly used to provide visual cues of data distribution or layout and to assist review of the results.",
