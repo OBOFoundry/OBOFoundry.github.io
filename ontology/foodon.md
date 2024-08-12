@@ -37,16 +37,28 @@ repository: https://github.com/FoodOntology/foodon
 tags:
 - food
 tracker: https://github.com/FoodOntology/foodon/issues/
-activity_status: active
 usages:
-- user: https://fdc.nal.usda.gov/
-  description: FoodData Central nutrition database web portal provided by USDA Agricultural Research Service. E.g. https://fdc.nal.usda.gov/fdc-app.html#/food-details/1750340/attributes
-- user: https://www.fda.gov/food/whole-genome-sequencing-wgs-program/genometrakr-network
-  description: FDA GenomeTrackr surveillance program for reporting foodborne pathogen biosamples.  E.g. https://www.ncbi.nlm.nih.gov/biosample/SAMN03455272
-- user: https://foodperiodictable.org/
-  description: Periodic Table Of Food Initiative database of food biosample nutrition analytics. E.g. https://ptfidiscover.markerlab.com/detail/food/GGB100329
-- user: https://wikifcd.wikibase.cloud/wiki/Main_Page
-  description: Wiki database consolidating over 30 global food composition databases. E.g. https://wikifcd.wikibase.cloud/wiki/Item:Q568877
+- description: FoodData Central nutrition database web portal provided by USDA Agricultural Research Service.
+  examples:
+  - description: An entry for 'Apples, fuji, with skin, raw' from the FoodData Central nutrition database which is annotated with the term FOODON:00002862.
+    url: https://fdc.nal.usda.gov/fdc-app.html#/food-details/1750340/attributes
+  user: https://fdc.nal.usda.gov/
+- description: FDA GenomeTrackr surveillance program for reporting foodborne pathogen biosamples.
+  examples:
+  - description: An entry from NCBI Biosample that describes a *Samonella enterica* sample extracted from Chicken and annotated with the term FOODON:03411457.
+    url: https://www.ncbi.nlm.nih.gov/biosample/SAMN03455272
+  user: https://www.fda.gov/food/whole-genome-sequencing-wgs-program/genometrakr-network
+- description: Periodic Table Of Food Initiative database of food biosample nutrition analytics.
+  examples:
+  - description: <TODO>
+    url: https://ptfidiscover.markerlab.com/detail/food/GGB100329
+  user: https://foodperiodictable.org/
+- description: Wiki database consolidating over 30 global food composition databases.
+  examples:
+  - description: An entry from WikiFCD that describes Walnuts and is annotated with the term FOODON:03301364.
+    url: https://wikifcd.wikibase.cloud/wiki/Item:Q568877
+  user: https://wikifcd.wikibase.cloud/wiki/Main_Page
+activity_status: active
 ---
 
 A broadly scoped ontology representing entities which bear a “food role”.  It encompasses materials in natural ecosystems and food webs as well as human-centric categorization and handling of food.
