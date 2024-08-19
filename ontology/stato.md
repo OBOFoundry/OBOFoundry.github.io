@@ -40,12 +40,6 @@ usages:
     title: 'Making science computable: Developing code systems for statistics, study design, and risk of bias'
   type: annotation
   user: https://fevir.net/resources/CodeSystem/27270#STATO:0000039
-- description: PSI-MS CV
-  publications:
-  - id: https://doi.org/10.1093/database/bat009
-    title: The HUPO proteomics standards initiative- mass spectrometry controlled vocabulary.
-  type: annotation
-  user: https://github.com/HUPO-PSI/psi-ms-CV
 - description: OBCS
   publications:
   - id: https://doi.org/10.1186/s13326-016-0100-2
