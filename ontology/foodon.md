@@ -20,8 +20,8 @@ description: A broadly scoped ontology representing entities which bear a “foo
 domain: diet, metabolomics, and nutrition
 homepage: https://foodon.org/
 license:
-  label: CC BY 3.0
-  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 4.0
+  url: http://creativecommons.org/licenses/by/4.0/
 preferredPrefix: FOODON
 products:
 - id: foodon.owl
@@ -33,6 +33,8 @@ products:
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/31304272
   title: 'FoodOn: a harmonized food ontology to increase global food traceability, quality control and data integration'
+- id: https://content.iospress.com/articles/semantic-web/sw223096
+  title: Food process ontology requirements
 repository: https://github.com/FoodOntology/foodon
 tags:
 - food
@@ -48,11 +50,6 @@ usages:
   - description: An entry from NCBI Biosample that describes a *Samonella enterica* sample extracted from Chicken and annotated with the term FOODON:03411457.
     url: https://www.ncbi.nlm.nih.gov/biosample/SAMN03455272
   user: https://www.fda.gov/food/whole-genome-sequencing-wgs-program/genometrakr-network
-- description: Periodic Table Of Food Initiative database of food biosample nutrition analytics.
-  examples:
-  - description: <TODO>
-    url: https://ptfidiscover.markerlab.com/detail/food/GGB100329
-  user: https://foodperiodictable.org/
 - description: Wiki database consolidating over 30 global food composition databases.
   examples:
   - description: An entry from WikiFCD that describes Walnuts and is annotated with the term FOODON:03301364.
