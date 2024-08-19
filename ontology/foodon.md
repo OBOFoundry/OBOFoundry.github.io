@@ -33,8 +33,6 @@ products:
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/31304272
   title: 'FoodOn: a harmonized food ontology to increase global food traceability, quality control and data integration'
-- id: https://content.iospress.com/articles/semantic-web/sw223096
-  title: Food process ontology requirements
 repository: https://github.com/FoodOntology/foodon
 tags:
 - food
