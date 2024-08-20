@@ -11,6 +11,7 @@ The New Ontology Request (NOR) Manager has these basic duties:
 3. Supporting the New Ontology requestor to pass the OBO Dashboard
 4. Assigning a provisional reviewer from the OBO Operations Committee
 5. Removing the accepted ontology from the NOR Dashboard upon acceptance
+6. Maintaining the OBO Duty Rotation Table
 
 ### Receiving `new ontology` requests on OBO and acknowledging the receipt
 
@@ -78,7 +79,6 @@ In addition, some checks need to be carried out manually by the NOR manager unti
 
 - URIs: check if it includes "https"  and if it [conforms with the overall format](http://obofoundry.org/id-policy) "http://purl.obolibrary.org/obo/ONTOLOGY_"
 
-
 - Release artefact: check if release artefacts are identified as such and ensure that, alongside a "main release", a base release is provided which **does not include imported terms**.
 
 - Imports: Ensure that there is a mechanism in place to update imported terms (classes and properties).
@@ -98,3 +98,10 @@ If and only if the requested ontology passes the dashboard, i.e. no more "red" e
 When the ontology is accepted, the OBO NOR reviewer needs to make sure that the accepted ontology is removed from the OBO NOR Dashboard.
 
 Note 29.11.2022: There is a [work in progress](https://github.com/OBOFoundry/obo-nor.github.io/pull/23) which can deal with this step automatically, but the responsibility still stays with the OBO NOR Manager.
+
+### Maintaining the OBO Duty Rotation Table
+
+The OBO Duty Rotation Table is a Google spreadsheet available [here](https://docs.google.com/spreadsheets/d/19GrEWVnpxjnrig0iYUOiUvsZ0JDbprMh1USnRb-SXtg/edit).
+When a new member is added to the OBO Operations Committee, the OBO NOR reviewer should add the new member's name to this table. Similarly, former members should be removed from the table. The list of current OBO Operations members is maintained in the file [operations.yml](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/_data/operations.yml).
+
+In addition, when a new ontology has been submitted, it should be added to the ['Ontology Reviewers' tab](https://docs.google.com/spreadsheets/d/19GrEWVnpxjnrig0iYUOiUvsZ0JDbprMh1USnRb-SXtg/edit?gid=1683009411#gid=1683009411) in the OBO Duty Rotation spreadsheet.
