@@ -42,6 +42,8 @@ Detailed procedures for obsoleting a term are described on the OBO Academy page 
 3) Remove all existing logical axioms from the term
 4) Remove or replace all usages of the term elsewhere in the ontology
 
+It is not necessary (and not advisable) to delete the textual definition.
+
 <i><b>To obsolete a term, the ontology developer</b></i> SHOULD:
 1) Indicate any exact term replacement:
   -  OWL: Use the "term replaced by" annotation property from OMO ([IAO:0100001](http://purl.obolibrary.org/obo/IAO_0100001)) with the value set to the IRI of the relevant term
@@ -59,8 +61,8 @@ Detailed procedures for obsoleting a term are described on the OBO Academy page 
 
 1) Prepend the string "OBSOLETE. " (this precise string, including the space) to the term definition. NOTE: This MUST be implemented consistently. That is, if applied at all, it has to be applied to every obsoleted term definition.
 2) Indicate the reason(s) for obsoleting:
-  -  OWL: Use the "has obsolescence reason" annotation property from OMO ([IAO:0000231](http://purl.obolibrary.org/obo/IAO_0000231])) with the value set to the IRI of one of the individuals of the "obsolescence reason specification" term [IAO:0000225](http://purl.obolibrary.org/obo/IAO_0000225)
-  -  OBO: ?? 
+  -  OWL: Use the "has obsolescence reason" annotation property from OMO ([IAO:0000231](http://purl.obolibrary.org/obo/IAO_0000231)) with the value set to the IRI of one of the individuals of the "obsolescence reason specification" term [IAO:0000225](http://purl.obolibrary.org/obo/IAO_0000225)
+  -  OBO: Use "property_value:" with the CURIE for the annotation property (IAO:0000231) and a CURIE for the specific reason (an individual from the "obsolescence reason specification" term [IAO:0000225](http://purl.obolibrary.org/obo/IAO_0000225)). See alternative methods below.
 
 Examples
 -------
@@ -85,8 +87,27 @@ OBO:
 id: OBI:0001574
 name: obsolete cell lysate MHC competitive binding assay using radioactivity detection
 def: "OBSOLETE. Competitive inhibition of binding assay measuring MHC ligand binding by radioactivity detection using MHC derived from a cell lysate." []
+property_value: IAO:0000231 IAO:0000227
 is_obsolete: true
 replaced_by: OBI:0001544
+```
+For OBO format, there are multiple alternatives:
+1) Use "relationship:" instead of "property_value:".
+1) Use the annotation property label (with underscores) instead of the CURIE "IAO:0000231", and the obsolescence reason label instead of the relevant CURIE. Note that the underscore version of the property label will need to be created in the ontology:
+```
+[Typedef]
+id: has_obsolescence_reason
+name: has obsolescence reason
+xref: IAO:0000233
+is_metadata_tag: true
+```
+Then:
+```
+relationship: has_obsolescence_reason IAO:0000227 ! terms merged
+```
+Or:
+```
+property_value: has_obsolescence_reason IAO:0000227
 ```
 
 Counter-example
@@ -97,11 +118,11 @@ The PRO term "phosphoprotein" (PR:000037070) is defined as "A protein that inclu
 Criteria for review
 -------
 
-TBD
-to capture:
+TBD - indicate how a human reviewer would go about looking for violations
+
+The technical aspects can be automatically checked:
 - ROBOT will give an ERROR if any obsolete term (that is, a term with an "owl:deprecated" property or "is_obsolete: true" tag) does not also have 'obsolete ' prepended to the label.
 - If there is at least one term with 'OBSOLETE.' prepended to the definition, ROBOT will WARN if not all obsolete terms are treated consistently.
--OTHERS?
 
 Feedback and Discussion
 -------
