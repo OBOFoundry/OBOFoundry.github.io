@@ -42,7 +42,7 @@ usages:
   user: https://fevir.net/resources/CodeSystem/27270#STATO:0000039
 - description: OBCS
   publications:
-  - id: https://doi.org/10.1186/s13326-016-0100-2
+  - id: https://pubmed.ncbi.nlm.nih.gov/27627881
     title: The Ontology of Biological and Clinical Statistics (OBCS) for standardized and reproducible statistical analysis
   type: annotation
   user: https://github.com/obcs/obcs
