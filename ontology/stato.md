@@ -21,7 +21,7 @@ products:
 publications:
 - id: https://pubmed.ncbi.nlm.nih.gov/31831744
   title: Experiment design driven FAIRification of omics data matrices, an exemplar
-- id: https://doi.org/10.1038/s41597-020-0409-7
+- id: https://pubmed.ncbi.nlm.nih.gov/32109232
   title: Semantic concept schema of the linear mixed model of experimental observations
 repository: https://github.com/ISA-tools/stato
 tags:
