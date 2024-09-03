@@ -30,7 +30,7 @@ tracker: https://github.com/ISA-tools/stato/issues
 usages:
 - description: struct (Statistics in R using Class-based Templates), Struct integrates with the STATistics Ontology to ensure consistent reporting and maximizes semantic interoperability
   publications:
-  - id: https://doi.org/10.1101/2021.10.10.463703
+  - id: https://pubmed.ncbi.nlm.nih.gov/33325493
     title: 'struct: an R/Bioconductor-based framework for standardized metabolomics data analysis and beyond'
   type: annotation
   user: https://bioconductor.org/packages/release/bioc/html/struct.html
