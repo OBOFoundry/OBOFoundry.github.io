@@ -36,7 +36,7 @@ usages:
   user: https://bioconductor.org/packages/release/bioc/html/struct.html
 - description: Scientific Evidence Code System (SEVCO) on the FEvIR platform. The FEvIR Platform includes many Builder Tools to create FHIR Resources without requiring expertise in FHIR or JSON, and Converter Tools to convert structured data to FHIR Resources
   publications:
-  - id: https://doi.org/10.1016/j.jbi.2021.103685
+  - id: https://pubmed.ncbi.nlm.nih.gov/33486066
     title: 'Making science computable: Developing code systems for statistics, study design, and risk of bias'
   type: annotation
   user: https://fevir.net/resources/CodeSystem/27270#STATO:0000039
