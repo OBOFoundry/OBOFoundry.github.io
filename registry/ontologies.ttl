@@ -4277,6 +4277,8 @@ _:b199  <http://www.w3.org/2000/01/rdf-schema#label>  "Francesco Vitali" ;
         <http://purl.org/dc/elements/1.1/description>  "STATO is a general-purpose STATistics Ontology. Its aim is to provide coverage for processes such as statistical tests, their conditions of application, and information needed or resulting from statistical methods, such as probability distributions, variables, spread and variation metrics. STATO also covers aspects of experimental design and description of plots and graphical representations commonly used to provide visual cues of data distribution or layout and to assist review of the results." ;
         <http://purl.org/dc/elements/1.1/title>  "The Statistical Methods Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/31831744> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/32109232> ;
         <http://purl.org/dc/terms/1.1/theme>  "information technology" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/ISA-tools/stato/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/stato.owl" ;
@@ -5153,6 +5155,12 @@ _:b236  <http://www.w3.org/2000/01/rdf-schema#label>  "Martin Ramirez" ;
 
 <http://purl.obolibrary.org/obo/spd.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/spd.owl" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/31831744>
+        <http://purl.org/dc/elements/1.1/title>  "Experiment design driven FAIRification of omics data matrices, an exemplar" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/32109232>
+        <http://purl.org/dc/elements/1.1/title>  "Semantic concept schema of the linear mixed model of experimental observations" .
 
 _:b203  <http://www.w3.org/2000/01/rdf-schema#label>  "Philippe Rocca-Serra" ;
         <http://xmlns.com/foaf/0.1/mbox>  "proccaserra@gmail.com" .
