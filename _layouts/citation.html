@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<div class="content">
+  <div>
+    <div class="page-header">
+      <h1>{{ page.title }}</h1>
+    </div>
+  </div>
+
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-3">
+        {% capture my_include %}{% include citation_toc.md %}{% endcapture %} {{
+        my_include | markdownify }} {% if page.id %}
+        <div class="btn-group" role="group" aria-label="Source">
+          <a
+            href="https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/citation/{{page.id}}.md"
+          >
+            <button
+              type="button"
+              data-toggle="tooltip"
+              title="See FAQ entry: How is metadata stored?"
+              html="true"
+              class="btn btn-outline-primary"
+            >
+              View
+            </button>
+          </a>
+          <a
+            href="https://github.com/OBOFoundry/OBOFoundry.github.io/edit/master/citation/{{page.id}}.md"
+          >
+            <button
+              type="button"
+              data-toggle="tooltip"
+              title="See FAQ entry: How I do edit my metadata?"
+              html="true"
+              class="btn btn-outline-primary"
+            >
+              Edit
+            </button>
+          </a>
+          <!-- <button type="button" class="btn btn-outline-primary">Help</button> -->
+        </div>
+        {% endif %}
+      </div>
+
+      <div class="col-md-9">{{ content }}</div>
+    </div>
+  </div>
+</div>
+

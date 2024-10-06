@@ -18,10 +18,34 @@ license:
 preferredPrefix: STATO
 products:
 - id: stato.owl
+publications:
+- id: https://www.ncbi.nlm.nih.gov/pubmed/31831744
+  title: Experiment design driven FAIRification of omics data matrices, an exemplar
+- id: https://www.ncbi.nlm.nih.gov/pubmed/32109232
+  title: Semantic concept schema of the linear mixed model of experimental observations
 repository: https://github.com/ISA-tools/stato
 tags:
 - statistics
 tracker: https://github.com/ISA-tools/stato/issues
+usages:
+- description: struct (Statistics in R using Class-based Templates), Struct integrates with the STATistics Ontology to ensure consistent reporting and maximizes semantic interoperability
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/33325493
+    title: 'struct: an R/Bioconductor-based framework for standardized metabolomics data analysis and beyond'
+  type: annotation
+  user: https://bioconductor.org/packages/release/bioc/html/struct.html
+- description: Scientific Evidence Code System (SEVCO) on the FEvIR platform. The FEvIR Platform includes many Builder Tools to create FHIR Resources without requiring expertise in FHIR or JSON, and Converter Tools to convert structured data to FHIR Resources
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/33486066
+    title: 'Making science computable: Developing code systems for statistics, study design, and risk of bias'
+  type: annotation
+  user: https://fevir.net/resources/CodeSystem/27270#STATO:0000039
+- description: OBCS
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/27627881
+    title: The Ontology of Biological and Clinical Statistics (OBCS) for standardized and reproducible statistical analysis
+  type: annotation
+  user: https://github.com/obcs/obcs
 activity_status: active
 ---
 

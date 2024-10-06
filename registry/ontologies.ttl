@@ -143,7 +143,7 @@ _:b2    <http://www.w3.org/2000/01/rdf-schema#label>  "Melek Chaouch" ;
         <http://obofoundry.github.io/vocabulary/depends_on>  <http://purl.obolibrary.org/obo/uberon> ;
         <http://purl.org/dc/elements/1.1/description>  "A broadly scoped ontology representing entities which bear a “food role”. It encompasses materials in natural ecosystems and agriculture that are consumed by humans and domesticated animals. This includes any generic (unbranded) raw or processed food material found in processing plants, markets, stores or food distribution points. FoodOn also imports nutritional component and dietary pattern terms from other OBO Foundry ontologies to support interoperability in diet and nutrition research" ;
         <http://purl.org/dc/elements/1.1/title>  "Food Ontology" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/31304272> ;
         <http://purl.org/dc/terms/1.1/theme>  "diet, metabolomics, and nutrition" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/FoodOntology/foodon/issues/" ;
@@ -3599,7 +3599,7 @@ _:b174  <http://www.w3.org/2000/01/rdf-schema#label>  "Colin Batchelor" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "Monarch" .
 
 _:b48   <http://www.w3.org/2000/01/rdf-schema#label>  "Sue Bello" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "drsbello@gmail.com" .
+        <http://xmlns.com/foaf/0.1/mbox>  "pheno@jax.org" .
 
 <http://purl.obolibrary.org/obo/mp.owl>
         <http://purl.org/dc/elements/1.1/description>  "The main ontology in OWL. Contains all MP terms and links to other OBO ontologies." ;
@@ -4277,6 +4277,8 @@ _:b199  <http://www.w3.org/2000/01/rdf-schema#label>  "Francesco Vitali" ;
         <http://purl.org/dc/elements/1.1/description>  "STATO is a general-purpose STATistics Ontology. Its aim is to provide coverage for processes such as statistical tests, their conditions of application, and information needed or resulting from statistical methods, such as probability distributions, variables, spread and variation metrics. STATO also covers aspects of experimental design and description of plots and graphical representations commonly used to provide visual cues of data distribution or layout and to assist review of the results." ;
         <http://purl.org/dc/elements/1.1/title>  "The Statistical Methods Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/31831744> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/32109232> ;
         <http://purl.org/dc/terms/1.1/theme>  "information technology" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/ISA-tools/stato/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/stato.owl" ;
@@ -5153,6 +5155,12 @@ _:b236  <http://www.w3.org/2000/01/rdf-schema#label>  "Martin Ramirez" ;
 
 <http://purl.obolibrary.org/obo/spd.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/spd.owl" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/31831744>
+        <http://purl.org/dc/elements/1.1/title>  "Experiment design driven FAIRification of omics data matrices, an exemplar" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/32109232>
+        <http://purl.org/dc/elements/1.1/title>  "Semantic concept schema of the linear mixed model of experimental observations" .
 
 _:b203  <http://www.w3.org/2000/01/rdf-schema#label>  "Philippe Rocca-Serra" ;
         <http://xmlns.com/foaf/0.1/mbox>  "proccaserra@gmail.com" .

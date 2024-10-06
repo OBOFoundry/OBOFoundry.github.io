@@ -3283,9 +3283,9 @@
             "id": "foodon",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC BY 3.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/foodon.owl",
             "preferredPrefix": "FOODON",
@@ -3314,7 +3314,39 @@
                 "food"
             ],
             "title": "Food Ontology",
-            "tracker": "https://github.com/FoodOntology/foodon/issues/"
+            "tracker": "https://github.com/FoodOntology/foodon/issues/",
+            "usages": [
+                {
+                    "description": "FoodData Central nutrition database web portal provided by USDA Agricultural Research Service.",
+                    "examples": [
+                        {
+                            "description": "An entry for 'Apples, fuji, with skin, raw' from the FoodData Central nutrition database which is annotated with the term FOODON:00002862.",
+                            "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/1750340/attributes"
+                        }
+                    ],
+                    "user": "https://fdc.nal.usda.gov/"
+                },
+                {
+                    "description": "FDA GenomeTrackr surveillance program for reporting foodborne pathogen biosamples.",
+                    "examples": [
+                        {
+                            "description": "An entry from NCBI Biosample that describes a *Samonella enterica* sample extracted from Chicken and annotated with the term FOODON:03411457.",
+                            "url": "https://www.ncbi.nlm.nih.gov/biosample/SAMN03455272"
+                        }
+                    ],
+                    "user": "https://www.fda.gov/food/whole-genome-sequencing-wgs-program/genometrakr-network"
+                },
+                {
+                    "description": "Wiki database consolidating over 30 global food composition databases.",
+                    "examples": [
+                        {
+                            "description": "An entry from WikiFCD that describes Walnuts and is annotated with the term FOODON:03301364.",
+                            "url": "https://wikifcd.wikibase.cloud/wiki/Item:Q568877"
+                        }
+                    ],
+                    "user": "https://wikifcd.wikibase.cloud/wiki/Main_Page"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -5464,7 +5496,7 @@
                 }
             ],
             "contact": {
-                "email": "drsbello@gmail.com",
+                "email": "pheno@jax.org",
                 "github": "sbello",
                 "label": "Sue Bello",
                 "orcid": "0000-0003-4606-0597"
@@ -8780,12 +8812,57 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/stato.owl"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/31831744",
+                    "title": "Experiment design driven FAIRification of omics data matrices, an exemplar"
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/32109232",
+                    "title": "Semantic concept schema of the linear mixed model of experimental observations"
+                }
+            ],
             "repository": "https://github.com/ISA-tools/stato",
             "tags": [
                 "statistics"
             ],
             "title": "The Statistical Methods Ontology",
-            "tracker": "https://github.com/ISA-tools/stato/issues"
+            "tracker": "https://github.com/ISA-tools/stato/issues",
+            "usages": [
+                {
+                    "description": "struct (Statistics in R using Class-based Templates), Struct integrates with the STATistics Ontology to ensure consistent reporting and maximizes semantic interoperability",
+                    "publications": [
+                        {
+                            "id": "https://www.ncbi.nlm.nih.gov/pubmed/33325493",
+                            "title": "struct: an R/Bioconductor-based framework for standardized metabolomics data analysis and beyond"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://bioconductor.org/packages/release/bioc/html/struct.html"
+                },
+                {
+                    "description": "Scientific Evidence Code System (SEVCO) on the FEvIR platform. The FEvIR Platform includes many Builder Tools to create FHIR Resources without requiring expertise in FHIR or JSON, and Converter Tools to convert structured data to FHIR Resources",
+                    "publications": [
+                        {
+                            "id": "https://www.ncbi.nlm.nih.gov/pubmed/33486066",
+                            "title": "Making science computable: Developing code systems for statistics, study design, and risk of bias"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://fevir.net/resources/CodeSystem/27270#STATO:0000039"
+                },
+                {
+                    "description": "OBCS",
+                    "publications": [
+                        {
+                            "id": "https://www.ncbi.nlm.nih.gov/pubmed/27627881",
+                            "title": "The Ontology of Biological and Clinical Statistics (OBCS) for standardized and reproducible statistical analysis"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://github.com/obcs/obcs"
+                }
+            ]
         },
         {
             "activity_status": "active",
