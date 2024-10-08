@@ -46,23 +46,30 @@ It is not necessary (and not advisable) to delete the textual definition.
 
 <i><b>To obsolete a term, the ontology developer</b></i> SHOULD:
 1) Indicate any exact term replacement:
-  -  OWL: Use the "term replaced by" annotation property from OMO ([IAO:0100001](http://purl.obolibrary.org/obo/IAO_0100001)) with the value set to the IRI of the relevant term
-  -  OBO: Use the "replaced_by:" tag with the value set to the CURIE of the relevant term
+   -  OWL: Use the "term replaced by" annotation property from OMO ([IAO:0100001](http://purl.obolibrary.org/obo/IAO_0100001)) with the value set to the IRI of the relevant term
+   -  OBO: Use the "replaced_by:" tag with the value set to the CURIE of the relevant term
 2) Indicate any inexact term replacements:
-  -  OWL: Use the "oboInOwl:consider" annotation property with the value set either to  the full IRI(s) or to the CURIE(s) of the relevant term(s)
+   -  OWL: Use the "oboInOwl:consider" annotation property with the value set to the full IRI(s) of the relevant term(s)
 ```
-   IRI method:   <oboInOwl:consider rdf:resource="http://purl.obolibrary.org/obo/OBI_0001544)>
-   CURIE method: <oboInOwl:consider rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0001544</oboInOwl:consider>
+   <oboInOwl:consider rdf:resource="http://purl.obolibrary.org/obo/OBI_0001544")>
 ``` 
 
-  -  OBO: Use the "consider:" tag with the value set to the CURIE(s) of the relevant term(s)
+   -  OBO: Use the "consider:" tag with the value set to the CURIE(s) of the relevant term(s)
+```
+   consider: OBI:0001544
+```
 
+Note that some older implementations in OWL used the CURIE method as shown below, but this is not preferred.
+
+```
+   <oboInOwl:consider rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0001544</oboInOwl:consider>
+```
 <i><b>To obsolete a term, the ontology developer</b></i> MAY:
 
 1) Prepend the string "OBSOLETE. " (this precise string, including the space) to the term definition. NOTE: This MUST be implemented consistently. That is, if applied at all, it has to be applied to every obsoleted term definition.
 2) Indicate the reason(s) for obsoleting:
-  -  OWL: Use the "has obsolescence reason" annotation property from OMO ([IAO:0000231](http://purl.obolibrary.org/obo/IAO_0000231)) with the value set to the IRI of one of the individuals of the "obsolescence reason specification" term [IAO:0000225](http://purl.obolibrary.org/obo/IAO_0000225)
-  -  OBO: Use "property_value:" with the CURIE for the annotation property (IAO:0000231) and a CURIE for the specific reason (an individual from the "obsolescence reason specification" term [IAO:0000225](http://purl.obolibrary.org/obo/IAO_0000225)). See alternative methods below.
+  -  OWL: Use the "has obsolescence reason" annotation property from OMO ([IAO:0000231](http://purl.obolibrary.org/obo/IAO_0000231)) with the value set to the IRI of one of the individuals of the "obsolescence reason specification" term [IAO:0000225](http://purl.obolibrary.org/obo/IAO_0000225). See below for example.
+  -  OBO: Use "relationship:" with the CURIE for the annotation property (IAO:0000231) and a CURIE for the specific reason (an individual from the "obsolescence reason specification" term [IAO:0000225](http://purl.obolibrary.org/obo/IAO_0000225)). See below for example. Note that older implementations often used alternative methods (described after the examples). These methods are still valid, but are not preferred.
 
 Examples
 -------
@@ -87,12 +94,13 @@ OBO:
 id: OBI:0001574
 name: obsolete cell lysate MHC competitive binding assay using radioactivity detection
 def: "OBSOLETE. Competitive inhibition of binding assay measuring MHC ligand binding by radioactivity detection using MHC derived from a cell lysate." []
-property_value: IAO:0000231 IAO:0000227
+relationship: IAO:0000231 IAO:0000227
 is_obsolete: true
 replaced_by: OBI:0001544
 ```
 For OBO format, there are multiple alternatives:
-1) Use "relationship:" instead of "property_value:".
+1) Use "property_value:" instead of "relationship:".
+1) Use a free text "comment:". 
 1) Use the annotation property label (with underscores) instead of the CURIE "IAO:0000231", and the obsolescence reason label instead of the relevant CURIE. Note that the underscore version of the property label will need to be created in the ontology:
 ```
 [Typedef]
