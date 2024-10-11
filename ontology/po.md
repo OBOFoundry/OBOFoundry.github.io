@@ -11,7 +11,7 @@ contact:
   github: jaiswalp
   label: Pankaj Jaiswal
   orcid: 0000-0002-1005-8383
-depicted_by: https://github.com/Planteome/plant-ontology/blob/master/Planteome_profile.jpg
+depicted_by: https://raw.githubusercontent.com/Planteome/plant-ontology/refs/heads/master/Planteome_profile.jpg
 description: The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.
 domain: anatomy and development
 homepage: http://browser.planteome.org/amigo
