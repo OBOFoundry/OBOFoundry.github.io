@@ -13,7 +13,7 @@ Welcome to the 6th issue of the OBO Foundry Newsletter! As always, we're excited
 
 This edition continues our tradition of spotlighting contributors and ontologies. We're pleased to introduce two of our dedicated community members, as well as two ontologies that exemplify the principles and standards of the OBO Foundry.
 
-We will report on the progress of ongoing initiatives, including updates on ontology reviews, Principal standardization efforts, and new tools that are enhancing our collective work. 
+We will report on the progress of ongoing initiatives, including updates on ontology reviews, Principal standardization efforts, and new tools that are enhancing our collective work.
 
 This issue also features a recap of recent events and workshops that have fostered collaboration and knowledge-sharing within our community. 
 
@@ -60,13 +60,9 @@ Discussions are ongoing, with the committee actively seeking feedback (which you
 
 ---
 
-
 ## Ontologies
 
-
 ### New ontologies currently under review 
-
-
 
 * [Exercise Medicine Ontology](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2615) (EXMO) is an ontology focused on exercise medicine. It is based on the Basic Formal Ontology (BFO),  and includes terms related to physical activity, health status, and exercise prescriptions for various populations, including healthy individuals, those with chronic conditions, and people with disabilities. Developed to support personalized exercise prescriptions, EXMO bridges standardized guidelines with individualized approaches. It draws from guidelines, databases, and scientific literature and has been validated through expert evaluation and reasoners like ELK and JFact. Currently under review, EXMO aims to become a standard for personalized exercise prescriptions and a tool for databases and recommendation systems. [Join the discussion](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2615).
 * [Biomarker Ontology](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2604) (BMONT) is a comprehensive knowledge representation system that encompasses various medical and biological aspects. Developed in accordance with Basic Formal Ontology (BFO) and Open Biological and Biomedical Ontology (OBO) principles, BMONT builds upon a decade-old biomarker terminology created by Fraunhofer SCAI. It incorporates entities and definitions from this legacy system, as well as related terms gathered from scientific publications and books across diverse disease fields. The ontology aims to enhance biomarker identification tasks and serve as a supportive, integratable tool for advanced AI techniques such as Machine Learning (ML) and Large Learning Models (LLM). BMONT is under review, with contributors actively addressing feedback and making updates to improve its quality and alignment with OBO Foundry standards. [Join the discussion](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2604).
@@ -95,10 +91,7 @@ The OBO Foundry is honored to highlight two valued community members.
 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
+<img src="https://obofoundry.org/images/newsletter/hogan.png" style="height: 400px" alt="Bill Hogan" />
 
 
 William “Bill” Hogan, MD, MS is currently Professor and Director of the Data Science Institute at the Medical College of Wisconsin, where he holds the Mary T. and Ted D. Kellner Chair of Data Science. He has over 20 years of experience in the development, maintenance, and application of biomedical data standards, especially ontologies. He created the Drug Ontology (DrOn) to facilitate comparative effectiveness research on medications. He also leads the development of the Ontology for Modeling and Representation of Social Entities (OMRSE), which represents healthcare organizations, healthcare providers, healthcare roles, as well as numerous social determinants of health including education, language and literacy, socio-economic status, social identities and categories, and intimate partner violence. He previously held R01 funding from NIGMS to create data standards for epidemic simulators and disease transmission models, which includes the Apollo-SV ontology. Apollo-SV represents numerous aspects of the infectious disease epidemiology domain.
@@ -109,11 +102,7 @@ William “Bill” Hogan, MD, MS is currently Professor and Director of the Data
 
 ### 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
-
+<img src="https://obofoundry.org/images/newsletter/sgehrke.png" style="height: 400px" alt="Sarah Gehrke" />
 
 Sarah (she/they) is a Research Program Project Manager with the Translational and Integrative Sciences Lab (TISLab) at the University of North Carolina at Chapel Hill's Department of Genetics. With a background as an analytical chemist, Sarah brings diverse experience from industry labs which focused on coal and natural gas remediation and biomass conversion technologies. She also participated in metabolomics mass spectrometry research at the University of Colorado Anschutz Medical Campus (CU-AMC) and served as Finance Manager for the Structural Biology and Biochemistry Cores at the CU-AMC School of Medicine.
 
@@ -130,12 +119,7 @@ In 2022, Sarah transitioned to her current role as Project Manager for the TISLa
 
 The research outlines the Knowledge Graph Change Language (KGCL), a new standard data model for describing changes to knowledge graphs (KGs) and ontologies. KGCL aims to standardize and simplify the process of managing changes in these complex data structures, making it easier for stakeholders to understand and contribute to the development of ontologies and KGs. The preprint details the structure of KGCL, its controlled natural language (CNL), and various tools developed to support the use of KGCL, such as the Ontobot automated agent and a BioPortal widget for requesting changes to ontologies. The paper also discusses future directions for KGCL, including its use in AI applications and integration with other frameworks.
 
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
+<img src="https://obofoundry.org/images/newsletter/kgcl.png" style="height: 400px" alt="KGCL Overview" />
 
 
 (Figure from Harshad Hegde, Jennifer Vendetti, Damien Goutte-Gattat, J Harry Caufield, John B Graybeal, Nomi L Harris, Naouel Karam, Christian Kindermann, Nicolas Matentzoglu, James A Overton, Mark A Musen, Christopher J Mungall. A Change Language for Ontologies and Knowledge Graphs. 2024 Sep 20; [https://arxiv.org/abs/2409.13906](https://arxiv.org/abs/2409.13906)) 
@@ -145,12 +129,7 @@ The research outlines the Knowledge Graph Change Language (KGCL), a new standard
 
 This preprint describes the development of the Unified Phenotype Ontology (uPheno), a framework designed to integrate and standardize phenotype data across multiple species. uPheno addresses the challenge of integrating phenotype data from different sources by providing a consistent and logical framework for describing phenotypes. It utilizes a library of design patterns to define phenotype terms, enabling the development of a hierarchical vocabulary that groups species-specific phenotype terms under species-neutral categories. uPheno also includes mappings between species-specific ontologies, facilitating cross-species comparisons and enabling researchers to identify genes with similar phenotypic effects across different organisms. The paper highlights the potential applications of uPheno in various areas of biological research, including clinical diagnostics, variant prioritization, and disease modeling.
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
+<img src="https://obofoundry.org/images/newsletter/upheno.png" style="height: 400px" alt="uPheno model" />
 
 
 (Figure from  Nicolas Matentzoglu, Susan M Bello, Ray Stefancsik, Sarah M. Alghamdi, Anna V. Anagnostopoulos, James P. Balhoff, Meghan A. Balk, Yvonne M. Bradford, Yasemin Bridges, Tiffany J. Callahan, Harry Caufield, Alayne Cuzick, Leigh C Carmody, Anita R. Caron, Vinicius de Souza, Stacia R. Engel, Petra Fey, Malcolm Fisher, Sarah Gehrke, Christian Grove, Peter Hansen, Nomi L. Harris, Midori A. Harris, Laura Harris, Arwa Ibrahim, Julius O.B. Jacobsen, Sebastian Köhler, Julie A. McMurry, Violeta Munoz-Fuentes, Monica C. Munoz-Torres, Helen Parkinson, Zoë M Pendlington, Clare Pilgrim, Sofia MC Robb, Peter N. Robinson, James Seager, Erik Segerdell, Damian Smedley, Elliot Sollis, Sabrina Toro, Nicole Vasilevsky, Valerie Wood, Melissa A. Haendel, Christopher J. Mungall, James A. McLaughlin, and David Osumi-Sutherland. The Unified Phenotype Ontology (uPheno): A framework for cross-species integrative phenomics. 2024 Sep 20. [https://www.biorxiv.org/content/10.1101/2024.09.18.613276v1](https://www.biorxiv.org/content/10.1101/2024.09.18.613276v1)
