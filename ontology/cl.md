@@ -149,7 +149,7 @@ Uberon and various phenotype ontologies.
 
 The following are some applications of the cell ontology along with their publications: 
 
-**CellxGene**
+**CZ CELLxGENE**
 
 CZI Single-Cell Biology Program, Shibla Abdulla, Brian Aevermann, Pedro Assis, Seve Badajoz, Sidney M. Bell, Emanuele Bezzi, et al. 2023. “CZ CELL×GENE Discover: A Single-Cell Data Platform for Scalable Exploration, Analysis and Modeling of Aggregated Data.” bioRxiv. [doi:10.1101/2023.10.30.563174](https://doi.org/10.1101/2023.10.30.563174).
 
