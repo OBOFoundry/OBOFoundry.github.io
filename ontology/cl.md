@@ -84,6 +84,12 @@ usages:
     title: 'The human body at cellular resolution: the NIH Human Biomolecular Atlas Program.'
   type: annotation
   user: https://hubmapconsortium.org/
+- description: The single-cell transcriptomics platform CZ CELLxGENE uses CL to annotate all cell types. All datasets on CellXGene are annotated according to a standard schema that specifies the use of CL to record Cell Type: 
+  publications:
+  - id: https://doi.org/10.1101/2021.04.05.438318
+    title: CELLxGENE: a performant, scalable exploration platform for high dimensional sparse matrices
+  type: annotation
+  user: https://cellxgene.cziscience.com/
 - description: The Human Cell Atlas (HCA) is an international group of researchers using a combination of these new technologies to create cellular reference maps. The HCA use CL to annotate cells in their reference maps.
   examples:
   - description: HCA collection studies that are related B cell (CL:0000236) that is filtered through CL annotation
