@@ -126,11 +126,12 @@ The PRO term "phosphoprotein" (PR:000037070) is defined as "A protein that inclu
 Criteria for review
 -------
 
-TBD - indicate how a human reviewer would go about looking for violations
+The OBO Dashboard will show:
+- An ERROR if any obsolete term (that is, a term with an "owl:deprecated" property or "is_obsolete: true" tag) does not also have 'obsolete ' (that exact string, lowercase and space included) prepended to the label
+- An ERROR if an obsolete term has any associated logical axioms (including any subClassOf/is_a declarations)
+- A WARN if there is at least one term with 'OBSOLETE. ' prepended to the definition but not all obsolete terms are likewise prepended
 
-The technical aspects can be automatically checked:
-- ROBOT will give an ERROR if any obsolete term (that is, a term with an "owl:deprecated" property or "is_obsolete: true" tag) does not also have 'obsolete ' prepended to the label.
-- If there is at least one term with 'OBSOLETE.' prepended to the definition, ROBOT will WARN if not all obsolete terms are treated consistently.
+[This check is automatically validated.](checks/fp_019)
 
 Feedback and Discussion
 -------
