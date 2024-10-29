@@ -11,6 +11,8 @@ author:
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+feed:
+  disable_in_development: true
 ## --Anything above this line can be edited in _config_header.yml --
 ## --Everything below this line automatically generated in _config.yml --
 ontologies:
