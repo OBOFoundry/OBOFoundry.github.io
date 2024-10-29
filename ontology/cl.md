@@ -85,6 +85,9 @@ usages:
   type: annotation
   user: https://hubmapconsortium.org/
 - description: The single-cell transcriptomics platform CZ CELLxGENE uses CL to annotate all cell types. All datasets on CellXGene are annotated according to a standard schema that specifies the use of CL to record Cell Type.
+  examples:
+  - description: A CELLxGENE Cell Guide entry for 'luminal adaptive secretory precursor cell of mammary gland', which includes the CL ID (CL:4033057), CL definition and a visualizer of CL hierarchy
+    url: https://cellxgene.cziscience.com/cellguide/CL:4033057
   publications:
   - id: https://doi.org/10.1101/2021.04.05.438318
     title: 'CELLxGENE: a performant, scalable exploration platform for high dimensional sparse matrices'
