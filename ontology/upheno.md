@@ -1,16 +1,16 @@
 ---
 layout: ontology_detail
 id: upheno
-title: Unified phenotype ontology (uPheno)
+title: Unified Phenotype Ontology (uPheno)
 build:
   method: archive
   path: archive/ontology
   source_url: http://build.berkeleybop.org/job/build-pheno-ontologies/lastSuccessfulBuild/artifact/*zip*/archive.zip
 contact:
-  email: vasilevs@ohsu.edu
-  github: nicolevasilevsky
-  label: Nicole Vasilevsky
-  orcid: 0000-0001-5208-3432
+  email: jmcl@ebi.ac.uk
+  github: jamesamcl
+  label: James McLaughlin
+  orcid: 0000-0002-8361-2795
 description: The uPheno ontology integrates multiple phenotype ontologies into a unified cross-species phenotype ontology.
 domain: phenotype
 homepage: https://github.com/obophenotype/upheno
@@ -30,9 +30,11 @@ products:
   page: https://github.com/obophenotype/upheno/tree/master/hp-mp
 - id: upheno/v2/upheno.owl
   title: uPheno 2
-  description: The new version of uPheno, along with species independent phenotypes amd additional phenotype relations. The ontology is still in Beta status, but we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is no longer actively maintained.
+  description: The new version of uPheno, along with species independent phenotypes and additional phenotype relations. The ontology is still in Beta status, but we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is no longer actively maintained.
   page: https://github.com/obophenotype/upheno-dev
 publications:
+- id: https://doi.org/10.1101/2024.09.18.613276
+  title: The Unified Phenotype Ontology (uPheno): A framework for cross-species integrative phenomics
 - id: https://zenodo.org/record/2382757
   title: Phenotype Ontologies Traversing All The Organisms (POTATO) workshop aims to reconcile logical definitions across species
 - id: https://zenodo.org/record/3352149
