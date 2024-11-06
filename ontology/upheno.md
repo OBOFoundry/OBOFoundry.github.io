@@ -34,7 +34,7 @@ products:
   page: https://github.com/obophenotype/upheno-dev
 publications:
 - id: https://doi.org/10.1101/2024.09.18.613276
-  title: The Unified Phenotype Ontology (uPheno): A framework for cross-species integrative phenomics
+  title: 'The Unified Phenotype Ontology (uPheno): A framework for cross-species integrative phenomics'
 - id: https://zenodo.org/record/2382757
   title: Phenotype Ontologies Traversing All The Organisms (POTATO) workshop aims to reconcile logical definitions across species
 - id: https://zenodo.org/record/3352149
