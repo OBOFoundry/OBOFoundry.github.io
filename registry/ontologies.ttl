@@ -5497,8 +5497,9 @@ _:b18   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b245 ;
         <http://purl.org/dc/elements/1.1/description>  "The uPheno ontology integrates multiple phenotype ontologies into a unified cross-species phenotype ontology." ;
-        <http://purl.org/dc/elements/1.1/title>  "Unified phenotype ontology (uPheno)" ;
+        <http://purl.org/dc/elements/1.1/title>  "Unified Phenotype Ontology (uPheno)" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1101/2024.09.18.613276> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://zenodo.org/record/2382757> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://zenodo.org/record/3352149> ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
@@ -5514,14 +5515,17 @@ _:b18   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
 _:b245  <http://obofoundry.github.io/vocabulary/method>  "archive" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "http://build.berkeleybop.org/job/build-pheno-ontologies/lastSuccessfulBuild/artifact/*zip*/archive.zip"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
+<https://doi.org/10.1101/2024.09.18.613276>
+        <http://purl.org/dc/elements/1.1/title>  "The Unified Phenotype Ontology (uPheno): A framework for cross-species integrative phenomics" .
+
 <https://zenodo.org/record/2382757>
         <http://purl.org/dc/elements/1.1/title>  "Phenotype Ontologies Traversing All The Organisms (POTATO) workshop aims to reconcile logical definitions across species" .
 
 <https://zenodo.org/record/3352149>
         <http://purl.org/dc/elements/1.1/title>  "Phenotype Ontologies Traversing All The Organisms (POTATO) workshop: 2nd edition" .
 
-_:b246  <http://www.w3.org/2000/01/rdf-schema#label>  "Nicole Vasilevsky" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "vasilevs@ohsu.edu" .
+_:b246  <http://www.w3.org/2000/01/rdf-schema#label>  "James McLaughlin" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "jmcl@ebi.ac.uk" .
 
 <http://purl.obolibrary.org/obo/upheno.owl>
         <http://purl.org/dc/elements/1.1/description>  "uPheno 1 is no longer actively maintained, please start using uPheno 2 (see below)." ;
@@ -5536,7 +5540,7 @@ _:b246  <http://www.w3.org/2000/01/rdf-schema#label>  "Nicole Vasilevsky" ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/upheno/tree/master/hp-mp> .
 
 <http://purl.obolibrary.org/obo/upheno/v2/upheno.owl>
-        <http://purl.org/dc/elements/1.1/description>  "The new version of uPheno, along with species independent phenotypes amd additional phenotype relations. The ontology is still in Beta status, but we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is no longer actively maintained." ;
+        <http://purl.org/dc/elements/1.1/description>  "The new version of uPheno, along with species independent phenotypes and additional phenotype relations. The ontology is still in Beta status, but we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is no longer actively maintained." ;
         <http://purl.org/dc/elements/1.1/title>  "uPheno 2" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/upheno/v2/upheno.owl" ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/upheno-dev> .
