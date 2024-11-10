@@ -1,7 +1,7 @@
 # Collect the list of query files for report.
 SCRIPTS := build/fp_001.py build/fp_002.py build/fp_003.py build/fp_004.py \
 build/fp_005.py build/fp_006.py build/fp_007.py build/fp_008.py build/fp_009.py \
-build/fp_011.py build/fp_012.py build/fp_016.py 
+build/fp_011.py build/fp_012.py build/fp_016.py build/fp_020.py
 DOCS := $(foreach x, $(SCRIPTS), checks/$(notdir $(basename $(x))).md)
 
 # FP ID to the principle name
