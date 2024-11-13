@@ -1222,6 +1222,23 @@
                     "user": "https://hubmapconsortium.org/"
                 },
                 {
+                    "description": "The single-cell transcriptomics platform CZ CELLxGENE uses CL to annotate all cell types. All datasets on CellXGene are annotated according to a standard schema that specifies the use of CL to record Cell Type.",
+                    "examples": [
+                        {
+                            "description": "A CELLxGENE Cell Guide entry for 'luminal adaptive secretory precursor cell of mammary gland', which includes the CL ID (CL:4033057), CL definition and a visualizer of CL hierarchy",
+                            "url": "https://cellxgene.cziscience.com/cellguide/CL:4033057"
+                        }
+                    ],
+                    "publications": [
+                        {
+                            "id": "https://doi.org/10.1101/2021.04.05.438318",
+                            "title": "CELLxGENE: a performant, scalable exploration platform for high dimensional sparse matrices"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://cellxgene.cziscience.com/"
+                },
+                {
                     "description": "The Human Cell Atlas (HCA) is an international group of researchers using a combination of these new technologies to create cellular reference maps. The HCA use CL to annotate cells in their reference maps.",
                     "examples": [
                         {
@@ -9669,10 +9686,10 @@
                 "source_url": "http://build.berkeleybop.org/job/build-pheno-ontologies/lastSuccessfulBuild/artifact/*zip*/archive.zip"
             },
             "contact": {
-                "email": "vasilevs@ohsu.edu",
-                "github": "nicolevasilevsky",
-                "label": "Nicole Vasilevsky",
-                "orcid": "0000-0001-5208-3432"
+                "email": "jmcl@ebi.ac.uk",
+                "github": "jamesamcl",
+                "label": "James McLaughlin",
+                "orcid": "0000-0002-8361-2795"
             },
             "description": "The uPheno ontology integrates multiple phenotype ontologies into a unified cross-species phenotype ontology.",
             "domain": "phenotype",
@@ -9703,7 +9720,7 @@
                     "title": "uPheno MP-HP equivalence axioms"
                 },
                 {
-                    "description": "The new version of uPheno, along with species independent phenotypes amd additional phenotype relations. The ontology is still in Beta status, but we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is no longer actively maintained.",
+                    "description": "The new version of uPheno, along with species independent phenotypes and additional phenotype relations. The ontology is still in Beta status, but we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is no longer actively maintained.",
                     "id": "upheno/v2/upheno.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/upheno/v2/upheno.owl",
                     "page": "https://github.com/obophenotype/upheno-dev",
@@ -9711,6 +9728,10 @@
                 }
             ],
             "publications": [
+                {
+                    "id": "https://doi.org/10.1101/2024.09.18.613276",
+                    "title": "The Unified Phenotype Ontology (uPheno): A framework for cross-species integrative phenomics"
+                },
                 {
                     "id": "https://zenodo.org/record/2382757",
                     "title": "Phenotype Ontologies Traversing All The Organisms (POTATO) workshop aims to reconcile logical definitions across species"
@@ -9721,7 +9742,7 @@
                 }
             ],
             "repository": "https://github.com/obophenotype/upheno",
-            "title": "Unified phenotype ontology (uPheno)",
+            "title": "Unified Phenotype Ontology (uPheno)",
             "tracker": "https://github.com/obophenotype/upheno/issues",
             "usages": [
                 {
