@@ -55,31 +55,34 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
     <div class="card" style="margin-bottom: 1.5em;">
       <div class="card-body">
         <!-- TODO: each ontology should configure which browsers to be exposed in -->
-        <a href="https://ontobee.org/ontology/{{page.id}}" class="btn btn-outline-primary">
+        <a href="https://ontobee.org/ontology/{{page.id}}" class="btn btn-outline-primary" target="_blank" rel="noopener">
           OntoBee
         </a>
         {% if page.aberowl_id %}
-        <a href="http://aber-owl.net/ontology/{{page.aberowl_id | upcase}}" class="btn btn-outline-primary">
-          AberOWL
-        </a>
+          <a href="http://aber-owl.net/ontology/{{page.aberowl_id | upcase}}" class="btn btn-outline-primary" target="_blank" rel="noopener">
+            AberOWL
+          </a>
         {% else %}
-        <a href="http://aber-owl.net/ontology/{{page.id | upcase}}" class="btn btn-outline-primary">
-          AberOWL
-        </a>
+          <a href="http://aber-owl.net/ontology/{{page.id | upcase}}" class="btn btn-outline-primary" target="_blank" rel="noopener">
+            AberOWL
+          </a>
         {% endif %}
-        <a href="http://www.ebi.ac.uk/ols/ontologies/{{page.id}}" class="btn btn-outline-primary">
+        <a href="http://www.ebi.ac.uk/ols/ontologies/{{page.id}}" class="btn btn-outline-primary" target="_blank" rel="noopener">
           OLS
         </a>
-        {% for b in page.browsers %}
-        <a href="{{b.url}}" class="btn btn-outline-primary">
-          {{b.label}}
+        <a href="https://bioportal.bioontology.org/ontologies/{{ page.id | make_bioportal_id }}" class="btn btn-outline-primary" target="_blank" rel="noopener">
+          BioPortal
         </a>
+        {% for b in page.browsers %}
+          <a href="{{b.url}}" class="btn btn-outline-primary" target="_blank" rel="noopener">
+            {{b.label}}
+          </a>
         {% endfor %}
-        <a href="https://bioregistry.io/metaregistry/obofoundry/{{page.id}}" class="btn btn-outline-primary">
+        <a href="https://bioregistry.io/metaregistry/obofoundry/{{page.id}}" class="btn btn-outline-primary" target="_blank" rel="noopener">
          Bioregistry
         </a>
         {% if stripped_content_size > 0 %}
-        <p class="card-text">{{ content }}</p>
+          <p class="card-text">{{ content }}</p>
         {% endif %}
       </div>
     </div>
