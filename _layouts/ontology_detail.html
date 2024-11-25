@@ -73,27 +73,27 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         {% assign bioportal_id = page.id | upcase %}
         {% if bioportal_id == 'FBBT' %}
             {% assign bioportal_id = 'FB-BT' %}
-        {% elsif bioportal_id == 'ro' %}
+        {% elsif bioportal_id == 'RO' %}
             {% assign bioportal_id = 'OBOREL' %}
-        {% elsif bioportal_id == 'apollo_sv' %}
+        {% elsif bioportal_id == 'APOLLO_SV' %}
             {% assign bioportal_id = 'APOLLO-SV' %}
-        {% elsif bioportal_id == 'trans' %}
+        {% elsif bioportal_id == 'TRANS' %}
             {% assign bioportal_id = 'PTRANS' %}
-        {% elsif bioportal_id == 'wbls' %}
+        {% elsif bioportal_id == 'WBLS' %}
             {% assign bioportal_id = 'WB-LS' %}
-        {% elsif bioportal_id == 'fbdv' %}
+        {% elsif bioportal_id == 'FBDV' %}
             {% assign bioportal_id = 'FB-DV' %}
-        {% elsif bioportal_id == 'wbbt' %}
+        {% elsif bioportal_id == 'WBBT' %}
             {% assign bioportal_id = 'WB-BT' %}
-        {% elsif bioportal_id == 'wbphenotype' %}
+        {% elsif bioportal_id == 'WBPHENOTYPE' %}
             {% assign bioportal_id = 'WB-PHENOTYPE' %}
-        {% elsif bioportal_id == 'to' %}
+        {% elsif bioportal_id == 'TO' %}
             {% assign bioportal_id = 'PTO' %}
-        {% elsif bioportal_id == 'fbcv' %}
+        {% elsif bioportal_id == 'FBCV' %}
             {% assign bioportal_id = 'FB-CV' %}
-        {% elsif bioportal_id == 'umod' %}
+        {% elsif bioportal_id == 'MOD' %}
             {% assign bioportal_id = 'PSIMOD' %}
-        {% elsif bioportal_id == 'pso' %}
+        {% elsif bioportal_id == 'PSO' %}
             {% assign bioportal_id = 'PLANTSO' %}
         {% endif %}
         <a href="https://bioportal.bioontology.org/ontologies/{{ bioportal_id }}" class="btn btn-outline-primary" target="_blank" rel="noopener">
