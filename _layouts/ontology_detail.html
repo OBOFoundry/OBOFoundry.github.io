@@ -72,7 +72,7 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         </a>
         {% assign skip_bioportal = false %}
         {% for browser in page.browsers %}
-          {% if browser.label.upcase == "BIOPORTAL" %}
+          {% if browser.label == "BioPortal" %}
             {% assign skip_bioportal = true %}
           {% endif %}
         {% endfor %}
