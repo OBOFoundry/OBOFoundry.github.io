@@ -70,9 +70,44 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         <a href="http://www.ebi.ac.uk/ols/ontologies/{{page.id}}" class="btn btn-outline-primary" target="_blank" rel="noopener">
           OLS
         </a>
-        <a href="https://bioportal.bioontology.org/ontologies/{{ page.id | make_bioportal_id }}" class="btn btn-outline-primary" target="_blank" rel="noopener">
-          BioPortal
-        </a>
+        {% assign skip_bioportal = false %}
+        {% for browser in page.browsers %}
+          {% if browser.label == "BioPortal" %}
+            {% assign skip_bioportal = true %}
+          {% endif %}
+        {% endfor %}
+
+        {% unless skip_bioportal %}
+          {% assign bioportal_id = page.id | upcase %}
+          {% if bioportal_id == 'FBBT' %}
+            {% assign bioportal_id = 'FB-BT' %}
+          {% elsif bioportal_id == 'RO' %}
+            {% assign bioportal_id = 'OBOREL' %}
+          {% elsif bioportal_id == 'APOLLO_SV' %}
+            {% assign bioportal_id = 'APOLLO-SV' %}
+          {% elsif bioportal_id == 'TRANS' %}
+            {% assign bioportal_id = 'PTRANS' %}
+          {% elsif bioportal_id == 'WBLS' %}
+            {% assign bioportal_id = 'WB-LS' %}
+          {% elsif bioportal_id == 'FBDV' %}
+            {% assign bioportal_id = 'FB-DV' %}
+          {% elsif bioportal_id == 'WBBT' %}
+            {% assign bioportal_id = 'WB-BT' %}
+          {% elsif bioportal_id == 'WBPHENOTYPE' %}
+            {% assign bioportal_id = 'WB-PHENOTYPE' %}
+          {% elsif bioportal_id == 'TO' %}
+            {% assign bioportal_id = 'PTO' %}
+          {% elsif bioportal_id == 'FBCV' %}
+            {% assign bioportal_id = 'FB-CV' %}
+          {% elsif bioportal_id == 'MOD' %}
+            {% assign bioportal_id = 'PSIMOD' %}
+          {% elsif bioportal_id == 'PSO' %}
+            {% assign bioportal_id = 'PLANTSO' %}
+          {% endif %}
+          <a href="https://bioportal.bioontology.org/ontologies/{{ bioportal_id }}" class="btn btn-outline-primary" target="_blank" rel="noopener">
+            BioPortal
+          </a>
+        {% endunless %}
         {% for b in page.browsers %}
           <a href="{{b.url}}" class="btn btn-outline-primary" target="_blank" rel="noopener">
             {{b.label}}
