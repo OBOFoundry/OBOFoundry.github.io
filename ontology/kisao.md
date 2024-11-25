@@ -6,6 +6,9 @@ browsers:
 - title: Ontology Lookup Service
   label: OLS
   url: https://www.ebi.ac.uk/ols/ontologies/kisao
+- title: BioPortal
+  label: BioPortal
+  url: https://bioportal.bioontology.org/ontologies/KISAO
 - title: OntoBee
   label: OntoBee
   url: https://www.ontobee.org/ontology/KISAO

@@ -2,6 +2,10 @@
 layout: ontology_detail
 id: obi
 title: Ontology for Biomedical Investigations
+browsers:
+- title: BioPortal Browser
+  label: BioPortal
+  url: http://bioportal.bioontology.org/ontologies/OBI?p=classes
 build:
   source_url: http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/
 contact:

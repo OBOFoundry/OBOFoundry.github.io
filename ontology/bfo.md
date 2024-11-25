@@ -2,6 +2,10 @@
 layout: ontology_detail
 id: bfo
 title: Basic Formal Ontology
+browsers:
+- title: BioPortal Browser
+  label: BioPortal
+  url: http://bioportal.bioontology.org/ontologies/BFO?p=classes
 contact:
   email: phismith@buffalo.edu
   github: phismith

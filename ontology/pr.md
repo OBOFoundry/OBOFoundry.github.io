@@ -3,6 +3,9 @@ layout: ontology_detail
 id: pr
 title: PRotein Ontology (PRO)
 browsers:
+- title: BioPortal Browser
+  label: BioPortal
+  url: http://bioportal.bioontology.org/ontologies/PR?p=classes&conceptid=http://purl.obolibrary.org/obo/PR_000000001
 - title: PRO Home
   label: PRO
   url: http://proconsortium.org

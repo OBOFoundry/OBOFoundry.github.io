@@ -9,6 +9,9 @@ browsers:
 - title: Virtual Fly Brain
   label: VFB
   url: http://www.virtualflybrain.org/site/stacks/index.htm?add=FBbt:00007401
+- title: BioPortal Browser
+  label: BioPortal
+  url: http://bioportal.bioontology.org/ontologies/FB-BT?p=classes
 build:
   checkout: git clone https://github.com/FlyBase/drosophila-anatomy-developmental-ontology.git
   path: .

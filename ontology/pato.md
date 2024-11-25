@@ -2,6 +2,10 @@
 layout: ontology_detail
 id: pato
 title: Phenotype And Trait Ontology
+browsers:
+- title: BioPortal Ontology Browser
+  label: BioPortal
+  url: https://bioportal.bioontology.org/ontologies/PATO
 contact:
   email: g.gkoutos@gmail.com
   github: gkoutos
