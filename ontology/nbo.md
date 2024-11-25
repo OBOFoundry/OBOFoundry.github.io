@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: nbo
 title: Neuro Behavior Ontology
-browsers:
-- title: BioPortal Ontology Browser
-  label: BioPortal
-  url: https://bioportal.bioontology.org/ontologies/NBO
 build:
   method: owl2obo
   source_url: https://raw.githubusercontent.com/obo-behavior/behavior-ontology/master/nbo.owl

@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: ontoneo
 title: Obstetric and Neonatal Ontology
-browsers:
-- title: BioPortal Browser
-  label: BioPortal
-  url: https://bioportal.bioontology.org/ontologies/ONTONEO
 build:
   source_url: http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl
 contact:

@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: slso
 title: Space Life Sciences Ontology
-browsers:
-- title: BioPortal Ontology Browser
-  label: BioPortal
-  url: https://bioportal.bioontology.org/ontologies/SLSO
 contact:
   email: daniel.c.berrios@nasa.gov
   github: DanBerrios

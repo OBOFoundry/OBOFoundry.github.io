@@ -3,9 +3,6 @@ layout: ontology_detail
 id: txpo
 title: Toxic Process Ontology
 browsers:
-- title: BioPortal Browser
-  label: BioPortal
-  url: http://bioportal.bioontology.org/ontologies/TXPO?p=classes
 - title: TOXPILOT
   label: TOXPILOT
   url: https://toxpilot.nibiohn.go.jp/

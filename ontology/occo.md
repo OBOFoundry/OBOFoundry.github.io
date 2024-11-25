@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: occo
 title: Occupation Ontology
-browsers:
-- title: BioPortal Ontology Browser
-  label: BioPortal
-  url: https://bioportal.bioontology.org/ontologies/OCCO?p=classes
 contact:
   email: zhengj2007@gmail.com
   github: zhengj2007

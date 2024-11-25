@@ -70,7 +70,33 @@ page.preferredPrefix | upcase %} {% if upperPrefix != page.preferredPrefix %}
         <a href="http://www.ebi.ac.uk/ols/ontologies/{{page.id}}" class="btn btn-outline-primary" target="_blank" rel="noopener">
           OLS
         </a>
-        <a href="https://bioportal.bioontology.org/ontologies/{{ page.id | make_bioportal_id }}" class="btn btn-outline-primary" target="_blank" rel="noopener">
+        {% assign bioportal_id = page.id | upcase %}
+        {% if bioportal_id == 'FBBT' %}
+            {% assign bioportal_id = 'FB-BT' %}
+        {% elsif bioportal_id == 'ro' %}
+            {% assign bioportal_id = 'OBOREL' %}
+        {% elsif bioportal_id == 'apollo_sv' %}
+            {% assign bioportal_id = 'APOLLO-SV' %}
+        {% elsif bioportal_id == 'trans' %}
+            {% assign bioportal_id = 'PTRANS' %}
+        {% elsif bioportal_id == 'wbls' %}
+            {% assign bioportal_id = 'WB-LS' %}
+        {% elsif bioportal_id == 'fbdv' %}
+            {% assign bioportal_id = 'FB-DV' %}
+        {% elsif bioportal_id == 'wbbt' %}
+            {% assign bioportal_id = 'WB-BT' %}
+        {% elsif bioportal_id == 'wbphenotype' %}
+            {% assign bioportal_id = 'WB-PHENOTYPE' %}
+        {% elsif bioportal_id == 'to' %}
+            {% assign bioportal_id = 'PTO' %}
+        {% elsif bioportal_id == 'fbcv' %}
+            {% assign bioportal_id = 'FB-CV' %}
+        {% elsif bioportal_id == 'umod' %}
+            {% assign bioportal_id = 'PSIMOD' %}
+        {% elsif bioportal_id == 'pso' %}
+            {% assign bioportal_id = 'PLANTSO' %}
+        {% endif %}
+        <a href="https://bioportal.bioontology.org/ontologies/{{ bioportal_id }}" class="btn btn-outline-primary" target="_blank" rel="noopener">
           BioPortal
         </a>
         {% for b in page.browsers %}
