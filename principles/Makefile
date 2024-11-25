@@ -17,6 +17,7 @@ DOCS := $(foreach x, $(SCRIPTS), checks/$(notdir $(basename $(x))).md)
 11 = 'Locus of Authority'
 12 = 'Naming Conventions'
 16 = Maintenance
+20 = Responsiveness
 
 # Generate all check docs
 all: clean
@@ -33,7 +34,7 @@ build/fp_%.py: | build
 
 # Build the MD page from the check script
 checks/fp_%.md: build/fp_%.py | $(SCRIPTS) checks
-	$(eval ID := $(subst 0,,$(subst fp_,,$(notdir $(basename $@)))))
+	$(eval ID := $(shell echo $(subst fp_,,$(notdir $(basename $@))) | sed 's/^0*//'))
 	if [ $(ID) == 1 ]; then export TITLE=$(1); \
 	elif [ $(ID) == 2 ]; then export TITLE=$(2); \
 	elif [ $(ID) == 3 ]; then export TITLE=$(3); \
@@ -46,6 +47,7 @@ checks/fp_%.md: build/fp_%.py | $(SCRIPTS) checks
 	elif [ $(ID) == 11 ]; then export TITLE=$(11); \
 	elif [ $(ID) == 12 ]; then export TITLE=$(12); \
 	elif [ $(ID) == 16 ]; then export TITLE=$(16); \
+	elif [ $(ID) == 20 ]; then export TITLE=$(20); \
 	fi; \
 	echo "---\nlayout: check\nid: $(ID)\ntitle: $$TITLE Automated Check\n---\n" > $@
 	tail -n+3 $< \
