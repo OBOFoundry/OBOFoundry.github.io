@@ -3786,32 +3786,36 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/mondo.owl
   preferredPrefix: MONDO
   products:
-  - description: Complete ontology. Uses MONDO IDs. Imports merged. The original mondo.owl
-      without merged imports and with equivalence axioms can now be obtained from
-      the release pages and is called mondo-with-equivalents.
+  - description: Complete ontology with merged imports.
     format: owl-rdf/xml
     id: mondo.owl
     is_canonical: true
     ontology_purl: http://purl.obolibrary.org/obo/mondo.owl
-    title: Main OWL edition
+    title: Mondo OWL edition
   - derived_from: mondo.owl
-    description: As OWL. xrefs can be used as proxy for equivalence. Uses Mondo IDs.
+    description: OBO serialization of mondo.owl.
     format: obo
     id: mondo.obo
     ontology_purl: http://purl.obolibrary.org/obo/mondo.obo
-    title: obo-format edition
+    title: Mondo OBO Format edition
   - derived_from: mondo.owl
-    description: Equivalent to the OWL edition.
+    description: Obographs serialization of mondo.owl.
     format: obo
     id: mondo.json
     ontology_purl: http://purl.obolibrary.org/obo/mondo.json
-    title: json edition
+    title: Mondo JSON edition
   - description: The main ontology plus axioms connecting to select external ontologies,
       excluding the external ontologies themselves
     format: owl
     id: mondo/mondo-base.owl
     ontology_purl: http://purl.obolibrary.org/obo/mondo/mondo-base.owl
-    title: Mondo Base Module
+    title: Mondo Base Release
+  - description: The main ontology classes and their hierarchies, without references
+      to external terms.
+    format: owl
+    id: mondo/mondo-simple.owl
+    ontology_purl: http://purl.obolibrary.org/obo/mondo/mondo-simple.owl
+    title: Mondo Simple Release
   publications:
   - id: https://www.medrxiv.org/content/10.1101/2022.04.13.22273750
     title: 'Mondo: Unifying diseases for the world, by the world'
@@ -3823,7 +3827,6 @@ ontologies:
     label: Metazoa
   title: Mondo Disease Ontology
   tracker: https://github.com/monarch-initiative/mondo/issues
-  twitter: MonarchInit
   usages:
   - description: Mondo is used by the Monarch Initiative for disease annotations.
     examples:

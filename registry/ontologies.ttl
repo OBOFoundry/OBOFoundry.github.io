@@ -3517,7 +3517,7 @@ _:b171  <http://www.w3.org/2000/01/rdf-schema#label>  "Pierre-Alain Binz" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo.json> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo/mondo-base.owl> ;
-        <http://xmlns.com/foaf/0.1/account>  <http://purl.obolibrary.org/obo/MonarchInit> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo/mondo-simple.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://monarch-initiative.github.io/mondo> .
 
 <https://www.medrxiv.org/content/10.1101/2022.04.13.22273750>
@@ -3531,28 +3531,34 @@ _:b172  <http://www.w3.org/2000/01/rdf-schema#label>  "Nicole Vasilevsky" ;
         <http://xmlns.com/foaf/0.1/mbox>  "nicole@tislab.org" .
 
 <http://purl.obolibrary.org/obo/mondo.owl>
-        <http://purl.org/dc/elements/1.1/description>  "Complete ontology. Uses MONDO IDs. Imports merged. The original mondo.owl without merged imports and with equivalence axioms can now be obtained from the release pages and is called mondo-with-equivalents." ;
-        <http://purl.org/dc/elements/1.1/title>  "Main OWL edition" ;
+        <http://purl.org/dc/elements/1.1/description>  "Complete ontology with merged imports." ;
+        <http://purl.org/dc/elements/1.1/title>  "Mondo OWL edition" ;
         <http://purl.org/dc/terms/1.1/format>  "owl-rdf/xml" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mondo.owl" .
 
 <http://purl.obolibrary.org/obo/mondo.obo>
-        <http://purl.org/dc/elements/1.1/description>  "As OWL. xrefs can be used as proxy for equivalence. Uses Mondo IDs." ;
-        <http://purl.org/dc/elements/1.1/title>  "obo-format edition" ;
+        <http://purl.org/dc/elements/1.1/description>  "OBO serialization of mondo.owl." ;
+        <http://purl.org/dc/elements/1.1/title>  "Mondo OBO Format edition" ;
         <http://purl.org/dc/terms/1.1/format>  "obo" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mondo.obo" .
 
 <http://purl.obolibrary.org/obo/mondo.json>
-        <http://purl.org/dc/elements/1.1/description>  "Equivalent to the OWL edition." ;
-        <http://purl.org/dc/elements/1.1/title>  "json edition" ;
+        <http://purl.org/dc/elements/1.1/description>  "Obographs serialization of mondo.owl." ;
+        <http://purl.org/dc/elements/1.1/title>  "Mondo JSON edition" ;
         <http://purl.org/dc/terms/1.1/format>  "obo" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mondo.json" .
 
 <http://purl.obolibrary.org/obo/mondo/mondo-base.owl>
         <http://purl.org/dc/elements/1.1/description>  "The main ontology plus axioms connecting to select external ontologies, excluding the external ontologies themselves" ;
-        <http://purl.org/dc/elements/1.1/title>  "Mondo Base Module" ;
+        <http://purl.org/dc/elements/1.1/title>  "Mondo Base Release" ;
         <http://purl.org/dc/terms/1.1/format>  "owl" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mondo/mondo-base.owl" .
+
+<http://purl.obolibrary.org/obo/mondo/mondo-simple.owl>
+        <http://purl.org/dc/elements/1.1/description>  "The main ontology classes and their hierarchies, without references to external terms." ;
+        <http://purl.org/dc/elements/1.1/title>  "Mondo Simple Release" ;
+        <http://purl.org/dc/terms/1.1/format>  "owl" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mondo/mondo-simple.owl" .
 
 <http://purl.obolibrary.org/obo/mop>
         <http://identifiers.org/preferredPrefix>  "MOP" ;

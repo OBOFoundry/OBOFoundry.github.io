@@ -24,23 +24,27 @@ mailing_list: https://groups.google.com/group/mondo-users
 preferredPrefix: MONDO
 products:
 - id: mondo.owl
-  title: Main OWL edition
-  description: Complete ontology. Uses MONDO IDs. Imports merged. The original mondo.owl without merged imports and with equivalence axioms can now be obtained from the release pages and is called mondo-with-equivalents.
+  title: Mondo OWL edition
+  description: Complete ontology with merged imports.
   format: owl-rdf/xml
   is_canonical: true
 - id: mondo.obo
-  title: obo-format edition
+  title: Mondo OBO Format edition
   derived_from: mondo.owl
-  description: As OWL. xrefs can be used as proxy for equivalence. Uses Mondo IDs.
+  description: OBO serialization of mondo.owl.
   format: obo
 - id: mondo.json
-  title: json edition
+  title: Mondo JSON edition
   derived_from: mondo.owl
-  description: Equivalent to the OWL edition.
+  description: Obographs serialization of mondo.owl.
   format: obo
 - id: mondo/mondo-base.owl
-  title: Mondo Base Module
+  title: Mondo Base Release
   description: The main ontology plus axioms connecting to select external ontologies, excluding the external ontologies themselves
+  format: owl
+- id: mondo/mondo-simple.owl
+  title: Mondo Simple Release
+  description: The main ontology classes and their hierarchies, without references to external terms.
   format: owl
 publications:
 - id: https://www.medrxiv.org/content/10.1101/2022.04.13.22273750
@@ -52,7 +56,6 @@ taxon:
   id: NCBITaxon:33208
   label: Metazoa
 tracker: https://github.com/monarch-initiative/mondo/issues
-twitter: MonarchInit
 usages:
 - description: Mondo is used by the Monarch Initiative for disease annotations.
   examples:
