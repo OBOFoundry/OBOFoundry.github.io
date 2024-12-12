@@ -8069,7 +8069,7 @@
             "preferredPrefix": "PR",
             "products": [
                 {
-                    "description": "PRO after reasoning has been applied, OWL format.",
+                    "description": "PRO after reasoning has been applied, OWL format. Add '.gz' for compressed.",
                     "id": "pr.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/pr.owl",
                     "title": "pro_reasoned.owl"
@@ -8079,6 +8079,18 @@
                     "id": "pr.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/pr.obo",
                     "title": "pro_reasoned.obo"
+                },
+                {
+                    "description": "PRO without reasoning applied, OWL format. Add '.gz' for compressed.",
+                    "id": "pr-asserted.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pr-asserted.owl",
+                    "title": "pro_nonreasoned.owl"
+                },
+                {
+                    "description": "PRO without reasoning applied, OBO format.",
+                    "id": "pr-asserted.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pr-asserted.obo",
+                    "title": "pro_nonreasoned.obo"
                 }
             ],
             "publications": [

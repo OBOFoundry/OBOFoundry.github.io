@@ -966,6 +966,8 @@ _:b45   <http://www.w3.org/2000/01/rdf-schema#label>  "Egon Willighagen" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b50 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pr.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pr.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pr-asserted.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pr-asserted.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://proconsortium.org> .
 
 <https://doi.org/10.26434/chemrxiv.12591221>
@@ -4745,7 +4747,7 @@ _:b50   <http://www.w3.org/2000/01/rdf-schema#label>  "Darren Natale" ;
         <http://xmlns.com/foaf/0.1/mbox>  "dan5@georgetown.edu" .
 
 <http://purl.obolibrary.org/obo/pr.owl>
-        <http://purl.org/dc/elements/1.1/description>  "PRO after reasoning has been applied, OWL format." ;
+        <http://purl.org/dc/elements/1.1/description>  "PRO after reasoning has been applied, OWL format. Add '.gz' for compressed." ;
         <http://purl.org/dc/elements/1.1/title>  "pro_reasoned.owl" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pr.owl" .
 
@@ -4753,6 +4755,16 @@ _:b50   <http://www.w3.org/2000/01/rdf-schema#label>  "Darren Natale" ;
         <http://purl.org/dc/elements/1.1/description>  "PRO after reasoning has been applied, OBO format." ;
         <http://purl.org/dc/elements/1.1/title>  "pro_reasoned.obo" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pr.obo" .
+
+<http://purl.obolibrary.org/obo/pr-asserted.owl>
+        <http://purl.org/dc/elements/1.1/description>  "PRO without reasoning applied, OWL format. Add '.gz' for compressed." ;
+        <http://purl.org/dc/elements/1.1/title>  "pro_nonreasoned.owl" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pr-asserted.owl" .
+
+<http://purl.obolibrary.org/obo/pr-asserted.obo>
+        <http://purl.org/dc/elements/1.1/description>  "PRO without reasoning applied, OBO format." ;
+        <http://purl.org/dc/elements/1.1/title>  "pro_nonreasoned.obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pr-asserted.obo" .
 
 <http://purl.obolibrary.org/obo/proco>
         <http://identifiers.org/preferredPrefix>  "PROCO" ;
