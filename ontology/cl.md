@@ -11,11 +11,11 @@ contact:
 dependencies:
 - id: go
 - id: ncbitaxon
+- id: omo
 - id: pato
 - id: pr
 - id: ro
 - id: uberon
-- id: omo
 depicted_by: /images/CL-logo.jpg
 description: The Cell Ontology is a structured controlled vocabulary for cell types in animals.
 domain: anatomy and development
@@ -33,13 +33,13 @@ products:
   format: owl-rdf/xml
   is_canonical: true
   uses:
-  - uberon
   - go
-  - pr
-  - pato
   - ncbitaxon
-  - ro
   - omo
+  - pato
+  - pr
+  - ro
+  - uberon
 - id: cl.obo
   title: CL obo format edition
   derived_from: cl.owl
