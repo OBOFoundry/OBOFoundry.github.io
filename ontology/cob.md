@@ -36,4 +36,4 @@ tracker: https://github.com/OBOFoundry/COB/issues
 activity_status: active
 ---
 
-The Core Ontology for Biology and Biomedicine (COB) brings together key terms from a wide range of OBO projects into a single, small ontology. The goal is to improve interoperabilty and reuse across the OBO community through better coordination of key terms.
+The Core Ontology for Biology and Biomedicine (COB) brings together key terms from a wide range of OBO projects into a single, small ontology. The goal is to improve interoperability and reuse across the OBO community through better coordination of key terms.
