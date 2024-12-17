@@ -38,7 +38,7 @@ Detailed procedures for obsoleting a term are described on the OBO Academy page 
   - OWL format: Add an "owl:deprecated" annotation property with value of "true^xsd:boolean"
   - OBO format: Add an "is_obsolete: true" tag
 2) Prepend the string "obsolete " (including the space) to the term label
-  - NOTE: To be consistent with [Principle 12](https://obofoundry.org/principles/fp-012-naming-conventions.html) "Naming Conventions", the syntax/format MUST be precisely as given above. Thus, the following are disallowed: "Obsolete {label}", "obsolete_{label}", "OBSOLETE {label}" (and variations thereof).
+  - NOTE: To be consistent with [Principle 12](https://obofoundry.org/principles/fp-012-naming-conventions.html) "Naming Conventions", the syntax/format MUST be precisely as given above (that is, the exact string as shown, lowercase and space included, with no other punctuation before or after). Thus, the following are disallowed: "Obsolete {label}", "obsolete_{label}", "OBSOLETE {label}" (and variations thereof).
 3) Remove all existing logical axioms from the term
 4) Remove or replace all usages of the term elsewhere in the ontology
 
@@ -127,7 +127,8 @@ Criteria for review
 -------
 
 The OBO Dashboard will show:
-- An ERROR if any obsolete term (that is, a term with an "owl:deprecated" property or "is_obsolete: true" tag) does not also have 'obsolete ' (that exact string, lowercase and space included) prepended to the label
+- An ERROR if any obsolete term (that is, a term with an "owl:deprecated" property or "is_obsolete: true" tag) does not also have 'obsolete ' (that exact string, lowercase and space included, with no other punctuation) prepended to the label
+- An ERROR if any obsolete term (as indicated by term label or definition) lacks an "owl:deprecated" property or "is_obsolete: true" tag
 - An ERROR if an obsolete term has any associated logical axioms (including any subClassOf/is_a declarations)
 - A WARN if there is at least one term with 'OBSOLETE. ' prepended to the definition but not all obsolete terms are likewise prepended
 
