@@ -1089,13 +1089,13 @@
             },
             "dependencies": [
                 {
-                    "id": "chebi"
-                },
-                {
                     "id": "go"
                 },
                 {
                     "id": "ncbitaxon"
+                },
+                {
+                    "id": "omo"
                 },
                 {
                     "id": "pato"
@@ -1134,13 +1134,13 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/cl.owl",
                     "title": "Main CL OWL edition",
                     "uses": [
-                        "uberon",
-                        "chebi",
                         "go",
-                        "pr",
-                        "pato",
                         "ncbitaxon",
-                        "ro"
+                        "omo",
+                        "pato",
+                        "pr",
+                        "ro",
+                        "uberon"
                     ]
                 },
                 {
@@ -1152,17 +1152,54 @@
                     "title": "CL obo format edition"
                 },
                 {
+                    "derived_from": "cl.owl",
+                    "description": "Complete ontology, plus inter-ontology axioms, and imports modules merged in",
+                    "format": "json",
+                    "id": "cl.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/cl.json",
+                    "title": "CL OBOGraph-JSON format edition"
+                },
+                {
+                    "description": "Basic version, no inter-ontology axioms",
+                    "format": "owl-rdf/xml",
+                    "id": "cl/cl-basic.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/cl/cl-basic.owl",
+                    "title": "Basic CL"
+                },
+                {
                     "description": "Basic version, no inter-ontology axioms",
                     "format": "obo",
                     "id": "cl/cl-basic.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/cl/cl-basic.obo",
-                    "title": "Basic CL"
+                    "title": "Basic CL (OBO version)"
+                },
+                {
+                    "description": "Basic version, no inter-ontology axioms",
+                    "format": "json",
+                    "id": "cl/cl-basic.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/cl/cl-basic.json",
+                    "title": "Basic CL (OBOGraph-JSON version)"
                 },
                 {
                     "description": "complete CL but with no imports or external axioms",
+                    "format": "owl-rdf/xml",
                     "id": "cl/cl-base.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/cl/cl-base.owl",
                     "title": "CL base module"
+                },
+                {
+                    "description": "complete CL but with no imports or external axioms",
+                    "format": "obo",
+                    "id": "cl/cl-base.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/cl/cl-base.obo",
+                    "title": "CL base module (OBO version)"
+                },
+                {
+                    "description": "complete CL but with no imports or external axioms",
+                    "format": "json",
+                    "id": "cl/cl-base.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/cl/cl-base.json",
+                    "title": "CL base module (OBOGraph-JSON version)"
                 }
             ],
             "publications": [
@@ -1220,6 +1257,23 @@
                     ],
                     "type": "annotation",
                     "user": "https://hubmapconsortium.org/"
+                },
+                {
+                    "description": "The single-cell transcriptomics platform CZ CELLxGENE uses CL to annotate all cell types. All datasets on CellXGene are annotated according to a standard schema that specifies the use of CL to record Cell Type.",
+                    "examples": [
+                        {
+                            "description": "A CELLxGENE Cell Guide entry for 'luminal adaptive secretory precursor cell of mammary gland', which includes the CL ID (CL:4033057), CL definition and a visualizer of CL hierarchy",
+                            "url": "https://cellxgene.cziscience.com/cellguide/CL:4033057"
+                        }
+                    ],
+                    "publications": [
+                        {
+                            "id": "https://doi.org/10.1101/2021.04.05.438318",
+                            "title": "CELLxGENE: a performant, scalable exploration platform for high dimensional sparse matrices"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://cellxgene.cziscience.com/"
                 },
                 {
                     "description": "The Human Cell Atlas (HCA) is an international group of researchers using a combination of these new technologies to create cellular reference maps. The HCA use CL to annotate cells in their reference maps.",
@@ -3283,9 +3337,9 @@
             "id": "foodon",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC BY 3.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/foodon.owl",
             "preferredPrefix": "FOODON",
@@ -3314,7 +3368,39 @@
                 "food"
             ],
             "title": "Food Ontology",
-            "tracker": "https://github.com/FoodOntology/foodon/issues/"
+            "tracker": "https://github.com/FoodOntology/foodon/issues/",
+            "usages": [
+                {
+                    "description": "FoodData Central nutrition database web portal provided by USDA Agricultural Research Service.",
+                    "examples": [
+                        {
+                            "description": "An entry for 'Apples, fuji, with skin, raw' from the FoodData Central nutrition database which is annotated with the term FOODON:00002862.",
+                            "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/1750340/attributes"
+                        }
+                    ],
+                    "user": "https://fdc.nal.usda.gov/"
+                },
+                {
+                    "description": "FDA GenomeTrackr surveillance program for reporting foodborne pathogen biosamples.",
+                    "examples": [
+                        {
+                            "description": "An entry from NCBI Biosample that describes a *Samonella enterica* sample extracted from Chicken and annotated with the term FOODON:03411457.",
+                            "url": "https://www.ncbi.nlm.nih.gov/biosample/SAMN03455272"
+                        }
+                    ],
+                    "user": "https://www.fda.gov/food/whole-genome-sequencing-wgs-program/genometrakr-network"
+                },
+                {
+                    "description": "Wiki database consolidating over 30 global food composition databases.",
+                    "examples": [
+                        {
+                            "description": "An entry from WikiFCD that describes Walnuts and is annotated with the term FOODON:03301364.",
+                            "url": "https://wikifcd.wikibase.cloud/wiki/Item:Q568877"
+                        }
+                    ],
+                    "user": "https://wikifcd.wikibase.cloud/wiki/Main_Page"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -5302,35 +5388,42 @@
             "preferredPrefix": "MONDO",
             "products": [
                 {
-                    "description": "Complete ontology. Uses MONDO IDs. Imports merged. The original mondo.owl without merged imports and with equivalence axioms can now be obtained from the release pages and is called mondo-with-equivalents.",
+                    "description": "Complete ontology with merged imports.",
                     "format": "owl-rdf/xml",
                     "id": "mondo.owl",
                     "is_canonical": true,
                     "ontology_purl": "http://purl.obolibrary.org/obo/mondo.owl",
-                    "title": "Main OWL edition"
+                    "title": "Mondo OWL edition"
                 },
                 {
                     "derived_from": "mondo.owl",
-                    "description": "As OWL. xrefs can be used as proxy for equivalence. Uses Mondo IDs.",
+                    "description": "OBO serialization of mondo.owl.",
                     "format": "obo",
                     "id": "mondo.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/mondo.obo",
-                    "title": "obo-format edition"
+                    "title": "Mondo OBO Format edition"
                 },
                 {
                     "derived_from": "mondo.owl",
-                    "description": "Equivalent to the OWL edition.",
+                    "description": "Obographs serialization of mondo.owl.",
                     "format": "obo",
                     "id": "mondo.json",
                     "ontology_purl": "http://purl.obolibrary.org/obo/mondo.json",
-                    "title": "json edition"
+                    "title": "Mondo JSON edition"
                 },
                 {
                     "description": "The main ontology plus axioms connecting to select external ontologies, excluding the external ontologies themselves",
                     "format": "owl",
                     "id": "mondo/mondo-base.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/mondo/mondo-base.owl",
-                    "title": "Mondo Base Module"
+                    "title": "Mondo Base Release"
+                },
+                {
+                    "description": "The main ontology classes and their hierarchies, without references to external terms.",
+                    "format": "owl",
+                    "id": "mondo/mondo-simple.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/mondo/mondo-simple.owl",
+                    "title": "Mondo Simple Release"
                 }
             ],
             "publications": [
@@ -5349,7 +5442,6 @@
             },
             "title": "Mondo Disease Ontology",
             "tracker": "https://github.com/monarch-initiative/mondo/issues",
-            "twitter": "MonarchInit",
             "usages": [
                 {
                     "description": "Mondo is used by the Monarch Initiative for disease annotations.",
@@ -5464,7 +5556,7 @@
                 }
             ],
             "contact": {
-                "email": "drsbello@gmail.com",
+                "email": "pheno@jax.org",
                 "github": "sbello",
                 "label": "Sue Bello",
                 "orcid": "0000-0003-4606-0597"
@@ -7795,7 +7887,7 @@
                 "label": "Pankaj Jaiswal",
                 "orcid": "0000-0002-1005-8383"
             },
-            "depicted_by": "https://github.com/Planteome/plant-ontology/blob/master/Planteome_profile.jpg",
+            "depicted_by": "https://raw.githubusercontent.com/Planteome/plant-ontology/refs/heads/master/Planteome_profile.jpg",
             "description": "The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.",
             "domain": "anatomy and development",
             "homepage": "http://browser.planteome.org/amigo",
@@ -8014,7 +8106,7 @@
             "preferredPrefix": "PR",
             "products": [
                 {
-                    "description": "PRO after reasoning has been applied, OWL format.",
+                    "description": "PRO after reasoning has been applied, OWL format. Add '.gz' for compressed.",
                     "id": "pr.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/pr.owl",
                     "title": "pro_reasoned.owl"
@@ -8024,6 +8116,18 @@
                     "id": "pr.obo",
                     "ontology_purl": "http://purl.obolibrary.org/obo/pr.obo",
                     "title": "pro_reasoned.obo"
+                },
+                {
+                    "description": "PRO without reasoning applied, OWL format. Add '.gz' for compressed.",
+                    "id": "pr-asserted.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pr-asserted.owl",
+                    "title": "pro_nonreasoned.owl"
+                },
+                {
+                    "description": "PRO without reasoning applied, OBO format.",
+                    "id": "pr-asserted.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pr-asserted.obo",
+                    "title": "pro_nonreasoned.obo"
                 }
             ],
             "publications": [
@@ -8755,10 +8859,10 @@
         {
             "activity_status": "active",
             "contact": {
-                "email": "alejandra.gonzalez.beltran@gmail.com",
-                "github": "agbeltran",
-                "label": "Alejandra Gonzalez-Beltran",
-                "orcid": "0000-0003-3499-8262"
+                "email": "proccaserra@gmail.com",
+                "github": "proccaserra",
+                "label": "Philippe Rocca-Serra",
+                "orcid": "0000-0001-9853-5668"
             },
             "depicted_by": "https://raw.githubusercontent.com/ISA-tools/stato/dev/images/stato-logo-3.png",
             "description": "STATO is a general-purpose STATistics Ontology. Its aim is to provide coverage for processes such as statistical tests, their conditions of application, and information needed or resulting from statistical methods, such as probability distributions, variables, spread and variation metrics. STATO also covers aspects of experimental design and description of plots and graphical representations commonly used to provide visual cues of data distribution or layout and to assist review of the results.",
@@ -8780,12 +8884,57 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/stato.owl"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/31831744",
+                    "title": "Experiment design driven FAIRification of omics data matrices, an exemplar"
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/32109232",
+                    "title": "Semantic concept schema of the linear mixed model of experimental observations"
+                }
+            ],
             "repository": "https://github.com/ISA-tools/stato",
             "tags": [
                 "statistics"
             ],
             "title": "The Statistical Methods Ontology",
-            "tracker": "https://github.com/ISA-tools/stato/issues"
+            "tracker": "https://github.com/ISA-tools/stato/issues",
+            "usages": [
+                {
+                    "description": "struct (Statistics in R using Class-based Templates), Struct integrates with the STATistics Ontology to ensure consistent reporting and maximizes semantic interoperability",
+                    "publications": [
+                        {
+                            "id": "https://www.ncbi.nlm.nih.gov/pubmed/33325493",
+                            "title": "struct: an R/Bioconductor-based framework for standardized metabolomics data analysis and beyond"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://bioconductor.org/packages/release/bioc/html/struct.html"
+                },
+                {
+                    "description": "Scientific Evidence Code System (SEVCO) on the FEvIR platform. The FEvIR Platform includes many Builder Tools to create FHIR Resources without requiring expertise in FHIR or JSON, and Converter Tools to convert structured data to FHIR Resources",
+                    "publications": [
+                        {
+                            "id": "https://www.ncbi.nlm.nih.gov/pubmed/33486066",
+                            "title": "Making science computable: Developing code systems for statistics, study design, and risk of bias"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://fevir.net/resources/CodeSystem/27270#STATO:0000039"
+                },
+                {
+                    "description": "OBCS",
+                    "publications": [
+                        {
+                            "id": "https://www.ncbi.nlm.nih.gov/pubmed/27627881",
+                            "title": "The Ontology of Biological and Clinical Statistics (OBCS) for standardized and reproducible statistical analysis"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://github.com/obcs/obcs"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -9592,10 +9741,10 @@
                 "source_url": "http://build.berkeleybop.org/job/build-pheno-ontologies/lastSuccessfulBuild/artifact/*zip*/archive.zip"
             },
             "contact": {
-                "email": "vasilevs@ohsu.edu",
-                "github": "nicolevasilevsky",
-                "label": "Nicole Vasilevsky",
-                "orcid": "0000-0001-5208-3432"
+                "email": "jmcl@ebi.ac.uk",
+                "github": "jamesamcl",
+                "label": "James McLaughlin",
+                "orcid": "0000-0002-8361-2795"
             },
             "description": "The uPheno ontology integrates multiple phenotype ontologies into a unified cross-species phenotype ontology.",
             "domain": "phenotype",
@@ -9626,7 +9775,7 @@
                     "title": "uPheno MP-HP equivalence axioms"
                 },
                 {
-                    "description": "The new version of uPheno, along with species independent phenotypes amd additional phenotype relations. The ontology is still in Beta status, but we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is no longer actively maintained.",
+                    "description": "The new version of uPheno, along with species independent phenotypes and additional phenotype relations. The ontology is still in Beta status, but we recommend users to migrate their infrastructures to uPheno 2 as uPheno 1 is no longer actively maintained.",
                     "id": "upheno/v2/upheno.owl",
                     "ontology_purl": "http://purl.obolibrary.org/obo/upheno/v2/upheno.owl",
                     "page": "https://github.com/obophenotype/upheno-dev",
@@ -9634,6 +9783,10 @@
                 }
             ],
             "publications": [
+                {
+                    "id": "https://doi.org/10.1101/2024.09.18.613276",
+                    "title": "The Unified Phenotype Ontology (uPheno): A framework for cross-species integrative phenomics"
+                },
                 {
                     "id": "https://zenodo.org/record/2382757",
                     "title": "Phenotype Ontologies Traversing All The Organisms (POTATO) workshop aims to reconcile logical definitions across species"
@@ -9644,7 +9797,7 @@
                 }
             ],
             "repository": "https://github.com/obophenotype/upheno",
-            "title": "Unified phenotype ontology (uPheno)",
+            "title": "Unified Phenotype Ontology (uPheno)",
             "tracker": "https://github.com/obophenotype/upheno/issues",
             "usages": [
                 {

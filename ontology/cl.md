@@ -9,9 +9,9 @@ contact:
   label: Alexander Diehl
   orcid: 0000-0001-9990-8331
 dependencies:
-- id: chebi
 - id: go
 - id: ncbitaxon
+- id: omo
 - id: pato
 - id: pr
 - id: ro
@@ -33,25 +33,47 @@ products:
   format: owl-rdf/xml
   is_canonical: true
   uses:
-  - uberon
-  - chebi
   - go
-  - pr
-  - pato
   - ncbitaxon
+  - omo
+  - pato
+  - pr
   - ro
+  - uberon
 - id: cl.obo
   title: CL obo format edition
   derived_from: cl.owl
   description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
   format: obo
-- id: cl/cl-basic.obo
+- id: cl.json
+  title: CL OBOGraph-JSON format edition
+  derived_from: cl.owl
+  description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
+  format: json
+- id: cl/cl-basic.owl
   title: Basic CL
   description: Basic version, no inter-ontology axioms
+  format: owl-rdf/xml
+- id: cl/cl-basic.obo
+  title: Basic CL (OBO version)
+  description: Basic version, no inter-ontology axioms
   format: obo
+- id: cl/cl-basic.json
+  title: Basic CL (OBOGraph-JSON version)
+  description: Basic version, no inter-ontology axioms
+  format: json
 - id: cl/cl-base.owl
   title: CL base module
   description: complete CL but with no imports or external axioms
+  format: owl-rdf/xml
+- id: cl/cl-base.obo
+  title: CL base module (OBO version)
+  description: complete CL but with no imports or external axioms
+  format: obo
+- id: cl/cl-base.json
+  title: CL base module (OBOGraph-JSON version)
+  description: complete CL but with no imports or external axioms
+  format: json
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/27377652
   title: 'The Cell Ontology 2016: enhanced content, modularization, and ontology interoperability.'
@@ -84,6 +106,15 @@ usages:
     title: 'The human body at cellular resolution: the NIH Human Biomolecular Atlas Program.'
   type: annotation
   user: https://hubmapconsortium.org/
+- description: The single-cell transcriptomics platform CZ CELLxGENE uses CL to annotate all cell types. All datasets on CellXGene are annotated according to a standard schema that specifies the use of CL to record Cell Type.
+  examples:
+  - description: A CELLxGENE Cell Guide entry for 'luminal adaptive secretory precursor cell of mammary gland', which includes the CL ID (CL:4033057), CL definition and a visualizer of CL hierarchy
+    url: https://cellxgene.cziscience.com/cellguide/CL:4033057
+  publications:
+  - id: https://doi.org/10.1101/2021.04.05.438318
+    title: 'CELLxGENE: a performant, scalable exploration platform for high dimensional sparse matrices'
+  type: annotation
+  user: https://cellxgene.cziscience.com/
 - description: The Human Cell Atlas (HCA) is an international group of researchers using a combination of these new technologies to create cellular reference maps. The HCA use CL to annotate cells in their reference maps.
   examples:
   - description: HCA collection studies that are related B cell (CL:0000236) that is filtered through CL annotation
@@ -148,6 +179,10 @@ Uberon and various phenotype ontologies.
 ## Applications
 
 The following are some applications of the cell ontology along with their publications: 
+
+**CZ CELLxGENE**
+
+CZI Single-Cell Biology Program, Shibla Abdulla, Brian Aevermann, Pedro Assis, Seve Badajoz, Sidney M. Bell, Emanuele Bezzi, et al. 2023. “CZ CELL×GENE Discover: A Single-Cell Data Platform for Scalable Exploration, Analysis and Modeling of Aggregated Data.” bioRxiv. [doi:10.1101/2023.10.30.563174](https://doi.org/10.1101/2023.10.30.563174).
 
 **HuBMAP**
 
