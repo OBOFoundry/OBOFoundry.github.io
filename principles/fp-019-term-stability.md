@@ -106,7 +106,7 @@ For OBO format, there are multiple alternatives:
 [Typedef]
 id: has_obsolescence_reason
 name: has obsolescence reason
-xref: IAO:0000233
+xref: IAO:0000231
 is_metadata_tag: true
 ```
 Then:
@@ -129,7 +129,7 @@ Criteria for review
 The OBO Dashboard will show:
 - An ERROR if any obsolete term (that is, a term with an "owl:deprecated" property or "is_obsolete: true" tag) does not also have 'obsolete ' (that exact string, lowercase and space included, with no other punctuation) prepended to the label
 - An ERROR if any obsolete term (as indicated by term label or definition) lacks an "owl:deprecated" property or "is_obsolete: true" tag
-- An ERROR if an obsolete term has any associated logical axioms (including any subClassOf/is_a declarations)
+- An ERROR if an obsolete term has, itself, any logical axioms (including any subClassOf/is_a declarations) or if it is referenced by logical axioms from other terms
 - A WARN if there is at least one term with 'OBSOLETE. ' prepended to the definition but not all obsolete terms are likewise prepended
 
 [This check is automatically validated.](checks/fp_019)
