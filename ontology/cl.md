@@ -9,9 +9,9 @@ contact:
   label: Alexander Diehl
   orcid: 0000-0001-9990-8331
 dependencies:
-- id: chebi
 - id: go
 - id: ncbitaxon
+- id: omo
 - id: pato
 - id: pr
 - id: ro
@@ -33,25 +33,47 @@ products:
   format: owl-rdf/xml
   is_canonical: true
   uses:
-  - uberon
-  - chebi
   - go
-  - pr
-  - pato
   - ncbitaxon
+  - omo
+  - pato
+  - pr
   - ro
+  - uberon
 - id: cl.obo
   title: CL obo format edition
   derived_from: cl.owl
   description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
   format: obo
-- id: cl/cl-basic.obo
+- id: cl.json
+  title: CL OBOGraph-JSON format edition
+  derived_from: cl.owl
+  description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
+  format: json
+- id: cl/cl-basic.owl
   title: Basic CL
   description: Basic version, no inter-ontology axioms
+  format: owl-rdf/xml
+- id: cl/cl-basic.obo
+  title: Basic CL (OBO version)
+  description: Basic version, no inter-ontology axioms
   format: obo
+- id: cl/cl-basic.json
+  title: Basic CL (OBOGraph-JSON version)
+  description: Basic version, no inter-ontology axioms
+  format: json
 - id: cl/cl-base.owl
   title: CL base module
   description: complete CL but with no imports or external axioms
+  format: owl-rdf/xml
+- id: cl/cl-base.obo
+  title: CL base module (OBO version)
+  description: complete CL but with no imports or external axioms
+  format: obo
+- id: cl/cl-base.json
+  title: CL base module (OBOGraph-JSON version)
+  description: complete CL but with no imports or external axioms
+  format: json
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/27377652
   title: 'The Cell Ontology 2016: enhanced content, modularization, and ontology interoperability.'

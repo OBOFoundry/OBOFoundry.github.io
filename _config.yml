@@ -799,9 +799,9 @@ ontologies:
     label: Alexander Diehl
     orcid: 0000-0001-9990-8331
   dependencies:
-  - id: chebi
   - id: go
   - id: ncbitaxon
+  - id: omo
   - id: pato
   - id: pr
   - id: ro
@@ -829,13 +829,13 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/cl.owl
     title: Main CL OWL edition
     uses:
-    - uberon
-    - chebi
     - go
-    - pr
-    - pato
     - ncbitaxon
+    - omo
+    - pato
+    - pr
     - ro
+    - uberon
   - derived_from: cl.owl
     description: Complete ontology, plus inter-ontology axioms, and imports modules
       merged in
@@ -843,15 +843,43 @@ ontologies:
     id: cl.obo
     ontology_purl: http://purl.obolibrary.org/obo/cl.obo
     title: CL obo format edition
+  - derived_from: cl.owl
+    description: Complete ontology, plus inter-ontology axioms, and imports modules
+      merged in
+    format: json
+    id: cl.json
+    ontology_purl: http://purl.obolibrary.org/obo/cl.json
+    title: CL OBOGraph-JSON format edition
+  - description: Basic version, no inter-ontology axioms
+    format: owl-rdf/xml
+    id: cl/cl-basic.owl
+    ontology_purl: http://purl.obolibrary.org/obo/cl/cl-basic.owl
+    title: Basic CL
   - description: Basic version, no inter-ontology axioms
     format: obo
     id: cl/cl-basic.obo
     ontology_purl: http://purl.obolibrary.org/obo/cl/cl-basic.obo
-    title: Basic CL
+    title: Basic CL (OBO version)
+  - description: Basic version, no inter-ontology axioms
+    format: json
+    id: cl/cl-basic.json
+    ontology_purl: http://purl.obolibrary.org/obo/cl/cl-basic.json
+    title: Basic CL (OBOGraph-JSON version)
   - description: complete CL but with no imports or external axioms
+    format: owl-rdf/xml
     id: cl/cl-base.owl
     ontology_purl: http://purl.obolibrary.org/obo/cl/cl-base.owl
     title: CL base module
+  - description: complete CL but with no imports or external axioms
+    format: obo
+    id: cl/cl-base.obo
+    ontology_purl: http://purl.obolibrary.org/obo/cl/cl-base.obo
+    title: CL base module (OBO version)
+  - description: complete CL but with no imports or external axioms
+    format: json
+    id: cl/cl-base.json
+    ontology_purl: http://purl.obolibrary.org/obo/cl/cl-base.json
+    title: CL base module (OBOGraph-JSON version)
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/27377652
     title: 'The Cell Ontology 2016: enhanced content, modularization, and ontology
@@ -5778,7 +5806,7 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/pr.owl
   preferredPrefix: PR
   products:
-  - description: PRO after reasoning has been applied, OWL format.
+  - description: PRO after reasoning has been applied, OWL format. Add '.gz' for compressed.
     id: pr.owl
     ontology_purl: http://purl.obolibrary.org/obo/pr.owl
     title: pro_reasoned.owl
@@ -5786,6 +5814,14 @@ ontologies:
     id: pr.obo
     ontology_purl: http://purl.obolibrary.org/obo/pr.obo
     title: pro_reasoned.obo
+  - description: PRO without reasoning applied, OWL format. Add '.gz' for compressed.
+    id: pr-asserted.owl
+    ontology_purl: http://purl.obolibrary.org/obo/pr-asserted.owl
+    title: pro_nonreasoned.owl
+  - description: PRO without reasoning applied, OBO format.
+    id: pr-asserted.obo
+    ontology_purl: http://purl.obolibrary.org/obo/pr-asserted.obo
+    title: pro_nonreasoned.obo
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/27899649
     title: 'Protein Ontology (PRO): enhancing and scaling up the representation of
