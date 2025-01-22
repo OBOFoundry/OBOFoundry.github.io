@@ -1,7 +1,7 @@
 ---
 layout: ontology_detail
 id: hp
-title: Human Phenotype Ontology
+title: Human Phenotype Ontology (HPO)
 browsers:
 - title: JAX HPO Browser
   label: HPO
@@ -15,7 +15,7 @@ contact:
   label: Sebastian Koehler
   orcid: 0000-0002-5316-1399
 depicted_by: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/logo/HPO-logo-black_small.png
-description: A structured and controlled vocabulary for the phenotypic features encountered in human hereditary and other disease.
+description: The Human Phenotype Ontology (HPO) is a structured and controlled vocabulary for the phenotypic features encountered in human hereditary and other disease.
 domain: phenotype
 homepage: http://www.human-phenotype-ontology.org/
 license:
