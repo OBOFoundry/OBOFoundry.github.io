@@ -2,7 +2,7 @@
 layout: post
 categories: newsletter
 title: "OBO Foundry Newsletter Issue 7"
-date: 2025-01-22
+date: 2025-01-23
 author:
   - OBO Operations Commitee
 ---
@@ -13,7 +13,9 @@ Happy New Year from the OBO Foundry Community!
 
 In this edition, we highlight two of our dedicated community members and two OBO Foundry ontologies. You will also find updates on recent workshops, the latest tools to improve ontology development, and the progress of current projects.
 
-As always, we encourage you to share your ideas, feedback, and suggestions with the [OBO Foundry Operations Committee.](https://obofoundry.org/docs/OperationsCommittee.html)Highlights 
+As always, we encourage you to share your ideas, feedback, and suggestions with the [OBO Foundry Operations Committee.](https://obofoundry.org/docs/OperationsCommittee.html)
+
+Highlights 
 
 
 #### OBO Dashboard updated
@@ -72,7 +74,6 @@ Discussions are ongoing, with the committee actively seeking feedback (which you
 
 * [PRIDE (Proteomics Identification Ontology)](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2652): The PRIDE (Proteomics Identification) Ontology provides a structured framework for describing and sharing proteomics data from mass spectrometry experiments, organizing information in the PRoteomics IDEntifications Database. The ontology includes terms for protein identifications, peptide sequences, experimental conditions, and modifications, enabling researchers to consistently annotate their data across different studies. [Join the discussion](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2652).
 * [Membrane Ontology (MEMON)](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2661): The Membrane Ontology creates a structured vocabulary for annotating biological data about cell membranes and their experimental and computational models, allowing detailed membrane descriptions and connections between datasets. The terms cover different biological membrane models used in research, along with their component descriptions, and will expand to link models with the types of biological membranes they approximate. [Join the discussion](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2661).
-* 
 
 
 ### Spotlight on well-established OBO ontologies
@@ -133,6 +134,25 @@ In 2017, Chris was the first person to be awarded the[ Exceptional Contributions
 ## Spotlight on Research in the OBO community
 
 
+### [A change language for ontologies and knowledge graphs](https://academic.oup.com/database/article/doi/10.1093/database/baae133/7972659)
+
+Ontologies and knowledge graphs evolve constantly as scientific knowledge grows. A new framework, KGCL (Knowledge Graph Change Language), offers a standardized way to track and implement these changes. KGCL uses clear commands like "rename X to Y" that both humans and computers can understand. 
+
+The system comes with practical tools: Ontobot processes changes through GitHub automatically, while a new BioPortal widget lets users suggest updates through a simple interface. These tools are already being used by Mondo, GO, ENVO, and Uberon. KGCL helps ontology teams work more efficiently while making it easier for the broader scientific community to contribute. 
+
+The development of KGCL was driven by community needs, in particular a 2023 workshop attended by many OBO ontology developers and curators. As ontologies continue to grow in importance for biological research, KGCL offers a timely solution for keeping these vital resources up to date.
+
+
+
+<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image3.png "image_tooltip")
+
+
+Figure from Hegde H, Vendetti J, Goutte-Gattat D, Caufield JH, Graybeal JB, Harris NL, Karam N, Kindermann C, Matentzoglu N, Overton JA, Musen MA, Mungall CJ. A change language for ontologies and knowledge graphs. 2025 Jan 22 [https://doi.org/10.1093/database/baae133](https://doi.org/10.1093/database/baae133).
+
+
 ### [Whelk: An OWL EL+RL Reasoner Enabling New Use Cases](https://doi.org/10.4230/TGDK.2.2.7)
 
 Many of the ontologies in OBO are large, with tens of thousands of classes, many of these classes interlinked via OWL axioms. Some of these ontologies are too large to use with most [OWL reasoners](https://oboacademy.github.io/obook/reference/reasoning/). A major game changer for the OBO world was the release of the ELK reasoner, which was fast enough to reason over large ontologies like GO, CL, and Uberon. One reason ELK is so much faster than other reasoners is that it operates over a restricted subset or *profile* of the OWL language (formally called EL++). However, this tradeoff means that ELK can’t operate over all axiom types, including certain kinds of rule axioms found in the Relation Ontology. 
@@ -149,10 +169,10 @@ Whelk is available as a Protege plugin, and can be easily dropped into existing 
 
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](images/image4.png "image_tooltip")
 
 
 Figure from James P. Balhoff (University of North Carolina, Chapel Hill) and Christopher J. Mungall (Lawrence Berkeley National Laboratory). Whelk: An OWL EL+RL Reasoner Enabling New Use Cases. 2024 Dec 18; [https://doi.org/10.4230/TGDK.2.2.7](https://doi.org/10.4230/TGDK.2.2.7)
@@ -168,10 +188,10 @@ The tools, available at [https://github.com/hubmapconsortium](https://github.com
 
 
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image4.png "image_tooltip")
+![alt_text](images/image5.png "image_tooltip")
 
 
 Figure from Anita R. Caron, Aleix Puig-Barbe, Ellen M. Quardokus, James P. Balhoff, Jasmine Belfiore, Nana-Jane Chipampe, Josef Hardi, Bruce W. Herr II, Huseyin Kir, Paola Roncaglia, Mark A. Musen, James A. McLaughlin, Katy Börner, and David Osumi-Sutherland. A General Strategy for Generating Expert-Guided, Simplified Views of Ontologies. 2024 Dec 18;[ https://doi.org/10.1101/2024.12.13.628309](https://doi.org/10.1101/2024.12.13.628309))
@@ -203,10 +223,10 @@ While the OBO Dashboard only reports a warning when classes are not defined (for
 
 
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](images/image6.png "image_tooltip")
  
 
 
