@@ -44,7 +44,7 @@ For Mondo, the primary contact person is Nicole Vasilevsky (nicole {at} tislab.o
 - Help desk; such as chebi-help {at} ebi.ac.uk
 - Group email; such as contact {at} resource.org (where it is unclear precisely who receives the email)
 - Issue tracker;
-- Assistant email addresses; the responsible person must be <i>directly</i> reachable
+- Email address of responsible person's assistant or admin; the responsible person must be <i>directly</i> reachable
 
 ## Criteria for Review
 
