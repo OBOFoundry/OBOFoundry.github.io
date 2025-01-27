@@ -42,7 +42,7 @@ For Mondo, the primary contact person is Nicole Vasilevsky (nicole {at} tislab.o
 
 - Mailing list; such as go-discuss {at} geneontology.org
 - Help desk; such as chebi-help {at} ebi.ac.uk
-- Group email; such as contact {at} resource.org (where it is unclear precisely who receives the email)
+- Group email; such as ontologygroup {at} resource.org (where it is unclear precisely who receives the email and who is responsible for responding)
 - Issue tracker;
 - Email address of responsible person's assistant or admin; the responsible person must be <i>directly</i> reachable
 
