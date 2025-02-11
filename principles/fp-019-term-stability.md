@@ -14,16 +14,18 @@ The definition of a term MUST always denote the same thing(s)--known as "referen
 Purpose
 -------
 
-Users of an ontology depend on the stability of its terms and their meanings. Therefore, changes to the definition of a term should never substantially shift its meaning. Put another way, its set of referents MUST remain stable, within reason. That is, changes to a term definition should not cause that term to point to different entities than it denotes already.
+Users of an ontology depend on the stability of its terms and their meanings. Therefore, changes to the definition of a term should never substantially shift its meaning. Put another way, its set of referents MUST remain stable, within reason. That is, changes to a term definition--or any mechanism to denote meaning, including elucidations and logical axioms--should not cause that term to point to different entities than it denotes already.
 
 Recommendations and Requirements
 -------
 
-If changing a term definition would change its referents, then instead a new term MUST be created with a new IRI and the new definition. Minor changes to the definition for clarity, grammar, and/or proper punctuation that do not change the referents are permitted. What is considered a 'minor change' will likely need to be considered on a case-by-case basis; it is left to the ontology developers to decide. However, any feedback from users MUST be taken into account.
+Below, we use 'definition' to encompass all possible mechanisms to denote term meaning, as described above.
+
+If changing a term definition would change its referents, then instead a new term MUST be created with a new IRI and the new definition. Minor changes to the definition for clarity, grammar, and/or proper punctuation that do not change the referents are permitted. What is considered a 'minor change' will likely need to be evaluated on a case-by-case basis; it is left to the ontology developers to decide. However, any feedback from users MUST be taken into account.
 
 The creation of a new term/definition implies that the old term should possibly be deprecated/obsoleted. Conditions under which a term MUST be deprecated according to this principle, or for which term deprecation SHOULD be considered, include:
 
-1) The old textual definition misses its intended target. This includes cases where the term refers to non-existent referents (as might happen, for example, when new research reveals that the referent does not exist in reality).
+1) The old textual definition misses the target(s) intended by the ontology developers. This includes cases where the term refers to non-existent referents (as might happen, for example, when new research reveals that the referent does not exist in reality).
 1) The original term definition is considered sufficiently “damaged” (too vague, too restrictive, too misused or too misunderstood).
 
 In all cases the developers SHOULD provide guidance on how to handle deprecated terms (either by exact replacement or by considering other terms), and be mindful of the potential costs to users of the ontology who might use the existing term. As well, developers SHOULD pre-announce term obsoletions. See [Principle 13](http://obofoundry.org/principles/fp-013-notification.html) for guidance on such announcements.
