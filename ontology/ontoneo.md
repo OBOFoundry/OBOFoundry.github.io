@@ -41,4 +41,3 @@ usages:
 activity_status: active
 ---
 The OntONeo suite is a collection of open ontologies available about Obstetric and Neonatal domain, currently designed to be composed by three complementary sub-ontologies covering several data from electronic health records (EHRs) involved in the care of the pregnant woman, and of her baby.
----
