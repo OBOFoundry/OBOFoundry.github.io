@@ -11,8 +11,8 @@ description: An ontology of clinical informed consents
 domain: investigations
 homepage: https://github.com/ICO-ontology/ICO
 license:
-  label: CC BY 3.0
-  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 4.0
+  url: http://creativecommons.org/licenses/by/4.0/
 preferredPrefix: ICO
 products:
 - id: ico.owl
