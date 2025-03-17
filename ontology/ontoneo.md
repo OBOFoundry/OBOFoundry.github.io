@@ -15,7 +15,6 @@ domain: health
 homepage: ontoneo.com 
 mailing_list: http://groups.google.com/group/ontoneo-discuss
 preferredPrefix: ONTONEO
-publications: 
 products:
 - id: ontoneo.owl
   title: ONTONEO
