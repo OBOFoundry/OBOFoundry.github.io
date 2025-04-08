@@ -30,8 +30,26 @@ submitted to the [RO tracker](https://github.com/oborel/obo-relations/issues).
 
 Reuse means that the actual relations PURLs are used. Ontology developers should be aware that RO relations (in rare instances) can evolve over time and previous relations might become obsolete. This means developers should monitor the state of the RO relations they use.
 
+- If the domain of the proposed relation is a class in the same ontology as that relation, it is fine to keep in the ontology; if a suitable RO parent exists, the new relation MUST be declared a sub-property of that parent.
+- If the domain of the proposed relation is a class outside of the ontology defining that relation, the relation MUST be added to RO.
+- If the relation seems generally usable (that is, could potentially be used by other ontologies), the relation MUST be added to RO.
+- If there are any doubts about how to proceed based on the above, there SHOULD be an attempt to add to RO.
+- It is never a bad idea to add to RO, even for those relations that are 'self-contained' (as described in the first bullet point).
+
+Note regarding property chains: If a proposed property chain makes use of relations that are themselves in RO, the property chain SHOULD be submitted to RO.
+
 ## Examples
 
 ## Counter-Examples
 
-<Category:Principles> <Category:Accepted> <Category:Definitions>
+## Criteria for Review
+
+Each definition MUST be unique. Each entity MUST NOT have more than one textual definition (tagged using [IAO:0000115](http://purl.obolibrary.org/obo/IAO_0000115)). Textual definitions SHOULD be provided for most terms, and for top level terms especially.
+
+[This check is automatically validated.](checks/fp_007)
+
+## Feedback and Discussion
+
+To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%237+%22Relations%22+%3CENTER+ISSUE+TITLE%3E).
+
+To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%237+%22Relations%22+-+automated+validation+%3CENTER+ISSUE+TITLE%3E).
