@@ -18,5 +18,6 @@ For the following, steps 1-5 are internal to the EWG and steps 6-7 are internal 
 9. Allow a two-week commenting period on the pull request.
 10. If the feedback includes major changes or objections, re-discuss during an OBO Operations call and re-do any relevant steps indicated above.
 11. At the end of the commenting period, assuming no major changes are needed, a member of the EWG will merge the pull request (removing 'draft' status if appropriate) and thereby make the changes public.
+12. Add the new principle to the [Principles Summary](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/principles/fp-000-summary.md) list and to the [Principles dropdown menu](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/principles/all.yml).
 
 The need for a new principle can arise when an existing principle tries to cover too much and requires splitting, or as new needs arise within the community.
