@@ -40,4 +40,6 @@ P13) <b>Notification of Changes</b> - Ontologies SHOULD announce major changes t
 
 P16) <b>Maintenance</b> - The ontology needs to reflect changes in scientific consensus to remain accurate over time.
 
+P19) <b>Stability</b> - The definition of a term MUST always denote the same thing(s)–known as “referent(s)”–in reality. If a proposed change to the definition would substantially change its referents, then a new term with new IRI and definition MUST instead be created.
+
 P20) <b>Responsiveness</b> - Ontology developers MUST offer channels for community participation and SHOULD be responsive to requests.
