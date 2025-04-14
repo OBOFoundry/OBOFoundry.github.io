@@ -11,7 +11,7 @@ contact:
   github: akodamullil
   label: Alpha Tom Kodamullil
   orcid: 0000-0001-9896-3531
-description: An ontology of phenotypic qualities (properties, attributes or characteristics)
+description: An application ontology that represents comprehensive knowledge involving a variety of fields of medical and biological aspects.
 domain: health
 homepage: https://github.com/SCAI-BIO/BiomarkerOntology
 in_foundry_order: 
@@ -28,17 +28,10 @@ publications:
   title:
 - id: 
   title: Using ontologies to describe mouse phenotypes
-repository: https://github.com/pato-ontology/pato
-tracker: https://github.com/pato-ontology/pato/issues
+repository: https://github.com/SCAI-BIO/BiomarkerOntology
+tracker: https://github.com/SCAI-BIO/BiomarkerOntology/issue
 usages:
-- description: PATO is used by the Human Phenotype Ontology (HPO) for logical definitions of phenotypes that facilitate cross-species integration.
-  examples:
-  - description: An abnormality in a cellular process.
-    url: https://www.ebi.ac.uk/ols/ontologies/hp/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FHP_0011017&viewMode=All&siblings=false
-  publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/30476213
-    title: Expansion of the Human Phenotype Ontology (HPO) knowledge base and resources
-  type: annotation
-  user: https://hpo.jax.org/app/
+- description: BMONT  is proposed to be used for improving biomarker identification tasks, as well as a supportive integratable tool for abundant AI techniques, such as Machine Learning (ML) and Large Learning Model (LLM).
+
 activity_status: active
 ---
