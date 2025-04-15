@@ -3,32 +3,29 @@ layout: principle
 id: fp-007-relations
 title: Relations (principle 7)
 ---
-
-## NOTE
-
-The content of this page is scheduled to be reviewed. Improved wording will be posted as it becomes available.
+GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; [Implementation](#implementation) &#124; [Examples/Counter&#8209;Examples](#examples) &#124; [Criteria&nbsp;for&nbsp;Review](#criteria-for-review) &#124; [Feedback/Discussion](#feedback-and-discussion)
 
 ## Summary
 
-Relations should be reused from the Relations Ontology (RO).
+Existing relations MUST be reused from the Relations Ontology (RO). New relations SHOULD be submitted to RO.
 
 [This check is automatically validated.](checks/fp_007)
 
 ## Purpose
 
-To facilitate interoperability between multiple ontologies, especially with respect to logical inference. That is, a reasoner can only detect logical inconsistencies between ontologies and infer new axioms if the ontologies use the same object properties.
+To facilitate interoperability between multiple ontologies, especially with respect to logical inference. That is, a reasoner can only detect logical inconsistencies between ontologies and infer new axioms if the ontologies use the same relations (aka object properties).
 
 ## Recommendations and Requirements
 
-Each OBO ontology MUST reuse existing relations (aka object properties) that have already been declared in the Relations Ontology (RO),
-rather than declaring relations that mean the same as an existing RO relation. Where it makes sense for an ontology to declare a new relation in
+For any given relation need, each OBO ontology MUST reuse a relation from the Relations Ontology (RO) if the appropriate relation already exists,
+rather than declaring new relations that hold the same meaning. Where it makes sense for an ontology to declare a new relation in
 its own ID space and there is a RO relation that is logically a super-property of the new relation, the new relation MUST be asserted to be
 a sub-property of the RO relation. In such cases, it is requested that there still be coordination with RO, for example in the form of an issue
 submitted to the [RO tracker](https://github.com/oborel/obo-relations/issues).
 
-## Implementation
+Note: 'Reuse' means that the actual RO relations PURLs are used. Ontology developers should be aware that RO relations (in rare instances) can evolve over time and previous relations might become obsolete. This means developers should monitor the state of the RO relations they use.
 
-Reuse means that the actual relations PURLs are used. Ontology developers should be aware that RO relations (in rare instances) can evolve over time and previous relations might become obsolete. This means developers should monitor the state of the RO relations they use.
+## Implementation
 
 - If the domain of the proposed relation is a class in the same ontology as that relation, it is fine to keep in the ontology; if a suitable RO parent exists, the new relation MUST be declared a sub-property of that parent.
 - If the domain of the proposed relation is a class outside of the ontology defining that relation, the relation MUST be added to RO.
