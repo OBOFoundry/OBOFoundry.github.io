@@ -11,7 +11,7 @@ Existing relations MUST be reused. New relations SHOULD be submitted to the Rela
 
 ## Purpose
 
-To facilitate interoperability between multiple ontologies, especially with respect to logical inference. That is, a reasoner can only detect logical inconsistencies between ontologies and infer new axioms if the ontologies use the same relations (aka object properties).
+To facilitate interoperability between multiple ontologies, especially with respect to logical inference, because a reasoner can only detect logical inconsistencies between ontologies and infer new axioms if the ontologies use the same relations (aka object properties).
 
 ## Recommendations and Requirements
 
