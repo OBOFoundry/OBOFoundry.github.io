@@ -7,7 +7,7 @@ GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; 
 
 ## Summary
 
-Existing relations MUST be reused from the Relations Ontology (RO). New relations SHOULD be submitted to RO.
+Existing relations MUST be reused. New relations SHOULD be submitted to the Relations Ontology (RO).
 
 [This check is automatically validated.](checks/fp_007)
 
@@ -17,16 +17,19 @@ To facilitate interoperability between multiple ontologies, especially with resp
 
 ## Recommendations and Requirements
 
-For any given relation need, each OBO ontology MUST reuse a relation from the Relations Ontology (RO) if the appropriate relation already exists,
-rather than declaring new relations that hold the same meaning. Where it makes sense for an ontology to declare a new relation in
+For any given relation need, each OBO ontology MUST reuse a relation from the Relations Ontology (RO) or other ontology if the appropriate relation already exists,
+rather than declaring new a relation that holds the same meaning. Where it makes sense for an ontology to declare a new relation in
 its own ID space and there is a RO relation that is logically a super-property of the new relation, the new relation MUST be asserted to be
 a sub-property of the RO relation. In such cases, it is requested that there still be coordination with RO, for example in the form of an issue
 submitted to the [RO tracker](https://github.com/oborel/obo-relations/issues).
 
-Note: 'Reuse' means that the actual RO relations PURLs are used. Ontology developers should be aware that RO relations (in rare instances) can evolve over time and previous relations might become obsolete. This means developers should monitor the state of the RO relations they use.
-
 ## Implementation
 
+### Reusing relations
+'Reuse' means that the actual existing-relation PURL is used. Ontology developers should be aware that (in rare instances) relations can evolve over time and previous relations might become obsolete. This means developers should monitor the state of the relations they use. The Relations Ontology MUST be the first source for appropriate relations, and ontology developers SHOULD, with due diligence, search RO for needed relations. If a necessary relation cannot be found within RO, then the developers SHOULD search other OBO ontologies for reasonable candidates.
+
+### Creating New Relations
+The appropriate home for new relations will depend on multiple factors, including the general applicability of the relation to other ontologies, and with consideration of the domain and range for the relation:
 - If the domain of the proposed relation is a class in the same ontology as that relation, it is fine to keep in the ontology; if a suitable RO parent exists, the new relation MUST be declared a sub-property of that parent.
 - If the domain of the proposed relation is a class outside of the ontology defining that relation, the relation MUST be added to RO.
 - If the relation seems generally usable (that is, could potentially be used by other ontologies), the relation MUST be added to RO.
