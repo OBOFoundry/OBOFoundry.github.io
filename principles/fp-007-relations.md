@@ -9,8 +9,6 @@ GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; 
 
 Existing relations MUST be reused. New relations SHOULD be submitted to the Relations Ontology (RO).
 
-[This check is automatically validated.](checks/fp_007)
-
 ## Purpose
 
 To facilitate interoperability between multiple ontologies, especially with respect to logical inference. That is, a reasoner can only detect logical inconsistencies between ontologies and infer new axioms if the ontologies use the same relations (aka object properties).
