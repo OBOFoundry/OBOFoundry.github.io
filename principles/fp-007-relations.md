@@ -29,12 +29,14 @@ submitted to the [RO tracker](https://github.com/oborel/obo-relations/issues).
 'Reuse' means that the actual existing-relation PURL is used. Ontology developers should be aware that (in rare instances) relations can evolve over time and previous relations might become obsolete. This means developers should monitor the state of the relations they use. The Relations Ontology MUST be the first source for appropriate relations, and ontology developers SHOULD, with due diligence, search RO for needed relations. If a necessary relation cannot be found within RO, then the developers SHOULD search other OBO ontologies for reasonable candidates.
 
 ### Creating New Relations
-The appropriate home for new relations will depend on multiple factors, including the general applicability of the relation to other ontologies, and with consideration of the domain and range for the relation:
-- If the domain of the proposed relation is a class in the same ontology as that relation, it is fine to keep in the ontology; if a suitable RO parent exists, the new relation MUST be declared a sub-property of that parent.
-- If the domain of the proposed relation is a class outside of the ontology defining that relation, the relation MUST be added to RO.
-- If the relation seems generally usable (that is, could potentially be used by other ontologies), the relation MUST be added to RO.
+The appropriate home for a new relation ('R') will depend on multiple factors, including the general applicability of 'R' beyond its use by developers of the 'R'-proposing ontology ('O'), and with consideration of the domain and range for 'R':
+- If both the domain and range of 'R' are classes in the same ontology 'O' as 'R', 'R' MAY be kept in 'O';
+- If either the domain or range of 'R' are classes not in 'O', and 'R' does not seem to be general enough for use by other ontologies, 'R' MAY be kept in 'O';
+- For any 'R' not submitted to RO, if a suitable RO parent ('P') exists, then 'R' MUST be declared a sub-property of 'P';
+- If 'R' seems generally usable (that is, could potentially be used by ontologies other than 'O'), the relation MUST be added to RO;
 - If there are any doubts about how to proceed based on the above, there SHOULD be an attempt to add to RO.
-- It is never a bad idea to add to RO, even for those relations that are 'self-contained' (as described in the first bullet point).
+
+It is never a bad idea to add a new relation to RO, even for those that are 'self-contained' (that is, as described in the first bullet point).
 
 Note regarding property chains: If a proposed property chain makes use of relations that are themselves in RO, the property chain SHOULD be submitted to RO.
 
