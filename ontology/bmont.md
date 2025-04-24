@@ -1,5 +1,6 @@
 ---
 layout: ontology_detail
+layout: ontology_detail
 id: bmont
 title: Biomarker Ontology
 browsers:
