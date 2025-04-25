@@ -15,7 +15,6 @@ contact:
 description: An application ontology that represents comprehensive knowledge involving a variety of fields of medical and biological aspects.
 domain: health
 homepage: https://github.com/SCAI-BIO/BiomarkerOntology
-in_foundry_order: 
 license:
   label: CC BY 4.0
   url: http://creativecommons.org/licenses/by/4.0/
