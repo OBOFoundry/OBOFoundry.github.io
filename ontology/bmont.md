@@ -6,7 +6,7 @@ title: Biomarker Ontology
 browsers:
 - title: BioPortal Ontology Browser
   label: BioPortal
-  url: [https://bioportal.bioontology.org/ontologies/BMONT]
+  url: https://bioportal.bioontology.org/ontologies/BMONT
 contact:
   email: alpha.tom.kodamullil@scai.fraunhofer.de
   github: akodamullil
