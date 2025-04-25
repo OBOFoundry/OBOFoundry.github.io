@@ -23,11 +23,6 @@ products:
 - id: BMONT.owl
 - id: bmont.obo
   description: Includes axioms linking to other ontologies, but no imports of those ontologies
-publications:
-- id: 
-  title:
-- id: 
-  title: Using ontologies to describe mouse phenotypes
 repository: https://github.com/SCAI-BIO/BiomarkerOntology
 tracker: https://github.com/SCAI-BIO/BiomarkerOntology/issue
 usages:
