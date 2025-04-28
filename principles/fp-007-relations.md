@@ -24,7 +24,7 @@ submitted to the [RO tracker](https://github.com/oborel/obo-relations/issues).
 ## Implementation
 
 ### Reusing relations
-'Reuse' means that the actual existing-relation PURL is used. Ontology developers should be aware that (in rare instances) relations can evolve over time and previous relations might become obsolete. This means developers should monitor the state of the relations they use. The Relations Ontology MUST be the first source for appropriate relations, and ontology developers SHOULD, with due diligence, search RO for needed relations. If a necessary relation cannot be found within RO, then the developers SHOULD search other OBO ontologies for reasonable candidates.
+'Reuse' means that the actual existing-relation PURL is used. Ontology developers should be aware that (in rare instances) relations can evolve over time and previous relations might become obsolete. This means developers should monitor the state of the relations they use. The Relations Ontology MUST be the first source for appropriate relations, and ontology developers SHOULD, with due diligence, search RO for needed relations. If a necessary relation cannot be found within RO, then the developers MUST search other OBO ontologies for reasonable candidates using, for example, an ontology search engine such as Ontobee.
 
 ### Creating New Relations
 The appropriate home for a new relation ('R') will depend on multiple factors, including the general applicability of 'R' beyond its use by developers of the 'R'-proposing ontology ('O'), and with consideration of the domain and range for 'R':
