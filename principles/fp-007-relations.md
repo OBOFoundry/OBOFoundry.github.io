@@ -32,7 +32,7 @@ The appropriate home for a new relation ('R') will depend on multiple factors, i
 - If either the domain or range of 'R' are classes not in 'O', and 'R' does not seem to be general enough for use by other ontologies, 'R' MAY be kept in 'O';
 - If 'R' seems generally usable (that is, could potentially be used by ontologies other than 'O'), the relation SHOULD be submitted to RO;
 - For any 'R' not submitted to RO, if a suitable RO parent ('P') exists, then 'R' MUST be declared a sub-property of 'P';
-- An effort to specify a domain and range for 'R' SHOULD be made, though caution SHOULD be used that each is neither too broad nor too specific.
+- An effort to specify a domain and range for 'R' SHOULD be made, though caution is advised to ensure that each is neither too broad nor too specific.
 
 While it is never a bad idea to submit a new relation to RO, if there are any doubts about how to proceed based on the above, a discussion with RO developers SHOULD be made via the [RO issue tracker](https://github.com/oborel/obo-relations/issues) or the [OBO Community  Slack](https://obo-communitygroup.slack.com) for the #relation-ontology channel.
 
