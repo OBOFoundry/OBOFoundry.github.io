@@ -34,7 +34,7 @@ The appropriate home for a new relation ('R') will depend on multiple factors, i
 - For any 'R' not submitted to RO, if a suitable RO parent ('P') exists, then 'R' MUST be declared a sub-property of 'P';
 - An effort to specify a domain and range for 'R' SHOULD be made, though caution is advised to ensure that each is neither too broad nor too specific.
 
-While it is never a bad idea to submit a new relation to RO, if there are any doubts about how to proceed based on the above, a discussion with RO developers SHOULD be made via the [RO issue tracker](https://github.com/oborel/obo-relations/issues) or the [OBO Community  Slack](https://obo-communitygroup.slack.com) for the #relation-ontology channel.
+While it is never a bad idea to submit a new relation to RO, if there are any doubts about how to proceed based on the above, a discussion with RO developers SHOULD be made via the [RO issue tracker](https://github.com/oborel/obo-relations/issues) or the [OBO Community  Slack](https://obo-communitygroup.slack.com) using the #relation-ontology channel.
 
 Note regarding property chains: If a proposed property chain makes use of relations that are themselves in RO, the property chain SHOULD be submitted to RO.
 
