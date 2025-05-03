@@ -20,7 +20,6 @@ license:
 preferredPrefix: BMONT
 products:
 - id: BMONT.owl
-- id: bmont.obo
   description: Includes axioms linking to other ontologies, but no imports of those ontologies
 repository: https://github.com/SCAI-BIO/BiomarkerOntology
 tracker: https://github.com/SCAI-BIO/BiomarkerOntology/issue
