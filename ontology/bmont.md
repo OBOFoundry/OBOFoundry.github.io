@@ -24,8 +24,6 @@ products:
   description: Includes axioms linking to other ontologies, but no imports of those ontologies
 repository: https://github.com/SCAI-BIO/BiomarkerOntology
 tracker: https://github.com/SCAI-BIO/BiomarkerOntology/issue
-usages:
-- description: BMONT  is proposed to be used for improving biomarker identification tasks, as well as a supportive integratable tool for abundant AI techniques, such as Machine Learning (ML) and Large Learning Model (LLM).
 
 activity_status: true
 ---
