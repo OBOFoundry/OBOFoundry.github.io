@@ -45,7 +45,7 @@ products:
   derived_from: cl.owl
   description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
   format: obo
-- id: cl.json
+- id: cl/cl.json
   title: CL OBOGraph-JSON format edition
   derived_from: cl.owl
   description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
