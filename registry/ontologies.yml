@@ -369,6 +369,36 @@ ontologies:
     type: owl_import
     user: http://obofoundry.org
 - activity_status: active
+  browsers:
+  - label: BioPortal
+    title: BioPortal Ontology Browser
+    url: https://bioportal.bioontology.org/ontologies/BMONT
+  contact:
+    email: alpha.tom.kodamullil@scai.fraunhofer.de
+    github: akodamullil
+    label: Alpha Tom Kodamullil
+    orcid: 0000-0001-9896-3531
+  description: An application ontology that represents comprehensive knowledge involving
+    a variety of fields of medical and biological aspects.
+  domain: health
+  homepage: https://github.com/SCAI-BIO/BiomarkerOntology
+  id: bmont
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/bmont.owl
+  preferredPrefix: BMONT
+  products:
+  - description: Includes axioms linking to other ontologies, but no imports of those
+      ontologies
+    id: BMONT.owl
+    ontology_purl: http://purl.obolibrary.org/obo/BMONT.owl
+  repository: https://github.com/SCAI-BIO/BiomarkerOntology
+  title: Biomarker Ontology
+  tracker: https://github.com/SCAI-BIO/BiomarkerOntology/issue
+- activity_status: active
   build:
     checkout: git clone https://github.com/obophenotype/biological-spatial-ontology.git
     infallible: 1
