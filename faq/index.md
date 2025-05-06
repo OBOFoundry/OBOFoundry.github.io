@@ -12,7 +12,7 @@ title: OBO Foundry Frequently Asked Questions
 
 ### Citation
 
-- [How do I cite the OBO Foundry?](/registry/publications.html)
+- [How do I cite the OBO Foundry?](/citation/RelatedPublications.html)
 - [How do I cite a specific ontology?](/docs/Citation.html)
 
 ### Terms
