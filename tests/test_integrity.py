@@ -216,17 +216,30 @@ class TestIntegrity(unittest.TestCase):
 
     def test_has_purl_config(self):
         """Tests that OBO PURL configuration is available."""
+        existing_purl_configs = set()
+        missing = set()
+        res = requests.get('https://api.github.com/repos/OBOFoundry/purl.obolibrary.org/git/trees/master?recursive=1')
+        self.assertEqual(
+            200,
+            res.status_code,
+            "Error while fetching Git tree for OBOFoundry/purl.obolibrary.org"
+        )
+        data = res.json()
+        for entry in data['tree']:
+            if entry['path'].startswith('config/'):
+                existing_purl_configs.add(entry['path'])
         for prefix, record in self.ontologies.items():
             if self.skip_inactive(record):
                 continue
             with self.subTest(prefix=prefix):
-                url = f"https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config/{prefix}.yml"
-                res = requests.get(url)
-                self.assertEqual(
-                    200,
-                    res.status_code,
-                    msg=f"PURL configuration is missing for {prefix}",
-                )
+                filename = f"config/{prefix}.yml"
+                if filename not in existing_purl_configs:
+                    missing.add(prefix)
+        self.assertEqual(
+            set(),
+            missing,
+            msg=f"PURL configuration missing for {', '.join(missing)}"
+        )
 
 
 class TestStandardizedYaml(unittest.TestCase):
