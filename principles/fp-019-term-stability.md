@@ -48,10 +48,10 @@ It is not necessary (and not advisable) to delete the textual definition.
 
 <i><b>To obsolete a term, the ontology developer</b></i> SHOULD:
 
-5. Indicate any exact term replacement:
+1. Indicate any exact term replacement:
    -  OWL: Use the `term replaced by` annotation property from OMO ([IAO:0100001](http://purl.obolibrary.org/obo/IAO_0100001)) with the value set to the IRI of the relevant term
    -  OBO: Use the `replaced_by:` tag with the value set to the CURIE of the relevant term
-6. Indicate any inexact term replacements:
+2. Indicate any inexact term replacements:
    -  OWL: Use the `oboInOwl:consider` annotation property with the value set to the full IRI(s) of the relevant term(s)
 ```
    <oboInOwl:consider rdf:resource="http://purl.obolibrary.org/obo/OBI_0001544")>
@@ -69,20 +69,10 @@ Note that some older implementations in OWL used the CURIE method as shown below
 ```
 <i><b>To obsolete a term, the ontology developer</b></i> MAY:
 
-7. Prepend the string "OBSOLETE. " (this precise string, including the space) to the term definition. NOTE: This MUST be implemented consistently. That is, if applied at all, it has to be applied to every obsoleted term definition.
-8. Indicate the reason(s) for obsoleting:
+1. Prepend the string "OBSOLETE. " (this precise string, including the space) to the term definition. NOTE: This MUST be implemented consistently. That is, if applied at all, it has to be applied to every obsoleted term definition.
+2. Indicate the reason(s) for obsoleting:
    -  OWL: Use the `has obsolescence reason` annotation property from OMO ([IAO:0000231](http://purl.obolibrary.org/obo/IAO_0000231)) with the value set to the IRI of one of the individuals of the "obsolescence reason specification" term [IAO:0000225](http://purl.obolibrary.org/obo/IAO_0000225). See below for example.
    -  OBO: Use `relationship:` with the CURIE for the annotation property (IAO:0000231) and a CURIE for the specific reason (an individual from the "obsolescence reason specification" term [IAO:0000225](http://purl.obolibrary.org/obo/IAO_0000225)). See below for example. Note that older implementations often used alternative methods (described after the examples). These methods are still valid, but are not preferred.
-
-
-|IRI            |CURIE      |Label                  |Definition|Editor note    |
-|---------------|-----------|-----------------------|----------|-------------- |
-|obo:IAO_0000103|IAO:0000103|failed exploratory term|The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job|???|
-|obo:IAO_0000226|IAO:0000226|placeholder removed    |???   | ???               |
-|obo:IAO_0000227|IAO:0000227|terms merged |???|An editor note should explain what were the merged terms and the reason for the merge.                               |
-|obo:IAO_0000228|IAO:0000228|term imported|???|This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.|
-|obo:IAO_0000229|IAO:0000229|term split   |???|This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created.|
-|obo:OMO_0001000|OMO:0001000|out of scope |???|This obsolesence reason should be used conservatively. Typical valid examples are: un-necessary grouping classes in disease ontologies, a phenotype term added on the assumption it was a disease.|
 
 Examples
 -------
