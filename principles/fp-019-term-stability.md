@@ -54,16 +54,15 @@ It is not necessary (and not advisable) to delete the textual definition.
 2. Indicate any inexact term replacements:
    -  OWL: Use the `oboInOwl:consider` annotation property with the value set to the full IRI(s) of the relevant term(s):
 
-```
-    <oboInOwl:consider rdf:resource="http://purl.obolibrary.org/obo/OBI_0001544">
-```
-
+       ```
+      <oboInOwl:consider rdf:resource="http://purl.obolibrary.org/obo/OBI_0001544">
+       ```
+      
    -  OBO: Use the `consider:` tag with the value set to the CURIE(s) of the relevant term(s):
 
-```
-    consider: OBI:0001544
-```
-
+       ```
+      consider: OBI:0001544
+       ```
 Note that some older implementations in OWL used the CURIE method as shown below, but this is not preferred.
 
 ```
