@@ -52,22 +52,15 @@ It is not necessary (and not advisable) to delete the textual definition.
    -  OWL: Use the `term replaced by` annotation property from OMO ([IAO:0100001](http://purl.obolibrary.org/obo/IAO_0100001)) with the value set to the IRI of the relevant term
    -  OBO: Use the `replaced_by:` tag with the value set to the CURIE of the relevant term
 2. Indicate any inexact term replacements:
-   -  OWL: Use the `oboInOwl:consider` annotation property with the value set to the full IRI(s) of the relevant term(s)
-
-```
-   <oboInOwl:consider rdf:resource="http://purl.obolibrary.org/obo/OBI_0001544">
-``` 
-
-   -  OBO: Use the `consider:` tag with the value set to the CURIE(s) of the relevant term(s)
-```
-   consider: OBI:0001544
-```
+   -  OWL: Use the `oboInOwl:consider` annotation property with the value set to the full IRI(s) of the relevant term(s): `<oboInOwl:consider rdf:resource="http://purl.obolibrary.org/obo/OBI_0001544">`
+   -  OBO: Use the `consider:` tag with the value set to the CURIE(s) of the relevant term(s): `consider: OBI:0001544`
 
 Note that some older implementations in OWL used the CURIE method as shown below, but this is not preferred.
 
 ```
    <oboInOwl:consider rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI:0001544</oboInOwl:consider>
 ```
+
 <i><b>To obsolete a term, the ontology developer</b></i> MAY:
 
 1. Prepend the string "OBSOLETE. " (this precise string, including the space) to the term definition. NOTE: This MUST be implemented consistently. That is, if applied at all, it has to be applied to every obsoleted term definition.
