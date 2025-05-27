@@ -53,6 +53,7 @@ It is not necessary (and not advisable) to delete the textual definition.
    -  OBO: Use the `replaced_by:` tag with the value set to the CURIE of the relevant term
 2. Indicate any inexact term replacements:
    -  OWL: Use the `oboInOwl:consider` annotation property with the value set to the full IRI(s) of the relevant term(s)
+
 ```
    <oboInOwl:consider rdf:resource="http://purl.obolibrary.org/obo/OBI_0001544">
 ``` 
