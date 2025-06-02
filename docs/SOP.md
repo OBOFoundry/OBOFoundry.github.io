@@ -12,6 +12,7 @@ This document contains standard operating procedures (SOPs) for the OBO Foundry 
 - [Notification of NOR Decision](#NOD)
 - [Changing ontology metadata in the registry](#META)
 - [Reviving obsolete, orphaned, or inactive ontologies](#REACTIVATION)
+- [Adding new members to obo-discuss](#OBO_DISCUSS)
 - [Becoming a member of the OBO Operations Committee](#OPS_MEMBER)
 - [Chairing an OBO Operations Committee meeting call](#OPS_CHAIR)
 
@@ -142,6 +143,13 @@ Currently, these are the required steps:
 1. Within two weeks the status change reviewer presents the arguments for and against the status change at an OBO Operations call.
 1. If there is no significant objection within a four week time period, the status change is enacted by merging the pull request.
 1. The contact person for the ontology should be notified of the acceptance or rejection of the change.
+
+<a name="OBO_DISCUSS"></a>
+
+OBO Discuss is a Google Group: https://groups.google.com/g/obo-discuss. Anyone with an email address can ask to join OBO Discuss, but we have had trouble with spammers in the past, so the Google Group is configured to require new members to be approved by one of the mailing list owners.
+Some of the mailing list owners filter the Pending Members list every few days. Checking the Pending Members was also part of the Operations chairing instructions, to remind us to do it every two weeks, at a minimum.
+
+When someone asks to join, they must include an email address and they may provide a reason that they want to join. If they provide a reason that's not gibberish, we accept them. If they don't, we search Google for their email address. If there are good results (often from a university or company), we accept. If nothing suitable turns up, we email the applicant and explain that everyone is welcome but we filter for spammers. We usually get a reply and then click "Accept". (If they don't reply, then we don't accept them in the group.)
 
 <a name="OPS_MEMBER"></a>
 
