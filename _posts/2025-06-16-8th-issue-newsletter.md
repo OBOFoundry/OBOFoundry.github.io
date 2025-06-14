@@ -19,9 +19,7 @@ As always, we encourage you to participate in the OBO community, whether through
 
 [OBO Foundry Operations Committee.](https://obofoundry.org/docs/OperationsCommittee.html)
 
-
 ## Highlights 
-
 
 ### OBO Dashboard updated
 
@@ -29,43 +27,31 @@ The OBO Foundry Dashboard helps track the progress of ontologies in aligning wit
 
 You can view the most recent dashboard update (last updated 2025-05-29) here: [OBO Dashboard](https://dashboard.obofoundry.org/dashboard/index.html)
 
-
 ---
-
 
 #### Decisions Made and Working Group Updates
 
 This period saw continued progress by the Editorial and Technical Working Groups, alongside several key decisions by the OBO Operations Committee. The Editorial Working Group (EWG) received formal approval and publication of [Principle 19](https://obofoundry.org/principles/fp-019-term-stability.html) (Stability of Term Meaning), which sets forth best practices for versioning and maintaining consistent ontology releases. The EWG also improved  [Principle 12](https://obofoundry.org/principles/fp-012-naming-conventions.html) (Naming Conventions) by clarifying when term corrections can occur without triggering obsoletion, promoting more consistent terminology across OBO ontologies. 
-
- 
 
 
 #### Ongoing Discussions
 
 The Editorial Working Group is currently revising [Principle 7](https://obofoundry.org/principles/fp-007-relations.html) (Relations), which covers the placement of relationship terms across domain-specific ontologies and the Relation Ontology (RO). Committee members are debating criteria such as whether both the domain and range of a relation must exist in the same ontology, and whether logical invertibility is a practical requirement. The goal is to provide clearer guidance for ontology developers while maintaining flexibility across disciplines. A draft revision is in progress, but no consensus has yet been reached. [Join the discussion](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/966)
 
-
 ---
 
-
 ## Ontologies
-
 
 ### New Ontologies Accepted in the OBO Foundry Ontology Library
 
 [Biomarker Ontology (BMONT)](https://obofoundry.org/ontology/bmont.html)
 
-
-
 * GitHub Issue:[ #2604](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2604)
 * Key Discussion: The Biomarker Ontology provides terms relevant to identifying and describing biological markers in health and disease contexts. The submitter engaged in active feedback resolution and coordinated with the developers of the Ontology of Biological and Clinical Investigations (OBCI) to align future relation modeling. A key point of discussion was whether approval could be granted based on the commitment to update relations once OBCI terms are integrated into the Relations Ontology (RO). The committee agreed that this commitment was sufficient, and the ontology was approved after a public comment period with no objections.
-
 
 ### New ontologies currently under review 
 
 [Physiologically Based Pharmacokinetic Modelling Ontology (PBPKO)](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2563)
-
-
 
 * Status: Reviewer response required
 * Join the discussion:[ GitHub Issue: #2563](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2563)
@@ -73,20 +59,15 @@ The Editorial Working Group is currently revising [Principle 7](https://obofound
 
 [Radiation Therapy Ontology (RTO)](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2683)
 
-
-
 * Status: Reviewer assigned; domain expert still needed
 * Join the discussion:[ GitHub Issue: #2683](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2683)
 * Key Discussion: The Radiation Therapy Ontology (RTO) provides standardized terms for radiation procedures, equipment, dosages, and treatment planning. While it passed most of the technical review, it did not comply with Principle 3 due to the use of non-OBO-compliant IRIs. The committee clarified that a valid namespace must be in place at submission. A reviewer has been assigned, but a domain expert is still needed to complete the evaluation.
 
 [Experimental Model Ontology (EXMO)](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2615)
 
-
-
 * Status: Resubmitted; in technical review
 * Join the discussion:[ GitHub Issue: #2615](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2615)
 * Key Discussion: The Exercise Medicine Ontology (EXMO) aims to support personalized exercise prescriptions by standardizing terms related to physical activity, health status, and exercise interventions. While recent updates corrected identifier formatting and addressed several reviewer concerns, issues remain with reuse of out-of-scope terms that should be imported from existing OBO ontologies, such as CMO and DOID. Additional revisions are needed to improve modeling of clinical measurements, consistency in axioms for exercise equipment, and completeness of term definitions. The reviewers acknowledged substantial progress and requested the submitter document future term requests to external ontologies. The review remains open while these refinements are implemented.
-
 
 ### Spotlight on well-established OBO ontologies
 
@@ -100,34 +81,24 @@ The ontology files and patterns are all available on the uPheno GitHub site ([ht
 
 Read more about uPheno in the 2025 Genetics publication: [https://doi.org/10.1093/genetics/iyaf027](https://doi.org/10.1093/genetics/iyaf027).
 
-
-
 <p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image1.png "image_tooltip")
 
-
 Figure 1. uPheno brings together species-specific ontologies within a common framework to facilitate translational research (from [https://doi.org/10.1093/genetics/iyaf027](https://doi.org/10.1093/genetics/iyaf027)).
 
-
 ---
-
 
 ## Members and Volunteers 
 
 The OBO Foundry is honored to highlight two valued community members. 
 
-
 ### Lynn Schriml
-
-
 
 <p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image2.png "image_tooltip")
-
 
 As PI of the Disease Ontology project (http://www.disease-ontology.org/) a NIH/NHGRI-funded Genomic Resource and Knowledgebase, established in 2003, Lynn has been active in the OBO Foundry since 2008. She currently contributes to the OBO Operations team, reviewing ontologies, representing the OBO Foundry at conferences, and has previously worked on the OBO Editorial Working Group.
 
@@ -135,16 +106,12 @@ As an Associate Professor at the University of Maryland School of Medicine, her 
 
 A key component of her ontology development has involved ongoing engagement with disease-specific research communities and ontology developers (e.g., Model Organism Databases – drosophila, zebrafish, mouse, rat, yeast and worm, Human Phenotype Ontology, Mammalian Phenotype Ontology, Alliance of Genome Resources) to include extension, revisions and additions to the Disease Ontology based on disease models defined by the research community.
 
-
 ### Bjoern Peters
-
-
 
 <p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
 
 ![alt_text](images/image3.jpg "image_tooltip")
-
 
 Dr. Bjoern Peters is a Professor at the La Jolla Institute for Immunology in San Diego, California. Since starting his Ph.D. in theoretical biophysics at Humboldt University in Berlin, Germany, he has worked on the development and validation of machine learning tools to analyze and predict which parts of a pathogen, allergen, or cancer cell are targeted by immune responses. Identifying these specific molecular targets of immune responses, called epitopes, recognized by diseased individuals opens a path toward developing diagnostics, vaccines, and therapeutics. 
 
@@ -152,12 +119,9 @@ In 2004, he moved to the La Jolla Institute as a postdoc and later became the bi
 
 Beyond OBI, Dr. Peters has contributed to many OBO ontologies, the OBO Foundry, and its transition to an ‘operations-driven-project’. He co-led the OBO-services grant with Dr. Chris Mungall and co-initiated the COB project that aims to develop an integration ontology layer for OBO ontologies below BFO. Beyond the IEDB, Dr. Peters has utilized the OBO data standardization techniques for multiple other public-facing database projects as well as for data capture and analysis for data generated in the experimental part of his lab. 
 
-
 ---
 
-
 ## Spotlight on Research in the OBO community
-
 
 ### [Suggestions for extending the FAIR Principles based on a linguistic perspective on semantic interoperability](https://www.nature.com/articles/s41597-025-05011-x)
 
@@ -170,15 +134,11 @@ To advance the FAIR framework, they propose enhancements, which they refer to as
 This interdisciplinary research connects ontologies, linguistics, and data science, highlighting that achieving true interoperability requires establishing shared linguistic and digital understanding.
 
 
-
 <p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image4.png "image_tooltip")
 
-
 Figure from Lars Vogt, Philip Strömert, Nicolas Matentzoglu, Naouel Karam, Marcel Konrad, Manuel Prinz, Roman Baum. Suggestions for extending the FAIR Principles based on a linguistic perspective on semantic interoperability. 2025 April 24; [https://doi.org/10.1038/s41597-025-05011-x](https://doi.org/10.1038/s41597-025-05011-x) 
-
 
 ### [BioPortal: an open community resource for sharing, searching, and utilizing biomedical ontologies](https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkaf402/8129374)
 
@@ -187,8 +147,6 @@ BioPortal is not new (it was first released in 2008), but a [new publication](ht
 BioPortal automatically indexes all OBO Foundry ontologies (among others), monitoring them daily and reloading them upon detecting updates. While the OBO Foundry serves as a registry, BioPortal enhances usability by offering a browsable interface and downloadable ontology files (where licensing permits). As of March 2025, BioPortal hosts 1,549 ontologies (1,182 public), representing over 15 million classes and more than 101 million cross-ontology mappings. Its services support a vibrant community, with 18,000+ registered users and over 159 million API calls monthly.
 
 Key features for OBO users include:
-
-
 
 * Ontology Browsing and Search: Advanced search tools and collection filters allow intuitive access to OBO and other biomedical ontologies.
 * Detailed Ontology Summaries: Each ontology has a dedicated page with metadata, version history, usage metrics, reusable views, and associated projects.
@@ -202,22 +160,15 @@ A standout capability is BioPortal’s interface for suggesting ontology edits. 
 
 BioPortal’s infrastructure supports the broader OntoPortal Alliance, with additional portals serving domains like agriculture and ecology. Looking ahead, BioPortal plans to enhance knowledge graph features, improve metadata (FAIR-aligned), expand mapping support (including SSSOM), and integrate LLMs for smarter annotation.
 
-
-
 <p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
 
 ![alt_text](images/image5.png "image_tooltip")
 
-
 Figure from Jennifer Vendetti , Nomi L Harris , Michael V Dorf , Alex Skrenchuk , J Harry Caufield , Rafael S Gonçalves , John B Graybeal , Harshad Hegde , Timothy Redmond , Christopher J Mungall , Mark A Musen. BioPortal: an open community resource for sharing, searching, and utilizing biomedical ontologies. 2025 May 13; [https://doi.org/10.1093/nar/gkaf402](https://doi.org/10.1093/nar/gkaf402)
-
 
 ### [Assembly and reasoning over semantic mappings at scale for biomedical data integration](https://www.biorxiv.org/content/10.1101/2025.04.16.649126v1)
 
 A challenge in the automated integration of biomedical data and knowledge is the heterogeneous usage of ontologies and databases that assign their own identifiers to the same or related concepts. Resolving these overlaps requires high availability and coverage of semantic mappings. However, available mappings are incomplete and fragmented across individual resources, motivating their large-scale integration and processing. Therefore, the authors developed the Semantic Mapping Reasoning Assembler ([SeMRA](https://github.com/biopragmatics/semra)), a software tool with the following components:
-
-
 
 1. A high performance object model for semantic mappings (based on SSSOM)
 2. A provenance model for automatically generated mappings
@@ -226,13 +177,9 @@ A challenge in the automated integration of biomedical data and knowledge is the
 
 SeMRA represents mappings as a directed graph and applies inference algorithms such as inversion, mutation, and transitivity to infer new connections between concepts while tracking provenance and confidence. Its modular design enables import from standard formats (e.g., OBO, OWL), custom sources (e.g., OMIM, ChEMBL), and additional plugins, with all references validated against the Bioregistry. SeMRA includes a web application for interactive exploration, quality control, and curation, and supports export in SSSOM and Neo4j formats. The authors demonstrated SeMRA first by aggregating 43.4 million mappings from 127 sources that jointly cover identifiers from 445 ontologies and databases that they made available on Zenodo ([https://doi.org/10.5281/zenodo.11082038](https://doi.org/10.5281/zenodo.11082038)). Second, they also demonstrated how SeMRA can be configured with a declarative specification and create five domain-specific mapping sets for anatomical terms, cells/cell lines, genes, protein complexes, and diseases (see  [https://github.com/biopragmatics/semra/tree/main/notebooks/landscape](https://github.com/biopragmatics/semra/tree/main/notebooks/landscape)). Their meta-analysis showed that the integration and inference of domain-specific mappings resulted in meaningful consolidation of redundant terms, especially for the disease and protein complexes. Notably, they reproduced and extended the analysis on the disease landscape presented by Haendel et al., 2020 in "How many rare diseases are there?" ([https://doi.org/10.1038/d41573-019-00180-y](https://doi.org/10.1038/d41573-019-00180-y)) to incorporate more disease resources.
 
-
-
 <p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/image6.png "image_tooltip")
-
 
 Figure from Charles Tapley Hoyt,  Klas Karis, Benjamin M. Gyori. Assembly and reasoning over semantic mappings at scale for biomedical data integration. 2025 April 16; [https://www.biorxiv.org/content/10.1101/2025.04.16.649126v1.full](https://www.biorxiv.org/content/10.1101/2025.04.16.649126v1.full) 
 
@@ -241,22 +188,15 @@ Figure from Charles Tapley Hoyt,  Klas Karis, Benjamin M. Gyori. Assembly and re
 
 Single-cell omics technologies have transformed our understanding of cellular diversity by enabling high-resolution profiling of individual cells. However, the unprecedented scale and heterogeneity of these datasets demand robust frameworks for data integration and annotation. The Cell Ontology (CL) has emerged as a pivotal resource for achieving FAIR (Findable, Accessible, Interoperable, and Reusable) data principles by providing standardized, species-agnostic terms for canonical cell types - forming a core component of a wide range of platforms and tools. In this paper, we describe the wide variety of uses of CL in these platforms and tools and detail ongoing work to improve and extend CL content including the addition of transcriptomically defined types, working closely with major atlasing efforts including the Human Cell Atlas and the Brain Initiative Cell Atlas Network to support their needs. We cover the challenges and future plans for harmonising classical and transcriptomic cell type definitions, integrating markers and using Large Language Models (LLMs) to improve content and efficiency of CL workflows.
 
-
-
 <p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
 
-
 ![alt_text](images/image7.png "image_tooltip")
-
 
 Figure from Shawn Zheng Kai Tan, Aleix Puig-Barbe, Damien Goutte-Gattat, Caroline Eastwood, Brian Aevermann, Alida Avola, James P Balhoff, Ismail Ugur Bayindir, Jasmine Belfiore, Anita Reane Caron, David S Fischer, Nancy George, Benjamin M Gyori, Melissa A Haendel, Charles Tapley Hoyt, Huseyin Kir, Tiago Lubiana, Nicolas Matentzoglu, James A Overton, Beverly Peng, Bjoern Peters, Ellen M Quardokus, Patrick L Ray, Paola Roncaglia, Andrea D Rivera, Ray Stefancsik, Wei Kheng Teh, Sabrina Toro, Nicole Vasilevsky, Chuan Xu, Yun Zhang, Richard H Scheuermann, Chirstopher J Mungall, Alexander D Diehl, David Osumi-Sutherland. The Cell Ontology in the age of single-cell omics. 2025 June 10; [https://arxiv.org/abs/2506.10037](https://arxiv.org/abs/2506.10037)  
 
 ---
 
-
-
 ## Spotlight on OBO Principles 
-
 
 ### [Principle 19: Stability of Term Meaning](https://obofoundry.org/principles/fp-019-term-stability.html)
 
@@ -268,20 +208,15 @@ For implementation, the principle specifies exact steps for obsoleting terms in 
 
 The adoption of Principle 19 marks an important milestone for the OBO Foundry. It provides a robust standard for semantic versioning and long-term reliability of ontologies. We encourage all ontology maintainers to read the full principle and begin applying its guidance in their workflows to strengthen trust and usability across the community.
 
-
 ---
 
-
 ## Spotlight on Tools: Recent updates
-
 
 ### ROBOT v1.9.8
 
 The ROBOT ontology toolset (v1.9.8), released recently, introduces functional improvements relevant to OBO Foundry ontology developers. The update includes new features, library upgrades, and a series of bug fixes.
 
 New functionality includes:
-
-
 
 * A --clean-obo option for the convert command, supporting format cleanup.
 * Interpolation of ontology and version IRIs within annotation values.
@@ -290,15 +225,11 @@ New functionality includes:
 
 Library and command updates:
 
-
-
 * Apache POI upgraded for improved Excel processing.
 * Newline-separated value handling added via SPLIT=\n.
 * The reduce command now retains SubObjectPropertyOf axioms.
 
 Bug fixes address:
-
-
 
 * Output stability and memory use in owl-diff.
 * Exclusion of deprecated terms in lowercase_definition checks.
@@ -312,14 +243,11 @@ The release is available on [GitHub ](https://github.com/ontodev/robot/releases/
 
 Feedback and bug reports: [https://github.com/ontodev/robot/issues](https://github.com/ontodev/robot/issues)
 
-
 ### Ontology Development Kit (ODK) v1.6:
 
 The ODK is a toolbox and workflow system to manage the ontology lifecycle. After more than a year of work since the last major release, version 1.6 has been [published on the 29th May](https://github.com/INCATools/ontology-development-kit/releases/tag/v1.6). 
 
 This version of the ODK adds major new capabilities, including: 
-
-
 
 * A redesigned update_repo command for easier repository upgrades
 * A new ROBOT plugin with commands for efficient subsetting and upper ontology alignment checking. 
@@ -332,12 +260,9 @@ This version of the ODK adds major new capabilities, including:
 
 **Feedback and bug reports**: [https://github.com/INCATools/ontology-development-kit/issues](https://github.com/INCATools/ontology-development-kit/issues)
 
-
 ### curies v0.10.13: 
 
 curies is a python based package for managing IRI-curie conversions. An extension to the curies.Converter class that can apply pre-and post-process rules to CURIEs and URIs was added in v0.10.13. For more information about Curies see [Newsletter issue 2](https://obofoundry.org/newsletter/2023/09/15/second-issue-newsletter.html). A tutorial is available at [https://curies.readthedocs.io/en/latest/preprocessing.html](https://curies.readthedocs.io/en/latest/preprocessing.html) 
-
-
 
 * An extension to the curies.Converter class that can apply pre-and post-process rules to CURIEs and URIs was added in v0.10.13. A tutorial is available at [https://curies.readthedocs.io/en/latest/preprocessing.html](https://curies.readthedocs.io/en/latest/preprocessing.html)
 
@@ -362,20 +287,15 @@ ReferenceTuple('rdfs', 'subClassOf')
 
 ```
 
-
-
 * A hook for standardizing local unique identifiers was added in [ v0.10.8.](https://github.com/biopragmatics/curies/releases/tag/v0.10.8) This enables implementing a `curies.Converter` that validates LUIDs with regular expressions, e.g., from the Bioregistry and also that removes redundant prefixes (i.e., bananas)
 * CURIE parsing in `curies.Converter.parse_curie` was re-implemented to take into account the prefix map, rather than just splitting on a colon : in v0.10.7
 * A new function `curies.Converter.parse` that can handle both CURIEs or URIs was added in v0.10.7
 
 Feedback and bug reports:[ https://github.com/biopragmatics/curies/issues](https://github.com/biopragmatics/curies/issues)
 
-
 ---
 
-
 ## Spotlight on LinkML 
-
 
 ### Bridging the Gap for Semantic Data Modeling
 
@@ -389,22 +309,16 @@ In practice, LinkML helps bridge the gap between domain knowledge (ontologies) a
 
 Learn more and get started:
 
-
-
 * [LinkML tutorial](https://linkml.io/linkml/intro/tutorial.html)
 * [Using ontologies in LinkML schemas](https://linkml.io/linkml/faq/general.html#ontologies-as-values)
 
-
 ---
 
-
 ## Events and News
-
 
 ### OBO at Biocuration 2025
 
 The OBO Foundry community participated in the Biocuration 2025 conference[ at the Stowers Research Institute in Kansas City, Missouri](https://monarchinit.medium.com/monarch-representation-at-the-biocuration-conference-2025-bff89193aa72). 
-
 
 #### Collaborative Biocuration and Training** 
 
@@ -412,20 +326,17 @@ The OBO Foundry community participated in the Biocuration 2025 conference[ at th
 
 Slides are available [here](https://docs.google.com/presentation/d/1Cc6u3-pV_F2AJM_xbgv-m3LRpcPVvQNNmyzp6As-Maw/edit?usp=sharing). Workshop summary is available [here]( https://doi.org/10.5281/zenodo.15350444).
 
-
 #### uPheno workshop: Enhancing the Unified Phenotype Ontology to Support Cross-Species Phenotype Interoperability
 
 Led by Sue Bello (MGI) and Arwa Ibrahim (Monarch Initiative, EBI), the 4th uPheno workshop engaged participants from various ontologies and databases, including the plant community, the Rat Genome Database (RGD), the Mammalian Phenotype Ontology (MP), the Zebrafish Information Network (ZFIN), and the Database Center for Life Science (DBCLS), among others. The workshop focused on two main topics: 1) Improving the upper-level structure of the ontology and 2) Identifying integration and organization issues. Discussions also explored the current challenges in browsing the ontology, uPheno’s classification philosophy, reference ontology dependency, the utility of patternization for complex phenotypes, improving term labels and human-centric definitions, as well as leveraging AI to identify classification discrepancies. Future plans include working with plant ontology curators to integrate plant terms and developing collaborations with the RGD. Participants were encouraged to join the [uPheno slack community](https://obo-communitygroup.slack.com/archives/C02QS3Q3CD7), attend uPheno monthly calls, and create tickets in [uPheno’s GitHub repository](https://github.com/obophenotype/upheno/issues). 
 
 Slides are available [here](https://docs.google.com/presentation/d/1sdgQ9nGluoqtft4I51KVvWrJyVl5Ri2DbBnOSceDQGQ/edit#slide=id.p).
 
-
 #### Ontology Automated Workflow for Ontology Community Curation
 
 As part of her podium presentation about the Mondo disease ontology’s community approach to ontology maintenance, Sabrina Toro (Monarch Initiative) presented a workflow that allows the automated import of expertly curated community content directly into the ontology. This workflow relies on a simple spreadsheet maintained at the community source where the curation takes place. The content of this spreadsheet is automatically imported, quality-controlled, and added to the ontology with full provenance and attribution to the community source. This workflow is scalable and has been successfully implemented, for example, to maintain the Mondo rare disease subset. 
 
 Slides are available [here](https://docs.google.com/presentation/d/14_patlqd06E1oynQjLmPP2AW7yCZ0ZsQNW_lfMOflU8/edit?slide=id.p#slide=id.p)
-
 
 #### AI-Assisted Curation Tools
 Presented by Harry Caufield, this podium presentation introduced the open-access tools OntoGPT and CurateGPT, which leverage large language models alongside trusted knowledge bases and literature sources. These tools enable biocurators to efficiently extract, annotate, and curate information from diverse scientific texts, linking extracted concepts directly to ontologies and supporting literature. By streamlining the curation process and improving data provenance, OntoGPT and CurateGPT help curators keep pace with the rapidly growing volume of scientific data.
@@ -434,24 +345,17 @@ Slides are available [here](https://docs.google.com/presentation/d/1fmEnTKf4a4HN
 
 Overall, the OBO Foundry’s involvement at Biocuration 2025 focused on training, ontology integration, curation workflows, and the intersection of AI and biocuration.
 
-
 #### [OBO Academy: Seminar Series](https://oboacademy.github.io/obook/courses/monarch-obo-training/) (ongoing)
-
-
 
 * The OBO Academy: Seminar Series is run by members of the Monarch Initiative, but open to all. Please reach out in the OBO slack channel “#obo-academy” to be signed up.
 * Schedule:[ https://oboacademy.github.io/obook/courses/monarch-obo-training/](https://oboacademy.github.io/obook/courses/monarch-obo-training) 
 * You can vote for and request training topics here: [https://github.com/OBOAcademy/obook/discussions/categories/tutorial-requests](https://github.com/OBOAcademy/obook/discussions/categories/tutorial-requests)
 
-
 ---
-
 
 ## Ways to be part of the OBO Foundry community
 
 There are many ways to be part of the OBO Foundry community, beyond [using our website to find ontologies of interest](https://obofoundry.org). For example:
-
-
 
 * Join the [obo-discuss mailing list](https://groups.google.com/forum/#!forum/obo-discuss)
 * If you are interested in the technical aspects, you can also join the [obo-tools mailing list](https://groups.google.com/forum/#!members/obo-tools)
