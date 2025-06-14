@@ -81,9 +81,7 @@ The ontology files and patterns are all available on the uPheno GitHub site ([ht
 
 Read more about uPheno in the 2025 Genetics publication: [https://doi.org/10.1093/genetics/iyaf027](https://doi.org/10.1093/genetics/iyaf027).
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image1.png "image_tooltip")
+<img src="https://obofoundry.org/images/newsletter/upheno_newsletter.png" style="height: 400px" alt="upheno" />
 
 Figure 1. uPheno brings together species-specific ontologies within a common framework to facilitate translational research (from [https://doi.org/10.1093/genetics/iyaf027](https://doi.org/10.1093/genetics/iyaf027)).
 
@@ -95,10 +93,7 @@ The OBO Foundry is honored to highlight two valued community members.
 
 ### Lynn Schriml
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
+<img src="https://obofoundry.org/images/newsletter/schriml_newsletter.png" style="height: 400px" alt="Lynn Schriml" />
 
 As PI of the Disease Ontology project (http://www.disease-ontology.org/) a NIH/NHGRI-funded Genomic Resource and Knowledgebase, established in 2003, Lynn has been active in the OBO Foundry since 2008. She currently contributes to the OBO Operations team, reviewing ontologies, representing the OBO Foundry at conferences, and has previously worked on the OBO Editorial Working Group.
 
@@ -108,10 +103,7 @@ A key component of her ontology development has involved ongoing engagement with
 
 ### Bjoern Peters
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.jpg "image_tooltip")
+<img src="https://obofoundry.org/images/newsletter/bjoern_newsletter.png" style="height: 400px" alt="Bjoern Peters" />
 
 Dr. Bjoern Peters is a Professor at the La Jolla Institute for Immunology in San Diego, California. Since starting his Ph.D. in theoretical biophysics at Humboldt University in Berlin, Germany, he has worked on the development and validation of machine learning tools to analyze and predict which parts of a pathogen, allergen, or cancer cell are targeted by immune responses. Identifying these specific molecular targets of immune responses, called epitopes, recognized by diseased individuals opens a path toward developing diagnostics, vaccines, and therapeutics. 
 
@@ -133,10 +125,7 @@ To advance the FAIR framework, they propose enhancements, which they refer to as
 
 This interdisciplinary research connects ontologies, linguistics, and data science, highlighting that achieving true interoperability requires establishing shared linguistic and digital understanding.
 
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image4.png "image_tooltip")
+<img src="https://obofoundry.org/images/newsletter/fair_principles_newsletter.png" style="height: 400px" alt="FAIR Principles" />
 
 Figure from Lars Vogt, Philip Strömert, Nicolas Matentzoglu, Naouel Karam, Marcel Konrad, Manuel Prinz, Roman Baum. Suggestions for extending the FAIR Principles based on a linguistic perspective on semantic interoperability. 2025 April 24; [https://doi.org/10.1038/s41597-025-05011-x](https://doi.org/10.1038/s41597-025-05011-x) 
 
@@ -160,9 +149,7 @@ A standout capability is BioPortal’s interface for suggesting ontology edits. 
 
 BioPortal’s infrastructure supports the broader OntoPortal Alliance, with additional portals serving domains like agriculture and ecology. Looking ahead, BioPortal plans to enhance knowledge graph features, improve metadata (FAIR-aligned), expand mapping support (including SSSOM), and integrate LLMs for smarter annotation.
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image5.png "image_tooltip")
+<img src="https://obofoundry.org/images/newsletter/bioportal_newsletter.png" style="height: 400px" alt="Bioportal" />
 
 Figure from Jennifer Vendetti , Nomi L Harris , Michael V Dorf , Alex Skrenchuk , J Harry Caufield , Rafael S Gonçalves , John B Graybeal , Harshad Hegde , Timothy Redmond , Christopher J Mungall , Mark A Musen. BioPortal: an open community resource for sharing, searching, and utilizing biomedical ontologies. 2025 May 13; [https://doi.org/10.1093/nar/gkaf402](https://doi.org/10.1093/nar/gkaf402)
 
@@ -177,9 +164,7 @@ A challenge in the automated integration of biomedical data and knowledge is the
 
 SeMRA represents mappings as a directed graph and applies inference algorithms such as inversion, mutation, and transitivity to infer new connections between concepts while tracking provenance and confidence. Its modular design enables import from standard formats (e.g., OBO, OWL), custom sources (e.g., OMIM, ChEMBL), and additional plugins, with all references validated against the Bioregistry. SeMRA includes a web application for interactive exploration, quality control, and curation, and supports export in SSSOM and Neo4j formats. The authors demonstrated SeMRA first by aggregating 43.4 million mappings from 127 sources that jointly cover identifiers from 445 ontologies and databases that they made available on Zenodo ([https://doi.org/10.5281/zenodo.11082038](https://doi.org/10.5281/zenodo.11082038)). Second, they also demonstrated how SeMRA can be configured with a declarative specification and create five domain-specific mapping sets for anatomical terms, cells/cell lines, genes, protein complexes, and diseases (see  [https://github.com/biopragmatics/semra/tree/main/notebooks/landscape](https://github.com/biopragmatics/semra/tree/main/notebooks/landscape)). Their meta-analysis showed that the integration and inference of domain-specific mappings resulted in meaningful consolidation of redundant terms, especially for the disease and protein complexes. Notably, they reproduced and extended the analysis on the disease landscape presented by Haendel et al., 2020 in "How many rare diseases are there?" ([https://doi.org/10.1038/d41573-019-00180-y](https://doi.org/10.1038/d41573-019-00180-y)) to incorporate more disease resources.
 
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image6.png "image_tooltip")
+<img src="https://obofoundry.org/images/newsletter/semra_newsletter.png" style="height: 400px" alt="SeMRA" />
 
 Figure from Charles Tapley Hoyt,  Klas Karis, Benjamin M. Gyori. Assembly and reasoning over semantic mappings at scale for biomedical data integration. 2025 April 16; [https://www.biorxiv.org/content/10.1101/2025.04.16.649126v1.full](https://www.biorxiv.org/content/10.1101/2025.04.16.649126v1.full) 
 
@@ -188,9 +173,7 @@ Figure from Charles Tapley Hoyt,  Klas Karis, Benjamin M. Gyori. Assembly and re
 
 Single-cell omics technologies have transformed our understanding of cellular diversity by enabling high-resolution profiling of individual cells. However, the unprecedented scale and heterogeneity of these datasets demand robust frameworks for data integration and annotation. The Cell Ontology (CL) has emerged as a pivotal resource for achieving FAIR (Findable, Accessible, Interoperable, and Reusable) data principles by providing standardized, species-agnostic terms for canonical cell types - forming a core component of a wide range of platforms and tools. In this paper, we describe the wide variety of uses of CL in these platforms and tools and detail ongoing work to improve and extend CL content including the addition of transcriptomically defined types, working closely with major atlasing efforts including the Human Cell Atlas and the Brain Initiative Cell Atlas Network to support their needs. We cover the challenges and future plans for harmonising classical and transcriptomic cell type definitions, integrating markers and using Large Language Models (LLMs) to improve content and efficiency of CL workflows.
 
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-![alt_text](images/image7.png "image_tooltip")
+<img src="https://obofoundry.org/images/newsletter/single_cell_omics_newsletter.png" style="height: 400px" alt="Cell Omics" />
 
 Figure from Shawn Zheng Kai Tan, Aleix Puig-Barbe, Damien Goutte-Gattat, Caroline Eastwood, Brian Aevermann, Alida Avola, James P Balhoff, Ismail Ugur Bayindir, Jasmine Belfiore, Anita Reane Caron, David S Fischer, Nancy George, Benjamin M Gyori, Melissa A Haendel, Charles Tapley Hoyt, Huseyin Kir, Tiago Lubiana, Nicolas Matentzoglu, James A Overton, Beverly Peng, Bjoern Peters, Ellen M Quardokus, Patrick L Ray, Paola Roncaglia, Andrea D Rivera, Ray Stefancsik, Wei Kheng Teh, Sabrina Toro, Nicole Vasilevsky, Chuan Xu, Yun Zhang, Richard H Scheuermann, Chirstopher J Mungall, Alexander D Diehl, David Osumi-Sutherland. The Cell Ontology in the age of single-cell omics. 2025 June 10; [https://arxiv.org/abs/2506.10037](https://arxiv.org/abs/2506.10037)  
 
