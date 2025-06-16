@@ -19,7 +19,7 @@ As always, we encourage you to participate in the OBO community, whether through
 
 [OBO Foundry Operations Committee.](https://obofoundry.org/docs/OperationsCommittee.html)
 
-## Highlights 
+## Highlights
 
 ### OBO Dashboard updated
 
@@ -29,12 +29,11 @@ You can view the most recent dashboard update (last updated 2025-05-29) here: [O
 
 ---
 
-#### Decisions Made and Working Group Updates
+### Decisions Made and Working Group Updates
 
 This period saw continued progress by the Editorial and Technical Working Groups, alongside several key decisions by the OBO Operations Committee. The Editorial Working Group (EWG) received formal approval and publication of [Principle 19](https://obofoundry.org/principles/fp-019-term-stability.html) (Stability of Term Meaning), which sets forth best practices for versioning and maintaining consistent ontology releases. The EWG also improved  [Principle 12](https://obofoundry.org/principles/fp-012-naming-conventions.html) (Naming Conventions) by clarifying when term corrections can occur without triggering obsoletion, promoting more consistent terminology across OBO ontologies. 
 
-
-#### Ongoing Discussions
+### Ongoing Discussions
 
 The Editorial Working Group is currently revising [Principle 7](https://obofoundry.org/principles/fp-007-relations.html) (Relations), which covers the placement of relationship terms across domain-specific ontologies and the Relation Ontology (RO). Committee members are debating criteria such as whether both the domain and range of a relation must exist in the same ontology, and whether logical invertibility is a practical requirement. The goal is to provide clearer guidance for ontology developers while maintaining flexibility across disciplines. A draft revision is in progress, but no consensus has yet been reached. [Join the discussion](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/966)
 
@@ -179,7 +178,7 @@ Figure from Shawn Zheng Kai Tan, Aleix Puig-Barbe, Damien Goutte-Gattat, Carolin
 
 ---
 
-## Spotlight on OBO Principles 
+## Spotlight on OBO Principles
 
 ### [Principle 19: Stability of Term Meaning](https://obofoundry.org/principles/fp-019-term-stability.html)
 
@@ -243,7 +242,7 @@ This version of the ODK adds major new capabilities, including:
 
 **Feedback and bug reports**: [https://github.com/INCATools/ontology-development-kit/issues](https://github.com/INCATools/ontology-development-kit/issues)
 
-### curies v0.10.13: 
+### curies v0.10.13:
 
 curies is a python based package for managing IRI-curie conversions. An extension to the curies.Converter class that can apply pre-and post-process rules to CURIEs and URIs was added in v0.10.13. For more information about Curies see [Newsletter issue 2](https://obofoundry.org/newsletter/2023/09/15/second-issue-newsletter.html). A tutorial is available at [https://curies.readthedocs.io/en/latest/preprocessing.html](https://curies.readthedocs.io/en/latest/preprocessing.html) 
 
@@ -278,7 +277,7 @@ Feedback and bug reports:[ https://github.com/biopragmatics/curies/issues](https
 
 ---
 
-## Spotlight on LinkML 
+## Spotlight on LinkML
 
 ### Bridging the Gap for Semantic Data Modeling
 
@@ -303,7 +302,7 @@ Learn more and get started:
 
 The OBO Foundry community participated in the Biocuration 2025 conference[ at the Stowers Research Institute in Kansas City, Missouri](https://monarchinit.medium.com/monarch-representation-at-the-biocuration-conference-2025-bff89193aa72). 
 
-#### Collaborative Biocuration and Training** 
+#### Collaborative Biocuration and Training**
 
 **A workshop on collaborative biocuration, co-led by Sabrina Toro (Monarch Initiative) and Nicole Vasilevsky (Critical Path Institute), presented approaches from the OBO Foundry to strengthen and support collaborative work and OBO Academy for providing accessible, version-controlled training resources. The session included case studies from PomBase, the Gene Ontology Consortium, and WormBase’s AI-supported annotation. Key topics were transparency, participation, and quality control in curation. Participants suggested developing a centralized training hub, broader certification options, and increased community exchange.
 
