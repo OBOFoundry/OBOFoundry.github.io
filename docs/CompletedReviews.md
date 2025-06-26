@@ -3,7 +3,7 @@ layout: doc
 title: Completed Reviews
 ---
 
-This page lists OBO Foundry ontologies that have gone through the current [review process](http://obofoundry.org/docs/ReviewProcessGuidelines). OBO Foundry ontologies added in 2010 were reviewed using a similar but non-identical process.
+This page lists OBO Foundry ontologies that have gone through the current [review process](http://obofoundry.org/docs/OntologiesReviewWorkflow). OBO Foundry ontologies added in 2010 were reviewed using a similar but non-identical process.
 
 <style type="text/css">
   .tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
