@@ -29,7 +29,7 @@ Note: CC-BY licenses allow others to distribute, remix, tweak, and build upon th
 
 3. If an individual term is reused without change to the definition, the original term IRI should be used. If the definition of a term (either text or logical) is changed, the original term IRI should not be reused. Suggestions for changes or improvements to term definitions should be submitted to the appropriate ontology issue tracker.
 
-4. Regardless of which license an ontology uses, we strongly request and recommend that any reuse of an ontology attributes the source in accordance with scientific norms and the [OBO Citation and Attribution Policy](http://www.obofoundry.org/docs/Citation).
+4. Regardless of which license an ontology uses, we strongly request and recommend that any reuse of an ontology attributes the source in accordance with scientific norms and the [OBO Citation and Attribution Policy](https://obofoundry.org/citation/Citation.html).
 
 ## Implementation
 
