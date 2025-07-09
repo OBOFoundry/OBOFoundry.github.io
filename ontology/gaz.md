@@ -26,5 +26,5 @@ products:
   description: A country specific subset of the GAZ.
 repository: https://github.com/EnvironmentOntology/gaz
 tracker: https://github.com/EnvironmentOntology/gaz/issues
-activity_status: inactive
+activity_status: active
 ---
