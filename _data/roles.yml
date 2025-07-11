@@ -179,7 +179,10 @@
 - name: OMO metadata coordinator
   open: false
   description: |
-    OMO is the OBO Metadata Ontology. This description needs to be filled in.
+    Responsible for coordinating changes to the OBO Metadata Ontology (OMO). 
+    OMO reflects OBO consensus on term and ontology metadata in OBO ontologies.
+    Changes need to be carefully reviewed and votes called if needed. No PR should be merged
+    in OMO without the consent of the OMO metadata coordinator.
   responsibilities:
   people:
     - name: Jie Zheng
