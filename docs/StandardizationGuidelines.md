@@ -44,4 +44,9 @@ Not yet classified:
 - METADATA Versioning term identifiers [#1347](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1347)
 - METADATA Ontology merging [#1548](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1548)
 - Proposals here: [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482) (comment)
+  -   Every ontology SHOULD provide a base
+  -   Every ontology primary release MUST be consistent and coherent
+  -   Every ontology MUST be coherent when classified together with RO, BFO, and COB
+  -   Every ontology SHOULD be coherent when classified together with all its base-dependencies
+
 - METADATA Modeling metaclasses [#2454](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2454)
