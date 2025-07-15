@@ -5,6 +5,7 @@ title: Ontology Development Guidelines
 
 ### Technical
 
+- Ontology merging metadata [#1548](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1548)
 
 ### Content
 
