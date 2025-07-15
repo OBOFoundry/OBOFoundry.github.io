@@ -41,5 +41,4 @@ title: Ontology Standardization Guidelines
 
 Not yet classified:
 
-- METADATA Ontology merging [#1548](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1548)
 - METADATA Modeling metaclasses [#2454](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2454)
