@@ -1,35 +1,3 @@
-- name: Code of Conduct Committee Member
-  open: true
-  description: |
-    The Code of Conduct (COC) Committee member is responsible for ensuring the OBO Code of Conduct is upheld.
-    They are, in particular, available for anyone in the community to be contacted individually or as a group.
-  commitment: 0-6 hours per month
-  requirements:
-    - being able to deal with sensitive interpersonal issues discreetly
-    - being willing to mediate between conflicting viewpoints
-    - being highly available when issues arise
-    - fully embracing the OBO Code of Conduct
-  responsibilities:
-    - Being available to receive COC-related issues via email from anyone in the community, and dealing with them discreetly (not sharing any part of the communication without permission)
-    - Developing strategies for dealing with COC-related issues according to established COC protocols
-    - Ensuring that the OBO Code of Conduct is upheld around matters directly related to the OBO Foundry
-    - (Other responsibilities are yet to be defined for this role)
-  people:
-    - github: addiehl
-      name: Alexander Diehl
-      orcid: 0000-0001-9990-8331
-      status: support
-      start: "2023-06-16"
-    - github: lschriml
-      name: Lynn Schriml
-      orcid: 0000-0001-8910-9851
-      status: support
-      start: "2023-06-16"
-    - github: matentzn
-      name: Nico Matentzoglu
-      orcid: 0000-0002-7356-1779
-      status: support
-      start: "2023-06-16"
 - name: Registry Metadata Steward
   open: false
   commitment: 2-6 hours per month
@@ -37,9 +5,9 @@
     - love for metadata
     - basic python
     - community mindset
-  description: You are responsible for shepherding our registry
-    metadata according to our principles and SOPs, merge changes and generally
-    protect and guard them. This involves also facilitating the implementation of QC
+  description: Responsible for shepherding our registry
+    metadata according to our principles and SOPs, merging changes and generally
+    protecting and guarding them. This also involves facilitating the implementation of QC
     checks.
   sop: /roles/metadata-steward
   responsibilities:
@@ -69,11 +37,11 @@
     - Community mindset
     - Stakeholder support
   description:
-    You will be responsible for registering new ontologies at the OBO dashboard and helping their
-    owners pass them.
+    Responsible for assinging reviewers to new ontology requests, registering new ontologies in the OBO dashboard and helping their
+    owners pass all the dashboard checks. 
   sop: /roles/nor-manager
   responsibilities:
-    - Checking OBOFoundry.github.io at least weekly for NOR related issues and pull requests.
+    - Checking OBOFoundry.github.io at least weekly for NOR-related issues and pull requests.
     - Managing the NOR Process (https://obofoundry.org/docs/SOP.html#NOR)
     - Assisting NOR submitters to understanding the NOR process and passing the NOR Dashboard
     - Assigning and reminding OBO Operations Committee Members as reviewers
@@ -97,20 +65,20 @@
     - Working knowledge of python
     - "Nice to have: knowledge of jekyll and liquid (like jinja)"
     - Should have technical background
-  description: You will be responsible for gatekeeping community changes to the website.
+  description: Responsible for gatekeeping community changes to the website.
   sop: /roles/website-coordinator
   responsibilities:
   people:
-    - github: erik-whiting
-      name: Erik Whiting
-      orcid: 0000-0003-1022-5281
-      status: lead
-      start: 2022-12
     - github: matentzn
       name: Nico Matentzoglu
       orcid: 0000-0002-7356-1779
       status: support
       start: "0000-00-00"
+    - github: jsstevenson
+      name: James Stevenson
+      orcid: 0000-0002-2568-6163
+      status: lead
+      start: "2025-00-00"
 - name: OBO Slack Community Manager
   open: false
   commitment: 1-3 hours per month
@@ -118,9 +86,9 @@
     - love for communication
     - passion for community building
     - community mindset
-  description: You are responsible for managing the OBO Slack community. This role includes issues like welcoming new members, deleting old ones, sending invites and directing people to the right channels.
+  description: Responsible for managing the OBO Slack community, including tasks like welcoming new members, deleting old ones, sending invites and directing people to the right channels.
   responsibilities:
-    - Adding people to the OBO slack space on request, using the 'invite members' feature
+    - Adding people to the OBO Slack space on request, using the 'invite members' feature
     - "Welcoming new members once per week in the #general channel"
     - Directing people to the appropriate channels to use for an inquiry
     - Inactivating accounts on request
@@ -135,14 +103,14 @@
   commitment: 2-4 hours per month
   requirements:
     - Should have a basic journalistic instinct, compiling the most relevant discussion points, decisions and issues for the wider community
-  description: You will be responsible for managing, compiling and disseminating the OBO Newsletter. Instructions for archiving the newsletter on the OBO Foundry's GitHub Repository can be found [here](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/CONTRIBUTING.md#newsletter).
+  description: Responsible for managing, compiling and disseminating the OBO Newsletter. Instructions for archiving the newsletter on the OBO Foundry's GitHub Repository can be found [here](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/CONTRIBUTING.md#newsletter).
   responsibilities:
     - Manage a Google doc with the current and previous newsletter drafts based on the newsletter skeleton
     - Add GitHub issues and/or pull requests tagged with "newsletter" to the newsletter, with one or two sentences of summary
     - Summarise key developments (ongoing and past) to the community, based on reports of the working groups to the Operations Committee meeting
     - Summarise key decisions from the OBO operations calls
     - Proactively finalise the newsletter draft for the last meeting of March, June, September and December, and requesting feedback
-    - After 10 days of requesting feedback, send the newsletter to obo-discuss mailing list
+    - Once the newsletter content has been approved, send the newsletter to the obo-discuss mailing list
   people:
     - github: LK112019
       name: Leila Kiani
@@ -154,13 +122,14 @@
   commitment: 2-10 hours per month
   requirements:
     - Basic knowledge of dashboard
-    - Social skills are a nice to have
+    - Social skills are nice to have
     - Infinite patience also helpful
-  description: Updating the OBO Dashboard once per month.
-    Fixing horrible bugs in OBO-Dashboard if they come up (should be rare).
-    Working with OBO Ops to find people for extending dashboard when new principles come along.
+  description: Keep OBO Dashboard up to date
   sop: /roles/dashboard-manager
   responsibilities:
+    - Updating the OBO Dashboard once per month.
+    - Fixing horrible bugs in OBO-Dashboard if they come up (should be rare).
+    - Working with OBO Ops to find people for extending dashboard when new principles come along.
   people:
     - github: anitacaron
       name: Anita Caron
@@ -176,16 +145,15 @@
   open: false
   commitment: 2 hours per month
   requirements:
-    - Strong python skills
-    - Some level of pro-activity helpful
-    - Experience with ODK/docker
-  description:
-    Preparing a short report about all general developments in OBO Technical
-    Working Group (TWG) for the OBO Operations team meeting. You will go
-    through pull requests and emails and summarize in bullet points and report
-    to OBO Ops.
+    - No programming ability needed, but should be able to follow technical discussions
+    - Willingness to attend TWG meetings and collect notes
+  description: Technical Working Group (TWG) representative who serves as a liaison to the OBO Foundry Operations Committee (OFOC).
   sop: /roles/twg-ops-liaison
   responsibilities:
+    - Report TWG progress at OFOC calls
+    - Serve as a first point of contact for OFOC and OBO Community for technical Q/A
+    - Mark relevant GitHub issues for discussion during OFOC call
+    - Summarise TWG activities to OBO Newsletter steward
   people:
     - github: rays22
       name: Ray Stefancsik
@@ -211,8 +179,10 @@
 - name: OMO metadata coordinator
   open: false
   description: |
-    You will be responsible for registering new ontologies at the OBO dashboard and helping their
-    owners pass them.
+    Responsible for coordinating changes to the OBO Metadata Ontology (OMO). 
+    OMO reflects OBO consensus on term and ontology metadata in OBO ontologies.
+    Changes need to be carefully reviewed and votes called if needed. No PR should be merged
+    in OMO without the consent of the OMO metadata coordinator.
   responsibilities:
   people:
     - name: Jie Zheng
@@ -228,8 +198,8 @@
 - name: OBO Tools coordinator
   open: false
   description: |
-    Coordinating and hosting OBO Tools workshops at meetings and conferences such as ICBO, and
-     making sure tools align with OBO principles and support them, etc.)
+    Coordinate and host OBO Tools workshops at meetings and conferences such as ICBO, 
+     make sure tools align with OBO principles and support them, etc.
   responsibilities:
   people:
     - name: James A. Overton
@@ -240,7 +210,7 @@
 - name: OBO Academy
   open: false
   description: |
-    Maintaining https://oboacademy.github.io/obook/ and organising OBO Tutorials.
+    Maintain https://oboacademy.github.io/obook/; organize and advertise OBO Tutorials.
   responsibilities:
   people:
     - name: Nicole Vasilevsky
@@ -258,22 +228,12 @@
       orcid: 0000-0001-5139-5557
       status: support
       start: 2021-06
-    - name: Rebecca Jackson
-      github: beckyjackson
-      orcid: 0000-0003-4871-5569
-      status: support
-      start: 2021-06
-    - name: Shawn Tan
-      github: shawntanzk
-      orcid: 0000-0001-7258-9596
-      status: support
-      start: "2022"
 - name: OBO Issue Tracker Shepherd
   open: false
   description: |
-    Assigning incoming issues at https://github.com/OBOFoundry/OBOFoundry.github.io, tagging them, chasing them
+    Keep an eye on issues in the GitHub issue tracker and help keep them prioritized appropriately
   responsibilities:
-    - "Tagging metadata related issues with 'attn: Technical Working WG' and 'metadata'."
+    - Monitor issues at https://github.com/OBOFoundry/OBOFoundry.github.io, tag them, follow up on them as needed
   people:
     - name: Nomi Harris
       github: nlharris
@@ -283,16 +243,47 @@
 - name: OBO Google Service Manager
   open: true
   description: |
-    Managing the OBO Google Drives, Calendars, Mailing list and Meeting Minutes
+    Manage the OBO Google Drives, calendars, mailing list (Google Group) and meeting minutes
   responsibilities:
     - Adding and removing people from OBO Mailing Lists
     - Adding new OBO Ops members to Google Drive and removing alumni
     - Adding important OBO events to the OBO calendar and sending out invites
     - Managing public and internal OBO Google Drives
-    - Reporting adding members to any OBO Google drive with Write or Admin rights to the OBO Operations Committee
   people:
     - github: nlharris
       name: Nomi Harris
       orcid: 0000-0001-6315-3707
       status: lead
       start: 2019-01
+- name: Code of Conduct Committee Member
+  open: true
+  description: |
+    Code of Conduct (COC) Committee members are responsible for ensuring the OBO Code of Conduct is upheld.
+    They are, in particular, available for anyone in the community to be contacted individually or as a group.
+  commitment: 0-6 hours per month
+  requirements:
+    - being able to deal with sensitive interpersonal issues discreetly
+    - being willing to mediate between conflicting viewpoints
+    - being highly available when issues arise
+    - fully embracing the OBO Code of Conduct
+  responsibilities:
+    - Being available to receive COC-related issues via email from anyone in the community, and dealing with them discreetly (not sharing any part of the communication without permission)
+    - Developing strategies for dealing with COC-related issues according to established COC protocols
+    - Ensuring that the OBO Code of Conduct is upheld around matters directly related to the OBO Foundry
+    - (Other responsibilities are yet to be defined for this role)
+  people:
+    - github: addiehl
+      name: Alexander Diehl
+      orcid: 0000-0001-9990-8331
+      status: support
+      start: "2023-06-16"
+    - github: lschriml
+      name: Lynn Schriml
+      orcid: 0000-0001-8910-9851
+      status: support
+      start: "2023-06-16"
+    - github: matentzn
+      name: Nico Matentzoglu
+      orcid: 0000-0002-7356-1779
+      status: support
+      start: "2023-06-16"
