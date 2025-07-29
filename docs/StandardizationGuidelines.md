@@ -5,8 +5,8 @@ title: Ontology Standardization Guidelines
 
 ### Technical
 
-- (ACCEPTED? Should this be MUST?) Every ontology MUST be coherent when classified together with RO, BFO, and COB
-- (ACCEPTED? Need clarification on what exactly 'base dependency' is) Every ontology SHOULD be coherent when classified together with all its base-dependencies
+- (ACCEPTED? Should this be MUST?) Every ontology MUST be coherent when classified together with RO, BFO, and COB (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
+- (ACCEPTED? Need clarification on what exactly 'base dependency' is) Every ontology SHOULD be coherent when classified together with all its base-dependencies (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
 - Standardizing how imported ontologies are noted [#424](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/424)
 - Ontology metadata requirements [#1365](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1365)
 - Ontology root terms annotation [#2149](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2149)
@@ -24,8 +24,8 @@ title: Ontology Standardization Guidelines
 
 ### Releases
 
-- (ACCEPTED? Also check what should be the 'official' release. Reasoned?) Every ontology SHOULD provide a base
-- (ACCEPTED?) Every ontology primary release MUST be consistent and coherent
+- (ACCEPTED? Also check what should be the 'official' release. Reasoned?) Every ontology SHOULD provide a base (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
+- (ACCEPTED?) Every ontology primary release MUST be consistent and coherent (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
 
 ### Social
 
