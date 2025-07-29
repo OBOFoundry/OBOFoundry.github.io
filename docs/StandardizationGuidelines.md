@@ -5,8 +5,8 @@ title: Ontology Standardization Guidelines
 
 ### Technical
 
-- Every ontology MUST be coherent when classified together with RO, BFO, and COB
-- Every ontology SHOULD be coherent when classified together with all its base-dependencies
+- (ACCEPTED? Should this be MUST?) Every ontology MUST be coherent when classified together with RO, BFO, and COB
+- (ACCEPTED? Need clarification on what exactly 'base dependency' is) Every ontology SHOULD be coherent when classified together with all its base-dependencies
 - Standardizing how imported ontologies are noted [#424](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/424)
 - Ontology metadata requirements [#1365](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1365)
 - Ontology root terms annotation [#2149](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2149)
@@ -17,15 +17,15 @@ title: Ontology Standardization Guidelines
 ### Content
 
 - Discourage BFO shadow classes [#1539](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1539)
-- Ignoring NCIT (no issue, but has come up that NCIT is not well-formed enough to be a concern re: things like overlap)
+- (ACCEPTED?) Ignoring NCIT (no issue, but has come up that NCIT is not well-formed enough to be a concern re: things like overlap)
 - Term adoption [#2330](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2330) and [#2324](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2324)
 - Standardized xref prefixes in ontologies [#525](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/525)
 - Referring to taxa not in NCBITaxon [#434](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/434)
 
 ### Releases
 
-- Every ontology SHOULD provide a base
-- Every ontology primary release MUST be consistent and coherent
+- (ACCEPTED? Also check what should be the 'official' release. Reasoned?) Every ontology SHOULD provide a base
+- (ACCEPTED?) Every ontology primary release MUST be consistent and coherent
 
 ### Social
 
