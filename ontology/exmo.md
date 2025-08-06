@@ -1,3 +1,5 @@
+---
+layout: ontology_detail
 id: exmo
 mirror_from: https://raw.githubusercontent.com/Exercise-Medicine-Ontology/EXMO/master/exmo.owl
 title: "Exercise Medicine Ontology"
@@ -19,3 +21,5 @@ preferredPrefix: EXMO
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/39695140
   title: 'Core reference ontology for individualized exercise prescription'
+---
+
