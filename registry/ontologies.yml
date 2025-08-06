@@ -2047,6 +2047,34 @@ ontologies:
   tracker: https://github.com/SCAI-BIO/EpilepsyOntology/issues
 - activity_status: active
   contact:
+    email: xyz19940216@163.com
+    github: DarkKnight0-0
+    label: Xingyun Liu
+    orcid: 0000-0002-9295-2767
+  description: A core reference ontology built upon BFO about exercise medicine and
+    it contains the related terms for healthy people, people with chronic conditions
+    and people living with diability to exercise.
+  domain: health
+  homepage: https://github.com/Exercise-Medicine-Ontology/EXMO
+  id: exmo
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/exmo.owl
+  preferredPrefix: EXMO
+  products:
+  - id: exmo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/exmo.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/39695140
+    title: Core reference ontology for individualized exercise prescription
+  repository: https://github.com/Exercise-Medicine-Ontology/EXMO
+  title: Exercise Medicine Ontology
+  tracker: https://github.com/Exercise-Medicine-Ontology/EXMO/issues
+- activity_status: active
+  contact:
     email: annethessen@gmail.com
     github: diatomsRcool
     label: Anne Thessen
