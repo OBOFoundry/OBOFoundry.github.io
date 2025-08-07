@@ -1978,14 +1978,12 @@ _:b91   <http://www.w3.org/2000/01/rdf-schema#label>  "Pier Luigi Buttigieg" ;
         <http://purl.org/dc/elements/1.1/title>  "NCI Thesaurus OBO Edition" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
-        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/ncit-obo-org/ncit-obo-edition/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ncit.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b99 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ncit.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ncit.obo> ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ncit/ncit-plus.owl> ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ncit/neoplasm-core.owl> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/NCI-Thesaurus/thesaurus-obo-edition> .
+        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/ncit-obo-org/ncit-obo-edition> .
 
 _:b93   <http://www.w3.org/2000/01/rdf-schema#label>  "Anne Thessen" ;
         <http://xmlns.com/foaf/0.1/mbox>  "annethessen@gmail.com" .
@@ -3885,16 +3883,6 @@ _:b99   <http://www.w3.org/2000/01/rdf-schema#label>  "None" ;
 <http://purl.obolibrary.org/obo/ncit.obo>
         <http://purl.org/dc/elements/1.1/title>  "NCIt OBO Edition OBO format" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ncit.obo" .
-
-<http://purl.obolibrary.org/obo/ncit/ncit-plus.owl>
-        <http://purl.org/dc/elements/1.1/description>  "This version replaces NCIt terms with direct references to terms from other domain-specific OBO Library ontologies (e.g. cell types, cellular components, anatomy), supporting cross-ontology reasoning. The current release incorporates CL (cell types) and Uberon (anatomy)." ;
-        <http://purl.org/dc/elements/1.1/title>  "NCIt Plus" ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ncit/ncit-plus.owl" .
-
-<http://purl.obolibrary.org/obo/ncit/neoplasm-core.owl>
-        <http://purl.org/dc/elements/1.1/description>  "This is a subset extracted from NCIt Plus, based on the [NCIt Neoplasm Core value set](https://evs.nci.nih.gov/ftp1/NCI_Thesaurus/Neoplasm/About_Core.html) as a starting point." ;
-        <http://purl.org/dc/elements/1.1/title>  "NCIt Plus Neoplasm Core" ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ncit/neoplasm-core.owl" .
 
 <http://purl.obolibrary.org/obo/ncro>
         <http://identifiers.org/preferredPrefix>  "NCRO" ;
