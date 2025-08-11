@@ -13,6 +13,7 @@ title: Ontology Standardization Guidelines
 - Language tags [#479](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/479)
 - Use standard synonym types [#2450](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2450)
 - Modeling metaclasses [#2454](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2454)
+- The target for 'term tracker item' ([IAO:0000233](http://purl.obolibrary.org/obo/IAO_0000233)) should solely be an IRI, without additional text or comment  [#175](https://github.com/information-artifact-ontology/ontology-metadata/issues/175)
 
 ### Content
 
