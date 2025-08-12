@@ -15,7 +15,6 @@ title: Ontology Standardization Guidelines
 - Language tags [#479](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/479)
 - Use standard synonym types [#2450](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2450)
 - Modeling metaclasses [#2454](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2454)
-- The target for 'term tracker item' ([IAO:0000233](http://purl.obolibrary.org/obo/IAO_0000233)) should solely be an IRI, without additional text or comment  [#175](https://github.com/information-artifact-ontology/ontology-metadata/issues/175)
 
 ### Content
 
@@ -43,4 +42,7 @@ title: Ontology Standardization Guidelines
 - Short ontology descriptions [#1968](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1968)
 - Documentation for license [#1840](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1840)
 - Exemplar classes [#899](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/899)
-- Linking term to discussion on tracker [#1097](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1097)
+- Terms SHOULD be linked to any pertinent discussion(s) on an issue tracker [#1097](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1097)
+  - The appropriate annotation property for this link is 'term tracker item' ([IAO:0000233](http://purl.obolibrary.org/obo/IAO_0000233))
+  - The target for 'term tracker item' SHOULD be solely an IRI, without additional text or comment (from [#175](https://github.com/information-artifact-ontology/ontology-metadata/issues/175))
+
