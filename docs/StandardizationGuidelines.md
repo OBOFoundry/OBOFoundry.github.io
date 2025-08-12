@@ -30,7 +30,7 @@ title: Ontology Standardization Guidelines
   - LIST OTHERS HERE; Also check what should be the 'official' or 'primary' release; that is, the one indicated by ONT.owl 
 - (ACCEPTED?) Every ontology SHOULD provide a 'base' release (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
 - (ACCEPTED?) Every ontology primary release (an OWL file) MUST be **logically consistent** (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
-  - This means there MUST NOT be contradictory statements revealed by reasoning
+  - This means (a) there MUST NOT be contradictory statements revealed by reasoning; (b) there MUST NOT be any unsatisfiable classes; and (c) there MUST NOT be any circular definitions.
 
 ### Social
 
