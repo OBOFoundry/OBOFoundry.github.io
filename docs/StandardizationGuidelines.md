@@ -5,6 +5,8 @@ title: Ontology Standardization Guidelines
 
 ### Technical
 
+- (ACCEPTED?) Every ontology primary release (an OWL file) MUST be **logically consistent** (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
+  - This means (a) there MUST NOT be contradictory statements revealed by reasoning; (b) there MUST NOT be any unsatisfiable classes; and (c) there MUST NOT be any circular definitions.
 - (ACCEPTED? Should this be MUST?) Every ontology MUST be coherent when classified together with RO, BFO, and COB (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
 - (ACCEPTED? Need clarification on what exactly 'base dependency' is) Every ontology SHOULD be coherent when classified together with all its base-dependencies (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
 - Standardizing how imported ontologies are noted [#424](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/424)
@@ -30,8 +32,6 @@ title: Ontology Standardization Guidelines
   - **full** (REQUIRED; denoted by PURL ending with ONT-full.owl ): Content is as for **base** except that all referenced external terms are present (that is, imports are merged into the **full** release).
   - *other release artefacts* (OPTIONAL; denoted by PURL ending with ONT-<artefact_type>.owl): These include **non-classified**, **simple**, **basic**, and **simple-non-classified**. See the Release Artefacts link above for details on these.
 - (ACCEPTED?) Every ontology SHOULD provide a 'base' release (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
-- (ACCEPTED?) Every ontology primary release (an OWL file) MUST be **logically consistent** (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
-  - This means (a) there MUST NOT be contradictory statements revealed by reasoning; (b) there MUST NOT be any unsatisfiable classes; and (c) there MUST NOT be any circular definitions.
 
 ### Social
 
