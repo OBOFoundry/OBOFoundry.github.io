@@ -25,11 +25,12 @@ title: Ontology Standardization Guidelines
 
 ### Releases
 
-- (ACCEPTED? Also check what should be the 'official' release. Reasoned?) Every ontology SHOULD provide a base (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
 - In addition to a set of release standards in terms of format (see [Principle 2](https://obofoundry.org/principles/fp-002-format.html)), the following are some standards in terms of content:
-  - **Base** (denoted by ?): Content includes only terms that are owned by the ontology, which include (a) terms using that ontology's prefix; and (b) any terms with a different prefix that are now maintained by that ontology. It does not contain any imports. It does, however, retain references to external ontologies within axioms as needed for definitions and reasoning. Such references, when displayed in Protege, will appear as identifiers only; that is, without labels. Finally, the base will have had reasoning already applied. QUESTION: WILL THERE BE A SPECIFIC REASONER?
-
-- (ACCEPTED?) Every ontology primary release MUST be consistent and coherent (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
+  - **Base** (denoted by ?): Content includes only terms that are owned by the ontology, which include (a) terms using that ontology's prefix; and (b) any terms with a different prefix that are now maintained by that ontology. It does not contain any imports. It does, however, retain references to external ontologies within axioms as needed for definitions and reasoning. Such references, when displayed in Protege, will appear as identifiers only; that is, without labels. Finally, the base will have had reasoning already applied. QUESTION: WILL THIS APPLY TO A SPECIFIC REASONER?
+  - LIST OTHERS HERE; Also check what should be the 'official' or 'primary' release; that is, the one indicated by ONT.owl 
+- (ACCEPTED?) Every ontology SHOULD provide a 'base' release (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
+- (ACCEPTED?) Every ontology primary release (an OWL file) MUST be **logically consistent** (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
+  - This means there MUST NOT be contradictory statements revealed by reasoning
 
 ### Social
 
