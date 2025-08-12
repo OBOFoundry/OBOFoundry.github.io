@@ -426,14 +426,13 @@ _:b3    <http://www.w3.org/2000/01/rdf-schema#label>  "Marie-Angélique Laporte"
 
 <http://purl.obolibrary.org/obo/caro>
         <http://identifiers.org/preferredPrefix>  "CARO" ;
-        <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
+        <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://obofoundry.github.io/vocabulary/has_build_information>  _:b25 ;
         <http://purl.org/dc/elements/1.1/description>  "An upper level ontology to facilitate interoperability between existing anatomy ontologies for different species" ;
         <http://purl.org/dc/elements/1.1/title>  "Common Anatomy Reference Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/caro/issues" ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/caro.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b26 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/caro.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/caro/> .
@@ -730,15 +729,6 @@ _:b38   <http://www.w3.org/2000/01/rdf-schema#label>  "Christian-Alexander Dudek
 
 <http://purl.obolibrary.org/obo/bto.json>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/bto.json" .
-
-_:b25   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
-        <http://obofoundry.github.io/vocabulary/source_url>  "http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/caro/caro.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-
-_:b26   <http://www.w3.org/2000/01/rdf-schema#label>  "Melissa Haendel" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "haendel@ohsu.edu" .
-
-<http://purl.obolibrary.org/obo/caro.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/caro.owl" .
 
 <http://purl.obolibrary.org/obo/cdao>
         <http://identifiers.org/preferredPrefix>  "CDAO" ;
@@ -7043,6 +7033,15 @@ _:b314  <http://www.w3.org/2000/01/rdf-schema#label>  "Thorsten Henrich" ;
 
 _:b315  <http://www.w3.org/2000/01/rdf-schema#label>  "Vivian Lee" ;
         <http://xmlns.com/foaf/0.1/mbox>  "vlee@ebi.ac.uk" .
+
+_:b25   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
+        <http://obofoundry.github.io/vocabulary/source_url>  "http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/caro/caro.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+_:b26   <http://www.w3.org/2000/01/rdf-schema#label>  "Melissa Haendel" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "haendel@ohsu.edu" .
+
+<http://purl.obolibrary.org/obo/caro.owl>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/caro.owl" .
 
 <http://purl.obolibrary.org/obo/cmf>
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
