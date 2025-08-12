@@ -490,34 +490,6 @@ ontologies:
   tracker: https://github.com/BRENDA-Enzymes/BTO/issues
 - activity_status: active
   build:
-    method: obo2owl
-    notes: moving to owl soon
-    source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/caro/caro.obo
-  contact:
-    email: haendel@ohsu.edu
-    github: mellybelly
-    label: Melissa Haendel
-    orcid: 0000-0001-9114-8737
-  description: An upper level ontology to facilitate interoperability between existing
-    anatomy ontologies for different species
-  domain: anatomy and development
-  homepage: https://github.com/obophenotype/caro/
-  id: caro
-  layout: ontology_detail
-  license:
-    label: CC BY 4.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/4.0/
-  ontology_purl: http://purl.obolibrary.org/obo/caro.owl
-  preferredPrefix: CARO
-  products:
-  - id: caro.owl
-    ontology_purl: http://purl.obolibrary.org/obo/caro.owl
-  repository: https://github.com/obophenotype/caro
-  title: Common Anatomy Reference Ontology
-  tracker: https://github.com/obophenotype/caro/issues
-- activity_status: active
-  build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/cdao.owl
   contact:
@@ -8912,6 +8884,34 @@ ontologies:
   layout: ontology_detail
   replaced_by: molecular_function
   title: Gene Regulation Ontology
+- activity_status: inactive
+  build:
+    method: obo2owl
+    notes: moving to owl soon
+    source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/caro/caro.obo
+  contact:
+    email: haendel@ohsu.edu
+    github: mellybelly
+    label: Melissa Haendel
+    orcid: 0000-0001-9114-8737
+  description: An upper level ontology to facilitate interoperability between existing
+    anatomy ontologies for different species
+  domain: anatomy and development
+  homepage: https://github.com/obophenotype/caro/
+  id: caro
+  is_obsolete: true
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  preferredPrefix: CARO
+  products:
+  - id: caro.owl
+    ontology_purl: http://purl.obolibrary.org/obo/caro.owl
+  repository: https://github.com/obophenotype/caro
+  title: Common Anatomy Reference Ontology
+  tracker: https://github.com/obophenotype/caro/issues
 - activity_status: inactive
   contact:
     email: engelsta@ohsu.edu
