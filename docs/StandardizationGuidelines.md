@@ -45,4 +45,8 @@ title: Ontology Standardization Guidelines
 - Terms SHOULD be linked to any pertinent discussion(s) on an issue tracker [#1097](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1097)
   - The appropriate annotation property for this link is 'term tracker item' ([IAO:0000233](http://purl.obolibrary.org/obo/IAO_0000233))
   - The target for 'term tracker item' SHOULD be solely an IRI, without additional text or comment (from [#175](https://github.com/information-artifact-ontology/ontology-metadata/issues/175))
+ 
+  - NEW WORDING PROPOSAL:
+  - If there is an issue tracker item for a particular term or set of terms (for example, a new term request or a term discussion), then the relevant terms SHOULD be linked to the appropriate tracker issue. Instead of using a free text comment, the link between the term and the tracker item SHOULD be the annotation property 'term tracker item' (IAO:0000233). The range for this property is an IRI,
+without additional text or comment, that MUST point to an issue tracker item for the annotated term.
 
