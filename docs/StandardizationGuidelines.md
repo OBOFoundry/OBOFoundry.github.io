@@ -26,11 +26,11 @@ title: Ontology Standardization Guidelines
 
 ### Releases
 
-- In addition to a set of release standards in terms of format (see [Principle 2](https://obofoundry.org/principles/fp-002-format.html)), the following are the standards regarding imports, axiomization, and reasoning (see [Release Artefacts](https://oboacademy.github.io/obook/reference/release-artefacts/) for more detailed information):
+- DONE In addition to a set of standards pertaining to release format (see [Principle 2](https://obofoundry.org/principles/fp-002-format.html)), the following are the standards pertaining to release types, each of which differ with respect to imports, axiomization, and reasoning (see [Release Artefacts](https://oboacademy.github.io/obook/reference/release-artefacts/) for more detailed information):
   - **base** (REQUIRED; denoted by PURL ending with ONT.owl): Content includes only terms that are owned by the ontology, which include (a) terms using that ontology's prefix; and (b) any terms with a different prefix that are now maintained by that ontology. It does not contain any imports. It does, however, retain references to external ontologies within axioms as needed for definitions and reasoning. Such references, when displayed in Protege, will appear as identifiers only; that is, without labels. Finally, the base will have had reasoning already applied and will be stripped of redundant axioms. QUESTION: WILL THIS APPLY TO A SPECIFIC REASONER?
   - **full** (REQUIRED; denoted by PURL ending with ONT-full.owl ): Content is as for **base** except that all referenced external terms (that is,  are present (that is, imports are merged into the **full** release).
   - *other release artefacts* (OPTIONAL; denoted by PURL ending with ONT-<artefact_type>.owl): These include **non-classified**, **simple**, **basic**, and **simple-non-classified**. See the Release Artefacts link above for details on these.
-- (ACCEPTED?) Every ontology SHOULD provide a 'base' release (from [#482](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
+  - Every ontology MUST provide a 'base' release and MUST provide a 'full' release.
 
 ### Social
 
@@ -38,7 +38,7 @@ title: Ontology Standardization Guidelines
 ### Communication
 
 - Ontology subsets documentation [#466](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/446)
-- Document how to add logo [#72](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/72)
+- for faq? Document how to add logo [#72](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/72)
 - Short ontology descriptions [#1968](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1968)
 - Documentation for license [#1840](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1840)
 - Exemplar classes [#899](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/899)
