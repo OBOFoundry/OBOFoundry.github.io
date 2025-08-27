@@ -22,6 +22,6 @@ products:
 - id: BMONT.owl
   description: Includes axioms linking to other ontologies, but no imports of those ontologies
 repository: https://github.com/SCAI-BIO/BiomarkerOntology
-tracker: https://github.com/SCAI-BIO/BiomarkerOntology/issue
+tracker: https://github.com/SCAI-BIO/BiomarkerOntology/issues
 activity_status: active
 ---
