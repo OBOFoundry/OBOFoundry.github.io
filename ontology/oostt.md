@@ -27,7 +27,7 @@ usages:
   user: https://tiptoe.apps.dbmi.cloud/tiptoe
 - description: OOSTT is used by OMRSE.
   examples:
-  - description: "academic degree"
+  - description: academic degree
     url: http://purl.obolibrary.org/obo/OOSTT_00000074
   type: owl:Ontology
   user: http://purl.obolibrary.org/obo/omrse.owl
