@@ -18,6 +18,19 @@ products:
 - id: oostt.owl
 repository: https://github.com/OOSTT/OOSTT
 tracker: https://github.com/OOSTT/OOSTT/issues
+usages:
+- description: OOSTT terms are used in the CAFE questionnaire to assess trauma centers and systems.
+  type: application
+  user: https://cafe-trauma.com/
+- description: OOSTT terms are used in the TIPTOE questionnaire to relate trauma center/system structure to patient outcomes.
+  type: application
+  user: https://tiptoe.apps.dbmi.cloud/tiptoe
+- description: OOSTT is used by OMRSE.
+  examples:
+  - description: "academic degree"
+    url: http://purl.obolibrary.org/obo/OOSTT_00000074
+  type: owl:Ontology
+  user: http://purl.obolibrary.org/obo/omrse.owl
 activity_status: active
 ---
 
