@@ -9,7 +9,7 @@ contact:
   orcid: 0000-0000-0000-0000
 description: NCI Thesaurus (NCIt)is a reference terminology that includes broad coverage of the cancer domain, including cancer related diseases, findings and abnormalities. The NCIt OBO Edition aims to increase integration of the NCIt with OBO Library ontologies. NCIt OBO Edition releases should be considered experimental.
 domain: health
-homepage: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
+homepage: https://github.com/ncit-obo-org/ncit-obo-edition
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
@@ -20,17 +20,8 @@ products:
   description: A direct transformation of the standard NCIt content using OBO-style term and ontology IRIs and annotation properties.
 - id: ncit.obo
   title: NCIt OBO Edition OBO format
-- id: ncit/ncit-plus.owl
-  title: NCIt Plus
-  description: This version replaces NCIt terms with direct references to terms from other domain-specific OBO Library ontologies (e.g. cell types, cellular components, anatomy), supporting cross-ontology reasoning. The current release incorporates CL (cell types) and Uberon (anatomy).
-  mireots_from:
-  - cl
-  - uberon
-- id: ncit/neoplasm-core.owl
-  title: NCIt Plus Neoplasm Core
-  description: This is a subset extracted from NCIt Plus, based on the [NCIt Neoplasm Core value set](https://evs.nci.nih.gov/ftp1/NCI_Thesaurus/Neoplasm/About_Core.html) as a starting point.
-repository: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
-tracker: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
+repository: https://github.com/ncit-obo-org/ncit-obo-edition
+tracker: https://github.com/ncit-obo-org/ncit-obo-edition/issues
 activity_status: active
 ---
 

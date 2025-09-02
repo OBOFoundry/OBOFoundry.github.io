@@ -473,34 +473,6 @@ ontologies:
   tracker: https://github.com/BRENDA-Enzymes/BTO/issues
 - activity_status: active
   build:
-    method: obo2owl
-    notes: moving to owl soon
-    source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/caro/caro.obo
-  contact:
-    email: haendel@ohsu.edu
-    github: mellybelly
-    label: Melissa Haendel
-    orcid: 0000-0001-9114-8737
-  description: An upper level ontology to facilitate interoperability between existing
-    anatomy ontologies for different species
-  domain: anatomy and development
-  homepage: https://github.com/obophenotype/caro/
-  id: caro
-  layout: ontology_detail
-  license:
-    label: CC BY 4.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/4.0/
-  ontology_purl: http://purl.obolibrary.org/obo/caro.owl
-  preferredPrefix: CARO
-  products:
-  - id: caro.owl
-    ontology_purl: http://purl.obolibrary.org/obo/caro.owl
-  repository: https://github.com/obophenotype/caro
-  title: Common Anatomy Reference Ontology
-  tracker: https://github.com/obophenotype/caro/issues
-- activity_status: active
-  build:
     method: owl2obo
     source_url: http://purl.obolibrary.org/obo/cdao.owl
   contact:
@@ -2045,6 +2017,34 @@ ontologies:
   - disease
   title: Epilepsy Ontology
   tracker: https://github.com/SCAI-BIO/EpilepsyOntology/issues
+- activity_status: active
+  contact:
+    email: xyz19940216@163.com
+    github: DarkKnight0-0
+    label: Xingyun Liu
+    orcid: 0000-0002-9295-2767
+  description: A core reference ontology built upon BFO about exercise medicine and
+    it contains the related terms for healthy people, people with chronic conditions
+    and people living with diability to exercise.
+  domain: health
+  homepage: https://github.com/Exercise-Medicine-Ontology/EXMO
+  id: exmo
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/exmo.owl
+  preferredPrefix: EXMO
+  products:
+  - id: exmo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/exmo.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/39695140
+    title: Core reference ontology for individualized exercise prescription
+  repository: https://github.com/Exercise-Medicine-Ontology/EXMO
+  title: Exercise Medicine Ontology
+  tracker: https://github.com/Exercise-Medicine-Ontology/EXMO/issues
 - activity_status: active
   contact:
     email: annethessen@gmail.com
@@ -4272,7 +4272,7 @@ ontologies:
     abnormalities. The NCIt OBO Edition aims to increase integration of the NCIt with
     OBO Library ontologies. NCIt OBO Edition releases should be considered experimental.
   domain: health
-  homepage: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
+  homepage: https://github.com/ncit-obo-org/ncit-obo-edition
   id: ncit
   layout: ontology_detail
   license:
@@ -4290,25 +4290,9 @@ ontologies:
   - id: ncit.obo
     ontology_purl: http://purl.obolibrary.org/obo/ncit.obo
     title: NCIt OBO Edition OBO format
-  - description: This version replaces NCIt terms with direct references to terms
-      from other domain-specific OBO Library ontologies (e.g. cell types, cellular
-      components, anatomy), supporting cross-ontology reasoning. The current release
-      incorporates CL (cell types) and Uberon (anatomy).
-    id: ncit/ncit-plus.owl
-    mireots_from:
-    - cl
-    - uberon
-    ontology_purl: http://purl.obolibrary.org/obo/ncit/ncit-plus.owl
-    title: NCIt Plus
-  - description: This is a subset extracted from NCIt Plus, based on the [NCIt Neoplasm
-      Core value set](https://evs.nci.nih.gov/ftp1/NCI_Thesaurus/Neoplasm/About_Core.html)
-      as a starting point.
-    id: ncit/neoplasm-core.owl
-    ontology_purl: http://purl.obolibrary.org/obo/ncit/neoplasm-core.owl
-    title: NCIt Plus Neoplasm Core
-  repository: https://github.com/NCI-Thesaurus/thesaurus-obo-edition
+  repository: https://github.com/ncit-obo-org/ncit-obo-edition
   title: NCI Thesaurus OBO Edition
-  tracker: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
+  tracker: https://github.com/ncit-obo-org/ncit-obo-edition/issues
 - activity_status: active
   build:
     method: owl2obo
@@ -8883,6 +8867,34 @@ ontologies:
   layout: ontology_detail
   replaced_by: molecular_function
   title: Gene Regulation Ontology
+- activity_status: inactive
+  build:
+    method: obo2owl
+    notes: moving to owl soon
+    source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/caro/caro.obo
+  contact:
+    email: haendel@ohsu.edu
+    github: mellybelly
+    label: Melissa Haendel
+    orcid: 0000-0001-9114-8737
+  description: An upper level ontology to facilitate interoperability between existing
+    anatomy ontologies for different species
+  domain: anatomy and development
+  homepage: https://github.com/obophenotype/caro/
+  id: caro
+  is_obsolete: true
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  preferredPrefix: CARO
+  products:
+  - id: caro.owl
+    ontology_purl: http://purl.obolibrary.org/obo/caro.owl
+  repository: https://github.com/obophenotype/caro
+  title: Common Anatomy Reference Ontology
+  tracker: https://github.com/obophenotype/caro/issues
 - activity_status: inactive
   contact:
     email: engelsta@ohsu.edu
