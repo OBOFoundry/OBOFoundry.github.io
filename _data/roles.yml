@@ -38,7 +38,7 @@
     - Stakeholder support
   description:
     Responsible for assinging reviewers to new ontology requests, registering new ontologies in the OBO dashboard and helping their
-    owners pass all the dashboard checks. 
+    owners pass all the dashboard checks.
   sop: /roles/nor-manager
   responsibilities:
     - Checking OBOFoundry.github.io at least weekly for NOR-related issues and pull requests.
@@ -155,11 +155,11 @@
     - Mark relevant GitHub issues for discussion during OFOC call
     - Summarise TWG activities to OBO Newsletter steward
   people:
-    - github: rays22
-      name: Ray Stefancsik
-      orcid: 0000-0001-8314-2140
+    - github: jsstevenson
+      name: James Stevenson
+      orcid: 0000-0002-2568-6163
       status: lead
-      start: 2022-12
+      start: 2025-08
     - github: matentzn
       name: Nico Matentzoglu
       orcid: 0000-0002-7356-1779
@@ -179,7 +179,7 @@
 - name: OMO metadata coordinator
   open: false
   description: |
-    Responsible for coordinating changes to the OBO Metadata Ontology (OMO). 
+    Responsible for coordinating changes to the OBO Metadata Ontology (OMO).
     OMO reflects OBO consensus on term and ontology metadata in OBO ontologies.
     Changes need to be carefully reviewed and votes called if needed. No PR should be merged
     in OMO without the consent of the OMO metadata coordinator.
@@ -198,7 +198,7 @@
 - name: OBO Tools coordinator
   open: false
   description: |
-    Coordinate and host OBO Tools workshops at meetings and conferences such as ICBO, 
+    Coordinate and host OBO Tools workshops at meetings and conferences such as ICBO,
      make sure tools align with OBO principles and support them, etc.
   responsibilities:
   people:
