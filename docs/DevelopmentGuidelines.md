@@ -5,7 +5,6 @@ title: Ontology Development Guidelines   MAYBE CHANGE TO ONTOLOGY PROJECT MANAGE
 
 ### Technical
 
-- Ontology merging metadata [#1548](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1548)
 
 ### Content
 
