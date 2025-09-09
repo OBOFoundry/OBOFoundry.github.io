@@ -13,7 +13,6 @@ title: Ontology Development Guidelines   MAYBE CHANGE TO ONTOLOGY PROJECT MANAGE
 ### Releases
 
 - (DISCUSS) Keep your edit file (the file you change on a regular basis) and your release files strictly separate
-- (DISCUSS. Also check what is considered the main release file. Reasoned?) Imports should be merged into the main release file
 
 ### Social
 
