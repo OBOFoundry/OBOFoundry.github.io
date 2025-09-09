@@ -20,4 +20,4 @@ title: Ontology Project Management Guidelines
 ### Communication
 
 - Publications metadata [#1671](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1671)
-- Short ontology descriptions [#1968](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1968)
+- ***MORE DISCUSSION NEEDED*** Short ontology descriptions [#1968](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1968)
