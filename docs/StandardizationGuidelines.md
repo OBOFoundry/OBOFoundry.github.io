@@ -13,8 +13,13 @@ title: Ontology Standardization Guidelines
 - Standardizing how imported ontologies are noted [#424](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/424)
 - Ontology metadata requirements [#1365](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1365)
 - Ontology root terms annotation [#2149](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2149)
-  - In order to shield users from having to navigate through not-specific-enough parent terms (such as BFO:0000040 "material entity"), an ontology SHOULD specify one or more appropriate root terms
-  -   has ontology root term (IAO:0000700)
+  - Some ontology browsers make use of an ontology-wide annotation property, 'has ontology root term' (IAO:0000700), that governs how the hierarchy is displayed. This helps shield users from having to navigate through not-specific-enough parent terms (such as BFO:0000040 "material entity"). To enable this feature, an ontology SHOULD specify one or more appropriate root terms like so:
+      ```
+      OWL format:
+         <obo:IAO_0000700 rdf:resource="http://purl.obolibrary.org/obo/*root term ID*"/>
+      OBO format:
+         property_value: IAO:0000700 *root term ID*
+      ```
 - ***MORE DISCUSSION NEEDED*** Language tags [#479](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/479)
   - For rdfs:label and IAO:0000115 annotation assertions, we discourage the use of datatype declarations such as `xsd:string`. It is important to note that `xsd:string` is essentially redundant in OWL/RDF, so "assay" and "assay"^^xsd:string should be the exact same thing. However, a lot of tooling may be confused by the difference, xsd:string datatype assertion SHOULD be omitted in general for all annotations, but MUST be omitted for rdfs:label and IAO:0000115.
   - To designate rdfs:label, and IAO:0000115 annotations in a language different from English, a [valid RDF language tag](https://www.w3.org/TR/rdf11-concepts/#section-Graph-Literal) MUST be specified, for example, "Krankheit"@de.
