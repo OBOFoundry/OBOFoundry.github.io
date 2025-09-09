@@ -22,3 +22,4 @@ title: Ontology Development Guidelines   MAYBE CHANGE TO ONTOLOGY PROJECT MANAGE
 ### Communication
 
 - Publications metadata [#1671](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1671)
+- Short ontology descriptions [#1968](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1968)   (ONLY INCLUDE IF CHANGING PAGE NAME)
