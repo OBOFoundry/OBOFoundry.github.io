@@ -21,6 +21,8 @@ title: Ontology Project Management Guidelines
 
 - Publications metadata [#1671](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1671)
 - ***MORE DISCUSSION NEEDED*** Short ontology descriptions [#1968](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1968)
+- Documentation for license [#1840](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1840)
+
 
 THE FOLLOWING ARE FOR THE OTHER PAGE, KEPT HERE PENDING FINALIZATION
 
@@ -44,8 +46,6 @@ content:
 communication:
 
 - Ontology subsets documentation [#466](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/446)
-- Documentation for license [#1840](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1840)
-
 
 
 
