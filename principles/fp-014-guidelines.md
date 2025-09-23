@@ -7,7 +7,7 @@ GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; 
 
 ## Summary
 
-The ontology provider follows the recommendations and requirements outlined on the Ontology Standardization Guidelines page and the Project Management Guidelines page.
+The ontology provider follows the recommendations and requirements outlined on the Ontology Standardization Guidelines and the Project Management Guidelines pages.
 
 ## Purpose
 
