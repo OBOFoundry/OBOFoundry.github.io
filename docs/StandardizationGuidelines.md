@@ -25,9 +25,6 @@ title: Ontology Standardization Guidelines
   - If the NCIt term definition and hierarchical position are reasonable, that term SHOULD be used instead;
   - If either the NCIt term definition or the hierarchical position are sub-optimal, the developer MAY create a term in the ontology with an identical label but with a revised definition and subclassing; alternatively such a term MAY be requested of another ontology, if appropriate;
   - For case (b), if the definition is based on the NCIt definition, the new term MUST be linked to the original NCIt term to conform to the [NCIt license](https://evs.nci.nih.gov/license) requirements. Note: this does not apply to reuse of term labels.
-- Term adoption [#2330](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2330) and [#2324](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2324)
-- Standardized xref prefixes in ontologies [#525](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/525)
-- Referring to taxa not in NCBITaxon [#434](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/434)
 
 ### Releases
 
@@ -42,8 +39,6 @@ title: Ontology Standardization Guidelines
 
 ### Communication
 
-- Ontology subsets documentation [#466](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/446)
-- Documentation for license [#1840](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1840)
 - ***DONE*** Any term (or set of terms) with an affiliated issue tracker item (term request or term discussion) SHOULD be linked to the relevant issue(s). Such linking SHOULD use the annotation property 'term tracker item' (IAO:0000233) and SHOULD NOT use a free text comment. The range for 'term tracker item' MUST consist solely of an IRI, without additional text, and the IRI MUST be for the issue tracker item.
   - ***CLOSE THIS*** [#1097](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1097)
 
