@@ -54,7 +54,6 @@ title: Ontology Standardization Guidelines
 
 - Ontology subsets documentation [#466](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/446)
 - Documentation for license [#1840](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1840)
-- Exemplar classes [#899](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/899)
 - ***DONE*** Any term (or set of terms) with an affiliated issue tracker item (term request or term discussion) SHOULD be linked to the relevant issue(s). Such linking SHOULD use the annotation property 'term tracker item' (IAO:0000233) and SHOULD NOT use a free text comment. The range for 'term tracker item' MUST consist solely of an IRI, without additional text, and the IRI MUST be for the issue tracker item.
   - ***CLOSE THIS*** [#1097](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1097)
 
