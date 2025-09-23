@@ -1,13 +1,13 @@
 ---
 layout: principle
-id: fp-004-versioning
-title: Versioning (principle 4)
+id: fp-014-guidelines
+title: Guidelines (principle 4)
 ---
 GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; [Implementation](#implementation) &#124; [Examples/Counter&#8209;Examples](#examples) &#124; [Criteria&nbsp;for&nbsp;Review](#criteria-for-review) &#124; [Feedback/Discussion](#feedback-and-discussion)
 
 ## Summary
 
-The ontology provider has documented procedures for versioning the ontology, and different versions of ontology are marked, stored, and officially released.
+The ontology provider follows the recommendations and requirements outlined on the Ontology Standardization Guidelines page and the Project Management Guidelines page.
 
 ## Purpose
 
