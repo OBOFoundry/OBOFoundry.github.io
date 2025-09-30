@@ -34,7 +34,7 @@ title: Ontology Tools and Resources
 - [ROBOT](http://robot.obolibrary.org/): A command line tool to automate ontology workflows. It includes commands that can be used manually or integrated in automated processes to develop and release ontologies.
 - [Protégé](https://protege.stanford.edu/): An ontology editing environment for OWL ontologies. It allows developers to visualize the ontology hierarchy, add and edit ontology terms, reason over the ontology, and more.
 - [Onto-Animals](http://www.hegroup.org/ontozoo/): Tools to extract external ontology terms, compare ontologies, edit ontology terms, query and visualize ontologies, and more.
-- [VOCOL](https://vocol.iais.fraunhofer.de/): An integrated environment for collaborative vocabulary development
+- [VOCOL](https://github.com/vocol/vocol): An integrated environment for collaborative vocabulary development
 - [Karma Data Integration](http://usc-isi-i2.github.io/karma/): A data integration tool
 - [Ontofox](http://ontofox.hegroup.org/): An ontology term and relation extraction and reuse tool
 - [Ubergraph](https://github.com/INCATools/ubergraph): A sparql endpoint with many OBO ontologies loaded and pre-reasoned with simple triples materialized
