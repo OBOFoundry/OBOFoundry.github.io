@@ -45,7 +45,7 @@ content:
 
 communication:
 
-- Ontology subsets documentation [#466](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/466)
+- Ontology subsets  documentation [#466](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/466)
 
 
 
