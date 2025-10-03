@@ -30,7 +30,7 @@ usages:
   - description: academic degree
     url: http://purl.obolibrary.org/obo/OOSTT_00000074
   type: owl:Ontology
-  user: http://purl.obolibrary.org/obo/omrse.owl
+  user: https://github.com/mcwdsi/OMRSE
 activity_status: active
 ---
 
