@@ -25,7 +25,7 @@ usages:
 - description: OOSTT terms, such as OOSTT_00000002 'trauma center' and OOSTT_00000066 'emergency medicine liaison role,' are used in the TIPTOE questionnaire to relate trauma center/system structure to patient outcomes.
   type: application
   user: https://tiptoe.apps.dbmi.cloud/tiptoe
-- description: OOSTT is used by OMRSE.
+- description: Terms from OOSTT are imported and used by OMRSE.
   examples:
   - description: academic degree
     url: http://purl.obolibrary.org/obo/OOSTT_00000074
