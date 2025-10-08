@@ -5,7 +5,7 @@ title: Human Disease Ontology
 browsers:
 - title: DO Browser
   label: DO
-  url: http://www.disease-ontology.org/do
+  url: https://disease-ontology.org/do
 build:
   infallible: 1
   method: obo2owl
@@ -15,10 +15,10 @@ contact:
   github: lschriml
   label: Lynn Schriml
   orcid: 0000-0001-8910-9851
-depicted_by: http://www.disease-ontology.org/media/images/DO_logo.jpg
+depicted_by: https://disease-ontology.org/media/images/DO_logo_teal.png
 description: An ontology for describing the classification of human diseases organized by etiology.
 domain: health
-homepage: https://www.disease-ontology.org
+homepage: https://disease-ontology.org
 in_foundry_order: 1
 license:
   label: CC0 1.0
@@ -30,9 +30,9 @@ products:
 - id: doid.obo
   title: Disease Ontology, OBO format. This file omits the equivalent axioms.
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/25348409
+- id: https://pubmed.ncbi.nlm.nih.gov/25348409/
   title: 'Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data'
-- id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
+- id: https://pubmed.ncbi.nlm.nih.gov/34755882/
   title: The Human Disease Ontology 2022 update
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 tags:
@@ -53,8 +53,8 @@ usages:
 - description: MGI disease model annotations use DO
   examples:
   - description: physical disorder
-    url: http://www.informatics.jax.org/disease/DOID:0080015
-  user: http://www.informatics.jax.org/disease
+    url: https://www.informatics.jax.org/disease/DOID:0080015
+  user: https://www.informatics.jax.org/disease
 - description: Immune Epitope Database
   examples:
   - description: Antibody and T cell epitopes associated with human diseases
@@ -70,4 +70,4 @@ Creating a comprehensive classification of human diseases organized by etiology.
 This file is equivalent to doid-non-classified.obo.
 
 - DO provides an additional OBO file, [doid-merged.obo](https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-merged.obo). 
- for the [AGR](http://www.alliancegenome.org) that includes [OMIM](http://omim.org) to DO associations as xrefs plus defined  relationships between OMIM susceptibility IDs and DO terms.  
+ for the [AGR](https://www.alliancegenome.org) that includes [OMIM](https://omim.org) to DO associations as xrefs plus defined  relationships between OMIM susceptibility IDs and DO terms.  
