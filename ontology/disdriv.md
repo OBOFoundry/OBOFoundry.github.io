@@ -7,7 +7,7 @@ browsers:
   label: DO
   url: https://disease-ontology.org/
 build:
-  source_url: https://github.com/DiseaseOntology/DiseaseDriversOntology/tree/main/src/ontology/disdriv.owl
+  source_url: https://raw.githubusercontent.com/DiseaseOntology/DiseaseDriversOntology/refs/heads/main/src/ontology/disdriv.owl
 contact:
   email: lynn.schriml@gmail.com
   github: lschriml
