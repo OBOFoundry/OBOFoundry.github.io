@@ -22,9 +22,9 @@ products:
 - id: trans.owl
 - id: trans.obo
 publications:
-- id: https://pubmed.ncbi.nlm.nih.gov/19850722/
+- id: https://www.ncbi.nlm.nih.gov/pubmed/19850722
   title: GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database
-- id: https://pubmed.ncbi.nlm.nih.gov/34755882/
+- id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
   title: The Human Disease Ontology 2022 update
 repository: https://github.com/DiseaseOntology/PathogenTransmissionOntology
 tags:
