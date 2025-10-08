@@ -22,9 +22,9 @@ products:
 - id: trans.owl
 - id: trans.obo
 publications:
-- id: https://www.ncbi.nlm.nih.gov/pubmed/19850722
+- id: https://pubmed.ncbi.nlm.nih.gov/19850722/
   title: GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database
-- id: https://www.ncbi.nlm.nih.gov/pubmed/34755882
+- id: https://pubmed.ncbi.nlm.nih.gov/34755882/
   title: The Human Disease Ontology 2022 update
 repository: https://github.com/DiseaseOntology/PathogenTransmissionOntology
 tags:
@@ -34,8 +34,8 @@ usages:
 - description: Methods of trnasmission of human diseases in the DO
   examples:
   - description: methods of transmission of human diseases
-    url: http://www.disease-ontology.org/?id=DOID:12365
-  user: http://www.disease-ontology.org
+    url: https://disease-ontology.org/?id=DOID:12365
+  user: https://disease-ontology.org/
 activity_status: active
 ---
 
