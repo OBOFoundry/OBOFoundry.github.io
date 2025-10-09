@@ -144,6 +144,7 @@ Currently, these are the required steps:
 1. If there is no significant objection within a four week time period, the status change is enacted by merging the pull request.
 1. The contact person for the ontology should be notified of the acceptance or rejection of the change.
 
+## Adding new members to obo-discuss
 <a name="OBO_DISCUSS"></a>
 
 OBO Discuss is a Google Group: https://groups.google.com/g/obo-discuss. Anyone with an email address can ask to join OBO Discuss, but we have had trouble with spammers in the past, so the Google Group is configured to require new members to be approved by one of the mailing list owners.
