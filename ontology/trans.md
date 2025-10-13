@@ -31,7 +31,7 @@ tags:
 - disease
 tracker: https://github.com/DiseaseOntology/PathogenTransmissionOntology/issues
 usages:
-- description: Methods of trnasmission of human diseases in the DO
+- description: Methods of transmission of human diseases in the DO
   examples:
   - description: methods of transmission of human diseases
     url: https://disease-ontology.org/?id=DOID:12365
@@ -39,4 +39,4 @@ usages:
 activity_status: active
 ---
 
-The Pathogen Transmission Ontology describes the tranmission methods of human disease pathogens describing how a pathogen is transmitted from one host, reservoir, or source to another host. The pathogen transmission may occur either directly or indirectly and may involve animate vectors or inanimate vehicles.
+The Pathogen Transmission Ontology describes the transmission methods of human disease pathogens describing how a pathogen is transmitted from one host, reservoir, or source to another host. The pathogen transmission may occur either directly or indirectly and may involve animate vectors or inanimate vehicles.
