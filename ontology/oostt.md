@@ -18,6 +18,19 @@ products:
 - id: oostt.owl
 repository: https://github.com/OOSTT/OOSTT
 tracker: https://github.com/OOSTT/OOSTT/issues
+usages:
+- description: OOSTT terms, such as OOSTT_00000017 'trauma program' and OOSTT_00000021 'trauma medical director role,' are used in the CAFE questionnaire to assess trauma centers and systems.
+  type: application
+  user: https://cafe-trauma.com/
+- description: OOSTT terms, such as OOSTT_00000002 'trauma center' and OOSTT_00000066 'emergency medicine liaison role,' are used in the TIPTOE questionnaire to relate trauma center/system structure to patient outcomes.
+  type: application
+  user: https://tiptoe.apps.dbmi.cloud/tiptoe
+- description: Terms from OOSTT are imported and used by OMRSE.
+  examples:
+  - description: academic degree
+    url: http://purl.obolibrary.org/obo/OOSTT_00000074
+  type: owl:Ontology
+  user: https://github.com/mcwdsi/OMRSE
 activity_status: active
 ---
 
