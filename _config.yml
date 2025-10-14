@@ -5231,6 +5231,23 @@ ontologies:
   repository: https://github.com/OOSTT/OOSTT
   title: Ontology of Organizational Structures of Trauma centers and Trauma systems
   tracker: https://github.com/OOSTT/OOSTT/issues
+  usages:
+  - description: OOSTT terms, such as OOSTT_00000017 'trauma program' and OOSTT_00000021
+      'trauma medical director role,' are used in the CAFE questionnaire to assess
+      trauma centers and systems.
+    type: application
+    user: https://cafe-trauma.com/
+  - description: OOSTT terms, such as OOSTT_00000002 'trauma center' and OOSTT_00000066
+      'emergency medicine liaison role,' are used in the TIPTOE questionnaire to relate
+      trauma center/system structure to patient outcomes.
+    type: application
+    user: https://tiptoe.apps.dbmi.cloud/tiptoe
+  - description: Terms from OOSTT are imported and used by OMRSE.
+    examples:
+    - description: academic degree
+      url: http://purl.obolibrary.org/obo/OOSTT_00000074
+    type: owl:Ontology
+    user: https://github.com/mcwdsi/OMRSE
 - activity_status: active
   contact:
     email: zhengj2007@gmail.com
@@ -6454,7 +6471,7 @@ ontologies:
   build:
     infallible: 1
     method: obo2owl
-    source_url: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/master/symp.obo
+    source_url: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/master/src/ontology/symp.obo
   contact:
     email: lynn.schriml@gmail.com
     github: lschriml
@@ -6464,7 +6481,7 @@ ontologies:
     changes in function, sensations or appearance reported by a patient indicative
     of a disease.
   domain: health
-  homepage: http://symptomontologywiki.igs.umaryland.edu/mediawiki/index.php/Main_Page
+  homepage: https://github.com/DiseaseOntology/SymptomOntology
   id: symp
   layout: ontology_detail
   license:
@@ -6496,8 +6513,8 @@ ontologies:
   - description: Symptoms of human diseases in the DO
     examples:
     - description: symptoms of human diseases
-      url: http://www.disease-ontology.org/?id=DOID:0060164
-    user: http://www.disease-ontology.org
+      url: https://disease-ontology.org/?id=DOID:0060164
+    user: https://disease-ontology.org/
 - activity_status: active
   contact:
     email: allyson.lister@oerc.ox.ac.uk
@@ -6679,11 +6696,11 @@ ontologies:
   title: Pathogen Transmission Ontology
   tracker: https://github.com/DiseaseOntology/PathogenTransmissionOntology/issues
   usages:
-  - description: Methods of trnasmission of human diseases in the DO
+  - description: Methods of transmission of human diseases in the DO
     examples:
     - description: methods of transmission of human diseases
-      url: http://www.disease-ontology.org/?id=DOID:12365
-    user: http://www.disease-ontology.org
+      url: https://disease-ontology.org/?id=DOID:12365
+    user: https://disease-ontology.org/
 - activity_status: active
   contact:
     email: balhoff@renci.org
