@@ -5276,10 +5276,10 @@ _:b160  <http://www.w3.org/2000/01/rdf-schema#label>  "Allyson Lister" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b240 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/symp.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/symp.obo> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <http://symptomontologywiki.igs.umaryland.edu/mediawiki/index.php/Main_Page> .
+        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/DiseaseOntology/SymptomOntology> .
 
 _:b239  <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
-        <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/master/symp.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+        <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/master/src/ontology/symp.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/19850722>
         <http://purl.org/dc/elements/1.1/title>  "GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database" .
