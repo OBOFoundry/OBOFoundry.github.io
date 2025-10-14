@@ -30,9 +30,9 @@ products:
 - id: doid.obo
   title: Disease Ontology, OBO format. This file omits the equivalent axioms.
 publications:
-- id: https://pubmed.ncbi.nlm.nih.gov/25348409/
+- id: https://pubmed.ncbi.nlm.nih.gov/25348409
   title: 'Disease Ontology 2015 update: an expanded and updated database of human diseases for linking biomedical knowledge through disease data'
-- id: https://pubmed.ncbi.nlm.nih.gov/34755882/
+- id: https://pubmed.ncbi.nlm.nih.gov/34755882
   title: The Human Disease Ontology 2022 update
 repository: https://github.com/DiseaseOntology/HumanDiseaseOntology
 tags:
