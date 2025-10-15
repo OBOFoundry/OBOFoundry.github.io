@@ -50,13 +50,7 @@ communication:
 - domain metadata tag [#2779](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2779)
 
 
-Follow-up on guidelines for imports: During the previous discussion, it came to light that some ontologies--when importing from a ‘third party’ ontology--filter out definitions and logical axioms in order to reduce the possibility of misalignment due to out of sync updates.
-Q: The newly-accepted guideline recommends against importing terms from a third party ontology anyway, but should we add that filtering note for cases when it is done?
-Q: What about when importing from the original source ontology? Principle 1 for term import says to “include any annotations for term or definition editors from the original ontology”. Should that be revisited?
-James: There’s nothing special about definitions – any annotation or axiom could get out of sync, and any could be important to someone. Recommend against stripping this recommendation.
-CONCLUSION: keep all information.
-
-ACTION (DN): make issue regarding P1 inclusion of ‘imported from’
+ACTION (DN): make issue regarding P1 inclusion of ‘imported from’ (we don't want to recommend anymore)
 
 
 
