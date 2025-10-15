@@ -25,6 +25,7 @@ title: Ontology Standardization Guidelines
   - If the NCIt term definition and hierarchical position are reasonable, that term SHOULD be used instead;
   - If either the NCIt term definition or the hierarchical position are sub-optimal, the developer MAY create a term in the ontology with an identical label but with a revised definition and subclassing; alternatively such a term MAY be requested of another ontology, if appropriate;
   - For case (b), if the definition is based on the NCIt definition, the new term MUST be linked to the original NCIt term to conform to the [NCIt license](https://evs.nci.nih.gov/license) requirements. Note: this does not apply to reuse of term labels.
+- Imported terms SHOULD be obtained from the ontology that maintains the term (usually, but not always, the ontology with the IDspace used by the term). 
 
 ### Releases
 
