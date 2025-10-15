@@ -34,6 +34,7 @@ OBO_TO_SPDX = {
     "CC BY 3.0": "CC-BY-3.0",
     "CC0": "CC0-1.0",
 }
+NOR_DASHBOARD_RESULTS = "https://raw.githubusercontent.com/OBOFoundry/obo-nor.github.io/master/dashboard/dashboard-results.yml"
 
 
 class TestIntegrity(unittest.TestCase):
@@ -215,17 +216,30 @@ class TestIntegrity(unittest.TestCase):
 
     def test_has_purl_config(self):
         """Tests that OBO PURL configuration is available."""
+        existing_purl_configs = set()
+        missing = set()
+        res = requests.get('https://api.github.com/repos/OBOFoundry/purl.obolibrary.org/git/trees/master?recursive=1')
+        self.assertEqual(
+            200,
+            res.status_code,
+            "Error while fetching Git tree for OBOFoundry/purl.obolibrary.org"
+        )
+        data = res.json()
+        for entry in data['tree']:
+            if entry['path'].startswith('config/'):
+                existing_purl_configs.add(entry['path'])
         for prefix, record in self.ontologies.items():
             if self.skip_inactive(record):
                 continue
             with self.subTest(prefix=prefix):
-                url = f"https://raw.githubusercontent.com/OBOFoundry/purl.obolibrary.org/master/config/{prefix}.yml"
-                res = requests.get(url)
-                self.assertEqual(
-                    200,
-                    res.status_code,
-                    msg=f"PURL configuration is missing for {prefix}",
-                )
+                filename = f"config/{prefix}.yml"
+                if filename not in existing_purl_configs:
+                    missing.add(prefix)
+        self.assertEqual(
+            set(),
+            missing,
+            msg=f"PURL configuration missing for {', '.join(missing)}"
+        )
 
 
 class TestStandardizedYaml(unittest.TestCase):
@@ -333,6 +347,38 @@ class TestModernIntegrity(unittest.TestCase):
                     spdx,
                     OBO_TO_SPDX[obo_license],
                     msg="OBO Foundry license annotation does not match GitHub license",
+                )
+
+    def test_nor_dashboard(self):
+        """Test that the ontology is in and passes the NOR dashboard."""
+        nor_data = yaml.safe_load(requests.get(NOR_DASHBOARD_RESULTS).content)
+        nor_ontologies = {
+            record["namespace"]: record for record in nor_data["ontologies"]
+        }
+        for prefix, data in self.ontologies.items():
+            with self.subTest(prefix=prefix):
+                self.assertIn(
+                    prefix,
+                    set(nor_ontologies),
+                    msg=f"Need to add `{prefix}` to the New Ontlogy Request Dashboard "
+                    f"(https://github.com/OBOFoundry/obo-nor.github.io)",
+                )
+
+                failures = set()
+                for key, record in nor_ontologies[prefix]["results"].items():
+                    if key in {
+                        "ROBOT Report",
+                        "FP09 Plurality of Users",
+                    }:
+                        continue
+                    if record["status"] != "PASS":
+                        failures.add(key)
+
+                self.assertEqual(
+                    set(),
+                    failures,
+                    msg="Passing the NOR Dashboard outright is required for "
+                    "new ontologies, with the exception of FP09 (usages, for now)",
                 )
 
     def test_contribution_guidelines(self):

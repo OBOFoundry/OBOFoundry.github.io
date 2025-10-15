@@ -6,10 +6,6 @@ browsers:
 - title: BioPortal Ontology Browser
   label: BioPortal
   url: https://bioportal.bioontology.org/ontologies/PATO
-build:
-  infallible: 1
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo
 contact:
   email: g.gkoutos@gmail.com
   github: gkoutos
@@ -19,9 +15,6 @@ description: An ontology of phenotypic qualities (properties, attributes or char
 domain: phenotype
 homepage: https://github.com/pato-ontology/pato/
 in_foundry_order: 1
-jobs:
-- id: https://travis-ci.org/pato-ontology/pato
-  type: travis-ci
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/
@@ -38,8 +31,6 @@ publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/15642100
   title: Using ontologies to describe mouse phenotypes
 repository: https://github.com/pato-ontology/pato
-review:
-  date: 2010
 tracker: https://github.com/pato-ontology/pato/issues
 usages:
 - description: PATO is used by the Human Phenotype Ontology (HPO) for logical definitions of phenotypes that facilitate cross-species integration.

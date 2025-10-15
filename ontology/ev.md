@@ -6,7 +6,6 @@ contact:
   email: evoc@sanbi.ac.za
   label: eVOC mailing list
 domain: anatomy and development
-homepage: http://www.evocontology.org/
 is_obsolete: true
 activity_status: inactive
 ---

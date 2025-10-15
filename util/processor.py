@@ -109,7 +109,10 @@ def extract_context(ontologies, args):
     for obj in ontologies:
         if has_obo_prefix(obj):
             prefix = obj.get("preferredPrefix") or obj["id"].upper()
-            prefix_map[prefix] = "http://purl.obolibrary.org/obo/" + prefix + "_"
+            prefix_map[prefix] = {
+                "@id": "http://purl.obolibrary.org/obo/" + prefix + "_",
+                "@prefix": True,
+            }
 
     print(
         dumps(

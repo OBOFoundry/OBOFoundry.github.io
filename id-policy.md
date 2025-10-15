@@ -60,7 +60,7 @@ Using these rules the OBO ID **GO:0050918** is mapped to the Foundry-compliant U
 
 It is expected that the Foundry-compliant URIs behave, on the web, usefully. It will be the role of the OBO Foundry to supply generic software for responding to requests at URIs that identify OBO terms.
 
-We borrow the criteria from the [Shared Name Initiative](http://sharedname.org/) as a baseline. The OBO Foundry may issue further recommendations if experience shows them to be considered generally useful.
+We borrow the criteria from the [Shared Name Initiative](https://web.archive.org/web/20170526125335/http://sharedname.org/page/Main_Page) as a baseline. (Note: sharedname.org has disappeared and is only available via the web archive.) The OBO Foundry may issue further recommendations if experience shows them to be considered generally useful.
 
 1. It must be clearly stated what the intended referent of each URI is supposed to be, i.e. that the URI denotes some particular record from some particular database.
 

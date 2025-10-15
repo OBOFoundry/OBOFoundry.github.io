@@ -19,7 +19,7 @@
                     <ul class="dropdown-menu" aria-labelledby="navbarAboutDropdown">
                         <li><a class="dropdown-item" href="/about-OBO-Foundry.html">About</a></li>
                         <li><a class="dropdown-item" href="/docs/COC.html">Code of Conduct</a></li>
-                        <li><a class="dropdown-item" href="/resources">Resouces</a></li>
+                        <li><a class="dropdown-item" href="/resources">Resources</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
@@ -82,19 +82,25 @@
                         </li>
                         <li>
                             <a class="dropdown-item"
-                               href="https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.yml">
+                               href="http://purl.obolibrary.org/meta/obo_context.jsonld">
+                                JSON-LD 1.1 Context
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="http://purl.obolibrary.org/meta/ontologies.yml">
                                 Ontology YAML
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item"
-                               href="https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.jsonld">
+                               href="http://purl.obolibrary.org/meta/ontologies.jsonld">
                                 Ontology JSON-LD
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item"
-                               href="https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/ontologies.ttl">
+                               href="http://purl.obolibrary.org/meta/ontologies.ttl">
                                 Ontology RDF/Turtle
                             </a>
                         </li>
@@ -107,10 +113,9 @@
                         Citation
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarCitationDropdown">
-                        <li><a class="dropdown-item" href="/docs/Citation.html">Cite Ontologies</a></li>
-                        <li><a class="dropdown-item" href="/registry/publications.html">Cite the OBO Foundry</a></li>
-                        <li><a class="dropdown-item" href="/registry/publications.html">Publications Related to the OBO
-                            Foundry</a></li>
+                        <li><a class="dropdown-item" href="/citation/Citation.html">Cite Ontologies</a></li>
+                        <li><a class="dropdown-item" href="/citation/RelatedPublications.html">OBO Foundry Publications</a></li>
+                        <li><a class="dropdown-item" href="/citation/KnownPublications.html">Known OBO Foundry Ontology Publications</a></li>
                     </ul>
                 </li>
 
@@ -132,7 +137,7 @@
                                 Mail List</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="https://obo-communitygroup.slack.com/archives/C01DP18L5GW">OBO
+                            <a class="dropdown-item" href="https://join.slack.com/t/obo-communitygroup/shared_invite/zt-1oq48ttk7-kKo0i6TwntYtAq~Jcjjg4g">OBO
                                 Community Slack channel</a>
                         </li>
                         <li>
@@ -145,17 +150,24 @@
                     </ul>
                 </li>
 
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarNewsletterDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Newsletter
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarNewsletterDropdown">
+                        {% for post in site.posts %}
+                        {% if post.categories contains "newsletter" %}
+                        <li><a class="dropdown-item" href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="/faq/index.html">FAQ</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search" action="https://ontobee.org/search" method="get">
-                <!-- while the ontology input doesn't do anything, the Ontobee site is broken and doesn't work if it's missing -->
-                <input name="ontology" type="hidden" value=""/>
-                <input class="form-control me-2" type="search" placeholder="Search Ontobee" aria-label="Search"
-                       name="keywords">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
         </div>
     </div>
 </nav>

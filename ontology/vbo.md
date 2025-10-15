@@ -31,5 +31,12 @@ products:
   name: Vertebrate Breed Ontology additional release in OBOJSon format
 repository: https://github.com/monarch-initiative/vertebrate-breed-ontology
 tracker: https://github.com/monarch-initiative/vertebrate-breed-ontology/issues
+usages:
+- description: VBO is used in the Online Mendelian Inheritance in Animals (OMIA) for breed annotations.
+  examples:
+  - description: Urticaria pigmentosa affects the Sphynx (Cat) (VBO:0100230) breed.
+    url: https://www.omia.org/OMIA001289/9685/
+  type: annotation
+  user: https://omia.org/home/
 activity_status: active
 ---

@@ -26,6 +26,7 @@ It is expected that Foundry ontologies will collaborate with other Foundry ontol
 - _Contribution to external ontology_: Plant Ontology (PO) curators contribute definitions to Gene Ontology (GO) for biological processes and cell components in plants. PO then uses the GO terms in their definition of corresponding structures and stages.
 - _Documentation of collaboration_: Cell Line Ontology (CLO), Cell Ontology (CL), and Ontology of Biomedical Investigations (OBI) published a paper sorting out their overlap and documented working together. Sarntivjiai et al., "CLO: The cell line ontology", J. Biomed. Sem., 2014, 5, 37. http://www.ncbi.nlm.nih.gov/pubmed/25852852
 - _Providing terms upon request_: The Disease Ontology (DO) responded to a request from the PRotein Ontology for curation of certain disease terms.
+- _Providing guidance on how to contribute_: The Relations Ontology (RO) GitHub includes a [CONTRIBUTING.md](https://github.com/oborel/obo-relations/blob/master/CONTRIBUTING.md) file.
 
 ### Counter-examples:
 
@@ -33,7 +34,7 @@ Interactions between ontologies developed by the same entity (person, consortium
 
 ## Criteria for Review
 
-Ontology developers must document their attempts at an open dialog with OBO Foundry members, for example by attempting to ascertain if there are other possible ontologies in (or overlapping) the domain of interest. Such documentation can be a simple pointer to an e-mail thread on the OBO discuss list. If there are other ontologies that might need to be aligned or have boundaries determined, evidence of coordination or cooperation should be provided. Further evidence of collaboration may include examples of terms that have been provided to other ontologies in the OBO Foundry community. Finally, hosting or participating in collaborative workshops or meetings attended by OBO Foundry community members is considered evidence of collaboration.
+Ontology developers must document their attempts at an open dialog with OBO Foundry members, for example by attempting to ascertain if there are other possible ontologies in (or overlapping) the domain of interest. Such documentation can be a simple pointer to an e-mail thread on the OBO discuss list. If there are other ontologies that might need to be aligned or have boundaries determined, evidence of coordination or cooperation should be provided. Further evidence of collaboration may include examples of terms that have been provided to other ontologies in the OBO Foundry community, while evidence for a willingness to collaborate includes the creation of a CONTRIBUTING.md file to provide guidance for contributions ([learn more](http://mozillascience.github.io/working-open-workshop/contributing/)). Finally, hosting or participating in collaborative workshops or meetings attended by OBO Foundry community members is considered evidence of collaboration.
 
 ## Feedback and Discussion
 

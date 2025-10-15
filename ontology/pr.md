@@ -32,16 +32,20 @@ preferredPrefix: PR
 products:
 - id: pr.owl
   title: pro_reasoned.owl
-  description: PRO after reasoning has been applied, OWL format.
+  description: PRO after reasoning has been applied, OWL format. Add '.gz' for compressed.
 - id: pr.obo
   title: pro_reasoned.obo
   description: PRO after reasoning has been applied, OBO format.
+- id: pr-asserted.owl
+  title: pro_nonreasoned.owl
+  description: PRO without reasoning applied, OWL format. Add '.gz' for compressed.
+- id: pr-asserted.obo
+  title: pro_nonreasoned.obo
+  description: PRO without reasoning applied, OBO format.
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/27899649
   title: 'Protein Ontology (PRO): enhancing and scaling up the representation of protein entities'
 repository: https://github.com/PROconsortium/PRoteinOntology
-review:
-  date: 2010
 tags:
 - proteins
 tracker: https://github.com/PROconsortium/PRoteinOntology/issues

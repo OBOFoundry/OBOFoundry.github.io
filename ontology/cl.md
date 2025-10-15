@@ -2,12 +2,6 @@
 layout: ontology_detail
 id: cl
 title: Cell Ontology
-build:
-  checkout: git clone https://github.com/obophenotype/cell-ontology.git
-  email_cc: cl_edit@googlegroups.com
-  infallible: 1
-  method: vcs
-  system: git
 canonical: cl.owl
 contact:
   email: addiehl@buffalo.edu
@@ -15,9 +9,9 @@ contact:
   label: Alexander Diehl
   orcid: 0000-0001-9990-8331
 dependencies:
-- id: chebi
 - id: go
 - id: ncbitaxon
+- id: omo
 - id: pato
 - id: pr
 - id: ro
@@ -26,10 +20,6 @@ depicted_by: /images/CL-logo.jpg
 description: The Cell Ontology is a structured controlled vocabulary for cell types in animals.
 domain: anatomy and development
 homepage: https://obophenotype.github.io/cell-ontology/
-integration_server: http://build.berkeleybop.org/job/build-cl/
-jobs:
-- id: https://travis-ci.org/obophenotype/cell-ontology
-  type: travis-ci
 label: Cell Ontology
 license:
   label: CC BY 4.0
@@ -43,25 +33,47 @@ products:
   format: owl-rdf/xml
   is_canonical: true
   uses:
-  - uberon
-  - chebi
   - go
-  - pr
-  - pato
   - ncbitaxon
+  - omo
+  - pato
+  - pr
   - ro
+  - uberon
 - id: cl.obo
   title: CL obo format edition
   derived_from: cl.owl
   description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
   format: obo
-- id: cl/cl-basic.obo
+- id: cl.json
+  title: CL OBOGraph-JSON format edition
+  derived_from: cl.owl
+  description: Complete ontology, plus inter-ontology axioms, and imports modules merged in
+  format: json
+- id: cl/cl-basic.owl
   title: Basic CL
   description: Basic version, no inter-ontology axioms
+  format: owl-rdf/xml
+- id: cl/cl-basic.obo
+  title: Basic CL (OBO version)
+  description: Basic version, no inter-ontology axioms
   format: obo
+- id: cl/cl-basic.json
+  title: Basic CL (OBOGraph-JSON version)
+  description: Basic version, no inter-ontology axioms
+  format: json
 - id: cl/cl-base.owl
   title: CL base module
   description: complete CL but with no imports or external axioms
+  format: owl-rdf/xml
+- id: cl/cl-base.obo
+  title: CL base module (OBO version)
+  description: complete CL but with no imports or external axioms
+  format: obo
+- id: cl/cl-base.json
+  title: CL base module (OBOGraph-JSON version)
+  description: complete CL but with no imports or external axioms
+  format: json
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/27377652
   title: 'The Cell Ontology 2016: enhanced content, modularization, and ontology interoperability.'
@@ -94,6 +106,15 @@ usages:
     title: 'The human body at cellular resolution: the NIH Human Biomolecular Atlas Program.'
   type: annotation
   user: https://hubmapconsortium.org/
+- description: The single-cell transcriptomics platform CZ CELLxGENE uses CL to annotate all cell types. All datasets on CellXGene are annotated according to a standard schema that specifies the use of CL to record Cell Type.
+  examples:
+  - description: A CELLxGENE Cell Guide entry for 'luminal adaptive secretory precursor cell of mammary gland', which includes the CL ID (CL:4033057), CL definition and a visualizer of CL hierarchy
+    url: https://cellxgene.cziscience.com/cellguide/CL:4033057
+  publications:
+  - id: https://doi.org/10.1101/2021.04.05.438318
+    title: 'CELLxGENE: a performant, scalable exploration platform for high dimensional sparse matrices'
+  type: annotation
+  user: https://cellxgene.cziscience.com/
 - description: The Human Cell Atlas (HCA) is an international group of researchers using a combination of these new technologies to create cellular reference maps. The HCA use CL to annotate cells in their reference maps.
   examples:
   - description: HCA collection studies that are related B cell (CL:0000236) that is filtered through CL annotation
@@ -116,7 +137,7 @@ usages:
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/25776021
     title: Ontology application and use at the ENCODE DCC
-  seeAlso: https://www.biosharing.org/biodbcore-000034
+  seeAlso: https://doi.org/10.25504/FAIRsharing.v0hbjs
   type: annotation
   user: https://www.encodeproject.org/
 - description: FANTOM5 is using Uberon and CL to annotate samples allowing for transcriptome analyses with cell-type and tissue-level specificity.
@@ -128,7 +149,18 @@ usages:
 activity_status: active
 ---
 
-The Cell Ontology is designed as a structured controlled vocabulary for cell types. This ontology was constructed for use by the model organism and other bioinformatics databases, where there is a need for a controlled vocabulary of cell types. This ontology is not organism specific. It covers cell types from prokaryotes to mammals. However, it excludes plant cell types, which are covered by PO.
+Cell Ontology (CL) is an ontology designed to classify and describe cell types across different organisms. 
+It serves as a resource for model organism and bioinformatics databases. 
+The ontology covers a broad range of cell types in animal cells, with over 2700 cell type classes, 
+and provides high-level cell type classes as mapping points for cell type classes in ontologies 
+representing other species, such as the Plant Ontology or Drosophila Anatomy Ontology. 
+Integration with other ontologies such as Uberon, GO, CHEBI, PR, and PATO enables linking cell types to anatomical structures, biological processes, and other relevant concepts. 
+
+The Cell Ontology was created in 2004 and has been a core OBO Foundry ontology since the start of the Foundry. 
+Since then, CL has been adopted by various efforts,  including the HuBMAP project, Human Cell Atlas (HCA), 
+cellxgene platform, Single Cell Expression Atlas, BRAIN Initiative Cell Census Network (BICCN), 
+ArrayExpress, The Cell Image Library, ENCODE, and FANTOM5, for annotating cell types and 
+facilitating cellular reference mapping, as documented through various publications and examples.
 
 ## Integration with other ontologies
 
@@ -148,6 +180,10 @@ Uberon and various phenotype ontologies.
 
 The following are some applications of the cell ontology along with their publications: 
 
+**CZ CELLxGENE**
+
+CZI Single-Cell Biology Program, Shibla Abdulla, Brian Aevermann, Pedro Assis, Seve Badajoz, Sidney M. Bell, Emanuele Bezzi, et al. 2023. “CZ CELL×GENE Discover: A Single-Cell Data Platform for Scalable Exploration, Analysis and Modeling of Aggregated Data.” bioRxiv. [doi:10.1101/2023.10.30.563174](https://doi.org/10.1101/2023.10.30.563174).
+
 **HuBMAP**
 
 HuBMAP Consortium (2019) The human body at cellular resolution: the NIH Human Biomolecular Atlas Program. Nature, 574, 187–192
@@ -155,6 +191,10 @@ HuBMAP Consortium (2019) The human body at cellular resolution: the NIH Human Bi
 **Human Cell Atlas (HCA)**
 
 Regev,A., Teichmann,S.A., Lander,E.S., Amit,I., Benoist,C., Birney,E., Bodenmiller,B., Campbell,P., Carninci,P., Clatworthy,M., et al. (2017) The Human Cell Atlas. Elife, 6.
+
+**Kidney Precision Medicine Project (KPMP)**
+
+Ong E, Wang LL, Schaub J, O'Toole JF, Steck B, Rosenberg AZ, Dowd F, Hansen J, Barisoni L, Jain S, de Boer IH, Valerius MT, Waikar SS, Park C, Crawford DC, Alexandrov T, Anderton CR, Stoeckert C, Weng C, Diehl AD, Mungall CJ, Haendel M, Robinson PN, Himmelfarb J, Iyengar R, Kretzler M, Mooney S, and He Y, Kidney Precision Medicine Project. Modeling Kidney Disease Using Ontology: insights from the Kidney Precision Medicine Project. Nature Review Nephrology. 2020 Nov;16(11):686-696. doi: 10.1038/s41581-020-00335-w. PMID: 32939051. PMCID: PMC8012202.
 
 **Single Cell Expression Atlas**
 

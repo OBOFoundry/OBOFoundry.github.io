@@ -6,24 +6,16 @@ browsers:
 - title: Planteome browser
   label: Planteome
   url: http://browser.planteome.org/amigo
-build:
-  checkout: git clone https://github.com/Planteome/plant-ontology.git
-  infallible: 1
-  method: vcs
-  system: git
 contact:
   email: jaiswalp@science.oregonstate.edu
   github: jaiswalp
   label: Pankaj Jaiswal
   orcid: 0000-0002-1005-8383
-depicted_by: http://planteome.org/sites/default/files/garland_logo.PNG
+depicted_by: https://raw.githubusercontent.com/Planteome/plant-ontology/refs/heads/master/Planteome_profile.jpg
 description: The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.
 domain: anatomy and development
 homepage: http://browser.planteome.org/amigo
 in_foundry_order: 1
-jobs:
-- id: https://travis-ci.org/Planteome/plant-ontology
-  type: travis-ci
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
@@ -38,11 +30,6 @@ publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/29186578
   title: 'The Planteome database: an integrated resource for reference ontologies, plant genomics and phenomics.'
 repository: https://github.com/Planteome/plant-ontology
-review:
-  date: 2013
-  document:
-    label: PDF
-    link: https://drive.google.com/open?id=0B8vqEgF1N0NIV1o0N21UOHlLSmc
 taxon:
   id: NCBITaxon:33090
   label: Viridiplantae

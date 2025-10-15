@@ -16,7 +16,7 @@ The ontology needs to reflect changes in scientific consensus to remain accurate
 
 ## Implementation
 
-Ideally, the maintainer of an ontology should actively monitor for any changes in scientific consensus, but at a minimum, the maintainer needs to be responsive in a timely manner (less than 3 months) to requests from the community pointing out such changes in scientific consensus. Tentatively, we consider scientific consensus to be reached if multiple publications by independent labs over a year come to the same conclusion, and there is no or limited (<10%) dissenting opinions published in the same time frame. In cases when an area remains controversial, and no consensus is reached, then it is up to the ontology maintainer to either leave out the controversial term, or pick a viewpoint for practical considerations, and note the presence of controversy in an editor note.
+Ideally, the maintainer of an ontology SHOULD actively monitor for any changes in scientific consensus, but--at a minimum--the maintainer MUST respond to requests from the community pointing out such changes in accordance with the [Responsiveness principle](http://obofoundry.org/principles/fp-020-responsiveness.html). Tentatively, we consider scientific consensus to be reached if multiple publications by independent labs over a year come to the same conclusion, and there is no or limited (<10%) dissenting opinions published in the same time frame. In cases when an area remains controversial, and no consensus is reached, then it is up to the ontology maintainer to either leave out the controversial term, or pick a viewpoint for practical considerations, and note the presence of controversy in an editor note.
 
 ## Examples
 

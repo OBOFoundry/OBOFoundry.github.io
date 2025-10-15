@@ -23,5 +23,5 @@ products:
 - id: pdumdv.obo
 repository: https://github.com/obophenotype/developmental-stage-ontologies
 tracker: https://github.com/obophenotype/developmental-stage-ontologies/issues
-activity_status: active
+activity_status: inactive
 ---

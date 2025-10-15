@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: fovt
 title: FuTRES Ontology of Vertebrate Traits
-build:
-  checkout: git clone https://github.com/futres/fovt.git
-  path: .
-  system: git
 contact:
   email: meghan.balk@gmail.com
   github: megbalk
@@ -23,9 +19,6 @@ dependencies:
 description: FuTRES Ontology of Vertebrate Traits is an application ontology used to convert vertebrate trait data in spreadsheet to triples. FOVT leverages the BioCollections Ontology (BCO) to link observations of individual specimens to their trait values. Traits are defined in the Ontology of Biological Attributes (OBA).
 domain: phenotype
 homepage: https://github.com/futres/fovt
-jobs:
-- id: https://travis-ci.org/futres/fovt
-  type: travis-ci
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/

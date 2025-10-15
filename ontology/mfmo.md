@@ -23,7 +23,5 @@ taxon:
   id: NCBITaxon:40674
   label: Mammalian
 tracker: https://github.com/RDruzinsky/feedontology/issues
-activity_status: active
+activity_status: inactive
 ---
-
-ADD DESCRIPTION HERE

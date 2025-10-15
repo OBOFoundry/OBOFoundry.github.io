@@ -1,12 +1,11 @@
 ---
 layout: ontology_detail
 id: eco
-title: Evidence ontology
-build:
-  infallible: 1
-  method: obo2owl
-  notes: switch to vcs
-  source_url: https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.obo
+title: Evidence and Conclusion Ontology
+browsers:
+- title: ECO Browser
+  label: ECO
+  url: https://www.evidenceontology.org/browse
 contact:
   email: mgiglio@som.umaryland.edu
   github: mgiglio99
@@ -19,9 +18,6 @@ funded_by:
 - id: https://www.nsf.gov/awardsearch/showAward?AWD_ID=1458400
   title: NSF ABI-1458400
 homepage: https://www.evidenceontology.org
-jobs:
-- id: https://travis-ci.org/evidenceontology/evidenceontology
-  type: travis-ci
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/

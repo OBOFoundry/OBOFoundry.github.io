@@ -4,8 +4,6 @@ id: fp-013-notification
 title: Notification of Changes (principle 13)
 ---
 
-**THE TEXT HEREIN IS A DRAFT, PENDING FINAL VETTING**
-----------------------------------------------------
 GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; [Implementation](#implementation) &#124; [Examples/Counter&#8209;Examples](#examples) &#124; [Criteria&nbsp;for&nbsp;Review](#criteria-for-review) &#124; [Feedback/Discussion](#feedback-and-discussion)
 
 Summary
@@ -22,9 +20,13 @@ and will allow updates to any dependencies (e.g., terms, annotations, ontologies
 
 Recommendations and Requirements
 -------
-Ontology owners SHOULD, in accordance with this principle, pre-announce changes to a primary group of users who actively monitor the ontology and its changes, for example, via a mailing list (ontology-specific or more general, as deemed suitable), a social media group (relevant to the ontology), or via announcements on a home page or elsewhere.
+Ontology owners SHOULD, in accordance with this principle, pre-announce changes to a primary group of users who actively monitor the ontology and its changes, for example, via a mailing list (ontology-specific or more general, as deemed suitable), a social media group (relevant to the ontology), or via announcements on a home page or elsewhere. The lead time for announcements can be determined according to release lifecycles of major ontology applications and is expected to vary by domain.
 
-The lead time for announcements can be determined according to release lifecycles of major ontology applications and is expected to vary by domain.
+The kinds of changes that might warrant a pre-announcement include (but are not limited to):
+- <i><b>Planned obsoletions.</b></i> Terms that will be made obsolete. Such announcements can provide users the opportunity to intervene if necessary.
+- <i><b>Major hierarchy rearrangements.</b></i> Moving branches from one point in the hierarchy to another, especially large branches affecting many terms or those close to the top of the hierarchy.
+
+Term additions and small hierarchy changes are not expected to need pre-announcement but doing so is not prohibited. 
 
 Implementation
 --------------

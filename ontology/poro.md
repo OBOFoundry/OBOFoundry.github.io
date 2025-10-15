@@ -2,12 +2,6 @@
 layout: ontology_detail
 id: poro
 title: Porifera Ontology
-build:
-  checkout: git clone https://github.com/obophenotype/porifera-ontology.git
-  infallible: 1
-  method: vcs
-  path: .
-  system: git
 contact:
   email: robert.thacker@stonybrook.edu
   github: bobthacker
@@ -19,9 +13,6 @@ dependencies:
 description: An ontology covering the anatomy of the taxon Porifera (sponges)
 domain: anatomy and development
 homepage: https://github.com/obophenotype/porifera-ontology
-jobs:
-- id: https://travis-ci.org/obophenotype/porifera-ontology
-  type: travis-ci
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/
@@ -47,7 +38,7 @@ An ontology covering the anatomy of Porifera (sponges)
 
 ## Browse ##
 
-The ontology can be browsed in [OntoBee](http://www.ontobee.org/browser/index.php?o=PORO)
+The ontology can be browsed in [OntoBee](https://www.ontobee.org/ontology/PORO)
 
 Example entry points:
 

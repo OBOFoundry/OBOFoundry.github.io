@@ -21,6 +21,9 @@ products:
 - id: cob/cob-base.owl
   title: COB base module
   description: base module for COB
+- id: cob/cob-native.owl
+  title: COB native module
+  description: COB with native IDs preserved rather than rewired to OBO IDs
 - id: cob/cob-to-external.owl
   title: COB to external
   type: BridgeOntology
@@ -33,4 +36,4 @@ tracker: https://github.com/OBOFoundry/COB/issues
 activity_status: active
 ---
 
-The Core Ontology for Biology and Biomedicine (COB) brings together key terms from a wide range of OBO projects into a single, small ontology. The goal is to improve interoperabilty and reuse across the OBO community through better coordination of key terms.
+The Core Ontology for Biology and Biomedicine (COB) brings together key terms from a wide range of OBO projects into a single, small ontology. The goal is to improve interoperability and reuse across the OBO community through better coordination of key terms.

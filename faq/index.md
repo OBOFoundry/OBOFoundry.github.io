@@ -12,7 +12,7 @@ title: OBO Foundry Frequently Asked Questions
 
 ### Citation
 
-- [How do I cite the OBO Foundry?](/registry/publications.html)
+- [How do I cite the OBO Foundry?](/citation/RelatedPublications.html)
 - [How do I cite a specific ontology?](/docs/Citation.html)
 
 ### Terms
@@ -29,12 +29,15 @@ title: OBO Foundry Frequently Asked Questions
 - [How do I edit the metadata for my ontology?](/faq/how-do-i-edit-metadata.html)
 - [What are permissible values in the metadata file, e.g. for 'publications'?](/faq/permissible-metadata-content.html)
 - [What is the `build` object in the ontology metadata?](/faq/what-is-the-build-field.html)
-- [What does it mean for an ontology to be flagged as 'inactive', 'orphaned' or 'obsolete'?](/docs/OntologyStatus.html)
+- [What does it mean for an ontology to be flagged as 'inactive', 'unresponsive', 'orphaned' or 'obsolete'?](/docs/OntologyStatus.html)
 
-### OBO Dashboard
+### OBO Foundry Dashboard
 
-- [What is the OBO Dashboard?](/faq/dashboard.html)
+- [What is the OBO Foundry Dashboard?](/faq/dashboard.html)
+- [What does it mean for an ontology to "pass" the Dashboard?](/faq/dashboard.html)
 - [How can I assess my ontology using the OBO Dashboard?](/faq/dashboard.html)
+- [What if I want to check my ontology's OBO compliance without submitting it to the OBO Foundry?](/faq/dashboard.html)
+- [Where can I find information describing how to rectify issues reported by the OBO Dashboard?](/faq/dashboard.html)
 
 ### Guides
 

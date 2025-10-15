@@ -1,121 +1,35 @@
 ---
 layout: default
 ---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-<div class="content">
-  <div class="row">
-    <div class="span7 column">
-      <h1>{{ page.title }}</h1>
+    <header class="post-header">
+        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+        <p class="post-meta">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {{ page.date | date: date_format }}
+            </time>
+            {%- if page.modified_date -%}
+            ~
+            {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+            <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+                {{ mdate | date: date_format }}
+            </time>
+            {%- endif -%}
+            {%- if page.author -%}
+            • {% for author in page.author %}
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
+            {%- if forloop.last == false %}, {% endif -%}
+            {% endfor %}
+            {%- endif -%}
+        </p>
+    </header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+        {{ content }}
     </div>
 
-    <div class="span7 columns">
-      {{ page.summary }}
-      <br />
-    </div>
-    <div>
-      <img
-        class="listImage img-rounded"
-        border="0"
-        src="{{ page.image }}"
-        alt="{{ page.title }} image"
-      />
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="span7 columns">{{ content }}</div>
-  </div>
-
-  <div class="pager hidden-phone hidden-tablet">
-    <a
-      class="prev"
-      href="{{ page.previous.url }}"
-      title="Previous Post: {{page.previous.title}}"
-      ><i class="icon-arrow-left icon-white"></i
-    ></a>
-    <a
-      class="next"
-      href="{{ page.next.url }}"
-      title="Previous Post: {{page.next.title}}"
-      ><i class="icon-arrow-right icon-white"></i
-    ></a>
-  </div>
-
-  <div class="row">
-    <div class="span7 column">
-      <p>
-        <i>{{ page.author}}</i>
-        <i class="icon-calendar"></i> {{ page.date | date: "%B %e, %Y" }} |
-        <i class="icon-comment"></i> <a href="{{ page.url }}#disqus_thread"></a>
-        <br />
-        <a
-          href="https://twitter.com/share"
-          class="twitter-share-button"
-          data-via="{{ site.project.twitter }}"
-          >Tweet</a
-        >
-      </p>
-    </div>
-  </div>
-
-  {% if page.comments %}
-  <div class="row">
-    <div class="span7 columns">
-      <h2>Comments Section</h2>
-      <p>Feel free to comment on the post but keep it clean and on topic.</p>
-      <div id="disqus_thread"></div>
-      <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = "{{ site.comments.disqus.short_name }}";
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function () {
-          var dsq = document.createElement("script");
-          dsq.type = "text/javascript";
-          dsq.async = true;
-          dsq.src = "http://" + disqus_shortname + ".disqus.com/embed.js";
-          (
-            document.getElementsByTagName("head")[0] ||
-            document.getElementsByTagName("body")[0]
-          ).appendChild(dsq);
-        })();
-      </script>
-      <noscript
-        >Please enable JavaScript to view the
-        <a href="http://disqus.com/?ref_noscript"
-          >comments powered by Disqus.</a
-        ></noscript
-      >
-      <a href="http://disqus.com" class="dsq-brlink"
-        >comments powered by <span class="logo-disqus">Disqus</span></a
-      >
-    </div>
-  </div>
-  {% endif %}
-
-  <!-- Twitter -->
-  <script>
-    !(function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0];
-      if (!d.getElementById(id)) {
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }
-    })(document, "script", "twitter-wjs");
-  </script>
-
-  <!-- Google + -->
-  <script type="text/javascript">
-    (function () {
-      var po = document.createElement("script");
-      po.type = "text/javascript";
-      po.async = true;
-      po.src = "https://apis.google.com/js/plusone.js";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(po, s);
-    })();
-  </script>
-</div>
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

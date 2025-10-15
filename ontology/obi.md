@@ -41,11 +41,6 @@ publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/27128319
   title: The Ontology for Biomedical Investigations
 repository: https://github.com/obi-ontology/obi
-review:
-  date: 2013
-  document:
-    label: PDF
-    link: https://drive.google.com/open?id=0B8vqEgF1N0NIMFlSM3RvdUxGTnc
 tracker: http://purl.obolibrary.org/obo/obi/tracker
 usages:
 - description: The Immune Epitope Database (IEDB) is funded by NIAID that catalogs experimental data on antibody and T cell epitopes studied in humans, non-human primates, and other animal species in the context of infectious disease, allergy, autoimmunity and transplantation.
@@ -78,7 +73,7 @@ activity_status: active
 
 The Ontology for Biomedical Investigations (OBI) project is developing an integrated ontology for the description of life-science and clinical investigations.
 
-- [Browse OBI on Ontobee](http://www.ontobee.org/browser/index.php?o=obi)
+- [Browse OBI on Ontobee](https://www.ontobee.org/ontology/obi)
 - Download OBI: [http://purl.obolibrary.org/obo/obi.owl](http://purl.obolibrary.org/obo/obi.owl)
 - [OBI homepage](http://obi-ontology.org)
 - [OBI mailing list](http://groups.google.com/group/obi-users)

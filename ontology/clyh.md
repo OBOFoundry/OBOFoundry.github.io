@@ -7,8 +7,8 @@ build:
   path: .
   system: git
 contact:
-  email: lucas.leclere@obs-vlfr.fr
-  github: L-Leclere
+  email: lucas.leclere@obs-banyuls.fr
+  github: Leclere-L
   label: Lucas Leclere
   orcid: 0000-0002-7440-0467
 dependencies:

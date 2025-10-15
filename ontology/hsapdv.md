@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: hsapdv
 title: Human Developmental Stages
-build:
-  infallible: 1
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/hsapdv/hsapdv.obo
 contact:
   email: frederic.bastian@unil.ch
   github: fbastian

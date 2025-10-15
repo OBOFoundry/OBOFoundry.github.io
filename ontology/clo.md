@@ -3,10 +3,10 @@ layout: ontology_detail
 id: clo
 title: Cell Line Ontology
 contact:
-  email: siiraa@umich.edu
-  github: siiraa
-  label: Sirarat Sarntivijai
-  orcid: 0000-0002-2548-641X
+  email: zhengj2007@gmail.com
+  github: zhengj2007
+  label: Jie Zheng
+  orcid: 0000-0002-2999-0103
 dependencies:
 - id: cl
 - id: doid
@@ -14,7 +14,7 @@ dependencies:
 - id: uberon
 description: An ontology to standardize and integrate cell line information and to support computer-assisted reasoning.
 domain: anatomy and development
-homepage: http://www.clo-ontology.org
+homepage: https://github.com/CLO-Ontology/CLO
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/
