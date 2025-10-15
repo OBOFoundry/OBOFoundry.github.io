@@ -30,7 +30,9 @@ technical:
 - Use standard synonym types [#2450](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2450)
 - Modeling metaclasses [#2454](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2454)
 - Ontology merging metadata [#1548](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1548)
-- Ontology metadata requirements [#1365](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1365)
+- ***MORE DISCUSSION NEEDED*** Ontology metadata requirements [#1365](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1365)
+  - DECISION: leave Optional field off from the table. Discussion to be continued about the use of dcterms:date. Will make 2 tables: 1 with MUST and SHOULD, the other with other potential fields (including those NOT to use) with guidelines indicated (would include the list items given in the file, below the table). We should also push for recommended format for optional fields (ex. ORCID for creator/contributor). 
+
 - ***MORE DISCUSSION NEEDED*** Language tags [#479](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/479)
   - For rdfs:label and IAO:0000115 annotation assertions, we discourage the use of datatype declarations such as `xsd:string`. It is important to note that `xsd:string` is essentially redundant in OWL/RDF, so "assay" and "assay"^^xsd:string should be the exact same thing. However, a lot of tooling may be confused by the difference, xsd:string datatype assertion SHOULD be omitted in general for all annotations, but MUST be omitted for rdfs:label and IAO:0000115.
   - To designate rdfs:label, and IAO:0000115 annotations in a language different from English, a [valid RDF language tag](https://www.w3.org/TR/rdf11-concepts/#section-Graph-Literal) MUST be specified, for example, "Krankheit"@de.
@@ -44,7 +46,7 @@ content:
 
 communication:
 
-- Ontology subsets  documentation [#466](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/466)
+- Ontology subsets documentation [#466](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/466)
 - domain metadata tag [#2779](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2779)
 
 
@@ -53,20 +55,9 @@ Q: The newly-accepted guideline recommends against importing terms from a third 
 Q: What about when importing from the original source ontology? Principle 1 for term import says to “include any annotations for term or definition editors from the original ontology”. Should that be revisited?
 James: There’s nothing special about definitions – any annotation or axiom could get out of sync, and any could be important to someone. Recommend against stripping this recommendation.
 CONCLUSION: keep all information.
-imports: recommend that imported terms be tagged with the ontology from which they were *directly* imported? (no issue)
-Terms can be imported from the ‘source’ ontology or a third party ontology; this recommendation would provide useful tracking information should things go wrong.
-P1 says  ‘imported from’ (IAO:0000412) should be used “to link back to the group (i.e. ontology) maintaining it”
-Which method (annotating the direct import source vs annotating the maintaining ontology) would provide the most benefit to end users? To term re-users?
-Q: Should we only recommend this tag when from a third party, or always?
-If using OntoFox, it will indicate the direct import. ROBOT does it *only when asked*
-James O: would not recommend using ‘imported from’ in guideline.
-CONCLUSION: leave out of guidelines
+
 ACTION (DN): make issue regarding P1 inclusion of ‘imported from’
-imports: standardize how imported ontologies are noted (#424)
-For individual terms there is ‘imported from’ (IAO:0000412), recommended as part of P1. (Note: the above discussion might change what is said there.)
-Q: regardless of how it could be indicated (for example, using a yet-to-be-minted metadata tag such as ‘imports’ or ‘has import’--not to be confused with the directive ‘owl:imports’), do we want to make a recommendation to this effect? The context is within an already-merged ontology (which would not have any import statements).
-James O: this consideration is very semweb-focused but might not be very useful
-CONCLUSION: Don’t bother with this.
+
 
 
 
