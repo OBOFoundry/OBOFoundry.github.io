@@ -53,10 +53,4 @@ communication:
 - domain metadata tag [#2779](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2779)
 
 
-ACTION (DN): make issue regarding P1 inclusion of ‘imported from’ (we don't want to recommend anymore)
-
-
-
-
-
 
