@@ -17,6 +17,7 @@ homepage: http://environmentontology.github.io/gaz/
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/
+preferredPrefix: GAZ
 mailing_list: https://groups.google.com/forum/#!forum/obo-gazetteer
 products:
 - id: gaz.owl
