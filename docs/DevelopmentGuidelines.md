@@ -20,7 +20,9 @@ title: Ontology Project Management Guidelines
 ### Communication
 
 - Publications metadata [#1671](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1671)
-- ***MORE DISCUSSION NEEDED*** Short ontology descriptions [#1968](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1968)
+- Short ontology descriptions [#1968](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1968)
+  - No real support for the idea that this is a problem; However, going forward, no objections to this as a SHOULD. We need to add guidance for new ontologies to utilize a common format. This would appear on the YAML template https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/.github/ISSUE_TEMPLATE/new-ontology.yml 
+
 - Documentation for license [#1840](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1840)
 
 
