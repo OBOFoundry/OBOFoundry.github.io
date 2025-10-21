@@ -1411,9 +1411,9 @@ ontologies:
   browsers:
   - label: DO
     title: DO Browser
-    url: http://www.disease-ontology.org/
+    url: https://disease-ontology.org/
   build:
-    source_url: https://github.com/DiseaseOntology/DiseaseDriversOntology/tree/main/src/ontology/disdriv.owl
+    source_url: https://raw.githubusercontent.com/DiseaseOntology/DiseaseDriversOntology/refs/heads/main/src/ontology/disdriv.owl
   contact:
     email: lynn.schriml@gmail.com
     github: lschriml
@@ -1423,7 +1423,7 @@ ontologies:
     ExO ontology exposure stressors. An application ontology. Built in collaboration
     with EnvO, ExO, ECTO and ChEBI.
   domain: health
-  homepage: http://www.disease-ontology.org
+  homepage: https://disease-ontology.org/
   id: disdriv
   layout: ontology_detail
   license:
@@ -1448,13 +1448,13 @@ ontologies:
   - description: Human Disease Ontology
     examples:
     - description: fetal alcohol syndrome, has exposure stressor some alcohol
-      url: https://www.disease-ontology.org/?id=DOID:0050665
-    user: https://www.disease-ontology.org
+      url: https://disease-ontology.org/?id=DOID:0050665
+    user: https://disease-ontology.org/
 - activity_status: active
   browsers:
   - label: DO
     title: DO Browser
-    url: http://www.disease-ontology.org/do
+    url: https://disease-ontology.org/do
   build:
     infallible: 1
     method: obo2owl
@@ -1464,11 +1464,11 @@ ontologies:
     github: lschriml
     label: Lynn Schriml
     orcid: 0000-0001-8910-9851
-  depicted_by: http://www.disease-ontology.org/media/images/DO_logo.jpg
+  depicted_by: https://disease-ontology.org/media/images/DO_logo_teal.png
   description: An ontology for describing the classification of human diseases organized
     by etiology.
   domain: health
-  homepage: http://www.disease-ontology.org
+  homepage: https://disease-ontology.org
   id: doid
   in_foundry_order: 1
   layout: ontology_detail
@@ -1514,8 +1514,8 @@ ontologies:
   - description: MGI disease model annotations use DO
     examples:
     - description: physical disorder
-      url: http://www.informatics.jax.org/disease/DOID:0080015
-    user: http://www.informatics.jax.org/disease
+      url: https://www.informatics.jax.org/disease/DOID:0080015
+    user: https://www.informatics.jax.org/disease
   - description: Immune Epitope Database
     examples:
     - description: Antibody and T cell epitopes associated with human diseases
