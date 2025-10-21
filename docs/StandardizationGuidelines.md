@@ -27,6 +27,8 @@ title: Ontology Standardization Guidelines
   - For case (b), if the definition is based on the NCIt definition, the new term MUST be linked to the original NCIt term to conform to the [NCIt license](https://evs.nci.nih.gov/license) requirements. Note: this does not apply to reuse of term labels.
 - Preferred source for imported terms (no tracker item)
   - Imported terms SHOULD be drawn from the ontology that is the preferred source for the term. The preferred source is usually the ontology with the same ID space as the term, but it can instead be the ontology that currently maintains the term. Importing a term from a secondary source is not recommended because there is no guarantee that the secondary source has the most up-to-date term information, and thus drawing from the original would avoid possible conflicts due to term divergence.
+- Whole ontology imports ([tracker item](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2769))
+  - Unless necessary, an entire ontology SHOULD NOT be imported if only a subset of terms is needed. To import terms on an individual basis, [ROBOT](https://robot.obolibrary.org/extract) and OntoFox are useful tools.
 
 ### Releases
 
