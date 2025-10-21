@@ -45,7 +45,7 @@ content:
 - Term adoption [#2330](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2330) and [#2324](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2324)
 - Standardized xref prefixes in ontologies [#525](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/525)
 - ***MORE DISCUSSION NEEDED*** Referring to taxa not in NCBITaxon [#434](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/434)
-- Recommend against importing entire ontology unless necessary [#2769](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2769) 
+ 
 
 communication:
 
