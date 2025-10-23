@@ -66,7 +66,7 @@ Other topics will be added as well (see Ongoing Discussions, below).
 
 * Join the discussion: GitHub Issue: [#2563](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2563) \
 Key Discussion: PBPKO aims to capture concepts used in physiologically based pharmacokinetic modeling. The ontology has undergone multiple rounds of updates in response to feedback. The most recent submission includes modifications that require reviewer follow-up. The review process remains open until these are assessed. 
-* See also: Newsletter[ 7](https://obofoundry.org/newsletter/2025/01/23/7th-issue-newsletter.html).
+* See also: Newsletter [7](https://obofoundry.org/newsletter/2025/01/23/7th-issue-newsletter.html).
 
 [Experimental Measurements, Purposes, and Treatments Ontology (EMPTY)](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2753)
 
