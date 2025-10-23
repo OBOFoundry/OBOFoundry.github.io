@@ -11,7 +11,7 @@ author:
 
 Over the past two years, this newsletter has reported on community progress, revisions to OBO principles, and developments in shared infrastructure. In this issue, we present updates from the working groups, highlight recent ontology submissions that have been recently accepted or are still undergoing review, and share recent research and tools that strengthen the OBO ecosystem.
 
-The OBO Foundry depends on active community participation. We encourage you to contribute through [ontology development](https://github.com/OBOFoundry), [tool building](https://github.com/OBOFoundry/OBOFoundry.github.io/pulls), [raising issues](https://github.com/OBOFoundry/OBOFoundry.github.io/issues),[ joining discussions](https://github.com/OBOFoundry/OBOFoundry.github.io/discussions), and [proposing content](https://obo-communitygroup.slack.com/archives/C044RGNLZEE) for the next newsletter!
+The OBO Foundry depends on active community participation. We encourage you to contribute through [ontology development](https://github.com/OBOFoundry), [tool building](https://github.com/OBOFoundry/OBOFoundry.github.io/pulls), [raising issues](https://github.com/OBOFoundry/OBOFoundry.github.io/issues), [joining discussions](https://github.com/OBOFoundry/OBOFoundry.github.io/discussions), and [proposing content](https://obo-communitygroup.slack.com/archives/C044RGNLZEE) for the next newsletter!
 
 [OBO Foundry Operations Committee.](https://obofoundry.org/docs/OperationsCommittee.html)
 
