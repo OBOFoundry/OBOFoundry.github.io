@@ -48,8 +48,10 @@ Other topics will be added as well (see Ongoing Discussions, below).
     * one with additional potential fields (including those not to use) with guidance.
 * **Language tag guidance ([#479](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/479)):** There is an increasing interest in having OBO ontologies ‘internationalized’ by including, at a minimum, synonyms in other languages. There is an emerging consensus that xsd:string should be omitted for rdfs:label and IAO:0000115. Further discussion is needed on tooling support, default language tags, and consistency across translations. 
   
-  These items will continue to be revisited in future meetings as progress is made.
+These items will continue to be revisited in future meetings as progress is made.
+
 ---
+
 ## Ontologies
 
 ### New Ontologies Accepted in the OBO Foundry Ontology Library
@@ -270,11 +272,7 @@ It fixes a bug that, depending on the ontology being edited, could cause frequen
 
 #### Registration for the International Conference on Biomedical Ontology (ICBO 2025) [is now open:](https://icbo-conference.github.io/icbo2025/registration/)
 
-
-#### [https://icbo-conference.github.io/icbo2025/registration/](https://icbo-conference.github.io/icbo2025/registration/). 
-
-
-#### ICBO 2025 is also accepting submissions for short talks of 10–15 minutes. Submissions should be one-page abstracts and are due by October 24, 2025. Acceptance notifications will be sent on October 30, 2025. These talks are intended to support collaboration with the ICBO community and provide an opportunity for feedback on ongoing work. Abstracts can be submitted through the CMT system:[ https://cmt3.research.microsoft.com/ICBO2025/Track/6/Submission/Create](https://cmt3.research.microsoft.com/ICBO2025/Track/6/Submission/Create). 
+ICBO 2025 is also accepting submissions for short talks of 10–15 minutes. Submissions should be one-page abstracts and are due by October 24, 2025. Acceptance notifications will be sent on October 30, 2025. These talks are intended to support collaboration with the ICBO community and provide an opportunity for feedback on ongoing work. Abstracts can be submitted through the CMT system:[ https://cmt3.research.microsoft.com/ICBO2025/Track/6/Submission/Create](https://cmt3.research.microsoft.com/ICBO2025/Track/6/Submission/Create). 
 
 
 #### For questions, please contact Asiya Yu Lin ([ontology.world@gmail.com](mailto:ontology.world@gmail.com)).
