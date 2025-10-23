@@ -56,7 +56,7 @@ Other topics will be added as well (see Ongoing Discussions, below).
 
 [Exercise Medicine Ontology (EXMO)](https://obofoundry.org/ontology/exmo.html)
 
-* GitHub Issue:[ #2615](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2615)
+* GitHub Issue:[#2615](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2615)
 * Key Discussion: EXMO provides standardized terms for exercise physiology, training interventions, performance assessment, and health outcomes related to physical activity. Following review, the ontology was approved for inclusion in the OBO Foundry with consensus and no objections raised.
 * See also: Newsletters [8.](https://obofoundry.org/newsletter/2025/06/16/8th-issue-newsletter.html)
 
