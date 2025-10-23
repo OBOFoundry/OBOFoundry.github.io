@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: newsletter
-title: "OBO Foundry Newsletter Issue 98"
+title: "OBO Foundry Newsletter Issue 9"
 date: 2025-10-22
 author:
   - OBO Operations Commitee
