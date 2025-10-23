@@ -268,7 +268,7 @@ It fixes a bug that, depending on the ontology being edited, could cause frequen
 ## Events and News
 
 
-#### Registration for the International Conference on Biomedical Ontology (ICBO 2025) is now open:[ ](https://icbo-conference.github.io/icbo2025/registration/)
+#### Registration for the International Conference on Biomedical Ontology (ICBO 2025) [is now open:](https://icbo-conference.github.io/icbo2025/registration/)
 
 
 #### [https://icbo-conference.github.io/icbo2025/registration/](https://icbo-conference.github.io/icbo2025/registration/). 
