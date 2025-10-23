@@ -229,7 +229,7 @@ Artificial Intelligence Ontology (AIO) featured in [issue 5](https://obofoundry.
 
 Change Language for Ontologies and Knowledge Graphs featured in [issue 6](https://obofoundry.org/newsletter/2024/10/14/6th-issue-newsletter.html), now published in Database ([DOI: 10.1093/database/baae133](https://doi.org/10.1093/database/baae133)). The paper, “A change language for ontologies and knowledge graphs”, presents a formal language for representing and managing changes in ontologies and knowledge graphs.
 
-Unified Phenotype Ontology (uPheno) featured in[ issue 6](https://obofoundry.org/newsletter/2024/10/14/6th-issue-newsletter.html), now published in Genetics ([DOI: 10.1093/genetics/iyaf027](https://doi.org/10.1093/genetics/iyaf027)). The paper, “The Unified Phenotype Ontology: a framework for cross-species integrative phenomics,” presents a framework for integrating phenotype data across species to support comparative and translational research.
+Unified Phenotype Ontology (uPheno) featured in [issue 6](https://obofoundry.org/newsletter/2024/10/14/6th-issue-newsletter.html), now published in Genetics ([DOI: 10.1093/genetics/iyaf027](https://doi.org/10.1093/genetics/iyaf027)). The paper, “The Unified Phenotype Ontology: a framework for cross-species integrative phenomics,” presents a framework for integrating phenotype data across species to support comparative and translational research.
 
 
 ---
