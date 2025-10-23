@@ -114,7 +114,7 @@ The revised hierarchy now distinguishes:
 
 This overhaul involved 8 rounds of discussion and touched 18+ metabolism-related issues. Several of these changes required careful annotation review (go-annotation issues [#5827](https://github.com/geneontology/go-ontology/issues/5827), [#5829](https://github.com/geneontology/go-ontology/issues/5829), [#5847](https://github.com/geneontology/go-ontology/issues/5847), [#5859](https://github.com/geneontology/go-ontology/issues/5859)), impacting over 100 experimental annotations across multiple groups. The annotation work involved migrating annotations from obsoleted terms to more specific replacements, reviewing InterPro and Unirule mappings, and ensuring consistency across databases. This demonstrates the collaborative process of modernizing GO to match current glycobiology while maintaining annotation quality.
 
-#### ChEBI
+#### ChEBI 2.0 redesign
 
 The [ChEBI ](https://www.ebi.ac.uk/chebi/)team has launched ChEBI 2.0, a redevelopment of the Chemical Entities of Biological Interest ontology and database. The release updates the entire platform; from infrastructure to user interface; while maintaining data continuity and ontology stability.
 
