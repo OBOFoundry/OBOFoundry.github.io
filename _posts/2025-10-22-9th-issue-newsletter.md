@@ -238,7 +238,7 @@ Unified Phenotype Ontology (uPheno) featured in[ issue 6](https://obofoundry.org
 ## Spotlight on OBO Principles 
 
 
-### [Principle 7: Relations ](https://obofoundry.org/principles/fp-007-relations.html)
+### [Principle 7: Relations](https://obofoundry.org/principles/fp-007-relations.html)
 
 To ensure interoperability and logical consistency across OBO Foundry ontologies, existing relations must be reused whenever possible. The Relations Ontology (RO) serves as the primary source for standard relations. By reusing RO terms, ontologies enable automated reasoning, detection of inconsistencies, and inference of new knowledge across domains. When a required relation is not available in RO, developers are expected to search other OBO ontologies before introducing a new one. Relations intended for broader use should be submitted to RO. If a relation is retained within a local ontology, it must be defined as a sub-property of an appropriate RO parent relation, if it exists.
 
