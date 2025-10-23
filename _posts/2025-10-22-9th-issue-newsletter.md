@@ -116,7 +116,7 @@ This overhaul involved 8 rounds of discussion and touched 18+ metabolism-related
 
 #### ChEBI 2.0 redesign
 
-The [ChEBI ](https://www.ebi.ac.uk/chebi/)team has launched ChEBI 2.0, a redevelopment of the Chemical Entities of Biological Interest ontology and database. The release updates the entire platform; from infrastructure to user interface; while maintaining data continuity and ontology stability.
+The [ChEBI](https://www.ebi.ac.uk/chebi/) team has launched ChEBI 2.0, a redevelopment of the Chemical Entities of Biological Interest ontology and database. The release updates the entire platform; from infrastructure to user interface; while maintaining data continuity and ontology stability.
 
 Key updates:
 
