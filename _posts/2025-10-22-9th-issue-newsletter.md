@@ -48,8 +48,10 @@ Other topics will be added as well (see Ongoing Discussions, below).
     * one with additional potential fields (including those not to use) with guidance.
 * **Language tag guidance ([#479](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/479)):** There is an increasing interest in having OBO ontologies ‘internationalized’ by including, at a minimum, synonyms in other languages. There is an emerging consensus that xsd:string should be omitted for rdfs:label and IAO:0000115. Further discussion is needed on tooling support, default language tags, and consistency across translations. 
   
-  These items will continue to be revisited in future meetings as progress is made.
+These items will continue to be revisited in future meetings as progress is made.
+
 ---
+
 ## Ontologies
 
 ### New Ontologies Accepted in the OBO Foundry Ontology Library
