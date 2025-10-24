@@ -47,5 +47,4 @@ usages:
   examples:
   descripiton: OntONeo serves as a knowledge representation framework to support clinical decision-making and data interoperability in healthcare. It is used in information retrieval applications, enabling structured queries over medical databases and facilitating access to critical obstetric and neonatal health information.
   - url: https://doi.org/10.56238/devopinterscie-267
-  
 activity_status: active
