@@ -11,7 +11,7 @@ description: The Obstetric and Neonatal Ontology is a structured controlled voca
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
-domain: health 
+domain: health
 homepage: https://ontoneo.com/
 mailing_list: http://groups.google.com/group/ontoneo-discuss
 preferredPrefix: ONTONEO
