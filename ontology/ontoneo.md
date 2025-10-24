@@ -39,7 +39,7 @@ usages:
 - user: http://recol.eci.ufmg.br/ (Link to group)
   description: The ReCOL research group uses OntONeo to model and structure biomedical information, particularly in obstetrics and neonatology.
   examples:
-  - url: [Ontology-driven data architecture: fostering interoperability between health systems (in portuguese)](https://mba.eci.ufmg.br/wp-content/uploads/Anais_CBIS_2018_FarinelliAlmeidaLouize.pdf)
+  - url: https://mba.eci.ufmg.br/wp-content/uploads/Anais_CBIS_2018_FarinelliAlmeidaLouize.pdf
     description: The ontology has been applied in studies on data interoperability and semantic integration, improving access to structured medical information and enabling knowledge sharing between systems.
 - user: Health Information Systems and Clinical Decision Support
   examples:
