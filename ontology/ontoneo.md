@@ -20,8 +20,7 @@ products:
   title: ONTONEO
   description: The full version of ONTONEO in OWL format
 build:
- source_url: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/ontoneo.owl
-  - id: ontoneo.owl
+  source_url: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/ontoneo.owl
 tracker: https://github.com/ontoneo-project/Ontoneo/issues
 browsers:
   - label: BioPortal
@@ -41,10 +40,11 @@ usages:
 - user: http://recol.eci.ufmg.br/ (Link to group)
   description: The ReCOL research group uses OntONeo to model and structure biomedical information, particularly in obstetrics and neonatology.
   examples:
-  - url: https://mba.eci.ufmg.br/wp-content/uploads/Anais_CBIS_2018_FarinelliAlmeidaLouize.pdf
-    description: The ontology has been applied in studies on data interoperability and semantic integration, improving access to structured medical information and enabling knowledge sharing between systems.
+    - url: https://mba.eci.ufmg.br/wp-content/uploads/Anais_CBIS_2018_FarinelliAlmeidaLouize.pdf
+      description: The ontology has been applied in studies on data interoperability and semantic integration, improving access to structured medical information and enabling knowledge sharing between systems.
 - user: Health Information Systems and Clinical Decision Support
   examples:
-  descripiton: OntONeo serves as a knowledge representation framework to support clinical decision-making and data interoperability in healthcare. It is used in information retrieval applications, enabling structured queries over medical databases and facilitating access to critical obstetric and neonatal health information.
-  - url: https://doi.org/10.56238/devopinterscie-267
+    - url: https://doi.org/10.56238/devopinterscie-267
+      description: OntONeo serves as a knowledge representation framework to support clinical decision-making and data interoperability in healthcare. It is used in information retrieval applications, enabling structured queries over medical databases and facilitating access to critical obstetric and neonatal health information.
 activity_status: active
+---
