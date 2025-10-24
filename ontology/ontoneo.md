@@ -18,7 +18,7 @@ preferredPrefix: ONTONEO
 products:
 - id: ontoneo.owl
   title: ONTONEO
-  description: The full version of ONTONEO in OWL format.
+  description: The full version of ONTONEO in OWL format
 build:
  source_url: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/ontoneo.owl
   - id: ontoneo.owl
@@ -31,8 +31,10 @@ browsers:
     title: OntoBee Browser
     url: https://ontobee.org/ontology/ONTONEO
 publications:
-- id: DOI 10.5281/zenodo.17429771
+- id: https://doi.org/10.5281/zenodo.17429771
   title: "OntONeo: The Obstetric and Neonatal Ontology"
+- id: https://doi.org/10.22477/ISKO.25.99
+  title: Formal Ontologies in Knowledge Organization within the Obstetric and Neonatal Domain
 repository: https://github.com/ontoneo-project/Ontoneo
 tracker: https://github.com/ontoneo-project/Ontoneo/issues
 usages:
@@ -44,12 +46,6 @@ usages:
 - user: Health Information Systems and Clinical Decision Support
   examples:
   descripiton: OntONeo serves as a knowledge representation framework to support clinical decision-making and data interoperability in healthcare. It is used in information retrieval applications, enabling structured queries over medical databases and facilitating access to critical obstetric and neonatal health information.
-- user: Hospital Felício Rocho, Belo Horizonte
-  examples:
-  description: Hospital Felício Rocho is a reference center in Belo Horizonte for high-complexity healthcare, including obstetrics and gynecology. The hospital integrates advanced technologies and research in medical informatics to improve patient care and data management.
-  - url: https://www.feliciorocho.org.br/
-      description: Application of ontology-driven healthcare data management for obstetric and gynecological care. DOI:10.56238/devopinterscie-267
+  - url: https://doi.org/10.56238/devopinterscie-267
   
 activity_status: active
-
-The OntONeo suite is a collection of open ontologies available about Obstetric and Neonatal domain, currently designed to be composed by three complementary sub-ontologies covering several data from electronic health records (EHRs) involved in the care of the pregnant woman, and of her baby.
