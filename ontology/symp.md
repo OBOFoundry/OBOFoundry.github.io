@@ -5,7 +5,7 @@ title: Symptom Ontology
 build:
   infallible: 1
   method: obo2owl
-  source_url: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/master/symp.obo
+  source_url: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/master/src/ontology/symp.obo
 contact:
   email: lynn.schriml@gmail.com
   github: lschriml
@@ -13,7 +13,7 @@ contact:
   orcid: 0000-0001-8910-9851
 description: An ontology of disease symptoms, with symptoms encompasing perceived changes in function, sensations or appearance reported by a patient indicative of a disease.
 domain: health
-homepage: http://symptomontologywiki.igs.umaryland.edu/mediawiki/index.php/Main_Page
+homepage: https://github.com/DiseaseOntology/SymptomOntology
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/
@@ -37,8 +37,8 @@ usages:
 - description: Symptoms of human diseases in the DO
   examples:
   - description: symptoms of human diseases
-    url: http://www.disease-ontology.org/?id=DOID:0060164
-  user: http://www.disease-ontology.org
+    url: https://disease-ontology.org/?id=DOID:0060164
+  user: https://disease-ontology.org/
 activity_status: active
 ---
 
