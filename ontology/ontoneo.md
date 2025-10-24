@@ -12,7 +12,7 @@ license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
 domain: health 
-homepage: ontoneo.com 
+homepage: https://ontoneo.com/
 mailing_list: http://groups.google.com/group/ontoneo-discuss
 preferredPrefix: ONTONEO
 products:
