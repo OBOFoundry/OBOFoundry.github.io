@@ -31,7 +31,7 @@ browsers:
     title: OntoBee Browser
     url: https://ontobee.org/ontology/ONTONEO
 publications:
-- id: https://ceur-ws.org/Vol-1747/IT403_ICBO2016.pdf
+- id: DOI 10.5281/zenodo.17429771
   title: "OntONeo: The Obstetric and Neonatal Ontology"
 repository: https://github.com/ontoneo-project/Ontoneo
 tracker: https://github.com/ontoneo-project/Ontoneo/issues
@@ -43,8 +43,9 @@ usages:
     description: The ontology has been applied in studies on data interoperability and semantic integration, improving access to structured medical information and enabling knowledge sharing between systems.
 - user: Health Information Systems and Clinical Decision Support
   examples:
-  - descripiton: OntONeo serves as a knowledge representation framework to support clinical decision-making and data interoperability in healthcare. It is used in information retrieval applications, enabling structured queries over medical databases and facilitating access to critical obstetric and neonatal health information.
+  descripiton: OntONeo serves as a knowledge representation framework to support clinical decision-making and data interoperability in healthcare. It is used in information retrieval applications, enabling structured queries over medical databases and facilitating access to critical obstetric and neonatal health information.
 - user: Hospital Felício Rocho, Belo Horizonte
+  examples:
   description: Hospital Felício Rocho is a reference center in Belo Horizonte for high-complexity healthcare, including obstetrics and gynecology. The hospital integrates advanced technologies and research in medical informatics to improve patient care and data management.
   - url: https://www.feliciorocho.org.br/
       description: Application of ontology-driven healthcare data management for obstetric and gynecological care. DOI:10.56238/devopinterscie-267
