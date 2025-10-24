@@ -21,6 +21,7 @@ products:
   description: The full version of ONTONEO in OWL format
 build:
   source_url: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/ontoneo.owl
+repository: https://github.com/ontoneo-project/Ontoneo
 tracker: https://github.com/ontoneo-project/Ontoneo/issues
 browsers:
   - label: BioPortal
@@ -34,8 +35,6 @@ publications:
   title: "OntONeo: The Obstetric and Neonatal Ontology"
 - id: https://doi.org/10.22477/ISKO.25.99
   title: Formal Ontologies in Knowledge Organization within the Obstetric and Neonatal Domain
-repository: https://github.com/ontoneo-project/Ontoneo
-tracker: https://github.com/ontoneo-project/Ontoneo/issues
 usages:
 - user: http://recol.eci.ufmg.br/ (Link to group)
   description: The ReCOL research group uses OntONeo to model and structure biomedical information, particularly in obstetrics and neonatology.
