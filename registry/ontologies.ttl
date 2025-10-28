@@ -1234,13 +1234,13 @@ _:b58   <http://www.w3.org/2000/01/rdf-schema#label>  "Luis González-Montaña" 
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/34755882> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/DiseaseOntology/HumanDiseaseOntology/issues" ;
-        <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://www.disease-ontology.org/do> ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://disease-ontology.org/do> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/doid.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b61 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/doid.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/doid.obo> ;
         <http://xmlns.com/foaf/0.1/account>  <http://purl.obolibrary.org/obo/diseaseontology> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <http://www.disease-ontology.org> .
+        <http://xmlns.com/foaf/0.1/homepage>  <https://disease-ontology.org> .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/25852852>
         <http://purl.org/dc/elements/1.1/title>  "CLO: The Cell Line Ontology" .
@@ -1591,19 +1591,19 @@ _:b78   <http://www.w3.org/2000/01/rdf-schema#label>  "Mathias Brochhausen" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/DiseaseOntology/DiseaseDriversOntology/issues" ;
-        <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://www.disease-ontology.org/> ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://disease-ontology.org/> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/disdriv.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b80 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/disdriv.owl> ;
         <http://xmlns.com/foaf/0.1/account>  <http://purl.obolibrary.org/obo/diseaseontology> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <http://www.disease-ontology.org> .
+        <http://xmlns.com/foaf/0.1/homepage>  <https://disease-ontology.org/> .
 
-_:b79   <http://obofoundry.github.io/vocabulary/source_url>  "https://github.com/DiseaseOntology/DiseaseDriversOntology/tree/main/src/ontology/disdriv.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+_:b79   <http://obofoundry.github.io/vocabulary/source_url>  "https://raw.githubusercontent.com/DiseaseOntology/DiseaseDriversOntology/refs/heads/main/src/ontology/disdriv.owl"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_9606>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Homo sapiens" .
 
-<http://www.disease-ontology.org/>
+<https://disease-ontology.org/>
         <http://purl.org/dc/elements/1.1/title>  "DO Browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "DO" .
 
@@ -1622,7 +1622,7 @@ _:b60   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/34755882>
         <http://purl.org/dc/elements/1.1/title>  "The Human Disease Ontology 2022 update" .
 
-<http://www.disease-ontology.org/do>
+<https://disease-ontology.org/do>
         <http://purl.org/dc/elements/1.1/title>  "DO Browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "DO" .
 
