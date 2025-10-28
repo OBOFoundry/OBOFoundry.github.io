@@ -18,6 +18,7 @@ license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/
 mailing_list: https://groups.google.com/forum/#!forum/obo-gazetteer
+preferredPrefix: GAZ
 products:
 - id: gaz.owl
 - id: gaz.obo
@@ -26,5 +27,5 @@ products:
   description: A country specific subset of the GAZ.
 repository: https://github.com/EnvironmentOntology/gaz
 tracker: https://github.com/EnvironmentOntology/gaz/issues
-activity_status: inactive
+activity_status: active
 ---
