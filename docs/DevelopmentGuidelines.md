@@ -49,7 +49,6 @@ content:
 
 communication:
 
-- Ontology subsets documentation [#466](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/466)
 - domain metadata tag [#2779](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2779)
 
 
