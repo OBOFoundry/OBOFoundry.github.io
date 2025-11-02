@@ -31,7 +31,7 @@ products:
 publications:
 - id: https://doi.org/10.5281/zenodo.17429771
   title: 'OntONeo: The Obstetric and Neonatal Ontology'
-- id: https://doi.org/10.22477/ISKO.25.99
+- id: https://doi.org/10.5281/zenodo.17508651
   title: Formal Ontologies in Knowledge Organization within the Obstetric and Neonatal Domain
 repository: https://github.com/ontoneo-project/Ontoneo
 tracker: https://github.com/ontoneo-project/Ontoneo/issues
@@ -40,11 +40,10 @@ usages:
   examples:
   - description: The ontology has been applied in studies on data interoperability and semantic integration, improving access to structured medical information and enabling knowledge sharing between systems.
     url: https://mba.eci.ufmg.br/wp-content/uploads/Anais_CBIS_2018_FarinelliAlmeidaLouize.pdf
-  user: http://recol.eci.ufmg.br/ (Link to group)
+  user: http://recol.eci.ufmg.br/
 - description: OntONeo serves as a knowledge representation framework to support clinical decision-making and data interoperability in healthcare. It is used in information retrieval applications, enabling structured queries over medical databases and facilitating access to critical obstetric and neonatal health information.
   examples:
   - description: Demonstrates OntONeo’s application for enabling structured data access and semantic reasoning in clinical contexts.
     url: https://doi.org/10.56238/devopinterscie-267
-  user: Health Information Systems and Clinical Decision Support
 activity_status: active
 ---
