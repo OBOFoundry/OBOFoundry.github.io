@@ -45,6 +45,6 @@ usages:
   examples:
   - description: Demonstrates OntONeo’s application for enabling structured data access and semantic reasoning in clinical contexts.
     url: https://doi.org/10.56238/devopinterscie-267
-  user: http://hdl. handle. net/1843/38044
+  user: http://hdl.handle.net/1843/38044
 activity_status: active
 ---
