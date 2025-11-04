@@ -18,7 +18,9 @@ title: Ontology Standardization Guidelines
       OBO format:
          property_value: IAO:0000700 *root term ID*
       ```
-
+- Use standard synonym types
+  - Ontologies often include alternatives to term labels (aka synonyms). These can include abbreviations, acronyms, spelling variants, and other types of synonyms. A list of standard synonym types is provided by OMO under the parent Annotation Propery 'SynonymTypeProperty'. Ontology developers that wish to indicate a specific type of synonym SHOULD first consult this list before minting their own. If it is necessary to create a new type, developers SHOULD consider submitting to the OMO controlled vocabulary list indicated above.
+    
 ### Content
 
 - NCIt term use - If an ontology developer wishes to create a term with a label that already exists in NCIt, the following apply:
