@@ -3628,6 +3628,7 @@ _:b176  <http://www.w3.org/2000/01/rdf-schema#label>  "Pierre-Alain Binz" ;
         <http://purl.org/dc/elements/1.1/description>  "A global community effort to harmonize multiple disease resources to yield a coherent merged ontology." ;
         <http://purl.org/dc/elements/1.1/title>  "Mondo Disease Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1093/genetics/iyaf215> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.medrxiv.org/content/10.1101/2022.04.13.22273750> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/monarch-initiative/mondo/issues" ;
@@ -3643,6 +3644,9 @@ _:b176  <http://www.w3.org/2000/01/rdf-schema#label>  "Pierre-Alain Binz" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mondo/mondo-simple.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://monarch-initiative.github.io/mondo> .
 
+<https://doi.org/10.1093/genetics/iyaf215>
+        <http://purl.org/dc/elements/1.1/title>  "Mondo: Integrating Disease Terminology Across Communities" .
+
 <https://www.medrxiv.org/content/10.1101/2022.04.13.22273750>
         <http://purl.org/dc/elements/1.1/title>  "Mondo: Unifying diseases for the world, by the world" .
 
@@ -3650,8 +3654,8 @@ _:b176  <http://www.w3.org/2000/01/rdf-schema#label>  "Pierre-Alain Binz" ;
         <http://purl.org/dc/elements/1.1/title>  "Monarch Initiative Disease Browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "Monarch" .
 
-_:b177  <http://www.w3.org/2000/01/rdf-schema#label>  "Nicole Vasilevsky" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "nicole@tislab.org" .
+_:b177  <http://www.w3.org/2000/01/rdf-schema#label>  "Sabrina Toro" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "Sabrina@tislab.org" .
 
 <http://purl.obolibrary.org/obo/mondo.owl>
         <http://purl.org/dc/elements/1.1/description>  "Complete ontology with merged imports." ;
