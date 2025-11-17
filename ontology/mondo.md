@@ -8,10 +8,10 @@ browsers:
   url: https://monarchinitiative.org/disease/MONDO:0019609
 canonical: mondo.owl
 contact:
-  email: nicole@tislab.org
-  github: nicolevasilevsky
-  label: Nicole Vasilevsky
-  orcid: 0000-0001-5208-3432
+  email: Sabrina@tislab.org
+  github: sabrinatoro
+  label: Sabrina Toro
+  orcid: 0000-0002-4142-7153
 depicted_by: https://raw.githubusercontent.com/monarch-initiative/mondo/master/docs/images/mondo_logo_black-stacked-small.png
 description: A global community effort to harmonize multiple disease resources to yield a coherent merged ontology.
 domain: health
@@ -47,6 +47,8 @@ products:
   description: The main ontology classes and their hierarchies, without references to external terms.
   format: owl
 publications:
+- id: https://doi.org/10.1093/genetics/iyaf215
+  title: 'Mondo: Integrating Disease Terminology Across Communities'
 - id: https://www.medrxiv.org/content/10.1101/2022.04.13.22273750
   title: 'Mondo: Unifying diseases for the world, by the world'
 repository: https://github.com/monarch-initiative/mondo
