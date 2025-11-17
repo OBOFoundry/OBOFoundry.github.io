@@ -9972,6 +9972,7 @@
                     "id": "ncbitaxon"
                 }
             ],
+            "depicted_by": "https://github.com/tis-lab/closed-illustrations/blob/15058315cba1018e09572b28ebeee262a458b1c6/logos/vbo-logo/VBO-black-logo-stackedv2.png",
             "description": "Vertebrate Breed Ontology is an ontology created to serve as a single computable resource for vertebrate breed names.",
             "domain": "organisms",
             "homepage": "https://github.com/monarch-initiative/vertebrate-breed-ontology",
@@ -9982,6 +9983,7 @@
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
                 "url": "https://creativecommons.org/licenses/by/4.0/"
             },
+            "mailing_list": "https://groups.google.com/group/VBO-users",
             "ontology_purl": "http://purl.obolibrary.org/obo/vbo.owl",
             "preferredPrefix": "VBO",
             "products": [
@@ -10016,6 +10018,12 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/vbo/vbo-base.json"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://doi.org/10.1111/jvim.70133",
+                    "title": "The Vertebrate Breed Ontology: Toward Effective Breed Data Standardization"
+                }
+            ],
             "repository": "https://github.com/monarch-initiative/vertebrate-breed-ontology",
             "title": "Vertebrate Breed Ontology",
             "tracker": "https://github.com/monarch-initiative/vertebrate-breed-ontology/issues",
@@ -10030,6 +10038,17 @@
                     ],
                     "type": "annotation",
                     "user": "https://omia.org/home/"
+                },
+                {
+                    "description": "VBO is used in Cellosaurus for breed/subspecies of origin of cell lines.",
+                    "examples": [
+                        {
+                            "description": "The cell line AG07906 derived from the Thoroughbred (VBO:0001083) breed of Equuus caballus (Horse).",
+                            "url": "https://www.cellosaurus.org/CVCL_2L83"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://www.cellosaurus.org/index.html"
                 }
             ]
         },

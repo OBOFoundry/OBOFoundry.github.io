@@ -5693,8 +5693,10 @@ _:b250  <http://www.w3.org/2000/01/rdf-schema#label>  "James McLaughlin" ;
         <http://purl.org/dc/elements/1.1/description>  "Vertebrate Breed Ontology is an ontology created to serve as a single computable resource for vertebrate breed names." ;
         <http://purl.org/dc/elements/1.1/title>  "Vertebrate Breed Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1111/jvim.70133> ;
         <http://purl.org/dc/terms/1.1/theme>  "organisms" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/monarch-initiative/vertebrate-breed-ontology/issues" ;
+        <http://usefulinc.com/ns/doap#mailing-list>  "https://groups.google.com/group/VBO-users" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/vbo.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b251 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vbo.owl> ;
@@ -5704,6 +5706,9 @@ _:b250  <http://www.w3.org/2000/01/rdf-schema#label>  "James McLaughlin" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vbo/vbo-base.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vbo/vbo-base.json> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/monarch-initiative/vertebrate-breed-ontology> .
+
+<https://doi.org/10.1111/jvim.70133>
+        <http://purl.org/dc/elements/1.1/title>  "The Vertebrate Breed Ontology: Toward Effective Breed Data Standardization" .
 
 _:b251  <http://www.w3.org/2000/01/rdf-schema#label>  "Sabrina Toro" ;
         <http://xmlns.com/foaf/0.1/mbox>  "Sabrina@tislab.org" .
