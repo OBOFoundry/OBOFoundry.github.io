@@ -7,6 +7,7 @@ contact:
   github: sabrinatoro
   label: Sabrina Toro
   orcid: 0000-0002-4142-7153
+depicted_by: https://github.com/tis-lab/closed-illustrations/blob/15058315cba1018e09572b28ebeee262a458b1c6/logos/vbo-logo/VBO-black-logo-stackedv2.png
 dependencies:
 - id: ncbitaxon
 description: Vertebrate Breed Ontology is an ontology created to serve as a single computable resource for vertebrate breed names.
@@ -48,6 +49,5 @@ usages:
     url: https://www.cellosaurus.org/CVCL_2L83
   type: annotation
   user: https://www.cellosaurus.org/index.html
-
 activity_status: active
 ---
