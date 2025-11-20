@@ -1,13 +1,13 @@
----
+ƒcontact---
 layout: ontology_detail
 id: cl
 title: Cell Ontology
 canonical: cl.owl
 contact:
-  email: addiehl@buffalo.edu
-  github: addiehl
-  label: Alexander Diehl
-  orcid: 0000-0001-9990-8331
+  email: do12@sanger.ac.uk
+  github: dosumis
+  label: David Osumi-Sutherland
+  orcid: 0000-0002-7073-9172
 dependencies:
 - id: go
 - id: ncbitaxon
