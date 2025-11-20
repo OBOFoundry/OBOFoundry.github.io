@@ -1,4 +1,4 @@
-ƒcontact---
+---
 layout: ontology_detail
 id: cl
 title: Cell Ontology
