@@ -3,11 +3,13 @@ layout: doc
 title: Ontology Standardization Guidelines
 ---
 
-### Technical
+### Technical Considerations
 
 - Logical consistency of the ontology ([tracker item](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
-  - The ontology MUST be **logically consistent**
-  - This means (a) there MUST NOT be contradictory statements revealed by reasoning; (b) there MUST NOT be any unsatisfiable classes; and (c) there MUST NOT be any circular definitions.
+  - The ontology MUST be **logically consistent**; that is:
+    - (a) there MUST NOT be contradictory statements revealed by reasoning;
+    - (b) there MUST NOT be any unsatisfiable classes; and
+    - (c) there MUST NOT be any circular definitions.
   - This includes when the ontology is classified together with RO, BFO, and COB
   - This also includes when the ontology is classified together with its base dependencies; that is, as part of a 'full' release (see Releases section below)
 - Ontology root terms annotation ([tracker item](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2149))
@@ -21,7 +23,7 @@ title: Ontology Standardization Guidelines
 - Use standard synonym types
   - Ontologies often include alternatives to term labels (aka synonyms). These can include abbreviations, acronyms, spelling variants, and other types of synonyms. A list of standard synonym types is provided by OMO under the parent Annotation Propery 'SynonymTypeProperty'. Ontology developers that wish to indicate a specific type of synonym SHOULD first consult this list before minting their own. If it is necessary to create a new type, developers SHOULD consider submitting to the OMO controlled vocabulary list indicated above.
     
-### Content
+### Content Considerations
 
 - NCIt term use - If an ontology developer wishes to create a term with a label that already exists in NCIt, the following apply:
   - If the NCIt term definition and hierarchical position are reasonable, that term SHOULD be used instead;
@@ -32,7 +34,7 @@ title: Ontology Standardization Guidelines
 - Whole ontology imports ([tracker item](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2769))
   - Unless necessary, an entire ontology SHOULD NOT be imported if only a subset of terms is needed. To import terms on an individual basis, [ROBOT 'extract'](https://robot.obolibrary.org/extract) and [OntoFox](https://ontofox.hegroup.org/index.php) are useful tools.
 
-### Releases
+### Releases Considerations
 
 - Release types ([tracker item](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
   - In addition to a set of standards pertaining to release *format* (see [Principle 2](https://obofoundry.org/principles/fp-002-format.html)), the following are the standards pertaining to release *types*, each of which differ with respect to imports, axiomization, and reasoning (see [Release Artefacts](https://oboacademy.github.io/obook/reference/release-artefacts/) for more detailed information):
@@ -41,10 +43,10 @@ title: Ontology Standardization Guidelines
   - *other release artefacts* (OPTIONAL; denoted by PURL ending with ONT-<artefact_type>.owl): These include **non-classified**, **simple**, **basic**, and **simple-non-classified**. See the Release Artefacts link above for details on these.
   - Every ontology MUST provide a 'base' release and MUST provide a 'full' release.
 
-### Social
+### Social Considerations
 
 
-### Communication
+### Communication Considerations
 
 - Linking to issue tracker ([tracker item](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1097)) Any term (or set of terms) with an affiliated issue tracker item (term request or term discussion) SHOULD be linked to the relevant issue(s). Such linking SHOULD use the annotation property 'term tracker item' (IAO:0000233) and SHOULD NOT use a free text comment. The range for 'term tracker item' MUST consist solely of an IRI, without additional text, and the IRI MUST be for the issue tracker item.
 
