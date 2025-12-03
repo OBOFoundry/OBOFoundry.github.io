@@ -35,6 +35,8 @@ products:
 - id: chebi/chebi_core.obo
   title: chebi_core, no xrefs
 publications:
+- id: https://doi.org/10.1093/nar/gkaf1271
+  title: 'ChEBI: re-engineered for a sustainable future'
 - id: https://www.ncbi.nlm.nih.gov/pubmed/26467479
   title: 'ChEBI in 2016: Improved services and an expanding collection of metabolites.'
 repository: https://github.com/ebi-chebi/ChEBI
