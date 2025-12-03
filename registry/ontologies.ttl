@@ -785,6 +785,7 @@ _:b40   <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
         <http://purl.org/dc/elements/1.1/description>  "A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds." ;
         <http://purl.org/dc/elements/1.1/title>  "Chemical Entities of Biological Interest" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1093/nar/gkaf1271> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/26467479> ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/ebi-chebi/ChEBI/issues" ;
@@ -820,6 +821,9 @@ _:b42   <http://www.w3.org/2000/01/rdf-schema#label>  "Liliana Andres Hernandez"
 
 _:b43   <http://obofoundry.github.io/vocabulary/method>  "obo2owl" ;
         <http://obofoundry.github.io/vocabulary/source_url>  "ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://doi.org/10.1093/nar/gkaf1271>
+        <http://purl.org/dc/elements/1.1/title>  "ChEBI: re-engineered for a sustainable future" .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/26467479>
         <http://purl.org/dc/elements/1.1/title>  "ChEBI in 2016: Improved services and an expanding collection of metabolites." .
