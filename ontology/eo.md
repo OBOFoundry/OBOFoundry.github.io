@@ -39,7 +39,7 @@ usages:
   - description: Gramene annotations to cold temperature regiment
     url: http://archive.gramene.org/db/ontology/search?id=EO:0007174
   user: http://gramene.org/
-activity_status: inactive
+activity_status: deprecated
 ---
 
 A structured, controlled vocabulary for the representation of plant environmental conditions.
