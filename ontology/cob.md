@@ -33,6 +33,14 @@ products:
   status: alpha
 repository: https://github.com/OBOFoundry/COB
 tracker: https://github.com/OBOFoundry/COB/issues
+usages:
+- user: (multiple)
+  description: Ontologies using COB terms
+  examples:
+   - url: http://dashboard.obofoundry.org/dashboard/cob/dashboard.html
+     description: List of ontologies using at least one COB term (See section entitled "Info: Which ontologies use it?")
+   - url: https://ontobee.org/ontology/COB?iri=http://purl.obolibrary.org/obo/COB_0000022
+     description: List of ontologies using the term 'organism' (See section entitled "Ontologies that use the Class")
 activity_status: active
 ---
 
