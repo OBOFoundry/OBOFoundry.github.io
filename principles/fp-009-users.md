@@ -47,15 +47,15 @@ Note that the ontology can still be listed on the OBO Foundry website while publ
 ## Implementation
 
 The ontology developers MUST provide links/citations to publicly available evidence of
-use within your ontology [metadata file](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology) as given below (replacing with the correct group name, link, and description):
+use within your ontology [metadata file](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology) as given below (after replacing with the correct description of usage, description of example, link to example, and link to user group):
 
 ```yaml
 usages:
-- description: MGI disease model annotations use DO (description of group)
+- description: MGI disease model annotations use DO (description of usage)
   examples:
-    - description: Human genes and mouse homology associated with nail diseases (description of specific example)
-      url: "http://www.informatics.jax.org/disease/DOID:4123"  # link to specific example)
-  user: "http://www.informatics.jax.org/disease"  # link to group
+    - description: Human genes and mouse homology associated with nail diseases (description of example)
+      url: http://www.informatics.jax.org/disease/DOID:4123  (link to example)
+  user: http://www.informatics.jax.org/disease  (link to user group)
 ```
 
 You may have multiple examples for each user, and multiple users under the `usages` tag.
@@ -67,41 +67,41 @@ Use of PSI-MOD term IRI (in the form of a CURIE) in the PR ontology:
 - description: Protein Ontology
   examples:
     - description: OBO Format stanza showing use of PSI-MOD term in logical definition
-      url: "https://proconsortium.org/app/export/obo/PR:000027653/"
-  user: "http://purl.obolibrary.org/obo/pr"
+      url: https://proconsortium.org/app/export/obo/PR:000027653/
+  user: http://purl.obolibrary.org/obo/pr
 ```
 Term requests to PR from multiple users:
 ```yaml
 - description: Term requests made via the Protein Ontology GitHub tracker
   examples:
-    - description: "List of issues tagged with 'Term Request' to PRO"
-      url: "https://github.com/PROconsortium/PRoteinOntology/issues?q=is%3Aissue+label%3A%22Term+Request%22"
+    - description: List of issues tagged with 'Term Request' to PRO
+      url: https://github.com/PROconsortium/PRoteinOntology/issues?q=is%3Aissue+label%3A%22Term+Request%22
   user: (multiple)
 ```
 Publication showing the Disease Ontology being used in research by external users
 ```yaml
 - description: Machine learning-based prediction of candidate gene biomarkers correlated with immune infiltration in patients with idiopathic pulmonary fibrosis
   examples:
-    - description: 'In abstract, "Functional annotation, pathway enrichment, Disease Ontology and gene set enrichment analyses revealed..."'
-      url: "https://pubmed.ncbi.nlm.nih.gov/36860337/"
-  user: "https://pubmed.ncbi.nlm.nih.gov/36860337/"
+    - description: In abstract, "Functional annotation, pathway enrichment, Disease Ontology and gene set enrichment analyses revealed..."
+      url: https://pubmed.ncbi.nlm.nih.gov/36860337/
+  user: https://pubmed.ncbi.nlm.nih.gov/36860337/
 ```
 Use of terms from GO for annotation:
 ```yaml
 - description: UniProt
   examples:
     - description: Functional annotation using GO (see subsection entitled "GO annotations")
-      url: "https://www.uniprot.org/uniprotkb/Q15796/entry#function"
-  user: "https://www.uniprot.org"
+      url: https://www.uniprot.org/uniprotkb/Q15796/entry#function
+  user: https://www.uniprot.org
 ```
 OBI terms imported into external ontologies
 ```yaml
 - description: Ontologies using OBI terms
   examples:
-    - description: 'List of ontologies using at least one OBI term (See section entitled "Info: Which ontologies use it?")'
-      url: "http://dashboard.obofoundry.org/dashboard/obi/dashboard.html"
-    - description: 'List of ontologies using the term "ABI 377 automated sequencer" (See section entitled "Ontologies that use the Class")'
-      url: "https://ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0000691"
+    - description: List of ontologies using at least one OBI term (See section entitled "Info: Which ontologies use it?")
+      url: http://dashboard.obofoundry.org/dashboard/obi/dashboard.html
+    - description: List of ontologies using the term "ABI 377 automated sequencer" (See section entitled "Ontologies that use the Class")
+      url: https://ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0000691
   user: (multiple)
 ```
 
