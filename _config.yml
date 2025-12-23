@@ -1171,6 +1171,16 @@ ontologies:
   repository: https://github.com/OBOFoundry/COB
   title: Core Ontology for Biology and Biomedicine
   tracker: https://github.com/OBOFoundry/COB/issues
+  usages:
+  - description: Ontologies using COB terms
+    examples:
+    - description: List of ontologies using at least one COB term (See section entitled
+        "Which ontologies use it?")
+      url: http://dashboard.obofoundry.org/dashboard/cob/dashboard.html
+    - description: List of ontologies using the term 'organism' (See section entitled
+        "Ontologies that use the Class")
+      url: https://ontobee.org/ontology/COB?iri=http://purl.obolibrary.org/obo/COB_0000022
+    user: (multiple)
 - activity_status: active
   contact:
     email: entiminae@gmail.com
@@ -7152,7 +7162,7 @@ ontologies:
     orcid: 0000-0002-4142-7153
   dependencies:
   - id: ncbitaxon
-  depicted_by: https://github.com/tis-lab/closed-illustrations/blob/15058315cba1018e09572b28ebeee262a458b1c6/logos/vbo-logo/VBO-black-logo-stackedv2.png
+  depicted_by: https://raw.githubusercontent.com/tis-lab/closed-illustrations/master/logos/vbo-logo/VBO-black-logo-stackedv2.png
   description: Vertebrate Breed Ontology is an ontology created to serve as a single
     computable resource for vertebrate breed names.
   domain: organisms
