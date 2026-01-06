@@ -54,8 +54,8 @@ usages:
 - description: MGI disease model annotations use DO (description of usage)
   examples:
     - description: Human genes and mouse homology associated with nail diseases (description of example)
-      url: http://www.informatics.jax.org/disease/DOID:4123  (link to example)
-  user: http://www.informatics.jax.org/disease  (link to user group)
+      url: http://www.informatics.jax.org/disease/DOID:4123 (link to example)
+  user: http://www.informatics.jax.org/disease (link to user group)
 ```
 
 You may have multiple examples for each user, and multiple users under the `usages` tag.
@@ -67,7 +67,7 @@ Use of PSI-MOD term IRI (in the form of a CURIE) in the PR ontology:
 - description: Protein Ontology
   examples:
     - description: OBO Format stanza showing use of PSI-MOD term in logical definition
-      url: https://proconsortium.org/app/export/obo/PR:000027653/
+      url: https://proconsortium.org/cgi-bin/entry_pro?stanza_id=PR:000027653
   user: http://purl.obolibrary.org/obo/pr
 ```
 Term requests to PR from multiple users:
