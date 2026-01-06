@@ -15,7 +15,7 @@ A common format allows the maximum number of people to access and reuse an ontol
 
 ## Recommendations and Requirements
 
-All ontologies MUST have at least one OWL product whose name corresponds to the registered prefix (e.g., 'GO' --> go.owl, 'OBI' --> obi.owl). Thus the ontology whose IRI is http://purl.obolibrary.org/obo/ro.owl (known to the OBO Foundry as 'RO'), must have at least the product ro.owl. Developers are free to use whatever combination of technologies and formats is appropriate for development. However, the official OWL PURL (see [Principle 3](https://obofoundry.org/principles/fp-003-uris.html)) for the ontology MUST resolve to a syntactically valid OWL file using the [RDF-XML](https://www.w3.org/TR/rdf-syntax-grammar/) syntax.
+All ontologies MUST have at least one OWL product whose name corresponds to the registered prefix (e.g., 'GO' --> go.owl, 'OBI' --> obi.owl). Thus the ontology whose IRI is http://purl.obolibrary.org/obo/ro.owl (known to the OBO Foundry as 'RO'), MUST have at least the product ro.owl which MUST be a syntactically valid OWL file using the [RDF-XML](https://www.w3.org/TR/rdf-syntax-grammar/) syntax. Developers are free to use whatever combination of technologies and formats is appropriate for development.
 
 Developers can OPTIONALLY produce ontologies in other formats. These are conventionally the same IRI as the owl, but with .owl changed to the relevant extension (e.g., '.obo', '.json'). Note that such products are not listed by default. If you produce an additional format product, you should register it under the 'products' field in the appropriate metadata file found in this [folder](https://github.com/OBOFoundry/OBOFoundry.github.io/tree/master/ontology).
 
