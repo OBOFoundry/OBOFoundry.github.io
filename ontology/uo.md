@@ -29,6 +29,8 @@ tracker: https://github.com/bio-ontology-research-group/unit-ontology/issues
 activity_status: active
 ---
 
+⚠️ UO is a community project that is being maintained by its users. If you use UO and need some changes in its contents (for example you need some new terms), the surest way of making the changes happen is to implement them yourself and to submit a pull request. There is no “UO core team” specifically in charge of meeting users’ requests.
+
 See also:
 
  * [units-of-measurement](https://units-of-measurement.org/)
