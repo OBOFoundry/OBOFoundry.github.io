@@ -29,5 +29,3 @@ usages:
   user: http://www.informatics.jax.org/expression.shtml
 activity_status: active
 ---
-
-A structured controlled vocabulary of the adult anatomy of the mouse (Mus).
