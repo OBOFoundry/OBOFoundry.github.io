@@ -12,7 +12,7 @@ GO TO: [Technical Considerations](#technical-considerations) &#124; [Content-Con
     - (b) there MUST NOT be any unsatisfiable classes; and
     - (c) there MUST NOT be any circular definitions.
   - This includes when the ontology is classified together with RO, BFO, and COB
-  - This also includes when the ontology is classified together with its base dependencies; that is, as part of a 'full' release (see Releases section below)
+  - This also includes when the ontology is classified together with its base dependencies; that is, as part of a 'full' release (see [Release Considerations](#release-considerations) section below)
 - Ontology root terms annotation ([tracker item](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2149))
   - Some ontology browsers make use of an ontology-wide annotation property, 'has ontology root term' (IAO:0000700), that governs how the hierarchy is displayed. This helps shield users from having to navigate through not-specific-enough parent terms (such as BFO:0000040 "material entity"). To enable this feature, an ontology SHOULD specify one or more appropriate root terms like so:
       ```
