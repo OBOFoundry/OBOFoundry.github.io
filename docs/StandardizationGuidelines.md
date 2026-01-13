@@ -2,6 +2,7 @@
 layout: doc
 title: Ontology Standardization Guidelines
 ---
+GO TO: [Technical Considerations](#technical-considerations) &#124; [Content-Considerations](#content-considerations) &#124; [Release Considerations](#release-considerations) &#124; [Social Considerations](#social-considerations) &#124; [Communication Considerations](#communication-considerations)
 
 ### Technical Considerations
 
@@ -34,7 +35,7 @@ title: Ontology Standardization Guidelines
 - Whole ontology imports ([tracker item](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2769))
   - Unless necessary, an entire ontology SHOULD NOT be imported if only a subset of terms is needed. To import terms on an individual basis, [ROBOT 'extract'](https://robot.obolibrary.org/extract) and [OntoFox](https://ontofox.hegroup.org/index.php) are useful tools.
 
-### Releases Considerations
+### Release Considerations
 
 - Release types ([tracker item](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
   - In addition to a set of standards pertaining to release *format* (see [Principle 2](https://obofoundry.org/principles/fp-002-format.html)), the following are the standards pertaining to release *types*, each of which differ with respect to imports, axiomization, and reasoning (see [Release Artefacts](https://oboacademy.github.io/obook/reference/release-artefacts/) for more detailed information):
