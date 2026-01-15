@@ -21,6 +21,7 @@ preferredPrefix: UO
 products:
 - id: uo.owl
 - id: uo.obo
+- id: uo.json
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/23060432
   title: 'The Units Ontology: a tool for integrating units of measurement in science'
