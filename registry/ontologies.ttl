@@ -354,6 +354,7 @@ _:b2    <http://www.w3.org/2000/01/rdf-schema#label>  "Melek Chaouch" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b18 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uo.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uo.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/uo.json> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/bio-ontology-research-group/unit-ontology> .
 
 <http://purl.obolibrary.org/obo/xco>
@@ -2015,7 +2016,7 @@ _:b93   <http://www.w3.org/2000/01/rdf-schema#label>  "Anne Thessen" ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/26208972> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://doi.org/10.1016/B978-0-12-800043-4.00023-3> ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/mouse-anatomy-ontology/issues" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/developmental-mouse-anatomy-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/emapa.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b101 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/emapa.owl> ;
@@ -5636,6 +5637,9 @@ _:b18   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
 
 <http://purl.obolibrary.org/obo/uo.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uo.obo" .
+
+<http://purl.obolibrary.org/obo/uo.json>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/uo.json" .
 
 <http://purl.obolibrary.org/obo/upheno>
         <http://identifiers.org/preferredPrefix>  "UPHENO" ;
