@@ -5,7 +5,7 @@ title: Gazetteer
 build:
   method: archive
   path: archive
-  source_url: http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip
+  source_url: http://purl.obolibrary.org/obo/gaz.owl
 contact:
   email: lschriml@som.umaryland.edu
   github: lschriml
