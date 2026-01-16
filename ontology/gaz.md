@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: gaz
 title: Gazetteer
-build:
-  method: archive
-  path: archive
-  source_url: http://purl.obolibrary.org/obo/gaz.owl
 contact:
   email: lschriml@som.umaryland.edu
   github: lschriml
