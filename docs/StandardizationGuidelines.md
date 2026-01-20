@@ -6,7 +6,7 @@ GO TO: [Technical Considerations](#technical-considerations) &#124; [Content-Con
 
 ### Technical Considerations
 
-- Ensure the ontology is logical consistent ([tracker item](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
+- Ensure the ontology is logically consistent ([tracker item](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/482))
   - The ontology MUST be **logically consistent**; that is:
     - (a) there MUST NOT be contradictory statements revealed by reasoning;
     - (b) there MUST NOT be any unsatisfiable classes; and
