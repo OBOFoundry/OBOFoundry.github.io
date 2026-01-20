@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: gaz
 title: Gazetteer
-build:
-  method: archive
-  path: archive
-  source_url: http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip
 contact:
   email: lschriml@som.umaryland.edu
   github: lschriml

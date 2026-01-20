@@ -30,11 +30,11 @@ publications:
   title: 'Mouse Anatomy Ontologies: Enhancements and Tools for Exploring and Integrating Biomedical Data'
 - id: https://doi.org/10.1016/B978-0-12-800043-4.00023-3
   title: 'Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene Expression Database for Mouse Development (GXD)'
-repository: https://github.com/obophenotype/mouse-anatomy-ontology
+repository: https://github.com/obophenotype/developmental-mouse-anatomy-ontology
 taxon:
   id: NCBITaxon:10088
   label: Mus
-tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
+tracker: https://github.com/obophenotype/developmental-mouse-anatomy-ontology/issues
 usages:
 - description: GXD
   seeAlso: https://doi.org/10.25504/FAIRsharing.q9neh8

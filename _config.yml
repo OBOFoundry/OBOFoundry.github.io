@@ -1171,6 +1171,16 @@ ontologies:
   repository: https://github.com/OBOFoundry/COB
   title: Core Ontology for Biology and Biomedicine
   tracker: https://github.com/OBOFoundry/COB/issues
+  usages:
+  - description: Ontologies using COB terms
+    examples:
+    - description: List of ontologies using at least one COB term (See section entitled
+        "Which ontologies use it?")
+      url: http://dashboard.obofoundry.org/dashboard/cob/dashboard.html
+    - description: List of ontologies using the term 'organism' (See section entitled
+        "Ontologies that use the Class")
+      url: https://ontobee.org/ontology/COB?iri=http://purl.obolibrary.org/obo/COB_0000022
+    user: (multiple)
 - activity_status: active
   contact:
     email: entiminae@gmail.com
@@ -1902,12 +1912,12 @@ ontologies:
   - id: https://doi.org/10.1016/B978-0-12-800043-4.00023-3
     title: 'Textual Anatomics: the Mouse Developmental Anatomy Ontology and the Gene
       Expression Database for Mouse Development (GXD)'
-  repository: https://github.com/obophenotype/mouse-anatomy-ontology
+  repository: https://github.com/obophenotype/developmental-mouse-anatomy-ontology
   taxon:
     id: NCBITaxon:10088
     label: Mus
   title: Mouse Developmental Anatomy Ontology
-  tracker: https://github.com/obophenotype/mouse-anatomy-ontology/issues
+  tracker: https://github.com/obophenotype/developmental-mouse-anatomy-ontology/issues
   usages:
   - description: GXD
     seeAlso: https://doi.org/10.25504/FAIRsharing.q9neh8
@@ -2588,10 +2598,6 @@ ontologies:
   title: Plant Gall Ontology
   tracker: https://github.com/adeans/gallont/issues
 - activity_status: active
-  build:
-    method: archive
-    path: archive
-    source_url: http://build.berkeleybop.org/job/build-gaz/lastSuccessfulBuild/artifact/*zip*/archive.zip
   contact:
     email: lschriml@som.umaryland.edu
     github: lschriml
@@ -7068,6 +7074,8 @@ ontologies:
     ontology_purl: http://purl.obolibrary.org/obo/uo.owl
   - id: uo.obo
     ontology_purl: http://purl.obolibrary.org/obo/uo.obo
+  - id: uo.json
+    ontology_purl: http://purl.obolibrary.org/obo/uo.json
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/23060432
     title: 'The Units Ontology: a tool for integrating units of measurement in science'

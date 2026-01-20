@@ -17,6 +17,8 @@ A unique namespace within the OBO Foundry Library allows the source of an elemen
 
 Each ontology MUST have a unique IRI in the form of an OBO Foundry permanent URL (PURL). The PURL must include the ontology namespace, which is a short string of letters (usually 2-5) that represents the ontology. Namespaces MUST be approved by the OBO Foundry Operations Committee. Every element (class, property, etc.) created by the ontology MUST use the namespace in the identifier of each element, as specified in the OBO Foundry [ID policy](http://www.obofoundry.org/id-policy).
 
+The official PURL for the ontology, after redirection, MUST resolve to the ontology OWL file (see [Principle 2](https://obofoundry.org/principles/fp-002-format.html) for format requirements). Furthermore, PURLs for individual terms, after redirection, MUST resolve to a dedicated _term-centric_ destination page containing the appropriate content.
+
 ## Implementation
 
 ### Ontology Namespace:
