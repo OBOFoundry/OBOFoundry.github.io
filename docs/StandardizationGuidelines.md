@@ -48,7 +48,8 @@ GO TO: [Technical Considerations](#technical-considerations) &#124; [Content-Con
   - *other release artefacts* (OPTIONAL; denoted by PURL ending with ONT-<artefact_type>.owl): These include **non-classified**, **simple**, **basic**, and **simple-non-classified**. See the Release Artefacts link above for details on these.
   - Every ontology MUST provide a 'base' release and MUST provide a 'full' release.
 
-### Social Considerations
+
+<!-- ### Social Considerations THIS SECTION WILL NOT BE MADE VISIBLE UNTIL CONTENT IS ADDED -->
 
 
 ### Communication Considerations
