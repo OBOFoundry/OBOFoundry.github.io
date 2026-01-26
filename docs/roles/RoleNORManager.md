@@ -7,13 +7,15 @@ title: New Ontology Request (NOR) Manager
 The New Ontology Request (NOR) Manager has these basic duties:
 
 1. Receiving `new ontology` requests on the OBO Foundry GitHub issues tracker and acknowledging the receipt
-2. Including the ontology in the OBO New Ontology Request (NOR) Dashboard and updating the dashboard
-3. Supporting the New Ontology requestor to pass the OBO Dashboard
+2. Verifying that the submitted ontology meets the OBO Foundry technical quality criteria by:
+    1. Manually reviewing the ontology’s core technical features
+    2. Registering the ontology in the OBO New Ontology Request (NOR) Dashboard and keeping the entry up to date
+    3. Assisting the ontology requestor in addressing issues required to satisfy the technical quality criteria
 4. Assigning a provisional reviewer from the OBO Operations Committee
 5. Removing the accepted ontology from the NOR Dashboard upon acceptance
 6. Maintaining the OBO Duty Rotation Table
 
-### Receiving `new ontology` requests on OBO and acknowledging the receipt
+## Receiving new ontology requests on OBO and acknowledging the receipt
 
 - The NOR Manager MUST actively listen to issues on the [OBOFoundry GitHub issues tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues).
 
@@ -51,6 +53,28 @@ The New Ontology Request (NOR) Manager has these basic duties:
   - Make sure that the requestors have joined and send an appropriate email to the obo-discuss mailing list (see the [FAQ](https://obofoundry.org/faq/how-do-i-register-my-ontology.html)). If they have not, point them to the instructions and ask them to do so.
   - Invite the requestors (using the email listed in the metadata) to the OBO Foundry Slack space (using the `Slack->Invite people to obo-community` menu, adding the email provided.
 
+## Verifying that the submitted ontology meets the OBO Foundry technical quality criteria
+
+### Manually reviewing the ontology’s core features
+
+Until sufficiently reliable automated checks are available, the NOR Manager shall perform a set of manual checks to ensure that the submitted artefact complies with the OBO Foundry pre-registration checklist. These checks include, but are not limited to, the following:
+
+- **Valid artefact**: Verify that the submitted ontology opens without errors in Protégé.
+
+- **URIs**: Verify that all URIs use `https` and conform to the OBO Foundry identifier format  
+  ([OBO Foundry ID policy](http://obofoundry.org/id-policy)):  
+  `http://purl.obolibrary.org/obo/ONTOLOGY_`
+
+- **Definitions**: Verify that the ontology’s primary, originally defined classes are provided with textual definitions.
+
+- **Properties**: Verify that object, data, and annotation properties are reused from authoritative sources (e.g. the Relation Ontology and OMO) wherever possible.
+
+- **Release artefacts**: Verify that release artefacts are clearly identified and that at least one release file is provided which:
+  - includes a version IRI,
+  - includes a `dc:license` annotation, and
+  - is serialised in RDF/XML.  
+  Additionally, verify that a “base” release is provided alongside the main release and that this base release **does not include imported terms**.
+
 ### Including the ontology into the OBO New Ontology Request (NOR) Dashboard and updating the dashboard
 
 The OBO NOR Dashboard is managed here: https://github.com/OBOFoundry/obo-nor.github.io.
@@ -75,17 +99,9 @@ In addition, the *Update dashboard run* action is automatically triggered on Mon
 
 For many New Ontology requestors it is not always easy to interpret the warnings on the OBO Dashboard. The NOR Manager is responsible for supporting the requestor interpreting the dashboard (but _not_ to fix the problems). There is no need to dig deep into the ontologies to diagnose problems - that is the requestors responsibility - but pointing to documentation like the [OBO Foundry Principles](https://obofoundry.org/principles/fp-000-summary.html) may be necessary.
 
-In addition, some checks need to be carried out manually by the NOR manager until sufficiently reliable automatic checks are available. A non exhaustive list includes:
-
-- URIs: check if it includes "https"  and if it [conforms with the overall format](http://obofoundry.org/id-policy) "http://purl.obolibrary.org/obo/ONTOLOGY_"
-
-- Release artefact: check if release artefacts are identified as such and ensure that, alongside a "main release", a base release is provided which **does not include imported terms**.
-
-- Imports: Ensure that there is a mechanism in place to update imported terms (classes and properties).
-
 During this process, all discussions between the requestors and the NOR manager must take place in the [OBO Issue Tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues) in the NOR issue created by the requestor.
 
-### Assigning a provisional reviewer from the OBO Operations Committee
+## Assigning a provisional reviewer from the OBO Operations Committee
 
 If and only if the requested ontology passes the dashboard, i.e. no more "red" exists aside from the `Usage` column, the NOR manager assigns the next available reviewer from the ['OBO Operations Members' sheet in the OBO Duty Rotation Table](https://docs.google.com/spreadsheets/d/19GrEWVnpxjnrig0iYUOiUvsZ0JDbprMh1USnRb-SXtg/edit). The reviewer is assigned by 
 
@@ -93,13 +109,13 @@ If and only if the requested ontology passes the dashboard, i.e. no more "red" e
 2. Assigning the NOR GitHub issue to the reviewer
 3. Announcing the reviewer assignment to the OBO Operations Technical Working Group Liaison to include in their report at the next OBO Operations meeting.
 
-### Removing the accepted ontology from the NOR Dashboard upon acceptance
+## Removing the accepted ontology from the NOR Dashboard upon acceptance
 
 When the ontology is accepted, the OBO NOR reviewer needs to make sure that the accepted ontology is removed from the OBO NOR Dashboard.
 
 Note 29.11.2022: There is a [work in progress](https://github.com/OBOFoundry/obo-nor.github.io/pull/23) which can deal with this step automatically, but the responsibility still stays with the OBO NOR Manager.
 
-### Maintaining the OBO Duty Rotation Table
+## Maintaining the OBO Duty Rotation Table
 
 The OBO Duty Rotation Table is a Google spreadsheet available [here](https://docs.google.com/spreadsheets/d/19GrEWVnpxjnrig0iYUOiUvsZ0JDbprMh1USnRb-SXtg/edit).
 When a new member is added to the OBO Operations Committee, the OBO NOR reviewer should add the new member's name to this table. Similarly, former members should be removed from the table. The list of current OBO Operations members is maintained in the file [operations.yml](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/_data/operations.yml).
