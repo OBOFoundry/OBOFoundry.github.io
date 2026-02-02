@@ -795,6 +795,7 @@ _:b40   <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b44 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/chebi.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/chebi.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/chebi.json> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/chebi.owl.gz> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/chebi/chebi_lite.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/chebi/chebi_core.obo> ;
@@ -841,6 +842,9 @@ _:b44   <http://www.w3.org/2000/01/rdf-schema#label>  "Adnan Malik" ;
 
 <http://purl.obolibrary.org/obo/chebi.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/chebi.obo" .
+
+<http://purl.obolibrary.org/obo/chebi.json>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/chebi.json" .
 
 <http://purl.obolibrary.org/obo/chebi.owl.gz>
         <http://purl.org/dc/elements/1.1/title>  "chebi, compressed owl" ;
