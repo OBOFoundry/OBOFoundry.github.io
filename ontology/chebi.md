@@ -28,6 +28,7 @@ preferredPrefix: CHEBI
 products:
 - id: chebi.owl
 - id: chebi.obo
+- id: chebi.json
 - id: chebi.owl.gz
   title: chebi, compressed owl
 - id: chebi/chebi_lite.obo
