@@ -15,7 +15,7 @@ The New Ontology Request (NOR) Manager has these basic duties:
 5. Removing the accepted ontology from the NOR Dashboard upon acceptance
 6. Maintaining the OBO Duty Rotation Table
 
-## Receiving new ontology requests on OBO and acknowledging the receipt
+## Monitoring the OBO tracker for new ontology requests and acknowledging them
 
 - The NOR Manager MUST actively listen to issues on the [OBOFoundry GitHub issues tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues).
 
