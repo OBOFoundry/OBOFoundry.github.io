@@ -29,7 +29,7 @@ Additionally, each ontology SHOULD have an owl:versionInfo statement. When this 
 
 ## Implementation
 
-See examples (below) for guidelines on how to specify the version within the ontology itself. If terms are imported from an external ontology, the “IAO:imported from” annotation (see [Principle 1](http://obofoundry.org/principles/fp-001-open.html)) may specify a dated version of the ontology from which they are imported.
+See examples (below) for guidelines on how to specify the version within the ontology itself.
 
 Regardless of the versioning system used for the ontology artifact, the version IRI SHOULD use an ISO-8601 dated PURL. In cases where there are multiple releases on the same day, the PURL points to the newest, and the previous release stays in the same folder or a subfolder, named in such a way as to distinguish the releases. Specifications for version IRIs are fully described in the OBO Foundry [ID policy](http://obofoundry.org/id-policy) document. In short:
 
