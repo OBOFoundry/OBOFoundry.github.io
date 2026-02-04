@@ -2,7 +2,7 @@
 layout: doc
 title: Ontology Standardization Guidelines
 ---
-GO TO: [Technical Considerations](#technical-considerations) &#124; [Content-Considerations](#content-considerations) &#124; [Release Considerations](#release-considerations) &#124; [Social Considerations](#social-considerations) &#124; [Communication Considerations](#communication-considerations)
+GO TO: [Technical Considerations](#technical-considerations) &#124; [Content Considerations](#content-considerations) &#124; [Release Considerations](#release-considerations)<!-- &#124; [Social Considerations](#social-considerations)--> &#124; [Communication Considerations](#communication-considerations)
 
 ### Technical Considerations
 
@@ -26,10 +26,6 @@ GO TO: [Technical Considerations](#technical-considerations) &#124; [Content-Con
     
 ### Content Considerations
 
-- Use of NCIt terms - If an ontology developer wishes to create a term with a label that already exists in NCIt, the following apply:
-  - If the NCIt term definition and hierarchical position are reasonable, that term SHOULD be used instead;
-  - If either the NCIt term definition or the hierarchical position are sub-optimal, the developer MAY create a term in the ontology with an identical label but with a revised definition and subclassing; alternatively such a term MAY be requested of another ontology, if appropriate;
-  - For case (b), if the definition is based on the NCIt definition, the new term MUST be linked to the original NCIt term to conform to the [NCIt license](https://evs.nci.nih.gov/license) requirements. Note: this does not apply to reuse of term labels.
 - Use the preferred source for imported terms
   - Imported terms SHOULD be drawn from the ontology that is the preferred source for the term. The preferred source is usually the ontology with the same ID space as the term, but it can instead be the ontology that currently maintains the term. Importing a term from a secondary source is not recommended because there is no guarantee that the secondary source has the most up-to-date term information, and thus drawing from the original would avoid possible conflicts due to term divergence.
 - Import entire ontologies only when necessary ([tracker item](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2769))
@@ -37,7 +33,10 @@ GO TO: [Technical Considerations](#technical-considerations) &#124; [Content-Con
     - BFO (Basic Formal Ontology) or COB (Core Ontology for Biology and Biomedicine) are upper level ontologies used to harmonize multiple OBO Foundry ontologies under the same hierarchy.
     - OMO contains commonly used annotation properties.
     - RO Core contains the most commonly used relations.
-
+- Use of NCIt terms - If an ontology developer wishes to create a term with a label that already exists in NCIt, the following apply:
+  - If the NCIt term definition and hierarchical position are reasonable, that term SHOULD be used instead;
+  - If either the NCIt term definition or the hierarchical position are sub-optimal, the developer MAY create a term in the ontology with an identical label but with a revised definition and subclassing; alternatively such a term MAY be requested of another ontology, if appropriate;
+  - For case (b), if the definition is based on the NCIt definition, the new term MUST be linked to the original NCIt term to conform to the [NCIt license](https://evs.nci.nih.gov/license) requirements. Note: this does not apply to reuse of term labels.
 
 ### Release Considerations
 
@@ -49,7 +48,6 @@ GO TO: [Technical Considerations](#technical-considerations) &#124; [Content-Con
   - Every ontology MUST provide a 'base' release and MUST provide a 'full' release.
 
 <!-- ### Social Considerations THIS SECTION WILL NOT BE MADE VISIBLE UNTIL CONTENT IS ADDED -->
-
 
 ### Communication Considerations
 
