@@ -12,6 +12,7 @@ title: Ontology Project Management Guidelines
 ### Releases
 
 - (DISCUSS) Keep your edit file (the file you change on a regular basis) and your release files strictly separate
+- standards for GitHub ontology repositories #2840
 
 ### Social
 
