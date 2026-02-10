@@ -10,7 +10,7 @@ GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; 
 
 ## Summary
 
-rev. Each ontology MUST have a unique IRI in the form of an OBO Foundry persistent URL (PURL) that includes the ontology's short namespace.
+In addition to the principles, each ontology MUST follow general OBO guidelines.
 
 ## Purpose
 
