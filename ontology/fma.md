@@ -1,17 +1,14 @@
 ---
 layout: ontology_detail
 id: fma
-title: Foundational Model of Anatomy Ontology (subset)
-build:
-  insert_ontology_id: true
-  method: obo2owl
-  source_url: http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo
+title: OBO-specific subset of the Foundational Model of Anatomy Ontology
 contact:
   email: mejino@u.washington.edu
   label: Onard Mejino
-description: This is currently a slimmed down version of FMA
+description: The OBO-specific subset of FMA is now deprecated. Please refer to the official version of FMA instead (http://purl.org/sig/ont/fma.owl).
 domain: anatomy and development
 homepage: http://si.washington.edu/projects/fma
+is_obsolete: true
 license:
   label: CC BY 3.0
   url: https://creativecommons.org/licenses/by/3.0/
@@ -34,4 +31,6 @@ tracker: https://bitbucket.org/uwsig/fma/issues
 activity_status: inactive
 ---
 
-Obo format translation of the FMA, omitting all relationships other than is_a, part_of and has_part. Future versions of fma_obo will include more relationships
+After many years of maintaining a bespoke OBO-format translation of the FMA — restricted to the is_a, part_of, and has_part relationships — we have now deprecated this project.
+Users are encouraged to use the official FMA release instead: `http://purl.org/sig/ont/fma.owl`.
+Note that the current official FMA release has unsatisfiable classes. Please follow [this issue](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/21) to keep yourself up to date.
