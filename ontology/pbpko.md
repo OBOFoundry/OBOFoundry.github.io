@@ -12,7 +12,7 @@ contact:
   label: Saurav Kumar
   orcid: 0000-0003-0593-2598
 description: An ontology for modeling and understanding of pharmacokinetics in biological systems.
-domain: Kinetics
+domain: chemistry and biochemistry
 homepage: https://github.com/InSilicoVida-Research-Lab/pbpko
 in_foundry_order: 1
 license:
