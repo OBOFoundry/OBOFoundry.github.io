@@ -5486,6 +5486,43 @@ ontologies:
     type: annotation
     user: https://hpo.jax.org/app/
 - activity_status: active
+  browsers:
+  - label: BioPortal
+    title: BioPortal Ontology Browser
+    url: https://bioportal.bioontology.org/ontologies/pbpko
+  contact:
+    email: saurav.kumar@iispv.cat
+    github: Crispae
+    label: Saurav Kumar
+    orcid: 0000-0003-0593-2598
+  description: An ontology for modeling and understanding of pharmacokinetics in biological
+    systems.
+  domain: chemistry and biochemistry
+  homepage: https://github.com/InSilicoVida-Research-Lab/pbpko
+  id: pbpko
+  in_foundry_order: 1
+  layout: ontology_detail
+  license:
+    label: CC BY 3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/pbpko.owl
+  preferredPrefix: PBPKO
+  products:
+  - id: pbpko.owl
+    ontology_purl: http://purl.obolibrary.org/obo/pbpko.owl
+  - id: pbpko.obo
+    ontology_purl: http://purl.obolibrary.org/obo/pbpko.obo
+  - id: pbpko.json
+    ontology_purl: http://purl.obolibrary.org/obo/pbpko.json
+  repository: https://github.com/InSilicoVida-Research-Lab/pbpko
+  title: Physiologically-Based Pharmacokinetic Ontology
+  tracker: https://github.com/InSilicoVida-Research-Lab/pbpko/issues
+  usages:
+  - description: PBPKO is used for annotation of kinetic model in SBML description
+      format.
+    user: https://github.com/InSilicoVida-Research-Lab
+- activity_status: active
   contact:
     email: davidos@ebi.ac.uk
     github: dosumis
@@ -9790,6 +9827,9 @@ principles:
 - id: fp-013-notification
   layout: principle
   title: Notification of Changes (principle 13)
+- id: fp-014-guidelines
+  layout: principle
+  title: Guidelines (principle 14)
 - id: fp-016-maintenance
   layout: principle
   title: Maintenance (principle 16)
