@@ -26,7 +26,7 @@ products:
 repository: https://github.com/InSilicoVida-Research-Lab/pbpko
 tracker: https://github.com/InSilicoVida-Research-Lab/pbpko/issues
 usages:
-- user: https://github.com/InSilicoVida-Research-Lab
-  description: PBPKO is used for annotation of kinetic model in SBML description format.
+- description: PBPKO is used for annotation of kinetic model in SBML description format.
+  user: https://github.com/InSilicoVida-Research-Lab
 activity_status: active
 ---
