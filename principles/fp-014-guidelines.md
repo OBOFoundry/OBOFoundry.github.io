@@ -36,11 +36,11 @@ Text to be added.
 
 Text to be added.
 
-<--! rev. [This check is automatically validated.](checks/fp_014) The automatic check fully covers the requirements for this principle. -->
+<!-- rev. [This check is automatically validated.](checks/fp_014) The automatic check fully covers the requirements for this principle. -->
 
 ## Feedback and Discussion
 
-<--! rev. To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%2314+%22Guidelines).
+<!-- rev. To suggest revisions or begin a discussion pertaining to this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Editorial+WG,principles&title=Principle+%2314+%22Guidelines).
 
 rev. To suggest revisions or begin a discussion pertaining to the automated validation of this principle, please [create an issue on GitHub](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/new?labels=attn%3A+Technical+WG,automated+validation+of+principles&title=Principle+%2314+%22Guidelines).
 
