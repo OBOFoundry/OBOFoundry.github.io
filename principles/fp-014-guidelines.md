@@ -10,7 +10,7 @@ GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; 
 
 ## Summary
 
-In addition to the principles, each ontology MUST follow general OBO guidelines.
+In addition to the principles, each ontology MUST follow gen  eral OBO guidelines.
 
 ## Purpose
 
