@@ -7,6 +7,7 @@ contact:
   github: cooperl09
   label: Laurel Cooper
   orcid: 0000-0002-6379-8932
+depicted_by: https://raw.githubusercontent.com/Planteome/plant-ontology/refs/heads/master/Planteome_profile.jpg
 dependencies:
 - id: ro
 description: The Plant Stress Ontology describes biotic and abiotic stresses that a plant may encounter.
