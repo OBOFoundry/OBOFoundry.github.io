@@ -7,7 +7,7 @@ contact:
   github: jaiswalp
   label: Pankaj Jaiswal
   orcid: 0000-0002-1005-8383
-depicted_by: http://planteome.org/sites/default/files/garland_logo.PNG
+depicted_by: https://raw.githubusercontent.com/Planteome/plant-ontology/refs/heads/master/Planteome_profile.jpg
 description: A structured, controlled vocabulary which describes the treatments, growing conditions, and/or study types used in plant biology experiments.
 domain: investigations
 homepage: http://planteome.org/
