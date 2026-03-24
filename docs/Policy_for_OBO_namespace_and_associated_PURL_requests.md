@@ -5,7 +5,7 @@ title: OBO Foundry membership requirements and technical details
 
 # Expectations for OBO Membership
 
-1. Participation in the OBO Foundry implies willingness to discuss your project and collaboratively develop it. You are strongly encouraged to build upon the existing suite of ontologies available in the [OBO library](http://obofoundry.org).
+1. Participation in the OBO Foundry implies willingness to discuss your project and collaboratively develop it. You are strongly encouraged to build upon the existing suite of ontologies available in the [OBO Foundry](http://obofoundry.org).
 
 2. We recommend projects be orthogonal to each other (i.e. no domain overlap). For those classes that are common across multiple resources (e.g., the class _cell_) we recommend importing terms from an already existing ontology. Application ontologies (those developed for specific data integration tasks) should reuse terms from existing OBO Foundry domain ontologies. At a minimum, we expect attribution of existing work, specifically through the use of PURLs for individual terms and ontologies.
 
