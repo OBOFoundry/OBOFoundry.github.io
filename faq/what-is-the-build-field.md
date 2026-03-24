@@ -18,8 +18,8 @@ build:
 ...
 ```
 
-This is instructions for the central OBO library build pipeline which
-runs nightly. This ensures creation of correct obo and owl files for
+These are the instructions for the central OBO Foundry build pipeline that
+runs nightly, which ensures creation of correct obo and owl files for
 each ontology.
 
 The output goes here:
