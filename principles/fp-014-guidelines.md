@@ -10,11 +10,11 @@ GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; 
 
 ## Summary
 
-In addition to the principles, each ontology MUST follow general OBO guidelines.
+In addition to the principles, each ontology MUST follow other OBO guidelines.
 
 ## Purpose
 
-Text to be added.
+The OBO Foundry has developed a set of best practices that address specific ontology development issues. Unlike the more high level requirements of the OBO Foundry principles, these practices tend to be detailed and often can be characterized as recommendations rather than hard requirements. Following these practices improves uniformity and interoperability of OBO ontologies. Therefore, the OBO Foundry has chosen to elevate these best practices to guidelines.
 
 ## Recommendations and Requirements
 
