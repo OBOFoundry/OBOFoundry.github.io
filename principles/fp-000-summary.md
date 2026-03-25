@@ -14,31 +14,31 @@ The following summarizes each principle. See individual pages for details.
 
 P1) <b>Open</b> - The ontology MUST be openly available to be used by all without any constraint other than (a) its origin must be acknowledged and (b) it is not to be altered and subsequently redistributed in altered form under the original name or with the same identifiers.
 
-P2) <b>Common Format</b> - The ontology is made available in a common formal language in an accepted concrete syntax.
+P2) <b>Common Format</b> - The ontology MUST be made available in a common formal language in an accepted concrete syntax.
 
 P3) <b>URI/Identifier Space</b> - Each ontology MUST have a unique IRI in the form of an OBO Foundry permanent URL (PURL).
 
-P4) <b>Versioning</b> - The ontology provider has documented procedures for versioning the ontology, and different versions of ontology are marked, stored, and officially released.
+P4) <b>Versioning</b> - The ontology provider MUST have documented procedures for versioning the ontology, and different versions of ontology MUST be marked, stored, and officially released.
 
-P5) <b>Scope</b> - The scope of an ontology is the extent of the domain or subject matter it intends to cover. The ontology must have a clearly specified scope and content that adheres to that scope.
+P5) <b>Scope</b> - The scope of an ontology is the extent of the domain or subject matter it intends to cover. The ontology MUST have a clearly specified scope and content that adheres to that scope.
 
-P6) <b>Textual Definitions</b> - The ontology has textual definitions for the majority of its classes and for top level terms in particular.
+P6) <b>Textual Definitions</b> - The ontology MUST have textual definitions for the majority of its classes and for top level terms in particular.
 
-P7) <b>Relations</b> - Relations should be reused from the Relations Ontology (RO).
+P7) <b>Relations</b> - Relations SHOULD be reused from the Relations Ontology (RO).
 
-P8) <b>Documentation</b> - The owners of the ontology should strive to provide as much documentation as possible.
+P8) <b>Documentation</b> - The owners of the ontology SHOULD strive to provide as much documentation as possible.
 
-P9) <b>Documented Plurality of Users</b> - The ontology developers should document that the ontology is used by multiple independent people or organizations.
+P9) <b>Documented Plurality of Users</b> - The ontology developers SHOULD document that the ontology is used by multiple independent people or organizations.
 
-P10) <b>Commitment To Collaboration</b> - OBO Foundry ontology development, in common with many other standards-oriented scientific activities, should be carried out in a collaborative fashion.
+P10) <b>Commitment To Collaboration</b> - OBO Foundry ontology development, in common with many other standards-oriented scientific activities, SHOULD be carried out in a collaborative fashion.
 
-P11) <b>Locus of Authority</b> - There should be a person who is responsible for communications between the community and the ontology developers, for communicating with the Foundry on all Foundry-related matters, for mediating discussions involving maintenance in the light of scientific advance, and for ensuring that all user feedback is addressed.
+P11) <b>Locus of Authority</b> - There MUST be a person who is responsible for communications between the community and the ontology developers, for communicating with the Foundry on all Foundry-related matters, for mediating discussions involving maintenance in the light of scientific advance, and for ensuring that all user feedback is addressed.
 
-P12) <b>Naming Conventions</b> - The names (primary labels) for elements (classes, properties, etc.) in an ontology must be intelligible to scientists and amenable to natural language processing. Each primary label SHOULD be unique among OBO Foundry ontologies, and MUST be unique within its own ontology.
+P12) <b>Naming Conventions</b> - The names (primary labels) for elements (classes, properties, etc.) in an ontology SHOULD be unique among OBO Foundry ontologies, and MUST be unique within its own ontology.
 
 P13) <b>Notification of Changes</b> - Ontologies SHOULD announce major changes to relevant stakeholders and collaborators ahead of release.
 
-P16) <b>Maintenance</b> - The ontology needs to reflect changes in scientific consensus to remain accurate over time.
+P16) <b>Maintenance</b> - The ontology SHOULD reflect changes in scientific consensus to remain accurate over time, and MUST be responsive to community requests.
 
 P19) <b>Term Stability</b> - The definition of a term MUST always denote the same thing(s)–known as “referent(s)”–in reality. If a proposed change to the definition would substantially change its referents, then a new term with new IRI and definition MUST instead be created.
 
