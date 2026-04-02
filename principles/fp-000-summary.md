@@ -24,7 +24,7 @@ P5) <b>Scope</b> - The scope of an ontology is the extent of the domain or subje
 
 P6) <b>Textual Definitions</b> - The ontology MUST have textual definitions for the majority of its classes and for top level terms in particular.
 
-P7) <b>Relations</b> - Relations SHOULD be reused from the Relations Ontology (RO).
+P7) <b>Relations</b> - Existing relations MUST be reused. New relations SHOULD be submitted to the Relations Ontology (RO).
 
 P8) <b>Documentation</b> - The owners of the ontology SHOULD strive to provide as much documentation as possible.
 
