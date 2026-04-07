@@ -1,3 +1,5 @@
+"""A workflow for removing a field from all ontology markdown files' metadata."""
+
 from io import StringIO
 from pathlib import Path
 
@@ -9,6 +11,7 @@ from obofoundry.standardize_metadata import ModifiedDumper
 
 
 def remove_field(name: str) -> None:
+    """Remove the metadata key from all ontologies' metadata."""
     for path in ONTOLOGY_DIRECTORY.glob("*.md"):
         remove_field_from_file(path, name)
 
@@ -39,7 +42,8 @@ def remove_field_from_file(path: Path, name: str) -> None:
 
 @click.command()
 @click.argument("name")
-def main(name) -> None:
+def main(name: str) -> None:
+    """Remove the metadata key from all ontologies' metadata."""
     remove_field(name)
 
 
