@@ -28,4 +28,4 @@ tracker: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issu
 activity_status: active
 ---
 
-The Oral Health and Disease Ontology (OHD) is an OBO Foundry ontology used for representing  oral-health maladies, their diagnosis, and treatment. It is has been used to represent the content of dental practice health records and is intended to be further developed for use in translation medicine. It demonstrates a principled split between billing codes as information entities and what the codes are about, such as dental procedures, materials, and patients.
+The Oral Health and Disease Ontology (OHD) contains terms for representing  oral-health maladies, their diagnosis, and treatment. It is has been used to represent the content of dental practice health records as well as dental fear and anxiety assessments. It is intended to be further developed for use in translation medicine. The OHD demonstrates a principled split between billing codes as information entities and what the codes are about, such as dental procedures, materials, and patients and reuses terms from other OBO Foundry Ontologies, such as BFO, OGMS, OBI, IAO and UBERON.
