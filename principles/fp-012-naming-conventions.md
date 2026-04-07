@@ -12,7 +12,7 @@ GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; 
 
 ## Summary
 
-The names (primary labels) for elements (classes, properties, etc.) in an ontology must be intelligible to scientists and amenable to natural language processing. Each primary label SHOULD be unique among OBO Foundry ontologies, and MUST be unique within its own ontology.
+The names (primary labels) for elements (classes, properties, etc.) in an ontology SHOULD be unique among OBO Foundry ontologies, and MUST be unique within its own ontology.
 
 ## Purpose
 
