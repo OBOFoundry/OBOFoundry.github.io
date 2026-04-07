@@ -16,7 +16,7 @@ The names (primary labels) for elements (classes, properties, etc.) in an ontolo
 
 ## Purpose
 
-Primary labels are a major mechanism by which terms are referenced. Accordingly, it is important that labels be unique, unambiguous, and formatted for ease of reading and comprehension. Non-unique labels (sometimes for terms that mean very different things) may cause confusion for human users and may prevent some ontology editors from full access to terms (for example, when crafting axioms). Labels that are ambiguous cause difficulty when users are trying to identify a term that matches their intention.
+Primary labels are a major mechanism by which terms are referenced. Accordingly, it is important that labels be unique, unambiguous, and formatted for ease of reading and comprehension. Non-unique labels (sometimes for terms that mean very different things) may cause confusion for human users and may prevent some ontology editing tools from full access to terms (for example, when crafting axioms). Labels that are ambiguous cause difficulty when users are trying to identify a term that matches their intention.
 
 ## Recommendations and Requirements
 
