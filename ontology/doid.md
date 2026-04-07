@@ -6,10 +6,6 @@ browsers:
 - title: DO Browser
   label: DO
   url: https://disease-ontology.org/do
-build:
-  infallible: 1
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.obo
 contact:
   email: lynn.schriml@gmail.com
   github: lschriml

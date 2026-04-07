@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: bto
 title: BRENDA tissue / enzyme source
-build:
-  checkout: git clone https://github.com/BRENDA-Enzymes/BTO.git
-  path: .
-  system: git
 contact:
   email: c.dudek@tu-braunschweig.de
   github: chdudek

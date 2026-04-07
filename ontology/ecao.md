@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: ecao
 title: The Echinoderm Anatomy and Development Ontology
-build:
-  checkout: git clone https://github.com/echinoderm-ontology/ecao_ontology.git
-  path: .
-  system: git
 contact:
   email: ettensohn@cmu.edu
   github: ettensohn

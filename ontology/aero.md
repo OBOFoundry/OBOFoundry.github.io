@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: aero
 title: Adverse Event Reporting Ontology
-build:
-  method: owl2obo
-  source_url: http://purl.obolibrary.org/obo/aero.owl
 contact:
   email: mcourtot@gmail.com
   label: Melanie Courtot

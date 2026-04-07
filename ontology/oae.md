@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: oae
 title: Ontology of Adverse Events
-build:
-  method: owl2obo
-  source_url: https://raw.githubusercontent.com/OAE-ontology/OAE/master/src/oae_merged.owl
 contact:
   email: yongqunh@med.umich.edu
   github: yongqunh

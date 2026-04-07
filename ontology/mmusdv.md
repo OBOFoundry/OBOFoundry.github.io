@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: mmusdv
 title: Mouse Developmental Stages
-build:
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/mmusdv/mmusdv.obo
 contact:
   email: frederic.bastian@unil.ch
   github: fbastian

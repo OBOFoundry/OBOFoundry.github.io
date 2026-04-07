@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: rxno
 title: Name Reaction Ontology
-build:
-  method: owl2obo
-  source_url: https://raw.githubusercontent.com/rsc-ontologies/rxno/master/rxno.owl
 contact:
   email: batchelorc@rsc.org
   github: batchelorc

@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: sibo
 title: Social Insect Behavior Ontology
-build:
-  checkout: git clone https://github.com/obophenotype/sibo.git
-  method: vcs
-  system: git
 contact:
   email: cjmungall@lbl.gov
   label: Chris Mungall

@@ -6,10 +6,6 @@ browsers:
 - title: EBI CHEBI Browser
   label: CHEBI
   url: http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView
-build:
-  infallible: 1
-  method: obo2owl
-  source_url: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo
 contact:
   email: amalik@ebi.ac.uk
   github: amalik01
