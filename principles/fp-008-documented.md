@@ -10,7 +10,7 @@ The wording of this principle is still in progress, with some issues still to be
 
 ## Summary
 
-The owners of the ontology should strive to provide as much documentation as possible. The documentation should detail the different processes specific to an ontology life cycle and target various audiences (users or developers).
+The owners of the ontology SHOULD strive to provide as much documentation as possible. The documentation SHOULD detail the different processes specific to an ontology life cycle and target various audiences (users or developers).
 
 [This check is automatically validated.](checks/fp_008)
 
