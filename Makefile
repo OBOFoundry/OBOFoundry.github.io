@@ -29,7 +29,10 @@ JENA_VERSION := 6.0.0
 JENA_DIR     := apache-jena-$(JENA_VERSION)
 JENA_ARCHIVE := $(JENA_DIR).tar.gz
 JENA_URL     := https://archive.apache.org/dist/jena/binaries/$(JENA_ARCHIVE)
-RIOT         := ./$(JENA_DIR)/bin/riot
+LOCAL_RIOT   := ./$(JENA_DIR)/bin/riot
+
+# Use system riot if available, otherwise fall back to local
+RIOT := $(shell command -v riot 2>/dev/null || echo "$(LOCAL_RIOT)")
 
 ### Configuration
 
@@ -108,14 +111,17 @@ registry/obo_context.jsonld: registry/ontologies.yml
 registry/obo_prefixes.ttl: registry/ontologies.yml
 	./util/make-shacl-prefixes.py $<  > $@.tmp && mv $@.tmp $@
 
-# Download and extract Jena
-$(RIOT): $(JENA_DIR)/bin/riot
-$(JENA_DIR)/bin/riot: $(JENA_ARCHIVE)
+# Only built if RIOT resolved to the local path
+$(LOCAL_RIOT): $(JENA_ARCHIVE)
 	tar -xzf $(JENA_ARCHIVE)
 	touch $@
 
 $(JENA_ARCHIVE):
 	curl -fL $(JENA_URL) -o $(JENA_ARCHIVE)
+
+# If RIOT is the system one, this is a no-op (file already exists)
+$(shell command -v riot 2>/dev/null):
+	@true
 
 # Use Apache-Jena RIOT to convert jsonld to n-triples
 # NOTE: UGLY HACK. If there is a problem then Jena will write WARN message (to stdout!!!), there appears to
