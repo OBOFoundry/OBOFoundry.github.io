@@ -25,6 +25,11 @@
 # Before editing this file, ensure that your editor is not set up to convert tabs
 # to spaces, and then use tabs to indent recipe lines.
 
+JENA_VERSION := 6.0.0
+JENA_DIR     := apache-jena-$(JENA_VERSION)
+JENA_ARCHIVE := $(JENA_DIR).tar.gz
+JENA_URL     := https://archive.apache.org/dist/jena/binaries/$(JENA_ARCHIVE)
+RIOT         := ./$(JENA_DIR)/bin/riot
 
 ### Configuration
 
@@ -51,7 +56,7 @@ integration-test: test valid-purl-report.txt
 
 # Remove and/or revert all targets to their repository versions:
 clean:
-	rm -Rf registry/ontologies.nt registry/ontologies.ttl registry/ontologies.yml sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
+	rm -Rf registry/ontologies.nt registry/ontologies.ttl registry/ontologies.yml sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/ $(JENA_DIR) $(JENA_ARCHIVE)
 	git checkout _config.yml registry/ontologies.jsonld registry/ontologies.ttl registry/ontologies.yml
 
 
@@ -103,15 +108,24 @@ registry/obo_context.jsonld: registry/ontologies.yml
 registry/obo_prefixes.ttl: registry/ontologies.yml
 	./util/make-shacl-prefixes.py $<  > $@.tmp && mv $@.tmp $@
 
+# Download and extract Jena
+$(RIOT): $(JENA_DIR)/bin/riot
+$(JENA_DIR)/bin/riot: $(JENA_ARCHIVE)
+	tar -xzf $(JENA_ARCHIVE)
+	touch $@
+
+$(JENA_ARCHIVE):
+	curl -fL $(JENA_URL) -o $(JENA_ARCHIVE)
+
 # Use Apache-Jena RIOT to convert jsonld to n-triples
 # NOTE: UGLY HACK. If there is a problem then Jena will write WARN message (to stdout!!!), there appears to
 #  be no way to get it to flag this even with strict and check options, so we do a check with grep, ugh.
 # see: http://stackoverflow.com/questions/20860222/why-do-i-have-these-warnings-with-jena-2-11-0
-registry/ontologies.nt: registry/ontologies.jsonld
-	riot --base=http://purl.obolibrary.org/obo/ --strict --check -q registry/context.jsonld $< > $@.tmp && mv $@.tmp $@ && egrep '(WARN|ERROR)' $@ && exit 1 || echo ok
+registry/ontologies.nt: registry/ontologies.jsonld $(RIOT)
+	$(RIOT) --base=http://purl.obolibrary.org/obo/ --strict --check -q registry/context.jsonld $< > $@.tmp && mv $@.tmp $@ && egrep '(WARN|ERROR)' $@ && exit 1 || echo ok
 
-registry/ontologies.ttl: registry/ontologies.nt
-	riot --base=http://purl.obolibrary.org/obo/ --out=ttl $< > $@.tmp && mv $@.tmp $@
+registry/ontologies.ttl: registry/ontologies.nt $(RIOT)
+	$(RIOT) --base=http://purl.obolibrary.org/obo/ --out=ttl $< > $@.tmp && mv $@.tmp $@
 
 ### Validate Configuration Files
 
