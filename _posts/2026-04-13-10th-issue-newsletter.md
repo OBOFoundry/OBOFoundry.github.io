@@ -163,10 +163,7 @@ The OBO Foundry is honored to highlight valued community members in each issue. 
 
 
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.jpg "image_tooltip")
+<img src="https://obofoundry.org/images/newsletter/wood10.png" style="height: 400px" alt="Valerie Wood" />
 
 
 Valerie Wood is Project Manager of PomBase ([www.pombase.org](http://www.pombase.org)), the comprehensive knowledgebase for Schizosaccharomyces pombe, a widely used model eukaryote. She has over 30 years of experience in fission yeast biocuration, beginning with genome sequence feature annotation and subsequently expanding into ontology-driven curation of molecular functions, genetic and physical interactions, phenotypes, and, more recently, GO-CAM pathway models.
@@ -182,10 +179,7 @@ PomBase is actively integrating AI into its biocuration workflows, including the
 
 
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
+<img src="https://obofoundry.org/images/newsletter/ZN Tan10.png" style="height: 400px" alt="Shawn ZK Tan" />
 
 
 Shawn is the citizen technology lead in GSK Asia Research & Development and works as an independent consultant operating under his own consulting practice, SignaMind. Shawn has also been part of the OBO Foundry Operations Committee since 2022. Starting his career as a lab scientist, Shawn only started work on biomedical ontologies after his PhD when he joined EMBL-EBI under David Osumi-Sutherland as an ontology editor, developing an ontology to support the data coming out from single cell mapping of the brain. During his time at EBI, Shawn actively contributed to the Cell Ontology (CL), Uberon, the Phenotype And Traits Ontology (PATO), and the Relation Ontology (RO). After his time at EMBL-EBI, Shawn joined Novo Nordisk first as a Senior Research Data Steward embedded in both research projects and ontology development. He subsequently took up a role as a Business Capability Lead where he drove the development and operationalisation of the ontology strategy. During his time at Novo Nordisk, Shawn was a strong advocate for using OBO Foundry ontologies and tools in industry, and for industry taking a bigger role in supporting the OBO community, embedding tools into pipeline and writing about the mutual benefits that exist in such a relationship. In his current roles, he continues advocating for the use of open standards and tools in industry and aims to be a strong advocate for Asia’s data for global use, with ambitions to build up communities and representation in Asia for such purposes. After experiencing the challenges of fragmented data across modern organizations and how they tend not to get the most out of using bio-ontologies, Shawn also started a consultancy, SignaMind, which focuses on helping organizations build up their semantic capabilities, and  doing so with strong business value in mind. With SignaMind, he is currently working with The Novo Nordisk Foundation Biotechnology Research Institute for the Green Transition (BRIGHT) to build up their semantic capabilities, starting with an ontology for precision fermentation (PREFER).
@@ -214,12 +208,7 @@ The inaugural episode is available on [YouTube](https://www.youtube.com/watch?v=
 
 A central contribution is internationalization: the Disease Ontology implemented language tags across labels, definitions, and synonyms and released Spanish-language ontology artifacts alongside bilingual website navigation. This work provides a practical model for multilingual delivery within the OBO ecosystem. The article also documents governance-through-practice improvements aligned with OBO operational priorities, including a clinician-led nosology education program that feeds curated updates back into the ontology and infrastructure modernization (e.g., Neo4j upgrade) to improve performance, sustainability, and long-term accessibility.
 
-
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
+<img src="https://obofoundry.org/images/newsletter/DO-KB10.png" style="height: 400px" alt="DO-KB" />
 
 
 Figure from Baron JA, Sánchez-Beato Johnson CM, Schor MA, Olley D, Nickel L, Felix V, Bello SM, Greene C, Lichenstein R, Bisordi K, *et al.* **The DO-KB knowledgebase 2026 update: expanding programmatic and language access.** *Nucleic Acids Research.* 2026;54(D1):D1425–D1436.[ https://doi.org/10.1093/nar/gkaf1213](https://doi.org/10.1093/nar/gkaf1213)
@@ -232,11 +221,8 @@ This recent article reports a community-driven effort to improve the representat
 A central contribution is the integration of clinical and ontology expertise to produce a more granular and standardized framework for epilepsy representation. The revised structure supports flexible annotation across levels of diagnostic specificity and improves data integration across resources. The work also highlights ongoing challenges, including defining epilepsy syndromes, distinguishing disease from phenotype, and modeling genetic and temporal aspects of disease. These updates strengthen Mondo’s role in supporting rare disease research, clinical decision-making, and data harmonization across platforms such as RDCA-DAP and ClinGen, while establishing a foundation for continued community-driven refinement.
 
 
+<img src="https://obofoundry.org/images/newsletter/mondo10.png" style="height: 400px" alt="Mondo" />
 
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
 
 
 Figure from Vasilevsky N, Gehrke S, Mullen K, Barua S, Braun I, Brünger T, Coughlin C II, Ivaniuk A, Korn D, Lal D, Marsh S, O’Loughlin E, Olson D, Shwetar Y, Sofocleous C, Vogel-Farley V, Grabenstatter H, Haendel M, Mungall C, Toro S. *Epilepsy disease classification: a community effort to enhance the Mondo Disease Ontology.* Database. 2026;2026:baag004.[ https://doi.org/10.1093/database/baag004](https://doi.org/10.1093/database/baag004)
@@ -249,11 +235,8 @@ This recent article, “ChEBI: re-engineered for a sustainable future,” descri
 The update also improves programmatic and user-facing access to ChEBI content by replacing legacy SOAP services with modern REST APIs (with interactive Swagger UI documentation), upgrading text search from Lucene to Elasticsearch, and updating chemical structure search to RDKit-based tooling (including dedicated support for substructure and similarity workflows). For ontology and data quality, the release introduces standardized identifiers and relationships (including broader alignment with OBO Relation Ontology), adds new export formats such as OBO JSON Graph, and applies ROBOT-based QC checks—reducing legacy ontology errors and improving consistency of metadata and annotation properties.
 
 
+<img src="https://obofoundry.org/images/newsletter/Chebi10.png" style="height: 400px" alt="Chebi" />
 
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
 
 
 Figure from Malik A, Arsalan M, Moreno C, Mosquera J, Félix E, Kizilören T, Muthukrishnan V, Zdrazil B, Leach AR, O’Boyle NM. **ChEBI: re-engineered for a sustainable future.** *Nucleic Acids Research.* 2026;54(D1):D1768–D1778.[ https://doi.org/10.1093/nar/gkaf1271](https://doi.org/10.1093/nar/gkaf1271)
@@ -277,11 +260,7 @@ Infrastructure and annotation practices have also been refined. Standardized ann
 Together, these developments position [OAE ](https://obofoundry.org/ontology/oae.html)as a comprehensive and interoperable framework for representing adverse events, supporting pharmacovigilance, precision medicine, and cross-domain data integration within the OBO ecosystem.
 
 
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
+<img src="https://obofoundry.org/images/newsletter/OAE10.png" style="height: 400px" alt="OAE" />
 
 
 Figure from Chenchen Pan, Qiuyue Yang, Xue Zhang, Shuyue Luo, Yongqun He, Jiangan Xie. The Ontology of Adverse Events in 2025. 2026 January 13. [https://doi.org/10.1038/s41597-026-06584-x](https://doi.org/10.1038/s41597-026-06584-x) 
