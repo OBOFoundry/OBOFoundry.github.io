@@ -2,6 +2,10 @@
 layout: ontology_detail
 id: fbbi
 title: Biological Imaging Methods Ontology
+browsers:
+- title: BioPortal Browser
+  label: BioPortal
+  url: https://bioportal.bioontology.org/ontologies/FBbi
 build:
   checkout: git clone https://github.com/foundingGIDE/fbbi.git
   path: .
