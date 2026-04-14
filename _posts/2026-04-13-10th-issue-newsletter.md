@@ -335,7 +335,11 @@ Three ontology-relevant meetings will be held in July 2026:
 * International Conference on Biomedical Ontology (ICBO) – July 13–18
     * Workshops and tutorials are expected during the first part of the week.
     * Submission details are pending clarification.
+      
+#### Biocuration 2026 (Virtual)
 
+* The 2026 Virtual Biocuration Conference Series brings together biocurators, database developers, data scientists, and the broader research community in an accessible and flexible format.
+  * More info: https://www.biocuration.org/events/biocuration2026-virtual/
 
 ---
 
