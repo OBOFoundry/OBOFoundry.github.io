@@ -23,11 +23,11 @@ preferredPrefix: ZFS
 products:
 - id: zfs.owl
 - id: zfs.obo
-repository: https://github.com/cerivs/zebrafish-anatomical-ontology
+repository: https://github.com/ZFIN/zebrafish-stage-ontology  
 taxon:
   id: NCBITaxon:7954
   label: Danio
-tracker: https://github.com/cerivs/zebrafish-anatomical-ontology/issues
+tracker: https://github.com/ZFIN/zebrafish-stage-ontology/issues 
 activity_status: active
 ---
 
