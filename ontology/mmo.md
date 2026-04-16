@@ -6,9 +6,6 @@ browsers:
 - title: RGD Ontology Browser
   label: RGD
   url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000
-build:
-  method: obo2owl
-  source_url: https://download.rgd.mcw.edu/ontology/measurement_method/measurement_method.obo
 contact:
   email: jrsmith@mcw.edu
   github: jrsjrs

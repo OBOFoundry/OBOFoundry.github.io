@@ -9,10 +9,6 @@ browsers:
 - title: GNOme Glycan Composition Browser
   label: Composition Browser
   url: https://gnome.glyomics.org/CompositionBrowser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2
-build:
-  checkout: git clone https://github.com/glygen-glycan-data/GNOme.git
-  path: .
-  system: git
 contact:
   email: nje5@georgetown.edu
   github: edwardsnj

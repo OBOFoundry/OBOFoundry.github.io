@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: sbo
 title: Systems Biology Ontology
-build:
-  insert_ontology_id: true
-  method: obo2owl
-  source_url: http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo
 contact:
   email: sheriff@ebi.ac.uk
   github: rsmsheriff

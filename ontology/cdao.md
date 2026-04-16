@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: cdao
 title: Comparative Data Analysis Ontology
-build:
-  method: owl2obo
-  source_url: http://purl.obolibrary.org/obo/cdao.owl
 contact:
   email: balhoff@renci.org
   github: balhoff

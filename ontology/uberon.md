@@ -18,11 +18,6 @@ browsers:
 - title: INCF KnowledgeSpace Portal
   label: KnowledgeSpace
   url: https://knowledge-space.org/index.php/pages/view/UBERON:0000061
-build:
-  checkout: git clone https://github.com/obophenotype/uberon.git
-  email_cc: cjmungall@lbl.gov
-  infallible: 1
-  system: git
 canonical: uberon.owl
 contact:
   email: cjmungall@lbl.gov

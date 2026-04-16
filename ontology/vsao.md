@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: vsao
 title: Vertebrate Skeletal Anatomy Ontology-
-build:
-  method: obo2owl
-  source_url: http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/tags/vocab-releases/VSAO/vsao.obo
 contact:
   email: wasila.dahdul@usd.edu
   label: Wasila Dahdul

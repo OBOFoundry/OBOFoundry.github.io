@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: ncro
 title: Non-Coding RNA Ontology
-build:
-  method: owl2obo
-  source_url: http://purl.obolibrary.org/obo/ncro/prebuild/ncro.owl
 contact:
   email: huang@southalabama.edu
   github: Huang-OMIT
