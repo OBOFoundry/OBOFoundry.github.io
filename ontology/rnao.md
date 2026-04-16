@@ -6,10 +6,6 @@ browsers:
 - title: RNA Ontology jOWL Browser
   label: RNAO
   url: http://bgsu-rna.github.io/rnao/
-build:
-  checkout: git clone https://github.com/BGSU-RNA/rnao.git
-  method: vcs
-  system: git
 contact:
   email: BatchelorC@rsc.org
   label: Colin Batchelor

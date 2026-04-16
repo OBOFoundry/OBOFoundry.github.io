@@ -6,10 +6,6 @@ browsers:
 - title: BioPortal Browser
   label: BioPortal
   url: https://bioportal.bioontology.org/ontologies/FBbi
-build:
-  checkout: git clone https://github.com/foundingGIDE/fbbi.git
-  path: .
-  system: git
 contact:
   email: damien@gerbi-gmb.de
   github: gouttegd

@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: trans
 title: Pathogen Transmission Ontology
-build:
-  infallible: 1
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/trans.obo
 contact:
   email: lynn.schriml@gmail.com
   github: lschriml

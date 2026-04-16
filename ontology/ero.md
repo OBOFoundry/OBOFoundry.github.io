@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: ero
 title: eagle-i resource ontology
-build:
-  method: owl2obo
-  source_url: http://purl.obolibrary.org/obo/ero.owl
 contact:
   email: Marc_Ciriello@hms.harvard.edu
   label: Marc Ciriello

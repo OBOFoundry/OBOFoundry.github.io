@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: zfs
 title: Zebrafish developmental stages ontology
-build:
-  infallible: 1
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/zfs/zfs.obo
 contact:
   email: van_slyke@zfin.org
   github: cerivs

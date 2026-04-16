@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: ddanat
 title: Dictyostelium discoideum anatomy
-build:
-  insert_ontology_id: true
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_anatomy.obo
 contact:
   email: pfey@northwestern.edu
   github: pfey03

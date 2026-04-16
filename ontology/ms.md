@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: ms
 title: Mass spectrometry ontology
-build:
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master/psi-ms.obo
 contact:
   email: joshua.adam.klein@gmail.com
   github: mobiusklein
