@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: fbbi
 title: Biological Imaging Methods Ontology
-build:
-  checkout: git clone https://github.com/foundingGIDE/fbbi.git
-  path: .
-  system: git
 contact:
   email: damien@gerbi-gmb.de
   github: gouttegd

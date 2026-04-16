@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: clyh
 title: Clytia hemisphaerica Development and Anatomy Ontology
-build:
-  checkout: git clone https://github.com/EBISPOT/clyh_ontology.git
-  path: .
-  system: git
 contact:
   email: lucas.leclere@obs-banyuls.fr
   github: Leclere-L

@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: mi
 title: Molecular Interactions Controlled Vocabulary
-build:
-  insert_ontology_id: true
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo
 contact:
   email: luana.licata@gmail.com
   github: luanalicata

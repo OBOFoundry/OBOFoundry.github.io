@@ -2,11 +2,6 @@
 layout: ontology_detail
 id: fao
 title: Fungal gross anatomy
-build:
-  checkout: git clone https://github.com/obophenotype/fungal-anatomy-ontology.git
-  infallible: 1
-  method: vcs
-  system: git
 contact:
   email: vw253@cam.ac.uk
   github: ValWood

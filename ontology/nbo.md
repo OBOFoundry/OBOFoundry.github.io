@@ -6,9 +6,6 @@ browsers:
 - title: BioPortal Ontology Browser
   label: BioPortal
   url: https://bioportal.bioontology.org/ontologies/NBO
-build:
-  method: owl2obo
-  source_url: https://raw.githubusercontent.com/obo-behavior/behavior-ontology/master/nbo.owl
 contact:
   email: g.gkoutos@bham.ac.uk
   github: gkoutos

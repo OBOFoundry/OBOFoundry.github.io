@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: maxo
 title: Medical Action Ontology
-build:
-  checkout: git clone https://github.com/monarch-initiative/MAxO.git
-  path: .
-  system: git
 contact:
   email: Leigh.Carmody@jax.org
   github: LCCarmody

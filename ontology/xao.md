@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: xao
 title: Xenopus Anatomy Ontology
-build:
-  infallible: 0
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo
 contact:
   email: Erik.Segerdell@cchmc.org
   github: seger

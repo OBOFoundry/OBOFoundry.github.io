@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: epo
 title: Epidemiology Ontology
-build:
-  method: owl2obo
-  source_url: http://purl.obolibrary.org/obo/epo.owl
 description: An ontology designed to support the semantic annotation of epidemiology resources
 domain: health
 homepage: https://code.google.com/p/epidemiology-ontology/
