@@ -2,6 +2,10 @@
 layout: ontology_detail
 id: fbbi
 title: Biological Imaging Methods Ontology
+browsers:
+- title: BioPortal Browser
+  label: BioPortal
+  url: https://bioportal.bioontology.org/ontologies/FBbi
 contact:
   email: damien@gerbi-gmb.de
   github: gouttegd
