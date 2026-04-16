@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: nomen
 title: NOMEN - A nomenclatural ontology for biological names
-build:
-  checkout: git clone https://github.com/SpeciesFileGroup/nomen.git
-  system: git
 canonical: nomen.owl
 contact:
   email: diapriid@gmail.com

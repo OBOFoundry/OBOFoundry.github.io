@@ -7,7 +7,7 @@ GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; 
 
 ## Summary
 
-The ontology provider has documented procedures for versioning the ontology, and different versions of ontology are marked, stored, and officially released.
+The ontology provider MUST have documented procedures for versioning the ontology, and different versions of ontology MUST be marked, stored, and officially released.
 
 ## Purpose
 

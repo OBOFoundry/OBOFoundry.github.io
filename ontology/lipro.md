@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: lipro
 title: Lipid Ontology
-build:
-  method: owl2obo
-  source_url: http://www.lipidprofiles.com/LipidOntology
 contact:
   email: bakerc@unb.ca
   label: Christopher Baker

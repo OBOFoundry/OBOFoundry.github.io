@@ -2,11 +2,6 @@
 layout: ontology_detail
 id: zfa
 title: Zebrafish anatomy and development ontology
-build:
-  infallible: 1
-  method: obo2owl
-  notes: may be ready to switch to vcs soon
-  source_url: https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/src/zebrafish_anatomy.obo
 contact:
   email: van_slyke@zfin.org
   github: cerivs

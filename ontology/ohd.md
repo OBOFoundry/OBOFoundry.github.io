@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: ohd
 title: Oral Health and Disease Ontology
-build:
-  method: owl2obo
-  source_url: http://purl.obolibrary.org/obo/ohd.owl
 contact:
   email: wdduncan@gmail.com
   github: wdduncan

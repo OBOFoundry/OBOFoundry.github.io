@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: geno
 title: Genotype Ontology
-build:
-  checkout: git clone https://github.com/monarch-initiative/GENO-ontology.git
-  path: src/ontology
-  system: git
 contact:
   email: mhb120@gmail.com
   github: mbrush

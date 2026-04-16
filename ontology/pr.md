@@ -9,11 +9,6 @@ browsers:
 - title: PRO Home
   label: PRO
   url: http://proconsortium.org
-build:
-  infallible: 0
-  method: obo2owl
-  oort_args: --no-reasoner
-  source_url: https://proconsortium.org/download/current/pro_nonreasoned.obo
 contact:
   email: dan5@georgetown.edu
   github: nataled

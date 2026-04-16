@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: flopo
 title: Flora Phenotype Ontology
-build:
-  method: owl2obo
-  source_url: https://github.com/flora-phenotype-ontology/flopoontology/raw/master/ontology/flopo.owl
 contact:
   email: robert.hoehndorf@kaust.edu.sa
   github: leechuck

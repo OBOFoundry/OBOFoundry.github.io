@@ -6,9 +6,6 @@ browsers:
 - title: RGD Ontology Browser
   label: RGD
   url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=PW:0000001
-build:
-  method: obo2owl
-  source_url: https://download.rgd.mcw.edu/ontology/pathway/pathway.obo
 contact:
   email: gthayman@mcw.edu
   github: gthayman

@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: uo
 title: Units of measurement ontology
-build:
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo
 contact:
   email: g.gkoutos@gmail.com
   github: gkoutos
