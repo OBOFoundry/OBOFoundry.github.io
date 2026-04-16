@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: newsletter
-title: "OBO Foundry Newsletter Issue 9"
+title: "OBO Foundry Newsletter Issue 10"
 date: 2026-04-13
 author:
   - OBO Operations Commitee
@@ -37,7 +37,7 @@ During the Issue 10 reporting period, the Editorial Working Group and Technical 
 
 
 
-* **Contents of Standardization Guidelines document finalized:** The Standardization Guidelines is a document developed to contain suggestions and recommendations deemed too detailed to be included as part of a Principles page. The guidelines currently include (1) Technical Considerations (addressing logical consistency after ontology reasoning, how to indicate ontology root terms, and use of standard synonym types); (2) Content Considerations (addressing preferred sources for imported terms, when to (not) import whole ontologies, and how to use NCIt terms); (3) Release Considerations (addressing the standards for different release types); and (4) Communication Considerations (addressing links to term issues. This document is not yet linked from the OBO Foundry web site, but a pre-release version is available [here](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/docs/StandardizationGuidelines.md).
+* **Contents of Standardization Guidelines document finalized:** The Standardization Guidelines is a document developed to contain suggestions and recommendations deemed too detailed to be included as part of a Principles page. The guidelines currently include (1) Technical Considerations (addressing logical consistency after ontology reasoning, how to indicate ontology root terms, and use of standard synonym types); (2) Content Considerations (addressing preferred sources for imported terms, when to (not) import whole ontologies, and how to use NCIt terms); (3) Release Considerations (addressing the standards for different release types); and (4) Communication Considerations (addressing links to term issues). This document is not yet linked from the OBO Foundry web site, but a pre-release version is available [here](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/docs/StandardizationGuidelines.md).
 
 * **Principle updates clarifying IRIs and resolvability requirements:** Reference to “imported from” was removed from Principle 1. Previously, “imported from” was used to indicate the ontology serving as the direct source of a term import, which could be either the primary (term-maintaining) ontology or an intermediary source. While its use is not prohibited, existing guidance recommending import from the primary source reduces its necessity.
 
@@ -62,15 +62,15 @@ Artificial intelligence is under active discussion within OBO as a potential sup
 
 
 
-* **OBO Academy sessions on AI-assisted biocuration: **In parallel, community-led activities are advancing the application of AI in biocuration and ontology engineering. OBO Academy sessions led by Chris Tabone demonstrated the use of large language models (Claude Code) for ontology development workflows (Part 1:[ https://youtu.be/pUoelp2qbDI](https://youtu.be/pUoelp2qbDI); Part 2:[ https://youtu.be/UOjzTGnG_XM](https://youtu.be/UOjzTGnG_XM)). These sessions illustrated practical applications, including automated term generation, ontology editing support, and workflow acceleration, while also highlighting challenges related to validation, reproducibility, and integration with existing curation standards. \
+* **OBO Academy sessions on AI-assisted biocuration:** In parallel, community-led activities are advancing the application of AI in biocuration and ontology engineering. OBO Academy sessions led by Chris Tabone demonstrated the use of large language models (Claude Code) for ontology development workflows (Part 1: [https://youtu.be/pUoelp2qbDI](https://youtu.be/pUoelp2qbDI); Part 2: [https://youtu.be/UOjzTGnG_XM](https://youtu.be/UOjzTGnG_XM)). These sessions illustrated practical applications, including automated term generation, ontology editing support, and workflow acceleration, while also highlighting challenges related to validation, reproducibility, and integration with existing curation standards.
 
-* **AI in biocuration (ISB Virtual Biocuration Conference 2026). **A workshop on AI in biocuration (February 9, 2026) demonstrated the use of large language models in curation workflows and knowledge representation (recording:[ https://youtu.be/jXHmHHLp9q0](https://youtu.be/jXHmHHLp9q0); details:[ https://www.biocuration.org/events/biocuration2026-virtual/](https://www.biocuration.org/events/biocuration2026-virtual/)). The workshop highlighted practical applications for AI-assisted curation, along with challenges related to validation, reproducibility, and integration with established ontology development standards. \
+* **AI in biocuration (ISB Virtual Biocuration Conference 2026):** A workshop on AI in biocuration (February 9, 2026) demonstrated the use of large language models in curation workflows and knowledge representation (recording: [https://youtu.be/jXHmHHLp9q0](https://youtu.be/jXHmHHLp9q0); details: [https://www.biocuration.org/events/biocuration2026-virtual/](https://www.biocuration.org/events/biocuration2026-virtual/)). The workshop highlighted practical applications for AI-assisted curation, along with challenges related to validation, reproducibility, and integration with established ontology development standards.
 
-* **LinkML community discussion on AI governance: **A LinkML community call (February 19, 2026) addressed governance considerations for AI use, including discussion of an “AI covenant” and its potential role in defining responsible use of AI in ontology development, documentation, and data integration (recording:[ https://youtu.be/EOYypShdKdw](https://youtu.be/EOYypShdKdw)). \
+* **LinkML community discussion on AI governance:** A LinkML community call (February 19, 2026) addressed governance considerations for AI use, including discussion of an “AI covenant” and its potential role in defining responsible use of AI in ontology development, documentation, and data integration (recording: [https://youtu.be/EOYypShdKdw](https://youtu.be/EOYypShdKdw)).
 
-* **AI4Curation guidance resources: **Community-developed documentation provides guidance for applying AI tools in biocuration and ontology workflows ([https://ai4curation.io/aidocs/](https://ai4curation.io/aidocs/)). supporting more consistent and transparent adoption across projects. \
+* **AI4Curation guidance resources:** Community-developed documentation provides guidance for applying AI tools in biocuration and ontology workflows ([https://ai4curation.io/aidocs/](https://ai4curation.io/aidocs/)), supporting more consistent and transparent adoption across projects.
 
-* **OBO Slack channels for AI discussions: **Two dedicated Slack channels (#ethical-ai, #ai) have been established to coordinate discussion of ethical, technical, and governance considerations related to AI use, indicating increasing community engagement around responsible AI integration.
+* **OBO Slack channels for AI discussions:** Two dedicated Slack channels (#ethical-ai, #ai) have been established to coordinate discussion of ethical, technical, and governance considerations related to AI use, indicating increasing community engagement around responsible AI integration.
 
 
 ---
@@ -116,7 +116,7 @@ Artificial intelligence is under active discussion within OBO as a potential sup
 * Join the discussion: GitHub Issue: [#2835](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2835)
 * Key Discussion: Required items in the pre-registration checklist remain incomplete. The submitter has been notified, and review will continue once outstanding requirements are addressed.
 
-[Clinical Metadata Exploration Ontology](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2822)
+**[Clinical Metadata Exploration Ontology](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2822)**
 
 
 
@@ -142,7 +142,7 @@ Launched in 2011 as an OBO Foundry community ontology, the Ontology of Adverse E
 
 #### MONDO (Mondo Disease Ontology)
 
-The [Mondo Disease Ontology](https://obofoundry.org/ontology/mondo.html) is now available within [Epic Electronic Health Record (EHR) ](https://www.ehrinpractice.com/epic-ehr-software-profile-119.html?campaignid=376972938&adgroupid=28013748018&creative=618186207721&keyword=&device=c&matchtype=&campaignid=376972938&adgroupid=28013748018&creative=618186207721&keyword=&gad_source=1&gad_campaignid=376972938&gbraid=0AAAAADl0cfbTklNAQGjFAY1ViMIF6JOdy&gclid=Cj0KCQiA5I_NBhDVARIsAOrqIsa7fWPTRyj5DwFswJ9MTQv-hTypzfgN8AkqYNxOGGLHsNl9Bkd0rAoaAqheEALw_wcB)systems through integration with IMO Health’s terminology platform. As part of Epic’s February 2026 software update, health systems using IMO Core can document diagnoses using Mondo-linked terms directly in clinical workflows.
+The [Mondo Disease Ontology](https://obofoundry.org/ontology/mondo.html) is [now available within Epic Electronic Health Record (EHR)](https://www.prnewswire.com/news-releases/imo-health-operationalizes-mondo-rare-disease-knowledge-bringing-greater-precision-to-diagnosis-and-research-302697213.html) systems through integration with IMO Health’s terminology platform. As part of Epic’s February 2026 software update, health systems using IMO Core can document diagnoses using Mondo-linked terms directly in clinical workflows.
 
 IMO Health has mapped nearly 5,000 new rare disease diagnoses and aligned more than 25,000 existing clinical terms to standardized Mondo identifiers. This integration enables clinicians to continue using familiar terminology while ensuring that documentation is connected to unified, computable Mondo IDs behind the scenes.
 
@@ -170,7 +170,7 @@ Valerie Wood is Project Manager of PomBase ([www.pombase.org](http://www.pombase
 
 Val has been a major contributor to the development of the Gene Ontology since its inception. She also maintains the Fission Yeast Phenotype Ontology (FYPO), originally developed by Midori Harris, and contributes regularly to several community ontologies, including Mondo Disease Ontology, the Sequence Ontology, and ChEBI (Chemical Entities of Biological Interest).
 
-She recently published a perspective article titled “Empowering Biological Knowledgebases: Advances in Human-in-the-Loop AI-Driven Literature Curation”  [DOI: 10.1093/bioadv/vbag028](https://doi.org/10.1093/bioadv/vbag028)), with colleagues from the ELIXIR Biocuration Focus Group. This work reviews how artificial intelligence (particularly large language models) is being applied to support literature curation, outlines key challenges, and provides practical recommendations for future development.
+She recently published a perspective article titled “Empowering Biological Knowledgebases: Advances in Human-in-the-Loop AI-Driven Literature Curation” ([DOI: 10.1093/bioadv/vbag028](https://doi.org/10.1093/bioadv/vbag028)), with colleagues from the ELIXIR Biocuration Focus Group. This work reviews how artificial intelligence (particularly large language models) is being applied to support literature curation, outlines key challenges, and provides practical recommendations for future development.
 
 PomBase is actively integrating AI into its biocuration workflows, including the use of [ai4curation](https://ai4curation.io/aidocs/) tools developed by Chris Mungall and colleagues to accelerate ontology development, as well as exploring AI-based approaches for extracting ontology-driven annotations from the literature.
 
@@ -179,7 +179,7 @@ PomBase is actively integrating AI into its biocuration workflows, including the
 
 
 
-<img src="https://obofoundry.org/images/newsletter/ZN Tan10.png" style="height: 400px" alt="Shawn ZK Tan" />
+<img src="https://obofoundry.org/images/newsletter/ZN-Tan10.png" style="height: 400px" alt="Shawn ZK Tan" />
 
 
 Shawn is the citizen technology lead in GSK Asia Research & Development and works as an independent consultant operating under his own consulting practice, SignaMind. Shawn has also been part of the OBO Foundry Operations Committee since 2022. Starting his career as a lab scientist, Shawn only started work on biomedical ontologies after his PhD when he joined EMBL-EBI under David Osumi-Sutherland as an ontology editor, developing an ontology to support the data coming out from single cell mapping of the brain. During his time at EBI, Shawn actively contributed to the Cell Ontology (CL), Uberon, the Phenotype And Traits Ontology (PATO), and the Relation Ontology (RO). After his time at EMBL-EBI, Shawn joined Novo Nordisk first as a Senior Research Data Steward embedded in both research projects and ontology development. He subsequently took up a role as a Business Capability Lead where he drove the development and operationalisation of the ontology strategy. During his time at Novo Nordisk, Shawn was a strong advocate for using OBO Foundry ontologies and tools in industry, and for industry taking a bigger role in supporting the OBO community, embedding tools into pipeline and writing about the mutual benefits that exist in such a relationship. In his current roles, he continues advocating for the use of open standards and tools in industry and aims to be a strong advocate for Asia’s data for global use, with ambitions to build up communities and representation in Asia for such purposes. After experiencing the challenges of fragmented data across modern organizations and how they tend not to get the most out of using bio-ontologies, Shawn also started a consultancy, SignaMind, which focuses on helping organizations build up their semantic capabilities, and  doing so with strong business value in mind. With SignaMind, he is currently working with The Novo Nordisk Foundation Biotechnology Research Institute for the Green Transition (BRIGHT) to build up their semantic capabilities, starting with an ontology for precision fermentation (PREFER).
@@ -278,11 +278,21 @@ To ensure transparency, traceability, and long-term sustainability, OBO Foundry 
 
 Documentation should cover several complementary areas. Global ontology documentation includes metadata describing the ontology as a whole, such as creators, maintainers, license, and version information. Local ontology documentation addresses representational units (classes and relations), including justification of metadata elements, explanation of axiomatization, and clarification of whether textual definitions are manually authored or generated using patterns or software assistance. User documentation should describe the ontology’s purpose, scope, intended use cases, and access methods, potentially including SPARQL query examples, training materials, tutorials, publications, and recorded presentations. Developer documentation should outline contribution workflows (e.g., via a CONTRIBUTING.md file), licensing terms, version control practices, release procedures, deprecation and conflict resolution policies, batch term submission processes, continuous integration, interaction with orthogonal resources, and the use of automated agents for quality control and maintenance.
 
-Implementation requirement: If a term originally defined in ontology A is adopted into ontology B with a new identifier, the annotation assertion rdfs:isDefinedBy MUST be added to record provenance. In OWL (Turtle serialization), this is expressed as: \
-[http://purl.obolibrary.org/obo/A_123](http://purl.obolibrary.org/obo/A_123) rdfs:isDefinedBy[ http://purl.obolibrary.org/obo/b.owl \
-](http://purl.obolibrary.org/obo/b.owl)In OBO format, this is expressed as: \
-property_value: isDefinedBy[ http://purl.obolibrary.org/obo/b.owl \
-](http://purl.obolibrary.org/obo/b.owl)This requirement ensures traceability of adopted terms across ontologies.
+Implementation requirement: If a term originally defined in ontology A is adopted into ontology B with a new identifier, the annotation assertion `rdfs:isDefinedBy` MUST be added to record provenance.
+
+In OWL (Turtle serialization), this is expressed as:
+
+```turtle
+<http://purl.obolibrary.org/obo/A_123> rdfs:isDefinedBy <http://purl.obolibrary.org/obo/b.owl> .
+```
+
+In OBO format, this is expressed as:
+
+```obo
+property_value: isDefinedBy http://purl.obolibrary.org/obo/b.owl
+```
+
+This requirement ensures traceability of adopted terms across ontologies.
 
 Validation: Principle 8 is automatically validated through the OBO Dashboard. Documentation presence and completeness are assessed as part of overall ontology soundness evaluation.
 
