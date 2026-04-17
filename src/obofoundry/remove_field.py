@@ -18,8 +18,8 @@ def remove_field(name: str) -> None:
 
     schema_path = ROOT.joinpath("util", "schema", "registry_schema.json")
     schema = json.loads(schema_path.read_text())
-    if name in schema['properties']:
-        del schema['properties'][name]
+    if name in schema["properties"]:
+        del schema["properties"][name]
     schema_path.write_text(json.dumps(schema, indent=2) + "\n")
 
 
