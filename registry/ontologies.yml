@@ -2029,6 +2029,10 @@ ontologies:
   title: Fungal gross anatomy
   tracker: https://github.com/obophenotype/fungal-anatomy-ontology/issues
 - activity_status: active
+  browsers:
+  - label: BioPortal
+    title: BioPortal Browser
+    url: https://bioportal.bioontology.org/ontologies/FBbi
   contact:
     email: damien@gerbi-gmb.de
     github: gouttegd
@@ -4711,7 +4715,7 @@ ontologies:
   description: The Oral Health and Disease Ontology is used for representing the diagnosis
     and treatment of dental maladies.
   domain: health
-  homepage: https://purl.obolibrary.org/obo/ohd/home
+  homepage: https://purl.obolibrary.org/obo/ohd
   id: ohd
   layout: ontology_detail
   license:
@@ -4723,9 +4727,7 @@ ontologies:
   products:
   - id: ohd.owl
     ontology_purl: http://purl.obolibrary.org/obo/ohd.owl
-  - id: ohd/dev/ohd.owl
-    ontology_purl: http://purl.obolibrary.org/obo/ohd/dev/ohd.owl
-    title: OHD dev
+    title: Oral Health and Disease Ontology
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/32819435
     title: Structuring, reuse and analysis of electronic dental data using the Oral
