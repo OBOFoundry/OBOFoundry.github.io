@@ -102,7 +102,6 @@ publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/25009735
   title: Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon
 repository: https://github.com/obophenotype/uberon
-slack: https://obo-communitygroup.slack.com/archives/C01CR698CF2
 taxon:
   id: NCBITaxon:33208
   label: Metazoa
