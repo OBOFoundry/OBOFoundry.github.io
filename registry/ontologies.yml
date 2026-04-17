@@ -746,7 +746,6 @@ ontologies:
   title: Confidence Information Ontology
   tracker: https://github.com/BgeeDB/confidence-information-ontology
 - activity_status: active
-  canonical: cl.owl
   contact:
     email: do12@sanger.ac.uk
     github: dosumis
@@ -766,7 +765,6 @@ ontologies:
   domain: anatomy and development
   homepage: https://obophenotype.github.io/cell-ontology/
   id: cl
-  label: Cell Ontology
   layout: ontology_detail
   license:
     label: CC BY 4.0
@@ -1928,7 +1926,6 @@ ontologies:
   domain: health
   homepage: https://github.com/SCAI-BIO/EpilepsyOntology
   id: epio
-  label: Epilepsy Ontology
   layout: ontology_detail
   license:
     label: CC BY 4.0
@@ -2768,8 +2765,6 @@ ontologies:
   homepage: http://geneontology.org/
   id: go
   in_foundry_order: 1
-  integration_server: http://build.berkeleybop.org/view/GO
-  label: GO
   layout: ontology_detail
   license:
     label: CC BY 4.0
@@ -3293,7 +3288,6 @@ ontologies:
   publications:
   - id: https://doi.org/10.5281/zenodo.6522019
     title: 'LABO: An Ontology for Laboratory Test Prescription and Reporting'
-  releases: https://github.com/OpenLHS/LABO/releases/
   repository: https://github.com/OpenLHS/LABO
   tags:
   - clinical documentation
@@ -3650,7 +3644,6 @@ ontologies:
   - id: https://doi.org/10.1089/omi.2006.10.231
     title: 'Taking the First Steps towards a Standard for Reporting on Phylogenies:
       Minimum Information about a Phylogenetic Analysis (MIAPA)'
-  releases: https://github.com/evoinfo/miapa/releases
   repository: https://github.com/evoinfo/miapa
   title: MIAPA Ontology
   tracker: https://github.com/evoinfo/miapa/issues
@@ -3760,7 +3753,6 @@ ontologies:
   - label: Monarch
     title: Monarch Initiative Disease Browser
     url: https://monarchinitiative.org/disease/MONDO:0019609
-  canonical: mondo.owl
   contact:
     email: Sabrina@tislab.org
     github: sabrinatoro
@@ -3772,7 +3764,6 @@ ontologies:
   domain: health
   homepage: https://monarch-initiative.github.io/mondo
   id: mondo
-  label: Mondo
   layout: ontology_detail
   license:
     label: CC BY 4.0
@@ -4082,8 +4073,6 @@ ontologies:
   domain: investigations
   homepage: http://www.psidev.info/groups/controlled-vocabularies
   id: ms
-  integration_server: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master
-  label: MS
   layout: ontology_detail
   license:
     label: CC BY 3.0
@@ -4194,7 +4183,6 @@ ontologies:
         pertussis as the source organism.
       url: http://www.iedb.org/assay/1505273
     user: https://www.iedb.org
-  wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
 - activity_status: active
   contact:
     email: noreply@example.com
@@ -4282,7 +4270,6 @@ ontologies:
   title: Next Generation Biobanking Ontology
   tracker: https://github.com/Dalalghamdi/NGBO/issues
 - activity_status: active
-  canonical: nomen.owl
   contact:
     email: diapriid@gmail.com
     github: mjy
@@ -4296,7 +4283,6 @@ ontologies:
     title: NSF ABI-1356381
   homepage: https://github.com/SpeciesFileGroup/nomen
   id: nomen
-  label: NOMEN
   layout: ontology_detail
   license:
     label: CC0 1.0
@@ -4498,7 +4484,6 @@ ontologies:
   homepage: http://obi-ontology.org
   id: obi
   in_foundry_order: 1
-  integration_server: http://build.berkeleybop.org/job/build-obi/
   layout: ontology_detail
   license:
     label: CC BY 4.0
@@ -4948,7 +4933,6 @@ ontologies:
   domain: diet, metabolomics, and nutrition
   homepage: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
   id: one
-  label: Ontology for Nutritional Epidemiology
   layout: ontology_detail
   license:
     label: CC BY 4.0
@@ -4987,7 +4971,6 @@ ontologies:
   domain: diet, metabolomics, and nutrition
   homepage: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
   id: ons
-  label: Ontology for Nutritional Studies
   layout: ontology_detail
   license:
     label: CC BY 4.0
@@ -5775,7 +5758,6 @@ ontologies:
     orcid: 0000-0001-5809-9523
   depicted_by: https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png
   description: An ontological representation of protein-related entities
-  documentation: https://proconsortium.org/download/current/pro_readme.txt
   domain: chemistry and biochemistry
   homepage: http://proconsortium.org
   id: pr
@@ -6013,14 +5995,12 @@ ontologies:
   title: Radiation Biology Ontology
   tracker: https://github.com/Radiobiology-Informatics-Consortium/RBO/issues
 - activity_status: active
-  canonical: ro.owl
   contact:
     email: cjmungall@lbl.gov
     github: cmungall
     label: Chris Mungall
     orcid: 0000-0002-6601-2165
   description: Relationship types shared across multiple ontologies
-  documentation: https://oborel.github.io/obo-relations/
   domain: upper
   homepage: https://oborel.github.io/
   id: ro
@@ -6707,7 +6687,6 @@ ontologies:
   - label: KnowledgeSpace
     title: INCF KnowledgeSpace Portal
     url: https://knowledge-space.org/index.php/pages/view/UBERON:0000061
-  canonical: uberon.owl
   contact:
     email: cjmungall@lbl.gov
     github: cmungall
@@ -6741,7 +6720,6 @@ ontologies:
     title: NSF DEB-0956049
   homepage: http://uberon.org
   id: uberon
-  label: Uberon
   layout: ontology_detail
   license:
     label: CC BY 3.0
@@ -6806,9 +6784,7 @@ ontologies:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/25009735
     title: Unification of multi-species vertebrate anatomy ontologies for comparative
       biology in Uberon
-  releases: http://purl.obolibrary.org/obo/uberon/releases/
   repository: https://github.com/obophenotype/uberon
-  slack: https://obo-communitygroup.slack.com/archives/C01CR698CF2
   taxon:
     id: NCBITaxon:33208
     label: Metazoa
@@ -6880,7 +6856,6 @@ ontologies:
       title: 'ChEMBL: towards direct deposition of bioassay data'
     type: Database
     user: https://www.ebi.ac.uk/chembl/
-  wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 - activity_status: active
   contact:
     email: g.gkoutos@gmail.com
@@ -7415,7 +7390,6 @@ ontologies:
   domain: chemistry and biochemistry
   homepage: http://www.psidev.info/groups/controlled-vocabularies
   id: xlmod
-  label: xlmod
   layout: ontology_detail
   license:
     label: CC BY 3.0
@@ -7860,7 +7834,6 @@ ontologies:
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/22027554
     title: Controlled vocabularies and semantics in systems biology
-  releases: https://github.com/SED-ML/KiSAO/releases
   repository: https://github.com/SED-ML/KiSAO
   tags:
   - systems biology
@@ -8842,7 +8815,6 @@ ontologies:
     label: Marc Ciriello
   description: An ontology of research resources such as instruments. protocols, reagents,
     animal models and biospecimens.
-  documentation: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
   domain: information
   homepage: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
   id: ero
