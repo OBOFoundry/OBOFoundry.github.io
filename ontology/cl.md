@@ -2,7 +2,6 @@
 layout: ontology_detail
 id: cl
 title: Cell Ontology
-canonical: cl.owl
 contact:
   email: do12@sanger.ac.uk
   github: dosumis
@@ -20,7 +19,6 @@ depicted_by: /images/CL-logo.jpg
 description: The Cell Ontology is a structured controlled vocabulary for cell types in animals.
 domain: anatomy and development
 homepage: https://obophenotype.github.io/cell-ontology/
-label: Cell Ontology
 license:
   label: CC BY 4.0
   url: http://creativecommons.org/licenses/by/4.0/

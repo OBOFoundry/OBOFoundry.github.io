@@ -14,7 +14,6 @@ dependencies:
 description: An ontology to standardize research output of nutritional epidemiologic studies.
 domain: diet, metabolomics, and nutrition
 homepage: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies
-label: Ontology for Nutritional Epidemiology
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/

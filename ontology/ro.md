@@ -2,14 +2,12 @@
 layout: ontology_detail
 id: ro
 title: Relation Ontology
-canonical: ro.owl
 contact:
   email: cjmungall@lbl.gov
   github: cmungall
   label: Chris Mungall
   orcid: 0000-0002-6601-2165
 description: Relationship types shared across multiple ontologies
-documentation: https://oborel.github.io/obo-relations/
 domain: upper
 homepage: https://oborel.github.io/
 license:

@@ -26,7 +26,6 @@ products:
 publications:
 - id: https://doi.org/10.5281/zenodo.6522019
   title: 'LABO: An Ontology for Laboratory Test Prescription and Reporting'
-releases: https://github.com/OpenLHS/LABO/releases/
 repository: https://github.com/OpenLHS/LABO
 tags:
 - clinical documentation

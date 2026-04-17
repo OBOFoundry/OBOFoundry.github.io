@@ -13,8 +13,6 @@ dependencies:
 description: A structured controlled vocabulary for the annotation of experiments concerned with proteomics mass spectrometry.
 domain: investigations
 homepage: http://www.psidev.info/groups/controlled-vocabularies
-integration_server: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master
-label: MS
 license:
   label: CC BY 3.0
   url: https://creativecommons.org/licenses/by/3.0/

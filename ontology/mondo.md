@@ -6,7 +6,6 @@ browsers:
 - title: Monarch Initiative Disease Browser
   label: Monarch
   url: https://monarchinitiative.org/disease/MONDO:0019609
-canonical: mondo.owl
 contact:
   email: Sabrina@tislab.org
   github: sabrinatoro
@@ -16,7 +15,6 @@ depicted_by: https://raw.githubusercontent.com/monarch-initiative/mondo/master/d
 description: A global community effort to harmonize multiple disease resources to yield a coherent merged ontology.
 domain: health
 homepage: https://monarch-initiative.github.io/mondo
-label: Mondo
 license:
   label: CC BY 4.0
   url: http://creativecommons.org/licenses/by/4.0/
