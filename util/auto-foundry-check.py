@@ -35,6 +35,7 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 
 template = "- {ontology} ({id}): [{title}]({link})\n"
 
+
 def main():
     parser = argparse.ArgumentParser(description="Extract foundry data")
     parser.add_argument(
