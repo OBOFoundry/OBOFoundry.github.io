@@ -5,7 +5,6 @@ title: Epidemiology Ontology
 description: An ontology designed to support the semantic annotation of epidemiology resources
 domain: health
 homepage: https://code.google.com/p/epidemiology-ontology/
-in_foundry: false
 is_obsolete: true
 products:
 - id: epo.owl

@@ -23,7 +23,6 @@ The different products are listed as objects under the `product` key, for exampl
 ---
 layout: ontology_detail
 id: go
-in_foundry_order: 1
 label: GO
 description: An ontology for describing the function of genes and gene products
 title: Gene Ontology

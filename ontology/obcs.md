@@ -10,7 +10,6 @@ contact:
 description: A biomedical ontology in the domain of biological and clinical statistics.
 domain: information technology
 homepage: https://github.com/obcs/obcs
-in_foundry: false
 license:
   label: CC BY 4.0
   url: http://creativecommons.org/licenses/by/4.0/

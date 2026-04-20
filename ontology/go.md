@@ -34,7 +34,6 @@ depicted_by: /images/go_logo.png
 description: An ontology for describing the function of genes and gene products
 domain: biological systems
 homepage: http://geneontology.org/
-in_foundry_order: 1
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
