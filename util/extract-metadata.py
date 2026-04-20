@@ -222,8 +222,6 @@ def concat_ont_yaml(args):
                 for product in obj["products"]:
                     decorate_entry(product)
 
-    objs = []
-    foundry = []
     library = []
     obsolete = []
     cfg = {}
@@ -231,14 +229,12 @@ def concat_ont_yaml(args):
         with open(args.include, "r") as f:
             cfg = yaml.load(f.read(), Loader=yaml.SafeLoader)
     for fn in args.files:
-        (obj, md) = load_md(fn)
+        obj, _md = load_md(fn)
         if obj.get("is_obsolete"):
             obsolete.append(obj)
-        elif "in_foundry_order" in obj:
-            foundry.append(obj)
         else:
             library.append(obj)
-    objs = foundry + library + obsolete
+    objs = library + obsolete
     cfg["ontologies"] = objs
     decorate_metadata(objs)
     with open(args.output, "w") as f:

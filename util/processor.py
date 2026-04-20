@@ -1,7 +1,15 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
+
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "pyyaml>=6.0.3",
+#     "requests>=2.33.1",
+#     "sparqlwrapper>=2.0.0",
+# ]
+# ///
 
 import argparse
-import datetime
 import logging
 import sys
 import time

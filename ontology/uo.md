@@ -10,7 +10,6 @@ contact:
 description: Metrical units for use in conjunction with PATO
 domain: phenotype
 homepage: https://github.com/bio-ontology-research-group/unit-ontology
-in_foundry: false
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/

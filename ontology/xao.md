@@ -10,7 +10,6 @@ contact:
 description: XAO represents the anatomy and development of the African frogs Xenopus laevis and tropicalis.
 domain: anatomy and development
 homepage: http://www.xenbase.org/anatomy/xao.do?method=display
-in_foundry_order: 1
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/

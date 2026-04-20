@@ -1,4 +1,11 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
+
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "pyyaml>=6.0.3",
+# ]
+# ///
 
 # Read the ontologies.yml file
 # check foundry criteria
@@ -27,9 +34,6 @@ Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Wer
 """
 
 template = "- {ontology} ({id}): [{title}]({link})\n"
-
-IN_FOUNDRY_ORDER = "in_foundry_order"
-
 
 def main():
     parser = argparse.ArgumentParser(description="Extract foundry data")
@@ -72,7 +76,6 @@ FAIL_USERS = "No real users"
 def review_ontology(ont):
     inject(ont)
     fails = []
-    is_foundry = IN_FOUNDRY_ORDER in ont
     open_license = False
     if "license" in ont:
         lurl = ont["license"]["url"]
@@ -87,7 +90,7 @@ def review_ontology(ont):
         fails.append(FAIL_TRACKER)
     if "usages" not in ont:
         fails.append(FAIL_USERS)
-    conflict = is_foundry and len(fails) > 0
+    conflict = len(fails) > 0
     return dict(id=ont["id"], fails=fails, conflict=conflict)
 
 
