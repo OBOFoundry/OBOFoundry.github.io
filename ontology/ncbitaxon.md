@@ -42,7 +42,6 @@ usages:
   - description: A specific assay curated in the IEDB using the NCBITaxon:520 Bordetella pertussis as the source organism.
     url: http://www.iedb.org/assay/1505273
   user: https://www.iedb.org
-wasDerivedFrom: ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat
 activity_status: active
 ---
 

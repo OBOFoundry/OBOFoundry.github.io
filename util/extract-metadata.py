@@ -1,4 +1,14 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
+
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "python-frontmatter==0.5.0",
+#     "pyyaml",
+#     "ruamel-yaml==0.16.12",
+#     "yamllint==1.25.0",
+# ]
+# ///
 
 import argparse
 import sys

@@ -16,7 +16,6 @@ contact:
   orcid: 0000-0001-5809-9523
 depicted_by: https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png
 description: An ontological representation of protein-related entities
-documentation: https://proconsortium.org/download/current/pro_readme.txt
 domain: chemistry and biochemistry
 homepage: http://proconsortium.org
 in_foundry_order: 1

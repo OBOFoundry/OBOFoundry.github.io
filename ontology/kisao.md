@@ -34,7 +34,6 @@ products:
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/22027554
   title: Controlled vocabularies and semantics in systems biology
-releases: https://github.com/SED-ML/KiSAO/releases
 repository: https://github.com/SED-ML/KiSAO
 tags:
 - systems biology

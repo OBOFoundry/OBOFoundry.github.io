@@ -21,14 +21,14 @@ SKIP_KEYS = {
 
 
 @click.command()
-@click.option("--max-cutoff", type=int, default=3, show_default=True)
+@click.option("--max-cutoff", type=int, default=20, show_default=True)
 @click.option("--links", is_flag=True)
 def main(max_cutoff: int, links: bool):
     """Check schema usage."""
     _check_schema(max_cutoff=max_cutoff, links=links)
 
 
-def _check_schema(max_cutoff: int = 3, links: bool = True):
+def _check_schema(max_cutoff: int, links: bool = True):
     ontologies = get_data()
 
     property_usage = Counter()
@@ -44,27 +44,31 @@ def _check_schema(max_cutoff: int = 3, links: bool = True):
             if key in data:
                 r[key].add(prefix)
 
-    print(f"Fields used at most {max_cutoff} times:")
-    print(
-        tabulate(
-            [
-                (
-                    k,
-                    ", ".join(
-                        (
-                            f"[{prefix}](https://obofoundry.org/ontologies/{prefix})"
-                            if links
-                            else prefix
-                        )
-                        for prefix in prefixes
-                    ),
-                )
-                for k, prefixes in r.items()
-            ],
-            tablefmt="github",
-            headers=["key", "ontologies"],
+    if r:
+        print(f"Fields used at most {max_cutoff} times:")
+        print(
+            tabulate(
+                [
+                    (
+                        k,
+                        len(prefixes),
+                        ", ".join(
+                            (
+                                f"[{prefix}](https://obofoundry.org/ontologies/{prefix})"
+                                if links
+                                else prefix
+                            )
+                            for prefix in prefixes
+                        ),
+                    )
+                    for k, prefixes in r.items()
+                ],
+                tablefmt="github",
+                headers=["key", "count", "ontologies"],
+            )
         )
-    )
+    else:
+        print(f"No fields used less than {max_cutoff} times!")
 
     with SCHEMA_PATH.open() as file:
         schema = json.load(file)
@@ -73,8 +77,11 @@ def _check_schema(max_cutoff: int = 3, links: bool = True):
         for prop in schema["properties"]
         if prop not in property_usage and prop not in SKIP_KEYS
     }
-    print("Unused properties:")
-    print(*sorted(unused), sep="\n")
+    if unused:
+        print("Unused properties:")
+        print(*sorted(unused), sep="\n")
+    else:
+        print("No unused properties!")
 
 
 if __name__ == "__main__":

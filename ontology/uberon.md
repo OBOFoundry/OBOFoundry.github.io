@@ -18,7 +18,6 @@ browsers:
 - title: INCF KnowledgeSpace Portal
   label: KnowledgeSpace
   url: https://knowledge-space.org/index.php/pages/view/UBERON:0000061
-canonical: uberon.owl
 contact:
   email: cjmungall@lbl.gov
   github: cmungall
@@ -50,7 +49,6 @@ funded_by:
 - id: https://www.nsf.gov/awardsearch/showAward?AWD_ID=0956049
   title: NSF DEB-0956049
 homepage: http://uberon.org
-label: Uberon
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/
@@ -103,9 +101,7 @@ publications:
   title: Uberon, an integrative multi-species anatomy ontology
 - id: https://www.ncbi.nlm.nih.gov/pubmed/25009735
   title: Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon
-releases: http://purl.obolibrary.org/obo/uberon/releases/
 repository: https://github.com/obophenotype/uberon
-slack: https://obo-communitygroup.slack.com/archives/C01CR698CF2
 taxon:
   id: NCBITaxon:33208
   label: Metazoa
@@ -161,7 +157,6 @@ usages:
     title: 'ChEMBL: towards direct deposition of bioassay data'
   type: Database
   user: https://www.ebi.ac.uk/chembl/
-wikidata_template: https://en.wikipedia.org/wiki/Template:Uberon
 activity_status: active
 ---
 

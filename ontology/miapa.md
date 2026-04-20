@@ -20,7 +20,6 @@ products:
 publications:
 - id: https://doi.org/10.1089/omi.2006.10.231
   title: 'Taking the First Steps towards a Standard for Reporting on Phylogenies: Minimum Information about a Phylogenetic Analysis (MIAPA)'
-releases: https://github.com/evoinfo/miapa/releases
 repository: https://github.com/evoinfo/miapa
 tracker: https://github.com/evoinfo/miapa/issues
 activity_status: active

@@ -1047,7 +1047,6 @@
         },
         {
             "activity_status": "active",
-            "canonical": "cl.owl",
             "contact": {
                 "email": "do12@sanger.ac.uk",
                 "github": "dosumis",
@@ -1082,7 +1081,6 @@
             "domain": "anatomy and development",
             "homepage": "https://obophenotype.github.io/cell-ontology/",
             "id": "cl",
-            "label": "Cell Ontology",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -2728,7 +2726,6 @@
             "domain": "health",
             "homepage": "https://github.com/SCAI-BIO/EpilepsyOntology",
             "id": "epio",
-            "label": "Epilepsy Ontology",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -3961,8 +3958,6 @@
             "homepage": "http://geneontology.org/",
             "id": "go",
             "in_foundry_order": 1,
-            "integration_server": "http://build.berkeleybop.org/view/GO",
-            "label": "GO",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -4673,7 +4668,6 @@
                     "title": "LABO: An Ontology for Laboratory Test Prescription and Reporting"
                 }
             ],
-            "releases": "https://github.com/OpenLHS/LABO/releases/",
             "repository": "https://github.com/OpenLHS/LABO",
             "tags": [
                 "clinical documentation"
@@ -5201,7 +5195,6 @@
                     "title": "Taking the First Steps towards a Standard for Reporting on Phylogenies: Minimum Information about a Phylogenetic Analysis (MIAPA)"
                 }
             ],
-            "releases": "https://github.com/evoinfo/miapa/releases",
             "repository": "https://github.com/evoinfo/miapa",
             "title": "MIAPA Ontology",
             "tracker": "https://github.com/evoinfo/miapa/issues"
@@ -5352,7 +5345,6 @@
                     "url": "https://monarchinitiative.org/disease/MONDO:0019609"
                 }
             ],
-            "canonical": "mondo.owl",
             "contact": {
                 "email": "Sabrina@tislab.org",
                 "github": "sabrinatoro",
@@ -5364,7 +5356,6 @@
             "domain": "health",
             "homepage": "https://monarch-initiative.github.io/mondo",
             "id": "mondo",
-            "label": "Mondo",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -5784,8 +5775,6 @@
             "domain": "investigations",
             "homepage": "http://www.psidev.info/groups/controlled-vocabularies",
             "id": "ms",
-            "integration_server": "https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master",
-            "label": "MS",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -5939,8 +5928,7 @@
                     ],
                     "user": "https://www.iedb.org"
                 }
-            ],
-            "wasDerivedFrom": "ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat"
+            ]
         },
         {
             "activity_status": "active",
@@ -6045,7 +6033,6 @@
         },
         {
             "activity_status": "active",
-            "canonical": "nomen.owl",
             "contact": {
                 "email": "diapriid@gmail.com",
                 "github": "mjy",
@@ -6062,7 +6049,6 @@
             ],
             "homepage": "https://github.com/SpeciesFileGroup/nomen",
             "id": "nomen",
-            "label": "NOMEN",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -6342,7 +6328,6 @@
             "homepage": "http://obi-ontology.org",
             "id": "obi",
             "in_foundry_order": 1,
-            "integration_server": "http://build.berkeleybop.org/job/build-obi/",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -6926,7 +6911,6 @@
             "domain": "diet, metabolomics, and nutrition",
             "homepage": "https://github.com/cyang0128/Nutritional-epidemiologic-ontologies",
             "id": "one",
-            "label": "Ontology for Nutritional Epidemiology",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -6989,7 +6973,6 @@
             "domain": "diet, metabolomics, and nutrition",
             "homepage": "https://github.com/enpadasi/Ontology-for-Nutritional-Studies",
             "id": "ons",
-            "label": "Ontology for Nutritional Studies",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -8125,7 +8108,6 @@
             },
             "depicted_by": "https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png",
             "description": "An ontological representation of protein-related entities",
-            "documentation": "https://proconsortium.org/download/current/pro_readme.txt",
             "domain": "chemistry and biochemistry",
             "homepage": "http://proconsortium.org",
             "id": "pr",
@@ -8486,7 +8468,6 @@
         },
         {
             "activity_status": "active",
-            "canonical": "ro.owl",
             "contact": {
                 "email": "cjmungall@lbl.gov",
                 "github": "cmungall",
@@ -8494,7 +8475,6 @@
                 "orcid": "0000-0002-6601-2165"
             },
             "description": "Relationship types shared across multiple ontologies",
-            "documentation": "https://oborel.github.io/obo-relations/",
             "domain": "upper",
             "homepage": "https://oborel.github.io/",
             "id": "ro",
@@ -9424,7 +9404,6 @@
                     "url": "https://knowledge-space.org/index.php/pages/view/UBERON:0000061"
                 }
             ],
-            "canonical": "uberon.owl",
             "contact": {
                 "email": "cjmungall@lbl.gov",
                 "github": "cmungall",
@@ -9492,7 +9471,6 @@
             ],
             "homepage": "http://uberon.org",
             "id": "uberon",
-            "label": "Uberon",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -9574,9 +9552,7 @@
                     "title": "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon"
                 }
             ],
-            "releases": "http://purl.obolibrary.org/obo/uberon/releases/",
             "repository": "https://github.com/obophenotype/uberon",
-            "slack": "https://obo-communitygroup.slack.com/archives/C01CR698CF2",
             "taxon": {
                 "id": "NCBITaxon:33208",
                 "label": "Metazoa"
@@ -9672,8 +9648,7 @@
                     "type": "Database",
                     "user": "https://www.ebi.ac.uk/chembl/"
                 }
-            ],
-            "wikidata_template": "https://en.wikipedia.org/wiki/Template:Uberon"
+            ]
         },
         {
             "activity_status": "active",
@@ -10430,7 +10405,6 @@
             "domain": "chemistry and biochemistry",
             "homepage": "http://www.psidev.info/groups/controlled-vocabularies",
             "id": "xlmod",
-            "label": "xlmod",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -11049,7 +11023,6 @@
                     "title": "Controlled vocabularies and semantics in systems biology"
                 }
             ],
-            "releases": "https://github.com/SED-ML/KiSAO/releases",
             "repository": "https://github.com/SED-ML/KiSAO",
             "tags": [
                 "systems biology",
@@ -12434,7 +12407,6 @@
                 "label": "Marc Ciriello"
             },
             "description": "An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens.",
-            "documentation": "https://open.med.harvard.edu/wiki/display/eaglei/Ontology",
             "domain": "information",
             "homepage": "https://open.med.harvard.edu/wiki/display/eaglei/Ontology",
             "id": "ero",

@@ -1,12 +1,13 @@
 """A workflow for removing a field from all ontology markdown files' metadata."""
 
+import json
 from io import StringIO
 from pathlib import Path
 
 import click
 import yaml
 
-from obofoundry.constants import ONTOLOGY_DIRECTORY
+from obofoundry.constants import ONTOLOGY_DIRECTORY, ROOT
 from obofoundry.standardize_metadata import ModifiedDumper
 
 
@@ -14,6 +15,12 @@ def remove_field(name: str) -> None:
     """Remove the metadata key from all ontologies' metadata."""
     for path in ONTOLOGY_DIRECTORY.glob("*.md"):
         remove_field_from_file(path, name)
+
+    schema_path = ROOT.joinpath("util", "schema", "registry_schema.json")
+    schema = json.loads(schema_path.read_text())
+    if name in schema["properties"]:
+        del schema["properties"][name]
+    schema_path.write_text(json.dumps(schema, indent=2) + "\n")
 
 
 def remove_field_from_file(path: Path, name: str) -> None:
@@ -41,10 +48,11 @@ def remove_field_from_file(path: Path, name: str) -> None:
 
 
 @click.command()
-@click.argument("name")
-def main(name: str) -> None:
+@click.argument("names", nargs=-1)
+def main(names: list[str]) -> None:
     """Remove the metadata key from all ontologies' metadata."""
-    remove_field(name)
+    for name in names:
+        remove_field(name)
 
 
 if __name__ == "__main__":
