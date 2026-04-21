@@ -39,17 +39,17 @@ usages:
     - https://pubmed.ncbi.nlm.nih.gov/41971073/
   - description: OAE was used to analyze adverse events associated with monovalent and combination vaccines against Hepatitis A and B diseases reported in VAERS
     url: https://pubmed.ncbi.nlm.nih.gov/27694888/
-
+user: biomedical researchers
 - description: Using OAE to analyze vaccine adverse event using FDA vaccine package insert documents
   examples:
   - description: OAE was used to unveil differential vaccine adverse events via LLM text embeddings of FDA vaccine package insert documents
     url: https://pubmed.ncbi.nlm.nih.gov/40410898/
-
+user: biomedical researchers
 - description: Using OAE to analyze vaccine adverse events reported in PubMed papers
   examples:
   - description: OAE was used to classify human and animal adverse events associated with different Brucella animal vaccines as reported in PubMed literature
     url: https://pubmed.ncbi.nlm.nih.gov/40410898/
-
+user: biomedical researchers
 - description: VIOLIN vaccine resource uses OAE to represent vaccine adverse event information.
   examples:
   - description: The VIOLIN vaccine safety database (Vaxafe) uses OAE to map adverse event information in vaccine adverse event case reports, for example, Vaxafe uses OAE to represent many adverse events (such as Convulsion, Cough) reported in a VAERS case ID - 204308.
