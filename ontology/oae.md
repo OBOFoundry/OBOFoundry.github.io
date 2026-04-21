@@ -35,7 +35,6 @@ usages:
     url: https://pubmed.ncbi.nlm.nih.gov/23209624/
   - description: OAE was used to analyze COVID-19 vaccine adverse events reported in VAERS
     url: https://pubmed.ncbi.nlm.nih.gov/35814246/
-    url: https://pubmed.ncbi.nlm.nih.gov/41971073/
   - description: OAE was used to analyze adverse events associated with monovalent and combination vaccines against Hepatitis A and B diseases reported in VAERS
     url: https://pubmed.ncbi.nlm.nih.gov/27694888/
   user: biomedical researchers
