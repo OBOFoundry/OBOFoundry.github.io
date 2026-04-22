@@ -18,7 +18,7 @@ products:
 - id: oae.owl
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/25093068
-  title: OAE - The Ontology of Adverse Event 
+  title: OAE - The Ontology of Adverse Event
 - id: https://www.ncbi.nlm.nih.gov/pubmed/41526409
   title: The Ontology of Adverse Events in 2025
 repository: https://github.com/OAE-ontology/OAE
@@ -26,7 +26,7 @@ tags:
 - adverse events
 tracker: https://github.com/OAE-ontology/OAE/issues
 usages:
-- description: Using OAE to support the classification and analysis of VAERS vaccine adverse event reporting system data analysis.
+- description: Using OAE to support the classification and analysis of VAERS vaccine adverse event reporting system data analysis
   examples:
   - description: OAE was used to analyze and differentiate adverse events associated with inactivated and live attenuated influenza vaccines reported in VAERS
     url: https://www.ncbi.nlm.nih.gov/pubmed/23209624
@@ -45,9 +45,9 @@ usages:
   - description: OAE was used to classify human and animal adverse events associated with different Brucella animal vaccines as reported in PubMed literature
     url: https://www.ncbi.nlm.nih.gov/pubmed/29867505
   user: biomedical researchers
-- description: VIOLIN vaccine resource uses OAE to represent vaccine adverse event information.
+- description: VIOLIN vaccine resource uses OAE to represent vaccine adverse event information
   examples:
-  - description: The VIOLIN vaccine safety database (Vaxafe) uses OAE to map adverse event information in vaccine adverse event case reports, for example, Vaxafe uses OAE to represent many adverse events (such as Convulsion, Cough) reported in a VAERS case ID - 204308.
+  - description: The VIOLIN vaccine safety database (Vaxafe) uses OAE to map adverse event information in vaccine adverse event case reports, for example, Vaxafe uses OAE to represent many adverse events (such as Convulsion, Cough) reported in a VAERS case ID - 204308
     url: https://violinet.org/vaxafe/case.php?vaers_id=204308
   type: annotation
   user: https://violinet.org
