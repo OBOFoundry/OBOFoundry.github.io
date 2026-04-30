@@ -11,7 +11,6 @@ depicted_by: https://raw.githubusercontent.com/ISA-tools/stato/dev/images/stato-
 description: STATO is a general-purpose STATistics Ontology. Its aim is to provide coverage for processes such as statistical tests, their conditions of application, and information needed or resulting from statistical methods, such as probability distributions, variables, spread and variation metrics. STATO also covers aspects of experimental design and description of plots and graphical representations commonly used to provide visual cues of data distribution or layout and to assist review of the results.
 domain: information technology
 homepage: http://stato-ontology.org/
-in_foundry: false
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/

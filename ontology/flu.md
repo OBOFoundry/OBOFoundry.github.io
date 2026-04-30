@@ -7,7 +7,6 @@ contact:
   label: Burke Squires
 domain: health
 homepage: http://purl.obolibrary.org/obo/flu/
-in_foundry: false
 is_obsolete: true
 products:
 - id: flu.owl

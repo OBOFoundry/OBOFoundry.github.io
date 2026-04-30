@@ -10,7 +10,6 @@ contact:
 description: A structured controlled vocabulary of the anatomy and development of the Zebrafish
 domain: anatomy and development
 homepage: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
-in_foundry_order: 1
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/

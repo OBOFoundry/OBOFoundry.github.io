@@ -8,7 +8,6 @@ contact:
   orcid: 0000-0003-4004-6479
 description: An ontology representation of the LIPIDMAPS nomenclature classification.
 domain: chemistry and biochemistry
-in_foundry: false
 is_obsolete: true
 tags:
 - lipids

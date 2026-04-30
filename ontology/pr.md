@@ -18,7 +18,6 @@ depicted_by: https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo
 description: An ontological representation of protein-related entities
 domain: chemistry and biochemistry
 homepage: http://proconsortium.org
-in_foundry_order: 1
 license:
   label: CC BY 4.0
   url: http://creativecommons.org/licenses/by/4.0/

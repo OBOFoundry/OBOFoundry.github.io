@@ -5,21 +5,8 @@ Download table as: [ <a href="/registry/ontologies.yml">YAML</a> |
 <a href="/registry/ontologies.ttl">RDF/Turtle</a> ]
 <table class="table">
   <tbody>
-    {% for ont in site.ontologies %} {% if ont.in_foundry_order %}
+    {% for ont in site.ontologies %}
     <tr>
-      {% elsif ont.is_obsolete %}
-    </tr>
-
-    <tr class="obsolete">
-      {% elsif ont.activity_status == "orphaned" %}
-    </tr>
-
-    <tr class="obsolete">
-      {% elsif ont.activity_status == "inactive" %}
-    </tr>
-
-    <tr class="obsolete">
-      {% endif %}
       <td>
         <a href="ontology/{{ ont.id }}.html">
           {% if ont.is_obsolete %}

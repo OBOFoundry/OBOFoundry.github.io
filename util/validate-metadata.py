@@ -1,4 +1,13 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
+
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "jsonschema==3.0.2",
+#     "pyyaml>=6.0.3",
+#     "setuptools<81.0.0",
+# ]
+# ///
 
 import json
 import re
@@ -120,7 +129,6 @@ def validate_metadata(item, schema):
     results = {}
 
     # determine how to sort this item in the grid:
-    results["foundry"] = False  # True if item.get("in_foundry_order") == 1 else False
     results["obsolete"] = True if item.get("is_obsolete") is True else False
     # if there is no status, put them at the bottom with inactive:
     results["ontology_status"] = (
@@ -273,12 +281,6 @@ def sort_grid(metadata_grid):
         # get the info about the ontology to sort on
         ontology_status = results["ontology_status"]
         validation_status = results["validation_status"]
-
-        # foundry ontologies are displayed first
-        # they must be active
-        if results["foundry"]:
-            foundry[validation_status].append(ont_id)
-            continue
 
         # obsolete ontologies are displayed last
         # they are always inactive
