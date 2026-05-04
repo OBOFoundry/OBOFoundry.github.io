@@ -15,7 +15,6 @@ depicted_by: https://svn.code.sf.net/p/obi/code/trunk/web/htdocs/images/obi-lote
 description: An integrated ontology for the description of life-science and clinical investigations
 domain: investigations
 homepage: http://obi-ontology.org
-in_foundry_order: 1
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/

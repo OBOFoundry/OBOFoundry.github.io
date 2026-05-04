@@ -10,7 +10,6 @@ contact:
 description: Developmental stages of the Zebrafish
 domain: anatomy and development
 homepage: https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources
-in_foundry: false
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/
