@@ -151,16 +151,6 @@
       "type": "string",
       "pattern": "^[0-9a-z_]+$"
     },
-    "in_foundry": {
-      "suggest": false,
-      "level": "warning",
-      "description": "'in_foundry' is a recommended field. The value is a boolean indicating whether the ontology is in the Foundry collection.",
-      "type": "boolean",
-      "default": false
-    },
-    "in_foundry_order": {
-      "suggest": false
-    },
     "is_obsolete": {
       "suggest": false,
       "level": "info",

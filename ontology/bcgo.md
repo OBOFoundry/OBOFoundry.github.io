@@ -10,7 +10,6 @@ contact:
 description: An application ontology built for beta cell genomics studies.
 domain: anatomy and development
 homepage: https://github.com/obi-bcgo/bcgo
-in_foundry: false
 is_obsolete: true
 license:
   label: CC BY 3.0

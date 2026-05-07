@@ -8,7 +8,6 @@ contact:
 description: An ontology of physico-chemical methods and properties.
 domain: chemistry and biochemistry
 homepage: http://www.ebi.ac.uk/chebi
-in_foundry: false
 products:
 - id: fix.owl
 - id: fix.obo
