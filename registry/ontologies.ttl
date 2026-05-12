@@ -3846,13 +3846,21 @@ _:b132  <http://www.w3.org/2000/01/rdf-schema#label>  "Matt Yoder" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
         <http://purl.org/dc/elements/1.1/description>  "A biomedical ontology in the domain of adverse events" ;
         <http://purl.org/dc/elements/1.1/title>  "Ontology of Adverse Events" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/25093068> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/41526409> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/OAE-ontology/OAE/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/oae.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b133 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/oae.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/OAE-ontology/OAE/> .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/25093068>
+        <http://purl.org/dc/elements/1.1/title>  "OAE - The Ontology of Adverse Event" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/41526409>
+        <http://purl.org/dc/elements/1.1/title>  "The Ontology of Adverse Events in 2025" .
 
 _:b133  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqunh He" ;
         <http://xmlns.com/foaf/0.1/mbox>  "yongqunh@med.umich.edu" .
