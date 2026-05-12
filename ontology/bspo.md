@@ -2,12 +2,6 @@
 layout: ontology_detail
 id: bspo
 title: Biological Spatial Ontology
-build:
-  checkout: git clone https://github.com/obophenotype/biological-spatial-ontology.git
-  infallible: 1
-  method: vcs
-  path: src/ontology
-  system: git
 contact:
   email: cjmungall@lbl.gov
   github: cmungall

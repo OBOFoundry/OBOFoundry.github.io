@@ -7,7 +7,7 @@ GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; 
 
 ## Summary
 
-The ontology is made available in a common formal language in an accepted concrete syntax.
+The ontology MUST be made available in a common formal language in an accepted concrete syntax.
 
 ## Purpose
 

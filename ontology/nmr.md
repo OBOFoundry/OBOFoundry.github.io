@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: nmr
 title: NMR-instrument specific component of metabolomics investigations
-build:
-  method: owl2obo
-  source_url: https://msi-workgroups.svn.sourceforge.net/svnroot/msi-workgroups/ontology/NMR.owl
 contact:
   email: schober@imbi.uni-freiburg.de
   label: Schober Daniel

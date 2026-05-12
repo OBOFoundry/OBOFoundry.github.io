@@ -116,36 +116,6 @@ do is make further edits to fix the syntax error.
 
 TODO: add a quick guide to yaml, and the tags we use.
 
-## Central OBO library build
-
-(see also the FAQ entry on this)
-
-The central OBO build runs here:
-
- * http://build.berkeleybop.org/job/simple-build-obo-all/
-
-It takes as metadata input the yml file from this repository. It makes
-use of the `build` object.
-
-The output of this job is a set of obo and owl files deposited in
-
- * http://berkeleybop.org/ontologies/
-
-Depending on the build configuration, this may also make additional files. See for example:
-
- * http://berkeleybop.org/ontologies/uberon/
-
-A http://berkeleybop.org/ontologies/ URL should never be handed out directly. This service exists so that:
-
- * Un PURL-registered ontologies will have a fall-through
- * Registered PURL ontologies that do not want to take charge of either OBO or OWL generation will have a place to 302-redirect to
-
-This job will fail if ontologies marked as `infallible` fail. To debug, the full log of the last build can be examined:
-
- * https://build.berkeleybop.org/job/simple-build-obo-all/lastBuild/consoleFull
-
-(Look for the text "should not fail")
-
 ## Instructions for Website Development
 
 See [README-sitedev.md](README-sitedev.md)

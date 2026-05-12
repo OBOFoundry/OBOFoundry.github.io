@@ -6,8 +6,7 @@ title: Commitment To Collaboration (principle 10)
 
 ## Summary
 
-OBO Foundry ontology development, in common with many other standards-oriented scientific
-activities, should be carried out in a collaborative fashion.
+OBO Foundry ontology development, in common with many other standards-oriented scientific activities, SHOULD be carried out in a collaborative fashion.
 
 ## Purpose
 

@@ -182,11 +182,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/insect-morphology/aism",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "entiminae@gmail.com",
                 "github": "JCGiron",
@@ -245,11 +240,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/EBISPOT/amphx_ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "hescriva@obs-banyuls.fr",
                 "github": "hescriva",
@@ -289,10 +279,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/obophenotype/ascomycete-phenotype-ontology/master/apo.obo"
-            },
             "contact": {
                 "email": "stacia@stanford.edu",
                 "github": "srengel",
@@ -434,7 +420,6 @@
             "domain": "organisms",
             "homepage": "https://github.com/BiodiversityOntologies/bco",
             "id": "bco",
-            "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -482,7 +467,6 @@
             "domain": "upper",
             "homepage": "http://ifomis.org/bfo/",
             "id": "bfo",
-            "in_foundry_order": 1,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -553,13 +537,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/biological-spatial-ontology.git",
-                "infallible": 1,
-                "method": "vcs",
-                "path": "src/ontology",
-                "system": "git"
-            },
             "contact": {
                 "email": "cjmungall@lbl.gov",
                 "github": "cmungall",
@@ -600,11 +577,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/BRENDA-Enzymes/BTO.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "c.dudek@tu-braunschweig.de",
                 "github": "chdudek",
@@ -650,10 +622,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/cdao.owl"
-            },
             "contact": {
                 "email": "balhoff@renci.org",
                 "github": "balhoff",
@@ -690,11 +658,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/CompositionalDietaryNutritionOntology/cdno.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "landreshdz@gmail.com",
                 "github": "LilyAndres",
@@ -761,11 +724,6 @@
                     "url": "http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView"
                 }
             ],
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo"
-            },
             "contact": {
                 "email": "amalik@ebi.ac.uk",
                 "github": "amalik01",
@@ -777,7 +735,6 @@
             "domain": "chemistry and biochemistry",
             "homepage": "http://www.ebi.ac.uk/chebi",
             "id": "chebi",
-            "in_foundry_order": 1,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -855,10 +812,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "https://raw.githubusercontent.com/semanticchemistry/semanticchemistry/master/ontology/cheminf.owl"
-            },
             "contact": {
                 "email": "egon.willighagen@gmail.com",
                 "github": "egonw",
@@ -1091,7 +1044,6 @@
         },
         {
             "activity_status": "active",
-            "canonical": "cl.owl",
             "contact": {
                 "email": "do12@sanger.ac.uk",
                 "github": "dosumis",
@@ -1126,7 +1078,6 @@
             "domain": "anatomy and development",
             "homepage": "https://obophenotype.github.io/cell-ontology/",
             "id": "cl",
-            "label": "Cell Ontology",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -1347,11 +1298,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/luis-gonzalez-m/Collembola.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "lagonzalezmo@unal.edu.co",
                 "github": "luis-gonzalez-m",
@@ -1442,11 +1388,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/EBISPOT/clyh_ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "lucas.leclere@obs-banyuls.fr",
                 "github": "Leclere-L",
@@ -1500,10 +1441,6 @@
                     "url": "http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=CMO:0000000"
                 }
             ],
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://download.rgd.mcw.edu/ontology/clinical_measurement/clinical_measurement.obo"
-            },
             "contact": {
                 "email": "jrsmith@mcw.edu",
                 "github": "jrsjrs",
@@ -1686,11 +1623,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/data2health/contributor-role-ontology.git",
-                "path": "src/ontology",
-                "system": "git"
-            },
             "contact": {
                 "email": "whimar@ohsu.edu",
                 "github": "marijane",
@@ -1797,16 +1729,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "publications": [
-                    {
-                        "id": "http://dx.doi.org/10.3233/978-1-61499-438-1-409",
-                        "title": "The Cardiovascular Disease Ontology"
-                    }
-                ],
-                "source_url": "http://purl.obolibrary.org/obo/cvdo.owl"
-            },
             "contact": {
                 "email": "paul.fabry@usherbrooke.ca",
                 "github": "pfabry",
@@ -1837,11 +1759,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_anatomy.obo"
-            },
             "contact": {
                 "email": "pfey@northwestern.edu",
                 "github": "pfey03",
@@ -1887,11 +1804,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/dicty-phenotype-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "pfey@northwestern.edu",
                 "github": "pfey03",
@@ -1974,9 +1886,6 @@
                     "url": "https://disease-ontology.org/"
                 }
             ],
-            "build": {
-                "source_url": "https://raw.githubusercontent.com/DiseaseOntology/DiseaseDriversOntology/refs/heads/main/src/ontology/disdriv.owl"
-            },
             "contact": {
                 "email": "lynn.schriml@gmail.com",
                 "github": "lschriml",
@@ -2034,11 +1943,6 @@
                     "url": "https://disease-ontology.org/do"
                 }
             ],
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.obo"
-            },
             "contact": {
                 "email": "lynn.schriml@gmail.com",
                 "github": "lschriml",
@@ -2050,7 +1954,6 @@
             "domain": "health",
             "homepage": "https://disease-ontology.org",
             "id": "doid",
-            "in_foundry_order": 1,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -2138,11 +2041,6 @@
                     "url": "http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000347"
                 }
             ],
-            "build": {
-                "checkout": "git clone https://github.com/FlyBase/drosophila-phenotype-ontolog.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "cp390@cam.ac.uk",
                 "github": "Clare72",
@@ -2203,10 +2101,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/dron.owl"
-            },
             "contact": {
                 "email": "hoganwr@gmail.com",
                 "github": "hoganwr",
@@ -2294,11 +2188,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/echinoderm-ontology/ecao_ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "ettensohn@cmu.edu",
                 "github": "ettensohn",
@@ -2605,11 +2494,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "obo2owl",
-                "notes": "new url soon",
-                "source_url": "ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAPA.obo"
-            },
             "contact": {
                 "email": "Terry.Hayamizu@jax.org",
                 "github": "tfhayamizu",
@@ -2838,7 +2722,6 @@
             "domain": "health",
             "homepage": "https://github.com/SCAI-BIO/EpilepsyOntology",
             "id": "epio",
-            "label": "Epilepsy Ontology",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -2936,12 +2819,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/fungal-anatomy-ontology.git",
-                "infallible": 1,
-                "method": "vcs",
-                "system": "git"
-            },
             "contact": {
                 "email": "vw253@cam.ac.uk",
                 "github": "ValWood",
@@ -2982,6 +2859,95 @@
             "activity_status": "active",
             "browsers": [
                 {
+                    "label": "BioPortal",
+                    "title": "BioPortal Browser",
+                    "url": "https://bioportal.bioontology.org/ontologies/FBbi"
+                }
+            ],
+            "contact": {
+                "email": "damien@gerbi-gmb.de",
+                "github": "gouttegd",
+                "label": "Damien Goutte-Gattat",
+                "orcid": "0000-0002-6095-8718"
+            },
+            "dependencies": [
+                {
+                    "id": "iao"
+                },
+                {
+                    "id": "omo"
+                },
+                {
+                    "id": "ro"
+                }
+            ],
+            "description": "An ontology for the description of sample preparation, visualization, and imaging methods used in biomedical research.",
+            "domain": "investigations",
+            "homepage": "https://github.com/foundingGIDE/fbbi",
+            "id": "fbbi",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/fbbi.owl",
+            "preferredPrefix": "FBbi",
+            "products": [
+                {
+                    "id": "fbbi.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbi.owl"
+                },
+                {
+                    "id": "fbbi.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbi.obo"
+                },
+                {
+                    "id": "fbbi/fbbi-base.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbi/fbbi-base.owl"
+                },
+                {
+                    "id": "fbbi/fbbi-base.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbi/fbbi-base.obo"
+                }
+            ],
+            "repository": "https://github.com/foundingGIDE/fbbi",
+            "tags": [
+                "imaging experiments"
+            ],
+            "title": "Biological Imaging Methods Ontology",
+            "tracker": "https://github.com/foundingGIDE/fbbi/issues",
+            "usages": [
+                {
+                    "description": "FlyBase uses FBbi to annotate its image collection.",
+                    "examples": [
+                        {
+                            "description": "images annotated to \"scanning electron micrograph\"",
+                            "url": "https://flybase.org/cgi-bin/fbcvquery.pl?mode=subtreehits&cvterm=FBbi:00000257%3EFBim"
+                        }
+                    ],
+                    "user": "https://flybase.org"
+                },
+                {
+                    "description": "Virtual Fly Brain uses FBbi to annotate images.",
+                    "user": "https://virtualflybrain.org"
+                },
+                {
+                    "description": "The Cell Image Library uses FBbi to annotate images.",
+                    "examples": [
+                        {
+                            "description": "An image annotate with several terms from FBbi.",
+                            "url": "https://www.cellimagelibrary.org/images/13654"
+                        }
+                    ],
+                    "user": "https://www.cellimagelibrary.org"
+                }
+            ]
+        },
+        {
+            "activity_status": "active",
+            "browsers": [
+                {
                     "label": "FB",
                     "title": "FlyBase Browser",
                     "url": "http://flybase.org/.bin/cvreport.html?cvterm=FBbt:10000000"
@@ -2997,11 +2963,6 @@
                     "url": "http://bioportal.bioontology.org/ontologies/FB-BT?p=classes"
                 }
             ],
-            "build": {
-                "checkout": "git clone https://github.com/FlyBase/drosophila-anatomy-developmental-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "cp390@cam.ac.uk",
                 "github": "Clare72",
@@ -3107,11 +3068,6 @@
                     "url": "http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000013"
                 }
             ],
-            "build": {
-                "checkout": "git clone https://github.com/FlyBase/flybase-controlled-vocabulary.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "cp390@cam.ac.uk",
                 "github": "Clare72",
@@ -3170,11 +3126,6 @@
                     "url": "http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008"
                 }
             ],
-            "build": {
-                "checkout": "git clone https://github.com/FlyBase/drosophila-developmental-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "cp390@cam.ac.uk",
                 "github": "Clare72",
@@ -3268,10 +3219,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "https://github.com/flora-phenotype-ontology/flopoontology/raw/master/ontology/flopo.owl"
-            },
             "contact": {
                 "email": "robert.hoehndorf@kaust.edu.sa",
                 "github": "leechuck",
@@ -3542,11 +3489,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/pombase/fypo/master/release/fypo.owl"
-            },
             "contact": {
                 "email": "vw253@cam.ac.uk",
                 "github": "ValWood",
@@ -3797,11 +3739,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/monarch-initiative/GENO-ontology.git",
-                "path": "src/ontology",
-                "system": "git"
-            },
             "contact": {
                 "email": "mhb120@gmail.com",
                 "github": "mbrush",
@@ -3878,11 +3815,6 @@
                     "url": "https://gnome.glyomics.org/CompositionBrowser.html?HexNAc=4&Hex=5&dHex=1&NeuAc=2"
                 }
             ],
-            "build": {
-                "checkout": "git clone https://github.com/glygen-glycan-data/GNOme.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "nje5@georgetown.edu",
                 "github": "edwardsnj",
@@ -4021,9 +3953,6 @@
             "domain": "biological systems",
             "homepage": "http://geneontology.org/",
             "id": "go",
-            "in_foundry_order": 1,
-            "integration_server": "http://build.berkeleybop.org/view/GO",
-            "label": "GO",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -4275,10 +4204,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/hymao/hao.git",
-                "system": "git"
-            },
             "contact": {
                 "email": "diapriid@gmail.com",
                 "github": "mjy",
@@ -4327,12 +4252,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/BgeeDB/homology-ontology.git",
-                "method": "vcs",
-                "path": "src/ontology",
-                "system": "git"
-            },
             "contact": {
                 "email": "bgee@sib.swiss",
                 "github": "fbastian",
@@ -4484,10 +4403,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/iao.owl"
-            },
             "contact": {
                 "email": "zhengj2007@gmail.com",
                 "github": "zhengj2007",
@@ -4622,10 +4537,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/ido.owl"
-            },
             "contact": {
                 "email": "Lindsay.Cowell@utsouthwestern.edu",
                 "github": "lgcowell",
@@ -4752,7 +4663,6 @@
                     "title": "LABO: An Ontology for Laboratory Test Prescription and Reporting"
                 }
             ],
-            "releases": "https://github.com/OpenLHS/LABO/releases/",
             "repository": "https://github.com/OpenLHS/LABO",
             "tags": [
                 "clinical documentation"
@@ -4879,11 +4789,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/monarch-initiative/MAxO.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "Leigh.Carmody@jax.org",
                 "github": "LCCarmody",
@@ -5129,10 +5034,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/mf.owl"
-            },
             "contact": {
                 "email": "janna.hastings@gmail.com",
                 "github": "jannahastings",
@@ -5163,10 +5064,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/mfoem.owl"
-            },
             "contact": {
                 "email": "janna.hastings@gmail.com",
                 "github": "jannahastings",
@@ -5227,11 +5124,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo"
-            },
             "contact": {
                 "email": "luana.licata@gmail.com",
                 "github": "luanalicata",
@@ -5298,7 +5190,6 @@
                     "title": "Taking the First Steps towards a Standard for Reporting on Phylogenies: Minimum Information about a Phylogenetic Analysis (MIAPA)"
                 }
             ],
-            "releases": "https://github.com/evoinfo/miapa/releases",
             "repository": "https://github.com/evoinfo/miapa",
             "title": "MIAPA Ontology",
             "tracker": "https://github.com/evoinfo/miapa/issues"
@@ -5312,10 +5203,6 @@
                     "url": "http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=MMO:0000000"
                 }
             ],
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://download.rgd.mcw.edu/ontology/measurement_method/measurement_method.obo"
-            },
             "contact": {
                 "email": "jrsmith@mcw.edu",
                 "github": "jrsjrs",
@@ -5364,10 +5251,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/mmusdv/mmusdv.obo"
-            },
             "contact": {
                 "email": "frederic.bastian@unil.ch",
                 "github": "fbastian",
@@ -5403,11 +5286,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/HUPO-PSI/psi-mod-CV/master/PSI-MOD.obo"
-            },
             "contact": {
                 "email": "pierre-alain.binz@chuv.ch",
                 "github": "pabinz",
@@ -5462,7 +5340,6 @@
                     "url": "https://monarchinitiative.org/disease/MONDO:0019609"
                 }
             ],
-            "canonical": "mondo.owl",
             "contact": {
                 "email": "Sabrina@tislab.org",
                 "github": "sabrinatoro",
@@ -5474,7 +5351,6 @@
             "domain": "health",
             "homepage": "https://monarch-initiative.github.io/mondo",
             "id": "mondo",
-            "label": "Mondo",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -5604,10 +5480,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "https://raw.githubusercontent.com/rsc-ontologies/rxno/master/mop.owl"
-            },
             "contact": {
                 "email": "batchelorc@rsc.org",
                 "github": "batchelorc",
@@ -5764,11 +5636,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/PaulNSchofield/mpath/master/mpath.obo"
-            },
             "contact": {
                 "email": "pns12@hermes.cam.ac.uk",
                 "github": "PaulNSchofield",
@@ -5885,10 +5752,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master/psi-ms.obo"
-            },
             "contact": {
                 "email": "joshua.adam.klein@gmail.com",
                 "github": "mobiusklein",
@@ -5907,8 +5770,6 @@
             "domain": "investigations",
             "homepage": "http://www.psidev.info/groups/controlled-vocabularies",
             "id": "ms",
-            "integration_server": "https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master",
-            "label": "MS",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -5951,10 +5812,6 @@
                     "url": "https://bioportal.bioontology.org/ontologies/NBO"
                 }
             ],
-            "build": {
-                "method": "owl2obo",
-                "source_url": "https://raw.githubusercontent.com/obo-behavior/behavior-ontology/master/nbo.owl"
-            },
             "contact": {
                 "email": "g.gkoutos@bham.ac.uk",
                 "github": "gkoutos",
@@ -6066,8 +5923,7 @@
                     ],
                     "user": "https://www.iedb.org"
                 }
-            ],
-            "wasDerivedFrom": "ftp://ftp.ebi.ac.uk/pub/databases/taxonomy/taxonomy.dat"
+            ]
         },
         {
             "activity_status": "active",
@@ -6108,10 +5964,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/ncro/prebuild/ncro.owl"
-            },
             "contact": {
                 "email": "huang@southalabama.edu",
                 "github": "Huang-OMIT",
@@ -6176,11 +6028,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/SpeciesFileGroup/nomen.git",
-                "system": "git"
-            },
-            "canonical": "nomen.owl",
             "contact": {
                 "email": "diapriid@gmail.com",
                 "github": "mjy",
@@ -6197,7 +6044,6 @@
             ],
             "homepage": "https://github.com/SpeciesFileGroup/nomen",
             "id": "nomen",
-            "label": "NOMEN",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC0 1.0",
@@ -6234,10 +6080,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "https://raw.githubusercontent.com/OAE-ontology/OAE/master/src/oae_merged.owl"
-            },
             "contact": {
                 "email": "yongqunh@med.umich.edu",
                 "github": "yongqunh",
@@ -6250,9 +6092,9 @@
             "id": "oae",
             "layout": "ontology_detail",
             "license": {
-                "label": "CC BY 3.0",
+                "label": "CC BY 4.0",
                 "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "http://creativecommons.org/licenses/by/3.0/"
+                "url": "http://creativecommons.org/licenses/by/4.0/"
             },
             "ontology_purl": "http://purl.obolibrary.org/obo/oae.owl",
             "preferredPrefix": "OAE",
@@ -6262,12 +6104,73 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/oae.owl"
                 }
             ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/25093068",
+                    "title": "OAE - The Ontology of Adverse Event"
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/41526409",
+                    "title": "The Ontology of Adverse Events in 2025"
+                }
+            ],
             "repository": "https://github.com/OAE-ontology/OAE",
             "tags": [
                 "adverse events"
             ],
             "title": "Ontology of Adverse Events",
-            "tracker": "https://github.com/OAE-ontology/OAE/issues"
+            "tracker": "https://github.com/OAE-ontology/OAE/issues",
+            "usages": [
+                {
+                    "description": "Using OAE to support the classification and analysis of VAERS vaccine adverse event reporting system data analysis",
+                    "examples": [
+                        {
+                            "description": "OAE was used to analyze and differentiate adverse events associated with inactivated and live attenuated influenza vaccines reported in VAERS",
+                            "url": "https://www.ncbi.nlm.nih.gov/pubmed/23209624"
+                        },
+                        {
+                            "description": "OAE was used to analyze COVID-19 vaccine adverse events reported in VAERS",
+                            "url": "https://www.ncbi.nlm.nih.gov/pubmed/35814246"
+                        },
+                        {
+                            "description": "OAE was used to analyze adverse events associated with monovalent and combination vaccines against Hepatitis A and B diseases reported in VAERS",
+                            "url": "https://www.ncbi.nlm.nih.gov/pubmed/27694888"
+                        }
+                    ],
+                    "user": "biomedical researchers"
+                },
+                {
+                    "description": "Using OAE to analyze vaccine adverse event using FDA vaccine package insert documents",
+                    "examples": [
+                        {
+                            "description": "OAE was used to unveil differential vaccine adverse events via LLM text embeddings of FDA vaccine package insert documents",
+                            "url": "https://www.ncbi.nlm.nih.gov/pubmed/40410898"
+                        }
+                    ],
+                    "user": "biomedical researchers"
+                },
+                {
+                    "description": "Using OAE to analyze vaccine adverse events reported in PubMed papers",
+                    "examples": [
+                        {
+                            "description": "OAE was used to classify human and animal adverse events associated with different Brucella animal vaccines as reported in PubMed literature",
+                            "url": "https://www.ncbi.nlm.nih.gov/pubmed/29867505"
+                        }
+                    ],
+                    "user": "biomedical researchers"
+                },
+                {
+                    "description": "VIOLIN vaccine resource uses OAE to represent vaccine adverse event information",
+                    "examples": [
+                        {
+                            "description": "The VIOLIN vaccine safety database (Vaxafe) uses OAE to map adverse event information in vaccine adverse event case reports, for example, Vaxafe uses OAE to represent many adverse events (such as Convulsion, Cough) reported in a VAERS case ID - 204308",
+                            "url": "https://violinet.org/vaxafe/case.php?vaers_id=204308"
+                        }
+                    ],
+                    "type": "annotation",
+                    "user": "https://violinet.org"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -6426,7 +6329,6 @@
             "domain": "information technology",
             "homepage": "https://github.com/obcs/obcs",
             "id": "obcs",
-            "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -6469,9 +6371,6 @@
                     "url": "http://bioportal.bioontology.org/ontologies/OBI?p=classes"
                 }
             ],
-            "build": {
-                "source_url": "http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/"
-            },
             "contact": {
                 "email": "bpeters@lji.org",
                 "github": "bpeters42",
@@ -6483,8 +6382,6 @@
             "domain": "investigations",
             "homepage": "http://obi-ontology.org",
             "id": "obi",
-            "in_foundry_order": 1,
-            "integration_server": "http://build.berkeleybop.org/job/build-obi/",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -6756,10 +6653,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/ohd.owl"
-            },
             "contact": {
                 "email": "wdduncan@gmail.com",
                 "github": "wdduncan",
@@ -6768,7 +6661,7 @@
             },
             "description": "The Oral Health and Disease Ontology is used for representing the diagnosis and treatment of dental maladies.",
             "domain": "health",
-            "homepage": "https://purl.obolibrary.org/obo/ohd/home",
+            "homepage": "https://purl.obolibrary.org/obo/ohd",
             "id": "ohd",
             "layout": "ontology_detail",
             "license": {
@@ -6781,12 +6674,8 @@
             "products": [
                 {
                     "id": "ohd.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ohd.owl"
-                },
-                {
-                    "id": "ohd/dev/ohd.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/ohd/dev/ohd.owl",
-                    "title": "OHD dev"
+                    "ontology_purl": "http://purl.obolibrary.org/obo/ohd.owl",
+                    "title": "Oral Health and Disease Ontology"
                 }
             ],
             "publications": [
@@ -6879,7 +6768,6 @@
             "domain": "chemistry and biochemistry",
             "homepage": "http://omit.cis.usouthal.edu/",
             "id": "omit",
-            "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -6941,10 +6829,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/microbialphenotypes/OMP-ontology-files/master/omp.obo"
-            },
             "contact": {
                 "email": "jimhu@tamu.edu",
                 "github": "jimhu-tamu",
@@ -6985,10 +6869,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "https://github.com/mcwdsi/OMRSE"
-            },
             "contact": {
                 "email": "hoganwr@gmail.com",
                 "github": "hoganwr",
@@ -7084,7 +6964,6 @@
             "domain": "diet, metabolomics, and nutrition",
             "homepage": "https://github.com/cyang0128/Nutritional-epidemiologic-ontologies",
             "id": "one",
-            "label": "Ontology for Nutritional Epidemiology",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -7147,7 +7026,6 @@
             "domain": "diet, metabolomics, and nutrition",
             "homepage": "https://github.com/enpadasi/Ontology-for-Nutritional-Studies",
             "id": "ons",
-            "label": "Ontology for Nutritional Studies",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -7277,9 +7155,6 @@
                     "url": "https://ontobee.org/ontology/ONTONEO"
                 }
             ],
-            "build": {
-                "source_url": "https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/ontoneo.owl"
-            },
             "contact": {
                 "email": "fernanda.farinelli@gmail.com",
                 "github": "FernandaFarinelli",
@@ -7552,7 +7427,6 @@
             "domain": "phenotype",
             "homepage": "https://github.com/pato-ontology/pato/",
             "id": "pato",
-            "in_foundry_order": 1,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -7632,7 +7506,6 @@
             "domain": "chemistry and biochemistry",
             "homepage": "https://github.com/InSilicoVida-Research-Lab/pbpko",
             "id": "pbpko",
-            "in_foundry_order": 1,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -7838,10 +7711,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/pdro.owl"
-            },
             "contact": {
                 "email": "paul.fabry@usherbrooke.ca",
                 "github": "pfabry",
@@ -8097,7 +7966,6 @@
             "domain": "anatomy and development",
             "homepage": "http://browser.planteome.org/amigo",
             "id": "po",
-            "in_foundry_order": 1,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -8282,12 +8150,6 @@
                     "url": "http://proconsortium.org"
                 }
             ],
-            "build": {
-                "infallible": 0,
-                "method": "obo2owl",
-                "oort_args": "--no-reasoner",
-                "source_url": "https://proconsortium.org/download/current/pro_nonreasoned.obo"
-            },
             "contact": {
                 "email": "dan5@georgetown.edu",
                 "github": "nataled",
@@ -8296,11 +8158,9 @@
             },
             "depicted_by": "https://raw.githubusercontent.com/PROconsortium/logo/master/PROlogo_small.png",
             "description": "An ontological representation of protein-related entities",
-            "documentation": "https://proconsortium.org/download/current/pro_readme.txt",
             "domain": "chemistry and biochemistry",
             "homepage": "http://proconsortium.org",
             "id": "pr",
-            "in_foundry_order": 1,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 4.0",
@@ -8422,11 +8282,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "https://github.com/Display-Lab/psdo.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "zachll@umich.edu",
                 "github": "zachll",
@@ -8531,10 +8386,6 @@
                     "url": "http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=PW:0000001"
                 }
             ],
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://download.rgd.mcw.edu/ontology/pathway/pathway.obo"
-            },
             "contact": {
                 "email": "gthayman@mcw.edu",
                 "github": "gthayman",
@@ -8666,7 +8517,6 @@
         },
         {
             "activity_status": "active",
-            "canonical": "ro.owl",
             "contact": {
                 "email": "cjmungall@lbl.gov",
                 "github": "cmungall",
@@ -8674,7 +8524,6 @@
                 "orcid": "0000-0002-6601-2165"
             },
             "description": "Relationship types shared across multiple ontologies",
-            "documentation": "https://oborel.github.io/obo-relations/",
             "domain": "upper",
             "homepage": "https://oborel.github.io/",
             "id": "ro",
@@ -8773,10 +8622,6 @@
                     "url": "http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=RS:0000457"
                 }
             ],
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://download.rgd.mcw.edu/ontology/rat_strain/rat_strain.obo"
-            },
             "contact": {
                 "email": "sjwang@mcw.edu",
                 "github": "shurjenw",
@@ -8823,10 +8668,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "https://raw.githubusercontent.com/rsc-ontologies/rxno/master/rxno.owl"
-            },
             "contact": {
                 "email": "batchelorc@rsc.org",
                 "github": "batchelorc",
@@ -8859,11 +8700,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/monarch-initiative/SEPIO-ontology.git",
-                "path": "src/ontology",
-                "system": "git"
-            },
             "contact": {
                 "email": "mhb120@gmail.com",
                 "github": "mbrush",
@@ -8950,11 +8786,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "obo2owl",
-                "notes": "SWITCH",
-                "source_url": "https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so.obo"
-            },
             "contact": {
                 "email": "keilbeck@genetics.utah.edu",
                 "github": "keilbeck",
@@ -9019,11 +8850,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/obophenotype/spider-ontology/master/spider_comparative_biology.obo"
-            },
             "contact": {
                 "email": "ramirez@macn.gov.ar",
                 "github": "martinjramirez",
@@ -9075,7 +8901,6 @@
             "domain": "information technology",
             "homepage": "http://stato-ontology.org/",
             "id": "stato",
-            "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -9187,11 +9012,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/master/src/ontology/symp.obo"
-            },
             "contact": {
                 "email": "lynn.schriml@gmail.com",
                 "github": "lschriml",
@@ -9448,11 +9268,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/trans.obo"
-            },
             "contact": {
                 "email": "lynn.schriml@gmail.com",
                 "github": "lschriml",
@@ -9637,13 +9452,6 @@
                     "url": "https://knowledge-space.org/index.php/pages/view/UBERON:0000061"
                 }
             ],
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/uberon.git",
-                "email_cc": "cjmungall@lbl.gov",
-                "infallible": 1,
-                "system": "git"
-            },
-            "canonical": "uberon.owl",
             "contact": {
                 "email": "cjmungall@lbl.gov",
                 "github": "cmungall",
@@ -9711,7 +9519,6 @@
             ],
             "homepage": "http://uberon.org",
             "id": "uberon",
-            "label": "Uberon",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -9793,9 +9600,7 @@
                     "title": "Unification of multi-species vertebrate anatomy ontologies for comparative biology in Uberon"
                 }
             ],
-            "releases": "http://purl.obolibrary.org/obo/uberon/releases/",
             "repository": "https://github.com/obophenotype/uberon",
-            "slack": "https://obo-communitygroup.slack.com/archives/C01CR698CF2",
             "taxon": {
                 "id": "NCBITaxon:33208",
                 "label": "Metazoa"
@@ -9891,15 +9696,10 @@
                     "type": "Database",
                     "user": "https://www.ebi.ac.uk/chembl/"
                 }
-            ],
-            "wikidata_template": "https://en.wikipedia.org/wiki/Template:Uberon"
+            ]
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo"
-            },
             "contact": {
                 "email": "g.gkoutos@gmail.com",
                 "github": "gkoutos",
@@ -9910,7 +9710,6 @@
             "domain": "phenotype",
             "homepage": "https://github.com/bio-ontology-research-group/unit-ontology",
             "id": "uo",
-            "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -9945,11 +9744,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "archive",
-                "path": "archive/ontology",
-                "source_url": "http://build.berkeleybop.org/job/build-pheno-ontologies/lastSuccessfulBuild/artifact/*zip*/archive.zip"
-            },
             "contact": {
                 "email": "jmcl@ebi.ac.uk",
                 "github": "jamesamcl",
@@ -10124,9 +9918,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "source_url": "https://raw.githubusercontent.com/vaccineontology/VO/master/src/VO_merged.owl"
-            },
             "contact": {
                 "email": "yongqunh@med.umich.edu",
                 "github": "yongqunh",
@@ -10213,11 +10004,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "svn co http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/vt",
-                "method": "vcs",
-                "system": "svn"
-            },
             "contact": {
                 "email": "caripark@iastate.edu",
                 "github": "caripark",
@@ -10326,11 +10112,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/c-elegans-gross-anatomy-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "raymond@caltech.edu",
                 "github": "raymond91125",
@@ -10394,11 +10175,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/c-elegans-development-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "cgrove@caltech.edu",
                 "github": "chris-grove",
@@ -10465,11 +10241,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/c-elegans-phenotype-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "cgrove@caltech.edu",
                 "github": "chris-grove",
@@ -10554,11 +10325,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "infallible": 0,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo"
-            },
             "contact": {
                 "email": "Erik.Segerdell@cchmc.org",
                 "github": "seger",
@@ -10569,7 +10335,6 @@
             "domain": "anatomy and development",
             "homepage": "http://www.xenbase.org/anatomy/xao.do?method=display",
             "id": "xao",
-            "in_foundry_order": 1,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -10627,10 +10392,6 @@
                     "url": "http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000"
                 }
             ],
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://download.rgd.mcw.edu/ontology/experimental_condition/experimental_condition.obo"
-            },
             "contact": {
                 "email": "jrsmith@mcw.edu",
                 "github": "jrsjrs",
@@ -10690,7 +10451,6 @@
             "domain": "chemistry and biochemistry",
             "homepage": "http://www.psidev.info/groups/controlled-vocabularies",
             "id": "xlmod",
-            "label": "xlmod",
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -10790,10 +10550,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.obo"
-            },
             "contact": {
                 "email": "ybradford@zfin.org",
                 "github": "ybradford",
@@ -10836,12 +10592,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "notes": "may be ready to switch to vcs soon",
-                "source_url": "https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/src/zebrafish_anatomy.obo"
-            },
             "contact": {
                 "email": "van_slyke@zfin.org",
                 "github": "cerivs",
@@ -10852,7 +10602,6 @@
             "domain": "anatomy and development",
             "homepage": "https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources",
             "id": "zfa",
-            "in_foundry_order": 1,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -10899,11 +10648,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "infallible": 1,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/zfs/zfs.obo"
-            },
             "contact": {
                 "email": "van_slyke@zfin.org",
                 "github": "cerivs",
@@ -10914,7 +10658,6 @@
             "domain": "anatomy and development",
             "homepage": "https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources",
             "id": "zfs",
-            "in_foundry": false,
             "layout": "ontology_detail",
             "license": {
                 "label": "CC BY 3.0",
@@ -11020,11 +10763,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/Superraptor/GSSO.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "kronkcj@mail.uc.edu",
                 "github": "Superraptor",
@@ -11290,10 +11028,6 @@
                     "url": "https://www.ontobee.org/ontology/KISAO"
                 }
             ],
-            "build": {
-                "method": "owl2obo",
-                "source_url": "https://raw.githubusercontent.com/SED-ML/KiSAO/deploy/kisao.owl"
-            },
             "contact": {
                 "email": "jonrkarr@gmail.com",
                 "github": "jonrkarr",
@@ -11333,7 +11067,6 @@
                     "title": "Controlled vocabularies and semantics in systems biology"
                 }
             ],
-            "releases": "https://github.com/SED-ML/KiSAO/releases",
             "repository": "https://github.com/SED-ML/KiSAO",
             "tags": [
                 "systems biology",
@@ -11394,11 +11127,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo"
-            },
             "contact": {
                 "email": "sheriff@ebi.ac.uk",
                 "github": "rsmsheriff",
@@ -11428,11 +11156,6 @@
         },
         {
             "activity_status": "active",
-            "build": {
-                "checkout": "git clone https://github.com/scdodev/scdo-ontology.git",
-                "path": ".",
-                "system": "git"
-            },
             "contact": {
                 "email": "giant.plankton@gmail.com",
                 "github": "JadeHotchkiss",
@@ -11578,12 +11301,6 @@
         },
         {
             "activity_status": "orphaned",
-            "build": {
-                "infallible": 1,
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo"
-            },
             "contact": {
                 "email": null,
                 "label": "chEBI"
@@ -11592,7 +11309,6 @@
             "domain": "chemistry and biochemistry",
             "homepage": "http://www.ebi.ac.uk/chebi",
             "id": "fix",
-            "in_foundry": false,
             "layout": "ontology_detail",
             "ontology_purl": "http://purl.obolibrary.org/obo/fix.owl",
             "products": [
@@ -11609,10 +11325,6 @@
         },
         {
             "activity_status": "orphaned",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "https://svn.code.sf.net/p/mamo-ontology/code/tags/latest/mamo-xml.owl"
-            },
             "description": "The Mathematical Modelling Ontology (MAMO) is a classification of the types of mathematical models used mostly in the life sciences, their variables, relationships and other relevant features.",
             "domain": "simulation",
             "homepage": "http://sourceforge.net/p/mamo-ontology/wiki/Home/",
@@ -11636,11 +11348,6 @@
         },
         {
             "activity_status": "orphaned",
-            "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/physicochemical/rex.obo"
-            },
             "description": "An ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time.",
             "domain": "chemistry and biochemistry",
             "id": "rex",
@@ -11656,11 +11363,6 @@
         },
         {
             "activity_status": "orphaned",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/sibo.git",
-                "method": "vcs",
-                "system": "git"
-            },
             "contact": {
                 "email": "cjmungall@lbl.gov",
                 "label": "Chris Mungall",
@@ -11697,10 +11399,6 @@
         },
         {
             "activity_status": "orphaned",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "http://variationontology.org/vario_download/vario.obo"
-            },
             "contact": {
                 "email": "mauno.vihinen@med.lu.se",
                 "github": "maunov",
@@ -11810,43 +11508,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/dosumis/fbbi/master/src/ontology/fbbi.obo"
-            },
-            "contact": {
-                "email": "wawong@gmail.com",
-                "github": "wawong",
-                "label": "Willy Wong",
-                "orcid": "0000-0002-8841-5870"
-            },
-            "description": "A structured controlled vocabulary of sample preparation, visualization and imaging methods used in biomedical research.",
-            "domain": "investigations",
-            "homepage": "http://cellimagelibrary.org/",
-            "id": "fbbi",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 4.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/4.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/fbbi.owl",
-            "preferredPrefix": "FBbi",
-            "products": [
-                {
-                    "id": "fbbi.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/fbbi.owl"
-                }
-            ],
-            "repository": "https://github.com/CRBS/Biological_Imaging_Methods_Ontology",
-            "tags": [
-                "imaging experiments"
-            ],
-            "title": "Biological Imaging Methods Ontology",
-            "tracker": "https://github.com/CRBS/Biological_Imaging_Methods_Ontology/issues"
-        },
-        {
-            "activity_status": "inactive",
             "contact": {
                 "email": "druzinsk@uic.edu",
                 "github": "RDruzinsky",
@@ -11946,10 +11607,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.obo"
-            },
             "contact": {
                 "email": "frederic.bastian@unil.ch",
                 "github": "fbastian",
@@ -11985,10 +11642,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/pdumdv/pdumdv.obo"
-            },
             "contact": {
                 "email": "frederic.bastian@unil.ch",
                 "github": "fbastian",
@@ -12024,12 +11677,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git",
-                "method": "vcs",
-                "path": "src/ontology",
-                "system": "git"
-            },
             "contact": {
                 "email": "J.Bard@ed.ac.uk",
                 "label": "Jonathan Bard"
@@ -12097,12 +11744,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "checkout": "git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git",
-                "method": "vcs",
-                "path": "src/ontology",
-                "system": "git"
-            },
             "contact": {
                 "email": "J.Bard@ed.ac.uk",
                 "label": "Jonathan Bard"
@@ -12155,11 +11796,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo"
-            },
             "contact": {
                 "email": "mejino@u.washington.edu",
                 "label": "Onard Mejino"
@@ -12272,11 +11908,6 @@
                     "url": "http://bgsu-rna.github.io/rnao/"
                 }
             ],
-            "build": {
-                "checkout": "git clone https://github.com/BGSU-RNA/rnao.git",
-                "method": "vcs",
-                "system": "git"
-            },
             "contact": {
                 "email": "BatchelorC@rsc.org",
                 "label": "Colin Batchelor",
@@ -12459,10 +12090,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/aero.owl"
-            },
             "contact": {
                 "email": "mcourtot@gmail.com",
                 "label": "Melanie Courtot",
@@ -12517,7 +12144,6 @@
             "domain": "anatomy and development",
             "homepage": "https://github.com/obi-bcgo/bcgo",
             "id": "bcgo",
-            "in_foundry": false,
             "is_obsolete": true,
             "layout": "ontology_detail",
             "license": {
@@ -12537,11 +12163,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "http://4dx.embl.de/4DXpress_4d/edocs/bilateria_mrca.obo"
-            },
             "contact": {
                 "email": "henrich@embl.de",
                 "github": "ThorstenHen",
@@ -12582,11 +12203,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "method": "obo2owl",
-                "notes": "moving to owl soon",
-                "source_url": "http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/caro/caro.obo"
-            },
             "contact": {
                 "email": "haendel@ohsu.edu",
                 "github": "mellybelly",
@@ -12719,12 +12335,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "notes": "new url soon",
-                "source_url": "ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAP_combined.obo"
-            },
             "contact": {
                 "email": "Terry.Hayamizu@jax.org",
                 "github": "tfhayamizu",
@@ -12753,10 +12363,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "https://github.com/Planteome/plant-environment-ontology/blob/master/plant-environment-ontology.obo.owl"
-            },
             "contact": {
                 "email": "jaiswalp@science.oregonstate.edu",
                 "github": "jaiswalp",
@@ -12821,15 +12427,10 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/epo.owl"
-            },
             "description": "An ontology designed to support the semantic annotation of epidemiology resources",
             "domain": "health",
             "homepage": "https://code.google.com/p/epidemiology-ontology/",
             "id": "epo",
-            "in_foundry": false,
             "is_obsolete": true,
             "layout": "ontology_detail",
             "products": [
@@ -12842,16 +12443,11 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/ero.owl"
-            },
             "contact": {
                 "email": "Marc_Ciriello@hms.harvard.edu",
                 "label": "Marc Ciriello"
             },
             "description": "An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens.",
-            "documentation": "https://open.med.harvard.edu/wiki/display/eaglei/Ontology",
             "domain": "information",
             "homepage": "https://open.med.harvard.edu/wiki/display/eaglei/Ontology",
             "id": "ero",
@@ -12887,11 +12483,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/fly_taxonomy.obo"
-            },
             "contact": {
                 "email": "cp390@cam.ac.uk",
                 "github": "Clare72",
@@ -12921,10 +12512,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://purl.obolibrary.org/obo/flu.owl"
-            },
             "contact": {
                 "email": "burkesquires@gmail.com",
                 "label": "Burke Squires"
@@ -12932,7 +12519,6 @@
             "domain": "health",
             "homepage": "http://purl.obolibrary.org/obo/flu/",
             "id": "flu",
-            "in_foundry": false,
             "is_obsolete": true,
             "layout": "ontology_detail",
             "products": [
@@ -12973,11 +12559,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "http://download.baderlab.org/INOH/ontologies/EventOntology_172.obo"
-            },
             "domain": "chemistry and biochemistry",
             "homepage": "http://www.inoh.org",
             "id": "iev",
@@ -12987,11 +12568,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "https://web.archive.org/web/20131127090937/http://www.inoh.org/ontologies/MoleculeRoleOntology.obo"
-            },
             "contact": {
                 "email": "curator@inoh.org",
                 "label": "INOH curators"
@@ -13018,10 +12594,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "http://www.lipidprofiles.com/LipidOntology"
-            },
             "contact": {
                 "email": "bakerc@unb.ca",
                 "label": "Christopher Baker",
@@ -13030,7 +12602,6 @@
             "description": "An ontology representation of the LIPIDMAPS nomenclature classification.",
             "domain": "chemistry and biochemistry",
             "id": "lipro",
-            "in_foundry": false,
             "is_obsolete": true,
             "layout": "ontology_detail",
             "tags": [
@@ -13200,10 +12771,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "method": "owl2obo",
-                "source_url": "https://msi-workgroups.svn.sourceforge.net/svnroot/msi-workgroups/ontology/NMR.owl"
-            },
             "contact": {
                 "email": "schober@imbi.uni-freiburg.de",
                 "label": "Schober Daniel"
@@ -13410,11 +12977,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "insert_ontology_id": true,
-                "method": "obo2owl",
-                "source_url": "https://raw.githubusercontent.com/HUPO-PSI/gelml/master/CV/sep.obo"
-            },
             "contact": {
                 "email": "psidev-gps-dev@lists.sourceforge.net",
                 "label": "SEP developers via the PSI and MSI mailing lists"
@@ -13490,10 +13052,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "http://purl.obolibrary.org/obo/tao.obo"
-            },
             "contact": {
                 "email": "wasila.dahdul@usd.edu",
                 "label": "Wasila Dahdul",
@@ -13547,10 +13105,6 @@
         },
         {
             "activity_status": "inactive",
-            "build": {
-                "method": "obo2owl",
-                "source_url": "http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/tags/vocab-releases/VSAO/vsao.obo"
-            },
             "contact": {
                 "email": "wasila.dahdul@usd.edu",
                 "label": "Wasila Dahdul",

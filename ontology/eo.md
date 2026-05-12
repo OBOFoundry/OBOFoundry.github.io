@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: eo
 title: Plant Environment Ontology
-build:
-  method: obo2owl
-  source_url: https://github.com/Planteome/plant-environment-ontology/blob/master/plant-environment-ontology.obo.owl
 contact:
   email: jaiswalp@science.oregonstate.edu
   github: jaiswalp

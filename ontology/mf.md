@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: mf
 title: Mental Functioning Ontology
-build:
-  method: owl2obo
-  source_url: http://purl.obolibrary.org/obo/mf.owl
 contact:
   email: janna.hastings@gmail.com
   github: jannahastings

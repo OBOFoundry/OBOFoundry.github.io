@@ -12,9 +12,6 @@ browsers:
 - title: OntoBee
   label: OntoBee
   url: https://www.ontobee.org/ontology/KISAO
-build:
-  method: owl2obo
-  source_url: https://raw.githubusercontent.com/SED-ML/KiSAO/deploy/kisao.owl
 contact:
   email: jonrkarr@gmail.com
   github: jonrkarr
@@ -37,7 +34,6 @@ products:
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/22027554
   title: Controlled vocabularies and semantics in systems biology
-releases: https://github.com/SED-ML/KiSAO/releases
 repository: https://github.com/SED-ML/KiSAO
 tags:
 - systems biology

@@ -6,10 +6,6 @@ browsers:
 - title: FlyBase Browser
   label: FB
   url: http://flybase.org/.bin/cvreport.html?cvterm=FBcv:0000013
-build:
-  checkout: git clone https://github.com/FlyBase/flybase-controlled-vocabulary.git
-  path: .
-  system: git
 contact:
   email: cp390@cam.ac.uk
   github: Clare72

@@ -10,7 +10,6 @@ contact:
 description: An ontology to support the interoperability of biodiversity data, including data on museum collections, environmental/metagenomic samples, and ecological surveys.
 domain: organisms
 homepage: https://github.com/BiodiversityOntologies/bco
-in_foundry: false
 license:
   label: CC0 1.0
   url: https://creativecommons.org/publicdomain/zero/1.0/

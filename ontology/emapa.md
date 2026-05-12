@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: emapa
 title: Mouse Developmental Anatomy Ontology
-build:
-  method: obo2owl
-  notes: new url soon
-  source_url: ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAPA.obo
 contact:
   email: Terry.Hayamizu@jax.org
   github: tfhayamizu

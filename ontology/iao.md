@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: iao
 title: Information Artifact Ontology
-build:
-  method: owl2obo
-  source_url: http://purl.obolibrary.org/obo/iao.owl
 contact:
   email: zhengj2007@gmail.com
   github: zhengj2007

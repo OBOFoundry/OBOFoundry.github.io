@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: ido
 title: Infectious Disease Ontology
-build:
-  method: owl2obo
-  source_url: http://purl.obolibrary.org/obo/ido.owl
 contact:
   email: Lindsay.Cowell@utsouthwestern.edu
   github: lgcowell

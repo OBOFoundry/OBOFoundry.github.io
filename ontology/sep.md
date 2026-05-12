@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: sep
 title: Sample processing and separation techniques
-build:
-  insert_ontology_id: true
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/HUPO-PSI/gelml/master/CV/sep.obo
 contact:
   email: psidev-gps-dev@lists.sourceforge.net
   label: SEP developers via the PSI and MSI mailing lists

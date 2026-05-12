@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: upheno
 title: Unified Phenotype Ontology (uPheno)
-build:
-  method: archive
-  path: archive/ontology
-  source_url: http://build.berkeleybop.org/job/build-pheno-ontologies/lastSuccessfulBuild/artifact/*zip*/archive.zip
 contact:
   email: jmcl@ebi.ac.uk
   github: jamesamcl

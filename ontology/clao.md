@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: clao
 title: Collembola Anatomy Ontology
-build:
-  checkout: git clone https://github.com/luis-gonzalez-m/Collembola.git
-  path: .
-  system: git
 contact:
   email: lagonzalezmo@unal.edu.co
   github: luis-gonzalez-m

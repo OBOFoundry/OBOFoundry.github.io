@@ -14,7 +14,6 @@ contact:
 description: An ontology for modeling and understanding of pharmacokinetics in biological systems.
 domain: chemistry and biochemistry
 homepage: https://github.com/InSilicoVida-Research-Lab/pbpko
-in_foundry_order: 1
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/

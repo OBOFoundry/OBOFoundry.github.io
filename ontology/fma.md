@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: fma
 title: Foundational Model of Anatomy Ontology (subset)
-build:
-  insert_ontology_id: true
-  method: obo2owl
-  source_url: http://svn.code.sf.net/p/obo/svn/fma-conversion/trunk/fma2_obo.obo
 contact:
   email: mejino@u.washington.edu
   label: Onard Mejino

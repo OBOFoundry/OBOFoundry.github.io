@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: mpath
 title: Mouse pathology ontology
-build:
-  insert_ontology_id: true
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/PaulNSchofield/mpath/master/mpath.obo
 contact:
   email: pns12@hermes.cam.ac.uk
   github: PaulNSchofield

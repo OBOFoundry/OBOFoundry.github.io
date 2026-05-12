@@ -23,7 +23,6 @@ The different products are listed as objects under the `product` key, for exampl
 ---
 layout: ontology_detail
 id: go
-in_foundry_order: 1
 label: GO
 description: An ontology for describing the function of genes and gene products
 title: Gene Ontology
@@ -46,6 +45,4 @@ Developers can OPTIONALLY produce ontologies in other formats. These are convent
 
 It does not matter to us if you maintain the source for your ontology
 in obo or owl or some hybrid. You have the option of either publishing
-the alternate format yourself (using a tool like ROBOT) _or_ you can
-have the OBO central build pipeline do this for you. For more
-information, see the FAQ entry [What is the Build field?](what-is-the-build-field.md).
+the alternate format yourself (using a tool like ROBOT).

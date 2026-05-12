@@ -12,10 +12,6 @@ browsers:
 - title: BioPortal Browser
   label: BioPortal
   url: http://bioportal.bioontology.org/ontologies/FB-BT?p=classes
-build:
-  checkout: git clone https://github.com/FlyBase/drosophila-anatomy-developmental-ontology.git
-  path: .
-  system: git
 contact:
   email: cp390@cam.ac.uk
   github: Clare72

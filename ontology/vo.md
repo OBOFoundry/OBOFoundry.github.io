@@ -2,8 +2,6 @@
 layout: ontology_detail
 id: vo
 title: Vaccine Ontology
-build:
-  source_url: https://raw.githubusercontent.com/vaccineontology/VO/master/src/VO_merged.owl
 contact:
   email: yongqunh@med.umich.edu
   github: yongqunh
