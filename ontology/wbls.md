@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: wbls
 title: C. elegans development ontology
-build:
-  checkout: git clone https://github.com/obophenotype/c-elegans-development-ontology.git
-  path: .
-  system: git
 contact:
   email: cgrove@caltech.edu
   github: chris-grove

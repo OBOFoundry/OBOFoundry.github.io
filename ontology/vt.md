@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: vt
 title: Vertebrate trait ontology
-build:
-  checkout: svn co http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/vt
-  method: vcs
-  system: svn
 contact:
   email: caripark@iastate.edu
   github: caripark

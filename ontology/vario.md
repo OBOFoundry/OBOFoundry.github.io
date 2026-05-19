@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: vario
 title: Variation Ontology
-build:
-  method: obo2owl
-  source_url: http://variationontology.org/vario_download/vario.obo
 contact:
   email: mauno.vihinen@med.lu.se
   github: maunov

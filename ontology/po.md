@@ -15,7 +15,6 @@ depicted_by: https://raw.githubusercontent.com/Planteome/plant-ontology/refs/hea
 description: The Plant Ontology is a structured vocabulary and database resource that links plant anatomy, morphology and growth and development to plant genomics data.
 domain: anatomy and development
 homepage: http://browser.planteome.org/amigo
-in_foundry_order: 1
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/

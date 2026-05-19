@@ -6,8 +6,6 @@ browsers:
 - title: BioPortal Browser
   label: BioPortal
   url: http://bioportal.bioontology.org/ontologies/OBI?p=classes
-build:
-  source_url: http://purl.obofoundry.org/obo/obi/repository/trunk/src/ontology/branches/
 contact:
   email: bpeters@lji.org
   github: bpeters42
@@ -17,8 +15,6 @@ depicted_by: https://svn.code.sf.net/p/obi/code/trunk/web/htdocs/images/obi-lote
 description: An integrated ontology for the description of life-science and clinical investigations
 domain: investigations
 homepage: http://obi-ontology.org
-in_foundry_order: 1
-integration_server: http://build.berkeleybop.org/job/build-obi/
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/
@@ -73,7 +69,7 @@ activity_status: active
 
 The Ontology for Biomedical Investigations (OBI) project is developing an integrated ontology for the description of life-science and clinical investigations.
 
-- [Browse OBI on Ontobee](https://www.ontobee.org/ontology/obi)
+- [Browse OBI on OLS](https://www.ebi.ac.uk/ols4/ontologies/obi)
 - Download OBI: [http://purl.obolibrary.org/obo/obi.owl](http://purl.obolibrary.org/obo/obi.owl)
 - [OBI homepage](http://obi-ontology.org)
 - [OBI mailing list](http://groups.google.com/group/obi-users)

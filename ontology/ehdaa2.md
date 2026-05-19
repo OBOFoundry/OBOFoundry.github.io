@@ -2,11 +2,6 @@
 layout: ontology_detail
 id: ehdaa2
 title: Human developmental anatomy, abstract
-build:
-  checkout: git clone https://github.com/obophenotype/human-developmental-anatomy-ontology.git
-  method: vcs
-  path: src/ontology
-  system: git
 contact:
   email: J.Bard@ed.ac.uk
   label: Jonathan Bard

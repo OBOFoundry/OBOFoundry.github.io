@@ -12,7 +12,6 @@ dependencies:
 description: A application driven Epilepsy Ontology with official terms from the ILAE.
 domain: health
 homepage: https://github.com/SCAI-BIO/EpilepsyOntology
-label: Epilepsy Ontology
 license:
   label: CC BY 4.0
   url: http://creativecommons.org/licenses/by/4.0/

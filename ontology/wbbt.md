@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: wbbt
 title: C. elegans Gross Anatomy Ontology
-build:
-  checkout: git clone https://github.com/obophenotype/c-elegans-gross-anatomy-ontology.git
-  path: .
-  system: git
 contact:
   email: raymond@caltech.edu
   github: raymond91125

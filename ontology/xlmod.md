@@ -10,7 +10,6 @@ contact:
 description: A structured controlled vocabulary for cross-linking reagents used with proteomics mass spectrometry.
 domain: chemistry and biochemistry
 homepage: http://www.psidev.info/groups/controlled-vocabularies
-label: xlmod
 license:
   label: CC BY 3.0
   url: https://creativecommons.org/licenses/by/3.0/

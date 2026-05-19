@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: psdo
 title: Performance Summary Display Ontology
-build:
-  checkout: https://github.com/Display-Lab/psdo.git
-  path: .
-  system: git
 contact:
   email: zachll@umich.edu
   github: zachll

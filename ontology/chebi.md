@@ -6,10 +6,6 @@ browsers:
 - title: EBI CHEBI Browser
   label: CHEBI
   url: http://www.ebi.ac.uk/chebi/chebiOntology.do?treeView=true&chebiId=CHEBI:24431#graphView
-build:
-  infallible: 1
-  method: obo2owl
-  source_url: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo
 contact:
   email: amalik@ebi.ac.uk
   github: amalik01
@@ -19,7 +15,6 @@ depicted_by: https://www.ebi.ac.uk/chebi/chebi_logo.svg
 description: A structured classification of molecular entities of biological interest focusing on 'small' chemical compounds.
 domain: chemistry and biochemistry
 homepage: http://www.ebi.ac.uk/chebi
-in_foundry_order: 1
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/

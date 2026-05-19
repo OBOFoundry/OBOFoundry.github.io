@@ -2,12 +2,6 @@
 layout: ontology_detail
 id: cvdo
 title: Cardiovascular Disease Ontology
-build:
-  method: owl2obo
-  publications:
-  - id: http://dx.doi.org/10.3233/978-1-61499-438-1-409
-    title: The Cardiovascular Disease Ontology
-  source_url: http://purl.obolibrary.org/obo/cvdo.owl
 contact:
   email: paul.fabry@usherbrooke.ca
   github: pfabry

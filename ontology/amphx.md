@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: amphx
 title: The Amphioxus Development and Anatomy Ontology
-build:
-  checkout: git clone https://github.com/EBISPOT/amphx_ontology.git
-  path: .
-  system: git
 contact:
   email: hescriva@obs-banyuls.fr
   github: hescriva

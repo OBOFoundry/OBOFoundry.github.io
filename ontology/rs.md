@@ -6,9 +6,6 @@ browsers:
 - title: RGD Ontology Browser
   label: RGD
   url: http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=RS:0000457
-build:
-  method: obo2owl
-  source_url: https://download.rgd.mcw.edu/ontology/rat_strain/rat_strain.obo
 contact:
   email: sjwang@mcw.edu
   github: shurjenw

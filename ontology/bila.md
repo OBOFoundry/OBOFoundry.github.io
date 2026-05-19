@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: bila
 title: Bilateria anatomy
-build:
-  insert_ontology_id: true
-  method: obo2owl
-  source_url: http://4dx.embl.de/4DXpress_4d/edocs/bilateria_mrca.obo
 contact:
   email: henrich@embl.de
   github: ThorstenHen

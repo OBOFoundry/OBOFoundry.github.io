@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: mfoem
 title: Emotion Ontology
-build:
-  method: owl2obo
-  source_url: http://purl.obolibrary.org/obo/mfoem.owl
 contact:
   email: janna.hastings@gmail.com
   github: jannahastings

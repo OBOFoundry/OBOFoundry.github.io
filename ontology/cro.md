@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: cro
 title: Contributor Role Ontology
-build:
-  checkout: git clone https://github.com/data2health/contributor-role-ontology.git
-  path: src/ontology
-  system: git
 contact:
   email: whimar@ohsu.edu
   github: marijane

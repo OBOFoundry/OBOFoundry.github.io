@@ -1,13 +1,18 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
 
-import csv
-import sys
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "pyyaml>=6.0.3",
+# ]
+# ///
+
 from argparse import ArgumentParser
 
 import yaml
 
 
-def main(args):
+def main():
     """
     Takes ontologies.yml file and makes a triple file with SHACL prefixes.
 
@@ -55,4 +60,4 @@ def main(args):
 
 
 if __name__ == "__main__":
-    main(sys.argv)
+    main()
