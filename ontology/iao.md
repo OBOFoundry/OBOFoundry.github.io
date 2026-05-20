@@ -27,6 +27,7 @@ products:
   contact:
     email: mbrochhausen@gmail.com
     label: Mathias Brochhausen
+    orcid: 0000-0003-1834-3856
   description: An ontology based on a theory of document acts describing what people can do with documents
 repository: https://github.com/information-artifact-ontology/IAO
 tracker: https://github.com/information-artifact-ontology/IAO/issues

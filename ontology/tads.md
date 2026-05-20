@@ -5,6 +5,7 @@ title: Tick Anatomy Ontology
 contact:
   email: dsonensh@odu.edu
   label: Daniel Sonenshine
+  orcid: 0000-0001-9370-918X
 description: 'The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>'
 domain: anatomy and development
 homepage: https://www.vectorbase.org/ontology-browser

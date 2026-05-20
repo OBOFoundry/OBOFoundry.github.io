@@ -5,6 +5,7 @@ title: Malaria Ontology
 contact:
   email: topalis@imbb.forth.gr
   label: Pantelis Topalis
+  orcid: 0000-0002-1635-4810
 description: An application ontology to cover all aspects of malaria as well as the intervention attempts to control it.
 domain: health
 homepage: https://www.vectorbase.org/ontology-browser

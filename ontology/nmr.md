@@ -4,7 +4,8 @@ id: nmr
 title: NMR-instrument specific component of metabolomics investigations
 contact:
   email: schober@imbi.uni-freiburg.de
-  label: Schober Daniel
+  label: Daniel Schober
+  orcid: 0000-0001-8014-6648
 description: Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation.
 domain: investigations
 homepage: http://msi-ontology.sourceforge.net/

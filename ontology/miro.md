@@ -5,6 +5,7 @@ title: Mosquito insecticide resistance
 contact:
   email: louis@imbb.forth.gr
   label: Christos (Kitsos) Louis
+  orcid: 0000-0003-2497-2210
 description: Application ontology for entities related to insecticide resistance in mosquitos
 domain: environment
 products:

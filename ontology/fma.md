@@ -4,7 +4,8 @@ id: fma
 title: Foundational Model of Anatomy Ontology (subset)
 contact:
   email: mejino@u.washington.edu
-  label: Onard Mejino
+  label: Jose Leonardo (Onard) Mejino
+  orcid: 0000-0003-2105-2283
 description: This is currently a slimmed down version of FMA
 domain: anatomy and development
 homepage: http://si.washington.edu/projects/fma
