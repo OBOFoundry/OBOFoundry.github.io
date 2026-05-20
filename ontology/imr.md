@@ -2,9 +2,7 @@
 layout: ontology_detail
 id: imr
 title: Molecule role (INOH Protein name/family name ontology)
-contact:
-  email: curator@inoh.org
-  label: INOH curators
+mailing_list: curator@inoh.org
 domain: chemistry and biochemistry
 homepage: http://www.inoh.org
 is_obsolete: true
