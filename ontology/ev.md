@@ -2,9 +2,9 @@
 layout: ontology_detail
 id: ev
 title: eVOC (Expressed Sequence Annotation for Humans)
-mailing_list: evoc@sanbi.ac.za
 domain: anatomy and development
 is_obsolete: true
+mailing_list: evoc@sanbi.ac.za
 activity_status: inactive
 ---
 

@@ -2,10 +2,10 @@
 layout: ontology_detail
 id: ipr
 title: Protein Domains
-mailing_list: interhelp@ebi.ac.uk
 domain: chemistry and biochemistry
 homepage: http://www.ebi.ac.uk/interpro/index.html
 is_obsolete: true
+mailing_list: interhelp@ebi.ac.uk
 activity_status: inactive
 ---
 
