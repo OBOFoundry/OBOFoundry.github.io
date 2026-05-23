@@ -30,6 +30,10 @@ taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 tracker: https://github.com/OGMS/ogms/issues
+usages:
+- description: OGMS has been extended to create various OBO ontologies, including the Infectious Disease Ontology (IDO) and its extensions, as well as the Ontology for Modeling and Represention of Social Entities (OMRSE), Mental Disease Ontology (MFOMD), Oral Health and Disease ontology (OHD), and Cardiovascular Disease Ontology (CVDO).
+  type: owl_import
+  user: http://obofoundry.org
 activity_status: active
 ---
 
