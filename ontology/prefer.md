@@ -79,7 +79,7 @@ usages:
 - description: PREFER is used for the integration of data for biofoundry precision fermentation data.
   publications:
   - id: https://arxiv.org/abs/2602.16755
-    title: PREFER: An Ontology for the PREcision FERmentation Community
+    title: 'PREFER: An Ontology for the PREcision FERmentation Community'
   type: annotation
   user: http://bright.dtu.dk/
 activity_status: active
