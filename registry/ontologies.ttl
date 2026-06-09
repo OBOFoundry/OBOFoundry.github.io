@@ -4741,6 +4741,93 @@ _:b35   <http://www.w3.org/2000/01/rdf-schema#label>  "Darren Natale" ;
         <http://purl.org/dc/elements/1.1/title>  "pro_nonreasoned.obo" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pr-asserted.obo" .
 
+<http://purl.obolibrary.org/obo/prefer>
+        <http://identifiers.org/preferredPrefix>  "PREFER" ;
+        <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
+        <http://purl.org/dc/elements/1.1/description>  "PREFER is an ontology designed to integrate high-throughput bioprocess data, covering operational, environmental and process parameters across different scales of a precision fermentation process, to accelerate the development and scaling of biosustainable production processes." ;
+        <http://purl.org/dc/elements/1.1/title>  "Precision Fermentation Ontology" ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://arxiv.org/abs/2602.16755> ;
+        <http://purl.org/dc/terms/1.1/theme>  "investigations" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/Multiomics-Analytics-Group/prefer_ontology/issues" ;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://www.ebi.ac.uk/ols4/ontologies/prefer> ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/prefer.owl" ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b160 ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/prefer.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/prefer.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/prefer.json> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/prefer/prefer-basic.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/prefer/prefer-basic.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/prefer/prefer-basic.json> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/prefer/prefer-base.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/prefer/prefer-base.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/prefer/prefer-base.json> ;
+        <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/Multiomics-Analytics-Group/prefer_ontology> .
+
+<https://arxiv.org/abs/2602.16755>
+        <http://purl.org/dc/elements/1.1/title>  "PREFER: An Ontology for the PREcision FERmentation Community" .
+
+<https://www.ebi.ac.uk/ols4/ontologies/prefer>
+        <http://purl.org/dc/elements/1.1/title>  "Ontology Lookup Service Browser" ;
+        <http://www.w3.org/2000/01/rdf-schema#label>  "OLS" .
+
+_:b160  <http://www.w3.org/2000/01/rdf-schema#label>  "Txell Amigó" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "txellmgsol@gmail.com" .
+
+<http://purl.obolibrary.org/obo/prefer.owl>
+        <http://purl.org/dc/elements/1.1/description>  "Complete ontology, plus inter-ontology axioms, and imports modules" ;
+        <http://purl.org/dc/elements/1.1/title>  "Main PREFER OWL edition" ;
+        <http://purl.org/dc/terms/1.1/format>  "owl-rdf/xml" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/prefer.owl" .
+
+<http://purl.obolibrary.org/obo/prefer.obo>
+        <http://purl.org/dc/elements/1.1/description>  "Complete ontology, plus inter-ontology axioms, and imports modules merged in" ;
+        <http://purl.org/dc/elements/1.1/title>  "prefer obo format edition" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/prefer.obo" .
+
+<http://purl.obolibrary.org/obo/prefer.json>
+        <http://purl.org/dc/elements/1.1/description>  "Complete ontology, plus inter-ontology axioms, and imports modules merged in" ;
+        <http://purl.org/dc/elements/1.1/title>  "PREFER OBOGraph-JSON format edition" ;
+        <http://purl.org/dc/terms/1.1/format>  "json" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/prefer.json" .
+
+<http://purl.obolibrary.org/obo/prefer/prefer-basic.owl>
+        <http://purl.org/dc/elements/1.1/description>  "Basic version, no inter-ontology axioms" ;
+        <http://purl.org/dc/elements/1.1/title>  "Basic prefer" ;
+        <http://purl.org/dc/terms/1.1/format>  "owl-rdf/xml" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/prefer/prefer-basic.owl" .
+
+<http://purl.obolibrary.org/obo/prefer/prefer-basic.obo>
+        <http://purl.org/dc/elements/1.1/description>  "Basic version, no inter-ontology axioms" ;
+        <http://purl.org/dc/elements/1.1/title>  "Basic PREFER (OBO version)" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/prefer/prefer-basic.obo" .
+
+<http://purl.obolibrary.org/obo/prefer/prefer-basic.json>
+        <http://purl.org/dc/elements/1.1/description>  "Basic version, no inter-ontology axioms" ;
+        <http://purl.org/dc/elements/1.1/title>  "Basic PREFER (OBOGraph-JSON version)" ;
+        <http://purl.org/dc/terms/1.1/format>  "json" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/prefer/prefer-basic.json" .
+
+<http://purl.obolibrary.org/obo/prefer/prefer-base.owl>
+        <http://purl.org/dc/elements/1.1/description>  "complete PREFER but with no imports or external axioms" ;
+        <http://purl.org/dc/elements/1.1/title>  "PREFER base module" ;
+        <http://purl.org/dc/terms/1.1/format>  "owl-rdf/xml" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/prefer/prefer-base.owl" .
+
+<http://purl.obolibrary.org/obo/prefer/prefer-base.obo>
+        <http://purl.org/dc/elements/1.1/description>  "complete PREFER but with no imports or external axioms" ;
+        <http://purl.org/dc/elements/1.1/title>  "PREFER base module (OBO version)" ;
+        <http://purl.org/dc/terms/1.1/format>  "obo" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/prefer/prefer-base.obo" .
+
+<http://purl.obolibrary.org/obo/prefer/prefer-base.json>
+        <http://purl.org/dc/elements/1.1/description>  "complete PREFER but with no imports or external axioms" ;
+        <http://purl.org/dc/elements/1.1/title>  "PREFER base module (OBOGraph-JSON version)" ;
+        <http://purl.org/dc/terms/1.1/format>  "json" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/prefer/prefer-base.json" .
+
 <http://purl.obolibrary.org/obo/proco>
         <http://identifiers.org/preferredPrefix>  "PROCO" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
@@ -4756,7 +4843,7 @@ _:b35   <http://www.w3.org/2000/01/rdf-schema#label>  "Darren Natale" ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/proco-ontology/PROCO/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/proco.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b160 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b161 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/proco.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/proco-ontology/PROCO> .
 
@@ -4769,11 +4856,11 @@ _:b35   <http://www.w3.org/2000/01/rdf-schema#label>  "Darren Natale" ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/EBI-BioModels/SBO/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/sbo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b161 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b162 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/sbo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.ebi.ac.uk/sbo/> .
 
-_:b160  <http://www.w3.org/2000/01/rdf-schema#label>  "Wes Schafer" ;
+_:b161  <http://www.w3.org/2000/01/rdf-schema#label>  "Wes Schafer" ;
         <http://xmlns.com/foaf/0.1/mbox>  "wes_schafer@merck.com" .
 
 <http://purl.obolibrary.org/obo/proco.owl>
@@ -4792,11 +4879,11 @@ _:b160  <http://www.w3.org/2000/01/rdf-schema#label>  "Wes Schafer" ;
         <http://purl.org/dc/terms/1.1/theme>  "information" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/Display-Lab/psdo/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/psdo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b162 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b163 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/psdo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/Display-Lab/psdo> .
 
-_:b162  <http://www.w3.org/2000/01/rdf-schema#label>  "Zach Landis-Lewis" ;
+_:b163  <http://www.w3.org/2000/01/rdf-schema#label>  "Zach Landis-Lewis" ;
         <http://xmlns.com/foaf/0.1/mbox>  "zachll@umich.edu" .
 
 <http://purl.obolibrary.org/obo/psdo.owl>
@@ -4813,12 +4900,12 @@ _:b162  <http://www.w3.org/2000/01/rdf-schema#label>  "Zach Landis-Lewis" ;
         <http://purl.org/dc/terms/1.1/theme>  "agriculture" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/Planteome/plant-stress-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pso.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b163 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b164 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pso.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pso.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/Planteome/plant-stress-ontology> .
 
-_:b163  <http://www.w3.org/2000/01/rdf-schema#label>  "Laurel Cooper" ;
+_:b164  <http://www.w3.org/2000/01/rdf-schema#label>  "Laurel Cooper" ;
         <http://xmlns.com/foaf/0.1/mbox>  "cooperl@oregonstate.edu" .
 
 <http://purl.obolibrary.org/obo/pso.owl>
@@ -4839,7 +4926,7 @@ _:b163  <http://www.w3.org/2000/01/rdf-schema#label>  "Laurel Cooper" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/rat-genome-database/PW-Pathway-Ontology/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=PW:0000001> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pw.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b164 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b165 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pw.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pw.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://rgd.mcw.edu/rgdweb/ontology/search.html> ;
@@ -4855,7 +4942,7 @@ _:b163  <http://www.w3.org/2000/01/rdf-schema#label>  "Laurel Cooper" ;
         <http://purl.org/dc/elements/1.1/title>  "RGD Ontology Browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "RGD" .
 
-_:b164  <http://www.w3.org/2000/01/rdf-schema#label>  "G. Thomas Hayman" ;
+_:b165  <http://www.w3.org/2000/01/rdf-schema#label>  "G. Thomas Hayman" ;
         <http://xmlns.com/foaf/0.1/mbox>  "gthayman@mcw.edu" .
 
 <http://purl.obolibrary.org/obo/pw.owl>
@@ -4880,7 +4967,7 @@ _:b164  <http://www.w3.org/2000/01/rdf-schema#label>  "G. Thomas Hayman" ;
         <http://purl.org/dc/terms/1.1/theme>  "environment" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/Radiobiology-Informatics-Consortium/RBO/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/rbo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b165 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b166 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/rbo.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/rbo.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/rbo.json> ;
@@ -4889,7 +4976,7 @@ _:b164  <http://www.w3.org/2000/01/rdf-schema#label>  "G. Thomas Hayman" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/rbo/rbo-base.json> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/Radiobiology-Informatics-Consortium/RBO> .
 
-_:b165  <http://www.w3.org/2000/01/rdf-schema#label>  "Daniel C. Berrios" ;
+_:b166  <http://www.w3.org/2000/01/rdf-schema#label>  "Daniel C. Berrios" ;
         <http://xmlns.com/foaf/0.1/mbox>  "daniel.c.berrios@nasa.gov" .
 
 <http://purl.obolibrary.org/obo/rbo.owl>
@@ -4966,7 +5053,7 @@ _:b13   <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/rat-genome-database/RS-Rat-Strain-Ontology/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=RS:0000457> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/rs.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b166 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b167 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/rs.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/rs.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://rgd.mcw.edu/rgdweb/search/strains.html> ;
@@ -4982,7 +5069,7 @@ _:b13   <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://purl.org/dc/elements/1.1/title>  "RGD Ontology Browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "RGD" .
 
-_:b166  <http://www.w3.org/2000/01/rdf-schema#label>  "Shur-Jen Wang" ;
+_:b167  <http://www.w3.org/2000/01/rdf-schema#label>  "Shur-Jen Wang" ;
         <http://xmlns.com/foaf/0.1/mbox>  "sjwang@mcw.edu" .
 
 <http://purl.obolibrary.org/obo/rs.owl>
@@ -5001,11 +5088,11 @@ _:b166  <http://www.w3.org/2000/01/rdf-schema#label>  "Shur-Jen Wang" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/rsc-ontologies/rxno/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "chemistry-ontologies@googlegroups.com" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/rxno.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b167 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b168 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/rxno.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/rsc-ontologies/rxno> .
 
-_:b167  <http://www.w3.org/2000/01/rdf-schema#label>  "Colin Batchelor" ;
+_:b168  <http://www.w3.org/2000/01/rdf-schema#label>  "Colin Batchelor" ;
         <http://xmlns.com/foaf/0.1/mbox>  "batchelorc@rsc.org" .
 
 <http://purl.obolibrary.org/obo/rxno.owl>
@@ -5021,11 +5108,11 @@ _:b167  <http://www.w3.org/2000/01/rdf-schema#label>  "Colin Batchelor" ;
         <http://purl.org/dc/terms/1.1/theme>  "investigations" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/monarch-initiative/SEPIO-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/sepio.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b168 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b169 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/sepio.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/monarch-initiative/SEPIO-ontology> .
 
-_:b168  <http://www.w3.org/2000/01/rdf-schema#label>  "Matthew Brush" ;
+_:b169  <http://www.w3.org/2000/01/rdf-schema#label>  "Matthew Brush" ;
         <http://xmlns.com/foaf/0.1/mbox>  "mhb120@gmail.com" .
 
 <http://purl.obolibrary.org/obo/sepio.owl>
@@ -5042,7 +5129,7 @@ _:b168  <http://www.w3.org/2000/01/rdf-schema#label>  "Matthew Brush" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/nasa/LSDAO/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://bioportal.bioontology.org/ontologies/SLSO> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/slso.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b169 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b170 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/slso.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/slso.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/slso.json> ;
@@ -5053,7 +5140,7 @@ _:b168  <http://www.w3.org/2000/01/rdf-schema#label>  "Matthew Brush" ;
         <http://purl.org/dc/elements/1.1/title>  "BioPortal Ontology Browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "BioPortal" .
 
-_:b169  <http://www.w3.org/2000/01/rdf-schema#label>  "Dan Berrios" ;
+_:b170  <http://www.w3.org/2000/01/rdf-schema#label>  "Dan Berrios" ;
         <http://xmlns.com/foaf/0.1/mbox>  "daniel.c.berrios@nasa.gov" .
 
 <http://purl.obolibrary.org/obo/slso.owl>
@@ -5107,7 +5194,7 @@ _:b154  <http://www.w3.org/2000/01/rdf-schema#label>  "Karen Eilbeck" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/spider-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/spd.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b170 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b171 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/spd.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://research.amnh.org/atol/files/> .
 
@@ -5117,7 +5204,7 @@ _:b154  <http://www.w3.org/2000/01/rdf-schema#label>  "Karen Eilbeck" ;
 <https://doi.org/10.3390/d11100202>
         <http://purl.org/dc/elements/1.1/title>  "The Spider Anatomy Ontology (SPD)—A Versatile Tool to Link Anatomy with Cross-Disciplinary Data" .
 
-_:b170  <http://www.w3.org/2000/01/rdf-schema#label>  "Martin Ramirez" ;
+_:b171  <http://www.w3.org/2000/01/rdf-schema#label>  "Martin Ramirez" ;
         <http://xmlns.com/foaf/0.1/mbox>  "ramirez@macn.gov.ar" .
 
 <http://purl.obolibrary.org/obo/spd.owl>
@@ -5159,7 +5246,7 @@ _:b115  <http://www.w3.org/2000/01/rdf-schema#label>  "Allyson Lister" ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/DiseaseOntology/SymptomOntology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/symp.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b171 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b172 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/symp.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/symp.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/DiseaseOntology/SymptomOntology> .
@@ -5167,7 +5254,7 @@ _:b115  <http://www.w3.org/2000/01/rdf-schema#label>  "Allyson Lister" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/19850722>
         <http://purl.org/dc/elements/1.1/title>  "GeMInA, Genomic Metadata for Infectious Agents, a geospatial surveillance pathogen database" .
 
-_:b171  <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
+_:b172  <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://xmlns.com/foaf/0.1/mbox>  "lynn.schriml@gmail.com" .
 
 <http://purl.obolibrary.org/obo/symp.owl>
@@ -5186,7 +5273,7 @@ _:b171  <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://purl.org/dc/terms/1.1/theme>  "information" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/terms4fairskills/FAIRterminology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/t4fs.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b172 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b173 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/t4fs.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/t4fs.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/t4fs.json> ;
@@ -5198,7 +5285,7 @@ _:b171  <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
 <https://doi.org/10.5281/zenodo.4705219>
         <http://purl.org/dc/elements/1.1/title>  "EOSC Co-creation funded project 074: Delivery of a proof of concept for terms4FAIRskills: Technical report" .
 
-_:b172  <http://www.w3.org/2000/01/rdf-schema#label>  "Allyson Lister" ;
+_:b173  <http://www.w3.org/2000/01/rdf-schema#label>  "Allyson Lister" ;
         <http://xmlns.com/foaf/0.1/mbox>  "allyson.lister@oerc.ox.ac.uk" .
 
 <http://purl.obolibrary.org/obo/t4fs.owl>
@@ -5232,7 +5319,7 @@ _:b172  <http://www.w3.org/2000/01/rdf-schema#label>  "Allyson Lister" ;
         <http://purl.org/dc/terms/1.1/theme>  "organisms" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/phenoscape/taxrank/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/taxrank.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b173 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b174 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/taxrank.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/taxrank.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/phenoscape/taxrank> .
@@ -5240,7 +5327,7 @@ _:b172  <http://www.w3.org/2000/01/rdf-schema#label>  "Allyson Lister" ;
 <https://doi.org/10.1186/2041-1480-4-34>
         <http://purl.org/dc/elements/1.1/title>  "The vertebrate taxonomy ontology: a framework for reasoning across model organism and species phenotypes" .
 
-_:b173  <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
+_:b174  <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
         <http://xmlns.com/foaf/0.1/mbox>  "balhoff@renci.org" .
 
 <http://purl.obolibrary.org/obo/taxrank.owl>
@@ -5273,12 +5360,12 @@ _:b14   <http://www.w3.org/2000/01/rdf-schema#label>  "Pankaj Jaiswal" ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/DiseaseOntology/PathogenTransmissionOntology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/trans.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b174 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b175 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/trans.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/trans.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/DiseaseOntology/PathogenTransmissionOntology> .
 
-_:b174  <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
+_:b175  <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://xmlns.com/foaf/0.1/mbox>  "lynn.schriml@gmail.com" .
 
 <http://purl.obolibrary.org/obo/trans.owl>
@@ -5298,7 +5385,7 @@ _:b174  <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
         <http://purl.org/dc/terms/1.1/theme>  "organisms" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/phenoscape/teleost-taxonomy-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/tto.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b175 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b176 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/tto.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/tto.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/phenoscape/teleost-taxonomy-ontology> .
@@ -5309,7 +5396,7 @@ _:b174  <http://www.w3.org/2000/01/rdf-schema#label>  "Lynn Schriml" ;
 <https://doi.org/10.1038/npre.2010.4629.1>
         <http://purl.org/dc/elements/1.1/title>  "The Teleost Taxonomy Ontology" .
 
-_:b175  <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
+_:b176  <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
         <http://xmlns.com/foaf/0.1/mbox>  "balhoff@renci.org" .
 
 <http://purl.obolibrary.org/obo/tto.obo>
@@ -5330,7 +5417,7 @@ _:b175  <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://bioportal.bioontology.org/ontologies/TXPO?p=classes> ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://toxpilot.nibiohn.go.jp/> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/txpo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b176 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b177 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/txpo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://toxpilot.nibiohn.go.jp/> .
 
@@ -5345,7 +5432,7 @@ _:b175  <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
         <http://purl.org/dc/elements/1.1/title>  "TOXPILOT" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "TOXPILOT" .
 
-_:b176  <http://www.w3.org/2000/01/rdf-schema#label>  "Yuki Yamagata" ;
+_:b177  <http://www.w3.org/2000/01/rdf-schema#label>  "Yuki Yamagata" ;
         <http://xmlns.com/foaf/0.1/mbox>  "yuki.yamagata@riken.jp" .
 
 <http://purl.obolibrary.org/obo/txpo.owl>
@@ -5462,7 +5549,7 @@ _:b15   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/upheno/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "https://groups.google.com/forum/#!forum/phenotype-ontologies-editors" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/upheno.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b177 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b178 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/upheno.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/upheno/mp-hp-view.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/upheno/v2/upheno.owl> ;
@@ -5477,7 +5564,7 @@ _:b15   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
 <https://zenodo.org/record/3352149>
         <http://purl.org/dc/elements/1.1/title>  "Phenotype Ontologies Traversing All The Organisms (POTATO) workshop: 2nd edition" .
 
-_:b177  <http://www.w3.org/2000/01/rdf-schema#label>  "James McLaughlin" ;
+_:b178  <http://www.w3.org/2000/01/rdf-schema#label>  "James McLaughlin" ;
         <http://xmlns.com/foaf/0.1/mbox>  "jmcl@ebi.ac.uk" .
 
 <http://purl.obolibrary.org/obo/upheno.owl>
@@ -5510,7 +5597,7 @@ _:b177  <http://www.w3.org/2000/01/rdf-schema#label>  "James McLaughlin" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/monarch-initiative/vertebrate-breed-ontology/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "https://groups.google.com/group/VBO-users" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/vbo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b178 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b179 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vbo.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vbo.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vbo.json> ;
@@ -5522,7 +5609,7 @@ _:b177  <http://www.w3.org/2000/01/rdf-schema#label>  "James McLaughlin" ;
 <https://doi.org/10.1111/jvim.70133>
         <http://purl.org/dc/elements/1.1/title>  "The Vertebrate Breed Ontology: Toward Effective Breed Data Standardization" .
 
-_:b178  <http://www.w3.org/2000/01/rdf-schema#label>  "Sabrina Toro" ;
+_:b179  <http://www.w3.org/2000/01/rdf-schema#label>  "Sabrina Toro" ;
         <http://xmlns.com/foaf/0.1/mbox>  "Sabrina@tislab.org" .
 
 <http://purl.obolibrary.org/obo/vbo.owl>
@@ -5554,7 +5641,7 @@ _:b178  <http://www.w3.org/2000/01/rdf-schema#label>  "Sabrina Toro" ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/vaccineontology/VO/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/vo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b179 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b180 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://violinet.org/vaccineontology> .
 
@@ -5564,7 +5651,7 @@ _:b178  <http://www.w3.org/2000/01/rdf-schema#label>  "Sabrina Toro" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/21624163>
         <http://purl.org/dc/elements/1.1/title>  "Mining of vaccine-associated IFN-γ gene interaction networks using the Vaccine Ontology" .
 
-_:b179  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqunh He" ;
+_:b180  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqunh He" ;
         <http://xmlns.com/foaf/0.1/mbox>  "yongqunh@med.umich.edu" .
 
 <http://purl.obolibrary.org/obo/vo.owl>
@@ -5579,11 +5666,11 @@ _:b179  <http://www.w3.org/2000/01/rdf-schema#label>  "Yongqunh He" ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/AnimalGenome/vertebrate-trait-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/vt.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b180 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b181 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vt.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/AnimalGenome/vertebrate-trait-ontology> .
 
-_:b180  <http://www.w3.org/2000/01/rdf-schema#label>  "Carissa Park" ;
+_:b181  <http://www.w3.org/2000/01/rdf-schema#label>  "Carissa Park" ;
         <http://xmlns.com/foaf/0.1/mbox>  "caripark@iastate.edu" .
 
 <http://purl.obolibrary.org/obo/vt.owl>
@@ -5599,12 +5686,12 @@ _:b180  <http://www.w3.org/2000/01/rdf-schema#label>  "Carissa Park" ;
         <http://purl.org/dc/terms/1.1/theme>  "organisms" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/phenoscape/vertebrate-taxonomy-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/vto.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b181 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b182 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vto.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vto.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/phenoscape/vertebrate-taxonomy-ontology> .
 
-_:b181  <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
+_:b182  <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
         <http://xmlns.com/foaf/0.1/mbox>  "balhoff@renci.org" .
 
 <http://purl.obolibrary.org/obo/vto.owl>
@@ -5624,7 +5711,7 @@ _:b181  <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/c-elegans-gross-anatomy-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/wbbt.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b182 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b183 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/wbbt.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/wbbt.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/c-elegans-gross-anatomy-ontology> .
@@ -5635,7 +5722,7 @@ _:b181  <http://www.w3.org/2000/01/rdf-schema#label>  "Jim Balhoff" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/18629098>
         <http://purl.org/dc/elements/1.1/title>  "Building a cell and anatomy ontology of Caenorhabditis elegans" .
 
-_:b182  <http://www.w3.org/2000/01/rdf-schema#label>  "Raymond Lee" ;
+_:b183  <http://www.w3.org/2000/01/rdf-schema#label>  "Raymond Lee" ;
         <http://xmlns.com/foaf/0.1/mbox>  "raymond@caltech.edu" .
 
 <http://purl.obolibrary.org/obo/wbbt.owl>
@@ -5655,7 +5742,7 @@ _:b182  <http://www.w3.org/2000/01/rdf-schema#label>  "Raymond Lee" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/c-elegans-development-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/wbls.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b183 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b184 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/wbls.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/wbls.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/c-elegans-development-ontology> .
@@ -5663,7 +5750,7 @@ _:b182  <http://www.w3.org/2000/01/rdf-schema#label>  "Raymond Lee" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/31642470>
         <http://purl.org/dc/elements/1.1/title>  "WormBase: a modern Model Organism Information Resource" .
 
-_:b183  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Grove" ;
+_:b184  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Grove" ;
         <http://xmlns.com/foaf/0.1/mbox>  "cgrove@caltech.edu" .
 
 <http://purl.obolibrary.org/obo/wbls.owl>
@@ -5683,7 +5770,7 @@ _:b183  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Grove" ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/c-elegans-phenotype-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/wbphenotype.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b184 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b185 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/wbphenotype.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/wbphenotype.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/wbphenotype/wbphenotype-base.owl> ;
@@ -5692,7 +5779,7 @@ _:b183  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Grove" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/21261995>
         <http://purl.org/dc/elements/1.1/title>  "Worm Phenotype Ontology: integrating phenotype data within and beyond the C. elegans community." .
 
-_:b184  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Grove" ;
+_:b185  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Grove" ;
         <http://xmlns.com/foaf/0.1/mbox>  "cgrove@caltech.edu" .
 
 <http://purl.obolibrary.org/obo/wbphenotype.owl>
@@ -5716,7 +5803,7 @@ _:b184  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Grove" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/xenopus-anatomy/xao/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/xao.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b185 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b186 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/xao.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/xao.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.xenbase.org/anatomy/xao.do?method=display> .
@@ -5730,7 +5817,7 @@ _:b184  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Grove" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/24139024>
         <http://purl.org/dc/elements/1.1/title>  "Enhanced XAO: the ontology of Xenopus anatomy and development underpins more accurate annotation of gene expression and queries on Xenbase." .
 
-_:b185  <http://www.w3.org/2000/01/rdf-schema#label>  "Erik Segerdell" ;
+_:b186  <http://www.w3.org/2000/01/rdf-schema#label>  "Erik Segerdell" ;
         <http://xmlns.com/foaf/0.1/mbox>  "Erik.Segerdell@cchmc.org" .
 
 <http://purl.obolibrary.org/obo/xao.owl>
@@ -5762,13 +5849,13 @@ _:b16   <http://www.w3.org/2000/01/rdf-schema#label>  "Jennifer Smith" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/HUPO-PSI/xlmod-CV/issues" ;
         <http://usefulinc.com/ns/doap#mailing-list>  "psidev-ms-vocab@lists.sourceforge.net" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/xlmod.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b186 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b187 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/xlmod.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/xlmod.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.psidev.info/groups/controlled-vocabularies> ;
         <http://xmlns.com/foaf/0.1/page>  <http://www.psidev.info/groups/controlled-vocabularies> .
 
-_:b186  <http://www.w3.org/2000/01/rdf-schema#label>  "Lutz Fischer" ;
+_:b187  <http://www.w3.org/2000/01/rdf-schema#label>  "Lutz Fischer" ;
         <http://xmlns.com/foaf/0.1/mbox>  "lutz.fischer@tu-berlin.de" .
 
 <http://purl.obolibrary.org/obo/xlmod.obo>
@@ -5796,7 +5883,7 @@ _:b186  <http://www.w3.org/2000/01/rdf-schema#label>  "Lutz Fischer" ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/xenopus-phenotype-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/xpo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b187 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b188 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/xpo.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/xpo.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/xenopus-phenotype-ontology> .
@@ -5804,7 +5891,7 @@ _:b186  <http://www.w3.org/2000/01/rdf-schema#label>  "Lutz Fischer" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/35317743>
         <http://purl.org/dc/elements/1.1/title>  "The Xenopus phenotype ontology: bridging model organism phenotype data to human health and development." .
 
-_:b187  <http://www.w3.org/2000/01/rdf-schema#label>  "Erik Segerdell" ;
+_:b188  <http://www.w3.org/2000/01/rdf-schema#label>  "Erik Segerdell" ;
         <http://xmlns.com/foaf/0.1/mbox>  "Erik.Segerdell@cchmc.org" .
 
 <http://purl.obolibrary.org/obo/xpo.owl>
@@ -5839,7 +5926,7 @@ _:b113  <http://www.w3.org/2000/01/rdf-schema#label>  "Yvonne Bradford" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/cerivs/zebrafish-anatomical-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/zfa.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b188 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b189 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/zfa.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/zfa.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources> .
@@ -5847,7 +5934,7 @@ _:b113  <http://www.w3.org/2000/01/rdf-schema#label>  "Yvonne Bradford" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/24568621>
         <http://purl.org/dc/elements/1.1/title>  "The zebrafish anatomy and stage ontologies: representing the anatomy and development of Danio rerio." .
 
-_:b188  <http://www.w3.org/2000/01/rdf-schema#label>  "Ceri Van Slyke" ;
+_:b189  <http://www.w3.org/2000/01/rdf-schema#label>  "Ceri Van Slyke" ;
         <http://xmlns.com/foaf/0.1/mbox>  "van_slyke@zfin.org" .
 
 <http://purl.obolibrary.org/obo/zfa.owl>
@@ -5866,13 +5953,13 @@ _:b188  <http://www.w3.org/2000/01/rdf-schema#label>  "Ceri Van Slyke" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/cerivs/zebrafish-anatomical-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/zfs.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b189 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b190 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/zfs.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/zfs.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://wiki.zfin.org/display/general/Anatomy+Atlases+and+Resources> ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/developmental-stage-ontologies/wiki/ZFS> .
 
-_:b189  <http://www.w3.org/2000/01/rdf-schema#label>  "Ceri Van Slyke" ;
+_:b190  <http://www.w3.org/2000/01/rdf-schema#label>  "Ceri Van Slyke" ;
         <http://xmlns.com/foaf/0.1/mbox>  "van_slyke@zfin.org" .
 
 <http://purl.obolibrary.org/obo/zfs.owl>
@@ -5897,12 +5984,12 @@ _:b189  <http://www.w3.org/2000/01/rdf-schema#label>  "Ceri Van Slyke" ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/zebrafish-phenotype-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/zp.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b190 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b191 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/zp.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/zp.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/zebrafish-phenotype-ontology> .
 
-_:b190  <http://www.w3.org/2000/01/rdf-schema#label>  "Yvonne Bradford" ;
+_:b191  <http://www.w3.org/2000/01/rdf-schema#label>  "Yvonne Bradford" ;
         <http://xmlns.com/foaf/0.1/mbox>  "ybradford@zfin.org" .
 
 <http://purl.obolibrary.org/obo/zp.owl>
@@ -6075,7 +6162,7 @@ _:b33   <http://www.w3.org/2000/01/rdf-schema#label>  "Sebastian Koehler" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://bioportal.bioontology.org/ontologies/KISAO> ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://www.ontobee.org/ontology/KISAO> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/kisao.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b191 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b192 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/kisao.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/SED-ML/KiSAO> .
 
@@ -6103,13 +6190,13 @@ _:b33   <http://www.w3.org/2000/01/rdf-schema#label>  "Sebastian Koehler" ;
         <http://purl.org/dc/elements/1.1/title>  "OntoBee" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "OntoBee" .
 
-_:b191  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Karr" ;
+_:b192  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Karr" ;
         <http://xmlns.com/foaf/0.1/mbox>  "jonrkarr@gmail.com" .
 
 <http://purl.obolibrary.org/obo/kisao.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/kisao.owl" .
 
-_:b161  <http://www.w3.org/2000/01/rdf-schema#label>  "Rahuman Sheriff" ;
+_:b162  <http://www.w3.org/2000/01/rdf-schema#label>  "Rahuman Sheriff" ;
         <http://xmlns.com/foaf/0.1/mbox>  "sheriff@ebi.ac.uk" .
 
 <http://purl.obolibrary.org/obo/sbo.owl>
@@ -6158,7 +6245,7 @@ _:b161  <http://www.w3.org/2000/01/rdf-schema#label>  "Rahuman Sheriff" ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/scdodev/scdo-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/scdo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b192 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b193 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/scdo.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/scdo.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://scdontology.h3abionet.org/> .
@@ -6173,7 +6260,7 @@ _:b161  <http://www.w3.org/2000/01/rdf-schema#label>  "Rahuman Sheriff" ;
         <http://purl.org/dc/terms/1.1/theme>  "organisms" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/VEuPathDB-ontology/VEuPathDB-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/eupath.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b193 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b194 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/eupath.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/VEuPathDB-ontology/VEuPathDB-ontology> .
 
@@ -6184,7 +6271,7 @@ _:b161  <http://www.w3.org/2000/01/rdf-schema#label>  "Rahuman Sheriff" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/idomal.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b194 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b195 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/idomal.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/idomal.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://www.vectorbase.org/ontology-browser> .
@@ -6201,7 +6288,7 @@ _:b161  <http://www.w3.org/2000/01/rdf-schema#label>  "Rahuman Sheriff" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/31769834>
         <http://purl.org/dc/elements/1.1/title>  "The Sickle Cell Disease Ontology: enabling universal sickle cell-based knowledge representation." .
 
-_:b192  <http://www.w3.org/2000/01/rdf-schema#label>  "Jade Hotchkiss" ;
+_:b193  <http://www.w3.org/2000/01/rdf-schema#label>  "Jade Hotchkiss" ;
         <http://xmlns.com/foaf/0.1/mbox>  "giant.plankton@gmail.com" .
 
 <http://purl.obolibrary.org/obo/scdo.owl>
@@ -6216,12 +6303,12 @@ _:b192  <http://www.w3.org/2000/01/rdf-schema#label>  "Jade Hotchkiss" ;
         <http://purl.org/dc/elements/1.1/title>  "Physico-chemical methods and properties" ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fix.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b195 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b196 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/fix.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/fix.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.ebi.ac.uk/chebi> .
 
-_:b195  <http://www.w3.org/2000/01/rdf-schema#label>  "chEBI" .
+_:b196  <http://www.w3.org/2000/01/rdf-schema#label>  "chEBI" .
 
 <http://purl.obolibrary.org/obo/fix.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fix.owl" .
@@ -6264,12 +6351,12 @@ _:b195  <http://www.w3.org/2000/01/rdf-schema#label>  "chEBI" .
         <http://purl.org/dc/terms/1.1/theme>  "biological systems" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/sibo/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/sibo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b196 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b197 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/sibo.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/sibo.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/sibo> .
 
-_:b196  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
+_:b197  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://xmlns.com/foaf/0.1/mbox>  "cjmungall@lbl.gov" .
 
 <http://purl.obolibrary.org/obo/sibo.owl>
@@ -6290,7 +6377,7 @@ _:b196  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://purl.org/dc/terms/1.1/theme>  "biological systems" ;
         <http://usefulinc.com/ns/doap#bug-database>  "http://variationontology.org/instructions.shtml" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/vario.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b197 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b198 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vario.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vario.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://variationontology.org> .
@@ -6304,7 +6391,7 @@ _:b196  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/25616435>
         <http://purl.org/dc/elements/1.1/title>  "Types and effects of protein variations" .
 
-_:b197  <http://www.w3.org/2000/01/rdf-schema#label>  "Mauno Vihinen" ;
+_:b198  <http://www.w3.org/2000/01/rdf-schema#label>  "Mauno Vihinen" ;
         <http://xmlns.com/foaf/0.1/mbox>  "mauno.vihinen@med.lu.se" .
 
 <http://purl.obolibrary.org/obo/vario.owl>
@@ -6318,7 +6405,7 @@ _:b197  <http://www.w3.org/2000/01/rdf-schema#label>  "Mauno Vihinen" ;
 <https://doi.org/10.5281/zenodo.6685957>
         <http://purl.org/dc/elements/1.1/title>  "Malaria study data integration and information retrieval based on OBO Foundry ontologies." .
 
-_:b193  <http://www.w3.org/2000/01/rdf-schema#label>  "Jie Zheng" ;
+_:b194  <http://www.w3.org/2000/01/rdf-schema#label>  "Jie Zheng" ;
         <http://xmlns.com/foaf/0.1/mbox>  "jiezhen@med.umich.edu" .
 
 <http://purl.obolibrary.org/obo/eupath.owl>
@@ -6335,11 +6422,11 @@ _:b193  <http://www.w3.org/2000/01/rdf-schema#label>  "Jie Zheng" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/RDruzinsky/feedontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mfmo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b198 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b199 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mfmo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/rdruzinsky/feedontology> .
 
-_:b198  <http://www.w3.org/2000/01/rdf-schema#label>  "Robert Druzinsky" ;
+_:b199  <http://www.w3.org/2000/01/rdf-schema#label>  "Robert Druzinsky" ;
         <http://xmlns.com/foaf/0.1/mbox>  "druzinsk@uic.edu" .
 
 <http://purl.obolibrary.org/obo/mfmo.owl>
@@ -6360,11 +6447,11 @@ _:b110  <http://www.w3.org/2000/01/rdf-schema#label>  "Carrine Blank" ;
         <http://purl.org/dc/terms/1.1/theme>  "investigations" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/linikujp/OGSF/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ogsf.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b199 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b200 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ogsf.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/linikujp/OGSF> .
 
-_:b199  <http://www.w3.org/2000/01/rdf-schema#label>  "Asiyah Yu Lin" ;
+_:b200  <http://www.w3.org/2000/01/rdf-schema#label>  "Asiyah Yu Lin" ;
         <http://xmlns.com/foaf/0.1/mbox>  "linikujp@gmail.com" .
 
 <http://purl.obolibrary.org/obo/ogsf.owl>
@@ -6379,13 +6466,13 @@ _:b199  <http://www.w3.org/2000/01/rdf-schema#label>  "Asiyah Yu Lin" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/developmental-stage-ontologies/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/olatdv.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b200 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b201 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/olatdv.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/olatdv.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv> ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/developmental-stage-ontologies> .
 
-_:b200  <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
+_:b201  <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
         <http://xmlns.com/foaf/0.1/mbox>  "frederic.bastian@unil.ch" .
 
 <http://purl.obolibrary.org/obo/olatdv.obo>
@@ -6403,13 +6490,13 @@ _:b200  <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/developmental-stage-ontologies/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pdumdv.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b201 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b202 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pdumdv.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pdumdv.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv> ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/developmental-stage-ontologies> .
 
-_:b201  <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
+_:b202  <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
         <http://xmlns.com/foaf/0.1/mbox>  "frederic.bastian@unil.ch" .
 
 <http://purl.obolibrary.org/obo/pdumdv.owl>
@@ -6427,11 +6514,11 @@ _:b201  <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/human-developmental-anatomy-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/aeo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b202 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b203 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/aeo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/human-developmental-anatomy-ontology/> .
 
-_:b202  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
+_:b203  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
         <http://xmlns.com/foaf/0.1/mbox>  "J.Bard@ed.ac.uk" .
 
 <http://purl.obolibrary.org/obo/aeo.owl>
@@ -6446,7 +6533,7 @@ _:b202  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/cephalopod-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ceph.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b203 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b204 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ceph.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ceph.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/cephalopod-ontology> .
@@ -6454,7 +6541,7 @@ _:b202  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
 <http://purl.obolibrary.org/obo/NCBITaxon_6605>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Cephalopod" .
 
-_:b203  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
+_:b204  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://xmlns.com/foaf/0.1/mbox>  "cjmungall@lbl.gov" .
 
 <http://purl.obolibrary.org/obo/ceph.owl>
@@ -6478,7 +6565,7 @@ _:b203  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/human-developmental-anatomy-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ehdaa2.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b204 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b205 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ehdaa2.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ehdaa2.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/human-developmental-anatomy-ontology> .
@@ -6486,7 +6573,7 @@ _:b203  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/22973865>
         <http://purl.org/dc/elements/1.1/title>  "A new ontology (structured hierarchy) of human developmental anatomy for the first 7 weeks (Carnegie stages 1-20)." .
 
-_:b204  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
+_:b205  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
         <http://xmlns.com/foaf/0.1/mbox>  "J.Bard@ed.ac.uk" .
 
 <http://purl.obolibrary.org/obo/ehdaa2.owl>
@@ -6508,7 +6595,7 @@ _:b204  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://bitbucket.org/uwsig/fma/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fma.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b205 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b206 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/fma.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://si.washington.edu/projects/fma> ;
         <http://xmlns.com/foaf/0.1/page>  <http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy> .
@@ -6522,13 +6609,13 @@ _:b204  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/16779026>
         <http://purl.org/dc/elements/1.1/title>  "Challenges in converting frame-based ontology into OWL: the Foundational Model of Anatomy case-study" .
 
-_:b205  <http://www.w3.org/2000/01/rdf-schema#label>  "Onard Mejino" ;
+_:b206  <http://www.w3.org/2000/01/rdf-schema#label>  "Onard Mejino" ;
         <http://xmlns.com/foaf/0.1/mbox>  "mejino@u.washington.edu" .
 
 <http://purl.obolibrary.org/obo/fma.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fma.owl" .
 
-_:b194  <http://www.w3.org/2000/01/rdf-schema#label>  "Pantelis Topalis" ;
+_:b195  <http://www.w3.org/2000/01/rdf-schema#label>  "Pantelis Topalis" ;
         <http://xmlns.com/foaf/0.1/mbox>  "topalis@imbb.forth.gr" .
 
 <http://purl.obolibrary.org/obo/idomal.owl>
@@ -6544,14 +6631,14 @@ _:b194  <http://www.w3.org/2000/01/rdf-schema#label>  "Pantelis Topalis" ;
         <http://purl.org/dc/elements/1.1/title>  "Mosquito insecticide resistance" ;
         <http://purl.org/dc/terms/1.1/theme>  "environment" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/miro.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b206 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b207 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/miro.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/miro.obo> .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_44484>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Anopheles" .
 
-_:b206  <http://www.w3.org/2000/01/rdf-schema#label>  "Christos (Kitsos) Louis" ;
+_:b207  <http://www.w3.org/2000/01/rdf-schema#label>  "Christos (Kitsos) Louis" ;
         <http://xmlns.com/foaf/0.1/mbox>  "louis@imbb.forth.gr" .
 
 <http://purl.obolibrary.org/obo/miro.owl>
@@ -6569,7 +6656,7 @@ _:b206  <http://www.w3.org/2000/01/rdf-schema#label>  "Christos (Kitsos) Louis" 
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/BGSU-RNA/rnao/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <http://bgsu-rna.github.io/rnao/> ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/rnao.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b207 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b208 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/rnao.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/rnao.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/bgsu-rna/rnao> .
@@ -6578,7 +6665,7 @@ _:b206  <http://www.w3.org/2000/01/rdf-schema#label>  "Christos (Kitsos) Louis" 
         <http://purl.org/dc/elements/1.1/title>  "RNA Ontology jOWL Browser" ;
         <http://www.w3.org/2000/01/rdf-schema#label>  "RNAO" .
 
-_:b207  <http://www.w3.org/2000/01/rdf-schema#label>  "Colin Batchelor" ;
+_:b208  <http://www.w3.org/2000/01/rdf-schema#label>  "Colin Batchelor" ;
         <http://xmlns.com/foaf/0.1/mbox>  "BatchelorC@rsc.org" .
 
 <http://purl.obolibrary.org/obo/rnao.owl>
@@ -6595,7 +6682,7 @@ _:b207  <http://www.w3.org/2000/01/rdf-schema#label>  "Colin Batchelor" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/tads.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b208 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b209 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/tads.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/tads.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://www.vectorbase.org/ontology-browser> .
@@ -6603,7 +6690,7 @@ _:b207  <http://www.w3.org/2000/01/rdf-schema#label>  "Colin Batchelor" ;
 <http://purl.obolibrary.org/obo/NCBITaxon_6939>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Ixodidae" .
 
-_:b208  <http://www.w3.org/2000/01/rdf-schema#label>  "Daniel Sonenshine" ;
+_:b209  <http://www.w3.org/2000/01/rdf-schema#label>  "Daniel Sonenshine" ;
         <http://xmlns.com/foaf/0.1/mbox>  "dsonensh@odu.edu" .
 
 <http://purl.obolibrary.org/obo/tads.owl>
@@ -6620,12 +6707,12 @@ _:b208  <http://www.w3.org/2000/01/rdf-schema#label>  "Daniel Sonenshine" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/tgma.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b209 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b210 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/tgma.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/tgma.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://www.vectorbase.org/ontology-browser> .
 
-_:b209  <http://www.w3.org/2000/01/rdf-schema#label>  "Pantelis Topalis" ;
+_:b210  <http://www.w3.org/2000/01/rdf-schema#label>  "Pantelis Topalis" ;
         <http://xmlns.com/foaf/0.1/mbox>  "topalis@imbb.forth.gr" .
 
 <http://purl.obolibrary.org/obo/tgma.owl>
@@ -6644,7 +6731,7 @@ _:b209  <http://www.w3.org/2000/01/rdf-schema#label>  "Pantelis Topalis" ;
         <http://purl.org/dc/terms/1.1/theme>  "biological systems" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/geneontology/unipathway/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/upa.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b210 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b211 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/upa.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/upa.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/geneontology/unipathway> .
@@ -6652,7 +6739,7 @@ _:b209  <http://www.w3.org/2000/01/rdf-schema#label>  "Pantelis Topalis" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/22102589>
         <http://purl.org/dc/elements/1.1/title>  "UniPathway: a resource for the exploration and annotation of metabolic pathways" .
 
-_:b210  <http://www.w3.org/2000/01/rdf-schema#label>  "Anne Morgat" ;
+_:b211  <http://www.w3.org/2000/01/rdf-schema#label>  "Anne Morgat" ;
         <http://xmlns.com/foaf/0.1/mbox>  "Anne.Morgat@sib.swiss" .
 
 <http://purl.obolibrary.org/obo/upa.owl>
@@ -6666,24 +6753,21 @@ _:b210  <http://www.w3.org/2000/01/rdf-schema#label>  "Anne Morgat" ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_8292> ;
         <http://purl.org/dc/elements/1.1/title>  "Amphibian gross anatomy" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b211 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b212 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://github.com/seger/aao> .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_8292>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Amphibia" .
 
-_:b211  <http://www.w3.org/2000/01/rdf-schema#label>  "David Blackburn" ;
+_:b212  <http://www.w3.org/2000/01/rdf-schema#label>  "David Blackburn" ;
         <http://xmlns.com/foaf/0.1/mbox>  "david.c.blackburn@gmail.com" .
 
 <http://purl.obolibrary.org/obo/adw>
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/title>  "Animal natural history and life history" ;
         <http://purl.org/dc/terms/1.1/theme>  "organisms" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b212 ;
+        <http://usefulinc.com/ns/doap#mailing-list>  "adw_geeks@umich.edu" ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.animaldiversity.org> .
-
-_:b212  <http://www.w3.org/2000/01/rdf-schema#label>  "Animal Diversity Web technical staff" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "adw_geeks@umich.edu" .
 
 <http://purl.obolibrary.org/obo/aero>
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
@@ -6886,10 +6970,7 @@ _:b224  <http://www.w3.org/2000/01/rdf-schema#label>  "Marc Ciriello" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/title>  "eVOC (Expressed Sequence Annotation for Humans)" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b225 .
-
-_:b225  <http://www.w3.org/2000/01/rdf-schema#label>  "eVOC mailing list" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "evoc@sanbi.ac.za" .
+        <http://usefulinc.com/ns/doap#mailing-list>  "evoc@sanbi.ac.za" .
 
 <http://purl.obolibrary.org/obo/fbsp>
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
@@ -6897,11 +6978,11 @@ _:b225  <http://www.w3.org/2000/01/rdf-schema#label>  "eVOC mailing list" ;
         <http://purl.org/dc/elements/1.1/description>  "The taxonomy of the family <i>Drosophilidae</i> (largely after Baechli) and of other taxa referred to in FlyBase." ;
         <http://purl.org/dc/elements/1.1/title>  "Fly taxonomy" ;
         <http://purl.org/dc/terms/1.1/theme>  "organisms" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b226 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b225 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/fbsp.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.flybase.org/> .
 
-_:b226  <http://www.w3.org/2000/01/rdf-schema#label>  "Clare Pilgrim" ;
+_:b225  <http://www.w3.org/2000/01/rdf-schema#label>  "Clare Pilgrim" ;
         <http://xmlns.com/foaf/0.1/mbox>  "cp390@cam.ac.uk" .
 
 <http://purl.obolibrary.org/obo/fbsp.owl>
@@ -6912,11 +6993,11 @@ _:b226  <http://www.w3.org/2000/01/rdf-schema#label>  "Clare Pilgrim" ;
         <http://purl.org/dc/elements/1.1/title>  "Influenza Ontology" ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "http://purl.obolibrary.org/obo/flu/tracker" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b227 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b226 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/flu.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://purl.obolibrary.org/obo/flu/> .
 
-_:b227  <http://www.w3.org/2000/01/rdf-schema#label>  "Burke Squires" ;
+_:b226  <http://www.w3.org/2000/01/rdf-schema#label>  "Burke Squires" ;
         <http://xmlns.com/foaf/0.1/mbox>  "burkesquires@gmail.com" .
 
 <http://purl.obolibrary.org/obo/flu.owl>
@@ -6926,20 +7007,17 @@ _:b227  <http://www.w3.org/2000/01/rdf-schema#label>  "Burke Squires" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/title>  "Cereal Plant Gross Anatomy" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b228 ;
+        <http://usefulinc.com/ns/doap#mailing-list>  "po-discuss@plantontology.org" ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.gramene.org/plant_ontology/> .
-
-_:b228  <http://www.w3.org/2000/01/rdf-schema#label>  "Plant Ontology Administrators" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "po-discuss@plantontology.org" .
 
 <http://purl.obolibrary.org/obo/habronattus>
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/title>  "Habronattus courtship" ;
         <http://purl.org/dc/terms/1.1/theme>  "organisms" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b229 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b227 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.mesquiteproject.org/ontology/Habronattus/index.html> .
 
-_:b229  <http://www.w3.org/2000/01/rdf-schema#label>  "Peter Midford" ;
+_:b227  <http://www.w3.org/2000/01/rdf-schema#label>  "Peter Midford" ;
         <http://xmlns.com/foaf/0.1/mbox>  "peteremidford@yahoo.com" .
 
 <http://purl.obolibrary.org/obo/iev>
@@ -6952,59 +7030,53 @@ _:b229  <http://www.w3.org/2000/01/rdf-schema#label>  "Peter Midford" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/title>  "Molecule role (INOH Protein name/family name ontology)" ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b230 ;
+        <http://usefulinc.com/ns/doap#mailing-list>  "curator@inoh.org" ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.inoh.org> .
-
-_:b230  <http://www.w3.org/2000/01/rdf-schema#label>  "INOH curators" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "curator@inoh.org" .
 
 <http://purl.obolibrary.org/obo/ipr>
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/title>  "Protein Domains" ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b231 ;
+        <http://usefulinc.com/ns/doap#mailing-list>  "interhelp@ebi.ac.uk" ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.ebi.ac.uk/interpro/index.html> .
-
-_:b231  <http://www.w3.org/2000/01/rdf-schema#label>  "InterPro Help" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "interhelp@ebi.ac.uk" .
 
 <http://purl.obolibrary.org/obo/lipro>
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology representation of the LIPIDMAPS nomenclature classification." ;
         <http://purl.org/dc/elements/1.1/title>  "Lipid Ontology" ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b232 .
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b228 .
 
-_:b232  <http://www.w3.org/2000/01/rdf-schema#label>  "Christopher Baker" ;
+_:b228  <http://www.w3.org/2000/01/rdf-schema#label>  "Christopher Baker" ;
         <http://xmlns.com/foaf/0.1/mbox>  "bakerc@unb.ca" .
 
 <http://purl.obolibrary.org/obo/loggerhead>
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/title>  "Loggerhead nesting" ;
         <http://purl.org/dc/terms/1.1/theme>  "organisms" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b233 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b229 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.mesquiteproject.org/ontology/Loggerhead/index.html> .
 
-_:b233  <http://www.w3.org/2000/01/rdf-schema#label>  "Peter Midford" ;
+_:b229  <http://www.w3.org/2000/01/rdf-schema#label>  "Peter Midford" ;
         <http://xmlns.com/foaf/0.1/mbox>  "peteremidford@yahoo.com" .
 
 <http://purl.obolibrary.org/obo/mao>
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/title>  "Multiple alignment" ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b234 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b230 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html> .
 
-_:b234  <http://www.w3.org/2000/01/rdf-schema#label>  "Julie Thompson" ;
+_:b230  <http://www.w3.org/2000/01/rdf-schema#label>  "Julie Thompson" ;
         <http://xmlns.com/foaf/0.1/mbox>  "julie@igbmc.u-strasbg.fr" .
 
 <http://purl.obolibrary.org/obo/mat>
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/title>  "Minimal anatomical terminology" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b235 .
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b231 .
 
-_:b235  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
+_:b231  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
         <http://xmlns.com/foaf/0.1/mbox>  "j.bard@ed.ac.uk" .
 
 <http://purl.obolibrary.org/obo/mfo>
@@ -7013,13 +7085,13 @@ _:b235  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
         <http://purl.org/dc/elements/1.1/description>  "A structured controlled vocabulary of the anatomy and development of the Japanese medaka fish, <i>Oryzias latipes</i>." ;
         <http://purl.org/dc/elements/1.1/title>  "Medaka fish anatomy and development" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b236 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b232 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mfo.owl> .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_8089>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Oryzias" .
 
-_:b236  <http://www.w3.org/2000/01/rdf-schema#label>  "Thorsten Henrich" ;
+_:b232  <http://www.w3.org/2000/01/rdf-schema#label>  "Thorsten Henrich" ;
         <http://xmlns.com/foaf/0.1/mbox>  "henrich@embl.de" .
 
 <http://purl.obolibrary.org/obo/mfo.owl>
@@ -7031,11 +7103,11 @@ _:b236  <http://www.w3.org/2000/01/rdf-schema#label>  "Thorsten Henrich" ;
         <http://purl.org/dc/elements/1.1/title>  "microRNA Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/publicdomain/zero/1.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b237 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b233 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mirnao.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://code.google.com/p/mirna-ontology/> .
 
-_:b237  <http://www.w3.org/2000/01/rdf-schema#label>  "Pantelis Topalis" ;
+_:b233  <http://www.w3.org/2000/01/rdf-schema#label>  "Pantelis Topalis" ;
         <http://xmlns.com/foaf/0.1/mbox>  "topalis@imbb.forth.gr" .
 
 <http://purl.obolibrary.org/obo/mirnao.owl>
@@ -7046,12 +7118,12 @@ _:b237  <http://www.w3.org/2000/01/rdf-schema#label>  "Pantelis Topalis" ;
         <http://purl.org/dc/elements/1.1/description>  "A standardized description of a microarray experiment in support of MAGE v.1." ;
         <http://purl.org/dc/elements/1.1/title>  "Microarray experimental conditions" ;
         <http://purl.org/dc/terms/1.1/theme>  "investigations" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b238 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b234 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://mged.sourceforge.net/ontologies/MGEDontology.php> ;
         <http://xmlns.com/foaf/0.1/page>  <http://mged.sourceforge.net/software/downloads.php> .
 
-_:b238  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Stoeckert" ;
+_:b234  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Stoeckert" ;
         <http://xmlns.com/foaf/0.1/mbox>  "stoeckrt@pcbi.upenn.edu" .
 
 <http://purl.obolibrary.org/obo/mo.owl>
@@ -7062,30 +7134,30 @@ _:b238  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Stoeckert" ;
         <http://purl.org/dc/elements/1.1/description>  "Neuronal cell types" ;
         <http://purl.org/dc/elements/1.1/title>  "NIF Cell" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b239 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b235 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://neuinfo.org/> .
 
-_:b239  <http://www.w3.org/2000/01/rdf-schema#label>  "Fahim Imam" ;
+_:b235  <http://www.w3.org/2000/01/rdf-schema#label>  "Fahim Imam" ;
         <http://xmlns.com/foaf/0.1/mbox>  "smtifahim@gmail.com" .
 
 <http://purl.obolibrary.org/obo/nif_dysfunction>
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/title>  "NIF Dysfunction" ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b240 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b236 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://neuinfo.org/> .
 
-_:b240  <http://www.w3.org/2000/01/rdf-schema#label>  "Fahim Imam" ;
+_:b236  <http://www.w3.org/2000/01/rdf-schema#label>  "Fahim Imam" ;
         <http://xmlns.com/foaf/0.1/mbox>  "smtifahim@gmail.com" .
 
 <http://purl.obolibrary.org/obo/nif_grossanatomy>
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/title>  "NIF Gross Anatomy" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b241 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b237 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://neuinfo.org/> .
 
-_:b241  <http://www.w3.org/2000/01/rdf-schema#label>  "Fahim Imam" ;
+_:b237  <http://www.w3.org/2000/01/rdf-schema#label>  "Fahim Imam" ;
         <http://xmlns.com/foaf/0.1/mbox>  "smtifahim@gmail.com" .
 
 <http://purl.obolibrary.org/obo/nmr>
@@ -7093,12 +7165,12 @@ _:b241  <http://www.w3.org/2000/01/rdf-schema#label>  "Fahim Imam" ;
         <http://purl.org/dc/elements/1.1/description>  "Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation." ;
         <http://purl.org/dc/elements/1.1/title>  "NMR-instrument specific component of metabolomics investigations" ;
         <http://purl.org/dc/terms/1.1/theme>  "investigations" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b242 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b238 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/nmr.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://msi-ontology.sourceforge.net/> ;
         <http://xmlns.com/foaf/0.1/page>  <http://msi-ontology.sourceforge.net/ontology/NMR.owlDocument.doc> .
 
-_:b242  <http://www.w3.org/2000/01/rdf-schema#label>  "Schober Daniel" ;
+_:b238  <http://www.w3.org/2000/01/rdf-schema#label>  "Schober Daniel" ;
         <http://xmlns.com/foaf/0.1/mbox>  "schober@imbi.uni-freiburg.de" .
 
 <http://purl.obolibrary.org/obo/nmr.owl>
@@ -7108,10 +7180,10 @@ _:b242  <http://www.w3.org/2000/01/rdf-schema#label>  "Schober Daniel" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/title>  "OBO relationship types (legacy)" ;
         <http://purl.org/dc/terms/1.1/theme>  "upper" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b243 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b239 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.obofoundry.org/ro> .
 
-_:b243  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
+_:b239  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://xmlns.com/foaf/0.1/mbox>  "cjmungall@lbl.gov" .
 
 <http://purl.obolibrary.org/obo/ogi>
@@ -7120,11 +7192,11 @@ _:b243  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://purl.org/dc/elements/1.1/title>  "Ontology for genetic interval" ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://code.google.com/p/ontology-for-genetic-interval/issues/list" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b244 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b240 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ogi.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://code.google.com/p/ontology-for-genetic-interval/> .
 
-_:b244  <http://www.w3.org/2000/01/rdf-schema#label>  "Asiyah Yu Lin" ;
+_:b240  <http://www.w3.org/2000/01/rdf-schema#label>  "Asiyah Yu Lin" ;
         <http://xmlns.com/foaf/0.1/mbox>  "linikujp@gmail.com" .
 
 <http://purl.obolibrary.org/obo/ogi.owl>
@@ -7141,10 +7213,10 @@ _:b104  <http://www.w3.org/2000/01/rdf-schema#label>  "Mathias Brochhausen" ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_33090> ;
         <http://purl.org/dc/elements/1.1/title>  "Plant Anatomy Ontology" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b245 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b241 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.plantontology.org> .
 
-_:b245  <http://www.w3.org/2000/01/rdf-schema#label>  "Pankaj Jaiswal" ;
+_:b241  <http://www.w3.org/2000/01/rdf-schema#label>  "Pankaj Jaiswal" ;
         <http://xmlns.com/foaf/0.1/mbox>  "jaiswalp@science.oregonstate.edu" .
 
 <http://purl.obolibrary.org/obo/pd_st>
@@ -7152,13 +7224,13 @@ _:b245  <http://www.w3.org/2000/01/rdf-schema#label>  "Pankaj Jaiswal" ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_6358> ;
         <http://purl.org/dc/elements/1.1/title>  "Platynereis stage ontology" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b246 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b242 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://4dx.embl.de/platy> .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_6358>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Platynereis" .
 
-_:b246  <http://www.w3.org/2000/01/rdf-schema#label>  "Thorsten Henrich" ;
+_:b242  <http://www.w3.org/2000/01/rdf-schema#label>  "Thorsten Henrich" ;
         <http://xmlns.com/foaf/0.1/mbox>  "henrich@embl.de" .
 
 <http://purl.obolibrary.org/obo/pgdso>
@@ -7166,30 +7238,30 @@ _:b246  <http://www.w3.org/2000/01/rdf-schema#label>  "Thorsten Henrich" ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_33090> ;
         <http://purl.org/dc/elements/1.1/title>  "Plant Growth and Development Stage" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b247 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b243 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.plantontology.org> .
 
-_:b247  <http://www.w3.org/2000/01/rdf-schema#label>  "Plant Ontology Administrators" ;
+_:b243  <http://www.w3.org/2000/01/rdf-schema#label>  "Plant Ontology Administrators" ;
         <http://xmlns.com/foaf/0.1/mbox>  "po-discuss@plantontology.org" .
 
 <http://purl.obolibrary.org/obo/plo>
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/title>  "Plasmodium life cycle" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b248 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b244 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.sanger.ac.uk/Users/mb4/PLO/> .
 
-_:b248  <http://www.w3.org/2000/01/rdf-schema#label>  "Matt Berriman" ;
+_:b244  <http://www.w3.org/2000/01/rdf-schema#label>  "Matt Berriman" ;
         <http://xmlns.com/foaf/0.1/mbox>  "mb4@sanger.ac.uk" .
 
 <http://purl.obolibrary.org/obo/propreo>
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
         <http://purl.org/dc/elements/1.1/title>  "Proteomics data and process provenance" ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b249 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b245 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://lsdis.cs.uga.edu/projects/glycomics/propreo/> .
 
-_:b249  <http://www.w3.org/2000/01/rdf-schema#label>  "Satya S. Sahoo" ;
+_:b245  <http://www.w3.org/2000/01/rdf-schema#label>  "Satya S. Sahoo" ;
         <http://xmlns.com/foaf/0.1/mbox>  "satya30@uga.edu" .
 
 <http://purl.obolibrary.org/obo/resid>
@@ -7197,10 +7269,10 @@ _:b249  <http://www.w3.org/2000/01/rdf-schema#label>  "Satya S. Sahoo" ;
         <http://purl.org/dc/elements/1.1/description>  "For the description of covalent bonds in proteins." ;
         <http://purl.org/dc/elements/1.1/title>  "Protein covalent bond" ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b250 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b246 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.ebi.ac.uk/RESID/> .
 
-_:b250  <http://www.w3.org/2000/01/rdf-schema#label>  "John Garavelli" ;
+_:b246  <http://www.w3.org/2000/01/rdf-schema#label>  "John Garavelli" ;
         <http://xmlns.com/foaf/0.1/mbox>  "john.garavelli@ebi.ac.uk" .
 
 <http://purl.obolibrary.org/obo/sao>
@@ -7208,10 +7280,10 @@ _:b250  <http://www.w3.org/2000/01/rdf-schema#label>  "John Garavelli" ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
         <http://purl.org/dc/elements/1.1/title>  "Subcellular anatomy ontology" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b251 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b247 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://ccdb.ucsd.edu/CCDBWebSite/sao.html> .
 
-_:b251  <http://www.w3.org/2000/01/rdf-schema#label>  "Stephen Larson" ;
+_:b247  <http://www.w3.org/2000/01/rdf-schema#label>  "Stephen Larson" ;
         <http://xmlns.com/foaf/0.1/mbox>  "slarson@ncmir.ucsd.edu" .
 
 <http://purl.obolibrary.org/obo/sep>
@@ -7219,13 +7291,10 @@ _:b251  <http://www.w3.org/2000/01/rdf-schema#label>  "Stephen Larson" ;
         <http://purl.org/dc/elements/1.1/description>  "A structured controlled vocabulary for the annotation of sample processing and separation techniques in scientific experiments." ;
         <http://purl.org/dc/elements/1.1/title>  "Sample processing and separation techniques" ;
         <http://purl.org/dc/terms/1.1/theme>  "investigations" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b252 ;
+        <http://usefulinc.com/ns/doap#mailing-list>  "psidev-gps-dev@lists.sourceforge.net" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/sep.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://psidev.info/index.php?q=node/312> ;
         <http://xmlns.com/foaf/0.1/page>  <http://psidev.info/index.php?q=node/312> .
-
-_:b252  <http://www.w3.org/2000/01/rdf-schema#label>  "SEP developers via the PSI and MSI mailing lists" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "psidev-gps-dev@lists.sourceforge.net" .
 
 <http://purl.obolibrary.org/obo/sep.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/sep.owl" .
@@ -7235,10 +7304,10 @@ _:b252  <http://www.w3.org/2000/01/rdf-schema#label>  "SEP developers via the PS
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
         <http://purl.org/dc/elements/1.1/title>  "Suggested Ontology for Pharmacogenomics" ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b253 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b248 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.loria.fr/~coulet/sopharm2.0_description.php> .
 
-_:b253  <http://www.w3.org/2000/01/rdf-schema#label>  "Adrien Coulet" ;
+_:b248  <http://www.w3.org/2000/01/rdf-schema#label>  "Adrien Coulet" ;
         <http://xmlns.com/foaf/0.1/mbox>  "Adrien.Coulet@loria.fr" .
 
 <http://purl.obolibrary.org/obo/tahe>
@@ -7246,9 +7315,9 @@ _:b253  <http://www.w3.org/2000/01/rdf-schema#label>  "Adrien Coulet" ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
         <http://purl.org/dc/elements/1.1/title>  "Terminology of Anatomy of Human Embryology" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b254 .
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b249 .
 
-_:b254  <http://www.w3.org/2000/01/rdf-schema#label>  "Pierre Sprumont" ;
+_:b249  <http://www.w3.org/2000/01/rdf-schema#label>  "Pierre Sprumont" ;
         <http://xmlns.com/foaf/0.1/mbox>  "pierre.sprumont@unifr.ch" .
 
 <http://purl.obolibrary.org/obo/tahh>
@@ -7256,9 +7325,9 @@ _:b254  <http://www.w3.org/2000/01/rdf-schema#label>  "Pierre Sprumont" ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
         <http://purl.org/dc/elements/1.1/title>  "Terminology of Anatomy of Human Histology" ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b255 .
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b250 .
 
-_:b255  <http://www.w3.org/2000/01/rdf-schema#label>  "Pierre Sprumont" ;
+_:b250  <http://www.w3.org/2000/01/rdf-schema#label>  "Pierre Sprumont" ;
         <http://xmlns.com/foaf/0.1/mbox>  "pierre.sprumont@unifr.ch" .
 
 <http://purl.obolibrary.org/obo/tao>
@@ -7269,14 +7338,14 @@ _:b255  <http://www.w3.org/2000/01/rdf-schema#label>  "Pierre Sprumont" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/publicdomain/zero/1.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/20547776> ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b256 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b251 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/tao.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://wiki.phenoscape.org/wiki/Teleost_Anatomy_Ontology> .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/20547776>
         <http://purl.org/dc/elements/1.1/title>  "The teleost anatomy ontology: anatomical representation for the genomics age" .
 
-_:b256  <http://www.w3.org/2000/01/rdf-schema#label>  "Wasila Dahdul" ;
+_:b251  <http://www.w3.org/2000/01/rdf-schema#label>  "Wasila Dahdul" ;
         <http://xmlns.com/foaf/0.1/mbox>  "wasila.dahdul@usd.edu" .
 
 <http://purl.obolibrary.org/obo/tao.owl>
@@ -7297,7 +7366,7 @@ _:b256  <http://www.w3.org/2000/01/rdf-schema#label>  "Wasila Dahdul" ;
         <http://purl.org/dc/elements/1.1/description>  "Vertebrate skeletal anatomy ontology." ;
         <http://purl.org/dc/elements/1.1/title>  "Vertebrate Skeletal Anatomy Ontology-" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b257 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b252 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/vsao.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://www.nescent.org/phenoscape/Main_Page> ;
         <http://xmlns.com/foaf/0.1/page>  <https://www.phenoscape.org/wiki/Skeletal_Anatomy_Jamboree> .
@@ -7305,7 +7374,7 @@ _:b256  <http://www.w3.org/2000/01/rdf-schema#label>  "Wasila Dahdul" ;
 <http://purl.obolibrary.org/obo/NCBITaxon_7742>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Vertebrata" .
 
-_:b257  <http://www.w3.org/2000/01/rdf-schema#label>  "Wasila Dahdul" ;
+_:b252  <http://www.w3.org/2000/01/rdf-schema#label>  "Wasila Dahdul" ;
         <http://xmlns.com/foaf/0.1/mbox>  "wasila.dahdul@usd.edu" .
 
 <http://purl.obolibrary.org/obo/vsao.owl>
@@ -7316,13 +7385,13 @@ _:b257  <http://www.w3.org/2000/01/rdf-schema#label>  "Wasila Dahdul" ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_4932> ;
         <http://purl.org/dc/elements/1.1/title>  "Yeast phenotypes" ;
         <http://purl.org/dc/terms/1.1/theme>  "phenotype" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b258 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b253 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.yeastgenome.org/> .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_4932>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Saccharomyces cerevisiae" .
 
-_:b258  <http://www.w3.org/2000/01/rdf-schema#label>  "Mike Cherry" ;
+_:b253  <http://www.w3.org/2000/01/rdf-schema#label>  "Mike Cherry" ;
         <http://xmlns.com/foaf/0.1/mbox>  "cherry@genome.stanford.edu" .
 
 <http://purl.obolibrary.org/obo/zea>
@@ -7330,11 +7399,11 @@ _:b258  <http://www.w3.org/2000/01/rdf-schema#label>  "Mike Cherry" ;
         <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_4575> ;
         <http://purl.org/dc/elements/1.1/title>  "Maize gross anatomy" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b259 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b254 ;
         <http://xmlns.com/foaf/0.1/homepage>  <http://www.maizemap.org/> .
 
 <http://purl.obolibrary.org/obo/NCBITaxon_4575>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Zea" .
 
-_:b259  <http://www.w3.org/2000/01/rdf-schema#label>  "Leszek Vincent" ;
+_:b254  <http://www.w3.org/2000/01/rdf-schema#label>  "Leszek Vincent" ;
         <http://xmlns.com/foaf/0.1/mbox>  "Leszek@missouri.edu" .
