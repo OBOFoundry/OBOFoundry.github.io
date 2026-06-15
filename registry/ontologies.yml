@@ -5840,6 +5840,107 @@ ontologies:
       url: http://purl.obolibrary.org/obo/CL_0001201
     user: http://www.obofoundry.org/ontology/cl.html
 - activity_status: active
+  browsers:
+  - label: OLS
+    title: Ontology Lookup Service Browser
+    url: https://www.ebi.ac.uk/ols4/ontologies/prefer
+  contact:
+    email: txellmgsol@gmail.com
+    github: txellext
+    label: Txell Amigó
+    orcid: 0009-0009-0018-4253
+  description: PREFER is an ontology designed to integrate high-throughput bioprocess
+    data, covering operational, environmental and process parameters across different
+    scales of a precision fermentation process, to accelerate the development and
+    scaling of biosustainable production processes.
+  domain: investigations
+  homepage: https://github.com/Multiomics-Analytics-Group/prefer_ontology
+  id: prefer
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/prefer.owl
+  preferredPrefix: PREFER
+  products:
+  - description: Complete ontology, plus inter-ontology axioms, and imports modules
+    format: owl-rdf/xml
+    id: prefer.owl
+    is_canonical: true
+    ontology_purl: http://purl.obolibrary.org/obo/prefer.owl
+    title: Main PREFER OWL edition
+    uses:
+    - iao
+    - cl
+    - omo
+    - ro
+    - chebi
+    - pat
+    - go
+    - obi
+    - uberon
+    - cob
+    - ncbitaxon
+  - derived_from: prefer.owl
+    description: Complete ontology, plus inter-ontology axioms, and imports modules
+      merged in
+    format: obo
+    id: prefer.obo
+    ontology_purl: http://purl.obolibrary.org/obo/prefer.obo
+    title: prefer obo format edition
+  - derived_from: prefer.owl
+    description: Complete ontology, plus inter-ontology axioms, and imports modules
+      merged in
+    format: json
+    id: prefer.json
+    ontology_purl: http://purl.obolibrary.org/obo/prefer.json
+    title: PREFER OBOGraph-JSON format edition
+  - description: Basic version, no inter-ontology axioms
+    format: owl-rdf/xml
+    id: prefer/prefer-basic.owl
+    ontology_purl: http://purl.obolibrary.org/obo/prefer/prefer-basic.owl
+    title: Basic prefer
+  - description: Basic version, no inter-ontology axioms
+    format: obo
+    id: prefer/prefer-basic.obo
+    ontology_purl: http://purl.obolibrary.org/obo/prefer/prefer-basic.obo
+    title: Basic PREFER (OBO version)
+  - description: Basic version, no inter-ontology axioms
+    format: json
+    id: prefer/prefer-basic.json
+    ontology_purl: http://purl.obolibrary.org/obo/prefer/prefer-basic.json
+    title: Basic PREFER (OBOGraph-JSON version)
+  - description: complete PREFER but with no imports or external axioms
+    format: owl-rdf/xml
+    id: prefer/prefer-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/prefer/prefer-base.owl
+    title: PREFER base module
+  - description: complete PREFER but with no imports or external axioms
+    format: obo
+    id: prefer/prefer-base.obo
+    ontology_purl: http://purl.obolibrary.org/obo/prefer/prefer-base.obo
+    title: PREFER base module (OBO version)
+  - description: complete PREFER but with no imports or external axioms
+    format: json
+    id: prefer/prefer-base.json
+    ontology_purl: http://purl.obolibrary.org/obo/prefer/prefer-base.json
+    title: PREFER base module (OBOGraph-JSON version)
+  publications:
+  - id: https://arxiv.org/abs/2602.16755
+    title: 'PREFER: An Ontology for the PREcision FERmentation Community'
+  repository: https://github.com/Multiomics-Analytics-Group/prefer_ontology/
+  title: Precision Fermentation Ontology
+  tracker: https://github.com/Multiomics-Analytics-Group/prefer_ontology/issues
+  usages:
+  - description: PREFER is used for the integration of data for biofoundry precision
+      fermentation data.
+    publications:
+    - id: https://arxiv.org/abs/2602.16755
+      title: 'PREFER: An Ontology for the PREcision FERmentation Community'
+    type: annotation
+    user: http://bright.dtu.dk/
+- activity_status: active
   contact:
     email: wes_schafer@merck.com
     github: schaferw
@@ -8557,14 +8658,12 @@ ontologies:
     label: Amphibia
   title: Amphibian gross anatomy
 - activity_status: inactive
-  contact:
-    email: adw_geeks@umich.edu
-    label: Animal Diversity Web technical staff
   domain: organisms
   homepage: http://www.animaldiversity.org
   id: adw
   is_obsolete: true
   layout: ontology_detail
+  mailing_list: adw_geeks@umich.edu
   title: Animal natural history and life history
 - activity_status: inactive
   contact:
@@ -8853,13 +8952,11 @@ ontologies:
   - resources
   title: eagle-i resource ontology
 - activity_status: inactive
-  contact:
-    email: evoc@sanbi.ac.za
-    label: eVOC mailing list
   domain: anatomy and development
   id: ev
   is_obsolete: true
   layout: ontology_detail
+  mailing_list: evoc@sanbi.ac.za
   title: eVOC (Expressed Sequence Annotation for Humans)
 - activity_status: inactive
   contact:
@@ -8898,14 +8995,12 @@ ontologies:
   title: Influenza Ontology
   tracker: http://purl.obolibrary.org/obo/flu/tracker
 - activity_status: inactive
-  contact:
-    email: po-discuss@plantontology.org
-    label: Plant Ontology Administrators
   domain: anatomy and development
   homepage: http://www.gramene.org/plant_ontology/
   id: gro
   is_obsolete: true
   layout: ontology_detail
+  mailing_list: po-discuss@plantontology.org
   title: Cereal Plant Gross Anatomy
 - activity_status: inactive
   contact:
@@ -8926,24 +9021,20 @@ ontologies:
   layout: ontology_detail
   title: Event (INOH pathway ontology)
 - activity_status: inactive
-  contact:
-    email: curator@inoh.org
-    label: INOH curators
   domain: chemistry and biochemistry
   homepage: http://www.inoh.org
   id: imr
   is_obsolete: true
   layout: ontology_detail
+  mailing_list: curator@inoh.org
   title: Molecule role (INOH Protein name/family name ontology)
 - activity_status: inactive
-  contact:
-    email: interhelp@ebi.ac.uk
-    label: InterPro Help
   domain: chemistry and biochemistry
   homepage: http://www.ebi.ac.uk/interpro/index.html
   id: ipr
   is_obsolete: true
   layout: ontology_detail
+  mailing_list: interhelp@ebi.ac.uk
   title: Protein Domains
 - activity_status: inactive
   contact:
@@ -9244,9 +9335,6 @@ ontologies:
     label: Homo sapiens
   title: Subcellular anatomy ontology
 - activity_status: inactive
-  contact:
-    email: psidev-gps-dev@lists.sourceforge.net
-    label: SEP developers via the PSI and MSI mailing lists
   description: A structured controlled vocabulary for the annotation of sample processing
     and separation techniques in scientific experiments.
   domain: investigations
@@ -9254,6 +9342,7 @@ ontologies:
   id: sep
   is_obsolete: true
   layout: ontology_detail
+  mailing_list: psidev-gps-dev@lists.sourceforge.net
   page: http://psidev.info/index.php?q=node/312
   products:
   - id: sep.owl
