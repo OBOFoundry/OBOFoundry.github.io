@@ -33,10 +33,10 @@ tracker: https://github.com/OGMS/ogms/issues
 usages:
 - description: Multiple ontologies using OGMS terms, such as the Ontology for Biomedical Investigations (OBI), Relation Ontology (RO), Infectious Disease Ontology (IDO), Representation of Social Entities (OMRSE), and Mental Disease Ontology (MFOMD). OGMS has been extended to create various OBO ontologies, including the IDO and its extensions, as well as the OMRSE, MFOMD, Oral Health and Disease ontology (OHD), and Cardiovascular Disease Ontology (CVDO).
   examples:
-    - description: List of ontologies using at least one OGMS term
-      url: http://dashboard.obofoundry.org/dashboard/ogms/dashboard.html
-    - description: List of ontologies using the term "disease"
-      url: https://ontobee.org/ontology/OGMS?iri=http://purl.obolibrary.org/obo/OGMS_0000031
+  - description: List of ontologies using at least one OGMS term
+    url: http://dashboard.obofoundry.org/dashboard/ogms/dashboard.html
+  - description: List of ontologies using the term "disease"
+    url: https://ontobee.org/ontology/OGMS?iri=http://purl.obolibrary.org/obo/OGMS_0000031
   user: (multiple)
 activity_status: active
 ---
