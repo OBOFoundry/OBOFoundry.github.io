@@ -6,6 +6,7 @@ contact:
   email: mejino@u.washington.edu
   label: Jose Leonardo (Onard) Mejino
   orcid: 0000-0003-2105-2283
+  github: Onard
 description: This is currently a slimmed down version of FMA
 domain: anatomy and development
 homepage: http://si.washington.edu/projects/fma
