@@ -4,6 +4,7 @@ id: tgma
 title: Mosquito gross anatomy ontology
 contact:
   email: topalis@imbb.forth.gr
+  github: topalis
   label: Pantelis Topalis
   orcid: 0000-0002-1635-4810
 description: A structured controlled vocabulary of the anatomy of mosquitoes.
