@@ -1,0 +1,34 @@
+name: Activity Status Change Review
+
+on:
+  pull_request:
+    branches: [ master ]
+    paths: [ 'ontology/*.md' ]
+
+jobs:
+  check-activity-status:
+    runs-on: ubuntu-latest
+    if: github.triggering_actor != 'github-actions[bot]'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+
+      - name: Flag activity_status changes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BASE=${{ github.event.pull_request.base.sha }}
+          HEAD=${{ github.event.pull_request.head.sha }}
+
+          git diff "$BASE" "$HEAD" -- 'ontology/*.md' | grep -qE '^\+activity_status:|^-activity_status:' || exit 0
+
+          gh api --method POST \
+            "repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/reviews" \
+            -f event="REQUEST_CHANGES" \
+            -f body="### Activity Status Change Detected
+
+          This PR modifies the \`activity_status\` of one or more ontologies. Please ensure that the [OBO Foundry Standard Operating Procedures](https://obofoundry.org/docs/SOP.html) have been followed for any rules governing activity status changes.
+
+          Once verified, you can dismiss this review by navigating to the **Reviews** section under *\"Changes requested\"* in the QC block on the PR main page."
