@@ -4,9 +4,9 @@ id: omiabis
 title: Ontologized MIABIS
 contact:
   email: mbrochhausen@gmail.com
+  github: mbrochhausen
   label: Mathias Brochhausen
   orcid: 0000-0003-1834-3856
-  github: mbrochhausen
 description: An ontological version of MIABIS (Minimum Information About BIobank data Sharing)
 domain: health
 homepage: https://github.com/OMIABIS/omiabis-dev

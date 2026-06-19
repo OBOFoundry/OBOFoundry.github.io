@@ -4,9 +4,9 @@ id: mirnao
 title: microRNA Ontology
 contact:
   email: topalis@imbb.forth.gr
+  github: topalis
   label: Pantelis Topalis
   orcid: 0000-0002-1635-4810
-  github: topalis
 description: An application ontology for use with miRNA databases.
 domain: chemistry and biochemistry
 homepage: http://code.google.com/p/mirna-ontology/

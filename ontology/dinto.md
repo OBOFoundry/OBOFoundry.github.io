@@ -4,9 +4,9 @@ id: dinto
 title: The Drug-Drug Interactions Ontology
 contact:
   email: maria.herrero@kcl.ac.uk
+  github: mariaheza
   label: Maria Herrero-Zazo
   orcid: 0000-0001-7793-3296
-  github: mariaheza
 description: A formal represention for drug-drug interactions knowledge.
 domain: health
 homepage: http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto
