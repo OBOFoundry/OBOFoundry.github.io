@@ -6,6 +6,7 @@ contact:
   email: slarson@ncmir.ucsd.edu
   label: Stephen Larson
   orcid: 0000-0001-5397-6208
+  github: slarson
 domain: anatomy and development
 homepage: http://ccdb.ucsd.edu/CCDBWebSite/sao.html
 is_obsolete: true

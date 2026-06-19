@@ -6,6 +6,7 @@ contact:
   email: Adrien.Coulet@loria.fr
   label: Adrien Coulet
   orcid: 0000-0002-1466-062X
+  github: coulet
 domain: chemistry and biochemistry
 homepage: http://www.loria.fr/~coulet/sopharm2.0_description.php
 is_obsolete: true

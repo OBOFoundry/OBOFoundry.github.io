@@ -6,6 +6,7 @@ contact:
   email: schober@imbi.uni-freiburg.de
   label: Daniel Schober
   orcid: 0000-0001-8014-6648
+  github: DSchober
 description: Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation.
 domain: investigations
 homepage: http://msi-ontology.sourceforge.net/
