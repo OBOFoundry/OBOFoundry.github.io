@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "formatter": {
+    "indentStyle": "space"
+  },
+  "files": {
+    "includes": ["assets/**/*/*.js", "!assets/**/*/underscore.min.js"]
+  }
+}
