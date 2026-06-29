@@ -45,9 +45,9 @@ products:
 publications:
 - id: https://www.ncbi.nlm.nih.gov/pubmed/32819435
   title: Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology
-- id: https://pubmed.ncbi.nlm.nih.gov/pubmed/41992354
+- id: https://www.ncbi.nlm.nih.gov/pubmed/41992354
   title: Representing dental restoration materials in the oral health and disease ontology
-- id: https://pubmed.ncbi.nlm.nih.gov/pubmed/42032627
+- id: https://www.ncbi.nlm.nih.gov/pubmed/42032627
   title: Representing dental caries and dysbiosis within the oral microbiome in the Oral Health and Disease Ontology
 repository: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
 tracker: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issues
