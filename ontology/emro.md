@@ -15,30 +15,30 @@ license:
   url: https://creativecommons.org/licenses/by/4.0/
 preferredPrefix: EMRO
 products:
-  - id: emro.owl
-    title: Emotion Response Ontology
-    description: reasoned version of EMRO released in rdf/xml format
-  - id: emro.obo
-    title: Emotion Response Ontology
-    description: reasoned version of EMRO released in OBO format
-  - id: emro-non-classified.owl
-    title: Emotion Response Ontology
-    description: non-reasoned version of EMRO released in rdf/xml format
-  - id: emro-non-classified.obo
-    title: Emotion Response Ontology
-    description: non-reasoned version of EMRO released in OBO format
-  - id: emro-base.owl
-    title: Emotion Response Ontology
-    description: base module of EMRO released in rdf/xml format
-  - id: emro-base.obo
-    title: Emotion Response Ontology
-    description: base module of EMRO released in OBO format
-  - id: emro-simple.owl
-    title: Emotion Response Ontology
-    description: simplified version of EMRO released in rdf/xml format
-  - id: emro-simple.obo
-    title: Emotion Response Ontology
-    description: simplified version of EMRO released in OBO format
+- id: emro.owl
+  title: Emotion Response Ontology
+  description: reasoned version of EMRO released in rdf/xml format
+- id: emro.obo
+  title: Emotion Response Ontology
+  description: reasoned version of EMRO released in OBO format
+- id: emro-non-classified.owl
+  title: Emotion Response Ontology
+  description: non-reasoned version of EMRO released in rdf/xml format
+- id: emro-non-classified.obo
+  title: Emotion Response Ontology
+  description: non-reasoned version of EMRO released in OBO format
+- id: emro-base.owl
+  title: Emotion Response Ontology
+  description: base module of EMRO released in rdf/xml format
+- id: emro-base.obo
+  title: Emotion Response Ontology
+  description: base module of EMRO released in OBO format
+- id: emro-simple.owl
+  title: Emotion Response Ontology
+  description: simplified version of EMRO released in rdf/xml format
+- id: emro-simple.obo
+  title: Emotion Response Ontology
+  description: simplified version of EMRO released in OBO format
 repository: https://github.com/uflcod/emotion-response-ontology
 tracker: https://github.com/uflcod/emotion-response-ontology/issues
 activity_status: active
