@@ -7,7 +7,7 @@ contact:
   github: wdduncan
   label: Bill Duncan
   orcid: 0000-0001-9625-1899
-description: The Emotion Response Ontology represents emotions as behavioral responses to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).
+description: The Emotion Response Ontology represents emotions as behavioral responses.
 domain: health
 homepage: https://github.com/uflcod/emotion-response-ontology
 license:
