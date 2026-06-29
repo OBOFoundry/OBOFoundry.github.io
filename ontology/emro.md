@@ -36,8 +36,9 @@ products:
   - id: emro-simple.obo
     title: Emotion Response Ontology
     description: simplified version of EMRO released in OBO format
+repository: https://github.com/uflcod/emotion-response-ontology
 tracker: https://github.com/uflcod/emotion-response-ontology/issues
-license:
+license: 
   url: https://creativecommons.org/licenses/by/4.0/
   label: CC BY 4.0
 activity_status: active
