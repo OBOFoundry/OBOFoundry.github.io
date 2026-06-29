@@ -16,28 +16,28 @@ license:
 preferredPrefix: EMRO
 products:
 - id: emro.owl
-  title: Emotion Response Ontology
+  title: Emotion Response Ontology (OWL edition)
   description: reasoned version of EMRO released in rdf/xml format
 - id: emro.obo
-  title: Emotion Response Ontology
+  title: Emotion Response Ontology (OBO edition)
   description: reasoned version of EMRO released in OBO format
 - id: emro-non-classified.owl
-  title: Emotion Response Ontology
+  title: Emotion Response Ontology, non-classified (OWL edition)
   description: non-reasoned version of EMRO released in rdf/xml format
 - id: emro-non-classified.obo
-  title: Emotion Response Ontology
+  title: Emotion Response Ontology, non-classified (OBO edition)
   description: non-reasoned version of EMRO released in OBO format
 - id: emro-base.owl
-  title: Emotion Response Ontology
+  title: Emotion Response Ontology, base module (OWL edition)
   description: base module of EMRO released in rdf/xml format
 - id: emro-base.obo
-  title: Emotion Response Ontology
+  title: Emotion Response Ontology, base module (OBO edition)
   description: base module of EMRO released in OBO format
 - id: emro-simple.owl
-  title: Emotion Response Ontology
+  title: Emotion Response Ontology, simple (OWL edition)
   description: simplified version of EMRO released in rdf/xml format
 - id: emro-simple.obo
-  title: Emotion Response Ontology
+  title: Emotion Response Ontology, simple (OBO edition)
   description: simplified version of EMRO released in OBO format
 repository: https://github.com/uflcod/emotion-response-ontology
 tracker: https://github.com/uflcod/emotion-response-ontology/issues
