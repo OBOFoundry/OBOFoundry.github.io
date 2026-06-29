@@ -10,6 +10,9 @@ contact:
 description: The Emotion Response Ontology represents emotions as behavioral responses to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).
 domain: health
 homepage: https://github.com/uflcod/emotion-response-ontology
+license:
+  label: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
 preferredPrefix: EMRO
 products:
   - id: emro.owl
@@ -38,9 +41,6 @@ products:
     description: simplified version of EMRO released in OBO format
 repository: https://github.com/uflcod/emotion-response-ontology
 tracker: https://github.com/uflcod/emotion-response-ontology/issues
-license:
-  url: https://creativecommons.org/licenses/by/4.0/
-  label: CC BY 4.0
 activity_status: active
 ---
 
