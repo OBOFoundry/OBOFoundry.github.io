@@ -24,11 +24,11 @@ taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
 tracker: https://github.com/flora-phenotype-ontology/flopoontology/issues
-activity_status: active
 usages:
-- user: https://www.kaust.edu.sa
-  description: FLOPO integrates qualitative plant trait data extracted from digitized Floras across species and higher taxa of flowering plants.
+- description: FLOPO integrates qualitative plant trait data extracted from digitized Floras across species and higher taxa of flowering plants.
   examples:
-  - url: http://aber-owl.net/ontology/FLOPO
-    description: Browsing FLOPO and querying it with automated reasoning via the AberOWL ontology repository.
+  - description: Browsing FLOPO and querying it with automated reasoning via the AberOWL ontology repository.
+    url: http://aber-owl.net/ontology/FLOPO
+  user: https://www.kaust.edu.sa
+activity_status: active
 ---
