@@ -8,8 +8,7 @@
  *   Docs: https://w3c.github.io/aria-practices/examples/table/sortable-table.html
  */
 
-
-'use strict';
+"use strict";
 class SortableTable {
   /**
    * initialize sortable table. Add button in table header to use for initializing sortable column
@@ -17,10 +16,10 @@ class SortableTable {
    */
   constructor(tableNode) {
     this.tableNode = tableNode;
-    this.selector = '.sort-button'
+    this.selector = ".sort-button";
 
     //get all table headers
-    this.columnHeaders = tableNode.querySelectorAll('thead th');
+    this.columnHeaders = tableNode.querySelectorAll("thead th");
 
     this.sortColumns = [];
 
@@ -31,23 +30,23 @@ class SortableTable {
       if (buttonNode) {
         this.sortColumns.push(i);
         //set custom attribute for tracking sortable columns column-index.
-        buttonNode.setAttribute('data-column-index', i);
+        buttonNode.setAttribute("data-column-index", i);
         // handle button click event on table column
-        buttonNode.addEventListener('click', this.handleClick.bind(this));
+        buttonNode.addEventListener("click", this.handleClick.bind(this));
       }
     }
 
     this.optionCheckbox = document.querySelector(
-      'input[type="checkbox"][value="show-unsorted-icon"]'
+      'input[type="checkbox"][value="show-unsorted-icon"]',
     );
 
     if (this.optionCheckbox) {
       this.optionCheckbox.addEventListener(
-        'change',
-        this.handleOptionChange.bind(this)
+        "change",
+        this.handleOptionChange.bind(this),
       );
       if (this.optionCheckbox.checked) {
-        this.tableNode.classList.add('show-unsorted-icon');
+        this.tableNode.classList.add("show-unsorted-icon");
       }
     }
   }
@@ -57,7 +56,7 @@ class SortableTable {
    * @param {string|number} columnIndex
    */
   setColumnHeaderSort(columnIndex, chevron) {
-    if (typeof columnIndex === 'string') {
+    if (typeof columnIndex === "string") {
       columnIndex = parseInt(columnIndex);
     }
 
@@ -66,33 +65,33 @@ class SortableTable {
       var buttonNode = ch.querySelector(this.selector);
       if (i === columnIndex) {
         //get the sort order from aria-sort attribute
-        var value = ch.getAttribute('aria-sort');
-        if (value === 'descending') {
+        var value = ch.getAttribute("aria-sort");
+        if (value === "descending") {
           //change sort order parameter
-          ch.setAttribute('aria-sort', 'ascending');
+          ch.setAttribute("aria-sort", "ascending");
           //sort column
           this.sortColumn(
             columnIndex,
-            'ascending',
-            ch.classList.contains('num')
+            "ascending",
+            ch.classList.contains("num"),
           );
           // Point chevron in appropriate direction
-          chevron.setAttribute('class', 'bi-chevron-up')
+          chevron.setAttribute("class", "bi-chevron-up");
         } else {
           //change sort order parameter
-          ch.setAttribute('aria-sort', 'descending');
+          ch.setAttribute("aria-sort", "descending");
           //sort column
           this.sortColumn(
             columnIndex,
-            'descending',
-            ch.classList.contains('num')
+            "descending",
+            ch.classList.contains("num"),
           );
           // Point chevron in appropriate direction
-          chevron.setAttribute('class', 'bi-chevron-down')
+          chevron.setAttribute("class", "bi-chevron-down");
         }
       } else {
-        if (ch.hasAttribute('aria-sort') && buttonNode) {
-          ch.removeAttribute('aria-sort');
+        if (ch.hasAttribute("aria-sort") && buttonNode) {
+          ch.removeAttribute("aria-sort");
         }
       }
     }
@@ -106,7 +105,7 @@ class SortableTable {
    */
   sortColumn(columnIndex, sortValue, isNumber) {
     function compareValues(a, b) {
-      if (sortValue === 'ascending') {
+      if (sortValue === "ascending") {
         if (a.value === b.value) {
           return 0;
         } else {
@@ -129,11 +128,11 @@ class SortableTable {
       }
     }
 
-    if (typeof isNumber !== 'boolean') {
+    if (typeof isNumber !== "boolean") {
       isNumber = false;
     }
 
-    var tbodyNode = this.tableNode.querySelector('tbody');
+    var tbodyNode = this.tableNode.querySelector("tbody");
     var rowNodes = [];
     var dataCells = [];
 
@@ -143,7 +142,7 @@ class SortableTable {
     //extract table data cells
     while (rowNode) {
       rowNodes.push(rowNode);
-      var rowCells = rowNode.querySelectorAll('th, td');
+      var rowCells = rowNode.querySelectorAll("th, td");
       var dataCell = rowCells[columnIndex];
 
       var data = {};
@@ -176,8 +175,8 @@ class SortableTable {
     var tgt = event.currentTarget;
     //get the column to sort and pass index t
     this.setColumnHeaderSort(
-      tgt.getAttribute('data-column-index'),
-      tgt.firstElementChild
+      tgt.getAttribute("data-column-index"),
+      tgt.firstElementChild,
     );
   }
 
@@ -185,9 +184,9 @@ class SortableTable {
     var tgt = event.currentTarget;
 
     if (tgt.checked) {
-      this.tableNode.classList.add('show-unsorted-icon');
+      this.tableNode.classList.add("show-unsorted-icon");
     } else {
-      this.tableNode.classList.remove('show-unsorted-icon');
+      this.tableNode.classList.remove("show-unsorted-icon");
     }
   }
 }

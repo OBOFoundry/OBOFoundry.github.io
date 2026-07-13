@@ -3,17 +3,19 @@ name: Code Quality Assurance
 on: [ push, pull_request ]
 
 jobs:
-  lint:
-    name: Lint
+  lint-python:
+    name: Lint Python code
     runs-on: ubuntu-latest
     if: github.triggering_actor != 'github-actions[bot]'
+    permissions:
+      contents: read
     strategy:
       matrix:
         python-version: [ "3.8", "3.10" ]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
@@ -22,3 +24,17 @@ jobs:
           pip install "tox<4.0.0"
       - name: Check code quality with flake8
         run: tox -e flake8
+  lint-js:
+    name: Lint Javascript code
+    runs-on: ubuntu-latest
+    if: github.triggering_actor != 'github-actions[bot]'
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Biome
+        uses: biomejs/setup-biome@v2
+        with:
+          version: latest
+      - name: Run Biome
+        run: biome format .
