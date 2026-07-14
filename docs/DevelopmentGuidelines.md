@@ -10,6 +10,7 @@ title: Ontology Project Management Guidelines
   - Give pros and cons of each mechanism (dn note for above: would 'term migration' be a better way to say 'term deprecation/recreation'?
   - Give examples 
   - Implications (licensing and other considerations)
+  - Note: Regardless of the license used by the originating ontology, adopted terms will be subject to the stipulations of the license used by the adopting ontology.
 
 ### Content
 
