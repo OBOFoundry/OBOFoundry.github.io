@@ -2558,6 +2558,80 @@
         {
             "activity_status": "active",
             "contact": {
+                "email": "wdduncan@gmail.com",
+                "github": "wdduncan",
+                "label": "Bill Duncan",
+                "orcid": "0000-0001-9625-1899"
+            },
+            "description": "The Emotion Response Ontology represents emotions as behavioral responses.",
+            "domain": "health",
+            "homepage": "https://github.com/uflcod/emotion-response-ontology",
+            "id": "emro",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/emro.owl",
+            "preferredPrefix": "EMRO",
+            "products": [
+                {
+                    "description": "reasoned version of EMRO released in rdf/xml format",
+                    "id": "emro.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/emro.owl",
+                    "title": "Emotion Response Ontology (OWL edition)"
+                },
+                {
+                    "description": "reasoned version of EMRO released in OBO format",
+                    "id": "emro.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/emro.obo",
+                    "title": "Emotion Response Ontology (OBO edition)"
+                },
+                {
+                    "description": "non-reasoned version of EMRO released in rdf/xml format",
+                    "id": "emro-non-classified.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/emro-non-classified.owl",
+                    "title": "Emotion Response Ontology, non-classified (OWL edition)"
+                },
+                {
+                    "description": "non-reasoned version of EMRO released in OBO format",
+                    "id": "emro-non-classified.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/emro-non-classified.obo",
+                    "title": "Emotion Response Ontology, non-classified (OBO edition)"
+                },
+                {
+                    "description": "base module of EMRO released in rdf/xml format",
+                    "id": "emro-base.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/emro-base.owl",
+                    "title": "Emotion Response Ontology, base module (OWL edition)"
+                },
+                {
+                    "description": "base module of EMRO released in OBO format",
+                    "id": "emro-base.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/emro-base.obo",
+                    "title": "Emotion Response Ontology, base module (OBO edition)"
+                },
+                {
+                    "description": "simplified version of EMRO released in rdf/xml format",
+                    "id": "emro-simple.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/emro-simple.owl",
+                    "title": "Emotion Response Ontology, simple (OWL edition)"
+                },
+                {
+                    "description": "simplified version of EMRO released in OBO format",
+                    "id": "emro-simple.obo",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/emro-simple.obo",
+                    "title": "Emotion Response Ontology, simple (OBO edition)"
+                }
+            ],
+            "repository": "https://github.com/uflcod/emotion-response-ontology",
+            "title": "Emotion Response Ontology",
+            "tracker": "https://github.com/uflcod/emotion-response-ontology/issues"
+        },
+        {
+            "activity_status": "active",
+            "contact": {
                 "email": "pier.buttigieg@awi.de",
                 "github": "pbuttigieg",
                 "label": "Pier Luigi Buttigieg",
@@ -4453,7 +4527,9 @@
                 {
                     "contact": {
                         "email": "mbrochhausen@gmail.com",
-                        "label": "Mathias Brochhausen"
+                        "github": "mbrochhausen",
+                        "label": "Mathias Brochhausen",
+                        "orcid": "0000-0003-1834-3856"
                     },
                     "description": "An ontology based on a theory of document acts describing what people can do with documents",
                     "id": "iao/d-acts.owl",
@@ -11725,6 +11801,55 @@
         {
             "activity_status": "inactive",
             "contact": {
+                "email": "mejino@u.washington.edu",
+                "github": "Onard",
+                "label": "Jose Leonardo (Onard) Mejino",
+                "orcid": "0000-0003-2105-2283"
+            },
+            "description": "This is currently a slimmed down version of FMA",
+            "domain": "anatomy and development",
+            "homepage": "http://si.washington.edu/projects/fma",
+            "id": "fma",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 3.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/3.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/fma.owl",
+            "page": "http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy",
+            "preferredPrefix": "FMA",
+            "products": [
+                {
+                    "id": "fma.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fma.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/18688289",
+                    "title": "Translating the Foundational Model of Anatomy into OWL"
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/18360535",
+                    "title": "The foundational model of anatomy in OWL: Experience and perspectives"
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/16779026",
+                    "title": "Challenges in converting frame-based ontology into OWL: the Foundational Model of Anatomy case-study"
+                }
+            ],
+            "repository": "https://bitbucket.org/uwsig/fma",
+            "taxon": {
+                "id": "NCBITaxon:9606",
+                "label": "Homo sapiens"
+            },
+            "title": "Foundational Model of Anatomy Ontology (subset)",
+            "tracker": "https://bitbucket.org/uwsig/fma/issues"
+        },
+        {
+            "activity_status": "inactive",
+            "contact": {
                 "email": "druzinsk@uic.edu",
                 "github": "RDruzinsky",
                 "label": "Robert Druzinsky",
@@ -12013,55 +12138,10 @@
         {
             "activity_status": "inactive",
             "contact": {
-                "email": "mejino@u.washington.edu",
-                "label": "Onard Mejino"
-            },
-            "description": "This is currently a slimmed down version of FMA",
-            "domain": "anatomy and development",
-            "homepage": "http://si.washington.edu/projects/fma",
-            "id": "fma",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 3.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/fma.owl",
-            "page": "http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy",
-            "preferredPrefix": "FMA",
-            "products": [
-                {
-                    "id": "fma.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/fma.owl"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/18688289",
-                    "title": "Translating the Foundational Model of Anatomy into OWL"
-                },
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/18360535",
-                    "title": "The foundational model of anatomy in OWL: Experience and perspectives"
-                },
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/16779026",
-                    "title": "Challenges in converting frame-based ontology into OWL: the Foundational Model of Anatomy case-study"
-                }
-            ],
-            "repository": "https://bitbucket.org/uwsig/fma",
-            "taxon": {
-                "id": "NCBITaxon:9606",
-                "label": "Homo sapiens"
-            },
-            "title": "Foundational Model of Anatomy Ontology (subset)",
-            "tracker": "https://bitbucket.org/uwsig/fma/issues"
-        },
-        {
-            "activity_status": "inactive",
-            "contact": {
                 "email": "topalis@imbb.forth.gr",
-                "label": "Pantelis Topalis"
+                "github": "topalis",
+                "label": "Pantelis Topalis",
+                "orcid": "0000-0002-1635-4810"
             },
             "description": "An application ontology to cover all aspects of malaria as well as the intervention attempts to control it.",
             "domain": "health",
@@ -12091,7 +12171,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "louis@imbb.forth.gr",
-                "label": "Christos (Kitsos) Louis"
+                "label": "Christos (Kitsos) Louis",
+                "orcid": "0000-0003-2497-2210"
             },
             "description": "Application ontology for entities related to insecticide resistance in mosquitos",
             "domain": "environment",
@@ -12161,7 +12242,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "dsonensh@odu.edu",
-                "label": "Daniel Sonenshine"
+                "label": "Daniel Sonenshine",
+                "orcid": "0000-0001-9370-918X"
             },
             "description": "The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>",
             "domain": "anatomy and development",
@@ -12195,7 +12277,9 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "topalis@imbb.forth.gr",
-                "label": "Pantelis Topalis"
+                "github": "topalis",
+                "label": "Pantelis Topalis",
+                "orcid": "0000-0002-1635-4810"
             },
             "description": "A structured controlled vocabulary of the anatomy of mosquitoes.",
             "domain": "anatomy and development",
@@ -12481,7 +12565,9 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "maria.herrero@kcl.ac.uk",
-                "label": "Maria Herrero"
+                "github": "mariaheza",
+                "label": "Maria Herrero-Zazo",
+                "orcid": "0000-0001-7793-3296"
             },
             "description": "A formal represention for drug-drug interactions knowledge.",
             "domain": "health",
@@ -12724,7 +12810,9 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "burkesquires@gmail.com",
-                "label": "Burke Squires"
+                "github": "burkesquires",
+                "label": "Burke Squires",
+                "orcid": "0000-0001-9666-6285"
             },
             "domain": "health",
             "homepage": "http://purl.obolibrary.org/obo/flu/",
@@ -12828,7 +12916,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "julie@igbmc.u-strasbg.fr",
-                "label": "Julie Thompson"
+                "label": "Julie Thompson",
+                "orcid": "0000-0003-4893-3478"
             },
             "domain": "chemistry and biochemistry",
             "homepage": "http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html",
@@ -12880,7 +12969,9 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "topalis@imbb.forth.gr",
-                "label": "Pantelis Topalis"
+                "github": "topalis",
+                "label": "Pantelis Topalis",
+                "orcid": "0000-0002-1635-4810"
             },
             "description": "An application ontology for use with miRNA databases.",
             "domain": "chemistry and biochemistry",
@@ -12974,7 +13065,9 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "schober@imbi.uni-freiburg.de",
-                "label": "Schober Daniel"
+                "github": "DSchober",
+                "label": "Daniel Schober",
+                "orcid": "0000-0001-8014-6648"
             },
             "description": "Descriptors relevant to the experimental conditions of the Nuclear Magnetic Resonance (NMR) component in a metabolomics investigation.",
             "domain": "investigations",
@@ -13034,6 +13127,7 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "mbrochhausen@gmail.com",
+                "github": "mbrochhausen",
                 "label": "Mathias Brochhausen",
                 "orcid": "0000-0003-1834-3856"
             },
@@ -13118,7 +13212,9 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "mb4@sanger.ac.uk",
-                "label": "Matt Berriman"
+                "github": "mberriman",
+                "label": "Matt Berriman",
+                "orcid": "0000-0002-9581-0377"
             },
             "domain": "anatomy and development",
             "homepage": "http://www.sanger.ac.uk/Users/mb4/PLO/",
@@ -13131,7 +13227,8 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "satya30@uga.edu",
-                "label": "Satya S. Sahoo"
+                "label": "Satya S. Sahoo",
+                "orcid": "0000-0001-9190-4256"
             },
             "domain": "chemistry and biochemistry",
             "homepage": "http://lsdis.cs.uga.edu/projects/glycomics/propreo/",
@@ -13162,7 +13259,9 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "slarson@ncmir.ucsd.edu",
-                "label": "Stephen Larson"
+                "github": "slarson",
+                "label": "Stephen Larson",
+                "orcid": "0000-0001-5397-6208"
             },
             "domain": "anatomy and development",
             "homepage": "http://ccdb.ucsd.edu/CCDBWebSite/sao.html",
@@ -13201,7 +13300,9 @@
             "activity_status": "inactive",
             "contact": {
                 "email": "Adrien.Coulet@loria.fr",
-                "label": "Adrien Coulet"
+                "github": "coulet",
+                "label": "Adrien Coulet",
+                "orcid": "0000-0002-1466-062X"
             },
             "domain": "chemistry and biochemistry",
             "homepage": "http://www.loria.fr/~coulet/sopharm2.0_description.php",
