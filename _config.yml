@@ -4783,13 +4783,52 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/ohd.owl
   preferredPrefix: OHD
   products:
-  - id: ohd.owl
+  - description: reasoned version of OHD released in rdf/xml format
+    id: ohd.owl
     ontology_purl: http://purl.obolibrary.org/obo/ohd.owl
-    title: Oral Health and Disease Ontology
+    title: Oral Health and Disease Ontology (OWL edition)
+  - description: reasoned version of OHD released in OBO format
+    id: ohd.obo
+    ontology_purl: http://purl.obolibrary.org/obo/ohd.obo
+    title: Oral Health and Disease Ontology (OBO edition)
+  - description: reasoned version of OHD released in json format
+    id: ohd.json
+    ontology_purl: http://purl.obolibrary.org/obo/ohd.json
+    title: Oral Health and Disease Ontology (JSON edition)
+  - description: non-classified version of OHD released in rdf/xml format
+    id: ohd-non-classified.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ohd-non-classified.owl
+    title: Oral Health and Disease Ontology, non-classified (OWL edition)
+  - description: non-classified version of OHD released in OBO format
+    id: ohd-non-classified.obo
+    ontology_purl: http://purl.obolibrary.org/obo/ohd-non-classified.obo
+    title: Oral Health and Disease Ontology, non-classified (OBO edition)
+  - description: non-classified version of OHD released in json format
+    id: ohd-non-classified.json
+    ontology_purl: http://purl.obolibrary.org/obo/ohd-non-classified.json
+    title: Oral Health and Disease Ontology, non-classified (JSON edition)
+  - description: base module for OHD released in rdf/xml format
+    id: ohd-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ohd-base.owl
+    title: Oral Health and Disease Ontology, base module (OWL edition)
+  - description: base module for OHD released in OBO format
+    id: ohd-base.obo
+    ontology_purl: http://purl.obolibrary.org/obo/ohd-base.obo
+    title: Oral Health and Disease Ontology, base module (OBO edition)
+  - description: base module for OHD released in json format
+    id: ohd-base.json
+    ontology_purl: http://purl.obolibrary.org/obo/ohd-base.json
+    title: Oral Health and Disease Ontology, base module (JSON edition)
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/32819435
     title: Structuring, reuse and analysis of electronic dental data using the Oral
       Health and Disease Ontology
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/41992354
+    title: Representing dental restoration materials in the oral health and disease
+      ontology
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/42032627
+    title: Representing dental caries and dysbiosis within the oral microbiome in
+      the Oral Health and Disease Ontology
   repository: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
   title: Oral Health and Disease Ontology
   tracker: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issues
@@ -5400,9 +5439,9 @@ ontologies:
   id: pbpko
   layout: ontology_detail
   license:
-    label: CC BY 3.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
+    url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/pbpko.owl
   preferredPrefix: PBPKO
   products:
