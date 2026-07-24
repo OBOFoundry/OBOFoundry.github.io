@@ -4032,22 +4032,79 @@ _:b103  <http://www.w3.org/2000/01/rdf-schema#label>  "Brian Aevermann" ;
         <http://purl.org/dc/elements/1.1/title>  "Oral Health and Disease Ontology" ;
         <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/32819435> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/41992354> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/42032627> ;
         <http://purl.org/dc/terms/1.1/theme>  "health" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ohd.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b139 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ohd.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ohd.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ohd.json> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ohd-non-classified.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ohd-non-classified.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ohd-non-classified.json> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ohd-base.owl> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ohd-base.obo> ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ohd-base.json> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://purl.obolibrary.org/obo/ohd> .
 
 <https://www.ncbi.nlm.nih.gov/pubmed/32819435>
         <http://purl.org/dc/elements/1.1/title>  "Structuring, reuse and analysis of electronic dental data using the Oral Health and Disease Ontology" .
 
+<https://www.ncbi.nlm.nih.gov/pubmed/41992354>
+        <http://purl.org/dc/elements/1.1/title>  "Representing dental restoration materials in the oral health and disease ontology" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/42032627>
+        <http://purl.org/dc/elements/1.1/title>  "Representing dental caries and dysbiosis within the oral microbiome in the Oral Health and Disease Ontology" .
+
 _:b139  <http://www.w3.org/2000/01/rdf-schema#label>  "Bill Duncan" ;
         <http://xmlns.com/foaf/0.1/mbox>  "wdduncan@gmail.com" .
 
 <http://purl.obolibrary.org/obo/ohd.owl>
-        <http://purl.org/dc/elements/1.1/title>  "Oral Health and Disease Ontology" ;
+        <http://purl.org/dc/elements/1.1/description>  "reasoned version of OHD released in rdf/xml format" ;
+        <http://purl.org/dc/elements/1.1/title>  "Oral Health and Disease Ontology (OWL edition)" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ohd.owl" .
+
+<http://purl.obolibrary.org/obo/ohd.obo>
+        <http://purl.org/dc/elements/1.1/description>  "reasoned version of OHD released in OBO format" ;
+        <http://purl.org/dc/elements/1.1/title>  "Oral Health and Disease Ontology (OBO edition)" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ohd.obo" .
+
+<http://purl.obolibrary.org/obo/ohd.json>
+        <http://purl.org/dc/elements/1.1/description>  "reasoned version of OHD released in json format" ;
+        <http://purl.org/dc/elements/1.1/title>  "Oral Health and Disease Ontology (JSON edition)" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ohd.json" .
+
+<http://purl.obolibrary.org/obo/ohd-non-classified.owl>
+        <http://purl.org/dc/elements/1.1/description>  "non-classified version of OHD released in rdf/xml format" ;
+        <http://purl.org/dc/elements/1.1/title>  "Oral Health and Disease Ontology, non-classified (OWL edition)" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ohd-non-classified.owl" .
+
+<http://purl.obolibrary.org/obo/ohd-non-classified.obo>
+        <http://purl.org/dc/elements/1.1/description>  "non-classified version of OHD released in OBO format" ;
+        <http://purl.org/dc/elements/1.1/title>  "Oral Health and Disease Ontology, non-classified (OBO edition)" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ohd-non-classified.obo" .
+
+<http://purl.obolibrary.org/obo/ohd-non-classified.json>
+        <http://purl.org/dc/elements/1.1/description>  "non-classified version of OHD released in json format" ;
+        <http://purl.org/dc/elements/1.1/title>  "Oral Health and Disease Ontology, non-classified (JSON edition)" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ohd-non-classified.json" .
+
+<http://purl.obolibrary.org/obo/ohd-base.owl>
+        <http://purl.org/dc/elements/1.1/description>  "base module for OHD released in rdf/xml format" ;
+        <http://purl.org/dc/elements/1.1/title>  "Oral Health and Disease Ontology, base module (OWL edition)" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ohd-base.owl" .
+
+<http://purl.obolibrary.org/obo/ohd-base.obo>
+        <http://purl.org/dc/elements/1.1/description>  "base module for OHD released in OBO format" ;
+        <http://purl.org/dc/elements/1.1/title>  "Oral Health and Disease Ontology, base module (OBO edition)" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ohd-base.obo" .
+
+<http://purl.obolibrary.org/obo/ohd-base.json>
+        <http://purl.org/dc/elements/1.1/description>  "base module for OHD released in json format" ;
+        <http://purl.org/dc/elements/1.1/title>  "Oral Health and Disease Ontology, base module (JSON edition)" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ohd-base.json" .
 
 <http://purl.obolibrary.org/obo/ohmi>
         <http://identifiers.org/preferredPrefix>  "OHMI" ;
@@ -4408,7 +4465,7 @@ _:b10   <http://www.w3.org/2000/01/rdf-schema#label>  "George Gkoutos" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "active" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology for modeling and understanding of pharmacokinetics in biological systems." ;
         <http://purl.org/dc/elements/1.1/title>  "Physiologically-Based Pharmacokinetic Ontology" ;
-        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/3.0/> ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/InSilicoVida-Research-Lab/pbpko/issues" ;
         <http://www.w3.org/2000/01/rdf-schema#seeAlso>  <https://bioportal.bioontology.org/ontologies/pbpko> ;
