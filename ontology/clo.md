@@ -16,7 +16,7 @@ description: An ontology to standardize and integrate cell line information and 
 domain: anatomy and development
 homepage: https://github.com/CLO-Ontology/CLO
 license:
-  label: CC BY 3.0
+  label: CC BY 4.0
   url: http://creativecommons.org/licenses/by/3.0/
 preferredPrefix: CLO
 products:
