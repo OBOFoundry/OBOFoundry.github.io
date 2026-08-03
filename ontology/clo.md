@@ -35,7 +35,7 @@ usages:
 - description: NIH PubChem records include cross-references to CLO IDs.
   examples:
   - description: NCI-H226 (Cell)
-    url: https://pubchem.ncbi.nlm.nih.gov/cell/4004#section=ChEMBL-Cell-Line-ID
+    url: https://pubchem.ncbi.nlm.nih.gov/cell/4004#section=Cell-Line-Ontology-ID
   user: https://pubchem.ncbi.nlm.nih.gov
 - description: NIH LINCS project uses CLO for cell line annotation.
   examples:
