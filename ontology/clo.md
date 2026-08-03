@@ -44,7 +44,7 @@ usages:
   user: https://lincsproject.org
 - description: Immune Epitope Database uses CLO for annotation
   examples:
-  - description: We continue to expand our use of ontologies for more fields, and have recently incorporated the MRO, Uberon, cell type and cell line ontologies.
+  - description: In the 'USE OF ONTOLOGIES IN THE IEDB' section, "We continue to expand our use of ontologies for more fields, and have recently incorporated the MRO, Uberon, cell type and cell line ontologies".
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6324067/
   user: https://www.iedb.org
 activity_status: active
