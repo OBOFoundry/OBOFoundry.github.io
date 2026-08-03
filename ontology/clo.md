@@ -59,7 +59,7 @@ The Cell Line Ontology (CLO) is a community-driven ontology that is developed to
 Use the following URI to download this ontology
 
 * [http://purl.obolibrary.org/obo/clo.owl](http://purl.obolibrary.org/obo/clo.owl)
-* This should point to: [https://raw.githubusercontent.com/CLO-ontology/CLO/master/src/ontology/clo_merged.owl](https://raw.githubusercontent.com/CLO-ontology/CLO/master/clo.owl)
+* This should point to: [https://raw.githubusercontent.com/CLO-ontology/CLO/master/clo.owl](https://raw.githubusercontent.com/CLO-ontology/CLO/master/clo.owl)
 
 
 # Browsing
