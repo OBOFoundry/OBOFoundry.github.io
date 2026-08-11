@@ -7,7 +7,7 @@ GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; 
 
 ## Summary
 
-The ontology provider follows the recommendations and requirements outlined on the Ontology Standardization Guidelines and the Project Management Guidelines pages.
+The ontology provider MUST follow the recommendations and requirements outlined on the [Ontology Standardization Guidelines]() and the [Ontology Project Management Guidelines]() pages.
 
 ## Purpose
 
@@ -15,7 +15,7 @@ OBO Foundry ontologies commit to principles of ontology development designed to 
 
 ## Recommendations and Requirements
 
-Check here from time to time, as these guidelines will be added to and refined over time, more quickly than a principle.
+As the guidelines are expected to have more-frequent additions and refinements over time relative to principles, ontology maintainers SHOULD review these pages every 6 months. (NOTE: we will tag any new additions or refinements with a tag 'new' or 'revised').
 
 
 ## Implementation
