@@ -18,27 +18,27 @@ products:
 - id: pain.owl
   title: The Pain Ontology (OWL edition)
   description: reasoned version of PAIN released in rdf/xml format
-- id: pain.obo
-  title: The Pain Ontology (OBO edition)
-  description: reasoned version of PAIN released in OBO format
+- id: pain.json
+  title: The Pain Ontology (JSON edition)
+  description: reasoned version of PAIN released in JSON format
 - id: pain-non-classified.owl
   title: The Pain Ontology, non-classified (OWL edition)
   description: non-reasoned version of PAIN released in rdf/xml format
-- id: pain-non-classified.obo
-  title: The Pain Ontology, non-classified (OBO edition)
-  description: non-reasoned version of PAIN released in OBO format
+- id: pain-non-classified.json
+  title: The Pain Ontology, non-classified (JSON edition)
+  description: non-reasoned version of PAIN released in JSON format
 - id: pain-base.owl
   title: The Pain Ontology, base module (OWL edition)
   description: base module of PAIN released in rdf/xml format
-- id: pain-base.obo
-  title: The Pain Ontology, base module (OBO edition)
-  description: base module of PAIN released in OBO format
+- id: pain-base.json
+  title: The Pain Ontology, base module (JSON edition)
+  description: base module of PAIN released in JSON format
 - id: pain-simple.owl
   title: The Pain Ontology, simple (OWL edition)
   description: simplified version of PAIN released in rdf/xml format
-- id: pain-simple.obo
-  title: The Pain Ontology, simple (OBO edition)
-  description: simplified version of PAIN released in OBO format
+- id: pain-simple.json
+  title: The Pain Ontology, simple (JSON edition)
+  description: simplified version of PAIN released in JSON format
 repository: https://github.com/uflcod/pain-ontology
 tracker: https://github.com/uflcod/pain-ontology/issues
 activity_status: active
