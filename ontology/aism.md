@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: aism
 title: Ontology for the Anatomy of the Insect SkeletoMuscular system (AISM)
-build:
-  checkout: git clone https://github.com/insect-morphology/aism
-  path: .
-  system: git
 contact:
   email: entiminae@gmail.com
   github: JCGiron

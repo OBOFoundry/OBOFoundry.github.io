@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: omp
 title: Ontology of Microbial Phenotypes
-build:
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/microbialphenotypes/OMP-ontology-files/master/omp.obo
 contact:
   email: jimhu@tamu.edu
   github: jimhu-tamu

@@ -9,12 +9,13 @@ contact:
   orcid: 0000-0002-6379-8932
 dependencies:
 - id: ro
+depicted_by: https://raw.githubusercontent.com/Planteome/plant-ontology/refs/heads/master/Planteome_profile.jpg
 description: The Plant Stress Ontology describes biotic and abiotic stresses that a plant may encounter.
 domain: agriculture
 homepage: https://github.com/Planteome/plant-stress-ontology
 license:
-  label: CC BY 3.0
-  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 4.0
+  url: http://creativecommons.org/licenses/by/4.0/
 preferredPrefix: PSO
 products:
 - id: pso.owl

@@ -14,7 +14,6 @@ contact:
 description: An ontology of phenotypic qualities (properties, attributes or characteristics)
 domain: phenotype
 homepage: https://github.com/pato-ontology/pato/
-in_foundry_order: 1
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/

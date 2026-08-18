@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: iao
 title: Information Artifact Ontology
-build:
-  method: owl2obo
-  source_url: http://purl.obolibrary.org/obo/iao.owl
 contact:
   email: zhengj2007@gmail.com
   github: zhengj2007
@@ -29,7 +26,9 @@ products:
   title: ontology of document acts
   contact:
     email: mbrochhausen@gmail.com
+    github: mbrochhausen
     label: Mathias Brochhausen
+    orcid: 0000-0003-1834-3856
   description: An ontology based on a theory of document acts describing what people can do with documents
 repository: https://github.com/information-artifact-ontology/IAO
 tracker: https://github.com/information-artifact-ontology/IAO/issues

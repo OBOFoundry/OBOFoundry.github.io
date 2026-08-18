@@ -46,12 +46,6 @@
         ]
       }
     },
-    "build": {
-      "suggest": false
-    },
-    "canonical": {
-      "suggest": false
-    },
     "contact": {
       "level": "error",
       "principle": "http://obofoundry.org/principles/fp-011-locus-of-authority.html",
@@ -92,9 +86,6 @@
       "suggest": false
     },
     "depicted_by": {
-      "suggest": false
-    },
-    "documentation": {
       "suggest": false
     },
     "domain": {
@@ -160,28 +151,12 @@
       "type": "string",
       "pattern": "^[0-9a-z_]+$"
     },
-    "in_foundry": {
-      "suggest": false,
-      "level": "warning",
-      "description": "'in_foundry' is a recommended field. The value is a boolean indicating whether the ontology is in the Foundry collection.",
-      "type": "boolean",
-      "default": false
-    },
-    "in_foundry_order": {
-      "suggest": false
-    },
-    "integration_server": {
-      "suggest": false
-    },
     "is_obsolete": {
       "suggest": false,
       "level": "info",
       "description": "'is_obsolete' is an informative field. It is set to true when the ontology is obsolete.",
       "type": "boolean",
       "default": false
-    },
-    "label": {
-      "suggest": false
     },
     "layout": {
       "level": "error",
@@ -384,9 +359,6 @@
       "type": "integer",
       "description": "This encodes the number of the pull request on the OBO Foundry GitHub repository that was originally used to add this ontology. You can curate additional ones by going to the ontology page (e.g., https://github.com/OBOFoundry/OBOFoundry.github.io/commits/master/ontology/clyh.md) and looking the whole way down the list for the first commit. Click on the title for the commit then you will see if there's a PR associated with it."
     },
-    "releases": {
-      "suggest": false
-    },
     "replaced_by": {
       "suggest": false
     },
@@ -395,9 +367,6 @@
       "description": "'repository' is a required field. The value is the URL for the version control repository (e.g., on GitHub, GitLab, Bitbucket, SourceForge) in which the ontology files are stored and updated.",
       "type": "string",
       "format": "uri"
-    },
-    "slack": {
-      "suggest": false
     },
     "taxon": {
       "level": "info",
@@ -501,12 +470,6 @@
           "description"
         ]
       }
-    },
-    "wasDerivedFrom": {
-      "suggest": false
-    },
-    "wikidata_template": {
-      "suggest": false
     }
   },
   "required": [

@@ -2,11 +2,6 @@
 layout: ontology_detail
 id: hom
 title: Homology Ontology
-build:
-  checkout: git clone https://github.com/BgeeDB/homology-ontology.git
-  method: vcs
-  path: src/ontology
-  system: git
 contact:
   email: bgee@sib.swiss
   github: fbastian

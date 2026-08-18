@@ -19,7 +19,6 @@ dependencies:
 description: An ontology for description of concepts in the nutritional studies domain.
 domain: diet, metabolomics, and nutrition
 homepage: https://github.com/enpadasi/Ontology-for-Nutritional-Studies
-label: Ontology for Nutritional Studies
 license:
   label: CC BY 4.0
   url: https://creativecommons.org/licenses/by/4.0/

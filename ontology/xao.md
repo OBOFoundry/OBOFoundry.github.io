@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: xao
 title: Xenopus Anatomy Ontology
-build:
-  infallible: 0
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo
 contact:
   email: Erik.Segerdell@cchmc.org
   github: seger
@@ -14,7 +10,6 @@ contact:
 description: XAO represents the anatomy and development of the African frogs Xenopus laevis and tropicalis.
 domain: anatomy and development
 homepage: http://www.xenbase.org/anatomy/xao.do?method=display
-in_foundry_order: 1
 license:
   label: CC BY 3.0
   url: http://creativecommons.org/licenses/by/3.0/

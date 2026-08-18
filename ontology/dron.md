@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: dron
 title: The Drug Ontology
-build:
-  method: owl2obo
-  source_url: http://purl.obolibrary.org/obo/dron.owl
 contact:
   email: hoganwr@gmail.com
   github: hoganwr

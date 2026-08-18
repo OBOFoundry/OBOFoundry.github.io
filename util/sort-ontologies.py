@@ -1,4 +1,11 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
+
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "pyyaml>=6.0.3",
+# ]
+# ///
 
 import csv
 import sys
@@ -7,7 +14,7 @@ from argparse import ArgumentParser
 import yaml
 
 
-def main(args):
+def main():
     parser = ArgumentParser(
         description="""
   Takes a YAML file containing information for various ontologies and a metadata file specifying
@@ -89,4 +96,4 @@ def write_data(data, output):
 
 
 if __name__ == "__main__":
-    main(sys.argv)
+    main()

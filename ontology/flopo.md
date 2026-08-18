@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: flopo
 title: Flora Phenotype Ontology
-build:
-  method: owl2obo
-  source_url: https://github.com/flora-phenotype-ontology/flopoontology/raw/master/ontology/flopo.owl
 contact:
   email: robert.hoehndorf@kaust.edu.sa
   github: leechuck
@@ -27,5 +24,11 @@ taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
 tracker: https://github.com/flora-phenotype-ontology/flopoontology/issues
+usages:
+- description: FLOPO integrates qualitative plant trait data extracted from digitized Floras across species and higher taxa of flowering plants.
+  examples:
+  - description: Browsing FLOPO and querying it with automated reasoning via the AberOWL ontology repository.
+    url: http://aber-owl.net/ontology/FLOPO
+  user: https://www.kaust.edu.sa
 activity_status: active
 ---

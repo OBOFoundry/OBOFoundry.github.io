@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: cdno
 title: Compositional Dietary Nutrition Ontology
-build:
-  checkout: git clone https://github.com/CompositionalDietaryNutritionOntology/cdno.git
-  path: .
-  system: git
 contact:
   email: landreshdz@gmail.com
   github: LilyAndres

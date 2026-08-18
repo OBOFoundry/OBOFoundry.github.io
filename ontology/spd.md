@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: spd
 title: Spider Ontology
-build:
-  insert_ontology_id: true
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/obophenotype/spider-ontology/master/spider_comparative_biology.obo
 contact:
   email: ramirez@macn.gov.ar
   github: martinjramirez

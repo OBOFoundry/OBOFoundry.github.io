@@ -9,8 +9,6 @@ browsers:
 - title: OntoBee Browser
   label: OntoBee
   url: https://ontobee.org/ontology/ONTONEO
-build:
-  source_url: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/ontoneo.owl
 contact:
   email: fernanda.farinelli@gmail.com
   github: FernandaFarinelli

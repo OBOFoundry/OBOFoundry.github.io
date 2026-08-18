@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: ddpheno
 title: Dictyostelium discoideum phenotype ontology
-build:
-  checkout: git clone https://github.com/obophenotype/dicty-phenotype-ontology.git
-  path: .
-  system: git
 contact:
   email: pfey@northwestern.edu
   github: pfey03

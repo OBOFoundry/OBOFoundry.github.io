@@ -4,7 +4,9 @@ id: fma
 title: OBO-specific subset of the Foundational Model of Anatomy Ontology
 contact:
   email: mejino@u.washington.edu
-  label: Onard Mejino
+  github: Onard
+  label: Jose Leonardo (Onard) Mejino
+  orcid: 0000-0003-2105-2283
 description: The OBO-specific subset of FMA is now deprecated. Please refer to the official version of FMA instead (http://purl.org/sig/ont/fma.owl).
 domain: anatomy and development
 homepage: http://si.washington.edu/projects/fma

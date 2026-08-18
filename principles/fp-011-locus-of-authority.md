@@ -7,10 +7,7 @@ GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; 
 
 ## Summary
 
-There should be a person who is responsible for communications between the
-community and the ontology developers, for communicating with the Foundry on all
-Foundry-related matters, for mediating discussions involving maintenance in the
-light of scientific advance, and for ensuring that all user feedback is addressed.
+There MUST be a person who is responsible for communications between the community and the ontology developers, for communicating with the Foundry on all Foundry-related matters, for mediating discussions involving maintenance in the light of scientific advance, and for ensuring that all user feedback is addressed.
 
 ## Purpose
 

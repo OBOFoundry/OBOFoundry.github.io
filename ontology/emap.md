@@ -2,11 +2,6 @@
 layout: ontology_detail
 id: emap
 title: Mouse gross anatomy and development, timed
-build:
-  insert_ontology_id: true
-  method: obo2owl
-  notes: new url soon
-  source_url: ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAP_combined.obo
 contact:
   email: Terry.Hayamizu@jax.org
   github: tfhayamizu

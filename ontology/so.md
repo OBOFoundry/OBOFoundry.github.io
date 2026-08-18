@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: so
 title: Sequence types and features ontology
-build:
-  method: obo2owl
-  notes: SWITCH
-  source_url: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so.obo
 contact:
   email: keilbeck@genetics.utah.edu
   github: keilbeck

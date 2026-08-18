@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: omrse
 title: Ontology for Modeling and Representation of Social Entities
-build:
-  method: owl2obo
-  source_url: https://github.com/mcwdsi/OMRSE
 contact:
   email: hoganwr@gmail.com
   github: hoganwr

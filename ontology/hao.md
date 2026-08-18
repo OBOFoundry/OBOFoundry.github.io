@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: hao
 title: Hymenoptera Anatomy Ontology
-build:
-  checkout: git clone https://github.com/hymao/hao.git
-  system: git
 contact:
   email: diapriid@gmail.com
   github: mjy

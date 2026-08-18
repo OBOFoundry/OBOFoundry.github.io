@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: pdro
 title: The Prescription of Drugs Ontology
-build:
-  method: owl2obo
-  source_url: http://purl.obolibrary.org/obo/pdro.owl
 contact:
   email: paul.fabry@usherbrooke.ca
   github: pfabry

@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: mop
 title: Molecular Process Ontology
-build:
-  method: owl2obo
-  source_url: https://raw.githubusercontent.com/rsc-ontologies/rxno/master/mop.owl
 contact:
   email: batchelorc@rsc.org
   github: batchelorc

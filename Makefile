@@ -51,7 +51,7 @@ integration-test: test valid-purl-report.txt
 
 # Remove and/or revert all targets to their repository versions:
 clean:
-	rm -Rf registry/ontologies.nt registry/ontologies.ttl registry/ontologies.yml sparql-consistency-report.txt jenkins-output.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
+	rm -Rf registry/ontologies.nt registry/ontologies.ttl registry/ontologies.yml sparql-consistency-report.txt valid-purl-report.txt valid-purl-report.txt.tmp _site/ tmp/ reports/
 	git checkout _config.yml registry/ontologies.jsonld registry/ontologies.ttl registry/ontologies.yml
 
 
@@ -235,11 +235,6 @@ valid-purl-report.txt: registry/ontologies.yml
 
 sparql-consistency-report.txt: registry/ontologies.yml
 	./util/processor.py -i $< sparql-compare > $@.tmp && mv $@.tmp $@
-
-# output of central OBO build
-# See FAQ for more details, and also README.md
-jenkins-output.txt:
-	wget http://build.berkeleybop.org/job/simple-build-obo-all/lastBuild/consoleFull -O $@
 
 reports/%.csv: registry/ontologies.ttl sparql/%.sparql
 	arq --data $< --query sparql/$*.sparql --results csv > $@.tmp && mv $@.tmp $@

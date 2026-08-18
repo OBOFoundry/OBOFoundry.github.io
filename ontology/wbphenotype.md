@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: wbphenotype
 title: C. elegans phenotype
-build:
-  checkout: git clone https://github.com/obophenotype/c-elegans-phenotype-ontology.git
-  path: .
-  system: git
 contact:
   email: cgrove@caltech.edu
   github: chris-grove

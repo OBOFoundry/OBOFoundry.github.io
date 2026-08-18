@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: zeco
 title: Zebrafish Experimental Conditions Ontology
-build:
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.obo
 contact:
   email: ybradford@zfin.org
   github: ybradford

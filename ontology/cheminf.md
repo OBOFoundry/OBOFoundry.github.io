@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: cheminf
 title: Chemical Information Ontology
-build:
-  method: owl2obo
-  source_url: https://raw.githubusercontent.com/semanticchemistry/semanticchemistry/master/ontology/cheminf.owl
 contact:
   email: egon.willighagen@gmail.com
   github: egonw

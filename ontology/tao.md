@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: tao
 title: Teleost Anatomy Ontology
-build:
-  method: obo2owl
-  source_url: http://purl.obolibrary.org/obo/tao.obo
 contact:
   email: wasila.dahdul@usd.edu
   label: Wasila Dahdul

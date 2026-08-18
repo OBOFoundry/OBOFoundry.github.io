@@ -6,10 +6,6 @@ browsers:
 - title: FlyBase Browser
   label: FB
   url: http://flybase.org/.bin/cvreport.html?cvterm=FBdv:00007008
-build:
-  checkout: git clone https://github.com/FlyBase/drosophila-developmental-ontology.git
-  path: .
-  system: git
 contact:
   email: cp390@cam.ac.uk
   github: Clare72

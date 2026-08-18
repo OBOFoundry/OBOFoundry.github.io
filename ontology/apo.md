@@ -2,9 +2,6 @@
 layout: ontology_detail
 id: apo
 title: Ascomycete phenotype ontology
-build:
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/obophenotype/ascomycete-phenotype-ontology/master/apo.obo
 contact:
   email: stacia@stanford.edu
   github: srengel

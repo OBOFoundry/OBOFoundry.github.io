@@ -78,17 +78,17 @@ Individual ontology projects may, at their discretion, choose to manage these re
 
 ### Allocating IDSPACEs
 
-All OBO ontologies should use PURLs that have a base URL within their allocated space (in CURIE form these would be prefixed with their IDSPACE). IDSPACEs within the OBO library are unique for a given project and are chosen not to conflict with prefix for other resources. Although IDSPACEs are case-sensitive, there will never be more than one IDSPACEs that are the same when compared in a case-insensitive manner. Therefore, although "GO" and "go", "Go" and "gO" are different IDSPACEs, the IDSPACE "go", "Go" and "gO" will not be used as "GO" has already been allocated.
+All OBO ontologies should use PURLs that have a base URL within their allocated space (in CURIE form these would be prefixed with their IDSPACE). IDSPACEs within the OBO Foundry are unique for a given project and are chosen not to conflict with prefix for other resources. Although IDSPACEs are case-sensitive, there will never be more than one IDSPACEs that are the same when compared in a case-insensitive manner. Therefore, although "GO" and "go", "Go" and "gO" are different IDSPACEs, the IDSPACE "go", "Go" and "gO" will not be used as "GO" has already been allocated.
 
 A registry of allocated IDSPACEs will be maintained. Requests for an IDSPACE should be made by creating a ticket on our [GitHub tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues) as described on [this page](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/docs/Policy_for_OBO_namespace_and_associated_PURL_requests.md).
 A request should include information about the ontology, such as scope and maintainer and a confirmation that the ontology is open access.
 
 #### Guidelines for selecting an IDSPACE
 
-- Use three or more letters; the OBO Library **does not** accept new two-letter IDSPACEs
+- Use three or more letters; the OBO Foundry **does not** accept new two-letter IDSPACEs
 - Avoid the letter "O" in three-letter IDSPACES; many ontologies use "O" for "Ontology" which limits the number of combinations
 - Select a longer IDSPACE for ontologies that are more restricted in scope (e.g., species-specific phenotype ontologies)
-- Search **each** of the following registries to make sure your IDSPACE doesn't conflict with one inside or outside of the OBO Library:
+- Search **each** of the following registries to make sure your IDSPACE doesn't conflict with one inside or outside of the OBO Foundry:
   <br>&emsp; - [OBO Foundry](https://obofoundry.org)
   <br>&emsp; - [Bioregistry](https://bioregistry.io) (or [browse here](https://bioregistry.io/registry/))
   <br>&emsp; - [BioPortal](https://bioportal.bioontology.org/) (or [browse here](https://bioportal.bioontology.org/ontologies))

@@ -11,7 +11,7 @@ contact:
   github: jaiswalp
   label: Pankaj Jaiswal
   orcid: 0000-0002-1005-8383
-depicted_by: http://planteome.org/sites/default/files/garland_logo.PNG
+depicted_by: https://raw.githubusercontent.com/Planteome/plant-ontology/refs/heads/master/Planteome_profile.jpg
 description: A controlled vocabulary to describe phenotypic traits in plants.
 domain: phenotype
 homepage: http://browser.planteome.org/amigo

@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: fbsp
 title: Fly taxonomy
-build:
-  insert_ontology_id: true
-  method: obo2owl
-  source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/taxonomy/fly_taxonomy.obo
 contact:
   email: cp390@cam.ac.uk
   github: Clare72

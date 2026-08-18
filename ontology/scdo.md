@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: scdo
 title: Sickle Cell Disease Ontology
-build:
-  checkout: git clone https://github.com/scdodev/scdo-ontology.git
-  path: .
-  system: git
 contact:
   email: giant.plankton@gmail.com
   github: JadeHotchkiss

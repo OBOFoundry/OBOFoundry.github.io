@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: caro
 title: Common Anatomy Reference Ontology
-build:
-  method: obo2owl
-  notes: moving to owl soon
-  source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/caro/caro.obo
 contact:
   email: haendel@ohsu.edu
   github: mellybelly

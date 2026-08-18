@@ -7,8 +7,7 @@ GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; 
 
 ## Summary
 
-The ontology developers should document that the ontology is used by
-multiple independent people or organizations.
+The ontology developers SHOULD document that the ontology is used by multiple independent people or organizations.
 
 ## Purpose
 

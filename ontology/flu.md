@@ -2,15 +2,13 @@
 layout: ontology_detail
 id: flu
 title: Influenza Ontology
-build:
-  method: owl2obo
-  source_url: http://purl.obolibrary.org/obo/flu.owl
 contact:
   email: burkesquires@gmail.com
+  github: burkesquires
   label: Burke Squires
+  orcid: 0000-0001-9666-6285
 domain: health
 homepage: http://purl.obolibrary.org/obo/flu/
-in_foundry: false
 is_obsolete: true
 products:
 - id: flu.owl

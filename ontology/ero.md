@@ -2,14 +2,10 @@
 layout: ontology_detail
 id: ero
 title: eagle-i resource ontology
-build:
-  method: owl2obo
-  source_url: http://purl.obolibrary.org/obo/ero.owl
 contact:
   email: Marc_Ciriello@hms.harvard.edu
   label: Marc Ciriello
 description: An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens.
-documentation: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
 domain: information
 homepage: https://open.med.harvard.edu/wiki/display/eaglei/Ontology
 is_obsolete: true

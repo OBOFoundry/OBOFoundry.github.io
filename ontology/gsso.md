@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: gsso
 title: Gender, Sex, and Sexual Orientation (GSSO) ontology
-build:
-  checkout: git clone https://github.com/Superraptor/GSSO.git
-  path: .
-  system: git
 contact:
   email: kronkcj@mail.uc.edu
   github: Superraptor

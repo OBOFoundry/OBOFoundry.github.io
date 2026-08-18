@@ -2,10 +2,6 @@
 layout: ontology_detail
 id: mod
 title: Protein modification
-build:
-  insert_ontology_id: true
-  method: obo2owl
-  source_url: https://raw.githubusercontent.com/HUPO-PSI/psi-mod-CV/master/PSI-MOD.obo
 contact:
   email: pierre-alain.binz@chuv.ch
   github: pabinz
