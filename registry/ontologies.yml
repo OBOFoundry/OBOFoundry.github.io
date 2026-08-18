@@ -976,9 +976,9 @@ ontologies:
   id: clo
   layout: ontology_detail
   license:
-    label: CC BY 3.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
+    url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/clo.owl
   preferredPrefix: CLO
   products:
@@ -990,6 +990,31 @@ ontologies:
   repository: https://github.com/CLO-Ontology/CLO
   title: Cell Line Ontology
   tracker: https://github.com/CLO-Ontology/CLO/issues
+  usages:
+  - description: Cellosaurus, a knowledge resource for cell lines, provides cross-references
+      to CLO IDs.
+    examples:
+    - description: Mouse 10B9 cell
+      url: https://www.cellosaurus.org/CVCL_B379
+    user: https://www.cellosaurus.org/
+  - description: NIH PubChem records include cross-references to CLO IDs.
+    examples:
+    - description: NCI-H226 (Cell)
+      url: https://pubchem.ncbi.nlm.nih.gov/cell/4004#section=Cell-Line-Ontology-ID
+    user: https://pubchem.ncbi.nlm.nih.gov
+  - description: NIH LINCS project uses CLO for cell line annotation.
+    examples:
+    - description: In LINCS cell line metadata, the field "CL_Alternative_ID" specifies
+        the CLO.
+      url: https://lincsproject.org/LINCS/files/Cell_Line_Metadata_2017.pdf
+    user: https://lincsproject.org
+  - description: Immune Epitope Database uses CLO for annotation
+    examples:
+    - description: In the 'USE OF ONTOLOGIES IN THE IEDB' section, "We continue to
+        expand our use of ontologies for more fields, and have recently incorporated
+        the MRO, Uberon, cell type and cell line ontologies".
+      url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6324067/
+    user: https://www.iedb.org
 - activity_status: active
   contact:
     email: lucas.leclere@obs-banyuls.fr
@@ -1818,6 +1843,59 @@ ontologies:
     user: http://www.informatics.jax.org/expression.shtml
 - activity_status: active
   contact:
+    email: wdduncan@gmail.com
+    github: wdduncan
+    label: Bill Duncan
+    orcid: 0000-0001-9625-1899
+  description: The Emotion Response Ontology represents emotions as behavioral responses.
+  domain: health
+  homepage: https://github.com/uflcod/emotion-response-ontology
+  id: emro
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/emro.owl
+  preferredPrefix: EMRO
+  products:
+  - description: reasoned version of EMRO released in rdf/xml format
+    id: emro.owl
+    ontology_purl: http://purl.obolibrary.org/obo/emro.owl
+    title: Emotion Response Ontology (OWL edition)
+  - description: reasoned version of EMRO released in OBO format
+    id: emro.obo
+    ontology_purl: http://purl.obolibrary.org/obo/emro.obo
+    title: Emotion Response Ontology (OBO edition)
+  - description: non-reasoned version of EMRO released in rdf/xml format
+    id: emro-non-classified.owl
+    ontology_purl: http://purl.obolibrary.org/obo/emro-non-classified.owl
+    title: Emotion Response Ontology, non-classified (OWL edition)
+  - description: non-reasoned version of EMRO released in OBO format
+    id: emro-non-classified.obo
+    ontology_purl: http://purl.obolibrary.org/obo/emro-non-classified.obo
+    title: Emotion Response Ontology, non-classified (OBO edition)
+  - description: base module of EMRO released in rdf/xml format
+    id: emro-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/emro-base.owl
+    title: Emotion Response Ontology, base module (OWL edition)
+  - description: base module of EMRO released in OBO format
+    id: emro-base.obo
+    ontology_purl: http://purl.obolibrary.org/obo/emro-base.obo
+    title: Emotion Response Ontology, base module (OBO edition)
+  - description: simplified version of EMRO released in rdf/xml format
+    id: emro-simple.owl
+    ontology_purl: http://purl.obolibrary.org/obo/emro-simple.owl
+    title: Emotion Response Ontology, simple (OWL edition)
+  - description: simplified version of EMRO released in OBO format
+    id: emro-simple.obo
+    ontology_purl: http://purl.obolibrary.org/obo/emro-simple.obo
+    title: Emotion Response Ontology, simple (OBO edition)
+  repository: https://github.com/uflcod/emotion-response-ontology
+  title: Emotion Response Ontology
+  tracker: https://github.com/uflcod/emotion-response-ontology/issues
+- activity_status: active
+  contact:
     email: pier.buttigieg@awi.de
     github: pbuttigieg
     label: Pier Luigi Buttigieg
@@ -2284,6 +2362,14 @@ ontologies:
     label: Viridiplantae
   title: Flora Phenotype Ontology
   tracker: https://github.com/flora-phenotype-ontology/flopoontology/issues
+  usages:
+  - description: FLOPO integrates qualitative plant trait data extracted from digitized
+      Floras across species and higher taxa of flowering plants.
+    examples:
+    - description: Browsing FLOPO and querying it with automated reasoning via the
+        AberOWL ontology repository.
+      url: http://aber-owl.net/ontology/FLOPO
+    user: https://www.kaust.edu.sa
 - activity_status: active
   contact:
     email: polcaes@gmail.com
@@ -3123,7 +3209,9 @@ ontologies:
     title: IAO dev
   - contact:
       email: mbrochhausen@gmail.com
+      github: mbrochhausen
       label: Mathias Brochhausen
+      orcid: 0000-0003-1834-3856
     description: An ontology based on a theory of document acts describing what people
       can do with documents
     id: iao/d-acts.owl
@@ -4726,6 +4814,19 @@ ontologies:
     label: Homo sapiens
   title: Ontology for General Medical Science
   tracker: https://github.com/OGMS/ogms/issues
+  usages:
+  - description: Multiple ontologies using OGMS terms, such as the Ontology for Biomedical
+      Investigations (OBI), Relation Ontology (RO), Infectious Disease Ontology (IDO),
+      Representation of Social Entities (OMRSE), and Mental Disease Ontology (MFOMD).
+      OGMS has been extended to create various OBO ontologies, including the IDO and
+      its extensions, as well as the OMRSE, MFOMD, Oral Health and Disease ontology
+      (OHD), and Cardiovascular Disease Ontology (CVDO).
+    examples:
+    - description: List of ontologies using at least one OGMS term
+      url: http://dashboard.obofoundry.org/dashboard/ogms/dashboard.html
+    - description: List of ontologies using the term "disease"
+      url: https://ontobee.org/ontology/OGMS?iri=http://purl.obolibrary.org/obo/OGMS_0000031
+    user: (multiple)
 - activity_status: active
   contact:
     email: wdduncan@gmail.com
@@ -4745,13 +4846,52 @@ ontologies:
   ontology_purl: http://purl.obolibrary.org/obo/ohd.owl
   preferredPrefix: OHD
   products:
-  - id: ohd.owl
+  - description: reasoned version of OHD released in rdf/xml format
+    id: ohd.owl
     ontology_purl: http://purl.obolibrary.org/obo/ohd.owl
-    title: Oral Health and Disease Ontology
+    title: Oral Health and Disease Ontology (OWL edition)
+  - description: reasoned version of OHD released in OBO format
+    id: ohd.obo
+    ontology_purl: http://purl.obolibrary.org/obo/ohd.obo
+    title: Oral Health and Disease Ontology (OBO edition)
+  - description: reasoned version of OHD released in json format
+    id: ohd.json
+    ontology_purl: http://purl.obolibrary.org/obo/ohd.json
+    title: Oral Health and Disease Ontology (JSON edition)
+  - description: non-classified version of OHD released in rdf/xml format
+    id: ohd-non-classified.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ohd-non-classified.owl
+    title: Oral Health and Disease Ontology, non-classified (OWL edition)
+  - description: non-classified version of OHD released in OBO format
+    id: ohd-non-classified.obo
+    ontology_purl: http://purl.obolibrary.org/obo/ohd-non-classified.obo
+    title: Oral Health and Disease Ontology, non-classified (OBO edition)
+  - description: non-classified version of OHD released in json format
+    id: ohd-non-classified.json
+    ontology_purl: http://purl.obolibrary.org/obo/ohd-non-classified.json
+    title: Oral Health and Disease Ontology, non-classified (JSON edition)
+  - description: base module for OHD released in rdf/xml format
+    id: ohd-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/ohd-base.owl
+    title: Oral Health and Disease Ontology, base module (OWL edition)
+  - description: base module for OHD released in OBO format
+    id: ohd-base.obo
+    ontology_purl: http://purl.obolibrary.org/obo/ohd-base.obo
+    title: Oral Health and Disease Ontology, base module (OBO edition)
+  - description: base module for OHD released in json format
+    id: ohd-base.json
+    ontology_purl: http://purl.obolibrary.org/obo/ohd-base.json
+    title: Oral Health and Disease Ontology, base module (JSON edition)
   publications:
   - id: https://www.ncbi.nlm.nih.gov/pubmed/32819435
     title: Structuring, reuse and analysis of electronic dental data using the Oral
       Health and Disease Ontology
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/41992354
+    title: Representing dental restoration materials in the oral health and disease
+      ontology
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/42032627
+    title: Representing dental caries and dysbiosis within the oral microbiome in
+      the Oral Health and Disease Ontology
   repository: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
   title: Oral Health and Disease Ontology
   tracker: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/issues
@@ -5362,9 +5502,9 @@ ontologies:
   id: pbpko
   layout: ontology_detail
   license:
-    label: CC BY 3.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
+    url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/pbpko.owl
   preferredPrefix: PBPKO
   products:
@@ -5839,6 +5979,107 @@ ontologies:
         CD19 molecule, PR:000001002)
       url: http://purl.obolibrary.org/obo/CL_0001201
     user: http://www.obofoundry.org/ontology/cl.html
+- activity_status: active
+  browsers:
+  - label: OLS
+    title: Ontology Lookup Service Browser
+    url: https://www.ebi.ac.uk/ols4/ontologies/prefer
+  contact:
+    email: txellmgsol@gmail.com
+    github: txellext
+    label: Txell Amigó
+    orcid: 0009-0009-0018-4253
+  description: PREFER is an ontology designed to integrate high-throughput bioprocess
+    data, covering operational, environmental and process parameters across different
+    scales of a precision fermentation process, to accelerate the development and
+    scaling of biosustainable production processes.
+  domain: investigations
+  homepage: https://github.com/Multiomics-Analytics-Group/prefer_ontology
+  id: prefer
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/prefer.owl
+  preferredPrefix: PREFER
+  products:
+  - description: Complete ontology, plus inter-ontology axioms, and imports modules
+    format: owl-rdf/xml
+    id: prefer.owl
+    is_canonical: true
+    ontology_purl: http://purl.obolibrary.org/obo/prefer.owl
+    title: Main PREFER OWL edition
+    uses:
+    - iao
+    - cl
+    - omo
+    - ro
+    - chebi
+    - pat
+    - go
+    - obi
+    - uberon
+    - cob
+    - ncbitaxon
+  - derived_from: prefer.owl
+    description: Complete ontology, plus inter-ontology axioms, and imports modules
+      merged in
+    format: obo
+    id: prefer.obo
+    ontology_purl: http://purl.obolibrary.org/obo/prefer.obo
+    title: prefer obo format edition
+  - derived_from: prefer.owl
+    description: Complete ontology, plus inter-ontology axioms, and imports modules
+      merged in
+    format: json
+    id: prefer.json
+    ontology_purl: http://purl.obolibrary.org/obo/prefer.json
+    title: PREFER OBOGraph-JSON format edition
+  - description: Basic version, no inter-ontology axioms
+    format: owl-rdf/xml
+    id: prefer/prefer-basic.owl
+    ontology_purl: http://purl.obolibrary.org/obo/prefer/prefer-basic.owl
+    title: Basic prefer
+  - description: Basic version, no inter-ontology axioms
+    format: obo
+    id: prefer/prefer-basic.obo
+    ontology_purl: http://purl.obolibrary.org/obo/prefer/prefer-basic.obo
+    title: Basic PREFER (OBO version)
+  - description: Basic version, no inter-ontology axioms
+    format: json
+    id: prefer/prefer-basic.json
+    ontology_purl: http://purl.obolibrary.org/obo/prefer/prefer-basic.json
+    title: Basic PREFER (OBOGraph-JSON version)
+  - description: complete PREFER but with no imports or external axioms
+    format: owl-rdf/xml
+    id: prefer/prefer-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/prefer/prefer-base.owl
+    title: PREFER base module
+  - description: complete PREFER but with no imports or external axioms
+    format: obo
+    id: prefer/prefer-base.obo
+    ontology_purl: http://purl.obolibrary.org/obo/prefer/prefer-base.obo
+    title: PREFER base module (OBO version)
+  - description: complete PREFER but with no imports or external axioms
+    format: json
+    id: prefer/prefer-base.json
+    ontology_purl: http://purl.obolibrary.org/obo/prefer/prefer-base.json
+    title: PREFER base module (OBOGraph-JSON version)
+  publications:
+  - id: https://arxiv.org/abs/2602.16755
+    title: 'PREFER: An Ontology for the PREcision FERmentation Community'
+  repository: https://github.com/Multiomics-Analytics-Group/prefer_ontology/
+  title: Precision Fermentation Ontology
+  tracker: https://github.com/Multiomics-Analytics-Group/prefer_ontology/issues
+  usages:
+  - description: PREFER is used for the integration of data for biofoundry precision
+      fermentation data.
+    publications:
+    - id: https://arxiv.org/abs/2602.16755
+      title: 'PREFER: An Ontology for the PREcision FERmentation Community'
+    type: annotation
+    user: http://bright.dtu.dk/
 - activity_status: active
   contact:
     email: wes_schafer@merck.com
@@ -8143,6 +8384,41 @@ ontologies:
     user: https://microbiomedb.org
 - activity_status: inactive
   contact:
+    email: mejino@u.washington.edu
+    github: Onard
+    label: Jose Leonardo (Onard) Mejino
+    orcid: 0000-0003-2105-2283
+  description: This is currently a slimmed down version of FMA
+  domain: anatomy and development
+  homepage: http://si.washington.edu/projects/fma
+  id: fma
+  layout: ontology_detail
+  license:
+    label: CC BY 3.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/3.0/
+  ontology_purl: http://purl.obolibrary.org/obo/fma.owl
+  page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
+  preferredPrefix: FMA
+  products:
+  - id: fma.owl
+    ontology_purl: http://purl.obolibrary.org/obo/fma.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18688289
+    title: Translating the Foundational Model of Anatomy into OWL
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18360535
+    title: 'The foundational model of anatomy in OWL: Experience and perspectives'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/16779026
+    title: 'Challenges in converting frame-based ontology into OWL: the Foundational
+      Model of Anatomy case-study'
+  repository: https://bitbucket.org/uwsig/fma
+  taxon:
+    id: NCBITaxon:9606
+    label: Homo sapiens
+  title: Foundational Model of Anatomy Ontology (subset)
+  tracker: https://bitbucket.org/uwsig/fma/issues
+- activity_status: inactive
+  contact:
     email: druzinsk@uic.edu
     github: RDruzinsky
     label: Robert Druzinsky
@@ -8357,41 +8633,10 @@ ontologies:
   tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
 - activity_status: inactive
   contact:
-    email: mejino@u.washington.edu
-    label: Onard Mejino
-  description: This is currently a slimmed down version of FMA
-  domain: anatomy and development
-  homepage: http://si.washington.edu/projects/fma
-  id: fma
-  layout: ontology_detail
-  license:
-    label: CC BY 3.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/3.0/
-  ontology_purl: http://purl.obolibrary.org/obo/fma.owl
-  page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
-  preferredPrefix: FMA
-  products:
-  - id: fma.owl
-    ontology_purl: http://purl.obolibrary.org/obo/fma.owl
-  publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/18688289
-    title: Translating the Foundational Model of Anatomy into OWL
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/18360535
-    title: 'The foundational model of anatomy in OWL: Experience and perspectives'
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/16779026
-    title: 'Challenges in converting frame-based ontology into OWL: the Foundational
-      Model of Anatomy case-study'
-  repository: https://bitbucket.org/uwsig/fma
-  taxon:
-    id: NCBITaxon:9606
-    label: Homo sapiens
-  title: Foundational Model of Anatomy Ontology (subset)
-  tracker: https://bitbucket.org/uwsig/fma/issues
-- activity_status: inactive
-  contact:
     email: topalis@imbb.forth.gr
+    github: topalis
     label: Pantelis Topalis
+    orcid: 0000-0002-1635-4810
   description: An application ontology to cover all aspects of malaria as well as
     the intervention attempts to control it.
   domain: health
@@ -8414,6 +8659,7 @@ ontologies:
   contact:
     email: louis@imbb.forth.gr
     label: Christos (Kitsos) Louis
+    orcid: 0000-0003-2497-2210
   description: Application ontology for entities related to insecticide resistance
     in mosquitos
   domain: environment
@@ -8464,6 +8710,7 @@ ontologies:
   contact:
     email: dsonensh@odu.edu
     label: Daniel Sonenshine
+    orcid: 0000-0001-9370-918X
   description: 'The anatomy of the Tick, <i>Families: Ixodidae, Argassidae</i>'
   domain: anatomy and development
   homepage: https://www.vectorbase.org/ontology-browser
@@ -8487,7 +8734,9 @@ ontologies:
 - activity_status: inactive
   contact:
     email: topalis@imbb.forth.gr
+    github: topalis
     label: Pantelis Topalis
+    orcid: 0000-0002-1635-4810
   description: A structured controlled vocabulary of the anatomy of mosquitoes.
   domain: anatomy and development
   homepage: https://www.vectorbase.org/ontology-browser
@@ -8557,14 +8806,12 @@ ontologies:
     label: Amphibia
   title: Amphibian gross anatomy
 - activity_status: inactive
-  contact:
-    email: adw_geeks@umich.edu
-    label: Animal Diversity Web technical staff
   domain: organisms
   homepage: http://www.animaldiversity.org
   id: adw
   is_obsolete: true
   layout: ontology_detail
+  mailing_list: adw_geeks@umich.edu
   title: Animal natural history and life history
 - activity_status: inactive
   contact:
@@ -8706,7 +8953,9 @@ ontologies:
 - activity_status: inactive
   contact:
     email: maria.herrero@kcl.ac.uk
-    label: Maria Herrero
+    github: mariaheza
+    label: Maria Herrero-Zazo
+    orcid: 0000-0001-7793-3296
   description: A formal represention for drug-drug interactions knowledge.
   domain: health
   homepage: http://labda.inf.uc3m.es/doku.php?id=es:labda_dinto
@@ -8853,13 +9102,11 @@ ontologies:
   - resources
   title: eagle-i resource ontology
 - activity_status: inactive
-  contact:
-    email: evoc@sanbi.ac.za
-    label: eVOC mailing list
   domain: anatomy and development
   id: ev
   is_obsolete: true
   layout: ontology_detail
+  mailing_list: evoc@sanbi.ac.za
   title: eVOC (Expressed Sequence Annotation for Humans)
 - activity_status: inactive
   contact:
@@ -8886,7 +9133,9 @@ ontologies:
 - activity_status: inactive
   contact:
     email: burkesquires@gmail.com
+    github: burkesquires
     label: Burke Squires
+    orcid: 0000-0001-9666-6285
   domain: health
   homepage: http://purl.obolibrary.org/obo/flu/
   id: flu
@@ -8898,14 +9147,12 @@ ontologies:
   title: Influenza Ontology
   tracker: http://purl.obolibrary.org/obo/flu/tracker
 - activity_status: inactive
-  contact:
-    email: po-discuss@plantontology.org
-    label: Plant Ontology Administrators
   domain: anatomy and development
   homepage: http://www.gramene.org/plant_ontology/
   id: gro
   is_obsolete: true
   layout: ontology_detail
+  mailing_list: po-discuss@plantontology.org
   title: Cereal Plant Gross Anatomy
 - activity_status: inactive
   contact:
@@ -8926,24 +9173,20 @@ ontologies:
   layout: ontology_detail
   title: Event (INOH pathway ontology)
 - activity_status: inactive
-  contact:
-    email: curator@inoh.org
-    label: INOH curators
   domain: chemistry and biochemistry
   homepage: http://www.inoh.org
   id: imr
   is_obsolete: true
   layout: ontology_detail
+  mailing_list: curator@inoh.org
   title: Molecule role (INOH Protein name/family name ontology)
 - activity_status: inactive
-  contact:
-    email: interhelp@ebi.ac.uk
-    label: InterPro Help
   domain: chemistry and biochemistry
   homepage: http://www.ebi.ac.uk/interpro/index.html
   id: ipr
   is_obsolete: true
   layout: ontology_detail
+  mailing_list: interhelp@ebi.ac.uk
   title: Protein Domains
 - activity_status: inactive
   contact:
@@ -8973,6 +9216,7 @@ ontologies:
   contact:
     email: julie@igbmc.u-strasbg.fr
     label: Julie Thompson
+    orcid: 0000-0003-4893-3478
   domain: chemistry and biochemistry
   homepage: http://www-igbmc.u-strasbg.fr/BioInfo/MAO/mao.html
   id: mao
@@ -9012,7 +9256,9 @@ ontologies:
 - activity_status: inactive
   contact:
     email: topalis@imbb.forth.gr
+    github: topalis
     label: Pantelis Topalis
+    orcid: 0000-0002-1635-4810
   description: An application ontology for use with miRNA databases.
   domain: chemistry and biochemistry
   homepage: http://code.google.com/p/mirna-ontology/
@@ -9085,7 +9331,9 @@ ontologies:
 - activity_status: inactive
   contact:
     email: schober@imbi.uni-freiburg.de
-    label: Schober Daniel
+    github: DSchober
+    label: Daniel Schober
+    orcid: 0000-0001-8014-6648
   description: Descriptors relevant to the experimental conditions of the Nuclear
     Magnetic Resonance (NMR) component in a metabolomics investigation.
   domain: investigations
@@ -9132,6 +9380,7 @@ ontologies:
 - activity_status: inactive
   contact:
     email: mbrochhausen@gmail.com
+    github: mbrochhausen
     label: Mathias Brochhausen
     orcid: 0000-0003-1834-3856
   description: An ontological version of MIABIS (Minimum Information About BIobank
@@ -9198,7 +9447,9 @@ ontologies:
 - activity_status: inactive
   contact:
     email: mb4@sanger.ac.uk
+    github: mberriman
     label: Matt Berriman
+    orcid: 0000-0002-9581-0377
   domain: anatomy and development
   homepage: http://www.sanger.ac.uk/Users/mb4/PLO/
   id: plo
@@ -9209,6 +9460,7 @@ ontologies:
   contact:
     email: satya30@uga.edu
     label: Satya S. Sahoo
+    orcid: 0000-0001-9190-4256
   domain: chemistry and biochemistry
   homepage: http://lsdis.cs.uga.edu/projects/glycomics/propreo/
   id: propreo
@@ -9232,7 +9484,9 @@ ontologies:
 - activity_status: inactive
   contact:
     email: slarson@ncmir.ucsd.edu
+    github: slarson
     label: Stephen Larson
+    orcid: 0000-0001-5397-6208
   domain: anatomy and development
   homepage: http://ccdb.ucsd.edu/CCDBWebSite/sao.html
   id: sao
@@ -9244,9 +9498,6 @@ ontologies:
     label: Homo sapiens
   title: Subcellular anatomy ontology
 - activity_status: inactive
-  contact:
-    email: psidev-gps-dev@lists.sourceforge.net
-    label: SEP developers via the PSI and MSI mailing lists
   description: A structured controlled vocabulary for the annotation of sample processing
     and separation techniques in scientific experiments.
   domain: investigations
@@ -9254,6 +9505,7 @@ ontologies:
   id: sep
   is_obsolete: true
   layout: ontology_detail
+  mailing_list: psidev-gps-dev@lists.sourceforge.net
   page: http://psidev.info/index.php?q=node/312
   products:
   - id: sep.owl
@@ -9264,7 +9516,9 @@ ontologies:
 - activity_status: inactive
   contact:
     email: Adrien.Coulet@loria.fr
+    github: coulet
     label: Adrien Coulet
+    orcid: 0000-0002-1466-062X
   domain: chemistry and biochemistry
   homepage: http://www.loria.fr/~coulet/sopharm2.0_description.php
   id: sopharm
