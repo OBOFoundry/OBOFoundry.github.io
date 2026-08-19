@@ -3,6 +3,9 @@ layout: ontology_detail
 id: rex
 title: Physico-chemical process
 description: An ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time.
+license:
+  label: CC BY 4.0
+  url: http://creativecommons.org/licenses/by/4.0/
 domain: chemistry and biochemistry
 products:
 - id: rex.owl
