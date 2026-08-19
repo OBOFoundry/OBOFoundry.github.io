@@ -51,8 +51,8 @@ dependencies:
 
 tracker: https://github.com/JuPoIm/promot/issues
 license:
-  url: http://creativecommons.org/licenses/by/4.0/
-  label: CC-BY-SA
+  url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  label: CC-BY-NC-SA
 activity_status: active
 ---
 
