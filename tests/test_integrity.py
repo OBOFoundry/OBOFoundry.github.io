@@ -217,16 +217,18 @@ class TestIntegrity(unittest.TestCase):
         """Tests that OBO PURL configuration is available."""
         existing_purl_configs = set()
         missing = set()
-        res = requests.get('https://api.github.com/repos/OBOFoundry/purl.obolibrary.org/git/trees/master?recursive=1')
+        res = requests.get(
+            "https://api.github.com/repos/OBOFoundry/purl.obolibrary.org/git/trees/master?recursive=1"
+        )
         self.assertEqual(
             200,
             res.status_code,
-            "Error while fetching Git tree for OBOFoundry/purl.obolibrary.org"
+            "Error while fetching Git tree for OBOFoundry/purl.obolibrary.org",
         )
         data = res.json()
-        for entry in data['tree']:
-            if entry['path'].startswith('config/'):
-                existing_purl_configs.add(entry['path'])
+        for entry in data["tree"]:
+            if entry["path"].startswith("config/"):
+                existing_purl_configs.add(entry["path"])
         for prefix, record in self.ontologies.items():
             if self.skip_inactive(record):
                 continue
@@ -235,9 +237,7 @@ class TestIntegrity(unittest.TestCase):
                 if filename not in existing_purl_configs:
                     missing.add(prefix)
         self.assertEqual(
-            set(),
-            missing,
-            msg=f"PURL configuration missing for {', '.join(missing)}"
+            set(), missing, msg=f"PURL configuration missing for {', '.join(missing)}"
         )
 
 

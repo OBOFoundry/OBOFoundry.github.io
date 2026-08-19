@@ -34,8 +34,7 @@ def main():
 
     """
     parser = ArgumentParser(
-        description="""
-  Takes ontologies.yml file and makes a triple file with shacl prefixes"""
+        description="Takes ontologies.yml file and makes a triple file with shacl prefixes"
     )
     parser.add_argument("input")
     args = parser.parse_args()
