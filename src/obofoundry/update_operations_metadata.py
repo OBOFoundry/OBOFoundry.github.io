@@ -24,8 +24,7 @@ def _main(path: Path):
         orcid = member["orcid"]
         if "wikidata" not in member or "github" not in member:
             tqdm.write(f"{member['name']} ({orcid}) missing wikidata or github")
-            sparql = dedent(
-                f"""\
+            sparql = dedent(f"""\
                 SELECT DISTINCT ?item ?github
                 WHERE
                 {{
@@ -33,8 +32,7 @@ def _main(path: Path):
                     OPTIONAL {{ ?item wdt:P2037 ?github }} .
                 }}
                 LIMIT 1
-                """
-            )
+                """)
             res = query_wikidata(sparql)
             if res:
                 member["wikidata"] = res[0]["item"]["value"].removeprefix(

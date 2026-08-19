@@ -15,11 +15,9 @@ import yaml
 
 
 def main():
-    parser = ArgumentParser(
-        description="""
+    parser = ArgumentParser(description="""
   Takes a YAML file containing information for various ontologies and a metadata file specifying
-  the sorting order for ontologies, and then produces a sorted version input YAML"""
-    )
+  the sorting order for ontologies, and then produces a sorted version input YAML""")
     parser.add_argument(
         "unsorted_yaml",
         type=str,
