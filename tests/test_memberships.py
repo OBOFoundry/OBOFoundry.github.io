@@ -58,12 +58,14 @@ class TestMembershipData(unittest.TestCase):
                 self.assertFalse(
                     person.affiliation.ror is None
                     and person.affiliation.wikidata is None,
-                    msg=dedent(f"""\
+                    msg=dedent(
+                        f"""\
                         No ROR nor Wikidata identifier was curated for {person.name}.
                         Please search https://ror.org for their affiliation. If none exists, please
                         submit a new ROR ID request (linked from bottom of homepage). If the request
                         is rejected, create a Wikidata entry and annotate in the `affiliation_wikidata` field.
-                    """.rstrip()),
+                    """.rstrip()
+                    ),
                 )
                 self.assertTrue(
                     OFOC_IMAGES.joinpath(person.github).with_suffix(".png").is_file(),
