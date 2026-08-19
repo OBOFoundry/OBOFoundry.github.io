@@ -53,7 +53,7 @@ def get_sort_order(grid):
     sort_order = []
     if ".csv" in grid:
         separator = ","
-    elif ".tsv" or ".txt" in grid:
+    elif ".tsv" in grid or ".txt" in grid:
         separator = "\t"
     else:
         print("%s must be tab- or comma-separated.", file=sys.stderr)
