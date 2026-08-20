@@ -7,6 +7,7 @@ license:
   label: CC BY 4.0
   url: http://creativecommons.org/licenses/by/4.0/
 domain: chemistry and biochemistry
+tracker: https://github.com/cmungall/rex/issues
 products:
 - id: rex.owl
 activity_status: orphaned
