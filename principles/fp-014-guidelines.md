@@ -7,7 +7,7 @@ GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; 
 
 ## Summary
 
-The ontology provider MUST follow the recommendations and requirements outlined on the [Ontology Standardization Guidelines]() and the [Ontology Project Management Guidelines]() pages.
+The ontology provider MUST follow the recommendations and requirements outlined on the [Ontology Standardization Guidelines](https://obofoundry.org/docs/StandardizationGuidelines.html) and the [Ontology Project Management Guidelines](https://obofoundry.org/docs/DevelopmentGuidelines.html) pages.
 
 ## Purpose
 
@@ -19,6 +19,8 @@ As the guidelines are expected to have more-frequent additions and refinements o
 
 
 ## Implementation
+
+Review and follow the guidelines given on the pages [Ontology Standardization Guidelines](https://obofoundry.org/docs/StandardizationGuidelines.html) and [Ontology Project Management Guidelines](https://obofoundry.org/docs/DevelopmentGuidelines.html).
 
 ## Examples
 
