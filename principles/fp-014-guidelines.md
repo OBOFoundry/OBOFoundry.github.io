@@ -24,7 +24,7 @@ Review and follow the guidelines given on the pages [Ontology Standardization Gu
 ## Examples
 
 ## Criteria for Review
-
+(don't want to list everything HERE, so need to say the criteria in a more general way)
 
 [This check is automatically validated.](checks/fp_014)
 
