@@ -7,7 +7,13 @@ title: Ontology Project Management Guidelines
 
 - Term migration
   - If a term created by ontology A would have a more suitable home in ontology B, that term can be transferred to the other ontology. There are two mechanisms for doing this: (1) <i>Term adoption</i>, whereby the term from ontology A is managed by ontology B while retaining the original identifier; and (2) <i>Term deprecation/recreation</i>, whereby the term is obsoleted in ontology A and recreated in ontology B using the latter's namespace.
-  - Give pros and cons of each mechanism (dn note for above: would 'term migration' be a better way to say 'term deprecation/recreation'?
+  - Give pros and cons of each mechanism
+    
+| Mechanism | Benefits | Pitfalls |
+| --------- | -------- | -------- |
+| Term Migration | <ul>is good <ul>is also good </ul>| is bad |
+| Term Deprecation/Recreation | is good | is bad |
+
   - Give examples 
   - Implications (licensing and other considerations)
   - Note: Regardless of the license used by the originating ontology, adopted terms will be subject to the stipulations of the license used by the adopting ontology.
