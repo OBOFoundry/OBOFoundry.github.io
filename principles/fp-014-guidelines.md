@@ -15,12 +15,11 @@ OBO Foundry ontologies commit to principles of ontology development designed to 
 
 ## Recommendations and Requirements
 
-As the guidelines are expected to have more-frequent additions and refinements over time relative to principles, ontology maintainers SHOULD review these pages every 6 months. (NOTE: we will tag any new additions or refinements with a tag 'new' or 'revised').
-
+As the guidelines are expected to have more-frequent additions and refinements over time relative to principles, ontology maintainers SHOULD review these pages every 6 months. (NOTE: We will tag any new additions or refinements with a tag 'new' or 'revised').
 
 ## Implementation
 
-Review and follow the guidelines given on the pages [Ontology Standardization Guidelines](https://obofoundry.org/docs/StandardizationGuidelines.html) and [Ontology Project Management Guidelines](https://obofoundry.org/docs/DevelopmentGuidelines.html).
+Review and follow the guidelines given on the pages [Ontology Standardization Guidelines](https://obofoundry.org/docs/StandardizationGuidelines.html) and [Ontology Project Management Guidelines](https://obofoundry.org/docs/DevelopmentGuidelines.html). Note that some of the guidelines indicated MUST be implemented, while others SHOULD or MAY be implemented.
 
 ## Examples
 
