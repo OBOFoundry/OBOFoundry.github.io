@@ -14,6 +14,7 @@ title: Ontology Project Management Guidelines
 | Term Migration | <ul><li>is good <li>is also good </ul>| <ul><li>is bad </ul>|
 | Term Deprecation/Recreation | <ul><li>is good </ul>| <ul><li>is bad</ul> |
 
+migration involves removing the term from the ontology files (OWL or OBO) for ontology A and adding it to the ontology files for ontology B. The term should have that tag added (can't remember what it is)
   - Give examples 
   - Implications (licensing and other considerations)
   - Note: Regardless of the license used by the originating ontology, adopted terms will be subject to the stipulations of the license used by the adopting ontology.
