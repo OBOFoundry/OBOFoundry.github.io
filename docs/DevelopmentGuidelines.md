@@ -11,8 +11,8 @@ title: Ontology Project Management Guidelines
     
 | Mechanism | Benefits | Pitfalls |
 | --------- | -------- | -------- |
-| Term Migration | <ul>is good <ul>is also good </ul>| is bad |
-| Term Deprecation/Recreation | is good | is bad |
+| Term Migration | <ul><li>is good <li>is also good </ul>| <ul><li>is bad </ul>|
+| Term Deprecation/Recreation | <ul><li>is good </ul>| <ul><li>is bad</ul> |
 
   - Give examples 
   - Implications (licensing and other considerations)
