@@ -7,7 +7,7 @@ contact:
   github: Onard
   label: Jose Leonardo (Onard) Mejino
   orcid: 0000-0003-2105-2283
-description: 
+description: The Foundational Model of Anatomy Ontology (FMA) is a reference ontology for the domain of human anatomy.
 homepage: http://si.washington.edu/projects/fma
 license:
   label: CUSTOM
