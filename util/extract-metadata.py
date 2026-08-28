@@ -143,7 +143,7 @@ def validate_markdown(args):
                 errs.append(f"%s: {p}" % (fn))
             elif p.level == "warning":
                 warn.append(f"%s: {p}" % (fn))
-        (obj, md) = load_md(fn)
+        obj, md = load_md(fn)
         errs += validate_structure(obj)
     if len(warn) > 0:
         print("WARNINGS:", file=sys.stderr)
@@ -255,7 +255,7 @@ def concat_principles_yaml(args):
         with open(args.include, "r") as f:
             cfg = yaml.load(f.read(), Loader=yaml.SafeLoader)
     for fn in args.files:
-        (obj, md) = load_md(fn)
+        obj, md = load_md(fn)
         objs.append(obj)
     objs.sort(key=lambda x: x["id"])
     cfg["principles"] = objs
