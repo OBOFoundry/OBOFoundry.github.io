@@ -32,10 +32,10 @@ activity_status: inactive
 ---
 
 ⚠️ The OBO Foundry has maintained a bespoke OBO-format translation of the FMA for many years — restricted to is_a, part_of, and has_part relationships.
-This project (the bespoke OBO translation) has now been deprecated.
+That project (the bespoke OBO translation) has now been deprecated.
 This record now refers to the official version of FMA, which can be obtained from `http://purl.org/sig/ont/fma.owl`.
 
 **Notes**:
 
-- For a longer discussion on FMA's status in the OBO Foundry please follow [this issue](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/21).
+- For a discussion on FMA's status in the OBO Foundry please follow [this issue](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/21).
 - For more information see http://sig.biostr.washington.edu/projects/fm/FMA_Release/
