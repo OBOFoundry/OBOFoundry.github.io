@@ -7,7 +7,7 @@ contact:
   github: wdduncan
   label: Bill Duncan
   orcid: 0000-0001-9625-1899
-description: The Pain Ontology formalizes IASP's definition of pain as both an unpleasant physical and emotional experience, and it provides terms and axioms to represent the multidimensional aspects of pain, such as temporality, quality, extent, biological mechanism, and anatomical location.
+description: An ontology that formalizes IASP's definition of pain as both an unpleasant physical and emotional experience, and it provides terms and axioms to represent the multidimensional aspects of pain, such as temporality, quality, extent, biological mechanism, and anatomical location.
 domain: health
 homepage: https://github.com/uflcod/pain-ontology
 license:
