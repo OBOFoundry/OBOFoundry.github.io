@@ -1,18 +1,17 @@
 ---
 layout: ontology_detail
 id: fma
-title: Foundational Model of Anatomy Ontology (subset)
+title: Foundational Model of Anatomy Ontology
 contact:
   email: mejino@u.washington.edu
   github: Onard
   label: Jose Leonardo (Onard) Mejino
   orcid: 0000-0003-2105-2283
-description: This is currently a slimmed down version of FMA
-domain: anatomy and development
+description: The Foundational Model of Anatomy Ontology (FMA) is a reference ontology for the domain of human anatomy.
 homepage: http://si.washington.edu/projects/fma
 license:
-  label: CC BY 3.0
-  url: https://creativecommons.org/licenses/by/3.0/
+  label: CUSTOM
+  url: http://sig.biostr.washington.edu/projects/fm/FMA_Release
 page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
 preferredPrefix: FMA
 products:
@@ -32,4 +31,11 @@ tracker: https://bitbucket.org/uwsig/fma/issues
 activity_status: inactive
 ---
 
-Obo format translation of the FMA, omitting all relationships other than is_a, part_of and has_part. Future versions of fma_obo will include more relationships
+⚠️ The OBO Foundry has maintained a bespoke OBO-format translation of the FMA for many years — restricted to is_a, part_of, and has_part relationships.
+That project (the bespoke OBO translation) has now been deprecated.
+This record now refers to the official version of FMA, which can be obtained from `http://purl.org/sig/ont/fma.owl`.
+
+**Notes**:
+
+- For a discussion on FMA's status in the OBO Foundry please follow [this issue](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/21).
+- For more information see http://sig.biostr.washington.edu/projects/fm/FMA_Release/
