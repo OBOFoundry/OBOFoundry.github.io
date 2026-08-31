@@ -5452,6 +5452,62 @@ ontologies:
   title: Ontology of Vaccine Adverse Events
   tracker: https://github.com/OVAE-Ontology/ovae/issues
 - activity_status: active
+  contact:
+    email: wdduncan@gmail.com
+    github: wdduncan
+    label: Bill Duncan
+    orcid: 0000-0001-9625-1899
+  description: An ontology that formalizes IASP's definition of pain as both an unpleasant
+    physical and emotional experience, and it provides terms and axioms to represent
+    the multidimensional aspects of pain, such as temporality, quality, extent, biological
+    mechanism, and anatomical location.
+  domain: health
+  homepage: https://github.com/uflcod/pain-ontology
+  id: pain
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/pain.owl
+  preferredPrefix: PAIN
+  products:
+  - description: reasoned version of PAIN released in rdf/xml format
+    id: pain.owl
+    ontology_purl: http://purl.obolibrary.org/obo/pain.owl
+    title: The Pain Ontology (OWL edition)
+  - description: reasoned version of PAIN released in JSON format
+    id: pain.json
+    ontology_purl: http://purl.obolibrary.org/obo/pain.json
+    title: The Pain Ontology (JSON edition)
+  - description: non-reasoned version of PAIN released in rdf/xml format
+    id: pain-non-classified.owl
+    ontology_purl: http://purl.obolibrary.org/obo/pain-non-classified.owl
+    title: The Pain Ontology, non-classified (OWL edition)
+  - description: non-reasoned version of PAIN released in JSON format
+    id: pain-non-classified.json
+    ontology_purl: http://purl.obolibrary.org/obo/pain-non-classified.json
+    title: The Pain Ontology, non-classified (JSON edition)
+  - description: base module of PAIN released in rdf/xml format
+    id: pain-base.owl
+    ontology_purl: http://purl.obolibrary.org/obo/pain-base.owl
+    title: The Pain Ontology, base module (OWL edition)
+  - description: base module of PAIN released in JSON format
+    id: pain-base.json
+    ontology_purl: http://purl.obolibrary.org/obo/pain-base.json
+    title: The Pain Ontology, base module (JSON edition)
+  - description: simplified version of PAIN released in rdf/xml format
+    id: pain-simple.owl
+    ontology_purl: http://purl.obolibrary.org/obo/pain-simple.owl
+    title: The Pain Ontology, simple (OWL edition)
+  - description: simplified version of PAIN released in JSON format
+    id: pain-simple.json
+    ontology_purl: http://purl.obolibrary.org/obo/pain-simple.json
+    title: The Pain Ontology, simple (JSON edition)
+  repository: https://github.com/uflcod/pain-ontology
+  title: The Pain Ontology
+  tracker: https://github.com/uflcod/pain-ontology/issues
+- activity_status: active
   browsers:
   - label: BioPortal
     title: BioPortal Ontology Browser
