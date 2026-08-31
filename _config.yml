@@ -8255,6 +8255,10 @@ ontologies:
   homepage: http://www.ebi.ac.uk/chebi
   id: fix
   layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/fix.owl
   products:
   - id: fix.owl
@@ -8262,6 +8266,7 @@ ontologies:
   - id: fix.obo
     ontology_purl: http://purl.obolibrary.org/obo/fix.obo
   title: Physico-chemical methods and properties
+  tracker: https://github.com/cmungall/fix/issues
 - activity_status: orphaned
   description: The Mathematical Modelling Ontology (MAMO) is a classification of the
     types of mathematical models used mostly in the life sciences, their variables,
@@ -8287,11 +8292,16 @@ ontologies:
   domain: chemistry and biochemistry
   id: rex
   layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: http://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/rex.owl
   products:
   - id: rex.owl
     ontology_purl: http://purl.obolibrary.org/obo/rex.owl
   title: Physico-chemical process
+  tracker: https://github.com/cmungall/rex/issues
 - activity_status: orphaned
   contact:
     email: cjmungall@lbl.gov
@@ -8399,41 +8409,6 @@ ontologies:
       platform for integrating, mining and analyzing microbiome experiments.
     type: annotation and query
     user: https://microbiomedb.org
-- activity_status: inactive
-  contact:
-    email: mejino@u.washington.edu
-    github: Onard
-    label: Jose Leonardo (Onard) Mejino
-    orcid: 0000-0003-2105-2283
-  description: This is currently a slimmed down version of FMA
-  domain: anatomy and development
-  homepage: http://si.washington.edu/projects/fma
-  id: fma
-  layout: ontology_detail
-  license:
-    label: CC BY 3.0
-    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: https://creativecommons.org/licenses/by/3.0/
-  ontology_purl: http://purl.obolibrary.org/obo/fma.owl
-  page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
-  preferredPrefix: FMA
-  products:
-  - id: fma.owl
-    ontology_purl: http://purl.obolibrary.org/obo/fma.owl
-  publications:
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/18688289
-    title: Translating the Foundational Model of Anatomy into OWL
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/18360535
-    title: 'The foundational model of anatomy in OWL: Experience and perspectives'
-  - id: https://www.ncbi.nlm.nih.gov/pubmed/16779026
-    title: 'Challenges in converting frame-based ontology into OWL: the Foundational
-      Model of Anatomy case-study'
-  repository: https://bitbucket.org/uwsig/fma
-  taxon:
-    id: NCBITaxon:9606
-    label: Homo sapiens
-  title: Foundational Model of Anatomy Ontology (subset)
-  tracker: https://bitbucket.org/uwsig/fma/issues
 - activity_status: inactive
   contact:
     email: druzinsk@uic.edu
@@ -8648,6 +8623,40 @@ ontologies:
     label: Homo sapiens
   title: Human developmental anatomy, abstract
   tracker: https://github.com/obophenotype/human-developmental-anatomy-ontology/issues
+- activity_status: inactive
+  contact:
+    email: mejino@u.washington.edu
+    github: Onard
+    label: Jose Leonardo (Onard) Mejino
+    orcid: 0000-0003-2105-2283
+  description: The Foundational Model of Anatomy Ontology (FMA) is a reference ontology
+    for the domain of human anatomy.
+  homepage: http://si.washington.edu/projects/fma
+  id: fma
+  layout: ontology_detail
+  license:
+    label: CUSTOM
+    url: http://sig.biostr.washington.edu/projects/fm/FMA_Release
+  ontology_purl: http://purl.obolibrary.org/obo/fma.owl
+  page: http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy
+  preferredPrefix: FMA
+  products:
+  - id: fma.owl
+    ontology_purl: http://purl.obolibrary.org/obo/fma.owl
+  publications:
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18688289
+    title: Translating the Foundational Model of Anatomy into OWL
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/18360535
+    title: 'The foundational model of anatomy in OWL: Experience and perspectives'
+  - id: https://www.ncbi.nlm.nih.gov/pubmed/16779026
+    title: 'Challenges in converting frame-based ontology into OWL: the Foundational
+      Model of Anatomy case-study'
+  repository: https://bitbucket.org/uwsig/fma
+  taxon:
+    id: NCBITaxon:9606
+    label: Homo sapiens
+  title: Foundational Model of Anatomy Ontology
+  tracker: https://bitbucket.org/uwsig/fma/issues
 - activity_status: inactive
   contact:
     email: topalis@imbb.forth.gr
