@@ -6421,7 +6421,9 @@ _:b194  <http://www.w3.org/2000/01/rdf-schema#label>  "Jade Hotchkiss" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of physico-chemical methods and properties." ;
         <http://purl.org/dc/elements/1.1/title>  "Physico-chemical methods and properties" ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/cmungall/fix/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fix.owl" ;
         <http://www.w3.org/ns/dcat#contactPoint>  _:b197 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/fix.owl> ;
@@ -6455,7 +6457,9 @@ _:b197  <http://www.w3.org/2000/01/rdf-schema#label>  "chEBI" .
         <http://obofoundry.github.io/vocabulary/activity_status>  "orphaned" ;
         <http://purl.org/dc/elements/1.1/description>  "An ontology of physico-chemical processes, i.e. physico-chemical changes occurring in course of time." ;
         <http://purl.org/dc/elements/1.1/title>  "Physico-chemical process" ;
+        <http://purl.org/dc/terms/1.1/license>  <http://creativecommons.org/licenses/by/4.0/> ;
         <http://purl.org/dc/terms/1.1/theme>  "chemistry and biochemistry" ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/cmungall/rex/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/rex.owl" ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/rex.owl> .
 
@@ -6531,39 +6535,6 @@ _:b195  <http://www.w3.org/2000/01/rdf-schema#label>  "Jie Zheng" ;
 <http://purl.obolibrary.org/obo/eupath.owl>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/eupath.owl" .
 
-<http://purl.obolibrary.org/obo/fma>
-        <http://identifiers.org/preferredPrefix>  "FMA" ;
-        <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
-        <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
-        <http://purl.org/dc/elements/1.1/description>  "This is currently a slimmed down version of FMA" ;
-        <http://purl.org/dc/elements/1.1/title>  "Foundational Model of Anatomy Ontology (subset)" ;
-        <http://purl.org/dc/terms/1.1/license>  <https://creativecommons.org/licenses/by/3.0/> ;
-        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/18688289> ;
-        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/18360535> ;
-        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/16779026> ;
-        <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
-        <http://usefulinc.com/ns/doap#bug-database>  "https://bitbucket.org/uwsig/fma/issues" ;
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fma.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b200 ;
-        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/fma.owl> ;
-        <http://xmlns.com/foaf/0.1/homepage>  <http://si.washington.edu/projects/fma> ;
-        <http://xmlns.com/foaf/0.1/page>  <http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy> .
-
-<https://www.ncbi.nlm.nih.gov/pubmed/18688289>
-        <http://purl.org/dc/elements/1.1/title>  "Translating the Foundational Model of Anatomy into OWL" .
-
-<https://www.ncbi.nlm.nih.gov/pubmed/18360535>
-        <http://purl.org/dc/elements/1.1/title>  "The foundational model of anatomy in OWL: Experience and perspectives" .
-
-<https://www.ncbi.nlm.nih.gov/pubmed/16779026>
-        <http://purl.org/dc/elements/1.1/title>  "Challenges in converting frame-based ontology into OWL: the Foundational Model of Anatomy case-study" .
-
-_:b200  <http://www.w3.org/2000/01/rdf-schema#label>  "Jose Leonardo (Onard) Mejino" ;
-        <http://xmlns.com/foaf/0.1/mbox>  "mejino@u.washington.edu" .
-
-<http://purl.obolibrary.org/obo/fma.owl>
-        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fma.owl" .
-
 <http://purl.obolibrary.org/obo/mfmo>
         <http://identifiers.org/preferredPrefix>  "MFMO" ;
         <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
@@ -6575,11 +6546,11 @@ _:b200  <http://www.w3.org/2000/01/rdf-schema#label>  "Jose Leonardo (Onard) Mej
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/RDruzinsky/feedontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/mfmo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b201 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b200 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/mfmo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/rdruzinsky/feedontology> .
 
-_:b201  <http://www.w3.org/2000/01/rdf-schema#label>  "Robert Druzinsky" ;
+_:b200  <http://www.w3.org/2000/01/rdf-schema#label>  "Robert Druzinsky" ;
         <http://xmlns.com/foaf/0.1/mbox>  "druzinsk@uic.edu" .
 
 <http://purl.obolibrary.org/obo/mfmo.owl>
@@ -6600,11 +6571,11 @@ _:b111  <http://www.w3.org/2000/01/rdf-schema#label>  "Carrine Blank" ;
         <http://purl.org/dc/terms/1.1/theme>  "investigations" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/linikujp/OGSF/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ogsf.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b202 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b201 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ogsf.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/linikujp/OGSF> .
 
-_:b202  <http://www.w3.org/2000/01/rdf-schema#label>  "Asiyah Yu Lin" ;
+_:b201  <http://www.w3.org/2000/01/rdf-schema#label>  "Asiyah Yu Lin" ;
         <http://xmlns.com/foaf/0.1/mbox>  "linikujp@gmail.com" .
 
 <http://purl.obolibrary.org/obo/ogsf.owl>
@@ -6619,13 +6590,13 @@ _:b202  <http://www.w3.org/2000/01/rdf-schema#label>  "Asiyah Yu Lin" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/developmental-stage-ontologies/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/olatdv.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b203 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b202 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/olatdv.obo> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/olatdv.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/developmental-stage-ontologies/wiki/OlatDv> ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/developmental-stage-ontologies> .
 
-_:b203  <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
+_:b202  <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
         <http://xmlns.com/foaf/0.1/mbox>  "frederic.bastian@unil.ch" .
 
 <http://purl.obolibrary.org/obo/olatdv.obo>
@@ -6643,13 +6614,13 @@ _:b203  <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/developmental-stage-ontologies/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/pdumdv.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b204 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b203 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pdumdv.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/pdumdv.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/developmental-stage-ontologies/wiki/PdumDv> ;
         <http://xmlns.com/foaf/0.1/page>  <https://github.com/obophenotype/developmental-stage-ontologies> .
 
-_:b204  <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
+_:b203  <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
         <http://xmlns.com/foaf/0.1/mbox>  "frederic.bastian@unil.ch" .
 
 <http://purl.obolibrary.org/obo/pdumdv.owl>
@@ -6667,11 +6638,11 @@ _:b204  <http://www.w3.org/2000/01/rdf-schema#label>  "Frédéric Bastian" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/human-developmental-anatomy-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/aeo.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b205 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b204 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/aeo.owl> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/human-developmental-anatomy-ontology/> .
 
-_:b205  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
+_:b204  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
         <http://xmlns.com/foaf/0.1/mbox>  "J.Bard@ed.ac.uk" .
 
 <http://purl.obolibrary.org/obo/aeo.owl>
@@ -6686,7 +6657,7 @@ _:b205  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/cephalopod-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ceph.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b206 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b205 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ceph.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ceph.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/cephalopod-ontology> .
@@ -6694,7 +6665,7 @@ _:b205  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
 <http://purl.obolibrary.org/obo/NCBITaxon_6605>
         <http://www.w3.org/2000/01/rdf-schema#label>  "Cephalopod" .
 
-_:b206  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
+_:b205  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://xmlns.com/foaf/0.1/mbox>  "cjmungall@lbl.gov" .
 
 <http://purl.obolibrary.org/obo/ceph.owl>
@@ -6718,7 +6689,7 @@ _:b206  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
         <http://purl.org/dc/terms/1.1/theme>  "anatomy and development" ;
         <http://usefulinc.com/ns/doap#bug-database>  "https://github.com/obophenotype/human-developmental-anatomy-ontology/issues" ;
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ehdaa2.owl" ;
-        <http://www.w3.org/ns/dcat#contactPoint>  _:b207 ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b206 ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ehdaa2.owl> ;
         <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/ehdaa2.obo> ;
         <http://xmlns.com/foaf/0.1/homepage>  <https://github.com/obophenotype/human-developmental-anatomy-ontology> .
@@ -6726,7 +6697,7 @@ _:b206  <http://www.w3.org/2000/01/rdf-schema#label>  "Chris Mungall" ;
 <https://www.ncbi.nlm.nih.gov/pubmed/22973865>
         <http://purl.org/dc/elements/1.1/title>  "A new ontology (structured hierarchy) of human developmental anatomy for the first 7 weeks (Carnegie stages 1-20)." .
 
-_:b207  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
+_:b206  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
         <http://xmlns.com/foaf/0.1/mbox>  "J.Bard@ed.ac.uk" .
 
 <http://purl.obolibrary.org/obo/ehdaa2.owl>
@@ -6734,6 +6705,41 @@ _:b207  <http://www.w3.org/2000/01/rdf-schema#label>  "Jonathan Bard" ;
 
 <http://purl.obolibrary.org/obo/ehdaa2.obo>
         <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/ehdaa2.obo" .
+
+<http://purl.obolibrary.org/obo/fma>
+        <http://identifiers.org/preferredPrefix>  "FMA" ;
+        <http://obofoundry.github.io/vocabulary/activity_status>  "inactive" ;
+        <http://purl.obolibrary.org/obo/IAO_0000136>  <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        <http://purl.org/dc/elements/1.1/description>  "The Foundational Model of Anatomy Ontology (FMA) is a reference ontology for the domain of human anatomy." ;
+        <http://purl.org/dc/elements/1.1/title>  "Foundational Model of Anatomy Ontology" ;
+        <http://purl.org/dc/terms/1.1/license>  <http://sig.biostr.washington.edu/projects/fm/FMA_Release> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/18688289> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/18360535> ;
+        <http://purl.org/dc/terms/1.1/publication>  <https://www.ncbi.nlm.nih.gov/pubmed/16779026> ;
+        <http://usefulinc.com/ns/doap#bug-database>  "https://bitbucket.org/uwsig/fma/issues" ;
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fma.owl" ;
+        <http://www.w3.org/ns/dcat#contactPoint>  _:b207 ;
+        <http://www.w3.org/ns/dcat#distribution>  <http://purl.obolibrary.org/obo/fma.owl> ;
+        <http://xmlns.com/foaf/0.1/homepage>  <http://si.washington.edu/projects/fma> ;
+        <http://xmlns.com/foaf/0.1/page>  <http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy> .
+
+<http://sig.biostr.washington.edu/projects/fm/FMA_Release>
+        <http://www.w3.org/2000/01/rdf-schema#label>  "CUSTOM" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/18688289>
+        <http://purl.org/dc/elements/1.1/title>  "Translating the Foundational Model of Anatomy into OWL" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/18360535>
+        <http://purl.org/dc/elements/1.1/title>  "The foundational model of anatomy in OWL: Experience and perspectives" .
+
+<https://www.ncbi.nlm.nih.gov/pubmed/16779026>
+        <http://purl.org/dc/elements/1.1/title>  "Challenges in converting frame-based ontology into OWL: the Foundational Model of Anatomy case-study" .
+
+_:b207  <http://www.w3.org/2000/01/rdf-schema#label>  "Jose Leonardo (Onard) Mejino" ;
+        <http://xmlns.com/foaf/0.1/mbox>  "mejino@u.washington.edu" .
+
+<http://purl.obolibrary.org/obo/fma.owl>
+        <http://www.w3.org/ns/dcat#accessURL>  "http://purl.obolibrary.org/obo/fma.owl" .
 
 _:b196  <http://www.w3.org/2000/01/rdf-schema#label>  "Pantelis Topalis" ;
         <http://xmlns.com/foaf/0.1/mbox>  "topalis@imbb.forth.gr" .
