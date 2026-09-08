@@ -8,12 +8,12 @@ title: Ontology Project Management Guidelines
 - Term migration
   - Definition: The transfer of responsibility of term maintenance from one ontology to another.
   - Purpose: If a term created by ontology A would have a more suitable home in ontology B, that term can be transferred to the other ontology.
-  - Mechanisms: There are two mechanisms for doing this: (1) <i>Term adoption</i>, whereby the term from ontology A is managed by ontology B while retaining the original identifier; and (2) <i>Term deprecation/recreation</i>, whereby the term is obsoleted in ontology A and recreated in ontology B using the latter's namespace. An overview of the advantages and disadvantages is given in the table below
+  - Mechanisms: There are two mechanisms for doing this: (1) <i>Term adoption</i>, whereby the term from ontology A is managed by ontology B while retaining its original identifier; and (2) <i>Term deprecation/recreation</i>, whereby the term is obsoleted in ontology A and recreated in ontology B using the latter's namespace. An overview of the advantages and disadvantages for each of these mechanisms is given in the table below:
     
-| Mechanism | Advantages | Disadvantages |
-| --------- | -------- | -------- |
-| Term Adoption | <ul><li>is good <li>is also good </ul>| <ul><li>is bad </ul>|
-| Term Deprecation/Recreation | <ul><li>is good </ul>| <ul><li>is bad</ul> |
+    | Mechanism | Advantages | Disadvantages |
+    | --------- | -------- | -------- |
+    | Term Adoption | <ul><li>is good <li>is also good </ul>| <ul><li>is bad </ul>|
+    | Term Deprecation/Recreation | <ul><li>is good </ul>| <ul><li>is bad</ul> |
 
   - Implementations: Term adoption involves removing a term from the ontology files (OWL or OBO) for ontology A and adding it to the ontology files for ontology B. Adopted terms SHOULD be tagged with rdfs:isDefinedBy 
   - Examples 
