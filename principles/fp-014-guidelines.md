@@ -15,7 +15,7 @@ OBO Foundry ontologies commit to principles of ontology development designed to 
 
 ## Recommendations and Requirements
 
-As the guidelines are expected to have more-frequent additions and refinements over time relative to principles, ontology maintainers SHOULD review these pages every 6 months. (NOTE: We will tag any new additions or refinements with a tag 'new' or 'revised').
+As the guidelines are expected to have more-frequent additions and refinements over time relative to principles, ontology maintainers SHOULD review these pages every 6 months. (NOTE: New additions or refinements will be indicated).
 
 ## Implementation
 
