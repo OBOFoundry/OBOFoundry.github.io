@@ -183,10 +183,6 @@ build:
 build/ontologies:
 	mkdir -p $@
 
-# reboot the JVM for Py4J
-reboot:
-	bash ./util/reboot.sh
-
 # This version of ROBOT includes features for starting Py4J
 # This will be changed to ROBOT release once feature is released
 #.PHONY: build/robot.jar
@@ -200,22 +196,6 @@ build/robot.jar: | build
 build/robot-foreign.jar: | build
 	curl -o $@ -Lk \
 	https://build.obolibrary.io/job/ontodev/job/robot/job/562-feature/lastSuccessfulBuild/artifact/bin/robot.jar
-
-# Generate the initial dashboard results file
-# ALWAYS make sure nothing is running on port 25333
-# Then boot Py4J gateway to ROBOT on that port
-reports/dashboard.csv: registry/ontologies.yml | \
-reports/robot reports/principles build/ontologies build/robot.jar build/robot-foreign.jar
-	make reboot
-	./util/principles/dashboard.py $< $@ --big false
-
-reports/big-dashboard.csv: reports/dashboard.csv
-	make reboot
-	./util/principles/dashboard.py registry/ontologies.yml $@ --big true
-
-# Combine the dashboard files
-reports/dashboard-full.csv: reports/dashboard.csv reports/big-dashboard.csv registry/ontologies.yml
-	./util/principles/sort_tables.py $^ $@
 
 # Generate the HTML grid output for dashboard
 reports/dashboard.html: reports/dashboard-full.csv
