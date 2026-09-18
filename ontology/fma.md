@@ -28,6 +28,7 @@ taxon:
   id: NCBITaxon:9606
   label: Homo sapiens
 tracker: https://bitbucket.org/uwsig/fma/issues
+uri_prefix: http://purl.org/sig/ont/fma/
 activity_status: inactive
 ---
 

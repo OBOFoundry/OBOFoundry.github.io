@@ -22,6 +22,7 @@ publications:
   title: 'The chemical information ontology: provenance and disambiguation for chemical data on the biological semantic web'
 repository: https://github.com/semanticchemistry/semanticchemistry
 tracker: https://github.com/semanticchemistry/semanticchemistry/issues
+uri_prefix: http://semanticscience.org/resource/CHEMINF_
 usages:
 - description: ChEMBL uses CHEMINF in the RDF download
   examples:

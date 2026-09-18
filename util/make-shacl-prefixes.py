@@ -51,9 +51,8 @@ def main():
         #    continue
         # See https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1976
         prefix = ont.get("preferredPrefix", ont["id"].upper())
-        print(
-            f'{sep}[ sh:prefix "{prefix}" ; sh:namespace "http://purl.obolibrary.org/obo/{prefix}_"]'
-        )
+        uri_prefix = ont.get("uri_prefix", f"http://purl.obolibrary.org/obo/{prefix}_")
+        print(f'{sep}[ sh:prefix "{prefix}" ; sh:namespace "{uri_prefix}"]')
         sep = ","
     print("] .")
 
