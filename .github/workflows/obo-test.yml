@@ -23,7 +23,8 @@ jobs:
           python-version: '3.9'
       - name: Install requirements
         run: |
-          python3 -m pip install -r requirements.txt
+          pip install --upgrade pip setuptools wheel
+          pip install "tox<4.0.0"
       - name: Run tests
         run: |
           make test
