@@ -13,5 +13,6 @@ products:
 - id: mamo.owl
 repository: http://sourceforge.net/p/mamo-ontology
 tracker: http://sourceforge.net/p/mamo-ontology/tickets/
+uri_prefix: http://identifiers.org/mamo/MAMO_
 activity_status: orphaned
 ---
