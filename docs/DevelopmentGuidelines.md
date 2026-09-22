@@ -15,7 +15,7 @@ title: Ontology Project Management Guidelines
     | Term Adoption | <ul><li>is good <li>is also good </ul>| <ul><li>is bad </ul>|
     | Term Deprecation/Recreation | <ul><li>is good </ul>| <ul><li>is bad</ul> |
 
-  - <b>Implementation</b>: _Term adoption_ involves removing a term from the ontology files (OWL or OBO) for ontology A <b>without deprecating</b> and adding it to the ontology files for ontology B <b>with no changes</b>, except that adopted terms MUST be tagged with rdfs:isDefinedBy as follows:
+  - <b>Implementation</b>: _Term adoption_ involves removing a term from the base (that is, before imports) ontology files (OWL or OBO) for ontology A <b>without deprecating</b> and adding it to the ontology files for ontology B <b>with no changes</b>, except that adopted terms MUST be tagged with rdfs:isDefinedBy as follows:
       ```
       OWL format (Turtle serialization):
       <http://purl.obolibrary.org/obo/A_123> rdfs:isDefinedBy <http://purl.obolibrary.org/obo/b.owl>
