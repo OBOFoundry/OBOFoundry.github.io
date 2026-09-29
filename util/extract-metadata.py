@@ -143,7 +143,7 @@ def validate_markdown(args):
                 errs.append(f"%s: {p}" % (fn))
             elif p.level == "warning":
                 warn.append(f"%s: {p}" % (fn))
-        (obj, md) = load_md(fn)
+        obj, md = load_md(fn)
         errs += validate_structure(obj)
     if len(warn) > 0:
         print("WARNINGS:", file=sys.stderr)
@@ -158,19 +158,11 @@ def validate_markdown(args):
 
 def concat_ont_yaml(args):
     """
-    Given arguments with files and ouput,
+    Given arguments with files and output,
     read YAML files into an array, decorate the objects, and write an output YAML file.
     Output will be Foundry ontologies first, Library ontologies second, and obsolete last.
     Assumes that args.files is already sorted alphabetically.
     """
-
-    def has_obo_prefix(obj):
-        """
-        Check to see if the given object's 'uri_prefix' (if present) maps to the OBO PURL
-        """
-        return ("uri_prefix" not in obj) or (
-            obj["uri_prefix"] == "http://purl.obolibrary.org/obo/"
-        )
 
     def has_a_product(obj):
         """
@@ -185,11 +177,11 @@ def concat_ont_yaml(args):
         Each object has an identifier which either identifies the ontology sensu grouping
         project (e.g. 'go') or a specific product (e.g. 'go.obo' or 'go.owl').
 
-        By default each id is prefixed with the OBO prefix (unless is has an alternate prefix,
+        By default, each id is prefixed with the OBO prefix (unless it has an alternate prefix,
         in which case it is effectively ignored).
         """
         id = obj.get("id") or "None"
-        if "is_obsolete" not in obj and has_obo_prefix(obj):
+        if "is_obsolete" not in obj:
             obj["ontology_purl"] = "http://purl.obolibrary.org/obo/" + id + suffix
 
     def decorate_metadata(objs):
@@ -255,7 +247,7 @@ def concat_principles_yaml(args):
         with open(args.include, "r") as f:
             cfg = yaml.load(f.read(), Loader=yaml.SafeLoader)
     for fn in args.files:
-        (obj, md) = load_md(fn)
+        obj, md = load_md(fn)
         objs.append(obj)
     objs.sort(key=lambda x: x["id"])
     cfg["principles"] = objs

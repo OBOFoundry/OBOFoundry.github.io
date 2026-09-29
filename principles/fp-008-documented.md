@@ -22,13 +22,15 @@ Central to the issue of ontology documentation is ensuring transparency and trac
 
 ## Implementation
 ### Term adoption
-If a term that was previously defined in an identifier space belonging to ontology A (e.g. http://purl.obolibrary.org/obo/A_123) is adopted by ontology B (with a different identifier scheme, e.g. http://purl.obolibrary.org/obo/B_123) the following annotation assertion MUST be added to that term:
+If a term that was previously defined in an identifier space belonging to ontology A is adopted by ontology B (that is, while keeping the original IRI/CURIE) the following annotation assertion MUST be added to that term:
 
 OWL format (Turtle serialisation):
 `<http://purl.obolibrary.org/obo/A_123> rdfs:isDefinedBy <http://purl.obolibrary.org/obo/b.owl>`
 
 OBO format:
 `property_value: isDefinedBy http://purl.obolibrary.org/obo/b.owl`
+
+Note: Regardless of the license used by ontology A, terms adopted by ontology B will be subject to the license used by ontology B.
 
 ## Examples
 

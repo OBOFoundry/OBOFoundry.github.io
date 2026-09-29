@@ -37,7 +37,9 @@ New Ontology Requests SOP are fully documented [here](/roles/nor-manager).
 The goal of this SOP is to (1) provide a list of items to be checked during manual review of a newly-registered ontology (and the criteria used to review each item); and (2) provide a clear set of rules governing how suggested changes are communicated to the ontology submitter. These are the responsibility of the designated NOR Reviewer. Note that the NOR Reviewer does not need to assist submitters in understanding the NOR process, nor pass the NOR Dashboard, nor assist submitters to make registry metadata and PURL pull requests. Those are the responsibility of the NOR Manager (see [roles overview](https://obofoundry.org/roles/overview)). 
 
 #### What to Review/Criteria Used
-It is expected that a programmatic review using the Dashboard has already been done and the submitters have addressed any problems found. The purpose of the manual review is to check the ontology for issues that the Dashboard review does not cover. A sample of terms/axioms should be checked. In order for this review to be relatively quick (~ 2 hours), the NOR Reviewer is not expected to review all the terms/axioms.
+It is expected that a programmatic review using the Dashboard has already been done and the submitters have addressed any problems found. The purpose of the manual review is to check the ontology for issues that the Dashboard review does not cover. In order for this review to be relatively quick (~ 2 hours), the NOR Reviewer is not expected to review all the terms/axioms.
+
+The first step is to verify that the submitter has correctly and completely filled out the OBO Foundry Pre-registration Checklist. If not properly done, the reviewer should pause the review and inform the submitter that all checked items must be verified before the review will be continued. Repeat if necessary. Once this step is complete, continue the review.
 
 Check the following and provide a brief summary in the tracker issue for the new ontology request (note that a brief version of this list--and expected answers--are given in the [Ontology Review Workflow](https://obofoundry.org/docs/OntologiesReviewWorkflow.html)). All items of feedback must be provided using GitHub checklist syntax (`- [ ] TODO`) in order to track how far along they are in being addressed. Addressable issues identified as part of the review should be added to the new ontology’s issue tracker.
 1. Ontology scope. The new ontology must present use cases demonstrating its relevance to the life sciences.  Was the ontology developed using expert input or trusted scientific sources representative of the consensus in its target domain of knowledge? If the ontology was developed for a very specific purpose or community, representation and consensus need not be broad; however, this scope should be clearly stated.
@@ -46,14 +48,15 @@ All new terms MUST follow the [OBO identifier scheme](http://obofoundry.org/id-p
 There MUST NOT be a term with the same meaning available in another OBO Foundry ontology, ie there must not be a term referring to a concept that already exists in another OBO Foundry ontology (whether or not the label is identical). There SHOULD NOT be another OBO Foundry ontology whose scope covers any of the new terms (NCIT excluded, which was included in OBO as a bridge and does not commit to OBO principles). In the event that these conditions cannot be fulfilled, justification(s) MUST be provided. Such justification(s) include:
     - the demonstration that these terms are actually not the same (this happens when term meaning/concept is ambiguous); or
     - the other OBO Foundry ontology (for which the terms were in scope) was contacted and rejected the request for adding new terms in scope for that ontology.
-3. Correct use of imported terms. Does the ontology accurately reuse terms from other OBO ontologies?
+3. Appropriate ontology for newly-defined relations. If the submitting ontology contains new relations, the new relations should be reviewed for potential submission to RO (see “Creating New Relations” under [Principle 7 “Relations”](https://obofoundry.org/principles/fp-007-relations.html#implementation)).
+4. Correct use of imported terms. Does the ontology accurately reuse terms from other OBO ontologies?
 Are imported terms in appropriate hierarchies? That is, has the import of the term preserved its upper-level alignment?
 Are any additional axioms used for these terms correct in both a technical (e.g. passes reasoning) and substantive sense?
-4. Basic review of axiomatic patterns:
+5. Basic review of axiomatic patterns:
 Are existential restrictions used correctly? Typical mistakes include “R some (A and B and C)” to mean “(R some A and R some B and R some C)”
 Are axioms generally highly complex? If so, we should review a handful to ensure they are as intended.
-5. Appropriate use of [object properties](https://www.w3.org/TR/2004/REC-owl-semantics-20040210/#owl_ObjectProperty). Examples of incorrect usage include those based on some interpretation of the label of the object property but not actually fitting the property definition or domain and range. A typical example of incorrect usage is R some (A and B and C) to mean R some A and R some B and R some C.
-6. Responsiveness to suggested changes. A willingness to fix any identified issues during the review must be demonstrated. Issues expected to be addressed should be added using GitHub checklist syntax (`- [ ] TODO`) in the GitHub issue. The time limit for addressing these is 2 months; a longer period should be requested if needed.
+6. Appropriate use of [object properties](https://www.w3.org/TR/2004/REC-owl-semantics-20040210/#owl_ObjectProperty). Examples of incorrect usage include those based on some interpretation of the label of the object property but not actually fitting the property definition or domain and range. A typical example of incorrect usage is R some (A and B and C) to mean R some A and R some B and R some C.
+7. Responsiveness to suggested changes. A willingness to fix any identified issues during the review must be demonstrated. Issues expected to be addressed should be added using GitHub checklist syntax (`- [ ] TODO`) in the GitHub issue. The time limit for addressing these is 2 months; a longer period should be requested if needed.
 
 #### Communicating Suggested Revisions to the Submitter
 Part of the NOR review process includes helping submitters navigate through suggested improvements. Specifically, the designated NOR Reviewer acts as the official interface between the NOR submitter and the OBO community. As such, the designated NOR Reviewer is tasked with:
@@ -170,7 +173,7 @@ The current processes of nomination, acceptance and onboarding are described [he
      1. Get volunteers to sign up to lead upcoming meetings (if needed)
      2. Review [new ontology requests](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/new%20ontology)
      3. Report from Editorial Working Group (EWG) (Darren)
-     4. Report from Technical Working Group (TWG) (Ray)
+     4. Report from Technical Working Group (TWG) (James S)
      5. Review additional [open issues](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/attn%3A%20OFOC%20call) and [pull requests](https://github.com/OBOFoundry/OBOFoundry.github.io/pulls?q=is%3Apr+is%3Aopen+label%3A%22attn%3A+OFOC+call%22) that are labeled "attn: OFOC call"
 
 2. Check the issues labeled ["attn:OFOC call"](https://github.com/OBOFoundry/OBOFoundry.github.io/labels/attn%3A%20OFOC%20call) in the OBO Foundry GitHub repository. Pick one or two open issues you deem important and put them towards the end of the stub agenda, after the Working Group reports and before the review of additional open issues.

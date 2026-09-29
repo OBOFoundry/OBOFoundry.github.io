@@ -40,7 +40,7 @@ Detailed procedures for obsoleting a term are described on the OBO Academy page 
    - OWL format: Add an "owl:deprecated" annotation property with value of "true^xsd:boolean"
    - OBO format: Add an "is_obsolete: true" tag
 2. Prepend the string "obsolete " (including the space) to the term label <i>and</i> the `editor preferred term` (IAO:0000111), if present
-   - NOTE: To be consistent with [Principle 12](https://obofoundry.org/principles/fp-012-naming-conventions.html) "Naming Conventions", the syntax/format MUST be precisely as given above (that is, the exact string as shown, lowercase and space included, with no other punctuation before or after). Thus, the following are disallowed: "Obsolete {label}", "obsolete_{label}", "OBSOLETE {label}" (and variations thereof).
+   - NOTE: The indicated string is a controlled vocabulary that is to be applied regardless of language used for the term label. To be consistent with [Principle 12](https://obofoundry.org/principles/fp-012-naming-conventions.html) "Naming Conventions", the syntax/format MUST be precisely as given above (that is, the exact string as shown, lowercase and space included, with no other punctuation before or after). Thus, the following are disallowed: "Obsolete {label}", "obsolete_{label}", "OBSOLETE {label}" (and variations thereof).
 3. Remove all existing logical axioms from the term
 4. Remove or replace all usages of the term elsewhere in the ontology. For example, if an ontology has A part-of B, and B has been deprecated with replacement by C, then the corrected axiom would be A part-of C. Likewise, if A part-of B, and B part-of C, if B is deprecated, then any part-of axiom involving B MUST be removed; that is, by stating instead A part-of C.
 
@@ -71,7 +71,7 @@ Note that some older implementations in OWL used the CURIE method as shown below
 
 <i><b>To obsolete a term, the ontology developer</b></i> MAY:
 
-1. Prepend the string "OBSOLETE. " (this precise string, including the space) to the term definition. NOTE: This MUST be implemented consistently. That is, if applied at all, it has to be applied to every obsoleted term definition.
+1. Prepend the string "OBSOLETE. " (this precise string, including the space) to the term definition. NOTE: This MUST be implemented consistently. That is, if applied at all, it has to be applied to every obsoleted term definition. Note also that the indicated string is a controlled vocabulary that is to be applied regardless of language used for the term definition.
 2. Indicate the reason(s) for obsoleting:
    -  OWL: Use the `has obsolescence reason` annotation property from OMO ([IAO:0000231](http://purl.obolibrary.org/obo/IAO_0000231)) with the value set to the IRI of one of the individuals of the "obsolescence reason specification" term [IAO:0000225](http://purl.obolibrary.org/obo/IAO_0000225). See below for example.
    -  OBO: Use `relationship:` with the CURIE for the annotation property (IAO:0000231) and a CURIE for the specific reason (an individual from the "obsolescence reason specification" term [IAO:0000225](http://purl.obolibrary.org/obo/IAO_0000225)). See below for example. Note that older implementations often used alternative methods (described after the examples). These methods are still valid, but are not preferred.

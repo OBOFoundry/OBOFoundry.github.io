@@ -15,8 +15,8 @@ description: An ontology for modeling and understanding of pharmacokinetics in b
 domain: chemistry and biochemistry
 homepage: https://github.com/InSilicoVida-Research-Lab/pbpko
 license:
-  label: CC BY 3.0
-  url: http://creativecommons.org/licenses/by/3.0/
+  label: CC BY 4.0
+  url: http://creativecommons.org/licenses/by/4.0/
 preferredPrefix: PBPKO
 products:
 - id: pbpko.owl

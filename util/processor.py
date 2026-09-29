@@ -107,16 +107,15 @@ def extract_context(ontologies, args):
     """
     Writes to STDOUT a sorted JSON map from ontology prefixes to PURLs
     """
-
-    def has_obo_prefix(obj):
-        return ("uri_prefix" not in obj) or (
-            obj["uri_prefix"] == "http://purl.obolibrary.org/obo/"
-        )
-
     prefix_map = {}
     for obj in ontologies:
-        if has_obo_prefix(obj):
-            prefix = obj.get("preferredPrefix") or obj["id"].upper()
+        prefix = obj.get("preferredPrefix") or obj["id"].upper()
+        if uri_prefix := obj.get("uri_prefix"):
+            prefix_map[prefix] = {
+                "@id": uri_prefix,
+                "@prefix": True,
+            }
+        else:
             prefix_map[prefix] = {
                 "@id": "http://purl.obolibrary.org/obo/" + prefix + "_",
                 "@prefix": True,
