@@ -24,5 +24,6 @@ repository: https://github.com/allysonlister/swo
 tags:
 - software
 tracker: https://github.com/allysonlister/swo/issues
+uri_prefix: http://www.ebi.ac.uk/swo/SWO_
 activity_status: active
 ---
