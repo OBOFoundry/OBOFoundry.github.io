@@ -846,6 +846,7 @@
             "repository": "https://github.com/semanticchemistry/semanticchemistry",
             "title": "Chemical Information Ontology",
             "tracker": "https://github.com/semanticchemistry/semanticchemistry/issues",
+            "uri_prefix": "http://semanticscience.org/resource/CHEMINF_",
             "usages": [
                 {
                     "description": "ChEMBL uses CHEMINF in the RDF download",
@@ -9416,7 +9417,8 @@
                 "software"
             ],
             "title": "Software ontology",
-            "tracker": "https://github.com/allysonlister/swo/issues"
+            "tracker": "https://github.com/allysonlister/swo/issues",
+            "uri_prefix": "http://www.ebi.ac.uk/swo/SWO_"
         },
         {
             "activity_status": "active",
@@ -11758,7 +11760,8 @@
             ],
             "repository": "http://sourceforge.net/p/mamo-ontology",
             "title": "Mathematical modeling ontology",
-            "tracker": "http://sourceforge.net/p/mamo-ontology/tickets/"
+            "tracker": "http://sourceforge.net/p/mamo-ontology/tickets/",
+            "uri_prefix": "http://identifiers.org/mamo/MAMO_"
         },
         {
             "activity_status": "orphaned",
@@ -12259,7 +12262,8 @@
                 "label": "Homo sapiens"
             },
             "title": "Foundational Model of Anatomy Ontology",
-            "tracker": "https://bitbucket.org/uwsig/fma/issues"
+            "tracker": "https://bitbucket.org/uwsig/fma/issues",
+            "uri_prefix": "http://purl.org/sig/ont/fma/"
         },
         {
             "activity_status": "inactive",
