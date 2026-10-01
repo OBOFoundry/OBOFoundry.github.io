@@ -24,6 +24,14 @@ publications:
 repository: https://github.com/bio-ontology-research-group/unit-ontology
 tracker: https://github.com/bio-ontology-research-group/unit-ontology/issues
 usages:
+- description: UO has been used in various OBO ontologies, including the Ontology for Biomedical Investigations (OBI), The Statistical Methods Ontology (STATO), and HUGO-PSI Mass spectrometry ontology (MS).
+  examples:
+  - description: List of ontologies using at least one UO term (See section entitled "Info: Which ontologies use it?")
+    url: http://dashboard.obofoundry.org/dashboard/uo/dashboard.html
+  - description: List of ontologies using the term "length unit" (See section entitled "Ontologies that use the Class")
+    url: https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000001
+  type: owl_import
+  user: (multiple)
 - description: The Ontology for Biomedical Investigations (OBI) uses UO terms to specify the units of measurement values recorded in investigations.
   type: ontology
   user: http://obi-ontology.org/
