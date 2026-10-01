@@ -846,6 +846,7 @@
             "repository": "https://github.com/semanticchemistry/semanticchemistry",
             "title": "Chemical Information Ontology",
             "tracker": "https://github.com/semanticchemistry/semanticchemistry/issues",
+            "uri_prefix": "http://semanticscience.org/resource/CHEMINF_",
             "usages": [
                 {
                     "description": "ChEMBL uses CHEMINF in the RDF download",
@@ -1384,7 +1385,49 @@
             ],
             "repository": "https://github.com/CLO-Ontology/CLO",
             "title": "Cell Line Ontology",
-            "tracker": "https://github.com/CLO-Ontology/CLO/issues"
+            "tracker": "https://github.com/CLO-Ontology/CLO/issues",
+            "usages": [
+                {
+                    "description": "Cellosaurus, a knowledge resource for cell lines, provides cross-references to CLO IDs.",
+                    "examples": [
+                        {
+                            "description": "Mouse 10B9 cell",
+                            "url": "https://www.cellosaurus.org/CVCL_B379"
+                        }
+                    ],
+                    "user": "https://www.cellosaurus.org/"
+                },
+                {
+                    "description": "NIH PubChem records include cross-references to CLO IDs.",
+                    "examples": [
+                        {
+                            "description": "NCI-H226 (Cell)",
+                            "url": "https://pubchem.ncbi.nlm.nih.gov/cell/4004#section=Cell-Line-Ontology-ID"
+                        }
+                    ],
+                    "user": "https://pubchem.ncbi.nlm.nih.gov"
+                },
+                {
+                    "description": "NIH LINCS project uses CLO for cell line annotation.",
+                    "examples": [
+                        {
+                            "description": "In LINCS cell line metadata, the field \"CL_Alternative_ID\" specifies the CLO.",
+                            "url": "https://lincsproject.org/LINCS/files/Cell_Line_Metadata_2017.pdf"
+                        }
+                    ],
+                    "user": "https://lincsproject.org"
+                },
+                {
+                    "description": "Immune Epitope Database uses CLO for annotation",
+                    "examples": [
+                        {
+                            "description": "In the 'USE OF ONTOLOGIES IN THE IEDB' section, \"We continue to expand our use of ontologies for more fields, and have recently incorporated the MRO, Uberon, cell type and cell line ontologies\".",
+                            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6324067/"
+                        }
+                    ],
+                    "user": "https://www.iedb.org"
+                }
+            ]
         },
         {
             "activity_status": "active",
@@ -7571,6 +7614,80 @@
         },
         {
             "activity_status": "active",
+            "contact": {
+                "email": "wdduncan@gmail.com",
+                "github": "wdduncan",
+                "label": "Bill Duncan",
+                "orcid": "0000-0001-9625-1899"
+            },
+            "description": "An ontology that formalizes IASP's definition of pain as both an unpleasant physical and emotional experience, and it provides terms and axioms to represent the multidimensional aspects of pain, such as temporality, quality, extent, biological mechanism, and anatomical location.",
+            "domain": "health",
+            "homepage": "https://github.com/uflcod/pain-ontology",
+            "id": "pain",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "https://creativecommons.org/licenses/by/4.0/"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/pain.owl",
+            "preferredPrefix": "PAIN",
+            "products": [
+                {
+                    "description": "reasoned version of PAIN released in rdf/xml format",
+                    "id": "pain.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pain.owl",
+                    "title": "The Pain Ontology (OWL edition)"
+                },
+                {
+                    "description": "reasoned version of PAIN released in JSON format",
+                    "id": "pain.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pain.json",
+                    "title": "The Pain Ontology (JSON edition)"
+                },
+                {
+                    "description": "non-reasoned version of PAIN released in rdf/xml format",
+                    "id": "pain-non-classified.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pain-non-classified.owl",
+                    "title": "The Pain Ontology, non-classified (OWL edition)"
+                },
+                {
+                    "description": "non-reasoned version of PAIN released in JSON format",
+                    "id": "pain-non-classified.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pain-non-classified.json",
+                    "title": "The Pain Ontology, non-classified (JSON edition)"
+                },
+                {
+                    "description": "base module of PAIN released in rdf/xml format",
+                    "id": "pain-base.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pain-base.owl",
+                    "title": "The Pain Ontology, base module (OWL edition)"
+                },
+                {
+                    "description": "base module of PAIN released in JSON format",
+                    "id": "pain-base.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pain-base.json",
+                    "title": "The Pain Ontology, base module (JSON edition)"
+                },
+                {
+                    "description": "simplified version of PAIN released in rdf/xml format",
+                    "id": "pain-simple.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pain-simple.owl",
+                    "title": "The Pain Ontology, simple (OWL edition)"
+                },
+                {
+                    "description": "simplified version of PAIN released in JSON format",
+                    "id": "pain-simple.json",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/pain-simple.json",
+                    "title": "The Pain Ontology, simple (JSON edition)"
+                }
+            ],
+            "repository": "https://github.com/uflcod/pain-ontology",
+            "title": "The Pain Ontology",
+            "tracker": "https://github.com/uflcod/pain-ontology/issues"
+        },
+        {
+            "activity_status": "active",
             "browsers": [
                 {
                     "label": "BioPortal",
@@ -9300,7 +9417,8 @@
                 "software"
             ],
             "title": "Software ontology",
-            "tracker": "https://github.com/allysonlister/swo/issues"
+            "tracker": "https://github.com/allysonlister/swo/issues",
+            "uri_prefix": "http://www.ebi.ac.uk/swo/SWO_"
         },
         {
             "activity_status": "active",
@@ -11602,6 +11720,11 @@
             "homepage": "http://www.ebi.ac.uk/chebi",
             "id": "fix",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/4.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/fix.owl",
             "products": [
                 {
@@ -11613,7 +11736,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/fix.obo"
                 }
             ],
-            "title": "Physico-chemical methods and properties"
+            "title": "Physico-chemical methods and properties",
+            "tracker": "https://github.com/cmungall/fix/issues"
         },
         {
             "activity_status": "orphaned",
@@ -11636,7 +11760,8 @@
             ],
             "repository": "http://sourceforge.net/p/mamo-ontology",
             "title": "Mathematical modeling ontology",
-            "tracker": "http://sourceforge.net/p/mamo-ontology/tickets/"
+            "tracker": "http://sourceforge.net/p/mamo-ontology/tickets/",
+            "uri_prefix": "http://identifiers.org/mamo/MAMO_"
         },
         {
             "activity_status": "orphaned",
@@ -11644,6 +11769,11 @@
             "domain": "chemistry and biochemistry",
             "id": "rex",
             "layout": "ontology_detail",
+            "license": {
+                "label": "CC BY 4.0",
+                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
+                "url": "http://creativecommons.org/licenses/by/4.0/"
+            },
             "ontology_purl": "http://purl.obolibrary.org/obo/rex.owl",
             "products": [
                 {
@@ -11651,7 +11781,8 @@
                     "ontology_purl": "http://purl.obolibrary.org/obo/rex.owl"
                 }
             ],
-            "title": "Physico-chemical process"
+            "title": "Physico-chemical process",
+            "tracker": "https://github.com/cmungall/rex/issues"
         },
         {
             "activity_status": "orphaned",
@@ -11797,55 +11928,6 @@
                     "user": "https://microbiomedb.org"
                 }
             ]
-        },
-        {
-            "activity_status": "inactive",
-            "contact": {
-                "email": "mejino@u.washington.edu",
-                "github": "Onard",
-                "label": "Jose Leonardo (Onard) Mejino",
-                "orcid": "0000-0003-2105-2283"
-            },
-            "description": "This is currently a slimmed down version of FMA",
-            "domain": "anatomy and development",
-            "homepage": "http://si.washington.edu/projects/fma",
-            "id": "fma",
-            "layout": "ontology_detail",
-            "license": {
-                "label": "CC BY 3.0",
-                "logo": "http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png",
-                "url": "https://creativecommons.org/licenses/by/3.0/"
-            },
-            "ontology_purl": "http://purl.obolibrary.org/obo/fma.owl",
-            "page": "http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy",
-            "preferredPrefix": "FMA",
-            "products": [
-                {
-                    "id": "fma.owl",
-                    "ontology_purl": "http://purl.obolibrary.org/obo/fma.owl"
-                }
-            ],
-            "publications": [
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/18688289",
-                    "title": "Translating the Foundational Model of Anatomy into OWL"
-                },
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/18360535",
-                    "title": "The foundational model of anatomy in OWL: Experience and perspectives"
-                },
-                {
-                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/16779026",
-                    "title": "Challenges in converting frame-based ontology into OWL: the Foundational Model of Anatomy case-study"
-                }
-            ],
-            "repository": "https://bitbucket.org/uwsig/fma",
-            "taxon": {
-                "id": "NCBITaxon:9606",
-                "label": "Homo sapiens"
-            },
-            "title": "Foundational Model of Anatomy Ontology (subset)",
-            "tracker": "https://bitbucket.org/uwsig/fma/issues"
         },
         {
             "activity_status": "inactive",
@@ -12134,6 +12216,54 @@
             },
             "title": "Human developmental anatomy, abstract",
             "tracker": "https://github.com/obophenotype/human-developmental-anatomy-ontology/issues"
+        },
+        {
+            "activity_status": "inactive",
+            "contact": {
+                "email": "mejino@u.washington.edu",
+                "github": "Onard",
+                "label": "Jose Leonardo (Onard) Mejino",
+                "orcid": "0000-0003-2105-2283"
+            },
+            "description": "The Foundational Model of Anatomy Ontology (FMA) is a reference ontology for the domain of human anatomy.",
+            "homepage": "http://si.washington.edu/projects/fma",
+            "id": "fma",
+            "layout": "ontology_detail",
+            "license": {
+                "label": "CUSTOM",
+                "url": "http://sig.biostr.washington.edu/projects/fm/FMA_Release"
+            },
+            "ontology_purl": "http://purl.obolibrary.org/obo/fma.owl",
+            "page": "http://en.wikipedia.org/wiki/Foundational_Model_of_Anatomy",
+            "preferredPrefix": "FMA",
+            "products": [
+                {
+                    "id": "fma.owl",
+                    "ontology_purl": "http://purl.obolibrary.org/obo/fma.owl"
+                }
+            ],
+            "publications": [
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/18688289",
+                    "title": "Translating the Foundational Model of Anatomy into OWL"
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/18360535",
+                    "title": "The foundational model of anatomy in OWL: Experience and perspectives"
+                },
+                {
+                    "id": "https://www.ncbi.nlm.nih.gov/pubmed/16779026",
+                    "title": "Challenges in converting frame-based ontology into OWL: the Foundational Model of Anatomy case-study"
+                }
+            ],
+            "repository": "https://bitbucket.org/uwsig/fma",
+            "taxon": {
+                "id": "NCBITaxon:9606",
+                "label": "Homo sapiens"
+            },
+            "title": "Foundational Model of Anatomy Ontology",
+            "tracker": "https://bitbucket.org/uwsig/fma/issues",
+            "uri_prefix": "http://purl.org/sig/ont/fma/"
         },
         {
             "activity_status": "inactive",

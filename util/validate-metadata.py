@@ -317,7 +317,7 @@ def save_grid(metadata_grid, headers, grid_outfile):
     a sorted table of the full results."""
     if ".csv" in grid_outfile:
         separator = ","
-    elif ".tsv" or ".txt" in grid_outfile:
+    elif ".tsv" in grid_outfile or ".txt" in grid_outfile:
         separator = "\t"
     else:
         print("Grid file must be CSV, TSV, or TXT", file=sys.stderr)
