@@ -7196,9 +7196,9 @@ ontologies:
   id: uo
   layout: ontology_detail
   license:
-    label: CC BY 3.0
+    label: CC BY 4.0
     logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
-    url: http://creativecommons.org/licenses/by/3.0/
+    url: https://creativecommons.org/licenses/by/4.0/
   ontology_purl: http://purl.obolibrary.org/obo/uo.owl
   preferredPrefix: UO
   products:
@@ -7214,6 +7214,36 @@ ontologies:
   repository: https://github.com/bio-ontology-research-group/unit-ontology
   title: Units of measurement ontology
   tracker: https://github.com/bio-ontology-research-group/unit-ontology/issues
+  usages:
+  - description: UO has been used in various OBO ontologies, including the Ontology
+      for Biomedical Investigations (OBI), The Statistical Methods Ontology (STATO),
+      and HUGO-PSI Mass spectrometry ontology (MS).
+    examples:
+    - description: 'List of ontologies using at least one UO term (See section entitled
+        "Info: Which ontologies use it?")'
+      url: http://dashboard.obofoundry.org/dashboard/uo/dashboard.html
+    - description: List of ontologies using the term "length unit" (See section entitled
+        "Ontologies that use the Class")
+      url: https://ontobee.org/ontology/UO?iri=http://purl.obolibrary.org/obo/UO_0000001
+    type: owl_import
+    user: (multiple)
+  - description: The Ontology for Biomedical Investigations (OBI) uses UO terms to
+      specify the units of measurement values recorded in investigations.
+    type: ontology
+    user: http://obi-ontology.org/
+  - description: The HUPO-PSI mass spectrometry controlled vocabulary (PSI-MS) uses
+      UO terms as the units of the quantitative terms it defines for the mzML and
+      related PSI data standards.
+    publications:
+    - id: https://www.ncbi.nlm.nih.gov/pubmed/23482073
+      title: The HUPO proteomics standards initiative- mass spectrometry controlled
+        vocabulary
+    type: ontology
+    user: https://www.psidev.info/
+  - description: STATO, the statistical methods ontology, uses UO terms to type the
+      units of the statistical measures and parameters it defines.
+    type: ontology
+    user: http://stato-ontology.org/
 - activity_status: active
   contact:
     email: jmcl@ebi.ac.uk
