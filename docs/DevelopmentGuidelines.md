@@ -13,7 +13,7 @@ title: Ontology Project Management Guidelines
     | Mechanism | Advantages | Disadvantages |
     | --------- | -------- | -------- |
     | Term Adoption | <ul><li>Preserves the original identifier/IRI.</ul>| <ul><li>Term IRI will still resolve to original destination. If originating ontology 'A' fails to import the term from managing ontology 'B', the IRI will fail.</ul>|
-    | Term Deprecation/Recreation | <ul><li>Term IRI will resolve to the managing ontology 'B'. The original IRI from ontology A will still resolve, and that version will indicate the replacement.</ul>| <ul><li>Term identifier/IRI will change, with potential downstream effects.</ul><li>The "history" of the migrated term will be given only in the originating ontology. |
+    | Term Deprecation/Recreation | <ul><li>Term IRI will resolve to the managing ontology 'B'. The original IRI from ontology A will still resolve, and that version will indicate the replacement.</ul>| <ul><li>Term identifier/IRI will change, with potential downstream effects.<li>The "history" of the migrated term is not indicated by the managing ontology.</ul> |
 
   - <b>Implementation</b>: _Term adoption_ involves removing a term from the base (that is, before imports) ontology files (OWL or OBO) for ontology A <b>without deprecating</b> and adding it to the ontology files for ontology B <b>with no changes</b>, except that adopted terms MUST be tagged with rdfs:isDefinedBy as follows:
       ```
