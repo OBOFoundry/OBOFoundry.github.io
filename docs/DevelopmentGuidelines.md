@@ -8,12 +8,12 @@ title: Ontology Project Management Guidelines
 - Term migration
   - <b>Definition</b>: The transfer of responsibility of term maintenance from one ontology to another.
   - <b>Purpose</b>: If a term created by ontology A would have a more suitable home in ontology B, that term can be transferred to the other ontology.
-  - <b>Mechanism</b>: There are two mechanisms for doing this: (1) <i>Term adoption</i>, whereby the term from ontology A is maintained and managed by ontology B while retaining its original identifier; and (2) <i>Term deprecation/recreation</i>, whereby the term is obsoleted in ontology A and recreated in ontology B using the latter's namespace. An overview of the advantages and disadvantages for each of these mechanisms is given in the table below:
+  - <b>Mechanism</b>: There are two mechanisms for doing this: (1) <i>Term adoption</i>, whereby a term originating in ontology A is maintained and managed by ontology B while retaining its original identifier; and (2) <i>Term deprecation/recreation</i>, whereby a term is obsoleted in ontology A and recreated in ontology B using the latter's ID space. An overview of the advantages and disadvantages for each of these mechanisms is given in the table below:
     
     | Mechanism | Advantages | Disadvantages |
     | --------- | -------- | -------- |
     | Term Adoption | <ul><li>Preserves the original identifier/IRI.</ul>| <ul><li>Term IRI will still resolve to original destination. If originating ontology 'A' fails to import the term from managing ontology 'B', the IRI will fail.</ul>|
-    | Term Deprecation/Recreation | <ul><li>Term IRI will resolve to the managing ontology 'B'. The original IRI from ontology A will still resolve, and that version will indicate the replacement.</ul>| <ul><li>Term identifier/IRI will change, with potential downstream effects.</ul> |
+    | Term Deprecation/Recreation | <ul><li>Term IRI will resolve to the managing ontology 'B'. The original IRI from ontology A will still resolve, and that version will indicate the replacement.</ul>| <ul><li>Term identifier/IRI will change, with potential downstream effects.</ul><li>The "history" of the migrated term will be given only in the originating ontology. |
 
   - <b>Implementation</b>: _Term adoption_ involves removing a term from the base (that is, before imports) ontology files (OWL or OBO) for ontology A <b>without deprecating</b> and adding it to the ontology files for ontology B <b>with no changes</b>, except that adopted terms MUST be tagged with rdfs:isDefinedBy as follows:
       ```
