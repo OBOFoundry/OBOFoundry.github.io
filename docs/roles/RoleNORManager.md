@@ -33,7 +33,7 @@ The New Ontology Request (NOR) Manager has these basic duties:
   Dear @GITHUBNAME,
   
   Thank you for your submission. The review will be executed as a two stage process: 
-  - First, you will have to pass [OBO NOR Dashboard](https://obofoundry.org/obo-nor.github.io/dashboard/index.html). Pass means that no check _apart from `Users` and `Versioning` may be red_.
+  - First, you will have to pass [OBO NOR Dashboard](https://obofoundry.org/obo-nor.github.io/dashboard/index.html). Pass means that no check _apart from `Users` and `Versioning` may be red_. In addition, a new check is currently implemented: it consists in a lexical match of your original terms with those already existing in OBO Foundry published ontologies. The goal is to prevent the duplication of terms with similar meanings (cf. [Review SOP](http://obofoundry.org/docs/SOP.html#ROOM)). A list of terms that are potential duplicates will be provided soon.
   - After you have successfully passed the Dashboard you will be assigned an OBO Operations committee member to review the ontology. _The assigned reviewer is to be considered the final arbiter of requirements_; look to that reviewer's guidance regarding which suggestions made by other reviewers must be done, which suggestions are simply good to do but not required, and which should not be done.
   
   Usually, the review will result in an opportunity for you to improve the ontology. When the reviewer believes the ontology is ready for presentation to the OBO Operations Committee, they will present your ontology during an OBO Operations Call. This gives other members of the committee the opportunity to assess your work.
