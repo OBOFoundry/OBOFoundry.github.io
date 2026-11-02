@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>{{ site.name }}</title>
+    <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.name | escape }}</title>
     {%- include head.html -%}
 </head>
 
