@@ -3,9 +3,9 @@ layout: doc
 title: Operations Committee
 ---
 
-[Members](Membership.html) of the OBO Foundry Operations Committee aim to improve the flow of operations and make things happen within the [OBO Foundry](http://obofoundry.org). Such operations include, but are not limited to, establishment of policies, review of resources, outreach and education.
+[Members](Membership.html) of the OBO Foundry Operations Committee aim to improve the flow of operations and make things happen within the [OBO Foundry](http://obofoundry.org). Such operations include--but are not limited to--establishing policies, reviewing resources, providing outreach and education, and reviewing ontologies submitted to the Foundry.
 
-The OBO Operations commitee is committed to openness and accountability.
+The OBO Operations committee is committed to openness and accountability.
 In this spirit, we make the [meeting notes from OBO Operation calls](https://docs.google.com/document/d/1qhLFQL5IzTMUIBOtxJ5AqaEHcOCOQgNeXfvAb5O5P0A/edit) public.
 In addition, we strive to record decisions and action items as issues on the public [OBO GitHub tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues) as much as possible.
 
@@ -14,11 +14,11 @@ In addition, we strive to record decisions and action items as issues on the pub
 To best perform those activities, the OBO Foundry Operations Committee is divided into working groups. The working groups are self-organized and membership is contingent upon active participation. All active members are required to take on tasks to maintain active standing. Policies are proposed and voted upon by active members. A process for policy approval will be formalized.
 
 Current working groups include:
-- The [Editorial Working Group](EditorialWG.html) is involved in reviewing OBO Foundry ontologies and setting policies. Primary tasks are to conduct reviews, as well as all activities that enable that process, such as tool building for automated validation, website maintenance of the review results, or leading calls and taking notes.
+- The [Editorial Working Group](EditorialWG.html) is involved in documenting the policies set by the Operations Committee. This includes drafting and reviewing OBO Foundry Principles, SOPs, and other documentation, and providing recommendations for automated Principles validation.
 
 - The [Technical Working Group](TechnicalWG.html) is involved in maintaining the technical infrastructure for the OBO Foundry. This includes establishment of policies to be implemented in common tools, website maintenance, calls, etc.
 
-- The [Outreach Working Group](OutreachWG.html) is involved in public relations for the OBO Foundry. This includes monitoring and following up discussions on mailing lists, preparing documentation and educational materials, and presenting OBO Foundry activities at workshops, conferences, or other venues.
+- The [Outreach Working Group](OutreachWG.html) is involved in public relations for the OBO Foundry. This includes monitoring and following up discussions on mailing lists, preparing educational materials, and presenting OBO Foundry activities at workshops, conferences, or other venues.
 
 The members of the Operations Committee are listed [here](Membership.html).
 
