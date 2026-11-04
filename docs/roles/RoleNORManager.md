@@ -71,7 +71,7 @@ Until sufficiently reliable automated checks are available, the NOR Manager shal
 
 - **Release artefacts**: Verify that release artefacts are clearly identified and that at least one release file is provided which:
   - includes a version IRI,
-  - includes a `dc:license` annotation, and
+  - includes a `dcterms:license` annotation, and
   - is serialised in RDF/XML.  
   Additionally, verify that a “base” release is provided alongside the main release and that this base release **does not include imported terms**.
 
