@@ -1048,6 +1048,36 @@ ontologies:
   title: Clytia hemisphaerica Development and Anatomy Ontology
   tracker: https://github.com/EBISPOT/clyh_ontology/issues
 - activity_status: active
+  contact:
+    email: komalsyeda29@gmail.com
+    github: komi786
+    label: Komal Gilani
+    orcid: 0000-0001-7292-1026
+  description: CMEO (Clinical Metadata Exploration Ontology) is a semantic model for
+    representing and querying clinical cohort study metadata to support cross-study
+    discovery and metadata-driven harmonization.
+  domain: health
+  homepage: https://komi786.github.io/cmeo/
+  id: cmeo
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/cmeo.owl
+  preferredPrefix: CMEO
+  products:
+  - id: cmeo.owl
+    ontology_purl: http://purl.obolibrary.org/obo/cmeo.owl
+    title: CMEO main release
+  publications:
+  - id: https://doi.org/10.1186/s12911-025-03272-5
+    title: 'CMEO: a metadata-centric ontology for clinical studies exploration and
+      harmonization assessment'
+  repository: https://github.com/komi786/cmeo
+  title: Clinical Metadata Exploration Ontology
+  tracker: https://github.com/komi786/cmeo/issues
+- activity_status: active
   browsers:
   - label: RGD
     title: RGD Ontology Browser
