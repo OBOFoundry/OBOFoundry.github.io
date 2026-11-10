@@ -19,7 +19,7 @@ products:
   title: CMEO main release
 publications:
 - id: https://doi.org/10.1186/s12911-025-03272-5
-  title: "CMEO: a metadata-centric ontology for clinical studies exploration and harmonization assessment"
+  title: 'CMEO: a metadata-centric ontology for clinical studies exploration and harmonization assessment'
 repository: https://github.com/komi786/cmeo
 tracker: https://github.com/komi786/cmeo/issues
 activity_status: active
