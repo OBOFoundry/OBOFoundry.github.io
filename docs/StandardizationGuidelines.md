@@ -55,6 +55,7 @@ GO TO: [Technical Considerations](#technical-considerations) &#124; [Content Con
 
 - Link terms to issue tracker ([tracker item](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1097)) Any term (or set of terms) with an affiliated issue tracker item (term request or term discussion) SHOULD be linked to the relevant issue(s). Such linking SHOULD use the annotation property 'term tracker item' (IAO:0000233) and SHOULD NOT use a free text comment. The range for 'term tracker item' MUST consist solely of an IRI, without additional text, and the IRI MUST be for the issue tracker item.
 
+  - Example: [OMRSE:skilled nursing encounter](http://purl.obolibrary.org/obo/OMRSE_00000152) indicates a term tracker item [https://github.com/mcwdsi/OMRSE/issues/305](https://github.com/mcwdsi/OMRSE/issues/305).
 
 <!--
 THE FOLLOWING ARE COMMENTED OUT, KEPT HERE PENDING FINALIZATION
