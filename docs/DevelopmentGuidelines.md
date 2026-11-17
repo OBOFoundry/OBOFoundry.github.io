@@ -1,6 +1,6 @@
 ---
 layout: doc
-title: Ontology Project Management Guidelines
+title: Ontology Project Guidelines
 ---
 <!--
 GO TO: [Technical Considerations](#technical-considerations) &#124; [Content Considerations](#content-considerations) &#124; [Release Considerations](#release-considerations) &#124; [Social Considerations](#social-considerations) &#124; [Communication Considerations](#communication-considerations)
