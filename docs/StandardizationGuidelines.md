@@ -54,3 +54,30 @@ GO TO: [Technical Considerations](#technical-considerations) &#124; [Content Con
 - Link terms to issue tracker ([tracker item](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1097)) Any term (or set of terms) with an affiliated issue tracker item (term request or term discussion) SHOULD be linked to the relevant issue(s). Such linking SHOULD use the annotation property 'term tracker item' (IAO:0000233) and SHOULD NOT use a free text comment. The range for 'term tracker item' MUST consist solely of an IRI, without additional text, and the IRI MUST be for the issue tracker item.
 
 
+<!--
+THE FOLLOWING ARE COMMENTED OUT, KEPT HERE PENDING FINALIZATION
+
+technical:
+- Use standard synonym types [#2450](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2450)
+- Modeling metaclasses [#2454](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2454)
+- Ontology merging metadata [#1548](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1548)
+- ***MORE DISCUSSION NEEDED*** Ontology metadata requirements [#1365](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1365)
+  - DECISION: leave Optional field off from the table. Discussion to be continued about the use of dcterms:date. Will make 2 tables: 1 with MUST and SHOULD, the other with other potential fields (including those NOT to use) with guidelines indicated (would include the list items given in the file, below the table). We should also push for recommended format for optional fields (ex. ORCID for creator/contributor). 
+
+- ***MORE DISCUSSION NEEDED*** Language tags [#479](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/479)
+  - For rdfs:label and IAO:0000115 annotation assertions, we discourage the use of datatype declarations such as `xsd:string`. It is important to note that `xsd:string` is essentially redundant in OWL/RDF, so "assay" and "assay"^^xsd:string should be the exact same thing. However, a lot of tooling may be confused by the difference, xsd:string datatype assertion SHOULD be omitted in general for all annotations, but MUST be omitted for rdfs:label and IAO:0000115.
+  - To designate rdfs:label, and IAO:0000115 annotations in a language different from English, a [valid RDF language tag](https://www.w3.org/TR/rdf11-concepts/#section-Graph-Literal) MUST be specified, for example, "Krankheit"@de.
+  - rdfs:label and IAO:0000115 annotation assertions for English content MAY be annotated with an English language tag. If the ontology chooses not to use language tags, a protege:defaultLanguage assertion MUST be added as an ontology annotation.
+
+content:
+- Discourage BFO shadow classes [#1539](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1539)
+- Term adoption [#2330](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2330) and [#2324](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2324)
+- ***MORE DISCUSSION NEEDED*** Standardized xref prefixes in ontologies [#525](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/525)
+- ***MORE DISCUSSION NEEDED*** Referring to taxa not in NCBITaxon [#434](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/434)
+ 
+communication:
+
+- domain metadata tag [#2779](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/2779)
+
+-->
+
