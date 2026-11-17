@@ -7,7 +7,7 @@ GO TO: [Recommendations/Requirements](#recommendations-and-requirements) &#124; 
 
 ## Summary
 
-The ontology provider MUST follow the recommendations and requirements outlined on the [Ontology Standardization Guidelines](https://obofoundry.org/docs/StandardizationGuidelines.html) and the [Ontology Project Management Guidelines](https://obofoundry.org/docs/DevelopmentGuidelines.html) pages.
+The ontology provider MUST follow the recommendations and requirements outlined on the [Ontology Standardization Guidelines](https://obofoundry.org/docs/StandardizationGuidelines.html) and the [Ontology Project Management Guidelines](https://obofoundry.org/docs/ProjectManagementGuidelines.html) pages.
 
 ## Purpose
 
@@ -15,22 +15,24 @@ OBO Foundry ontologies commit to principles of ontology development designed to 
 
 ## Recommendations and Requirements
 
-As the guidelines are expected to have more-frequent additions and refinements over time relative to principles, ontology maintainers SHOULD review these pages every 6 months. (NOTE: New additions or refinements will be indicated on the relevant pages).
+As the guidelines are expected to have more-frequent additions and refinements over time relative to principles, ontology maintainers SHOULD review these pages every 6 months. (NOTE: Additions or refinements will be indicated on the relevant pages).
 
 ## Implementation
 
-Review and follow the guidelines given on the pages [Ontology Standardization Guidelines](https://obofoundry.org/docs/StandardizationGuidelines.html) and [Ontology Project Management Guidelines](https://obofoundry.org/docs/DevelopmentGuidelines.html). Note that some of the guidelines indicated MUST be implemented, while others SHOULD or MAY be implemented.
+Review and follow the guidelines given on the pages [Ontology Standardization Guidelines](https://obofoundry.org/docs/StandardizationGuidelines.html) and [Ontology Project Management Guidelines](https://obofoundry.org/docs/ProjectManagementGuidelines.html). Note that some of the guidelines indicated MUST be implemented, while others SHOULD or MAY be implemented.
 
 ## Examples
 
-
+See relevant pages?
 
 ## Counter-Examples
 
-
+See relevant pages?
 
 ## Criteria for Review
 (don't want to list everything HERE, so need to say the criteria in a more general way)
+See relevant pages?
+
 
 [This check is automatically validated.](checks/fp_014)
 
