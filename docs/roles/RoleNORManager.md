@@ -105,3 +105,8 @@ The OBO Duty Rotation Table is a Google spreadsheet available [here](https://doc
 When a new member is added to the OBO Operations Committee, the OBO NOR reviewer should add the new member's name to this table. Similarly, former members should be removed from the table. The list of current OBO Operations members is maintained in the file [operations.yml](https://github.com/OBOFoundry/OBOFoundry.github.io/blob/master/_data/operations.yml).
 
 In addition, when a new ontology has been submitted, it should be added to the ['Ontology Reviewers' tab](https://docs.google.com/spreadsheets/d/19GrEWVnpxjnrig0iYUOiUvsZ0JDbprMh1USnRb-SXtg/edit?gid=1683009411#gid=1683009411) in the OBO Duty Rotation spreadsheet.
+
+### Performing the technical review - this is not a NOR Manager responsibility
+
+The NOR Manager is not responsible for performing the detailed technical review of the new ontology, but instructions for doing that can be found
+in the (README of the NOR dashboard repo)[https://github.com/OBOFoundry/obo-nor.github.io].
