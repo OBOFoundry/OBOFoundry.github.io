@@ -3346,6 +3346,91 @@ ontologies:
   tracker: https://github.com/infectious-disease-ontology/infectious-disease-ontology/issues
 - activity_status: active
   contact:
+    email: ximena.castro@unipd.it
+    github: XimeAixa
+    label: Ximena Aixa Castro
+    orcid: 0000-0002-9211-1255
+  dependencies:
+  - id: bfo
+  - id: cob
+  - id: go
+  - id: iao
+  - id: omo
+  - id: ro
+  description: An ontology of the structural states, transitions, functions and roles
+    of intrinsically disordered proteins and regions, including biomolecular condensates.
+  domain: chemistry and biochemistry
+  homepage: https://github.com/BioComputingUP/idpo
+  id: idpo
+  layout: ontology_detail
+  license:
+    label: CC BY 4.0
+    logo: http://mirrors.creativecommons.org/presskit/buttons/80x15/png/by.png
+    url: https://creativecommons.org/licenses/by/4.0/
+  ontology_purl: http://purl.obolibrary.org/obo/idpo.owl
+  preferredPrefix: IDPO
+  products:
+  - description: The main release of IDPO in OWL format.
+    id: idpo.owl
+    name: IDPO (OWL)
+    ontology_purl: http://purl.obolibrary.org/obo/idpo.owl
+  - description: The main release of IDPO in OBO format.
+    id: idpo.obo
+    name: IDPO (OBO)
+    ontology_purl: http://purl.obolibrary.org/obo/idpo.obo
+  - description: The main release of IDPO in OBO Graphs JSON format.
+    id: idpo.json
+    name: IDPO (OBO Graphs JSON)
+    ontology_purl: http://purl.obolibrary.org/obo/idpo.json
+  - description: IDPO's own axioms only, without imported terms.
+    id: idpo/idpo-base.owl
+    name: IDPO base module (OWL)
+    ontology_purl: http://purl.obolibrary.org/obo/idpo/idpo-base.owl
+  - description: The IDPO base module in OBO format.
+    id: idpo/idpo-base.obo
+    name: IDPO base module (OBO)
+    ontology_purl: http://purl.obolibrary.org/obo/idpo/idpo-base.obo
+  - description: The IDPO base module in OBO Graphs JSON format.
+    id: idpo/idpo-base.json
+    name: IDPO base module (OBO Graphs JSON)
+    ontology_purl: http://purl.obolibrary.org/obo/idpo/idpo-base.json
+  - description: IDPO with all imports merged and the full reasoned class hierarchy.
+    id: idpo/idpo-full.owl
+    name: IDPO full (OWL)
+    ontology_purl: http://purl.obolibrary.org/obo/idpo/idpo-full.owl
+  - description: The IDPO full release in OBO format.
+    id: idpo/idpo-full.obo
+    name: IDPO full (OBO)
+    ontology_purl: http://purl.obolibrary.org/obo/idpo/idpo-full.obo
+  - description: The IDPO full release in OBO Graphs JSON format.
+    id: idpo/idpo-full.json
+    name: IDPO full (OBO Graphs JSON)
+    ontology_purl: http://purl.obolibrary.org/obo/idpo/idpo-full.json
+  - description: A simplified version of IDPO with only subclass and existential restriction
+      axioms.
+    id: idpo/idpo-simple.owl
+    name: IDPO simple (OWL)
+    ontology_purl: http://purl.obolibrary.org/obo/idpo/idpo-simple.owl
+  - description: The IDPO simple release in OBO format.
+    id: idpo/idpo-simple.obo
+    name: IDPO simple (OBO)
+    ontology_purl: http://purl.obolibrary.org/obo/idpo/idpo-simple.obo
+  - description: The IDPO simple release in OBO Graphs JSON format.
+    id: idpo/idpo-simple.json
+    name: IDPO simple (OBO Graphs JSON)
+    ontology_purl: http://purl.obolibrary.org/obo/idpo/idpo-simple.json
+  repository: https://github.com/BioComputingUP/idpo
+  title: Intrinsically Disordered Proteins Ontology
+  tracker: https://github.com/BioComputingUP/idpo/issues
+  usages:
+  - description: DisProt uses IDPO terms for the standardized annotation of intrinsically
+      disordered proteins and regions.
+    examples:
+    - description: IDPO ontology page in DisProt
+      url: https://disprot.org/ontology
+    user: https://disprot.org
+- activity_status: active
+  contact:
     email: yongqunh@med.umich.edu
     github: yongqunh
     label: Yongqun Oliver He
