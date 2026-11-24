@@ -3,7 +3,7 @@ layout: ontology_detail
 id: idpo
 title: Intrinsically Disordered Proteins Ontology
 description: An ontology of the structural states, transitions, functions and roles of intrinsically disordered proteins and regions, including biomolecular condensates.
-domain: biochemistry
+domain: chemistry and biochemistry
 contact:
   email: ximena.castro@unipd.it
   label: Ximena Aixa Castro
