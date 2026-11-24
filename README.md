@@ -7,6 +7,15 @@ https://obofoundry.org.
 For most questions, see the main site FAQ at https://obofoundry.org/faq/.
 For details on site development, please see [README-sitedev.md](README-sitedev.md)
 
+## Licensing
+
+The OBO Foundry registry metadata is made available under the
+[CC0 1.0 Universal waiver](LICENSE.md).
+Individual ontologies have their own licenses, recorded in their registry metadata.
+
+The code in this repository is available under the
+[BSD 3-clause license](LICENSE-code.md).
+
 ## Contributing
 
 ### I have some comments
