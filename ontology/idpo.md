@@ -2,70 +2,70 @@
 layout: ontology_detail
 id: idpo
 title: Intrinsically Disordered Proteins Ontology
-description: An ontology of the structural states, transitions, functions and roles of intrinsically disordered proteins and regions, including biomolecular condensates.
-domain: chemistry and biochemistry
 contact:
   email: ximena.castro@unipd.it
-  label: Ximena Aixa Castro
   github: XimeAixa
+  label: Ximena Aixa Castro
   orcid: 0000-0002-9211-1255
-homepage: https://github.com/BioComputingUP/idpo
-repository: https://github.com/BioComputingUP/idpo
-tracker: https://github.com/BioComputingUP/idpo/issues
-license:
-  url: https://creativecommons.org/licenses/by/4.0/
-  label: CC-BY 4.0
-preferredPrefix: IDPO
-products:
-  - id: idpo.owl
-    name: IDPO (OWL)
-    description: The main release of IDPO in OWL format.
-  - id: idpo.obo
-    name: IDPO (OBO)
-    description: The main release of IDPO in OBO format.
-  - id: idpo.json
-    name: IDPO (OBO Graphs JSON)
-    description: The main release of IDPO in OBO Graphs JSON format.
-  - id: idpo/idpo-base.owl
-    name: IDPO base module (OWL)
-    description: IDPO's own axioms only, without imported terms.
-  - id: idpo/idpo-base.obo
-    name: IDPO base module (OBO)
-    description: The IDPO base module in OBO format.
-  - id: idpo/idpo-base.json
-    name: IDPO base module (OBO Graphs JSON)
-    description: The IDPO base module in OBO Graphs JSON format.
-  - id: idpo/idpo-full.owl
-    name: IDPO full (OWL)
-    description: IDPO with all imports merged and the full reasoned class hierarchy.
-  - id: idpo/idpo-full.obo
-    name: IDPO full (OBO)
-    description: The IDPO full release in OBO format.
-  - id: idpo/idpo-full.json
-    name: IDPO full (OBO Graphs JSON)
-    description: The IDPO full release in OBO Graphs JSON format.
-  - id: idpo/idpo-simple.owl
-    name: IDPO simple (OWL)
-    description: A simplified version of IDPO with only subclass and existential restriction axioms.
-  - id: idpo/idpo-simple.obo
-    name: IDPO simple (OBO)
-    description: The IDPO simple release in OBO format.
-  - id: idpo/idpo-simple.json
-    name: IDPO simple (OBO Graphs JSON)
-    description: The IDPO simple release in OBO Graphs JSON format.
 dependencies:
-- id: ro
-- id: go
-- id: omo
 - id: bfo
 - id: cob
+- id: go
 - id: iao
+- id: omo
+- id: ro
+description: An ontology of the structural states, transitions, functions and roles of intrinsically disordered proteins and regions, including biomolecular condensates.
+domain: chemistry and biochemistry
+homepage: https://github.com/BioComputingUP/idpo
+license:
+  label: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
+preferredPrefix: IDPO
+products:
+- id: idpo.owl
+  description: The main release of IDPO in OWL format.
+  name: IDPO (OWL)
+- id: idpo.obo
+  description: The main release of IDPO in OBO format.
+  name: IDPO (OBO)
+- id: idpo.json
+  description: The main release of IDPO in OBO Graphs JSON format.
+  name: IDPO (OBO Graphs JSON)
+- id: idpo/idpo-base.owl
+  description: IDPO's own axioms only, without imported terms.
+  name: IDPO base module (OWL)
+- id: idpo/idpo-base.obo
+  description: The IDPO base module in OBO format.
+  name: IDPO base module (OBO)
+- id: idpo/idpo-base.json
+  description: The IDPO base module in OBO Graphs JSON format.
+  name: IDPO base module (OBO Graphs JSON)
+- id: idpo/idpo-full.owl
+  description: IDPO with all imports merged and the full reasoned class hierarchy.
+  name: IDPO full (OWL)
+- id: idpo/idpo-full.obo
+  description: The IDPO full release in OBO format.
+  name: IDPO full (OBO)
+- id: idpo/idpo-full.json
+  description: The IDPO full release in OBO Graphs JSON format.
+  name: IDPO full (OBO Graphs JSON)
+- id: idpo/idpo-simple.owl
+  description: A simplified version of IDPO with only subclass and existential restriction axioms.
+  name: IDPO simple (OWL)
+- id: idpo/idpo-simple.obo
+  description: The IDPO simple release in OBO format.
+  name: IDPO simple (OBO)
+- id: idpo/idpo-simple.json
+  description: The IDPO simple release in OBO Graphs JSON format.
+  name: IDPO simple (OBO Graphs JSON)
+repository: https://github.com/BioComputingUP/idpo
+tracker: https://github.com/BioComputingUP/idpo/issues
 usages:
-  - user: https://disprot.org
-    description: DisProt uses IDPO terms for the standardized annotation of intrinsically disordered proteins and regions.
-    examples:
-      - url: https://disprot.org/ontology
-        description: IDPO ontology page in DisProt
+- description: DisProt uses IDPO terms for the standardized annotation of intrinsically disordered proteins and regions.
+  examples:
+  - description: IDPO ontology page in DisProt
+    url: https://disprot.org/ontology
+  user: https://disprot.org
 activity_status: active
 ---
 
