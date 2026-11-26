@@ -16,8 +16,8 @@ description: Morphological and physiological measurement records generated from 
 domain: health
 homepage: http://rgd.mcw.edu/rgdweb/ontology/search.html
 license:
-  label: CC0 1.0
-  url: http://creativecommons.org/publicdomain/zero/1.0/
+  label: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
 page: https://download.rgd.mcw.edu/ontology/clinical_measurement/
 preferredPrefix: CMO
 products:

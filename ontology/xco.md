@@ -16,8 +16,8 @@ description: Conditions under which physiological and morphological measurements
 domain: health
 homepage: https://rgd.mcw.edu/rgdweb/ontology/view.html?acc_id=XCO:0000000
 license:
-  label: CC0 1.0
-  url: https://creativecommons.org/publicdomain/zero/1.0/
+  label: CC BY 4.0
+  url: https://creativecommons.org/licenses/by/4.0/
 page: https://download.rgd.mcw.edu/ontology/experimental_condition/
 preferredPrefix: XCO
 products:
